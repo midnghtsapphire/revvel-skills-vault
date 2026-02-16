@@ -1,0 +1,51 @@
+name: openclaw_github
+title: 🐙 Github
+version: 1.0.0
+description: Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI
+  runs, and advanced queries.
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - github
+  - gh
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - gh
+install:
+- id: brew
+  platform: all
+  method: brew
+  command: gh
+  label: Install GitHub CLI (brew)
+- id: apt
+  platform: all
+  method: apt
+  command: gh
+  label: Install GitHub CLI (apt)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: github\ndescription: \"Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`,\
+    \ and `gh api` for issues, PRs, CI runs, and advanced queries.\"\nmetadata:\n  {\n    \"openclaw\":\n      {\n       \
+    \ \"emoji\": \"\U0001F419\",\n        \"requires\": { \"bins\": [\"gh\"] },\n        \"install\":\n          [\n     \
+    \       {\n              \"id\": \"brew\",\n              \"kind\": \"brew\",\n              \"formula\": \"gh\",\n  \
+    \            \"bins\": [\"gh\"],\n              \"label\": \"Install GitHub CLI (brew)\",\n            },\n          \
+    \  {\n              \"id\": \"apt\",\n              \"kind\": \"apt\",\n              \"package\": \"gh\",\n         \
+    \     \"bins\": [\"gh\"],\n              \"label\": \"Install GitHub CLI (apt)\",\n            },\n          ],\n    \
+    \  },\n  }\n---\n\n# GitHub Skill\n\nUse the `gh` CLI to interact with GitHub. Always specify `--repo owner/repo` when\
+    \ not in a git directory, or use URLs directly.\n\n## Pull Requests\n\nCheck CI status on a PR:\n\n```bash\ngh pr checks\
+    \ 55 --repo owner/repo\n```\n\nList recent workflow runs:\n\n```bash\ngh run list --repo owner/repo --limit 10\n```\n\n\
+    View a run and see which steps failed:\n\n```bash\ngh run view <run-id> --repo owner/repo\n```\n\nView logs for failed\
+    \ steps only:\n\n```bash\ngh run view <run-id> --repo owner/repo --log-failed\n```\n\n## API for Advanced Queries\n\n\
+    The `gh api` command is useful for accessing data not available through other subcommands.\n\nGet PR with specific fields:\n\
+    \n```bash\ngh api repos/owner/repo/pulls/55 --jq '.title, .state, .user.login'\n```\n\n## JSON Output\n\nMost commands\
+    \ support `--json` for structured output. You can use `--jq` to filter:\n\n```bash\ngh issue list --repo owner/repo --json\
+    \ number,title --jq '.[] | \"\\(.number): \\(.title)\"'\n```\n"
+examples: []
+schema_version: '1.0'

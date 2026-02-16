@@ -1,0 +1,67 @@
+name: audit-website
+title: audit website for SEO, security, performance and 200+ other issues
+version: 1.0.4
+description: Audit websites for SEO, performance, security, technical, content, and 15 other issue cateories with 230+ rules
+  using the squirrelscan CLI. Returns LLM-optimized reports with health scores, broken links, meta tag analysis, and actionable
+  recommendations. Use to discover and asses website or webapp i
+metadata:
+  author: nc9
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - audit
+  - website
+  - bash(squirrel:*) read edit grep glob
+  source: clawhub-community
+  clawhub_slug: squirrelscan
+  clawhub_path: nc9/squirrelscan
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(squirrel:*) Read Edit Grep Glob
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# audit website for SEO, security, performance and 200+ other issues
+
+    # Source: ClawHub community skill by nc9
+
+    # Install: clawhub install squirrelscan
+
+    # Path: nc9/squirrelscan
+
+
+    ## Description
+
+    Audit websites for SEO, performance, security, technical, content, and 15 other issue cateories with 230+ rules using
+    the squirrelscan CLI. Returns LLM-optimized reports with health scores, broken links, meta tag analysis, and actionable
+    recommendations. Use to discover and asses website or webapp i
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/OUTPUT-FORMAT.md
+
+
+    ## Allowed Tools
+
+    Bash(squirrel:*) Read Edit Grep Glob
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install squirrelscan
+
+    ```'
+examples:
+- description: Install audit website for SEO, security, performance and 200+ other issues from ClawHub
+  usage: clawhub install squirrelscan
+schema_version: '1.0'

@@ -1,0 +1,269 @@
+name: historical_research
+title: Historical Research & Archives
+version: 1.0.0
+description: Comprehensive historical research and archival analysis module providing access to National Archives, Library
+  of Congress collections, historical newspapers, genealogy records, military service records, immigration data, land patents,
+  census records, and Sanborn maps
+metadata:
+  author: Revvel AI Engine
+  category: Intelligence & Research
+  tags:
+  - access-library-of-congress
+  - access-land-patent-records
+  - search-military-service-records
+  - retrieve-genealogy-records
+  - historical
+  - research
+  - query-chronicling-america
+  - retrieve-census-data
+  - search-national-archives
+  - query-immigration-records
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport hashlib\nimport statistics\nimport math\nimport datetime\nimport unittest\n\
+    from typing import Dict, List, Any, Optional, Tuple\nfrom collections import defaultdict, Counter\nimport requests\nfrom\
+    \ urllib.parse import urlencode, quote_plus\n\nSKILL_METADATA = {\n    \"name\": \"Historical Research & Archives\",\n\
+    \    \"id\": \"historical_research\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\"\
+    : \"Comprehensive historical research and archival analysis module providing access to National Archives, Library of Congress\
+    \ collections, historical newspapers, genealogy records, military service records, immigration data, land patents, census\
+    \ records, and Sanborn maps\",\n    \"capabilities\": [\n        \"search_national_archives\",\n        \"query_chronicling_america\"\
+    ,\n        \"access_library_of_congress\",\n        \"retrieve_genealogy_records\",\n        \"search_military_service_records\"\
+    ,\n        \"query_immigration_records\",\n        \"access_land_patent_records\",\n        \"retrieve_census_data\",\n\
+    \        \"query_sanborn_maps\",\n        \"generate_research_report\",\n        \"analyze_historical_timeline\",\n  \
+    \      \"validate_document_authenticity\"\n    ],\n    \"domain\": \"historical_research\"\n}\n\nEXPERT_PROMPTS = {\n\
+    \    \"nara_deep_search\": \"\"\"Conduct a comprehensive search of National Archives records for {topic} covering the\
+    \ period {start_year} to {end_year}. Focus on record groups {record_groups} and include both textual records and digital\
+    \ assets. Return NAIDs, titles, scope notes, and access restrictions.\"\"\",\n    \n    \"newspaper_analysis\": \"\"\"\
+    Analyze historical newspaper coverage in Chronicling America for {event_name} between {start_date} and {end_date}. Include\
+    \ sentiment analysis, geographic distribution, key themes, and notable publishers. Focus on newspapers from {states}.\"\
+    \"\",\n    \n    \"genealogy_reconstruction\": \"\"\"Reconstruct family lineage for {surname} family in {location} between\
+    \ {start_year} and {end_year}. Cross-reference census records, immigration records, military service records, and land\
+    \ patents. Include migration patterns and occupational changes.\"\"\",\n    \n    \"military_service_analysis\": \"\"\"\
+    Retrieve and analyze military service records for {individual_name} or {unit_designation} during {conflict_period}. Include\
+    \ enlistment dates, muster rolls, pension records, and any disability or medical records.\"\"\",\n    \n    \"immigration_timeline\"\
+    : \"\"\"Create a detailed immigration timeline for {family_name} arriving at {port_of_entry} between {start_year} and\
+    \ {end_year}. Include ship manifests, naturalization records, and any correspondence with immigration authorities.\"\"\
+    \",\n    \n    \"land_ownership_history\": \"\"\"Trace land ownership history for property in {county}, {state} described\
+    \ as {legal_description}. Include original land patents, subsequent transfers, and any associated agricultural or mineral\
+    \ rights.\"\"\",\n    \n    \"census_demographic_analysis\": \"\"\"Perform demographic analysis using census data for\
+    \ {location} across decades {census_years}. Include population trends, occupational distributions, ethnic compositions,\
+    \ and household structures.\"\"\",\n    \n    \"sanborn_map_analysis\": \"\"\"Analyze Sanborn fire insurance maps for\
+    \ {city}, {state} covering the period {start_year} to {end_year}. Document building changes, business types, fire hazards,\
+    \ and urban development patterns.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"nara_catalog_api\": {\n        \"type\": \"\
+    api\",\n        \"endpoint\": \"https://catalog.archives.gov/api/v2\",\n        \"description\": \"National Archives Catalog\
+    \ API for searching archival descriptions and authority records\",\n        \"auth_method\": \"api_key\",\n        \"\
+    documentation_url\": \"https://www.archives.gov/research/catalog/help/api-getting-started\"\n    },\n    \"chronicling_america_api\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://chroniclingamerica.loc.gov/api/v2\",\n        \"description\"\
+    : \"Library of Congress Chronicling America API for historical newspaper access\",\n        \"auth_method\": \"none\"\
+    ,\n        \"documentation_url\": \"https://libraryofcongress.github.io/data-exploration/loc.gov%20JSON%20API/Chronicling_America/README.html\"\
+    \n    },\n    \"loc_json_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://www.loc.gov/api/v2\",\n\
+    \        \"description\": \"Library of Congress JSON API for digital collections\",\n        \"auth_method\": \"none\"\
+    ,\n        \"documentation_url\": \"https://libraryofcongress.github.io/data-exploration/\"\n    },\n    \"census_api\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.census.gov/data\",\n        \"description\": \"US\
+    \ Census Bureau API for historical census data\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\"\
+    : \"https://www.census.gov/data/developers/data-sets.html\"\n    },\n    \"sanborn_maps_db\": {\n        \"type\": \"\
+    database\",\n        \"endpoint\": \"https://www.loc.gov/collections/sanborn-maps\",\n        \"description\": \"Library\
+    \ of Congress Sanborn Fire Insurance Map collection\",\n        \"auth_method\": \"none\",\n        \"documentation_url\"\
+    : \"https://www.loc.gov/collections/sanborn-maps/about-this-collection/\"\n    }\n}\n\ndef validate_naid(naid: str) ->\
+    \ bool:\n    \"\"\"Validate National Archives Identifier format.\"\"\"\n    if not isinstance(naid, str):\n        return\
+    \ False\n    return bool(re.match(r'^\\d{1,10}$', naid.strip()))\n\ndef parse_date_range(date_str: str) -> Tuple[datetime.date,\
+    \ datetime.date]:\n    \"\"\"Parse date range strings into datetime objects.\"\"\"\n    date_str = date_str.strip()\n\
+    \    \n    if '-' in date_str:\n        start_str, end_str = date_str.split('-', 1)\n    else:\n        start_str = end_str\
+    \ = date_str\n    \n    def parse_single_date(date_part: str) -> datetime.date:\n        date_part = date_part.strip()\n\
+    \        for fmt in ['%Y-%m-%d', '%Y-%m', '%Y']:\n            try:\n                parsed = datetime.datetime.strptime(date_part,\
+    \ fmt).date()\n                return parsed\n            except ValueError:\n                continue\n        raise\
+    \ ValueError(f\"Invalid date format: {date_part}\")\n    \n    start_date = parse_single_date(start_str)\n    end_date\
+    \ = parse_single_date(end_str)\n    \n    if start_date > end_date:\n        start_date, end_date = end_date, start_date\n\
+    \    \n    return start_date, end_date\n\ndef build_nara_query(params: Dict[str, Any]) -> str:\n    \"\"\"Build NARA Catalog\
+    \ API query string from parameters.\"\"\"\n    query_parts = []\n    \n    if params.get('q'):\n        query_parts.append(f\"\
+    q={quote_plus(params['q'])}\")\n    \n    if params.get('naid'):\n        query_parts.append(f\"naid={params['naid']}\"\
+    )\n    \n    if params.get('record_group'):\n        query_parts.append(f\"recordGroupNumber={params['record_group']}\"\
+    )\n    \n    if params.get('start_date'):\n        query_parts.append(f\"fromDate={params['start_date']}\")\n    \n  \
+    \  if params.get('end_date'):\n        query_parts.append(f\"toDate={params['end_date']}\")\n    \n    if params.get('format'):\n\
+    \        query_parts.append(f\"typeOfMaterials={params['format']}\")\n    \n    if params.get('online'):\n        query_parts.append(\"\
+    online=true\")\n    \n    return \"&\".join(query_parts)\n\ndef analyze_newspaper_coverage(results: List[Dict[str, Any]])\
+    \ -> Dict[str, Any]:\n    \"\"\"Analyze newspaper search results for patterns and insights.\"\"\"\n    if not results:\n\
+    \        return {\"total_articles\": 0, \"analysis\": {}}\n    \n    states = Counter()\n    years = Counter()\n    newspapers\
+    \ = Counter()\n    \n    for article in results:\n        if 'state' in article:\n            states[article['state']]\
+    \ += 1\n        if 'date' in article:\n            try:\n                year = article['date'][:4]\n                years[year]\
+    \ += 1\n            except (IndexError, TypeError):\n                continue\n        if 'title' in article:\n      \
+    \      newspapers[article['title']] += 1\n    \n    return {\n        \"total_articles\": len(results),\n        \"geographic_distribution\"\
+    : dict(states.most_common(10)),\n        \"temporal_distribution\": dict(years.most_common()),\n        \"top_newspapers\"\
+    : dict(newspapers.most_common(5)),\n        \"coverage_span\": {\n            \"earliest\": min(results, key=lambda x:\
+    \ x.get('date', '9999'))['date'],\n            \"latest\": max(results, key=lambda x: x.get('date', '0000'))['date']\n\
+    \        }\n    }\n\ndef calculate_document_hash(document: Dict[str, Any]) -> str:\n    \"\"\"Calculate SHA256 hash of\
+    \ document for authenticity verification.\"\"\"\n    doc_str = json.dumps(document, sort_keys=True, ensure_ascii=False)\n\
+    \    return hashlib.sha256(doc_str.encode('utf-8')).hexdigest()\n\ndef generate_research_timeline(events: List[Dict[str,\
+    \ Any]]) -> List[Dict[str, Any]]:\n    \"\"\"Generate chronological timeline from historical events.\"\"\"\n    timeline\
+    \ = []\n    \n    for event in events:\n        try:\n            date_str = event.get('date', '')\n            if date_str:\n\
+    \                date_obj = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()\n                timeline.append({\n\
+    \                    \"date\": date_obj,\n                    \"event\": event.get('title', ''),\n                   \
+    \ \"description\": event.get('description', ''),\n                    \"source\": event.get('source', ''),\n         \
+    \           \"location\": event.get('location', '')\n                })\n        except (ValueError, TypeError):\n   \
+    \         continue\n    \n    timeline.sort(key=lambda x: x['date'])\n    \n    return [\n        {\n            \"date\"\
+    : item['date'].isoformat(),\n            \"event\": item['event'],\n            \"description\": item['description'],\n\
+    \            \"source\": item['source'],\n            \"location\": item['location']\n        }\n        for item in timeline\n\
+    \    ]\n\ndef extract_census_demographics(census_data: Dict[str, Any]) -> Dict[str, Any]:\n    \"\"\"Extract and analyze\
+    \ demographic data from census records.\"\"\"\n    demographics = {\n        \"total_population\": 0,\n        \"households\"\
+    : 0,\n        \"occupations\": Counter(),\n        \"birthplaces\": Counter(),\n        \"ages\": [],\n        \"male_count\"\
+    : 0,\n        \"female_count\": 0\n    }\n    \n    for record in census_data.get('records', []):\n        demographics[\"\
+    total_population\"] += 1\n        \n        if record.get('occupation'):\n            demographics[\"occupations\"][record['occupation']]\
+    \ += 1\n        \n        if record.get('birthplace'):\n            demographics[\"birthplaces\"][record['birthplace']]\
+    \ += 1\n        \n        if record.get('age'):\n            try:\n                demographics[\"ages\"].append(int(record['age']))\n\
+    \            except ValueError:\n                pass\n        \n        if record.get('sex', '').lower() == 'm':\n  \
+    \          demographics[\"male_count\"] += 1\n        elif record.get('sex', '').lower() == 'f':\n            demographics[\"\
+    female_count\"] += 1\n    \n    if demographics[\"ages\"]:\n        demographics[\"age_statistics\"] = {\n           \
+    \ \"mean\": statistics.mean(demographics[\"ages\"]),\n            \"median\": statistics.median(demographics[\"ages\"\
+    ]),\n            \"min\": min(demographics[\"ages\"]),\n            \"max\": max(demographics[\"ages\"])\n        }\n\
+    \    \n    demographics[\"occupations\"] = dict(demographics[\"occupations\"].most_common(10))\n    demographics[\"birthplaces\"\
+    ] = dict(demographics[\"birthplaces\"].most_common(10))\n    \n    return demographics\n\ndef validate_document_metadata(metadata:\
+    \ Dict[str, Any]) -> Dict[str, Any]:\n    \"\"\"Validate and normalize document metadata.\"\"\"\n    validation_result\
+    \ = {\n        \"valid\": True,\n        \"errors\": [],\n        \"warnings\": [],\n        \"normalized\": {}\n    }\n\
+    \    \n    required_fields = ['title', 'date', 'source']\n    for field in required_fields:\n        if not metadata.get(field):\n\
+    \            validation_result[\"valid\"] = False\n            validation_result[\"errors\"].append(f\"Missing required\
+    \ field: {field}\")\n    \n    if metadata.get('date'):\n        try:\n            parse_date_range(metadata['date'])\n\
+    \        except ValueError as e:\n            validation_result[\"errors\"].append(f\"Invalid date format: {e}\")\n  \
+    \  \n    if metadata.get('naid') and not validate_naid(str(metadata['naid'])):\n        validation_result[\"errors\"].append(\"\
+    Invalid NAID format\")\n    \n    validation_result[\"normalized\"] = {\n        \"title\": str(metadata.get('title',\
+    \ '')).strip(),\n        \"date\": str(metadata.get('date', '')).strip(),\n        \"source\": str(metadata.get('source',\
+    \ '')).strip(),\n        \"naid\": str(metadata.get('naid', '')).strip() if metadata.get('naid') else None\n    }\n  \
+    \  \n    return validation_result\n\ndef render_research_report(research_data: Dict[str, Any], template: str = \"standard\"\
+    ) -> str:\n    \"\"\"Generate formatted research report from collected data.\"\"\"\n    report_parts = []\n    \n    report_parts.append(f\"\
+    # Historical Research Report\")\n    report_parts.append(f\"Generated: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\"\
+    )\n    report_parts.append(\"\")\n    \n    if research_data.get('summary'):\n        report_parts.append(\"## Executive\
+    \ Summary\")\n        report_parts.append(research_data['summary'])\n        report_parts.append(\"\")\n    \n    if research_data.get('timeline'):\n\
+    \        report_parts.append(\"## Chronological Timeline\")\n        for event in research_data['timeline']:\n       \
+    \     report_parts.append(f\"- **{event['date']}**: {event['event']}\")\n            if event.get('description'):\n  \
+    \              report_parts.append(f\"  {event['description']}\")\n        report_parts.append(\"\")\n    \n    if research_data.get('sources'):\n\
+    \        report_parts.append(\"## Sources Consulted\")\n        for source in research_data['sources']:\n            report_parts.append(f\"\
+    - {source}\")\n        report_parts.append(\"\")\n    \n    if research_data.get('analysis'):\n        report_parts.append(\"\
+    ## Analysis\")\n        for key, value in research_data['analysis'].items():\n            report_parts.append(f\"### {key.replace('_',\
+    \ ' ').title()}\")\n            if isinstance(value, dict):\n                for sub_key, sub_value in value.items():\n\
+    \                    report_parts.append(f\"- {sub_key}: {sub_value}\")\n            else:\n                report_parts.append(str(value))\n\
+    \            report_parts.append(\"\")\n    \n    return \"\\n\".join(report_parts)\n\nclass SkillEngine:\n    \"\"\"\
+    Main skill engine for historical research and archival analysis.\"\"\"\n    \n    def __init__(self, config: Dict[str,\
+    \ Any]):\n        \"\"\"Initialize the skill engine with configuration.\"\"\"\n        self.config = config\n        self.session\
+    \ = requests.Session()\n        self.session.headers.update({\n            'User-Agent': 'Revvel-HistoricalResearch/1.0.0'\n\
+    \        })\n        \n        if config.get('nara_api_key'):\n            self.session.headers.update({\n           \
+    \     'x-api-key': config['nara_api_key']\n            })\n    \n    def search_national_archives(self, query: str, **kwargs)\
+    \ -> Dict[str, Any]:\n        \"\"\"Search National Archives Catalog.\"\"\"\n        params = {'q': query}\n        params.update(kwargs)\n\
+    \        \n        query_string = build_nara_query(params)\n        url = f\"{INTEGRATION_POINTS['nara_catalog_api']['endpoint']}/records/search?{query_string}\"\
+    \n        \n        try:\n            response = self.session.get(url, timeout=30)\n            response.raise_for_status()\n\
+    \            return response.json()\n        except requests.RequestException as e:\n            return {\"error\": str(e),\
+    \ \"results\": []}\n    \n    def query_chronicling_america(self, query: str, **kwargs) -> Dict[str, Any]:\n        \"\
+    \"\"Query Chronicling America newspaper collection.\"\"\"\n        params = {'q': query}\n        params.update(kwargs)\n\
+    \        \n        query_string = urlencode(params)\n        url = f\"{INTEGRATION_POINTS['chronicling_america_api']['endpoint']}/search.json?{query_string}\"\
+    \n        \n        try:\n            response = self.session.get(url, timeout=30)\n            response.raise_for_status()\n\
+    \            data = response.json()\n            \n            if 'items' in data:\n                analysis = analyze_newspaper_coverage(data['items'])\n\
+    \                return {\"results\": data['items'], \"analysis\": analysis}\n            return data\n        except\
+    \ requests.RequestException as e:\n            return {\"error\": str(e), \"results\": []}\n    \n    def access_library_of_congress(self,\
+    \ collection: str, query: str, **kwargs) -> Dict[str, Any]:\n        \"\"\"Access Library of Congress digital collections.\"\
+    \"\"\n        params = {'q': query}\n        params.update(kwargs)\n        \n        query_string = urlencode(params)\n\
+    \        url = f\"{INTEGRATION_POINTS['loc_json_api']['endpoint']}/{collection}?{query_string}\"\n        \n        try:\n\
+    \            response = self.session.get(url, timeout=30)\n            response.raise_for_status()\n            return\
+    \ response.json()\n        except requests.RequestException as e:\n            return {\"error\": str(e), \"results\"\
+    : []}\n    \n    def retrieve_genealogy_records(self, surname: str, location: str, **kwargs) -> Dict[str, Any]:\n    \
+    \    \"\"\"Retrieve genealogy records from multiple sources.\"\"\"\n        results = {\n            \"census_records\"\
+    : [],\n            \"immigration_records\": [],\n            \"military_records\": [],\n            \"land_records\":\
+    \ []\n        }\n        \n        census_query = f\"{surname} {location}\"\n        census_data = self.access_library_of_congress(\"\
+    collections\", census_query, fo=\"json\")\n        if 'results' in census_data:\n            results[\"census_records\"\
+    ] = census_data['results'][:10]\n        \n        immigration_data = self.query_chronicling_america(f\"{surname} immigration\"\
+    , **kwargs)\n        if 'results' in immigration_data:\n            results[\"immigration_records\"] = immigration_data['results'][:10]\n\
+    \        \n        return results\n    \n    def search_military_service_records(self, name: str, conflict: str = None)\
+    \ -> Dict[str, Any]:\n        \"\"\"Search military service records.\"\"\"\n        query = f\"{name} military service\"\
+    \n        if conflict:\n            query += f\" {conflict}\"\n        \n        return self.search_national_archives(query,\
+    \ typeOfMaterials=\"textual records\")\n    \n    def query_immigration_records(self, name: str, port: str = None, year:\
+    \ int = None) -> Dict[str, Any]:\n        \"\"\"Query immigration and naturalization records.\"\"\"\n        query = f\"\
+    {name} immigration\"\n        if port:\n            query += f\" {port}\"\n        \n        params = {'q': query}\n \
+    \       if year:\n            params['fromDate'] = str(year)\n            params['toDate'] = str(year + 1)\n        \n\
+    \        return self.search_national_archives(query, **params)\n    \n    def access_land_patent_records(self, location:\
+    \ str, **kwargs) -> Dict[str, Any]:\n        \"\"\"Access Bureau of Land Management land patent records.\"\"\"\n     \
+    \   query = f\"land patent {location}\"\n        return self.search_national_archives(query, record_group=\"49\")\n  \
+    \  \n    def retrieve_census_data(self, location: str, year: int) -> Dict[str, Any]:\n        \"\"\"Retrieve historical\
+    \ census data.\"\"\"\n        query = f\"census {location} {year}\"\n        census_result = self.access_library_of_congress(\"\
+    collections\", query, fo=\"json\")\n        \n        if 'results' in census_result:\n            demographics = extract_census_demographics({\n\
+    \                'records': census_result['results'][:100]\n            })\n            return {\"results\": census_result['results'][:50],\
+    \ \"demographics\": demographics}\n        \n        return {\"results\": [], \"demographics\": {}}\n    \n    def query_sanborn_maps(self,\
+    \ city: str, state: str, year: int = None) -> Dict[str, Any]:\n        \"\"\"Query Sanborn fire insurance maps.\"\"\"\n\
+    \        query = f\"sanborn {city} {state}\"\n        if year:\n            query += f\" {year}\"\n        \n        return\
+    \ self.access_library_of_congress(\"collections/sanborn-maps\", query, fo=\"json\")\n    \n    def generate_research_report(self,\
+    \ research_data: Dict[str, Any]) -> str:\n        \"\"\"Generate comprehensive research report.\"\"\"\n        return\
+    \ render_research_report(research_data)\n    \n    def run(self, capability: str, **kwargs) -> Dict[str, Any]:\n     \
+    \   \"\"\"Main dispatcher method.\"\"\"\n        capability_map = {\n            \"search_national_archives\": self.search_national_archives,\n\
+    \            \"query_chronicling_america\": self.query_chronicling_america,\n            \"access_library_of_congress\"\
+    : self.access_library_of_congress,\n            \"retrieve_genealogy_records\": self.retrieve_genealogy_records,\n   \
+    \         \"search_military_service_records\": self.search_military_service_records,\n            \"query_immigration_records\"\
+    : self.query_immigration_records,\n            \"access_land_patent_records\": self.access_land_patent_records,\n    \
+    \        \"retrieve_census_data\": self.retrieve_census_data,\n            \"query_sanborn_maps\": self.query_sanborn_maps,\n\
+    \            \"generate_research_report\": self.generate_research_report\n        }\n        \n        if capability not\
+    \ in capability_map:\n            return {\"error\": f\"Unknown capability: {capability}\"}\n        \n        try:\n\
+    \            return capability_map[capability](**kwargs)\n        except Exception as e:\n            return {\"error\"\
+    : str(e)}\n\nclass TestHistoricalResearchSkill(unittest.TestCase):\n    \"\"\"Comprehensive test suite for Historical\
+    \ Research skill.\"\"\"\n    \n    def setUp(self):\n        \"\"\"Set up test fixtures.\"\"\"\n        self.config =\
+    \ {\n            \"nara_api_key\": \"test_key\",\n            \"timeout\": 30\n        }\n        self.engine = SkillEngine(self.config)\n\
+    \    \n    def test_skill_metadata(self):\n        \"\"\"Test skill metadata structure.\"\"\"\n        self.assertEqual(SKILL_METADATA[\"\
+    name\"], \"Historical Research & Archives\")\n        self.assertIn(\"search_national_archives\", SKILL_METADATA[\"capabilities\"\
+    ])\n        self.assertEqual(SKILL_METADATA[\"version\"], \"1.0.0\")\n    \n    def test_validate_naid(self):\n      \
+    \  \"\"\"Test NAID validation function.\"\"\"\n        self.assertTrue(validate_naid(\"123456\"))\n        self.assertTrue(validate_naid(\"\
+    1234567890\"))\n        self.assertFalse(validate_naid(\"12345678901\"))\n        self.assertFalse(validate_naid(\"abc123\"\
+    ))\n        self.assertFalse(validate_naid(\"\"))\n    \n    def test_parse_date_range(self):\n        \"\"\"Test date\
+    \ range parsing.\"\"\"\n        start, end = parse_date_range(\"1900-01-01-1920-12-31\")\n        self.assertEqual(start.year,\
+    \ 1900)\n        self.assertEqual(end.year, 1920)\n        \n        start, end = parse_date_range(\"1900\")\n       \
+    \ self.assertEqual(start, end)\n        \n        with self.assertRaises(ValueError):\n            parse_date_range(\"\
+    invalid-date\")\n    \n    def test_build_nara_query(self):\n        \"\"\"Test NARA query building.\"\"\"\n        params\
+    \ = {\n            'q': 'constitution',\n            'record_group': '360',\n            'start_date': '1776',\n     \
+    \       'end_date': '1789',\n            'online': True\n        }\n        query = build_nara_query(params)\n       \
+    \ self.assertIn(\"q=constitution\", query)\n        self.assertIn(\"recordGroupNumber=360\", query)\n        self.assertIn(\"\
+    online=true\", query)\n    \n    def test_analyze_newspaper_coverage(self):\n        \"\"\"Test newspaper coverage analysis.\"\
+    \"\"\n        results = [\n            {\"state\": \"NY\", \"date\": \"1900-01-01\", \"title\": \"New York Times\"},\n\
+    \            {\"state\": \"NY\", \"date\": \"1900-01-02\", \"title\": \"New York Times\"},\n            {\"state\": \"\
+    CA\", \"date\": \"1900-01-01\", \"title\": \"San Francisco Chronicle\"}\n        ]\n        analysis = analyze_newspaper_coverage(results)\n\
+    \        self.assertEqual(analysis[\"total_articles\"], 3)\n        self.assertEqual(analysis[\"geographic_distribution\"\
+    ][\"NY\"], 2)\n        self.assertEqual(analysis[\"top_newspapers\"][\"New York Times\"], 2)\n    \n    def test_calculate_document_hash(self):\n\
+    \        \"\"\"Test document hash calculation.\"\"\"\n        doc1 = {\"title\": \"Test\", \"date\": \"1900-01-01\"}\n\
+    \        doc2 = {\"date\": \"1900-01-01\", \"title\": \"Test\"}\n        hash1 = calculate_document_hash(doc1)\n     \
+    \   hash2 = calculate_document_hash(doc2)\n        self.assertEqual(hash1, hash2)\n        self.assertEqual(len(hash1),\
+    \ 64)\n    \n    def test_generate_research_timeline(self):\n        \"\"\"Test timeline generation.\"\"\"\n        events\
+    \ = [\n            {\"date\": \"1900-01-01\", \"event\": \"Event 1\", \"description\": \"First event\"},\n           \
+    \ {\"date\": \"1899-12-31\", \"event\": \"Event 2\", \"description\": \"Second event\"},\n            {\"date\": \"invalid\"\
+    , \"event\": \"Invalid event\"}\n        ]\n        timeline = generate_research_timeline(events)\n        self.assertEqual(len(timeline),\
+    \ 2)\n        self.assertEqual(timeline[0][\"date\"], \"1899-12-31\")\n        self.assertEqual(timeline[1][\"date\"],\
+    \ \"1900-01-01\")\n    \n    def test_extract_census_demographics(self):\n        \"\"\"Test census demographics extraction.\"\
+    \"\"\n        census_data = {\n            \"records\": [\n                {\"occupation\": \"Farmer\", \"birthplace\"\
+    : \"Germany\", \"age\": \"35\", \"sex\": \"M\"},\n                {\"occupation\": \"Housewife\", \"birthplace\": \"USA\"\
+    , \"age\": \"30\", \"sex\": \"F\"},\n                {\"occupation\": \"Farmer\", \"birthplace\": \"Germany\", \"age\"\
+    : \"40\", \"sex\": \"M\"}\n            ]\n        }\n        demographics = extract_census_demographics(census_data)\n\
+    \        self.assertEqual(demographics[\"total_population\"], 3)\n        self.assertEqual(demographics[\"occupations\"\
+    ][\"Farmer\"], 2)\n        self.assertEqual(demographics[\"birthplaces\"][\"Germany\"], 2)\n        self.assertEqual(demographics[\"\
+    male_count\"], 2)\n        self.assertEqual(demographics[\"female_count\"], 1)\n    \n    def test_validate_document_metadata(self):\n\
+    \        \"\"\"Test document metadata validation.\"\"\"\n        metadata = {\n            \"title\": \"Test Document\"\
+    ,\n            \"date\": \"1900-01-01\",\n            \"source\": \"National Archives\",\n            \"naid\": \"123456\"\
+    \n        }\n        validation = validate_document_metadata(metadata)\n        self.assertTrue(validation[\"valid\"])\n\
+    \        self.assertEqual(len(validation[\"errors\"]), 0)\n        \n        invalid_metadata = {\"title\": \"\", \"date\"\
+    : \"invalid\"}\n        validation = validate_document_metadata(invalid_metadata)\n        self.assertFalse(validation[\"\
+    valid\"])\n        self.assertGreater(len(validation[\"errors\"]), 0)\n    \n    def test_render_research_report(self):\n\
+    \        \"\"\"Test research report rendering.\"\"\"\n        research_data = {\n            \"summary\": \"Test summary\"\
+    ,\n            \"timeline\": [\n                {\"date\": \"1900-01-01\", \"event\": \"Test event\", \"description\"\
+    : \"Description\"}\n            ],\n            \"sources\": [\"Source 1\", \"Source 2\"],\n            \"analysis\":\
+    \ {\"key\": \"value\"}\n        }\n        report = render_research_report(research_data)\n        self.assertIn(\"# Historical\
+    \ Research Report\", report)\n        self.assertIn(\"Test summary\", report)\n        self.assertIn(\"1900-01-01\", report)\n\
+    \    \n    def test_skill_engine_initialization(self):\n        \"\"\"Test skill engine initialization.\"\"\"\n      \
+    \  engine = SkillEngine({\"nara_api_key\": \"test\"})\n        self.assertEqual(engine.config[\"nara_api_key\"], \"test\"\
+    )\n        self.assertIsNotNone(engine.session)\n    \n    def test_skill_engine_run_dispatcher(self):\n        \"\"\"\
+    Test skill engine capability dispatcher.\"\"\"\n        result = self.engine.run(\"unknown_capability\")\n        self.assertIn(\"\
+    error\", result)\n        self.assertIn(\"Unknown capability\", result[\"error\"])\n\nif __name__ == '__main__':\n   \
+    \ unittest.main()"
+examples:
+- description: Load and use the Historical Research & Archives skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''historical_research'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

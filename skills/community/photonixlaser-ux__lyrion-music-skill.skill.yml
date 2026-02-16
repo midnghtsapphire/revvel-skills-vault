@@ -1,0 +1,60 @@
+name: lyrion-music
+title: Lyrion Music
+version: 0.1.0
+description: Steuere Lyrion Music Server (LMS) über die JSON-RPC API. Nutze diesen Skill für Wiedergabe-Steuerung (Play/Pause/Stop),
+  Lautstärke, Playlist-Verwaltung, Player-Auswahl und Musikdatenbank-Abfragen. Erfordert LMS auf Port 9000.
+metadata:
+  author: photonixlaser-ux
+  category: Media & Content
+  tags:
+  - media-content
+  - lyrion
+  - music
+  source: clawhub-community
+  clawhub_slug: lyrion-music-skill
+  clawhub_path: photonixlaser-ux/lyrion-music-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lyrion Music
+
+    # Source: ClawHub community skill by photonixlaser-ux
+
+    # Install: clawhub install lyrion-music-skill
+
+    # Path: photonixlaser-ux/lyrion-music-skill
+
+
+    ## Description
+
+    Steuere Lyrion Music Server (LMS) über die JSON-RPC API. Nutze diesen Skill für Wiedergabe-Steuerung (Play/Pause/Stop),
+    Lautstärke, Playlist-Verwaltung, Player-Auswahl und Musikdatenbank-Abfragen. Erfordert LMS auf Port 9000.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/lyrion.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lyrion-music-skill
+
+    ```'
+examples:
+- description: Install Lyrion Music from ClawHub
+  usage: clawhub install lyrion-music-skill
+schema_version: '1.0'

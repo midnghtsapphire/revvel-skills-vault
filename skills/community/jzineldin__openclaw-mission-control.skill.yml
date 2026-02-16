@@ -1,0 +1,56 @@
+name: mission-control
+title: Mission Control
+version: 1.0.0
+description: macOS-native web dashboard for monitoring and controlling your OpenClaw agent. Live chat, cron management, task
+  workshop, scout engine, cost tracking, and more.
+metadata:
+  author: jzineldin
+  category: Communication
+  tags:
+  - communication
+  - mission
+  - control
+  source: clawhub-community
+  clawhub_slug: openclaw-mission-control
+  clawhub_path: jzineldin/openclaw-mission-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mission Control
+
+    # Source: ClawHub community skill by jzineldin
+
+    # Install: clawhub install openclaw-mission-control
+
+    # Path: jzineldin/openclaw-mission-control
+
+
+    ## Description
+
+    macOS-native web dashboard for monitoring and controlling your OpenClaw agent. Live chat, cron management, task workshop,
+    scout engine, cost tracking, and more.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-mission-control
+
+    ```'
+examples:
+- description: Install Mission Control from ClawHub
+  usage: clawhub install openclaw-mission-control
+schema_version: '1.0'

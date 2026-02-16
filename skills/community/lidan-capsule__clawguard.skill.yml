@@ -1,0 +1,54 @@
+name: clawguard
+title: ClawGuard
+version: 0.1.5
+description: Install and configure the ClawGuard security plugin - an LLM-as-a-Judge guardrail that detects and blocks risky
+  tool calls
+metadata:
+  author: lidan-capsule
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawguard
+  source: clawhub-community
+  clawhub_slug: clawguard
+  clawhub_path: lidan-capsule/clawguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawGuard
+
+    # Source: ClawHub community skill by lidan-capsule
+
+    # Install: clawhub install clawguard
+
+    # Path: lidan-capsule/clawguard
+
+
+    ## Description
+
+    Install and configure the ClawGuard security plugin - an LLM-as-a-Judge guardrail that detects and blocks risky tool calls
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawguard
+
+    ```'
+examples:
+- description: Install ClawGuard from ClawHub
+  usage: clawhub install clawguard
+schema_version: '1.0'

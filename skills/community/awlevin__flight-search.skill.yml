@@ -1,0 +1,70 @@
+name: flight-search
+title: Flight Search
+version: 0.1.7
+description: Search Google Flights for prices, times, and airlines. No API key required.
+metadata:
+  author: awlevin
+  category: Search & Research
+  tags:
+  - search-research
+  - flight
+  - search
+  source: clawhub-community
+  clawhub_slug: flight-search
+  clawhub_path: awlevin/flight-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Flight Search
+
+    # Source: ClawHub community skill by awlevin
+
+    # Install: clawhub install flight-search
+
+    # Path: awlevin/flight-search
+
+
+    ## Description
+
+    Search Google Flights for prices, times, and airlines. No API key required.
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - pyproject.toml
+
+    - pytest.ini
+
+    - flight_search/__init__.py
+
+    - flight_search/cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flight-search
+
+    ```'
+examples:
+- description: Install Flight Search from ClawHub
+  usage: clawhub install flight-search
+schema_version: '1.0'

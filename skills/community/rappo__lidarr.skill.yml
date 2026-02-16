@@ -1,0 +1,55 @@
+name: lidarr
+title: Lidarr
+version: 1.0.0
+description: Search and add music to Lidarr. Supports artists, albums, and quality profiles (FLAC preferred).
+metadata:
+  author: rappo
+  category: Search & Research
+  tags:
+  - search-research
+  - lidarr
+  source: clawhub-community
+  clawhub_slug: lidarr
+  clawhub_path: rappo/lidarr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lidarr
+
+    # Source: ClawHub community skill by rappo
+
+    # Install: clawhub install lidarr
+
+    # Path: rappo/lidarr
+
+
+    ## Description
+
+    Search and add music to Lidarr. Supports artists, albums, and quality profiles (FLAC preferred).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/lidarr.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lidarr
+
+    ```'
+examples:
+- description: Install Lidarr from ClawHub
+  usage: clawhub install lidarr
+schema_version: '1.0'

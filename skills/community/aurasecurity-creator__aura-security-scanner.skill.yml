@@ -1,0 +1,62 @@
+name: aura_security_scanner
+title: Aura Security Scanner
+version: 1.0.0
+description: Scan AI agent skills for malware, credential theft, prompt injection, and dangerous permissions before installing
+  them
+metadata:
+  author: aurasecurity-creator
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - aura
+  - security
+  - scanner
+  source: clawhub-community
+  clawhub_slug: aura-security-scanner
+  clawhub_path: aurasecurity-creator/aura-security-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Aura Security Scanner
+
+    # Source: ClawHub community skill by aurasecurity-creator
+
+    # Install: clawhub install aura-security-scanner
+
+    # Path: aurasecurity-creator/aura-security-scanner
+
+
+    ## Description
+
+    Scan AI agent skills for malware, credential theft, prompt injection, and dangerous permissions before installing them
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.ts
+
+    - package.json
+
+    - tsconfig.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aura-security-scanner
+
+    ```'
+examples:
+- description: Install Aura Security Scanner from ClawHub
+  usage: clawhub install aura-security-scanner
+schema_version: '1.0'

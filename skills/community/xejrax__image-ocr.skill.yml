@@ -1,0 +1,54 @@
+name: image-ocr
+title: Image Ocr
+version: 1.0.0
+description: '"Extract text from images using Tesseract OCR"'
+metadata:
+  author: xejrax
+  category: Media & Content
+  tags:
+  - media-content
+  - image
+  - ocr
+  source: clawhub-community
+  clawhub_slug: image-ocr
+  clawhub_path: xejrax/image-ocr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Image Ocr
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install image-ocr
+
+    # Path: xejrax/image-ocr
+
+
+    ## Description
+
+    "Extract text from images using Tesseract OCR"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install image-ocr
+
+    ```'
+examples:
+- description: Install Image Ocr from ClawHub
+  usage: clawhub install image-ocr
+schema_version: '1.0'

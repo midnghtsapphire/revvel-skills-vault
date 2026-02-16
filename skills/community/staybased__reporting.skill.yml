@@ -1,0 +1,61 @@
+name: reporting
+title: Reporting
+version: 1.0.0
+description: '|'
+metadata:
+  author: staybased
+  category: General
+  tags:
+  - general
+  - reporting
+  source: clawhub-community
+  clawhub_slug: reporting
+  clawhub_path: staybased/reporting
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reporting
+
+    # Source: ClawHub community skill by staybased
+
+    # Install: clawhub install reporting
+
+    # Path: staybased/reporting
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - templates/daily-log.md
+
+    - templates/full-audit.md
+
+    - templates/revenue-snapshot.md
+
+    - templates/weekly-retro.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reporting
+
+    ```'
+examples:
+- description: Install Reporting from ClawHub
+  usage: clawhub install reporting
+schema_version: '1.0'

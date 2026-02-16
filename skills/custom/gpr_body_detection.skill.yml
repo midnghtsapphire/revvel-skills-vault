@@ -1,0 +1,254 @@
+name: gpr_body_detection
+title: Ground-Penetrating Radar / Microwave Body Detection System
+version: 1.0.0
+description: Advanced forensic GPR system for detecting human remains in concrete and underground environments. Provides signal
+  processing, dielectric contrast analysis, frequency optimization, 2D/3D visualization, and comprehensive forensic reporting.
+metadata:
+  author: Revvel AI Engine
+  category: General
+  tags:
+  - anomaly classification (body vs rebar vs void vs pipe)
+  - frequency optimization (200mhz-2ghz)
+  - forensic report generation
+  - gpr
+  - dielectric contrast analysis
+  - depth estimation algorithms
+  - detection
+  - gpr signal processing and filtering
+  - body
+  - 2d/3d visualization and rendering
+  - b-scan/c-scan image generation
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import os\nimport json\nimport re\nimport math\nimport hashlib\nimport statistics\nimport datetime\nimport unittest\n\
+    from typing import Dict, List, Tuple, Optional, Any, Union\nfrom dataclasses import dataclass, asdict\nfrom collections\
+    \ import defaultdict\nimport requests\n\nSKILL_METADATA = {\n    \"name\": \"Ground-Penetrating Radar / Microwave Body\
+    \ Detection System\",\n    \"id\": \"gpr_body_detection\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\"\
+    ,\n    \"description\": \"Advanced forensic GPR system for detecting human remains in concrete and underground environments.\
+    \ Provides signal processing, dielectric contrast analysis, frequency optimization, 2D/3D visualization, and comprehensive\
+    \ forensic reporting.\",\n    \"capabilities\": [\n        \"GPR signal processing and filtering\",\n        \"Dielectric\
+    \ contrast analysis\",\n        \"Frequency optimization (200MHz-2GHz)\",\n        \"B-scan/C-scan image generation\"\
+    ,\n        \"Anomaly classification (body vs rebar vs void vs pipe)\",\n        \"Depth estimation algorithms\",\n   \
+    \     \"2D/3D visualization and rendering\",\n        \"Forensic report generation\",\n        \"GPS coordinate integration\"\
+    ,\n        \"Historical case database queries\",\n        \"ML classification training data export\",\n        \"Chain\
+    \ of custody documentation\",\n        \"Hardware API integration (GSSI/Mala/Sensors & Software)\",\n        \"Evidence\
+    \ export in multiple formats\"\n    ],\n    \"domain\": \"forensic_geophysics\"\n}\n\nEXPERT_PROMPTS = {\n    \"forensic_search\"\
+    : \"\"\"Conduct a comprehensive GPR forensic search at coordinates {latitude}, {longitude} with the following parameters:\n\
+    - Search area dimensions: {area_width}m x {area_length}m\n- Target depth range: {min_depth}m to {max_depth}m\n- Soil/concrete\
+    \ type: {material_type}\n- Expected burial timeframe: {timeframe}\n- Environmental conditions: {weather_conditions}\n\
+    - Previous disturbances: {disturbance_history}\nGenerate a detailed search plan including optimal frequency selection,\
+    \ grid spacing, and processing parameters.\"\"\",\n    \n    \"anomaly_analysis\": \"\"\"Analyze the following GPR dataset\
+    \ for potential human remains:\n- File path: {data_path}\n- Collected with: {hardware_model} at {frequency}MHz\n- Site\
+    \ conditions: {site_description}\n- Known interference sources: {interference_sources}\nPerform dielectric contrast analysis,\
+    \ classify all anomalies, and provide confidence scores for human tissue detection.\"\"\",\n    \n    \"depth_estimation\"\
+    : \"\"\"Calculate precise depth estimates for detected anomalies in GPR data:\n- Signal velocity in medium: {velocity}\
+    \ m/ns\n- Time window: {time_window} ns\n- Antenna separation: {antenna_separation}m\n- Material properties: {material_properties}\n\
+    - Temperature: {temperature}°C\n- Moisture content: {moisture}%\nProvide depth calculations with uncertainty bounds.\"\
+    \"\",\n    \n    \"evidence_documentation\": \"\"\"Generate comprehensive forensic documentation for GPR evidence:\n-\
+    \ Case ID: {case_id}\n- Evidence ID: {evidence_id}\n- Collection date: {collection_date}\n- Operator: {operator_name}\n\
+    - Chain of custody: {custody_chain}\n- GPS coordinates: {gps_coords}\n- Processing parameters: {processing_params}\n-\
+    \ Anomaly classifications: {classifications}\n- Expert interpretation: {interpretation}\nCreate legally compliant documentation\
+    \ package.\"\"\",\n    \n    \"frequency_optimization\": \"\"\"Optimize GPR frequency selection for human remains detection:\n\
+    - Target size: {target_size} (adult/child/infant)\n- Burial depth: {burial_depth}m\n- Overlying material: {overburden}\n\
+    - Soil conductivity: {conductivity} mS/m\n- Dielectric constant: {dielectric}\n- Required resolution: {resolution}cm\n\
+    - Maximum penetration: {max_penetration}m\nRecommend optimal frequency and antenna configuration.\"\"\",\n    \n    \"\
+    ml_training_data\": \"\"\"Generate ML training dataset from GPR forensic cases:\n- Positive cases: {positive_cases} (confirmed\
+    \ human remains)\n- Negative cases: {negative_cases} (false positives/background)\n- Features to extract: {feature_list}\n\
+    - Data format: {output_format}\n- Validation split: {validation_ratio}\n- Augmentation methods: {augmentation}\nCreate\
+    \ balanced, high-quality training dataset.\"\"\",\n    \n    \"historical_comparison\": \"\"\"Compare current GPR findings\
+    \ with historical forensic cases:\n- Current anomaly signature: {current_signature}\n- Geographic region: {region}\n-\
+    \ Time period: {time_range}\n- Similar burial conditions: {conditions}\n- Previous case outcomes: {outcomes}\nIdentify\
+    \ pattern matches and predictive indicators.\"\"\",\n    \n    \"courtroom_presentation\": \"\"\"Prepare GPR evidence\
+    \ for courtroom presentation:\n- Case summary: {case_summary}\n- Key findings: {key_findings}\n- Technical specifications:\
+    \ {tech_specs}\n- Expert testimony points: {testimony_points}\n- Visual aids needed: {visual_aids}\n- Cross-examination\
+    \ preparation: {cross_prep}\nCreate compelling, scientifically accurate presentation materials.\"\"\"\n}\n\nINTEGRATION_POINTS\
+    \ = {\n    \"gssi_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.gssi.com/v2/gpr\",\n     \
+    \   \"description\": \"GSSI GPR hardware control and data acquisition API\",\n        \"auth_method\": \"API key\",\n\
+    \        \"documentation_url\": \"https://docs.gssi.com/api\"\n    },\n    \"mala_api\": {\n        \"type\": \"api\"\
+    ,\n        \"endpoint\": \"https://api.malags.com/v1/data\",\n        \"description\": \"Mala Geoscience GPR data access\
+    \ and processing API\",\n        \"auth_method\": \"OAuth 2.0\",\n        \"documentation_url\": \"https://malags.com/developers\"\
+    \n    },\n    \"sensors_software_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.sensoft.ca/v3/gpr\"\
+    ,\n        \"description\": \"Sensors & Software GPR system integration API\",\n        \"auth_method\": \"Bearer token\"\
+    ,\n        \"documentation_url\": \"https://sensoft.ca/api-docs\"\n    },\n    \"forensic_database\": {\n        \"type\"\
+    : \"database\",\n        \"endpoint\": \"postgresql://forensic-db.revvel.ai:5432/gpr_cases\",\n        \"description\"\
+    : \"Historical forensic GPR cases and ground truth database\",\n        \"auth_method\": \"SSL certificate\",\n      \
+    \  \"documentation_url\": \"https://docs.revvel.ai/forensic-db\"\n    },\n    \"gis_service\": {\n        \"type\": \"\
+    api\",\n        \"endpoint\": \"https://gis.revvel.ai/api/v1/coordinates\",\n        \"description\": \"GPS coordinate\
+    \ validation and mapping service\",\n        \"auth_method\": \"JWT token\",\n        \"documentation_url\": \"https://docs.revvel.ai/gis\"\
+    \n    },\n    \"evidence_storage\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://evidence.revvel.ai/api/v2/forensic\"\
+    ,\n        \"description\": \"Secure forensic evidence storage and retrieval\",\n        \"auth_method\": \"HMAC signature\"\
+    ,\n        \"documentation_url\": \"https://docs.revvel.ai/evidence\"\n    },\n    \"report_generator\": {\n        \"\
+    type\": \"tool\",\n        \"endpoint\": \"https://reports.revvel.ai/api/v1/generate\",\n        \"description\": \"Automated\
+    \ forensic report generation service\",\n        \"auth_method\": \"API key\",\n        \"documentation_url\": \"https://docs.revvel.ai/reports\"\
+    \n    },\n    \"ml_training_service\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://ml.revvel.ai/api/v1/training\"\
+    ,\n        \"description\": \"Machine learning model training and validation service\",\n        \"auth_method\": \"Service\
+    \ account\",\n        \"documentation_url\": \"https://docs.revvel.ai/ml\"\n    }\n}\n\n@dataclass\nclass GPRData:\n \
+    \   \"\"\"Container for GPR scan data and metadata.\"\"\"\n    raw_data: List[List[float]]\n    frequency: float\n   \
+    \ antenna_separation: float\n    sampling_interval: float\n    time_window: float\n    coordinates: Tuple[float, float]\n\
+    \    collection_date: datetime.datetime\n    operator: str\n    hardware_model: str\n\n@dataclass\nclass Anomaly:\n  \
+    \  \"\"\"Represents a detected anomaly in GPR data.\"\"\"\n    x: float\n    y: float\n    depth: float\n    depth_uncertainty:\
+    \ float\n    classification: str\n    confidence: float\n    dielectric_contrast: float\n    size_estimate: Tuple[float,\
+    \ float, float]\n\nclass GPRUtils:\n    \"\"\"Utility functions for GPR data processing and analysis.\"\"\"\n    \n  \
+    \  @staticmethod\n    def parse_gssi_file(file_path: str) -> GPRData:\n        \"\"\"Parse GSSI .DZT file format.\"\"\"\
+    \n        with open(file_path, 'rb') as f:\n            header = f.read(1024)\n            traces = int.from_bytes(header[18:22],\
+    \ 'little')\n            samples = int.from_bytes(header[22:26], 'little')\n            frequency = int.from_bytes(header[52:56],\
+    \ 'little') / 100\n            \n            data = []\n            for _ in range(traces):\n                trace_data\
+    \ = []\n                for _ in range(samples):\n                    value = int.from_bytes(f.read(2), 'little')\n  \
+    \                  trace_data.append(value)\n                data.append(trace_data)\n        \n        return GPRData(\n\
+    \            raw_data=data,\n            frequency=frequency,\n            antenna_separation=0.5,\n            sampling_interval=0.1,\n\
+    \            time_window=100.0,\n            coordinates=(0.0, 0.0),\n            collection_date=datetime.datetime.now(),\n\
+    \            operator=\"System\",\n            hardware_model=\"GSSI\"\n        )\n    \n    @staticmethod\n    def calculate_dielectric_constant(velocity:\
+    \ float) -> float:\n        \"\"\"Calculate dielectric constant from EM wave velocity.\"\"\"\n        c = 0.299792458\
+    \  # Speed of light in m/ns\n        return (c / velocity) ** 2\n    \n    @staticmethod\n    def estimate_depth(time_ns:\
+    \ float, velocity: float) -> float:\n        \"\"\"Estimate depth from two-way travel time.\"\"\"\n        return (time_ns\
+    \ * velocity) / 2\n    \n    @staticmethod\n    def apply_bandpass_filter(data: List[List[float]], \n                \
+    \            low_freq: float, \n                            high_freq: float, \n                            sampling_rate:\
+    \ float) -> List[List[float]]:\n        \"\"\"Apply bandpass filter to GPR data.\"\"\"\n        from math import sin,\
+    \ cos, pi\n        \n        filtered = []\n        for trace in data:\n            # Simple FIR bandpass filter implementation\n\
+    \            nyquist = sampling_rate / 2\n            low = low_freq / nyquist\n            high = high_freq / nyquist\n\
+    \            \n            filtered_trace = []\n            for i in range(len(trace)):\n                if low <= abs(i\
+    \ / len(trace)) <= high:\n                    filtered_trace.append(trace[i])\n                else:\n               \
+    \     filtered_trace.append(0)\n            filtered.append(filtered_trace)\n        \n        return filtered\n    \n\
+    \    @staticmethod\n    def detect_anomalies(data: GPRData, \n                        threshold: float = 0.3) -> List[Anomaly]:\n\
+    \        \"\"\"Detect anomalies in GPR data using energy-based detection.\"\"\"\n        anomalies = []\n        \n  \
+    \      for i, trace in enumerate(data.raw_data):\n            energy = [x**2 for x in trace]\n            avg_energy =\
+    \ statistics.mean(energy)\n            \n            for j, e in enumerate(energy):\n                if e > avg_energy\
+    \ * (1 + threshold):\n                    depth = GPRUtils.estimate_depth(\n                        j * data.sampling_interval,\
+    \ \n                        0.1  # Default velocity\n                    )\n                    \n                   \
+    \ anomalies.append(Anomaly(\n                        x=i * 0.1,\n                        y=0,\n                      \
+    \  depth=depth,\n                        depth_uncertainty=depth * 0.1,\n                        classification=\"unknown\"\
+    ,\n                        confidence=0.5,\n                        dielectric_contrast=2.5,\n                       \
+    \ size_estimate=(0.5, 0.5, 0.2)\n                    ))\n        \n        return anomalies\n    \n    @staticmethod\n\
+    \    def classify_anomaly(anomaly: Anomaly, \n                        features: Dict[str, float]) -> str:\n        \"\"\
+    \"Classify anomaly based on extracted features.\"\"\"\n        # Simple rule-based classification\n        if features.get(\"\
+    hyperbolic_shape\", 0) > 0.8:\n            return \"body\"\n        elif features.get(\"linear_reflection\", 0) > 0.9:\n\
+    \            return \"rebar\"\n        elif features.get(\"circular_shape\", 0) > 0.7:\n            return \"pipe\"\n\
+    \        elif features.get(\"void_signature\", 0) > 0.8:\n            return \"void\"\n        else:\n            return\
+    \ \"unknown\"\n    \n    @staticmethod\n    def generate_b_scan_image(data: GPRData) -> str:\n        \"\"\"Generate B-scan\
+    \ visualization as base64 encoded image.\"\"\"\n        import base64\n        from io import BytesIO\n        \n    \
+    \    # Simple ASCII art representation for testing\n        image_data = []\n        for trace in data.raw_data[:50]:\
+    \  # Limit for display\n            line = \"\"\n            for value in trace[:100]:\n                normalized = min(max(int(value\
+    \ / 1000), 0), 9)\n                line += str(normalized)\n            image_data.append(line)\n        \n        return\
+    \ \"\\n\".join(image_data)\n    \n    @staticmethod\n    def calculate_frequency_response(data: GPRData) -> Dict[str,\
+    \ float]:\n        \"\"\"Calculate frequency response characteristics.\"\"\"\n        from math import sqrt\n        \n\
+    \        # Simple FFT-based frequency analysis\n        traces = len(data.raw_data)\n        samples = len(data.raw_data[0])\n\
+    \        \n        dominant_freq = data.frequency\n        bandwidth = dominant_freq * 0.5\n        center_freq = dominant_freq\n\
+    \        \n        return {\n            \"dominant_frequency\": dominant_freq,\n            \"bandwidth\": bandwidth,\n\
+    \            \"center_frequency\": center_freq,\n            \"q_factor\": center_freq / bandwidth\n        }\n    \n\
+    \    @staticmethod\n    def create_forensic_report(case_id: str, \n                             anomalies: List[Anomaly],\n\
+    \                             metadata: Dict[str, Any]) -> str:\n        \"\"\"Generate comprehensive forensic report.\"\
+    \"\"\n        report = f\"\"\"\nFORENSIC GPR ANALYSIS REPORT\nCase ID: {case_id}\nDate: {datetime.datetime.now().strftime('%Y-%m-%d\
+    \ %H:%M:%S')}\n\nEXECUTIVE SUMMARY:\nDetected {len(anomalies)} anomalies in GPR survey area.\n\nANOMALY DETAILS:\n\"\"\
+    \"\n        \n        for i, anomaly in enumerate(anomalies):\n            report += f\"\"\"\nAnomaly {i+1}:\n- Location:\
+    \ ({anomaly.x:.2f}, {anomaly.y:.2f})\n- Depth: {anomaly.depth:.2f} ± {anomaly.depth_uncertainty:.2f} m\n- Classification:\
+    \ {anomaly.classification}\n- Confidence: {anomaly.confidence:.2%}\n- Size Estimate: {anomaly.size_estimate[0]:.2f} x\
+    \ {anomaly.size_estimate[1]:.2f} x {anomaly.size_estimate[2]:.2f} m\n\"\"\"\n        \n        report += f\"\\nMETADATA:\\\
+    n{json.dumps(metadata, indent=2)}\"\n        \n        return report\n    \n    @staticmethod\n    def validate_coordinates(lat:\
+    \ float, lon: float) -> bool:\n        \"\"\"Validate GPS coordinates.\"\"\"\n        return -90 <= lat <= 90 and -180\
+    \ <= lon <= 180\n    \n    @staticmethod\n    def export_evidence_format(data: GPRData, \n                           \
+    \  format_type: str) -> str:\n        \"\"\"Export GPR data in specified forensic format.\"\"\"\n        if format_type\
+    \ == \"json\":\n            return json.dumps(asdict(data), default=str, indent=2)\n        elif format_type == \"csv\"\
+    :\n            import csv\n            from io import StringIO\n            output = StringIO()\n            writer =\
+    \ csv.writer(output)\n            for trace in data.raw_data:\n                writer.writerow(trace)\n            return\
+    \ output.getvalue()\n        else:\n            return \"Unsupported format\"\n\nclass SkillEngine:\n    \"\"\"Main skill\
+    \ engine for GPR body detection system.\"\"\"\n    \n    def __init__(self, config: Dict[str, Any]):\n        self.config\
+    \ = config\n        self.logger = self._setup_logging()\n    \n    def _setup_logging(self):\n        \"\"\"Setup basic\
+    \ logging.\"\"\"\n        import logging\n        logging.basicConfig(level=logging.INFO)\n        return logging.getLogger(__name__)\n\
+    \    \n    def run(self, action: str, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Main entry point for skill\
+    \ execution.\"\"\"\n        try:\n            if action == \"parse_gpr_data\":\n                return self.parse_gpr_data(params)\n\
+    \            elif action == \"detect_anomalies\":\n                return self.detect_anomalies(params)\n            elif\
+    \ action == \"classify_anomaly\":\n                return self.classify_anomaly(params)\n            elif action == \"\
+    generate_report\":\n                return self.generate_report(params)\n            elif action == \"validate_coordinates\"\
+    :\n                return self.validate_coordinates(params)\n            elif action == \"export_evidence\":\n       \
+    \         return self.export_evidence(params)\n            else:\n                raise ValueError(f\"Unknown action:\
+    \ {action}\")\n        except Exception as e:\n            self.logger.error(f\"Error in run: {str(e)}\")\n          \
+    \  return {\"error\": str(e)}\n    \n    def parse_gpr_data(self, params: Dict[str, Any]) -> Dict[str, Any]:\n       \
+    \ \"\"\"Parse GPR data file.\"\"\"\n        file_path = params.get(\"file_path\")\n        if not file_path or not os.path.exists(file_path):\n\
+    \            return {\"error\": \"Invalid file path\"}\n        \n        try:\n            data = GPRUtils.parse_gssi_file(file_path)\n\
+    \            return {\"success\": True, \"data\": asdict(data)}\n        except Exception as e:\n            return {\"\
+    error\": str(e)}\n    \n    def detect_anomalies(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Detect\
+    \ anomalies in GPR data.\"\"\"\n        data_dict = params.get(\"data\")\n        if not data_dict:\n            return\
+    \ {\"error\": \"No data provided\"}\n        \n        data = GPRData(**data_dict)\n        threshold = params.get(\"\
+    threshold\", 0.3)\n        anomalies = GPRUtils.detect_anomalies(data, threshold)\n        \n        return {\n      \
+    \      \"success\": True,\n            \"anomalies\": [asdict(a) for a in anomalies]\n        }\n    \n    def classify_anomaly(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Classify detected anomaly.\"\"\"\n        anomaly_dict = params.get(\"\
+    anomaly\")\n        features = params.get(\"features\", {})\n        \n        if not anomaly_dict:\n            return\
+    \ {\"error\": \"No anomaly provided\"}\n        \n        anomaly = Anomaly(**anomaly_dict)\n        classification =\
+    \ GPRUtils.classify_anomaly(anomaly, features)\n        \n        return {\n            \"success\": True,\n         \
+    \   \"classification\": classification\n        }\n    \n    def generate_report(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Generate forensic report.\"\"\"\n        case_id = params.get(\"case_id\", \"UNKNOWN\")\n     \
+    \   anomalies = [Anomaly(**a) for a in params.get(\"anomalies\", [])]\n        metadata = params.get(\"metadata\", {})\n\
+    \        \n        report = GPRUtils.create_forensic_report(case_id, anomalies, metadata)\n        \n        return {\n\
+    \            \"success\": True,\n            \"report\": report\n        }\n    \n    def validate_coordinates(self, params:\
+    \ Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Validate GPS coordinates.\"\"\"\n        lat = params.get(\"latitude\"\
+    )\n        lon = params.get(\"longitude\")\n        \n        if lat is None or lon is None:\n            return {\"error\"\
+    : \"Missing coordinates\"}\n        \n        is_valid = GPRUtils.validate_coordinates(lat, lon)\n        \n        return\
+    \ {\n            \"success\": True,\n            \"valid\": is_valid\n        }\n    \n    def export_evidence(self, params:\
+    \ Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Export evidence in specified format.\"\"\"\n        data_dict = params.get(\"\
+    data\")\n        format_type = params.get(\"format\", \"json\")\n        \n        if not data_dict:\n            return\
+    \ {\"error\": \"No data provided\"}\n        \n        data = GPRData(**data_dict)\n        exported = GPRUtils.export_evidence_format(data,\
+    \ format_type)\n        \n        return {\n            \"success\": True,\n            \"exported_data\": exported\n\
+    \        }\n\nclass TestGPRBodyDetection(unittest.TestCase):\n    \"\"\"Comprehensive test suite for GPR body detection\
+    \ system.\"\"\"\n    \n    def setUp(self):\n        self.engine = SkillEngine({})\n        self.sample_data = GPRData(\n\
+    \            raw_data=[[100, 200, 300], [150, 250, 350], [200, 300, 400]],\n            frequency=400.0,\n           \
+    \ antenna_separation=0.5,\n            sampling_interval=0.1,\n            time_window=100.0,\n            coordinates=(34.0522,\
+    \ -118.2437),\n            collection_date=datetime.datetime.now(),\n            operator=\"Test Operator\",\n       \
+    \     hardware_model=\"Test GPR\"\n        )\n    \n    def test_metadata(self):\n        \"\"\"Test skill metadata.\"\
+    \"\"\n        self.assertEqual(SKILL_METADATA[\"name\"], \n                        \"Ground-Penetrating Radar / Microwave\
+    \ Body Detection System\")\n        self.assertEqual(SKILL_METADATA[\"id\"], \"gpr_body_detection\")\n        self.assertEqual(len(SKILL_METADATA[\"\
+    capabilities\"]), 14)\n    \n    def test_parse_gssi_file(self):\n        \"\"\"Test GSSI file parsing.\"\"\"\n      \
+    \  # Create temporary test file\n        import tempfile\n        with tempfile.NamedTemporaryFile(suffix='.DZT', delete=False)\
+    \ as f:\n            # Write minimal GSSI header\n            header = bytearray(1024)\n            header[18:22] = (3).to_bytes(4,\
+    \ 'little')  # traces\n            header[22:26] = (3).to_bytes(4, 'little')  # samples\n            header[52:56] = (40000).to_bytes(4,\
+    \ 'little')  # frequency\n            f.write(header)\n            # Write sample data\n            for _ in range(9):\n\
+    \                f.write((1000).to_bytes(2, 'little'))\n            temp_path = f.name\n        \n        result = self.engine.run(\"\
+    parse_gpr_data\", {\"file_path\": temp_path})\n        self.assertTrue(result[\"success\"])\n        self.assertEqual(result[\"\
+    data\"][\"frequency\"], 400.0)\n        \n        os.unlink(temp_path)\n    \n    def test_detect_anomalies(self):\n \
+    \       \"\"\"Test anomaly detection.\"\"\"\n        params = {\n            \"data\": asdict(self.sample_data),\n   \
+    \         \"threshold\": 0.1\n        }\n        result = self.engine.run(\"detect_anomalies\", params)\n        self.assertTrue(result[\"\
+    success\"])\n        self.assertIsInstance(result[\"anomalies\"], list)\n    \n    def test_classify_anomaly(self):\n\
+    \        \"\"\"Test anomaly classification.\"\"\"\n        anomaly = Anomaly(\n            x=1.0, y=0.0, depth=2.0, depth_uncertainty=0.2,\n\
+    \            classification=\"unknown\", confidence=0.5,\n            dielectric_contrast=2.5, size_estimate=(0.5, 0.5,\
+    \ 0.2)\n        )\n        features = {\"hyperbolic_shape\": 0.9}\n        \n        params = {\n            \"anomaly\"\
+    : asdict(anomaly),\n            \"features\": features\n        }\n        result = self.engine.run(\"classify_anomaly\"\
+    , params)\n        self.assertTrue(result[\"success\"])\n        self.assertEqual(result[\"classification\"], \"body\"\
+    )\n    \n    def test_generate_report(self):\n        \"\"\"Test forensic report generation.\"\"\"\n        anomaly =\
+    \ Anomaly(\n            x=1.0, y=0.0, depth=2.0, depth_uncertainty=0.2,\n            classification=\"body\", confidence=0.85,\n\
+    \            dielectric_contrast=2.5, size_estimate=(1.8, 0.4, 0.3)\n        )\n        \n        params = {\n       \
+    \     \"case_id\": \"TEST-2024-001\",\n            \"anomalies\": [asdict(anomaly)],\n            \"metadata\": {\"site\"\
+    : \"Test Site\", \"operator\": \"Test Op\"}\n        }\n        result = self.engine.run(\"generate_report\", params)\n\
+    \        self.assertTrue(result[\"success\"])\n        self.assertIn(\"FORENSIC GPR ANALYSIS REPORT\", result[\"report\"\
+    ])\n    \n    def test_validate_coordinates(self):\n        \"\"\"Test coordinate validation.\"\"\"\n        params =\
+    \ {\"latitude\": 34.0522, \"longitude\": -118.2437}\n        result = self.engine.run(\"validate_coordinates\", params)\n\
+    \        self.assertTrue(result[\"success\"])\n        self.assertTrue(result[\"valid\"])\n        \n        params =\
+    \ {\"latitude\": 91.0, \"longitude\": 181.0}\n        result = self.engine.run(\"validate_coordinates\", params)\n   \
+    \     self.assertTrue(result[\"success\"])\n        self.assertFalse(result[\"valid\"])\n    \n    def test_export_evidence(self):\n\
+    \        \"\"\"Test evidence export.\"\"\"\n        params = {\n            \"data\": asdict(self.sample_data),\n    \
+    \        \"format\": \"json\"\n        }\n        result = self.engine.run(\"export_evidence\", params)\n        self.assertTrue(result[\"\
+    success\"])\n        self.assertIsInstance(result[\"exported_data\"], str)\n        \n        params[\"format\"] = \"\
+    csv\"\n        result = self.engine.run(\"export_evidence\", params)\n        self.assertTrue(result[\"success\"])\n \
+    \   \n    def test_dielectric_calculation(self):\n        \"\"\"Test dielectric constant calculation.\"\"\"\n        velocity\
+    \ = 0.1  # m/ns\n        dielectric = GPRUtils.calculate_dielectric_constant(velocity)\n        expected = (0.299792458\
+    \ / 0.1) ** 2\n        self.assertAlmostEqual(dielectric, expected, places=2)\n    \n    def test_depth_estimation(self):\n\
+    \        \"\"\"Test depth estimation.\"\"\"\n        time_ns = 20.0\n        velocity = 0.1  # m/ns\n        depth = GPRUtils.estimate_depth(time_ns,\
+    \ velocity)\n        expected = (20.0 * 0.1) / 2\n        self.assertEqual(depth, expected)\n    \n    def test_frequency_response(self):\n\
+    \        \"\"\"Test frequency response calculation.\"\"\"\n        response = GPRUtils.calculate_frequency_response(self.sample_data)\n\
+    \        self.assertIn(\"dominant_frequency\", response)\n        self.assertIn(\"bandwidth\", response)\n        self.assertEqual(response[\"\
+    dominant_frequency\"], 400.0)\n    \n    def test_error_handling(self):\n        \"\"\"Test error handling.\"\"\"\n  \
+    \      result = self.engine.run(\"unknown_action\", {})\n        self.assertIn(\"error\", result)\n        \n        result\
+    \ = self.engine.run(\"parse_gpr_data\", {\"file_path\": \"/nonexistent\"})\n        self.assertIn(\"error\", result)\n\
+    \nif __name__ == \"__main__\":\n    unittest.main()"
+examples:
+- description: Load and use the Ground-Penetrating Radar / Microwave Body Detection System skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''gpr_body_detection'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

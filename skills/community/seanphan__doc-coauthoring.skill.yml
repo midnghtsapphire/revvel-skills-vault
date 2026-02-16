@@ -1,0 +1,58 @@
+name: doc-coauthoring
+title: Doc Coauthoring
+version: 0.1.0
+description: Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation,
+  proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer
+  context, refine content through iteration, and verify the doc
+metadata:
+  author: seanphan
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - doc
+  - coauthoring
+  source: clawhub-community
+  clawhub_slug: doc-coauthoring
+  clawhub_path: seanphan/doc-coauthoring
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Doc Coauthoring
+
+    # Source: ClawHub community skill by seanphan
+
+    # Install: clawhub install doc-coauthoring
+
+    # Path: seanphan/doc-coauthoring
+
+
+    ## Description
+
+    Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation,
+    proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer
+    context, refine content through iteration, and verify the doc
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install doc-coauthoring
+
+    ```'
+examples:
+- description: Install Doc Coauthoring from ClawHub
+  usage: clawhub install doc-coauthoring
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: solo-cli
+title: SOLO.ro cli
+version: 1.1.0
+description: Monitor and interact with SOLO.ro accounting platform via CLI or TUI (summary, revenues, expenses, queue, e-factura,
+  company). Use when a user asks to check their accounting data, view invoices, expenses, or e-factura documents, or translate
+  a task into safe solo-cli commands.
+metadata:
+  author: rursache
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - solo
+  - cli
+  source: clawhub-community
+  clawhub_slug: solo-cli
+  clawhub_path: rursache/solo-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SOLO.ro cli
+
+    # Source: ClawHub community skill by rursache
+
+    # Install: clawhub install solo-cli
+
+    # Path: rursache/solo-cli
+
+
+    ## Description
+
+    Monitor and interact with SOLO.ro accounting platform via CLI or TUI (summary, revenues, expenses, queue, e-factura, company).
+    Use when a user asks to check their accounting data, view invoices, expenses, or e-factura documents, or translate a task
+    into safe solo-cli commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/help-man-page.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solo-cli
+
+    ```'
+examples:
+- description: Install SOLO.ro cli from ClawHub
+  usage: clawhub install solo-cli
+schema_version: '1.0'

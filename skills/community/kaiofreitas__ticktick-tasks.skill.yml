@@ -1,0 +1,57 @@
+name: ticktick
+title: TickTick Tasks
+version: 1.0.0
+description: TickTick task manager integration. List projects and tasks, create new tasks, complete tasks, delete tasks. Use
+  when the user wants to manage their to-do list, add reminders, check pending tasks, or mark tasks as done. Requires OAuth
+  setup via `ticktick-setup`.
+metadata:
+  author: kaiofreitas
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - ticktick
+  source: clawhub-community
+  clawhub_slug: ticktick-tasks
+  clawhub_path: kaiofreitas/ticktick-tasks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TickTick Tasks
+
+    # Source: ClawHub community skill by kaiofreitas
+
+    # Install: clawhub install ticktick-tasks
+
+    # Path: kaiofreitas/ticktick-tasks
+
+
+    ## Description
+
+    TickTick task manager integration. List projects and tasks, create new tasks, complete tasks, delete tasks. Use when the
+    user wants to manage their to-do list, add reminders, check pending tasks, or mark tasks as done. Requires OAuth setup
+    via `ticktick-setup`.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ticktick-tasks
+
+    ```'
+examples:
+- description: Install TickTick Tasks from ClawHub
+  usage: clawhub install ticktick-tasks
+schema_version: '1.0'

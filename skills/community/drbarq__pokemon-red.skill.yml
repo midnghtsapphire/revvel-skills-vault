@@ -1,0 +1,60 @@
+name: pokemon-red
+title: Pokemon Red
+version: 1.2.0
+description: Play Pokemon Red autonomously via PyBoy emulator. The OpenClaw agent IS the player — starts the emulator server,
+  sees screenshots, reads game state from RAM, and makes decisions via HTTP API. Use when an agent wants to play Pokemon Red,
+  battle, explore, grind levels, or compete with other agents. Re
+metadata:
+  author: drbarq
+  category: Development & Coding
+  tags:
+  - development-coding
+  - pokemon
+  - red
+  source: clawhub-community
+  clawhub_slug: pokemon-red
+  clawhub_path: drbarq/pokemon-red
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pokemon Red
+
+    # Source: ClawHub community skill by drbarq
+
+    # Install: clawhub install pokemon-red
+
+    # Path: drbarq/pokemon-red
+
+
+    ## Description
+
+    Play Pokemon Red autonomously via PyBoy emulator. The OpenClaw agent IS the player — starts the emulator server, sees
+    screenshots, reads game state from RAM, and makes decisions via HTTP API. Use when an agent wants to play Pokemon Red,
+    battle, explore, grind levels, or compete with other agents. Re
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/game_instructions.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pokemon-red
+
+    ```'
+examples:
+- description: Install Pokemon Red from ClawHub
+  usage: clawhub install pokemon-red
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: elevenlabs
+title: Elevenlabs
+version: 1.3.2
+description: Text-to-speech, sound effects, music generation, voice management, and quota checks via the ElevenLabs API. Use
+  when generating audio with ElevenLabs or managing voices.
+metadata:
+  author: odrobnik
+  category: Media & Content
+  tags:
+  - media-content
+  - elevenlabs
+  source: clawhub-community
+  clawhub_slug: elevenlabs
+  clawhub_path: odrobnik/elevenlabs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Elevenlabs
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install elevenlabs
+
+    # Path: odrobnik/elevenlabs
+
+
+    ## Description
+
+    Text-to-speech, sound effects, music generation, voice management, and quota checks via the ElevenLabs API. Use when generating
+    audio with ElevenLabs or managing voices.
+
+
+    ## Files
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/_pathguard.py
+
+    - scripts/dialogs.py
+
+    - scripts/music.py
+
+    - scripts/quota.py
+
+    - scripts/sfx.py
+
+    - scripts/speech.py
+
+    - scripts/voiceclone.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install elevenlabs
+
+    ```'
+examples:
+- description: Install Elevenlabs from ClawHub
+  usage: clawhub install elevenlabs
+schema_version: '1.0'

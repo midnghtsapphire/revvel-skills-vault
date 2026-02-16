@@ -1,0 +1,59 @@
+name: comanda
+title: Comanda
+version: 1.0.2
+description: Generate, visualize, and execute declarative AI pipelines using the comanda CLI. Use when creating LLM workflows
+  from natural language, viewing workflow charts, editing YAML workflow files, or processing/running comanda workflows. Supports
+  multi-model orchestration (OpenAI, Anthropic, Google, Ollama
+metadata:
+  author: kris-hansen
+  category: Search & Research
+  tags:
+  - search-research
+  - comanda
+  source: clawhub-community
+  clawhub_slug: comanda
+  clawhub_path: kris-hansen/comanda
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Comanda
+
+    # Source: ClawHub community skill by kris-hansen
+
+    # Install: clawhub install comanda
+
+    # Path: kris-hansen/comanda
+
+
+    ## Description
+
+    Generate, visualize, and execute declarative AI pipelines using the comanda CLI. Use when creating LLM workflows from
+    natural language, viewing workflow charts, editing YAML workflow files, or processing/running comanda workflows. Supports
+    multi-model orchestration (OpenAI, Anthropic, Google, Ollama
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/WORKFLOW-SPEC.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install comanda
+
+    ```'
+examples:
+- description: Install Comanda from ClawHub
+  usage: clawhub install comanda
+schema_version: '1.0'

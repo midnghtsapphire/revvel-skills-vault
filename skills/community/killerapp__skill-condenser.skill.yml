@@ -1,0 +1,56 @@
+name: skill-condenser
+title: skill-condenser
+version: 1.1.0
+description: '"Compress verbose SKILL.md files using Chain-of-Density with skill-aware formatting. Use when a skill exceeds
+  200 lines or needs terse refactoring."'
+metadata:
+  author: killerapp
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - skill
+  - condenser
+  source: clawhub-community
+  clawhub_slug: skill-condenser
+  clawhub_path: killerapp/skill-condenser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# skill-condenser
+
+    # Source: ClawHub community skill by killerapp
+
+    # Install: clawhub install skill-condenser
+
+    # Path: killerapp/skill-condenser
+
+
+    ## Description
+
+    "Compress verbose SKILL.md files using Chain-of-Density with skill-aware formatting. Use when a skill exceeds 200 lines
+    or needs terse refactoring."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-condenser
+
+    ```'
+examples:
+- description: Install skill-condenser from ClawHub
+  usage: clawhub install skill-condenser
+schema_version: '1.0'

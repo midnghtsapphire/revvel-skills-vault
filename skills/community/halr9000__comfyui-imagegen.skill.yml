@@ -1,0 +1,62 @@
+name: comfyui-imagegen
+title: ComfyUI ImageGen (Flux2)
+version: 1.5.0
+description: Generate images via ComfyUI API (localhost:8188) using Flux2 workflow. Supports structured JSON prompts sent
+  directly as positive prompt parameter, seed/steps customization. Async watcher via sub-agent for low-latency, token-efficient
+  polling (every 5s).
+metadata:
+  author: halr9000
+  category: Media & Content
+  tags:
+  - media-content
+  - comfyui
+  - imagegen
+  source: clawhub-community
+  clawhub_slug: comfyui-imagegen
+  clawhub_path: halr9000/comfyui-imagegen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ComfyUI ImageGen (Flux2)
+
+    # Source: ClawHub community skill by halr9000
+
+    # Install: clawhub install comfyui-imagegen
+
+    # Path: halr9000/comfyui-imagegen
+
+
+    ## Description
+
+    Generate images via ComfyUI API (localhost:8188) using Flux2 workflow. Supports structured JSON prompts sent directly
+    as positive prompt parameter, seed/steps customization. Async watcher via sub-agent for low-latency, token-efficient polling
+    (every 5s).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate.py
+
+    - workflows/flux2.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install comfyui-imagegen
+
+    ```'
+examples:
+- description: Install ComfyUI ImageGen (Flux2) from ClawHub
+  usage: clawhub install comfyui-imagegen
+schema_version: '1.0'

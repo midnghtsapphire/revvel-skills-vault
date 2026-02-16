@@ -1,0 +1,61 @@
+name: nudocs
+title: Nudocs
+version: 1.0.0
+description: Upload, edit, and export documents via Nudocs.ai. Use when creating shareable document links for collaborative
+  editing, uploading markdown/docs to Nudocs for rich editing, or pulling back edited content. Triggers on "send to nudocs",
+  "upload to nudocs", "edit in nudocs", "pull from nudocs", "get the
+metadata:
+  author: jdrhyne
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - nudocs
+  source: clawhub-community
+  clawhub_slug: nudocs
+  clawhub_path: jdrhyne/nudocs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nudocs
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install nudocs
+
+    # Path: jdrhyne/nudocs
+
+
+    ## Description
+
+    Upload, edit, and export documents via Nudocs.ai. Use when creating shareable document links for collaborative editing,
+    uploading markdown/docs to Nudocs for rich editing, or pulling back edited content. Triggers on "send to nudocs", "upload
+    to nudocs", "edit in nudocs", "pull from nudocs", "get the
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/document-design.md
+
+    - references/formats.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nudocs
+
+    ```'
+examples:
+- description: Install Nudocs from ClawHub
+  usage: clawhub install nudocs
+schema_version: '1.0'

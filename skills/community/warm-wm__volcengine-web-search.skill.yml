@@ -1,0 +1,62 @@
+name: volcengine-web-search
+title: volcengine-web-search
+version: 1.0.0
+description: Using volcengine web_search.py script to search web and get the result, prepare clear and specific `query`.Run
+  the script `python scripts/web_search.py "query"`. Organize the answer based on the returned summary list, do not add or
+  guess content.
+metadata:
+  author: warm-wm
+  category: Search & Research
+  tags:
+  - search-research
+  - volcengine
+  - web
+  - search
+  source: clawhub-community
+  clawhub_slug: volcengine-web-search
+  clawhub_path: warm-wm/volcengine-web-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# volcengine-web-search
+
+    # Source: ClawHub community skill by warm-wm
+
+    # Install: clawhub install volcengine-web-search
+
+    # Path: warm-wm/volcengine-web-search
+
+
+    ## Description
+
+    Using volcengine web_search.py script to search web and get the result, prepare clear and specific `query`.Run the script
+    `python scripts/web_search.py "query"`. Organize the answer based on the returned summary list, do not add or guess content.
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/web_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install volcengine-web-search
+
+    ```'
+examples:
+- description: Install volcengine-web-search from ClawHub
+  usage: clawhub install volcengine-web-search
+schema_version: '1.0'

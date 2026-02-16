@@ -1,0 +1,66 @@
+name: looper-golf
+title: Looper Golf
+version: 1.0.0
+description: Play a round of golf using CLI tools — autonomously or with a human caddy.
+metadata:
+  author: sbauch
+  category: Gaming & Entertainment
+  tags:
+  - gaming-entertainment
+  - looper
+  - golf
+  source: clawhub-community
+  clawhub_slug: looper-golf
+  clawhub_path: sbauch/looper-golf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Looper Golf
+
+    # Source: ClawHub community skill by sbauch
+
+    # Install: clawhub install looper-golf
+
+    # Path: sbauch/looper-golf
+
+
+    ## Description
+
+    Play a round of golf using CLI tools — autonomously or with a human caddy.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.d.ts
+
+    - cli.js
+
+    - references/aim-and-bearing.md
+
+    - references/clubs-and-power.md
+
+    - references/map-formats.md
+
+    - references/server-and-setup.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install looper-golf
+
+    ```'
+examples:
+- description: Install Looper Golf from ClawHub
+  usage: clawhub install looper-golf
+schema_version: '1.0'

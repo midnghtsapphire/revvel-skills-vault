@@ -1,0 +1,59 @@
+name: baidu-scholar-search
+title: baidu scholar search
+version: 1.0.0
+description: Baidu Academic Search Tool enables the retrieval of both Chinese and English literature, covering various types
+  of literature such as academic journals, conference papers, and dissertations.
+metadata:
+  author: jlpjavawayup
+  category: Search & Research
+  tags:
+  - search-research
+  - baidu
+  - scholar
+  - search
+  source: clawhub-community
+  clawhub_slug: baidu-scholar-search
+  clawhub_path: jlpjavawayup/baidu-scholar-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# baidu scholar search
+
+    # Source: ClawHub community skill by jlpjavawayup
+
+    # Install: clawhub install baidu-scholar-search
+
+    # Path: jlpjavawayup/baidu-scholar-search
+
+
+    ## Description
+
+    Baidu Academic Search Tool enables the retrieval of both Chinese and English literature, covering various types of literature
+    such as academic journals, conference papers, and dissertations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - baidu_scholar_search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install baidu-scholar-search
+
+    ```'
+examples:
+- description: Install baidu scholar search from ClawHub
+  usage: clawhub install baidu-scholar-search
+schema_version: '1.0'

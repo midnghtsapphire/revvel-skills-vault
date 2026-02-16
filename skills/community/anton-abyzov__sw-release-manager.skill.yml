@@ -1,0 +1,73 @@
+name: release-manager
+title: Release Manager
+version: 1.0.0
+description: Release orchestrator for mono/multi-repo - strategy planning, version alignment, RC workflows, changelog automation.
+  Use for release coordination.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - release
+  - manager
+  - read
+  - write
+  - edit
+  - bash
+  - glob
+  - grep
+  source: clawhub-community
+  clawhub_slug: sw-release-manager
+  clawhub_path: anton-abyzov/sw-release-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Release Manager
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-release-manager
+
+    # Path: anton-abyzov/sw-release-manager
+
+
+    ## Description
+
+    Release orchestrator for mono/multi-repo - strategy planning, version alignment, RC workflows, changelog automation. Use
+    for release coordination.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Write, Edit, Bash, Glob, Grep
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-release-manager
+
+    ```'
+examples:
+- description: Install Release Manager from ClawHub
+  usage: clawhub install sw-release-manager
+schema_version: '1.0'

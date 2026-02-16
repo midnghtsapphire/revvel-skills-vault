@@ -1,0 +1,59 @@
+name: ethermail
+title: Ethermail
+version: 1.1.0
+description: Access Web3 email via EtherMail using WalletConnect. Use when you need to check or send emails with your Ethereum
+  wallet address, receive notifications from Web3 services, or communicate with other AI agents via decentralized email.
+metadata:
+  author: daaab
+  category: Communication
+  tags:
+  - communication
+  - ethermail
+  source: clawhub-community
+  clawhub_slug: ethermail
+  clawhub_path: daaab/ethermail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ethermail
+
+    # Source: ClawHub community skill by daaab
+
+    # Install: clawhub install ethermail
+
+    # Path: daaab/ethermail
+
+
+    ## Description
+
+    Access Web3 email via EtherMail using WalletConnect. Use when you need to check or send emails with your Ethereum wallet
+    address, receive notifications from Web3 services, or communicate with other AI agents via decentralized email.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/extract-wc-uri.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ethermail
+
+    ```'
+examples:
+- description: Install Ethermail from ClawHub
+  usage: clawhub install ethermail
+schema_version: '1.0'

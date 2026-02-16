@@ -1,0 +1,81 @@
+name: agent-browser
+title: Agent Browser
+version: 0.1.0
+description: Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the
+  user needs to navigate websites, interact with web pages, fill forms, take screenshots, test web applications, or extract
+  information from web pages.
+metadata:
+  author: murphykobe
+  category: Search & Research
+  tags:
+  - search-research
+  - agent
+  - browser
+  - bash(agent-browser:*)
+  source: clawhub-community
+  clawhub_slug: agent-browser-2
+  clawhub_path: murphykobe/agent-browser-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(agent-browser:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Browser
+
+    # Source: ClawHub community skill by murphykobe
+
+    # Install: clawhub install agent-browser-2
+
+    # Path: murphykobe/agent-browser-2
+
+
+    ## Description
+
+    Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the user needs
+    to navigate websites, interact with web pages, fill forms, take screenshots, test web applications, or extract information
+    from web pages.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/authentication.md
+
+    - references/proxy-support.md
+
+    - references/session-management.md
+
+    - references/snapshot-refs.md
+
+    - references/video-recording.md
+
+    - templates/authenticated-session.sh
+
+    - templates/capture-workflow.sh
+
+    - templates/form-automation.sh
+
+
+    ## Allowed Tools
+
+    Bash(agent-browser:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-browser-2
+
+    ```'
+examples:
+- description: Install Agent Browser from ClawHub
+  usage: clawhub install agent-browser-2
+schema_version: '1.0'

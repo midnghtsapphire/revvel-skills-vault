@@ -1,0 +1,62 @@
+name: idfm-journey
+title: IDFM Journey (PRIM/Navitia)
+version: 0.1.0
+description: Query Île-de-France Mobilités (IDFM) PRIM/Navitia for place resolution, journey planning, and disruptions/incident
+  checks. Use when asked to find routes in Île-de-France (e.g., "itinéraire de X à Y"), resolve station/stop ids, or check
+  RER/metro line disruptions, and you have an IDFM PRIM API key.
+metadata:
+  author: anthonymq
+  category: Development & Coding
+  tags:
+  - development-coding
+  - idfm
+  - journey
+  source: clawhub-community
+  clawhub_slug: idfm-journey-navitia
+  clawhub_path: anthonymq/idfm-journey-navitia
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# IDFM Journey (PRIM/Navitia)
+
+    # Source: ClawHub community skill by anthonymq
+
+    # Install: clawhub install idfm-journey-navitia
+
+    # Path: anthonymq/idfm-journey-navitia
+
+
+    ## Description
+
+    Query Île-de-France Mobilités (IDFM) PRIM/Navitia for place resolution, journey planning, and disruptions/incident checks.
+    Use when asked to find routes in Île-de-France (e.g., "itinéraire de X à Y"), resolve station/stop ids, or check RER/metro
+    line disruptions, and you have an IDFM PRIM API key.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/idfm-prim.md
+
+    - scripts/idfm.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install idfm-journey-navitia
+
+    ```'
+examples:
+- description: Install IDFM Journey (PRIM/Navitia) from ClawHub
+  usage: clawhub install idfm-journey-navitia
+schema_version: '1.0'

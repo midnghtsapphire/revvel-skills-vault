@@ -1,0 +1,57 @@
+name: topydo
+title: topydo
+version: 1.0.5
+description: Manage todo.txt tasks using topydo CLI. Add, list, complete, prioritize, tag, and organize tasks with dependencies,
+  due dates, recurrence, and projects. Use for any task management, todo lists, or when the user mentions tasks, todos, or
+  todo.txt. Requires Python 3 and pip. Works on macOS, Linux, and
+metadata:
+  author: bastos
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - topydo
+  source: clawhub-community
+  clawhub_slug: topydo
+  clawhub_path: bastos/topydo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# topydo
+
+    # Source: ClawHub community skill by bastos
+
+    # Install: clawhub install topydo
+
+    # Path: bastos/topydo
+
+
+    ## Description
+
+    Manage todo.txt tasks using topydo CLI. Add, list, complete, prioritize, tag, and organize tasks with dependencies, due
+    dates, recurrence, and projects. Use for any task management, todo lists, or when the user mentions tasks, todos, or todo.txt.
+    Requires Python 3 and pip. Works on macOS, Linux, and
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install topydo
+
+    ```'
+examples:
+- description: Install topydo from ClawHub
+  usage: clawhub install topydo
+schema_version: '1.0'

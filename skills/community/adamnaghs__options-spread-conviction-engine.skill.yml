@@ -1,0 +1,76 @@
+name: options-spread-conviction-engine
+title: Options Spread Conviction Engine
+version: 2.2.0
+description: Multi-regime options spread analysis engine with Kelly Criterion Position Sizing. Scores vertical spreads (bull
+  put, bear call, bull call, bear put) and multi-leg strategies (iron condors, butterflies, calendar spreads) using Ichimoku,
+  RSI, MACD, Bollinger Bands, IV term structure, and mathematicall
+metadata:
+  author: adamnaghs
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - options
+  - spread
+  - conviction
+  - engine
+  source: clawhub-community
+  clawhub_slug: options-spread-conviction-engine
+  clawhub_path: adamnaghs/options-spread-conviction-engine
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Options Spread Conviction Engine
+
+    # Source: ClawHub community skill by adamnaghs
+
+    # Install: clawhub install options-spread-conviction-engine
+
+    # Path: adamnaghs/options-spread-conviction-engine
+
+
+    ## Description
+
+    Multi-regime options spread analysis engine with Kelly Criterion Position Sizing. Scores vertical spreads (bull put, bear
+    call, bull call, bear put) and multi-leg strategies (iron condors, butterflies, calendar spreads) using Ichimoku, RSI,
+    MACD, Bollinger Bands, IV term structure, and mathematicall
+
+
+    ## Files
+
+    - MULTI_LEG_REPORT.md
+
+    - QUANT_SCANNER.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/ndx100_tickers.txt
+
+    - data/sp500_tickers.txt
+
+    - data/test_tickers.txt
+
+    - scripts/calculator.py
+
+    - scripts/chain_analyzer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install options-spread-conviction-engine
+
+    ```'
+examples:
+- description: Install Options Spread Conviction Engine from ClawHub
+  usage: clawhub install options-spread-conviction-engine
+schema_version: '1.0'

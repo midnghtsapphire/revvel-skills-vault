@@ -1,0 +1,72 @@
+name: context-gatekeeper
+title: Context Gatekeeper
+version: 0.1.1
+description: Keeps the conversation token-friendly by summarizing recent exchanges, surfacing pending actions, and delivering
+  a compact briefing for each turn before calling the model. Trigger this skill whenever you need to prune a bloated thread
+  or keep the next prompt lean.
+metadata:
+  author: davienzomq
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - context
+  - gatekeeper
+  source: clawhub-community
+  clawhub_slug: context-gatekeeper
+  clawhub_path: davienzomq/context-gatekeeper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Gatekeeper
+
+    # Source: ClawHub community skill by davienzomq
+
+    # Install: clawhub install context-gatekeeper
+
+    # Path: davienzomq/context-gatekeeper
+
+
+    ## Description
+
+    Keeps the conversation token-friendly by summarizing recent exchanges, surfacing pending actions, and delivering a compact
+    briefing for each turn before calling the model. Trigger this skill whenever you need to prune a bloated thread or keep
+    the next prompt lean.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - context/current-summary.md
+
+    - context/history.txt
+
+    - context/sample-history.txt
+
+    - context/test-summary.md
+
+    - scripts/auto_monitor.py
+
+    - scripts/context_gatekeeper.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-gatekeeper
+
+    ```'
+examples:
+- description: Install Context Gatekeeper from ClawHub
+  usage: clawhub install context-gatekeeper
+schema_version: '1.0'

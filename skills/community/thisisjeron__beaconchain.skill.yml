@@ -1,0 +1,61 @@
+name: beaconchain
+title: Beaconchain
+version: 0.1.1
+description: Monitor Ethereum validator dashboard health on beaconcha.in via V2 API, focused on one-check-per-day status and
+  BeaconScore-first triage. Use when the user asks to check validator health, BeaconScore, missed duties, or set up low-anxiety
+  daily monitoring/alerts for a beaconcha.in dashboard.
+metadata:
+  author: thisisjeron
+  category: Development & Coding
+  tags:
+  - development-coding
+  - beaconchain
+  source: clawhub-community
+  clawhub_slug: beaconchain
+  clawhub_path: thisisjeron/beaconchain
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Beaconchain
+
+    # Source: ClawHub community skill by thisisjeron
+
+    # Install: clawhub install beaconchain
+
+    # Path: thisisjeron/beaconchain
+
+
+    ## Description
+
+    Monitor Ethereum validator dashboard health on beaconcha.in via V2 API, focused on one-check-per-day status and BeaconScore-first
+    triage. Use when the user asks to check validator health, BeaconScore, missed duties, or set up low-anxiety daily monitoring/alerts
+    for a beaconcha.in dashboard.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-notes.md
+
+    - scripts/check_dashboard.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install beaconchain
+
+    ```'
+examples:
+- description: Install Beaconchain from ClawHub
+  usage: clawhub install beaconchain
+schema_version: '1.0'

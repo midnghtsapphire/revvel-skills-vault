@@ -1,0 +1,75 @@
+name: ms-outlook-teams-assistant
+title: MS Outlook + Teams Assistant
+version: 1.0.1
+description: '"Track and nag about Microsoft Outlook email and (optionally) Microsoft Teams messages on a Windows machine,
+  without relying on web versions. Use when the user asks to: (1) monitor inbox/mentions and remind them on Telegram/Teams
+  until dismissed, (2) draft short, personable, low-jargon email replies'
+metadata:
+  author: abhinavjp
+  category: Social Media
+  tags:
+  - social-media
+  - outlook
+  - teams
+  - assistant
+  source: clawhub-community
+  clawhub_slug: ms-outlook-teams-assistant
+  clawhub_path: abhinavjp/ms-outlook-teams-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MS Outlook + Teams Assistant
+
+    # Source: ClawHub community skill by abhinavjp
+
+    # Install: clawhub install ms-outlook-teams-assistant
+
+    # Path: abhinavjp/ms-outlook-teams-assistant
+
+
+    ## Description
+
+    "Track and nag about Microsoft Outlook email and (optionally) Microsoft Teams messages on a Windows machine, without relying
+    on web versions. Use when the user asks to: (1) monitor inbox/mentions and remind them on Telegram/Teams until dismissed,
+    (2) draft short, personable, low-jargon email replies
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/config.example.json
+
+    - references/teams-graph-setup.md
+
+    - references/writing-style.md
+
+    - scripts/dismiss.py
+
+    - scripts/draft_reply.py
+
+    - scripts/remind.py
+
+    - scripts/scan_all.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ms-outlook-teams-assistant
+
+    ```'
+examples:
+- description: Install MS Outlook + Teams Assistant from ClawHub
+  usage: clawhub install ms-outlook-teams-assistant
+schema_version: '1.0'

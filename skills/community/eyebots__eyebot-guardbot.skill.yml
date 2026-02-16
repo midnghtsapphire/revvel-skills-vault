@@ -1,0 +1,60 @@
+name: eyebot-guardbot
+title: Eyebot Guardbot
+version: 1.8.0
+description: Security monitoring and threat alert system
+metadata:
+  author: eyebots
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - eyebot
+  - guardbot
+  source: clawhub-community
+  clawhub_slug: eyebot-guardbot
+  clawhub_path: eyebots/eyebot-guardbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Eyebot Guardbot
+
+    # Source: ClawHub community skill by eyebots
+
+    # Install: clawhub install eyebot-guardbot
+
+    # Path: eyebots/eyebot-guardbot
+
+
+    ## Description
+
+    Security monitoring and threat alert system
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - manifest.yaml
+
+    - package.json
+
+    - scripts/guardbot.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install eyebot-guardbot
+
+    ```'
+examples:
+- description: Install Eyebot Guardbot from ClawHub
+  usage: clawhub install eyebot-guardbot
+schema_version: '1.0'

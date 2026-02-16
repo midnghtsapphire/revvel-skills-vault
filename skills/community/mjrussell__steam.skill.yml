@@ -1,0 +1,56 @@
+name: steam
+title: Steam Games CLI
+version: 0.4.0
+description: Browse, filter, and discover games in a Steam library. Filter by playtime, reviews, Steam Deck compatibility,
+  genres, and tags. Use when user asks about their Steam games, what to play, game recommendations, or Steam Deck compatible
+  games.
+metadata:
+  author: mjrussell
+  category: Search & Research
+  tags:
+  - search-research
+  - steam
+  source: clawhub-community
+  clawhub_slug: steam
+  clawhub_path: mjrussell/steam
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Steam Games CLI
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install steam
+
+    # Path: mjrussell/steam
+
+
+    ## Description
+
+    Browse, filter, and discover games in a Steam library. Filter by playtime, reviews, Steam Deck compatibility, genres,
+    and tags. Use when user asks about their Steam games, what to play, game recommendations, or Steam Deck compatible games.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install steam
+
+    ```'
+examples:
+- description: Install Steam Games CLI from ClawHub
+  usage: clawhub install steam
+schema_version: '1.0'

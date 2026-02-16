@@ -1,0 +1,57 @@
+name: clawdhub
+title: Clawdhub Copy
+version: 1.0.0
+description: Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need
+  to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders
+  with the npm-installed clawdhub CLI.
+metadata:
+  author: jk50505k
+  category: Search & Research
+  tags:
+  - search-research
+  - clawdhub
+  source: clawhub-community
+  clawhub_slug: clawdhub-copy
+  clawhub_path: jk50505k/clawdhub-copy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdhub Copy
+
+    # Source: ClawHub community skill by jk50505k
+
+    # Install: clawhub install clawdhub-copy
+
+    # Path: jk50505k/clawdhub-copy
+
+
+    ## Description
+
+    Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch
+    new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with
+    the npm-installed clawdhub CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdhub-copy
+
+    ```'
+examples:
+- description: Install Clawdhub Copy from ClawHub
+  usage: clawhub install clawdhub-copy
+schema_version: '1.0'

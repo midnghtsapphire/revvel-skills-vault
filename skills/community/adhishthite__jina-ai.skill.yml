@@ -1,0 +1,65 @@
+name: jina
+title: Jina AI - Web Reader, Search and Deep Search
+version: 1.0.6
+description: Web reading and searching via Jina AI APIs. Fetch clean markdown from URLs (r.jina.ai), web search (s.jina.ai),
+  or deep multi-step research (DeepSearch).
+metadata:
+  author: adhishthite
+  category: Search & Research
+  tags:
+  - search-research
+  - jina
+  source: clawhub-community
+  clawhub_slug: jina-ai
+  clawhub_path: adhishthite/jina-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jina AI - Web Reader, Search and Deep Search
+
+    # Source: ClawHub community skill by adhishthite
+
+    # Install: clawhub install jina-ai
+
+    # Path: adhishthite/jina-ai
+
+
+    ## Description
+
+    Web reading and searching via Jina AI APIs. Fetch clean markdown from URLs (r.jina.ai), web search (s.jina.ai), or deep
+    multi-step research (DeepSearch).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/jina-deepsearch.sh
+
+    - scripts/jina-reader.py
+
+    - scripts/jina-reader.sh
+
+    - scripts/jina-search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jina-ai
+
+    ```'
+examples:
+- description: Install Jina AI - Web Reader, Search and Deep Search from ClawHub
+  usage: clawhub install jina-ai
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: security
+title: Security
+version: 1.0.0
+description: Security engineer for vulnerability assessment, penetration testing guidance, and secure code review. Use for
+  OWASP Top 10 checks, threat modeling, or security architecture review. Covers authentication flaws, injection vulnerabilities,
+  access control, and compliance requirements.
+metadata:
+  author: anton-abyzov
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - read
+  - bash
+  - grep
+  source: clawhub-community
+  clawhub_slug: sw-security
+  clawhub_path: anton-abyzov/sw-security
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Bash
+  - Grep
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-security
+
+    # Path: anton-abyzov/sw-security
+
+
+    ## Description
+
+    Security engineer for vulnerability assessment, penetration testing guidance, and secure code review. Use for OWASP Top
+    10 checks, threat modeling, or security architecture review. Covers authentication flaws, injection vulnerabilities, access
+    control, and compliance requirements.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Bash, Grep
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-security
+
+    ```'
+examples:
+- description: Install Security from ClawHub
+  usage: clawhub install sw-security
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: clawcost
+title: ClawCost
+version: 1.0.2
+description: Track OpenClaw agent costs. Check daily/weekly spending and model breakdown.
+metadata:
+  author: shallify
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - clawcost
+  source: clawhub-community
+  clawhub_slug: clawcost
+  clawhub_path: shallify/clawcost
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawCost
+
+    # Source: ClawHub community skill by shallify
+
+    # Install: clawhub install clawcost
+
+    # Path: shallify/clawcost
+
+
+    ## Description
+
+    Track OpenClaw agent costs. Check daily/weekly spending and model breakdown.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/pricing.md
+
+    - scripts/clawcost.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawcost
+
+    ```'
+examples:
+- description: Install ClawCost from ClawHub
+  usage: clawhub install clawcost
+schema_version: '1.0'

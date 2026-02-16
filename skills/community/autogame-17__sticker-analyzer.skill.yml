@@ -1,0 +1,59 @@
+name: sticker-analyzer
+title: Sticker Analyzer
+version: 1.0.1
+description: Analyze images in media/stickers using Vision API to identify and filter meme/sticker content vs screenshots
+  or documents.
+metadata:
+  author: autogame-17
+  category: Media & Content
+  tags:
+  - media-content
+  - sticker
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: sticker-analyzer
+  clawhub_path: autogame-17/sticker-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sticker Analyzer
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install sticker-analyzer
+
+    # Path: autogame-17/sticker-analyzer
+
+
+    ## Description
+
+    Analyze images in media/stickers using Vision API to identify and filter meme/sticker content vs screenshots or documents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - analyze.js
+
+    - analyze.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sticker-analyzer
+
+    ```'
+examples:
+- description: Install Sticker Analyzer from ClawHub
+  usage: clawhub install sticker-analyzer
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: stock-watcher
+title: Stock Watcher
+version: 1.0.0
+description: Manage and monitor a personal stock watchlist with support for adding, removing, listing stocks, and summarizing
+  their recent performance using data from 10jqka.com.cn. Use when the user wants to track specific stocks, get performance
+  summaries, or manage their watchlist.
+metadata:
+  author: robin797860
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - stock
+  - watcher
+  source: clawhub-community
+  clawhub_slug: stock-watcher
+  clawhub_path: robin797860/stock-watcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stock Watcher
+
+    # Source: ClawHub community skill by robin797860
+
+    # Install: clawhub install stock-watcher
+
+    # Path: robin797860/stock-watcher
+
+
+    ## Description
+
+    Manage and monitor a personal stock watchlist with support for adding, removing, listing stocks, and summarizing their
+    recent performance using data from 10jqka.com.cn. Use when the user wants to track specific stocks, get performance summaries,
+    or manage their watchlist.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/add_stock.py
+
+    - scripts/clear_watchlist.py
+
+    - scripts/config.py
+
+    - scripts/install.sh
+
+    - scripts/list_stocks.py
+
+    - scripts/remove_stock.py
+
+    - scripts/summarize_performance.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stock-watcher
+
+    ```'
+examples:
+- description: Install Stock Watcher from ClawHub
+  usage: clawhub install stock-watcher
+schema_version: '1.0'

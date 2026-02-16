@@ -1,0 +1,64 @@
+name: meeting-coordinator
+title: Meeting Coordinator - In Person + Virtual (Google Meet)
+version: 1.0.2
+description: 'Executive scheduling assistant for meeting coordination: intake, availability analysis, venue selection, email
+  outreach, calendar management, reservations, rescheduling, cancellation, and status tracking with strict approval gates.'
+metadata:
+  author: voshawn
+  category: Search & Research
+  tags:
+  - search-research
+  - meeting
+  - coordinator
+  source: clawhub-community
+  clawhub_slug: meeting-coordinator
+  clawhub_path: voshawn/meeting-coordinator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meeting Coordinator - In Person + Virtual (Google Meet)
+
+    # Source: ClawHub community skill by voshawn
+
+    # Install: clawhub install meeting-coordinator
+
+    # Path: voshawn/meeting-coordinator
+
+
+    ## Description
+
+    Executive scheduling assistant for meeting coordination: intake, availability analysis, venue selection, email outreach,
+    calendar management, reservations, rescheduling, cancellation, and status tracking with strict approval gates.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/email-templates.md
+
+    - scripts/check-availability.py
+
+    - scripts/find-venue.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meeting-coordinator
+
+    ```'
+examples:
+- description: Install Meeting Coordinator - In Person + Virtual (Google Meet) from ClawHub
+  usage: clawhub install meeting-coordinator
+schema_version: '1.0'

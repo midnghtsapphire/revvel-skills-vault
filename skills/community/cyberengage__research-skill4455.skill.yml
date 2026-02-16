@@ -1,0 +1,66 @@
+name: research-skill4455
+title: Research Skill4455
+version: 1.0.0
+description: 'Research 8-Ball: selects one of 20 classic Magic 8-Ball responses at random, logs (question + timestamp + response)
+  to workspace/research-skill4455-last.json for Android sync. Auto-handles secure-sync. Trigger on "research-skill4455".'
+metadata:
+  author: cyberengage
+  category: Search & Research
+  tags:
+  - search-research
+  - research
+  - skill4455
+  source: clawhub-community
+  clawhub_slug: research-skill4455
+  clawhub_path: cyberengage/research-skill4455
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Research Skill4455
+
+    # Source: ClawHub community skill by cyberengage
+
+    # Install: clawhub install research-skill4455
+
+    # Path: cyberengage/research-skill4455
+
+
+    ## Description
+
+    Research 8-Ball: selects one of 20 classic Magic 8-Ball responses at random, logs (question + timestamp + response) to
+    workspace/research-skill4455-last.json for Android sync. Auto-handles secure-sync. Trigger on "research-skill4455".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - magic-8-ball/SKILL.md
+
+    - magic-8-ball/scripts/magic8ball.py
+
+    - magic-8-ball/scripts/setup.sh
+
+    - scripts/magic8ball.py
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install research-skill4455
+
+    ```'
+examples:
+- description: Install Research Skill4455 from ClawHub
+  usage: clawhub install research-skill4455
+schema_version: '1.0'

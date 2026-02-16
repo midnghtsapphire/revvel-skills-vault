@@ -1,0 +1,57 @@
+name: rey-web-search
+title: web-search-quick
+version: 1.0.0
+description: Quick web search for information. Returns top results with summaries. Use when user says "search", "look up",
+  "find info about".
+metadata:
+  author: sa9saq
+  category: Search & Research
+  tags:
+  - search-research
+  - rey
+  - web
+  - search
+  source: clawhub-community
+  clawhub_slug: web-search-quick
+  clawhub_path: sa9saq/web-search-quick
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# web-search-quick
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install web-search-quick
+
+    # Path: sa9saq/web-search-quick
+
+
+    ## Description
+
+    Quick web search for information. Returns top results with summaries. Use when user says "search", "look up", "find info
+    about".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install web-search-quick
+
+    ```'
+examples:
+- description: Install web-search-quick from ClawHub
+  usage: clawhub install web-search-quick
+schema_version: '1.0'

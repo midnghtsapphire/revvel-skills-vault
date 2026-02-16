@@ -1,0 +1,73 @@
+name: unfuck-my-git-state
+title: Unfuck My Git State
+version: 0.2.1
+description: Diagnose and recover broken Git state and worktree metadata with a staged, low-risk recovery flow. Use when Git
+  reports detached or contradictory HEAD state, phantom worktree locks, orphaned worktree entries, missing refs, 0000000000000000000000000000000000000000
+  hashes, or branch operations fail wi
+metadata:
+  author: delorenj
+  category: Development & Coding
+  tags:
+  - development-coding
+  - unfuck
+  - git
+  - state
+  source: clawhub-community
+  clawhub_slug: unfuck-my-git-state
+  clawhub_path: delorenj/unfuck-my-git-state
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Unfuck My Git State
+
+    # Source: ClawHub community skill by delorenj
+
+    # Install: clawhub install unfuck-my-git-state
+
+    # Path: delorenj/unfuck-my-git-state
+
+
+    ## Description
+
+    Diagnose and recover broken Git state and worktree metadata with a staged, low-risk recovery flow. Use when Git reports
+    detached or contradictory HEAD state, phantom worktree locks, orphaned worktree entries, missing refs, 0000000000000000000000000000000000000000
+    hashes, or branch operations fail wi
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/recovery-checklist.md
+
+    - references/symptom-map.md
+
+    - scripts/guided_repair_plan.sh
+
+    - scripts/regression_harness.sh
+
+    - scripts/snapshot_git_state.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unfuck-my-git-state
+
+    ```'
+examples:
+- description: Install Unfuck My Git State from ClawHub
+  usage: clawhub install unfuck-my-git-state
+schema_version: '1.0'

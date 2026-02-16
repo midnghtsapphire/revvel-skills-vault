@@ -1,0 +1,71 @@
+name: marker-pdf-ocr
+title: Marker PDF OCR
+version: 1.0.0
+description: Convert PDF to Markdown using Marker OCR (local-first, cloud fallback)
+metadata:
+  author: charpup
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - marker
+  - pdf
+  - ocr
+  source: clawhub-community
+  clawhub_slug: marker-pdf-ocr
+  clawhub_path: charpup/marker-pdf-ocr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Marker PDF OCR
+
+    # Source: ClawHub community skill by charpup
+
+    # Install: clawhub install marker-pdf-ocr
+
+    # Path: charpup/marker-pdf-ocr
+
+
+    ## Description
+
+    Convert PDF to Markdown using Marker OCR (local-first, cloud fallback)
+
+
+    ## Files
+
+    - Marker PDF OCR Skill — 审计报告.md
+
+    - README.md
+
+    - SKILL.md
+
+    - SPEC.yaml
+
+    - _meta.json
+
+    - findings.md
+
+    - pytest.ini
+
+    - requirements.txt
+
+    - task_plan.md
+
+    - lib/__init__.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install marker-pdf-ocr
+
+    ```'
+examples:
+- description: Install Marker PDF OCR from ClawHub
+  usage: clawhub install marker-pdf-ocr
+schema_version: '1.0'

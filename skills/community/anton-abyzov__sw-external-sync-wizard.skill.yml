@@ -1,0 +1,61 @@
+name: external-sync-wizard
+title: External Sync Wizard
+version: 1.0.0
+description: Expert guide for setting up bidirectional sync between SpecWeave and GitHub Issues, JIRA, or Azure DevOps. Use
+  when configuring external tool integration, mapping fields between systems, or troubleshooting sync issues. Covers webhook
+  setup, authentication, and conflict resolution strategies.
+metadata:
+  author: anton-abyzov
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - external
+  - sync
+  - wizard
+  source: clawhub-community
+  clawhub_slug: sw-external-sync-wizard
+  clawhub_path: anton-abyzov/sw-external-sync-wizard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# External Sync Wizard
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-external-sync-wizard
+
+    # Path: anton-abyzov/sw-external-sync-wizard
+
+
+    ## Description
+
+    Expert guide for setting up bidirectional sync between SpecWeave and GitHub Issues, JIRA, or Azure DevOps. Use when configuring
+    external tool integration, mapping fields between systems, or troubleshooting sync issues. Covers webhook setup, authentication,
+    and conflict resolution strategies.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-external-sync-wizard
+
+    ```'
+examples:
+- description: Install External Sync Wizard from ClawHub
+  usage: clawhub install sw-external-sync-wizard
+schema_version: '1.0'

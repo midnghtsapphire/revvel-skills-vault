@@ -1,0 +1,54 @@
+name: openai-whisper
+title: Openai Whisper
+version: 1.0.0
+description: Local speech-to-text with the Whisper CLI (no API key).
+metadata:
+  author: steipete
+  category: Development & Coding
+  tags:
+  - development-coding
+  - openai
+  - whisper
+  source: clawhub-community
+  clawhub_slug: openai-whisper
+  clawhub_path: steipete/openai-whisper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openai Whisper
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install openai-whisper
+
+    # Path: steipete/openai-whisper
+
+
+    ## Description
+
+    Local speech-to-text with the Whisper CLI (no API key).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openai-whisper
+
+    ```'
+examples:
+- description: Install Openai Whisper from ClawHub
+  usage: clawhub install openai-whisper
+schema_version: '1.0'

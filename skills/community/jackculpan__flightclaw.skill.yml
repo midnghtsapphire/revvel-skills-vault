@@ -1,0 +1,55 @@
+name: travelclaw
+title: FlightClaw
+version: 1.0.0
+description: Track flight prices using Google Flights data. Search flights, track routes over time, and get alerts when prices
+  drop. Requires Python 3.10+ and the 'flights' pip package. Run setup.sh to install dependencies.
+metadata:
+  author: jackculpan
+  category: Search & Research
+  tags:
+  - search-research
+  - travelclaw
+  source: clawhub-community
+  clawhub_slug: flightclaw
+  clawhub_path: jackculpan/flightclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FlightClaw
+
+    # Source: ClawHub community skill by jackculpan
+
+    # Install: clawhub install flightclaw
+
+    # Path: jackculpan/flightclaw
+
+
+    ## Description
+
+    Track flight prices using Google Flights data. Search flights, track routes over time, and get alerts when prices drop.
+    Requires Python 3.10+ and the ''flights'' pip package. Run setup.sh to install dependencies.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flightclaw
+
+    ```'
+examples:
+- description: Install FlightClaw from ClawHub
+  usage: clawhub install flightclaw
+schema_version: '1.0'

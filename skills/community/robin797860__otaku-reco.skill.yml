@@ -1,0 +1,56 @@
+name: otaku-reco
+title: Otaku Reco
+version: 1.0.0
+description: 二次元鉴赏/推荐 Agent：基于 AniList 实时数据做智能推荐（无需数据库）
+metadata:
+  author: robin797860
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - otaku
+  - reco
+  source: clawhub-community
+  clawhub_slug: otaku-reco
+  clawhub_path: robin797860/otaku-reco
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Otaku Reco
+
+    # Source: ClawHub community skill by robin797860
+
+    # Install: clawhub install otaku-reco
+
+    # Path: robin797860/otaku-reco
+
+
+    ## Description
+
+    二次元鉴赏/推荐 Agent：基于 AniList 实时数据做智能推荐（无需数据库）
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - reco_cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install otaku-reco
+
+    ```'
+examples:
+- description: Install Otaku Reco from ClawHub
+  usage: clawhub install otaku-reco
+schema_version: '1.0'

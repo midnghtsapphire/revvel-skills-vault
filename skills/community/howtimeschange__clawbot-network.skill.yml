@@ -1,0 +1,74 @@
+name: clawbot-network
+title: ClawBot Network
+version: 1.0.0
+description: Connect multiple OpenClaw instances across devices (VPS, MacBook, Mac Mini) for distributed agent collaboration.
+  Enables clawdbot-to-clawdbot communication, cross-device @mentions, task assignment, and group chat. Use when you have OpenClaw
+  running on multiple machines that need to communicate and c
+metadata:
+  author: howtimeschange
+  category: Communication
+  tags:
+  - communication
+  - clawbot
+  - network
+  source: clawhub-community
+  clawhub_slug: clawbot-network
+  clawhub_path: howtimeschange/clawbot-network
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawBot Network
+
+    # Source: ClawHub community skill by howtimeschange
+
+    # Install: clawhub install clawbot-network
+
+    # Path: howtimeschange/clawbot-network
+
+
+    ## Description
+
+    Connect multiple OpenClaw instances across devices (VPS, MacBook, Mac Mini) for distributed agent collaboration. Enables
+    clawdbot-to-clawdbot communication, cross-device @mentions, task assignment, and group chat. Use when you have OpenClaw
+    running on multiple machines that need to communicate and c
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/install-clawbot.sh
+
+    - references/ARCHITECTURE.md
+
+    - references/QUICKSTART.md
+
+    - scripts/clawbot_connector.py
+
+    - scripts/database.js
+
+    - scripts/index.js
+
+    - scripts/package.json
+
+    - scripts/python_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawbot-network
+
+    ```'
+examples:
+- description: Install ClawBot Network from ClawHub
+  usage: clawhub install clawbot-network
+schema_version: '1.0'

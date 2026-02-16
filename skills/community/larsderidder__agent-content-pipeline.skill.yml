@@ -1,0 +1,61 @@
+name: agent-content-pipeline
+title: Agent Content Pipeline
+version: 0.2.3
+description: Safe content workflow (drafts/reviewed/revised/approved/posted) with human-in-the-loop approval, plus CLI to
+  list/move/review and post to LinkedIn/X. Use when setting up a content pipeline, drafting content, managing review threads,
+  or posting approved content.
+metadata:
+  author: larsderidder
+  category: Social Media
+  tags:
+  - social-media
+  - agent
+  - content
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: agent-content-pipeline
+  clawhub_path: larsderidder/agent-content-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Content Pipeline
+
+    # Source: ClawHub community skill by larsderidder
+
+    # Install: clawhub install agent-content-pipeline
+
+    # Path: larsderidder/agent-content-pipeline
+
+
+    ## Description
+
+    Safe content workflow (drafts/reviewed/revised/approved/posted) with human-in-the-loop approval, plus CLI to list/move/review
+    and post to LinkedIn/X. Use when setting up a content pipeline, drafting content, managing review threads, or posting
+    approved content.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-content-pipeline
+
+    ```'
+examples:
+- description: Install Agent Content Pipeline from ClawHub
+  usage: clawhub install agent-content-pipeline
+schema_version: '1.0'

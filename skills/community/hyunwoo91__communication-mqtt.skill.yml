@@ -1,0 +1,59 @@
+name: mqtt-agent-messenger
+title: communication-mqtt
+version: 1.0.1
+description: MQTT 브로커를 통해 에이전트의 소개(Intro) 및 상태(Status) 메시지를 발행하고 구독하는 기능을 제공합니다. 에이전트 간의 통신이 필요할 때 사용하세요.
+metadata:
+  author: hyunwoo91
+  category: General
+  tags:
+  - general
+  - mqtt
+  - agent
+  - messenger
+  source: clawhub-community
+  clawhub_slug: communication-mqtt
+  clawhub_path: hyunwoo91/communication-mqtt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# communication-mqtt
+
+    # Source: ClawHub community skill by hyunwoo91
+
+    # Install: clawhub install communication-mqtt
+
+    # Path: hyunwoo91/communication-mqtt
+
+
+    ## Description
+
+    MQTT 브로커를 통해 에이전트의 소개(Intro) 및 상태(Status) 메시지를 발행하고 구독하는 기능을 제공합니다. 에이전트 간의 통신이 필요할 때 사용하세요.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/publish.py
+
+    - scripts/subscribe.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install communication-mqtt
+
+    ```'
+examples:
+- description: Install communication-mqtt from ClawHub
+  usage: clawhub install communication-mqtt
+schema_version: '1.0'

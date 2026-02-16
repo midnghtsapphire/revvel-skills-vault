@@ -1,0 +1,68 @@
+name: hidpi-mouse
+title: HiDPI Mouse
+version: 1.0.0
+description: Universal HiDPI mouse click handling for Linux desktop automation. Auto-detects scale factor or allows calibration
+  for any screen resolution/DPI. Converts Claude display coordinates to xdotool screen coordinates.
+metadata:
+  author: zeyuyuyu
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - hidpi
+  - mouse
+  source: clawhub-community
+  clawhub_slug: hidpi-mouse
+  clawhub_path: zeyuyuyu/hidpi-mouse
+  user_invocable: false
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# HiDPI Mouse
+
+    # Source: ClawHub community skill by zeyuyuyu
+
+    # Install: clawhub install hidpi-mouse
+
+    # Path: zeyuyuyu/hidpi-mouse
+
+
+    ## Description
+
+    Universal HiDPI mouse click handling for Linux desktop automation. Auto-detects scale factor or allows calibration for
+    any screen resolution/DPI. Converts Claude display coordinates to xdotool screen coordinates.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/calibrate.sh
+
+    - scripts/click.sh
+
+    - scripts/detect-scale.sh
+
+    - scripts/drag.sh
+
+    - scripts/move.sh
+
+    - scripts/reliable_click.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hidpi-mouse
+
+    ```'
+examples:
+- description: Install HiDPI Mouse from ClawHub
+  usage: clawhub install hidpi-mouse
+schema_version: '1.0'

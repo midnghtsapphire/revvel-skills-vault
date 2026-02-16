@@ -1,0 +1,57 @@
+name: webuntis
+title: WebUntis
+version: 1.0.1
+description: Read-only access to Untis/WebUntis student timetables. Use when you need to fetch or summarize a student's current
+  schedule (today/this week/date range), upcoming lessons, rooms, teachers, or substitutions from a WebUntis instance.
+metadata:
+  author: finnbusse
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - webuntis
+  source: clawhub-community
+  clawhub_slug: webuntis
+  clawhub_path: finnbusse/webuntis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WebUntis
+
+    # Source: ClawHub community skill by finnbusse
+
+    # Install: clawhub install webuntis
+
+    # Path: finnbusse/webuntis
+
+
+    ## Description
+
+    Read-only access to Untis/WebUntis student timetables. Use when you need to fetch or summarize a student''s current schedule
+    (today/this week/date range), upcoming lessons, rooms, teachers, or substitutions from a WebUntis instance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/webuntis.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install webuntis
+
+    ```'
+examples:
+- description: Install WebUntis from ClawHub
+  usage: clawhub install webuntis
+schema_version: '1.0'

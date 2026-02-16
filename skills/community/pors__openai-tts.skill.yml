@@ -1,0 +1,56 @@
+name: openai-tts
+title: OpenAI TTS
+version: 1.0.0
+description: Text-to-speech via OpenAI Audio Speech API.
+metadata:
+  author: pors
+  category: Media & Content
+  tags:
+  - media-content
+  - openai
+  - tts
+  source: clawhub-community
+  clawhub_slug: openai-tts
+  clawhub_path: pors/openai-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenAI TTS
+
+    # Source: ClawHub community skill by pors
+
+    # Install: clawhub install openai-tts
+
+    # Path: pors/openai-tts
+
+
+    ## Description
+
+    Text-to-speech via OpenAI Audio Speech API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/speak.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openai-tts
+
+    ```'
+examples:
+- description: Install OpenAI TTS from ClawHub
+  usage: clawhub install openai-tts
+schema_version: '1.0'

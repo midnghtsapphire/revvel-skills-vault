@@ -1,0 +1,55 @@
+name: mosstrade
+title: bot-trade
+version: 1.0.0
+description: MossTrade 模拟交易技能 - 让 Agent 接入模拟盘进行合约交易。使用此技能可以注册交易账号、开仓平仓、查看持仓、爆仓后重生。当用户提到模拟交易、MossTrade、交易机器人时激活此技能。
+metadata:
+  author: fueav
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - mosstrade
+  source: clawhub-community
+  clawhub_slug: bot-trade
+  clawhub_path: fueav/bot-trade
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# bot-trade
+
+    # Source: ClawHub community skill by fueav
+
+    # Install: clawhub install bot-trade
+
+    # Path: fueav/bot-trade
+
+
+    ## Description
+
+    MossTrade 模拟交易技能 - 让 Agent 接入模拟盘进行合约交易。使用此技能可以注册交易账号、开仓平仓、查看持仓、爆仓后重生。当用户提到模拟交易、MossTrade、交易机器人时激活此技能。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bot-trade
+
+    ```'
+examples:
+- description: Install bot-trade from ClawHub
+  usage: clawhub install bot-trade
+schema_version: '1.0'

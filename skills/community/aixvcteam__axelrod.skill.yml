@@ -1,0 +1,65 @@
+name: axelrod
+title: Axelrod
+version: 0.1.0
+description: AI-powered Base-chain trading and on-chain query agent via natural language. Use when the user wants to trade
+  crypto (buy/sell/swap tokens), set up automated strategies (DCA, limit orders, RSI), check portfolio balances, view token
+  prices, query token info/analysis, check order status, manage take-p
+metadata:
+  author: aixvcteam
+  category: Communication
+  tags:
+  - communication
+  - axelrod
+  source: clawhub-community
+  clawhub_slug: axelrod
+  clawhub_path: aixvcteam/axelrod
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Axelrod
+
+    # Source: ClawHub community skill by aixvcteam
+
+    # Install: clawhub install axelrod
+
+    # Path: aixvcteam/axelrod
+
+
+    ## Description
+
+    AI-powered Base-chain trading and on-chain query agent via natural language. Use when the user wants to trade crypto (buy/sell/swap
+    tokens), set up automated strategies (DCA, limit orders, RSI), check portfolio balances, view token prices, query token
+    info/analysis, check order status, manage take-p
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/api.md
+
+    - scripts/axelrod_chat.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install axelrod
+
+    ```'
+examples:
+- description: Install Axelrod from ClawHub
+  usage: clawhub install axelrod
+schema_version: '1.0'

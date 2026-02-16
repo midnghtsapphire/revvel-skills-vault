@@ -1,0 +1,60 @@
+name: gdocs-markdown
+title: Google Docs from Markdown
+version: 1.0.1
+description: Create Google Docs from Markdown files. Use when the user wants to create a Google Doc from Markdown content,
+  or when working with gog CLI and need to populate Google Docs with content. This skill handles the conversion Markdown →
+  DOCX → Google Docs via Drive upload, since gog docs CLI only supports
+metadata:
+  author: techlaai
+  category: Search & Research
+  tags:
+  - search-research
+  - gdocs
+  - markdown
+  source: clawhub-community
+  clawhub_slug: gdocs-markdown
+  clawhub_path: techlaai/gdocs-markdown
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Docs from Markdown
+
+    # Source: ClawHub community skill by techlaai
+
+    # Install: clawhub install gdocs-markdown
+
+    # Path: techlaai/gdocs-markdown
+
+
+    ## Description
+
+    Create Google Docs from Markdown files. Use when the user wants to create a Google Doc from Markdown content, or when
+    working with gog CLI and need to populate Google Docs with content. This skill handles the conversion Markdown → DOCX
+    → Google Docs via Drive upload, since gog docs CLI only supports
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gdocs-create.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gdocs-markdown
+
+    ```'
+examples:
+- description: Install Google Docs from Markdown from ClawHub
+  usage: clawhub install gdocs-markdown
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: instagram-marketing
+title: Generate Instagram marketing content from product URLs. Extract product information and create engaging Instagram posts
+  with image suggestions, captions, and hashtags optimized for engagement. Use when user provides a product URL from e-commerce
+  sites like Amazon, Shopify, Taobao, etc. and wants Instagram marketing content such as Image/text post ideas, engaging captions
+  with CTAs, hashtag strategy, or Story/reels content suggestions.
+version: 1.0.0
+description: Generate Instagram marketing content from product URLs. Extract product information and create engaging Instagram
+  posts with image suggestions, captions, and hashtags optimized for engagement. Use when user provides a product URL from
+  e-commerce sites like Amazon, Shopify, Taobao, etc. and wants Ins
+metadata:
+  author: insight68
+  category: Media & Content
+  tags:
+  - media-content
+  - instagram
+  - marketing
+  source: clawhub-community
+  clawhub_slug: instagram-marketing
+  clawhub_path: insight68/instagram-marketing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Generate Instagram marketing content from product URLs. Extract product information and create engaging Instagram
+    posts with image suggestions, captions, and hashtags optimized for engagement. Use when user provides a product URL from
+    e-commerce sites like Amazon, Shopify, Taobao, etc. and wants Instagram marketing content such as Image/text post ideas,
+    engaging captions with CTAs, hashtag strategy, or Story/reels content suggestions.
+
+    # Source: ClawHub community skill by insight68
+
+    # Install: clawhub install instagram-marketing
+
+    # Path: insight68/instagram-marketing
+
+
+    ## Description
+
+    Generate Instagram marketing content from product URLs. Extract product information and create engaging Instagram posts
+    with image suggestions, captions, and hashtags optimized for engagement. Use when user provides a product URL from e-commerce
+    sites like Amazon, Shopify, Taobao, etc. and wants Ins
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/HASHTAG_STRATEGY.md
+
+    - scripts/extract_product.py
+
+    - templates/OUTPUT_TEMPLATE.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install instagram-marketing
+
+    ```'
+examples:
+- description: Install Generate Instagram marketing content from product URLs. Extract product information and create engaging
+    Instagram posts with image suggestions, captions, and hashtags optimized for engagement. Use when user provides a product
+    URL from e-commerce sites like Amazon, Shopify, Taobao, etc. and wants Instagram marketing content such as Image/text
+    post ideas, engaging captions with CTAs, hashtag strategy, or Story/reels content suggestions. from ClawHub
+  usage: clawhub install instagram-marketing
+schema_version: '1.0'

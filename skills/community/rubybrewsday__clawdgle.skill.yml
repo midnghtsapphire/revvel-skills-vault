@@ -1,0 +1,57 @@
+name: clawdgle
+title: Clawdgle
+version: 1.0.0
+description: 'Public API usage for the Clawdgle markdown-first search engine. Use when interacting with Clawdgle to: (1) search
+  indexed markdown content, (2) fetch markdown for a URL, (3) request indexing of a URL via ingest, or (4) direct users to
+  the donate link.'
+metadata:
+  author: rubybrewsday
+  category: Search & Research
+  tags:
+  - search-research
+  - clawdgle
+  source: clawhub-community
+  clawhub_slug: clawdgle
+  clawhub_path: rubybrewsday/clawdgle
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdgle
+
+    # Source: ClawHub community skill by rubybrewsday
+
+    # Install: clawhub install clawdgle
+
+    # Path: rubybrewsday/clawdgle
+
+
+    ## Description
+
+    Public API usage for the Clawdgle markdown-first search engine. Use when interacting with Clawdgle to: (1) search indexed
+    markdown content, (2) fetch markdown for a URL, (3) request indexing of a URL via ingest, or (4) direct users to the donate
+    link.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdgle
+
+    ```'
+examples:
+- description: Install Clawdgle from ClawHub
+  usage: clawhub install clawdgle
+schema_version: '1.0'

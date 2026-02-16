@@ -1,0 +1,63 @@
+name: boof
+title: Boof
+version: 1.0.0
+description: '"Convert PDFs and documents to markdown, index them locally for RAG retrieval, and analyze them token-efficiently.
+  Use when asked to: read/analyze/summarize a PDF, process a document, boof a file, extract information from papers/decks/NOFOs,
+  or when you need to work with large documents without fill'
+metadata:
+  author: chiefsegundo
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - boof
+  source: clawhub-community
+  clawhub_slug: boof
+  clawhub_path: chiefsegundo/boof
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Boof
+
+    # Source: ClawHub community skill by chiefsegundo
+
+    # Install: clawhub install boof
+
+    # Path: chiefsegundo/boof
+
+
+    ## Description
+
+    "Convert PDFs and documents to markdown, index them locally for RAG retrieval, and analyze them token-efficiently. Use
+    when asked to: read/analyze/summarize a PDF, process a document, boof a file, extract information from papers/decks/NOFOs,
+    or when you need to work with large documents without fill
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/advanced-usage.md
+
+    - references/setup-guide.md
+
+    - scripts/boof.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install boof
+
+    ```'
+examples:
+- description: Install Boof from ClawHub
+  usage: clawhub install boof
+schema_version: '1.0'

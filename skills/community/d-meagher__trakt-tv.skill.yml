@@ -1,0 +1,57 @@
+name: trakt
+title: Trakt.tv
+version: 1.0.0
+description: Interact with the Trakt API to manage your watchlist, collection, ratings, and discover content
+metadata:
+  author: d-meagher
+  category: Development & Coding
+  tags:
+  - development-coding
+  - trakt
+  source: clawhub-community
+  clawhub_slug: trakt-tv
+  clawhub_path: d-meagher/trakt-tv
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trakt.tv
+
+    # Source: ClawHub community skill by d-meagher
+
+    # Install: clawhub install trakt-tv
+
+    # Path: d-meagher/trakt-tv
+
+
+    ## Description
+
+    Interact with the Trakt API to manage your watchlist, collection, ratings, and discover content
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - get_trakt_token.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trakt-tv
+
+    ```'
+examples:
+- description: Install Trakt.tv from ClawHub
+  usage: clawhub install trakt-tv
+schema_version: '1.0'

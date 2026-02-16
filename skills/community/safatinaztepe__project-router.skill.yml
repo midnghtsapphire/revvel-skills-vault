@@ -1,0 +1,62 @@
+name: project-router
+title: Project Router
+version: 1.0.0
+description: '"Terminal-first project bootstrapper and workspace context manager. Use when the user asks for /project-style
+  workflows: detect current project, read project context/brief, run standardized targets (build/test/lint/deploy), init a
+  .project bundle via plan/apply, manage artifacts, or expose these act'
+metadata:
+  author: safatinaztepe
+  category: Development & Coding
+  tags:
+  - development-coding
+  - project
+  - router
+  source: clawhub-community
+  clawhub_slug: project-router
+  clawhub_path: safatinaztepe/project-router
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Project Router
+
+    # Source: ClawHub community skill by safatinaztepe
+
+    # Install: clawhub install project-router
+
+    # Path: safatinaztepe/project-router
+
+
+    ## Description
+
+    "Terminal-first project bootstrapper and workspace context manager. Use when the user asks for /project-style workflows:
+    detect current project, read project context/brief, run standardized targets (build/test/lint/deploy), init a .project
+    bundle via plan/apply, manage artifacts, or expose these act
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/project.js
+
+    - scripts/server.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install project-router
+
+    ```'
+examples:
+- description: Install Project Router from ClawHub
+  usage: clawhub install project-router
+schema_version: '1.0'

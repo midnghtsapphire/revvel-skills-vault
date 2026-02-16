@@ -1,0 +1,69 @@
+name: study
+title: Study
+version: 1.0.0
+description: Structure study sessions, manage materials, prepare for exams, and track progress for academic success.
+metadata:
+  author: ivangdavila
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - study
+  source: clawhub-community
+  clawhub_slug: study
+  clawhub_path: ivangdavila/study
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Study
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install study
+
+    # Path: ivangdavila/study
+
+
+    ## Description
+
+    Structure study sessions, manage materials, prepare for exams, and track progress for academic success.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - add-subject.sh
+
+    - assessments.md
+
+    - deadlines.sh
+
+    - exam-prep.sh
+
+    - exams.md
+
+    - init-workspace.sh
+
+    - materials.md
+
+    - plan-week.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install study
+
+    ```'
+examples:
+- description: Install Study from ClawHub
+  usage: clawhub install study
+schema_version: '1.0'

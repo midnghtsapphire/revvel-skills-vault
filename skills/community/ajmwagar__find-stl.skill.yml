@@ -1,0 +1,60 @@
+name: find-stl
+title: Find Stl
+version: 0.1.0
+description: Search and download ready-to-print 3D model files (STL/3MF/ZIP) for a concept or specific part by querying Printables
+  (first). Use when an agent needs to find an existing model, capture license/attribution, download the source files, and
+  output a local folder + manifest for quoting/printing.
+metadata:
+  author: ajmwagar
+  category: Search & Research
+  tags:
+  - search-research
+  - find
+  - stl
+  source: clawhub-community
+  clawhub_slug: find-stl
+  clawhub_path: ajmwagar/find-stl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Find Stl
+
+    # Source: ClawHub community skill by ajmwagar
+
+    # Install: clawhub install find-stl
+
+    # Path: ajmwagar/find-stl
+
+
+    ## Description
+
+    Search and download ready-to-print 3D model files (STL/3MF/ZIP) for a concept or specific part by querying Printables
+    (first). Use when an agent needs to find an existing model, capture license/attribution, download the source files, and
+    output a local folder + manifest for quoting/printing.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/find_stl.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install find-stl
+
+    ```'
+examples:
+- description: Install Find Stl from ClawHub
+  usage: clawhub install find-stl
+schema_version: '1.0'

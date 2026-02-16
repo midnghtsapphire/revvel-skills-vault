@@ -1,0 +1,53 @@
+name: vps
+title: VPS
+version: 1.0.0
+description: Provision, secure, and manage virtual private servers with practical hosting guidance.
+metadata:
+  author: ivangdavila
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - vps
+  source: clawhub-community
+  clawhub_slug: vps
+  clawhub_path: ivangdavila/vps
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# VPS
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install vps
+
+    # Path: ivangdavila/vps
+
+
+    ## Description
+
+    Provision, secure, and manage virtual private servers with practical hosting guidance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vps
+
+    ```'
+examples:
+- description: Install VPS from ClawHub
+  usage: clawhub install vps
+schema_version: '1.0'

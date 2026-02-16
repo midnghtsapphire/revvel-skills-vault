@@ -1,0 +1,57 @@
+name: sound-fx
+title: Sound FX
+version: 0.1.1
+description: Generate short sound effects via ElevenLabs SFX (text-to-sound). Use when you need SFX clips like applause, canned
+  laughter, whooshes, ambience, or short stingers, and optionally convert to WhatsApp-friendly .ogg/opus.
+metadata:
+  author: javicasper
+  category: Utilities
+  tags:
+  - utilities
+  - sound
+  source: clawhub-community
+  clawhub_slug: sound-fx
+  clawhub_path: javicasper/sound-fx
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sound FX
+
+    # Source: ClawHub community skill by javicasper
+
+    # Install: clawhub install sound-fx
+
+    # Path: javicasper/sound-fx
+
+
+    ## Description
+
+    Generate short sound effects via ElevenLabs SFX (text-to-sound). Use when you need SFX clips like applause, canned laughter,
+    whooshes, ambience, or short stingers, and optionally convert to WhatsApp-friendly .ogg/opus.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_sfx.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sound-fx
+
+    ```'
+examples:
+- description: Install Sound FX from ClawHub
+  usage: clawhub install sound-fx
+schema_version: '1.0'

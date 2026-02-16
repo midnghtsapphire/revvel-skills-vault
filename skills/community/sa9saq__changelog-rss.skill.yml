@@ -1,0 +1,56 @@
+name: changelog-rss
+title: Changelog Rss
+version: 1.1.0
+description: Convert CHANGELOG.md files into RSS 2.0 feeds for release monitoring.
+metadata:
+  author: sa9saq
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - changelog
+  - rss
+  source: clawhub-community
+  clawhub_slug: changelog-rss
+  clawhub_path: sa9saq/changelog-rss
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Changelog Rss
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install changelog-rss
+
+    # Path: sa9saq/changelog-rss
+
+
+    ## Description
+
+    Convert CHANGELOG.md files into RSS 2.0 feeds for release monitoring.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install changelog-rss
+
+    ```'
+examples:
+- description: Install Changelog Rss from ClawHub
+  usage: clawhub install changelog-rss
+schema_version: '1.0'

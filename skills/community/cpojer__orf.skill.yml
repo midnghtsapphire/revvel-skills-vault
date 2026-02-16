@@ -1,0 +1,66 @@
+name: orf-digest
+title: ORF
+version: 1.0.2
+description: '"On-demand ORF news digest in German. Use when the user says ''orf'', ''pull orf'', or ''orf 10''. Focus on
+  Austrian politics (Inland) and international politics (Ausland) + major headlines; exclude sports. Send each item as its
+  own message (Title + Age + Link). Then generate a Nano Banana image in a cart'
+metadata:
+  author: cpojer
+  category: Media & Content
+  tags:
+  - media-content
+  - orf
+  - digest
+  source: clawhub-community
+  clawhub_slug: orf
+  clawhub_path: cpojer/orf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ORF
+
+    # Source: ClawHub community skill by cpojer
+
+    # Install: clawhub install orf
+
+    # Path: cpojer/orf
+
+
+    ## Description
+
+    "On-demand ORF news digest in German. Use when the user says ''orf'', ''pull orf'', or ''orf 10''. Focus on Austrian politics
+    (Inland) and international politics (Ausland) + major headlines; exclude sports. Send each item as its own message (Title
+    + Age + Link). Then generate a Nano Banana image in a cart
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_zib_nano_banana.sh
+
+    - scripts/nano_banana_mood.py
+
+    - scripts/orf.py
+
+    - scripts/zib_prompt.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install orf
+
+    ```'
+examples:
+- description: Install ORF from ClawHub
+  usage: clawhub install orf
+schema_version: '1.0'

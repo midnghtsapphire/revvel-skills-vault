@@ -1,0 +1,67 @@
+name: transport-investigation-acas-aligned-pack
+title: Investigation Pack (ACAS-aligned)
+version: 1.0.0
+description: Generates ACAS-aligned investigation invite wording, neutral question sets, and evidence logs. USE WHEN starting
+  a driver incident investigation/interview.
+metadata:
+  author: kowl64
+  category: General
+  tags:
+  - general
+  - transport
+  - investigation
+  - acas
+  - aligned
+  - pack
+  source: clawhub-community
+  clawhub_slug: transport-investigation-acas-aligned-pack
+  clawhub_path: kowl64/transport-investigation-acas-aligned-pack
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Investigation Pack (ACAS-aligned)
+
+    # Source: ClawHub community skill by kowl64
+
+    # Install: clawhub install transport-investigation-acas-aligned-pack
+
+    # Path: kowl64/transport-investigation-acas-aligned-pack
+
+
+    ## Description
+
+    Generates ACAS-aligned investigation invite wording, neutral question sets, and evidence logs. USE WHEN starting a driver
+    incident investigation/interview.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/evidence-log-template.md
+
+    - assets/invite-letter-template.docx-ready.md
+
+    - assets/neutral-question-plan-template.md
+
+    - references/acas-alignment-checklist.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install transport-investigation-acas-aligned-pack
+
+    ```'
+examples:
+- description: Install Investigation Pack (ACAS-aligned) from ClawHub
+  usage: clawhub install transport-investigation-acas-aligned-pack
+schema_version: '1.0'

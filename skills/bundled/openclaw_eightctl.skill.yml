@@ -1,0 +1,38 @@
+name: openclaw_eightctl
+title: 🎛️ Eightctl
+version: 1.0.0
+description: Control Eight Sleep pods (status, temperature, alarms, schedules).
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - eightctl
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - eightctl
+install:
+- id: go
+  platform: all
+  method: go
+  command: ''
+  label: Install eightctl (go)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: eightctl\ndescription: Control Eight Sleep pods (status, temperature, alarms, schedules).\nhomepage:\
+    \ https://eightctl.sh\nmetadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"\U0001F39B️\",\n        \"requires\"\
+    : { \"bins\": [\"eightctl\"] },\n        \"install\":\n          [\n            {\n              \"id\": \"go\",\n   \
+    \           \"kind\": \"go\",\n              \"module\": \"github.com/steipete/eightctl/cmd/eightctl@latest\",\n     \
+    \         \"bins\": [\"eightctl\"],\n              \"label\": \"Install eightctl (go)\",\n            },\n          ],\n\
+    \      },\n  }\n---\n\n# eightctl\n\nUse `eightctl` for Eight Sleep pod control. Requires auth.\n\nAuth\n\n- Config: `~/.config/eightctl/config.yaml`\n\
+    - Env: `EIGHTCTL_EMAIL`, `EIGHTCTL_PASSWORD`\n\nQuick start\n\n- `eightctl status`\n- `eightctl on|off`\n- `eightctl temp\
+    \ 20`\n\nCommon tasks\n\n- Alarms: `eightctl alarm list|create|dismiss`\n- Schedules: `eightctl schedule list|create|update`\n\
+    - Audio: `eightctl audio state|play|pause`\n- Base: `eightctl base info|angle`\n\nNotes\n\n- API is unofficial and rate-limited;\
+    \ avoid repeated logins.\n- Confirm before changing temperature or alarms.\n"
+examples: []
+schema_version: '1.0'

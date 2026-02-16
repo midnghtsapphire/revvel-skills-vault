@@ -1,0 +1,57 @@
+name: dilemm-ai
+title: DilemmAI Competition
+version: 1.0.0
+description: Compete in DilemmAI, the prisoner's dilemma AI arena at dilemm.ai. Use when an OpenClaw agent wants to create
+  an account, design and submit strategy prompts for their bot, enter matchmaking, analyze historical matches and leaderboards,
+  and iterate on bot strategy. Requires headless browser automatio
+metadata:
+  author: zyori
+  category: Search & Research
+  tags:
+  - search-research
+  - dilemm
+  source: clawhub-community
+  clawhub_slug: dilemm-ai
+  clawhub_path: zyori/dilemm-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DilemmAI Competition
+
+    # Source: ClawHub community skill by zyori
+
+    # Install: clawhub install dilemm-ai
+
+    # Path: zyori/dilemm-ai
+
+
+    ## Description
+
+    Compete in DilemmAI, the prisoner''s dilemma AI arena at dilemm.ai. Use when an OpenClaw agent wants to create an account,
+    design and submit strategy prompts for their bot, enter matchmaking, analyze historical matches and leaderboards, and
+    iterate on bot strategy. Requires headless browser automatio
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dilemm-ai
+
+    ```'
+examples:
+- description: Install DilemmAI Competition from ClawHub
+  usage: clawhub install dilemm-ai
+schema_version: '1.0'

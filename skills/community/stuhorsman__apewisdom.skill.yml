@@ -1,0 +1,57 @@
+name: apewisdom
+title: ApeWisdom Reddit Scanner
+version: 1.0.0
+description: Scan Reddit for trending stocks and sentiment spikes using the ApeWisdom API (free). Use this to find "meme stocks",
+  retail momentum, and sentiment shifts on r/wallstreetbets.
+metadata:
+  author: stuhorsman
+  category: Social Media
+  tags:
+  - social-media
+  - apewisdom
+  source: clawhub-community
+  clawhub_slug: apewisdom
+  clawhub_path: stuhorsman/apewisdom
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ApeWisdom Reddit Scanner
+
+    # Source: ClawHub community skill by stuhorsman
+
+    # Install: clawhub install apewisdom
+
+    # Path: stuhorsman/apewisdom
+
+
+    ## Description
+
+    Scan Reddit for trending stocks and sentiment spikes using the ApeWisdom API (free). Use this to find "meme stocks", retail
+    momentum, and sentiment shifts on r/wallstreetbets.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/scan_reddit.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apewisdom
+
+    ```'
+examples:
+- description: Install ApeWisdom Reddit Scanner from ClawHub
+  usage: clawhub install apewisdom
+schema_version: '1.0'

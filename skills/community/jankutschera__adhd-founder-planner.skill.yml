@@ -1,0 +1,75 @@
+name: adhd-founder-planner
+title: ADHD Founder Planner
+version: 1.1.1
+description: '"This skill should be used when the user asks to ''plan my day'', ''help me plan today'', ''morning planning'',
+  ''what should I work on today'', ''daily planner'', ''evening reflection'', ''reflect on my day'', ''migrate tasks'', ''carry
+  tasks forward'', ''rapid log'', ''brain dump my tasks'', or mentions ADHD-friendly p'
+metadata:
+  author: jankutschera
+  category: Development & Coding
+  tags:
+  - development-coding
+  - adhd
+  - founder
+  - planner
+  source: clawhub-community
+  clawhub_slug: adhd-founder-planner
+  clawhub_path: jankutschera/adhd-founder-planner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ADHD Founder Planner
+
+    # Source: ClawHub community skill by jankutschera
+
+    # Install: clawhub install adhd-founder-planner
+
+    # Path: jankutschera/adhd-founder-planner
+
+
+    ## Description
+
+    "This skill should be used when the user asks to ''plan my day'', ''help me plan today'', ''morning planning'', ''what
+    should I work on today'', ''daily planner'', ''evening reflection'', ''reflect on my day'', ''migrate tasks'', ''carry
+    tasks forward'', ''rapid log'', ''brain dump my tasks'', or mentions ADHD-friendly p
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/migration.md
+
+    - references/swim-lanes.md
+
+    - references/symbols.md
+
+    - references/time-blindness.md
+
+    - scripts/plan.sh
+
+    - templates/daily.md
+
+    - templates/monthly.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install adhd-founder-planner
+
+    ```'
+examples:
+- description: Install ADHD Founder Planner from ClawHub
+  usage: clawhub install adhd-founder-planner
+schema_version: '1.0'

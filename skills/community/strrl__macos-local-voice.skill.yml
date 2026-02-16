@@ -1,0 +1,65 @@
+name: macos-local-voice
+title: macOS Local Voice
+version: 1.0.0
+description: '"Local STT and TTS on macOS using native Apple capabilities. Speech-to-text via yap (Apple Speech.framework),
+  text-to-speech via say + ffmpeg. Fully offline, no API keys required. Includes voice quality detection and smart voice selection."'
+metadata:
+  author: strrl
+  category: Development & Coding
+  tags:
+  - development-coding
+  - macos
+  - local
+  - voice
+  source: clawhub-community
+  clawhub_slug: macos-local-voice
+  clawhub_path: strrl/macos-local-voice
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# macOS Local Voice
+
+    # Source: ClawHub community skill by strrl
+
+    # Install: clawhub install macos-local-voice
+
+    # Path: strrl/macos-local-voice
+
+
+    ## Description
+
+    "Local STT and TTS on macOS using native Apple capabilities. Speech-to-text via yap (Apple Speech.framework), text-to-speech
+    via say + ffmpeg. Fully offline, no API keys required. Includes voice quality detection and smart voice selection."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/stt.mjs
+
+    - scripts/tts.mjs
+
+    - scripts/voices.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install macos-local-voice
+
+    ```'
+examples:
+- description: Install macOS Local Voice from ClawHub
+  usage: clawhub install macos-local-voice
+schema_version: '1.0'

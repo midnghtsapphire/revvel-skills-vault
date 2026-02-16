@@ -1,0 +1,59 @@
+name: ocft
+title: OCFT - OpenClaw File Transfer
+version: 1.1.2
+description: P2P file transfer between AI agents via message channels. Supports chunked transfer, IPFS fallback for large
+  files, and trusted peer management.
+metadata:
+  author: stormixus
+  category: Communication
+  tags:
+  - communication
+  - ocft
+  source: clawhub-community
+  clawhub_slug: ocft
+  clawhub_path: stormixus/ocft
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OCFT - OpenClaw File Transfer
+
+    # Source: ClawHub community skill by stormixus
+
+    # Install: clawhub install ocft
+
+    # Path: stormixus/ocft
+
+
+    ## Description
+
+    P2P file transfer between AI agents via message channels. Supports chunked transfer, IPFS fallback for large files, and
+    trusted peer management.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - .clawhub/origin.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ocft
+
+    ```'
+examples:
+- description: Install OCFT - OpenClaw File Transfer from ClawHub
+  usage: clawhub install ocft
+schema_version: '1.0'

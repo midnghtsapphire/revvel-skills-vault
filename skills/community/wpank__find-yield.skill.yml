@@ -1,0 +1,65 @@
+name: find-yield
+title: Uniswap Find Yield
+version: 0.1.0
+description: Find the highest-yield LP pools on Uniswap filtered by risk tolerance and minimum TVL. Use when the user asks
+  about the best yields, highest APY pools, or where to earn fees.
+metadata:
+  author: wpank
+  category: General
+  tags:
+  - general
+  - find
+  - yield
+  - '[task(subagent_type:opportunity-scanner)]'
+  source: clawhub-community
+  clawhub_slug: find-yield
+  clawhub_path: wpank/find-yield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:opportunity-scanner)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Find Yield
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install find-yield
+
+    # Path: wpank/find-yield
+
+
+    ## Description
+
+    Find the highest-yield LP pools on Uniswap filtered by risk tolerance and minimum TVL. Use when the user asks about the
+    best yields, highest APY pools, or where to earn fees.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:opportunity-scanner)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install find-yield
+
+    ```'
+examples:
+- description: Install Uniswap Find Yield from ClawHub
+  usage: clawhub install find-yield
+schema_version: '1.0'

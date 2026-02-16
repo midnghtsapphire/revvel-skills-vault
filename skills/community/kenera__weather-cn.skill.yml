@@ -1,0 +1,59 @@
+name: weather-zh
+title: 中国城市天气Weather in China
+version: 1.0.1
+description: 中文天气查询工具 - 使用中国天气网获取实时天气（无需API密钥，不依赖大模型）
+metadata:
+  author: kenera
+  category: Development & Coding
+  tags:
+  - development-coding
+  - weather
+  source: clawhub-community
+  clawhub_slug: weather-cn
+  clawhub_path: kenera/weather-cn
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 中国城市天气Weather in China
+
+    # Source: ClawHub community skill by kenera
+
+    # Install: clawhub install weather-cn
+
+    # Path: kenera/weather-cn
+
+
+    ## Description
+
+    中文天气查询工具 - 使用中国天气网获取实时天气（无需API密钥，不依赖大模型）
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - weather-cn.sh
+
+    - weather_codes.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install weather-cn
+
+    ```'
+examples:
+- description: Install 中国城市天气Weather in China from ClawHub
+  usage: clawhub install weather-cn
+schema_version: '1.0'

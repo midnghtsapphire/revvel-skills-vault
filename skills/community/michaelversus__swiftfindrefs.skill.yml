@@ -1,0 +1,61 @@
+name: swiftfindrefs
+title: swiftfindrefs
+version: 1.0.5
+description: Use swiftfindrefs (IndexStoreDB) to list every Swift source file referencing a symbol. Mandatory for “find references”,
+  “fix missing imports”, and cross-module refactors. Do not replace with grep/rg or IDE search.
+metadata:
+  author: michaelversus
+  category: Search & Research
+  tags:
+  - search-research
+  - swiftfindrefs
+  source: clawhub-community
+  clawhub_slug: swiftfindrefs
+  clawhub_path: michaelversus/swiftfindrefs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# swiftfindrefs
+
+    # Source: ClawHub community skill by michaelversus
+
+    # Install: clawhub install swiftfindrefs
+
+    # Path: michaelversus/swiftfindrefs
+
+
+    ## Description
+
+    Use swiftfindrefs (IndexStoreDB) to list every Swift source file referencing a symbol. Mandatory for “find references”,
+    “fix missing imports”, and cross-module refactors. Do not replace with grep/rg or IDE search.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cli.md
+
+    - references/troubleshooting.md
+
+    - references/workflows.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install swiftfindrefs
+
+    ```'
+examples:
+- description: Install swiftfindrefs from ClawHub
+  usage: clawhub install swiftfindrefs
+schema_version: '1.0'

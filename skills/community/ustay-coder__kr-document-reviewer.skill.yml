@@ -1,0 +1,36 @@
+name: kr-document-reviewer
+title: Korean Document Reviewer
+version: 1.1.1
+description: '"한국 비즈니스 서류(세금계산서, 계약서, 통장사본, 견적서, 거래명세서, 사업자등록증, 사업비 요청 공문, 지원금 신청서, 검수조서, 이체확인증, 결과보고서) 검토 및 검증. Use when
+  reviewing Korean business documents for format compliance, required fields, value accuracy, and cross-document consistency.
+  Triggers on: 서류 검토, 문서 확인, 세금계산서 검증, 계약서 리뷰, 견적서 확인, 통장사본 검증, 거래명세서 '
+metadata:
+  author: ustay-coder
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - document
+  - reviewer
+  source: clawhub-community
+  clawhub_slug: kr-document-reviewer
+  clawhub_path: ustay-coder/kr-document-reviewer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Korean Document Reviewer\n# Source: ClawHub community skill by ustay-coder\n# Install: clawhub install kr-document-reviewer\n\
+    # Path: ustay-coder/kr-document-reviewer\n\n## Description\n\"한국 비즈니스 서류(세금계산서, 계약서, 통장사본, 견적서, 거래명세서, 사업자등록증, 사업비 요청\
+    \ 공문, 지원금 신청서, 검수조서, 이체확인증, 결과보고서) 검토 및 검증. Use when reviewing Korean business documents for format compliance, required\
+    \ fields, value accuracy, and cross-document consistency. Triggers on: 서류 검토, 문서 확인, 세금계산서 검증, 계약서 리뷰, 견적서 확인, 통장사본 검증,\
+    \ 거래명세서 \n\n## Files\n- SKILL.md\n- _meta.json\n- references/bank-account.md\n- references/business-registration.md\n\
+    - references/contract.md\n- references/estimate.md\n- references/expense-request.md\n- references/inspection-report.md\n\
+    - references/result-report.md\n- references/subsidy-application.md\n\n## Installation\n```bash\nclawhub install kr-document-reviewer\n\
+    ```"
+examples:
+- description: Install Korean Document Reviewer from ClawHub
+  usage: clawhub install kr-document-reviewer
+schema_version: '1.0'

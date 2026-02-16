@@ -1,0 +1,57 @@
+name: memory-config
+title: memory-config
+version: 1.0.0
+description: Configure memory settings for Clawdbot including memory flush before compaction and session memory search. Use
+  when the user wants to enable or configure memory features like compaction.memoryFlush, sessionMemory search, or memorySearch
+  sources.
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - memory
+  - config
+  source: clawhub-community
+  clawhub_slug: bobagent-memory-config
+  clawhub_path: bobdevibecoder/bobagent-memory-config
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# memory-config
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-memory-config
+
+    # Path: bobdevibecoder/bobagent-memory-config
+
+
+    ## Description
+
+    Configure memory settings for Clawdbot including memory flush before compaction and session memory search. Use when the
+    user wants to enable or configure memory features like compaction.memoryFlush, sessionMemory search, or memorySearch sources.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-memory-config
+
+    ```'
+examples:
+- description: Install memory-config from ClawHub
+  usage: clawhub install bobagent-memory-config
+schema_version: '1.0'

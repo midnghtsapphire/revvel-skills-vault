@@ -1,0 +1,72 @@
+name: mcp-integration
+title: Mcp Integration
+version: 0.1.1
+description: Use Model Context Protocol servers to access external tools and data sources. Enable AI agents to discover and
+  execute tools from configured MCP servers (legal databases, APIs, database connectors, weather services, etc.).
+metadata:
+  author: lunarpulse
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mcp
+  - integration
+  source: clawhub-community
+  clawhub_slug: openclaw-mcp-plugin
+  clawhub_path: lunarpulse/openclaw-mcp-plugin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mcp Integration
+
+    # Source: ClawHub community skill by lunarpulse
+
+    # Install: clawhub install openclaw-mcp-plugin
+
+    # Path: lunarpulse/openclaw-mcp-plugin
+
+
+    ## Description
+
+    Use Model Context Protocol servers to access external tools and data sources. Enable AI agents to discover and execute
+    tools from configured MCP servers (legal databases, APIs, database connectors, weather services, etc.).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - config/openclaw.plugin.json
+
+    - docs/API.md
+
+    - docs/CONFIGURATION.md
+
+    - docs/EXAMPLES.md
+
+    - docs/REAL_EXAMPLE_KR_LEGAL.md
+
+    - docs/TROUBLESHOOTING.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-mcp-plugin
+
+    ```'
+examples:
+- description: Install Mcp Integration from ClawHub
+  usage: clawhub install openclaw-mcp-plugin
+schema_version: '1.0'

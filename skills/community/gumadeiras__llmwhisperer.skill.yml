@@ -1,0 +1,53 @@
+name: llmwhisperer
+title: LLMWhisperer
+version: 0.0.7
+description: Extract text and layout from images and PDFs using LLMWhisperer API. Good for handwriting and complex forms.
+metadata:
+  author: gumadeiras
+  category: Media & Content
+  tags:
+  - media-content
+  - llmwhisperer
+  source: clawhub-community
+  clawhub_slug: llmwhisperer
+  clawhub_path: gumadeiras/llmwhisperer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LLMWhisperer
+
+    # Source: ClawHub community skill by gumadeiras
+
+    # Install: clawhub install llmwhisperer
+
+    # Path: gumadeiras/llmwhisperer
+
+
+    ## Description
+
+    Extract text and layout from images and PDFs using LLMWhisperer API. Good for handwriting and complex forms.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install llmwhisperer
+
+    ```'
+examples:
+- description: Install LLMWhisperer from ClawHub
+  usage: clawhub install llmwhisperer
+schema_version: '1.0'

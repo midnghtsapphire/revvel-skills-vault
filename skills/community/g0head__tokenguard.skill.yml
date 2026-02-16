@@ -1,0 +1,59 @@
+name: tokenguard
+title: TokenGuard
+version: 1.0.0
+description: API cost guardian for AI agents. Track spending, enforce limits, prevent runaway costs. Essential for any agent
+  making paid API calls.
+metadata:
+  author: g0head
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - tokenguard
+  source: clawhub-community
+  clawhub_slug: tokenguard
+  clawhub_path: g0head/tokenguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TokenGuard
+
+    # Source: ClawHub community skill by g0head
+
+    # Install: clawhub install tokenguard
+
+    # Path: g0head/tokenguard
+
+
+    ## Description
+
+    API cost guardian for AI agents. Track spending, enforce limits, prevent runaway costs. Essential for any agent making
+    paid API calls.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - scripts/tokenguard.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tokenguard
+
+    ```'
+examples:
+- description: Install TokenGuard from ClawHub
+  usage: clawhub install tokenguard
+schema_version: '1.0'

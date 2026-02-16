@@ -1,0 +1,61 @@
+name: volcengine-compute-ecs
+title: Volcengine Compute Ecs
+version: 1.0.0
+description: Manage Volcengine ECS instances and related resources. Use when users need instance inventory, lifecycle operations,
+  troubleshooting, or automation templates for ECS.
+metadata:
+  author: cinience
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - volcengine
+  - compute
+  - ecs
+  source: clawhub-community
+  clawhub_slug: volcengine-compute-ecs
+  clawhub_path: cinience/volcengine-compute-ecs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Volcengine Compute Ecs
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install volcengine-compute-ecs
+
+    # Path: cinience/volcengine-compute-ecs
+
+
+    ## Description
+
+    Manage Volcengine ECS instances and related resources. Use when users need instance inventory, lifecycle operations, troubleshooting,
+    or automation templates for ECS.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install volcengine-compute-ecs
+
+    ```'
+examples:
+- description: Install Volcengine Compute Ecs from ClawHub
+  usage: clawhub install volcengine-compute-ecs
+schema_version: '1.0'

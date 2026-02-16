@@ -1,0 +1,58 @@
+name: self-validating-example
+title: Self Validating Example
+version: 1.0.0
+description: Example skill demonstrating self-validating REST API generation with automatic test execution. Use as a template
+  for creating skills with pre-tool-use validation hooks. Validates Node.js environment and dependencies before generating
+  endpoints.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - self
+  - validating
+  - example
+  source: clawhub-community
+  clawhub_slug: sw-self-validating-example
+  clawhub_path: anton-abyzov/sw-self-validating-example
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Self Validating Example
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-self-validating-example
+
+    # Path: anton-abyzov/sw-self-validating-example
+
+
+    ## Description
+
+    Example skill demonstrating self-validating REST API generation with automatic test execution. Use as a template for creating
+    skills with pre-tool-use validation hooks. Validates Node.js environment and dependencies before generating endpoints.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-self-validating-example
+
+    ```'
+examples:
+- description: Install Self Validating Example from ClawHub
+  usage: clawhub install sw-self-validating-example
+schema_version: '1.0'

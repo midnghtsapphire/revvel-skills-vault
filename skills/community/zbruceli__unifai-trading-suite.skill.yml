@@ -1,0 +1,72 @@
+name: unifai-trading-suite
+title: UnifAI Trading Suite
+version: 1.0.0
+description: '"AI-powered trading insights suite: prediction markets (Polymarket/Kalshi) and social sentiment signals powered
+  by UnifAI."'
+metadata:
+  author: zbruceli
+  category: Social Media
+  tags:
+  - social-media
+  - unifai
+  - trading
+  - suite
+  source: clawhub-community
+  clawhub_slug: unifai-trading-suite
+  clawhub_path: zbruceli/unifai-trading-suite
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UnifAI Trading Suite
+
+    # Source: ClawHub community skill by zbruceli
+
+    # Install: clawhub install unifai-trading-suite
+
+    # Path: zbruceli/unifai-trading-suite
+
+
+    ## Description
+
+    "AI-powered trading insights suite: prediction markets (Polymarket/Kalshi) and social sentiment signals powered by UnifAI."
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - requirements.txt
+
+    - config/__init__.py
+
+    - config/settings.py
+
+    - skills/kalshi-trader/SKILL.md
+
+    - skills/kalshi-trader/scripts/kalshi.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unifai-trading-suite
+
+    ```'
+examples:
+- description: Install UnifAI Trading Suite from ClawHub
+  usage: clawhub install unifai-trading-suite
+schema_version: '1.0'

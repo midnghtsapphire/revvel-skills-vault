@@ -1,0 +1,57 @@
+name: telegram-pairing-approver
+title: 处理Telegram配对码的机器人服务 | Telegram Pairing Code Approver
+version: 1.0.1
+description: 创建一个持久运行的Telegram机器人服务，用于自动处理配对代码并批准Telegram会话权限。使用时提供机器人令牌，自动创建机器人脚本和服务文件，并启动系统服务。适用于需要自动处理Telegram配对请求的场景。
+metadata:
+  author: crazypeace
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - pairing
+  - approver
+  source: clawhub-community
+  clawhub_slug: telegram-pairing-approver
+  clawhub_path: crazypeace/telegram-pairing-approver
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 处理Telegram配对码的机器人服务 | Telegram Pairing Code Approver
+
+    # Source: ClawHub community skill by crazypeace
+
+    # Install: clawhub install telegram-pairing-approver
+
+    # Path: crazypeace/telegram-pairing-approver
+
+
+    ## Description
+
+    创建一个持久运行的Telegram机器人服务，用于自动处理配对代码并批准Telegram会话权限。使用时提供机器人令牌，自动创建机器人脚本和服务文件，并启动系统服务。适用于需要自动处理Telegram配对请求的场景。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/deploy.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-pairing-approver
+
+    ```'
+examples:
+- description: Install 处理Telegram配对码的机器人服务 | Telegram Pairing Code Approver from ClawHub
+  usage: clawhub install telegram-pairing-approver
+schema_version: '1.0'

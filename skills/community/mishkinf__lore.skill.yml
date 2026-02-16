@@ -1,0 +1,53 @@
+name: lore
+title: Lore
+version: 1.0.0
+description: Search and ingest knowledge from Lore, a research repository with citations
+metadata:
+  author: mishkinf
+  category: Search & Research
+  tags:
+  - search-research
+  - lore
+  source: clawhub-community
+  clawhub_slug: lore
+  clawhub_path: mishkinf/lore
+  user_invocable: false
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lore
+
+    # Source: ClawHub community skill by mishkinf
+
+    # Install: clawhub install lore
+
+    # Path: mishkinf/lore
+
+
+    ## Description
+
+    Search and ingest knowledge from Lore, a research repository with citations
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lore
+
+    ```'
+examples:
+- description: Install Lore from ClawHub
+  usage: clawhub install lore
+schema_version: '1.0'

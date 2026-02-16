@@ -1,0 +1,53 @@
+name: docker
+title: Docker
+version: 1.0.0
+description: Run containers in production avoiding common crashes, security holes, and resource traps.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - docker
+  source: clawhub-community
+  clawhub_slug: docker
+  clawhub_path: ivangdavila/docker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docker
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install docker
+
+    # Path: ivangdavila/docker
+
+
+    ## Description
+
+    Run containers in production avoiding common crashes, security holes, and resource traps.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install docker
+
+    ```'
+examples:
+- description: Install Docker from ClawHub
+  usage: clawhub install docker
+schema_version: '1.0'

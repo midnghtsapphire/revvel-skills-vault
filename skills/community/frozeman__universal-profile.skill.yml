@@ -1,0 +1,72 @@
+name: universal-profile
+title: Universal Profile
+version: 0.3.7
+description: Manage LUKSO Universal Profiles — identity, permissions, tokens, and blockchain operations via direct or gasless
+  relay transactions
+metadata:
+  author: frozeman
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - universal
+  - profile
+  source: clawhub-community
+  clawhub_slug: universal-profile
+  clawhub_path: frozeman/universal-profile
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Universal Profile
+
+    # Source: ClawHub community skill by frozeman
+
+    # Install: clawhub install universal-profile
+
+    # Path: frozeman/universal-profile
+
+
+    ## Description
+
+    Manage LUKSO Universal Profiles — identity, permissions, tokens, and blockchain operations via direct or gasless relay
+    transactions
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package.json
+
+    - commands/query-assets.js
+
+    - commands/transfer-lsp7.js
+
+    - examples/basic-profile.md
+
+    - examples/token-deployment.md
+
+    - lib/config.js
+
+    - lib/constants.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install universal-profile
+
+    ```'
+examples:
+- description: Install Universal Profile from ClawHub
+  usage: clawhub install universal-profile
+schema_version: '1.0'

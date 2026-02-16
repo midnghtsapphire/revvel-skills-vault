@@ -1,0 +1,61 @@
+name: dsiprouter
+title: Dsiprouter
+version: 0.1.0
+description: Call the dSIPRouter REST API using the Postman collection (curl + jq).
+metadata:
+  author: mackhendricks
+  category: Development & Coding
+  tags:
+  - development-coding
+  - dsiprouter
+  source: clawhub-community
+  clawhub_slug: dsiprouter-skill
+  clawhub_path: mackhendricks/dsiprouter-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dsiprouter
+
+    # Source: ClawHub community skill by mackhendricks
+
+    # Install: clawhub install dsiprouter-skill
+
+    # Path: mackhendricks/dsiprouter-skill
+
+
+    ## Description
+
+    Call the dSIPRouter REST API using the Postman collection (curl + jq).
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bin/dsiprouter.sh
+
+    - postman/dsiprouter.postman_collection.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dsiprouter-skill
+
+    ```'
+examples:
+- description: Install Dsiprouter from ClawHub
+  usage: clawhub install dsiprouter-skill
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: frigate
+title: Frigate
+version: 1.0.3
+description: Access Frigate NVR cameras with session-based authentication. Get live snapshots, retrieve motion events, and
+  fetch stream URLs. Includes CLI helper script for doorbell, driveway, front, east, mailbox, and garage cameras.
+metadata:
+  author: porygonthebot
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - frigate
+  source: clawhub-community
+  clawhub_slug: frigate
+  clawhub_path: porygonthebot/frigate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Frigate
+
+    # Source: ClawHub community skill by porygonthebot
+
+    # Install: clawhub install frigate
+
+    # Path: porygonthebot/frigate
+
+
+    ## Description
+
+    Access Frigate NVR cameras with session-based authentication. Get live snapshots, retrieve motion events, and fetch stream
+    URLs. Includes CLI helper script for doorbell, driveway, front, east, mailbox, and garage cameras.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/frigate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install frigate
+
+    ```'
+examples:
+- description: Install Frigate from ClawHub
+  usage: clawhub install frigate
+schema_version: '1.0'

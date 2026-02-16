@@ -1,0 +1,65 @@
+name: spotify-history
+title: Spotify History
+version: 1.1.0
+description: Access Spotify listening history, top artists/tracks, and get personalized recommendations via the Spotify Web
+  API. Use when fetching a user's recent plays, analyzing music taste, or generating recommendations. Requires one-time OAuth
+  setup.
+metadata:
+  author: braydoncoyer
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - spotify
+  - history
+  source: clawhub-community
+  clawhub_slug: spotify-history
+  clawhub_path: braydoncoyer/spotify-history
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Spotify History
+
+    # Source: ClawHub community skill by braydoncoyer
+
+    # Install: clawhub install spotify-history
+
+    # Path: braydoncoyer/spotify-history
+
+
+    ## Description
+
+    Access Spotify listening history, top artists/tracks, and get personalized recommendations via the Spotify Web API. Use
+    when fetching a user''s recent plays, analyzing music taste, or generating recommendations. Requires one-time OAuth setup.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/setup.sh
+
+    - scripts/spotify-api.py
+
+    - scripts/spotify-auth.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install spotify-history
+
+    ```'
+examples:
+- description: Install Spotify History from ClawHub
+  usage: clawhub install spotify-history
+schema_version: '1.0'

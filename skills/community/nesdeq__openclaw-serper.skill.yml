@@ -1,0 +1,67 @@
+name: openclaw-serper
+title: openclaw-serper
+version: 3.1.1
+description: '>'
+metadata:
+  author: nesdeq
+  category: General
+  tags:
+  - general
+  - openclaw
+  - serper
+  - bash(python3:*)
+  source: clawhub-community
+  clawhub_slug: openclaw-serper
+  clawhub_path: nesdeq/openclaw-serper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(python3:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# openclaw-serper
+
+    # Source: ClawHub community skill by nesdeq
+
+    # Install: clawhub install openclaw-serper
+
+    # Path: nesdeq/openclaw-serper
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.py
+
+    - spec/specification.mdx
+
+
+    ## Allowed Tools
+
+    Bash(python3:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-serper
+
+    ```'
+examples:
+- description: Install openclaw-serper from ClawHub
+  usage: clawhub install openclaw-serper
+schema_version: '1.0'

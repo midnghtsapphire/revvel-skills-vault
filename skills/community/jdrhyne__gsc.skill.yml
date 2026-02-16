@@ -1,0 +1,59 @@
+name: gsc
+title: Google Search Console
+version: 1.0.0
+description: Query Google Search Console for SEO data - search queries, top pages, CTR opportunities, URL inspection, and
+  sitemaps. Use when analyzing search performance, finding optimization opportunities, or checking indexing status.
+metadata:
+  author: jdrhyne
+  category: Search & Research
+  tags:
+  - search-research
+  - gsc
+  source: clawhub-community
+  clawhub_slug: gsc
+  clawhub_path: jdrhyne/gsc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Search Console
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install gsc
+
+    # Path: jdrhyne/gsc
+
+
+    ## Description
+
+    Query Google Search Console for SEO data - search queries, top pages, CTR opportunities, URL inspection, and sitemaps.
+    Use when analyzing search performance, finding optimization opportunities, or checking indexing status.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gsc_auth.py
+
+    - scripts/gsc_query.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gsc
+
+    ```'
+examples:
+- description: Install Google Search Console from ClawHub
+  usage: clawhub install gsc
+schema_version: '1.0'

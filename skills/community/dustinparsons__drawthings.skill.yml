@@ -1,0 +1,61 @@
+name: drawthings
+title: DrawThings Image Generation
+version: 1.0.0
+description: Generate images with DrawThings (Stable Diffusion) via API. Use when creating images from text prompts, running
+  image generation workflows, or batch generating images. DrawThings runs locally on Mac with MLX/CoreML acceleration.
+metadata:
+  author: dustinparsons
+  category: Media & Content
+  tags:
+  - media-content
+  - drawthings
+  source: clawhub-community
+  clawhub_slug: drawthings
+  clawhub_path: dustinparsons/drawthings
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DrawThings Image Generation
+
+    # Source: ClawHub community skill by dustinparsons
+
+    # Install: clawhub install drawthings
+
+    # Path: dustinparsons/drawthings
+
+
+    ## Description
+
+    Generate images with DrawThings (Stable Diffusion) via API. Use when creating images from text prompts, running image
+    generation workflows, or batch generating images. DrawThings runs locally on Mac with MLX/CoreML acceleration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - references/models.md
+
+    - scripts/generate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install drawthings
+
+    ```'
+examples:
+- description: Install DrawThings Image Generation from ClawHub
+  usage: clawhub install drawthings
+schema_version: '1.0'

@@ -1,0 +1,36 @@
+name: alibaba-cloud-model-setup
+title: Alibaba Cloud Model Setup
+version: 0.1.3
+description: 'Configure OpenClaw (including historical Moltbot/Clawdbot paths) to use Alibaba Cloud Model Studio through a
+  strict interactive flow. The first required step is asking whether the user can run terminal commands now; use that answer
+  to choose env-var mode (preferred) or inline mode before collecting '
+metadata:
+  author: extraterrest
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - alibaba
+  - cloud
+  - model
+  - setup
+  source: clawhub-community
+  clawhub_slug: alibaba-cloud-model-setup
+  clawhub_path: extraterrest/alibaba-cloud-model-setup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Alibaba Cloud Model Setup\n# Source: ClawHub community skill by extraterrest\n# Install: clawhub install alibaba-cloud-model-setup\n\
+    # Path: extraterrest/alibaba-cloud-model-setup\n\n## Description\nConfigure OpenClaw (including historical Moltbot/Clawdbot\
+    \ paths) to use Alibaba Cloud Model Studio through a strict interactive flow. The first required step is asking whether\
+    \ the user can run terminal commands now; use that answer to choose env-var mode (preferred) or inline mode before collecting\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n- agents/openai.yaml\n- references/openclaw_alibaba_cloud.md\n- scripts/alibaba_cloud_model_setup.py\n\
+    \n## Installation\n```bash\nclawhub install alibaba-cloud-model-setup\n```"
+examples:
+- description: Install Alibaba Cloud Model Setup from ClawHub
+  usage: clawhub install alibaba-cloud-model-setup
+schema_version: '1.0'

@@ -1,0 +1,69 @@
+name: virtual-remote-desktop
+title: virtual-remote-desktop
+version: 1.0.1
+description: Starts and manages a secure noVNC virtual desktop on headless Linux using Xvfb, x11vnc, and a token-gated noVNC
+  web proxy. Use for remote visual login, captcha handling, and start/stop/status/health operations.
+metadata:
+  author: zhangxin15435
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - virtual
+  - remote
+  - desktop
+  source: clawhub-community
+  clawhub_slug: virtual-remote-desktop
+  clawhub_path: zhangxin15435/virtual-remote-desktop
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# virtual-remote-desktop
+
+    # Source: ClawHub community skill by zhangxin15435
+
+    # Install: clawhub install virtual-remote-desktop
+
+    # Path: zhangxin15435/virtual-remote-desktop
+
+
+    ## Description
+
+    Starts and manages a secure noVNC virtual desktop on headless Linux using Xvfb, x11vnc, and a token-gated noVNC web proxy.
+    Use for remote visual login, captcha handling, and start/stop/status/health operations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/health_vrd.sh
+
+    - scripts/novnc_http_ws_proxy.js
+
+    - scripts/start_vrd.sh
+
+    - scripts/status_vrd.sh
+
+    - scripts/stop_vrd.sh
+
+    - scripts/watch_vrd_idle.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install virtual-remote-desktop
+
+    ```'
+examples:
+- description: Install virtual-remote-desktop from ClawHub
+  usage: clawhub install virtual-remote-desktop
+schema_version: '1.0'

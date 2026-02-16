@@ -1,0 +1,58 @@
+name: security-audit
+title: Security Audit
+version: 1.0.0
+description: Comprehensive security auditing for Clawdbot deployments. Scans for exposed credentials, open ports, weak configs,
+  and vulnerabilities. Auto-fix mode included.
+metadata:
+  author: chandrasekar-r
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - audit
+  source: clawhub-community
+  clawhub_slug: security-audit
+  clawhub_path: chandrasekar-r/security-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Audit
+
+    # Source: ClawHub community skill by chandrasekar-r
+
+    # Install: clawhub install security-audit
+
+    # Path: chandrasekar-r/security-audit
+
+
+    ## Description
+
+    Comprehensive security auditing for Clawdbot deployments. Scans for exposed credentials, open ports, weak configs, and
+    vulnerabilities. Auto-fix mode included.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/audit.cjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-audit
+
+    ```'
+examples:
+- description: Install Security Audit from ClawHub
+  usage: clawhub install security-audit
+schema_version: '1.0'

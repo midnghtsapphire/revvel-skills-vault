@@ -1,0 +1,57 @@
+name: agent-card-provisioning
+title: Agent Card Provisioning
+version: 1.0.0
+description: Provision virtual payment cards for AI agents on-demand. Create single-use or limited cards with spending controls,
+  merchant restrictions, and automatic expiration. Cards are issued instantly when policy allows.
+metadata:
+  author: proxyhq
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - agent
+  - card
+  - provisioning
+  source: clawhub-community
+  clawhub_slug: agent-card-provisioning
+  clawhub_path: proxyhq/agent-card-provisioning
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Card Provisioning
+
+    # Source: ClawHub community skill by proxyhq
+
+    # Install: clawhub install agent-card-provisioning
+
+    # Path: proxyhq/agent-card-provisioning
+
+
+    ## Description
+
+    Provision virtual payment cards for AI agents on-demand. Create single-use or limited cards with spending controls, merchant
+    restrictions, and automatic expiration. Cards are issued instantly when policy allows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-card-provisioning
+
+    ```'
+examples:
+- description: Install Agent Card Provisioning from ClawHub
+  usage: clawhub install agent-card-provisioning
+schema_version: '1.0'

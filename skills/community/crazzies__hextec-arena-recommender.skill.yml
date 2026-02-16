@@ -1,0 +1,78 @@
+name: hextec-arena-recommender
+title: Hextech Arena Recommender
+version: 1.1.1
+description: 海克斯大乱斗英雄推荐器。当用户使用 @海克斯 英雄名 查询海克斯大乱斗英雄推荐时自动触发。
+metadata:
+  author: crazzies
+  category: General
+  tags:
+  - general
+  - hextec
+  - arena
+  - recommender
+  - bash
+  source: clawhub-community
+  clawhub_slug: hextec-arena-recommender
+  clawhub_path: crazzies/hextec-arena-recommender
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hextech Arena Recommender
+
+    # Source: ClawHub community skill by crazzies
+
+    # Install: clawhub install hextec-arena-recommender
+
+    # Path: crazzies/hextec-arena-recommender
+
+
+    ## Description
+
+    海克斯大乱斗英雄推荐器。当用户使用 @海克斯 英雄名 查询海克斯大乱斗英雄推荐时自动触发。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.md
+
+    - references/augments.json
+
+    - references/hero-aliases.json
+
+    - references/hero-data.json
+
+    - references/hero-numbers.json
+
+    - references/item-names.json
+
+    - references/items.json
+
+    - references/items_mapping_new.json
+
+
+    ## Allowed Tools
+
+    Bash
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hextec-arena-recommender
+
+    ```'
+examples:
+- description: Install Hextech Arena Recommender from ClawHub
+  usage: clawhub install hextec-arena-recommender
+schema_version: '1.0'

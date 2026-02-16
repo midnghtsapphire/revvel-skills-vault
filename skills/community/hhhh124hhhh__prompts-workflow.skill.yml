@@ -1,0 +1,68 @@
+name: prompts-workflow
+title: Prompts Workflow
+version: 1.0.0
+description: Automated workflow for collecting, converting, and publishing AI prompts to ClawdHub. Collects from multiple
+  sources (Reddit, GitHub, Hacker News, SearXNG), converts prompts into Clawdbot Skills, and publishes them automatically.
+metadata:
+  author: hhhh124hhhh
+  category: Social Media
+  tags:
+  - social-media
+  - prompts
+  - workflow
+  source: clawhub-community
+  clawhub_slug: prompts-workflow
+  clawhub_path: hhhh124hhhh/prompts-workflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prompts Workflow
+
+    # Source: ClawHub community skill by hhhh124hhhh
+
+    # Install: clawhub install prompts-workflow
+
+    # Path: hhhh124hhhh/prompts-workflow
+
+
+    ## Description
+
+    Automated workflow for collecting, converting, and publishing AI prompts to ClawdHub. Collects from multiple sources (Reddit,
+    GitHub, Hacker News, SearXNG), converts prompts into Clawdbot Skills, and publishes them automatically.
+
+
+    ## Files
+
+    - FIX-SUMMARY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - main.js
+
+    - package.json
+
+    - output/state.json
+
+    - scripts/collect.sh
+
+    - scripts/publish.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prompts-workflow
+
+    ```'
+examples:
+- description: Install Prompts Workflow from ClawHub
+  usage: clawhub install prompts-workflow
+schema_version: '1.0'

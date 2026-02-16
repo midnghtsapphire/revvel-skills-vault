@@ -1,0 +1,59 @@
+name: gitbackup
+title: gitbackup
+version: 0.1.0
+description: Create a local Git bundle backup of the OpenClaw workspace repository. Use when running /gitbackup in Telegram
+  or when the user asks to back up Git history/refs to a local file.
+metadata:
+  author: trumppo
+  category: Social Media
+  tags:
+  - social-media
+  - gitbackup
+  source: clawhub-community
+  clawhub_slug: gitbackup
+  clawhub_path: trumppo/gitbackup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# gitbackup
+
+    # Source: ClawHub community skill by trumppo
+
+    # Install: clawhub install gitbackup
+
+    # Path: trumppo/gitbackup
+
+
+    ## Description
+
+    Create a local Git bundle backup of the OpenClaw workspace repository. Use when running /gitbackup in Telegram or when
+    the user asks to back up Git history/refs to a local file.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - scripts/git-backup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gitbackup
+
+    ```'
+examples:
+- description: Install gitbackup from ClawHub
+  usage: clawhub install gitbackup
+schema_version: '1.0'

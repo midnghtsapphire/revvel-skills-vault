@@ -1,0 +1,60 @@
+name: code-cache
+title: Code Reputation
+version: 1.0.1
+description: Semantic code caching for AI agents. Cache, retrieve, and reuse code from prior agent executions.
+metadata:
+  author: ryx2
+  category: Development & Coding
+  tags:
+  - development-coding
+  - code
+  - cache
+  source: clawhub-community
+  clawhub_slug: code-reputation
+  clawhub_path: ryx2/code-reputation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Code Reputation
+
+    # Source: ClawHub community skill by ryx2
+
+    # Install: clawhub install code-reputation
+
+    # Path: ryx2/code-reputation
+
+
+    ## Description
+
+    Semantic code caching for AI agents. Cache, retrieve, and reuse code from prior agent executions.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - code_cache.py
+
+    - tests/test_skill.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install code-reputation
+
+    ```'
+examples:
+- description: Install Code Reputation from ClawHub
+  usage: clawhub install code-reputation
+schema_version: '1.0'

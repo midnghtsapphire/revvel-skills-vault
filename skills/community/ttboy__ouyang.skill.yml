@@ -1,0 +1,72 @@
+name: jasper-recall
+title: 护肤
+version: 1.0.0
+description: 'Local RAG system for agent memory using ChromaDB and sentence-transformers. Provides semantic search over session
+  logs, daily notes, and memory files. Use when you need persistent memory across sessions, want to search past conversations,
+  or build agents that remember context. Commands: recall "quer'
+metadata:
+  author: ttboy
+  category: Search & Research
+  tags:
+  - search-research
+  - jasper
+  - recall
+  source: clawhub-community
+  clawhub_slug: ouyang
+  clawhub_path: ttboy/ouyang
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 护肤
+
+    # Source: ClawHub community skill by ttboy
+
+    # Install: clawhub install ouyang
+
+    # Path: ttboy/ouyang
+
+
+    ## Description
+
+    Local RAG system for agent memory using ChromaDB and sentence-transformers. Provides semantic search over session logs,
+    daily notes, and memory files. Use when you need persistent memory across sessions, want to search past conversations,
+    or build agents that remember context. Commands: recall "quer
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - cli/jasper-recall.js
+
+    - scripts/digest-sessions.sh
+
+    - scripts/index-digests.py
+
+    - scripts/recall.py
+
+    - src/index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ouyang
+
+    ```'
+examples:
+- description: Install 护肤 from ClawHub
+  usage: clawhub install ouyang
+schema_version: '1.0'

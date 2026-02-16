@@ -1,0 +1,71 @@
+name: prose
+title: Prose
+version: 0.1.0
+description: OpenProse VM skill pack. Activate on any `prose` command, .prose files, or OpenProse mentions; orchestrates multi-agent
+  workflows.
+metadata:
+  author: mondilo1
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - prose
+  source: clawhub-community
+  clawhub_slug: prose
+  clawhub_path: mondilo1/prose
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prose
+
+    # Source: ClawHub community skill by mondilo1
+
+    # Install: clawhub install prose
+
+    # Path: mondilo1/prose
+
+
+    ## Description
+
+    OpenProse VM skill pack. Activate on any `prose` command, .prose files, or OpenProse mentions; orchestrates multi-agent
+    workflows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - alt-borges.md
+
+    - compiler.md
+
+    - help.md
+
+    - prose.md
+
+    - alts/arabian-nights.md
+
+    - alts/borges.md
+
+    - alts/folk.md
+
+    - alts/homer.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prose
+
+    ```'
+examples:
+- description: Install Prose from ClawHub
+  usage: clawhub install prose
+schema_version: '1.0'

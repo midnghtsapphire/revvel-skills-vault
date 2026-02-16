@@ -1,0 +1,65 @@
+name: research-token
+title: Uniswap Research Token
+version: 0.1.0
+description: Research a token's Uniswap liquidity, volume profile, pool distribution, and risk factors. Use when the user
+  asks about a token's tradability, liquidity depth, or wants due diligence.
+metadata:
+  author: wpank
+  category: Search & Research
+  tags:
+  - search-research
+  - research
+  - token
+  - '[task(subagent_type:token-analyst)]'
+  source: clawhub-community
+  clawhub_slug: research-token
+  clawhub_path: wpank/research-token
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:token-analyst)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Research Token
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install research-token
+
+    # Path: wpank/research-token
+
+
+    ## Description
+
+    Research a token''s Uniswap liquidity, volume profile, pool distribution, and risk factors. Use when the user asks about
+    a token''s tradability, liquidity depth, or wants due diligence.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:token-analyst)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install research-token
+
+    ```'
+examples:
+- description: Install Uniswap Research Token from ClawHub
+  usage: clawhub install research-token
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: coach
+title: Coach Skill
+version: 1.0.0
+description: Create personalized triathlon, marathon, and ultra-endurance training plans. Use when athletes ask for training
+  plans, workout schedules, race preparation, or coaching advice. Can sync with Strava to analyze training history, or work
+  from manually provided fitness data. Generates periodized plans wi
+metadata:
+  author: shiv19
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - coach
+  source: clawhub-community
+  clawhub_slug: clawd-coach
+  clawhub_path: shiv19/clawd-coach
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Coach Skill
+
+    # Source: ClawHub community skill by shiv19
+
+    # Install: clawhub install clawd-coach
+
+    # Path: shiv19/clawd-coach
+
+
+    ## Description
+
+    Create personalized triathlon, marathon, and ultra-endurance training plans. Use when athletes ask for training plans,
+    workout schedules, race preparation, or coaching advice. Can sync with Strava to analyze training history, or work from
+    manually provided fitness data. Generates periodized plans wi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - reference/assessment.md
+
+    - reference/load-management.md
+
+    - reference/periodization.md
+
+    - reference/queries.md
+
+    - reference/race-day.md
+
+    - reference/workouts.md
+
+    - reference/zones.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawd-coach
+
+    ```'
+examples:
+- description: Install Coach Skill from ClawHub
+  usage: clawhub install clawd-coach
+schema_version: '1.0'

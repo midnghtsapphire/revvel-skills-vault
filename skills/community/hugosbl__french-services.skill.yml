@@ -1,0 +1,63 @@
+name: french-services
+title: French Services
+version: 1.0.0
+description: ''
+metadata:
+  author: hugosbl
+  category: General
+  tags:
+  - general
+  - french
+  - services
+  source: clawhub-community
+  clawhub_slug: french-services
+  clawhub_path: hugosbl/french-services
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# French Services
+
+    # Source: ClawHub community skill by hugosbl
+
+    # Install: clawhub install french-services
+
+    # Path: hugosbl/french-services
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-setup.md
+
+    - scripts/laposte.py
+
+    - scripts/meteo.py
+
+    - scripts/ratp.py
+
+    - scripts/sncf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install french-services
+
+    ```'
+examples:
+- description: Install French Services from ClawHub
+  usage: clawhub install french-services
+schema_version: '1.0'

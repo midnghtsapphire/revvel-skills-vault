@@ -1,0 +1,71 @@
+name: gsd
+title: gsd
+version: 1.1.0
+description: Get Shit Done - Full project planning and execution workflow. Handles project initialization with deep context
+  gathering, automated research, roadmap creation, phase planning, and execution with verification.
+metadata:
+  author: glittercowboy
+  category: Search & Research
+  tags:
+  - search-research
+  - gsd
+  source: clawhub-community
+  clawhub_slug: gsd
+  clawhub_path: glittercowboy/gsd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# gsd
+
+    # Source: ClawHub community skill by glittercowboy
+
+    # Install: clawhub install gsd
+
+    # Path: glittercowboy/gsd
+
+
+    ## Description
+
+    Get Shit Done - Full project planning and execution workflow. Handles project initialization with deep context gathering,
+    automated research, roadmap creation, phase planning, and execution with verification.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/gsd-codebase-mapper.md
+
+    - agents/gsd-debugger.md
+
+    - agents/gsd-executor.md
+
+    - agents/gsd-integration-checker.md
+
+    - agents/gsd-phase-researcher.md
+
+    - agents/gsd-plan-checker.md
+
+    - agents/gsd-planner.md
+
+    - agents/gsd-project-researcher.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gsd
+
+    ```'
+examples:
+- description: Install gsd from ClawHub
+  usage: clawhub install gsd
+schema_version: '1.0'

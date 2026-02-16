@@ -1,0 +1,66 @@
+name: wiki-gen
+title: Wiki Gen
+version: 1.0.0
+description: Generate a project wiki from your codebase. Use when creating documentation.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - wiki
+  - gen
+  source: clawhub-community
+  clawhub_slug: wiki-gen
+  clawhub_path: lxgicstudios/wiki-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wiki Gen
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install wiki-gen
+
+    # Path: lxgicstudios/wiki-gen
+
+
+    ## Description
+
+    Generate a project wiki from your codebase. Use when creating documentation.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wiki-gen
+
+    ```'
+examples:
+- description: Install Wiki Gen from ClawHub
+  usage: clawhub install wiki-gen
+schema_version: '1.0'

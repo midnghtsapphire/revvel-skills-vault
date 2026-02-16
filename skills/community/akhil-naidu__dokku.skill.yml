@@ -1,0 +1,73 @@
+name: dokku
+title: dokku
+version: 0.0.1
+description: 'Installs, upgrades, and uses Dokku to create apps, deploy, run one-off/background tasks, and clean up containers.
+  Use when the user asks to install or upgrade Dokku, deploy to Dokku, install an app, run something in the background, or
+  clean up Dokku/containers. Trigger terms: dokku, install dokku, u'
+metadata:
+  author: akhil-naidu
+  category: Development & Coding
+  tags:
+  - development-coding
+  - dokku
+  source: clawhub-community
+  clawhub_slug: dokku
+  clawhub_path: akhil-naidu/dokku
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# dokku
+
+    # Source: ClawHub community skill by akhil-naidu
+
+    # Install: clawhub install dokku
+
+    # Path: akhil-naidu/dokku
+
+
+    ## Description
+
+    Installs, upgrades, and uses Dokku to create apps, deploy, run one-off/background tasks, and clean up containers. Use
+    when the user asks to install or upgrade Dokku, deploy to Dokku, install an app, run something in the background, or clean
+    up Dokku/containers. Trigger terms: dokku, install dokku, u
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - apps/commands.md
+
+    - certs/commands.md
+
+    - cleanup/commands.md
+
+    - config/commands.md
+
+    - domains/commands.md
+
+    - git/commands.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dokku
+
+    ```'
+examples:
+- description: Install dokku from ClawHub
+  usage: clawhub install dokku
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: pget
+title: Pget
+version: 1.0.0
+description: Parallel file download and optional tar extraction using the pget CLI (single URL or multifile manifest). Use
+  when you need high‑throughput downloads from HTTP(S)/S3/GCS, want to split a large file into chunks for speed, or want to
+  download and extract a .tar/.tar.gz in one step.
+metadata:
+  author: kelvincai522
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - pget
+  source: clawhub-community
+  clawhub_slug: pget
+  clawhub_path: kelvincai522/pget
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pget
+
+    # Source: ClawHub community skill by kelvincai522
+
+    # Install: clawhub install pget
+
+    # Path: kelvincai522/pget
+
+
+    ## Description
+
+    Parallel file download and optional tar extraction using the pget CLI (single URL or multifile manifest). Use when you
+    need high‑throughput downloads from HTTP(S)/S3/GCS, want to split a large file into chunks for speed, or want to download
+    and extract a .tar/.tar.gz in one step.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/pget.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pget
+
+    ```'
+examples:
+- description: Install Pget from ClawHub
+  usage: clawhub install pget
+schema_version: '1.0'

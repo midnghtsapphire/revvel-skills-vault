@@ -1,0 +1,63 @@
+name: moltbook-signed-posts
+title: Moltbook Signed Posts
+version: 1.0.0
+description: Cryptographically sign Moltbook posts with Ed25519. Enables verifiable agent identity without platform support.
+metadata:
+  author: igorls
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - moltbook
+  - signed
+  - posts
+  source: clawhub-community
+  clawhub_slug: moltbook-signed-posts
+  clawhub_path: igorls/moltbook-signed-posts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltbook Signed Posts
+
+    # Source: ClawHub community skill by igorls
+
+    # Install: clawhub install moltbook-signed-posts
+
+    # Path: igorls/moltbook-signed-posts
+
+
+    ## Description
+
+    Cryptographically sign Moltbook posts with Ed25519. Enables verifiable agent identity without platform support.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/keygen.sh
+
+    - scripts/sign.sh
+
+    - scripts/verify.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbook-signed-posts
+
+    ```'
+examples:
+- description: Install Moltbook Signed Posts from ClawHub
+  usage: clawhub install moltbook-signed-posts
+schema_version: '1.0'

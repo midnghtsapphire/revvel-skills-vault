@@ -1,0 +1,62 @@
+name: camelcamelcamel-alerts
+title: CamelCamelCamel Alerts
+version: 1.0.0
+description: Monitor CamelCamelCamel price drop alerts via RSS and send Telegram notifications when items go on sale. Use
+  when setting up automatic price tracking for Amazon products with CamelCamelCamel price alerts.
+metadata:
+  author: jgramajo4
+  category: Social Media
+  tags:
+  - social-media
+  - camelcamelcamel
+  - alerts
+  source: clawhub-community
+  clawhub_slug: camelcamelcamel-alerts
+  clawhub_path: jgramajo4/camelcamelcamel-alerts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CamelCamelCamel Alerts
+
+    # Source: ClawHub community skill by jgramajo4
+
+    # Install: clawhub install camelcamelcamel-alerts
+
+    # Path: jgramajo4/camelcamelcamel-alerts
+
+
+    ## Description
+
+    Monitor CamelCamelCamel price drop alerts via RSS and send Telegram notifications when items go on sale. Use when setting
+    up automatic price tracking for Amazon products with CamelCamelCamel price alerts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/SETUP.md
+
+    - scripts/fetch_rss.py
+
+    - scripts/notify.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install camelcamelcamel-alerts
+
+    ```'
+examples:
+- description: Install CamelCamelCamel Alerts from ClawHub
+  usage: clawhub install camelcamelcamel-alerts
+schema_version: '1.0'

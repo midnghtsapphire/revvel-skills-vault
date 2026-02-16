@@ -1,0 +1,72 @@
+name: chia-walletconnect
+title: Chia WalletConnect - Telegram Verification
+version: 1.0.0
+description: Telegram Web App for Chia wallet verification via WalletConnect and Sage. Enables cryptographic proof of wallet
+  ownership through signature verification using MintGarden API.
+metadata:
+  author: koba42corp
+  category: Social Media
+  tags:
+  - social-media
+  - chia
+  - walletconnect
+  source: clawhub-community
+  clawhub_slug: chia-walletconnect
+  clawhub_path: koba42corp/chia-walletconnect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Chia WalletConnect - Telegram Verification
+
+    # Source: ClawHub community skill by koba42corp
+
+    # Install: clawhub install chia-walletconnect
+
+    # Path: koba42corp/chia-walletconnect
+
+
+    ## Description
+
+    Telegram Web App for Chia wallet verification via WalletConnect and Sage. Enables cryptographic proof of wallet ownership
+    through signature verification using MintGarden API.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.js
+
+    - package-lock.json
+
+    - package.json
+
+    - lib/challenge.js
+
+    - lib/verify.js
+
+    - server/index.js
+
+    - webapp/app.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install chia-walletconnect
+
+    ```'
+examples:
+- description: Install Chia WalletConnect - Telegram Verification from ClawHub
+  usage: clawhub install chia-walletconnect
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: fal
+title: fal
+version: 1.0.1
+description: Search, explore, and run fal.ai generative AI models (image generation, video, audio, 3D). Use when user wants
+  to generate images, videos, or other media with AI models.
+metadata:
+  author: apekshik
+  category: Search & Research
+  tags:
+  - search-research
+  - fal
+  - bash(curl *)
+  - bash(jq *)
+  - bash(mkdir *)
+  - read
+  - write
+  source: clawhub-community
+  clawhub_slug: fal
+  clawhub_path: apekshik/fal
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(curl *)
+  - Bash(jq *)
+  - Bash(mkdir *)
+  - Read
+  - Write
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# fal
+
+    # Source: ClawHub community skill by apekshik
+
+    # Install: clawhub install fal
+
+    # Path: apekshik/fal
+
+
+    ## Description
+
+    Search, explore, and run fal.ai generative AI models (image generation, video, audio, 3D). Use when user wants to generate
+    images, videos, or other media with AI models.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - models-reference.md
+
+
+    ## Allowed Tools
+
+    Bash(curl *), Bash(jq *), Bash(mkdir *), Read, Write
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fal
+
+    ```'
+examples:
+- description: Install fal from ClawHub
+  usage: clawhub install fal
+schema_version: '1.0'

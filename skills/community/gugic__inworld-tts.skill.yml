@@ -1,0 +1,58 @@
+name: inworld-tts
+title: Inworld TTS
+version: 1.0.0
+description: Text-to-speech via Inworld.ai API. Use when generating voice audio from text, creating spoken responses, or converting
+  text to MP3/audio files. Supports multiple voices, speaking rates, and streaming for long text.
+metadata:
+  author: gugic
+  category: Media & Content
+  tags:
+  - media-content
+  - inworld
+  - tts
+  source: clawhub-community
+  clawhub_slug: inworld-tts
+  clawhub_path: gugic/inworld-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Inworld TTS
+
+    # Source: ClawHub community skill by gugic
+
+    # Install: clawhub install inworld-tts
+
+    # Path: gugic/inworld-tts
+
+
+    ## Description
+
+    Text-to-speech via Inworld.ai API. Use when generating voice audio from text, creating spoken responses, or converting
+    text to MP3/audio files. Supports multiple voices, speaking rates, and streaming for long text.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tts.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install inworld-tts
+
+    ```'
+examples:
+- description: Install Inworld TTS from ClawHub
+  usage: clawhub install inworld-tts
+schema_version: '1.0'

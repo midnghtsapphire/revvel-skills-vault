@@ -1,0 +1,63 @@
+name: prepper
+title: Prepper Skill
+version: 1.0.0
+description: Consult the ollama dolphin-llama3 model for survival, emergency preparedness, and prepper-related questions.
+  Use when users ask about disaster recovery, emergency supplies, survival techniques, water purification, shelter, food preservation,
+  first aid, medical emergencies, repair, agriculture, elect
+metadata:
+  author: jlevitsk
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - prepper
+  source: clawhub-community
+  clawhub_slug: prepper
+  clawhub_path: jlevitsk/prepper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prepper Skill
+
+    # Source: ClawHub community skill by jlevitsk
+
+    # Install: clawhub install prepper
+
+    # Path: jlevitsk/prepper
+
+
+    ## Description
+
+    Consult the ollama dolphin-llama3 model for survival, emergency preparedness, and prepper-related questions. Use when
+    users ask about disaster recovery, emergency supplies, survival techniques, water purification, shelter, food preservation,
+    first aid, medical emergencies, repair, agriculture, elect
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/hybrid-validation.md
+
+    - references/setup.md
+
+    - scripts/query_prepper_model.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prepper
+
+    ```'
+examples:
+- description: Install Prepper Skill from ClawHub
+  usage: clawhub install prepper
+schema_version: '1.0'

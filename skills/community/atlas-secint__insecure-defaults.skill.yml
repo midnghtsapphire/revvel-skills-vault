@@ -1,0 +1,59 @@
+name: insecure-defaults
+title: Insecure Defaults Detection
+version: 1.0.0
+description: '"Detects fail-open insecure defaults (hardcoded secrets, weak auth, permissive security) that allow apps to
+  run insecurely in production. Use when auditing security, reviewing config management, or analyzing environment variable
+  handling."'
+metadata:
+  author: atlas-secint
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - insecure
+  - defaults
+  source: clawhub-community
+  clawhub_slug: insecure-defaults
+  clawhub_path: atlas-secint/insecure-defaults
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Insecure Defaults Detection
+
+    # Source: ClawHub community skill by atlas-secint
+
+    # Install: clawhub install insecure-defaults
+
+    # Path: atlas-secint/insecure-defaults
+
+
+    ## Description
+
+    "Detects fail-open insecure defaults (hardcoded secrets, weak auth, permissive security) that allow apps to run insecurely
+    in production. Use when auditing security, reviewing config management, or analyzing environment variable handling."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install insecure-defaults
+
+    ```'
+examples:
+- description: Install Insecure Defaults Detection from ClawHub
+  usage: clawhub install insecure-defaults
+schema_version: '1.0'

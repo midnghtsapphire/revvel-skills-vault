@@ -1,0 +1,64 @@
+name: clawaifu_-_openclaw_waifu
+title: clawaifu - OpenClaw Waifu
+version: 1.0.14
+description: Your AI waifu companion that sends anime-style selfies
+metadata:
+  author: swancho
+  category: General
+  tags:
+  - general
+  - clawaifu
+  - openclaw
+  - waifu
+  - bash(grok-selfie.sh:*) read
+  source: clawhub-community
+  clawhub_slug: clawaifu-selfie
+  clawhub_path: swancho/clawaifu-selfie
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(grok-selfie.sh:*) Read
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawaifu - OpenClaw Waifu
+
+    # Source: ClawHub community skill by swancho
+
+    # Install: clawhub install clawaifu-selfie
+
+    # Path: swancho/clawaifu-selfie
+
+
+    ## Description
+
+    Your AI waifu companion that sends anime-style selfies
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - grok-selfie.sh
+
+
+    ## Allowed Tools
+
+    Bash(grok-selfie.sh:*) Read
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawaifu-selfie
+
+    ```'
+examples:
+- description: Install clawaifu - OpenClaw Waifu from ClawHub
+  usage: clawhub install clawaifu-selfie
+schema_version: '1.0'

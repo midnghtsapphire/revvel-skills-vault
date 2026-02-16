@@ -1,0 +1,68 @@
+name: pvpc-spain
+title: PVPC España
+version: 1.0.0
+description: Consulta y optimiza precios de electricidad PVPC en España (tarifa 2.0TD para usuarios domésticos). Usa cuando
+  necesites (1) precio actual con contexto (alto/medio/bajo vs día), (2) identificar periodos valle/llano/punta según horario,
+  (3) encontrar las horas más baratas del día, (4) optimizar cuánd
+metadata:
+  author: didelco
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - pvpc
+  - spain
+  source: clawhub-community
+  clawhub_slug: pvpc-spain
+  clawhub_path: didelco/pvpc-spain
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PVPC España
+
+    # Source: ClawHub community skill by didelco
+
+    # Install: clawhub install pvpc-spain
+
+    # Path: didelco/pvpc-spain
+
+
+    ## Description
+
+    Consulta y optimiza precios de electricidad PVPC en España (tarifa 2.0TD para usuarios domésticos). Usa cuando necesites
+    (1) precio actual con contexto (alto/medio/bajo vs día), (2) identificar periodos valle/llano/punta según horario, (3)
+    encontrar las horas más baratas del día, (4) optimizar cuánd
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/find_cheap_ranges.py
+
+    - scripts/get_pvpc.py
+
+    - scripts/optimize_appliance.py
+
+    - scripts/precio_referencia.py
+
+    - scripts/tarifa_periodos.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pvpc-spain
+
+    ```'
+examples:
+- description: Install PVPC España from ClawHub
+  usage: clawhub install pvpc-spain
+schema_version: '1.0'

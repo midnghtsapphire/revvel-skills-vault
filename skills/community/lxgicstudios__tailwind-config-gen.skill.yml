@@ -1,0 +1,67 @@
+name: tailwind-config-gen
+title: Tailwind Config Generator
+version: 1.0.1
+description: Generate tailwind.config.js from brand colors. Use when setting up Tailwind.
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - tailwind
+  - config
+  - gen
+  source: clawhub-community
+  clawhub_slug: tailwind-config-gen
+  clawhub_path: lxgicstudios/tailwind-config-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tailwind Config Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install tailwind-config-gen
+
+    # Path: lxgicstudios/tailwind-config-gen
+
+
+    ## Description
+
+    Generate tailwind.config.js from brand colors. Use when setting up Tailwind.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tailwind-config-gen
+
+    ```'
+examples:
+- description: Install Tailwind Config Generator from ClawHub
+  usage: clawhub install tailwind-config-gen
+schema_version: '1.0'

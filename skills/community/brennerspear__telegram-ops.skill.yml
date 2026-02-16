@@ -1,0 +1,62 @@
+name: telegram-ops
+title: Telegram Ops
+version: 1.0.0
+description: Telegram Bot API operations for forum management. Use for creating/editing/archiving forum topics, setting topic
+  icons, managing Telegram groups via Bot API. Use when archiving channels/topics. Requires bot token from OpenClaw config.
+metadata:
+  author: brennerspear
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - ops
+  source: clawhub-community
+  clawhub_slug: telegram-ops
+  clawhub_path: brennerspear/telegram-ops
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Ops
+
+    # Source: ClawHub community skill by brennerspear
+
+    # Install: clawhub install telegram-ops
+
+    # Path: brennerspear/telegram-ops
+
+
+    ## Description
+
+    Telegram Bot API operations for forum management. Use for creating/editing/archiving forum topics, setting topic icons,
+    managing Telegram groups via Bot API. Use when archiving channels/topics. Requires bot token from OpenClaw config.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/emoji-ids.md
+
+    - scripts/archive_topic.sh
+
+    - scripts/create_topic.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-ops
+
+    ```'
+examples:
+- description: Install Telegram Ops from ClawHub
+  usage: clawhub install telegram-ops
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: stock-evaluator-v3
+title: Stock Evaluator
+version: 1.0.0
+description: Comprehensive evaluation of potential stock investments combining valuation analysis, fundamental research, technical
+  assessment, and clear buy/hold/sell recommendations. Use when the user asks about buying a stock, evaluating investment
+  opportunities, analyzing watchlist candidates, or requests sto
+metadata:
+  author: demandgap
+  category: Search & Research
+  tags:
+  - search-research
+  - stock
+  - evaluator
+  source: clawhub-community
+  clawhub_slug: stock-evaluator
+  clawhub_path: demandgap/stock-evaluator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stock Evaluator
+
+    # Source: ClawHub community skill by demandgap
+
+    # Install: clawhub install stock-evaluator
+
+    # Path: demandgap/stock-evaluator
+
+
+    ## Description
+
+    Comprehensive evaluation of potential stock investments combining valuation analysis, fundamental research, technical
+    assessment, and clear buy/hold/sell recommendations. Use when the user asks about buying a stock, evaluating investment
+    opportunities, analyzing watchlist candidates, or requests sto
+
+
+    ## Files
+
+    - ADVANCED-METRICS-GUIDE.md
+
+    - DASHBOARD-GUIDE.md
+
+    - EVALUATION-WORKFLOWS.md
+
+    - SKILL.md
+
+    - VALUATION-GUIDE.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stock-evaluator
+
+    ```'
+examples:
+- description: Install Stock Evaluator from ClawHub
+  usage: clawhub install stock-evaluator
+schema_version: '1.0'

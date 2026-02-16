@@ -1,0 +1,70 @@
+name: autotask-mcp
+title: Autotask MCP Server
+version: 1.0.1
+description: Use when you need to interact with Datto/Kaseya Autotask PSA via an MCP server (tickets, companies, contacts,
+  projects, time entries, notes, attachments, and queries). Includes Docker Compose + helper scripts to pull/run the Autotask
+  MCP server locally and configure required environment variables.
+metadata:
+  author: inlo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - autotask
+  - mcp
+  source: clawhub-community
+  clawhub_slug: autotask-mcp
+  clawhub_path: inlo/autotask-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Autotask MCP Server
+
+    # Source: ClawHub community skill by inlo
+
+    # Install: clawhub install autotask-mcp
+
+    # Path: inlo/autotask-mcp
+
+
+    ## Description
+
+    Use when you need to interact with Datto/Kaseya Autotask PSA via an MCP server (tickets, companies, contacts, projects,
+    time entries, notes, attachments, and queries). Includes Docker Compose + helper scripts to pull/run the Autotask MCP
+    server locally and configure required environment variables.
+
+
+    ## Files
+
+    - .env.example.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docker-compose.yml
+
+    - scripts/mcp_down.sh
+
+    - scripts/mcp_logs.sh
+
+    - scripts/mcp_pull.sh
+
+    - scripts/mcp_up.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install autotask-mcp
+
+    ```'
+examples:
+- description: Install Autotask MCP Server from ClawHub
+  usage: clawhub install autotask-mcp
+schema_version: '1.0'

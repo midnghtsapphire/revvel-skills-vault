@@ -1,0 +1,55 @@
+name: chirp
+title: chirp
+version: 1.0.0
+description: '"X/Twitter CLI using OpenClaw browser tool. Use when the user wants to interact with X/Twitter: reading timeline,
+  posting tweets, liking, retweeting, replying, or searching. Alternative to bird CLI for environments without Homebrew."'
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - chirp
+  source: clawhub-community
+  clawhub_slug: bobagent-chirp
+  clawhub_path: bobdevibecoder/bobagent-chirp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# chirp
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-chirp
+
+    # Path: bobdevibecoder/bobagent-chirp
+
+
+    ## Description
+
+    "X/Twitter CLI using OpenClaw browser tool. Use when the user wants to interact with X/Twitter: reading timeline, posting
+    tweets, liking, retweeting, replying, or searching. Alternative to bird CLI for environments without Homebrew."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-chirp
+
+    ```'
+examples:
+- description: Install chirp from ClawHub
+  usage: clawhub install bobagent-chirp
+schema_version: '1.0'

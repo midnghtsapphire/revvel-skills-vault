@@ -1,0 +1,64 @@
+name: session-memory
+title: Session Memory
+version: 1.0.0
+description: Persistent memory toolkit for AI agents. Save context, recall insights, track decisions across sessions.
+metadata:
+  author: swaylq
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - session
+  - memory
+  source: clawhub-community
+  clawhub_slug: session-memory
+  clawhub_path: swaylq/session-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Session Memory
+
+    # Source: ClawHub community skill by swaylq
+
+    # Install: clawhub install session-memory
+
+    # Path: swaylq/session-memory
+
+
+    ## Description
+
+    Persistent memory toolkit for AI agents. Save context, recall insights, track decisions across sessions.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/daily.sh
+
+    - scripts/recall.sh
+
+    - scripts/save.sh
+
+    - scripts/topics.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install session-memory
+
+    ```'
+examples:
+- description: Install Session Memory from ClawHub
+  usage: clawhub install session-memory
+schema_version: '1.0'

@@ -1,0 +1,33 @@
+name: proton-pass
+title: Proton Pass CLI
+version: 1.1.0
+description: 'Manage Proton Pass vaults, items (logins, SSH keys, aliases, notes), passwords, SSH agent integration, and secret
+  injection into applications. Use when working with Proton Pass for password management, SSH key storage, secret injection
+  (run commands with secrets, inject into templates), environment '
+metadata:
+  author: kakatkarakshay
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - proton
+  - pass
+  source: clawhub-community
+  clawhub_slug: proton-pass
+  clawhub_path: kakatkarakshay/proton-pass
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Proton Pass CLI\n# Source: ClawHub community skill by kakatkarakshay\n# Install: clawhub install proton-pass\n\
+    # Path: kakatkarakshay/proton-pass\n\n## Description\nManage Proton Pass vaults, items (logins, SSH keys, aliases, notes),\
+    \ passwords, SSH agent integration, and secret injection into applications. Use when working with Proton Pass for password\
+    \ management, SSH key storage, secret injection (run commands with secrets, inject into templates), environment \n\n##\
+    \ Files\n- SKILL.md\n- _meta.json\n\n## Installation\n```bash\nclawhub install proton-pass\n```"
+examples:
+- description: Install Proton Pass CLI from ClawHub
+  usage: clawhub install proton-pass
+schema_version: '1.0'

@@ -1,0 +1,67 @@
+name: gold_price_mcp
+title: Gold Price Mcp
+version: 1.0.0
+description: Get current Thai gold prices (gold ornament and gold bar prices) with latest update time.
+metadata:
+  author: jjannet
+  category: Development & Coding
+  tags:
+  - development-coding
+  - gold
+  - price
+  - mcp
+  source: clawhub-community
+  clawhub_slug: gold-price-mcp
+  clawhub_path: jjannet/gold-price-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gold Price Mcp
+
+    # Source: ClawHub community skill by jjannet
+
+    # Install: clawhub install gold-price-mcp
+
+    # Path: jjannet/gold-price-mcp
+
+
+    ## Description
+
+    Get current Thai gold prices (gold ornament and gold bar prices) with latest update time.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - claude_desktop_config.json
+
+    - gold-price-mcp.py
+
+    - readme.md
+
+    - requirements.txt
+
+    - run.sh
+
+    - test_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gold-price-mcp
+
+    ```'
+examples:
+- description: Install Gold Price Mcp from ClawHub
+  usage: clawhub install gold-price-mcp
+schema_version: '1.0'

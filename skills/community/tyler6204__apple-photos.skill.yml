@@ -1,0 +1,70 @@
+name: apple-photos
+title: Apple Photos
+version: 1.0.0
+description: Apple Photos.app integration for macOS. List albums, browse photos, search by date/person/content, export photos.
+metadata:
+  author: tyler6204
+  category: Search & Research
+  tags:
+  - search-research
+  - apple
+  - photos
+  source: clawhub-community
+  clawhub_slug: apple-photos
+  clawhub_path: tyler6204/apple-photos
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Photos
+
+    # Source: ClawHub community skill by tyler6204
+
+    # Install: clawhub install apple-photos
+
+    # Path: tyler6204/apple-photos
+
+
+    ## Description
+
+    Apple Photos.app integration for macOS. List albums, browse photos, search by date/person/content, export photos.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/photos-count.sh
+
+    - scripts/photos-export.sh
+
+    - scripts/photos-info.sh
+
+    - scripts/photos-list-albums.sh
+
+    - scripts/photos-list-people.sh
+
+    - scripts/photos-recent.sh
+
+    - scripts/photos-search-content.sh
+
+    - scripts/photos-search-date.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-photos
+
+    ```'
+examples:
+- description: Install Apple Photos from ClawHub
+  usage: clawhub install apple-photos
+schema_version: '1.0'

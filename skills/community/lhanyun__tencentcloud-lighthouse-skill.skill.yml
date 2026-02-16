@@ -1,0 +1,61 @@
+name: tencentcloud-lighthouse-skill
+title: Tencent Cloud Lighthouse
+version: 1.0.0
+description: Manage Tencent Cloud Lighthouse (轻量应用服务器) — auto-setup mcporter + MCP, query instances, monitoring & alerting,
+  self-diagnostics, firewall, snapshots, remote command execution (TAT). Use when user asks about Lighthouse or 轻量应用服务器. NOT
+  for CVM or other cloud server types.
+metadata:
+  author: lhanyun
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - tencentcloud
+  - lighthouse
+  - skill
+  source: clawhub-community
+  clawhub_slug: tencentcloud-lighthouse-skill
+  clawhub_path: lhanyun/tencentcloud-lighthouse-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tencent Cloud Lighthouse
+
+    # Source: ClawHub community skill by lhanyun
+
+    # Install: clawhub install tencentcloud-lighthouse-skill
+
+    # Path: lhanyun/tencentcloud-lighthouse-skill
+
+
+    ## Description
+
+    Manage Tencent Cloud Lighthouse (轻量应用服务器) — auto-setup mcporter + MCP, query instances, monitoring & alerting, self-diagnostics,
+    firewall, snapshots, remote command execution (TAT). Use when user asks about Lighthouse or 轻量应用服务器. NOT for CVM or other
+    cloud server types.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tencentcloud-lighthouse-skill
+
+    ```'
+examples:
+- description: Install Tencent Cloud Lighthouse from ClawHub
+  usage: clawhub install tencentcloud-lighthouse-skill
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: searxng-search
+title: Searxng Search
+version: 0.1.1
+description: Web search using SearXNG instance via MCP. Provides web search capability for agents with configurable SearXNG
+  endpoint.
+metadata:
+  author: zfanmy
+  category: Search & Research
+  tags:
+  - search-research
+  - searxng
+  - search
+  source: clawhub-community
+  clawhub_slug: searxng-search-2
+  clawhub_path: zfanmy/searxng-search-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Searxng Search
+
+    # Source: ClawHub community skill by zfanmy
+
+    # Install: clawhub install searxng-search-2
+
+    # Path: zfanmy/searxng-search-2
+
+
+    ## Description
+
+    Web search using SearXNG instance via MCP. Provides web search capability for agents with configurable SearXNG endpoint.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - mcp-server.py
+
+    - searxng_search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install searxng-search-2
+
+    ```'
+examples:
+- description: Install Searxng Search from ClawHub
+  usage: clawhub install searxng-search-2
+schema_version: '1.0'

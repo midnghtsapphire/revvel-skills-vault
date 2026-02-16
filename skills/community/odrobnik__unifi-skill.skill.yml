@@ -1,0 +1,61 @@
+name: unifi
+title: UniFi Site Manager
+version: 1.0.2
+description: Monitor UniFi network infrastructure via the UniFi Site Manager API. Use to list hosts/sites/devices/APs and
+  get high-level client/device counts.
+metadata:
+  author: odrobnik
+  category: Development & Coding
+  tags:
+  - development-coding
+  - unifi
+  source: clawhub-community
+  clawhub_slug: unifi-skill
+  clawhub_path: odrobnik/unifi-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UniFi Site Manager
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install unifi-skill
+
+    # Path: odrobnik/unifi-skill
+
+
+    ## Description
+
+    Monitor UniFi network infrastructure via the UniFi Site Manager API. Use to list hosts/sites/devices/APs and get high-level
+    client/device counts.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/unifi.py
+
+    - scripts/unifi_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unifi-skill
+
+    ```'
+examples:
+- description: Install UniFi Site Manager from ClawHub
+  usage: clawhub install unifi-skill
+schema_version: '1.0'

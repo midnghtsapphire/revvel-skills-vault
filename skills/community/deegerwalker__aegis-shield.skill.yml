@@ -1,0 +1,60 @@
+name: aegis-shield
+title: Aegis Shield
+version: 0.1.0
+description: Prompt-injection and data-exfiltration screening for untrusted text. Use before summarizing web/email/social
+  content, before replying, and especially before writing anything to memory. Provides a safe memory append workflow (scan
+  → lint → accept or quarantine).
+metadata:
+  author: deegerwalker
+  category: Social Media
+  tags:
+  - social-media
+  - aegis
+  - shield
+  source: clawhub-community
+  clawhub_slug: aegis-shield
+  clawhub_path: deegerwalker/aegis-shield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Aegis Shield
+
+    # Source: ClawHub community skill by deegerwalker
+
+    # Install: clawhub install aegis-shield
+
+    # Path: deegerwalker/aegis-shield
+
+
+    ## Description
+
+    Prompt-injection and data-exfiltration screening for untrusted text. Use before summarizing web/email/social content,
+    before replying, and especially before writing anything to memory. Provides a safe memory append workflow (scan → lint
+    → accept or quarantine).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - openclaw-safe-memory-append.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aegis-shield
+
+    ```'
+examples:
+- description: Install Aegis Shield from ClawHub
+  usage: clawhub install aegis-shield
+schema_version: '1.0'

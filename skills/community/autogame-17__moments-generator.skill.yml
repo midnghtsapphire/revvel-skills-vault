@@ -1,0 +1,62 @@
+name: moments-generator
+title: Moments Generator
+version: 1.0.0
+description: Generate a fake WeChat Moments (朋友圈) screenshot image. Use when user wants to simulate a social media post with
+  avatar, text, images, likes, and comments.
+metadata:
+  author: autogame-17
+  category: Media & Content
+  tags:
+  - media-content
+  - moments
+  - generator
+  source: clawhub-community
+  clawhub_slug: moments-generator
+  clawhub_path: autogame-17/moments-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moments Generator
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install moments-generator
+
+    # Path: autogame-17/moments-generator
+
+
+    ## Description
+
+    Generate a fake WeChat Moments (朋友圈) screenshot image. Use when user wants to simulate a social media post with avatar,
+    text, images, likes, and comments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/generate.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moments-generator
+
+    ```'
+examples:
+- description: Install Moments Generator from ClawHub
+  usage: clawhub install moments-generator
+schema_version: '1.0'

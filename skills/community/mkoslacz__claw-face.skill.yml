@@ -1,0 +1,67 @@
+name: clawface
+title: ClawFace
+version: 1.0.0
+description: Floating avatar widget for AI agents showing emotions, actions, and visual effects. Give your OpenClaw a face!
+  Use when the user wants visual feedback, a floating status window, or to see agent emotions while it works. Triggers on
+  "show avatar", "uruchom avatara", "pokaż avatara", "agent face", "vis
+metadata:
+  author: mkoslacz
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - clawface
+  source: clawhub-community
+  clawhub_slug: claw-face
+  clawhub_path: mkoslacz/claw-face
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawFace
+
+    # Source: ClawHub community skill by mkoslacz
+
+    # Install: clawhub install claw-face
+
+    # Path: mkoslacz/claw-face
+
+
+    ## Description
+
+    Floating avatar widget for AI agents showing emotions, actions, and visual effects. Give your OpenClaw a face! Use when
+    the user wants visual feedback, a floating status window, or to see agent emotions while it works. Triggers on "show avatar",
+    "uruchom avatara", "pokaż avatara", "agent face", "vis
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - hooks/clawface-thinking/HOOK.md
+
+    - hooks/clawface-thinking/handler.ts
+
+    - scripts/api.py
+
+    - scripts/avatar.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-face
+
+    ```'
+examples:
+- description: Install ClawFace from ClawHub
+  usage: clawhub install claw-face
+schema_version: '1.0'

@@ -1,0 +1,33 @@
+name: supernote
+title: Supernote Cloud
+version: 1.0.0
+description: 'Access a self-hosted Supernote Private Cloud instance to browse files and folders, upload documents (PDF, EPUB)
+  and notes, convert web articles to EPUB/PDF and send them to the device, check storage capacity, and navigate the directory
+  tree. Use when the user mentions Supernote, e-ink device files, '
+metadata:
+  author: nickian
+  category: Search & Research
+  tags:
+  - search-research
+  - supernote
+  source: clawhub-community
+  clawhub_slug: supernote-cloud
+  clawhub_path: nickian/supernote-cloud
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Supernote Cloud\n# Source: ClawHub community skill by nickian\n# Install: clawhub install supernote-cloud\n\
+    # Path: nickian/supernote-cloud\n\n## Description\nAccess a self-hosted Supernote Private Cloud instance to browse files\
+    \ and folders, upload documents (PDF, EPUB) and notes, convert web articles to EPUB/PDF and send them to the device, check\
+    \ storage capacity, and navigate the directory tree. Use when the user mentions Supernote, e-ink device files, \n\n##\
+    \ Files\n- SKILL.md\n- _meta.json\n- scripts/article2ebook.py\n- scripts/supernote.sh\n\n## Installation\n```bash\nclawhub\
+    \ install supernote-cloud\n```"
+examples:
+- description: Install Supernote Cloud from ClawHub
+  usage: clawhub install supernote-cloud
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: user-story-updater
+title: User Story Updater
+version: 1.0.0
+description: Updates GitHub issues for user stories with checkable acceptance criteria and task connections. Use when fixing
+  GitHub issue format, adding checkable ACs to existing issues, or refreshing user story issue content from specs.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - user
+  - story
+  - updater
+  source: clawhub-community
+  clawhub_slug: sw-user-story-updater
+  clawhub_path: anton-abyzov/sw-user-story-updater
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# User Story Updater
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-user-story-updater
+
+    # Path: anton-abyzov/sw-user-story-updater
+
+
+    ## Description
+
+    Updates GitHub issues for user stories with checkable acceptance criteria and task connections. Use when fixing GitHub
+    issue format, adding checkable ACs to existing issues, or refreshing user story issue content from specs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-user-story-updater
+
+    ```'
+examples:
+- description: Install User Story Updater from ClawHub
+  usage: clawhub install sw-user-story-updater
+schema_version: '1.0'

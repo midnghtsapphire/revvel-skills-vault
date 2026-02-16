@@ -1,0 +1,71 @@
+name: swarm
+title: Swarm
+version: 1.0.4
+description: Parallel task execution using Gemini Flash workers. 200x cheaper than Opus. Use for any parallelizable work to
+  preserve quota.
+metadata:
+  author: chair4ce
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - swarm
+  source: clawhub-community
+  clawhub_slug: swarm
+  clawhub_path: chair4ce/swarm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Swarm
+
+    # Source: ClawHub community skill by chair4ce
+
+    # Install: clawhub install swarm
+
+    # Path: chair4ce/swarm
+
+
+    ## Description
+
+    Parallel task execution using Gemini Flash workers. 200x cheaper than Opus. Use for any parallelizable work to preserve
+    quota.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bench.js
+
+    - benchmark-deep.js
+
+    - benchmark.js
+
+    - config.js
+
+    - install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install swarm
+
+    ```'
+examples:
+- description: Install Swarm from ClawHub
+  usage: clawhub install swarm
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: unifuncs-deep-search
+title: UniFuncs Deep Search
+version: 0.0.1
+description: 使用 UniFuncs API 进行深度搜索，高速全面地搜索信息。当用户需要深度搜索、深搜、全面信息收集时使用。
+metadata:
+  author: vinlic
+  category: Search & Research
+  tags:
+  - search-research
+  - unifuncs
+  - deep
+  - search
+  - bash(curl:*)
+  source: clawhub-community
+  clawhub_slug: unifuncs-deep-search
+  clawhub_path: vinlic/unifuncs-deep-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(curl:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UniFuncs Deep Search
+
+    # Source: ClawHub community skill by vinlic
+
+    # Install: clawhub install unifuncs-deep-search
+
+    # Path: vinlic/unifuncs-deep-search
+
+
+    ## Description
+
+    使用 UniFuncs API 进行深度搜索，高速全面地搜索信息。当用户需要深度搜索、深搜、全面信息收集时使用。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/deep-search.sh
+
+
+    ## Allowed Tools
+
+    Bash(curl:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unifuncs-deep-search
+
+    ```'
+examples:
+- description: Install UniFuncs Deep Search from ClawHub
+  usage: clawhub install unifuncs-deep-search
+schema_version: '1.0'

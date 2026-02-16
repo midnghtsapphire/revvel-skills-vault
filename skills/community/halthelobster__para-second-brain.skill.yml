@@ -1,0 +1,71 @@
+name: para-second-brain
+title: PARA Second Brain
+version: 2.0.1
+description: Organize your agent's knowledge using PARA (Projects, Areas, Resources, Archive) — then make it ALL searchable.
+  The symlink trick enables full semantic search across your entire knowledge base, not just MEMORY.md. Includes session transcript
+  indexing and memory flush protocol. Your agent finally has
+metadata:
+  author: halthelobster
+  category: Search & Research
+  tags:
+  - search-research
+  - para
+  - second
+  - brain
+  source: clawhub-community
+  clawhub_slug: para-second-brain
+  clawhub_path: halthelobster/para-second-brain
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PARA Second Brain
+
+    # Source: ClawHub community skill by halthelobster
+
+    # Install: clawhub install para-second-brain
+
+    # Path: halthelobster/para-second-brain
+
+
+    ## Description
+
+    Organize your agent''s knowledge using PARA (Projects, Areas, Resources, Archive) — then make it ALL searchable. The symlink
+    trick enables full semantic search across your entire knowledge base, not just MEMORY.md. Includes session transcript
+    indexing and memory flush protocol. Your agent finally has
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - manifest.json
+
+    - skill.json
+
+    - scripts/setup.sh
+
+    - templates/concept.md
+
+    - templates/pattern.md
+
+    - templates/tool.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install para-second-brain
+
+    ```'
+examples:
+- description: Install PARA Second Brain from ClawHub
+  usage: clawhub install para-second-brain
+schema_version: '1.0'

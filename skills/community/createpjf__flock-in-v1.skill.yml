@@ -1,0 +1,69 @@
+name: flock-api-setup
+title: FLock Model Platform
+version: 0.1.0
+description: '"FLock API Platform setup: wallet generation, plugin installation, API key configuration, and model switching.
+  Use for: ''setup flock'', ''flock login'', ''install flock plugin'', ''switch flock model'', ''use deepseek'', ''change
+  to coding model''."'
+metadata:
+  author: createpjf
+  category: Development & Coding
+  tags:
+  - development-coding
+  - flock
+  - api
+  - setup
+  source: clawhub-community
+  clawhub_slug: flock-in-v1
+  clawhub_path: createpjf/flock-in-v1
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FLock Model Platform
+
+    # Source: ClawHub community skill by createpjf
+
+    # Install: clawhub install flock-in-v1
+
+    # Path: createpjf/flock-in-v1
+
+
+    ## Description
+
+    "FLock API Platform setup: wallet generation, plugin installation, API key configuration, and model switching. Use for:
+    ''setup flock'', ''flock login'', ''install flock plugin'', ''switch flock model'', ''use deepseek'', ''change to coding
+    model''."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check-balance.js
+
+    - scripts/credentials.js
+
+    - scripts/generate-wallet.js
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flock-in-v1
+
+    ```'
+examples:
+- description: Install FLock Model Platform from ClawHub
+  usage: clawhub install flock-in-v1
+schema_version: '1.0'

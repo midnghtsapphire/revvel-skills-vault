@@ -1,0 +1,73 @@
+name: hyperliquid
+title: Hyperliquid Trading & Analysis
+version: 1.0.0
+description: Trade and monitor Hyperliquid perpetual futures. Check balances, view positions with P&L, place/cancel orders,
+  execute market trades. Use when the user asks about Hyperliquid trading, portfolio status, crypto positions, or wants to
+  execute trades on Hyperliquid.
+metadata:
+  author: anajuliabit
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - hyperliquid
+  source: clawhub-community
+  clawhub_slug: hyperliquid-trading
+  clawhub_path: anajuliabit/hyperliquid-trading
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hyperliquid Trading & Analysis
+
+    # Source: ClawHub community skill by anajuliabit
+
+    # Install: clawhub install hyperliquid-trading
+
+    # Path: anajuliabit/hyperliquid-trading
+
+
+    ## Description
+
+    Trade and monitor Hyperliquid perpetual futures. Check balances, view positions with P&L, place/cancel orders, execute
+    market trades. Use when the user asks about Hyperliquid trading, portfolio status, crypto positions, or wants to execute
+    trades on Hyperliquid.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/analyze-coingecko.mjs
+
+    - scripts/analyze-market.mjs
+
+    - scripts/check-positions.mjs
+
+    - scripts/hyperliquid.mjs
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hyperliquid-trading
+
+    ```'
+examples:
+- description: Install Hyperliquid Trading & Analysis from ClawHub
+  usage: clawhub install hyperliquid-trading
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: _skill_update_
+title: Skill Update
+version: 1.0.0
+description: '"Safely update skills with preview, migration support, and user validation. Never lose data or break workflows."'
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - '"skill'
+  - update"
+  source: clawhub-community
+  clawhub_slug: skill-update
+  clawhub_path: ivangdavila/skill-update
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Update
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install skill-update
+
+    # Path: ivangdavila/skill-update
+
+
+    ## Description
+
+    "Safely update skills with preview, migration support, and user validation. Never lose data or break workflows."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - migrate.md
+
+    - preview.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-update
+
+    ```'
+examples:
+- description: Install Skill Update from ClawHub
+  usage: clawhub install skill-update
+schema_version: '1.0'

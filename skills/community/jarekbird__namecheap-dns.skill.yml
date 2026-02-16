@@ -1,0 +1,64 @@
+name: namecheap-dns
+title: Namecheap DNS
+version: 1.1.0
+description: Safe DNS record management for Namecheap domains. Fetch, add, remove, backup, and restore DNS records with automatic
+  safety checks and dry-run mode. Prevents accidental DNS record wipeout via the Namecheap API's destructive setHosts method.
+metadata:
+  author: jarekbird
+  category: Development & Coding
+  tags:
+  - development-coding
+  - namecheap
+  - dns
+  source: clawhub-community
+  clawhub_slug: namecheap-dns
+  clawhub_path: jarekbird/namecheap-dns
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Namecheap DNS
+
+    # Source: ClawHub community skill by jarekbird
+
+    # Install: clawhub install namecheap-dns
+
+    # Path: jarekbird/namecheap-dns
+
+
+    ## Description
+
+    Safe DNS record management for Namecheap domains. Fetch, add, remove, backup, and restore DNS records with automatic safety
+    checks and dry-run mode. Prevents accidental DNS record wipeout via the Namecheap API''s destructive setHosts method.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - namecheap-dns.js
+
+    - package-lock.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install namecheap-dns
+
+    ```'
+examples:
+- description: Install Namecheap DNS from ClawHub
+  usage: clawhub install namecheap-dns
+schema_version: '1.0'

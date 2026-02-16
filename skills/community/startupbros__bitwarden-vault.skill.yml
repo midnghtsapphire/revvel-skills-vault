@@ -1,0 +1,59 @@
+name: bitwarden
+title: Bitwarden Vault CLI
+version: 1.0.0
+description: Set up and use Bitwarden CLI (bw). Use when installing the CLI, authenticating (login/unlock), or reading secrets
+  from your vault. Supports email/password, API key, and SSO authentication methods.
+metadata:
+  author: startupbros
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - bitwarden
+  source: clawhub-community
+  clawhub_slug: bitwarden-vault
+  clawhub_path: startupbros/bitwarden-vault
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bitwarden Vault CLI
+
+    # Source: ClawHub community skill by startupbros
+
+    # Install: clawhub install bitwarden-vault
+
+    # Path: startupbros/bitwarden-vault
+
+
+    ## Description
+
+    Set up and use Bitwarden CLI (bw). Use when installing the CLI, authenticating (login/unlock), or reading secrets from
+    your vault. Supports email/password, API key, and SSO authentication methods.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cli-examples.md
+
+    - references/get-started.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bitwarden-vault
+
+    ```'
+examples:
+- description: Install Bitwarden Vault CLI from ClawHub
+  usage: clawhub install bitwarden-vault
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: google-maps-leadgen
+title: Google Maps Leadgen
+version: 0.1.0
+description: Generate B2B leads from Google Maps using a self-hosted MCP server (`google-maps`) and export to CSV or XLSX.
+  Use when the user asks for lead generation by country/city/industry, wants phone/website/email enrichment, wants deduped
+  lead lists, or asks to send lead files back in chat (especially Teleg
+metadata:
+  author: realowg
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - maps
+  - leadgen
+  source: clawhub-community
+  clawhub_slug: google-maps-leadgen-skill
+  clawhub_path: realowg/google-maps-leadgen-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Maps Leadgen
+
+    # Source: ClawHub community skill by realowg
+
+    # Install: clawhub install google-maps-leadgen-skill
+
+    # Path: realowg/google-maps-leadgen-skill
+
+
+    ## Description
+
+    Generate B2B leads from Google Maps using a self-hosted MCP server (`google-maps`) and export to CSV or XLSX. Use when
+    the user asks for lead generation by country/city/industry, wants phone/website/email enrichment, wants deduped lead lists,
+    or asks to send lead files back in chat (especially Teleg
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gmaps_leads_export.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-maps-leadgen-skill
+
+    ```'
+examples:
+- description: Install Google Maps Leadgen from ClawHub
+  usage: clawhub install google-maps-leadgen-skill
+schema_version: '1.0'

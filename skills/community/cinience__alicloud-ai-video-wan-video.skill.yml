@@ -1,0 +1,67 @@
+name: alicloud-ai-video-wan-video
+title: Alicloud Ai Video Wan Video
+version: 1.0.1
+description: Generate videos with Model Studio DashScope SDK using the wan2.6-i2v-flash model. Use when implementing or documenting
+  video.generate requests/responses, mapping prompt/negative_prompt/duration/fps/size/seed/reference_image/motion_strength,
+  or integrating video generation into the video-agent pipeli
+metadata:
+  author: cinience
+  category: Media & Content
+  tags:
+  - media-content
+  - alicloud
+  - video
+  - wan
+  source: clawhub-community
+  clawhub_slug: alicloud-ai-video-wan-video
+  clawhub_path: cinience/alicloud-ai-video-wan-video
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Ai Video Wan Video
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-ai-video-wan-video
+
+    # Path: cinience/alicloud-ai-video-wan-video
+
+
+    ## Description
+
+    Generate videos with Model Studio DashScope SDK using the wan2.6-i2v-flash model. Use when implementing or documenting
+    video.generate requests/responses, mapping prompt/negative_prompt/duration/fps/size/seed/reference_image/motion_strength,
+    or integrating video generation into the video-agent pipeli
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/api_reference.md
+
+    - references/sources.md
+
+    - scripts/generate_video.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-ai-video-wan-video
+
+    ```'
+examples:
+- description: Install Alicloud Ai Video Wan Video from ClawHub
+  usage: clawhub install alicloud-ai-video-wan-video
+schema_version: '1.0'

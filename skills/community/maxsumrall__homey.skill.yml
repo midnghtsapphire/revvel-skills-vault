@@ -1,0 +1,71 @@
+name: homey
+title: Homey
+version: 1.1.2
+description: Control Athom Homey smart home devices via local (LAN/VPN) or cloud APIs. List/control devices, trigger flows,
+  query zones. Works with Homey Pro, Cloud, and Bridge.
+metadata:
+  author: maxsumrall
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - homey
+  source: clawhub-community
+  clawhub_slug: homey
+  clawhub_path: maxsumrall/homey
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Homey
+
+    # Source: ClawHub community skill by maxsumrall
+
+    # Install: clawhub install homey
+
+    # Path: maxsumrall/homey
+
+
+    ## Description
+
+    Control Athom Homey smart home devices via local (LAN/VPN) or cloud APIs. List/control devices, trigger flows, query zones.
+    Works with Homey Pro, Cloud, and Bridge.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - EXAMPLES.md
+
+    - INSTALL.sh
+
+    - README.md
+
+    - SKILL.md
+
+    - TESTING.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - bin/homeycli.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install homey
+
+    ```'
+examples:
+- description: Install Homey from ClawHub
+  usage: clawhub install homey
+schema_version: '1.0'

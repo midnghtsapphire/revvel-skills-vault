@@ -1,0 +1,75 @@
+name: feishu-interactive-cards
+title: Feishu Interactive Cards
+version: 1.0.2
+description: Create and send interactive cards to Feishu (Lark) with buttons, forms, polls, and rich UI elements. Use when
+  replying to Feishu messages and there is ANY uncertainty - send an interactive card instead of plain text to let users choose
+  via buttons. Automatically handles callbacks via long-polling co
+metadata:
+  author: leecyang
+  category: Communication
+  tags:
+  - communication
+  - feishu
+  - interactive
+  - cards
+  source: clawhub-community
+  clawhub_slug: feishu-interactive-cards
+  clawhub_path: leecyang/feishu-interactive-cards
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feishu Interactive Cards
+
+    # Source: ClawHub community skill by leecyang
+
+    # Install: clawhub install feishu-interactive-cards
+
+    # Path: leecyang/feishu-interactive-cards
+
+
+    ## Description
+
+    Create and send interactive cards to Feishu (Lark) with buttons, forms, polls, and rich UI elements. Use when replying
+    to Feishu messages and there is ANY uncertainty - send an interactive card instead of plain text to let users choose via
+    buttons. Automatically handles callbacks via long-polling co
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - examples/confirmation-card.json
+
+    - examples/form-card.json
+
+    - examples/poll-card.json
+
+    - examples/todo-card.json
+
+    - references/card-design-guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-interactive-cards
+
+    ```'
+examples:
+- description: Install Feishu Interactive Cards from ClawHub
+  usage: clawhub install feishu-interactive-cards
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: xiaohongshu
+title: 小红书
+version: 0.1.0
+description: '"XiaoHongShu (Little Red Book) data collection and interaction toolkit. Use when working with XiaoHongShu (小红书)
+  platform for: (1) Searching and scraping notes/posts, (2) Getting user profiles and details, (3) Extracting comments and
+  likes, (4) Following users and liking posts, (5) Fetching home feed'
+metadata:
+  author: chocomintx
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - xiaohongshu
+  source: clawhub-community
+  clawhub_slug: xiaohongshutools
+  clawhub_path: chocomintx/xiaohongshutools
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 小红书
+
+    # Source: ClawHub community skill by chocomintx
+
+    # Install: clawhub install xiaohongshutools
+
+    # Path: chocomintx/xiaohongshutools
+
+
+    ## Description
+
+    "XiaoHongShu (Little Red Book) data collection and interaction toolkit. Use when working with XiaoHongShu (小红书) platform
+    for: (1) Searching and scraping notes/posts, (2) Getting user profiles and details, (3) Extracting comments and likes,
+    (4) Following users and liking posts, (5) Fetching home feed
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/request/web/xhs_session.py
+
+    - scripts/request/web/apis/__init__.py
+
+    - scripts/request/web/apis/auth.py
+
+    - scripts/request/web/apis/comments.py
+
+    - scripts/request/web/apis/note.py
+
+    - scripts/request/web/apis/user.py
+
+    - scripts/request/web/encrypt/config.py
+
+    - scripts/request/web/encrypt/decrypt_xs_xsc.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xiaohongshutools
+
+    ```'
+examples:
+- description: Install 小红书 from ClawHub
+  usage: clawhub install xiaohongshutools
+schema_version: '1.0'

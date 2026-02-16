@@ -1,0 +1,58 @@
+name: tools-marketplace
+title: Danube Tools Marketplace
+version: 1.0.0
+description: Use Danube's 100+ API tools (Gmail, GitHub, Notion, etc.) through MCP. Search for tools, check authentication,
+  execute with parameters, and handle errors gracefully.
+metadata:
+  author: preston-thiele
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - tools
+  - marketplace
+  source: clawhub-community
+  clawhub_slug: tools-marketplace
+  clawhub_path: preston-thiele/tools-marketplace
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Danube Tools Marketplace
+
+    # Source: ClawHub community skill by preston-thiele
+
+    # Install: clawhub install tools-marketplace
+
+    # Path: preston-thiele/tools-marketplace
+
+
+    ## Description
+
+    Use Danube''s 100+ API tools (Gmail, GitHub, Notion, etc.) through MCP. Search for tools, check authentication, execute
+    with parameters, and handle errors gracefully.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tools-marketplace
+
+    ```'
+examples:
+- description: Install Danube Tools Marketplace from ClawHub
+  usage: clawhub install tools-marketplace
+schema_version: '1.0'

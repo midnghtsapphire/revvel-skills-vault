@@ -1,0 +1,64 @@
+name: wol-sleep-pc
+title: Wol Sleep Pc
+version: 0.1.0
+description: Send Wake-on-LAN (magic packet) and Sleep-on-LAN (inverted MAC) packets for a specific PC. Use when the user
+  asks to wake, check, or put the PC to sleep on the local LAN. Defaults are zeroed; configure the target IP, MAC, and inverted
+  MAC via command-line flags or a config file.
+metadata:
+  author: oblivisheee
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - wol
+  - sleep
+  source: clawhub-community
+  clawhub_slug: wol-sleep-pc
+  clawhub_path: oblivisheee/wol-sleep-pc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wol Sleep Pc
+
+    # Source: ClawHub community skill by oblivisheee
+
+    # Install: clawhub install wol-sleep-pc
+
+    # Path: oblivisheee/wol-sleep-pc
+
+
+    ## Description
+
+    Send Wake-on-LAN (magic packet) and Sleep-on-LAN (inverted MAC) packets for a specific PC. Use when the user asks to wake,
+    check, or put the PC to sleep on the local LAN. Defaults are zeroed; configure the target IP, MAC, and inverted MAC via
+    command-line flags or a config file.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/send_sleep.py
+
+    - scripts/send_wol.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wol-sleep-pc
+
+    ```'
+examples:
+- description: Install Wol Sleep Pc from ClawHub
+  usage: clawhub install wol-sleep-pc
+schema_version: '1.0'

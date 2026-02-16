@@ -1,0 +1,73 @@
+name: my-tesla
+title: My Tesla
+version: 0.1.64
+description: Control Tesla vehicles from macOS via the Tesla Owner API using teslapy (auth, list cars, status, lock/unlock,
+  climate, charging, location, and extras). Use when you want to check your car state or run safe remote commands. Designed
+  for Parth Maniar (@officialpm) with local-only auth caching, confir
+metadata:
+  author: officialpm
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - tesla
+  source: clawhub-community
+  clawhub_slug: my-tesla
+  clawhub_path: officialpm/my-tesla
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# My Tesla
+
+    # Source: ClawHub community skill by officialpm
+
+    # Install: clawhub install my-tesla
+
+    # Path: officialpm/my-tesla
+
+
+    ## Description
+
+    Control Tesla vehicles from macOS via the Tesla Owner API using teslapy (auth, list cars, status, lock/unlock, climate,
+    charging, location, and extras). Use when you want to check your car state or run safe remote commands. Designed for Parth
+    Maniar (@officialpm) with local-only auth caching, confir
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - VERSION.txt
+
+    - _meta.json
+
+    - scripts/run_tests.sh
+
+    - scripts/tesla.py
+
+    - tests/__init__.py
+
+    - tests/test_charge_port_status.py
+
+    - tests/test_charge_status_json.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install my-tesla
+
+    ```'
+examples:
+- description: Install My Tesla from ClawHub
+  usage: clawhub install my-tesla
+schema_version: '1.0'

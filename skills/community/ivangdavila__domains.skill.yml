@@ -1,0 +1,53 @@
+name: domains
+title: Domains
+version: 1.0.0
+description: Register, manage, and protect domain names with practical DNS and security guidance.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - domains
+  source: clawhub-community
+  clawhub_slug: domains
+  clawhub_path: ivangdavila/domains
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Domains
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install domains
+
+    # Path: ivangdavila/domains
+
+
+    ## Description
+
+    Register, manage, and protect domain names with practical DNS and security guidance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install domains
+
+    ```'
+examples:
+- description: Install Domains from ClawHub
+  usage: clawhub install domains
+schema_version: '1.0'

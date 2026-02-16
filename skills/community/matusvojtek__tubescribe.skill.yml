@@ -1,0 +1,69 @@
+name: tubescribe
+title: TubeScribe
+version: 1.1.8
+description: '"YouTube video summarizer with speaker detection, formatted documents, and audio output. Works out of the box
+  with macOS built-in TTS. Optional recommended tools (pandoc, ffmpeg, mlx-audio) enhance quality. Requires internet for YouTube
+  access. No paid APIs or subscriptions. Use when user sends a Yo'
+metadata:
+  author: matusvojtek
+  category: Media & Content
+  tags:
+  - media-content
+  - tubescribe
+  source: clawhub-community
+  clawhub_slug: tubescribe
+  clawhub_path: matusvojtek/tubescribe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TubeScribe
+
+    # Source: ClawHub community skill by matusvojtek
+
+    # Install: clawhub install tubescribe
+
+    # Path: matusvojtek/tubescribe
+
+
+    ## Description
+
+    "YouTube video summarizer with speaker detection, formatted documents, and audio output. Works out of the box with macOS
+    built-in TTS. Optional recommended tools (pandoc, ffmpeg, mlx-audio) enhance quality. Requires internet for YouTube access.
+    No paid APIs or subscriptions. Use when user sends a Yo
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/config.py
+
+    - scripts/html_writer.py
+
+    - scripts/setup.py
+
+    - scripts/tubescribe.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tubescribe
+
+    ```'
+examples:
+- description: Install TubeScribe from ClawHub
+  usage: clawhub install tubescribe
+schema_version: '1.0'

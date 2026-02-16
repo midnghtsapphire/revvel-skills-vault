@@ -1,0 +1,62 @@
+name: email-importance-content-analysis
+title: Email Importance Content Analysis
+version: 1.0.1
+description: Judge whether an email is important/urgent using content-based analysis rather than sender name or mailbox labels
+  (which can be spoofed). Use when asked to triage emails, decide priority, detect phishing/social-engineering, or recommend
+  next actions (reply/pay/login/download/click) based on what the
+metadata:
+  author: shingo0620
+  category: Social Media
+  tags:
+  - social-media
+  - email
+  - importance
+  - content
+  - analysis
+  source: clawhub-community
+  clawhub_slug: email-importance-content-analysis
+  clawhub_path: shingo0620/email-importance-content-analysis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Email Importance Content Analysis
+
+    # Source: ClawHub community skill by shingo0620
+
+    # Install: clawhub install email-importance-content-analysis
+
+    # Path: shingo0620/email-importance-content-analysis
+
+
+    ## Description
+
+    Judge whether an email is important/urgent using content-based analysis rather than sender name or mailbox labels (which
+    can be spoofed). Use when asked to triage emails, decide priority, detect phishing/social-engineering, or recommend next
+    actions (reply/pay/login/download/click) based on what the
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-importance-content-analysis
+
+    ```'
+examples:
+- description: Install Email Importance Content Analysis from ClawHub
+  usage: clawhub install email-importance-content-analysis
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: nano_banana_pro_____
+title: Nano Banana Pro
+version: 1.0.1
+description: 使用 Nano Banana Pro 模型生成或编辑图像。当用户想要文生图、图像编辑，或提到 nano banana、Google 图像生成时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: Search & Research
+  tags:
+  - search-research
+  - nano
+  - banana
+  - pro
+  - 图像生成
+  source: clawhub-community
+  clawhub_slug: sutui-nano-banana-pro
+  clawhub_path: hexiaochun/sutui-nano-banana-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nano Banana Pro
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install sutui-nano-banana-pro
+
+    # Path: hexiaochun/sutui-nano-banana-pro
+
+
+    ## Description
+
+    使用 Nano Banana Pro 模型生成或编辑图像。当用户想要文生图、图像编辑，或提到 nano banana、Google 图像生成时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sutui-nano-banana-pro
+
+    ```'
+examples:
+- description: Install Nano Banana Pro from ClawHub
+  usage: clawhub install sutui-nano-banana-pro
+schema_version: '1.0'

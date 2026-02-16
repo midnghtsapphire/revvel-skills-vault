@@ -1,0 +1,54 @@
+name: github-repo-stats
+title: GitHub 仓库
+version: 1.0.0
+description: ''
+metadata:
+  author: chenpinji
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - repo
+  - stats
+  source: clawhub-community
+  clawhub_slug: ghgghg
+  clawhub_path: chenpinji/ghgghg
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHub 仓库
+
+    # Source: ClawHub community skill by chenpinji
+
+    # Install: clawhub install ghgghg
+
+    # Path: chenpinji/ghgghg
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ghgghg
+
+    ```'
+examples:
+- description: Install GitHub 仓库 from ClawHub
+  usage: clawhub install ghgghg
+schema_version: '1.0'

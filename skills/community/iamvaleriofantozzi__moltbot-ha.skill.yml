@@ -1,0 +1,61 @@
+name: moltbot-ha
+title: Moltbot Home Assistant
+version: 0.1.1
+description: Control Home Assistant smart home devices, lights, scenes, and automations via moltbot-ha CLI with configurable
+  safety confirmations.
+metadata:
+  author: iamvaleriofantozzi
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - moltbot
+  source: clawhub-community
+  clawhub_slug: moltbot-ha
+  clawhub_path: iamvaleriofantozzi/moltbot-ha
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltbot Home Assistant
+
+    # Source: ClawHub community skill by iamvaleriofantozzi
+
+    # Install: clawhub install moltbot-ha
+
+    # Path: iamvaleriofantozzi/moltbot-ha
+
+
+    ## Description
+
+    Control Home Assistant smart home devices, lights, scenes, and automations via moltbot-ha CLI with configurable safety
+    confirmations.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.toml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbot-ha
+
+    ```'
+examples:
+- description: Install Moltbot Home Assistant from ClawHub
+  usage: clawhub install moltbot-ha
+schema_version: '1.0'

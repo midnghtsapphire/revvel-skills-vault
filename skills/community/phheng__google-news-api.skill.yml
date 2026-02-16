@@ -1,0 +1,59 @@
+name: google-news-api
+title: Google News Api
+version: 0.1.0
+description: Scrape structured news data from Google News automatically. Use when the user asks for news on a topic, industry
+  trends, or PR monitoring. Triggers on keywords like "find news about", "track trends", or "monitor PR".
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - news
+  - api
+  source: clawhub-community
+  clawhub_slug: google-news-api
+  clawhub_path: phheng/google-news-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google News Api
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install google-news-api
+
+    # Path: phheng/google-news-api
+
+
+    ## Description
+
+    Scrape structured news data from Google News automatically. Use when the user asks for news on a topic, industry trends,
+    or PR monitoring. Triggers on keywords like "find news about", "track trends", or "monitor PR".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/google_news_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-news-api
+
+    ```'
+examples:
+- description: Install Google News Api from ClawHub
+  usage: clawhub install google-news-api
+schema_version: '1.0'

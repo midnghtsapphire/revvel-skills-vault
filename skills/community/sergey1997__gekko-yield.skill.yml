@@ -1,0 +1,72 @@
+name: gekko-yield
+title: Gekko Yield
+version: 1.0.0
+description: Earn yield on USDC by supplying to the Moonwell Flagship USDC vault on Base. Use when depositing USDC, withdrawing
+  from the vault, checking position/APY, or generating yield reports.
+metadata:
+  author: sergey1997
+  category: General
+  tags:
+  - general
+  - gekko
+  - yield
+  source: clawhub-community
+  clawhub_slug: gekko-yield
+  clawhub_path: sergey1997/gekko-yield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gekko Yield
+
+    # Source: ClawHub community skill by sergey1997
+
+    # Install: clawhub install gekko-yield
+
+    # Path: sergey1997/gekko-yield
+
+
+    ## Description
+
+    Earn yield on USDC by supplying to the Moonwell Flagship USDC vault on Base. Use when depositing USDC, withdrawing from
+    the vault, checking position/APY, or generating yield reports.
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/compound.ts
+
+    - scripts/config.ts
+
+    - scripts/deposit.ts
+
+    - scripts/package.json
+
+    - scripts/pnpm-lock.yaml
+
+    - scripts/report.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gekko-yield
+
+    ```'
+examples:
+- description: Install Gekko Yield from ClawHub
+  usage: clawhub install gekko-yield
+schema_version: '1.0'

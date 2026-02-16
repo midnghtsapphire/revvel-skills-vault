@@ -1,0 +1,67 @@
+name: threema-gateway-e2e
+title: Threema Gateway
+version: 0.0.1
+description: Send and receive Threema messages via Threema Gateway End-to-End encryption (E2E).
+metadata:
+  author: dennysubke
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - threema
+  - gateway
+  - e2e
+  source: clawhub-community
+  clawhub_slug: threema-gateway
+  clawhub_path: dennysubke/threema-gateway
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Threema Gateway
+
+    # Source: ClawHub community skill by dennysubke
+
+    # Install: clawhub install threema-gateway
+
+    # Path: dennysubke/threema-gateway
+
+
+    ## Description
+
+    Send and receive Threema messages via Threema Gateway End-to-End encryption (E2E).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bridge/callback_server.py
+
+    - bridge/requirements.txt
+
+    - tools/threema_inbox.js
+
+    - tools/threema_mark_read.js
+
+    - tools/threema_send_e2e.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install threema-gateway
+
+    ```'
+examples:
+- description: Install Threema Gateway from ClawHub
+  usage: clawhub install threema-gateway
+schema_version: '1.0'

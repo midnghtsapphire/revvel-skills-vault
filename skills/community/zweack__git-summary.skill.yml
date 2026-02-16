@@ -1,0 +1,54 @@
+name: git-summary
+title: Git Summary
+version: 1.0.0
+description: Get a quick summary of the current Git repository including status, recent commits, branches, and contributors.
+metadata:
+  author: zweack
+  category: Development & Coding
+  tags:
+  - development-coding
+  - git
+  - summary
+  source: clawhub-community
+  clawhub_slug: git-summary
+  clawhub_path: zweack/git-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git Summary
+
+    # Source: ClawHub community skill by zweack
+
+    # Install: clawhub install git-summary
+
+    # Path: zweack/git-summary
+
+
+    ## Description
+
+    Get a quick summary of the current Git repository including status, recent commits, branches, and contributors.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install git-summary
+
+    ```'
+examples:
+- description: Install Git Summary from ClawHub
+  usage: clawhub install git-summary
+schema_version: '1.0'

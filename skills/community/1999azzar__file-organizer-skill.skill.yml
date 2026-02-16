@@ -1,0 +1,61 @@
+name: file-organizer-skill
+title: File Organizer Skill
+version: 1.0.0
+description: Organize files in directories by grouping them into folders based on their extensions or date. Includes Dry-Run,
+  Recursive, and Undo capabilities.
+metadata:
+  author: 1999azzar
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - file
+  - organizer
+  - skill
+  source: clawhub-community
+  clawhub_slug: file-organizer-skill
+  clawhub_path: 1999azzar/file-organizer-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# File Organizer Skill
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install file-organizer-skill
+
+    # Path: 1999azzar/file-organizer-skill
+
+
+    ## Description
+
+    Organize files in directories by grouping them into folders based on their extensions or date. Includes Dry-Run, Recursive,
+    and Undo capabilities.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/categories.md
+
+    - scripts/organize.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install file-organizer-skill
+
+    ```'
+examples:
+- description: Install File Organizer Skill from ClawHub
+  usage: clawhub install file-organizer-skill
+schema_version: '1.0'

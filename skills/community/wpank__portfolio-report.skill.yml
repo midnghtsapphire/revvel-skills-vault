@@ -1,0 +1,67 @@
+name: portfolio-report
+title: Uniswap Portfolio Report
+version: 0.1.0
+description: Generate a comprehensive portfolio report for a wallet's Uniswap positions across all chains — covering total
+  value, PnL, fee earnings, impermanent loss, and composition. Use when the user asks about their positions, earnings, or
+  portfolio overview.
+metadata:
+  author: wpank
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - portfolio
+  - report
+  - '[task(subagent_type:portfolio-analyst)]'
+  source: clawhub-community
+  clawhub_slug: portfolio-report
+  clawhub_path: wpank/portfolio-report
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:portfolio-analyst)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Portfolio Report
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install portfolio-report
+
+    # Path: wpank/portfolio-report
+
+
+    ## Description
+
+    Generate a comprehensive portfolio report for a wallet''s Uniswap positions across all chains — covering total value,
+    PnL, fee earnings, impermanent loss, and composition. Use when the user asks about their positions, earnings, or portfolio
+    overview.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:portfolio-analyst)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install portfolio-report
+
+    ```'
+examples:
+- description: Install Uniswap Portfolio Report from ClawHub
+  usage: clawhub install portfolio-report
+schema_version: '1.0'

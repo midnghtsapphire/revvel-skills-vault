@@ -1,0 +1,71 @@
+name: blacksnow
+title: Blacksnow
+version: 0.1.0
+description: Detects pre-news ambient risk signals across human, legal, and operational systems and converts them into machine-readable,
+  tradable risk primitives.
+metadata:
+  author: sieershafilone
+  category: System & OS
+  tags:
+  - system-os
+  - blacksnow
+  source: clawhub-community
+  clawhub_slug: blacksnow
+  clawhub_path: sieershafilone/blacksnow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Blacksnow
+
+    # Source: ClawHub community skill by sieershafilone
+
+    # Install: clawhub install blacksnow
+
+    # Path: sieershafilone/blacksnow
+
+
+    ## Description
+
+    Detects pre-news ambient risk signals across human, legal, and operational systems and converts them into machine-readable,
+    tradable risk primitives.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - manifest.yaml
+
+    - references/agent_specs.md
+
+    - references/ontology.md
+
+    - scripts/blacksnow_test.py
+
+    - scripts/harvester.py
+
+    - scripts/harvester_extended.py
+
+    - scripts/memory.py
+
+    - scripts/pipeline.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install blacksnow
+
+    ```'
+examples:
+- description: Install Blacksnow from ClawHub
+  usage: clawhub install blacksnow
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: find-emails
+title: Scrape Emails By URL
+version: 0.1.3
+description: Crawl websites locally with crawl4ai to extract contact emails. Accepts multiple URLs and outputs domain-grouped
+  results for clear attribution. Uses deep crawling with URL filters (contact, about, support) to find emails on relevant
+  pages. Use when extracting emails from websites, finding contact in
+metadata:
+  author: lukem121
+  category: Search & Research
+  tags:
+  - search-research
+  - find
+  - emails
+  source: clawhub-community
+  clawhub_slug: find-emails
+  clawhub_path: lukem121/find-emails
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Scrape Emails By URL
+
+    # Source: ClawHub community skill by lukem121
+
+    # Install: clawhub install find-emails
+
+    # Path: lukem121/find-emails
+
+
+    ## Description
+
+    Crawl websites locally with crawl4ai to extract contact emails. Accepts multiple URLs and outputs domain-grouped results
+    for clear attribution. Uses deep crawling with URL filters (contact, about, support) to find emails on relevant pages.
+    Use when extracting emails from websites, finding contact in
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/find_emails.py
+
+    - scripts/url_patterns.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install find-emails
+
+    ```'
+examples:
+- description: Install Scrape Emails By URL from ClawHub
+  usage: clawhub install find-emails
+schema_version: '1.0'

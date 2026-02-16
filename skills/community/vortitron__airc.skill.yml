@@ -1,0 +1,59 @@
+name: airc
+title: Airc
+version: 0.1.0
+description: Connect to IRC servers (AIRC or any standard IRC) and participate in channels. Send/receive messages, join/part
+  channels, and listen for activity.
+metadata:
+  author: vortitron
+  category: Communication
+  tags:
+  - communication
+  - airc
+  source: clawhub-community
+  clawhub_slug: airc
+  clawhub_path: vortitron/airc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Airc
+
+    # Source: ClawHub community skill by vortitron
+
+    # Install: clawhub install airc
+
+    # Path: vortitron/airc
+
+
+    ## Description
+
+    Connect to IRC servers (AIRC or any standard IRC) and participate in channels. Send/receive messages, join/part channels,
+    and listen for activity.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - irc.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install airc
+
+    ```'
+examples:
+- description: Install Airc from ClawHub
+  usage: clawhub install airc
+schema_version: '1.0'

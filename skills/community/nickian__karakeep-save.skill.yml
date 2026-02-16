@@ -1,0 +1,57 @@
+name: karakeep
+title: Karakeep Save
+version: 1.0.0
+description: Save bookmarks to Karakeep (self-hosted bookmark manager). Use when the user wants to save a URL, bookmark a
+  link, or add something to their reading list.
+metadata:
+  author: nickian
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - karakeep
+  source: clawhub-community
+  clawhub_slug: karakeep-save
+  clawhub_path: nickian/karakeep-save
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Karakeep Save
+
+    # Source: ClawHub community skill by nickian
+
+    # Install: clawhub install karakeep-save
+
+    # Path: nickian/karakeep-save
+
+
+    ## Description
+
+    Save bookmarks to Karakeep (self-hosted bookmark manager). Use when the user wants to save a URL, bookmark a link, or
+    add something to their reading list.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/save.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install karakeep-save
+
+    ```'
+examples:
+- description: Install Karakeep Save from ClawHub
+  usage: clawhub install karakeep-save
+schema_version: '1.0'

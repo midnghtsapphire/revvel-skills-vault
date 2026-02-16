@@ -1,0 +1,37 @@
+name: openclaw_nano-pdf
+title: 📄 Nano Pdf
+version: 1.0.0
+description: Edit PDFs with natural-language instructions using the nano-pdf CLI.
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - nano-pdf
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - nano-pdf
+install:
+- id: uv
+  platform: all
+  method: uv
+  command: nano-pdf
+  label: Install nano-pdf (uv)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: nano-pdf\ndescription: Edit PDFs with natural-language instructions using the nano-pdf CLI.\nhomepage:\
+    \ https://pypi.org/project/nano-pdf/\nmetadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"\U0001F4C4\",\n\
+    \        \"requires\": { \"bins\": [\"nano-pdf\"] },\n        \"install\":\n          [\n            {\n             \
+    \ \"id\": \"uv\",\n              \"kind\": \"uv\",\n              \"package\": \"nano-pdf\",\n              \"bins\":\
+    \ [\"nano-pdf\"],\n              \"label\": \"Install nano-pdf (uv)\",\n            },\n          ],\n      },\n  }\n\
+    ---\n\n# nano-pdf\n\nUse `nano-pdf` to apply edits to a specific page in a PDF using a natural-language instruction.\n\
+    \n## Quick start\n\n```bash\nnano-pdf edit deck.pdf 1 \"Change the title to 'Q3 Results' and fix the typo in the subtitle\"\
+    \n```\n\nNotes:\n\n- Page numbers are 0-based or 1-based depending on the tool’s version/config; if the result looks off\
+    \ by one, retry with the other.\n- Always sanity-check the output PDF before sending it out.\n"
+examples: []
+schema_version: '1.0'

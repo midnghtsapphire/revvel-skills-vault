@@ -1,0 +1,72 @@
+name: sphero-mini
+title: Sphero Mini Control
+version: 1.0.0
+description: Control Sphero Mini robot ball via Bluetooth Low Energy. Roll, change colors, read sensors, draw shapes, and
+  play with cats. Uses bleak for cross-platform BLE support (macOS/Windows/Linux).
+metadata:
+  author: joneschi
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - sphero
+  - mini
+  source: clawhub-community
+  clawhub_slug: sphero-mini
+  clawhub_path: joneschi/sphero-mini
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sphero Mini Control
+
+    # Source: ClawHub community skill by joneschi
+
+    # Install: clawhub install sphero-mini
+
+    # Path: joneschi/sphero-mini
+
+
+    ## Description
+
+    Control Sphero Mini robot ball via Bluetooth Low Energy. Roll, change colors, read sensors, draw shapes, and play with
+    cats. Uses bleak for cross-platform BLE support (macOS/Windows/Linux).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - references/examples.md
+
+    - references/troubleshooting.md
+
+    - scripts/cat_play.py
+
+    - scripts/draw_square.py
+
+    - scripts/draw_star.py
+
+    - scripts/scan_sphero.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sphero-mini
+
+    ```'
+examples:
+- description: Install Sphero Mini Control from ClawHub
+  usage: clawhub install sphero-mini
+schema_version: '1.0'

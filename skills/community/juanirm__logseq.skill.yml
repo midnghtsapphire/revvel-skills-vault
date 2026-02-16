@@ -1,0 +1,61 @@
+name: logseq
+title: Logseq
+version: 1.0.0
+description: Provide commands for interacting with a local Logseq instance through its Plugin API. Use for creating pages,
+  inserting blocks, querying the graph database, managing tasks, retrieving content, or automating workflows in Logseq. Only
+  works with a locally running instance with the API enabled; default
+metadata:
+  author: juanirm
+  category: Development & Coding
+  tags:
+  - development-coding
+  - logseq
+  source: clawhub-community
+  clawhub_slug: logseq
+  clawhub_path: juanirm/logseq
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Logseq
+
+    # Source: ClawHub community skill by juanirm
+
+    # Install: clawhub install logseq
+
+    # Path: juanirm/logseq
+
+
+    ## Description
+
+    Provide commands for interacting with a local Logseq instance through its Plugin API. Use for creating pages, inserting
+    blocks, querying the graph database, managing tasks, retrieving content, or automating workflows in Logseq. Only works
+    with a locally running instance with the API enabled; default
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - references/examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install logseq
+
+    ```'
+examples:
+- description: Install Logseq from ClawHub
+  usage: clawhub install logseq
+schema_version: '1.0'

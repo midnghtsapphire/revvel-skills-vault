@@ -1,0 +1,70 @@
+name: email-formatter
+title: Cerbug45 Email Formatter
+version: 0.1.0
+description: '"Transform rough email drafts into polished, professional messages. Use this skill when the user wants to improve
+  email quality, fix grammar and tone, format business emails, or convert casual messages into professional communication.
+  Triggers include: ''format my email'', ''make this professional'', ''i'
+metadata:
+  author: cerbug45
+  category: Communication
+  tags:
+  - communication
+  - email
+  - formatter
+  source: clawhub-community
+  clawhub_slug: email-formatter-skill
+  clawhub_path: cerbug45/email-formatter-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cerbug45 Email Formatter
+
+    # Source: ClawHub community skill by cerbug45
+
+    # Install: clawhub install email-formatter-skill
+
+    # Path: cerbug45/email-formatter-skill
+
+
+    ## Description
+
+    "Transform rough email drafts into polished, professional messages. Use this skill when the user wants to improve email
+    quality, fix grammar and tone, format business emails, or convert casual messages into professional communication. Triggers
+    include: ''format my email'', ''make this professional'', ''i
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - grammar_check.py
+
+    - install.sh
+
+    - readability.py
+
+    - security_scan.py
+
+    - tone_analyzer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-formatter-skill
+
+    ```'
+examples:
+- description: Install Cerbug45 Email Formatter from ClawHub
+  usage: clawhub install email-formatter-skill
+schema_version: '1.0'

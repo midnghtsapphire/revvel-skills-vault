@@ -1,0 +1,60 @@
+name: comfyui-request
+title: Comfyui anfrage
+version: 1.0.0
+description: Send a workflow request to ComfyUI and return image results.
+metadata:
+  author: xtopher86
+  category: Media & Content
+  tags:
+  - media-content
+  - comfyui
+  - request
+  source: clawhub-community
+  clawhub_slug: comfyui-request
+  clawhub_path: xtopher86/comfyui-request
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Comfyui anfrage
+
+    # Source: ClawHub community skill by xtopher86
+
+    # Install: clawhub install comfyui-request
+
+    # Path: xtopher86/comfyui-request
+
+
+    ## Description
+
+    Send a workflow request to ComfyUI and return image results.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - skill.json
+
+    - bin/cli.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install comfyui-request
+
+    ```'
+examples:
+- description: Install Comfyui anfrage from ClawHub
+  usage: clawhub install comfyui-request
+schema_version: '1.0'

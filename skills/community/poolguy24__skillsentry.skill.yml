@@ -1,0 +1,60 @@
+name: skillsentry
+title: SkillSentryOpenClaw's Always‑On Security Cop
+version: 1.1.0
+description: '"OpenClaw security audit + prompt injection detector. Scans gateway/vulns/cron/PI patterns. Use for frenzy-proofing
+  installs."'
+metadata:
+  author: poolguy24
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skillsentry
+  source: clawhub-community
+  clawhub_slug: skillsentry
+  clawhub_path: poolguy24/skillsentry
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SkillSentryOpenClaw''s Always‑On Security Cop
+
+    # Source: ClawHub community skill by poolguy24
+
+    # Install: clawhub install skillsentry
+
+    # Path: poolguy24/skillsentry
+
+
+    ## Description
+
+    "OpenClaw security audit + prompt injection detector. Scans gateway/vulns/cron/PI patterns. Use for frenzy-proofing installs."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/panel.html
+
+    - references/threats.md
+
+    - scripts/audit.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skillsentry
+
+    ```'
+examples:
+- description: Install SkillSentryOpenClaw's Always‑On Security Cop from ClawHub
+  usage: clawhub install skillsentry
+schema_version: '1.0'

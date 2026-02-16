@@ -1,0 +1,59 @@
+name: runpod
+title: RunPod pod management
+version: 1.0.1
+description: Manage RunPod GPU cloud instances - create, start, stop, connect to pods via SSH and API. Use when working with
+  RunPod infrastructure, GPU instances, or need SSH access to remote GPU machines. Handles pod lifecycle, SSH proxy connections,
+  filesystem mounting, and API queries. Requires runpodctl (bre
+metadata:
+  author: andrewharp
+  category: Development & Coding
+  tags:
+  - development-coding
+  - runpod
+  source: clawhub-community
+  clawhub_slug: runpod
+  clawhub_path: andrewharp/runpod
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RunPod pod management
+
+    # Source: ClawHub community skill by andrewharp
+
+    # Install: clawhub install runpod
+
+    # Path: andrewharp/runpod
+
+
+    ## Description
+
+    Manage RunPod GPU cloud instances - create, start, stop, connect to pods via SSH and API. Use when working with RunPod
+    infrastructure, GPU instances, or need SSH access to remote GPU machines. Handles pod lifecycle, SSH proxy connections,
+    filesystem mounting, and API queries. Requires runpodctl (bre
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/mount_pod.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install runpod
+
+    ```'
+examples:
+- description: Install RunPod pod management from ClawHub
+  usage: clawhub install runpod
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: policy-lawyer
+title: Policy Lawyer
+version: 1.0.1
+description: Reference the workspace policy playbook, answer "What are the rules for tone, data, and collaboration?" by searching
+  the curated policy doc or listing its sections.
+metadata:
+  author: crimsondevil333333
+  category: Search & Research
+  tags:
+  - search-research
+  - policy
+  - lawyer
+  source: clawhub-community
+  clawhub_slug: policy-lawyer
+  clawhub_path: crimsondevil333333/policy-lawyer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Policy Lawyer
+
+    # Source: ClawHub community skill by crimsondevil333333
+
+    # Install: clawhub install policy-lawyer
+
+    # Path: crimsondevil333333/policy-lawyer
+
+
+    ## Description
+
+    Reference the workspace policy playbook, answer "What are the rules for tone, data, and collaboration?" by searching the
+    curated policy doc or listing its sections.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/policies.md
+
+    - scripts/policy_lawyer.py
+
+    - tests/test_policy_lawyer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install policy-lawyer
+
+    ```'
+examples:
+- description: Install Policy Lawyer from ClawHub
+  usage: clawhub install policy-lawyer
+schema_version: '1.0'

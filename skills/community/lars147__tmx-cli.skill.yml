@@ -1,0 +1,65 @@
+name: cookidoo
+title: Cookidoo
+version: 0.1.0
+description: Manage Thermomix/Cookidoo meal planning via tmx-cli. Use for recipe search, weekly meal plan management, shopping
+  list generation, favorites, and recipe details. Trigger when the user mentions Cookidoo, Thermomix, Wochenplan, meal plan,
+  Rezept, recipe, or Einkaufsliste for cooking.
+metadata:
+  author: lars147
+  category: Search & Research
+  tags:
+  - search-research
+  - cookidoo
+  source: clawhub-community
+  clawhub_slug: tmx-cli
+  clawhub_path: lars147/tmx-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cookidoo
+
+    # Source: ClawHub community skill by lars147
+
+    # Install: clawhub install tmx-cli
+
+    # Path: lars147/tmx-cli
+
+
+    ## Description
+
+    Manage Thermomix/Cookidoo meal planning via tmx-cli. Use for recipe search, weekly meal plan management, shopping list
+    generation, favorites, and recipe details. Trigger when the user mentions Cookidoo, Thermomix, Wochenplan, meal plan,
+    Rezept, recipe, or Einkaufsliste for cooking.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - tmx_cli.py
+
+    - references/commands.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tmx-cli
+
+    ```'
+examples:
+- description: Install Cookidoo from ClawHub
+  usage: clawhub install tmx-cli
+schema_version: '1.0'

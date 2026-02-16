@@ -1,0 +1,63 @@
+name: beauty-generation-free
+title: Beauty-Generation
+version: 1.2.24
+description: FREE AI image generation service for creating professional portrait images of attractive people with diverse
+  customization options. Supports 140+ nationalities, multiple styles, and comprehensive character customization. Fast generation
+  (3-5 seconds) with built-in content safety filters.
+metadata:
+  author: luruibu
+  category: Media & Content
+  tags:
+  - media-content
+  - beauty
+  - generation
+  - free
+  source: clawhub-community
+  clawhub_slug: beauty-generation-api
+  clawhub_path: luruibu/beauty-generation-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Beauty-Generation
+
+    # Source: ClawHub community skill by luruibu
+
+    # Install: clawhub install beauty-generation-api
+
+    # Path: luruibu/beauty-generation-api
+
+
+    ## Description
+
+    FREE AI image generation service for creating professional portrait images of attractive people with diverse customization
+    options. Supports 140+ nationalities, multiple styles, and comprehensive character customization. Fast generation (3-5
+    seconds) with built-in content safety filters.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/generate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install beauty-generation-api
+
+    ```'
+examples:
+- description: Install Beauty-Generation from ClawHub
+  usage: clawhub install beauty-generation-api
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: recgov-availability
+title: recreation.gov availability search
+version: 1.0.0
+description: Check campsite availability on recreation.gov for federal campgrounds (National Parks, USFS, BLM). Requires campground
+  ID(s) — get from ridb-search or recreation.gov URLs.
+metadata:
+  author: seanrea
+  category: Search & Research
+  tags:
+  - search-research
+  - recgov
+  - availability
+  source: clawhub-community
+  clawhub_slug: recgov-availability
+  clawhub_path: seanrea/recgov-availability
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# recreation.gov availability search
+
+    # Source: ClawHub community skill by seanrea
+
+    # Install: clawhub install recgov-availability
+
+    # Path: seanrea/recgov-availability
+
+
+    ## Description
+
+    Check campsite availability on recreation.gov for federal campgrounds (National Parks, USFS, BLM). Requires campground
+    ID(s) — get from ridb-search or recreation.gov URLs.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-notes.md
+
+    - scripts/check.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install recgov-availability
+
+    ```'
+examples:
+- description: Install recreation.gov availability search from ClawHub
+  usage: clawhub install recgov-availability
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: soul-in-sapphire
+title: Soul In Sapphire
+version: 1.0.4
+description: Generic long-term memory (LTM) operations for OpenClaw using Notion (2025-09-03 data_sources). Use for durable
+  memory writes/search, emotion-state ticks, journal writes, and model-controlled subagent spawn planning via local JSON presets.
+metadata:
+  author: nextaltair
+  category: Search & Research
+  tags:
+  - search-research
+  - soul
+  - sapphire
+  source: clawhub-community
+  clawhub_slug: soul-in-sapphire
+  clawhub_path: nextaltair/soul-in-sapphire
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Soul In Sapphire
+
+    # Source: ClawHub community skill by nextaltair
+
+    # Install: clawhub install soul-in-sapphire
+
+    # Path: nextaltair/soul-in-sapphire
+
+
+    ## Description
+
+    Generic long-term memory (LTM) operations for OpenClaw using Notion (2025-09-03 data_sources). Use for durable memory
+    writes/search, emotion-state ticks, journal writes, and model-controlled subagent spawn planning via local JSON presets.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/bootstrap_config.js
+
+    - scripts/emostate_config.js
+
+    - scripts/emostate_notion.js
+
+    - scripts/emostate_tick.js
+
+    - scripts/journal_patch_schema.js
+
+    - scripts/journal_write.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install soul-in-sapphire
+
+    ```'
+examples:
+- description: Install Soul In Sapphire from ClawHub
+  usage: clawhub install soul-in-sapphire
+schema_version: '1.0'

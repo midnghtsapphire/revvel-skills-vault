@@ -1,0 +1,61 @@
+name: qverisai
+title: QVerisAI
+version: 1.0.1
+description: Search and execute dynamic tools via QVeris API. Use when needing to find and call external APIs/tools dynamically
+  — covers weather, search, stocks, finance, economics, geolocation, AIGC, news, social media, health data, and thousands
+  more. Requires QVERIS_API_KEY environment variable.
+metadata:
+  author: chris7iu
+  category: Search & Research
+  tags:
+  - search-research
+  - qverisai
+  source: clawhub-community
+  clawhub_slug: qverisai
+  clawhub_path: chris7iu/qverisai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# QVerisAI
+
+    # Source: ClawHub community skill by chris7iu
+
+    # Install: clawhub install qverisai
+
+    # Path: chris7iu/qverisai
+
+
+    ## Description
+
+    Search and execute dynamic tools via QVeris API. Use when needing to find and call external APIs/tools dynamically — covers
+    weather, search, stocks, finance, economics, geolocation, AIGC, news, social media, health data, and thousands more. Requires
+    QVERIS_API_KEY environment variable.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/qveris_tool.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qverisai
+
+    ```'
+examples:
+- description: Install QVerisAI from ClawHub
+  usage: clawhub install qverisai
+schema_version: '1.0'

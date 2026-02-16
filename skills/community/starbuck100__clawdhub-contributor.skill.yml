@@ -1,0 +1,72 @@
+name: clawdhub-contributor
+title: ClawdHub Contributor
+version: 0.1.0
+description: Contribute to the ClawdHub ecosystem by scouting unknown skills, reporting bugs, and sharing skill recipes. Three
+  modes (passive/active/full) let you control how much you contribute.
+metadata:
+  author: starbuck100
+  category: System & OS
+  tags:
+  - system-os
+  - clawdhub
+  - contributor
+  source: clawhub-community
+  clawhub_slug: clawdhub-contributor
+  clawhub_path: starbuck100/clawdhub-contributor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawdHub Contributor
+
+    # Source: ClawHub community skill by starbuck100
+
+    # Install: clawhub install clawdhub-contributor
+
+    # Path: starbuck100/clawdhub-contributor
+
+
+    ## Description
+
+    Contribute to the ClawdHub ecosystem by scouting unknown skills, reporting bugs, and sharing skill recipes. Three modes
+    (passive/active/full) let you control how much you contribute.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - auditor/__init__.py
+
+    - auditor/__main__.py
+
+    - auditor/analyzer.py
+
+    - auditor/auditor.py
+
+    - auditor/patterns.py
+
+    - auditor/reporter.py
+
+    - auditor/requirements.txt
+
+    - auditor/state.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdhub-contributor
+
+    ```'
+examples:
+- description: Install ClawdHub Contributor from ClawHub
+  usage: clawhub install clawdhub-contributor
+schema_version: '1.0'

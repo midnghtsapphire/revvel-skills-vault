@@ -1,0 +1,55 @@
+name: flux_2_flash_____
+title: Flux 2 Flash 图像生成
+version: 1.0.0
+description: 使用 Flux 2 Flash 模型生成或编辑图像。当用户想要文生图、图像编辑，或提到 flux 2、FLUX.2 时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - flux
+  - flash
+  - 图像生成
+  source: clawhub-community
+  clawhub_slug: flux2-flash
+  clawhub_path: hexiaochun/flux2-flash
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Flux 2 Flash 图像生成
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install flux2-flash
+
+    # Path: hexiaochun/flux2-flash
+
+
+    ## Description
+
+    使用 Flux 2 Flash 模型生成或编辑图像。当用户想要文生图、图像编辑，或提到 flux 2、FLUX.2 时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flux2-flash
+
+    ```'
+examples:
+- description: Install Flux 2 Flash 图像生成 from ClawHub
+  usage: clawhub install flux2-flash
+schema_version: '1.0'

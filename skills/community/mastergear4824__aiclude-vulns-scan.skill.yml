@@ -1,0 +1,59 @@
+name: aiclude-vulns-scan
+title: AICLUDE Vulnerability Scanner
+version: 1.0.1
+description: Scan MCP Servers and AI Agent Skills for security vulnerabilities. 7 parallel engines detect prompt injection,
+  tool poisoning, malware, supply chain attacks, and more.
+metadata:
+  author: mastergear4824
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - aiclude
+  - vulns
+  - scan
+  source: clawhub-community
+  clawhub_slug: aiclude-vulns-scan
+  clawhub_path: mastergear4824/aiclude-vulns-scan
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AICLUDE Vulnerability Scanner
+
+    # Source: ClawHub community skill by mastergear4824
+
+    # Install: clawhub install aiclude-vulns-scan
+
+    # Path: mastergear4824/aiclude-vulns-scan
+
+
+    ## Description
+
+    Scan MCP Servers and AI Agent Skills for security vulnerabilities. 7 parallel engines detect prompt injection, tool poisoning,
+    malware, supply chain attacks, and more.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aiclude-vulns-scan
+
+    ```'
+examples:
+- description: Install AICLUDE Vulnerability Scanner from ClawHub
+  usage: clawhub install aiclude-vulns-scan
+schema_version: '1.0'

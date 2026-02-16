@@ -1,0 +1,60 @@
+name: gedcom-explorer
+title: GEDCOM Explorer
+version: 1.0.0
+description: Generate an interactive family tree dashboard from any GEDCOM (.ged) file. Creates a single-file HTML app with
+  5 tabs (Dashboard, Family Tree, People, Timeline, Daily Alerts), search, person modals, charts, and "On This Day" events.
+  Use when asked to visualize genealogy data, explore family history,
+metadata:
+  author: justinhartbiz
+  category: Search & Research
+  tags:
+  - search-research
+  - gedcom
+  - explorer
+  source: clawhub-community
+  clawhub_slug: gedcom-explorer
+  clawhub_path: justinhartbiz/gedcom-explorer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GEDCOM Explorer
+
+    # Source: ClawHub community skill by justinhartbiz
+
+    # Install: clawhub install gedcom-explorer
+
+    # Path: justinhartbiz/gedcom-explorer
+
+
+    ## Description
+
+    Generate an interactive family tree dashboard from any GEDCOM (.ged) file. Creates a single-file HTML app with 5 tabs
+    (Dashboard, Family Tree, People, Timeline, Daily Alerts), search, person modals, charts, and "On This Day" events. Use
+    when asked to visualize genealogy data, explore family history,
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/build_explorer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gedcom-explorer
+
+    ```'
+examples:
+- description: Install GEDCOM Explorer from ClawHub
+  usage: clawhub install gedcom-explorer
+schema_version: '1.0'

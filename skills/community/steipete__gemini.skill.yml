@@ -1,0 +1,53 @@
+name: gemini
+title: Gemini
+version: 1.0.0
+description: Gemini CLI for one-shot Q&A, summaries, and generation.
+metadata:
+  author: steipete
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - gemini
+  source: clawhub-community
+  clawhub_slug: gemini
+  clawhub_path: steipete/gemini
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gemini
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install gemini
+
+    # Path: steipete/gemini
+
+
+    ## Description
+
+    Gemini CLI for one-shot Q&A, summaries, and generation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gemini
+
+    ```'
+examples:
+- description: Install Gemini from ClawHub
+  usage: clawhub install gemini
+schema_version: '1.0'

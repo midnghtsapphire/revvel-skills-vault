@@ -1,0 +1,72 @@
+name: agent-credit
+title: Agent Credit
+version: 1.0.0
+description: Borrow from Aave via credit delegation. Agent self-funds by borrowing against delegator collateral. Supports
+  borrow, repay, health checks. Works on Aave V2/V3.
+metadata:
+  author: aaronjmars
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  - credit
+  source: clawhub-community
+  clawhub_slug: agent-credit
+  clawhub_path: aaronjmars/agent-credit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Credit
+
+    # Source: ClawHub community skill by aaronjmars
+
+    # Install: clawhub install agent-credit
+
+    # Path: aaronjmars/agent-credit
+
+
+    ## Description
+
+    Borrow from Aave via credit delegation. Agent self-funds by borrowing against delegator collateral. Supports borrow, repay,
+    health checks. Works on Aave V2/V3.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - aave-borrow.sh
+
+    - aave-repay.sh
+
+    - aave-setup.sh
+
+    - aave-status.sh
+
+    - config.example.json
+
+    - contracts.md
+
+    - deployments.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-credit
+
+    ```'
+examples:
+- description: Install Agent Credit from ClawHub
+  usage: clawhub install agent-credit
+schema_version: '1.0'

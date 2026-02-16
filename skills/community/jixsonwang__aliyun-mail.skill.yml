@@ -1,0 +1,64 @@
+name: aliyun-mail
+title: Aliyun Mail
+version: 1.0.0
+description: A skill to send emails via Aliyun enterprise email service with support for markdown, HTML text, attachments,
+  and syntax highlighting for code blocks.
+metadata:
+  author: jixsonwang
+  category: Communication
+  tags:
+  - communication
+  - aliyun
+  - mail
+  source: clawhub-community
+  clawhub_slug: aliyun-mail
+  clawhub_path: jixsonwang/aliyun-mail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Aliyun Mail
+
+    # Source: ClawHub community skill by jixsonwang
+
+    # Install: clawhub install aliyun-mail
+
+    # Path: jixsonwang/aliyun-mail
+
+
+    ## Description
+
+    A skill to send emails via Aliyun enterprise email service with support for markdown, HTML text, attachments, and syntax
+    highlighting for code blocks.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - email_sender.py
+
+    - example-smtp-config.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aliyun-mail
+
+    ```'
+examples:
+- description: Install Aliyun Mail from ClawHub
+  usage: clawhub install aliyun-mail
+schema_version: '1.0'

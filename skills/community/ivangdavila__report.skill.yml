@@ -1,0 +1,65 @@
+name: report
+title: Report
+version: 1.0.0
+description: Configure custom recurring reports with flexible schedules, data sources, and delivery formats.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - report
+  source: clawhub-community
+  clawhub_slug: report
+  clawhub_path: ivangdavila/report
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Report
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install report
+
+    # Path: ivangdavila/report
+
+
+    ## Description
+
+    Configure custom recurring reports with flexible schedules, data sources, and delivery formats.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - alerts.md
+
+    - data-input.md
+
+    - delivery.md
+
+    - examples.md
+
+    - formats.md
+
+    - schema.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install report
+
+    ```'
+examples:
+- description: Install Report from ClawHub
+  usage: clawhub install report
+schema_version: '1.0'

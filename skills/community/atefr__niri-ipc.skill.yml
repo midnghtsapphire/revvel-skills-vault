@@ -1,0 +1,66 @@
+name: niri-ipc
+title: Niri IPC
+version: 1.0.0
+description: Control the Niri Wayland compositor on Linux via its IPC (`niri msg --json` / $NIRI_SOCKET). Use when you need
+  to query Niri state (outputs/workspaces/windows/focused window) or perform actions (focus/move/close windows, switch workspaces,
+  spawn commands, reload config) from an OpenClaw agent runnin
+metadata:
+  author: atefr
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - niri
+  - ipc
+  source: clawhub-community
+  clawhub_slug: niri-ipc
+  clawhub_path: atefr/niri-ipc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Niri IPC
+
+    # Source: ClawHub community skill by atefr
+
+    # Install: clawhub install niri-ipc
+
+    # Path: atefr/niri-ipc
+
+
+    ## Description
+
+    Control the Niri Wayland compositor on Linux via its IPC (`niri msg --json` / $NIRI_SOCKET). Use when you need to query
+    Niri state (outputs/workspaces/windows/focused window) or perform actions (focus/move/close windows, switch workspaces,
+    spawn commands, reload config) from an OpenClaw agent runnin
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/ipc.md
+
+    - scripts/niri.py
+
+    - scripts/niri_ctl.py
+
+    - scripts/niri_socket.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install niri-ipc
+
+    ```'
+examples:
+- description: Install Niri IPC from ClawHub
+  usage: clawhub install niri-ipc
+schema_version: '1.0'

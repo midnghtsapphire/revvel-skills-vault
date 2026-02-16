@@ -1,0 +1,60 @@
+name: discord-watcher
+title: Discord Watcher
+version: 1.0.0
+description: Use this skill to keep up to date with specific Discord channels by fetching recent messages. Requires DISCORD_TOKEN.
+metadata:
+  author: louis-br
+  category: Social Media
+  tags:
+  - social-media
+  - discord
+  - watcher
+  source: clawhub-community
+  clawhub_slug: discord-watcher
+  clawhub_path: louis-br/discord-watcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Discord Watcher
+
+    # Source: ClawHub community skill by louis-br
+
+    # Install: clawhub install discord-watcher
+
+    # Path: louis-br/discord-watcher
+
+
+    ## Description
+
+    Use this skill to keep up to date with specific Discord channels by fetching recent messages. Requires DISCORD_TOKEN.
+
+
+    ## Files
+
+    - .gitignore
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - update.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install discord-watcher
+
+    ```'
+examples:
+- description: Install Discord Watcher from ClawHub
+  usage: clawhub install discord-watcher
+schema_version: '1.0'

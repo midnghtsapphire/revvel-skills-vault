@@ -1,0 +1,54 @@
+name: release-bump
+title: Release Bump
+version: 0.1.0
+description: Use when bumping ralph-orchestrator version for a new release, after fixes are committed and ready to publish
+metadata:
+  author: paulpete
+  category: General
+  tags:
+  - general
+  - release
+  - bump
+  source: clawhub-community
+  clawhub_slug: release-bump
+  clawhub_path: paulpete/release-bump
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Release Bump
+
+    # Source: ClawHub community skill by paulpete
+
+    # Install: clawhub install release-bump
+
+    # Path: paulpete/release-bump
+
+
+    ## Description
+
+    Use when bumping ralph-orchestrator version for a new release, after fixes are committed and ready to publish
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install release-bump
+
+    ```'
+examples:
+- description: Install Release Bump from ClawHub
+  usage: clawhub install release-bump
+schema_version: '1.0'

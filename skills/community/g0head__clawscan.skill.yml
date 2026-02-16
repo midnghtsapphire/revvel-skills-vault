@@ -1,0 +1,59 @@
+name: skillguard
+title: ClawScan
+version: 2.0.0
+description: Security scanner for ClawHub skills. Vet third-party skills before installation — detect dangerous patterns,
+  suspicious code, and risky dependencies.
+metadata:
+  author: g0head
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skillguard
+  source: clawhub-community
+  clawhub_slug: clawscan
+  clawhub_path: g0head/clawscan
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawScan
+
+    # Source: ClawHub community skill by g0head
+
+    # Install: clawhub install clawscan
+
+    # Path: g0head/clawscan
+
+
+    ## Description
+
+    Security scanner for ClawHub skills. Vet third-party skills before installation — detect dangerous patterns, suspicious
+    code, and risky dependencies.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - scripts/skillguard.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawscan
+
+    ```'
+examples:
+- description: Install ClawScan from ClawHub
+  usage: clawhub install clawscan
+schema_version: '1.0'

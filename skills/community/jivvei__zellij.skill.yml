@@ -1,0 +1,61 @@
+name: zellij
+title: Zellij Terminal Workspace
+version: 1.0.1
+description: Remote-control zellij sessions for interactive CLIs by sending keystrokes and scraping pane output.
+metadata:
+  author: jivvei
+  category: Development & Coding
+  tags:
+  - development-coding
+  - zellij
+  source: clawhub-community
+  clawhub_slug: zellij
+  clawhub_path: jivvei/zellij
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zellij Terminal Workspace
+
+    # Source: ClawHub community skill by jivvei
+
+    # Install: clawhub install zellij
+
+    # Path: jivvei/zellij
+
+
+    ## Description
+
+    Remote-control zellij sessions for interactive CLIs by sending keystrokes and scraping pane output.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cleanup-sessions.sh
+
+    - scripts/find-panes.sh
+
+    - scripts/find-sessions.sh
+
+    - scripts/wait-for-text.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zellij
+
+    ```'
+examples:
+- description: Install Zellij Terminal Workspace from ClawHub
+  usage: clawhub install zellij
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: n8n-monitor
+title: N8n Monitor
+version: 1.0.1
+description: ''
+metadata:
+  author: smitti7971
+  category: System & OS
+  tags:
+  - system-os
+  - n8n
+  - monitor
+  source: clawhub-community
+  clawhub_slug: n8n-monitor
+  clawhub_path: smitti7971/n8n-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# N8n Monitor
+
+    # Source: ClawHub community skill by smitti7971
+
+    # Install: clawhub install n8n-monitor
+
+    # Path: smitti7971/n8n-monitor
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - main.js
+
+    - skill.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install n8n-monitor
+
+    ```'
+examples:
+- description: Install N8n Monitor from ClawHub
+  usage: clawhub install n8n-monitor
+schema_version: '1.0'

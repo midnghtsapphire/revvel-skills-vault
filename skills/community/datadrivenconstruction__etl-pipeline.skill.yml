@@ -1,0 +1,56 @@
+name: etl-pipeline
+title: Etl Pipeline
+version: 1.0.0
+description: '"Build automated ETL (Extract-Transform-Load) pipelines for construction data. Process PDFs, Excel, BIM exports.
+  Generate reports, dashboards, and integrate with other systems. Orchestrate with Airflow or n8n."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - etl
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: etl-pipeline
+  clawhub_path: datadrivenconstruction/etl-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Etl Pipeline
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install etl-pipeline
+
+    # Path: datadrivenconstruction/etl-pipeline
+
+
+    ## Description
+
+    "Build automated ETL (Extract-Transform-Load) pipelines for construction data. Process PDFs, Excel, BIM exports. Generate
+    reports, dashboards, and integrate with other systems. Orchestrate with Airflow or n8n."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install etl-pipeline
+
+    ```'
+examples:
+- description: Install Etl Pipeline from ClawHub
+  usage: clawhub install etl-pipeline
+schema_version: '1.0'

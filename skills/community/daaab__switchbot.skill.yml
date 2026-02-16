@@ -1,0 +1,57 @@
+name: switchbot
+title: SwitchBot Smart Home Control
+version: 1.0.0
+description: Control SwitchBot smart home devices (curtains, plugs, lights, locks, etc.) via SwitchBot Cloud API. Use when
+  user asks to open/close curtains, turn on/off lights/plugs, check temperature/humidity, or control any SwitchBot device.
+metadata:
+  author: daaab
+  category: Development & Coding
+  tags:
+  - development-coding
+  - switchbot
+  source: clawhub-community
+  clawhub_slug: switchbot
+  clawhub_path: daaab/switchbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SwitchBot Smart Home Control
+
+    # Source: ClawHub community skill by daaab
+
+    # Install: clawhub install switchbot
+
+    # Path: daaab/switchbot
+
+
+    ## Description
+
+    Control SwitchBot smart home devices (curtains, plugs, lights, locks, etc.) via SwitchBot Cloud API. Use when user asks
+    to open/close curtains, turn on/off lights/plugs, check temperature/humidity, or control any SwitchBot device.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/switchbot.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install switchbot
+
+    ```'
+examples:
+- description: Install SwitchBot Smart Home Control from ClawHub
+  usage: clawhub install switchbot
+schema_version: '1.0'

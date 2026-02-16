@@ -1,0 +1,73 @@
+name: tiktok-android-bot
+title: Tiktok Android
+version: 1.0.0
+description: Automate TikTok engagement on Android using ADB. Search topics, comment with AI or templates, includes setup
+  wizard. Use for TikTok automation campaigns and building social presence through strategic commenting.
+metadata:
+  author: mladjan
+  category: Search & Research
+  tags:
+  - search-research
+  - tiktok
+  - android
+  - bot
+  source: clawhub-community
+  clawhub_slug: tiktok-android
+  clawhub_path: mladjan/tiktok-android
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tiktok Android
+
+    # Source: ClawHub community skill by mladjan
+
+    # Install: clawhub install tiktok-android
+
+    # Path: mladjan/tiktok-android
+
+
+    ## Description
+
+    Automate TikTok engagement on Android using ADB. Search topics, comment with AI or templates, includes setup wizard. Use
+    for TikTok automation campaigns and building social presence through strategic commenting.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.py
+
+    - requirements.txt
+
+    - run_complete_session.py
+
+    - run_full_campaign.py
+
+    - setup.py
+
+    - tiktok_bot.py
+
+    - src/__init__.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tiktok-android
+
+    ```'
+examples:
+- description: Install Tiktok Android from ClawHub
+  usage: clawhub install tiktok-android
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: cookidoo
+title: Clawdbot Skill Cookidoo
+version: 1.0.1
+description: Access Cookidoo (Thermomix) recipes, shopping lists, and meal planning via the unofficial cookidoo-api Python
+  package. Use for viewing recipes, weekly plans, favorites, and syncing ingredients to shopping lists.
+metadata:
+  author: thekie
+  category: Development & Coding
+  tags:
+  - development-coding
+  - cookidoo
+  source: clawhub-community
+  clawhub_slug: cookidoo
+  clawhub_path: thekie/cookidoo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Skill Cookidoo
+
+    # Source: ClawHub community skill by thekie
+
+    # Install: clawhub install cookidoo
+
+    # Path: thekie/cookidoo
+
+
+    ## Description
+
+    Access Cookidoo (Thermomix) recipes, shopping lists, and meal planning via the unofficial cookidoo-api Python package.
+    Use for viewing recipes, weekly plans, favorites, and syncing ingredients to shopping lists.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/cookidoo_cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cookidoo
+
+    ```'
+examples:
+- description: Install Clawdbot Skill Cookidoo from ClawHub
+  usage: clawhub install cookidoo
+schema_version: '1.0'

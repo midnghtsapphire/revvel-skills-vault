@@ -1,0 +1,56 @@
+name: test-writer
+title: Test Writer
+version: 1.0.0
+description: Generate unit tests from source files. Use when you need test coverage fast.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - test
+  - writer
+  source: clawhub-community
+  clawhub_slug: test-writer
+  clawhub_path: lxgicstudios/test-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Test Writer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install test-writer
+
+    # Path: lxgicstudios/test-writer
+
+
+    ## Description
+
+    Generate unit tests from source files. Use when you need test coverage fast.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install test-writer
+
+    ```'
+examples:
+- description: Install Test Writer from ClawHub
+  usage: clawhub install test-writer
+schema_version: '1.0'

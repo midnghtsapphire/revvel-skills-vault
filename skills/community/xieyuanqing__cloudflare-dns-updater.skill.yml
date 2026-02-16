@@ -1,0 +1,63 @@
+name: cloudflare-dns-updater
+title: Cloudflare Dns Updater
+version: 0.1.1
+description: '"Creates or updates a proxied Cloudflare DNS A record. Use when you need to programmatically point a subdomain
+  to an IP address. Takes record name, zone name, and IP address as input."'
+metadata:
+  author: xieyuanqing
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - cloudflare
+  - dns
+  - updater
+  source: clawhub-community
+  clawhub_slug: cloudflare-dns-updater
+  clawhub_path: xieyuanqing/cloudflare-dns-updater
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cloudflare Dns Updater
+
+    # Source: ClawHub community skill by xieyuanqing
+
+    # Install: clawhub install cloudflare-dns-updater
+
+    # Path: xieyuanqing/cloudflare-dns-updater
+
+
+    ## Description
+
+    "Creates or updates a proxied Cloudflare DNS A record. Use when you need to programmatically point a subdomain to an IP
+    address. Takes record name, zone name, and IP address as input."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/update-record.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cloudflare-dns-updater
+
+    ```'
+examples:
+- description: Install Cloudflare Dns Updater from ClawHub
+  usage: clawhub install cloudflare-dns-updater
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: pricing-test
+title: pricing-test
+version: 1.0.0
+description: 测试和校验 V3 API 模型的定价信息和实际扣费。当用户要测试模型价格、校验扣费、验证新模型定价、或提到"价格测试"、"扣费测试"时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: Development & Coding
+  tags:
+  - development-coding
+  - pricing
+  - test
+  source: clawhub-community
+  clawhub_slug: pricing-test
+  clawhub_path: hexiaochun/pricing-test
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# pricing-test
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install pricing-test
+
+    # Path: hexiaochun/pricing-test
+
+
+    ## Description
+
+    测试和校验 V3 API 模型的定价信息和实际扣费。当用户要测试模型价格、校验扣费、验证新模型定价、或提到"价格测试"、"扣费测试"时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/test_pricing.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pricing-test
+
+    ```'
+examples:
+- description: Install pricing-test from ClawHub
+  usage: clawhub install pricing-test
+schema_version: '1.0'

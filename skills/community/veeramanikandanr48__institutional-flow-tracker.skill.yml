@@ -1,0 +1,73 @@
+name: institutional-flow-tracker
+title: Institutional Flow Tracker
+version: 0.1.0
+description: Use this skill to track institutional investor ownership changes and portfolio flows using 13F filings data.
+  Analyzes hedge funds, mutual funds, and other institutional holders to identify stocks with significant smart money accumulation
+  or distribution. Helps discover stocks before major moves by f
+metadata:
+  author: veeramanikandanr48
+  category: Development & Coding
+  tags:
+  - development-coding
+  - institutional
+  - flow
+  - tracker
+  source: clawhub-community
+  clawhub_slug: institutional-flow-tracker
+  clawhub_path: veeramanikandanr48/institutional-flow-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Institutional Flow Tracker
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install institutional-flow-tracker
+
+    # Path: veeramanikandanr48/institutional-flow-tracker
+
+
+    ## Description
+
+    Use this skill to track institutional investor ownership changes and portfolio flows using 13F filings data. Analyzes
+    hedge funds, mutual funds, and other institutional holders to identify stocks with significant smart money accumulation
+    or distribution. Helps discover stocks before major moves by f
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/13f_filings_guide.md
+
+    - references/institutional_investor_types.md
+
+    - references/interpretation_framework.md
+
+    - scripts/analyze_single_stock.py
+
+    - scripts/track_institution_portfolio.py
+
+    - scripts/track_institutional_flow.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install institutional-flow-tracker
+
+    ```'
+examples:
+- description: Install Institutional Flow Tracker from ClawHub
+  usage: clawhub install institutional-flow-tracker
+schema_version: '1.0'

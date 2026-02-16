@@ -1,0 +1,53 @@
+name: newsletter
+title: Newsletter
+version: 1.0.0
+description: Create, grow, and monetize newsletters with effective content and subscriber strategies.
+metadata:
+  author: ivangdavila
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - newsletter
+  source: clawhub-community
+  clawhub_slug: newsletter
+  clawhub_path: ivangdavila/newsletter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Newsletter
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install newsletter
+
+    # Path: ivangdavila/newsletter
+
+
+    ## Description
+
+    Create, grow, and monetize newsletters with effective content and subscriber strategies.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install newsletter
+
+    ```'
+examples:
+- description: Install Newsletter from ClawHub
+  usage: clawhub install newsletter
+schema_version: '1.0'

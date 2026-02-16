@@ -1,0 +1,62 @@
+name: pr-review-loop
+title: PR Review Loop
+version: 1.0.0
+description: Autonomous PR review loop with Greptile. Use when an agent creates a PR and needs to autonomously handle code
+  review feedback — reading Greptile reviews, fixing issues, pushing fixes, re-triggering review, and auto-merging when score
+  is 4/5+. Trigger on commands like "pr review {url}", "review my PR
+metadata:
+  author: cemoso
+  category: Development & Coding
+  tags:
+  - development-coding
+  - review
+  - loop
+  source: clawhub-community
+  clawhub_slug: pr-review-loop
+  clawhub_path: cemoso/pr-review-loop
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PR Review Loop
+
+    # Source: ClawHub community skill by cemoso
+
+    # Install: clawhub install pr-review-loop
+
+    # Path: cemoso/pr-review-loop
+
+
+    ## Description
+
+    Autonomous PR review loop with Greptile. Use when an agent creates a PR and needs to autonomously handle code review feedback
+    — reading Greptile reviews, fixing issues, pushing fixes, re-triggering review, and auto-merging when score is 4/5+. Trigger
+    on commands like "pr review {url}", "review my PR
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/greptile-patterns.md
+
+    - scripts/pr-review-loop.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pr-review-loop
+
+    ```'
+examples:
+- description: Install PR Review Loop from ClawHub
+  usage: clawhub install pr-review-loop
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: financial-shield
+title: Financial Shield
+version: 3.0.4
+description: Financial Shield (Stay in the Cheap Tier!) Tired of those "Long Context" double-billing surprises? I just published
+  Financial Shield to ClawHub! This skill is designed to keep your sessions within the 128k "cheap" tier by monitoring your
+  context weight and alerting you before you hit the expensive z
+metadata:
+  author: ahuwaramazda
+  category: Search & Research
+  tags:
+  - search-research
+  - financial
+  - shield
+  source: clawhub-community
+  clawhub_slug: financial-shield
+  clawhub_path: ahuwaramazda/financial-shield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Financial Shield
+
+    # Source: ClawHub community skill by ahuwaramazda
+
+    # Install: clawhub install financial-shield
+
+    # Path: ahuwaramazda/financial-shield
+
+
+    ## Description
+
+    Financial Shield (Stay in the Cheap Tier!) Tired of those "Long Context" double-billing surprises? I just published Financial
+    Shield to ClawHub! This skill is designed to keep your sessions within the 128k "cheap" tier by monitoring your context
+    weight and alerting you before you hit the expensive z
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install financial-shield
+
+    ```'
+examples:
+- description: Install Financial Shield from ClawHub
+  usage: clawhub install financial-shield
+schema_version: '1.0'

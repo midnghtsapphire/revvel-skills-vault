@@ -1,0 +1,57 @@
+name: family_todo_manager
+title: Manage Your Family's todos
+version: 1.0.0
+description: Manage family todo lists with multi-user support
+metadata:
+  author: thurendous
+  category: General
+  tags:
+  - general
+  - family
+  - todo
+  - manager
+  source: clawhub-community
+  clawhub_slug: family-todo-management
+  clawhub_path: thurendous/family-todo-management
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Manage Your Family''s todos
+
+    # Source: ClawHub community skill by thurendous
+
+    # Install: clawhub install family-todo-management
+
+    # Path: thurendous/family-todo-management
+
+
+    ## Description
+
+    Manage family todo lists with multi-user support
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - todo.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install family-todo-management
+
+    ```'
+examples:
+- description: Install Manage Your Family's todos from ClawHub
+  usage: clawhub install family-todo-management
+schema_version: '1.0'

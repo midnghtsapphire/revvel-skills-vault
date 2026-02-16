@@ -1,0 +1,56 @@
+name: spogo-linux
+title: Spotify Headless
+version: 1.0.3
+description: Spotify CLI for headless Linux servers. Control Spotify playback via terminal using cookie auth (no OAuth callback
+  needed). Perfect for remote servers without localhost access.
+metadata:
+  author: shaharsha
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - spogo
+  - linux
+  source: clawhub-community
+  clawhub_slug: spotify-linux
+  clawhub_path: shaharsha/spotify-linux
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Spotify Headless
+
+    # Source: ClawHub community skill by shaharsha
+
+    # Install: clawhub install spotify-linux
+
+    # Path: shaharsha/spotify-linux
+
+
+    ## Description
+
+    Spotify CLI for headless Linux servers. Control Spotify playback via terminal using cookie auth (no OAuth callback needed).
+    Perfect for remote servers without localhost access.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install spotify-linux
+
+    ```'
+examples:
+- description: Install Spotify Headless from ClawHub
+  usage: clawhub install spotify-linux
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: demo-video
+title: Demo Video Creator
+version: 1.0.0
+description: Create product demo videos by automating browser interactions and capturing frames. Use when the user wants to
+  record a demo, walkthrough, product showcase, or interactive video of a web application. Supports Playwright CDP screencast
+  for high-quality capture and FFmpeg for video encoding.
+metadata:
+  author: cyberfront-ai
+  category: Search & Research
+  tags:
+  - search-research
+  - demo
+  - video
+  source: clawhub-community
+  clawhub_slug: demo-video
+  clawhub_path: cyberfront-ai/demo-video
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Demo Video Creator
+
+    # Source: ClawHub community skill by cyberfront-ai
+
+    # Install: clawhub install demo-video
+
+    # Path: cyberfront-ai/demo-video
+
+
+    ## Description
+
+    Create product demo videos by automating browser interactions and capturing frames. Use when the user wants to record
+    a demo, walkthrough, product showcase, or interactive video of a web application. Supports Playwright CDP screencast for
+    high-quality capture and FFmpeg for video encoding.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/demo-planning.md
+
+    - scripts/frames-to-video.sh
+
+    - scripts/record-demo.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install demo-video
+
+    ```'
+examples:
+- description: Install Demo Video Creator from ClawHub
+  usage: clawhub install demo-video
+schema_version: '1.0'

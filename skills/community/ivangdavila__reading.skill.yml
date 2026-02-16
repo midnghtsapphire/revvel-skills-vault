@@ -1,0 +1,53 @@
+name: reading
+title: Reading
+version: 1.0.0
+description: Help users read better — book recommendations, retention strategies, and matching reading approach to goals.
+metadata:
+  author: ivangdavila
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - reading
+  source: clawhub-community
+  clawhub_slug: reading
+  clawhub_path: ivangdavila/reading
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reading
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install reading
+
+    # Path: ivangdavila/reading
+
+
+    ## Description
+
+    Help users read better — book recommendations, retention strategies, and matching reading approach to goals.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reading
+
+    ```'
+examples:
+- description: Install Reading from ClawHub
+  usage: clawhub install reading
+schema_version: '1.0'

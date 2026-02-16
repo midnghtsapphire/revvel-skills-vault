@@ -1,0 +1,70 @@
+name: pipedream-connect
+title: Pipedream Connect Integration
+version: 1.0.0
+description: Connect 2,000+ APIs with managed OAuth via Pipedream. Includes full UI integration for Clawdbot Gateway dashboard.
+metadata:
+  author: maverick-software
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - pipedream
+  - connect
+  source: clawhub-community
+  clawhub_slug: pipedream-connect
+  clawhub_path: maverick-software/pipedream-connect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pipedream Connect Integration
+
+    # Source: ClawHub community skill by maverick-software
+
+    # Install: clawhub install pipedream-connect
+
+    # Path: maverick-software/pipedream-connect
+
+
+    ## Description
+
+    Connect 2,000+ APIs with managed OAuth via Pipedream. Includes full UI integration for Clawdbot Gateway dashboard.
+
+
+    ## Files
+
+    - .metadata.json
+
+    - INSTALL.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - reference/README.md
+
+    - reference/pipedream-backend.ts
+
+    - reference/pipedream-controller.ts
+
+    - reference/pipedream-views.ts
+
+    - scripts/pipedream-token-refresh.py
+
+    - scripts/setup-cron.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pipedream-connect
+
+    ```'
+examples:
+- description: Install Pipedream Connect Integration from ClawHub
+  usage: clawhub install pipedream-connect
+schema_version: '1.0'

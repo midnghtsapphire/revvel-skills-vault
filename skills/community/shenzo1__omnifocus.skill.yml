@@ -1,0 +1,73 @@
+name: omnifocus
+title: OmniFocus
+version: 1.0.0
+description: '"Manage OmniFocus tasks via JavaScript for Automation (JXA) scripts. Use when the user asks Clawdbot to interact
+  with OmniFocus, including - (1) Adding tasks to inbox, (2) Listing or searching tasks (inbox, available, flagged, overdue,
+  due soon), (3) Completing tasks, (4) Updating task properties (n'
+metadata:
+  author: shenzo1
+  category: Search & Research
+  tags:
+  - search-research
+  - omnifocus
+  source: clawhub-community
+  clawhub_slug: omnifocus
+  clawhub_path: shenzo1/omnifocus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OmniFocus
+
+    # Source: ClawHub community skill by shenzo1
+
+    # Install: clawhub install omnifocus
+
+    # Path: shenzo1/omnifocus
+
+
+    ## Description
+
+    "Manage OmniFocus tasks via JavaScript for Automation (JXA) scripts. Use when the user asks Clawdbot to interact with
+    OmniFocus, including - (1) Adding tasks to inbox, (2) Listing or searching tasks (inbox, available, flagged, overdue,
+    due soon), (3) Completing tasks, (4) Updating task properties (n
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/automation-guide.md
+
+    - references/jxa-api.md
+
+    - scripts/add_task.js
+
+    - scripts/complete_task.js
+
+    - scripts/get_stats.js
+
+    - scripts/list_tasks.js
+
+    - scripts/search_tasks.js
+
+    - scripts/update_task.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install omnifocus
+
+    ```'
+examples:
+- description: Install OmniFocus from ClawHub
+  usage: clawhub install omnifocus
+schema_version: '1.0'

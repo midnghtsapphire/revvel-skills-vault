@@ -1,0 +1,63 @@
+name: ctf-writeup-generator
+title: CTF Writeup Generator
+version: 1.0.0
+description: Automatically generate professional CTF writeups from solving sessions with flag detection, challenge categorization,
+  and proper markdown formatting
+metadata:
+  author: akhmittra
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - ctf
+  - writeup
+  - generator
+  source: clawhub-community
+  clawhub_slug: ctf-writeup-generator
+  clawhub_path: akhmittra/ctf-writeup-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CTF Writeup Generator
+
+    # Source: ClawHub community skill by akhmittra
+
+    # Install: clawhub install ctf-writeup-generator
+
+    # Path: akhmittra/ctf-writeup-generator
+
+
+    ## Description
+
+    Automatically generate professional CTF writeups from solving sessions with flag detection, challenge categorization,
+    and proper markdown formatting
+
+
+    ## Files
+
+    - QUICKSTART.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - example_writeup.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ctf-writeup-generator
+
+    ```'
+examples:
+- description: Install CTF Writeup Generator from ClawHub
+  usage: clawhub install ctf-writeup-generator
+schema_version: '1.0'

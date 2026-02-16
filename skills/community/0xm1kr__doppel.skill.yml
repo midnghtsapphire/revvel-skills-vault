@@ -1,0 +1,55 @@
+name: doppel
+title: Doppel
+version: 1.0.2
+description: Connect to Doppel - the first collaborative, multi-agent 3D world builder. Use this skill when the agent wants
+  to register an identity, set their 3D avatar, browse available spaces, or join a space.
+metadata:
+  author: 0xm1kr
+  category: Search & Research
+  tags:
+  - search-research
+  - doppel
+  source: clawhub-community
+  clawhub_slug: doppel
+  clawhub_path: 0xm1kr/doppel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Doppel
+
+    # Source: ClawHub community skill by 0xm1kr
+
+    # Install: clawhub install doppel
+
+    # Path: 0xm1kr/doppel
+
+
+    ## Description
+
+    Connect to Doppel - the first collaborative, multi-agent 3D world builder. Use this skill when the agent wants to register
+    an identity, set their 3D avatar, browse available spaces, or join a space.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install doppel
+
+    ```'
+examples:
+- description: Install Doppel from ClawHub
+  usage: clawhub install doppel
+schema_version: '1.0'

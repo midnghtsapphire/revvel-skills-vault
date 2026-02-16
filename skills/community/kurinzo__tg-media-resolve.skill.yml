@@ -1,0 +1,60 @@
+name: tg-media-resolve
+title: Telegram Media Resolver
+version: 1.0.0
+description: Resolve Telegram <media:image>, <media:document>, <media:video> and other media placeholders into actual files
+  for vision/analysis. Use when a Telegram message contains a media placeholder (e.g. <media:image>) that you cannot see —
+  typically in quoted/replied-to messages or group chat history. Downl
+metadata:
+  author: kurinzo
+  category: Media & Content
+  tags:
+  - media-content
+  - media
+  - resolve
+  source: clawhub-community
+  clawhub_slug: tg-media-resolve
+  clawhub_path: kurinzo/tg-media-resolve
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Media Resolver
+
+    # Source: ClawHub community skill by kurinzo
+
+    # Install: clawhub install tg-media-resolve
+
+    # Path: kurinzo/tg-media-resolve
+
+
+    ## Description
+
+    Resolve Telegram <media:image>, <media:document>, <media:video> and other media placeholders into actual files for vision/analysis.
+    Use when a Telegram message contains a media placeholder (e.g. <media:image>) that you cannot see — typically in quoted/replied-to
+    messages or group chat history. Downl
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch_media.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tg-media-resolve
+
+    ```'
+examples:
+- description: Install Telegram Media Resolver from ClawHub
+  usage: clawhub install tg-media-resolve
+schema_version: '1.0'

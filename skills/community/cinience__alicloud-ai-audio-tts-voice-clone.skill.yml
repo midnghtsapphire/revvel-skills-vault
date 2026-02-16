@@ -1,0 +1,65 @@
+name: alicloud-ai-audio-tts-voice-clone
+title: Alicloud Ai Audio Tts Voice Clone
+version: 1.0.0
+description: Voice cloning workflows with Alibaba Cloud Model Studio Qwen TTS VC models. Use when creating cloned voices from
+  sample audio and synthesizing text with cloned timbre.
+metadata:
+  author: cinience
+  category: Media & Content
+  tags:
+  - media-content
+  - alicloud
+  - audio
+  - tts
+  - voice
+  - clone
+  source: clawhub-community
+  clawhub_slug: alicloud-ai-audio-tts-voice-clone
+  clawhub_path: cinience/alicloud-ai-audio-tts-voice-clone
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Ai Audio Tts Voice Clone
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-ai-audio-tts-voice-clone
+
+    # Path: cinience/alicloud-ai-audio-tts-voice-clone
+
+
+    ## Description
+
+    Voice cloning workflows with Alibaba Cloud Model Studio Qwen TTS VC models. Use when creating cloned voices from sample
+    audio and synthesizing text with cloned timbre.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+    - scripts/prepare_voice_clone_request.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-ai-audio-tts-voice-clone
+
+    ```'
+examples:
+- description: Install Alicloud Ai Audio Tts Voice Clone from ClawHub
+  usage: clawhub install alicloud-ai-audio-tts-voice-clone
+schema_version: '1.0'

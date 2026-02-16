@@ -1,0 +1,74 @@
+name: slack-personal
+title: Slk
+version: 1.0.0
+description: Read, send, search, and manage Slack messages and DMs via the slk CLI. Use when the user asks to check Slack,
+  read channels or DMs, send Slack messages, search Slack, check unreads, manage drafts, view saved items, or interact with
+  Slack workspace. Also use for heartbeat Slack checks. Triggers on "c
+metadata:
+  author: therohitdas
+  category: Search & Research
+  tags:
+  - search-research
+  - slack
+  - personal
+  source: clawhub-community
+  clawhub_slug: slk
+  clawhub_path: therohitdas/slk
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Slk
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install slk
+
+    # Path: therohitdas/slk
+
+
+    ## Description
+
+    Read, send, search, and manage Slack messages and DMs via the slk CLI. Use when the user asks to check Slack, read channels
+    or DMs, send Slack messages, search Slack, check unreads, manage drafts, view saved items, or interact with Slack workspace.
+    Also use for heartbeat Slack checks. Triggers on "c
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - bin/slk.js
+
+    - src/api.js
+
+    - src/auth.js
+
+    - src/commands.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install slk
+
+    ```'
+examples:
+- description: Install Slk from ClawHub
+  usage: clawhub install slk
+schema_version: '1.0'

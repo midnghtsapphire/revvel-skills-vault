@@ -1,0 +1,70 @@
+name: twenty-crm
+title: Twenty CRM
+version: 1.0.0
+description: Interact with Twenty CRM (self-hosted) via REST/GraphQL.
+metadata:
+  author: jhumanj
+  category: Marketing & Business
+  tags:
+  - marketing-business
+  - twenty
+  - crm
+  source: clawhub-community
+  clawhub_slug: twenty-crm
+  clawhub_path: jhumanj/twenty-crm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Twenty CRM
+
+    # Source: ClawHub community skill by jhumanj
+
+    # Install: clawhub install twenty-crm
+
+    # Path: jhumanj/twenty-crm
+
+
+    ## Description
+
+    Interact with Twenty CRM (self-hosted) via REST/GraphQL.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/twenty-config.sh
+
+    - scripts/twenty-create-company.sh
+
+    - scripts/twenty-find-companies.sh
+
+    - scripts/twenty-graphql.sh
+
+    - scripts/twenty-rest-delete.sh
+
+    - scripts/twenty-rest-get.sh
+
+    - scripts/twenty-rest-patch.sh
+
+    - scripts/twenty-rest-post.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install twenty-crm
+
+    ```'
+examples:
+- description: Install Twenty CRM from ClawHub
+  usage: clawhub install twenty-crm
+schema_version: '1.0'

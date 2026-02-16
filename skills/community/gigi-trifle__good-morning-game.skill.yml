@@ -1,0 +1,58 @@
+name: good-morning
+title: Good Morning Game
+version: 1.0.2
+description: Play the Good Morning (GM) game - post creative two-word greetings where the first word starts with G and the
+  second with M. Each unique phrase earns points. Use when participating in GM games on Discord or Farcaster.
+metadata:
+  author: gigi-trifle
+  category: Social Media
+  tags:
+  - social-media
+  - good
+  - morning
+  source: clawhub-community
+  clawhub_slug: good-morning-game
+  clawhub_path: gigi-trifle/good-morning-game
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Good Morning Game
+
+    # Source: ClawHub community skill by gigi-trifle
+
+    # Install: clawhub install good-morning-game
+
+    # Path: gigi-trifle/good-morning-game
+
+
+    ## Description
+
+    Play the Good Morning (GM) game - post creative two-word greetings where the first word starts with G and the second with
+    M. Each unique phrase earns points. Use when participating in GM games on Discord or Farcaster.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdhub.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install good-morning-game
+
+    ```'
+examples:
+- description: Install Good Morning Game from ClawHub
+  usage: clawhub install good-morning-game
+schema_version: '1.0'

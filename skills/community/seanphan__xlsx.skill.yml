@@ -1,0 +1,61 @@
+name: xlsx
+title: Xlsx
+version: 0.1.0
+description: '"Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis,
+  and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets
+  with formulas and formatting, (2) Reading or analyzing da'
+metadata:
+  author: seanphan
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - xlsx
+  source: clawhub-community
+  clawhub_slug: xlsx
+  clawhub_path: seanphan/xlsx
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xlsx
+
+    # Source: ClawHub community skill by seanphan
+
+    # Install: clawhub install xlsx
+
+    # Path: seanphan/xlsx
+
+
+    ## Description
+
+    "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization.
+    When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas
+    and formatting, (2) Reading or analyzing da
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - recalc.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xlsx
+
+    ```'
+examples:
+- description: Install Xlsx from ClawHub
+  usage: clawhub install xlsx
+schema_version: '1.0'

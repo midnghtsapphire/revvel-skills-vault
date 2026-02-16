@@ -1,0 +1,54 @@
+name: private-connect
+title: Private Connect
+version: 1.0.0
+description: Access private services by name, from anywhere. No VPN or SSH tunnels.
+metadata:
+  author: dantelex
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - private
+  - connect
+  source: clawhub-community
+  clawhub_slug: private-connect
+  clawhub_path: dantelex/private-connect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Private Connect
+
+    # Source: ClawHub community skill by dantelex
+
+    # Install: clawhub install private-connect
+
+    # Path: dantelex/private-connect
+
+
+    ## Description
+
+    Access private services by name, from anywhere. No VPN or SSH tunnels.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install private-connect
+
+    ```'
+examples:
+- description: Install Private Connect from ClawHub
+  usage: clawhub install private-connect
+schema_version: '1.0'

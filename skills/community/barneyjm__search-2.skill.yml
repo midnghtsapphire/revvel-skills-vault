@@ -1,0 +1,57 @@
+name: search
+title: Search
+version: 0.1.0
+description: '"Search the web using Tavily''s LLM-optimized search API. Returns relevant results with content snippets, scores,
+  and metadata. Use when you need to find web content on any topic without writing code."'
+metadata:
+  author: barneyjm
+  category: Search & Research
+  tags:
+  - search-research
+  - search
+  source: clawhub-community
+  clawhub_slug: search-2
+  clawhub_path: barneyjm/search-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Search
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install search-2
+
+    # Path: barneyjm/search-2
+
+
+    ## Description
+
+    "Search the web using Tavily''s LLM-optimized search API. Returns relevant results with content snippets, scores, and
+    metadata. Use when you need to find web content on any topic without writing code."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install search-2
+
+    ```'
+examples:
+- description: Install Search from ClawHub
+  usage: clawhub install search-2
+schema_version: '1.0'

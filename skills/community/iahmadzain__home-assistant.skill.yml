@@ -1,0 +1,62 @@
+name: home-assistant
+title: Home Assistant
+version: 1.0.0
+description: Control Home Assistant smart home devices, run automations, and receive webhook events. Use when controlling
+  lights, switches, climate, scenes, scripts, or any HA entity. Supports bidirectional communication via REST API (outbound)
+  and webhooks (inbound triggers from HA automations).
+metadata:
+  author: iahmadzain
+  category: Development & Coding
+  tags:
+  - development-coding
+  - home
+  - assistant
+  source: clawhub-community
+  clawhub_slug: home-assistant
+  clawhub_path: iahmadzain/home-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Home Assistant
+
+    # Source: ClawHub community skill by iahmadzain
+
+    # Install: clawhub install home-assistant
+
+    # Path: iahmadzain/home-assistant
+
+
+    ## Description
+
+    Control Home Assistant smart home devices, run automations, and receive webhook events. Use when controlling lights, switches,
+    climate, scenes, scripts, or any HA entity. Supports bidirectional communication via REST API (outbound) and webhooks
+    (inbound triggers from HA automations).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/ha.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install home-assistant
+
+    ```'
+examples:
+- description: Install Home Assistant from ClawHub
+  usage: clawhub install home-assistant
+schema_version: '1.0'

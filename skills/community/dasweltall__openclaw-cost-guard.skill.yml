@@ -1,0 +1,63 @@
+name: openclaw-cost-guard
+title: OpenClaw Cost Guard (Budgets + Token-Saving Playbook)
+version: 0.1.0
+description: Track OpenClaw/Clawdbot token and cost usage from session JSONL logs (prefer real usage.cost when present), generate
+  daily/weekly summaries and top expensive sessions, and run budget checks (exit code on breach). Use to monitor spend, enforce
+  budgets via cron/alerts, and apply a token-saving playboo
+metadata:
+  author: dasweltall
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - cost
+  - guard
+  source: clawhub-community
+  clawhub_slug: openclaw-cost-guard
+  clawhub_path: dasweltall/openclaw-cost-guard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Cost Guard (Budgets + Token-Saving Playbook)
+
+    # Source: ClawHub community skill by dasweltall
+
+    # Install: clawhub install openclaw-cost-guard
+
+    # Path: dasweltall/openclaw-cost-guard
+
+
+    ## Description
+
+    Track OpenClaw/Clawdbot token and cost usage from session JSONL logs (prefer real usage.cost when present), generate daily/weekly
+    summaries and top expensive sessions, and run budget checks (exit code on breach). Use to monitor spend, enforce budgets
+    via cron/alerts, and apply a token-saving playboo
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/extract_cost.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-cost-guard
+
+    ```'
+examples:
+- description: Install OpenClaw Cost Guard (Budgets + Token-Saving Playbook) from ClawHub
+  usage: clawhub install openclaw-cost-guard
+schema_version: '1.0'

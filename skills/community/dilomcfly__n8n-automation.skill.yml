@@ -1,0 +1,59 @@
+name: n8n-automation
+title: n8n Automation
+version: 0.1.0
+description: Manage n8n workflows from OpenClaw via the n8n REST API. Use when the user asks about n8n workflows, automations,
+  executions, or wants to trigger, list, create, activate, or debug n8n workflows. Supports both self-hosted n8n and n8n Cloud
+  instances.
+metadata:
+  author: dilomcfly
+  category: Development & Coding
+  tags:
+  - development-coding
+  - n8n
+  - automation
+  source: clawhub-community
+  clawhub_slug: n8n-automation
+  clawhub_path: dilomcfly/n8n-automation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# n8n Automation
+
+    # Source: ClawHub community skill by dilomcfly
+
+    # Install: clawhub install n8n-automation
+
+    # Path: dilomcfly/n8n-automation
+
+
+    ## Description
+
+    Manage n8n workflows from OpenClaw via the n8n REST API. Use when the user asks about n8n workflows, automations, executions,
+    or wants to trigger, list, create, activate, or debug n8n workflows. Supports both self-hosted n8n and n8n Cloud instances.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-endpoints.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install n8n-automation
+
+    ```'
+examples:
+- description: Install n8n Automation from ClawHub
+  usage: clawhub install n8n-automation
+schema_version: '1.0'

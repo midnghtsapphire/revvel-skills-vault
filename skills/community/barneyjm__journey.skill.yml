@@ -1,0 +1,57 @@
+name: journey
+title: Journey
+version: 2.0.0
+description: '"Plan multi-waypoint journeys with route optimization, feasibility analysis, and time budget constraints. Use
+  when you need to plan trips with multiple stops or check if an itinerary is achievable."'
+metadata:
+  author: barneyjm
+  category: Utilities
+  tags:
+  - utilities
+  - journey
+  source: clawhub-community
+  clawhub_slug: journey
+  clawhub_path: barneyjm/journey
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Journey
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install journey
+
+    # Path: barneyjm/journey
+
+
+    ## Description
+
+    "Plan multi-waypoint journeys with route optimization, feasibility analysis, and time budget constraints. Use when you
+    need to plan trips with multiple stops or check if an itinerary is achievable."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/journey.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install journey
+
+    ```'
+examples:
+- description: Install Journey from ClawHub
+  usage: clawhub install journey
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: qwenspeak
+title: qwenspeak
+version: 1.1.0
+description: Text-to-speech via a locked-down SSH container with Qwen3-TTS - preset voices, voice cloning, voice design
+metadata:
+  author: psyb0t
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - qwenspeak
+  source: clawhub-community
+  clawhub_slug: qwenspeak
+  clawhub_path: psyb0t/qwenspeak
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# qwenspeak
+
+    # Source: ClawHub community skill by psyb0t
+
+    # Install: clawhub install qwenspeak
+
+    # Path: psyb0t/qwenspeak
+
+
+    ## Description
+
+    Text-to-speech via a locked-down SSH container with Qwen3-TTS - preset voices, voice cloning, voice design
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qwenspeak
+
+    ```'
+examples:
+- description: Install qwenspeak from ClawHub
+  usage: clawhub install qwenspeak
+schema_version: '1.0'

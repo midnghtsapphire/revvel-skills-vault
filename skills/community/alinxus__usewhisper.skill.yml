@@ -1,0 +1,60 @@
+name: whisper-context
+title: usewhisper
+version: 1.0.0
+description: Official Whisper Context skill for OpenClaw. Cuts context tokens via delta compression + caching, and adds long-term
+  memory across sessions.
+metadata:
+  author: alinxus
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - whisper
+  - context
+  source: clawhub-community
+  clawhub_slug: usewhisper
+  clawhub_path: alinxus/usewhisper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# usewhisper
+
+    # Source: ClawHub community skill by alinxus
+
+    # Install: clawhub install usewhisper
+
+    # Path: alinxus/usewhisper
+
+
+    ## Description
+
+    Official Whisper Context skill for OpenClaw. Cuts context tokens via delta compression + caching, and adds long-term memory
+    across sessions.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - whisper-context.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install usewhisper
+
+    ```'
+examples:
+- description: Install usewhisper from ClawHub
+  usage: clawhub install usewhisper
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: ai-podcast-pipeline
+title: Ai Podcast Pipeline
+version: 0.1.5
+description: Create Korean AI podcast packages from QuickView trend notes. Use for dual-host script writing (Callie × Nick),
+  Gemini multi-speaker TTS audio generation, subtitle timing/render fixes, thumbnail+MP4 packaging, and YouTube title/description
+  output. Supports both full (15~20 min) and compressed (5~7 m
+metadata:
+  author: jeong-wooseok
+  category: Media & Content
+  tags:
+  - media-content
+  - podcast
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: ai-podcast-pipeline
+  clawhub_path: jeong-wooseok/ai-podcast-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ai Podcast Pipeline
+
+    # Source: ClawHub community skill by jeong-wooseok
+
+    # Install: clawhub install ai-podcast-pipeline
+
+    # Path: jeong-wooseok/ai-podcast-pipeline
+
+
+    ## Description
+
+    Create Korean AI podcast packages from QuickView trend notes. Use for dual-host script writing (Callie × Nick), Gemini
+    multi-speaker TTS audio generation, subtitle timing/render fixes, thumbnail+MP4 packaging, and YouTube title/description
+    output. Supports both full (15~20 min) and compressed (5~7 m
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/podcast_prompt_template_ko.md
+
+    - references/thumbnail_guidelines_ko.md
+
+    - references/workflow_runbook.md
+
+    - scripts/build_dualvoice_audio.py
+
+    - scripts/build_korean_srt.py
+
+    - scripts/build_podcast_assets.py
+
+    - scripts/gemini_multispeaker_tts.py
+
+    - scripts/render_subtitled_video.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-podcast-pipeline
+
+    ```'
+examples:
+- description: Install Ai Podcast Pipeline from ClawHub
+  usage: clawhub install ai-podcast-pipeline
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: enzoldhazam
+title: enzoldhazam
+version: 1.0.1
+description: Control NGBS iCON Smart Home thermostats. Use when the user asks about home temperature, heating, thermostat
+  control, or wants to adjust room temperatures.
+metadata:
+  author: daniel-laszlo
+  category: General
+  tags:
+  - general
+  - enzoldhazam
+  source: clawhub-community
+  clawhub_slug: enzoldhazam
+  clawhub_path: daniel-laszlo/enzoldhazam
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# enzoldhazam
+
+    # Source: ClawHub community skill by daniel-laszlo
+
+    # Install: clawhub install enzoldhazam
+
+    # Path: daniel-laszlo/enzoldhazam
+
+
+    ## Description
+
+    Control NGBS iCON Smart Home thermostats. Use when the user asks about home temperature, heating, thermostat control,
+    or wants to adjust room temperatures.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - internal/api/client.go
+
+    - internal/config/config.go
+
+    - internal/models/models.go
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install enzoldhazam
+
+    ```'
+examples:
+- description: Install enzoldhazam from ClawHub
+  usage: clawhub install enzoldhazam
+schema_version: '1.0'

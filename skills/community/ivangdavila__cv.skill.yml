@@ -1,0 +1,52 @@
+name: cv
+title: CV
+version: 1.0.0
+description: Create ATS-optimized resumes and CVs with proper structure, metrics, and industry targeting.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  source: clawhub-community
+  clawhub_slug: cv
+  clawhub_path: ivangdavila/cv
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CV
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install cv
+
+    # Path: ivangdavila/cv
+
+
+    ## Description
+
+    Create ATS-optimized resumes and CVs with proper structure, metrics, and industry targeting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cv
+
+    ```'
+examples:
+- description: Install CV from ClawHub
+  usage: clawhub install cv
+schema_version: '1.0'

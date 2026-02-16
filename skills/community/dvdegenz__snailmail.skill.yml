@@ -1,0 +1,60 @@
+name: snail-mail
+title: Snail Mail
+version: 1.0.0
+description: A slow-channel inbox for leaving your operator important messages. Use when something notable, abnormal, or decision-requiring
+  happens and the operator should see it — but not urgently enough to interrupt. Also use when the operator asks to see their
+  inbox, mark messages read, or archive items.
+metadata:
+  author: dvdegenz
+  category: Communication
+  tags:
+  - communication
+  - snail
+  - mail
+  source: clawhub-community
+  clawhub_slug: snailmail
+  clawhub_path: dvdegenz/snailmail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Snail Mail
+
+    # Source: ClawHub community skill by dvdegenz
+
+    # Install: clawhub install snailmail
+
+    # Path: dvdegenz/snailmail
+
+
+    ## Description
+
+    A slow-channel inbox for leaving your operator important messages. Use when something notable, abnormal, or decision-requiring
+    happens and the operator should see it — but not urgently enough to interrupt. Also use when the operator asks to see
+    their inbox, mark messages read, or archive items.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/inbox.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install snailmail
+
+    ```'
+examples:
+- description: Install Snail Mail from ClawHub
+  usage: clawhub install snailmail
+schema_version: '1.0'

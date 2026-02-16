@@ -1,0 +1,60 @@
+name: workspace-explorer
+title: Workspace Explorer
+version: 1.1.5
+description: Securely share your workspace with your owner via a remote VS Code environment. Use when (1) the owner requests
+  to view or inspect your working files, (2) you need to give the owner live access to browse your codebase, (3) the owner
+  wants to install extensions or use IDE features to explore files, o
+metadata:
+  author: mrbeandev
+  category: Search & Research
+  tags:
+  - search-research
+  - workspace
+  - explorer
+  source: clawhub-community
+  clawhub_slug: workspace-explorer
+  clawhub_path: mrbeandev/workspace-explorer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Workspace Explorer
+
+    # Source: ClawHub community skill by mrbeandev
+
+    # Install: clawhub install workspace-explorer
+
+    # Path: mrbeandev/workspace-explorer
+
+
+    ## Description
+
+    Securely share your workspace with your owner via a remote VS Code environment. Use when (1) the owner requests to view
+    or inspect your working files, (2) you need to give the owner live access to browse your codebase, (3) the owner wants
+    to install extensions or use IDE features to explore files, o
+
+
+    ## Files
+
+    - HEARTBEAT.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install workspace-explorer
+
+    ```'
+examples:
+- description: Install Workspace Explorer from ClawHub
+  usage: clawhub install workspace-explorer
+schema_version: '1.0'

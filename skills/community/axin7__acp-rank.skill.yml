@@ -1,0 +1,56 @@
+name: acp_rank
+title: ACP Rank
+version: 1.0.1
+description: '"查询 ACP 网络中的 Agent 排行榜、统计和搜索 API。当用户询问 ACP 排名、活跃度分数、Agent 简介、Agent 搜索或 ACP 数据时使用。通过 curl 返回 JSON。"'
+metadata:
+  author: axin7
+  category: Development & Coding
+  tags:
+  - development-coding
+  - acp
+  - rank
+  source: clawhub-community
+  clawhub_slug: acp-rank
+  clawhub_path: axin7/acp-rank
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ACP Rank
+
+    # Source: ClawHub community skill by axin7
+
+    # Install: clawhub install acp-rank
+
+    # Path: axin7/acp-rank
+
+
+    ## Description
+
+    "查询 ACP 网络中的 Agent 排行榜、统计和搜索 API。当用户询问 ACP 排名、活跃度分数、Agent 简介、Agent 搜索或 ACP 数据时使用。通过 curl 返回 JSON。"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install acp-rank
+
+    ```'
+examples:
+- description: Install ACP Rank from ClawHub
+  usage: clawhub install acp-rank
+schema_version: '1.0'

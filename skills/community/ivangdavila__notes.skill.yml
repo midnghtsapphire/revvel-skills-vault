@@ -1,0 +1,53 @@
+name: notes
+title: Notes
+version: 1.0.0
+description: Take structured, searchable notes — capture decisions, actions, and context that last.
+metadata:
+  author: ivangdavila
+  category: Search & Research
+  tags:
+  - search-research
+  - notes
+  source: clawhub-community
+  clawhub_slug: notes
+  clawhub_path: ivangdavila/notes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notes
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install notes
+
+    # Path: ivangdavila/notes
+
+
+    ## Description
+
+    Take structured, searchable notes — capture decisions, actions, and context that last.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notes
+
+    ```'
+examples:
+- description: Install Notes from ClawHub
+  usage: clawhub install notes
+schema_version: '1.0'

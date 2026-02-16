@@ -1,0 +1,62 @@
+name: ollama-local
+title: Ollama Local
+version: 1.1.0
+description: Manage and use local Ollama models. Use for model management (list/pull/remove), chat/completions, embeddings,
+  and tool-use with local LLMs. Covers OpenClaw sub-agent integration and model selection guidance.
+metadata:
+  author: timverhoogt
+  category: Communication
+  tags:
+  - communication
+  - ollama
+  - local
+  source: clawhub-community
+  clawhub_slug: ollama-local
+  clawhub_path: timverhoogt/ollama-local
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ollama Local
+
+    # Source: ClawHub community skill by timverhoogt
+
+    # Install: clawhub install ollama-local
+
+    # Path: timverhoogt/ollama-local
+
+
+    ## Description
+
+    Manage and use local Ollama models. Use for model management (list/pull/remove), chat/completions, embeddings, and tool-use
+    with local LLMs. Covers OpenClaw sub-agent integration and model selection guidance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/models.md
+
+    - scripts/ollama.py
+
+    - scripts/ollama_tools.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ollama-local
+
+    ```'
+examples:
+- description: Install Ollama Local from ClawHub
+  usage: clawhub install ollama-local
+schema_version: '1.0'

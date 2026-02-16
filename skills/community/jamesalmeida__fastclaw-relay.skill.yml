@@ -1,0 +1,72 @@
+name: fastclaw-relay
+title: FastClaw Relay
+version: 1.0.0
+description: Connect your OpenClaw to the FastClaw iOS app. Relays messages between your local Gateway and FastClaw via Convex
+  cloud sync. No port forwarding, no VPN — just pair and go.
+metadata:
+  author: jamesalmeida
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - fastclaw
+  - relay
+  source: clawhub-community
+  clawhub_slug: fastclaw-relay
+  clawhub_path: jamesalmeida/fastclaw-relay
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FastClaw Relay
+
+    # Source: ClawHub community skill by jamesalmeida
+
+    # Install: clawhub install fastclaw-relay
+
+    # Path: jamesalmeida/fastclaw-relay
+
+
+    ## Description
+
+    Connect your OpenClaw to the FastClaw iOS app. Relays messages between your local Gateway and FastClaw via Convex cloud
+    sync. No port forwarding, no VPN — just pair and go.
+
+
+    ## Files
+
+    - ARCHITECTURE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - convex/messages.ts
+
+    - convex/pairing.ts
+
+    - convex/schema.ts
+
+    - convex/sessions.ts
+
+    - scripts/pair.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fastclaw-relay
+
+    ```'
+examples:
+- description: Install FastClaw Relay from ClawHub
+  usage: clawhub install fastclaw-relay
+schema_version: '1.0'

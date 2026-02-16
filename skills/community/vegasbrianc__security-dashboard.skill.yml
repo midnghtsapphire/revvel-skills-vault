@@ -1,0 +1,70 @@
+name: security-dashboard
+title: Security Dashboard
+version: 1.2.1
+description: Real-time security monitoring dashboard for OpenClaw and Linux server infrastructure. Monitors gateway status,
+  network security, public exposure, system updates, SSH access, TLS certificates, and resource usage.
+metadata:
+  author: vegasbrianc
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - dashboard
+  source: clawhub-community
+  clawhub_slug: security-dashboard
+  clawhub_path: vegasbrianc/security-dashboard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Dashboard
+
+    # Source: ClawHub community skill by vegasbrianc
+
+    # Install: clawhub install security-dashboard
+
+    # Path: vegasbrianc/security-dashboard
+
+
+    ## Description
+
+    Real-time security monitoring dashboard for OpenClaw and Linux server infrastructure. Monitors gateway status, network
+    security, public exposure, system updates, SSH access, TLS certificates, and resource usage.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - server.js
+
+    - skill.json
+
+    - public/index.html
+
+    - scripts/check-security.sh
+
+    - scripts/install.sh
+
+    - scripts/publish.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-dashboard
+
+    ```'
+examples:
+- description: Install Security Dashboard from ClawHub
+  usage: clawhub install security-dashboard
+schema_version: '1.0'

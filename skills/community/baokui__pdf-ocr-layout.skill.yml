@@ -1,0 +1,63 @@
+name: pdf-ocr-layout
+title: pdf-ocr-layout
+version: 1.0.2
+description: Multimodal document deep analysis tool based on Zhipu GLM-OCR, GLM-4.7, and GLM-4.6V.
+metadata:
+  author: baokui
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - pdf
+  - ocr
+  - layout
+  source: clawhub-community
+  clawhub_slug: pdf-ocr-layout
+  clawhub_path: baokui/pdf-ocr-layout
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# pdf-ocr-layout
+
+    # Source: ClawHub community skill by baokui
+
+    # Install: clawhub install pdf-ocr-layout
+
+    # Path: baokui/pdf-ocr-layout
+
+
+    ## Description
+
+    Multimodal document deep analysis tool based on Zhipu GLM-OCR, GLM-4.7, and GLM-4.6V.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - SKILL_zh.md
+
+    - _meta.json
+
+    - script/glm_ocr_extract.py
+
+    - script/glm_ocr_pipeline.py
+
+    - script/glm_understanding.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pdf-ocr-layout
+
+    ```'
+examples:
+- description: Install pdf-ocr-layout from ClawHub
+  usage: clawhub install pdf-ocr-layout
+schema_version: '1.0'

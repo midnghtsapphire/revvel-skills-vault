@@ -1,0 +1,55 @@
+name: craft
+title: Craft Notes
+version: 1.0.0
+description: Manage Craft notes, documents, and tasks via CLI. Use when the user asks to add notes, create documents, manage
+  tasks, search their Craft documents, or work with daily notes. Craft is a note-taking app for macOS/iOS.
+metadata:
+  author: noah-ribaudo
+  category: Search & Research
+  tags:
+  - search-research
+  - craft
+  source: clawhub-community
+  clawhub_slug: craft
+  clawhub_path: noah-ribaudo/craft
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Craft Notes
+
+    # Source: ClawHub community skill by noah-ribaudo
+
+    # Install: clawhub install craft
+
+    # Path: noah-ribaudo/craft
+
+
+    ## Description
+
+    Manage Craft notes, documents, and tasks via CLI. Use when the user asks to add notes, create documents, manage tasks,
+    search their Craft documents, or work with daily notes. Craft is a note-taking app for macOS/iOS.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install craft
+
+    ```'
+examples:
+- description: Install Craft Notes from ClawHub
+  usage: clawhub install craft
+schema_version: '1.0'

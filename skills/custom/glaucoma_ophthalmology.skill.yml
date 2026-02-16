@@ -1,0 +1,296 @@
+name: glaucoma_ophthalmology
+title: Glaucoma & Ophthalmology
+version: 1.0.0
+description: Comprehensive glaucoma and ophthalmology analysis module for intraocular pressure management, optic nerve assessment,
+  visual field interpretation, treatment protocols, and emerging therapies
+metadata:
+  author: Revvel AI Engine
+  category: Medical & Health
+  tags:
+  - optic-nerve-damage-assessment
+  - neuroprotective-therapy-evaluation
+  - patient-monitoring-alerts
+  - treatment-protocol-recommendation
+  - glaucoma
+  - intraocular-pressure-analysis
+  - visual-field-interpretation
+  - clinical-trial-matching
+  - ophthalmology
+  - emerging-therapy-analysis
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport os\nimport re\nimport datetime\nimport hashlib\nimport statistics\nimport math\nimport unittest\n\
+    import logging\nfrom typing import Dict, List, Optional, Tuple, Any\nfrom collections import defaultdict, namedtuple\n\
+    import requests\n\nSKILL_METADATA = {\n    \"name\": \"Glaucoma & Ophthalmology\",\n    \"id\": \"glaucoma_ophthalmology\"\
+    ,\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Comprehensive glaucoma and\
+    \ ophthalmology analysis module for intraocular pressure management, optic nerve assessment, visual field interpretation,\
+    \ treatment protocols, and emerging therapies\",\n    \"capabilities\": [\n        \"intraocular_pressure_analysis\",\n\
+    \        \"optic_nerve_damage_assessment\",\n        \"visual_field_interpretation\",\n        \"treatment_protocol_recommendation\"\
+    ,\n        \"neuroprotective_therapy_evaluation\",\n        \"emerging_therapy_analysis\",\n        \"clinical_trial_matching\"\
+    ,\n        \"patient_monitoring_alerts\",\n        \"risk_stratification\",\n        \"progression_tracking\"\n    ],\n\
+    \    \"domain\": \"ophthalmology\"\n}\n\nEXPERT_PROMPTS = {\n    \"iop_analysis\": \"\"\"Analyze the following intraocular\
+    \ pressure readings for glaucoma risk assessment:\nPatient Age: {patient_age}\nIOP Readings (mmHg): {iop_readings}\nCorneal\
+    \ Thickness (μm): {cct}\nFamily History: {family_history}\nCurrent Medications: {medications}\nProvide risk stratification\
+    \ and treatment recommendations based on latest EGS guidelines.\"\"\",\n    \n    \"optic_nerve_evaluation\": \"\"\"Evaluate\
+    \ this optic nerve analysis for glaucomatous damage:\nCDR: {cdr}\nRim Area (mm²): {rim_area}\nRNFL Thickness (μm): {rnfl_thickness}\n\
+    Visual Field MD (dB): {vf_md}\nPattern SD: {vf_psd}\nDetermine glaucoma stage and progression risk.\"\"\",\n    \n   \
+    \ \"visual_field_progression\": \"\"\"Interpret this visual field test series for progression:\nBaseline MD: {baseline_md}\n\
+    Current MD: {current_md}\nTest Dates: {test_dates}\nPattern Deviation: {pattern_deviation}\nProvide progression analysis\
+    \ and confidence level.\"\"\",\n    \n    \"treatment_protocol\": \"\"\"Recommend treatment protocol for:\nGlaucoma Type:\
+    \ {glaucoma_type}\nCurrent IOP: {current_iop}\nTarget IOP: {target_iop}\nPrevious Surgeries: {surgeries}\nComorbidities:\
+    \ {comorbidities}\nConsider ROCK inhibitors, prostaglandin analogs, and surgical options.\"\"\",\n    \n    \"clinical_trial_matching\"\
+    : \"\"\"Find relevant clinical trials for:\nPatient Demographics: {demographics}\nGlaucoma Stage: {stage}\nPrevious Treatments:\
+    \ {treatments}\nLocation: {location}\nInclude gene therapy and neuroprotection trials.\"\"\",\n    \n    \"neuroprotective_assessment\"\
+    : \"\"\"Evaluate neuroprotective treatment options for:\nCurrent Therapy: {current_therapy}\nDisease Progression: {progression}\n\
+    Optic Nerve Status: {optic_nerve_status}\nPatient Compliance: {compliance}\nConsider memantine, brimonidine, and emerging\
+    \ agents.\"\"\",\n    \n    \"post_surgical_monitoring\": \"\"\"Monitor post-trabeculectomy patient:\nSurgery Date: {surgery_date}\n\
+    Current IOP: {current_iop}\nBleb Appearance: {bleb_status}\nComplications: {complications}\nAssess for cystic bleb formation\
+    \ and intervention needs.\"\"\",\n    \n    \"pediatric_glaucoma\": \"\"\"Manage pediatric glaucoma case:\nAge: {age}\n\
+    IOP: {iop}\nCorneal Diameter: {corneal_diameter}\nHaab's Striae: {haab_striae}\nFamily History: {family_history}\nProvide\
+    \ age-appropriate treatment algorithm.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"egs_guidelines_api\": {\n        \"type\"\
+    : \"api\",\n        \"endpoint\": \"https://api.egs.org/guidelines/v6\",\n        \"description\": \"European Glaucoma\
+    \ Society guidelines database\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://egs.org/api/docs\"\
+    \n    },\n    \"clinical_trials_gov\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://clinicaltrials.gov/api/query\"\
+    ,\n        \"description\": \"Clinical trials database for glaucoma studies\",\n        \"auth_method\": \"none\",\n \
+    \       \"documentation_url\": \"https://clinicaltrials.gov/api/\"\n    },\n    \"ophthalmology_emr\": {\n        \"type\"\
+    : \"database\",\n        \"endpoint\": \"postgresql://emr-db:5432/ophthalmology\",\n        \"description\": \"Ophthalmology\
+    \ electronic medical records\",\n        \"auth_method\": \"oauth2\",\n        \"documentation_url\": \"https://emr-docs.revvel.ai\"\
+    \n    },\n    \"imaging_analysis_tool\": {\n        \"type\": \"tool\",\n        \"endpoint\": \"http://oct-analysis.revvel.ai:8080\"\
+    ,\n        \"description\": \"OCT and fundus image analysis service\",\n        \"auth_method\": \"jwt\",\n        \"\
+    documentation_url\": \"https://imaging.revvel.ai/docs\"\n    }\n}\n\ndef validate_iop_readings(iop_readings: List[float])\
+    \ -> Tuple[bool, str]:\n    \"\"\"Validate intraocular pressure readings for physiological range.\"\"\"\n    if not iop_readings:\n\
+    \        return False, \"No IOP readings provided\"\n    \n    for iop in iop_readings:\n        if not isinstance(iop,\
+    \ (int, float)):\n            return False, f\"Invalid IOP value: {iop}\"\n        if iop < 0 or iop > 60:\n         \
+    \   return False, f\"IOP value {iop} mmHg outside physiological range (0-60)\"\n    \n    return True, \"Valid IOP readings\"\
+    \n\ndef calculate_mean_iop(iop_readings: List[float]) -> float:\n    \"\"\"Calculate mean intraocular pressure with outlier\
+    \ detection.\"\"\"\n    if len(iop_readings) < 2:\n        return statistics.mean(iop_readings) if iop_readings else 0.0\n\
+    \    \n    # Remove outliers beyond 2 standard deviations\n    mean_iop = statistics.mean(iop_readings)\n    stdev = statistics.stdev(iop_readings)\n\
+    \    \n    filtered = [iop for iop in iop_readings if abs(iop - mean_iop) <= 2 * stdev]\n    return statistics.mean(filtered)\
+    \ if filtered else mean_iop\n\ndef assess_glaucoma_risk(iop: float, cct: float, age: int, family_history: bool) -> Dict[str,\
+    \ Any]:\n    \"\"\"Assess glaucoma risk based on multiple factors.\"\"\"\n    risk_score = 0\n    risk_factors = []\n\
+    \    \n    # IOP-based risk\n    if iop > 21:\n        risk_score += 2\n        risk_factors.append(\"Elevated IOP\")\n\
+    \    elif iop > 18:\n        risk_score += 1\n        risk_factors.append(\"Borderline IOP\")\n    \n    # CCT-based risk\
+    \ (thinner corneas = higher risk)\n    if cct < 500:\n        risk_score += 2\n        risk_factors.append(\"Thin cornea\"\
+    )\n    elif cct < 550:\n        risk_score += 1\n        risk_factors.append(\"Borderline corneal thickness\")\n    \n\
+    \    # Age-based risk\n    if age > 60:\n        risk_score += 2\n        risk_factors.append(\"Advanced age\")\n    elif\
+    \ age > 40:\n        risk_score += 1\n        risk_factors.append(\"Middle age\")\n    \n    # Family history\n    if\
+    \ family_history:\n        risk_score += 2\n        risk_factors.append(\"Family history of glaucoma\")\n    \n    # Risk\
+    \ stratification\n    if risk_score >= 6:\n        risk_level = \"High\"\n    elif risk_score >= 3:\n        risk_level\
+    \ = \"Moderate\"\n    else:\n        risk_level = \"Low\"\n    \n    return {\n        \"risk_score\": risk_score,\n \
+    \       \"risk_level\": risk_level,\n        \"risk_factors\": risk_factors,\n        \"recommended_follow_up\": \"3-6\
+    \ months\" if risk_level in [\"High\", \"Moderate\"] else \"12 months\"\n    }\n\ndef interpret_visual_field(md: float,\
+    \ psd: float, vfi: float) -> Dict[str, Any]:\n    \"\"\"Interpret visual field test results.\"\"\"\n    interpretation\
+    \ = {}\n    \n    # Mean Deviation analysis\n    if md >= -2:\n        interpretation[\"md_status\"] = \"Normal\"\n  \
+    \      interpretation[\"md_severity\"] = \"None\"\n    elif md >= -6:\n        interpretation[\"md_status\"] = \"Borderline\"\
+    \n        interpretation[\"md_severity\"] = \"Early\"\n    elif md >= -12:\n        interpretation[\"md_status\"] = \"\
+    Abnormal\"\n        interpretation[\"md_severity\"] = \"Moderate\"\n    else:\n        interpretation[\"md_status\"] =\
+    \ \"Severely abnormal\"\n        interpretation[\"md_severity\"] = \"Advanced\"\n    \n    # Pattern Standard Deviation\n\
+    \    if psd < 2:\n        interpretation[\"psd_status\"] = \"Normal\"\n    elif psd < 5:\n        interpretation[\"psd_status\"\
+    ] = \"Borderline\"\n    else:\n        interpretation[\"psd_status\"] = \"Abnormal\"\n    \n    # Visual Field Index\n\
+    \    interpretation[\"vfi_percentage\"] = vfi\n    if vfi >= 90:\n        interpretation[\"vfi_status\"] = \"Excellent\"\
+    \n    elif vfi >= 70:\n        interpretation[\"vfi_status\"] = \"Good\"\n    elif vfi >= 50:\n        interpretation[\"\
+    vfi_status\"] = \"Fair\"\n    else:\n        interpretation[\"vfi_status\"] = \"Poor\"\n    \n    # Overall assessment\n\
+    \    if interpretation[\"md_severity\"] == \"None\" and interpretation[\"psd_status\"] == \"Normal\":\n        interpretation[\"\
+    overall_status\"] = \"Normal visual field\"\n    elif interpretation[\"md_severity\"] in [\"Early\", \"Moderate\"]:\n\
+    \        interpretation[\"overall_status\"] = f\"Glaucomatous defect - {interpretation['md_severity']}\"\n    else:\n\
+    \        interpretation[\"overall_status\"] = f\"Severe glaucomatous defect - {interpretation['md_severity']}\"\n    \n\
+    \    return interpretation\n\ndef calculate_target_iop(baseline_iop: float, md: float, age: int) -> float:\n    \"\"\"\
+    Calculate target IOP based on disease severity and risk factors.\"\"\"\n    # Base target reduction\n    if md >= -6:\
+    \  # Early damage\n        target_reduction = 0.20\n    elif md >= -12:  # Moderate damage\n        target_reduction =\
+    \ 0.30\n    else:  # Advanced damage\n        target_reduction = 0.40\n    \n    # Age adjustment\n    if age < 50:\n\
+    \        target_reduction += 0.05  # More aggressive for younger patients\n    \n    target_iop = baseline_iop * (1 -\
+    \ target_reduction)\n    \n    # Ensure target is within safe range\n    return max(target_iop, 6.0)  # Minimum safe IOP\n\
+    \ndef evaluate_optic_nerve_damage(cdr: float, rim_area: float, rnfl_thickness: float) -> Dict[str, Any]:\n    \"\"\"Evaluate\
+    \ optic nerve damage from clinical parameters.\"\"\"\n    damage_score = 0\n    findings = []\n    \n    # Cup-to-disc\
+    \ ratio\n    if cdr > 0.7:\n        damage_score += 3\n        findings.append(\"Advanced cupping\")\n    elif cdr > 0.5:\n\
+    \        damage_score += 2\n        findings.append(\"Moderate cupping\")\n    elif cdr > 0.3:\n        damage_score +=\
+    \ 1\n        findings.append(\"Mild cupping\")\n    \n    # Rim area (normal >1.2 mm²)\n    if rim_area < 0.5:\n     \
+    \   damage_score += 3\n        findings.append(\"Severe rim loss\")\n    elif rim_area < 0.8:\n        damage_score +=\
+    \ 2\n        findings.append(\"Moderate rim loss\")\n    elif rim_area < 1.0:\n        damage_score += 1\n        findings.append(\"\
+    Mild rim loss\")\n    \n    # RNFL thickness (normal ~100 μm)\n    if rnfl_thickness < 60:\n        damage_score += 3\n\
+    \        findings.append(\"Severe RNFL thinning\")\n    elif rnfl_thickness < 80:\n        damage_score += 2\n       \
+    \ findings.append(\"Moderate RNFL thinning\")\n    elif rnfl_thickness < 90:\n        damage_score += 1\n        findings.append(\"\
+    Mild RNFL thinning\")\n    \n    # Stage determination\n    if damage_score >= 7:\n        stage = \"Advanced\"\n    elif\
+    \ damage_score >= 4:\n        stage = \"Moderate\"\n    elif damage_score >= 2:\n        stage = \"Early\"\n    else:\n\
+    \        stage = \"Normal\"\n    \n    return {\n        \"damage_score\": damage_score,\n        \"stage\": stage,\n\
+    \        \"findings\": findings,\n        \"progression_risk\": \"High\" if damage_score >= 5 else \"Moderate\" if damage_score\
+    \ >= 3 else \"Low\"\n    }\n\ndef generate_monitoring_schedule(risk_level: str, stage: str, age: int) -> List[Dict[str,\
+    \ str]]:\n    \"\"\"Generate patient monitoring schedule based on risk and disease stage.\"\"\"\n    schedule = []\n \
+    \   \n    # Base intervals\n    if risk_level == \"High\" or stage == \"Advanced\":\n        iop_interval = \"1-2 months\"\
+    \n        vf_interval = \"6 months\"\n        oct_interval = \"6 months\"\n    elif risk_level == \"Moderate\" or stage\
+    \ == \"Moderate\":\n        iop_interval = \"3-6 months\"\n        vf_interval = \"12 months\"\n        oct_interval =\
+    \ \"12 months\"\n    else:\n        iop_interval = \"6-12 months\"\n        vf_interval = \"24 months\"\n        oct_interval\
+    \ = \"24 months\"\n    \n    # Age adjustment\n    if age > 70:\n        iop_interval = iop_interval.replace(\"months\"\
+    , \"months (consider more frequent)\")\n    \n    schedule = [\n        {\"test\": \"Intraocular Pressure\", \"frequency\"\
+    : iop_interval},\n        {\"test\": \"Visual Field\", \"frequency\": vf_interval},\n        {\"test\": \"OCT/RNFL Analysis\"\
+    , \"frequency\": oct_interval},\n        {\"test\": \"Optic Disc Examination\", \"frequency\": vf_interval}\n    ]\n \
+    \   \n    return schedule\n\ndef check_drug_interactions(current_meds: List[str], proposed_med: str) -> Dict[str, Any]:\n\
+    \    \"\"\"Check for potential drug interactions with glaucoma medications.\"\"\"\n    interactions = {\n        \"timolol\"\
+    : [\"calcium_channel_blockers\", \"beta_blockers\", \"digoxin\"],\n        \"brimonidine\": [\"monoamine_oxidase_inhibitors\"\
+    , \"tricyclic_antidepressants\"],\n        \"acetazolamide\": [\"aspirin\", \"lithium\", \"phenytoin\"],\n        \"latanoprost\"\
+    : [\"thimerosal\"]\n    }\n    \n    relevant_interactions = []\n    severity = \"None\"\n    \n    proposed_lower = proposed_med.lower()\n\
+    \    if proposed_lower in interactions:\n        for med in current_meds:\n            med_lower = med.lower()\n     \
+    \       if any(interaction in med_lower for interaction in interactions[proposed_lower]):\n                relevant_interactions.append(f\"\
+    {proposed_med} + {med}\")\n                severity = \"Moderate\"  # Simplified severity assessment\n    \n    return\
+    \ {\n        \"has_interactions\": len(relevant_interactions) > 0,\n        \"interactions\": relevant_interactions,\n\
+    \        \"severity\": severity,\n        \"recommendation\": \"Consider alternative therapy\" if relevant_interactions\
+    \ else \"Safe to proceed\"\n    }\n\ndef analyze_progression_rate(test_dates: List[str], md_values: List[float]) -> Dict[str,\
+    \ Any]:\n    \"\"\"Analyze visual field progression rate over time.\"\"\"\n    if len(test_dates) < 3 or len(md_values)\
+    \ < 3:\n        return {\"error\": \"Insufficient data for progression analysis\"}\n    \n    # Convert dates to years\
+    \ from first test\n    dates = [datetime.datetime.strptime(d, \"%Y-%m-%d\") for d in test_dates]\n    base_date = dates[0]\n\
+    \    years = [(d - base_date).days / 365.25 for d in dates]\n    \n    # Linear regression for progression rate\n    n\
+    \ = len(years)\n    sum_x = sum(years)\n    sum_y = sum(md_values)\n    sum_xy = sum(x * y for x, y in zip(years, md_values))\n\
+    \    sum_x2 = sum(x * x for x in years)\n    \n    if n * sum_x2 - sum_x * sum_x == 0:\n        return {\"error\": \"\
+    Cannot calculate progression rate\"}\n    \n    slope = (n * sum_xy - sum_x * sum_y) / (n * sum_x2 - sum_x * sum_x)\n\
+    \    intercept = (sum_y - slope * sum_x) / n\n    \n    # Significance test (simplified)\n    progression_significant\
+    \ = abs(slope) > 0.5  # dB/year threshold\n    \n    return {\n        \"progression_rate_db_per_year\": round(slope,\
+    \ 2),\n        \"significant\": progression_significant,\n        \"predicted_5_year_md\": round(intercept + slope * (years[-1]\
+    \ + 5), 2),\n        \"trend\": \"Worsening\" if slope < -0.5 else \"Stable\" if slope < 0.5 else \"Improving\"\n    }\n\
+    \nclass SkillEngine:\n    \"\"\"Main skill engine for glaucoma and ophthalmology analysis.\"\"\"\n    \n    def __init__(self,\
+    \ config: Dict[str, Any]):\n        \"\"\"Initialize the skill engine with configuration.\"\"\"\n        self.config =\
+    \ config\n        self.logger = logging.getLogger(__name__)\n        self.capabilities = SKILL_METADATA[\"capabilities\"\
+    ]\n        \n        # Set up logging\n        log_level = config.get(\"log_level\", \"INFO\")\n        self.logger.setLevel(getattr(logging,\
+    \ log_level))\n        \n    def run(self, capability: str, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"\
+    Run the specified capability with given parameters.\"\"\"\n        if capability not in self.capabilities:\n         \
+    \   raise ValueError(f\"Unknown capability: {capability}\")\n        \n        try:\n            if capability == \"intraocular_pressure_analysis\"\
+    :\n                return self.analyze_iop(params)\n            elif capability == \"optic_nerve_damage_assessment\":\n\
+    \                return self.assess_optic_nerve(params)\n            elif capability == \"visual_field_interpretation\"\
+    :\n                return self.interpret_vf(params)\n            elif capability == \"treatment_protocol_recommendation\"\
+    :\n                return self.recommend_treatment(params)\n            elif capability == \"neuroprotective_therapy_evaluation\"\
+    :\n                return self.evaluate_neuroprotection(params)\n            elif capability == \"emerging_therapy_analysis\"\
+    :\n                return self.analyze_emerging_therapies(params)\n            elif capability == \"clinical_trial_matching\"\
+    :\n                return self.match_clinical_trials(params)\n            elif capability == \"patient_monitoring_alerts\"\
+    :\n                return self.generate_alerts(params)\n            elif capability == \"risk_stratification\":\n    \
+    \            return self.stratify_risk(params)\n            elif capability == \"progression_tracking\":\n           \
+    \     return self.track_progression(params)\n            else:\n                raise ValueError(f\"Capability not implemented:\
+    \ {capability}\")\n        except Exception as e:\n            self.logger.error(f\"Error in capability {capability}:\
+    \ {str(e)}\")\n            return {\"error\": str(e)}\n    \n    def analyze_iop(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Analyze intraocular pressure readings.\"\"\"\n        iop_readings = params.get(\"iop_readings\"\
+    , [])\n        cct = params.get(\"cct\", 545)\n        age = params.get(\"age\", 50)\n        family_history = params.get(\"\
+    family_history\", False)\n        \n        # Validate inputs\n        valid, message = validate_iop_readings(iop_readings)\n\
+    \        if not valid:\n            return {\"error\": message}\n        \n        # Calculate metrics\n        mean_iop\
+    \ = calculate_mean_iop(iop_readings)\n        risk_assessment = assess_glaucoma_risk(mean_iop, cct, age, family_history)\n\
+    \        \n        return {\n            \"mean_iop\": round(mean_iop, 1),\n            \"risk_assessment\": risk_assessment,\n\
+    \            \"target_iop\": calculate_target_iop(mean_iop, -2.0, age),\n            \"monitoring_schedule\": generate_monitoring_schedule(\n\
+    \                risk_assessment[\"risk_level\"], \"Normal\", age\n            )\n        }\n    \n    def assess_optic_nerve(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Assess optic nerve damage.\"\"\"\n        cdr = params.get(\"\
+    cdr\", 0.3)\n        rim_area = params.get(\"rim_area\", 1.2)\n        rnfl_thickness = params.get(\"rnfl_thickness\"\
+    , 100)\n        \n        damage_assessment = evaluate_optic_nerve_damage(cdr, rim_area, rnfl_thickness)\n        \n \
+    \       return {\n            \"damage_assessment\": damage_assessment,\n            \"recommended_tests\": [\"OCT\",\
+    \ \"Visual Field\", \"Fundus Photography\"],\n            \"follow_up_interval\": \"3 months\" if damage_assessment[\"\
+    stage\"] == \"Advanced\" else \"6 months\"\n        }\n    \n    def interpret_vf(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Interpret visual field test results.\"\"\"\n        md = params.get(\"md\", -2.0)\n        psd\
+    \ = params.get(\"psd\", 2.0)\n        vfi = params.get(\"vfi\", 95.0)\n        \n        interpretation = interpret_visual_field(md,\
+    \ psd, vfi)\n        \n        return {\n            \"interpretation\": interpretation,\n            \"reliability_check\"\
+    : \"Pass\" if psd < 5 else \"Review\",\n            \"clinical_significance\": \"Monitor\" if interpretation[\"md_status\"\
+    ] == \"Normal\" else \"Investigate\"\n        }\n    \n    def recommend_treatment(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Recommend treatment protocol.\"\"\"\n        glaucoma_type = params.get(\"glaucoma_type\", \"POAG\"\
+    )\n        current_iop = params.get(\"current_iop\", 22)\n        target_iop = params.get(\"target_iop\", 16)\n      \
+    \  current_meds = params.get(\"current_meds\", [])\n        \n        # Simple treatment algorithm\n        if current_iop\
+    \ > target_iop + 5:\n            recommendation = \"Initiate dual therapy (PGA + beta-blocker)\"\n            urgency\
+    \ = \"High\"\n        elif current_iop > target_iop:\n            recommendation = \"Add second agent or increase current\
+    \ medication\"\n            urgency = \"Moderate\"\n        else:\n            recommendation = \"Continue current therapy\"\
+    \n            urgency = \"Low\"\n        \n        # Check interactions for proposed therapy\n        interaction_check\
+    \ = check_drug_interactions(current_meds, \"latanoprost\")\n        \n        return {\n            \"recommendation\"\
+    : recommendation,\n            \"urgency\": urgency,\n            \"proposed_medications\": [\"Latanoprost\", \"Timolol\"\
+    ],\n            \"drug_interaction_check\": interaction_check,\n            \"follow_up\": \"4-6 weeks\"\n        }\n\
+    \    \n    def evaluate_neuroprotection(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Evaluate neuroprotective\
+    \ therapy options.\"\"\"\n        current_therapy = params.get(\"current_therapy\", [])\n        progression = params.get(\"\
+    progression\", \"stable\")\n        \n        recommendations = []\n        if progression == \"worsening\":\n       \
+    \     recommendations.extend([\n                \"Consider brimonidine (neuroprotective properties)\",\n             \
+    \   \"Evaluate memantine adjunct therapy\",\n                \"Assess compliance with current therapy\"\n            ])\n\
+    \        else:\n            recommendations.append(\"Continue current monitoring protocol\")\n        \n        return\
+    \ {\n            \"neuroprotective_options\": recommendations,\n            \"evidence_level\": \"Moderate\",\n      \
+    \      \"clinical_trial_eligibility\": progression == \"worsening\"\n        }\n    \n    def analyze_emerging_therapies(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Analyze emerging therapy options.\"\"\"\n        stage = params.get(\"\
+    stage\", \"moderate\")\n        previous_surgeries = params.get(\"previous_surgeries\", [])\n        \n        emerging_options\
+    \ = []\n        if stage in [\"moderate\", \"advanced\"]:\n            emerging_options.extend([\n                \"ROCK\
+    \ inhibitors (Netarsudil)\",\n                \"Gene therapy trials (MYOC, OPTN genes)\",\n                \"Stem cell\
+    \ therapy (experimental)\",\n                \"Neurotrophic factor therapy\"\n            ])\n        \n        return\
+    \ {\n            \"emerging_therapies\": emerging_options,\n            \"clinical_trial_availability\": len(emerging_options)\
+    \ > 0,\n            \"insurance_coverage\": \"Limited\",\n            \"regulatory_status\": \"Investigational\"\n   \
+    \     }\n    \n    def match_clinical_trials(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Match patients\
+    \ to relevant clinical trials.\"\"\"\n        age = params.get(\"age\", 60)\n        stage = params.get(\"stage\", \"\
+    moderate\")\n        location = params.get(\"location\", \"US\")\n        \n        # Mock trial matching\n        trials\
+    \ = [\n            {\n                \"nct_id\": \"NCT12345678\",\n                \"title\": \"ROCK Inhibitor vs PGA\
+    \ in Primary Open-Angle Glaucoma\",\n                \"phase\": \"III\",\n                \"eligibility\": age >= 18 and\
+    \ stage in [\"moderate\", \"advanced\"]\n            },\n            {\n                \"nct_id\": \"NCT87654321\",\n\
+    \                \"title\": \"Gene Therapy for Myocilin Glaucoma\",\n                \"phase\": \"I/II\",\n          \
+    \      \"eligibility\": age >= 21 and \"MYOC\" in str(params.get(\"genetics\", \"\"))\n            }\n        ]\n    \
+    \    \n        eligible_trials = [t for t in trials if t[\"eligibility\"]]\n        \n        return {\n            \"\
+    eligible_trials\": eligible_trials,\n            \"total_trials_found\": len(trials),\n            \"recommendation\"\
+    : \"Contact site for\" if eligible_trials else \"No current matches\"\n        }\n    \n    def generate_alerts(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Generate patient monitoring alerts.\"\"\"\n        current_iop\
+    \ = params.get(\"current_iop\", 15)\n        baseline_iop = params.get(\"baseline_iop\", 15)\n        surgery_date = params.get(\"\
+    surgery_date\")\n        \n        alerts = []\n        \n        # IOP alert\n        if current_iop > baseline_iop +\
+    \ 5:\n            alerts.append({\n                \"type\": \"IOP_ELEVATION\",\n                \"severity\": \"High\"\
+    ,\n                \"message\": f\"IOP increased by {current_iop - baseline_iop} mmHg from baseline\"\n            })\n\
+    \        \n        # Post-surgical alert\n        if surgery_date:\n            surgery_dt = datetime.datetime.strptime(surgery_date,\
+    \ \"%Y-%m-%d\")\n            days_post_op = (datetime.datetime.now() - surgery_dt).days\n            if days_post_op <\
+    \ 30 and current_iop > 21:\n                alerts.append({\n                    \"type\": \"POST_SURGICAL_SPIKE\",\n\
+    \                    \"severity\": \"High\",\n                    \"message\": \"Elevated IOP in post-operative period\"\
+    \n                })\n        \n        return {\n            \"alerts\": alerts,\n            \"alert_count\": len(alerts),\n\
+    \            \"requires_attention\": len(alerts) > 0\n        }\n    \n    def stratify_risk(self, params: Dict[str, Any])\
+    \ -> Dict[str, Any]:\n        \"\"\"Stratify patient risk.\"\"\"\n        return self.analyze_iop(params)  # Reuse IOP\
+    \ analysis for risk stratification\n    \n    def track_progression(self, params: Dict[str, Any]) -> Dict[str, Any]:\n\
+    \        \"\"\"Track disease progression.\"\"\"\n        test_dates = params.get(\"test_dates\", [])\n        md_values\
+    \ = params.get(\"md_values\", [])\n        \n        progression_analysis = analyze_progression_rate(test_dates, md_values)\n\
+    \        \n        return {\n            \"progression_analysis\": progression_analysis,\n            \"treatment_adjustment_needed\"\
+    : progression_analysis.get(\"significant\", False),\n            \"next_test_recommended\": \"6 months\" if progression_analysis.get(\"\
+    significant\") else \"12 months\"\n        }\n\nclass TestGlaucomaOphthalmologySkill(unittest.TestCase):\n    \"\"\"Test\
+    \ cases for glaucoma and ophthalmology skill.\"\"\"\n    \n    def setUp(self):\n        \"\"\"Set up test fixtures.\"\
+    \"\"\n        self.config = {\"log_level\": \"DEBUG\"}\n        self.engine =SkillEngine(self.config)\n    \n    def test_metadata_validation(self):\n\
+    \        \"\"\"Test skill metadata structure.\"\"\"\n        self.assertEqual(SKILL_METADATA[\"name\"], \"Glaucoma & Ophthalmology\"\
+    )\n        self.assertIn(\"intraocular_pressure_analysis\", SKILL_METADATA[\"capabilities\"])\n        self.assertEqual(len(SKILL_METADATA[\"\
+    capabilities\"]), 10)\n    \n    def test_iop_validation(self):\n        \"\"\"Test IOP reading validation.\"\"\"\n  \
+    \      # Valid readings\n        valid, msg = validate_iop_readings([15, 16, 14])\n        self.assertTrue(valid)\n  \
+    \      self.assertEqual(msg, \"Valid IOP readings\")\n        \n        # Invalid readings\n        valid, msg = validate_iop_readings([15,\
+    \ 80, 14])\n        self.assertFalse(valid)\n        self.assertIn(\"outside physiological range\", msg)\n    \n    def\
+    \ test_mean_iop_calculation(self):\n        \"\"\"Test mean IOP calculation with outlier removal.\"\"\"\n        readings\
+    \ = [15, 16, 15, 30, 14]  # 30 is outlier\n        mean_iop = calculate_mean_iop(readings)\n        self.assertLess(mean_iop,\
+    \ 20)  # Should exclude outlier\n    \n    def test_glaucoma_risk_assessment(self):\n        risk = assess_glaucoma_risk(25,\
+    \ 480, 65, True)\n        self.assertEqual(risk[\"risk_level\"], \"High\")\n        self.assertIn(\"Elevated IOP\", risk[\"\
+    risk_factors\"])\n        self.assertIn(\"Family history of glaucoma\", risk[\"risk_factors\"])\n    \n    def test_visual_field_interpretation(self):\n\
+    \        \"\"\"Test visual field interpretation.\"\"\"\n        interpretation = interpret_visual_field(-8.5, 4.2, 75)\n\
+    \        self.assertEqual(interpretation[\"md_severity\"], \"Moderate\")\n        self.assertEqual(interpretation[\"overall_status\"\
+    ], \"Glaucomatous defect - Moderate\")\n    \n    def test_optic_nerve_damage_evaluation(self):\n        \"\"\"Test optic\
+    \ nerve damage assessment.\"\"\"\n        damage = evaluate_optic_nerve_damage(0.8, 0.4, 65)\n        self.assertEqual(damage[\"\
+    stage\"], \"Advanced\")\n        self.assertIn(\"Advanced cupping\", damage[\"findings\"])\n    \n    def test_target_iop_calculation(self):\n\
+    \        \"\"\"Test target IOP calculation.\"\"\"\n        target = calculate_target_iop(25, -15, 45)\n        self.assertLess(target,\
+    \ 20)  # Should be reduced from baseline\n        self.assertGreaterEqual(target, 6)  # Minimum safe IOP\n    \n    def\
+    \ test_drug_interaction_check(self):\n        \"\"\"Test drug interaction checking.\"\"\"\n        interactions = check_drug_interactions([\"\
+    atenolol\", \"digoxin\"], \"timolol\")\n        self.assertTrue(interactions[\"has_interactions\"])\n        self.assertIn(\"\
+    Consider alternative therapy\", interactions[\"recommendation\"])\n    \n    def test_progression_rate_analysis(self):\n\
+    \        \"\"\"Test visual field progression analysis.\"\"\"\n        dates = [\"2020-01-01\", \"2021-01-01\", \"2022-01-01\"\
+    , \"2023-01-01\"]\n        md_values = [-2.0, -3.0, -4.5, -6.0]\n        progression = analyze_progression_rate(dates,\
+    \ md_values)\n        self.assertLess(progression[\"progression_rate_db_per_year\"], 0)\n        self.assertTrue(progression[\"\
+    significant\"])\n    \n    def test_skill_engine_iop_analysis(self):\n        \"\"\"Test skill engine IOP analysis capability.\"\
+    \"\"\n        params = {\n            \"iop_readings\": [18, 19, 17, 20],\n            \"cct\": 520,\n            \"age\"\
+    : 55,\n            \"family_history\": False\n        }\n        result = self.engine.run(\"intraocular_pressure_analysis\"\
+    , params)\n        self.assertIn(\"mean_iop\", result)\n        self.assertIn(\"risk_assessment\", result)\n        self.assertEqual(result[\"\
+    risk_assessment\"][\"risk_level\"], \"Moderate\")\n    \n    def test_skill_engine_vf_interpretation(self):\n        \"\
+    \"\"Test skill engine visual field interpretation.\"\"\"\n        params = {\"md\": -10.5, \"psd\": 6.8, \"vfi\": 65}\n\
+    \        result = self.engine.run(\"visual_field_interpretation\", params)\n        self.assertEqual(result[\"interpretation\"\
+    ][\"md_severity\"], \"Moderate\")\n        self.assertEqual(result[\"clinical_significance\"], \"Investigate\")\n    \n\
+    \    def test_skill_engine_treatment_recommendation(self):\n        \"\"\"Test skill engine treatment recommendation.\"\
+    \"\"\n        params = {\n            \"glaucoma_type\": \"POAG\",\n            \"current_iop\": 28,\n            \"target_iop\"\
+    : 16,\n            \"current_meds\": [\"latanoprost\"]\n        }\n        result = self.engine.run(\"treatment_protocol_recommendation\"\
+    , params)\n        self.assertIn(\"recommendation\", result)\n        self.assertEqual(result[\"urgency\"], \"High\")\n\
+    \    \n    def test_skill_engine_error_handling(self):\n        \"\"\"Test skill engine error handling.\"\"\"\n      \
+    \  # Invalid capability\n        with self.assertRaises(ValueError):\n            self.engine.run(\"invalid_capability\"\
+    , {})\n        \n        # Invalid IOP readings\n        result = self.engine.run(\"intraocular_pressure_analysis\", {\"\
+    iop_readings\": [100]})\n        self.assertIn(\"error\", result)\n\nif __name__ == \"__main__\":\n    unittest.main()"
+examples:
+- description: Load and use the Glaucoma & Ophthalmology skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''glaucoma_ophthalmology'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

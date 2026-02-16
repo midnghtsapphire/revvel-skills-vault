@@ -1,0 +1,60 @@
+name: plant-tracker
+title: Plant Tracker
+version: 1.0.0
+description: 'Personal plant and garden management for gardeners. Track your plants, set care schedules, and monitor growth.
+  Use when you need to manage your garden, track watering/fertilizing schedules, or maintain plant inventories. Security:
+  file exports are restricted to safe directories only (workspace, home'
+metadata:
+  author: johstracke
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - plant
+  - tracker
+  source: clawhub-community
+  clawhub_slug: plant-tracker
+  clawhub_path: johstracke/plant-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Plant Tracker
+
+    # Source: ClawHub community skill by johstracke
+
+    # Install: clawhub install plant-tracker
+
+    # Path: johstracke/plant-tracker
+
+
+    ## Description
+
+    Personal plant and garden management for gardeners. Track your plants, set care schedules, and monitor growth. Use when
+    you need to manage your garden, track watering/fertilizing schedules, or maintain plant inventories. Security: file exports
+    are restricted to safe directories only (workspace, home
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/plant_tracker.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install plant-tracker
+
+    ```'
+examples:
+- description: Install Plant Tracker from ClawHub
+  usage: clawhub install plant-tracker
+schema_version: '1.0'

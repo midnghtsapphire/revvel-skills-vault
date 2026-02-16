@@ -1,0 +1,64 @@
+name: skill-sharer
+title: Skill Sharer
+version: 1.0.0
+description: Share a skill publicly to the Enterprise-Crew-skills GitHub repo. Strips personal/security info, generates a
+  README, and updates the repo index.
+metadata:
+  author: henrino3
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - sharer
+  source: clawhub-community
+  clawhub_slug: ec-skill-sharer
+  clawhub_path: henrino3/ec-skill-sharer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Sharer
+
+    # Source: ClawHub community skill by henrino3
+
+    # Install: clawhub install ec-skill-sharer
+
+    # Path: henrino3/ec-skill-sharer
+
+
+    ## Description
+
+    Share a skill publicly to the Enterprise-Crew-skills GitHub repo. Strips personal/security info, generates a README, and
+    updates the repo index.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate-readme.sh
+
+    - scripts/sanitize.sh
+
+    - scripts/share-skill.sh
+
+    - scripts/update-index.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ec-skill-sharer
+
+    ```'
+examples:
+- description: Install Skill Sharer from ClawHub
+  usage: clawhub install ec-skill-sharer
+schema_version: '1.0'

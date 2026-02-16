@@ -1,0 +1,62 @@
+name: norway-roads
+title: Norway Roads
+version: 1.0.0
+description: Query real-time road conditions, closures, and traffic issues in Norway. Use when the user asks about road status,
+  closed roads, traffic conditions, weather on roads, or planning a route in Norway. Handles queries like "Are there road
+  closures between Oslo and Bergen?", "What's the road condition on
+metadata:
+  author: geoffreycasaubon
+  category: Utilities
+  tags:
+  - utilities
+  - norway
+  - roads
+  source: clawhub-community
+  clawhub_slug: norway-roads
+  clawhub_path: geoffreycasaubon/norway-roads
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Norway Roads
+
+    # Source: ClawHub community skill by geoffreycasaubon
+
+    # Install: clawhub install norway-roads
+
+    # Path: geoffreycasaubon/norway-roads
+
+
+    ## Description
+
+    Query real-time road conditions, closures, and traffic issues in Norway. Use when the user asks about road status, closed
+    roads, traffic conditions, weather on roads, or planning a route in Norway. Handles queries like "Are there road closures
+    between Oslo and Bergen?", "What''s the road condition on
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-docs.md
+
+    - scripts/query_roads.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install norway-roads
+
+    ```'
+examples:
+- description: Install Norway Roads from ClawHub
+  usage: clawhub install norway-roads
+schema_version: '1.0'

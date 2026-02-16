@@ -1,0 +1,56 @@
+name: baidu-search
+title: baidu web search
+version: 1.1.0
+description: Search the web using Baidu AI Search Engine (BDSE). Use for live information, documentation, or research topics.
+metadata:
+  author: ide-rea
+  category: Search & Research
+  tags:
+  - search-research
+  - baidu
+  - search
+  source: clawhub-community
+  clawhub_slug: baidu-search
+  clawhub_path: ide-rea/baidu-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# baidu web search
+
+    # Source: ClawHub community skill by ide-rea
+
+    # Install: clawhub install baidu-search
+
+    # Path: ide-rea/baidu-search
+
+
+    ## Description
+
+    Search the web using Baidu AI Search Engine (BDSE). Use for live information, documentation, or research topics.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install baidu-search
+
+    ```'
+examples:
+- description: Install baidu web search from ClawHub
+  usage: clawhub install baidu-search
+schema_version: '1.0'

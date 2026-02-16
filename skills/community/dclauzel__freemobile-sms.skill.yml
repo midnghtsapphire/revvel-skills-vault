@@ -1,0 +1,65 @@
+name: freemobile-sms
+title: Free Mobile SMS
+version: 0.0.1
+description: Envoyer des SMS à ton humain via Free Mobile
+metadata:
+  author: dclauzel
+  category: Communication
+  tags:
+  - communication
+  - freemobile
+  - sms
+  - bash(python3:*)
+  source: clawhub-community
+  clawhub_slug: freemobile-sms
+  clawhub_path: dclauzel/freemobile-sms
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(python3:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Free Mobile SMS
+
+    # Source: ClawHub community skill by dclauzel
+
+    # Install: clawhub install freemobile-sms
+
+    # Path: dclauzel/freemobile-sms
+
+
+    ## Description
+
+    Envoyer des SMS à ton humain via Free Mobile
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/REFERENCE.md
+
+    - scripts/FreeMobile_sms.py
+
+
+    ## Allowed Tools
+
+    Bash(python3:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install freemobile-sms
+
+    ```'
+examples:
+- description: Install Free Mobile SMS from ClawHub
+  usage: clawhub install freemobile-sms
+schema_version: '1.0'

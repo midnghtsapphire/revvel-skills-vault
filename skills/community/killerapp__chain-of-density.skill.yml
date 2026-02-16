@@ -1,0 +1,58 @@
+name: chain-of-density
+title: Chain of Density
+version: 1.1.0
+description: '"Iteratively densify text summaries using Chain-of-Density technique. Use when compressing verbose documentation,
+  condensing requirements, or creating executive summaries while preserving information density."'
+metadata:
+  author: killerapp
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - chain
+  - density
+  source: clawhub-community
+  clawhub_slug: chain-of-density
+  clawhub_path: killerapp/chain-of-density
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Chain of Density
+
+    # Source: ClawHub community skill by killerapp
+
+    # Install: clawhub install chain-of-density
+
+    # Path: killerapp/chain-of-density
+
+
+    ## Description
+
+    "Iteratively densify text summaries using Chain-of-Density technique. Use when compressing verbose documentation, condensing
+    requirements, or creating executive summaries while preserving information density."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/text_metrics.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install chain-of-density
+
+    ```'
+examples:
+- description: Install Chain of Density from ClawHub
+  usage: clawhub install chain-of-density
+schema_version: '1.0'

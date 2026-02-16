@@ -1,0 +1,55 @@
+name: answeroverflow
+title: Answer Overflow
+version: 1.0.2
+description: Search indexed Discord community discussions via Answer Overflow. Find solutions to coding problems, library
+  issues, and community Q&A that only exist in Discord conversations.
+metadata:
+  author: rhyssullivan
+  category: Search & Research
+  tags:
+  - search-research
+  - answeroverflow
+  source: clawhub-community
+  clawhub_slug: answeroverflow
+  clawhub_path: rhyssullivan/answeroverflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Answer Overflow
+
+    # Source: ClawHub community skill by rhyssullivan
+
+    # Install: clawhub install answeroverflow
+
+    # Path: rhyssullivan/answeroverflow
+
+
+    ## Description
+
+    Search indexed Discord community discussions via Answer Overflow. Find solutions to coding problems, library issues, and
+    community Q&A that only exist in Discord conversations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install answeroverflow
+
+    ```'
+examples:
+- description: Install Answer Overflow from ClawHub
+  usage: clawhub install answeroverflow
+schema_version: '1.0'

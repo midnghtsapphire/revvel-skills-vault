@@ -1,0 +1,64 @@
+name: redpacket-claim
+title: redpacket-claim
+version: 1.0.8
+description: 全自动红包领取技能。当用户输入红包口令（如'天天开心'、'恭喜发财'等）时，自动检测并尝试在支持的平台上领取红包。支持微信、支付宝、QQ、抖音等主流平台，自动选择最佳领取方式。
+metadata:
+  author: chai5419
+  category: General
+  tags:
+  - general
+  - redpacket
+  - claim
+  source: clawhub-community
+  clawhub_slug: redpacket-claim
+  clawhub_path: chai5419/redpacket-claim
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# redpacket-claim
+
+    # Source: ClawHub community skill by chai5419
+
+    # Install: clawhub install redpacket-claim
+
+    # Path: chai5419/redpacket-claim
+
+
+    ## Description
+
+    全自动红包领取技能。当用户输入红包口令（如''天天开心''、''恭喜发财''等）时，自动检测并尝试在支持的平台上领取红包。支持微信、支付宝、QQ、抖音等主流平台，自动选择最佳领取方式。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/platforms.md
+
+    - references/security.md
+
+    - scripts/__init__.py
+
+    - scripts/claim_redpacket.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install redpacket-claim
+
+    ```'
+examples:
+- description: Install redpacket-claim from ClawHub
+  usage: clawhub install redpacket-claim
+schema_version: '1.0'

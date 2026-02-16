@@ -1,0 +1,58 @@
+name: uptime-monitor
+title: 24/7 OpenClaw Uptime Monitor (Dead/Uptime JSON Tracker)
+version: 1.0.0
+description: 24/7 OpenClaw uptime monitor. Every 5min cron ping → writes dead.json if down, uptime.json after 7d (168h) continuous
+  alive streak. Use when setting up persistent monitoring (cron setup, streak tracking, status files).
+metadata:
+  author: kunoiiv
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - uptime
+  - monitor
+  source: clawhub-community
+  clawhub_slug: uptime-monitor
+  clawhub_path: kunoiiv/uptime-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 24/7 OpenClaw Uptime Monitor (Dead/Uptime JSON Tracker)
+
+    # Source: ClawHub community skill by kunoiiv
+
+    # Install: clawhub install uptime-monitor
+
+    # Path: kunoiiv/uptime-monitor
+
+
+    ## Description
+
+    24/7 OpenClaw uptime monitor. Every 5min cron ping → writes dead.json if down, uptime.json after 7d (168h) continuous
+    alive streak. Use when setting up persistent monitoring (cron setup, streak tracking, status files).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/uptime-check.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install uptime-monitor
+
+    ```'
+examples:
+- description: Install 24/7 OpenClaw Uptime Monitor (Dead/Uptime JSON Tracker) from ClawHub
+  usage: clawhub install uptime-monitor
+schema_version: '1.0'

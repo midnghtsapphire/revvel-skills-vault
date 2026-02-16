@@ -1,0 +1,57 @@
+name: videogames
+title: Videogames
+version: 1.0.0
+description: A skill to lookup video game information and compare prices across multiple stores.
+metadata:
+  author: ivanheral
+  category: Media & Content
+  tags:
+  - media-content
+  - videogames
+  source: clawhub-community
+  clawhub_slug: videogames
+  clawhub_path: ivanheral/videogames
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Videogames
+
+    # Source: ClawHub community skill by ivanheral
+
+    # Install: clawhub install videogames
+
+    # Path: ivanheral/videogames
+
+
+    ## Description
+
+    A skill to lookup video game information and compare prices across multiple stores.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/game_tool.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install videogames
+
+    ```'
+examples:
+- description: Install Videogames from ClawHub
+  usage: clawhub install videogames
+schema_version: '1.0'

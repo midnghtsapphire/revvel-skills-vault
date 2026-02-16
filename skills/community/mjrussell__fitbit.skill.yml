@@ -1,0 +1,55 @@
+name: fitbit
+title: Fitbit
+version: 0.1.0
+description: Query Fitbit health data including sleep, heart rate, activity, SpO2, and breathing rate. Use when user asks
+  about their fitness, sleep quality, steps, or health metrics.
+metadata:
+  author: mjrussell
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - fitbit
+  source: clawhub-community
+  clawhub_slug: fitbit
+  clawhub_path: mjrussell/fitbit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fitbit
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install fitbit
+
+    # Path: mjrussell/fitbit
+
+
+    ## Description
+
+    Query Fitbit health data including sleep, heart rate, activity, SpO2, and breathing rate. Use when user asks about their
+    fitness, sleep quality, steps, or health metrics.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fitbit
+
+    ```'
+examples:
+- description: Install Fitbit from ClawHub
+  usage: clawhub install fitbit
+schema_version: '1.0'

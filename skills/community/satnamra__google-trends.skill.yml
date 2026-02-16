@@ -1,0 +1,58 @@
+name: google-trends
+title: Google Trends
+version: 1.0.0
+description: Monitor Google Trends - get trending searches, compare keywords, and track interest over time. Use for market
+  research, content planning, and trend analysis.
+metadata:
+  author: satnamra
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - trends
+  source: clawhub-community
+  clawhub_slug: google-trends
+  clawhub_path: satnamra/google-trends
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Trends
+
+    # Source: ClawHub community skill by satnamra
+
+    # Install: clawhub install google-trends
+
+    # Path: satnamra/google-trends
+
+
+    ## Description
+
+    Monitor Google Trends - get trending searches, compare keywords, and track interest over time. Use for market research,
+    content planning, and trend analysis.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - trends-daily.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-trends
+
+    ```'
+examples:
+- description: Install Google Trends from ClawHub
+  usage: clawhub install google-trends
+schema_version: '1.0'

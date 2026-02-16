@@ -1,0 +1,70 @@
+name: polyclaw
+title: PolyClaw
+version: 1.0.0
+description: '"Trade on Polymarket via split + CLOB execution. Browse markets, track positions with P&L, discover hedges via
+  LLM. Polygon/Web3."'
+metadata:
+  author: akegaviar
+  category: Search & Research
+  tags:
+  - search-research
+  - polyclaw
+  source: clawhub-community
+  clawhub_slug: polyclaw
+  clawhub_path: akegaviar/polyclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PolyClaw
+
+    # Source: ClawHub community skill by akegaviar
+
+    # Install: clawhub install polyclaw
+
+    # Path: akegaviar/polyclaw
+
+
+    ## Description
+
+    "Trade on Polymarket via split + CLOB execution. Browse markets, track positions with P&L, discover hedges via LLM. Polygon/Web3."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - lib/__init__.py
+
+    - lib/clob_client.py
+
+    - lib/contracts.py
+
+    - lib/coverage.py
+
+    - lib/gamma_client.py
+
+    - lib/llm_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polyclaw
+
+    ```'
+examples:
+- description: Install PolyClaw from ClawHub
+  usage: clawhub install polyclaw
+schema_version: '1.0'

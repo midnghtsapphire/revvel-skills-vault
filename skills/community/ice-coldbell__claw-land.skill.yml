@@ -1,0 +1,71 @@
+name: clawland
+title: Clawland
+version: 1.0.1
+description: '"Play on-chain odd/even games on Solana devnet via Clawland. Mint GEM from SOL or USDC, bet odd or even, win
+  2x. Scripts handle wallet setup, minting, and autoplay."'
+metadata:
+  author: ice-coldbell
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawland
+  source: clawhub-community
+  clawhub_slug: claw-land
+  clawhub_path: ice-coldbell/claw-land
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawland
+
+    # Source: ClawHub community skill by ice-coldbell
+
+    # Install: clawhub install claw-land
+
+    # Path: ice-coldbell/claw-land
+
+
+    ## Description
+
+    "Play on-chain odd/even games on Solana devnet via Clawland. Mint GEM from SOL or USDC, bet odd or even, win 2x. Scripts
+    handle wallet setup, minting, and autoplay."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API.md
+
+    - references/SOLANA.md
+
+    - scripts/autoplay.js
+
+    - scripts/balance.js
+
+    - scripts/common.js
+
+    - scripts/link-wallet.js
+
+    - scripts/mint-gems-sol.js
+
+    - scripts/mint-gems.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-land
+
+    ```'
+examples:
+- description: Install Clawland from ClawHub
+  usage: clawhub install claw-land
+schema_version: '1.0'

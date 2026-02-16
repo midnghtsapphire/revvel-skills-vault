@@ -1,0 +1,59 @@
+name: raindrop
+title: Raindrop.io Bookmarks
+version: 1.0.1
+description: Search, list, and manage Raindrop.io bookmarks via CLI. Use when the user wants to find saved links, browse collections,
+  add new bookmarks, organize with tags, move bookmarks between collections, or work with their Raindrop library. Supports
+  reading (search, list, get, tags) and writing (add, delete
+metadata:
+  author: velvet-shark
+  category: Search & Research
+  tags:
+  - search-research
+  - raindrop
+  source: clawhub-community
+  clawhub_slug: raindrop
+  clawhub_path: velvet-shark/raindrop
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Raindrop.io Bookmarks
+
+    # Source: ClawHub community skill by velvet-shark
+
+    # Install: clawhub install raindrop
+
+    # Path: velvet-shark/raindrop
+
+
+    ## Description
+
+    Search, list, and manage Raindrop.io bookmarks via CLI. Use when the user wants to find saved links, browse collections,
+    add new bookmarks, organize with tags, move bookmarks between collections, or work with their Raindrop library. Supports
+    reading (search, list, get, tags) and writing (add, delete
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/raindrop.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install raindrop
+
+    ```'
+examples:
+- description: Install Raindrop.io Bookmarks from ClawHub
+  usage: clawhub install raindrop
+schema_version: '1.0'

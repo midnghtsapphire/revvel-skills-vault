@@ -1,0 +1,58 @@
+name: find-skills
+title: find-slills
+version: 1.0.0
+description: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for
+  X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user
+  is looking for functionality that might exist as an installable ski
+metadata:
+  author: rumengkai
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - find
+  - skills
+  source: clawhub-community
+  clawhub_slug: find-slills
+  clawhub_path: rumengkai/find-slills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# find-slills
+
+    # Source: ClawHub community skill by rumengkai
+
+    # Install: clawhub install find-slills
+
+    # Path: rumengkai/find-slills
+
+
+    ## Description
+
+    Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is
+    there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is
+    looking for functionality that might exist as an installable ski
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install find-slills
+
+    ```'
+examples:
+- description: Install find-slills from ClawHub
+  usage: clawhub install find-slills
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: audio-gen
+title: Audio Content Generator
+version: 1.0.0
+description: Generate audiobooks, podcasts, or educational audio content on demand. User provides an idea or topic, Claude
+  AI writes a script, and ElevenLabs converts it to high-quality audio. Supports multiple formats (audiobook, podcast, educational),
+  custom lengths, and voice effects. Use when asked to create
+metadata:
+  author: udiedrichsen
+  category: Media & Content
+  tags:
+  - media-content
+  - audio
+  - gen
+  source: clawhub-community
+  clawhub_slug: audio-gen
+  clawhub_path: udiedrichsen/audio-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Audio Content Generator
+
+    # Source: ClawHub community skill by udiedrichsen
+
+    # Install: clawhub install audio-gen
+
+    # Path: udiedrichsen/audio-gen
+
+
+    ## Description
+
+    Generate audiobooks, podcasts, or educational audio content on demand. User provides an idea or topic, Claude AI writes
+    a script, and ElevenLabs converts it to high-quality audio. Supports multiple formats (audiobook, podcast, educational),
+    custom lengths, and voice effects. Use when asked to create
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install audio-gen
+
+    ```'
+examples:
+- description: Install Audio Content Generator from ClawHub
+  usage: clawhub install audio-gen
+schema_version: '1.0'

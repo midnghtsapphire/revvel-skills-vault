@@ -1,0 +1,73 @@
+name: nexwave-gateway
+title: Nexwave Gateway
+version: 1.0.2
+description: Unified crosschain USDC balance via Circle Gateway + Circle Programmable Wallets. Deposit USDC on any supported
+  chain, check your unified balance, and instantly mint USDC on any destination chain in <500ms — no bridging, no raw private
+  keys.
+metadata:
+  author: botmechanic
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - nexwave
+  - gateway
+  source: clawhub-community
+  clawhub_slug: nexwave-gateway
+  clawhub_path: botmechanic/nexwave-gateway
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nexwave Gateway
+
+    # Source: ClawHub community skill by botmechanic
+
+    # Install: clawhub install nexwave-gateway
+
+    # Path: botmechanic/nexwave-gateway
+
+
+    ## Description
+
+    Unified crosschain USDC balance via Circle Gateway + Circle Programmable Wallets. Deposit USDC on any supported chain,
+    check your unified balance, and instantly mint USDC on any destination chain in <500ms — no bridging, no raw private keys.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - abis.js
+
+    - check-balance.js
+
+    - circle-wallet-client.js
+
+    - deposit.js
+
+    - gateway-client.js
+
+    - setup-gateway.js
+
+    - setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nexwave-gateway
+
+    ```'
+examples:
+- description: Install Nexwave Gateway from ClawHub
+  usage: clawhub install nexwave-gateway
+schema_version: '1.0'

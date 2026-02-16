@@ -1,0 +1,56 @@
+name: stream-of-consciousness
+title: Stream Of Consciousness
+version: 0.1.0
+description: Export the entire conversation context into Open-Token format (including tools and optional internal traces)
+  for agent collaboration, auditability, and reproducibility.
+metadata:
+  author: 247arjun
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - stream
+  - consciousness
+  source: clawhub-community
+  clawhub_slug: stream-of-consciousness
+  clawhub_path: 247arjun/stream-of-consciousness
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stream Of Consciousness
+
+    # Source: ClawHub community skill by 247arjun
+
+    # Install: clawhub install stream-of-consciousness
+
+    # Path: 247arjun/stream-of-consciousness
+
+
+    ## Description
+
+    Export the entire conversation context into Open-Token format (including tools and optional internal traces) for agent
+    collaboration, auditability, and reproducibility.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stream-of-consciousness
+
+    ```'
+examples:
+- description: Install Stream Of Consciousness from ClawHub
+  usage: clawhub install stream-of-consciousness
+schema_version: '1.0'

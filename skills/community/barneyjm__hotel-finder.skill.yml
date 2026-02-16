@@ -1,0 +1,58 @@
+name: hotel-finder
+title: Hotel Finder
+version: 2.0.0
+description: '"Search for hotels, hostels, and lodging near landmarks, conference venues, or neighborhoods using Camino AI''s
+  location intelligence with AI-powered ranking."'
+metadata:
+  author: barneyjm
+  category: Search & Research
+  tags:
+  - search-research
+  - hotel
+  - finder
+  source: clawhub-community
+  clawhub_slug: hotel-finder
+  clawhub_path: barneyjm/hotel-finder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hotel Finder
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install hotel-finder
+
+    # Path: barneyjm/hotel-finder
+
+
+    ## Description
+
+    "Search for hotels, hostels, and lodging near landmarks, conference venues, or neighborhoods using Camino AI''s location
+    intelligence with AI-powered ranking."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/hotel-finder.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hotel-finder
+
+    ```'
+examples:
+- description: Install Hotel Finder from ClawHub
+  usage: clawhub install hotel-finder
+schema_version: '1.0'

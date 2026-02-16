@@ -1,0 +1,55 @@
+name: jira
+title: JIRA
+version: 1.0.0
+description: Manage Jira issues, boards, sprints, and projects via the jira-cli. Search, create, update, and transition issues
+  directly from the command line.
+metadata:
+  author: jdrhyne
+  category: Search & Research
+  tags:
+  - search-research
+  - jira
+  source: clawhub-community
+  clawhub_slug: jira
+  clawhub_path: jdrhyne/jira
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# JIRA
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install jira
+
+    # Path: jdrhyne/jira
+
+
+    ## Description
+
+    Manage Jira issues, boards, sprints, and projects via the jira-cli. Search, create, update, and transition issues directly
+    from the command line.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jira
+
+    ```'
+examples:
+- description: Install JIRA from ClawHub
+  usage: clawhub install jira
+schema_version: '1.0'

@@ -1,0 +1,68 @@
+name: searxng-bangs
+title: Privacy-first web search with DuckDuckGo-style bangs (!w, !yt, !gh)
+version: 1.0.0
+description: Privacy-respecting web search via SearXNG with DuckDuckGo-style bangs support. Use for web searches when you
+  need to find information online. SearXNG protects privacy by randomizing browser fingerprints, masking IP addresses, and
+  blocking cookies/referrers. Supports 250+ search engines, multiple cat
+metadata:
+  author: rpeters511
+  category: Search & Research
+  tags:
+  - search-research
+  - searxng
+  - bangs
+  source: clawhub-community
+  clawhub_slug: searxng-bangs
+  clawhub_path: rpeters511/searxng-bangs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Privacy-first web search with DuckDuckGo-style bangs (!w, !yt, !gh)
+
+    # Source: ClawHub community skill by rpeters511
+
+    # Install: clawhub install searxng-bangs
+
+    # Path: rpeters511/searxng-bangs
+
+
+    ## Description
+
+    Privacy-respecting web search via SearXNG with DuckDuckGo-style bangs support. Use for web searches when you need to find
+    information online. SearXNG protects privacy by randomizing browser fingerprints, masking IP addresses, and blocking cookies/referrers.
+    Supports 250+ search engines, multiple cat
+
+
+    ## Files
+
+    - CLAWHUB.md
+
+    - INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install searxng-bangs
+
+    ```'
+examples:
+- description: Install Privacy-first web search with DuckDuckGo-style bangs (!w, !yt, !gh) from ClawHub
+  usage: clawhub install searxng-bangs
+schema_version: '1.0'

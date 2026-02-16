@@ -1,0 +1,53 @@
+name: imsg
+title: Imsg
+version: 1.0.0
+description: iMessage/SMS CLI for listing chats, history, watch, and sending.
+metadata:
+  author: steipete
+  category: Communication
+  tags:
+  - communication
+  - imsg
+  source: clawhub-community
+  clawhub_slug: imsg
+  clawhub_path: steipete/imsg
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Imsg
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install imsg
+
+    # Path: steipete/imsg
+
+
+    ## Description
+
+    iMessage/SMS CLI for listing chats, history, watch, and sending.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install imsg
+
+    ```'
+examples:
+- description: Install Imsg from ClawHub
+  usage: clawhub install imsg
+schema_version: '1.0'

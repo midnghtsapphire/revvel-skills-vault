@@ -1,0 +1,58 @@
+name: skill-review
+title: Skill Review
+version: 0.2.3
+description: '>'
+metadata:
+  author: odrobnik
+  category: General
+  tags:
+  - general
+  - skill
+  - review
+  source: clawhub-community
+  clawhub_slug: skill-review
+  clawhub_path: odrobnik/skill-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Review
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install skill-review
+
+    # Path: odrobnik/skill-review
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - suppressions.json
+
+    - scripts/skill_review.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-review
+
+    ```'
+examples:
+- description: Install Skill Review from ClawHub
+  usage: clawhub install skill-review
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: claw-roam
+title: Claw Roam
+version: 1.0.3
+description: Sync OpenClaw workspace between multiple machines (local Mac and remote VPS) via Git. Enables seamless migration
+  of OpenClaw personality, memory, and skills. Use when user wants to (1) push workspace changes to remote before shutdown,
+  (2) pull latest workspace on a new machine, (3) check sync status
+metadata:
+  author: ryanhong666
+  category: Development & Coding
+  tags:
+  - development-coding
+  - claw
+  - roam
+  source: clawhub-community
+  clawhub_slug: claw-roam
+  clawhub_path: ryanhong666/claw-roam
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claw Roam
+
+    # Source: ClawHub community skill by ryanhong666
+
+    # Install: clawhub install claw-roam
+
+    # Path: ryanhong666/claw-roam
+
+
+    ## Description
+
+    Sync OpenClaw workspace between multiple machines (local Mac and remote VPS) via Git. Enables seamless migration of OpenClaw
+    personality, memory, and skills. Use when user wants to (1) push workspace changes to remote before shutdown, (2) pull
+    latest workspace on a new machine, (3) check sync status
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/claw-roam.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-roam
+
+    ```'
+examples:
+- description: Install Claw Roam from ClawHub
+  usage: clawhub install claw-roam
+schema_version: '1.0'

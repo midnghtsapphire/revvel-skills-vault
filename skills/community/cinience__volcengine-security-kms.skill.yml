@@ -1,0 +1,61 @@
+name: volcengine-security-kms
+title: Volcengine Security Kms
+version: 1.0.0
+description: Key lifecycle management with Volcengine KMS. Use when users need key creation, rotation policies, encryption/decryption
+  workflows, or key permission troubleshooting.
+metadata:
+  author: cinience
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - volcengine
+  - security
+  - kms
+  source: clawhub-community
+  clawhub_slug: volcengine-security-kms
+  clawhub_path: cinience/volcengine-security-kms
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Volcengine Security Kms
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install volcengine-security-kms
+
+    # Path: cinience/volcengine-security-kms
+
+
+    ## Description
+
+    Key lifecycle management with Volcengine KMS. Use when users need key creation, rotation policies, encryption/decryption
+    workflows, or key permission troubleshooting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install volcengine-security-kms
+
+    ```'
+examples:
+- description: Install Volcengine Security Kms from ClawHub
+  usage: clawhub install volcengine-security-kms
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: clawaudit
+title: Clawaudit
+version: 0.1.0
+description: Official repo for clawaudit, coming soon as an automated security checker for repositories.
+metadata:
+  author: tezatezaz
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawaudit
+  source: clawhub-community
+  clawhub_slug: clawaudit
+  clawhub_path: tezatezaz/clawaudit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawaudit
+
+    # Source: ClawHub community skill by tezatezaz
+
+    # Install: clawhub install clawaudit
+
+    # Path: tezatezaz/clawaudit
+
+
+    ## Description
+
+    Official repo for clawaudit, coming soon as an automated security checker for repositories.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawaudit
+
+    ```'
+examples:
+- description: Install Clawaudit from ClawHub
+  usage: clawhub install clawaudit
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: log-tail
+title: Log Tail
+version: 1.0.0
+description: '"Stream recent logs from systemd journal"'
+metadata:
+  author: xejrax
+  category: System & OS
+  tags:
+  - system-os
+  - log
+  - tail
+  source: clawhub-community
+  clawhub_slug: log-tail
+  clawhub_path: xejrax/log-tail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Log Tail
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install log-tail
+
+    # Path: xejrax/log-tail
+
+
+    ## Description
+
+    "Stream recent logs from systemd journal"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install log-tail
+
+    ```'
+examples:
+- description: Install Log Tail from ClawHub
+  usage: clawhub install log-tail
+schema_version: '1.0'

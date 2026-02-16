@@ -1,0 +1,53 @@
+name: hello
+title: Hello Test
+version: 1.0.0
+description: '''Just a test skill'''
+metadata:
+  author: lraivisto
+  category: Development & Coding
+  tags:
+  - development-coding
+  - hello
+  source: clawhub-community
+  clawhub_slug: luka-hello
+  clawhub_path: lraivisto/luka-hello
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hello Test
+
+    # Source: ClawHub community skill by lraivisto
+
+    # Install: clawhub install luka-hello
+
+    # Path: lraivisto/luka-hello
+
+
+    ## Description
+
+    ''Just a test skill''
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install luka-hello
+
+    ```'
+examples:
+- description: Install Hello Test from ClawHub
+  usage: clawhub install luka-hello
+schema_version: '1.0'

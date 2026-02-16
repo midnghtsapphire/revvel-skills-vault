@@ -1,0 +1,58 @@
+name: speechall-cli
+title: Speechall command-line tool for fast speech-to-text transcription using multiple providers
+version: 0.1.1
+description: '"Install and use the speechall CLI tool for speech-to-text transcription. Use when the user wants to: (1) transcribe
+  audio or video files to text, (2) install speechall on macOS or Linux, (3) list available STT models and their capabilities,
+  (4) use speaker diarization, subtitles, or other transcrip'
+metadata:
+  author: atacan
+  category: Media & Content
+  tags:
+  - media-content
+  - speechall
+  - cli
+  source: clawhub-community
+  clawhub_slug: speechall-cli
+  clawhub_path: atacan/speechall-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Speechall command-line tool for fast speech-to-text transcription using multiple providers
+
+    # Source: ClawHub community skill by atacan
+
+    # Install: clawhub install speechall-cli
+
+    # Path: atacan/speechall-cli
+
+
+    ## Description
+
+    "Install and use the speechall CLI tool for speech-to-text transcription. Use when the user wants to: (1) transcribe audio
+    or video files to text, (2) install speechall on macOS or Linux, (3) list available STT models and their capabilities,
+    (4) use speaker diarization, subtitles, or other transcrip
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install speechall-cli
+
+    ```'
+examples:
+- description: Install Speechall command-line tool for fast speech-to-text transcription using multiple providers from ClawHub
+  usage: clawhub install speechall-cli
+schema_version: '1.0'

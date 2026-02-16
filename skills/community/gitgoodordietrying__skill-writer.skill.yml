@@ -1,0 +1,58 @@
+name: skill-writer
+title: Skill Writer
+version: 1.0.0
+description: Write high-quality agent skills (SKILL.md files) for ClawdHub/MoltHub. Use when creating a new skill from scratch,
+  structuring skill content, writing effective frontmatter and descriptions, choosing section patterns, or following best
+  practices for agent-consumable technical documentation.
+metadata:
+  author: gitgoodordietrying
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - skill
+  - writer
+  source: clawhub-community
+  clawhub_slug: skill-writer
+  clawhub_path: gitgoodordietrying/skill-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Writer
+
+    # Source: ClawHub community skill by gitgoodordietrying
+
+    # Install: clawhub install skill-writer
+
+    # Path: gitgoodordietrying/skill-writer
+
+
+    ## Description
+
+    Write high-quality agent skills (SKILL.md files) for ClawdHub/MoltHub. Use when creating a new skill from scratch, structuring
+    skill content, writing effective frontmatter and descriptions, choosing section patterns, or following best practices
+    for agent-consumable technical documentation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-writer
+
+    ```'
+examples:
+- description: Install Skill Writer from ClawHub
+  usage: clawhub install skill-writer
+schema_version: '1.0'

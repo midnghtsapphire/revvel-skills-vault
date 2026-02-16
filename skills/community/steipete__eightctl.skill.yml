@@ -1,0 +1,53 @@
+name: eightctl
+title: Eightctl
+version: 1.0.0
+description: Control Eight Sleep pods (status, temperature, alarms, schedules).
+metadata:
+  author: steipete
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - eightctl
+  source: clawhub-community
+  clawhub_slug: eightctl
+  clawhub_path: steipete/eightctl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Eightctl
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install eightctl
+
+    # Path: steipete/eightctl
+
+
+    ## Description
+
+    Control Eight Sleep pods (status, temperature, alarms, schedules).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install eightctl
+
+    ```'
+examples:
+- description: Install Eightctl from ClawHub
+  usage: clawhub install eightctl
+schema_version: '1.0'

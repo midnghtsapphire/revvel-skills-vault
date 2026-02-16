@@ -1,0 +1,57 @@
+name: context
+title: Context
+version: 2.0.0
+description: '"Get comprehensive context about a location including nearby places, area description, and optional weather.
+  Use when you need to understand what''s around a location or provide location-aware recommendations."'
+metadata:
+  author: barneyjm
+  category: Utilities
+  tags:
+  - utilities
+  - context
+  source: clawhub-community
+  clawhub_slug: context
+  clawhub_path: barneyjm/context
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install context
+
+    # Path: barneyjm/context
+
+
+    ## Description
+
+    "Get comprehensive context about a location including nearby places, area description, and optional weather. Use when
+    you need to understand what''s around a location or provide location-aware recommendations."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/context.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context
+
+    ```'
+examples:
+- description: Install Context from ClawHub
+  usage: clawhub install context
+schema_version: '1.0'

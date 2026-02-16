@@ -1,0 +1,55 @@
+name: todoist
+title: Todoist Manager
+version: 1.0.0
+description: Manage Todoist tasks, projects, labels, and comments via the todoist CLI wrapper. Use when a user asks to add
+  tasks, list todos, complete items, manage projects, or interact with their Todoist account.
+metadata:
+  author: andreisuslov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - todoist
+  source: clawhub-community
+  clawhub_slug: todoist-manager
+  clawhub_path: andreisuslov/todoist-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Todoist Manager
+
+    # Source: ClawHub community skill by andreisuslov
+
+    # Install: clawhub install todoist-manager
+
+    # Path: andreisuslov/todoist-manager
+
+
+    ## Description
+
+    Manage Todoist tasks, projects, labels, and comments via the todoist CLI wrapper. Use when a user asks to add tasks, list
+    todos, complete items, manage projects, or interact with their Todoist account.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todoist-manager
+
+    ```'
+examples:
+- description: Install Todoist Manager from ClawHub
+  usage: clawhub install todoist-manager
+schema_version: '1.0'

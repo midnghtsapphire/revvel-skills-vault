@@ -1,0 +1,59 @@
+name: gemini-tg-image-gen
+title: Gemini TG Image Gen
+version: 1.0.0
+description: Generate images via OpenRouter (google/gemini-2.5-flash-image) and send to Telegram. Use when user asks for AI-generated
+  images in TG.
+metadata:
+  author: drones277
+  category: Search & Research
+  tags:
+  - search-research
+  - gemini
+  - image
+  - gen
+  source: clawhub-community
+  clawhub_slug: gemini-tg-image-gen
+  clawhub_path: drones277/gemini-tg-image-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gemini TG Image Gen
+
+    # Source: ClawHub community skill by drones277
+
+    # Install: clawhub install gemini-tg-image-gen
+
+    # Path: drones277/gemini-tg-image-gen
+
+
+    ## Description
+
+    Generate images via OpenRouter (google/gemini-2.5-flash-image) and send to Telegram. Use when user asks for AI-generated
+    images in TG.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_image.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gemini-tg-image-gen
+
+    ```'
+examples:
+- description: Install Gemini TG Image Gen from ClawHub
+  usage: clawhub install gemini-tg-image-gen
+schema_version: '1.0'

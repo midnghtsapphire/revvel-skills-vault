@@ -1,0 +1,60 @@
+name: jules-api
+title: Jules and the Lobster
+version: 1.0.3
+description: '"Use the Jules REST API (v1alpha) via curl to list sources, create sessions, monitor activities, approve plans,
+  send messages, and retrieve outputs (e.g., PR URLs). Use when the user wants to delegate coding tasks to Jules programmatically."'
+metadata:
+  author: sanjacob99
+  category: Communication
+  tags:
+  - communication
+  - jules
+  - api
+  source: clawhub-community
+  clawhub_slug: jules-and-lobster
+  clawhub_path: sanjacob99/jules-and-lobster
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jules and the Lobster
+
+    # Source: ClawHub community skill by sanjacob99
+
+    # Install: clawhub install jules-and-lobster
+
+    # Path: sanjacob99/jules-and-lobster
+
+
+    ## Description
+
+    "Use the Jules REST API (v1alpha) via curl to list sources, create sessions, monitor activities, approve plans, send messages,
+    and retrieve outputs (e.g., PR URLs). Use when the user wants to delegate coding tasks to Jules programmatically."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/jules.js
+
+    - scripts/jules_api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jules-and-lobster
+
+    ```'
+examples:
+- description: Install Jules and the Lobster from ClawHub
+  usage: clawhub install jules-and-lobster
+schema_version: '1.0'

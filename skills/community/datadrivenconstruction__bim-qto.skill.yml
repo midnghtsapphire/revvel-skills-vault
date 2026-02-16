@@ -1,0 +1,54 @@
+name: bim-qto
+title: Bim Qto
+version: 1.0.0
+description: '"Extract quantities from BIM/CAD data for cost estimation. Group by type, level, zone. Generate QTO reports."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - bim
+  - qto
+  source: clawhub-community
+  clawhub_slug: bim-qto
+  clawhub_path: datadrivenconstruction/bim-qto
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bim Qto
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install bim-qto
+
+    # Path: datadrivenconstruction/bim-qto
+
+
+    ## Description
+
+    "Extract quantities from BIM/CAD data for cost estimation. Group by type, level, zone. Generate QTO reports."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bim-qto
+
+    ```'
+examples:
+- description: Install Bim Qto from ClawHub
+  usage: clawhub install bim-qto
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: alpaca
+title: Alpaca Trading
+version: 1.0.0
+description: Trade stocks and crypto via Alpaca API. Use for market data (quotes, bars, news), placing orders (market, limit,
+  stop), checking positions, portfolio management, and account info. Supports both paper and live trading. Use when user asks
+  about stock prices, wants to buy/sell securities, check portfol
+metadata:
+  author: vamzi
+  category: Development & Coding
+  tags:
+  - development-coding
+  - alpaca
+  source: clawhub-community
+  clawhub_slug: alpaca
+  clawhub_path: vamzi/alpaca
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alpaca Trading
+
+    # Source: ClawHub community skill by vamzi
+
+    # Install: clawhub install alpaca
+
+    # Path: vamzi/alpaca
+
+
+    ## Description
+
+    Trade stocks and crypto via Alpaca API. Use for market data (quotes, bars, news), placing orders (market, limit, stop),
+    checking positions, portfolio management, and account info. Supports both paper and live trading. Use when user asks about
+    stock prices, wants to buy/sell securities, check portfol
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/alpaca_cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alpaca
+
+    ```'
+examples:
+- description: Install Alpaca Trading from ClawHub
+  usage: clawhub install alpaca
+schema_version: '1.0'

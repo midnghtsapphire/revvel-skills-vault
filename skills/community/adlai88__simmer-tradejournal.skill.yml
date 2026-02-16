@@ -1,0 +1,60 @@
+name: simmer-tradejournal
+title: Prediction Trade Journal
+version: 1.1.1
+description: Auto-log trades with context, track outcomes, generate calibration reports to improve trading.
+metadata:
+  author: adlai88
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - simmer
+  - tradejournal
+  source: clawhub-community
+  clawhub_slug: simmer-tradejournal
+  clawhub_path: adlai88/simmer-tradejournal
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prediction Trade Journal
+
+    # Source: ClawHub community skill by adlai88
+
+    # Install: clawhub install simmer-tradejournal
+
+    # Path: adlai88/simmer-tradejournal
+
+
+    ## Description
+
+    Auto-log trades with context, track outcomes, generate calibration reports to improve trading.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - tradejournal.py
+
+    - data/trades.json
+
+    - scripts/status.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install simmer-tradejournal
+
+    ```'
+examples:
+- description: Install Prediction Trade Journal from ClawHub
+  usage: clawhub install simmer-tradejournal
+schema_version: '1.0'

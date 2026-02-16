@@ -1,0 +1,54 @@
+name: honcho-setup
+title: Long-Term Memory (Honcho)
+version: 1.0.2
+description: '"Path to the OpenClaw workspace root. Auto-detected from ~/.openclaw/openclaw.json if not set."'
+metadata:
+  author: ajspig
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - honcho
+  - setup
+  source: clawhub-community
+  clawhub_slug: honcho-setup
+  clawhub_path: ajspig/honcho-setup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Long-Term Memory (Honcho)
+
+    # Source: ClawHub community skill by ajspig
+
+    # Install: clawhub install honcho-setup
+
+    # Path: ajspig/honcho-setup
+
+
+    ## Description
+
+    "Path to the OpenClaw workspace root. Auto-detected from ~/.openclaw/openclaw.json if not set."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install honcho-setup
+
+    ```'
+examples:
+- description: Install Long-Term Memory (Honcho) from ClawHub
+  usage: clawhub install honcho-setup
+schema_version: '1.0'

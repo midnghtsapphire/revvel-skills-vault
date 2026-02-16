@@ -1,0 +1,56 @@
+name: news-summary
+title: News Summary
+version: 1.0.1
+description: This skill should be used when the user asks for news updates, daily briefings, or what's happening in the world.
+  Fetches news from trusted international RSS feeds and can create voice summaries.
+metadata:
+  author: joargp
+  category: General
+  tags:
+  - general
+  - news
+  - summary
+  source: clawhub-community
+  clawhub_slug: news-summary
+  clawhub_path: joargp/news-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# News Summary
+
+    # Source: ClawHub community skill by joargp
+
+    # Install: clawhub install news-summary
+
+    # Path: joargp/news-summary
+
+
+    ## Description
+
+    This skill should be used when the user asks for news updates, daily briefings, or what''s happening in the world. Fetches
+    news from trusted international RSS feeds and can create voice summaries.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install news-summary
+
+    ```'
+examples:
+- description: Install News Summary from ClawHub
+  usage: clawhub install news-summary
+schema_version: '1.0'

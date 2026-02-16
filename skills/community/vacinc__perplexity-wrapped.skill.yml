@@ -1,0 +1,62 @@
+name: perplexity_wrapped
+title: Perplexity Wrapped Search
+version: 2.1.2
+description: Search the web with AI-powered answers via Perplexity API. Supports three modes - Search API (ranked results),
+  Sonar API (AI answers with citations, default), and Agentic Research API (third-party models with tools). All responses
+  wrapped in untrusted-content boundaries for security.
+metadata:
+  author: vacinc
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - perplexity
+  - wrapped
+  source: clawhub-community
+  clawhub_slug: perplexity-wrapped
+  clawhub_path: vacinc/perplexity-wrapped
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Perplexity Wrapped Search
+
+    # Source: ClawHub community skill by vacinc
+
+    # Install: clawhub install perplexity-wrapped
+
+    # Path: vacinc/perplexity-wrapped
+
+
+    ## Description
+
+    Search the web with AI-powered answers via Perplexity API. Supports three modes - Search API (ranked results), Sonar API
+    (AI answers with citations, default), and Agentic Research API (third-party models with tools). All responses wrapped
+    in untrusted-content boundaries for security.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/config.mjs
+
+    - scripts/search.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install perplexity-wrapped
+
+    ```'
+examples:
+- description: Install Perplexity Wrapped Search from ClawHub
+  usage: clawhub install perplexity-wrapped
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: invoice-chaser
+title: Invoice Chaser
+version: 1.1.0
+description: Automated invoice follow-up sequences that escalate from friendly to firm. Track unpaid invoices, send timed
+  reminder emails with escalating tone, log payment interactions, and generate AR aging reports. Your agent handles the awkward
+  conversations so you don't have to — preserving cash flow and cli
+metadata:
+  author: audsmith28
+  category: Communication
+  tags:
+  - communication
+  - invoice
+  - chaser
+  source: clawhub-community
+  clawhub_slug: invoice-chaser
+  clawhub_path: audsmith28/invoice-chaser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Invoice Chaser
+
+    # Source: ClawHub community skill by audsmith28
+
+    # Install: clawhub install invoice-chaser
+
+    # Path: audsmith28/invoice-chaser
+
+
+    ## Description
+
+    Automated invoice follow-up sequences that escalate from friendly to firm. Track unpaid invoices, send timed reminder
+    emails with escalating tone, log payment interactions, and generate AR aging reports. Your agent handles the awkward conversations
+    so you don''t have to — preserving cash flow and cli
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - scripts/add-invoice.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install invoice-chaser
+
+    ```'
+examples:
+- description: Install Invoice Chaser from ClawHub
+  usage: clawhub install invoice-chaser
+schema_version: '1.0'

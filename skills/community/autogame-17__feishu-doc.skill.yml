@@ -1,0 +1,72 @@
+name: feishu-doc
+title: Feishu Doc
+version: 1.2.9
+description: Fetch content from Feishu (Lark) Wiki, Docs, Sheets, and Bitable. Automatically resolves Wiki URLs to real entities
+  and converts content to Markdown.
+metadata:
+  author: autogame-17
+  category: Utilities
+  tags:
+  - utilities
+  - feishu
+  - doc
+  source: clawhub-community
+  clawhub_slug: feishu-doc
+  clawhub_path: autogame-17/feishu-doc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feishu Doc
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install feishu-doc
+
+    # Path: autogame-17/feishu-doc
+
+
+    ## Description
+
+    Fetch content from Feishu (Lark) Wiki, Docs, Sheets, and Bitable. Automatically resolves Wiki URLs to real entities and
+    converts content to Markdown.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - create.js
+
+    - download_file.js
+
+    - index.js
+
+    - input_guard.js
+
+    - inspect_meta.js
+
+    - package-lock.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-doc
+
+    ```'
+examples:
+- description: Install Feishu Doc from ClawHub
+  usage: clawhub install feishu-doc
+schema_version: '1.0'

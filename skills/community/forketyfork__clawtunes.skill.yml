@@ -1,0 +1,59 @@
+name: managing-apple-music
+title: clawtunes
+version: 0.3.0
+description: Control Apple Music on macOS via the `clawtunes` CLI (play songs/albums/playlists, control playback, volume,
+  shuffle, repeat, search, catalog lookup, AirPlay, and playlist management). Use when a user asks to play music, search for
+  songs, control audio playback, or manage Apple Music settings.
+metadata:
+  author: forketyfork
+  category: Search & Research
+  tags:
+  - search-research
+  - managing
+  - apple
+  - music
+  source: clawhub-community
+  clawhub_slug: clawtunes
+  clawhub_path: forketyfork/clawtunes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawtunes
+
+    # Source: ClawHub community skill by forketyfork
+
+    # Install: clawhub install clawtunes
+
+    # Path: forketyfork/clawtunes
+
+
+    ## Description
+
+    Control Apple Music on macOS via the `clawtunes` CLI (play songs/albums/playlists, control playback, volume, shuffle,
+    repeat, search, catalog lookup, AirPlay, and playlist management). Use when a user asks to play music, search for songs,
+    control audio playback, or manage Apple Music settings.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawtunes
+
+    ```'
+examples:
+- description: Install clawtunes from ClawHub
+  usage: clawhub install clawtunes
+schema_version: '1.0'

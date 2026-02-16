@@ -1,0 +1,61 @@
+name: revolut
+title: Revolut Business
+version: 1.0.1
+description: '"Revolut Business API CLI — accounts, balances, transactions, counterparties, payments, FX exchange, CSV export.
+  Auto-refreshes OAuth tokens. Business accounts only (not personal)."'
+metadata:
+  author: christianhaberl
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - revolut
+  source: clawhub-community
+  clawhub_slug: revolut-business
+  clawhub_path: christianhaberl/revolut-business
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Revolut Business
+
+    # Source: ClawHub community skill by christianhaberl
+
+    # Install: clawhub install revolut-business
+
+    # Path: christianhaberl/revolut-business
+
+
+    ## Description
+
+    "Revolut Business API CLI — accounts, balances, transactions, counterparties, payments, FX exchange, CSV export. Auto-refreshes
+    OAuth tokens. Business accounts only (not personal)."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/revolut.py
+
+    - scripts/setup.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install revolut-business
+
+    ```'
+examples:
+- description: Install Revolut Business from ClawHub
+  usage: clawhub install revolut-business
+schema_version: '1.0'

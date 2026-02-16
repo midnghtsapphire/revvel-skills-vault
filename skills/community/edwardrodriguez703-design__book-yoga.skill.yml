@@ -1,0 +1,56 @@
+name: book-yoga
+title: Book Yoga
+version: 1.0.1
+description: Book yoga services through Lokuli MCP. Use when user needs to find and book yoga. Triggers on requests like "book
+  a yoga", "find yoga near me", or any yoga service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - yoga
+  source: clawhub-community
+  clawhub_slug: book-yoga
+  clawhub_path: edwardrodriguez703-design/book-yoga
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Yoga
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-yoga
+
+    # Path: edwardrodriguez703-design/book-yoga
+
+
+    ## Description
+
+    Book yoga services through Lokuli MCP. Use when user needs to find and book yoga. Triggers on requests like "book a yoga",
+    "find yoga near me", or any yoga service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-yoga
+
+    ```'
+examples:
+- description: Install Book Yoga from ClawHub
+  usage: clawhub install book-yoga
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: liblib-ai-gen
+title: LiblibAI Image & Video Gen
+version: 1.0.0
+description: Generate images with Seedream4.5 and videos with Kling via LiblibAI API. Use when user asks to generate/create
+  images, pictures, illustrations, or videos using LiblibAI, Seedream, or Kling models.
+metadata:
+  author: xtaq
+  category: Media & Content
+  tags:
+  - media-content
+  - liblib
+  - gen
+  source: clawhub-community
+  clawhub_slug: liblib-ai-gen
+  clawhub_path: xtaq/liblib-ai-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LiblibAI Image & Video Gen
+
+    # Source: ClawHub community skill by xtaq
+
+    # Install: clawhub install liblib-ai-gen
+
+    # Path: xtaq/liblib-ai-gen
+
+
+    ## Description
+
+    Generate images with Seedream4.5 and videos with Kling via LiblibAI API. Use when user asks to generate/create images,
+    pictures, illustrations, or videos using LiblibAI, Seedream, or Kling models.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/liblib_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install liblib-ai-gen
+
+    ```'
+examples:
+- description: Install LiblibAI Image & Video Gen from ClawHub
+  usage: clawhub install liblib-ai-gen
+schema_version: '1.0'

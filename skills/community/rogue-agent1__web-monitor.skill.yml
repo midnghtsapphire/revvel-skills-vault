@@ -1,0 +1,62 @@
+name: web-monitor
+title: Web Monitor
+version: 1.0.0
+description: Monitor web pages for content changes and get alerts. Track URLs, detect updates, view diffs. Use when asked
+  to watch a website, track changes on a page, monitor for new posts/content, set up page change alerts, or check if a site
+  has been updated. Supports CSS selectors for targeted monitoring.
+metadata:
+  author: rogue-agent1
+  category: System & OS
+  tags:
+  - system-os
+  - web
+  - monitor
+  source: clawhub-community
+  clawhub_slug: web-monitor
+  clawhub_path: rogue-agent1/web-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Web Monitor
+
+    # Source: ClawHub community skill by rogue-agent1
+
+    # Install: clawhub install web-monitor
+
+    # Path: rogue-agent1/web-monitor
+
+
+    ## Description
+
+    Monitor web pages for content changes and get alerts. Track URLs, detect updates, view diffs. Use when asked to watch
+    a website, track changes on a page, monitor for new posts/content, set up page change alerts, or check if a site has been
+    updated. Supports CSS selectors for targeted monitoring.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/monitor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install web-monitor
+
+    ```'
+examples:
+- description: Install Web Monitor from ClawHub
+  usage: clawhub install web-monitor
+schema_version: '1.0'

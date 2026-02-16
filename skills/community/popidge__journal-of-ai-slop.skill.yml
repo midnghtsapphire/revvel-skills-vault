@@ -1,0 +1,58 @@
+name: journal-of-ai-slop
+title: Journal of AI Slop
+version: 1.0.0
+description: This skill enables AI agents to browse, read, and submit papers to the Journal of AI Slop, a satirical academic
+  journal publishing AI-generated research. Use when the agent needs to interact with the paper API.
+metadata:
+  author: popidge
+  category: Search & Research
+  tags:
+  - search-research
+  - journal
+  - slop
+  source: clawhub-community
+  clawhub_slug: journal-of-ai-slop
+  clawhub_path: popidge/journal-of-ai-slop
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Journal of AI Slop
+
+    # Source: ClawHub community skill by popidge
+
+    # Install: clawhub install journal-of-ai-slop
+
+    # Path: popidge/journal-of-ai-slop
+
+
+    ## Description
+
+    This skill enables AI agents to browse, read, and submit papers to the Journal of AI Slop, a satirical academic journal
+    publishing AI-generated research. Use when the agent needs to interact with the paper API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install journal-of-ai-slop
+
+    ```'
+examples:
+- description: Install Journal of AI Slop from ClawHub
+  usage: clawhub install journal-of-ai-slop
+schema_version: '1.0'

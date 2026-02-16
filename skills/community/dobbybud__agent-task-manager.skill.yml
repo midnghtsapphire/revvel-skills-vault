@@ -1,0 +1,71 @@
+name: agent-task-manager
+title: Agent Task Manager
+version: 1.0.0
+description: Manages and orchestrates multi-step, stateful agent workflows; handles task dependencies, persistent state, error
+  recovery, and external rate-limiting. Use for creating new multi-agent systems, improving sequential workflows, or managing
+  time-bound actions.
+metadata:
+  author: dobbybud
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - agent
+  - task
+  - manager
+  source: clawhub-community
+  clawhub_slug: agent-task-manager
+  clawhub_path: dobbybud/agent-task-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Task Manager
+
+    # Source: ClawHub community skill by dobbybud
+
+    # Install: clawhub install agent-task-manager
+
+    # Path: dobbybud/agent-task-manager
+
+
+    ## Description
+
+    Manages and orchestrates multi-step, stateful agent workflows; handles task dependencies, persistent state, error recovery,
+    and external rate-limiting. Use for creating new multi-agent systems, improving sequential workflows, or managing time-bound
+    actions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/task_schema.md
+
+    - scripts/cooldown.sh
+
+    - scripts/molt_task.py
+
+    - scripts/orchestrator.py
+
+    - scripts/run_task_from_human.py
+
+    - scripts/task_parser.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-task-manager
+
+    ```'
+examples:
+- description: Install Agent Task Manager from ClawHub
+  usage: clawhub install agent-task-manager
+schema_version: '1.0'

@@ -1,0 +1,33 @@
+name: runware
+title: Runware Image & Video generation
+version: 1.0.0
+description: 'Generate images and videos via Runware API. Access to FLUX, Stable Diffusion, Kling AI, and other top models.
+  Supports text-to-image, image-to-image, upscaling, text-to-video, and image-to-video. Use when generating images, creating
+  videos from prompts or images, upscaling images, or doing AI image '
+metadata:
+  author: 26medias
+  category: Media & Content
+  tags:
+  - media-content
+  - runware
+  source: clawhub-community
+  clawhub_slug: runware
+  clawhub_path: 26medias/runware
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Runware Image & Video generation\n# Source: ClawHub community skill by 26medias\n# Install: clawhub install\
+    \ runware\n# Path: 26medias/runware\n\n## Description\nGenerate images and videos via Runware API. Access to FLUX, Stable\
+    \ Diffusion, Kling AI, and other top models. Supports text-to-image, image-to-image, upscaling, text-to-video, and image-to-video.\
+    \ Use when generating images, creating videos from prompts or images, upscaling images, or doing AI image \n\n## Files\n\
+    - SKILL.md\n- _meta.json\n- scripts/image.py\n- scripts/video.py\n\n## Installation\n```bash\nclawhub install runware\n\
+    ```"
+examples:
+- description: Install Runware Image & Video generation from ClawHub
+  usage: clawhub install runware
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: ____
+title: Upload Image
+version: 1.0.1
+description: 上传本地图片到云存储，获取公开访问的 URL 链接。当用户需要上传图片、转存网络图片、获取图片 URL 时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: Media & Content
+  tags:
+  - media-content
+  - 图片上传
+  source: clawhub-community
+  clawhub_slug: upload-image
+  clawhub_path: hexiaochun/upload-image
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Upload Image
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install upload-image
+
+    # Path: hexiaochun/upload-image
+
+
+    ## Description
+
+    上传本地图片到云存储，获取公开访问的 URL 链接。当用户需要上传图片、转存网络图片、获取图片 URL 时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install upload-image
+
+    ```'
+examples:
+- description: Install Upload Image from ClawHub
+  usage: clawhub install upload-image
+schema_version: '1.0'

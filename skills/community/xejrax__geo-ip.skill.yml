@@ -1,0 +1,53 @@
+name: geo-ip
+title: Geo Ip
+version: 1.0.0
+description: '"Look up geographic location for any IP address"'
+metadata:
+  author: xejrax
+  category: General
+  tags:
+  - general
+  - geo
+  source: clawhub-community
+  clawhub_slug: geo-ip
+  clawhub_path: xejrax/geo-ip
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Geo Ip
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install geo-ip
+
+    # Path: xejrax/geo-ip
+
+
+    ## Description
+
+    "Look up geographic location for any IP address"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install geo-ip
+
+    ```'
+examples:
+- description: Install Geo Ip from ClawHub
+  usage: clawhub install geo-ip
+schema_version: '1.0'

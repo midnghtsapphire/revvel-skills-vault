@@ -1,0 +1,62 @@
+name: scryfall-mtg
+title: scryfall-card
+version: 1.0.0
+description: '"Search and retrieve Magic: The Gathering card data using the Scryfall API. Use this skill when the user asks
+  about MTG cards, wants to search for cards by name, type, color, mana cost, oracle text, set, or any other card attribute.
+  Also use for getting card images, prices, rulings, legality informa'
+metadata:
+  author: santidev95
+  category: Search & Research
+  tags:
+  - search-research
+  - scryfall
+  - mtg
+  source: clawhub-community
+  clawhub_slug: scryfall-card
+  clawhub_path: santidev95/scryfall-card
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# scryfall-card
+
+    # Source: ClawHub community skill by santidev95
+
+    # Install: clawhub install scryfall-card
+
+    # Path: santidev95/scryfall-card
+
+
+    ## Description
+
+    "Search and retrieve Magic: The Gathering card data using the Scryfall API. Use this skill when the user asks about MTG
+    cards, wants to search for cards by name, type, color, mana cost, oracle text, set, or any other card attribute. Also
+    use for getting card images, prices, rulings, legality informa
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/search_syntax.md
+
+    - scripts/scryfall_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install scryfall-card
+
+    ```'
+examples:
+- description: Install scryfall-card from ClawHub
+  usage: clawhub install scryfall-card
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: openclaw-media-gen
+title: AI Media Generation
+version: 1.0.0
+description: '"Generate images & videos with AIsa. Gemini 3 Pro Image (image) + Qwen Wan 2.6 (video) via one API key."'
+metadata:
+  author: bowen-dotcom
+  category: Media & Content
+  tags:
+  - media-content
+  - openclaw
+  - media
+  - gen
+  source: clawhub-community
+  clawhub_slug: aisa-media-gen-skill
+  clawhub_path: bowen-dotcom/aisa-media-gen-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI Media Generation
+
+    # Source: ClawHub community skill by bowen-dotcom
+
+    # Install: clawhub install aisa-media-gen-skill
+
+    # Path: bowen-dotcom/aisa-media-gen-skill
+
+
+    ## Description
+
+    "Generate images & videos with AIsa. Gemini 3 Pro Image (image) + Qwen Wan 2.6 (video) via one API key."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/media_gen_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aisa-media-gen-skill
+
+    ```'
+examples:
+- description: Install AI Media Generation from ClawHub
+  usage: clawhub install aisa-media-gen-skill
+schema_version: '1.0'

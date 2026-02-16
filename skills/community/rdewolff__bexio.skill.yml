@@ -1,0 +1,61 @@
+name: bexio
+title: bexio
+version: 1.0.0
+description: Bexio Swiss business software API for managing contacts, quotes/offers, invoices, orders, and items/products.
+  Use when working with Bexio CRM, creating or managing invoices, quotes, sales orders, contact management, or Swiss business
+  administration tasks. Supports listing, searching, creating, editi
+metadata:
+  author: rdewolff
+  category: Search & Research
+  tags:
+  - search-research
+  - bexio
+  source: clawhub-community
+  clawhub_slug: bexio
+  clawhub_path: rdewolff/bexio
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# bexio
+
+    # Source: ClawHub community skill by rdewolff
+
+    # Install: clawhub install bexio
+
+    # Path: rdewolff/bexio
+
+
+    ## Description
+
+    Bexio Swiss business software API for managing contacts, quotes/offers, invoices, orders, and items/products. Use when
+    working with Bexio CRM, creating or managing invoices, quotes, sales orders, contact management, or Swiss business administration
+    tasks. Supports listing, searching, creating, editi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/bexio.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bexio
+
+    ```'
+examples:
+- description: Install bexio from ClawHub
+  usage: clawhub install bexio
+schema_version: '1.0'

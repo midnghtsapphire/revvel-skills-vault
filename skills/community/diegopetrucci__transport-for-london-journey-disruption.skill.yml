@@ -1,0 +1,59 @@
+name: tfl-journey-disruption
+title: London public transport journey planner and disruptions
+version: 1.0.1
+description: Plan TfL journeys from start/end/time, resolve locations (prefer postcodes), and warn about disruptions; suggest
+  alternatives when disrupted.
+metadata:
+  author: diegopetrucci
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tfl
+  - journey
+  - disruption
+  source: clawhub-community
+  clawhub_slug: transport-for-london-journey-disruption
+  clawhub_path: diegopetrucci/transport-for-london-journey-disruption
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# London public transport journey planner and disruptions
+
+    # Source: ClawHub community skill by diegopetrucci
+
+    # Install: clawhub install transport-for-london-journey-disruption
+
+    # Path: diegopetrucci/transport-for-london-journey-disruption
+
+
+    ## Description
+
+    Plan TfL journeys from start/end/time, resolve locations (prefer postcodes), and warn about disruptions; suggest alternatives
+    when disrupted.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tfl_journey_disruptions.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install transport-for-london-journey-disruption
+
+    ```'
+examples:
+- description: Install London public transport journey planner and disruptions from ClawHub
+  usage: clawhub install transport-for-london-journey-disruption
+schema_version: '1.0'

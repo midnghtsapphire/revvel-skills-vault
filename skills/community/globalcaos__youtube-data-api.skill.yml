@@ -1,0 +1,57 @@
+name: youtube
+title: YouTube Data API
+version: 1.0.0
+description: YouTube Data API integration for searching videos, listing subscriptions, playlists, and video details. Use when
+  the user wants to search YouTube, check their subscriptions, browse playlists, get video information, or list liked videos.
+metadata:
+  author: globalcaos
+  category: Search & Research
+  tags:
+  - search-research
+  - youtube
+  source: clawhub-community
+  clawhub_slug: youtube-data-api
+  clawhub_path: globalcaos/youtube-data-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube Data API
+
+    # Source: ClawHub community skill by globalcaos
+
+    # Install: clawhub install youtube-data-api
+
+    # Path: globalcaos/youtube-data-api
+
+
+    ## Description
+
+    YouTube Data API integration for searching videos, listing subscriptions, playlists, and video details. Use when the user
+    wants to search YouTube, check their subscriptions, browse playlists, get video information, or list liked videos.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/youtube.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-data-api
+
+    ```'
+examples:
+- description: Install YouTube Data API from ClawHub
+  usage: clawhub install youtube-data-api
+schema_version: '1.0'

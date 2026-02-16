@@ -1,0 +1,61 @@
+name: wps-ppt-automation
+title: PowerPoint Automation
+version: 0.1.0
+description: Automate common PowerPoint/WPS Presentation operations on Windows via COM (read text/notes/outline, export PDF/images,
+  replace text, insert/delete slides, unify font/size/theme, extract images/media). Use for single-presentation actions (no
+  batch).
+metadata:
+  author: fadeloo
+  category: Media & Content
+  tags:
+  - media-content
+  - wps
+  - ppt
+  - automation
+  source: clawhub-community
+  clawhub_slug: tiangong-wps-ppt-automation
+  clawhub_path: fadeloo/tiangong-wps-ppt-automation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PowerPoint Automation
+
+    # Source: ClawHub community skill by fadeloo
+
+    # Install: clawhub install tiangong-wps-ppt-automation
+
+    # Path: fadeloo/tiangong-wps-ppt-automation
+
+
+    ## Description
+
+    Automate common PowerPoint/WPS Presentation operations on Windows via COM (read text/notes/outline, export PDF/images,
+    replace text, insert/delete slides, unify font/size/theme, extract images/media). Use for single-presentation actions
+    (no batch).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/wps_ppt_automation.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tiangong-wps-ppt-automation
+
+    ```'
+examples:
+- description: Install PowerPoint Automation from ClawHub
+  usage: clawhub install tiangong-wps-ppt-automation
+schema_version: '1.0'

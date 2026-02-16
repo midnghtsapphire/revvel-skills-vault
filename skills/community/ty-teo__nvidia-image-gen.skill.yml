@@ -1,0 +1,59 @@
+name: nvidia-image-gen
+title: Nvidia Image Gen
+version: 1.0.0
+description: Generate and edit images using NVIDIA FLUX models. Use when user asks to generate images, create pictures, edit
+  photos, or modify existing images with AI. Supports text-to-image generation and image editing with text prompts.
+metadata:
+  author: ty-teo
+  category: Media & Content
+  tags:
+  - media-content
+  - nvidia
+  - image
+  - gen
+  source: clawhub-community
+  clawhub_slug: nvidia-image-gen
+  clawhub_path: ty-teo/nvidia-image-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nvidia Image Gen
+
+    # Source: ClawHub community skill by ty-teo
+
+    # Install: clawhub install nvidia-image-gen
+
+    # Path: ty-teo/nvidia-image-gen
+
+
+    ## Description
+
+    Generate and edit images using NVIDIA FLUX models. Use when user asks to generate images, create pictures, edit photos,
+    or modify existing images with AI. Supports text-to-image generation and image editing with text prompts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nvidia-image-gen
+
+    ```'
+examples:
+- description: Install Nvidia Image Gen from ClawHub
+  usage: clawhub install nvidia-image-gen
+schema_version: '1.0'

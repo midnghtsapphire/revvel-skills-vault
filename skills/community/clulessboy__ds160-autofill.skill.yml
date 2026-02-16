@@ -1,0 +1,64 @@
+name: ds160-autofill
+title: ds160-autofill
+version: 1.0.0
+description: 'Automate filling of US nonimmigrant visa DS-160 forms using CDP for element location, CSV data source for user
+  information, LLM assistance for complex cases (captcha, missing elements), and session persistence for resume capability.
+  Use when user needs to: (1) Fill DS-160 visa application forms auto'
+metadata:
+  author: clulessboy
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - ds160
+  - autofill
+  source: clawhub-community
+  clawhub_slug: ds160-autofill
+  clawhub_path: clulessboy/ds160-autofill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ds160-autofill
+
+    # Source: ClawHub community skill by clulessboy
+
+    # Install: clawhub install ds160-autofill
+
+    # Path: clulessboy/ds160-autofill
+
+
+    ## Description
+
+    Automate filling of US nonimmigrant visa DS-160 forms using CDP for element location, CSV data source for user information,
+    LLM assistance for complex cases (captcha, missing elements), and session persistence for resume capability. Use when
+    user needs to: (1) Fill DS-160 visa application forms auto
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/ds160-elements.yaml
+
+    - references/ds160-user-info.csv
+
+    - scripts/ds160-filler.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ds160-autofill
+
+    ```'
+examples:
+- description: Install ds160-autofill from ClawHub
+  usage: clawhub install ds160-autofill
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: alicloud-ai-image-qwen-image-edit
+title: Alicloud Ai Image Qwen Image Edit
+version: 1.0.0
+description: Edit images with Alibaba Cloud Model Studio Qwen Image Edit Max (qwen-image-edit-max). Use when modifying existing
+  images (inpaint, replace, style transfer, local edits), preserving subject consistency, or documenting image edit request/response
+  mappings.
+metadata:
+  author: cinience
+  category: Media & Content
+  tags:
+  - media-content
+  - alicloud
+  - image
+  - qwen
+  - edit
+  source: clawhub-community
+  clawhub_slug: alicloud-ai-image-qwen-image-edit
+  clawhub_path: cinience/alicloud-ai-image-qwen-image-edit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Ai Image Qwen Image Edit
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-ai-image-qwen-image-edit
+
+    # Path: cinience/alicloud-ai-image-qwen-image-edit
+
+
+    ## Description
+
+    Edit images with Alibaba Cloud Model Studio Qwen Image Edit Max (qwen-image-edit-max). Use when modifying existing images
+    (inpaint, replace, style transfer, local edits), preserving subject consistency, or documenting image edit request/response
+    mappings.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+    - scripts/prepare_edit_request.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-ai-image-qwen-image-edit
+
+    ```'
+examples:
+- description: Install Alicloud Ai Image Qwen Image Edit from ClawHub
+  usage: clawhub install alicloud-ai-image-qwen-image-edit
+schema_version: '1.0'

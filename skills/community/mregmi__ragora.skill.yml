@@ -1,0 +1,59 @@
+name: ragora
+title: ragora
+version: 1.0.1
+description: Use Ragora MCP tools and REST API to discover, search, and synthesize answers from knowledge bases. Trigger when
+  the user asks for grounded answers from Ragora collections, cross-collection comparison, source-backed summaries, due diligence
+  research, or verification using marketplace data.
+metadata:
+  author: mregmi
+  category: Search & Research
+  tags:
+  - search-research
+  - ragora
+  source: clawhub-community
+  clawhub_slug: ragora
+  clawhub_path: mregmi/ragora
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ragora
+
+    # Source: ClawHub community skill by mregmi
+
+    # Install: clawhub install ragora
+
+    # Path: mregmi/ragora
+
+
+    ## Description
+
+    Use Ragora MCP tools and REST API to discover, search, and synthesize answers from knowledge bases. Trigger when the user
+    asks for grounded answers from Ragora collections, cross-collection comparison, source-backed summaries, due diligence
+    research, or verification using marketplace data.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ragora
+
+    ```'
+examples:
+- description: Install ragora from ClawHub
+  usage: clawhub install ragora
+schema_version: '1.0'

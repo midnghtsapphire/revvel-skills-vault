@@ -1,0 +1,67 @@
+name: bilibili-update-viewer
+title: Check the latest videos and updates of Bilibili ups and see if they have updated today
+version: 1.0.0
+description: 查看B站UP主的最新视频、动态，检查UP主今天是否更新。触发词：B站、UP主、视频更新、今天更新了吗、最新视频、最新动态、查看UP主
+metadata:
+  author: jianguo99
+  category: Media & Content
+  tags:
+  - media-content
+  - bilibili
+  - update
+  - viewer
+  source: clawhub-community
+  clawhub_slug: bilibili-update-viewer
+  clawhub_path: jianguo99/bilibili-update-viewer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Check the latest videos and updates of Bilibili ups and see if they have updated today
+
+    # Source: ClawHub community skill by jianguo99
+
+    # Install: clawhub install bilibili-update-viewer
+
+    # Path: jianguo99/bilibili-update-viewer
+
+
+    ## Description
+
+    查看B站UP主的最新视频、动态，检查UP主今天是否更新。触发词：B站、UP主、视频更新、今天更新了吗、最新视频、最新动态、查看UP主
+
+
+    ## Files
+
+    - .gitignore
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bilibili_api.py
+
+    - get_mid.py
+
+    - requirements.txt
+
+    - update_viewer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bilibili-update-viewer
+
+    ```'
+examples:
+- description: Install Check the latest videos and updates of Bilibili ups and see if they have updated today from ClawHub
+  usage: clawhub install bilibili-update-viewer
+schema_version: '1.0'

@@ -1,0 +1,33 @@
+name: skillguard
+title: SkillGuard Scanner
+version: 1.1.0
+description: 'Security scanner for OpenClaw/ClawHub skills. Detects malware, reverse shells, credential theft, prompt injection,
+  memory poisoning, typosquatting, and suspicious prerequisites before installation. Use when installing new skills, auditing
+  existing skills, checking a skill name for typosquatting, or '
+metadata:
+  author: msgnoki
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skillguard
+  source: clawhub-community
+  clawhub_slug: skillguard-scanner
+  clawhub_path: msgnoki/skillguard-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# SkillGuard Scanner\n# Source: ClawHub community skill by msgnoki\n# Install: clawhub install skillguard-scanner\n\
+    # Path: msgnoki/skillguard-scanner\n\n## Description\nSecurity scanner for OpenClaw/ClawHub skills. Detects malware, reverse\
+    \ shells, credential theft, prompt injection, memory poisoning, typosquatting, and suspicious prerequisites before installation.\
+    \ Use when installing new skills, auditing existing skills, checking a skill name for typosquatting, or \n\n## Files\n\
+    - CHANGELOG.md\n- SKILL.md\n- _meta.json\n- references/threat-landscape.md\n- scripts/scanner.py\n\n## Installation\n\
+    ```bash\nclawhub install skillguard-scanner\n```"
+examples:
+- description: Install SkillGuard Scanner from ClawHub
+  usage: clawhub install skillguard-scanner
+schema_version: '1.0'

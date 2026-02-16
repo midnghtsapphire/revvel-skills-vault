@@ -1,0 +1,71 @@
+name: _teamwork_
+title: TeamWork
+version: 1.0.0
+description: '"Dynamically creates and manages AI agent teams for complex tasks. Invoke when user requests multi-agent collaboration,
+  complex project execution, or when tasks require specialized roles and coordinated workflow."'
+metadata:
+  author: chenxinbest
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - '"teamwork"'
+  source: clawhub-community
+  clawhub_slug: teamwork
+  clawhub_path: chenxinbest/teamwork
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TeamWork
+
+    # Source: ClawHub community skill by chenxinbest
+
+    # Install: clawhub install teamwork
+
+    # Path: chenxinbest/teamwork
+
+
+    ## Description
+
+    "Dynamically creates and manages AI agent teams for complex tasks. Invoke when user requests multi-agent collaboration,
+    complex project execution, or when tasks require specialized roles and coordinated workflow."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/config-manager.js
+
+    - scripts/herald.js
+
+    - scripts/init.js
+
+    - scripts/score-manager.js
+
+    - scripts/team-coordinator.js
+
+    - templates/evaluation-form.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install teamwork
+
+    ```'
+examples:
+- description: Install TeamWork from ClawHub
+  usage: clawhub install teamwork
+schema_version: '1.0'

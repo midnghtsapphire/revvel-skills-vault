@@ -1,0 +1,156 @@
+name: nanotech_surgery
+title: Nanotech Surgery & Skin Repair Expert
+version: 1.0.0
+description: Expert system for nanotechnology applications in surgery and skin repair, covering nanoparticle drug delivery,
+  nano-surgical tools, skin regeneration, tattoo removal, scar revision, anti-aging, burns treatment, clinical trials, safety
+  assessment, formulation calculations, research tracking, patents, and cost modeling.
+metadata:
+  author: Revvel AI Engine
+  category: Medical & Health
+  tags:
+  - nanotech
+  - nanoparticle-drug-delivery-analysis
+  - burns-treatment-nanotech-protocols
+  - skin-repair-regeneration-protocols
+  - clinical-trial-database-query
+  - nano-surgical-tools-evaluation
+  - tattoo-removal-nanotech-planning
+  - surgery
+  - anti-aging-nanotech-recommendations
+  - scar-revision-nanotech-assessment
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport math\nimport hashlib\nimport statistics\nimport unittest\nimport datetime\nimport\
+    \ requests\nimport os\nimport logging\nfrom typing import Dict, List, Optional, Tuple, Any\nfrom collections import defaultdict\n\
+    from dataclasses import dataclass\n\nSKILL_METADATA = {\n    \"name\": \"Nanotech Surgery & Skin Repair Expert\",\n  \
+    \  \"id\": \"nanotech_surgery\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\"\
+    : \"Expert system for nanotechnology applications in surgery and skin repair, covering nanoparticle drug delivery, nano-surgical\
+    \ tools, skin regeneration, tattoo removal, scar revision, anti-aging, burns treatment, clinical trials, safety assessment,\
+    \ formulation calculations, research tracking, patents, and cost modeling.\",\n    \"capabilities\": [\n        \"nanoparticle_drug_delivery_analysis\"\
+    ,\n        \"nano_surgical_tools_evaluation\",\n        \"skin_repair_regeneration_protocols\",\n        \"tattoo_removal_nanotech_planning\"\
+    ,\n        \"scar_revision_nanotech_assessment\",\n        \"anti_aging_nanotech_recommendations\",\n        \"burns_treatment_nanotech_protocols\"\
+    ,\n        \"clinical_trial_database_query\",\n        \"safety_toxicology_assessment\",\n        \"formulation_calculator\"\
+    ,\n        \"research_tracker\",\n        \"patent_landscape_analysis\",\n        \"cost_modeling_comparison\"\n    ],\n\
+    \    \"domain\": \"medical_nanotechnology\"\n}\n\nEXPERT_PROMPTS = {\n    \"nanoparticle_delivery\": \"\"\"\nYou are a\
+    \ nanomedicine expert. Analyze the following nanoparticle drug delivery system:\n- Particle type: {particle_type}\n- Target\
+    \ tissue: {target_tissue}\n- Drug compound: {drug_compound}\n- Desired release profile: {release_profile}\nProvide detailed\
+    \ recommendations on particle size, surface modification, encapsulation efficiency, and expected pharmacokinetics.\n\"\
+    \"\",\n    \"tattoo_removal_plan\": \"\"\"\nYou are a nanotech dermatology specialist. Design a tattoo removal protocol:\n\
+    - Tattoo colors: {tattoo_colors}\n- Tattoo age: {tattoo_age_months}\n- Skin type: {skin_type}\n- Tattoo size: {tattoo_size_cm2}\n\
+    - Patient age: {patient_age}\nRecommend nanoparticle types, laser parameters, number of sessions, interval spacing, and\
+    \ expected outcomes.\n\"\"\",\n    \"scar_revision\": \"\"\"\nYou are a nanotech scar revision expert. Evaluate this case:\n\
+    - Scar type: {scar_type}\n- Scar age: {scar_age_months}\n- Scar size: {scar_size}\n- Patient skin type: {skin_type}\n\
+    - Previous treatments: {previous_treatments}\nRecommend nanotechnology interventions including nanoparticle selection,\
+    \ treatment protocol, and expected improvement timeline.\n\"\"\",\n    \"burns_treatment\": \"\"\"\nYou are a nanotech\
+    \ burns specialist. Assess this burn case:\n- Burn degree: {burn_degree}\n- Burn area: {burn_area_percent}\n- Burn location:\
+    \ {burn_location}\n- Patient age: {patient_age}\n- Time since injury: {time_since_injury}\nRecommend nanotech treatments\
+    \ including antimicrobial nanoparticles, growth factor delivery systems, and wound dressings.\n\"\"\",\n    \"anti_aging_protocol\"\
+    : \"\"\"\nYou are a nanotech anti-aging expert. Design a treatment plan:\n- Patient age: {patient_age}\n- Skin concerns:\
+    \ {skin_concerns}\n- Current skincare routine: {current_routine}\n- Budget level: {budget_level}\n- Treatment goals: {treatment_goals}\n\
+    Recommend nano-encapsulated ingredients, exosome therapies, and telomere-targeting nanoparticles with treatment schedules.\n\
+    \"\"\",\n    \"formulation_optimization\": \"\"\"\nYou are a nanoparticle formulation scientist. Optimize this formulation:\n\
+    - Target particle size: {target_size_nm}\n- Drug loading: {drug_loading_percent}%\n- Desired zeta potential: {target_zeta_mv}\n\
+    - Release target: {release_target_hours}\n- Stability requirement: {stability_months}\nProvide synthesis parameters, surfactant\
+    \ recommendations, and quality control metrics.\n\"\"\",\n    \"safety_assessment\": \"\"\"\nYou are a nanotoxicology\
+    \ expert. Assess the safety of:\n- Nanoparticle type: {nanoparticle_type}\n- Exposure route: {exposure_route}\n- Dose\
+    \ level: {dose_level}\n- Exposure duration: {exposure_duration}\n- Patient population: {patient_population}\nEvaluate\
+    \ toxicological risks, regulatory compliance, and recommend safety protocols.\n\"\"\",\n    \"clinical_trial_matching\"\
+    : \"\"\"\nYou are a nanotech clinical trial specialist. Find trials for:\n- Condition: {condition}\n- Nanotech intervention:\
+    \ {intervention_type}\n- Patient demographics: {patient_demographics}\n- Geographic location: {location}\n- Trial phase\
+    \ preference: {phase_preference}\nMatch relevant trials with inclusion criteria and contact information.\n\"\"\"\n}\n\n\
+    INTEGRATION_POINTS = {\n    \"clinicaltrials_gov\": {\n        \"type\": \"api\",\n        \"url\": \"https://clinicaltrials.gov/api/v2/studies\"\
+    ,\n        \"description\": \"Search clinical trials for nanotech medical applications\"\n    },\n    \"pubmed\": {\n\
+    \        \"type\": \"api\",\n        \"url\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi\",\n      \
+    \  \"description\": \"Search PubMed for nanotech surgery research\"\n    },\n    \"fda_devices\": {\n        \"type\"\
+    : \"api\",\n        \"url\": \"https://api.fda.gov/device\",\n        \"description\": \"FDA medical device database for\
+    \ nanotech devices\"\n    },\n    \"nature_nano\": {\n        \"type\": \"web\",\n        \"url\": \"https://www.nature.com/nnano/\"\
+    ,\n        \"description\": \"Nature Nanotechnology journal\"\n    }\n}\n\nlogger = logging.getLogger(__name__)\n\n\n\
+    def calculate_nanoparticle_properties(diameter_nm: float, material: str,\n                                       surface_charge_mv:\
+    \ float = None) -> Dict[str, Any]:\n    \"\"\"Calculate nanoparticle properties for medical applications.\"\"\"\n    if\
+    \ diameter_nm <= 0 or diameter_nm > 10000:\n        raise ValueError(\"Diameter must be between 0 and 10000 nm\")\n  \
+    \  \n    # Surface area to volume ratio\n    radius = diameter_nm / 2\n    surface_area = 4 * math.pi * radius ** 2  #\
+    \ nm^2\n    volume = (4/3) * math.pi * radius ** 3  # nm^3\n    sa_vol_ratio = surface_area / volume if volume > 0 else\
+    \ 0\n    \n    # Material-specific properties\n    material_db = {\n        'gold': {'density': 19.3, 'biocompatible':\
+    \ True, 'photothermal': True, 'magnetic': False},\n        'silver': {'density': 10.5, 'biocompatible': True, 'photothermal':\
+    \ False, 'magnetic': False, 'antimicrobial': True},\n        'iron_oxide': {'density': 5.2, 'biocompatible': True, 'photothermal':\
+    \ False, 'magnetic': True},\n        'silica': {'density': 2.2, 'biocompatible': True, 'photothermal': False, 'magnetic':\
+    \ False},\n        'plga': {'density': 1.3, 'biocompatible': True, 'photothermal': False, 'magnetic': False, 'biodegradable':\
+    \ True},\n        'liposome': {'density': 1.0, 'biocompatible': True, 'photothermal': False, 'magnetic': False, 'biodegradable':\
+    \ True}\n    }\n    \n    mat_props = material_db.get(material.lower(), {'density': 1.0, 'biocompatible': False})\n  \
+    \  \n    # Size classification for medical use\n    if diameter_nm < 10:\n        size_class = 'ultra-small (renal clearable)'\n\
+    \    elif diameter_nm < 100:\n        size_class = 'small (EPR effect, tumor targeting)'\n    elif diameter_nm < 200:\n\
+    \        size_class = 'medium (drug delivery optimal)'\n    elif diameter_nm < 500:\n        size_class = 'large (limited\
+    \ tissue penetration)'\n    else:\n        size_class = 'micro (localized delivery only)'\n    \n    return {\n      \
+    \  'diameter_nm': diameter_nm,\n        'material': material,\n        'surface_area_nm2': round(surface_area, 2),\n \
+    \       'volume_nm3': round(volume, 2),\n        'sa_vol_ratio': round(sa_vol_ratio, 4),\n        'size_classification':\
+    \ size_class,\n        'material_properties': mat_props,\n        'surface_charge_mv': surface_charge_mv\n    }\n\n\n\
+    def design_tattoo_removal_protocol(ink_colors: List[str], tattoo_area_cm2: float,\n                                  \
+    \  skin_type: int = 3, tattoo_age_years: float = 5) -> Dict[str, Any]:\n    \"\"\"Design nanoparticle-enhanced laser tattoo\
+    \ removal protocol.\"\"\"\n    # Laser wavelength selection by ink color\n    wavelength_map = {\n        'black': {'wavelength_nm':\
+    \ 1064, 'laser_type': 'Nd:YAG', 'nanoparticle': 'gold nanorods'},\n        'blue': {'wavelength_nm': 694, 'laser_type':\
+    \ 'Ruby', 'nanoparticle': 'gold nanospheres'},\n        'green': {'wavelength_nm': 755, 'laser_type': 'Alexandrite', 'nanoparticle':\
+    \ 'gold nanostars'},\n        'red': {'wavelength_nm': 532, 'laser_type': 'KTP', 'nanoparticle': 'silver nanoparticles'},\n\
+    \        'yellow': {'wavelength_nm': 532, 'laser_type': 'KTP', 'nanoparticle': 'gold-silver alloy'},\n        'white':\
+    \ {'wavelength_nm': 1064, 'laser_type': 'Nd:YAG', 'nanoparticle': 'carbon nanotubes'},\n        'purple': {'wavelength_nm':\
+    \ 694, 'laser_type': 'Ruby', 'nanoparticle': 'gold nanospheres'}\n    }\n    \n    # Estimate sessions needed\n    base_sessions\
+    \ = 6\n    age_factor = 0.8 if tattoo_age_years > 10 else 1.0 if tattoo_age_years > 5 else 1.2\n    skin_factor = 1.0\
+    \ + (skin_type - 3) * 0.1  # Higher skin types need more sessions\n    area_factor = 1.0 + max(0, (tattoo_area_cm2 - 50)\
+    \ / 100)\n    \n    color_protocols = []\n    for color in ink_colors:\n        color_lower = color.lower()\n        if\
+    \ color_lower in wavelength_map:\n            info = wavelength_map[color_lower]\n            sessions = int(base_sessions\
+    \ * age_factor * skin_factor * area_factor)\n            color_protocols.append({\n                'color': color,\n \
+    \               'laser_wavelength_nm': info['wavelength_nm'],\n                'laser_type': info['laser_type'],\n   \
+    \             'nanoparticle_enhancer': info['nanoparticle'],\n                'estimated_sessions': sessions,\n      \
+    \          'session_interval_weeks': 6\n            })\n    \n    total_sessions = max([p['estimated_sessions'] for p\
+    \ in color_protocols]) if color_protocols else base_sessions\n    \n    return {\n        'tattoo_area_cm2': tattoo_area_cm2,\n\
+    \        'skin_type': skin_type,\n        'tattoo_age_years': tattoo_age_years,\n        'color_protocols': color_protocols,\n\
+    \        'total_estimated_sessions': total_sessions,\n        'total_treatment_duration_months': total_sessions * 1.5,\n\
+    \        'nanoparticle_advantage': 'Photothermal nanoparticles enhance ink fragmentation by 40-60%, reducing sessions\
+    \ needed'\n    }\n\n\ndef formulate_nano_serum(target: str, active_ingredients: List[str] = None) -> Dict[str, Any]:\n\
+    \    \"\"\"Formulate a nanoparticle-based serum for skin treatment.\"\"\"\n    formulations = {\n        'anti_aging':\
+    \ {\n            'nanocarrier': 'liposomal',\n            'active_agents': ['retinol', 'vitamin C', 'peptides', 'hyaluronic\
+    \ acid'],\n            'particle_size_nm': 80,\n            'concentration_pct': 2.0,\n            'ph_range': (5.0, 6.0)\n\
+    \        },\n        'scar_revision': {\n            'nanocarrier': 'PLGA nanoparticles',\n            'active_agents':\
+    \ ['silicone', 'vitamin E', 'allantoin', 'collagen peptides'],\n            'particle_size_nm': 150,\n            'concentration_pct':\
+    \ 3.0,\n            'ph_range': (5.5, 6.5)\n        },\n        'wound_healing': {\n            'nanocarrier': 'nano-silver\
+    \ + cellulose',\n            'active_agents': ['silver nanoparticles', 'EGF', 'FGF', 'chitosan'],\n            'particle_size_nm':\
+    \ 50,\n            'concentration_pct': 1.5,\n            'ph_range': (6.0, 7.0)\n        },\n        'tattoo_removal_enhancer':\
+    \ {\n            'nanocarrier': 'gold nanorods',\n            'active_agents': ['gold nanoparticles', 'PEG coating', 'targeting\
+    \ ligand'],\n            'particle_size_nm': 40,\n            'concentration_pct': 0.5,\n            'ph_range': (6.5,\
+    \ 7.5)\n        }\n    }\n    \n    target_key = target.lower().replace(' ', '_')\n    if target_key in formulations:\n\
+    \        formula = formulations[target_key]\n        if active_ingredients:\n            formula['active_agents'].extend(active_ingredients)\n\
+    \        return {\n            'target': target,\n            'formulation': formula,\n            'status': 'formulated'\n\
+    \        }\n    \n    return {'target': target, 'status': 'custom formulation needed', 'available_targets': list(formulations.keys())}\n\
+    \n\nclass SkillEngine:\n    \"\"\"Nanotech Surgery & Skin Repair skill engine.\"\"\"\n    \n    def __init__(self):\n\
+    \        self.name = SKILL_METADATA['name']\n        self.version = SKILL_METADATA['version']\n    \n    def run(self,\
+    \ action: str, **kwargs) -> Dict[str, Any]:\n        actions = {\n            'nanoparticle_properties': lambda: calculate_nanoparticle_properties(**kwargs),\n\
+    \            'tattoo_removal': lambda: design_tattoo_removal_protocol(**kwargs),\n            'formulate_serum': lambda:\
+    \ formulate_nano_serum(**kwargs),\n        }\n        if action in actions:\n            return actions[action]()\n  \
+    \      return {'error': f'Unknown action: {action}'}\n\n\nclass TestNanotechSurgery(unittest.TestCase):\n    \"\"\"Unit\
+    \ tests for Nanotech Surgery skill.\"\"\"\n    \n    def test_metadata(self):\n        self.assertEqual(SKILL_METADATA['id'],\
+    \ 'nanotech_surgery')\n    \n    def test_nanoparticle_properties(self):\n        result = calculate_nanoparticle_properties(diameter_nm=50,\
+    \ material='gold')\n        self.assertIn('size_classification', result)\n        self.assertTrue(result['material_properties']['photothermal'])\n\
+    \    \n    def test_nanoparticle_invalid(self):\n        with self.assertRaises(ValueError):\n            calculate_nanoparticle_properties(diameter_nm=-5,\
+    \ material='gold')\n    \n    def test_tattoo_removal(self):\n        result = design_tattoo_removal_protocol(\n     \
+    \       ink_colors=['black', 'red', 'blue'],\n            tattoo_area_cm2=30,\n            skin_type=3\n        )\n  \
+    \      self.assertIn('color_protocols', result)\n        self.assertEqual(len(result['color_protocols']), 3)\n    \n \
+    \   def test_nano_serum(self):\n        result = formulate_nano_serum(target='anti_aging')\n        self.assertEqual(result['status'],\
+    \ 'formulated')\n    \n    def test_nano_serum_custom(self):\n        result = formulate_nano_serum(target='unknown_target')\n\
+    \        self.assertEqual(result['status'], 'custom formulation needed')\n    \n    def test_skill_engine(self):\n   \
+    \     engine = SkillEngine()\n        self.assertEqual(engine.name, 'Nanotech Surgery & Skin Repair Expert')\n    \n \
+    \   def test_prompts_exist(self):\n        self.assertGreater(len(EXPERT_PROMPTS), 0)\n    \n    def test_integration_points(self):\n\
+    \        self.assertIn('clinicaltrials_gov', INTEGRATION_POINTS)\n        self.assertIn('pubmed', INTEGRATION_POINTS)\n\
+    \n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Nanotech Surgery & Skin Repair Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''nanotech_surgery'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

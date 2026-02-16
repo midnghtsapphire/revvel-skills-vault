@@ -1,0 +1,53 @@
+name: modelready
+title: ModelReady
+version: 1.0.0
+description: Start using a local or Hugging Face model instantly, directly from chat.
+metadata:
+  author: dexiaong
+  category: Communication
+  tags:
+  - communication
+  - modelready
+  source: clawhub-community
+  clawhub_slug: modelreadyz
+  clawhub_path: dexiaong/modelreadyz
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ModelReady
+
+    # Source: ClawHub community skill by dexiaong
+
+    # Install: clawhub install modelreadyz
+
+    # Path: dexiaong/modelreadyz
+
+
+    ## Description
+
+    Start using a local or Hugging Face model instantly, directly from chat.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install modelreadyz
+
+    ```'
+examples:
+- description: Install ModelReady from ClawHub
+  usage: clawhub install modelreadyz
+schema_version: '1.0'

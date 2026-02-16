@@ -1,0 +1,74 @@
+name: social-post
+title: Social Post
+version: 1.4.0
+description: Post and reply to X/Twitter and Farcaster with text and images. Features multi-account support, auto-variation
+  to avoid duplicate content detection, draft preview, character validation, threads, replies, and image uploads. Consumption-based
+  pricing for X API, pay-per-cast for Farcaster.
+metadata:
+  author: callmedas69
+  category: Media & Content
+  tags:
+  - media-content
+  - social
+  - post
+  source: clawhub-community
+  clawhub_slug: social-post
+  clawhub_path: callmedas69/social-post
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Social Post
+
+    # Source: ClawHub community skill by callmedas69
+
+    # Install: clawhub install social-post
+
+    # Path: callmedas69/social-post
+
+
+    ## Description
+
+    Post and reply to X/Twitter and Farcaster with text and images. Features multi-account support, auto-variation to avoid
+    duplicate content detection, draft preview, character validation, threads, replies, and image uploads. Consumption-based
+    pricing for X API, pay-per-cast for Farcaster.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/farcaster.sh
+
+    - lib/links.sh
+
+    - lib/threads.sh
+
+    - lib/twitter.sh
+
+    - lib/validate.sh
+
+    - lib/variation.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install social-post
+
+    ```'
+examples:
+- description: Install Social Post from ClawHub
+  usage: clawhub install social-post
+schema_version: '1.0'

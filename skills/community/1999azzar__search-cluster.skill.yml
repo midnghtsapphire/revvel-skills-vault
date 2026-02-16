@@ -1,0 +1,60 @@
+name: search-cluster
+title: Search Cluster
+version: 1.1.1
+description: Unified search tool for Google, Wikipedia, Reddit, and RSS feeds with Redis caching. Use when user asks "search
+  for X", "who is Y", "latest news on Z".
+metadata:
+  author: 1999azzar
+  category: Search & Research
+  tags:
+  - search-research
+  - search
+  - cluster
+  source: clawhub-community
+  clawhub_slug: search-cluster
+  clawhub_path: 1999azzar/search-cluster
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Search Cluster
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install search-cluster
+
+    # Path: 1999azzar/search-cluster
+
+
+    ## Description
+
+    Unified search tool for Google, Wikipedia, Reddit, and RSS feeds with Redis caching. Use when user asks "search for X",
+    "who is Y", "latest news on Z".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/search-apis.md
+
+    - scripts/search-cluster.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install search-cluster
+
+    ```'
+examples:
+- description: Install Search Cluster from ClawHub
+  usage: clawhub install search-cluster
+schema_version: '1.0'

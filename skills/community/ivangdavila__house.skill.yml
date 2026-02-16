@@ -1,0 +1,65 @@
+name: house
+title: House
+version: 1.1.0
+description: Buy, maintain, improve, and sell homes with inspection checklists, maintenance schedules, renovation planning,
+  and transaction guidance.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - house
+  source: clawhub-community
+  clawhub_slug: house
+  clawhub_path: ivangdavila/house
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# House
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install house
+
+    # Path: ivangdavila/house
+
+
+    ## Description
+
+    Buy, maintain, improve, and sell homes with inspection checklists, maintenance schedules, renovation planning, and transaction
+    guidance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - buying.md
+
+    - improvements.md
+
+    - maintenance.md
+
+    - renting.md
+
+    - selling.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install house
+
+    ```'
+examples:
+- description: Install House from ClawHub
+  usage: clawhub install house
+schema_version: '1.0'

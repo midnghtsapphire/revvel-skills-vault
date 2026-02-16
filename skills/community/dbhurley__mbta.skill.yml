@@ -1,0 +1,61 @@
+name: mbta
+title: MBTA Transit
+version: 1.0.0
+description: Real-time MBTA transit predictions for Boston-area subway, bus, commuter rail, and ferry. Query departure times,
+  search stops/routes, check service alerts, and run a live dashboard. Use when asked about Boston transit, T schedules, when
+  to leave for the train, or MBTA service status.
+metadata:
+  author: dbhurley
+  category: Search & Research
+  tags:
+  - search-research
+  - mbta
+  source: clawhub-community
+  clawhub_slug: mbta
+  clawhub_path: dbhurley/mbta
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MBTA Transit
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install mbta
+
+    # Path: dbhurley/mbta
+
+
+    ## Description
+
+    Real-time MBTA transit predictions for Boston-area subway, bus, commuter rail, and ferry. Query departure times, search
+    stops/routes, check service alerts, and run a live dashboard. Use when asked about Boston transit, T schedules, when to
+    leave for the train, or MBTA service status.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.yaml
+
+    - scripts/mbta.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mbta
+
+    ```'
+examples:
+- description: Install MBTA Transit from ClawHub
+  usage: clawhub install mbta
+schema_version: '1.0'

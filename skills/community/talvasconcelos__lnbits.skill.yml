@@ -1,0 +1,55 @@
+name: lnbits
+title: LNbits Wallet
+version: 1.0.0
+description: Manage LNbits Lightning Wallet (Balance, Pay, Invoice)
+metadata:
+  author: talvasconcelos
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - lnbits
+  source: clawhub-community
+  clawhub_slug: lnbits
+  clawhub_path: talvasconcelos/lnbits
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LNbits Wallet
+
+    # Source: ClawHub community skill by talvasconcelos
+
+    # Install: clawhub install lnbits
+
+    # Path: talvasconcelos/lnbits
+
+
+    ## Description
+
+    Manage LNbits Lightning Wallet (Balance, Pay, Invoice)
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/lnbits_cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lnbits
+
+    ```'
+examples:
+- description: Install LNbits Wallet from ClawHub
+  usage: clawhub install lnbits
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: gemini-computer-use
+title: Gemini Computer Use
+version: 1.0.0
+description: Build and run Gemini 2.5 Computer Use browser-control agents with Playwright. Use when a user wants to automate
+  web browser tasks via the Gemini Computer Use model, needs an agent loop (screenshot → function_call → action → function_response),
+  or asks to integrate safety confirmation for risky UI ac
+metadata:
+  author: am-will
+  category: Search & Research
+  tags:
+  - search-research
+  - gemini
+  - computer
+  - use
+  source: clawhub-community
+  clawhub_slug: gemini-computer-use
+  clawhub_path: am-will/gemini-computer-use
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gemini Computer Use
+
+    # Source: ClawHub community skill by am-will
+
+    # Install: clawhub install gemini-computer-use
+
+    # Path: am-will/gemini-computer-use
+
+
+    ## Description
+
+    Build and run Gemini 2.5 Computer Use browser-control agents with Playwright. Use when a user wants to automate web browser
+    tasks via the Gemini Computer Use model, needs an agent loop (screenshot → function_call → action → function_response),
+    or asks to integrate safety confirmation for risky UI ac
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/google-computer-use.md
+
+    - scripts/computer_use_agent.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gemini-computer-use
+
+    ```'
+examples:
+- description: Install Gemini Computer Use from ClawHub
+  usage: clawhub install gemini-computer-use
+schema_version: '1.0'

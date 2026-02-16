@@ -1,0 +1,57 @@
+name: stp
+title: 结构化任务规划与分步执行(Structured Task Planning & Execution)
+version: 1.0.3
+description: 结构化任务规划与分步执行（Structured Task Planning）。支持两种模式：(1) 文件模式 - 从 Markdown 任务文档加载步骤执行；(2) 自然语言模式 - 接受自然语言任务描述，自动生成计划书并确认后执行。触发词：/stp、任务规划、步骤执行。功能包括：步骤分解、状态跟踪、执行日志记录、快速失败策略。
+metadata:
+  author: scotthuang
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - stp
+  source: clawhub-community
+  clawhub_slug: stp
+  clawhub_path: scotthuang/stp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 结构化任务规划与分步执行(Structured Task Planning & Execution)
+
+    # Source: ClawHub community skill by scotthuang
+
+    # Install: clawhub install stp
+
+    # Path: scotthuang/stp
+
+
+    ## Description
+
+    结构化任务规划与分步执行（Structured Task Planning）。支持两种模式：(1) 文件模式 - 从 Markdown 任务文档加载步骤执行；(2) 自然语言模式 - 接受自然语言任务描述，自动生成计划书并确认后执行。触发词：/stp、任务规划、步骤执行。功能包括：步骤分解、状态跟踪、执行日志记录、快速失败策略。
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/execute_task.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stp
+
+    ```'
+examples:
+- description: Install 结构化任务规划与分步执行(Structured Task Planning & Execution) from ClawHub
+  usage: clawhub install stp
+schema_version: '1.0'

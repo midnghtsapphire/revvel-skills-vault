@@ -1,0 +1,63 @@
+name: excalidraw
+title: Excalidraw Diagrams
+version: 1.0.0
+description: Generate hand-drawn style diagrams, flowcharts, and architecture diagrams as PNG images from Excalidraw JSON
+metadata:
+  author: henrino3
+  category: Media & Content
+  tags:
+  - media-content
+  - excalidraw
+  source: clawhub-community
+  clawhub_slug: ec-excalidraw
+  clawhub_path: henrino3/ec-excalidraw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Excalidraw Diagrams
+
+    # Source: ClawHub community skill by henrino3
+
+    # Install: clawhub install ec-excalidraw
+
+    # Path: henrino3/ec-excalidraw
+
+
+    ## Description
+
+    Generate hand-drawn style diagrams, flowcharts, and architecture diagrams as PNG images from Excalidraw JSON
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/element-schema.md
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+    - scripts/render.js
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ec-excalidraw
+
+    ```'
+examples:
+- description: Install Excalidraw Diagrams from ClawHub
+  usage: clawhub install ec-excalidraw
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: dropbox-integration
+title: Dropbox Integration
+version: 1.0.1
+description: Read-only Dropbox integration for browsing, searching, and downloading files from your Dropbox account. Includes
+  automatic OAuth token refresh, secure credential storage, and comprehensive setup guide. Perfect for accessing your Dropbox
+  files from OpenClaw without giving write access.
+metadata:
+  author: tirandagan
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - dropbox
+  - integration
+  source: clawhub-community
+  clawhub_slug: dropbox-integration
+  clawhub_path: tirandagan/dropbox-integration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dropbox Integration
+
+    # Source: ClawHub community skill by tirandagan
+
+    # Install: clawhub install dropbox-integration
+
+    # Path: tirandagan/dropbox-integration
+
+
+    ## Description
+
+    Read-only Dropbox integration for browsing, searching, and downloading files from your Dropbox account. Includes automatic
+    OAuth token refresh, secure credential storage, and comprehensive setup guide. Perfect for accessing your Dropbox files
+    from OpenClaw without giving write access.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - browse.js
+
+    - download.js
+
+    - dropbox-helper.js
+
+    - package.json
+
+    - search-files.js
+
+    - setup-oauth.js
+
+    - test-connection.js
+
+    - references/setup-guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dropbox-integration
+
+    ```'
+examples:
+- description: Install Dropbox Integration from ClawHub
+  usage: clawhub install dropbox-integration
+schema_version: '1.0'

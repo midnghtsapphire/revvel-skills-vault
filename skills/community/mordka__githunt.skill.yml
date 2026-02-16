@@ -1,0 +1,63 @@
+name: githunt
+title: GitHunt
+version: 1.0.0
+description: Find and rank GitHub developers by location, technology, and role. Search for candidates, get scored profiles
+  with tech stack matches, activity, and contact info.
+metadata:
+  author: mordka
+  category: Search & Research
+  tags:
+  - search-research
+  - githunt
+  source: clawhub-community
+  clawhub_slug: githunt
+  clawhub_path: mordka/githunt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHunt
+
+    # Source: ClawHub community skill by mordka
+
+    # Install: clawhub install githunt
+
+    # Path: mordka/githunt
+
+
+    ## Description
+
+    Find and rank GitHub developers by location, technology, and role. Search for candidates, get scored profiles with tech
+    stack matches, activity, and contact info.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/githunt-search.sh
+
+    - skill/SKILL.md
+
+    - skill/_meta.json
+
+    - skill/scripts/githunt-search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install githunt
+
+    ```'
+examples:
+- description: Install GitHunt from ClawHub
+  usage: clawhub install githunt
+schema_version: '1.0'

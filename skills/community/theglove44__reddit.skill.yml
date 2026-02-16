@@ -1,0 +1,57 @@
+name: reddit
+title: Reddit
+version: 1.0.0
+description: Browse, search, post, and moderate Reddit. Read-only works without auth; posting/moderation requires OAuth setup.
+metadata:
+  author: theglove44
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - reddit
+  source: clawhub-community
+  clawhub_slug: reddit
+  clawhub_path: theglove44/reddit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reddit
+
+    # Source: ClawHub community skill by theglove44
+
+    # Install: clawhub install reddit
+
+    # Path: theglove44/reddit
+
+
+    ## Description
+
+    Browse, search, post, and moderate Reddit. Read-only works without auth; posting/moderation requires OAuth setup.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/reddit.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reddit
+
+    ```'
+examples:
+- description: Install Reddit from ClawHub
+  usage: clawhub install reddit
+schema_version: '1.0'

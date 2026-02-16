@@ -1,0 +1,55 @@
+name: job_description_generator
+title: Job Description
+version: 1.0.0
+description: Create compelling job postings with requirements, responsibilities, and qualifications
+metadata:
+  author: lijie420461340
+  category: General
+  tags:
+  - general
+  - job
+  - description
+  - generator
+  source: clawhub-community
+  clawhub_slug: job-description
+  clawhub_path: lijie420461340/job-description
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Job Description
+
+    # Source: ClawHub community skill by lijie420461340
+
+    # Install: clawhub install job-description
+
+    # Path: lijie420461340/job-description
+
+
+    ## Description
+
+    Create compelling job postings with requirements, responsibilities, and qualifications
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install job-description
+
+    ```'
+examples:
+- description: Install Job Description from ClawHub
+  usage: clawhub install job-description
+schema_version: '1.0'

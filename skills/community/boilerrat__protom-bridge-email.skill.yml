@@ -1,0 +1,65 @@
+name: proton-bridge-email
+title: Proton Bridge Email
+version: 1.0.0
+description: Send email through Proton Mail Bridge (localhost SMTP) using age-encrypted credentials. Use when setting up Proton
+  Bridge for an agent mailbox, encrypting Bridge credentials (no 1Password), or sending automated emails (daily reports, alerts)
+  via Proton Bridge.
+metadata:
+  author: boilerrat
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - proton
+  - bridge
+  - email
+  source: clawhub-community
+  clawhub_slug: protom-bridge-email
+  clawhub_path: boilerrat/protom-bridge-email
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Proton Bridge Email
+
+    # Source: ClawHub community skill by boilerrat
+
+    # Install: clawhub install protom-bridge-email
+
+    # Path: boilerrat/protom-bridge-email
+
+
+    ## Description
+
+    Send email through Proton Mail Bridge (localhost SMTP) using age-encrypted credentials. Use when setting up Proton Bridge
+    for an agent mailbox, encrypting Bridge credentials (no 1Password), or sending automated emails (daily reports, alerts)
+    via Proton Bridge.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/proton-bridge-setup.md
+
+    - scripts/encrypt_env.sh
+
+    - scripts/send_email.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install protom-bridge-email
+
+    ```'
+examples:
+- description: Install Proton Bridge Email from ClawHub
+  usage: clawhub install protom-bridge-email
+schema_version: '1.0'

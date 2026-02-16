@@ -1,0 +1,58 @@
+name: morning-briefing
+title: Morning Briefing
+version: 1.0.2
+description: Generate a daily morning briefing (weather, calendar, news, reminders) using the local `briefing` CLI. No API
+  tokens consumed for data gathering. Use when the user asks for a morning briefing, daily summary, schedule overview, or
+  wants automated daily briefings.
+metadata:
+  author: ddakju
+  category: Development & Coding
+  tags:
+  - development-coding
+  - morning
+  - briefing
+  source: clawhub-community
+  clawhub_slug: morning-briefing-pro
+  clawhub_path: ddakju/morning-briefing-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Morning Briefing
+
+    # Source: ClawHub community skill by ddakju
+
+    # Install: clawhub install morning-briefing-pro
+
+    # Path: ddakju/morning-briefing-pro
+
+
+    ## Description
+
+    Generate a daily morning briefing (weather, calendar, news, reminders) using the local `briefing` CLI. No API tokens consumed
+    for data gathering. Use when the user asks for a morning briefing, daily summary, schedule overview, or wants automated
+    daily briefings.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install morning-briefing-pro
+
+    ```'
+examples:
+- description: Install Morning Briefing from ClawHub
+  usage: clawhub install morning-briefing-pro
+schema_version: '1.0'

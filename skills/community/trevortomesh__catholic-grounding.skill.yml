@@ -1,0 +1,70 @@
+name: catholic-grounding
+title: Catholic Grounding
+version: 1.0.0
+description: Help answer questions about Catholicism accurately and respectfully (Catechism-first). Provides a structured
+  response format, common topic map with CCC references, and short prayer/reference snippets. Use when the user asks about
+  Catholic teaching, Catholic practice, sacraments, moral theology basic
+metadata:
+  author: trevortomesh
+  category: Utilities
+  tags:
+  - utilities
+  - catholic
+  - grounding
+  source: clawhub-community
+  clawhub_slug: catholic-grounding
+  clawhub_path: trevortomesh/catholic-grounding
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Catholic Grounding
+
+    # Source: ClawHub community skill by trevortomesh
+
+    # Install: clawhub install catholic-grounding
+
+    # Path: trevortomesh/catholic-grounding
+
+
+    ## Description
+
+    Help answer questions about Catholicism accurately and respectfully (Catechism-first). Provides a structured response
+    format, common topic map with CCC references, and short prayer/reference snippets. Use when the user asks about Catholic
+    teaching, Catholic practice, sacraments, moral theology basic
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/ccc-topic-map.md
+
+    - references/prayers.md
+
+    - references/style.md
+
+    - scripts/ccc.sh
+
+    - scripts/prayer.sh
+
+    - scripts/status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install catholic-grounding
+
+    ```'
+examples:
+- description: Install Catholic Grounding from ClawHub
+  usage: clawhub install catholic-grounding
+schema_version: '1.0'

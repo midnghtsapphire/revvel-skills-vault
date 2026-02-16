@@ -1,0 +1,54 @@
+name: productboard-release
+title: Productboard Release
+version: 0.1.0
+description: Manage ProductBoard releases and roadmap planning
+metadata:
+  author: robertoamoreno
+  category: Utilities
+  tags:
+  - utilities
+  - productboard
+  - release
+  source: clawhub-community
+  clawhub_slug: productboard-release
+  clawhub_path: robertoamoreno/productboard-release
+  user_invocable: false
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Productboard Release
+
+    # Source: ClawHub community skill by robertoamoreno
+
+    # Install: clawhub install productboard-release
+
+    # Path: robertoamoreno/productboard-release
+
+
+    ## Description
+
+    Manage ProductBoard releases and roadmap planning
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install productboard-release
+
+    ```'
+examples:
+- description: Install Productboard Release from ClawHub
+  usage: clawhub install productboard-release
+schema_version: '1.0'

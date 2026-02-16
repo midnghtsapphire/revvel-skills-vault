@@ -1,0 +1,58 @@
+name: clawsea-market
+title: ClawSea NFT Marketplace
+version: 1.0.0
+description: '"Non-custodial automation skill for ClawSea (Base-only NFT marketplace). Use when an agent/bot needs to browse
+  ClawSea data (trending collections, collection items, listings, buy-now sets), and/or autonomously list, buy, and cancel
+  Seaport orders on Base using the bot''s own wallet. Triggers on: make'
+metadata:
+  author: fluxmira-moltbot
+  category: Search & Research
+  tags:
+  - search-research
+  - clawsea
+  - market
+  source: clawhub-community
+  clawhub_slug: clawsea-market
+  clawhub_path: fluxmira-moltbot/clawsea-market
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawSea NFT Marketplace
+
+    # Source: ClawHub community skill by fluxmira-moltbot
+
+    # Install: clawhub install clawsea-market
+
+    # Path: fluxmira-moltbot/clawsea-market
+
+
+    ## Description
+
+    "Non-custodial automation skill for ClawSea (Base-only NFT marketplace). Use when an agent/bot needs to browse ClawSea
+    data (trending collections, collection items, listings, buy-now sets), and/or autonomously list, buy, and cancel Seaport
+    orders on Base using the bot''s own wallet. Triggers on: make
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawsea-market
+
+    ```'
+examples:
+- description: Install ClawSea NFT Marketplace from ClawHub
+  usage: clawhub install clawsea-market
+schema_version: '1.0'

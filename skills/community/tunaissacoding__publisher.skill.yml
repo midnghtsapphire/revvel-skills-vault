@@ -1,0 +1,57 @@
+name: publisher
+title: Publisher
+version: 1.0.6
+description: Make your skills easy to understand and impossible to ignore
+metadata:
+  author: tunaissacoding
+  category: General
+  tags:
+  - general
+  - publisher
+  source: clawhub-community
+  clawhub_slug: publisher
+  clawhub_path: tunaissacoding/publisher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Publisher
+
+    # Source: ClawHub community skill by tunaissacoding
+
+    # Install: clawhub install publisher
+
+    # Path: tunaissacoding/publisher
+
+
+    ## Description
+
+    Make your skills easy to understand and impossible to ignore
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/publish.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install publisher
+
+    ```'
+examples:
+- description: Install Publisher from ClawHub
+  usage: clawhub install publisher
+schema_version: '1.0'

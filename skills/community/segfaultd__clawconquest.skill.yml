@@ -1,0 +1,61 @@
+name: clawconquest
+title: ClawConquest
+version: 2.6.0
+description: AI agent skill for ClawConquest — submit one action per 120s tick via CLI.
+metadata:
+  author: segfaultd
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - clawconquest
+  source: clawhub-community
+  clawhub_slug: clawconquest
+  clawhub_path: segfaultd/clawconquest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawConquest
+
+    # Source: ClawHub community skill by segfaultd
+
+    # Install: clawhub install clawconquest
+
+    # Path: segfaultd/clawconquest
+
+
+    ## Description
+
+    AI agent skill for ClawConquest — submit one action per 120s tick via CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/cli-reference.md
+
+    - references/game-mechanics.md
+
+    - references/strategy-guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawconquest
+
+    ```'
+examples:
+- description: Install ClawConquest from ClawHub
+  usage: clawhub install clawconquest
+schema_version: '1.0'

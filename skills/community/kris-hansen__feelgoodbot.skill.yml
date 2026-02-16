@@ -1,0 +1,58 @@
+name: feelgoodbot
+title: Feelgoodbot
+version: 1.1.0
+description: Set up feelgoodbot file integrity monitoring and TOTP step-up authentication for macOS. Use when the user wants
+  to detect malware, monitor for system tampering, set up security alerts, or require OTP verification for sensitive agent
+  actions.
+metadata:
+  author: kris-hansen
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - feelgoodbot
+  source: clawhub-community
+  clawhub_slug: feelgoodbot
+  clawhub_path: kris-hansen/feelgoodbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feelgoodbot
+
+    # Source: ClawHub community skill by kris-hansen
+
+    # Install: clawhub install feelgoodbot
+
+    # Path: kris-hansen/feelgoodbot
+
+
+    ## Description
+
+    Set up feelgoodbot file integrity monitoring and TOTP step-up authentication for macOS. Use when the user wants to detect
+    malware, monitor for system tampering, set up security alerts, or require OTP verification for sensitive agent actions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feelgoodbot
+
+    ```'
+examples:
+- description: Install Feelgoodbot from ClawHub
+  usage: clawhub install feelgoodbot
+schema_version: '1.0'

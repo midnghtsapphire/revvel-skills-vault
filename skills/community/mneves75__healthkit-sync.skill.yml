@@ -1,0 +1,66 @@
+name: healthkit-sync
+title: HealthKit Sync
+version: 1.0.0
+description: iOS HealthKit data sync CLI commands and patterns. Use when working with healthsync CLI, fetching Apple Health
+  data (steps, heart rate, sleep, workouts), pairing iOS devices over local network, or understanding the iOS Health Sync
+  project architecture including mTLS certificate pinning, Keychain sto
+metadata:
+  author: mneves75
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - healthkit
+  - sync
+  source: clawhub-community
+  clawhub_slug: healthkit-sync
+  clawhub_path: mneves75/healthkit-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# HealthKit Sync
+
+    # Source: ClawHub community skill by mneves75
+
+    # Install: clawhub install healthkit-sync
+
+    # Path: mneves75/healthkit-sync
+
+
+    ## Description
+
+    iOS HealthKit data sync CLI commands and patterns. Use when working with healthsync CLI, fetching Apple Health data (steps,
+    heart rate, sleep, workouts), pairing iOS devices over local network, or understanding the iOS Health Sync project architecture
+    including mTLS certificate pinning, Keychain sto
+
+
+    ## Files
+
+    - SKILL.md
+
+    - TESTING.md
+
+    - _meta.json
+
+    - references/ARCHITECTURE.md
+
+    - references/CLI-REFERENCE.md
+
+    - references/SECURITY.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install healthkit-sync
+
+    ```'
+examples:
+- description: Install HealthKit Sync from ClawHub
+  usage: clawhub install healthkit-sync
+schema_version: '1.0'

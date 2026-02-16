@@ -1,0 +1,70 @@
+name: agent-wallet-nwc-bridge
+title: Nostr Wallet Connect (NWC) bridge for mdk-agent-wallet, which is self-custodial Bitcoin Lightning wallet for AI agents.
+version: 1.0.0
+description: Expose a local @moneydevkit/agent-wallet as a Nostr Wallet Connect (NIP-47) wallet-service (systemd user service).
+metadata:
+  author: kristapsk
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - agent
+  - wallet
+  - nwc
+  - bridge
+  source: clawhub-community
+  clawhub_slug: agent-wallet-nwc-bridge
+  clawhub_path: kristapsk/agent-wallet-nwc-bridge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nostr Wallet Connect (NWC) bridge for mdk-agent-wallet, which is self-custodial Bitcoin Lightning wallet for
+    AI agents.
+
+    # Source: ClawHub community skill by kristapsk
+
+    # Install: clawhub install agent-wallet-nwc-bridge
+
+    # Path: kristapsk/agent-wallet-nwc-bridge
+
+
+    ## Description
+
+    Expose a local @moneydevkit/agent-wallet as a Nostr Wallet Connect (NIP-47) wallet-service (systemd user service).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agent-wallet-nwc-bridge.service
+
+    - index.js
+
+    - install_systemd_user.sh
+
+    - package-lock.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-wallet-nwc-bridge
+
+    ```'
+examples:
+- description: Install Nostr Wallet Connect (NWC) bridge for mdk-agent-wallet, which is self-custodial Bitcoin Lightning wallet
+    for AI agents. from ClawHub
+  usage: clawhub install agent-wallet-nwc-bridge
+schema_version: '1.0'

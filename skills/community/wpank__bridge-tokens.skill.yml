@@ -1,0 +1,69 @@
+name: bridge-tokens
+title: Uniswap Bridge Tokens
+version: 0.1.0
+description: Bridge tokens from one chain to another without swapping. Simplified cross-chain transfer where the output token
+  is the same as the input token. Use when the user wants to move tokens between chains.
+metadata:
+  author: wpank
+  category: General
+  tags:
+  - general
+  - bridge
+  - tokens
+  - '[task(subagent_type:cross-chain-executor)'
+  - mcp__uniswap__getsupportedchains
+  - mcp__uniswap__gettokeninfo]
+  source: clawhub-community
+  clawhub_slug: bridge-tokens
+  clawhub_path: wpank/bridge-tokens
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:cross-chain-executor)'
+  - mcp__uniswap__getSupportedChains
+  - mcp__uniswap__getTokenInfo]
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Bridge Tokens
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install bridge-tokens
+
+    # Path: wpank/bridge-tokens
+
+
+    ## Description
+
+    Bridge tokens from one chain to another without swapping. Simplified cross-chain transfer where the output token is the
+    same as the input token. Use when the user wants to move tokens between chains.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:cross-chain-executor), mcp__uniswap__getSupportedChains, mcp__uniswap__getTokenInfo]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bridge-tokens
+
+    ```'
+examples:
+- description: Install Uniswap Bridge Tokens from ClawHub
+  usage: clawhub install bridge-tokens
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: qwen3-tts-instruct
+title: Qwen3 TTS Instruct
+version: 1.0.0
+description: Alibaba Cloud Bailian Qwen TTS with voice/mood presets
+metadata:
+  author: yanmoon321
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - qwen3
+  - tts
+  - instruct
+  source: clawhub-community
+  clawhub_slug: qwen3-tts-instruct
+  clawhub_path: yanmoon321/qwen3-tts-instruct
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qwen3 TTS Instruct
+
+    # Source: ClawHub community skill by yanmoon321
+
+    # Install: clawhub install qwen3-tts-instruct
+
+    # Path: yanmoon321/qwen3-tts-instruct
+
+
+    ## Description
+
+    Alibaba Cloud Bailian Qwen TTS with voice/mood presets
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/setup.sh
+
+    - scripts/tts.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qwen3-tts-instruct
+
+    ```'
+examples:
+- description: Install Qwen3 TTS Instruct from ClawHub
+  usage: clawhub install qwen3-tts-instruct
+schema_version: '1.0'

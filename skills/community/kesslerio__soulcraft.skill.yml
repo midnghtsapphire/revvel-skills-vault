@@ -1,0 +1,63 @@
+name: soulcraft
+title: SoulCraft
+version: 1.0.0
+description: Create or improve SOUL.md files for OpenClaw agents through guided conversation. Use when designing agent personality,
+  crafting a soul, or saying "help me create a soul". Supports self-improvement.
+metadata:
+  author: kesslerio
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - soulcraft
+  source: clawhub-community
+  clawhub_slug: soulcraft
+  clawhub_path: kesslerio/soulcraft
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SoulCraft
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install soulcraft
+
+    # Path: kesslerio/soulcraft
+
+
+    ## Description
+
+    Create or improve SOUL.md files for OpenClaw agents through guided conversation. Use when designing agent personality,
+    crafting a soul, or saying "help me create a soul". Supports self-improvement.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/question-bank.md
+
+    - references/soul-examples.md
+
+    - research/RESEARCH_REPORT.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install soulcraft
+
+    ```'
+examples:
+- description: Install SoulCraft from ClawHub
+  usage: clawhub install soulcraft
+schema_version: '1.0'

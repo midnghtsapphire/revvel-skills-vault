@@ -1,0 +1,74 @@
+name: email-security
+title: Email Security
+version: 1.0.0
+description: Protect AI agents from email-based attacks including prompt injection, sender spoofing, malicious attachments,
+  and social engineering. Use when processing emails, reading email content, executing email-based commands, or any interaction
+  with email data. Provides sender verification, content sanitiza
+metadata:
+  author: ivaavimusic
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - email
+  - security
+  source: clawhub-community
+  clawhub_slug: email-security
+  clawhub_path: ivaavimusic/email-security
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Email Security
+
+    # Source: ClawHub community skill by ivaavimusic
+
+    # Install: clawhub install email-security
+
+    # Path: ivaavimusic/email-security
+
+
+    ## Description
+
+    Protect AI agents from email-based attacks including prompt injection, sender spoofing, malicious attachments, and social
+    engineering. Use when processing emails, reading email content, executing email-based commands, or any interaction with
+    email data. Provides sender verification, content sanitiza
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - assets/security-config-template.json
+
+    - references/owner-config.md
+
+    - references/provider-agentmail.md
+
+    - references/provider-generic.md
+
+    - references/provider-gmail.md
+
+    - references/security-policies.md
+
+    - references/threat-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-security
+
+    ```'
+examples:
+- description: Install Email Security from ClawHub
+  usage: clawhub install email-security
+schema_version: '1.0'

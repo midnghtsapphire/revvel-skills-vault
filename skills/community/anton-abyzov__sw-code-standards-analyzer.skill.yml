@@ -1,0 +1,77 @@
+name: code-standards-analyzer
+title: Code Standards Analyzer
+version: 1.0.0
+description: Generate and maintain coding standards documentation from existing codebase patterns. Use when creating STANDARDS.md
+  files, onboarding new developers, or documenting team conventions. Evidence-based approach - standards reflect reality,
+  not aspirations.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - code
+  - standards
+  - analyzer
+  - read
+  - grep
+  - glob
+  - bash
+  - write
+  - edit
+  source: clawhub-community
+  clawhub_slug: sw-code-standards-analyzer
+  clawhub_path: anton-abyzov/sw-code-standards-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+  - Edit
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Code Standards Analyzer
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-code-standards-analyzer
+
+    # Path: anton-abyzov/sw-code-standards-analyzer
+
+
+    ## Description
+
+    Generate and maintain coding standards documentation from existing codebase patterns. Use when creating STANDARDS.md files,
+    onboarding new developers, or documenting team conventions. Evidence-based approach - standards reflect reality, not aspirations.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Grep, Glob, Bash, Write, Edit
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-code-standards-analyzer
+
+    ```'
+examples:
+- description: Install Code Standards Analyzer from ClawHub
+  usage: clawhub install sw-code-standards-analyzer
+schema_version: '1.0'

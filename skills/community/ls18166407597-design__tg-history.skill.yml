@@ -1,0 +1,59 @@
+name: tg-history
+title: Tg History
+version: 1.0.1
+description: Efficiently extract and read Telegram group chat history as text, bypassing screenshots/OCR for zero-token-waste.
+metadata:
+  author: ls18166407597-design
+  category: Social Media
+  tags:
+  - social-media
+  - history
+  source: clawhub-community
+  clawhub_slug: tg-history
+  clawhub_path: ls18166407597-design/tg-history
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tg History
+
+    # Source: ClawHub community skill by ls18166407597-design
+
+    # Install: clawhub install tg-history
+
+    # Path: ls18166407597-design/tg-history
+
+
+    ## Description
+
+    Efficiently extract and read Telegram group chat history as text, bypassing screenshots/OCR for zero-token-waste.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - tg-logic.js
+
+    - scripts/history_logic.js
+
+    - scripts/tg_robust_logic.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tg-history
+
+    ```'
+examples:
+- description: Install Tg History from ClawHub
+  usage: clawhub install tg-history
+schema_version: '1.0'

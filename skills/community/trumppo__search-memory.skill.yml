@@ -1,0 +1,58 @@
+name: search-memory
+title: search-memory
+version: 0.1.0
+description: Local-first memory search and indexing for Openclaw. Use when you need to (1) index memory files, (2) search
+  memory from the CLI, or (3) wire a slash command for memory lookup.
+metadata:
+  author: trumppo
+  category: Search & Research
+  tags:
+  - search-research
+  - search
+  - memory
+  source: clawhub-community
+  clawhub_slug: search-memory
+  clawhub_path: trumppo/search-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# search-memory
+
+    # Source: ClawHub community skill by trumppo
+
+    # Install: clawhub install search-memory
+
+    # Path: trumppo/search-memory
+
+
+    ## Description
+
+    Local-first memory search and indexing for Openclaw. Use when you need to (1) index memory files, (2) search memory from
+    the CLI, or (3) wire a slash command for memory lookup.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install search-memory
+
+    ```'
+examples:
+- description: Install search-memory from ClawHub
+  usage: clawhub install search-memory
+schema_version: '1.0'

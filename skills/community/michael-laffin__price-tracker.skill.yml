@@ -1,0 +1,68 @@
+name: price-tracker
+title: Price Tracker
+version: 1.0.0
+description: Monitor product prices across Amazon, eBay, Walmart, and Best Buy to identify arbitrage opportunities and profit
+  margins. Use when finding products to flip, monitoring competitor pricing, tracking price history, identifying arbitrage
+  opportunities, or setting automated price alerts.
+metadata:
+  author: michael-laffin
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - price
+  - tracker
+  source: clawhub-community
+  clawhub_slug: price-tracker
+  clawhub_path: michael-laffin/price-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Price Tracker
+
+    # Source: ClawHub community skill by michael-laffin
+
+    # Install: clawhub install price-tracker
+
+    # Path: michael-laffin/price-tracker
+
+
+    ## Description
+
+    Monitor product prices across Amazon, eBay, Walmart, and Best Buy to identify arbitrage opportunities and profit margins.
+    Use when finding products to flip, monitoring competitor pricing, tracking price history, identifying arbitrage opportunities,
+    or setting automated price alerts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/__init__.py
+
+    - scripts/bulk_monitor.py
+
+    - scripts/compare_prices.py
+
+    - scripts/price_history.py
+
+    - scripts/track_product.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install price-tracker
+
+    ```'
+examples:
+- description: Install Price Tracker from ClawHub
+  usage: clawhub install price-tracker
+schema_version: '1.0'

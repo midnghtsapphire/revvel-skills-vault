@@ -1,0 +1,72 @@
+name: facebook-page
+title: Skill to manage a facebook page
+version: 1.0.0
+description: Manage Facebook Pages via Meta Graph API. Post content (text, photos, links), list posts, manage comments (list/reply/hide/delete).
+  Use when user wants to publish to Facebook Page, check Page posts, or handle comments.
+metadata:
+  author: longmaba
+  category: Media & Content
+  tags:
+  - media-content
+  - facebook
+  - page
+  source: clawhub-community
+  clawhub_slug: facebook-page-manager
+  clawhub_path: longmaba/facebook-page-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill to manage a facebook page
+
+    # Source: ClawHub community skill by longmaba
+
+    # Install: clawhub install facebook-page-manager
+
+    # Path: longmaba/facebook-page-manager
+
+
+    ## Description
+
+    Manage Facebook Pages via Meta Graph API. Post content (text, photos, links), list posts, manage comments (list/reply/hide/delete).
+    Use when user wants to publish to Facebook Page, check Page posts, or handle comments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - env_example.md
+
+    - references/graph-api.md
+
+    - scripts/auth.js
+
+    - scripts/cli.js
+
+    - scripts/fb_post.js
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+    - scripts/x_digest_collect.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install facebook-page-manager
+
+    ```'
+examples:
+- description: Install Skill to manage a facebook page from ClawHub
+  usage: clawhub install facebook-page-manager
+schema_version: '1.0'

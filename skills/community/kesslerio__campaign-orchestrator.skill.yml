@@ -1,0 +1,68 @@
+name: campaign-orchestrator
+title: Campaign Orchestrator
+version: 1.0.0
+description: Multi-channel follow-up campaign orchestrator for ShapeScale sales. Schedules and executes SMS + Email sequences
+  with CRM logging and auto-termination on replies. Use when following up with demo leads or managing outreach campaigns.
+metadata:
+  author: kesslerio
+  category: Communication
+  tags:
+  - communication
+  - campaign
+  - orchestrator
+  source: clawhub-community
+  clawhub_slug: campaign-orchestrator
+  clawhub_path: kesslerio/campaign-orchestrator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Campaign Orchestrator
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install campaign-orchestrator
+
+    # Path: kesslerio/campaign-orchestrator
+
+
+    ## Description
+
+    Multi-channel follow-up campaign orchestrator for ShapeScale sales. Schedules and executes SMS + Email sequences with
+    CRM logging and auto-termination on replies. Use when following up with demo leads or managing outreach campaigns.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - campaign.py
+
+    - post-demo.md
+
+    - primary.md
+
+    - re-engagement.md
+
+    - secondary.md
+
+    - webhook_handler.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install campaign-orchestrator
+
+    ```'
+examples:
+- description: Install Campaign Orchestrator from ClawHub
+  usage: clawhub install campaign-orchestrator
+schema_version: '1.0'

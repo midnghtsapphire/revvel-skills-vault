@@ -1,0 +1,56 @@
+name: dns-checker
+title: DNS Checker
+version: 1.1.0
+description: Perform DNS lookups, check record types, and verify propagation across DNS servers.
+metadata:
+  author: sa9saq
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - dns
+  - checker
+  source: clawhub-community
+  clawhub_slug: dns-checker
+  clawhub_path: sa9saq/dns-checker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DNS Checker
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install dns-checker
+
+    # Path: sa9saq/dns-checker
+
+
+    ## Description
+
+    Perform DNS lookups, check record types, and verify propagation across DNS servers.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dns-checker
+
+    ```'
+examples:
+- description: Install DNS Checker from ClawHub
+  usage: clawhub install dns-checker
+schema_version: '1.0'

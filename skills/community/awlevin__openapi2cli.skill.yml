@@ -1,0 +1,53 @@
+name: openapi2cli
+title: OpenAPI to CLI
+version: 1.0.0
+description: Generate CLI tools from OpenAPI specs. Built for AI agents who hate writing curl commands.
+metadata:
+  author: awlevin
+  category: Development & Coding
+  tags:
+  - development-coding
+  - openapi2cli
+  source: clawhub-community
+  clawhub_slug: openapi2cli
+  clawhub_path: awlevin/openapi2cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenAPI to CLI
+
+    # Source: ClawHub community skill by awlevin
+
+    # Install: clawhub install openapi2cli
+
+    # Path: awlevin/openapi2cli
+
+
+    ## Description
+
+    Generate CLI tools from OpenAPI specs. Built for AI agents who hate writing curl commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openapi2cli
+
+    ```'
+examples:
+- description: Install OpenAPI to CLI from ClawHub
+  usage: clawhub install openapi2cli
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: url2pdf
+title: URL to PDF
+version: 0.0.2
+description: Convert URL to PDF suitable for mobile reading.
+metadata:
+  author: guoqiao
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - url2pdf
+  source: clawhub-community
+  clawhub_slug: url2pdf
+  clawhub_path: guoqiao/url2pdf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# URL to PDF
+
+    # Source: ClawHub community skill by guoqiao
+
+    # Install: clawhub install url2pdf
+
+    # Path: guoqiao/url2pdf
+
+
+    ## Description
+
+    Convert URL to PDF suitable for mobile reading.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - url2pdf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install url2pdf
+
+    ```'
+examples:
+- description: Install URL to PDF from ClawHub
+  usage: clawhub install url2pdf
+schema_version: '1.0'

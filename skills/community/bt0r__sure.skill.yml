@@ -1,0 +1,53 @@
+name: sure
+title: Sure
+version: 1.0.0
+description: Get report from Sure personal financial board
+metadata:
+  author: bt0r
+  category: General
+  tags:
+  - general
+  - sure
+  source: clawhub-community
+  clawhub_slug: sure
+  clawhub_path: bt0r/sure
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sure
+
+    # Source: ClawHub community skill by bt0r
+
+    # Install: clawhub install sure
+
+    # Path: bt0r/sure
+
+
+    ## Description
+
+    Get report from Sure personal financial board
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sure
+
+    ```'
+examples:
+- description: Install Sure from ClawHub
+  usage: clawhub install sure
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: skill-reviewer
+title: Skill Reviewer
+version: 1.0.0
+description: Review and audit agent skills (SKILL.md files) for quality, correctness, and effectiveness. Use when evaluating
+  a skill before publishing, reviewing someone else's skill, scoring skill quality, identifying defects in skill content,
+  or improving an existing skill.
+metadata:
+  author: gitgoodordietrying
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - skill
+  - reviewer
+  source: clawhub-community
+  clawhub_slug: skill-reviewer
+  clawhub_path: gitgoodordietrying/skill-reviewer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Reviewer
+
+    # Source: ClawHub community skill by gitgoodordietrying
+
+    # Install: clawhub install skill-reviewer
+
+    # Path: gitgoodordietrying/skill-reviewer
+
+
+    ## Description
+
+    Review and audit agent skills (SKILL.md files) for quality, correctness, and effectiveness. Use when evaluating a skill
+    before publishing, reviewing someone else''s skill, scoring skill quality, identifying defects in skill content, or improving
+    an existing skill.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-reviewer
+
+    ```'
+examples:
+- description: Install Skill Reviewer from ClawHub
+  usage: clawhub install skill-reviewer
+schema_version: '1.0'

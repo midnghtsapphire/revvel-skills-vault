@@ -1,0 +1,64 @@
+name: memory-lite
+title: Memory Lite
+version: 0.1.0
+description: Lightweight memory management for OpenClaw without embeddings or vector search. Use to append notes to memory/YYYY-MM-DD.md
+  and MEMORY.md, do simple keyword search (grep) across memory files, and generate quick local summaries of recent memory.
+  Safe, local-only, no config changes.
+metadata:
+  author: vellis59
+  category: Search & Research
+  tags:
+  - search-research
+  - memory
+  - lite
+  source: clawhub-community
+  clawhub_slug: memory-lite
+  clawhub_path: vellis59/memory-lite
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Lite
+
+    # Source: ClawHub community skill by vellis59
+
+    # Install: clawhub install memory-lite
+
+    # Path: vellis59/memory-lite
+
+
+    ## Description
+
+    Lightweight memory management for OpenClaw without embeddings or vector search. Use to append notes to memory/YYYY-MM-DD.md
+    and MEMORY.md, do simple keyword search (grep) across memory files, and generate quick local summaries of recent memory.
+    Safe, local-only, no config changes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/memory_add.py
+
+    - scripts/memory_grep.sh
+
+    - scripts/memory_summarize.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-lite
+
+    ```'
+examples:
+- description: Install Memory Lite from ClawHub
+  usage: clawhub install memory-lite
+schema_version: '1.0'

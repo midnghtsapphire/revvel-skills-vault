@@ -1,0 +1,57 @@
+name: _______
+title: dsp
+version: 1.0.1
+description: 当用户需要输出短视频文案时调用此技能
+metadata:
+  author: zealiao
+  category: General
+  tags:
+  - general
+  - 短视频文案输出
+  source: clawhub-community
+  clawhub_slug: dsp
+  clawhub_path: zealiao/dsp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# dsp
+
+    # Source: ClawHub community skill by zealiao
+
+    # Install: clawhub install dsp
+
+    # Path: zealiao/dsp
+
+
+    ## Description
+
+    当用户需要输出短视频文案时调用此技能
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - 柴山福产品详情.md
+
+    - .space/def.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dsp
+
+    ```'
+examples:
+- description: Install dsp from ClawHub
+  usage: clawhub install dsp
+schema_version: '1.0'

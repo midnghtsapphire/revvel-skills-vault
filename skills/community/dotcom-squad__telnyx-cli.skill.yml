@@ -1,0 +1,63 @@
+name: telnyx-cli
+title: Telnyx Cli
+version: 1.0.0
+description: Telnyx API integration via CLI. Send SMS/MMS/WhatsApp messages, manage phone numbers, query call logs, debug
+  webhooks, and access your Telnyx account. Use when interacting with Telnyx APIs, managing messaging, or accessing account
+  data.
+metadata:
+  author: dotcom-squad
+  category: Communication
+  tags:
+  - communication
+  - telnyx
+  - cli
+  source: clawhub-community
+  clawhub_slug: telnyx-cli
+  clawhub_path: dotcom-squad/telnyx-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telnyx Cli
+
+    # Source: ClawHub community skill by dotcom-squad
+
+    # Install: clawhub install telnyx-cli
+
+    # Path: dotcom-squad/telnyx-cli
+
+
+    ## Description
+
+    Telnyx API integration via CLI. Send SMS/MMS/WhatsApp messages, manage phone numbers, query call logs, debug webhooks,
+    and access your Telnyx account. Use when interacting with Telnyx APIs, managing messaging, or accessing account data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - setup.sh
+
+    - test.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telnyx-cli
+
+    ```'
+examples:
+- description: Install Telnyx Cli from ClawHub
+  usage: clawhub install telnyx-cli
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: oebb-scotty
+title: Scotty - AT Public Transport Service (ÖBB)
+version: 1.0.0
+description: Austrian rail travel planner (ÖBB Scotty). Use when planning train journeys in Austria, checking departures/arrivals
+  at stations, or looking for service disruptions. Covers ÖBB trains, S-Bahn, regional trains, and connections to neighboring
+  countries.
+metadata:
+  author: manmal
+  category: General
+  tags:
+  - general
+  - oebb
+  - scotty
+  source: clawhub-community
+  clawhub_slug: oebb-scotty
+  clawhub_path: manmal/oebb-scotty
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Scotty - AT Public Transport Service (ÖBB)
+
+    # Source: ClawHub community skill by manmal
+
+    # Install: clawhub install oebb-scotty
+
+    # Path: manmal/oebb-scotty
+
+
+    ## Description
+
+    Austrian rail travel planner (ÖBB Scotty). Use when planning train journeys in Austria, checking departures/arrivals at
+    stations, or looking for service disruptions. Covers ÖBB trains, S-Bahn, regional trains, and connections to neighboring
+    countries.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - arrivals.sh
+
+    - departures.sh
+
+    - disruptions.sh
+
+    - search-station.sh
+
+    - trip.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install oebb-scotty
+
+    ```'
+examples:
+- description: Install Scotty - AT Public Transport Service (ÖBB) from ClawHub
+  usage: clawhub install oebb-scotty
+schema_version: '1.0'

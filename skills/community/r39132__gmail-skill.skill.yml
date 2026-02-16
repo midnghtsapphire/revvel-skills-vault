@@ -1,0 +1,70 @@
+name: gmail-skill
+title: Gmail Skill
+version: 1.2.0
+description: '"Gmail automation: summarize, labels, spam purge, filing, deletion, permanent delete"'
+metadata:
+  author: r39132
+  category: Communication
+  tags:
+  - communication
+  - gmail
+  - skill
+  source: clawhub-community
+  clawhub_slug: gmail-skill
+  clawhub_path: r39132/gmail-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gmail Skill
+
+    # Source: ClawHub community skill by r39132
+
+    # Install: clawhub install gmail-skill
+
+    # Path: r39132/gmail-skill
+
+
+    ## Description
+
+    "Gmail automation: summarize, labels, spam purge, filing, deletion, permanent delete"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bins/gmail-auth-full-scope.sh
+
+    - bins/gmail-background-task.sh
+
+    - bins/gmail-bg-status.sh
+
+    - bins/gmail-cleanup.sh
+
+    - bins/gmail-daily-digest.sh
+
+    - bins/gmail-delete-labels.sh
+
+    - bins/gmail-delete-old-messages.sh
+
+    - bins/gmail-labels.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gmail-skill
+
+    ```'
+examples:
+- description: Install Gmail Skill from ClawHub
+  usage: clawhub install gmail-skill
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: alicloud-compute-fc-serverless-devs
+title: Alicloud Compute Fc Serverless Devs
+version: 1.0.2
+description: Alibaba Cloud Function Compute (FC 3.0) skill for installing and using Serverless Devs to create, deploy, invoke,
+  and remove a Python function. Use when users need CLI-based FC quick start or Serverless Devs setup guidance.
+metadata:
+  author: cinience
+  category: Development & Coding
+  tags:
+  - development-coding
+  - alicloud
+  - compute
+  - serverless
+  - devs
+  source: clawhub-community
+  clawhub_slug: alicloud-compute-fc-serverless-devs
+  clawhub_path: cinience/alicloud-compute-fc-serverless-devs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Compute Fc Serverless Devs
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-compute-fc-serverless-devs
+
+    # Path: cinience/alicloud-compute-fc-serverless-devs
+
+
+    ## Description
+
+    Alibaba Cloud Function Compute (FC 3.0) skill for installing and using Serverless Devs to create, deploy, invoke, and
+    remove a Python function. Use when users need CLI-based FC quick start or Serverless Devs setup guidance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/install_serverless_devs_and_docker.md
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-compute-fc-serverless-devs
+
+    ```'
+examples:
+- description: Install Alicloud Compute Fc Serverless Devs from ClawHub
+  usage: clawhub install alicloud-compute-fc-serverless-devs
+schema_version: '1.0'

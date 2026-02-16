@@ -1,0 +1,61 @@
+name: xiaohongshu-extract
+title: xiaohongshu-extract
+version: 1.0.0
+description: Extract metadata from Xiaohongshu (XHS) share or discovery URLs by parsing window.__INITIAL_STATE__ and returning
+  note details. Use when asked to fetch XHS page content, note metadata, video info, or engagement stats from a public XHS
+  link.
+metadata:
+  author: jovijovi
+  category: Media & Content
+  tags:
+  - media-content
+  - xiaohongshu
+  - extract
+  source: clawhub-community
+  clawhub_slug: xiaohongshu-extract
+  clawhub_path: jovijovi/xiaohongshu-extract
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# xiaohongshu-extract
+
+    # Source: ClawHub community skill by jovijovi
+
+    # Install: clawhub install xiaohongshu-extract
+
+    # Path: jovijovi/xiaohongshu-extract
+
+
+    ## Description
+
+    Extract metadata from Xiaohongshu (XHS) share or discovery URLs by parsing window.__INITIAL_STATE__ and returning note
+    details. Use when asked to fetch XHS page content, note metadata, video info, or engagement stats from a public XHS link.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - scripts/xiaohongshu_extract.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xiaohongshu-extract
+
+    ```'
+examples:
+- description: Install xiaohongshu-extract from ClawHub
+  usage: clawhub install xiaohongshu-extract
+schema_version: '1.0'

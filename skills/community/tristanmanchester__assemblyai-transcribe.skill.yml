@@ -1,0 +1,56 @@
+name: assemblyai-transcribe
+title: AssemblyAI advanced speech transcription
+version: 1.0.0
+description: Transcribe audio/video with AssemblyAI (local upload or URL), plus subtitles + paragraph/sentence exports.
+metadata:
+  author: tristanmanchester
+  category: Media & Content
+  tags:
+  - media-content
+  - assemblyai
+  - transcribe
+  source: clawhub-community
+  clawhub_slug: assemblyai-transcribe
+  clawhub_path: tristanmanchester/assemblyai-transcribe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AssemblyAI advanced speech transcription
+
+    # Source: ClawHub community skill by tristanmanchester
+
+    # Install: clawhub install assemblyai-transcribe
+
+    # Path: tristanmanchester/assemblyai-transcribe
+
+
+    ## Description
+
+    Transcribe audio/video with AssemblyAI (local upload or URL), plus subtitles + paragraph/sentence exports.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assemblyai.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install assemblyai-transcribe
+
+    ```'
+examples:
+- description: Install AssemblyAI advanced speech transcription from ClawHub
+  usage: clawhub install assemblyai-transcribe
+schema_version: '1.0'

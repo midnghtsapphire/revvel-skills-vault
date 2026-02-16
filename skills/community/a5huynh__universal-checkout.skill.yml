@@ -1,0 +1,62 @@
+name: zinc-orders
+title: Zinc Universal Checkout
+version: 1.0.1
+description: Place, list, and retrieve orders via the Zinc API (zinc.com). Use when the user wants to buy a product from an
+  online retailer, check order status, list recent orders, or anything involving the Zinc e-commerce ordering API. Requires
+  ZINC_API_KEY environment variable.
+metadata:
+  author: a5huynh
+  category: Development & Coding
+  tags:
+  - development-coding
+  - zinc
+  - orders
+  source: clawhub-community
+  clawhub_slug: universal-checkout
+  clawhub_path: a5huynh/universal-checkout
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zinc Universal Checkout
+
+    # Source: ClawHub community skill by a5huynh
+
+    # Install: clawhub install universal-checkout
+
+    # Path: a5huynh/universal-checkout
+
+
+    ## Description
+
+    Place, list, and retrieve orders via the Zinc API (zinc.com). Use when the user wants to buy a product from an online
+    retailer, check order status, list recent orders, or anything involving the Zinc e-commerce ordering API. Requires ZINC_API_KEY
+    environment variable.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/errors.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install universal-checkout
+
+    ```'
+examples:
+- description: Install Zinc Universal Checkout from ClawHub
+  usage: clawhub install universal-checkout
+schema_version: '1.0'

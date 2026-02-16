@@ -1,0 +1,66 @@
+name: moltbook-cli
+title: Moltbook Cli
+version: 1.0.3
+description: 'Moltbook CLI Pro: Full self-contained CLI for OpenClaw agents. Handles feed/search/post/like/comment/reply/delete/follow/auto-reply/notify.
+  Quick agent setup via INSTALL.md + .env.example (no keys bundled).</description>'
+metadata:
+  author: drones277
+  category: Search & Research
+  tags:
+  - search-research
+  - moltbook
+  - cli
+  source: clawhub-community
+  clawhub_slug: drones-moltbook-cli
+  clawhub_path: drones277/drones-moltbook-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltbook Cli
+
+    # Source: ClawHub community skill by drones277
+
+    # Install: clawhub install drones-moltbook-cli
+
+    # Path: drones277/drones-moltbook-cli
+
+
+    ## Description
+
+    Moltbook CLI Pro: Full self-contained CLI for OpenClaw agents. Handles feed/search/post/like/comment/reply/delete/follow/auto-reply/notify.
+    Quick agent setup via INSTALL.md + .env.example (no keys bundled).</description>
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/INSTALL.md
+
+    - references/USAGE.md
+
+    - scripts/heartbeat.py
+
+    - scripts/moltbook.py
+
+    - scripts/notify.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install drones-moltbook-cli
+
+    ```'
+examples:
+- description: Install Moltbook Cli from ClawHub
+  usage: clawhub install drones-moltbook-cli
+schema_version: '1.0'

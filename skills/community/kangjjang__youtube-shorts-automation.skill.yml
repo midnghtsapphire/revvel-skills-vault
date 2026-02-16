@@ -1,0 +1,67 @@
+name: youtube-shorts-automation
+title: YouTube Shorts Automation
+version: 1.0.0
+description: YouTube Shorts 자동 생성 및 업로드 파이프라인. Deevid AI Agent로 이미지→영상(BGM+음성 포함) 생성 후 YouTube에 업로드. 크론잡으로 매일 자동 실행 가능. Use
+  when generating short-form vertical videos, creating AI-generated video content, uploading to YouTube Shorts, or automating
+  daily video content pipelines.
+metadata:
+  author: kangjjang
+  category: Media & Content
+  tags:
+  - media-content
+  - youtube
+  - shorts
+  - automation
+  source: clawhub-community
+  clawhub_slug: youtube-shorts-automation
+  clawhub_path: kangjjang/youtube-shorts-automation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube Shorts Automation
+
+    # Source: ClawHub community skill by kangjjang
+
+    # Install: clawhub install youtube-shorts-automation
+
+    # Path: kangjjang/youtube-shorts-automation
+
+
+    ## Description
+
+    YouTube Shorts 자동 생성 및 업로드 파이프라인. Deevid AI Agent로 이미지→영상(BGM+음성 포함) 생성 후 YouTube에 업로드. 크론잡으로 매일 자동 실행 가능. Use when generating
+    short-form vertical videos, creating AI-generated video content, uploading to YouTube Shorts, or automating daily video
+    content pipelines.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/config_example.json
+
+    - references/deevid-agent-workflow.md
+
+    - references/youtube-upload.md
+
+    - scripts/youtube_upload.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-shorts-automation
+
+    ```'
+examples:
+- description: Install YouTube Shorts Automation from ClawHub
+  usage: clawhub install youtube-shorts-automation
+schema_version: '1.0'

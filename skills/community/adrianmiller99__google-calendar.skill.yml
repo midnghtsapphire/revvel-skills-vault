@@ -1,0 +1,62 @@
+name: google-calendar
+title: Google Calendar
+version: 0.1.0
+description: Interact with Google Calendar via the Google Calendar API – list upcoming events, create new events, update or
+  delete them. Use this skill when you need programmatic access to your calendar from OpenClaw.
+metadata:
+  author: adrianmiller99
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - calendar
+  source: clawhub-community
+  clawhub_slug: google-calendar
+  clawhub_path: adrianmiller99/google-calendar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Calendar
+
+    # Source: ClawHub community skill by adrianmiller99
+
+    # Install: clawhub install google-calendar
+
+    # Path: adrianmiller99/google-calendar
+
+
+    ## Description
+
+    Interact with Google Calendar via the Google Calendar API – list upcoming events, create new events, update or delete
+    them. Use this skill when you need programmatic access to your calendar from OpenClaw.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/google_calendar.py
+
+    - scripts/refresh_token.py
+
+    - scripts/venv/pyvenv.cfg
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-calendar
+
+    ```'
+examples:
+- description: Install Google Calendar from ClawHub
+  usage: clawhub install google-calendar
+schema_version: '1.0'

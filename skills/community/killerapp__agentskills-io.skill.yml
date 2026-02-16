@@ -1,0 +1,71 @@
+name: agentskills-io
+title: agentskills-io
+version: 2.5.0
+description: Create, validate, and publish Agent Skills following the official open standard from agentskills.io. Use when
+  (1) creating new skills for AI agents, (2) validating skill structure and metadata, (3) understanding the Agent Skills specification,
+  (4) converting existing documentation into portable skil
+metadata:
+  author: killerapp
+  category: Development & Coding
+  tags:
+  - development-coding
+  - agentskills
+  source: clawhub-community
+  clawhub_slug: agentskills-io
+  clawhub_path: killerapp/agentskills-io
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# agentskills-io
+
+    # Source: ClawHub community skill by killerapp
+
+    # Install: clawhub install agentskills-io
+
+    # Path: killerapp/agentskills-io
+
+
+    ## Description
+
+    Create, validate, and publish Agent Skills following the official open standard from agentskills.io. Use when (1) creating
+    new skills for AI agents, (2) validating skill structure and metadata, (3) understanding the Agent Skills specification,
+    (4) converting existing documentation into portable skil
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/skill-template.md
+
+    - references/best-practices.md
+
+    - references/examples.md
+
+    - references/specification.md
+
+    - references/validation.md
+
+    - scripts/bump-changed-plugins.sh
+
+    - scripts/validate-skills-repo.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentskills-io
+
+    ```'
+examples:
+- description: Install agentskills-io from ClawHub
+  usage: clawhub install agentskills-io
+schema_version: '1.0'

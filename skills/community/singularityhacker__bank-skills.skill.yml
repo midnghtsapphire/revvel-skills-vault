@@ -1,0 +1,58 @@
+name: bank-skill
+title: Bank Skills
+version: 1.0.0
+description: Check balances, send money, and share receive details via Wise
+metadata:
+  author: singularityhacker
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - bank
+  - skill
+  source: clawhub-community
+  clawhub_slug: bank-skills
+  clawhub_path: singularityhacker/bank-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bank Skills
+
+    # Source: ClawHub community skill by singularityhacker
+
+    # Install: clawhub install bank-skills
+
+    # Path: singularityhacker/bank-skills
+
+
+    ## Description
+
+    Check balances, send money, and share receive details via Wise
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bank-skills
+
+    ```'
+examples:
+- description: Install Bank Skills from ClawHub
+  usage: clawhub install bank-skills
+schema_version: '1.0'

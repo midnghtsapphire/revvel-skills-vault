@@ -1,0 +1,59 @@
+name: vlmrun-cli-skill
+title: Vlmrun Cli Skill
+version: 0.1.1
+description: '"Use the VLM Run CLI (`vlmrun`) to interact with Orion visual AI agent. Process images, videos, and documents
+  with natural language. Triggers: image understanding/generation, object detection, OCR, video summarization, document extraction,
+  image generation, visual AI chat, ''generate an image/video'','
+metadata:
+  author: spillai
+  category: Media & Content
+  tags:
+  - media-content
+  - vlmrun
+  - cli
+  - skill
+  source: clawhub-community
+  clawhub_slug: vlmrun-cli-skill
+  clawhub_path: spillai/vlmrun-cli-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vlmrun Cli Skill
+
+    # Source: ClawHub community skill by spillai
+
+    # Install: clawhub install vlmrun-cli-skill
+
+    # Path: spillai/vlmrun-cli-skill
+
+
+    ## Description
+
+    "Use the VLM Run CLI (`vlmrun`) to interact with Orion visual AI agent. Process images, videos, and documents with natural
+    language. Triggers: image understanding/generation, object detection, OCR, video summarization, document extraction, image
+    generation, visual AI chat, ''generate an image/video'',
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vlmrun-cli-skill
+
+    ```'
+examples:
+- description: Install Vlmrun Cli Skill from ClawHub
+  usage: clawhub install vlmrun-cli-skill
+schema_version: '1.0'

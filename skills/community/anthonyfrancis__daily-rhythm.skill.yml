@@ -1,0 +1,70 @@
+name: daily-rhythm
+title: Daily Rhythm
+version: 1.0.0
+description: Automated daily planning and reflection system with morning briefs, wind-down prompts, sleep nudges, and weekly
+  reviews. Use when the user wants to set up a structured daily routine, morning briefings, evening reflection prompts, or
+  weekly planning sessions. Triggers include requests for daily sched
+metadata:
+  author: anthonyfrancis
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - daily
+  - rhythm
+  source: clawhub-community
+  clawhub_slug: daily-rhythm
+  clawhub_path: anthonyfrancis/daily-rhythm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Rhythm
+
+    # Source: ClawHub community skill by anthonyfrancis
+
+    # Install: clawhub install daily-rhythm
+
+    # Path: anthonyfrancis/daily-rhythm
+
+
+    ## Description
+
+    Automated daily planning and reflection system with morning briefs, wind-down prompts, sleep nudges, and weekly reviews.
+    Use when the user wants to set up a structured daily routine, morning briefings, evening reflection prompts, or weekly
+    planning sessions. Triggers include requests for daily sched
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/HEARTBEAT_TEMPLATE.md
+
+    - references/CONFIGURATION.md
+
+    - scripts/morning-brief.sh
+
+    - scripts/sync-google-tasks.py
+
+    - scripts/sync-stripe-arr.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-rhythm
+
+    ```'
+examples:
+- description: Install Daily Rhythm from ClawHub
+  usage: clawhub install daily-rhythm
+schema_version: '1.0'

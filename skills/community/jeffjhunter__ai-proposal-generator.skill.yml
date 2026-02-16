@@ -1,0 +1,74 @@
+name: ai-proposal-generator
+title: AI Proposal Generator
+version: 1.0.0
+description: Generate professional HTML proposals from meeting notes. Features 5 proposal styles (Corporate, Entrepreneur,
+  Creative, Consultant, Minimal), 6+ color themes, and a Design Wizard for custom templates. Triggers on "create proposal",
+  "proposal for [client]", "proposal wizard", "proposal from [notes]",
+metadata:
+  author: jeffjhunter
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - proposal
+  - generator
+  source: clawhub-community
+  clawhub_slug: ai-proposal-generator
+  clawhub_path: jeffjhunter/ai-proposal-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI Proposal Generator
+
+    # Source: ClawHub community skill by jeffjhunter
+
+    # Install: clawhub install ai-proposal-generator
+
+    # Path: jeffjhunter/ai-proposal-generator
+
+
+    ## Description
+
+    Generate professional HTML proposals from meeting notes. Features 5 proposal styles (Corporate, Entrepreneur, Creative,
+    Consultant, Minimal), 6+ color themes, and a Design Wizard for custom templates. Triggers on "create proposal", "proposal
+    for [client]", "proposal wizard", "proposal from [notes]",
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/SERVICES-template.md
+
+    - assets/proposal-template.html
+
+    - examples/corporate-trust-navy.html
+
+    - examples/entrepreneur-ember-orange.html
+
+    - examples/minimal-slate-dark.html
+
+    - templates/consultant.md
+
+    - templates/corporate.md
+
+    - templates/creative.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-proposal-generator
+
+    ```'
+examples:
+- description: Install AI Proposal Generator from ClawHub
+  usage: clawhub install ai-proposal-generator
+schema_version: '1.0'

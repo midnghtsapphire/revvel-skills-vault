@@ -1,0 +1,60 @@
+name: _skill_builder_
+title: Skill Builder
+version: 1.0.1
+description: '"Build high-quality skills with optimal structure. For local use or publishing to ClawHub."'
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - '"skill'
+  - builder"
+  source: clawhub-community
+  clawhub_slug: skill-builder
+  clawhub_path: ivangdavila/skill-builder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Builder
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install skill-builder
+
+    # Path: ivangdavila/skill-builder
+
+
+    ## Description
+
+    "Build high-quality skills with optimal structure. For local use or publishing to ClawHub."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - checklist.md
+
+    - patterns.md
+
+    - structure.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-builder
+
+    ```'
+examples:
+- description: Install Skill Builder from ClawHub
+  usage: clawhub install skill-builder
+schema_version: '1.0'

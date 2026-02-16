@@ -1,0 +1,64 @@
+name: cloudflare-manager
+title: Cloudflare Manager
+version: 1.0.2
+description: Manage Cloudflare DNS records, Tunnels (cloudflared), and Zero Trust policies. Use when user wants to "point
+  domain", "expose localhost", or "block IP".
+metadata:
+  author: 1999azzar
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - cloudflare
+  - manager
+  source: clawhub-community
+  clawhub_slug: cloudflare-manager
+  clawhub_path: 1999azzar/cloudflare-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cloudflare Manager
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install cloudflare-manager
+
+    # Path: 1999azzar/cloudflare-manager
+
+
+    ## Description
+
+    Manage Cloudflare DNS records, Tunnels (cloudflared), and Zero Trust policies. Use when user wants to "point domain",
+    "expose localhost", or "block IP".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/tunnel-guide.md
+
+    - scripts/cf_manager.py
+
+    - scripts/install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cloudflare-manager
+
+    ```'
+examples:
+- description: Install Cloudflare Manager from ClawHub
+  usage: clawhub install cloudflare-manager
+schema_version: '1.0'

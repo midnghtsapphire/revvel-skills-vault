@@ -1,0 +1,60 @@
+name: agent-docs
+title: Agent Docs
+version: 1.0.0
+description: Create documentation optimized for AI agent consumption. Use when writing SKILL.md files, README files, API docs,
+  or any documentation that will be read by LLMs in context windows. Helps structure content for RAG retrieval, token efficiency,
+  and the Hybrid Context Hierarchy.
+metadata:
+  author: tylervovan
+  category: Development & Coding
+  tags:
+  - development-coding
+  - agent
+  - docs
+  source: clawhub-community
+  clawhub_slug: agent-docs
+  clawhub_path: tylervovan/agent-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Docs
+
+    # Source: ClawHub community skill by tylervovan
+
+    # Install: clawhub install agent-docs
+
+    # Path: tylervovan/agent-docs
+
+
+    ## Description
+
+    Create documentation optimized for AI agent consumption. Use when writing SKILL.md files, README files, API docs, or any
+    documentation that will be read by LLMs in context windows. Helps structure content for RAG retrieval, token efficiency,
+    and the Hybrid Context Hierarchy.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/advanced-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-docs
+
+    ```'
+examples:
+- description: Install Agent Docs from ClawHub
+  usage: clawhub install agent-docs
+schema_version: '1.0'

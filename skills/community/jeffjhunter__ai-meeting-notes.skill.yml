@@ -1,0 +1,66 @@
+name: ai-meeting-notes
+title: AI Meeting Notes w/ Action Items + To-Do List Tracker
+version: 1.0.3
+description: '"Messy notes → Clear action items. Instantly. Paste any meeting notes, transcript, or text. Get summaries, action
+  items with owners and deadlines. Auto-saved, searchable, with integrated to-do tracking. No bot. No subscription. No setup."'
+metadata:
+  author: jeffjhunter
+  category: Search & Research
+  tags:
+  - search-research
+  - meeting
+  - notes
+  source: clawhub-community
+  clawhub_slug: ai-meeting-notes
+  clawhub_path: jeffjhunter/ai-meeting-notes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI Meeting Notes w/ Action Items + To-Do List Tracker
+
+    # Source: ClawHub community skill by jeffjhunter
+
+    # Install: clawhub install ai-meeting-notes
+
+    # Path: jeffjhunter/ai-meeting-notes
+
+
+    ## Description
+
+    "Messy notes → Clear action items. Instantly. Paste any meeting notes, transcript, or text. Get summaries, action items
+    with owners and deadlines. Auto-saved, searchable, with integrated to-do tracking. No bot. No subscription. No setup."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/PREFERENCES-template.md
+
+    - assets/TODO-template.md
+
+    - examples/input-messy-notes.md
+
+    - examples/input-transcript.md
+
+    - examples/output-example.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-meeting-notes
+
+    ```'
+examples:
+- description: Install AI Meeting Notes w/ Action Items + To-Do List Tracker from ClawHub
+  usage: clawhub install ai-meeting-notes
+schema_version: '1.0'

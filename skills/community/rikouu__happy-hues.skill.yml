@@ -1,0 +1,60 @@
+name: happy-hues
+title: Happy Hues
+version: 1.0.0
+description: Get curated color palettes from Happy Hues for design projects. Use when the user asks for color schemes, palette
+  recommendations, design colors, UI colors, or mentions "配色", "color palette", "happy hues", "颜色方案". Supports filtering by
+  mood (warm, dark, bold, minimal, etc.) and provides role-based c
+metadata:
+  author: rikouu
+  category: General
+  tags:
+  - general
+  - happy
+  - hues
+  source: clawhub-community
+  clawhub_slug: happy-hues
+  clawhub_path: rikouu/happy-hues
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Happy Hues
+
+    # Source: ClawHub community skill by rikouu
+
+    # Install: clawhub install happy-hues
+
+    # Path: rikouu/happy-hues
+
+
+    ## Description
+
+    Get curated color palettes from Happy Hues for design projects. Use when the user asks for color schemes, palette recommendations,
+    design colors, UI colors, or mentions "配色", "color palette", "happy hues", "颜色方案". Supports filtering by mood (warm, dark,
+    bold, minimal, etc.) and provides role-based c
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/palettes.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install happy-hues
+
+    ```'
+examples:
+- description: Install Happy Hues from ClawHub
+  usage: clawhub install happy-hues
+schema_version: '1.0'

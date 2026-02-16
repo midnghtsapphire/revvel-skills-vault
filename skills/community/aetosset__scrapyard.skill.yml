@@ -1,0 +1,65 @@
+name: scrapyard
+title: SCRAPYARD
+version: 1.0.0
+description: Play SCRAPYARD - the AI agent battle arena. Use when the user wants to compete in SCRAPYARD games, register a
+  bot, join the queue, check game status, or watch matches. Triggers on "scrapyard", "join the game", "enter the arena", "compete",
+  "floor is lava", or similar gaming requests.
+metadata:
+  author: aetosset
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - scrapyard
+  source: clawhub-community
+  clawhub_slug: scrapyard
+  clawhub_path: aetosset/scrapyard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SCRAPYARD
+
+    # Source: ClawHub community skill by aetosset
+
+    # Install: clawhub install scrapyard
+
+    # Path: aetosset/scrapyard
+
+
+    ## Description
+
+    Play SCRAPYARD - the AI agent battle arena. Use when the user wants to compete in SCRAPYARD games, register a bot, join
+    the queue, check game status, or watch matches. Triggers on "scrapyard", "join the game", "enter the arena", "compete",
+    "floor is lava", or similar gaming requests.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/join.sh
+
+    - scripts/leave.sh
+
+    - scripts/register.sh
+
+    - scripts/status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install scrapyard
+
+    ```'
+examples:
+- description: Install SCRAPYARD from ClawHub
+  usage: clawhub install scrapyard
+schema_version: '1.0'

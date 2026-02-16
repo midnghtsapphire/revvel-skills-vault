@@ -1,0 +1,70 @@
+name: voice-assistant
+title: Voice Assistant
+version: 1.0.4
+description: '>'
+metadata:
+  author: kurtivy
+  category: General
+  tags:
+  - general
+  - voice
+  - assistant
+  source: clawhub-community
+  clawhub_slug: openclaw-voice-assistant
+  clawhub_path: kurtivy/openclaw-voice-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Voice Assistant
+
+    # Source: ClawHub community skill by kurtivy
+
+    # Install: clawhub install openclaw-voice-assistant
+
+    # Path: kurtivy/openclaw-voice-assistant
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/architecture.md
+
+    - references/troubleshooting.md
+
+    - scripts/generate_assets.py
+
+    - scripts/generate_chime_sounds.py
+
+    - scripts/generate_thinking_sounds.py
+
+    - scripts/requirements.txt
+
+    - scripts/src/assistant.py
+
+    - scripts/src/audio_pipeline.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-voice-assistant
+
+    ```'
+examples:
+- description: Install Voice Assistant from ClawHub
+  usage: clawhub install openclaw-voice-assistant
+schema_version: '1.0'

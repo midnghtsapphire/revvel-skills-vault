@@ -1,0 +1,55 @@
+name: memorybox
+title: MemoryBox
+version: 2.0.0
+description: Zero-dependency memory maintenance CLI for OpenClaw. Keeps MEMORY.md lean with 3-tier hierarchical organization.
+  Works alongside Mem0, Supermemory, QMD — or standalone. Install once, forget about memory management.
+metadata:
+  author: ramsbaby
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - memorybox
+  source: clawhub-community
+  clawhub_slug: openclaw-memorybox
+  clawhub_path: ramsbaby/openclaw-memorybox
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MemoryBox
+
+    # Source: ClawHub community skill by ramsbaby
+
+    # Install: clawhub install openclaw-memorybox
+
+    # Path: ramsbaby/openclaw-memorybox
+
+
+    ## Description
+
+    Zero-dependency memory maintenance CLI for OpenClaw. Keeps MEMORY.md lean with 3-tier hierarchical organization. Works
+    alongside Mem0, Supermemory, QMD — or standalone. Install once, forget about memory management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-memorybox
+
+    ```'
+examples:
+- description: Install MemoryBox from ClawHub
+  usage: clawhub install openclaw-memorybox
+schema_version: '1.0'

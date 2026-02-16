@@ -1,0 +1,61 @@
+name: glance
+title: Glance
+version: 1.0.0
+description: '"Create, update, and manage Glance dashboard widgets. Use when user wants to: add something to their dashboard,
+  create a widget, track data visually, show metrics/stats, display API data, or monitor usage."'
+metadata:
+  author: acfranzen
+  category: Development & Coding
+  tags:
+  - development-coding
+  - glance
+  source: clawhub-community
+  clawhub_slug: glance
+  clawhub_path: acfranzen/glance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Glance
+
+    # Source: ClawHub community skill by acfranzen
+
+    # Install: clawhub install glance
+
+    # Path: acfranzen/glance
+
+
+    ## Description
+
+    "Create, update, and manage Glance dashboard widgets. Use when user wants to: add something to their dashboard, create
+    a widget, track data visually, show metrics/stats, display API data, or monitor usage."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - dashboard-api.md
+
+    - widget-sdk.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install glance
+
+    ```'
+examples:
+- description: Install Glance from ClawHub
+  usage: clawhub install glance
+schema_version: '1.0'

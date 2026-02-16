@@ -1,0 +1,63 @@
+name: openclaw-email-bypass
+title: Openclaw Email Bypass
+version: 0.1.2
+description: Send emails via Google Apps Script when traditional SMTP ports (25/465/587) are blocked. Secure and self-hosted.
+metadata:
+  author: rishikreddyl
+  category: Search & Research
+  tags:
+  - search-research
+  - openclaw
+  - email
+  - bypass
+  source: clawhub-community
+  clawhub_slug: openclaw-email-bypass
+  clawhub_path: rishikreddyl/openclaw-email-bypass
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Email Bypass
+
+    # Source: ClawHub community skill by rishikreddyl
+
+    # Install: clawhub install openclaw-email-bypass
+
+    # Path: rishikreddyl/openclaw-email-bypass
+
+
+    ## Description
+
+    Send emails via Google Apps Script when traditional SMTP ports (25/465/587) are blocked. Secure and self-hosted.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/examples.md
+
+    - references/setup.md
+
+    - scripts/send_email.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-email-bypass
+
+    ```'
+examples:
+- description: Install Openclaw Email Bypass from ClawHub
+  usage: clawhub install openclaw-email-bypass
+schema_version: '1.0'

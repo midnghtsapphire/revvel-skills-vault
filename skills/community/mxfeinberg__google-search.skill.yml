@@ -1,0 +1,58 @@
+name: google-search
+title: google-search
+version: 1.0.0
+description: Search the web using Google Custom Search Engine (PSE). Use this when you need live information, documentation,
+  or to research topics and the built-in web_search is unavailable.
+metadata:
+  author: mxfeinberg
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - search
+  source: clawhub-community
+  clawhub_slug: google-search
+  clawhub_path: mxfeinberg/google-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# google-search
+
+    # Source: ClawHub community skill by mxfeinberg
+
+    # Install: clawhub install google-search
+
+    # Path: mxfeinberg/google-search
+
+
+    ## Description
+
+    Search the web using Google Custom Search Engine (PSE). Use this when you need live information, documentation, or to
+    research topics and the built-in web_search is unavailable.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-search
+
+    ```'
+examples:
+- description: Install google-search from ClawHub
+  usage: clawhub install google-search
+schema_version: '1.0'

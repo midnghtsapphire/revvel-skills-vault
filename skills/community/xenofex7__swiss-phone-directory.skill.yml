@@ -1,0 +1,63 @@
+name: swiss-phone-directory
+title: Swiss Phone Directory
+version: 1.1.2
+description: '"Swiss phone directory lookup via search.ch API. Search for businesses, people, or reverse-lookup phone numbers.
+  Use when: (1) finding contact details for Swiss companies or people, (2) looking up addresses by name or phone number, (3)
+  reverse phone number lookup, (4) finding business categories. Re'
+metadata:
+  author: xenofex7
+  category: Search & Research
+  tags:
+  - search-research
+  - swiss
+  - phone
+  - directory
+  source: clawhub-community
+  clawhub_slug: swiss-phone-directory
+  clawhub_path: xenofex7/swiss-phone-directory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Swiss Phone Directory
+
+    # Source: ClawHub community skill by xenofex7
+
+    # Install: clawhub install swiss-phone-directory
+
+    # Path: xenofex7/swiss-phone-directory
+
+
+    ## Description
+
+    "Swiss phone directory lookup via search.ch API. Search for businesses, people, or reverse-lookup phone numbers. Use when:
+    (1) finding contact details for Swiss companies or people, (2) looking up addresses by name or phone number, (3) reverse
+    phone number lookup, (4) finding business categories. Re
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - configuration.md
+
+    - searchch.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install swiss-phone-directory
+
+    ```'
+examples:
+- description: Install Swiss Phone Directory from ClawHub
+  usage: clawhub install swiss-phone-directory
+schema_version: '1.0'

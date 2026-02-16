@@ -1,0 +1,53 @@
+name: hedera
+title: Hedera
+version: 1.0.0
+description: Assist with Hedera HBAR transactions, account creation, token service, and consensus features.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - hedera
+  source: clawhub-community
+  clawhub_slug: hedera
+  clawhub_path: ivangdavila/hedera
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hedera
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install hedera
+
+    # Path: ivangdavila/hedera
+
+
+    ## Description
+
+    Assist with Hedera HBAR transactions, account creation, token service, and consensus features.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hedera
+
+    ```'
+examples:
+- description: Install Hedera from ClawHub
+  usage: clawhub install hedera
+schema_version: '1.0'

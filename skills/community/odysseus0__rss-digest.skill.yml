@@ -1,0 +1,58 @@
+name: rss-digest
+title: RSS Digest
+version: 1.2.0
+description: '"Agentic RSS digest using the feed CLI. Fetch, triage, and summarize RSS feeds to surface high-signal posts.
+  Use when: (1) reading RSS feeds or catching up on news, (2) user asks for a digest, roundup, or summary of recent posts,
+  (3) user asks what''s new or interesting today, (4) user mentions feed,'
+metadata:
+  author: odysseus0
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - rss
+  - digest
+  source: clawhub-community
+  clawhub_slug: rss-digest
+  clawhub_path: odysseus0/rss-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RSS Digest
+
+    # Source: ClawHub community skill by odysseus0
+
+    # Install: clawhub install rss-digest
+
+    # Path: odysseus0/rss-digest
+
+
+    ## Description
+
+    "Agentic RSS digest using the feed CLI. Fetch, triage, and summarize RSS feeds to surface high-signal posts. Use when:
+    (1) reading RSS feeds or catching up on news, (2) user asks for a digest, roundup, or summary of recent posts, (3) user
+    asks what''s new or interesting today, (4) user mentions feed,
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rss-digest
+
+    ```'
+examples:
+- description: Install RSS Digest from ClawHub
+  usage: clawhub install rss-digest
+schema_version: '1.0'

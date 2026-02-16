@@ -1,0 +1,53 @@
+name: scholar
+title: Scholar
+version: 1.0.0
+description: Search academic literature with Google Scholar using effective queries, citations, and filters.
+metadata:
+  author: ivangdavila
+  category: Search & Research
+  tags:
+  - search-research
+  - scholar
+  source: clawhub-community
+  clawhub_slug: scholar
+  clawhub_path: ivangdavila/scholar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Scholar
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install scholar
+
+    # Path: ivangdavila/scholar
+
+
+    ## Description
+
+    Search academic literature with Google Scholar using effective queries, citations, and filters.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install scholar
+
+    ```'
+examples:
+- description: Install Scholar from ClawHub
+  usage: clawhub install scholar
+schema_version: '1.0'

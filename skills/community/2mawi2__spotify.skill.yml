@@ -1,0 +1,55 @@
+name: spotify
+title: Spotify
+version: 1.0.0
+description: Control Spotify playback on macOS. Play/pause, skip tracks, control volume, play artists/albums/playlists. Use
+  when a user asks to play music, control Spotify, change songs, or adjust Spotify volume.
+metadata:
+  author: 2mawi2
+  category: Media & Content
+  tags:
+  - media-content
+  - spotify
+  source: clawhub-community
+  clawhub_slug: spotify
+  clawhub_path: 2mawi2/spotify
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Spotify
+
+    # Source: ClawHub community skill by 2mawi2
+
+    # Install: clawhub install spotify
+
+    # Path: 2mawi2/spotify
+
+
+    ## Description
+
+    Control Spotify playback on macOS. Play/pause, skip tracks, control volume, play artists/albums/playlists. Use when a
+    user asks to play music, control Spotify, change songs, or adjust Spotify volume.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install spotify
+
+    ```'
+examples:
+- description: Install Spotify from ClawHub
+  usage: clawhub install spotify
+schema_version: '1.0'

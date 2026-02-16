@@ -1,0 +1,63 @@
+name: manus
+title: Manus Monitor
+version: 1.0.3
+description: Create and manage AI agent tasks via Manus API. Manus is an autonomous AI agent that can browse the web, use
+  tools, and deliver complete work products.
+metadata:
+  author: tallman2014
+  category: Search & Research
+  tags:
+  - search-research
+  - manus
+  source: clawhub-community
+  clawhub_slug: manus-monitor
+  clawhub_path: tallman2014/manus-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Manus Monitor
+
+    # Source: ClawHub community skill by tallman2014
+
+    # Install: clawhub install manus-monitor
+
+    # Path: tallman2014/manus-monitor
+
+
+    ## Description
+
+    Create and manage AI agent tasks via Manus API. Manus is an autonomous AI agent that can browse the web, use tools, and
+    deliver complete work products.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/manus-monitor-start.sh
+
+    - scripts/manus-monitor-stop.sh
+
+    - scripts/manus-monitor.sh
+
+    - scripts/manus.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install manus-monitor
+
+    ```'
+examples:
+- description: Install Manus Monitor from ClawHub
+  usage: clawhub install manus-monitor
+schema_version: '1.0'

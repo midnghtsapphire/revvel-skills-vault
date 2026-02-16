@@ -1,0 +1,57 @@
+name: perry-coding-agents
+title: Perry Coding Agents
+version: 1.5.0
+description: Dispatch coding tasks to OpenCode or Claude Code on Perry workspaces. Use for development work, PR reviews, or
+  any coding task requiring an isolated environment.
+metadata:
+  author: gricha
+  category: Development & Coding
+  tags:
+  - development-coding
+  - perry
+  - coding
+  - agents
+  source: clawhub-community
+  clawhub_slug: perry-coding-agents
+  clawhub_path: gricha/perry-coding-agents
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Perry Coding Agents
+
+    # Source: ClawHub community skill by gricha
+
+    # Install: clawhub install perry-coding-agents
+
+    # Path: gricha/perry-coding-agents
+
+
+    ## Description
+
+    Dispatch coding tasks to OpenCode or Claude Code on Perry workspaces. Use for development work, PR reviews, or any coding
+    task requiring an isolated environment.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install perry-coding-agents
+
+    ```'
+examples:
+- description: Install Perry Coding Agents from ClawHub
+  usage: clawhub install perry-coding-agents
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: masumi-payments
+title: Masumi
+version: 1.0.1
+description: Enable AI agents to accept Cardano blockchain payments through the decentralized Masumi network by deploying
+  their own payment service
+metadata:
+  author: sarthib7
+  category: Development & Coding
+  tags:
+  - development-coding
+  - masumi
+  - payments
+  source: clawhub-community
+  clawhub_slug: masumi
+  clawhub_path: sarthib7/masumi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Masumi
+
+    # Source: ClawHub community skill by sarthib7
+
+    # Install: clawhub install masumi
+
+    # Path: sarthib7/masumi
+
+
+    ## Description
+
+    Enable AI agents to accept Cardano blockchain payments through the decentralized Masumi network by deploying their own
+    payment service
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - plugin.json
+
+    - tsconfig.json
+
+    - src/index.ts
+
+    - src/managers/payment.ts
+
+    - src/managers/registry.ts
+
+    - src/services/auto-provision.ts
+
+    - src/services/payment-service-installer.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install masumi
+
+    ```'
+examples:
+- description: Install Masumi from ClawHub
+  usage: clawhub install masumi
+schema_version: '1.0'

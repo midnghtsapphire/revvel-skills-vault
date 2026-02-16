@@ -1,0 +1,59 @@
+name: canary
+title: Canary
+version: 1.0.0
+description: '>'
+metadata:
+  author: sukiraman
+  category: General
+  tags:
+  - general
+  - canary
+  source: clawhub-community
+  clawhub_slug: canary
+  clawhub_path: sukiraman/canary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Canary
+
+    # Source: ClawHub community skill by sukiraman
+
+    # Install: clawhub install canary
+
+    # Path: sukiraman/canary
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - claude-project/project-instructions.md
+
+    - claude-project/system-prompt.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install canary
+
+    ```'
+examples:
+- description: Install Canary from ClawHub
+  usage: clawhub install canary
+schema_version: '1.0'

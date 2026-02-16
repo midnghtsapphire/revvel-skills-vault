@@ -1,0 +1,70 @@
+name: meal-suggester
+title: Meal Suggester
+version: 1.1.0
+description: Quick dinner companion blending taste profiles, inventory tracking, and learning-based recipe rotation. Use to
+  generate ≤25‑minute meals, log ingredients, and build shopping suggestions that respect both your and your partner’s preferences.
+metadata:
+  author: thibautrey
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - meal
+  - suggester
+  source: clawhub-community
+  clawhub_slug: meal-suggester
+  clawhub_path: thibautrey/meal-suggester
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meal Suggester
+
+    # Source: ClawHub community skill by thibautrey
+
+    # Install: clawhub install meal-suggester
+
+    # Path: thibautrey/meal-suggester
+
+
+    ## Description
+
+    Quick dinner companion blending taste profiles, inventory tracking, and learning-based recipe rotation. Use to generate
+    ≤25‑minute meals, log ingredients, and build shopping suggestions that respect both your and your partner’s preferences.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - inventory/history.md
+
+    - inventory/shopping-list.md
+
+    - inventory/stock.md
+
+    - preferences/user1.md
+
+    - preferences/user2.md
+
+    - scripts/suggest-meal.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meal-suggester
+
+    ```'
+examples:
+- description: Install Meal Suggester from ClawHub
+  usage: clawhub install meal-suggester
+schema_version: '1.0'

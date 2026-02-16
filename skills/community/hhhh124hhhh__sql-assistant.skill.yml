@@ -1,0 +1,64 @@
+name: sql-assistant
+title: Sql Assistant
+version: 1.0.0
+description: Comprehensive SQL query assistant for database operations, optimization, and troubleshooting. Use when Codex
+  needs to write, debug, optimize, or explain SQL queries; analyze database schemas; or help with SQL-related tasks including
+  joins, subqueries, aggregations, and performance tuning. Supports M
+metadata:
+  author: hhhh124hhhh
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sql
+  - assistant
+  source: clawhub-community
+  clawhub_slug: sql-assistant
+  clawhub_path: hhhh124hhhh/sql-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sql Assistant
+
+    # Source: ClawHub community skill by hhhh124hhhh
+
+    # Install: clawhub install sql-assistant
+
+    # Path: hhhh124hhhh/sql-assistant
+
+
+    ## Description
+
+    Comprehensive SQL query assistant for database operations, optimization, and troubleshooting. Use when Codex needs to
+    write, debug, optimize, or explain SQL queries; analyze database schemas; or help with SQL-related tasks including joins,
+    subqueries, aggregations, and performance tuning. Supports M
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/examples.md
+
+    - references/optimization.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sql-assistant
+
+    ```'
+examples:
+- description: Install Sql Assistant from ClawHub
+  usage: clawhub install sql-assistant
+schema_version: '1.0'

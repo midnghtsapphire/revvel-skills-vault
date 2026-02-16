@@ -1,0 +1,64 @@
+name: meegle-mcp
+title: Meegle Mcp
+version: 0.1.1
+description: Interact with Meegle project management system via MCP protocol
+metadata:
+  author: pkycy
+  category: System & OS
+  tags:
+  - system-os
+  - meegle
+  - mcp
+  source: clawhub-community
+  clawhub_slug: meegle-mcp-skill
+  clawhub_path: pkycy/meegle-mcp-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meegle Mcp
+
+    # Source: ClawHub community skill by pkycy
+
+    # Install: clawhub install meegle-mcp-skill
+
+    # Path: pkycy/meegle-mcp-skill
+
+
+    ## Description
+
+    Interact with Meegle project management system via MCP protocol
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - mcp-config.example.json
+
+    - package.json
+
+    - scripts/mcp-proxy.js
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meegle-mcp-skill
+
+    ```'
+examples:
+- description: Install Meegle Mcp from ClawHub
+  usage: clawhub install meegle-mcp-skill
+schema_version: '1.0'

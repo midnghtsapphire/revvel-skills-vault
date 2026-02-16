@@ -1,0 +1,65 @@
+name: image-model-evaluation
+title: image-model-evaluation
+version: 1.0.0
+description: 评估图像生成模型的效果。对指定模型进行全面的文生图、图生图测试，包括不同参数、不同提示词、人物一致性等测试项，生成详细的HTML测试报告。当用户想要测试、评估、对比图像模型效果时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: Media & Content
+  tags:
+  - media-content
+  - image
+  - model
+  - evaluation
+  source: clawhub-community
+  clawhub_slug: image-model-evaluation
+  clawhub_path: hexiaochun/image-model-evaluation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# image-model-evaluation
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install image-model-evaluation
+
+    # Path: hexiaochun/image-model-evaluation
+
+
+    ## Description
+
+    评估图像生成模型的效果。对指定模型进行全面的文生图、图生图测试，包括不同参数、不同提示词、人物一致性等测试项，生成详细的HTML测试报告。当用户想要测试、评估、对比图像模型效果时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/report-template.html
+
+    - references/api-usage.md
+
+    - references/models.md
+
+    - references/quick-test.md
+
+    - references/test-cases.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install image-model-evaluation
+
+    ```'
+examples:
+- description: Install image-model-evaluation from ClawHub
+  usage: clawhub install image-model-evaluation
+schema_version: '1.0'

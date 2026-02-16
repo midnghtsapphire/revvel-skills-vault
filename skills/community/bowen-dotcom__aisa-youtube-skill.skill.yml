@@ -1,0 +1,59 @@
+name: openclaw-youtube
+title: YouTube SERP Scout
+version: 1.0.0
+description: '"YouTube SERP Scout for agents. Search top-ranking videos, channels, and trends for content research and competitor
+  tracking."'
+metadata:
+  author: bowen-dotcom
+  category: Search & Research
+  tags:
+  - search-research
+  - openclaw
+  - youtube
+  source: clawhub-community
+  clawhub_slug: aisa-youtube-skill
+  clawhub_path: bowen-dotcom/aisa-youtube-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube SERP Scout
+
+    # Source: ClawHub community skill by bowen-dotcom
+
+    # Install: clawhub install aisa-youtube-skill
+
+    # Path: bowen-dotcom/aisa-youtube-skill
+
+
+    ## Description
+
+    "YouTube SERP Scout for agents. Search top-ranking videos, channels, and trends for content research and competitor tracking."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/youtube_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aisa-youtube-skill
+
+    ```'
+examples:
+- description: Install YouTube SERP Scout from ClawHub
+  usage: clawhub install aisa-youtube-skill
+schema_version: '1.0'

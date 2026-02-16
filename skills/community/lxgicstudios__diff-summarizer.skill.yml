@@ -1,0 +1,56 @@
+name: diff-summarizer
+title: Diff Summarizer
+version: 1.0.0
+description: Generate human-readable summaries of git diffs. Use when you need to explain what changed.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - diff
+  - summarizer
+  source: clawhub-community
+  clawhub_slug: diff-summarizer
+  clawhub_path: lxgicstudios/diff-summarizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Diff Summarizer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install diff-summarizer
+
+    # Path: lxgicstudios/diff-summarizer
+
+
+    ## Description
+
+    Generate human-readable summaries of git diffs. Use when you need to explain what changed.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install diff-summarizer
+
+    ```'
+examples:
+- description: Install Diff Summarizer from ClawHub
+  usage: clawhub install diff-summarizer
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: brave-search-setup
+title: Brave Search Setup
+version: 1.0.0
+description: Configure Brave Search API and troubleshoot network/proxy issues for web_search functionality. Use when user
+  needs to (1) Set up Brave Search API key, (2) Fix web_search fetch failures, (3) Configure proxy for OpenClaw tools on macOS
+  with Clash/V2Ray/Surge, or (4) Diagnose "fetch failed" errors with
+metadata:
+  author: qingliu1617-art
+  category: Search & Research
+  tags:
+  - search-research
+  - brave
+  - search
+  - setup
+  source: clawhub-community
+  clawhub_slug: brave-search-setup
+  clawhub_path: qingliu1617-art/brave-search-setup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Brave Search Setup
+
+    # Source: ClawHub community skill by qingliu1617-art
+
+    # Install: clawhub install brave-search-setup
+
+    # Path: qingliu1617-art/brave-search-setup
+
+
+    ## Description
+
+    Configure Brave Search API and troubleshoot network/proxy issues for web_search functionality. Use when user needs to
+    (1) Set up Brave Search API key, (2) Fix web_search fetch failures, (3) Configure proxy for OpenClaw tools on macOS with
+    Clash/V2Ray/Surge, or (4) Diagnose "fetch failed" errors with
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/detect-proxy.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brave-search-setup
+
+    ```'
+examples:
+- description: Install Brave Search Setup from ClawHub
+  usage: clawhub install brave-search-setup
+schema_version: '1.0'

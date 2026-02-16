@@ -1,0 +1,57 @@
+name: places
+title: Places
+version: 2.0.0
+description: '"Locate places using flexible query formats - free-form search or structured address components. Returns coordinates,
+  addresses, and optional street-level photos. Use for geocoding addresses or finding specific named places."'
+metadata:
+  author: barneyjm
+  category: Search & Research
+  tags:
+  - search-research
+  - places
+  source: clawhub-community
+  clawhub_slug: places
+  clawhub_path: barneyjm/places
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Places
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install places
+
+    # Path: barneyjm/places
+
+
+    ## Description
+
+    "Locate places using flexible query formats - free-form search or structured address components. Returns coordinates,
+    addresses, and optional street-level photos. Use for geocoding addresses or finding specific named places."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/places.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install places
+
+    ```'
+examples:
+- description: Install Places from ClawHub
+  usage: clawhub install places
+schema_version: '1.0'

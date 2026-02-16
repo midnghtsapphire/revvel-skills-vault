@@ -1,0 +1,66 @@
+name: context-onboarding
+title: Context Onboarding
+version: 1.0.1
+description: Provide new contributors and agents with a concise tour of the workspace identity files (SOUL.md, USER.md, AGENTS.md,
+  TOOLS.md) plus onboarding tips. Use when a newcomer needs context or when you want to double-check how this workspace is
+  configured.
+metadata:
+  author: crimsondevil333333
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - context
+  - onboarding
+  source: clawhub-community
+  clawhub_slug: context-onboarding
+  clawhub_path: crimsondevil333333/context-onboarding
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Onboarding
+
+    # Source: ClawHub community skill by crimsondevil333333
+
+    # Install: clawhub install context-onboarding
+
+    # Path: crimsondevil333333/context-onboarding
+
+
+    ## Description
+
+    Provide new contributors and agents with a concise tour of the workspace identity files (SOUL.md, USER.md, AGENTS.md,
+    TOOLS.md) plus onboarding tips. Use when a newcomer needs context or when you want to double-check how this workspace
+    is configured.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/context-guidelines.md
+
+    - scripts/context_onboarding.py
+
+    - tests/test_context_onboarding.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-onboarding
+
+    ```'
+examples:
+- description: Install Context Onboarding from ClawHub
+  usage: clawhub install context-onboarding
+schema_version: '1.0'

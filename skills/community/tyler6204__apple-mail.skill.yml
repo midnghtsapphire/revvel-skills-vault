@@ -1,0 +1,72 @@
+name: apple-mail
+title: Apple Mail
+version: 1.2.0
+description: Apple Mail.app integration for macOS. Read inbox, search emails, send emails, reply, and manage messages with
+  fast direct access (no enumeration).
+metadata:
+  author: tyler6204
+  category: Search & Research
+  tags:
+  - search-research
+  - apple
+  - mail
+  source: clawhub-community
+  clawhub_slug: apple-mail
+  clawhub_path: tyler6204/apple-mail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Mail
+
+    # Source: ClawHub community skill by tyler6204
+
+    # Install: clawhub install apple-mail
+
+    # Path: tyler6204/apple-mail
+
+
+    ## Description
+
+    Apple Mail.app integration for macOS. Read inbox, search emails, send emails, reply, and manage messages with fast direct
+    access (no enumeration).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/mail-accounts.sh
+
+    - scripts/mail-delete.sh
+
+    - scripts/mail-fast-search.sh
+
+    - scripts/mail-list.sh
+
+    - scripts/mail-mailboxes.sh
+
+    - scripts/mail-mark-read.sh
+
+    - scripts/mail-mark-unread.sh
+
+    - scripts/mail-read-emlx.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-mail
+
+    ```'
+examples:
+- description: Install Apple Mail from ClawHub
+  usage: clawhub install apple-mail
+schema_version: '1.0'

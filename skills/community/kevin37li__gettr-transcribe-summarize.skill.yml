@@ -1,0 +1,71 @@
+name: gettr-transcribe-summarize
+title: GETTR Transcribe + Summarize
+version: 1.0.4
+description: Download audio from a GETTR post (via HTML og:video), transcribe it locally with MLX Whisper on Apple Silicon
+  (with timestamps via VTT), and summarize the transcript into bullet points and/or a timestamped outline. Use when given
+  a GETTR post URL and asked to produce a transcript or summary.
+metadata:
+  author: kevin37li
+  category: Media & Content
+  tags:
+  - media-content
+  - gettr
+  - transcribe
+  - summarize
+  source: clawhub-community
+  clawhub_slug: gettr-transcribe-summarize
+  clawhub_path: kevin37li/gettr-transcribe-summarize
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GETTR Transcribe + Summarize
+
+    # Source: ClawHub community skill by kevin37li
+
+    # Install: clawhub install gettr-transcribe-summarize
+
+    # Path: kevin37li/gettr-transcribe-summarize
+
+
+    ## Description
+
+    Download audio from a GETTR post (via HTML og:video), transcribe it locally with MLX Whisper on Apple Silicon (with timestamps
+    via VTT), and summarize the transcript into bullet points and/or a timestamped outline. Use when given a GETTR post URL
+    and asked to produce a transcript or summary.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - references/troubleshooting.md
+
+    - scripts/download_audio.sh
+
+    - scripts/extract_gettr_og_video.py
+
+    - scripts/run_pipeline.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gettr-transcribe-summarize
+
+    ```'
+examples:
+- description: Install GETTR Transcribe + Summarize from ClawHub
+  usage: clawhub install gettr-transcribe-summarize
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: english-learn-cards
+title: English Learn Cards
+version: 0.1.1
+description: Flashcard-based English vocabulary learning with SQLite + SRS. Works with any chat platform when paired with
+  an OpenClaw agent prompt.
+metadata:
+  author: racymind
+  category: Communication
+  tags:
+  - communication
+  - english
+  - learn
+  - cards
+  source: clawhub-community
+  clawhub_slug: english-learn-cards
+  clawhub_path: racymind/english-learn-cards
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# English Learn Cards
+
+    # Source: ClawHub community skill by racymind
+
+    # Install: clawhub install english-learn-cards
+
+    # Path: racymind/english-learn-cards
+
+
+    ## Description
+
+    Flashcard-based English vocabulary learning with SQLite + SRS. Works with any chat platform when paired with an OpenClaw
+    agent prompt.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - prompt-examples/AGENT_PROMPT_TEMPLATE.md
+
+    - scripts/words.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install english-learn-cards
+
+    ```'
+examples:
+- description: Install English Learn Cards from ClawHub
+  usage: clawhub install english-learn-cards
+schema_version: '1.0'

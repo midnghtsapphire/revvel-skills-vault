@@ -1,0 +1,71 @@
+name: apple-notes-custom
+title: Apple Notes (AppleScript)
+version: 1.1.0
+description: Apple Notes.app integration for macOS. List folders, read, create, search, edit, and delete notes via AppleScript.
+metadata:
+  author: shad0wca7
+  category: Search & Research
+  tags:
+  - search-research
+  - apple
+  - notes
+  - custom
+  source: clawhub-community
+  clawhub_slug: apple-notes-applescript
+  clawhub_path: shad0wca7/apple-notes-applescript
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Notes (AppleScript)
+
+    # Source: ClawHub community skill by shad0wca7
+
+    # Install: clawhub install apple-notes-applescript
+
+    # Path: shad0wca7/apple-notes-applescript
+
+
+    ## Description
+
+    Apple Notes.app integration for macOS. List folders, read, create, search, edit, and delete notes via AppleScript.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/_resolve_folder.sh
+
+    - scripts/notes-attachment.sh
+
+    - scripts/notes-create.sh
+
+    - scripts/notes-delete.sh
+
+    - scripts/notes-edit.sh
+
+    - scripts/notes-export-pdf.sh
+
+    - scripts/notes-folders.sh
+
+    - scripts/notes-list.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-notes-applescript
+
+    ```'
+examples:
+- description: Install Apple Notes (AppleScript) from ClawHub
+  usage: clawhub install apple-notes-applescript
+schema_version: '1.0'

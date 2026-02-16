@@ -1,0 +1,75 @@
+name: safe-multisig-skill
+title: Safe Multisig Skill
+version: 2.1.0
+description: Propose, confirm, and execute Safe multisig transactions using the Safe{Core} SDK (protocol-kit v6 / api-kit
+  v4). TypeScript strict. Use when an agent needs to operate a Safe smart account — (1) create/predict a new Safe, (2) fetch
+  Safe owners/threshold/nonce, (3) list pending multisig txs, (4) buil
+metadata:
+  author: openclaw-consensus-bot
+  category: Development & Coding
+  tags:
+  - development-coding
+  - safe
+  - multisig
+  - skill
+  source: clawhub-community
+  clawhub_slug: safe-multisig
+  clawhub_path: openclaw-consensus-bot/safe-multisig
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Safe Multisig Skill
+
+    # Source: ClawHub community skill by openclaw-consensus-bot
+
+    # Install: clawhub install safe-multisig
+
+    # Path: openclaw-consensus-bot/safe-multisig
+
+
+    ## Description
+
+    Propose, confirm, and execute Safe multisig transactions using the Safe{Core} SDK (protocol-kit v6 / api-kit v4). TypeScript
+    strict. Use when an agent needs to operate a Safe smart account — (1) create/predict a new Safe, (2) fetch Safe owners/threshold/nonce,
+    (3) list pending multisig txs, (4) buil
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - vitest.config.ts
+
+    - references/example.tx.json
+
+    - references/examples.md
+
+    - references/tx_request.schema.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install safe-multisig
+
+    ```'
+examples:
+- description: Install Safe Multisig Skill from ClawHub
+  usage: clawhub install safe-multisig
+schema_version: '1.0'

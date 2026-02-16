@@ -1,0 +1,53 @@
+name: todo
+title: Todo
+version: 1.1.0
+description: Task and todo list management. Create, organize, and track tasks with priorities and due dates.
+metadata:
+  author: 0xterrybit
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - todo
+  source: clawhub-community
+  clawhub_slug: todo
+  clawhub_path: 0xterrybit/todo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Todo
+
+    # Source: ClawHub community skill by 0xterrybit
+
+    # Install: clawhub install todo
+
+    # Path: 0xterrybit/todo
+
+
+    ## Description
+
+    Task and todo list management. Create, organize, and track tasks with priorities and due dates.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todo
+
+    ```'
+examples:
+- description: Install Todo from ClawHub
+  usage: clawhub install todo
+schema_version: '1.0'

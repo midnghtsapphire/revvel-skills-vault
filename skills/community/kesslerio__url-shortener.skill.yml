@@ -1,0 +1,57 @@
+name: shorten
+title: URL Shortener
+version: 1.0.0
+description: Shorten URLs using is.gd (no auth required). Returns a permanent short link.
+metadata:
+  author: kesslerio
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - shorten
+  source: clawhub-community
+  clawhub_slug: url-shortener
+  clawhub_path: kesslerio/url-shortener
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# URL Shortener
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install url-shortener
+
+    # Path: kesslerio/url-shortener
+
+
+    ## Description
+
+    Shorten URLs using is.gd (no auth required). Returns a permanent short link.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install url-shortener
+
+    ```'
+examples:
+- description: Install URL Shortener from ClawHub
+  usage: clawhub install url-shortener
+schema_version: '1.0'

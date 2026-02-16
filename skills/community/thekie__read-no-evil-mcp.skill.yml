@@ -1,0 +1,61 @@
+name: read-no-evil-mcp
+title: read-no-evil-mcp
+version: 0.2.0
+description: Secure email access via read-no-evil-mcp. Protects against prompt injection attacks in emails. Use for reading,
+  sending, deleting, and moving emails.
+metadata:
+  author: thekie
+  category: Communication
+  tags:
+  - communication
+  - read
+  - evil
+  - mcp
+  source: clawhub-community
+  clawhub_slug: read-no-evil-mcp
+  clawhub_path: thekie/read-no-evil-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# read-no-evil-mcp
+
+    # Source: ClawHub community skill by thekie
+
+    # Install: clawhub install read-no-evil-mcp
+
+    # Path: thekie/read-no-evil-mcp
+
+
+    ## Description
+
+    Secure email access via read-no-evil-mcp. Protects against prompt injection attacks in emails. Use for reading, sending,
+    deleting, and moving emails.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/rnoe-mail.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install read-no-evil-mcp
+
+    ```'
+examples:
+- description: Install read-no-evil-mcp from ClawHub
+  usage: clawhub install read-no-evil-mcp
+schema_version: '1.0'

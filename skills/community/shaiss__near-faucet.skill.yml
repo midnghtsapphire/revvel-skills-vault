@@ -1,0 +1,62 @@
+name: near-faucet
+title: Near Faucet
+version: 1.0.0
+description: OpenClaw skill for requesting NEAR testnet tokens via faucet. Provides faucet requests, status checking, and
+  balance queries with rate limiting.
+metadata:
+  author: shaiss
+  category: Development & Coding
+  tags:
+  - development-coding
+  - near
+  - faucet
+  source: clawhub-community
+  clawhub_slug: near-faucet
+  clawhub_path: shaiss/near-faucet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Near Faucet
+
+    # Source: ClawHub community skill by shaiss
+
+    # Install: clawhub install near-faucet
+
+    # Path: shaiss/near-faucet
+
+
+    ## Description
+
+    OpenClaw skill for requesting NEAR testnet tokens via faucet. Provides faucet requests, status checking, and balance queries
+    with rate limiting.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/faucet.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install near-faucet
+
+    ```'
+examples:
+- description: Install Near Faucet from ClawHub
+  usage: clawhub install near-faucet
+schema_version: '1.0'

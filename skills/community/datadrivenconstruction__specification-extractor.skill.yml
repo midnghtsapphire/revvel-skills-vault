@@ -1,0 +1,56 @@
+name: specification-extractor
+title: Specification Extractor
+version: 1.0.0
+description: '"Extract structured data from construction specifications. Parse CSI sections, requirements, submittals, and
+  product data from spec documents."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - specification
+  - extractor
+  source: clawhub-community
+  clawhub_slug: specification-extractor
+  clawhub_path: datadrivenconstruction/specification-extractor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Specification Extractor
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install specification-extractor
+
+    # Path: datadrivenconstruction/specification-extractor
+
+
+    ## Description
+
+    "Extract structured data from construction specifications. Parse CSI sections, requirements, submittals, and product data
+    from spec documents."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install specification-extractor
+
+    ```'
+examples:
+- description: Install Specification Extractor from ClawHub
+  usage: clawhub install specification-extractor
+schema_version: '1.0'

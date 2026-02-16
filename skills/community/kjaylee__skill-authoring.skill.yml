@@ -1,0 +1,56 @@
+name: skill-authoring
+title: Skill Authoring
+version: 1.0.0
+description: Guide for creating effective SKILL.md files that extend agent capabilities. Use when creating new skills, updating
+  existing ones, or teaching the agent specialized workflows.
+metadata:
+  author: kjaylee
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - authoring
+  source: clawhub-community
+  clawhub_slug: skill-authoring
+  clawhub_path: kjaylee/skill-authoring
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Authoring
+
+    # Source: ClawHub community skill by kjaylee
+
+    # Install: clawhub install skill-authoring
+
+    # Path: kjaylee/skill-authoring
+
+
+    ## Description
+
+    Guide for creating effective SKILL.md files that extend agent capabilities. Use when creating new skills, updating existing
+    ones, or teaching the agent specialized workflows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-authoring
+
+    ```'
+examples:
+- description: Install Skill Authoring from ClawHub
+  usage: clawhub install skill-authoring
+schema_version: '1.0'

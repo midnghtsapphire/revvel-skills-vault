@@ -1,0 +1,72 @@
+name: tiered-memory
+title: Tiered Memory
+version: 2.1.0
+description: '"EvoClaw Tiered Memory Architecture v2.1.0 - LLM-powered three-tier memory system with structured metadata extraction,
+  URL preservation, validation, and cloud-first sync. Enhanced to prevent loss of URLs and technical details during distillation."'
+metadata:
+  author: bowen31337
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - tiered
+  - memory
+  source: clawhub-community
+  clawhub_slug: tiered-memory
+  clawhub_path: bowen31337/tiered-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tiered Memory
+
+    # Source: ClawHub community skill by bowen31337
+
+    # Install: clawhub install tiered-memory
+
+    # Path: bowen31337/tiered-memory
+
+
+    ## Description
+
+    "EvoClaw Tiered Memory Architecture v2.1.0 - LLM-powered three-tier memory system with structured metadata extraction,
+    URL preservation, validation, and cloud-first sync. Enhanced to prevent loss of URLs and technical details during distillation."
+
+
+    ## Files
+
+    - API_ENDPOINTS.md
+
+    - METRICS_TRACKER.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - skill.toml
+
+    - scripts/distiller.py
+
+    - scripts/memory_cli.py
+
+    - scripts/metrics_tracker.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tiered-memory
+
+    ```'
+examples:
+- description: Install Tiered Memory from ClawHub
+  usage: clawhub install tiered-memory
+schema_version: '1.0'

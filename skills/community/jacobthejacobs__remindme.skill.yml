@@ -1,0 +1,55 @@
+name: remindme
+title: Remind Me
+version: 2.0.2
+description: '"⏰ simple Telegram reminders for OpenClaw. cron, zero dependencies."'
+metadata:
+  author: jacobthejacobs
+  category: Social Media
+  tags:
+  - social-media
+  - remindme
+  source: clawhub-community
+  clawhub_slug: remindme
+  clawhub_path: jacobthejacobs/remindme
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Remind Me
+
+    # Source: ClawHub community skill by jacobthejacobs
+
+    # Install: clawhub install remindme
+
+    # Path: jacobthejacobs/remindme
+
+
+    ## Description
+
+    "⏰ simple Telegram reminders for OpenClaw. cron, zero dependencies."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/TEMPLATES.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remindme
+
+    ```'
+examples:
+- description: Install Remind Me from ClawHub
+  usage: clawhub install remindme
+schema_version: '1.0'

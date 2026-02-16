@@ -1,0 +1,55 @@
+name: trein
+title: Trein extended
+version: 1.0.0
+description: Query Dutch Railways (NS) for TRAIN travel only - train departures, time-based trip planning (depart-at/arrive-by),
+  disruptions, and station search via the trein CLI. NOT for car, bus, or other transport.
+metadata:
+  author: timvandervoord
+  category: Search & Research
+  tags:
+  - search-research
+  - trein
+  source: clawhub-community
+  clawhub_slug: trein-plus
+  clawhub_path: timvandervoord/trein-plus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trein extended
+
+    # Source: ClawHub community skill by timvandervoord
+
+    # Install: clawhub install trein-plus
+
+    # Path: timvandervoord/trein-plus
+
+
+    ## Description
+
+    Query Dutch Railways (NS) for TRAIN travel only - train departures, time-based trip planning (depart-at/arrive-by), disruptions,
+    and station search via the trein CLI. NOT for car, bus, or other transport.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trein-plus
+
+    ```'
+examples:
+- description: Install Trein extended from ClawHub
+  usage: clawhub install trein-plus
+schema_version: '1.0'

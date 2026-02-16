@@ -1,0 +1,59 @@
+name: moltcops
+title: Moltcops Skill
+version: 1.0.0
+description: Pre-install security scanner for AI agent skills. Detects malicious patterns before you trust code. Local-first
+  — code never leaves your machine.
+metadata:
+  author: adamthompson33
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - moltcops
+  source: clawhub-community
+  clawhub_slug: moltcops-skill
+  clawhub_path: adamthompson33/moltcops-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltcops Skill
+
+    # Source: ClawHub community skill by adamthompson33
+
+    # Install: clawhub install moltcops-skill
+
+    # Path: adamthompson33/moltcops-skill
+
+
+    ## Description
+
+    Pre-install security scanner for AI agent skills. Detects malicious patterns before you trust code. Local-first — code
+    never leaves your machine.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - rules.json
+
+    - scripts/scan.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltcops-skill
+
+    ```'
+examples:
+- description: Install Moltcops Skill from ClawHub
+  usage: clawhub install moltcops-skill
+schema_version: '1.0'

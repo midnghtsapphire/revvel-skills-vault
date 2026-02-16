@@ -1,0 +1,67 @@
+name: alicloud-ai-misc-crawl-and-skill
+title: Alicloud Ai Misc Crawl And Skill
+version: 1.0.2
+description: Refresh the Model Studio models crawl and regenerate derived summaries and `skills/ai/**` skills. Use when the
+  models list or generated skills must be updated.
+metadata:
+  author: cinience
+  category: Search & Research
+  tags:
+  - search-research
+  - alicloud
+  - misc
+  - crawl
+  - and
+  - skill
+  source: clawhub-community
+  clawhub_slug: alicloud-ai-misc-crawl-and-skill
+  clawhub_path: cinience/alicloud-ai-misc-crawl-and-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Ai Misc Crawl And Skill
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-ai-misc-crawl-and-skill
+
+    # Path: cinience/alicloud-ai-misc-crawl-and-skill
+
+
+    ## Description
+
+    Refresh the Model Studio models crawl and regenerate derived summaries and `skills/ai/**` skills. Use when the models
+    list or generated skills must be updated.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+    - scripts/refresh_alicloud_skills.py
+
+    - scripts/refresh_models_summary.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-ai-misc-crawl-and-skill
+
+    ```'
+examples:
+- description: Install Alicloud Ai Misc Crawl And Skill from ClawHub
+  usage: clawhub install alicloud-ai-misc-crawl-and-skill
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: book-videographer
+title: Book Videographer
+version: 1.0.1
+description: Book videographer services through Lokuli MCP. Use when user needs to find and book videographer. Triggers on
+  requests like "book a videographer", "find videographer near me", or any videographer service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Media & Content
+  tags:
+  - media-content
+  - book
+  - videographer
+  source: clawhub-community
+  clawhub_slug: book-videographer
+  clawhub_path: edwardrodriguez703-design/book-videographer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Videographer
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-videographer
+
+    # Path: edwardrodriguez703-design/book-videographer
+
+
+    ## Description
+
+    Book videographer services through Lokuli MCP. Use when user needs to find and book videographer. Triggers on requests
+    like "book a videographer", "find videographer near me", or any videographer service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-videographer
+
+    ```'
+examples:
+- description: Install Book Videographer from ClawHub
+  usage: clawhub install book-videographer
+schema_version: '1.0'

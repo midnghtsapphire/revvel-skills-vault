@@ -1,0 +1,53 @@
+name: vpn
+title: VPN
+version: 1.0.0
+description: Configure and troubleshoot VPN connections for privacy and remote access.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - vpn
+  source: clawhub-community
+  clawhub_slug: vpn
+  clawhub_path: ivangdavila/vpn
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# VPN
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install vpn
+
+    # Path: ivangdavila/vpn
+
+
+    ## Description
+
+    Configure and troubleshoot VPN connections for privacy and remote access.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vpn
+
+    ```'
+examples:
+- description: Install VPN from ClawHub
+  usage: clawhub install vpn
+schema_version: '1.0'

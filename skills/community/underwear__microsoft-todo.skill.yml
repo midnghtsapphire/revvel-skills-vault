@@ -1,0 +1,58 @@
+name: microsoft-todo
+title: Microsoft To Do
+version: 1.0.0
+description: '"Manage Microsoft To Do tasks via the `todo` CLI. Use when user wants to add, list, complete, remove tasks,
+  manage subtasks (steps), notes, or organize task lists."'
+metadata:
+  author: underwear
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - microsoft
+  - todo
+  source: clawhub-community
+  clawhub_slug: microsoft-todo
+  clawhub_path: underwear/microsoft-todo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Microsoft To Do
+
+    # Source: ClawHub community skill by underwear
+
+    # Install: clawhub install microsoft-todo
+
+    # Path: underwear/microsoft-todo
+
+
+    ## Description
+
+    "Manage Microsoft To Do tasks via the `todo` CLI. Use when user wants to add, list, complete, remove tasks, manage subtasks
+    (steps), notes, or organize task lists."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/setup.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install microsoft-todo
+
+    ```'
+examples:
+- description: Install Microsoft To Do from ClawHub
+  usage: clawhub install microsoft-todo
+schema_version: '1.0'

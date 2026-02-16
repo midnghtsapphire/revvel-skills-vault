@@ -1,0 +1,53 @@
+name: homeassistant
+title: Home Assistant
+version: 1.0.0
+description: Control Home Assistant - smart plugs, lights, scenes, automations.
+metadata:
+  author: dbhurley
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - homeassistant
+  source: clawhub-community
+  clawhub_slug: homeassistant
+  clawhub_path: dbhurley/homeassistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Home Assistant
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install homeassistant
+
+    # Path: dbhurley/homeassistant
+
+
+    ## Description
+
+    Control Home Assistant - smart plugs, lights, scenes, automations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install homeassistant
+
+    ```'
+examples:
+- description: Install Home Assistant from ClawHub
+  usage: clawhub install homeassistant
+schema_version: '1.0'

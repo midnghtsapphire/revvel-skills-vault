@@ -1,0 +1,62 @@
+name: basename-agent
+title: Basename Agent
+version: 1.6.0
+description: '"🏷️ Basename Agent - Onchain Identity for AI. Register yourname.base.eth autonomously via WalletConnect v2.
+  Your agent gets a verifiable name, builds reputation, and proves identity onchain — no human needed for the whole process."'
+metadata:
+  author: daaab
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - basename
+  - agent
+  source: clawhub-community
+  clawhub_slug: basename-agent
+  clawhub_path: daaab/basename-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Basename Agent
+
+    # Source: ClawHub community skill by daaab
+
+    # Install: clawhub install basename-agent
+
+    # Path: daaab/basename-agent
+
+
+    ## Description
+
+    "🏷️ Basename Agent - Onchain Identity for AI. Register yourname.base.eth autonomously via WalletConnect v2. Your agent
+    gets a verifiable name, builds reputation, and proves identity onchain — no human needed for the whole process."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/register-basename.js
+
+    - scripts/wc-connect.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install basename-agent
+
+    ```'
+examples:
+- description: Install Basename Agent from ClawHub
+  usage: clawhub install basename-agent
+schema_version: '1.0'

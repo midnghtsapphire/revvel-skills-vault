@@ -1,0 +1,71 @@
+name: openscan
+title: OpenScan
+version: 1.0.0
+description: Scan binaries and scripts for malicious patterns before trusting them. Use when installing skills, evaluating
+  unknown binaries, or auditing tool dependencies.
+metadata:
+  author: dev-null321
+  category: General
+  tags:
+  - general
+  - openscan
+  source: clawhub-community
+  clawhub_slug: openscan
+  clawhub_path: dev-null321/openscan
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenScan
+
+    # Source: ClawHub community skill by dev-null321
+
+    # Install: clawhub install openscan
+
+    # Path: dev-null321/openscan
+
+
+    ## Description
+
+    Scan binaries and scripts for malicious patterns before trusting them. Use when installing skills, evaluating unknown
+    binaries, or auditing tool dependencies.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - bin/scan.js
+
+    - lib/elf.js
+
+    - lib/entropy.js
+
+    - lib/macho.js
+
+    - lib/patterns.js
+
+    - lib/scanner.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openscan
+
+    ```'
+examples:
+- description: Install OpenScan from ClawHub
+  usage: clawhub install openscan
+schema_version: '1.0'

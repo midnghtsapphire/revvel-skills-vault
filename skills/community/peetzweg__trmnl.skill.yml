@@ -1,0 +1,73 @@
+name: trmnl
+title: TRMNL Display
+version: 1.0.3
+description: Generate content for TRMNL e-ink display devices using the TRMNL CSS framework and send via the trmnl CLI. Use
+  when the user wants to display information on their TRMNL device, send messages to an e-ink display, create dashboard content,
+  show notifications, or update their terminal display. Supports
+metadata:
+  author: peetzweg
+  category: Communication
+  tags:
+  - communication
+  - trmnl
+  source: clawhub-community
+  clawhub_slug: trmnl
+  clawhub_path: peetzweg/trmnl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TRMNL Display
+
+    # Source: ClawHub community skill by peetzweg
+
+    # Install: clawhub install trmnl
+
+    # Path: peetzweg/trmnl
+
+
+    ## Description
+
+    Generate content for TRMNL e-ink display devices using the TRMNL CSS framework and send via the trmnl CLI. Use when the
+    user wants to display information on their TRMNL device, send messages to an e-ink display, create dashboard content,
+    show notifications, or update their terminal display. Supports
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/anti-patterns.md
+
+    - assets/good-examples/simple-message.html
+
+    - assets/good-examples/stats-dashboard.html
+
+    - assets/good-examples/table-data.html
+
+    - assets/good-examples/task-list.html
+
+    - assets/good-examples/two-column-image.html
+
+    - references/components.md
+
+    - references/css-utilities.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trmnl
+
+    ```'
+examples:
+- description: Install TRMNL Display from ClawHub
+  usage: clawhub install trmnl
+schema_version: '1.0'

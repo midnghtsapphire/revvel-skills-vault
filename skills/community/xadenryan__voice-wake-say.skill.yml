@@ -1,0 +1,57 @@
+name: voice-wake-say
+title: Voice Wake Say
+version: 1.0.1
+description: Speak responses aloud on macOS using the built-in `say` command when user input indicates Voice Wake/voice recognition
+  (for example, messages starting with "User talked via voice recognition on <device>").
+metadata:
+  author: xadenryan
+  category: Communication
+  tags:
+  - communication
+  - voice
+  - wake
+  - say
+  source: clawhub-community
+  clawhub_slug: voice-wake-say
+  clawhub_path: xadenryan/voice-wake-say
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Voice Wake Say
+
+    # Source: ClawHub community skill by xadenryan
+
+    # Install: clawhub install voice-wake-say
+
+    # Path: xadenryan/voice-wake-say
+
+
+    ## Description
+
+    Speak responses aloud on macOS using the built-in `say` command when user input indicates Voice Wake/voice recognition
+    (for example, messages starting with "User talked via voice recognition on <device>").
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install voice-wake-say
+
+    ```'
+examples:
+- description: Install Voice Wake Say from ClawHub
+  usage: clawhub install voice-wake-say
+schema_version: '1.0'

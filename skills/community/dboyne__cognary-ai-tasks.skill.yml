@@ -1,0 +1,62 @@
+name: cognary-tasks
+title: Cognary Tasks is an AI-first task manager that turns your spoken thoughts into organized, actionable tasks instantly.
+  Just speak naturally, and Cognary uses AI to prioritize, structure, and manage your to-dos for you. Less effort, more focus
+  — productivity built for the AI era.
+version: 1.0.0
+description: Manage task lists via cognary-cli. Use for listing, adding, updating, completing, uncompleting, and deleting
+  tasks. Triggers on any request about tasks, to-dos, task lists, reminders-as-tasks, or tracking action items.
+metadata:
+  author: dboyne
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - cognary
+  - tasks
+  source: clawhub-community
+  clawhub_slug: cognary-ai-tasks
+  clawhub_path: dboyne/cognary-ai-tasks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cognary Tasks is an AI-first task manager that turns your spoken thoughts into organized, actionable tasks instantly.
+    Just speak naturally, and Cognary uses AI to prioritize, structure, and manage your to-dos for you. Less effort, more
+    focus — productivity built for the AI era.
+
+    # Source: ClawHub community skill by dboyne
+
+    # Install: clawhub install cognary-ai-tasks
+
+    # Path: dboyne/cognary-ai-tasks
+
+
+    ## Description
+
+    Manage task lists via cognary-cli. Use for listing, adding, updating, completing, uncompleting, and deleting tasks. Triggers
+    on any request about tasks, to-dos, task lists, reminders-as-tasks, or tracking action items.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cognary-ai-tasks
+
+    ```'
+examples:
+- description: Install Cognary Tasks is an AI-first task manager that turns your spoken thoughts into organized, actionable
+    tasks instantly. Just speak naturally, and Cognary uses AI to prioritize, structure, and manage your to-dos for you. Less
+    effort, more focus — productivity built for the AI era. from ClawHub
+  usage: clawhub install cognary-ai-tasks
+schema_version: '1.0'

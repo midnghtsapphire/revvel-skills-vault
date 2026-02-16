@@ -1,0 +1,70 @@
+name: zoom-manager
+title: Zoom Manager
+version: 0.1.0
+description: Manage Zoom meetings via OAuth API. Create, list, delete, and update events.
+metadata:
+  author: vnagin
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - zoom
+  - manager
+  source: clawhub-community
+  clawhub_slug: zoom-manager-clawd
+  clawhub_path: vnagin/zoom-manager-clawd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zoom Manager
+
+    # Source: ClawHub community skill by vnagin
+
+    # Install: clawhub install zoom-manager-clawd
+
+    # Path: vnagin/zoom-manager-clawd
+
+
+    ## Description
+
+    Manage Zoom meetings via OAuth API. Create, list, delete, and update events.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/create_meeting.js
+
+    - scripts/create_meeting.py
+
+    - scripts/delete_meeting.js
+
+    - scripts/delete_meeting.py
+
+    - scripts/get_meeting_info.js
+
+    - scripts/get_meeting_info.py
+
+    - scripts/list_meetings.js
+
+    - scripts/list_meetings.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zoom-manager-clawd
+
+    ```'
+examples:
+- description: Install Zoom Manager from ClawHub
+  usage: clawhub install zoom-manager-clawd
+schema_version: '1.0'

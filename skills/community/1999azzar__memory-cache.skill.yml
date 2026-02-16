@@ -1,0 +1,62 @@
+name: memory-cache
+title: Memory Cache
+version: 1.0.0
+description: High-performance temporary storage using Redis. Use to save context, cache expensive API results, or share state
+  between agent sessions. Follows strict key naming conventions.
+metadata:
+  author: 1999azzar
+  category: Development & Coding
+  tags:
+  - development-coding
+  - memory
+  - cache
+  source: clawhub-community
+  clawhub_slug: memory-cache
+  clawhub_path: 1999azzar/memory-cache
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Cache
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install memory-cache
+
+    # Path: 1999azzar/memory-cache
+
+
+    ## Description
+
+    High-performance temporary storage using Redis. Use to save context, cache expensive API results, or share state between
+    agent sessions. Follows strict key naming conventions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/key-standards.md
+
+    - scripts/cache_manager.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-cache
+
+    ```'
+examples:
+- description: Install Memory Cache from ClawHub
+  usage: clawhub install memory-cache
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: feishu-calendar-tool
+title: 飞书日历工具
+version: 1.0.0
+description: 飞书日历管理工具 - 零配置，自动获取凭证和日历ID，支持创建、删除、查询日程
+metadata:
+  author: sunnull
+  category: General
+  tags:
+  - general
+  - feishu
+  - calendar
+  - tool
+  source: clawhub-community
+  clawhub_slug: feishu-calendar-tool
+  clawhub_path: sunnull/feishu-calendar-tool
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 飞书日历工具
+
+    # Source: ClawHub community skill by sunnull
+
+    # Install: clawhub install feishu-calendar-tool
+
+    # Path: sunnull/feishu-calendar-tool
+
+
+    ## Description
+
+    飞书日历管理工具 - 零配置，自动获取凭证和日历ID，支持创建、删除、查询日程
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - feishu-config.example.json
+
+    - package-lock.json
+
+    - package.json
+
+    - bin/auto-setup.sh
+
+    - bin/create-event.mjs
+
+    - bin/create-event.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-calendar-tool
+
+    ```'
+examples:
+- description: Install 飞书日历工具 from ClawHub
+  usage: clawhub install feishu-calendar-tool
+schema_version: '1.0'

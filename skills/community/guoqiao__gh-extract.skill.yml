@@ -1,0 +1,55 @@
+name: gh-extract
+title: GitHub Extract
+version: 0.0.2
+description: Extract content from a GitHub url.
+metadata:
+  author: guoqiao
+  category: Development & Coding
+  tags:
+  - development-coding
+  - extract
+  source: clawhub-community
+  clawhub_slug: gh-extract
+  clawhub_path: guoqiao/gh-extract
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHub Extract
+
+    # Source: ClawHub community skill by guoqiao
+
+    # Install: clawhub install gh-extract
+
+    # Path: guoqiao/gh-extract
+
+
+    ## Description
+
+    Extract content from a GitHub url.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - gh_extract.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gh-extract
+
+    ```'
+examples:
+- description: Install GitHub Extract from ClawHub
+  usage: clawhub install gh-extract
+schema_version: '1.0'

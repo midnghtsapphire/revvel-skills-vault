@@ -1,0 +1,70 @@
+name: xmtp-agents
+title: XMTP
+version: 1.0.0
+description: '>'
+metadata:
+  author: humanagent
+  category: General
+  tags:
+  - general
+  - xmtp
+  - agents
+  source: clawhub-community
+  clawhub_slug: xmtp-agent
+  clawhub_path: humanagent/xmtp-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# XMTP
+
+    # Source: ClawHub community skill by humanagent
+
+    # Install: clawhub install xmtp-agent
+
+    # Path: humanagent/xmtp-agent
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - building-agents/SKILL.md
+
+    - building-agents/rules/events-lifecycle.md
+
+    - building-agents/rules/events-text.md
+
+    - building-agents/rules/middleware-basics.md
+
+    - building-agents/rules/middleware-command-router.md
+
+    - building-agents/rules/setup-environment.md
+
+    - building-agents/rules/setup-from-env.md
+
+    - creating-inline-actions/SKILL.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xmtp-agent
+
+    ```'
+examples:
+- description: Install XMTP from ClawHub
+  usage: clawhub install xmtp-agent
+schema_version: '1.0'

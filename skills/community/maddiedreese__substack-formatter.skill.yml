@@ -1,0 +1,66 @@
+name: substack-formatter
+title: Substack Formatter
+version: 1.0.1
+description: Transform plain text into Substack article format with proper HTML formatting for copy-paste into Substack editor.
+metadata:
+  author: maddiedreese
+  category: Web & Internet
+  tags:
+  - web-internet
+  - substack
+  - formatter
+  source: clawhub-community
+  clawhub_slug: substack-formatter
+  clawhub_path: maddiedreese/substack-formatter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Substack Formatter
+
+    # Source: ClawHub community skill by maddiedreese
+
+    # Install: clawhub install substack-formatter
+
+    # Path: maddiedreese/substack-formatter
+
+
+    ## Description
+
+    Transform plain text into Substack article format with proper HTML formatting for copy-paste into Substack editor.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - copy_to_substack.py
+
+    - examples.md
+
+    - formatter.py
+
+    - minimal_formatter.py
+
+    - test_formatter.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install substack-formatter
+
+    ```'
+examples:
+- description: Install Substack Formatter from ClawHub
+  usage: clawhub install substack-formatter
+schema_version: '1.0'

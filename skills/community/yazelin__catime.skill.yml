@@ -1,0 +1,56 @@
+name: catime
+title: catime
+version: 0.5.0
+description: '"Fetch and send AI-generated hourly cat images. Every hour a unique cat artwork is born via Google Gemini. Use
+  when user asks for a cat picture, wants to browse the cat gallery, or requests the latest AI-generated cat image to be sent
+  to them."'
+metadata:
+  author: yazelin
+  category: Search & Research
+  tags:
+  - search-research
+  - catime
+  source: clawhub-community
+  clawhub_slug: catime
+  clawhub_path: yazelin/catime
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# catime
+
+    # Source: ClawHub community skill by yazelin
+
+    # Install: clawhub install catime
+
+    # Path: yazelin/catime
+
+
+    ## Description
+
+    "Fetch and send AI-generated hourly cat images. Every hour a unique cat artwork is born via Google Gemini. Use when user
+    asks for a cat picture, wants to browse the cat gallery, or requests the latest AI-generated cat image to be sent to them."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install catime
+
+    ```'
+examples:
+- description: Install catime from ClawHub
+  usage: clawhub install catime
+schema_version: '1.0'

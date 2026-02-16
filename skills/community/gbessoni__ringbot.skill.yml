@@ -1,0 +1,57 @@
+name: ringbot
+title: RingBot
+version: 1.1.0
+description: Make outbound AI phone calls. Use when asked to call a business, make a phone call, order food by phone, schedule
+  appointments, or any task requiring voice calls. Triggers on "call", "phone", "dial", "ring", "order pizza", "make reservation",
+  "schedule appointment".
+metadata:
+  author: gbessoni
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - ringbot
+  source: clawhub-community
+  clawhub_slug: ringbot
+  clawhub_path: gbessoni/ringbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RingBot
+
+    # Source: ClawHub community skill by gbessoni
+
+    # Install: clawhub install ringbot
+
+    # Path: gbessoni/ringbot
+
+
+    ## Description
+
+    Make outbound AI phone calls. Use when asked to call a business, make a phone call, order food by phone, schedule appointments,
+    or any task requiring voice calls. Triggers on "call", "phone", "dial", "ring", "order pizza", "make reservation", "schedule
+    appointment".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ringbot
+
+    ```'
+examples:
+- description: Install RingBot from ClawHub
+  usage: clawhub install ringbot
+schema_version: '1.0'

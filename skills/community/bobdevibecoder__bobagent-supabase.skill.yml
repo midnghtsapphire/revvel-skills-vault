@@ -1,0 +1,57 @@
+name: supabase
+title: supabase
+version: 1.0.0
+description: Connect to Supabase for database operations, vector search, and storage. Use for storing data, running SQL queries,
+  similarity search with pgvector, and managing tables. Triggers on requests involving databases, vector stores, embeddings,
+  or Supabase specifically.
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - supabase
+  source: clawhub-community
+  clawhub_slug: bobagent-supabase
+  clawhub_path: bobdevibecoder/bobagent-supabase
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# supabase
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-supabase
+
+    # Path: bobdevibecoder/bobagent-supabase
+
+
+    ## Description
+
+    Connect to Supabase for database operations, vector search, and storage. Use for storing data, running SQL queries, similarity
+    search with pgvector, and managing tables. Triggers on requests involving databases, vector stores, embeddings, or Supabase
+    specifically.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-supabase
+
+    ```'
+examples:
+- description: Install supabase from ClawHub
+  usage: clawhub install bobagent-supabase
+schema_version: '1.0'

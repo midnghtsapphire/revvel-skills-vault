@@ -1,0 +1,71 @@
+name: archon
+title: Archon Skill
+version: 1.0.2
+description: Full Archon decentralized identity operations - local node management, DID creation, credential issuance, vault
+  operations, and public network resolution.
+metadata:
+  author: santyr
+  category: General
+  tags:
+  - general
+  - archon
+  source: clawhub-community
+  clawhub_slug: archon-skill
+  clawhub_path: santyr/archon-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Archon Skill
+
+    # Source: ClawHub community skill by santyr
+
+    # Install: clawhub install archon-skill
+
+    # Path: santyr/archon-skill
+
+
+    ## Description
+
+    Full Archon decentralized identity operations - local node management, DID creation, credential issuance, vault operations,
+    and public network resolution.
+
+
+    ## Files
+
+    - DELIVERY_SUMMARY.md
+
+    - EXAMPLES.md
+
+    - README.md
+
+    - SKILL.md
+
+    - WINDOWS.md
+
+    - _meta.json
+
+    - manifest.json
+
+    - scripts/archon-create-did.sh
+
+    - scripts/archon-issue-credential.sh
+
+    - scripts/archon-list-credentials.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install archon-skill
+
+    ```'
+examples:
+- description: Install Archon Skill from ClawHub
+  usage: clawhub install archon-skill
+schema_version: '1.0'

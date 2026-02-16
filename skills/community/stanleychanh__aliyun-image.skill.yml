@@ -1,0 +1,66 @@
+name: aliyun-image
+title: aliyun-image
+version: 1.1.0
+description: '"阿里云百炼图像生成、编辑与翻译。文生图：根据文本生成图像，支持复杂文字渲染。图像编辑：单图编辑、多图融合、风格迁移、物体增删。图像翻译：翻译图像中的文字，保留原始排版，支持11种源语言和14种目标语言。触发词：生成图片、AI作画、文生图、图像编辑、修图、换背景、风格迁移、多图融合、图像翻译、图片翻译。模型：qwen-image-plus(默认)、qwen-image-max、qwen-image-edit-plus(默认)、qwen-image-edit-max、qwen-mt-image。"'
+metadata:
+  author: stanleychanh
+  category: Media & Content
+  tags:
+  - media-content
+  - aliyun
+  - image
+  source: clawhub-community
+  clawhub_slug: aliyun-image
+  clawhub_path: stanleychanh/aliyun-image
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# aliyun-image
+
+    # Source: ClawHub community skill by stanleychanh
+
+    # Install: clawhub install aliyun-image
+
+    # Path: stanleychanh/aliyun-image
+
+
+    ## Description
+
+    "阿里云百炼图像生成、编辑与翻译。文生图：根据文本生成图像，支持复杂文字渲染。图像编辑：单图编辑、多图融合、风格迁移、物体增删。图像翻译：翻译图像中的文字，保留原始排版，支持11种源语言和14种目标语言。触发词：生成图片、AI作画、文生图、图像编辑、修图、换背景、风格迁移、多图融合、图像翻译、图片翻译。模型：qwen-image-plus(默认)、qwen-image-max、qwen-image-edit-plus(默认)、qwen-image-edit-max、qwen-mt-image。"
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - metadata.json
+
+    - references/image-edit.md
+
+    - references/image-translate.md
+
+    - references/text-to-image.md
+
+    - scripts/client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aliyun-image
+
+    ```'
+examples:
+- description: Install aliyun-image from ClawHub
+  usage: clawhub install aliyun-image
+schema_version: '1.0'

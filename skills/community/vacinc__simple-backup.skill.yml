@@ -1,0 +1,58 @@
+name: simple-backup
+title: Simple Backup
+version: 2.2.0
+description: Backup agent brain (workspace) and body (state) to local folder and optionally sync to cloud via rclone.
+metadata:
+  author: vacinc
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - simple
+  - backup
+  source: clawhub-community
+  clawhub_slug: simple-backup
+  clawhub_path: vacinc/simple-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Simple Backup
+
+    # Source: ClawHub community skill by vacinc
+
+    # Install: clawhub install simple-backup
+
+    # Path: vacinc/simple-backup
+
+
+    ## Description
+
+    Backup agent brain (workspace) and body (state) to local folder and optionally sync to cloud via rclone.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - simple-backup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install simple-backup
+
+    ```'
+examples:
+- description: Install Simple Backup from ClawHub
+  usage: clawhub install simple-backup
+schema_version: '1.0'

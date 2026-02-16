@@ -1,0 +1,58 @@
+name: umea-lunch
+title: Umeå Lunch
+version: 1.0.0
+description: Get today's lunch menus from restaurants in Umeå. Use when asking about lunch, restaurants, or food in Umeå.
+  Fetches live data from umealunchguide.se.
+metadata:
+  author: simskii
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - umea
+  - lunch
+  source: clawhub-community
+  clawhub_slug: umea-lunch
+  clawhub_path: simskii/umea-lunch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Umeå Lunch
+
+    # Source: ClawHub community skill by simskii
+
+    # Install: clawhub install umea-lunch
+
+    # Path: simskii/umea-lunch
+
+
+    ## Description
+
+    Get today''s lunch menus from restaurants in Umeå. Use when asking about lunch, restaurants, or food in Umeå. Fetches
+    live data from umealunchguide.se.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch_lunch.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install umea-lunch
+
+    ```'
+examples:
+- description: Install Umeå Lunch from ClawHub
+  usage: clawhub install umea-lunch
+schema_version: '1.0'

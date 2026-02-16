@@ -1,0 +1,71 @@
+name: scan-skill
+title: Scan Skill
+version: 1.0.0
+description: Deep security analysis of an individual skill before installation
+metadata:
+  author: itsnishi
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - scan
+  - skill
+  - read
+  - glob
+  - grep
+  - bash
+  source: clawhub-community
+  clawhub_slug: scan-skill
+  clawhub_path: itsnishi/scan-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Glob
+  - Grep
+  - Bash
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Scan Skill
+
+    # Source: ClawHub community skill by itsnishi
+
+    # Install: clawhub install scan-skill
+
+    # Path: itsnishi/scan-skill
+
+
+    ## Description
+
+    Deep security analysis of an individual skill before installation
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/patterns.py
+
+    - scripts/scan_skill.py
+
+
+    ## Allowed Tools
+
+    Read, Glob, Grep, Bash
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install scan-skill
+
+    ```'
+examples:
+- description: Install Scan Skill from ClawHub
+  usage: clawhub install scan-skill
+schema_version: '1.0'

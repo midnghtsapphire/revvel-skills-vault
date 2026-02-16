@@ -1,0 +1,33 @@
+name: smtp-send
+title: SMTP Send
+version: 1.0.1
+description: 'Send emails via SMTP or Resend API with support for plain text, HTML, and attachments. Use when the user asks
+  to send an email, email someone, or compose and send a message. Supports single recipients and can include file attachments.
+  Works with Gmail, Outlook, Yahoo, QQ Mail, 163 Mail, Resend, and '
+metadata:
+  author: xiwan
+  category: Communication
+  tags:
+  - communication
+  - smtp
+  - send
+  source: clawhub-community
+  clawhub_slug: smtp-send
+  clawhub_path: xiwan/smtp-send
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# SMTP Send\n# Source: ClawHub community skill by xiwan\n# Install: clawhub install smtp-send\n# Path: xiwan/smtp-send\n\
+    \n## Description\nSend emails via SMTP or Resend API with support for plain text, HTML, and attachments. Use when the\
+    \ user asks to send an email, email someone, or compose and send a message. Supports single recipients and can include\
+    \ file attachments. Works with Gmail, Outlook, Yahoo, QQ Mail, 163 Mail, Resend, and \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    - references/setup.md\n- scripts/send_email.py\n\n## Installation\n```bash\nclawhub install smtp-send\n```"
+examples:
+- description: Install SMTP Send from ClawHub
+  usage: clawhub install smtp-send
+schema_version: '1.0'

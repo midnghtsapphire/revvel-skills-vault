@@ -1,0 +1,66 @@
+name: communication-coach
+title: Communication Coach
+version: 1.0.0
+description: Adaptive communication coaching that shapes speaking and writing behavior through reinforcement, scoring, and
+  micro-interventions. Use when the user shares communications for feedback, requests practice scenarios, or during scheduled
+  check-ins. Trains clarity, vocal control, presence, persuasion, em
+metadata:
+  author: rjmoggach
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - communication
+  - coach
+  source: clawhub-community
+  clawhub_slug: communication-coach
+  clawhub_path: rjmoggach/communication-coach
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Communication Coach
+
+    # Source: ClawHub community skill by rjmoggach
+
+    # Install: clawhub install communication-coach
+
+    # Path: rjmoggach/communication-coach
+
+
+    ## Description
+
+    Adaptive communication coaching that shapes speaking and writing behavior through reinforcement, scoring, and micro-interventions.
+    Use when the user shares communications for feedback, requests practice scenarios, or during scheduled check-ins. Trains
+    clarity, vocal control, presence, persuasion, em
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/rubrics.md
+
+    - references/scenarios.md
+
+    - scripts/analyze_comm.py
+
+    - scripts/manage_state.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install communication-coach
+
+    ```'
+examples:
+- description: Install Communication Coach from ClawHub
+  usage: clawhub install communication-coach
+schema_version: '1.0'

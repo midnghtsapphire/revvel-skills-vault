@@ -1,0 +1,57 @@
+name: verification-before-completion
+title: Verification Before Completion
+version: 0.1.0
+description: Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running
+  verification commands and confirming output before making any success claims; evidence before assertions always
+metadata:
+  author: zlc000190
+  category: General
+  tags:
+  - general
+  - verification
+  - before
+  - completion
+  source: clawhub-community
+  clawhub_slug: verification-before-completion
+  clawhub_path: zlc000190/verification-before-completion
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Verification Before Completion
+
+    # Source: ClawHub community skill by zlc000190
+
+    # Install: clawhub install verification-before-completion
+
+    # Path: zlc000190/verification-before-completion
+
+
+    ## Description
+
+    Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification
+    commands and confirming output before making any success claims; evidence before assertions always
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install verification-before-completion
+
+    ```'
+examples:
+- description: Install Verification Before Completion from ClawHub
+  usage: clawhub install verification-before-completion
+schema_version: '1.0'

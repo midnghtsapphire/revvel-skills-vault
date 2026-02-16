@@ -1,0 +1,66 @@
+name: blog-to-kindle
+title: Blog to Kindle
+version: 1.0.0
+description: Scrape blogs/essay sites and compile into Kindle-friendly EPUB with AI-generated cover. Use for requests to download
+  blogs for Kindle, compile essays into ebook, or send blog archives to Kindle. Supports Paul Graham, Kevin Kelly, Derek Sivers,
+  Wait But Why, Astral Codex Ten, and custom sites.
+metadata:
+  author: ainekomacx
+  category: Search & Research
+  tags:
+  - search-research
+  - blog
+  - kindle
+  source: clawhub-community
+  clawhub_slug: blog-to-kindle
+  clawhub_path: ainekomacx/blog-to-kindle
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Blog to Kindle
+
+    # Source: ClawHub community skill by ainekomacx
+
+    # Install: clawhub install blog-to-kindle
+
+    # Path: ainekomacx/blog-to-kindle
+
+
+    ## Description
+
+    Scrape blogs/essay sites and compile into Kindle-friendly EPUB with AI-generated cover. Use for requests to download blogs
+    for Kindle, compile essays into ebook, or send blog archives to Kindle. Supports Paul Graham, Kevin Kelly, Derek Sivers,
+    Wait But Why, Astral Codex Ten, and custom sites.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/manual-workflow.md
+
+    - scripts/compile_epub.py
+
+    - scripts/fetch_blog.py
+
+    - scripts/send_to_kindle.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install blog-to-kindle
+
+    ```'
+examples:
+- description: Install Blog to Kindle from ClawHub
+  usage: clawhub install blog-to-kindle
+schema_version: '1.0'

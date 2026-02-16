@@ -1,0 +1,55 @@
+name: savestate
+title: SaveState
+version: 1.0.0
+description: Time Machine for AI. Encrypted backup, restore, and cross-platform migration for your agent's memory and identity.
+  Supports OpenClaw, ChatGPT, Claude, Gemini, and more. AES-256-GCM encryption with user-controlled keys.
+metadata:
+  author: dbhurley
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - savestate
+  source: clawhub-community
+  clawhub_slug: savestate
+  clawhub_path: dbhurley/savestate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SaveState
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install savestate
+
+    # Path: dbhurley/savestate
+
+
+    ## Description
+
+    Time Machine for AI. Encrypted backup, restore, and cross-platform migration for your agent''s memory and identity. Supports
+    OpenClaw, ChatGPT, Claude, Gemini, and more. AES-256-GCM encryption with user-controlled keys.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install savestate
+
+    ```'
+examples:
+- description: Install SaveState from ClawHub
+  usage: clawhub install savestate
+schema_version: '1.0'

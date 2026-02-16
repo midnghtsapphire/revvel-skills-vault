@@ -1,0 +1,62 @@
+name: daily-briefing
+title: Daily Briefing
+version: 1.0.5
+description: Generates a warm, compact daily briefing with weather, calendar, reminders, birthdays, and important emails for
+  cron or chat delivery.
+metadata:
+  author: antgly
+  category: Communication
+  tags:
+  - communication
+  - daily
+  - briefing
+  source: clawhub-community
+  clawhub_slug: daily-briefing
+  clawhub_path: antgly/daily-briefing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Briefing
+
+    # Source: ClawHub community skill by antgly
+
+    # Install: clawhub install daily-briefing
+
+    # Path: antgly/daily-briefing
+
+
+    ## Description
+
+    Generates a warm, compact daily briefing with weather, calendar, reminders, birthdays, and important emails for cron or
+    chat delivery.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - scripts/daily_briefing_orchestrator.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-briefing
+
+    ```'
+examples:
+- description: Install Daily Briefing from ClawHub
+  usage: clawhub install daily-briefing
+schema_version: '1.0'

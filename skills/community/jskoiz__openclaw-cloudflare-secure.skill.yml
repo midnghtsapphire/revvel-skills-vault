@@ -1,0 +1,67 @@
+name: openclaw-cloudflare-secure
+title: OpenClaw Cloudflare Secure
+version: 1.0.0
+description: Securely expose an OpenClaw Gateway WebUI on a VPS via Cloudflare Zero Trust Access + Cloudflare Tunnel (cloudflared),
+  including DNS cutover for custom hostnames and optional cleanup of Tailscale Serve.
+metadata:
+  author: jskoiz
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - openclaw
+  - cloudflare
+  - secure
+  source: clawhub-community
+  clawhub_slug: openclaw-cloudflare-secure
+  clawhub_path: jskoiz/openclaw-cloudflare-secure
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Cloudflare Secure
+
+    # Source: ClawHub community skill by jskoiz
+
+    # Install: clawhub install openclaw-cloudflare-secure
+
+    # Path: jskoiz/openclaw-cloudflare-secure
+
+
+    ## Description
+
+    Securely expose an OpenClaw Gateway WebUI on a VPS via Cloudflare Zero Trust Access + Cloudflare Tunnel (cloudflared),
+    including DNS cutover for custom hostnames and optional cleanup of Tailscale Serve.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cf_dns.py
+
+    - scripts/dns_create_record.sh
+
+    - scripts/dns_point_hostname_to_tunnel.sh
+
+    - scripts/install_cloudflared.sh
+
+    - scripts/tunnel_service_install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-cloudflare-secure
+
+    ```'
+examples:
+- description: Install OpenClaw Cloudflare Secure from ClawHub
+  usage: clawhub install openclaw-cloudflare-secure
+schema_version: '1.0'

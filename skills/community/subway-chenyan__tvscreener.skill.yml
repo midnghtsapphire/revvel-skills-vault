@@ -1,0 +1,72 @@
+name: tvscreener
+title: Tvscreener
+version: 1.0.0
+description: Query TradingView screener data for HK, A-share, A-share ETF, and US symbols with deepentropy/tvscreener. Use
+  for stock lookup, technical indicators (price/change/RSI/MACD/volume), symbol filtering, and custom field/filter-based market
+  queries.
+metadata:
+  author: subway-chenyan
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - tvscreener
+  source: clawhub-community
+  clawhub_slug: tvscreener
+  clawhub_path: subway-chenyan/tvscreener
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tvscreener
+
+    # Source: ClawHub community skill by subway-chenyan
+
+    # Install: clawhub install tvscreener
+
+    # Path: subway-chenyan/tvscreener
+
+
+    ## Description
+
+    Query TradingView screener data for HK, A-share, A-share ETF, and US symbols with deepentropy/tvscreener. Use for stock
+    lookup, technical indicators (price/change/RSI/MACD/volume), symbol filtering, and custom field/filter-based market queries.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/README_USAGE.md
+
+    - references/api/enums.md
+
+    - references/api/fields.md
+
+    - references/api/filters.md
+
+    - references/api/screeners.md
+
+    - scripts/custom_query.py
+
+    - scripts/discover_fields.py
+
+    - scripts/query_symbol.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tvscreener
+
+    ```'
+examples:
+- description: Install Tvscreener from ClawHub
+  usage: clawhub install tvscreener
+schema_version: '1.0'

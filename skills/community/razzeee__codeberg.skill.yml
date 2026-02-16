@@ -1,0 +1,55 @@
+name: codeberg
+title: Codeberg
+version: 0.1.0
+description: '"Interact with Codeberg using the `tea` CLI. Use `tea issue`, `tea pr`, `tea actions`, and `tea api` for issues,
+  PRs, Actions, and advanced queries."'
+metadata:
+  author: razzeee
+  category: Development & Coding
+  tags:
+  - development-coding
+  - codeberg
+  source: clawhub-community
+  clawhub_slug: codeberg
+  clawhub_path: razzeee/codeberg
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Codeberg
+
+    # Source: ClawHub community skill by razzeee
+
+    # Install: clawhub install codeberg
+
+    # Path: razzeee/codeberg
+
+
+    ## Description
+
+    "Interact with Codeberg using the `tea` CLI. Use `tea issue`, `tea pr`, `tea actions`, and `tea api` for issues, PRs,
+    Actions, and advanced queries."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install codeberg
+
+    ```'
+examples:
+- description: Install Codeberg from ClawHub
+  usage: clawhub install codeberg
+schema_version: '1.0'

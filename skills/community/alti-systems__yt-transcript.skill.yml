@@ -1,0 +1,62 @@
+name: yt-transcript
+title: YouTube Transcript Extractor
+version: 1.0.0
+description: ''
+metadata:
+  author: alti-systems
+  category: Media & Content
+  tags:
+  - media-content
+  - transcript
+  source: clawhub-community
+  clawhub_slug: yt-transcript
+  clawhub_path: alti-systems/yt-transcript
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube Transcript Extractor
+
+    # Source: ClawHub community skill by alti-systems
+
+    # Install: clawhub install yt-transcript
+
+    # Path: alti-systems/yt-transcript
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/transcript.js
+
+    - scripts/transcript.mjs
+
+    - scripts/yt-transcript.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yt-transcript
+
+    ```'
+examples:
+- description: Install YouTube Transcript Extractor from ClawHub
+  usage: clawhub install yt-transcript
+schema_version: '1.0'

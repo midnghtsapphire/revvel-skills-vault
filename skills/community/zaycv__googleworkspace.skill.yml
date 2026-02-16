@@ -1,0 +1,53 @@
+name: gog
+title: Google Workspace
+version: 1.0.0
+description: Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.
+metadata:
+  author: zaycv
+  category: Search & Research
+  tags:
+  - search-research
+  - gog
+  source: clawhub-community
+  clawhub_slug: googleworkspace
+  clawhub_path: zaycv/googleworkspace
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Workspace
+
+    # Source: ClawHub community skill by zaycv
+
+    # Install: clawhub install googleworkspace
+
+    # Path: zaycv/googleworkspace
+
+
+    ## Description
+
+    Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install googleworkspace
+
+    ```'
+examples:
+- description: Install Google Workspace from ClawHub
+  usage: clawhub install googleworkspace
+schema_version: '1.0'

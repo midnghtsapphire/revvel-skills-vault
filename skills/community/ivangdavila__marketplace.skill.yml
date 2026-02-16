@@ -1,0 +1,60 @@
+name: marketplace
+title: Marketplace
+version: 1.0.0
+description: Navigate online marketplaces as buyer, seller, or builder with platform comparison, listing optimization, and
+  scam detection.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - marketplace
+  source: clawhub-community
+  clawhub_slug: marketplace
+  clawhub_path: ivangdavila/marketplace
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Marketplace
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install marketplace
+
+    # Path: ivangdavila/marketplace
+
+
+    ## Description
+
+    Navigate online marketplaces as buyer, seller, or builder with platform comparison, listing optimization, and scam detection.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - builder-playbook.md
+
+    - buyer-safety.md
+
+    - seller-platforms.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install marketplace
+
+    ```'
+examples:
+- description: Install Marketplace from ClawHub
+  usage: clawhub install marketplace
+schema_version: '1.0'

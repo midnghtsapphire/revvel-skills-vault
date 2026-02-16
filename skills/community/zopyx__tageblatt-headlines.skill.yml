@@ -1,0 +1,58 @@
+name: tageblatt-headlines
+title: Tageblatt Headlines
+version: 1.0.0
+description: Download and archive daily Schlagzeilen from https://www.tageblatt.de/. Use when Master asks for TAGEBLATT headlines,
+  wants them saved locally, or needs an automated 07:00 workflow that fetches and forwards the latest headlines.
+metadata:
+  author: zopyx
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tageblatt
+  - headlines
+  source: clawhub-community
+  clawhub_slug: tageblatt-headlines
+  clawhub_path: zopyx/tageblatt-headlines
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tageblatt Headlines
+
+    # Source: ClawHub community skill by zopyx
+
+    # Install: clawhub install tageblatt-headlines
+
+    # Path: zopyx/tageblatt-headlines
+
+
+    ## Description
+
+    Download and archive daily Schlagzeilen from https://www.tageblatt.de/. Use when Master asks for TAGEBLATT headlines,
+    wants them saved locally, or needs an automated 07:00 workflow that fetches and forwards the latest headlines.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch_headlines.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tageblatt-headlines
+
+    ```'
+examples:
+- description: Install Tageblatt Headlines from ClawHub
+  usage: clawhub install tageblatt-headlines
+schema_version: '1.0'

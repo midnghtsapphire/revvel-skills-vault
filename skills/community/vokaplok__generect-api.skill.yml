@@ -1,0 +1,62 @@
+name: generect-api
+title: Generect API
+version: 1.0.0
+description: Search B2B leads and companies, find/validate emails via Generect Live API. Use when the user needs to find people
+  by job title/company/industry, search companies by ICP, generate business emails from name+domain, or validate email addresses.
+  Covers lead generation, prospecting, enrichment, and emai
+metadata:
+  author: vokaplok
+  category: Search & Research
+  tags:
+  - search-research
+  - generect
+  - api
+  source: clawhub-community
+  clawhub_slug: generect-api
+  clawhub_path: vokaplok/generect-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Generect API
+
+    # Source: ClawHub community skill by vokaplok
+
+    # Install: clawhub install generect-api
+
+    # Path: vokaplok/generect-api
+
+
+    ## Description
+
+    Search B2B leads and companies, find/validate emails via Generect Live API. Use when the user needs to find people by
+    job title/company/industry, search companies by ICP, generate business emails from name+domain, or validate email addresses.
+    Covers lead generation, prospecting, enrichment, and emai
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-filters.md
+
+    - scripts/generect.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install generect-api
+
+    ```'
+examples:
+- description: Install Generect API from ClawHub
+  usage: clawhub install generect-api
+schema_version: '1.0'

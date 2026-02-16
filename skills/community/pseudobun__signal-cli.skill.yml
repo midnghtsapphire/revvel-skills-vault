@@ -1,0 +1,62 @@
+name: signal-cli
+title: Signal CLI
+version: 0.1.0
+description: Send Signal messages and look up Signal recipients via the local signal-cli installation on macOS. Use when the
+  user asks to message someone on Signal, send a Signal text/attachment, list Signal contacts, or resolve a recipient by name/nickname/phone
+  number.
+metadata:
+  author: pseudobun
+  category: Communication
+  tags:
+  - communication
+  - signal
+  - cli
+  source: clawhub-community
+  clawhub_slug: signal-cli
+  clawhub_path: pseudobun/signal-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Signal CLI
+
+    # Source: ClawHub community skill by pseudobun
+
+    # Install: clawhub install signal-cli
+
+    # Path: pseudobun/signal-cli
+
+
+    ## Description
+
+    Send Signal messages and look up Signal recipients via the local signal-cli installation on macOS. Use when the user asks
+    to message someone on Signal, send a Signal text/attachment, list Signal contacts, or resolve a recipient by name/nickname/phone
+    number.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/find_contact.py
+
+    - scripts/send_message.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install signal-cli
+
+    ```'
+examples:
+- description: Install Signal CLI from ClawHub
+  usage: clawhub install signal-cli
+schema_version: '1.0'

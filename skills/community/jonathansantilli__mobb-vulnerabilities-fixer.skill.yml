@@ -1,0 +1,65 @@
+name: mobb-vulnerabilities-fixer
+title: Mobb Vulnerabilities Fixer
+version: 0.1.2
+description: Scan, fix, and remediate security vulnerabilities in a local code repository using Mobb MCP/CLI. Use when the
+  user asks to scan for vulnerabilities, run a security check, auto-fix issues, remediate findings, or apply Mobb fixes (e.g.,
+  \"scan this repo\", \"fix security issues\", \"remediate vulnerab
+metadata:
+  author: jonathansantilli
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - mobb
+  - vulnerabilities
+  - fixer
+  source: clawhub-community
+  clawhub_slug: mobb-vulnerabilities-fixer
+  clawhub_path: jonathansantilli/mobb-vulnerabilities-fixer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mobb Vulnerabilities Fixer
+
+    # Source: ClawHub community skill by jonathansantilli
+
+    # Install: clawhub install mobb-vulnerabilities-fixer
+
+    # Path: jonathansantilli/mobb-vulnerabilities-fixer
+
+
+    ## Description
+
+    Scan, fix, and remediate security vulnerabilities in a local code repository using Mobb MCP/CLI. Use when the user asks
+    to scan for vulnerabilities, run a security check, auto-fix issues, remediate findings, or apply Mobb fixes (e.g., \"scan
+    this repo\", \"fix security issues\", \"remediate vulnerab
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/mcp-scan-fix.md
+
+    - references/mobb-auth.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mobb-vulnerabilities-fixer
+
+    ```'
+examples:
+- description: Install Mobb Vulnerabilities Fixer from ClawHub
+  usage: clawhub install mobb-vulnerabilities-fixer
+schema_version: '1.0'

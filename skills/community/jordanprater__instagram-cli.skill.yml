@@ -1,0 +1,53 @@
+name: instagram
+title: Instagram
+version: 1.0.0
+description: instagram
+metadata:
+  author: jordanprater
+  category: Social Media
+  tags:
+  - social-media
+  - instagram
+  source: clawhub-community
+  clawhub_slug: instagram-cli
+  clawhub_path: jordanprater/instagram-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Instagram
+
+    # Source: ClawHub community skill by jordanprater
+
+    # Install: clawhub install instagram-cli
+
+    # Path: jordanprater/instagram-cli
+
+
+    ## Description
+
+    instagram
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install instagram-cli
+
+    ```'
+examples:
+- description: Install Instagram from ClawHub
+  usage: clawhub install instagram-cli
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: skill-scanner
+title: AI Skill Scanner
+version: 2.1.0
+description: Scan OpenBot/Clawdbot skills for security vulnerabilities, malicious code, and suspicious patterns before installing
+  them. Use when a user wants to audit a skill, check if a ClawHub skill is safe, scan for credential exfiltration, detect
+  prompt injection, or review skill security. Triggers on securi
+metadata:
+  author: hugosbl
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - scanner
+  source: clawhub-community
+  clawhub_slug: ai-skill-scanner
+  clawhub_path: hugosbl/ai-skill-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI Skill Scanner
+
+    # Source: ClawHub community skill by hugosbl
+
+    # Install: clawhub install ai-skill-scanner
+
+    # Path: hugosbl/ai-skill-scanner
+
+
+    ## Description
+
+    Scan OpenBot/Clawdbot skills for security vulnerabilities, malicious code, and suspicious patterns before installing them.
+    Use when a user wants to audit a skill, check if a ClawHub skill is safe, scan for credential exfiltration, detect prompt
+    injection, or review skill security. Triggers on securi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/rules.md
+
+    - scripts/advanced_checks.py
+
+    - scripts/scan.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-skill-scanner
+
+    ```'
+examples:
+- description: Install AI Skill Scanner from ClawHub
+  usage: clawhub install ai-skill-scanner
+schema_version: '1.0'

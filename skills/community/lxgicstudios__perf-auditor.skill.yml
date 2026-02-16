@@ -1,0 +1,57 @@
+name: perf-auditor
+title: Performance Auditor
+version: 1.0.0
+description: Run a Lighthouse performance audit with AI fix suggestions. Use when your site is slow and you need actionable
+  fixes.
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - perf
+  - auditor
+  source: clawhub-community
+  clawhub_slug: perf-auditor
+  clawhub_path: lxgicstudios/perf-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Performance Auditor
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install perf-auditor
+
+    # Path: lxgicstudios/perf-auditor
+
+
+    ## Description
+
+    Run a Lighthouse performance audit with AI fix suggestions. Use when your site is slow and you need actionable fixes.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install perf-auditor
+
+    ```'
+examples:
+- description: Install Performance Auditor from ClawHub
+  usage: clawhub install perf-auditor
+schema_version: '1.0'

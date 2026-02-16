@@ -1,0 +1,72 @@
+name: command-center
+title: Openclaw Command Center
+version: 1.0.4
+description: Mission control dashboard for OpenClaw - real-time session monitoring, LLM usage tracking, cost intelligence,
+  and system vitals. View all your AI agents in one place.
+metadata:
+  author: jontsai
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - command
+  - center
+  source: clawhub-community
+  clawhub_slug: command-center
+  clawhub_path: jontsai/command-center
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Command Center
+
+    # Source: ClawHub community skill by jontsai
+
+    # Install: clawhub install command-center
+
+    # Path: jontsai/command-center
+
+
+    ## Description
+
+    Mission control dashboard for OpenClaw - real-time session monitoring, LLM usage tracking, cost intelligence, and system
+    vitals. View all your AI agents in one place.
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - CODE_OF_CONDUCT.md
+
+    - CONTRIBUTING.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - eslint.config.mjs
+
+    - package-lock.json
+
+    - package.json
+
+    - config/dashboard.example.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install command-center
+
+    ```'
+examples:
+- description: Install Openclaw Command Center from ClawHub
+  usage: clawhub install command-center
+schema_version: '1.0'

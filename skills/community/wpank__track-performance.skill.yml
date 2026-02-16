@@ -1,0 +1,65 @@
+name: track-performance
+title: Uniswap Track Performance
+version: 0.1.0
+description: Track the performance of Uniswap LP positions over time — check which positions need attention, are out of range,
+  or have uncollected fees. Use when the user asks how their positions are doing.
+metadata:
+  author: wpank
+  category: Utilities
+  tags:
+  - utilities
+  - track
+  - performance
+  - '[task(subagent_type:portfolio-analyst)]'
+  source: clawhub-community
+  clawhub_slug: track-performance
+  clawhub_path: wpank/track-performance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:portfolio-analyst)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Track Performance
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install track-performance
+
+    # Path: wpank/track-performance
+
+
+    ## Description
+
+    Track the performance of Uniswap LP positions over time — check which positions need attention, are out of range, or have
+    uncollected fees. Use when the user asks how their positions are doing.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:portfolio-analyst)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install track-performance
+
+    ```'
+examples:
+- description: Install Uniswap Track Performance from ClawHub
+  usage: clawhub install track-performance
+schema_version: '1.0'

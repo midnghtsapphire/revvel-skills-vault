@@ -1,0 +1,62 @@
+name: gousto
+title: Gousto Recipes
+version: 1.0.0
+description: Search and browse 9,000+ Gousto recipes. Get full ingredients and step-by-step cooking instructions via official
+  API.
+metadata:
+  author: dhruvkelawala
+  category: Search & Research
+  tags:
+  - search-research
+  - gousto
+  source: clawhub-community
+  clawhub_slug: gousto
+  clawhub_path: dhruvkelawala/gousto
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gousto Recipes
+
+    # Source: ClawHub community skill by dhruvkelawala
+
+    # Install: clawhub install gousto
+
+    # Path: dhruvkelawala/gousto
+
+
+    ## Description
+
+    Search and browse 9,000+ Gousto recipes. Get full ingredients and step-by-step cooking instructions via official API.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/recipe.sh
+
+    - scripts/search.sh
+
+    - scripts/update-cache.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gousto
+
+    ```'
+examples:
+- description: Install Gousto Recipes from ClawHub
+  usage: clawhub install gousto
+schema_version: '1.0'

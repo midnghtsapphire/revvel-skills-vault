@@ -1,0 +1,59 @@
+name: phantombuster
+title: PhantomBuster
+version: 1.2.0
+description: Control PhantomBuster automation agents via API. List agents, launch automations, get output/results, check status,
+  and abort running agents. Use when the user needs to run LinkedIn scraping, Twitter automation, lead generation phantoms,
+  or any PhantomBuster workflow.
+metadata:
+  author: andrewdmwalker
+  category: Social Media
+  tags:
+  - social-media
+  - phantombuster
+  source: clawhub-community
+  clawhub_slug: phantombuster
+  clawhub_path: andrewdmwalker/phantombuster
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PhantomBuster
+
+    # Source: ClawHub community skill by andrewdmwalker
+
+    # Install: clawhub install phantombuster
+
+    # Path: andrewdmwalker/phantombuster
+
+
+    ## Description
+
+    Control PhantomBuster automation agents via API. List agents, launch automations, get output/results, check status, and
+    abort running agents. Use when the user needs to run LinkedIn scraping, Twitter automation, lead generation phantoms,
+    or any PhantomBuster workflow.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pb.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install phantombuster
+
+    ```'
+examples:
+- description: Install PhantomBuster from ClawHub
+  usage: clawhub install phantombuster
+schema_version: '1.0'

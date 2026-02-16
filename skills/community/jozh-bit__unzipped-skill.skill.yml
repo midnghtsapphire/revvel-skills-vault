@@ -1,0 +1,54 @@
+name: farcaster-agent
+title: Unzipped Skill
+version: 1.0.0
+description: Create Farcaster accounts and post casts autonomously. Official skill from the Farcaster team.
+metadata:
+  author: jozh-bit
+  category: General
+  tags:
+  - general
+  - farcaster
+  - agent
+  source: clawhub-community
+  clawhub_slug: unzipped-skill
+  clawhub_path: jozh-bit/unzipped-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Unzipped Skill
+
+    # Source: ClawHub community skill by jozh-bit
+
+    # Install: clawhub install unzipped-skill
+
+    # Path: jozh-bit/unzipped-skill
+
+
+    ## Description
+
+    Create Farcaster accounts and post casts autonomously. Official skill from the Farcaster team.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unzipped-skill
+
+    ```'
+examples:
+- description: Install Unzipped Skill from ClawHub
+  usage: clawhub install unzipped-skill
+schema_version: '1.0'

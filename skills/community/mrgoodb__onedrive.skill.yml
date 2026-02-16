@@ -1,0 +1,53 @@
+name: onedrive
+title: Onedrive
+version: 1.0.0
+description: Manage OneDrive files and folders via Microsoft Graph. Upload, download, and share files.
+metadata:
+  author: mrgoodb
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - onedrive
+  source: clawhub-community
+  clawhub_slug: onedrive
+  clawhub_path: mrgoodb/onedrive
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Onedrive
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install onedrive
+
+    # Path: mrgoodb/onedrive
+
+
+    ## Description
+
+    Manage OneDrive files and folders via Microsoft Graph. Upload, download, and share files.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install onedrive
+
+    ```'
+examples:
+- description: Install Onedrive from ClawHub
+  usage: clawhub install onedrive
+schema_version: '1.0'

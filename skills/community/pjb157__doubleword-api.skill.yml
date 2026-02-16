@@ -1,0 +1,62 @@
+name: doubleword-batches
+title: Doubleword API
+version: 1.0.0
+description: 'Create and manage batch inference jobs using the Doubleword API (api.doubleword.ai). Use when users want to:
+  (1) Process multiple AI requests in batch mode, (2) Submit JSONL batch files for async inference, (3) Monitor batch job
+  progress and retrieve results, (4) Work with OpenAI-compatible batch en'
+metadata:
+  author: pjb157
+  category: Media & Content
+  tags:
+  - media-content
+  - doubleword
+  - batches
+  source: clawhub-community
+  clawhub_slug: doubleword-api
+  clawhub_path: pjb157/doubleword-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Doubleword API
+
+    # Source: ClawHub community skill by pjb157
+
+    # Install: clawhub install doubleword-api
+
+    # Path: pjb157/doubleword-api
+
+
+    ## Description
+
+    Create and manage batch inference jobs using the Doubleword API (api.doubleword.ai). Use when users want to: (1) Process
+    multiple AI requests in batch mode, (2) Submit JSONL batch files for async inference, (3) Monitor batch job progress and
+    retrieve results, (4) Work with OpenAI-compatible batch en
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - scripts/create_batch_file.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install doubleword-api
+
+    ```'
+examples:
+- description: Install Doubleword API from ClawHub
+  usage: clawhub install doubleword-api
+schema_version: '1.0'

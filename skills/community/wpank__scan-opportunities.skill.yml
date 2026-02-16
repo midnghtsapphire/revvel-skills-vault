@@ -1,0 +1,65 @@
+name: scan-opportunities
+title: Uniswap Scan Opportunities
+version: 0.1.0
+description: Scan for LP opportunities, arbitrage, and high-yield pools across all Uniswap deployments. Use when the user
+  asks about the best opportunities, high-yield pools, or arbitrage.
+metadata:
+  author: wpank
+  category: Development & Coding
+  tags:
+  - development-coding
+  - scan
+  - opportunities
+  - '[task(subagent_type:opportunity-scanner)]'
+  source: clawhub-community
+  clawhub_slug: scan-opportunities
+  clawhub_path: wpank/scan-opportunities
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:opportunity-scanner)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Scan Opportunities
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install scan-opportunities
+
+    # Path: wpank/scan-opportunities
+
+
+    ## Description
+
+    Scan for LP opportunities, arbitrage, and high-yield pools across all Uniswap deployments. Use when the user asks about
+    the best opportunities, high-yield pools, or arbitrage.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:opportunity-scanner)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install scan-opportunities
+
+    ```'
+examples:
+- description: Install Uniswap Scan Opportunities from ClawHub
+  usage: clawhub install scan-opportunities
+schema_version: '1.0'

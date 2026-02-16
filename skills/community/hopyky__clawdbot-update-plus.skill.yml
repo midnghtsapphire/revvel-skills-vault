@@ -1,0 +1,71 @@
+name: clawdbot-update-plus
+title: Clawdbot Update Plus
+version: 2.1.1
+description: Full backup, update, and restore for Clawdbot - config, workspace, and skills with auto-rollback
+metadata:
+  author: hopyky
+  category: General
+  tags:
+  - general
+  - clawdbot
+  - update
+  - plus
+  source: clawhub-community
+  clawhub_slug: clawdbot-update-plus
+  clawhub_path: hopyky/clawdbot-update-plus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Update Plus
+
+    # Source: ClawHub community skill by hopyky
+
+    # Install: clawhub install clawdbot-update-plus
+
+    # Path: hopyky/clawdbot-update-plus
+
+
+    ## Description
+
+    Full backup, update, and restore for Clawdbot - config, workspace, and skills with auto-rollback
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdbot-update.example.json
+
+    - bin/lib/backup.sh
+
+    - bin/lib/config.sh
+
+    - bin/lib/cron.sh
+
+    - bin/lib/notify.sh
+
+    - bin/lib/restore.sh
+
+    - bin/lib/update.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-update-plus
+
+    ```'
+examples:
+- description: Install Clawdbot Update Plus from ClawHub
+  usage: clawhub install clawdbot-update-plus
+schema_version: '1.0'

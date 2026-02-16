@@ -1,0 +1,56 @@
+name: grafana-dashboards
+title: Grafana Dashboards
+version: 1.0.0
+description: Create and manage production Grafana dashboards for real-time visualization of system and application metrics.
+  Use when building monitoring dashboards, visualizing metrics, or creating operational observability interfaces.
+metadata:
+  author: anton-abyzov
+  category: System & OS
+  tags:
+  - system-os
+  - grafana
+  - dashboards
+  source: clawhub-community
+  clawhub_slug: sw-grafana-dashboards
+  clawhub_path: anton-abyzov/sw-grafana-dashboards
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Grafana Dashboards
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-grafana-dashboards
+
+    # Path: anton-abyzov/sw-grafana-dashboards
+
+
+    ## Description
+
+    Create and manage production Grafana dashboards for real-time visualization of system and application metrics. Use when
+    building monitoring dashboards, visualizing metrics, or creating operational observability interfaces.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-grafana-dashboards
+
+    ```'
+examples:
+- description: Install Grafana Dashboards from ClawHub
+  usage: clawhub install sw-grafana-dashboards
+schema_version: '1.0'

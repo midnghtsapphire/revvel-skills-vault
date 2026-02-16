@@ -1,0 +1,54 @@
+name: tududi
+title: tududi
+version: 1.0.1
+description: Manage tasks, projects, and notes in tududi (self-hosted task manager). Use for todo lists, task management,
+  project organization.
+metadata:
+  author: chrisvel
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - tududi
+  source: clawhub-community
+  clawhub_slug: tududi
+  clawhub_path: chrisvel/tududi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# tududi
+
+    # Source: ClawHub community skill by chrisvel
+
+    # Install: clawhub install tududi
+
+    # Path: chrisvel/tududi
+
+
+    ## Description
+
+    Manage tasks, projects, and notes in tududi (self-hosted task manager). Use for todo lists, task management, project organization.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tududi
+
+    ```'
+examples:
+- description: Install tududi from ClawHub
+  usage: clawhub install tududi
+schema_version: '1.0'

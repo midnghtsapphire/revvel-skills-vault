@@ -1,0 +1,58 @@
+name: spaces-listener
+title: Spaces Listener
+version: 0.1.4
+description: Record, transcribe, and summarize X/Twitter Spaces — live or replays. Auto-downloads audio via yt-dlp, transcribes
+  with Whisper, and generates AI summaries.
+metadata:
+  author: jamesalmeida
+  category: Media & Content
+  tags:
+  - media-content
+  - spaces
+  - listener
+  source: clawhub-community
+  clawhub_slug: spaces-listener
+  clawhub_path: jamesalmeida/spaces-listener
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Spaces Listener
+
+    # Source: ClawHub community skill by jamesalmeida
+
+    # Install: clawhub install spaces-listener
+
+    # Path: jamesalmeida/spaces-listener
+
+
+    ## Description
+
+    Record, transcribe, and summarize X/Twitter Spaces — live or replays. Auto-downloads audio via yt-dlp, transcribes with
+    Whisper, and generates AI summaries.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install spaces-listener
+
+    ```'
+examples:
+- description: Install Spaces Listener from ClawHub
+  usage: clawhub install spaces-listener
+schema_version: '1.0'

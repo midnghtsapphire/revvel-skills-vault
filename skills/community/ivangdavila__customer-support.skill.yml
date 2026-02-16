@@ -1,0 +1,54 @@
+name: customer_support
+title: Customer Support
+version: 1.0.0
+description: Resolve issues, communicate with empathy, and turn frustrated customers into loyal advocates.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - customer
+  - support
+  source: clawhub-community
+  clawhub_slug: customer-support
+  clawhub_path: ivangdavila/customer-support
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Customer Support
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install customer-support
+
+    # Path: ivangdavila/customer-support
+
+
+    ## Description
+
+    Resolve issues, communicate with empathy, and turn frustrated customers into loyal advocates.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install customer-support
+
+    ```'
+examples:
+- description: Install Customer Support from ClawHub
+  usage: clawhub install customer-support
+schema_version: '1.0'

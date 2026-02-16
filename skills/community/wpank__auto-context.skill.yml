@@ -1,0 +1,60 @@
+name: auto-context
+title: Auto Context
+version: 1.0.0
+description: Automatically read relevant context before major actions. Loads TODO.md, roadmap.md, handoffs, task plans, and
+  other project context files so the AI operates with full situational awareness. Use when starting a task, implementing a
+  feature, refactoring, debugging, planning, or resuming a session.
+metadata:
+  author: wpank
+  category: Development & Coding
+  tags:
+  - development-coding
+  - auto
+  - context
+  source: clawhub-community
+  clawhub_slug: auto-context
+  clawhub_path: wpank/auto-context
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Auto Context
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install auto-context
+
+    # Path: wpank/auto-context
+
+
+    ## Description
+
+    Automatically read relevant context before major actions. Loads TODO.md, roadmap.md, handoffs, task plans, and other project
+    context files so the AI operates with full situational awareness. Use when starting a task, implementing a feature, refactoring,
+    debugging, planning, or resuming a session.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install auto-context
+
+    ```'
+examples:
+- description: Install Auto Context from ClawHub
+  usage: clawhub install auto-context
+schema_version: '1.0'

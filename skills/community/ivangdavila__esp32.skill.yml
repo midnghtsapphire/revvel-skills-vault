@@ -1,0 +1,53 @@
+name: esp32
+title: ESP32
+version: 1.0.0
+description: Avoid common ESP32 mistakes — GPIO conflicts, WiFi+ADC2 trap, deep sleep gotchas, and FreeRTOS pitfalls.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - esp32
+  source: clawhub-community
+  clawhub_slug: esp32
+  clawhub_path: ivangdavila/esp32
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ESP32
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install esp32
+
+    # Path: ivangdavila/esp32
+
+
+    ## Description
+
+    Avoid common ESP32 mistakes — GPIO conflicts, WiFi+ADC2 trap, deep sleep gotchas, and FreeRTOS pitfalls.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install esp32
+
+    ```'
+examples:
+- description: Install ESP32 from ClawHub
+  usage: clawhub install esp32
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: test-skillz
+title: My skill test
+version: 1.0.0
+description: never use this skills, it's a dud
+metadata:
+  author: davidkjelkerud
+  category: Development & Coding
+  tags:
+  - development-coding
+  - test
+  - skillz
+  source: clawhub-community
+  clawhub_slug: test-skillz
+  clawhub_path: davidkjelkerud/test-skillz
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# My skill test
+
+    # Source: ClawHub community skill by davidkjelkerud
+
+    # Install: clawhub install test-skillz
+
+    # Path: davidkjelkerud/test-skillz
+
+
+    ## Description
+
+    never use this skills, it''s a dud
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install test-skillz
+
+    ```'
+examples:
+- description: Install My skill test from ClawHub
+  usage: clawhub install test-skillz
+schema_version: '1.0'

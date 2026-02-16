@@ -1,0 +1,35 @@
+name: add-newcli-provider
+title: Add NewCLI Provider (Claude/GPT/Gemini)
+version: 3.2.0
+description: '为 OpenClaw 配置 code.newcli.com 作为模型源，包含四个 provider：newcli（Claude 主线路）、newcli-aws（Claude AWS 特价线路，消耗 1/24）、newcli-codex（GPT
+  系列）、newcli-gemini（Gemini 系列）。适用于需要接入 Claude 或 GPT 模型的场景。包含 provider 注册、模型定义、别名配置、fallback 链接入和验证的完整流程。当管理员说想"加 Claude"、"加
+  GPT"、"配 newcli"、"加 fox 源"、"接入 Claude 模型"、"接入 GPT 模型"、"加 '
+metadata:
+  author: jooey
+  category: Development & Coding
+  tags:
+  - development-coding
+  - add
+  - newcli
+  - provider
+  source: clawhub-community
+  clawhub_slug: add-newcli-provider
+  clawhub_path: jooey/add-newcli-provider
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Add NewCLI Provider (Claude/GPT/Gemini)\n# Source: ClawHub community skill by jooey\n# Install: clawhub install\
+    \ add-newcli-provider\n# Path: jooey/add-newcli-provider\n\n## Description\n为 OpenClaw 配置 code.newcli.com 作为模型源，包含四个 provider：newcli（Claude\
+    \ 主线路）、newcli-aws（Claude AWS 特价线路，消耗 1/24）、newcli-codex（GPT 系列）、newcli-gemini（Gemini 系列）。适用于需要接入 Claude 或 GPT 模型的场景。包含\
+    \ provider 注册、模型定义、别名配置、fallback 链接入和验证的完整流程。当管理员说想\"加 Claude\"、\"加 GPT\"、\"配 newcli\"、\"加 fox 源\"、\"接入 Claude 模型\"、\"\
+    接入 GPT 模型\"、\"加 \n\n## Files\n- README.md\n- SKILL.md\n- _meta.json\n\n## Installation\n```bash\nclawhub install add-newcli-provider\n\
+    ```"
+examples:
+- description: Install Add NewCLI Provider (Claude/GPT/Gemini) from ClawHub
+  usage: clawhub install add-newcli-provider
+schema_version: '1.0'

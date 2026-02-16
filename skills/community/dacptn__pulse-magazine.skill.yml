@@ -1,0 +1,57 @@
+name: pulse
+title: PULSE Magazine
+version: 1.0.1
+description: Access PULSE Magazine intelligence reports and real-time agentic meta-analysis. Chronicling the rise of the autonomous
+  economy.
+metadata:
+  author: dacptn
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - pulse
+  source: clawhub-community
+  clawhub_slug: pulse-magazine
+  clawhub_path: dacptn/pulse-magazine
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PULSE Magazine
+
+    # Source: ClawHub community skill by dacptn
+
+    # Install: clawhub install pulse-magazine
+
+    # Path: dacptn/pulse-magazine
+
+
+    ## Description
+
+    Access PULSE Magazine intelligence reports and real-time agentic meta-analysis. Chronicling the rise of the autonomous
+    economy.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pulse_tool.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pulse-magazine
+
+    ```'
+examples:
+- description: Install PULSE Magazine from ClawHub
+  usage: clawhub install pulse-magazine
+schema_version: '1.0'

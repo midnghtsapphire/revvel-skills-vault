@@ -1,0 +1,74 @@
+name: self-improvement
+title: self-improving-agent
+version: 1.0.5
+description: '"Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation
+  fails unexpectedly, (2) User corrects Claude (''No, that''s wrong...'', ''Actually...''), (3) User requests a capability
+  that doesn''t exist, (4) An external API or tool fails, (5) Claude re'
+metadata:
+  author: pskoett
+  category: Development & Coding
+  tags:
+  - development-coding
+  - self
+  - improvement
+  source: clawhub-community
+  clawhub_slug: self-improving-agent
+  clawhub_path: pskoett/self-improving-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# self-improving-agent
+
+    # Source: ClawHub community skill by pskoett
+
+    # Install: clawhub install self-improving-agent
+
+    # Path: pskoett/self-improving-agent
+
+
+    ## Description
+
+    "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails
+    unexpectedly, (2) User corrects Claude (''No, that''s wrong...'', ''Actually...''), (3) User requests a capability that
+    doesn''t exist, (4) An external API or tool fails, (5) Claude re
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - .learnings/ERRORS.md
+
+    - .learnings/FEATURE_REQUESTS.md
+
+    - .learnings/LEARNINGS.md
+
+    - assets/LEARNINGS.md
+
+    - assets/SKILL-TEMPLATE.md
+
+    - hooks/openclaw/HOOK.md
+
+    - hooks/openclaw/handler.js
+
+    - hooks/openclaw/handler.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install self-improving-agent
+
+    ```'
+examples:
+- description: Install self-improving-agent from ClawHub
+  usage: clawhub install self-improving-agent
+schema_version: '1.0'

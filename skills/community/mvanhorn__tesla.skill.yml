@@ -1,0 +1,55 @@
+name: tesla
+title: OpenClaw Tesla
+version: 1.0.4
+description: Control your Tesla vehicles - lock/unlock, climate, location, charge status, and more. Supports multiple vehicles.
+metadata:
+  author: mvanhorn
+  category: General
+  tags:
+  - general
+  - tesla
+  source: clawhub-community
+  clawhub_slug: tesla
+  clawhub_path: mvanhorn/tesla
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Tesla
+
+    # Source: ClawHub community skill by mvanhorn
+
+    # Install: clawhub install tesla
+
+    # Path: mvanhorn/tesla
+
+
+    ## Description
+
+    Control your Tesla vehicles - lock/unlock, climate, location, charge status, and more. Supports multiple vehicles.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tesla.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tesla
+
+    ```'
+examples:
+- description: Install OpenClaw Tesla from ClawHub
+  usage: clawhub install tesla
+schema_version: '1.0'

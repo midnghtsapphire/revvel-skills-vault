@@ -1,0 +1,58 @@
+name: conversation-summary
+title: Conversation Summary
+version: 1.0.0
+description: '"Previous summary for incremental update (optional)"'
+metadata:
+  author: dadaliu0121
+  category: General
+  tags:
+  - general
+  - conversation
+  - summary
+  source: clawhub-community
+  clawhub_slug: dada-conversation-summary
+  clawhub_path: dadaliu0121/dada-conversation-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Conversation Summary
+
+    # Source: ClawHub community skill by dadaliu0121
+
+    # Install: clawhub install dada-conversation-summary
+
+    # Path: dadaliu0121/dada-conversation-summary
+
+
+    ## Description
+
+    "Previous summary for incremental update (optional)"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/conversation_summary.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dada-conversation-summary
+
+    ```'
+examples:
+- description: Install Conversation Summary from ClawHub
+  usage: clawhub install dada-conversation-summary
+schema_version: '1.0'

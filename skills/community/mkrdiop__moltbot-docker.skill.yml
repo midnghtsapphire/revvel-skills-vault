@@ -1,0 +1,54 @@
+name: docker_manager
+title: MoltDocker
+version: 1.0.0
+description: Enables the bot to manage Docker containers, images, and stacks.
+metadata:
+  author: mkrdiop
+  category: Media & Content
+  tags:
+  - media-content
+  - docker
+  - manager
+  source: clawhub-community
+  clawhub_slug: moltbot-docker
+  clawhub_path: mkrdiop/moltbot-docker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MoltDocker
+
+    # Source: ClawHub community skill by mkrdiop
+
+    # Install: clawhub install moltbot-docker
+
+    # Path: mkrdiop/moltbot-docker
+
+
+    ## Description
+
+    Enables the bot to manage Docker containers, images, and stacks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbot-docker
+
+    ```'
+examples:
+- description: Install MoltDocker from ClawHub
+  usage: clawhub install moltbot-docker
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: perry-workspaces
+title: Perry Workspaces
+version: 1.1.0
+description: Create and manage isolated Docker workspaces on your tailnet with Claude Code and OpenCode pre-installed. Use
+  when working with Perry workspaces, connecting to coding agents, or managing remote development environments.
+metadata:
+  author: gricha
+  category: Development & Coding
+  tags:
+  - development-coding
+  - perry
+  - workspaces
+  source: clawhub-community
+  clawhub_slug: perry-workspaces
+  clawhub_path: gricha/perry-workspaces
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Perry Workspaces
+
+    # Source: ClawHub community skill by gricha
+
+    # Install: clawhub install perry-workspaces
+
+    # Path: gricha/perry-workspaces
+
+
+    ## Description
+
+    Create and manage isolated Docker workspaces on your tailnet with Claude Code and OpenCode pre-installed. Use when working
+    with Perry workspaces, connecting to coding agents, or managing remote development environments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install perry-workspaces
+
+    ```'
+examples:
+- description: Install Perry Workspaces from ClawHub
+  usage: clawhub install perry-workspaces
+schema_version: '1.0'

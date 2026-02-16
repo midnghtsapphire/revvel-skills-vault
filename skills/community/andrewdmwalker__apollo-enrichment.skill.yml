@@ -1,0 +1,59 @@
+name: apollo
+title: Apollo.io Enrichment
+version: 1.3.0
+description: Apollo.io contact and company enrichment API. Enrich people with email, phone, title, company data. Enrich organizations
+  with industry, revenue, employee count, funding. Search for prospects. Use when the user needs to enrich contacts, find
+  emails, lookup company info, or search for leads.
+metadata:
+  author: andrewdmwalker
+  category: Search & Research
+  tags:
+  - search-research
+  - apollo
+  source: clawhub-community
+  clawhub_slug: apollo-enrichment
+  clawhub_path: andrewdmwalker/apollo-enrichment
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apollo.io Enrichment
+
+    # Source: ClawHub community skill by andrewdmwalker
+
+    # Install: clawhub install apollo-enrichment
+
+    # Path: andrewdmwalker/apollo-enrichment
+
+
+    ## Description
+
+    Apollo.io contact and company enrichment API. Enrich people with email, phone, title, company data. Enrich organizations
+    with industry, revenue, employee count, funding. Search for prospects. Use when the user needs to enrich contacts, find
+    emails, lookup company info, or search for leads.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - apollo.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apollo-enrichment
+
+    ```'
+examples:
+- description: Install Apollo.io Enrichment from ClawHub
+  usage: clawhub install apollo-enrichment
+schema_version: '1.0'

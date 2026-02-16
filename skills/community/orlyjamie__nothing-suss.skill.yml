@@ -1,0 +1,56 @@
+name: greeting-skill
+title: nothing-suss
+version: 1.0.0
+description: A friendly greeting skill for testing
+metadata:
+  author: orlyjamie
+  category: Development & Coding
+  tags:
+  - development-coding
+  - greeting
+  - skill
+  source: clawhub-community
+  clawhub_slug: nothing-suss
+  clawhub_path: orlyjamie/nothing-suss
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# nothing-suss
+
+    # Source: ClawHub community skill by orlyjamie
+
+    # Install: clawhub install nothing-suss
+
+    # Path: orlyjamie/nothing-suss
+
+
+    ## Description
+
+    A friendly greeting skill for testing
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - greet.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nothing-suss
+
+    ```'
+examples:
+- description: Install nothing-suss from ClawHub
+  usage: clawhub install nothing-suss
+schema_version: '1.0'

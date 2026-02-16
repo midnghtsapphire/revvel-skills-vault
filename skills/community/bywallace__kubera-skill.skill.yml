@@ -1,0 +1,61 @@
+name: kubera
+title: Kubera
+version: 1.0.0
+description: Read and manage Kubera.com portfolio data (net worth, assets, debts, allocation, holdings). Use when a user asks
+  about their finances, net worth, portfolio, investments, holdings, asset allocation, or wants to update asset values in
+  Kubera. Works with any AI agent or CLI that can run Python scripts.
+metadata:
+  author: bywallace
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - kubera
+  source: clawhub-community
+  clawhub_slug: kubera-skill
+  clawhub_path: bywallace/kubera-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kubera
+
+    # Source: ClawHub community skill by bywallace
+
+    # Install: clawhub install kubera-skill
+
+    # Path: bywallace/kubera-skill
+
+
+    ## Description
+
+    Read and manage Kubera.com portfolio data (net worth, assets, debts, allocation, holdings). Use when a user asks about
+    their finances, net worth, portfolio, investments, holdings, asset allocation, or wants to update asset values in Kubera.
+    Works with any AI agent or CLI that can run Python scripts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/kubera.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kubera-skill
+
+    ```'
+examples:
+- description: Install Kubera from ClawHub
+  usage: clawhub install kubera-skill
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: token-optimizer
+title: Token Optimizer
+version: 1.2.8
+description: Reduce OpenClaw token usage and API costs through smart model routing, heartbeat optimization, budget tracking,
+  and multi-provider fallbacks. Use when token costs are high, API rate limits are being hit, or hosting multiple agents at
+  scale. Includes ready-to-use scripts for task classification, usag
+metadata:
+  author: asif2bd
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - token
+  - optimizer
+  source: clawhub-community
+  clawhub_slug: openclaw-token-optimizer
+  clawhub_path: asif2bd/openclaw-token-optimizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Token Optimizer
+
+    # Source: ClawHub community skill by asif2bd
+
+    # Install: clawhub install openclaw-token-optimizer
+
+    # Path: asif2bd/openclaw-token-optimizer
+
+
+    ## Description
+
+    Reduce OpenClaw token usage and API costs through smart model routing, heartbeat optimization, budget tracking, and multi-provider
+    fallbacks. Use when token costs are high, API rate limits are being hit, or hosting multiple agents at scale. Includes
+    ready-to-use scripts for task classification, usag
+
+
+    ## Files
+
+    - README.md
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/HEARTBEAT.template.md
+
+    - assets/config-patches.json
+
+    - assets/cronjob-model-guide.md
+
+    - references/PROVIDERS.md
+
+    - scripts/context_optimizer.py
+
+    - scripts/heartbeat_optimizer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-token-optimizer
+
+    ```'
+examples:
+- description: Install Token Optimizer from ClawHub
+  usage: clawhub install openclaw-token-optimizer
+schema_version: '1.0'

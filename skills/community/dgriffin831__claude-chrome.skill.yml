@@ -1,0 +1,56 @@
+name: claude-chrome
+title: Claude Chrome
+version: 1.0.0
+description: Use Claude Code with Chrome browser extension for web browsing and automation tasks. Alternative to OpenClaw's
+  built-in browser tools.
+metadata:
+  author: dgriffin831
+  category: Search & Research
+  tags:
+  - search-research
+  - claude
+  - chrome
+  source: clawhub-community
+  clawhub_slug: claude-chrome
+  clawhub_path: dgriffin831/claude-chrome
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claude Chrome
+
+    # Source: ClawHub community skill by dgriffin831
+
+    # Install: clawhub install claude-chrome
+
+    # Path: dgriffin831/claude-chrome
+
+
+    ## Description
+
+    Use Claude Code with Chrome browser extension for web browsing and automation tasks. Alternative to OpenClaw''s built-in
+    browser tools.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claude-chrome
+
+    ```'
+examples:
+- description: Install Claude Chrome from ClawHub
+  usage: clawhub install claude-chrome
+schema_version: '1.0'

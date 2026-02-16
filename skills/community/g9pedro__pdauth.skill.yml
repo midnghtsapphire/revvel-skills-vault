@@ -1,0 +1,55 @@
+name: pdauth
+title: Pdauth
+version: 1.0.0
+description: Dynamic OAuth for AI agents via Pipedream. Generate OAuth links for 2500+ APIs, let users authorize, then call
+  MCP tools on their behalf.
+metadata:
+  author: g9pedro
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - pdauth
+  source: clawhub-community
+  clawhub_slug: pdauth
+  clawhub_path: g9pedro/pdauth
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pdauth
+
+    # Source: ClawHub community skill by g9pedro
+
+    # Install: clawhub install pdauth
+
+    # Path: g9pedro/pdauth
+
+
+    ## Description
+
+    Dynamic OAuth for AI agents via Pipedream. Generate OAuth links for 2500+ APIs, let users authorize, then call MCP tools
+    on their behalf.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pdauth
+
+    ```'
+examples:
+- description: Install Pdauth from ClawHub
+  usage: clawhub install pdauth
+schema_version: '1.0'

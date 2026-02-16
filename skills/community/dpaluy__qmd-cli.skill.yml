@@ -1,0 +1,57 @@
+name: qmd
+title: QMD CLI
+version: 1.1.0
+description: Search and retrieve markdown documents from local knowledge bases using qmd. Supports BM25 keyword search, vector
+  semantic search, and hybrid search with LLM re-ranking. Use for querying indexed notes, documentation, meeting transcripts,
+  and any markdown-based knowledge. Requires qmd CLI installed (
+metadata:
+  author: dpaluy
+  category: Search & Research
+  tags:
+  - search-research
+  - qmd
+  source: clawhub-community
+  clawhub_slug: qmd-cli
+  clawhub_path: dpaluy/qmd-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# QMD CLI
+
+    # Source: ClawHub community skill by dpaluy
+
+    # Install: clawhub install qmd-cli
+
+    # Path: dpaluy/qmd-cli
+
+
+    ## Description
+
+    Search and retrieve markdown documents from local knowledge bases using qmd. Supports BM25 keyword search, vector semantic
+    search, and hybrid search with LLM re-ranking. Use for querying indexed notes, documentation, meeting transcripts, and
+    any markdown-based knowledge. Requires qmd CLI installed (
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qmd-cli
+
+    ```'
+examples:
+- description: Install QMD CLI from ClawHub
+  usage: clawhub install qmd-cli
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: video-dl
+title: Video Dl
+version: 1.1.0
+description: Download videos from YouTube, Reddit, Twitter/X, TikTok, Instagram, and 1000+ other sites using yt-dlp. Use when
+  user provides a video link and wants to download it.
+metadata:
+  author: dimitryvin
+  category: Media & Content
+  tags:
+  - media-content
+  - video
+  source: clawhub-community
+  clawhub_slug: video-dl
+  clawhub_path: dimitryvin/video-dl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Video Dl
+
+    # Source: ClawHub community skill by dimitryvin
+
+    # Install: clawhub install video-dl
+
+    # Path: dimitryvin/video-dl
+
+
+    ## Description
+
+    Download videos from YouTube, Reddit, Twitter/X, TikTok, Instagram, and 1000+ other sites using yt-dlp. Use when user
+    provides a video link and wants to download it.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/compress-and-send.sh
+
+    - scripts/download.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install video-dl
+
+    ```'
+examples:
+- description: Install Video Dl from ClawHub
+  usage: clawhub install video-dl
+schema_version: '1.0'

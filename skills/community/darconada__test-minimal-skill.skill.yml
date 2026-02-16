@@ -1,0 +1,54 @@
+name: test-skill
+title: Test Minimal
+version: 1.0.0
+description: A minimal test skill
+metadata:
+  author: darconada
+  category: Development & Coding
+  tags:
+  - development-coding
+  - test
+  - skill
+  source: clawhub-community
+  clawhub_slug: test-minimal-skill
+  clawhub_path: darconada/test-minimal-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Test Minimal
+
+    # Source: ClawHub community skill by darconada
+
+    # Install: clawhub install test-minimal-skill
+
+    # Path: darconada/test-minimal-skill
+
+
+    ## Description
+
+    A minimal test skill
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install test-minimal-skill
+
+    ```'
+examples:
+- description: Install Test Minimal from ClawHub
+  usage: clawhub install test-minimal-skill
+schema_version: '1.0'

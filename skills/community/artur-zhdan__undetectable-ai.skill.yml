@@ -1,0 +1,67 @@
+name: undetectable-ai
+title: Undetectable AI
+version: 1.0.0
+description: Make AI text undetectable. TypeScript CLI that scans ChatGPT, Claude, OpenClaw output for patterns flagged by
+  GPTZero, Turnitin, Originality.ai, then auto-fixes them to pass as human-written. Use to bypass AI detection, evade checkers,
+  or humanize text before submission.
+metadata:
+  author: artur-zhdan
+  category: Communication
+  tags:
+  - communication
+  - undetectable
+  source: clawhub-community
+  clawhub_slug: undetectable-ai
+  clawhub_path: artur-zhdan/undetectable-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Undetectable AI
+
+    # Source: ClawHub community skill by artur-zhdan
+
+    # Install: clawhub install undetectable-ai
+
+    # Path: artur-zhdan/undetectable-ai
+
+
+    ## Description
+
+    Make AI text undetectable. TypeScript CLI that scans ChatGPT, Claude, OpenClaw output for patterns flagged by GPTZero,
+    Turnitin, Originality.ai, then auto-fixes them to pass as human-written. Use to bypass AI detection, evade checkers, or
+    humanize text before submission.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/analyze.ts
+
+    - scripts/patterns.json
+
+    - scripts/transform.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install undetectable-ai
+
+    ```'
+examples:
+- description: Install Undetectable AI from ClawHub
+  usage: clawhub install undetectable-ai
+schema_version: '1.0'

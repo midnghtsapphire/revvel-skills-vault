@@ -1,0 +1,64 @@
+name: triple-memory
+title: Triple Memory
+version: 1.0.0
+description: Complete memory system combining LanceDB auto-recall, Git-Notes structured memory, and file-based workspace search.
+  Use when setting up comprehensive agent memory, when you need persistent context across sessions, or when managing decisions/preferences/tasks
+  with multiple memory backends working tog
+metadata:
+  author: ktpriyatham
+  category: Search & Research
+  tags:
+  - search-research
+  - triple
+  - memory
+  source: clawhub-community
+  clawhub_slug: triple-memory-skill
+  clawhub_path: ktpriyatham/triple-memory-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Triple Memory
+
+    # Source: ClawHub community skill by ktpriyatham
+
+    # Install: clawhub install triple-memory-skill
+
+    # Path: ktpriyatham/triple-memory-skill
+
+
+    ## Description
+
+    Complete memory system combining LanceDB auto-recall, Git-Notes structured memory, and file-based workspace search. Use
+    when setting up comprehensive agent memory, when you need persistent context across sessions, or when managing decisions/preferences/tasks
+    with multiple memory backends working tog
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/SETUP.md
+
+    - references/auto-flush-config.json
+
+    - scripts/file-search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install triple-memory-skill
+
+    ```'
+examples:
+- description: Install Triple Memory from ClawHub
+  usage: clawhub install triple-memory-skill
+schema_version: '1.0'

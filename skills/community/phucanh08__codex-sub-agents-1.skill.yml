@@ -1,0 +1,60 @@
+name: codex-cli
+title: Codex Sub Agents 1
+version: 1.0.1
+description: '"Use OpenAI Codex CLI for coding tasks. Triggers: codex, code review, fix CI, refactor code, implement feature,
+  coding agent, gpt-5-codex. Enables Clawdbot to delegate coding work to Codex CLI as a subagent or direct tool."'
+metadata:
+  author: phucanh08
+  category: Development & Coding
+  tags:
+  - development-coding
+  - codex
+  - cli
+  source: clawhub-community
+  clawhub_slug: codex-sub-agents-1
+  clawhub_path: phucanh08/codex-sub-agents-1
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Codex Sub Agents 1
+
+    # Source: ClawHub community skill by phucanh08
+
+    # Install: clawhub install codex-sub-agents-1
+
+    # Path: phucanh08/codex-sub-agents-1
+
+
+    ## Description
+
+    "Use OpenAI Codex CLI for coding tasks. Triggers: codex, code review, fix CI, refactor code, implement feature, coding
+    agent, gpt-5-codex. Enables Clawdbot to delegate coding work to Codex CLI as a subagent or direct tool."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdbot-integration.md
+
+    - cli-reference.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install codex-sub-agents-1
+
+    ```'
+examples:
+- description: Install Codex Sub Agents 1 from ClawHub
+  usage: clawhub install codex-sub-agents-1
+schema_version: '1.0'

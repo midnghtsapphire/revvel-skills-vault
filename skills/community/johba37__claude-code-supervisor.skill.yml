@@ -1,0 +1,71 @@
+name: claude-code-supervisor
+title: Claude Code Supervisor
+version: 1.0.0
+description: '>'
+metadata:
+  author: johba37
+  category: Development & Coding
+  tags:
+  - development-coding
+  - claude
+  - code
+  - supervisor
+  source: clawhub-community
+  clawhub_slug: claude-code-supervisor
+  clawhub_path: johba37/claude-code-supervisor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claude Code Supervisor
+
+    # Source: ClawHub community skill by johba37
+
+    # Install: clawhub install claude-code-supervisor
+
+    # Path: johba37/claude-code-supervisor
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/supervisor-state.template.json
+
+    - references/escalation-rules.md
+
+    - references/state-patterns.md
+
+    - scripts/install-hooks.sh
+
+    - scripts/lib.sh
+
+    - scripts/triage.sh
+
+    - scripts/watchdog.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claude-code-supervisor
+
+    ```'
+examples:
+- description: Install Claude Code Supervisor from ClawHub
+  usage: clawhub install claude-code-supervisor
+schema_version: '1.0'

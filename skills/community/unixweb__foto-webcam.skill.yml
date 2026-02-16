@@ -1,0 +1,60 @@
+name: foto-webcam
+title: Foto Webcam
+version: 1.0.0
+description: Liste und Snapshot-Abruf von Webcams (insb. foto-webcam.eu). Verwende diese Skill-Anleitung, wenn John „webcam
+  <nummer>“ schreibt, eine Webcam-Favoritenliste pflegen will, oder wenn ein aktuelles Snapshot-Bild von einer foto-webcam.eu
+  Webcam als JPG im Chat gesendet werden soll.
+metadata:
+  author: unixweb
+  category: Communication
+  tags:
+  - communication
+  - foto
+  - webcam
+  source: clawhub-community
+  clawhub_slug: foto-webcam
+  clawhub_path: unixweb/foto-webcam
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Foto Webcam
+
+    # Source: ClawHub community skill by unixweb
+
+    # Install: clawhub install foto-webcam
+
+    # Path: unixweb/foto-webcam
+
+
+    ## Description
+
+    Liste und Snapshot-Abruf von Webcams (insb. foto-webcam.eu). Verwende diese Skill-Anleitung, wenn John „webcam <nummer>“
+    schreibt, eine Webcam-Favoritenliste pflegen will, oder wenn ein aktuelles Snapshot-Bild von einer foto-webcam.eu Webcam
+    als JPG im Chat gesendet werden soll.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/foto_webcam_snapshot.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install foto-webcam
+
+    ```'
+examples:
+- description: Install Foto Webcam from ClawHub
+  usage: clawhub install foto-webcam
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: adhd-assistant
+title: ADHD Assistant
+version: 1.0.0
+description: ADHD-friendly life management assistant for OpenClaw. Helps with daily planning, task breakdown, time management,
+  prioritization, body doubling, dopamine regulation, and maintaining routines. Use when the user asks for help organizing
+  their life, staying on top of tasks, beating procrastination, pla
+metadata:
+  author: thinktankmachine
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - adhd
+  - assistant
+  source: clawhub-community
+  clawhub_slug: adhd-assistant
+  clawhub_path: thinktankmachine/adhd-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ADHD Assistant
+
+    # Source: ClawHub community skill by thinktankmachine
+
+    # Install: clawhub install adhd-assistant
+
+    # Path: thinktankmachine/adhd-assistant
+
+
+    ## Description
+
+    ADHD-friendly life management assistant for OpenClaw. Helps with daily planning, task breakdown, time management, prioritization,
+    body doubling, dopamine regulation, and maintaining routines. Use when the user asks for help organizing their life, staying
+    on top of tasks, beating procrastination, pla
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install adhd-assistant
+
+    ```'
+examples:
+- description: Install ADHD Assistant from ClawHub
+  usage: clawhub install adhd-assistant
+schema_version: '1.0'

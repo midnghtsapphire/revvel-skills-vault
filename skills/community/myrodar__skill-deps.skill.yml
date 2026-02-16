@@ -1,0 +1,70 @@
+name: skill-deps
+title: Skill Dependencies
+version: 1.0.0
+description: Track and manage dependencies between OpenClaw skills. Scan skills for dependencies, visualize skill trees, detect
+  circular dependencies, and manage skill versioning. Use when analyzing skill relationships, checking which skills depend
+  on others, or managing skill installations.
+metadata:
+  author: myrodar
+  category: General
+  tags:
+  - general
+  - skill
+  - deps
+  source: clawhub-community
+  clawhub_slug: skill-deps
+  clawhub_path: myrodar/skill-deps
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Dependencies
+
+    # Source: ClawHub community skill by myrodar
+
+    # Install: clawhub install skill-deps
+
+    # Path: myrodar/skill-deps
+
+
+    ## Description
+
+    Track and manage dependencies between OpenClaw skills. Scan skills for dependencies, visualize skill trees, detect circular
+    dependencies, and manage skill versioning. Use when analyzing skill relationships, checking which skills depend on others,
+    or managing skill installations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check-conflicts.sh
+
+    - scripts/check-deps.sh
+
+    - scripts/scan-skills.sh
+
+    - scripts/skill-install.sh
+
+    - scripts/skill-search.sh
+
+    - scripts/skill-tree.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-deps
+
+    ```'
+examples:
+- description: Install Skill Dependencies from ClawHub
+  usage: clawhub install skill-deps
+schema_version: '1.0'

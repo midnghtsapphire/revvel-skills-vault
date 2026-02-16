@@ -1,0 +1,69 @@
+name: deploy-router
+title: Deploy Router
+version: 1.0.0
+description: Deployment platform router - Vercel vs Cloudflare vs GitHub Pages. Analyzes framework, SEO needs, repo visibility.
+  Use for "where to deploy" decisions.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - deploy
+  - router
+  - read
+  - grep
+  - glob
+  - bash
+  source: clawhub-community
+  clawhub_slug: sw-deploy-router
+  clawhub_path: anton-abyzov/sw-deploy-router
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Deploy Router
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-deploy-router
+
+    # Path: anton-abyzov/sw-deploy-router
+
+
+    ## Description
+
+    Deployment platform router - Vercel vs Cloudflare vs GitHub Pages. Analyzes framework, SEO needs, repo visibility. Use
+    for "where to deploy" decisions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Grep, Glob, Bash
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-deploy-router
+
+    ```'
+examples:
+- description: Install Deploy Router from ClawHub
+  usage: clawhub install sw-deploy-router
+schema_version: '1.0'

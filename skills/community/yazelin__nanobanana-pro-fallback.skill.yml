@@ -1,0 +1,63 @@
+name: nanobanana-pro-fallback
+title: Nanobanana Pro
+version: 0.4.4
+description: '"Nano Banana Pro with auto model fallback — generate/edit images via Gemini Image API. Run via: uv run {baseDir}/scripts/generate_image.py
+  --prompt ''desc'' --filename ''out.png'' [--resolution 1K|2K|4K] [-i input.png]. Supports text-to-image + image-to-image
+  (up to 14); 1K/2K/4K. Fallback chain: gemini'
+metadata:
+  author: yazelin
+  category: Media & Content
+  tags:
+  - media-content
+  - nanobanana
+  - pro
+  - fallback
+  source: clawhub-community
+  clawhub_slug: nanobanana-pro-fallback
+  clawhub_path: yazelin/nanobanana-pro-fallback
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nanobanana Pro
+
+    # Source: ClawHub community skill by yazelin
+
+    # Install: clawhub install nanobanana-pro-fallback
+
+    # Path: yazelin/nanobanana-pro-fallback
+
+
+    ## Description
+
+    "Nano Banana Pro with auto model fallback — generate/edit images via Gemini Image API. Run via: uv run {baseDir}/scripts/generate_image.py
+    --prompt ''desc'' --filename ''out.png'' [--resolution 1K|2K|4K] [-i input.png]. Supports text-to-image + image-to-image
+    (up to 14); 1K/2K/4K. Fallback chain: gemini
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_image.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nanobanana-pro-fallback
+
+    ```'
+examples:
+- description: Install Nanobanana Pro from ClawHub
+  usage: clawhub install nanobanana-pro-fallback
+schema_version: '1.0'

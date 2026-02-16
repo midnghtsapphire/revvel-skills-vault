@@ -1,0 +1,65 @@
+name: agent_browser
+title: tekin
+version: 1.0.0
+description: A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click,
+  type, and snapshot pages via structured commands.
+metadata:
+  author: gwqwghksvq-sketch
+  category: Search & Research
+  tags:
+  - search-research
+  - agent
+  - browser
+  - bash(agent-browser:*)
+  source: clawhub-community
+  clawhub_slug: tekin
+  clawhub_path: gwqwghksvq-sketch/tekin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(agent-browser:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# tekin
+
+    # Source: ClawHub community skill by gwqwghksvq-sketch
+
+    # Install: clawhub install tekin
+
+    # Path: gwqwghksvq-sketch/tekin
+
+
+    ## Description
+
+    A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type,
+    and snapshot pages via structured commands.
+
+
+    ## Files
+
+    - CONTRIBUTING.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(agent-browser:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tekin
+
+    ```'
+examples:
+- description: Install tekin from ClawHub
+  usage: clawhub install tekin
+schema_version: '1.0'

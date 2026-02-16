@@ -1,0 +1,66 @@
+name: feishu-bridge
+title: Feishu Bridge
+version: 1.0.0
+description: Connect a Feishu (Lark) bot to Clawdbot via WebSocket long-connection. No public server, domain, or ngrok required.
+  Use when setting up Feishu/Lark as a messaging channel, troubleshooting the Feishu bridge, or managing the bridge service
+  (start/stop/logs). Covers bot creation on Feishu Open Platform
+metadata:
+  author: alexanys
+  category: Communication
+  tags:
+  - communication
+  - feishu
+  - bridge
+  source: clawhub-community
+  clawhub_slug: feishu-bridge
+  clawhub_path: alexanys/feishu-bridge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feishu Bridge
+
+    # Source: ClawHub community skill by alexanys
+
+    # Install: clawhub install feishu-bridge
+
+    # Path: alexanys/feishu-bridge
+
+
+    ## Description
+
+    Connect a Feishu (Lark) bot to Clawdbot via WebSocket long-connection. No public server, domain, or ngrok required. Use
+    when setting up Feishu/Lark as a messaging channel, troubleshooting the Feishu bridge, or managing the bridge service
+    (start/stop/logs). Covers bot creation on Feishu Open Platform
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bridge.mjs
+
+    - package.json
+
+    - setup-service.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-bridge
+
+    ```'
+examples:
+- description: Install Feishu Bridge from ClawHub
+  usage: clawhub install feishu-bridge
+schema_version: '1.0'

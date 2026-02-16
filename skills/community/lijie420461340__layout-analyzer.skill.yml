@@ -1,0 +1,53 @@
+name: surya
+title: Layout Analyzer
+version: 1.0.0
+description: Analyze document structure and layout using surya - detect text blocks, tables, and reading order
+metadata:
+  author: lijie420461340
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - surya
+  source: clawhub-community
+  clawhub_slug: layout-analyzer
+  clawhub_path: lijie420461340/layout-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Layout Analyzer
+
+    # Source: ClawHub community skill by lijie420461340
+
+    # Install: clawhub install layout-analyzer
+
+    # Path: lijie420461340/layout-analyzer
+
+
+    ## Description
+
+    Analyze document structure and layout using surya - detect text blocks, tables, and reading order
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install layout-analyzer
+
+    ```'
+examples:
+- description: Install Layout Analyzer from ClawHub
+  usage: clawhub install layout-analyzer
+schema_version: '1.0'

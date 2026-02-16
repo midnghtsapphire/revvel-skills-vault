@@ -1,0 +1,57 @@
+name: claw
+title: ClawEmail
+version: 1.0.1
+description: '"Google Workspace via ClawEmail — Gmail, Drive, Docs, Sheets, Slides, Calendar, Forms. Use PROACTIVELY when
+  the user asks to send email, create documents, manage files, schedule events, or work with any Google service."'
+metadata:
+  author: cto1
+  category: Search & Research
+  tags:
+  - search-research
+  - claw
+  source: clawhub-community
+  clawhub_slug: claw
+  clawhub_path: cto1/claw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawEmail
+
+    # Source: ClawHub community skill by cto1
+
+    # Install: clawhub install claw
+
+    # Path: cto1/claw
+
+
+    ## Description
+
+    "Google Workspace via ClawEmail — Gmail, Drive, Docs, Sheets, Slides, Calendar, Forms. Use PROACTIVELY when the user asks
+    to send email, create documents, manage files, schedule events, or work with any Google service."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/token.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw
+
+    ```'
+examples:
+- description: Install ClawEmail from ClawHub
+  usage: clawhub install claw
+schema_version: '1.0'

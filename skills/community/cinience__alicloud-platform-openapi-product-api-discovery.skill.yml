@@ -1,0 +1,78 @@
+name: alicloud-platform-openapi-product-api-discovery
+title: Alicloud Platform Openapi Product Api Discovery
+version: 1.0.1
+description: Discover and reconcile Alibaba Cloud product catalogs from Ticket System, Support & Service, and BSS OpenAPI;
+  fetch OpenAPI product/version/API metadata; and summarize API coverage to plan new skills. Use when you need a complete
+  product list, product-to-API mapping, or coverage/gap reports for skil
+metadata:
+  author: cinience
+  category: Development & Coding
+  tags:
+  - development-coding
+  - alicloud
+  - platform
+  - openapi
+  - product
+  - api
+  - discovery
+  source: clawhub-community
+  clawhub_slug: alicloud-platform-openapi-product-api-discovery
+  clawhub_path: cinience/alicloud-platform-openapi-product-api-discovery
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Platform Openapi Product Api Discovery
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-platform-openapi-product-api-discovery
+
+    # Path: cinience/alicloud-platform-openapi-product-api-discovery
+
+
+    ## Description
+
+    Discover and reconcile Alibaba Cloud product catalogs from Ticket System, Support & Service, and BSS OpenAPI; fetch OpenAPI
+    product/version/API metadata; and summarize API coverage to plan new skills. Use when you need a complete product list,
+    product-to-API mapping, or coverage/gap reports for skil
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/openapi-meta.md
+
+    - references/product-sources.md
+
+    - scripts/analyze_products_vs_skills.py
+
+    - scripts/apis_from_openapi_meta.py
+
+    - scripts/join_products_with_api_meta.py
+
+    - scripts/merge_product_sources.py
+
+    - scripts/products_from_bssopenapi.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-platform-openapi-product-api-discovery
+
+    ```'
+examples:
+- description: Install Alicloud Platform Openapi Product Api Discovery from ClawHub
+  usage: clawhub install alicloud-platform-openapi-product-api-discovery
+schema_version: '1.0'

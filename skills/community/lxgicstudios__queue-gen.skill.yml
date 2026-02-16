@@ -1,0 +1,66 @@
+name: queue-gen
+title: Queue Generator
+version: 1.0.2
+description: Generate BullMQ job queue setup and workers. Use when implementing background jobs.
+metadata:
+  author: lxgicstudios
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - queue
+  - gen
+  source: clawhub-community
+  clawhub_slug: queue-gen
+  clawhub_path: lxgicstudios/queue-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Queue Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install queue-gen
+
+    # Path: lxgicstudios/queue-gen
+
+
+    ## Description
+
+    Generate BullMQ job queue setup and workers. Use when implementing background jobs.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install queue-gen
+
+    ```'
+examples:
+- description: Install Queue Generator from ClawHub
+  usage: clawhub install queue-gen
+schema_version: '1.0'

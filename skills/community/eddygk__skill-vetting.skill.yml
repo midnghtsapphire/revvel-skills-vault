@@ -1,0 +1,60 @@
+name: skill-vetting
+title: Skill Vetting
+version: 1.0.1
+description: Vet ClawHub skills for security and utility before installation. Use when considering installing a ClawHub skill,
+  evaluating third-party code, or assessing whether a skill adds value over existing tools.
+metadata:
+  author: eddygk
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - vetting
+  source: clawhub-community
+  clawhub_slug: skill-vetting
+  clawhub_path: eddygk/skill-vetting
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Vetting
+
+    # Source: ClawHub community skill by eddygk
+
+    # Install: clawhub install skill-vetting
+
+    # Path: eddygk/skill-vetting
+
+
+    ## Description
+
+    Vet ClawHub skills for security and utility before installation. Use when considering installing a ClawHub skill, evaluating
+    third-party code, or assessing whether a skill adds value over existing tools.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/patterns.md
+
+    - scripts/scan.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-vetting
+
+    ```'
+examples:
+- description: Install Skill Vetting from ClawHub
+  usage: clawhub install skill-vetting
+schema_version: '1.0'

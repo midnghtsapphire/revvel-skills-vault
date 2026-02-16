@@ -1,0 +1,71 @@
+name: arxiv_paper_reader
+title: arxiv_deep_reader
+version: 1.0.3
+description: 利用python，指定某个arxiv_id/url， 基于 LLM Agent 对这篇arxiv论文进行分类与深度阅读，直接print打印阅读笔记
+metadata:
+  author: aurora-1412
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - arxiv
+  - paper
+  - reader
+  source: clawhub-community
+  clawhub_slug: arxiv-reader
+  clawhub_path: aurora-1412/arxiv-reader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# arxiv_deep_reader
+
+    # Source: ClawHub community skill by aurora-1412
+
+    # Install: clawhub install arxiv-reader
+
+    # Path: aurora-1412/arxiv-reader
+
+
+    ## Description
+
+    利用python，指定某个arxiv_id/url， 基于 LLM Agent 对这篇arxiv论文进行分类与深度阅读，直接print打印阅读笔记
+
+
+    ## Files
+
+    - .env
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.py
+
+    - main.py
+
+    - requirements.txt
+
+    - agents/__init__.py
+
+    - agents/base_agent.py
+
+    - agents/classifier_agent.py
+
+    - agents/reader_agent.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install arxiv-reader
+
+    ```'
+examples:
+- description: Install arxiv_deep_reader from ClawHub
+  usage: clawhub install arxiv-reader
+schema_version: '1.0'

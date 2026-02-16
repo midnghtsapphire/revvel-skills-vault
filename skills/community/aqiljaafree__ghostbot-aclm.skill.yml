@@ -1,0 +1,74 @@
+name: ghostbot-aclm
+title: ghostbot-uniswap-v4
+version: 1.0.0
+description: GhostBot ACLM — AI-powered Automated Concentrated Liquidity Manager for Uniswap v4. Manage liquidity positions,
+  auto-rebalance out-of-range positions, optimize LP fees dynamically, execute limit orders (stop-loss, take-profit), and
+  monitor oracle signals — all from chat. Deployed on Ethereum Sepolia
+metadata:
+  author: aqiljaafree
+  category: Communication
+  tags:
+  - communication
+  - ghostbot
+  - aclm
+  source: clawhub-community
+  clawhub_slug: ghostbot-aclm
+  clawhub_path: aqiljaafree/ghostbot-aclm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ghostbot-uniswap-v4
+
+    # Source: ClawHub community skill by aqiljaafree
+
+    # Install: clawhub install ghostbot-aclm
+
+    # Path: aqiljaafree/ghostbot-aclm
+
+
+    ## Description
+
+    GhostBot ACLM — AI-powered Automated Concentrated Liquidity Manager for Uniswap v4. Manage liquidity positions, auto-rebalance
+    out-of-range positions, optimize LP fees dynamically, execute limit orders (stop-loss, take-profit), and monitor oracle
+    signals — all from chat. Deployed on Ethereum Sepolia
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/architecture.md
+
+    - references/contracts.md
+
+    - scripts/add-liquidity.mjs
+
+    - scripts/config.mjs
+
+    - scripts/oracle-info.mjs
+
+    - scripts/package.json
+
+    - scripts/pool-stats.mjs
+
+    - scripts/positions.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ghostbot-aclm
+
+    ```'
+examples:
+- description: Install ghostbot-uniswap-v4 from ClawHub
+  usage: clawhub install ghostbot-aclm
+schema_version: '1.0'

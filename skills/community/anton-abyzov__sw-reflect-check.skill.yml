@@ -1,0 +1,69 @@
+name: reflect-check
+title: Reflect Check
+version: 1.0.0
+description: Diagnostic tool for validating SpecWeave reflection system health and troubleshooting issues. Use when reflection
+  seems stuck, learnings aren't being captured, or MEMORY.md files aren't updating. Checks configuration, permissions, and
+  system state.
+metadata:
+  author: anton-abyzov
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - reflect
+  - check
+  - read
+  - bash
+  source: clawhub-community
+  clawhub_slug: sw-reflect-check
+  clawhub_path: anton-abyzov/sw-reflect-check
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Bash
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reflect Check
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-reflect-check
+
+    # Path: anton-abyzov/sw-reflect-check
+
+
+    ## Description
+
+    Diagnostic tool for validating SpecWeave reflection system health and troubleshooting issues. Use when reflection seems
+    stuck, learnings aren''t being captured, or MEMORY.md files aren''t updating. Checks configuration, permissions, and system
+    state.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Bash
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-reflect-check
+
+    ```'
+examples:
+- description: Install Reflect Check from ClawHub
+  usage: clawhub install sw-reflect-check
+schema_version: '1.0'

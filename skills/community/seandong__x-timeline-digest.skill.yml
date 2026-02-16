@@ -1,0 +1,62 @@
+name: x-timeline-digest
+title: X Timeline Digest
+version: 1.0.0
+description: Build a deduplicated digest from X (Twitter) For You and Following timelines using bird. Outputs a payload for
+  upstream delivery.
+metadata:
+  author: seandong
+  category: Social Media
+  tags:
+  - social-media
+  - timeline
+  - digest
+  source: clawhub-community
+  clawhub_slug: x-timeline-digest
+  clawhub_path: seandong/x-timeline-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Timeline Digest
+
+    # Source: ClawHub community skill by seandong
+
+    # Install: clawhub install x-timeline-digest
+
+    # Path: seandong/x-timeline-digest
+
+
+    ## Description
+
+    Build a deduplicated digest from X (Twitter) For You and Following timelines using bird. Outputs a payload for upstream
+    delivery.
+
+
+    ## Files
+
+    - PROMPT.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - digest.js
+
+    - last_digest.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-timeline-digest
+
+    ```'
+examples:
+- description: Install X Timeline Digest from ClawHub
+  usage: clawhub install x-timeline-digest
+schema_version: '1.0'

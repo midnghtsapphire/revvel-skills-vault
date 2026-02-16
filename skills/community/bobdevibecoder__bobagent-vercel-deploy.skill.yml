@@ -1,0 +1,58 @@
+name: vercel-deploy
+title: vercel-deploy
+version: 1.0.0
+description: Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as
+  "Deploy my app", "Deploy this to production", "Create a preview deployment", "Deploy and give me the link", or "Push this
+  live". No authentication required - returns preview URL and claimable
+metadata:
+  author: bobdevibecoder
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - vercel
+  - deploy
+  source: clawhub-community
+  clawhub_slug: bobagent-vercel-deploy
+  clawhub_path: bobdevibecoder/bobagent-vercel-deploy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# vercel-deploy
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-vercel-deploy
+
+    # Path: bobdevibecoder/bobagent-vercel-deploy
+
+
+    ## Description
+
+    Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as "Deploy my
+    app", "Deploy this to production", "Create a preview deployment", "Deploy and give me the link", or "Push this live".
+    No authentication required - returns preview URL and claimable
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-vercel-deploy
+
+    ```'
+examples:
+- description: Install vercel-deploy from ClawHub
+  usage: clawhub install bobagent-vercel-deploy
+schema_version: '1.0'

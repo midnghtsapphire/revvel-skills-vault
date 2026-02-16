@@ -1,0 +1,57 @@
+name: rust-analyzer-lsp
+title: Rust Analyzer LSP
+version: 1.0.0
+description: Rust language server (rust-analyzer) providing code intelligence and analysis for .rs files. Use when working
+  with Rust code that needs autocomplete, go-to-definition, find references, error detection, or refactoring support.
+metadata:
+  author: bowen31337
+  category: Development & Coding
+  tags:
+  - development-coding
+  - rust
+  - analyzer
+  - lsp
+  source: clawhub-community
+  clawhub_slug: rust-analyzer-lsp
+  clawhub_path: bowen31337/rust-analyzer-lsp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Rust Analyzer LSP
+
+    # Source: ClawHub community skill by bowen31337
+
+    # Install: clawhub install rust-analyzer-lsp
+
+    # Path: bowen31337/rust-analyzer-lsp
+
+
+    ## Description
+
+    Rust language server (rust-analyzer) providing code intelligence and analysis for .rs files. Use when working with Rust
+    code that needs autocomplete, go-to-definition, find references, error detection, or refactoring support.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rust-analyzer-lsp
+
+    ```'
+examples:
+- description: Install Rust Analyzer LSP from ClawHub
+  usage: clawhub install rust-analyzer-lsp
+schema_version: '1.0'

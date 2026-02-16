@@ -1,0 +1,59 @@
+name: tuebingen-weather-graphics
+title: Tübingen Weather Graphics
+version: 1.0.0
+description: Generate and send a 5-day Tübingen weather graphic (PNG) from open-meteo.com. Use when Master wants a nicer visual
+  forecast plus summary text for the next few days.
+metadata:
+  author: zopyx
+  category: Utilities
+  tags:
+  - utilities
+  - tuebingen
+  - weather
+  - graphics
+  source: clawhub-community
+  clawhub_slug: tuebingen-weather-graphics
+  clawhub_path: zopyx/tuebingen-weather-graphics
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tübingen Weather Graphics
+
+    # Source: ClawHub community skill by zopyx
+
+    # Install: clawhub install tuebingen-weather-graphics
+
+    # Path: zopyx/tuebingen-weather-graphics
+
+
+    ## Description
+
+    Generate and send a 5-day Tübingen weather graphic (PNG) from open-meteo.com. Use when Master wants a nicer visual forecast
+    plus summary text for the next few days.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_forecast_graph.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tuebingen-weather-graphics
+
+    ```'
+examples:
+- description: Install Tübingen Weather Graphics from ClawHub
+  usage: clawhub install tuebingen-weather-graphics
+schema_version: '1.0'

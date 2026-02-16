@@ -1,0 +1,60 @@
+name: memory-curator
+title: Memory Curator
+version: 1.0.0
+description: Distill verbose daily logs into compact, indexed digests. Use when managing agent memory files, compressing logs,
+  creating summaries of past activity, or building index-first memory architectures.
+metadata:
+  author: 77darius77
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - memory
+  - curator
+  source: clawhub-community
+  clawhub_slug: memory-curator
+  clawhub_path: 77darius77/memory-curator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Curator
+
+    # Source: ClawHub community skill by 77darius77
+
+    # Install: clawhub install memory-curator
+
+    # Path: 77darius77/memory-curator
+
+
+    ## Description
+
+    Distill verbose daily logs into compact, indexed digests. Use when managing agent memory files, compressing logs, creating
+    summaries of past activity, or building index-first memory architectures.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate-digest.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-curator
+
+    ```'
+examples:
+- description: Install Memory Curator from ClawHub
+  usage: clawhub install memory-curator
+schema_version: '1.0'

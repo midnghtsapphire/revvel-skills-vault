@@ -1,0 +1,60 @@
+name: progress-sync
+title: Progress Sync
+version: 1.0.0
+description: Comprehensive progress synchronization expert for multi-system sync (tasks.md → living docs → GitHub/JIRA/ADO).
+  Use when syncing progress across systems, creating missing external issues, or understanding /sw:sync-progress command.
+  AUTO-CREATES missing issues when external links are absent.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - progress
+  - sync
+  source: clawhub-community
+  clawhub_slug: sw-progress-sync
+  clawhub_path: anton-abyzov/sw-progress-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Progress Sync
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-progress-sync
+
+    # Path: anton-abyzov/sw-progress-sync
+
+
+    ## Description
+
+    Comprehensive progress synchronization expert for multi-system sync (tasks.md → living docs → GitHub/JIRA/ADO). Use when
+    syncing progress across systems, creating missing external issues, or understanding /sw:sync-progress command. AUTO-CREATES
+    missing issues when external links are absent.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-progress-sync
+
+    ```'
+examples:
+- description: Install Progress Sync from ClawHub
+  usage: clawhub install sw-progress-sync
+schema_version: '1.0'

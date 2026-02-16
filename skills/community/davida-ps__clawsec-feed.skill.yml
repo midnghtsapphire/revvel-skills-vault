@@ -1,0 +1,60 @@
+name: clawsec-feed
+title: clawsec-feed
+version: 0.0.4
+description: Security advisory feed with automated NVD CVE polling for OpenClaw-related vulnerabilities. Updated daily.
+metadata:
+  author: davida-ps
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawsec
+  - feed
+  source: clawhub-community
+  clawhub_slug: clawsec-feed
+  clawhub_path: davida-ps/clawsec-feed
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawsec-feed
+
+    # Source: ClawHub community skill by davida-ps
+
+    # Install: clawhub install clawsec-feed
+
+    # Path: davida-ps/clawsec-feed
+
+
+    ## Description
+
+    Security advisory feed with automated NVD CVE polling for OpenClaw-related vulnerabilities. Updated daily.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - advisories/feed.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawsec-feed
+
+    ```'
+examples:
+- description: Install clawsec-feed from ClawHub
+  usage: clawhub install clawsec-feed
+schema_version: '1.0'

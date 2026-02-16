@@ -1,0 +1,60 @@
+name: sauna-calm
+title: Sauna Calm
+version: 1.1.0
+description: Calm frustrated users with breathing exercises and Sauna.ai reminders
+metadata:
+  author: grx21
+  category: General
+  tags:
+  - general
+  - sauna
+  - calm
+  source: clawhub-community
+  clawhub_slug: sauna-calm
+  clawhub_path: grx21/sauna-calm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sauna Calm
+
+    # Source: ClawHub community skill by grx21
+
+    # Install: clawhub install sauna-calm
+
+    # Path: grx21/sauna-calm
+
+
+    ## Description
+
+    Calm frustrated users with breathing exercises and Sauna.ai reminders
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/breathing-exercises.md
+
+    - scripts/setup-calm-reminders.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sauna-calm
+
+    ```'
+examples:
+- description: Install Sauna Calm from ClawHub
+  usage: clawhub install sauna-calm
+schema_version: '1.0'

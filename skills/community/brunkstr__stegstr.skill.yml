@@ -1,0 +1,61 @@
+name: stegstr
+title: Stegstr
+version: 1.0.1
+description: Decode and embed Stegstr payloads in PNG images. Use when the user needs to extract hidden Nostr data from a
+  Stegstr image, encode a payload into a cover PNG, or work with steganographic social networking (Nostr-in-images). Supports
+  CLI (stegstr-cli decode, detect, embed, post) for scripts and AI ag
+metadata:
+  author: brunkstr
+  category: Media & Content
+  tags:
+  - media-content
+  - stegstr
+  source: clawhub-community
+  clawhub_slug: stegstr
+  clawhub_path: brunkstr/stegstr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stegstr
+
+    # Source: ClawHub community skill by brunkstr
+
+    # Install: clawhub install stegstr
+
+    # Path: brunkstr/stegstr
+
+
+    ## Description
+
+    Decode and embed Stegstr payloads in PNG images. Use when the user needs to extract hidden Nostr data from a Stegstr image,
+    encode a payload into a cover PNG, or work with steganographic social networking (Nostr-in-images). Supports CLI (stegstr-cli
+    decode, detect, embed, post) for scripts and AI ag
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stegstr
+
+    ```'
+examples:
+- description: Install Stegstr from ClawHub
+  usage: clawhub install stegstr
+schema_version: '1.0'

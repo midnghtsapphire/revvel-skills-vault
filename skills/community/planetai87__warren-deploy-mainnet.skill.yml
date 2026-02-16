@@ -1,0 +1,58 @@
+name: warren-deploy
+title: Warren Website Deploy(mainnet)
+version: 1.0.0
+description: Deploy websites and files permanently on MegaETH mainnet using SSTORE2. Agents use their own wallet and pay gas.
+metadata:
+  author: planetai87
+  category: Development & Coding
+  tags:
+  - development-coding
+  - warren
+  - deploy
+  source: clawhub-community
+  clawhub_slug: warren-deploy-mainnet
+  clawhub_path: planetai87/warren-deploy-mainnet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Warren Website Deploy(mainnet)
+
+    # Source: ClawHub community skill by planetai87
+
+    # Install: clawhub install warren-deploy-mainnet
+
+    # Path: planetai87/warren-deploy-mainnet
+
+
+    ## Description
+
+    Deploy websites and files permanently on MegaETH mainnet using SSTORE2. Agents use their own wallet and pay gas.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - deploy.js
+
+    - setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install warren-deploy-mainnet
+
+    ```'
+examples:
+- description: Install Warren Website Deploy(mainnet) from ClawHub
+  usage: clawhub install warren-deploy-mainnet
+schema_version: '1.0'

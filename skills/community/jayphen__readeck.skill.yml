@@ -1,0 +1,55 @@
+name: readeck
+title: Readeck
+version: 0.1.0
+description: Readeck integration for saving and managing articles. Supports adding URLs, listing entries, and managing bookmarks
+  via Readeck's API. Configure custom URL and API key per request or via environment variables READECK_URL and READECK_API_KEY.
+metadata:
+  author: jayphen
+  category: Development & Coding
+  tags:
+  - development-coding
+  - readeck
+  source: clawhub-community
+  clawhub_slug: readeck
+  clawhub_path: jayphen/readeck
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Readeck
+
+    # Source: ClawHub community skill by jayphen
+
+    # Install: clawhub install readeck
+
+    # Path: jayphen/readeck
+
+
+    ## Description
+
+    Readeck integration for saving and managing articles. Supports adding URLs, listing entries, and managing bookmarks via
+    Readeck''s API. Configure custom URL and API key per request or via environment variables READECK_URL and READECK_API_KEY.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install readeck
+
+    ```'
+examples:
+- description: Install Readeck from ClawHub
+  usage: clawhub install readeck
+schema_version: '1.0'

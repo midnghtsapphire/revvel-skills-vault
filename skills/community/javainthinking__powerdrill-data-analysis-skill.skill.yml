@@ -1,0 +1,63 @@
+name: powerdrill-data-analysis
+title: powerdrill-data-analysis
+version: 1.0.0
+description: This skill should be used when the user wants to analyze, explore, visualize, or query data using Powerdrill.
+  Covers listing, creating, and deleting datasets; uploading local files as data sources; creating analysis sessions; running
+  natural-language data analysis queries; and retrieving charts, tab
+metadata:
+  author: javainthinking
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - powerdrill
+  - data
+  - analysis
+  source: clawhub-community
+  clawhub_slug: powerdrill-data-analysis-skill
+  clawhub_path: javainthinking/powerdrill-data-analysis-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# powerdrill-data-analysis
+
+    # Source: ClawHub community skill by javainthinking
+
+    # Install: clawhub install powerdrill-data-analysis-skill
+
+    # Path: javainthinking/powerdrill-data-analysis-skill
+
+
+    ## Description
+
+    This skill should be used when the user wants to analyze, explore, visualize, or query data using Powerdrill. Covers listing,
+    creating, and deleting datasets; uploading local files as data sources; creating analysis sessions; running natural-language
+    data analysis queries; and retrieving charts, tab
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/powerdrill_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install powerdrill-data-analysis-skill
+
+    ```'
+examples:
+- description: Install powerdrill-data-analysis from ClawHub
+  usage: clawhub install powerdrill-data-analysis-skill
+schema_version: '1.0'

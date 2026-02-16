@@ -1,0 +1,57 @@
+name: japan-news-digest
+title: Japan News Digest
+version: 1.1.0
+description: Fetch and summarize top Japanese news into a categorized, digestible daily digest.
+metadata:
+  author: sa9saq
+  category: General
+  tags:
+  - general
+  - japan
+  - news
+  - digest
+  source: clawhub-community
+  clawhub_slug: japan-news-digest
+  clawhub_path: sa9saq/japan-news-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Japan News Digest
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install japan-news-digest
+
+    # Path: sa9saq/japan-news-digest
+
+
+    ## Description
+
+    Fetch and summarize top Japanese news into a categorized, digestible daily digest.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install japan-news-digest
+
+    ```'
+examples:
+- description: Install Japan News Digest from ClawHub
+  usage: clawhub install japan-news-digest
+schema_version: '1.0'

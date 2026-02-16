@@ -1,0 +1,63 @@
+name: devialet
+title: Devialet Speaker Control
+version: 1.0.0
+description: '"Control Devialet Phantom speakers via HTTP API. Use for: play/pause, volume control, mute/unmute, source selection,
+  and speaker status. Requires DOS 2.14+ firmware. Works with Phantom I, Phantom II, Phantom Reactor, and Dialog."'
+metadata:
+  author: jgm2025
+  category: Development & Coding
+  tags:
+  - development-coding
+  - devialet
+  source: clawhub-community
+  clawhub_slug: devialet
+  clawhub_path: jgm2025/devialet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Devialet Speaker Control
+
+    # Source: ClawHub community skill by jgm2025
+
+    # Install: clawhub install devialet
+
+    # Path: jgm2025/devialet
+
+
+    ## Description
+
+    "Control Devialet Phantom speakers via HTTP API. Use for: play/pause, volume control, mute/unmute, source selection, and
+    speaker status. Requires DOS 2.14+ firmware. Works with Phantom I, Phantom II, Phantom Reactor, and Dialog."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/devialet.sh
+
+    - scripts/play-on-devialet.sh
+
+    - scripts/spotify.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install devialet
+
+    ```'
+examples:
+- description: Install Devialet Speaker Control from ClawHub
+  usage: clawhub install devialet
+schema_version: '1.0'

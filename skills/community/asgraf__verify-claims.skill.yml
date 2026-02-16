@@ -1,0 +1,58 @@
+name: verify-claims
+title: Verify Claims
+version: 1.0.0
+description: Verify claims and information using professional fact-checking services. Use this skill when users want to verify
+  facts, check claims in articles/videos/transcripts, validate news authenticity, cross-reference information with trusted
+  fact-checkers, or investigate potentially false or misleading con
+metadata:
+  author: asgraf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - verify
+  - claims
+  source: clawhub-community
+  clawhub_slug: verify-claims
+  clawhub_path: asgraf/verify-claims
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Verify Claims
+
+    # Source: ClawHub community skill by asgraf
+
+    # Install: clawhub install verify-claims
+
+    # Path: asgraf/verify-claims
+
+
+    ## Description
+
+    Verify claims and information using professional fact-checking services. Use this skill when users want to verify facts,
+    check claims in articles/videos/transcripts, validate news authenticity, cross-reference information with trusted fact-checkers,
+    or investigate potentially false or misleading con
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install verify-claims
+
+    ```'
+examples:
+- description: Install Verify Claims from ClawHub
+  usage: clawhub install verify-claims
+schema_version: '1.0'

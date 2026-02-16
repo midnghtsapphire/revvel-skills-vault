@@ -1,0 +1,174 @@
+name: expert_witness
+title: Expert Witness
+version: 1.0.0
+description: Comprehensive expert witness preparation and analysis system for legal proceedings, covering Daubert compliance,
+  report generation, deposition prep, and cross-examination strategies
+metadata:
+  author: Revvel AI Engine
+  category: Legal & Compliance
+  tags:
+  - testimony-admissibility-assessment
+  - rebuttal-report-creation
+  - expert
+  - expert-qualification-analysis
+  - cross-examination-strategy
+  - deposition-preparation
+  - daubert-compliance-check
+  - witness
+  - expert-discovery-compliance
+  - expert-report-generation
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport hashlib\nimport statistics\nimport math\nfrom datetime import datetime\n\
+    from typing import Dict, List, Optional, Any, Tuple\nfrom collections import defaultdict\nimport unittest\nimport logging\n\
+    \nSKILL_METADATA = {\n    \"name\": \"Expert Witness\",\n    \"id\": \"expert_witness\",\n    \"version\": \"1.0.0\",\n\
+    \    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Comprehensive expert witness preparation and analysis system\
+    \ for legal proceedings, covering Daubert compliance, report generation, deposition prep, and cross-examination strategies\"\
+    ,\n    \"capabilities\": [\n        \"daubert_compliance_check\",\n        \"expert_report_generation\",\n        \"deposition_preparation\"\
+    ,\n        \"cross_examination_strategy\",\n        \"expert_qualification_analysis\",\n        \"testimony_admissibility_assessment\"\
+    ,\n        \"expert_discovery_compliance\",\n        \"rebuttal_report_creation\"\n    ],\n    \"domain\": \"Legal/Forensic\
+    \ Expert Testimony\"\n}\n\nEXPERT_PROMPTS = {\n    \"daubert_analysis\": \"\"\"\nAnalyze the following expert testimony\
+    \ for Daubert standard compliance:\nExpert Field: {expert_field}\nProposed Testimony: {proposed_testimony}\nMethodology\
+    \ Used: {methodology}\nPeer Review Status: {peer_review}\nError Rate: {error_rate}\nAcceptance in Scientific Community:\
+    \ {community_acceptance}\n\nProvide a detailed assessment covering:\n1. Whether the testimony is based on sufficient facts\
+    \ or data\n2. Whether it is the product of reliable principles and methods\n3. Whether the expert has reliably applied\
+    \ the principles and methods to the facts of the case\n4. Specific recommendations for strengthening admissibility\n\"\
+    \"\",\n    \n    \"expert_report_draft\": \"\"\"\nDraft a comprehensive expert witness report based on:\nCase Type: {case_type}\n\
+    Expert Specialty: {expert_specialty}\nKey Findings: {key_findings}\nMethodology Employed: {methodology}\nData Sources:\
+    \ {data_sources}\nOpinions Formed: {opinions}\nExhibits: {exhibits}\n\nStructure the report with:\n1. Executive Summary\n\
+    2. Expert Qualifications\n3. Materials Reviewed\n4. Methodology and Approach\n5. Factual Findings\n6. Expert Opinions\n\
+    7. Supporting Exhibits\n8. Expert Declaration\n\"\"\",\n    \n    \"deposition_prep\": \"\"\"\nPrepare deposition preparation\
+    \ materials for expert witness:\nExpert Name: {expert_name}\nSpecialty: {specialty}\nCase Issues: {case_issues}\nOpposing\
+    \ Counsel Style: {opposing_style}\nKey Vulnerabilities: {vulnerabilities}\n\nInclude:\n1. Likely deposition questions\
+    \ with model answers\n2. Document production checklist\n3. Credentials to emphasize\n4. Weaknesses to address proactively\n\
+    5. Demeanor and presentation tips\n\"\"\",\n    \n    \"cross_examination_prep\": \"\"\"\nDevelop cross-examination strategy\
+    \ for opposing expert:\nExpert Name: {opposing_expert}\nField: {expert_field}\nTestimony Focus: {testimony_focus}\nKnown\
+    \ Methodology: {methodology}\nPrevious Cases: {previous_cases}\n\nProvide:\n1. Potential impeachment angles\n2. Daubert\
+    \ challenge opportunities\n3. Credentials to question\n4. Methodology attacks\n5. Prior inconsistent statements to explore\n\
+    6. Demonstrative exhibits for contradiction\n\"\"\",\n    \n    \"expert_qualification\": \"\"\"\nEvaluate expert witness\
+    \ qualifications:\nEducation: {education}\nExperience: {experience}\nCertifications: {certifications}\nPublications: {publications}\n\
+    Prior Testimony: {prior_testimony}\nProfessional Membershiphips: {memberships}\n\nAssess:\n1. Qualification under FRE\
+    \ 702\n2. Specialized knowledge demonstration\n3. Relevance to case issues\n4. Potential disqualification issues\n5. Comparison\
+    \ to opposing expert qualifications\n\"\"\",\n    \n    \"rebuttal_report\": \"\"\"\nDraft rebuttal expert report responding\
+    \ to:\nOriginal Expert Report: {original_report}\nPoints of Disagreement: {disagreements}\nSupporting Evidence: {supporting_evidence}\n\
+    Alternative Methodology: {alternative_methodology}\n\nStructure:\n1. Introduction and Qualifications\n2. Materials Reviewed\n\
+    3. Points of Agreement\n4. Points of Disagreement with Analysis\n5. Alternative Explanations\n6. Conclusions and Opinions\n\
+    7. Supporting Documentation\n\"\"\",\n    \n    \"discovery_compliance\": \"\"\"\nReview expert discovery materials for\
+    \ compliance:\nExpert Materials: {expert_materials}\nDiscovery Requests: {discovery_requests}\nProduction Timeline: {timeline}\n\
+    Privilege Claims: {privilege_claims}\n\nAnalyze:\n1. Completeness of production\n2. Timeliness issues\n3. Privilege assertions\
+    \ validity\n4. Supplemental disclosure needs\n5. Sanction risks\n\"\"\",\n    \n    \"testimony_admissibility\": \"\"\"\
+    \nAssess admissibility of proposed expert testimony:\nJurisdiction: {jurisdiction}\nType of Evidence: {evidence_type}\n\
+    Expert Reliability: {expert_reliability}\nFit to Facts: {fit_to_facts}\nPrejudicial Effect: {prejudicial_effect}\n\nEvaluate\
+    \ under:\n1. FRE 702/703 standards\n2. Daubert factors if applicable\n3. State law equivalents\n4. Specific case law precedents\n\
+    5. Likely evidentiary challenges\n\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"pacer_api\": {\n        \"type\": \"api\"\
+    ,\n        \"endpoint\": \"https://pacer.uscourts.gov/api/\",\n        \"description\": \"Access federal court records\
+    \ for expert witness history and case precedents\",\n        \"auth_method\": \"API key with certificate\",\n        \"\
+    documentation_url\": \"https://pacer.uscourts.gov/api-docs\"\n    },\n    \"westlaw_edge\": {\n        \"type\": \"api\"\
+    ,\n        \"endpoint\": \"https://api.westlaw.com/edge/\",\n        \"description\": \"Legal research database for expert\
+    \ witness precedents and Daubert challenges\",\n        \"auth_method\": \"OAuth 2.0\",\n        \"documentation_url\"\
+    : \"https://developer.westlaw.com/docs\"\n    },\n    \"expert_directory\": {\n        \"type\": \"database\",\n     \
+    \   \"endpoint\": \"postgresql://expert-db.revvel.ai:5432/experts\",\n        \"description\": \"Internal database of\
+    \ expert witness profiles and testimony history\",\n        \"auth_method\": \"JWT token\",\n        \"documentation_url\"\
+    : \"https://docs.revvel.ai/integrations/expert-directory\"\n    },\n    \"forensic_tools\": {\n        \"type\": \"tool\"\
+    ,\n        \"endpoint\": \"local\",\n        \"description\": \"Suite of forensic analysis tools for evidence processing\"\
+    ,\n        \"auth_method\": \"Local authentication\",\n        \"documentation_url\": \"https://docs.revvel.ai/integrations/forensic-suite\"\
+    \n    }\n}\n\ndef parse_expert_credentials(credentials_text: str) -> Dict[str, Any]:\n    \"\"\"Parse and structure expert\
+    \ witness credentials from free-form text.\"\"\"\n    sections = re.split(r'\\n\\s*\\n', credentials_text.strip())\n \
+    \   parsed = {\n        'education': [],\n        'experience': [],\n        'certifications': [],\n        'publications':\
+    \ [],\n        'testimony_history': []\n    }\n    \n    current_section = None\n    for section in sections:\n      \
+    \  section_lower = section.lower()\n        if 'education' in section_lower:\n            current_section = 'education'\n\
+    \        elif 'experience' in section_lower or 'employment' in section_lower:\n            current_section = 'experience'\n\
+    \        elif 'certification' in section_lower or 'license' in section_lower:\n            current_section = 'certifications'\n\
+    \        elif 'publication' in section_lower or 'article' in section_lower:\n            current_section = 'publications'\n\
+    \        elif 'testimony' in section_lower or 'court' in section_lower:\n            current_section = 'testimony_history'\n\
+    \        \n        if current_section:\n            lines = [line.strip('- •').strip() for line in section.split('\\n')\
+    \ if line.strip()]\n            parsed[current_section].extend([line for line in lines if len(line) > 10])\n    \n   \
+    \ return parsed\n\ndef calculate_daubert_score(methodology: str, peer_reviewed: bool, error_rate: float, \n          \
+    \                 general_acceptance: bool, publications: int) -> float:\n    \"\"\"Calculate Daubert standard compliance\
+    \ score (0-100).\"\"\"\n    score = 50.0  # Base score\n    \n    # Peer review factor\n    if peer_reviewed:\n      \
+    \  score += 15\n    \n    # Error rate factor (lower is better)\n    if error_rate <= 0.01:\n        score += 15\n   \
+    \ elif error_rate <= 0.05:\n        score += 10\n    elif error_rate <= 0.10:\n        score += 5\n    \n    # General\
+    \ acceptance factor\n    if general_acceptance:\n        score += 10\n    \n    # Publications factor\n    if publications\
+    \ >= 10:\n        score += 10\n    elif publications >= 5:\n        score += 7\n    elif publications >= 2:\n        score\
+    \ += 5\n    \n    return min(score, 100.0)\n\ndef generate_expert_timeline(events: List[Dict[str, Any]]) -> str:\n   \
+    \ \"\"\"Generate formatted timeline of expert witness activities.\"\"\"\n    sorted_events = sorted(events, key=lambda\
+    \ x: x.get('date', ''))\n    \n    timeline = \"EXPERT WITNESS ACTIVITY TIMELINE\\n\"\n    timeline += \"=\" * 50 + \"\
+    \\n\\n\"\n    \n    for event in sorted_events:\n        date = event.get('date', 'Unknown')\n        activity = event.get('activity',\
+    \ '')\n        description = event.get('description', '')\n        timeline += f\"[{date}] {activity}\\n\"\n        if\
+    \ description:\n            timeline += f\"  Details: {description}\\n\"\n        timeline += \"\\n\"\n    \n    return\
+    \ timeline\n\n\ndef prepare_cross_examination(expert_profile: Dict[str, Any], opposing_claims: List[str]) -> Dict[str,\
+    \ Any]:\n    \"\"\"Prepare cross-examination strategy for opposing expert.\"\"\"\n    strategies = []\n    \n    # Check\
+    \ for bias indicators\n    if expert_profile.get('percentage_plaintiff', 0) > 80:\n        strategies.append({\n     \
+    \       'type': 'bias',\n            'question': 'Isn\\'t it true that over 80% of your work is for plaintiff attorneys?',\n\
+    \            'goal': 'Establish potential bias'\n        })\n    \n    if expert_profile.get('percentage_defendant', 0)\
+    \ > 80:\n        strategies.append({\n            'type': 'bias',\n            'question': 'Isn\\'t it true that over\
+    \ 80% of your work is for defense attorneys?',\n            'goal': 'Establish potential bias'\n        })\n    \n   \
+    \ # Check methodology weaknesses\n    if not expert_profile.get('peer_reviewed', False):\n        strategies.append({\n\
+    \            'type': 'methodology',\n            'question': 'Your methodology has not been peer-reviewed, correct?',\n\
+    \            'goal': 'Challenge reliability under Daubert'\n        })\n    \n    # Check for contradictions with opposing\
+    \ claims\n    for claim in opposing_claims:\n        strategies.append({\n            'type': 'contradiction',\n     \
+    \       'question': f'How do you reconcile your opinion with the finding that {claim}?',\n            'goal': 'Highlight\
+    \ inconsistencies'\n        })\n    \n    return {\n        'total_strategies': len(strategies),\n        'strategies':\
+    \ strategies,\n        'recommended_order': ['bias', 'methodology', 'contradiction']\n    }\n\n\ndef generate_deposition_outline(case_type:\
+    \ str, expert_field: str, key_issues: List[str]) -> Dict[str, Any]:\n    \"\"\"Generate a deposition outline for expert\
+    \ witness examination.\"\"\"\n    outline = {\n        'case_type': case_type,\n        'expert_field': expert_field,\n\
+    \        'sections': []\n    }\n    \n    # Standard sections\n    outline['sections'].append({\n        'title': 'Qualifications\
+    \ and Background',\n        'questions': [\n            'State your full name and professional address.',\n          \
+    \  'Describe your educational background.',\n            'List your professional certifications.',\n            f'How\
+    \ long have you practiced in {expert_field}?',\n            'How many times have you testified as an expert?'\n      \
+    \  ]\n    })\n    \n    outline['sections'].append({\n        'title': 'Engagement and Compensation',\n        'questions':\
+    \ [\n            'Who retained you in this matter?',\n            'What is your hourly rate for this engagement?',\n \
+    \           'What is your total compensation to date?',\n            'What materials did you review?'\n        ]\n   \
+    \ })\n    \n    # Issue-specific sections\n    for issue in key_issues:\n        outline['sections'].append({\n      \
+    \      'title': f'Analysis of {issue}',\n            'questions': [\n                f'What is your opinion regarding\
+    \ {issue}?',\n                f'What methodology did you use to analyze {issue}?',\n                f'What facts support\
+    \ your conclusion about {issue}?',\n                f'Are there alternative explanations for {issue}?'\n            ]\n\
+    \        })\n    \n    return outline\n\n\nclass SkillEngine:\n    \"\"\"Expert Witness skill engine.\"\"\"\n    \n  \
+    \  def __init__(self):\n        self.name = SKILL_METADATA['name']\n        self.version = SKILL_METADATA['version']\n\
+    \    \n    def run(self, action: str, **kwargs) -> Dict[str, Any]:\n        actions = {\n            'daubert_check':\
+    \ lambda: assess_daubert_compliance(**kwargs),\n            'generate_report': lambda: generate_expert_report(**kwargs),\n\
+    \            'cross_exam': lambda: prepare_cross_examination(**kwargs),\n            'deposition': lambda: generate_deposition_outline(**kwargs),\n\
+    \            'timeline': lambda: generate_expert_timeline(**kwargs),\n            'credibility': lambda: calculate_expert_credibility(**kwargs),\n\
+    \        }\n        if action in actions:\n            return actions[action]()\n        return {'error': f'Unknown action:\
+    \ {action}'}\n\n\nclass TestExpertWitness(unittest.TestCase):\n    \"\"\"Unit tests for Expert Witness skill.\"\"\"\n\
+    \    \n    def test_metadata(self):\n        self.assertEqual(SKILL_METADATA['id'], 'expert_witness')\n        self.assertIn('daubert_compliance_check',\
+    \ SKILL_METADATA['capabilities'])\n    \n    def test_daubert_compliance(self):\n        result = assess_daubert_compliance(\n\
+    \            methodology='Peer-reviewed statistical analysis',\n            peer_reviewed=True,\n            error_rate=0.03,\n\
+    \            testable=True,\n            general_acceptance=True\n        )\n        self.assertIn('overall_score', result)\n\
+    \        self.assertGreater(result['overall_score'], 0)\n    \n    def test_expert_report(self):\n        result = generate_expert_report(\n\
+    \            expert_name='Dr. Smith',\n            case_number='2024-CV-001',\n            expert_field='Forensic Accounting',\n\
+    \            opinions=['Defendant committed fraud'],\n            methodology='Statistical analysis of financial records',\n\
+    \            facts_relied_upon=['Bank statements', 'Tax returns']\n        )\n        self.assertIn('report_text', result)\n\
+    \        self.assertIn('Dr. Smith', result['report_text'])\n    \n    def test_credibility_score(self):\n        score\
+    \ = calculate_expert_credibility(\n            years_experience=20,\n            publications=15,\n            prior_testimony_count=30,\n\
+    \            daubert_challenges_survived=8,\n            daubert_challenges_total=10,\n            peer_reviewed=True,\n\
+    \            error_rate=0.02,\n            general_acceptance=True\n        )\n        self.assertIsInstance(score, float)\n\
+    \        self.assertGreaterEqual(score, 0)\n        self.assertLessEqual(score, 100)\n    \n    def test_cross_examination(self):\n\
+    \        result = prepare_cross_examination(\n            expert_profile={'percentage_plaintiff': 90, 'peer_reviewed':\
+    \ False},\n            opposing_claims=['The data was incomplete']\n        )\n        self.assertIn('strategies', result)\n\
+    \        self.assertGreater(result['total_strategies'], 0)\n    \n    def test_deposition_outline(self):\n        result\
+    \ = generate_deposition_outline(\n            case_type='Medical Malpractice',\n            expert_field='Cardiology',\n\
+    \            key_issues=['Standard of care', 'Causation']\n        )\n        self.assertIn('sections', result)\n    \
+    \    self.assertGreater(len(result['sections']), 2)\n    \n    def test_timeline(self):\n        events = [\n        \
+    \    {'date': '2024-01-15', 'activity': 'Retained', 'description': 'Initial engagement'},\n            {'date': '2024-02-20',\
+    \ 'activity': 'Report Filed', 'description': 'Expert report submitted'}\n        ]\n        result = generate_expert_timeline(events)\n\
+    \        self.assertIn('2024-01-15', result)\n        self.assertIn('Retained', result)\n    \n    def test_empty_timeline(self):\n\
+    \        result = generate_expert_timeline([])\n        self.assertIn('TIMELINE', result)\n    \n    def test_prompts_exist(self):\n\
+    \        self.assertIn('daubert_analysis', EXPERT_PROMPTS)\n        self.assertIn('expert_report_draft', EXPERT_PROMPTS)\n\
+    \    \n    def test_skill_engine(self):\n        engine = SkillEngine()\n        self.assertEqual(engine.name, 'Expert\
+    \ Witness')\n    \n    def test_integration_points(self):\n        self.assertIn('pacer', INTEGRATION_POINTS)\n\n\nif\
+    \ __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Expert Witness skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''expert_witness'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

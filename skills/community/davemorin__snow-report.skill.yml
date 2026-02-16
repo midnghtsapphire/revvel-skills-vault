@@ -1,0 +1,62 @@
+name: snow-report
+title: Snow Report
+version: 1.0.0
+description: Get snow conditions, forecasts, and ski reports for any mountain resort worldwide. Use when asked about snow,
+  powder, ski conditions, or mountain weather. Supports 1000+ resorts via OpenSnow. Users can set favorite mountains for quick
+  access. Supports SnowTick 4-letter codes (JHMR, TARG, MMTH) for q
+metadata:
+  author: davemorin
+  category: Development & Coding
+  tags:
+  - development-coding
+  - snow
+  - report
+  source: clawhub-community
+  clawhub_slug: snow-report
+  clawhub_path: davemorin/snow-report
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Snow Report
+
+    # Source: ClawHub community skill by davemorin
+
+    # Install: clawhub install snow-report
+
+    # Path: davemorin/snow-report
+
+
+    ## Description
+
+    Get snow conditions, forecasts, and ski reports for any mountain resort worldwide. Use when asked about snow, powder,
+    ski conditions, or mountain weather. Supports 1000+ resorts via OpenSnow. Users can set favorite mountains for quick access.
+    Supports SnowTick 4-letter codes (JHMR, TARG, MMTH) for q
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/resorts.md
+
+    - references/user-config-template.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install snow-report
+
+    ```'
+examples:
+- description: Install Snow Report from ClawHub
+  usage: clawhub install snow-report
+schema_version: '1.0'

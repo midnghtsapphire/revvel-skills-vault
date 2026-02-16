@@ -1,0 +1,66 @@
+name: openclaw-config-validator
+title: Openclaw Config Validator
+version: 0.1.0
+description: ''
+metadata:
+  author: charpup
+  category: General
+  tags:
+  - general
+  - openclaw
+  - config
+  - validator
+  source: clawhub-community
+  clawhub_slug: openclaw-config-validator
+  clawhub_path: charpup/openclaw-config-validator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Config Validator
+
+    # Source: ClawHub community skill by charpup
+
+    # Install: clawhub install openclaw-config-validator
+
+    # Path: charpup/openclaw-config-validator
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - reference/AGENT_PROMPT.md
+
+    - reference/SCHEMA.md
+
+    - reference/openclaw-official-schema.json
+
+    - scripts/get-schema.sh
+
+    - scripts/schema-validate.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-config-validator
+
+    ```'
+examples:
+- description: Install Openclaw Config Validator from ClawHub
+  usage: clawhub install openclaw-config-validator
+schema_version: '1.0'

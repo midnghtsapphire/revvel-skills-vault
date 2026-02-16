@@ -1,0 +1,65 @@
+name: skillcraft
+title: Skillcraft
+version: 1.0.0
+description: Design and build OpenClaw skills. Use when asked to "make/build/craft a skill", extract ad-hoc functionality
+  into a skill, or package scripts/instructions for reuse. Covers OpenClaw-specific integration (tool calling, memory, message
+  routing, cron, canvas, nodes) and ClawHub publishing.
+metadata:
+  author: jmz1
+  category: Communication
+  tags:
+  - communication
+  - skillcraft
+  source: clawhub-community
+  clawhub_slug: skillcraft
+  clawhub_path: jmz1/skillcraft
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skillcraft
+
+    # Source: ClawHub community skill by jmz1
+
+    # Install: clawhub install skillcraft
+
+    # Path: jmz1/skillcraft
+
+
+    ## Description
+
+    Design and build OpenClaw skills. Use when asked to "make/build/craft a skill", extract ad-hoc functionality into a skill,
+    or package scripts/instructions for reuse. Covers OpenClaw-specific integration (tool calling, memory, message routing,
+    cron, canvas, nodes) and ClawHub publishing.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - patterns/api-wrapper.md
+
+    - patterns/cli-wrapper.md
+
+    - patterns/composable-examples.md
+
+    - patterns/monitor.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skillcraft
+
+    ```'
+examples:
+- description: Install Skillcraft from ClawHub
+  usage: clawhub install skillcraft
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: qr-code-generator
+title: Qr Code Generator
+version: 0.1.0
+description: '"Use this skill when users need to create QR codes for any purpose. Triggers include: requests to \"generate
+  QR code\", \"create QR\", \"make a QR code for\", or mentions of encoding data into scannable codes. Supports URLs, text,
+  WiFi credentials, vCards (contact information), email addresses, phon'
+metadata:
+  author: anisafifi
+  category: Communication
+  tags:
+  - communication
+  - code
+  - generator
+  source: clawhub-community
+  clawhub_slug: qr-code-generator
+  clawhub_path: anisafifi/qr-code-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qr Code Generator
+
+    # Source: ClawHub community skill by anisafifi
+
+    # Install: clawhub install qr-code-generator
+
+    # Path: anisafifi/qr-code-generator
+
+
+    ## Description
+
+    "Use this skill when users need to create QR codes for any purpose. Triggers include: requests to \"generate QR code\",
+    \"create QR\", \"make a QR code for\", or mentions of encoding data into scannable codes. Supports URLs, text, WiFi credentials,
+    vCards (contact information), email addresses, phon
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/readme.md
+
+    - scripts/qr.py
+
+    - scripts/requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qr-code-generator
+
+    ```'
+examples:
+- description: Install Qr Code Generator from ClawHub
+  usage: clawhub install qr-code-generator
+schema_version: '1.0'

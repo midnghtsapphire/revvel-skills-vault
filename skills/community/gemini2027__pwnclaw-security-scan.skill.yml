@@ -1,0 +1,58 @@
+name: pwnclaw-security-scan
+title: PwnClaw Security Scan
+version: 1.0.0
+description: Test your AI agent for security vulnerabilities using PwnClaw. Runs 50+ attacks (prompt injection, jailbreaks,
+  social engineering, MCP poisoning, and more) and provides fix instructions. Use when your agent needs a security check or
+  hardening.
+metadata:
+  author: gemini2027
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - pwnclaw
+  - security
+  - scan
+  source: clawhub-community
+  clawhub_slug: pwnclaw-security-scan
+  clawhub_path: gemini2027/pwnclaw-security-scan
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PwnClaw Security Scan
+
+    # Source: ClawHub community skill by gemini2027
+
+    # Install: clawhub install pwnclaw-security-scan
+
+    # Path: gemini2027/pwnclaw-security-scan
+
+
+    ## Description
+
+    Test your AI agent for security vulnerabilities using PwnClaw. Runs 50+ attacks (prompt injection, jailbreaks, social
+    engineering, MCP poisoning, and more) and provides fix instructions. Use when your agent needs a security check or hardening.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pwnclaw-security-scan
+
+    ```'
+examples:
+- description: Install PwnClaw Security Scan from ClawHub
+  usage: clawhub install pwnclaw-security-scan
+schema_version: '1.0'

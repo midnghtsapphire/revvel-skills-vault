@@ -1,0 +1,61 @@
+name: alpha
+title: Alpha 1.0.0
+version: 1.0.0
+description: Binance Alpha new coin launch detector. Uses WebSocket to monitor !miniTicker@arr stream and detects new trading
+  pairs immediately when they appear. Maintains known symbols set in memory and triggers alert for new symbols with valid
+  opening price.
+metadata:
+  author: tariqsumatri82
+  category: Media & Content
+  tags:
+  - media-content
+  - alpha
+  source: clawhub-community
+  clawhub_slug: alpha-1-0-0
+  clawhub_path: tariqsumatri82/alpha-1-0-0
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alpha 1.0.0
+
+    # Source: ClawHub community skill by tariqsumatri82
+
+    # Install: clawhub install alpha-1-0-0
+
+    # Path: tariqsumatri82/alpha-1-0-0
+
+
+    ## Description
+
+    Binance Alpha new coin launch detector. Uses WebSocket to monitor !miniTicker@arr stream and detects new trading pairs
+    immediately when they appear. Maintains known symbols set in memory and triggers alert for new symbols with valid opening
+    price.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/binance_ws.md
+
+    - scripts/alpha.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alpha-1-0-0
+
+    ```'
+examples:
+- description: Install Alpha 1.0.0 from ClawHub
+  usage: clawhub install alpha-1-0-0
+schema_version: '1.0'

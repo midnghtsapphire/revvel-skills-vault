@@ -1,0 +1,74 @@
+name: qlik-cloud
+title: Qlik Cloud
+version: 1.0.3
+description: Complete Qlik Cloud analytics platform integration with 37 tools. Health checks, search, app management, reloads,
+  natural language queries (Insight Advisor), automations, AutoML, Qlik Answers AI, data alerts, spaces, users, licenses,
+  data files, and lineage. Use when user asks about Qlik, Qlik Cloud
+metadata:
+  author: undsoul
+  category: Search & Research
+  tags:
+  - search-research
+  - qlik
+  - cloud
+  source: clawhub-community
+  clawhub_slug: qlik-cloud
+  clawhub_path: undsoul/qlik-cloud
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qlik Cloud
+
+    # Source: ClawHub community skill by undsoul
+
+    # Install: clawhub install qlik-cloud
+
+    # Path: undsoul/qlik-cloud
+
+
+    ## Description
+
+    Complete Qlik Cloud analytics platform integration with 37 tools. Health checks, search, app management, reloads, natural
+    language queries (Insight Advisor), automations, AutoML, Qlik Answers AI, data alerts, spaces, users, licenses, data files,
+    and lineage. Use when user asks about Qlik, Qlik Cloud
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/qlik-alert-get.sh
+
+    - scripts/qlik-alert-trigger.sh
+
+    - scripts/qlik-alerts.sh
+
+    - scripts/qlik-answers-ask.sh
+
+    - scripts/qlik-answers-assistants.sh
+
+    - scripts/qlik-app-create.sh
+
+    - scripts/qlik-app-delete.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qlik-cloud
+
+    ```'
+examples:
+- description: Install Qlik Cloud from ClawHub
+  usage: clawhub install qlik-cloud
+schema_version: '1.0'

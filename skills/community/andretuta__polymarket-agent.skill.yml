@@ -1,0 +1,70 @@
+name: polymarket-agent
+title: Polymarket Agent
+version: 1.0.2
+description: '"Install Python dependencies and poly CLI"'
+metadata:
+  author: andretuta
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - polymarket
+  - agent
+  source: clawhub-community
+  clawhub_slug: polymarket-agent
+  clawhub_path: andretuta/polymarket-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polymarket Agent
+
+    # Source: ClawHub community skill by andretuta
+
+    # Install: clawhub install polymarket-agent
+
+    # Path: andretuta/polymarket-agent
+
+
+    ## Description
+
+    "Install Python dependencies and poly CLI"
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - analyze.py
+
+    - cli.py
+
+    - configure.py
+
+    - install.sh
+
+    - pyproject.toml
+
+    - requirements.txt
+
+    - trade.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polymarket-agent
+
+    ```'
+examples:
+- description: Install Polymarket Agent from ClawHub
+  usage: clawhub install polymarket-agent
+schema_version: '1.0'

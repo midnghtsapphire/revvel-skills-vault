@@ -1,0 +1,72 @@
+name: garmin-connect
+title: Garmin Connect (Fixed)
+version: 1.1.0
+description: '"Garmin Connect integration for Clawdbot: sync fitness data (steps, HR, calories, workouts, sleep) every 5 minutes
+  using OAuth."'
+metadata:
+  author: godsboy
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - garmin
+  - connect
+  source: clawhub-community
+  clawhub_slug: garmin-connect-fixed
+  clawhub_path: godsboy/garmin-connect-fixed
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Garmin Connect (Fixed)
+
+    # Source: ClawHub community skill by godsboy
+
+    # Install: clawhub install garmin-connect-fixed
+
+    # Path: godsboy/garmin-connect-fixed
+
+
+    ## Description
+
+    "Garmin Connect integration for Clawdbot: sync fitness data (steps, HR, calories, workouts, sleep) every 5 minutes using
+    OAuth."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/garmin-auth-oauth.py
+
+    - scripts/garmin-auth.py
+
+    - scripts/garmin-cron.sh
+
+    - scripts/garmin-formatter.py
+
+    - scripts/garmin-sync-oauth.py
+
+    - scripts/garmin-sync.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install garmin-connect-fixed
+
+    ```'
+examples:
+- description: Install Garmin Connect (Fixed) from ClawHub
+  usage: clawhub install garmin-connect-fixed
+schema_version: '1.0'

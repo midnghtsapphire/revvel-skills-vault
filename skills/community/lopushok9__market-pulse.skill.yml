@@ -1,0 +1,56 @@
+name: market-pulse
+title: market pulse
+version: 1.0.2
+description: Use when user asks about crypto prices, DeFi yields, market sentiment, fear and greed index, stock prices, upcoming
+  crypto events, or requests a market overview
+metadata:
+  author: lopushok9
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - market
+  - pulse
+  source: clawhub-community
+  clawhub_slug: market-pulse
+  clawhub_path: lopushok9/market-pulse
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# market pulse
+
+    # Source: ClawHub community skill by lopushok9
+
+    # Install: clawhub install market-pulse
+
+    # Path: lopushok9/market-pulse
+
+
+    ## Description
+
+    Use when user asks about crypto prices, DeFi yields, market sentiment, fear and greed index, stock prices, upcoming crypto
+    events, or requests a market overview
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install market-pulse
+
+    ```'
+examples:
+- description: Install market pulse from ClawHub
+  usage: clawhub install market-pulse
+schema_version: '1.0'

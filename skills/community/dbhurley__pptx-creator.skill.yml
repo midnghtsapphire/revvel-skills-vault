@@ -1,0 +1,70 @@
+name: pptx-creator
+title: PowerPoint Creator
+version: 1.0.0
+description: Create professional PowerPoint presentations from outlines, data sources, or AI-generated content. Supports custom
+  templates, style presets, charts/tables from data, and AI-generated images. Use when asked to create slides, pitch decks,
+  reports, or presentations.
+metadata:
+  author: dbhurley
+  category: Media & Content
+  tags:
+  - media-content
+  - pptx
+  - creator
+  source: clawhub-community
+  clawhub_slug: pptx-creator
+  clawhub_path: dbhurley/pptx-creator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PowerPoint Creator
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install pptx-creator
+
+    # Path: dbhurley/pptx-creator
+
+
+    ## Description
+
+    Create professional PowerPoint presentations from outlines, data sources, or AI-generated content. Supports custom templates,
+    style presets, charts/tables from data, and AI-generated images. Use when asked to create slides, pitch decks, reports,
+    or presentations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/outline-format.md
+
+    - scripts/analyze_template.py
+
+    - scripts/create_pptx.py
+
+    - scripts/create_template.py
+
+    - scripts/use_template.py
+
+    - templates/templates.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pptx-creator
+
+    ```'
+examples:
+- description: Install PowerPoint Creator from ClawHub
+  usage: clawhub install pptx-creator
+schema_version: '1.0'

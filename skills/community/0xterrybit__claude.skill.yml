@@ -1,0 +1,53 @@
+name: claude
+title: Claude
+version: 1.1.0
+description: Anthropic Claude integration. Chat with Claude models via Anthropic API.
+metadata:
+  author: 0xterrybit
+  category: Communication
+  tags:
+  - communication
+  - claude
+  source: clawhub-community
+  clawhub_slug: claude
+  clawhub_path: 0xterrybit/claude
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claude
+
+    # Source: ClawHub community skill by 0xterrybit
+
+    # Install: clawhub install claude
+
+    # Path: 0xterrybit/claude
+
+
+    ## Description
+
+    Anthropic Claude integration. Chat with Claude models via Anthropic API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claude
+
+    ```'
+examples:
+- description: Install Claude from ClawHub
+  usage: clawhub install claude
+schema_version: '1.0'

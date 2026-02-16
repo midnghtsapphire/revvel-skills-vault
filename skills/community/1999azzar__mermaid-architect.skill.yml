@@ -1,0 +1,58 @@
+name: mermaid-architect
+title: Mermaid Architect
+version: 1.0.0
+description: Generate beautiful, hand-drawn Mermaid diagrams with robust syntax (quoted labels, ELK layout). Use this skill
+  when the user asks for "diagram", "flowchart", "sequence diagram", or "visualize this process".
+metadata:
+  author: 1999azzar
+  category: General
+  tags:
+  - general
+  - mermaid
+  - architect
+  source: clawhub-community
+  clawhub_slug: mermaid-architect
+  clawhub_path: 1999azzar/mermaid-architect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mermaid Architect
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install mermaid-architect
+
+    # Path: 1999azzar/mermaid-architect
+
+
+    ## Description
+
+    Generate beautiful, hand-drawn Mermaid diagrams with robust syntax (quoted labels, ELK layout). Use this skill when the
+    user asks for "diagram", "flowchart", "sequence diagram", or "visualize this process".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/syntax-guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mermaid-architect
+
+    ```'
+examples:
+- description: Install Mermaid Architect from ClawHub
+  usage: clawhub install mermaid-architect
+schema_version: '1.0'

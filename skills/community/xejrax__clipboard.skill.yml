@@ -1,0 +1,55 @@
+name: clipboard
+title: Clipboard
+version: 1.0.0
+description: '"Interact with the system clipboard (text only) using `xclip` from any OpenClaw session."'
+metadata:
+  author: xejrax
+  category: System & OS
+  tags:
+  - system-os
+  - clipboard
+  source: clawhub-community
+  clawhub_slug: clipboard
+  clawhub_path: xejrax/clipboard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clipboard
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install clipboard
+
+    # Path: xejrax/clipboard
+
+
+    ## Description
+
+    "Interact with the system clipboard (text only) using `xclip` from any OpenClaw session."
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clipboard
+
+    ```'
+examples:
+- description: Install Clipboard from ClawHub
+  usage: clawhub install clipboard
+schema_version: '1.0'

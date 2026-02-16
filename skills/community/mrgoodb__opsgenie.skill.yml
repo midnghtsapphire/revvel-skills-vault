@@ -1,0 +1,53 @@
+name: opsgenie
+title: Opsgenie
+version: 1.0.0
+description: Manage incidents and on-call schedules via Opsgenie API. Create alerts and escalations.
+metadata:
+  author: mrgoodb
+  category: Development & Coding
+  tags:
+  - development-coding
+  - opsgenie
+  source: clawhub-community
+  clawhub_slug: opsgenie
+  clawhub_path: mrgoodb/opsgenie
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Opsgenie
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install opsgenie
+
+    # Path: mrgoodb/opsgenie
+
+
+    ## Description
+
+    Manage incidents and on-call schedules via Opsgenie API. Create alerts and escalations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install opsgenie
+
+    ```'
+examples:
+- description: Install Opsgenie from ClawHub
+  usage: clawhub install opsgenie
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: snipit
+title: snipit.sh
+version: 1.0.0
+description: Share code snippets and files securely via snipit.sh with AES-256 encryption. Use when sharing code, configs,
+  logs, diffs, or secrets with password protection, burn-after-read, or auto-expiration. Supports CLI (snipit) or curl API
+  fallback.
+metadata:
+  author: homecity
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - snipit
+  source: clawhub-community
+  clawhub_slug: snipit
+  clawhub_path: homecity/snipit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# snipit.sh
+
+    # Source: ClawHub community skill by homecity
+
+    # Install: clawhub install snipit
+
+    # Path: homecity/snipit
+
+
+    ## Description
+
+    Share code snippets and files securely via snipit.sh with AES-256 encryption. Use when sharing code, configs, logs, diffs,
+    or secrets with password protection, burn-after-read, or auto-expiration. Supports CLI (snipit) or curl API fallback.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install snipit
+
+    ```'
+examples:
+- description: Install snipit.sh from ClawHub
+  usage: clawhub install snipit
+schema_version: '1.0'

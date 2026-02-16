@@ -1,0 +1,75 @@
+name: python-sdk
+title: Python Sdk
+version: 0.1.0
+description: '|'
+metadata:
+  author: okaris
+  category: General
+  tags:
+  - general
+  - python
+  - sdk
+  - bash(pip install inferencesh)
+  - bash(python *)
+  source: clawhub-community
+  clawhub_slug: python-sdk
+  clawhub_path: okaris/python-sdk
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(pip install inferencesh)
+  - Bash(python *)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Python Sdk
+
+    # Source: ClawHub community skill by okaris
+
+    # Install: clawhub install python-sdk
+
+    # Path: okaris/python-sdk
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/agent-patterns.md
+
+    - references/async-patterns.md
+
+    - references/files.md
+
+    - references/sessions.md
+
+    - references/streaming.md
+
+    - references/tool-builder.md
+
+
+    ## Allowed Tools
+
+    Bash(pip install inferencesh), Bash(python *)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install python-sdk
+
+    ```'
+examples:
+- description: Install Python Sdk from ClawHub
+  usage: clawhub install python-sdk
+schema_version: '1.0'

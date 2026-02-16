@@ -1,0 +1,55 @@
+name: monday
+title: Monday.com
+version: 1.0.3
+description: '|'
+metadata:
+  author: byungkyu
+  category: General
+  tags:
+  - general
+  - monday
+  source: clawhub-community
+  clawhub_slug: monday
+  clawhub_path: byungkyu/monday
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Monday.com
+
+    # Source: ClawHub community skill by byungkyu
+
+    # Install: clawhub install monday
+
+    # Path: byungkyu/monday
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install monday
+
+    ```'
+examples:
+- description: Install Monday.com from ClawHub
+  usage: clawhub install monday
+schema_version: '1.0'

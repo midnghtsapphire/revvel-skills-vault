@@ -1,0 +1,39 @@
+name: openclaw_sonoscli
+title: 🔊 Sonoscli
+version: 1.0.0
+description: Control Sonos speakers (discover/status/play/volume/group).
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - sonoscli
+  - sonos
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - sonos
+install:
+- id: go
+  platform: all
+  method: go
+  command: ''
+  label: Install sonoscli (go)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: sonoscli\ndescription: Control Sonos speakers (discover/status/play/volume/group).\nhomepage: https://sonoscli.sh\n\
+    metadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"\U0001F50A\",\n        \"requires\": { \"bins\": [\"\
+    sonos\"] },\n        \"install\":\n          [\n            {\n              \"id\": \"go\",\n              \"kind\":\
+    \ \"go\",\n              \"module\": \"github.com/steipete/sonoscli/cmd/sonos@latest\",\n              \"bins\": [\"sonos\"\
+    ],\n              \"label\": \"Install sonoscli (go)\",\n            },\n          ],\n      },\n  }\n---\n\n# Sonos CLI\n\
+    \nUse `sonos` to control Sonos speakers on the local network.\n\nQuick start\n\n- `sonos discover`\n- `sonos status --name\
+    \ \"Kitchen\"`\n- `sonos play|pause|stop --name \"Kitchen\"`\n- `sonos volume set 15 --name \"Kitchen\"`\n\nCommon tasks\n\
+    \n- Grouping: `sonos group status|join|unjoin|party|solo`\n- Favorites: `sonos favorites list|open`\n- Queue: `sonos queue\
+    \ list|play|clear`\n- Spotify search (via SMAPI): `sonos smapi search --service \"Spotify\" --category tracks \"query\"\
+    `\n\nNotes\n\n- If SSDP fails, specify `--ip <speaker-ip>`.\n- Spotify Web API search is optional and requires `SPOTIFY_CLIENT_ID/SECRET`.\n"
+examples: []
+schema_version: '1.0'

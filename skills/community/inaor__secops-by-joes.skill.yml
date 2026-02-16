@@ -1,0 +1,66 @@
+name: security_joes_ai_analyst
+title: A SecOps expert to handle security issues, ensure that protections are in place and collect evidence for security analysis.
+  The Skill also contains skill integrity checks.
+version: 1.0.0
+description: 'SecOps checks for endpoints: EDR, Sysmon, updates, EVTX on heartbeat, least privilege, network visibility, credential
+  protection (Kerberos/NTLM/pass-the-hash), device inventory and known vulnerabilities, weekly assessment, and skill integrity
+  (hash-on-wake, version-aware). Use when implementing or r'
+metadata:
+  author: inaor
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - joes
+  - analyst
+  source: clawhub-community
+  clawhub_slug: secops-by-joes
+  clawhub_path: inaor/secops-by-joes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# A SecOps expert to handle security issues, ensure that protections are in place and collect evidence for security
+    analysis. The Skill also contains skill integrity checks.
+
+    # Source: ClawHub community skill by inaor
+
+    # Install: clawhub install secops-by-joes
+
+    # Path: inaor/secops-by-joes
+
+
+    ## Description
+
+    SecOps checks for endpoints: EDR, Sysmon, updates, EVTX on heartbeat, least privilege, network visibility, credential
+    protection (Kerberos/NTLM/pass-the-hash), device inventory and known vulnerabilities, weekly assessment, and skill integrity
+    (hash-on-wake, version-aware). Use when implementing or r
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install secops-by-joes
+
+    ```'
+examples:
+- description: Install A SecOps expert to handle security issues, ensure that protections are in place and collect evidence
+    for security analysis. The Skill also contains skill integrity checks. from ClawHub
+  usage: clawhub install secops-by-joes
+schema_version: '1.0'

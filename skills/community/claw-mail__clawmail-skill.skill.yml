@@ -1,0 +1,53 @@
+name: clawmail-skill
+title: ClawMail
+version: 1.0.0
+description: ''
+metadata:
+  author: claw-mail
+  category: General
+  tags:
+  - general
+  - clawmail
+  - skill
+  source: clawhub-community
+  clawhub_slug: clawmail-skill
+  clawhub_path: claw-mail/clawmail-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawMail
+
+    # Source: ClawHub community skill by claw-mail
+
+    # Install: clawhub install clawmail-skill
+
+    # Path: claw-mail/clawmail-skill
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - _meta.json
+
+    - skill.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawmail-skill
+
+    ```'
+examples:
+- description: Install ClawMail from ClawHub
+  usage: clawhub install clawmail-skill
+schema_version: '1.0'

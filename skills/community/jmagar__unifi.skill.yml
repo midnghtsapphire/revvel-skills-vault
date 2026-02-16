@@ -1,0 +1,73 @@
+name: unifi
+title: Unifi
+version: 1.0.1
+description: Query and monitor UniFi network via local gateway API (Cloud Gateway Max / UniFi OS). Use when the user asks
+  to "check UniFi", "list UniFi devices", "show who's on the network", "UniFi clients", "UniFi health", "top apps", "network
+  alerts", "UniFi DPI", or mentions UniFi monitoring/status/dashboard.
+metadata:
+  author: jmagar
+  category: Development & Coding
+  tags:
+  - development-coding
+  - unifi
+  source: clawhub-community
+  clawhub_slug: unifi
+  clawhub_path: jmagar/unifi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Unifi
+
+    # Source: ClawHub community skill by jmagar
+
+    # Install: clawhub install unifi
+
+    # Path: jmagar/unifi
+
+
+    ## Description
+
+    Query and monitor UniFi network via local gateway API (Cloud Gateway Max / UniFi OS). Use when the user asks to "check
+    UniFi", "list UniFi devices", "show who''s on the network", "UniFi clients", "UniFi health", "top apps", "network alerts",
+    "UniFi DPI", or mentions UniFi monitoring/status/dashboard.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/unifi-readonly-endpoints.md
+
+    - scripts/alerts.sh
+
+    - scripts/clients.sh
+
+    - scripts/dashboard.sh
+
+    - scripts/devices.sh
+
+    - scripts/health.sh
+
+    - scripts/top-apps.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unifi
+
+    ```'
+examples:
+- description: Install Unifi from ClawHub
+  usage: clawhub install unifi
+schema_version: '1.0'

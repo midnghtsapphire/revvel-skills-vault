@@ -1,0 +1,57 @@
+name: git-sync
+title: Git Sync
+version: 1.0.1
+description: Automatically syncs local workspace changes to the remote GitHub repository. Use after significant changes or
+  periodically.
+metadata:
+  author: autogame-17
+  category: Development & Coding
+  tags:
+  - development-coding
+  - git
+  - sync
+  source: clawhub-community
+  clawhub_slug: git-sync
+  clawhub_path: autogame-17/git-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git Sync
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install git-sync
+
+    # Path: autogame-17/git-sync
+
+
+    ## Description
+
+    Automatically syncs local workspace changes to the remote GitHub repository. Use after significant changes or periodically.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - sync.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install git-sync
+
+    ```'
+examples:
+- description: Install Git Sync from ClawHub
+  usage: clawhub install git-sync
+schema_version: '1.0'

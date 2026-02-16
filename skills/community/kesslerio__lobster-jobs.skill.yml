@@ -1,0 +1,56 @@
+name: lobster-jobs
+title: Lobster Workflows
+version: 1.0.0
+description: Transform OpenClaw cron jobs into Lobster workflows. Analyze, inspect, and validate job migrations. Use when
+  converting automations to deterministic, approval-gated workflows with resume capabilities.
+metadata:
+  author: kesslerio
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - lobster
+  - jobs
+  source: clawhub-community
+  clawhub_slug: lobster-jobs
+  clawhub_path: kesslerio/lobster-jobs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lobster Workflows
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install lobster-jobs
+
+    # Path: kesslerio/lobster-jobs
+
+
+    ## Description
+
+    Transform OpenClaw cron jobs into Lobster workflows. Analyze, inspect, and validate job migrations. Use when converting
+    automations to deterministic, approval-gated workflows with resume capabilities.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lobster-jobs
+
+    ```'
+examples:
+- description: Install Lobster Workflows from ClawHub
+  usage: clawhub install lobster-jobs
+schema_version: '1.0'

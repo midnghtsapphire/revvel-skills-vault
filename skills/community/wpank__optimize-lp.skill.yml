@@ -1,0 +1,66 @@
+name: optimize-lp
+title: Uniswap Optimize Lp
+version: 0.1.0
+description: Get the optimal LP strategy for a token pair — recommends version (V2/V3/V4), fee tier, range width, and rebalance
+  approach based on pair characteristics, historical data, and risk tolerance. Use when the user asks how to LP, what range
+  to use, or which version/fee tier is best.
+metadata:
+  author: wpank
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - optimize
+  - '[task(subagent_type:lp-strategist)]'
+  source: clawhub-community
+  clawhub_slug: optimize-lp
+  clawhub_path: wpank/optimize-lp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:lp-strategist)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Optimize Lp
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install optimize-lp
+
+    # Path: wpank/optimize-lp
+
+
+    ## Description
+
+    Get the optimal LP strategy for a token pair — recommends version (V2/V3/V4), fee tier, range width, and rebalance approach
+    based on pair characteristics, historical data, and risk tolerance. Use when the user asks how to LP, what range to use,
+    or which version/fee tier is best.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:lp-strategist)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install optimize-lp
+
+    ```'
+examples:
+- description: Install Uniswap Optimize Lp from ClawHub
+  usage: clawhub install optimize-lp
+schema_version: '1.0'

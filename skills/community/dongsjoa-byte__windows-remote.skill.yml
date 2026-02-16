@@ -1,0 +1,66 @@
+name: windows-remote
+title: Windows Remote
+version: 1.0.0
+description: Control remote Windows machines via SSH. Use when executing commands on Windows, checking GPU status (nvidia-smi),
+  running scripts, or managing remote Windows systems. Triggers on "run on Windows", "execute on remote", "check GPU", "nvidia-smi",
+  "远程执行", "Windows 命令".
+metadata:
+  author: dongsjoa-byte
+  category: System & OS
+  tags:
+  - system-os
+  - windows
+  - remote
+  source: clawhub-community
+  clawhub_slug: windows-remote
+  clawhub_path: dongsjoa-byte/windows-remote
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Windows Remote
+
+    # Source: ClawHub community skill by dongsjoa-byte
+
+    # Install: clawhub install windows-remote
+
+    # Path: dongsjoa-byte/windows-remote
+
+
+    ## Description
+
+    Control remote Windows machines via SSH. Use when executing commands on Windows, checking GPU status (nvidia-smi), running
+    scripts, or managing remote Windows systems. Triggers on "run on Windows", "execute on remote", "check GPU", "nvidia-smi",
+    "远程执行", "Windows 命令".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/win-download.sh
+
+    - scripts/win-exec.sh
+
+    - scripts/win-gpu.sh
+
+    - scripts/win-upload.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install windows-remote
+
+    ```'
+examples:
+- description: Install Windows Remote from ClawHub
+  usage: clawhub install windows-remote
+schema_version: '1.0'

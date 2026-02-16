@@ -1,0 +1,71 @@
+name: telegram-voice-group
+title: Telegram Voice Group
+version: 0.1.5
+description: 向指定 Telegram 群组发送语音消息
+metadata:
+  author: sanwecn
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - voice
+  - group
+  source: clawhub-community
+  clawhub_slug: telegram-voice-group
+  clawhub_path: sanwecn/telegram-voice-group
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Voice Group
+
+    # Source: ClawHub community skill by sanwecn
+
+    # Install: clawhub install telegram-voice-group
+
+    # Path: sanwecn/telegram-voice-group
+
+
+    ## Description
+
+    向指定 Telegram 群组发送语音消息
+
+
+    ## Files
+
+    - DEPENDENCIES.md
+
+    - FEATURES.md
+
+    - README.md
+
+    - SKILL.md
+
+    - TELEGRAM_TOPICS.md
+
+    - USE_CASES.md
+
+    - _meta.json
+
+    - index.js
+
+    - package.json
+
+    - send_telegram_voice.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-voice-group
+
+    ```'
+examples:
+- description: Install Telegram Voice Group from ClawHub
+  usage: clawhub install telegram-voice-group
+schema_version: '1.0'

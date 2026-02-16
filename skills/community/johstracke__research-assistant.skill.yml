@@ -1,0 +1,60 @@
+name: research-assistant
+title: Research Assistant
+version: 1.0.1
+description: 'Organized research and knowledge management for agents. Use when you need to structure, store, retrieve, and
+  export research notes across topics. Supports adding notes with tags, listing topics, searching across all notes, and exporting
+  to markdown. Security: file exports are restricted to safe dire'
+metadata:
+  author: johstracke
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - research
+  - assistant
+  source: clawhub-community
+  clawhub_slug: research-assistant
+  clawhub_path: johstracke/research-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Research Assistant
+
+    # Source: ClawHub community skill by johstracke
+
+    # Install: clawhub install research-assistant
+
+    # Path: johstracke/research-assistant
+
+
+    ## Description
+
+    Organized research and knowledge management for agents. Use when you need to structure, store, retrieve, and export research
+    notes across topics. Supports adding notes with tags, listing topics, searching across all notes, and exporting to markdown.
+    Security: file exports are restricted to safe dire
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/research_organizer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install research-assistant
+
+    ```'
+examples:
+- description: Install Research Assistant from ClawHub
+  usage: clawhub install research-assistant
+schema_version: '1.0'

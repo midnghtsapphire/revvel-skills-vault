@@ -1,0 +1,61 @@
+name: zapper
+title: Zapper
+version: 1.0.0
+description: Query DeFi portfolio data across 50+ chains via Zapper's GraphQL API. Use when the user wants to check wallet
+  balances, DeFi positions, NFT holdings, token prices, or transaction history. Supports Base, Ethereum, Polygon, Arbitrum,
+  Optimism, and more. Requires ZAPPER_API_KEY.
+metadata:
+  author: spirosrap
+  category: Development & Coding
+  tags:
+  - development-coding
+  - zapper
+  source: clawhub-community
+  clawhub_slug: zapper
+  clawhub_path: spirosrap/zapper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zapper
+
+    # Source: ClawHub community skill by spirosrap
+
+    # Install: clawhub install zapper
+
+    # Path: spirosrap/zapper
+
+
+    ## Description
+
+    Query DeFi portfolio data across 50+ chains via Zapper''s GraphQL API. Use when the user wants to check wallet balances,
+    DeFi positions, NFT holdings, token prices, or transaction history. Supports Base, Ethereum, Polygon, Arbitrum, Optimism,
+    and more. Requires ZAPPER_API_KEY.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/zapper.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zapper
+
+    ```'
+examples:
+- description: Install Zapper from ClawHub
+  usage: clawhub install zapper
+schema_version: '1.0'

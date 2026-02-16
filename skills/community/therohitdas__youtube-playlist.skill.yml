@@ -1,0 +1,59 @@
+name: youtube-playlist
+title: Youtube Playlist
+version: 1.4.1
+description: Browse YouTube playlists and fetch video transcripts. Use when the user shares a playlist link, asks "what's
+  in this playlist", "list playlist videos", "browse playlist content", or wants to work with playlist videos and get their
+  transcripts.
+metadata:
+  author: therohitdas
+  category: Search & Research
+  tags:
+  - search-research
+  - youtube
+  - playlist
+  source: clawhub-community
+  clawhub_slug: youtube-playlist
+  clawhub_path: therohitdas/youtube-playlist
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Youtube Playlist
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install youtube-playlist
+
+    # Path: therohitdas/youtube-playlist
+
+
+    ## Description
+
+    Browse YouTube playlists and fetch video transcripts. Use when the user shares a playlist link, asks "what''s in this
+    playlist", "list playlist videos", "browse playlist content", or wants to work with playlist videos and get their transcripts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tapi-auth.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-playlist
+
+    ```'
+examples:
+- description: Install Youtube Playlist from ClawHub
+  usage: clawhub install youtube-playlist
+schema_version: '1.0'

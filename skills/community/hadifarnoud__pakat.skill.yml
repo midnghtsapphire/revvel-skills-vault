@@ -1,0 +1,32 @@
+name: pakat
+title: Pakat
+version: 1.0.1
+description: 'Interact with Pakat email marketing API (new.pakat.net). Use when the user wants to manage email lists, subscribers,
+  campaigns, templates, transactional emails, segments, or check campaign stats and delivery logs via the Pakat platform.
+  Triggers on mentions of Pakat, email campaigns, mailing lists, '
+metadata:
+  author: hadifarnoud
+  category: Communication
+  tags:
+  - communication
+  - pakat
+  source: clawhub-community
+  clawhub_slug: pakat
+  clawhub_path: hadifarnoud/pakat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Pakat\n# Source: ClawHub community skill by hadifarnoud\n# Install: clawhub install pakat\n# Path: hadifarnoud/pakat\n\
+    \n## Description\nInteract with Pakat email marketing API (new.pakat.net). Use when the user wants to manage email lists,\
+    \ subscribers, campaigns, templates, transactional emails, segments, or check campaign stats and delivery logs via the\
+    \ Pakat platform. Triggers on mentions of Pakat, email campaigns, mailing lists, \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    - references/api_reference.md\n- references/openapi.json\n\n## Installation\n```bash\nclawhub install pakat\n```"
+examples:
+- description: Install Pakat from ClawHub
+  usage: clawhub install pakat
+schema_version: '1.0'

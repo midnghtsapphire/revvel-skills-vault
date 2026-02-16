@@ -1,0 +1,74 @@
+name: agent-network
+title: Agent Network
+version: 1.1.0
+description: Multi-Agent group chat collaboration system inspired by DingTalk/Lark. Enables AI agents to chat in groups, @mention
+  each other, assign tasks, make decisions via voting, and collaborate. Use when building multi-agent systems that need structured
+  communication, task delegation, decision making, or gr
+metadata:
+  author: howtimeschange
+  category: Communication
+  tags:
+  - communication
+  - agent
+  - network
+  source: clawhub-community
+  clawhub_slug: agent-network
+  clawhub_path: howtimeschange/agent-network
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Network
+
+    # Source: ClawHub community skill by howtimeschange
+
+    # Install: clawhub install agent-network
+
+    # Path: howtimeschange/agent-network
+
+
+    ## Description
+
+    Multi-Agent group chat collaboration system inspired by DingTalk/Lark. Enables AI agents to chat in groups, @mention each
+    other, assign tasks, make decisions via voting, and collaborate. Use when building multi-agent systems that need structured
+    communication, task delegation, decision making, or gr
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/ADVANCED.md
+
+    - references/schema.sql
+
+    - scripts/cli.py
+
+    - scripts/demo.py
+
+    - scripts/agent_network/__init__.py
+
+    - scripts/agent_network/agent_manager.py
+
+    - scripts/agent_network/coordinator.py
+
+    - scripts/agent_network/database.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-network
+
+    ```'
+examples:
+- description: Install Agent Network from ClawHub
+  usage: clawhub install agent-network
+schema_version: '1.0'

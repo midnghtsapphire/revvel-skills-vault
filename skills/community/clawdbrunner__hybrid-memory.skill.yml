@@ -1,0 +1,58 @@
+name: hybrid-memory
+title: Hybrid Memory
+version: 1.0.1
+description: Hybrid memory strategy combining OpenClaw's built-in vector memory with Graphiti temporal knowledge graph. Use
+  when you need to recall past context, answer temporal questions ("when did X happen?"), or search memory files. Provides
+  decision framework for when to use memory_search vs Graphiti.
+metadata:
+  author: clawdbrunner
+  category: Search & Research
+  tags:
+  - search-research
+  - hybrid
+  - memory
+  source: clawhub-community
+  clawhub_slug: hybrid-memory
+  clawhub_path: clawdbrunner/hybrid-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hybrid Memory
+
+    # Source: ClawHub community skill by clawdbrunner
+
+    # Install: clawhub install hybrid-memory
+
+    # Path: clawdbrunner/hybrid-memory
+
+
+    ## Description
+
+    Hybrid memory strategy combining OpenClaw''s built-in vector memory with Graphiti temporal knowledge graph. Use when you
+    need to recall past context, answer temporal questions ("when did X happen?"), or search memory files. Provides decision
+    framework for when to use memory_search vs Graphiti.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hybrid-memory
+
+    ```'
+examples:
+- description: Install Hybrid Memory from ClawHub
+  usage: clawhub install hybrid-memory
+schema_version: '1.0'

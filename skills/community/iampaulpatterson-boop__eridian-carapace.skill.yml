@@ -1,0 +1,64 @@
+name: eridian-carapace
+title: Eridian Carapace
+version: 1.0.2
+description: Agent security hardening and prompt injection defense for OpenClaw. Protects against ClawHavoc-style attacks
+  including prompt injection, data exfiltration, credential theft, and unauthorized operations. Runtime protection that complements
+  pre-installation skill scanners like Clawdex. Includes securi
+metadata:
+  author: iampaulpatterson-boop
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - eridian
+  - carapace
+  source: clawhub-community
+  clawhub_slug: eridian-carapace
+  clawhub_path: iampaulpatterson-boop/eridian-carapace
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Eridian Carapace
+
+    # Source: ClawHub community skill by iampaulpatterson-boop
+
+    # Install: clawhub install eridian-carapace
+
+    # Path: iampaulpatterson-boop/eridian-carapace
+
+
+    ## Description
+
+    Agent security hardening and prompt injection defense for OpenClaw. Protects against ClawHavoc-style attacks including
+    prompt injection, data exfiltration, credential theft, and unauthorized operations. Runtime protection that complements
+    pre-installation skill scanners like Clawdex. Includes securi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/attack-vectors.md
+
+    - references/audit-template.md
+
+    - references/security-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install eridian-carapace
+
+    ```'
+examples:
+- description: Install Eridian Carapace from ClawHub
+  usage: clawhub install eridian-carapace
+schema_version: '1.0'

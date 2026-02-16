@@ -1,0 +1,62 @@
+name: idea-coach
+title: Idea Coach
+version: 0.2.0
+description: AI-powered idea/problem/challenge manager with GitHub integration. Captures, categorizes, reviews, and helps
+  ship ideas to repos.
+metadata:
+  author: udiedrichsen
+  category: Development & Coding
+  tags:
+  - development-coding
+  - idea
+  - coach
+  source: clawhub-community
+  clawhub_slug: idea-coach
+  clawhub_path: udiedrichsen/idea-coach
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Idea Coach
+
+    # Source: ClawHub community skill by udiedrichsen
+
+    # Install: clawhub install idea-coach
+
+    # Path: udiedrichsen/idea-coach
+
+
+    ## Description
+
+    AI-powered idea/problem/challenge manager with GitHub integration. Captures, categorizes, reviews, and helps ship ideas
+    to repos.
+
+
+    ## Files
+
+    - CONCEPT.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/coach.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install idea-coach
+
+    ```'
+examples:
+- description: Install Idea Coach from ClawHub
+  usage: clawhub install idea-coach
+schema_version: '1.0'

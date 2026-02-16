@@ -1,0 +1,56 @@
+name: book-painter
+title: Book Painter
+version: 1.0.1
+description: Book painter services through Lokuli MCP. Use when user needs to find and book painter. Triggers on requests
+  like "book a painter", "find painter near me", or any painter service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - painter
+  source: clawhub-community
+  clawhub_slug: book-painter
+  clawhub_path: edwardrodriguez703-design/book-painter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Painter
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-painter
+
+    # Path: edwardrodriguez703-design/book-painter
+
+
+    ## Description
+
+    Book painter services through Lokuli MCP. Use when user needs to find and book painter. Triggers on requests like "book
+    a painter", "find painter near me", or any painter service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-painter
+
+    ```'
+examples:
+- description: Install Book Painter from ClawHub
+  usage: clawhub install book-painter
+schema_version: '1.0'

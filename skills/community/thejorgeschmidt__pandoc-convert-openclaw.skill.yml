@@ -1,0 +1,56 @@
+name: pandoc-convert
+title: Pandoc Convert
+version: 0.1.0
+description: Convert documents between 40+ formats using pandoc CLI. Handles Markdown ↔ Word ↔ PDF ↔ HTML ↔ LaTeX ↔ EPUB with
+  smart defaults, professional templates, and comprehensive tooling.
+metadata:
+  author: thejorgeschmidt
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - pandoc
+  - convert
+  source: clawhub-community
+  clawhub_slug: pandoc-convert-openclaw
+  clawhub_path: thejorgeschmidt/pandoc-convert-openclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pandoc Convert
+
+    # Source: ClawHub community skill by thejorgeschmidt
+
+    # Install: clawhub install pandoc-convert-openclaw
+
+    # Path: thejorgeschmidt/pandoc-convert-openclaw
+
+
+    ## Description
+
+    Convert documents between 40+ formats using pandoc CLI. Handles Markdown ↔ Word ↔ PDF ↔ HTML ↔ LaTeX ↔ EPUB with smart
+    defaults, professional templates, and comprehensive tooling.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pandoc-convert-openclaw
+
+    ```'
+examples:
+- description: Install Pandoc Convert from ClawHub
+  usage: clawhub install pandoc-convert-openclaw
+schema_version: '1.0'

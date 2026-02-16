@@ -1,0 +1,71 @@
+name: clauditor
+title: Clauditor
+version: 0.1.2
+description: Tamper-resistant audit watchdog for Clawdbot agents. Detects and logs suspicious filesystem activity with HMAC-chained
+  evidence.
+metadata:
+  author: apollostreetcompany
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - clauditor
+  source: clawhub-community
+  clawhub_slug: clauditor
+  clawhub_path: apollostreetcompany/clauditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clauditor
+
+    # Source: ClawHub community skill by apollostreetcompany
+
+    # Install: clawhub install clauditor
+
+    # Path: apollostreetcompany/clauditor
+
+
+    ## Description
+
+    Tamper-resistant audit watchdog for Clawdbot agents. Detects and logs suspicious filesystem activity with HMAC-chained
+    evidence.
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - Cargo.toml
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - crates/alerter/Cargo.toml
+
+    - crates/alerter/src/lib.rs
+
+    - crates/clauditor-cli/Cargo.toml
+
+    - crates/clauditor-cli/src/main.rs
+
+    - crates/collector/Cargo.toml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clauditor
+
+    ```'
+examples:
+- description: Install Clauditor from ClawHub
+  usage: clawhub install clauditor
+schema_version: '1.0'

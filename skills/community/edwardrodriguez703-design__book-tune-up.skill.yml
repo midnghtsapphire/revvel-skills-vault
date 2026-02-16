@@ -1,0 +1,56 @@
+name: book-tune-up
+title: Book Tune Up
+version: 1.0.1
+description: Book tune-up services through Lokuli MCP. Use when user needs to find and book tune-up. Triggers on requests
+  like "book a tune-up", "find tune-up near me", or any tune-up service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - tune
+  source: clawhub-community
+  clawhub_slug: book-tune-up
+  clawhub_path: edwardrodriguez703-design/book-tune-up
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Tune Up
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-tune-up
+
+    # Path: edwardrodriguez703-design/book-tune-up
+
+
+    ## Description
+
+    Book tune-up services through Lokuli MCP. Use when user needs to find and book tune-up. Triggers on requests like "book
+    a tune-up", "find tune-up near me", or any tune-up service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-tune-up
+
+    ```'
+examples:
+- description: Install Book Tune Up from ClawHub
+  usage: clawhub install book-tune-up
+schema_version: '1.0'

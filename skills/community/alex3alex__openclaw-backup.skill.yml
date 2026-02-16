@@ -1,0 +1,60 @@
+name: openclaw-backup
+title: OpenClaw Backup
+version: 1.0.0
+description: Backup and restore OpenClaw data. Use when user asks to create backups, set up automatic backup schedules, restore
+  from backup, or manage backup rotation. Handles ~/.openclaw directory archiving with proper exclusions.
+metadata:
+  author: alex3alex
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - openclaw
+  - backup
+  source: clawhub-community
+  clawhub_slug: openclaw-backup
+  clawhub_path: alex3alex/openclaw-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Backup
+
+    # Source: ClawHub community skill by alex3alex
+
+    # Install: clawhub install openclaw-backup
+
+    # Path: alex3alex/openclaw-backup
+
+
+    ## Description
+
+    Backup and restore OpenClaw data. Use when user asks to create backups, set up automatic backup schedules, restore from
+    backup, or manage backup rotation. Handles ~/.openclaw directory archiving with proper exclusions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/restore.md
+
+    - scripts/backup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-backup
+
+    ```'
+examples:
+- description: Install OpenClaw Backup from ClawHub
+  usage: clawhub install openclaw-backup
+schema_version: '1.0'

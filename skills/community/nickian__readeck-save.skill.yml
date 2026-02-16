@@ -1,0 +1,57 @@
+name: readeck
+title: Readeck Save
+version: 1.0.0
+description: Save articles to Readeck (self-hosted read-it-later app). Use when the user wants to save an article for later
+  reading, add something to their reading list, or send a page to Readeck.
+metadata:
+  author: nickian
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - readeck
+  source: clawhub-community
+  clawhub_slug: readeck-save
+  clawhub_path: nickian/readeck-save
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Readeck Save
+
+    # Source: ClawHub community skill by nickian
+
+    # Install: clawhub install readeck-save
+
+    # Path: nickian/readeck-save
+
+
+    ## Description
+
+    Save articles to Readeck (self-hosted read-it-later app). Use when the user wants to save an article for later reading,
+    add something to their reading list, or send a page to Readeck.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/save.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install readeck-save
+
+    ```'
+examples:
+- description: Install Readeck Save from ClawHub
+  usage: clawhub install readeck-save
+schema_version: '1.0'

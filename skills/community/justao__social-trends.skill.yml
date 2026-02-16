@@ -1,0 +1,60 @@
+name: social-trends
+title: Social Trends
+version: 0.1.0
+description: 社交媒体热点趋势分析（抖音、微博、小红书等）。
+metadata:
+  author: justao
+  category: Social Media
+  tags:
+  - social-media
+  - social
+  - trends
+  source: clawhub-community
+  clawhub_slug: social-trends
+  clawhub_path: justao/social-trends
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Social Trends
+
+    # Source: ClawHub community skill by justao
+
+    # Install: clawhub install social-trends
+
+    # Path: justao/social-trends
+
+
+    ## Description
+
+    社交媒体热点趋势分析（抖音、微博、小红书等）。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - run.py
+
+    - tests/__init__.py
+
+    - tests/test_social_trends.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install social-trends
+
+    ```'
+examples:
+- description: Install Social Trends from ClawHub
+  usage: clawhub install social-trends
+schema_version: '1.0'

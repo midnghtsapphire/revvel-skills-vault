@@ -1,0 +1,67 @@
+name: freeride
+title: Free Ride Unlimited free AI
+version: 1.0.0
+description: Manages free AI models from OpenRouter for OpenClaw. Automatically ranks models by quality, configures fallbacks
+  for rate-limit handling, and updates openclaw.json. Use when the user mentions free AI, OpenRouter, model switching, rate
+  limits, or wants to reduce AI costs.
+metadata:
+  author: shaivpidadi
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - freeride
+  source: clawhub-community
+  clawhub_slug: freeride-ai
+  clawhub_path: shaivpidadi/freeride-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Free Ride Unlimited free AI
+
+    # Source: ClawHub community skill by shaivpidadi
+
+    # Install: clawhub install freeride-ai
+
+    # Path: shaivpidadi/freeride-ai
+
+
+    ## Description
+
+    Manages free AI models from OpenRouter for OpenClaw. Automatically ranks models by quality, configures fallbacks for rate-limit
+    handling, and updates openclaw.json. Use when the user mentions free AI, OpenRouter, model switching, rate limits, or
+    wants to reduce AI costs.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - main.py
+
+    - requirements.txt
+
+    - skill.json
+
+    - watcher.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install freeride-ai
+
+    ```'
+examples:
+- description: Install Free Ride Unlimited free AI from ClawHub
+  usage: clawhub install freeride-ai
+schema_version: '1.0'

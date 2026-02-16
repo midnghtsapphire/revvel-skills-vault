@@ -1,0 +1,57 @@
+name: cold_email_writer
+title: Cold Email Writer
+version: 1.0.0
+description: Writes personalized cold emails that actually get replies
+metadata:
+  author: 1kalin
+  category: Communication
+  tags:
+  - communication
+  - cold
+  - email
+  - writer
+  source: clawhub-community
+  clawhub_slug: cold-email-writer
+  clawhub_path: 1kalin/cold-email-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cold Email Writer
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install cold-email-writer
+
+    # Path: 1kalin/cold-email-writer
+
+
+    ## Description
+
+    Writes personalized cold emails that actually get replies
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cold-email-writer
+
+    ```'
+examples:
+- description: Install Cold Email Writer from ClawHub
+  usage: clawhub install cold-email-writer
+schema_version: '1.0'

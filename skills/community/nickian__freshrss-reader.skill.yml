@@ -1,0 +1,59 @@
+name: freshrss
+title: FreshRSS Reader
+version: 1.0.0
+description: Query headlines and articles from a self-hosted FreshRSS instance. Use when the user asks for RSS news, latest
+  headlines, feed updates, or wants to browse articles from their FreshRSS reader. Supports filtering by category, time range,
+  and count.
+metadata:
+  author: nickian
+  category: Search & Research
+  tags:
+  - search-research
+  - freshrss
+  source: clawhub-community
+  clawhub_slug: freshrss-reader
+  clawhub_path: nickian/freshrss-reader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FreshRSS Reader
+
+    # Source: ClawHub community skill by nickian
+
+    # Install: clawhub install freshrss-reader
+
+    # Path: nickian/freshrss-reader
+
+
+    ## Description
+
+    Query headlines and articles from a self-hosted FreshRSS instance. Use when the user asks for RSS news, latest headlines,
+    feed updates, or wants to browse articles from their FreshRSS reader. Supports filtering by category, time range, and
+    count.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/freshrss.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install freshrss-reader
+
+    ```'
+examples:
+- description: Install FreshRSS Reader from ClawHub
+  usage: clawhub install freshrss-reader
+schema_version: '1.0'

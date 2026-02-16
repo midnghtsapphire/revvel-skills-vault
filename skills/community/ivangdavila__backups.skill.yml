@@ -1,0 +1,53 @@
+name: backup
+title: Backup
+version: 1.0.0
+description: Implement reliable backup strategies avoiding data loss, failed restores, and security gaps.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - backup
+  source: clawhub-community
+  clawhub_slug: backups
+  clawhub_path: ivangdavila/backups
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Backup
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install backups
+
+    # Path: ivangdavila/backups
+
+
+    ## Description
+
+    Implement reliable backup strategies avoiding data loss, failed restores, and security gaps.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install backups
+
+    ```'
+examples:
+- description: Install Backup from ClawHub
+  usage: clawhub install backups
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: clawchain
+title: ClawChain RPC Client
+version: 1.0.0
+description: ClawChain RPC client for EvoClaw agents. Connects to Substrate-based blockchain, queries on-chain agent data,
+  submits transactions, and enables agents to participate in on-chain governance and reputation tracking. Use when working
+  with ClawChain L1 blockchain, agent DIDs, token economics, or agent r
+metadata:
+  author: bowen31337
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - clawchain
+  source: clawhub-community
+  clawhub_slug: clawchain
+  clawhub_path: bowen31337/clawchain
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawChain RPC Client
+
+    # Source: ClawHub community skill by bowen31337
+
+    # Install: clawhub install clawchain
+
+    # Path: bowen31337/clawchain
+
+
+    ## Description
+
+    ClawChain RPC client for EvoClaw agents. Connects to Substrate-based blockchain, queries on-chain agent data, submits
+    transactions, and enables agents to participate in on-chain governance and reputation tracking. Use when working with
+    ClawChain L1 blockchain, agent DIDs, token economics, or agent r
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawchain-rpc-client/Cargo.toml
+
+    - clawchain-rpc-client/README.md
+
+    - clawchain-rpc-client/SKILL.md
+
+    - clawchain-rpc-client/src/client.rs
+
+    - clawchain-rpc-client/src/error.rs
+
+    - clawchain-rpc-client/src/lib.rs
+
+    - clawchain-rpc-client/src/tests.rs
+
+    - clawchain-rpc-client/src/types.rs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawchain
+
+    ```'
+examples:
+- description: Install ClawChain RPC Client from ClawHub
+  usage: clawhub install clawchain
+schema_version: '1.0'

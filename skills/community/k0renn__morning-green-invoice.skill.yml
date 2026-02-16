@@ -1,0 +1,53 @@
+name: morning
+title: Morning (Green Invoice)
+version: 1.0.0
+description: Use to authenticate with Morning (GreenInvoice) and create/manage clients, items, and accounting documents (invoice/receipt/quote/order/credit).
+metadata:
+  author: k0renn
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - morning
+  source: clawhub-community
+  clawhub_slug: morning-green-invoice
+  clawhub_path: k0renn/morning-green-invoice
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Morning (Green Invoice)
+
+    # Source: ClawHub community skill by k0renn
+
+    # Install: clawhub install morning-green-invoice
+
+    # Path: k0renn/morning-green-invoice
+
+
+    ## Description
+
+    Use to authenticate with Morning (GreenInvoice) and create/manage clients, items, and accounting documents (invoice/receipt/quote/order/credit).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install morning-green-invoice
+
+    ```'
+examples:
+- description: Install Morning (Green Invoice) from ClawHub
+  usage: clawhub install morning-green-invoice
+schema_version: '1.0'

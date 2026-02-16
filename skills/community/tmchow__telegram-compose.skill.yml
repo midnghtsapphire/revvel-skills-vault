@@ -1,0 +1,63 @@
+name: telegram-compose
+title: Telegram Compose
+version: 1.0.4
+description: '|'
+metadata:
+  author: tmchow
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - compose
+  - exec
+  - read
+  source: clawhub-community
+  clawhub_slug: telegram-compose
+  clawhub_path: tmchow/telegram-compose
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - exec
+  - Read
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Compose
+
+    # Source: ClawHub community skill by tmchow
+
+    # Install: clawhub install telegram-compose
+
+    # Path: tmchow/telegram-compose
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    exec, Read
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-compose
+
+    ```'
+examples:
+- description: Install Telegram Compose from ClawHub
+  usage: clawhub install telegram-compose
+schema_version: '1.0'

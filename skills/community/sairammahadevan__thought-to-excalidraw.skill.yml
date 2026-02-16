@@ -1,0 +1,59 @@
+name: pm-visualizer
+title: PM Toolkit - Excalidraw - "Messy Thoughts" to "Visual Spec" in 30 seconds.
+version: 1.0.0
+description: Visualizes Product Manager thoughts (Why, What, How, User Journey) into an editable Excalidraw diagram. Use when
+  the user asks to "visualize specs", "create a PM diagram", or "map out product thoughts".
+metadata:
+  author: sairammahadevan
+  category: Utilities
+  tags:
+  - utilities
+  - visualizer
+  source: clawhub-community
+  clawhub_slug: thought-to-excalidraw
+  clawhub_path: sairammahadevan/thought-to-excalidraw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PM Toolkit - Excalidraw - "Messy Thoughts" to "Visual Spec" in 30 seconds.
+
+    # Source: ClawHub community skill by sairammahadevan
+
+    # Install: clawhub install thought-to-excalidraw
+
+    # Path: sairammahadevan/thought-to-excalidraw
+
+
+    ## Description
+
+    Visualizes Product Manager thoughts (Why, What, How, User Journey) into an editable Excalidraw diagram. Use when the user
+    asks to "visualize specs", "create a PM diagram", or "map out product thoughts".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/excalidraw-schema.md
+
+    - scripts/layout_diagram.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install thought-to-excalidraw
+
+    ```'
+examples:
+- description: Install PM Toolkit - Excalidraw - "Messy Thoughts" to "Visual Spec" in 30 seconds. from ClawHub
+  usage: clawhub install thought-to-excalidraw
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: addtocartfrombitable
+title: Add to Cart from Bitable
+version: 1.0.0
+description: 从飞书Bitable表格获取商品信息（链接、规格、数量），然后通过浏览器自动化将其加入天猫/淘宝购物车。触发词：加购物车、Bitable商品、批量加购、采购表格。
+metadata:
+  author: lorpha
+  category: General
+  tags:
+  - general
+  - addtocartfrombitable
+  source: clawhub-community
+  clawhub_slug: addtocartfrombitable
+  clawhub_path: lorpha/addtocartfrombitable
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Add to Cart from Bitable
+
+    # Source: ClawHub community skill by lorpha
+
+    # Install: clawhub install addtocartfrombitable
+
+    # Path: lorpha/addtocartfrombitable
+
+
+    ## Description
+
+    从飞书Bitable表格获取商品信息（链接、规格、数量），然后通过浏览器自动化将其加入天猫/淘宝购物车。触发词：加购物车、Bitable商品、批量加购、采购表格。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install addtocartfrombitable
+
+    ```'
+examples:
+- description: Install Add to Cart from Bitable from ClawHub
+  usage: clawhub install addtocartfrombitable
+schema_version: '1.0'

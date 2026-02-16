@@ -1,0 +1,66 @@
+name: imap-email
+title: IMAP Email Reader
+version: 1.0.3
+description: Read and manage email via IMAP (ProtonMail Bridge, Gmail, etc.). Check for new/unread messages, fetch content,
+  search mailboxes, and mark as read/unread. Works with any IMAP server including ProtonMail Bridge.
+metadata:
+  author: mvarrieur
+  category: Search & Research
+  tags:
+  - search-research
+  - imap
+  - email
+  source: clawhub-community
+  clawhub_slug: imap-email
+  clawhub_path: mvarrieur/imap-email
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# IMAP Email Reader
+
+    # Source: ClawHub community skill by mvarrieur
+
+    # Install: clawhub install imap-email
+
+    # Path: mvarrieur/imap-email
+
+
+    ## Description
+
+    Read and manage email via IMAP (ProtonMail Bridge, Gmail, etc.). Check for new/unread messages, fetch content, search
+    mailboxes, and mark as read/unread. Works with any IMAP server including ProtonMail Bridge.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - setup.sh
+
+    - skill.json
+
+    - scripts/imap.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install imap-email
+
+    ```'
+examples:
+- description: Install IMAP Email Reader from ClawHub
+  usage: clawhub install imap-email
+schema_version: '1.0'

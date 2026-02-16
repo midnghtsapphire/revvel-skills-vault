@@ -1,0 +1,57 @@
+name: nzbget
+title: nzbget
+version: 1.0.1
+description: Check NZBGet download status and queue information. Use when the user asks about NZBGet downloads, wants to know
+  how many things are downloading, check download speed, view the queue, or get a full status report of their Usenet downloads.
+metadata:
+  author: aricus
+  category: Marketing & Business
+  tags:
+  - marketing-business
+  - nzbget
+  source: clawhub-community
+  clawhub_slug: nzbget
+  clawhub_path: aricus/nzbget
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# nzbget
+
+    # Source: ClawHub community skill by aricus
+
+    # Install: clawhub install nzbget
+
+    # Path: aricus/nzbget
+
+
+    ## Description
+
+    Check NZBGet download status and queue information. Use when the user asks about NZBGet downloads, wants to know how many
+    things are downloading, check download speed, view the queue, or get a full status report of their Usenet downloads.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check_nzbget.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nzbget
+
+    ```'
+examples:
+- description: Install nzbget from ClawHub
+  usage: clawhub install nzbget
+schema_version: '1.0'

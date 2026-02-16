@@ -1,0 +1,56 @@
+name: cron-writer
+title: Cron Writer
+version: 1.0.0
+description: Convert natural language to cron expressions. Use when you need to schedule tasks.
+metadata:
+  author: lxgicstudios
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - cron
+  - writer
+  source: clawhub-community
+  clawhub_slug: cron-writer
+  clawhub_path: lxgicstudios/cron-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cron Writer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install cron-writer
+
+    # Path: lxgicstudios/cron-writer
+
+
+    ## Description
+
+    Convert natural language to cron expressions. Use when you need to schedule tasks.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cron-writer
+
+    ```'
+examples:
+- description: Install Cron Writer from ClawHub
+  usage: clawhub install cron-writer
+schema_version: '1.0'

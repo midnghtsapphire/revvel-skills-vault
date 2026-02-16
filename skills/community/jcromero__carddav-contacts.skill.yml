@@ -1,0 +1,54 @@
+name: carddav-contacts
+title: CardDAV Contacts
+version: 1.0.2
+description: Sync and manage CardDAV contacts (Google, iCloud, Nextcloud, etc.) using vdirsyncer + khard.
+metadata:
+  author: jcromero
+  category: Search & Research
+  tags:
+  - search-research
+  - carddav
+  - contacts
+  source: clawhub-community
+  clawhub_slug: carddav-contacts
+  clawhub_path: jcromero/carddav-contacts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CardDAV Contacts
+
+    # Source: ClawHub community skill by jcromero
+
+    # Install: clawhub install carddav-contacts
+
+    # Path: jcromero/carddav-contacts
+
+
+    ## Description
+
+    Sync and manage CardDAV contacts (Google, iCloud, Nextcloud, etc.) using vdirsyncer + khard.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install carddav-contacts
+
+    ```'
+examples:
+- description: Install CardDAV Contacts from ClawHub
+  usage: clawhub install carddav-contacts
+schema_version: '1.0'

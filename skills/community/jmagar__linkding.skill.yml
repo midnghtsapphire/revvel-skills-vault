@@ -1,0 +1,61 @@
+name: linkding
+title: Linkding
+version: 1.0.1
+description: Manage bookmarks with Linkding. Use when the user asks to "save a bookmark", "add link", "search bookmarks",
+  "list my bookmarks", "find saved links", "tag a bookmark", "archive bookmark", "check if URL is saved", "list tags", "create
+  bundle", or mentions Linkding bookmark management.
+metadata:
+  author: jmagar
+  category: Search & Research
+  tags:
+  - search-research
+  - linkding
+  source: clawhub-community
+  clawhub_slug: linkding
+  clawhub_path: jmagar/linkding
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Linkding
+
+    # Source: ClawHub community skill by jmagar
+
+    # Install: clawhub install linkding
+
+    # Path: jmagar/linkding
+
+
+    ## Description
+
+    Manage bookmarks with Linkding. Use when the user asks to "save a bookmark", "add link", "search bookmarks", "list my
+    bookmarks", "find saved links", "tag a bookmark", "archive bookmark", "check if URL is saved", "list tags", "create bundle",
+    or mentions Linkding bookmark management.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/linkding-api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linkding
+
+    ```'
+examples:
+- description: Install Linkding from ClawHub
+  usage: clawhub install linkding
+schema_version: '1.0'

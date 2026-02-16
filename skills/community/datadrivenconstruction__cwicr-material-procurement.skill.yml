@@ -1,0 +1,57 @@
+name: cwicr-material-procurement
+title: Cwicr Material Procurement
+version: 1.0.0
+description: '"Generate material procurement lists from CWICR data. Calculate quantities with waste factors, group by supplier
+  categories, and create purchase orders."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - cwicr
+  - material
+  - procurement
+  source: clawhub-community
+  clawhub_slug: cwicr-material-procurement
+  clawhub_path: datadrivenconstruction/cwicr-material-procurement
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cwicr Material Procurement
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install cwicr-material-procurement
+
+    # Path: datadrivenconstruction/cwicr-material-procurement
+
+
+    ## Description
+
+    "Generate material procurement lists from CWICR data. Calculate quantities with waste factors, group by supplier categories,
+    and create purchase orders."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cwicr-material-procurement
+
+    ```'
+examples:
+- description: Install Cwicr Material Procurement from ClawHub
+  usage: clawhub install cwicr-material-procurement
+schema_version: '1.0'

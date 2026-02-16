@@ -1,0 +1,58 @@
+name: session-cost
+title: Session Cost
+version: 1.0.0
+description: Analyze OpenClaw session logs to report token usage, costs, and performance metrics grouped by model. Use when
+  the user asks about API spending, token usage, session costs, or wants a usage summary.
+metadata:
+  author: khaney64
+  category: Development & Coding
+  tags:
+  - development-coding
+  - session
+  - cost
+  source: clawhub-community
+  clawhub_slug: session-cost
+  clawhub_path: khaney64/session-cost
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Session Cost
+
+    # Source: ClawHub community skill by khaney64
+
+    # Install: clawhub install session-cost
+
+    # Path: khaney64/session-cost
+
+
+    ## Description
+
+    Analyze OpenClaw session logs to report token usage, costs, and performance metrics grouped by model. Use when the user
+    asks about API spending, token usage, session costs, or wants a usage summary.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/session-cost.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install session-cost
+
+    ```'
+examples:
+- description: Install Session Cost from ClawHub
+  usage: clawhub install session-cost
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: book-salon
+title: Book Salon
+version: 1.0.1
+description: Book salon services through Lokuli MCP. Use when user needs to find and book salon. Triggers on requests like
+  "book a salon", "find salon near me", or any salon service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - salon
+  source: clawhub-community
+  clawhub_slug: book-salon
+  clawhub_path: edwardrodriguez703-design/book-salon
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Salon
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-salon
+
+    # Path: edwardrodriguez703-design/book-salon
+
+
+    ## Description
+
+    Book salon services through Lokuli MCP. Use when user needs to find and book salon. Triggers on requests like "book a
+    salon", "find salon near me", or any salon service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-salon
+
+    ```'
+examples:
+- description: Install Book Salon from ClawHub
+  usage: clawhub install book-salon
+schema_version: '1.0'

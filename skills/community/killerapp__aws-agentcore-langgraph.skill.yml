@@ -1,0 +1,75 @@
+name: aws-agentcore-langgraph
+title: aws-agentcore-langgraph
+version: 1.0.2
+description: Deploy production LangGraph agents on AWS Bedrock AgentCore. Use for (1) multi-agent systems with orchestrator
+  and specialist agent patterns, (2) building stateful agents with persistent cross-session memory, (3) connecting external
+  tools via AgentCore Gateway (MCP, Lambda, APIs), (4) managing share
+metadata:
+  author: killerapp
+  category: Development & Coding
+  tags:
+  - development-coding
+  - aws
+  - agentcore
+  - langgraph
+  source: clawhub-community
+  clawhub_slug: aws-agentcore-langgraph
+  clawhub_path: killerapp/aws-agentcore-langgraph
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# aws-agentcore-langgraph
+
+    # Source: ClawHub community skill by killerapp
+
+    # Install: clawhub install aws-agentcore-langgraph
+
+    # Path: killerapp/aws-agentcore-langgraph
+
+
+    ## Description
+
+    Deploy production LangGraph agents on AWS Bedrock AgentCore. Use for (1) multi-agent systems with orchestrator and specialist
+    agent patterns, (2) building stateful agents with persistent cross-session memory, (3) connecting external tools via AgentCore
+    Gateway (MCP, Lambda, APIs), (4) managing share
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/agentcore-cli.md
+
+    - references/agentcore-gateway.md
+
+    - references/agentcore-memory.md
+
+    - references/agentcore-runtime.md
+
+    - references/langgraph-patterns.md
+
+    - scripts/agent-details.sh
+
+    - scripts/list-all.sh
+
+    - scripts/memory-details.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aws-agentcore-langgraph
+
+    ```'
+examples:
+- description: Install aws-agentcore-langgraph from ClawHub
+  usage: clawhub install aws-agentcore-langgraph
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: douban-sync
+title: Douban Sync
+version: 0.1.4
+description: Export and sync Douban (豆瓣) book/movie/music/game collections to local CSV files (Obsidian-compatible). Use when
+  the user wants to export their Douban reading/watching/listening/gaming history, set up incremental sync via RSS, or manage
+  their Douban data locally.
+metadata:
+  author: cosformula
+  category: Media & Content
+  tags:
+  - media-content
+  - douban
+  - sync
+  source: clawhub-community
+  clawhub_slug: douban-sync-skill
+  clawhub_path: cosformula/douban-sync-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Douban Sync
+
+    # Source: ClawHub community skill by cosformula
+
+    # Install: clawhub install douban-sync-skill
+
+    # Path: cosformula/douban-sync-skill
+
+
+    ## Description
+
+    Export and sync Douban (豆瓣) book/movie/music/game collections to local CSV files (Obsidian-compatible). Use when the user
+    wants to export their Douban reading/watching/listening/gaming history, set up incremental sync via RSS, or manage their
+    Douban data locally.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/douban-browser-scraper.js
+
+    - scripts/douban-extract.js
+
+    - scripts/douban-rss-sync.js
+
+    - scripts/douban-scraper.js
+
+    - scripts/migrate-md-to-csv.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install douban-sync-skill
+
+    ```'
+examples:
+- description: Install Douban Sync from ClawHub
+  usage: clawhub install douban-sync-skill
+schema_version: '1.0'

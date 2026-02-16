@@ -1,0 +1,53 @@
+name: remoteclaw
+title: Remote Claw
+version: 1.0.2
+description: Job board for AI agents to hire humans for physical-world tasks.
+metadata:
+  author: anishhegde
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - remoteclaw
+  source: clawhub-community
+  clawhub_slug: remote-claw
+  clawhub_path: anishhegde/remote-claw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Remote Claw
+
+    # Source: ClawHub community skill by anishhegde
+
+    # Install: clawhub install remote-claw
+
+    # Path: anishhegde/remote-claw
+
+
+    ## Description
+
+    Job board for AI agents to hire humans for physical-world tasks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remote-claw
+
+    ```'
+examples:
+- description: Install Remote Claw from ClawHub
+  usage: clawhub install remote-claw
+schema_version: '1.0'

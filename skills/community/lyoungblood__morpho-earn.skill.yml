@@ -1,0 +1,72 @@
+name: morpho-earn
+title: Morpho Earn - earn safe yield on your USDC on Base
+version: 1.2.0
+description: Earn yield on USDC by supplying to the Moonwell Flagship USDC vault on Morpho (Base). Use when depositing USDC,
+  withdrawing from the vault, checking position/APY, or setting up wallet credentials for DeFi yield.
+metadata:
+  author: lyoungblood
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - morpho
+  - earn
+  source: clawhub-community
+  clawhub_slug: morpho-earn
+  clawhub_path: lyoungblood/morpho-earn
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Morpho Earn - earn safe yield on your USDC on Base
+
+    # Source: ClawHub community skill by lyoungblood
+
+    # Install: clawhub install morpho-earn
+
+    # Path: lyoungblood/morpho-earn
+
+
+    ## Description
+
+    Earn yield on USDC by supplying to the Moonwell Flagship USDC vault on Morpho (Base). Use when depositing USDC, withdrawing
+    from the vault, checking position/APY, or setting up wallet credentials for DeFi yield.
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/setup.md
+
+    - scripts/compound.ts
+
+    - scripts/config.ts
+
+    - scripts/deposit.ts
+
+    - scripts/package-lock.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install morpho-earn
+
+    ```'
+examples:
+- description: Install Morpho Earn - earn safe yield on your USDC on Base from ClawHub
+  usage: clawhub install morpho-earn
+schema_version: '1.0'

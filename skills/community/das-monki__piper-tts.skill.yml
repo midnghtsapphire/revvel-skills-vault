@@ -1,0 +1,56 @@
+name: piper-tts
+title: Local TTS (Piper ONNX Voices)
+version: 1.0.0
+description: Local text-to-speech using Piper ONNX voices - fast, private, no cloud needed.
+metadata:
+  author: das-monki
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - piper
+  - tts
+  source: clawhub-community
+  clawhub_slug: piper-tts
+  clawhub_path: das-monki/piper-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Local TTS (Piper ONNX Voices)
+
+    # Source: ClawHub community skill by das-monki
+
+    # Install: clawhub install piper-tts
+
+    # Path: das-monki/piper-tts
+
+
+    ## Description
+
+    Local text-to-speech using Piper ONNX voices - fast, private, no cloud needed.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/piper-tts.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install piper-tts
+
+    ```'
+examples:
+- description: Install Local TTS (Piper ONNX Voices) from ClawHub
+  usage: clawhub install piper-tts
+schema_version: '1.0'

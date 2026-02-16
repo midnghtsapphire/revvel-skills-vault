@@ -1,0 +1,60 @@
+name: context-loader
+title: Context Loader
+version: 1.0.0
+description: Explains how SpecWeave achieves context efficiency through Claude's native progressive disclosure and sub-agent
+  parallelization. Use when asking about token usage, context management, or how SpecWeave scales with large projects. Leverages
+  Claude's built-in mechanisms without custom caching.
+metadata:
+  author: anton-abyzov
+  category: Communication
+  tags:
+  - communication
+  - context
+  - loader
+  source: clawhub-community
+  clawhub_slug: sw-context-loader
+  clawhub_path: anton-abyzov/sw-context-loader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Loader
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-context-loader
+
+    # Path: anton-abyzov/sw-context-loader
+
+
+    ## Description
+
+    Explains how SpecWeave achieves context efficiency through Claude''s native progressive disclosure and sub-agent parallelization.
+    Use when asking about token usage, context management, or how SpecWeave scales with large projects. Leverages Claude''s
+    built-in mechanisms without custom caching.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-context-loader
+
+    ```'
+examples:
+- description: Install Context Loader from ClawHub
+  usage: clawhub install sw-context-loader
+schema_version: '1.0'

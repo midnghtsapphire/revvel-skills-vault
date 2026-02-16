@@ -1,0 +1,69 @@
+name: fathom
+title: Fathom
+version: 1.0.0
+description: Connect to Fathom AI to fetch call recordings, transcripts, and summaries. Use when user asks about their meetings,
+  call history, or wants to search past conversations.
+metadata:
+  author: stopmoclay
+  category: Search & Research
+  tags:
+  - search-research
+  - fathom
+  source: clawhub-community
+  clawhub_slug: fathom
+  clawhub_path: stopmoclay/fathom
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fathom
+
+    # Source: ClawHub community skill by stopmoclay
+
+    # Install: clawhub install fathom
+
+    # Path: stopmoclay/fathom
+
+
+    ## Description
+
+    Connect to Fathom AI to fetch call recordings, transcripts, and summaries. Use when user asks about their meetings, call
+    history, or wants to search past conversations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/config-snippet.json
+
+    - scripts/get-summary.sh
+
+    - scripts/get-transcript.sh
+
+    - scripts/list-calls.sh
+
+    - scripts/search-calls.sh
+
+    - scripts/setup-webhook.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fathom
+
+    ```'
+examples:
+- description: Install Fathom from ClawHub
+  usage: clawhub install fathom
+schema_version: '1.0'

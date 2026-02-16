@@ -1,0 +1,58 @@
+name: ethereum_history
+title: Ethereum History
+version: 1.0.0
+description: Read-only factual data about historical Ethereum mainnet contracts. Use when the user asks about a specific contract
+  address, early Ethereum contracts, deployment era, deployer, bytecode, decompiled code, or documented history (what a contract
+  is and is not). Data is non-opinionated and includes run
+metadata:
+  author: cartoonitunes
+  category: Development & Coding
+  tags:
+  - development-coding
+  - ethereum
+  - history
+  source: clawhub-community
+  clawhub_slug: ethereum-history
+  clawhub_path: cartoonitunes/ethereum-history
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ethereum History
+
+    # Source: ClawHub community skill by cartoonitunes
+
+    # Install: clawhub install ethereum-history
+
+    # Path: cartoonitunes/ethereum-history
+
+
+    ## Description
+
+    Read-only factual data about historical Ethereum mainnet contracts. Use when the user asks about a specific contract address,
+    early Ethereum contracts, deployment era, deployer, bytecode, decompiled code, or documented history (what a contract
+    is and is not). Data is non-opinionated and includes run
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ethereum-history
+
+    ```'
+examples:
+- description: Install Ethereum History from ClawHub
+  usage: clawhub install ethereum-history
+schema_version: '1.0'

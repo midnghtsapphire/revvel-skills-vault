@@ -1,0 +1,54 @@
+name: codemod-gen
+title: Codemod Generator
+version: 1.0.1
+description: Generate codemods for large-scale code changes. Use when refactoring patterns across many files.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - codemod
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-codemod
+  clawhub_path: lxgicstudios/ai-codemod
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Codemod Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-codemod
+
+    # Path: lxgicstudios/ai-codemod
+
+
+    ## Description
+
+    Generate codemods for large-scale code changes. Use when refactoring patterns across many files.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-codemod
+
+    ```'
+examples:
+- description: Install Codemod Generator from ClawHub
+  usage: clawhub install ai-codemod
+schema_version: '1.0'

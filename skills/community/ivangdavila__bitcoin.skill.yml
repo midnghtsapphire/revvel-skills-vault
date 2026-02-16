@@ -1,0 +1,53 @@
+name: bitcoin
+title: Bitcoin
+version: 1.0.0
+description: Assist with Bitcoin transactions, wallets, Lightning, and security decisions.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - bitcoin
+  source: clawhub-community
+  clawhub_slug: bitcoin
+  clawhub_path: ivangdavila/bitcoin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bitcoin
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install bitcoin
+
+    # Path: ivangdavila/bitcoin
+
+
+    ## Description
+
+    Assist with Bitcoin transactions, wallets, Lightning, and security decisions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bitcoin
+
+    ```'
+examples:
+- description: Install Bitcoin from ClawHub
+  usage: clawhub install bitcoin
+schema_version: '1.0'

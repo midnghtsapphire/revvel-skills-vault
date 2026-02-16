@@ -1,0 +1,56 @@
+name: create-cli
+title: Create Cli
+version: 1.0.0
+description: '>'
+metadata:
+  author: steipete
+  category: General
+  tags:
+  - general
+  - create
+  - cli
+  source: clawhub-community
+  clawhub_slug: create-cli
+  clawhub_path: steipete/create-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Create Cli
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install create-cli
+
+    # Path: steipete/create-cli
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cli-guidelines.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install create-cli
+
+    ```'
+examples:
+- description: Install Create Cli from ClawHub
+  usage: clawhub install create-cli
+schema_version: '1.0'

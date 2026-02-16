@@ -1,0 +1,60 @@
+name: upbit-trading
+title: Upbit Trading Skill
+version: 1.0.0
+description: Upbit 실시간 트레이딩 봇 - GLM AI 분석, 기술지표, 자동매매
+metadata:
+  author: smeuse-dev
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - upbit
+  - trading
+  source: clawhub-community
+  clawhub_slug: upbit-trading-skill
+  clawhub_path: smeuse-dev/upbit-trading-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Upbit Trading Skill
+
+    # Source: ClawHub community skill by smeuse-dev
+
+    # Install: clawhub install upbit-trading-skill
+
+    # Path: smeuse-dev/upbit-trading-skill
+
+
+    ## Description
+
+    Upbit 실시간 트레이딩 봇 - GLM AI 분석, 기술지표, 자동매매
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - balance.js
+
+    - indicators.js
+
+    - realtime-bot.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install upbit-trading-skill
+
+    ```'
+examples:
+- description: Install Upbit Trading Skill from ClawHub
+  usage: clawhub install upbit-trading-skill
+schema_version: '1.0'

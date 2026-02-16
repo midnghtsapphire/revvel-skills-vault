@@ -1,0 +1,62 @@
+name: agent-constitution
+title: AgentConstitution
+version: 1.0.0
+description: '"Interact with AgentConstitution governance contracts on Base Sepolia. Check compliance, read rules, log actions,
+  query governance state."'
+metadata:
+  author: ztsalexey
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  - constitution
+  source: clawhub-community
+  clawhub_slug: agent-constitution
+  clawhub_path: ztsalexey/agent-constitution
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AgentConstitution
+
+    # Source: ClawHub community skill by ztsalexey
+
+    # Install: clawhub install agent-constitution
+
+    # Path: ztsalexey/agent-constitution
+
+
+    ## Description
+
+    "Interact with AgentConstitution governance contracts on Base Sepolia. Check compliance, read rules, log actions, query
+    governance state."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - check-compliance.txt
+
+    - check-emergency.txt
+
+    - get-rules.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-constitution
+
+    ```'
+examples:
+- description: Install AgentConstitution from ClawHub
+  usage: clawhub install agent-constitution
+schema_version: '1.0'

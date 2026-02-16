@@ -1,0 +1,65 @@
+name: make-pdf-safe
+title: Make PDF safe
+version: 1.0.0
+description: Flatten a PDF into a non-interactive “safe” version by uploading it to the Solutions API, polling until completion,
+  then returning a download URL for the flattened PDF.
+metadata:
+  author: crossservicesolutions
+  category: Development & Coding
+  tags:
+  - development-coding
+  - make
+  - pdf
+  - safe
+  source: clawhub-community
+  clawhub_slug: make-pdf-safe
+  clawhub_path: crossservicesolutions/make-pdf-safe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Make PDF safe
+
+    # Source: ClawHub community skill by crossservicesolutions
+
+    # Install: clawhub install make-pdf-safe
+
+    # Path: crossservicesolutions/make-pdf-safe
+
+
+    ## Description
+
+    Flatten a PDF into a non-interactive “safe” version by uploading it to the Solutions API, polling until completion, then
+    returning a download URL for the flattened PDF.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - examples/request.json
+
+    - scripts/make-pdf-safe.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install make-pdf-safe
+
+    ```'
+examples:
+- description: Install Make PDF safe from ClawHub
+  usage: clawhub install make-pdf-safe
+schema_version: '1.0'

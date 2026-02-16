@@ -1,0 +1,57 @@
+name: mistral-ocr
+title: Mistral-OCR
+version: 1.0.2
+description: ''
+metadata:
+  author: yzdame
+  category: General
+  tags:
+  - general
+  - mistral
+  - ocr
+  source: clawhub-community
+  clawhub_slug: mistral-ocr
+  clawhub_path: yzdame/mistral-ocr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mistral-OCR
+
+    # Source: ClawHub community skill by yzdame
+
+    # Install: clawhub install mistral-ocr
+
+    # Path: yzdame/mistral-ocr
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - _meta.json
+
+    - requirements.txt
+
+    - skill.md
+
+    - scripts/mistral_ocr.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mistral-ocr
+
+    ```'
+examples:
+- description: Install Mistral-OCR from ClawHub
+  usage: clawhub install mistral-ocr
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: weather
+title: Weather
+version: 0.1.0
+description: Get current weather and forecasts (no API key required).
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - weather
+  source: clawhub-community
+  clawhub_slug: weather-2
+  clawhub_path: lxgicstudios/weather-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Weather
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install weather-2
+
+    # Path: lxgicstudios/weather-2
+
+
+    ## Description
+
+    Get current weather and forecasts (no API key required).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install weather-2
+
+    ```'
+examples:
+- description: Install Weather from ClawHub
+  usage: clawhub install weather-2
+schema_version: '1.0'

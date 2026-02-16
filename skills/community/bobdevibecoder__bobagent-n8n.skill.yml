@@ -1,0 +1,57 @@
+name: n8n
+title: n8n
+version: 1.0.0
+description: Manage n8n workflows and automations via API. Use when working with n8n workflows, executions, or automation
+  tasks - listing workflows, activating/deactivating, checking execution status, manually triggering workflows, or debugging
+  automation issues.
+metadata:
+  author: bobdevibecoder
+  category: Development & Coding
+  tags:
+  - development-coding
+  - n8n
+  source: clawhub-community
+  clawhub_slug: bobagent-n8n
+  clawhub_path: bobdevibecoder/bobagent-n8n
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# n8n
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-n8n
+
+    # Path: bobdevibecoder/bobagent-n8n
+
+
+    ## Description
+
+    Manage n8n workflows and automations via API. Use when working with n8n workflows, executions, or automation tasks - listing
+    workflows, activating/deactivating, checking execution status, manually triggering workflows, or debugging automation
+    issues.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-n8n
+
+    ```'
+examples:
+- description: Install n8n from ClawHub
+  usage: clawhub install bobagent-n8n
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: lead-hunter
+title: Lead Hunter
+version: 1.0.1
+description: Automated lead generation + enrichment for AI agents. Find prospects, enrich with emails/socials/company data,
+  score & prioritize. Your agent builds pipeline while you sleep.
+metadata:
+  author: galacticpuffin
+  category: Social Media
+  tags:
+  - social-media
+  - lead
+  - hunter
+  source: clawhub-community
+  clawhub_slug: lead-hunter
+  clawhub_path: galacticpuffin/lead-hunter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lead Hunter
+
+    # Source: ClawHub community skill by galacticpuffin
+
+    # Install: clawhub install lead-hunter
+
+    # Path: galacticpuffin/lead-hunter
+
+
+    ## Description
+
+    Automated lead generation + enrichment for AI agents. Find prospects, enrich with emails/socials/company data, score &
+    prioritize. Your agent builds pipeline while you sleep.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config/icp.md
+
+    - discovery/sources.md
+
+    - enrichment/email-discovery.md
+
+    - output/integrations.md
+
+    - scoring/lead-scoring.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lead-hunter
+
+    ```'
+examples:
+- description: Install Lead Hunter from ClawHub
+  usage: clawhub install lead-hunter
+schema_version: '1.0'

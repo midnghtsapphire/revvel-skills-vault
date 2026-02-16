@@ -1,0 +1,59 @@
+name: tinman
+title: Tinman -  AI Failure Mode Research, Prompt Injection & Tool Exfil Detection
+version: 0.6.2
+description: AI security scanner with active prevention - 168 detection patterns, 288 attack probes, safer/risky/yolo modes,
+  agent self-protection via /tinman check
+metadata:
+  author: oliveskin
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - tinman
+  source: clawhub-community
+  clawhub_slug: agent-tinman
+  clawhub_path: oliveskin/agent-tinman
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tinman -  AI Failure Mode Research, Prompt Injection & Tool Exfil Detection
+
+    # Source: ClawHub community skill by oliveskin
+
+    # Install: clawhub install agent-tinman
+
+    # Path: oliveskin/agent-tinman
+
+
+    ## Description
+
+    AI security scanner with active prevention - 168 detection patterns, 288 attack probes, safer/risky/yolo modes, agent
+    self-protection via /tinman check
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - tinman_runner.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-tinman
+
+    ```'
+examples:
+- description: Install Tinman -  AI Failure Mode Research, Prompt Injection & Tool Exfil Detection from ClawHub
+  usage: clawhub install agent-tinman
+schema_version: '1.0'

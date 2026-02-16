@@ -1,0 +1,54 @@
+name: sql-gen
+title: SQL Query Generator
+version: 1.0.2
+description: Generate SQL queries from natural language
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sql
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-sql
+  clawhub_path: lxgicstudios/ai-sql
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SQL Query Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-sql
+
+    # Path: lxgicstudios/ai-sql
+
+
+    ## Description
+
+    Generate SQL queries from natural language
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-sql
+
+    ```'
+examples:
+- description: Install SQL Query Generator from ClawHub
+  usage: clawhub install ai-sql
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: humanize-ai
+title: AI Detector
+version: 1.0.0
+description: '|'
+metadata:
+  author: artur-zhdan
+  category: General
+  tags:
+  - general
+  - humanize
+  source: clawhub-community
+  clawhub_slug: detector
+  clawhub_path: artur-zhdan/detector
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI Detector
+
+    # Source: ClawHub community skill by artur-zhdan
+
+    # Install: clawhub install detector
+
+    # Path: artur-zhdan/detector
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install detector
+
+    ```'
+examples:
+- description: Install AI Detector from ClawHub
+  usage: clawhub install detector
+schema_version: '1.0'

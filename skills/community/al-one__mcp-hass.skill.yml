@@ -1,0 +1,54 @@
+name: mcp-hass
+title: 🏠 Home Assistant via MCP protocol
+version: 1.0.1
+description: The skill for control Home Assistant smart home devices and query states using MCP protocol.
+metadata:
+  author: al-one
+  category: General
+  tags:
+  - general
+  - mcp
+  - hass
+  source: clawhub-community
+  clawhub_slug: mcp-hass
+  clawhub_path: al-one/mcp-hass
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 🏠 Home Assistant via MCP protocol
+
+    # Source: ClawHub community skill by al-one
+
+    # Install: clawhub install mcp-hass
+
+    # Path: al-one/mcp-hass
+
+
+    ## Description
+
+    The skill for control Home Assistant smart home devices and query states using MCP protocol.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mcp-hass
+
+    ```'
+examples:
+- description: Install 🏠 Home Assistant via MCP protocol from ClawHub
+  usage: clawhub install mcp-hass
+schema_version: '1.0'

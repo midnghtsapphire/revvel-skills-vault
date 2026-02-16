@@ -1,0 +1,66 @@
+name: pancake-skills
+title: pancake-skills
+version: 1.0.0
+description: Tương tác với Pancake Platform API để quản lý pages, conversations, messages, customers, statistics, tags, posts,
+  users. Sử dụng khi cần (1) Quản lý pages và tạo access token, (2) Xử lý conversations và messages, (3) Quản lý thông tin
+  customers, (4) Xem statistics và analytics, (5) Quản lý tags và p
+metadata:
+  author: suminhthanh
+  category: Media & Content
+  tags:
+  - media-content
+  - pancake
+  - skills
+  source: clawhub-community
+  clawhub_slug: pancake-skills
+  clawhub_path: suminhthanh/pancake-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# pancake-skills
+
+    # Source: ClawHub community skill by suminhthanh
+
+    # Install: clawhub install pancake-skills
+
+    # Path: suminhthanh/pancake-skills
+
+
+    ## Description
+
+    Tương tác với Pancake Platform API để quản lý pages, conversations, messages, customers, statistics, tags, posts, users.
+    Sử dụng khi cần (1) Quản lý pages và tạo access token, (2) Xử lý conversations và messages, (3) Quản lý thông tin customers,
+    (4) Xem statistics và analytics, (5) Quản lý tags và p
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/openapi-pancake.yaml
+
+    - scripts/common.sh
+
+    - scripts/pancake.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pancake-skills
+
+    ```'
+examples:
+- description: Install pancake-skills from ClawHub
+  usage: clawhub install pancake-skills
+schema_version: '1.0'

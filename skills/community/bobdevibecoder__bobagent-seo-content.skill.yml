@@ -1,0 +1,60 @@
+name: seo-content
+title: seo-content
+version: 1.0.0
+description: '"Generate SEO blog posts and landing pages for deployed micro-SaaS products. Research keywords, write content,
+  deploy to product blogs. Run weekly via cron or on-demand."'
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - seo
+  - content
+  source: clawhub-community
+  clawhub_slug: bobagent-seo-content
+  clawhub_path: bobdevibecoder/bobagent-seo-content
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# seo-content
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-seo-content
+
+    # Path: bobdevibecoder/bobagent-seo-content
+
+
+    ## Description
+
+    "Generate SEO blog posts and landing pages for deployed micro-SaaS products. Research keywords, write content, deploy
+    to product blogs. Run weekly via cron or on-demand."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/keyword_research.js
+
+    - scripts/save_blog_post.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-seo-content
+
+    ```'
+examples:
+- description: Install seo-content from ClawHub
+  usage: clawhub install bobagent-seo-content
+schema_version: '1.0'

@@ -1,0 +1,77 @@
+name: agent-browser
+title: Agent Browser
+version: 0.1.2
+description: '|'
+metadata:
+  author: okaris
+  category: Search & Research
+  tags:
+  - search-research
+  - agent
+  - browser
+  - bash(infsh *)
+  source: clawhub-community
+  clawhub_slug: agentic-browser
+  clawhub_path: okaris/agentic-browser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(infsh *)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Browser
+
+    # Source: ClawHub community skill by okaris
+
+    # Install: clawhub install agentic-browser
+
+    # Path: okaris/agentic-browser
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/authentication.md
+
+    - references/commands.md
+
+    - references/proxy-support.md
+
+    - references/session-management.md
+
+    - references/snapshot-refs.md
+
+    - references/video-recording.md
+
+    - templates/authenticated-session.sh
+
+    - templates/capture-workflow.sh
+
+
+    ## Allowed Tools
+
+    Bash(infsh *)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentic-browser
+
+    ```'
+examples:
+- description: Install Agent Browser from ClawHub
+  usage: clawhub install agentic-browser
+schema_version: '1.0'

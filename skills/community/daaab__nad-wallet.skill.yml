@@ -1,0 +1,64 @@
+name: nad-wallet
+title: Nad Wallet
+version: 1.0.0
+description: '"🔐 Nad Wallet - Monad Chain Identity for AI Agents. Create wallets, sign messages (SIWE), manage MON tokens
+  programmatically. Built for the Nad ecosystem (nad.fun, NadMail, NadName)."'
+metadata:
+  author: daaab
+  category: Communication
+  tags:
+  - communication
+  - nad
+  - wallet
+  source: clawhub-community
+  clawhub_slug: nad-wallet
+  clawhub_path: daaab/nad-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nad Wallet
+
+    # Source: ClawHub community skill by daaab
+
+    # Install: clawhub install nad-wallet
+
+    # Path: daaab/nad-wallet
+
+
+    ## Description
+
+    "🔐 Nad Wallet - Monad Chain Identity for AI Agents. Create wallets, sign messages (SIWE), manage MON tokens programmatically.
+    Built for the Nad ecosystem (nad.fun, NadMail, NadName)."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/check-balance.js
+
+    - scripts/create-wallet.js
+
+    - scripts/nadmail-register.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nad-wallet
+
+    ```'
+examples:
+- description: Install Nad Wallet from ClawHub
+  usage: clawhub install nad-wallet
+schema_version: '1.0'

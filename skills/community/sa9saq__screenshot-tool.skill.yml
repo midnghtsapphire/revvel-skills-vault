@@ -1,0 +1,54 @@
+name: rey-screenshot
+title: screenshot-tool
+version: 1.0.0
+description: Autonomous screenshot and visual capture. Self-initiated screen capture for SNS posts.
+metadata:
+  author: sa9saq
+  category: General
+  tags:
+  - general
+  - rey
+  - screenshot
+  source: clawhub-community
+  clawhub_slug: screenshot-tool
+  clawhub_path: sa9saq/screenshot-tool
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# screenshot-tool
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install screenshot-tool
+
+    # Path: sa9saq/screenshot-tool
+
+
+    ## Description
+
+    Autonomous screenshot and visual capture. Self-initiated screen capture for SNS posts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install screenshot-tool
+
+    ```'
+examples:
+- description: Install screenshot-tool from ClawHub
+  usage: clawhub install screenshot-tool
+schema_version: '1.0'

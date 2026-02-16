@@ -1,0 +1,59 @@
+name: transcript
+title: Transcript
+version: 1.4.1
+description: Get transcripts from any YouTube video — for summarization, research, translation, quoting, or content analysis.
+  Use when the user shares a video link or asks "what did they say", "get the transcript", "transcribe this video", "summarize
+  this video", or wants to analyze spoken content.
+metadata:
+  author: therohitdas
+  category: Search & Research
+  tags:
+  - search-research
+  - transcript
+  source: clawhub-community
+  clawhub_slug: transcript
+  clawhub_path: therohitdas/transcript
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Transcript
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install transcript
+
+    # Path: therohitdas/transcript
+
+
+    ## Description
+
+    Get transcripts from any YouTube video — for summarization, research, translation, quoting, or content analysis. Use when
+    the user shares a video link or asks "what did they say", "get the transcript", "transcribe this video", "summarize this
+    video", or wants to analyze spoken content.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tapi-auth.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install transcript
+
+    ```'
+examples:
+- description: Install Transcript from ClawHub
+  usage: clawhub install transcript
+schema_version: '1.0'

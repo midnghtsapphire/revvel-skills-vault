@@ -1,0 +1,55 @@
+name: proxy-status
+title: Proxy Status
+version: 1.0.0
+description: 'Check status of Proxy payment intents and transactions. Usage: /proxy-status [intent-id] or /proxy-status to
+  see all recent.'
+metadata:
+  author: proxyhq
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - proxy
+  - status
+  source: clawhub-community
+  clawhub_slug: proxy-status
+  clawhub_path: proxyhq/proxy-status
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Proxy Status
+
+    # Source: ClawHub community skill by proxyhq
+
+    # Install: clawhub install proxy-status
+
+    # Path: proxyhq/proxy-status
+
+
+    ## Description
+
+    Check status of Proxy payment intents and transactions. Usage: /proxy-status [intent-id] or /proxy-status to see all recent.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install proxy-status
+
+    ```'
+examples:
+- description: Install Proxy Status from ClawHub
+  usage: clawhub install proxy-status
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: pushover-notify
+title: Notify with Pushover
+version: 1.0.0
+description: '"Send push notifications to your phone via Pushover (pushover.net). Use when you want reliable out-of-band alerts
+  from OpenClaw: reminders, monitoring alerts, cron/heartbeat summaries, or ''notify me when X happens'' workflows."'
+metadata:
+  author: digitallyborn
+  category: Communication
+  tags:
+  - communication
+  - pushover
+  - notify
+  source: clawhub-community
+  clawhub_slug: pushover-notify
+  clawhub_path: digitallyborn/pushover-notify
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notify with Pushover
+
+    # Source: ClawHub community skill by digitallyborn
+
+    # Install: clawhub install pushover-notify
+
+    # Path: digitallyborn/pushover-notify
+
+
+    ## Description
+
+    "Send push notifications to your phone via Pushover (pushover.net). Use when you want reliable out-of-band alerts from
+    OpenClaw: reminders, monitoring alerts, cron/heartbeat summaries, or ''notify me when X happens'' workflows."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/pushover-api.md
+
+    - scripts/pushover_send.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pushover-notify
+
+    ```'
+examples:
+- description: Install Notify with Pushover from ClawHub
+  usage: clawhub install pushover-notify
+schema_version: '1.0'

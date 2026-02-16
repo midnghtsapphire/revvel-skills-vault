@@ -1,0 +1,65 @@
+name: academic-research-hub
+title: Academic Research Hub
+version: 0.1.0
+description: '"Use this skill when users need to search academic papers, download research documents, extract citations, or
+  gather scholarly information. Triggers include: requests to \"find papers on\", \"search research about\", \"download academic
+  articles\", \"get citations for\", or any request involving aca'
+metadata:
+  author: anisafifi
+  category: Search & Research
+  tags:
+  - search-research
+  - academic
+  - research
+  - hub
+  source: clawhub-community
+  clawhub_slug: academic-research-hub
+  clawhub_path: anisafifi/academic-research-hub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Academic Research Hub
+
+    # Source: ClawHub community skill by anisafifi
+
+    # Install: clawhub install academic-research-hub
+
+    # Path: anisafifi/academic-research-hub
+
+
+    ## Description
+
+    "Use this skill when users need to search academic papers, download research documents, extract citations, or gather scholarly
+    information. Triggers include: requests to \"find papers on\", \"search research about\", \"download academic articles\",
+    \"get citations for\", or any request involving aca
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/readme.md
+
+    - scripts/requirements.txt
+
+    - scripts/research.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install academic-research-hub
+
+    ```'
+examples:
+- description: Install Academic Research Hub from ClawHub
+  usage: clawhub install academic-research-hub
+schema_version: '1.0'

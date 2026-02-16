@@ -1,0 +1,55 @@
+name: slack
+title: testat1
+version: 1.0.0
+description: Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning
+  items in Slack channels or DMs.
+metadata:
+  author: chaunceyliu
+  category: Communication
+  tags:
+  - communication
+  - slack
+  source: clawhub-community
+  clawhub_slug: testat1
+  clawhub_path: chaunceyliu/testat1
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# testat1
+
+    # Source: ClawHub community skill by chaunceyliu
+
+    # Install: clawhub install testat1
+
+    # Path: chaunceyliu/testat1
+
+
+    ## Description
+
+    Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning
+    items in Slack channels or DMs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install testat1
+
+    ```'
+examples:
+- description: Install testat1 from ClawHub
+  usage: clawhub install testat1
+schema_version: '1.0'

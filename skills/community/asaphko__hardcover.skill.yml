@@ -1,0 +1,60 @@
+name: hardcover
+title: Hardcover.app skill for tracking books you're reading, reading goal, and finding books you'd love to read
+version: 1.0.7
+description: Query reading lists and book data from Hardcover.app via GraphQL API. Triggers when user mentions Hardcover,
+  asks about their reading list/library, wants book progress, searches for books/authors/series, or references "currently
+  reading", "want to read", or "books I've read". Also use for syncing re
+metadata:
+  author: asaphko
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - hardcover
+  source: clawhub-community
+  clawhub_slug: hardcover
+  clawhub_path: asaphko/hardcover
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hardcover.app skill for tracking books you''re reading, reading goal, and finding books you''d love to read
+
+    # Source: ClawHub community skill by asaphko
+
+    # Install: clawhub install hardcover
+
+    # Path: asaphko/hardcover
+
+
+    ## Description
+
+    Query reading lists and book data from Hardcover.app via GraphQL API. Triggers when user mentions Hardcover, asks about
+    their reading list/library, wants book progress, searches for books/authors/series, or references "currently reading",
+    "want to read", or "books I''ve read". Also use for syncing re
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/entities.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hardcover
+
+    ```'
+examples:
+- description: Install Hardcover.app skill for tracking books you're reading, reading goal, and finding books you'd love to
+    read from ClawHub
+  usage: clawhub install hardcover
+schema_version: '1.0'

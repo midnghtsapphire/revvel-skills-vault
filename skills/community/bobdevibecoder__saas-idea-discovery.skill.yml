@@ -1,0 +1,69 @@
+name: saas-idea-discovery
+title: SaaS Idea Discovery
+version: 1.0.0
+description: '"Monitor Reddit and Hacker News for micro-SaaS opportunities. Score ideas 0-100. Report high-potential ideas
+  (>70) to Telegram. Run via cron every 6 hours + weekly summary on Sundays."'
+metadata:
+  author: bobdevibecoder
+  category: Social Media
+  tags:
+  - social-media
+  - saas
+  - idea
+  - discovery
+  source: clawhub-community
+  clawhub_slug: saas-idea-discovery
+  clawhub_path: bobdevibecoder/saas-idea-discovery
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SaaS Idea Discovery
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install saas-idea-discovery
+
+    # Path: bobdevibecoder/saas-idea-discovery
+
+
+    ## Description
+
+    "Monitor Reddit and Hacker News for micro-SaaS opportunities. Score ideas 0-100. Report high-potential ideas (>70) to
+    Telegram. Run via cron every 6 hours + weekly summary on Sundays."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/discovered_ideas.json
+
+    - references/scoring_methodology.md
+
+    - scripts/hackernews_scraper.js
+
+    - scripts/idea_scorer.js
+
+    - scripts/reddit_scraper.js
+
+    - scripts/reddit_scraper_search.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install saas-idea-discovery
+
+    ```'
+examples:
+- description: Install SaaS Idea Discovery from ClawHub
+  usage: clawhub install saas-idea-discovery
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: claude-tmux
+title: Claude Code within tmux
+version: 1.0.0
+description: Manage Claude Code instances living inside tmux sessions. Users usually create separate tmux sessions for separate
+  projects. Use this skill when you need to read the latest Claude Code response in a particular tmux session / project, send
+  it a prompt and get the response, or run /compact directly vi
+metadata:
+  author: paulrahul
+  category: Development & Coding
+  tags:
+  - development-coding
+  - claude
+  - tmux
+  source: clawhub-community
+  clawhub_slug: claude-tmux
+  clawhub_path: paulrahul/claude-tmux
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claude Code within tmux
+
+    # Source: ClawHub community skill by paulrahul
+
+    # Install: clawhub install claude-tmux
+
+    # Path: paulrahul/claude-tmux
+
+
+    ## Description
+
+    Manage Claude Code instances living inside tmux sessions. Users usually create separate tmux sessions for separate projects.
+    Use this skill when you need to read the latest Claude Code response in a particular tmux session / project, send it a
+    prompt and get the response, or run /compact directly vi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claude-tmux
+
+    ```'
+examples:
+- description: Install Claude Code within tmux from ClawHub
+  usage: clawhub install claude-tmux
+schema_version: '1.0'

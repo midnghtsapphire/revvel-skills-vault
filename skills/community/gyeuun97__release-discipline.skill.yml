@@ -1,0 +1,58 @@
+name: release-discipline
+title: Release Discipline
+version: 1.0.0
+description: Enforce release discipline for AI agents and developers. Prevents version spam, forces quality checks before
+  publishing, and maintains a 24-hour cooldown between releases. Use when the user wants to publish, release, deploy, or bump
+  versions. Triggers on "release", "publish", "deploy", "version bump
+metadata:
+  author: gyeuun97
+  category: Development & Coding
+  tags:
+  - development-coding
+  - release
+  - discipline
+  source: clawhub-community
+  clawhub_slug: release-discipline
+  clawhub_path: gyeuun97/release-discipline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Release Discipline
+
+    # Source: ClawHub community skill by gyeuun97
+
+    # Install: clawhub install release-discipline
+
+    # Path: gyeuun97/release-discipline
+
+
+    ## Description
+
+    Enforce release discipline for AI agents and developers. Prevents version spam, forces quality checks before publishing,
+    and maintains a 24-hour cooldown between releases. Use when the user wants to publish, release, deploy, or bump versions.
+    Triggers on "release", "publish", "deploy", "version bump
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install release-discipline
+
+    ```'
+examples:
+- description: Install Release Discipline from ClawHub
+  usage: clawhub install release-discipline
+schema_version: '1.0'

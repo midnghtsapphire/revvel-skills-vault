@@ -1,0 +1,65 @@
+name: etherlink
+title: Etherlink Skill
+version: 1.0.0
+description: Etherlink blockchain interaction - EVM-compatible L2 on Tezos. Supports mainnet and shadownet testnet via MCP
+  server. Use for balance checks, transactions, smart contracts, and token operations on Etherlink.
+metadata:
+  author: efekucuk
+  category: Development & Coding
+  tags:
+  - development-coding
+  - etherlink
+  source: clawhub-community
+  clawhub_slug: etherlink-skill
+  clawhub_path: efekucuk/etherlink-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Etherlink Skill
+
+    # Source: ClawHub community skill by efekucuk
+
+    # Install: clawhub install etherlink-skill
+
+    # Path: efekucuk/etherlink-skill
+
+
+    ## Description
+
+    Etherlink blockchain interaction - EVM-compatible L2 on Tezos. Supports mainnet and shadownet testnet via MCP server.
+    Use for balance checks, transactions, smart contracts, and token operations on Etherlink.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/differences.md
+
+    - references/mcp-setup.md
+
+    - references/networks.md
+
+    - scripts/test-connection.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install etherlink-skill
+
+    ```'
+examples:
+- description: Install Etherlink Skill from ClawHub
+  usage: clawhub install etherlink-skill
+schema_version: '1.0'

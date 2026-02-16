@@ -1,0 +1,42 @@
+name: openclaw_imsg
+title: 📨 Imsg
+version: 1.0.0
+description: iMessage/SMS CLI for listing chats, history, watch, and sending.
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - imsg
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - imsg
+install:
+- id: brew
+  platform: all
+  method: brew
+  command: steipete/tap/imsg
+  label: Install imsg (brew)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: imsg\ndescription: iMessage/SMS CLI for listing chats, history, watch, and sending.\nhomepage: https://imsg.to\n\
+    metadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"\U0001F4E8\",\n        \"os\": [\"darwin\"],\n      \
+    \  \"requires\": { \"bins\": [\"imsg\"] },\n        \"install\":\n          [\n            {\n              \"id\": \"\
+    brew\",\n              \"kind\": \"brew\",\n              \"formula\": \"steipete/tap/imsg\",\n              \"bins\"\
+    : [\"imsg\"],\n              \"label\": \"Install imsg (brew)\",\n            },\n          ],\n      },\n  }\n---\n\n\
+    # imsg Actions\n\n## Overview\n\nUse `imsg` to read and send Messages.app iMessage/SMS on macOS.\n\nRequirements: Messages.app\
+    \ signed in, Full Disk Access for your terminal, and Automation permission to control Messages.app for sending.\n\n##\
+    \ Inputs to collect\n\n- Recipient handle (phone/email) for `send`\n- `chatId` for history/watch (from `imsg chats --limit\
+    \ 10 --json`)\n- `text` and optional `file` path for sends\n\n## Actions\n\n### List chats\n\n```bash\nimsg chats --limit\
+    \ 10 --json\n```\n\n### Fetch chat history\n\n```bash\nimsg history --chat-id 1 --limit 20 --attachments --json\n```\n\
+    \n### Watch a chat\n\n```bash\nimsg watch --chat-id 1 --attachments\n```\n\n### Send a message\n\n```bash\nimsg send --to\
+    \ \"+14155551212\" --text \"hi\" --file /path/pic.jpg\n```\n\n## Notes\n\n- `--service imessage|sms|auto` controls delivery.\n\
+    - Confirm recipient + message before sending.\n\n## Ideas to try\n\n- Use `imsg chats --limit 10 --json` to discover chat\
+    \ ids.\n- Watch a high-signal chat to stream incoming messages.\n"
+examples: []
+schema_version: '1.0'

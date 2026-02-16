@@ -1,0 +1,64 @@
+name: ridb-search
+title: Recreation Information Database Search
+version: 1.0.0
+description: Search the Recreation Information Database (RIDB) for campgrounds and recreation facilities near a location.
+  Use when finding campgrounds, recreation areas, or federal facilities by location/radius. Supports geocoding (city names)
+  and lat/lon coordinates.
+metadata:
+  author: seanrea
+  category: Search & Research
+  tags:
+  - search-research
+  - ridb
+  - search
+  source: clawhub-community
+  clawhub_slug: ridb-search
+  clawhub_path: seanrea/ridb-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Recreation Information Database Search
+
+    # Source: ClawHub community skill by seanrea
+
+    # Install: clawhub install ridb-search
+
+    # Path: seanrea/ridb-search
+
+
+    ## Description
+
+    Search the Recreation Information Database (RIDB) for campgrounds and recreation facilities near a location. Use when
+    finding campgrounds, recreation areas, or federal facilities by location/radius. Supports geocoding (city names) and lat/lon
+    coordinates.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-notes.md
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ridb-search
+
+    ```'
+examples:
+- description: Install Recreation Information Database Search from ClawHub
+  usage: clawhub install ridb-search
+schema_version: '1.0'

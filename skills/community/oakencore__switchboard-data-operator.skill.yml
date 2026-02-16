@@ -1,0 +1,59 @@
+name: switchboard-data-operator
+title: Switchboard Skills
+version: 1.0.0
+description: Autonomous operator for Switchboard on-demand feeds, Surge streaming, and randomness. Designs jobs, simulates
+  via Crossbar, and deploys/updates/reads feeds across Solana/SVM, EVM, Sui, and other Switchboard-supported chains—with user-controlled
+  security, spend limits, and allow/deny lists.
+metadata:
+  author: oakencore
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - switchboard
+  - data
+  - operator
+  source: clawhub-community
+  clawhub_slug: switchboard-data-operator
+  clawhub_path: oakencore/switchboard-data-operator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Switchboard Skills
+
+    # Source: ClawHub community skill by oakencore
+
+    # Install: clawhub install switchboard-data-operator
+
+    # Path: oakencore/switchboard-data-operator
+
+
+    ## Description
+
+    Autonomous operator for Switchboard on-demand feeds, Surge streaming, and randomness. Designs jobs, simulates via Crossbar,
+    and deploys/updates/reads feeds across Solana/SVM, EVM, Sui, and other Switchboard-supported chains—with user-controlled
+    security, spend limits, and allow/deny lists.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install switchboard-data-operator
+
+    ```'
+examples:
+- description: Install Switchboard Skills from ClawHub
+  usage: clawhub install switchboard-data-operator
+schema_version: '1.0'

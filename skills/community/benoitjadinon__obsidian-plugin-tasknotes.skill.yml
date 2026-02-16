@@ -1,0 +1,57 @@
+name: tasknotes
+title: Obsidian Tasknotes
+version: 0.1.0
+description: Manage tasks in Obsidian via TaskNotes plugin API. Use when user wants to create tasks, list tasks, query by
+  status or project, update task status, delete tasks, or check what they need to do.
+metadata:
+  author: benoitjadinon
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tasknotes
+  source: clawhub-community
+  clawhub_slug: obsidian-plugin-tasknotes
+  clawhub_path: benoitjadinon/obsidian-plugin-tasknotes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Obsidian Tasknotes
+
+    # Source: ClawHub community skill by benoitjadinon
+
+    # Install: clawhub install obsidian-plugin-tasknotes
+
+    # Path: benoitjadinon/obsidian-plugin-tasknotes
+
+
+    ## Description
+
+    Manage tasks in Obsidian via TaskNotes plugin API. Use when user wants to create tasks, list tasks, query by status or
+    project, update task status, delete tasks, or check what they need to do.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tasks.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install obsidian-plugin-tasknotes
+
+    ```'
+examples:
+- description: Install Obsidian Tasknotes from ClawHub
+  usage: clawhub install obsidian-plugin-tasknotes
+schema_version: '1.0'

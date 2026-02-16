@@ -1,0 +1,64 @@
+name: lifi-orchestrator
+title: LI.FI Orchestrator
+version: 1.0.1
+description: 'Cross-chain bridging and swapping via LI.FI — the leading bridge aggregator that routes across 30+ bridges and
+  DEXs for optimal rates. Use when you need to: (1) Get quotes for moving tokens between chains, (2) Execute cross-chain swaps
+  with best pricing, (3) Track bridge transaction status, (4) Comp'
+metadata:
+  author: rhlsthrm
+  category: General
+  tags:
+  - general
+  - lifi
+  - orchestrator
+  source: clawhub-community
+  clawhub_slug: lifi-orchestrator
+  clawhub_path: rhlsthrm/lifi-orchestrator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LI.FI Orchestrator
+
+    # Source: ClawHub community skill by rhlsthrm
+
+    # Install: clawhub install lifi-orchestrator
+
+    # Path: rhlsthrm/lifi-orchestrator
+
+
+    ## Description
+
+    Cross-chain bridging and swapping via LI.FI — the leading bridge aggregator that routes across 30+ bridges and DEXs for
+    optimal rates. Use when you need to: (1) Get quotes for moving tokens between chains, (2) Execute cross-chain swaps with
+    best pricing, (3) Track bridge transaction status, (4) Comp
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bridge.py
+
+    - scripts/quote.py
+
+    - scripts/status.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lifi-orchestrator
+
+    ```'
+examples:
+- description: Install LI.FI Orchestrator from ClawHub
+  usage: clawhub install lifi-orchestrator
+schema_version: '1.0'

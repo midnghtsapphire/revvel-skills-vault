@@ -1,0 +1,65 @@
+name: akaunting
+title: Akaunting
+version: 1.0.0
+description: Interact with Akaunting open-source accounting software via REST API. Use for creating invoices, tracking income/expenses,
+  managing accounts, and bookkeeping automation. Triggers on accounting, bookkeeping, invoicing, expenses, income tracking,
+  or Akaunting mentions.
+metadata:
+  author: liekzejaws
+  category: Development & Coding
+  tags:
+  - development-coding
+  - akaunting
+  source: clawhub-community
+  clawhub_slug: akaunting
+  clawhub_path: liekzejaws/akaunting
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Akaunting
+
+    # Source: ClawHub community skill by liekzejaws
+
+    # Install: clawhub install akaunting
+
+    # Path: liekzejaws/akaunting
+
+
+    ## Description
+
+    Interact with Akaunting open-source accounting software via REST API. Use for creating invoices, tracking income/expenses,
+    managing accounts, and bookkeeping automation. Triggers on accounting, bookkeeping, invoicing, expenses, income tracking,
+    or Akaunting mentions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/docker-compose.yml
+
+    - references/api.md
+
+    - scripts/akaunting.py
+
+    - scripts/fix_event_listener.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install akaunting
+
+    ```'
+examples:
+- description: Install Akaunting from ClawHub
+  usage: clawhub install akaunting
+schema_version: '1.0'

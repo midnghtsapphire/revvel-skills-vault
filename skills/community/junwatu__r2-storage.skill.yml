@@ -1,0 +1,66 @@
+name: r2
+title: R2 Storage
+version: 1.0.0
+description: Cloudflare R2 Storage management — setup, upload, download, sync via rclone
+metadata:
+  author: junwatu
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  source: clawhub-community
+  clawhub_slug: r2-storage
+  clawhub_path: junwatu/r2-storage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# R2 Storage
+
+    # Source: ClawHub community skill by junwatu
+
+    # Install: clawhub install r2-storage
+
+    # Path: junwatu/r2-storage
+
+
+    ## Description
+
+    Cloudflare R2 Storage management — setup, upload, download, sync via rclone
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/delete.sh
+
+    - scripts/download.sh
+
+    - scripts/list.sh
+
+    - scripts/setup.sh
+
+    - scripts/show-creds.sh
+
+    - scripts/sync.sh
+
+    - scripts/upload.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install r2-storage
+
+    ```'
+examples:
+- description: Install R2 Storage from ClawHub
+  usage: clawhub install r2-storage
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: bring
+title: Bring! Shopping Lists
+version: 1.0.0
+description: Manage Bring! shopping lists - view, add, and remove grocery items from shared shopping lists. Use when the user
+  wants to interact with their Bring! shopping list app, add groceries, check what's on the list, or remove items after shopping.
+metadata:
+  author: grewingm
+  category: General
+  tags:
+  - general
+  - bring
+  source: clawhub-community
+  clawhub_slug: bring
+  clawhub_path: grewingm/bring
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bring! Shopping Lists
+
+    # Source: ClawHub community skill by grewingm
+
+    # Install: clawhub install bring
+
+    # Path: grewingm/bring
+
+
+    ## Description
+
+    Manage Bring! shopping lists - view, add, and remove grocery items from shared shopping lists. Use when the user wants
+    to interact with their Bring! shopping list app, add groceries, check what''s on the list, or remove items after shopping.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/bring-cli.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bring
+
+    ```'
+examples:
+- description: Install Bring! Shopping Lists from ClawHub
+  usage: clawhub install bring
+schema_version: '1.0'

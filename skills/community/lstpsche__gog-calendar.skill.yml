@@ -1,0 +1,58 @@
+name: gog-calendar
+title: Google Calendar (via gogcli)
+version: 1.0.0
+description: 'Google Calendar via gogcli: reliable cross-calendar agenda (today/week/range) and best-effort keyword search
+  across calendars (iterate + aggregate). Token-efficient output (`--plain` default, `--json` only when needed). Post-filters
+  unwanted calendars (e.g., holidays) and confirms before writes.'
+metadata:
+  author: lstpsche
+  category: Search & Research
+  tags:
+  - search-research
+  - gog
+  - calendar
+  source: clawhub-community
+  clawhub_slug: gog-calendar
+  clawhub_path: lstpsche/gog-calendar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Calendar (via gogcli)
+
+    # Source: ClawHub community skill by lstpsche
+
+    # Install: clawhub install gog-calendar
+
+    # Path: lstpsche/gog-calendar
+
+
+    ## Description
+
+    Google Calendar via gogcli: reliable cross-calendar agenda (today/week/range) and best-effort keyword search across calendars
+    (iterate + aggregate). Token-efficient output (`--plain` default, `--json` only when needed). Post-filters unwanted calendars
+    (e.g., holidays) and confirms before writes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gog-calendar
+
+    ```'
+examples:
+- description: Install Google Calendar (via gogcli) from ClawHub
+  usage: clawhub install gog-calendar
+schema_version: '1.0'

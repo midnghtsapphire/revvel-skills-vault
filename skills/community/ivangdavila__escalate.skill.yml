@@ -1,0 +1,59 @@
+name: escalate
+title: Escalate
+version: 1.0.0
+description: Auto-learns when to handle autonomously vs pause for human input. Grows trust over time, stays conservative until
+  patterns confirm.
+metadata:
+  author: ivangdavila
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - escalate
+  source: clawhub-community
+  clawhub_slug: escalate
+  clawhub_path: ivangdavila/escalate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Escalate
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install escalate
+
+    # Path: ivangdavila/escalate
+
+
+    ## Description
+
+    Auto-learns when to handle autonomously vs pause for human input. Grows trust over time, stays conservative until patterns
+    confirm.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - boundaries.md
+
+    - patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install escalate
+
+    ```'
+examples:
+- description: Install Escalate from ClawHub
+  usage: clawhub install escalate
+schema_version: '1.0'

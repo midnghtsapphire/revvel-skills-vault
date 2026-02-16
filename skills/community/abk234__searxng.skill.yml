@@ -1,0 +1,65 @@
+name: searxng
+title: Searxng
+version: 1.0.3
+description: Privacy-respecting metasearch using your local SearXNG instance. Search the web, images, news, and more without
+  external API dependencies.
+metadata:
+  author: abk234
+  category: Search & Research
+  tags:
+  - search-research
+  - searxng
+  source: clawhub-community
+  clawhub_slug: searxng
+  clawhub_path: abk234/searxng
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Searxng
+
+    # Source: ClawHub community skill by abk234
+
+    # Install: clawhub install searxng
+
+    # Path: abk234/searxng
+
+
+    ## Description
+
+    Privacy-respecting metasearch using your local SearXNG instance. Search the web, images, news, and more without external
+    API dependencies.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - PUBLISH.md
+
+    - PUBLISHING_CHECKLIST.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/searxng.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install searxng
+
+    ```'
+examples:
+- description: Install Searxng from ClawHub
+  usage: clawhub install searxng
+schema_version: '1.0'

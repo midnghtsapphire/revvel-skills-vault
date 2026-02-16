@@ -1,0 +1,59 @@
+name: dtek-light-check
+title: DTEK Light
+version: 1.0.0
+description: Проверка наличия электроэнергии через сайт ДТЭК Одесские электросети (Одеса, вул. Чикаленка Євгена, 43)
+metadata:
+  author: kapishdima
+  category: General
+  tags:
+  - general
+  - dtek
+  - light
+  - check
+  source: clawhub-community
+  clawhub_slug: dtek-light
+  clawhub_path: kapishdima/dtek-light
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DTEK Light
+
+    # Source: ClawHub community skill by kapishdima
+
+    # Install: clawhub install dtek-light
+
+    # Path: kapishdima/dtek-light
+
+
+    ## Description
+
+    Проверка наличия электроэнергии через сайт ДТЭК Одесские электросети (Одеса, вул. Чикаленка Євгена, 43)
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - check-light.js
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dtek-light
+
+    ```'
+examples:
+- description: Install DTEK Light from ClawHub
+  usage: clawhub install dtek-light
+schema_version: '1.0'

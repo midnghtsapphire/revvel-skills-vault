@@ -1,0 +1,62 @@
+name: openclaw-sentinel-pro
+title: Openclaw Sentinel Pro
+version: 1.0.0
+description: '"Full supply chain security suite: scan skills for obfuscation and malware patterns, auto-quarantine risky skills,
+  generate SBOMs, continuous monitoring, and community threat feeds. Everything in openclaw-sentinel (free) plus automated
+  countermeasures."'
+metadata:
+  author: atlaspa
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - sentinel
+  - pro
+  source: clawhub-community
+  clawhub_slug: openclaw-sentinel-pro
+  clawhub_path: atlaspa/openclaw-sentinel-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Sentinel Pro
+
+    # Source: ClawHub community skill by atlaspa
+
+    # Install: clawhub install openclaw-sentinel-pro
+
+    # Path: atlaspa/openclaw-sentinel-pro
+
+
+    ## Description
+
+    "Full supply chain security suite: scan skills for obfuscation and malware patterns, auto-quarantine risky skills, generate
+    SBOMs, continuous monitoring, and community threat feeds. Everything in openclaw-sentinel (free) plus automated countermeasures."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sentinel.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-sentinel-pro
+
+    ```'
+examples:
+- description: Install Openclaw Sentinel Pro from ClawHub
+  usage: clawhub install openclaw-sentinel-pro
+schema_version: '1.0'

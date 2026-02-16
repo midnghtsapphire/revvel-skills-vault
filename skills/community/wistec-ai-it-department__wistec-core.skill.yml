@@ -1,0 +1,58 @@
+name: wistec-core
+title: Wistec Core
+version: 1.0.0
+description: Use ClawHub CLI to search, install, update, and publish agent skills from clawhub.ai with advanced caching and
+  compression. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or
+  publish new/updated skill folders with optimized performance.
+metadata:
+  author: wistec-ai-it-department
+  category: Search & Research
+  tags:
+  - search-research
+  - wistec
+  - core
+  source: clawhub-community
+  clawhub_slug: wistec-core
+  clawhub_path: wistec-ai-it-department/wistec-core
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wistec Core
+
+    # Source: ClawHub community skill by wistec-ai-it-department
+
+    # Install: clawhub install wistec-core
+
+    # Path: wistec-ai-it-department/wistec-core
+
+
+    ## Description
+
+    Use ClawHub CLI to search, install, update, and publish agent skills from clawhub.ai with advanced caching and compression.
+    Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated
+    skill folders with optimized performance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wistec-core
+
+    ```'
+examples:
+- description: Install Wistec Core from ClawHub
+  usage: clawhub install wistec-core
+schema_version: '1.0'

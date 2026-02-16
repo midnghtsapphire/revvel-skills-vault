@@ -1,0 +1,54 @@
+name: cron-gen
+title: Cron Expression Generator
+version: 1.0.1
+description: Generate cron expressions from natural language
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - cron
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-cron-gen
+  clawhub_path: lxgicstudios/ai-cron-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cron Expression Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-cron-gen
+
+    # Path: lxgicstudios/ai-cron-gen
+
+
+    ## Description
+
+    Generate cron expressions from natural language
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-cron-gen
+
+    ```'
+examples:
+- description: Install Cron Expression Generator from ClawHub
+  usage: clawhub install ai-cron-gen
+schema_version: '1.0'

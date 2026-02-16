@@ -1,0 +1,74 @@
+name: raycast-extensions
+title: raycast
+version: 1.0.0
+description: Build and maintain Raycast extensions using the Raycast API. Triggers on @raycast/api, List, Grid, Detail, Form,
+  AI.ask, LocalStorage, Cache, showToast, and BrowserExtension. Use this repo's references/api/*.md files as the primary source
+  of truth for component specs and API usage.
+metadata:
+  author: xaif
+  category: Search & Research
+  tags:
+  - search-research
+  - raycast
+  - extensions
+  source: clawhub-community
+  clawhub_slug: raycast
+  clawhub_path: xaif/raycast
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# raycast
+
+    # Source: ClawHub community skill by xaif
+
+    # Install: clawhub install raycast
+
+    # Path: xaif/raycast
+
+
+    ## Description
+
+    Build and maintain Raycast extensions using the Raycast API. Triggers on @raycast/api, List, Grid, Detail, Form, AI.ask,
+    LocalStorage, Cache, showToast, and BrowserExtension. Use this repo''s references/api/*.md files as the primary source
+    of truth for component specs and API usage.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples.md
+
+    - references/api/action-panel.md
+
+    - references/api/actions.md
+
+    - references/api/ai.md
+
+    - references/api/alert.md
+
+    - references/api/browser-extension.md
+
+    - references/api/caching.md
+
+    - references/api/clipboard.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install raycast
+
+    ```'
+examples:
+- description: Install raycast from ClawHub
+  usage: clawhub install raycast
+schema_version: '1.0'

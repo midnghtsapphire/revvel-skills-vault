@@ -1,0 +1,74 @@
+name: authenticate-wallet
+title: Authenticate Wallet
+version: 0.1.0
+description: Sign in to the wallet. Use when you or the user want to log in, sign in, connect, or set up the wallet, or when
+  any wallet operation fails with authentication or "not signed in" errors. This skill is a prerequisite before sending, trading,
+  or funding.
+metadata:
+  author: 0xrag
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - authenticate
+  - wallet
+  - '["bash(npx awal@latest status*)"'
+  - '"bash(npx awal@latest auth *)"'
+  - '"bash(npx awal@latest balance*)"'
+  - '"bash(npx awal@latest address*)"'
+  - '"bash(npx awal@latest show*)"]'
+  source: clawhub-community
+  clawhub_slug: authenticate-wallet
+  clawhub_path: 0xrag/authenticate-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '["Bash(npx awal@latest status*)"'
+  - '"Bash(npx awal@latest auth *)"'
+  - '"Bash(npx awal@latest balance*)"'
+  - '"Bash(npx awal@latest address*)"'
+  - '"Bash(npx awal@latest show*)"]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Authenticate Wallet
+
+    # Source: ClawHub community skill by 0xrag
+
+    # Install: clawhub install authenticate-wallet
+
+    # Path: 0xrag/authenticate-wallet
+
+
+    ## Description
+
+    Sign in to the wallet. Use when you or the user want to log in, sign in, connect, or set up the wallet, or when any wallet
+    operation fails with authentication or "not signed in" errors. This skill is a prerequisite before sending, trading, or
+    funding.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    ["Bash(npx awal@latest status*)", "Bash(npx awal@latest auth *)", "Bash(npx awal@latest balance*)", "Bash(npx awal@latest
+    address*)", "Bash(npx awal@latest show*)"]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install authenticate-wallet
+
+    ```'
+examples:
+- description: Install Authenticate Wallet from ClawHub
+  usage: clawhub install authenticate-wallet
+schema_version: '1.0'

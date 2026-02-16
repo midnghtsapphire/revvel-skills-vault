@@ -1,0 +1,58 @@
+name: skills-audit
+title: SkillLens Audit
+version: 1.0.0
+description: Audit locally installed agent skills for security/policy issues using the SkillLens CLI (`skilllens scan`, `skilllens
+  config`). Use when asked to scan a skills directory (Codex/Claude) and produce a risk-focused audit report based on each
+  skill's `SKILL.md` and bundled resources.
+metadata:
+  author: morozred
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skills
+  - audit
+  source: clawhub-community
+  clawhub_slug: skill-audit
+  clawhub_path: morozred/skill-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SkillLens Audit
+
+    # Source: ClawHub community skill by morozred
+
+    # Install: clawhub install skill-audit
+
+    # Path: morozred/skill-audit
+
+
+    ## Description
+
+    Audit locally installed agent skills for security/policy issues using the SkillLens CLI (`skilllens scan`, `skilllens
+    config`). Use when asked to scan a skills directory (Codex/Claude) and produce a risk-focused audit report based on each
+    skill''s `SKILL.md` and bundled resources.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-audit
+
+    ```'
+examples:
+- description: Install SkillLens Audit from ClawHub
+  usage: clawhub install skill-audit
+schema_version: '1.0'

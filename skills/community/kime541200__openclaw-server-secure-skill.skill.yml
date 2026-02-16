@@ -1,0 +1,58 @@
+name: openclaw-server-secure-skill
+title: openclaw-server-secure-skill
+version: 1.0.0
+description: Comprehensive security hardening and installation guide for OpenClaw (formerly Clawdbot/Moltbot). Use this skill
+  when the user wants to secure a server, install the OpenClaw agent, or configure Tailscale/Firewall for the agent.
+metadata:
+  author: kime541200
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - server
+  - secure
+  - skill
+  source: clawhub-community
+  clawhub_slug: openclaw-server-secure-skill
+  clawhub_path: kime541200/openclaw-server-secure-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# openclaw-server-secure-skill
+
+    # Source: ClawHub community skill by kime541200
+
+    # Install: clawhub install openclaw-server-secure-skill
+
+    # Path: kime541200/openclaw-server-secure-skill
+
+
+    ## Description
+
+    Comprehensive security hardening and installation guide for OpenClaw (formerly Clawdbot/Moltbot). Use this skill when
+    the user wants to secure a server, install the OpenClaw agent, or configure Tailscale/Firewall for the agent.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-server-secure-skill
+
+    ```'
+examples:
+- description: Install openclaw-server-secure-skill from ClawHub
+  usage: clawhub install openclaw-server-secure-skill
+schema_version: '1.0'

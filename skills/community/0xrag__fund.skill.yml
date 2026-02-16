@@ -1,0 +1,71 @@
+name: fund
+title: Fund
+version: 0.1.0
+description: Add money to the wallet. Use when you or the user want to fund, deposit, top up, load, buy USDC, add funds, onramp,
+  or get USDC. Also use when the wallet has insufficient balance for a send or trade operation, or when someone asks "how
+  do I get USDC?"
+metadata:
+  author: 0xrag
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - fund
+  - '["bash(npx awal@latest status*)"'
+  - '"bash(npx awal@latest show*)"'
+  - '"bash(npx awal@latest address*)"'
+  - '"bash(npx awal@latest balance*)"]'
+  source: clawhub-community
+  clawhub_slug: fund
+  clawhub_path: 0xrag/fund
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '["Bash(npx awal@latest status*)"'
+  - '"Bash(npx awal@latest show*)"'
+  - '"Bash(npx awal@latest address*)"'
+  - '"Bash(npx awal@latest balance*)"]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fund
+
+    # Source: ClawHub community skill by 0xrag
+
+    # Install: clawhub install fund
+
+    # Path: 0xrag/fund
+
+
+    ## Description
+
+    Add money to the wallet. Use when you or the user want to fund, deposit, top up, load, buy USDC, add funds, onramp, or
+    get USDC. Also use when the wallet has insufficient balance for a send or trade operation, or when someone asks "how do
+    I get USDC?"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    ["Bash(npx awal@latest status*)", "Bash(npx awal@latest show*)", "Bash(npx awal@latest address*)", "Bash(npx awal@latest
+    balance*)"]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fund
+
+    ```'
+examples:
+- description: Install Fund from ClawHub
+  usage: clawhub install fund
+schema_version: '1.0'

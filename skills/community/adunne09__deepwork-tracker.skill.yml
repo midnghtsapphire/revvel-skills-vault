@@ -1,0 +1,58 @@
+name: deepwork-tracker
+title: Deepwork Tracker
+version: 0.1.1
+description: Track deep work sessions locally (start/stop/status) and generate a GitHub-contribution-graph style minutes-per-day
+  heatmap for sharing (e.g., via Telegram). Use when the user says things like “start deep work”, “stop deep work”, “am I
+  in a session?”, “show my deep work graph”, or asks to review dee
+metadata:
+  author: adunne09
+  category: Social Media
+  tags:
+  - social-media
+  - deepwork
+  - tracker
+  source: clawhub-community
+  clawhub_slug: deepwork-tracker
+  clawhub_path: adunne09/deepwork-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Deepwork Tracker
+
+    # Source: ClawHub community skill by adunne09
+
+    # Install: clawhub install deepwork-tracker
+
+    # Path: adunne09/deepwork-tracker
+
+
+    ## Description
+
+    Track deep work sessions locally (start/stop/status) and generate a GitHub-contribution-graph style minutes-per-day heatmap
+    for sharing (e.g., via Telegram). Use when the user says things like “start deep work”, “stop deep work”, “am I in a session?”,
+    “show my deep work graph”, or asks to review dee
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install deepwork-tracker
+
+    ```'
+examples:
+- description: Install Deepwork Tracker from ClawHub
+  usage: clawhub install deepwork-tracker
+schema_version: '1.0'

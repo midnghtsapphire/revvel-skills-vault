@@ -1,0 +1,55 @@
+name: napcat-qq
+title: NapCat QQ
+version: 1.0.0
+description: '"为 openclaw 发送 QQ 消息时，强制使用 napcat 插件 API，并按照私聊/群聊规则生成与校验 sessionKey。适用于“发送QQ消息”“发群消息”“发QQ私聊”等请求。"'
+metadata:
+  author: propersama
+  category: Development & Coding
+  tags:
+  - development-coding
+  - napcat
+  source: clawhub-community
+  clawhub_slug: napcat-qq
+  clawhub_path: propersama/napcat-qq
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NapCat QQ
+
+    # Source: ClawHub community skill by propersama
+
+    # Install: clawhub install napcat-qq
+
+    # Path: propersama/napcat-qq
+
+
+    ## Description
+
+    "为 openclaw 发送 QQ 消息时，强制使用 napcat 插件 API，并按照私聊/群聊规则生成与校验 sessionKey。适用于“发送QQ消息”“发群消息”“发QQ私聊”等请求。"
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install napcat-qq
+
+    ```'
+examples:
+- description: Install NapCat QQ from ClawHub
+  usage: clawhub install napcat-qq
+schema_version: '1.0'

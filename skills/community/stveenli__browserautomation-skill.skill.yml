@@ -1,0 +1,66 @@
+name: browser-automation-skill
+title: Browser Automation
+version: 1.0.2
+description: Advanced headless browser automation skill for OpenClaw agents. Enables intelligent web navigation, form filling,
+  data extraction, and UI testing with structured commands and semantic element targeting.
+metadata:
+  author: stveenli
+  category: Search & Research
+  tags:
+  - search-research
+  - browser
+  - automation
+  - skill
+  - bash(agent-browser:*)
+  source: clawhub-community
+  clawhub_slug: browserautomation-skill
+  clawhub_path: stveenli/browserautomation-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(agent-browser:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Browser Automation
+
+    # Source: ClawHub community skill by stveenli
+
+    # Install: clawhub install browserautomation-skill
+
+    # Path: stveenli/browserautomation-skill
+
+
+    ## Description
+
+    Advanced headless browser automation skill for OpenClaw agents. Enables intelligent web navigation, form filling, data
+    extraction, and UI testing with structured commands and semantic element targeting.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(agent-browser:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install browserautomation-skill
+
+    ```'
+examples:
+- description: Install Browser Automation from ClawHub
+  usage: clawhub install browserautomation-skill
+schema_version: '1.0'

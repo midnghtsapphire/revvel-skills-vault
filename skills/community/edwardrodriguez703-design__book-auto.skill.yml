@@ -1,0 +1,58 @@
+name: book-auto
+title: Book Auto
+version: 1.0.0
+description: Book auto services through Lokuli MCP. Use when user needs smog checks, oil changes, car detailing, mechanics,
+  tire services, or any automotive service. Triggers on requests like "I need a smog check", "book an oil change", "find a
+  mechanic near me", "car detailing", or any auto service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - auto
+  source: clawhub-community
+  clawhub_slug: book-auto
+  clawhub_path: edwardrodriguez703-design/book-auto
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Auto
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-auto
+
+    # Path: edwardrodriguez703-design/book-auto
+
+
+    ## Description
+
+    Book auto services through Lokuli MCP. Use when user needs smog checks, oil changes, car detailing, mechanics, tire services,
+    or any automotive service. Triggers on requests like "I need a smog check", "book an oil change", "find a mechanic near
+    me", "car detailing", or any auto service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-auto
+
+    ```'
+examples:
+- description: Install Book Auto from ClawHub
+  usage: clawhub install book-auto
+schema_version: '1.0'

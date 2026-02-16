@@ -1,0 +1,64 @@
+name: request-approval
+title: Request Approval
+version: 1.0.0
+description: Use Preloop's request_approval tool to get human approval before risky operations like deletions, production
+  changes, or external modifications
+metadata:
+  author: yconst
+  category: General
+  tags:
+  - general
+  - request
+  - approval
+  source: clawhub-community
+  clawhub_slug: request-approval
+  clawhub_path: yconst/request-approval
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Request Approval
+
+    # Source: ClawHub community skill by yconst
+
+    # Install: clawhub install request-approval
+
+    # Path: yconst/request-approval
+
+
+    ## Description
+
+    Use Preloop''s request_approval tool to get human approval before risky operations like deletions, production changes,
+    or external modifications
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/EXAMPLES.md
+
+    - references/SETUP.md
+
+    - references/TROUBLESHOOTING.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install request-approval
+
+    ```'
+examples:
+- description: Install Request Approval from ClawHub
+  usage: clawhub install request-approval
+schema_version: '1.0'

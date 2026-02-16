@@ -1,0 +1,55 @@
+name: thingsboard
+title: ThingsBot
+version: 0.1.0
+description: Manage ThingsBoard devices, dashboards, telemetry, and users via the ThingsBoard REST API.
+metadata:
+  author: hoangnv170752
+  category: Development & Coding
+  tags:
+  - development-coding
+  - thingsboard
+  source: clawhub-community
+  clawhub_slug: thingsboard-skill
+  clawhub_path: hoangnv170752/thingsboard-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ThingsBot
+
+    # Source: ClawHub community skill by hoangnv170752
+
+    # Install: clawhub install thingsboard-skill
+
+    # Path: hoangnv170752/thingsboard-skill
+
+
+    ## Description
+
+    Manage ThingsBoard devices, dashboards, telemetry, and users via the ThingsBoard REST API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - credentials.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install thingsboard-skill
+
+    ```'
+examples:
+- description: Install ThingsBot from ClawHub
+  usage: clawhub install thingsboard-skill
+schema_version: '1.0'

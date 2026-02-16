@@ -1,0 +1,57 @@
+name: server
+title: Server
+version: 1.0.0
+description: Configure, deploy, and troubleshoot web servers, application servers, and containerized services.
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - server
+  source: clawhub-community
+  clawhub_slug: server
+  clawhub_path: ivangdavila/server
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Server
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install server
+
+    # Path: ivangdavila/server
+
+
+    ## Description
+
+    Configure, deploy, and troubleshoot web servers, application servers, and containerized services.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - configs.md
+
+    - docker.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install server
+
+    ```'
+examples:
+- description: Install Server from ClawHub
+  usage: clawhub install server
+schema_version: '1.0'

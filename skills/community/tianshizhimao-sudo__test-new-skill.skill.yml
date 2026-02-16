@@ -1,0 +1,55 @@
+name: oney-test-skill
+title: Test New Skill
+version: 1.0.0
+description: Test skill for debugging
+metadata:
+  author: tianshizhimao-sudo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - oney
+  - test
+  - skill
+  source: clawhub-community
+  clawhub_slug: test-new-skill
+  clawhub_path: tianshizhimao-sudo/test-new-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Test New Skill
+
+    # Source: ClawHub community skill by tianshizhimao-sudo
+
+    # Install: clawhub install test-new-skill
+
+    # Path: tianshizhimao-sudo/test-new-skill
+
+
+    ## Description
+
+    Test skill for debugging
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install test-new-skill
+
+    ```'
+examples:
+- description: Install Test New Skill from ClawHub
+  usage: clawhub install test-new-skill
+schema_version: '1.0'

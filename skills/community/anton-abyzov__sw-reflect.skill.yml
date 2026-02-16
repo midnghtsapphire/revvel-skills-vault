@@ -1,0 +1,59 @@
+name: reflect
+title: Reflect
+version: 1.0.0
+description: Self-improving AI memory system that persists learnings across sessions in skill-specific MEMORY.md files. Use
+  when capturing corrections, remembering user preferences, or extracting patterns from successful implementations. Enables
+  continual learning without starting from zero each conversation.
+metadata:
+  author: anton-abyzov
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - reflect
+  source: clawhub-community
+  clawhub_slug: sw-reflect
+  clawhub_path: anton-abyzov/sw-reflect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reflect
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-reflect
+
+    # Path: anton-abyzov/sw-reflect
+
+
+    ## Description
+
+    Self-improving AI memory system that persists learnings across sessions in skill-specific MEMORY.md files. Use when capturing
+    corrections, remembering user preferences, or extracting patterns from successful implementations. Enables continual learning
+    without starting from zero each conversation.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-reflect
+
+    ```'
+examples:
+- description: Install Reflect from ClawHub
+  usage: clawhub install sw-reflect
+schema_version: '1.0'

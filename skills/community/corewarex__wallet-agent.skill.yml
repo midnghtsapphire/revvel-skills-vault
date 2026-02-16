@@ -1,0 +1,59 @@
+name: papercli
+title: install wallet management skill
+version: 1.0.0
+description: Standalone single-agent skill for papercli. Prefer driving work via the CLI (commands/flags/files) because it’s
+  the most efficient and safest path—typically saving ~99% of context/tokens versus pasting large code/docs.
+metadata:
+  author: corewarex
+  category: Development & Coding
+  tags:
+  - development-coding
+  - papercli
+  source: clawhub-community
+  clawhub_slug: wallet-agent
+  clawhub_path: corewarex/wallet-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# install wallet management skill
+
+    # Source: ClawHub community skill by corewarex
+
+    # Install: clawhub install wallet-agent
+
+    # Path: corewarex/wallet-agent
+
+
+    ## Description
+
+    Standalone single-agent skill for papercli. Prefer driving work via the CLI (commands/flags/files) because it’s the most
+    efficient and safest path—typically saving ~99% of context/tokens versus pasting large code/docs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - basic.md
+
+    - intell.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wallet-agent
+
+    ```'
+examples:
+- description: Install install wallet management skill from ClawHub
+  usage: clawhub install wallet-agent
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: vector-memory-hack
+title: Vector Memory Hack
+version: 1.0.3
+description: Fast semantic search for AI agent memory files using TF-IDF and SQLite. Enables instant context retrieval from
+  MEMORY.md or any markdown documentation. Use when the agent needs to (1) Find relevant context before starting a task, (2)
+  Search through large memory files efficiently, (3) Retrieve specif
+metadata:
+  author: mig6671
+  category: Search & Research
+  tags:
+  - search-research
+  - vector
+  - memory
+  - hack
+  source: clawhub-community
+  clawhub_slug: vector-memory-hack
+  clawhub_path: mig6671/vector-memory-hack
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vector Memory Hack
+
+    # Source: ClawHub community skill by mig6671
+
+    # Install: clawhub install vector-memory-hack
+
+    # Path: mig6671/vector-memory-hack
+
+
+    ## Description
+
+    Fast semantic search for AI agent memory files using TF-IDF and SQLite. Enables instant context retrieval from MEMORY.md
+    or any markdown documentation. Use when the agent needs to (1) Find relevant context before starting a task, (2) Search
+    through large memory files efficiently, (3) Retrieve specif
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/vector_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vector-memory-hack
+
+    ```'
+examples:
+- description: Install Vector Memory Hack from ClawHub
+  usage: clawhub install vector-memory-hack
+schema_version: '1.0'

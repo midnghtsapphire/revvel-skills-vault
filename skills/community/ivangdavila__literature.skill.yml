@@ -1,0 +1,53 @@
+name: literature
+title: Literature
+version: 1.0.0
+description: Guide literary reading from personal response to scholarly analysis.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - literature
+  source: clawhub-community
+  clawhub_slug: literature
+  clawhub_path: ivangdavila/literature
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Literature
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install literature
+
+    # Path: ivangdavila/literature
+
+
+    ## Description
+
+    Guide literary reading from personal response to scholarly analysis.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install literature
+
+    ```'
+examples:
+- description: Install Literature from ClawHub
+  usage: clawhub install literature
+schema_version: '1.0'

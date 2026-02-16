@@ -1,0 +1,68 @@
+name: local-voice
+title: Local Voice (FluidAudio TTS/STT)
+version: 1.0.1
+description: Local text-to-speech (TTS) and speech-to-text (STT) using FluidAudio on Apple Silicon. Sub-second voice synthesis
+  and transcription running entirely on-device via the Apple Neural Engine. Use when setting up local voice capabilities,
+  voice assistant integration, or replacing cloud TTS/STT services.
+metadata:
+  author: trondw
+  category: Media & Content
+  tags:
+  - media-content
+  - local
+  - voice
+  source: clawhub-community
+  clawhub_slug: local-voice
+  clawhub_path: trondw/local-voice
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Local Voice (FluidAudio TTS/STT)
+
+    # Source: ClawHub community skill by trondw
+
+    # Install: clawhub install local-voice
+
+    # Path: trondw/local-voice
+
+
+    ## Description
+
+    Local text-to-speech (TTS) and speech-to-text (STT) using FluidAudio on Apple Silicon. Sub-second voice synthesis and
+    transcription running entirely on-device via the Apple Neural Engine. Use when setting up local voice capabilities, voice
+    assistant integration, or replacing cloud TTS/STT services.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/VOICES.md
+
+    - scripts/setup.sh
+
+    - scripts/stella-tts.sh
+
+    - sources/Package.swift
+
+    - sources/Sources/StellaVoice/main.swift
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install local-voice
+
+    ```'
+examples:
+- description: Install Local Voice (FluidAudio TTS/STT) from ClawHub
+  usage: clawhub install local-voice
+schema_version: '1.0'

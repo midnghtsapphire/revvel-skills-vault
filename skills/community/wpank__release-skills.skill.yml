@@ -1,0 +1,62 @@
+name: release-skills
+title: Release Skills
+version: 0.1.0
+description: '|'
+metadata:
+  author: wpank
+  category: General
+  tags:
+  - general
+  - release
+  - skills
+  source: clawhub-community
+  clawhub_slug: release-skills
+  clawhub_path: wpank/release-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Release Skills
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install release-skills
+
+    # Path: wpank/release-skills
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/prepare_release.py
+
+    - scripts/release_notes.py
+
+    - scripts/roadmap_changelog.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install release-skills
+
+    ```'
+examples:
+- description: Install Release Skills from ClawHub
+  usage: clawhub install release-skills
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: openclaw-vault-pro
+title: Openclaw Vault Pro
+version: 1.0.0
+description: '"Full credential lifecycle security: detect exposed credentials, auto-fix permissions, quarantine exposed files,
+  rotation tracking, git history scanning, and automated protection. Everything in openclaw-vault (free) plus automated countermeasures."'
+metadata:
+  author: atlaspa
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - vault
+  - pro
+  source: clawhub-community
+  clawhub_slug: openclaw-vault-pro
+  clawhub_path: atlaspa/openclaw-vault-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Vault Pro
+
+    # Source: ClawHub community skill by atlaspa
+
+    # Install: clawhub install openclaw-vault-pro
+
+    # Path: atlaspa/openclaw-vault-pro
+
+
+    ## Description
+
+    "Full credential lifecycle security: detect exposed credentials, auto-fix permissions, quarantine exposed files, rotation
+    tracking, git history scanning, and automated protection. Everything in openclaw-vault (free) plus automated countermeasures."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/vault.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-vault-pro
+
+    ```'
+examples:
+- description: Install Openclaw Vault Pro from ClawHub
+  usage: clawhub install openclaw-vault-pro
+schema_version: '1.0'

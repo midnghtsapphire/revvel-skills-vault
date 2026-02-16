@@ -1,0 +1,71 @@
+name: meshtastic
+title: Off-grid radio for sovereign AI. LoRa mesh comms via Meshtastic — no internet required.
+version: 0.1.0
+description: Send and receive messages via Meshtastic LoRa mesh network. Use for off-grid messaging, mesh network status,
+  reading recent mesh messages, or sending texts via LoRa radio.
+metadata:
+  author: lukevr
+  category: Communication
+  tags:
+  - communication
+  - meshtastic
+  source: clawhub-community
+  clawhub_slug: meshtastic-skill
+  clawhub_path: lukevr/meshtastic-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Off-grid radio for sovereign AI. LoRa mesh comms via Meshtastic — no internet required.
+
+    # Source: ClawHub community skill by lukevr
+
+    # Install: clawhub install meshtastic-skill
+
+    # Path: lukevr/meshtastic-skill
+
+
+    ## Description
+
+    Send and receive messages via Meshtastic LoRa mesh network. Use for off-grid messaging, mesh network status, reading recent
+    mesh messages, or sending texts via LoRa radio.
+
+
+    ## Files
+
+    - CONFIG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/SETUP.md
+
+    - references/claude_desktop_config.json
+
+    - scripts/mcp_server.py
+
+    - scripts/mesh.py
+
+    - scripts/mesh_digest.py
+
+    - scripts/mesh_monitor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meshtastic-skill
+
+    ```'
+examples:
+- description: Install Off-grid radio for sovereign AI. LoRa mesh comms via Meshtastic — no internet required. from ClawHub
+  usage: clawhub install meshtastic-skill
+schema_version: '1.0'

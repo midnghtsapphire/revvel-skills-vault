@@ -1,0 +1,75 @@
+name: solana-funding-arb
+title: Solana Funding Rate Arbitrage
+version: 2.1.0
+description: Solana perpetual DEX funding rate arbitrage - scanner and auto-trader. Compares funding rates across Drift and
+  Flash Trade to find and execute cross-DEX arbitrage opportunities. Use when analyzing Solana perp funding rates, finding
+  funding arbitrage, setting up delta-neutral strategies, or running a
+metadata:
+  author: zedit42
+  category: Development & Coding
+  tags:
+  - development-coding
+  - solana
+  - funding
+  - arb
+  source: clawhub-community
+  clawhub_slug: solana-funding-arb
+  clawhub_path: zedit42/solana-funding-arb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Solana Funding Rate Arbitrage
+
+    # Source: ClawHub community skill by zedit42
+
+    # Install: clawhub install solana-funding-arb
+
+    # Path: zedit42/solana-funding-arb
+
+
+    ## Description
+
+    Solana perpetual DEX funding rate arbitrage - scanner and auto-trader. Compares funding rates across Drift and Flash Trade
+    to find and execute cross-DEX arbitrage opportunities. Use when analyzing Solana perp funding rates, finding funding arbitrage,
+    setting up delta-neutral strategies, or running a
+
+
+    ## Files
+
+    - SKILL.md
+
+    - USER_GUIDE.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - references/setup.md
+
+    - references/strategies.md
+
+    - scripts/backtest-1month.ts
+
+    - scripts/cron-runner.sh
+
+    - scripts/dry-run-1h.sh
+
+    - scripts/monte-carlo.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solana-funding-arb
+
+    ```'
+examples:
+- description: Install Solana Funding Rate Arbitrage from ClawHub
+  usage: clawhub install solana-funding-arb
+schema_version: '1.0'

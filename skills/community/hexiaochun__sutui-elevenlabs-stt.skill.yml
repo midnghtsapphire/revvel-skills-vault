@@ -1,0 +1,54 @@
+name: elevenlabs-stt
+title: elevenlabs-stt
+version: 1.0.0
+description: 使用 ElevenLabs Scribe V2 进行语音转文字。当用户想要语音识别、音频转录、语音转文字，或提到 elevenlabs、scribe 时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - elevenlabs
+  - stt
+  source: clawhub-community
+  clawhub_slug: sutui-elevenlabs-stt
+  clawhub_path: hexiaochun/sutui-elevenlabs-stt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# elevenlabs-stt
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install sutui-elevenlabs-stt
+
+    # Path: hexiaochun/sutui-elevenlabs-stt
+
+
+    ## Description
+
+    使用 ElevenLabs Scribe V2 进行语音转文字。当用户想要语音识别、音频转录、语音转文字，或提到 elevenlabs、scribe 时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sutui-elevenlabs-stt
+
+    ```'
+examples:
+- description: Install elevenlabs-stt from ClawHub
+  usage: clawhub install sutui-elevenlabs-stt
+schema_version: '1.0'

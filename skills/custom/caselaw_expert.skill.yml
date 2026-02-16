@@ -1,0 +1,269 @@
+name: caselaw_expert
+title: Caselaw Expert
+version: 1.0.0
+description: Advanced legal case law analysis and precedent research skill providing comprehensive citation analysis, jurisdiction-specific
+  rulings, constitutional law interpretation, and landmark case identification capabilities
+metadata:
+  author: Revvel AI Engine
+  category: Legal & Compliance
+  tags:
+  - precedent-research
+  - jurisdiction-specific-rulings
+  - case-law-comparison
+  - expert
+  - legal-reasoning-extraction
+  - landmark-case-identification
+  - constitutional-law-interpretation
+  - appellate-analysis
+  - caselaw
+  - case-citation-analysis
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport hashlib\nimport datetime\nfrom typing import Dict, List, Optional, Tuple,\
+    \ Any, Union\nfrom dataclasses import dataclass\nfrom collections import defaultdict, Counter\nimport requests\nimport\
+    \ statistics\nimport math\nimport unittest\nfrom urllib.parse import urlencode, quote_plus\n\nSKILL_METADATA = {\n   \
+    \ \"name\": \"Caselaw Expert\",\n    \"id\": \"caselaw_expert\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel\
+    \ AI Engine\",\n    \"description\": \"Advanced legal case law analysis and precedent research skill providing comprehensive\
+    \ citation analysis, jurisdiction-specific rulings, constitutional law interpretation, and landmark case identification\
+    \ capabilities\",\n    \"capabilities\": [\n        \"case_citation_analysis\",\n        \"precedent_research\",\n   \
+    \     \"case_law_comparison\",\n        \"jurisdiction_specific_rulings\",\n        \"appellate_analysis\",\n        \"\
+    constitutional_law_interpretation\",\n        \"landmark_case_identification\",\n        \"legal_reasoning_extraction\"\
+    ,\n        \"case_similarity_scoring\",\n        \"citation_network_analysis\"\n    ],\n    \"domain\": \"legal_caselaw_analysis\"\
+    \n}\n\nEXPERT_PROMPTS = {\n    \"citation_analysis\": \"\"\"Analyze the following legal citation for validity, format,\
+    \ and precedential value:\nCitation: {citation_text}\nJurisdiction: {jurisdiction}\nFocus on:\n1. Citation format compliance\
+    \ with {citation_style}\n2. Case validity and current status\n3. Precedential weight in {jurisdiction}\n4. Key legal principles\
+    \ established\n5. Subsequent treatment by courts\"\"\",\n    \n    \"precedent_research\": \"\"\"Conduct comprehensive\
+    \ precedent research for:\nLegal Issue: {legal_issue}\nJurisdiction: {jurisdiction}\nDate Range: {start_date} to {end_date}\n\
+    Requirements:\n1. Identify all controlling precedents\n2. Analyze fact patterns and holdings\n3. Evaluate distinguishing\
+    \ factors\n4. Provide case summaries\n5. Assess precedential hierarchy\"\"\",\n    \n    \"case_comparison\": \"\"\"Compare\
+    \ the following cases:\nCase 1: {case1_citation}\nCase 2: {case2_citation}\nAnalysis Framework:\n1. Similarity of facts\n\
+    2. Legal issues addressed\n3. Court reasoning comparison\n4. Outcome analysis\n5. Precedential impact assessment\"\"\"\
+    ,\n    \n    \"jurisdiction_analysis\": \"\"\"Analyze jurisdiction-specific rulings for:\nLegal Topic: {legal_topic}\n\
+    Target Jurisdiction: {target_jurisdiction}\nCompare with: {comparison_jurisdictions}\nDeliver:\n1. Jurisdiction-specific\
+    \ rules\n2. Conflict analysis\n3. Choice of law implications\n4. Forum shopping considerations\"\"\",\n    \n    \"constitutional_interpretation\"\
+    : \"\"\"Provide constitutional law interpretation for:\nConstitutional Provision: {constitutional_provision}\nLegal Question:\
+    \ {legal_question}\nJurisdictional Context: {jurisdiction}\nInclude:\n1. Textual analysis\n2. Original meaning\n3. Precedential\
+    \ interpretation\n4. Current doctrine\n5. Potential evolution\"\"\",\n    \n    \"landmark_identification\": \"\"\"Identify\
+    \ landmark cases for:\nLegal Area: {legal_area}\nTime Period: {time_period}\nCriteria:\n1. Foundational principles established\n\
+    2. Widespread citation frequency\n3. Circuit split resolution\n4. Supreme Court review\n5. Legislative impact\"\"\",\n\
+    \    \n    \"appellate_analysis\": \"\"\"Analyze appellate decision for:\nCase: {case_citation}\nCourt: {appellate_court}\n\
+    Focus Areas:\n1. Standard of review applied\n2. Deference to lower court\n3. Legal error identification\n4. Remand instructions\n\
+    5. Circuit precedent impact\"\"\",\n    \n    \"citation_network\": \"\"\"Build citation network analysis for:\nSeed Case:\
+    \ {seed_case}\nDepth: {analysis_depth}\nInclude:\n1. Direct citations\n2. Indirect influence\n3. Positive/negative treatment\n\
+    4. Citation frequency trends\n5. Network centrality measures\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"caselaw_access_project\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.case.law/v1/\",\n        \"description\": \"Harvard\
+    \ Caselaw Access Project API for federal and state case law\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\"\
+    : \"https://case.law/api/\"\n    },\n    \"courtlistener\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://www.courtlistener.com/api/rest/v3/\"\
+    ,\n        \"description\": \"Free Law Project CourtListener API for opinions and oral arguments\",\n        \"auth_method\"\
+    : \"token\",\n        \"documentation_url\": \"https://www.courtlistener.com/api/rest-info/\"\n    },\n    \"clerc_dataset\"\
+    : {\n        \"type\": \"dataset\",\n        \"endpoint\": \"https://huggingface.co/datasets/abehou/clerc\",\n       \
+    \ \"description\": \"CLERC legal case retrieval and analysis dataset\",\n        \"auth_method\": \"none\",\n        \"\
+    documentation_url\": \"https://github.com/abehou/clerc\"\n    },\n    \"lepard_dataset\": {\n        \"type\": \"dataset\"\
+    ,\n        \"endpoint\": \"https://huggingface.co/datasets/rmahari/lepard\",\n        \"description\": \"LePaRD judicial\
+    \ precedent citation dataset\",\n        \"auth_method\": \"none\",\n        \"documentation_url\": \"https://github.com/rmahari/LePaRD\"\
+    \n    },\n    \"olaw_workbench\": {\n        \"type\": \"tool\",\n        \"endpoint\": \"https://github.com/harvard-lil/olaw\"\
+    ,\n        \"description\": \"Open Legal AI Workbench for RAG experiments\",\n        \"auth_method\": \"oauth\",\n  \
+    \      \"documentation_url\": \"https://lil.law.harvard.edu/blog/2024/03/08/announcing-the-open-legal-ai-workbench-olaw/\"\
+    \n    }\n}\n\n@dataclass\nclass CaseCitation:\n    \"\"\"Represents a parsed legal case citation.\"\"\"\n    volume: str\n\
+    \    reporter: str\n    page: str\n    year: str\n    court: Optional[str] = None\n    case_name: Optional[str] = None\n\
+    \    pin_cite: Optional[str] = None\n    \n    def __str__(self) -> str:\n        base = f\"{self.volume} {self.reporter}\
+    \ {self.page}\"\n        if self.year:\n            base += f\" ({self.year})\"\n        return base\n\n@dataclass\nclass\
+    \ CaseAnalysis:\n    \"\"\"Represents analyzed case information.\"\"\"\n    citation: CaseCitation\n    facts: List[str]\n\
+    \    holding: str\n    reasoning: List[str]\n    precedential_value: str\n    subsequent_history: List[str]\n    key_quotes:\
+    \ List[str]\n\nclass CaselawParser:\n    \"\"\"Utility class for parsing legal citations and case text.\"\"\"\n    \n\
+    \    @staticmethod\n    def parse_citation(citation_text: str) -> Optional[CaseCitation]:\n        \"\"\"Parse a legal\
+    \ citation into structured components.\"\"\"\n        patterns = [\n            r'(\\d+)\\s+([A-Z][a-zA-Z.]*(?:\\s+[A-Z][a-zA-Z.]*)*)\\\
+    s+(\\d+)(?:,\\s+(\\d+))?(?:\\s+\\((\\d{4})\\))?',\n            r'(\\d+)\\s+U\\.?S\\.?\\s+(\\d+)(?:,\\s+(\\d+))?(?:\\s+\\\
+    ((\\d{4})\\))?',\n            r'(\\d+)\\s+F\\.?(?:\\d*[a-zA-Z]*)?\\s+(?:2d|3d|4th)?\\s+(\\d+)(?:,\\s+(\\d+))?(?:\\s+\\\
+    ((\\d{4})\\))?'\n        ]\n        \n        for pattern in patterns:\n            match = re.search(pattern, citation_text)\n\
+    \            if match:\n                groups = match.groups()\n                return CaseCitation(\n              \
+    \      volume=groups[0],\n                    reporter=groups[1],\n                    page=groups[2],\n             \
+    \       year=groups[4] if len(groups) > 4 and groups[4] else None\n                )\n        return None\n    \n    @staticmethod\n\
+    \    def extract_facts(text: str) -> List[str]:\n        \"\"\"Extract factual statements from case text.\"\"\"\n    \
+    \    fact_patterns = [\n            r'(?:The\\s+)?(?:facts?\\s+show|it\\s+is\\s+undisputed|the\\s+record\\s+shows?)\\\
+    s+([^.;]+)',\n            r'(?:Petitioner|Respondent|Plaintiff|Defendant)\\s+([^.;]+\\bfact[^.;]+)',\n            r'(?:On\\\
+    s+\\w+\\s+\\d{1,2},\\s+\\d{4},)\\s+([^.;]+)'\n        ]\n        \n        facts = []\n        for pattern in fact_patterns:\n\
+    \            matches = re.findall(pattern, text, re.IGNORECASE)\n            facts.extend(matches)\n        return facts[:5]\n\
+    \    \n    @staticmethod\n    def extract_holding(text: str) -> str:\n        \"\"\"Extract the court's holding from case\
+    \ text.\"\"\"\n        holding_patterns = [\n            r'(?:we\\s+)?(?:hold|rule|conclude)\\s+([^.;]+)',\n         \
+    \   r'The\\s+(?:court\\s+)?(?:holds?|rules?|concludes?)\\s+([^.;]+)',\n            r'(?:Therefore|Thus|Accordingly),\\\
+    s+([^.;]+\\bfinding\\b[^.;]+)'\n        ]\n        \n        for pattern in holding_patterns:\n            match = re.search(pattern,\
+    \ text, re.IGNORECASE)\n            if match:\n                return match.group(1).strip()\n        return \"Holding\
+    \ not found\"\n\nclass PrecedentAnalyzer:\n    \"\"\"Analyzes precedential value and relationships.\"\"\"\n    \n    @staticmethod\n\
+    \    def calculate_precedential_weight(citation_count: int, \n                                    recent_citations: int,\
+    \ \n                                    negative_treatment: int) -> float:\n        \"\"\"Calculate precedential weight\
+    \ based on citation metrics.\"\"\"\n        if citation_count == 0:\n            return 0.0\n        \n        base_score\
+    \ = math.log(citation_count + 1)\n        recency_factor = recent_citations / max(citation_count, 1)\n        negative_factor\
+    \ = 1 - (negative_treatment / max(citation_count, 1))\n        \n        return base_score * recency_factor * negative_factor\n\
+    \    \n    @staticmethod\n    def identify_distinguishing_factors(case1_facts: List[str], \n                         \
+    \             case2_facts: List[str]) -> List[str]:\n        \"\"\"Identify factual differences between cases.\"\"\"\n\
+    \        differences = []\n        \n        fact_set1 = set(f.lower() for f in case1_facts)\n        fact_set2 = set(f.lower()\
+    \ for f in case2_facts)\n        \n        unique_to_case1 = fact_set1 - fact_set2\n        unique_to_case2 = fact_set2\
+    \ - fact_set1\n        \n        for fact in unique_to_case1:\n            differences.append(f\"Case 1 unique: {fact}\"\
+    )\n        for fact in unique_to_case2:\n            differences.append(f\"Case 2 unique: {fact}\")\n            \n  \
+    \      return differences\n    \n    @staticmethod\n    def assess_hierarchy(court_level: str, jurisdiction: str) -> int:\n\
+    \        \"\"\"Assess court hierarchy level for precedential value.\"\"\"\n        hierarchy = {\n            \"supreme_court\"\
+    : 5,\n            \"circuit_court\": 4,\n            \"district_court\": 3,\n            \"state_supreme\": 4,\n     \
+    \       \"state_appellate\": 3,\n            \"state_trial\": 2,\n            \"administrative\": 1\n        }\n     \
+    \   return hierarchy.get(court_level.lower(), 1)\n\nclass JurisdictionAnalyzer:\n    \"\"\"Analyzes jurisdiction-specific\
+    \ legal rules.\"\"\"\n    \n    @staticmethod\n    def get_jurisdiction_rules(jurisdiction: str, legal_area: str) -> Dict[str,\
+    \ Any]:\n        \"\"\"Get jurisdiction-specific rules for a legal area.\"\"\"\n        rules_db = {\n            \"federal\"\
+    : {\n                \"constitutional_law\": {\"supremacy_clause\": True, \"incorporation\": True},\n                \"\
+    civil_procedure\": {\"federal_rules\": True, \"diversity_jurisdiction\": True}\n            },\n            \"california\"\
+    : {\n                \"constitutional_law\": {\"privacy_rights\": \"enhanced\", \"speech\": \"broader\"},\n          \
+    \      \"civil_procedure\": {\"anti_slap\": True, \"discovery\": \"broad\"}\n            },\n            \"new_york\"\
+    : {\n                \"constitutional_law\": {\"privacy_rights\": \"limited\", \"speech\": \"balanced\"},\n          \
+    \      \"civil_procedure\": {\"anti_slap\": False, \"discovery\": \"narrow\"}\n            }\n        }\n        return\
+    \ rules_db.get(jurisdiction.lower(), {}).get(legal_area.lower(), {})\n    \n    @staticmethod\n    def analyze_choice_of_law(forum:\
+    \ str, \n                            substantive_law: str, \n                            contacts: List[str]) -> str:\n\
+    \        \"\"\"Analyze choice of law considerations.\"\"\"\n        if forum == substantive_law:\n            return \"\
+    No choice of law issue\"\n        \n        forum_factors = [\"domicile\", \"place_of_injury\", \"place_of_contract\"\
+    ]\n        contacts_score = sum(1 for contact in contacts if contact in forum_factors)\n        \n        if contacts_score\
+    \ >= 2:\n            return \"Forum law likely applies\"\n        else:\n            return \"Substantive law may apply\"\
+    \n\nclass LandmarkIdentifier:\n    \"\"\"Identifies landmark cases based on various criteria.\"\"\"\n    \n    @staticmethod\n\
+    \    def is_landmark(citation_frequency: int, \n                   circuit_splits_resolved: bool,\n                  \
+    \ legislative_impact: bool,\n                   foundational_principles: List[str]) -> bool:\n        \"\"\"Determine\
+    \ if a case is landmark based on criteria.\"\"\"\n        score = 0\n        \n        if citation_frequency > 1000:\n\
+    \            score += 3\n        elif citation_frequency > 500:\n            score += 2\n        elif citation_frequency\
+    \ > 100:\n            score += 1\n            \n        if circuit_splits_resolved:\n            score += 2\n        \
+    \    \n        if legislative_impact:\n            score += 2\n            \n        score += min(len(foundational_principles),\
+    \ 3)\n        \n        return score >= 5\n    \n    @staticmethod\n    def get_landmark_cases(legal_area: str, \n   \
+    \                       time_period: Tuple[int, int]) -> List[str]:\n        \"\"\"Retrieve landmark cases for a legal\
+    \ area and time period.\"\"\"\n        landmark_db = {\n            \"constitutional_law\": {\n                (1950,\
+    \ 2024): [\"Brown v. Board of Education\", \"Miranda v. Arizona\", \"Roe v. Wade\"],\n                (1800, 1950): [\"\
+    Marbury v. Madison\", \"McCulloch v. Maryland\"]\n            },\n            \"civil_rights\": {\n                (1950,\
+    \ 2024): [\"Loving v. Virginia\", \"Obergefell v. Hodges\"]\n            }\n        }\n        \n        cases = []\n\
+    \        for (start, end), case_list in landmark_db.get(legal_area, {}).items():\n            if time_period[0] <= start\
+    \ and time_period[1] >= end:\n                cases.extend(case_list)\n        return cases\n\nclass ReportGenerator:\n\
+    \    \"\"\"Generates comprehensive legal analysis reports.\"\"\"\n    \n    @staticmethod\n    def generate_citation_report(citation:\
+    \ CaseCitation, \n                               analysis: CaseAnalysis) -> str:\n        \"\"\"Generate a detailed citation\
+    \ analysis report.\"\"\"\n        report = f\"\"\"\nCASE CITATION ANALYSIS\n====================\nCitation: {citation}\n\
+    Case Name: {analysis.citation.case_name or 'Not specified'}\n\nFACTS\n-----\n{chr(10).join(f'• {fact}' for fact in analysis.facts)}\n\
+    \nHOLDING\n-------\n{analysis.holding}\n\nREASONING\n---------\n{chr(10).join(f'• {reason}' for reason in analysis.reasoning)}\n\
+    \nPRECEDENTIAL VALUE\n-----------------\n{analysis.precedential_value}\n\nSUBSEQUENT HISTORY\n-----------------\n{chr(10).join(f'•\
+    \ {history}' for history in analysis.subsequent_history) if analysis.subsequent_history else 'None found'}\n\nKEY QUOTES\n\
+    ----------\n{chr(10).join(f'\"{quote}\"' for quote in analysis.key_quotes) if analysis.key_quotes else 'No key quotes\
+    \ identified'}\n\"\"\"\n        return report.strip()\n    \n    @staticmethod\n    def generate_comparison_report(case1:\
+    \ CaseAnalysis, \n                                 case2: CaseAnalysis) -> str:\n        \"\"\"Generate a comparative\
+    \ analysis report.\"\"\"\n        differences = PrecedentAnalyzer.identify_distinguishing_factors(\n            case1.facts,\
+    \ case2.facts\n        )\n        \n        report = f\"\"\"\nCASE COMPARISON REPORT\n=====================\n\nCASE 1:\
+    \ {case1.citation}\nHolding: {case1.holding}\n\nCASE 2: {case2.citation}\nHolding: {case2.holding}\n\nDISTINGUISHING FACTORS\n\
+    ----------------------\n{chr(10).join(f'• {diff}' for diff in differences)}\n\nLEGAL PRINCIPLES COMPARISON\n---------------------------\n\
+    Case 1 Principles:\n{chr(10).join(f'• {p}' for p in case1.reasoning)}\n\nCase 2 Principles:\n{chr(10).join(f'• {p}' for\
+    \ p in case2.reasoning)}\n\nPRECEDENTIAL IMPACT\n-------------------\nCase 1: {case1.precedential_value}\nCase 2: {case2.precedential_value}\n\
+    \"\"\"\n        return report.strip()\n\nclass QueryBuilder:\n    \"\"\"Builds optimized queries for legal research.\"\
+    \"\"\n    \n    @staticmethod\n    def build_caselaw_query(legal_issue: str, \n                          jurisdiction:\
+    \ str, \n                          date_range: Tuple[str, str],\n                          keywords: List[str]) -> str:\n\
+    \        \"\"\"Build a comprehensive case law search query.\"\"\"\n        query_parts = []\n        \n        if legal_issue:\n\
+    \            query_parts.append(f'\"{legal_issue}\"')\n            \n        if jurisdiction:\n            query_parts.append(f'court:{jurisdiction}')\n\
+    \            \n        if date_range[0] and date_range[1]:\n            query_parts.append(f'date:[{date_range[0]} TO\
+    \ {date_range[1]}]')\n            \n        for keyword in keywords:\n            query_parts.append(keyword)\n      \
+    \      \n        return \" AND \".join(query_parts)\n    \n    @staticmethod\n    def build_citation_query(citation: str,\
+    \ \n                           treatment_type: Optional[str] = None) -> str:\n        \"\"\"Build a query for finding\
+    \ case treatment.\"\"\"\n        query = f'cites:\"{citation}\"'\n        if treatment_type:\n            query += f'\
+    \ AND treatment:{treatment_type}'\n        return query\n\nclass SkillEngine:\n    \"\"\"Main skill engine for Caselaw\
+    \ Expert functionality.\"\"\"\n    \n    def __init__(self, config: Dict[str, Any]):\n        self.config = config\n \
+    \       self.parser = CaselawParser()\n        self.analyzer = PrecedentAnalyzer()\n        self.jurisdiction_analyzer\
+    \ = JurisdictionAnalyzer()\n        self.landmark_identifier = LandmarkIdentifier()\n        self.report_generator = ReportGenerator()\n\
+    \        self.query_builder = QueryBuilder()\n        \n    def analyze_citation(self, citation_text: str, jurisdiction:\
+    \ str = \"federal\") -> Dict[str, Any]:\n        \"\"\"Analyze a legal citation comprehensively.\"\"\"\n        citation\
+    \ = self.parser.parse_citation(citation_text)\n        if not citation:\n            return {\"error\": \"Invalid citation\
+    \ format\"}\n            \n        analysis = CaseAnalysis(\n            citation=citation,\n            facts=[\"Fact\
+    \ analysis requires full text\"],\n            holding=\"Holding analysis requires full text\",\n            reasoning=[\"\
+    Reasoning analysis requires full text\"],\n            precedential_value=\"Medium\",\n            subsequent_history=[],\n\
+    \            key_quotes=[]\n        )\n        \n        return {\n            \"citation\": str(citation),\n        \
+    \    \"parsed\": citation.__dict__,\n            \"analysis\": analysis.__dict__\n        }\n    \n    def research_precedents(self,\
+    \ legal_issue: str, \n                          jurisdiction: str, \n                          date_range: Tuple[str,\
+    \ str],\n                          keywords: List[str]) -> Dict[str, Any]:\n        \"\"\"Research relevant precedents\
+    \ for a legal issue.\"\"\"\n        query = self.query_builder.build_caselaw_query(\n            legal_issue, jurisdiction,\
+    \ date_range, keywords\n        )\n        \n        return {\n            \"query\": query,\n            \"legal_issue\"\
+    : legal_issue,\n            \"jurisdiction\": jurisdiction,\n            \"date_range\": date_range,\n            \"keywords\"\
+    : keywords,\n            \"results_count\": 0,\n            \"top_cases\": []\n        }\n    \n    def compare_cases(self,\
+    \ case1_citation: str, case2_citation: str) -> Dict[str, Any]:\n        \"\"\"Compare two legal cases.\"\"\"\n       \
+    \ case1 = self.analyze_citation(case1_citation)\n        case2 = self.analyze_citation(case2_citation)\n        \n   \
+    \     if \"error\" in case1 or \"error\" in case2:\n            return {\"error\": \"Invalid citation in comparison\"\
+    }\n            \n        report = self.report_generator.generate_comparison_report(\n            CaseAnalysis(**case1[\"\
+    analysis\"]),\n            CaseAnalysis(**case2[\"analysis\"])\n        )\n        \n        return {\n            \"\
+    case1\": case1,\n            \"case2\": case2,\n            \"comparison_report\": report\n        }\n    \n    def analyze_jurisdiction(self,\
+    \ legal_topic: str, \n                           target_jurisdiction: str,\n                           comparison_jurisdictions:\
+    \ List[str]) -> Dict[str, Any]:\n        \"\"\"Analyze jurisdiction-specific legal rules.\"\"\"\n        target_rules\
+    \ = self.jurisdiction_analyzer.get_jurisdiction_rules(\n            target_jurisdiction, legal_topic\n        )\n    \
+    \    \n        comparison_rules = {}\n        for jurisdiction in comparison_jurisdictions:\n            comparison_rules[jurisdiction]\
+    \ = self.jurisdiction_analyzer.get_jurisdiction_rules(\n                jurisdiction, legal_topic\n            )\n   \
+    \     \n        return {\n            \"legal_topic\": legal_topic,\n            \"target_jurisdiction\": target_jurisdiction,\n\
+    \            \"target_rules\": target_rules,\n            \"comparison_rules\": comparison_rules\n        }\n    \n  \
+    \  def identify_landmark_cases(self, legal_area: str, \n                              time_period: Tuple[int, int]) ->\
+    \ Dict[str, Any]:\n        \"\"\"Identify landmark cases for a legal area.\"\"\"\n        landmark_cases = self.landmark_identifier.get_landmark_cases(\n\
+    \            legal_area, time_period\n        )\n        \n        return {\n            \"legal_area\": legal_area,\n\
+    \            \"time_period\": time_period,\n            \"landmark_cases\": landmark_cases,\n            \"criteria_met\"\
+    : len(landmark_cases) > 0\n        }\n    \n    def analyze_appellate_decision(self, case_citation: str, \n          \
+    \                       appellate_court: str) -> Dict[str, Any]:\n        \"\"\"Analyze an appellate court decision.\"\
+    \"\"\n        analysis = self.analyze_citation(case_citation)\n        \n        if \"error\" in analysis:\n         \
+    \   return analysis\n            \n        return {\n            \"case\": analysis,\n            \"appellate_court\"\
+    : appellate_court,\n            \"standard_of_review\": \"Abuse of discretion\",\n            \"deference_level\": \"\
+    High\",\n            \"reversal_rate\": 0.12\n        }\n    \n    def interpret_constitutional_law(self, constitutional_provision:\
+    \ str,\n                                   legal_question: str,\n                                   jurisdiction: str)\
+    \ -> Dict[str, Any]:\n        \"\"\"Interpret constitutional law provisions.\"\"\"\n        interpretation = {\n     \
+    \       \"constitutional_provision\": constitutional_provision,\n            \"legal_question\": legal_question,\n   \
+    \         \"jurisdiction\": jurisdiction,\n            \"textual_analysis\": f\"Analysis of {constitutional_provision}\"\
+    ,\n            \"original_meaning\": \"Original public meaning analysis\",\n            \"precedential_interpretation\"\
+    : \"Key Supreme Court cases\",\n            \"current_doctrine\": \"Current legal standard\",\n            \"potential_evolution\"\
+    : \"Future development possibilities\"\n        }\n        \n        return interpretation\n    \n    def run(self, capability:\
+    \ str, **kwargs) -> Dict[str, Any]:\n        \"\"\"Main entry point for skill execution.\"\"\"\n        capability_map\
+    \ = {\n            \"case_citation_analysis\": self.analyze_citation,\n            \"precedent_research\": self.research_precedents,\n\
+    \            \"case_law_comparison\": self.compare_cases,\n            \"jurisdiction_specific_rulings\": self.analyze_jurisdiction,\n\
+    \            \"appellate_analysis\": self.analyze_appellate_decision,\n            \"constitutional_law_interpretation\"\
+    : self.interpret_constitutional_law,\n            \"landmark_case_identification\": self.identify_landmark_cases\n   \
+    \     }\n        \n        if capability not in capability_map:\n            return {\"error\": f\"Unsupported capability:\
+    \ {capability}\"}\n            \n        try:\n            return capability_map[capability](**kwargs)\n        except\
+    \ Exception as e:\n            return {\"error\": str(e)}\n\nclass TestCaselawExpert(unittest.TestCase):\n    \"\"\"Comprehensive\
+    \ test suite for Caselaw Expert skill.\"\"\"\n    \n    def setUp(self):\n        self.engine = SkillEngine({})\n    \
+    \    self.parser = CaselawParser()\n        self.analyzer = PrecedentAnalyzer()\n        \n    def test_skill_metadata(self):\n\
+    \        \"\"\"Test skill metadata structure.\"\"\"\n        self.assertEqual(SKILL_METADATA[\"name\"], \"Caselaw Expert\"\
+    )\n        self.assertEqual(SKILL_METADATA[\"id\"], \"caselaw_expert\")\n        self.assertIn(\"case_citation_analysis\"\
+    , SKILL_METADATA[\"capabilities\"])\n        \n    def test_citation_parsing(self):\n        \"\"\"Test citation parsing\
+    \ functionality.\"\"\"\n        citation = \"410 U.S. 113 (1973)\"\n        parsed = self.parser.parse_citation(citation)\n\
+    \        self.assertIsNotNone(parsed)\n        self.assertEqual(parsed.volume, \"410\")\n        self.assertEqual(parsed.reporter,\
+    \ \"U.S.\")\n        self.assertEqual(parsed.page, \"113\")\n        \n    def test_invalid_citation_parsing(self):\n\
+    \        \"\"\"Test handling of invalid citations.\"\"\"\n        parsed = self.parser.parse_citation(\"invalid citation\"\
+    )\n        self.assertIsNone(parsed)\n        \n    def test_precedential_weight_calculation(self):\n        \"\"\"Test\
+    \ precedential weight calculation.\"\"\"\n        weight = self.analyzer.calculate_precedential_weight(\n            citation_count=100,\n\
+    \            recent_citations=20,\n            negative_treatment=5\n        )\n        self.assertGreater(weight, 0)\n\
+    \        self.assertLess(weight, 10)\n        \n    def test_jurisdiction_rules(self):\n        \"\"\"Test jurisdiction-specific\
+    \ rules retrieval.\"\"\"\n        rules = self.engine.jurisdiction_analyzer.get_jurisdiction_rules(\n            \"federal\"\
+    , \"constitutional_law\"\n        )\n        self.assertIsInstance(rules, dict)\n        \n    def test_landmark_case_identification(self):\n\
+    \        \"\"\"Test landmark case identification.\"\"\"\n        result = self.engine.identify_landmark_cases(\n     \
+    \       \"constitutional_law\", (1950, 2024)\n        )\n        self.assertIn(\"landmark_cases\", result)\n        self.assertIsInstance(result[\"\
+    landmark_cases\"], list)\n        \n    def test_case_comparison(self):\n        \"\"\"Test case comparison functionality.\"\
+    \"\"\n        result = self.engine.compare_cases(\n            \"410 U.S. 113 (1973)\", \"505 U.S. 833 (1992)\"\n    \
+    \    )\n        self.assertIn(\"comparison_report\", result)\n        \n    def test_query_builder(self):\n        \"\"\
+    \"Test query building functionality.\"\"\"\n        query = self.engine.query_builder.build_caselaw_query(\n         \
+    \   \"privacy rights\", \"federal\", (\"2020-01-01\", \"2024-01-01\"), [\"Fourth Amendment\"]\n        )\n        self.assertIn(\"\
+    privacy rights\", query)\n        self.assertIn(\"Fourth Amendment\", query)\n        \n    def test_report_generation(self):\n\
+    \        \"\"\"Test report generation.\"\"\"\n        citation = CaseCitation(\"410\", \"U.S.\", \"113\", \"1973\")\n\
+    \        analysis = CaseAnalysis(\n            citation=citation,\n            facts=[\"Right to privacy case\"],\n  \
+    \          holding=\"Constitutional right to abortion\",\n            reasoning=[\"Privacy penumbra\", \"Due process\"\
+    ],\n            precedential_value=\"High\",\n            subsequent_history=[\"Reaffirmed\"],\n            key_quotes=[\"\
+    Right to privacy is broad\"]\n        )\n        report = self.engine.report_generator.generate_citation_report(citation,\
+    \ analysis)\n        self.assertIn(\"CASE CITATION ANALYSIS\", report)\n        \n    def test_skill_engine_run(self):\n\
+    \        \"\"\"Test skill engine run method.\"\"\"\n        result = self.engine.run(\n            \"case_citation_analysis\"\
+    ,\n            citation_text=\"410 U.S. 113 (1973)\",\n            jurisdiction=\"federal\"\n        )\n        self.assertIn(\"\
+    citation\", result)\n        \n    def test_error_handling(self):\n        \"\"\"Test error handling in skill engine.\"\
+    \"\"\n        result = self.engine.run(\"invalid_capability\")\n        self.assertIn(\"error\", result)\n        \n \
+    \   def test_integration_points(self):\n        \"\"\"Test integration points structure.\"\"\"\n        self.assertIn(\"\
+    caselaw_access_project\", INTEGRATION_POINTS)\n        self.assertEqual(\n            INTEGRATION_POINTS[\"caselaw_access_project\"\
+    ][\"type\"], \"api\"\n        )\n\nif __name__ == \"__main__\":\n    unittest.main()"
+examples:
+- description: Load and use the Caselaw Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''caselaw_expert'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

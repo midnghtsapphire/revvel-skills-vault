@@ -1,0 +1,60 @@
+name: twitter-scout
+title: twitter-scout
+version: 1.0.0
+description: Use Grok AI to browse and analyze Twitter/X in real-time. Find trending topics, viral posts, crypto alpha, tech
+  news, and opportunities. Use when asked to "check twitter", "find tweets about", "what's trending on X", "twitter alpha",
+  "scan twitter for", or any Twitter/X related research.
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - twitter
+  - scout
+  source: clawhub-community
+  clawhub_slug: bobagent-twitter-scout
+  clawhub_path: bobdevibecoder/bobagent-twitter-scout
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# twitter-scout
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-twitter-scout
+
+    # Path: bobdevibecoder/bobagent-twitter-scout
+
+
+    ## Description
+
+    Use Grok AI to browse and analyze Twitter/X in real-time. Find trending topics, viral posts, crypto alpha, tech news,
+    and opportunities. Use when asked to "check twitter", "find tweets about", "what''s trending on X", "twitter alpha", "scan
+    twitter for", or any Twitter/X related research.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/twitter_scout.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-twitter-scout
+
+    ```'
+examples:
+- description: Install twitter-scout from ClawHub
+  usage: clawhub install bobagent-twitter-scout
+schema_version: '1.0'

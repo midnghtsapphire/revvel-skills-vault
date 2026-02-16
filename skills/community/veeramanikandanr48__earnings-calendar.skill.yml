@@ -1,0 +1,68 @@
+name: earnings-calendar
+title: Earnings Calendar
+version: 0.1.0
+description: This skill retrieves upcoming earnings announcements for US stocks using the Financial Modeling Prep (FMP) API.
+  Use this when the user requests earnings calendar data, wants to know which companies are reporting earnings in the upcoming
+  week, or needs a weekly earnings review. The skill focuses on m
+metadata:
+  author: veeramanikandanr48
+  category: Development & Coding
+  tags:
+  - development-coding
+  - earnings
+  - calendar
+  source: clawhub-community
+  clawhub_slug: earnings-calendar
+  clawhub_path: veeramanikandanr48/earnings-calendar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Earnings Calendar
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install earnings-calendar
+
+    # Path: veeramanikandanr48/earnings-calendar
+
+
+    ## Description
+
+    This skill retrieves upcoming earnings announcements for US stocks using the Financial Modeling Prep (FMP) API. Use this
+    when the user requests earnings calendar data, wants to know which companies are reporting earnings in the upcoming week,
+    or needs a weekly earnings review. The skill focuses on m
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - earnings_calendar_2025-11-02.md
+
+    - assets/earnings_report_template.md
+
+    - references/fmp_api_guide.md
+
+    - scripts/fetch_earnings_fmp.py
+
+    - scripts/generate_report.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install earnings-calendar
+
+    ```'
+examples:
+- description: Install Earnings Calendar from ClawHub
+  usage: clawhub install earnings-calendar
+schema_version: '1.0'

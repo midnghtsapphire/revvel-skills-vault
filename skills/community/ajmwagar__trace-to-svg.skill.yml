@@ -1,0 +1,62 @@
+name: trace-to-svg
+title: Trace To Svg
+version: 0.1.0
+description: Trace bitmap images (PNG/JPG/WebP) into clean SVG paths using potrace/mkbitmap. Use to convert logos/silhouettes
+  into vectors for downstream CAD workflows (e.g., create-dxf etch_svg_path) and for turning reference images into manufacturable
+  outlines.
+metadata:
+  author: ajmwagar
+  category: Media & Content
+  tags:
+  - media-content
+  - trace
+  - svg
+  source: clawhub-community
+  clawhub_slug: trace-to-svg
+  clawhub_path: ajmwagar/trace-to-svg
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trace To Svg
+
+    # Source: ClawHub community skill by ajmwagar
+
+    # Install: clawhub install trace-to-svg
+
+    # Path: ajmwagar/trace-to-svg
+
+
+    ## Description
+
+    Trace bitmap images (PNG/JPG/WebP) into clean SVG paths using potrace/mkbitmap. Use to convert logos/silhouettes into
+    vectors for downstream CAD workflows (e.g., create-dxf etch_svg_path) and for turning reference images into manufacturable
+    outlines.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/examples.md
+
+    - scripts/trace_to_svg.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trace-to-svg
+
+    ```'
+examples:
+- description: Install Trace To Svg from ClawHub
+  usage: clawhub install trace-to-svg
+schema_version: '1.0'

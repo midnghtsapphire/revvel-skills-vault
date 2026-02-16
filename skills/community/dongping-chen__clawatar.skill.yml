@@ -1,0 +1,57 @@
+name: clawatar
+title: Clawatar
+version: 0.2.0
+description: Give your AI agent a 3D VRM avatar body with animations, expressions, voice chat, and lip sync. Use when the
+  user wants a visual avatar, VRM viewer, avatar companion, VTuber-style character, or 3D character they can talk to. Installs
+  a web-based viewer controllable via WebSocket.
+metadata:
+  author: dongping-chen
+  category: Communication
+  tags:
+  - communication
+  - clawatar
+  source: clawhub-community
+  clawhub_slug: clawatar
+  clawhub_path: dongping-chen/clawatar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawatar
+
+    # Source: ClawHub community skill by dongping-chen
+
+    # Install: clawhub install clawatar
+
+    # Path: dongping-chen/clawatar
+
+
+    ## Description
+
+    Give your AI agent a 3D VRM avatar body with animations, expressions, voice chat, and lip sync. Use when the user wants
+    a visual avatar, VRM viewer, avatar companion, VTuber-style character, or 3D character they can talk to. Installs a web-based
+    viewer controllable via WebSocket.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawatar
+
+    ```'
+examples:
+- description: Install Clawatar from ClawHub
+  usage: clawhub install clawatar
+schema_version: '1.0'

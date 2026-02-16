@@ -1,0 +1,62 @@
+name: typefully
+title: Typefully
+version: 0.1.0
+description: '>'
+metadata:
+  author: frankdilo
+  category: General
+  tags:
+  - general
+  - typefully
+  - bash(./scripts/typefully.js:*)
+  source: clawhub-community
+  clawhub_slug: typefully-social-media
+  clawhub_path: frankdilo/typefully-social-media
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(./scripts/typefully.js:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Typefully
+
+    # Source: ClawHub community skill by frankdilo
+
+    # Install: clawhub install typefully-social-media
+
+    # Path: frankdilo/typefully-social-media
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/typefully.js
+
+
+    ## Allowed Tools
+
+    Bash(./scripts/typefully.js:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install typefully-social-media
+
+    ```'
+examples:
+- description: Install Typefully from ClawHub
+  usage: clawhub install typefully-social-media
+schema_version: '1.0'

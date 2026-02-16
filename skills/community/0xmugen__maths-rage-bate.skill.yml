@@ -1,0 +1,60 @@
+name: math-slop
+title: Math Slop
+version: 0.3.1
+description: Generate satirical "math slop" ragebait formulas that connect famous constants (φ, π, e, i) in trivially true
+  but profound-looking equations. Outputs LaTeX. Use for math memes or when someone asks for "math slop."
+metadata:
+  author: 0xmugen
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - math
+  - slop
+  source: clawhub-community
+  clawhub_slug: maths-rage-bate
+  clawhub_path: 0xmugen/maths-rage-bate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Math Slop
+
+    # Source: ClawHub community skill by 0xmugen
+
+    # Install: clawhub install maths-rage-bate
+
+    # Path: 0xmugen/maths-rage-bate
+
+
+    ## Description
+
+    Generate satirical "math slop" ragebait formulas that connect famous constants (φ, π, e, i) in trivially true but profound-looking
+    equations. Outputs LaTeX. Use for math memes or when someone asks for "math slop."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate-slop.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install maths-rage-bate
+
+    ```'
+examples:
+- description: Install Math Slop from ClawHub
+  usage: clawhub install maths-rage-bate
+schema_version: '1.0'

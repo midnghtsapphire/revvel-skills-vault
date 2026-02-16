@@ -1,0 +1,73 @@
+name: elevenlabs-tts
+title: ElevenLabs TTS
+version: 2.1.0
+description: ElevenLabs TTS (Text-to-Speech) with emotional audio tags for expressive voice synthesis. WhatsApp-compatible
+  voice messages with Opus conversion. Supports 70+ languages, Hebrew with selective nikud, multi-speaker dialogue, and singing.
+  Includes audio converter utility.
+metadata:
+  author: shaharsha
+  category: Media & Content
+  tags:
+  - media-content
+  - elevenlabs
+  - tts
+  - '[tts'
+  - message
+  - exec]
+  source: clawhub-community
+  clawhub_slug: elevenlabs-tts
+  clawhub_path: shaharsha/elevenlabs-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[tts'
+  - message
+  - exec]
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ElevenLabs TTS
+
+    # Source: ClawHub community skill by shaharsha
+
+    # Install: clawhub install elevenlabs-tts
+
+    # Path: shaharsha/elevenlabs-tts
+
+
+    ## Description
+
+    ElevenLabs TTS (Text-to-Speech) with emotional audio tags for expressive voice synthesis. WhatsApp-compatible voice messages
+    with Opus conversion. Supports 70+ languages, Hebrew with selective nikud, multi-speaker dialogue, and singing. Includes
+    audio converter utility.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/audio_convert.py
+
+    - references/audio-tags.md
+
+
+    ## Allowed Tools
+
+    [tts, message, exec]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install elevenlabs-tts
+
+    ```'
+examples:
+- description: Install ElevenLabs TTS from ClawHub
+  usage: clawhub install elevenlabs-tts
+schema_version: '1.0'

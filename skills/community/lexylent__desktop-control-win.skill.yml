@@ -1,0 +1,68 @@
+name: desktop-control
+title: Desktop Control (Windows)
+version: 1.0.1
+description: Control desktop applications on Windows — launch, close, focus, resize, move windows, simulate keyboard/mouse
+  input, manage processes, control VSCode, read clipboard, and capture screen info. Use when the user wants to interact with
+  any running program, switch windows, type text, press shortcuts, op
+metadata:
+  author: lexylent
+  category: Development & Coding
+  tags:
+  - development-coding
+  - desktop
+  - control
+  source: clawhub-community
+  clawhub_slug: desktop-control-win
+  clawhub_path: lexylent/desktop-control-win
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Desktop Control (Windows)
+
+    # Source: ClawHub community skill by lexylent
+
+    # Install: clawhub install desktop-control-win
+
+    # Path: lexylent/desktop-control-win
+
+
+    ## Description
+
+    Control desktop applications on Windows — launch, close, focus, resize, move windows, simulate keyboard/mouse input, manage
+    processes, control VSCode, read clipboard, and capture screen info. Use when the user wants to interact with any running
+    program, switch windows, type text, press shortcuts, op
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/app-control.ps1.txt
+
+    - scripts/input-sim.ps1.txt
+
+    - scripts/process-manager.ps1.txt
+
+    - scripts/screen-info.ps1.txt
+
+    - scripts/vscode-control.ps1.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install desktop-control-win
+
+    ```'
+examples:
+- description: Install Desktop Control (Windows) from ClawHub
+  usage: clawhub install desktop-control-win
+schema_version: '1.0'

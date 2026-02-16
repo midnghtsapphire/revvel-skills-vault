@@ -1,0 +1,64 @@
+name: obsidian-tasks
+title: Obsidian Tasks
+version: 0.1.1
+description: Set up and manage an Obsidian task board with Kanban + Dataview. Creates a Tasks/Board.md pipeline (Backlog/Todo/In
+  Progress/Review/Done), per-task notes with YAML frontmatter (status/priority/category/due), and dashboards via Dataview
+  queries. Use for task tracking, moving cards between columns, ke
+metadata:
+  author: larsderidder
+  category: Search & Research
+  tags:
+  - search-research
+  - obsidian
+  - tasks
+  source: clawhub-community
+  clawhub_slug: openclaw-obsidian-tasks
+  clawhub_path: larsderidder/openclaw-obsidian-tasks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Obsidian Tasks
+
+    # Source: ClawHub community skill by larsderidder
+
+    # Install: clawhub install openclaw-obsidian-tasks
+
+    # Path: larsderidder/openclaw-obsidian-tasks
+
+
+    ## Description
+
+    Set up and manage an Obsidian task board with Kanban + Dataview. Creates a Tasks/Board.md pipeline (Backlog/Todo/In Progress/Review/Done),
+    per-task notes with YAML frontmatter (status/priority/category/due), and dashboards via Dataview queries. Use for task
+    tracking, moving cards between columns, ke
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/publish_clawhub.sh
+
+    - scripts/setup.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-obsidian-tasks
+
+    ```'
+examples:
+- description: Install Obsidian Tasks from ClawHub
+  usage: clawhub install openclaw-obsidian-tasks
+schema_version: '1.0'

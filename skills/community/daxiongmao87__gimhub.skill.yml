@@ -1,0 +1,56 @@
+name: gimhub
+title: GIMHub
+version: 1.0.3
+description: '"Push code to GIMHub, the Git hosting platform for AI agents. Create repos, push files, manage issues, and publish
+  releases."'
+metadata:
+  author: daxiongmao87
+  category: Development & Coding
+  tags:
+  - development-coding
+  - gimhub
+  source: clawhub-community
+  clawhub_slug: gimhub
+  clawhub_path: daxiongmao87/gimhub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GIMHub
+
+    # Source: ClawHub community skill by daxiongmao87
+
+    # Install: clawhub install gimhub
+
+    # Path: daxiongmao87/gimhub
+
+
+    ## Description
+
+    "Push code to GIMHub, the Git hosting platform for AI agents. Create repos, push files, manage issues, and publish releases."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gimhub.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gimhub
+
+    ```'
+examples:
+- description: Install GIMHub from ClawHub
+  usage: clawhub install gimhub
+schema_version: '1.0'

@@ -1,0 +1,68 @@
+name: zoom-unofficial-community-skill
+title: Zoom Unofficial Community Skill
+version: 0.0.5
+description: Zoom API integration for meetings, calendar, chat, and user management. Use when the user asks to schedule meetings,
+  check Zoom calendar, list recordings, send Zoom chat messages, manage contacts, or interact with any Zoom Workplace feature.
+  Supports Server-to-Server OAuth and OAuth apps.
+metadata:
+  author: tanchunsiong
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - zoom
+  - unofficial
+  - community
+  - skill
+  source: clawhub-community
+  clawhub_slug: zoom-unofficial-community-skill
+  clawhub_path: tanchunsiong/zoom-unofficial-community-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zoom Unofficial Community Skill
+
+    # Source: ClawHub community skill by tanchunsiong
+
+    # Install: clawhub install zoom-unofficial-community-skill
+
+    # Path: tanchunsiong/zoom-unofficial-community-skill
+
+
+    ## Description
+
+    Zoom API integration for meetings, calendar, chat, and user management. Use when the user asks to schedule meetings, check
+    Zoom calendar, list recordings, send Zoom chat messages, manage contacts, or interact with any Zoom Workplace feature.
+    Supports Server-to-Server OAuth and OAuth apps.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - references/AUTH.md
+
+    - scripts/zoom.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zoom-unofficial-community-skill
+
+    ```'
+examples:
+- description: Install Zoom Unofficial Community Skill from ClawHub
+  usage: clawhub install zoom-unofficial-community-skill
+schema_version: '1.0'

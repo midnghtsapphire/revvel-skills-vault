@@ -1,0 +1,59 @@
+name: yt_transcript
+title: YouTube Transcript (yt-dlp)
+version: 1.0.1
+description: Extract YouTube video transcripts from existing captions (manual or auto-generated) using yt-dlp, with optional
+  timestamps and local SQLite caching. Use when the user asks for a YouTube transcript, captions, subtitles, or wants to turn
+  a YouTube link into text for summarization/search.
+metadata:
+  author: itzsubhadip
+  category: Search & Research
+  tags:
+  - search-research
+  - transcript
+  source: clawhub-community
+  clawhub_slug: youtube-transcript-yt-dlp
+  clawhub_path: itzsubhadip/youtube-transcript-yt-dlp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube Transcript (yt-dlp)
+
+    # Source: ClawHub community skill by itzsubhadip
+
+    # Install: clawhub install youtube-transcript-yt-dlp
+
+    # Path: itzsubhadip/youtube-transcript-yt-dlp
+
+
+    ## Description
+
+    Extract YouTube video transcripts from existing captions (manual or auto-generated) using yt-dlp, with optional timestamps
+    and local SQLite caching. Use when the user asks for a YouTube transcript, captions, subtitles, or wants to turn a YouTube
+    link into text for summarization/search.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/yt_transcript.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-transcript-yt-dlp
+
+    ```'
+examples:
+- description: Install YouTube Transcript (yt-dlp) from ClawHub
+  usage: clawhub install youtube-transcript-yt-dlp
+schema_version: '1.0'

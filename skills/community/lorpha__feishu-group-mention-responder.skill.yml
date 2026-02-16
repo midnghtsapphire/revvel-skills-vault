@@ -1,0 +1,56 @@
+name: feishu-group-mention-responder
+title: Feishu Group Mention Responder
+version: 1.0.0
+description: 在飞书群中，当机器人被@提及或接收到直接消息时，自动进行回复。
+metadata:
+  author: lorpha
+  category: General
+  tags:
+  - general
+  - feishu
+  - group
+  - mention
+  - responder
+  source: clawhub-community
+  clawhub_slug: feishu-group-mention-responder
+  clawhub_path: lorpha/feishu-group-mention-responder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feishu Group Mention Responder
+
+    # Source: ClawHub community skill by lorpha
+
+    # Install: clawhub install feishu-group-mention-responder
+
+    # Path: lorpha/feishu-group-mention-responder
+
+
+    ## Description
+
+    在飞书群中，当机器人被@提及或接收到直接消息时，自动进行回复。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-group-mention-responder
+
+    ```'
+examples:
+- description: Install Feishu Group Mention Responder from ClawHub
+  usage: clawhub install feishu-group-mention-responder
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: clawdio
+title: clawdio
+version: 1.1.0
+description: Analyze Twitter Spaces and voice conversations to extract market intelligence, crypto alpha, sentiment analysis,
+  and speaker-attributed insights. Transforms spoken audio into structured reports, full transcripts, and machine-readable
+  metadata. Use when you need intelligence from Twitter Spaces, podc
+metadata:
+  author: benschiller
+  category: Media & Content
+  tags:
+  - media-content
+  - clawdio
+  source: clawhub-community
+  clawhub_slug: clawdio-twitter
+  clawhub_path: benschiller/clawdio-twitter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawdio
+
+    # Source: ClawHub community skill by benschiller
+
+    # Install: clawhub install clawdio-twitter
+
+    # Path: benschiller/clawdio-twitter
+
+
+    ## Description
+
+    Analyze Twitter Spaces and voice conversations to extract market intelligence, crypto alpha, sentiment analysis, and speaker-attributed
+    insights. Transforms spoken audio into structured reports, full transcripts, and machine-readable metadata. Use when you
+    need intelligence from Twitter Spaces, podc
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API-REFERENCE.md
+
+    - references/INTEGRATION.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdio-twitter
+
+    ```'
+examples:
+- description: Install clawdio from ClawHub
+  usage: clawhub install clawdio-twitter
+schema_version: '1.0'

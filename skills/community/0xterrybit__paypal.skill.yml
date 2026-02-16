@@ -1,0 +1,53 @@
+name: paypal
+title: PayPal
+version: 1.1.0
+description: PayPal payment integration. Send money, create invoices, and manage PayPal transactions.
+metadata:
+  author: 0xterrybit
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - paypal
+  source: clawhub-community
+  clawhub_slug: paypal
+  clawhub_path: 0xterrybit/paypal
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PayPal
+
+    # Source: ClawHub community skill by 0xterrybit
+
+    # Install: clawhub install paypal
+
+    # Path: 0xterrybit/paypal
+
+
+    ## Description
+
+    PayPal payment integration. Send money, create invoices, and manage PayPal transactions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paypal
+
+    ```'
+examples:
+- description: Install PayPal from ClawHub
+  usage: clawhub install paypal
+schema_version: '1.0'

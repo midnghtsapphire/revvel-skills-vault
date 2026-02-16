@@ -1,0 +1,63 @@
+name: local-rag-search
+title: Local Rag Search
+version: 0.1.0
+description: Efficiently perform web searches using the mcp-local-rag server with semantic similarity ranking. Use this skill
+  when you need to search the web for current information, research topics across multiple sources, or gather context from
+  the internet without using external APIs. This skill teaches effec
+metadata:
+  author: nkapila6
+  category: Search & Research
+  tags:
+  - search-research
+  - local
+  - rag
+  - search
+  source: clawhub-community
+  clawhub_slug: local-rag-search
+  clawhub_path: nkapila6/local-rag-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Local Rag Search
+
+    # Source: ClawHub community skill by nkapila6
+
+    # Install: clawhub install local-rag-search
+
+    # Path: nkapila6/local-rag-search
+
+
+    ## Description
+
+    Efficiently perform web searches using the mcp-local-rag server with semantic similarity ranking. Use this skill when
+    you need to search the web for current information, research topics across multiple sources, or gather context from the
+    internet without using external APIs. This skill teaches effec
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install local-rag-search
+
+    ```'
+examples:
+- description: Install Local Rag Search from ClawHub
+  usage: clawhub install local-rag-search
+schema_version: '1.0'

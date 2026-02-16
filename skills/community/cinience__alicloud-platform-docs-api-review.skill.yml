@@ -1,0 +1,38 @@
+name: alicloud-platform-docs-api-review
+title: Alicloud Platform Docs Api Review
+version: 1.0.0
+description: 'Automatically review latest Alibaba Cloud product docs and OpenAPI docs by product name, then output detailed
+  prioritized improvement suggestions with evidence and scoring. Use when user asks to audit product documentation quality,
+  API documentation quality, or wants actionable doc/API optimization '
+metadata:
+  author: cinience
+  category: Development & Coding
+  tags:
+  - development-coding
+  - alicloud
+  - platform
+  - docs
+  - api
+  - review
+  source: clawhub-community
+  clawhub_slug: alicloud-platform-docs-api-review
+  clawhub_path: cinience/alicloud-platform-docs-api-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Alicloud Platform Docs Api Review\n# Source: ClawHub community skill by cinience\n# Install: clawhub install\
+    \ alicloud-platform-docs-api-review\n# Path: cinience/alicloud-platform-docs-api-review\n\n## Description\nAutomatically\
+    \ review latest Alibaba Cloud product docs and OpenAPI docs by product name, then output detailed prioritized improvement\
+    \ suggestions with evidence and scoring. Use when user asks to audit product documentation quality, API documentation\
+    \ quality, or wants actionable doc/API optimization \n\n## Files\n- SKILL.md\n- _meta.json\n- agents/openai.yaml\n- references/review-rubric.md\n\
+    - scripts/review_product_docs_and_api.py\n\n## Installation\n```bash\nclawhub install alicloud-platform-docs-api-review\n\
+    ```"
+examples:
+- description: Install Alicloud Platform Docs Api Review from ClawHub
+  usage: clawhub install alicloud-platform-docs-api-review
+schema_version: '1.0'

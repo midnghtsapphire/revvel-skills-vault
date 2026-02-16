@@ -1,0 +1,74 @@
+name: memory-manager
+title: Memory Manager
+version: 1.0.0
+description: Local memory management for agents. Compression detection, auto-snapshots, and semantic search. Use when agents
+  need to detect compression risk before memory loss, save context snapshots, search historical memories, or track memory
+  usage patterns. Never lose context again.
+metadata:
+  author: marmikcfc
+  category: Search & Research
+  tags:
+  - search-research
+  - memory
+  - manager
+  source: clawhub-community
+  clawhub_slug: memory-manager
+  clawhub_path: marmikcfc/memory-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Manager
+
+    # Source: ClawHub community skill by marmikcfc
+
+    # Install: clawhub install memory-manager
+
+    # Path: marmikcfc/memory-manager
+
+
+    ## Description
+
+    Local memory management for agents. Compression detection, auto-snapshots, and semantic search. Use when agents need to
+    detect compression risk before memory loss, save context snapshots, search historical memories, or track memory usage
+    patterns. Never lose context again.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - categorize.sh
+
+    - detect.sh
+
+    - init.sh
+
+    - organize.sh
+
+    - package.json
+
+    - search.sh
+
+    - snapshot.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-manager
+
+    ```'
+examples:
+- description: Install Memory Manager from ClawHub
+  usage: clawhub install memory-manager
+schema_version: '1.0'

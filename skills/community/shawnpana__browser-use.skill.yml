@@ -1,0 +1,58 @@
+name: browser-use
+title: Browser Use
+version: 1.0.0
+description: Use Browser Use cloud API to spin up cloud browsers for Clawdbot and run autonomous browser tasks. Primary use
+  is creating browser sessions with profiles (persisted logins/cookies) that Clawdbot can control. Secondary use is running
+  task subagents for fast autonomous browser automation. Docs at docs
+metadata:
+  author: shawnpana
+  category: Search & Research
+  tags:
+  - search-research
+  - browser
+  - use
+  source: clawhub-community
+  clawhub_slug: browser-use
+  clawhub_path: shawnpana/browser-use
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Browser Use
+
+    # Source: ClawHub community skill by shawnpana
+
+    # Install: clawhub install browser-use
+
+    # Path: shawnpana/browser-use
+
+
+    ## Description
+
+    Use Browser Use cloud API to spin up cloud browsers for Clawdbot and run autonomous browser tasks. Primary use is creating
+    browser sessions with profiles (persisted logins/cookies) that Clawdbot can control. Secondary use is running task subagents
+    for fast autonomous browser automation. Docs at docs
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install browser-use
+
+    ```'
+examples:
+- description: Install Browser Use from ClawHub
+  usage: clawhub install browser-use
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: wayfinder
+title: Wayfinder
+version: 0.0.4
+description: DeFi trading, yield strategies, and portfolio management via the Wayfinder Paths CLI (`poetry run wayfinder`).
+  Use when the user wants to check balances, swap tokens, bridge assets, trade perps, trade prediction markets (Polymarket),
+  run automated yield strategies (stablecoin yield, basis trading, M
+metadata:
+  author: canuc
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - wayfinder
+  source: clawhub-community
+  clawhub_slug: wayfinder
+  clawhub_path: canuc/wayfinder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wayfinder
+
+    # Source: ClawHub community skill by canuc
+
+    # Install: clawhub install wayfinder
+
+    # Path: canuc/wayfinder
+
+
+    ## Description
+
+    DeFi trading, yield strategies, and portfolio management via the Wayfinder Paths CLI (`poetry run wayfinder`). Use when
+    the user wants to check balances, swap tokens, bridge assets, trade perps, trade prediction markets (Polymarket), run
+    automated yield strategies (stablecoin yield, basis trading, M
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - sdk-version.md
+
+    - skill.json
+
+    - references/adapters.md
+
+    - references/boros.md
+
+    - references/ccxt.md
+
+    - references/coding-interface.md
+
+    - references/hyperlend.md
+
+    - references/hyperliquid.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wayfinder
+
+    ```'
+examples:
+- description: Install Wayfinder from ClawHub
+  usage: clawhub install wayfinder
+schema_version: '1.0'

@@ -1,0 +1,75 @@
+name: web-search-plus
+title: Web Search Plus
+version: 2.6.5
+description: Unified search skill with Intelligent Auto-Routing. Uses multi-signal analysis to automatically select between
+  Serper (Google), Tavily (Research), Exa (Neural), You.com (RAG/Real-time), and SearXNG (Privacy/Self-hosted) with confidence
+  scoring.
+metadata:
+  author: robbyczgw-cla
+  category: Search & Research
+  tags:
+  - search-research
+  - web
+  - search
+  - plus
+  source: clawhub-community
+  clawhub_slug: web-search-plus
+  clawhub_path: robbyczgw-cla/web-search-plus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Web Search Plus
+
+    # Source: ClawHub community skill by robbyczgw-cla
+
+    # Install: clawhub install web-search-plus
+
+    # Path: robbyczgw-cla/web-search-plus
+
+
+    ## Description
+
+    Unified search skill with Intelligent Auto-Routing. Uses multi-signal analysis to automatically select between Serper
+    (Google), Tavily (Research), Exa (Neural), You.com (RAG/Real-time), and SearXNG (Privacy/Self-hosted) with confidence
+    scoring.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - FAQ.md
+
+    - README.md
+
+    - SKILL.md
+
+    - TROUBLESHOOTING.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - package.json
+
+    - test-auto-routing.sh
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install web-search-plus
+
+    ```'
+examples:
+- description: Install Web Search Plus from ClawHub
+  usage: clawhub install web-search-plus
+schema_version: '1.0'

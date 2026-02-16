@@ -1,0 +1,63 @@
+name: instapaper
+title: Instapaper
+version: 0.2.9
+description: '"Use when operating the instapaper-cli (ip) tool or troubleshooting it: authenticating, listing/exporting/importing
+  bookmarks, bulk mutations, folders/highlights/text, choosing output formats (ndjson/json/plain), cursor-based sync, and
+  interpreting stderr-json/exit codes for automation."'
+metadata:
+  author: vburojevic
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - instapaper
+  source: clawhub-community
+  clawhub_slug: instapaper
+  clawhub_path: vburojevic/instapaper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Instapaper
+
+    # Source: ClawHub community skill by vburojevic
+
+    # Install: clawhub install instapaper
+
+    # Path: vburojevic/instapaper
+
+
+    ## Description
+
+    "Use when operating the instapaper-cli (ip) tool or troubleshooting it: authenticating, listing/exporting/importing bookmarks,
+    bulk mutations, folders/highlights/text, choosing output formats (ndjson/json/plain), cursor-based sync, and interpreting
+    stderr-json/exit codes for automation."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/commands.md
+
+    - references/errors.md
+
+    - references/output-and-sync.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install instapaper
+
+    ```'
+examples:
+- description: Install Instapaper from ClawHub
+  usage: clawhub install instapaper
+schema_version: '1.0'

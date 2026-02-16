@@ -1,0 +1,67 @@
+name: k-cinema-bridge
+title: K Cinema Bridge
+version: 0.1.1
+description: Query Korean multiplex (Lotte Cinema, CGV, Megabox) box office rankings and upcoming movie data enriched with
+  KOBIS details. Use when the user asks about Korean movies currently showing, box office rankings, upcoming releases, or
+  wants movie recommendations based on genre, director, actor, or rating
+metadata:
+  author: uyeong
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - cinema
+  - bridge
+  - webfetch
+  source: clawhub-community
+  clawhub_slug: k-cinema-bridge
+  clawhub_path: uyeong/k-cinema-bridge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - WebFetch
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# K Cinema Bridge
+
+    # Source: ClawHub community skill by uyeong
+
+    # Install: clawhub install k-cinema-bridge
+
+    # Path: uyeong/k-cinema-bridge
+
+
+    ## Description
+
+    Query Korean multiplex (Lotte Cinema, CGV, Megabox) box office rankings and upcoming movie data enriched with KOBIS details.
+    Use when the user asks about Korean movies currently showing, box office rankings, upcoming releases, or wants movie recommendations
+    based on genre, director, actor, or rating
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - openapi.json
+
+
+    ## Allowed Tools
+
+    WebFetch
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install k-cinema-bridge
+
+    ```'
+examples:
+- description: Install K Cinema Bridge from ClawHub
+  usage: clawhub install k-cinema-bridge
+schema_version: '1.0'

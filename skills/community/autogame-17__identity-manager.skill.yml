@@ -1,0 +1,66 @@
+name: identity-manager
+title: Identity Manager
+version: 1.0.1
+description: strictly manages user identity mappings (Feishu OpenID <-> Name/Role). Use this to `lookup` a user by ID before
+  replying, or `register` new users to the database. Prevents hallucinating user identities.
+metadata:
+  author: autogame-17
+  category: Development & Coding
+  tags:
+  - development-coding
+  - identity
+  - manager
+  source: clawhub-community
+  clawhub_slug: identity-manager
+  clawhub_path: autogame-17/identity-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Identity Manager
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install identity-manager
+
+    # Path: autogame-17/identity-manager
+
+
+    ## Description
+
+    strictly manages user identity mappings (Feishu OpenID <-> Name/Role). Use this to `lookup` a user by ID before replying,
+    or `register` new users to the database. Prevents hallucinating user identities.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - auto_scan.js
+
+    - index.js
+
+    - package.json
+
+    - search.js
+
+    - sync.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install identity-manager
+
+    ```'
+examples:
+- description: Install Identity Manager from ClawHub
+  usage: clawhub install identity-manager
+schema_version: '1.0'

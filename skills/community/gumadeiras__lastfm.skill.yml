@@ -1,0 +1,55 @@
+name: lastfm
+title: Last.fm
+version: 1.0.2
+description: Access Last.fm listening history, music stats, and discovery. Query recent tracks, top artists/albums/tracks,
+  loved tracks, similar artists, and global charts.
+metadata:
+  author: gumadeiras
+  category: Media & Content
+  tags:
+  - media-content
+  - lastfm
+  source: clawhub-community
+  clawhub_slug: lastfm
+  clawhub_path: gumadeiras/lastfm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Last.fm
+
+    # Source: ClawHub community skill by gumadeiras
+
+    # Install: clawhub install lastfm
+
+    # Path: gumadeiras/lastfm
+
+
+    ## Description
+
+    Access Last.fm listening history, music stats, and discovery. Query recent tracks, top artists/albums/tracks, loved tracks,
+    similar artists, and global charts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lastfm
+
+    ```'
+examples:
+- description: Install Last.fm from ClawHub
+  usage: clawhub install lastfm
+schema_version: '1.0'

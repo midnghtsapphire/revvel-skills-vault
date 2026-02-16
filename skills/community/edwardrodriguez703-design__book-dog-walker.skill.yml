@@ -1,0 +1,57 @@
+name: book-dog-walker
+title: Book Dog Walker
+version: 1.0.1
+description: Book dog-walker services through Lokuli MCP. Use when user needs to find and book dog-walker. Triggers on requests
+  like "book a dog-walker", "find dog-walker near me", or any dog-walker service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - dog
+  - walker
+  source: clawhub-community
+  clawhub_slug: book-dog-walker
+  clawhub_path: edwardrodriguez703-design/book-dog-walker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Dog Walker
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-dog-walker
+
+    # Path: edwardrodriguez703-design/book-dog-walker
+
+
+    ## Description
+
+    Book dog-walker services through Lokuli MCP. Use when user needs to find and book dog-walker. Triggers on requests like
+    "book a dog-walker", "find dog-walker near me", or any dog-walker service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-dog-walker
+
+    ```'
+examples:
+- description: Install Book Dog Walker from ClawHub
+  usage: clawhub install book-dog-walker
+schema_version: '1.0'

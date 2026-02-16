@@ -1,0 +1,75 @@
+name: lightning-security-module
+title: Lightning Security Module
+version: 1.0.0
+description: Set up an lnd remote signer container that holds private keys separately from the agent. Exports a credentials
+  bundle (accounts JSON, TLS cert, admin macaroon) for watch-only litd nodes. Container-first with Docker, native fallback.
+  Use when firewalling private key material from AI agents.
+metadata:
+  author: roasbeef
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - lightning
+  - security
+  - module
+  source: clawhub-community
+  clawhub_slug: lightning-security-module
+  clawhub_path: roasbeef/lightning-security-module
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lightning Security Module
+
+    # Source: ClawHub community skill by roasbeef
+
+    # Install: clawhub install lightning-security-module
+
+    # Path: roasbeef/lightning-security-module
+
+
+    ## Description
+
+    Set up an lnd remote signer container that holds private keys separately from the agent. Exports a credentials bundle
+    (accounts JSON, TLS cert, admin macaroon) for watch-only litd nodes. Container-first with Docker, native fallback. Use
+    when firewalling private key material from AI agents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/architecture.md
+
+    - scripts/docker-start.sh
+
+    - scripts/docker-stop.sh
+
+    - scripts/export-credentials.sh
+
+    - scripts/install.sh
+
+    - scripts/setup-signer.sh
+
+    - scripts/start-signer.sh
+
+    - scripts/stop-signer.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lightning-security-module
+
+    ```'
+examples:
+- description: Install Lightning Security Module from ClawHub
+  usage: clawhub install lightning-security-module
+schema_version: '1.0'

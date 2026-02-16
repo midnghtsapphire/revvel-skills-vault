@@ -1,0 +1,74 @@
+name: notion-sync
+title: Notion Sync
+version: 2.2.0
+description: Bi-directional sync and management for Notion pages and databases. Use when working with Notion workspaces for
+  collaborative editing, research tracking, project management, or when you need to sync markdown files to/from Notion pages
+  or monitor Notion pages for changes.
+metadata:
+  author: robansuini
+  category: Search & Research
+  tags:
+  - search-research
+  - notion
+  - sync
+  source: clawhub-community
+  clawhub_slug: notion-sync
+  clawhub_path: robansuini/notion-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notion Sync
+
+    # Source: ClawHub community skill by robansuini
+
+    # Install: clawhub install notion-sync
+
+    # Path: robansuini/notion-sync
+
+
+    ## Description
+
+    Bi-directional sync and management for Notion pages and databases. Use when working with Notion workspaces for collaborative
+    editing, research tracking, project management, or when you need to sync markdown files to/from Notion pages or monitor
+    Notion pages for changes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API-REFERENCE.md
+
+    - scripts/add-to-database.js
+
+    - scripts/delete-notion-page.js
+
+    - scripts/get-database-schema.js
+
+    - scripts/md-to-notion.js
+
+    - scripts/notion-to-md.js
+
+    - scripts/notion-utils.js
+
+    - scripts/query-database.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notion-sync
+
+    ```'
+examples:
+- description: Install Notion Sync from ClawHub
+  usage: clawhub install notion-sync
+schema_version: '1.0'

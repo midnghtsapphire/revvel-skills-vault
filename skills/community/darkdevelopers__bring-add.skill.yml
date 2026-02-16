@@ -1,0 +1,64 @@
+name: bring-add
+title: Bring Add
+version: 1.0.0
+description: Use when user wants to add items to Bring! shopping lists. For adding single items, batch items, or items from
+  stdin/files. Supports dry-run preview and JSON output.
+metadata:
+  author: darkdevelopers
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - bring
+  - add
+  source: clawhub-community
+  clawhub_slug: bring-add
+  clawhub_path: darkdevelopers/bring-add
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bring Add
+
+    # Source: ClawHub community skill by darkdevelopers
+
+    # Install: clawhub install bring-add
+
+    # Path: darkdevelopers/bring-add
+
+
+    ## Description
+
+    Use when user wants to add items to Bring! shopping lists. For adding single items, batch items, or items from stdin/files.
+    Supports dry-run preview and JSON output.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package-lock.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bring-add
+
+    ```'
+examples:
+- description: Install Bring Add from ClawHub
+  usage: clawhub install bring-add
+schema_version: '1.0'

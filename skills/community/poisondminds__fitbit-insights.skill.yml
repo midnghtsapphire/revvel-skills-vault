@@ -1,0 +1,64 @@
+name: fitbit
+title: Fitbit Insights
+version: 1.0.0
+description: Fitbit fitness data integration. Use when the user wants fitness insights, workout summaries, step counts, heart
+  rate data, sleep analysis, or to ask questions about their Fitbit activity data. Provides AI-powered analysis of fitness
+  metrics.
+metadata:
+  author: poisondminds
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - fitbit
+  source: clawhub-community
+  clawhub_slug: fitbit-insights
+  clawhub_path: poisondminds/fitbit-insights
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fitbit Insights
+
+    # Source: ClawHub community skill by poisondminds
+
+    # Install: clawhub install fitbit-insights
+
+    # Path: poisondminds/fitbit-insights
+
+
+    ## Description
+
+    Fitbit fitness data integration. Use when the user wants fitness insights, workout summaries, step counts, heart rate
+    data, sleep analysis, or to ask questions about their Fitbit activity data. Provides AI-powered analysis of fitness metrics.
+
+
+    ## Files
+
+    - CLAWHUB-SUBMISSION.md
+
+    - OVERVIEW.md
+
+    - README.md
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fitbit-insights
+
+    ```'
+examples:
+- description: Install Fitbit Insights from ClawHub
+  usage: clawhub install fitbit-insights
+schema_version: '1.0'

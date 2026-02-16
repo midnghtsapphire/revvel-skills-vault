@@ -1,0 +1,58 @@
+name: stremio-cast
+title: Stremio Casting
+version: 1.0.0
+description: Busca conteúdo no Stremio Web e transmite para dispositivos Chromecast usando CATT e Playwright. Use para reproduzir
+  filmes e séries diretamente do Stremio em TVs.
+metadata:
+  author: pedro-valentim
+  category: Gaming & Entertainment
+  tags:
+  - gaming-entertainment
+  - stremio
+  - cast
+  source: clawhub-community
+  clawhub_slug: stremio-cast
+  clawhub_path: pedro-valentim/stremio-cast
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stremio Casting
+
+    # Source: ClawHub community skill by pedro-valentim
+
+    # Install: clawhub install stremio-cast
+
+    # Path: pedro-valentim/stremio-cast
+
+
+    ## Description
+
+    Busca conteúdo no Stremio Web e transmite para dispositivos Chromecast usando CATT e Playwright. Use para reproduzir filmes
+    e séries diretamente do Stremio em TVs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/stremio_cast.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stremio-cast
+
+    ```'
+examples:
+- description: Install Stremio Casting from ClawHub
+  usage: clawhub install stremio-cast
+schema_version: '1.0'

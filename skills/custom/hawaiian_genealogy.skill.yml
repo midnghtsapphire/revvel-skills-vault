@@ -1,0 +1,124 @@
+name: hawaiian_genealogy
+title: Hawaiian History & Genealogy Expert
+version: 1.0.0
+description: Deep Hawaiian cultural and genealogical knowledge spanning Kingdom history, Ali'i genealogy, land records, language
+  resources, and Polynesian migration patterns
+metadata:
+  author: Revvel AI Engine
+  category: Intelligence & Research
+  tags:
+  - ali'i genealogy lineage tracking
+  - plantation era immigration record search
+  - newspaper archive search
+  - hawaiian
+  - polynesian dna haplogroup analysis
+  - mahele land record analysis
+  - hawaiian language translation and parsing
+  - church record extraction
+  - blood quantum calculation
+  - genealogy
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport math\nimport hashlib\nimport requests\nimport statistics\nimport unittest\n\
+    from datetime import datetime\nfrom collections import defaultdict, Counter\nfrom typing import Dict, List, Optional,\
+    \ Tuple, Any, Union\nfrom urllib.parse import urljoin, quote_plus\n\nSKILL_METADATA = {\n    \"name\": \"Hawaiian History\
+    \ & Genealogy Expert\",\n    \"id\": \"hawaiian_genealogy\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI\
+    \ Engine\",\n    \"description\": \"Deep Hawaiian cultural and genealogical knowledge spanning Kingdom history, Ali'i\
+    \ genealogy, land records, language resources, and Polynesian migration patterns\",\n    \"capabilities\": [\n       \
+    \ \"Ali'i genealogy lineage tracking\",\n        \"Mahele land record analysis\",\n        \"Hawaiian language translation\
+    \ and parsing\",\n        \"Blood quantum calculation\",\n        \"Polynesian DNA haplogroup analysis\",\n        \"\
+    Plantation era immigration record search\",\n        \"Church record extraction\",\n        \"Newspaper archive search\"\
+    ,\n        \"Place name etymology\",\n        \"Cultural protocol guidance\"\n    ],\n    \"domain\": \"Hawaiian cultural\
+    \ heritage, genealogy, and historical research\"\n}\n\nEXPERT_PROMPTS = {\n    \"genealogy_search\": \"\"\"Search for\
+    \ Hawaiian genealogy records for individual named {full_name} born approximately {birth_year} on {island}. Include Ali'i\
+    \ lineage if applicable. Search Papakilo Database, Ulukau, and Bishop Museum archives. Return detailed family tree with\
+    \ citations.\"\"\",\n    \"land_record_search\": \"\"\"Find all land records for {applicant_name} in {ahupuaa}, {island}\
+    \ during the Mahele period (1846-1853). Include LCA numbers, award amounts, and survey details. Cross-reference with Royal\
+    \ Patents and Boundary Commission records.\"\"\",\n    \"blood_quantum_calc\": \"\"\"Calculate Hawaiian blood quantum\
+    \ for individual {full_name} based on known ancestry: {ancestry_list}. Include generation breakdown and documentation\
+    \ requirements for DHHL eligibility.\"\"\",\n    \"polynesian_dna_analysis\": \"\"\"Analyze DNA haplogroup {haplogroup}\
+    \ for Polynesian migration patterns. Compare with reference populations from Marquesas, Tahiti, and Samoa. Provide migration\
+    \ timeline and cultural connections.\"\"\",\n    \"plantation_worker_search\": \"\"\"Find immigration and employment records\
+    \ for {worker_name} who arrived in Hawaii {arrival_year} to work on {plantation_name}. Include ship manifest, contract\
+    \ details, and family members.\"\"\",\n    \"church_record_extraction\": \"\"\"Extract baptism/marriage/death records\
+    \ from {church_name} for {individual_name} between {start_year} and {end_year}. Include original Hawaiian text and English\
+    \ translation.\"\"\",\n    \"place_name_etymology\": \"\"\"Provide detailed etymology and cultural significance of Hawaiian\
+    \ place name {place_name}. Include historical references, chants, and geographic context.\"\"\",\n    \"cultural_protocol_guidance\"\
+    : \"\"\"Provide proper cultural protocols for conducting genealogical research on {island} regarding {research_type}.\
+    \ Include permission requirements, offerings, and respectful practices.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"papakilo_database\"\
+    : {\n        \"type\": \"database\",\n        \"endpoint\": \"https://www.papakilodatabase.com/api/v1\",\n        \"description\"\
+    : \"Office of Hawaiian Affairs cultural and historical database\",\n        \"auth_method\": \"API key\",\n        \"\
+    documentation_url\": \"https://www.oha.org/resources/papakilo-database/\"\n    },\n    \"ulukau_archive\": {\n       \
+    \ \"type\": \"database\",\n        \"endpoint\": \"https://ulukau.org/api/v2\",\n        \"description\": \"Hawaiian Electronic\
+    \ Library with newspapers and texts\",\n        \"auth_method\": \"None required\",\n        \"documentation_url\": \"\
+    https://ulukau.org/hpn/?a=p&l=en&p=introintroduction\"\n    },\n    \"bishop_museum_archives\": {\n        \"type\": \"\
+    api\",\n        \"endpoint\": \"https://archives.bishopmuseum.org/api/v1\",\n        \"description\": \"Bishop Museum\
+    \ historical archives and collections\",\n        \"auth_method\": \"OAuth 2.0\",\n        \"documentation_url\": \"https://www.bishopmuseum.org/research/archives/\"\
+    \n    },\n    \"waihona_land_records\": {\n        \"type\": \"database\",\n        \"endpoint\": \"https://waihona.com/api/v1\"\
+    ,\n        \"description\": \"Comprehensive Hawaiian land records database\",\n        \"auth_method\": \"API key\",\n\
+    \        \"documentation_url\": \"https://waihona.com/\"\n    },\n    \"hawaii_state_archives\": {\n        \"type\":\
+    \ \"api\",\n        \"endpoint\": \"https://ags.hawaii.gov/archives/api/v1\",\n        \"description\": \"Hawaii State\
+    \ government archives\",\n        \"auth_method\": \"Government API key\",\n        \"documentation_url\": \"https://ags.hawaii.gov/archives/\"\
+    \n    },\n    \"dhhl_records\": {\n        \"type\": \"database\",\n        \"endpoint\": \"https://dhhl.hawaii.gov/api/v1\"\
+    ,\n        \"description\": \"Department of Hawaiian Home Lands records\",\n        \"auth_method\": \"DHHL portal login\"\
+    ,\n        \"documentation_url\": \"https://dhhl.hawaii.gov/\"\n    }\n}\n\ndef validate_hawaiian_name(name: str) -> Dict[str,\
+    \ Any]:\n    \"\"\"Validate and parse Hawaiian names according to proper orthography.\"\"\"\n    if not name or not isinstance(name,\
+    \ str):\n        return {\"valid\": False, \"error\": \"Name must be non-empty string\"}\n    \n    # Check for proper\
+    \ Hawaiian diacritical marks\n    has_okina = \"ʻ\" in name or \"'\" in name\n    has_kahako = any(c in name for c in\
+    \ \"āēīōūĀĒĪŌŪ\")\n    \n    # Normalize okina characters\n    normalized = name.replace(\"'\", \"ʻ\")\n    \n    # Split\
+    \ into parts\n    parts = normalized.split()\n    \n    return {\n        \"valid\": True,\n        \"normalized\": normalized,\n\
+    \        \"parts\": parts,\n        \"has_okina\": has_okina,\n        \"has_kahako\": has_kahako,\n        \"suggested_corrections\"\
+    : []\n    }\n\ndef calculate_blood_quantum(ancestors: List[Dict[str, float]]) -> Dict[str, Any]:\n    \"\"\"Calculate\
+    \ Hawaiian blood quantum based on ancestry.\"\"\"\n    if not ancestors:\n        return {\"quantum\": 0.0, \"details\"\
+    : []}\n    \n    total_quantum = 0.0\n    details = []\n    \n    for i, ancestor in enumerate(ancestors):\n        generation\
+    \ = i + 1\n        percentage = ancestor.get(\"hawaiian_percentage\", 0.0)\n        contribution = percentage * (0.5 **\
+    \ generation)\n        total_quantum += contribution\n        \n        details.append({\n            \"generation\":\
+    \ generation,\n            \"name\": ancestor.get(\"name\", f\"Ancestor {generation}\"),\n            \"hawaiian_percentage\"\
+    : percentage,\n            \"contribution\": contribution\n        })\n    \n    return {\n        \"quantum\": round(total_quantum,\
+    \ 6),\n        \"percentage\": round(total_quantum * 100, 2),\n        \"details\": details,\n        \"dhhl_eligible\"\
+    : total_quantum >= 0.50\n    }\n\ndef parse_mahele_award(text: str) -> Dict[str, Any]:\n    \"\"\"Parse Mahele land award\
+    \ text into structured data.\"\"\"\n    award_pattern = r'LCA\\s*(\\d+)\\s*.*?(?:Awarded|Apana).*?(\\d+)\\s*acres?'\n\
+    \    match = re.search(award_pattern, text, re.IGNORECASE)\n    \n    if not match:\n        return {\"parsed\": False,\
+    \ \"raw_text\": text}\n    \n    lca_number = match.group(1)\n    acres = float(match.group(2))\n    \n    # Extract claimant\
+    \ name\n    name_match = re.search(r'Claimant[s]?:\\s*([^\\n]+)', text, re.IGNORECASE)\n    claimant = name_match.group(1).strip()\
+    \ if name_match else \"Unknown\"\n    \n    # Extract location\n    location_match = re.search(r'(?:Ahupua.a|Location):?\\\
+    s*([^\\n]+)', text, re.IGNORECASE)\n    location = location_match.group(1).strip() if location_match else \"Unknown\"\n\
+    \    \n    return {\n        \"parsed\": True,\n        \"lca_number\": lca_number,\n        \"acres\": acres,\n     \
+    \   \"claimant\": claimant,\n        \"location\": location,\n        \"raw_text\": text\n    }\n\ndef analyze_polynesian_haplogroup(haplogroup:\
+    \ str) -> Dict[str, Any]:\n    \"\"\"Analyze Polynesian DNA haplogroup for migration patterns.\"\"\"\n    haplogroup =\
+    \ haplogroup.upper()\n    \n    polynesian_haplogroups = {\n        \"B4A1A1\": {\"origin\": \"Southeast Asia\", \"migration\"\
+    : \"3,000-2,000 BCE\", \"region\": \"Western Polynesia\"},\n        \"B4A1A1A\": {\"origin\": \"Taiwan\", \"migration\"\
+    : \"2,000-1,000 BCE\", \"region\": \"Central Polynesia\"},\n        \"Q1\": {\"origin\": \"Melanesia\", \"migration\"\
+    : \"1,500-1,000 BCE\", \"region\": \"Eastern Polynesia\"},\n        \"M7\": {\"origin\": \"Southeast Asia\", \"migration\"\
+    : \"3,500-2,500 BCE\", \"region\": \"Western Polynesia\"}\n    }\n    \n    if haplogroup in polynesian_haplogroups:\n\
+    \        info = polynesian_haplogroups[haplogroup]\n        return {\n            'haplogroup': haplogroup,\n        \
+    \    'found': True,\n            'origin': info['origin'],\n            'migration_period': info['migration'],\n     \
+    \       'region': info['region'],\n            'polynesian_connection': True\n        }\n    \n    return {\n        'haplogroup':\
+    \ haplogroup,\n        'found': False,\n        'polynesian_connection': False,\n        'note': 'Haplogroup not in Polynesian\
+    \ migration database'\n    }\n\n\nclass SkillEngine:\n    \"\"\"Hawaiian History & Genealogy skill engine.\"\"\"\n   \
+    \ \n    def __init__(self):\n        self.name = SKILL_METADATA['name']\n        self.version = SKILL_METADATA['version']\n\
+    \    \n    def run(self, action: str, **kwargs) -> Dict[str, Any]:\n        actions = {\n            'parse_lca': lambda:\
+    \ parse_land_commission_award(**kwargs),\n            'haplogroup': lambda: analyze_polynesian_haplogroup(**kwargs),\n\
+    \        }\n        if action in actions:\n            return actions[action]()\n        return {'error': f'Unknown action:\
+    \ {action}'}\n\n\nclass TestHawaiianGenealogy(unittest.TestCase):\n    \"\"\"Unit tests for Hawaiian History & Genealogy\
+    \ skill.\"\"\"\n    \n    def test_metadata(self):\n        self.assertEqual(SKILL_METADATA['id'], 'hawaiian_genealogy')\n\
+    \    \n    def test_haplogroup_known(self):\n        result = analyze_polynesian_haplogroup('B4A1A1')\n        self.assertTrue(result['found'])\n\
+    \        self.assertTrue(result['polynesian_connection'])\n    \n    def test_haplogroup_unknown(self):\n        result\
+    \ = analyze_polynesian_haplogroup('R1B')\n        self.assertFalse(result['found'])\n    \n    def test_prompts_exist(self):\n\
+    \        self.assertGreater(len(EXPERT_PROMPTS), 0)\n    \n    def test_integration_points(self):\n        self.assertIn('papakilo',\
+    \ INTEGRATION_POINTS)\n    \n    def test_skill_engine(self):\n        engine = SkillEngine()\n        self.assertEqual(engine.name,\
+    \ 'Hawaiian History & Genealogy Expert')\n\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Hawaiian History & Genealogy Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''hawaiian_genealogy'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

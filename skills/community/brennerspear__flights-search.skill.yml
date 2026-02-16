@@ -1,0 +1,54 @@
+name: flights
+title: Flights
+version: 1.0.0
+description: Search flights via Google Flights. Find nonstop/connecting flights, filter by time and cabin class, get booking
+  links.
+metadata:
+  author: brennerspear
+  category: Search & Research
+  tags:
+  - search-research
+  - flights
+  source: clawhub-community
+  clawhub_slug: flights-search
+  clawhub_path: brennerspear/flights-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Flights
+
+    # Source: ClawHub community skill by brennerspear
+
+    # Install: clawhub install flights-search
+
+    # Path: brennerspear/flights-search
+
+
+    ## Description
+
+    Search flights via Google Flights. Find nonstop/connecting flights, filter by time and cabin class, get booking links.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flights-search
+
+    ```'
+examples:
+- description: Install Flights from ClawHub
+  usage: clawhub install flights-search
+schema_version: '1.0'

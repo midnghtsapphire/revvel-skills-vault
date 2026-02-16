@@ -1,0 +1,60 @@
+name: kicad-pcb
+title: KiCad PCB
+version: 1.0.0
+description: Automate PCB design with KiCad. Create schematics, design boards, export Gerbers, order from PCBWay. Full design-to-manufacturing
+  pipeline.
+metadata:
+  author: g0head
+  category: General
+  tags:
+  - general
+  - kicad
+  - pcb
+  source: clawhub-community
+  clawhub_slug: kicad-pcb
+  clawhub_path: g0head/kicad-pcb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# KiCad PCB
+
+    # Source: ClawHub community skill by g0head
+
+    # Install: clawhub install kicad-pcb
+
+    # Path: g0head/kicad-pcb
+
+
+    ## Description
+
+    Automate PCB design with KiCad. Create schematics, design boards, export Gerbers, order from PCBWay. Full design-to-manufacturing
+    pipeline.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - scripts/kicad_pcb.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kicad-pcb
+
+    ```'
+examples:
+- description: Install KiCad PCB from ClawHub
+  usage: clawhub install kicad-pcb
+schema_version: '1.0'

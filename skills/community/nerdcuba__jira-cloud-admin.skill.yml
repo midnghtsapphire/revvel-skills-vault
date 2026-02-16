@@ -1,0 +1,71 @@
+name: jira-admin-cloud
+title: Jira Cloud Admin
+version: 1.0.1
+description: '"Jira Cloud admin playbook. Use for Jira Cloud administration tasks: projects (company-managed/team-managed),
+  permissions, workflows, fields/screens, automation, JSM setup (queues/SLAs/portals), reporting/dashboards, and Confluence
+  integrations. Includes official Atlassian references and best-practi'
+metadata:
+  author: nerdcuba
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - jira
+  - admin
+  - cloud
+  source: clawhub-community
+  clawhub_slug: jira-cloud-admin
+  clawhub_path: nerdcuba/jira-cloud-admin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jira Cloud Admin
+
+    # Source: ClawHub community skill by nerdcuba
+
+    # Install: clawhub install jira-cloud-admin
+
+    # Path: nerdcuba/jira-cloud-admin
+
+
+    ## Description
+
+    "Jira Cloud admin playbook. Use for Jira Cloud administration tasks: projects (company-managed/team-managed), permissions,
+    workflows, fields/screens, automation, JSM setup (queues/SLAs/portals), reporting/dashboards, and Confluence integrations.
+    Includes official Atlassian references and best-practi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/atlassian-cloud-links.md
+
+    - references/automation-advanced.md
+
+    - references/checklists.md
+
+    - references/confluence-links.md
+
+    - references/experts-links.md
+
+    - references/jsm-links.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jira-cloud-admin
+
+    ```'
+examples:
+- description: Install Jira Cloud Admin from ClawHub
+  usage: clawhub install jira-cloud-admin
+schema_version: '1.0'

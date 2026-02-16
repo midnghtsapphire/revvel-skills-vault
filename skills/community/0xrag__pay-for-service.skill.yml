@@ -1,0 +1,68 @@
+name: pay-for-service
+title: Pay For Service
+version: 0.1.0
+description: Make a paid API request to an x402 endpoint with automatic USDC payment. Use when you or the user want to call
+  a paid API, make an x402 request, use a paid service, or pay for an API call. Use after finding a service with search-for-service.
+metadata:
+  author: 0xrag
+  category: Search & Research
+  tags:
+  - search-research
+  - pay
+  - for
+  - service
+  - '["bash(npx awal@latest status*)"'
+  - '"bash(npx awal@latest balance*)"'
+  - '"bash(npx awal@latest x402 pay *)"]'
+  source: clawhub-community
+  clawhub_slug: pay-for-service
+  clawhub_path: 0xrag/pay-for-service
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '["Bash(npx awal@latest status*)"'
+  - '"Bash(npx awal@latest balance*)"'
+  - '"Bash(npx awal@latest x402 pay *)"]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pay For Service
+
+    # Source: ClawHub community skill by 0xrag
+
+    # Install: clawhub install pay-for-service
+
+    # Path: 0xrag/pay-for-service
+
+
+    ## Description
+
+    Make a paid API request to an x402 endpoint with automatic USDC payment. Use when you or the user want to call a paid
+    API, make an x402 request, use a paid service, or pay for an API call. Use after finding a service with search-for-service.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    ["Bash(npx awal@latest status*)", "Bash(npx awal@latest balance*)", "Bash(npx awal@latest x402 pay *)"]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pay-for-service
+
+    ```'
+examples:
+- description: Install Pay For Service from ClawHub
+  usage: clawhub install pay-for-service
+schema_version: '1.0'

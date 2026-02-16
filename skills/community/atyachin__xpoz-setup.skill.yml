@@ -1,0 +1,58 @@
+name: xpoz-setup
+title: Xpoz Setup
+version: 1.2.0
+description: '"Set up and authenticate the Xpoz MCP server for social media intelligence. Required by all Xpoz skills. Handles
+  server configuration, OAuth login, and connection verification with minimal user interaction."'
+metadata:
+  author: atyachin
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - xpoz
+  - setup
+  source: clawhub-community
+  clawhub_slug: xpoz-setup
+  clawhub_path: atyachin/xpoz-setup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xpoz Setup
+
+    # Source: ClawHub community skill by atyachin
+
+    # Install: clawhub install xpoz-setup
+
+    # Path: atyachin/xpoz-setup
+
+
+    ## Description
+
+    "Set up and authenticate the Xpoz MCP server for social media intelligence. Required by all Xpoz skills. Handles server
+    configuration, OAuth login, and connection verification with minimal user interaction."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/oauth-remote.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xpoz-setup
+
+    ```'
+examples:
+- description: Install Xpoz Setup from ClawHub
+  usage: clawhub install xpoz-setup
+schema_version: '1.0'

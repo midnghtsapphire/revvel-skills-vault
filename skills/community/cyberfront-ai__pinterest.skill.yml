@@ -1,0 +1,63 @@
+name: pinterest
+title: Pinterest
+version: 1.1.1
+description: Search and browse Pinterest pins, get pin details, and send actual images to the user via Telegram/messaging.
+  Use when the user wants to find inspiration, search for images/ideas, or browse Pinterest content. Sends images directly,
+  not just links.
+metadata:
+  author: cyberfront-ai
+  category: Search & Research
+  tags:
+  - search-research
+  - pinterest
+  source: clawhub-community
+  clawhub_slug: pinterest
+  clawhub_path: cyberfront-ai/pinterest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pinterest
+
+    # Source: ClawHub community skill by cyberfront-ai
+
+    # Install: clawhub install pinterest
+
+    # Path: cyberfront-ai/pinterest
+
+
+    ## Description
+
+    Search and browse Pinterest pins, get pin details, and send actual images to the user via Telegram/messaging. Use when
+    the user wants to find inspiration, search for images/ideas, or browse Pinterest content. Sends images directly, not just
+    links.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - references/oauth-setup.md
+
+    - scripts/pinterest_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pinterest
+
+    ```'
+examples:
+- description: Install Pinterest from ClawHub
+  usage: clawhub install pinterest
+schema_version: '1.0'

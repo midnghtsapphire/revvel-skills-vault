@@ -1,0 +1,57 @@
+name: batch
+title: Batch
+version: 1.0.0
+description: Process multiple items with progress tracking, checkpointing, and failure recovery.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - batch
+  source: clawhub-community
+  clawhub_slug: batch
+  clawhub_path: ivangdavila/batch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Batch
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install batch
+
+    # Path: ivangdavila/batch
+
+
+    ## Description
+
+    Process multiple items with progress tracking, checkpointing, and failure recovery.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - errors.md
+
+    - strategies.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install batch
+
+    ```'
+examples:
+- description: Install Batch from ClawHub
+  usage: clawhub install batch
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: lg-thinq
+title: LG ThinQ
+version: 1.0.0
+description: '"Control LG smart appliances via ThinQ API. Use when user asks about their fridge, washer, dryer, AC, or other
+  LG appliances. Supports checking status, changing temperature, toggling modes (express, eco), and monitoring door status."'
+metadata:
+  author: kaiofreitas
+  category: Development & Coding
+  tags:
+  - development-coding
+  - thinq
+  source: clawhub-community
+  clawhub_slug: lg-thinq
+  clawhub_path: kaiofreitas/lg-thinq
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LG ThinQ
+
+    # Source: ClawHub community skill by kaiofreitas
+
+    # Install: clawhub install lg-thinq
+
+    # Path: kaiofreitas/lg-thinq
+
+
+    ## Description
+
+    "Control LG smart appliances via ThinQ API. Use when user asks about their fridge, washer, dryer, AC, or other LG appliances.
+    Supports checking status, changing temperature, toggling modes (express, eco), and monitoring door status."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/thinq.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lg-thinq
+
+    ```'
+examples:
+- description: Install LG ThinQ from ClawHub
+  usage: clawhub install lg-thinq
+schema_version: '1.0'

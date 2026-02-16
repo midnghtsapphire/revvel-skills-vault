@@ -1,0 +1,60 @@
+name: auteng-docs-curl-publish
+title: Auteng Docs Curl Publish
+version: 1.0.2
+description: Publish markdown and return share links using curl. Support markdown with mermaid diagrams such as component
+  diagrams, flowcharts, and sequence diagrams. Also supports KaTex and code blocks. AutEng will return a shareable link to
+  the published rendered document.
+metadata:
+  author: operator-auteng-ai
+  category: Development & Coding
+  tags:
+  - development-coding
+  - auteng
+  - docs
+  - curl
+  - publish
+  source: clawhub-community
+  clawhub_slug: auteng-docs-curl-publish
+  clawhub_path: operator-auteng-ai/auteng-docs-curl-publish
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Auteng Docs Curl Publish
+
+    # Source: ClawHub community skill by operator-auteng-ai
+
+    # Install: clawhub install auteng-docs-curl-publish
+
+    # Path: operator-auteng-ai/auteng-docs-curl-publish
+
+
+    ## Description
+
+    Publish markdown and return share links using curl. Support markdown with mermaid diagrams such as component diagrams,
+    flowcharts, and sequence diagrams. Also supports KaTex and code blocks. AutEng will return a shareable link to the published
+    rendered document.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install auteng-docs-curl-publish
+
+    ```'
+examples:
+- description: Install Auteng Docs Curl Publish from ClawHub
+  usage: clawhub install auteng-docs-curl-publish
+schema_version: '1.0'

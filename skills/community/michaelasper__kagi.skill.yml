@@ -1,0 +1,67 @@
+name: kagi
+title: Kagi
+version: 0.1.0
+description: 'Use the Kagi API (Search API + FastGPT) for web research when you want higher-quality results than Brave/Google,
+  or when Brave Search is rate-limited. Triggers: “search with Kagi”, “Kagi search”, “use FastGPT”, “Kagi FastGPT”, “Kagi
+  summarize”, or when you want programmatic web search via Kagi’s API'
+metadata:
+  author: michaelasper
+  category: Search & Research
+  tags:
+  - search-research
+  - kagi
+  source: clawhub-community
+  clawhub_slug: kagi
+  clawhub_path: michaelasper/kagi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kagi
+
+    # Source: ClawHub community skill by michaelasper
+
+    # Install: clawhub install kagi
+
+    # Path: michaelasper/kagi
+
+
+    ## Description
+
+    Use the Kagi API (Search API + FastGPT) for web research when you want higher-quality results than Brave/Google, or when
+    Brave Search is rate-limited. Triggers: “search with Kagi”, “Kagi search”, “use FastGPT”, “Kagi FastGPT”, “Kagi summarize”,
+    or when you want programmatic web search via Kagi’s API
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/kagi-api.md
+
+    - scripts/kagi_client.py
+
+    - scripts/kagi_fastgpt.py
+
+    - scripts/kagi_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kagi
+
+    ```'
+examples:
+- description: Install Kagi from ClawHub
+  usage: clawhub install kagi
+schema_version: '1.0'

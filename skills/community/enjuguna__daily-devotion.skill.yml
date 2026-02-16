@@ -1,0 +1,55 @@
+name: daily_devotion
+title: Daily Devotion
+version: 1.1.1
+description: Creates personalized daily devotions with verse of the day, pastoral message, structured prayer, and time-aware
+  greetings
+metadata:
+  author: enjuguna
+  category: Communication
+  tags:
+  - communication
+  - daily
+  - devotion
+  source: clawhub-community
+  clawhub_slug: daily-devotion
+  clawhub_path: enjuguna/daily-devotion
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Devotion
+
+    # Source: ClawHub community skill by enjuguna
+
+    # Install: clawhub install daily-devotion
+
+    # Path: enjuguna/daily-devotion
+
+
+    ## Description
+
+    Creates personalized daily devotions with verse of the day, pastoral message, structured prayer, and time-aware greetings
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-devotion
+
+    ```'
+examples:
+- description: Install Daily Devotion from ClawHub
+  usage: clawhub install daily-devotion
+schema_version: '1.0'

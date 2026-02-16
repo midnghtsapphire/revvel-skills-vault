@@ -1,0 +1,58 @@
+name: joan_workflow
+title: Joan Workflow
+version: 0.1.0
+description: This skill should be used when the user asks about "joan", "pods", "workspace", "domain knowledge", "context
+  sync", "joan init", "joan todo", or needs guidance on how Joan's knowledge management system works. Provides workflow guidance
+  for pods, todos, plans, and workspace management.
+metadata:
+  author: donny-son
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - joan
+  - workflow
+  source: clawhub-community
+  clawhub_slug: joan-workflow
+  clawhub_path: donny-son/joan-workflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Joan Workflow
+
+    # Source: ClawHub community skill by donny-son
+
+    # Install: clawhub install joan-workflow
+
+    # Path: donny-son/joan-workflow
+
+
+    ## Description
+
+    This skill should be used when the user asks about "joan", "pods", "workspace", "domain knowledge", "context sync", "joan
+    init", "joan todo", or needs guidance on how Joan''s knowledge management system works. Provides workflow guidance for
+    pods, todos, plans, and workspace management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install joan-workflow
+
+    ```'
+examples:
+- description: Install Joan Workflow from ClawHub
+  usage: clawhub install joan-workflow
+schema_version: '1.0'

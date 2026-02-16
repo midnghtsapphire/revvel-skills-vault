@@ -1,0 +1,64 @@
+name: internet-failure-analysis-expert
+title: Internet Failure Analysis Expert
+version: 0.1.0
+description: 对各类故障进行系统性分析，支持CVE漏洞和互联网故障两种模式，包括获取官方报告、拆解时间线、分析导火索和连环故障、识别根本原因（人、组织因素）以及提供技术改进建议，最终生成完整分析报告
+metadata:
+  author: quasarryan
+  category: General
+  tags:
+  - general
+  - internet
+  - failure
+  - analysis
+  - expert
+  source: clawhub-community
+  clawhub_slug: internet-failure-analysis-expert
+  clawhub_path: quasarryan/internet-failure-analysis-expert
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Internet Failure Analysis Expert
+
+    # Source: ClawHub community skill by quasarryan
+
+    # Install: clawhub install internet-failure-analysis-expert
+
+    # Path: quasarryan/internet-failure-analysis-expert
+
+
+    ## Description
+
+    对各类故障进行系统性分析，支持CVE漏洞和互联网故障两种模式，包括获取官方报告、拆解时间线、分析导火索和连环故障、识别根本原因（人、组织因素）以及提供技术改进建议，最终生成完整分析报告
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/extract_webpage.py
+
+    - scripts/fetch_cve_data.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install internet-failure-analysis-expert
+
+    ```'
+examples:
+- description: Install Internet Failure Analysis Expert from ClawHub
+  usage: clawhub install internet-failure-analysis-expert
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: polymarket-trader
+title: Polymarket Trader
+version: 1.0.0
+description: 'Build, evaluate, and tune a Polymarket BTC 1h Up/Down trading strategy using Binance (resolution source) as
+  the anchor. Use when: (1) designing a mispricing/edge model (fair probability vs market price), (2) adding regime filters
+  (trend vs range), (3) debugging bad entries/exits from events.jsonl/st'
+metadata:
+  author: drakec48
+  category: Development & Coding
+  tags:
+  - development-coding
+  - polymarket
+  - trader
+  source: clawhub-community
+  clawhub_slug: polymarket-trader
+  clawhub_path: drakec48/polymarket-trader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polymarket Trader
+
+    # Source: ClawHub community skill by drakec48
+
+    # Install: clawhub install polymarket-trader
+
+    # Path: drakec48/polymarket-trader
+
+
+    ## Description
+
+    Build, evaluate, and tune a Polymarket BTC 1h Up/Down trading strategy using Binance (resolution source) as the anchor.
+    Use when: (1) designing a mispricing/edge model (fair probability vs market price), (2) adding regime filters (trend vs
+    range), (3) debugging bad entries/exits from events.jsonl/st
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/strategy.md
+
+    - scripts/binance_klines.py
+
+    - scripts/binance_regime.py
+
+    - scripts/explain_fills.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polymarket-trader
+
+    ```'
+examples:
+- description: Install Polymarket Trader from ClawHub
+  usage: clawhub install polymarket-trader
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: searxng
+title: Local web search using SearXNG
+version: 1.0.0
+description: Search the web using a self-hosted SearXNG metasearch engine. Aggregates Google, Brave, DuckDuckGo, and more
+  without API keys.
+metadata:
+  author: stperic
+  category: Search & Research
+  tags:
+  - search-research
+  - searxng
+  source: clawhub-community
+  clawhub_slug: local-websearch
+  clawhub_path: stperic/local-websearch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Local web search using SearXNG
+
+    # Source: ClawHub community skill by stperic
+
+    # Install: clawhub install local-websearch
+
+    # Path: stperic/local-websearch
+
+
+    ## Description
+
+    Search the web using a self-hosted SearXNG metasearch engine. Aggregates Google, Brave, DuckDuckGo, and more without API
+    keys.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - searxng_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install local-websearch
+
+    ```'
+examples:
+- description: Install Local web search using SearXNG from ClawHub
+  usage: clawhub install local-websearch
+schema_version: '1.0'

@@ -1,0 +1,33 @@
+name: pptx
+title: Pptx
+version: 0.1.0
+description: '"Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating
+  slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted
+  content will be used elsewhere, like in an email or summary); '
+metadata:
+  author: ttboy
+  category: Communication
+  tags:
+  - communication
+  - pptx
+  source: clawhub-community
+  clawhub_slug: pptx
+  clawhub_path: ttboy/pptx
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Pptx\n# Source: ClawHub community skill by ttboy\n# Install: clawhub install pptx\n# Path: ttboy/pptx\n\n##\
+    \ Description\n\"Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes:\
+    \ creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even\
+    \ if the extracted content will be used elsewhere, like in an email or summary); \n\n## Files\n- LICENSE.txt\n- SKILL.md\n\
+    - _meta.json\n- editing.md\n- pptxgenjs.md\n- scripts/__init__.py\n- scripts/add_slide.py\n- scripts/clean.py\n- scripts/thumbnail.py\n\
+    - scripts/office/pack.py\n\n## Installation\n```bash\nclawhub install pptx\n```"
+examples:
+- description: Install Pptx from ClawHub
+  usage: clawhub install pptx
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: test-gen
+title: Unit Test Generator
+version: 1.0.2
+description: Generate unit tests from source files using AI. Use when adding test coverage.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - test
+  - gen
+  source: clawhub-community
+  clawhub_slug: test-gen
+  clawhub_path: lxgicstudios/test-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Unit Test Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install test-gen
+
+    # Path: lxgicstudios/test-gen
+
+
+    ## Description
+
+    Generate unit tests from source files using AI. Use when adding test coverage.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install test-gen
+
+    ```'
+examples:
+- description: Install Unit Test Generator from ClawHub
+  usage: clawhub install test-gen
+schema_version: '1.0'

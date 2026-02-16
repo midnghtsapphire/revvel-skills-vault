@@ -1,0 +1,62 @@
+name: exa-plus
+title: Exa
+version: 1.0.0
+description: Neural web search via Exa AI. Search people, companies, news, research, code. Supports deep search, domain filters,
+  date ranges.
+metadata:
+  author: jordyvandomselaar
+  category: Search & Research
+  tags:
+  - search-research
+  - exa
+  - plus
+  source: clawhub-community
+  clawhub_slug: exa-plus
+  clawhub_path: jordyvandomselaar/exa-plus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Exa
+
+    # Source: ClawHub community skill by jordyvandomselaar
+
+    # Install: clawhub install exa-plus
+
+    # Path: jordyvandomselaar/exa-plus
+
+
+    ## Description
+
+    Neural web search via Exa AI. Search people, companies, news, research, code. Supports deep search, domain filters, date
+    ranges.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/code.sh
+
+    - scripts/content.sh
+
+    - scripts/search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install exa-plus
+
+    ```'
+examples:
+- description: Install Exa from ClawHub
+  usage: clawhub install exa-plus
+schema_version: '1.0'

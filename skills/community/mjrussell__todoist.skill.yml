@@ -1,0 +1,53 @@
+name: todoist
+title: Todoist
+version: 0.2.1
+description: Manage tasks and projects in Todoist. Use when user asks about tasks, to-dos, reminders, or productivity.
+metadata:
+  author: mjrussell
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - todoist
+  source: clawhub-community
+  clawhub_slug: todoist
+  clawhub_path: mjrussell/todoist
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Todoist
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install todoist
+
+    # Path: mjrussell/todoist
+
+
+    ## Description
+
+    Manage tasks and projects in Todoist. Use when user asks about tasks, to-dos, reminders, or productivity.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todoist
+
+    ```'
+examples:
+- description: Install Todoist from ClawHub
+  usage: clawhub install todoist
+schema_version: '1.0'

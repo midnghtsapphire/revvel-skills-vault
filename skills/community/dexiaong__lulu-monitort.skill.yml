@@ -1,0 +1,58 @@
+name: lulu-monitor
+title: LuLu Monitor
+version: 1.0.0
+description: AI-powered LuLu Firewall companion for macOS. Monitors firewall alerts, analyzes connections with AI, sends Telegram
+  notifications with Allow/Block buttons. Use when setting up LuLu integration, handling firewall callbacks, or troubleshooting
+  LuLu Monitor issues.
+metadata:
+  author: dexiaong
+  category: Social Media
+  tags:
+  - social-media
+  - lulu
+  - monitor
+  source: clawhub-community
+  clawhub_slug: lulu-monitort
+  clawhub_path: dexiaong/lulu-monitort
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LuLu Monitor
+
+    # Source: ClawHub community skill by dexiaong
+
+    # Install: clawhub install lulu-monitort
+
+    # Path: dexiaong/lulu-monitort
+
+
+    ## Description
+
+    AI-powered LuLu Firewall companion for macOS. Monitors firewall alerts, analyzes connections with AI, sends Telegram notifications
+    with Allow/Block buttons. Use when setting up LuLu integration, handling firewall callbacks, or troubleshooting LuLu Monitor
+    issues.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lulu-monitort
+
+    ```'
+examples:
+- description: Install LuLu Monitor from ClawHub
+  usage: clawhub install lulu-monitort
+schema_version: '1.0'

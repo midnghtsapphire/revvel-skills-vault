@@ -1,0 +1,56 @@
+name: skill-vetter
+title: Skill Vetter
+version: 1.0.0
+description: Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources.
+  Checks for red flags, permission scope, and suspicious patterns.
+metadata:
+  author: spclaudehome
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - vetter
+  source: clawhub-community
+  clawhub_slug: skill-vetter
+  clawhub_path: spclaudehome/skill-vetter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Vetter
+
+    # Source: ClawHub community skill by spclaudehome
+
+    # Install: clawhub install skill-vetter
+
+    # Path: spclaudehome/skill-vetter
+
+
+    ## Description
+
+    Security-first skill vetting for AI agents. Use before installing any skill from ClawdHub, GitHub, or other sources. Checks
+    for red flags, permission scope, and suspicious patterns.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-vetter
+
+    ```'
+examples:
+- description: Install Skill Vetter from ClawHub
+  usage: clawhub install skill-vetter
+schema_version: '1.0'

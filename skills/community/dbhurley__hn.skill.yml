@@ -1,0 +1,54 @@
+name: hn
+title: Hacker News
+version: 1.0.0
+description: Browse Hacker News - top stories, new, best, ask, show, jobs, and story details with comments.
+metadata:
+  author: dbhurley
+  category: Search & Research
+  tags:
+  - search-research
+  source: clawhub-community
+  clawhub_slug: hn
+  clawhub_path: dbhurley/hn
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hacker News
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install hn
+
+    # Path: dbhurley/hn
+
+
+    ## Description
+
+    Browse Hacker News - top stories, new, best, ask, show, jobs, and story details with comments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/hn.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hn
+
+    ```'
+examples:
+- description: Install Hacker News from ClawHub
+  usage: clawhub install hn
+schema_version: '1.0'

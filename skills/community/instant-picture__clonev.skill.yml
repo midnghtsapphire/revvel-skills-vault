@@ -1,0 +1,61 @@
+name: clonev
+title: Clonev
+version: 1.0.0
+description: Clone any voice and generate speech using Coqui XTTS v2. SUPER SIMPLE - provide a voice sample (6-30 sec WAV)
+  and text, get cloned voice audio. Supports 14+ languages. Use when the user wants to (1) Clone their voice or someone else's
+  voice, (2) Generate speech that sounds like a specific person, (3
+metadata:
+  author: instant-picture
+  category: Media & Content
+  tags:
+  - media-content
+  - clonev
+  source: clawhub-community
+  clawhub_slug: clonev
+  clawhub_path: instant-picture/clonev
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clonev
+
+    # Source: ClawHub community skill by instant-picture
+
+    # Install: clawhub install clonev
+
+    # Path: instant-picture/clonev
+
+
+    ## Description
+
+    Clone any voice and generate speech using Coqui XTTS v2. SUPER SIMPLE - provide a voice sample (6-30 sec WAV) and text,
+    get cloned voice audio. Supports 14+ languages. Use when the user wants to (1) Clone their voice or someone else''s voice,
+    (2) Generate speech that sounds like a specific person, (3
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/complete-guide.md
+
+    - scripts/clonev.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clonev
+
+    ```'
+examples:
+- description: Install Clonev from ClawHub
+  usage: clawhub install clonev
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: grok-search
+title: grok-search
+version: 0.2.1
+description: Search the web or X/Twitter using xAI Grok server-side tools (web_search, x_search) via the xAI Responses API.
+  Use when you need tweets/threads/users from X, want Grok as an alternative to Brave, or you need structured JSON + citations.
+metadata:
+  author: notabhay
+  category: Search & Research
+  tags:
+  - search-research
+  - grok
+  - search
+  source: clawhub-community
+  clawhub_slug: grok-search
+  clawhub_path: notabhay/grok-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# grok-search
+
+    # Source: ClawHub community skill by notabhay
+
+    # Install: clawhub install grok-search
+
+    # Path: notabhay/grok-search
+
+
+    ## Description
+
+    Search the web or X/Twitter using xAI Grok server-side tools (web_search, x_search) via the xAI Responses API. Use when
+    you need tweets/threads/users from X, want Grok as an alternative to Brave, or you need structured JSON + citations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/xai-tools-links.md
+
+    - scripts/chat.mjs
+
+    - scripts/grok_search.mjs
+
+    - scripts/models.mjs
+
+    - scripts/selftest.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install grok-search
+
+    ```'
+examples:
+- description: Install grok-search from ClawHub
+  usage: clawhub install grok-search
+schema_version: '1.0'

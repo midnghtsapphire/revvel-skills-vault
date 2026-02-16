@@ -1,0 +1,58 @@
+name: daily-review
+title: Daily Review
+version: 1.0.0
+description: Comprehensive daily performance review with communication tracking, meeting analysis, output metrics, and focus
+  time monitoring. Your AI performance coach.
+metadata:
+  author: henrino3
+  category: System & OS
+  tags:
+  - system-os
+  - daily
+  - review
+  source: clawhub-community
+  clawhub_slug: daily-review
+  clawhub_path: henrino3/daily-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Review
+
+    # Source: ClawHub community skill by henrino3
+
+    # Install: clawhub install daily-review
+
+    # Path: henrino3/daily-review
+
+
+    ## Description
+
+    Comprehensive daily performance review with communication tracking, meeting analysis, output metrics, and focus time monitoring.
+    Your AI performance coach.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/daily-review.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-review
+
+    ```'
+examples:
+- description: Install Daily Review from ClawHub
+  usage: clawhub install daily-review
+schema_version: '1.0'

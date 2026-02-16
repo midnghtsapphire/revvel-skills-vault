@@ -1,0 +1,68 @@
+name: skill-creator
+title: Skill Creator 0.1.0
+version: 1.0.0
+description: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update
+  an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.
+metadata:
+  author: ljglover
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - skill
+  - creator
+  source: clawhub-community
+  clawhub_slug: skill-creator-0-1-0
+  clawhub_path: ljglover/skill-creator-0-1-0
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Creator 0.1.0
+
+    # Source: ClawHub community skill by ljglover
+
+    # Install: clawhub install skill-creator-0-1-0
+
+    # Path: ljglover/skill-creator-0-1-0
+
+
+    ## Description
+
+    Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing
+    skill) that extends Claude''s capabilities with specialized knowledge, workflows, or tool integrations.
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/output-patterns.md
+
+    - references/workflows.md
+
+    - scripts/init_skill.py
+
+    - scripts/package_skill.py
+
+    - scripts/quick_validate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-creator-0-1-0
+
+    ```'
+examples:
+- description: Install Skill Creator 0.1.0 from ClawHub
+  usage: clawhub install skill-creator-0-1-0
+schema_version: '1.0'

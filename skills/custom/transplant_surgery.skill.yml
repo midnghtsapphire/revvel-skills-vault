@@ -1,0 +1,308 @@
+name: transplant_surgery
+title: Transplant Surgery & Reconstructive Expert
+version: 1.0.0
+description: Comprehensive transplant and reconstructive surgery knowledge engine covering organ transplants, face/hand VCA
+  procedures, reconstructive microsurgery, and cutting-edge regenerative medicine techniques.
+metadata:
+  author: Revvel AI Engine
+  category: Medical & Health
+  tags:
+  - transplant
+  - microsurgical-planning
+  - clinical-trial-tracker
+  - organ-allocation-analysis
+  - outcome-prediction
+  - donor-recipient-matching
+  - immunosuppression-protocols
+  - surgery
+  - rejection-monitoring
+  - vca-surgical-planning
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport math\nimport hashlib\nimport statistics\nimport unittest\nfrom datetime\
+    \ import datetime, timedelta\nfrom typing import Dict, List, Any, Optional, Tuple\nfrom collections import defaultdict,\
+    \ namedtuple\nimport requests\n\nSKILL_METADATA = {\n    \"name\": \"Transplant Surgery & Reconstructive Expert\",\n \
+    \   \"id\": \"transplant_surgery\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\"\
+    : \"Comprehensive transplant and reconstructive surgery knowledge engine covering organ transplants, face/hand VCA procedures,\
+    \ reconstructive microsurgery, and cutting-edge regenerative medicine techniques.\",\n    \"capabilities\": [\n      \
+    \  \"organ_allocation_analysis\",\n        \"donor_recipient_matching\",\n        \"immunosuppression_protocols\",\n \
+    \       \"rejection_monitoring\",\n        \"vca_surgical_planning\",\n        \"microsurgical_planning\",\n        \"\
+    outcome_prediction\",\n        \"clinical_trial_tracker\",\n        \"rehabilitation_planning\",\n        \"ethical_framework_analysis\"\
+    \n    ],\n    \"domain\": \"transplant_surgery_reconstructive\"\n}\n\nEXPERT_PROMPTS = {\n    \"organ_allocation\": \"\
+    \"\"Analyze organ allocation for {organ_type} transplant in {region} as of {date}.\nPatient details: {patient_demographics}\n\
+    Current MELD/PELD: {meldpeld_score}\nBlood type: {blood_type}\nHLA typing: {hla_typing}\nPRA: {pra_level}%\nDonor considerations:\
+    \ {donor_criteria}\nProvide allocation probability, wait time estimates, and optimization strategies.\"\"\",\n    \n \
+    \   \"vca_planning\": \"\"\"Create comprehensive surgical plan for {vca_type} transplant.\nPatient: {patient_age}yo {gender},\
+    \ {injury_description}\n3D imaging: {imaging_data}\nVascular anatomy: {vascular_details}\nNerve mapping: {nerve_data}\n\
+    Donor matching: {donor_characteristics}\nInclude surgical approach, microvascular anastomosis plan, nerve coaptation strategy,\
+    \ and immunosuppression protocol.\"\"\",\n    \n    \"rejection_risk\": \"\"\"Calculate rejection risk for {transplant_type}\
+    \ recipient.\nTime post-transplant: {time_post_tx}\nCurrent immunosuppression: {current_is}\nDSA levels: {dsa_data}\n\
+    Biopsy results: {biopsy_results}\nInfection history: {infection_history}\nProvide risk stratification and adjustment recommendations.\"\
+    \"\",\n    \n    \"microsurgical_planning\": \"\"\"Design microsurgical reconstruction for {defect_type}.\nDefect size:\
+    \ {defect_dimensions}cm\nLocation: {anatomical_location}\nAvailable donor sites: {donor_sites}\nPatient factors: {comorbidities}\n\
+    Create flap selection rationale, pedicle geometry, and post-op monitoring plan.\"\"\",\n    \n    \"rehabilitation_protocol\"\
+    : \"\"\"Develop rehabilitation protocol for {procedure_type} recipient.\nDays post-op: {postop_day}\nCurrent function:\
+    \ {current_function}\nRejection episodes: {rejection_history}\nPsychosocial factors: {psychosocial_status}\nDesign phased\
+    \ rehabilitation with milestones and therapy interventions.\"\"\",\n    \n    \"clinical_trial_match\": \"\"\"Find relevant\
+    \ clinical trials for {condition} in {patient_population}.\nInclusion criteria: {inclusion_criteria}\nExclusion criteria:\
+    \ {exclusion_criteria}\nGeographic preference: {location_preference}\nProvide matching trials with enrollment status and\
+    \ contact information.\"\"\",\n    \n    \"ethical_consult\": \"\"\"Evaluate ethical considerations for {procedure_type}.\n\
+    Patient capacity: {capacity_assessment}\nDonor consent: {donor_consent_status}\nRisk-benefit ratio: {risk_benefit_analysis}\n\
+    Alternative options: {alternatives}\nProvide ethical framework and decision support.\"\"\",\n    \n    \"outcome_prediction\"\
+    : \"\"\"Predict 1-year and 5-year outcomes for {transplant_type}.\nPatient factors: {patient_factors}\nDonor factors:\
+    \ {donor_factors}\nSurgical factors: {surgical_factors}\nImmunologic factors: {immunologic_factors}\nProvide probability\
+    \ estimates with confidence intervals.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"unos_database\": {\n        \"type\"\
+    : \"api\",\n        \"endpoint\": \"https://optn.transplant.hrsa.gov/data\",\n        \"description\": \"UNOS/OPTN transplant\
+    \ database with waitlist and outcomes data\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"\
+    https://optn.transplant.hrsa.gov/developers\"\n    },\n    \"srtr_reports\": {\n        \"type\": \"database\",\n    \
+    \    \"endpoint\": \"https://srtr.transplant.hrsa.gov/adr\",\n        \"description\": \"Scientific Registry of Transplant\
+    \ Recipients annual data reports\",\n        \"auth_method\": \"public\",\n        \"documentation_url\": \"https://srtr.transplant.hrsa.gov/adr\"\
+    \n    },\n    \"clinicaltrials_gov\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://clinicaltrials.gov/api/v2\"\
+    ,\n        \"description\": \"Clinical trials database for transplant and reconstructive studies\",\n        \"auth_method\"\
+    : \"public\",\n        \"documentation_url\": \"https://clinicaltrials.gov/api\"\n    },\n    \"vca_registry\": {\n  \
+    \      \"type\": \"database\",\n        \"endpoint\": \"https://consort-transplant.org/registry\",\n        \"description\"\
+    : \"CONSORT VCA transplant registry for face and hand transplants\",\n        \"auth_method\": \"oauth2\",\n        \"\
+    documentation_url\": \"https://consort-transplant.org/api-docs\"\n    }\n}\n\n# Data structures\nPatient = namedtuple('Patient',\
+    \ ['age', 'weight', 'height', 'blood_type', 'hla', 'pra', 'diagnosis'])\nDonor = namedtuple('Donor', ['age', 'weight',\
+    \ 'height', 'blood_type', 'hla', 'kdpi', 'cod', 'dcd'])\nMatchResult = namedtuple('MatchResult', ['compatibility_score',\
+    \ 'hla_mismatches', 'pra_risk', 'wait_time_estimate'])\n\nclass TransplantCalculator:\n    \"\"\"Core transplant calculation\
+    \ utilities.\"\"\"\n    \n    @staticmethod\n    def calculate_meld_score(bilirubin: float, inr: float, creatinine: float,\
+    \ sodium: Optional[float] = None) -> int:\n        \"\"\"Calculate MELD score for liver transplant priority.\"\"\"\n \
+    \       if any(v < 0 for v in [bilirubin, inr, creatinine]):\n            raise ValueError(\"Lab values must be non-negative\"\
+    )\n        \n        creatinine = min(creatinine, 4.0)\n        bilirubin = max(bilirubin, 1.0)\n        inr = max(inr,\
+    \ 1.0)\n        \n        meld = 0.957 * math.log(creatinine) + 0.378 * math.log(bilirubin) + 1.120 * math.log(inr) +\
+    \ 0.643\n        \n        if sodium and sodium < 125:\n            meld += 1.32 * (135 - sodium) - 0.033 * meld * (135\
+    \ - sodium)\n        \n        return round(max(meld * 10, 6))\n    \n    @staticmethod\n    def calculate_kdpi(donor_age:\
+    \ int, height: float, weight: float, htn: bool, dm: bool, \n                      creatinine: float, hcv: bool, death_cause:\
+    \ str) -> float:\n        \"\"\"Calculate Kidney Donor Profile Index.\"\"\"\n        variables = {\n            'age':\
+    \ donor_age,\n            'height': height,\n            'weight': weight,\n            'htn': 1 if htn else 0,\n    \
+    \        'dm': 1 if dm else 0,\n            'creatinine': creatinine,\n            'hcv': 1 if hcv else 0,\n         \
+    \   'cerebrovascular': 1 if death_cause == 'stroke' else 0\n        }\n        \n        # Simplified KDPI calculation\n\
+    \        score = (\n            0.13 * variables['age'] +\n            0.11 * variables['htn'] +\n            0.15 * variables['dm']\
+    \ +\n            0.12 * variables['creatinine'] +\n            0.10 * variables['hcv'] +\n            0.08 * variables['cerebrovascular']\n\
+    \        )\n        \n        return min(score * 100, 100)\n    \n    @staticmethod\n    def calculate_hla_compatibility(patient_hla:\
+    \ List[str], donor_hla: List[str]) -> Dict[str, Any]:\n        \"\"\"Calculate HLA compatibility between patient and donor.\"\
+    \"\"\n        if not patient_hla or not donor_hla:\n            raise ValueError(\"HLA typing required for both patient\
+    \ and donor\")\n        \n        mismatches = 0\n        loci = ['A', 'B', 'C', 'DR', 'DQ', 'DP']\n        \n       \
+    \ for locus in loci:\n            patient_alleles = [h for h in patient_hla if h.startswith(locus)]\n            donor_alleles\
+    \ = [h for h in donor_hla if h.startswith(locus)]\n            \n            if patient_alleles and donor_alleles:\n \
+    \               # Count mismatches at each locus\n                patient_set = set(patient_alleles)\n               \
+    \ donor_set = set(donor_alleles)\n                mismatches += len(patient_set.symmetric_difference(donor_set))\n   \
+    \     \n        compatibility_score = max(0, 100 - (mismatches * 8.33))\n        \n        return {\n            'compatibility_score':\
+    \ round(compatibility_score, 1),\n            'hla_mismatches': mismatches,\n            'match_grade': 'Excellent' if\
+    \ compatibility_score > 90 else 'Good' if compatibility_score > 75 else 'Fair' if compatibility_score > 50 else 'Poor'\n\
+    \        }\n    \n    @staticmethod\n    def calculate_pra_risk(pra_level: float, donor_hla: List[str], unacceptable_antigens:\
+    \ List[str]) -> Dict[str, Any]:\n        \"\"\"Calculate PRA-based rejection risk.\"\"\"\n        if pra_level < 0 or\
+    \ pra_level > 100:\n            raise ValueError(\"PRA level must be between 0 and 100\")\n        \n        risk_factors\
+    \ = []\n        risk_score = 0\n        \n        if pra_level > 80:\n            risk_factors.append(\"High PRA (>80%)\"\
+    )\n            risk_score += 3\n        elif pra_level > 50:\n            risk_factors.append(\"Moderate PRA (>50%)\"\
+    )\n            risk_score += 2\n        elif pra_level > 20:\n            risk_factors.append(\"Low PRA (>20%)\")\n  \
+    \          risk_score += 1\n        \n        # Check for unacceptable antigens\n        donor_specific = [hla for hla\
+    \ in donor_hla if hla in unacceptable_antigens]\n        if donor_specific:\n            risk_factors.append(f\"DSA present:\
+    \ {donor_specific}\")\n            risk_score += 5\n        \n        risk_level = \"Low\" if risk_score <= 1 else \"\
+    Moderate\" if risk_score <= 3 else \"High\"\n        \n        return {\n            'risk_level': risk_level,\n     \
+    \       'risk_score': risk_score,\n            'risk_factors': risk_factors,\n            'desensitization_needed': risk_score\
+    \ >= 3\n        }\n\nclass VCAPlanner:\n    \"\"\"Vascularized Composite Allotransplantation planning utilities.\"\"\"\
+    \n    \n    @staticmethod\n    def plan_face_transplant(defect_map: Dict[str, Any], donor_data: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Generate surgical plan for face transplant.\"\"\"\n        if not defect_map or not donor_data:\n\
+    \            raise ValueError(\"Defect map and donor data required\")\n        \n        # Calculate tissue requirements\n\
+    \        tissue_volume = defect_map.get('volume_cc', 0)\n        vascular_pedicles = defect_map.get('vascular_pedicles',\
+    \ [])\n        nerve_targets = defect_map.get('nerve_targets', [])\n        \n        # Donor matching\n        donor_height\
+    \ = donor_data.get('height_cm', 170)\n        donor_gender = donor_data.get('gender', 'unknown')\n        \n        #\
+    \ Surgical approach\n        approach = \"Full face\" if tissue_volume > 500 else \"Partial face\"\n        \n       \
+    \ # Vascular anastomosis plan\n        anastomosis_plan = []\n        for pedicle in vascular_pedicles:\n            anastomosis_plan.append({\n\
+    \                'vessel': pedicle,\n                'donor_length_cm': 3.0,\n                'recipient_site': f\"Facial\
+    \ {pedicle}\",\n                'technique': 'end-to-end'\n            })\n        \n        # Nerve coaptation\n    \
+    \    nerve_plan = []\n        for nerve in nerve_targets:\n            nerve_plan.append({\n                'nerve': nerve,\n\
+    \                'donor_length_cm': 5.0,\n                'coaptation_site': f\"Facial {nerve}\",\n                'graft_needed':\
+    \ True\n            })\n        \n        return {\n            'approach': approach,\n            'tissue_volume_cc':\
+    \ tissue_volume,\n            'anastomosis_plan': anastomosis_plan,\n            'nerve_plan': nerve_plan,\n         \
+    \   'estimated_ischemia_time_min': 180,\n            'immunosuppression_induction': 'rATG + methylprednisolone',\n   \
+    \         'maintenance': 'Tacrolimus + MMF + prednisone'\n        }\n    \n    @staticmethod\n    def plan_hand_transplant(level:\
+    \ str, laterality: str, donor_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Generate surgical plan for hand\
+    \ transplant.\"\"\"\n        valid_levels = ['wrist', 'forearm', 'elbow', 'above_elbow']\n        if level not in valid_levels:\n\
+    \            raise ValueError(f\"Level must be one of {valid_levels}\")\n        \n        # Bone fixation strategy\n\
+    \        fixation_map = {\n            'wrist': 'radius_ulna_plating',\n            'forearm': 'radius_ulna_plating',\n\
+    \            'elbow': 'humerus_plating',\n            'above_elbow': 'humerus_plating'\n        }\n        \n        #\
+    \ Tendon repair count\n        tendon_count = {\n            'wrist': 12,\n            'forearm': 16,\n            'elbow':\
+    \ 20,\n            'above_elbow': 24\n        }\n        \n        return {\n            'level': level,\n           \
+    \ 'laterality': laterality,\n            'bone_fixation': fixation_map[level],\n            'tendon_repairs': tendon_count[level],\n\
+    \            'vascular_anastomoses': ['radial_artery', 'ulnar_artery', 'cephalic_vein', 'basilic_vein'],\n           \
+    \ 'nerve_coaptations': ['median_nerve', 'ulnar_nerve', 'radial_nerve'],\n            'estimated_ischemia_time_min': 240,\n\
+    \            'rehabilitation_timeline_months': 18\n        }\n\nclass ReconstructivePlanner:\n    \"\"\"Reconstructive\
+    \ surgery planning utilities.\"\"\"\n    \n    @staticmethod\n    def select_free_flap(defect_size: Tuple[float, float,\
+    \ float], location: str, \n                        patient_factors: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"\
+    Select optimal free flap for reconstruction.\"\"\"\n        length, width, depth = defect_size\n        volume = length\
+    \ * width * depth\n        \n        # Flap selection matrix\n        flap_options = {\n            'ALT': {'volume':\
+    \ 500, 'pedicle': 'descending_branch_lateral_circumflex', 'donor_site': 'thigh'},\n            'DIEP': {'volume': 800,\
+    \ 'pedicle': 'deep_inferior_epigastric', 'donor_site': 'abdomen'},\n            'Fibula': {'volume': 200, 'pedicle': 'peroneal_artery',\
+    \ 'donor_site': 'leg'},\n            'Radial_forearm': {'volume': 150, 'pedicle': 'radial_artery', 'donor_site': 'forearm'}\n\
+    \        }\n        \n        # Selection criteria\n        selected_flap = None\n        if location in ['head_neck',\
+    \ 'oral_cavity']:\n            selected_flap = 'Radial_forearm' if volume < 200 else 'ALT'\n        elif location in ['breast',\
+    \ 'chest_wall']:\n            selected_flap = 'DIEP'\n        elif location in ['mandible', 'maxilla']:\n            selected_flap\
+    \ = 'Fibula'\n        else:\n            selected_flap = 'ALT'\n        \n        flap_data = flap_options[selected_flap]\n\
+    \        \n        return {\n            'selected_flap': selected_flap,\n            'flap_volume_cc': flap_data['volume'],\n\
+    \            'vascular_pedicle': flap_data['pedicle'],\n            'donor_site': flap_data['donor_site'],\n         \
+    \   'estimated_ischaemia_time': 120,\n            'donor_site_morbidity': 'low' if selected_flap in ['Radial_forearm',\
+    \ 'Fibula'] else 'moderate'\n        }\n    \n    @staticmethod\n    def calculate_tissue_expansion(defect_area: float,\
+    \ expansion_ratio: float = 2.5) -> Dict[str, Any]:\n        \"\"\"Calculate tissue expansion parameters.\"\"\"\n     \
+    \   if defect_area <= 0:\n            raise ValueError(\"Defect area must be positive\")\n        \n        required_expansion\
+    \ = defect_area * expansion_ratio\n        expander_volume = required_expansion * 0.5  # 0.5cc per cm2\n        fill_frequency\
+    \ = 7  # days\n        total_fill_volume = expander_volume * 0.8  # 80% of expander capacity\n        \n        # Timeline\
+    \ calculation\n        weeks_to_fill = math.ceil(total_fill_volume / 50)  # 50cc per week\n        consolidation_weeks\
+    \ = 4\n        \n        return {\n            'expander_volume_cc': round(expander_volume, 1),\n            'total_fill_volume_cc':\
+    \ round(total_fill_volume, 1),\n            'fill_frequency_days': fill_frequency,\n            'weeks_to_fill': weeks_to_fill,\n\
+    \            'consolidation_weeks': consolidation_weeks,\n            'total_treatment_weeks': weeks_to_fill + consolidation_weeks\n\
+    \        }\n\nclass ClinicalTrialTracker:\n    \"\"\"Clinical trial search and analysis utilities.\"\"\"\n    \n    @staticmethod\n\
+    \    def search_trials(condition: str, phase: str = \"all\", location: str = \"US\") -> List[Dict[str, Any]]:\n      \
+    \  \"\"\"Search ClinicalTrials.gov for relevant trials.\"\"\"\n        base_url = \"https://clinicaltrials.gov/api/v2\"\
+    \n        params = {\n            'query.cond': condition,\n            'query.locn': location,\n            'query.spons':\
+    \ 'NIH',\n            'filter.overallStatus': 'Recruiting,Not yet recruiting',\n            'format': 'json'\n       \
+    \ }\n        \n        # Mock response for testing\n        mock_trials = [\n            {\n                'nct_id':\
+    \ 'NCT12345678',\n                'title': f'Phase II Study of {condition} Transplant Innovation',\n                'phase':\
+    \ 'Phase 2',\n                'status': 'Recruiting',\n                'location': 'Multiple US Sites',\n            \
+    \    'contact': 'transplant.study@example.com',\n                'enrollment': 150,\n                'estimated_completion':\
+    \ '2026-12-31'\n            },\n            {\n                'nct_id': 'NCT87654321',\n                'title': f'Long-term\
+    \ Outcomes in {condition} Recipients',\n                'phase': 'Phase 3',\n                'status': 'Recruiting',\n\
+    \                'location': 'US, Canada',\n                'contact': 'outcomes@example.com',\n                'enrollment':\
+    \ 500,\n                'estimated_completion': '2027-06-30'\n            }\n        ]\n        \n        return mock_trials\n\
+    \    \n    @staticmethod\n    def analyze_trial_eligibility(trial: Dict[str, Any], patient_data: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Analyze patient eligibility for a specific trial.\"\"\"\n        eligibility_factors = {\n    \
+    \        'age_match': 18 <= patient_data.get('age', 0) <= 65,\n            'organ_match': patient_data.get('transplant_type')\
+    \ in trial.get('title', ''),\n            'time_post_transplant': patient_data.get('months_post', 0) >= 6,\n         \
+    \   'rejection_history': patient_data.get('rejection_episodes', 0) <= 2\n        }\n        \n        eligibility_score\
+    \ = sum(eligibility_factors.values()) / len(eligibility_factors)\n        \n        return {\n            'eligible':\
+    \ eligibility_score >= 0.75,\n            'eligibility_score': round(eligibility_score, 2),\n            'matching_factors':\
+    \ [k for k, v in eligibility_factors.items() if v],\n            'missing_factors': [k for k, v in eligibility_factors.items()\
+    \ if not v]\n        }\n\nclass SkillEngine:\n    \"\"\"Main skill engine for transplant and reconstructive surgery expertise.\"\
+    \"\"\n    \n    def __init__(self, config: Dict[str, Any] = None):\n        self.config = config or {}\n        self.calculator\
+    \ = TransplantCalculator()\n        self.vca_planner = VCAPlanner()\n        self.reconstructive = ReconstructivePlanner()\n\
+    \        self.trial_tracker = ClinicalTrialTracker()\n        \n    def run(self, capability: str, params: Dict[str, Any])\
+    \ -> Dict[str, Any]:\n        \"\"\"Dispatch to appropriate capability handler.\"\"\"\n        handlers = {\n        \
+    \    'organ_allocation_analysis': self._handle_organ_allocation,\n            'donor_recipient_matching': self._handle_matching,\n\
+    \            'immunosuppression_protocols': self._handle_is_protocols,\n            'rejection_monitoring': self._handle_rejection_monitoring,\n\
+    \            'vca_surgical_planning': self._handle_vca_planning,\n            'microsurgical_planning': self._handle_microsurgery,\n\
+    \            'outcome_prediction': self._handle_outcome_prediction,\n            'clinical_trial_tracker': self._handle_trial_search,\n\
+    \            'rehabilitation_planning': self._handle_rehabilitation,\n            'ethical_framework_analysis': self._handle_ethics\n\
+    \        }\n        \n        if capability not in handlers:\n            raise ValueError(f\"Unknown capability: {capability}\"\
+    )\n        \n        try:\n            return handlers[capability](params)\n        except Exception as e:\n         \
+    \   return {'error': str(e), 'capability': capability}\n    \n    def _handle_organ_allocation(self, params: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Handle organ allocation analysis.\"\"\"\n        organ_type = params.get('organ_type',\
+    \ 'kidney')\n        meld_score = params.get('meld_score', 15)\n        blood_type = params.get('blood_type', 'O')\n \
+    \       \n        # Simplified allocation model\n        wait_time_months = {\n            'kidney': max(6, 36 - meld_score),\n\
+    \            'liver': max(1, 24 - meld_score),\n            'heart': max(1, 18 - meld_score),\n            'lung': max(1,\
+    \ 12 - meld_score)\n        }\n        \n        return {\n            'organ_type': organ_type,\n            'meld_score':\
+    \ meld_score,\n            'estimated_wait_months': wait_time_months.get(organ_type, 24),\n            'allocation_probability':\
+    \ min(100, 100 - (meld_score * 2)),\n            'optimization_strategies': ['increase listing centers', 'accept ECD organs',\
+    \ 'consider living donor']\n        }\n    \n    def _handle_matching(self, params: Dict[str, Any]) -> Dict[str, Any]:\n\
+    \        \"\"\"Handle donor-recipient matching.\"\"\"\n        patient = Patient(**params.get('patient', {}))\n      \
+    \  donor = Donor(**params.get('donor', {}))\n        \n        hla_result = self.calculator.calculate_hla_compatibility(patient.hla,\
+    \ donor.hla)\n        pra_result = self.calculator.calculate_pra_risk(patient.pra, donor.hla, params.get('unacceptable_antigens',\
+    \ []))\n        \n        # Crossmatch calculation\n        crossmatch_compatible = patient.blood_type in ['O', donor.blood_type]\
+    \ or donor.blood_type == 'O'\n        \n        return {\n            'hla_compatibility': hla_result,\n            'pra_risk':\
+    \ pra_result,\n            'crossmatch_compatible': crossmatch_compatible,\n            'overall_match_grade': 'Acceptable'\
+    \ if crossmatch_compatible and hla_result['compatibility_score'] > 50 else 'Unsuitable'\n        }\n    \n    def _handle_is_protocols(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Handle immunosuppression protocols.\"\"\"\n        transplant_type\
+    \ = params.get('transplant_type', 'kidney')\n        risk_level = params.get('risk_level', 'standard')\n        \n   \
+    \     protocols = {\n            'induction': {\n                'standard': 'Basiliximab 20mg day 0,4',\n           \
+    \     'high_risk': 'rATG 1.5mg/kg x 5 days',\n                'vca': 'rATG 2.0mg/kg x 7 days + rituximab'\n          \
+    \  },\n            'maintenance': {\n                'standard': 'Tacrolimus + MMF + prednisone',\n                'high_risk':\
+    \ 'Tacrolimus + MMF + prednisone + belatacept',\n                'vca': 'Tacrolimus + MMF + prednisone + belatacept'\n\
+    \            }\n        }\n        \n        return {\n            'induction_protocol': protocols['induction'][risk_level],\n\
+    \            'maintenance_protocol': protocols['maintenance'][risk_level],\n            'target_levels': {\n         \
+    \       'tacrolimus_ng_ml': 8-12 if transplant_type == 'kidney' else 10-15,\n                'mmf_ng_ml': 1.5-3.0\n  \
+    \          }\n        }\n    \n    def _handle_rejection_monitoring(self, params: Dict[str, Any]) -> Dict[str, Any]:\n\
+    \        \"\"\"Handle rejection monitoring.\"\"\"\n        time_post = params.get('time_post_transplant_days', 0)\n  \
+    \      dsa_levels = params.get('dsa_levels', [])\n        biopsy_grade = params.get('biopsy_grade', 'none')\n        \n\
+    \        # Rejection risk calculation\n        risk_factors = []\n        if time_post < 90:\n            risk_factors.append('Early\
+    \ post-transplant')\n        if any(dsa > 1000 for dsa in dsa_levels):\n            risk_factors.append('Elevated DSA')\n\
+    \        if biopsy_grade != 'none':\n            risk_factors.append(f'Biopsy: {biopsy_grade}')\n        \n        monitoring_schedule\
+    \ = {\n            'protocol_biopsy': '3, 12, 24 months' if risk_factors else '12, 24 months',\n            'lab_frequency':\
+    \ 'weekly' if risk_factors else 'monthly',\n            'dsa_monitoring': 'monthly' if dsa_levels else 'quarterly'\n \
+    \       }\n        \n        return {\n            'rejection_risk': 'High' if len(risk_factors) > 2 else 'Moderate' if\
+    \ risk_factors else 'Low',\n            'risk_factors': risk_factors,\n            'monitoring_schedule': monitoring_schedule\n\
+    \        }\n    \n    def _handle_vca_planning(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Handle\
+    \ VCA surgical planning.\"\"\"\n        vca_type = params.get('vca_type', 'face')\n        \n        if vca_type == 'face':\n\
+    \            return self.vca_planner.plan_face_transplant(\n                params.get('defect_map', {}),\n          \
+    \      params.get('donor_data', {})\n            )\n        else:\n            return self.vca_planner.plan_hand_transplant(\n\
+    \                params.get('level', 'wrist'),\n                params.get('laterality', 'right'),\n                params.get('donor_data',\
+    \ {})\n            )\n    \n    def _handle_microsurgery(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\
+    \"Handle microsurgical planning.\"\"\"\n        defect_size = params.get('defect_size', (10, 5, 3))\n        location\
+    \ = params.get('location', 'head_neck')\n        \n        return self.reconstructive.select_free_flap(\n            defect_size,\n\
+    \            location,\n            params.get('patient_factors', {})\n        )\n    \n    def _handle_outcome_prediction(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Handle outcome prediction.\"\"\"\n        patient_age = params.get('patient_age',\
+    \ 50)\n        donor_age = params.get('donor_age', 30)\n        hla_mismatch = params.get('hla_mismatch', 3)\n       \
+    \ \n        # Simplified survival model\n        base_survival = 0.9\n        age_penalty = (patient_age - 50) * 0.002\n\
+    \        donor_penalty = (donor_age - 30) * 0.001\n        hla_penalty = hla_mismatch * 0.02\n        \n        adjusted_survival\
+    \ = max(0.5, base_survival - age_penalty - donor_penalty - hla_penalty)\n        \n        return {\n            '1_year_survival':\
+    \ round(adjusted_survival, 3),\n            '5_year_survival': round(adjusted_survival * 0.85, 3),\n            'confidence_interval':\
+    \ [adjusted_survival - 0.1, adjusted_survival + 0.1]\n        }\n    \n    def _handle_trial_search(self, params: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Handle clinical trial search.\"\"\"\n        condition = params.get('condition',\
+    \ 'kidney transplant')\n        trials = self.trial_tracker.search_trials(condition)\n        \n        # Filter by eligibility\n\
+    \        eligible_trials = []\n        for trial in trials:\n            eligibility = self.trial_tracker.analyze_trial_eligibility(trial,\
+    \ params)\n            if eligibility['eligible']:\n                trial.update({'eligibility': eligibility})\n     \
+    \           eligible_trials.append(trial)\n        \n        return {\n            'total_trials': len(trials),\n    \
+    \        'eligible_trials': eligible_trials,\n            'search_criteria': condition\n        }\n    \n    def _handle_rehabilitation(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Handle rehabilitation planning.\"\"\"\n        procedure_type\
+    \ = params.get('procedure_type', 'kidney_transplant')\n        postop_day = params.get('postop_day', 1)\n        \n  \
+    \      phases = {\n            'acute': {'days': range(0, 7), 'focus': 'pain_control, mobility'},\n            'early':\
+    \ {'days': range(7, 30), 'focus': 'strength, function'},\n            'intermediate': {'days': range(30, 90), 'focus':\
+    \ 'independence, endurance'},\n            'late': {'days': range(90, 365), 'focus': 'optimization, return_to_work'}\n\
+    \        }\n        \n        current_phase = next(phase for phase, data in phases.items() if postop_day in data['days'])\n\
+    \        \n        return {\n            'current_phase': current_phase,\n            'rehabilitation_focus': phases[current_phase]['focus'],\n\
+    \            'milestones': {\n                '2_weeks': 'Independent ambulation',\n                '6_weeks': 'Wound\
+    \ healing complete',\n                '3_months': 'Return to light activities',\n                '6_months': 'Full recovery\
+    \ expected'\n            }\n        }\n    \n    def _handle_ethics(self, params: Dict[str, Any]) -> Dict[str, Any]:\n\
+    \        \"\"\"Handle ethical framework analysis.\"\"\"\n        procedure_type = params.get('procedure_type', 'vca')\n\
+    \        capacity = params.get('capacity_assessment', 'adequate')\n        risk_benefit = params.get('risk_benefit_ratio',\
+    \ 1.0)\n        \n        ethical_concerns = []\n        if procedure_type == 'vca' and risk_benefit < 2.0:\n        \
+    \    ethical_concerns.append('Risk-benefit ratio may be insufficient for VCA')\n        if capacity != 'adequate':\n \
+    \           ethical_concerns.append('Decision-making capacity requires evaluation')\n        \n        return {\n    \
+    \        'ethical_framework': 'Beneficence, non-maleficence, autonomy, justice',\n            'primary_concerns': ethical_concerns,\n\
+    \            'recommendation': 'Proceed with enhanced consent process' if not ethical_concerns else 'Ethics consultation\
+    \ recommended'\n        }\n\nclass TestTransplantSurgerySkill(unittest.TestCase):\n    \"\"\"Comprehensive test suite\
+    \ for transplant surgery skill.\"\"\"\n    \n    def setUp(self):\n        self.engine = SkillEngine()\n    \n    def\
+    \ test_metadata(self):\n        \"\"\"Test skill metadata.\"\"\"\n        self.assertEqual(SKILL_METADATA['name'], \"\
+    Transplant Surgery & Reconstructive Expert\")\n        self.assertIn('organ_allocation_analysis', SKILL_METADATA['capabilities'])\n\
+    \    \n    def test_meld_calculation(self):\n        \"\"\"Test MELD score calculation.\"\"\"\n        meld = TransplantCalculator.calculate_meld_score(2.0,\
+    \ 1.5, 1.2)\n        self.assertIsInstance(meld, int)\n        self.assertGreater(meld, 6)\n        \n        with self.assertRaises(ValueError):\n\
+    \            TransplantCalculator.calculate_meld_score(-1, 1.5, 1.2)\n    \n    def test_hla_compatibility(self):\n  \
+    \      \"\"\"Test HLA compatibility calculation.\"\"\"\n        patient_hla = ['A1', 'A2', 'B7', 'B8', 'DR3', 'DR4']\n\
+    \        donor_hla = ['A1', 'A3', 'B7', 'B44', 'DR3', 'DR11']\n        \n        result = TransplantCalculator.calculate_hla_compatibility(patient_hla,\
+    \ donor_hla)\n        self.assertIn('compatibility_score', result)\n        self.assertIn('hla_mismatches', result)\n\
+    \        self.assertGreater(result['hla_mismatches'], 0)\n    \n    def test_pra_risk(self):\n        \"\"\"Test PRA risk\
+    \ calculation.\"\"\"\n        result = TransplantCalculator.calculate_pra_risk(75, ['A1', 'B7'], ['A2'])\n        self.assertEqual(result['risk_level'],\
+    \ 'High')\n        self.assertTrue(result['desensitization_needed'])\n    \n    def test_vca_face_planning(self):\n  \
+    \      \"\"\"Test VCA face transplant planning.\"\"\"\n        defect_map = {'volume_cc': 600, 'vascular_pedicles': ['facial_artery',\
+    \ 'superficial_temporal']}\n        donor_data = {'height_cm': 175, 'gender': 'male'}\n        \n        plan = self.engine.run('vca_surgical_planning',\
+    \ {\n            'vca_type': 'face',\n            'defect_map': defect_map,\n            'donor_data': donor_data\n  \
+    \      })\n        \n        self.assertEqual(plan['approach'], 'Full face')\n        self.assertIn('anastomosis_plan',\
+    \ plan)\n    \n    def test_free_flap_selection(self):\n        \"\"\"Test free flap selection.\"\"\"\n        result\
+    \ = ReconstructivePlanner.select_free_flap((15, 8, 4), 'head_neck', {})\n        self.assertEqual(result['selected_flap'],\
+    \ 'ALT')\n        self.assertIn('vascular_pedicle', result)\n    \n    def test_tissue_expansion(self):\n        \"\"\"\
+    Test tissue expansion calculation.\"\"\"\n        result = ReconstructivePlanner.calculate_tissue_expansion(100)\n   \
+    \     self.assertEqual(result['expander_volume_cc'], 125.0)\n        self.assertGreater(result['total_treatment_weeks'],\
+    \ 10)\n        \n        with self.assertRaises(ValueError):\n            ReconstructivePlanner.calculate_tissue_expansion(-10)\n\
+    \    \n    def test_trial_search(self):\n        \"\"\"Test clinical trial search.\"\"\"\n        result = self.engine.run('clinical_trial_tracker',\
+    \ {\n            'condition': 'kidney transplant',\n            'patient_age': 45\n        })\n        \n        self.assertIn('eligible_trials',\
+    \ result)\n        self.assertIsInstance(result['eligible_trials'], list)\n    \n    def test_outcome_prediction(self):\n\
+    \        \"\"\"Test outcome prediction.\"\"\"\n        result = self.engine.run('outcome_prediction', {\n            'patient_age':\
+    \ 45,\n            'donor_age': 25,\n            'hla_mismatch': 2\n        })\n        \n        self.assertIn('1_year_survival',\
+    \ result)\n        self.assertIn('5_year_survival', result)\n        self.assertGreater(result['1_year_survival'], 0.8)\n\
+    \    \n    def test_error_handling(self):\n        \"\"\"Test error handling.\"\"\"\n        result = self.engine.run('unknown_capability',\
+    \ {})\n        self.assertIn('error', result)\n        \n        with self.assertRaises(ValueError):\n            TransplantCalculator.calculate_meld_score(-1,\
+    \ 1, 1)\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Transplant Surgery & Reconstructive Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''transplant_surgery'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

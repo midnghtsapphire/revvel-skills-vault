@@ -1,0 +1,60 @@
+name: daily-recap
+title: Daily Recap
+version: 1.0.2
+description: Generate a daily recap image with your agent holding a posterboard of accomplishments. Cron-driven, weather-aware,
+  customizable to any agent identity.
+metadata:
+  author: dbhurley
+  category: Media & Content
+  tags:
+  - media-content
+  - daily
+  - recap
+  source: clawhub-community
+  clawhub_slug: daily-recap
+  clawhub_path: dbhurley/daily-recap
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Recap
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install daily-recap
+
+    # Path: dbhurley/daily-recap
+
+
+    ## Description
+
+    Generate a daily recap image with your agent holding a posterboard of accomplishments. Cron-driven, weather-aware, customizable
+    to any agent identity.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdhub.json
+
+    - cron-template.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-recap
+
+    ```'
+examples:
+- description: Install Daily Recap from ClawHub
+  usage: clawhub install daily-recap
+schema_version: '1.0'

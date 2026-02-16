@@ -1,0 +1,73 @@
+name: search-openclaw-docs
+title: OpenClaw Docs Search + Config Patterns
+version: 1.1.0
+description: MANDATORY before any openclaw.json changes. Prevents config breakage via embedded anti-patterns and correct patterns.
+  Use when configuring OpenClaw (bindings, channels, sessions, cron, heartbeat) or troubleshooting config issues.
+metadata:
+  author: karmanverma
+  category: Search & Research
+  tags:
+  - search-research
+  - search
+  - openclaw
+  - docs
+  source: clawhub-community
+  clawhub_slug: search-openclaw-docs
+  clawhub_path: karmanverma/search-openclaw-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Docs Search + Config Patterns
+
+    # Source: ClawHub community skill by karmanverma
+
+    # Install: clawhub install search-openclaw-docs
+
+    # Path: karmanverma/search-openclaw-docs
+
+
+    ## Description
+
+    MANDATORY before any openclaw.json changes. Prevents config breakage via embedded anti-patterns and correct patterns.
+    Use when configuring OpenClaw (bindings, channels, sessions, cron, heartbeat) or troubleshooting config issues.
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - POST_INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - lib/indexer.js
+
+    - lib/metadata.js
+
+    - lib/search.js
+
+    - references/best-practices-config.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install search-openclaw-docs
+
+    ```'
+examples:
+- description: Install OpenClaw Docs Search + Config Patterns from ClawHub
+  usage: clawhub install search-openclaw-docs
+schema_version: '1.0'

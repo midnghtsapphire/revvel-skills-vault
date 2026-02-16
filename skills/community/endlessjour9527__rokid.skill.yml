@@ -1,0 +1,69 @@
+name: lingzhu
+title: lingzhu
+version: 0.0.4
+description: 灵珠平台接入 - 将 openclaw 接入灵珠智能体平台，并且可以使用lingzhu的设备命令
+metadata:
+  author: endlessjour9527
+  category: General
+  tags:
+  - general
+  - lingzhu
+  source: clawhub-community
+  clawhub_slug: rokid
+  clawhub_path: endlessjour9527/rokid
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# lingzhu
+
+    # Source: ClawHub community skill by endlessjour9527
+
+    # Install: clawhub install rokid
+
+    # Path: endlessjour9527/rokid
+
+
+    ## Description
+
+    灵珠平台接入 - 将 openclaw 接入灵珠智能体平台，并且可以使用lingzhu的设备命令
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - extension/README.md
+
+    - extension/index.ts
+
+    - extension/moltbot.plugin.json
+
+    - extension/openclaw.plugin.json
+
+    - extension/package.json
+
+    - extension/src/cli.ts
+
+    - extension/src/config.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rokid
+
+    ```'
+examples:
+- description: Install lingzhu from ClawHub
+  usage: clawhub install rokid
+schema_version: '1.0'

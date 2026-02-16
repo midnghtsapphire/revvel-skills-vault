@@ -1,0 +1,56 @@
+name: book-handyman
+title: Book Handyman
+version: 1.0.1
+description: Book handyman services through Lokuli MCP. Use when user needs to find and book handyman. Triggers on requests
+  like "book a handyman", "find handyman near me", or any handyman service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - handyman
+  source: clawhub-community
+  clawhub_slug: book-handyman
+  clawhub_path: edwardrodriguez703-design/book-handyman
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Handyman
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-handyman
+
+    # Path: edwardrodriguez703-design/book-handyman
+
+
+    ## Description
+
+    Book handyman services through Lokuli MCP. Use when user needs to find and book handyman. Triggers on requests like "book
+    a handyman", "find handyman near me", or any handyman service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-handyman
+
+    ```'
+examples:
+- description: Install Book Handyman from ClawHub
+  usage: clawhub install book-handyman
+schema_version: '1.0'

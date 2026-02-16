@@ -1,0 +1,66 @@
+name: image-optimizer
+title: Image Optimizer
+version: 1.0.1
+description: Get AI-powered image optimization suggestions. Use when images are slowing your site.
+metadata:
+  author: lxgicstudios
+  category: Media & Content
+  tags:
+  - media-content
+  - image
+  - optimizer
+  source: clawhub-community
+  clawhub_slug: image-optimize
+  clawhub_path: lxgicstudios/image-optimize
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Image Optimizer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install image-optimize
+
+    # Path: lxgicstudios/image-optimize
+
+
+    ## Description
+
+    Get AI-powered image optimization suggestions. Use when images are slowing your site.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install image-optimize
+
+    ```'
+examples:
+- description: Install Image Optimizer from ClawHub
+  usage: clawhub install image-optimize
+schema_version: '1.0'

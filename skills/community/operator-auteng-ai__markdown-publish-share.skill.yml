@@ -1,0 +1,61 @@
+name: markdown-publish-share
+title: Markdown Publish & Share
+version: 1.0.5
+description: Publish markdown and return share links using curl. Support markdown with mermaid diagrams such as component
+  diagrams, flowcharts, and sequence diagrams. Also supports KaTex and code blocks. AutEng will return a shareable link to
+  the published rendered document. Use cases include Software Architectu
+metadata:
+  author: operator-auteng-ai
+  category: Development & Coding
+  tags:
+  - development-coding
+  - markdown
+  - publish
+  - share
+  source: clawhub-community
+  clawhub_slug: markdown-publish-share
+  clawhub_path: operator-auteng-ai/markdown-publish-share
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Markdown Publish & Share
+
+    # Source: ClawHub community skill by operator-auteng-ai
+
+    # Install: clawhub install markdown-publish-share
+
+    # Path: operator-auteng-ai/markdown-publish-share
+
+
+    ## Description
+
+    Publish markdown and return share links using curl. Support markdown with mermaid diagrams such as component diagrams,
+    flowcharts, and sequence diagrams. Also supports KaTex and code blocks. AutEng will return a shareable link to the published
+    rendered document. Use cases include Software Architectu
+
+
+    ## Files
+
+    - SKILL.md
+
+    - VERSION.txt
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install markdown-publish-share
+
+    ```'
+examples:
+- description: Install Markdown Publish & Share from ClawHub
+  usage: clawhub install markdown-publish-share
+schema_version: '1.0'

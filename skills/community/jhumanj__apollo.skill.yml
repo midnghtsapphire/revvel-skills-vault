@@ -1,0 +1,65 @@
+name: apollo
+title: Apollo
+version: 1.0.0
+description: Interact with Apollo.io REST API (people/org enrichment, search, lists).
+metadata:
+  author: jhumanj
+  category: Search & Research
+  tags:
+  - search-research
+  - apollo
+  source: clawhub-community
+  clawhub_slug: apollo
+  clawhub_path: jhumanj/apollo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apollo
+
+    # Source: ClawHub community skill by jhumanj
+
+    # Install: clawhub install apollo
+
+    # Path: jhumanj/apollo
+
+
+    ## Description
+
+    Interact with Apollo.io REST API (people/org enrichment, search, lists).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/apollo-config.sh
+
+    - scripts/apollo-enrich-website.sh
+
+    - scripts/apollo-get.sh
+
+    - scripts/apollo-orgs-bulk.sh
+
+    - scripts/apollo-people-search.sh
+
+    - scripts/apollo-post.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apollo
+
+    ```'
+examples:
+- description: Install Apollo from ClawHub
+  usage: clawhub install apollo
+schema_version: '1.0'

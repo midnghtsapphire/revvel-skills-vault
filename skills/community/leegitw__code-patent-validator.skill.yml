@@ -1,0 +1,57 @@
+name: code_patent_validator
+title: Code Patent Validator
+version: 1.1.1
+description: Turn your code scan findings into search queries — research existing implementations before consulting an attorney.
+  NOT legal advice.
+metadata:
+  author: leegitw
+  category: Search & Research
+  tags:
+  - search-research
+  - code
+  - patent
+  - validator
+  source: clawhub-community
+  clawhub_slug: code-patent-validator
+  clawhub_path: leegitw/code-patent-validator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Code Patent Validator
+
+    # Source: ClawHub community skill by leegitw
+
+    # Install: clawhub install code-patent-validator
+
+    # Path: leegitw/code-patent-validator
+
+
+    ## Description
+
+    Turn your code scan findings into search queries — research existing implementations before consulting an attorney. NOT
+    legal advice.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install code-patent-validator
+
+    ```'
+examples:
+- description: Install Code Patent Validator from ClawHub
+  usage: clawhub install code-patent-validator
+schema_version: '1.0'

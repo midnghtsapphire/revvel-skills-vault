@@ -1,0 +1,56 @@
+name: scientific_article_pdf_generator
+title: Scientific Article PDF Generator
+version: 1.0.0
+description: Generate publication-ready scientific articles in PDF format with AI-powered research and citations
+metadata:
+  author: galizki
+  category: Search & Research
+  tags:
+  - search-research
+  - scientific
+  - article
+  - pdf
+  - generator
+  source: clawhub-community
+  clawhub_slug: paper-evoweb-ai
+  clawhub_path: galizki/paper-evoweb-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Scientific Article PDF Generator
+
+    # Source: ClawHub community skill by galizki
+
+    # Install: clawhub install paper-evoweb-ai
+
+    # Path: galizki/paper-evoweb-ai
+
+
+    ## Description
+
+    Generate publication-ready scientific articles in PDF format with AI-powered research and citations
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paper-evoweb-ai
+
+    ```'
+examples:
+- description: Install Scientific Article PDF Generator from ClawHub
+  usage: clawhub install paper-evoweb-ai
+schema_version: '1.0'

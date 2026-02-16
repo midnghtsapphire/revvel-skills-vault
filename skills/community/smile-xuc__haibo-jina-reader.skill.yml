@@ -1,0 +1,62 @@
+name: jina-reader
+title: Jina Reader
+version: 1.0.0
+description: Extract clean, readable markdown content from any URL using Jina Reader API. Use when you need to fetch and parse
+  web pages without dealing with HTML, JavaScript rendering, or paywalls. Ideal for research, article summarization, content
+  analysis, and working with search results from tavily-search, w
+metadata:
+  author: smile-xuc
+  category: Search & Research
+  tags:
+  - search-research
+  - jina
+  - reader
+  source: clawhub-community
+  clawhub_slug: haibo-jina-reader
+  clawhub_path: smile-xuc/haibo-jina-reader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jina Reader
+
+    # Source: ClawHub community skill by smile-xuc
+
+    # Install: clawhub install haibo-jina-reader
+
+    # Path: smile-xuc/haibo-jina-reader
+
+
+    ## Description
+
+    Extract clean, readable markdown content from any URL using Jina Reader API. Use when you need to fetch and parse web
+    pages without dealing with HTML, JavaScript rendering, or paywalls. Ideal for research, article summarization, content
+    analysis, and working with search results from tavily-search, w
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/jina-reader.py
+
+    - scripts/jina-reader.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install haibo-jina-reader
+
+    ```'
+examples:
+- description: Install Jina Reader from ClawHub
+  usage: clawhub install haibo-jina-reader
+schema_version: '1.0'

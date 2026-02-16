@@ -1,0 +1,55 @@
+name: show-ip
+title: Show IP
+version: 1.0.0
+description: Show the current public IP address of the server. Use when asked about IP, public IP, or network identity.
+metadata:
+  author: ericsantos
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - show
+  source: clawhub-community
+  clawhub_slug: show-ip
+  clawhub_path: ericsantos/show-ip
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Show IP
+
+    # Source: ClawHub community skill by ericsantos
+
+    # Install: clawhub install show-ip
+
+    # Path: ericsantos/show-ip
+
+
+    ## Description
+
+    Show the current public IP address of the server. Use when asked about IP, public IP, or network identity.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/get-ip.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install show-ip
+
+    ```'
+examples:
+- description: Install Show IP from ClawHub
+  usage: clawhub install show-ip
+schema_version: '1.0'

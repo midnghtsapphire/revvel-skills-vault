@@ -1,0 +1,70 @@
+name: moltguard
+title: MoltGuard
+version: 5.0.2
+description: Detect and block prompt injection attacks hidden in long content (emails, web pages, documents) using the MoltGuard
+  API
+metadata:
+  author: thomaslwang
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - moltguard
+  source: clawhub-community
+  clawhub_slug: moltguard
+  clawhub_path: thomaslwang/moltguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MoltGuard
+
+    # Source: ClawHub community skill by thomaslwang
+
+    # Install: clawhub install moltguard
+
+    # Path: thomaslwang/moltguard
+
+
+    ## Description
+
+    Detect and block prompt injection attacks hidden in long content (emails, web pages, documents) using the MoltGuard API
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.test.ts
+
+    - index.ts
+
+    - openclaw.plugin.json
+
+    - package-lock.json
+
+    - package.json
+
+    - test-injection.ts
+
+    - tsconfig.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltguard
+
+    ```'
+examples:
+- description: Install MoltGuard from ClawHub
+  usage: clawhub install moltguard
+schema_version: '1.0'

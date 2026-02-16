@@ -1,0 +1,57 @@
+name: task
+title: Task
+version: 0.1.0
+description: Tasker docstore task management via tool-dispatch. Use for task lists, due today/overdue, week planning, add/move/complete,
+  or explicit /task commands.
+metadata:
+  author: amirbrooks
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - task
+  source: clawhub-community
+  clawhub_slug: task
+  clawhub_path: amirbrooks/task
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Task
+
+    # Source: ClawHub community skill by amirbrooks
+
+    # Install: clawhub install task
+
+    # Path: amirbrooks/task
+
+
+    ## Description
+
+    Tasker docstore task management via tool-dispatch. Use for task lists, due today/overdue, week planning, add/move/complete,
+    or explicit /task commands.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install task
+
+    ```'
+examples:
+- description: Install Task from ClawHub
+  usage: clawhub install task
+schema_version: '1.0'

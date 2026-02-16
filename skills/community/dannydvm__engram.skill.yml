@@ -1,0 +1,57 @@
+name: engram
+title: Engram
+version: 0.2.1
+description: Persistent semantic memory layer for AI agents. Local-first storage (SQLite+LanceDB) with Ollama embeddings.
+  Store and recall facts, decisions, preferences, events, relationships across sessions. Supports memory decay, deduplication,
+  typed memories (5 types), memory relationships (7 graph relation t
+metadata:
+  author: dannydvm
+  category: Search & Research
+  tags:
+  - search-research
+  - engram
+  source: clawhub-community
+  clawhub_slug: engram
+  clawhub_path: dannydvm/engram
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Engram
+
+    # Source: ClawHub community skill by dannydvm
+
+    # Install: clawhub install engram
+
+    # Path: dannydvm/engram
+
+
+    ## Description
+
+    Persistent semantic memory layer for AI agents. Local-first storage (SQLite+LanceDB) with Ollama embeddings. Store and
+    recall facts, decisions, preferences, events, relationships across sessions. Supports memory decay, deduplication, typed
+    memories (5 types), memory relationships (7 graph relation t
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install engram
+
+    ```'
+examples:
+- description: Install Engram from ClawHub
+  usage: clawhub install engram
+schema_version: '1.0'

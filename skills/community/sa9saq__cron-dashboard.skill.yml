@@ -1,0 +1,56 @@
+name: cron-dashboard
+title: cron-dashboard
+version: 1.0.2
+description: View, manage, and debug OpenClaw cron jobs with status overview and health checks.
+metadata:
+  author: sa9saq
+  category: Development & Coding
+  tags:
+  - development-coding
+  - cron
+  - dashboard
+  source: clawhub-community
+  clawhub_slug: cron-dashboard
+  clawhub_path: sa9saq/cron-dashboard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# cron-dashboard
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install cron-dashboard
+
+    # Path: sa9saq/cron-dashboard
+
+
+    ## Description
+
+    View, manage, and debug OpenClaw cron jobs with status overview and health checks.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cron-dashboard
+
+    ```'
+examples:
+- description: Install cron-dashboard from ClawHub
+  usage: clawhub install cron-dashboard
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: webpage-screenshot
+title: Webpage Screenshot
+version: 1.0.0
+description: 打开指定网页并截图为图片文件。在用户要求对某 URL 截图、保存网页为图片、或需要网页快照时使用。
+metadata:
+  author: malenconiaprincep
+  category: Web & Internet
+  tags:
+  - web-internet
+  - webpage
+  - screenshot
+  source: clawhub-community
+  clawhub_slug: webpage-screenshot
+  clawhub_path: malenconiaprincep/webpage-screenshot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Webpage Screenshot
+
+    # Source: ClawHub community skill by malenconiaprincep
+
+    # Install: clawhub install webpage-screenshot
+
+    # Path: malenconiaprincep/webpage-screenshot
+
+
+    ## Description
+
+    打开指定网页并截图为图片文件。在用户要求对某 URL 截图、保存网页为图片、或需要网页快照时使用。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install webpage-screenshot
+
+    ```'
+examples:
+- description: Install Webpage Screenshot from ClawHub
+  usage: clawhub install webpage-screenshot
+schema_version: '1.0'

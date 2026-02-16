@@ -1,0 +1,34 @@
+name: skill-search
+title: Skill Search
+version: 1.0.2
+description: 'Search, discover, and dynamically load skills from the ClawHub registry at skills.droyd.ai. Use when an agent
+  needs a capability it doesn''t have, wants to find tools for a specific task, or needs to browse trending/popular skills.
+  Triggers include requests to find skills, search for tools, discover '
+metadata:
+  author: dustinjamest
+  category: Search & Research
+  tags:
+  - search-research
+  - skill
+  - search
+  source: clawhub-community
+  clawhub_slug: skill-search
+  clawhub_path: dustinjamest/skill-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Skill Search\n# Source: ClawHub community skill by dustinjamest\n# Install: clawhub install skill-search\n#\
+    \ Path: dustinjamest/skill-search\n\n## Description\nSearch, discover, and dynamically load skills from the ClawHub registry\
+    \ at skills.droyd.ai. Use when an agent needs a capability it doesn't have, wants to find tools for a specific task, or\
+    \ needs to browse trending/popular skills. Triggers include requests to find skills, search for tools, discover \n\n##\
+    \ Files\n- SKILL.md\n- _meta.json\n- references/api.md\n- scripts/skillhub.sh\n\n## Installation\n```bash\nclawhub install\
+    \ skill-search\n```"
+examples:
+- description: Install Skill Search from ClawHub
+  usage: clawhub install skill-search
+schema_version: '1.0'

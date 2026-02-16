@@ -1,0 +1,60 @@
+name: uptime-kuma
+title: Uptime Kuma
+version: 1.0.0
+description: Interact with Uptime Kuma monitoring server. Use for checking monitor status, adding/removing monitors, pausing/resuming
+  checks, viewing heartbeat history. Triggers on mentions of Uptime Kuma, server monitoring, uptime checks, or service health
+  monitoring.
+metadata:
+  author: msarheed
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - uptime
+  - kuma
+  source: clawhub-community
+  clawhub_slug: uptime-kuma
+  clawhub_path: msarheed/uptime-kuma
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uptime Kuma
+
+    # Source: ClawHub community skill by msarheed
+
+    # Install: clawhub install uptime-kuma
+
+    # Path: msarheed/uptime-kuma
+
+
+    ## Description
+
+    Interact with Uptime Kuma monitoring server. Use for checking monitor status, adding/removing monitors, pausing/resuming
+    checks, viewing heartbeat history. Triggers on mentions of Uptime Kuma, server monitoring, uptime checks, or service health
+    monitoring.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/kuma.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install uptime-kuma
+
+    ```'
+examples:
+- description: Install Uptime Kuma from ClawHub
+  usage: clawhub install uptime-kuma
+schema_version: '1.0'

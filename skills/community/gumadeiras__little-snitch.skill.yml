@@ -1,0 +1,56 @@
+name: little-snitch
+title: little-snitch
+version: 1.0.1
+description: Control Little Snitch firewall on macOS. View logs, manage profiles and rule groups, monitor network traffic.
+  Use when the user wants to check firewall activity, enable/disable profiles or blocklists, or troubleshoot network connections.
+metadata:
+  author: gumadeiras
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - little
+  - snitch
+  source: clawhub-community
+  clawhub_slug: little-snitch
+  clawhub_path: gumadeiras/little-snitch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# little-snitch
+
+    # Source: ClawHub community skill by gumadeiras
+
+    # Install: clawhub install little-snitch
+
+    # Path: gumadeiras/little-snitch
+
+
+    ## Description
+
+    Control Little Snitch firewall on macOS. View logs, manage profiles and rule groups, monitor network traffic. Use when
+    the user wants to check firewall activity, enable/disable profiles or blocklists, or troubleshoot network connections.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install little-snitch
+
+    ```'
+examples:
+- description: Install little-snitch from ClawHub
+  usage: clawhub install little-snitch
+schema_version: '1.0'

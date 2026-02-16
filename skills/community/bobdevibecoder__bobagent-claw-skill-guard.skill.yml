@@ -1,0 +1,65 @@
+name: claw-skill-guard
+title: claw-skill-guard
+version: 1.0.0
+description: Security scanner for OpenClaw skills. Detects malicious patterns, suspicious URLs, and install traps before you
+  install a skill. Use before installing ANY skill from ClawHub or external sources.
+metadata:
+  author: bobdevibecoder
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - claw
+  - skill
+  - guard
+  source: clawhub-community
+  clawhub_slug: bobagent-claw-skill-guard
+  clawhub_path: bobdevibecoder/bobagent-claw-skill-guard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# claw-skill-guard
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-claw-skill-guard
+
+    # Path: bobdevibecoder/bobagent-claw-skill-guard
+
+
+    ## Description
+
+    Security scanner for OpenClaw skills. Detects malicious patterns, suspicious URLs, and install traps before you install
+    a skill. Use before installing ANY skill from ClawHub or external sources.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/agents-policy.md
+
+    - examples/pre-commit-hook.sh
+
+    - scripts/scanner.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-claw-skill-guard
+
+    ```'
+examples:
+- description: Install claw-skill-guard from ClawHub
+  usage: clawhub install bobagent-claw-skill-guard
+schema_version: '1.0'

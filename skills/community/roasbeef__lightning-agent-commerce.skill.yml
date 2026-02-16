@@ -1,0 +1,55 @@
+name: commerce
+title: Lightning Agentic Commerce
+version: 1.0.0
+description: End-to-end agentic commerce workflow using Lightning Network. Use when an agent needs to set up a full payment
+  stack (lnd + lnget + aperture), buy or sell data via L402, or enable agent-to-agent micropayments.
+metadata:
+  author: roasbeef
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - commerce
+  source: clawhub-community
+  clawhub_slug: lightning-agent-commerce
+  clawhub_path: roasbeef/lightning-agent-commerce
+  user_invocable: false
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lightning Agentic Commerce
+
+    # Source: ClawHub community skill by roasbeef
+
+    # Install: clawhub install lightning-agent-commerce
+
+    # Path: roasbeef/lightning-agent-commerce
+
+
+    ## Description
+
+    End-to-end agentic commerce workflow using Lightning Network. Use when an agent needs to set up a full payment stack (lnd
+    + lnget + aperture), buy or sell data via L402, or enable agent-to-agent micropayments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lightning-agent-commerce
+
+    ```'
+examples:
+- description: Install Lightning Agentic Commerce from ClawHub
+  usage: clawhub install lightning-agent-commerce
+schema_version: '1.0'

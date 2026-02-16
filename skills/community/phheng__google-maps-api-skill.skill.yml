@@ -1,0 +1,62 @@
+name: google-maps-api-skill
+title: Google Maps Api Skill
+version: 0.1.0
+description: 'This skill helps users automatically scrape business data from Google Maps using the BrowserAct Google Maps
+  API. Agent should proactively trigger this skill for needs like: 1. Find restaurants in a specific city; 2. Extract contact
+  info of dental clinics; 3. Research local competitors; 4. Collect ad'
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - maps
+  - api
+  - skill
+  source: clawhub-community
+  clawhub_slug: google-maps-api-skill
+  clawhub_path: phheng/google-maps-api-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Maps Api Skill
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install google-maps-api-skill
+
+    # Path: phheng/google-maps-api-skill
+
+
+    ## Description
+
+    This skill helps users automatically scrape business data from Google Maps using the BrowserAct Google Maps API. Agent
+    should proactively trigger this skill for needs like: 1. Find restaurants in a specific city; 2. Extract contact info
+    of dental clinics; 3. Research local competitors; 4. Collect ad
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/google_maps_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-maps-api-skill
+
+    ```'
+examples:
+- description: Install Google Maps Api Skill from ClawHub
+  usage: clawhub install google-maps-api-skill
+schema_version: '1.0'

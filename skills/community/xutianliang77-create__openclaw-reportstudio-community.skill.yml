@@ -1,0 +1,35 @@
+name: openclaw-reportstudio-community
+title: openclaw-reportstudio-community
+version: 1.0.0
+description: 'Generate polished, read-only business reports from CSV/XLSX into static deliverables (xlsx+pdf+pptx) using ReportStudio
+  Community. Use when a user says things like “用这个表生成月报/周报/经营分析/PPT+PDF汇报材料”, provides a file path, asks for trends (day/week/month),
+  TopN breakdowns by a dimension/metric, or wants '
+metadata:
+  author: xutianliang77-create
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - openclaw
+  - reportstudio
+  - community
+  source: clawhub-community
+  clawhub_slug: openclaw-reportstudio-community
+  clawhub_path: xutianliang77-create/openclaw-reportstudio-community
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# openclaw-reportstudio-community\n# Source: ClawHub community skill by xutianliang77-create\n# Install: clawhub\
+    \ install openclaw-reportstudio-community\n# Path: xutianliang77-create/openclaw-reportstudio-community\n\n## Description\n\
+    Generate polished, read-only business reports from CSV/XLSX into static deliverables (xlsx+pdf+pptx) using ReportStudio\
+    \ Community. Use when a user says things like “用这个表生成月报/周报/经营分析/PPT+PDF汇报材料”, provides a file path, asks for trends (day/week/month),\
+    \ TopN breakdowns by a dimension/metric, or wants \n\n## Files\n- SKILL.md\n- _meta.json\n- references/acceptance.md\n\
+    - scripts/run_reportstudio.py\n\n## Installation\n```bash\nclawhub install openclaw-reportstudio-community\n```"
+examples:
+- description: Install openclaw-reportstudio-community from ClawHub
+  usage: clawhub install openclaw-reportstudio-community
+schema_version: '1.0'

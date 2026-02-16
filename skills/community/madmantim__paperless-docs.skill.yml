@@ -1,0 +1,70 @@
+name: paperless-ngx
+title: Paperless-ngx Document Manager
+version: 1.0.0
+description: Manage documents in Paperless-ngx - search, upload, tag, and retrieve.
+metadata:
+  author: madmantim
+  category: Search & Research
+  tags:
+  - search-research
+  - paperless
+  - ngx
+  source: clawhub-community
+  clawhub_slug: paperless-docs
+  clawhub_path: madmantim/paperless-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Paperless-ngx Document Manager
+
+    # Source: ClawHub community skill by madmantim
+
+    # Install: clawhub install paperless-docs
+
+    # Path: madmantim/paperless-docs
+
+
+    ## Description
+
+    Manage documents in Paperless-ngx - search, upload, tag, and retrieve.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/correspondents.mjs
+
+    - scripts/download.mjs
+
+    - scripts/get.mjs
+
+    - scripts/list.mjs
+
+    - scripts/search.mjs
+
+    - scripts/tags.mjs
+
+    - scripts/types.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paperless-docs
+
+    ```'
+examples:
+- description: Install Paperless-ngx Document Manager from ClawHub
+  usage: clawhub install paperless-docs
+schema_version: '1.0'

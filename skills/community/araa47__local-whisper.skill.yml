@@ -1,0 +1,58 @@
+name: local-whisper
+title: Local Whisper
+version: 1.0.0
+description: Local speech-to-text using OpenAI Whisper. Runs fully offline after model download. High quality transcription
+  with multiple model sizes.
+metadata:
+  author: araa47
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - local
+  - whisper
+  source: clawhub-community
+  clawhub_slug: local-whisper
+  clawhub_path: araa47/local-whisper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Local Whisper
+
+    # Source: ClawHub community skill by araa47
+
+    # Install: clawhub install local-whisper
+
+    # Path: araa47/local-whisper
+
+
+    ## Description
+
+    Local speech-to-text using OpenAI Whisper. Runs fully offline after model download. High quality transcription with multiple
+    model sizes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/transcribe.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install local-whisper
+
+    ```'
+examples:
+- description: Install Local Whisper from ClawHub
+  usage: clawhub install local-whisper
+schema_version: '1.0'

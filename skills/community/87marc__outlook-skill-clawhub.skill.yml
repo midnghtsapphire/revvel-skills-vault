@@ -1,0 +1,56 @@
+name: outlook-delegate
+title: Outlook Delegate
+version: 1.0.0
+description: Read, search, and manage Outlook emails and calendar via Microsoft Graph API with delegate support. Your AI assistant
+  authenticates as itself but accesses the owner's mailbox/calendar as a delegate. Modified for delegate access from https://clawhub.ai/jotamed/outlook
+metadata:
+  author: 87marc
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - outlook
+  - delegate
+  source: clawhub-community
+  clawhub_slug: outlook-skill-clawhub
+  clawhub_path: 87marc/outlook-skill-clawhub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Outlook Delegate
+
+    # Source: ClawHub community skill by 87marc
+
+    # Install: clawhub install outlook-skill-clawhub
+
+    # Path: 87marc/outlook-skill-clawhub
+
+
+    ## Description
+
+    Read, search, and manage Outlook emails and calendar via Microsoft Graph API with delegate support. Your AI assistant
+    authenticates as itself but accesses the owner''s mailbox/calendar as a delegate. Modified for delegate access from https://clawhub.ai/jotamed/outlook
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install outlook-skill-clawhub
+
+    ```'
+examples:
+- description: Install Outlook Delegate from ClawHub
+  usage: clawhub install outlook-skill-clawhub
+schema_version: '1.0'

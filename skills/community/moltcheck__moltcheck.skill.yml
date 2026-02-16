@@ -1,0 +1,61 @@
+name: moltcheck
+title: Moltcheck Skill
+version: 1.0.4
+description: Security scanner for Moltbot skills. Scan GitHub repositories for vulnerabilities before installation.
+metadata:
+  author: moltcheck
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - moltcheck
+  source: clawhub-community
+  clawhub_slug: moltcheck
+  clawhub_path: moltcheck/moltcheck
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltcheck Skill
+
+    # Source: ClawHub community skill by moltcheck
+
+    # Install: clawhub install moltcheck
+
+    # Path: moltcheck/moltcheck
+
+
+    ## Description
+
+    Security scanner for Moltbot skills. Scan GitHub repositories for vulnerabilities before installation.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package.json
+
+    - skill.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltcheck
+
+    ```'
+examples:
+- description: Install Moltcheck Skill from ClawHub
+  usage: clawhub install moltcheck
+schema_version: '1.0'

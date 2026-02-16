@@ -1,0 +1,60 @@
+name: coder-workspaces
+title: Coder Workspaces
+version: 1.5.5
+description: Manage Coder workspaces and AI coding agent tasks via CLI. List, create, start, stop, and delete workspaces.
+  SSH into workspaces to run commands. Create and monitor AI coding tasks with Claude Code, Aider, or other agents.
+metadata:
+  author: developmentcats
+  category: Development & Coding
+  tags:
+  - development-coding
+  - coder
+  - workspaces
+  source: clawhub-community
+  clawhub_slug: coder-workspaces
+  clawhub_path: developmentcats/coder-workspaces
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Coder Workspaces
+
+    # Source: ClawHub community skill by developmentcats
+
+    # Install: clawhub install coder-workspaces
+
+    # Path: developmentcats/coder-workspaces
+
+
+    ## Description
+
+    Manage Coder workspaces and AI coding agent tasks via CLI. List, create, start, stop, and delete workspaces. SSH into
+    workspaces to run commands. Create and monitor AI coding tasks with Claude Code, Aider, or other agents.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install coder-workspaces
+
+    ```'
+examples:
+- description: Install Coder Workspaces from ClawHub
+  usage: clawhub install coder-workspaces
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: linkedin-dm
+title: LinkedIn DM
+version: 1.0.0
+description: Send personalized LinkedIn direct messages to a list of existing 1st-degree connections via browser automation.
+  Use when the user wants to message LinkedIn connections with AI-personalized outreach — e.g. nurturing leads, following
+  up after events, reconnecting with contacts, or announcing something
+metadata:
+  author: 10madh
+  category: Search & Research
+  tags:
+  - search-research
+  - linkedin
+  source: clawhub-community
+  clawhub_slug: linkedin-dm
+  clawhub_path: 10madh/linkedin-dm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LinkedIn DM
+
+    # Source: ClawHub community skill by 10madh
+
+    # Install: clawhub install linkedin-dm
+
+    # Path: 10madh/linkedin-dm
+
+
+    ## Description
+
+    Send personalized LinkedIn direct messages to a list of existing 1st-degree connections via browser automation. Use when
+    the user wants to message LinkedIn connections with AI-personalized outreach — e.g. nurturing leads, following up after
+    events, reconnecting with contacts, or announcing something
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/browser-workflow.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linkedin-dm
+
+    ```'
+examples:
+- description: Install LinkedIn DM from ClawHub
+  usage: clawhub install linkedin-dm
+schema_version: '1.0'

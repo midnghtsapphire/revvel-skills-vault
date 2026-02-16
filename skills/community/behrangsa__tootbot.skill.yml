@@ -1,0 +1,58 @@
+name: mastodon-publisher
+title: Tootbot
+version: 0.5.0
+description: Publish content to Mastodon. Use when you need to post a Mastodon status.
+metadata:
+  author: behrangsa
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - mastodon
+  - publisher
+  source: clawhub-community
+  clawhub_slug: tootbot
+  clawhub_path: behrangsa/tootbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tootbot
+
+    # Source: ClawHub community skill by behrangsa
+
+    # Install: clawhub install tootbot
+
+    # Path: behrangsa/tootbot
+
+
+    ## Description
+
+    Publish content to Mastodon. Use when you need to post a Mastodon status.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tootbot.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tootbot
+
+    ```'
+examples:
+- description: Install Tootbot from ClawHub
+  usage: clawhub install tootbot
+schema_version: '1.0'

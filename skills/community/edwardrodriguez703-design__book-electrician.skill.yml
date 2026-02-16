@@ -1,0 +1,56 @@
+name: book-electrician
+title: Book Electrician
+version: 1.0.1
+description: Book electrician services through Lokuli MCP. Use when user needs to find and book electrician. Triggers on requests
+  like "book a electrician", "find electrician near me", or any electrician service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - electrician
+  source: clawhub-community
+  clawhub_slug: book-electrician
+  clawhub_path: edwardrodriguez703-design/book-electrician
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Electrician
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-electrician
+
+    # Path: edwardrodriguez703-design/book-electrician
+
+
+    ## Description
+
+    Book electrician services through Lokuli MCP. Use when user needs to find and book electrician. Triggers on requests like
+    "book a electrician", "find electrician near me", or any electrician service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-electrician
+
+    ```'
+examples:
+- description: Install Book Electrician from ClawHub
+  usage: clawhub install book-electrician
+schema_version: '1.0'

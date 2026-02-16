@@ -1,0 +1,71 @@
+name: odoo
+title: Odoo
+version: 2.0.5
+description: '"Query Odoo data including salesperson performance, customer analytics, orders, invoices, CRM, accounting, VAT,
+  inventory, and AR/AP. Generates WhatsApp cards, PDFs, Excel. Use when user explicitly mentions Odoo or asks for Odoo data."'
+metadata:
+  author: ashrf-in
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - odoo
+  source: clawhub-community
+  clawhub_slug: odoo-openclaw-skill
+  clawhub_path: ashrf-in/odoo-openclaw-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Odoo
+
+    # Source: ClawHub community skill by ashrf-in
+
+    # Install: clawhub install odoo-openclaw-skill
+
+    # Path: ashrf-in/odoo-openclaw-skill
+
+
+    ## Description
+
+    "Query Odoo data including salesperson performance, customer analytics, orders, invoices, CRM, accounting, VAT, inventory,
+    and AR/AP. Generates WhatsApp cards, PDFs, Excel. Use when user explicitly mentions Odoo or asks for Odoo data."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - assets/autonomous-cfo/README.md
+
+    - assets/autonomous-cfo/install.sh
+
+    - assets/autonomous-cfo/requirements.txt
+
+    - assets/autonomous-cfo/setup.py
+
+    - assets/autonomous-cfo/config/settings.json
+
+    - assets/autonomous-cfo/src/__init__.py
+
+    - assets/autonomous-cfo/src/runtime_env.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install odoo-openclaw-skill
+
+    ```'
+examples:
+- description: Install Odoo from ClawHub
+  usage: clawhub install odoo-openclaw-skill
+schema_version: '1.0'

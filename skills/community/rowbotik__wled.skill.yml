@@ -1,0 +1,61 @@
+name: wled
+title: Wled
+version: 0.1.0
+description: Control WLED LED controllers via HTTP API. Use when a user asks to control WLED lights, LED strips, or ESP-based
+  LED controllers. Supports power on/off, brightness, colors (RGB), effects, palettes, presets, and device status.
+metadata:
+  author: rowbotik
+  category: Development & Coding
+  tags:
+  - development-coding
+  - wled
+  source: clawhub-community
+  clawhub_slug: wled
+  clawhub_path: rowbotik/wled
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wled
+
+    # Source: ClawHub community skill by rowbotik
+
+    # Install: clawhub install wled
+
+    # Path: rowbotik/wled
+
+
+    ## Description
+
+    Control WLED LED controllers via HTTP API. Use when a user asks to control WLED lights, LED strips, or ESP-based LED controllers.
+    Supports power on/off, brightness, colors (RGB), effects, palettes, presets, and device status.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/wled.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wled
+
+    ```'
+examples:
+- description: Install Wled from ClawHub
+  usage: clawhub install wled
+schema_version: '1.0'

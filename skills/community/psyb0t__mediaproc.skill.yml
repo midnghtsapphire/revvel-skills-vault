@@ -1,0 +1,53 @@
+name: mediaproc
+title: mediaproc
+version: 1.0.2
+description: Process media files (video, audio, images) via a locked-down SSH container with ffmpeg, sox, and imagemagick
+metadata:
+  author: psyb0t
+  category: Media & Content
+  tags:
+  - media-content
+  - mediaproc
+  source: clawhub-community
+  clawhub_slug: mediaproc
+  clawhub_path: psyb0t/mediaproc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# mediaproc
+
+    # Source: ClawHub community skill by psyb0t
+
+    # Install: clawhub install mediaproc
+
+    # Path: psyb0t/mediaproc
+
+
+    ## Description
+
+    Process media files (video, audio, images) via a locked-down SSH container with ffmpeg, sox, and imagemagick
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mediaproc
+
+    ```'
+examples:
+- description: Install mediaproc from ClawHub
+  usage: clawhub install mediaproc
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: huckleberry
+title: Huckleberry
+version: 0.1.0
+description: Track baby sleep, feeding, diapers, and growth via Huckleberry app API. Use for logging baby activities through
+  natural language.
+metadata:
+  author: aaronn
+  category: Development & Coding
+  tags:
+  - development-coding
+  - huckleberry
+  source: clawhub-community
+  clawhub_slug: openclaw-huckleberry-skill
+  clawhub_path: aaronn/openclaw-huckleberry-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Huckleberry
+
+    # Source: ClawHub community skill by aaronn
+
+    # Install: clawhub install openclaw-huckleberry-skill
+
+    # Path: aaronn/openclaw-huckleberry-skill
+
+
+    ## Description
+
+    Track baby sleep, feeding, diapers, and growth via Huckleberry app API. Use for logging baby activities through natural
+    language.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/hb.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-huckleberry-skill
+
+    ```'
+examples:
+- description: Install Huckleberry from ClawHub
+  usage: clawhub install openclaw-huckleberry-skill
+schema_version: '1.0'

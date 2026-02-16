@@ -1,0 +1,64 @@
+name: xiaohongshu-publisher
+title: 小红书自动发布助手
+version: 1.0.0
+description: Draft and publish posts to 小红书 (Xiaohongshu/RED). Use when creating content for 小红书, drafting posts, generating
+  cover images, or publishing via browser automation. Covers the full workflow from content creation to browser-based publishing,
+  including cover image generation with Pillow.
+metadata:
+  author: yuf1011
+  category: Search & Research
+  tags:
+  - search-research
+  - xiaohongshu
+  - publisher
+  source: clawhub-community
+  clawhub_slug: xiaohongshu-publisher
+  clawhub_path: yuf1011/xiaohongshu-publisher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 小红书自动发布助手
+
+    # Source: ClawHub community skill by yuf1011
+
+    # Install: clawhub install xiaohongshu-publisher
+
+    # Path: yuf1011/xiaohongshu-publisher
+
+
+    ## Description
+
+    Draft and publish posts to 小红书 (Xiaohongshu/RED). Use when creating content for 小红书, drafting posts, generating cover
+    images, or publishing via browser automation. Covers the full workflow from content creation to browser-based publishing,
+    including cover image generation with Pillow.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/browser-publish.md
+
+    - references/content-guide.md
+
+    - scripts/gen_cover.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xiaohongshu-publisher
+
+    ```'
+examples:
+- description: Install 小红书自动发布助手 from ClawHub
+  usage: clawhub install xiaohongshu-publisher
+schema_version: '1.0'

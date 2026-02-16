@@ -1,0 +1,58 @@
+name: tuebingen-weather
+title: Tübingen Weather
+version: 1.0.0
+description: Send daily 08:00 weather reports for Tübingen using open-meteo.com. Use when Master wants an automated summary
+  (current conditions + today’s high/low + rain chance) stored locally and forwarded via Telegram.
+metadata:
+  author: zopyx
+  category: Social Media
+  tags:
+  - social-media
+  - tuebingen
+  - weather
+  source: clawhub-community
+  clawhub_slug: tuebingen-weather
+  clawhub_path: zopyx/tuebingen-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tübingen Weather
+
+    # Source: ClawHub community skill by zopyx
+
+    # Install: clawhub install tuebingen-weather
+
+    # Path: zopyx/tuebingen-weather
+
+
+    ## Description
+
+    Send daily 08:00 weather reports for Tübingen using open-meteo.com. Use when Master wants an automated summary (current
+    conditions + today’s high/low + rain chance) stored locally and forwarded via Telegram.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch_tuebingen_weather.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tuebingen-weather
+
+    ```'
+examples:
+- description: Install Tübingen Weather from ClawHub
+  usage: clawhub install tuebingen-weather
+schema_version: '1.0'

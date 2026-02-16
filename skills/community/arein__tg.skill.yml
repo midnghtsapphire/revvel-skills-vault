@@ -1,0 +1,56 @@
+name: tg
+title: Telegram CLI
+version: 0.1.0
+description: Telegram CLI for reading, searching, and sending messages. Use when the user asks about Telegram messages, wants
+  to check inbox, search chats, send messages, or look up contacts and groups.
+metadata:
+  author: arein
+  category: Search & Research
+  tags:
+  - search-research
+  source: clawhub-community
+  clawhub_slug: tg
+  clawhub_path: arein/tg
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram CLI
+
+    # Source: ClawHub community skill by arein
+
+    # Install: clawhub install tg
+
+    # Path: arein/tg
+
+
+    ## Description
+
+    Telegram CLI for reading, searching, and sending messages. Use when the user asks about Telegram messages, wants to check
+    inbox, search chats, send messages, or look up contacts and groups.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tg
+
+    ```'
+examples:
+- description: Install Telegram CLI from ClawHub
+  usage: clawhub install tg
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: serper
+title: serper
+version: 3.0.2
+description: Google search via Serper API with full page content extraction. Fast API lookup + concurrent page scraping (3s
+  timeout). One well-crafted query returns rich results — avoid multiple calls. Two modes, explicit locale control. API key
+  via .env.
+metadata:
+  author: nesdeq
+  category: Search & Research
+  tags:
+  - search-research
+  - serper
+  source: clawhub-community
+  clawhub_slug: serper
+  clawhub_path: nesdeq/serper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# serper
+
+    # Source: ClawHub community skill by nesdeq
+
+    # Install: clawhub install serper
+
+    # Path: nesdeq/serper
+
+
+    ## Description
+
+    Google search via Serper API with full page content extraction. Fast API lookup + concurrent page scraping (3s timeout).
+    One well-crafted query returns rich results — avoid multiple calls. Two modes, explicit locale control. API key via .env.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install serper
+
+    ```'
+examples:
+- description: Install serper from ClawHub
+  usage: clawhub install serper
+schema_version: '1.0'

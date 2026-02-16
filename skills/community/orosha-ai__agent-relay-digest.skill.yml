@@ -1,0 +1,63 @@
+name: agent-relay-digest
+title: Agent Relay Digest
+version: 0.1.0
+description: '"Create curated digests of agent conversations (e.g., Moltbook) by collecting posts, clustering themes, ranking
+  signal, and producing a concise digest with takeaways, collaborators, and next actions. Use when asked to summarize agent
+  forums, build a daily/weekly digest, identify who to follow, or ex'
+metadata:
+  author: orosha-ai
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  - relay
+  - digest
+  source: clawhub-community
+  clawhub_slug: agent-relay-digest
+  clawhub_path: orosha-ai/agent-relay-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Relay Digest
+
+    # Source: ClawHub community skill by orosha-ai
+
+    # Install: clawhub install agent-relay-digest
+
+    # Path: orosha-ai/agent-relay-digest
+
+
+    ## Description
+
+    "Create curated digests of agent conversations (e.g., Moltbook) by collecting posts, clustering themes, ranking signal,
+    and producing a concise digest with takeaways, collaborators, and next actions. Use when asked to summarize agent forums,
+    build a daily/weekly digest, identify who to follow, or ex
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/spec.md
+
+    - scripts/relay_digest.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-relay-digest
+
+    ```'
+examples:
+- description: Install Agent Relay Digest from ClawHub
+  usage: clawhub install agent-relay-digest
+schema_version: '1.0'

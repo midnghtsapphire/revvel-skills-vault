@@ -1,0 +1,71 @@
+name: basemail
+title: Basemail
+version: 1.6.0
+description: '"📬 BaseMail - Email for AI Agents. Give your agent a real email (yourname@basemail.ai). Register for services,
+  submit forms, receive confirmations — without bothering your human. No CAPTCHA, no passwords, just wallet signature."'
+metadata:
+  author: daaab
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - basemail
+  source: clawhub-community
+  clawhub_slug: basemail
+  clawhub_path: daaab/basemail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Basemail
+
+    # Source: ClawHub community skill by daaab
+
+    # Install: clawhub install basemail
+
+    # Path: daaab/basemail
+
+
+    ## Description
+
+    "📬 BaseMail - Email for AI Agents. Give your agent a real email (yourname@basemail.ai). Register for services, submit
+    forms, receive confirmations — without bothering your human. No CAPTCHA, no passwords, just wallet signature."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/audit.js
+
+    - scripts/crypto-utils.js
+
+    - scripts/inbox.js
+
+    - scripts/register.js
+
+    - scripts/send.js
+
+    - scripts/setup.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install basemail
+
+    ```'
+examples:
+- description: Install Basemail from ClawHub
+  usage: clawhub install basemail
+schema_version: '1.0'

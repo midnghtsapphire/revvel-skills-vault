@@ -1,0 +1,71 @@
+name: openclaw-security-monitor
+title: OpenClaw Security Monitor
+version: 3.0.1
+description: Proactive security monitoring, threat scanning, and auto-remediation for OpenClaw deployments
+metadata:
+  author: adibirzu
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - security
+  - monitor
+  source: clawhub-community
+  clawhub_slug: openclaw-security-monitor
+  clawhub_path: adibirzu/openclaw-security-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Security Monitor
+
+    # Source: ClawHub community skill by adibirzu
+
+    # Install: clawhub install openclaw-security-monitor
+
+    # Path: adibirzu/openclaw-security-monitor
+
+
+    ## Description
+
+    Proactive security monitoring, threat scanning, and auto-remediation for OpenClaw deployments
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - dashboard/index.html
+
+    - dashboard/server.js
+
+    - ioc/c2-ips.txt
+
+    - ioc/file-hashes.txt
+
+    - ioc/malicious-domains.txt
+
+    - ioc/malicious-publishers.txt
+
+    - ioc/malicious-skill-patterns.txt
+
+    - scripts/daily-scan-cron.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-security-monitor
+
+    ```'
+examples:
+- description: Install OpenClaw Security Monitor from ClawHub
+  usage: clawhub install openclaw-security-monitor
+schema_version: '1.0'

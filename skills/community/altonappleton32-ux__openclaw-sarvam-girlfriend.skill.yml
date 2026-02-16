@@ -1,0 +1,60 @@
+name: openclaw-virtual-gf-tts
+title: rupali
+version: 1.0.0
+description: Playful virtual girlfriend voice companion. Use when the user wants short, flirty, friendly text replies returned
+  as Bulbul v3 audio across chat channels (Discord/Telegram/WhatsApp). Generate a brief response, then synthesize and send
+  MP3.
+metadata:
+  author: altonappleton32-ux
+  category: Media & Content
+  tags:
+  - media-content
+  - openclaw
+  - virtual
+  - tts
+  source: clawhub-community
+  clawhub_slug: openclaw-sarvam-girlfriend
+  clawhub_path: altonappleton32-ux/openclaw-sarvam-girlfriend
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# rupali
+
+    # Source: ClawHub community skill by altonappleton32-ux
+
+    # Install: clawhub install openclaw-sarvam-girlfriend
+
+    # Path: altonappleton32-ux/openclaw-sarvam-girlfriend
+
+
+    ## Description
+
+    Playful virtual girlfriend voice companion. Use when the user wants short, flirty, friendly text replies returned as Bulbul
+    v3 audio across chat channels (Discord/Telegram/WhatsApp). Generate a brief response, then synthesize and send MP3.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bulbul_tts.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-sarvam-girlfriend
+
+    ```'
+examples:
+- description: Install rupali from ClawHub
+  usage: clawhub install openclaw-sarvam-girlfriend
+schema_version: '1.0'

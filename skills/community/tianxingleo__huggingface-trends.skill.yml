@@ -1,0 +1,60 @@
+name: huggingface-trends
+title: Huggingface Trends
+version: 1.0.0
+description: Monitor and fetch trending models from Hugging Face with support for filtering by task, library, and popularity
+  metrics. Use when users want to check trending AI models, compare model popularity, or explore popular models by task or
+  library. Supports export to JSON and formatted output.
+metadata:
+  author: tianxingleo
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - huggingface
+  - trends
+  source: clawhub-community
+  clawhub_slug: huggingface-trends
+  clawhub_path: tianxingleo/huggingface-trends
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Huggingface Trends
+
+    # Source: ClawHub community skill by tianxingleo
+
+    # Install: clawhub install huggingface-trends
+
+    # Path: tianxingleo/huggingface-trends
+
+
+    ## Description
+
+    Monitor and fetch trending models from Hugging Face with support for filtering by task, library, and popularity metrics.
+    Use when users want to check trending AI models, compare model popularity, or explore popular models by task or library.
+    Supports export to JSON and formatted output.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/hf_trends.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install huggingface-trends
+
+    ```'
+examples:
+- description: Install Huggingface Trends from ClawHub
+  usage: clawhub install huggingface-trends
+schema_version: '1.0'

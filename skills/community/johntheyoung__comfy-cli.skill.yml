@@ -1,0 +1,58 @@
+name: comfy-cli
+title: Comfy Cli
+version: 1.0.0
+description: Install, manage, and run ComfyUI instances. Use when setting up ComfyUI, launching servers, installing/updating/debugging
+  custom nodes, downloading models from CivitAI/HuggingFace, managing workspaces, running API workflows, or troubleshooting
+  node conflicts with bisect.
+metadata:
+  author: johntheyoung
+  category: Development & Coding
+  tags:
+  - development-coding
+  - comfy
+  - cli
+  source: clawhub-community
+  clawhub_slug: comfy-cli
+  clawhub_path: johntheyoung/comfy-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Comfy Cli
+
+    # Source: ClawHub community skill by johntheyoung
+
+    # Install: clawhub install comfy-cli
+
+    # Path: johntheyoung/comfy-cli
+
+
+    ## Description
+
+    Install, manage, and run ComfyUI instances. Use when setting up ComfyUI, launching servers, installing/updating/debugging
+    custom nodes, downloading models from CivitAI/HuggingFace, managing workspaces, running API workflows, or troubleshooting
+    node conflicts with bisect.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install comfy-cli
+
+    ```'
+examples:
+- description: Install Comfy Cli from ClawHub
+  usage: clawhub install comfy-cli
+schema_version: '1.0'

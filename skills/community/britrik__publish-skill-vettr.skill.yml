@@ -1,0 +1,72 @@
+name: skill-vettr
+title: Skill Vettr
+version: 0.1.0
+description: Static analysis security scanner for third-party OpenClaw skills. Detects eval/spawn risks, malicious dependencies,
+  typosquatting, and prompt injection patterns before installation. Use when vetting skills from ClawHub or untrusted sources.
+metadata:
+  author: britrik
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - vettr
+  source: clawhub-community
+  clawhub_slug: publish-skill-vettr
+  clawhub_path: britrik/publish-skill-vettr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Vettr
+
+    # Source: ClawHub community skill by britrik
+
+    # Install: clawhub install publish-skill-vettr
+
+    # Path: britrik/publish-skill-vettr
+
+
+    ## Description
+
+    Static analysis security scanner for third-party OpenClaw skills. Detects eval/spawn risks, malicious dependencies, typosquatting,
+    and prompt injection patterns before installation. Use when vetting skills from ClawHub or untrusted sources.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - src/index.ts
+
+    - src/openclaw-sdk.d.ts
+
+    - src/types.ts
+
+    - src/vettr-engine.ts
+
+    - src/__tests__/ast-analyzer.test.ts
+
+    - src/__tests__/dependency-analyzer.test.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install publish-skill-vettr
+
+    ```'
+examples:
+- description: Install Skill Vettr from ClawHub
+  usage: clawhub install publish-skill-vettr
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: gog-advanced
+title: Google Services (via gogcli)
+version: 0.1.0
+description: Reliable Google Workspace CLI skill (gogcli). Defaults to all-calendars for agenda queries; JSON-first; safe
+  writes.
+metadata:
+  author: lstpsche
+  category: Search & Research
+  tags:
+  - search-research
+  - gog
+  - advanced
+  source: clawhub-community
+  clawhub_slug: gog-advanced
+  clawhub_path: lstpsche/gog-advanced
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Services (via gogcli)
+
+    # Source: ClawHub community skill by lstpsche
+
+    # Install: clawhub install gog-advanced
+
+    # Path: lstpsche/gog-advanced
+
+
+    ## Description
+
+    Reliable Google Workspace CLI skill (gogcli). Defaults to all-calendars for agenda queries; JSON-first; safe writes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gog-advanced
+
+    ```'
+examples:
+- description: Install Google Services (via gogcli) from ClawHub
+  usage: clawhub install gog-advanced
+schema_version: '1.0'

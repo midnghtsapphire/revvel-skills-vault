@@ -1,0 +1,63 @@
+name: openclaw-triage-pro
+title: Openclaw Triage Pro
+version: 1.0.0
+description: '"Full incident response suite: investigate compromises, auto-contain threats, guided remediation, evidence export,
+  post-incident hardening, and pre-built response playbooks. Cross-references all OpenClaw security tools for unified analysis.
+  Everything in openclaw-triage (free) plus automated respons'
+metadata:
+  author: atlaspa
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - triage
+  - pro
+  source: clawhub-community
+  clawhub_slug: openclaw-triage-pro
+  clawhub_path: atlaspa/openclaw-triage-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Triage Pro
+
+    # Source: ClawHub community skill by atlaspa
+
+    # Install: clawhub install openclaw-triage-pro
+
+    # Path: atlaspa/openclaw-triage-pro
+
+
+    ## Description
+
+    "Full incident response suite: investigate compromises, auto-contain threats, guided remediation, evidence export, post-incident
+    hardening, and pre-built response playbooks. Cross-references all OpenClaw security tools for unified analysis. Everything
+    in openclaw-triage (free) plus automated respons
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/triage.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-triage-pro
+
+    ```'
+examples:
+- description: Install Openclaw Triage Pro from ClawHub
+  usage: clawhub install openclaw-triage-pro
+schema_version: '1.0'

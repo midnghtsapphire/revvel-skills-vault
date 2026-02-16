@@ -1,0 +1,54 @@
+name: refactor-assist
+title: Refactoring Assistant
+version: 1.0.2
+description: Get refactoring suggestions with colored diffs. Use when improving code quality.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - refactor
+  - assist
+  source: clawhub-community
+  clawhub_slug: refactor-suggest
+  clawhub_path: lxgicstudios/refactor-suggest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Refactoring Assistant
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install refactor-suggest
+
+    # Path: lxgicstudios/refactor-suggest
+
+
+    ## Description
+
+    Get refactoring suggestions with colored diffs. Use when improving code quality.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install refactor-suggest
+
+    ```'
+examples:
+- description: Install Refactoring Assistant from ClawHub
+  usage: clawhub install refactor-suggest
+schema_version: '1.0'

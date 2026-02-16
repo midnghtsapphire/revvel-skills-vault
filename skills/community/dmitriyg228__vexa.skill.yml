@@ -1,0 +1,73 @@
+name: vexa
+title: Google Meet and MS Teams  meeting assistant
+version: 0.0.1
+description: '"Send Vexa bots to meetings and operate transcript workflows end-to-end (during and after meetings): parse meeting
+  links, request/stop bots, read live/final transcripts, create basic meeting reports, set webhook delivery, and enrich meeting
+  metadata. Use when a user drops a Google Meet/Teams link, a'
+metadata:
+  author: dmitriyg228
+  category: Search & Research
+  tags:
+  - search-research
+  - vexa
+  source: clawhub-community
+  clawhub_slug: vexa
+  clawhub_path: dmitriyg228/vexa
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Meet and MS Teams  meeting assistant
+
+    # Source: ClawHub community skill by dmitriyg228
+
+    # Install: clawhub install vexa
+
+    # Path: dmitriyg228/vexa
+
+
+    ## Description
+
+    "Send Vexa bots to meetings and operate transcript workflows end-to-end (during and after meetings): parse meeting links,
+    request/stop bots, read live/final transcripts, create basic meeting reports, set webhook delivery, and enrich meeting
+    metadata. Use when a user drops a Google Meet/Teams link, a
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/onboarding-flow.md
+
+    - references/user-api-guide-notes.md
+
+    - references/webhook-setup.md
+
+    - scripts/audit.mjs
+
+    - scripts/ingest.mjs
+
+    - scripts/onboard.mjs
+
+    - scripts/vexa-transform.mjs
+
+    - scripts/vexa.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vexa
+
+    ```'
+examples:
+- description: Install Google Meet and MS Teams  meeting assistant from ClawHub
+  usage: clawhub install vexa
+schema_version: '1.0'

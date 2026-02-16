@@ -1,0 +1,57 @@
+name: groww
+title: Groww
+version: 1.0.0
+description: Trade stocks and manage portfolio on Groww (Indian broker). Use when user asks about Indian stocks, NSE/BSE prices,
+  portfolio holdings, placing buy/sell orders, checking order status, or any Groww-related trading queries. Supports live
+  quotes, LTP, OHLC, historical candles, and order management.
+metadata:
+  author: pushp1997
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - groww
+  source: clawhub-community
+  clawhub_slug: groww
+  clawhub_path: pushp1997/groww
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Groww
+
+    # Source: ClawHub community skill by pushp1997
+
+    # Install: clawhub install groww
+
+    # Path: pushp1997/groww
+
+
+    ## Description
+
+    Trade stocks and manage portfolio on Groww (Indian broker). Use when user asks about Indian stocks, NSE/BSE prices, portfolio
+    holdings, placing buy/sell orders, checking order status, or any Groww-related trading queries. Supports live quotes,
+    LTP, OHLC, historical candles, and order management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install groww
+
+    ```'
+examples:
+- description: Install Groww from ClawHub
+  usage: clawhub install groww
+schema_version: '1.0'

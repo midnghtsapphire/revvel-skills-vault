@@ -1,0 +1,55 @@
+name: resend
+title: Resend
+version: 0.1.0
+description: Manage received (inbound) emails and attachments via Resend API. Use when user asks about their emails, received
+  messages, or email attachments.
+metadata:
+  author: mjrussell
+  category: Communication
+  tags:
+  - communication
+  - resend
+  source: clawhub-community
+  clawhub_slug: resend
+  clawhub_path: mjrussell/resend
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Resend
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install resend
+
+    # Path: mjrussell/resend
+
+
+    ## Description
+
+    Manage received (inbound) emails and attachments via Resend API. Use when user asks about their emails, received messages,
+    or email attachments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install resend
+
+    ```'
+examples:
+- description: Install Resend from ClawHub
+  usage: clawhub install resend
+schema_version: '1.0'

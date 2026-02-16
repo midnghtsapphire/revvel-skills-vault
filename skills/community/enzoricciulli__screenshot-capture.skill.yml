@@ -1,0 +1,58 @@
+name: screenshot-capture
+title: Screenshot Capture
+version: 1.0.0
+description: Process screenshots Enzo shares with comments. Save to reference library, extract content, categorize, set reminders,
+  and log patterns. Use when Enzo sends an image with context like "save this", shares a screenshot of content (LinkedIn posts,
+  tweets, articles), or sends ideas/frameworks to remember
+metadata:
+  author: enzoricciulli
+  category: Media & Content
+  tags:
+  - media-content
+  - screenshot
+  - capture
+  source: clawhub-community
+  clawhub_slug: screenshot-capture
+  clawhub_path: enzoricciulli/screenshot-capture
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Screenshot Capture
+
+    # Source: ClawHub community skill by enzoricciulli
+
+    # Install: clawhub install screenshot-capture
+
+    # Path: enzoricciulli/screenshot-capture
+
+
+    ## Description
+
+    Process screenshots Enzo shares with comments. Save to reference library, extract content, categorize, set reminders,
+    and log patterns. Use when Enzo sends an image with context like "save this", shares a screenshot of content (LinkedIn
+    posts, tweets, articles), or sends ideas/frameworks to remember
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install screenshot-capture
+
+    ```'
+examples:
+- description: Install Screenshot Capture from ClawHub
+  usage: clawhub install screenshot-capture
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: alicloud-platform-multicloud-docs-api-benchmark
+title: Alicloud Platform Multicloud Docs Api Benchmark
+version: 1.0.0
+description: Benchmark similar product documentation and API documentation across Alibaba Cloud, AWS, Azure, GCP, Tencent
+  Cloud, Volcano Engine, and Huawei Cloud. Given one product keyword, auto-discover latest official docs/API links, score
+  quality consistently, and output detailed prioritized improvement recom
+metadata:
+  author: cinience
+  category: Development & Coding
+  tags:
+  - development-coding
+  - alicloud
+  - platform
+  - multicloud
+  - docs
+  - api
+  - benchmark
+  source: clawhub-community
+  clawhub_slug: alicloud-platform-multicloud-docs-api-benchmark
+  clawhub_path: cinience/alicloud-platform-multicloud-docs-api-benchmark
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Platform Multicloud Docs Api Benchmark
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-platform-multicloud-docs-api-benchmark
+
+    # Path: cinience/alicloud-platform-multicloud-docs-api-benchmark
+
+
+    ## Description
+
+    Benchmark similar product documentation and API documentation across Alibaba Cloud, AWS, Azure, GCP, Tencent Cloud, Volcano
+    Engine, and Huawei Cloud. Given one product keyword, auto-discover latest official docs/API links, score quality consistently,
+    and output detailed prioritized improvement recom
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/presets.json
+
+    - references/review-rubric.md
+
+    - references/scoring.json
+
+    - scripts/benchmark_multicloud_docs_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-platform-multicloud-docs-api-benchmark
+
+    ```'
+examples:
+- description: Install Alicloud Platform Multicloud Docs Api Benchmark from ClawHub
+  usage: clawhub install alicloud-platform-multicloud-docs-api-benchmark
+schema_version: '1.0'

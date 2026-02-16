@@ -1,0 +1,61 @@
+name: can
+title: 'CAN: Clock Address Naming'
+version: 1.2.2
+description: Three-pole naming for agents. Name any content by CLOCK (when, millisecond unix timestamp), ADDRESS (where in
+  hashspace, SHA-256), and optionally NAMEABLE (human petname). Use to verify content integrity, timestamp events, and maintain
+  a local content store where things are findable by time, hash, o
+metadata:
+  author: xccx
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - can
+  source: clawhub-community
+  clawhub_slug: can
+  clawhub_path: xccx/can
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CAN: Clock Address Naming
+
+    # Source: ClawHub community skill by xccx
+
+    # Install: clawhub install can
+
+    # Path: xccx/can
+
+
+    ## Description
+
+    Three-pole naming for agents. Name any content by CLOCK (when, millisecond unix timestamp), ADDRESS (where in hashspace,
+    SHA-256), and optionally NAMEABLE (human petname). Use to verify content integrity, timestamp events, and maintain a local
+    content store where things are findable by time, hash, o
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install can
+
+    ```'
+examples:
+- description: 'Install CAN: Clock Address Naming from ClawHub'
+  usage: clawhub install can
+schema_version: '1.0'

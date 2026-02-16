@@ -1,0 +1,59 @@
+name: custom-smtp-sender
+title: Custom Smtp Sender
+version: 1.0.0
+description: A skill to send emails with support for markdown, HTML text, and attachments, leveraging existing SMTP configuration
+  in `/home/bb/.openclaw/smtp-config.json`. Includes retry logic and logging.
+metadata:
+  author: scccmsd
+  category: Communication
+  tags:
+  - communication
+  - custom
+  - smtp
+  - sender
+  source: clawhub-community
+  clawhub_slug: custom-smtp-sender
+  clawhub_path: scccmsd/custom-smtp-sender
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Custom Smtp Sender
+
+    # Source: ClawHub community skill by scccmsd
+
+    # Install: clawhub install custom-smtp-sender
+
+    # Path: scccmsd/custom-smtp-sender
+
+
+    ## Description
+
+    A skill to send emails with support for markdown, HTML text, and attachments, leveraging existing SMTP configuration in
+    `/home/bb/.openclaw/smtp-config.json`. Includes retry logic and logging.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - email_sender.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install custom-smtp-sender
+
+    ```'
+examples:
+- description: Install Custom Smtp Sender from ClawHub
+  usage: clawhub install custom-smtp-sender
+schema_version: '1.0'

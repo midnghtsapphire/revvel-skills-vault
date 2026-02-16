@@ -1,0 +1,62 @@
+name: ios-simulator
+title: iOS Simulator Skill
+version: 0.1.2
+description: 'Automate iOS Simulator workflows (simctl + idb): create/boot/erase devices, install/launch apps, push notifications,
+  privacy grants, screenshots, and accessibility-based UI navigation. Use when working with iOS apps, Xcode, Simulator, simctl,
+  idb, UI automation, or iOS testing.'
+metadata:
+  author: tristanmanchester
+  category: Communication
+  tags:
+  - communication
+  - ios
+  - simulator
+  source: clawhub-community
+  clawhub_slug: ios-simulator
+  clawhub_path: tristanmanchester/ios-simulator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# iOS Simulator Skill
+
+    # Source: ClawHub community skill by tristanmanchester
+
+    # Install: clawhub install ios-simulator
+
+    # Path: tristanmanchester/ios-simulator
+
+
+    ## Description
+
+    Automate iOS Simulator workflows (simctl + idb): create/boot/erase devices, install/launch apps, push notifications, privacy
+    grants, screenshots, and accessibility-based UI navigation. Use when working with iOS apps, Xcode, Simulator, simctl,
+    idb, UI automation, or iOS testing.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/TROUBLESHOOTING.md
+
+    - scripts/ios-sim.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ios-simulator
+
+    ```'
+examples:
+- description: Install iOS Simulator Skill from ClawHub
+  usage: clawhub install ios-simulator
+schema_version: '1.0'

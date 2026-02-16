@@ -1,0 +1,60 @@
+name: sophie-optimizer
+title: Sophie Optimizer
+version: 1.0.0
+description: Automated context health management for OpenClaw. Monitors token usage, snapshots memory, and resets sessions
+  to maintain performance. Authored by Sophie.
+metadata:
+  author: zayresz
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - sophie
+  - optimizer
+  source: clawhub-community
+  clawhub_slug: sophie-optimizer
+  clawhub_path: zayresz/sophie-optimizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sophie Optimizer
+
+    # Source: ClawHub community skill by zayresz
+
+    # Install: clawhub install sophie-optimizer
+
+    # Path: zayresz/sophie-optimizer
+
+
+    ## Description
+
+    Automated context health management for OpenClaw. Monitors token usage, snapshots memory, and resets sessions to maintain
+    performance. Authored by Sophie.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - optimizer.py
+
+    - reset.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sophie-optimizer
+
+    ```'
+examples:
+- description: Install Sophie Optimizer from ClawHub
+  usage: clawhub install sophie-optimizer
+schema_version: '1.0'

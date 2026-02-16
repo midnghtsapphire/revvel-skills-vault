@@ -1,0 +1,56 @@
+name: pomodoro-bot
+title: Pomodoro Bot
+version: 1.0.0
+description: 专注番茄钟助手。启动25分钟工作倒计时 + 5分钟休息倒计时，支持暂停/跳过。当用户说“开始番茄钟”、“计时25分钟”、“休息时间到”等时触发。
+metadata:
+  author: nouop
+  category: General
+  tags:
+  - general
+  - pomodoro
+  - bot
+  source: clawhub-community
+  clawhub_slug: pomodoro-bot
+  clawhub_path: nouop/pomodoro-bot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pomodoro Bot
+
+    # Source: ClawHub community skill by nouop
+
+    # Install: clawhub install pomodoro-bot
+
+    # Path: nouop/pomodoro-bot
+
+
+    ## Description
+
+    专注番茄钟助手。启动25分钟工作倒计时 + 5分钟休息倒计时，支持暂停/跳过。当用户说“开始番茄钟”、“计时25分钟”、“休息时间到”等时触发。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/start_pomodoro.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pomodoro-bot
+
+    ```'
+examples:
+- description: Install Pomodoro Bot from ClawHub
+  usage: clawhub install pomodoro-bot
+schema_version: '1.0'

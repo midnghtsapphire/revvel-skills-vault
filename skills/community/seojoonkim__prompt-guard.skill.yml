@@ -1,0 +1,72 @@
+name: prompt-guard
+title: Prompt Guard
+version: 3.1.0
+description: Token-optimized prompt injection defense. 70% token reduction via tiered pattern loading, 90% reduction for repeated
+  requests via hash cache. 500+ patterns, 11 SHIELD categories, 10 language support.
+metadata:
+  author: seojoonkim
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - prompt
+  - guard
+  source: clawhub-community
+  clawhub_slug: prompt-guard
+  clawhub_path: seojoonkim/prompt-guard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prompt Guard
+
+    # Source: ClawHub community skill by seojoonkim
+
+    # Install: clawhub install prompt-guard
+
+    # Path: seojoonkim/prompt-guard
+
+
+    ## Description
+
+    Token-optimized prompt injection defense. 70% token reduction via tiered pattern loading, 90% reduction for repeated requests
+    via hash cache. 500+ patterns, 11 SHIELD categories, 10 language support.
+
+
+    ## Files
+
+    - ARCHITECTURE.md
+
+    - CHANGELOG.md
+
+    - CHANGELOG_LATEST.md
+
+    - README.md
+
+    - RELEASE-v3.1.0.md
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.yaml
+
+    - pyproject.toml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prompt-guard
+
+    ```'
+examples:
+- description: Install Prompt Guard from ClawHub
+  usage: clawhub install prompt-guard
+schema_version: '1.0'

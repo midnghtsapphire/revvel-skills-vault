@@ -1,0 +1,64 @@
+name: agent-council
+title: Agent Council
+version: 1.0.0
+description: Complete toolkit for creating autonomous AI agents and managing Discord channels for OpenClaw. Use when setting
+  up multi-agent systems, creating new agents, or managing Discord channel organization.
+metadata:
+  author: itsahedge
+  category: Social Media
+  tags:
+  - social-media
+  - agent
+  - council
+  source: clawhub-community
+  clawhub_slug: agent-council
+  clawhub_path: itsahedge/agent-council
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Council
+
+    # Source: ClawHub community skill by itsahedge
+
+    # Install: clawhub install agent-council
+
+    # Path: itsahedge/agent-council
+
+
+    ## Description
+
+    Complete toolkit for creating autonomous AI agents and managing Discord channels for OpenClaw. Use when setting up multi-agent
+    systems, creating new agents, or managing Discord channel organization.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/create-agent.sh
+
+    - scripts/rename_channel.py
+
+    - scripts/setup_channel.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-council
+
+    ```'
+examples:
+- description: Install Agent Council from ClawHub
+  usage: clawhub install agent-council
+schema_version: '1.0'

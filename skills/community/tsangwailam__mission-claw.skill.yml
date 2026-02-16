@@ -1,0 +1,58 @@
+name: mission-claw
+title: Mission Claw
+version: 0.1.2
+description: Log agent activities to Mission Claw dashboard with token usage tracking. Use when completing significant tasks,
+  subagent work, or any action worth recording in the activity feed. Triggers on task completion, activity logging, or tracking
+  agent work.
+metadata:
+  author: tsangwailam
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - mission
+  - claw
+  source: clawhub-community
+  clawhub_slug: mission-claw
+  clawhub_path: tsangwailam/mission-claw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mission Claw
+
+    # Source: ClawHub community skill by tsangwailam
+
+    # Install: clawhub install mission-claw
+
+    # Path: tsangwailam/mission-claw
+
+
+    ## Description
+
+    Log agent activities to Mission Claw dashboard with token usage tracking. Use when completing significant tasks, subagent
+    work, or any action worth recording in the activity feed. Triggers on task completion, activity logging, or tracking agent
+    work.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mission-claw
+
+    ```'
+examples:
+- description: Install Mission Claw from ClawHub
+  usage: clawhub install mission-claw
+schema_version: '1.0'

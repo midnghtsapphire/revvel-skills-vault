@@ -1,0 +1,58 @@
+name: veed-ugc
+title: VEED UGC
+version: 1.0.1
+description: Generate UGC-style promotional videos with AI lip-sync. Takes an image (person with product from Morpheus/Ad-Ready)
+  and a script (pure dialogue), creates a video of the person speaking. Uses ElevenLabs for voice synthesis.
+metadata:
+  author: pauldelavallaz
+  category: Media & Content
+  tags:
+  - media-content
+  - veed
+  - ugc
+  source: clawhub-community
+  clawhub_slug: veed-ugc
+  clawhub_path: pauldelavallaz/veed-ugc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# VEED UGC
+
+    # Source: ClawHub community skill by pauldelavallaz
+
+    # Install: clawhub install veed-ugc
+
+    # Path: pauldelavallaz/veed-ugc
+
+
+    ## Description
+
+    Generate UGC-style promotional videos with AI lip-sync. Takes an image (person with product from Morpheus/Ad-Ready) and
+    a script (pure dialogue), creates a video of the person speaking. Uses ElevenLabs for voice synthesis.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install veed-ugc
+
+    ```'
+examples:
+- description: Install VEED UGC from ClawHub
+  usage: clawhub install veed-ugc
+schema_version: '1.0'

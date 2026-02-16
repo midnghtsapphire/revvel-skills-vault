@@ -1,0 +1,34 @@
+name: casual-cron
+title: ''
+version: ''
+description: '"Create Clawdbot cron jobs from natural language with strict run-guard rules. Use when: users ask to schedule
+  reminders or messages (recurring or one-shot), especially via Telegram, or when they use /at or /every. Examples: ''Create
+  a daily reminder at 8am'', ''Remind me in 20 minutes'', ''Send me a Tele'
+metadata:
+  author: ''
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - casual
+  - cron
+  source: clawhub-community
+  clawhub_slug: casual-cron
+  clawhub_path: gostlightai/casual-cron/skills/casual-cron
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# \n# Source: ClawHub community skill by \n# Install: clawhub install casual-cron\n# Path: gostlightai/casual-cron/skills/casual-cron\n\
+    \n## Description\n\"Create Clawdbot cron jobs from natural language with strict run-guard rules. Use when: users ask to\
+    \ schedule reminders or messages (recurring or one-shot), especially via Telegram, or when they use /at or /every. Examples:\
+    \ 'Create a daily reminder at 8am', 'Remind me in 20 minutes', 'Send me a Tele\n\n## Files\n- CHANGELOG.md\n- SKILL.md\n\
+    - _meta.json\n- scripts/cron_builder.py\n- test/test_cron_builder.py\n\n## Installation\n```bash\nclawhub install casual-cron\n\
+    ```"
+examples:
+- description: Install  from ClawHub
+  usage: clawhub install casual-cron
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: baidu-baike
+title: baidu baike search
+version: 1.0.1
+description: The Baidu Baike Component is a knowledge service tool designed to query authoritative encyclopedia explanations
+  for various nouns. Its core function is given a specific "noun" (object, person, location, concept, event, etc.) provided
+  by the user, it returns a standardized, detailed entry explanation
+metadata:
+  author: jlpjavawayup
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - baidu
+  - baike
+  source: clawhub-community
+  clawhub_slug: baidu-baike
+  clawhub_path: jlpjavawayup/baidu-baike
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# baidu baike search
+
+    # Source: ClawHub community skill by jlpjavawayup
+
+    # Install: clawhub install baidu-baike
+
+    # Path: jlpjavawayup/baidu-baike
+
+
+    ## Description
+
+    The Baidu Baike Component is a knowledge service tool designed to query authoritative encyclopedia explanations for various
+    nouns. Its core function is given a specific "noun" (object, person, location, concept, event, etc.) provided by the user,
+    it returns a standardized, detailed entry explanation
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - baidu_baike.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install baidu-baike
+
+    ```'
+examples:
+- description: Install baidu baike search from ClawHub
+  usage: clawhub install baidu-baike
+schema_version: '1.0'

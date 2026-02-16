@@ -1,0 +1,74 @@
+name: sev-attestation
+title: sev-attestation
+version: 1.0.2
+description: Perform AMD SEV-SNP remote attestation to cryptographically verify VM identity and integrity. Use when proving
+  a VM is running in a genuine AMD SEV-SNP confidential computing environment, verifying VM integrity before trusting it with
+  secrets, checking SEV-SNP availability, generating attestation re
+metadata:
+  author: xinyuwang
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sev
+  - attestation
+  source: clawhub-community
+  clawhub_slug: sev-attestation
+  clawhub_path: xinyuwang/sev-attestation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# sev-attestation
+
+    # Source: ClawHub community skill by xinyuwang
+
+    # Install: clawhub install sev-attestation
+
+    # Path: xinyuwang/sev-attestation
+
+
+    ## Description
+
+    Perform AMD SEV-SNP remote attestation to cryptographically verify VM identity and integrity. Use when proving a VM is
+    running in a genuine AMD SEV-SNP confidential computing environment, verifying VM integrity before trusting it with secrets,
+    checking SEV-SNP availability, generating attestation re
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/error-codes.md
+
+    - references/manual-verification.md
+
+    - references/report-fields.md
+
+    - scripts/detect-sev-snp.sh
+
+    - scripts/fetch-certificates.sh
+
+    - scripts/full-attestation.sh
+
+    - scripts/generate-report.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sev-attestation
+
+    ```'
+examples:
+- description: Install sev-attestation from ClawHub
+  usage: clawhub install sev-attestation
+schema_version: '1.0'

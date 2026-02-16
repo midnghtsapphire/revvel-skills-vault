@@ -1,0 +1,56 @@
+name: proxmox-full
+title: Proxmox Full
+version: 1.0.0
+description: Complete Proxmox VE management - create/clone/start/stop VMs and LXC containers, manage snapshots, backups, storage,
+  and templates. Use when user wants to manage Proxmox infrastructure, virtual machines, or containers.
+metadata:
+  author: msarheed
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - proxmox
+  - full
+  source: clawhub-community
+  clawhub_slug: proxmox-full
+  clawhub_path: msarheed/proxmox-full
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Proxmox Full
+
+    # Source: ClawHub community skill by msarheed
+
+    # Install: clawhub install proxmox-full
+
+    # Path: msarheed/proxmox-full
+
+
+    ## Description
+
+    Complete Proxmox VE management - create/clone/start/stop VMs and LXC containers, manage snapshots, backups, storage, and
+    templates. Use when user wants to manage Proxmox infrastructure, virtual machines, or containers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install proxmox-full
+
+    ```'
+examples:
+- description: Install Proxmox Full from ClawHub
+  usage: clawhub install proxmox-full
+schema_version: '1.0'

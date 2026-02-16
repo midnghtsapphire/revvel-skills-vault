@@ -1,0 +1,70 @@
+name: openclaw-whisperer
+title: Openclaw Whisperer
+version: 1.2.0
+description: Comprehensive diagnostic, error-fixing, and skill recommendation tool for OpenClaw
+metadata:
+  author: phenixstar
+  category: General
+  tags:
+  - general
+  - openclaw
+  - whisperer
+  source: clawhub-community
+  clawhub_slug: openclaw-whisperer
+  clawhub_path: phenixstar/openclaw-whisperer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Whisperer
+
+    # Source: ClawHub community skill by phenixstar
+
+    # Install: clawhub install openclaw-whisperer
+
+    # Path: phenixstar/openclaw-whisperer
+
+
+    ## Description
+
+    Comprehensive diagnostic, error-fixing, and skill recommendation tool for OpenClaw
+
+
+    ## Files
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - data/complementary-skills.json
+
+    - data/error-patterns.json
+
+    - data/fix-execution-history.json
+
+    - data/fix-recipes.json
+
+    - data/integration-hooks.json
+
+    - references/authentication-errors.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-whisperer
+
+    ```'
+examples:
+- description: Install Openclaw Whisperer from ClawHub
+  usage: clawhub install openclaw-whisperer
+schema_version: '1.0'

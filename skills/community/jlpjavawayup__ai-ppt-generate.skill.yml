@@ -1,0 +1,64 @@
+name: ai-ppt-generate
+title: AI PPT generate
+version: 1.0.0
+description: The intelligent PPT generation tool is provided by Baidu. It is a tool that intelligently generates PPTS based
+  on the themes or questions given by users. Users can choose PPT themes, templates, or even customize their own templates.
+  It also provides image or resource files (such as pdf,word,txt, etc
+metadata:
+  author: jlpjavawayup
+  category: Media & Content
+  tags:
+  - media-content
+  - ppt
+  - generate
+  source: clawhub-community
+  clawhub_slug: ai-ppt-generate
+  clawhub_path: jlpjavawayup/ai-ppt-generate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI PPT generate
+
+    # Source: ClawHub community skill by jlpjavawayup
+
+    # Install: clawhub install ai-ppt-generate
+
+    # Path: jlpjavawayup/ai-ppt-generate
+
+
+    ## Description
+
+    The intelligent PPT generation tool is provided by Baidu. It is a tool that intelligently generates PPTS based on the
+    themes or questions given by users. Users can choose PPT themes, templates, or even customize their own templates. It
+    also provides image or resource files (such as pdf,word,txt, etc
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ppt_generate.py
+
+    - scripts/ppt_outline_generate.py
+
+    - scripts/ppt_theme_list.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-ppt-generate
+
+    ```'
+examples:
+- description: Install AI PPT generate from ClawHub
+  usage: clawhub install ai-ppt-generate
+schema_version: '1.0'

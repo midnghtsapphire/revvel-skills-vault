@@ -1,0 +1,75 @@
+name: nova-act-usability
+title: Website Usability Testing using Nova Act
+version: 1.0.3
+description: AI-orchestrated usability testing using Amazon Nova Act. The agent generates personas, runs tests to collect
+  raw data, interprets responses to determine goal achievement, and generates HTML reports. Tests real user workflows (booking,
+  checkout, posting) with safety guardrails. Use when asked to "tes
+metadata:
+  author: adityak6798
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - nova
+  - act
+  - usability
+  source: clawhub-community
+  clawhub_slug: website-usability-test-nova-act
+  clawhub_path: adityak6798/website-usability-test-nova-act
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Website Usability Testing using Nova Act
+
+    # Source: ClawHub community skill by adityak6798
+
+    # Install: clawhub install website-usability-test-nova-act
+
+    # Path: adityak6798/website-usability-test-nova-act
+
+
+    ## Description
+
+    AI-orchestrated usability testing using Amazon Nova Act. The agent generates personas, runs tests to collect raw data,
+    interprets responses to determine goal achievement, and generates HTML reports. Tests real user workflows (booking, checkout,
+    posting) with safety guardrails. Use when asked to "tes
+
+
+    ## Files
+
+    - .gitignore
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - assets/report-template.html
+
+    - references/nova-act-cookbook.md
+
+    - references/persona-examples.md
+
+    - scripts/dynamic_exploration.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install website-usability-test-nova-act
+
+    ```'
+examples:
+- description: Install Website Usability Testing using Nova Act from ClawHub
+  usage: clawhub install website-usability-test-nova-act
+schema_version: '1.0'

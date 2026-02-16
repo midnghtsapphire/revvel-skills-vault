@@ -1,0 +1,52 @@
+name: autonomus-ai
+title: My Skill
+version: 1.0.0
+description: ''
+metadata:
+  author: kosasih
+  category: General
+  tags:
+  - general
+  - autonomus
+  source: clawhub-community
+  clawhub_slug: autonomus-ai
+  clawhub_path: kosasih/autonomus-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# My Skill
+
+    # Source: ClawHub community skill by kosasih
+
+    # Install: clawhub install autonomus-ai
+
+    # Path: kosasih/autonomus-ai
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install autonomus-ai
+
+    ```'
+examples:
+- description: Install My Skill from ClawHub
+  usage: clawhub install autonomus-ai
+schema_version: '1.0'

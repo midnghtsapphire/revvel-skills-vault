@@ -1,0 +1,72 @@
+name: tbot-controller
+title: TBOT Controller
+version: 1.0.0
+description: Operate TradingBoat/TBOT (TBOT runtime stack) via a controlled automation interface (DB-first queries; lifecycle
+  control on explicit request).
+metadata:
+  author: plusgenie
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - tbot
+  - controller
+  source: clawhub-community
+  clawhub_slug: tbot-controller
+  clawhub_path: plusgenie/tbot-controller
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TBOT Controller
+
+    # Source: ClawHub community skill by plusgenie
+
+    # Install: clawhub install tbot-controller
+
+    # Path: plusgenie/tbot-controller
+
+
+    ## Description
+
+    Operate TradingBoat/TBOT (TBOT runtime stack) via a controlled automation interface (DB-first queries; lifecycle control
+    on explicit request).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/ops.md
+
+    - scripts/requirements.txt
+
+    - scripts/tbot.sh
+
+    - scripts/tbotctl.py
+
+    - scripts/tbotjson.py
+
+    - scripts/tbotstatus.py
+
+    - scripts/schema/__init__.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tbot-controller
+
+    ```'
+examples:
+- description: Install TBOT Controller from ClawHub
+  usage: clawhub install tbot-controller
+schema_version: '1.0'

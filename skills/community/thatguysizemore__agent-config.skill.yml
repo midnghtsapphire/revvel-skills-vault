@@ -1,0 +1,64 @@
+name: agent-config
+title: Agent Config
+version: 1.0.0
+description: Intelligently modify agent core context files (AGENTS.md, SOUL.md, IDENTITY.md, USER.md, TOOLS.md, MEMORY.md,
+  HEARTBEAT.md). Use when conversation involves changing agent behavior, updating rules, tweaking personality, modifying instructions,
+  adjusting operational procedures, updating memory archite
+metadata:
+  author: thatguysizemore
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  - config
+  source: clawhub-community
+  clawhub_slug: agent-config
+  clawhub_path: thatguysizemore/agent-config
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Config
+
+    # Source: ClawHub community skill by thatguysizemore
+
+    # Install: clawhub install agent-config
+
+    # Path: thatguysizemore/agent-config
+
+
+    ## Description
+
+    Intelligently modify agent core context files (AGENTS.md, SOUL.md, IDENTITY.md, USER.md, TOOLS.md, MEMORY.md, HEARTBEAT.md).
+    Use when conversation involves changing agent behavior, updating rules, tweaking personality, modifying instructions,
+    adjusting operational procedures, updating memory archite
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/change-protocol.md
+
+    - references/claude-patterns.md
+
+    - references/file-map.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-config
+
+    ```'
+examples:
+- description: Install Agent Config from ClawHub
+  usage: clawhub install agent-config
+schema_version: '1.0'

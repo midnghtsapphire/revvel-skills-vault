@@ -1,0 +1,63 @@
+name: notion
+title: Notion API
+version: 1.0.0
+description: Manage Notion notes, pages, and data sources with a JSON-first CLI for search, read/export, write/import, append,
+  and move operations. Use when working with Notion, organising notes, moving pages, triaging an inbox, or reading/writing
+  page content.
+metadata:
+  author: tristanmanchester
+  category: Search & Research
+  tags:
+  - search-research
+  - notion
+  source: clawhub-community
+  clawhub_slug: notion-api-automation
+  clawhub_path: tristanmanchester/notion-api-automation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notion API
+
+    # Source: ClawHub community skill by tristanmanchester
+
+    # Install: clawhub install notion-api-automation
+
+    # Path: tristanmanchester/notion-api-automation
+
+
+    ## Description
+
+    Manage Notion notes, pages, and data sources with a JSON-first CLI for search, read/export, write/import, append, and
+    move operations. Use when working with Notion, organising notes, moving pages, triaging an inbox, or reading/writing page
+    content.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/example-note.md
+
+    - assets/triage-rules.example.json
+
+    - scripts/notionctl.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notion-api-automation
+
+    ```'
+examples:
+- description: Install Notion API from ClawHub
+  usage: clawhub install notion-api-automation
+schema_version: '1.0'

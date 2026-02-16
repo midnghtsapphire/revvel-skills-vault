@@ -1,0 +1,58 @@
+name: codex-monitor
+title: Codex Monitor
+version: 0.1.0
+description: Browse OpenAI Codex session logs stored in ~/.codex/sessions. Provides list/show/watch helpers via the local
+  Swift project at ~/Developer/CodexMonitor.
+metadata:
+  author: odrobnik
+  category: Search & Research
+  tags:
+  - search-research
+  - codex
+  - monitor
+  source: clawhub-community
+  clawhub_slug: codex-monitor
+  clawhub_path: odrobnik/codex-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Codex Monitor
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install codex-monitor
+
+    # Path: odrobnik/codex-monitor
+
+
+    ## Description
+
+    Browse OpenAI Codex session logs stored in ~/.codex/sessions. Provides list/show/watch helpers via the local Swift project
+    at ~/Developer/CodexMonitor.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - codex_monitor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install codex-monitor
+
+    ```'
+examples:
+- description: Install Codex Monitor from ClawHub
+  usage: clawhub install codex-monitor
+schema_version: '1.0'

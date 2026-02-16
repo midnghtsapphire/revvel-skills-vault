@@ -1,0 +1,62 @@
+name: homepod-tts
+title: HomePod TTS
+version: 1.0.0
+description: 使用 Qwen3-TTS 生成 TTS 语音并通过 HomePod 播放。当用户说"播放语音到HomePod"、"用HomePod对我说话"、"让HomePod播报XXX"时触发。
+metadata:
+  author: propersama
+  category: General
+  tags:
+  - general
+  - homepod
+  - tts
+  source: clawhub-community
+  clawhub_slug: homepod-tts
+  clawhub_path: propersama/homepod-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# HomePod TTS
+
+    # Source: ClawHub community skill by propersama
+
+    # Install: clawhub install homepod-tts
+
+    # Path: propersama/homepod-tts
+
+
+    ## Description
+
+    使用 Qwen3-TTS 生成 TTS 语音并通过 HomePod 播放。当用户说"播放语音到HomePod"、"用HomePod对我说话"、"让HomePod播报XXX"时触发。
+
+
+    ## Files
+
+    - DEPENDENCIES.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/play-tts.sh
+
+    - tts/tts_sample.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install homepod-tts
+
+    ```'
+examples:
+- description: Install HomePod TTS from ClawHub
+  usage: clawhub install homepod-tts
+schema_version: '1.0'

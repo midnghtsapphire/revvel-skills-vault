@@ -1,0 +1,73 @@
+name: roofing_knowledge_mentor
+title: Roofing Knowledge Mentor
+version: 1.0.0
+description: Senior-level roofing, estimating, and operations guidance for contractors, adjusters, inspectors, and sales teams.
+  Use when users ask roofing questions that require expert reasoning, explanation, decision-making, or professional judgment
+  across measurements, proposals, insurance narratives, workflow
+metadata:
+  author: abrahamventura
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - roofing
+  - knowledge
+  - mentor
+  source: clawhub-community
+  clawhub_slug: roofing-knowledge-mentor
+  clawhub_path: abrahamventura/roofing-knowledge-mentor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Roofing Knowledge Mentor
+
+    # Source: ClawHub community skill by abrahamventura
+
+    # Install: clawhub install roofing-knowledge-mentor
+
+    # Path: abrahamventura/roofing-knowledge-mentor
+
+
+    ## Description
+
+    Senior-level roofing, estimating, and operations guidance for contractors, adjusters, inspectors, and sales teams. Use
+    when users ask roofing questions that require expert reasoning, explanation, decision-making, or professional judgment
+    across measurements, proposals, insurance narratives, workflow
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/insurance-narratives.md
+
+    - references/kpi-interpretation.md
+
+    - references/measurement-reasoning.md
+
+    - references/proposal-intelligence.md
+
+    - references/roofing-fundamentals.md
+
+    - references/workflow-best-practices.md
+
+    - scripts/quick_validate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install roofing-knowledge-mentor
+
+    ```'
+examples:
+- description: Install Roofing Knowledge Mentor from ClawHub
+  usage: clawhub install roofing-knowledge-mentor
+schema_version: '1.0'

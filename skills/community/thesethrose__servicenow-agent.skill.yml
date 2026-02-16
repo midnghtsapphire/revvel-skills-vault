@@ -1,0 +1,72 @@
+name: servicenow-agent
+title: ServiceNow Agent
+version: 0.1.1
+description: Read-only CLI access to ServiceNow Table, Attachment, Aggregate, and Service Catalog APIs; includes schema inspection
+  and history retrieval (read-only).
+metadata:
+  author: thesethrose
+  category: Development & Coding
+  tags:
+  - development-coding
+  - servicenow
+  - agent
+  source: clawhub-community
+  clawhub_slug: servicenow-agent
+  clawhub_path: thesethrose/servicenow-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ServiceNow Agent
+
+    # Source: ClawHub community skill by thesethrose
+
+    # Install: clawhub install servicenow-agent
+
+    # Path: thesethrose/servicenow-agent
+
+
+    ## Description
+
+    Read-only CLI access to ServiceNow Table, Attachment, Aggregate, and Service Catalog APIs; includes schema inspection
+    and history retrieval (read-only).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.mjs
+
+    - references/aggregate-api.yaml
+
+    - references/attachment.yaml
+
+    - references/service-catalog-api.yaml
+
+    - references/table-api.yaml
+
+    - specialists/attachments_incident.json
+
+    - specialists/incident_history_template.json
+
+    - specialists/incidents.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install servicenow-agent
+
+    ```'
+examples:
+- description: Install ServiceNow Agent from ClawHub
+  usage: clawhub install servicenow-agent
+schema_version: '1.0'

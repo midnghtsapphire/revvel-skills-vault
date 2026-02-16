@@ -1,0 +1,56 @@
+name: perplexity
+title: Perplexity
+version: 1.0.0
+description: Search the web with AI-powered answers via Perplexity API. Returns grounded responses with citations. Supports
+  batch queries.
+metadata:
+  author: zats
+  category: Search & Research
+  tags:
+  - search-research
+  - perplexity
+  source: clawhub-community
+  clawhub_slug: perplexity
+  clawhub_path: zats/perplexity
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Perplexity
+
+    # Source: ClawHub community skill by zats
+
+    # Install: clawhub install perplexity
+
+    # Path: zats/perplexity
+
+
+    ## Description
+
+    Search the web with AI-powered answers via Perplexity API. Returns grounded responses with citations. Supports batch queries.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install perplexity
+
+    ```'
+examples:
+- description: Install Perplexity from ClawHub
+  usage: clawhub install perplexity
+schema_version: '1.0'

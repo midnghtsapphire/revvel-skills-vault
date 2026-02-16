@@ -1,0 +1,55 @@
+name: auto-skill-builder
+title: Auto Skill Builder
+version: 0.1.0
+description: 自动构建 Claude AI Skills，结合 skill-seekers 自动生成和 skill-creator 最佳实践。支持从文档、GitHub 仓库、PDF 一键生成专业 Skill。
+metadata:
+  author: truongvknnlthao-gif
+  category: Development & Coding
+  tags:
+  - development-coding
+  - auto
+  - skill
+  - builder
+  source: clawhub-community
+  clawhub_slug: auto-skill-builder
+  clawhub_path: truongvknnlthao-gif/auto-skill-builder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Auto Skill Builder
+
+    # Source: ClawHub community skill by truongvknnlthao-gif
+
+    # Install: clawhub install auto-skill-builder
+
+    # Path: truongvknnlthao-gif/auto-skill-builder
+
+
+    ## Description
+
+    自动构建 Claude AI Skills，结合 skill-seekers 自动生成和 skill-creator 最佳实践。支持从文档、GitHub 仓库、PDF 一键生成专业 Skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install auto-skill-builder
+
+    ```'
+examples:
+- description: Install Auto Skill Builder from ClawHub
+  usage: clawhub install auto-skill-builder
+schema_version: '1.0'

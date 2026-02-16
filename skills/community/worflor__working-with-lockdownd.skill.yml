@@ -1,0 +1,75 @@
+name: working-with-lockdownd
+title: Working with Lockdownd
+version: 1.0.1
+description: Comprehensive toolkit for interacting with iOS devices over WiFi using the Apple Lockdown Protocol (port 62078).
+  Capabilities include device identification, real-time log streaming (syslog/os_trace), property querying (GetValue), and
+  cryptographic secret extraction. Incorporates research from 'The O
+metadata:
+  author: worflor
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - working
+  - with
+  - lockdownd
+  source: clawhub-community
+  clawhub_slug: working-with-lockdownd
+  clawhub_path: worflor/working-with-lockdownd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Working with Lockdownd
+
+    # Source: ClawHub community skill by worflor
+
+    # Install: clawhub install working-with-lockdownd
+
+    # Path: worflor/working-with-lockdownd
+
+
+    ## Description
+
+    Comprehensive toolkit for interacting with iOS devices over WiFi using the Apple Lockdown Protocol (port 62078). Capabilities
+    include device identification, real-time log streaming (syslog/os_trace), property querying (GetValue), and cryptographic
+    secret extraction. Incorporates research from ''The O
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/AGENT_CAPABILITIES.md
+
+    - references/FINDINGS.md
+
+    - references/MAGIC_HUNT.md
+
+    - references/NOVEL_DISCOVERIES.md
+
+    - references/ORCHARD_PROJECT_README.md
+
+    - references/WIFI_CAPABILITIES.md
+
+    - references/os_trace_analysis.md
+
+    - scripts/deep_probe.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install working-with-lockdownd
+
+    ```'
+examples:
+- description: Install Working with Lockdownd from ClawHub
+  usage: clawhub install working-with-lockdownd
+schema_version: '1.0'

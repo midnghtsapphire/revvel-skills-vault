@@ -1,0 +1,58 @@
+name: 4chan-reader
+title: 4chan-reader
+version: 1.0.0
+description: Browse 4chan boards and extract thread discussions into structured text files. Use when you need to fetch catalog
+  information or specific thread content (including post text and file metadata) from 4chan boards like /a/, /vg/, /v/, etc.
+metadata:
+  author: aiasisbot61
+  category: Search & Research
+  tags:
+  - search-research
+  - 4chan
+  - reader
+  source: clawhub-community
+  clawhub_slug: 4chan-reader
+  clawhub_path: aiasisbot61/4chan-reader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 4chan-reader
+
+    # Source: ClawHub community skill by aiasisbot61
+
+    # Install: clawhub install 4chan-reader
+
+    # Path: aiasisbot61/4chan-reader
+
+
+    ## Description
+
+    Browse 4chan boards and extract thread discussions into structured text files. Use when you need to fetch catalog information
+    or specific thread content (including post text and file metadata) from 4chan boards like /a/, /vg/, /v/, etc.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/chan_extractor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install 4chan-reader
+
+    ```'
+examples:
+- description: Install 4chan-reader from ClawHub
+  usage: clawhub install 4chan-reader
+schema_version: '1.0'

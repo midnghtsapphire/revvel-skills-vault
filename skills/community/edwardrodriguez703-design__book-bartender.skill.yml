@@ -1,0 +1,56 @@
+name: book-bartender
+title: Book Bartender
+version: 1.0.1
+description: Book bartender services through Lokuli MCP. Use when user needs to find and book bartender. Triggers on requests
+  like "book a bartender", "find bartender near me", or any bartender service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - bartender
+  source: clawhub-community
+  clawhub_slug: book-bartender
+  clawhub_path: edwardrodriguez703-design/book-bartender
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Bartender
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-bartender
+
+    # Path: edwardrodriguez703-design/book-bartender
+
+
+    ## Description
+
+    Book bartender services through Lokuli MCP. Use when user needs to find and book bartender. Triggers on requests like
+    "book a bartender", "find bartender near me", or any bartender service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-bartender
+
+    ```'
+examples:
+- description: Install Book Bartender from ClawHub
+  usage: clawhub install book-bartender
+schema_version: '1.0'

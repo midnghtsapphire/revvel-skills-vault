@@ -1,0 +1,71 @@
+name: tencentcloud-cos-skill
+title: 腾讯云COS存储
+version: 1.0.0
+description: 腾讯云对象存储(COS)和数据万象(CI)集成 - 基于官方MCP服务器的Clawdbot技能
+metadata:
+  author: shawnminh
+  category: General
+  tags:
+  - general
+  - tencentcloud
+  - cos
+  - skill
+  source: clawhub-community
+  clawhub_slug: tencent-cloud-cos
+  clawhub_path: shawnminh/tencent-cloud-cos
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 腾讯云COS存储
+
+    # Source: ClawHub community skill by shawnminh
+
+    # Install: clawhub install tencent-cloud-cos
+
+    # Path: shawnminh/tencent-cloud-cos
+
+
+    ## Description
+
+    腾讯云对象存储(COS)和数据万象(CI)集成 - 基于官方MCP服务器的Clawdbot技能
+
+
+    ## Files
+
+    - QUICK_START.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawhub.json
+
+    - install.sh
+
+    - package_skill.sh
+
+    - test_skill.py
+
+    - test_upload.txt
+
+    - config/clawdbot_config.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tencent-cloud-cos
+
+    ```'
+examples:
+- description: Install 腾讯云COS存储 from ClawHub
+  usage: clawhub install tencent-cloud-cos
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: meow-finder
+title: Meow Finder
+version: 1.0.0
+description: CLI tool to discover AI tools. Search 40+ curated tools by category, pricing, and use case.
+metadata:
+  author: abgohel
+  category: Search & Research
+  tags:
+  - search-research
+  - meow
+  - finder
+  source: clawhub-community
+  clawhub_slug: meow-finder
+  clawhub_path: abgohel/meow-finder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meow Finder
+
+    # Source: ClawHub community skill by abgohel
+
+    # Install: clawhub install meow-finder
+
+    # Path: abgohel/meow-finder
+
+
+    ## Description
+
+    CLI tool to discover AI tools. Search 40+ curated tools by category, pricing, and use case.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - bin/meow-finder.js
+
+    - data/tools.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meow-finder
+
+    ```'
+examples:
+- description: Install Meow Finder from ClawHub
+  usage: clawhub install meow-finder
+schema_version: '1.0'

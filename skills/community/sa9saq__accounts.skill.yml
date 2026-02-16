@@ -1,0 +1,53 @@
+name: accounts
+title: accounts
+version: 1.0.2
+description: Centralized account management for all platforms. Store usernames, URLs, and settings for SNS and marketplaces.
+metadata:
+  author: sa9saq
+  category: General
+  tags:
+  - general
+  - accounts
+  source: clawhub-community
+  clawhub_slug: accounts
+  clawhub_path: sa9saq/accounts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# accounts
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install accounts
+
+    # Path: sa9saq/accounts
+
+
+    ## Description
+
+    Centralized account management for all platforms. Store usernames, URLs, and settings for SNS and marketplaces.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install accounts
+
+    ```'
+examples:
+- description: Install accounts from ClawHub
+  usage: clawhub install accounts
+schema_version: '1.0'

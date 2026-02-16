@@ -1,0 +1,75 @@
+name: strava-cycling-coach
+title: Strava Cycling Coach
+version: 1.0.0
+description: Track and analyze cycling performance from Strava. Use when analyzing ride data, reviewing fitness trends, understanding
+  workout performance, or providing insights on cycling training. Automatically monitors new rides and provides performance
+  analysis.
+metadata:
+  author: ericrosenberg
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - strava
+  - cycling
+  - coach
+  source: clawhub-community
+  clawhub_slug: strava-cycling-coach
+  clawhub_path: ericrosenberg/strava-cycling-coach
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Strava Cycling Coach
+
+    # Source: ClawHub community skill by ericrosenberg
+
+    # Install: clawhub install strava-cycling-coach
+
+    # Path: ericrosenberg/strava-cycling-coach
+
+
+    ## Description
+
+    Track and analyze cycling performance from Strava. Use when analyzing ride data, reviewing fitness trends, understanding
+    workout performance, or providing insights on cycling training. Automatically monitors new rides and provides performance
+    analysis.
+
+
+    ## Files
+
+    - README.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/analyze_and_notify.py
+
+    - scripts/analyze_rides.py
+
+    - scripts/auto_analyze_new_rides.sh
+
+    - scripts/cache_manager.py
+
+    - scripts/complete_auth.py
+
+    - scripts/get_latest_ride.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install strava-cycling-coach
+
+    ```'
+examples:
+- description: Install Strava Cycling Coach from ClawHub
+  usage: clawhub install strava-cycling-coach
+schema_version: '1.0'

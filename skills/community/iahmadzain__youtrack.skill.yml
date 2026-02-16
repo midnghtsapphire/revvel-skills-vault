@@ -1,0 +1,55 @@
+name: youtrack
+title: YouTrack Issue Tracker
+version: 1.0.1
+description: Manage YouTrack issues, projects, and workflows via CLI. Use when creating, updating, searching, or commenting
+  on YouTrack issues, listing projects, checking issue states, or automating issue workflows.
+metadata:
+  author: iahmadzain
+  category: Search & Research
+  tags:
+  - search-research
+  - youtrack
+  source: clawhub-community
+  clawhub_slug: youtrack
+  clawhub_path: iahmadzain/youtrack
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTrack Issue Tracker
+
+    # Source: ClawHub community skill by iahmadzain
+
+    # Install: clawhub install youtrack
+
+    # Path: iahmadzain/youtrack
+
+
+    ## Description
+
+    Manage YouTrack issues, projects, and workflows via CLI. Use when creating, updating, searching, or commenting on YouTrack
+    issues, listing projects, checking issue states, or automating issue workflows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtrack
+
+    ```'
+examples:
+- description: Install YouTrack Issue Tracker from ClawHub
+  usage: clawhub install youtrack
+schema_version: '1.0'

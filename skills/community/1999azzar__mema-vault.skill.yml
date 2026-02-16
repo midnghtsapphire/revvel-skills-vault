@@ -1,0 +1,58 @@
+name: mema-vault
+title: Mema Vault
+version: 1.0.0
+description: Secure credential manager for Mema. Uses AES-256 encryption and best practices to store, retrieve, and rotate
+  secrets. NEVER output raw secrets in logs or casual chat.
+metadata:
+  author: 1999azzar
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - mema
+  - vault
+  source: clawhub-community
+  clawhub_slug: mema-vault
+  clawhub_path: 1999azzar/mema-vault
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mema Vault
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install mema-vault
+
+    # Path: 1999azzar/mema-vault
+
+
+    ## Description
+
+    Secure credential manager for Mema. Uses AES-256 encryption and best practices to store, retrieve, and rotate secrets.
+    NEVER output raw secrets in logs or casual chat.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/security-policy.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mema-vault
+
+    ```'
+examples:
+- description: Install Mema Vault from ClawHub
+  usage: clawhub install mema-vault
+schema_version: '1.0'

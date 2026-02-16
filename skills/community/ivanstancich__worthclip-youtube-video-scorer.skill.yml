@@ -1,0 +1,70 @@
+name: worthclip
+title: Youtube video scorer
+version: 1.0.6
+description: '"AI-powered YouTube video scoring. Scores videos 1-10 based on your learning goals and persona. Use when the
+  user wants to evaluate YouTube videos, check their scored feed, manage tracked channels, or check API usage. Get AI summaries,
+  alignment analysis, and a curated video feed. Keywords: YouTube,'
+metadata:
+  author: ivanstancich
+  category: Media & Content
+  tags:
+  - media-content
+  - worthclip
+  - bash read
+  source: clawhub-community
+  clawhub_slug: worthclip-youtube-video-scorer
+  clawhub_path: ivanstancich/worthclip-youtube-video-scorer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash Read
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Youtube video scorer
+
+    # Source: ClawHub community skill by ivanstancich
+
+    # Install: clawhub install worthclip-youtube-video-scorer
+
+    # Path: ivanstancich/worthclip-youtube-video-scorer
+
+
+    ## Description
+
+    "AI-powered YouTube video scoring. Scores videos 1-10 based on your learning goals and persona. Use when the user wants
+    to evaluate YouTube videos, check their scored feed, manage tracked channels, or check API usage. Get AI summaries, alignment
+    analysis, and a curated video feed. Keywords: YouTube,
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/feed.sh
+
+    - scripts/score.sh
+
+    - scripts/usage.sh
+
+
+    ## Allowed Tools
+
+    Bash Read
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install worthclip-youtube-video-scorer
+
+    ```'
+examples:
+- description: Install Youtube video scorer from ClawHub
+  usage: clawhub install worthclip-youtube-video-scorer
+schema_version: '1.0'

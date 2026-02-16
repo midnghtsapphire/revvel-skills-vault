@@ -1,0 +1,68 @@
+name: ai-video-gen
+title: Ai Video Gen
+version: 1.0.0
+description: End-to-end AI video generation - create videos from text prompts using image generation, video synthesis, voice-over,
+  and editing. Supports OpenAI DALL-E, Replicate models, LumaAI, Runway, and FFmpeg editing.
+metadata:
+  author: rhanbourinajd
+  category: Media & Content
+  tags:
+  - media-content
+  - video
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-video-gen
+  clawhub_path: rhanbourinajd/ai-video-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ai Video Gen
+
+    # Source: ClawHub community skill by rhanbourinajd
+
+    # Install: clawhub install ai-video-gen
+
+    # Path: rhanbourinajd/ai-video-gen
+
+
+    ## Description
+
+    End-to-end AI video generation - create videos from text prompts using image generation, video synthesis, voice-over,
+    and editing. Supports OpenAI DALL-E, Replicate models, LumaAI, Runway, and FFmpeg editing.
+
+
+    ## Files
+
+    - QUICK_START.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - add_voiceover.py
+
+    - generate_video.py
+
+    - images_to_video.py
+
+    - requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-video-gen
+
+    ```'
+examples:
+- description: Install Ai Video Gen from ClawHub
+  usage: clawhub install ai-video-gen
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: startup
+title: Startup
+version: 1.0.0
+description: Orchestrate startup work by spawning specialized agents and applying stage-appropriate priorities.
+metadata:
+  author: ivangdavila
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - startup
+  source: clawhub-community
+  clawhub_slug: startup
+  clawhub_path: ivangdavila/startup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Startup
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install startup
+
+    # Path: ivangdavila/startup
+
+
+    ## Description
+
+    Orchestrate startup work by spawning specialized agents and applying stage-appropriate priorities.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install startup
+
+    ```'
+examples:
+- description: Install Startup from ClawHub
+  usage: clawhub install startup
+schema_version: '1.0'

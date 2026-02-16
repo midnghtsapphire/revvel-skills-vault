@@ -1,0 +1,179 @@
+name: cardiovascular
+title: Cardiovascular Disease Research
+version: 1.0.0
+description: Comprehensive cardiovascular disease research module for risk modeling, lipid analysis, biomarker evaluation,
+  therapy recommendations, and lifestyle interventions.
+metadata:
+  author: Revvel AI Engine
+  category: Medical & Health
+  tags:
+  - cardiac-biomarker-evaluation
+  - arrhythmia-detection
+  - statin-alternatives-recommendation
+  - cardiac-imaging-analysis
+  - cardiovascular
+  - lifestyle-intervention-protocols
+  - emerging-therapies-analysis
+  - lipid-panel-analysis
+  - heart-disease-risk-modeling
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport os\nimport re\nimport math\nimport hashlib\nimport requests\nimport unittest\nfrom datetime\
+    \ import datetime\nfrom typing import Dict, List, Any, Optional, Tuple, Union\nfrom collections import defaultdict, namedtuple\n\
+    from statistics import mean, median, stdev\n\nSKILL_METADATA = {\n    \"name\": \"Cardiovascular Disease Research\",\n\
+    \    \"id\": \"cardiovascular\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\"\
+    : \"Comprehensive cardiovascular disease research module for risk modeling, lipid analysis, biomarker evaluation, therapy\
+    \ recommendations, and lifestyle interventions.\",\n    \"capabilities\": [\n        \"heart_disease_risk_modeling\",\n\
+    \        \"lipid_panel_analysis\",\n        \"cardiac_biomarker_evaluation\",\n        \"statin_alternatives_recommendation\"\
+    ,\n        \"emerging_therapies_analysis\",\n        \"lifestyle_intervention_protocols\",\n        \"cardiac_imaging_analysis\"\
+    ,\n        \"arrhythmia_detection\",\n        \"blood_pressure_optimization\"\n    ],\n    \"domain\": \"cardiovascular_medicine\"\
+    \n}\n\nEXPERT_PROMPTS = {\n    \"risk_assessment\": \"\"\"You are a cardiovascular specialist. Assess the 10-year ASCVD\
+    \ risk for a {age}-year-old {gender} with the following profile:\n- Total cholesterol: {total_chol} mg/dL\n- HDL cholesterol:\
+    \ {hdl} mg/dL\n- Systolic BP: {systolic_bp} mmHg\n- On BP medication: {bp_meds}\n- Diabetes status: {diabetes}\n- Smoking\
+    \ status: {smoker}\n- Family history of premature CAD: {family_history}\n\nProvide risk score, risk category, and evidence-based\
+    \ recommendations for primary prevention.\"\"\",\n    \n    \"lipid_analysis\": \"\"\"Analyze this lipid panel for {patient_name}:\n\
+    - Total cholesterol: {total_chol} mg/dL\n- LDL cholesterol: {ldl} mg/dL  \n- HDL cholesterol: {hdl} mg/dL\n- Triglycerides:\
+    \ {tg} mg/dL\n- Non-HDL cholesterol: {non_hdl} mg/dL\n- Patient age: {age}\n- Existing conditions: {conditions}\n\nInterpret\
+    \ results, calculate ratios, assess cardiovascular risk, and recommend treatment targets based on {risk_level} risk profile.\"\
+    \"\",\n    \n    \"biomarker_evaluation\": \"\"\"Evaluate these cardiac biomarkers for {patient_name}:\n- High-sensitivity\
+    \ CRP: {hs_crp} mg/L\n- NT-proBNP: {nt_probnp} pg/mL\n- Troponin I: {troponin} ng/mL\n- Lipoprotein(a): {lpa} mg/dL\n\
+    - Apolipoprotein B: {apob} mg/dL\n\nInterpret values, assess prognostic significance, and recommend clinical actions based\
+    \ on {clinical_context}.\"\"\",\n    \n    \"statin_intolerance\": \"\"\"Patient {patient_name} reports {symptoms} on\
+    \ {statin_type} at {dose}mg daily for {duration} weeks.\nCurrent lipid profile: LDL {ldl} mg/dL, Total {total} mg/dL,\
+    \ HDL {hdl} mg/dL, TG {tg} mg/dL.\nCK level: {ck_level} U/L (normal <{ck_normal} U/L)\n\nRecommend statin alternatives\
+    \ or non-statin therapies to achieve LDL target of <{target_ldl} mg/dL.\"\"\",\n    \n    \"emerging_therapies\": \"\"\
+    \"For a {age}-year-old {gender} with {condition} and baseline LDL {baseline_ldl} mg/dL:\n- Failed to achieve target on\
+    \ maximally tolerated statin + ezetimibe\n- Has {comorbidities}\n- Insurance status: {insurance}\n\nEvaluate suitability\
+    \ for PCSK9 inhibitors, inclisiran, bempedoic acid, or other emerging therapies. Include efficacy data, administration,\
+    \ monitoring, and cost considerations.\"\"\",\n    \n    \"lifestyle_intervention\": \"\"\"Design a comprehensive lifestyle\
+    \ intervention for {patient_name}, a {age}-year-old {gender} with:\n- BMI: {bmi} kg/m²\n- Waist circumference: {waist}\
+    \ cm\n- Blood pressure: {bp} mmHg\n- Current diet: {diet}\n- Physical activity: {activity_level}\n- Smoking: {smoking}\n\
+    - Alcohol: {alcohol}\n\nInclude specific dietary modifications, exercise prescription, weight loss targets, and behavioral\
+    \ strategies.\"\"\",\n    \n    \"imaging_analysis\": \"\"\"Analyze the following cardiac imaging findings for {patient_name}:\n\
+    - Coronary calcium score: {cac_score}\n- Carotid IMT: {cimt} mm\n- Echo EF: {ef}%\n- Wall motion: {wall_motion}\n- Valvular\
+    \ disease: {valves}\n\nAssess cardiovascular risk, recommend follow-up intervals, and suggest additional testing if needed.\"\
+    \"\",\n    \n    \"arrhythmia_evaluation\": \"\"\"Evaluate this ECG for arrhythmia:\n- Rhythm: {rhythm}\n- Heart rate:\
+    \ {hr} bpm\n- PR interval: {pr} ms\n- QRS duration: {qrs} ms\n- QTc: {qtc} ms\n- P wave morphology: {p_wave}\n- QRS morphology:\
+    \ {qrs_morphology}\n- Symptoms: {symptoms}\n\nIdentify arrhythmia type, assess clinical significance, and recommend management\
+    \ strategy.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"pubmed_api\": {\n        \"type\": \"api\",\n        \"endpoint\"\
+    : \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/\",\n        \"description\": \"PubMed API for accessing cardiovascular\
+    \ research literature\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://www.ncbi.nlm.nih.gov/books/NBK25501/\"\
+    \n    },\n    \"clinical_trials_gov\": {\n        \"type\": \"api\", \n        \"endpoint\": \"https://clinicaltrials.gov/api/\"\
+    ,\n        \"description\": \"Clinical trials database for cardiovascular studies\",\n        \"auth_method\": \"none\"\
+    ,\n        \"documentation_url\": \"https://clinicaltrials.gov/api/\"\n    },\n    \"fda_drugs_api\": {\n        \"type\"\
+    : \"api\",\n        \"endpoint\": \"https://api.fda.gov/drug/\",\n        \"description\": \"FDA drug information and\
+    \ approvals\",\n        \"auth_method\": \"none\", \n        \"documentation_url\": \"https://open.fda.gov/apis/drug/\"\
+    \n    },\n    \"lipid_research_database\": {\n        \"type\": \"database\",\n        \"endpoint\": \"postgresql://lipid-db.research.org:5432/lipidomics\"\
+    ,\n        \"description\": \"Comprehensive lipid metabolism research database\",\n        \"auth_method\": \"oauth2\"\
+    ,\n        \"documentation_url\": \"https://lipid-db.research.org/docs\"\n    },\n    \"cardiac_imaging_ai\": {\n    \
+    \    \"type\": \"tool\",\n        \"endpoint\": \"https://cardiac-ai.research.org/api/v1/analyze\",\n        \"description\"\
+    : \"AI-powered cardiac imaging analysis platform\",\n        \"auth_method\": \"bearer_token\",\n        \"documentation_url\"\
+    : \"https://cardiac-ai.research.org/docs\"\n    }\n}\n\ndef calculate_ascvd_risk(age: int, gender: str, total_chol: float,\
+    \ hdl: float, systolic_bp: float, \n                        bp_meds: bool, diabetes: bool, smoker: bool) -> Dict[str,\
+    \ Any]:\n    \"\"\"Calculate 10-year ASCVD risk using pooled cohort equations.\"\"\"\n    if not (40 <= age <= 79):\n\
+    \        raise ValueError(\"Age must be between 40-79 years for ASCVD calculation\")\n    \n    # Convert to risk factors\n\
+    \    age_rf = math.log(age)\n    tot_chol_rf = math.log(total_chol)\n    hdl_rf = math.log(hdl)\n    systolic_rf = systolic_bp\n\
+    \    \n    # Coefficients for white male (simplified version)\n    if gender.lower() == 'male':\n        baseline_survival\
+    \ = 0.9144\n        coefficients = {\n            'age': 12.344, 'age_sq': 0, 'tot_chol': 11.853, 'age_tot_chol': -2.664,\n\
+    \            'hdl': -7.990, 'age_hdl': 1.769, 'treated_systolic': 1.797,\n            'untreated_systolic': 1.764, 'diabetes':\
+    \ 0.657, 'smoker': 7.837, 'age_smoker': -1.795\n        }\n    else:\n        baseline_survival = 0.9665\n        coefficients\
+    \ = {\n            'age': -29.799, 'age_sq': 4.884, 'tot_chol': 13.540, 'age_tot_chol': -3.114,\n            'hdl': -13.578,\
+    \ 'age_hdl': 3.149, 'treated_systolic': 2.019,\n            'untreated_systolic': 1.957, 'diabetes': 0.661, 'smoker':\
+    \ 7.574, 'age_smoker': -1.665\n        }\n    \n    # Calculate linear predictor\n    lp = (coefficients['age'] * age_rf\
+    \ +\n          coefficients['tot_chol'] * tot_chol_rf +\n          coefficients['hdl'] * hdl_rf)\n    \n    if bp_meds:\n\
+    \        lp += coefficients['treated_systolic'] * math.log(systolic_rf)\n    else:\n        lp += coefficients['untreated_systolic']\
+    \ * math.log(systolic_rf)\n    \n    if diabetes:\n        lp += coefficients['diabetes']\n    if smoker:\n        lp\
+    \ += coefficients['smoker'] + coefficients['age_smoker'] * age_rf\n    \n    # Calculate 10-year risk\n    risk = 1 -\
+    \ math.pow(baseline_survival, math.exp(lp - (coefficients['age'] * math.log(55) if gender.lower() == 'male' else coefficients['age']\
+    \ * math.log(55))))\n    \n    risk = max(0, min(1, risk))  # Bound between 0-1\n    \n    risk_category = \"Low\" if\
+    \ risk < 0.075 else \"Intermediate\" if risk < 0.2 else \"High\"\n    \n    return {\n        \"risk_score\": round(risk\
+    \ * 100, 2),\n        \"risk_category\": risk_category,\n        \"recommendations\": get_risk_recommendations(risk_category)\n\
+    \    }\n\ndef get_risk_recommendations(risk_category: str) -> List[str]:\n    \"\"\"Get evidence-based recommendations\
+    \ based on risk category.\"\"\"\n    recommendations = {\n        \"Low\": [\n            \"Continue lifestyle modifications\"\
+    ,\n            \"Reassess risk in 4-6 years\",\n            \"Consider aspirin if benefit outweighs bleeding risk\"\n\
+    \        ],\n        \"Intermediate\": [\n            \"Intensify lifestyle modifications\",\n            \"Consider moderate-intensity\
+    \ statin therapy\",\n            \"Consider coronary calcium scoring for further risk stratification\"\n        ],\n \
+    \       \"High\": [\n            \"Initiate high-intensity statin therapy\",\n            \"Target LDL-C reduction ≥50%\"\
+    ,\n            \"Consider aspirin 81mg daily\",\n            \"Optimize blood pressure control\"\n        ]\n    }\n \
+    \   return recommendations.get(risk_category, [])\n\ndef analyze_lipid_panel(total_chol: float, ldl: float, hdl: float,\
+    \ tg: float, \n                       age: int = None, fasting: bool = True) -> Dict[str, Any]:\n    \"\"\"Comprehensive\
+    \ lipid panel analysis with ratios and risk assessment.\"\"\"\n    if total_chol < 50 or total_chol > 500:\n        raise\
+    \ ValueError(\"Total cholesterol must be between 50-500 mg/dL\")\n    if ldl < 10 or ldl > 300:\n        raise ValueError(\"\
+    LDL must be between 10-300 mg/dL\")\n    if hdl < 10 or hdl > 150:\n        raise ValueError(\"HDL must be between 10-150\
+    \ mg/dL\")\n    if tg < 10 or tg > 2000:\n        raise ValueError(\"Triglycerides must be between 10-2000 mg/dL\")\n\
+    \    \n    non_hdl = total_chol - hdl\n    chol_hdl_ratio = total_chol / hdl if hdl > 0 else float('inf')\n    ldl_hdl_ratio\
+    \ = ldl / hdl if hdl > 0 else float('inf')\n    tg_hdl_ratio = tg / hdl if hdl > 0 else float('inf')\n    \n    # ATP\
+    \ III classifications\n    ldl_category = \"Optimal\" if ldl < 100 else \"Near optimal\" if ldl < 130 else \"Borderline\
+    \ high\" if ldl < 160 else \"High\" if ldl < 190 else \"Very high\"\n    hdl_category = \"Low\" if hdl < 40 else \"Normal\"\
+    \ if hdl < 60 else \"High\"\n    tg_category = \"Normal\" if tg < 150 else \"Borderline high\" if tg < 200 else \"High\"\
+    \ if tg < 500 else \"Very high\"\n    \n    # Calculate remnant cholesterol\n    remnant_chol = total_chol - hdl - ldl\n\
+    \    \n    return {\n        \"lipid_values\": {\n            \"total_cholesterol\": total_chol,\n            \"ldl\"\
+    : ldl,\n            \"hdl\": hdl,\n            \"triglycerides\": tg,\n            \"non_hdl\": round(non_hdl, 1),\n \
+    \           \"remnant_cholesterol\": round(remnant_chol, 1)\n        },\n        \"ratios\": {\n            \"total_chol_hdl\"\
+    : round(chol_hdl_ratio, 2),\n            \"ldl_hdl\": round(ldl_hdl_ratio, 2),\n            \"tg_hdl\": round(tg_hdl_ratio,\
+    \ 2)\n        },\n        \"classifications\": {\n            \"ldl\": ldl_category,\n            \"hdl\": hdl_category,\n\
+    \            \"triglycerides\": tg_category\n        },\n        \"fasting\": fasting\n    }\n\n\ndef calculate_framingham_risk(age:\
+    \ int, sex: str, total_chol: float, hdl: float,\n                              systolic_bp: float, bp_treated: bool =\
+    \ False,\n                              smoker: bool = False, diabetic: bool = False) -> Dict[str, Any]:\n    \"\"\"Calculate\
+    \ 10-year cardiovascular risk using Framingham Risk Score.\"\"\"\n    if sex.lower() not in ('male', 'female'):\n    \
+    \    raise ValueError(\"Sex must be 'male' or 'female'\")\n    \n    points = 0\n    \n    # Age points\n    if sex.lower()\
+    \ == 'male':\n        if age < 35: points += -9\n        elif age < 40: points += -4\n        elif age < 45: points +=\
+    \ 0\n        elif age < 50: points += 3\n        elif age < 55: points += 6\n        elif age < 60: points += 8\n    \
+    \    elif age < 65: points += 10\n        elif age < 70: points += 11\n        else: points += 12\n    else:\n       \
+    \ if age < 35: points += -7\n        elif age < 40: points += -3\n        elif age < 45: points += 0\n        elif age\
+    \ < 50: points += 3\n        elif age < 55: points += 6\n        elif age < 60: points += 8\n        elif age < 65: points\
+    \ += 10\n        elif age < 70: points += 12\n        else: points += 14\n    \n    # Cholesterol points\n    if total_chol\
+    \ < 160: points += 0\n    elif total_chol < 200: points += 1\n    elif total_chol < 240: points += 2\n    elif total_chol\
+    \ < 280: points += 3\n    else: points += 4\n    \n    # HDL points\n    if hdl >= 60: points += -1\n    elif hdl >= 50:\
+    \ points += 0\n    elif hdl >= 40: points += 1\n    else: points += 2\n    \n    # Blood pressure\n    if systolic_bp\
+    \ < 120: points += 0\n    elif systolic_bp < 130: points += 1 if not bp_treated else 2\n    elif systolic_bp < 140: points\
+    \ += 1 if not bp_treated else 2\n    elif systolic_bp < 160: points += 2 if not bp_treated else 3\n    else: points +=\
+    \ 3 if not bp_treated else 4\n    \n    if smoker: points += 2\n    if diabetic: points += 2\n    \n    # Approximate\
+    \ risk percentage\n    risk_table = {-3: 1, -2: 1, -1: 2, 0: 3, 1: 4, 2: 5, 3: 6, 4: 8,\n                  5: 10, 6: 12,\
+    \ 7: 14, 8: 16, 9: 20, 10: 25, 11: 30}\n    risk_pct = risk_table.get(min(max(points, -3), 11), 30)\n    \n    risk_category\
+    \ = 'low' if risk_pct < 10 else 'moderate' if risk_pct < 20 else 'high'\n    \n    return {\n        'total_points': points,\n\
+    \        'ten_year_risk_percent': risk_pct,\n        'risk_category': risk_category,\n        'factors': {\n         \
+    \   'age': age, 'sex': sex, 'total_cholesterol': total_chol,\n            'hdl': hdl, 'systolic_bp': systolic_bp, 'bp_treated':\
+    \ bp_treated,\n            'smoker': smoker, 'diabetic': diabetic\n        }\n    }\n\n\ndef recommend_statin_alternatives(ldl:\
+    \ float, risk_category: str,\n                                   statin_intolerant: bool = False) -> List[Dict[str, Any]]:\n\
+    \    \"\"\"Recommend statin alternatives based on patient profile.\"\"\"\n    alternatives = []\n    \n    if statin_intolerant\
+    \ or risk_category == 'high':\n        alternatives.append({\n            'drug_class': 'PCSK9 Inhibitors',\n        \
+    \    'examples': ['Evolocumab (Repatha)', 'Alirocumab (Praluent)'],\n            'ldl_reduction': '50-60%',\n        \
+    \    'mechanism': 'Monoclonal antibodies that increase LDL receptor recycling'\n        })\n    \n    alternatives.append({\n\
+    \        'drug_class': 'Ezetimibe',\n        'examples': ['Zetia'],\n        'ldl_reduction': '15-20%',\n        'mechanism':\
+    \ 'Blocks cholesterol absorption in small intestine'\n    })\n    \n    alternatives.append({\n        'drug_class': 'Bempedoic\
+    \ Acid',\n        'examples': ['Nexletol'],\n        'ldl_reduction': '15-25%',\n        'mechanism': 'ACL inhibitor upstream\
+    \ of HMG-CoA reductase'\n    })\n    \n    if ldl > 190:\n        alternatives.append({\n            'drug_class': 'Inclisiran\
+    \ (RNA Therapeutics)',\n            'examples': ['Leqvio'],\n            'ldl_reduction': '50%',\n            'mechanism':\
+    \ 'siRNA targeting PCSK9 mRNA — twice yearly injection'\n        })\n    \n    return alternatives\n\n\nclass SkillEngine:\n\
+    \    \"\"\"Cardiovascular Disease Research skill engine.\"\"\"\n    \n    def __init__(self):\n        self.name = SKILL_METADATA['name']\n\
+    \        self.version = SKILL_METADATA['version']\n    \n    def run(self, action: str, **kwargs) -> Dict[str, Any]:\n\
+    \        actions = {\n            'lipid_panel': lambda: analyze_lipid_panel(**kwargs),\n            'framingham_risk':\
+    \ lambda: calculate_framingham_risk(**kwargs),\n            'statin_alternatives': lambda: recommend_statin_alternatives(**kwargs),\n\
+    \        }\n        if action in actions:\n            return actions[action]()\n        return {'error': f'Unknown action:\
+    \ {action}'}\n\n\nclass TestCardiovascular(unittest.TestCase):\n    \"\"\"Unit tests for Cardiovascular Disease Research\
+    \ skill.\"\"\"\n    \n    def test_metadata(self):\n        self.assertEqual(SKILL_METADATA['id'], 'cardiovascular')\n\
+    \    \n    def test_lipid_panel(self):\n        result = analyze_lipid_panel(total_chol=200, ldl=120, hdl=55, tg=150)\n\
+    \        self.assertIn('lipid_values', result)\n        self.assertIn('ratios', result)\n        self.assertIn('classifications',\
+    \ result)\n    \n    def test_lipid_panel_invalid(self):\n        with self.assertRaises(ValueError):\n            analyze_lipid_panel(total_chol=10,\
+    \ ldl=120, hdl=55, tg=150)\n    \n    def test_framingham_risk(self):\n        result = calculate_framingham_risk(\n \
+    \           age=55, sex='male', total_chol=220, hdl=45,\n            systolic_bp=140, smoker=True\n        )\n       \
+    \ self.assertIn('ten_year_risk_percent', result)\n        self.assertIn('risk_category', result)\n    \n    def test_statin_alternatives(self):\n\
+    \        result = recommend_statin_alternatives(ldl=200, risk_category='high', statin_intolerant=True)\n        self.assertIsInstance(result,\
+    \ list)\n        self.assertGreater(len(result), 0)\n    \n    def test_skill_engine(self):\n        engine = SkillEngine()\n\
+    \        self.assertEqual(engine.name, 'Cardiovascular Disease Research')\n    \n    def test_prompts_exist(self):\n \
+    \       self.assertGreater(len(EXPERT_PROMPTS), 0)\n\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Cardiovascular Disease Research skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''cardiovascular'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

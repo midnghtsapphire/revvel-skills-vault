@@ -1,0 +1,61 @@
+name: living-docs-navigator
+title: Living Docs Navigator
+version: 1.0.0
+description: Navigate and load project living documentation for context from .specweave/docs/internal/. Use when implementing
+  features and needing project context, referencing ADRs for design decisions, or accessing specs and architecture docs. Provides
+  table of contents for all documentation types.
+metadata:
+  author: anton-abyzov
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - living
+  - docs
+  - navigator
+  source: clawhub-community
+  clawhub_slug: sw-living-docs-navigator
+  clawhub_path: anton-abyzov/sw-living-docs-navigator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Living Docs Navigator
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-living-docs-navigator
+
+    # Path: anton-abyzov/sw-living-docs-navigator
+
+
+    ## Description
+
+    Navigate and load project living documentation for context from .specweave/docs/internal/. Use when implementing features
+    and needing project context, referencing ADRs for design decisions, or accessing specs and architecture docs. Provides
+    table of contents for all documentation types.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-living-docs-navigator
+
+    ```'
+examples:
+- description: Install Living Docs Navigator from ClawHub
+  usage: clawhub install sw-living-docs-navigator
+schema_version: '1.0'

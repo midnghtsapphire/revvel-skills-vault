@@ -1,0 +1,64 @@
+name: issue-prioritizer
+title: Issue Prioritizer
+version: 1.1.1
+description: Prioritize GitHub issues by ROI, solution sanity, and architectural impact. Identifies quick wins, over-engineered
+  proposals, and actionable bugs. Use for issue triage, contributor matching, and filtering non-actionable items. Read-only
+  — never modifies repositories. Requires GitHub CLI (gh).
+metadata:
+  author: glucksberg
+  category: Development & Coding
+  tags:
+  - development-coding
+  - issue
+  - prioritizer
+  source: clawhub-community
+  clawhub_slug: issue-prioritizer
+  clawhub_path: glucksberg/issue-prioritizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Issue Prioritizer
+
+    # Source: ClawHub community skill by glucksberg
+
+    # Install: clawhub install issue-prioritizer
+
+    # Path: glucksberg/issue-prioritizer
+
+
+    ## Description
+
+    Prioritize GitHub issues by ROI, solution sanity, and architectural impact. Identifies quick wins, over-engineered proposals,
+    and actionable bugs. Use for issue triage, contributor matching, and filtering non-actionable items. Read-only — never
+    modifies repositories. Requires GitHub CLI (gh).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - commands/CLAUDE.md
+
+    - commands/issue-prioritizer.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install issue-prioritizer
+
+    ```'
+examples:
+- description: Install Issue Prioritizer from ClawHub
+  usage: clawhub install issue-prioritizer
+schema_version: '1.0'

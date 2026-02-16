@@ -1,0 +1,53 @@
+name: zendesk
+title: Zendesk
+version: 1.0.0
+description: Manage support tickets, users, and help center via Zendesk API. Create, update, and search tickets programmatically.
+metadata:
+  author: mrgoodb
+  category: Search & Research
+  tags:
+  - search-research
+  - zendesk
+  source: clawhub-community
+  clawhub_slug: zendesk
+  clawhub_path: mrgoodb/zendesk
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zendesk
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install zendesk
+
+    # Path: mrgoodb/zendesk
+
+
+    ## Description
+
+    Manage support tickets, users, and help center via Zendesk API. Create, update, and search tickets programmatically.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zendesk
+
+    ```'
+examples:
+- description: Install Zendesk from ClawHub
+  usage: clawhub install zendesk
+schema_version: '1.0'

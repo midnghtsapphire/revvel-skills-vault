@@ -1,0 +1,57 @@
+name: heartbeat
+title: Heartbeat
+version: 1.0.0
+description: Auto-learns when to wake. Balances responsiveness with efficiency, grows autonomy over time.
+metadata:
+  author: ivangdavila
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - heartbeat
+  source: clawhub-community
+  clawhub_slug: heartbeat
+  clawhub_path: ivangdavila/heartbeat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Heartbeat
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install heartbeat
+
+    # Path: ivangdavila/heartbeat
+
+
+    ## Description
+
+    Auto-learns when to wake. Balances responsiveness with efficiency, grows autonomy over time.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - intervals.md
+
+    - triggers.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install heartbeat
+
+    ```'
+examples:
+- description: Install Heartbeat from ClawHub
+  usage: clawhub install heartbeat
+schema_version: '1.0'

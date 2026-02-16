@@ -1,0 +1,73 @@
+name: lnd
+title: Lnd
+version: 1.0.1
+description: Install and run Lightning Terminal (litd) which bundles lnd, loop, pool, tapd, and faraday in a single Docker
+  container. Defaults to neutrino backend with SQLite storage on testnet. Supports watch-only mode with remote signer, standalone
+  mode, and regtest development. Use when setting up a Lightning
+metadata:
+  author: roasbeef
+  category: Development & Coding
+  tags:
+  - development-coding
+  - lnd
+  source: clawhub-community
+  clawhub_slug: lnd
+  clawhub_path: roasbeef/lnd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lnd
+
+    # Source: ClawHub community skill by roasbeef
+
+    # Install: clawhub install lnd
+
+    # Path: roasbeef/lnd
+
+
+    ## Description
+
+    Install and run Lightning Terminal (litd) which bundles lnd, loop, pool, tapd, and faraday in a single Docker container.
+    Defaults to neutrino backend with SQLite storage on testnet. Supports watch-only mode with remote signer, standalone mode,
+    and regtest development. Use when setting up a Lightning
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - profiles/debug.env
+
+    - profiles/default.env
+
+    - profiles/regtest.env
+
+    - profiles/taproot.env
+
+    - profiles/wumbo.env
+
+    - references/security.md
+
+    - scripts/create-wallet.sh
+
+    - scripts/docker-start.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lnd
+
+    ```'
+examples:
+- description: Install Lnd from ClawHub
+  usage: clawhub install lnd
+schema_version: '1.0'

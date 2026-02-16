@@ -1,0 +1,53 @@
+name: ordercli
+title: Ordercli
+version: 1.0.0
+description: Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).
+metadata:
+  author: steipete
+  category: General
+  tags:
+  - general
+  - ordercli
+  source: clawhub-community
+  clawhub_slug: ordercli
+  clawhub_path: steipete/ordercli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ordercli
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install ordercli
+
+    # Path: steipete/ordercli
+
+
+    ## Description
+
+    Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ordercli
+
+    ```'
+examples:
+- description: Install Ordercli from ClawHub
+  usage: clawhub install ordercli
+schema_version: '1.0'

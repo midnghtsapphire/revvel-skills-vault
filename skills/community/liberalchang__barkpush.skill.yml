@@ -1,0 +1,70 @@
+name: bark-push
+title: barkpush
+version: 1.2.0
+description: 智能 Bark 推送助手，支持多用户管理、智能内容识别、历史记录追踪和消息更新功能
+metadata:
+  author: liberalchang
+  category: General
+  tags:
+  - general
+  - bark
+  - push
+  source: clawhub-community
+  clawhub_slug: barkpush
+  clawhub_path: liberalchang/barkpush
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# barkpush
+
+    # Source: ClawHub community skill by liberalchang
+
+    # Install: clawhub install barkpush
+
+    # Path: liberalchang/barkpush
+
+
+    ## Description
+
+    智能 Bark 推送助手，支持多用户管理、智能内容识别、历史记录追踪和消息更新功能
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bark_push/__init__.py
+
+    - bark_push/bark_api.py
+
+    - bark_push/command_handler.py
+
+    - bark_push/config_manager.py
+
+    - bark_push/content_parser.py
+
+    - bark_push/history_manager.py
+
+    - bark_push/main.py
+
+    - bark_push/user_manager.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install barkpush
+
+    ```'
+examples:
+- description: Install barkpush from ClawHub
+  usage: clawhub install barkpush
+schema_version: '1.0'

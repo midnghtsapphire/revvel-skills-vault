@@ -1,0 +1,64 @@
+name: capa-officer
+title: Capa Officer
+version: 1.0.0
+description: CAPA system management for medical device QMS. Covers root cause analysis, corrective action planning, effectiveness
+  verification, and CAPA metrics. Use for CAPA investigations, 5-Why analysis, fishbone diagrams, root cause determination,
+  corrective action tracking, effectiveness verification, or CA
+metadata:
+  author: alirezarezvani
+  category: System & OS
+  tags:
+  - system-os
+  - capa
+  - officer
+  source: clawhub-community
+  clawhub_slug: capa-officer
+  clawhub_path: alirezarezvani/capa-officer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Capa Officer
+
+    # Source: ClawHub community skill by alirezarezvani
+
+    # Install: clawhub install capa-officer
+
+    # Path: alirezarezvani/capa-officer
+
+
+    ## Description
+
+    CAPA system management for medical device QMS. Covers root cause analysis, corrective action planning, effectiveness verification,
+    and CAPA metrics. Use for CAPA investigations, 5-Why analysis, fishbone diagrams, root cause determination, corrective
+    action tracking, effectiveness verification, or CA
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/effectiveness-verification-guide.md
+
+    - references/rca-methodologies.md
+
+    - scripts/capa_tracker.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install capa-officer
+
+    ```'
+examples:
+- description: Install Capa Officer from ClawHub
+  usage: clawhub install capa-officer
+schema_version: '1.0'

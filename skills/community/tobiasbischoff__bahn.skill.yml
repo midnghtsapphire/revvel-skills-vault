@@ -1,0 +1,57 @@
+name: bahn
+title: Deutsche Bahn CLI
+version: 1.0.0
+description: Search Deutsche Bahn train connections using the bahn-cli tool. Use when you need to find train connections between
+  German stations, check departure times, or help with travel planning. Works with station names like "Berlin Hbf", "München",
+  "Hannover".
+metadata:
+  author: tobiasbischoff
+  category: Search & Research
+  tags:
+  - search-research
+  - bahn
+  source: clawhub-community
+  clawhub_slug: bahn
+  clawhub_path: tobiasbischoff/bahn
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Deutsche Bahn CLI
+
+    # Source: ClawHub community skill by tobiasbischoff
+
+    # Install: clawhub install bahn
+
+    # Path: tobiasbischoff/bahn
+
+
+    ## Description
+
+    Search Deutsche Bahn train connections using the bahn-cli tool. Use when you need to find train connections between German
+    stations, check departure times, or help with travel planning. Works with station names like "Berlin Hbf", "München",
+    "Hannover".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bahn
+
+    ```'
+examples:
+- description: Install Deutsche Bahn CLI from ClawHub
+  usage: clawhub install bahn
+schema_version: '1.0'

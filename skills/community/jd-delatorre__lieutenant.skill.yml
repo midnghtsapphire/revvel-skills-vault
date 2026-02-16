@@ -1,0 +1,60 @@
+name: lieutenant
+title: Lieutenant - AI Agent Security
+version: 1.0.0
+description: '"AI agent security and trust verification. Scan messages, agent cards, and A2A communications for prompt injection,
+  jailbreaks, and malicious patterns. Use when protecting agents from attacks, verifying external agents, or scanning untrusted
+  content."'
+metadata:
+  author: jd-delatorre
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - lieutenant
+  source: clawhub-community
+  clawhub_slug: lieutenant
+  clawhub_path: jd-delatorre/lieutenant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lieutenant - AI Agent Security
+
+    # Source: ClawHub community skill by jd-delatorre
+
+    # Install: clawhub install lieutenant
+
+    # Path: jd-delatorre/lieutenant
+
+
+    ## Description
+
+    "AI agent security and trust verification. Scan messages, agent cards, and A2A communications for prompt injection, jailbreaks,
+    and malicious patterns. Use when protecting agents from attacks, verifying external agents, or scanning untrusted content."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/scan.py
+
+    - scripts/verify_agent.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lieutenant
+
+    ```'
+examples:
+- description: Install Lieutenant - AI Agent Security from ClawHub
+  usage: clawhub install lieutenant
+schema_version: '1.0'

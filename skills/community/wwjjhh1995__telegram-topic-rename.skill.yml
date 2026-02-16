@@ -1,0 +1,61 @@
+name: telegram-topic-rename
+title: Telegram Topic Rename
+version: 1.0.0
+description: Rename Telegram forum topics and change icons via Bot API. Use when user asks to name/rename a topic, change
+  topic title, update topic icon, or says "命名这个topic", "给话题起个名", "换个图标". Requires TELEGRAM_BOT_TOKEN environment variable.
+metadata:
+  author: wwjjhh1995
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - topic
+  - rename
+  source: clawhub-community
+  clawhub_slug: telegram-topic-rename
+  clawhub_path: wwjjhh1995/telegram-topic-rename
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Topic Rename
+
+    # Source: ClawHub community skill by wwjjhh1995
+
+    # Install: clawhub install telegram-topic-rename
+
+    # Path: wwjjhh1995/telegram-topic-rename
+
+
+    ## Description
+
+    Rename Telegram forum topics and change icons via Bot API. Use when user asks to name/rename a topic, change topic title,
+    update topic icon, or says "命名这个topic", "给话题起个名", "换个图标". Requires TELEGRAM_BOT_TOKEN environment variable.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/icons.md
+
+    - scripts/rename-topic.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-topic-rename
+
+    ```'
+examples:
+- description: Install Telegram Topic Rename from ClawHub
+  usage: clawhub install telegram-topic-rename
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: token-management
+title: Token Management
+version: 1.0.1
+description: '"Centralized API token management workflow. Store tokens in .env with expiration dates, test permissions via
+  script battery, document capabilities in connections/, set calendar renewal reminders. Prevents re-asking for credentials,
+  ensures token security, tracks expiration."'
+metadata:
+  author: nonlinear
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - token
+  - management
+  source: clawhub-community
+  clawhub_slug: token-management
+  clawhub_path: nonlinear/token-management
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Token Management
+
+    # Source: ClawHub community skill by nonlinear
+
+    # Install: clawhub install token-management
+
+    # Path: nonlinear/token-management
+
+
+    ## Description
+
+    "Centralized API token management workflow. Store tokens in .env with expiration dates, test permissions via script battery,
+    document capabilities in connections/, set calendar renewal reminders. Prevents re-asking for credentials, ensures token
+    security, tracks expiration."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install token-management
+
+    ```'
+examples:
+- description: Install Token Management from ClawHub
+  usage: clawhub install token-management
+schema_version: '1.0'

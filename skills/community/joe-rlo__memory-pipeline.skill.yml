@@ -1,0 +1,74 @@
+name: memory-pipeline
+title: Memory Pipeline
+version: 0.4.0
+description: Complete agent memory + performance system. Extracts structured facts, builds knowledge graphs, generates briefings,
+  and enforces execution discipline via pre-game routines, tool policies, result compression, and after-action reviews. Includes
+  external knowledge ingestion (ChatGPT exports, etc.) int
+metadata:
+  author: joe-rlo
+  category: Search & Research
+  tags:
+  - search-research
+  - memory
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: memory-pipeline
+  clawhub_path: joe-rlo/memory-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Pipeline
+
+    # Source: ClawHub community skill by joe-rlo
+
+    # Install: clawhub install memory-pipeline
+
+    # Path: joe-rlo/memory-pipeline
+
+
+    ## Description
+
+    Complete agent memory + performance system. Extracts structured facts, builds knowledge graphs, generates briefings, and
+    enforces execution discipline via pre-game routines, tool policies, result compression, and after-action reviews. Includes
+    external knowledge ingestion (ChatGPT exports, etc.) int
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - openclaw.plugin.json
+
+    - references/setup.md
+
+    - scripts/ingest-chatgpt.py
+
+    - scripts/memory-briefing.py
+
+    - scripts/memory-extract.py
+
+    - scripts/memory-link.py
+
+    - scripts/setup.sh
+
+    - src/briefing.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-pipeline
+
+    ```'
+examples:
+- description: Install Memory Pipeline from ClawHub
+  usage: clawhub install memory-pipeline
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: agent-wallet
+title: Agent Wallet
+version: 0.1.0
+description: Multi-chain wallet management for AI agents. Create wallets, check balances, transfer tokens (USDC/native), and
+  bridge cross-chain. Use when agents need to send/receive payments, check funds, or manage crypto wallets. Supports Solana,
+  Base, and Ethereum. Trigger phrases include "create wallet", "che
+metadata:
+  author: voltagemonke
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - agent
+  - wallet
+  source: clawhub-community
+  clawhub_slug: agent-wallet-usdc
+  clawhub_path: voltagemonke/agent-wallet-usdc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Wallet
+
+    # Source: ClawHub community skill by voltagemonke
+
+    # Install: clawhub install agent-wallet-usdc
+
+    # Path: voltagemonke/agent-wallet-usdc
+
+
+    ## Description
+
+    Multi-chain wallet management for AI agents. Create wallets, check balances, transfer tokens (USDC/native), and bridge
+    cross-chain. Use when agents need to send/receive payments, check funds, or manage crypto wallets. Supports Solana, Base,
+    and Ethereum. Trigger phrases include "create wallet", "che
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - get-cctp-addresses.js
+
+    - package-lock.json
+
+    - package.json
+
+    - test-bridge-debug.js
+
+    - test-bridge-events.js
+
+    - test-bridge.js
+
+    - test-estimate.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-wallet-usdc
+
+    ```'
+examples:
+- description: Install Agent Wallet from ClawHub
+  usage: clawhub install agent-wallet-usdc
+schema_version: '1.0'

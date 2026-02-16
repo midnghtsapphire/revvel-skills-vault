@@ -1,0 +1,56 @@
+name: pr-writer
+title: PR Writer
+version: 1.0.0
+description: Generate PR titles and descriptions from your branch diff. Use when you need to write pull request descriptions
+  quickly.
+metadata:
+  author: lxgicstudios
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - writer
+  source: clawhub-community
+  clawhub_slug: pr-writer
+  clawhub_path: lxgicstudios/pr-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PR Writer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install pr-writer
+
+    # Path: lxgicstudios/pr-writer
+
+
+    ## Description
+
+    Generate PR titles and descriptions from your branch diff. Use when you need to write pull request descriptions quickly.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pr-writer
+
+    ```'
+examples:
+- description: Install PR Writer from ClawHub
+  usage: clawhub install pr-writer
+schema_version: '1.0'

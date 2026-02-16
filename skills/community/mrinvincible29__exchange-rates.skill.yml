@@ -1,0 +1,60 @@
+name: exchange-rates
+title: Exchange Rates
+version: 1.0.0
+description: Fetch live exchange rates between any currency pairs from XE.com. Use when user asks about currency conversion,
+  exchange rates, forex rates, or converting amounts between currencies (e.g., "USD to INR", "100 EUR in GBP", "what's the
+  dollar rate").
+metadata:
+  author: mrinvincible29
+  category: Utilities
+  tags:
+  - utilities
+  - exchange
+  - rates
+  source: clawhub-community
+  clawhub_slug: exchange-rates
+  clawhub_path: mrinvincible29/exchange-rates
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Exchange Rates
+
+    # Source: ClawHub community skill by mrinvincible29
+
+    # Install: clawhub install exchange-rates
+
+    # Path: mrinvincible29/exchange-rates
+
+
+    ## Description
+
+    Fetch live exchange rates between any currency pairs from XE.com. Use when user asks about currency conversion, exchange
+    rates, forex rates, or converting amounts between currencies (e.g., "USD to INR", "100 EUR in GBP", "what''s the dollar
+    rate").
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/xe-rate.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install exchange-rates
+
+    ```'
+examples:
+- description: Install Exchange Rates from ClawHub
+  usage: clawhub install exchange-rates
+schema_version: '1.0'

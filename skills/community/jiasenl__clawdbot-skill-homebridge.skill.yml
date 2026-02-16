@@ -1,0 +1,59 @@
+name: homebridge
+title: Homebridge
+version: 0.1.0
+description: '"Control smart home devices via Homebridge Config UI X REST API. Use to list, turn on/off, adjust brightness,
+  color, or temperature of HomeKit-compatible accessories. Supports lights, switches, thermostats, fans, and other Homebridge-managed
+  devices."'
+metadata:
+  author: jiasenl
+  category: Development & Coding
+  tags:
+  - development-coding
+  - homebridge
+  source: clawhub-community
+  clawhub_slug: clawdbot-skill-homebridge
+  clawhub_path: jiasenl/clawdbot-skill-homebridge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Homebridge
+
+    # Source: ClawHub community skill by jiasenl
+
+    # Install: clawhub install clawdbot-skill-homebridge
+
+    # Path: jiasenl/clawdbot-skill-homebridge
+
+
+    ## Description
+
+    "Control smart home devices via Homebridge Config UI X REST API. Use to list, turn on/off, adjust brightness, color, or
+    temperature of HomeKit-compatible accessories. Supports lights, switches, thermostats, fans, and other Homebridge-managed
+    devices."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/homebridge_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-skill-homebridge
+
+    ```'
+examples:
+- description: Install Homebridge from ClawHub
+  usage: clawhub install clawdbot-skill-homebridge
+schema_version: '1.0'

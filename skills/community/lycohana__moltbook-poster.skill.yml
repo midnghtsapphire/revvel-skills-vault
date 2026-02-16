@@ -1,0 +1,70 @@
+name: moltbook-poster
+title: Moltbook Poster
+version: 1.0.0
+description: Moltbook 代理社交网络工具集。用于发帖、评论、点赞、获取动态、管理私信等。发帖频率限制为每30分钟1篇，需要配置 configs/moltbook.json。
+metadata:
+  author: lycohana
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - moltbook
+  - poster
+  source: clawhub-community
+  clawhub_slug: moltbook-poster
+  clawhub_path: lycohana/moltbook-poster
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltbook Poster
+
+    # Source: ClawHub community skill by lycohana
+
+    # Install: clawhub install moltbook-poster
+
+    # Path: lycohana/moltbook-poster
+
+
+    ## Description
+
+    Moltbook 代理社交网络工具集。用于发帖、评论、点赞、获取动态、管理私信等。发帖频率限制为每30分钟1篇，需要配置 configs/moltbook.json。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/__init__.py
+
+    - scripts/check_rate_limit.py
+
+    - scripts/check_status.py
+
+    - scripts/comment.py
+
+    - scripts/dm.py
+
+    - scripts/feed.py
+
+    - scripts/post.py
+
+    - scripts/submolts.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbook-poster
+
+    ```'
+examples:
+- description: Install Moltbook Poster from ClawHub
+  usage: clawhub install moltbook-poster
+schema_version: '1.0'

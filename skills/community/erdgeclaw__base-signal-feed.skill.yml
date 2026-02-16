@@ -1,0 +1,63 @@
+name: base-signal-feed
+title: Base Signal Feed
+version: 1.0.0
+description: Provides Base chain (L2) smart money signals, new pair alerts, and token safety scoring. Agents install this
+  skill to get access to on-chain trading signals.
+metadata:
+  author: erdgeclaw
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - base
+  - signal
+  - feed
+  source: clawhub-community
+  clawhub_slug: base-signal-feed
+  clawhub_path: erdgeclaw/base-signal-feed
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Base Signal Feed
+
+    # Source: ClawHub community skill by erdgeclaw
+
+    # Install: clawhub install base-signal-feed
+
+    # Path: erdgeclaw/base-signal-feed
+
+
+    ## Description
+
+    Provides Base chain (L2) smart money signals, new pair alerts, and token safety scoring. Agents install this skill to
+    get access to on-chain trading signals.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/integration.md
+
+    - scripts/signal-api.js
+
+    - scripts/start.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install base-signal-feed
+
+    ```'
+examples:
+- description: Install Base Signal Feed from ClawHub
+  usage: clawhub install base-signal-feed
+schema_version: '1.0'

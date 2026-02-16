@@ -1,0 +1,58 @@
+name: deploy-agent
+title: C.R.A.B Deploy Agent
+version: 1.1.0
+description: Multi-step deployment agent for full-stack apps. Build → Test → GitHub → Cloudflare Pages with human approval
+  at each step.
+metadata:
+  author: sherajdev
+  category: Development & Coding
+  tags:
+  - development-coding
+  - deploy
+  - agent
+  source: clawhub-community
+  clawhub_slug: deploy-agent
+  clawhub_path: sherajdev/deploy-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# C.R.A.B Deploy Agent
+
+    # Source: ClawHub community skill by sherajdev
+
+    # Install: clawhub install deploy-agent
+
+    # Path: sherajdev/deploy-agent
+
+
+    ## Description
+
+    Multi-step deployment agent for full-stack apps. Build → Test → GitHub → Cloudflare Pages with human approval at each
+    step.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/deploy-agent.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install deploy-agent
+
+    ```'
+examples:
+- description: Install C.R.A.B Deploy Agent from ClawHub
+  usage: clawhub install deploy-agent
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: 4to1-planner
+title: 4To1 Planner - AI Planning Coach
+version: 2.0.0
+description: AI planning coach using the 4To1 Method™ — turn 4-year vision into daily action. Connects to Notion, Todoist,
+  Google Calendar, or local Markdown. Use when user wants to plan goals, do weekly reviews, track projects, or set up a planning
+  system.
+metadata:
+  author: qingxuantang
+  category: Search & Research
+  tags:
+  - search-research
+  - 4to1
+  - planner
+  source: clawhub-community
+  clawhub_slug: 4to1-planner
+  clawhub_path: qingxuantang/4to1-planner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 4To1 Planner - AI Planning Coach
+
+    # Source: ClawHub community skill by qingxuantang
+
+    # Install: clawhub install 4to1-planner
+
+    # Path: qingxuantang/4to1-planner
+
+
+    ## Description
+
+    AI planning coach using the 4To1 Method™ — turn 4-year vision into daily action. Connects to Notion, Todoist, Google Calendar,
+    or local Markdown. Use when user wants to plan goals, do weekly reviews, track projects, or set up a planning system.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/setup.sh
+
+    - scripts/status.sh
+
+    - scripts/weekly_review.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install 4to1-planner
+
+    ```'
+examples:
+- description: Install 4To1 Planner - AI Planning Coach from ClawHub
+  usage: clawhub install 4to1-planner
+schema_version: '1.0'

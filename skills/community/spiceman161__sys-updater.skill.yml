@@ -1,0 +1,72 @@
+name: sys-updater
+title: System Updater
+version: 1.0.1
+description: System package maintenance for Ubuntu (apt), npm, brew, and OpenClaw skills. Conservative workflow with 2-day
+  quarantine for non-security updates, automatic security updates, and scheduled reviews with web search for bug assessment.
+metadata:
+  author: spiceman161
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - sys
+  - updater
+  source: clawhub-community
+  clawhub_slug: sys-updater
+  clawhub_path: spiceman161/sys-updater
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# System Updater
+
+    # Source: ClawHub community skill by spiceman161
+
+    # Install: clawhub install sys-updater
+
+    # Path: spiceman161/sys-updater
+
+
+    ## Description
+
+    System package maintenance for Ubuntu (apt), npm, brew, and OpenClaw skills. Conservative workflow with 2-day quarantine
+    for non-security updates, automatic security updates, and scheduled reviews with web search for bug assessment.
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docs/extending.md
+
+    - docs/how-it-works.md
+
+    - docs/logging.md
+
+    - docs/operations.md
+
+    - docs/scheduling.md
+
+    - docs/state-files.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sys-updater
+
+    ```'
+examples:
+- description: Install System Updater from ClawHub
+  usage: clawhub install sys-updater
+schema_version: '1.0'

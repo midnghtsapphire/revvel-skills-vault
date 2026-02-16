@@ -1,0 +1,55 @@
+name: bullybuddy
+title: Bullybuddy
+version: 0.5.1
+description: 'BullyBuddy - Control Claude Code sessions. Commands: status, list, spawn, send, output, kill, audit, transcript.'
+metadata:
+  author: chenkuansun
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bullybuddy
+  source: clawhub-community
+  clawhub_slug: bullybuddy
+  clawhub_path: chenkuansun/bullybuddy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bullybuddy
+
+    # Source: ClawHub community skill by chenkuansun
+
+    # Install: clawhub install bullybuddy
+
+    # Path: chenkuansun/bullybuddy
+
+
+    ## Description
+
+    BullyBuddy - Control Claude Code sessions. Commands: status, list, spawn, send, output, kill, audit, transcript.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bb.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bullybuddy
+
+    ```'
+examples:
+- description: Install Bullybuddy from ClawHub
+  usage: clawhub install bullybuddy
+schema_version: '1.0'

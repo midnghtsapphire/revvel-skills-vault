@@ -1,0 +1,56 @@
+name: find-products
+title: find-products
+version: 1.0.0
+description: Search and discover trending products from ProductHunt with structured analysis data. Use when users ask about
+  product recommendations, tool comparisons, or trending apps.
+metadata:
+  author: xiazhefengzhi
+  category: Search & Research
+  tags:
+  - search-research
+  - find
+  - products
+  source: clawhub-community
+  clawhub_slug: find-products
+  clawhub_path: xiazhefengzhi/find-products
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# find-products
+
+    # Source: ClawHub community skill by xiazhefengzhi
+
+    # Install: clawhub install find-products
+
+    # Path: xiazhefengzhi/find-products
+
+
+    ## Description
+
+    Search and discover trending products from ProductHunt with structured analysis data. Use when users ask about product
+    recommendations, tool comparisons, or trending apps.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install find-products
+
+    ```'
+examples:
+- description: Install find-products from ClawHub
+  usage: clawhub install find-products
+schema_version: '1.0'

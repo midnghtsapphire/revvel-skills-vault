@@ -1,0 +1,61 @@
+name: luma
+title: Luma Events
+version: 1.0.0
+description: Fetch upcoming events from Luma (lu.ma) for any city. Use when the user asks about tech events, startup meetups,
+  networking events, conferences, or things happening in cities like Bangalore, Mumbai, Delhi, San Francisco, New York, etc.
+metadata:
+  author: regalstreak
+  category: General
+  tags:
+  - general
+  - luma
+  source: clawhub-community
+  clawhub_slug: luma
+  clawhub_path: regalstreak/luma
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Luma Events
+
+    # Source: ClawHub community skill by regalstreak
+
+    # Install: clawhub install luma
+
+    # Path: regalstreak/luma
+
+
+    ## Description
+
+    Fetch upcoming events from Luma (lu.ma) for any city. Use when the user asks about tech events, startup meetups, networking
+    events, conferences, or things happening in cities like Bangalore, Mumbai, Delhi, San Francisco, New York, etc.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/fetch_events.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install luma
+
+    ```'
+examples:
+- description: Install Luma Events from ClawHub
+  usage: clawhub install luma
+schema_version: '1.0'

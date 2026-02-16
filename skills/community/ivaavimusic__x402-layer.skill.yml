@@ -1,0 +1,70 @@
+name: x402-layer
+title: x402 Singularity Layer
+version: 1.0.1
+description: '|'
+metadata:
+  author: ivaavimusic
+  category: General
+  tags:
+  - general
+  - x402
+  - layer
+  source: clawhub-community
+  clawhub_slug: x402-layer
+  clawhub_path: ivaavimusic/x402-layer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# x402 Singularity Layer
+
+    # Source: ClawHub community skill by ivaavimusic
+
+    # Install: clawhub install x402-layer
+
+    # Path: ivaavimusic/x402-layer
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/agentic-endpoints.md
+
+    - references/credit-based.md
+
+    - references/pay-per-request.md
+
+    - references/payment-signing.md
+
+    - scripts/check_credits.py
+
+    - scripts/consume_credits.py
+
+    - scripts/consume_product.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x402-layer
+
+    ```'
+examples:
+- description: Install x402 Singularity Layer from ClawHub
+  usage: clawhub install x402-layer
+schema_version: '1.0'

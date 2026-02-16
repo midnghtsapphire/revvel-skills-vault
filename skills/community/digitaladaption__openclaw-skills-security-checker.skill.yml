@@ -1,0 +1,57 @@
+name: security-skill-scanner
+title: Security Skill Scanner
+version: 0.1.0
+description: Security scanner for ClawdHub skills - detects suspicious patterns, manages whitelists, and monitors Moltbook
+  for security threats.
+metadata:
+  author: digitaladaption
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - skill
+  - scanner
+  source: clawhub-community
+  clawhub_slug: openclaw-skills-security-checker
+  clawhub_path: digitaladaption/openclaw-skills-security-checker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Skill Scanner
+
+    # Source: ClawHub community skill by digitaladaption
+
+    # Install: clawhub install openclaw-skills-security-checker
+
+    # Path: digitaladaption/openclaw-skills-security-checker
+
+
+    ## Description
+
+    Security scanner for ClawdHub skills - detects suspicious patterns, manages whitelists, and monitors Moltbook for security
+    threats.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-skills-security-checker
+
+    ```'
+examples:
+- description: Install Security Skill Scanner from ClawHub
+  usage: clawhub install openclaw-skills-security-checker
+schema_version: '1.0'

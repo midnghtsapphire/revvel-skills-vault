@@ -1,0 +1,74 @@
+name: arc-sentinel
+title: Arc Sentinel
+version: 1.0.0
+description: Security monitoring and infrastructure health checks for OpenClaw agents. Run breach monitoring (HaveIBeenPwned),
+  SSL certificate expiry checks, GitHub security audits, credential rotation tracking, secret scanning, git hygiene, token
+  watchdog, and permission audits. Use when performing security sca
+metadata:
+  author: arc-claw-bot
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - arc
+  - sentinel
+  source: clawhub-community
+  clawhub_slug: arc-sentinel
+  clawhub_path: arc-claw-bot/arc-sentinel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Arc Sentinel
+
+    # Source: ClawHub community skill by arc-claw-bot
+
+    # Install: clawhub install arc-sentinel
+
+    # Path: arc-claw-bot/arc-sentinel
+
+
+    ## Description
+
+    Security monitoring and infrastructure health checks for OpenClaw agents. Run breach monitoring (HaveIBeenPwned), SSL
+    certificate expiry checks, GitHub security audits, credential rotation tracking, secret scanning, git hygiene, token watchdog,
+    and permission audits. Use when performing security sca
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - credential-tracker.json
+
+    - package.json
+
+    - sentinel.sh
+
+    - scripts/full-audit.sh
+
+    - scripts/git-hygiene.sh
+
+    - scripts/permission-auditor.sh
+
+    - scripts/secret-scanner.sh
+
+    - scripts/skill-auditor.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install arc-sentinel
+
+    ```'
+examples:
+- description: Install Arc Sentinel from ClawHub
+  usage: clawhub install arc-sentinel
+schema_version: '1.0'

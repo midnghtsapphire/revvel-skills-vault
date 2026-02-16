@@ -1,0 +1,73 @@
+name: bankr
+title: bankr
+version: 1.0.0
+description: AI-powered crypto trading agent via natural language. Use when the user wants to trade crypto (buy/sell/swap
+  tokens), check portfolio balances, view token prices, transfer crypto, manage NFTs, use leverage, bet on Polymarket, deploy
+  tokens, set up automated trading strategies, submit raw transaction
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - bankr
+  source: clawhub-community
+  clawhub_slug: bobagent-bankr
+  clawhub_path: bobdevibecoder/bobagent-bankr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# bankr
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-bankr
+
+    # Path: bobdevibecoder/bobagent-bankr
+
+
+    ## Description
+
+    AI-powered crypto trading agent via natural language. Use when the user wants to trade crypto (buy/sell/swap tokens),
+    check portfolio balances, view token prices, transfer crypto, manage NFTs, use leverage, bet on Polymarket, deploy tokens,
+    set up automated trading strategies, submit raw transaction
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - references/api-workflow.md
+
+    - references/arbitrary-transaction.md
+
+    - references/automation.md
+
+    - references/error-handling.md
+
+    - references/leverage-trading.md
+
+    - references/market-research.md
+
+    - references/nft-operations.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-bankr
+
+    ```'
+examples:
+- description: Install bankr from ClawHub
+  usage: clawhub install bobagent-bankr
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: book-moving
+title: Book Moving
+version: 1.0.1
+description: Book moving services through Lokuli MCP. Use when user needs to find and book moving. Triggers on requests like
+  "book a moving", "find moving near me", or any moving service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - moving
+  source: clawhub-community
+  clawhub_slug: book-moving
+  clawhub_path: edwardrodriguez703-design/book-moving
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Moving
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-moving
+
+    # Path: edwardrodriguez703-design/book-moving
+
+
+    ## Description
+
+    Book moving services through Lokuli MCP. Use when user needs to find and book moving. Triggers on requests like "book
+    a moving", "find moving near me", or any moving service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-moving
+
+    ```'
+examples:
+- description: Install Book Moving from ClawHub
+  usage: clawhub install book-moving
+schema_version: '1.0'

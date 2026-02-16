@@ -1,0 +1,57 @@
+name: agent-news
+title: Agent News
+version: 0.1.0
+description: ''
+metadata:
+  author: bobrenze-bot
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  - news
+  source: clawhub-community
+  clawhub_slug: agent-news
+  clawhub_path: bobrenze-bot/agent-news
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent News
+
+    # Source: ClawHub community skill by bobrenze-bot
+
+    # Install: clawhub install agent-news
+
+    # Path: bobrenze-bot/agent-news
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - monitor.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-news
+
+    ```'
+examples:
+- description: Install Agent News from ClawHub
+  usage: clawhub install agent-news
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: clawdbites
+title: ClawdBites
+version: 0.1.0
+description: Extract recipes from Instagram reels. Use when a user sends an Instagram reel link and wants to get the recipe
+  from the caption. Parses ingredients, instructions, and macros into a clean format.
+metadata:
+  author: kylelol
+  category: Social Media
+  tags:
+  - social-media
+  - clawdbites
+  source: clawhub-community
+  clawhub_slug: clawdbites
+  clawhub_path: kylelol/clawdbites
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawdBites
+
+    # Source: ClawHub community skill by kylelol
+
+    # Install: clawhub install clawdbites
+
+    # Path: kylelol/clawdbites
+
+
+    ## Description
+
+    Extract recipes from Instagram reels. Use when a user sends an Instagram reel link and wants to get the recipe from the
+    caption. Parses ingredients, instructions, and macros into a clean format.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbites
+
+    ```'
+examples:
+- description: Install ClawdBites from ClawHub
+  usage: clawhub install clawdbites
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: migrate
+title: Migrate
+version: 1.0.0
+description: Export and import Clawdbot installations for migration between machines. Use when the user wants to migrate Clawdbot
+  to a new computer, backup their setup, or restore from a backup. Handles workspace files, config, WhatsApp sessions, and
+  optionally credentials.
+metadata:
+  author: mrgoodb
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - migrate
+  source: clawhub-community
+  clawhub_slug: migrate
+  clawhub_path: mrgoodb/migrate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Migrate
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install migrate
+
+    # Path: mrgoodb/migrate
+
+
+    ## Description
+
+    Export and import Clawdbot installations for migration between machines. Use when the user wants to migrate Clawdbot to
+    a new computer, backup their setup, or restore from a backup. Handles workspace files, config, WhatsApp sessions, and
+    optionally credentials.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/export.sh
+
+    - scripts/import.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install migrate
+
+    ```'
+examples:
+- description: Install Migrate from ClawHub
+  usage: clawhub install migrate
+schema_version: '1.0'

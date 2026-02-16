@@ -1,0 +1,63 @@
+name: balance-management
+title: Routstr Skill
+version: 1.0.0
+description: Manage Routstr balance by checking balance, creating Lightning invoices for top-up, and checking invoice payment
+  status
+metadata:
+  author: sh1ftred
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - balance
+  - management
+  source: clawhub-community
+  clawhub_slug: routstr-balance-management
+  clawhub_path: sh1ftred/routstr-balance-management
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Routstr Skill
+
+    # Source: ClawHub community skill by sh1ftred
+
+    # Install: clawhub install routstr-balance-management
+
+    # Path: sh1ftred/routstr-balance-management
+
+
+    ## Description
+
+    Manage Routstr balance by checking balance, creating Lightning invoices for top-up, and checking invoice payment status
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - check_balance.sh
+
+    - create_invoice.sh
+
+    - invoice_status.sh
+
+    - topup_cashu.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install routstr-balance-management
+
+    ```'
+examples:
+- description: Install Routstr Skill from ClawHub
+  usage: clawhub install routstr-balance-management
+schema_version: '1.0'

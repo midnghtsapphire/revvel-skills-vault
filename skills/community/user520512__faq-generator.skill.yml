@@ -1,0 +1,53 @@
+name: faq-generator
+title: 常见问题解答
+version: 1.0.0
+description: ''
+metadata:
+  author: user520512
+  category: General
+  tags:
+  - general
+  - faq
+  - generator
+  source: clawhub-community
+  clawhub_slug: faq-generator
+  clawhub_path: user520512/faq-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 常见问题解答
+
+    # Source: ClawHub community skill by user520512
+
+    # Install: clawhub install faq-generator
+
+    # Path: user520512/faq-generator
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install faq-generator
+
+    ```'
+examples:
+- description: Install 常见问题解答 from ClawHub
+  usage: clawhub install faq-generator
+schema_version: '1.0'

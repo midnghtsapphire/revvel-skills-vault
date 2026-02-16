@@ -1,0 +1,56 @@
+name: guru-mcp
+title: Guru MCP
+version: 1.0.0
+description: Access Guru knowledge base via MCP - ask AI questions, search documents, create drafts, and update cards. Connects
+  to all your Guru sources including Slack, Drive, Confluence, and SharePoint.
+metadata:
+  author: pvoo
+  category: Search & Research
+  tags:
+  - search-research
+  - guru
+  - mcp
+  source: clawhub-community
+  clawhub_slug: guru-mcp
+  clawhub_path: pvoo/guru-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Guru MCP
+
+    # Source: ClawHub community skill by pvoo
+
+    # Install: clawhub install guru-mcp
+
+    # Path: pvoo/guru-mcp
+
+
+    ## Description
+
+    Access Guru knowledge base via MCP - ask AI questions, search documents, create drafts, and update cards. Connects to
+    all your Guru sources including Slack, Drive, Confluence, and SharePoint.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install guru-mcp
+
+    ```'
+examples:
+- description: Install Guru MCP from ClawHub
+  usage: clawhub install guru-mcp
+schema_version: '1.0'

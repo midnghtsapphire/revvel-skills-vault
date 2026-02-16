@@ -1,0 +1,57 @@
+name: my-tesla
+title: Tesla
+version: 1.0.0
+description: Control Tesla vehicles from macOS via the Tesla Owner API using teslapy (auth, list cars, status, lock/unlock,
+  climate, charging, location, and extras). Use when you want to check your car state or run safe remote commands. Designed
+  for Parth Maniar (@officialpm) with local-only auth caching, confir
+metadata:
+  author: danman60
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - tesla
+  source: clawhub-community
+  clawhub_slug: tesla-skill
+  clawhub_path: danman60/tesla-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tesla
+
+    # Source: ClawHub community skill by danman60
+
+    # Install: clawhub install tesla-skill
+
+    # Path: danman60/tesla-skill
+
+
+    ## Description
+
+    Control Tesla vehicles from macOS via the Tesla Owner API using teslapy (auth, list cars, status, lock/unlock, climate,
+    charging, location, and extras). Use when you want to check your car state or run safe remote commands. Designed for Parth
+    Maniar (@officialpm) with local-only auth caching, confir
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tesla-skill
+
+    ```'
+examples:
+- description: Install Tesla from ClawHub
+  usage: clawhub install tesla-skill
+schema_version: '1.0'

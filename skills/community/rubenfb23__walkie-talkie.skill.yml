@@ -1,0 +1,56 @@
+name: walkie-talkie
+title: Walkie-Talkie Mode
+version: 1.0.0
+description: Handles voice-to-voice conversations on WhatsApp. Automatically transcribes incoming audio and responds with
+  local TTS audio. Use when the user wants to "talk" instead of type.
+metadata:
+  author: rubenfb23
+  category: Media & Content
+  tags:
+  - media-content
+  - walkie
+  - talkie
+  source: clawhub-community
+  clawhub_slug: walkie-talkie
+  clawhub_path: rubenfb23/walkie-talkie
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Walkie-Talkie Mode
+
+    # Source: ClawHub community skill by rubenfb23
+
+    # Install: clawhub install walkie-talkie
+
+    # Path: rubenfb23/walkie-talkie
+
+
+    ## Description
+
+    Handles voice-to-voice conversations on WhatsApp. Automatically transcribes incoming audio and responds with local TTS
+    audio. Use when the user wants to "talk" instead of type.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install walkie-talkie
+
+    ```'
+examples:
+- description: Install Walkie-Talkie Mode from ClawHub
+  usage: clawhub install walkie-talkie
+schema_version: '1.0'

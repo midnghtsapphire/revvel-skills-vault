@@ -1,0 +1,62 @@
+name: openclaw-security
+title: Openclaw Security
+version: 1.0.1
+description: '"Unified security suite for agent workspaces. Installs, configures, and orchestrates all 11 OpenClaw security
+  tools in one command — integrity, secrets, permissions, network, audit trail, signing, supply chain, credentials, injection
+  defense, compliance, and incident response."'
+metadata:
+  author: atlaspa
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - security
+  source: clawhub-community
+  clawhub_slug: openclaw-security
+  clawhub_path: atlaspa/openclaw-security
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Security
+
+    # Source: ClawHub community skill by atlaspa
+
+    # Install: clawhub install openclaw-security
+
+    # Path: atlaspa/openclaw-security
+
+
+    ## Description
+
+    "Unified security suite for agent workspaces. Installs, configures, and orchestrates all 11 OpenClaw security tools in
+    one command — integrity, secrets, permissions, network, audit trail, signing, supply chain, credentials, injection defense,
+    compliance, and incident response."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/security.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-security
+
+    ```'
+examples:
+- description: Install Openclaw Security from ClawHub
+  usage: clawhub install openclaw-security
+schema_version: '1.0'

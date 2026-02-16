@@ -1,0 +1,57 @@
+name: plsreadme
+title: plsreadme
+version: 0.4.0
+description: Share markdown files and text as clean, readable web links via plsreadme.com. Use when someone asks to share
+  a document, README, PRD, proposal, notes, or any markdown as a shareable link. Also triggers for "create a preview link",
+  "share this as a page", or "make this readable". Requires the plsread
+metadata:
+  author: facundolucci
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - plsreadme
+  source: clawhub-community
+  clawhub_slug: plsreadme
+  clawhub_path: facundolucci/plsreadme
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# plsreadme
+
+    # Source: ClawHub community skill by facundolucci
+
+    # Install: clawhub install plsreadme
+
+    # Path: facundolucci/plsreadme
+
+
+    ## Description
+
+    Share markdown files and text as clean, readable web links via plsreadme.com. Use when someone asks to share a document,
+    README, PRD, proposal, notes, or any markdown as a shareable link. Also triggers for "create a preview link", "share this
+    as a page", or "make this readable". Requires the plsread
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install plsreadme
+
+    ```'
+examples:
+- description: Install plsreadme from ClawHub
+  usage: clawhub install plsreadme
+schema_version: '1.0'

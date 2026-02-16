@@ -1,0 +1,62 @@
+name: google-news-api-skill
+title: Google News Api Skill
+version: 0.1.1
+description: 'This skill automates the extraction of structured news data from Google News via BrowserAct API. Use this skill
+  when the user asks for tasks such as: 1. Searching for news about a specific topic; 2. Tracking industry trends; 3. Monitoring
+  public relations or sentiment; 4. Collecting competitor updat'
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - news
+  - api
+  - skill
+  source: clawhub-community
+  clawhub_slug: google-news-api-skill
+  clawhub_path: phheng/google-news-api-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google News Api Skill
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install google-news-api-skill
+
+    # Path: phheng/google-news-api-skill
+
+
+    ## Description
+
+    This skill automates the extraction of structured news data from Google News via BrowserAct API. Use this skill when the
+    user asks for tasks such as: 1. Searching for news about a specific topic; 2. Tracking industry trends; 3. Monitoring
+    public relations or sentiment; 4. Collecting competitor updat
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/google_news_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-news-api-skill
+
+    ```'
+examples:
+- description: Install Google News Api Skill from ClawHub
+  usage: clawhub install google-news-api-skill
+schema_version: '1.0'

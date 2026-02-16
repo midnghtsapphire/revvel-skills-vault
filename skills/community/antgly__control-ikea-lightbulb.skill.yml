@@ -1,0 +1,71 @@
+name: control-ikea-lightbulb
+title: Control Ikea Lightbulb
+version: 1.0.1
+description: Control IKEA/TP-Link Kasa smart bulbs (set on/off, brightness, and color). Use when you want to programmatically
+  control a local smart bulb by IP on the LAN.
+metadata:
+  author: antgly
+  category: General
+  tags:
+  - general
+  - control
+  - ikea
+  - lightbulb
+  source: clawhub-community
+  clawhub_slug: control-ikea-lightbulb
+  clawhub_path: antgly/control-ikea-lightbulb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Control Ikea Lightbulb
+
+    # Source: ClawHub community skill by antgly
+
+    # Install: clawhub install control-ikea-lightbulb
+
+    # Path: antgly/control-ikea-lightbulb
+
+
+    ## Description
+
+    Control IKEA/TP-Link Kasa smart bulbs (set on/off, brightness, and color). Use when you want to programmatically control
+    a local smart bulb by IP on the LAN.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - scripts/__init__.py
+
+    - scripts/control_kasa_light.py
+
+    - scripts/light_show.py
+
+    - scripts/light_show_verbose.py
+
+    - scripts/run_control_kasa.sh
+
+    - scripts/run_test_light_show.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install control-ikea-lightbulb
+
+    ```'
+examples:
+- description: Install Control Ikea Lightbulb from ClawHub
+  usage: clawhub install control-ikea-lightbulb
+schema_version: '1.0'

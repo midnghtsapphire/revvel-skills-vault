@@ -1,0 +1,57 @@
+name: content-quality-auditor
+title: Content Quality Auditor
+version: 0.1.2
+description: Runs a full CORE-EEAT 80-item content quality audit, scoring content across 8 dimensions with weighted scoring
+  by content type. Produces a detailed report with per-item scores, dimension analysis, and a prioritized action plan.
+metadata:
+  author: aaron-he-zhu
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - content
+  - quality
+  - auditor
+  source: clawhub-community
+  clawhub_slug: content-quality-auditor
+  clawhub_path: aaron-he-zhu/content-quality-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Content Quality Auditor
+
+    # Source: ClawHub community skill by aaron-he-zhu
+
+    # Install: clawhub install content-quality-auditor
+
+    # Path: aaron-he-zhu/content-quality-auditor
+
+
+    ## Description
+
+    Runs a full CORE-EEAT 80-item content quality audit, scoring content across 8 dimensions with weighted scoring by content
+    type. Produces a detailed report with per-item scores, dimension analysis, and a prioritized action plan.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install content-quality-auditor
+
+    ```'
+examples:
+- description: Install Content Quality Auditor from ClawHub
+  usage: clawhub install content-quality-auditor
+schema_version: '1.0'

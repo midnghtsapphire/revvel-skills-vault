@@ -1,0 +1,64 @@
+name: yacy
+title: YaCy Search
+version: 0.1.0
+description: ''
+metadata:
+  author: qsmtco
+  category: Search & Research
+  tags:
+  - search-research
+  - yacy
+  source: clawhub-community
+  clawhub_slug: yacy
+  clawhub_path: qsmtco/yacy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YaCy Search
+
+    # Source: ClawHub community skill by qsmtco
+
+    # Install: clawhub install yacy
+
+    # Path: qsmtco/yacy
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - scripts/yacy_search.sh
+
+    - scripts/yacy_start.sh
+
+    - scripts/yacy_status.sh
+
+    - scripts/yacy_stop.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yacy
+
+    ```'
+examples:
+- description: Install YaCy Search from ClawHub
+  usage: clawhub install yacy
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: agent-chat
+title: Agent Chat
+version: 0.1.0
+description: Temporary real-time chat rooms for AI agents. Password-protected, with SSE streaming, web UI for humans, and
+  CLI tools for agents.
+metadata:
+  author: awlevin
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - agent
+  - chat
+  source: clawhub-community
+  clawhub_slug: agent-chat
+  clawhub_path: awlevin/agent-chat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Chat
+
+    # Source: ClawHub community skill by awlevin
+
+    # Install: clawhub install agent-chat
+
+    # Path: awlevin/agent-chat
+
+
+    ## Description
+
+    Temporary real-time chat rooms for AI agents. Password-protected, with SSE streaming, web UI for humans, and CLI tools
+    for agents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-chat
+
+    ```'
+examples:
+- description: Install Agent Chat from ClawHub
+  usage: clawhub install agent-chat
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: sns-auto-poster
+title: Sns Auto Poster
+version: 1.1.0
+description: Schedule and automate social media posts to X/Twitter with cron-based queue management.
+metadata:
+  author: sa9saq
+  category: Media & Content
+  tags:
+  - media-content
+  - sns
+  - auto
+  - poster
+  source: clawhub-community
+  clawhub_slug: sns-auto-poster
+  clawhub_path: sa9saq/sns-auto-poster
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sns Auto Poster
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install sns-auto-poster
+
+    # Path: sa9saq/sns-auto-poster
+
+
+    ## Description
+
+    Schedule and automate social media posts to X/Twitter with cron-based queue management.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - poster.py
+
+    - platforms/__init__.py
+
+    - platforms/base.py
+
+    - platforms/x.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sns-auto-poster
+
+    ```'
+examples:
+- description: Install Sns Auto Poster from ClawHub
+  usage: clawhub install sns-auto-poster
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: excel
+title: Excel
+version: 1.0.0
+description: Read, write, edit, and format Excel files (.xlsx). Create spreadsheets, manipulate data, apply formatting, manage
+  sheets, merge cells, find/replace, and export to CSV/JSON/Markdown. Use for any Excel file manipulation task.
+metadata:
+  author: dbhurley
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - excel
+  source: clawhub-community
+  clawhub_slug: excel
+  clawhub_path: dbhurley/excel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Excel
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install excel
+
+    # Path: dbhurley/excel
+
+
+    ## Description
+
+    Read, write, edit, and format Excel files (.xlsx). Create spreadsheets, manipulate data, apply formatting, manage sheets,
+    merge cells, find/replace, and export to CSV/JSON/Markdown. Use for any Excel file manipulation task.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/excel.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install excel
+
+    ```'
+examples:
+- description: Install Excel from ClawHub
+  usage: clawhub install excel
+schema_version: '1.0'

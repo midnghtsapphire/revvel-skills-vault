@@ -1,0 +1,62 @@
+name: recipe-to-list
+title: Recipe to List
+version: 0.1.3
+description: Turn recipes into a Todoist Shopping list. Extract ingredients from recipe photos (Gemini Flash vision) or recipe
+  web pages (search + fetch), then compare against the existing Shopping project with conservative synonym/overlap rules,
+  skip pantry staples (salt/pepper), and sum quantities when units m
+metadata:
+  author: borahm
+  category: Search & Research
+  tags:
+  - search-research
+  - recipe
+  - list
+  source: clawhub-community
+  clawhub_slug: recipe-to-list
+  clawhub_path: borahm/recipe-to-list
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Recipe to List
+
+    # Source: ClawHub community skill by borahm
+
+    # Install: clawhub install recipe-to-list
+
+    # Path: borahm/recipe-to-list
+
+
+    ## Description
+
+    Turn recipes into a Todoist Shopping list. Extract ingredients from recipe photos (Gemini Flash vision) or recipe web
+    pages (search + fetch), then compare against the existing Shopping project with conservative synonym/overlap rules, skip
+    pantry staples (salt/pepper), and sum quantities when units m
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/recipe-to-list.sh
+
+    - scripts/recipe_to_list.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install recipe-to-list
+
+    ```'
+examples:
+- description: Install Recipe to List from ClawHub
+  usage: clawhub install recipe-to-list
+schema_version: '1.0'

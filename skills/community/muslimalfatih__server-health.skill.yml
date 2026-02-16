@@ -1,0 +1,60 @@
+name: server-health
+title: Server Health
+version: 1.0.0
+description: Comprehensive server health monitoring showing system stats, top processes, OpenClaw gateway status, and running
+  services. Perfect for quick health checks via Telegram or CLI.
+metadata:
+  author: muslimalfatih
+  category: Social Media
+  tags:
+  - social-media
+  - server
+  - health
+  source: clawhub-community
+  clawhub_slug: server-health
+  clawhub_path: muslimalfatih/server-health
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Server Health
+
+    # Source: ClawHub community skill by muslimalfatih
+
+    # Install: clawhub install server-health
+
+    # Path: muslimalfatih/server-health
+
+
+    ## Description
+
+    Comprehensive server health monitoring showing system stats, top processes, OpenClaw gateway status, and running services.
+    Perfect for quick health checks via Telegram or CLI.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - server-health.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install server-health
+
+    ```'
+examples:
+- description: Install Server Health from ClawHub
+  usage: clawhub install server-health
+schema_version: '1.0'

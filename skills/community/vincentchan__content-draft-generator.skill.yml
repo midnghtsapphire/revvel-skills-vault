@@ -1,0 +1,67 @@
+name: content-draft-generator
+title: Content Draft Generator
+version: 1.0.1
+description: Generates new content drafts based on reference content analysis. Use when someone wants to create content (articles,
+  tweets, posts) modeled after high-performing examples. Analyzes reference URLs, extracts patterns, generates context questions,
+  creates a meta-prompt, and produces multiple draft var
+metadata:
+  author: vincentchan
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - content
+  - draft
+  - generator
+  source: clawhub-community
+  clawhub_slug: content-draft-generator
+  clawhub_path: vincentchan/content-draft-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Content Draft Generator
+
+    # Source: ClawHub community skill by vincentchan
+
+    # Install: clawhub install content-draft-generator
+
+    # Path: vincentchan/content-draft-generator
+
+
+    ## Description
+
+    Generates new content drafts based on reference content analysis. Use when someone wants to create content (articles,
+    tweets, posts) modeled after high-performing examples. Analyzes reference URLs, extracts patterns, generates context questions,
+    creates a meta-prompt, and produces multiple draft var
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/content-anatomy-generator.md
+
+    - references/content-context-generator.md
+
+    - references/content-deconstructor.md
+
+    - references/meta-prompt-generator.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install content-draft-generator
+
+    ```'
+examples:
+- description: Install Content Draft Generator from ClawHub
+  usage: clawhub install content-draft-generator
+schema_version: '1.0'

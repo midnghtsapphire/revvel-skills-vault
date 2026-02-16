@@ -1,0 +1,58 @@
+name: life-control
+title: Life Control
+version: 0.1.0
+description: '"Orchestrate the Life Control CLI skill for OpenClaw agent fleets: initialize the Life Control database, register
+  agent personas, wire Telegram bots, and run daily routines (Morning Alignment, Body Protocol, Financial Pulse, Social Radar,
+  Work Priming, Shutdown). Use when a user asks to create or ru'
+metadata:
+  author: rachitsharma123
+  category: Social Media
+  tags:
+  - social-media
+  - life
+  - control
+  source: clawhub-community
+  clawhub_slug: life-control
+  clawhub_path: rachitsharma123/life-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Life Control
+
+    # Source: ClawHub community skill by rachitsharma123
+
+    # Install: clawhub install life-control
+
+    # Path: rachitsharma123/life-control
+
+
+    ## Description
+
+    "Orchestrate the Life Control CLI skill for OpenClaw agent fleets: initialize the Life Control database, register agent
+    personas, wire Telegram bots, and run daily routines (Morning Alignment, Body Protocol, Financial Pulse, Social Radar,
+    Work Priming, Shutdown). Use when a user asks to create or ru
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install life-control
+
+    ```'
+examples:
+- description: Install Life Control from ClawHub
+  usage: clawhub install life-control
+schema_version: '1.0'

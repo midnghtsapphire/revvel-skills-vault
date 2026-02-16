@@ -1,0 +1,60 @@
+name: agent_vibes_openclaw_skill
+title: Agent Vibes OpenClaw Skill
+version: 3.3.0
+description: Stream free, professional text-to-speech from voiceless servers to Linux, macOS, or Android devices with 50+
+  voices in 30+ languages. Two architecture options for flexible deployment - server-side TTS with audio streaming (PulseAudio)
+  OR efficient text streaming with receiver-side TTS generation (re
+metadata:
+  author: paulpreibisch
+  category: Media & Content
+  tags:
+  - media-content
+  - agent
+  - vibes
+  - openclaw
+  - skill
+  source: clawhub-community
+  clawhub_slug: agentvibes-openclaw-skill
+  clawhub_path: paulpreibisch/agentvibes-openclaw-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Vibes OpenClaw Skill
+
+    # Source: ClawHub community skill by paulpreibisch
+
+    # Install: clawhub install agentvibes-openclaw-skill
+
+    # Path: paulpreibisch/agentvibes-openclaw-skill
+
+
+    ## Description
+
+    Stream free, professional text-to-speech from voiceless servers to Linux, macOS, or Android devices with 50+ voices in
+    30+ languages. Two architecture options for flexible deployment - server-side TTS with audio streaming (PulseAudio) OR
+    efficient text streaming with receiver-side TTS generation (re
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentvibes-openclaw-skill
+
+    ```'
+examples:
+- description: Install Agent Vibes OpenClaw Skill from ClawHub
+  usage: clawhub install agentvibes-openclaw-skill
+schema_version: '1.0'

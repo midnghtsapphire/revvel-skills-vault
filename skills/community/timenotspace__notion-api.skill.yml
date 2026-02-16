@@ -1,0 +1,58 @@
+name: notion-api
+title: Notion API Tools
+version: 1.1.0
+description: Generic Notion API CLI (Node) for search, querying data sources (databases), and creating pages. Configure with
+  NOTION_KEY (or ~/.config/notion/api_key).
+metadata:
+  author: timenotspace
+  category: Search & Research
+  tags:
+  - search-research
+  - notion
+  - api
+  source: clawhub-community
+  clawhub_slug: notion-api
+  clawhub_path: timenotspace/notion-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notion API Tools
+
+    # Source: ClawHub community skill by timenotspace
+
+    # Install: clawhub install notion-api
+
+    # Path: timenotspace/notion-api
+
+
+    ## Description
+
+    Generic Notion API CLI (Node) for search, querying data sources (databases), and creating pages. Configure with NOTION_KEY
+    (or ~/.config/notion/api_key).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/notion-api.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notion-api
+
+    ```'
+examples:
+- description: Install Notion API Tools from ClawHub
+  usage: clawhub install notion-api
+schema_version: '1.0'

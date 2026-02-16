@@ -1,0 +1,73 @@
+name: hexmem
+title: hexmem
+version: 1.0.3
+description: Structured memory database for AI agent identity, tasks, events, lessons, and persistent continuity. Use whenever
+  the user says remember this, log this, track this, what should I do next, recap, summarize, what changed, or when you need
+  to store/retrieve decisions, incidents, fleet ops notes, remind
+metadata:
+  author: santyr
+  category: Development & Coding
+  tags:
+  - development-coding
+  - hexmem
+  source: clawhub-community
+  clawhub_slug: skill-hexmem
+  clawhub_path: santyr/skill-hexmem
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# hexmem
+
+    # Source: ClawHub community skill by santyr
+
+    # Install: clawhub install skill-hexmem
+
+    # Path: santyr/skill-hexmem
+
+
+    ## Description
+
+    Structured memory database for AI agent identity, tasks, events, lessons, and persistent continuity. Use whenever the
+    user says remember this, log this, track this, what should I do next, recap, summarize, what changed, or when you need
+    to store/retrieve decisions, incidents, fleet ops notes, remind
+
+
+    ## Files
+
+    - README.md
+
+    - SIGNATURES.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - embed.py
+
+    - hexmem.sh
+
+    - manifest.json
+
+    - migrate.sh
+
+    - requirements.txt
+
+    - review.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-hexmem
+
+    ```'
+examples:
+- description: Install hexmem from ClawHub
+  usage: clawhub install skill-hexmem
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: skill-release-manager
+title: Skill Release Manager
+version: 1.0.1
+description: Automates the release lifecycle of OpenClaw skills. Updates version, syncs to GitHub (subtree), creates GitHub
+  Releases, and publishes to ClawHub in one command.
+metadata:
+  author: autogame-17
+  category: Development & Coding
+  tags:
+  - development-coding
+  - skill
+  - release
+  - manager
+  source: clawhub-community
+  clawhub_slug: skill-release-manager
+  clawhub_path: autogame-17/skill-release-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Release Manager
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install skill-release-manager
+
+    # Path: autogame-17/skill-release-manager
+
+
+    ## Description
+
+    Automates the release lifecycle of OpenClaw skills. Updates version, syncs to GitHub (subtree), creates GitHub Releases,
+    and publishes to ClawHub in one command.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package-lock.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-release-manager
+
+    ```'
+examples:
+- description: Install Skill Release Manager from ClawHub
+  usage: clawhub install skill-release-manager
+schema_version: '1.0'

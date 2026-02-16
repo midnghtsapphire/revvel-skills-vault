@@ -1,0 +1,71 @@
+name: auditing-appstore-readiness
+title: Audit App Store Readiness
+version: 1.0.0
+description: Audit an iOS app repo (Swift/Xcode or React Native/Expo) for App Store compliance and release readiness; output
+  a pass/warn/fail report and publish checklist.
+metadata:
+  author: tristanmanchester
+  category: Development & Coding
+  tags:
+  - development-coding
+  - auditing
+  - appstore
+  - readiness
+  source: clawhub-community
+  clawhub_slug: auditing-appstore-readiness
+  clawhub_path: tristanmanchester/auditing-appstore-readiness
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Audit App Store Readiness
+
+    # Source: ClawHub community skill by tristanmanchester
+
+    # Install: clawhub install auditing-appstore-readiness
+
+    # Path: tristanmanchester/auditing-appstore-readiness
+
+
+    ## Description
+
+    Audit an iOS app repo (Swift/Xcode or React Native/Expo) for App Store compliance and release readiness; output a pass/warn/fail
+    report and publish checklist.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/expo.md
+
+    - references/manual-checklist.md
+
+    - references/native-ios.md
+
+    - references/permissions-map.md
+
+    - references/react-native.md
+
+    - references/report-template.md
+
+    - scripts/audit.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install auditing-appstore-readiness
+
+    ```'
+examples:
+- description: Install Audit App Store Readiness from ClawHub
+  usage: clawhub install auditing-appstore-readiness
+schema_version: '1.0'

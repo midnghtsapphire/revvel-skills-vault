@@ -1,0 +1,62 @@
+name: simmer-weather
+title: Polymarket Weather Trader
+version: 1.6.1
+description: Trade Polymarket weather markets using NOAA forecasts via Simmer API. Inspired by gopfan2's $2M+ strategy. Use
+  when user wants to trade temperature markets, automate weather bets, check NOAA forecasts, or run gopfan2-style trading.
+metadata:
+  author: adlai88
+  category: Development & Coding
+  tags:
+  - development-coding
+  - simmer
+  - weather
+  source: clawhub-community
+  clawhub_slug: simmer-weather
+  clawhub_path: adlai88/simmer-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polymarket Weather Trader
+
+    # Source: ClawHub community skill by adlai88
+
+    # Install: clawhub install simmer-weather
+
+    # Path: adlai88/simmer-weather
+
+
+    ## Description
+
+    Trade Polymarket weather markets using NOAA forecasts via Simmer API. Inspired by gopfan2''s $2M+ strategy. Use when user
+    wants to trade temperature markets, automate weather bets, check NOAA forecasts, or run gopfan2-style trading.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - weather_trader.py
+
+    - scripts/status.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install simmer-weather
+
+    ```'
+examples:
+- description: Install Polymarket Weather Trader from ClawHub
+  usage: clawhub install simmer-weather
+schema_version: '1.0'

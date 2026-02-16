@@ -1,0 +1,68 @@
+name: apple-mail
+title: Apple Mail Moltbot Skill
+version: 1.0.0
+description: 'Read and interact with Apple Mail via osascript on macOS. Use when you need to: (1) List mail accounts, (2)
+  List mailboxes/folders for an account, (3) Get messages from a specific mailbox, (4) Read message content. Works with Apple
+  Mail app on macOS only.'
+metadata:
+  author: latisen
+  category: Communication
+  tags:
+  - communication
+  - apple
+  - mail
+  source: clawhub-community
+  clawhub_slug: apple-mail-moltbot-skill
+  clawhub_path: latisen/apple-mail-moltbot-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Mail Moltbot Skill
+
+    # Source: ClawHub community skill by latisen
+
+    # Install: clawhub install apple-mail-moltbot-skill
+
+    # Path: latisen/apple-mail-moltbot-skill
+
+
+    ## Description
+
+    Read and interact with Apple Mail via osascript on macOS. Use when you need to: (1) List mail accounts, (2) List mailboxes/folders
+    for an account, (3) Get messages from a specific mailbox, (4) Read message content. Works with Apple Mail app on macOS
+    only.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/get_message_content.py
+
+    - scripts/get_messages.py
+
+    - scripts/list_accounts.py
+
+    - scripts/list_mailboxes.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-mail-moltbot-skill
+
+    ```'
+examples:
+- description: Install Apple Mail Moltbot Skill from ClawHub
+  usage: clawhub install apple-mail-moltbot-skill
+schema_version: '1.0'

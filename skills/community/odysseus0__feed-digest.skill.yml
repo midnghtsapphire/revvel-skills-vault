@@ -1,0 +1,58 @@
+name: feed-digest
+title: Feed Digest
+version: 1.0.0
+description: '"Agentic feed digest using the feed CLI. Fetch, triage, and summarize RSS/Atom/JSON feeds to surface high-signal
+  posts. Use when: (1) reading feeds or catching up on news, (2) user asks for a digest, roundup, or summary of recent posts,
+  (3) user asks what''s new or interesting today, (4) user mention'
+metadata:
+  author: odysseus0
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - feed
+  - digest
+  source: clawhub-community
+  clawhub_slug: feed-digest
+  clawhub_path: odysseus0/feed-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feed Digest
+
+    # Source: ClawHub community skill by odysseus0
+
+    # Install: clawhub install feed-digest
+
+    # Path: odysseus0/feed-digest
+
+
+    ## Description
+
+    "Agentic feed digest using the feed CLI. Fetch, triage, and summarize RSS/Atom/JSON feeds to surface high-signal posts.
+    Use when: (1) reading feeds or catching up on news, (2) user asks for a digest, roundup, or summary of recent posts, (3)
+    user asks what''s new or interesting today, (4) user mention
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feed-digest
+
+    ```'
+examples:
+- description: Install Feed Digest from ClawHub
+  usage: clawhub install feed-digest
+schema_version: '1.0'

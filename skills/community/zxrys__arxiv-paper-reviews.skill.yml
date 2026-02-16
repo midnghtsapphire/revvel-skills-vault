@@ -1,0 +1,65 @@
+name: arxiv-paper-reviews
+title: arXiv Paper Reviews
+version: 1.0.2
+description: Interact with arXiv Crawler API to fetch papers, read reviews, submit comments, search papers, and import papers.
+  Use when working with arXiv papers, fetching paper lists by date/category/interest, viewing paper details with comments,
+  submitting paper reviews, searching papers by title, or importing
+metadata:
+  author: zxrys
+  category: Search & Research
+  tags:
+  - search-research
+  - arxiv
+  - paper
+  - reviews
+  source: clawhub-community
+  clawhub_slug: arxiv-paper-reviews
+  clawhub_path: zxrys/arxiv-paper-reviews
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# arXiv Paper Reviews
+
+    # Source: ClawHub community skill by zxrys
+
+    # Install: clawhub install arxiv-paper-reviews
+
+    # Path: zxrys/arxiv-paper-reviews
+
+
+    ## Description
+
+    Interact with arXiv Crawler API to fetch papers, read reviews, submit comments, search papers, and import papers. Use
+    when working with arXiv papers, fetching paper lists by date/category/interest, viewing paper details with comments, submitting
+    paper reviews, searching papers by title, or importing
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - install-deps.sh
+
+    - paper_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install arxiv-paper-reviews
+
+    ```'
+examples:
+- description: Install arXiv Paper Reviews from ClawHub
+  usage: clawhub install arxiv-paper-reviews
+schema_version: '1.0'

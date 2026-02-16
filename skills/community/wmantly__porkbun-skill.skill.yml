@@ -1,0 +1,65 @@
+name: porkbun
+title: Porkbun
+version: 0.1.2
+description: Manage Porkbun DNS records and domains via API v3. Use when Codex needs to create, read, update, or delete DNS
+  records on Porkbun; list domains; configure API access; work with common record types (A, AAAA, CNAME, MX, TXT, etc.). The
+  skill includes a CLI tool `scripts/porkbun-dns.js` for executing D
+metadata:
+  author: wmantly
+  category: Development & Coding
+  tags:
+  - development-coding
+  - porkbun
+  source: clawhub-community
+  clawhub_slug: porkbun-skill
+  clawhub_path: wmantly/porkbun-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Porkbun
+
+    # Source: ClawHub community skill by wmantly
+
+    # Install: clawhub install porkbun-skill
+
+    # Path: wmantly/porkbun-skill
+
+
+    ## Description
+
+    Manage Porkbun DNS records and domains via API v3. Use when Codex needs to create, read, update, or delete DNS records
+    on Porkbun; list domains; configure API access; work with common record types (A, AAAA, CNAME, MX, TXT, etc.). The skill
+    includes a CLI tool `scripts/porkbun-dns.js` for executing D
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/dns-record-types.md
+
+    - scripts/porkbun-dns.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install porkbun-skill
+
+    ```'
+examples:
+- description: Install Porkbun from ClawHub
+  usage: clawhub install porkbun-skill
+schema_version: '1.0'

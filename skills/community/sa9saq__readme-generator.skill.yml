@@ -1,0 +1,54 @@
+name: readme-generator
+title: Readme Generator
+version: 1.1.0
+description: Auto-generate comprehensive README.md files by analyzing project structure and configuration.
+metadata:
+  author: sa9saq
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - readme
+  - generator
+  source: clawhub-community
+  clawhub_slug: readme-generator
+  clawhub_path: sa9saq/readme-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Readme Generator
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install readme-generator
+
+    # Path: sa9saq/readme-generator
+
+
+    ## Description
+
+    Auto-generate comprehensive README.md files by analyzing project structure and configuration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install readme-generator
+
+    ```'
+examples:
+- description: Install Readme Generator from ClawHub
+  usage: clawhub install readme-generator
+schema_version: '1.0'

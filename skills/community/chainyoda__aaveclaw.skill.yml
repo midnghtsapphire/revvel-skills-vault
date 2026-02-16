@@ -1,0 +1,73 @@
+name: aaveclaw
+title: aaveclaw
+version: 1.0.0
+description: Aave V3 lending protocol on Base Sepolia testnet. Deposit WETH collateral, borrow USDC, repay loans, withdraw
+  collateral, check health factor, and mint test tokens via faucet. Use when users want to interact with Aave lending, check
+  their lending position health, or get testnet tokens.
+metadata:
+  author: chainyoda
+  category: Development & Coding
+  tags:
+  - development-coding
+  - aaveclaw
+  source: clawhub-community
+  clawhub_slug: aaveclaw
+  clawhub_path: chainyoda/aaveclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# aaveclaw
+
+    # Source: ClawHub community skill by chainyoda
+
+    # Install: clawhub install aaveclaw
+
+    # Path: chainyoda/aaveclaw
+
+
+    ## Description
+
+    Aave V3 lending protocol on Base Sepolia testnet. Deposit WETH collateral, borrow USDC, repay loans, withdraw collateral,
+    check health factor, and mint test tokens via faucet. Use when users want to interact with Aave lending, check their lending
+    position health, or get testnet tokens.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/borrow.sh
+
+    - scripts/deposit.sh
+
+    - scripts/faucet.sh
+
+    - scripts/health.sh
+
+    - scripts/repay.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aaveclaw
+
+    ```'
+examples:
+- description: Install aaveclaw from ClawHub
+  usage: clawhub install aaveclaw
+schema_version: '1.0'

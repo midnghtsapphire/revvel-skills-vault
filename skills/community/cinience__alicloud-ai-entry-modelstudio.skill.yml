@@ -1,0 +1,61 @@
+name: alicloud-ai-entry-modelstudio
+title: Alicloud Ai Entry Modelstudio
+version: 1.0.2
+description: Route Alibaba Cloud Model Studio requests to the right local skill (Qwen Image, Qwen Image Edit, Wan Video, Wan
+  R2V, Qwen TTS and advanced TTS variants). Use when the user asks for Model Studio without specifying a capability.
+metadata:
+  author: cinience
+  category: Media & Content
+  tags:
+  - media-content
+  - alicloud
+  - entry
+  - modelstudio
+  source: clawhub-community
+  clawhub_slug: alicloud-ai-entry-modelstudio
+  clawhub_path: cinience/alicloud-ai-entry-modelstudio
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Ai Entry Modelstudio
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-ai-entry-modelstudio
+
+    # Path: cinience/alicloud-ai-entry-modelstudio
+
+
+    ## Description
+
+    Route Alibaba Cloud Model Studio requests to the right local skill (Qwen Image, Qwen Image Edit, Wan Video, Wan R2V, Qwen
+    TTS and advanced TTS variants). Use when the user asks for Model Studio without specifying a capability.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-ai-entry-modelstudio
+
+    ```'
+examples:
+- description: Install Alicloud Ai Entry Modelstudio from ClawHub
+  usage: clawhub install alicloud-ai-entry-modelstudio
+schema_version: '1.0'

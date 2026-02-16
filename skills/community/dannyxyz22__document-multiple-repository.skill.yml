@@ -1,0 +1,69 @@
+name: document-multiple-repository
+title: Document Multiple Repository
+version: 0.1.0
+description: Gera documentação técnica consolidada para sistemas de software com múltiplos repositórios (frontend, backend,
+  microservices, wikis). Use quando o usuário pedir documentação de multi-repo, visão de arquitetura consolidada, mapeamento
+  de repositórios ou documentação a partir de vários repos locais.
+metadata:
+  author: dannyxyz22
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - document
+  - multiple
+  - repository
+  source: clawhub-community
+  clawhub_slug: document-multiple-repository
+  clawhub_path: dannyxyz22/document-multiple-repository
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Document Multiple Repository
+
+    # Source: ClawHub community skill by dannyxyz22
+
+    # Install: clawhub install document-multiple-repository
+
+    # Path: dannyxyz22/document-multiple-repository
+
+
+    ## Description
+
+    Gera documentação técnica consolidada para sistemas de software com múltiplos repositórios (frontend, backend, microservices,
+    wikis). Use quando o usuário pedir documentação de multi-repo, visão de arquitetura consolidada, mapeamento de repositórios
+    ou documentação a partir de vários repos locais.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - templates/API.template.md
+
+    - templates/ARCHITECTURE.template.md
+
+    - templates/CODE_COMMENTS.template.md
+
+    - templates/README.template.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install document-multiple-repository
+
+    ```'
+examples:
+- description: Install Document Multiple Repository from ClawHub
+  usage: clawhub install document-multiple-repository
+schema_version: '1.0'

@@ -1,0 +1,69 @@
+name: mediator
+title: Mediator
+version: 1.0.0
+description: Intercept and filter communications from difficult contacts. Strips emotion, extracts facts, drafts neutral responses.
+  Use when setting up communication filtering for specific contacts, configuring the mediator, or processing intercepted messages.
+  Triggers on "mediator", "intercept messages", "filte
+metadata:
+  author: dylntrnr
+  category: Media & Content
+  tags:
+  - media-content
+  - mediator
+  source: clawhub-community
+  clawhub_slug: mediator
+  clawhub_path: dylntrnr/mediator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mediator
+
+    # Source: ClawHub community skill by dylntrnr
+
+    # Install: clawhub install mediator
+
+    # Path: dylntrnr/mediator
+
+
+    ## Description
+
+    Intercept and filter communications from difficult contacts. Strips emotion, extracts facts, drafts neutral responses.
+    Use when setting up communication filtering for specific contacts, configuring the mediator, or processing intercepted
+    messages. Triggers on "mediator", "intercept messages", "filte
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/prompts.md
+
+    - scripts/config-helper.py
+
+    - scripts/mediator.sh
+
+    - scripts/process-email.py
+
+    - scripts/process-imessage.py
+
+    - scripts/summarize.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mediator
+
+    ```'
+examples:
+- description: Install Mediator from ClawHub
+  usage: clawhub install mediator
+schema_version: '1.0'

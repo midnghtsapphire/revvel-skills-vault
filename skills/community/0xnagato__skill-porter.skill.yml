@@ -1,0 +1,74 @@
+name: skill-porter
+title: Skill Porter
+version: 1.0.0
+description: Converts Claude Code skills to Gemini CLI extensions and vice versa. Use when the user wants to make a skill
+  cross-platform compatible, port a skill between platforms, or create a universal extension that works on both Claude Code
+  and Gemini CLI.
+metadata:
+  author: 0xnagato
+  category: Development & Coding
+  tags:
+  - development-coding
+  - skill
+  - porter
+  source: clawhub-community
+  clawhub_slug: skill-porter
+  clawhub_path: 0xnagato/skill-porter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Porter
+
+    # Source: ClawHub community skill by 0xnagato
+
+    # Install: clawhub install skill-porter
+
+    # Path: 0xnagato/skill-porter
+
+
+    ## Description
+
+    Converts Claude Code skills to Gemini CLI extensions and vice versa. Use when the user wants to make a skill cross-platform
+    compatible, port a skill between platforms, or create a universal extension that works on both Claude Code and Gemini
+    CLI.
+
+
+    ## Files
+
+    - CONTRIBUTING.md
+
+    - GEMINI.md
+
+    - README.md
+
+    - SKILL.md
+
+    - TEST_RESULTS.md
+
+    - _meta.json
+
+    - gemini-extension.json
+
+    - package.json
+
+    - examples/README.md
+
+    - examples/api-connector-gemini/GEMINI.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-porter
+
+    ```'
+examples:
+- description: Install Skill Porter from ClawHub
+  usage: clawhub install skill-porter
+schema_version: '1.0'

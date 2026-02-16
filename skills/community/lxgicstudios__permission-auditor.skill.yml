@@ -1,0 +1,58 @@
+name: permission-auditor
+title: Permission Auditor
+version: 1.0.0
+description: Generate RBAC permission configs from your routes. Use when you need role-based access control without building
+  it from scratch.
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - permission
+  - auditor
+  source: clawhub-community
+  clawhub_slug: permission-auditor
+  clawhub_path: lxgicstudios/permission-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Permission Auditor
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install permission-auditor
+
+    # Path: lxgicstudios/permission-auditor
+
+
+    ## Description
+
+    Generate RBAC permission configs from your routes. Use when you need role-based access control without building it from
+    scratch.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install permission-auditor
+
+    ```'
+examples:
+- description: Install Permission Auditor from ClawHub
+  usage: clawhub install permission-auditor
+schema_version: '1.0'

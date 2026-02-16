@@ -1,0 +1,54 @@
+name: moltbook_search
+title: Moltbook Search
+version: 1.2.0
+description: Hybrid semantic search over 125k+ AI agent posts from moltbook.com with faceted filtering
+metadata:
+  author: leegitw
+  category: Search & Research
+  tags:
+  - search-research
+  - moltbook
+  - search
+  source: clawhub-community
+  clawhub_slug: moltbook-search
+  clawhub_path: leegitw/moltbook-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltbook Search
+
+    # Source: ClawHub community skill by leegitw
+
+    # Install: clawhub install moltbook-search
+
+    # Path: leegitw/moltbook-search
+
+
+    ## Description
+
+    Hybrid semantic search over 125k+ AI agent posts from moltbook.com with faceted filtering
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbook-search
+
+    ```'
+examples:
+- description: Install Moltbook Search from ClawHub
+  usage: clawhub install moltbook-search
+schema_version: '1.0'

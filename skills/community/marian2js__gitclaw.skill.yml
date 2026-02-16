@@ -1,0 +1,53 @@
+name: gitclaw
+title: GitClaw
+version: 1.0.0
+description: Back up the OpenClaw agent workspace to a GitHub repo and keep it synced via a cron-driven commit/push script.
+metadata:
+  author: marian2js
+  category: Development & Coding
+  tags:
+  - development-coding
+  - gitclaw
+  source: clawhub-community
+  clawhub_slug: gitclaw
+  clawhub_path: marian2js/gitclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitClaw
+
+    # Source: ClawHub community skill by marian2js
+
+    # Install: clawhub install gitclaw
+
+    # Path: marian2js/gitclaw
+
+
+    ## Description
+
+    Back up the OpenClaw agent workspace to a GitHub repo and keep it synced via a cron-driven commit/push script.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gitclaw
+
+    ```'
+examples:
+- description: Install GitClaw from ClawHub
+  usage: clawhub install gitclaw
+schema_version: '1.0'

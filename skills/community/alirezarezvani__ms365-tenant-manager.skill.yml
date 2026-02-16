@@ -1,0 +1,75 @@
+name: ms365-tenant-manager
+title: Ms365 Tenant Manager
+version: 1.0.0
+description: Microsoft 365 tenant administration for Global Administrators. Automate M365 tenant setup, Office 365 admin tasks,
+  Azure AD user management, Exchange Online configuration, Teams administration, and security policies. Generate PowerShell
+  scripts for bulk operations, Conditional Access policies, licen
+metadata:
+  author: alirezarezvani
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - ms365
+  - tenant
+  - manager
+  source: clawhub-community
+  clawhub_slug: ms365-tenant-manager
+  clawhub_path: alirezarezvani/ms365-tenant-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ms365 Tenant Manager
+
+    # Source: ClawHub community skill by alirezarezvani
+
+    # Install: clawhub install ms365-tenant-manager
+
+    # Path: alirezarezvani/ms365-tenant-manager
+
+
+    ## Description
+
+    Microsoft 365 tenant administration for Global Administrators. Automate M365 tenant setup, Office 365 admin tasks, Azure
+    AD user management, Exchange Online configuration, Teams administration, and security policies. Generate PowerShell scripts
+    for bulk operations, Conditional Access policies, licen
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - expected_output.json
+
+    - sample_input.json
+
+    - references/powershell-templates.md
+
+    - references/security-policies.md
+
+    - references/troubleshooting.md
+
+    - scripts/powershell_generator.py
+
+    - scripts/tenant_setup.py
+
+    - scripts/user_management.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ms365-tenant-manager
+
+    ```'
+examples:
+- description: Install Ms365 Tenant Manager from ClawHub
+  usage: clawhub install ms365-tenant-manager
+schema_version: '1.0'

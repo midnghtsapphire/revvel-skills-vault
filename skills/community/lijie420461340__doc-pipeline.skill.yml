@@ -1,0 +1,53 @@
+name: custom
+title: Doc Pipeline
+version: 1.0.0
+description: Chain document operations into reusable pipelines
+metadata:
+  author: lijie420461340
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - custom
+  source: clawhub-community
+  clawhub_slug: doc-pipeline
+  clawhub_path: lijie420461340/doc-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Doc Pipeline
+
+    # Source: ClawHub community skill by lijie420461340
+
+    # Install: clawhub install doc-pipeline
+
+    # Path: lijie420461340/doc-pipeline
+
+
+    ## Description
+
+    Chain document operations into reusable pipelines
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install doc-pipeline
+
+    ```'
+examples:
+- description: Install Doc Pipeline from ClawHub
+  usage: clawhub install doc-pipeline
+schema_version: '1.0'

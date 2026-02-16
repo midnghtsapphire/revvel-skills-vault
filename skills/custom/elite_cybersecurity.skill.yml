@@ -1,0 +1,185 @@
+name: elite_cybersecurity
+title: Elite Cybersecurity, Deepfake & Malware Expert
+version: 1.0.0
+description: Top-tier offensive & defensive cybersecurity, malware analysis, deepfake detection, OSINT, and zero-day research
+  toolkit with real tool integrations.
+metadata:
+  author: Revvel AI Engine
+  category: Security & Privacy
+  tags:
+  - elite
+  - password-cracking
+  - privilege-escalation
+  - cybersecurity
+  - exploitation
+  - lateral-movement
+  - penetration-testing
+  - wireless-attacks
+  - vulnerability-scanning
+  - social-engineering
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport hashlib\nimport base64\nimport ipaddress\nimport socket\nimport subprocess\n\
+    import tempfile\nimport unittest\nfrom datetime import datetime\nfrom typing import Dict, List, Any, Optional, Union\n\
+    from collections import defaultdict\nimport requests\n\nSKILL_METADATA = {\n    \"name\": \"Elite Cybersecurity, Deepfake\
+    \ & Malware Expert\",\n    \"id\": \"elite_cybersecurity\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI\
+    \ Engine\",\n    \"description\": \"Top-tier offensive & defensive cybersecurity, malware analysis, deepfake detection,\
+    \ OSINT, and zero-day research toolkit with real tool integrations.\",\n    \"capabilities\": [\n        \"penetration_testing\"\
+    , \"vulnerability_scanning\", \"exploitation\", \"password_cracking\",\n        \"wireless_attacks\", \"social_engineering\"\
+    , \"privilege_escalation\", \"lateral_movement\",\n        \"c2_frameworks\", \"siem_analysis\", \"threat_hunting\", \"\
+    incident_response\",\n        \"digital_forensics\", \"malware_analysis\", \"reverse_engineering\", \"deepfake_detection\"\
+    ,\n        \"osint\", \"dark_web_monitoring\", \"cryptocurrency_investigation\", \"zero_day_research\",\n        \"fuzzing\"\
+    , \"exploit_development\", \"report_generation\"\n    ],\n    \"domain\": \"cybersecurity\"\n}\n\nEXPERT_PROMPTS = {\n\
+    \    \"pentest_plan\": \"\"\"\nYou are an elite red-team operator. Build a full-scope penetration test plan for {target_scope}.\n\
+    Include: reconnaissance, vulnerability identification, exploitation, post-exploitation, lateral movement, persistence,\
+    \ and data exfiltration vectors.\nMap all steps to MITRE ATT&CK. Provide tool commands (Nmap, Metasploit, BloodHound,\
+    \ CrackMapExec) and expected outputs.\nHighlight potential legal & compliance risks.\n\"\"\",\n    \"malware_triage\"\
+    : \"\"\"\nYou are a senior malware analyst. Perform deep triage on the sample with SHA256 {sha256}.\nDeliver:\n1. Static\
+    \ analysis: PE headers, imports, strings, entropy, packer detection.\n2. Dynamic analysis: sandbox JSON, API calls, network\
+    \ IOCs.\n3. Reverse engineering: Ghidra/IDA pseudocode snippets, C2 decode logic.\n4. Attribution & family classification\
+    \ with confidence score.\n5. YARA rule and Snort signature.\nProvide raw data and markdown report.\n\"\"\",\n    \"deepfake_forensics\"\
+    : \"\"\"\nYou are a media forensics expert. Analyze the supplied video file {video_path} for deepfake manipulation.\n\
+    Run frame-level, temporal, frequency, and biometric checks.\nOutput:\n- Manipulation score (0-1)\n- GAN fingerprint (StyleGAN,\
+    \ FaceSwap, etc.)\n- Audio deepfake confidence\n- Tampered segments with timestamps\n- Recommended tools for deeper analysis\n\
+    - Chain-of-custody notes\n\"\"\",\n    \"threat_hunt_ioc\": \"\"\"\nYou are a SOC lead. Hunt for APT {apt_name} TTPs across\
+    \ the enterprise logs of {environment}.\nGenerate Splunk/ELK queries, YARA rules, and Sigma detections.\nCorrelate with\
+    \ MITRE ATT&CK technique IDs.\nProvide step-by-step runbook for analysts.\n\"\"\",\n    \"dark_web_osint\": \"\"\"\nYou\
+    \ are an OSINT investigator. Search Tor & I2P markets for mentions of {search_term}.\nReturn:\n- Marketplace listings\
+    \ with prices, vendors, timestamps\n- Breach datasets containing emails/domains\n- Cryptocurrency addresses and mixer\
+    \ usage\n- Forum discussions with user handles\n- Screenshot hashes for evidence\n- Risk assessment & next steps\n\"\"\
+    \",\n    \"zero_day_fuzz\": \"\"\"\nYou are an exploit developer. Create an AFL/LibFuzzer harness for {target_binary}.\n\
+    Provide:\n- Harness source code\n- Input corpus generator\n- Mutation strategies\n- Crash triage script\n- Exploit primitive\
+    \ identification\n- Potential patch diffing notes\n\"\"\",\n    \"crypto_investigation\": \"\"\"\nYou are a blockchain\
+    \ forensic analyst. Trace the flow of {crypto_currency} from {start_address}.\nFollow mixers, peel chains, and cluster\
+    \ wallets.\nDeliver:\n- Graph visualization data\n- Entity attribution (exchange, service, illicit)\n- Risk score using\
+    \ Chainalysis metrics\n- Sewanace-ready report\n\"\"\",\n    \"incident_response\": \"\"\"\nYou are an IR lead. A {threat_type}\
+    \ attack has hit {affected_assets}.\nBuild a containment & eradication playbook.\nInclude:\n- Isolation procedures\n-\
+    \ Evidence acquisition commands\n- Memory dump analysis steps\n- IOC sweeping scripts\n- Communication templates\n- Legal\
+    \ & regulatory notifications\n\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"shodan\": {\n        \"type\": \"api\",\n   \
+    \     \"endpoint\": \"https://api.shodan.io\",\n        \"description\": \"Internet-facing asset discovery & vulnerability\
+    \ data\",\n        \"auth_method\": \"API key header\",\n        \"documentation_url\": \"https://developer.shodan.io/api\"\
+    \n    },\n    \"virustotal\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://www.virustotal.com/api/v3\"\
+    ,\n        \"description\": \"File & URL scanning, threat intelligence\",\n        \"auth_method\": \"x-apikey header\"\
+    ,\n        \"documentation_url\": \"https://docs.virustotal.com/\"\n    },\n    \"metasploit_rpc\": {\n        \"type\"\
+    : \"tool\",\n        \"endpoint\": \"localhost:55553\",\n        \"description\": \"Remote API to Metasploit Framework\"\
+    ,\n        \"auth_method\": \"Token\",\n        \"documentation_url\": \"https://docs.rapid7.com/metasploit/api/\"\n \
+    \   },\n    \"splunk\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://splunk.example.com:8089\",\n  \
+    \      \"description\": \"SIEM log search & analysis\",\n        \"auth_method\": \"Bearer token\",\n        \"documentation_url\"\
+    : \"https://dev.splunk.com/enterprise/docs/\"\n    },\n    \"haveibeenpwned\": {\n        \"type\": \"api\",\n       \
+    \ \"endpoint\": \"https://api.haveibeenpwned.com\",\n        \"description\": \"Breach & paste data lookup\",\n      \
+    \  \"auth_method\": \"hibp-api-key header\",\n        \"documentation_url\": \"https://haveibeenpwned.com/API/v3\"\n \
+    \   },\n    \"blockchain_info\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://blockchain.com/api\",\n\
+    \        \"description\": \"Bitcoin address & transaction data\",\n        \"auth_method\": \"None\",\n        \"documentation_url\"\
+    : \"https://www.blockchain.com/api\"\n    },\n    \"attack_mitre\": {\n        \"type\": \"database\",\n        \"endpoint\"\
+    : \"https://attack.mitre.org/api\",\n        \"description\": \"MITRE ATT&CK technique & group JSON\",\n        \"auth_method\"\
+    : \"None\",\n        \"documentation_url\": \"https://github.com/mitre/cti\"\n    },\n    \"censys\": {\n        \"type\"\
+    : \"api\",\n        \"endpoint\": \"https://search.censys.io/api\",\n        \"description\": \"Internet asset discovery\
+    \ & certificates\",\n        \"auth_method\": \"API ID & secret\",\n        \"documentation_url\": \"https://search.censys.io/api\"\
+    \n    }\n}\n\ndef validate_ip(ip: str) -> bool:\n    \"\"\"Return True if ip is a valid IPv4/IPv6 address.\"\"\"\n   \
+    \ try:\n        ipaddress.ip_address(ip)\n        return True\n    except ValueError:\n        return False\n\ndef validate_hash(h:\
+    \ str) -> bool:\n    \"\"\"Return True if h looks like MD5/SHA1/SHA256/SHA512.\"\"\"\n    return bool(re.fullmatch(r'^[a-fA-F0-9]{32,128}$',\
+    \ h))\n\ndef entropy(data: bytes) -> float:\n    \"\"\"Calculate Shannon entropy of byte sequence.\"\"\"\n    if not data:\n\
+    \        return 0.0\n    counts = defaultdict(int)\n    for b in data:\n        counts[b] += 1\n    total = len(data)\n\
+    \    return -sum((c/total)*math.log2(c/total) for c in counts.values() if c)\n\ndef parse_nmap_xml(xml_text: str) -> List[Dict[str,\
+    \ Any]]:\n    \"\"\"Extract host/port/service info from Nmap XML output.\"\"\"\n    hosts = []\n    host_re = re.compile(r'<host(?:\\\
+    s.*?)?>(.*?)</host>', re.S)\n    addr_re = re.compile(r'<address\\s+addr=\"([^\"]+\".*?>)')\n    port_re = re.compile(r'<port\\\
+    s+port=\"(\\d+)\".*?<state\\s+state=\"([^\"]+)\"\\s+reason=\"([^\"]*)\".*?(<service\\s+.*?>).*?</port>', re.S)\n    for\
+    \ host_block in host_re.findall(xml_text):\n        addr = addr_re.search(host_block)\n        if not addr:\n        \
+    \    continue\n        ip = addr.group(1)\n        ports = []\n        for port, state, reason, svc in port_re.findall(host_block):\n\
+    \            svc_name = re.search(r'name=\"([^\"]*)\"', svc)\n            ports.append({\n                \"port\": int(port),\n\
+    \                \"state\": state,\n                \"reason\": reason,\n                \"service\": svc_name.group(1)\
+    \ if svc_name else \"unknown\"\n            })\n        hosts.append({\"ip\": ip, \"ports\": ports})\n    return hosts\n\
+    \ndef build_shodan_query(query: str, facets: Optional[List[str]] = None) -> str:\n    \"\"\"Construct Shodan search URL\
+    \ with optional facets.\"\"\"\n    url = f\"https://api.shodan.io/shodan/host/search?key={os.getenv('SHODAN_KEY','')}&query={requests.utils.quote(query)}\"\
+    \n    if facets:\n        url += \"&facets=\" + \",\".join(facets)\n    return url\n\ndef generate_yara_rule(name: str,\
+    \ strings: List[str], condition: str = \"all of them\") -> str:\n    \"\"\"Return YARA rule source from indicators.\"\"\
+    \"\n    rule = f\"\"\"\nrule {name}\n{{\n    meta:\n        author = \"RevvelAI\"\n        date = \"{datetime.utcnow().isoformat()}\"\
+    \n    strings:\n\"\"\"\n    for idx, s in enumerate(strings):\n        rule += f'        ${idx} = \"{s}\"\\n'\n    rule\
+    \ += f\"    condition:\\n        {condition}\\n}}\"\n    return rule.strip()\n\ndef sigma_rule(title: str, logsource:\
+    \ Dict[str, str], detection: Dict[str, Any], level: str = \"medium\") -> Dict[str, Any]:\n    \"\"\"Build Sigma detection\
+    \ rule JSON.\"\"\"\n    return {\n        \"title\": title,\n        \"id\": hashlib.sha256(title.encode()).hexdigest()[:16],\n\
+    \        \"status\": \"experimental\",\n        \"description\": f\"Detects {title}\",\n        \"logsource\": logsource,\n\
+    \        \"detection\": detection,\n        \"level\": level,\n        \"tags\": [\"attack.discovery\"]\n    }\n\ndef\
+    \ splunk_query(index: str, iocs: List[str], field: str = \"url\") -> str:\n    \"\"\"Return Splunk SPL for IOC search.\"\
+    \"\"\n    ioc_list = \" OR \".join(f'\"{ioc}\"' for ioc in iocs)\n    return f'index=\"{index}\" ({field} IN ({ioc_list}))\
+    \ | stats count by host, user | where count > 0'\n\ndef generate_hashcat_mask(min_len: int = 8, max_len: int = 12, charset:\
+    \ str = \"?l?u?d\") -> str:\n    \"\"\"Return hashcat mask for brute-force.\"\"\"\n    return f\"{charset * min_len}-{charset\
+    \ * max_len}\"\n\ndef create_phishing_html(target_brand: str, redirect_url: str) -> str:\n    \"\"\"Generate basic phishing\
+    \ page HTML.\"\"\"\n    return f\"\"\"\n<!doctype html>\n<html>\n<head><title>{target_brand} - Sign In</title></head>\n\
+    <body>\n<form action=\"{redirect_url}\" method=\"post\">\n<input name=\"email\" placeholder=\"Email\">\n<input name=\"\
+    password\" type=\"password\" placeholder=\"Password\">\n<button>Login</button>\n</form>\n</body>\n</html>\n\"\"\".strip()\n\
+    \ndef vt_hash_lookup(sha256: str, api_key: str) -> Dict[str, Any]:\n    \"\"\"Query VirusTotal file report.\"\"\"\n  \
+    \  url = f\"https://www.virustotal.com/api/v3/files/{sha256}\"\n    headers = {\"x-apikey\": api_key}\n    r = requests.get(url,\
+    \ headers=headers, timeout=15)\n    r.raise_for_status()\n    return r.json()\n\ndef hibp_breach(email: str, api_key:\
+    \ str) -> List[Dict[str, Any]]:\n    \"\"\"Query HaveIBeenPwned for breaches.\"\"\"\n    url = f\"https://api.haveibeenpwned.com/v3/breachedaccount/{email}\"\
+    \n    headers = {\"hibp-api-key\": api_key}\n    r = requests.get(url, headers=headers, timeout=15)\n    if r.status_code\
+    \ == 404:\n        return []\n    r.raise_for_status()\n    return r.json()\n\nclass SkillEngine:\n    \"\"\"Elite cybersecurity\
+    \ skill engine.\"\"\"\n\n    def __init__(self, config: Dict[str, Any]):\n        self.config = config\n        self.logger\
+    \ = config.get(\"logger\", print)\n\n    def run(self, action: str, params: Dict[str, Any]) -> Dict[str, Any]:\n     \
+    \   \"\"\"Dispatch to capability method.\"\"\"\n        method = getattr(self, action, None)\n        if not method:\n\
+    \            raise ValueError(f\"Unknown action {action}\")\n        try:\n            return method(params)\n       \
+    \ except Exception as e:\n            self.logger(f\"SkillEngine.{action} error: {e}\")\n            return {\"error\"\
+    : str(e)}\n\n    def recon_nmap(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Run Nmap scan and parse\
+    \ results.\"\"\"\n        target = params[\"target\"]\n        flags = params.get(\"flags\", \"-sV -O\")\n        cmd\
+    \ = [\"nmap\", \"-oX\", \"-\", *flags.split(), target]\n        proc = subprocess.run(cmd, capture_output=True, text=True)\n\
+    \        if proc.returncode != 0:\n            raise RuntimeError(proc.stderr)\n        hosts = parse_nmap_xml(proc.stdout)\n\
+    \        return {\"hosts\": hosts, \"raw\": proc.stdout}\n\n    def malware_static(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Perform static analysis on sample.\"\"\"\n        path = params[\"file_path\"]\n        with open(path,\
+    \ \"rb\") as f:\n            data = f.read()\n        sha256 = hashlib.sha256(data).hexdigest()\n        ent = entropy(data)\n\
+    \        strings = re.findall(rb\"[\\x20-\\x7e]{4,}\", data)\n        imports = []  # Simplified\n        return {\n \
+    \           \"sha256\": sha256,\n            \"size\": len(data),\n            \"entropy\": ent,\n            \"strings\"\
+    : [s.decode() for s in strings[:100]],\n            \"imports\": imports\n        }\n\n    def deepfake_detect(self, params:\
+    \ Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Basic deepfake detection stub.\"\"\"\n        video_path = params[\"\
+    video_path\"]\n        # Placeholder for real CV\n        return {\n            \"video\": video_path,\n            \"\
+    manipulation_score\": 0.42,\n            \"gan_fingerprint\": \"StyleGAN3\",\n            \"audio_fake_confidence\": 0.12,\n\
+    \            \"notes\": \"Replace with OpenCV/torch models\"\n        }\n\n    def yara_create(self, params: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Create YARA rule from indicators.\"\"\"\n        name = params[\"rule_name\"\
+    ]\n        strings = params[\"strings\"]\n        condition = params.get(\"condition\", \"all of them\")\n        rule_src\
+    \ = generate_yara_rule(name.strip(), strings, condition)\n        return {\"rule_source\": rule_src}\n\n    def splunk_hunt(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Build Splunk hunting query.\"\"\"\n        index = params[\"\
+    index\"]\n        iocs = params[\"iocs\"]\n        field = params.get(\"field\", \"url\")\n        query = splunk_query(index,\
+    \ iocs, field)\n        return {\"query\": query}\n\n    def phishing_page(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Generate phishing HTML.\"\"\"\n        brand = params[\"brand\"]\n        redirect = params[\"\
+    redirect\"]\n        html = create_phishing_html(brand, redirect)\n        return {\"html\": html}\n\n    def hashcat_mask(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Return hashcat mask.\"\"\"\n        min_l = params.get(\"\
+    min_len\", 8)\n        max_l = params.get(\"max_len\", 12)\n        charset = params.get(\"charset\", \"?l?u?d\")\n  \
+    \      mask = generate_hashcat_mask(min_l, max_l, charset)\n        return {\"mask\": mask}\n\n    def vt_lookup(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"VirusTotal file lookup.\"\"\"\n        sha256 = params[\"\
+    sha256\"]\n        key = self.config.get(\"vt_api_key\", \"\")\n        if not key:\n            raise ValueError(\"vt_api_key\
+    \ missing\")\n        report = vt_hash_lookup(sha256, key)\n        return {\"report\": report}\n\n    def hibp_lookup(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"HaveIBeenPwned lookup.\"\"\"\n        email = params[\"email\"\
+    ]\n        key = self.config.get(\"hibp_api_key\", \"\")\n        if not key:\n            raise ValueError(\"hibp_api_key\
+    \ missing\")\n        breaches = hibp_breach(email, key)\n        return {\"breaches\": breaches}\n\nclass TestEliteCybersecurity(unittest.TestCase):\n\
+    \n    def test_metadata(self):\n        self.assertEqual(SKILL_METADATA[\"id\"], \"elite_cybersecurity\")\n        self.assertIn(\"\
+    penetration_testing\", SKILL_METADATA[\"capabilities\"])\n\n    def test_validate_ip(self):\n        self.assertTrue(validate_ip(\"\
+    192.168.1.1\"))\n        self.assertFalse(validate_ip(\"999.0.0.1\"))\n\n    def test_validate_hash(self):\n        self.assertTrue(validate_hash(\"\
+    a\" * 64))\n        self.assertFalse(validate_hash(\"xyz\"))\n\n    def test_entropy(self):\n        self.assertAlmostEqual(entropy(b\"\
+    AAAA\"), 0.0)\n        self.assertGreater(entropy(os.urandom(100)), 7.0)\n\n    def test_parse_nmap_xml(self):\n     \
+    \   xml = \"\"\"<host><address addr=\"10.0.0.1\"/><ports><port port=\"22\"><state state=\"open\" reason=\"syn-ack\"/><service\
+    \ name=\"ssh\"/></port></ports></host>\"\"\"\n        hosts = parse_nmap_xml(xml)\n        self.assertEqual(len(hosts),\
+    \ 1)\n        self.assertEqual(hosts[0][\"ports\"][0][\"port\"], 22)\n\n    def test_build_shodan_query(self):\n     \
+    \   q = build_shodan_query(\"apache\", [\"country:US\"])\n        self.assertIn(\"apache\", q)\n        self.assertIn(\"\
+    country\", q)\n\n    def test_generate_yara_rule(self):\n        rule = generate_yara_rule(\"test\", [\"hello\", \"world\"\
+    ])\n        self.assertIn(\"hello\", rule)\n        self.assertIn(\"world\", rule)\n\n    def test_sigma_rule(self):\n\
+    \        s = sigma_rule(\"Test\", {\"product\": \"windows\"}, {\"selection\": {\"EventID\": 4624}})\n        self.assertEqual(s[\"\
+    title\"], \"Test\")\n\n    def test_splunk_query(self):\n        q = splunk_query(\"main\", [\"evil.com\"], \"url\")\n\
+    \        self.assertIn(\"evil.com\", q)\n\n    def test_skill_engine_recon(self):\n        eng = SkillEngine({})\n   \
+    \     with self.assertRaises(Exception):\n            eng.recon_nmap({\"target\": \"256.256.256.256\"})\n\n    def test_skill_engine_yara(self):\n\
+    \        eng = SkillEngine({})\n        res = eng.yara_create({\"rule_name\": \"test\", \"strings\": [\"abc\"]})\n   \
+    \     self.assertIn(\"rule_source\", res)\n\n    def test_skill_engine_phishing(self):\n        eng = SkillEngine({})\n\
+    \        res = eng.phishing_page({\"brand\": \"ACME\", \"redirect\": \"http://evil\"})\n        self.assertIn(\"html\"\
+    , res)\n\nif __name__ == \"__main__\":\n    unittest.main()"
+examples:
+- description: Load and use the Elite Cybersecurity, Deepfake & Malware Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''elite_cybersecurity'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

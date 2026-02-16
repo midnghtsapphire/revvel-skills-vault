@@ -1,0 +1,60 @@
+name: context-anchor
+title: Context Anchor
+version: 1.0.0
+description: Recover from context compaction by scanning memory files and surfacing where you left off. Use when waking up
+  fresh, after compaction, or when you feel lost about what you were doing.
+metadata:
+  author: boscoeuk
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - context
+  - anchor
+  source: clawhub-community
+  clawhub_slug: context-anchor
+  clawhub_path: boscoeuk/context-anchor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Anchor
+
+    # Source: ClawHub community skill by boscoeuk
+
+    # Install: clawhub install context-anchor
+
+    # Path: boscoeuk/context-anchor
+
+
+    ## Description
+
+    Recover from context compaction by scanning memory files and surfacing where you left off. Use when waking up fresh, after
+    compaction, or when you feel lost about what you were doing.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/anchor.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-anchor
+
+    ```'
+examples:
+- description: Install Context Anchor from ClawHub
+  usage: clawhub install context-anchor
+schema_version: '1.0'

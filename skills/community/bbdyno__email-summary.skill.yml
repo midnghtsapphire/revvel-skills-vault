@@ -1,0 +1,64 @@
+name: email-summary
+title: Daily Email Summary
+version: 1.0.0
+description: Fetches recent emails from Gmail and provides concise summaries. Use when the user wants to check emails, get
+  email summaries, or review their inbox.
+metadata:
+  author: bbdyno
+  category: Communication
+  tags:
+  - communication
+  - email
+  - summary
+  source: clawhub-community
+  clawhub_slug: email-summary
+  clawhub_path: bbdyno/email-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Email Summary
+
+    # Source: ClawHub community skill by bbdyno
+
+    # Install: clawhub install email-summary
+
+    # Path: bbdyno/email-summary
+
+
+    ## Description
+
+    Fetches recent emails from Gmail and provides concise summaries. Use when the user wants to check emails, get email summaries,
+    or review their inbox.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - examples/sample_output.md
+
+    - scripts/fetch_emails.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-summary
+
+    ```'
+examples:
+- description: Install Daily Email Summary from ClawHub
+  usage: clawhub install email-summary
+schema_version: '1.0'

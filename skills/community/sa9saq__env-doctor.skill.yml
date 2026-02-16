@@ -1,0 +1,56 @@
+name: env-doctor
+title: env-doctor
+version: 1.0.2
+description: Diagnose .env file issues — missing variables, format errors, security risks, and misconfigurations.
+metadata:
+  author: sa9saq
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - env
+  - doctor
+  source: clawhub-community
+  clawhub_slug: env-doctor
+  clawhub_path: sa9saq/env-doctor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# env-doctor
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install env-doctor
+
+    # Path: sa9saq/env-doctor
+
+
+    ## Description
+
+    Diagnose .env file issues — missing variables, format errors, security risks, and misconfigurations.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install env-doctor
+
+    ```'
+examples:
+- description: Install env-doctor from ClawHub
+  usage: clawhub install env-doctor
+schema_version: '1.0'

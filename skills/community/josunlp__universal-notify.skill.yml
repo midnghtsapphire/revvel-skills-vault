@@ -1,0 +1,34 @@
+name: universal-notify
+title: Universal Notify
+version: 1.0.0
+description: 'Send notifications through multiple channels with a single script. Supports ntfy.sh (free, no signup), Gotify
+  (self-hosted), generic webhooks, email (SMTP/curl), Telegram Bot API, and Pushover. Use when sending alerts, monitoring
+  notifications, deployment notices, or any event that needs to reach a '
+metadata:
+  author: josunlp
+  category: Social Media
+  tags:
+  - social-media
+  - universal
+  - notify
+  source: clawhub-community
+  clawhub_slug: universal-notify
+  clawhub_path: josunlp/universal-notify
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Universal Notify\n# Source: ClawHub community skill by josunlp\n# Install: clawhub install universal-notify\n\
+    # Path: josunlp/universal-notify\n\n## Description\nSend notifications through multiple channels with a single script.\
+    \ Supports ntfy.sh (free, no signup), Gotify (self-hosted), generic webhooks, email (SMTP/curl), Telegram Bot API, and\
+    \ Pushover. Use when sending alerts, monitoring notifications, deployment notices, or any event that needs to reach a\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n- scripts/notify.sh\n\n## Installation\n```bash\nclawhub install universal-notify\n\
+    ```"
+examples:
+- description: Install Universal Notify from ClawHub
+  usage: clawhub install universal-notify
+schema_version: '1.0'

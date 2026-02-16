@@ -1,0 +1,63 @@
+name: humanize-ai
+title: Humanize AI
+version: 1.1.0
+description: Humanize AI content by detecting and auto-fixing AI generated content. Humanize AI text using Python scripts.
+  Scans for AI vocabulary, puffery, chatbot artifacts, and auto-replaces filler phrases. Use when you want to analyze text
+  in AI detector and bypass it in future, batch-process files, run auto
+metadata:
+  author: artur-zhdan
+  category: Communication
+  tags:
+  - communication
+  - humanize
+  source: clawhub-community
+  clawhub_slug: humanize-ai
+  clawhub_path: artur-zhdan/humanize-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Humanize AI
+
+    # Source: ClawHub community skill by artur-zhdan
+
+    # Install: clawhub install humanize-ai
+
+    # Path: artur-zhdan/humanize-ai
+
+
+    ## Description
+
+    Humanize AI content by detecting and auto-fixing AI generated content. Humanize AI text using Python scripts. Scans for
+    AI vocabulary, puffery, chatbot artifacts, and auto-replaces filler phrases. Use when you want to analyze text in AI detector
+    and bypass it in future, batch-process files, run auto
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/analyze.py
+
+    - scripts/humanize.py
+
+    - scripts/patterns.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install humanize-ai
+
+    ```'
+examples:
+- description: Install Humanize AI from ClawHub
+  usage: clawhub install humanize-ai
+schema_version: '1.0'

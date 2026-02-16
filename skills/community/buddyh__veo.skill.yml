@@ -1,0 +1,55 @@
+name: veo
+title: Veo
+version: 1.3.0
+description: Generate video using Google Veo (Veo 3.1 / Veo 3.0).
+metadata:
+  author: buddyh
+  category: Search & Research
+  tags:
+  - search-research
+  - veo
+  source: clawhub-community
+  clawhub_slug: veo
+  clawhub_path: buddyh/veo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Veo
+
+    # Source: ClawHub community skill by buddyh
+
+    # Install: clawhub install veo
+
+    # Path: buddyh/veo
+
+
+    ## Description
+
+    Generate video using Google Veo (Veo 3.1 / Veo 3.0).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_video.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install veo
+
+    ```'
+examples:
+- description: Install Veo from ClawHub
+  usage: clawhub install veo
+schema_version: '1.0'

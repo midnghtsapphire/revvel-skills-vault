@@ -1,0 +1,64 @@
+name: sonic-build
+title: SONiC Build
+version: 1.0.0
+description: Build SONiC (Software for Open Networking in the Cloud) switch images from sonic-buildimage. Use when building
+  VS/ASIC images, configuring build parallelism/memory/caching, debugging build failures, managing submodules, cleaning artifacts,
+  or optimizing build performance. Covers all platforms (VS, b
+metadata:
+  author: rustiqly
+  category: Media & Content
+  tags:
+  - media-content
+  - sonic
+  - build
+  source: clawhub-community
+  clawhub_slug: sonic-build
+  clawhub_path: rustiqly/sonic-build
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SONiC Build
+
+    # Source: ClawHub community skill by rustiqly
+
+    # Install: clawhub install sonic-build
+
+    # Path: rustiqly/sonic-build
+
+
+    ## Description
+
+    Build SONiC (Software for Open Networking in the Cloud) switch images from sonic-buildimage. Use when building VS/ASIC
+    images, configuring build parallelism/memory/caching, debugging build failures, managing submodules, cleaning artifacts,
+    or optimizing build performance. Covers all platforms (VS, b
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/prerequisites.md
+
+    - references/troubleshooting.md
+
+    - references/vs-platform.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sonic-build
+
+    ```'
+examples:
+- description: Install SONiC Build from ClawHub
+  usage: clawhub install sonic-build
+schema_version: '1.0'

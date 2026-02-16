@@ -1,0 +1,67 @@
+name: meshy-ai
+title: Meshy AI
+version: 0.1.0
+description: '"Use the Meshy.ai REST API to generate assets: (1) text-to-2d (Meshy Text to Image) and (2) image-to-3d, then
+  download outputs locally. Use when the user wants Meshy generations, needs polling async tasks, and especially when they
+  want the resulting OBJ saved to disk. Requires MESHY_API_KEY in the e'
+metadata:
+  author: sabatesduran
+  category: Media & Content
+  tags:
+  - media-content
+  - meshy
+  source: clawhub-community
+  clawhub_slug: clawdbot-meshyai-skill
+  clawhub_path: sabatesduran/clawdbot-meshyai-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meshy AI
+
+    # Source: ClawHub community skill by sabatesduran
+
+    # Install: clawhub install clawdbot-meshyai-skill
+
+    # Path: sabatesduran/clawdbot-meshyai-skill
+
+
+    ## Description
+
+    "Use the Meshy.ai REST API to generate assets: (1) text-to-2d (Meshy Text to Image) and (2) image-to-3d, then download
+    outputs locally. Use when the user wants Meshy generations, needs polling async tasks, and especially when they want the
+    resulting OBJ saved to disk. Requires MESHY_API_KEY in the e
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-notes.md
+
+    - scripts/image_to_3d_obj.py
+
+    - scripts/meshy_client.py
+
+    - scripts/text_to_image.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-meshyai-skill
+
+    ```'
+examples:
+- description: Install Meshy AI from ClawHub
+  usage: clawhub install clawdbot-meshyai-skill
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: pull_request
+title: Pull Request
+version: 1.0.1
+description: Create high-quality pull requests with pre-submission validation, maintainer-friendly formatting, and automated
+  quality checks.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - pull
+  - request
+  source: clawhub-community
+  clawhub_slug: pull-request
+  clawhub_path: ivangdavila/pull-request
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pull Request
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install pull-request
+
+    # Path: ivangdavila/pull-request
+
+
+    ## Description
+
+    Create high-quality pull requests with pre-submission validation, maintainer-friendly formatting, and automated quality
+    checks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - checklist.md
+
+    - red-flags.md
+
+    - repo-context.md
+
+    - templates.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pull-request
+
+    ```'
+examples:
+- description: Install Pull Request from ClawHub
+  usage: clawhub install pull-request
+schema_version: '1.0'

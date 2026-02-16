@@ -1,0 +1,61 @@
+name: nginx-config-creator
+title: Nginx Config Creator
+version: 0.1.1
+description: '"Creates a standard Nginx/OpenResty reverse proxy config file for a service and reloads the web server. Features
+  safety checks and environment awareness. Takes service name, domain, and port as main arguments."'
+metadata:
+  author: xieyuanqing
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - nginx
+  - config
+  - creator
+  source: clawhub-community
+  clawhub_slug: nginx-config-creator
+  clawhub_path: xieyuanqing/nginx-config-creator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nginx Config Creator
+
+    # Source: ClawHub community skill by xieyuanqing
+
+    # Install: clawhub install nginx-config-creator
+
+    # Path: xieyuanqing/nginx-config-creator
+
+
+    ## Description
+
+    "Creates a standard Nginx/OpenResty reverse proxy config file for a service and reloads the web server. Features safety
+    checks and environment awareness. Takes service name, domain, and port as main arguments."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/create-and-reload.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nginx-config-creator
+
+    ```'
+examples:
+- description: Install Nginx Config Creator from ClawHub
+  usage: clawhub install nginx-config-creator
+schema_version: '1.0'

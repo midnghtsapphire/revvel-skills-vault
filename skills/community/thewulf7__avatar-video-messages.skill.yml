@@ -1,0 +1,56 @@
+name: video-message
+title: Video Messages from your openclaw
+version: 0.1.2
+description: Generate and send video messages with a lip-syncing VRM avatar. Use when user asks for video message, avatar
+  video, video reply, or when TTS should be delivered as video instead of audio.
+metadata:
+  author: thewulf7
+  category: Media & Content
+  tags:
+  - media-content
+  - video
+  - message
+  source: clawhub-community
+  clawhub_slug: avatar-video-messages
+  clawhub_path: thewulf7/avatar-video-messages
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Video Messages from your openclaw
+
+    # Source: ClawHub community skill by thewulf7
+
+    # Install: clawhub install avatar-video-messages
+
+    # Path: thewulf7/avatar-video-messages
+
+
+    ## Description
+
+    Generate and send video messages with a lip-syncing VRM avatar. Use when user asks for video message, avatar video, video
+    reply, or when TTS should be delivered as video instead of audio.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install avatar-video-messages
+
+    ```'
+examples:
+- description: Install Video Messages from your openclaw from ClawHub
+  usage: clawhub install avatar-video-messages
+schema_version: '1.0'

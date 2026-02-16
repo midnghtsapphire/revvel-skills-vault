@@ -1,0 +1,54 @@
+name: confluence
+title: Confluence
+version: 1.1.0
+description: Search and manage Confluence pages and spaces using confluence-cli. Read documentation, create pages, and navigate
+  spaces.
+metadata:
+  author: francisbrero
+  category: Search & Research
+  tags:
+  - search-research
+  - confluence
+  source: clawhub-community
+  clawhub_slug: confluence
+  clawhub_path: francisbrero/confluence
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Confluence
+
+    # Source: ClawHub community skill by francisbrero
+
+    # Install: clawhub install confluence
+
+    # Path: francisbrero/confluence
+
+
+    ## Description
+
+    Search and manage Confluence pages and spaces using confluence-cli. Read documentation, create pages, and navigate spaces.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install confluence
+
+    ```'
+examples:
+- description: Install Confluence from ClawHub
+  usage: clawhub install confluence
+schema_version: '1.0'

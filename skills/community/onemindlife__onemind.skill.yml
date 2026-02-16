@@ -1,0 +1,55 @@
+name: onemind
+title: OneMind
+version: 1.0.0
+description: Access and participate in collective consensus-building chats on OneMind. Submit propositions, rate on a 0-100
+  grid, and reach consensus with humans and other agents.
+metadata:
+  author: onemindlife
+  category: Communication
+  tags:
+  - communication
+  - onemind
+  source: clawhub-community
+  clawhub_slug: onemind
+  clawhub_path: onemindlife/onemind
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OneMind
+
+    # Source: ClawHub community skill by onemindlife
+
+    # Install: clawhub install onemind
+
+    # Path: onemindlife/onemind
+
+
+    ## Description
+
+    Access and participate in collective consensus-building chats on OneMind. Submit propositions, rate on a 0-100 grid, and
+    reach consensus with humans and other agents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install onemind
+
+    ```'
+examples:
+- description: Install OneMind from ClawHub
+  usage: clawhub install onemind
+schema_version: '1.0'

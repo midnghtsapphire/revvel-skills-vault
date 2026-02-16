@@ -1,0 +1,35 @@
+name: lightning-mcp-server
+title: Lightning MCP Server
+version: 1.0.0
+description: 'Build and configure the MCP server for Lightning Node Connect (LNC). Connects AI assistants to lnd nodes via
+  encrypted WebSocket tunnels using pairing phrases — no direct network access or TLS certs needed. Read-only by default (18
+  tools for querying node state, channels, payments, invoices, peers, '
+metadata:
+  author: roasbeef
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - lightning
+  - mcp
+  - server
+  source: clawhub-community
+  clawhub_slug: lightning-mcp-server
+  clawhub_path: roasbeef/lightning-mcp-server
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Lightning MCP Server\n# Source: ClawHub community skill by roasbeef\n# Install: clawhub install lightning-mcp-server\n\
+    # Path: roasbeef/lightning-mcp-server\n\n## Description\nBuild and configure the MCP server for Lightning Node Connect\
+    \ (LNC). Connects AI assistants to lnd nodes via encrypted WebSocket tunnels using pairing phrases — no direct network\
+    \ access or TLS certs needed. Read-only by default (18 tools for querying node state, channels, payments, invoices, peers,\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n- scripts/configure.sh\n- scripts/install.sh\n- scripts/setup-claude-config.sh\n\
+    - templates/env.txt\n\n## Installation\n```bash\nclawhub install lightning-mcp-server\n```"
+examples:
+- description: Install Lightning MCP Server from ClawHub
+  usage: clawhub install lightning-mcp-server
+schema_version: '1.0'

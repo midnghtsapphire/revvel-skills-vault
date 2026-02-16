@@ -1,0 +1,60 @@
+name: tdd-workflow
+title: Tdd Workflow
+version: 1.0.0
+description: Test-Driven Development discovery hub that detects TDD intent and guides the red-green-refactor cycle. Use when
+  wanting to write tests first, implement TDD workflow, or learn test-first development practices. Routes to appropriate TDD
+  commands (/sw:tdd-red, /sw:tdd-green, /sw:tdd-refactor).
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tdd
+  - workflow
+  source: clawhub-community
+  clawhub_slug: sw-tdd-workflow
+  clawhub_path: anton-abyzov/sw-tdd-workflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tdd Workflow
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-tdd-workflow
+
+    # Path: anton-abyzov/sw-tdd-workflow
+
+
+    ## Description
+
+    Test-Driven Development discovery hub that detects TDD intent and guides the red-green-refactor cycle. Use when wanting
+    to write tests first, implement TDD workflow, or learn test-first development practices. Routes to appropriate TDD commands
+    (/sw:tdd-red, /sw:tdd-green, /sw:tdd-refactor).
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-tdd-workflow
+
+    ```'
+examples:
+- description: Install Tdd Workflow from ClawHub
+  usage: clawhub install sw-tdd-workflow
+schema_version: '1.0'

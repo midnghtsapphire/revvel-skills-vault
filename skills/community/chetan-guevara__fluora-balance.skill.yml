@@ -1,0 +1,62 @@
+name: fluora-balance
+title: Fluora Balance
+version: 1.1.0
+description: Check USDC balance on Base Mainnet for your Fluora wallet. Use when the user asks about their Fluora balance,
+  wallet balance, USDC balance, or how much money they have in their Fluora account.
+metadata:
+  author: chetan-guevara
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - fluora
+  - balance
+  source: clawhub-community
+  clawhub_slug: fluora-balance
+  clawhub_path: chetan-guevara/fluora-balance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fluora Balance
+
+    # Source: ClawHub community skill by chetan-guevara
+
+    # Install: clawhub install fluora-balance
+
+    # Path: chetan-guevara/fluora-balance
+
+
+    ## Description
+
+    Check USDC balance on Base Mainnet for your Fluora wallet. Use when the user asks about their Fluora balance, wallet balance,
+    USDC balance, or how much money they have in their Fluora account.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check_balance.js
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fluora-balance
+
+    ```'
+examples:
+- description: Install Fluora Balance from ClawHub
+  usage: clawhub install fluora-balance
+schema_version: '1.0'

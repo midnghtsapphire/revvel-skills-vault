@@ -1,0 +1,65 @@
+name: blockchain_attestation
+title: Blockchain Attestation (EAS)
+version: 1.0.0
+description: Create verifiable attestations of agent work using Ethereum Attestation Service (EAS), with Base as the default
+  chain.
+metadata:
+  author: dbhurley
+  category: Development & Coding
+  tags:
+  - development-coding
+  - blockchain
+  - attestation
+  source: clawhub-community
+  clawhub_slug: blockchain-attestation
+  clawhub_path: dbhurley/blockchain-attestation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Blockchain Attestation (EAS)
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install blockchain-attestation
+
+    # Path: dbhurley/blockchain-attestation
+
+
+    ## Description
+
+    Create verifiable attestations of agent work using Ethereum Attestation Service (EAS), with Base as the default chain.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - attest.mjs
+
+    - chains.json
+
+    - package-lock.json
+
+    - package.json
+
+    - schemas.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install blockchain-attestation
+
+    ```'
+examples:
+- description: Install Blockchain Attestation (EAS) from ClawHub
+  usage: clawhub install blockchain-attestation
+schema_version: '1.0'

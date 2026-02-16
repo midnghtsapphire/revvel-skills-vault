@@ -1,0 +1,65 @@
+name: solax-summary-fetch
+title: Solar Cloud API
+version: 1.0.0
+description: Fetch inverter summary data from the Solax Cloud API using the npm package solax-cloud-api. Use when the user
+  provides (or has configured) a Solax tokenId and inverter serial number (sn) and wants current/summary energy data returned
+  as JSON (typed as SolaxSummary) for dashboards/automation.
+metadata:
+  author: allmightysauron
+  category: Development & Coding
+  tags:
+  - development-coding
+  - solax
+  - summary
+  - fetch
+  source: clawhub-community
+  clawhub_slug: solax-cloud-api
+  clawhub_path: allmightysauron/solax-cloud-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Solar Cloud API
+
+    # Source: ClawHub community skill by allmightysauron
+
+    # Install: clawhub install solax-cloud-api
+
+    # Path: allmightysauron/solax-cloud-api
+
+
+    ## Description
+
+    Fetch inverter summary data from the Solax Cloud API using the npm package solax-cloud-api. Use when the user provides
+    (or has configured) a Solax tokenId and inverter serial number (sn) and wants current/summary energy data returned as
+    JSON (typed as SolaxSummary) for dashboards/automation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/solax-summary.d.ts
+
+    - scripts/fetch_summary.mjs
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solax-cloud-api
+
+    ```'
+examples:
+- description: Install Solar Cloud API from ClawHub
+  usage: clawhub install solax-cloud-api
+schema_version: '1.0'

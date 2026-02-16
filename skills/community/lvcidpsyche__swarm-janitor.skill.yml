@@ -1,0 +1,60 @@
+name: swarm-janitor
+title: Swarm Janitor
+version: 0.1.0
+description: Enterprise-grade OpenClaw skill for cleaning up orphaned subagent processes, archiving transcripts to SuperMemory,
+  and freeing disk space without losing work. Features dry-run mode, configurable retention policies, and comprehensive safety
+  checks.
+metadata:
+  author: lvcidpsyche
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - swarm
+  - janitor
+  source: clawhub-community
+  clawhub_slug: swarm-janitor
+  clawhub_path: lvcidpsyche/swarm-janitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Swarm Janitor
+
+    # Source: ClawHub community skill by lvcidpsyche
+
+    # Install: clawhub install swarm-janitor
+
+    # Path: lvcidpsyche/swarm-janitor
+
+
+    ## Description
+
+    Enterprise-grade OpenClaw skill for cleaning up orphaned subagent processes, archiving transcripts to SuperMemory, and
+    freeing disk space without losing work. Features dry-run mode, configurable retention policies, and comprehensive safety
+    checks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/config.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install swarm-janitor
+
+    ```'
+examples:
+- description: Install Swarm Janitor from ClawHub
+  usage: clawhub install swarm-janitor
+schema_version: '1.0'

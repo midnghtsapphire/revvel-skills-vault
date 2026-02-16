@@ -1,0 +1,70 @@
+name: arkade
+title: Bitcoin and Tether on Arkade
+version: 1.0.2
+description: Send and receive Bitcoin over Arkade (offchain), onchain (via onboard/offboard), and Lightning. Swap USDC/USDT
+  stablecoins.
+metadata:
+  author: tiero
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - arkade
+  source: clawhub-community
+  clawhub_slug: arkade-wallet
+  clawhub_path: tiero/arkade-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bitcoin and Tether on Arkade
+
+    # Source: ClawHub community skill by tiero
+
+    # Install: clawhub install arkade-wallet
+
+    # Path: tiero/arkade-wallet
+
+
+    ## Description
+
+    Send and receive Bitcoin over Arkade (offchain), onchain (via onboard/offboard), and Lightning. Swap USDC/USDT stablecoins.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - pnpm-lock.yaml
+
+    - tsconfig.cjs.json
+
+    - tsconfig.esm.json
+
+    - tsconfig.json
+
+    - cli/arkade.mjs
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install arkade-wallet
+
+    ```'
+examples:
+- description: Install Bitcoin and Tether on Arkade from ClawHub
+  usage: clawhub install arkade-wallet
+schema_version: '1.0'

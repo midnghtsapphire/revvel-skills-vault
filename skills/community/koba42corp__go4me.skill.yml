@@ -1,0 +1,61 @@
+name: go4me
+title: Go4Me
+version: 1.0.0
+description: Send XCH to Twitter users via Go4Me address lookup. Use when sending Chia (XCH) to someone by their Twitter handle,
+  looking up a Twitter user's XCH address, or tipping someone on Go4Me. Triggers on "send XCH to @user", "tip @user", "lookup
+  @user on go4me", "what's @user's XCH address".
+metadata:
+  author: koba42corp
+  category: Social Media
+  tags:
+  - social-media
+  - go4me
+  source: clawhub-community
+  clawhub_slug: go4me
+  clawhub_path: koba42corp/go4me
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Go4Me
+
+    # Source: ClawHub community skill by koba42corp
+
+    # Install: clawhub install go4me
+
+    # Path: koba42corp/go4me
+
+
+    ## Description
+
+    Send XCH to Twitter users via Go4Me address lookup. Use when sending Chia (XCH) to someone by their Twitter handle, looking
+    up a Twitter user''s XCH address, or tipping someone on Go4Me. Triggers on "send XCH to @user", "tip @user", "lookup @user
+    on go4me", "what''s @user''s XCH address".
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/go4me-lookup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install go4me
+
+    ```'
+examples:
+- description: Install Go4Me from ClawHub
+  usage: clawhub install go4me
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: lottery-checker
+title: 体彩兑奖
+version: 1.0.0
+description: 中国体育彩票查奖工具（大乐透批量查询）。检查用户提供的大乐透号码是否中奖，支持单注或多注批量查询，自动生成精美报表，显示各奖项中奖人数和金额。
+metadata:
+  author: sudaqinnishui
+  category: General
+  tags:
+  - general
+  - lottery
+  - checker
+  source: clawhub-community
+  clawhub_slug: lottery-checker
+  clawhub_path: sudaqinnishui/lottery-checker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 体彩兑奖
+
+    # Source: ClawHub community skill by sudaqinnishui
+
+    # Install: clawhub install lottery-checker
+
+    # Path: sudaqinnishui/lottery-checker
+
+
+    ## Description
+
+    中国体育彩票查奖工具（大乐透批量查询）。检查用户提供的大乐透号码是否中奖，支持单注或多注批量查询，自动生成精美报表，显示各奖项中奖人数和金额。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check_lottery.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lottery-checker
+
+    ```'
+examples:
+- description: Install 体彩兑奖 from ClawHub
+  usage: clawhub install lottery-checker
+schema_version: '1.0'

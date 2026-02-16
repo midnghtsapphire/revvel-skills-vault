@@ -1,0 +1,57 @@
+name: proxmox
+title: Proxmox
+version: 1.0.1
+description: Manage Proxmox VE clusters via REST API. Use when user asks to list, start, stop, restart VMs or LXC containers,
+  check node status, create snapshots, view tasks, or manage Proxmox infrastructure. Requires API token or credentials configured.
+metadata:
+  author: weird-aftertaste
+  category: Development & Coding
+  tags:
+  - development-coding
+  - proxmox
+  source: clawhub-community
+  clawhub_slug: proxmox
+  clawhub_path: weird-aftertaste/proxmox
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Proxmox
+
+    # Source: ClawHub community skill by weird-aftertaste
+
+    # Install: clawhub install proxmox
+
+    # Path: weird-aftertaste/proxmox
+
+
+    ## Description
+
+    Manage Proxmox VE clusters via REST API. Use when user asks to list, start, stop, restart VMs or LXC containers, check
+    node status, create snapshots, view tasks, or manage Proxmox infrastructure. Requires API token or credentials configured.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/pve.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install proxmox
+
+    ```'
+examples:
+- description: Install Proxmox from ClawHub
+  usage: clawhub install proxmox
+schema_version: '1.0'

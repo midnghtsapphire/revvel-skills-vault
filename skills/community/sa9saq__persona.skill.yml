@@ -1,0 +1,53 @@
+name: persona
+title: persona
+version: 1.0.0
+description: '{AGENT_NAME} personality and behavior guidelines. Character and interaction rules.'
+metadata:
+  author: sa9saq
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - persona
+  source: clawhub-community
+  clawhub_slug: persona
+  clawhub_path: sa9saq/persona
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# persona
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install persona
+
+    # Path: sa9saq/persona
+
+
+    ## Description
+
+    {AGENT_NAME} personality and behavior guidelines. Character and interaction rules.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install persona
+
+    ```'
+examples:
+- description: Install persona from ClawHub
+  usage: clawhub install persona
+schema_version: '1.0'

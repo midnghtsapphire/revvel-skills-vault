@@ -1,0 +1,63 @@
+name: aimlapi-llm-reasoning
+title: AI/ML API LLM + Reasoning for OpenClaw
+version: 1.0.1
+description: Run AIMLAPI LLM and reasoning workflows through chat completions with retries, structured outputs, and explicit
+  User-Agent headers. Use when Codex needs scripted prompting/reasoning calls against AIMLAPI models.
+metadata:
+  author: aimlapihello
+  category: Communication
+  tags:
+  - communication
+  - aimlapi
+  - llm
+  - reasoning
+  source: clawhub-community
+  clawhub_slug: aiml-llm-reasoning
+  clawhub_path: aimlapihello/aiml-llm-reasoning
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI/ML API LLM + Reasoning for OpenClaw
+
+    # Source: ClawHub community skill by aimlapihello
+
+    # Install: clawhub install aiml-llm-reasoning
+
+    # Path: aimlapihello/aiml-llm-reasoning
+
+
+    ## Description
+
+    Run AIMLAPI LLM and reasoning workflows through chat completions with retries, structured outputs, and explicit User-Agent
+    headers. Use when Codex needs scripted prompting/reasoning calls against AIMLAPI models.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/aimlapi-llm.md
+
+    - scripts/run_chat.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aiml-llm-reasoning
+
+    ```'
+examples:
+- description: Install AI/ML API LLM + Reasoning for OpenClaw from ClawHub
+  usage: clawhub install aiml-llm-reasoning
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: wordpress
+title: WordPress
+version: 1.0.1
+description: '|'
+metadata:
+  author: byungkyu
+  category: General
+  tags:
+  - general
+  - wordpress
+  source: clawhub-community
+  clawhub_slug: wordpress-api
+  clawhub_path: byungkyu/wordpress-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WordPress
+
+    # Source: ClawHub community skill by byungkyu
+
+    # Install: clawhub install wordpress-api
+
+    # Path: byungkyu/wordpress-api
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wordpress-api
+
+    ```'
+examples:
+- description: Install WordPress from ClawHub
+  usage: clawhub install wordpress-api
+schema_version: '1.0'

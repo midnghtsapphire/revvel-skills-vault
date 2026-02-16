@@ -1,0 +1,71 @@
+name: xhs-note-creator
+title: Xhs Note Creator
+version: 0.1.0
+description: 小红书笔记素材创作技能。当用户需要创建小红书笔记素材时使用这个技能。技能包含：根据用户的需求和提供的资料，撰写小红书笔记内容（标题+正文），生成图片卡片（封面+正文卡片），以及发布小红书笔记。
+metadata:
+  author: wusyx
+  category: General
+  tags:
+  - general
+  - xhs
+  - note
+  - creator
+  source: clawhub-community
+  clawhub_slug: auto-redbook-skills
+  clawhub_path: wusyx/auto-redbook-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xhs Note Creator
+
+    # Source: ClawHub community skill by wusyx
+
+    # Install: clawhub install auto-redbook-skills
+
+    # Path: wusyx/auto-redbook-skills
+
+
+    ## Description
+
+    小红书笔记素材创作技能。当用户需要创建小红书笔记素材时使用这个技能。技能包含：根据用户的需求和提供的资料，撰写小红书笔记内容（标题+正文），生成图片卡片（封面+正文卡片），以及发布小红书笔记。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - STYLES.md
+
+    - _meta.json
+
+    - env.example.txt
+
+    - package.json
+
+    - requirements.txt
+
+    - assets/card.html
+
+    - assets/cover.html
+
+    - assets/example.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install auto-redbook-skills
+
+    ```'
+examples:
+- description: Install Xhs Note Creator from ClawHub
+  usage: clawhub install auto-redbook-skills
+schema_version: '1.0'

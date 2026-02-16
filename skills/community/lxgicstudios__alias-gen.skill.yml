@@ -1,0 +1,66 @@
+name: alias-gen
+title: Shell Alias Generator
+version: 1.0.1
+description: Generate shell aliases from your command history. Use when streamlining your terminal workflow.
+metadata:
+  author: lxgicstudios
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - alias
+  - gen
+  source: clawhub-community
+  clawhub_slug: alias-gen
+  clawhub_path: lxgicstudios/alias-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Shell Alias Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install alias-gen
+
+    # Path: lxgicstudios/alias-gen
+
+
+    ## Description
+
+    Generate shell aliases from your command history. Use when streamlining your terminal workflow.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alias-gen
+
+    ```'
+examples:
+- description: Install Shell Alias Generator from ClawHub
+  usage: clawhub install alias-gen
+schema_version: '1.0'

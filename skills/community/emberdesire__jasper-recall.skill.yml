@@ -1,0 +1,74 @@
+name: jasper-recall
+title: Jasper Recall
+version: 0.4.0
+description: 'Local RAG system for agent memory using ChromaDB and sentence-transformers. v0.3.0 adds multi-agent mesh (N
+  agents sharing memory), OpenClaw plugin with autoRecall, and agent-specific collections. Commands: recall, index-digests,
+  digest-sessions, privacy-check, sync-shared, serve, recall-mesh.'
+metadata:
+  author: emberdesire
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - jasper
+  - recall
+  source: clawhub-community
+  clawhub_slug: jasper-recall
+  clawhub_path: emberdesire/jasper-recall
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jasper Recall
+
+    # Source: ClawHub community skill by emberdesire
+
+    # Install: clawhub install jasper-recall
+
+    # Path: emberdesire/jasper-recall
+
+
+    ## Description
+
+    Local RAG system for agent memory using ChromaDB and sentence-transformers. v0.3.0 adds multi-agent mesh (N agents sharing
+    memory), OpenClaw plugin with autoRecall, and agent-specific collections. Commands: recall, index-digests, digest-sessions,
+    privacy-check, sync-shared, serve, recall-mesh.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - WORK-QUEUE.md
+
+    - _meta.json
+
+    - package.json
+
+    - cli/config.js
+
+    - cli/doctor.js
+
+    - cli/jasper-recall.js
+
+    - cli/server.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jasper-recall
+
+    ```'
+examples:
+- description: Install Jasper Recall from ClawHub
+  usage: clawhub install jasper-recall
+schema_version: '1.0'

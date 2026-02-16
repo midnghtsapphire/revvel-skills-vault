@@ -1,0 +1,55 @@
+name: supabase
+title: OpenClaw Supabase
+version: 1.0.3
+description: Query Supabase projects - count users, list signups, check stats. Use for database queries and user analytics.
+metadata:
+  author: mvanhorn
+  category: Development & Coding
+  tags:
+  - development-coding
+  - supabase
+  source: clawhub-community
+  clawhub_slug: supabase-users
+  clawhub_path: mvanhorn/supabase-users
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Supabase
+
+    # Source: ClawHub community skill by mvanhorn
+
+    # Install: clawhub install supabase-users
+
+    # Path: mvanhorn/supabase-users
+
+
+    ## Description
+
+    Query Supabase projects - count users, list signups, check stats. Use for database queries and user analytics.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/supabase.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install supabase-users
+
+    ```'
+examples:
+- description: Install OpenClaw Supabase from ClawHub
+  usage: clawhub install supabase-users
+schema_version: '1.0'

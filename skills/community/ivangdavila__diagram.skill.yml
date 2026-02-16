@@ -1,0 +1,54 @@
+name: diagram
+title: Diagram
+version: 1.0.0
+description: Generate diagrams from descriptions with Mermaid, PlantUML, or ASCII for architecture, flows, sequences, and
+  data models.
+metadata:
+  author: ivangdavila
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - diagram
+  source: clawhub-community
+  clawhub_slug: diagram
+  clawhub_path: ivangdavila/diagram
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Diagram
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install diagram
+
+    # Path: ivangdavila/diagram
+
+
+    ## Description
+
+    Generate diagrams from descriptions with Mermaid, PlantUML, or ASCII for architecture, flows, sequences, and data models.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install diagram
+
+    ```'
+examples:
+- description: Install Diagram from ClawHub
+  usage: clawhub install diagram
+schema_version: '1.0'

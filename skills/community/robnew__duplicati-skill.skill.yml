@@ -1,0 +1,55 @@
+name: duplicati
+title: Duplicati Backup Manager
+version: 0.1.0
+description: Manage Duplicati backups on the server using secure Bearer tokens.
+metadata:
+  author: robnew
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - duplicati
+  source: clawhub-community
+  clawhub_slug: duplicati-skill
+  clawhub_path: robnew/duplicati-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Duplicati Backup Manager
+
+    # Source: ClawHub community skill by robnew
+
+    # Install: clawhub install duplicati-skill
+
+    # Path: robnew/duplicati-skill
+
+
+    ## Description
+
+    Manage Duplicati backups on the server using secure Bearer tokens.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install duplicati-skill
+
+    ```'
+examples:
+- description: Install Duplicati Backup Manager from ClawHub
+  usage: clawhub install duplicati-skill
+schema_version: '1.0'

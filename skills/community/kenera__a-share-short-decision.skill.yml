@@ -1,0 +1,75 @@
+name: a-share-short-decision
+title: A股短线交易决策
+version: 1.0.0
+description: A-share short-term trading decision skill for 1-5 day horizon. Use when you need market sentiment, sector rotation,
+  strong stock scanning, capital flow confirmation, weighted short-term signal scoring, strict risk-control filtering, and
+  daily report generation for CN A-share momentum trading.
+metadata:
+  author: kenera
+  category: Development & Coding
+  tags:
+  - development-coding
+  - share
+  - short
+  - decision
+  source: clawhub-community
+  clawhub_slug: a-share-short-decision
+  clawhub_path: kenera/a-share-short-decision
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# A股短线交易决策
+
+    # Source: ClawHub community skill by kenera
+
+    # Install: clawhub install a-share-short-decision
+
+    # Path: kenera/a-share-short-decision
+
+
+    ## Description
+
+    A-share short-term trading decision skill for 1-5 day horizon. Use when you need market sentiment, sector rotation, strong
+    stock scanning, capital flow confirmation, weighted short-term signal scoring, strict risk-control filtering, and daily
+    report generation for CN A-share momentum trading.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - main.py
+
+    - requirements.md
+
+    - scheduler.yaml
+
+    - prompts/analysis_prompt.txt
+
+    - tools/__init__.py
+
+    - tools/debug_utils.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install a-share-short-decision
+
+    ```'
+examples:
+- description: Install A股短线交易决策 from ClawHub
+  usage: clawhub install a-share-short-decision
+schema_version: '1.0'

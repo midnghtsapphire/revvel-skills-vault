@@ -1,0 +1,53 @@
+name: documentation
+title: Documentation
+version: 1.0.0
+description: Technical documentation patterns, structure, maintenance, and avoiding common documentation failures.
+metadata:
+  author: ivangdavila
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - documentation
+  source: clawhub-community
+  clawhub_slug: documentation
+  clawhub_path: ivangdavila/documentation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Documentation
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install documentation
+
+    # Path: ivangdavila/documentation
+
+
+    ## Description
+
+    Technical documentation patterns, structure, maintenance, and avoiding common documentation failures.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install documentation
+
+    ```'
+examples:
+- description: Install Documentation from ClawHub
+  usage: clawhub install documentation
+schema_version: '1.0'

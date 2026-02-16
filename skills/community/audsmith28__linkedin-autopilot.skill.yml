@@ -1,0 +1,72 @@
+name: linkedin-autopilot
+title: LinkedIn Autopilot
+version: 1.1.0
+description: Your agent builds your LinkedIn presence while you sleep. Schedule posts, auto-engage with target accounts, run
+  personalized DM sequences, and never miss an engagement opportunity. Handles connection requests, profile visiting campaigns,
+  post engagement, and follow-up sequences with safety throttlin
+metadata:
+  author: audsmith28
+  category: Social Media
+  tags:
+  - social-media
+  - linkedin
+  - autopilot
+  source: clawhub-community
+  clawhub_slug: linkedin-autopilot
+  clawhub_path: audsmith28/linkedin-autopilot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LinkedIn Autopilot
+
+    # Source: ClawHub community skill by audsmith28
+
+    # Install: clawhub install linkedin-autopilot
+
+    # Path: audsmith28/linkedin-autopilot
+
+
+    ## Description
+
+    Your agent builds your LinkedIn presence while you sleep. Schedule posts, auto-engage with target accounts, run personalized
+    DM sequences, and never miss an engagement opportunity. Handles connection requests, profile visiting campaigns, post
+    engagement, and follow-up sequences with safety throttlin
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - scripts/connect.sh
+
+    - scripts/dm-sequence.sh
+
+    - scripts/engage.sh
+
+    - scripts/post.sh
+
+    - scripts/report.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linkedin-autopilot
+
+    ```'
+examples:
+- description: Install LinkedIn Autopilot from ClawHub
+  usage: clawhub install linkedin-autopilot
+schema_version: '1.0'

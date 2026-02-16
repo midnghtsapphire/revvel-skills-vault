@@ -1,0 +1,62 @@
+name: phone-calls
+title: AI Phone Calls (Bland AI)
+version: 1.0.0
+description: Make AI-powered phone calls via Bland AI - book restaurants, make appointments, inquire about services. The AI
+  calls on your behalf and reports back with transcripts.
+metadata:
+  author: dru-ca
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - phone
+  - calls
+  source: clawhub-community
+  clawhub_slug: phone-calls-bland
+  clawhub_path: dru-ca/phone-calls-bland
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI Phone Calls (Bland AI)
+
+    # Source: ClawHub community skill by dru-ca
+
+    # Install: clawhub install phone-calls-bland
+
+    # Path: dru-ca/phone-calls-bland
+
+
+    ## Description
+
+    Make AI-powered phone calls via Bland AI - book restaurants, make appointments, inquire about services. The AI calls on
+    your behalf and reports back with transcripts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bland.sh
+
+    - check-call.sh
+
+    - phone-call.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install phone-calls-bland
+
+    ```'
+examples:
+- description: Install AI Phone Calls (Bland AI) from ClawHub
+  usage: clawhub install phone-calls-bland
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: azure-infra
+title: Azure Infra
+version: 1.0.0
+description: Chat-based Azure infrastructure assistance using Azure CLI and portal context. Use for querying, auditing, and
+  monitoring Azure resources (VMs, Storage, IAM, Functions, AKS, App Service, Key Vault, Azure Monitor, billing, etc.), and
+  for proposing safe changes with explicit confirmation before any wr
+metadata:
+  author: bmdhodl
+  category: Communication
+  tags:
+  - communication
+  - azure
+  - infra
+  source: clawhub-community
+  clawhub_slug: azure-infra
+  clawhub_path: bmdhodl/azure-infra
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Azure Infra
+
+    # Source: ClawHub community skill by bmdhodl
+
+    # Install: clawhub install azure-infra
+
+    # Path: bmdhodl/azure-infra
+
+
+    ## Description
+
+    Chat-based Azure infrastructure assistance using Azure CLI and portal context. Use for querying, auditing, and monitoring
+    Azure resources (VMs, Storage, IAM, Functions, AKS, App Service, Key Vault, Azure Monitor, billing, etc.), and for proposing
+    safe changes with explicit confirmation before any wr
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/icon.svg
+
+    - references/azure-cli-queries.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install azure-infra
+
+    ```'
+examples:
+- description: Install Azure Infra from ClawHub
+  usage: clawhub install azure-infra
+schema_version: '1.0'

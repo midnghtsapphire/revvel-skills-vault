@@ -1,0 +1,55 @@
+name: confluence
+title: Confluence
+version: 1.0.0
+description: '|'
+metadata:
+  author: byungkyu
+  category: General
+  tags:
+  - general
+  - confluence
+  source: clawhub-community
+  clawhub_slug: confluence-api
+  clawhub_path: byungkyu/confluence-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Confluence
+
+    # Source: ClawHub community skill by byungkyu
+
+    # Install: clawhub install confluence-api
+
+    # Path: byungkyu/confluence-api
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install confluence-api
+
+    ```'
+examples:
+- description: Install Confluence from ClawHub
+  usage: clawhub install confluence-api
+schema_version: '1.0'

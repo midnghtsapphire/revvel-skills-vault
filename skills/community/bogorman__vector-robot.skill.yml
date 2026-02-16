@@ -1,0 +1,68 @@
+name: vector-robot
+title: Vector-Robot
+version: 1.0.0
+description: Control Anki Vector robot via wire-pod. Speak through Vector, see through its camera, move head/lift/wheels,
+  change eye colors, trigger animations. Use when user mentions Vector robot, wants to speak through a robot, control a physical
+  robot, or interact with wire-pod.
+metadata:
+  author: bogorman
+  category: General
+  tags:
+  - general
+  - vector
+  - robot
+  source: clawhub-community
+  clawhub_slug: vector-robot
+  clawhub_path: bogorman/vector-robot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vector-Robot
+
+    # Source: ClawHub community skill by bogorman
+
+    # Install: clawhub install vector-robot
+
+    # Path: bogorman/vector-robot
+
+
+    ## Description
+
+    Control Anki Vector robot via wire-pod. Speak through Vector, see through its camera, move head/lift/wheels, change eye
+    colors, trigger animations. Use when user mentions Vector robot, wants to speak through a robot, control a physical robot,
+    or interact with wire-pod.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/install-launchagent.sh
+
+    - scripts/proxy-server.js
+
+    - scripts/vector-say.sh
+
+    - scripts/vector-see.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vector-robot
+
+    ```'
+examples:
+- description: Install Vector-Robot from ClawHub
+  usage: clawhub install vector-robot
+schema_version: '1.0'

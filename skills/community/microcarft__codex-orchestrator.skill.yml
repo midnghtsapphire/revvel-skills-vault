@@ -1,0 +1,56 @@
+name: codex-orchestrator
+title: Codex Orchestrator
+version: 1.0.0
+description: Monitor, control, and orchestrate background Codex sessions. Use this skill to track progress, handle interruptions,
+  and ensure task completion for long-running coding tasks.
+metadata:
+  author: microcarft
+  category: Development & Coding
+  tags:
+  - development-coding
+  - codex
+  - orchestrator
+  source: clawhub-community
+  clawhub_slug: codex-orchestrator
+  clawhub_path: microcarft/codex-orchestrator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Codex Orchestrator
+
+    # Source: ClawHub community skill by microcarft
+
+    # Install: clawhub install codex-orchestrator
+
+    # Path: microcarft/codex-orchestrator
+
+
+    ## Description
+
+    Monitor, control, and orchestrate background Codex sessions. Use this skill to track progress, handle interruptions, and
+    ensure task completion for long-running coding tasks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install codex-orchestrator
+
+    ```'
+examples:
+- description: Install Codex Orchestrator from ClawHub
+  usage: clawhub install codex-orchestrator
+schema_version: '1.0'

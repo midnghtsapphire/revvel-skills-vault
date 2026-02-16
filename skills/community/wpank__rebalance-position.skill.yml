@@ -1,0 +1,73 @@
+name: rebalance-position
+title: Uniswap Rebalance Position
+version: 0.1.0
+description: Rebalance an out-of-range Uniswap V3/V4 LP position by closing the old position and opening a new one centered
+  on the current price. Handles fee collection, removal, range calculation, and re-entry in a single workflow. Use when a
+  position is out of range and needs adjustment.
+metadata:
+  author: wpank
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - rebalance
+  - position
+  - '[task(subagent_type:liquidity-manager)'
+  - mcp__uniswap__get_positions_by_owner
+  - mcp__uniswap__get_position
+  - mcp__uniswap__get_pool_info]
+  source: clawhub-community
+  clawhub_slug: rebalance-position
+  clawhub_path: wpank/rebalance-position
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:liquidity-manager)'
+  - mcp__uniswap__get_positions_by_owner
+  - mcp__uniswap__get_position
+  - mcp__uniswap__get_pool_info]
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Rebalance Position
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install rebalance-position
+
+    # Path: wpank/rebalance-position
+
+
+    ## Description
+
+    Rebalance an out-of-range Uniswap V3/V4 LP position by closing the old position and opening a new one centered on the
+    current price. Handles fee collection, removal, range calculation, and re-entry in a single workflow. Use when a position
+    is out of range and needs adjustment.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:liquidity-manager), mcp__uniswap__get_positions_by_owner, mcp__uniswap__get_position, mcp__uniswap__get_pool_info]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rebalance-position
+
+    ```'
+examples:
+- description: Install Uniswap Rebalance Position from ClawHub
+  usage: clawhub install rebalance-position
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: retention
+title: Retention
+version: 1.0.0
+description: User retention strategy, cohort analysis, churn prevention, and reactivation campaigns
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - retention
+  source: clawhub-community
+  clawhub_slug: retention
+  clawhub_path: ivangdavila/retention
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Retention
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install retention
+
+    # Path: ivangdavila/retention
+
+
+    ## Description
+
+    User retention strategy, cohort analysis, churn prevention, and reactivation campaigns
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install retention
+
+    ```'
+examples:
+- description: Install Retention from ClawHub
+  usage: clawhub install retention
+schema_version: '1.0'

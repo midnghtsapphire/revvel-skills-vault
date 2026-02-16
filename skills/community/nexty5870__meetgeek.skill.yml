@@ -1,0 +1,57 @@
+name: meetgeek
+title: MeetGeek
+version: 1.0.1
+description: Query MeetGeek meeting intelligence from CLI - list meetings, get AI summaries, transcripts, action items, and
+  search across all your calls with natural language.
+metadata:
+  author: nexty5870
+  category: Search & Research
+  tags:
+  - search-research
+  - meetgeek
+  source: clawhub-community
+  clawhub_slug: meetgeek
+  clawhub_path: nexty5870/meetgeek
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MeetGeek
+
+    # Source: ClawHub community skill by nexty5870
+
+    # Install: clawhub install meetgeek
+
+    # Path: nexty5870/meetgeek
+
+
+    ## Description
+
+    Query MeetGeek meeting intelligence from CLI - list meetings, get AI summaries, transcripts, action items, and search
+    across all your calls with natural language.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - meetgeek.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meetgeek
+
+    ```'
+examples:
+- description: Install MeetGeek from ClawHub
+  usage: clawhub install meetgeek
+schema_version: '1.0'

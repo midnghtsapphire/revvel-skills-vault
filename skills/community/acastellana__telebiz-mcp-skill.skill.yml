@@ -1,0 +1,72 @@
+name: telebiz-mcp
+title: Telebiz Mcp
+version: 0.1.0
+description: Access Telegram data via MCP using the telebiz-tt browser client. Lists chats, reads messages, searches, manages
+  folders, and sends messages through an authenticated Telegram session.
+metadata:
+  author: acastellana
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - telebiz
+  - mcp
+  source: clawhub-community
+  clawhub_slug: telebiz-mcp-skill
+  clawhub_path: acastellana/telebiz-mcp-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telebiz Mcp
+
+    # Source: ClawHub community skill by acastellana
+
+    # Install: clawhub install telebiz-mcp-skill
+
+    # Path: acastellana/telebiz-mcp-skill
+
+
+    ## Description
+
+    Access Telegram data via MCP using the telebiz-tt browser client. Lists chats, reads messages, searches, manages folders,
+    and sends messages through an authenticated Telegram session.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - start-http.sh
+
+    - start-relay.sh
+
+    - telebiz-service.sh
+
+    - tsconfig.json
+
+    - dist/daemon.d.ts
+
+    - dist/daemon.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telebiz-mcp-skill
+
+    ```'
+examples:
+- description: Install Telebiz Mcp from ClawHub
+  usage: clawhub install telebiz-mcp-skill
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: computer-use
+title: Computer Use
+version: 1.2.0
+description: Full desktop computer use for headless Linux servers and VPS. Creates a virtual display (Xvfb + XFCE) to control
+  GUI applications without a physical monitor. Screenshots, mouse clicks, keyboard input, scrolling, dragging — all 17 standard
+  actions. Includes flicker-free VNC setup for live remote view
+metadata:
+  author: ram-raghav-s
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - computer
+  - use
+  source: clawhub-community
+  clawhub_slug: computer-use
+  clawhub_path: ram-raghav-s/computer-use
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Computer Use
+
+    # Source: ClawHub community skill by ram-raghav-s
+
+    # Install: clawhub install computer-use
+
+    # Path: ram-raghav-s/computer-use
+
+
+    ## Description
+
+    Full desktop computer use for headless Linux servers and VPS. Creates a virtual display (Xvfb + XFCE) to control GUI applications
+    without a physical monitor. Screenshots, mouse clicks, keyboard input, scrolling, dragging — all 17 standard actions.
+    Includes flicker-free VNC setup for live remote view
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/click.sh
+
+    - scripts/cursor_position.sh
+
+    - scripts/drag.sh
+
+    - scripts/hold_key.sh
+
+    - scripts/key.sh
+
+    - scripts/minimal-desktop.sh
+
+    - scripts/mouse_down.sh
+
+    - scripts/mouse_move.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install computer-use
+
+    ```'
+examples:
+- description: Install Computer Use from ClawHub
+  usage: clawhub install computer-use
+schema_version: '1.0'

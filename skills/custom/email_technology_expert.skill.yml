@@ -1,0 +1,999 @@
+name: email_technology_expert
+title: Email Technology Expert
+version: 2.0.0
+description: Comprehensive cutting-edge email technology suite including tracing, tracking, auto-answering, auto-notifications,
+  in-app programming for Gmail/Yahoo/Outlook, encryption, forensics, phishing detection, and advanced email automation.
+metadata:
+  author: Revvel AI Engine
+  category: Development & Coding
+  tags:
+  - delivery-status-tracking
+  - expert
+  - spf-dkim-dmarc-validation
+  - read-receipt-tracking
+  - email
+  - arc-authentication-chain
+  - technology
+  - link-click-tracking
+  - email-tracing-ip-geolocation
+  - email-tracking-pixel-generation
+  - email-header-analysis
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "\"\"\"\nEmail Technology Expert Skill Module\nComprehensive cutting-edge email tracing, tracking, auto-answering,\
+    \ notifications, and in-app programming\n\"\"\"\n\nimport json\nimport re\nimport os\nimport base64\nimport hashlib\n\
+    import hmac\nimport time\nimport email\nimport imaplib\nimport smtplib\nimport socket\nimport ipaddress\nimport dns.resolver\n\
+    import requests\nfrom datetime import datetime, timedelta\nfrom typing import Dict, List, Optional, Any, Tuple, Union\n\
+    from collections import defaultdict, Counter\nfrom email import policy\nfrom email.parser import BytesParser, Parser\n\
+    from email.mime.text import MIMEText\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.base import MIMEBase\n\
+    from email import encoders\nfrom email.utils import parseaddr, parsedate_to_datetime, formataddr\nimport unittest\n\n\
+    try:\n    import gnupg\n    GPG_AVAILABLE = True\nexcept ImportError:\n    GPG_AVAILABLE = False\n\nSKILL_METADATA = {\n\
+    \    \"name\": \"Email Technology Expert\",\n    \"id\": \"email_technology_expert\",\n    \"version\": \"2.0.0\",\n \
+    \   \"author\": \"Revvel AI Engine\",\n    \"description\": \"Comprehensive cutting-edge email technology suite including\
+    \ tracing, tracking, auto-answering, auto-notifications, in-app programming for Gmail/Yahoo/Outlook, encryption, forensics,\
+    \ phishing detection, and advanced email automation.\",\n    \"capabilities\": [\n        \"email_header_analysis\",\n\
+    \        \"email_tracing_ip_geolocation\",\n        \"spf_dkim_dmarc_validation\",\n        \"arc_authentication_chain\"\
+    ,\n        \"email_tracking_pixel_generation\",\n        \"read_receipt_tracking\",\n        \"link_click_tracking\",\n\
+    \        \"delivery_status_tracking\",\n        \"sender_reputation_scoring\",\n        \"phishing_detection\",\n    \
+    \    \"email_forensics\",\n        \"metadata_extraction\",\n        \"llm_auto_reply_generation\",\n        \"context_aware_responses\"\
+    ,\n        \"template_auto_replies\",\n        \"priority_based_routing\",\n        \"auto_forward_rules\",\n        \"\
+    real_time_notifications\",\n        \"vip_sender_alerts\",\n        \"keyword_triggered_alerts\",\n        \"deadline_detection\"\
+    ,\n        \"follow_up_reminders\",\n        \"gmail_apps_script_generation\",\n        \"outlook_rules_creation\",\n\
+    \        \"yahoo_mail_filters\",\n        \"email_workflow_builder\",\n        \"scheduled_email_sending\",\n        \"\
+    mail_merge\",\n        \"pgp_gpg_encryption\",\n        \"email_archival_compliance\",\n        \"spam_analysis\",\n \
+    \       \"bulk_operations\",\n        \"oauth_token_management\",\n        \"email_campaign_automation\"\n    ],\n   \
+    \ \"domain\": \"email_technology\",\n    \"api_integrations\": [\n        \"gmail_api\",\n        \"microsoft_graph_api\"\
+    ,\n        \"yahoo_mail_api\",\n        \"openrouter_llm_api\",\n        \"ipinfo_geolocation\",\n        \"virustotal_api\"\
+    ,\n        \"spamhaus_api\"\n    ]\n}\n\n# ============================================================================\n\
+    # EMAIL HEADER ANALYSIS & TRACING\n# ============================================================================\n\n\
+    class EmailHeaderAnalyzer:\n    \"\"\"Comprehensive email header analysis and tracing\"\"\"\n    \n    def __init__(self):\n\
+    \        self.dns_resolver = dns.resolver.Resolver()\n        self.dns_resolver.timeout = 5\n        self.dns_resolver.lifetime\
+    \ = 5\n    \n    def parse_email_headers(self, raw_email: Union[str, bytes]) -> Dict[str, Any]:\n        \"\"\"Parse email\
+    \ headers from raw email content\"\"\"\n        if isinstance(raw_email, str):\n            msg = Parser(policy=policy.default).parsestr(raw_email)\n\
+    \        else:\n            msg = BytesParser(policy=policy.default).parsebytes(raw_email)\n        \n        headers\
+    \ = {}\n        for key, value in msg.items():\n            if key in headers:\n                if isinstance(headers[key],\
+    \ list):\n                    headers[key].append(value)\n                else:\n                    headers[key] = [headers[key],\
+    \ value]\n            else:\n                headers[key] = value\n        \n        return {\n            \"headers\"\
+    : headers,\n            \"subject\": msg.get(\"Subject\", \"\"),\n            \"from\": msg.get(\"From\", \"\"),\n   \
+    \         \"to\": msg.get(\"To\", \"\"),\n            \"date\": msg.get(\"Date\", \"\"),\n            \"message_id\":\
+    \ msg.get(\"Message-ID\", \"\"),\n            \"body\": self._extract_body(msg),\n            \"attachments\": self._extract_attachments(msg)\n\
+    \        }\n    \n    def _extract_body(self, msg) -> str:\n        \"\"\"Extract email body content\"\"\"\n        if\
+    \ msg.is_multipart():\n            for part in msg.walk():\n                if part.get_content_type() == \"text/plain\"\
+    :\n                    return part.get_payload(decode=True).decode('utf-8', errors='ignore')\n                elif part.get_content_type()\
+    \ == \"text/html\":\n                    return part.get_payload(decode=True).decode('utf-8', errors='ignore')\n     \
+    \   else:\n            return msg.get_payload(decode=True).decode('utf-8', errors='ignore')\n        return \"\"\n   \
+    \ \n    def _extract_attachments(self, msg) -> List[Dict[str, Any]]:\n        \"\"\"Extract attachment information\"\"\
+    \"\n        attachments = []\n        if msg.is_multipart():\n            for part in msg.walk():\n                if\
+    \ part.get_content_disposition() == \"attachment\":\n                    attachments.append({\n                      \
+    \  \"filename\": part.get_filename(),\n                        \"content_type\": part.get_content_type(),\n          \
+    \              \"size\": len(part.get_payload(decode=True))\n                    })\n        return attachments\n    \n\
+    \    def trace_email_path(self, headers: Dict[str, Any]) -> List[Dict[str, Any]]:\n        \"\"\"Trace full email routing\
+    \ path from Received headers\"\"\"\n        received_headers = headers.get(\"Received\", [])\n        if not isinstance(received_headers,\
+    \ list):\n            received_headers = [received_headers]\n        \n        path = []\n        for idx, received in\
+    \ enumerate(reversed(received_headers)):\n            hop = self._parse_received_header(received)\n            hop[\"\
+    hop_number\"] = idx + 1\n            path.append(hop)\n        \n        return path\n    \n    def _parse_received_header(self,\
+    \ received: str) -> Dict[str, Any]:\n        \"\"\"Parse a single Received header\"\"\"\n        hop = {\n           \
+    \ \"raw\": received,\n            \"from_domain\": None,\n            \"from_ip\": None,\n            \"by_domain\": None,\n\
+    \            \"timestamp\": None,\n            \"protocol\": None\n        }\n        \n        # Extract from domain\n\
+    \        from_match = re.search(r'from\\s+([^\\s\\(\\[]+)', received, re.IGNORECASE)\n        if from_match:\n       \
+    \     hop[\"from_domain\"] = from_match.group(1)\n        \n        # Extract IP address\n        ip_match = re.search(r'\\\
+    [?(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\]?', received)\n        if ip_match:\n            hop[\"from_ip\"] = ip_match.group(1)\n\
+    \        \n        # Extract by domain\n        by_match = re.search(r'by\\s+([^\\s\\(\\[]+)', received, re.IGNORECASE)\n\
+    \        if by_match:\n            hop[\"by_domain\"] = by_match.group(1)\n        \n        # Extract timestamp\n   \
+    \     date_match = re.search(r';\\s*(.+)$', received)\n        if date_match:\n            try:\n                hop[\"\
+    timestamp\"] = parsedate_to_datetime(date_match.group(1).strip()).isoformat()\n            except:\n                hop[\"\
+    timestamp\"] = date_match.group(1).strip()\n        \n        # Extract protocol\n        protocol_match = re.search(r'with\\\
+    s+(\\w+)', received, re.IGNORECASE)\n        if protocol_match:\n            hop[\"protocol\"] = protocol_match.group(1)\n\
+    \        \n        return hop\n    \n    def geolocate_ip(self, ip_address: str) -> Dict[str, Any]:\n        \"\"\"Geolocate\
+    \ IP address using ipinfo.io\"\"\"\n        try:\n            response = requests.get(f\"https://ipinfo.io/{ip_address}/json\"\
+    , timeout=5)\n            if response.status_code == 200:\n                data = response.json()\n                return\
+    \ {\n                    \"ip\": ip_address,\n                    \"city\": data.get(\"city\"),\n                    \"\
+    region\": data.get(\"region\"),\n                    \"country\": data.get(\"country\"),\n                    \"location\"\
+    : data.get(\"loc\"),\n                    \"org\": data.get(\"org\"),\n                    \"postal\": data.get(\"postal\"\
+    ),\n                    \"timezone\": data.get(\"timezone\")\n                }\n        except Exception as e:\n    \
+    \        return {\"ip\": ip_address, \"error\": str(e)}\n        \n        return {\"ip\": ip_address, \"error\": \"Unable\
+    \ to geolocate\"}\n    \n    def extract_all_ips(self, headers: Dict[str, Any]) -> List[str]:\n        \"\"\"Extract all\
+    \ IP addresses from email headers\"\"\"\n        ips = []\n        received_headers = headers.get(\"Received\", [])\n\
+    \        if not isinstance(received_headers, list):\n            received_headers = [received_headers]\n        \n   \
+    \     for received in received_headers:\n            ip_matches = re.findall(r'\\[?(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\\
+    d{1,3})\\]?', received)\n            ips.extend(ip_matches)\n        \n        # Remove duplicates and private IPs\n \
+    \       unique_ips = []\n        for ip in ips:\n            try:\n                ip_obj = ipaddress.ip_address(ip)\n\
+    \                if not ip_obj.is_private and ip not in unique_ips:\n                    unique_ips.append(ip)\n     \
+    \       except:\n                pass\n        \n        return unique_ips\n    \n    def analyze_email_forensics(self,\
+    \ raw_email: Union[str, bytes]) -> Dict[str, Any]:\n        \"\"\"Complete forensic analysis of email\"\"\"\n        parsed\
+    \ = self.parse_email_headers(raw_email)\n        headers = parsed[\"headers\"]\n        \n        # Trace routing path\n\
+    \        routing_path = self.trace_email_path(headers)\n        \n        # Extract and geolocate IPs\n        ips = self.extract_all_ips(headers)\n\
+    \        geolocations = [self.geolocate_ip(ip) for ip in ips]\n        \n        # Calculate delivery time\n        delivery_time\
+    \ = self._calculate_delivery_time(routing_path)\n        \n        # Extract authentication results\n        auth_results\
+    \ = self.extract_authentication_results(headers)\n        \n        return {\n            \"message_id\": parsed[\"message_id\"\
+    ],\n            \"subject\": parsed[\"subject\"],\n            \"from\": parsed[\"from\"],\n            \"to\": parsed[\"\
+    to\"],\n            \"date\": parsed[\"date\"],\n            \"routing_path\": routing_path,\n            \"total_hops\"\
+    : len(routing_path),\n            \"ip_addresses\": ips,\n            \"geolocations\": geolocations,\n            \"\
+    delivery_time_seconds\": delivery_time,\n            \"authentication\": auth_results,\n            \"attachments\": parsed[\"\
+    attachments\"],\n            \"body_preview\": parsed[\"body\"][:500] if parsed[\"body\"] else \"\"\n        }\n    \n\
+    \    def _calculate_delivery_time(self, routing_path: List[Dict[str, Any]]) -> Optional[float]:\n        \"\"\"Calculate\
+    \ total delivery time from routing path\"\"\"\n        if len(routing_path) < 2:\n            return None\n        \n\
+    \        try:\n            first_timestamp = routing_path[0][\"timestamp\"]\n            last_timestamp = routing_path[-1][\"\
+    timestamp\"]\n            \n            if first_timestamp and last_timestamp:\n                first_dt = datetime.fromisoformat(first_timestamp.replace('Z',\
+    \ '+00:00'))\n                last_dt = datetime.fromisoformat(last_timestamp.replace('Z', '+00:00'))\n              \
+    \  return (last_dt - first_dt).total_seconds()\n        except:\n            pass\n        \n        return None\n   \
+    \ \n    def extract_authentication_results(self, headers: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Extract SPF,\
+    \ DKIM, DMARC, ARC authentication results\"\"\"\n        auth = {\n            \"spf\": self._extract_spf_result(headers),\n\
+    \            \"dkim\": self._extract_dkim_result(headers),\n            \"dmarc\": self._extract_dmarc_result(headers),\n\
+    \            \"arc\": self._extract_arc_result(headers)\n        }\n        return auth\n    \n    def _extract_spf_result(self,\
+    \ headers: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Extract SPF authentication result\"\"\"\n        received_spf\
+    \ = headers.get(\"Received-SPF\", \"\")\n        auth_results = headers.get(\"Authentication-Results\", \"\")\n      \
+    \  \n        result = {\"status\": \"none\", \"details\": \"\"}\n        \n        if received_spf:\n            result[\"\
+    details\"] = received_spf\n            if \"pass\" in received_spf.lower():\n                result[\"status\"] = \"pass\"\
+    \n            elif \"fail\" in received_spf.lower():\n                result[\"status\"] = \"fail\"\n            elif\
+    \ \"softfail\" in received_spf.lower():\n                result[\"status\"] = \"softfail\"\n            elif \"neutral\"\
+    \ in received_spf.lower():\n                result[\"status\"] = \"neutral\"\n        \n        if not result[\"status\"\
+    ] or result[\"status\"] == \"none\":\n            spf_match = re.search(r'spf=(\\w+)', str(auth_results), re.IGNORECASE)\n\
+    \            if spf_match:\n                result[\"status\"] = spf_match.group(1).lower()\n        \n        return\
+    \ result\n    \n    def _extract_dkim_result(self, headers: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Extract\
+    \ DKIM authentication result\"\"\"\n        auth_results = headers.get(\"Authentication-Results\", \"\")\n        dkim_signature\
+    \ = headers.get(\"DKIM-Signature\", \"\")\n        \n        result = {\"status\": \"none\", \"details\": \"\", \"selector\"\
+    : None, \"domain\": None}\n        \n        if dkim_signature:\n            result[\"details\"] = dkim_signature\n  \
+    \          # Extract selector and domain\n            selector_match = re.search(r's=([^;]+)', dkim_signature)\n     \
+    \       domain_match = re.search(r'd=([^;]+)', dkim_signature)\n            if selector_match:\n                result[\"\
+    selector\"] = selector_match.group(1).strip()\n            if domain_match:\n                result[\"domain\"] = domain_match.group(1).strip()\n\
+    \        \n        if auth_results:\n            dkim_match = re.search(r'dkim=(\\w+)', str(auth_results), re.IGNORECASE)\n\
+    \            if dkim_match:\n                result[\"status\"] = dkim_match.group(1).lower()\n        \n        return\
+    \ result\n    \n    def _extract_dmarc_result(self, headers: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Extract\
+    \ DMARC authentication result\"\"\"\n        auth_results = headers.get(\"Authentication-Results\", \"\")\n        \n\
+    \        result = {\"status\": \"none\", \"details\": \"\"}\n        \n        if auth_results:\n            dmarc_match\
+    \ = re.search(r'dmarc=(\\w+)', str(auth_results), re.IGNORECASE)\n            if dmarc_match:\n                result[\"\
+    status\"] = dmarc_match.group(1).lower()\n            result[\"details\"] = str(auth_results)\n        \n        return\
+    \ result\n    \n    def _extract_arc_result(self, headers: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Extract ARC\
+    \ (Authenticated Received Chain) result\"\"\"\n        arc_auth = headers.get(\"ARC-Authentication-Results\", \"\")\n\
+    \        arc_seal = headers.get(\"ARC-Seal\", \"\")\n        arc_message_sig = headers.get(\"ARC-Message-Signature\",\
+    \ \"\")\n        \n        result = {\n            \"status\": \"none\",\n            \"authentication_results\": arc_auth,\n\
+    \            \"seal\": arc_seal,\n            \"message_signature\": arc_message_sig,\n            \"chain_valid\": False\n\
+    \        }\n        \n        if arc_seal:\n            # Check if ARC chain is valid\n            cv_match = re.search(r'cv=(\\\
+    w+)', arc_seal)\n            if cv_match:\n                cv_value = cv_match.group(1).lower()\n                result[\"\
+    status\"] = cv_value\n                result[\"chain_valid\"] = (cv_value == \"pass\")\n        \n        return result\n\
+    \n\n# ============================================================================\n# SPF/DKIM/DMARC VALIDATION\n# ============================================================================\n\
+    \nclass EmailAuthenticationValidator:\n    \"\"\"Validate SPF, DKIM, DMARC records\"\"\"\n    \n    def __init__(self):\n\
+    \        self.dns_resolver = dns.resolver.Resolver()\n        self.dns_resolver.timeout = 5\n        self.dns_resolver.lifetime\
+    \ = 5\n    \n    def validate_spf(self, domain: str, sender_ip: str) -> Dict[str, Any]:\n        \"\"\"Validate SPF record\
+    \ for domain and sender IP\"\"\"\n        try:\n            # Query SPF record\n            answers = self.dns_resolver.resolve(domain,\
+    \ 'TXT')\n            spf_record = None\n            \n            for rdata in answers:\n                txt = rdata.to_text().strip('\"\
+    ')\n                if txt.startswith('v=spf1'):\n                    spf_record = txt\n                    break\n  \
+    \          \n            if not spf_record:\n                return {\"valid\": False, \"status\": \"none\", \"record\"\
+    : None, \"error\": \"No SPF record found\"}\n            \n            # Parse SPF record\n            result = self._evaluate_spf_record(spf_record,\
+    \ sender_ip, domain)\n            result[\"record\"] = spf_record\n            \n            return result\n        \n\
+    \        except Exception as e:\n            return {\"valid\": False, \"status\": \"error\", \"record\": None, \"error\"\
+    : str(e)}\n    \n    def _evaluate_spf_record(self, spf_record: str, sender_ip: str, domain: str) -> Dict[str, Any]:\n\
+    \        \"\"\"Evaluate SPF record against sender IP\"\"\"\n        mechanisms = spf_record.split()\n        \n      \
+    \  try:\n            sender_ip_obj = ipaddress.ip_address(sender_ip)\n        except:\n            return {\"valid\":\
+    \ False, \"status\": \"error\", \"error\": \"Invalid sender IP\"}\n        \n        for mechanism in mechanisms[1:]:\
+    \  # Skip v=spf1\n            if mechanism.startswith('ip4:'):\n                ip_range = mechanism[4:]\n           \
+    \     try:\n                    if '/' in ip_range:\n                        network = ipaddress.ip_network(ip_range,\
+    \ strict=False)\n                        if sender_ip_obj in network:\n                            return {\"valid\":\
+    \ True, \"status\": \"pass\", \"matched_mechanism\": mechanism}\n                    else:\n                        if\
+    \ str(sender_ip_obj) == ip_range:\n                            return {\"valid\": True, \"status\": \"pass\", \"matched_mechanism\"\
+    : mechanism}\n                except:\n                    pass\n            \n            elif mechanism.startswith('include:'):\n\
+    \                # Recursive SPF check (simplified)\n                included_domain = mechanism[8:]\n               \
+    \ result = self.validate_spf(included_domain, sender_ip)\n                if result.get(\"valid\"):\n                \
+    \    return {\"valid\": True, \"status\": \"pass\", \"matched_mechanism\": mechanism}\n            \n            elif\
+    \ mechanism == 'a':\n                # Check if sender IP matches domain's A record\n                try:\n          \
+    \          a_records = self.dns_resolver.resolve(domain, 'A')\n                    for rdata in a_records:\n         \
+    \               if str(sender_ip_obj) == str(rdata):\n                            return {\"valid\": True, \"status\"\
+    : \"pass\", \"matched_mechanism\": mechanism}\n                except:\n                    pass\n            \n     \
+    \       elif mechanism == 'mx':\n                # Check if sender IP matches domain's MX record IPs\n               \
+    \ try:\n                    mx_records = self.dns_resolver.resolve(domain, 'MX')\n                    for mx in mx_records:\n\
+    \                        mx_host = str(mx.exchange).rstrip('.')\n                        a_records = self.dns_resolver.resolve(mx_host,\
+    \ 'A')\n                        for rdata in a_records:\n                            if str(sender_ip_obj) == str(rdata):\n\
+    \                                return {\"valid\": True, \"status\": \"pass\", \"matched_mechanism\": mechanism}\n  \
+    \              except:\n                    pass\n            \n            elif mechanism in ['~all', '-all', '?all',\
+    \ '+all']:\n                qualifier = mechanism[0]\n                if qualifier == '+':\n                    return\
+    \ {\"valid\": True, \"status\": \"pass\", \"matched_mechanism\": mechanism}\n                elif qualifier == '-':\n\
+    \                    return {\"valid\": False, \"status\": \"fail\", \"matched_mechanism\": mechanism}\n             \
+    \   elif qualifier == '~':\n                    return {\"valid\": False, \"status\": \"softfail\", \"matched_mechanism\"\
+    : mechanism}\n                elif qualifier == '?':\n                    return {\"valid\": False, \"status\": \"neutral\"\
+    , \"matched_mechanism\": mechanism}\n        \n        return {\"valid\": False, \"status\": \"neutral\", \"matched_mechanism\"\
+    : \"default\"}\n    \n    def validate_dkim(self, domain: str, selector: str) -> Dict[str, Any]:\n        \"\"\"Validate\
+    \ DKIM record for domain and selector\"\"\"\n        try:\n            dkim_domain = f\"{selector}._domainkey.{domain}\"\
+    \n            answers = self.dns_resolver.resolve(dkim_domain, 'TXT')\n            \n            dkim_record = None\n\
+    \            for rdata in answers:\n                txt = rdata.to_text().strip('\"')\n                if 'p=' in txt:\
+    \  # DKIM records contain public key\n                    dkim_record = txt\n                    break\n            \n\
+    \            if not dkim_record:\n                return {\"valid\": False, \"record\": None, \"error\": \"No DKIM record\
+    \ found\"}\n            \n            # Parse DKIM record\n            public_key = None\n            key_type = \"rsa\"\
+    \n            \n            p_match = re.search(r'p=([^;]+)', dkim_record)\n            if p_match:\n                public_key\
+    \ = p_match.group(1).strip()\n            \n            k_match = re.search(r'k=([^;]+)', dkim_record)\n            if\
+    \ k_match:\n                key_type = k_match.group(1).strip()\n            \n            return {\n                \"\
+    valid\": True,\n                \"record\": dkim_record,\n                \"public_key\": public_key,\n              \
+    \  \"key_type\": key_type,\n                \"selector\": selector,\n                \"domain\": domain\n            }\n\
+    \        \n        except Exception as e:\n            return {\"valid\": False, \"record\": None, \"error\": str(e)}\n\
+    \    \n    def validate_dmarc(self, domain: str) -> Dict[str, Any]:\n        \"\"\"Validate DMARC record for domain\"\"\
+    \"\n        try:\n            dmarc_domain = f\"_dmarc.{domain}\"\n            answers = self.dns_resolver.resolve(dmarc_domain,\
+    \ 'TXT')\n            \n            dmarc_record = None\n            for rdata in answers:\n                txt = rdata.to_text().strip('\"\
+    ')\n                if txt.startswith('v=DMARC1'):\n                    dmarc_record = txt\n                    break\n\
+    \            \n            if not dmarc_record:\n                return {\"valid\": False, \"record\": None, \"error\"\
+    : \"No DMARC record found\"}\n            \n            # Parse DMARC record\n            policy = None\n            subdomain_policy\
+    \ = None\n            percentage = 100\n            rua = []\n            ruf = []\n            \n            p_match\
+    \ = re.search(r'p=([^;]+)', dmarc_record)\n            if p_match:\n                policy = p_match.group(1).strip()\n\
+    \            \n            sp_match = re.search(r'sp=([^;]+)', dmarc_record)\n            if sp_match:\n             \
+    \   subdomain_policy = sp_match.group(1).strip()\n            \n            pct_match = re.search(r'pct=([^;]+)', dmarc_record)\n\
+    \            if pct_match:\n                percentage = int(pct_match.group(1).strip())\n            \n            rua_match\
+    \ = re.search(r'rua=([^;]+)', dmarc_record)\n            if rua_match:\n                rua = [addr.strip() for addr in\
+    \ rua_match.group(1).split(',')]\n            \n            ruf_match = re.search(r'ruf=([^;]+)', dmarc_record)\n    \
+    \        if ruf_match:\n                ruf = [addr.strip() for addr in ruf_match.group(1).split(',')]\n            \n\
+    \            return {\n                \"valid\": True,\n                \"record\": dmarc_record,\n                \"\
+    policy\": policy,\n                \"subdomain_policy\": subdomain_policy,\n                \"percentage\": percentage,\n\
+    \                \"aggregate_reports\": rua,\n                \"forensic_reports\": ruf\n            }\n        \n   \
+    \     except Exception as e:\n            return {\"valid\": False, \"record\": None, \"error\": str(e)}\n    \n    def\
+    \ comprehensive_domain_check(self, domain: str, sender_ip: Optional[str] = None, \n                                  \
+    \ dkim_selector: Optional[str] = None) -> Dict[str, Any]:\n        \"\"\"Comprehensive authentication check for domain\"\
+    \"\"\n        results = {\n            \"domain\": domain,\n            \"timestamp\": datetime.utcnow().isoformat(),\n\
+    \            \"spf\": None,\n            \"dkim\": None,\n            \"dmarc\": None,\n            \"overall_score\"\
+    : 0\n        }\n        \n        # Validate DMARC\n        dmarc_result = self.validate_dmarc(domain)\n        results[\"\
+    dmarc\"] = dmarc_result\n        if dmarc_result.get(\"valid\"):\n            results[\"overall_score\"] += 33\n     \
+    \   \n        # Validate SPF if sender IP provided\n        if sender_ip:\n            spf_result = self.validate_spf(domain,\
+    \ sender_ip)\n            results[\"spf\"] = spf_result\n            if spf_result.get(\"valid\"):\n                results[\"\
+    overall_score\"] += 33\n        \n        # Validate DKIM if selector provided\n        if dkim_selector:\n          \
+    \  dkim_result = self.validate_dkim(domain, dkim_selector)\n            results[\"dkim\"] = dkim_result\n            if\
+    \ dkim_result.get(\"valid\"):\n                results[\"overall_score\"] += 34\n        \n        return results\n\n\n\
+    # ============================================================================\n# EMAIL TRACKING & MONITORING\n# ============================================================================\n\
+    \nclass EmailTrackingSystem:\n    \"\"\"Email tracking pixel generation, link tracking, and read receipts\"\"\"\n    \n\
+    \    def __init__(self, tracking_domain: str = \"track.example.com\"):\n        self.tracking_domain = tracking_domain\n\
+    \        self.tracking_db = {}  # In production, use real database\n    \n    def generate_tracking_pixel(self, email_id:\
+    \ str, recipient: str) -> Tuple[str, str]:\n        \"\"\"Generate tracking pixel for email open tracking\"\"\"\n    \
+    \    tracking_id = hashlib.sha256(f\"{email_id}:{recipient}:{time.time()}\".encode()).hexdigest()\n        \n        #\
+    \ Store tracking info\n        self.tracking_db[tracking_id] = {\n            \"email_id\": email_id,\n            \"\
+    recipient\": recipient,\n            \"created_at\": datetime.utcnow().isoformat(),\n            \"opened\": False,\n\
+    \            \"open_count\": 0,\n            \"open_timestamps\": []\n        }\n        \n        # Generate 1x1 transparent\
+    \ pixel URL\n        pixel_url = f\"https://{self.tracking_domain}/pixel/{tracking_id}.png\"\n        \n        # HTML\
+    \ img tag\n        pixel_html = f'<img src=\"{pixel_url}\" width=\"1\" height=\"1\" style=\"display:none;\" alt=\"\" />'\n\
+    \        \n        return tracking_id, pixel_html\n    \n    def record_email_open(self, tracking_id: str, user_agent:\
+    \ str = None, \n                         ip_address: str = None) -> Dict[str, Any]:\n        \"\"\"Record email open event\"\
+    \"\"\n        if tracking_id not in self.tracking_db:\n            return {\"success\": False, \"error\": \"Invalid tracking\
+    \ ID\"}\n        \n        tracking_info = self.tracking_db[tracking_id]\n        tracking_info[\"opened\"] = True\n \
+    \       tracking_info[\"open_count\"] += 1\n        tracking_info[\"open_timestamps\"].append({\n            \"timestamp\"\
+    : datetime.utcnow().isoformat(),\n            \"user_agent\": user_agent,\n            \"ip_address\": ip_address\n  \
+    \      })\n        \n        return {\n            \"success\": True,\n            \"email_id\": tracking_info[\"email_id\"\
+    ],\n            \"recipient\": tracking_info[\"recipient\"],\n            \"open_count\": tracking_info[\"open_count\"\
+    ]\n        }\n    \n    def generate_tracked_link(self, email_id: str, recipient: str, \n                            \
+    \ original_url: str) -> Tuple[str, str]:\n        \"\"\"Generate tracked link for click tracking\"\"\"\n        link_id\
+    \ = hashlib.sha256(f\"{email_id}:{recipient}:{original_url}:{time.time()}\".encode()).hexdigest()\n        \n        #\
+    \ Store link info\n        self.tracking_db[link_id] = {\n            \"email_id\": email_id,\n            \"recipient\"\
+    : recipient,\n            \"original_url\": original_url,\n            \"created_at\": datetime.utcnow().isoformat(),\n\
+    \            \"clicked\": False,\n            \"click_count\": 0,\n            \"click_timestamps\": []\n        }\n \
+    \       \n        # Generate tracked URL\n        tracked_url = f\"https://{self.tracking_domain}/link/{link_id}\"\n \
+    \       \n        return link_id, tracked_url\n    \n    def record_link_click(self, link_id: str, user_agent: str = None,\
+    \ \n                         ip_address: str = None) -> Dict[str, Any]:\n        \"\"\"Record link click event\"\"\"\n\
+    \        if link_id not in self.tracking_db:\n            return {\"success\": False, \"error\": \"Invalid link ID\"}\n\
+    \        \n        link_info = self.tracking_db[link_id]\n        link_info[\"clicked\"] = True\n        link_info[\"\
+    click_count\"] += 1\n        link_info[\"click_timestamps\"].append({\n            \"timestamp\": datetime.utcnow().isoformat(),\n\
+    \            \"user_agent\": user_agent,\n            \"ip_address\": ip_address\n        })\n        \n        return\
+    \ {\n            \"success\": True,\n            \"email_id\": link_info[\"email_id\"],\n            \"recipient\": link_info[\"\
+    recipient\"],\n            \"original_url\": link_info[\"original_url\"],\n            \"click_count\": link_info[\"click_count\"\
+    ]\n        }\n    \n    def get_tracking_stats(self, email_id: str) -> Dict[str, Any]:\n        \"\"\"Get tracking statistics\
+    \ for an email\"\"\"\n        stats = {\n            \"email_id\": email_id,\n            \"total_recipients\": 0,\n \
+    \           \"unique_opens\": 0,\n            \"total_opens\": 0,\n            \"unique_clicks\": 0,\n            \"total_clicks\"\
+    : 0,\n            \"open_rate\": 0.0,\n            \"click_rate\": 0.0,\n            \"click_to_open_rate\": 0.0\n   \
+    \     }\n        \n        recipients = set()\n        opened_recipients = set()\n        clicked_recipients = set()\n\
+    \        \n        for tracking_id, info in self.tracking_db.items():\n            if info.get(\"email_id\") == email_id:\n\
+    \                recipient = info.get(\"recipient\")\n                recipients.add(recipient)\n                \n  \
+    \              if \"opened\" in info and info[\"opened\"]:\n                    opened_recipients.add(recipient)\n   \
+    \                 stats[\"total_opens\"] += info.get(\"open_count\", 0)\n                \n                if \"clicked\"\
+    \ in info and info[\"clicked\"]:\n                    clicked_recipients.add(recipient)\n                    stats[\"\
+    total_clicks\"] += info.get(\"click_count\", 0)\n        \n        stats[\"total_recipients\"] = len(recipients)\n   \
+    \     stats[\"unique_opens\"] = len(opened_recipients)\n        stats[\"unique_clicks\"] = len(clicked_recipients)\n \
+    \       \n        if stats[\"total_recipients\"] > 0:\n            stats[\"open_rate\"] = (stats[\"unique_opens\"] / stats[\"\
+    total_recipients\"]) * 100\n            stats[\"click_rate\"] = (stats[\"unique_clicks\"] / stats[\"total_recipients\"\
+    ]) * 100\n        \n        if stats[\"unique_opens\"] > 0:\n            stats[\"click_to_open_rate\"] = (stats[\"unique_clicks\"\
+    ] / stats[\"unique_opens\"]) * 100\n        \n        return stats\n    \n    def inject_tracking_into_email(self, html_content:\
+    \ str, email_id: str, \n                                   recipient: str, track_links: bool = True) -> str:\n       \
+    \ \"\"\"Inject tracking pixel and tracked links into HTML email\"\"\"\n        # Add tracking pixel at the end of body\n\
+    \        tracking_id, pixel_html = self.generate_tracking_pixel(email_id, recipient)\n        \n        if '</body>' in\
+    \ html_content:\n            html_content = html_content.replace('</body>', f'{pixel_html}</body>')\n        else:\n \
+    \           html_content += pixel_html\n        \n        # Replace links with tracked links\n        if track_links:\n\
+    \            link_pattern = r'<a\\s+(?:[^>]*?\\s+)?href=\"([^\"]+)\"'\n            \n            def replace_link(match):\n\
+    \                original_url = match.group(1)\n                # Skip mailto and anchor links\n                if original_url.startswith(('mailto:',\
+    \ '#', 'tel:')):\n                    return match.group(0)\n                \n                link_id, tracked_url =\
+    \ self.generate_tracked_link(email_id, recipient, original_url)\n                return match.group(0).replace(original_url,\
+    \ tracked_url)\n            \n            html_content = re.sub(link_pattern, replace_link, html_content)\n        \n\
+    \        return html_content\n\n\n# ============================================================================\n# PHISHING\
+    \ DETECTION & SENDER REPUTATION\n# ============================================================================\n\nclass\
+    \ PhishingDetector:\n    \"\"\"Detect phishing attempts and analyze sender reputation\"\"\"\n    \n    def __init__(self):\n\
+    \        self.suspicious_keywords = [\n            'verify', 'account', 'suspended', 'urgent', 'immediate', 'action required',\n\
+    \            'confirm', 'password', 'security', 'unusual activity', 'click here',\n            'limited time', 'expire',\
+    \ 'update', 'billing', 'payment', 'refund',\n            'prize', 'winner', 'congratulations', 'claim', 'free', 'gift\
+    \ card'\n        ]\n        \n        self.suspicious_tlds = ['.tk', '.ml', '.ga', '.cf', '.gq', '.xyz', '.top', '.work']\n\
+    \    \n    def analyze_email_for_phishing(self, email_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Comprehensive\
+    \ phishing analysis\"\"\"\n        risk_score = 0\n        risk_factors = []\n        \n        # Analyze sender\n   \
+    \     sender_risk = self._analyze_sender(email_data.get(\"from\", \"\"))\n        risk_score += sender_risk[\"score\"\
+    ]\n        risk_factors.extend(sender_risk[\"factors\"])\n        \n        # Analyze subject\n        subject_risk =\
+    \ self._analyze_subject(email_data.get(\"subject\", \"\"))\n        risk_score += subject_risk[\"score\"]\n        risk_factors.extend(subject_risk[\"\
+    factors\"])\n        \n        # Analyze body\n        body_risk = self._analyze_body(email_data.get(\"body\", \"\"))\n\
+    \        risk_score += body_risk[\"score\"]\n        risk_factors.extend(body_risk[\"factors\"])\n        \n        #\
+    \ Analyze links\n        links_risk = self._analyze_links(email_data.get(\"body\", \"\"))\n        risk_score += links_risk[\"\
+    score\"]\n        risk_factors.extend(links_risk[\"factors\"])\n        \n        # Analyze authentication\n        auth_risk\
+    \ = self._analyze_authentication(email_data.get(\"authentication\", {}))\n        risk_score += auth_risk[\"score\"]\n\
+    \        risk_factors.extend(auth_risk[\"factors\"])\n        \n        # Determine risk level\n        if risk_score\
+    \ >= 70:\n            risk_level = \"critical\"\n        elif risk_score >= 50:\n            risk_level = \"high\"\n \
+    \       elif risk_score >= 30:\n            risk_level = \"medium\"\n        elif risk_score >= 10:\n            risk_level\
+    \ = \"low\"\n        else:\n            risk_level = \"minimal\"\n        \n        return {\n            \"risk_score\"\
+    : risk_score,\n            \"risk_level\": risk_level,\n            \"risk_factors\": risk_factors,\n            \"is_likely_phishing\"\
+    : risk_score >= 50,\n            \"recommendation\": self._get_recommendation(risk_level)\n        }\n    \n    def _analyze_sender(self,\
+    \ sender: str) -> Dict[str, Any]:\n        \"\"\"Analyze sender address\"\"\"\n        score = 0\n        factors = []\n\
+    \        \n        # Extract email address\n        name, email_addr = parseaddr(sender)\n        \n        if not email_addr:\n\
+    \            return {\"score\": 0, \"factors\": []}\n        \n        # Check for suspicious TLDs\n        for tld in\
+    \ self.suspicious_tlds:\n            if email_addr.endswith(tld):\n                score += 15\n                factors.append(f\"\
+    Suspicious TLD: {tld}\")\n                break\n        \n        # Check for mismatched display name and email\n   \
+    \     if name and '@' in name:\n            score += 20\n            factors.append(\"Display name contains email address\"\
+    )\n        \n        # Check for lookalike domains\n        domain = email_addr.split('@')[-1]\n        if self._is_lookalike_domain(domain):\n\
+    \            score += 25\n            factors.append(f\"Potential lookalike domain: {domain}\")\n        \n        # Check\
+    \ for excessive subdomains\n        if domain.count('.') > 2:\n            score += 10\n            factors.append(\"\
+    Excessive subdomains in sender domain\")\n        \n        return {\"score\": score, \"factors\": factors}\n    \n  \
+    \  def _is_lookalike_domain(self, domain: str) -> bool:\n        \"\"\"Check if domain is a lookalike of popular services\"\
+    \"\"\n        lookalike_patterns = [\n            r'.*paypa[l1].*',\n            r'.*g[o0][o0]g[l1]e.*',\n           \
+    \ r'.*amazo[n0].*',\n            r'.*micr[o0]s[o0]ft.*',\n            r'.*app[l1]e.*',\n            r'.*faceb[o0][o0]k.*',\n\
+    \            r'.*netf[l1]ix.*',\n            r'.*bank.*'\n        ]\n        \n        for pattern in lookalike_patterns:\n\
+    \            if re.match(pattern, domain, re.IGNORECASE):\n                # Check if it's actually the legitimate domain\n\
+    \                legitimate = ['paypal.com', 'google.com', 'amazon.com', 'microsoft.com', \n                         \
+    \   'apple.com', 'facebook.com', 'netflix.com']\n                if domain not in legitimate:\n                    return\
+    \ True\n        \n        return False\n    \n    def _analyze_subject(self, subject: str) -> Dict[str, Any]:\n      \
+    \  \"\"\"Analyze email subject\"\"\"\n        score = 0\n        factors = []\n        \n        subject_lower = subject.lower()\n\
+    \        \n        # Check for suspicious keywords\n        keyword_count = sum(1 for keyword in self.suspicious_keywords\
+    \ if keyword in subject_lower)\n        if keyword_count >= 3:\n            score += 20\n            factors.append(f\"\
+    Multiple suspicious keywords in subject ({keyword_count})\")\n        elif keyword_count >= 1:\n            score += 10\n\
+    \            factors.append(\"Suspicious keywords in subject\")\n        \n        # Check for urgency indicators\n  \
+    \      urgency_words = ['urgent', 'immediate', 'asap', 'now', 'today', 'expire']\n        if any(word in subject_lower\
+    \ for word in urgency_words):\n            score += 15\n            factors.append(\"Urgency indicators in subject\")\n\
+    \        \n        # Check for excessive punctuation\n        if subject.count('!') >= 2 or subject.count('?') >= 2:\n\
+    \            score += 10\n            factors.append(\"Excessive punctuation in subject\")\n        \n        # Check\
+    \ for all caps\n        if subject.isupper() and len(subject) > 10:\n            score += 10\n            factors.append(\"\
+    Subject in all caps\")\n        \n        return {\"score\": score, \"factors\": factors}\n    \n    def _analyze_body(self,\
+    \ body: str) -> Dict[str, Any]:\n        \"\"\"Analyze email body\"\"\"\n        score = 0\n        factors = []\n   \
+    \     \n        body_lower = body.lower()\n        \n        # Check for suspicious keywords\n        keyword_count =\
+    \ sum(1 for keyword in self.suspicious_keywords if keyword in body_lower)\n        if keyword_count >= 5:\n          \
+    \  score += 15\n            factors.append(f\"Multiple suspicious keywords in body ({keyword_count})\")\n        \n  \
+    \      # Check for urgency and threats\n        threat_phrases = ['account will be closed', 'suspended', 'locked out',\
+    \ 'unauthorized access']\n        if any(phrase in body_lower for phrase in threat_phrases):\n            score += 20\n\
+    \            factors.append(\"Threatening language detected\")\n        \n        # Check for requests for personal information\n\
+    \        personal_info_requests = ['social security', 'ssn', 'credit card', 'password', 'pin', 'account number']\n   \
+    \     if any(request in body_lower for request in personal_info_requests):\n            score += 25\n            factors.append(\"\
+    Requests for sensitive personal information\")\n        \n        # Check for poor grammar/spelling (simplified)\n   \
+    \     if body.count('  ') > 5:  # Multiple double spaces\n            score += 5\n            factors.append(\"Poor formatting\
+    \ detected\")\n        \n        return {\"score\": score, \"factors\": factors}\n    \n    def _analyze_links(self, body:\
+    \ str) -> Dict[str, Any]:\n        \"\"\"Analyze links in email body\"\"\"\n        score = 0\n        factors = []\n\
+    \        \n        # Extract URLs\n        url_pattern = r'https?://[^\\s<>\"{}|\\\\^`\\[\\]]+'\n        urls = re.findall(url_pattern,\
+    \ body)\n        \n        if not urls:\n            return {\"score\": 0, \"factors\": []}\n        \n        # Check\
+    \ for shortened URLs\n        shorteners = ['bit.ly', 'tinyurl.com', 'goo.gl', 't.co', 'ow.ly']\n        shortened_count\
+    \ = sum(1 for url in urls if any(shortener in url for shortener in shorteners))\n        if shortened_count > 0:\n   \
+    \         score += 15\n            factors.append(f\"Contains {shortened_count} shortened URL(s)\")\n        \n      \
+    \  # Check for IP addresses in URLs\n        ip_urls = [url for url in urls if re.search(r'\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\\
+    .\\d{1,3}', url)]\n        if ip_urls:\n            score += 20\n            factors.append(\"URLs contain IP addresses\
+    \ instead of domains\")\n        \n        # Check for suspicious TLDs in URLs\n        for url in urls:\n           \
+    \ for tld in self.suspicious_tlds:\n                if tld in url:\n                    score += 10\n                \
+    \    factors.append(f\"Suspicious TLD in URL: {tld}\")\n                    break\n        \n        # Check for mismatched\
+    \ link text and URL\n        link_pattern = r'<a[^>]+href=[\"\\']([^\"\\']+)[\"\\'][^>]*>([^<]+)</a>'\n        links =\
+    \ re.findall(link_pattern, body, re.IGNORECASE)\n        for href, text in links:\n            if 'http' in text and href\
+    \ not in text:\n                score += 15\n                factors.append(\"Mismatched link text and destination\")\n\
+    \                break\n        \n        return {\"score\": score, \"factors\": factors}\n    \n    def _analyze_authentication(self,\
+    \ auth_results: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Analyze email authentication results\"\"\"\n       \
+    \ score = 0\n        factors = []\n        \n        # Check SPF\n        spf = auth_results.get(\"spf\", {})\n      \
+    \  if spf.get(\"status\") == \"fail\":\n            score += 25\n            factors.append(\"SPF authentication failed\"\
+    )\n        elif spf.get(\"status\") == \"softfail\":\n            score += 15\n            factors.append(\"SPF soft fail\"\
+    )\n        elif spf.get(\"status\") == \"none\":\n            score += 10\n            factors.append(\"No SPF record\"\
+    )\n        \n        # Check DKIM\n        dkim = auth_results.get(\"dkim\", {})\n        if dkim.get(\"status\") == \"\
+    fail\":\n            score += 25\n            factors.append(\"DKIM authentication failed\")\n        elif dkim.get(\"\
+    status\") == \"none\":\n            score += 10\n            factors.append(\"No DKIM signature\")\n        \n       \
+    \ # Check DMARC\n        dmarc = auth_results.get(\"dmarc\", {})\n        if dmarc.get(\"status\") == \"fail\":\n    \
+    \        score += 25\n            factors.append(\"DMARC authentication failed\")\n        elif dmarc.get(\"status\")\
+    \ == \"none\":\n            score += 10\n            factors.append(\"No DMARC policy\")\n        \n        return {\"\
+    score\": score, \"factors\": factors}\n    \n    def _get_recommendation(self, risk_level: str) -> str:\n        \"\"\"\
+    Get recommendation based on risk level\"\"\"\n        recommendations = {\n            \"critical\": \"DO NOT interact\
+    \ with this email. Delete immediately and report as phishing.\",\n            \"high\": \"Exercise extreme caution. Do\
+    \ not click links or provide information. Verify sender through alternative means.\",\n            \"medium\": \"Be cautious.\
+    \ Verify sender identity before taking any action. Do not provide sensitive information.\",\n            \"low\": \"Exercise\
+    \ normal caution. Verify any unusual requests independently.\",\n            \"minimal\": \"Email appears legitimate,\
+    \ but always verify unexpected requests.\"\n        }\n        return recommendations.get(risk_level, \"Unknown risk level\"\
+    )\n    \n    def calculate_sender_reputation(self, domain: str, email_history: List[Dict[str, Any]] = None) -> Dict[str,\
+    \ Any]:\n        \"\"\"Calculate sender reputation score\"\"\"\n        reputation = {\n            \"domain\": domain,\n\
+    \            \"score\": 50,  # Start at neutral\n            \"factors\": [],\n            \"rating\": \"neutral\"\n \
+    \       }\n        \n        # Check domain age (would need WHOIS API in production)\n        # For now, simplified check\n\
+    \        \n        # Check if domain has proper email authentication\n        validator = EmailAuthenticationValidator()\n\
+    \        auth_check = validator.comprehensive_domain_check(domain)\n        \n        if auth_check[\"overall_score\"\
+    ] >= 90:\n            reputation[\"score\"] += 20\n            reputation[\"factors\"].append(\"Strong email authentication\"\
+    )\n        elif auth_check[\"overall_score\"] >= 60:\n            reputation[\"score\"] += 10\n            reputation[\"\
+    factors\"].append(\"Moderate email authentication\")\n        else:\n            reputation[\"score\"] -= 15\n       \
+    \     reputation[\"factors\"].append(\"Weak or missing email authentication\")\n        \n        # Analyze email history\
+    \ if provided\n        if email_history:\n            spam_count = sum(1 for email in email_history if email.get(\"is_spam\"\
+    , False))\n            total_count = len(email_history)\n            \n            if total_count > 0:\n             \
+    \   spam_rate = spam_count / total_count\n                if spam_rate > 0.5:\n                    reputation[\"score\"\
+    ] -= 30\n                    reputation[\"factors\"].append(f\"High spam rate: {spam_rate:.1%}\")\n                elif\
+    \ spam_rate > 0.2:\n                    reputation[\"score\"] -= 15\n                    reputation[\"factors\"].append(f\"\
+    Moderate spam rate: {spam_rate:.1%}\")\n                else:\n                    reputation[\"score\"] += 10\n     \
+    \               reputation[\"factors\"].append(f\"Low spam rate: {spam_rate:.1%}\")\n        \n        # Determine rating\n\
+    \        if reputation[\"score\"] >= 80:\n            reputation[\"rating\"] = \"excellent\"\n        elif reputation[\"\
+    score\"] >= 60:\n            reputation[\"rating\"] = \"good\"\n        elif reputation[\"score\"] >= 40:\n          \
+    \  reputation[\"rating\"] = \"neutral\"\n        elif reputation[\"score\"] >= 20:\n            reputation[\"rating\"\
+    ] = \"poor\"\n        else:\n            reputation[\"rating\"] = \"bad\"\n        \n        return reputation\n\n\n#\
+    \ ============================================================================\n# AUTO-REPLY & LLM INTEGRATION\n# ============================================================================\n\
+    \nclass AutoReplySystem:\n    \"\"\"Intelligent auto-reply generation using LLM\"\"\"\n    \n    def __init__(self, openrouter_api_key:\
+    \ str = None):\n        self.api_key = openrouter_api_key or os.getenv(\"OPENROUTER_API_KEY\")\n        self.api_url =\
+    \ \"https://openrouter.ai/api/v1/chat/completions\"\n        self.templates = {}\n        self.rules = []\n    \n    def\
+    \ generate_llm_reply(self, email_content: str, context: Dict[str, Any] = None,\n                          model: str =\
+    \ \"anthropic/claude-3.5-sonnet\") -> Dict[str, Any]:\n        \"\"\"Generate intelligent auto-reply using LLM\"\"\"\n\
+    \        if not self.api_key:\n            return {\"success\": False, \"error\": \"OpenRouter API key not configured\"\
+    }\n        \n        # Build context-aware prompt\n        prompt = self._build_reply_prompt(email_content, context)\n\
+    \        \n        try:\n            response = requests.post(\n                self.api_url,\n                headers={\n\
+    \                    \"Authorization\": f\"Bearer {self.api_key}\",\n                    \"Content-Type\": \"application/json\"\
+    \n                },\n                json={\n                    \"model\": model,\n                    \"messages\"\
+    : [\n                        {\"role\": \"system\", \"content\": \"You are a professional email assistant. Generate appropriate,\
+    \ concise email replies.\"},\n                        {\"role\": \"user\", \"content\": prompt}\n                    ],\n\
+    \                    \"max_tokens\": 500,\n                    \"temperature\": 0.7\n                },\n            \
+    \    timeout=30\n            )\n            \n            if response.status_code == 200:\n                data = response.json()\n\
+    \                reply_text = data[\"choices\"][0][\"message\"][\"content\"]\n                \n                return\
+    \ {\n                    \"success\": True,\n                    \"reply\": reply_text,\n                    \"model\"\
+    : model,\n                    \"tokens_used\": data.get(\"usage\", {}).get(\"total_tokens\", 0)\n                }\n \
+    \           else:\n                return {\n                    \"success\": False,\n                    \"error\": f\"\
+    API error: {response.status_code}\",\n                    \"details\": response.text\n                }\n        \n  \
+    \      except Exception as e:\n            return {\"success\": False, \"error\": str(e)}\n    \n    def _build_reply_prompt(self,\
+    \ email_content: str, context: Dict[str, Any] = None) -> str:\n        \"\"\"Build context-aware prompt for LLM\"\"\"\n\
+    \        prompt = f\"Generate a professional email reply to the following email:\\n\\n{email_content}\\n\\n\"\n      \
+    \  \n        if context:\n            if context.get(\"sender_name\"):\n                prompt += f\"Sender name: {context['sender_name']}\\\
+    n\"\n            if context.get(\"relationship\"):\n                prompt += f\"Relationship: {context['relationship']}\\\
+    n\"\n            if context.get(\"tone\"):\n                prompt += f\"Desired tone: {context['tone']}\\n\"\n      \
+    \      if context.get(\"key_points\"):\n                prompt += f\"Key points to address: {', '.join(context['key_points'])}\\\
+    n\"\n            if context.get(\"previous_conversation\"):\n                prompt += f\"Previous conversation context:\
+    \ {context['previous_conversation']}\\n\"\n        \n        prompt += \"\\nGenerate a concise, professional reply. Do\
+    \ not include subject line or signature.\"\n        \n        return prompt\n    \n    def add_template(self, template_id:\
+    \ str, template: str, variables: List[str] = None):\n        \"\"\"Add auto-reply template\"\"\"\n        self.templates[template_id]\
+    \ = {\n            \"template\": template,\n            \"variables\": variables or []\n        }\n    \n    def generate_template_reply(self,\
+    \ template_id: str, variables: Dict[str, str] = None) -> str:\n        \"\"\"Generate reply from template\"\"\"\n    \
+    \    if template_id not in self.templates:\n            raise ValueError(f\"Template {template_id} not found\")\n    \
+    \    \n        template_data = self.templates[template_id]\n        reply = template_data[\"template\"]\n        \n  \
+    \      if variables:\n            for var_name, var_value in variables.items():\n                reply = reply.replace(f\"\
+    {{{var_name}}}\", var_value)\n        \n        return reply\n    \n    def add_auto_reply_rule(self, rule_id: str, condition:\
+    \ Dict[str, Any], \n                           action: Dict[str, Any], priority: int = 0):\n        \"\"\"Add auto-reply\
+    \ rule\"\"\"\n        rule = {\n            \"id\": rule_id,\n            \"condition\": condition,\n            \"action\"\
+    : action,\n            \"priority\": priority,\n            \"enabled\": True\n        }\n        self.rules.append(rule)\n\
+    \        self.rules.sort(key=lambda x: x[\"priority\"], reverse=True)\n    \n    def evaluate_rules(self, email_data:\
+    \ Dict[str, Any]) -> Optional[Dict[str, Any]]:\n        \"\"\"Evaluate auto-reply rules for an email\"\"\"\n        for\
+    \ rule in self.rules:\n            if not rule[\"enabled\"]:\n                continue\n            \n            if self._check_condition(rule[\"\
+    condition\"], email_data):\n                return rule[\"action\"]\n        \n        return None\n    \n    def _check_condition(self,\
+    \ condition: Dict[str, Any], email_data: Dict[str, Any]) -> bool:\n        \"\"\"Check if condition matches email\"\"\"\
+    \n        condition_type = condition.get(\"type\")\n        \n        if condition_type == \"sender\":\n            sender\
+    \ = email_data.get(\"from\", \"\")\n            return condition[\"value\"] in sender\n        \n        elif condition_type\
+    \ == \"subject_contains\":\n            subject = email_data.get(\"subject\", \"\")\n            return condition[\"value\"\
+    ].lower() in subject.lower()\n        \n        elif condition_type == \"keyword\":\n            body = email_data.get(\"\
+    body\", \"\")\n            return condition[\"value\"].lower() in body.lower()\n        \n        elif condition_type\
+    \ == \"priority\":\n            return email_data.get(\"priority\") == condition[\"value\"]\n        \n        elif condition_type\
+    \ == \"has_attachment\":\n            attachments = email_data.get(\"attachments\", [])\n            return len(attachments)\
+    \ > 0\n        \n        return False\n    \n    def generate_out_of_office(self, start_date: datetime, end_date: datetime,\n\
+    \                               alternate_contact: str = None) -> str:\n        \"\"\"Generate out-of-office auto-reply\"\
+    \"\"\n        reply = f\"Thank you for your email. I am currently out of the office from {start_date.strftime('%B %d,\
+    \ %Y')} to {end_date.strftime('%B %d, %Y')} and will have limited access to email.\\n\\n\"\n        reply += \"I will\
+    \ respond to your message as soon as possible upon my return.\\n\\n\"\n        \n        if alternate_contact:\n     \
+    \       reply += f\"For urgent matters, please contact {alternate_contact}.\\n\\n\"\n        \n        reply += \"Best\
+    \ regards\"\n        \n        return reply\n\n\n# To be continued in Part 2...\n\n\n# ============================================================================\n\
+    # NOTIFICATION SYSTEM\n# ============================================================================\n\nclass EmailNotificationSystem:\n\
+    \    \"\"\"Real-time email notifications and alerts\"\"\"\n    \n    def __init__(self):\n        self.notification_rules\
+    \ = []\n        self.vip_senders = set()\n        self.keyword_alerts = {}\n        self.notification_channels = {}\n\
+    \    \n    def add_vip_sender(self, email_address: str, notification_channel: str = \"push\"):\n        \"\"\"Add VIP\
+    \ sender for priority notifications\"\"\"\n        self.vip_senders.add(email_address.lower())\n        self.notification_channels[email_address.lower()]\
+    \ = notification_channel\n    \n    def remove_vip_sender(self, email_address: str):\n        \"\"\"Remove VIP sender\"\
+    \"\"\n        self.vip_senders.discard(email_address.lower())\n        self.notification_channels.pop(email_address.lower(),\
+    \ None)\n    \n    def add_keyword_alert(self, keyword: str, notification_type: str = \"push\"):\n        \"\"\"Add keyword-triggered\
+    \ notification\"\"\"\n        self.keyword_alerts[keyword.lower()] = notification_type\n    \n    def check_notification_triggers(self,\
+    \ email_data: Dict[str, Any]) -> List[Dict[str, Any]]:\n        \"\"\"Check if email triggers any notifications\"\"\"\n\
+    \        notifications = []\n        \n        sender = email_data.get(\"from\", \"\").lower()\n        subject = email_data.get(\"\
+    subject\", \"\").lower()\n        body = email_data.get(\"body\", \"\").lower()\n        \n        # Check VIP sender\n\
+    \        if any(vip in sender for vip in self.vip_senders):\n            notifications.append({\n                \"type\"\
+    : \"vip_sender\",\n                \"priority\": \"high\",\n                \"message\": f\"New email from VIP: {email_data.get('from')}\"\
+    ,\n                \"channel\": self.notification_channels.get(sender, \"push\")\n            })\n        \n        #\
+    \ Check keyword alerts\n        for keyword, notif_type in self.keyword_alerts.items():\n            if keyword in subject\
+    \ or keyword in body:\n                notifications.append({\n                    \"type\": \"keyword_match\",\n    \
+    \                \"priority\": \"medium\",\n                    \"message\": f\"Email contains keyword: {keyword}\",\n\
+    \                    \"keyword\": keyword,\n                    \"channel\": notif_type\n                })\n        \n\
+    \        # Check for deadline detection\n        deadline = self.detect_deadline(email_data)\n        if deadline:\n \
+    \           notifications.append({\n                \"type\": \"deadline_detected\",\n                \"priority\": \"\
+    high\",\n                \"message\": f\"Deadline detected: {deadline['description']}\",\n                \"deadline\"\
+    : deadline,\n                \"channel\": \"push\"\n            })\n        \n        # Check for urgent indicators\n\
+    \        if self.is_urgent(email_data):\n            notifications.append({\n                \"type\": \"urgent\",\n \
+    \               \"priority\": \"high\",\n                \"message\": \"Urgent email received\",\n                \"channel\"\
+    : \"push\"\n            })\n        \n        return notifications\n    \n    def detect_deadline(self, email_data: Dict[str,\
+    \ Any]) -> Optional[Dict[str, Any]]:\n        \"\"\"Detect deadlines in email content\"\"\"\n        content = f\"{email_data.get('subject',\
+    \ '')} {email_data.get('body', '')}\"\n        \n        # Deadline patterns\n        patterns = [\n            r'deadline[:\\\
+    s]+([A-Za-z]+\\s+\\d{1,2},?\\s+\\d{4})',\n            r'due\\s+(?:by|on)[:\\s]+([A-Za-z]+\\s+\\d{1,2},?\\s+\\d{4})',\n\
+    \            r'by\\s+([A-Za-z]+\\s+\\d{1,2},?\\s+\\d{4})',\n            r'before\\s+([A-Za-z]+\\s+\\d{1,2},?\\s+\\d{4})',\n\
+    \            r'deadline[:\\s]+(\\d{1,2}/\\d{1,2}/\\d{2,4})',\n            r'due[:\\s]+(\\d{1,2}/\\d{1,2}/\\d{2,4})'\n\
+    \        ]\n        \n        for pattern in patterns:\n            match = re.search(pattern, content, re.IGNORECASE)\n\
+    \            if match:\n                date_str = match.group(1)\n                try:\n                    # Try to\
+    \ parse the date\n                    deadline_date = self._parse_date(date_str)\n                    if deadline_date:\n\
+    \                        return {\n                            \"date\": deadline_date.isoformat(),\n                \
+    \            \"description\": date_str,\n                            \"days_until\": (deadline_date - datetime.now()).days\n\
+    \                        }\n                except:\n                    pass\n        \n        return None\n    \n \
+    \   def _parse_date(self, date_str: str) -> Optional[datetime]:\n        \"\"\"Parse date string to datetime\"\"\"\n \
+    \       formats = [\n            \"%B %d, %Y\",\n            \"%B %d %Y\",\n            \"%m/%d/%Y\",\n            \"\
+    %m/%d/%y\",\n            \"%d/%m/%Y\",\n            \"%Y-%m-%d\"\n        ]\n        \n        for fmt in formats:\n \
+    \           try:\n                return datetime.strptime(date_str, fmt)\n            except:\n                continue\n\
+    \        \n        return None\n    \n    def is_urgent(self, email_data: Dict[str, Any]) -> bool:\n        \"\"\"Check\
+    \ if email is urgent\"\"\"\n        urgent_keywords = ['urgent', 'asap', 'immediate', 'critical', 'emergency', 'important']\n\
+    \        \n        subject = email_data.get(\"subject\", \"\").lower()\n        priority = email_data.get(\"priority\"\
+    , \"\").lower()\n        \n        # Check priority header\n        if priority in ['high', 'urgent', '1']:\n        \
+    \    return True\n        \n        # Check for urgent keywords in subject\n        if any(keyword in subject for keyword\
+    \ in urgent_keywords):\n            return True\n        \n        return False\n    \n    def schedule_follow_up_reminder(self,\
+    \ email_id: str, recipient: str, \n                                   days: int = 3) -> Dict[str, Any]:\n        \"\"\"\
+    Schedule follow-up reminder if no reply received\"\"\"\n        reminder_date = datetime.now() + timedelta(days=days)\n\
+    \        \n        reminder = {\n            \"email_id\": email_id,\n            \"recipient\": recipient,\n        \
+    \    \"reminder_date\": reminder_date.isoformat(),\n            \"status\": \"scheduled\",\n            \"type\": \"follow_up\"\
+    \n        }\n        \n        return reminder\n    \n    def generate_digest(self, emails: List[Dict[str, Any]], \n \
+    \                      period: str = \"daily\") -> Dict[str, Any]:\n        \"\"\"Generate email digest notification\"\
+    \"\"\n        digest = {\n            \"period\": period,\n            \"generated_at\": datetime.now().isoformat(),\n\
+    \            \"total_emails\": len(emails),\n            \"unread_count\": sum(1 for e in emails if not e.get(\"read\"\
+    , False)),\n            \"by_sender\": Counter([e.get(\"from\", \"Unknown\") for e in emails]).most_common(10),\n    \
+    \        \"urgent_count\": sum(1 for e in emails if self.is_urgent(e)),\n            \"with_attachments\": sum(1 for e\
+    \ in emails if e.get(\"attachments\")),\n            \"top_subjects\": [e.get(\"subject\", \"No subject\") for e in emails[:10]]\n\
+    \        }\n        \n        return digest\n    \n    def send_webhook_notification(self, webhook_url: str, notification_data:\
+    \ Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Send notification via webhook\"\"\"\n        try:\n            response\
+    \ = requests.post(\n                webhook_url,\n                json=notification_data,\n                headers={\"\
+    Content-Type\": \"application/json\"},\n                timeout=10\n            )\n            \n            return {\n\
+    \                \"success\": response.status_code == 200,\n                \"status_code\": response.status_code,\n \
+    \               \"response\": response.text\n            }\n        except Exception as e:\n            return {\"success\"\
+    : False, \"error\": str(e)}\n\n\n# ============================================================================\n# IN-APP\
+    \ PROGRAMMING & AUTOMATION\n# ============================================================================\n\nclass GmailAppsScriptGenerator:\n\
+    \    \"\"\"Generate Gmail Apps Script for automation\"\"\"\n    \n    def generate_auto_reply_script(self, conditions:\
+    \ Dict[str, Any], \n                                   reply_template: str) -> str:\n        \"\"\"Generate Apps Script\
+    \ for auto-reply\"\"\"\n        script = \"\"\"\nfunction autoReplyToEmails() {\n  var threads = GmailApp.getInboxThreads();\n\
+    \  \n  for (var i = 0; i < threads.length; i++) {\n    var messages = threads[i].getMessages();\n    var lastMessage =\
+    \ messages[messages.length - 1];\n    \n    // Check if already replied\n    if (threads[i].isUnread() && !hasReplied(threads[i]))\
+    \ {\n\"\"\"\n        \n        # Add conditions\n        if conditions.get(\"sender_contains\"):\n            script +=\
+    \ f\"\"\"\n      if (lastMessage.getFrom().indexOf(\"{conditions['sender_contains']}\") !== -1) {{\n\"\"\"\n        \n\
+    \        if conditions.get(\"subject_contains\"):\n            script += f\"\"\"\n      if (lastMessage.getSubject().indexOf(\"\
+    {conditions['subject_contains']}\") !== -1) {{\n\"\"\"\n        \n        # Add reply action\n        script += f\"\"\"\
+    \n        threads[i].reply(\"{reply_template}\");\n        threads[i].markRead();\n\"\"\"\n        \n        # Close conditions\n\
+    \        if conditions.get(\"sender_contains\") or conditions.get(\"subject_contains\"):\n            script += \"   \
+    \   }\\n\"\n        \n        script += \"\"\"\n    }\n  }\n}\n\nfunction hasReplied(thread) {\n  var messages = thread.getMessages();\n\
+    \  var myEmail = Session.getActiveUser().getEmail();\n  \n  for (var i = 0; i < messages.length; i++) {\n    if (messages[i].getFrom().indexOf(myEmail)\
+    \ !== -1) {\n      return true;\n    }\n  }\n  return false;\n}\n\n// Set up trigger to run every 5 minutes\nfunction\
+    \ createTrigger() {\n  ScriptApp.newTrigger('autoReplyToEmails')\n    .timeBased()\n    .everyMinutes(5)\n    .create();\n\
+    }\n\"\"\"\n        \n        return script\n    \n    def generate_label_organizer_script(self, rules: List[Dict[str,\
+    \ Any]]) -> str:\n        \"\"\"Generate Apps Script for automatic labeling\"\"\"\n        script = \"\"\"\nfunction organizeEmailsByLabel()\
+    \ {\n  var threads = GmailApp.getInboxThreads();\n  \n  for (var i = 0; i < threads.length; i++) {\n    var messages =\
+    \ threads[i].getMessages();\n    var lastMessage = messages[messages.length - 1];\n    var subject = lastMessage.getSubject();\n\
+    \    var from = lastMessage.getFrom();\n    var body = lastMessage.getPlainBody();\n    \n\"\"\"\n        \n        for\
+    \ rule in rules:\n            condition = rule.get(\"condition\", {})\n            label_name = rule.get(\"label\", \"\
+    \")\n            \n            script += f\"\"\"\n    // Rule: {rule.get('name', 'Unnamed')}\n    if (\"\"\"\n       \
+    \     \n            conditions = []\n            if condition.get(\"subject_contains\"):\n                conditions.append(f'subject.indexOf(\"\
+    {condition[\"subject_contains\"]}\") !== -1')\n            if condition.get(\"from_contains\"):\n                conditions.append(f'from.indexOf(\"\
+    {condition[\"from_contains\"]}\") !== -1')\n            if condition.get(\"body_contains\"):\n                conditions.append(f'body.indexOf(\"\
+    {condition[\"body_contains\"]}\") !== -1')\n            \n            script += \" && \".join(conditions)\n          \
+    \  script += f\"\"\") {{\n      var label = GmailApp.getUserLabelByName(\"{label_name}\");\n      if (!label) {{\n   \
+    \     label = GmailApp.createLabel(\"{label_name}\");\n      }}\n      threads[i].addLabel(label);\n      threads[i].moveToArchive();\n\
+    \    }}\n\"\"\"\n        \n        script += \"\"\"\n  }\n}\n\n// Set up daily trigger\nfunction createTrigger() {\n \
+    \ ScriptApp.newTrigger('organizeEmailsByLabel')\n    .timeBased()\n    .everyHours(1)\n    .create();\n}\n\"\"\"\n   \
+    \     \n        return script\n    \n    def generate_forwarding_script(self, forward_rules: List[Dict[str, Any]]) ->\
+    \ str:\n        \"\"\"Generate Apps Script for conditional forwarding\"\"\"\n        script = \"\"\"\nfunction forwardEmails()\
+    \ {\n  var threads = GmailApp.getInboxThreads();\n  \n  for (var i = 0; i < threads.length; i++) {\n    var messages =\
+    \ threads[i].getMessages();\n    var lastMessage = messages[messages.length - 1];\n    \n\"\"\"\n        \n        for\
+    \ rule in forward_rules:\n            condition = rule.get(\"condition\", {})\n            forward_to = rule.get(\"forward_to\"\
+    , \"\")\n            \n            script += f\"\"\"\n    // Forward rule: {rule.get('name', 'Unnamed')}\n    if (lastMessage.getFrom().indexOf(\"\
+    {condition.get('from_contains', '')}\") !== -1) {{\n      lastMessage.forward(\"{forward_to}\");\n    }}\n\"\"\"\n   \
+    \     \n        script += \"\"\"\n  }\n}\n\"\"\"\n        \n        return script\n    \n    def deploy_script(self, script_content:\
+    \ str, project_name: str) -> Dict[str, Any]:\n        \"\"\"Deploy Apps Script (requires Google Apps Script API)\"\"\"\
+    \n        # This would use the Google Apps Script API to deploy\n        # For now, return instructions\n        return\
+    \ {\n            \"success\": True,\n            \"script\": script_content,\n            \"instructions\": [\n      \
+    \          \"1. Go to script.google.com\",\n                \"2. Create a new project\",\n                f\"3. Name it\
+    \ '{project_name}'\",\n                \"4. Paste the generated script\",\n                \"5. Run createTrigger() function\
+    \ to set up automation\",\n                \"6. Authorize the script when prompted\"\n            ]\n        }\n\n\nclass\
+    \ OutlookRulesGenerator:\n    \"\"\"Generate Outlook rules via Microsoft Graph API\"\"\"\n    \n    def __init__(self,\
+    \ access_token: str = None):\n        self.access_token = access_token\n        self.graph_api_url = \"https://graph.microsoft.com/v1.0\"\
+    \n    \n    def create_inbox_rule(self, rule_name: str, conditions: Dict[str, Any], \n                         actions:\
+    \ Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Create Outlook inbox rule via Graph API\"\"\"\n        if not self.access_token:\n\
+    \            return {\"success\": False, \"error\": \"Access token not provided\"}\n        \n        rule_payload = {\n\
+    \            \"displayName\": rule_name,\n            \"sequence\": 1,\n            \"isEnabled\": True,\n           \
+    \ \"conditions\": self._build_conditions(conditions),\n            \"actions\": self._build_actions(actions)\n       \
+    \ }\n        \n        try:\n            response = requests.post(\n                f\"{self.graph_api_url}/me/mailFolders/inbox/messageRules\"\
+    ,\n                headers={\n                    \"Authorization\": f\"Bearer {self.access_token}\",\n              \
+    \      \"Content-Type\": \"application/json\"\n                },\n                json=rule_payload,\n              \
+    \  timeout=30\n            )\n            \n            if response.status_code in [200, 201]:\n                return\
+    \ {\n                    \"success\": True,\n                    \"rule_id\": response.json().get(\"id\"),\n         \
+    \           \"rule\": response.json()\n                }\n            else:\n                return {\n              \
+    \      \"success\": False,\n                    \"error\": f\"API error: {response.status_code}\",\n                 \
+    \   \"details\": response.text\n                }\n        \n        except Exception as e:\n            return {\"success\"\
+    : False, \"error\": str(e)}\n    \n    def _build_conditions(self, conditions: Dict[str, Any]) -> Dict[str, Any]:\n  \
+    \      \"\"\"Build conditions for Outlook rule\"\"\"\n        rule_conditions = {}\n        \n        if conditions.get(\"\
+    from_addresses\"):\n            rule_conditions[\"fromAddresses\"] = [\n                {\"emailAddress\": {\"address\"\
+    : addr}} \n                for addr in conditions[\"from_addresses\"]\n            ]\n        \n        if conditions.get(\"\
+    subject_contains\"):\n            rule_conditions[\"subjectContains\"] = conditions[\"subject_contains\"]\n        \n\
+    \        if conditions.get(\"body_contains\"):\n            rule_conditions[\"bodyContains\"] = conditions[\"body_contains\"\
+    ]\n        \n        if conditions.get(\"has_attachments\"):\n            rule_conditions[\"hasAttachments\"] = True\n\
+    \        \n        if conditions.get(\"importance\"):\n            rule_conditions[\"importance\"] = conditions[\"importance\"\
+    ]\n        \n        return rule_conditions\n    \n    def _build_actions(self, actions: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Build actions for Outlook rule\"\"\"\n        rule_actions = {}\n        \n        if actions.get(\"\
+    move_to_folder\"):\n            rule_actions[\"moveToFolder\"] = actions[\"move_to_folder\"]\n        \n        if actions.get(\"\
+    copy_to_folder\"):\n            rule_actions[\"copyToFolder\"] = actions[\"copy_to_folder\"]\n        \n        if actions.get(\"\
+    forward_to\"):\n            rule_actions[\"forwardTo\"] = [\n                {\"emailAddress\": {\"address\": addr}}\n\
+    \                for addr in actions[\"forward_to\"]\n            ]\n        \n        if actions.get(\"mark_as_read\"\
+    ):\n            rule_actions[\"markAsRead\"] = True\n        \n        if actions.get(\"mark_importance\"):\n        \
+    \    rule_actions[\"markImportance\"] = actions[\"mark_importance\"]\n        \n        if actions.get(\"categories\"\
+    ):\n            rule_actions[\"assignCategories\"] = actions[\"categories\"]\n        \n        if actions.get(\"delete\"\
+    ):\n            rule_actions[\"delete\"] = True\n        \n        return rule_actions\n    \n    def list_inbox_rules(self)\
+    \ -> Dict[str, Any]:\n        \"\"\"List all inbox rules\"\"\"\n        if not self.access_token:\n            return\
+    \ {\"success\": False, \"error\": \"Access token not provided\"}\n        \n        try:\n            response = requests.get(\n\
+    \                f\"{self.graph_api_url}/me/mailFolders/inbox/messageRules\",\n                headers={\"Authorization\"\
+    : f\"Bearer {self.access_token}\"},\n                timeout=30\n            )\n            \n            if response.status_code\
+    \ == 200:\n                return {\n                    \"success\": True,\n                    \"rules\": response.json().get(\"\
+    value\", [])\n                }\n            else:\n                return {\n                    \"success\": False,\n\
+    \                    \"error\": f\"API error: {response.status_code}\"\n                }\n        \n        except Exception\
+    \ as e:\n            return {\"success\": False, \"error\": str(e)}\n    \n    def delete_inbox_rule(self, rule_id: str)\
+    \ -> Dict[str, Any]:\n        \"\"\"Delete inbox rule\"\"\"\n        if not self.access_token:\n            return {\"\
+    success\": False, \"error\": \"Access token not provided\"}\n        \n        try:\n            response = requests.delete(\n\
+    \                f\"{self.graph_api_url}/me/mailFolders/inbox/messageRules/{rule_id}\",\n                headers={\"Authorization\"\
+    : f\"Bearer {self.access_token}\"},\n                timeout=30\n            )\n            \n            return {\n \
+    \               \"success\": response.status_code == 204,\n                \"status_code\": response.status_code\n   \
+    \         }\n        \n        except Exception as e:\n            return {\"success\": False, \"error\": str(e)}\n\n\n\
+    class EmailWorkflowBuilder:\n    \"\"\"Build complex email workflows with if-then rules\"\"\"\n    \n    def __init__(self):\n\
+    \        self.workflows = {}\n    \n    def create_workflow(self, workflow_id: str, name: str, \n                    \
+    \   triggers: List[Dict[str, Any]], \n                       actions: List[Dict[str, Any]]) -> Dict[str, Any]:\n     \
+    \   \"\"\"Create email workflow\"\"\"\n        workflow = {\n            \"id\": workflow_id,\n            \"name\": name,\n\
+    \            \"triggers\": triggers,\n            \"actions\": actions,\n            \"enabled\": True,\n            \"\
+    created_at\": datetime.now().isoformat(),\n            \"execution_count\": 0\n        }\n        \n        self.workflows[workflow_id]\
+    \ = workflow\n        return workflow\n    \n    def execute_workflow(self, workflow_id: str, email_data: Dict[str, Any])\
+    \ -> Dict[str, Any]:\n        \"\"\"Execute workflow for an email\"\"\"\n        if workflow_id not in self.workflows:\n\
+    \            return {\"success\": False, \"error\": \"Workflow not found\"}\n        \n        workflow = self.workflows[workflow_id]\n\
+    \        \n        if not workflow[\"enabled\"]:\n            return {\"success\": False, \"error\": \"Workflow is disabled\"\
+    }\n        \n        # Check triggers\n        triggered = False\n        for trigger in workflow[\"triggers\"]:\n   \
+    \         if self._evaluate_trigger(trigger, email_data):\n                triggered = True\n                break\n \
+    \       \n        if not triggered:\n            return {\"success\": False, \"reason\": \"No triggers matched\"}\n  \
+    \      \n        # Execute actions\n        results = []\n        for action in workflow[\"actions\"]:\n            result\
+    \ = self._execute_action(action, email_data)\n            results.append(result)\n        \n        workflow[\"execution_count\"\
+    ] += 1\n        \n        return {\n            \"success\": True,\n            \"workflow_id\": workflow_id,\n      \
+    \      \"actions_executed\": len(results),\n            \"results\": results\n        }\n    \n    def _evaluate_trigger(self,\
+    \ trigger: Dict[str, Any], email_data: Dict[str, Any]) -> bool:\n        \"\"\"Evaluate if trigger condition is met\"\"\
+    \"\n        trigger_type = trigger.get(\"type\")\n        \n        if trigger_type == \"sender_is\":\n            return\
+    \ trigger[\"value\"] in email_data.get(\"from\", \"\")\n        \n        elif trigger_type == \"subject_contains\":\n\
+    \            return trigger[\"value\"].lower() in email_data.get(\"subject\", \"\").lower()\n        \n        elif trigger_type\
+    \ == \"has_attachment\":\n            return len(email_data.get(\"attachments\", [])) > 0\n        \n        elif trigger_type\
+    \ == \"body_contains\":\n            return trigger[\"value\"].lower() in email_data.get(\"body\", \"\").lower()\n   \
+    \     \n        elif trigger_type == \"received_time\":\n            # Check if email received within time window\n  \
+    \          return True  # Simplified\n        \n        return False\n    \n    def _execute_action(self, action: Dict[str,\
+    \ Any], email_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute workflow action\"\"\"\n        action_type\
+    \ = action.get(\"type\")\n        \n        if action_type == \"send_reply\":\n            return {\n                \"\
+    action\": \"send_reply\",\n                \"status\": \"simulated\",\n                \"reply_text\": action.get(\"reply_template\"\
+    )\n            }\n        \n        elif action_type == \"forward\":\n            return {\n                \"action\"\
+    : \"forward\",\n                \"status\": \"simulated\",\n                \"forward_to\": action.get(\"forward_to\"\
+    )\n            }\n        \n        elif action_type == \"add_label\":\n            return {\n                \"action\"\
+    : \"add_label\",\n                \"status\": \"simulated\",\n                \"label\": action.get(\"label\")\n     \
+    \       }\n        \n        elif action_type == \"move_to_folder\":\n            return {\n                \"action\"\
+    : \"move_to_folder\",\n                \"status\": \"simulated\",\n                \"folder\": action.get(\"folder\")\n\
+    \            }\n        \n        elif action_type == \"send_notification\":\n            return {\n                \"\
+    action\": \"send_notification\",\n                \"status\": \"simulated\",\n                \"notification_type\": action.get(\"\
+    notification_type\")\n            }\n        \n        return {\"action\": action_type, \"status\": \"unknown\"}\n\n\n\
+    # ============================================================================\n# SCHEDULED EMAIL SENDING & MAIL MERGE\n\
+    # ============================================================================\n\nclass ScheduledEmailSender:\n    \"\"\
+    \"Schedule emails for future sending\"\"\"\n    \n    def __init__(self):\n        self.scheduled_emails = {}\n    \n\
+    \    def schedule_email(self, email_id: str, recipient: str, subject: str,\n                      body: str, send_at:\
+    \ datetime, attachments: List[str] = None) -> Dict[str, Any]:\n        \"\"\"Schedule email for future sending\"\"\"\n\
+    \        scheduled = {\n            \"id\": email_id,\n            \"recipient\": recipient,\n            \"subject\"\
+    : subject,\n            \"body\": body,\n            \"send_at\": send_at.isoformat(),\n            \"attachments\": attachments\
+    \ or [],\n            \"status\": \"scheduled\",\n            \"created_at\": datetime.now().isoformat()\n        }\n\
+    \        \n        self.scheduled_emails[email_id] = scheduled\n        return scheduled\n    \n    def cancel_scheduled_email(self,\
+    \ email_id: str) -> Dict[str, Any]:\n        \"\"\"Cancel scheduled email\"\"\"\n        if email_id not in self.scheduled_emails:\n\
+    \            return {\"success\": False, \"error\": \"Email not found\"}\n        \n        email = self.scheduled_emails[email_id]\n\
+    \        if email[\"status\"] == \"sent\":\n            return {\"success\": False, \"error\": \"Email already sent\"\
+    }\n        \n        email[\"status\"] = \"cancelled\"\n        return {\"success\": True, \"email\": email}\n    \n \
+    \   def get_pending_emails(self) -> List[Dict[str, Any]]:\n        \"\"\"Get all pending scheduled emails\"\"\"\n    \
+    \    now = datetime.now()\n        pending = []\n        \n        for email_id, email in self.scheduled_emails.items():\n\
+    \            if email[\"status\"] == \"scheduled\":\n                send_at = datetime.fromisoformat(email[\"send_at\"\
+    ])\n                if send_at <= now:\n                    pending.append(email)\n        \n        return pending\n\
+    \    \n    def send_scheduled_email(self, email_id: str, smtp_config: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\
+    \"Send a scheduled email (would use actual SMTP in production)\"\"\"\n        if email_id not in self.scheduled_emails:\n\
+    \            return {\"success\": False, \"error\": \"Email not found\"}\n        \n        email = self.scheduled_emails[email_id]\n\
+    \        \n        # In production, would actually send via SMTP\n        email[\"status\"] = \"sent\"\n        email[\"\
+    sent_at\"] = datetime.now().isoformat()\n        \n        return {\"success\": True, \"email\": email}\n\n\nclass MailMergeSystem:\n\
+    \    \"\"\"Mail merge functionality for bulk personalized emails\"\"\"\n    \n    def __init__(self):\n        self.templates\
+    \ = {}\n        self.merge_jobs = {}\n    \n    def create_template(self, template_id: str, subject: str, body: str,\n\
+    \                       variables: List[str]) -> Dict[str, Any]:\n        \"\"\"Create mail merge template\"\"\"\n   \
+    \     template = {\n            \"id\": template_id,\n            \"subject\": subject,\n            \"body\": body,\n\
+    \            \"variables\": variables,\n            \"created_at\": datetime.now().isoformat()\n        }\n        \n\
+    \        self.templates[template_id] = template\n        return template\n    \n    def merge_and_generate(self, template_id:\
+    \ str, \n                          recipients: List[Dict[str, Any]]) -> List[Dict[str, Any]]:\n        \"\"\"Generate\
+    \ personalized emails from template and recipient data\"\"\"\n        if template_id not in self.templates:\n        \
+    \    raise ValueError(f\"Template {template_id} not found\")\n        \n        template = self.templates[template_id]\n\
+    \        generated_emails = []\n        \n        for recipient in recipients:\n            # Merge variables\n      \
+    \      subject = template[\"subject\"]\n            body = template[\"body\"]\n            \n            for var in template[\"\
+    variables\"]:\n                placeholder = f\"{{{var}}}\"\n                value = recipient.get(var, \"\")\n      \
+    \          subject = subject.replace(placeholder, str(value))\n                body = body.replace(placeholder, str(value))\n\
+    \            \n            generated_emails.append({\n                \"recipient\": recipient.get(\"email\", \"\"),\n\
+    \                \"subject\": subject,\n                \"body\": body,\n                \"variables_used\": recipient\n\
+    \            })\n        \n        return generated_emails\n    \n    def execute_mail_merge(self, template_id: str, recipients:\
+    \ List[Dict[str, Any]],\n                          smtp_config: Dict[str, Any] = None) -> Dict[str, Any]:\n        \"\"\
+    \"Execute mail merge campaign\"\"\"\n        job_id = hashlib.sha256(f\"{template_id}:{time.time()}\".encode()).hexdigest()\n\
+    \        \n        generated_emails = self.merge_and_generate(template_id, recipients)\n        \n        job = {\n  \
+    \          \"id\": job_id,\n            \"template_id\": template_id,\n            \"total_recipients\": len(recipients),\n\
+    \            \"generated_at\": datetime.now().isoformat(),\n            \"status\": \"generated\",\n            \"emails\"\
+    : generated_emails\n        }\n        \n        self.merge_jobs[job_id] = job\n        \n        # In production, would\
+    \ send emails via SMTP\n        job[\"status\"] = \"completed\"\n        job[\"sent_count\"] = len(generated_emails)\n\
+    \        \n        return job\n\n\n# To be continued in Part 3...\n\n\n# ============================================================================\n\
+    # PGP/GPG ENCRYPTION & SECURITY\n# ============================================================================\n\nclass\
+    \ EmailEncryptionSystem:\n    \"\"\"PGP/GPG email encryption and decryption\"\"\"\n    \n    def __init__(self, gpg_home:\
+    \ str = None):\n        if not GPG_AVAILABLE:\n            raise ImportError(\"python-gnupg not installed. Install with:\
+    \ pip install python-gnupg\")\n        \n        self.gpg = gnupg.GPG(gnupghome=gpg_home)\n    \n    def generate_key_pair(self,\
+    \ name: str, email: str, \n                         passphrase: str, key_type: str = \"RSA\",\n                      \
+    \   key_length: int = 4096) -> Dict[str, Any]:\n        \"\"\"Generate PGP key pair\"\"\"\n        input_data = self.gpg.gen_key_input(\n\
+    \            name_real=name,\n            name_email=email,\n            passphrase=passphrase,\n            key_type=key_type,\n\
+    \            key_length=key_length\n        )\n        \n        key = self.gpg.gen_key(input_data)\n        \n      \
+    \  if key:\n            return {\n                \"success\": True,\n                \"fingerprint\": str(key),\n   \
+    \             \"public_key\": self.export_public_key(str(key)),\n                \"key_id\": str(key)\n            }\n\
+    \        else:\n            return {\"success\": False, \"error\": \"Failed to generate key\"}\n    \n    def import_key(self,\
+    \ key_data: str) -> Dict[str, Any]:\n        \"\"\"Import PGP key\"\"\"\n        result = self.gpg.import_keys(key_data)\n\
+    \        \n        return {\n            \"success\": result.count > 0,\n            \"count\": result.count,\n      \
+    \      \"fingerprints\": result.fingerprints,\n            \"results\": result.results\n        }\n    \n    def export_public_key(self,\
+    \ key_id: str) -> str:\n        \"\"\"Export public key\"\"\"\n        return self.gpg.export_keys(key_id)\n    \n   \
+    \ def export_private_key(self, key_id: str, passphrase: str) -> str:\n        \"\"\"Export private key\"\"\"\n       \
+    \ return self.gpg.export_keys(key_id, secret=True, passphrase=passphrase)\n    \n    def encrypt_message(self, message:\
+    \ str, recipient_key_id: str) -> Dict[str, Any]:\n        \"\"\"Encrypt message for recipient\"\"\"\n        encrypted\
+    \ = self.gpg.encrypt(message, recipient_key_id)\n        \n        if encrypted.ok:\n            return {\n          \
+    \      \"success\": True,\n                \"encrypted_message\": str(encrypted),\n                \"status\": encrypted.status\n\
+    \            }\n        else:\n            return {\n                \"success\": False,\n                \"error\": encrypted.status,\n\
+    \                \"stderr\": encrypted.stderr\n            }\n    \n    def decrypt_message(self, encrypted_message: str,\
+    \ passphrase: str) -> Dict[str, Any]:\n        \"\"\"Decrypt encrypted message\"\"\"\n        decrypted = self.gpg.decrypt(encrypted_message,\
+    \ passphrase=passphrase)\n        \n        if decrypted.ok:\n            return {\n                \"success\": True,\n\
+    \                \"decrypted_message\": str(decrypted),\n                \"key_id\": decrypted.key_id,\n             \
+    \   \"username\": decrypted.username\n            }\n        else:\n            return {\n                \"success\"\
+    : False,\n                \"error\": decrypted.status,\n                \"stderr\": decrypted.stderr\n            }\n\
+    \    \n    def sign_message(self, message: str, key_id: str, passphrase: str) -> Dict[str, Any]:\n        \"\"\"Sign message\
+    \ with private key\"\"\"\n        signed = self.gpg.sign(message, keyid=key_id, passphrase=passphrase)\n        \n   \
+    \     if signed:\n            return {\n                \"success\": True,\n                \"signed_message\": str(signed),\n\
+    \                \"key_id\": signed.key_id\n            }\n        else:\n            return {\"success\": False, \"error\"\
+    : \"Failed to sign message\"}\n    \n    def verify_signature(self, signed_message: str) -> Dict[str, Any]:\n        \"\
+    \"\"Verify message signature\"\"\"\n        verified = self.gpg.verify(signed_message)\n        \n        return {\n \
+    \           \"valid\": verified.valid,\n            \"key_id\": verified.key_id,\n            \"username\": verified.username,\n\
+    \            \"signature_id\": verified.signature_id,\n            \"fingerprint\": verified.fingerprint,\n          \
+    \  \"trust_level\": verified.trust_text\n        }\n    \n    def encrypt_and_sign(self, message: str, recipient_key_id:\
+    \ str,\n                        signer_key_id: str, passphrase: str) -> Dict[str, Any]:\n        \"\"\"Encrypt and sign\
+    \ message\"\"\"\n        encrypted = self.gpg.encrypt(\n            message,\n            recipient_key_id,\n        \
+    \    sign=signer_key_id,\n            passphrase=passphrase\n        )\n        \n        if encrypted.ok:\n         \
+    \   return {\n                \"success\": True,\n                \"encrypted_signed_message\": str(encrypted),\n    \
+    \            \"status\": encrypted.status\n            }\n        else:\n            return {\n                \"success\"\
+    : False,\n                \"error\": encrypted.status,\n                \"stderr\": encrypted.stderr\n            }\n\
+    \    \n    def list_keys(self, secret: bool = False) -> List[Dict[str, Any]]:\n        \"\"\"List all keys\"\"\"\n   \
+    \     keys = self.gpg.list_keys(secret=secret)\n        return [\n            {\n                \"keyid\": key[\"keyid\"\
+    ],\n                \"fingerprint\": key[\"fingerprint\"],\n                \"uids\": key[\"uids\"],\n               \
+    \ \"length\": key[\"length\"],\n                \"algo\": key[\"algo\"],\n                \"created\": key[\"date\"],\n\
+    \                \"expires\": key[\"expires\"]\n            }\n            for key in keys\n        ]\n\n\n# ============================================================================\n\
+    # EMAIL ARCHIVAL & COMPLIANCE\n# ============================================================================\n\nclass\
+    \ EmailArchivalSystem:\n    \"\"\"Email archival, retention, and compliance management\"\"\"\n    \n    def __init__(self,\
+    \ archive_path: str = \"/var/email_archive\"):\n        self.archive_path = archive_path\n        self.retention_policies\
+    \ = {}\n        self.legal_holds = {}\n    \n    def archive_email(self, email_data: Dict[str, Any], \n              \
+    \       metadata: Dict[str, Any] = None) -> Dict[str, Any]:\n        \"\"\"Archive email with metadata\"\"\"\n       \
+    \ email_id = email_data.get(\"message_id\") or hashlib.sha256(\n            f\"{email_data.get('from')}:{email_data.get('subject')}:{time.time()}\"\
+    .encode()\n        ).hexdigest()\n        \n        archive_entry = {\n            \"id\": email_id,\n            \"archived_at\"\
+    : datetime.now().isoformat(),\n            \"email_data\": email_data,\n            \"metadata\": metadata or {},\n  \
+    \          \"retention_policy\": None,\n            \"legal_hold\": False\n        }\n        \n        # In production,\
+    \ would save to disk/database\n        return {\n            \"success\": True,\n            \"archive_id\": email_id,\n\
+    \            \"archive_path\": f\"{self.archive_path}/{email_id}.json\"\n        }\n    \n    def create_retention_policy(self,\
+    \ policy_id: str, name: str,\n                               retention_days: int, action: str = \"delete\") -> Dict[str,\
+    \ Any]:\n        \"\"\"Create email retention policy\"\"\"\n        policy = {\n            \"id\": policy_id,\n     \
+    \       \"name\": name,\n            \"retention_days\": retention_days,\n            \"action\": action,  # delete, archive,\
+    \ move\n            \"created_at\": datetime.now().isoformat(),\n            \"enabled\": True\n        }\n        \n\
+    \        self.retention_policies[policy_id] = policy\n        return policy\n    \n    def apply_retention_policy(self,\
+    \ email_id: str, policy_id: str) -> Dict[str, Any]:\n        \"\"\"Apply retention policy to email\"\"\"\n        if policy_id\
+    \ not in self.retention_policies:\n            return {\"success\": False, \"error\": \"Policy not found\"}\n        \n\
+    \        # In production, would update email record\n        return {\n            \"success\": True,\n            \"\
+    email_id\": email_id,\n            \"policy_id\": policy_id,\n            \"expires_at\": (datetime.now() + timedelta(\n\
+    \                days=self.retention_policies[policy_id][\"retention_days\"]\n            )).isoformat()\n        }\n\
+    \    \n    def place_legal_hold(self, hold_id: str, email_ids: List[str],\n                        reason: str, custodian:\
+    \ str) -> Dict[str, Any]:\n        \"\"\"Place legal hold on emails\"\"\"\n        hold = {\n            \"id\": hold_id,\n\
+    \            \"email_ids\": email_ids,\n            \"reason\": reason,\n            \"custodian\": custodian,\n     \
+    \       \"placed_at\": datetime.now().isoformat(),\n            \"released_at\": None,\n            \"status\": \"active\"\
+    \n        }\n        \n        self.legal_holds[hold_id] = hold\n        \n        return {\n            \"success\":\
+    \ True,\n            \"hold_id\": hold_id,\n            \"emails_affected\": len(email_ids)\n        }\n    \n    def\
+    \ release_legal_hold(self, hold_id: str) -> Dict[str, Any]:\n        \"\"\"Release legal hold\"\"\"\n        if hold_id\
+    \ not in self.legal_holds:\n            return {\"success\": False, \"error\": \"Hold not found\"}\n        \n       \
+    \ hold = self.legal_holds[hold_id]\n        hold[\"status\"] = \"released\"\n        hold[\"released_at\"] = datetime.now().isoformat()\n\
+    \        \n        return {\"success\": True, \"hold\": hold}\n    \n    def export_for_ediscovery(self, search_criteria:\
+    \ Dict[str, Any],\n                             export_format: str = \"pst\") -> Dict[str, Any]:\n        \"\"\"Export\
+    \ emails for eDiscovery\"\"\"\n        # In production, would search archive and export\n        export_id = hashlib.sha256(f\"\
+    {time.time()}\".encode()).hexdigest()\n        \n        return {\n            \"success\": True,\n            \"export_id\"\
+    : export_id,\n            \"format\": export_format,\n            \"criteria\": search_criteria,\n            \"export_path\"\
+    : f\"{self.archive_path}/exports/{export_id}.{export_format}\",\n            \"created_at\": datetime.now().isoformat()\n\
+    \        }\n\n\n# ============================================================================\n# SPAM ANALYSIS & BULK\
+    \ OPERATIONS\n# ============================================================================\n\nclass SpamAnalyzer:\n\
+    \    \"\"\"Analyze and report spam emails\"\"\"\n    \n    def __init__(self):\n        self.spam_patterns = self._load_spam_patterns()\n\
+    \    \n    def _load_spam_patterns(self) -> Dict[str, List[str]]:\n        \"\"\"Load spam detection patterns\"\"\"\n\
+    \        return {\n            \"subject_patterns\": [\n                r'(?i)you.*won',\n                r'(?i)claim.*prize',\n\
+    \                r'(?i)act now',\n                r'(?i)limited time',\n                r'(?i)free money',\n         \
+    \       r'(?i)weight loss',\n                r'(?i)viagra',\n                r'(?i)nigerian prince'\n            ],\n\
+    \            \"body_patterns\": [\n                r'(?i)click here to unsubscribe',\n                r'(?i)this is not\
+    \ spam',\n                r'(?i)dear friend',\n                r'(?i)urgent business proposal'\n            ]\n      \
+    \  }\n    \n    def analyze_spam_score(self, email_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Calculate spam\
+    \ score for email\"\"\"\n        score = 0\n        indicators = []\n        \n        subject = email_data.get(\"subject\"\
+    , \"\")\n        body = email_data.get(\"body\", \"\")\n        sender = email_data.get(\"from\", \"\")\n        \n  \
+    \      # Check subject patterns\n        for pattern in self.spam_patterns[\"subject_patterns\"]:\n            if re.search(pattern,\
+    \ subject):\n                score += 10\n                indicators.append(f\"Spam pattern in subject: {pattern}\")\n\
+    \        \n        # Check body patterns\n        for pattern in self.spam_patterns[\"body_patterns\"]:\n            if\
+    \ re.search(pattern, body):\n                score += 5\n                indicators.append(f\"Spam pattern in body: {pattern}\"\
+    )\n        \n        # Check authentication\n        auth = email_data.get(\"authentication\", {})\n        if auth.get(\"\
+    spf\", {}).get(\"status\") == \"fail\":\n            score += 20\n            indicators.append(\"SPF check failed\")\n\
+    \        \n        if auth.get(\"dkim\", {}).get(\"status\") == \"fail\":\n            score += 20\n            indicators.append(\"\
+    DKIM check failed\")\n        \n        # Determine classification\n        if score >= 50:\n            classification\
+    \ = \"spam\"\n        elif score >= 30:\n            classification = \"likely_spam\"\n        elif score >= 15:\n   \
+    \         classification = \"suspicious\"\n        else:\n            classification = \"legitimate\"\n        \n    \
+    \    return {\n            \"spam_score\": score,\n            \"classification\": classification,\n            \"indicators\"\
+    : indicators,\n            \"is_spam\": score >= 30\n        }\n    \n    def report_spam(self, email_data: Dict[str,\
+    \ Any], \n                   report_to: str = \"spamcop\") -> Dict[str, Any]:\n        \"\"\"Report spam to abuse reporting\
+    \ service\"\"\"\n        # In production, would submit to actual reporting service\n        report_id = hashlib.sha256(f\"\
+    {time.time()}\".encode()).hexdigest()\n        \n        return {\n            \"success\": True,\n            \"report_id\"\
+    : report_id,\n            \"reported_to\": report_to,\n            \"email_id\": email_data.get(\"message_id\"),\n   \
+    \         \"reported_at\": datetime.now().isoformat()\n        }\n\n\nclass BulkEmailOperations:\n    \"\"\"Bulk email\
+    \ operations and management\"\"\"\n    \n    def __init__(self):\n        self.operations = {}\n    \n    def bulk_delete(self,\
+    \ email_ids: List[str], \n                   criteria: Dict[str, Any] = None) -> Dict[str, Any]:\n        \"\"\"Bulk delete\
+    \ emails\"\"\"\n        operation_id = hashlib.sha256(f\"delete:{time.time()}\".encode()).hexdigest()\n        \n    \
+    \    result = {\n            \"operation_id\": operation_id,\n            \"operation\": \"delete\",\n            \"total_emails\"\
+    : len(email_ids),\n            \"deleted\": len(email_ids),\n            \"failed\": 0,\n            \"timestamp\": datetime.now().isoformat()\n\
+    \        }\n        \n        self.operations[operation_id] = result\n        return result\n    \n    def bulk_move(self,\
+    \ email_ids: List[str], destination_folder: str) -> Dict[str, Any]:\n        \"\"\"Bulk move emails to folder\"\"\"\n\
+    \        operation_id = hashlib.sha256(f\"move:{time.time()}\".encode()).hexdigest()\n        \n        result = {\n \
+    \           \"operation_id\": operation_id,\n            \"operation\": \"move\",\n            \"total_emails\": len(email_ids),\n\
+    \            \"moved\": len(email_ids),\n            \"failed\": 0,\n            \"destination\": destination_folder,\n\
+    \            \"timestamp\": datetime.now().isoformat()\n        }\n        \n        self.operations[operation_id] = result\n\
+    \        return result\n    \n    def bulk_label(self, email_ids: List[str], labels: List[str]) -> Dict[str, Any]:\n \
+    \       \"\"\"Bulk apply labels to emails\"\"\"\n        operation_id = hashlib.sha256(f\"label:{time.time()}\".encode()).hexdigest()\n\
+    \        \n        result = {\n            \"operation_id\": operation_id,\n            \"operation\": \"label\",\n  \
+    \          \"total_emails\": len(email_ids),\n            \"labeled\": len(email_ids),\n            \"failed\": 0,\n \
+    \           \"labels\": labels,\n            \"timestamp\": datetime.now().isoformat()\n        }\n        \n        self.operations[operation_id]\
+    \ = result\n        return result\n    \n    def bulk_mark_read(self, email_ids: List[str]) -> Dict[str, Any]:\n     \
+    \   \"\"\"Bulk mark emails as read\"\"\"\n        operation_id = hashlib.sha256(f\"read:{time.time()}\".encode()).hexdigest()\n\
+    \        \n        result = {\n            \"operation_id\": operation_id,\n            \"operation\": \"mark_read\",\n\
+    \            \"total_emails\": len(email_ids),\n            \"marked\": len(email_ids),\n            \"failed\": 0,\n\
+    \            \"timestamp\": datetime.now().isoformat()\n        }\n        \n        self.operations[operation_id] = result\n\
+    \        return result\n    \n    def bulk_export(self, email_ids: List[str], \n                   export_format: str\
+    \ = \"mbox\") -> Dict[str, Any]:\n        \"\"\"Bulk export emails\"\"\"\n        operation_id = hashlib.sha256(f\"export:{time.time()}\"\
+    .encode()).hexdigest()\n        \n        result = {\n            \"operation_id\": operation_id,\n            \"operation\"\
+    : \"export\",\n            \"total_emails\": len(email_ids),\n            \"exported\": len(email_ids),\n            \"\
+    failed\": 0,\n            \"format\": export_format,\n            \"export_path\": f\"/tmp/export_{operation_id}.{export_format}\"\
+    ,\n            \"timestamp\": datetime.now().isoformat()\n        }\n        \n        self.operations[operation_id] =\
+    \ result\n        return result\n\n\n# ============================================================================\n\
+    # OAUTH TOKEN MANAGEMENT\n# ============================================================================\n\nclass OAuthTokenManager:\n\
+    \    \"\"\"Manage OAuth tokens for email providers\"\"\"\n    \n    def __init__(self):\n        self.tokens = {}\n  \
+    \  \n    def store_token(self, provider: str, user_id: str, \n                   access_token: str, refresh_token: str\
+    \ = None,\n                   expires_in: int = 3600) -> Dict[str, Any]:\n        \"\"\"Store OAuth token\"\"\"\n    \
+    \    token_id = f\"{provider}:{user_id}\"\n        expires_at = datetime.now() + timedelta(seconds=expires_in)\n     \
+    \   \n        token_data = {\n            \"provider\": provider,\n            \"user_id\": user_id,\n            \"access_token\"\
+    : access_token,\n            \"refresh_token\": refresh_token,\n            \"expires_at\": expires_at.isoformat(),\n\
+    \            \"created_at\": datetime.now().isoformat()\n        }\n        \n        self.tokens[token_id] = token_data\n\
+    \        return token_data\n    \n    def get_token(self, provider: str, user_id: str) -> Optional[Dict[str, Any]]:\n\
+    \        \"\"\"Get OAuth token\"\"\"\n        token_id = f\"{provider}:{user_id}\"\n        token_data = self.tokens.get(token_id)\n\
+    \        \n        if not token_data:\n            return None\n        \n        # Check if expired\n        expires_at\
+    \ = datetime.fromisoformat(token_data[\"expires_at\"])\n        if datetime.now() >= expires_at:\n            # Token\
+    \ expired\n            if token_data.get(\"refresh_token\"):\n                # Would refresh token in production\n  \
+    \              return token_data\n            else:\n                return None\n        \n        return token_data\n\
+    \    \n    def refresh_token(self, provider: str, user_id: str,\n                     client_id: str, client_secret: str)\
+    \ -> Dict[str, Any]:\n        \"\"\"Refresh OAuth token\"\"\"\n        token_id = f\"{provider}:{user_id}\"\n        token_data\
+    \ = self.tokens.get(token_id)\n        \n        if not token_data or not token_data.get(\"refresh_token\"):\n       \
+    \     return {\"success\": False, \"error\": \"No refresh token available\"}\n        \n        # In production, would\
+    \ call provider's token refresh endpoint\n        # Simulated response\n        new_access_token = \"new_access_token_\"\
+    \ + hashlib.sha256(\n            f\"{time.time()}\".encode()\n        ).hexdigest()\n        \n        token_data[\"access_token\"\
+    ] = new_access_token\n        token_data[\"expires_at\"] = (datetime.now() + timedelta(hours=1)).isoformat()\n       \
+    \ \n        return {\n            \"success\": True,\n            \"access_token\": new_access_token,\n            \"\
+    expires_at\": token_data[\"expires_at\"]\n        }\n    \n    def revoke_token(self, provider: str, user_id: str) ->\
+    \ Dict[str, Any]:\n        \"\"\"Revoke OAuth token\"\"\"\n        token_id = f\"{provider}:{user_id}\"\n        \n  \
+    \      if token_id in self.tokens:\n            del self.tokens[token_id]\n            return {\"success\": True, \"message\"\
+    : \"Token revoked\"}\n        else:\n            return {\"success\": False, \"error\": \"Token not found\"}\n\n\n# ============================================================================\n\
+    # EMAIL CAMPAIGN AUTOMATION\n# ============================================================================\n\nclass EmailCampaignManager:\n\
+    \    \"\"\"Manage email marketing campaigns\"\"\"\n    \n    def __init__(self):\n        self.campaigns = {}\n      \
+    \  self.tracking = EmailTrackingSystem()\n    \n    def create_campaign(self, campaign_id: str, name: str,\n         \
+    \              subject: str, body: str, \n                       recipients: List[str]) -> Dict[str, Any]:\n        \"\
+    \"\"Create email campaign\"\"\"\n        campaign = {\n            \"id\": campaign_id,\n            \"name\": name,\n\
+    \            \"subject\": subject,\n            \"body\": body,\n            \"recipients\": recipients,\n           \
+    \ \"status\": \"draft\",\n            \"created_at\": datetime.now().isoformat(),\n            \"sent_at\": None,\n  \
+    \          \"stats\": {\n                \"sent\": 0,\n                \"delivered\": 0,\n                \"opened\":\
+    \ 0,\n                \"clicked\": 0,\n                \"bounced\": 0,\n                \"unsubscribed\": 0\n        \
+    \    }\n        }\n        \n        self.campaigns[campaign_id] = campaign\n        return campaign\n    \n    def send_campaign(self,\
+    \ campaign_id: str, \n                     smtp_config: Dict[str, Any] = None) -> Dict[str, Any]:\n        \"\"\"Send\
+    \ email campaign\"\"\"\n        if campaign_id not in self.campaigns:\n            return {\"success\": False, \"error\"\
+    : \"Campaign not found\"}\n        \n        campaign = self.campaigns[campaign_id]\n        \n        if campaign[\"\
+    status\"] == \"sent\":\n            return {\"success\": False, \"error\": \"Campaign already sent\"}\n        \n    \
+    \    # In production, would send emails via SMTP\n        campaign[\"status\"] = \"sent\"\n        campaign[\"sent_at\"\
+    ] = datetime.now().isoformat()\n        campaign[\"stats\"][\"sent\"] = len(campaign[\"recipients\"])\n        campaign[\"\
+    stats\"][\"delivered\"] = len(campaign[\"recipients\"])\n        \n        return {\n            \"success\": True,\n\
+    \            \"campaign_id\": campaign_id,\n            \"recipients_count\": len(campaign[\"recipients\"]),\n       \
+    \     \"sent_at\": campaign[\"sent_at\"]\n        }\n    \n    def get_campaign_stats(self, campaign_id: str) -> Dict[str,\
+    \ Any]:\n        \"\"\"Get campaign statistics\"\"\"\n        if campaign_id not in self.campaigns:\n            return\
+    \ {\"success\": False, \"error\": \"Campaign not found\"}\n        \n        campaign = self.campaigns[campaign_id]\n\
+    \        stats = campaign[\"stats\"]\n        \n        # Calculate rates\n        if stats[\"sent\"] > 0:\n         \
+    \   stats[\"delivery_rate\"] = (stats[\"delivered\"] / stats[\"sent\"]) * 100\n            stats[\"open_rate\"] = (stats[\"\
+    opened\"] / stats[\"delivered\"]) * 100 if stats[\"delivered\"] > 0 else 0\n            stats[\"click_rate\"] = (stats[\"\
+    clicked\"] / stats[\"delivered\"]) * 100 if stats[\"delivered\"] > 0 else 0\n            stats[\"bounce_rate\"] = (stats[\"\
+    bounced\"] / stats[\"sent\"]) * 100\n        \n        return {\n            \"campaign_id\": campaign_id,\n         \
+    \   \"name\": campaign[\"name\"],\n            \"status\": campaign[\"status\"],\n            \"stats\": stats\n     \
+    \   }\n    \n    def add_unsubscribe_link(self, html_content: str, \n                            unsubscribe_url: str)\
+    \ -> str:\n        \"\"\"Add unsubscribe link to email\"\"\"\n        unsubscribe_html = f'''\n<div style=\"text-align:\
+    \ center; font-size: 12px; color: #666; margin-top: 40px; padding: 20px; border-top: 1px solid #ddd;\">\n    <p>If you\
+    \ no longer wish to receive these emails, you can <a href=\"{unsubscribe_url}\" style=\"color: #666;\">unsubscribe here</a>.</p>\n\
+    </div>\n'''\n        \n        if '</body>' in html_content:\n            return html_content.replace('</body>', f'{unsubscribe_html}</body>')\n\
+    \        else:\n            return html_content + unsubscribe_html\n    \n    def process_unsubscribe(self, campaign_id:\
+    \ str, \n                           email_address: str) -> Dict[str, Any]:\n        \"\"\"Process unsubscribe request\"\
+    \"\"\n        if campaign_id not in self.campaigns:\n            return {\"success\": False, \"error\": \"Campaign not\
+    \ found\"}\n        \n        campaign = self.campaigns[campaign_id]\n        \n        if email_address in campaign[\"\
+    recipients\"]:\n            campaign[\"recipients\"].remove(email_address)\n            campaign[\"stats\"][\"unsubscribed\"\
+    ] += 1\n        \n        return {\n            \"success\": True,\n            \"email\": email_address,\n          \
+    \  \"campaign_id\": campaign_id,\n            \"unsubscribed_at\": datetime.now().isoformat()\n        }\n\n\n# ============================================================================\n\
+    # UNIFIED EMAIL TECHNOLOGY EXPERT INTERFACE\n# ============================================================================\n\
+    \nclass EmailTechnologyExpert:\n    \"\"\"Unified interface for all email technology capabilities\"\"\"\n    \n    def\
+    \ __init__(self, config: Dict[str, Any] = None):\n        self.config = config or {}\n        \n        # Initialize all\
+    \ subsystems\n        self.header_analyzer = EmailHeaderAnalyzer()\n        self.auth_validator = EmailAuthenticationValidator()\n\
+    \        self.tracking = EmailTrackingSystem(\n            tracking_domain=self.config.get(\"tracking_domain\", \"track.example.com\"\
+    )\n        )\n        self.phishing_detector = PhishingDetector()\n        self.auto_reply = AutoReplySystem(\n      \
+    \      openrouter_api_key=self.config.get(\"openrouter_api_key\")\n        )\n        self.notifications = EmailNotificationSystem()\n\
+    \        self.gmail_script_gen = GmailAppsScriptGenerator()\n        self.outlook_rules = OutlookRulesGenerator(\n   \
+    \         access_token=self.config.get(\"outlook_access_token\")\n        )\n        self.workflow_builder = EmailWorkflowBuilder()\n\
+    \        self.scheduled_sender = ScheduledEmailSender()\n        self.mail_merge = MailMergeSystem()\n        \n     \
+    \   # Advanced features\n        if GPG_AVAILABLE:\n            self.encryption = EmailEncryptionSystem(\n           \
+    \     gpg_home=self.config.get(\"gpg_home\")\n            )\n        else:\n            self.encryption = None\n     \
+    \   \n        self.archival = EmailArchivalSystem(\n            archive_path=self.config.get(\"archive_path\", \"/var/email_archive\"\
+    )\n        )\n        self.spam_analyzer = SpamAnalyzer()\n        self.bulk_ops = BulkEmailOperations()\n        self.oauth_manager\
+    \ = OAuthTokenManager()\n        self.campaign_manager = EmailCampaignManager()\n    \n    def analyze_email_complete(self,\
+    \ raw_email: Union[str, bytes]) -> Dict[str, Any]:\n        \"\"\"Complete email analysis including forensics, authentication,\
+    \ and phishing detection\"\"\"\n        # Parse and analyze headers\n        forensics = self.header_analyzer.analyze_email_forensics(raw_email)\n\
+    \        \n        # Phishing detection\n        phishing_analysis = self.phishing_detector.analyze_email_for_phishing(forensics)\n\
+    \        \n        # Sender reputation\n        sender_domain = forensics[\"from\"].split(\"@\")[-1] if \"@\" in forensics[\"\
+    from\"] else \"\"\n        reputation = self.phishing_detector.calculate_sender_reputation(sender_domain)\n        \n\
+    \        # Spam analysis\n        spam_analysis = self.spam_analyzer.analyze_spam_score(forensics)\n        \n       \
+    \ return {\n            \"forensics\": forensics,\n            \"phishing_analysis\": phishing_analysis,\n           \
+    \ \"sender_reputation\": reputation,\n            \"spam_analysis\": spam_analysis,\n            \"overall_risk_score\"\
+    : (\n                phishing_analysis[\"risk_score\"] * 0.5 +\n                spam_analysis[\"spam_score\"] * 0.3 +\n\
+    \                (100 - reputation[\"score\"]) * 0.2\n            ),\n            \"recommendation\": phishing_analysis[\"\
+    recommendation\"]\n        }\n    \n    def setup_auto_reply_workflow(self, conditions: Dict[str, Any],\n            \
+    \                      reply_type: str = \"llm\",\n                                  template: str = None) -> Dict[str,\
+    \ Any]:\n        \"\"\"Set up complete auto-reply workflow\"\"\"\n        workflow_id = hashlib.sha256(f\"autoreply:{time.time()}\"\
+    .encode()).hexdigest()\n        \n        # Create workflow\n        triggers = [{\"type\": key, \"value\": value} for\
+    \ key, value in conditions.items()]\n        \n        actions = [{\n            \"type\": \"send_reply\",\n         \
+    \   \"reply_type\": reply_type,\n            \"template\": template\n        }]\n        \n        workflow = self.workflow_builder.create_workflow(\n\
+    \            workflow_id, \"Auto-reply workflow\", triggers, actions\n        )\n        \n        return {\n        \
+    \    \"success\": True,\n            \"workflow_id\": workflow_id,\n            \"workflow\": workflow\n        }\n  \
+    \  \n    def get_capabilities(self) -> Dict[str, Any]:\n        \"\"\"Get all available capabilities\"\"\"\n        return\
+    \ {\n            \"metadata\": SKILL_METADATA,\n            \"subsystems\": {\n                \"header_analysis\": \"\
+    EmailHeaderAnalyzer\",\n                \"authentication\": \"EmailAuthenticationValidator\",\n                \"tracking\"\
+    : \"EmailTrackingSystem\",\n                \"phishing_detection\": \"PhishingDetector\",\n                \"auto_reply\"\
+    : \"AutoReplySystem\",\n                \"notifications\": \"EmailNotificationSystem\",\n                \"gmail_automation\"\
+    : \"GmailAppsScriptGenerator\",\n                \"outlook_automation\": \"OutlookRulesGenerator\",\n                \"\
+    workflows\": \"EmailWorkflowBuilder\",\n                \"scheduling\": \"ScheduledEmailSender\",\n                \"\
+    mail_merge\": \"MailMergeSystem\",\n                \"encryption\": \"EmailEncryptionSystem\" if self.encryption else\
+    \ \"Not available\",\n                \"archival\": \"EmailArchivalSystem\",\n                \"spam_analysis\": \"SpamAnalyzer\"\
+    ,\n                \"bulk_operations\": \"BulkEmailOperations\",\n                \"oauth\": \"OAuthTokenManager\",\n\
+    \                \"campaigns\": \"EmailCampaignManager\"\n            },\n            \"encryption_available\": GPG_AVAILABLE\n\
+    \        }\n\n\n# ============================================================================\n# EXPERT PROMPTS FOR AI\
+    \ AGENT INTEGRATION\n# ============================================================================\n\nEXPERT_PROMPTS\
+    \ = {\n    \"email_forensics\": \"\"\"Analyze the following email for forensic investigation:\nEmail Headers: {headers}\n\
+    Email Body: {body}\n\nProvide detailed analysis including:\n1. Complete routing path with IP geolocation\n2. Authentication\
+    \ results (SPF, DKIM, DMARC, ARC)\n3. Delivery timeline and delays\n4. Suspicious indicators\n5. Sender reputation assessment\n\
+    6. Recommendations for action\"\"\",\n    \n    \"phishing_detection\": \"\"\"Analyze this email for phishing indicators:\n\
+    From: {from}\nSubject: {subject}\nBody: {body}\nLinks: {links}\n\nAssess:\n1. Sender authenticity\n2. Urgency/threat tactics\n\
+    3. Link safety\n4. Request for sensitive information\n5. Overall risk level\n6. User recommendations\"\"\",\n    \n  \
+    \  \"auto_reply_generation\": \"\"\"Generate an appropriate email reply:\nOriginal Email: {email_content}\nSender: {sender}\n\
+    Context: {context}\nTone: {tone}\nKey Points: {key_points}\n\nGenerate a professional, context-aware reply.\"\"\",\n \
+    \   \n    \"campaign_optimization\": \"\"\"Optimize this email campaign:\nSubject: {subject}\nBody: {body}\nTarget Audience:\
+    \ {audience}\nGoal: {goal}\n\nProvide:\n1. Subject line improvements\n2. Body content optimization\n3. Call-to-action\
+    \ enhancement\n4. Personalization suggestions\n5. A/B testing recommendations\"\"\"\n}\n\n\n# ============================================================================\n\
+    # UTILITY FUNCTIONS\n# ============================================================================\n\ndef create_email_expert(config:\
+    \ Dict[str, Any] = None) -> EmailTechnologyExpert:\n    \"\"\"Factory function to create EmailTechnologyExpert instance\"\
+    \"\"\n    return EmailTechnologyExpert(config)\n\n\ndef quick_email_analysis(raw_email: Union[str, bytes]) -> Dict[str,\
+    \ Any]:\n    \"\"\"Quick email analysis without full initialization\"\"\"\n    expert = EmailTechnologyExpert()\n    return\
+    \ expert.analyze_email_complete(raw_email)\n\n\n# Module exports\n__all__ = [\n    'EmailHeaderAnalyzer',\n    'EmailAuthenticationValidator',\n\
+    \    'EmailTrackingSystem',\n    'PhishingDetector',\n    'AutoReplySystem',\n    'EmailNotificationSystem',\n    'GmailAppsScriptGenerator',\n\
+    \    'OutlookRulesGenerator',\n    'EmailWorkflowBuilder',\n    'ScheduledEmailSender',\n    'MailMergeSystem',\n    'EmailEncryptionSystem',\n\
+    \    'EmailArchivalSystem',\n    'SpamAnalyzer',\n    'BulkEmailOperations',\n    'OAuthTokenManager',\n    'EmailCampaignManager',\n\
+    \    'EmailTechnologyExpert',\n    'create_email_expert',\n    'quick_email_analysis',\n    'SKILL_METADATA',\n    'EXPERT_PROMPTS'\n\
+    ]\n"
+examples:
+- description: Load and use the Email Technology Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''email_technology_expert'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

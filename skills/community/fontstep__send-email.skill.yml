@@ -1,0 +1,60 @@
+name: send-email
+title: send-email
+version: 1.0.1
+description: Send emails via SMTP. Configure in ~/.openclaw/openclaw.json under skills.entries.send-email.env.
+metadata:
+  author: fontstep
+  category: Communication
+  tags:
+  - communication
+  - send
+  - email
+  source: clawhub-community
+  clawhub_slug: send-email
+  clawhub_path: fontstep/send-email
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# send-email
+
+    # Source: ClawHub community skill by fontstep
+
+    # Install: clawhub install send-email
+
+    # Path: fontstep/send-email
+
+
+    ## Description
+
+    Send emails via SMTP. Configure in ~/.openclaw/openclaw.json under skills.entries.send-email.env.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - send_email.py
+
+    - send_email.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install send-email
+
+    ```'
+examples:
+- description: Install send-email from ClawHub
+  usage: clawhub install send-email
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: iserv
+title: Iserv
+version: 0.1.0
+description: HTTP client for IServ school platforms. Log in to an IServ instance (e.g. https://grabbe-dt.de) and fetch common
+  student data like unread mail counts, calendar events, files/folders, tasks/exercises, announcements/news, and other IServ
+  modules via HTTP endpoints. Includes best-effort file ops + exer
+metadata:
+  author: finnbusse
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - iserv
+  source: clawhub-community
+  clawhub_slug: iserv
+  clawhub_path: finnbusse/iserv
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Iserv
+
+    # Source: ClawHub community skill by finnbusse
+
+    # Install: clawhub install iserv
+
+    # Path: finnbusse/iserv
+
+
+    ## Description
+
+    HTTP client for IServ school platforms. Log in to an IServ instance (e.g. https://grabbe-dt.de) and fetch common student
+    data like unread mail counts, calendar events, files/folders, tasks/exercises, announcements/news, and other IServ modules
+    via HTTP endpoints. Includes best-effort file ops + exer
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/iserv.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install iserv
+
+    ```'
+examples:
+- description: Install Iserv from ClawHub
+  usage: clawhub install iserv
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: tradingview-screener
+title: TradingView Screener
+version: 1.1.0
+description: Screen markets across 6 asset classes using TradingView data. API pre-filters + pandas computed signals. YAML-driven
+  strategies.
+metadata:
+  author: hiehoo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tradingview
+  - screener
+  source: clawhub-community
+  clawhub_slug: tradingview-screener
+  clawhub_path: hiehoo/tradingview-screener
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TradingView Screener
+
+    # Source: ClawHub community skill by hiehoo
+
+    # Install: clawhub install tradingview-screener
+
+    # Path: hiehoo/tradingview-screener
+
+
+    ## Description
+
+    Screen markets across 6 asset classes using TradingView data. API pre-filters + pandas computed signals. YAML-driven strategies.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - assets/signal-template.yaml
+
+    - references/computed-signals-guide.md
+
+    - references/field-presets.md
+
+    - references/strategy-templates.md
+
+    - references/tvscreener-api-guide.md
+
+    - scripts/requirements.txt
+
+    - scripts/screen.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tradingview-screener
+
+    ```'
+examples:
+- description: Install TradingView Screener from ClawHub
+  usage: clawhub install tradingview-screener
+schema_version: '1.0'

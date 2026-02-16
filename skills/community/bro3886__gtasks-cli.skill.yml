@@ -1,0 +1,67 @@
+name: gtasks-cli
+title: gtasks-cli
+version: 1.0.1
+description: Manage Google Tasks from the command line - view, create, update, delete tasks and task lists. Use when the user
+  asks to interact with Google Tasks, manage to-do items, create task lists, mark tasks complete, or check their Google Tasks.
+metadata:
+  author: bro3886
+  category: Search & Research
+  tags:
+  - search-research
+  - gtasks
+  - cli
+  - bash(gtasks:*)
+  source: clawhub-community
+  clawhub_slug: gtasks-cli
+  clawhub_path: bro3886/gtasks-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(gtasks:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# gtasks-cli
+
+    # Source: ClawHub community skill by bro3886
+
+    # Install: clawhub install gtasks-cli
+
+    # Path: bro3886/gtasks-cli
+
+
+    ## Description
+
+    Manage Google Tasks from the command line - view, create, update, delete tasks and task lists. Use when the user asks
+    to interact with Google Tasks, manage to-do items, create task lists, mark tasks complete, or check their Google Tasks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/ADVANCED.md
+
+    - references/QUICK-REFERENCE.md
+
+
+    ## Allowed Tools
+
+    Bash(gtasks:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gtasks-cli
+
+    ```'
+examples:
+- description: Install gtasks-cli from ClawHub
+  usage: clawhub install gtasks-cli
+schema_version: '1.0'

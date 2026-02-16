@@ -1,0 +1,60 @@
+name: heimdall
+title: Heimdall Security Scanner
+version: 1.0.1
+description: ''
+metadata:
+  author: henrino3
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - heimdall
+  source: clawhub-community
+  clawhub_slug: heimdall
+  clawhub_path: henrino3/heimdall
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Heimdall Security Scanner
+
+    # Source: ClawHub community skill by henrino3
+
+    # Install: clawhub install heimdall
+
+    # Path: henrino3/heimdall
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill-scan.py
+
+    - skill.json
+
+    - scripts/skill-scan.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install heimdall
+
+    ```'
+examples:
+- description: Install Heimdall Security Scanner from ClawHub
+  usage: clawhub install heimdall
+schema_version: '1.0'

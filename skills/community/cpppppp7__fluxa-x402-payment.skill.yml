@@ -1,0 +1,65 @@
+name: fluxa-x402-payment
+title: FluxA Agent Wallet for x402 Resources Payment
+version: 1.0.0
+description: A FluxA Agent Wallet skill that enables agents to request budgets, sign x402 payments, and call paid endpoints
+  autonomously. It walks through the full flow—from mandate creation to X-PAYMENT execution—so agents can perform paid actions
+  without human intervention.
+metadata:
+  author: cpppppp7
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - fluxa
+  - x402
+  - payment
+  source: clawhub-community
+  clawhub_slug: fluxa-x402-payment
+  clawhub_path: cpppppp7/fluxa-x402-payment
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FluxA Agent Wallet for x402 Resources Payment
+
+    # Source: ClawHub community skill by cpppppp7
+
+    # Install: clawhub install fluxa-x402-payment
+
+    # Path: cpppppp7/fluxa-x402-payment
+
+
+    ## Description
+
+    A FluxA Agent Wallet skill that enables agents to request budgets, sign x402 payments, and call paid endpoints autonomously.
+    It walks through the full flow—from mandate creation to X-PAYMENT execution—so agents can perform paid actions without
+    human intervention.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - error-handle.md
+
+    - initialize-agent-id.md
+
+    - scripts/fluxa-cli.bundle.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fluxa-x402-payment
+
+    ```'
+examples:
+- description: Install FluxA Agent Wallet for x402 Resources Payment from ClawHub
+  usage: clawhub install fluxa-x402-payment
+schema_version: '1.0'

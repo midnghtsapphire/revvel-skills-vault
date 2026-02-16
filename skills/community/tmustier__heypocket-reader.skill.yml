@@ -1,0 +1,62 @@
+name: pocket-transcripts
+title: Pocket AI Transcripts
+version: 1.0.0
+description: Read transcripts and summaries from Pocket AI (heypocket.com) recording devices. Use when users want to retrieve,
+  search, or analyze their Pocket recordings, transcripts, summaries, or action items. Triggers on requests involving Pocket
+  device data, conversation transcripts, meeting recordings, or a
+metadata:
+  author: tmustier
+  category: Search & Research
+  tags:
+  - search-research
+  - pocket
+  - transcripts
+  source: clawhub-community
+  clawhub_slug: heypocket-reader
+  clawhub_path: tmustier/heypocket-reader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pocket AI Transcripts
+
+    # Source: ClawHub community skill by tmustier
+
+    # Install: clawhub install heypocket-reader
+
+    # Path: tmustier/heypocket-reader
+
+
+    ## Description
+
+    Read transcripts and summaries from Pocket AI (heypocket.com) recording devices. Use when users want to retrieve, search,
+    or analyze their Pocket recordings, transcripts, summaries, or action items. Triggers on requests involving Pocket device
+    data, conversation transcripts, meeting recordings, or a
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/reader.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install heypocket-reader
+
+    ```'
+examples:
+- description: Install Pocket AI Transcripts from ClawHub
+  usage: clawhub install heypocket-reader
+schema_version: '1.0'

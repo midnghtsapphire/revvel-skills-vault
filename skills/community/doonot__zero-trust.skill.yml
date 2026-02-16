@@ -1,0 +1,58 @@
+name: zero-trust
+title: Zero Trust
+version: 1.0.0
+description: Security-first behavioral guidelines for cautious agent operation. Use this skill for ALL operations involving
+  external resources, installations, credentials, or actions with external effects. Triggers on - any URL/link interaction,
+  package installations, API key handling, sending emails/messages, s
+metadata:
+  author: doonot
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - zero
+  - trust
+  source: clawhub-community
+  clawhub_slug: zero-trust
+  clawhub_path: doonot/zero-trust
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zero Trust
+
+    # Source: ClawHub community skill by doonot
+
+    # Install: clawhub install zero-trust
+
+    # Path: doonot/zero-trust
+
+
+    ## Description
+
+    Security-first behavioral guidelines for cautious agent operation. Use this skill for ALL operations involving external
+    resources, installations, credentials, or actions with external effects. Triggers on - any URL/link interaction, package
+    installations, API key handling, sending emails/messages, s
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zero-trust
+
+    ```'
+examples:
+- description: Install Zero Trust from ClawHub
+  usage: clawhub install zero-trust
+schema_version: '1.0'

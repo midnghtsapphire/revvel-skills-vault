@@ -1,0 +1,62 @@
+name: security-analysis
+title: claw skill security audit
+version: 1.0.0
+description: Conduct comprehensive security audits and vulnerability analysis on codebases. Use when explicitly asked for
+  security analysis, code security review, vulnerability assessment, SAST scanning, or identifying security issues in source
+  code. Covers injection flaws, broken access control, hardcoded secre
+metadata:
+  author: kylehuan
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - analysis
+  source: clawhub-community
+  clawhub_slug: skill-security-audit
+  clawhub_path: kylehuan/skill-security-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# claw skill security audit
+
+    # Source: ClawHub community skill by kylehuan
+
+    # Install: clawhub install skill-security-audit
+
+    # Path: kylehuan/skill-security-audit
+
+
+    ## Description
+
+    Conduct comprehensive security audits and vulnerability analysis on codebases. Use when explicitly asked for security
+    analysis, code security review, vulnerability assessment, SAST scanning, or identifying security issues in source code.
+    Covers injection flaws, broken access control, hardcoded secre
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/prompt-injection-patterns.md
+
+    - references/vulnerability-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-security-audit
+
+    ```'
+examples:
+- description: Install claw skill security audit from ClawHub
+  usage: clawhub install skill-security-audit
+schema_version: '1.0'

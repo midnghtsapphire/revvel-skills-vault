@@ -1,0 +1,56 @@
+name: my-new-skill
+title: My New Skill
+version: 1.0.0
+description: '[TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this
+  skill - specific scenarios, file types, or tasks that trigger it.]'
+metadata:
+  author: enchantedmotorcycle
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - new
+  - skill
+  source: clawhub-community
+  clawhub_slug: my-new-skill
+  clawhub_path: enchantedmotorcycle/my-new-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# My New Skill
+
+    # Source: ClawHub community skill by enchantedmotorcycle
+
+    # Install: clawhub install my-new-skill
+
+    # Path: enchantedmotorcycle/my-new-skill
+
+
+    ## Description
+
+    [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill
+    - specific scenarios, file types, or tasks that trigger it.]
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install my-new-skill
+
+    ```'
+examples:
+- description: Install My New Skill from ClawHub
+  usage: clawhub install my-new-skill
+schema_version: '1.0'

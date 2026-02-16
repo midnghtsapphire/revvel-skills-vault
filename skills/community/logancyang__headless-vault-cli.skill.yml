@@ -1,0 +1,59 @@
+name: headless-vault-cli
+title: Headless Vault CLI
+version: 1.0.0
+description: Read and edit Markdown notes on your personal computer via SSH tunnel. Use when the user asks to read, create,
+  or append to notes in their vault.
+metadata:
+  author: logancyang
+  category: General
+  tags:
+  - general
+  - headless
+  - vault
+  - cli
+  source: clawhub-community
+  clawhub_slug: headless-vault-cli
+  clawhub_path: logancyang/headless-vault-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Headless Vault CLI
+
+    # Source: ClawHub community skill by logancyang
+
+    # Install: clawhub install headless-vault-cli
+
+    # Path: logancyang/headless-vault-cli
+
+
+    ## Description
+
+    Read and edit Markdown notes on your personal computer via SSH tunnel. Use when the user asks to read, create, or append
+    to notes in their vault.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - vault.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install headless-vault-cli
+
+    ```'
+examples:
+- description: Install Headless Vault CLI from ClawHub
+  usage: clawhub install headless-vault-cli
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: meeting-prep
+title: meeting-prep
+version: 1.0.0
+description: '"Automated meeting preparation and daily commit summaries. Use when checking Google Calendar for upcoming meetings,
+  generating standup updates from GitHub commits, or sending daily development summaries. Pulls meeting schedules and commit
+  history, then formats verbose developer-friendly updates."'
+metadata:
+  author: hougangdev
+  category: Search & Research
+  tags:
+  - search-research
+  - meeting
+  - prep
+  source: clawhub-community
+  clawhub_slug: meeting-prep
+  clawhub_path: hougangdev/meeting-prep
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# meeting-prep
+
+    # Source: ClawHub community skill by hougangdev
+
+    # Install: clawhub install meeting-prep
+
+    # Path: hougangdev/meeting-prep
+
+
+    ## Description
+
+    "Automated meeting preparation and daily commit summaries. Use when checking Google Calendar for upcoming meetings, generating
+    standup updates from GitHub commits, or sending daily development summaries. Pulls meeting schedules and commit history,
+    then formats verbose developer-friendly updates."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meeting-prep
+
+    ```'
+examples:
+- description: Install meeting-prep from ClawHub
+  usage: clawhub install meeting-prep
+schema_version: '1.0'

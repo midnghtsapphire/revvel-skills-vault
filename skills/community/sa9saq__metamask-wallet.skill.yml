@@ -1,0 +1,56 @@
+name: metamask-wallet
+title: metamask-wallet
+version: 1.0.0
+description: MetaMask wallet integration for crypto payments, DeFi interactions, and receiving rewards. Requires METAMASK_PASSWORD
+  in secrets.
+metadata:
+  author: sa9saq
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - metamask
+  - wallet
+  source: clawhub-community
+  clawhub_slug: metamask-wallet
+  clawhub_path: sa9saq/metamask-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# metamask-wallet
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install metamask-wallet
+
+    # Path: sa9saq/metamask-wallet
+
+
+    ## Description
+
+    MetaMask wallet integration for crypto payments, DeFi interactions, and receiving rewards. Requires METAMASK_PASSWORD
+    in secrets.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install metamask-wallet
+
+    ```'
+examples:
+- description: Install metamask-wallet from ClawHub
+  usage: clawhub install metamask-wallet
+schema_version: '1.0'

@@ -1,0 +1,75 @@
+name: ohio-state-api
+title: Ohio State API
+version: 0.1.0
+description: Get public data from The Ohio State University Content APIs (content.osu.edu) across campus services (bus, buildings,
+  dining, events, academic calendar, libraries, rec sports, parking, directory, student orgs, athletics, food trucks, BuckID
+  merchants). Use when you need OSU campus data, want to buil
+metadata:
+  author: sichengchen
+  category: Development & Coding
+  tags:
+  - development-coding
+  - ohio
+  - state
+  - api
+  source: clawhub-community
+  clawhub_slug: ohio-state-api
+  clawhub_path: sichengchen/ohio-state-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ohio State API
+
+    # Source: ClawHub community skill by sichengchen
+
+    # Install: clawhub install ohio-state-api
+
+    # Path: sichengchen/ohio-state-api
+
+
+    ## Description
+
+    Get public data from The Ohio State University Content APIs (content.osu.edu) across campus services (bus, buildings,
+    dining, events, academic calendar, libraries, rec sports, parking, directory, student orgs, athletics, food trucks, BuckID
+    merchants). Use when you need OSU campus data, want to buil
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - mcp-server/README.md
+
+    - mcp-server/package.json
+
+    - mcp-server/pnpm-lock.yaml
+
+    - mcp-server/tsconfig.json
+
+    - mcp-server/src/athletics.ts
+
+    - mcp-server/src/buildings.ts
+
+    - mcp-server/src/bus.ts
+
+    - mcp-server/src/calendar.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ohio-state-api
+
+    ```'
+examples:
+- description: Install Ohio State API from ClawHub
+  usage: clawhub install ohio-state-api
+schema_version: '1.0'

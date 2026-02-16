@@ -1,0 +1,63 @@
+name: reader-deep-dive
+title: Reader Deep Dive
+version: 0.1.0
+description: Daily briefing that connects your recent reading to your long-term archive.
+metadata:
+  author: sameerbajaj
+  category: General
+  tags:
+  - general
+  - reader
+  - deep
+  - dive
+  source: clawhub-community
+  clawhub_slug: reader-deep-dive
+  clawhub_path: sameerbajaj/reader-deep-dive
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reader Deep Dive
+
+    # Source: ClawHub community skill by sameerbajaj
+
+    # Install: clawhub install reader-deep-dive
+
+    # Path: sameerbajaj/reader-deep-dive
+
+
+    ## Description
+
+    Daily briefing that connects your recent reading to your long-term archive.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - prompts/analyze.txt
+
+    - prompts/briefing.txt
+
+    - scripts/brief.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reader-deep-dive
+
+    ```'
+examples:
+- description: Install Reader Deep Dive from ClawHub
+  usage: clawhub install reader-deep-dive
+schema_version: '1.0'

@@ -1,0 +1,42 @@
+name: task-decomposer
+title: Decomposes complex user requests into executable subtasks, identifies required capabilities, searches for existing
+  skills at skills.sh, and creates new skills when no solution exists. This skill should be used when the user submits a complex
+  multi-step request, wants to automate workflows, or needs help breaking down large tasks into manageable pieces.
+version: 1.0.0
+description: 'Decomposes complex user requests into executable subtasks, identifies required capabilities, searches for existing
+  skills at skills.sh, and creates new skills when no solution exists. This skill should be used when the user submits a complex
+  multi-step request, wants to automate workflows, or needs '
+metadata:
+  author: 10e9928a
+  category: Search & Research
+  tags:
+  - search-research
+  - task
+  - decomposer
+  source: clawhub-community
+  clawhub_slug: task-decomposer
+  clawhub_path: 10e9928a/task-decomposer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Decomposes complex user requests into executable subtasks, identifies required capabilities, searches for existing\
+    \ skills at skills.sh, and creates new skills when no solution exists. This skill should be used when the user submits\
+    \ a complex multi-step request, wants to automate workflows, or needs help breaking down large tasks into manageable pieces.\n\
+    # Source: ClawHub community skill by 10e9928a\n# Install: clawhub install task-decomposer\n# Path: 10e9928a/task-decomposer\n\
+    \n## Description\nDecomposes complex user requests into executable subtasks, identifies required capabilities, searches\
+    \ for existing skills at skills.sh, and creates new skills when no solution exists. This skill should be used when the\
+    \ user submits a complex multi-step request, wants to automate workflows, or needs \n\n## Files\n- README.md\n- README_CN.md\n\
+    - SKILL.md\n- _meta.json\n- assets/skill_template.md\n- references/capability_types.md\n\n## Installation\n```bash\nclawhub\
+    \ install task-decomposer\n```"
+examples:
+- description: Install Decomposes complex user requests into executable subtasks, identifies required capabilities, searches
+    for existing skills at skills.sh, and creates new skills when no solution exists. This skill should be used when the user
+    submits a complex multi-step request, wants to automate workflows, or needs help breaking down large tasks into manageable
+    pieces. from ClawHub
+  usage: clawhub install task-decomposer
+schema_version: '1.0'

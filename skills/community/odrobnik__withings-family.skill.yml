@@ -1,0 +1,64 @@
+name: withings-family
+title: Withings Family
+version: 1.0.4
+description: Fetches health data from the Withings API for multiple family members including weight, body composition (fat,
+  muscle, bone, water), activity, and sleep. Use this skill when the user asks about their or their family's Withings data,
+  weight history, body metrics, daily steps, sleep quality, or any he
+metadata:
+  author: odrobnik
+  category: Development & Coding
+  tags:
+  - development-coding
+  - withings
+  - family
+  source: clawhub-community
+  clawhub_slug: withings-family
+  clawhub_path: odrobnik/withings-family
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Withings Family
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install withings-family
+
+    # Path: odrobnik/withings-family
+
+
+    ## Description
+
+    Fetches health data from the Withings API for multiple family members including weight, body composition (fat, muscle,
+    bone, water), activity, and sleep. Use this skill when the user asks about their or their family''s Withings data, weight
+    history, body metrics, daily steps, sleep quality, or any he
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/withings.py
+
+    - scripts/withings_oauth_local.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install withings-family
+
+    ```'
+examples:
+- description: Install Withings Family from ClawHub
+  usage: clawhub install withings-family
+schema_version: '1.0'

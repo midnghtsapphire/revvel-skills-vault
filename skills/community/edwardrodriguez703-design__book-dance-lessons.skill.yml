@@ -1,0 +1,57 @@
+name: book-dance-lessons
+title: Book Dance Lessons
+version: 1.0.1
+description: Book dance-lessons services through Lokuli MCP. Use when user needs to find and book dance-lessons. Triggers
+  on requests like "book a dance-lessons", "find dance-lessons near me", or any dance-lessons service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - dance
+  - lessons
+  source: clawhub-community
+  clawhub_slug: book-dance-lessons
+  clawhub_path: edwardrodriguez703-design/book-dance-lessons
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Dance Lessons
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-dance-lessons
+
+    # Path: edwardrodriguez703-design/book-dance-lessons
+
+
+    ## Description
+
+    Book dance-lessons services through Lokuli MCP. Use when user needs to find and book dance-lessons. Triggers on requests
+    like "book a dance-lessons", "find dance-lessons near me", or any dance-lessons service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-dance-lessons
+
+    ```'
+examples:
+- description: Install Book Dance Lessons from ClawHub
+  usage: clawhub install book-dance-lessons
+schema_version: '1.0'

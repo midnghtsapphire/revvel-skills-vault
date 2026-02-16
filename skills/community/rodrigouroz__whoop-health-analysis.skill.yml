@@ -1,0 +1,67 @@
+name: whoop
+title: Whoop
+version: 1.1.0
+description: Access Whoop wearable health data (sleep, recovery, strain, HRV, workouts) and generate interactive charts. Use
+  when the user asks about sleep quality, recovery scores, strain levels, HRV trends, workout data, or wants health visualizations/graphs
+  from their Whoop band.
+metadata:
+  author: rodrigouroz
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - whoop
+  source: clawhub-community
+  clawhub_slug: whoop-health-analysis
+  clawhub_path: rodrigouroz/whoop-health-analysis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Whoop
+
+    # Source: ClawHub community skill by rodrigouroz
+
+    # Install: clawhub install whoop-health-analysis
+
+    # Path: rodrigouroz/whoop-health-analysis
+
+
+    ## Description
+
+    Access Whoop wearable health data (sleep, recovery, strain, HRV, workouts) and generate interactive charts. Use when the
+    user asks about sleep quality, recovery scores, strain levels, HRV trends, workout data, or wants health visualizations/graphs
+    from their Whoop band.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - references/health_analysis.md
+
+    - scripts/whoop_auth.py
+
+    - scripts/whoop_chart.py
+
+    - scripts/whoop_data.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install whoop-health-analysis
+
+    ```'
+examples:
+- description: Install Whoop from ClawHub
+  usage: clawhub install whoop-health-analysis
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: as-built-documentation
+title: As Built Documentation
+version: 1.0.0
+description: '"Manage as-built documentation for project closeout. Track drawing markups, coordinate updates, and verify completeness."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - built
+  - documentation
+  source: clawhub-community
+  clawhub_slug: as-built-documentation
+  clawhub_path: datadrivenconstruction/as-built-documentation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# As Built Documentation
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install as-built-documentation
+
+    # Path: datadrivenconstruction/as-built-documentation
+
+
+    ## Description
+
+    "Manage as-built documentation for project closeout. Track drawing markups, coordinate updates, and verify completeness."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install as-built-documentation
+
+    ```'
+examples:
+- description: Install As Built Documentation from ClawHub
+  usage: clawhub install as-built-documentation
+schema_version: '1.0'

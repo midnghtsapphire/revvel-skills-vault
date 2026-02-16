@@ -1,0 +1,54 @@
+name: newsapi-search
+title: NewsAPI Search
+version: 1.0.0
+description: Search news articles via NewsAPI with filtering by time windows, sources, domains, and languages.
+metadata:
+  author: dexiaong
+  category: Search & Research
+  tags:
+  - search-research
+  - newsapi
+  - search
+  source: clawhub-community
+  clawhub_slug: newsapi-searche
+  clawhub_path: dexiaong/newsapi-searche
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NewsAPI Search
+
+    # Source: ClawHub community skill by dexiaong
+
+    # Install: clawhub install newsapi-searche
+
+    # Path: dexiaong/newsapi-searche
+
+
+    ## Description
+
+    Search news articles via NewsAPI with filtering by time windows, sources, domains, and languages.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install newsapi-searche
+
+    ```'
+examples:
+- description: Install NewsAPI Search from ClawHub
+  usage: clawhub install newsapi-searche
+schema_version: '1.0'

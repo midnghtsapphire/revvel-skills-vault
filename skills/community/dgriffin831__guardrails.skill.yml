@@ -1,0 +1,68 @@
+name: guardrails
+title: Guardrails
+version: 1.0.1
+description: ''
+metadata:
+  author: dgriffin831
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - guardrails
+  source: clawhub-community
+  clawhub_slug: guardrails
+  clawhub_path: dgriffin831/guardrails
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Guardrails
+
+    # Source: ClawHub community skill by dgriffin831
+
+    # Install: clawhub install guardrails
+
+    # Path: dgriffin831/guardrails
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - schemas/config.schema.json
+
+    - schemas/risks.schema.json
+
+    - scripts/classify-risks.py
+
+    - scripts/discover.sh
+
+    - scripts/generate_guardrails_md.py
+
+    - scripts/generate_questions.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install guardrails
+
+    ```'
+examples:
+- description: Install Guardrails from ClawHub
+  usage: clawhub install guardrails
+schema_version: '1.0'

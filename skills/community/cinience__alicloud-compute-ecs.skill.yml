@@ -1,0 +1,75 @@
+name: alicloud-compute-ecs
+title: Alicloud Compute Ecs
+version: 1.0.2
+description: Manage Alibaba Cloud Elastic Compute Service (ECS) via OpenAPI/SDK. Use for listing or creating instances, starting/stopping/rebooting,
+  managing disks/snapshots/images/security groups/key pairs/ENIs, querying status, and troubleshooting workflows for this
+  product.
+metadata:
+  author: cinience
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - alicloud
+  - compute
+  - ecs
+  source: clawhub-community
+  clawhub_slug: alicloud-compute-ecs
+  clawhub_path: cinience/alicloud-compute-ecs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Compute Ecs
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-compute-ecs
+
+    # Path: cinience/alicloud-compute-ecs
+
+
+    ## Description
+
+    Manage Alibaba Cloud Elastic Compute Service (ECS) via OpenAPI/SDK. Use for listing or creating instances, starting/stopping/rebooting,
+    managing disks/snapshots/images/security groups/key pairs/ENIs, querying status, and troubleshooting workflows for this
+    product.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/api_overview.md
+
+    - references/command-assistant.md
+
+    - references/describe-instances.md
+
+    - references/disks.md
+
+    - references/endpoints.md
+
+    - references/images.md
+
+    - references/instances.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-compute-ecs
+
+    ```'
+examples:
+- description: Install Alicloud Compute Ecs from ClawHub
+  usage: clawhub install alicloud-compute-ecs
+schema_version: '1.0'

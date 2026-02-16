@@ -1,0 +1,57 @@
+name: cfg-diff
+title: Config Diff
+version: 1.0.0
+description: Compare configuration files, highlight differences, and suggest merge strategies for YAML, JSON, TOML, and INI
+  formats.
+metadata:
+  author: sa9saq
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - cfg
+  - diff
+  source: clawhub-community
+  clawhub_slug: cfg-diff
+  clawhub_path: sa9saq/cfg-diff
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Config Diff
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install cfg-diff
+
+    # Path: sa9saq/cfg-diff
+
+
+    ## Description
+
+    Compare configuration files, highlight differences, and suggest merge strategies for YAML, JSON, TOML, and INI formats.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cfg-diff
+
+    ```'
+examples:
+- description: Install Config Diff from ClawHub
+  usage: clawhub install cfg-diff
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: ecap-security-auditor
+title: ecap Security Auditor
+version: 2.0.0
+description: Security audit framework for AI agent skills, MCP servers, and packages. Your LLM does the analysis — we provide
+  structure, prompts, and a shared trust database.
+metadata:
+  author: starbuck100
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - ecap
+  - security
+  - auditor
+  source: clawhub-community
+  clawhub_slug: ecap-security-auditor
+  clawhub_path: starbuck100/ecap-security-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ecap Security Auditor
+
+    # Source: ClawHub community skill by starbuck100
+
+    # Install: clawhub install ecap-security-auditor
+
+    # Path: starbuck100/ecap-security-auditor
+
+
+    ## Description
+
+    Security audit framework for AI agent skills, MCP servers, and packages. Your LLM does the analysis — we provide structure,
+    prompts, and a shared trust database.
+
+
+    ## Files
+
+    - ADVERSARIAL-TEST.md
+
+    - API-RESPONSES.md
+
+    - AUDIT-QUALITY-TEST.md
+
+    - BY-DESIGN-RESEARCH.md
+
+    - DOCS-REVIEW.md
+
+    - EVAL-REPORT.md
+
+    - EXPERT-PANEL-RECOMMENDATION.md
+
+    - FERRET-ADOPTION-PLAN.md
+
+    - FERRET-SCAN-ANALYSIS.md
+
+    - FIX-REPORT.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ecap-security-auditor
+
+    ```'
+examples:
+- description: Install ecap Security Auditor from ClawHub
+  usage: clawhub install ecap-security-auditor
+schema_version: '1.0'

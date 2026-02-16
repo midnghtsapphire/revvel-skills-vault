@@ -1,0 +1,60 @@
+name: bankr-integration
+title: bankr-integration
+version: 1.0.2
+description: Bankr marketplace integration — check job status and submit AI agent work. Requires API credentials.
+metadata:
+  author: sa9saq
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bankr
+  - integration
+  source: clawhub-community
+  clawhub_slug: bankr-integration
+  clawhub_path: sa9saq/bankr-integration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# bankr-integration
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install bankr-integration
+
+    # Path: sa9saq/bankr-integration
+
+
+    ## Description
+
+    Bankr marketplace integration — check job status and submit AI agent work. Requires API credentials.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - scripts/bankr-status.sh
+
+    - scripts/bankr-submit.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bankr-integration
+
+    ```'
+examples:
+- description: Install bankr-integration from ClawHub
+  usage: clawhub install bankr-integration
+schema_version: '1.0'

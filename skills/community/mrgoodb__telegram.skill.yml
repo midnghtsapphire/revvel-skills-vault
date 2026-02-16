@@ -1,0 +1,55 @@
+name: telegram
+title: Telegram
+version: 1.0.0
+description: Send messages, photos, and files via Telegram Bot API. Use when you need to send notifications, alerts, or content
+  to Telegram chats, channels, or groups. Supports text formatting, media, and inline keyboards.
+metadata:
+  author: mrgoodb
+  category: Media & Content
+  tags:
+  - media-content
+  - telegram
+  source: clawhub-community
+  clawhub_slug: telegram
+  clawhub_path: mrgoodb/telegram
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install telegram
+
+    # Path: mrgoodb/telegram
+
+
+    ## Description
+
+    Send messages, photos, and files via Telegram Bot API. Use when you need to send notifications, alerts, or content to
+    Telegram chats, channels, or groups. Supports text formatting, media, and inline keyboards.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram
+
+    ```'
+examples:
+- description: Install Telegram from ClawHub
+  usage: clawhub install telegram
+schema_version: '1.0'

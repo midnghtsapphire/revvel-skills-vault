@@ -1,0 +1,59 @@
+name: n8n-workflow-automation
+title: n8n workflow automation
+version: 1.0.0
+description: Designs and outputs n8n workflow JSON with robust triggers, idempotency, error handling, logging, retries, and
+  human-in-the-loop review queues. Use when you need an auditable automation that won’t silently fail.
+metadata:
+  author: kowl64
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - n8n
+  - workflow
+  - automation
+  source: clawhub-community
+  clawhub_slug: n8n-workflow-automation
+  clawhub_path: kowl64/n8n-workflow-automation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# n8n workflow automation
+
+    # Source: ClawHub community skill by kowl64
+
+    # Install: clawhub install n8n-workflow-automation
+
+    # Path: kowl64/n8n-workflow-automation
+
+
+    ## Description
+
+    Designs and outputs n8n workflow JSON with robust triggers, idempotency, error handling, logging, retries, and human-in-the-loop
+    review queues. Use when you need an auditable automation that won’t silently fail.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/runbook-template.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install n8n-workflow-automation
+
+    ```'
+examples:
+- description: Install n8n workflow automation from ClawHub
+  usage: clawhub install n8n-workflow-automation
+schema_version: '1.0'

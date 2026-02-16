@@ -1,0 +1,35 @@
+name: gemini-web-search
+title: Gemini Web Search
+version: 1.0.0
+description: 'Use Gemini CLI (@google/gemini-cli) to do web search / fact-finding and return a sourced summary. Use when the
+  user asks “why did X happen today”, “what’s the latest news”, “search the web”, “find sources/links”, or any task requiring
+  up-to-date info. Prefer this over other search tools when Gemini '
+metadata:
+  author: fengjiajie
+  category: Search & Research
+  tags:
+  - search-research
+  - gemini
+  - web
+  - search
+  source: clawhub-community
+  clawhub_slug: gemini-web-search
+  clawhub_path: fengjiajie/gemini-web-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Gemini Web Search\n# Source: ClawHub community skill by fengjiajie\n# Install: clawhub install gemini-web-search\n\
+    # Path: fengjiajie/gemini-web-search\n\n## Description\nUse Gemini CLI (@google/gemini-cli) to do web search / fact-finding\
+    \ and return a sourced summary. Use when the user asks “why did X happen today”, “what’s the latest news”, “search the\
+    \ web”, “find sources/links”, or any task requiring up-to-date info. Prefer this over other search tools when Gemini \n\
+    \n## Files\n- SKILL.md\n- _meta.json\n- scripts/gemini_prompt.sh\n\n## Installation\n```bash\nclawhub install gemini-web-search\n\
+    ```"
+examples:
+- description: Install Gemini Web Search from ClawHub
+  usage: clawhub install gemini-web-search
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: research-skill-copy
+title: Research Skill Copy
+version: 1.0.0
+description: 'Research skill copy of Magic 8-Ball: selects one of 20 classic responses at random, logs to workspace/research-skill-copy-last.json
+  for Android sync. Auto-setup secure-sync. Trigger on "research-skill-copy".'
+metadata:
+  author: cyberengage
+  category: Search & Research
+  tags:
+  - search-research
+  - research
+  - skill
+  - copy
+  source: clawhub-community
+  clawhub_slug: research-skill-copy
+  clawhub_path: cyberengage/research-skill-copy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Research Skill Copy
+
+    # Source: ClawHub community skill by cyberengage
+
+    # Install: clawhub install research-skill-copy
+
+    # Path: cyberengage/research-skill-copy
+
+
+    ## Description
+
+    Research skill copy of Magic 8-Ball: selects one of 20 classic responses at random, logs to workspace/research-skill-copy-last.json
+    for Android sync. Auto-setup secure-sync. Trigger on "research-skill-copy".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/magic8ball.py
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install research-skill-copy
+
+    ```'
+examples:
+- description: Install Research Skill Copy from ClawHub
+  usage: clawhub install research-skill-copy
+schema_version: '1.0'

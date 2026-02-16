@@ -1,0 +1,56 @@
+name: orchata-rag
+title: Orchata
+version: 1.0.0
+description: Knowledge management and RAG platform with tree-based document indexing. Use this skill to search, browse, and
+  manage Orchata knowledge bases via MCP tools.
+metadata:
+  author: ehudsn
+  category: Search & Research
+  tags:
+  - search-research
+  - orchata
+  - rag
+  source: clawhub-community
+  clawhub_slug: orchata
+  clawhub_path: ehudsn/orchata
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Orchata
+
+    # Source: ClawHub community skill by ehudsn
+
+    # Install: clawhub install orchata
+
+    # Path: ehudsn/orchata
+
+
+    ## Description
+
+    Knowledge management and RAG platform with tree-based document indexing. Use this skill to search, browse, and manage
+    Orchata knowledge bases via MCP tools.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install orchata
+
+    ```'
+examples:
+- description: Install Orchata from ClawHub
+  usage: clawhub install orchata
+schema_version: '1.0'

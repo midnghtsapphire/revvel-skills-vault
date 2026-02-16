@@ -1,0 +1,66 @@
+name: azd-deployment
+title: Azd Deployment for Azure
+version: 0.1.0
+description: Deploy containerized applications to Azure Container Apps using Azure Developer CLI (azd). Use when setting up
+  azd projects, writing azure.yaml configuration, creating Bicep infrastructure for Container Apps, configuring remote builds
+  with ACR, implementing idempotent deployments, managing environme
+metadata:
+  author: thegovind
+  category: Development & Coding
+  tags:
+  - development-coding
+  - azd
+  - deployment
+  source: clawhub-community
+  clawhub_slug: azd-deployment
+  clawhub_path: thegovind/azd-deployment
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Azd Deployment for Azure
+
+    # Source: ClawHub community skill by thegovind
+
+    # Install: clawhub install azd-deployment
+
+    # Path: thegovind/azd-deployment
+
+
+    ## Description
+
+    Deploy containerized applications to Azure Container Apps using Azure Developer CLI (azd). Use when setting up azd projects,
+    writing azure.yaml configuration, creating Bicep infrastructure for Container Apps, configuring remote builds with ACR,
+    implementing idempotent deployments, managing environme
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/acceptance-criteria.md
+
+    - references/azure-yaml-schema.md
+
+    - references/bicep-patterns.md
+
+    - references/troubleshooting.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install azd-deployment
+
+    ```'
+examples:
+- description: Install Azd Deployment for Azure from ClawHub
+  usage: clawhub install azd-deployment
+schema_version: '1.0'

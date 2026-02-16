@@ -1,0 +1,73 @@
+name: mulerouter
+title: MuleRouter
+version: 0.1.1
+description: Generates images and videos using MuleRouter or MuleRun multimodal APIs. Text-to-Image, Image-to-Image, Text-to-Video,
+  Image-to-Video, video editing (VACE, keyframe interpolation). Use when the user wants to generate, edit, or transform images
+  and videos using AI models like Wan2.6, Veo3, Nano Banan
+metadata:
+  author: misaka43fd
+  category: Media & Content
+  tags:
+  - media-content
+  - mulerouter
+  source: clawhub-community
+  clawhub_slug: mulerouter
+  clawhub_path: misaka43fd/mulerouter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MuleRouter
+
+    # Source: ClawHub community skill by misaka43fd
+
+    # Install: clawhub install mulerouter
+
+    # Path: misaka43fd/mulerouter
+
+
+    ## Description
+
+    Generates images and videos using MuleRouter or MuleRun multimodal APIs. Text-to-Image, Image-to-Image, Text-to-Video,
+    Image-to-Video, video editing (VACE, keyframe interpolation). Use when the user wants to generate, edit, or transform
+    images and videos using AI models like Wan2.6, Veo3, Nano Banan
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - core/__init__.py
+
+    - core/client.py
+
+    - core/config.py
+
+    - core/image.py
+
+    - core/registry.py
+
+    - core/task.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mulerouter
+
+    ```'
+examples:
+- description: Install MuleRouter from ClawHub
+  usage: clawhub install mulerouter
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: bambu-local
+title: Bambu Lab Local Control
+version: 1.0.1
+description: Control Bambu Lab 3D printers locally via MQTT (no cloud). Supports A1, A1 Mini, P1P, P1S, X1C.
+metadata:
+  author: tanguyvans
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - bambu
+  - local
+  source: clawhub-community
+  clawhub_slug: bambu-local
+  clawhub_path: tanguyvans/bambu-local
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bambu Lab Local Control
+
+    # Source: ClawHub community skill by tanguyvans
+
+    # Install: clawhub install bambu-local
+
+    # Path: tanguyvans/bambu-local
+
+
+    ## Description
+
+    Control Bambu Lab 3D printers locally via MQTT (no cloud). Supports A1, A1 Mini, P1P, P1S, X1C.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bambu.py
+
+    - config.example.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bambu-local
+
+    ```'
+examples:
+- description: Install Bambu Lab Local Control from ClawHub
+  usage: clawhub install bambu-local
+schema_version: '1.0'

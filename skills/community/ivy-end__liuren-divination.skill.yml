@@ -1,0 +1,55 @@
+name: liuren
+title: Liuren
+version: 1.0.0
+description: Traditional Chinese "Xiao Liu Ren" divination based on current lunar time.
+metadata:
+  author: ivy-end
+  category: Utilities
+  tags:
+  - utilities
+  - liuren
+  source: clawhub-community
+  clawhub_slug: liuren-divination
+  clawhub_path: ivy-end/liuren-divination
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Liuren
+
+    # Source: ClawHub community skill by ivy-end
+
+    # Install: clawhub install liuren-divination
+
+    # Path: ivy-end/liuren-divination
+
+
+    ## Description
+
+    Traditional Chinese "Xiao Liu Ren" divination based on current lunar time.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - liuren.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install liuren-divination
+
+    ```'
+examples:
+- description: Install Liuren from ClawHub
+  usage: clawhub install liuren-divination
+schema_version: '1.0'

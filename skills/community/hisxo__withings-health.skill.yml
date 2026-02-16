@@ -1,0 +1,60 @@
+name: withings-health
+title: withings-health
+version: 1.0.1
+description: Fetches health data from the Withings API including weight, body composition (fat, muscle, bone, water), activity,
+  and sleep. Use this skill when the user asks about their Withings data, weight history, body metrics, daily steps, sleep
+  quality, or any health measurement from Withings devices.
+metadata:
+  author: hisxo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - withings
+  - health
+  source: clawhub-community
+  clawhub_slug: withings-health
+  clawhub_path: hisxo/withings-health
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# withings-health
+
+    # Source: ClawHub community skill by hisxo
+
+    # Install: clawhub install withings-health
+
+    # Path: hisxo/withings-health
+
+
+    ## Description
+
+    Fetches health data from the Withings API including weight, body composition (fat, muscle, bone, water), activity, and
+    sleep. Use this skill when the user asks about their Withings data, weight history, body metrics, daily steps, sleep quality,
+    or any health measurement from Withings devices.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - wrapper.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install withings-health
+
+    ```'
+examples:
+- description: Install withings-health from ClawHub
+  usage: clawhub install withings-health
+schema_version: '1.0'

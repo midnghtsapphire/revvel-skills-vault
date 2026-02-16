@@ -1,0 +1,54 @@
+name: stash-namer
+title: Git Stash Name Generator
+version: 1.0.2
+description: Generate meaningful git stash names from your changes. Use when stashing work.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - stash
+  - namer
+  source: clawhub-community
+  clawhub_slug: stash-name-gen
+  clawhub_path: lxgicstudios/stash-name-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git Stash Name Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install stash-name-gen
+
+    # Path: lxgicstudios/stash-name-gen
+
+
+    ## Description
+
+    Generate meaningful git stash names from your changes. Use when stashing work.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stash-name-gen
+
+    ```'
+examples:
+- description: Install Git Stash Name Generator from ClawHub
+  usage: clawhub install stash-name-gen
+schema_version: '1.0'

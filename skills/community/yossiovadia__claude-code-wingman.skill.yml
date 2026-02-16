@@ -1,0 +1,71 @@
+name: claude-code-wingman
+title: Claude Code Wingman
+version: 0.3.0
+description: Your Claude Code wingman - orchestrate multiple Claude Code sessions across projects, monitor them all from WhatsApp
+metadata:
+  author: yossiovadia
+  category: Development & Coding
+  tags:
+  - development-coding
+  - claude
+  - code
+  - wingman
+  source: clawhub-community
+  clawhub_slug: claude-code-wingman
+  clawhub_path: yossiovadia/claude-code-wingman
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claude Code Wingman
+
+    # Source: ClawHub community skill by yossiovadia
+
+    # Install: clawhub install claude-code-wingman
+
+    # Path: yossiovadia/claude-code-wingman
+
+
+    ## Description
+
+    Your Claude Code wingman - orchestrate multiple Claude Code sessions across projects, monitor them all from WhatsApp
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - USAGE.md
+
+    - _meta.json
+
+    - auto-approver.sh
+
+    - check-approvals.sh
+
+    - claude-wingman.sh
+
+    - dashboard.sh
+
+    - interactive-approver.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claude-code-wingman
+
+    ```'
+examples:
+- description: Install Claude Code Wingman from ClawHub
+  usage: clawhub install claude-code-wingman
+schema_version: '1.0'

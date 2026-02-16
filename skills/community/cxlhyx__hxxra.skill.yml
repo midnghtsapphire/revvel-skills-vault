@@ -1,0 +1,32 @@
+name: hxxra
+title: hxxra
+version: 1.0.0
+description: 'A Research Assistant workflow skill with four core commands: search papers, download PDFs, analyze content,
+  and save to Zotero. Entry point is a Python script located at scripts/hxxra.py and invoked via stdin/stdout (OpenClaw integration).
+  The search uses crawlers for Google Scholar and arXiv APIs; '
+metadata:
+  author: cxlhyx
+  category: Search & Research
+  tags:
+  - search-research
+  - hxxra
+  source: clawhub-community
+  clawhub_slug: hxxra
+  clawhub_path: cxlhyx/hxxra
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# hxxra\n# Source: ClawHub community skill by cxlhyx\n# Install: clawhub install hxxra\n# Path: cxlhyx/hxxra\n\
+    \n## Description\nA Research Assistant workflow skill with four core commands: search papers, download PDFs, analyze content,\
+    \ and save to Zotero. Entry point is a Python script located at scripts/hxxra.py and invoked via stdin/stdout (OpenClaw\
+    \ integration). The search uses crawlers for Google Scholar and arXiv APIs; \n\n## Files\n- SKILL.md\n- _meta.json\n-\
+    \ config.json\n- scripts/hxxra.py\n\n## Installation\n```bash\nclawhub install hxxra\n```"
+examples:
+- description: Install hxxra from ClawHub
+  usage: clawhub install hxxra
+schema_version: '1.0'

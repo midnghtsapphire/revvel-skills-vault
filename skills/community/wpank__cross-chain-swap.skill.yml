@@ -1,0 +1,70 @@
+name: cross-chain-swap
+title: Uniswap Cross Chain Swap
+version: 0.1.0
+description: Execute a cross-chain token swap via Uniswap's bridge infrastructure. Handles quoting, safety validation, bridge
+  monitoring, and destination confirmation. Use when the user wants to swap tokens across different chains.
+metadata:
+  author: wpank
+  category: System & OS
+  tags:
+  - system-os
+  - cross
+  - chain
+  - swap
+  - '[task(subagent_type:cross-chain-executor)'
+  - mcp__uniswap__getsupportedchains
+  - mcp__uniswap__gettokeninfo]
+  source: clawhub-community
+  clawhub_slug: cross-chain-swap
+  clawhub_path: wpank/cross-chain-swap
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:cross-chain-executor)'
+  - mcp__uniswap__getSupportedChains
+  - mcp__uniswap__getTokenInfo]
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Cross Chain Swap
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install cross-chain-swap
+
+    # Path: wpank/cross-chain-swap
+
+
+    ## Description
+
+    Execute a cross-chain token swap via Uniswap''s bridge infrastructure. Handles quoting, safety validation, bridge monitoring,
+    and destination confirmation. Use when the user wants to swap tokens across different chains.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:cross-chain-executor), mcp__uniswap__getSupportedChains, mcp__uniswap__getTokenInfo]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cross-chain-swap
+
+    ```'
+examples:
+- description: Install Uniswap Cross Chain Swap from ClawHub
+  usage: clawhub install cross-chain-swap
+schema_version: '1.0'

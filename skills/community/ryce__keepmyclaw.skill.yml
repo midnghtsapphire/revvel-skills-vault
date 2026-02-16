@@ -1,0 +1,67 @@
+name: keepmyclaw
+title: Keep My Claw
+version: 1.3.0
+description: 'Backup, restore, and manage encrypted snapshots of OpenClaw agent data via the Keep My Claw API. Use when backing
+  up agent configuration, workspace files, and credentials; restoring an agent on a fresh machine; listing or pruning backup
+  snapshots; or setting up backup infrastructure. Triggers on: ba'
+metadata:
+  author: ryce
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - keepmyclaw
+  source: clawhub-community
+  clawhub_slug: keepmyclaw
+  clawhub_path: ryce/keepmyclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Keep My Claw
+
+    # Source: ClawHub community skill by ryce
+
+    # Install: clawhub install keepmyclaw
+
+    # Path: ryce/keepmyclaw
+
+
+    ## Description
+
+    Backup, restore, and manage encrypted snapshots of OpenClaw agent data via the Keep My Claw API. Use when backing up agent
+    configuration, workspace files, and credentials; restoring an agent on a fresh machine; listing or pruning backup snapshots;
+    or setting up backup infrastructure. Triggers on: ba
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/backup.sh
+
+    - scripts/list.sh
+
+    - scripts/prune.sh
+
+    - scripts/restore.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install keepmyclaw
+
+    ```'
+examples:
+- description: Install Keep My Claw from ClawHub
+  usage: clawhub install keepmyclaw
+schema_version: '1.0'

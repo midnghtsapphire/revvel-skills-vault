@@ -1,0 +1,63 @@
+name: ppt-generator
+title: 'description: 将用户讲稿一键生成乔布斯风极简科技感竖屏HTML演示稿。当用户需要生成PPT、演示文稿、Slides、幻灯片，或要求科技风/极简风/乔布斯风格的演示时触发此技能。输出为单个可直接运行的HTML文件。'
+version: 1.0.0
+description: 将用户讲稿一键生成乔布斯风极简科技感竖屏HTML演示稿。当用户需要生成PPT、演示文稿、Slides、幻灯片，或要求科技风/极简风/乔布斯风格的演示时触发此技能。输出为单个可直接运行的HTML文件。
+metadata:
+  author: wwlyzzyorg
+  category: Web & Internet
+  tags:
+  - web-internet
+  - ppt
+  - generator
+  source: clawhub-community
+  clawhub_slug: ppt-generator
+  clawhub_path: wwlyzzyorg/ppt-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# description: 将用户讲稿一键生成乔布斯风极简科技感竖屏HTML演示稿。当用户需要生成PPT、演示文稿、Slides、幻灯片，或要求科技风/极简风/乔布斯风格的演示时触发此技能。输出为单个可直接运行的HTML文件。
+
+    # Source: ClawHub community skill by wwlyzzyorg
+
+    # Install: clawhub install ppt-generator
+
+    # Path: wwlyzzyorg/ppt-generator
+
+
+    ## Description
+
+    将用户讲稿一键生成乔布斯风极简科技感竖屏HTML演示稿。当用户需要生成PPT、演示文稿、Slides、幻灯片，或要求科技风/极简风/乔布斯风格的演示时触发此技能。输出为单个可直接运行的HTML文件。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - assets/template.html
+
+    - references/design-spec.md
+
+    - references/slide-types.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ppt-generator
+
+    ```'
+examples:
+- description: 'Install description: 将用户讲稿一键生成乔布斯风极简科技感竖屏HTML演示稿。当用户需要生成PPT、演示文稿、Slides、幻灯片，或要求科技风/极简风/乔布斯风格的演示时触发此技能。输出为单个可直接运行的HTML文件。
+    from ClawHub'
+  usage: clawhub install ppt-generator
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: chatgpt-exporter-ultimate
+title: Chatgpt Exporter Ultimate
+version: 1.0.3
+description: ChatGPT conversation exporter, backup, and history export tool. Export ALL your ChatGPT conversations instantly
+  — no 24h wait, no extensions. Works via browser relay OR standalone bookmarklet. Full message history with timestamps, roles,
+  and metadata.
+metadata:
+  author: globalcaos
+  category: Search & Research
+  tags:
+  - search-research
+  - chatgpt
+  - exporter
+  - ultimate
+  source: clawhub-community
+  clawhub_slug: chatgpt-exporter-ultimate
+  clawhub_path: globalcaos/chatgpt-exporter-ultimate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Chatgpt Exporter Ultimate
+
+    # Source: ClawHub community skill by globalcaos
+
+    # Install: clawhub install chatgpt-exporter-ultimate
+
+    # Path: globalcaos/chatgpt-exporter-ultimate
+
+
+    ## Description
+
+    ChatGPT conversation exporter, backup, and history export tool. Export ALL your ChatGPT conversations instantly — no 24h
+    wait, no extensions. Works via browser relay OR standalone bookmarklet. Full message history with timestamps, roles, and
+    metadata.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bookmarklet.js
+
+    - scripts/export-conversations.ts
+
+    - scripts/export.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install chatgpt-exporter-ultimate
+
+    ```'
+examples:
+- description: Install Chatgpt Exporter Ultimate from ClawHub
+  usage: clawhub install chatgpt-exporter-ultimate
+schema_version: '1.0'

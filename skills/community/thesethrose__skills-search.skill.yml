@@ -1,0 +1,58 @@
+name: skills-search
+title: Skills.sh Search
+version: 1.0.4
+description: Search skills.sh registry from CLI. Find and discover agent skills from the skills.sh ecosystem.
+metadata:
+  author: thesethrose
+  category: Search & Research
+  tags:
+  - search-research
+  - skills
+  - search
+  source: clawhub-community
+  clawhub_slug: skills-search
+  clawhub_path: thesethrose/skills-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skills.sh Search
+
+    # Source: ClawHub community skill by thesethrose
+
+    # Install: clawhub install skills-search
+
+    # Path: thesethrose/skills-search
+
+
+    ## Description
+
+    Search skills.sh registry from CLI. Find and discover agent skills from the skills.sh ecosystem.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.js
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skills-search
+
+    ```'
+examples:
+- description: Install Skills.sh Search from ClawHub
+  usage: clawhub install skills-search
+schema_version: '1.0'

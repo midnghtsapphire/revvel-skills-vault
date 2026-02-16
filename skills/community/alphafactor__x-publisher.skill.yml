@@ -1,0 +1,61 @@
+name: x-publisher
+title: X Publisher
+version: 1.0.1
+description: Publish tweets to X (Twitter) using the official Tweepy library. Supports text-only tweets, tweets with images
+  or videos, and returns detailed publish results including tweet ID and URL. Requires X API credentials (API Key, API Secret,
+  Access Token, Access Token Secret).
+metadata:
+  author: alphafactor
+  category: Media & Content
+  tags:
+  - media-content
+  - publisher
+  source: clawhub-community
+  clawhub_slug: x-publisher
+  clawhub_path: alphafactor/x-publisher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Publisher
+
+    # Source: ClawHub community skill by alphafactor
+
+    # Install: clawhub install x-publisher
+
+    # Path: alphafactor/x-publisher
+
+
+    ## Description
+
+    Publish tweets to X (Twitter) using the official Tweepy library. Supports text-only tweets, tweets with images or videos,
+    and returns detailed publish results including tweet ID and URL. Requires X API credentials (API Key, API Secret, Access
+    Token, Access Token Secret).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/x_api.md
+
+    - scripts/x_publisher.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-publisher
+
+    ```'
+examples:
+- description: Install X Publisher from ClawHub
+  usage: clawhub install x-publisher
+schema_version: '1.0'

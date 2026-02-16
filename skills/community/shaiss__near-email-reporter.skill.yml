@@ -1,0 +1,61 @@
+name: near-email-reporter
+title: Near Email Reporter
+version: 1.0.0
+description: Send NEAR reports and alerts via email with SMTP configuration, scheduling, and automatic reporting.
+metadata:
+  author: shaiss
+  category: Communication
+  tags:
+  - communication
+  - near
+  - email
+  - reporter
+  source: clawhub-community
+  clawhub_slug: near-email-reporter
+  clawhub_path: shaiss/near-email-reporter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Near Email Reporter
+
+    # Source: ClawHub community skill by shaiss
+
+    # Install: clawhub install near-email-reporter
+
+    # Path: shaiss/near-email-reporter
+
+
+    ## Description
+
+    Send NEAR reports and alerts via email with SMTP configuration, scheduling, and automatic reporting.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/emailer.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install near-email-reporter
+
+    ```'
+examples:
+- description: Install Near Email Reporter from ClawHub
+  usage: clawhub install near-email-reporter
+schema_version: '1.0'

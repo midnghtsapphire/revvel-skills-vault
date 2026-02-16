@@ -1,0 +1,64 @@
+name: prompt-assemble
+title: Prompt Safe
+version: 1.0.4
+description: Token-safe prompt assembly with memory orchestration. Use for any agent that needs to construct LLM prompts with
+  memory retrieval. Guarantees no API failure due to token overflow. Implements two-phase context construction, memory safety
+  valve, and hard limits on memory injection.
+metadata:
+  author: alexunitario-sketch
+  category: Development & Coding
+  tags:
+  - development-coding
+  - prompt
+  - assemble
+  source: clawhub-community
+  clawhub_slug: prompt-assemble
+  clawhub_path: alexunitario-sketch/prompt-assemble
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prompt Safe
+
+    # Source: ClawHub community skill by alexunitario-sketch
+
+    # Install: clawhub install prompt-assemble
+
+    # Path: alexunitario-sketch/prompt-assemble
+
+
+    ## Description
+
+    Token-safe prompt assembly with memory orchestration. Use for any agent that needs to construct LLM prompts with memory
+    retrieval. Guarantees no API failure due to token overflow. Implements two-phase context construction, memory safety valve,
+    and hard limits on memory injection.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/memory_standards.md
+
+    - references/token_estimation.md
+
+    - scripts/prompt_assemble.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prompt-assemble
+
+    ```'
+examples:
+- description: Install Prompt Safe from ClawHub
+  usage: clawhub install prompt-assemble
+schema_version: '1.0'

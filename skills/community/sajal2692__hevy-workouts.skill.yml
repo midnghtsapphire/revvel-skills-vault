@@ -1,0 +1,60 @@
+name: hevy-cli
+title: Hevy
+version: 1.0.1
+description: Interact with the Hevy fitness app via the hevy-cli command-line tool. Use when the user wants to view, create,
+  or update workouts, routines, exercise templates, or routine folders in their Hevy account. Triggers on requests involving
+  workout tracking, exercise history, routine management, or any He
+metadata:
+  author: sajal2692
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - hevy
+  - cli
+  source: clawhub-community
+  clawhub_slug: hevy-workouts
+  clawhub_path: sajal2692/hevy-workouts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hevy
+
+    # Source: ClawHub community skill by sajal2692
+
+    # Install: clawhub install hevy-workouts
+
+    # Path: sajal2692/hevy-workouts
+
+
+    ## Description
+
+    Interact with the Hevy fitness app via the hevy-cli command-line tool. Use when the user wants to view, create, or update
+    workouts, routines, exercise templates, or routine folders in their Hevy account. Triggers on requests involving workout
+    tracking, exercise history, routine management, or any He
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/commands.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hevy-workouts
+
+    ```'
+examples:
+- description: Install Hevy from ClawHub
+  usage: clawhub install hevy-workouts
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: ham-radio-dx
+title: Ham Radio DX Monitor
+version: 1.0.0
+description: Monitor DX clusters for rare station spots, track active DX expeditions, and get daily band activity digests
+  for amateur radio operators.
+metadata:
+  author: andrewdmwalker
+  category: System & OS
+  tags:
+  - system-os
+  - ham
+  - radio
+  source: clawhub-community
+  clawhub_slug: ham-radio-dx
+  clawhub_path: andrewdmwalker/ham-radio-dx
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ham Radio DX Monitor
+
+    # Source: ClawHub community skill by andrewdmwalker
+
+    # Install: clawhub install ham-radio-dx
+
+    # Path: andrewdmwalker/ham-radio-dx
+
+
+    ## Description
+
+    Monitor DX clusters for rare station spots, track active DX expeditions, and get daily band activity digests for amateur
+    radio operators.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - dx-monitor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ham-radio-dx
+
+    ```'
+examples:
+- description: Install Ham Radio DX Monitor from ClawHub
+  usage: clawhub install ham-radio-dx
+schema_version: '1.0'

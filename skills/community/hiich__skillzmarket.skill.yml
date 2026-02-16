@@ -1,0 +1,63 @@
+name: skillzmarket
+title: SkillzMarket
+version: 1.0.5
+description: Search and call monetized AI skills from Skillz Market with automatic USDC payments on Base. Use when the user
+  wants to find paid AI services, call external skills with cryptocurrency payments, or integrate with the Skillz Market ecosystem.
+metadata:
+  author: hiich
+  category: Search & Research
+  tags:
+  - search-research
+  - skillzmarket
+  source: clawhub-community
+  clawhub_slug: skillzmarket
+  clawhub_path: hiich/skillzmarket
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SkillzMarket
+
+    # Source: ClawHub community skill by hiich
+
+    # Install: clawhub install skillzmarket
+
+    # Path: hiich/skillzmarket
+
+
+    ## Description
+
+    Search and call monetized AI skills from Skillz Market with automatic USDC payments on Base. Use when the user wants to
+    find paid AI services, call external skills with cryptocurrency payments, or integrate with the Skillz Market ecosystem.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - skillz-call.sh
+
+    - skillz-cli.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skillzmarket
+
+    ```'
+examples:
+- description: Install SkillzMarket from ClawHub
+  usage: clawhub install skillzmarket
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: moltmarkets-trader
+title: Moltmarkets Trader
+version: 1.0.1
+description: Trade prediction markets on MoltMarkets intelligently. Use for screening markets, forming probability estimates,
+  detecting edge, sizing positions with Kelly criterion, placing bets, creating markets, resolving markets, and tracking calibration.
+  Triggers on any MoltMarkets trading activity, predictio
+metadata:
+  author: spiceoogway
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - moltmarkets
+  - trader
+  source: clawhub-community
+  clawhub_slug: moltmarkets-trader
+  clawhub_path: spiceoogway/moltmarkets-trader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltmarkets Trader
+
+    # Source: ClawHub community skill by spiceoogway
+
+    # Install: clawhub install moltmarkets-trader
+
+    # Path: spiceoogway/moltmarkets-trader
+
+
+    ## Description
+
+    Trade prediction markets on MoltMarkets intelligently. Use for screening markets, forming probability estimates, detecting
+    edge, sizing positions with Kelly criterion, placing bets, creating markets, resolving markets, and tracking calibration.
+    Triggers on any MoltMarkets trading activity, predictio
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/forecasting-guide.md
+
+    - references/kelly-criterion.md
+
+    - scripts/check-resolution-needed.sh
+
+    - scripts/create-market-with-odds.sh
+
+    - scripts/create-market.sh
+
+    - scripts/my-positions.sh
+
+    - scripts/place-bet.sh
+
+    - scripts/resolve-market.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltmarkets-trader
+
+    ```'
+examples:
+- description: Install Moltmarkets Trader from ClawHub
+  usage: clawhub install moltmarkets-trader
+schema_version: '1.0'

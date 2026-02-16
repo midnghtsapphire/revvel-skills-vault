@@ -1,0 +1,71 @@
+name: deepgram-discord-voice
+title: Discord Voice Using Deepgram
+version: 1.0.0
+description: Voice-channel conversations in Discord using Deepgram streaming STT + low-latency TTS
+metadata:
+  author: adriel1006
+  category: Social Media
+  tags:
+  - social-media
+  - deepgram
+  - discord
+  - voice
+  source: clawhub-community
+  clawhub_slug: discord-voice-deepgram
+  clawhub_path: adriel1006/discord-voice-deepgram
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Discord Voice Using Deepgram
+
+    # Source: ClawHub community skill by adriel1006
+
+    # Install: clawhub install discord-voice-deepgram
+
+    # Path: adriel1006/discord-voice-deepgram
+
+
+    ## Description
+
+    Voice-channel conversations in Discord using Deepgram streaming STT + low-latency TTS
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdbot.plugin.json
+
+    - index.ts
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/config.ts
+
+    - src/core-bridge.ts
+
+    - src/streaming-stt.ts
+
+    - src/streaming-tts.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install discord-voice-deepgram
+
+    ```'
+examples:
+- description: Install Discord Voice Using Deepgram from ClawHub
+  usage: clawhub install discord-voice-deepgram
+schema_version: '1.0'

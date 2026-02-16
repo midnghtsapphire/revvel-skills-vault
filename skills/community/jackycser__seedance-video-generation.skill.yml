@@ -1,0 +1,66 @@
+name: seedance-video
+title: Seedance Video Generation
+version: 1.0.3
+description: '"Generate AI videos using ByteDance Seedance. Use when the user wants to: (1) generate videos from text prompts,
+  (2) generate videos from images (first frame, first+last frame, reference images), or (3) query/manage video generation
+  tasks. Supports Seedance 1.5 Pro (with audio), 1.0 Pro, 1.0 Pro Fas'
+metadata:
+  author: jackycser
+  category: Media & Content
+  tags:
+  - media-content
+  - seedance
+  - video
+  source: clawhub-community
+  clawhub_slug: seedance-video-generation
+  clawhub_path: jackycser/seedance-video-generation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seedance Video Generation
+
+    # Source: ClawHub community skill by jackycser
+
+    # Install: clawhub install seedance-video-generation
+
+    # Path: jackycser/seedance-video-generation
+
+
+    ## Description
+
+    "Generate AI videos using ByteDance Seedance. Use when the user wants to: (1) generate videos from text prompts, (2) generate
+    videos from images (first frame, first+last frame, reference images), or (3) query/manage video generation tasks. Supports
+    Seedance 1.5 Pro (with audio), 1.0 Pro, 1.0 Pro Fas
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - how_to_send_video_via_feishu_app.md
+
+    - seedance.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seedance-video-generation
+
+    ```'
+examples:
+- description: Install Seedance Video Generation from ClawHub
+  usage: clawhub install seedance-video-generation
+schema_version: '1.0'

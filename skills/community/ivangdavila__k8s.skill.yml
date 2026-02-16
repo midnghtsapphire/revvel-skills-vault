@@ -1,0 +1,53 @@
+name: kubernetes
+title: Kubernetes
+version: 1.0.0
+description: Avoid common Kubernetes mistakes — resource limits, probe configuration, selector mismatches, and RBAC pitfalls.
+metadata:
+  author: ivangdavila
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - kubernetes
+  source: clawhub-community
+  clawhub_slug: k8s
+  clawhub_path: ivangdavila/k8s
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kubernetes
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install k8s
+
+    # Path: ivangdavila/k8s
+
+
+    ## Description
+
+    Avoid common Kubernetes mistakes — resource limits, probe configuration, selector mismatches, and RBAC pitfalls.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install k8s
+
+    ```'
+examples:
+- description: Install Kubernetes from ClawHub
+  usage: clawhub install k8s
+schema_version: '1.0'

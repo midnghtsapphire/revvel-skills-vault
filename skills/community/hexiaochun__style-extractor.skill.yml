@@ -1,0 +1,56 @@
+name: style-extractor
+title: style-extractor
+version: 1.0.0
+description: 从参考剧本或参考素材中提取统一风格锚点（STYLE_BASE），确保全剧视觉一致性。当需要匹配参考风格、提取画风、建立风格基准、生成风格资产包时使用。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - style
+  - extractor
+  source: clawhub-community
+  clawhub_slug: style-extractor
+  clawhub_path: hexiaochun/style-extractor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# style-extractor
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install style-extractor
+
+    # Path: hexiaochun/style-extractor
+
+
+    ## Description
+
+    从参考剧本或参考素材中提取统一风格锚点（STYLE_BASE），确保全剧视觉一致性。当需要匹配参考风格、提取画风、建立风格基准、生成风格资产包时使用。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/format-rules.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install style-extractor
+
+    ```'
+examples:
+- description: Install style-extractor from ClawHub
+  usage: clawhub install style-extractor
+schema_version: '1.0'

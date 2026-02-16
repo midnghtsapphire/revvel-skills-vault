@@ -1,0 +1,53 @@
+name: rendercv
+title: Cv Builder
+version: 1.0.0
+description: Generate professional CVs/resumes from YAML using rendercv - multiple templates, PDF output
+metadata:
+  author: lijie420461340
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - rendercv
+  source: clawhub-community
+  clawhub_slug: cv-builder
+  clawhub_path: lijie420461340/cv-builder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cv Builder
+
+    # Source: ClawHub community skill by lijie420461340
+
+    # Install: clawhub install cv-builder
+
+    # Path: lijie420461340/cv-builder
+
+
+    ## Description
+
+    Generate professional CVs/resumes from YAML using rendercv - multiple templates, PDF output
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cv-builder
+
+    ```'
+examples:
+- description: Install Cv Builder from ClawHub
+  usage: clawhub install cv-builder
+schema_version: '1.0'

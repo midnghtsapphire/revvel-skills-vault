@@ -1,0 +1,56 @@
+name: voice-to-report
+title: Voice To Report
+version: 1.0.0
+description: '"Convert voice recordings to structured construction reports. Field workers speak, AI transcribes and formats.
+  Supports daily reports, safety observations, progress updates."'
+metadata:
+  author: datadrivenconstruction
+  category: Utilities
+  tags:
+  - utilities
+  - voice
+  - report
+  source: clawhub-community
+  clawhub_slug: voice-to-report
+  clawhub_path: datadrivenconstruction/voice-to-report
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Voice To Report
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install voice-to-report
+
+    # Path: datadrivenconstruction/voice-to-report
+
+
+    ## Description
+
+    "Convert voice recordings to structured construction reports. Field workers speak, AI transcribes and formats. Supports
+    daily reports, safety observations, progress updates."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install voice-to-report
+
+    ```'
+examples:
+- description: Install Voice To Report from ClawHub
+  usage: clawhub install voice-to-report
+schema_version: '1.0'

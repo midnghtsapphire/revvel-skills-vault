@@ -1,0 +1,72 @@
+name: tandoor-recipes
+title: Tandoor Recipe
+version: 1.0.0
+description: Manage recipes, meal plans, and shopping lists in Tandoor Recipe Manager. Use when the user wants to create recipes,
+  plan meals, search for recipes, or manage their shopping list.
+metadata:
+  author: itsnikhil
+  category: Search & Research
+  tags:
+  - search-research
+  - tandoor
+  - recipes
+  source: clawhub-community
+  clawhub_slug: tandoor-recipes
+  clawhub_path: itsnikhil/tandoor-recipes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tandoor Recipe
+
+    # Source: ClawHub community skill by itsnikhil
+
+    # Install: clawhub install tandoor-recipes
+
+    # Path: itsnikhil/tandoor-recipes
+
+
+    ## Description
+
+    Manage recipes, meal plans, and shopping lists in Tandoor Recipe Manager. Use when the user wants to create recipes, plan
+    meals, search for recipes, or manage their shopping list.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API.md
+
+    - scripts/api.d.ts
+
+    - scripts/api.js
+
+    - scripts/package.json
+
+    - scripts/schemas.d.ts
+
+    - scripts/schemas.js
+
+    - scripts/tandoor.d.ts
+
+    - scripts/tandoor.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tandoor-recipes
+
+    ```'
+examples:
+- description: Install Tandoor Recipe from ClawHub
+  usage: clawhub install tandoor-recipes
+schema_version: '1.0'

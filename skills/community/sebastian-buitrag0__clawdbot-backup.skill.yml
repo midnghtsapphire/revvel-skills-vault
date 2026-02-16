@@ -1,0 +1,56 @@
+name: clawdbot-backup
+title: Clawdbot Backup
+version: 1.0.0
+description: Backup and restore ClawdBot configuration, skills, commands, and settings. Sync across devices, version control
+  with git, automate backups, and migrate to new machines.
+metadata:
+  author: sebastian-buitrag0
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawdbot
+  - backup
+  source: clawhub-community
+  clawhub_slug: clawdbot-backup
+  clawhub_path: sebastian-buitrag0/clawdbot-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Backup
+
+    # Source: ClawHub community skill by sebastian-buitrag0
+
+    # Install: clawhub install clawdbot-backup
+
+    # Path: sebastian-buitrag0/clawdbot-backup
+
+
+    ## Description
+
+    Backup and restore ClawdBot configuration, skills, commands, and settings. Sync across devices, version control with git,
+    automate backups, and migrate to new machines.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-backup
+
+    ```'
+examples:
+- description: Install Clawdbot Backup from ClawHub
+  usage: clawhub install clawdbot-backup
+schema_version: '1.0'

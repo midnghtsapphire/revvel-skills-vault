@@ -1,0 +1,57 @@
+name: book-oil-change
+title: Book Oil Change
+version: 1.0.1
+description: Book oil-change services through Lokuli MCP. Use when user needs to find and book oil-change. Triggers on requests
+  like "book a oil-change", "find oil-change near me", or any oil-change service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - oil
+  - change
+  source: clawhub-community
+  clawhub_slug: book-oil-change
+  clawhub_path: edwardrodriguez703-design/book-oil-change
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Oil Change
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-oil-change
+
+    # Path: edwardrodriguez703-design/book-oil-change
+
+
+    ## Description
+
+    Book oil-change services through Lokuli MCP. Use when user needs to find and book oil-change. Triggers on requests like
+    "book a oil-change", "find oil-change near me", or any oil-change service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-oil-change
+
+    ```'
+examples:
+- description: Install Book Oil Change from ClawHub
+  usage: clawhub install book-oil-change
+schema_version: '1.0'

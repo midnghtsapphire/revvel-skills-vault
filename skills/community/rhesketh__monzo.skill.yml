@@ -1,0 +1,71 @@
+name: monzo
+title: Monzo
+version: 1.0.2
+description: Access Monzo bank account - check balance, view transactions, manage pots, send feed notifications. For personal
+  finance queries and banking automation.
+metadata:
+  author: rhesketh
+  category: Communication
+  tags:
+  - communication
+  - monzo
+  source: clawhub-community
+  clawhub_slug: monzo
+  clawhub_path: rhesketh/monzo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Monzo
+
+    # Source: ClawHub community skill by rhesketh
+
+    # Install: clawhub install monzo
+
+    # Path: rhesketh/monzo
+
+
+    ## Description
+
+    Access Monzo bank account - check balance, view transactions, manage pots, send feed notifications. For personal finance
+    queries and banking automation.
+
+
+    ## Files
+
+    - README.md
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/balance.sh
+
+    - scripts/feed.sh
+
+    - scripts/pots.sh
+
+    - scripts/receipt.sh
+
+    - scripts/setup.sh
+
+    - scripts/transactions.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install monzo
+
+    ```'
+examples:
+- description: Install Monzo from ClawHub
+  usage: clawhub install monzo
+schema_version: '1.0'

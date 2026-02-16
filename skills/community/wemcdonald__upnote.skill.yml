@@ -1,0 +1,57 @@
+name: upnote
+title: UpNote
+version: 1.0.1
+description: Manage UpNote notes and notebooks via x-callback-url automation. Use when a user asks to create notes, open notes,
+  create notebooks, view tags, or manage content in UpNote.
+metadata:
+  author: wemcdonald
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - upnote
+  source: clawhub-community
+  clawhub_slug: upnote
+  clawhub_path: wemcdonald/upnote
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UpNote
+
+    # Source: ClawHub community skill by wemcdonald
+
+    # Install: clawhub install upnote
+
+    # Path: wemcdonald/upnote
+
+
+    ## Description
+
+    Manage UpNote notes and notebooks via x-callback-url automation. Use when a user asks to create notes, open notes, create
+    notebooks, view tags, or manage content in UpNote.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/upnote.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install upnote
+
+    ```'
+examples:
+- description: Install UpNote from ClawHub
+  usage: clawhub install upnote
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: engram
+title: Engram
+version: 0.1.2
+description: Provides semantic search for a local knowledge base using Pinecone and Gemini embeddings.
+metadata:
+  author: anwitch
+  category: Search & Research
+  tags:
+  - search-research
+  - engram
+  source: clawhub-community
+  clawhub_slug: engram
+  clawhub_path: anwitch/engram
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Engram
+
+    # Source: ClawHub community skill by anwitch
+
+    # Install: clawhub install engram
+
+    # Path: anwitch/engram
+
+
+    ## Description
+
+    Provides semantic search for a local knowledge base using Pinecone and Gemini embeddings.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install engram
+
+    ```'
+examples:
+- description: Install Engram from ClawHub
+  usage: clawhub install engram
+schema_version: '1.0'

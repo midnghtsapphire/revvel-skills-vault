@@ -1,0 +1,57 @@
+name: hire
+title: Hire
+version: 1.0.1
+description: Interactive hiring wizard to set up a new AI team member. Guides the user through role design via conversation,
+  generates agent identity files, and optionally sets up performance reviews. Use when the user wants to hire, add, or set
+  up a new AI agent, team member, or assistant. Triggers on phrases l
+metadata:
+  author: larsderidder
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - hire
+  source: clawhub-community
+  clawhub_slug: hire
+  clawhub_path: larsderidder/hire
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hire
+
+    # Source: ClawHub community skill by larsderidder
+
+    # Install: clawhub install hire
+
+    # Path: larsderidder/hire
+
+
+    ## Description
+
+    Interactive hiring wizard to set up a new AI team member. Guides the user through role design via conversation, generates
+    agent identity files, and optionally sets up performance reviews. Use when the user wants to hire, add, or set up a new
+    AI agent, team member, or assistant. Triggers on phrases l
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hire
+
+    ```'
+examples:
+- description: Install Hire from ClawHub
+  usage: clawhub install hire
+schema_version: '1.0'

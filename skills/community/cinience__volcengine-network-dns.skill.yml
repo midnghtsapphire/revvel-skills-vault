@@ -1,0 +1,61 @@
+name: volcengine-network-dns
+title: Volcengine Network Dns
+version: 1.0.0
+description: DNS record management on Volcengine networking services. Use when users need zone record query/update, traffic
+  routing changes, or DNS propagation troubleshooting.
+metadata:
+  author: cinience
+  category: General
+  tags:
+  - general
+  - volcengine
+  - network
+  - dns
+  source: clawhub-community
+  clawhub_slug: volcengine-network-dns
+  clawhub_path: cinience/volcengine-network-dns
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Volcengine Network Dns
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install volcengine-network-dns
+
+    # Path: cinience/volcengine-network-dns
+
+
+    ## Description
+
+    DNS record management on Volcengine networking services. Use when users need zone record query/update, traffic routing
+    changes, or DNS propagation troubleshooting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install volcengine-network-dns
+
+    ```'
+examples:
+- description: Install Volcengine Network Dns from ClawHub
+  usage: clawhub install volcengine-network-dns
+schema_version: '1.0'

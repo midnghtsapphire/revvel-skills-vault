@@ -1,0 +1,56 @@
+name: release-coordinator
+title: Release Coordinator
+version: 1.0.0
+description: Multi-repo release coordination - dependency management, release order orchestration, cross-repo validation.
+  Use for synchronized multi-service releases.
+metadata:
+  author: anton-abyzov
+  category: General
+  tags:
+  - general
+  - release
+  - coordinator
+  source: clawhub-community
+  clawhub_slug: sw-release-coordinator
+  clawhub_path: anton-abyzov/sw-release-coordinator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Release Coordinator
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-release-coordinator
+
+    # Path: anton-abyzov/sw-release-coordinator
+
+
+    ## Description
+
+    Multi-repo release coordination - dependency management, release order orchestration, cross-repo validation. Use for synchronized
+    multi-service releases.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-release-coordinator
+
+    ```'
+examples:
+- description: Install Release Coordinator from ClawHub
+  usage: clawhub install sw-release-coordinator
+schema_version: '1.0'

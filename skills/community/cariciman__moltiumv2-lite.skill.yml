@@ -1,0 +1,59 @@
+name: moltiumv2
+title: MoltiumV2
+version: 2.0.2
+description: Lightweight Clawhub bootstrap skill for MoltiumV2. Downloads the full RPC-first local toolkit from https://moltium.fun
+  and runs init/doctor.
+metadata:
+  author: cariciman
+  category: Marketing & Business
+  tags:
+  - marketing-business
+  - moltiumv2
+  source: clawhub-community
+  clawhub_slug: moltiumv2-lite
+  clawhub_path: cariciman/moltiumv2-lite
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MoltiumV2
+
+    # Source: ClawHub community skill by cariciman
+
+    # Install: clawhub install moltiumv2-lite
+
+    # Path: cariciman/moltiumv2-lite
+
+
+    ## Description
+
+    Lightweight Clawhub bootstrap skill for MoltiumV2. Downloads the full RPC-first local toolkit from https://moltium.fun
+    and runs init/doctor.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/quickstart.md
+
+    - scripts/bootstrap.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltiumv2-lite
+
+    ```'
+examples:
+- description: Install MoltiumV2 from ClawHub
+  usage: clawhub install moltiumv2-lite
+schema_version: '1.0'

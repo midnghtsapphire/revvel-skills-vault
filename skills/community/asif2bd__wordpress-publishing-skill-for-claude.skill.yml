@@ -1,0 +1,74 @@
+name: wordpress-publisher
+title: WordPress Publisher Skill
+version: 0.1.0
+description: Publish content directly to WordPress sites via REST API with full Gutenberg block support. Create and publish
+  posts/pages, auto-load and select categories from website, generate SEO-optimized tags, preview articles before publishing,
+  and generate Gutenberg blocks for tables, images, lists, and rich
+metadata:
+  author: asif2bd
+  category: Media & Content
+  tags:
+  - media-content
+  - wordpress
+  - publisher
+  source: clawhub-community
+  clawhub_slug: wordpress-publishing-skill-for-claude
+  clawhub_path: asif2bd/wordpress-publishing-skill-for-claude
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WordPress Publisher Skill
+
+    # Source: ClawHub community skill by asif2bd
+
+    # Install: clawhub install wordpress-publishing-skill-for-claude
+
+    # Path: asif2bd/wordpress-publishing-skill-for-claude
+
+
+    ## Description
+
+    Publish content directly to WordPress sites via REST API with full Gutenberg block support. Create and publish posts/pages,
+    auto-load and select categories from website, generate SEO-optimized tags, preview articles before publishing, and generate
+    Gutenberg blocks for tables, images, lists, and rich
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - CONTRIBUTING.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pytest.ini
+
+    - requirements-dev.txt
+
+    - requirements.txt
+
+    - .claude-plugin/marketplace.json
+
+    - .claude-plugin/plugin.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wordpress-publishing-skill-for-claude
+
+    ```'
+examples:
+- description: Install WordPress Publisher Skill from ClawHub
+  usage: clawhub install wordpress-publishing-skill-for-claude
+schema_version: '1.0'

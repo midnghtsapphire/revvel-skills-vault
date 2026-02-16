@@ -1,0 +1,53 @@
+name: article
+title: Article
+version: 1.0.0
+description: Create compelling articles using journalistic standards and engagement optimization for maximum reader impact.
+metadata:
+  author: ivangdavila
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - article
+  source: clawhub-community
+  clawhub_slug: article
+  clawhub_path: ivangdavila/article
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Article
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install article
+
+    # Path: ivangdavila/article
+
+
+    ## Description
+
+    Create compelling articles using journalistic standards and engagement optimization for maximum reader impact.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install article
+
+    ```'
+examples:
+- description: Install Article from ClawHub
+  usage: clawhub install article
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: bitbucket
+title: Bitbucket
+version: 1.0.0
+description: Manage Bitbucket repositories, pull requests, and pipelines via API.
+metadata:
+  author: mrgoodb
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bitbucket
+  source: clawhub-community
+  clawhub_slug: bitbucket
+  clawhub_path: mrgoodb/bitbucket
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bitbucket
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install bitbucket
+
+    # Path: mrgoodb/bitbucket
+
+
+    ## Description
+
+    Manage Bitbucket repositories, pull requests, and pipelines via API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bitbucket
+
+    ```'
+examples:
+- description: Install Bitbucket from ClawHub
+  usage: clawhub install bitbucket
+schema_version: '1.0'

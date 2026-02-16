@@ -1,0 +1,64 @@
+name: session-cleaner
+title: Session Cleaner
+version: 1.0.0
+description: Convert raw OpenClaw session JSONL transcripts into clean, readable markdown. Strips tool calls, metadata, and
+  system noise. Keeps the conversation.
+metadata:
+  author: henrino3
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - session
+  - cleaner
+  source: clawhub-community
+  clawhub_slug: ec-session-cleaner
+  clawhub_path: henrino3/ec-session-cleaner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Session Cleaner
+
+    # Source: ClawHub community skill by henrino3
+
+    # Install: clawhub install ec-session-cleaner
+
+    # Path: henrino3/ec-session-cleaner
+
+
+    ## Description
+
+    Convert raw OpenClaw session JSONL transcripts into clean, readable markdown. Strips tool calls, metadata, and system
+    noise. Keeps the conversation.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - session-cleaner-scotty-remote.sh
+
+    - session-cleaner-spock.sh
+
+    - session-cleaner.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ec-session-cleaner
+
+    ```'
+examples:
+- description: Install Session Cleaner from ClawHub
+  usage: clawhub install ec-session-cleaner
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: git-crypt-backup
+title: Git-Crypt Backup
+version: 1.0.0
+description: Backup Clawdbot workspace and config to GitHub with git-crypt encryption. Use for daily automated backups or
+  manual backup/restore operations.
+metadata:
+  author: louzhixian
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - git
+  - crypt
+  - backup
+  source: clawhub-community
+  clawhub_slug: git-crypt-backup
+  clawhub_path: louzhixian/git-crypt-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git-Crypt Backup
+
+    # Source: ClawHub community skill by louzhixian
+
+    # Install: clawhub install git-crypt-backup
+
+    # Path: louzhixian/git-crypt-backup
+
+
+    ## Description
+
+    Backup Clawdbot workspace and config to GitHub with git-crypt encryption. Use for daily automated backups or manual backup/restore
+    operations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/backup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install git-crypt-backup
+
+    ```'
+examples:
+- description: Install Git-Crypt Backup from ClawHub
+  usage: clawhub install git-crypt-backup
+schema_version: '1.0'

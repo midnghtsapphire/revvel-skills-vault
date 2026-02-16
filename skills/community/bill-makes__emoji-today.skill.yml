@@ -1,0 +1,58 @@
+name: emoji-voter
+title: Emoji Today
+version: 1.1.0
+description: '>'
+metadata:
+  author: bill-makes
+  category: General
+  tags:
+  - general
+  - emoji
+  - voter
+  source: clawhub-community
+  clawhub_slug: emoji-today
+  clawhub_path: bill-makes/emoji-today
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Emoji Today
+
+    # Source: ClawHub community skill by bill-makes
+
+    # Install: clawhub install emoji-today
+
+    # Path: bill-makes/emoji-today
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/package.json
+
+    - scripts/vote-and-post.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install emoji-today
+
+    ```'
+examples:
+- description: Install Emoji Today from ClawHub
+  usage: clawhub install emoji-today
+schema_version: '1.0'

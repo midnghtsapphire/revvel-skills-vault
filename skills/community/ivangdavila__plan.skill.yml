@@ -1,0 +1,58 @@
+name: plan
+title: Plan
+version: 1.0.0
+description: Auto-learns when to plan vs execute directly. Adapts planning depth to task type. Improves strategy through outcome
+  tracking.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - plan
+  source: clawhub-community
+  clawhub_slug: plan
+  clawhub_path: ivangdavila/plan
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Plan
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install plan
+
+    # Path: ivangdavila/plan
+
+
+    ## Description
+
+    Auto-learns when to plan vs execute directly. Adapts planning depth to task type. Improves strategy through outcome tracking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - outcomes.md
+
+    - strategies.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install plan
+
+    ```'
+examples:
+- description: Install Plan from ClawHub
+  usage: clawhub install plan
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: droyd
+title: Droyd
+version: 1.0.3
+description: Crypto Trading | Crypto Search | Crypto Token Filter -- AI crypto trading wallet via natural language. Use when
+  the user wants to execute AI research tasks, trade crypto autonomously, search crypto content/news, filter projects by market
+  criteria, manage trading positions, or interact with DROYD age
+metadata:
+  author: dustinjamest
+  category: Search & Research
+  tags:
+  - search-research
+  - droyd
+  source: clawhub-community
+  clawhub_slug: droyd
+  clawhub_path: dustinjamest/droyd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Droyd
+
+    # Source: ClawHub community skill by dustinjamest
+
+    # Install: clawhub install droyd
+
+    # Path: dustinjamest/droyd
+
+
+    ## Description
+
+    Crypto Trading | Crypto Search | Crypto Token Filter -- AI crypto trading wallet via natural language. Use when the user
+    wants to execute AI research tasks, trade crypto autonomously, search crypto content/news, filter projects by market criteria,
+    manage trading positions, or interact with DROYD age
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/agent-chat.md
+
+    - references/project-filter.md
+
+    - references/project-search.md
+
+    - references/search.md
+
+    - references/trading.md
+
+    - scripts/droyd-chat.sh
+
+    - scripts/droyd-filter.sh
+
+    - scripts/droyd-positions.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install droyd
+
+    ```'
+examples:
+- description: Install Droyd from ClawHub
+  usage: clawhub install droyd
+schema_version: '1.0'

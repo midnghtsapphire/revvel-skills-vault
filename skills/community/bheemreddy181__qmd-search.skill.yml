@@ -1,0 +1,32 @@
+name: qmd
+title: qmd Search
+version: 1.1.0
+description: 'Fast local search for markdown files, notes, and docs using qmd CLI. Use instead of `find` for file discovery.
+  Combines BM25 full-text search, vector semantic search, and LLM reranking—all running locally. Use when searching for files,
+  finding code, locating documentation, or discovering content in '
+metadata:
+  author: bheemreddy181
+  category: Search & Research
+  tags:
+  - search-research
+  - qmd
+  source: clawhub-community
+  clawhub_slug: qmd-search
+  clawhub_path: bheemreddy181/qmd-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# qmd Search\n# Source: ClawHub community skill by bheemreddy181\n# Install: clawhub install qmd-search\n# Path:\
+    \ bheemreddy181/qmd-search\n\n## Description\nFast local search for markdown files, notes, and docs using qmd CLI. Use\
+    \ instead of `find` for file discovery. Combines BM25 full-text search, vector semantic search, and LLM reranking—all\
+    \ running locally. Use when searching for files, finding code, locating documentation, or discovering content in \n\n\
+    ## Files\n- SKILL.md\n- _meta.json\n\n## Installation\n```bash\nclawhub install qmd-search\n```"
+examples:
+- description: Install qmd Search from ClawHub
+  usage: clawhub install qmd-search
+schema_version: '1.0'

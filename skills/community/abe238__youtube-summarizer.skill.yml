@@ -1,0 +1,62 @@
+name: youtube-summarizer
+title: YouTube Summarizer
+version: 1.0.0
+description: Automatically fetch YouTube video transcripts, generate structured summaries, and send full transcripts to messaging
+  platforms. Detects YouTube URLs and provides metadata, key insights, and downloadable transcripts.
+metadata:
+  author: abe238
+  category: Media & Content
+  tags:
+  - media-content
+  - youtube
+  - summarizer
+  source: clawhub-community
+  clawhub_slug: youtube-summarizer
+  clawhub_path: abe238/youtube-summarizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube Summarizer
+
+    # Source: ClawHub community skill by abe238
+
+    # Install: clawhub install youtube-summarizer
+
+    # Path: abe238/youtube-summarizer
+
+
+    ## Description
+
+    Automatically fetch YouTube video transcripts, generate structured summaries, and send full transcripts to messaging platforms.
+    Detects YouTube URLs and provides metadata, key insights, and downloadable transcripts.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - examples/sample-output.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-summarizer
+
+    ```'
+examples:
+- description: Install YouTube Summarizer from ClawHub
+  usage: clawhub install youtube-summarizer
+schema_version: '1.0'

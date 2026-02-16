@@ -1,0 +1,75 @@
+name: obsidian-conversation-backup
+title: Backup of conversations to Obsidian
+version: 1.0.0
+description: Automatic conversation backup system for Obsidian with incremental snapshots, hourly breakdowns, and formatted
+  chat-style markdown. Use when setting up conversation archival, preventing data loss from /new resets, or organizing chat
+  history in Obsidian vault with proper formatting (colored callouts,
+metadata:
+  author: laserducktales
+  category: Communication
+  tags:
+  - communication
+  - obsidian
+  - conversation
+  - backup
+  source: clawhub-community
+  clawhub_slug: obsidian-conversation-backup
+  clawhub_path: laserducktales/obsidian-conversation-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Backup of conversations to Obsidian
+
+    # Source: ClawHub community skill by laserducktales
+
+    # Install: clawhub install obsidian-conversation-backup
+
+    # Path: laserducktales/obsidian-conversation-backup
+
+
+    ## Description
+
+    Automatic conversation backup system for Obsidian with incremental snapshots, hourly breakdowns, and formatted chat-style
+    markdown. Use when setting up conversation archival, preventing data loss from /new resets, or organizing chat history
+    in Obsidian vault with proper formatting (colored callouts,
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.txt
+
+    - install.sh
+
+    - scripts/create_hourly_snapshots.sh
+
+    - scripts/format_message_v2.jq.txt
+
+    - scripts/monitor_and_save.sh
+
+    - scripts/save_full_snapshot.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install obsidian-conversation-backup
+
+    ```'
+examples:
+- description: Install Backup of conversations to Obsidian from ClawHub
+  usage: clawhub install obsidian-conversation-backup
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: moltron-skill-creator
+title: Moltron Skill Creator
+version: 1.0.0
+description: Dynamically create, version, and monitor persistent skills, and answers @moltron requests. Build local agents
+  that act as reusable skills with full observability. Gives OpenClaw evolution capabilities. This is the best option for
+  all skills that require code since it provides full versionning and ob
+metadata:
+  author: alaa-eddine
+  category: Development & Coding
+  tags:
+  - development-coding
+  - moltron
+  - skill
+  - creator
+  source: clawhub-community
+  clawhub_slug: moltron-skill-creator
+  clawhub_path: alaa-eddine/moltron-skill-creator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltron Skill Creator
+
+    # Source: ClawHub community skill by alaa-eddine
+
+    # Install: clawhub install moltron-skill-creator
+
+    # Path: alaa-eddine/moltron-skill-creator
+
+
+    ## Description
+
+    Dynamically create, version, and monitor persistent skills, and answers @moltron requests. Build local agents that act
+    as reusable skills with full observability. Gives OpenClaw evolution capabilities. This is the best option for all skills
+    that require code since it provides full versionning and ob
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/smyth-sdk-instructions.md
+
+    - scripts/score.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltron-skill-creator
+
+    ```'
+examples:
+- description: Install Moltron Skill Creator from ClawHub
+  usage: clawhub install moltron-skill-creator
+schema_version: '1.0'

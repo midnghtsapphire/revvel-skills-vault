@@ -1,0 +1,59 @@
+name: ii-irc
+title: ii-IRC
+version: 1.0.0
+description: Persistent IRC presence using ii (minimalist file-based IRC client) with event-driven mention detection. Use
+  when setting up an AI agent on IRC, monitoring IRC channels, sending IRC messages, or integrating OpenClaw with IRC via
+  ii. Covers ii setup, mention watcher, systemd services, and message sen
+metadata:
+  author: destructatron
+  category: Communication
+  tags:
+  - communication
+  - irc
+  source: clawhub-community
+  clawhub_slug: ii-irc
+  clawhub_path: destructatron/ii-irc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ii-IRC
+
+    # Source: ClawHub community skill by destructatron
+
+    # Install: clawhub install ii-irc
+
+    # Path: destructatron/ii-irc
+
+
+    ## Description
+
+    Persistent IRC presence using ii (minimalist file-based IRC client) with event-driven mention detection. Use when setting
+    up an AI agent on IRC, monitoring IRC channels, sending IRC messages, or integrating OpenClaw with IRC via ii. Covers
+    ii setup, mention watcher, systemd services, and message sen
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ii-irc
+
+    ```'
+examples:
+- description: Install ii-IRC from ClawHub
+  usage: clawhub install ii-irc
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: ui-test
+title: UI Test
+version: 1.2.1
+description: Plain English E2E UI testing. Describe tests in natural language, agent executes via browser tool, then exports
+  real Playwright test scripts for CI/CD. Use when asked to create UI tests, test a website, or generate Playwright scripts.
+metadata:
+  author: clawd21
+  category: Search & Research
+  tags:
+  - search-research
+  - test
+  source: clawhub-community
+  clawhub_slug: ui-test
+  clawhub_path: clawd21/ui-test
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UI Test
+
+    # Source: ClawHub community skill by clawd21
+
+    # Install: clawhub install ui-test
+
+    # Path: clawd21/ui-test
+
+
+    ## Description
+
+    Plain English E2E UI testing. Describe tests in natural language, agent executes via browser tool, then exports real Playwright
+    test scripts for CI/CD. Use when asked to create UI tests, test a website, or generate Playwright scripts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ui-test.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ui-test
+
+    ```'
+examples:
+- description: Install UI Test from ClawHub
+  usage: clawhub install ui-test
+schema_version: '1.0'

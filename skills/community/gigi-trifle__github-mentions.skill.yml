@@ -1,0 +1,62 @@
+name: github-mentions
+title: GitHub Mentions
+version: 1.1.0
+description: Monitor and track GitHub mentions for your username across your orgs. Queries for new mentions, tracks status
+  (pending/in_progress/completed) to avoid redundant work. Use to check for new mentions or mark mentions as being addressed.
+metadata:
+  author: gigi-trifle
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - mentions
+  source: clawhub-community
+  clawhub_slug: github-mentions
+  clawhub_path: gigi-trifle/github-mentions
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHub Mentions
+
+    # Source: ClawHub community skill by gigi-trifle
+
+    # Install: clawhub install github-mentions
+
+    # Path: gigi-trifle/github-mentions
+
+
+    ## Description
+
+    Monitor and track GitHub mentions for your username across your orgs. Queries for new mentions, tracks status (pending/in_progress/completed)
+    to avoid redundant work. Use to check for new mentions or mark mentions as being addressed.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdhub.json
+
+    - github-mentions.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install github-mentions
+
+    ```'
+examples:
+- description: Install GitHub Mentions from ClawHub
+  usage: clawhub install github-mentions
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: dependency-checker
+title: Dependency Checker
+version: 1.1.0
+description: Scan npm and pip projects for outdated dependencies, security vulnerabilities, and updates.
+metadata:
+  author: sa9saq
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - dependency
+  - checker
+  source: clawhub-community
+  clawhub_slug: dependency-checker
+  clawhub_path: sa9saq/dependency-checker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dependency Checker
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install dependency-checker
+
+    # Path: sa9saq/dependency-checker
+
+
+    ## Description
+
+    Scan npm and pip projects for outdated dependencies, security vulnerabilities, and updates.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dependency-checker
+
+    ```'
+examples:
+- description: Install Dependency Checker from ClawHub
+  usage: clawhub install dependency-checker
+schema_version: '1.0'

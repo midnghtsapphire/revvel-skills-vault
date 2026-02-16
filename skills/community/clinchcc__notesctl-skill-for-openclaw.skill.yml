@@ -1,0 +1,67 @@
+name: notesctl
+title: Notesctl
+version: 0.1.0
+description: Manage Apple Notes via deterministic local scripts (create, append, list, search, export, and edit). Use when
+  a user asks OpenClaw to add a note, list notes, search notes, or manage note folders.
+metadata:
+  author: clinchcc
+  category: Search & Research
+  tags:
+  - search-research
+  - notesctl
+  source: clawhub-community
+  clawhub_slug: notesctl-skill-for-openclaw
+  clawhub_path: clinchcc/notesctl-skill-for-openclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notesctl
+
+    # Source: ClawHub community skill by clinchcc
+
+    # Install: clawhub install notesctl-skill-for-openclaw
+
+    # Path: clinchcc/notesctl-skill-for-openclaw
+
+
+    ## Description
+
+    Manage Apple Notes via deterministic local scripts (create, append, list, search, export, and edit). Use when a user asks
+    OpenClaw to add a note, list notes, search notes, or manage note folders.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/notes_export.sh
+
+    - scripts/notes_list.sh
+
+    - scripts/notes_new.sh
+
+    - scripts/notes_post.sh
+
+    - scripts/notes_search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notesctl-skill-for-openclaw
+
+    ```'
+examples:
+- description: Install Notesctl from ClawHub
+  usage: clawhub install notesctl-skill-for-openclaw
+schema_version: '1.0'

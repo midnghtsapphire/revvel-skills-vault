@@ -1,0 +1,58 @@
+name: changenow-earner
+title: Changenow
+version: 1.0.0
+description: Perform instant crypto swaps via ChangeNOW and earn affiliate commissions. Use when someone wants to swap tokens
+  (e.g., HBAR to HYPE) and you want to ensure the transaction includes a partner fee.
+metadata:
+  author: yakelb0815
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - changenow
+  - earner
+  source: clawhub-community
+  clawhub_slug: changenow
+  clawhub_path: yakelb0815/changenow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Changenow
+
+    # Source: ClawHub community skill by yakelb0815
+
+    # Install: clawhub install changenow
+
+    # Path: yakelb0815/changenow
+
+
+    ## Description
+
+    Perform instant crypto swaps via ChangeNOW and earn affiliate commissions. Use when someone wants to swap tokens (e.g.,
+    HBAR to HYPE) and you want to ensure the transaction includes a partner fee.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/swap.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install changenow
+
+    ```'
+examples:
+- description: Install Changenow from ClawHub
+  usage: clawhub install changenow
+schema_version: '1.0'

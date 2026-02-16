@@ -1,0 +1,64 @@
+name: feishu-attendance
+title: Feishu Attendance
+version: 1.0.11
+description: Monitor Feishu (Lark) attendance records. Check for late, early leave, or absent employees and report to admin.
+metadata:
+  author: autogame-17
+  category: System & OS
+  tags:
+  - system-os
+  - feishu
+  - attendance
+  source: clawhub-community
+  clawhub_slug: feishu-attendance
+  clawhub_path: autogame-17/feishu-attendance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feishu Attendance
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install feishu-attendance
+
+    # Path: autogame-17/feishu-attendance
+
+
+    ## Description
+
+    Monitor Feishu (Lark) attendance records. Check for late, early leave, or absent employees and report to admin.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package-lock.json
+
+    - package.json
+
+    - lib/api.js
+
+    - lib/auth.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-attendance
+
+    ```'
+examples:
+- description: Install Feishu Attendance from ClawHub
+  usage: clawhub install feishu-attendance
+schema_version: '1.0'

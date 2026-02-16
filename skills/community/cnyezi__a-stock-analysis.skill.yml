@@ -1,0 +1,60 @@
+name: a-stock-analysis
+title: A股分时量能分析
+version: 1.0.0
+description: 'A股实时行情与分时量能分析。获取沪深股票实时价格、涨跌、成交量，分析分时量能分布（早盘/尾盘放量）、主力动向（抢筹/出货信号）、涨停封单。支持持仓管理和盈亏分析。Use when: (1) 查询A股实时行情, (2)
+  分析主力资金动向, (3) 查看分时成交量分布, (4) 管理股票持仓, (5) 分析持仓盈亏。'
+metadata:
+  author: cnyezi
+  category: General
+  tags:
+  - general
+  - stock
+  - analysis
+  source: clawhub-community
+  clawhub_slug: a-stock-analysis
+  clawhub_path: cnyezi/a-stock-analysis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# A股分时量能分析
+
+    # Source: ClawHub community skill by cnyezi
+
+    # Install: clawhub install a-stock-analysis
+
+    # Path: cnyezi/a-stock-analysis
+
+
+    ## Description
+
+    A股实时行情与分时量能分析。获取沪深股票实时价格、涨跌、成交量，分析分时量能分布（早盘/尾盘放量）、主力动向（抢筹/出货信号）、涨停封单。支持持仓管理和盈亏分析。Use when: (1) 查询A股实时行情, (2) 分析主力资金动向,
+    (3) 查看分时成交量分布, (4) 管理股票持仓, (5) 分析持仓盈亏。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/analyze.py
+
+    - scripts/portfolio.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install a-stock-analysis
+
+    ```'
+examples:
+- description: Install A股分时量能分析 from ClawHub
+  usage: clawhub install a-stock-analysis
+schema_version: '1.0'

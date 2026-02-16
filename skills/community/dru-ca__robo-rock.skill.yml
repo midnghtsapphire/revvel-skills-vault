@@ -1,0 +1,55 @@
+name: roborock
+title: Roborock Vacuum Control
+version: 1.0.0
+description: Control Roborock robot vacuums (status, clean, maps, consumables). Use when asked to vacuum, check vacuum status,
+  control robot vacuum, or manage cleaning schedules. Triggers on vacuum, roborock, clean floor, hoover, robot cleaner keywords.
+metadata:
+  author: dru-ca
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - roborock
+  source: clawhub-community
+  clawhub_slug: robo-rock
+  clawhub_path: dru-ca/robo-rock
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Roborock Vacuum Control
+
+    # Source: ClawHub community skill by dru-ca
+
+    # Install: clawhub install robo-rock
+
+    # Path: dru-ca/robo-rock
+
+
+    ## Description
+
+    Control Roborock robot vacuums (status, clean, maps, consumables). Use when asked to vacuum, check vacuum status, control
+    robot vacuum, or manage cleaning schedules. Triggers on vacuum, roborock, clean floor, hoover, robot cleaner keywords.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install robo-rock
+
+    ```'
+examples:
+- description: Install Roborock Vacuum Control from ClawHub
+  usage: clawhub install robo-rock
+schema_version: '1.0'

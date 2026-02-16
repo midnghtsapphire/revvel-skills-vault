@@ -1,0 +1,63 @@
+name: pets
+title: Pets
+version: 1.0.0
+description: Track and care for your pets with profiles, routines, behavior logging, training progress, and creative projects.
+metadata:
+  author: ivangdavila
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - pets
+  source: clawhub-community
+  clawhub_slug: pets
+  clawhub_path: ivangdavila/pets
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pets
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install pets
+
+    # Path: ivangdavila/pets
+
+
+    ## Description
+
+    Track and care for your pets with profiles, routines, behavior logging, training progress, and creative projects.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - behavior.md
+
+    - creative.md
+
+    - reports.md
+
+    - routines.md
+
+    - training.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pets
+
+    ```'
+examples:
+- description: Install Pets from ClawHub
+  usage: clawhub install pets
+schema_version: '1.0'

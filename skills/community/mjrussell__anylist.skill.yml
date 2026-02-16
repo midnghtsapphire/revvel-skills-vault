@@ -1,0 +1,55 @@
+name: anylist
+title: Anylist
+version: 0.1.0
+description: Manage grocery and shopping lists via AnyList. Use when user asks about shopping lists, groceries, or adding/checking
+  off items to buy.
+metadata:
+  author: mjrussell
+  category: General
+  tags:
+  - general
+  - anylist
+  source: clawhub-community
+  clawhub_slug: anylist
+  clawhub_path: mjrussell/anylist
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Anylist
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install anylist
+
+    # Path: mjrussell/anylist
+
+
+    ## Description
+
+    Manage grocery and shopping lists via AnyList. Use when user asks about shopping lists, groceries, or adding/checking
+    off items to buy.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install anylist
+
+    ```'
+examples:
+- description: Install Anylist from ClawHub
+  usage: clawhub install anylist
+schema_version: '1.0'

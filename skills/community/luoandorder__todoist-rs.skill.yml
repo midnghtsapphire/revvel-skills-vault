@@ -1,0 +1,55 @@
+name: todoist
+title: todoist latest
+version: 1.0.1
+description: Manage Todoist tasks. Use when the user mentions "todoist", "my tasks", "task list", "add a task", "complete
+  task", or wants to interact with their Todoist account.
+metadata:
+  author: luoandorder
+  category: Development & Coding
+  tags:
+  - development-coding
+  - todoist
+  source: clawhub-community
+  clawhub_slug: todoist-rs
+  clawhub_path: luoandorder/todoist-rs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# todoist latest
+
+    # Source: ClawHub community skill by luoandorder
+
+    # Install: clawhub install todoist-rs
+
+    # Path: luoandorder/todoist-rs
+
+
+    ## Description
+
+    Manage Todoist tasks. Use when the user mentions "todoist", "my tasks", "task list", "add a task", "complete task", or
+    wants to interact with their Todoist account.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todoist-rs
+
+    ```'
+examples:
+- description: Install todoist latest from ClawHub
+  usage: clawhub install todoist-rs
+schema_version: '1.0'

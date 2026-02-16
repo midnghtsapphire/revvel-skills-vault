@@ -1,0 +1,58 @@
+name: novel-to-script
+title: novel-to-script
+version: 1.0.0
+description: 将小说/网文内容转换为可拍、可剪、可分镜、可配音的漫剧剧本格式。当用户需要把小说改编成剧本、转换网文为短剧脚本、生成漫剧剧本时使用。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - novel
+  - script
+  source: clawhub-community
+  clawhub_slug: novel-to-script
+  clawhub_path: hexiaochun/novel-to-script
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# novel-to-script
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install novel-to-script
+
+    # Path: hexiaochun/novel-to-script
+
+
+    ## Description
+
+    将小说/网文内容转换为可拍、可剪、可分镜、可配音的漫剧剧本格式。当用户需要把小说改编成剧本、转换网文为短剧脚本、生成漫剧剧本时使用。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/examples.md
+
+    - references/format-rules.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install novel-to-script
+
+    ```'
+examples:
+- description: Install novel-to-script from ClawHub
+  usage: clawhub install novel-to-script
+schema_version: '1.0'

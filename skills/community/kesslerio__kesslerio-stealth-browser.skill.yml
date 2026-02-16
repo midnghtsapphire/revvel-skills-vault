@@ -1,0 +1,70 @@
+name: stealth-browser
+title: Stealth Browser
+version: 1.0.0
+description: Anti-bot browser automation using Camoufox and Nodriver. Bypasses Cloudflare Turnstile, Datadome, and aggressive
+  anti-bot on sites like Airbnb and Yelp. Use when standard Playwright/Selenium gets blocked.
+metadata:
+  author: kesslerio
+  category: Search & Research
+  tags:
+  - search-research
+  - stealth
+  - browser
+  source: clawhub-community
+  clawhub_slug: kesslerio-stealth-browser
+  clawhub_path: kesslerio/kesslerio-stealth-browser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stealth Browser
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install kesslerio-stealth-browser
+
+    # Path: kesslerio/kesslerio-stealth-browser
+
+
+    ## Description
+
+    Anti-bot browser automation using Camoufox and Nodriver. Bypasses Cloudflare Turnstile, Datadome, and aggressive anti-bot
+    on sites like Airbnb and Yelp. Use when standard Playwright/Selenium gets blocked.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/fingerprint-checks.md
+
+    - references/proxy-setup.md
+
+    - scripts/camoufox-fetch.py
+
+    - scripts/camoufox-session.py
+
+    - scripts/curl-api.py
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kesslerio-stealth-browser
+
+    ```'
+examples:
+- description: Install Stealth Browser from ClawHub
+  usage: clawhub install kesslerio-stealth-browser
+schema_version: '1.0'

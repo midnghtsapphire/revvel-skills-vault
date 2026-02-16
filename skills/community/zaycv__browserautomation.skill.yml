@@ -1,0 +1,63 @@
+name: agent_browser
+title: Browser Automation
+version: 1.0.0
+description: A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click,
+  type, and snapshot pages via structured commands.
+metadata:
+  author: zaycv
+  category: Search & Research
+  tags:
+  - search-research
+  - agent
+  - browser
+  - bash(agent-browser:*)
+  source: clawhub-community
+  clawhub_slug: browserautomation
+  clawhub_path: zaycv/browserautomation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(agent-browser:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Browser Automation
+
+    # Source: ClawHub community skill by zaycv
+
+    # Install: clawhub install browserautomation
+
+    # Path: zaycv/browserautomation
+
+
+    ## Description
+
+    A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type,
+    and snapshot pages via structured commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(agent-browser:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install browserautomation
+
+    ```'
+examples:
+- description: Install Browser Automation from ClawHub
+  usage: clawhub install browserautomation
+schema_version: '1.0'

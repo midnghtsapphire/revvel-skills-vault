@@ -1,0 +1,58 @@
+name: dooray-hook
+title: Dooray Hook
+version: 0.1.1
+description: Send automated notifications to Dooray! messenger channels via webhooks.
+metadata:
+  author: iizs
+  category: Communication
+  tags:
+  - communication
+  - dooray
+  - hook
+  source: clawhub-community
+  clawhub_slug: openclaw-dooray-hook-skill
+  clawhub_path: iizs/openclaw-dooray-hook-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dooray Hook
+
+    # Source: ClawHub community skill by iizs
+
+    # Install: clawhub install openclaw-dooray-hook-skill
+
+    # Path: iizs/openclaw-dooray-hook-skill
+
+
+    ## Description
+
+    Send automated notifications to Dooray! messenger channels via webhooks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/dooray-api.md
+
+    - scripts/send_dooray.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-dooray-hook-skill
+
+    ```'
+examples:
+- description: Install Dooray Hook from ClawHub
+  usage: clawhub install openclaw-dooray-hook-skill
+schema_version: '1.0'

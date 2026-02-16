@@ -1,0 +1,60 @@
+name: qwen-image-plus-sophnet
+title: Qwen Image Plus Sophnet
+version: 1.0.0
+description: Generate images via Sophnet Qwen-Image-Plus and poll for task completion. Use when the user asks for Sophnet
+  image generation, Qwen-Image-Plus, or requests an image from the Sophnet API.
+metadata:
+  author: duffycoder
+  category: Media & Content
+  tags:
+  - media-content
+  - qwen
+  - image
+  - plus
+  - sophnet
+  source: clawhub-community
+  clawhub_slug: qwen-image-plus-sophnet
+  clawhub_path: duffycoder/qwen-image-plus-sophnet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qwen Image Plus Sophnet
+
+    # Source: ClawHub community skill by duffycoder
+
+    # Install: clawhub install qwen-image-plus-sophnet
+
+    # Path: duffycoder/qwen-image-plus-sophnet
+
+
+    ## Description
+
+    Generate images via Sophnet Qwen-Image-Plus and poll for task completion. Use when the user asks for Sophnet image generation,
+    Qwen-Image-Plus, or requests an image from the Sophnet API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_image.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qwen-image-plus-sophnet
+
+    ```'
+examples:
+- description: Install Qwen Image Plus Sophnet from ClawHub
+  usage: clawhub install qwen-image-plus-sophnet
+schema_version: '1.0'

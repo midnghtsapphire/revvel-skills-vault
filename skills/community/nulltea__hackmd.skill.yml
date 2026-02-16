@@ -1,0 +1,57 @@
+name: hackmd
+title: HackMD
+version: 1.0.0
+description: Work with HackMD documents. Use when reading, creating, updating, or deleting notes on HackMD. Supports change
+  tracking to detect document modifications since last check. Supports personal and team workspaces.
+metadata:
+  author: nulltea
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - hackmd
+  source: clawhub-community
+  clawhub_slug: hackmd
+  clawhub_path: nulltea/hackmd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# HackMD
+
+    # Source: ClawHub community skill by nulltea
+
+    # Install: clawhub install hackmd
+
+    # Path: nulltea/hackmd
+
+
+    ## Description
+
+    Work with HackMD documents. Use when reading, creating, updating, or deleting notes on HackMD. Supports change tracking
+    to detect document modifications since last check. Supports personal and team workspaces.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/hackmd-track.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hackmd
+
+    ```'
+examples:
+- description: Install HackMD from ClawHub
+  usage: clawhub install hackmd
+schema_version: '1.0'

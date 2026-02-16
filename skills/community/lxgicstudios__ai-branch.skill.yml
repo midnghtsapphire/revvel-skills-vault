@@ -1,0 +1,54 @@
+name: branch-namer
+title: Git Branch Name Generator
+version: 1.0.2
+description: Generate descriptive git branch names from plain English. Use when you need a branch name that follows conventions.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - branch
+  - namer
+  source: clawhub-community
+  clawhub_slug: ai-branch
+  clawhub_path: lxgicstudios/ai-branch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git Branch Name Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-branch
+
+    # Path: lxgicstudios/ai-branch
+
+
+    ## Description
+
+    Generate descriptive git branch names from plain English. Use when you need a branch name that follows conventions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-branch
+
+    ```'
+examples:
+- description: Install Git Branch Name Generator from ClawHub
+  usage: clawhub install ai-branch
+schema_version: '1.0'

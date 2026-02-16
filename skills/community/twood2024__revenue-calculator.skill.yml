@@ -1,0 +1,70 @@
+name: revenue-calculator
+title: Revenue Calculator
+version: 1.0.0
+description: 'Projects revenue for OpenClaw sub-agent strategies (marketplace, subs, pay-per-task). Use for monetization estimates:
+  input users/pricing/conversions → detailed annual/monthly projections, sensitivity analysis, break-even. Triggers: ''calculate
+  revenue'', ''project earnings'', ''monetize skill/agent''.'
+metadata:
+  author: twood2024
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - revenue
+  - calculator
+  source: clawhub-community
+  clawhub_slug: revenue-calculator
+  clawhub_path: twood2024/revenue-calculator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Revenue Calculator
+
+    # Source: ClawHub community skill by twood2024
+
+    # Install: clawhub install revenue-calculator
+
+    # Path: twood2024/revenue-calculator
+
+
+    ## Description
+
+    Projects revenue for OpenClaw sub-agent strategies (marketplace, subs, pay-per-task). Use for monetization estimates:
+    input users/pricing/conversions → detailed annual/monthly projections, sensitivity analysis, break-even. Triggers: ''calculate
+    revenue'', ''project earnings'', ''monetize skill/agent''.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/example_asset.txt
+
+    - assets/report-template.md
+
+    - references/api_reference.md
+
+    - references/pricing-models.md
+
+    - scripts/example.py
+
+    - scripts/revenue-calc.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install revenue-calculator
+
+    ```'
+examples:
+- description: Install Revenue Calculator from ClawHub
+  usage: clawhub install revenue-calculator
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: nordvpn
+title: NordVPN
+version: 1.0.2
+description: Control NordVPN on Linux via the `nordvpn` CLI (connect/disconnect, choose country/city/group, read status, tweak
+  settings, manage allowlist). Use for automation that needs region routing or temporary VPN tunneling.
+metadata:
+  author: maciekish
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - nordvpn
+  source: clawhub-community
+  clawhub_slug: nordvpn
+  clawhub_path: maciekish/nordvpn
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NordVPN
+
+    # Source: ClawHub community skill by maciekish
+
+    # Install: clawhub install nordvpn
+
+    # Path: maciekish/nordvpn
+
+
+    ## Description
+
+    Control NordVPN on Linux via the `nordvpn` CLI (connect/disconnect, choose country/city/group, read status, tweak settings,
+    manage allowlist). Use for automation that needs region routing or temporary VPN tunneling.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nordvpn
+
+    ```'
+examples:
+- description: Install NordVPN from ClawHub
+  usage: clawhub install nordvpn
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: snaptrade-portfolio
+title: Portfolio Trader
+version: 1.0.0
+description: Connect to a user's investment accounts via SnapTrade SDK and generate portfolio reports (e.g., daily total value).
+  Use when the user wants SnapTrade-based brokerage connectivity (Questrade, etc.), connection portal links, account registration,
+  or automated portfolio summaries.
+metadata:
+  author: brendanwood
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - snaptrade
+  - portfolio
+  source: clawhub-community
+  clawhub_slug: portfolio-trader
+  clawhub_path: brendanwood/portfolio-trader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Portfolio Trader
+
+    # Source: ClawHub community skill by brendanwood
+
+    # Install: clawhub install portfolio-trader
+
+    # Path: brendanwood/portfolio-trader
+
+
+    ## Description
+
+    Connect to a user''s investment accounts via SnapTrade SDK and generate portfolio reports (e.g., daily total value). Use
+    when the user wants SnapTrade-based brokerage connectivity (Questrade, etc.), connection portal links, account registration,
+    or automated portfolio summaries.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/snaptrade_accounts.py
+
+    - scripts/snaptrade_brokers.py
+
+    - scripts/snaptrade_common.py
+
+    - scripts/snaptrade_portal.py
+
+    - scripts/snaptrade_reconnect.py
+
+    - scripts/snaptrade_total.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install portfolio-trader
+
+    ```'
+examples:
+- description: Install Portfolio Trader from ClawHub
+  usage: clawhub install portfolio-trader
+schema_version: '1.0'

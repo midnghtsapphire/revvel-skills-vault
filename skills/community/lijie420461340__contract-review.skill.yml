@@ -1,0 +1,58 @@
+name: contract-review
+title: Contract Review
+version: 1.0.0
+description: Analyze contracts for risks, check completeness, and provide actionable recommendations. Supports employment
+  contracts, NDAs, service agreements, and more. Works with English and Chinese contracts.
+metadata:
+  author: lijie420461340
+  category: General
+  tags:
+  - general
+  - contract
+  - review
+  source: clawhub-community
+  clawhub_slug: contract-review
+  clawhub_path: lijie420461340/contract-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Contract Review
+
+    # Source: ClawHub community skill by lijie420461340
+
+    # Install: clawhub install contract-review
+
+    # Path: lijie420461340/contract-review
+
+
+    ## Description
+
+    Analyze contracts for risks, check completeness, and provide actionable recommendations. Supports employment contracts,
+    NDAs, service agreements, and more. Works with English and Chinese contracts.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install contract-review
+
+    ```'
+examples:
+- description: Install Contract Review from ClawHub
+  usage: clawhub install contract-review
+schema_version: '1.0'

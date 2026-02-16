@@ -1,0 +1,61 @@
+name: clawdefender
+title: ClawDefender - OpenClaw Security - Prompt injection, rogue skills etc
+version: 1.0.1
+description: Security scanner and input sanitizer for AI agents. Detects prompt injection, command injection, SSRF, credential
+  exfiltration, and path traversal attacks. Use when (1) installing new skills from ClawHub, (2) processing external input
+  like emails, calendar events, Trello cards, or API responses, (3)
+metadata:
+  author: nukewire
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawdefender
+  source: clawhub-community
+  clawhub_slug: clawdefender
+  clawhub_path: nukewire/clawdefender
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawDefender - OpenClaw Security - Prompt injection, rogue skills etc
+
+    # Source: ClawHub community skill by nukewire
+
+    # Install: clawhub install clawdefender
+
+    # Path: nukewire/clawdefender
+
+
+    ## Description
+
+    Security scanner and input sanitizer for AI agents. Detects prompt injection, command injection, SSRF, credential exfiltration,
+    and path traversal attacks. Use when (1) installing new skills from ClawHub, (2) processing external input like emails,
+    calendar events, Trello cards, or API responses, (3)
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/clawdefender.sh
+
+    - scripts/sanitize.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdefender
+
+    ```'
+examples:
+- description: Install ClawDefender - OpenClaw Security - Prompt injection, rogue skills etc from ClawHub
+  usage: clawhub install clawdefender
+schema_version: '1.0'

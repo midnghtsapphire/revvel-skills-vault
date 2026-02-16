@@ -1,0 +1,67 @@
+name: promptify
+title: Promptify Skill
+version: 3.1.0
+description: Optimize prompts for clarity and effectiveness. Use when user says "improve this prompt", "optimize my prompt",
+  "make this clearer", or provides vague/unstructured prompts. Intelligently routes to sub-agents for codebase research, clarifying
+  questions, or web search as needed.
+metadata:
+  author: tolibear
+  category: Search & Research
+  tags:
+  - search-research
+  - promptify
+  source: clawhub-community
+  clawhub_slug: promptify-skill
+  clawhub_path: tolibear/promptify-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Promptify Skill
+
+    # Source: ClawHub community skill by tolibear
+
+    # Install: clawhub install promptify-skill
+
+    # Path: tolibear/promptify-skill
+
+
+    ## Description
+
+    Optimize prompts for clarity and effectiveness. Use when user says "improve this prompt", "optimize my prompt", "make
+    this clearer", or provides vague/unstructured prompts. Intelligently routes to sub-agents for codebase research, clarifying
+    questions, or web search as needed.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/clarifier.md
+
+    - agents/codebase-researcher.md
+
+    - agents/web-researcher.md
+
+    - commands/promptify.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install promptify-skill
+
+    ```'
+examples:
+- description: Install Promptify Skill from ClawHub
+  usage: clawhub install promptify-skill
+schema_version: '1.0'

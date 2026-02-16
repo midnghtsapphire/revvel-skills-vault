@@ -1,0 +1,75 @@
+name: mcp-ssh-manager
+title: MCP SSH Manager
+version: 0.1.1
+description: This skill should be used when the user asks to "run ssh command", "execute on server", "ssh session", "upload
+  file", "download file", "ssh tunnel", "check server status", "monitor server", "deploy files", "backup server", or needs
+  remote server management. This skill emphasizes session reuse, workd
+metadata:
+  author: imaxtomas
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mcp
+  - ssh
+  - manager
+  source: clawhub-community
+  clawhub_slug: mcp-ssh-manager
+  clawhub_path: imaxtomas/mcp-ssh-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MCP SSH Manager
+
+    # Source: ClawHub community skill by imaxtomas
+
+    # Install: clawhub install mcp-ssh-manager
+
+    # Path: imaxtomas/mcp-ssh-manager
+
+
+    ## Description
+
+    This skill should be used when the user asks to "run ssh command", "execute on server", "ssh session", "upload file",
+    "download file", "ssh tunnel", "check server status", "monitor server", "deploy files", "backup server", or needs remote
+    server management. This skill emphasizes session reuse, workd
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/deployment.md
+
+    - examples/system-check.md
+
+    - examples/troubleshooting.md
+
+    - references/comparison.md
+
+    - references/sessions.md
+
+    - references/workspace.md
+
+    - scripts/create-workdir.sh
+
+    - scripts/log-command.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mcp-ssh-manager
+
+    ```'
+examples:
+- description: Install MCP SSH Manager from ClawHub
+  usage: clawhub install mcp-ssh-manager
+schema_version: '1.0'

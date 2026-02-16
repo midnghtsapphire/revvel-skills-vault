@@ -1,0 +1,60 @@
+name: news-feeds
+title: Simple RSS news feed
+version: 1.0.1
+description: Fetch latest news headlines from major RSS feeds (BBC, Reuters, AP, Al Jazeera, NPR, The Guardian, DW).
+metadata:
+  author: lknik
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - news
+  - feeds
+  source: clawhub-community
+  clawhub_slug: news-feeds
+  clawhub_path: lknik/news-feeds
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Simple RSS news feed
+
+    # Source: ClawHub community skill by lknik
+
+    # Install: clawhub install news-feeds
+
+    # Path: lknik/news-feeds
+
+
+    ## Description
+
+    Fetch latest news headlines from major RSS feeds (BBC, Reuters, AP, Al Jazeera, NPR, The Guardian, DW).
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/news.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install news-feeds
+
+    ```'
+examples:
+- description: Install Simple RSS news feed from ClawHub
+  usage: clawhub install news-feeds
+schema_version: '1.0'

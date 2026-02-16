@@ -1,0 +1,53 @@
+name: git
+title: Git
+version: 1.0.0
+description: Daily Git workflow with conventional commits and conflict resolution.
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - git
+  source: clawhub-community
+  clawhub_slug: git
+  clawhub_path: ivangdavila/git
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install git
+
+    # Path: ivangdavila/git
+
+
+    ## Description
+
+    Daily Git workflow with conventional commits and conflict resolution.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install git
+
+    ```'
+examples:
+- description: Install Git from ClawHub
+  usage: clawhub install git
+schema_version: '1.0'

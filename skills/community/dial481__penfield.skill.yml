@@ -1,0 +1,56 @@
+name: penfield
+title: Penfield
+version: 1.1.2
+description: Persistent memory for OpenClaw agents. Store decisions, preferences, and context that survive across sessions.
+  Build knowledge graphs that compound over time. Hybrid search (BM25 + vector + graph) recalls what matters when you need
+  it.
+metadata:
+  author: dial481
+  category: Search & Research
+  tags:
+  - search-research
+  - penfield
+  source: clawhub-community
+  clawhub_slug: penfield
+  clawhub_path: dial481/penfield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Penfield
+
+    # Source: ClawHub community skill by dial481
+
+    # Install: clawhub install penfield
+
+    # Path: dial481/penfield
+
+
+    ## Description
+
+    Persistent memory for OpenClaw agents. Store decisions, preferences, and context that survive across sessions. Build knowledge
+    graphs that compound over time. Hybrid search (BM25 + vector + graph) recalls what matters when you need it.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install penfield
+
+    ```'
+examples:
+- description: Install Penfield from ClawHub
+  usage: clawhub install penfield
+schema_version: '1.0'

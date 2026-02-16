@@ -1,0 +1,60 @@
+name: git-pushing
+title: Git Pushing
+version: 1.0.0
+description: Stage, commit, and push git changes with conventional commit messages. Use when user wants to commit and push
+  changes, mentions pushing to remote, or asks to save and push their work. Also activates when user says "push changes",
+  "commit and push", "push this", "push to github", or similar git workf
+metadata:
+  author: tianyi-billy-ma
+  category: Communication
+  tags:
+  - communication
+  - git
+  - pushing
+  source: clawhub-community
+  clawhub_slug: git-pushing
+  clawhub_path: tianyi-billy-ma/git-pushing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git Pushing
+
+    # Source: ClawHub community skill by tianyi-billy-ma
+
+    # Install: clawhub install git-pushing
+
+    # Path: tianyi-billy-ma/git-pushing
+
+
+    ## Description
+
+    Stage, commit, and push git changes with conventional commit messages. Use when user wants to commit and push changes,
+    mentions pushing to remote, or asks to save and push their work. Also activates when user says "push changes", "commit
+    and push", "push this", "push to github", or similar git workf
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/smart_commit.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install git-pushing
+
+    ```'
+examples:
+- description: Install Git Pushing from ClawHub
+  usage: clawhub install git-pushing
+schema_version: '1.0'

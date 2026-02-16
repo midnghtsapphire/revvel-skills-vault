@@ -1,0 +1,59 @@
+name: add-minimax-provider
+title: MiniMax Provider 配置
+version: 2.0.0
+description: 为 OpenClaw 配置 MiniMax 作为模型源。MiniMax 提供两种接入方式：API Key 直连（openai-completions 协议）和 OAuth 门户（anthropic-messages 协议）。包含
+  provider 注册、模型定义、别名配置、fallback 链接入和验证的完整流程。当管理员说想"加 MiniMax"、"配 minimax"、"接入 MiniMax 模型"、"加海螺模型"、"配 M2.1"时使用此 skill。
+metadata:
+  author: jooey
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - add
+  - minimax
+  - provider
+  source: clawhub-community
+  clawhub_slug: add-minimax-provider
+  clawhub_path: jooey/add-minimax-provider
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MiniMax Provider 配置
+
+    # Source: ClawHub community skill by jooey
+
+    # Install: clawhub install add-minimax-provider
+
+    # Path: jooey/add-minimax-provider
+
+
+    ## Description
+
+    为 OpenClaw 配置 MiniMax 作为模型源。MiniMax 提供两种接入方式：API Key 直连（openai-completions 协议）和 OAuth 门户（anthropic-messages 协议）。包含 provider
+    注册、模型定义、别名配置、fallback 链接入和验证的完整流程。当管理员说想"加 MiniMax"、"配 minimax"、"接入 MiniMax 模型"、"加海螺模型"、"配 M2.1"时使用此 skill。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install add-minimax-provider
+
+    ```'
+examples:
+- description: Install MiniMax Provider 配置 from ClawHub
+  usage: clawhub install add-minimax-provider
+schema_version: '1.0'

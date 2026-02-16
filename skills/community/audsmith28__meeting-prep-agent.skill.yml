@@ -1,0 +1,68 @@
+name: meeting-prep
+title: Meeting Prep Agent
+version: 1.1.0
+description: Never walk into a meeting unprepared again. Your agent researches all attendees before calendar events—pulling
+  LinkedIn profiles, recent company news, mutual connections, and conversation starters. Generates a briefing doc with talking
+  points, icebreakers, and context so you show up informed and con
+metadata:
+  author: audsmith28
+  category: Search & Research
+  tags:
+  - search-research
+  - meeting
+  - prep
+  source: clawhub-community
+  clawhub_slug: meeting-prep-agent
+  clawhub_path: audsmith28/meeting-prep-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meeting Prep Agent
+
+    # Source: ClawHub community skill by audsmith28
+
+    # Install: clawhub install meeting-prep-agent
+
+    # Path: audsmith28/meeting-prep-agent
+
+
+    ## Description
+
+    Never walk into a meeting unprepared again. Your agent researches all attendees before calendar events—pulling LinkedIn
+    profiles, recent company news, mutual connections, and conversation starters. Generates a briefing doc with talking points,
+    icebreakers, and context so you show up informed and con
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - scripts/auto-prep.sh
+
+    - scripts/brief.sh
+
+    - scripts/prep.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meeting-prep-agent
+
+    ```'
+examples:
+- description: Install Meeting Prep Agent from ClawHub
+  usage: clawhub install meeting-prep-agent
+schema_version: '1.0'

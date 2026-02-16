@@ -1,0 +1,71 @@
+name: moodcast
+title: MoodCast
+version: 1.0.2
+description: Transform any text into emotionally expressive audio with ambient soundscapes using ElevenLabs v3 audio tags
+  and Sound Effects API
+metadata:
+  author: ashutosh887
+  category: Media & Content
+  tags:
+  - media-content
+  - moodcast
+  source: clawhub-community
+  clawhub_slug: moodcast
+  clawhub_path: ashutosh887/moodcast
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MoodCast
+
+    # Source: ClawHub community skill by ashutosh887
+
+    # Install: clawhub install moodcast
+
+    # Path: ashutosh887/moodcast
+
+
+    ## Description
+
+    Transform any text into emotionally expressive audio with ambient soundscapes using ElevenLabs v3 audio tags and Sound
+    Effects API
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - examples/calm.txt
+
+    - examples/dramatic.txt
+
+    - examples/news.txt
+
+    - examples/scary.txt
+
+    - examples/story.txt
+
+    - scripts/moodcast.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moodcast
+
+    ```'
+examples:
+- description: Install MoodCast from ClawHub
+  usage: clawhub install moodcast
+schema_version: '1.0'

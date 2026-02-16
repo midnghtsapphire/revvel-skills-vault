@@ -1,0 +1,57 @@
+name: sandboxer
+title: Sandboxer Integration
+version: 1.0.2
+description: '"Manage Claude Code terminal sessions via Sandboxer web dashboard. Use when: (1) listing running Claude Code
+  sessions, (2) checking what a Claude session is doing, (3) sending commands to a Claude session, (4) creating or killing
+  sessions, (5) user mentions ''sandboxer'' or ''session''."'
+metadata:
+  author: chriopter
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sandboxer
+  source: clawhub-community
+  clawhub_slug: sandboxer
+  clawhub_path: chriopter/sandboxer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sandboxer Integration
+
+    # Source: ClawHub community skill by chriopter
+
+    # Install: clawhub install sandboxer
+
+    # Path: chriopter/sandboxer
+
+
+    ## Description
+
+    "Manage Claude Code terminal sessions via Sandboxer web dashboard. Use when: (1) listing running Claude Code sessions,
+    (2) checking what a Claude session is doing, (3) sending commands to a Claude session, (4) creating or killing sessions,
+    (5) user mentions ''sandboxer'' or ''session''."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sandboxer
+
+    ```'
+examples:
+- description: Install Sandboxer Integration from ClawHub
+  usage: clawhub install sandboxer
+schema_version: '1.0'

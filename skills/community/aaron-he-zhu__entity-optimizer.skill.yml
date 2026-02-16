@@ -1,0 +1,34 @@
+name: entity-optimizer
+title: Entity Optimizer
+version: 0.1.0
+description: '''Use when the user asks to "optimize entity presence", "build knowledge graph", "improve knowledge panel",
+  "entity audit", or "establish brand entity". Works standalone with public search and AI query testing; supercharged when
+  you connect ~~knowledge graph + ~~SEO tool + ~~AI monitor for automated '
+metadata:
+  author: aaron-he-zhu
+  category: Search & Research
+  tags:
+  - search-research
+  - entity
+  - optimizer
+  source: clawhub-community
+  clawhub_slug: entity-optimizer
+  clawhub_path: aaron-he-zhu/entity-optimizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Entity Optimizer\n# Source: ClawHub community skill by aaron-he-zhu\n# Install: clawhub install entity-optimizer\n\
+    # Path: aaron-he-zhu/entity-optimizer\n\n## Description\n'Use when the user asks to \"optimize entity presence\", \"build\
+    \ knowledge graph\", \"improve knowledge panel\", \"entity audit\", or \"establish brand entity\". Works standalone with\
+    \ public search and AI query testing; supercharged when you connect ~~knowledge graph + ~~SEO tool + ~~AI monitor for\
+    \ automated \n\n## Files\n- SKILL.md\n- _meta.json\n- references/entity-signal-checklist.md\n- references/knowledge-graph-guide.md\n\
+    \n## Installation\n```bash\nclawhub install entity-optimizer\n```"
+examples:
+- description: Install Entity Optimizer from ClawHub
+  usage: clawhub install entity-optimizer
+schema_version: '1.0'

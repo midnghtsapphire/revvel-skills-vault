@@ -1,0 +1,58 @@
+name: lead-researcher
+title: Lead Researcher
+version: 1.0.0
+description: Automated lead research and enrichment for B2B sales. Finds companies matching your criteria, enriches with contact
+  data, and generates personalized outreach messages.
+metadata:
+  author: rjrileybuisness-ai
+  category: Search & Research
+  tags:
+  - search-research
+  - lead
+  - researcher
+  source: clawhub-community
+  clawhub_slug: lead-researcher
+  clawhub_path: rjrileybuisness-ai/lead-researcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lead Researcher
+
+    # Source: ClawHub community skill by rjrileybuisness-ai
+
+    # Install: clawhub install lead-researcher
+
+    # Path: rjrileybuisness-ai/lead-researcher
+
+
+    ## Description
+
+    Automated lead research and enrichment for B2B sales. Finds companies matching your criteria, enriches with contact data,
+    and generates personalized outreach messages.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - research.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lead-researcher
+
+    ```'
+examples:
+- description: Install Lead Researcher from ClawHub
+  usage: clawhub install lead-researcher
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: agent-step-sequencer
+title: Agent Step Sequencer
+version: 1.1.0
+description: Multi-step scheduler for in-depth agent requests. Detects when user needs multiple steps, suggests plan and waits
+  for confirmation, persists state, and runs heartbeat-aware flow. Use when requests have 3+ actions, sequential dependencies,
+  output dependencies, or high scope/risk.
+metadata:
+  author: gostlightai
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - agent
+  - step
+  - sequencer
+  source: clawhub-community
+  clawhub_slug: agent-step-sequencer
+  clawhub_path: gostlightai/agent-step-sequencer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Step Sequencer
+
+    # Source: ClawHub community skill by gostlightai
+
+    # Install: clawhub install agent-step-sequencer
+
+    # Path: gostlightai/agent-step-sequencer
+
+
+    ## Description
+
+    Multi-step scheduler for in-depth agent requests. Detects when user needs multiple steps, suggests plan and waits for
+    confirmation, persists state, and runs heartbeat-aware flow. Use when requests have 3+ actions, sequential dependencies,
+    output dependencies, or high scope/risk.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/state-schema.md
+
+    - scripts/README.md
+
+    - scripts/step-sequencer-check.py
+
+    - scripts/step-sequencer-runner.py
+
+    - test/test_step_sequencer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-step-sequencer
+
+    ```'
+examples:
+- description: Install Agent Step Sequencer from ClawHub
+  usage: clawhub install agent-step-sequencer
+schema_version: '1.0'

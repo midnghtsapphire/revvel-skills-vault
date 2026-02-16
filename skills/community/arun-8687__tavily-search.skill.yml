@@ -1,0 +1,57 @@
+name: tavily
+title: Tavily Web Search
+version: 1.0.0
+description: AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.
+metadata:
+  author: arun-8687
+  category: Search & Research
+  tags:
+  - search-research
+  - tavily
+  source: clawhub-community
+  clawhub_slug: tavily-search
+  clawhub_path: arun-8687/tavily-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tavily Web Search
+
+    # Source: ClawHub community skill by arun-8687
+
+    # Install: clawhub install tavily-search
+
+    # Path: arun-8687/tavily-search
+
+
+    ## Description
+
+    AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/extract.mjs
+
+    - scripts/search.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tavily-search
+
+    ```'
+examples:
+- description: Install Tavily Web Search from ClawHub
+  usage: clawhub install tavily-search
+schema_version: '1.0'

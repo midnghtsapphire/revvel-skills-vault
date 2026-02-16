@@ -1,0 +1,72 @@
+name: membase
+title: 'The first official Unibase Membase skill: decentralized persistent memory, purpose-built for OpenClaw Bot.'
+version: 1.0.0
+description: Manage agent memory with Membase - a decentralized, encrypted memory backup and restore system. Provides backup,
+  restore, list, diff, status, and cleanup operations for agent memories.
+metadata:
+  author: ibitnoah
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - membase
+  source: clawhub-community
+  clawhub_slug: unibase-membase
+  clawhub_path: ibitnoah/unibase-membase
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# The first official Unibase Membase skill: decentralized persistent memory, purpose-built for OpenClaw Bot.
+
+    # Source: ClawHub community skill by ibitnoah
+
+    # Install: clawhub install unibase-membase
+
+    # Path: ibitnoah/unibase-membase
+
+
+    ## Description
+
+    Manage agent memory with Membase - a decentralized, encrypted memory backup and restore system. Provides backup, restore,
+    list, diff, status, and cleanup operations for agent memories.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - membase.ts
+
+    - commands/backup.ts
+
+    - commands/cleanup.ts
+
+    - commands/diff.ts
+
+    - commands/list.ts
+
+    - commands/restore.ts
+
+    - commands/status.ts
+
+    - commands/utils.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unibase-membase
+
+    ```'
+examples:
+- description: 'Install The first official Unibase Membase skill: decentralized persistent memory, purpose-built for OpenClaw
+    Bot. from ClawHub'
+  usage: clawhub install unibase-membase
+schema_version: '1.0'

@@ -1,0 +1,34 @@
+name: treelisty
+title: TreeListy
+version: 1.0.0
+description: 'Hierarchical project decomposition and planning. Use when breaking down complex projects, structuring information,
+  planning multi-step workflows, or organizing any nested hierarchy. Supports 21 specialized patterns (WBS, GTD, Philosophy,
+  Sales, Film, etc.) and exports to JSON, Markdown, and Mermaid '
+metadata:
+  author: prairie2cloud
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - treelisty
+  source: clawhub-community
+  clawhub_slug: treelisty-openclaw-skill
+  clawhub_path: prairie2cloud/treelisty-openclaw-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# TreeListy\n# Source: ClawHub community skill by prairie2cloud\n# Install: clawhub install treelisty-openclaw-skill\n\
+    # Path: prairie2cloud/treelisty-openclaw-skill\n\n## Description\nHierarchical project decomposition and planning. Use\
+    \ when breaking down complex projects, structuring information, planning multi-step workflows, or organizing any nested\
+    \ hierarchy. Supports 21 specialized patterns (WBS, GTD, Philosophy, Sales, Film, etc.) and exports to JSON, Markdown,\
+    \ and Mermaid \n\n## Files\n- README.md\n- SKILL.md\n- _meta.json\n- package-lock.json\n- package.json\n- references/PATTERNS.md\n\
+    - scripts/decompose.js\n- scripts/export.js\n- scripts/patterns.js\n- scripts/push.js\n\n## Installation\n```bash\nclawhub\
+    \ install treelisty-openclaw-skill\n```"
+examples:
+- description: Install TreeListy from ClawHub
+  usage: clawhub install treelisty-openclaw-skill
+schema_version: '1.0'

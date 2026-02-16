@@ -1,0 +1,59 @@
+name: litellm
+title: LiteLLM
+version: 1.0.0
+description: Call 100+ LLM providers through LiteLLM's unified API. Use when you need to call a different model than your
+  primary (e.g., use GPT-4 for code review while running on Claude), compare outputs from multiple models, route to cheaper
+  models for simple tasks, or access models your runtime doesn't native
+metadata:
+  author: ishaan-jaff
+  category: Development & Coding
+  tags:
+  - development-coding
+  - litellm
+  source: clawhub-community
+  clawhub_slug: litellm
+  clawhub_path: ishaan-jaff/litellm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LiteLLM
+
+    # Source: ClawHub community skill by ishaan-jaff
+
+    # Install: clawhub install litellm
+
+    # Path: ishaan-jaff/litellm
+
+
+    ## Description
+
+    Call 100+ LLM providers through LiteLLM''s unified API. Use when you need to call a different model than your primary
+    (e.g., use GPT-4 for code review while running on Claude), compare outputs from multiple models, route to cheaper models
+    for simple tasks, or access models your runtime doesn''t native
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/llm_call.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install litellm
+
+    ```'
+examples:
+- description: Install LiteLLM from ClawHub
+  usage: clawhub install litellm
+schema_version: '1.0'

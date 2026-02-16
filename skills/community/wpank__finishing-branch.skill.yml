@@ -1,0 +1,64 @@
+name: finishing-branch
+title: Finishing Branch
+version: 0.1.0
+description: Complete development work by presenting structured options for merge, PR, or cleanup. Use when implementation
+  is complete, all tests pass, and you need to decide how to integrate work. Triggers on finish branch, complete branch, merge
+  branch, create PR, done with feature, implementation complete.
+metadata:
+  author: wpank
+  category: Development & Coding
+  tags:
+  - development-coding
+  - finishing
+  - branch
+  source: clawhub-community
+  clawhub_slug: finishing-branch
+  clawhub_path: wpank/finishing-branch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Finishing Branch
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install finishing-branch
+
+    # Path: wpank/finishing-branch
+
+
+    ## Description
+
+    Complete development work by presenting structured options for merge, PR, or cleanup. Use when implementation is complete,
+    all tests pass, and you need to decide how to integrate work. Triggers on finish branch, complete branch, merge branch,
+    create PR, done with feature, implementation complete.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cleanup_branches.py
+
+    - scripts/finish_branch.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install finishing-branch
+
+    ```'
+examples:
+- description: Install Finishing Branch from ClawHub
+  usage: clawhub install finishing-branch
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: scraper
+title: Links to PDFs
+version: 0.0.1
+description: Scrape documents from Notion, DocSend, PDFs, and other sources into local PDF files. Use when the user needs
+  to download, archive, or convert web documents to PDF format. Supports authentication flows for protected documents and
+  session persistence via profiles. Returns local file paths to downloade
+metadata:
+  author: chrisling-dev
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - scraper
+  source: clawhub-community
+  clawhub_slug: links-to-pdfs
+  clawhub_path: chrisling-dev/links-to-pdfs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Links to PDFs
+
+    # Source: ClawHub community skill by chrisling-dev
+
+    # Install: clawhub install links-to-pdfs
+
+    # Path: chrisling-dev/links-to-pdfs
+
+
+    ## Description
+
+    Scrape documents from Notion, DocSend, PDFs, and other sources into local PDF files. Use when the user needs to download,
+    archive, or convert web documents to PDF format. Supports authentication flows for protected documents and session persistence
+    via profiles. Returns local file paths to downloade
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install links-to-pdfs
+
+    ```'
+examples:
+- description: Install Links to PDFs from ClawHub
+  usage: clawhub install links-to-pdfs
+schema_version: '1.0'

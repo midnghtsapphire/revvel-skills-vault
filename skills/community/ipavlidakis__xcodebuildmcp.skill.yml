@@ -1,0 +1,61 @@
+name: xcodebuildmcp
+title: xcodebuildmcp
+version: 1.0.0
+description: Use when the user needs Xcode build/test/run workflows, simulator or device control, UI automation, screenshots/video,
+  logs, or LLDB debugging through XcodeBuildMCP tools. Includes discovery of projects/schemes, session defaults, and common
+  simulator/device workflows.
+metadata:
+  author: ipavlidakis
+  category: Media & Content
+  tags:
+  - media-content
+  - xcodebuildmcp
+  source: clawhub-community
+  clawhub_slug: xcodebuildmcp
+  clawhub_path: ipavlidakis/xcodebuildmcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# xcodebuildmcp
+
+    # Source: ClawHub community skill by ipavlidakis
+
+    # Install: clawhub install xcodebuildmcp
+
+    # Path: ipavlidakis/xcodebuildmcp
+
+
+    ## Description
+
+    Use when the user needs Xcode build/test/run workflows, simulator or device control, UI automation, screenshots/video,
+    logs, or LLDB debugging through XcodeBuildMCP tools. Includes discovery of projects/schemes, session defaults, and common
+    simulator/device workflows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/mcp-setup.md
+
+    - references/workflows.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xcodebuildmcp
+
+    ```'
+examples:
+- description: Install xcodebuildmcp from ClawHub
+  usage: clawhub install xcodebuildmcp
+schema_version: '1.0'

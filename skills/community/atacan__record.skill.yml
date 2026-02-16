@@ -1,0 +1,63 @@
+name: record
+title: Record screen, microphone or camera from macOS terminal
+version: 0.2.0
+description: 'macOS CLI tool for recording audio (microphone), screen (video/screenshot), and camera (video/photo) from the
+  terminal. Use when the user or an AI agent needs to: (1) record microphone audio, (2) capture screen video or screenshot,
+  (3) capture camera video or photo, (4) list available devices/displa'
+metadata:
+  author: atacan
+  category: Media & Content
+  tags:
+  - media-content
+  - record
+  source: clawhub-community
+  clawhub_slug: record
+  clawhub_path: atacan/record
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Record screen, microphone or camera from macOS terminal
+
+    # Source: ClawHub community skill by atacan
+
+    # Install: clawhub install record
+
+    # Path: atacan/record
+
+
+    ## Description
+
+    macOS CLI tool for recording audio (microphone), screen (video/screenshot), and camera (video/photo) from the terminal.
+    Use when the user or an AI agent needs to: (1) record microphone audio, (2) capture screen video or screenshot, (3) capture
+    camera video or photo, (4) list available devices/displa
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/audio.md
+
+    - references/camera.md
+
+    - references/screen.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install record
+
+    ```'
+examples:
+- description: Install Record screen, microphone or camera from macOS terminal from ClawHub
+  usage: clawhub install record
+schema_version: '1.0'

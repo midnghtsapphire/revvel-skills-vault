@@ -1,0 +1,59 @@
+name: karmabank
+title: KarmaBank
+version: 1.0.0
+description: AI agents borrow USDC based on their Moltbook karma score. Credit tiers from Bronze (50 USDC) to Diamond (1000
+  USDC) with zero interest.
+metadata:
+  author: abdhilabs
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - karmabank
+  source: clawhub-community
+  clawhub_slug: karmabank-minimal
+  clawhub_path: abdhilabs/karmabank-minimal
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# KarmaBank
+
+    # Source: ClawHub community skill by abdhilabs
+
+    # Install: clawhub install karmabank-minimal
+
+    # Path: abdhilabs/karmabank-minimal
+
+
+    ## Description
+
+    AI agents borrow USDC based on their Moltbook karma score. Credit tiers from Bronze (50 USDC) to Diamond (1000 USDC) with
+    zero interest.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install karmabank-minimal
+
+    ```'
+examples:
+- description: Install KarmaBank from ClawHub
+  usage: clawhub install karmabank-minimal
+schema_version: '1.0'

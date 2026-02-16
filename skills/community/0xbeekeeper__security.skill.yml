@@ -1,0 +1,74 @@
+name: agentguard
+title: Agentguard
+version: 0.1.0
+description: GoPlus AgentGuard — AI agent security guard. Automatically blocks dangerous commands, prevents data leaks, and
+  protects secrets. Use when reviewing third-party code, auditing skills, checking for vulnerabilities, evaluating action
+  safety, or viewing security logs.
+metadata:
+  author: 0xbeekeeper
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - agentguard
+  - read
+  - grep
+  - glob
+  - bash(node *)
+  source: clawhub-community
+  clawhub_slug: security
+  clawhub_path: 0xbeekeeper/security
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash(node *)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agentguard
+
+    # Source: ClawHub community skill by 0xbeekeeper
+
+    # Install: clawhub install security
+
+    # Path: 0xbeekeeper/security
+
+
+    ## Description
+
+    GoPlus AgentGuard — AI agent security guard. Automatically blocks dangerous commands, prevents data leaks, and protects
+    secrets. Use when reviewing third-party code, auditing skills, checking for vulnerabilities, evaluating action safety,
+    or viewing security logs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - action-policies.md
+
+    - scan-rules.md
+
+
+    ## Allowed Tools
+
+    Read, Grep, Glob, Bash(node *)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security
+
+    ```'
+examples:
+- description: Install Agentguard from ClawHub
+  usage: clawhub install security
+schema_version: '1.0'

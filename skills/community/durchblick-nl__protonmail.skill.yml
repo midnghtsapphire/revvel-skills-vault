@@ -1,0 +1,58 @@
+name: protonmail
+title: ProtonMail
+version: 1.0.0
+description: Read, search, and scan ProtonMail via IMAP bridge (Proton Bridge or hydroxide). Includes daily digest for important
+  emails.
+metadata:
+  author: durchblick-nl
+  category: Search & Research
+  tags:
+  - search-research
+  - protonmail
+  source: clawhub-community
+  clawhub_slug: protonmail
+  clawhub_path: durchblick-nl/protonmail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ProtonMail
+
+    # Source: ClawHub community skill by durchblick-nl
+
+    # Install: clawhub install protonmail
+
+    # Path: durchblick-nl/protonmail
+
+
+    ## Description
+
+    Read, search, and scan ProtonMail via IMAP bridge (Proton Bridge or hydroxide). Includes daily digest for important emails.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - daily-scan.py
+
+    - protonmail.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install protonmail
+
+    ```'
+examples:
+- description: Install ProtonMail from ClawHub
+  usage: clawhub install protonmail
+schema_version: '1.0'

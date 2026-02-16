@@ -1,0 +1,70 @@
+name: content-distributor
+title: content-distributor
+version: 1.0.0
+description: 多平台内容分发工具。用于在知乎、豆瓣、微博等中文平台发布内容。支持：(1) 发布帖子/文章 (2) 管理多平台账号 (3) 批量分发内容 (4) 追踪发布状态。触发词：发帖、发布、分发、知乎、豆瓣、微博、推广。
+metadata:
+  author: xiwan
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - content
+  - distributor
+  source: clawhub-community
+  clawhub_slug: content-distributor
+  clawhub_path: xiwan/content-distributor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# content-distributor
+
+    # Source: ClawHub community skill by xiwan
+
+    # Install: clawhub install content-distributor
+
+    # Path: xiwan/content-distributor
+
+
+    ## Description
+
+    多平台内容分发工具。用于在知乎、豆瓣、微博等中文平台发布内容。支持：(1) 发布帖子/文章 (2) 管理多平台账号 (3) 批量分发内容 (4) 追踪发布状态。触发词：发帖、发布、分发、知乎、豆瓣、微博、推广。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/credentials.md
+
+    - references/extending.md
+
+    - references/templates.md
+
+    - scripts/configure.py
+
+    - scripts/distribute.py
+
+    - scripts/post.py
+
+    - scripts/platforms/__init__.py
+
+    - scripts/platforms/base.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install content-distributor
+
+    ```'
+examples:
+- description: Install content-distributor from ClawHub
+  usage: clawhub install content-distributor
+schema_version: '1.0'

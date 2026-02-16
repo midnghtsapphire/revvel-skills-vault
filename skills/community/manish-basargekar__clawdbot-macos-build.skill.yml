@@ -1,0 +1,61 @@
+name: clawdbot-macos-build
+title: clawdbot-macos-build
+version: 1.0.0
+description: Build the Clawdbot macOS menu bar app from source. Use when you need to install the Clawdbot.app companion (for
+  menu bar status, permissions, and Mac hardware access like camera/screen recording). Handles dependency installation, UI
+  build, Swift compilation, code signing, and app packaging automatic
+metadata:
+  author: manish-basargekar
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawdbot
+  - macos
+  - build
+  source: clawhub-community
+  clawhub_slug: clawdbot-macos-build
+  clawhub_path: manish-basargekar/clawdbot-macos-build
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawdbot-macos-build
+
+    # Source: ClawHub community skill by manish-basargekar
+
+    # Install: clawhub install clawdbot-macos-build
+
+    # Path: manish-basargekar/clawdbot-macos-build
+
+
+    ## Description
+
+    Build the Clawdbot macOS menu bar app from source. Use when you need to install the Clawdbot.app companion (for menu bar
+    status, permissions, and Mac hardware access like camera/screen recording). Handles dependency installation, UI build,
+    Swift compilation, code signing, and app packaging automatic
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-macos-build
+
+    ```'
+examples:
+- description: Install clawdbot-macos-build from ClawHub
+  usage: clawhub install clawdbot-macos-build
+schema_version: '1.0'

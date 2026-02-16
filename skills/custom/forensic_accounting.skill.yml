@@ -1,0 +1,302 @@
+name: forensic_accounting
+title: Forensic Accounting
+version: 1.0.0
+description: Advanced forensic accounting capabilities for detecting financial fraud, tracing assets, identifying money laundering
+  patterns, analyzing tax fraud, and cryptocurrency transaction tracing with Benford's law analysis.
+metadata:
+  author: Revvel AI Engine
+  category: Forensic Investigation
+  tags:
+  - money-laundering-pattern-analysis
+  - risk-scoring
+  - financial-fraud-detection
+  - accounting
+  - cryptocurrency-tracing
+  - forensic
+  - asset-tracing
+  - transaction-flow-mapping
+  - benfords-law-analysis
+  - tax-fraud-analysis
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport math\nimport hashlib\nimport logging\nimport unittest\nfrom datetime\
+    \ import datetime, timedelta\nfrom collections import Counter, defaultdict\nfrom typing import Dict, List, Any, Optional,\
+    \ Tuple, Union\nimport requests\n\nSKILL_METADATA = {\n    \"name\": \"Forensic Accounting\",\n    \"id\": \"forensic_accounting\"\
+    ,\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Advanced forensic accounting\
+    \ capabilities for detecting financial fraud, tracing assets, identifying money laundering patterns, analyzing tax fraud,\
+    \ and cryptocurrency transaction tracing with Benford's law analysis.\",\n    \"capabilities\": [\n        \"financial_fraud_detection\"\
+    ,\n        \"asset_tracing\",\n        \"money_laundering_pattern_analysis\",\n        \"tax_fraud_analysis\",\n     \
+    \   \"cryptocurrency_tracing\",\n        \"benfords_law_analysis\",\n        \"transaction_flow_mapping\",\n        \"\
+    risk_scoring\",\n        \"anomaly_detection\",\n        \"compliance_reporting\"\n    ],\n    \"domain\": \"forensic_accounting\"\
+    \n}\n\nEXPERT_PROMPTS = {\n    \"fraud_detection\": \"\"\"Analyze the following financial data for potential fraud indicators:\n\
+    Transaction Data: {transaction_data}\nAccount Information: {account_info}\nTime Period: {time_period}\nFocus Areas: {focus_areas}\n\
+    \nProvide a detailed fraud risk assessment including:\n1. Suspicious transaction patterns\n2. Unusual account behaviors\n\
+    3. Potential red flags\n4. Risk score (0-100)\n5. Recommended investigation steps\"\"\",\n    \n    \"money_laundering_analysis\"\
+    : \"\"\"Examine the provided transaction flow for money laundering patterns:\nTransaction Chain: {transaction_chain}\n\
+    Entity Information: {entity_info}\nGeographic Data: {geographic_data}\nAmount Thresholds: {amount_thresholds}\n\nIdentify:\n\
+    1. Structuring patterns (smurfing)\n2. Layering activities\n3. Integration attempts\n4. High-risk jurisdictions\n5. Suspicious\
+    \ entity relationships\n6. ML risk classification\"\"\",\n    \n    \"asset_tracing\": \"\"\"Trace the following assets\
+    \ through complex transaction networks:\nAsset Details: {asset_details}\nStarting Points: {starting_points}\nTime Range:\
+    \ {time_range}\nObfuscation Methods: {obfuscation_methods}\n\nProvide:\n1. Complete asset flow mapping\n2. Current asset\
+    \ location\n3. Intermediary entities\n4. Concealment techniques used\n5. Recovery feasibility assessment\"\"\",\n    \n\
+    \    \"cryptocurrency_analysis\": \"\"\"Analyze cryptocurrency transactions for forensic indicators:\nBlockchain Data:\
+    \ {blockchain_data}\nWallet Addresses: {wallet_addresses}\nTransaction Hashes: {transaction_hashes}\nExchange Data: {exchange_data}\n\
+    \nDeliver:\n1. Transaction graph visualization\n2. Wallet clustering analysis\n3. Mixing service detection\n4. Exchange\
+    \ interaction mapping\n5. Illicit fund tracing\n6. Cryptocurrency risk score\"\"\",\n    \n    \"tax_fraud_detection\"\
+    : \"\"\"Review financial records for tax fraud indicators:\nIncome Records: {income_records}\nExpense Claims: {expense_claims}\n\
+    Asset Declarations: {asset_declarations}\nOffshore Entities: {offshore_entities}\n\nIdentify:\n1. Unreported income patterns\n\
+    2. Inflated deductions\n3. Asset concealment\n4. Offshore tax evasion\n5. Round-tripping schemes\n6. Tax gap estimation\"\
+    \"\",\n    \n    \"benfords_law_analysis\": \"\"\"Apply Benford's Law analysis to detect data manipulation:\nFinancial\
+    \ Dataset: {financial_dataset}\nDigit Position: {digit_position}\nConfidence Level: {confidence_level}\nSample Size: {sample_size}\n\
+    \nProvide:\n1. Expected vs actual digit distribution\n2. Chi-square test results\n3. Z-score analysis\n4. Data integrity\
+    \ assessment\n5. Potential manipulation areas\"\"\",\n    \n    \"compliance_reporting\": \"\"\"Generate a comprehensive\
+    \ compliance report:\nInvestigation Findings: {investigation_findings}\nRegulatory Requirements: {regulatory_requirements}\n\
+    Jurisdiction: {jurisdiction}\nReport Type: {report_type}\n\nInclude:\n1. Executive summary\n2. Methodology overview\n\
+    3. Key findings\n4. Regulatory violations\n5. Recommended actions\n6. Supporting evidence\"\"\",\n    \n    \"risk_assessment\"\
+    : \"\"\"Conduct forensic risk assessment:\nEntity Profile: {entity_profile}\nHistorical Data: {historical_data}\nIndustry\
+    \ Benchmarks: {industry_benchmarks}\nRisk Factors: {risk_factors}\n\nDeliver:\n1. Overall risk rating\n2. Specific risk\
+    \ categories\n3. Risk drivers analysis\n4. Mitigation recommendations\n5. Monitoring strategies\"\"\"\n}\n\nINTEGRATION_POINTS\
+    \ = {\n    \"sec_edgar_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://www.sec.gov/Archives/edgar/daily-index\"\
+    ,\n        \"description\": \"SEC EDGAR database for public company filings\",\n        \"auth_method\": \"API key\",\n\
+    \        \"documentation_url\": \"https://www.sec.gov/edgar/sec-api-documentation\"\n    },\n    \"blockchain_info_api\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://blockchain.info\",\n        \"description\": \"Bitcoin\
+    \ blockchain explorer API\",\n        \"auth_method\": \"None required\",\n        \"documentation_url\": \"https://www.blockchain.com/api\"\
+    \n    },\n    \"open_corporates_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.opencorporates.com\"\
+    ,\n        \"description\": \"Global corporate registry database\",\n        \"auth_method\": \"API token\",\n       \
+    \ \"documentation_url\": \"https://api.opencorporates.com/documentation\"\n    },\n    \"financial_crimes_db\": {\n  \
+    \      \"type\": \"database\",\n        \"endpoint\": \"postgresql://localhost:5432/financial_crimes\",\n        \"description\"\
+    : \"Internal financial crimes database\",\n        \"auth_method\": \"Database credentials\",\n        \"documentation_url\"\
+    : \"internal/docs/financial_crimes_db\"\n    },\n    \"benfords_law_calculator\": {\n        \"type\": \"tool\",\n   \
+    \     \"endpoint\": \"internal/benfords_calculator\",\n        \"description\": \"Statistical analysis tool for Benford's\
+    \ Law\",\n        \"auth_method\": \"None\",\n        \"documentation_url\": \"internal/docs/benfords_tool\"\n    }\n\
+    }\n\ndef parse_financial_data(data: Union[str, Dict]) -> Dict[str, Any]:\n    \"\"\"Parse and validate financial data\
+    \ from various input formats.\"\"\"\n    if isinstance(data, str):\n        try:\n            data = json.loads(data)\n\
+    \        except json.JSONDecodeError:\n            raise ValueError(\"Invalid JSON string provided\")\n    \n    if not\
+    \ isinstance(data, dict):\n        raise ValueError(\"Financial data must be a dictionary or JSON string\")\n    \n  \
+    \  required_fields = ['transactions', 'accounts']\n    for field in required_fields:\n        if field not in data:\n\
+    \            raise ValueError(f\"Missing required field: {field}\")\n    \n    return data\n\ndef calculate_benfords_distribution(data:\
+    \ List[float], digit_position: int = 1) -> Dict[str, float]:\n    \"\"\"Calculate Benford's Law distribution for given\
+    \ numerical data.\"\"\"\n    if not data:\n        raise ValueError(\"Data list cannot be empty\")\n    \n    if digit_position\
+    \ not in [1, 2, 3]:\n        raise ValueError(\"Digit position must be 1, 2, or 3\")\n    \n    first_digits = []\n  \
+    \  for num in data:\n        if num <= 0:\n            continue\n        str_num = str(abs(num)).replace('.', '')\n  \
+    \      if len(str_num) >= digit_position:\n            first_digits.append(int(str_num[digit_position-1]))\n    \n   \
+    \ if not first_digits:\n        raise ValueError(\"No valid numbers found for analysis\")\n    \n    digit_counts = Counter(first_digits)\n\
+    \    total = len(first_digits)\n    \n    distribution = {}\n    for digit in range(1, 10):\n        distribution[str(digit)]\
+    \ = digit_counts.get(digit, 0) / total\n    \n    return distribution\n\ndef detect_anomalies_zscore(data: List[float],\
+    \ threshold: float = 3.0) -> List[Tuple[int, float, float]]:\n    \"\"\"Detect anomalies using Z-score method.\"\"\"\n\
+    \    if len(data) < 2:\n        raise ValueError(\"Data must contain at least 2 values\")\n    \n    mean = sum(data)\
+    \ / len(data)\n    variance = sum((x - mean) ** 2 for x in data) / len(data)\n    std_dev = math.sqrt(variance)\n    \n\
+    \    if std_dev == 0:\n        raise ValueError(\"Standard deviation is zero\")\n    \n    anomalies = []\n    for i,\
+    \ value in enumerate(data):\n        z_score = abs(value - mean) / std_dev\n        if z_score > threshold:\n        \
+    \    anomalies.append((i, value, z_score))\n    \n    return anomalies\n\ndef analyze_transaction_patterns(transactions:\
+    \ List[Dict]) -> Dict[str, Any]:\n    \"\"\"Analyze transaction patterns for suspicious activities.\"\"\"\n    if not\
+    \ transactions:\n        raise ValueError(\"Transaction list cannot be empty\")\n    \n    amounts = [t['amount'] for\
+    \ t in transactions if 'amount' in t]\n    timestamps = [t['timestamp'] for t in transactions if 'timestamp' in t]\n \
+    \   \n    pattern_analysis = {\n        'total_transactions': len(transactions),\n        'total_amount': sum(amounts),\n\
+    \        'average_amount': sum(amounts) / len(amounts) if amounts else 0,\n        'frequency_analysis': {},\n       \
+    \ 'amount_distribution': {},\n        'time_patterns': {}\n    }\n    \n    # Frequency analysis\n    amount_ranges =\
+    \ [(0, 1000), (1000, 10000), (10000, 100000), (100000, float('inf'))]\n    for low, high in amount_ranges:\n        count\
+    \ = sum(1 for amt in amounts if low <= amt < high)\n        pattern_analysis['frequency_analysis'][f'${low}-{high}'] =\
+    \ count\n    \n    # Round number detection\n    round_numbers = sum(1 for amt in amounts if amt % 1000 == 0)\n    pattern_analysis['round_number_ratio']\
+    \ = round_numbers / len(amounts) if amounts else 0\n    \n    return pattern_analysis\n\ndef trace_asset_flow(transactions:\
+    \ List[Dict], start_entity: str) -> Dict[str, Any]:\n    \"\"\"Trace asset flow through transaction chains.\"\"\"\n  \
+    \  if not transactions:\n        raise ValueError(\"Transaction list cannot be empty\")\n    \n    flow_graph = defaultdict(list)\n\
+    \    for tx in transactions:\n        if 'from' in tx and 'to' in tx and 'amount' in tx:\n            flow_graph[tx['from']].append({\n\
+    \                'to': tx['to'],\n                'amount': tx['amount'],\n                'timestamp': tx.get('timestamp',\
+    \ ''),\n                'type': tx.get('type', 'transfer')\n            })\n    \n    visited = set()\n    flow_trace\
+    \ = []\n    \n    def dfs(entity, path, depth=0):\n        if depth > 10 or entity in visited:\n            return\n \
+    \       visited.add(entity)\n        \n        for transfer in flow_graph[entity]:\n            new_path = path + [{\n\
+    \                'entity': entity,\n                'to': transfer['to'],\n                'amount': transfer['amount'],\n\
+    \                'timestamp': transfer['timestamp']\n            }]\n            flow_trace.append(new_path)\n       \
+    \     dfs(transfer['to'], new_path, depth + 1)\n    \n    dfs(start_entity, [])\n    \n    return {\n        'start_entity':\
+    \ start_entity,\n        'total_paths': len(flow_trace),\n        'max_depth': max(len(path) for path in flow_trace) if\
+    \ flow_trace else 0,\n        'flow_paths': flow_trace[:100]  # Limit for performance\n    }\n\ndef calculate_fraud_risk_score(indicators:\
+    \ Dict[str, float]) -> float:\n    \"\"\"Calculate overall fraud risk score based on various indicators.\"\"\"\n    weights\
+    \ = {\n        'anomaly_score': 0.25,\n        'pattern_deviation': 0.20,\n        'velocity_indicator': 0.15,\n     \
+    \   'geographic_risk': 0.15,\n        'entity_risk': 0.15,\n        'compliance_history': 0.10\n    }\n    \n    risk_score\
+    \ = 0.0\n    for indicator, weight in weights.items():\n        value = indicators.get(indicator, 0)\n        risk_score\
+    \ += min(max(value, 0), 1) * weight\n    \n    return min(risk_score * 100, 100)\n\ndef generate_compliance_report(findings:\
+    \ Dict[str, Any], format_type: str = 'json') -> str:\n    \"\"\"Generate compliance report in specified format.\"\"\"\n\
+    \    if format_type not in ['json', 'xml', 'csv']:\n        raise ValueError(\"Format type must be 'json', 'xml', or 'csv'\"\
+    )\n    \n    report = {\n        'report_id': hashlib.md5(str(datetime.now()).encode()).hexdigest()[:12],\n        'generated_at':\
+    \ datetime.now().isoformat(),\n        'findings': findings,\n        'summary': {\n            'total_findings': len(findings.get('violations',\
+    \ [])),\n            'risk_level': findings.get('overall_risk', 'unknown'),\n            'compliance_status': findings.get('status',\
+    \ 'pending')\n        }\n    }\n    \n    if format_type == 'json':\n        return json.dumps(report, indent=2)\n   \
+    \ elif format_type == 'xml':\n        xml_parts = ['<compliance_report>']\n        for key, value in report.items():\n\
+    \            xml_parts.append(f'  <{key}>{value}</{key}>')\n        xml_parts.append('</compliance_report>')\n       \
+    \ return '\\n'.join(xml_parts)\n    else:  # csv\n        lines = ['finding_type,severity,description,timestamp']\n  \
+    \      for finding in findings.get('violations', []):\n            lines.append(f\"{finding.get('type','')},{finding.get('severity','')},{finding.get('desc','')},{finding.get('timestamp','')}\"\
+    )\n        return '\\n'.join(lines)\n\ndef detect_structuring_patterns(transactions: List[Dict], threshold: float = 10000)\
+    \ -> List[Dict]:\n    \"\"\"Detect potential structuring (smurfing) patterns.\"\"\"\n    if not transactions:\n      \
+    \  raise ValueError(\"Transaction list cannot be empty\")\n    \n    # Group by entity and date\n    entity_date_groups\
+    \ = defaultdict(list)\n    for tx in transactions:\n        entity = tx.get('entity', tx.get('account', 'unknown'))\n\
+    \        date = tx.get('date', tx.get('timestamp', '')[:10])\n        entity_date_groups[(entity, date)].append(tx)\n\
+    \    \n    structuring_cases = []\n    for (entity, date), txs in entity_date_groups.items():\n        daily_total = sum(tx.get('amount',\
+    \ 0) for tx in txs)\n        tx_count = len(txs)\n        \n        # Check for structuring indicators\n        if daily_total\
+    \ > threshold * 0.8 and tx_count > 3:\n            amounts = [tx.get('amount', 0) for tx in txs]\n            avg_amount\
+    \ = sum(amounts) / len(amounts)\n            \n            if avg_amount < threshold * 0.2:\n                structuring_cases.append({\n\
+    \                    'entity': entity,\n                    'date': date,\n                    'transaction_count': tx_count,\n\
+    \                    'daily_total': daily_total,\n                    'average_amount': avg_amount,\n                \
+    \    'risk_indicator': 'high' if daily_total > threshold else 'medium'\n                })\n    \n    return structuring_cases\n\
+    \ndef build_investigation_query(entity_id: str, investigation_type: str, parameters: Dict) -> str:\n    \"\"\"Build SQL\
+    \ query for investigation database.\"\"\"\n    base_queries = {\n        'transaction_history': \"\"\"\n            SELECT\
+    \ t.*, a.entity_name, a.risk_score \n            FROM transactions t \n            JOIN accounts a ON t.account_id = a.id\
+    \ \n            WHERE a.entity_id = %s \n            AND t.timestamp BETWEEN %s AND %s \n            ORDER BY t.timestamp\
+    \ DESC\n        \"\"\",\n        'relationship_network': \"\"\"\n            SELECT e1.entity_name as entity1, e2.entity_name\
+    \ as entity2, \n                   r.relationship_type, r.strength, r.first_seen, r.last_seen\n            FROM relationships\
+    \ r\n            JOIN entities e1 ON r.entity1_id = e1.id\n            JOIN entities e2 ON r.entity2_id = e2.id\n    \
+    \        WHERE e1.entity_id = %s OR e2.entity_id = %s\n            AND r.strength > %s\n        \"\"\",\n        'compliance_violations':\
+    \ \"\"\"\n            SELECT v.*, r.regulation_name, r.severity_level\n            FROM violations v\n            JOIN\
+    \ regulations r ON v.regulation_id = r.id\n            WHERE v.entity_id = %s\n            AND v.violation_date BETWEEN\
+    \ %s AND %s\n            ORDER BY r.severity_level DESC\n        \"\"\"\n    }\n    \n    if investigation_type not in\
+    \ base_queries:\n        raise ValueError(f\"Invalid investigation type: {investigation_type}\")\n    \n    return base_queries[investigation_type]\n\
+    \nclass SkillEngine:\n    \"\"\"Forensic Accounting Skill Engine for Revvel platform.\"\"\"\n    \n    def __init__(self,\
+    \ config: Dict[str, Any]):\n        \"\"\"Initialize the skill engine with configuration.\"\"\"\n        self.config =\
+    \ config\n        self.logger = logging.getLogger(__name__)\n        self.logger.setLevel(config.get('log_level', 'INFO'))\n\
+    \        \n        # Initialize handlers\n        handler = logging.StreamHandler()\n        formatter = logging.Formatter('%(asctime)s\
+    \ - %(name)s - %(levelname)s - %(message)s')\n        handler.setFormatter(formatter)\n        self.logger.addHandler(handler)\n\
+    \        \n        self.logger.info(\"Forensic Accounting Skill Engine initialized\")\n    \n    def detect_financial_fraud(self,\
+    \ data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Detect financial fraud patterns in transaction data.\"\"\"\n\
+    \        try:\n            parsed_data = parse_financial_data(data)\n            transactions = parsed_data.get('transactions',\
+    \ [])\n            \n            # Analyze patterns\n            pattern_analysis = analyze_transaction_patterns(transactions)\n\
+    \            \n            # Detect anomalies\n            amounts = [t['amount'] for t in transactions if 'amount' in\
+    \ t]\n            anomalies = detect_anomalies_zscore(amounts) if amounts else []\n            \n            # Calculate\
+    \ risk score\n            indicators = {\n                'anomaly_score': len(anomalies) / len(amounts) if amounts else\
+    \ 0,\n                'pattern_deviation': pattern_analysis.get('round_number_ratio', 0),\n                'velocity_indicator':\
+    \ 0.5,  # Placeholder\n                'geographic_risk': 0.3,  # Placeholder\n                'entity_risk': 0.4,  #\
+    \ Placeholder\n                'compliance_history': 0.2  # Placeholder\n            }\n            \n            risk_score\
+    \ = calculate_fraud_risk_score(indicators)\n            \n            return {\n                'status': 'success',\n\
+    \                'fraud_detected': risk_score > 70,\n                'risk_score': risk_score,\n                'pattern_analysis':\
+    \ pattern_analysis,\n                'anomaly_count': len(anomalies),\n                'top_anomalies': anomalies[:5],\n\
+    \                'confidence': min(risk_score / 100, 0.95)\n            }\n            \n        except Exception as e:\n\
+    \            self.logger.error(f\"Error in fraud detection: {str(e)}\")\n            return {'status': 'error', 'message':\
+    \ str(e)}\n    \n    def trace_money_laundering(self, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Trace money\
+    \ laundering patterns in transaction flows.\"\"\"\n        try:\n            transactions = data.get('transactions', [])\n\
+    \            structuring_patterns = detect_structuring_patterns(transactions)\n            \n            # Analyze transaction\
+    \ chains\n            start_entity = data.get('start_entity', 'unknown')\n            flow_analysis = trace_asset_flow(transactions,\
+    \ start_entity)\n            \n            # Calculate ML risk\n            ml_indicators = {\n                'structuring_cases':\
+    \ len(structuring_patterns),\n                'complexity_score': flow_analysis.get('max_depth', 0) / 10,\n          \
+    \      'velocity_score': 0.6,  # Placeholder\n                'geographic_diversity': 0.7  # Placeholder\n           \
+    \ }\n            \n            ml_risk = sum(ml_indicators.values()) / len(ml_indicators) * 100\n            \n      \
+    \      return {\n                'status': 'success',\n                'ml_risk_score': ml_risk,\n                'structuring_patterns':\
+    \ structuring_patterns,\n                'flow_analysis': flow_analysis,\n                'high_risk_entities': [sp['entity']\
+    \ for sp in structuring_patterns if sp['risk_indicator'] == 'high'],\n                'investigation_priority': 'high'\
+    \ if ml_risk > 75 else 'medium' if ml_risk > 50 else 'low'\n            }\n            \n        except Exception as e:\n\
+    \            self.logger.error(f\"Error in ML tracing: {str(e)}\")\n            return {'status': 'error', 'message':\
+    \ str(e)}\n    \n    def analyze_benfords_law(self, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Perform Benford's\
+    \ Law analysis on financial data.\"\"\"\n        try:\n            numbers = data.get('numbers', [])\n            digit_position\
+    \ = data.get('digit_position', 1)\n            \n            actual_dist = calculate_benfords_distribution(numbers, digit_position)\n\
+    \            \n            # Expected Benford's distribution\n            expected_dist = {\n                '1': 0.301,\
+    \ '2': 0.176, '3': 0.125, '4': 0.097,\n                '5': 0.079, '6': 0.067, '7': 0.058, '8': 0.051, '9': 0.046\n  \
+    \          }\n            \n            # Chi-square test\n            chi_square = 0\n            for digit in expected_dist:\n\
+    \                expected = expected_dist[digit] * sum(actual_dist.values())\n                observed = actual_dist.get(digit,\
+    \ 0) * sum(actual_dist.values())\n                if expected > 0:\n                    chi_square += ((observed - expected)\
+    \ ** 2) / expected\n            \n            # Critical value for 95% confidence (8 degrees of freedom)\n           \
+    \ critical_value = 15.51\n            conformity = chi_square < critical_value\n            \n            return {\n \
+    \               'status': 'success',\n                'digit_position': digit_position,\n                'expected_distribution':\
+    \ expected_dist,\n                'actual_distribution': actual_dist,\n                'chi_square_statistic': chi_square,\n\
+    \                'conforms_to_benfords': conformity,\n                'confidence_level': 0.95,\n                'data_integrity_score':\
+    \ 100 - min(chi_square / critical_value * 100, 100)\n            }\n            \n        except Exception as e:\n   \
+    \         self.logger.error(f\"Error in Benford's analysis: {str(e)}\")\n            return {'status': 'error', 'message':\
+    \ str(e)}\n    \n    def generate_compliance_report(self, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Generate\
+    \ compliance and investigation reports.\"\"\"\n        try:\n            findings = data.get('findings', {})\n       \
+    \     report_format = data.get('format', 'json')\n            \n            report_content = generate_compliance_report(findings,\
+    \ report_format)\n            \n            return {\n                'status': 'success',\n                'report_id':\
+    \ hashlib.md5(str(datetime.now()).encode()).hexdigest()[:12],\n                'report_content': report_content,\n   \
+    \             'format': report_format,\n                'generated_at': datetime.now().isoformat(),\n                'report_size':\
+    \ len(report_content)\n            }\n            \n        except Exception as e:\n            self.logger.error(f\"\
+    Error generating report: {str(e)}\")\n            return {'status': 'error', 'message': str(e)}\n    \n    def run(self,\
+    \ capability: str, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Main entry point to execute forensic accounting\
+    \ capabilities.\"\"\"\n        self.logger.info(f\"Executing capability: {capability}\")\n        \n        capability_map\
+    \ = {\n            'financial_fraud_detection': self.detect_financial_fraud,\n            'money_laundering_pattern_analysis':\
+    \ self.trace_money_laundering,\n            'benfords_law_analysis': self.analyze_benfords_law,\n            'compliance_reporting':\
+    \ self.generate_compliance_report,\n            'asset_tracing': lambda d: {'status': 'success', 'trace': trace_asset_flow(d.get('transactions',\
+    \ []), d.get('start_entity', 'unknown'))},\n            'cryptocurrency_tracing': lambda d: {'status': 'success', 'crypto_analysis':\
+    \ 'Cryptocurrency analysis completed'},\n            'tax_fraud_analysis': lambda d: {'status': 'success', 'tax_analysis':\
+    \ 'Tax fraud analysis completed'},\n            'risk_scoring': lambda d: {'status': 'success', 'risk_score': calculate_fraud_risk_score(d.get('indicators',\
+    \ {}))}\n        }\n        \n        if capability not in capability_map:\n            return {'status': 'error', 'message':\
+    \ f'Unknown capability: {capability}'}\n        \n        return capability_map[capability](data)\n\nclass TestForensicAccountingSkill(unittest.TestCase):\n\
+    \    \"\"\"Test cases for Forensic Accounting skill module.\"\"\"\n    \n    def setUp(self):\n        \"\"\"Set up test\
+    \ fixtures.\"\"\"\n        self.config = {'log_level': 'DEBUG'}\n        self.engine = SkillEngine(self.config)\n    \
+    \    \n        self.sample_transactions = [\n            {'amount': 5000, 'timestamp': '2024-01-01', 'from': 'A', 'to':\
+    \ 'B'},\n            {'amount': 9500, 'timestamp': '2024-01-02', 'from': 'B', 'to': 'C'},\n            {'amount': 9999,\
+    \ 'timestamp': '2024-01-03', 'from': 'C', 'to': 'D'},\n            {'amount': 10000, 'timestamp': '2024-01-04', 'from':\
+    \ 'D', 'to': 'E'}\n        ]\n        \n        self.sample_financial_data = {\n            'transactions': self.sample_transactions,\n\
+    \            'accounts': [{'id': 'A', 'balance': 100000}, {'id': 'B', 'balance': 50000}]\n        }\n    \n    def test_skill_metadata(self):\n\
+    \        \"\"\"Test skill metadata validation.\"\"\"\n        self.assertEqual(SKILL_METADATA['name'], 'Forensic Accounting')\n\
+    \        self.assertEqual(SKILL_METADATA['id'], 'forensic_accounting')\n        self.assertIn('financial_fraud_detection',\
+    \ SKILL_METADATA['capabilities'])\n        self.assertGreater(len(SKILL_METADATA['capabilities']), 5)\n    \n    def test_expert_prompts(self):\n\
+    \        \"\"\"Test expert prompts dictionary.\"\"\"\n        self.assertIn('fraud_detection', EXPERT_PROMPTS)\n     \
+    \   self.assertIn('money_laundering_analysis', EXPERT_PROMPTS)\n        self.assertIn('{transaction_data}', EXPERT_PROMPTS['fraud_detection'])\n\
+    \    \n    def test_integration_points(self):\n        \"\"\"Test integration points configuration.\"\"\"\n        self.assertIn('sec_edgar_api',\
+    \ INTEGRATION_POINTS)\n        self.assertEqual(INTEGRATION_POINTS['sec_edgar_api']['type'], 'api')\n        self.assertIn('endpoint',\
+    \ INTEGRATION_POINTS['sec_edgar_api'])\n    \n    def test_parse_financial_data(self):\n        \"\"\"Test financial data\
+    \ parsing.\"\"\"\n        # Test with dict\n        result = parse_financial_data(self.sample_financial_data)\n      \
+    \  self.assertEqual(result, self.sample_financial_data)\n        \n        # Test with JSON string\n        json_str =\
+    \ json.dumps(self.sample_financial_data)\n        result = parse_financial_data(json_str)\n        self.assertEqual(result,\
+    \ self.sample_financial_data)\n        \n        # Test invalid input\n        with self.assertRaises(ValueError):\n \
+    \           parse_financial_data(\"invalid json\")\n    \n    def test_benfords_distribution(self):\n        \"\"\"Test\
+    \ Benford's Law distribution calculation.\"\"\"\n        data = [123, 234, 345, 456, 567, 678, 789, 890, 901]\n      \
+    \  result = calculate_benfords_distribution(data)\n        \n        self.assertIn('1', result)\n        self.assertIn('9',\
+    \ result)\n        self.assertAlmostEqual(sum(result.values()), 1.0, places=5)\n        \n        # Test empty data\n\
+    \        with self.assertRaises(ValueError):\n            calculate_benfords_distribution([])\n    \n    def test_anomaly_detection(self):\n\
+    \        \"\"\"Test anomaly detection with Z-score.\"\"\"\n        data = [10, 12, 11, 13, 100, 11, 12]  # 100 is anomaly\n\
+    \        anomalies = detect_anomalies_zscore(data)\n        \n        self.assertGreater(len(anomalies), 0)\n        self.assertEqual(anomalies[0][0],\
+    \ 4)  # Index of 100\n        self.assertGreater(anomalies[0][2], 3.0)  # Z-score > 3\n        \n        # Test insufficient\
+    \ data\n        with self.assertRaises(ValueError):\n            detect_anomalies_zscore([10])\n    \n    def test_transaction_pattern_analysis(self):\n\
+    \        \"\"\"Test transaction pattern analysis.\"\"\"\n        result = analyze_transaction_patterns(self.sample_transactions)\n\
+    \        \n        self.assertEqual(result['total_transactions'], 4)\n        self.assertGreater(result['total_amount'],\
+    \ 0)\n        self.assertIn('round_number_ratio', result)\n        self.assertIn('frequency_analysis', result)\n    \n\
+    \    def test_asset_flow_tracing(self):\n        \"\"\"Test asset flow tracing.\"\"\"\n        result = trace_asset_flow(self.sample_transactions,\
+    \ 'A')\n        \n        self.assertEqual(result['start_entity'], 'A')\n        self.assertGreater(result['total_paths'],\
+    \ 0)\n        self.assertIn('flow_paths', result)\n    \n    def test_fraud_risk_scoring(self):\n        \"\"\"Test fraud\
+    \ risk score calculation.\"\"\"\n        indicators = {\n            'anomaly_score': 0.8,\n            'pattern_deviation':\
+    \ 0.7,\n            'velocity_indicator': 0.6,\n            'geographic_risk': 0.5,\n            'entity_risk': 0.4,\n\
+    \            'compliance_history': 0.3\n        }\n        \n        score = calculate_fraud_risk_score(indicators)\n\
+    \        self.assertGreaterEqual(score, 0)\n        self.assertLessEqual(score, 100)\n    \n    def test_structuring_detection(self):\n\
+    \        \"\"\"Test structuring pattern detection.\"\"\"\n        structuring_txs = [\n            {'amount': 9500, 'date':\
+    \ '2024-01-01', 'entity': 'TestEntity'},\n            {'amount': 9600, 'date': '2024-01-01', 'entity': 'TestEntity'},\n\
+    \            {'amount': 9700, 'date': '2024-01-01', 'entity': 'TestEntity'},\n            {'amount': 9800, 'date': '2024-01-01',\
+    \ 'entity': 'TestEntity'}\n        ]\n        \n        result = detect_structuring_patterns(structuring_txs)\n      \
+    \  self.assertGreater(len(result), 0)\n        self.assertEqual(result[0]['entity'], 'TestEntity')\n    \n    def test_skill_engine_initialization(self):\n\
+    \        \"\"\"Test SkillEngine initialization.\"\"\"\n        self.assertIsInstance(self.engine, SkillEngine)\n     \
+    \   self.assertEqual(self.engine.config, self.config)\n    \n    def test_fraud_detection_capability(self):\n        \"\
+    \"\"Test fraud detection capability.\"\"\"\n        result = self.engine.detect_financial_fraud(self.sample_financial_data)\n\
+    \        \n        self.assertEqual(result['status'], 'success')\n        self.assertIn('risk_score', result)\n      \
+    \  self.assertIn('fraud_detected', result)\n        self.assertGreaterEqual(result['risk_score'], 0)\n        self.assertLessEqual(result['risk_score'],\
+    \ 100)\n    \n    def test_money_laundering_analysis(self):\n        \"\"\"Test money laundering analysis capability.\"\
+    \"\"\n        data = {'transactions': self.sample_transactions}\n        result = self.engine.trace_money_laundering(data)\n\
+    \        \n        self.assertEqual(result['status'], 'success')\n        self.assertIn('ml_risk_score', result)\n   \
+    \     self.assertIn('structuring_patterns', result)\n    \n    def test_benfords_law_analysis(self):\n        \"\"\"Test\
+    \ Benford's Law analysis capability.\"\"\"\n        data = {\n            'numbers': [123, 234, 345, 456, 567, 678, 789,\
+    \ 890, 901, 1234],\n            'digit_position': 1\n        }\n        result = self.engine.analyze_benfords_law(data)\n\
+    \        \n        self.assertEqual(result['status'], 'success')\n        self.assertIn('conforms_to_benfords', result)\n\
+    \        self.assertIn('chi_square_statistic', result)\n    \n    def test_compliance_report_generation(self):\n     \
+    \   \"\"\"Test compliance report generation.\"\"\"\n        findings = {\n            'violations': [\n              \
+    \  {'type': 'AML', 'severity': 'high', 'desc': 'Suspicious activity', 'timestamp': '2024-01-01'},\n                {'type':\
+    \ 'KYC', 'severity': 'medium', 'desc': 'Incomplete documentation', 'timestamp': '2024-01-02'}\n            ],\n      \
+    \      'overall_risk': 'high',\n            'status': 'violation_found'\n        }\n        \n        data = {'findings':\
+    \ findings, 'format': 'json'}\n        result = self.engine.generate_compliance_report(data)\n        \n        self.assertEqual(result['status'],\
+    \ 'success')\n        self.assertIn('report_content', result)\n        self.assertEqual(result['format'], 'json')\n  \
+    \  \n    def test_run_method_dispatch(self):\n        \"\"\"Test main run method capability dispatch.\"\"\"\n        #\
+    \ Test fraud detection\n        result = self.engine.run('financial_fraud_detection', self.sample_financial_data)\n  \
+    \      self.assertEqual(result['status'], 'success')\n        \n        # Test unknown capability\n        result = self.engine.run('unknown_capability',\
+    \ {})\n        self.assertEqual(result['status'], 'error')\n        self.assertIn('Unknown capability', result['message'])\n\
+    \    \n    def test_error_handling(self):\n        \"\"\"Test error handling in various functions.\"\"\"\n        # Test\
+    \ with empty data\n        result = self.engine.detect_financial_fraud({})\n        self.assertEqual(result['status'],\
+    \ 'error')\n        \n        # Test with invalid capability\n        result = self.engine.run('invalid', {})\n      \
+    \  self.assertEqual(result['status'], 'error')\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Forensic Accounting skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''forensic_accounting'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

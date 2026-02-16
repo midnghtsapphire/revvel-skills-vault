@@ -1,0 +1,56 @@
+name: book-fence
+title: Book Fence
+version: 1.0.1
+description: Book fence services through Lokuli MCP. Use when user needs to find and book fence. Triggers on requests like
+  "book a fence", "find fence near me", or any fence service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - fence
+  source: clawhub-community
+  clawhub_slug: book-fence
+  clawhub_path: edwardrodriguez703-design/book-fence
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Fence
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-fence
+
+    # Path: edwardrodriguez703-design/book-fence
+
+
+    ## Description
+
+    Book fence services through Lokuli MCP. Use when user needs to find and book fence. Triggers on requests like "book a
+    fence", "find fence near me", or any fence service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-fence
+
+    ```'
+examples:
+- description: Install Book Fence from ClawHub
+  usage: clawhub install book-fence
+schema_version: '1.0'

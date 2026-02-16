@@ -1,0 +1,72 @@
+name: kis-trading
+title: KIS Trading (한국투자증권)
+version: 1.0.0
+description: '"한국투자증권(KIS) Open API를 이용한 국내 주식 트레이딩. 잔고 조회, 시세 확인, 매수/매도 주문, 매매 내역, 시장 개황 등. | Korean stock trading via KIS
+  (Korea Investment & Securities) Open API. Balance, quotes, buy/sell orders, trade history, market overview."'
+metadata:
+  author: tgparkk
+  category: Development & Coding
+  tags:
+  - development-coding
+  - kis
+  - trading
+  source: clawhub-community
+  clawhub_slug: kis-trading
+  clawhub_path: tgparkk/kis-trading
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# KIS Trading (한국투자증권)
+
+    # Source: ClawHub community skill by tgparkk
+
+    # Install: clawhub install kis-trading
+
+    # Path: tgparkk/kis-trading
+
+
+    ## Description
+
+    "한국투자증권(KIS) Open API를 이용한 국내 주식 트레이딩. 잔고 조회, 시세 확인, 매수/매도 주문, 매매 내역, 시장 개황 등. | Korean stock trading via KIS (Korea Investment
+    & Securities) Open API. Balance, quotes, buy/sell orders, trade history, market overview."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/kis-api-guide.md
+
+    - scripts/balance.py
+
+    - scripts/history.py
+
+    - scripts/holdings.py
+
+    - scripts/kis_common.py
+
+    - scripts/market.py
+
+    - scripts/order.py
+
+    - scripts/quote.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kis-trading
+
+    ```'
+examples:
+- description: Install KIS Trading (한국투자증권) from ClawHub
+  usage: clawhub install kis-trading
+schema_version: '1.0'

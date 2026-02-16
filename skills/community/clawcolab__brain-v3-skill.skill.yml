@@ -1,0 +1,71 @@
+name: clawbrain
+title: Clawbrain
+version: 0.1.10
+description: '"Claw Brain - Personal AI Memory System for OpenClaw/ClawDBot. Provides memory, personality, bonding, and learning
+  capabilities with encrypted secrets support. Auto-refreshes on service restart."'
+metadata:
+  author: clawcolab
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawbrain
+  source: clawhub-community
+  clawhub_slug: brain-v3-skill
+  clawhub_path: clawcolab/brain-v3-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawbrain
+
+    # Source: ClawHub community skill by clawcolab
+
+    # Install: clawhub install brain-v3-skill
+
+    # Path: clawcolab/brain-v3-skill
+
+
+    ## Description
+
+    "Claw Brain - Personal AI Memory System for OpenClaw/ClawDBot. Provides memory, personality, bonding, and learning capabilities
+    with encrypted secrets support. Auto-refreshes on service restart."
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SECURITY_FIXES.md
+
+    - SKILL.md
+
+    - __init__.py
+
+    - _meta.json
+
+    - clawbrain.py
+
+    - clawbrain_cli.py
+
+    - install.sh
+
+    - pyproject.toml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brain-v3-skill
+
+    ```'
+examples:
+- description: Install Clawbrain from ClawHub
+  usage: clawhub install brain-v3-skill
+schema_version: '1.0'

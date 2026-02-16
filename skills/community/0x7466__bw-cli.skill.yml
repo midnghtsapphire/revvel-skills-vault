@@ -1,0 +1,33 @@
+name: bw-cli
+title: Bitwarden CLI
+version: 1.1.0
+description: 'Securely interact with Bitwarden password manager via the bw CLI. Covers authentication (login/unlock/logout),
+  vault operations (list/get/create/edit/delete items, folders, attachments), password/passphrase generation, organization
+  management, and secure session handling. Use for "bitwarden", "bw", '
+metadata:
+  author: '0x7466'
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - cli
+  source: clawhub-community
+  clawhub_slug: bw-cli
+  clawhub_path: 0x7466/bw-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Bitwarden CLI\n# Source: ClawHub community skill by 0x7466\n# Install: clawhub install bw-cli\n# Path: 0x7466/bw-cli\n\
+    \n## Description\nSecurely interact with Bitwarden password manager via the bw CLI. Covers authentication (login/unlock/logout),\
+    \ vault operations (list/get/create/edit/delete items, folders, attachments), password/passphrase generation, organization\
+    \ management, and secure session handling. Use for \"bitwarden\", \"bw\", \n\n## Files\n- SKILL.md\n- _meta.json\n- references/commands.md\n\
+    - scripts/create-login-item.sh\n- scripts/safe-get-field.sh\n- scripts/unlock-session.sh\n\n## Installation\n```bash\n\
+    clawhub install bw-cli\n```"
+examples:
+- description: Install Bitwarden CLI from ClawHub
+  usage: clawhub install bw-cli
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: llm-supervisor
+title: LLM Supervisor
+version: 0.3.0
+description: Graceful rate limit handling with Ollama fallback. Notifies on rate limits, offers local model switch with confirmation
+  for code tasks.
+metadata:
+  author: dhardie
+  category: Development & Coding
+  tags:
+  - development-coding
+  - llm
+  - supervisor
+  source: clawhub-community
+  clawhub_slug: llm-supervisor
+  clawhub_path: dhardie/llm-supervisor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LLM Supervisor
+
+    # Source: ClawHub community skill by dhardie
+
+    # Install: clawhub install llm-supervisor
+
+    # Path: dhardie/llm-supervisor
+
+
+    ## Description
+
+    Graceful rate limit handling with Ollama fallback. Notifies on rate limits, offers local model switch with confirmation
+    for code tasks.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.ts
+
+    - package.json
+
+    - skill.json
+
+    - state.ts
+
+    - tsconfig.json
+
+    - commands/llm.ts
+
+    - dist/index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install llm-supervisor
+
+    ```'
+examples:
+- description: Install LLM Supervisor from ClawHub
+  usage: clawhub install llm-supervisor
+schema_version: '1.0'

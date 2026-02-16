@@ -1,0 +1,61 @@
+name: near-name-service
+title: Near Name Service
+version: 1.0.0
+description: Manage NEAR Name Service (.near domains) - check availability, register, resolve, and manage names.
+metadata:
+  author: shaiss
+  category: General
+  tags:
+  - general
+  - near
+  - name
+  - service
+  source: clawhub-community
+  clawhub_slug: near-name-service
+  clawhub_path: shaiss/near-name-service
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Near Name Service
+
+    # Source: ClawHub community skill by shaiss
+
+    # Install: clawhub install near-name-service
+
+    # Path: shaiss/near-name-service
+
+
+    ## Description
+
+    Manage NEAR Name Service (.near domains) - check availability, register, resolve, and manage names.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/nameservice.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install near-name-service
+
+    ```'
+examples:
+- description: Install Near Name Service from ClawHub
+  usage: clawhub install near-name-service
+schema_version: '1.0'

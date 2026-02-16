@@ -1,0 +1,56 @@
+name: book-meditation
+title: Book Meditation
+version: 1.0.1
+description: Book meditation services through Lokuli MCP. Use when user needs to find and book meditation. Triggers on requests
+  like "book a meditation", "find meditation near me", or any meditation service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - meditation
+  source: clawhub-community
+  clawhub_slug: book-meditation
+  clawhub_path: edwardrodriguez703-design/book-meditation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Meditation
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-meditation
+
+    # Path: edwardrodriguez703-design/book-meditation
+
+
+    ## Description
+
+    Book meditation services through Lokuli MCP. Use when user needs to find and book meditation. Triggers on requests like
+    "book a meditation", "find meditation near me", or any meditation service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-meditation
+
+    ```'
+examples:
+- description: Install Book Meditation from ClawHub
+  usage: clawhub install book-meditation
+schema_version: '1.0'

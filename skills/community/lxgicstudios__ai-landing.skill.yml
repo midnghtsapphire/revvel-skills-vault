@@ -1,0 +1,54 @@
+name: landing-gen
+title: Landing Page Generator
+version: 1.0.1
+description: Generate landing page code from product descriptions
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - landing
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-landing
+  clawhub_path: lxgicstudios/ai-landing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Landing Page Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-landing
+
+    # Path: lxgicstudios/ai-landing
+
+
+    ## Description
+
+    Generate landing page code from product descriptions
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-landing
+
+    ```'
+examples:
+- description: Install Landing Page Generator from ClawHub
+  usage: clawhub install ai-landing
+schema_version: '1.0'

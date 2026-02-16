@@ -1,0 +1,68 @@
+name: korail-manager
+title: Korail Manager Ben
+version: 0.1.0
+description: '"Cancel a reservation."'
+metadata:
+  author: lonehades
+  category: General
+  tags:
+  - general
+  - korail
+  - manager
+  source: clawhub-community
+  clawhub_slug: korail-manager-ben
+  clawhub_path: lonehades/korail-manager-ben
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Korail Manager Ben
+
+    # Source: ClawHub community skill by lonehades
+
+    # Install: clawhub install korail-manager-ben
+
+    # Path: lonehades/korail-manager-ben
+
+
+    ## Description
+
+    "Cancel a reservation."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/korail2/__init__.py
+
+    - lib/korail2/constants.py
+
+    - lib/korail2/korail2.py
+
+    - scripts/cancel.py
+
+    - scripts/search.py
+
+    - scripts/watch.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install korail-manager-ben
+
+    ```'
+examples:
+- description: Install Korail Manager Ben from ClawHub
+  usage: clawhub install korail-manager-ben
+schema_version: '1.0'

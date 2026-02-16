@@ -1,0 +1,73 @@
+name: gas-price-alert
+title: Gas Price Alert
+version: 1.1.0
+description: Find and monitor gas prices with daily notifications. Use when searching for the cheapest gas in a specific area,
+  tracking Costco and other discount fuel stations, or setting up daily gas price alerts. Supports any US location with configurable
+  radius and fuel type.
+metadata:
+  author: gustavoziaugra
+  category: Search & Research
+  tags:
+  - search-research
+  - gas
+  - price
+  - alert
+  source: clawhub-community
+  clawhub_slug: gas-price-alert
+  clawhub_path: gustavoziaugra/gas-price-alert
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gas Price Alert
+
+    # Source: ClawHub community skill by gustavoziaugra
+
+    # Install: clawhub install gas-price-alert
+
+    # Path: gustavoziaugra/gas-price-alert
+
+
+    ## Description
+
+    Find and monitor gas prices with daily notifications. Use when searching for the cheapest gas in a specific area, tracking
+    Costco and other discount fuel stations, or setting up daily gas price alerts. Supports any US location with configurable
+    radius and fuel type.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - test_all.json
+
+    - test_gas.json
+
+    - references/locations.md
+
+    - references/zip_codes.md
+
+    - scripts/gas_alternative.py
+
+    - scripts/gasbuddy_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gas-price-alert
+
+    ```'
+examples:
+- description: Install Gas Price Alert from ClawHub
+  usage: clawhub install gas-price-alert
+schema_version: '1.0'

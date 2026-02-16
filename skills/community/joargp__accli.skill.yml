@@ -1,0 +1,32 @@
+name: accli
+title: Apple Calendar CLI
+version: 1.0.0
+description: 'This skill should be used when interacting with Apple Calendar on macOS. Use it for listing calendars, viewing
+  events, creating/updating/deleting calendar events, and checking availability/free-busy times. Triggers on requests like
+  "check my calendar", "schedule a meeting", "what''s on my schedule", '
+metadata:
+  author: joargp
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - accli
+  source: clawhub-community
+  clawhub_slug: accli
+  clawhub_path: joargp/accli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Apple Calendar CLI\n# Source: ClawHub community skill by joargp\n# Install: clawhub install accli\n# Path: joargp/accli\n\
+    \n## Description\nThis skill should be used when interacting with Apple Calendar on macOS. Use it for listing calendars,\
+    \ viewing events, creating/updating/deleting calendar events, and checking availability/free-busy times. Triggers on requests\
+    \ like \"check my calendar\", \"schedule a meeting\", \"what's on my schedule\", \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    \n## Installation\n```bash\nclawhub install accli\n```"
+examples:
+- description: Install Apple Calendar CLI from ClawHub
+  usage: clawhub install accli
+schema_version: '1.0'

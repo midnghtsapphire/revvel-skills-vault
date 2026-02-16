@@ -1,0 +1,60 @@
+name: find-people
+title: Find People (x402)
+version: 1.0.0
+description: Open Source Intelligence (OSINT) tool for researching individuals - professional backgrounds, career timelines,
+  due diligence, competitive intelligence, and investor research. Use when users need to research people, verify credentials,
+  or gather professional information. Costs $0.15 USDC per request
+metadata:
+  author: tzannetosgiannis
+  category: Search & Research
+  tags:
+  - search-research
+  - find
+  - people
+  source: clawhub-community
+  clawhub_slug: find-people
+  clawhub_path: tzannetosgiannis/find-people
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Find People (x402)
+
+    # Source: ClawHub community skill by tzannetosgiannis
+
+    # Install: clawhub install find-people
+
+    # Path: tzannetosgiannis/find-people
+
+
+    ## Description
+
+    Open Source Intelligence (OSINT) tool for researching individuals - professional backgrounds, career timelines, due diligence,
+    competitive intelligence, and investor research. Use when users need to research people, verify credentials, or gather
+    professional information. Costs $0.15 USDC per request
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/research.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install find-people
+
+    ```'
+examples:
+- description: Install Find People (x402) from ClawHub
+  usage: clawhub install find-people
+schema_version: '1.0'

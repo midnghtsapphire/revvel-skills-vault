@@ -1,0 +1,65 @@
+name: browser-use-local
+title: Browser Use Local
+version: 1.0.0
+description: 'Use when you need browser automation via the browser-use CLI or Python code in this OpenClaw container/host:
+  open pages, click/type, take screenshots, extract HTML/links, or run an Agent with an OpenAI-compatible LLM (e.g. Moonshot/Kimi)
+  using a custom base_url. Also use for debugging browser-use se'
+metadata:
+  author: fengjiajie
+  category: Search & Research
+  tags:
+  - search-research
+  - browser
+  - use
+  - local
+  source: clawhub-community
+  clawhub_slug: browser-use-local
+  clawhub_path: fengjiajie/browser-use-local
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Browser Use Local
+
+    # Source: ClawHub community skill by fengjiajie
+
+    # Install: clawhub install browser-use-local
+
+    # Path: fengjiajie/browser-use-local
+
+
+    ## Description
+
+    Use when you need browser automation via the browser-use CLI or Python code in this OpenClaw container/host: open pages,
+    click/type, take screenshots, extract HTML/links, or run an Agent with an OpenAI-compatible LLM (e.g. Moonshot/Kimi) using
+    a custom base_url. Also use for debugging browser-use se
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/crop_candidates.py
+
+    - scripts/extract_data_images.py
+
+    - scripts/run_agent_kimi.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install browser-use-local
+
+    ```'
+examples:
+- description: Install Browser Use Local from ClawHub
+  usage: clawhub install browser-use-local
+schema_version: '1.0'

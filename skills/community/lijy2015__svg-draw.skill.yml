@@ -1,0 +1,64 @@
+name: svg-draw
+title: SVG Draw
+version: 1.0.0
+description: Create SVG images and convert them to PNG without external graphics libraries. Use when you need to generate
+  custom illustrations, avatars, or artwork (e.g., "draw a dragon", "create an avatar", "make a logo") or convert SVG files
+  to PNG format. This skill works by writing SVG text directly (no PIL/
+metadata:
+  author: lijy2015
+  category: Media & Content
+  tags:
+  - media-content
+  - svg
+  - draw
+  source: clawhub-community
+  clawhub_slug: svg-draw
+  clawhub_path: lijy2015/svg-draw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SVG Draw
+
+    # Source: ClawHub community skill by lijy2015
+
+    # Install: clawhub install svg-draw
+
+    # Path: lijy2015/svg-draw
+
+
+    ## Description
+
+    Create SVG images and convert them to PNG without external graphics libraries. Use when you need to generate custom illustrations,
+    avatars, or artwork (e.g., "draw a dragon", "create an avatar", "make a logo") or convert SVG files to PNG format. This
+    skill works by writing SVG text directly (no PIL/
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/dragon_template.svg
+
+    - assets/lobster_template.svg
+
+    - scripts/svg_to_png.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install svg-draw
+
+    ```'
+examples:
+- description: Install SVG Draw from ClawHub
+  usage: clawhub install svg-draw
+schema_version: '1.0'

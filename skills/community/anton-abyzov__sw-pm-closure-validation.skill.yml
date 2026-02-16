@@ -1,0 +1,60 @@
+name: pm-closure-validation
+title: Pm Closure Validation
+version: 1.0.0
+description: Expert PM validation for increment closure with 3-gate quality checks (tasks, tests, documentation). Use before
+  /sw:done to validate readiness - checks P1/P2/P3 task completion, test coverage requirements, and documentation updates.
+  Detects scope creep and acts as final release quality gate.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - closure
+  - validation
+  source: clawhub-community
+  clawhub_slug: sw-pm-closure-validation
+  clawhub_path: anton-abyzov/sw-pm-closure-validation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pm Closure Validation
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-pm-closure-validation
+
+    # Path: anton-abyzov/sw-pm-closure-validation
+
+
+    ## Description
+
+    Expert PM validation for increment closure with 3-gate quality checks (tasks, tests, documentation). Use before /sw:done
+    to validate readiness - checks P1/P2/P3 task completion, test coverage requirements, and documentation updates. Detects
+    scope creep and acts as final release quality gate.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-pm-closure-validation
+
+    ```'
+examples:
+- description: Install Pm Closure Validation from ClawHub
+  usage: clawhub install sw-pm-closure-validation
+schema_version: '1.0'

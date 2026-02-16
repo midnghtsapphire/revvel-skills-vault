@@ -1,0 +1,59 @@
+name: db-readonly
+title: DB Readonly
+version: 1.0.0
+description: Run safe read-only queries against MySQL or PostgreSQL for data inspection, reporting, and troubleshooting. Use
+  when the user asks to read tables, inspect schema, count rows, sample data, or export query results without modifying data.
+metadata:
+  author: ryanhong666
+  category: Development & Coding
+  tags:
+  - development-coding
+  - readonly
+  source: clawhub-community
+  clawhub_slug: db-readonly
+  clawhub_path: ryanhong666/db-readonly
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DB Readonly
+
+    # Source: ClawHub community skill by ryanhong666
+
+    # Install: clawhub install db-readonly
+
+    # Path: ryanhong666/db-readonly
+
+
+    ## Description
+
+    Run safe read-only queries against MySQL or PostgreSQL for data inspection, reporting, and troubleshooting. Use when the
+    user asks to read tables, inspect schema, count rows, sample data, or export query results without modifying data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/query-cookbook.md
+
+    - scripts/db_readonly.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install db-readonly
+
+    ```'
+examples:
+- description: Install DB Readonly from ClawHub
+  usage: clawhub install db-readonly
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: channel
+title: WeChat OA Channel
+version: 1.0.1
+description: WeChat Official Account Draft Box management tool. Create and manage graphic draft articles via WeChat API, supporting
+  text and images. Automatically extracts the first paragraph as summary. Supports draft creation, listing, publishing, and
+  deletion.
+metadata:
+  author: alphafactor
+  category: Media & Content
+  tags:
+  - media-content
+  - channel
+  source: clawhub-community
+  clawhub_slug: channel
+  clawhub_path: alphafactor/channel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WeChat OA Channel
+
+    # Source: ClawHub community skill by alphafactor
+
+    # Install: clawhub install channel
+
+    # Path: alphafactor/channel
+
+
+    ## Description
+
+    WeChat Official Account Draft Box management tool. Create and manage graphic draft articles via WeChat API, supporting
+    text and images. Automatically extracts the first paragraph as summary. Supports draft creation, listing, publishing,
+    and deletion.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/wechat_api.md
+
+    - scripts/channel.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install channel
+
+    ```'
+examples:
+- description: Install WeChat OA Channel from ClawHub
+  usage: clawhub install channel
+schema_version: '1.0'

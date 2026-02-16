@@ -1,0 +1,59 @@
+name: lnget
+title: 'lnget: like wget but for L402 on the web'
+version: 1.0.0
+description: Install and use lnget, a Lightning-native HTTP client with automatic L402 payment support. Use when downloading
+  files behind Lightning paywalls, managing L402 tokens, checking Lightning backend status, or making HTTP requests that may
+  require micropayments.
+metadata:
+  author: roasbeef
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - lnget
+  source: clawhub-community
+  clawhub_slug: lnget
+  clawhub_path: roasbeef/lnget
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# lnget: like wget but for L402 on the web
+
+    # Source: ClawHub community skill by roasbeef
+
+    # Install: clawhub install lnget
+
+    # Path: roasbeef/lnget
+
+
+    ## Description
+
+    Install and use lnget, a Lightning-native HTTP client with automatic L402 payment support. Use when downloading files
+    behind Lightning paywalls, managing L402 tokens, checking Lightning backend status, or making HTTP requests that may require
+    micropayments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lnget
+
+    ```'
+examples:
+- description: 'Install lnget: like wget but for L402 on the web from ClawHub'
+  usage: clawhub install lnget
+schema_version: '1.0'

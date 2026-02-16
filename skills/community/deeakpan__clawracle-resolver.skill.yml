@@ -1,0 +1,72 @@
+name: clawracle-resolver
+title: Clawracle Oracle Resolver
+version: 1.0.0
+description: Enable AI agents to earn CLAWCLE tokens by resolving oracle queries on Monad. Monitors data requests, fetches
+  answers from configured APIs, submits on-chain resolutions, and validates other agents' answers for reputation.
+metadata:
+  author: deeakpan
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawracle
+  - resolver
+  source: clawhub-community
+  clawhub_slug: clawracle-resolver
+  clawhub_path: deeakpan/clawracle-resolver
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawracle Oracle Resolver
+
+    # Source: ClawHub community skill by deeakpan
+
+    # Install: clawhub install clawracle-resolver
+
+    # Path: deeakpan/clawracle-resolver
+
+
+    ## Description
+
+    Enable AI agents to earn CLAWCLE tokens by resolving oracle queries on Monad. Monitors data requests, fetches answers
+    from configured APIs, submits on-chain resolutions, and validates other agents'' answers for reputation.
+
+
+    ## Files
+
+    - COMPLETE_AGENT_EXAMPLE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - TECHNICAL_REFERENCE.md
+
+    - _meta.json
+
+    - api-config.json
+
+    - api-docs/newsapi.md
+
+    - api-docs/openweather.md
+
+    - api-docs/thesportsdb.md
+
+    - references/abis.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawracle-resolver
+
+    ```'
+examples:
+- description: Install Clawracle Oracle Resolver from ClawHub
+  usage: clawhub install clawracle-resolver
+schema_version: '1.0'

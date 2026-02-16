@@ -1,0 +1,56 @@
+name: android-automation
+title: ADB Connection
+version: 1.0.0
+description: Control Android devices via ADB with support for UI layout analysis (uiautomator) and visual feedback (screencap).
+  Use when you need to interact with Android apps, perform UI automation, take screenshots, or run complex ADB command sequences.
+metadata:
+  author: staticai
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - android
+  - automation
+  source: clawhub-community
+  clawhub_slug: android-adb
+  clawhub_path: staticai/android-adb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ADB Connection
+
+    # Source: ClawHub community skill by staticai
+
+    # Install: clawhub install android-adb
+
+    # Path: staticai/android-adb
+
+
+    ## Description
+
+    Control Android devices via ADB with support for UI layout analysis (uiautomator) and visual feedback (screencap). Use
+    when you need to interact with Android apps, perform UI automation, take screenshots, or run complex ADB command sequences.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install android-adb
+
+    ```'
+examples:
+- description: Install ADB Connection from ClawHub
+  usage: clawhub install android-adb
+schema_version: '1.0'

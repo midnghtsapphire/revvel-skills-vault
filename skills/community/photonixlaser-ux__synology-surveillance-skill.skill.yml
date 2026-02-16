@@ -1,0 +1,62 @@
+name: synology-surveillance
+title: Synology Surveillance
+version: 0.1.0
+description: Steuere Synology Surveillance Station Kameras über die Web API. Nutze diesen Skill für Snapshots, Live-Streams,
+  Aufnahmen, PTZ-Steuerung und Ereignis-Überwachung. Erfordert Synology NAS mit Surveillance Station.
+metadata:
+  author: photonixlaser-ux
+  category: Development & Coding
+  tags:
+  - development-coding
+  - synology
+  - surveillance
+  source: clawhub-community
+  clawhub_slug: synology-surveillance-skill
+  clawhub_path: photonixlaser-ux/synology-surveillance-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Synology Surveillance
+
+    # Source: ClawHub community skill by photonixlaser-ux
+
+    # Install: clawhub install synology-surveillance-skill
+
+    # Path: photonixlaser-ux/synology-surveillance-skill
+
+
+    ## Description
+
+    Steuere Synology Surveillance Station Kameras über die Web API. Nutze diesen Skill für Snapshots, Live-Streams, Aufnahmen,
+    PTZ-Steuerung und Ereignis-Überwachung. Erfordert Synology NAS mit Surveillance Station.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/syno-surveillance.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install synology-surveillance-skill
+
+    ```'
+examples:
+- description: Install Synology Surveillance from ClawHub
+  usage: clawhub install synology-surveillance-skill
+schema_version: '1.0'

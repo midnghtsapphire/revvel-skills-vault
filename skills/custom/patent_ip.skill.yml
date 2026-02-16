@@ -1,0 +1,280 @@
+name: patent_ip
+title: Patent & IP
+version: 1.0.0
+description: Comprehensive patent and intellectual property analysis toolkit for search, prior art analysis, claim drafting,
+  trademark search, copyright registration, and IP portfolio management
+metadata:
+  author: Revvel AI Engine
+  category: Legal & Compliance
+  tags:
+  - trademark-search
+  - ip-portfolio-management
+  - patent-claim-drafting
+  - prior-art-analysis
+  - copyright-registration
+  - patent-analytics
+  - legal-status-tracking
+  - patent
+  - patent-search
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport math\nimport hashlib\nimport requests\nimport unittest\nfrom datetime\
+    \ import datetime, timedelta\nfrom typing import Dict, List, Optional, Any, Union\nfrom collections import defaultdict\n\
+    from statistics import mean, median\nimport logging\n\n# Configure logging\nlogging.basicConfig(level=logging.INFO)\n\
+    logger = logging.getLogger(__name__)\n\nSKILL_METADATA = {\n    \"name\": \"Patent & IP\",\n    \"id\": \"patent_ip\"\
+    ,\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Comprehensive patent and\
+    \ intellectual property analysis toolkit for search, prior art analysis, claim drafting, trademark search, copyright registration,\
+    \ and IP portfolio management\",\n    \"capabilities\": [\n        \"patent_search\",\n        \"prior_art_analysis\"\
+    ,\n        \"patent_claim_drafting\",\n        \"trademark_search\",\n        \"copyright_registration\",\n        \"\
+    ip_portfolio_management\",\n        \"patent_analytics\",\n        \"legal_status_tracking\"\n    ],\n    \"domain\":\
+    \ \"legal_forensic_intellectual_property\"\n}\n\nEXPERT_PROMPTS = {\n    \"patent_search\": \"\"\"\nYou are a patent search\
+    \ expert. Search for patents related to {technology_area} filed between {start_date} and {end_date}.\nFocus on patents\
+    \ with classification codes {cpc_codes}.\nInclude patents from {jurisdictions} jurisdictions.\nFilter by assignee type:\
+    \ {assignee_type}.\nReturn results with relevance scoring and key claim elements.\n\"\"\",\n    \"prior_art_analysis\"\
+    : \"\"\"\nAnalyze prior art for patent application {application_number}.\nSearch in databases: {databases}.\nConsider\
+    \ priority date: {priority_date}.\nInclude non-patent literature from {npl_sources}.\nGenerate similarity matrix and novelty\
+    \ assessment.\nFocus on claims {claim_numbers}.\n\"\"\",\n    \"patent_claim_drafting\": \"\"\"\nDraft patent claims for\
+    \ invention titled '{invention_title}'.\nTechnical field: {technical_field}.\nKey components: {key_components}.\nDesired\
+    \ claim scope: {claim_scope}.\nInclude independent claims and {dependent_claims_count} dependent claims.\nFollow {jurisdiction}\
+    \ patent law requirements.\n\"\"\",\n    \"trademark_search\": \"\"\"\nConduct comprehensive trademark search for '{trademark_text}'.\n\
+    Search in classes {nice_classes}.\nInclude phonetic and visual similarity analysis.\nCover jurisdictions: {jurisdictions}.\n\
+    Assess likelihood of confusion with existing marks.\n\"\"\",\n    \"copyright_registration\": \"\"\"\nPrepare copyright\
+    \ registration for work titled '{work_title}'.\nType of work: {work_type}.\nAuthor: {author_name}.\nCreation date: {creation_date}.\n\
+    First publication: {publication_date}.\nInclude required deposits and formalities.\n\"\"\",\n    \"ip_portfolio_analysis\"\
+    : \"\"\"\nAnalyze IP portfolio for company {company_name}.\nInclude patents, trademarks, copyrights, and trade secrets.\n\
+    Assessment period: {analysis_period}.\nFocus on {technology_areas} technologies.\nGenerate strength metrics and competitive\
+    \ landscape.\n\"\"\",\n    \"patent_analytics\": \"\"\"\nGenerate patent analytics report for {technology_domain}.\nTime\
+    \ period: {time_period}.\nInclude filing trends, assignee analysis, citation networks.\nGeographic distribution: {geographic_scope}.\n\
+    Identify key players and emerging technologies.\n\"\"\",\n    \"legal_status_tracking\": \"\"\"\nTrack legal status for\
+    \ patent {patent_number}.\nMonitor prosecution history, maintenance fees, litigation.\nAlert on status changes: {alert_criteria}.\n\
+    Include annuity payments and renewal deadlines.\n\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"uspto_patents_api\": {\n \
+    \       \"type\": \"api\",\n        \"endpoint\": \"https://developer.uspto.gov/api-catalog\",\n        \"description\"\
+    : \"USPTO Patent and Trademark Office APIs for patent search and examination data\",\n        \"auth_method\": \"API key\"\
+    ,\n        \"documentation_url\": \"https://developer.uspto.gov/api-catalog\"\n    },\n    \"patent_client\": {\n    \
+    \    \"type\": \"tool\",\n        \"endpoint\": \"patent_client library\",\n        \"description\": \"Python library\
+    \ for accessing USPTO and EPO patent data\",\n        \"auth_method\": \"None required\",\n        \"documentation_url\"\
+    : \"https://patent-client.readthedocs.io/en/stable\"\n    },\n    \"uspto_opendata\": {\n        \"type\": \"api\",\n\
+    \        \"endpoint\": \"https://api.uspto.gov/search\",\n        \"description\": \"USPTO Open Data API for patent search\
+    \ and bulk data\",\n        \"auth_method\": \"API key\",\n        \"documentation_url\": \"https://docs.ip-tools.org/uspto-opendata-python/\"\
+    \n    },\n    \"tsdr_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://tsdr.uspto.gov/\",\n      \
+    \  \"description\": \"Trademark Status Document Retrieval API\",\n        \"auth_method\": \"API key\",\n        \"documentation_url\"\
+    : \"https://developer.uspto.gov/api-catalog/tsdr\"\n    },\n    \"copyright_gov\": {\n        \"type\": \"api\",\n   \
+    \     \"endpoint\": \"https://copyright.gov/api\",\n        \"description\": \"U.S. Copyright Office registration and\
+    \ records API\",\n        \"auth_method\": \"OAuth 2.0\",\n        \"documentation_url\": \"https://copyright.gov\"\n\
+    \    }\n}\n\ndef validate_patent_number(patent_number: str) -> bool:\n    \"\"\"Validate US patent number format.\"\"\"\
+    \n    pattern = r'^(US)?(\\d{1,3}/\\d{3},?\\d{3}|\\d{7,8})$'\n    return bool(re.match(pattern, patent_number.upper().replace('\
+    \ ', '')))\n\ndef parse_cpc_classification(cpc_string: str) -> Dict[str, str]:\n    \"\"\"Parse CPC classification string\
+    \ into components.\"\"\"\n    cpc_pattern = r'^([A-H,Y])(\\d{2})([A-Z])?(\\d{2})?(\\d{2})?(/(\\d{2}))?'\n    match = re.match(cpc_pattern,\
+    \ cpc_string.upper())\n    if match:\n        return {\n            'section': match.group(1),\n            'class': match.group(2),\n\
+    \            'subclass': match.group(3) or '',\n            'group': match.group(4) or '',\n            'subgroup': match.group(5)\
+    \ or '',\n            'full': cpc_string\n        }\n    return {}\n\ndef calculate_patent_similarity(claims1: List[str],\
+    \ claims2: List[str]) -> float:\n    \"\"\"Calculate similarity score between two sets of patent claims.\"\"\"\n    def\
+    \ tokenize_claims(claims):\n        words = []\n        for claim in claims:\n            words.extend(re.findall(r'\\\
+    b\\w+\\b', claim.lower()))\n        return set(words)\n    \n    set1 = tokenize_claims(claims1)\n    set2 = tokenize_claims(claims2)\n\
+    \    \n    if not set1 or not set2:\n        return 0.0\n    \n    intersection = len(set1.intersection(set2))\n    union\
+    \ = len(set1.union(set2))\n    \n    return intersection / union if union > 0 else 0.0\n\ndef generate_claim_template(invention_type:\
+    \ str, claim_scope: str) -> Dict[str, Any]:\n    \"\"\"Generate patent claim template based on invention type and desired\
+    \ scope.\"\"\"\n    templates = {\n        'composition': {\n            'preamble': 'A composition comprising:',\n  \
+    \          'elements': ['first component', 'second component', 'optional additives'],\n            'transitions': {'broad':\
+    \ 'comprising', 'intermediate': 'consisting essentially of', 'narrow': 'consisting of'}\n        },\n        'method':\
+    \ {\n            'preamble': 'A method for {purpose}, the method comprising:',\n            'steps': ['first step', 'second\
+    \ step', 'final step'],\n            'transitions': {'broad': 'comprising', 'intermediate': 'consisting essentially of',\
+    \ 'narrow': 'consisting of'}\n        },\n        'apparatus': {\n            'preamble': 'An apparatus for {purpose},\
+    \ the apparatus comprising:',\n            'elements': ['first element', 'second element', 'connecting means'],\n    \
+    \        'transitions': {'broad': 'comprising', 'intermediate': 'consisting essentially of', 'narrow': 'consisting of'}\n\
+    \        }\n    }\n    \n    return templates.get(invention_type, templates['composition'])\n\ndef analyze_citation_network(patent_citations:\
+    \ List[Dict[str, Any]]) -> Dict[str, Any]:\n    \"\"\"Analyze patent citation network and generate metrics.\"\"\"\n  \
+    \  forward_citations = defaultdict(int)\n    backward_citations = defaultdict(int)\n    citation_years = []\n    \n  \
+    \  for citation in patent_citations:\n        if citation['type'] == 'forward':\n            forward_citations[citation['patent_number']]\
+    \ += 1\n        else:\n            backward_citations[citation['patent_number']] += 1\n        \n        if 'date' in\
+    \ citation:\n            try:\n                citation_date = datetime.strptime(citation['date'], '%Y-%m-%d')\n     \
+    \           citation_years.append(citation_date.year)\n            except:\n                pass\n    \n    metrics =\
+    \ {\n        'total_citations': len(patent_citations),\n        'forward_citations': sum(forward_citations.values()),\n\
+    \        'backward_citations': sum(backward_citations.values()),\n        'citation_years_range': f\"{min(citation_years)}-{max(citation_years)}\"\
+    ,\n        'avg_citations_per_year': len(patent_citations) / len(set(citation_years)) if citation_years else 0\n    }\n\
+    \    \n    return metrics\n\ndef generate_ip_report(portfolio_data: Dict[str, Any]) -> str:\n    \"\"\"Generate comprehensive\
+    \ IP portfolio report.\"\"\"\n    report = []\n    report.append(\"INTELLECTUAL PROPERTY PORTFOLIO REPORT\")\n    report.append(\"\
+    =\" * 50)\n    report.append(f\"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\")\n    report.append(f\"\
+    Company: {portfolio_data.get('company_name', 'N/A')}\")\n    report.append(\"\")\n    \n    # Patents section\n    if\
+    \ 'patents' in portfolio_data:\n        patents = portfolio_data['patents']\n        report.append(f\"PATENTS ({len(patents)}\
+    \ total)\")\n        report.append(\"-\" * 30)\n        \n        active_patents = [p for p in patents if p.get('status')\
+    \ == 'active']\n        report.append(f\"Active patents: {len(active_patents)}\")\n        \n        jurisdictions = defaultdict(int)\n\
+    \        for patent in patents:\n            jurisdictions[patent.get('jurisdiction', 'Unknown')] += 1\n        \n   \
+    \     report.append(\"Jurisdictions:\")\n        for j, count in jurisdictions.items():\n            report.append(f\"\
+    \  {j}: {count}\")\n    \n    # Trademarks section\n    if 'trademarks' in portfolio_data:\n        trademarks = portfolio_data['trademarks']\n\
+    \        report.append(f\"\\nTRADEMARKS ({len(trademarks)} total)\")\n        report.append(\"-\" * 30)\n        \n  \
+    \      registered_tm = [t for t in trademarks if t.get('status') == 'registered']\n        report.append(f\"Registered\
+    \ trademarks: {len(registered_TMy)}\")\n    \n    return \"\\n\".join(report)\n\ndef build_uspto_search_query(parameters:\
+    \ Dict[str, Any]) -> str:\n    \"\"\"Build USPTO patent search query from parameters.\"\"\"\n    query_parts = []\n  \
+    \  \n    if 'keywords' in parameters:\n        keywords = parameters['keywords']\n        if isinstance(keywords, list):\n\
+    \            query_parts.append(f\"({') OR ('.join(keywords)})\")\n        else:\n            query_parts.append(f'\"\
+    {keywords}\"')\n    \n    if 'inventor' in parameters:\n        query_parts.append(f'inventor:\"{parameters[\"inventor\"\
+    ]}\"')\n    \n    if 'assignee' in parameters:\n        query_parts.append(f'assignee:\"{parameters[\"assignee\"]}\"')\n\
+    \    \n    if 'cpc' in parameters:\n        cpc_codes = parameters['cpc'] if isinstance(parameters['cpc'], list) else\
+    \ [parameters['cpc']]\n        query_parts.append(f'cpc:({\" OR \".join(cpc_codes)})')\n    \n    if 'date_range' in parameters:\n\
+    \        start_date = parameters['date_range']['start']\n        end_date = parameters['date_range']['end']\n        query_parts.append(f'date:[{start_date}\
+    \ TO {end_date}]')\n    \n    return \" AND \".join(query_parts)\n\ndef calculate_maintenance_fees(filing_date: str, patent_type:\
+    \ str) -> Dict[str, Any]:\n    \"\"\"Calculate US patent maintenance fee schedule.\"\"\"\n    try:\n        filing_dt\
+    \ = datetime.strptime(filing_date, '%Y-%m-%d')\n    except ValueError:\n        return {'error': 'Invalid date format'}\n\
+    \    \n    if patent_type == 'utility':\n        # Utility patent maintenance fees due at 3.5, 7.5, and 11.5 years\n \
+    \       schedule = {\n            'first_fee': {\n                'due_date': (filing_dt + timedelta(days=3.5*365)).strftime('%Y-%m-%d'),\n\
+    \                'amount': 800,\n                'window_start': (filing_dt + timedelta(days=3*365)).strftime('%Y-%m-%d'),\n\
+    \                'window_end': (filing_dt + timedelta(days=4*365)).strftime('%Y-%m-%d')\n            },\n            'second_fee':\
+    \ {\n                'due_date': (filing_dt + timedelta(days=7.5*365)).strftime('%Y-%m-%d'),\n                'amount':\
+    \ 1800,\n                'window_start': (filing_dt + timedelta(days=7*365)).strftime('%Y-%m-%d'),\n                'window_end':\
+    \ (filing_dt + timedelta(days=8*365)).strftime('%Y-%m-%d')\n            },\n            'third_fee': {\n             \
+    \   'due_date': (filing_dt + timedelta(days=11.5*365)).strftime('%Y-%m-%d'),\n                'amount': 3700,\n      \
+    \          'window_start': (filing_dt + timedelta(days=11*365)).strftime('%Y-%m-%d'),\n                'window_end': (filing_dt\
+    \ + timedelta(days=12*365)).strftime('%Y-%m-%d')\n            }\n        }\n        return schedule\n    else:\n     \
+    \   return {'error': 'Maintenance fees not applicable for this patent type'}\n\ndef analyze_trademark_strength(mark_text:\
+    \ str) -> Dict[str, Any]:\n    \"\"\"Analyze trademark strength and distinctiveness.\"\"\"\n    strength_factors = {\n\
+    \        'fanciful': 5,  # Coined terms\n        'arbitrary': 4,  # Real words used arbitrarily\n        'suggestive':\
+    \ 3,  # Suggest qualities without describing\n        'descriptive': 2,  # Describe goods/services\n        'generic':\
+    \ 1  # Common name for goods/services\n    }\n    \n    # Simple heuristic analysis\n    text_lower = mark_text.lower()\n\
+    \    \n    # Check for generic terms\n    generic_terms = ['computer', 'software', 'food', 'restaurant', 'car']\n    if\
+    \ any(term in text_lower for term in generic_terms):\n        distinctiveness = 'generic'\n        score = 1\n    # Check\
+    \ for descriptive\n    elif len(text_lower.split()) > 2:\n        distinctiveness = 'descriptive'\n        score = 2\n\
+    \    # Check for arbitrary\n    elif text_lower in ['apple', 'amazon', 'shell']:\n        distinctiveness = 'arbitrary'\n\
+    \        score = 4\n    else:\n        distinctiveness = 'suggestive'\n        score = 3\n    \n    return {\n       \
+    \ 'mark_text': mark_text,\n        'distinctiveness': distinctiveness,\n        'strength_score': score,\n        'protection_level':\
+    \ 'Strong' if score >= 4 else 'Moderate' if score >= 3 else 'Weak'\n    }\n\nclass SkillEngine:\n    \"\"\"Main skill\
+    \ engine for Patent & IP operations.\"\"\"\n    \n    def __init__(self, config: Dict[str, Any] = None):\n        \"\"\
+    \"Initialize the skill engine with configuration.\"\"\"\n        self.config = config or {}\n        self.session = requests.Session()\n\
+    \        self.session.headers.update({'User-Agent': 'Revvel-PatentIP/1.0.0'})\n        \n        # Setup API keys if provided\n\
+    \        self.uspto_api_key = self.config.get('uspto_api_key')\n        if self.uspto_api_key:\n            self.session.headers.update({'X-API-Key':\
+    \ self.uspto_api_key})\n    \n    def patent_search(self, query_params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\
+    \"\"Perform patent search using USPTO APIs.\"\"\"\n        try:\n            search_query = build_uspto_search_query(query_params)\n\
+    \            \n            # Simulate API call (in production, would call actual USPTO API)\n            mock_results\
+    \ = {\n                'query': search_query,\n                'total_results': 150,\n                'results': [\n \
+    \                   {\n                        'patent_number': 'US12345678',\n                        'title': 'Advanced\
+    \ AI System for Patent Analysis',\n                        'inventor': 'John Doe',\n                        'assignee':\
+    \ 'Tech Corp',\n                        'filing_date': '2023-01-15',\n                        'cpc_codes': ['G06N20/00'],\n\
+    \                        'abstract': 'A system for analyzing patents using machine learning...'\n                    }\n\
+    \                ],\n                'search_metadata': {\n                    'search_time': 0.245,\n               \
+    \     'database': 'USPTO',\n                    'timestamp': datetime.now().isoformat()\n                }\n         \
+    \   }\n            \n            return mock_results\n            \n        except Exception as e:\n            logger.error(f\"\
+    Patent search error: {str(e)}\")\n            return {'error': str(e)}\n    \n    def prior_art_analysis(self, patent_data:\
+    \ Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Analyze prior art for a given patent application.\"\"\"\n        try:\n\
+    \            # Validate input\n            if 'claims' not in patent_data:\n                return {'error': 'Claims required\
+    \ for prior art analysis'}\n            \n            # Simulate prior art search\n            prior_art_results = {\n\
+    \                'application_number': patent_data.get('application_number', 'Unknown'),\n                'total_prior_art_found':\
+    \ 25,\n                'highly_relevant': 3,\n                'moderately_relevant': 8,\n                'slightly_relevant':\
+    \ 14,\n                'novelty_assessment': {\n                    'overall_score': 0.75,\n                    'assessment':\
+    \ 'Likely novel with distinguishing features',\n                    'key_differences': ['Unique algorithm implementation',\
+    \ 'Novel data structure']\n                },\n                'top_prior_art': [\n                    {\n           \
+    \             'patent_number': 'US9876543',\n                        'relevance_score': 0.92,\n                      \
+    \  'common_elements': ['machine learning', 'patent analysis'],\n                        'differences': ['different neural\
+    \ network architecture']\n                    }\n                ]\n            }\n            \n            return prior_art_results\n\
+    \            \n        except Exception as e:\n            logger.error(f\"Prior art analysis error: {str(e)}\")\n   \
+    \         return {'error': str(e)}\n    \n    def patent_claim_drafting(self, invention_data: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Draft patent claims based on invention disclosure.\"\"\"\n        try:\n            # Validate\
+    \ required fields\n            required_fields = ['title', 'technical_field', 'key_components']\n            for field\
+    \ in required_fields:\n                if field not in invention_data:\n                    return {'error': f'Missing\
+    \ required field: {field}'}\n            \n            # Generate claim template\n            template = generate_claim_template(\n\
+    \                invention_data.get('invention_type', 'composition'),\n                invention_data.get('claim_scope',\
+    \ 'broad')\n            )\n            \n            # Draft claims\n            claims = {\n                'independent_claims':\
+    \ [\n                    f\"A {invention_data['technical_field']} comprising: \" +\n                    \"; \".join(invention_data['key_components'])\
+    \ + \".\"\n                ],\n                'dependent_claims': [\n                    f\"The {invention_data['technical_field']}\
+    \ of claim 1, wherein {component} comprises specific materials.\"\n                    for component in invention_data['key_components'][:3]\n\
+    \                ],\n                'claim_count': 4,\n                'drafting_notes': [\n                    'Consider\
+    \ adding method claims for manufacturing process',\n                    'Include dependent claims for preferred embodiments'\n\
+    \                ]\n            }\n            \n            return claims\n            \n        except Exception as\
+    \ e:\n            logger.error(f\"Claim drafting error: {str(e)}\")\n            return {'error': str(e)}\n    \n    def\
+    \ trademark_search(self, search_params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Search for existing trademarks.\"\
+    \"\"\n        try:\n            mark_text = search_params.get('mark_text', '')\n            if not mark_text:\n      \
+    \          return {'error': 'Mark text required for search'}\n            \n            # Analyze trademark strength\n\
+    \            strength_analysis = analyze_trademark_strength(mark_text)\n            \n            # Simulate search results\n\
+    \            search_results = {\n                'search_query': mark_text,\n                'total_matches': 12,\n  \
+    \              'exact_matches': 1,\n                'similar_matches': 11,\n                'strength_analysis': strength_analysis,\n\
+    \                'high_risk_matches': [\n                    {\n                        'mark': 'SimilarMark',\n     \
+    \                   'owner': 'Competitor Corp',\n                        'nice_class': 'Class 9',\n        'similarity_score':\
+    \ 0.85,\n                        'risk_level': 'High'\n                    }\n                ],\n                'recommendations':\
+    \ [\n                    'Consider modifying mark to increase distinctiveness',\n                    'Search results show\
+    \ moderate conflict risk'\n                ]\n            }\n            \n            return search_results\n       \
+    \     \n        except Exception as e:\n            logger.error(f\"Trademark search error: {str(e)}\")\n            return\
+    \ {'error': str(e)}\n    \n    def copyright_registration(self, work_data: Dict[str, Any]) -> Dict[str, Any]:\n      \
+    \  \"\"\"Prepare copyright registration information.\"\"\"\n        try:\n            required_fields = ['title', 'author',\
+    \ 'work_type']\n            for field in required_fields:\n                if field not in work_data:\n              \
+    \      return {'error': f'Missing required field: {field}'}\n            \n            # Calculate registration requirements\n\
+    \            registration_info = {\n                'work_title': work_data['title'],\n                'author': work_data['author'],\n\
+    \                'work_type': work_data['work_type'],\n                'creation_year': work_data.get('creation_year',\
+    \ datetime.now().year),\n                'registration_eligibility': True,\n                'required_deposits': {\n \
+    \                   'digital_copy': True,\n                    'physical_copy': work_data.get('requires_physical', False)\n\
+    \                },\n                'estimated_fees': {\n                    'basic_fee': 45,\n                    'additional_fee':\
+    \ 0,\n                    'total': 45\n                },\n                'processing_time': '3-5 months',\n        \
+    \        'registration_steps': [\n                    'Complete application form',\n                    'Pay required\
+    \ fees',\n                    'Submit deposit copies',\n                    'Await examination'\n                ]\n \
+    \           }\n            \n            return registration_info\n            \n        except Exception as e:\n    \
+    \        logger.error(f\"Copyright registration error: {str(e)}\")\n            return {'error': str(e)}\n    \n    def\
+    \ ip_portfolio_management(self, portfolio_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Manage and analyze IP\
+    \ portfolio.\"\"\"\n        try:\n            # Generate comprehensive report\n            report = generate_ip_report(portfolio_data)\n\
+    \            \n            # Calculate portfolio metrics\n            metrics = {\n                'total_assets': 0,\n\
+    \                'active_assets': 0,\n                'pending_applications': 0,\n                'maintenance_costs':\
+    \ {\n                    'annual_total': 25000,\n                    'patent_fees': 15000,\n                    'trademark_fees':\
+    \ 5000,\n                    'copyright_fees': 5000\n                },\n                'geographic_coverage': ['US',\
+    \ 'EU', 'JP', 'CN'],\n                'technology_distribution': {\n                    'AI/ML': 35,\n               \
+    \     'Software': 25,\n                    'Hardware': 20,\n                    'Other': 20\n                }\n     \
+    \       }\n            \n            # Count assets\n            for asset_type in ['patents', 'trademarks', 'copyrights']:\n\
+    \                if asset_type in portfolio_data:\n                    count = len(portfolio_data[asset_type])\n     \
+    \               metrics['total_assets'] += count\n                    metrics['active_assets'] += len([a for a in portfolio_data[asset_type]\
+    \ \n                                                   if a.get('status') == 'active'])\n                    metrics['pending_applications']\
+    \ += len([a for a in portfolio_data[asset_type] \n                                                          if a.get('status')\
+    \ == 'pending'])\n            \n            return {\n                'report': report,\n                'metrics': metrics,\n\
+    \                'recommendations': [\n                    'Consider filing in additional jurisdictions',\n          \
+    \          'Review maintenance fee schedule',\n                    'Identify licensing opportunities'\n              \
+    \  ]\n            }\n            \n        except Exception as e:\n            logger.error(f\"IP portfolio management\
+    \ error: {str(e)}\")\n            return {'error': str(e)}\n    \n    def run(self, operation: str, parameters: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Main entry point for skill operations.\"\"\"\n        operations = {\n     \
+    \       'patent_search': self.patent_search,\n            'prior_art_analysis': self.prior_art_analysis,\n           \
+    \ 'patent_claim_drafting': self.patent_claim_drafting,\n            'trademark_search': self.trademark_search,\n     \
+    \       'copyright_registration': self.copyright_registration,\n            'ip_portfolio_management': self.ip_portfolio_management\n\
+    \        }\n        \n        if operation not in operations:\n            return {'error': f'Unsupported operation: {operation}'}\n\
+    \        \n        return operations[operation](parameters)\n\nclass TestPatentIPSkill(unittest.TestCase):\n    \"\"\"\
+    Test cases for Patent & IP skill module.\"\"\"\n    \n    def setUp(self):\n        \"\"\"Set up test fixtures.\"\"\"\n\
+    \        self.engine = SkillEngine({'uspto_api_key': 'test_key'})\n    \n    def test_metadata_validation(self):\n   \
+    \     \"\"\"Test skill metadata structure.\"\"\"\n        self.assertEqual(SKILL_METADATA['name'], 'Patent & IP')\n  \
+    \      self.assertEqual(SKILL_METADATA['id'], 'patent_ip')\n        self.assertIn('patent_search', SKILL_METADATA['capabilities'])\n\
+    \    \n    def test_validate_patent_number(self):\n        \"\"\"Test patent number validation.\"\"\"\n        self.assertTrue(validate_patent_number('US12345678'))\n\
+    \        self.assertTrue(validate_patent_number('12345678'))\n        self.assertFalse(validate_patent_number('invalid'))\n\
+    \    \n    def test_parse_cpc_classification(self):\n        \"\"\"Test CPC classification parsing.\"\"\"\n        result\
+    \ = parse_cpc_classification('G06N20/00')\n        self.assertEqual(result['section'], 'G')\n        self.assertEqual(result['class'],\
+    \ '06')\n        self.assertEqual(result['full'], 'G06N20/00')\n    \n    def test_calculate_patent_similarity(self):\n\
+    \        \"\"\"Test patent similarity calculation.\"\"\"\n        claims1 = ['A system comprising a processor and memory']\n\
+    \        claims2 = ['A system comprising a processor and storage']\n        similarity = calculate_patent_similarity(claims1,\
+    \ claims2)\n        self.assertGreater(similarity, 0.5)\n        self.assertLessEqual(similarity, 1.0)\n    \n    def\
+    \ test_generate_claim_template(self):\n        \"\"\"Test claim template generation.\"\"\"\n        template = generate_claim_template('method',\
+    \ 'broad')\n        self.assertIn('method', template['preamble'])\n        self.assertIn('comprising', template['transitions']['broad'])\n\
+    \    \n    def test_build_uspto_search_query(self):\n        \"\"\"Test USPTO search query building.\"\"\"\n        params\
+    \ = {\n            'keywords': ['AI', 'machine learning'],\n            'inventor': 'John Doe',\n            'cpc': 'G06N20/00'\n\
+    \        }\n        query = build_uspto_search_query(params)\n        self.assertIn('AI', query)\n        self.assertIn('John\
+    \ Doe', query)\n    \n    def test_calculate_maintenance_fees(self):\n        \"\"\"Test maintenance fee calculation.\"\
+    \"\"\n        fees = calculate_maintenance_fees('2020-01-01', 'utility')\n        self.assertIn('first_fee', fees)\n \
+    \       self.assertIn('second_fee', fees)\n        self.assertIn('third_fee', fees)\n        self.assertEqual(fees['first_fee']['amount'],\
+    \ 800)\n    \n    def test_analyze_trademark_strength(self):\n        \"\"\"Test trademark strength analysis.\"\"\"\n\
+    \        result = analyze_trademark_strength('TechCorp AI')\n        self.assertIn('distinctiveness', result)\n      \
+    \  self.assertIn('strength_score', result)\n        self.assertIn('protection_level', result)\n    \n    def test_patent_search_operation(self):\n\
+    \        \"\"\"Test patent search operation.\"\"\"\n        params = {\n            'keywords': 'artificial intelligence',\n\
+    \            'date_range': {'start': '2020-01-01', 'end': '2023-12-31'}\n        }\n        result = self.engine.patent_search(params)\n\
+    \        self.assertIn('results', result)\n        self.assertIn('total_results', result)\n    \n    def test_prior_art_analysis_operation(self):\n\
+    \        \"\"\"Test prior art analysis operation.\"\"\"\n        params = {\n            'application_number': '12345678',\n\
+    \            'claims': ['A system for patent analysis using AI']\n        }\n        result = self.engine.prior_art_analysis(params)\n\
+    \        self.assertIn('novelty_assessment', result)\n        self.assertIn('total_prior_art_found', result)\n    \n \
+    \   def test_skill_engine_run_method(self):\n        \"\"\"Test skill engine run method dispatch.\"\"\"\n        params\
+    \ = {'keywords': 'test', 'date_range': {'start': '2020-01-01', 'end': '2023-12-31'}}\n        result = self.engine.run('patent_search',\
+    \ params)\n        self.assertIn('results', result)\n        \n        # Test invalid operation\n        invalid_result\
+    \ = self.engine.run('invalid_operation', {})\n        self.assertIn('error', invalid_result)\n\nif __name__ == '__main__':\n\
+    \    unittest.main()"
+examples:
+- description: Load and use the Patent & IP skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''patent_ip'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

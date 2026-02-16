@@ -1,0 +1,67 @@
+name: ipeaky
+title: ipeaky
+version: 2.2.0
+description: Secure API key management for OpenClaw. Store, list, test, and delete API keys without exposing them in chat
+  history. Keys are stored directly in openclaw.json via gateway config.patch — fully native integration. Use when a user
+  needs to provide, manage, or test API keys (e.g., OpenAI, ElevenLabs, A
+metadata:
+  author: christiancattaneo
+  category: Communication
+  tags:
+  - communication
+  - ipeaky
+  source: clawhub-community
+  clawhub_slug: ipeaky
+  clawhub_path: christiancattaneo/ipeaky
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ipeaky
+
+    # Source: ClawHub community skill by christiancattaneo
+
+    # Install: clawhub install ipeaky
+
+    # Path: christiancattaneo/ipeaky
+
+
+    ## Description
+
+    Secure API key management for OpenClaw. Store, list, test, and delete API keys without exposing them in chat history.
+    Keys are stored directly in openclaw.json via gateway config.patch — fully native integration. Use when a user needs to
+    provide, manage, or test API keys (e.g., OpenAI, ElevenLabs, A
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - ipeaky-site/index.html
+
+    - scripts/secure_input_mac.sh
+
+    - scripts/test_key.sh
+
+    - tests/run_tests.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ipeaky
+
+    ```'
+examples:
+- description: Install ipeaky from ClawHub
+  usage: clawhub install ipeaky
+schema_version: '1.0'

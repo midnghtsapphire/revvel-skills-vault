@@ -1,0 +1,62 @@
+name: exec-display
+title: Exec Display
+version: 1.0.0
+description: Structured command execution with security levels, color-coded output, and 4-line max summaries. Enforces transparency
+  and visibility for all shell commands. Use when running any exec/shell commands to ensure consistent, auditable output.
+metadata:
+  author: globalcaos
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - exec
+  - display
+  source: clawhub-community
+  clawhub_slug: exec-display
+  clawhub_path: globalcaos/exec-display
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Exec Display
+
+    # Source: ClawHub community skill by globalcaos
+
+    # Install: clawhub install exec-display
+
+    # Path: globalcaos/exec-display
+
+
+    ## Description
+
+    Structured command execution with security levels, color-coded output, and 4-line max summaries. Enforces transparency
+    and visibility for all shell commands. Use when running any exec/shell commands to ensure consistent, auditable output.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cmd_display.py
+
+    - scripts/patch-openclaw.sh
+
+    - scripts/unpatch-openclaw.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install exec-display
+
+    ```'
+examples:
+- description: Install Exec Display from ClawHub
+  usage: clawhub install exec-display
+schema_version: '1.0'

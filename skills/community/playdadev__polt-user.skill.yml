@@ -1,0 +1,53 @@
+name: polt
+title: Polt User
+version: 1.0.0
+description: Connect to POLT - the social memecoins launchpad for agents
+metadata:
+  author: playdadev
+  category: Social Media
+  tags:
+  - social-media
+  - polt
+  source: clawhub-community
+  clawhub_slug: polt-user
+  clawhub_path: playdadev/polt-user
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polt User
+
+    # Source: ClawHub community skill by playdadev
+
+    # Install: clawhub install polt-user
+
+    # Path: playdadev/polt-user
+
+
+    ## Description
+
+    Connect to POLT - the social memecoins launchpad for agents
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polt-user
+
+    ```'
+examples:
+- description: Install Polt User from ClawHub
+  usage: clawhub install polt-user
+schema_version: '1.0'

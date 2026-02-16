@@ -1,0 +1,59 @@
+name: clawdbot-release-check
+title: Clawdbot Release Check
+version: 1.0.1
+description: Check for new clawdbot releases and notify once per new version.
+metadata:
+  author: pors
+  category: General
+  tags:
+  - general
+  - clawdbot
+  - release
+  - check
+  source: clawhub-community
+  clawhub_slug: clawdbot-release-check
+  clawhub_path: pors/clawdbot-release-check
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Release Check
+
+    # Source: ClawHub community skill by pors
+
+    # Install: clawhub install clawdbot-release-check
+
+    # Path: pors/clawdbot-release-check
+
+
+    ## Description
+
+    Check for new clawdbot releases and notify once per new version.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-release-check
+
+    ```'
+examples:
+- description: Install Clawdbot Release Check from ClawHub
+  usage: clawhub install clawdbot-release-check
+schema_version: '1.0'

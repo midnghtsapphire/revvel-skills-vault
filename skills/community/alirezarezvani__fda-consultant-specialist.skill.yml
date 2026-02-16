@@ -1,0 +1,75 @@
+name: fda-consultant-specialist
+title: Fda Consultant Specialist
+version: 1.0.0
+description: FDA regulatory consultant for medical device companies. Provides 510(k)/PMA/De Novo pathway guidance, QSR (21
+  CFR 820) compliance, HIPAA assessments, and device cybersecurity. Use when user mentions FDA submission, 510(k), PMA, De
+  Novo, QSR, premarket, predicate device, substantial equivalence, HIPA
+metadata:
+  author: alirezarezvani
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - fda
+  - consultant
+  - specialist
+  source: clawhub-community
+  clawhub_slug: fda-consultant-specialist
+  clawhub_path: alirezarezvani/fda-consultant-specialist
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fda Consultant Specialist
+
+    # Source: ClawHub community skill by alirezarezvani
+
+    # Install: clawhub install fda-consultant-specialist
+
+    # Path: alirezarezvani/fda-consultant-specialist
+
+
+    ## Description
+
+    FDA regulatory consultant for medical device companies. Provides 510(k)/PMA/De Novo pathway guidance, QSR (21 CFR 820)
+    compliance, HIPAA assessments, and device cybersecurity. Use when user mentions FDA submission, 510(k), PMA, De Novo,
+    QSR, premarket, predicate device, substantial equivalence, HIPA
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/device_cybersecurity_guidance.md
+
+    - references/fda_capa_requirements.md
+
+    - references/fda_submission_guide.md
+
+    - references/hipaa_compliance_framework.md
+
+    - references/qsr_compliance_requirements.md
+
+    - scripts/fda_submission_tracker.py
+
+    - scripts/hipaa_risk_assessment.py
+
+    - scripts/qsr_compliance_checker.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fda-consultant-specialist
+
+    ```'
+examples:
+- description: Install Fda Consultant Specialist from ClawHub
+  usage: clawhub install fda-consultant-specialist
+schema_version: '1.0'

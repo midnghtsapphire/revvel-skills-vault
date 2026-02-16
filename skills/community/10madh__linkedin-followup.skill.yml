@@ -1,0 +1,62 @@
+name: linkedin-followup
+title: LinkedIn Follow-up
+version: 1.0.0
+description: Manage LinkedIn outreach leads from Google Sheets — search by name, read live conversation threads, update status,
+  and send contextual follow-up messages. Use after linkedin-dm to move leads through the pipeline (Sent → Replied → Call
+  Scheduled → Demo Done → Closed).
+metadata:
+  author: 10madh
+  category: Search & Research
+  tags:
+  - search-research
+  - linkedin
+  - followup
+  source: clawhub-community
+  clawhub_slug: linkedin-followup
+  clawhub_path: 10madh/linkedin-followup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LinkedIn Follow-up
+
+    # Source: ClawHub community skill by 10madh
+
+    # Install: clawhub install linkedin-followup
+
+    # Path: 10madh/linkedin-followup
+
+
+    ## Description
+
+    Manage LinkedIn outreach leads from Google Sheets — search by name, read live conversation threads, update status, and
+    send contextual follow-up messages. Use after linkedin-dm to move leads through the pipeline (Sent → Replied → Call Scheduled
+    → Demo Done → Closed).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/browser-workflow.md
+
+    - references/sheet-schema.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linkedin-followup
+
+    ```'
+examples:
+- description: Install LinkedIn Follow-up from ClawHub
+  usage: clawhub install linkedin-followup
+schema_version: '1.0'

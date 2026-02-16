@@ -1,0 +1,54 @@
+name: my-weather
+title: My Weather
+version: 1.0.0
+description: ''
+metadata:
+  author: ryansorr1
+  category: Utilities
+  tags:
+  - utilities
+  - weather
+  source: clawhub-community
+  clawhub_slug: my-weather
+  clawhub_path: ryansorr1/my-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# My Weather
+
+    # Source: ClawHub community skill by ryansorr1
+
+    # Install: clawhub install my-weather
+
+    # Path: ryansorr1/my-weather
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install my-weather
+
+    ```'
+examples:
+- description: Install My Weather from ClawHub
+  usage: clawhub install my-weather
+schema_version: '1.0'

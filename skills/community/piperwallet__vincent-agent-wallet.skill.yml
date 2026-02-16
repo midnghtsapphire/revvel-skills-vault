@@ -1,0 +1,58 @@
+name: vincent_-_a_wallet_for_agents
+title: Vincent - A secure wallet for your agent
+version: 1.0.0
+description: Use this skill to safely create a wallet the agent can use for transfers, swaps, and any EVM chain transaction.  Also
+  supports raw signing and polymarket betting.
+metadata:
+  author: piperwallet
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - vincent
+  - wallet
+  - for
+  - agents
+  source: clawhub-community
+  clawhub_slug: vincent-agent-wallet
+  clawhub_path: piperwallet/vincent-agent-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vincent - A secure wallet for your agent
+
+    # Source: ClawHub community skill by piperwallet
+
+    # Install: clawhub install vincent-agent-wallet
+
+    # Path: piperwallet/vincent-agent-wallet
+
+
+    ## Description
+
+    Use this skill to safely create a wallet the agent can use for transfers, swaps, and any EVM chain transaction.  Also
+    supports raw signing and polymarket betting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vincent-agent-wallet
+
+    ```'
+examples:
+- description: Install Vincent - A secure wallet for your agent from ClawHub
+  usage: clawhub install vincent-agent-wallet
+schema_version: '1.0'

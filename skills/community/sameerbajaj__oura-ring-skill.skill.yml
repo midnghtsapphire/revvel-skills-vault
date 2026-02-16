@@ -1,0 +1,65 @@
+name: oura-ring
+title: Oura Ring
+version: 0.1.0
+description: Fetch Oura Ring readiness/sleep + 7-day readiness trends via Oura Cloud API V2, and generate a Morning Readiness
+  Brief.
+metadata:
+  author: sameerbajaj
+  category: Development & Coding
+  tags:
+  - development-coding
+  - oura
+  - ring
+  source: clawhub-community
+  clawhub_slug: oura-ring-skill
+  clawhub_path: sameerbajaj/oura-ring-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Oura Ring
+
+    # Source: ClawHub community skill by sameerbajaj
+
+    # Install: clawhub install oura-ring-skill
+
+    # Path: sameerbajaj/oura-ring-skill
+
+
+    ## Description
+
+    Fetch Oura Ring readiness/sleep + 7-day readiness trends via Oura Cloud API V2, and generate a Morning Readiness Brief.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.py
+
+    - probe_v2.py
+
+    - probe_v2_sessions.py
+
+    - requirements.txt
+
+    - scripts/morning_brief.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install oura-ring-skill
+
+    ```'
+examples:
+- description: Install Oura Ring from ClawHub
+  usage: clawhub install oura-ring-skill
+schema_version: '1.0'

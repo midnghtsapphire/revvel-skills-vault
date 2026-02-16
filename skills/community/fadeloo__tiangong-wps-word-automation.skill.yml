@@ -1,0 +1,59 @@
+name: wps-word-automation
+title: Word Automation
+version: 0.1.0
+description: Automate common Word/WPS document operations on Windows via COM (read text, replace, insert, headings, headers/footers,
+  page breaks, merge, split, export to PDF/TXT, add/replace images). Use for single-document actions (no batch).
+metadata:
+  author: fadeloo
+  category: Media & Content
+  tags:
+  - media-content
+  - wps
+  - word
+  - automation
+  source: clawhub-community
+  clawhub_slug: tiangong-wps-word-automation
+  clawhub_path: fadeloo/tiangong-wps-word-automation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Word Automation
+
+    # Source: ClawHub community skill by fadeloo
+
+    # Install: clawhub install tiangong-wps-word-automation
+
+    # Path: fadeloo/tiangong-wps-word-automation
+
+
+    ## Description
+
+    Automate common Word/WPS document operations on Windows via COM (read text, replace, insert, headings, headers/footers,
+    page breaks, merge, split, export to PDF/TXT, add/replace images). Use for single-document actions (no batch).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/wps_word_automation.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tiangong-wps-word-automation
+
+    ```'
+examples:
+- description: Install Word Automation from ClawHub
+  usage: clawhub install tiangong-wps-word-automation
+schema_version: '1.0'

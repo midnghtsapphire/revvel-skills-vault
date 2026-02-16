@@ -1,0 +1,60 @@
+name: mineru-pdf
+title: Mineru Pdf
+version: 1.0.0
+description: Parse PDF documents with MinerU MCP to extract text, tables, and formulas. Supports multiple backends including
+  MLX-accelerated inference on Apple Silicon.
+metadata:
+  author: etoile04
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - mineru
+  - pdf
+  source: clawhub-community
+  clawhub_slug: mineru-pdf
+  clawhub_path: etoile04/mineru-pdf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mineru Pdf
+
+    # Source: ClawHub community skill by etoile04
+
+    # Install: clawhub install mineru-pdf
+
+    # Path: etoile04/mineru-pdf
+
+
+    ## Description
+
+    Parse PDF documents with MinerU MCP to extract text, tables, and formulas. Supports multiple backends including MLX-accelerated
+    inference on Apple Silicon.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - parse.py
+
+    - test.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mineru-pdf
+
+    ```'
+examples:
+- description: Install Mineru Pdf from ClawHub
+  usage: clawhub install mineru-pdf
+schema_version: '1.0'

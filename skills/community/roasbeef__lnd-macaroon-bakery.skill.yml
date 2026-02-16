@@ -1,0 +1,58 @@
+name: macaroon-bakery
+title: lnd macaroon bakery
+version: 1.0.0
+description: Bake, inspect, and manage lnd macaroons for least-privilege agent access. Use when an agent needs scoped credentials
+  — pay-only, invoice-only, read-only, or custom permissions. Also covers signer macaroon scoping and macaroon rotation.
+metadata:
+  author: roasbeef
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - macaroon
+  - bakery
+  source: clawhub-community
+  clawhub_slug: lnd-macaroon-bakery
+  clawhub_path: roasbeef/lnd-macaroon-bakery
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# lnd macaroon bakery
+
+    # Source: ClawHub community skill by roasbeef
+
+    # Install: clawhub install lnd-macaroon-bakery
+
+    # Path: roasbeef/lnd-macaroon-bakery
+
+
+    ## Description
+
+    Bake, inspect, and manage lnd macaroons for least-privilege agent access. Use when an agent needs scoped credentials —
+    pay-only, invoice-only, read-only, or custom permissions. Also covers signer macaroon scoping and macaroon rotation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bake.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lnd-macaroon-bakery
+
+    ```'
+examples:
+- description: Install lnd macaroon bakery from ClawHub
+  usage: clawhub install lnd-macaroon-bakery
+schema_version: '1.0'

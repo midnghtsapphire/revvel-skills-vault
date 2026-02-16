@@ -1,0 +1,53 @@
+name: kernel
+title: Kernel
+version: 1.0.0
+description: Avoid common Linux kernel mistakes — atomic context violations, allocation failures, and locking traps.
+metadata:
+  author: ivangdavila
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - kernel
+  source: clawhub-community
+  clawhub_slug: kernel
+  clawhub_path: ivangdavila/kernel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kernel
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install kernel
+
+    # Path: ivangdavila/kernel
+
+
+    ## Description
+
+    Avoid common Linux kernel mistakes — atomic context violations, allocation failures, and locking traps.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kernel
+
+    ```'
+examples:
+- description: Install Kernel from ClawHub
+  usage: clawhub install kernel
+schema_version: '1.0'

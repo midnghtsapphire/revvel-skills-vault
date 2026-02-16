@@ -1,0 +1,57 @@
+name: _chat_
+title: Chat
+version: 1.0.3
+description: '"Auto-learns user preferences and edits itself. Starts minimal, grows personalized."'
+metadata:
+  author: ivangdavila
+  category: Communication
+  tags:
+  - communication
+  - '"chat"'
+  source: clawhub-community
+  clawhub_slug: chat
+  clawhub_path: ivangdavila/chat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Chat
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install chat
+
+    # Path: ivangdavila/chat
+
+
+    ## Description
+
+    "Auto-learns user preferences and edits itself. Starts minimal, grows personalized."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - criteria.md
+
+    - dimensions.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install chat
+
+    ```'
+examples:
+- description: Install Chat from ClawHub
+  usage: clawhub install chat
+schema_version: '1.0'

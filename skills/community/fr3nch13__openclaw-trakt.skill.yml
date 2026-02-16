@@ -1,0 +1,70 @@
+name: openclaw-trakt
+title: Trakt.tv Integration
+version: 1.1.0
+description: Track and recommend TV shows and movies using Trakt.tv. Use when the user asks for show/movie recommendations,
+  wants to track what they're watching, check their watchlist, or get personalized suggestions based on their viewing history.
+  Requires Trakt.tv account with Pro subscription for full functio
+metadata:
+  author: fr3nch13
+  category: General
+  tags:
+  - general
+  - openclaw
+  - trakt
+  source: clawhub-community
+  clawhub_slug: openclaw-trakt
+  clawhub_path: fr3nch13/openclaw-trakt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trakt.tv Integration
+
+    # Source: ClawHub community skill by fr3nch13
+
+    # Install: clawhub install openclaw-trakt
+
+    # Path: fr3nch13/openclaw-trakt
+
+
+    ## Description
+
+    Track and recommend TV shows and movies using Trakt.tv. Use when the user asks for show/movie recommendations, wants to
+    track what they''re watching, check their watchlist, or get personalized suggestions based on their viewing history. Requires
+    Trakt.tv account with Pro subscription for full functio
+
+
+    ## Files
+
+    - INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/api.md
+
+    - scripts/setup.py
+
+    - scripts/trakt_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-trakt
+
+    ```'
+examples:
+- description: Install Trakt.tv Integration from ClawHub
+  usage: clawhub install openclaw-trakt
+schema_version: '1.0'

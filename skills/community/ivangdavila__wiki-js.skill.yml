@@ -1,0 +1,53 @@
+name: wiki_js
+title: Wiki.js
+version: 1.0.0
+description: Deploy and manage Wiki.js documentation sites avoiding common configuration traps.
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - wiki.js
+  source: clawhub-community
+  clawhub_slug: wiki-js
+  clawhub_path: ivangdavila/wiki-js
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wiki.js
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install wiki-js
+
+    # Path: ivangdavila/wiki-js
+
+
+    ## Description
+
+    Deploy and manage Wiki.js documentation sites avoiding common configuration traps.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wiki-js
+
+    ```'
+examples:
+- description: Install Wiki.js from ClawHub
+  usage: clawhub install wiki-js
+schema_version: '1.0'

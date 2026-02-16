@@ -1,0 +1,54 @@
+name: apple-music
+title: Apple Music
+version: 1.0.6
+description: Apple Music integration via AppleScript (macOS) or MusicKit API
+metadata:
+  author: epheterson
+  category: Media & Content
+  tags:
+  - media-content
+  - apple
+  - music
+  source: clawhub-community
+  clawhub_slug: mcp-applemusic
+  clawhub_path: epheterson/mcp-applemusic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Music
+
+    # Source: ClawHub community skill by epheterson
+
+    # Install: clawhub install mcp-applemusic
+
+    # Path: epheterson/mcp-applemusic
+
+
+    ## Description
+
+    Apple Music integration via AppleScript (macOS) or MusicKit API
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mcp-applemusic
+
+    ```'
+examples:
+- description: Install Apple Music from ClawHub
+  usage: clawhub install mcp-applemusic
+schema_version: '1.0'

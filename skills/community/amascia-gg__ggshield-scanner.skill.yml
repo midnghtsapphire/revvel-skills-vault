@@ -1,0 +1,62 @@
+name: ggshield-scanner
+title: ggshield Secret Scanner
+version: 1.0.2
+description: Detect 500+ types of hardcoded secrets (API keys, credentials, tokens) before they leak into git. Wraps GitGuardian's
+  ggshield CLI.
+metadata:
+  author: amascia-gg
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - ggshield
+  - scanner
+  source: clawhub-community
+  clawhub_slug: ggshield-scanner
+  clawhub_path: amascia-gg/ggshield-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ggshield Secret Scanner
+
+    # Source: ClawHub community skill by amascia-gg
+
+    # Install: clawhub install ggshield-scanner
+
+    # Path: amascia-gg/ggshield-scanner
+
+
+    ## Description
+
+    Detect 500+ types of hardcoded secrets (API keys, credentials, tokens) before they leak into git. Wraps GitGuardian''s
+    ggshield CLI.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - ggshield_skill.py
+
+    - pyproject.toml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ggshield-scanner
+
+    ```'
+examples:
+- description: Install ggshield Secret Scanner from ClawHub
+  usage: clawhub install ggshield-scanner
+schema_version: '1.0'

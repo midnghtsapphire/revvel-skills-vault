@@ -1,0 +1,59 @@
+name: midea_ac
+title: Midea Air Conditioners
+version: 0.0.3
+description: Control Midea ACs. Use this skill when the user wants to control ACs. Supports turning ACs on/off, setting temperature,
+  setting fan speed, switching modes, and more.
+metadata:
+  author: iamanorange
+  category: General
+  tags:
+  - general
+  - midea
+  source: clawhub-community
+  clawhub_slug: midea-ac
+  clawhub_path: iamanorange/midea-ac
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Midea Air Conditioners
+
+    # Source: ClawHub community skill by iamanorange
+
+    # Install: clawhub install midea-ac
+
+    # Path: iamanorange/midea-ac
+
+
+    ## Description
+
+    Control Midea ACs. Use this skill when the user wants to control ACs. Supports turning ACs on/off, setting temperature,
+    setting fan speed, switching modes, and more.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/midea_ac.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install midea-ac
+
+    ```'
+examples:
+- description: Install Midea Air Conditioners from ClawHub
+  usage: clawhub install midea-ac
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: consensus-interact
+title: consensus-interact
+version: 1.0.5
+description: Operate consensus.tools end-to-end (post jobs, create submissions, cast votes, resolve results) using either
+  a local-first board or a hosted board (depending on how you run it). Hosted boards are optional and coming soon.
+metadata:
+  author: kaicianflone
+  category: General
+  tags:
+  - general
+  - consensus
+  - interact
+  source: clawhub-community
+  clawhub_slug: consensus-interact
+  clawhub_path: kaicianflone/consensus-interact
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# consensus-interact
+
+    # Source: ClawHub community skill by kaicianflone
+
+    # Install: clawhub install consensus-interact
+
+    # Path: kaicianflone/consensus-interact
+
+
+    ## Description
+
+    Operate consensus.tools end-to-end (post jobs, create submissions, cast votes, resolve results) using either a local-first
+    board or a hosted board (depending on how you run it). Hosted boards are optional and coming soon.
+
+
+    ## Files
+
+    - AI-SELF-IMPROVEMENT.md
+
+    - HEARTBEAT.md
+
+    - JOBS.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - agents/openai.yaml
+
+    - references/api.md
+
+    - scripts/consensus_quickstart.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install consensus-interact
+
+    ```'
+examples:
+- description: Install consensus-interact from ClawHub
+  usage: clawhub install consensus-interact
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: miniflux-news
+title: Miniflux News
+version: 0.1.0
+description: Fetch and triage the latest unread RSS/news entries from a Miniflux instance via its REST API using an API token.
+  Use when the user asks to get the latest Miniflux unread items, list recent entries with titles/links, or generate short
+  summaries of specific Miniflux entries. Includes a bundled script
+metadata:
+  author: hartlco
+  category: Development & Coding
+  tags:
+  - development-coding
+  - miniflux
+  - news
+  source: clawhub-community
+  clawhub_slug: miniflux-news
+  clawhub_path: hartlco/miniflux-news
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Miniflux News
+
+    # Source: ClawHub community skill by hartlco
+
+    # Install: clawhub install miniflux-news
+
+    # Path: hartlco/miniflux-news
+
+
+    ## Description
+
+    Fetch and triage the latest unread RSS/news entries from a Miniflux instance via its REST API using an API token. Use
+    when the user asks to get the latest Miniflux unread items, list recent entries with titles/links, or generate short summaries
+    of specific Miniflux entries. Includes a bundled script
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/miniflux-api-notes.md
+
+    - scripts/miniflux.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install miniflux-news
+
+    ```'
+examples:
+- description: Install Miniflux News from ClawHub
+  usage: clawhub install miniflux-news
+schema_version: '1.0'

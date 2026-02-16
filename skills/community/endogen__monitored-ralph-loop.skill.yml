@@ -1,0 +1,68 @@
+name: ralph-loop
+title: Monitored Ralph Loop
+version: 0.1.1
+description: Generate copy-paste bash scripts for Ralph Wiggum/AI agent loops (Codex, Claude Code, OpenCode, Goose). Use when
+  asked for a "Ralph loop", "Ralph Wiggum loop", or an AI loop to plan/build code via PROMPT.md + AGENTS.md, SPECS, and IMPLEMENTATION_PLAN.md,
+  including PLANNING vs BUILDING modes, backpre
+metadata:
+  author: endogen
+  category: Development & Coding
+  tags:
+  - development-coding
+  - ralph
+  - loop
+  source: clawhub-community
+  clawhub_slug: monitored-ralph-loop
+  clawhub_path: endogen/monitored-ralph-loop
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Monitored Ralph Loop
+
+    # Source: ClawHub community skill by endogen
+
+    # Install: clawhub install monitored-ralph-loop
+
+    # Path: endogen/monitored-ralph-loop
+
+
+    ## Description
+
+    Generate copy-paste bash scripts for Ralph Wiggum/AI agent loops (Codex, Claude Code, OpenCode, Goose). Use when asked
+    for a "Ralph loop", "Ralph Wiggum loop", or an AI loop to plan/build code via PROMPT.md + AGENTS.md, SPECS, and IMPLEMENTATION_PLAN.md,
+    including PLANNING vs BUILDING modes, backpre
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ralph.sh
+
+    - templates/AGENTS.md
+
+    - templates/PROMPT-BUILDING.md
+
+    - templates/PROMPT-PLANNING.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install monitored-ralph-loop
+
+    ```'
+examples:
+- description: Install Monitored Ralph Loop from ClawHub
+  usage: clawhub install monitored-ralph-loop
+schema_version: '1.0'

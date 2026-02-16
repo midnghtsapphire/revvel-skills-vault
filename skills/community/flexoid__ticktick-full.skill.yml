@@ -1,0 +1,35 @@
+name: ticktick-cli
+title: Ticktick CLI (Full Edition)
+version: 1.0.0
+description: 'Operate TickTick through the `ticktick` command-line interface, including authentication, read/query flows,
+  and safe mutations for tasks, projects, folders, columns, tags, habits, user info, focus analytics, and sync payloads. Use
+  when users ask to run TickTick terminal commands, parse TickTick CLI '
+metadata:
+  author: flexoid
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - ticktick
+  - cli
+  source: clawhub-community
+  clawhub_slug: ticktick-full
+  clawhub_path: flexoid/ticktick-full
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Ticktick CLI (Full Edition)\n# Source: ClawHub community skill by flexoid\n# Install: clawhub install ticktick-full\n\
+    # Path: flexoid/ticktick-full\n\n## Description\nOperate TickTick through the `ticktick` command-line interface, including\
+    \ authentication, read/query flows, and safe mutations for tasks, projects, folders, columns, tags, habits, user info,\
+    \ focus analytics, and sync payloads. Use when users ask to run TickTick terminal commands, parse TickTick CLI \n\n##\
+    \ Files\n- SKILL.md\n- _meta.json\n- references/columns.md\n- references/folders.md\n- references/habits.md\n- references/projects.md\n\
+    - references/setup-and-auth.md\n- references/tags.md\n- references/tasks.md\n- references/troubleshooting.md\n\n## Installation\n\
+    ```bash\nclawhub install ticktick-full\n```"
+examples:
+- description: Install Ticktick CLI (Full Edition) from ClawHub
+  usage: clawhub install ticktick-full
+schema_version: '1.0'

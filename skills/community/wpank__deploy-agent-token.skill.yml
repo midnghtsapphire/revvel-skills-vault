@@ -1,0 +1,68 @@
+name: deploy-agent-token
+title: Uniswap Deploy Agent Token
+version: 0.1.0
+description: Deploy an agent token with a Uniswap V4 pool — handles pool creation with configurable hooks (anti-snipe, dynamic
+  fees, revenue share), initial liquidity bootstrapping, LP locking, and post-deployment monitoring. Use when the user wants
+  to launch a token on Uniswap.
+metadata:
+  author: wpank
+  category: Development & Coding
+  tags:
+  - development-coding
+  - deploy
+  - agent
+  - token
+  - '[task(subagent_type:token-deployer)]'
+  source: clawhub-community
+  clawhub_slug: deploy-agent-token
+  clawhub_path: wpank/deploy-agent-token
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:token-deployer)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Deploy Agent Token
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install deploy-agent-token
+
+    # Path: wpank/deploy-agent-token
+
+
+    ## Description
+
+    Deploy an agent token with a Uniswap V4 pool — handles pool creation with configurable hooks (anti-snipe, dynamic fees,
+    revenue share), initial liquidity bootstrapping, LP locking, and post-deployment monitoring. Use when the user wants to
+    launch a token on Uniswap.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:token-deployer)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install deploy-agent-token
+
+    ```'
+examples:
+- description: Install Uniswap Deploy Agent Token from ClawHub
+  usage: clawhub install deploy-agent-token
+schema_version: '1.0'

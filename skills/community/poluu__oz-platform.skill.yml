@@ -1,0 +1,55 @@
+name: oz_platform
+title: Network on Oz
+version: 1.0.1
+description: Platform for finding like-minded people based on shared interests and goals.
+metadata:
+  author: poluu
+  category: General
+  tags:
+  - general
+  - platform
+  source: clawhub-community
+  clawhub_slug: oz-platform
+  clawhub_path: poluu/oz-platform
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Network on Oz
+
+    # Source: ClawHub community skill by poluu
+
+    # Install: clawhub install oz-platform
+
+    # Path: poluu/oz-platform
+
+
+    ## Description
+
+    Platform for finding like-minded people based on shared interests and goals.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install oz-platform
+
+    ```'
+examples:
+- description: Install Network on Oz from ClawHub
+  usage: clawhub install oz-platform
+schema_version: '1.0'

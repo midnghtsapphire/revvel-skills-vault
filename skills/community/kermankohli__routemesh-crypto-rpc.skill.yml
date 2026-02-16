@@ -1,0 +1,56 @@
+name: routemesh-rpc
+title: RouteMesh Crypto RPC
+version: 1.0.0
+description: Call RouteMesh's unified JSON-RPC endpoint (lb.routeme.sh) for any EVM chainId using a helper script. Use when
+  you need to fetch onchain data (eth_* methods), debug RPC responses, or demo RouteMesh routing for a chain/method.
+metadata:
+  author: kermankohli
+  category: Development & Coding
+  tags:
+  - development-coding
+  - routemesh
+  - rpc
+  source: clawhub-community
+  clawhub_slug: routemesh-crypto-rpc
+  clawhub_path: kermankohli/routemesh-crypto-rpc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RouteMesh Crypto RPC
+
+    # Source: ClawHub community skill by kermankohli
+
+    # Install: clawhub install routemesh-crypto-rpc
+
+    # Path: kermankohli/routemesh-crypto-rpc
+
+
+    ## Description
+
+    Call RouteMesh''s unified JSON-RPC endpoint (lb.routeme.sh) for any EVM chainId using a helper script. Use when you need
+    to fetch onchain data (eth_* methods), debug RPC responses, or demo RouteMesh routing for a chain/method.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install routemesh-crypto-rpc
+
+    ```'
+examples:
+- description: Install RouteMesh Crypto RPC from ClawHub
+  usage: clawhub install routemesh-crypto-rpc
+schema_version: '1.0'

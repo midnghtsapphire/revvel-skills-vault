@@ -1,0 +1,33 @@
+name: hostex
+title: Hostex
+version: 0.1.1
+description: '"Hostex (hostex.io) OpenAPI v3.0 skill for querying and managing vacation rental properties, room types, reservations,
+  availability, listing calendars, guest messaging, reviews, and webhooks via the Hostex API. Use when you need to integrate
+  with Hostex API using a Hostex PAT (Hostex-Access-Token / '
+metadata:
+  author: ansonfreeman
+  category: Development & Coding
+  tags:
+  - development-coding
+  - hostex
+  source: clawhub-community
+  clawhub_slug: hostex
+  clawhub_path: ansonfreeman/hostex
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Hostex\n# Source: ClawHub community skill by ansonfreeman\n# Install: clawhub install hostex\n# Path: ansonfreeman/hostex\n\
+    \n## Description\n\"Hostex (hostex.io) OpenAPI v3.0 skill for querying and managing vacation rental properties, room types,\
+    \ reservations, availability, listing calendars, guest messaging, reviews, and webhooks via the Hostex API. Use when you\
+    \ need to integrate with Hostex API using a Hostex PAT (Hostex-Access-Token / \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    - references/openapi.json\n- scripts/hostex-client.mjs\n- scripts/hostex-read.mjs\n- scripts/hostex-write.mjs\n- scripts/openapi-sync.mjs\n\
+    \n## Installation\n```bash\nclawhub install hostex\n```"
+examples:
+- description: Install Hostex from ClawHub
+  usage: clawhub install hostex
+schema_version: '1.0'

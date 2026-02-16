@@ -1,0 +1,62 @@
+name: meetup-planner
+title: Meetup Planner
+version: 0.1.5
+description: An intelligent event finder that searches for meetups and events based on your interests, tracks them, and reminds
+  you before they happen
+metadata:
+  author: apresmoi
+  category: Search & Research
+  tags:
+  - search-research
+  - meetup
+  - planner
+  source: clawhub-community
+  clawhub_slug: meetup-planner
+  clawhub_path: apresmoi/meetup-planner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meetup Planner
+
+    # Source: ClawHub community skill by apresmoi
+
+    # Install: clawhub install meetup-planner
+
+    # Path: apresmoi/meetup-planner
+
+
+    ## Description
+
+    An intelligent event finder that searches for meetups and events based on your interests, tracks them, and reminds you
+    before they happen
+
+
+    ## Files
+
+    - BOOTSTRAP.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meetup-planner
+
+    ```'
+examples:
+- description: Install Meetup Planner from ClawHub
+  usage: clawhub install meetup-planner
+schema_version: '1.0'

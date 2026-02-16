@@ -1,0 +1,72 @@
+name: polymarket-analysis
+title: Polymarket Analysis
+version: 2.1.0
+description: Analyze Polymarket prediction markets for trading edges. Pair Cost arbitrage, whale tracking, sentiment analysis,
+  momentum signals, user profile tracking. No execution.
+metadata:
+  author: hiehoo
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - polymarket
+  - analysis
+  source: clawhub-community
+  clawhub_slug: polymarket-analysis
+  clawhub_path: hiehoo/polymarket-analysis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polymarket Analysis
+
+    # Source: ClawHub community skill by hiehoo
+
+    # Install: clawhub install polymarket-analysis
+
+    # Path: hiehoo/polymarket-analysis
+
+
+    ## Description
+
+    Analyze Polymarket prediction markets for trading edges. Pair Cost arbitrage, whale tracking, sentiment analysis, momentum
+    signals, user profile tracking. No execution.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/market-monitoring-setup.md
+
+    - references/momentum-analysis.md
+
+    - references/pair-cost-arbitrage.md
+
+    - references/polymarket-api.md
+
+    - references/sentiment-analysis.md
+
+    - references/whale-tracking.md
+
+    - scripts/fetch-polymarket-user-profile.py
+
+    - scripts/monitor-polymarket-market.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polymarket-analysis
+
+    ```'
+examples:
+- description: Install Polymarket Analysis from ClawHub
+  usage: clawhub install polymarket-analysis
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: canvas-lms
+title: Canvas LMS
+version: 1.0.0
+description: Access Canvas LMS (Instructure) for course data, assignments, grades, and submissions. Use when checking due
+  dates, viewing grades, listing courses, or fetching course materials from Canvas.
+metadata:
+  author: pranavkarthik10
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - canvas
+  - lms
+  source: clawhub-community
+  clawhub_slug: canvas-lms
+  clawhub_path: pranavkarthik10/canvas-lms
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Canvas LMS
+
+    # Source: ClawHub community skill by pranavkarthik10
+
+    # Install: clawhub install canvas-lms
+
+    # Path: pranavkarthik10/canvas-lms
+
+
+    ## Description
+
+    Access Canvas LMS (Instructure) for course data, assignments, grades, and submissions. Use when checking due dates, viewing
+    grades, listing courses, or fetching course materials from Canvas.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install canvas-lms
+
+    ```'
+examples:
+- description: Install Canvas LMS from ClawHub
+  usage: clawhub install canvas-lms
+schema_version: '1.0'

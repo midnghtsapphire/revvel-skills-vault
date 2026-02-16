@@ -1,0 +1,70 @@
+name: agent-registry
+title: Agent Registry
+version: 0.1.0
+description: '|'
+metadata:
+  author: matrixy
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  - registry
+  source: clawhub-community
+  clawhub_slug: agent-registry
+  clawhub_path: matrixy/agent-registry
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Registry
+
+    # Source: ClawHub community skill by matrixy
+
+    # Install: clawhub install agent-registry
+
+    # Path: matrixy/agent-registry
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - package.json
+
+    - scripts/get_agent.py
+
+    - scripts/init_registry.py
+
+    - scripts/list_agents.py
+
+    - scripts/rebuild_registry.py
+
+    - scripts/search_agents.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-registry
+
+    ```'
+examples:
+- description: Install Agent Registry from ClawHub
+  usage: clawhub install agent-registry
+schema_version: '1.0'

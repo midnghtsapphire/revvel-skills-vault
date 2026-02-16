@@ -1,0 +1,74 @@
+name: switchbot-openapi
+title: SwitchBot OpenAPI
+version: 1.0.0
+description: Control and query SwitchBot devices using the official OpenAPI (v1.1). Use when the user asks to list SwitchBot
+  devices, get device status, or send commands (turn on/off, press, set mode, lock/unlock, set temperature, curtain open %,
+  etc.). Requires SWITCHBOT_TOKEN and SWITCHBOT_SECRET.
+metadata:
+  author: woan1105
+  category: Development & Coding
+  tags:
+  - development-coding
+  - switchbot
+  - openapi
+  source: clawhub-community
+  clawhub_slug: switchbot-openapi
+  clawhub_path: woan1105/switchbot-openapi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SwitchBot OpenAPI
+
+    # Source: ClawHub community skill by woan1105
+
+    # Install: clawhub install switchbot-openapi
+
+    # Path: woan1105/switchbot-openapi
+
+
+    ## Description
+
+    Control and query SwitchBot devices using the official OpenAPI (v1.1). Use when the user asks to list SwitchBot devices,
+    get device status, or send commands (turn on/off, press, set mode, lock/unlock, set temperature, curtain open %, etc.).
+    Requires SWITCHBOT_TOKEN and SWITCHBOT_SECRET.
+
+
+    ## Files
+
+    - README-CLAWHUB.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/commands.md
+
+    - references/examples.md
+
+    - scripts/execute_scene.sh
+
+    - scripts/get_status.sh
+
+    - scripts/list_devices.sh
+
+    - scripts/list_scenes.sh
+
+    - scripts/send_command.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install switchbot-openapi
+
+    ```'
+examples:
+- description: Install SwitchBot OpenAPI from ClawHub
+  usage: clawhub install switchbot-openapi
+schema_version: '1.0'

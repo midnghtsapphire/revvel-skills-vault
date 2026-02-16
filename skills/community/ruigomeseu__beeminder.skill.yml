@@ -1,0 +1,57 @@
+name: beeminder
+title: Beeminder
+version: 1.0.0
+description: Beeminder API for goal tracking and commitment devices. Use when checking Beeminder goals, adding datapoints,
+  viewing due goals, managing commitments, or tracking habits. Triggers on "beeminder", "goals due", "add datapoint", "track
+  habit", "goal status", "derail".
+metadata:
+  author: ruigomeseu
+  category: Development & Coding
+  tags:
+  - development-coding
+  - beeminder
+  source: clawhub-community
+  clawhub_slug: beeminder
+  clawhub_path: ruigomeseu/beeminder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Beeminder
+
+    # Source: ClawHub community skill by ruigomeseu
+
+    # Install: clawhub install beeminder
+
+    # Path: ruigomeseu/beeminder
+
+
+    ## Description
+
+    Beeminder API for goal tracking and commitment devices. Use when checking Beeminder goals, adding datapoints, viewing
+    due goals, managing commitments, or tracking habits. Triggers on "beeminder", "goals due", "add datapoint", "track habit",
+    "goal status", "derail".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install beeminder
+
+    ```'
+examples:
+- description: Install Beeminder from ClawHub
+  usage: clawhub install beeminder
+schema_version: '1.0'

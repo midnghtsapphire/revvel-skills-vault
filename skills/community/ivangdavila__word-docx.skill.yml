@@ -1,0 +1,53 @@
+name: docx
+title: DOCX
+version: 1.0.0
+description: Read and generate Word documents with correct structure, styles, and cross-platform compatibility.
+metadata:
+  author: ivangdavila
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - docx
+  source: clawhub-community
+  clawhub_slug: word-docx
+  clawhub_path: ivangdavila/word-docx
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DOCX
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install word-docx
+
+    # Path: ivangdavila/word-docx
+
+
+    ## Description
+
+    Read and generate Word documents with correct structure, styles, and cross-platform compatibility.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install word-docx
+
+    ```'
+examples:
+- description: Install DOCX from ClawHub
+  usage: clawhub install word-docx
+schema_version: '1.0'

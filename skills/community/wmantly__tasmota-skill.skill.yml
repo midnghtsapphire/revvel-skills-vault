@@ -1,0 +1,63 @@
+name: tasmota
+title: Tasmota
+version: 0.1.0
+description: Discover, monitor, and control Tasmota smart home devices on local networks. Use when tasks involve finding Tasmota
+  devices via network scanning, checking device status and power states, controlling devices (on-off, brightness, color),
+  managing device inventory, or any other Tasmota management opera
+metadata:
+  author: wmantly
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - tasmota
+  source: clawhub-community
+  clawhub_slug: tasmota-skill
+  clawhub_path: wmantly/tasmota-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tasmota
+
+    # Source: ClawHub community skill by wmantly
+
+    # Install: clawhub install tasmota-skill
+
+    # Path: wmantly/tasmota-skill
+
+
+    ## Description
+
+    Discover, monitor, and control Tasmota smart home devices on local networks. Use when tasks involve finding Tasmota devices
+    via network scanning, checking device status and power states, controlling devices (on-off, brightness, color), managing
+    device inventory, or any other Tasmota management opera
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tasmota-control.py
+
+    - scripts/tasmota-discovery.py
+
+    - scripts/tasmota-status.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tasmota-skill
+
+    ```'
+examples:
+- description: Install Tasmota from ClawHub
+  usage: clawhub install tasmota-skill
+schema_version: '1.0'

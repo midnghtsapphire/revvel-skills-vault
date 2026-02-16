@@ -1,0 +1,66 @@
+name: mayar-payment
+title: Mayar.id Payment
+version: 1.0.0
+description: 'Mayar.id payment integration for generating invoices, payment links, and tracking transactions via MCP. Use
+  when needing to: (1) Create payment invoices/links for customers, (2) Track payment status and transactions, (3) Generate
+  WhatsApp-friendly payment messages, (4) Handle Indonesian payment meth'
+metadata:
+  author: ahsanatha
+  category: Communication
+  tags:
+  - communication
+  - mayar
+  - payment
+  source: clawhub-community
+  clawhub_slug: mayar-payment-skill
+  clawhub_path: ahsanatha/mayar-payment-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mayar.id Payment
+
+    # Source: ClawHub community skill by ahsanatha
+
+    # Install: clawhub install mayar-payment-skill
+
+    # Path: ahsanatha/mayar-payment-skill
+
+
+    ## Description
+
+    Mayar.id payment integration for generating invoices, payment links, and tracking transactions via MCP. Use when needing
+    to: (1) Create payment invoices/links for customers, (2) Track payment status and transactions, (3) Generate WhatsApp-friendly
+    payment messages, (4) Handle Indonesian payment meth
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - references/integration-examples.md
+
+    - references/mcp-tools.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mayar-payment-skill
+
+    ```'
+examples:
+- description: Install Mayar.id Payment from ClawHub
+  usage: clawhub install mayar-payment-skill
+schema_version: '1.0'

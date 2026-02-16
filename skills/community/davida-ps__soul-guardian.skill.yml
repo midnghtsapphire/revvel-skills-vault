@@ -1,0 +1,66 @@
+name: soul-guardian
+title: soul-guardian
+version: 0.0.2
+description: Drift detection + baseline integrity guard for agent workspace files with automatic alerting support
+metadata:
+  author: davida-ps
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - soul
+  - guardian
+  source: clawhub-community
+  clawhub_slug: soul-guardian
+  clawhub_path: davida-ps/soul-guardian
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# soul-guardian
+
+    # Source: ClawHub community skill by davida-ps
+
+    # Install: clawhub install soul-guardian
+
+    # Path: davida-ps/soul-guardian
+
+
+    ## Description
+
+    Drift detection + baseline integrity guard for agent workspace files with automatic alerting support
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - scripts/install_launchd_plist.py
+
+    - scripts/onboard_state_dir.py
+
+    - scripts/soul_guardian.py
+
+    - scripts/test_soul_guardian.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install soul-guardian
+
+    ```'
+examples:
+- description: Install soul-guardian from ClawHub
+  usage: clawhub install soul-guardian
+schema_version: '1.0'

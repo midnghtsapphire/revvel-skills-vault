@@ -1,0 +1,55 @@
+name: google
+title: Google
+version: 1.0.0
+description: Use when you need to interact with Google services from Clawdbot, including Gmail, Calendar, Drive, Contacts,
+  Sheets, and Docs.
+metadata:
+  author: davidsmorais
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  source: clawhub-community
+  clawhub_slug: google
+  clawhub_path: davidsmorais/google
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google
+
+    # Source: ClawHub community skill by davidsmorais
+
+    # Install: clawhub install google
+
+    # Path: davidsmorais/google
+
+
+    ## Description
+
+    Use when you need to interact with Google services from Clawdbot, including Gmail, Calendar, Drive, Contacts, Sheets,
+    and Docs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google
+
+    ```'
+examples:
+- description: Install Google from ClawHub
+  usage: clawhub install google
+schema_version: '1.0'

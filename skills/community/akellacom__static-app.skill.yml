@@ -1,0 +1,74 @@
+name: static_website_hosting_-_static_app
+title: Static App
+version: 1.0.4
+description: Deploy static websites to Static.app hosting. Use when the user wants to deploy, upload, or host a static site
+  on Static.app. Triggers on phrases like "deploy to static.app", "upload to static", "host on static.app", "static.app deploy",
+  or when working with the Static.app hosting service.
+metadata:
+  author: akellacom
+  category: Development & Coding
+  tags:
+  - development-coding
+  - static
+  - website
+  - hosting
+  - static.app
+  source: clawhub-community
+  clawhub_slug: static-app
+  clawhub_path: akellacom/static-app
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Static App
+
+    # Source: ClawHub community skill by akellacom
+
+    # Install: clawhub install static-app
+
+    # Path: akellacom/static-app
+
+
+    ## Description
+
+    Deploy static websites to Static.app hosting. Use when the user wants to deploy, upload, or host a static site on Static.app.
+    Triggers on phrases like "deploy to static.app", "upload to static", "host on static.app", "static.app deploy", or when
+    working with the Static.app hosting service.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/delete.js
+
+    - scripts/deploy.js
+
+    - scripts/download.js
+
+    - scripts/files.js
+
+    - scripts/list.js
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install static-app
+
+    ```'
+examples:
+- description: Install Static App from ClawHub
+  usage: clawhub install static-app
+schema_version: '1.0'

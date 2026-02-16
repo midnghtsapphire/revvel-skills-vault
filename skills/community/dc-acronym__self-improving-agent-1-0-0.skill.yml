@@ -1,0 +1,62 @@
+name: self-improvement
+title: Self Improving Agent 1.0.0
+version: 1.0.0
+description: '"Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation
+  fails unexpectedly, (2) User corrects Claude (''No, that''s wrong...'', ''Actually...''), (3) User requests a capability
+  that doesn''t exist, (4) An external API or tool fails, (5) Claude re'
+metadata:
+  author: dc-acronym
+  category: Development & Coding
+  tags:
+  - development-coding
+  - self
+  - improvement
+  source: clawhub-community
+  clawhub_slug: self-improving-agent-1-0-0
+  clawhub_path: dc-acronym/self-improving-agent-1-0-0
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Self Improving Agent 1.0.0
+
+    # Source: ClawHub community skill by dc-acronym
+
+    # Install: clawhub install self-improving-agent-1-0-0
+
+    # Path: dc-acronym/self-improving-agent-1-0-0
+
+
+    ## Description
+
+    "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails
+    unexpectedly, (2) User corrects Claude (''No, that''s wrong...'', ''Actually...''), (3) User requests a capability that
+    doesn''t exist, (4) An external API or tool fails, (5) Claude re
+
+
+    ## Files
+
+    - LEARNINGS.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install self-improving-agent-1-0-0
+
+    ```'
+examples:
+- description: Install Self Improving Agent 1.0.0 from ClawHub
+  usage: clawhub install self-improving-agent-1-0-0
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: arxiv-paper-reviews
+title: Arxiv Paper Reviews
+version: 0.1.1
+description: Interact with arXiv Crawler API to fetch papers, read reviews, and submit comments. Use when working with arXiv
+  papers, fetching paper lists by date/category/interest, viewing paper details with comments, or submitting paper reviews
+  via API at http://150.158.152.82:8000.
+metadata:
+  author: zxrys
+  category: Search & Research
+  tags:
+  - search-research
+  - arxiv
+  - paper
+  - reviews
+  source: clawhub-community
+  clawhub_slug: weak-accept
+  clawhub_path: zxrys/weak-accept
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Arxiv Paper Reviews
+
+    # Source: ClawHub community skill by zxrys
+
+    # Install: clawhub install weak-accept
+
+    # Path: zxrys/weak-accept
+
+
+    ## Description
+
+    Interact with arXiv Crawler API to fetch papers, read reviews, and submit comments. Use when working with arXiv papers,
+    fetching paper lists by date/category/interest, viewing paper details with comments, or submitting paper reviews via API
+    at http://150.158.152.82:8000.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - install-deps.sh
+
+    - paper_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install weak-accept
+
+    ```'
+examples:
+- description: Install Arxiv Paper Reviews from ClawHub
+  usage: clawhub install weak-accept
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: claw-admin
+title: ClawEmail Admin
+version: 1.0.1
+description: '"Provision and manage @clawemail.com Google Workspace email accounts. Use when the user wants to create an email
+  for their AI agent, check email availability, or manage existing ClawEmail accounts."'
+metadata:
+  author: cto1
+  category: Search & Research
+  tags:
+  - search-research
+  - claw
+  - admin
+  source: clawhub-community
+  clawhub_slug: claw-admin
+  clawhub_path: cto1/claw-admin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawEmail Admin
+
+    # Source: ClawHub community skill by cto1
+
+    # Install: clawhub install claw-admin
+
+    # Path: cto1/claw-admin
+
+
+    ## Description
+
+    "Provision and manage @clawemail.com Google Workspace email accounts. Use when the user wants to create an email for their
+    AI agent, check email availability, or manage existing ClawEmail accounts."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-admin
+
+    ```'
+examples:
+- description: Install ClawEmail Admin from ClawHub
+  usage: clawhub install claw-admin
+schema_version: '1.0'

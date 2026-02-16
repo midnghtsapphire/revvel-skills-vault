@@ -1,0 +1,53 @@
+name: journal
+title: Journal
+version: 1.0.0
+description: Build a personal journaling practice with prompts, reflection, and pattern discovery.
+metadata:
+  author: ivangdavila
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - journal
+  source: clawhub-community
+  clawhub_slug: journal
+  clawhub_path: ivangdavila/journal
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Journal
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install journal
+
+    # Path: ivangdavila/journal
+
+
+    ## Description
+
+    Build a personal journaling practice with prompts, reflection, and pattern discovery.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install journal
+
+    ```'
+examples:
+- description: Install Journal from ClawHub
+  usage: clawhub install journal
+schema_version: '1.0'

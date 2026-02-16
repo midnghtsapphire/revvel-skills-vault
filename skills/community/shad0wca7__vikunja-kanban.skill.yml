@@ -1,0 +1,61 @@
+name: vikunja-kanban
+title: Vikunja Kanban
+version: 1.1.0
+description: ''
+metadata:
+  author: shad0wca7
+  category: General
+  tags:
+  - general
+  - vikunja
+  - kanban
+  source: clawhub-community
+  clawhub_slug: vikunja-kanban
+  clawhub_path: shad0wca7/vikunja-kanban
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vikunja Kanban
+
+    # Source: ClawHub community skill by shad0wca7
+
+    # Install: clawhub install vikunja-kanban
+
+    # Path: shad0wca7/vikunja-kanban
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/vikunja-add-task.sh
+
+    - scripts/vikunja-complete-task.sh
+
+    - scripts/vikunja-move-task.sh
+
+    - scripts/vikunja-status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vikunja-kanban
+
+    ```'
+examples:
+- description: Install Vikunja Kanban from ClawHub
+  usage: clawhub install vikunja-kanban
+schema_version: '1.0'

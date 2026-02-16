@@ -1,0 +1,60 @@
+name: ask-a-human
+title: Ask a Human
+version: 1.0.1
+description: Request judgment from random humans when uncertain about subjective decisions. Crowdsourced opinions on tone,
+  style, ethics, and reality checks. CRITICAL - Responses take minutes to hours (or may never arrive).
+metadata:
+  author: manuelkiessling
+  category: General
+  tags:
+  - general
+  - ask
+  - human
+  source: clawhub-community
+  clawhub_slug: ask-a-human
+  clawhub_path: manuelkiessling/ask-a-human
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ask a Human
+
+    # Source: ClawHub community skill by manuelkiessling
+
+    # Install: clawhub install ask-a-human
+
+    # Path: manuelkiessling/ask-a-human
+
+
+    ## Description
+
+    Request judgment from random humans when uncertain about subjective decisions. Crowdsourced opinions on tone, style, ethics,
+    and reality checks. CRITICAL - Responses take minutes to hours (or may never arrive).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/usage.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ask-a-human
+
+    ```'
+examples:
+- description: Install Ask a Human from ClawHub
+  usage: clawhub install ask-a-human
+schema_version: '1.0'

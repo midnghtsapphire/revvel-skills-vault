@@ -1,0 +1,58 @@
+name: focus-mode
+title: Focus Mode
+version: 1.0.0
+description: Help users stay focused on a specific goal or task. Activate with "/focus <goal>" to set a focus target. Monitors
+  conversation for drift and gently redirects back to the focus area. Use when user wants accountability, has ADHD-style workflows,
+  tends to go down rabbit holes, or explicitly asks to sta
+metadata:
+  author: savorgbot-exe
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - focus
+  - mode
+  source: clawhub-community
+  clawhub_slug: focus-mode
+  clawhub_path: savorgbot-exe/focus-mode
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Focus Mode
+
+    # Source: ClawHub community skill by savorgbot-exe
+
+    # Install: clawhub install focus-mode
+
+    # Path: savorgbot-exe/focus-mode
+
+
+    ## Description
+
+    Help users stay focused on a specific goal or task. Activate with "/focus <goal>" to set a focus target. Monitors conversation
+    for drift and gently redirects back to the focus area. Use when user wants accountability, has ADHD-style workflows, tends
+    to go down rabbit holes, or explicitly asks to sta
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install focus-mode
+
+    ```'
+examples:
+- description: Install Focus Mode from ClawHub
+  usage: clawhub install focus-mode
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: digitalocean
+title: DigitalOcean
+version: 1.0.0
+description: Manage DigitalOcean resources via API — Droplets (create/destroy/resize/power), DNS zones and records, Spaces
+  (object storage), Databases, Firewalls, Load Balancers, Kubernetes, and account/billing info.
+metadata:
+  author: rexlunae
+  category: Development & Coding
+  tags:
+  - development-coding
+  - digitalocean
+  source: clawhub-community
+  clawhub_slug: digitalocean
+  clawhub_path: rexlunae/digitalocean
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DigitalOcean
+
+    # Source: ClawHub community skill by rexlunae
+
+    # Install: clawhub install digitalocean
+
+    # Path: rexlunae/digitalocean
+
+
+    ## Description
+
+    Manage DigitalOcean resources via API — Droplets (create/destroy/resize/power), DNS zones and records, Spaces (object
+    storage), Databases, Firewalls, Load Balancers, Kubernetes, and account/billing info.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/digitalocean.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install digitalocean
+
+    ```'
+examples:
+- description: Install DigitalOcean from ClawHub
+  usage: clawhub install digitalocean
+schema_version: '1.0'

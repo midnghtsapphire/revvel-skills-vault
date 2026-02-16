@@ -1,0 +1,72 @@
+name: agent-memory
+title: Agent Memory Architecture
+version: 1.0.0
+description: Universal memory architecture for AI agents. Provides long-term memory, daily logs, diary, cron inbox, heartbeat
+  state tracking, social platform post tracking, sub-agent context patterns, and adaptive learning -- everything an agent
+  needs for identity continuity across sessions.
+metadata:
+  author: psychotechv4
+  category: Social Media
+  tags:
+  - social-media
+  - agent
+  - memory
+  source: clawhub-community
+  clawhub_slug: jarvis-memory-architecture
+  clawhub_path: psychotechv4/jarvis-memory-architecture
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Memory Architecture
+
+    # Source: ClawHub community skill by psychotechv4
+
+    # Install: clawhub install jarvis-memory-architecture
+
+    # Path: psychotechv4/jarvis-memory-architecture
+
+
+    ## Description
+
+    Universal memory architecture for AI agents. Provides long-term memory, daily logs, diary, cron inbox, heartbeat state
+    tracking, social platform post tracking, sub-agent context patterns, and adaptive learning -- everything an agent needs
+    for identity continuity across sessions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - templates/MEMORY.md
+
+    - templates/cron-inbox.md
+
+    - templates/daily-log.md
+
+    - templates/diary-entry.md
+
+    - templates/heartbeat-state.json
+
+    - templates/platform-posts.md
+
+    - templates/strategy-notes.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jarvis-memory-architecture
+
+    ```'
+examples:
+- description: Install Agent Memory Architecture from ClawHub
+  usage: clawhub install jarvis-memory-architecture
+schema_version: '1.0'

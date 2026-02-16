@@ -1,0 +1,38 @@
+name: openclaw_camsnap
+title: 📸 Camsnap
+version: 1.0.0
+description: Capture frames or clips from RTSP/ONVIF cameras.
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - camsnap
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - camsnap
+install:
+- id: brew
+  platform: all
+  method: brew
+  command: steipete/tap/camsnap
+  label: Install camsnap (brew)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: camsnap\ndescription: Capture frames or clips from RTSP/ONVIF cameras.\nhomepage: https://camsnap.ai\n\
+    metadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"\U0001F4F8\",\n        \"requires\": { \"bins\": [\"\
+    camsnap\"] },\n        \"install\":\n          [\n            {\n              \"id\": \"brew\",\n              \"kind\"\
+    : \"brew\",\n              \"formula\": \"steipete/tap/camsnap\",\n              \"bins\": [\"camsnap\"],\n          \
+    \    \"label\": \"Install camsnap (brew)\",\n            },\n          ],\n      },\n  }\n---\n\n# camsnap\n\nUse `camsnap`\
+    \ to grab snapshots, clips, or motion events from configured cameras.\n\nSetup\n\n- Config file: `~/.config/camsnap/config.yaml`\n\
+    - Add camera: `camsnap add --name kitchen --host 192.168.0.10 --user user --pass pass`\n\nCommon commands\n\n- Discover:\
+    \ `camsnap discover --info`\n- Snapshot: `camsnap snap kitchen --out shot.jpg`\n- Clip: `camsnap clip kitchen --dur 5s\
+    \ --out clip.mp4`\n- Motion watch: `camsnap watch kitchen --threshold 0.2 --action '...'`\n- Doctor: `camsnap doctor --probe`\n\
+    \nNotes\n\n- Requires `ffmpeg` on PATH.\n- Prefer a short test capture before longer clips.\n"
+examples: []
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: tesla-smart-charge
+title: Tesla Smart Charge
+version: 1.1.1
+description: 'Smart Tesla charging scheduler with charge limit management. Runs daily to check a schedule file and charge
+  only on configured dates. Automatically manages charge limits during sessions (default 100%) and after sessions (default
+  80%). Use when you need to: (1) Charge your Tesla on specific planned d'
+metadata:
+  author: thibautrey
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - tesla
+  - smart
+  - charge
+  source: clawhub-community
+  clawhub_slug: tesla-smart-charge
+  clawhub_path: thibautrey/tesla-smart-charge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tesla Smart Charge
+
+    # Source: ClawHub community skill by thibautrey
+
+    # Install: clawhub install tesla-smart-charge
+
+    # Path: thibautrey/tesla-smart-charge
+
+
+    ## Description
+
+    Smart Tesla charging scheduler with charge limit management. Runs daily to check a schedule file and charge only on configured
+    dates. Automatically manages charge limits during sessions (default 100%) and after sessions (default 80%). Use when you
+    need to: (1) Charge your Tesla on specific planned d
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - references/cron_setup.md
+
+    - references/tesla-charge-schedule-example.json
+
+    - scripts/tesla-smart-charge.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tesla-smart-charge
+
+    ```'
+examples:
+- description: Install Tesla Smart Charge from ClawHub
+  usage: clawhub install tesla-smart-charge
+schema_version: '1.0'

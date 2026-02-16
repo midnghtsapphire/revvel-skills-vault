@@ -1,0 +1,67 @@
+name: doc-search
+title: Doc Search
+version: 0.1.0
+description: 文档内容检索技能，用于在项目文件中搜索和定位信息。当需要在本地文档中查找关键词、搜索项目文件内容、定位特定信息、或需要快速了解项目文档结构时使用此技能。支持多策略搜索（文件名、标题、内容）、增量索引、上下文返回。适用于
+  Markdown、文本文件、代码文件等。
+metadata:
+  author: sanvibyfish
+  category: Search & Research
+  tags:
+  - search-research
+  - doc
+  - search
+  source: clawhub-community
+  clawhub_slug: doc-search-skill
+  clawhub_path: sanvibyfish/doc-search-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Doc Search
+
+    # Source: ClawHub community skill by sanvibyfish
+
+    # Install: clawhub install doc-search-skill
+
+    # Path: sanvibyfish/doc-search-skill
+
+
+    ## Description
+
+    文档内容检索技能，用于在项目文件中搜索和定位信息。当需要在本地文档中查找关键词、搜索项目文件内容、定位特定信息、或需要快速了解项目文档结构时使用此技能。支持多策略搜索（文件名、标题、内容）、增量索引、上下文返回。适用于 Markdown、文本文件、代码文件等。
+
+
+    ## Files
+
+    - README.md
+
+    - README.zh.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/search-strategies.md
+
+    - scripts/indexer.py
+
+    - scripts/quick_search.sh
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install doc-search-skill
+
+    ```'
+examples:
+- description: Install Doc Search from ClawHub
+  usage: clawhub install doc-search-skill
+schema_version: '1.0'

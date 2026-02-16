@@ -1,0 +1,57 @@
+name: _sleep_
+title: Sleep
+version: 1.0.0
+description: '"Auto-learns your sleep patterns. Absorbs data from wearables, conversations, and observations."'
+metadata:
+  author: ivangdavila
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - '"sleep"'
+  source: clawhub-community
+  clawhub_slug: sleep
+  clawhub_path: ivangdavila/sleep
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sleep
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install sleep
+
+    # Path: ivangdavila/sleep
+
+
+    ## Description
+
+    "Auto-learns your sleep patterns. Absorbs data from wearables, conversations, and observations."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - patterns.md
+
+    - sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sleep
+
+    ```'
+examples:
+- description: Install Sleep from ClawHub
+  usage: clawhub install sleep
+schema_version: '1.0'

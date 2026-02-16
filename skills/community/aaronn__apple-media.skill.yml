@@ -1,0 +1,54 @@
+name: apple-media
+title: Apple Media Remote (for HomePod, Apple TV, etc)
+version: 1.0.0
+description: Control Apple TV, HomePod, and AirPlay devices via pyatv (scan, stream, playback, volume, navigation).
+metadata:
+  author: aaronn
+  category: Media & Content
+  tags:
+  - media-content
+  - apple
+  - media
+  source: clawhub-community
+  clawhub_slug: apple-media
+  clawhub_path: aaronn/apple-media
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Media Remote (for HomePod, Apple TV, etc)
+
+    # Source: ClawHub community skill by aaronn
+
+    # Install: clawhub install apple-media
+
+    # Path: aaronn/apple-media
+
+
+    ## Description
+
+    Control Apple TV, HomePod, and AirPlay devices via pyatv (scan, stream, playback, volume, navigation).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-media
+
+    ```'
+examples:
+- description: Install Apple Media Remote (for HomePod, Apple TV, etc) from ClawHub
+  usage: clawhub install apple-media
+schema_version: '1.0'

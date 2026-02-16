@@ -1,0 +1,53 @@
+name: domaindetails
+title: Domain Details
+version: 1.2.0
+description: Look up domain WHOIS/RDAP info and check marketplace listings. Free API, no auth required.
+metadata:
+  author: julianengel
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - domaindetails
+  source: clawhub-community
+  clawhub_slug: domaindetails
+  clawhub_path: julianengel/domaindetails
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Domain Details
+
+    # Source: ClawHub community skill by julianengel
+
+    # Install: clawhub install domaindetails
+
+    # Path: julianengel/domaindetails
+
+
+    ## Description
+
+    Look up domain WHOIS/RDAP info and check marketplace listings. Free API, no auth required.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install domaindetails
+
+    ```'
+examples:
+- description: Install Domain Details from ClawHub
+  usage: clawhub install domaindetails
+schema_version: '1.0'

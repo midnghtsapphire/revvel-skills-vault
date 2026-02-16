@@ -1,0 +1,58 @@
+name: process-watch
+title: Process Watch
+version: 1.0.0
+description: Monitor system processes - CPU, memory, disk I/O, network, open files, ports. Find resource hogs, kill runaway
+  processes, track what's consuming your machine.
+metadata:
+  author: dbhurley
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - process
+  - watch
+  source: clawhub-community
+  clawhub_slug: process-watch
+  clawhub_path: dbhurley/process-watch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Process Watch
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install process-watch
+
+    # Path: dbhurley/process-watch
+
+
+    ## Description
+
+    Monitor system processes - CPU, memory, disk I/O, network, open files, ports. Find resource hogs, kill runaway processes,
+    track what''s consuming your machine.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/process-watch.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install process-watch
+
+    ```'
+examples:
+- description: Install Process Watch from ClawHub
+  usage: clawhub install process-watch
+schema_version: '1.0'

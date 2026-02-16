@@ -1,0 +1,57 @@
+name: drafts
+title: Drafts CLI
+version: 1.0.0
+description: Manage Drafts app notes via CLI on macOS. Create, view, list, edit, append, prepend, and run actions on drafts.
+  Use when a user asks to create a note, list drafts, search drafts, or manage their Drafts inbox. IMPORTANT - Drafts app
+  must be running on macOS for this to work.
+metadata:
+  author: nerveband
+  category: Search & Research
+  tags:
+  - search-research
+  - drafts
+  source: clawhub-community
+  clawhub_slug: drafts
+  clawhub_path: nerveband/drafts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Drafts CLI
+
+    # Source: ClawHub community skill by nerveband
+
+    # Install: clawhub install drafts
+
+    # Path: nerveband/drafts
+
+
+    ## Description
+
+    Manage Drafts app notes via CLI on macOS. Create, view, list, edit, append, prepend, and run actions on drafts. Use when
+    a user asks to create a note, list drafts, search drafts, or manage their Drafts inbox. IMPORTANT - Drafts app must be
+    running on macOS for this to work.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install drafts
+
+    ```'
+examples:
+- description: Install Drafts CLI from ClawHub
+  usage: clawhub install drafts
+schema_version: '1.0'

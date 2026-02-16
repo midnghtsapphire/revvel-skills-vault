@@ -1,0 +1,62 @@
+name: serpapi-mcp
+title: Serpapi Mcp
+version: 1.1.1
+description: Run SerpAPI searches via SerpAPI's MCP server using mcporter. Use when the user asks to search the web with SerpAPI/SerpAPI
+  MCP, wants SerpAPI inside Clawdbot, or to use the /serp command.
+metadata:
+  author: merlintxu
+  category: Search & Research
+  tags:
+  - search-research
+  - serpapi
+  - mcp
+  source: clawhub-community
+  clawhub_slug: serpapi-mcp
+  clawhub_path: merlintxu/serpapi-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Serpapi Mcp
+
+    # Source: ClawHub community skill by merlintxu
+
+    # Install: clawhub install serpapi-mcp
+
+    # Path: merlintxu/serpapi-mcp
+
+
+    ## Description
+
+    Run SerpAPI searches via SerpAPI''s MCP server using mcporter. Use when the user asks to search the web with SerpAPI/SerpAPI
+    MCP, wants SerpAPI inside Clawdbot, or to use the /serp command.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/airtable_log.mjs
+
+    - scripts/fetch_ai_overview.mjs
+
+    - scripts/serp.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install serpapi-mcp
+
+    ```'
+examples:
+- description: Install Serpapi Mcp from ClawHub
+  usage: clawhub install serpapi-mcp
+schema_version: '1.0'

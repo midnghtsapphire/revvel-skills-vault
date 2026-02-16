@@ -1,0 +1,68 @@
+name: opnsense-admin
+title: Opnsense Admin Skill
+version: 1.0.3
+description: Manage OPNsense firewall, DNS, IDS/IPS, and network configuration via API and SSH. Use when administering OPNsense
+  firewall, configuring Suricata IDS/IPS, managing Unbound DNS, creating firewall rules, backing up configurations, monitoring
+  traffic, or troubleshooting network issues. Supports both AP
+metadata:
+  author: transcendenceia
+  category: Development & Coding
+  tags:
+  - development-coding
+  - opnsense
+  - admin
+  source: clawhub-community
+  clawhub_slug: opnsense-admin
+  clawhub_path: transcendenceia/opnsense-admin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Opnsense Admin Skill
+
+    # Source: ClawHub community skill by transcendenceia
+
+    # Install: clawhub install opnsense-admin
+
+    # Path: transcendenceia/opnsense-admin
+
+
+    ## Description
+
+    Manage OPNsense firewall, DNS, IDS/IPS, and network configuration via API and SSH. Use when administering OPNsense firewall,
+    configuring Suricata IDS/IPS, managing Unbound DNS, creating firewall rules, backing up configurations, monitoring traffic,
+    or troubleshooting network issues. Supports both AP
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/backup-config.sh
+
+    - scripts/opnsense-api.sh
+
+    - scripts/service-control.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install opnsense-admin
+
+    ```'
+examples:
+- description: Install Opnsense Admin Skill from ClawHub
+  usage: clawhub install opnsense-admin
+schema_version: '1.0'

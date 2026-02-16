@@ -1,0 +1,63 @@
+name: adguard
+title: Adguard
+version: 0.1.0
+description: Control AdGuard Home DNS filtering via HTTP API. Use when managing blocklists/allowlists, checking domain filtering
+  status, toggling protection, or clearing DNS cache. Supports blocking/allowing domains, viewing statistics, and protecting/disabling
+  DNS filtering.
+metadata:
+  author: rowbotik
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - adguard
+  source: clawhub-community
+  clawhub_slug: adguard
+  clawhub_path: rowbotik/adguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Adguard
+
+    # Source: ClawHub community skill by rowbotik
+
+    # Install: clawhub install adguard
+
+    # Path: rowbotik/adguard
+
+
+    ## Description
+
+    Control AdGuard Home DNS filtering via HTTP API. Use when managing blocklists/allowlists, checking domain filtering status,
+    toggling protection, or clearing DNS cache. Supports blocking/allowing domains, viewing statistics, and protecting/disabling
+    DNS filtering.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/adguard.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install adguard
+
+    ```'
+examples:
+- description: Install Adguard from ClawHub
+  usage: clawhub install adguard
+schema_version: '1.0'

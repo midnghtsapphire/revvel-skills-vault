@@ -1,0 +1,61 @@
+name: autofillin
+title: AutoFillIn - Browser Form Automation Skill
+version: 1.2.1
+description: Automated web form filling and file uploading skill with Playwright browser automation. Handles login persistence,
+  form detection, file uploads, and waits for manual confirmation before submission.
+metadata:
+  author: leohan123123
+  category: Search & Research
+  tags:
+  - search-research
+  - autofillin
+  source: clawhub-community
+  clawhub_slug: autofillin
+  clawhub_path: leohan123123/autofillin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AutoFillIn - Browser Form Automation Skill
+
+    # Source: ClawHub community skill by leohan123123
+
+    # Install: clawhub install autofillin
+
+    # Path: leohan123123/autofillin
+
+
+    ## Description
+
+    Automated web form filling and file uploading skill with Playwright browser automation. Handles login persistence, form
+    detection, file uploads, and waits for manual confirmation before submission.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/autofillin.sh
+
+    - scripts/setup-env.sh
+
+    - scripts/start-chrome.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install autofillin
+
+    ```'
+examples:
+- description: Install AutoFillIn - Browser Form Automation Skill from ClawHub
+  usage: clawhub install autofillin
+schema_version: '1.0'

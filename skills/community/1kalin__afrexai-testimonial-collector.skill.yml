@@ -1,0 +1,54 @@
+name: testimonial_collector
+title: AfrexAI Testimonial Collector
+version: 1.0.0
+description: Generates testimonial request emails and formats collected testimonials for marketing
+metadata:
+  author: 1kalin
+  category: Communication
+  tags:
+  - communication
+  - testimonial
+  - collector
+  source: clawhub-community
+  clawhub_slug: afrexai-testimonial-collector
+  clawhub_path: 1kalin/afrexai-testimonial-collector
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AfrexAI Testimonial Collector
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install afrexai-testimonial-collector
+
+    # Path: 1kalin/afrexai-testimonial-collector
+
+
+    ## Description
+
+    Generates testimonial request emails and formats collected testimonials for marketing
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install afrexai-testimonial-collector
+
+    ```'
+examples:
+- description: Install AfrexAI Testimonial Collector from ClawHub
+  usage: clawhub install afrexai-testimonial-collector
+schema_version: '1.0'

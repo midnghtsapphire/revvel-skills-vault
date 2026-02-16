@@ -1,0 +1,60 @@
+name: browser-use
+title: Browser Use API
+version: 1.0.1
+description: Cloud browser automation via Browser Use API. Use when you need AI-driven web browsing, scraping, form filling,
+  or multi-step web tasks without local browser control. Triggers on "browser use", "cloud browser", "scrape website", "automate
+  web task", or when local browser isn't available/suitable.
+metadata:
+  author: jfrux
+  category: Search & Research
+  tags:
+  - search-research
+  - browser
+  - use
+  source: clawhub-community
+  clawhub_slug: browser-use-api
+  clawhub_path: jfrux/browser-use-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Browser Use API
+
+    # Source: ClawHub community skill by jfrux
+
+    # Install: clawhub install browser-use-api
+
+    # Path: jfrux/browser-use-api
+
+
+    ## Description
+
+    Cloud browser automation via Browser Use API. Use when you need AI-driven web browsing, scraping, form filling, or multi-step
+    web tasks without local browser control. Triggers on "browser use", "cloud browser", "scrape website", "automate web task",
+    or when local browser isn''t available/suitable.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/browser-use.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install browser-use-api
+
+    ```'
+examples:
+- description: Install Browser Use API from ClawHub
+  usage: clawhub install browser-use-api
+schema_version: '1.0'

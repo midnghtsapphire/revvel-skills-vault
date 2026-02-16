@@ -1,0 +1,68 @@
+name: linkedin-inbox
+title: LinkedIn Inbox Manager
+version: 0.1.0
+description: LinkedIn inbox management with scheduled scanning, auto-draft responses following user's communication style,
+  and approval workflows. Use when monitoring LinkedIn messages, drafting replies, managing inbox during off-hours, or setting
+  up morning ping summaries of LinkedIn activity.
+metadata:
+  author: dylanbaker24
+  category: Social Media
+  tags:
+  - social-media
+  - linkedin
+  - inbox
+  source: clawhub-community
+  clawhub_slug: linkedin-inbox
+  clawhub_path: dylanbaker24/linkedin-inbox
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LinkedIn Inbox Manager
+
+    # Source: ClawHub community skill by dylanbaker24
+
+    # Install: clawhub install linkedin-inbox
+
+    # Path: dylanbaker24/linkedin-inbox
+
+
+    ## Description
+
+    LinkedIn inbox management with scheduled scanning, auto-draft responses following user''s communication style, and approval
+    workflows. Use when monitoring LinkedIn messages, drafting replies, managing inbox during off-hours, or setting up morning
+    ping summaries of LinkedIn activity.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config-example.json
+
+    - references/style-extraction.md
+
+    - scripts/open_conversation.sh
+
+    - scripts/scan_inbox.sh
+
+    - scripts/send_message.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linkedin-inbox
+
+    ```'
+examples:
+- description: Install LinkedIn Inbox Manager from ClawHub
+  usage: clawhub install linkedin-inbox
+schema_version: '1.0'

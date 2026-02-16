@@ -1,0 +1,72 @@
+name: telnyx-network
+title: Telnyx Network
+version: 1.0.0
+description: Private mesh networking and public IP exposure via Telnyx WireGuard infrastructure. Connect nodes securely or
+  expose services to the internet.
+metadata:
+  author: dotcom-squad
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - telnyx
+  - network
+  source: clawhub-community
+  clawhub_slug: telnyx-network
+  clawhub_path: dotcom-squad/telnyx-network
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telnyx Network
+
+    # Source: ClawHub community skill by dotcom-squad
+
+    # Install: clawhub install telnyx-network
+
+    # Path: dotcom-squad/telnyx-network
+
+
+    ## Description
+
+    Private mesh networking and public IP exposure via Telnyx WireGuard infrastructure. Connect nodes securely or expose services
+    to the internet.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - add-public-ip.sh
+
+    - diagram.svg
+
+    - discover.sh
+
+    - expose.sh
+
+    - join.sh
+
+    - peers.sh
+
+    - register.sh
+
+    - setup-sudoers.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telnyx-network
+
+    ```'
+examples:
+- description: Install Telnyx Network from ClawHub
+  usage: clawhub install telnyx-network
+schema_version: '1.0'

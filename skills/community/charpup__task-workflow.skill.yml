@@ -1,0 +1,60 @@
+name: task-workflow
+title: Task Workflow
+version: 1.0.0
+description: Standardized Planning + Subagent + Progress Report workflow for complex tasks
+metadata:
+  author: charpup
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - task
+  - workflow
+  source: clawhub-community
+  clawhub_slug: task-workflow
+  clawhub_path: charpup/task-workflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Task Workflow
+
+    # Source: ClawHub community skill by charpup
+
+    # Install: clawhub install task-workflow
+
+    # Path: charpup/task-workflow
+
+
+    ## Description
+
+    Standardized Planning + Subagent + Progress Report workflow for complex tasks
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/example-task.md
+
+    - templates/task-plan.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install task-workflow
+
+    ```'
+examples:
+- description: Install Task Workflow from ClawHub
+  usage: clawhub install task-workflow
+schema_version: '1.0'

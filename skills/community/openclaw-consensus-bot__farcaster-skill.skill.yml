@@ -1,0 +1,74 @@
+name: farcaster-skill
+title: Farcaster Skill
+version: 1.0.1
+description: '"Post, read, search, and engage on Farcaster via the Neynar API. Use when an agent needs to: (1) post casts
+  with text, embeds, or in channels, (2) reply to or thread casts, (3) read a user''s feed or a channel feed, (4) search casts
+  by keyword, (5) look up user profiles by username or FID, (6) like o'
+metadata:
+  author: openclaw-consensus-bot
+  category: Search & Research
+  tags:
+  - search-research
+  - farcaster
+  - skill
+  source: clawhub-community
+  clawhub_slug: farcaster-skill
+  clawhub_path: openclaw-consensus-bot/farcaster-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Farcaster Skill
+
+    # Source: ClawHub community skill by openclaw-consensus-bot
+
+    # Install: clawhub install farcaster-skill
+
+    # Path: openclaw-consensus-bot/farcaster-skill
+
+
+    ## Description
+
+    "Post, read, search, and engage on Farcaster via the Neynar API. Use when an agent needs to: (1) post casts with text,
+    embeds, or in channels, (2) reply to or thread casts, (3) read a user''s feed or a channel feed, (4) search casts by keyword,
+    (5) look up user profiles by username or FID, (6) like o
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/neynar_endpoints.md
+
+    - scripts/fc_cast.sh
+
+    - scripts/fc_channels.sh
+
+    - scripts/fc_delete.sh
+
+    - scripts/fc_feed.sh
+
+    - scripts/fc_react.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install farcaster-skill
+
+    ```'
+examples:
+- description: Install Farcaster Skill from ClawHub
+  usage: clawhub install farcaster-skill
+schema_version: '1.0'

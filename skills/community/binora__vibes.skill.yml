@@ -1,0 +1,53 @@
+name: vibes
+title: vibes
+version: 1.0.0
+description: Social presence layer for AI coding agents. See who's coding right now and share ephemeral vibes.
+metadata:
+  author: binora
+  category: Social Media
+  tags:
+  - social-media
+  - vibes
+  source: clawhub-community
+  clawhub_slug: vibes
+  clawhub_path: binora/vibes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# vibes
+
+    # Source: ClawHub community skill by binora
+
+    # Install: clawhub install vibes
+
+    # Path: binora/vibes
+
+
+    ## Description
+
+    Social presence layer for AI coding agents. See who''s coding right now and share ephemeral vibes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vibes
+
+    ```'
+examples:
+- description: Install vibes from ClawHub
+  usage: clawhub install vibes
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: spotify-applescript
+title: Spotify AppleScript
+version: 1.0.0
+description: Control Spotify desktop app via AppleScript. Play playlists, tracks, albums, episodes, and manage playback. Works
+  reliably with macOS Spotify app without API keys or OAuth.
+metadata:
+  author: andrewjiang
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - spotify
+  - applescript
+  source: clawhub-community
+  clawhub_slug: spotify-applescript
+  clawhub_path: andrewjiang/spotify-applescript
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Spotify AppleScript
+
+    # Source: ClawHub community skill by andrewjiang
+
+    # Install: clawhub install spotify-applescript
+
+    # Path: andrewjiang/spotify-applescript
+
+
+    ## Description
+
+    Control Spotify desktop app via AppleScript. Play playlists, tracks, albums, episodes, and manage playback. Works reliably
+    with macOS Spotify app without API keys or OAuth.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - spotify.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install spotify-applescript
+
+    ```'
+examples:
+- description: Install Spotify AppleScript from ClawHub
+  usage: clawhub install spotify-applescript
+schema_version: '1.0'

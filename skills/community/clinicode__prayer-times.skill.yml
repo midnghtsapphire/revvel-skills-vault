@@ -1,0 +1,60 @@
+name: prayer-times
+title: Prayer Times, World Salah Times
+version: 1.0.0
+description: Get instant, accurate Islamic prayer times for any location worldwide. Auto-detects your city or accepts any
+  city/country name globally. Handles typos with smart fuzzy search. Shows Fajr, Sunrise, Dhuhr, Asr, Maghrib, and Isha times
+  in 12-hour format. Works anywhere - UK, USA, Middle East, Asia, Eur
+metadata:
+  author: clinicode
+  category: Search & Research
+  tags:
+  - search-research
+  - prayer
+  - times
+  source: clawhub-community
+  clawhub_slug: prayer-times
+  clawhub_path: clinicode/prayer-times
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prayer Times, World Salah Times
+
+    # Source: ClawHub community skill by clinicode
+
+    # Install: clawhub install prayer-times
+
+    # Path: clinicode/prayer-times
+
+
+    ## Description
+
+    Get instant, accurate Islamic prayer times for any location worldwide. Auto-detects your city or accepts any city/country
+    name globally. Handles typos with smart fuzzy search. Shows Fajr, Sunrise, Dhuhr, Asr, Maghrib, and Isha times in 12-hour
+    format. Works anywhere - UK, USA, Middle East, Asia, Eur
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/prayer_times_world.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prayer-times
+
+    ```'
+examples:
+- description: Install Prayer Times, World Salah Times from ClawHub
+  usage: clawhub install prayer-times
+schema_version: '1.0'

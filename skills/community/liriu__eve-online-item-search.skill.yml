@@ -1,0 +1,60 @@
+name: eve-online-item-search
+title: EVE online 物品知识库
+version: 1.0.7
+description: Search EVE Online items by name via APIs and return item details.
+metadata:
+  author: liriu
+  category: Search & Research
+  tags:
+  - search-research
+  - eve
+  - online
+  - item
+  - search
+  source: clawhub-community
+  clawhub_slug: eve-online-item-search
+  clawhub_path: liriu/eve-online-item-search
+  user_invocable: false
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# EVE online 物品知识库
+
+    # Source: ClawHub community skill by liriu
+
+    # Install: clawhub install eve-online-item-search
+
+    # Path: liriu/eve-online-item-search
+
+
+    ## Description
+
+    Search EVE Online items by name via APIs and return item details.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install eve-online-item-search
+
+    ```'
+examples:
+- description: Install EVE online 物品知识库 from ClawHub
+  usage: clawhub install eve-online-item-search
+schema_version: '1.0'

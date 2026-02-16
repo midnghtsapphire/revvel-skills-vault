@@ -1,0 +1,55 @@
+name: bitwarden
+title: Bitwarden
+version: 0.1.0
+description: Set up and use Bitwarden CLI (bw). Use when installing the CLI, unlocking vault, or reading/generating secrets
+  via bw. Handles session management with BW_SESSION.
+metadata:
+  author: jimihford
+  category: General
+  tags:
+  - general
+  - bitwarden
+  source: clawhub-community
+  clawhub_slug: openclaw-bitwarden
+  clawhub_path: jimihford/openclaw-bitwarden
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bitwarden
+
+    # Source: ClawHub community skill by jimihford
+
+    # Install: clawhub install openclaw-bitwarden
+
+    # Path: jimihford/openclaw-bitwarden
+
+
+    ## Description
+
+    Set up and use Bitwarden CLI (bw). Use when installing the CLI, unlocking vault, or reading/generating secrets via bw.
+    Handles session management with BW_SESSION.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-bitwarden
+
+    ```'
+examples:
+- description: Install Bitwarden from ClawHub
+  usage: clawhub install openclaw-bitwarden
+schema_version: '1.0'

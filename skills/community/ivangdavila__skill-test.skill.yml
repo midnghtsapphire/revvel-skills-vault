@@ -1,0 +1,60 @@
+name: _skill_test_
+title: Skill Test
+version: 1.0.0
+description: '"Test skills before using or publishing. Trial, compare, evaluate in isolation without affecting your environment."'
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - '"skill'
+  - test"
+  source: clawhub-community
+  clawhub_slug: skill-test
+  clawhub_path: ivangdavila/skill-test
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Test
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install skill-test
+
+    # Path: ivangdavila/skill-test
+
+
+    ## Description
+
+    "Test skills before using or publishing. Trial, compare, evaluate in isolation without affecting your environment."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - compare.md
+
+    - evaluate.md
+
+    - sandbox.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-test
+
+    ```'
+examples:
+- description: Install Skill Test from ClawHub
+  usage: clawhub install skill-test
+schema_version: '1.0'

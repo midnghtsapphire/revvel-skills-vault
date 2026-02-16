@@ -1,0 +1,56 @@
+name: instruments-profiling
+title: Instruments Profiling
+version: 1.0.0
+description: Use when profiling native macOS or iOS apps with Instruments/xctrace. Covers correct binary selection, CLI arguments,
+  exports, and common gotchas.
+metadata:
+  author: steipete
+  category: System & OS
+  tags:
+  - system-os
+  - instruments
+  - profiling
+  source: clawhub-community
+  clawhub_slug: instruments-profiling
+  clawhub_path: steipete/instruments-profiling
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Instruments Profiling
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install instruments-profiling
+
+    # Path: steipete/instruments-profiling
+
+
+    ## Description
+
+    Use when profiling native macOS or iOS apps with Instruments/xctrace. Covers correct binary selection, CLI arguments,
+    exports, and common gotchas.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install instruments-profiling
+
+    ```'
+examples:
+- description: Install Instruments Profiling from ClawHub
+  usage: clawhub install instruments-profiling
+schema_version: '1.0'

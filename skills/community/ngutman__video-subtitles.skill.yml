@@ -1,0 +1,60 @@
+name: video-subtitles
+title: Video Subtitles
+version: 1.0.0
+description: Generate SRT subtitles from video/audio with translation support. Transcribes Hebrew (ivrit.ai) and English (whisper),
+  translates between languages, burns subtitles into video. Use for creating captions, transcripts, or hardcoded subtitles
+  for WhatsApp/social media.
+metadata:
+  author: ngutman
+  category: Media & Content
+  tags:
+  - media-content
+  - video
+  - subtitles
+  source: clawhub-community
+  clawhub_slug: video-subtitles
+  clawhub_path: ngutman/video-subtitles
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Video Subtitles
+
+    # Source: ClawHub community skill by ngutman
+
+    # Install: clawhub install video-subtitles
+
+    # Path: ngutman/video-subtitles
+
+
+    ## Description
+
+    Generate SRT subtitles from video/audio with translation support. Transcribes Hebrew (ivrit.ai) and English (whisper),
+    translates between languages, burns subtitles into video. Use for creating captions, transcripts, or hardcoded subtitles
+    for WhatsApp/social media.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_srt.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install video-subtitles
+
+    ```'
+examples:
+- description: Install Video Subtitles from ClawHub
+  usage: clawhub install video-subtitles
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: causal-inference
+title: Causal Inference
+version: 0.2.0
+description: Add causal reasoning to agent actions. Trigger on ANY high-level action with observable outcomes - emails, messages,
+  calendar changes, file operations, API calls, notifications, reminders, purchases, deployments. Use for planning interventions,
+  debugging failures, predicting outcomes, backfilling hi
+metadata:
+  author: oswalpalash
+  category: Communication
+  tags:
+  - communication
+  - causal
+  - inference
+  source: clawhub-community
+  clawhub_slug: causal-inference
+  clawhub_path: oswalpalash/causal-inference
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Causal Inference
+
+    # Source: ClawHub community skill by oswalpalash
+
+    # Install: clawhub install causal-inference
+
+    # Path: oswalpalash/causal-inference
+
+
+    ## Description
+
+    Add causal reasoning to agent actions. Trigger on ANY high-level action with observable outcomes - emails, messages, calendar
+    changes, file operations, API calls, notifications, reminders, purchases, deployments. Use for planning interventions,
+    debugging failures, predicting outcomes, backfilling hi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/do-calculus.md
+
+    - references/estimation.md
+
+    - scripts/backfill_calendar.py
+
+    - scripts/backfill_email.py
+
+    - scripts/backfill_messages.py
+
+    - scripts/estimate_effect.py
+
+    - scripts/log_action.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install causal-inference
+
+    ```'
+examples:
+- description: Install Causal Inference from ClawHub
+  usage: clawhub install causal-inference
+schema_version: '1.0'

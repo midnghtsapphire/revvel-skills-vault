@@ -1,0 +1,63 @@
+name: data-reconciliation-exceptions
+title: Data quality & reconciliation with exception
+version: 1.0.0
+description: Reconciles data sources using stable identifiers (Pay Number, driving licence, driver card, and driver qualification
+  card numbers), producing exception reports and “no silent failure” checks. Use when you need weekly matching with explicit
+  reasons for non-joins and mismatches.
+metadata:
+  author: kowl64
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - data
+  - reconciliation
+  - exceptions
+  source: clawhub-community
+  clawhub_slug: data-reconciliation-exceptions
+  clawhub_path: kowl64/data-reconciliation-exceptions
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Data quality & reconciliation with exception
+
+    # Source: ClawHub community skill by kowl64
+
+    # Install: clawhub install data-reconciliation-exceptions
+
+    # Path: kowl64/data-reconciliation-exceptions
+
+
+    ## Description
+
+    Reconciles data sources using stable identifiers (Pay Number, driving licence, driver card, and driver qualification card
+    numbers), producing exception reports and “no silent failure” checks. Use when you need weekly matching with explicit
+    reasons for non-joins and mismatches.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/exceptions-report-template.csv
+
+    - references/matching-rules.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install data-reconciliation-exceptions
+
+    ```'
+examples:
+- description: Install Data quality & reconciliation with exception from ClawHub
+  usage: clawhub install data-reconciliation-exceptions
+schema_version: '1.0'

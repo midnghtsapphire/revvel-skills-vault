@@ -1,0 +1,54 @@
+name: airbnb-search
+title: Airbnb
+version: 1.0.0
+description: Search Airbnb listings with prices, ratings, and direct links. No API key required.
+metadata:
+  author: stveenli
+  category: Search & Research
+  tags:
+  - search-research
+  - airbnb
+  - search
+  source: clawhub-community
+  clawhub_slug: airbnb
+  clawhub_path: stveenli/airbnb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Airbnb
+
+    # Source: ClawHub community skill by stveenli
+
+    # Install: clawhub install airbnb
+
+    # Path: stveenli/airbnb
+
+
+    ## Description
+
+    Search Airbnb listings with prices, ratings, and direct links. No API key required.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install airbnb
+
+    ```'
+examples:
+- description: Install Airbnb from ClawHub
+  usage: clawhub install airbnb
+schema_version: '1.0'

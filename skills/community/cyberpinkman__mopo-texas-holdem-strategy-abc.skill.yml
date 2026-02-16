@@ -1,0 +1,65 @@
+name: mopo-texas-holdem-strategy-abc
+title: MoPo Texas Hold'em Strategy ABC
+version: 1.0.4
+description: Player-facing MOPO Texas Hold'em skill (ABC baseline) to join a single table, fetch private game state, and choose
+  actions using ABC/Conservative/Aggressive templates. Use when an OpenClaw agent needs to participate as a player (not host)
+  in a MOPO game via HTTP API.
+metadata:
+  author: cyberpinkman
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mopo
+  - texas
+  - holdem
+  - strategy
+  - abc
+  source: clawhub-community
+  clawhub_slug: mopo-texas-holdem-strategy-abc
+  clawhub_path: cyberpinkman/mopo-texas-holdem-strategy-abc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MoPo Texas Hold''em Strategy ABC
+
+    # Source: ClawHub community skill by cyberpinkman
+
+    # Install: clawhub install mopo-texas-holdem-strategy-abc
+
+    # Path: cyberpinkman/mopo-texas-holdem-strategy-abc
+
+
+    ## Description
+
+    Player-facing MOPO Texas Hold''em skill (ABC baseline) to join a single table, fetch private game state, and choose actions
+    using ABC/Conservative/Aggressive templates. Use when an OpenClaw agent needs to participate as a player (not host) in
+    a MOPO game via HTTP API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/strategy.md
+
+    - references/table-select.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mopo-texas-holdem-strategy-abc
+
+    ```'
+examples:
+- description: Install MoPo Texas Hold'em Strategy ABC from ClawHub
+  usage: clawhub install mopo-texas-holdem-strategy-abc
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: voicenotes
+title: Voicenotes
+version: 1.0.0
+description: Sync and access voice notes from Voicenotes.com. Use when the user wants to retrieve their voice recordings,
+  transcripts, and AI summaries from Voicenotes. Supports fetching notes, syncing to markdown, and searching transcripts.
+metadata:
+  author: shawnhansen
+  category: Search & Research
+  tags:
+  - search-research
+  - voicenotes
+  source: clawhub-community
+  clawhub_slug: voicenotes
+  clawhub_path: shawnhansen/voicenotes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Voicenotes
+
+    # Source: ClawHub community skill by shawnhansen
+
+    # Install: clawhub install voicenotes
+
+    # Path: shawnhansen/voicenotes
+
+
+    ## Description
+
+    Sync and access voice notes from Voicenotes.com. Use when the user wants to retrieve their voice recordings, transcripts,
+    and AI summaries from Voicenotes. Supports fetching notes, syncing to markdown, and searching transcripts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch-notes.sh
+
+    - scripts/get-user.sh
+
+    - scripts/sync-to-markdown.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install voicenotes
+
+    ```'
+examples:
+- description: Install Voicenotes from ClawHub
+  usage: clawhub install voicenotes
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: cloudflare-dns
+title: Cloudflare Dns
+version: 1.0.0
+description: Manage Cloudflare DNS records via API. Use when user asks to list, create, update, or delete DNS records, set
+  up DDNS, manage domains on Cloudflare, or check DNS propagation. Supports A, AAAA, CNAME, TXT, MX, and other record types.
+metadata:
+  author: pushp1997
+  category: Development & Coding
+  tags:
+  - development-coding
+  - cloudflare
+  - dns
+  source: clawhub-community
+  clawhub_slug: cloudflare-dns
+  clawhub_path: pushp1997/cloudflare-dns
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cloudflare Dns
+
+    # Source: ClawHub community skill by pushp1997
+
+    # Install: clawhub install cloudflare-dns
+
+    # Path: pushp1997/cloudflare-dns
+
+
+    ## Description
+
+    Manage Cloudflare DNS records via API. Use when user asks to list, create, update, or delete DNS records, set up DDNS,
+    manage domains on Cloudflare, or check DNS propagation. Supports A, AAAA, CNAME, TXT, MX, and other record types.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cf-dns.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cloudflare-dns
+
+    ```'
+examples:
+- description: Install Cloudflare Dns from ClawHub
+  usage: clawhub install cloudflare-dns
+schema_version: '1.0'

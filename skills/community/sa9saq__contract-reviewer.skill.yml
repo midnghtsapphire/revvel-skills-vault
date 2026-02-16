@@ -1,0 +1,56 @@
+name: contract-reviewer
+title: Contract Reviewer
+version: 1.1.0
+description: Detect risk clauses, summarize terms, and rate legal documents for contract review.
+metadata:
+  author: sa9saq
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - contract
+  - reviewer
+  source: clawhub-community
+  clawhub_slug: contract-reviewer
+  clawhub_path: sa9saq/contract-reviewer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Contract Reviewer
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install contract-reviewer
+
+    # Path: sa9saq/contract-reviewer
+
+
+    ## Description
+
+    Detect risk clauses, summarize terms, and rate legal documents for contract review.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install contract-reviewer
+
+    ```'
+examples:
+- description: Install Contract Reviewer from ClawHub
+  usage: clawhub install contract-reviewer
+schema_version: '1.0'

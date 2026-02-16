@@ -1,0 +1,58 @@
+name: conversation-summary
+title: Conversation Summary
+version: 1.0.1
+description: '"历史会话摘要（可选），用于增量更新摘要，默认为空"'
+metadata:
+  author: lyue82665-droid
+  category: General
+  tags:
+  - general
+  - conversation
+  - summary
+  source: clawhub-community
+  clawhub_slug: conversation-summary
+  clawhub_path: lyue82665-droid/conversation-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Conversation Summary
+
+    # Source: ClawHub community skill by lyue82665-droid
+
+    # Install: clawhub install conversation-summary
+
+    # Path: lyue82665-droid/conversation-summary
+
+
+    ## Description
+
+    "历史会话摘要（可选），用于增量更新摘要，默认为空"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/conversation_summary.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install conversation-summary
+
+    ```'
+examples:
+- description: Install Conversation Summary from ClawHub
+  usage: clawhub install conversation-summary
+schema_version: '1.0'

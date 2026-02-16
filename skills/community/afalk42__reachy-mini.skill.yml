@@ -1,0 +1,66 @@
+name: reachy-mini
+title: Reachy Mini
+version: 1.1.0
+description: Control a Reachy Mini robot (by Pollen Robotics / Hugging Face) via its REST API and SSH. Use for any request
+  involving the Reachy Mini robot — moving the head, body, or antennas; playing emotions or dances; capturing camera snapshots;
+  adjusting volume; managing apps; checking robot status; or any p
+metadata:
+  author: afalk42
+  category: Development & Coding
+  tags:
+  - development-coding
+  - reachy
+  - mini
+  source: clawhub-community
+  clawhub_slug: reachy-mini
+  clawhub_path: afalk42/reachy-mini
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reachy Mini
+
+    # Source: ClawHub community skill by afalk42
+
+    # Install: clawhub install reachy-mini
+
+    # Path: afalk42/reachy-mini
+
+
+    ## Description
+
+    Control a Reachy Mini robot (by Pollen Robotics / Hugging Face) via its REST API and SSH. Use for any request involving
+    the Reachy Mini robot — moving the head, body, or antennas; playing emotions or dances; capturing camera snapshots; adjusting
+    volume; managing apps; checking robot status; or any p
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - scripts/reachy-gst-snap.py
+
+    - scripts/reachy-react.sh
+
+    - scripts/reachy.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reachy-mini
+
+    ```'
+examples:
+- description: Install Reachy Mini from ClawHub
+  usage: clawhub install reachy-mini
+schema_version: '1.0'

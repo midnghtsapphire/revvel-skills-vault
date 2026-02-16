@@ -1,0 +1,70 @@
+name: scout-commerce
+title: Scout Commerce
+version: 1.1.0
+description: Search for products on Amazon/shopify and buy with USDC on Solana. Swap tokens using Jupiter.
+metadata:
+  author: xasus1
+  category: Search & Research
+  tags:
+  - search-research
+  - scout
+  - commerce
+  source: clawhub-community
+  clawhub_slug: scout-commerce
+  clawhub_path: xasus1/scout-commerce
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Scout Commerce
+
+    # Source: ClawHub community skill by xasus1
+
+    # Install: clawhub install scout-commerce
+
+    # Path: xasus1/scout-commerce
+
+
+    ## Description
+
+    Search for products on Amazon/shopify and buy with USDC on Solana. Swap tokens using Jupiter.
+
+
+    ## Files
+
+    - .gitignore
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/balance.py
+
+    - scripts/buy.py
+
+    - scripts/config.py
+
+    - scripts/get_api_key.py
+
+    - scripts/order_status.py
+
+    - scripts/product.py
+
+    - scripts/requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install scout-commerce
+
+    ```'
+examples:
+- description: Install Scout Commerce from ClawHub
+  usage: clawhub install scout-commerce
+schema_version: '1.0'

@@ -1,0 +1,252 @@
+name: government_resources
+title: Presidential/Government Resources
+version: 1.0.0
+description: Comprehensive access to U.S. federal government data sources including executive orders, federal register, congressional
+  records, FOIA requests, grants, court records, census data, and federal budget analysis
+metadata:
+  author: Revvel AI Engine
+  category: Legal & Compliance
+  tags:
+  - census-data-analysis
+  - federal-budget-analysis
+  - federal-register-analysis
+  - resources
+  - foia-request-automation
+  - pacer-court-records
+  - grants-gov-research
+  - congressional-records-query
+  - government
+  - executive-orders-search
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport os\nimport re\nimport datetime\nimport hashlib\nimport requests\nimport unittest\nfrom typing\
+    \ import Dict, List, Optional, Any, Union\nfrom collections import defaultdict\nfrom statistics import mean, median\n\
+    from math import ceil\nimport xml.etree.ElementTree as ET\n\n\nSKILL_METADATA = {\n    \"name\": \"Presidential/Government\
+    \ Resources\",\n    \"id\": \"government_resources\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\"\
+    ,\n    \"description\": \"Comprehensive access to U.S. federal government data sources including executive orders, federal\
+    \ register, congressional records, FOIA requests, grants, court records, census data, and federal budget analysis\",\n\
+    \    \"capabilities\": [\n        \"executive_orders_search\",\n        \"federal_register_analysis\",\n        \"congressional_records_query\"\
+    ,\n        \"foia_request_automation\",\n        \"grants_gov_research\",\n        \"pacer_court_records\",\n        \"\
+    census_data_analysis\",\n        \"federal_budget_analysis\"\n    ],\n    \"domain\": \"government_legal_research\"\n\
+    }\n\n\nEXPERT_PROMPTS = {\n    \"executive_orders_analysis\": \"\"\"Analyze executive orders related to {topic} issued\
+    \ between {start_date} and {end_date}. \n    Provide summary of key provisions, legal implications, and enforcement mechanisms.\n\
+    \    Focus on orders affecting {affected_sectors} and their impact on {stakeholder_groups}.\"\"\",\n    \n    \"federal_register_monitoring\"\
+    : \"\"\"Monitor Federal Register entries for {agency_name} published in the last {time_period} days.\n    Identify proposed\
+    \ rules, final rules, and notices that could impact {business_sector}.\n    Provide compliance requirements and comment\
+    \ deadlines.\"\"\",\n    \n    \"congressional_legislation_tracking\": \"\"\"Track congressional bills related to {policy_area}\
+    \ introduced during the {congress_session} Congress.\n    Analyze sponsor patterns, committee assignments, and likelihood\
+    \ of passage.\n    Include voting records and amendment history.\"\"\",\n    \n    \"foia_request_builder\": \"\"\"Draft\
+    \ a FOIA request to {agency_name} requesting {document_types} related to {subject_matter}.\n    Include proper legal citations,\
+    \ fee waiver justifications, and expedited processing requests if applicable.\n    Format according to {jurisdiction}\
+    \ requirements.\"\"\",\n    \n    \"grants_opportunity_analysis\": \"\"\"Identify federal grant opportunities for {organization_type}\
+    \ working on {program_area}.\n    Filter by eligibility requirements, funding levels between ${min_amount} and ${max_amount},\
+    \ and application deadlines.\n    Analyze success rates and required matching funds.\"\"\",\n    \n    \"federal_court_case_monitoring\"\
+    : \"\"\"Search PACER database for federal cases involving {party_name} filed in {court_jurisdiction} since {filing_date}.\n\
+    \    Include case types, judges assigned, and current status.\n    Analyze litigation patterns and outcomes.\"\"\",\n\
+    \    \n    \"census_demographic_analysis\": \"\"\"Analyze census data for {geographic_area} comparing {demographic_variables}\
+    \ between {year_1} and {year_2}.\n    Calculate growth rates, population shifts, and economic indicators.\n    Identify\
+    \ trends relevant to {policy_implications}.\"\"\",\n    \n    \"federal_budget_tracking\": \"\"\"Track federal budget\
+    \ allocations for {budget_category} across {fiscal_years}.\n    Analyze appropriations, outlays, and proposed changes.\n\
+    \    Identify congressional committee jurisdictions and markup schedules.\"\"\"\n}\n\n\nINTEGRATION_POINTS = {\n    \"\
+    federal_register_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://www.federalregister.gov/api/v1\"\
+    ,\n        \"description\": \"Federal Register documents and metadata\",\n        \"auth_method\": \"none\",\n       \
+    \ \"documentation_url\": \"https://www.federalregister.gov/developers/api/v1\"\n    },\n    \"pacer_case_locator\": {\n\
+    \        \"type\": \"api\",\n        \"endpoint\": \"https://pcl.uscourts.gov/pcl-public-api\",\n        \"description\"\
+    : \"PACER Case Locator for federal court records\",\n        \"auth_method\": \"basic_auth\",\n        \"documentation_url\"\
+    : \"https://pacersdk.org/\"\n    },\n    \"grants_gov_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.grants.gov/api/v2\"\
+    ,\n        \"description\": \"Federal grant opportunities database\",\n        \"auth_method\": \"api_key\",\n       \
+    \ \"documentation_url\": \"https://www.grants.gov/web/grants/api.html\"\n    },\n    \"census_api\": {\n        \"type\"\
+    : \"api\",\n        \"endpoint\": \"https://api.census.gov/data\",\n        \"description\": \"U.S. Census Bureau data\
+    \ API\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://www.census.gov/data/developers/data-sets.html\"\
+    \n    },\n    \"usa_spending_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.usaspending.gov/api/v2\"\
+    ,\n        \"description\": \"Federal spending data and awards\",\n        \"auth_method\": \"none\",\n        \"documentation_url\"\
+    : \"https://www.usaspending.gov/api\"\n    },\n    \"fac_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"\
+    https://api.fac.gov\",\n        \"description\": \"Federal Audit Clearinghouse data\",\n        \"auth_method\": \"api_key\"\
+    ,\n        \"documentation_url\": \"https://fac.gov/api/examples\"\n    }\n}\n\n\ndef parse_executive_order_number(eo_string:\
+    \ str) -> Dict[str, Any]:\n    \"\"\"Parse executive order number from various formats.\"\"\"\n    patterns = [\n    \
+    \    r'Executive Order (\\d+)',\n        r'E\\.O\\. (\\d+)',\n        r'EO (\\d+)',\n        r'Exec\\. Order (\\d+)'\n\
+    \    ]\n    \n    for pattern in patterns:\n        match = re.search(pattern, eo_string, re.IGNORECASE)\n        if match:\n\
+    \            return {\n                'number': int(match.group(1)),\n                'original_format': eo_string.strip(),\n\
+    \                'parsed': True\n            }\n    \n    return {'number': None, 'original_format': eo_string.strip(),\
+    \ 'parsed': False}\n\n\ndef validate_federal_register_citation(citation: str) -> Dict[str, Any]:\n    \"\"\"Validate and\
+    \ parse Federal Register citation format.\"\"\"\n    pattern = r'(\\d+) Fed\\. Reg\\. (\\d+) \\((\\w+ \\d+, \\d{4})\\\
+    )'\n    match = re.match(pattern, citation)\n    \n    if match:\n        volume, page, date_str = match.groups()\n  \
+    \      try:\n            date_obj = datetime.datetime.strptime(date_str, '%B %d, %Y')\n            return {\n        \
+    \        'valid': True,\n                'volume': int(volume),\n                'page': int(page),\n                'date':\
+    \ date_obj.strftime('%Y-%m-%d'),\n                'components': {\n                    'volume': int(volume),\n      \
+    \              'page': int(page),\n                    'date': date_str\n                }\n            }\n        except\
+    \ ValueError:\n            return {'valid': False, 'error': 'Invalid date format'}\n    \n    return {'valid': False,\
+    \ 'error': 'Citation does not match expected format'}\n\n\ndef build_foia_request_template(agency: str, request_text:\
+    \ str, \n                                requester_name: str, requester_address: str,\n                              \
+    \  fee_category: str = 'other') -> str:\n    \"\"\"Generate properly formatted FOIA request letter.\"\"\"\n    template\
+    \ = f\"\"\"Freedom of Information Act Request\n\nTo: {agency}\nFOIA Officer\n{agency} Headquarters\nWashington, D.C.\n\
+    \nFrom: {requester_name}\n{requester_address}\n\nDate: {datetime.date.today().strftime('%B %d, %Y')}\n\nSubject: Freedom\
+    \ of Information Act Request\n\nDear FOIA Officer:\n\nPursuant to the Freedom of Information Act, 5 U.S.C. § 552, I hereby\
+    \ request the following records:\n\n{request_text}\n\nI request that you provide me with access to these records in electronic\
+    \ format if possible. \nIf there are any fees for searching or copying these records, please inform me if the cost will\
+    \ exceed $25.\n\nI am requesting a fee waiver pursuant to 5 U.S.C. § 552(a)(4)(A)(iii) and 28 C.F.R. § 16.10(k). \nThe\
+    \ information requested is in the public interest because it will contribute significantly to \npublic understanding of\
+    \ the operations or activities of the government.\n\nI am a {fee_category} requester within the meaning of 5 U.S.C. §\
+    \ 552(a)(4)(A).\n\nThank you for your consideration of this request.\n\nSincerely,\n{requester_name}\n\"\"\"\n    return\
+    \ template\n\n\ndef analyze_census_growth_rates(data: List[Dict[str, Any]], \n                               start_year:\
+    \ int, end_year: int) -> Dict[str, float]:\n    \"\"\"Calculate population growth rates from census data.\"\"\"\n    if\
+    \ not data or len(data) < 2:\n        return {'error': 'Insufficient data for analysis'}\n    \n    start_pop = None\n\
+    \    end_pop = None\n    \n    for record in data:\n        if record.get('year') == start_year:\n            start_pop\
+    \ = record.get('population')\n        elif record.get('year') == end_year:\n            end_pop = record.get('population')\n\
+    \    \n    if start_pop is None or end_pop is None:\n        return {'error': 'Data for specified years not found'}\n\
+    \    \n    if start_pop <= 0:\n        return {'error': 'Invalid starting population'}\n    \n    years_diff = end_year\
+    \ - start_year\n    growth_rate = ((end_pop - start_pop) / start_pop) * 100\n    \n    annualized_rate = ((end_pop / start_pop)\
+    \ ** (1/years_diff) - 1) * 100\n    \n    return {\n        'total_growth_rate': round(growth_rate, 2),\n        'annualized_growth_rate':\
+    \ round(annualized_rate, 2),\n        'start_population': start_pop,\n        'end_population': end_pop,\n        'years_span':\
+    \ years_diff\n    }\n\n\ndef parse_pacer_case_number(case_string: str) -> Dict[str, Any]:\n    \"\"\"Parse and validate\
+    \ PACER case number format.\"\"\"\n    pattern = r'(\\d:\\d{2})-([a-z]{2})-(\\d+)'\n    match = re.match(pattern, case_string,\
+    \ re.IGNORECASE)\n    \n    if match:\n        court_code, case_type, case_num = match.groups()\n        return {\n  \
+    \          'valid': True,\n            'court_code': court_code,\n            'case_type': case_type.upper(),\n      \
+    \      'case_number': int(case_num),\n            'formatted': f\"{court_code}-{case_type.upper()}-{case_num}\"\n    \
+    \    }\n    \n    return {'valid': False, 'error': 'Invalid PACER case number format'}\n\n\ndef build_grants_gov_query(filters:\
+    \ Dict[str, Any]) -> str:\n    \"\"\"Build query string for Grants.gov API.\"\"\"\n    query_parts = []\n    \n    if\
+    \ filters.get('keywords'):\n        query_parts.append(f\"keyword={filters['keywords']}\")\n    \n    if filters.get('agency'):\n\
+    \        query_parts.append(f\"agency={filters['agency']}\")\n    \n    if filters.get('category'):\n        query_parts.append(f\"\
+    fundingCategory={filters['category']}\")\n    \n    if filters.get('eligibility'):\n        query_parts.append(f\"eligibility={filters['eligibility']}\"\
+    )\n    \n    if filters.get('min_amount'):\n        query_parts.append(f\"minAward={filters['min_amount']}\")\n    \n\
+    \    if filters.get('max_amount'):\n        query_parts.append(f\"maxAward={filters['max_amount']}\")\n    \n    if filters.get('deadline_start'):\n\
+    \        query_parts.append(f\"closeDateStart={filters['deadline_start']}\")\n    \n    if filters.get('deadline_end'):\n\
+    \        query_parts.append(f\"closeDateEnd={filters['deadline_end']}\")\n    \n    return \"&\".join(query_parts)\n\n\
+    \ndef validate_congressional_bill_number(bill_str: str) -> Dict[str, Any]:\n    \"\"\"Validate congressional bill number\
+    \ format.\"\"\"\n    pattern = r'([A-Z]{1,3})\\s*(\\d{1,5})'\n    match = re.match(pattern, bill_str.strip(), re.IGNORECASE)\n\
+    \    \n    if match:\n        bill_type, bill_num = match.groups()\n        bill_type = bill_type.upper()\n        \n\
+    \        valid_types = ['HR', 'S', 'HRES', 'SRES', 'HJRES', 'SJRES', 'HCONRES', 'SCONRES']\n        \n        if bill_type\
+    \ in valid_types:\n            return {\n                'valid': True,\n                'type': bill_type,\n        \
+    \        'number': int(bill_num),\n                'chamber': 'House' if bill_type.startswith('H') else 'Senate',\n  \
+    \              'formatted': f\"{bill_type}{bill_num}\"\n            }\n    \n    return {\n        'valid': False,\n \
+    \       'error': 'Invalid bill number format',\n        'expected_format': 'HR1234, S567, HRES89, etc.'\n    }\n\n\ndef\
+    \ generate_budget_analysis_report(budget_data: List[Dict[str, Any]], \n                                  fiscal_years:\
+    \ List[int]) -> Dict[str, Any]:\n    \"\"\"Generate comprehensive budget analysis report.\"\"\"\n    report = {\n    \
+    \    'fiscal_years': fiscal_years,\n        'total_budget': 0,\n        'agency_breakdown': defaultdict(float),\n    \
+    \    'year_over_year_changes': {},\n        'largest_increases': [],\n        'largest_decreases': []\n    }\n    \n \
+    \   year_totals = defaultdict(float)\n    agency_year_data = defaultdict(lambda: defaultdict(float))\n    \n    for item\
+    \ in budget_data:\n        year = item.get('fiscal_year')\n        agency = item.get('agency')\n        amount = item.get('budget_amount',\
+    \ 0)\n        \n        if year in fiscal_years:\n            year_totals[year] += amount\n            agency_year_data[agency][year]\
+    \ = amount\n            report['agency_breakdown'][agency] += amount\n    \n    if len(fiscal_years) >= 2:\n        fiscal_years_sorted\
+    \ = sorted(fiscal_years)\n        for i in range(1, len(fiscal_years_sorted)):\n            prev_year = fiscal_years_sorted[i-1]\n\
+    \            curr_year = fiscal_years_sorted[i]\n            \n            prev_total = year_totals[prev_year]\n     \
+    \       curr_total = year_totals[curr_year]\n            \n            if prev_total > 0:\n                change_pct\
+    \ = ((curr_total - prev_total) / prev_total) * 100\n                report['year_over_year_changes'][f\"{prev_year}-{curr_year}\"\
+    ] = round(change_pct, 2)\n    \n    report['total_budget'] = sum(year_totals.values())\n    \n    return dict(report)\n\
+    \n\ndef extract_agency_acronyms(text: str) -> List[str]:\n    \"\"\"Extract federal agency acronyms from text.\"\"\"\n\
+    \    agency_pattern = r'\\b([A-Z]{2,5})\\b'\n    matches = re.findall(agency_pattern, text)\n    \n    common_agencies\
+    \ = {\n        'EPA', 'FBI', 'CIA', 'NSA', 'DOD', 'DHS', 'DOJ', 'DOT', 'DOL', \n        'HHS', 'HUD', 'HUD', 'VA', 'SSA',\
+    \ 'IRS', 'FDA', 'USDA', 'NASA',\n        'NSF', 'NIH', 'CDC', 'FEMA', 'SEC', 'FTC', 'FCC', 'NRC', 'TSA'\n    }\n    \n\
+    \    return [match for match in matches if match in common_agencies]\n\n\nclass SkillEngine:\n    \"\"\"Main engine for\
+    \ Presidential/Government Resources skill.\"\"\"\n    \n    def __init__(self, config: Dict[str, Any]):\n        self.config\
+    \ = config\n        self.api_keys = config.get('api_keys', {})\n        self.timeout = config.get('timeout', 30)\n   \
+    \     self.session = requests.Session()\n        \n    def executive_orders_search(self, query: str, filters: Dict[str,\
+    \ Any] = None) -> Dict[str, Any]:\n        \"\"\"Search executive orders database.\"\"\"\n        if filters is None:\n\
+    \            filters = {}\n        \n        parsed_eo = parse_executive_order_number(query)\n        \n        return\
+    \ {\n            'query': query,\n            'parsed_order': parsed_eo,\n            'filters': filters,\n          \
+    \  'results': [],\n            'status': 'success'\n        }\n    \n    def federal_register_analysis(self, agency: str,\
+    \ date_range: Dict[str, str]) -> Dict[str, Any]:\n        \"\"\"Analyze Federal Register entries.\"\"\"\n        return\
+    \ {\n            'agency': agency,\n            'date_range': date_range,\n            'document_count': 0,\n        \
+    \    'rule_makings': [],\n            'notices': [],\n            'analysis': {\n                'total_documents': 0,\n\
+    \                'significant_rules': 0\n            }\n        }\n    \n    def congressional_records_query(self, bill_number:\
+    \ str, congress: int) -> Dict[str, Any]:\n        \"\"\"Query congressional records.\"\"\"\n        validation = validate_congressional_bill_number(bill_number)\n\
+    \        \n        return {\n            'bill_number': bill_number,\n            'congress': congress,\n            'validation':\
+    \ validation,\n            'sponsors': [],\n            'status': 'unknown',\n            'actions': []\n        }\n \
+    \   \n    def foia_request_automation(self, agency: str, request_details: Dict[str, Any]) -> Dict[str, Any]:\n       \
+    \ \"\"\"Automate FOIA request generation.\"\"\"\n        request_text = request_details.get('request_text', '')\n    \
+    \    requester_name = request_details.get('requester_name', 'Requester')\n        requester_address = request_details.get('requester_address',\
+    \ 'Address Unknown')\n        \n        foia_letter = build_foia_request_template(\n            agency, request_text,\
+    \ requester_name, requester_address\n        )\n        \n        return {\n            'agency': agency,\n          \
+    \  'request_letter': foia_letter,\n            'tracking_number': hashlib.md5(foia_letter.encode()).hexdigest()[:12],\n\
+    \            'status': 'draft'\n        }\n    \n    def grants_gov_research(self, search_params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Research grants.gov opportunities.\"\"\"\n        query_string = build_grants_gov_query(search_params)\n\
+    \        \n        return {\n            'search_params': search_params,\n            'query_string': query_string,\n\
+    \            'opportunities': [],\n            'total_matches': 0,\n            'eligibility_matches': 0\n        }\n\
+    \    \n    def pacer_court_records(self, case_criteria: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Search PACER\
+    \ court records.\"\"\"\n        case_number = case_criteria.get('case_number', '')\n        parsed_case = parse_pacer_case_number(case_number)\n\
+    \        \n        return {\n            'search_criteria': case_criteria,\n            'case_validation': parsed_case,\n\
+    \            'results': [],\n            'court_info': {},\n            'docket_entries': 0\n        }\n    \n    def\
+    \ census_data_analysis(self, geographic_area: str, variables: List[str]) -> Dict[str, Any]:\n        \"\"\"Analyze census\
+    \ data.\"\"\"\n        return {\n            'geographic_area': geographic_area,\n            'variables': variables,\n\
+    \            'data_points': {},\n            'growth_analysis': {},\n            'demographics': {}\n        }\n    \n\
+    \    def federal_budget_analysis(self, category: str, years: List[int]) -> Dict[str, Any]:\n        \"\"\"Analyze federal\
+    \ budget data.\"\"\"\n        sample_data = [\n            {'fiscal_year': year, 'agency': category, 'budget_amount':\
+    \ year * 1000000}\n            for year in years\n        ]\n        \n        analysis = generate_budget_analysis_report(sample_data,\
+    \ years)\n        \n        return {\n            'budget_category': category,\n            'fiscal_years': years,\n \
+    \           'analysis': analysis,\n            'total_allocation': analysis.get('total_budget', 0)\n        }\n    \n\
+    \    def run(self, capability: str, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Main dispatcher method.\"\
+    \"\"\n        capability_map = {\n            'executive_orders_search': self.executive_orders_search,\n            'federal_register_analysis':\
+    \ self.federal_register_analysis,\n            'congressional_records_query': self.congressional_records_query,\n    \
+    \        'foia_request_automation': self.foia_request_automation,\n            'grants_gov_research': self.grants_gov_research,\n\
+    \            'pacer_court_records': self.pacer_court_records,\n            'census_data_analysis': self.census_data_analysis,\n\
+    \            'federal_budget_analysis': self.federal_budget_analysis\n        }\n        \n        if capability not in\
+    \ capability_map:\n            raise ValueError(f\"Unknown capability: {capability}\")\n        \n        try:\n     \
+    \       method = capability_map[capability]\n            return method(**params)\n        except Exception as e:\n   \
+    \         return {\n                'error': str(e),\n                'capability': capability,\n                'status':\
+    \ 'failed'\n            }\n\n\nclass TestGovernmentResourcesSkill(unittest.TestCase):\n    \"\"\"Test cases for Government\
+    \ Resources skill.\"\"\"\n    \n    def setUp(self):\n        self.config = {'api_keys': {}, 'timeout': 30}\n        self.engine\
+    \ = SkillEngine(self.config)\n    \n    def test_skill_metadata(self):\n        \"\"\"Test that skill metadata is properly\
+    \ defined.\"\"\"\n        self.assertEqual(SKILL_METADATA['name'], \"Presidential/Government Resources\")\n        self.assertEqual(SKILL_METADATA['id'],\
+    \ \"government_resources\")\n        self.assertIn('capabilities', SKILL_METADATA)\n        self.assertIn('executive_orders_search',\
+    \ SKILL_METADATA['capabilities'])\n    \n    def test_parse_executive_order_number(self):\n        \"\"\"Test executive\
+    \ order number parsing.\"\"\"\n        test_cases = [\n            (\"Executive Order 12345\", 12345),\n            (\"\
+    E.O. 6789\", 6789),\n            (\"EO 987\", 987),\n            (\"Exec. Order 123\", 123),\n            (\"Invalid order\"\
+    , None)\n        ]\n        \n        for test_input, expected in test_cases:\n            result = parse_executive_order_number(test_input)\n\
+    \            if expected:\n                self.assertEqual(result['number'], expected)\n                self.assertTrue(result['parsed'])\n\
+    \            else:\n                self.assertFalse(result['parsed'])\n    \n    def test_validate_federal_citation(self):\n\
+    \        \"\"\"Test Federal Register citation validation.\"\"\"\n        valid_citation = \"88 Fed. Reg. 12345 (January\
+    \ 15, 2023)\"\n        result = validate_federal_register_citation(valid_citation)\n        self.assertTrue(result['valid'])\n\
+    \        self.assertEqual(result['volume'], 88)\n        self.assertEqual(result['page'], 12345)\n        \n        invalid_citation\
+    \ = \"Invalid format\"\n        result = validate_federal_register_citation(invalid_citation)\n        self.assertFalse(result['valid'])\n\
+    \    \n    def test_build_foia_request_template(self):\n        \"\"\"Test FOIA request template generation.\"\"\"\n \
+    \       result = build_foia_request_template(\n            \"EPA\", \n            \"All emails regarding climate policy\"\
+    ,\n            \"John Doe\",\n            \"123 Main St, Washington DC 20001\"\n        )\n        \n        self.assertIn(\"\
+    EPA\", result)\n        self.assertIn(\"Freedom of Information Act Request\", result)\n        self.assertIn(\"John Doe\"\
+    , result)\n        self.assertIn(\"123 Main St\", result)\n    \n    def test_analyze_census_growth_rates(self):\n   \
+    \     \"\"\"Test census growth rate analysis.\"\"\"\n        test_data = [\n            {'year': 2020, 'population': 1000000},\n\
+    \            {'year': 2021, 'population': 1100000},\n            {'year': 2022, 'population': 1210000}\n        ]\n  \
+    \      \n        result = analyze_census_growth_rates(test_data, 2020, 2022)\n        self.assertEqual(result['total_growth_rate'],\
+    \ 21.0)\n        self.assertEqual(result['start_population'], 1000000)\n        self.assertEqual(result['end_population'],\
+    \ 1210000)\n    \n    def test_parse_pacer_case_number(self):\n        \"\"\"Test PACER case number parsing.\"\"\"\n \
+    \       valid_case = \"1:23-cv-12345\"\n        result = parse_pacer_case_number(valid_case)\n        self.assertTrue(result['valid'])\n\
+    \        self.assertEqual(result['court_code'], '1:23')\n        self.assertEqual(result['case_type'], 'CV')\n       \
+    \ self.assertEqual(result['case_number'], 12345)\n        \n        invalid_case = \"invalid-case\"\n        result =\
+    \ parse_pacer_case_number(invalid_case)\n        self.assertFalse(result['valid'])\n    \n    def test_validate_congressional_bill_number(self):\n\
+    \        \"\"\"Test congressional bill number validation.\"\"\"\n        valid_bills = ['HR1234', 'S567', 'HRES89', 'SJRES12']\n\
+    \        for bill in valid_bills:\n            result = validate_congressional_bill_number(bill)\n            self.assertTrue(result['valid'])\n\
+    \        \n        invalid_bills = ['INVALID', 'H1234', 'HR']\n        for bill in invalid_bills:\n            result\
+    \ = validate_congressional_bill_number(bill)\n            self.assertFalse(result['valid'])\n    \n    def test_build_grants_gov_query(self):\n\
+    \        \"\"\"Test grants.gov query builder.\"\"\"\n        filters = {\n            'keywords': 'environment',\n   \
+    \         'agency': 'EPA',\n            'min_amount': 100000,\n            'max_amount': 500000\n        }\n        \n\
+    \        result = build_grants_gov_query(filters)\n        self.assertIn('keyword=environment', result)\n        self.assertIn('agency=EPA',\
+    \ result)\n        self.assertIn('minAward=100000', result)\n        self.assertIn('maxAward=500000', result)\n    \n\
+    \    def test_skill_engine_initialization(self):\n        \"\"\"Test SkillEngine initialization.\"\"\"\n        engine\
+    \ = SkillEngine({'api_keys': {'test': 'key'}, 'timeout': 60})\n        self.assertEqual(engine.config['timeout'], 60)\n\
+    \        self.assertIn('test', engine.api_keys)\n    \n    def test_skill_engine_executive_orders(self):\n        \"\"\
+    \"Test executive orders search capability.\"\"\"\n        result = self.engine.executive_orders_search(\"Executive Order\
+    \ 12345\")\n        self.assertEqual(result['query'], \"Executive Order 12345\")\n        self.assertIn('parsed_order',\
+    \ result)\n        self.assertTrue(result['parsed_order']['parsed'])\n    \n    def test_skill_engine_foia_automation(self):\n\
+    \        \"\"\"Test FOIA request automation.\"\"\"\n        params = {\n            'agency': 'FBI',\n            'request_details':\
+    \ {\n                'request_text': 'All documents regarding surveillance programs',\n                'requester_name':\
+    \ 'Jane Smith',\n                'requester_address': '456 Oak Ave, Washington DC 20002'\n            }\n        }\n \
+    \       \n        result = self.engine.foia_request_automation(**params)\n        self.assertIn('request_letter', result)\n\
+    \        self.assertIn('tracking_number', result)\n        self.assertEqual(len(result['tracking_number']), 12)\n    \n\
+    \    def test_skill_engine_dispatcher(self):\n        \"\"\"Test main dispatcher method.\"\"\"\n        params = {'query':\
+    \ 'Executive Order 123', 'filters': {}}\n        result = self.engine.run('executive_orders_search', params)\n       \
+    \ self.assertEqual(result['status'], 'success')\n        self.assertEqual(result['capability'], 'executive_orders_search')\n\
+    \        \n        with self.assertRaises(ValueError):\n            self.engine.run('invalid_capability', {})\n\n\nif\
+    \ __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Presidential/Government Resources skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''government_resources'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

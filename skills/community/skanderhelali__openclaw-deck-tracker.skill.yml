@@ -1,0 +1,56 @@
+name: deck-tracker
+title: NextCloud Deck Tracker
+version: 0.1.1
+description: Track OpenClaw tasks on NextCloud Deck board. Auto-add tasks to Queue, move through states.
+metadata:
+  author: skanderhelali
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - deck
+  - tracker
+  source: clawhub-community
+  clawhub_slug: openclaw-deck-tracker
+  clawhub_path: skanderhelali/openclaw-deck-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NextCloud Deck Tracker
+
+    # Source: ClawHub community skill by skanderhelali
+
+    # Install: clawhub install openclaw-deck-tracker
+
+    # Path: skanderhelali/openclaw-deck-tracker
+
+
+    ## Description
+
+    Track OpenClaw tasks on NextCloud Deck board. Auto-add tasks to Queue, move through states.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-deck-tracker
+
+    ```'
+examples:
+- description: Install NextCloud Deck Tracker from ClawHub
+  usage: clawhub install openclaw-deck-tracker
+schema_version: '1.0'

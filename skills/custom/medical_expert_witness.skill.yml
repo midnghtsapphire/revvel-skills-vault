@@ -1,0 +1,278 @@
+name: medical_expert_witness
+title: Medical Expert Witness
+version: 1.0.0
+description: Comprehensive medical expert witness analysis and report generation for legal proceedings, covering Daubert/Frye
+  compliance, malpractice evaluation, causation analysis, and expert testimony preparation.
+metadata:
+  author: Revvel AI Engine
+  category: Legal & Compliance
+  tags:
+  - life-care-plan-creation
+  - causation-analysis
+  - standard-of-care-analysis
+  - damages-assessment
+  - expert
+  - medical
+  - deposition-preparation
+  - witness
+  - malpractice-case-evaluation
+  - daubert-frye-compliance-check
+  - ime-report-generation
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport math\nimport hashlib\nimport datetime\nimport statistics\nimport unittest\n\
+    from typing import Dict, List, Any, Optional, Tuple\nfrom collections import defaultdict, namedtuple\nimport requests\n\
+    \nSKILL_METADATA = {\n    \"name\": \"Medical Expert Witness\",\n    \"id\": \"medical_expert_witness\",\n    \"version\"\
+    : \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Comprehensive medical expert witness analysis\
+    \ and report generation for legal proceedings, covering Daubert/Frye compliance, malpractice evaluation, causation analysis,\
+    \ and expert testimony preparation.\",\n    \"capabilities\": [\n        \"daubert_frye_compliance_check\",\n        \"\
+    standard_of_care_analysis\",\n        \"malpractice_case_evaluation\",\n        \"causation_analysis\",\n        \"damages_assessment\"\
+    ,\n        \"life_care_plan_creation\",\n        \"ime_report_generation\",\n        \"deposition_preparation\",\n   \
+    \     \"medical_chronology_builder\",\n        \"medical_literature_review\",\n        \"rebuttal_report_writer\",\n \
+    \       \"jury_friendly_explanation\",\n        \"case_merit_screening\",\n        \"statute_limitations_analysis\",\n\
+    \        \"informed_consent_analysis\",\n        \"medical_board_standards\"\n    ],\n    \"domain\": \"legal_medical_expertise\"\
+    \n}\n\nEXPERT_PROMPTS = {\n    \"daubert_analysis\": \"\"\"Analyze the following medical expert testimony for Daubert/Frye\
+    \ standard compliance:\n\nTestimony: {testimony}\nJurisdiction: {jurisdiction}\nScientific Method: {scientific_method}\n\
+    Peer Review Status: {peer_review}\nError Rate: {error_rate}\nGeneral Acceptance: {general_acceptance}\n\nProvide a detailed\
+    \ compliance assessment including:\n1. Reliability factors under Daubert\n2. Frye general acceptance test\n3. Potential\
+    \ challenges\n4. Recommendations for strengthening admissibility\"\"\",\n\n    \"standard_of_care\": \"\"\"Evaluate the\
+    \ standard of care in this medical scenario:\n\nMedical Specialty: {specialty}\nPatient Presentation: {patient_presentation}\n\
+    Provider Actions: {provider_actions}\nGeographic Location: {location}\nTime Period: {time_period}\n\nDetermine:\n1. Applicable\
+    \ standard of care\n2. Whether actions met/fell below standard\n3. Supporting medical literature\n4. Expert consensus\
+    \ guidelines\"\"\",\n\n    \"causation_analysis\": \"\"\"Perform causation analysis for this medical malpractice case:\n\
+    \nPatient Injury: {injury}\nAlleged Negligence: {negligence}\nTimeline: {timeline}\nPre-existing Conditions: {pre_existing}\n\
+    Alternative Causes: {alternative_causes}\n\nApply both:\n1. But-for causation test\n2. Substantial factor analysis\n3.\
+    \ Proximate cause evaluation\n4. Damages apportionment\"\"\",\n\n    \"damages_calculation\": \"\"\"Calculate damages\
+    \ for this medical injury:\n\nEconomic Damages:\n- Medical expenses: {medical_expenses}\n- Lost wages: {lost_wages}\n\
+    - Future care costs: {future_care}\n- Diminished earning capacity: {diminished_earning}\n\nNon-economic:\n- Pain and suffering\
+    \ multiplier: {multiplier}\n- Jurisdiction caps: {caps}\n- Life expectancy: {life_expectancy}\n\nProvide:\n1. Present\
+    \ value calculations\n2. Per diem arguments\n3. Comparable verdicts\n4. Total damage range\"\"\",\n\n    \"life_care_plan\"\
+    : \"\"\"Create a life care plan for:\n\nPatient Age: {age}\nInjury Type: {injury_type}\nSeverity: {severity}\nLife Expectancy:\
+    \ {life_expectancy}\nCurrent Function: {current_function}\n\nInclude:\n1. Medical needs (present and future)\n2. Therapeutic\
+    \ interventions\n3. Assistive devices\n4. Home modifications\n5. Vocational rehabilitation\n6. Cost projections with inflation\"\
+    \"\",\n\n    \"ime_report\": \"\"\"Generate an Independent Medical Examination report:\n\nPatient: {patient_name}\nDate\
+    \ of Exam: {exam_date}\nReferral Source: {referral_source}\nHistory Provided: {history}\nExamination Findings: {findings}\n\
+    Diagnostic Tests: {tests}\n\nStructure:\n1. Introduction and methodology\n2. History review\n3. Physical examination\n\
+    4. Diagnostic impressions\n5. Causation analysis\n6. Prognosis\n7. Recommendations\"\"\",\n\n    \"deposition_prep\":\
+    \ \"\"\"Prepare deposition questions for medical expert:\n\nExpert Specialty: {specialty}\nCase Issues: {case_issues}\n\
+    Weaknesses: {weaknesses}\nKey Facts: {key_facts}\nDamages: {damages}\n\nProvide:\n1. Qualification challenges\n2. Standard\
+    \ of care questions\n3. Causation challenges\n4. Damages limitations\n5. Bias exposure questions\n6. Prior testimony impeachment\"\
+    \"\",\n\n    \"medical_chronology\": \"\"\"Build medical chronology from records:\n\nPatient: {patient}\nDate Range: {date_range}\n\
+    Records: {medical_records}\n\nCreate:\n1. Timeline of events\n2. Provider encounters\n3. Treatment progression\n4. Symptom\
+    \ evolution\n5. Key medical decisions\n6. Potential negligence markers\"\"\",\n\n    \"literature_review\": \"\"\"Review\
+    \ medical literature for litigation support:\n\nMedical Issue: {medical_issue}\nKey Terms: {search_terms}\nDate Range:\
+    \ {date_range}\nJournals: {journals}\n\nProvide:\n1. Relevant studies summary\n2. Methodology critique\n3. Statistical\
+    \ significance\n4. Clinical applicability\n5. Expert consensus\n6. Citation for court use\"\"\",\n\n    \"jury_explanation\"\
+    : \"\"\"Explain complex medical concept to jury:\n\nMedical Concept: {concept}\nPatient Impact: {impact}\nTechnical Details:\
+    \ {technical_details}\nJury Education Level: {education_level}\n\nCreate:\n1. Simple analogy\n2. Visual description\n\
+    3. Key takeaway points\n4. Impact on daily life\n5. Why it matters for case\n6. Memorable phrasing\"\"\"\n}\n\nINTEGRATION_POINTS\
+    \ = {\n    \"pubmed_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/\"\
+    ,\n        \"description\": \"PubMed medical literature database\",\n        \"auth_method\": \"api_key\",\n        \"\
+    documentation_url\": \"https://www.ncbi.nlm.nih.gov/books/NBK25501/\"\n    },\n    \"westlaw_edge\": {\n        \"type\"\
+    : \"api\",\n        \"endpoint\": \"https://api.westlaw.com/edge\",\n        \"description\": \"Legal research and case\
+    \ law database\",\n        \"auth_method\": \"oauth2\",\n        \"documentation_url\": \"https://developer.thomsonreuters.com/westlaw-edge\"\
+    \n    },\n    \"medical_board_db\": {\n        \"type\": \"database\",\n        \"endpoint\": \"postgresql://medical_boards:5432/standards\"\
+    ,\n        \"description\": \"State medical board standards and disciplinary records\",\n        \"auth_method\": \"service_account\"\
+    ,\n        \"documentation_url\": \"https://medical-boards.docs.revvel.com\"\n    },\n    \"damages_calculator\": {\n\
+    \        \"type\": \"tool\",\n        \"endpoint\": \"internal://damages_calculator/v2\",\n        \"description\": \"\
+    Economic damages calculation engine\",\n        \"auth_method\": \"service_token\",\n        \"documentation_url\": \"\
+    https://tools.revvel.com/damages\"\n    },\n    \"statute_api\": {\n        \"type\": \"api\",\n        \"endpoint\":\
+    \ \"https://statutes.revvel.com/api/v1\",\n        \"description\": \"State-by-state statute of limitations database\"\
+    ,\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://docs.revvel.com/statutes\"\n    }\n\
+    }\n\nMedicalRecord = namedtuple('MedicalRecord', ['date', 'provider', 'type', 'notes', 'significance'])\nDamagesBreakdown\
+    \ = namedtuple('DamagesBreakdown', ['economic', 'non_economic', 'total', 'present_value'])\nCausationFactors = namedtuple('CausationFactors',\
+    \ ['but_for', 'substantial_factor', 'proximate_cause', 'pre_existing'])\n\ndef parse_medical_record(text: str) -> List[MedicalRecord]:\n\
+    \    \"\"\"Parse raw medical record text into structured MedicalRecord objects.\"\"\"\n    records = []\n    entries =\
+    \ re.split(r'\\n\\s*\\n', text.strip())\n    \n    for entry in entries:\n        lines = entry.split('\\n')\n       \
+    \ date_match = re.search(r'(\\d{1,2}/\\d{1,2}/\\d{4})', entry)\n        date = datetime.datetime.strptime(date_match.group(1),\
+    \ '%m/%d/%Y') if date_match else None\n        \n        provider = None\n        record_type = None\n        notes =\
+    \ []\n        \n        for line in lines:\n            if line.startswith('Provider:'):\n                provider = line.split(':',\
+    \ 1)[1].strip()\n            elif line.startswith('Type:'):\n                record_type = line.split(':', 1)[1].strip()\n\
+    \            elif line.startswith('Notes:'):\n                notes.append(line.split(':', 1)[1].strip())\n        \n\
+    \        significance = calculate_record_significance(' '.join(notes))\n        records.append(MedicalRecord(date, provider,\
+    \ record_type, ' '.join(notes), significance))\n    \n    return sorted(records, key=lambda x: x.date or datetime.datetime.min)\n\
+    \ndef calculate_record_significance(notes: str) -> int:\n    \"\"\"Calculate significance score (1-10) for medical record\
+    \ notes.\"\"\"\n    keywords = {\n        'diagnosis': 8, 'surgery': 9, 'emergency': 10, 'complication': 9,\n        'error':\
+    \ 10, 'malpractice': 10, 'negligence': 9, 'standard': 7,\n        'breach': 8, 'injury': 7, 'damages': 6, 'treatment':\
+    \ 5\n    }\n    \n    score = 1\n    notes_lower = notes.lower()\n    for keyword, weight in keywords.items():\n     \
+    \   if keyword in notes_lower:\n            score = max(score, weight)\n    \n    return min(score, 10)\n\ndef check_daubert_compliance(methodology:\
+    \ Dict[str, Any]) -> Dict[str, Any]:\n    \"\"\"Check Daubert standard compliance for expert methodology.\"\"\"\n    compliance\
+    \ = {\n        'testable': False,\n        'peer_reviewed': False,\n        'error_rate_known': False,\n        'standards':\
+    \ False,\n        'general_acceptance': False,\n        'overall_score': 0\n    }\n    \n    if methodology.get('testable',\
+    \ False):\n        compliance['testable'] = True\n    if methodology.get('peer_reviewed', False):\n        compliance['peer_reviewed']\
+    \ = True\n    if methodology.get('error_rate') is not None:\n        compliance['error_rate_known'] = True\n    if methodology.get('standards',\
+    \ False):\n        compliance['standards'] = True\n    if methodology.get('general_acceptance', 0) > 0.7:\n        compliance['general_acceptance']\
+    \ = True\n    \n    compliance['overall_score'] = sum(compliance.values()) - compliance['overall_score']\n    compliance['admissible']\
+    \ = compliance['overall_score'] >= 4\n    \n    return compliance\n\ndef calculate_standard_of_care_deviation(\n    specialty:\
+    \ str, \n    actions: List[str], \n    guidelines: List[str]\n) -> Dict[str, Any]:\n    \"\"\"Calculate deviation from\
+    \ standard of care.\"\"\"\n    deviation = {\n        'specialty': specialty,\n        'deviations': [],\n        'severity':\
+    \ 0,\n        'breach_probability': 0.0\n    }\n    \n    guideline_set = set(guidelines)\n    action_set = set(actions)\n\
+    \    \n    missing_actions = guideline_set - action_set\n    extra_actions = action_set - guideline_set\n    \n    for\
+    \ action in missing_actions:\n        deviation['deviations'].append({\n            'type': 'omission',\n            'action':\
+    \ action,\n            'severity': 8\n        })\n    \n    for action in extra_actions:\n        deviation['deviations'].append({\n\
+    \            'type': 'commission',\n            'action': action,\n            'severity': 5\n        })\n    \n    if\
+    \ deviation['deviations']:\n        deviation['severity'] = max(d['severity'] for d in deviation['deviations'])\n    \
+    \    deviation['breach_probability'] = min(0.95, len(deviation['deviations']) * 0.3)\n    \n    return deviation\n\ndef\
+    \ analyze_causation(\n    negligence: str,\n    injury: str,\n    timeline: List[Dict[str, Any]],\n    pre_existing: List[str]\n\
+    ) -> CausationFactors:\n    \"\"\"Analyze causation factors in medical malpractice.\"\"\"\n    but_for = True\n    substantial_factor\
+    \ = True\n    proximate_cause = True\n    \n    # Simple but-for test\n    if not timeline or timeline[0]['event'] !=\
+    \ negligence:\n        but_for = False\n    \n    # Substantial factor analysis\n    if pre_existing and any(cond in injury.lower()\
+    \ for cond in pre_existing):\n        substantial_factor = False\n    \n    # Proximate cause (foreseeability)\n    foreseeable_injuries\
+    \ = ['infection', 'bleeding', 'nerve_damage', 'organ_failure']\n    if not any(inj in injury.lower() for inj in foreseeable_injuries):\n\
+    \        proximate_cause = False\n    \n    return CausationFactors(but_for, substantial_factor, proximate_cause, pre_existing)\n\
+    \ndef calculate_damages(\n    medical_expenses: float,\n    lost_wages: float,\n    future_care: float,\n    multiplier:\
+    \ float,\n    years: int,\n    discount_rate: float = 0.03\n) -> DamagesBreakdown:\n    \"\"\"Calculate economic and non-economic\
+    \ damages.\"\"\"\n    economic = medical_expenses + lost_wages + future_care\n    \n    # Present value calculation\n\
+    \    pv_factor = (1 - (1 + discount_rate) ** -years) / discount_rate\n    economic_pv = economic * pv_factor\n    \n \
+    \   non_economic = economic * multiplier\n    non_economic_pv = non_economic * pv_factor\n    \n    total = economic_pv\
+    \ + non_economic_pv\n    \n    return DamagesBreakdown(economic_pv, non_economic_pv, total, total)\n\ndef build_life_care_plan(\n\
+    \    age: int,\n    injury_type: str,\n    severity: int,\n    life_expectancy: int\n) -> Dict[str, Any]:\n    \"\"\"\
+    Build comprehensive life care plan.\"\"\"\n    plan = {\n        'patient_age': age,\n        'injury_type': injury_type,\n\
+    \        'severity': severity,\n        'life_expectancy': life_expectancy,\n        'annual_costs': {},\n        'total_cost':\
+    \ 0\n    }\n    \n    base_costs = {\n        'medical_care': 50000 * severity,\n        'therapy': 25000 * severity,\n\
+    \        'medications': 15000 * severity,\n        'assistive_devices': 10000 * severity,\n        'home_modifications':\
+    \ 75000 if severity > 7 else 25000\n    }\n    \n    years_remaining = life_expectancy - age\n    for category, annual_cost\
+    \ in base_costs.items():\n        plan['annual_costs'][category] = annual_cost\n        plan['total_cost'] += annual_cost\
+    \ * years_remaining\n    \n    # Add 3% annual inflation\n    plan['total_cost'] *= 1.5\n    \n    return plan\n\ndef\
+    \ generate_ime_report(\n    patient_info: Dict[str, Any],\n    findings: Dict[str, Any]\n) -> str:\n    \"\"\"Generate\
+    \ Independent Medical Examination report.\"\"\"\n    report = f\"\"\"\nINDEPENDENT MEDICAL EXAMINATION REPORT\n\nPatient:\
+    \ {patient_info['name']}\nDate of Birth: {patient_info['dob']}\nDate of Examination: {findings['exam_date']}\nReferral\
+    \ Source: {findings['referral']}\n\nMEDICAL HISTORY:\n{patient_info['history']}\n\nPHYSICAL EXAMINATION:\n{findings['physical_exam']}\n\
+    \nDIAGNOSTIC FINDINGS:\n{findings['diagnostics']}\n\nIMPRESSION:\nBased on the examination and review of medical records,\
+    \ the patient has sustained {findings['diagnosis']} as a result of {findings['causation']}.\n\nPROGNOSIS:\n{findings['prognosis']}\n\
+    \nRECOMMENDATIONS:\n{findings['recommendations']}\n\nRespectfully submitted,\nMedical Expert\n{findings['exam_date']}\n\
+    \"\"\"\n    return report.strip()\n\ndef statute_of_limitations(\n    jurisdiction: str,\n    injury_date: str,\n    discovery_date:\
+    \ Optional[str] = None\n) -> Dict[str, Any]:\n    \"\"\"Calculate statute of limitations for medical malpractice.\"\"\"\
+    \n    statutes = {\n        'CA': 3,\n        'NY': 2.5,\n        'TX': 2,\n        'FL': 2,\n        'IL': 2,\n     \
+    \   'PA': 2,\n        'OH': 1,\n        'MI': 2,\n        'GA': 2,\n        'NC': 3\n    }\n    \n    injury_dt = datetime.datetime.strptime(injury_date,\
+    \ '%Y-%m-%d')\n    discovery_dt = datetime.datetime.strptime(discovery_date, '%Y-%m-%d') if discovery_date else injury_dt\n\
+    \    \n    years = statutes.get(jurisdiction.upper(), 2)\n    deadline = discovery_dt + datetime.timedelta(days=years\
+    \ * 365)\n    \n    remaining = (deadline - datetime.datetime.now()).days\n    \n    return {\n        'jurisdiction':\
+    \ jurisdiction,\n        'limit_years': years,\n        'deadline': deadline.strftime('%Y-%m-%d'),\n        'days_remaining':\
+    \ max(0, remaining),\n        'expired': remaining < 0\n    }\n\ndef create_medical_chronology(records: List[MedicalRecord])\
+    \ -> str:\n    \"\"\"Create chronological medical history from records.\"\"\"\n    chronology = \"MEDICAL CHRONOLOGY\\\
+    n\" + \"=\"*50 + \"\\n\\n\"\n    \n    for record in records:\n        date_str = record.date.strftime('%m/%d/%Y') if\
+    \ record.date else 'Unknown'\n        chronology += f\"{date_str} - {record.provider}\\n\"\n        chronology += f\"\
+    Type: {record.type}\\n\"\n        chronology += f\"Notes: {record.notes}\\n\"\n        chronology += f\"Significance:\
+    \ {record.significance}/10\\n\"\n        chronology += \"-\"*30 + \"\\n\"\n    \n    return chronology\n\nclass SkillEngine:\n\
+    \    \"\"\"Main skill engine for Medical Expert Witness capabilities.\"\"\"\n    \n    def __init__(self, config: Dict[str,\
+    \ Any] = None):\n        self.config = config or {}\n        self.logger = self._setup_logger()\n    \n    def _setup_logger(self):\n\
+    \        \"\"\"Setup basic logging.\"\"\"\n        class Logger:\n            def info(self, msg): print(f\"INFO: {msg}\"\
+    )\n            def error(self, msg): print(f\"ERROR: {msg}\")\n            def warning(self, msg): print(f\"WARNING: {msg}\"\
+    )\n        return Logger()\n    \n    def run(self, capability: str, **kwargs) -> Any:\n        \"\"\"Dispatch to appropriate\
+    \ capability method.\"\"\"\n        method_map = {\n            'daubert_frye_compliance_check': self.check_daubert_compliance,\n\
+    \            'standard_of_care_analysis': self.analyze_standard_of_care,\n            'malpractice_case_evaluation': self.evaluate_malpractice,\n\
+    \            'causation_analysis': self.analyze_causation,\n            'damages_assessment': self.assess_damages,\n \
+    \           'life_care_plan_creation': self.create_life_care_plan,\n            'ime_report_generation': self.generate_ime_report,\n\
+    \            'deposition_preparation': self.prepare_deposition,\n            'medical_chronology_builder': self.build_chronology,\n\
+    \            'medical_literature_review': self.review_literature,\n            'rebuttal_report_writer': self.write_rebuttal,\n\
+    \            'jury_friendly_explanation': self.explain_to_jury,\n            'case_merit_screening': self.screen_case_merit,\n\
+    \            'statute_limitations_analysis': self.analyze_statute,\n            'informed_consent_analysis': self.analyze_consent,\n\
+    \            'medical_board_standards': self.get_board_standards\n        }\n        \n        if capability not in method_map:\n\
+    \            raise ValueError(f\"Unknown capability: {capability}\")\n        \n        return method_map[capability](**kwargs)\n\
+    \    \n    def check_daubert_compliance(self, methodology: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Check Daubert\
+    \ standard compliance.\"\"\"\n        return check_daubert_compliance(methodology)\n    \n    def analyze_standard_of_care(self,\
+    \ specialty: str, actions: List[str], guidelines: List[str]) -> Dict[str, Any]:\n        \"\"\"Analyze standard of care\
+    \ deviation.\"\"\"\n        return calculate_standard_of_care_deviation(specialty, actions, guidelines)\n    \n    def\
+    \ evaluate_malpractice(self, case_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Evaluate medical malpractice\
+    \ case.\"\"\"\n        evaluation = {\n            'standard_of_care': self.analyze_standard_of_care(\n              \
+    \  case_data['specialty'],\n                case_data['actions'],\n                case_data['guidelines']\n         \
+    \   ),\n            'causation': self.analyze_causation(\n                case_data['negligence'],\n                case_data['injury'],\n\
+    \                case_data['timeline'],\n                case_data.get('pre_existing', [])\n            ),\n         \
+    \   'damages': self.assess_damages(**case_data['damages']),\n            'merit_score': 0\n        }\n        \n     \
+    \   # Calculate merit score\n        if evaluation['standard_of_care']['breach_probability'] > 0.7:\n            evaluation['merit_score']\
+    \ += 40\n        if all([evaluation['causation'].but_for, evaluation['causation'].substantial_factor]):\n            evaluation['merit_score']\
+    \ += 40\n        if evaluation['damages'].total > 100000:\n            evaluation['merit_score'] += 20\n            \n\
+    \        return evaluation\n    \n    def analyze_causation(self, negligence: str, injury: str, timeline: List[Dict],\
+    \ pre_existing: List[str]) -> CausationFactors:\n        \"\"\"Analyze causation factors.\"\"\"\n        return analyze_causation(negligence,\
+    \ injury, timeline, pre_existing)\n    \n    def assess_damages(self, **kwargs) -> DamagesBreakdown:\n        \"\"\"Assess\
+    \ damages in case.\"\"\"\n        return calculate_damages(**kwargs)\n    \n    def create_life_care_plan(self, age: int,\
+    \ injury_type: str, severity: int, life_expectancy: int) -> Dict[str, Any]:\n        \"\"\"Create life care plan.\"\"\"\
+    \n        return build_life_care_plan(age, injury_type, severity, life_expectancy)\n    \n    def generate_ime_report(self,\
+    \ patient_info: Dict, findings: Dict) -> str:\n        \"\"\"Generate IME report.\"\"\"\n        return generate_ime_report(patient_info,\
+    \ findings)\n    \n    def prepare_deposition(self, expert_info: Dict) -> List[str]:\n        \"\"\"Prepare deposition\
+    \ questions.\"\"\"\n        questions = [\n            f\"Please state your qualifications in {expert_info['specialty']}\"\
+    ,\n            \"Have you ever been disciplined by any medical board?\",\n            \"What methodology did you use to\
+    \ determine the standard of care?\",\n            \"Are you familiar with the guidelines published by {expert_info['guideline_source']}?\"\
+    ,\n            \"What is your error rate in similar cases?\",\n            \"How much are you being paid for your testimony?\"\
+    ,\n            \"Have you testified for the same attorney before?\"\n        ]\n        return questions\n    \n    def\
+    \ build_chronology(self, medical_records: str) -> str:\n        \"\"\"Build medical chronology.\"\"\"\n        records\
+    \ = parse_medical_record(medical_records)\n        return create_medical_chronology(records)\n    \n    def review_literature(self,\
+    \ query: str, max_results: int = 10) -> List[Dict[str, Any]]:\n        \"\"\"Review medical literature.\"\"\"\n      \
+    \  # Mock implementation - would integrate with PubMed\n        return [\n            {\n                'title': f\"\
+    Study on {query}\",\n                'authors': ['Smith, J', 'Johnson, K'],\n                'journal': 'Medical Journal',\n\
+    \                'year': 2023,\n                'relevance': 0.85,\n                'summary': f\"Key findings related\
+    \ to {query}\"\n            }\n        ]\n    \n    def write_rebuttal(self, original_report: str, criticisms: List[str])\
+    \ -> str:\n        \"\"\"Write rebuttal report.\"\"\"\n        rebuttal = \"REBUTTAL REPORT\\n\" + \"=\"*50 + \"\\n\\\
+    n\"\n        rebuttal += \"This report addresses the following criticisms:\\n\\n\"\n        \n        for criticism in\
+    \ criticisms:\n            rebuttal += f\"CRITICISM: {criticism}\\n\"\n            rebuttal += \"RESPONSE: [Detailed response\
+    \ would be provided]\\n\\n\"\n        \n        return rebuttal\n    \n    def explain_to_jury(self, concept: str, complexity_level:\
+    \ str = \"basic\") -> str:\n        \"\"\"Explain medical concept to jury.\"\"\"\n        explanations = {\n         \
+    \   \"standard_of_care\": \"The standard of care is what a reasonably careful doctor would do in the same situation\"\
+    ,\n            \"causation\": \"We must prove the doctor's mistake actually caused the injury\",\n            \"damages\"\
+    : \"Damages include medical bills, lost wages, and pain and suffering\"\n        }\n        \n        return explanations.get(concept,\
+    \ f\"Simple explanation of {concept}\")\n    \n    def screen_case_merit(self, case_data: Dict) -> Dict[str, Any]:\n \
+    \       \"\"\"Screen case for merit.\"\"\"\n        evaluation = self.evaluate_malpractice(case_data)\n        \n    \
+    \    return {\n            'merit_score': evaluation['merit_score'],\n            'recommendation': 'Pursue' if evaluation['merit_score']\
+    \ >= 70 else 'Decline',\n            'key_issues': [\n                f\"Standard of care breach: {evaluation['standard_of_care']['breach_probability']:.0%}\"\
+    ,\n                f\"Causation strength: {'Strong' if all([evaluation['causation'].but_for, evaluation['causation'].substantial_factor])\
+    \ else 'Weak'}\",\n                f\"Damages: ${evaluation['damages'].total:,.0f}\"\n            ]\n        }\n    \n\
+    \    def analyze_statute(self, jurisdiction: str, injury_date: str, discovery_date: str = None) -> Dict[str, Any]:\n \
+    \       \"\"\"Analyze statute of limitations.\"\"\"\n        return statute_of_limitations(jurisdiction, injury_date,\
+    \ discovery_date)\n    \n    def analyze_consent(self, consent_form: str, procedure: str) -> Dict[str, Any]:\n       \
+    \ \"\"\"Analyze informed consent.\"\"\"\n        required_elements = ['risks', 'benefits', 'alternatives', 'complications']\n\
+    \        present_elements = [elem for elem in required_elements if elem in consent_form.lower()]\n        \n        return\
+    \ {\n            'complete': len(present_elements) == len(required_elements),\n            'missing_elements': [elem for\
+    \ elem in required_elements if elem not in present_elements],\n            'adequacy_score': len(present_elements) / len(required_elements)\n\
+    \        }\n    \n    def get_board_standards(self, state: str, specialty: str) -> Dict[str, Any]:\n        \"\"\"Get\
+    \ medical board standards.\"\"\"\n        return {\n            'state': state,\n            'specialty': specialty,\n\
+    \            'licensing_requirements': ['Medical degree', 'Residency', 'Board certification'],\n            'continuing_education':\
+    \ 40,  # hours per year\n            'disciplinary_actions': 'Check state medical board website'\n        }\n\nclass TestMedicalExpertWitness(unittest.TestCase):\n\
+    \    \"\"\"Test cases for Medical Expert Witness skill.\"\"\"\n    \n    def test_metadata(self):\n        \"\"\"Test\
+    \ skill metadata.\"\"\"\n        self.assertEqual(SKILL_METADATA['name'], \"Medical Expert Witness\")\n        self.assertIn('daubert_frye_compliance_check',\
+    \ SKILL_METADATA['capabilities'])\n    \n    def test_parse_medical_record(self):\n        \"\"\"Test medical record parsing.\"\
+    \"\"\n        text = \"\"\"\nProvider: Dr. Smith\nType: Consultation\nDate: 01/15/2023\nNotes: Patient presents with chest\
+    \ pain, rule out MI\n\"\"\"\n        records = parse_medical_record(text)\n        self.assertEqual(len(records), 1)\n\
+    \        self.assertEqual(records[0].provider, \"Dr. Smith\")\n    \n    def test_daubert_compliance(self):\n        \"\
+    \"\"Test Daubert compliance check.\"\"\"\n        methodology = {\n            'testable': True,\n            'peer_reviewed':\
+    \ True,\n            'error_rate': 0.05,\n            'standards': True,\n            'general_acceptance': 0.8\n    \
+    \    }\n        result = check_daubert_compliance(methodology)\n        self.assertTrue(result['admissible'])\n    \n\
+    \    def test_standard_of_care(self):\n        \"\"\"Test standard of care analysis.\"\"\"\n        result = calculate_standard_of_care_deviation(\n\
+    \            'cardiology',\n            ['ECG', 'troponin', 'cath'],\n            ['ECG', 'troponin', 'cath', 'echo']\n\
+    \        )\n        self.assertEqual(len(result['deviations']), 1)\n    \n    def test_causation_analysis(self):\n   \
+    \     \"\"\"Test causation analysis.\"\"\"\n        factors = analyze_causation(\n            'delayed diagnosis',\n \
+    \           'heart damage',\n            [{'event': 'delayed diagnosis', 'date': '2023-01-01'}],\n            ['hypertension']\n\
+    \        )\n        self.assertIsInstance(factors, CausationFactors)\n    \n    def test_damages_calculation(self):\n\
+    \        \"\"\"Test damages calculation.\"\"\"\n        damages = calculate_damages(\n            medical_expenses=100000,\n\
+    \            lost_wages=50000,\n            future_care=200000,\n            multiplier=2.5,\n            years=20\n \
+    \       )\n        self.assertGreater(damages.total, 0)\n    \n    def test_life_care_plan(self):\n        \"\"\"Test\
+    \ life care plan creation.\"\"\"\n        plan = build_life_care_plan(35, 'spinal cord injury', 8, 75)\n        self.assertIn('annual_costs',\
+    \ plan)\n        self.assertGreater(plan['total_cost'], 0)\n    \n    def test_ime_report(self):\n        \"\"\"Test IME\
+    \ report generation.\"\"\"\n        report = generate_ime_report(\n            {'name': 'John Doe', 'dob': '1980-01-01',\
+    \ 'history': 'Back pain'},\n            {'exam_date': '2023-06-01', 'referral': 'Attorney Smith', 'diagnosis': 'Herniated\
+    \ disc'}\n        )\n        self.assertIn('INDEPENDENT MEDICAL EXAMINATION REPORT', report)\n    \n    def test_statute_limitations(self):\n\
+    \        \"\"\"Test statute of limitations.\"\"\"\n        result = statute_of_limitations('CA', '2023-01-01')\n     \
+    \   self.assertEqual(result['limit_years'], 3)\n        self.assertIn('deadline', result)\n    \n    def test_skill_engine(self):\n\
+    \        \"\"\"Test SkillEngine class.\"\"\"\n        engine = SkillEngine()\n        result = engine.run('daubert_frye_compliance_check',\
+    \ methodology={'testable': True})\n        self.assertIsInstance(result, dict)\n    \n    def test_case_merit_screening(self):\n\
+    \        \"\"\"Test case merit screening.\"\"\"\n        engine = SkillEngine()\n        case_data = {\n            'specialty':\
+    \ 'surgery',\n            'actions': ['surgery'],\n            'guidelines': ['surgery', 'follow_up'],\n            'negligence':\
+    \ 'wrong site surgery',\n            'injury': 'nerve damage',\n            'timeline': [{'event': 'wrong site surgery',\
+    \ 'date': '2023-01-01'}],\n            'damages': {\n                'medical_expenses': 100000,\n                'lost_wages':\
+    \ 50000,\n                'future_care': 200000,\n                'multiplier': 2.5,\n                'years': 20\n  \
+    \          }\n        }\n        result = engine.screen_case_merit(case_data)\n        self.assertIn('merit_score', result)\n\
+    \nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Medical Expert Witness skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''medical_expert_witness'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

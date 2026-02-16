@@ -1,0 +1,75 @@
+name: ado-multi-project-mapper
+title: Ado Multi Project Mapper
+version: 1.0.0
+description: Map SpecWeave specs to multiple Azure DevOps projects with intelligent project detection. Use when configuring
+  multi-project bidirectional sync or coordinating work across ADO projects. Supports project-per-team, area-path-based, and
+  team-based strategies.
+metadata:
+  author: anton-abyzov
+  category: Utilities
+  tags:
+  - utilities
+  - ado
+  - multi
+  - project
+  - mapper
+  - read
+  - write
+  - edit
+  - bash
+  - glob
+  source: clawhub-community
+  clawhub_slug: sw-ado-multi-project-mapper
+  clawhub_path: anton-abyzov/sw-ado-multi-project-mapper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ado Multi Project Mapper
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-ado-multi-project-mapper
+
+    # Path: anton-abyzov/sw-ado-multi-project-mapper
+
+
+    ## Description
+
+    Map SpecWeave specs to multiple Azure DevOps projects with intelligent project detection. Use when configuring multi-project
+    bidirectional sync or coordinating work across ADO projects. Supports project-per-team, area-path-based, and team-based
+    strategies.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Write, Edit, Bash, Glob
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-ado-multi-project-mapper
+
+    ```'
+examples:
+- description: Install Ado Multi Project Mapper from ClawHub
+  usage: clawhub install sw-ado-multi-project-mapper
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: book-tailor
+title: Book Tailor
+version: 1.0.1
+description: Book tailor services through Lokuli MCP. Use when user needs to find and book tailor. Triggers on requests like
+  "book a tailor", "find tailor near me", or any tailor service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - tailor
+  source: clawhub-community
+  clawhub_slug: book-tailor
+  clawhub_path: edwardrodriguez703-design/book-tailor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Tailor
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-tailor
+
+    # Path: edwardrodriguez703-design/book-tailor
+
+
+    ## Description
+
+    Book tailor services through Lokuli MCP. Use when user needs to find and book tailor. Triggers on requests like "book
+    a tailor", "find tailor near me", or any tailor service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-tailor
+
+    ```'
+examples:
+- description: Install Book Tailor from ClawHub
+  usage: clawhub install book-tailor
+schema_version: '1.0'

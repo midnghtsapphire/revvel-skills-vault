@@ -1,0 +1,61 @@
+name: kindroid-interact
+title: Kindroid Interact
+version: 1.0.0
+description: Interact with Kindroid companions via their official API. Send messages, handle chat breaks, and manage multi-bot
+  conversations.
+metadata:
+  author: lumenlemons
+  category: Communication
+  tags:
+  - communication
+  - kindroid
+  - interact
+  source: clawhub-community
+  clawhub_slug: kindroid-interact
+  clawhub_path: lumenlemons/kindroid-interact
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kindroid Interact
+
+    # Source: ClawHub community skill by lumenlemons
+
+    # Install: clawhub install kindroid-interact
+
+    # Path: lumenlemons/kindroid-interact
+
+
+    ## Description
+
+    Interact with Kindroid companions via their official API. Send messages, handle chat breaks, and manage multi-bot conversations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - kindroid.js
+
+    - kindroid.sh
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kindroid-interact
+
+    ```'
+examples:
+- description: Install Kindroid Interact from ClawHub
+  usage: clawhub install kindroid-interact
+schema_version: '1.0'

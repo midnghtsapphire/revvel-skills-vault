@@ -1,0 +1,63 @@
+name: teltel-send-sms-text-message
+title: Send SMS text and bulk messages via TelTel.io API
+version: 1.0.1
+description: Send SMS text messages via TelTel (teltel.io) using the REST API (api.teltel.io). Includes bulk send, delivery
+  report, and bulk sms.
+metadata:
+  author: teltel-call-center
+  category: Communication
+  tags:
+  - communication
+  - teltel
+  - send
+  - sms
+  - text
+  - message
+  source: clawhub-community
+  clawhub_slug: teltel-send-sms-text-message
+  clawhub_path: teltel-call-center/teltel-send-sms-text-message
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Send SMS text and bulk messages via TelTel.io API
+
+    # Source: ClawHub community skill by teltel-call-center
+
+    # Install: clawhub install teltel-send-sms-text-message
+
+    # Path: teltel-call-center/teltel-send-sms-text-message
+
+
+    ## Description
+
+    Send SMS text messages via TelTel (teltel.io) using the REST API (api.teltel.io). Includes bulk send, delivery report,
+    and bulk sms.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/send_sms.js
+
+    - scripts/send_sms_bulk.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install teltel-send-sms-text-message
+
+    ```'
+examples:
+- description: Install Send SMS text and bulk messages via TelTel.io API from ClawHub
+  usage: clawhub install teltel-send-sms-text-message
+schema_version: '1.0'

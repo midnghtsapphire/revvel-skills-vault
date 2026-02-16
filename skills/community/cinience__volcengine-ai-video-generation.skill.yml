@@ -1,0 +1,61 @@
+name: volcengine-ai-video-generation
+title: Volcengine Ai Video Generation
+version: 1.0.0
+description: AI video generation workflow on Volcengine. Use when users need text-to-video, image-to-video, generation parameter
+  tuning, or async task troubleshooting for video jobs.
+metadata:
+  author: cinience
+  category: Media & Content
+  tags:
+  - media-content
+  - volcengine
+  - video
+  - generation
+  source: clawhub-community
+  clawhub_slug: volcengine-ai-video-generation
+  clawhub_path: cinience/volcengine-ai-video-generation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Volcengine Ai Video Generation
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install volcengine-ai-video-generation
+
+    # Path: cinience/volcengine-ai-video-generation
+
+
+    ## Description
+
+    AI video generation workflow on Volcengine. Use when users need text-to-video, image-to-video, generation parameter tuning,
+    or async task troubleshooting for video jobs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install volcengine-ai-video-generation
+
+    ```'
+examples:
+- description: Install Volcengine Ai Video Generation from ClawHub
+  usage: clawhub install volcengine-ai-video-generation
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: notebook
+title: Notebook
+version: 1.0.2
+description: Local-first personal knowledge base for tracking ideas, projects, tasks, habits, and any object type you define.
+  YAML-based with no cloud lock-in.
+metadata:
+  author: thesethrose
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - notebook
+  source: clawhub-community
+  clawhub_slug: notebook
+  clawhub_path: thesethrose/notebook
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notebook
+
+    # Source: ClawHub community skill by thesethrose
+
+    # Install: clawhub install notebook
+
+    # Path: thesethrose/notebook
+
+
+    ## Description
+
+    Local-first personal knowledge base for tracking ideas, projects, tasks, habits, and any object type you define. YAML-based
+    with no cloud lock-in.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.js
+
+    - package-lock.json
+
+    - package.json
+
+    - lib/store.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notebook
+
+    ```'
+examples:
+- description: Install Notebook from ClawHub
+  usage: clawhub install notebook
+schema_version: '1.0'

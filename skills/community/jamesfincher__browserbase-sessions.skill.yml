@@ -1,0 +1,66 @@
+name: browserbase-sessions
+title: browserbase-sessions
+version: 2.4.0
+description: Create and manage persistent Browserbase cloud browser sessions with authentication persistence. Use when you
+  need to automate browsers, maintain logged-in sessions across interactions, scrape authenticated pages, or manage cloud
+  browser instances.
+metadata:
+  author: jamesfincher
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - browserbase
+  - sessions
+  source: clawhub-community
+  clawhub_slug: browserbase-sessions
+  clawhub_path: jamesfincher/browserbase-sessions
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# browserbase-sessions
+
+    # Source: ClawHub community skill by jamesfincher
+
+    # Install: clawhub install browserbase-sessions
+
+    # Path: jamesfincher/browserbase-sessions
+
+
+    ## Description
+
+    Create and manage persistent Browserbase cloud browser sessions with authentication persistence. Use when you need to
+    automate browsers, maintain logged-in sessions across interactions, scrape authenticated pages, or manage cloud browser
+    instances.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-quick-ref.md
+
+    - scripts/browserbase_manager.py
+
+    - scripts/requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install browserbase-sessions
+
+    ```'
+examples:
+- description: Install browserbase-sessions from ClawHub
+  usage: clawhub install browserbase-sessions
+schema_version: '1.0'

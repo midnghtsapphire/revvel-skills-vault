@@ -1,0 +1,73 @@
+name: notion
+title: Notion Enhanced
+version: 0.1.0
+description: Integrate with Notion workspaces to read pages, query databases, create entries, and manage content. Perfect
+  for knowledge bases, project tracking, content calendars, CRMs, and collaborative documentation. Works with any Notion page
+  or database you explicitly share with the integration.
+metadata:
+  author: moikapy
+  category: Development & Coding
+  tags:
+  - development-coding
+  - notion
+  source: clawhub-community
+  clawhub_slug: openclaw-notion-skill
+  clawhub_path: moikapy/openclaw-notion-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notion Enhanced
+
+    # Source: ClawHub community skill by moikapy
+
+    # Install: clawhub install openclaw-notion-skill
+
+    # Path: moikapy/openclaw-notion-skill
+
+
+    ## Description
+
+    Integrate with Notion workspaces to read pages, query databases, create entries, and manage content. Perfect for knowledge
+    bases, project tracking, content calendars, CRMs, and collaborative documentation. Works with any Notion page or database
+    you explicitly share with the integration.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - SUPPORT.md
+
+    - _meta.json
+
+    - install.sh
+
+    - notion-cli.js
+
+    - package.json
+
+    - setup-wizard.sh
+
+    - skill.json
+
+    - tsconfig.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-notion-skill
+
+    ```'
+examples:
+- description: Install Notion Enhanced from ClawHub
+  usage: clawhub install openclaw-notion-skill
+schema_version: '1.0'

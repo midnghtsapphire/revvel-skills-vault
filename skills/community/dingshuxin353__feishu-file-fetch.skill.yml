@@ -1,0 +1,65 @@
+name: feishu_file_fetch
+title: feishu_file_fetch
+version: 1.0.0
+description: Implements a Clawdbot extension tool that downloads Feishu files by message_id and file_key, streams to disk
+  with sha256, size limits, and path traversal protection. Use when the user asks to build or update the feishu_file_fetch
+  tool, Feishu file download workflow, or Clawdbot extension handling me
+metadata:
+  author: dingshuxin353
+  category: Communication
+  tags:
+  - communication
+  - feishu
+  - file
+  - fetch
+  source: clawhub-community
+  clawhub_slug: feishu-file-fetch
+  clawhub_path: dingshuxin353/feishu-file-fetch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# feishu_file_fetch
+
+    # Source: ClawHub community skill by dingshuxin353
+
+    # Install: clawhub install feishu-file-fetch
+
+    # Path: dingshuxin353/feishu-file-fetch
+
+
+    ## Description
+
+    Implements a Clawdbot extension tool that downloads Feishu files by message_id and file_key, streams to disk with sha256,
+    size limits, and path traversal protection. Use when the user asks to build or update the feishu_file_fetch tool, Feishu
+    file download workflow, or Clawdbot extension handling me
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - reference.md
+
+    - scripts/feishu_file_fetch.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-file-fetch
+
+    ```'
+examples:
+- description: Install feishu_file_fetch from ClawHub
+  usage: clawhub install feishu-file-fetch
+schema_version: '1.0'

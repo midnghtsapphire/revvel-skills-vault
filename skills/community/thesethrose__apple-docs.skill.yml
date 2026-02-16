@@ -1,0 +1,58 @@
+name: apple-docs
+title: Apple Docs
+version: 1.0.0
+description: Query Apple Developer Documentation, APIs, and WWDC videos (2014-2025). Search SwiftUI, UIKit, Objective-C, Swift
+  frameworks and watch sessions.
+metadata:
+  author: thesethrose
+  category: Search & Research
+  tags:
+  - search-research
+  - apple
+  - docs
+  source: clawhub-community
+  clawhub_slug: apple-docs
+  clawhub_path: thesethrose/apple-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Docs
+
+    # Source: ClawHub community skill by thesethrose
+
+    # Install: clawhub install apple-docs
+
+    # Path: thesethrose/apple-docs
+
+
+    ## Description
+
+    Query Apple Developer Documentation, APIs, and WWDC videos (2014-2025). Search SwiftUI, UIKit, Objective-C, Swift frameworks
+    and watch sessions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-docs
+
+    ```'
+examples:
+- description: Install Apple Docs from ClawHub
+  usage: clawhub install apple-docs
+schema_version: '1.0'

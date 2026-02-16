@@ -1,0 +1,70 @@
+name: kubectl-skill
+title: kubectl
+version: 1.0.0
+description: Execute and manage Kubernetes clusters via kubectl commands. Query resources, deploy applications, debug containers,
+  manage configurations, and monitor cluster health. Use when working with Kubernetes clusters, containers, deployments, or
+  pod diagnostics.
+metadata:
+  author: ddevaal
+  category: Development & Coding
+  tags:
+  - development-coding
+  - kubectl
+  - skill
+  source: clawhub-community
+  clawhub_slug: kubectl
+  clawhub_path: ddevaal/kubectl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# kubectl
+
+    # Source: ClawHub community skill by ddevaal
+
+    # Install: clawhub install kubectl
+
+    # Path: ddevaal/kubectl
+
+
+    ## Description
+
+    Execute and manage Kubernetes clusters via kubectl commands. Query resources, deploy applications, debug containers, manage
+    configurations, and monitor cluster health. Use when working with Kubernetes clusters, containers, deployments, or pod
+    diagnostics.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/REFERENCE.md
+
+    - scripts/kubectl-cluster-info.sh
+
+    - scripts/kubectl-deploy-update.sh
+
+    - scripts/kubectl-node-drain.sh
+
+    - scripts/kubectl-pod-debug.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kubectl
+
+    ```'
+examples:
+- description: Install kubectl from ClawHub
+  usage: clawhub install kubectl
+schema_version: '1.0'

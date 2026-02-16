@@ -1,0 +1,65 @@
+name: xiaomi-air-purifier
+title: Xiaomi Air Purifier
+version: 1.1.0
+description: Monitor and control Xiaomi Air Purifier 4 Lite via Mi Cloud. Use when asked to check air quality, humidity, purifier
+  status, turn on/off the air purifier, or change fan mode/level. Supports multi-room setups.
+metadata:
+  author: radyakaze
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - xiaomi
+  - air
+  - purifier
+  source: clawhub-community
+  clawhub_slug: xiaomi-air-purifier
+  clawhub_path: radyakaze/xiaomi-air-purifier
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xiaomi Air Purifier
+
+    # Source: ClawHub community skill by radyakaze
+
+    # Install: clawhub install xiaomi-air-purifier
+
+    # Path: radyakaze/xiaomi-air-purifier
+
+
+    ## Description
+
+    Monitor and control Xiaomi Air Purifier 4 Lite via Mi Cloud. Use when asked to check air quality, humidity, purifier status,
+    turn on/off the air purifier, or change fan mode/level. Supports multi-room setups.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/extract-token.js
+
+    - scripts/purifier.js
+
+    - scripts/test-local.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xiaomi-air-purifier
+
+    ```'
+examples:
+- description: Install Xiaomi Air Purifier from ClawHub
+  usage: clawhub install xiaomi-air-purifier
+schema_version: '1.0'

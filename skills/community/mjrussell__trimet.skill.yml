@@ -1,0 +1,55 @@
+name: trimet
+title: Trimet
+version: 0.1.0
+description: Get Portland transit information including arrivals, trip planning, and alerts. Use when user asks about buses,
+  MAX, trains, or transit in Portland.
+metadata:
+  author: mjrussell
+  category: General
+  tags:
+  - general
+  - trimet
+  source: clawhub-community
+  clawhub_slug: trimet
+  clawhub_path: mjrussell/trimet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trimet
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install trimet
+
+    # Path: mjrussell/trimet
+
+
+    ## Description
+
+    Get Portland transit information including arrivals, trip planning, and alerts. Use when user asks about buses, MAX, trains,
+    or transit in Portland.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trimet
+
+    ```'
+examples:
+- description: Install Trimet from ClawHub
+  usage: clawhub install trimet
+schema_version: '1.0'

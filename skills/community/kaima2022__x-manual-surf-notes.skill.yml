@@ -1,0 +1,63 @@
+name: x-manual-surf-notes
+title: X Manual Surf Notes (手动刷帖笔记)
+version: 1.0.0
+description: '手动操控浏览器（Chrome Extension Relay）在 X 首页 For You 冲浪：下滑加载、点进帖子详情、将推文内容翻译/转述成中文并去重，按“时间｜内容｜链接｜评论”追加到笔记文档。触发词：手动刷X、浏览器刷X、X冲浪、写刷帖笔记、For
+  You。 / Manual browser-driven X (Twitter) surfing via Chrome Extension Relay: scroll the For You feed, open tweet details,
+  translate/summarize into Chinese, dedupe, and app'
+metadata:
+  author: kaima2022
+  category: Search & Research
+  tags:
+  - search-research
+  - manual
+  - surf
+  - notes
+  source: clawhub-community
+  clawhub_slug: x-manual-surf-notes
+  clawhub_path: kaima2022/x-manual-surf-notes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Manual Surf Notes (手动刷帖笔记)
+
+    # Source: ClawHub community skill by kaima2022
+
+    # Install: clawhub install x-manual-surf-notes
+
+    # Path: kaima2022/x-manual-surf-notes
+
+
+    ## Description
+
+    手动操控浏览器（Chrome Extension Relay）在 X 首页 For You 冲浪：下滑加载、点进帖子详情、将推文内容翻译/转述成中文并去重，按“时间｜内容｜链接｜评论”追加到笔记文档。触发词：手动刷X、浏览器刷X、X冲浪、写刷帖笔记、For
+    You。 / Manual browser-driven X (Twitter) surfing via Chrome Extension Relay: scroll the For You feed, open tweet details,
+    translate/summarize into Chinese, dedupe, and app
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/browser-scrape-snippets.md
+
+    - references/listing.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-manual-surf-notes
+
+    ```'
+examples:
+- description: Install X Manual Surf Notes (手动刷帖笔记) from ClawHub
+  usage: clawhub install x-manual-surf-notes
+schema_version: '1.0'

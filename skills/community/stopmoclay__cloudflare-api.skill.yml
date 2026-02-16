@@ -1,0 +1,71 @@
+name: cloudflare
+title: Cloudflare API
+version: 1.0.0
+description: Connect to Cloudflare API for DNS management, tunnels, and zone administration. Use when user needs to manage
+  domains, DNS records, or create tunnels.
+metadata:
+  author: stopmoclay
+  category: Development & Coding
+  tags:
+  - development-coding
+  - cloudflare
+  source: clawhub-community
+  clawhub_slug: cloudflare-api
+  clawhub_path: stopmoclay/cloudflare-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cloudflare API
+
+    # Source: ClawHub community skill by stopmoclay
+
+    # Install: clawhub install cloudflare-api
+
+    # Path: stopmoclay/cloudflare-api
+
+
+    ## Description
+
+    Connect to Cloudflare API for DNS management, tunnels, and zone administration. Use when user needs to manage domains,
+    DNS records, or create tunnels.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/config-snippet.json
+
+    - scripts/_lib.sh
+
+    - scripts/setup.sh
+
+    - scripts/dns/create.sh
+
+    - scripts/dns/delete.sh
+
+    - scripts/dns/list.sh
+
+    - scripts/dns/update.sh
+
+    - scripts/tunnels/configure.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cloudflare-api
+
+    ```'
+examples:
+- description: Install Cloudflare API from ClawHub
+  usage: clawhub install cloudflare-api
+schema_version: '1.0'

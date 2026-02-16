@@ -1,0 +1,54 @@
+name: intercom
+title: Intercom
+version: 1.0.0
+description: Manage customer conversations, contacts, and help articles via Intercom API. Send messages and manage support
+  inbox.
+metadata:
+  author: mrgoodb
+  category: Communication
+  tags:
+  - communication
+  - intercom
+  source: clawhub-community
+  clawhub_slug: intercom
+  clawhub_path: mrgoodb/intercom
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Intercom
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install intercom
+
+    # Path: mrgoodb/intercom
+
+
+    ## Description
+
+    Manage customer conversations, contacts, and help articles via Intercom API. Send messages and manage support inbox.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install intercom
+
+    ```'
+examples:
+- description: Install Intercom from ClawHub
+  usage: clawhub install intercom
+schema_version: '1.0'

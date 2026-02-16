@@ -1,0 +1,64 @@
+name: ops-dashboard
+title: Ops Dashboard
+version: 1.0.1
+description: Gather operational signals (disk usage, git status, recent commits, and resources) so you can answer "How is
+  the Clawdy infrastructure doing?" without manually running multiple checks.
+metadata:
+  author: crimsondevil333333
+  category: Development & Coding
+  tags:
+  - development-coding
+  - ops
+  - dashboard
+  source: clawhub-community
+  clawhub_slug: ops-dashboard
+  clawhub_path: crimsondevil333333/ops-dashboard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ops Dashboard
+
+    # Source: ClawHub community skill by crimsondevil333333
+
+    # Install: clawhub install ops-dashboard
+
+    # Path: crimsondevil333333/ops-dashboard
+
+
+    ## Description
+
+    Gather operational signals (disk usage, git status, recent commits, and resources) so you can answer "How is the Clawdy
+    infrastructure doing?" without manually running multiple checks.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/ops-dashboard.md
+
+    - scripts/ops_dashboard.py
+
+    - tests/test_ops_dashboard.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ops-dashboard
+
+    ```'
+examples:
+- description: Install Ops Dashboard from ClawHub
+  usage: clawhub install ops-dashboard
+schema_version: '1.0'

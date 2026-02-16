@@ -1,0 +1,76 @@
+name: acestep
+title: acestep
+version: 1.0.0
+description: Use ACE-Step API to generate music, edit songs, and remix music. Supports text-to-music, lyrics generation, audio
+  continuation, and audio repainting. Use this skill when users mention generating music, creating songs, music production,
+  remix, or audio continuation.
+metadata:
+  author: dumoedss
+  category: Media & Content
+  tags:
+  - media-content
+  - acestep
+  - read
+  - write
+  - bash
+  - skill
+  source: clawhub-community
+  clawhub_slug: acestep
+  clawhub_path: dumoedss/acestep
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Write
+  - Bash
+  - Skill
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# acestep
+
+    # Source: ClawHub community skill by dumoedss
+
+    # Install: clawhub install acestep
+
+    # Path: dumoedss/acestep
+
+
+    ## Description
+
+    Use ACE-Step API to generate music, edit songs, and remix music. Supports text-to-music, lyrics generation, audio continuation,
+    and audio repainting. Use this skill when users mention generating music, creating songs, music production, remix, or
+    audio continuation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - music-creation-guide.md
+
+    - scripts/acestep.sh
+
+    - scripts/config.json
+
+
+    ## Allowed Tools
+
+    Read, Write, Bash, Skill
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install acestep
+
+    ```'
+examples:
+- description: Install acestep from ClawHub
+  usage: clawhub install acestep
+schema_version: '1.0'

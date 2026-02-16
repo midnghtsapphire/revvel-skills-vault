@@ -1,0 +1,62 @@
+name: glasses-to-social
+title: Glasses to Social
+version: 1.0.0
+description: Turn smart glasses photos into social media posts. Monitors a Google Drive folder for new images from Meta Ray-Ban
+  glasses (or any smart glasses), analyzes them with vision AI, drafts tweets/posts in the user's voice, and publishes on
+  approval. Use when setting up a glasses-to-social pipeline, proce
+metadata:
+  author: junebugg1214
+  category: Search & Research
+  tags:
+  - search-research
+  - glasses
+  - social
+  source: clawhub-community
+  clawhub_slug: glasses-to-social
+  clawhub_path: junebugg1214/glasses-to-social
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Glasses to Social
+
+    # Source: ClawHub community skill by junebugg1214
+
+    # Install: clawhub install glasses-to-social
+
+    # Path: junebugg1214/glasses-to-social
+
+
+    ## Description
+
+    Turn smart glasses photos into social media posts. Monitors a Google Drive folder for new images from Meta Ray-Ban glasses
+    (or any smart glasses), analyzes them with vision AI, drafts tweets/posts in the user''s voice, and publishes on approval.
+    Use when setting up a glasses-to-social pipeline, proce
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check-new-photos.sh
+
+    - scripts/mark-processed.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install glasses-to-social
+
+    ```'
+examples:
+- description: Install Glasses to Social from ClawHub
+  usage: clawhub install glasses-to-social
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: school-finder
+title: School Finder
+version: 2.0.0
+description: '"Locate elementary schools, high schools, and universities near any address using Camino AI''s location intelligence
+  with AI-powered ranking."'
+metadata:
+  author: barneyjm
+  category: General
+  tags:
+  - general
+  - school
+  - finder
+  source: clawhub-community
+  clawhub_slug: school-finder
+  clawhub_path: barneyjm/school-finder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# School Finder
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install school-finder
+
+    # Path: barneyjm/school-finder
+
+
+    ## Description
+
+    "Locate elementary schools, high schools, and universities near any address using Camino AI''s location intelligence with
+    AI-powered ranking."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/school-finder.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install school-finder
+
+    ```'
+examples:
+- description: Install School Finder from ClawHub
+  usage: clawhub install school-finder
+schema_version: '1.0'

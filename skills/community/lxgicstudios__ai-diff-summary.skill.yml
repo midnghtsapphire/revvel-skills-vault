@@ -1,0 +1,54 @@
+name: diff-summary
+title: Git Diff Summarizer
+version: 1.0.1
+description: Summarize git diffs in plain English
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - diff
+  - summary
+  source: clawhub-community
+  clawhub_slug: ai-diff-summary
+  clawhub_path: lxgicstudios/ai-diff-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git Diff Summarizer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-diff-summary
+
+    # Path: lxgicstudios/ai-diff-summary
+
+
+    ## Description
+
+    Summarize git diffs in plain English
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-diff-summary
+
+    ```'
+examples:
+- description: Install Git Diff Summarizer from ClawHub
+  usage: clawhub install ai-diff-summary
+schema_version: '1.0'

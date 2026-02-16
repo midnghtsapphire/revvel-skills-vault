@@ -1,0 +1,55 @@
+name: wayfound
+title: Wayfound
+version: 1.0.3
+description: '>'
+metadata:
+  author: cburnette
+  category: General
+  tags:
+  - general
+  - wayfound
+  source: clawhub-community
+  clawhub_slug: wayfound
+  clawhub_path: cburnette/wayfound
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wayfound
+
+    # Source: ClawHub community skill by cburnette
+
+    # Install: clawhub install wayfound
+
+    # Path: cburnette/wayfound
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/rubric-examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wayfound
+
+    ```'
+examples:
+- description: Install Wayfound from ClawHub
+  usage: clawhub install wayfound
+schema_version: '1.0'

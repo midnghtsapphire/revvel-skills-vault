@@ -1,0 +1,61 @@
+name: crypto-whale-monitor
+title: Crypto Whale Monitor
+version: 1.0.1
+description: Monitors large cryptocurrency wallet transactions (whales) on-chain using Web3 and Etherscan to detect potential
+  market-moving activity. Use when the user requests a notification or alert based on large on-chain transactions.
+metadata:
+  author: waleolapo
+  category: Communication
+  tags:
+  - communication
+  - crypto
+  - whale
+  - monitor
+  source: clawhub-community
+  clawhub_slug: crypto-whale-monitor
+  clawhub_path: waleolapo/crypto-whale-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crypto Whale Monitor
+
+    # Source: ClawHub community skill by waleolapo
+
+    # Install: clawhub install crypto-whale-monitor
+
+    # Path: waleolapo/crypto-whale-monitor
+
+
+    ## Description
+
+    Monitors large cryptocurrency wallet transactions (whales) on-chain using Web3 and Etherscan to detect potential market-moving
+    activity. Use when the user requests a notification or alert based on large on-chain transactions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/wallets.md
+
+    - scripts/monitor.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crypto-whale-monitor
+
+    ```'
+examples:
+- description: Install Crypto Whale Monitor from ClawHub
+  usage: clawhub install crypto-whale-monitor
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: adsb-overhead
+title: ADS-B Overhead
+version: 1.0.0
+description: Notify when aircraft are overhead within a configurable radius using a local ADS-B SBS/BaseStation feed (readsb
+  port 30003). Use when setting up or troubleshooting plane-overhead alerts, configuring radius/home coordinates/cooldowns,
+  or creating a Clawdbot cron watcher that sends WhatsApp notificati
+metadata:
+  author: davestarling
+  category: Communication
+  tags:
+  - communication
+  - adsb
+  - overhead
+  source: clawhub-community
+  clawhub_slug: moltbot-adsb-overhead
+  clawhub_path: davestarling/moltbot-adsb-overhead
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ADS-B Overhead
+
+    # Source: ClawHub community skill by davestarling
+
+    # Install: clawhub install moltbot-adsb-overhead
+
+    # Path: davestarling/moltbot-adsb-overhead
+
+
+    ## Description
+
+    Notify when aircraft are overhead within a configurable radius using a local ADS-B SBS/BaseStation feed (readsb port 30003).
+    Use when setting up or troubleshooting plane-overhead alerts, configuring radius/home coordinates/cooldowns, or creating
+    a Clawdbot cron watcher that sends WhatsApp notificati
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - references/sbs-fields.md
+
+    - scripts/adsb_config.py
+
+    - scripts/adsb_overhead_notify.py
+
+    - scripts/sbs_overhead_check.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbot-adsb-overhead
+
+    ```'
+examples:
+- description: Install ADS-B Overhead from ClawHub
+  usage: clawhub install moltbot-adsb-overhead
+schema_version: '1.0'

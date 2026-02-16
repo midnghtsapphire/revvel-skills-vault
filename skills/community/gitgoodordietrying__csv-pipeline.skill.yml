@@ -1,0 +1,58 @@
+name: csv-pipeline
+title: CSV Data Pipeline
+version: 1.0.0
+description: Process, transform, analyze, and report on CSV and JSON data files. Use when the user needs to filter rows, join
+  datasets, compute aggregates, convert formats, deduplicate, or generate summary reports from tabular data. Works with any
+  CSV, TSV, or JSON Lines file.
+metadata:
+  author: gitgoodordietrying
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - csv
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: csv-pipeline
+  clawhub_path: gitgoodordietrying/csv-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CSV Data Pipeline
+
+    # Source: ClawHub community skill by gitgoodordietrying
+
+    # Install: clawhub install csv-pipeline
+
+    # Path: gitgoodordietrying/csv-pipeline
+
+
+    ## Description
+
+    Process, transform, analyze, and report on CSV and JSON data files. Use when the user needs to filter rows, join datasets,
+    compute aggregates, convert formats, deduplicate, or generate summary reports from tabular data. Works with any CSV, TSV,
+    or JSON Lines file.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install csv-pipeline
+
+    ```'
+examples:
+- description: Install CSV Data Pipeline from ClawHub
+  usage: clawhub install csv-pipeline
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: topic-to-article-kit
+title: Topic to Article Kit
+version: 1.0.5
+description: '"Turn a chosen AI topic into a public-account writing package: collect evidence from X/Twitter and other sources,
+  extract high-value comments, and produce title options + structured outline written into Obsidian. Use when user asks for
+  topic-based research and article prep."'
+metadata:
+  author: rotbit
+  category: Search & Research
+  tags:
+  - search-research
+  - topic
+  - article
+  - kit
+  source: clawhub-community
+  clawhub_slug: topic-to-article-kit
+  clawhub_path: rotbit/topic-to-article-kit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Topic to Article Kit
+
+    # Source: ClawHub community skill by rotbit
+
+    # Install: clawhub install topic-to-article-kit
+
+    # Path: rotbit/topic-to-article-kit
+
+
+    ## Description
+
+    "Turn a chosen AI topic into a public-account writing package: collect evidence from X/Twitter and other sources, extract
+    high-value comments, and produce title options + structured outline written into Obsidian. Use when user asks for topic-based
+    research and article prep."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/obsidian-structure.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install topic-to-article-kit
+
+    ```'
+examples:
+- description: Install Topic to Article Kit from ClawHub
+  usage: clawhub install topic-to-article-kit
+schema_version: '1.0'

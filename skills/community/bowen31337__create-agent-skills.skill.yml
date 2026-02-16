@@ -1,0 +1,72 @@
+name: skill-designer-agent-skills
+title: Create Agent Skills
+version: 1.0.0
+description: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update
+  an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.
+metadata:
+  author: bowen31337
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - skill
+  - designer
+  - agent
+  - skills
+  source: clawhub-community
+  clawhub_slug: create-agent-skills
+  clawhub_path: bowen31337/create-agent-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Create Agent Skills
+
+    # Source: ClawHub community skill by bowen31337
+
+    # Install: clawhub install create-agent-skills
+
+    # Path: bowen31337/create-agent-skills
+
+
+    ## Description
+
+    Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing
+    skill) that extends Claude''s capabilities with specialized knowledge, workflows, or tool integrations.
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/output-patterns.md
+
+    - references/workflows.md
+
+    - scripts/init_skill.py
+
+    - scripts/package_skill.py
+
+    - scripts/quick_validate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install create-agent-skills
+
+    ```'
+examples:
+- description: Install Create Agent Skills from ClawHub
+  usage: clawhub install create-agent-skills
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: geology
+title: Geology
+version: 1.0.0
+description: Explain Earth's rocks, processes, and history from field trips to research.
+metadata:
+  author: ivangdavila
+  category: Search & Research
+  tags:
+  - search-research
+  - geology
+  source: clawhub-community
+  clawhub_slug: geology
+  clawhub_path: ivangdavila/geology
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Geology
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install geology
+
+    # Path: ivangdavila/geology
+
+
+    ## Description
+
+    Explain Earth''s rocks, processes, and history from field trips to research.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install geology
+
+    ```'
+examples:
+- description: Install Geology from ClawHub
+  usage: clawhub install geology
+schema_version: '1.0'

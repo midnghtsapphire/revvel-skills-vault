@@ -1,0 +1,53 @@
+name: mysql
+title: MySQL
+version: 1.0.0
+description: Write correct MySQL queries avoiding common pitfalls with character sets, indexes, and locking.
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mysql
+  source: clawhub-community
+  clawhub_slug: mysql
+  clawhub_path: ivangdavila/mysql
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MySQL
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install mysql
+
+    # Path: ivangdavila/mysql
+
+
+    ## Description
+
+    Write correct MySQL queries avoiding common pitfalls with character sets, indexes, and locking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mysql
+
+    ```'
+examples:
+- description: Install MySQL from ClawHub
+  usage: clawhub install mysql
+schema_version: '1.0'

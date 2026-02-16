@@ -1,0 +1,62 @@
+name: findmy-location
+title: Find My Location
+version: 1.1.1
+description: Track a shared contact's location via Apple Find My with street-level accuracy. Returns address, city, and context
+  (home/work/out) by reading map landmarks. Supports configurable known locations and vision fallback for unknown places.
+metadata:
+  author: poiley
+  category: Utilities
+  tags:
+  - utilities
+  - findmy
+  - location
+  source: clawhub-community
+  clawhub_slug: findmy-location
+  clawhub_path: poiley/findmy-location
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Find My Location
+
+    # Source: ClawHub community skill by poiley
+
+    # Install: clawhub install findmy-location
+
+    # Path: poiley/findmy-location
+
+
+    ## Description
+
+    Track a shared contact''s location via Apple Find My with street-level accuracy. Returns address, city, and context (home/work/out)
+    by reading map landmarks. Supports configurable known locations and vision fallback for unknown places.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - findmy-location.py
+
+    - install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install findmy-location
+
+    ```'
+examples:
+- description: Install Find My Location from ClawHub
+  usage: clawhub install findmy-location
+schema_version: '1.0'

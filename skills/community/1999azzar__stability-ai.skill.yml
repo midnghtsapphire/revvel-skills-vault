@@ -1,0 +1,61 @@
+name: stability-ai
+title: Stability Ai
+version: 1.0.0
+description: Generate high-quality images via Stability AI API (SDXL, SD3, Stable Image Core). Use when user asks to "generate
+  image", "make a picture", or "draw this".
+metadata:
+  author: 1999azzar
+  category: Media & Content
+  tags:
+  - media-content
+  - stability
+  source: clawhub-community
+  clawhub_slug: stability-ai
+  clawhub_path: 1999azzar/stability-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stability Ai
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install stability-ai
+
+    # Path: 1999azzar/stability-ai
+
+
+    ## Description
+
+    Generate high-quality images via Stability AI API (SDXL, SD3, Stable Image Core). Use when user asks to "generate image",
+    "make a picture", or "draw this".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/models.md
+
+    - scripts/core/generate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stability-ai
+
+    ```'
+examples:
+- description: Install Stability Ai from ClawHub
+  usage: clawhub install stability-ai
+schema_version: '1.0'

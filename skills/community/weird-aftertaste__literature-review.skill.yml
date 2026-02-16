@@ -1,0 +1,60 @@
+name: literature-review
+title: Literature Review
+version: 1.2.0
+description: Assistance with writing literature reviews by searching for academic sources via Semantic Scholar, OpenAlex,
+  Crossref and PubMed APIs. Use when the user needs to find papers on a topic, get details for specific DOIs, or draft sections
+  of a literature review with proper citations.
+metadata:
+  author: weird-aftertaste
+  category: Search & Research
+  tags:
+  - search-research
+  - literature
+  - review
+  source: clawhub-community
+  clawhub_slug: literature-review
+  clawhub_path: weird-aftertaste/literature-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Literature Review
+
+    # Source: ClawHub community skill by weird-aftertaste
+
+    # Install: clawhub install literature-review
+
+    # Path: weird-aftertaste/literature-review
+
+
+    ## Description
+
+    Assistance with writing literature reviews by searching for academic sources via Semantic Scholar, OpenAlex, Crossref
+    and PubMed APIs. Use when the user needs to find papers on a topic, get details for specific DOIs, or draft sections of
+    a literature review with proper citations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/lit_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install literature-review
+
+    ```'
+examples:
+- description: Install Literature Review from ClawHub
+  usage: clawhub install literature-review
+schema_version: '1.0'

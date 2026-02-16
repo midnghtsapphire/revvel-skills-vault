@@ -1,0 +1,56 @@
+name: bb
+title: Bb
+version: 0.3.0
+description: 'BullyBuddy - Control Claude Code sessions via slash command. Use /bb to manage multiple Claude Code instances.
+  Commands: status, list, spawn, send, output, kill, audit, transcript.'
+metadata:
+  author: chenkuansun
+  category: Development & Coding
+  tags:
+  - development-coding
+  source: clawhub-community
+  clawhub_slug: bb
+  clawhub_path: chenkuansun/bb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bb
+
+    # Source: ClawHub community skill by chenkuansun
+
+    # Install: clawhub install bb
+
+    # Path: chenkuansun/bb
+
+
+    ## Description
+
+    BullyBuddy - Control Claude Code sessions via slash command. Use /bb to manage multiple Claude Code instances. Commands:
+    status, list, spawn, send, output, kill, audit, transcript.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bb.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bb
+
+    ```'
+examples:
+- description: Install Bb from ClawHub
+  usage: clawhub install bb
+schema_version: '1.0'

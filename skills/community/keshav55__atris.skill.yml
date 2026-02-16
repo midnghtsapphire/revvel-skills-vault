@@ -1,0 +1,55 @@
+name: atris
+title: Atris
+version: 1.1.0
+description: Codebase intelligence — generates structured navigation maps with file:line references so agents stop re-scanning
+  the same files every session. Use when exploring code, answering "where is X?", or onboarding to a new codebase.
+metadata:
+  author: keshav55
+  category: Development & Coding
+  tags:
+  - development-coding
+  - atris
+  source: clawhub-community
+  clawhub_slug: atris
+  clawhub_path: keshav55/atris
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Atris
+
+    # Source: ClawHub community skill by keshav55
+
+    # Install: clawhub install atris
+
+    # Path: keshav55/atris
+
+
+    ## Description
+
+    Codebase intelligence — generates structured navigation maps with file:line references so agents stop re-scanning the
+    same files every session. Use when exploring code, answering "where is X?", or onboarding to a new codebase.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install atris
+
+    ```'
+examples:
+- description: Install Atris from ClawHub
+  usage: clawhub install atris
+schema_version: '1.0'

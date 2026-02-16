@@ -1,0 +1,60 @@
+name: clawdbot-logs
+title: Clawdbot Logs
+version: 1.0.0
+description: Analyze Clawdbot logs and diagnostics. Use when the user asks about bot performance, response times, errors,
+  session stats, token usage, API costs, or wants to debug slow responses.
+metadata:
+  author: satriapamudji
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawdbot
+  - logs
+  source: clawhub-community
+  clawhub_slug: clawdbot-logs
+  clawhub_path: satriapamudji/clawdbot-logs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Logs
+
+    # Source: ClawHub community skill by satriapamudji
+
+    # Install: clawhub install clawdbot-logs
+
+    # Path: satriapamudji/clawdbot-logs
+
+
+    ## Description
+
+    Analyze Clawdbot logs and diagnostics. Use when the user asks about bot performance, response times, errors, session stats,
+    token usage, API costs, or wants to debug slow responses.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/response-times.sh
+
+    - scripts/session-stats.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-logs
+
+    ```'
+examples:
+- description: Install Clawdbot Logs from ClawHub
+  usage: clawhub install clawdbot-logs
+schema_version: '1.0'

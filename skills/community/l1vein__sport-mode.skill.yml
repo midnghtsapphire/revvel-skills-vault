@@ -1,0 +1,60 @@
+name: sport-mode
+title: Sport Mode
+version: 1.0.1
+description: Activate "Sport Mode" for high-frequency monitoring (default 3m heartbeat) and auto-cleanup. Use when supervising
+  intense tasks (Codex, builds, migrations).
+metadata:
+  author: l1vein
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sport
+  - mode
+  source: clawhub-community
+  clawhub_slug: sport-mode
+  clawhub_path: l1vein/sport-mode
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sport Mode
+
+    # Source: ClawHub community skill by l1vein
+
+    # Install: clawhub install sport-mode
+
+    # Path: l1vein/sport-mode
+
+
+    ## Description
+
+    Activate "Sport Mode" for high-frequency monitoring (default 3m heartbeat) and auto-cleanup. Use when supervising intense
+    tasks (Codex, builds, migrations).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sport-mode.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sport-mode
+
+    ```'
+examples:
+- description: Install Sport Mode from ClawHub
+  usage: clawhub install sport-mode
+schema_version: '1.0'

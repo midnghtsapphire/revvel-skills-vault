@@ -1,0 +1,62 @@
+name: model-usage
+title: Model Usage
+version: 1.0.0
+description: Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most
+  recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need
+  a scriptable per-model summary from codexbar cost JSON.
+metadata:
+  author: steipete
+  category: Development & Coding
+  tags:
+  - development-coding
+  - model
+  - usage
+  source: clawhub-community
+  clawhub_slug: model-usage
+  clawhub_path: steipete/model-usage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Model Usage
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install model-usage
+
+    # Path: steipete/model-usage
+
+
+    ## Description
+
+    Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent)
+    model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a
+    scriptable per-model summary from codexbar cost JSON.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/codexbar-cli.md
+
+    - scripts/model_usage.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install model-usage
+
+    ```'
+examples:
+- description: Install Model Usage from ClawHub
+  usage: clawhub install model-usage
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: plvr-event-discovery
+title: PLVR Event Discovery
+version: 1.0.1
+description: Discover and recommend live events matched to user preferences, then assist with ticket checkout on plvr.io using
+  the web flow (no public API), including ticket selection, reservation-window handling, x402 wallet payment handoff, and
+  post-purchase confirmation capture. Use when a user asks what even
+metadata:
+  author: kimchichobo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - plvr
+  - event
+  - discovery
+  source: clawhub-community
+  clawhub_slug: plvr-event-discovery
+  clawhub_path: kimchichobo/plvr-event-discovery
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PLVR Event Discovery
+
+    # Source: ClawHub community skill by kimchichobo
+
+    # Install: clawhub install plvr-event-discovery
+
+    # Path: kimchichobo/plvr-event-discovery
+
+
+    ## Description
+
+    Discover and recommend live events matched to user preferences, then assist with ticket checkout on plvr.io using the
+    web flow (no public API), including ticket selection, reservation-window handling, x402 wallet payment handoff, and post-purchase
+    confirmation capture. Use when a user asks what even
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install plvr-event-discovery
+
+    ```'
+examples:
+- description: Install PLVR Event Discovery from ClawHub
+  usage: clawhub install plvr-event-discovery
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: firecrawl
+title: Firecrawl Search
+version: 1.0.0
+description: Web search and scraping via Firecrawl API. Use when you need to search the web, scrape websites (including JS-heavy
+  pages), crawl entire sites, or extract structured data from web pages. Requires FIRECRAWL_API_KEY environment variable.
+metadata:
+  author: ashwingupy
+  category: Search & Research
+  tags:
+  - search-research
+  - firecrawl
+  source: clawhub-community
+  clawhub_slug: firecrawl-search
+  clawhub_path: ashwingupy/firecrawl-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Firecrawl Search
+
+    # Source: ClawHub community skill by ashwingupy
+
+    # Install: clawhub install firecrawl-search
+
+    # Path: ashwingupy/firecrawl-search
+
+
+    ## Description
+
+    Web search and scraping via Firecrawl API. Use when you need to search the web, scrape websites (including JS-heavy pages),
+    crawl entire sites, or extract structured data from web pages. Requires FIRECRAWL_API_KEY environment variable.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/crawl.py
+
+    - scripts/scrape.py
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install firecrawl-search
+
+    ```'
+examples:
+- description: Install Firecrawl Search from ClawHub
+  usage: clawhub install firecrawl-search
+schema_version: '1.0'

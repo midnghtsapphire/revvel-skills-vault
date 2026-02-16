@@ -1,0 +1,64 @@
+name: ai-meeting-room
+title: AI Meeting Room (에이전트 룸)
+version: 1.0.0
+description: AI 회의실 — 주제를 던지면 전문가 AI 에이전트들이 다각도로 토론하고 회의록을 생성한다. 사업성 검토, 전략 회의, 브레인스토밍, 의사결정, 리스크 분석 등에 활용. Use when a user
+  wants multiple perspectives on a topic, needs a business review, strategy discussion, brainstorming, devil's advocate analysis,
+  or says "회의", "토론", "검토해줘", "브레인스토밍", "사업성", "meeting", "deba
+metadata:
+  author: gyeuun97
+  category: General
+  tags:
+  - general
+  - meeting
+  - room
+  source: clawhub-community
+  clawhub_slug: ai-meeting-room
+  clawhub_path: gyeuun97/ai-meeting-room
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI Meeting Room (에이전트 룸)
+
+    # Source: ClawHub community skill by gyeuun97
+
+    # Install: clawhub install ai-meeting-room
+
+    # Path: gyeuun97/ai-meeting-room
+
+
+    ## Description
+
+    AI 회의실 — 주제를 던지면 전문가 AI 에이전트들이 다각도로 토론하고 회의록을 생성한다. 사업성 검토, 전략 회의, 브레인스토밍, 의사결정, 리스크 분석 등에 활용. Use when a user wants multiple
+    perspectives on a topic, needs a business review, strategy discussion, brainstorming, devil''s advocate analysis, or says
+    "회의", "토론", "검토해줘", "브레인스토밍", "사업성", "meeting", "deba
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/agent-roles.md
+
+    - references/conflict-patterns.md
+
+    - references/meeting-templates.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-meeting-room
+
+    ```'
+examples:
+- description: Install AI Meeting Room (에이전트 룸) from ClawHub
+  usage: clawhub install ai-meeting-room
+schema_version: '1.0'

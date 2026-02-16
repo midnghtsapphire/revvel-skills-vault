@@ -1,0 +1,66 @@
+name: agentguard
+title: AgentGuard
+version: 1.0.0
+description: ''
+metadata:
+  author: manas-io-ai
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - agentguard
+  source: clawhub-community
+  clawhub_slug: agentguard
+  clawhub_path: manas-io-ai/agentguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AgentGuard
+
+    # Source: ClawHub community skill by manas-io-ai
+
+    # Install: clawhub install agentguard
+
+    # Path: manas-io-ai/agentguard
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config/agentguard.yaml
+
+    - execution/alerter.py
+
+    - execution/detector.py
+
+    - execution/logger.py
+
+    - execution/monitor.py
+
+    - execution/reporter.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentguard
+
+    ```'
+examples:
+- description: Install AgentGuard from ClawHub
+  usage: clawhub install agentguard
+schema_version: '1.0'

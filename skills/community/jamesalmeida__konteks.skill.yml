@@ -1,0 +1,59 @@
+name: konteks
+title: Konteks
+version: 1.0.2
+description: Connect your OpenClaw agent to your Konteks account (konteks.app) for persistent memory, task management, and
+  context sharing. Use when you need to store agent memories, create or read tasks/notes, check projects and folders, read
+  daily plans, or sync context between conversations. Requires a Kontek
+metadata:
+  author: jamesalmeida
+  category: Development & Coding
+  tags:
+  - development-coding
+  - konteks
+  source: clawhub-community
+  clawhub_slug: konteks
+  clawhub_path: jamesalmeida/konteks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Konteks
+
+    # Source: ClawHub community skill by jamesalmeida
+
+    # Install: clawhub install konteks
+
+    # Path: jamesalmeida/konteks
+
+
+    ## Description
+
+    Connect your OpenClaw agent to your Konteks account (konteks.app) for persistent memory, task management, and context
+    sharing. Use when you need to store agent memories, create or read tasks/notes, check projects and folders, read daily
+    plans, or sync context between conversations. Requires a Kontek
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install konteks
+
+    ```'
+examples:
+- description: Install Konteks from ClawHub
+  usage: clawhub install konteks
+schema_version: '1.0'

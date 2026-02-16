@@ -1,0 +1,56 @@
+name: local-vosk
+title: Local Vosk STT
+version: 1.0.1
+description: Local speech-to-text using Vosk. Lightweight, fast, fully offline. Perfect for transcribing Telegram voice messages,
+  audio files, or any speech-to-text task without cloud APIs.
+metadata:
+  author: sfkiwi
+  category: Media & Content
+  tags:
+  - media-content
+  - local
+  - vosk
+  source: clawhub-community
+  clawhub_slug: local-vosk
+  clawhub_path: sfkiwi/local-vosk
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Local Vosk STT
+
+    # Source: ClawHub community skill by sfkiwi
+
+    # Install: clawhub install local-vosk
+
+    # Path: sfkiwi/local-vosk
+
+
+    ## Description
+
+    Local speech-to-text using Vosk. Lightweight, fast, fully offline. Perfect for transcribing Telegram voice messages, audio
+    files, or any speech-to-text task without cloud APIs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install local-vosk
+
+    ```'
+examples:
+- description: Install Local Vosk STT from ClawHub
+  usage: clawhub install local-vosk
+schema_version: '1.0'

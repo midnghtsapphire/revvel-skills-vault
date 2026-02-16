@@ -1,0 +1,63 @@
+name: surfline
+title: Surfline (public)
+version: 0.1.0
+description: Get surf forecasts and current conditions from Surfline public endpoints (no login). Use to look up Surfline
+  spot IDs, fetch forecasts/conditions for specific spots, and summarize multiple favorite spots.
+metadata:
+  author: miguelcarranza
+  category: General
+  tags:
+  - general
+  - surfline
+  source: clawhub-community
+  clawhub_slug: surfline
+  clawhub_path: miguelcarranza/surfline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Surfline (public)
+
+    # Source: ClawHub community skill by miguelcarranza
+
+    # Install: clawhub install surfline
+
+    # Path: miguelcarranza/surfline
+
+
+    ## Description
+
+    Get surf forecasts and current conditions from Surfline public endpoints (no login). Use to look up Surfline spot IDs,
+    fetch forecasts/conditions for specific spots, and summarize multiple favorite spots.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/surfline_client.py
+
+    - scripts/surfline_favorites.py
+
+    - scripts/surfline_report.py
+
+    - scripts/surfline_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install surfline
+
+    ```'
+examples:
+- description: Install Surfline (public) from ClawHub
+  usage: clawhub install surfline
+schema_version: '1.0'

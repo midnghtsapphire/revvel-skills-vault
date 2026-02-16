@@ -1,0 +1,56 @@
+name: microsoft-teams
+title: Microsoft Teams
+version: 1.0.0
+description: Send messages, manage channels, and automate workflows via Microsoft Teams API. Post to channels, create meetings,
+  and manage team memberships.
+metadata:
+  author: mrgoodb
+  category: Communication
+  tags:
+  - communication
+  - microsoft
+  - teams
+  source: clawhub-community
+  clawhub_slug: microsoft-teams
+  clawhub_path: mrgoodb/microsoft-teams
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Microsoft Teams
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install microsoft-teams
+
+    # Path: mrgoodb/microsoft-teams
+
+
+    ## Description
+
+    Send messages, manage channels, and automate workflows via Microsoft Teams API. Post to channels, create meetings, and
+    manage team memberships.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install microsoft-teams
+
+    ```'
+examples:
+- description: Install Microsoft Teams from ClawHub
+  usage: clawhub install microsoft-teams
+schema_version: '1.0'

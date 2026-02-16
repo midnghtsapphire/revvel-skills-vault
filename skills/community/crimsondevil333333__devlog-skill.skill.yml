@@ -1,0 +1,56 @@
+name: devlog_skill
+title: Devlog Skill
+version: 1.0.3
+description: A standardized journaling skill for OpenClaw agents to track progress, tasks, and project status using dev-log-cli.
+metadata:
+  author: crimsondevil333333
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - devlog
+  - skill
+  source: clawhub-community
+  clawhub_slug: devlog-skill
+  clawhub_path: crimsondevil333333/devlog-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Devlog Skill
+
+    # Source: ClawHub community skill by crimsondevil333333
+
+    # Install: clawhub install devlog-skill
+
+    # Path: crimsondevil333333/devlog-skill
+
+
+    ## Description
+
+    A standardized journaling skill for OpenClaw agents to track progress, tasks, and project status using dev-log-cli.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install devlog-skill
+
+    ```'
+examples:
+- description: Install Devlog Skill from ClawHub
+  usage: clawhub install devlog-skill
+schema_version: '1.0'

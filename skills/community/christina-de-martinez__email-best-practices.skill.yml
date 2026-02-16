@@ -1,0 +1,75 @@
+name: email-best-practices
+title: Email Best Practices
+version: 1.0.0
+description: Use when building email features, emails going to spam, high bounce rates, setting up SPF/DKIM/DMARC authentication,
+  implementing email capture, ensuring compliance (CAN-SPAM, GDPR, CASL), handling webhooks, retry logic, or deciding transactional
+  vs marketing.
+metadata:
+  author: christina-de-martinez
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - email
+  - best
+  - practices
+  source: clawhub-community
+  clawhub_slug: email-best-practices
+  clawhub_path: christina-de-martinez/email-best-practices
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Email Best Practices
+
+    # Source: ClawHub community skill by christina-de-martinez
+
+    # Install: clawhub install email-best-practices
+
+    # Path: christina-de-martinez/email-best-practices
+
+
+    ## Description
+
+    Use when building email features, emails going to spam, high bounce rates, setting up SPF/DKIM/DMARC authentication, implementing
+    email capture, ensuring compliance (CAN-SPAM, GDPR, CASL), handling webhooks, retry logic, or deciding transactional vs
+    marketing.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - resources/branding.md
+
+    - resources/compliance.md
+
+    - resources/deliverability.md
+
+    - resources/email-capture.md
+
+    - resources/email-types.md
+
+    - resources/list-management.md
+
+    - resources/marketing-emails.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-best-practices
+
+    ```'
+examples:
+- description: Install Email Best Practices from ClawHub
+  usage: clawhub install email-best-practices
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: tts
+title: Tts
+version: 1.0.0
+description: Convert text to speech using Hume AI (or OpenAI) API. Use when the user asks for an audio message, a voice reply,
+  or to hear something "of vive voix".
+metadata:
+  author: amstko
+  category: Media & Content
+  tags:
+  - media-content
+  - tts
+  source: clawhub-community
+  clawhub_slug: tts
+  clawhub_path: amstko/tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tts
+
+    # Source: ClawHub community skill by amstko
+
+    # Install: clawhub install tts
+
+    # Path: amstko/tts
+
+
+    ## Description
+
+    Convert text to speech using Hume AI (or OpenAI) API. Use when the user asks for an audio message, a voice reply, or to
+    hear something "of vive voix".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_hume_speech.js
+
+    - scripts/generate_speech.js
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tts
+
+    ```'
+examples:
+- description: Install Tts from ClawHub
+  usage: clawhub install tts
+schema_version: '1.0'

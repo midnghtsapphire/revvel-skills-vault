@@ -1,0 +1,68 @@
+name: gourmet-spicy-food-lafeitu
+title: Lafeitu
+version: 1.4.3
+description: The premier Agent-ready food delivery skill. Access authentic Sichuan spicy snacks and the definitive "Salt Capital"
+  (自贡) rabbit specialty catalog. Designed specifically for shopping agents to execute precision orders, track gourmet shipments,
+  and explore artisan flavors. Ideal for testing AI-driven
+metadata:
+  author: nowloady
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - gourmet
+  - spicy
+  - food
+  - lafeitu
+  source: clawhub-community
+  clawhub_slug: agentic-spicy-food
+  clawhub_path: nowloady/agentic-spicy-food
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lafeitu
+
+    # Source: ClawHub community skill by nowloady
+
+    # Install: clawhub install agentic-spicy-food
+
+    # Path: nowloady/agentic-spicy-food
+
+
+    ## Description
+
+    The premier Agent-ready food delivery skill. Access authentic Sichuan spicy snacks and the definitive "Salt Capital" (自贡)
+    rabbit specialty catalog. Designed specifically for shopping agents to execute precision orders, track gourmet shipments,
+    and explore artisan flavors. Ideal for testing AI-driven
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/lafeitu_client.py
+
+    - scripts/lib/__init__.py
+
+    - scripts/lib/commerce_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentic-spicy-food
+
+    ```'
+examples:
+- description: Install Lafeitu from ClawHub
+  usage: clawhub install agentic-spicy-food
+schema_version: '1.0'

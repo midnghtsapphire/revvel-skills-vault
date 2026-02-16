@@ -1,0 +1,65 @@
+name: add-watermark-to-pdf
+title: Add watermark to PDF
+version: 1.0.0
+description: Add a text watermark to one or multiple PDFs by uploading them to the Solutions API, polling until completion,
+  then returning download URL(s) for the watermarked PDF(s) (or a ZIP if multiple).
+metadata:
+  author: crossservicesolutions
+  category: Development & Coding
+  tags:
+  - development-coding
+  - add
+  - watermark
+  - pdf
+  source: clawhub-community
+  clawhub_slug: add-watermark-to-pdf
+  clawhub_path: crossservicesolutions/add-watermark-to-pdf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Add watermark to PDF
+
+    # Source: ClawHub community skill by crossservicesolutions
+
+    # Install: clawhub install add-watermark-to-pdf
+
+    # Path: crossservicesolutions/add-watermark-to-pdf
+
+
+    ## Description
+
+    Add a text watermark to one or multiple PDFs by uploading them to the Solutions API, polling until completion, then returning
+    download URL(s) for the watermarked PDF(s) (or a ZIP if multiple).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - examples/request.json
+
+    - scripts/add-watermark-to-pdf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install add-watermark-to-pdf
+
+    ```'
+examples:
+- description: Install Add watermark to PDF from ClawHub
+  usage: clawhub install add-watermark-to-pdf
+schema_version: '1.0'

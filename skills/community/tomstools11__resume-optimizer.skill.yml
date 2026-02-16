@@ -1,0 +1,68 @@
+name: resume-optimizer
+title: Resume Optimizer
+version: 1.0.1
+description: Professional resume builder with PDF export, ATS optimization, and analysis capabilities. Use when users need
+  to (1) Create new resumes from scratch, (2) Customize/tailor existing resumes for specific roles, (3) Analyze resumes and
+  provide improvement recommendations, (4) Convert resumes to ATS-frie
+metadata:
+  author: tomstools11
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - resume
+  - optimizer
+  source: clawhub-community
+  clawhub_slug: resume-optimizer
+  clawhub_path: tomstools11/resume-optimizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Resume Optimizer
+
+    # Source: ClawHub community skill by tomstools11
+
+    # Install: clawhub install resume-optimizer
+
+    # Path: tomstools11/resume-optimizer
+
+
+    ## Description
+
+    Professional resume builder with PDF export, ATS optimization, and analysis capabilities. Use when users need to (1) Create
+    new resumes from scratch, (2) Customize/tailor existing resumes for specific roles, (3) Analyze resumes and provide improvement
+    recommendations, (4) Convert resumes to ATS-frie
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/analysis-checklist.md
+
+    - references/ats-optimization.md
+
+    - references/best-practices.md
+
+    - references/templates.md
+
+    - scripts/generate_resume_pdf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install resume-optimizer
+
+    ```'
+examples:
+- description: Install Resume Optimizer from ClawHub
+  usage: clawhub install resume-optimizer
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: babylon
+title: Babylon
+version: 1.2.0
+description: Play Babylon prediction markets - trade YES/NO shares, post to social feed, check portfolio and leaderboards.
+  Use when interacting with Babylon (babylon.market), prediction markets, or the Babylon game. Requires BABYLON_API_KEY environment
+  variable.
+metadata:
+  author: odilitime
+  category: Social Media
+  tags:
+  - social-media
+  - babylon
+  source: clawhub-community
+  clawhub_slug: babylon
+  clawhub_path: odilitime/babylon
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Babylon
+
+    # Source: ClawHub community skill by odilitime
+
+    # Install: clawhub install babylon
+
+    # Path: odilitime/babylon
+
+
+    ## Description
+
+    Play Babylon prediction markets - trade YES/NO shares, post to social feed, check portfolio and leaderboards. Use when
+    interacting with Babylon (babylon.market), prediction markets, or the Babylon game. Requires BABYLON_API_KEY environment
+    variable.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - scripts/babylon-client.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install babylon
+
+    ```'
+examples:
+- description: Install Babylon from ClawHub
+  usage: clawhub install babylon
+schema_version: '1.0'

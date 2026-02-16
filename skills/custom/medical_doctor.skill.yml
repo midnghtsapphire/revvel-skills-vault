@@ -1,0 +1,201 @@
+name: medical_doctor
+title: Medical Doctor / Physician Expert
+version: 1.0.0
+description: Comprehensive medical diagnostic reasoning engine with differential diagnosis generation, ICD/CPT coding, drug
+  interaction checking, lab interpretation, radiology/pathology analysis, clinical guidelines, and evidence-based medicine
+  search capabilities.
+metadata:
+  author: Revvel AI Engine
+  category: Medical & Health
+  tags:
+  - differential-diagnosis
+  - radiology-report-interpretation
+  - medical-record-review
+  - cpt-code-analysis
+  - icd-code-lookup
+  - medical
+  - pathology-report-analysis
+  - doctor
+  - lab-result-interpretation
+  - drug-interaction-check
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport math\nimport hashlib\nimport statistics\nimport requests\nimport datetime\n\
+    import collections\nfrom typing import Dict, List, Any, Optional, Tuple, Union\nfrom dataclasses import dataclass\nfrom\
+    \ enum import Enum\nimport unittest\nimport logging\n\nSKILL_METADATA = {\n    \"name\": \"Medical Doctor / Physician\
+    \ Expert\",\n    \"id\": \"medical_doctor\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n   \
+    \ \"description\": \"Comprehensive medical diagnostic reasoning engine with differential diagnosis generation, ICD/CPT\
+    \ coding, drug interaction checking, lab interpretation, radiology/pathology analysis, clinical guidelines, and evidence-based\
+    \ medicine search capabilities.\",\n    \"capabilities\": [\n        \"differential_diagnosis\",\n        \"icd_code_lookup\"\
+    ,\n        \"cpt_code_analysis\",\n        \"drug_interaction_check\",\n        \"lab_result_interpretation\",\n     \
+    \   \"radiology_report_interpretation\",\n        \"pathology_report_analysis\",\n        \"medical_record_review\",\n\
+    \        \"treatment_protocol_lookup\",\n        \"clinical_guidelines_search\",\n        \"pharmacology_reference\",\n\
+    \        \"anatomy_reference\",\n        \"surgical_procedure_lookup\",\n        \"medical_terminology_decode\",\n   \
+    \     \"patient_history_analysis\",\n        \"vital_signs_trending\",\n        \"medical_calculators\",\n        \"evidence_based_medicine_search\"\
+    ,\n        \"telemedicine_protocols\"\n    ],\n    \"domain\": \"healthcare\"\n}\n\nEXPERT_PROMPTS = {\n    \"differential_diagnosis\"\
+    : \"\"\"You are a board-certified physician. Given the following clinical presentation:\nChief Complaint: {chief_complaint}\n\
+    History of Present Illness: {hpi}\nPast Medical History: {pmh}\nCurrent Medications: {medications}\nVital Signs: {vitals}\n\
+    Physical Exam Findings: {exam_findings}\nLaboratory Results: {lab_results}\nImaging Results: {imaging_results}\n\nGenerate\
+    \ a ranked differential diagnosis list with:\n1. Most likely diagnoses with reasoning\n2. Less likely but important diagnoses\n\
+    3. Life-threatening conditions to rule out\n4. Recommended diagnostic workup\n5. Initial management considerations\"\"\
+    \",\n\n    \"lab_interpretation\": \"\"\"You are a clinical pathologist. Interpret the following laboratory results:\n\
+    Patient Demographics: {demographics}\nCBC: {cbc_results}\nCMP: {cmp_results}\nLipid Panel: {lipid_results}\nThyroid Panel:\
+    \ {thyroid_results}\nOther Labs: {other_labs}\n\nProvide:\n1. Abnormal values identification\n2. Clinical significance\
+    \ of abnormalities\n3. Possible underlying causes\n4. Recommendations for further evaluation\n5. Trending considerations\
+    \ if previous results available\"\"\",\n\n    \"drug_interaction_analysis\": \"\"\"You are a clinical pharmacologist.\
+    \ Analyze potential drug interactions for:\nPatient Medications: {current_medications}\nNew Medication to Add: {new_medication}\n\
+    Patient Factors: {patient_factors}\n\nAssess:\n1. Drug-drug interactions with severity levels\n2. Contraindications and\
+    \ precautions\n3. Dosing adjustments needed\n4. Monitoring requirements\n5. Alternative medication suggestions\"\"\",\n\
+    \n    \"radiology_report_analysis\": \"\"\"You are a radiologist. Interpret the following imaging study:\nStudy Type:\
+    \ {study_type}\nClinical Indication: {indication}\nTechnical Quality: {technical_quality}\nFindings: {findings}\n\nProvide:\n\
+    1. Key positive and negative findings\n2. Clinical correlation recommendations\n3. Follow-up imaging suggestions\n4. Urgent\
+    \ findings requiring immediate attention\n5. Differential diagnosis based on imaging\"\"\",\n\n    \"clinical_guidelines_query\"\
+    : \"\"\"You are an evidence-based medicine expert. For the following clinical scenario:\nDiagnosis: {diagnosis}\nPatient\
+    \ Characteristics: {patient_characteristics}\nClinical Question: {clinical_question}\n\nSearch and summarize:\n1. Relevant\
+    \ clinical practice guidelines (NICE, AHA, ACS, NCCN)\n2. Grade of evidence and recommendation strength\n3. Treatment\
+    \ algorithms and protocols\n4. Quality metrics and performance indicators\n5. Controversies or areas of uncertainty\"\"\
+    \",\n\n    \"medical_record_review\": \"\"\"You are a physician conducting a comprehensive medical record review:\nPatient\
+    \ Records: {medical_records}\nReview Purpose: {review_purpose}\nTime Period: {time_period}\n\nAnalyze:\n1. Medical history\
+    \ chronology and continuity\n2. Medication reconciliation and adherence\n3. Preventive care compliance\n4. Quality of\
+    \ care indicators\n5. Potential gaps or discrepancies\n6. Recommendations for care optimization\"\"\",\n\n    \"pathology_report_interpretation\"\
+    : \"\"\"You are a pathologist interpreting a surgical pathology report:\nSpecimen Type: {specimen_type}\nGross Description:\
+    \ {gross_description}\nMicroscopic Description: {microscopic_description}\nImmunohistochemistry: {ihc_results}\nSpecial\
+    \ Stains: {special_stains}\n\nProvide:\n1. Diagnosis and histologic grade\n2. Margins and extent of disease\n3. Prognostic\
+    \ markers and significance\n4. Recommendations for additional testing\n5. Clinical correlation and next steps\"\"\",\n\
+    \n    \"surgical_procedure_lookup\": \"\"\"You are a surgical specialist. Provide detailed information about:\nProcedure:\
+    \ {procedure_name}\nIndication: {indication}\nPatient Factors: {patient_factors}\n\nInclude:\n1. Step-by-step surgical\
+    \ approach\n2. Key anatomical considerations\n3. Potential complications and management\n4. Postoperative care protocol\n\
+    5. Outcomes and prognosis data\"\"\",\n\n    \"emergency_medicine_evaluation\": \"\"\"You are an emergency medicine physician.\
+    \ Evaluate this case:\nPresenting Complaint: {presenting_complaint}\nVital Signs: {vitals}\nPrimary Survey: {primary_survey}\n\
+    Secondary Survey: {secondary_survey}\nInitial Diagnostics: {initial_diagnostics}\n\nAssess:\n1. Emergency severity index\
+    \ and triage level\n2. Life-threatening conditions to rule out\n3. Immediate interventions required\n4. Disposition and\
+    \ admission criteria\n5. Follow-up and discharge instructions\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"fda_drug_api\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.fda.gov/drug/label.json\",\n        \"description\"\
+    : \"FDA Drug Label Database for medication information and interactions\",\n        \"auth_method\": \"none\",\n     \
+    \   \"documentation_url\": \"https://open.fda.gov/apis/drug/label/\"\n    },\n    \"pubmed_api\": {\n        \"type\"\
+    : \"api\",\n        \"endpoint\": \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/\",\n        \"description\": \"PubMed\
+    \ database for medical literature search\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"\
+    https://www.ncbi.nlm.nih.gov/books/NBK25501/\"\n    },\n    \"icd_api\": {\n        \"type\": \"api\",\n        \"endpoint\"\
+    : \"https://id.who.int/icd/release/11/2023-01/mms\",\n        \"description\": \"WHO ICD-11 API for disease classification\"\
+    ,\n        \"auth_method\": \"oauth2\",\n        \"documentation_url\": \"https://icd.who.int/icdapi\"\n    },\n    \"\
+    clinical_guidelines_db\": {\n        \"type\": \"database\",\n        \"endpoint\": \"internal_guidelines_db\",\n    \
+    \    \"description\": \"Internal database of clinical practice guidelines\",\n        \"auth_method\": \"internal\",\n\
+    \        \"documentation_url\": \"internal\"\n    },\n    \"lab_reference_db\": {\n        \"type\": \"database\",\n \
+    \       \"endpoint\": \"internal_lab_references\",\n        \"description\": \"Laboratory reference ranges and interpretation\
+    \ guidelines\",\n        \"auth_method\": \"internal\",\n        \"documentation_url\": \"internal\"\n    },\n    \"drug_interaction_db\"\
+    : {\n        \"type\": \"database\",\n        \"endpoint\": \"internal_drug_interactions\",\n        \"description\":\
+    \ \"Drug interaction database with severity classifications\",\n        \"auth_method\": \"internal\",\n        \"documentation_url\"\
+    : \"internal\"\n    }\n}\n\nclass VitalSigns:\n    def __init__(self, temperature: float = None, heart_rate: int = None,\
+    \ \n                 blood_pressure_systolic: int = None, blood_pressure_diastolic: int = None,\n                 respiratory_rate:\
+    \ int = None, oxygen_saturation: float = None):\n        self.temperature = temperature\n        self.heart_rate = heart_rate\n\
+    \        self.blood_pressure_systolic = blood_pressure_systolic\n        self.blood_pressure_diastolic = blood_pressure_diastolic\n\
+    \        self.respiratory_rate = respiratory_rate\n        self.oxygen_saturation = oxygen_saturation\n\nclass LabResults:\n\
+    \    def __init__(self, cbc: Dict = None, cmp: Dict = None, lipid: Dict = None, \n                 thyroid: Dict = None,\
+    \ other: Dict = None):\n        self.cbc = cbc or {}\n        self.cmp = cmp or {}\n        self.lipid = lipid or {}\n\
+    \        self.thyroid = thyroid or {}\n        self.other = other or {}\n\ndef calculate_bmi(weight_kg: float, height_cm:\
+    \ float) -> float:\n    \"\"\"Calculate Body Mass Index (BMI) from weight and height.\"\"\"\n    if weight_kg <= 0 or\
+    \ height_cm <= 0:\n        raise ValueError(\"Weight and height must be positive values\")\n    height_m = height_cm /\
+    \ 100\n    return weight_kg / (height_m ** 2)\n\ndef calculate_gfr(age: int, gender: str, creatinine: float, race: str\
+    \ = \"other\") -> float:\n    \"\"\"Calculate estimated glomerular filtration rate (eGFR) using CKD-EPI equation.\"\"\"\
+    \n    if age <= 0 or creatinine <= 0:\n        raise ValueError(\"Age and creatinine must be positive values\")\n    \n\
+    \    gender = gender.lower()\n    race = race.lower()\n    \n    if gender == \"female\":\n        k = 0.7\n        a\
+    \ = -0.329\n        factor = 1.018 if race == \"black\" else 1.0\n    else:\n        k = 0.9\n        a = -0.411\n   \
+    \     factor = 1.159 if race == \"black\" else 1.0\n    \n    min_ratio = min(creatinine / k, 1)\n    max_ratio = max(creatinine\
+    \ / k, 1)\n    \n    egfr = 141 * (min_ratio ** a) * (max_ratio ** -1.209) * (0.993 ** age) * factor\n    return round(egfr,\
+    \ 1)\n\ndef calculate_meld(bilirubin: float, creatinine: float, inr: float, sodium: float = None) -> float:\n    \"\"\"\
+    Calculate MELD score for liver disease severity.\"\"\"\n    if bilirubin < 0 or creatinine < 0 or inr < 0:\n        raise\
+    \ ValueError(\"Lab values cannot be negative\")\n    \n    creatinine = min(creatinine, 4.0)\n    \n    if sodium is not\
+    \ None:\n        # MELD-Na\n        meld = 10 * (0.957 * math.log(creatinine) + 0.378 * math.log(bilirubin) + 1.120 *\
+    \ math.log(inr) + 0.643)\n        if sodium < 125:\n            meld += 1.32 * (125 - sodium) - 0.033 * meld * (125 -\
+    \ sodium)\n        elif sodium > 140:\n            meld += 1.32 * (sodium - 140)\n    else:\n        # Standard MELD\n\
+    \        meld = 10 * (0.957 * math.log(creatinine) + 0.378 * math.log(bilirubin) + 1.120 * math.log(inr)) + 6.43\n   \
+    \ \n    return round(max(meld, 6), 1)\n\ndef interpret_cbc_results(cbc: Dict[str, float], age: int, gender: str) -> Dict[str,\
+    \ Any]:\n    \"\"\"Interpret Complete Blood Count results.\"\"\"\n    reference_ranges = {\n        \"wbc\": (4.0, 11.0),\
+    \  # x10^9/L\n        \"rbc\": (4.2, 5.9) if gender.lower() == \"male\" else (3.8, 5.2),  # x10^12/L\n        \"hemoglobin\"\
+    : (13.5, 17.5) if gender.lower() == \"male\" else (12.0, 15.5),  # g/dL\n        \"hematocrit\": (41, 53) if gender.lower()\
+    \ == \"male\" else (36, 46),  # %\n        \"mcv\": (80, 100),  # fL\n        \"platelets\": (150, 450)  # x10^9/L\n \
+    \   }\n    \n    interpretations = {}\n    for param, value in cbc.items():\n        if param.lower() in reference_ranges:\n\
+    \            low, high = reference_ranges[param.lower()]\n            status = 'normal' if low <= value <= high else 'low'\
+    \ if value < low else 'high'\n            interpretations[param] = {\n                'value': value,\n              \
+    \  'reference_range': f'{low}-{high}',\n                'status': status\n            }\n    \n    return {\n        'interpretations':\
+    \ interpretations,\n        'patient_info': {'age': age, 'gender': gender},\n        'flags': [k for k, v in interpretations.items()\
+    \ if v['status'] != 'normal']\n    }\n\n\ndef generate_differential_diagnosis(symptoms: List[str], age: int, gender: str,\n\
+    \                                     medical_history: List[str] = None) -> List[Dict[str, Any]]:\n    \"\"\"Generate\
+    \ differential diagnosis based on symptoms.\"\"\"\n    symptom_disease_map = {\n        'chest_pain': [\n            {'condition':\
+    \ 'Acute Coronary Syndrome', 'probability': 0.3, 'urgency': 'emergent'},\n            {'condition': 'Pulmonary Embolism',\
+    \ 'probability': 0.15, 'urgency': 'emergent'},\n            {'condition': 'Costochondritis', 'probability': 0.2, 'urgency':\
+    \ 'routine'},\n            {'condition': 'GERD', 'probability': 0.25, 'urgency': 'routine'},\n            {'condition':\
+    \ 'Pneumothorax', 'probability': 0.1, 'urgency': 'emergent'}\n        ],\n        'headache': [\n            {'condition':\
+    \ 'Tension Headache', 'probability': 0.4, 'urgency': 'routine'},\n            {'condition': 'Migraine', 'probability':\
+    \ 0.3, 'urgency': 'routine'},\n            {'condition': 'Subarachnoid Hemorrhage', 'probability': 0.05, 'urgency': 'emergent'},\n\
+    \            {'condition': 'Meningitis', 'probability': 0.05, 'urgency': 'emergent'},\n            {'condition': 'Sinusitis',\
+    \ 'probability': 0.2, 'urgency': 'routine'}\n        ],\n        'abdominal_pain': [\n            {'condition': 'Appendicitis',\
+    \ 'probability': 0.15, 'urgency': 'urgent'},\n            {'condition': 'Cholecystitis', 'probability': 0.1, 'urgency':\
+    \ 'urgent'},\n            {'condition': 'Gastritis', 'probability': 0.25, 'urgency': 'routine'},\n            {'condition':\
+    \ 'Pancreatitis', 'probability': 0.1, 'urgency': 'urgent'},\n            {'condition': 'IBS', 'probability': 0.2, 'urgency':\
+    \ 'routine'}\n        ],\n        'shortness_of_breath': [\n            {'condition': 'Asthma', 'probability': 0.25, 'urgency':\
+    \ 'urgent'},\n            {'condition': 'COPD Exacerbation', 'probability': 0.2, 'urgency': 'urgent'},\n            {'condition':\
+    \ 'Heart Failure', 'probability': 0.15, 'urgency': 'emergent'},\n            {'condition': 'Pneumonia', 'probability':\
+    \ 0.2, 'urgency': 'urgent'},\n            {'condition': 'Anxiety', 'probability': 0.15, 'urgency': 'routine'}\n      \
+    \  ]\n    }\n    \n    differentials = []\n    seen = set()\n    for symptom in symptoms:\n        symptom_key = symptom.lower().replace('\
+    \ ', '_')\n        if symptom_key in symptom_disease_map:\n            for dx in symptom_disease_map[symptom_key]:\n \
+    \               if dx['condition'] not in seen:\n                    differentials.append(dx)\n                    seen.add(dx['condition'])\n\
+    \    \n    # Adjust for age\n    if age > 65:\n        for dx in differentials:\n            if dx['urgency'] == 'emergent':\n\
+    \                dx['probability'] = min(dx['probability'] * 1.3, 1.0)\n    \n    differentials.sort(key=lambda x: x['probability'],\
+    \ reverse=True)\n    return differentials\n\n\ndef check_drug_interactions(medications: List[str]) -> List[Dict[str, Any]]:\n\
+    \    \"\"\"Check for known drug interactions.\"\"\"\n    interaction_db = {\n        ('warfarin', 'aspirin'): {'severity':\
+    \ 'major', 'effect': 'Increased bleeding risk'},\n        ('metformin', 'contrast_dye'): {'severity': 'major', 'effect':\
+    \ 'Risk of lactic acidosis'},\n        ('ssri', 'maoi'): {'severity': 'contraindicated', 'effect': 'Serotonin syndrome\
+    \ risk'},\n        ('ace_inhibitor', 'potassium'): {'severity': 'major', 'effect': 'Hyperkalemia risk'},\n        ('statin',\
+    \ 'grapefruit'): {'severity': 'moderate', 'effect': 'Increased statin levels'},\n        ('methotrexate', 'nsaid'): {'severity':\
+    \ 'major', 'effect': 'Increased methotrexate toxicity'}\n    }\n    \n    interactions = []\n    med_lower = [m.lower()\
+    \ for m in medications]\n    \n    for (drug_a, drug_b), info in interaction_db.items():\n        if drug_a in med_lower\
+    \ and drug_b in med_lower:\n            interactions.append({\n                'drug_a': drug_a,\n                'drug_b':\
+    \ drug_b,\n                'severity': info['severity'],\n                'effect': info['effect']\n            })\n \
+    \   \n    return interactions\n\n\ndef lookup_icd10(search_term: str) -> List[Dict[str, str]]:\n    \"\"\"Look up ICD-10\
+    \ codes by search term.\"\"\"\n    icd10_db = {\n        'diabetes': [{'code': 'E11.9', 'description': 'Type 2 diabetes\
+    \ mellitus without complications'},\n                     {'code': 'E10.9', 'description': 'Type 1 diabetes mellitus without\
+    \ complications'}],\n        'hypertension': [{'code': 'I10', 'description': 'Essential (primary) hypertension'}],\n \
+    \       'heart_failure': [{'code': 'I50.9', 'description': 'Heart failure, unspecified'},\n                          {'code':\
+    \ 'I50.20', 'description': 'Unspecified systolic heart failure'}],\n        'pneumonia': [{'code': 'J18.9', 'description':\
+    \ 'Pneumonia, unspecified organism'}],\n        'depression': [{'code': 'F32.9', 'description': 'Major depressive disorder,\
+    \ single episode, unspecified'}],\n        'asthma': [{'code': 'J45.909', 'description': 'Unspecified asthma, uncomplicated'}]\n\
+    \    }\n    \n    results = []\n    search_lower = search_term.lower()\n    for key, codes in icd10_db.items():\n    \
+    \    if search_lower in key:\n            results.extend(codes)\n    return results\n\n\nclass SkillEngine:\n    \"\"\"\
+    Medical Doctor / Physician Expert skill engine.\"\"\"\n    \n    def __init__(self):\n        self.name = SKILL_METADATA['name']\n\
+    \        self.version = SKILL_METADATA['version']\n    \n    def run(self, action: str, **kwargs) -> Dict[str, Any]:\n\
+    \        actions = {\n            'differential_diagnosis': lambda: generate_differential_diagnosis(**kwargs),\n     \
+    \       'interpret_cbc': lambda: interpret_cbc_results(**kwargs),\n            'drug_interactions': lambda: check_drug_interactions(**kwargs),\n\
+    \            'icd10_lookup': lambda: lookup_icd10(**kwargs),\n            'calculate_gfr': lambda: calculate_gfr(**kwargs),\n\
+    \            'calculate_meld': lambda: calculate_meld(**kwargs),\n        }\n        if action in actions:\n         \
+    \   return actions[action]()\n        return {'error': f'Unknown action: {action}'}\n\n\nclass TestMedicalDoctor(unittest.TestCase):\n\
+    \    \"\"\"Unit tests for Medical Doctor skill.\"\"\"\n    \n    def test_metadata(self):\n        self.assertEqual(SKILL_METADATA['id'],\
+    \ 'medical_doctor')\n    \n    def test_cbc_interpretation(self):\n        cbc = {'wbc': 7.5, 'hemoglobin': 14.0, 'platelets':\
+    \ 250}\n        result = interpret_cbc_results(cbc, age=45, gender='male')\n        self.assertIn('interpretations', result)\n\
+    \        self.assertEqual(len(result['flags']), 0)\n    \n    def test_cbc_abnormal(self):\n        cbc = {'wbc': 15.0,\
+    \ 'hemoglobin': 8.0, 'platelets': 100}\n        result = interpret_cbc_results(cbc, age=45, gender='male')\n        self.assertGreater(len(result['flags']),\
+    \ 0)\n    \n    def test_differential_diagnosis(self):\n        result = generate_differential_diagnosis(\n          \
+    \  symptoms=['chest_pain'], age=55, gender='male'\n        )\n        self.assertIsInstance(result, list)\n        self.assertGreater(len(result),\
+    \ 0)\n    \n    def test_drug_interactions(self):\n        result = check_drug_interactions(['warfarin', 'aspirin'])\n\
+    \        self.assertGreater(len(result), 0)\n        self.assertEqual(result[0]['severity'], 'major')\n    \n    def test_no_drug_interactions(self):\n\
+    \        result = check_drug_interactions(['metformin', 'lisinopril'])\n        self.assertEqual(len(result), 0)\n   \
+    \ \n    def test_icd10_lookup(self):\n        result = lookup_icd10('diabetes')\n        self.assertGreater(len(result),\
+    \ 0)\n        self.assertIn('E11.9', [r['code'] for r in result])\n    \n    def test_meld_score(self):\n        score\
+    \ = calculate_meld(bilirubin=2.0, creatinine=1.5, inr=1.5)\n        self.assertIsInstance(score, float)\n        self.assertGreater(score,\
+    \ 0)\n    \n    def test_skill_engine(self):\n        engine = SkillEngine()\n        self.assertEqual(engine.name, 'Medical\
+    \ Doctor / Physician Expert')\n    \n    def test_prompts_exist(self):\n        self.assertGreater(len(EXPERT_PROMPTS),\
+    \ 0)\n\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Medical Doctor / Physician Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''medical_doctor'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

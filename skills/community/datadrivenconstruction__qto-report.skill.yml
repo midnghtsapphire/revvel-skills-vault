@@ -1,0 +1,56 @@
+name: qto-report
+title: Qto Report
+version: 1.0.0
+description: '"Generate Quantity Take-Off (QTO) reports from BIM/CAD data. Extract volumes, areas, counts by category. Group
+  elements, apply calculation rules, and create cost estimates automatically."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - qto
+  - report
+  source: clawhub-community
+  clawhub_slug: qto-report
+  clawhub_path: datadrivenconstruction/qto-report
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qto Report
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install qto-report
+
+    # Path: datadrivenconstruction/qto-report
+
+
+    ## Description
+
+    "Generate Quantity Take-Off (QTO) reports from BIM/CAD data. Extract volumes, areas, counts by category. Group elements,
+    apply calculation rules, and create cost estimates automatically."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qto-report
+
+    ```'
+examples:
+- description: Install Qto Report from ClawHub
+  usage: clawhub install qto-report
+schema_version: '1.0'

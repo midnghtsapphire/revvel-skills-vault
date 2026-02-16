@@ -1,0 +1,65 @@
+name: nas-movie-download
+title: nas-movie-download
+version: 1.0.0
+description: Search and download movies via Jackett and qBittorrent. Use when user wants to download movies or videos from
+  torrent sources, search for specific movie titles, or manage movie downloads.
+metadata:
+  author: roger0808
+  category: Search & Research
+  tags:
+  - search-research
+  - nas
+  - movie
+  - download
+  source: clawhub-community
+  clawhub_slug: nas-movie-download
+  clawhub_path: roger0808/nas-movie-download
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# nas-movie-download
+
+    # Source: ClawHub community skill by roger0808
+
+    # Install: clawhub install nas-movie-download
+
+    # Path: roger0808/nas-movie-download
+
+
+    ## Description
+
+    Search and download movies via Jackett and qBittorrent. Use when user wants to download movies or videos from torrent
+    sources, search for specific movie titles, or manage movie downloads.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/download-movie.sh
+
+    - scripts/jackett-search.sh
+
+    - scripts/qbittorrent-add.sh
+
+    - scripts/test-config.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nas-movie-download
+
+    ```'
+examples:
+- description: Install nas-movie-download from ClawHub
+  usage: clawhub install nas-movie-download
+schema_version: '1.0'

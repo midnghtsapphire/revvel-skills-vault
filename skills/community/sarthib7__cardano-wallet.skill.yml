@@ -1,0 +1,70 @@
+name: cardano-wallet
+title: Cardano Wallet
+version: 1.0.1
+description: Generate, manage, and fund Cardano wallets for OpenClaw agents
+metadata:
+  author: sarthib7
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - cardano
+  - wallet
+  source: clawhub-community
+  clawhub_slug: cardano-wallet
+  clawhub_path: sarthib7/cardano-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cardano Wallet
+
+    # Source: ClawHub community skill by sarthib7
+
+    # Install: clawhub install cardano-wallet
+
+    # Path: sarthib7/cardano-wallet
+
+
+    ## Description
+
+    Generate, manage, and fund Cardano wallets for OpenClaw agents
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - plugin.json
+
+    - tsconfig.json
+
+    - src/index.ts
+
+    - src/tools/index.ts
+
+    - src/tools/manifest.json
+
+    - src/utils/credential-store.ts
+
+    - src/utils/encryption.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cardano-wallet
+
+    ```'
+examples:
+- description: Install Cardano Wallet from ClawHub
+  usage: clawhub install cardano-wallet
+schema_version: '1.0'

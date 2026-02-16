@@ -1,0 +1,60 @@
+name: uk-prayer-times
+title: UK Prayer Times
+version: 1.4.4
+description: Get instant, accurate Islamic prayer times for any UK location. Auto-detects your city or accepts any UK location
+  name (cities, towns, boroughs). Handles typos with smart fuzzy search. Shows Fajr, Sunrise, Dhuhr, Asr, Maghrib, and Isha
+  times in 12-hour format. Uses ISNA calculation method (UK standa
+metadata:
+  author: clinicode
+  category: Search & Research
+  tags:
+  - search-research
+  - prayer
+  - times
+  source: clawhub-community
+  clawhub_slug: uk-prayer-times
+  clawhub_path: clinicode/uk-prayer-times
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UK Prayer Times
+
+    # Source: ClawHub community skill by clinicode
+
+    # Install: clawhub install uk-prayer-times
+
+    # Path: clinicode/uk-prayer-times
+
+
+    ## Description
+
+    Get instant, accurate Islamic prayer times for any UK location. Auto-detects your city or accepts any UK location name
+    (cities, towns, boroughs). Handles typos with smart fuzzy search. Shows Fajr, Sunrise, Dhuhr, Asr, Maghrib, and Isha times
+    in 12-hour format. Uses ISNA calculation method (UK standa
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/uk_prayer_times.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install uk-prayer-times
+
+    ```'
+examples:
+- description: Install UK Prayer Times from ClawHub
+  usage: clawhub install uk-prayer-times
+schema_version: '1.0'

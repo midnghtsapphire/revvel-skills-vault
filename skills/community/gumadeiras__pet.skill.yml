@@ -1,0 +1,53 @@
+name: pet
+title: pet
+version: 1.0.0
+description: Simple command-line snippet manager. Use it to save and reuse complex commands.
+metadata:
+  author: gumadeiras
+  category: General
+  tags:
+  - general
+  - pet
+  source: clawhub-community
+  clawhub_slug: pet
+  clawhub_path: gumadeiras/pet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# pet
+
+    # Source: ClawHub community skill by gumadeiras
+
+    # Install: clawhub install pet
+
+    # Path: gumadeiras/pet
+
+
+    ## Description
+
+    Simple command-line snippet manager. Use it to save and reuse complex commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pet
+
+    ```'
+examples:
+- description: Install pet from ClawHub
+  usage: clawhub install pet
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: portfolio-manager
+title: Portfolio Manager
+version: 0.1.0
+description: Comprehensive portfolio analysis using Alpaca MCP Server integration to fetch holdings and positions, then analyze
+  asset allocation, risk metrics, individual stock positions, diversification, and generate rebalancing recommendations. Use
+  when user requests portfolio review, position analysis, risk a
+metadata:
+  author: veeramanikandanr48
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - portfolio
+  - manager
+  source: clawhub-community
+  clawhub_slug: portfolio-manager
+  clawhub_path: veeramanikandanr48/portfolio-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Portfolio Manager
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install portfolio-manager
+
+    # Path: veeramanikandanr48/portfolio-manager
+
+
+    ## Description
+
+    Comprehensive portfolio analysis using Alpaca MCP Server integration to fetch holdings and positions, then analyze asset
+    allocation, risk metrics, individual stock positions, diversification, and generate rebalancing recommendations. Use when
+    user requests portfolio review, position analysis, risk a
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/alpaca-mcp-setup.md
+
+    - references/asset-allocation.md
+
+    - references/diversification-principles.md
+
+    - references/portfolio-risk-metrics.md
+
+    - references/position-evaluation.md
+
+    - references/rebalancing-strategies.md
+
+    - references/risk-profile-questionnaire.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install portfolio-manager
+
+    ```'
+examples:
+- description: Install Portfolio Manager from ClawHub
+  usage: clawhub install portfolio-manager
+schema_version: '1.0'

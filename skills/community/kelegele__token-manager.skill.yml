@@ -1,0 +1,62 @@
+name: token-manager
+title: Token Manager
+version: 1.2.0
+description: Universal LLM Token Manager - Monitor usage and provide cost-saving recommendations for Kimi, OpenAI, Anthropic,
+  Gemini, and local models. Features scheduled monitoring, cross-session tracking, and proactive alerts.
+metadata:
+  author: kelegele
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - token
+  - manager
+  source: clawhub-community
+  clawhub_slug: token-manager
+  clawhub_path: kelegele/token-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Token Manager
+
+    # Source: ClawHub community skill by kelegele
+
+    # Install: clawhub install token-manager
+
+    # Path: kelegele/token-manager
+
+
+    ## Description
+
+    Universal LLM Token Manager - Monitor usage and provide cost-saving recommendations for Kimi, OpenAI, Anthropic, Gemini,
+    and local models. Features scheduled monitoring, cross-session tracking, and proactive alerts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/manager.js
+
+    - scripts/scheduler.js
+
+    - scripts/session-tracker.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install token-manager
+
+    ```'
+examples:
+- description: Install Token Manager from ClawHub
+  usage: clawhub install token-manager
+schema_version: '1.0'

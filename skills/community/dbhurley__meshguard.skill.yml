@@ -1,0 +1,59 @@
+name: meshguard
+title: MeshGuard
+version: 1.0.1
+description: Manage MeshGuard AI agent governance - agents, policies, audit logs, and monitoring.
+metadata:
+  author: dbhurley
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - meshguard
+  source: clawhub-community
+  clawhub_slug: meshguard
+  clawhub_path: dbhurley/meshguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MeshGuard
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install meshguard
+
+    # Path: dbhurley/meshguard
+
+
+    ## Description
+
+    Manage MeshGuard AI agent governance - agents, policies, audit logs, and monitoring.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - scripts/meshguard-cli.sh
+
+    - scripts/meshguard-setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meshguard
+
+    ```'
+examples:
+- description: Install MeshGuard from ClawHub
+  usage: clawhub install meshguard
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: mailgun
+title: Mailgun
+version: 1.0.2
+description: Send emails via Mailgun API. Use when the user needs to send emails programmatically, such as newsletters, notifications,
+  alerts, or automated reports. Requires MAILGUN_API_KEY and MAILGUN_DOMAIN environment variables to be configured.
+metadata:
+  author: alphafactor
+  category: Communication
+  tags:
+  - communication
+  - mailgun
+  source: clawhub-community
+  clawhub_slug: mailgun
+  clawhub_path: alphafactor/mailgun
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mailgun
+
+    # Source: ClawHub community skill by alphafactor
+
+    # Install: clawhub install mailgun
+
+    # Path: alphafactor/mailgun
+
+
+    ## Description
+
+    Send emails via Mailgun API. Use when the user needs to send emails programmatically, such as newsletters, notifications,
+    alerts, or automated reports. Requires MAILGUN_API_KEY and MAILGUN_DOMAIN environment variables to be configured.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/send_email.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mailgun
+
+    ```'
+examples:
+- description: Install Mailgun from ClawHub
+  usage: clawhub install mailgun
+schema_version: '1.0'

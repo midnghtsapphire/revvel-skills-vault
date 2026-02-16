@@ -1,0 +1,66 @@
+name: polymarket-btc15m
+title: test
+version: 1.0.0
+description: Trade Polymarket Bitcoin Up/Down 15-minute markets using TA signals. Supports Clawbot mode (dynamic sizing, TP/SL,
+  pre-settlement) or fixed mode. Use when checking signals, placing trades, or automating via private key.
+metadata:
+  author: krajekisbtc
+  category: Development & Coding
+  tags:
+  - development-coding
+  - polymarket
+  - btc15m
+  source: clawhub-community
+  clawhub_slug: tests
+  clawhub_path: krajekisbtc/tests
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# test
+
+    # Source: ClawHub community skill by krajekisbtc
+
+    # Install: clawhub install tests
+
+    # Path: krajekisbtc/tests
+
+
+    ## Description
+
+    Trade Polymarket Bitcoin Up/Down 15-minute markets using TA signals. Supports Clawbot mode (dynamic sizing, TP/SL, pre-settlement)
+    or fixed mode. Use when checking signals, placing trades, or automating via private key.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - clawbot-skill/scripts/execute-trade.sh
+
+    - clawbot-skill/scripts/get-signal.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tests
+
+    ```'
+examples:
+- description: Install test from ClawHub
+  usage: clawhub install tests
+schema_version: '1.0'

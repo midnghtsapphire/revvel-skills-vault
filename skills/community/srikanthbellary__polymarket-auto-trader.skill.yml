@@ -1,0 +1,71 @@
+name: polymarket-auto-trader
+title: Polymarket Auto-Trader
+version: 1.0.1
+description: Autonomous Polymarket prediction market trading agent. Scans markets, evaluates probabilities with LLM, sizes
+  positions with Kelly criterion, and executes trades via CLOB API. Use when user wants to trade on Polymarket, set up automated
+  prediction market trading, or build a trading bot. Supports cro
+metadata:
+  author: srikanthbellary
+  category: Development & Coding
+  tags:
+  - development-coding
+  - polymarket
+  - auto
+  - trader
+  source: clawhub-community
+  clawhub_slug: polymarket-auto-trader
+  clawhub_path: srikanthbellary/polymarket-auto-trader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polymarket Auto-Trader
+
+    # Source: ClawHub community skill by srikanthbellary
+
+    # Install: clawhub install polymarket-auto-trader
+
+    # Path: srikanthbellary/polymarket-auto-trader
+
+
+    ## Description
+
+    Autonomous Polymarket prediction market trading agent. Scans markets, evaluates probabilities with LLM, sizes positions
+    with Kelly criterion, and executes trades via CLOB API. Use when user wants to trade on Polymarket, set up automated prediction
+    market trading, or build a trading bot. Supports cro
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/contract-addresses.md
+
+    - references/polymarket-api.md
+
+    - scripts/approve_contracts.py
+
+    - scripts/pnl_tracker.py
+
+    - scripts/run_trade.py
+
+    - scripts/setup_vps.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polymarket-auto-trader
+
+    ```'
+examples:
+- description: Install Polymarket Auto-Trader from ClawHub
+  usage: clawhub install polymarket-auto-trader
+schema_version: '1.0'

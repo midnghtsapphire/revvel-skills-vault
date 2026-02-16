@@ -1,0 +1,62 @@
+name: trending-skills
+title: Trending Skills
+version: 0.1.0
+description: Fetches skills.sh trending rankings. Use when asking about skill rankings or popular tools.
+metadata:
+  author: hjw21century
+  category: General
+  tags:
+  - general
+  - trending
+  - skills
+  source: clawhub-community
+  clawhub_slug: trending-skills
+  clawhub_path: hjw21century/trending-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trending Skills
+
+    # Source: ClawHub community skill by hjw21century
+
+    # Install: clawhub install trending-skills
+
+    # Path: hjw21century/trending-skills
+
+
+    ## Description
+
+    Fetches skills.sh trending rankings. Use when asking about skill rankings or popular tools.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - src/__init__.py
+
+    - src/config.py
+
+    - src/detail_fetcher.py
+
+    - src/skills_fetcher.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trending-skills
+
+    ```'
+examples:
+- description: Install Trending Skills from ClawHub
+  usage: clawhub install trending-skills
+schema_version: '1.0'

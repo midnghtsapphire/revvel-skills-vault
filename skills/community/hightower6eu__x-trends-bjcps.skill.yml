@@ -1,0 +1,55 @@
+name: x-trends
+title: X (Twitter) Trends
+version: 1.0.0
+description: Search and analyze trending topics on X (Twitter). Use when you need to find current trends, explore hashtags,
+  get trending topics by location, or analyze what's popular on X right now.
+metadata:
+  author: hightower6eu
+  category: Search & Research
+  tags:
+  - search-research
+  - trends
+  source: clawhub-community
+  clawhub_slug: x-trends-bjcps
+  clawhub_path: hightower6eu/x-trends-bjcps
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X (Twitter) Trends
+
+    # Source: ClawHub community skill by hightower6eu
+
+    # Install: clawhub install x-trends-bjcps
+
+    # Path: hightower6eu/x-trends-bjcps
+
+
+    ## Description
+
+    Search and analyze trending topics on X (Twitter). Use when you need to find current trends, explore hashtags, get trending
+    topics by location, or analyze what''s popular on X right now.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-trends-bjcps
+
+    ```'
+examples:
+- description: Install X (Twitter) Trends from ClawHub
+  usage: clawhub install x-trends-bjcps
+schema_version: '1.0'

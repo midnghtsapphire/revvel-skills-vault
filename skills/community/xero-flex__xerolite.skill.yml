@@ -1,0 +1,67 @@
+name: xerolite
+title: Xerolite
+version: 1.0.0
+description: '"Integrate OpenClaw with Xerolite trading platform. Use when: querying Xerolite API, placing orders, searching
+  contracts, or processing Xerolite webhooks."'
+metadata:
+  author: xero-flex
+  category: Search & Research
+  tags:
+  - search-research
+  - xerolite
+  source: clawhub-community
+  clawhub_slug: xerolite
+  clawhub_path: xero-flex/xerolite
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xerolite
+
+    # Source: ClawHub community skill by xero-flex
+
+    # Install: clawhub install xerolite
+
+    # Path: xero-flex/xerolite
+
+
+    ## Description
+
+    "Integrate OpenClaw with Xerolite trading platform. Use when: querying Xerolite API, placing orders, searching contracts,
+    or processing Xerolite webhooks."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API.md
+
+    - references/WEBHOOKS.md
+
+    - scripts/install.sh
+
+    - scripts/uninstall.sh
+
+    - scripts/xerolite.mjs
+
+    - transforms/xerolite.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xerolite
+
+    ```'
+examples:
+- description: Install Xerolite from ClawHub
+  usage: clawhub install xerolite
+schema_version: '1.0'

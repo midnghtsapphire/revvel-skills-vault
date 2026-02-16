@@ -1,0 +1,64 @@
+name: kaspa_wallet
+title: Kaspa Wallet
+version: 1.0.0
+description: Send and receive KAS cryptocurrency. Check balances, send payments, generate wallets.
+metadata:
+  author: manyfestation
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - kaspa
+  - wallet
+  source: clawhub-community
+  clawhub_slug: kaspa-wallet
+  clawhub_path: manyfestation/kaspa-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kaspa Wallet
+
+    # Source: ClawHub community skill by manyfestation
+
+    # Install: clawhub install kaspa-wallet
+
+    # Path: manyfestation/kaspa-wallet
+
+
+    ## Description
+
+    Send and receive KAS cryptocurrency. Check balances, send payments, generate wallets.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.py
+
+    - kaswallet.sh
+
+    - requirements.txt
+
+    - scripts/kaswallet.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kaspa-wallet
+
+    ```'
+examples:
+- description: Install Kaspa Wallet from ClawHub
+  usage: clawhub install kaspa-wallet
+schema_version: '1.0'

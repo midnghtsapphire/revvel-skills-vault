@@ -1,0 +1,63 @@
+name: netpad
+title: NetPad - Build forms, workflows and manage MongoDB data
+version: 1.0.0
+description: '"Manage NetPad forms, submissions, users, and RBAC. Use when: (1) Creating forms with custom fields, (2) Submitting
+  data to forms, (3) Querying form submissions, (4) Managing users/groups/roles (RBAC), (5) Installing NetPad apps from marketplace.
+  Requires NETPAD_API_KEY for API, or `netpad login` fo'
+metadata:
+  author: mrlynn
+  category: Development & Coding
+  tags:
+  - development-coding
+  - netpad
+  source: clawhub-community
+  clawhub_slug: netpad
+  clawhub_path: mrlynn/netpad
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NetPad - Build forms, workflows and manage MongoDB data
+
+    # Source: ClawHub community skill by mrlynn
+
+    # Install: clawhub install netpad
+
+    # Path: mrlynn/netpad
+
+
+    ## Description
+
+    "Manage NetPad forms, submissions, users, and RBAC. Use when: (1) Creating forms with custom fields, (2) Submitting data
+    to forms, (3) Querying form submissions, (4) Managing users/groups/roles (RBAC), (5) Installing NetPad apps from marketplace.
+    Requires NETPAD_API_KEY for API, or `netpad login` fo
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-endpoints.md
+
+    - references/cli-commands.md
+
+    - scripts/netpad.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install netpad
+
+    ```'
+examples:
+- description: Install NetPad - Build forms, workflows and manage MongoDB data from ClawHub
+  usage: clawhub install netpad
+schema_version: '1.0'

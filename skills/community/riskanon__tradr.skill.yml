@@ -1,0 +1,71 @@
+name: tradr
+title: tradr
+version: 1.0.0
+description: Onchain trade execution engine. Feed a CA + score, get full trade lifecycle — sized entry, mode-based exits,
+  on-chain verification, and trade logging. Requires Bankr skill.
+metadata:
+  author: riskanon
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - tradr
+  source: clawhub-community
+  clawhub_slug: tradr
+  clawhub_path: riskanon/tradr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# tradr
+
+    # Source: ClawHub community skill by riskanon
+
+    # Install: clawhub install tradr
+
+    # Path: riskanon/tradr
+
+
+    ## Description
+
+    Onchain trade execution engine. Feed a CA + score, get full trade lifecycle — sized entry, mode-based exits, on-chain
+    verification, and trade logging. Requires Bankr skill.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config-template.json
+
+    - adapters/README.md
+
+    - adapters/example-adapter.py
+
+    - dashboard/index.html
+
+    - scripts/exit-manager.py
+
+    - scripts/notify-telegram.sh
+
+    - scripts/setup.sh
+
+    - scripts/test-tradr.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tradr
+
+    ```'
+examples:
+- description: Install tradr from ClawHub
+  usage: clawhub install tradr
+schema_version: '1.0'

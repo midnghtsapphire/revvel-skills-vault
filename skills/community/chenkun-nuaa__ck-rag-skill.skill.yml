@@ -1,0 +1,61 @@
+name: ragflow-kb
+title: ck-rag-skill
+version: 1.0.0
+description: RAGFlow知识库问答与操作指导。调用RAGFlow知识库API进行智能问答，并基于知识库返回结果提供agent操作建议。支持流式输出，耐心等待完整响应生成。当用户提出技术问题、故障排查、操作指导或需要知识库检索时触发此技能。适用于容器/Docker问题、系统运维、开发相关问题等场景。
+metadata:
+  author: chenkun-nuaa
+  category: Development & Coding
+  tags:
+  - development-coding
+  - ragflow
+  source: clawhub-community
+  clawhub_slug: ck-rag-skill
+  clawhub_path: chenkun-nuaa/ck-rag-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ck-rag-skill
+
+    # Source: ClawHub community skill by chenkun-nuaa
+
+    # Install: clawhub install ck-rag-skill
+
+    # Path: chenkun-nuaa/ck-rag-skill
+
+
+    ## Description
+
+    RAGFlow知识库问答与操作指导。调用RAGFlow知识库API进行智能问答，并基于知识库返回结果提供agent操作建议。支持流式输出，耐心等待完整响应生成。当用户提出技术问题、故障排查、操作指导或需要知识库检索时触发此技能。适用于容器/Docker问题、系统运维、开发相关问题等场景。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - TROUBLESHOOTING.md
+
+    - _meta.json
+
+    - scripts/query_ragflow.py
+
+    - scripts/quick_test.py
+
+    - scripts/test_api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ck-rag-skill
+
+    ```'
+examples:
+- description: Install ck-rag-skill from ClawHub
+  usage: clawhub install ck-rag-skill
+schema_version: '1.0'

@@ -1,0 +1,67 @@
+name: parallel
+title: OpenClaw Parallel
+version: 1.0.7
+description: High-accuracy web search and research via Parallel.ai API. Optimized for AI agents with rich excerpts and citations.
+  Supports authenticated/private sources.
+metadata:
+  author: mvanhorn
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - parallel
+  source: clawhub-community
+  clawhub_slug: parallel
+  clawhub_path: mvanhorn/parallel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Parallel
+
+    # Source: ClawHub community skill by mvanhorn
+
+    # Install: clawhub install parallel
+
+    # Path: mvanhorn/parallel
+
+
+    ## Description
+
+    High-accuracy web search and research via Parallel.ai API. Optimized for AI agents with rich excerpts and citations. Supports
+    authenticated/private sources.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/extract.py
+
+    - scripts/findall.py
+
+    - scripts/monitor.py
+
+    - scripts/parallel.sh
+
+    - scripts/search.py
+
+    - scripts/task.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install parallel
+
+    ```'
+examples:
+- description: Install OpenClaw Parallel from ClawHub
+  usage: clawhub install parallel
+schema_version: '1.0'

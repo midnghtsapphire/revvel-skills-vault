@@ -1,0 +1,56 @@
+name: web-search
+title: Search
+version: 1.0.0
+description: Search the web for real-time information.
+metadata:
+  author: chamaka98
+  category: Search & Research
+  tags:
+  - search-research
+  - web
+  - search
+  source: clawhub-community
+  clawhub_slug: search
+  clawhub_path: chamaka98/search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Search
+
+    # Source: ClawHub community skill by chamaka98
+
+    # Install: clawhub install search
+
+    # Path: chamaka98/search
+
+
+    ## Description
+
+    Search the web for real-time information.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install search
+
+    ```'
+examples:
+- description: Install Search from ClawHub
+  usage: clawhub install search
+schema_version: '1.0'

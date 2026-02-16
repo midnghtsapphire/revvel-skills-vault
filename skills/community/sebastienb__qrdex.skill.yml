@@ -1,0 +1,61 @@
+name: qrdex
+title: QRdex
+version: 1.0.0
+description: Create, manage, and track QR codes using the QRdex.io REST API. Use when working with QR code generation, URL
+  shortening with QR codes, WiFi QR codes, email/SMS/WhatsApp QR codes, scan tracking, or any QRdex.io operations. Supports
+  all QR types (url, email, telephone, sms, whatsapp, wifi) with custo
+metadata:
+  author: sebastienb
+  category: Communication
+  tags:
+  - communication
+  - qrdex
+  source: clawhub-community
+  clawhub_slug: qrdex
+  clawhub_path: sebastienb/qrdex
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# QRdex
+
+    # Source: ClawHub community skill by sebastienb
+
+    # Install: clawhub install qrdex
+
+    # Path: sebastienb/qrdex
+
+
+    ## Description
+
+    Create, manage, and track QR codes using the QRdex.io REST API. Use when working with QR code generation, URL shortening
+    with QR codes, WiFi QR codes, email/SMS/WhatsApp QR codes, scan tracking, or any QRdex.io operations. Supports all QR
+    types (url, email, telephone, sms, whatsapp, wifi) with custo
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API_REFERENCE.md
+
+    - scripts/qrdex_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qrdex
+
+    ```'
+examples:
+- description: Install QRdex from ClawHub
+  usage: clawhub install qrdex
+schema_version: '1.0'

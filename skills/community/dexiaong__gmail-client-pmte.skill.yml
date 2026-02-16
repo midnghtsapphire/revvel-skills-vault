@@ -1,0 +1,54 @@
+name: gmail-client-pm
+title: Gmail Client
+version: 1.0.0
+description: Read and send emails via Gmail. Use to list unread messages, read specific emails by ID, or send new emails.
+metadata:
+  author: dexiaong
+  category: Communication
+  tags:
+  - communication
+  - gmail
+  - client
+  source: clawhub-community
+  clawhub_slug: gmail-client-pmte
+  clawhub_path: dexiaong/gmail-client-pmte
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gmail Client
+
+    # Source: ClawHub community skill by dexiaong
+
+    # Install: clawhub install gmail-client-pmte
+
+    # Path: dexiaong/gmail-client-pmte
+
+
+    ## Description
+
+    Read and send emails via Gmail. Use to list unread messages, read specific emails by ID, or send new emails.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gmail-client-pmte
+
+    ```'
+examples:
+- description: Install Gmail Client from ClawHub
+  usage: clawhub install gmail-client-pmte
+schema_version: '1.0'

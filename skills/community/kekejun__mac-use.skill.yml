@@ -1,0 +1,62 @@
+name: mac-use
+title: mac-use
+version: 1.0.0
+description: Control macOS GUI apps visually — take screenshots, click, scroll, type. Use when the user asks to interact with
+  any Mac desktop application's graphical interface.
+metadata:
+  author: kekejun
+  category: System & OS
+  tags:
+  - system-os
+  - mac
+  - use
+  source: clawhub-community
+  clawhub_slug: mac-use
+  clawhub_path: kekejun/mac-use
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# mac-use
+
+    # Source: ClawHub community skill by kekejun
+
+    # Install: clawhub install mac-use
+
+    # Path: kekejun/mac-use
+
+
+    ## Description
+
+    Control macOS GUI apps visually — take screenshots, click, scroll, type. Use when the user asks to interact with any Mac
+    desktop application''s graphical interface.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/mac_use.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mac-use
+
+    ```'
+examples:
+- description: Install mac-use from ClawHub
+  usage: clawhub install mac-use
+schema_version: '1.0'

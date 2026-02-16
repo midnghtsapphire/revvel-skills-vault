@@ -1,0 +1,55 @@
+name: railway
+title: Railway
+version: 0.1.0
+description: Deploy and manage applications on Railway.app. Use for deploying projects, managing services, viewing logs, setting
+  environment variables, and managing databases. Railway is a modern cloud platform for deploying apps with zero configuration.
+metadata:
+  author: leicao-me
+  category: Development & Coding
+  tags:
+  - development-coding
+  - railway
+  source: clawhub-community
+  clawhub_slug: railway-skill
+  clawhub_path: leicao-me/railway-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Railway
+
+    # Source: ClawHub community skill by leicao-me
+
+    # Install: clawhub install railway-skill
+
+    # Path: leicao-me/railway-skill
+
+
+    ## Description
+
+    Deploy and manage applications on Railway.app. Use for deploying projects, managing services, viewing logs, setting environment
+    variables, and managing databases. Railway is a modern cloud platform for deploying apps with zero configuration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install railway-skill
+
+    ```'
+examples:
+- description: Install Railway from ClawHub
+  usage: clawhub install railway-skill
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: _food_tracker_
+title: Food Tracker
+version: 1.0.0
+description: '"Your intelligent food system. Absorbs, analyzes, and organizes everything you eat."'
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - '"food'
+  - tracker"
+  source: clawhub-community
+  clawhub_slug: food
+  clawhub_path: ivangdavila/food
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Food Tracker
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install food
+
+    # Path: ivangdavila/food
+
+
+    ## Description
+
+    "Your intelligent food system. Absorbs, analyzes, and organizes everything you eat."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - processing.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install food
+
+    ```'
+examples:
+- description: Install Food Tracker from ClawHub
+  usage: clawhub install food
+schema_version: '1.0'

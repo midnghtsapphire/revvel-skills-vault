@@ -1,0 +1,56 @@
+name: dns-resolver
+title: DNS Lookup
+version: 1.0.0
+description: Perform detailed DNS lookups, check record types, and verify DNS propagation across multiple servers.
+metadata:
+  author: sa9saq
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - dns
+  - resolver
+  source: clawhub-community
+  clawhub_slug: dns-resolver
+  clawhub_path: sa9saq/dns-resolver
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DNS Lookup
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install dns-resolver
+
+    # Path: sa9saq/dns-resolver
+
+
+    ## Description
+
+    Perform detailed DNS lookups, check record types, and verify DNS propagation across multiple servers.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dns-resolver
+
+    ```'
+examples:
+- description: Install DNS Lookup from ClawHub
+  usage: clawhub install dns-resolver
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: system_resource_monitor
+title: System Resource Monitor
+version: 1.0.0
+description: A clean, reliable system resource monitor for CPU load, RAM, Swap, and Disk usage. Optimized for OpenClaw.
+metadata:
+  author: passersss
+  category: System & OS
+  tags:
+  - system-os
+  - system
+  - resource
+  - monitor
+  source: clawhub-community
+  clawhub_slug: system-resource-monitor
+  clawhub_path: passersss/system-resource-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# System Resource Monitor
+
+    # Source: ClawHub community skill by passersss
+
+    # Install: clawhub install system-resource-monitor
+
+    # Path: passersss/system-resource-monitor
+
+
+    ## Description
+
+    A clean, reliable system resource monitor for CPU load, RAM, Swap, and Disk usage. Optimized for OpenClaw.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/monitor.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install system-resource-monitor
+
+    ```'
+examples:
+- description: Install System Resource Monitor from ClawHub
+  usage: clawhub install system-resource-monitor
+schema_version: '1.0'

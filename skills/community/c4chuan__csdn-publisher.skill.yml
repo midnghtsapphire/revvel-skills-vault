@@ -1,0 +1,58 @@
+name: csdn-publisher
+title: Csdn Publisher
+version: 2.2.0
+description: 写文章并发布到 CSDN。使用浏览器自动化 + 扫码登录。支持通过 Telegram 发送二维码，无需 VNC。集成 blog-writer 写作方法论，产出高质量、有个人风格的技术文章。
+metadata:
+  author: c4chuan
+  category: Social Media
+  tags:
+  - social-media
+  - csdn
+  - publisher
+  source: clawhub-community
+  clawhub_slug: csdn-publisher
+  clawhub_path: c4chuan/csdn-publisher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Csdn Publisher
+
+    # Source: ClawHub community skill by c4chuan
+
+    # Install: clawhub install csdn-publisher
+
+    # Path: c4chuan/csdn-publisher
+
+
+    ## Description
+
+    写文章并发布到 CSDN。使用浏览器自动化 + 扫码登录。支持通过 Telegram 发送二维码，无需 VNC。集成 blog-writer 写作方法论，产出高质量、有个人风格的技术文章。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - style-guide-cn.md
+
+    - scripts/inject-content.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install csdn-publisher
+
+    ```'
+examples:
+- description: Install Csdn Publisher from ClawHub
+  usage: clawhub install csdn-publisher
+schema_version: '1.0'

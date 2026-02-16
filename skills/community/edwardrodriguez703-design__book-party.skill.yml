@@ -1,0 +1,56 @@
+name: book-party
+title: Book Party
+version: 1.0.1
+description: Book party services through Lokuli MCP. Use when user needs to find and book party. Triggers on requests like
+  "book a party", "find party near me", or any party service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - party
+  source: clawhub-community
+  clawhub_slug: book-party
+  clawhub_path: edwardrodriguez703-design/book-party
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Party
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-party
+
+    # Path: edwardrodriguez703-design/book-party
+
+
+    ## Description
+
+    Book party services through Lokuli MCP. Use when user needs to find and book party. Triggers on requests like "book a
+    party", "find party near me", or any party service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-party
+
+    ```'
+examples:
+- description: Install Book Party from ClawHub
+  usage: clawhub install book-party
+schema_version: '1.0'

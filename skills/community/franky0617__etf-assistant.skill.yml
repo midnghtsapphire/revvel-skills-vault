@@ -1,0 +1,56 @@
+name: etf-assistant
+title: ETF投资助理
+version: 1.0.1
+description: '"ETF投资助理 / ETF Investment Assistant - 查询行情、筛选ETF、对比分析、定投计算。支持沪深300、创业板、科创50、纳指等主流ETF。"'
+metadata:
+  author: franky0617
+  category: General
+  tags:
+  - general
+  - etf
+  - assistant
+  source: clawhub-community
+  clawhub_slug: etf-assistant
+  clawhub_path: franky0617/etf-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ETF投资助理
+
+    # Source: ClawHub community skill by franky0617
+
+    # Install: clawhub install etf-assistant
+
+    # Path: franky0617/etf-assistant
+
+
+    ## Description
+
+    "ETF投资助理 / ETF Investment Assistant - 查询行情、筛选ETF、对比分析、定投计算。支持沪深300、创业板、科创50、纳指等主流ETF。"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - etf-assistant.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install etf-assistant
+
+    ```'
+examples:
+- description: Install ETF投资助理 from ClawHub
+  usage: clawhub install etf-assistant
+schema_version: '1.0'

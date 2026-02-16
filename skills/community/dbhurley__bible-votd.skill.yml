@@ -1,0 +1,55 @@
+name: bible
+title: Bible Verse of the Day
+version: 1.0.1
+description: Get the Bible.com Verse of the Day with shareable image.
+metadata:
+  author: dbhurley
+  category: Media & Content
+  tags:
+  - media-content
+  - bible
+  source: clawhub-community
+  clawhub_slug: bible-votd
+  clawhub_path: dbhurley/bible-votd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bible Verse of the Day
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install bible-votd
+
+    # Path: dbhurley/bible-votd
+
+
+    ## Description
+
+    Get the Bible.com Verse of the Day with shareable image.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - votd.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bible-votd
+
+    ```'
+examples:
+- description: Install Bible Verse of the Day from ClawHub
+  usage: clawhub install bible-votd
+schema_version: '1.0'

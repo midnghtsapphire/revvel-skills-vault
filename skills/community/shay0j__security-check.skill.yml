@@ -1,0 +1,58 @@
+name: security-audit
+title: Security Check
+version: 1.0.1
+description: Comprehensive security auditing for Clawdbot deployments. Scans for exposed credentials, open ports, weak configs,
+  and vulnerabilities. Auto-fix mode included.
+metadata:
+  author: shay0j
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - audit
+  source: clawhub-community
+  clawhub_slug: security-check
+  clawhub_path: shay0j/security-check
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Check
+
+    # Source: ClawHub community skill by shay0j
+
+    # Install: clawhub install security-check
+
+    # Path: shay0j/security-check
+
+
+    ## Description
+
+    Comprehensive security auditing for Clawdbot deployments. Scans for exposed credentials, open ports, weak configs, and
+    vulnerabilities. Auto-fix mode included.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/audit.cjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-check
+
+    ```'
+examples:
+- description: Install Security Check from ClawHub
+  usage: clawhub install security-check
+schema_version: '1.0'

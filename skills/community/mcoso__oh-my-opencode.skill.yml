@@ -1,0 +1,65 @@
+name: oh-my-opencode
+title: Oh My OpenCode
+version: 1.0.0
+description: Multi-agent orchestration plugin for OpenCode. Use when the user wants to install, configure, or operate oh-my-opencode
+  — including agent delegation, ultrawork mode, Prometheus planning, background tasks, category-based task routing, model
+  resolution, tmux integration, or any oh-my-opencode feature.
+metadata:
+  author: mcoso
+  category: Development & Coding
+  tags:
+  - development-coding
+  - opencode
+  source: clawhub-community
+  clawhub_slug: oh-my-opencode
+  clawhub_path: mcoso/oh-my-opencode
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Oh My OpenCode
+
+    # Source: ClawHub community skill by mcoso
+
+    # Install: clawhub install oh-my-opencode
+
+    # Path: mcoso/oh-my-opencode
+
+
+    ## Description
+
+    Multi-agent orchestration plugin for OpenCode. Use when the user wants to install, configure, or operate oh-my-opencode
+    — including agent delegation, ultrawork mode, Prometheus planning, background tasks, category-based task routing, model
+    resolution, tmux integration, or any oh-my-opencode feature.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/configuration.md
+
+    - references/troubleshooting.md
+
+    - scripts/doctor.sh
+
+    - scripts/run-ulw.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install oh-my-opencode
+
+    ```'
+examples:
+- description: Install Oh My OpenCode from ClawHub
+  usage: clawhub install oh-my-opencode
+schema_version: '1.0'

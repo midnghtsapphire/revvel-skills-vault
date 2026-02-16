@@ -1,0 +1,55 @@
+name: x-trends
+title: X Trends
+version: 1.0.1
+description: Search and analyze trending topics on X (Twitter). Use when you need to find current trends, explore hashtags,
+  get trending topics by location, or analyze what's popular on X right now.
+metadata:
+  author: zaycv
+  category: Search & Research
+  tags:
+  - search-research
+  - trends
+  source: clawhub-community
+  clawhub_slug: x-twitter-trends
+  clawhub_path: zaycv/x-twitter-trends
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Trends
+
+    # Source: ClawHub community skill by zaycv
+
+    # Install: clawhub install x-twitter-trends
+
+    # Path: zaycv/x-twitter-trends
+
+
+    ## Description
+
+    Search and analyze trending topics on X (Twitter). Use when you need to find current trends, explore hashtags, get trending
+    topics by location, or analyze what''s popular on X right now.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-twitter-trends
+
+    ```'
+examples:
+- description: Install X Trends from ClawHub
+  usage: clawhub install x-twitter-trends
+schema_version: '1.0'

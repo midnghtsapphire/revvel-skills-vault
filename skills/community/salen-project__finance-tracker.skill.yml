@@ -1,0 +1,69 @@
+name: finance-tracker
+title: Finance Tracker
+version: 2.0.0
+description: ''
+metadata:
+  author: salen-project
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - finance
+  - tracker
+  source: clawhub-community
+  clawhub_slug: finance-tracker
+  clawhub_path: salen-project/finance-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Finance Tracker
+
+    # Source: ClawHub community skill by salen-project
+
+    # Install: clawhub install finance-tracker
+
+    # Path: salen-project/finance-tracker
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - bin/finance.py
+
+    - lib/__init__.py
+
+    - lib/categories.py
+
+    - lib/currency.py
+
+    - lib/goals.py
+
+    - lib/insights.py
+
+    - lib/parser.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install finance-tracker
+
+    ```'
+examples:
+- description: Install Finance Tracker from ClawHub
+  usage: clawhub install finance-tracker
+schema_version: '1.0'

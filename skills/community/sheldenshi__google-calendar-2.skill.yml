@@ -1,0 +1,70 @@
+name: google-calendar
+title: Google Calendar
+version: 0.1.0
+description: Manages Google Calendar — creates, updates, and queries events, scheduling, and availability. Use when the user
+  mentions calendar, meetings, appointments, agenda, or Google Calendar.
+metadata:
+  author: sheldenshi
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - calendar
+  source: clawhub-community
+  clawhub_slug: google-calendar-2
+  clawhub_path: sheldenshi/google-calendar-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Calendar
+
+    # Source: ClawHub community skill by sheldenshi
+
+    # Install: clawhub install google-calendar-2
+
+    # Path: sheldenshi/google-calendar-2
+
+
+    ## Description
+
+    Manages Google Calendar — creates, updates, and queries events, scheduling, and availability. Use when the user mentions
+    calendar, meetings, appointments, agenda, or Google Calendar.
+
+
+    ## Files
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API.md
+
+    - scripts/auth.ts
+
+    - scripts/calendar.ts
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+    - scripts/tsconfig.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-calendar-2
+
+    ```'
+examples:
+- description: Install Google Calendar from ClawHub
+  usage: clawhub install google-calendar-2
+schema_version: '1.0'

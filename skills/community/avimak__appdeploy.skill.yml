@@ -1,0 +1,55 @@
+name: appdeploy
+title: AppDeploy
+version: 1.0.5
+description: Deploy web apps with backend APIs, database, and file storage. Use when the user asks to deploy or publish a
+  website or web app and wants a public URL. Uses HTTP API via curl.
+metadata:
+  author: avimak
+  category: Development & Coding
+  tags:
+  - development-coding
+  - appdeploy
+  source: clawhub-community
+  clawhub_slug: appdeploy
+  clawhub_path: avimak/appdeploy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AppDeploy
+
+    # Source: ClawHub community skill by avimak
+
+    # Install: clawhub install appdeploy
+
+    # Path: avimak/appdeploy
+
+
+    ## Description
+
+    Deploy web apps with backend APIs, database, and file storage. Use when the user asks to deploy or publish a website or
+    web app and wants a public URL. Uses HTTP API via curl.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install appdeploy
+
+    ```'
+examples:
+- description: Install AppDeploy from ClawHub
+  usage: clawhub install appdeploy
+schema_version: '1.0'

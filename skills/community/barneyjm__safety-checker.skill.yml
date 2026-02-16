@@ -1,0 +1,58 @@
+name: safety-checker
+title: Safety Checker
+version: 2.0.0
+description: '"Find 24-hour businesses, well-lit public areas, transit stations, police stations, and hospitals near any location
+  for late night safety awareness."'
+metadata:
+  author: barneyjm
+  category: General
+  tags:
+  - general
+  - safety
+  - checker
+  source: clawhub-community
+  clawhub_slug: safety-checker
+  clawhub_path: barneyjm/safety-checker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Safety Checker
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install safety-checker
+
+    # Path: barneyjm/safety-checker
+
+
+    ## Description
+
+    "Find 24-hour businesses, well-lit public areas, transit stations, police stations, and hospitals near any location for
+    late night safety awareness."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/safety-checker.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install safety-checker
+
+    ```'
+examples:
+- description: Install Safety Checker from ClawHub
+  usage: clawhub install safety-checker
+schema_version: '1.0'

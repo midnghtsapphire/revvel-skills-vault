@@ -1,0 +1,58 @@
+name: literature-search
+title: literature-search
+version: 1.0.3
+description: Find and compile academic literature with citation lists across Google Scholar, PubMed, arXiv, IEEE, ACM, Semantic
+  Scholar, Scopus, and Web of Science. Use for requests like “find related literature,” “related work,” “citation list,” or
+  “key papers on a topic.”
+metadata:
+  author: jpjy
+  category: Search & Research
+  tags:
+  - search-research
+  - literature
+  - search
+  source: clawhub-community
+  clawhub_slug: literature-search
+  clawhub_path: jpjy/literature-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# literature-search
+
+    # Source: ClawHub community skill by jpjy
+
+    # Install: clawhub install literature-search
+
+    # Path: jpjy/literature-search
+
+
+    ## Description
+
+    Find and compile academic literature with citation lists across Google Scholar, PubMed, arXiv, IEEE, ACM, Semantic Scholar,
+    Scopus, and Web of Science. Use for requests like “find related literature,” “related work,” “citation list,” or “key
+    papers on a topic.”
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install literature-search
+
+    ```'
+examples:
+- description: Install literature-search from ClawHub
+  usage: clawhub install literature-search
+schema_version: '1.0'

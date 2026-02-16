@@ -1,0 +1,53 @@
+name: splunk
+title: Splunk
+version: 1.0.0
+description: Search and analyze machine data via Splunk API. Run searches and manage dashboards.
+metadata:
+  author: mrgoodb
+  category: Search & Research
+  tags:
+  - search-research
+  - splunk
+  source: clawhub-community
+  clawhub_slug: splunk
+  clawhub_path: mrgoodb/splunk
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Splunk
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install splunk
+
+    # Path: mrgoodb/splunk
+
+
+    ## Description
+
+    Search and analyze machine data via Splunk API. Run searches and manage dashboards.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install splunk
+
+    ```'
+examples:
+- description: Install Splunk from ClawHub
+  usage: clawhub install splunk
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: system_monitor
+title: System Monitor
+version: 1.0.0
+description: Check the current CPU, RAM, and GPU status of the local server.
+metadata:
+  author: zerofire03
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - system
+  - monitor
+  source: clawhub-community
+  clawhub_slug: system-monitor
+  clawhub_path: zerofire03/system-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# System Monitor
+
+    # Source: ClawHub community skill by zerofire03
+
+    # Install: clawhub install system-monitor
+
+    # Path: zerofire03/system-monitor
+
+
+    ## Description
+
+    Check the current CPU, RAM, and GPU status of the local server.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - monitor.sh
+
+    - skill.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install system-monitor
+
+    ```'
+examples:
+- description: Install System Monitor from ClawHub
+  usage: clawhub install system-monitor
+schema_version: '1.0'

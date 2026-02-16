@@ -1,0 +1,35 @@
+name: task-tracker
+title: Task Tracker
+version: 1.0.0
+description: '"Personal task management with daily standups and weekly reviews. Use when: (1) User says ''daily standup''
+  or asks what''s on their plate, (2) User says ''weekly review'' or asks about last week''s progress, (3) User wants to add/update/complete
+  tasks, (4) User asks about blockers or deadlines, (5) User '
+metadata:
+  author: kesslerio
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - task
+  - tracker
+  source: clawhub-community
+  clawhub_slug: task-tracker
+  clawhub_path: kesslerio/task-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Task Tracker\n# Source: ClawHub community skill by kesslerio\n# Install: clawhub install task-tracker\n# Path:\
+    \ kesslerio/task-tracker\n\n## Description\n\"Personal task management with daily standups and weekly reviews. Use when:\
+    \ (1) User says 'daily standup' or asks what's on their plate, (2) User says 'weekly review' or asks about last week's\
+    \ progress, (3) User wants to add/update/complete tasks, (4) User asks about blockers or deadlines, (5) User \n\n## Files\n\
+    - README.md\n- SKILL.md\n- TELEGRAM.md\n- _meta.json\n- assets/templates/TASKS.md\n- references/task-format.md\n- scripts/extract_tasks.py\n\
+    - scripts/init.py\n- scripts/standup.py\n- scripts/tasks.py\n\n## Installation\n```bash\nclawhub install task-tracker\n\
+    ```"
+examples:
+- description: Install Task Tracker from ClawHub
+  usage: clawhub install task-tracker
+schema_version: '1.0'

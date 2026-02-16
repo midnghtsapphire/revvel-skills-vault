@@ -1,0 +1,64 @@
+name: compress-pdf
+title: Compress PDF
+version: 1.0.0
+description: Compress a user-provided PDF by uploading it to Cross-Service-Solutions, polling until completion, then returning
+  a download URL for the compressed file.
+metadata:
+  author: crossservicesolutions
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - compress
+  - pdf
+  source: clawhub-community
+  clawhub_slug: compress-pdf
+  clawhub_path: crossservicesolutions/compress-pdf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Compress PDF
+
+    # Source: ClawHub community skill by crossservicesolutions
+
+    # Install: clawhub install compress-pdf
+
+    # Path: crossservicesolutions/compress-pdf
+
+
+    ## Description
+
+    Compress a user-provided PDF by uploading it to Cross-Service-Solutions, polling until completion, then returning a download
+    URL for the compressed file.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - examples/request.json
+
+    - scripts/compress-pdf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install compress-pdf
+
+    ```'
+examples:
+- description: Install Compress PDF from ClawHub
+  usage: clawhub install compress-pdf
+schema_version: '1.0'

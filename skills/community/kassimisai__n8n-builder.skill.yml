@@ -1,0 +1,64 @@
+name: n8n-builder
+title: n8n Builder
+version: 1.0.0
+description: Expert n8n workflow builder that creates, deploys, and manages n8n workflows programmatically via the n8n REST
+  API. Use when asked to create n8n workflows, automate n8n tasks, build automations, design workflow pipelines, connect services
+  via n8n, or manage existing n8n workflows. Handles webhook fl
+metadata:
+  author: kassimisai
+  category: Development & Coding
+  tags:
+  - development-coding
+  - n8n
+  - builder
+  source: clawhub-community
+  clawhub_slug: n8n-builder
+  clawhub_path: kassimisai/n8n-builder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# n8n Builder
+
+    # Source: ClawHub community skill by kassimisai
+
+    # Install: clawhub install n8n-builder
+
+    # Path: kassimisai/n8n-builder
+
+
+    ## Description
+
+    Expert n8n workflow builder that creates, deploys, and manages n8n workflows programmatically via the n8n REST API. Use
+    when asked to create n8n workflows, automate n8n tasks, build automations, design workflow pipelines, connect services
+    via n8n, or manage existing n8n workflows. Handles webhook fl
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/workflow-patterns.md
+
+    - references/workflow-schema.md
+
+    - scripts/n8n-api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install n8n-builder
+
+    ```'
+examples:
+- description: Install n8n Builder from ClawHub
+  usage: clawhub install n8n-builder
+schema_version: '1.0'

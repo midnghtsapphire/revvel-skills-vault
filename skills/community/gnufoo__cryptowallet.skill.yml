@@ -1,0 +1,73 @@
+name: cryptowallet
+title: CryptoWallet - Multi-Chain Blockchain Wallet Manager
+version: 1.0.0
+description: '"Complete cryptocurrency wallet management for Web3, DeFi, and blockchain applications. Create and manage EVM
+  (Ethereum, Polygon, BSC, Arbitrum, Optimism, Base, Avalanche) and Solana wallets with encrypted local storage. Query balances
+  for native tokens (ETH, MATIC, BNB, SOL) and standard tokens (ER'
+metadata:
+  author: gnufoo
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - cryptowallet
+  source: clawhub-community
+  clawhub_slug: cryptowallet
+  clawhub_path: gnufoo/cryptowallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CryptoWallet - Multi-Chain Blockchain Wallet Manager
+
+    # Source: ClawHub community skill by gnufoo
+
+    # Install: clawhub install cryptowallet
+
+    # Path: gnufoo/cryptowallet
+
+
+    ## Description
+
+    "Complete cryptocurrency wallet management for Web3, DeFi, and blockchain applications. Create and manage EVM (Ethereum,
+    Polygon, BSC, Arbitrum, Optimism, Base, Avalanche) and Solana wallets with encrypted local storage. Query balances for
+    native tokens (ETH, MATIC, BNB, SOL) and standard tokens (ER
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/networks.json
+
+    - references/security.md
+
+    - scripts/balance_checker.py
+
+    - scripts/contract_interactor.py
+
+    - scripts/crypto_utils.py
+
+    - scripts/token_sender.py
+
+    - scripts/wallet_manager.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cryptowallet
+
+    ```'
+examples:
+- description: Install CryptoWallet - Multi-Chain Blockchain Wallet Manager from ClawHub
+  usage: clawhub install cryptowallet
+schema_version: '1.0'

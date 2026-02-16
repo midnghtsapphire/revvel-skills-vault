@@ -1,0 +1,59 @@
+name: context-scope-tags
+title: Context Scope Tags
+version: 0.1.0
+description: '"Context-scoping protocol using explicit tags to prevent context bleed in chat (especially Telegram). Use when
+  the user asks to isolate a topic, scope the assistant to a specific project/topic, request a /ctx or /context_def cheat
+  sheet, or mentions tags like [Isolated Context], [ISO], [SCOPE], [GLO'
+metadata:
+  author: phenomenoner
+  category: Social Media
+  tags:
+  - social-media
+  - context
+  - scope
+  - tags
+  source: clawhub-community
+  clawhub_slug: context-scope-tags
+  clawhub_path: phenomenoner/context-scope-tags
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Scope Tags
+
+    # Source: ClawHub community skill by phenomenoner
+
+    # Install: clawhub install context-scope-tags
+
+    # Path: phenomenoner/context-scope-tags
+
+
+    ## Description
+
+    "Context-scoping protocol using explicit tags to prevent context bleed in chat (especially Telegram). Use when the user
+    asks to isolate a topic, scope the assistant to a specific project/topic, request a /ctx or /context_def cheat sheet,
+    or mentions tags like [Isolated Context], [ISO], [SCOPE], [GLO
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-scope-tags
+
+    ```'
+examples:
+- description: Install Context Scope Tags from ClawHub
+  usage: clawhub install context-scope-tags
+schema_version: '1.0'

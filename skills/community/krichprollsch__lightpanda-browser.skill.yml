@@ -1,0 +1,57 @@
+name: lightpanda
+title: Lightpanda browser
+version: 1.0.3
+description: Lightpanda browser, drop-in replacement for Chrome and Openclaw default browser - faster and lighter for tasks
+  without graphical rendering like data retrieval. Use it with CDP clients like Playwright or Puppeteer.
+metadata:
+  author: krichprollsch
+  category: Search & Research
+  tags:
+  - search-research
+  - lightpanda
+  source: clawhub-community
+  clawhub_slug: lightpanda-browser
+  clawhub_path: krichprollsch/lightpanda-browser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lightpanda browser
+
+    # Source: ClawHub community skill by krichprollsch
+
+    # Install: clawhub install lightpanda-browser
+
+    # Path: krichprollsch/lightpanda-browser
+
+
+    ## Description
+
+    Lightpanda browser, drop-in replacement for Chrome and Openclaw default browser - faster and lighter for tasks without
+    graphical rendering like data retrieval. Use it with CDP clients like Playwright or Puppeteer.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lightpanda-browser
+
+    ```'
+examples:
+- description: Install Lightpanda browser from ClawHub
+  usage: clawhub install lightpanda-browser
+schema_version: '1.0'

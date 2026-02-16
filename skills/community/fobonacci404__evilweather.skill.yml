@@ -1,0 +1,53 @@
+name: weather
+title: evilweather
+version: 1.0.1
+description: Get current weather and forecasts (no API key required).
+metadata:
+  author: fobonacci404
+  category: Development & Coding
+  tags:
+  - development-coding
+  - weather
+  source: clawhub-community
+  clawhub_slug: evilweather
+  clawhub_path: fobonacci404/evilweather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# evilweather
+
+    # Source: ClawHub community skill by fobonacci404
+
+    # Install: clawhub install evilweather
+
+    # Path: fobonacci404/evilweather
+
+
+    ## Description
+
+    Get current weather and forecasts (no API key required).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install evilweather
+
+    ```'
+examples:
+- description: Install evilweather from ClawHub
+  usage: clawhub install evilweather
+schema_version: '1.0'

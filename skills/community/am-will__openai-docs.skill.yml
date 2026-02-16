@@ -1,0 +1,35 @@
+name: openai-docs-skill
+title: OpenAI Developer Docs
+version: 1.0.0
+description: 'Query the OpenAI developer documentation via the OpenAI Docs MCP server using CLI (curl/jq). Use whenever a
+  task involves the OpenAI API (Responses, Chat Completions, Realtime, etc.), OpenAI SDKs, ChatGPT Apps SDK, Codex, MCP integrations,
+  endpoint schemas, parameters, limits, or migrations and you '
+metadata:
+  author: am-will
+  category: Communication
+  tags:
+  - communication
+  - openai
+  - docs
+  - skill
+  source: clawhub-community
+  clawhub_slug: openai-docs
+  clawhub_path: am-will/openai-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# OpenAI Developer Docs\n# Source: ClawHub community skill by am-will\n# Install: clawhub install openai-docs\n\
+    # Path: am-will/openai-docs\n\n## Description\nQuery the OpenAI developer documentation via the OpenAI Docs MCP server\
+    \ using CLI (curl/jq). Use whenever a task involves the OpenAI API (Responses, Chat Completions, Realtime, etc.), OpenAI\
+    \ SDKs, ChatGPT Apps SDK, Codex, MCP integrations, endpoint schemas, parameters, limits, or migrations and you \n\n##\
+    \ Files\n- SKILL.md\n- _meta.json\n- scripts/openai-docs-mcp.sh\n\n## Installation\n```bash\nclawhub install openai-docs\n\
+    ```"
+examples:
+- description: Install OpenAI Developer Docs from ClawHub
+  usage: clawhub install openai-docs
+schema_version: '1.0'

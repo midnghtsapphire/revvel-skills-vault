@@ -1,0 +1,73 @@
+name: kimi-usage-monitor
+title: Kimi Usage Monitor
+version: 1.0.0
+description: Monitor Kimi K2.5 API usage and quota from the Kimi console. Use when the agent needs to (1) Check remaining
+  usage percentage and reset timers, (2) Make autonomous decisions about task prioritization based on available quota, (3)
+  Monitor rate limit status before starting intensive operations, (4) Lo
+metadata:
+  author: xd4o
+  category: Development & Coding
+  tags:
+  - development-coding
+  - kimi
+  - usage
+  - monitor
+  source: clawhub-community
+  clawhub_slug: kimi-usage-monitor
+  clawhub_path: xd4o/kimi-usage-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kimi Usage Monitor
+
+    # Source: ClawHub community skill by xd4o
+
+    # Install: clawhub install kimi-usage-monitor
+
+    # Path: xd4o/kimi-usage-monitor
+
+
+    ## Description
+
+    Monitor Kimi K2.5 API usage and quota from the Kimi console. Use when the agent needs to (1) Check remaining usage percentage
+    and reset timers, (2) Make autonomous decisions about task prioritization based on available quota, (3) Monitor rate limit
+    status before starting intensive operations, (4) Lo
+
+
+    ## Files
+
+    - PLATFORM_SUPPORT.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - check_usage.sh
+
+    - scripts/fetch_usage.py
+
+    - scripts/preflight_check.py
+
+    - scripts/subagent_guard.py
+
+    - scripts/usage_logger.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kimi-usage-monitor
+
+    ```'
+examples:
+- description: Install Kimi Usage Monitor from ClawHub
+  usage: clawhub install kimi-usage-monitor
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: homey-cli
+title: Homey - Home Automation
+version: 1.0.0
+description: Control Homey home automation hub via CLI. Use when you need to control smart home devices (lights, thermostats,
+  sockets, etc.), check device status, list zones, trigger flows, or perform any Homey automation tasks. Supports on/off,
+  dimming, color changes, temperature control, and device inspection.
+metadata:
+  author: krausefx
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - homey
+  - cli
+  source: clawhub-community
+  clawhub_slug: homey-cli
+  clawhub_path: krausefx/homey-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Homey - Home Automation
+
+    # Source: ClawHub community skill by krausefx
+
+    # Install: clawhub install homey-cli
+
+    # Path: krausefx/homey-cli
+
+
+    ## Description
+
+    Control Homey home automation hub via CLI. Use when you need to control smart home devices (lights, thermostats, sockets,
+    etc.), check device status, list zones, trigger flows, or perform any Homey automation tasks. Supports on/off, dimming,
+    color changes, temperature control, and device inspection.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install homey-cli
+
+    ```'
+examples:
+- description: Install Homey - Home Automation from ClawHub
+  usage: clawhub install homey-cli
+schema_version: '1.0'

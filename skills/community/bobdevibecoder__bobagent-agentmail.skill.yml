@@ -1,0 +1,57 @@
+name: agentmail
+title: agentmail
+version: 1.0.0
+description: Give your AI agent its own email inbox. Use when the bot needs to create an email account, send emails, receive
+  emails, or manage its inbox. Powered by AgentMail (YC S25).
+metadata:
+  author: bobdevibecoder
+  category: Communication
+  tags:
+  - communication
+  - agentmail
+  source: clawhub-community
+  clawhub_slug: bobagent-agentmail
+  clawhub_path: bobdevibecoder/bobagent-agentmail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# agentmail
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-agentmail
+
+    # Path: bobdevibecoder/bobagent-agentmail
+
+
+    ## Description
+
+    Give your AI agent its own email inbox. Use when the bot needs to create an email account, send emails, receive emails,
+    or manage its inbox. Powered by AgentMail (YC S25).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/agentmail.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-agentmail
+
+    ```'
+examples:
+- description: Install agentmail from ClawHub
+  usage: clawhub install bobagent-agentmail
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: conventional-commits
+title: Conventional Commits
+version: 1.0.1
+description: Format commit messages using the Conventional Commits specification. Use when creating commits, writing commit
+  messages, or when the user mentions commits, git commits, or commit messages. Ensures commits follow the standard format
+  for automated tooling, changelog generation, and semantic versioning
+metadata:
+  author: bastos
+  category: Communication
+  tags:
+  - communication
+  - conventional
+  - commits
+  source: clawhub-community
+  clawhub_slug: conventional-commits
+  clawhub_path: bastos/conventional-commits
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Conventional Commits
+
+    # Source: ClawHub community skill by bastos
+
+    # Install: clawhub install conventional-commits
+
+    # Path: bastos/conventional-commits
+
+
+    ## Description
+
+    Format commit messages using the Conventional Commits specification. Use when creating commits, writing commit messages,
+    or when the user mentions commits, git commits, or commit messages. Ensures commits follow the standard format for automated
+    tooling, changelog generation, and semantic versioning
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install conventional-commits
+
+    ```'
+examples:
+- description: Install Conventional Commits from ClawHub
+  usage: clawhub install conventional-commits
+schema_version: '1.0'

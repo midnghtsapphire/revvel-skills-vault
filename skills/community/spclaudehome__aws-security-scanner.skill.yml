@@ -1,0 +1,59 @@
+name: aws-security-scanner
+title: AWS Security Scanner
+version: 1.0.0
+description: Scan AWS accounts for security misconfigurations and vulnerabilities. Use when user asks to audit AWS security,
+  check for misconfigurations, find exposed S3 buckets, review IAM policies, check security groups, audit CloudTrail, or run
+  AWS security checks. Covers S3, IAM, EC2, RDS, CloudTrail, and co
+metadata:
+  author: spclaudehome
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - aws
+  - security
+  - scanner
+  source: clawhub-community
+  clawhub_slug: aws-security-scanner
+  clawhub_path: spclaudehome/aws-security-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AWS Security Scanner
+
+    # Source: ClawHub community skill by spclaudehome
+
+    # Install: clawhub install aws-security-scanner
+
+    # Path: spclaudehome/aws-security-scanner
+
+
+    ## Description
+
+    Scan AWS accounts for security misconfigurations and vulnerabilities. Use when user asks to audit AWS security, check
+    for misconfigurations, find exposed S3 buckets, review IAM policies, check security groups, audit CloudTrail, or run AWS
+    security checks. Covers S3, IAM, EC2, RDS, CloudTrail, and co
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aws-security-scanner
+
+    ```'
+examples:
+- description: Install AWS Security Scanner from ClawHub
+  usage: clawhub install aws-security-scanner
+schema_version: '1.0'

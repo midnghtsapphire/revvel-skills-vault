@@ -1,0 +1,61 @@
+name: telegram-offline-voice
+title: Telegram Offline Voice
+version: 0.1.3
+description: 本地生成 Telegram 语音消息，支持自动清洗、分段与临时文件管理。
+metadata:
+  author: sanwecn
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - offline
+  - voice
+  source: clawhub-community
+  clawhub_slug: telegram-offline-voice
+  clawhub_path: sanwecn/telegram-offline-voice
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Offline Voice
+
+    # Source: ClawHub community skill by sanwecn
+
+    # Install: clawhub install telegram-offline-voice
+
+    # Path: sanwecn/telegram-offline-voice
+
+
+    ## Description
+
+    本地生成 Telegram 语音消息，支持自动清洗、分段与临时文件管理。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - .clawhub/origin.json
+
+    - scripts/voice_gen.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-offline-voice
+
+    ```'
+examples:
+- description: Install Telegram Offline Voice from ClawHub
+  usage: clawhub install telegram-offline-voice
+schema_version: '1.0'

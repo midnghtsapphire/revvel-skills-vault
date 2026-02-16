@@ -1,0 +1,63 @@
+name: pdf-process-mineru
+title: pdf-parser-mineru
+version: 1.0.2
+description: PDF document parsing tool based on local MinerU, supports converting PDF to Markdown, JSON, and other machine-readable
+  formats.
+metadata:
+  author: baokui
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - pdf
+  - process
+  - mineru
+  source: clawhub-community
+  clawhub_slug: pdf-parser-mineru
+  clawhub_path: baokui/pdf-parser-mineru
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# pdf-parser-mineru
+
+    # Source: ClawHub community skill by baokui
+
+    # Install: clawhub install pdf-parser-mineru
+
+    # Path: baokui/pdf-parser-mineru
+
+
+    ## Description
+
+    PDF document parsing tool based on local MinerU, supports converting PDF to Markdown, JSON, and other machine-readable
+    formats.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - SKILL_zh.md
+
+    - _meta.json
+
+    - install.sh
+
+    - script/pdf_parser.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pdf-parser-mineru
+
+    ```'
+examples:
+- description: Install pdf-parser-mineru from ClawHub
+  usage: clawhub install pdf-parser-mineru
+schema_version: '1.0'

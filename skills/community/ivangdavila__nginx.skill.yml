@@ -1,0 +1,61 @@
+name: nginx
+title: Nginx
+version: 1.0.1
+description: Configure Nginx for reverse proxy, load balancing, SSL termination, and high-performance static serving.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - nginx
+  source: clawhub-community
+  clawhub_slug: nginx
+  clawhub_path: ivangdavila/nginx
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nginx
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install nginx
+
+    # Path: ivangdavila/nginx
+
+
+    ## Description
+
+    Configure Nginx for reverse proxy, load balancing, SSL termination, and high-performance static serving.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples.md
+
+    - performance.md
+
+    - proxy.md
+
+    - ssl.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nginx
+
+    ```'
+examples:
+- description: Install Nginx from ClawHub
+  usage: clawhub install nginx
+schema_version: '1.0'

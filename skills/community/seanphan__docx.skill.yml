@@ -1,0 +1,73 @@
+name: docx
+title: Docx
+version: 0.1.0
+description: '"Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting
+  preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating
+  new documents, (2) Modifying or editing content, (3) Working with tr'
+metadata:
+  author: seanphan
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - docx
+  source: clawhub-community
+  clawhub_slug: docx
+  clawhub_path: seanphan/docx
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docx
+
+    # Source: ClawHub community skill by seanphan
+
+    # Install: clawhub install docx
+
+    # Path: seanphan/docx
+
+
+    ## Description
+
+    "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation,
+    and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents,
+    (2) Modifying or editing content, (3) Working with tr
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docx-js.md
+
+    - ooxml.md
+
+    - ooxml/scripts/pack.py
+
+    - ooxml/scripts/unpack.py
+
+    - ooxml/scripts/validate.py
+
+    - ooxml/scripts/validation/__init__.py
+
+    - ooxml/scripts/validation/base.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install docx
+
+    ```'
+examples:
+- description: Install Docx from ClawHub
+  usage: clawhub install docx
+schema_version: '1.0'

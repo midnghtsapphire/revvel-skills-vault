@@ -1,0 +1,64 @@
+name: streme-launcher
+title: Streme Token Launcher
+version: 1.0.0
+description: Launch tokens on Streme (streme.fun) - the streaming token platform on Base. Use when deploying SuperTokens with
+  built-in staking rewards, Uniswap V3 liquidity, and optional vesting vaults. Triggers on "launch token on streme", "deploy
+  streme token", "create supertoken", or any Streme token deployme
+metadata:
+  author: clawrencestreme
+  category: Development & Coding
+  tags:
+  - development-coding
+  - streme
+  - launcher
+  source: clawhub-community
+  clawhub_slug: streme-launcher
+  clawhub_path: clawrencestreme/streme-launcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Streme Token Launcher
+
+    # Source: ClawHub community skill by clawrencestreme
+
+    # Install: clawhub install streme-launcher
+
+    # Path: clawrencestreme/streme-launcher
+
+
+    ## Description
+
+    Launch tokens on Streme (streme.fun) - the streaming token platform on Base. Use when deploying SuperTokens with built-in
+    staking rewards, Uniswap V3 liquidity, and optional vesting vaults. Triggers on "launch token on streme", "deploy streme
+    token", "create supertoken", or any Streme token deployme
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/contracts.md
+
+    - scripts/deploy-token.ts
+
+    - scripts/upload-image.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install streme-launcher
+
+    ```'
+examples:
+- description: Install Streme Token Launcher from ClawHub
+  usage: clawhub install streme-launcher
+schema_version: '1.0'

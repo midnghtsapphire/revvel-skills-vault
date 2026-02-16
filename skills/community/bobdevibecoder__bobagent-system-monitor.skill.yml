@@ -1,0 +1,54 @@
+name: system_monitor
+title: system-monitor
+version: 1.0.0
+description: Check the current CPU, RAM, and GPU status of the local server.
+metadata:
+  author: bobdevibecoder
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - system
+  - monitor
+  source: clawhub-community
+  clawhub_slug: bobagent-system-monitor
+  clawhub_path: bobdevibecoder/bobagent-system-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# system-monitor
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-system-monitor
+
+    # Path: bobdevibecoder/bobagent-system-monitor
+
+
+    ## Description
+
+    Check the current CPU, RAM, and GPU status of the local server.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-system-monitor
+
+    ```'
+examples:
+- description: Install system-monitor from ClawHub
+  usage: clawhub install bobagent-system-monitor
+schema_version: '1.0'

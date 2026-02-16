@@ -1,0 +1,62 @@
+name: _unitask-agent_
+title: Unitask Agent
+version: 0.14.3
+description: '"Start finishing tasks instead of just organizing them: connect your OpenClaw agent to Unitask (unitask.app)
+  to manage and do your tasks with secure prioritization, tags, time blocks and more."'
+metadata:
+  author: mfaiz-007
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - '"unitask'
+  - agent"
+  source: clawhub-community
+  clawhub_slug: unitask-agent
+  clawhub_path: mfaiz-007/unitask-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Unitask Agent
+
+    # Source: ClawHub community skill by mfaiz-007
+
+    # Install: clawhub install unitask-agent
+
+    # Path: mfaiz-007/unitask-agent
+
+
+    ## Description
+
+    "Start finishing tasks instead of just organizing them: connect your OpenClaw agent to Unitask (unitask.app) to manage
+    and do your tasks with secure prioritization, tags, time blocks and more."
+
+
+    ## Files
+
+    - ONBOARDING.md
+
+    - README.md
+
+    - SKILL.md
+
+    - USE_CASES.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unitask-agent
+
+    ```'
+examples:
+- description: Install Unitask Agent from ClawHub
+  usage: clawhub install unitask-agent
+schema_version: '1.0'

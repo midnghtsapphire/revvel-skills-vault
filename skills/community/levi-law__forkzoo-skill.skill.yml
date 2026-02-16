@@ -1,0 +1,65 @@
+name: forkzoo
+title: ForkZoo
+version: 1.0.0
+description: Adopt and manage GitHub-native digital pets (tamagotchis) that evolve daily with AI. Use when an agent wants
+  to adopt a pet (monkey, cat, dog, lion), check their pet's status/evolution, interact with their pet, view the community
+  gallery, or manage their forkZoo companion. Triggers on pet-related re
+metadata:
+  author: levi-law
+  category: Development & Coding
+  tags:
+  - development-coding
+  - forkzoo
+  source: clawhub-community
+  clawhub_slug: forkzoo-skill
+  clawhub_path: levi-law/forkzoo-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ForkZoo
+
+    # Source: ClawHub community skill by levi-law
+
+    # Install: clawhub install forkzoo-skill
+
+    # Path: levi-law/forkzoo-skill
+
+
+    ## Description
+
+    Adopt and manage GitHub-native digital pets (tamagotchis) that evolve daily with AI. Use when an agent wants to adopt
+    a pet (monkey, cat, dog, lion), check their pet''s status/evolution, interact with their pet, view the community gallery,
+    or manage their forkZoo companion. Triggers on pet-related re
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/adopt.sh
+
+    - scripts/gallery.sh
+
+    - scripts/interact.sh
+
+    - scripts/status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install forkzoo-skill
+
+    ```'
+examples:
+- description: Install ForkZoo from ClawHub
+  usage: clawhub install forkzoo-skill
+schema_version: '1.0'

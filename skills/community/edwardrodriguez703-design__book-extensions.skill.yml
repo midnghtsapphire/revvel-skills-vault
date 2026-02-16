@@ -1,0 +1,56 @@
+name: book-extensions
+title: Book Extensions
+version: 1.0.1
+description: Book extensions services through Lokuli MCP. Use when user needs to find and book extensions. Triggers on requests
+  like "book a extensions", "find extensions near me", or any extensions service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - extensions
+  source: clawhub-community
+  clawhub_slug: book-extensions
+  clawhub_path: edwardrodriguez703-design/book-extensions
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Extensions
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-extensions
+
+    # Path: edwardrodriguez703-design/book-extensions
+
+
+    ## Description
+
+    Book extensions services through Lokuli MCP. Use when user needs to find and book extensions. Triggers on requests like
+    "book a extensions", "find extensions near me", or any extensions service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-extensions
+
+    ```'
+examples:
+- description: Install Book Extensions from ClawHub
+  usage: clawhub install book-extensions
+schema_version: '1.0'

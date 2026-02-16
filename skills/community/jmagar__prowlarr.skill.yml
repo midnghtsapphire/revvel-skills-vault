@@ -1,0 +1,59 @@
+name: prowlarr
+title: Prowlarr
+version: 1.0.0
+description: Search indexers and manage Prowlarr. Use when the user asks to "search for a torrent", "search indexers", "find
+  a release", "check indexer status", "list indexers", "prowlarr search", "sync indexers", or mentions Prowlarr/indexer management.
+metadata:
+  author: jmagar
+  category: Search & Research
+  tags:
+  - search-research
+  - prowlarr
+  source: clawhub-community
+  clawhub_slug: prowlarr
+  clawhub_path: jmagar/prowlarr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prowlarr
+
+    # Source: ClawHub community skill by jmagar
+
+    # Install: clawhub install prowlarr
+
+    # Path: jmagar/prowlarr
+
+
+    ## Description
+
+    Search indexers and manage Prowlarr. Use when the user asks to "search for a torrent", "search indexers", "find a release",
+    "check indexer status", "list indexers", "prowlarr search", "sync indexers", or mentions Prowlarr/indexer management.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/prowlarr-api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prowlarr
+
+    ```'
+examples:
+- description: Install Prowlarr from ClawHub
+  usage: clawhub install prowlarr
+schema_version: '1.0'

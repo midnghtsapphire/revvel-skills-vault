@@ -1,0 +1,55 @@
+name: steam-community-inventory
+title: Steamcommunity
+version: 1.0.1
+description: Retrieves Steam inventory data and manages trade offers on steamcommunity.com
+metadata:
+  author: bluesyparty-src
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - steam
+  - community
+  - inventory
+  source: clawhub-community
+  clawhub_slug: steamcommunity
+  clawhub_path: bluesyparty-src/steamcommunity
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Steamcommunity
+
+    # Source: ClawHub community skill by bluesyparty-src
+
+    # Install: clawhub install steamcommunity
+
+    # Path: bluesyparty-src/steamcommunity
+
+
+    ## Description
+
+    Retrieves Steam inventory data and manages trade offers on steamcommunity.com
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install steamcommunity
+
+    ```'
+examples:
+- description: Install Steamcommunity from ClawHub
+  usage: clawhub install steamcommunity
+schema_version: '1.0'

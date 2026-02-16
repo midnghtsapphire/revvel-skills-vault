@@ -1,0 +1,62 @@
+name: claw-backup
+title: Claw Backup
+version: 1.0.7
+description: Back up OpenClaw customizations (memory, config, skills, workspace) to cloud storage via rclone, with scheduling
+  + retention. Works on macOS, Linux, and Windows (Git Bash/WSL).
+metadata:
+  author: vidarbrekke
+  category: Development & Coding
+  tags:
+  - development-coding
+  - claw
+  - backup
+  source: clawhub-community
+  clawhub_slug: claw-backup
+  clawhub_path: vidarbrekke/claw-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claw Backup
+
+    # Source: ClawHub community skill by vidarbrekke
+
+    # Install: clawhub install claw-backup
+
+    # Path: vidarbrekke/claw-backup
+
+
+    ## Description
+
+    Back up OpenClaw customizations (memory, config, skills, workspace) to cloud storage via rclone, with scheduling + retention.
+    Works on macOS, Linux, and Windows (Git Bash/WSL).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install-launchagent.sh
+
+    - setup.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-backup
+
+    ```'
+examples:
+- description: Install Claw Backup from ClawHub
+  usage: clawhub install claw-backup
+schema_version: '1.0'

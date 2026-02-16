@@ -1,0 +1,56 @@
+name: slack-actions
+title: Slack Actions
+version: 0.1.1
+description: Enables authenticated interaction with Slack for sending, editing, deleting, reacting to, and managing messages
+  and pins via a secure bot token.
+metadata:
+  author: rk905
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - slack
+  - actions
+  source: clawhub-community
+  clawhub_slug: geeksdobyte-slack-botskill
+  clawhub_path: rk905/geeksdobyte-slack-botskill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Slack Actions
+
+    # Source: ClawHub community skill by rk905
+
+    # Install: clawhub install geeksdobyte-slack-botskill
+
+    # Path: rk905/geeksdobyte-slack-botskill
+
+
+    ## Description
+
+    Enables authenticated interaction with Slack for sending, editing, deleting, reacting to, and managing messages and pins
+    via a secure bot token.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install geeksdobyte-slack-botskill
+
+    ```'
+examples:
+- description: Install Slack Actions from ClawHub
+  usage: clawhub install geeksdobyte-slack-botskill
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: clawcast
+title: Clawcast - Easiest Ethereum Crypto Wallet
+version: 1.0.2
+description: Skill for managing EVM wallets, transactions, and network helpers via cast; covers onboarding, checks, and operating
+  procedures.
+metadata:
+  author: tezatezaz
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawcast
+  source: clawhub-community
+  clawhub_slug: clawcast
+  clawhub_path: tezatezaz/clawcast
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawcast - Easiest Ethereum Crypto Wallet
+
+    # Source: ClawHub community skill by tezatezaz
+
+    # Install: clawhub install clawcast
+
+    # Path: tezatezaz/clawcast
+
+
+    ## Description
+
+    Skill for managing EVM wallets, transactions, and network helpers via cast; covers onboarding, checks, and operating procedures.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/evm-network-tokens.json
+
+    - assets/evm-networks.json
+
+    - scripts/00_lib.sh
+
+    - scripts/01_install_cast.sh
+
+    - scripts/02_wallet.sh
+
+    - scripts/03_password.sh
+
+    - scripts/04_network.sh
+
+    - scripts/05_tokens.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawcast
+
+    ```'
+examples:
+- description: Install Clawcast - Easiest Ethereum Crypto Wallet from ClawHub
+  usage: clawhub install clawcast
+schema_version: '1.0'

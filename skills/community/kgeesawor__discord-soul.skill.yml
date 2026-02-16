@@ -1,0 +1,72 @@
+name: discord-soul
+title: discord-soul
+version: 1.0.0
+description: Create a living agent from your Discord server. The agent embodies your community's identity, remembers every
+  conversation, and grows as the community evolves. Talk to your Discord as if it were a person.
+metadata:
+  author: kgeesawor
+  category: Social Media
+  tags:
+  - social-media
+  - discord
+  - soul
+  source: clawhub-community
+  clawhub_slug: discord-soul
+  clawhub_path: kgeesawor/discord-soul
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# discord-soul
+
+    # Source: ClawHub community skill by kgeesawor
+
+    # Install: clawhub install discord-soul
+
+    # Path: kgeesawor/discord-soul
+
+
+    ## Description
+
+    Create a living agent from your Discord server. The agent embodies your community''s identity, remembers every conversation,
+    and grows as the community evolves. Talk to your Discord as if it were a person.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/lancedb.md
+
+    - references/security.md
+
+    - scripts/create_agent.sh
+
+    - scripts/evaluate-safety.py
+
+    - scripts/generate_daily_memory.py
+
+    - scripts/incremental_export.sh
+
+    - scripts/ingest_rich.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install discord-soul
+
+    ```'
+examples:
+- description: Install discord-soul from ClawHub
+  usage: clawhub install discord-soul
+schema_version: '1.0'

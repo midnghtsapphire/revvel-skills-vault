@@ -1,0 +1,60 @@
+name: flatnotes-tasksmd-github-audit
+title: Flatnotes + Tasks.md GitHub Audit
+version: 1.0.0
+description: '"Thoroughly audit Tasks.md + Flatnotes for drift and accuracy; use GitHub (gh CLI) as source of truth to detect
+  stale notes/cards and missing links. Produces a report and an optional fix plan."'
+metadata:
+  author: branexp
+  category: Development & Coding
+  tags:
+  - development-coding
+  - flatnotes
+  - tasksmd
+  - github
+  - audit
+  source: clawhub-community
+  clawhub_slug: flatnotes-tasksmd-github-audit
+  clawhub_path: branexp/flatnotes-tasksmd-github-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Flatnotes + Tasks.md GitHub Audit
+
+    # Source: ClawHub community skill by branexp
+
+    # Install: clawhub install flatnotes-tasksmd-github-audit
+
+    # Path: branexp/flatnotes-tasksmd-github-audit
+
+
+    ## Description
+
+    "Thoroughly audit Tasks.md + Flatnotes for drift and accuracy; use GitHub (gh CLI) as source of truth to detect stale
+    notes/cards and missing links. Produces a report and an optional fix plan."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/audit.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flatnotes-tasksmd-github-audit
+
+    ```'
+examples:
+- description: Install Flatnotes + Tasks.md GitHub Audit from ClawHub
+  usage: clawhub install flatnotes-tasksmd-github-audit
+schema_version: '1.0'

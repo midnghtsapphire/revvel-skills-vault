@@ -1,0 +1,55 @@
+name: hn-extract
+title: HackerNews Extract
+version: 0.1.5
+description: Extract a HackerNews post (article + comments) into single clean Markdown for quick reading or LLM input.
+metadata:
+  author: guoqiao
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - extract
+  source: clawhub-community
+  clawhub_slug: hn-extract
+  clawhub_path: guoqiao/hn-extract
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# HackerNews Extract
+
+    # Source: ClawHub community skill by guoqiao
+
+    # Install: clawhub install hn-extract
+
+    # Path: guoqiao/hn-extract
+
+
+    ## Description
+
+    Extract a HackerNews post (article + comments) into single clean Markdown for quick reading or LLM input.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - hn-extract.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hn-extract
+
+    ```'
+examples:
+- description: Install HackerNews Extract from ClawHub
+  usage: clawhub install hn-extract
+schema_version: '1.0'

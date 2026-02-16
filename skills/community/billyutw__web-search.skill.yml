@@ -1,0 +1,60 @@
+name: web-search
+title: Web Search
+version: 1.0.0
+description: This skill should be used when users need to search the web for information, find current content, look up news
+  articles, search for images, or find videos. It uses DuckDuckGo's search API to return results in clean, formatted output
+  (text, markdown, or JSON). Use for research, fact-checking, findin
+metadata:
+  author: billyutw
+  category: Search & Research
+  tags:
+  - search-research
+  - web
+  - search
+  source: clawhub-community
+  clawhub_slug: web-search
+  clawhub_path: billyutw/web-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Web Search
+
+    # Source: ClawHub community skill by billyutw
+
+    # Install: clawhub install web-search
+
+    # Path: billyutw/web-search
+
+
+    ## Description
+
+    This skill should be used when users need to search the web for information, find current content, look up news articles,
+    search for images, or find videos. It uses DuckDuckGo''s search API to return results in clean, formatted output (text,
+    markdown, or JSON). Use for research, fact-checking, findin
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install web-search
+
+    ```'
+examples:
+- description: Install Web Search from ClawHub
+  usage: clawhub install web-search
+schema_version: '1.0'

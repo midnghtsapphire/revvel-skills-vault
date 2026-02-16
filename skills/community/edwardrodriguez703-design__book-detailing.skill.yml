@@ -1,0 +1,56 @@
+name: book-detailing
+title: Book Detailing
+version: 1.0.1
+description: Book detailing services through Lokuli MCP. Use when user needs to find and book detailing. Triggers on requests
+  like "book a detailing", "find detailing near me", or any detailing service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - detailing
+  source: clawhub-community
+  clawhub_slug: book-detailing
+  clawhub_path: edwardrodriguez703-design/book-detailing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Detailing
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-detailing
+
+    # Path: edwardrodriguez703-design/book-detailing
+
+
+    ## Description
+
+    Book detailing services through Lokuli MCP. Use when user needs to find and book detailing. Triggers on requests like
+    "book a detailing", "find detailing near me", or any detailing service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-detailing
+
+    ```'
+examples:
+- description: Install Book Detailing from ClawHub
+  usage: clawhub install book-detailing
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: researchmonitor
+title: ResearchMonitor
+version: 0.1.2
+description: Monitors research topics for new papers, conferences, and journals.
+metadata:
+  author: eksubin
+  category: Search & Research
+  tags:
+  - search-research
+  - researchmonitor
+  source: clawhub-community
+  clawhub_slug: researchassistant
+  clawhub_path: eksubin/researchassistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ResearchMonitor
+
+    # Source: ClawHub community skill by eksubin
+
+    # Install: clawhub install researchassistant
+
+    # Path: eksubin/researchassistant
+
+
+    ## Description
+
+    Monitors research topics for new papers, conferences, and journals.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - research_config.json
+
+    - scripts/daily_briefing.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install researchassistant
+
+    ```'
+examples:
+- description: Install ResearchMonitor from ClawHub
+  usage: clawhub install researchassistant
+schema_version: '1.0'

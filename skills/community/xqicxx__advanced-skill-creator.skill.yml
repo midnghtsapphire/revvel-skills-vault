@@ -1,0 +1,67 @@
+name: advanced-skill-creator
+title: advanced-skill-creator
+version: 1.0.0
+description: Advanced OpenClaw skill creation handler that executes the official 5-step research flow with comprehensive analysis
+  and best practices. Ensures proper methodology when users request to create or modify OpenClaw/Moltbot/ClawDBot skills following
+  official standards.
+metadata:
+  author: xqicxx
+  category: Search & Research
+  tags:
+  - search-research
+  - advanced
+  - skill
+  - creator
+  source: clawhub-community
+  clawhub_slug: advanced-skill-creator
+  clawhub_path: xqicxx/advanced-skill-creator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# advanced-skill-creator
+
+    # Source: ClawHub community skill by xqicxx
+
+    # Install: clawhub install advanced-skill-creator
+
+    # Path: xqicxx/advanced-skill-creator
+
+
+    ## Description
+
+    Advanced OpenClaw skill creation handler that executes the official 5-step research flow with comprehensive analysis and
+    best practices. Ensures proper methodology when users request to create or modify OpenClaw/Moltbot/ClawDBot skills following
+    official standards.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - UPLOAD_INSTRUCTIONS.md
+
+    - _meta.json
+
+    - scripts/advanced_skill_processor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install advanced-skill-creator
+
+    ```'
+examples:
+- description: Install advanced-skill-creator from ClawHub
+  usage: clawhub install advanced-skill-creator
+schema_version: '1.0'

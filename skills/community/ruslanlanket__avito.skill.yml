@@ -1,0 +1,65 @@
+name: avito
+title: Avito.ru publish and chat
+version: 1.0.0
+description: Manage Avito.ru account, items, and messenger via API. Use for listing items, checking balance, reading chats,
+  and getting account info.
+metadata:
+  author: ruslanlanket
+  category: Communication
+  tags:
+  - communication
+  - avito
+  source: clawhub-community
+  clawhub_slug: avito
+  clawhub_path: ruslanlanket/avito
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Avito.ru publish and chat
+
+    # Source: ClawHub community skill by ruslanlanket
+
+    # Install: clawhub install avito
+
+    # Path: ruslanlanket/avito
+
+
+    ## Description
+
+    Manage Avito.ru account, items, and messenger via API. Use for listing items, checking balance, reading chats, and getting
+    account info.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/auth.py
+
+    - scripts/get_balance.py
+
+    - scripts/get_self.py
+
+    - scripts/list_chats.py
+
+    - scripts/list_items.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install avito
+
+    ```'
+examples:
+- description: Install Avito.ru publish and chat from ClawHub
+  usage: clawhub install avito
+schema_version: '1.0'

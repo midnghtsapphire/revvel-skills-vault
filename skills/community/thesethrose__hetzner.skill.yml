@@ -1,0 +1,57 @@
+name: hetzner
+title: Hetzner Cloud
+version: 1.0.0
+description: Hetzner Cloud server management using the hcloud CLI. Manage servers, networks, volumes, firewalls, floating
+  IPs, and SSH keys.
+metadata:
+  author: thesethrose
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - hetzner
+  source: clawhub-community
+  clawhub_slug: hetzner
+  clawhub_path: thesethrose/hetzner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hetzner Cloud
+
+    # Source: ClawHub community skill by thesethrose
+
+    # Install: clawhub install hetzner
+
+    # Path: thesethrose/hetzner
+
+
+    ## Description
+
+    Hetzner Cloud server management using the hcloud CLI. Manage servers, networks, volumes, firewalls, floating IPs, and
+    SSH keys.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - hetzner.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hetzner
+
+    ```'
+examples:
+- description: Install Hetzner Cloud from ClawHub
+  usage: clawhub install hetzner
+schema_version: '1.0'

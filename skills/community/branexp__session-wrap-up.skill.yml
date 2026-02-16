@@ -1,0 +1,58 @@
+name: session-wrap-up
+title: Session Wrap-Up
+version: 1.0.0
+description: Wrap up a conversation session before starting a new one. Use when the user says "wrap up", "wrap up this conversation",
+  "session wrap up", or uses /session_wrap_up command. Flushes context to memory files, updates PARA notes, commits changes,
+  and provides a summary.
+metadata:
+  author: branexp
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - session
+  - wrap
+  source: clawhub-community
+  clawhub_slug: session-wrap-up
+  clawhub_path: branexp/session-wrap-up
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Session Wrap-Up
+
+    # Source: ClawHub community skill by branexp
+
+    # Install: clawhub install session-wrap-up
+
+    # Path: branexp/session-wrap-up
+
+
+    ## Description
+
+    Wrap up a conversation session before starting a new one. Use when the user says "wrap up", "wrap up this conversation",
+    "session wrap up", or uses /session_wrap_up command. Flushes context to memory files, updates PARA notes, commits changes,
+    and provides a summary.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install session-wrap-up
+
+    ```'
+examples:
+- description: Install Session Wrap-Up from ClawHub
+  usage: clawhub install session-wrap-up
+schema_version: '1.0'

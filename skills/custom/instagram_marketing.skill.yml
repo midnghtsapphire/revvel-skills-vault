@@ -1,0 +1,376 @@
+name: instagram_marketing
+title: Instagram Marketing Expert
+version: 1.0.0
+description: A comprehensive skill for creating, managing, and analyzing Instagram marketing campaigns, including Reels, Stories,
+  and Shopping features.
+metadata:
+  author: Revvel AI Engine
+  category: Marketing & Business
+  tags:
+  - audience-targeting
+  - trend-analysis
+  - hashtag-research
+  - campaign-management
+  - content-calendar-generation
+  - instagram
+  - competitor-analysis
+  - marketing
+  - ad-creation
+  - analytics-and-reporting
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json, re, os, math, hashlib, statistics, requests\nfrom datetime import datetime, timedelta\nfrom collections\
+    \ import defaultdict\nfrom typing import Dict, List, Any, Optional, Tuple\nimport unittest\nimport logging\nimport argparse\n\
+    from pathlib import Path\n\n# Configure logging\nlogging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s\
+    \ - %(message)s')\n\nSKILL_METADATA = {\n    \"name\": \"Instagram Marketing Expert\",\n    \"id\": \"instagram_marketing\"\
+    ,\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"A comprehensive skill for\
+    \ creating, managing, and analyzing Instagram marketing campaigns, including Reels, Stories, and Shopping features.\"\
+    ,\n    \"domain\": \"Social Media Marketing\",\n    \"capabilities\": [\n        \"ad_creation\",\n        \"campaign_management\"\
+    ,\n        \"content_calendar_generation\",\n        \"audience_targeting\",\n        \"analytics_and_reporting\",\n \
+    \       \"hashtag_research\",\n        \"trend_analysis\",\n        \"competitor_analysis\",\n        \"influencer_identification\"\
+    ,\n        \"roi_tracking\",\n        \"reels_strategy\",\n        \"stories_strategy\",\n        \"instagram_shopping\"\
+    ,\n        \"collab_posts\",\n        \"branded_content\",\n        \"quick_ad_generation\",\n        \"compliance_checking\"\
+    ,\n        \"a_b_testing\",\n        \"budget_optimization\",\n        \"performance_forecasting\",\n        \"community_management\"\
+    ,\n        \"lead_generation\",\n        \"story_interactive_elements\"\n    ]\n}\n\nEXPERT_PROMPTS = {\n    \"ad_copy_generation\"\
+    : {\n        \"prompt\": \"Generate {number_of_variations} variations of ad copy for an Instagram {ad_format} ad. The\
+    \ product is {product_description}. The target audience is {target_audience}. The key message to convey is {key_message}.\
+    \ The tone should be {tone}. Include a strong call-to-action like {cta}.\",\n        \"placeholders\": [\"number_of_variations\"\
+    , \"ad_format\", \"product_description\", \"target_audience\", \"key_message\", \"tone\", \"cta\"]\n    },\n    \"reels_idea_generation\"\
+    : {\n        \"prompt\": \"Brainstorm {number_of_ideas} Instagram Reels ideas for a brand in the {industry} niche. The\
+    \ goal is to {marketing_goal}. The content should be engaging for {target_audience} and incorporate trending audio or\
+    \ effects if possible. Current trends: {current_trends}\",\n        \"placeholders\": [\"number_of_ideas\", \"industry\"\
+    , \"marketing_goal\", \"target_audience\", \"current_trends\"]\n    },\n    \"story_sequence_creation\": {\n        \"\
+    prompt\": \"Create a sequence of {number_of_stories} Instagram Stories to promote {product_or_event}. The sequence should\
+    \ tell a story, starting with an attention-grabbing hook, followed by details, a user-generated content showcase, and\
+    \ a final call-to-action with a swipe-up link. The theme is {theme}.\",\n        \"placeholders\": [\"number_of_stories\"\
+    , \"product_or_event\", \"theme\"]\n    },\n    \"hashtag_strategy\": {\n        \"prompt\": \"Develop a hashtag strategy\
+    \ for an Instagram post about {topic}. The strategy should include a mix of {number_of_niche} niche-specific hashtags,\
+    \ {number_of_community} community-focused hashtags, and {number_of_broad} broad-reach hashtags. The brand is {brand_name}.\"\
+    ,\n        \"placeholders\": [\"topic\", \"number_of_niche\", \"number_of_community\", \"number_of_broad\", \"brand_name\"\
+    ]\n    },\n    \"influencer_discovery\": {\n        \"prompt\": \"Identify {number_of_influencers} potential micro-influencers\
+    \ on Instagram for a collaboration with a {product_type} brand. The influencers should have an audience primarily in {location}\
+    \ and an engagement rate above {engagement_rate_threshold}%. Their content niche is {content_niche}.\",\n        \"placeholders\"\
+    : [\"number_of_influencers\", \"product_type\", \"location\", \"engagement_rate_threshold\", \"content_niche\"]\n    },\n\
+    \    \"competitor_analysis_report\": {\n        \"prompt\": \"Generate a competitor analysis report for the Instagram\
+    \ account @{competitor_handle}. Analyze their content strategy, engagement rates, follower growth, and recent top-performing\
+    \ posts. Identify their strengths and weaknesses compared to our brand @{our_handle}.\",\n        \"placeholders\": [\"\
+    competitor_handle\", \"our_handle\"]\n    },\n    \"content_calendar_setup\": {\n        \"prompt\": \"Create a one-month\
+    \ content calendar for an Instagram account in the {industry} industry. The calendar should include a mix of post types\
+    \ (Reels, Stories, Carousels, Single Image), content pillars ({pillar_1}, {pillar_2}, {pillar_3}), and key dates or holidays.\
+    \ The posting frequency is {frequency}.\",\n        \"placeholders\": [\"industry\", \"pillar_1\", \"pillar_2\", \"pillar_3\"\
+    , \"frequency\"]\n    },\n    \"campaign_optimization_plan\": {\n        \"prompt\": \"Based on the following Instagram\
+    \ Ads campaign data: {campaign_data}, create an optimization plan. The campaign goal is {campaign_goal}. The plan should\
+    \ suggest adjustments to targeting, budget allocation, and creative to improve {metric_to_improve}.\",\n        \"placeholders\"\
+    : [\"campaign_data\", \"campaign_goal\", \"metric_to_improve\"]\n    },\n    \"shopping_tag_product_feed\": {\n      \
+    \  \"prompt\": \"Structure a product feed for Instagram Shopping. The product list is as follows: {product_list_csv}.\
+    \ Each product needs a unique ID, title, description, price, availability, link, and image link. Ensure the format is\
+    \ compliant with Facebook Catalog requirements.\",\n        \"placeholders\": [\"product_list_csv\"]\n    },\n    \"quick_reels_ad_script\"\
+    : {\n        \"prompt\": \"Write a short, punchy script for a 15-second Instagram Reels ad for {product_name}. The ad\
+    \ should quickly grab attention, showcase the main benefit, and end with a clear call-to-action. The target audience is\
+    \ {target_audience}. The desired action is {desired_action}.\",\n        \"placeholders\": [\"product_name\", \"target_audience\"\
+    , \"desired_action\"]\n    },\n    \"story_poll_idea\": {\n        \"prompt\": \"Generate an engaging poll question for\
+    \ an Instagram Story for a brand that sells {product_category}. The poll should be relevant to {target_audience} and encourage\
+    \ interaction.\",\n        \"placeholders\": [\"product_category\", \"target_audience\"]\n    },\n    \"roi_calculation\"\
+    : {\n        \"prompt\": \"Calculate the ROI for an Instagram campaign with the following metrics: Total Ad Spend: ${ad_spend},\
+    \ Revenue from Campaign: ${revenue}. The formula is ((Revenue - Ad Spend) / Ad Spend) * 100.\",\n        \"placeholders\"\
+    : [\"ad_spend\", \"revenue\"]\n    },\n    \"community_engagement_response\": {\n        \"prompt\": \"Draft a friendly\
+    \ and helpful response to the following user comment on our post: '{user_comment}'. Our brand voice is {brand_voice}.\"\
+    ,\n        \"placeholders\": [\"user_comment\", \"brand_voice\"]\n    },\n    \"lead_gen_form_setup\": {\n        \"prompt\"\
+    : \"Design a lead generation form for an Instagram Lead Ad. The form should capture {fields_to_capture} from users interested\
+    \ in {offer}. Keep it short and mobile-friendly.\",\n        \"placeholders\": [\"fields_to_capture\", \"offer\"]\n  \
+    \  }\n}\n\nclass InstagramAdCreator:\n    def create_story_interactive_element(self, story_id: str, element_type: str,\
+    \ question: str, options: List[str]) -> Dict[str, Any]:\n        if element_type not in ['poll', 'quiz', 'slider']:\n\
+    \            raise ValueError(\"Invalid interactive element type.\")\n        return {\n            \"story_id\": story_id,\n\
+    \            \"element_type\": element_type,\n            \"question\": question,\n            \"options\": options,\n\
+    \            \"status\": \"added\"\n        }\n\n    def create_image_ad(self, copy: str, cta: str, image_spec: str, headline:\
+    \ Optional[str] = None, placement: str = 'Feed') -> Dict[str, Any]:\n        if placement not in ['Feed', 'Story', 'Explore']:\n\
+    \            raise ValueError(\"Invalid placement specified.\")\n        \n        recommendations = {\n            'Feed':\
+    \ '1080x1080 pixels (1:1 ratio)',\n            'Story': '1080x1920 pixels (9:16 ratio)',\n            'Explore': '1080x1080\
+    \ or 1080x1350 pixels'\n        }\n\n        return {\n            \"type\": \"Image Ad\",\n            \"placement\"\
+    : placement,\n            \"content\": {\n                \"copy\": copy,\n                \"headline\": headline,\n \
+    \               \"media_spec\": {\n                    \"type\": \"image\",\n                    \"source\": image_spec,\n\
+    \                    \"recommendations\": recommendations.get(placement)\n                }\n            },\n        \
+    \    \"cta\": cta,\n            \"created_at\": datetime.utcnow().isoformat()\n        }\n\n    def create_video_ad(self,\
+    \ copy: str, cta: str, video_spec: str, headline: Optional[str] = None, thumbnail_spec: Optional[str] = None, placement:\
+    \ str = 'Reels') -> Dict[str, Any]:\n        if placement not in ['Reels', 'Story', 'Feed']:\n            raise ValueError(\"\
+    Invalid placement specified.\")\n\n        recommendations = {\n            'Reels': 'Vertical video (9:16), up to 90\
+    \ seconds.',\n            'Story': 'Vertical video (9:16), up to 60 seconds per card.',\n            'Feed': '4:5 or 1:1\
+    \ ratio, up to 60 seconds.'\n        }\n\n        return {\n            \"type\": \"Video Ad\",\n            \"placement\"\
+    : placement,\n            \"content\": {\n                \"copy\": copy,\n                \"headline\": headline,\n \
+    \               \"media_spec\": {\n                    \"type\": \"video\",\n                    \"source\": video_spec,\n\
+    \                    \"thumbnail\": thumbnail_spec,\n                    \"recommendations\": recommendations.get(placement)\n\
+    \                }\n            },\n            \"cta\": cta,\n            \"created_at\": datetime.utcnow().isoformat()\n\
+    \        }\n\n    def create_carousel_ad(self, copy: str, cta: str, cards: List[Dict[str, str]], headline: Optional[str]\
+    \ = None) -> Dict[str, Any]:\n        if not (2 <= len(cards) <= 10):\n            raise ValueError(\"Carousel ads must\
+    \ have between 2 and 10 cards.\")\n        \n        processed_cards = []\n        for i, card in enumerate(cards):\n\
+    \            if not all(k in card for k in ['type', 'source']):\n                raise ValueError(f\"Card {i+1} must have\
+    \ a type and source.\")\n            processed_cards.append({\n                \"media_type\": card['type'],\n       \
+    \         \"source\": card['source'],\n                \"headline\": card.get('headline'),\n                \"link\":\
+    \ card.get('link')\n            })\n\n        return {\n            \"type\": \"Carousel Ad\",\n            \"format\"\
+    : [\"Feed\", \"Story\"],\n            \"content\": {\n                \"copy\": copy,\n                \"headline\": headline,\n\
+    \                \"cards\": processed_cards\n            },\n            \"cta\": cta,\n            \"created_at\": datetime.utcnow().isoformat()\n\
+    \        }\n\n    def create_lead_ad(self, copy: str, cta: str, image_spec: str, form_id: str, headline: str) -> Dict[str,\
+    \ Any]:\n        return {\n            \"type\": \"Lead Ad\",\n            \"placement\": \"Feed\",\n            \"content\"\
+    : {\n                \"copy\": copy,\n                \"headline\": headline,\n                \"media_spec\": {\n   \
+    \                 \"type\": \"image\",\n                    \"source\": image_spec\n                },\n             \
+    \   \"form_id\": form_id\n            },\n            \"cta\": cta,\n            \"created_at\": datetime.utcnow().isoformat()\n\
+    \        }\n\nclass InstagramCampaignManager:\n    def __init__(self):\n        self.campaigns = {}\n\n    def create_campaign(self,\
+    \ name: str, objective: str, budget: float, schedule: Dict[str, str], target_audience: Dict) -> str:\n        campaign_id\
+    \ = f\"IG-CAMP-{hashlib.md5(name.encode()).hexdigest()[:8]}\"\n        self.campaigns[campaign_id] = {\n            \"\
+    name\": name,\n            \"objective\": objective,\n            \"budget\": {'total': budget, 'daily_spend': 0},\n \
+    \           \"schedule\": schedule,\n            \"targeting\": target_audience,\n            \"status\": \"DRAFT\",\n\
+    \            \"ad_sets\": {},\n            \"created_at\": datetime.utcnow().isoformat(),\n            \"performance\"\
+    : None\n        }\n        logging.info(f\"Campaign {campaign_id} ({name}) created with objective: {objective}.\")\n \
+    \       return campaign_id\n\n    def update_campaign_status(self, campaign_id: str, status: str) -> bool:\n        if\
+    \ campaign_id not in self.campaigns:\n            raise ValueError(\"Campaign not found.\")\n        if status not in\
+    \ ['ACTIVE', 'PAUSED', 'ARCHIVED']:\n            raise ValueError(\"Invalid status.\")\n        self.campaigns[campaign_id]['status']\
+    \ = status\n        logging.info(f\"Campaign {campaign_id} status updated to {status}.\")\n        return True\n\n   \
+    \ def allocate_budget(self, campaign_id: str, ad_set_id: str, budget: float) -> bool:\n        if campaign_id not in self.campaigns:\n\
+    \            raise ValueError(\"Campaign not found.\")\n        if ad_set_id not in self.campaigns[campaign_id]['ad_sets']:\n\
+    \             self.campaigns[campaign_id]['ad_sets'][ad_set_id] = {'budget': 0}\n\n        self.campaigns[campaign_id]['ad_sets'][ad_set_id]['budget']\
+    \ = budget\n        logging.info(f\"Allocated ${budget} to ad set {ad_set_id} in campaign {campaign_id}.\")\n        return\
+    \ True\n\n    def run_ab_test(self, campaign_id: str, variable: str, variations: List[Dict]) -> str:\n        if campaign_id\
+    \ not in self.campaigns:\n            raise ValueError(\"Campaign not found.\")\n        if variable not in ['creative',\
+    \ 'audience', 'placement']:\n            raise ValueError(\"Invalid A/B test variable.\")\n        if len(variations)\
+    \ < 2:\n            raise ValueError(\"A/B test requires at least two variations.\")\n\n        test_id = f\"ABT-{campaign_id[:4]}-{variable}-{hashlib.md5(str(variations).encode()).hexdigest()[:4]}\"\
+    \n        self.campaigns[campaign_id]['ab_test'] = {\n            \"test_id\": test_id,\n            \"variable\": variable,\n\
+    \            \"variations\": variations,\n            \"status\": \"RUNNING\"\n        }\n        logging.info(f\"A/B\
+    \ test {test_id} created for campaign {campaign_id}.\")\n        return test_id\n\nclass InstagramContentCalendar:\n \
+    \   def generate_calendar(self, start_date: datetime, days: int, posts_per_day: int, content_pillars: List[str], include_weekends:\
+    \ bool = True) -> List[Dict[str, Any]]:\n        calendar = []\n        post_types = ['Reel', 'Story', 'Carousel', 'Image']\n\
+    \        current_date = start_date\n        days_generated = 0\n        while days_generated < days:\n            if include_weekends\
+    \ or current_date.weekday() < 5:\n                for j in range(posts_per_day):\n                    calendar.append({\n\
+    \                        \"date\": current_date.strftime('%Y-%m-%d'),\n                        \"post_slot\": j + 1,\n\
+    \                        \"content_pillar\": content_pillars[days_generated % len(content_pillars)],\n               \
+    \         \"post_type\": post_types[(days_generated + j) % len(post_types)],\n                        \"status\": \"PLANNED\"\
+    ,\n                        \"idea\": \"TBD\",\n                        \"hashtags\": [],\n                        \"copy\"\
+    : \"\"\n                    })\n                days_generated += 1\n            current_date += timedelta(days=1)\n \
+    \       return calendar\n\nclass InstagramAudienceManager:\n    def define_core_audience(self, name: str, locations: List[str],\
+    \ age_range: Tuple[int, int], interests: List[str], behaviors: Optional[List[str]] = None) -> Dict[str, Any]:\n      \
+    \  return {\n            \"name\": name,\n            \"type\": \"core\",\n            \"definition\": {\n           \
+    \     \"locations\": locations,\n                \"age_range\": age_range,\n                \"interests\": interests,\n\
+    \                \"behaviors\": behaviors or []\n            }\n        }\n\n    def create_custom_audience_from_file(self,\
+    \ name: str, file_path: str) -> str:\n        if not os.path.exists(file_path):\n            raise FileNotFoundError(f\"\
+    Audience file not found at {file_path}\")\n        audience_id = f\"CUSTOM-FILE-{hashlib.md5(name.encode()).hexdigest()[:8]}\"\
+    \n        logging.info(f\"Creating custom audience '{name}' from file {file_path}.\")\n        return audience_id\n\n\
+    \    def create_lookalike_audience(self, name: str, source_audience_id: str, country: str, size_percent: int) -> str:\n\
+    \        if not (1 <= size_percent <= 10):\n            raise ValueError(\"Lookalike size must be between 1 and 10 percent.\"\
+    )\n        audience_id = f\"LAL-{source_audience_id[:6]}-{country}-{size_percent}p\"\n        logging.info(f\"Creating\
+    \ {size_percent}% lookalike audience in {country} from {source_audience_id}.\")\n        return audience_id\n\nclass InstagramAnalytics:\n\
+    \    def get_post_performance(self, post_id: str) -> Dict[str, Any]:\n        reach = 15034\n        likes = 1024\n  \
+    \      comments = 56\n        shares = 23\n        saves = 112\n        engagement = likes + comments + shares + saves\n\
+    \        return {\n            \"post_id\": post_id,\n            \"metrics\": {\n                \"likes\": likes,\n\
+    \                \"comments\": comments,\n                \"shares\": shares,\n                \"saves\": saves,\n   \
+    \             \"reach\": reach,\n                \"impressions\": 18056,\n                \"engagement_count\": engagement,\n\
+    \                \"engagement_rate_by_reach\": engagement / reach if reach > 0 else 0\n            }\n        }\n\n  \
+    \  def get_campaign_report(self, campaign_id: str, campaign_data: Dict) -> Dict[str, Any]:\n        spend = campaign_data.get('spend',\
+    \ 0)\n        clicks = campaign_data.get('clicks', 0)\n        conversions = campaign_data.get('conversions', 0)\n   \
+    \     return {\n            \"campaign_id\": campaign_id,\n            \"summary\": {\n                \"spend\": spend,\n\
+    \                \"impressions\": campaign_data.get('impressions', 0),\n                \"clicks\": clicks,\n        \
+    \        \"ctr\": clicks / campaign_data.get('impressions', 1),\n                \"cpc\": spend / clicks if clicks > 0\
+    \ else 0,\n                \"conversions\": conversions,\n                \"cpa\": spend / conversions if conversions\
+    \ > 0 else 0\n            }\n        }\n\n    def forecast_performance(self, budget: float, cpc_estimate: float, conversion_rate_estimate:\
+    \ float) -> Dict[str, float]:\n        if cpc_estimate <= 0:\n            raise ValueError(\"CPC estimate must be positive.\"\
+    )\n        clicks = budget / cpc_estimate\n        conversions = clicks * conversion_rate_estimate\n        return {\n\
+    \            \"estimated_clicks\": round(clicks),\n            \"estimated_conversions\": round(conversions)\n       \
+    \ }\n\nclass InstagramTrendResearcher:\n    def research_hashtags(self, keyword: str, limit: int = 30) -> List[Dict[str,\
+    \ Any]]:\n        results = []\n        for i in range(limit):\n            volume = 1000000 // (i + 1) * (1 + (i % 3)\
+    \ * 0.5)\n            tag = f\"#{keyword}{i if i > 0 else ''}\"\n            category = \"broad\"\n            if 50000\
+    \ < volume <= 500000:\n                category = \"niche\"\n            elif volume <= 50000:\n                category\
+    \ = \"hyper_niche\"\n            results.append({\n                \"hashtag\": tag,\n                \"volume\": int(volume),\n\
+    \                \"category\": category\n            })\n        return sorted(results, key=lambda x: x['volume'], reverse=True)\n\
+    \n    def analyze_competitor(self, competitor_handle: str) -> Dict[str, Any]:\n        return {\n            \"handle\"\
+    : competitor_handle,\n            \"followers\": 150000,\n            \"following\": 500,\n            \"posts\": 1200,\n\
+    \            \"bio\": \"Your daily dose of inspiration! ✨\",\n            \"avg_likes_per_post\": 3500,\n            \"\
+    avg_comments_per_post\": 150,\n            \"estimated_engagement_rate\": (3500 + 150) / 150000,\n            \"content_strategy\"\
+    : {\n                \"top_formats\": [\"Reels\", \"Carousel\"],\n                \"common_themes\": [\"User-Generated\
+    \ Content\", \"Product Demos\", \"Behind the Scenes\"],\n                \"top_performing_hashtags\": [\"#inspiration\"\
+    , \"#dailyquotes\", \"#motivation\"]\n            },\n            \"posting_frequency\": \"1.5 posts/day\"\n        }\n\
+    \n    def identify_trending_audio(self, region: str = 'global') -> List[Dict[str, Any]]:\n        return [\n         \
+    \   {\"audio_id\": \"AUDIO123\", \"title\": \"Funky Beat\", \"artist\": \"DJ Cool\", \"reels_count\": 1200000, \"trend_velocity\"\
+    : \"high\", \"region\": region},\n            {\"audio_id\": \"AUDIO456\", \"title\": \"Chill Vibes\", \"artist\": \"\
+    Lofi Girl\", \"reels_count\": 850000, \"trend_velocity\": \"medium\", \"region\": region},\n            {\"audio_id\"\
+    : \"AUDIO789\", \"title\": \"Summer Pop\", \"artist\": \"Sunny Days\", \"reels_count\": 2500000, \"trend_velocity\": \"\
+    explosive\", \"region\": region}\n        ]\n\nclass InstagramInfluencerManager:\n    def find_influencers(self, niche:\
+    \ str, follower_range: Tuple[int, int], engagement_min: float) -> List[Dict[str, Any]]:\n        results = []\n      \
+    \  for i in range(10):\n            followers = follower_range[0] + i * ((follower_range[1] - follower_range[0]) / 10)\n\
+    \            results.append({\n                \"username\": f\"influencer_{niche}_{i}\",\n                \"followers\"\
+    : int(followers),\n                \"engagement_rate\": engagement_min + i * 0.001,\n                \"niche\": niche,\n\
+    \                \"contact_info\": f\"contact@influencer{i}.com\"\n            })\n        return results\n\nclass InstagramROITracker:\n\
+    \    def calculate_campaign_roi(self, campaign_id: str, ad_spend: float, revenue_generated: float) -> Dict[str, Any]:\n\
+    \        if ad_spend <= 0:\n            return {'error': 'Ad spend must be positive.'}\n        roi_percentage = ((revenue_generated\
+    \ - ad_spend) / ad_spend) * 100\n        return {\n            \"campaign_id\": campaign_id,\n            \"ad_spend\"\
+    : ad_spend,\n            \"revenue_generated\": revenue_generated,\n            \"net_profit\": revenue_generated - ad_spend,\n\
+    \            \"roi_percentage\": round(roi_percentage, 2)\n        }\n\nclass InstagramPlatformFeatures:\n    def setup_collab_post(self,\
+    \ primary_author: str, collaborator: str, post_id: str) -> bool:\n        logging.info(f\"Setting up post {post_id} as\
+    \ a collaboration between {primary_author} and {collaborator}.\")\n        return True\n\n    def enable_branded_content(self,\
+    \ post_id: str, brand_partner: str) -> bool:\n        logging.info(f\"Tagging {brand_partner} in branded content post\
+    \ {post_id}.\")\n        return True\n\n    def create_shopping_post(self, post_id: str, product_ids: List[str], catalog_id:\
+    \ str) -> bool:\n        logging.info(f\"Tagging products {product_ids} from catalog {catalog_id} in post {post_id}.\"\
+    )\n        return True\n\nclass InstagramAdTemplateGenerator:\n    def quick_reels_ad(self, product_name: str, benefit:\
+    \ str, cta: str, audience_keywords: List[str]) -> Dict[str, Any]:\n        hashtags = InstagramTrendResearcher().research_hashtags(audience_keywords[0],\
+    \ 5)\n        hashtag_str = \" \".join([h['hashtag'] for h in hashtags])\n\n        copy = f\"Stop scrolling! ✨ Discover\
+    \ {product_name} and how it can {benefit}. {cta} now! #ad #{product_name.replace(' ','')} {hashtag_str}\"\n        \n\
+    \        return {\n            \"ad_type\": \"Reels Ad\",\n            \"copy\": copy,\n            \"cta\": cta,\n  \
+    \          \"video_spec\": {\n                \"duration_seconds\": 15,\n                \"visual_script\": [\n      \
+    \              \"0-2s: Fast-paced, eye-catching visual related to the problem.\",\n                    \"2-8s: Showcase\
+    \ {product_name} in action, clearly demonstrating the {benefit}.\",\n                    \"8-12s: User reaction shot (happy,\
+    \ satisfied).\",\n                    \"12-15s: Text overlay with {cta} and product shot.\"\n                ],\n    \
+    \            \"audio_recommendation\": \"Use trending, upbeat audio identified via trend research.\"\n            }\n\
+    \        }\n\nclass InstagramComplianceChecker:\n    def __init__(self):\n        self.prohibited_keywords = [\n     \
+    \       'crypto', 'get rich quick', 'misleading claims', 'before and after',\n            'tobacco', 'weapons', 'adult\
+    \ products', 'third-party infringement'\n        ]\n\n    def check_ad_copy(self, copy: str) -> Dict[str, Any]:\n    \
+    \    issues = []\n        for keyword in self.prohibited_keywords:\n            if re.search(r'\\b' + keyword + r'\\b',\
+    \ copy, re.IGNORECASE):\n                issues.append({\n                    \"type\": \"Prohibited Content\",\n    \
+    \                \"keyword\": keyword,\n                    \"severity\": \"High\",\n                    \"recommendation\"\
+    : f\"Remove or rephrase the term '{keyword}'.\"\n                })\n        \n        if len(copy) > 2200:\n        \
+    \    issues.append({\n                \"type\": \"Length Violation\",\n                \"message\": \"Caption exceeds\
+    \ Instagram's 2,200 character limit.\",\n                \"severity\": \"Medium\"\n            })\n\n        return {\n\
+    \            \"is_compliant\": len(issues) == 0,\n            \"issues\": issues\n        }\n\nclass InstagramCommunityManager:\n\
+    \    def generate_comment_response(self, comment: str, sentiment: str, brand_voice: str) -> str:\n        if sentiment\
+    \ == 'positive':\n            return f\"Thank you so much! We're so glad you love it. ❤️\"\n        elif sentiment ==\
+    \ 'negative':\n            return f\"We're so sorry to hear you had this experience. Please send us a DM so we can help\
+    \ resolve this for you.\"\n        else:\n            return f\"Thanks for your feedback! We appreciate you.\"\n\nclass\
+    \ InstagramABTesting:\n    def analyze_test_results(self, test_id: str, results: List[Dict[str, float]]) -> Dict[str,\
+    \ Any]:\n        if len(results) < 2:\n            raise ValueError(\"A/B test analysis requires at least two variation\
+    \ results.\")\n        \n        winner = sorted(results, key=lambda x: x['conversion_rate'], reverse=True)[0]\n     \
+    \   return {\n            \"test_id\": test_id,\n            \"winner_variation_id\": winner['variation_id'],\n      \
+    \      \"winning_conversion_rate\": winner['conversion_rate'],\n            \"analysis_summary\": f\"Variation {winner['variation_id']}\
+    \ was the winner with a conversion rate of {winner['conversion_rate']:.2%}.\"\n        }\n\n# --- Unit Tests ---\nclass\
+    \ TestInstagramMarketingSkill(unittest.TestCase):\n\n    def setUp(self):\n        self.ad_creator = InstagramAdCreator()\n\
+    \        self.campaign_manager = InstagramCampaignManager()\n        self.analytics = InstagramAnalytics()\n        self.compliance\
+    \ = InstagramComplianceChecker()\n        self.template_gen = InstagramAdTemplateGenerator()\n        self.audience_manager\
+    \ = InstagramAudienceManager()\n        self.roi_tracker = InstagramROITracker()\n        self.community_manager = InstagramCommunityManager()\n\
+    \        self.ab_testing = InstagramABTesting()\n\n    def test_create_image_ad(self):\n        ad = self.ad_creator.create_image_ad(\"\
+    My product\", \"Shop Now\", \"path/to/image.jpg\", \"New\", \"Story\")\n        self.assertEqual(ad['placement'], \"Story\"\
+    )\n        self.assertIn(\"1080x1920\", ad['content']['media_spec']['recommendations'])\n\n    def test_create_carousel_ad_validation(self):\n\
+    \        with self.assertRaises(ValueError):\n            self.ad_creator.create_carousel_ad(\"Check these out\", \"Learn\
+    \ More\", [{\"type\": \"image\", \"source\": \"1.jpg\"}])\n\n    def test_create_campaign(self):\n        audience = self.audience_manager.define_core_audience(\"\
+    Test Aud\", [\"US\"], (25, 35), [\"fitness\", \"health\"])\n        campaign_id = self.campaign_manager.create_campaign(\"\
+    Summer Fitness\", \"CONVERSIONS\", 1000.0, {\"start\": \"2026-07-01\", \"end\": \"2026-07-31\"}, audience)\n        self.assertTrue(campaign_id.startswith(\"\
+    IG-CAMP-\"))\n        self.assertEqual(self.campaign_manager.campaigns[campaign_id]['targeting']['name'], \"Test Aud\"\
+    )\n\n    def test_lookalike_audience_validation(self):\n        with self.assertRaises(ValueError):\n            self.audience_manager.create_lookalike_audience(\"\
+    My LAL\", \"SRC123\", \"US\", 15)\n\n    def test_compliance_checker_prohibited(self):\n        non_compliant_copy = \"\
+    Get rich quick with our new crypto app!\"\n        result = self.compliance.check_ad_copy(non_compliant_copy)\n      \
+    \  self.assertFalse(result['is_compliant'])\n        self.assertEqual(len(result['issues']), 2)\n\n    def test_quick_reels_ad_generator(self):\n\
+    \        template = self.template_gen.quick_reels_ad(\"Glow Serum\", \"give you radiant skin\", \"Shop the Glow\", [\"\
+    skincare\", \"beauty\"])\n        self.assertIn(\"Glow Serum\", template['copy'])\n        self.assertIn(\"#skincare\"\
+    , template['copy'])\n        self.assertEqual(template['ad_type'], \"Reels Ad\")\n\n    def test_roi_calculation(self):\n\
+    \        roi_data = self.roi_tracker.calculate_campaign_roi(\"test-camp\", 500, 2000)\n        self.assertEqual(roi_data['roi_percentage'],\
+    \ 300.0)\n\n    def test_performance_forecasting(self):\n        forecast = self.analytics.forecast_performance(1000,\
+    \ 0.5, 0.1)\n        self.assertEqual(forecast['estimated_clicks'], 2000)\n        self.assertEqual(forecast['estimated_conversions'],\
+    \ 200)\n\n    def test_create_lead_ad(self):\n        ad = self.ad_creator.create_lead_ad(\"Sign up for our newsletter\"\
+    , \"Sign Up\", \"image.jpg\", \"form123\", \"Get Weekly Tips\")\n        self.assertEqual(ad['type'], \"Lead Ad\")\n \
+    \       self.assertEqual(ad['content']['form_id'], \"form123\")\n\n    def test_community_manager_responses(self):\n \
+    \       positive_response = self.community_manager.generate_comment_response(\"I love this!\", \"positive\", \"friendly\"\
+    )\n        self.assertIn(\"so glad\", positive_response)\n        negative_response = self.community_manager.generate_comment_response(\"\
+    This broke after one use.\", \"negative\", \"friendly\")\n        self.assertIn(\"DM\", negative_response)\n\n    def\
+    \ test_ab_test_analysis(self):\n        results = [\n            {'variation_id': 'A', 'conversion_rate': 0.05},\n   \
+    \         {'variation_id': 'B', 'conversion_rate': 0.08}\n        ]\n        analysis = self.ab_testing.analyze_test_results(\"\
+    test1234\", results)\n        self.assertEqual(analysis['winner_variation_id'], 'B')\n\n    def test_story_interactive_element(self):\n\
+    \        element = self.ad_creator.create_story_interactive_element(\"story1\", \"poll\", \"Your favorite color?\", [\"\
+    Blue\", \"Red\"])\n        self.assertEqual(element['element_type'], \"poll\")\n\n# --- MCP Tool Definitions ---\nTOOLS\
+    \ = [\n    {\n        \"type\": \"function\",\n        \"function\": {\n            \"name\": \"instagram_marketing_create_ad\"\
+    ,\n            \"description\": \"Create a new ad for Instagram with detailed options.\",\n            \"parameters\"\
+    : {\n                \"type\": \"object\",\n                \"properties\": {\n                    \"ad_type\": {\"type\"\
+    : \"string\", \"enum\": [\"image\", \"video\", \"carousel\", \"lead\"]},\n                    \"placement\": {\"type\"\
+    : \"string\", \"enum\": [\"Feed\", \"Story\", \"Reels\", \"Explore\"]},\n                    \"copy\": {\"type\": \"string\"\
+    },\n                    \"cta\": {\"type\": \"string\"},\n                    \"media_spec\": {\"type\": \"string\", \"\
+    description\": \"URL or path to media.\"},\n                    \"headline\": {\"type\": \"string\"},\n              \
+    \      \"form_id\": {\"type\": \"string\", \"description\": \"The ID of the instant form for lead ads.\"}\n          \
+    \      },\n                \"required\": [\"ad_type\", \"placement\", \"copy\", \"cta\", \"media_spec\"]\n           \
+    \ }\n        }\n    },\n    {\n        \"type\": \"function\",\n        \"function\": {\n            \"name\": \"instagram_marketing_generate_content_calendar\"\
+    ,\n            \"description\": \"Generate a content calendar for Instagram.\",\n            \"parameters\": {\n     \
+    \           \"type\": \"object\",\n                \"properties\": {\n                    \"days\": {\"type\": \"integer\"\
+    , \"default\": 30},\n                    \"posts_per_day\": {\"type\": \"integer\", \"default\": 1},\n               \
+    \     \"content_pillars\": {\"type\": \"array\", \"items\": {\"type\": \"string\"}},\n                    \"include_weekends\"\
+    : {\"type\": \"boolean\", \"default\": True}\n                },\n                \"required\": [\"content_pillars\"]\n\
+    \            }\n        }\n    },\n    {\n        \"type\": \"function\",\n        \"function\": {\n            \"name\"\
+    : \"instagram_marketing_calculate_roi\",\n            \"description\": \"Calculate the ROI of a campaign.\",\n       \
+    \     \"parameters\": {\n                \"type\": \"object\",\n                \"properties\": {\n                  \
+    \  \"ad_spend\": {\"type\": \"number\"},\n                    \"revenue_generated\": {\"type\": \"number\"}\n        \
+    \        },\n                \"required\": [\"ad_spend\", \"revenue_generated\"]\n            }\n        }\n    }\n]\n\
+    \n# --- FastAPI Router --- \ndef create_instagram_marketing_router():\n    try:\n        from fastapi import APIRouter,\
+    \ HTTPException\n    except ImportError:\n        logging.warning(\"FastAPI not installed. Skipping router creation.\"\
+    )\n        return None\n\n    router = APIRouter()\n    ad_creator = InstagramAdCreator()\n    analytics = InstagramAnalytics()\n\
+    \    community_manager = InstagramCommunityManager()\n    \n    @router.post(\"/ads/image\", summary=\"Create an Image\
+    \ Ad\")\n    def api_create_image_ad(copy: str, cta: str, image_spec: str, headline: Optional[str] = None, placement:\
+    \ str = 'Feed'):\n        try:\n            return ad_creator.create_image_ad(copy, cta, image_spec, headline, placement)\n\
+    \        except ValueError as e:\n            raise HTTPException(status_code=400, detail=str(e))\n\n    @router.get(\"\
+    /analytics/forecast\", summary=\"Forecast Campaign Performance\")\n    def api_forecast_performance(budget: float, cpc:\
+    \ float, conv_rate: float):\n        try:\n            return analytics.forecast_performance(budget, cpc, conv_rate)\n\
+    \        except ValueError as e:\n            raise HTTPException(status_code=400, detail=str(e))\n\n    @router.post(\"\
+    /community/respond\", summary=\"Generate Comment Response\")\n    def api_generate_comment_response(comment: str, sentiment:\
+    \ str, brand_voice: str):\n        return {\"response\": community_manager.generate_comment_response(comment, sentiment,\
+    \ brand_voice)}\n            \n    return router\n\n# --- CLI Interface ---\ndef main():\n    parser = argparse.ArgumentParser(description=\"\
+    Instagram Marketing Skill CLI - Comprehensive Toolkit\")\n    subparsers = parser.add_subparsers(dest=\"command\", required=True)\n\
+    \n    ad_parser = subparsers.add_parser(\"create_ad\", help=\"Create an Instagram ad\")\n    ad_parser.add_argument(\"\
+    --type\", choices=['image', 'video', 'carousel', 'lead'], required=True)\n    ad_parser.add_argument(\"--placement\",\
+    \ choices=['Feed', 'Story', 'Reels', 'Explore'], default='Feed')\n    ad_parser.add_argument(\"--copy\", required=True)\n\
+    \    ad_parser.add_argument(\"--cta\", required=True)\n    ad_parser.add_argument(\"--media\", required=True, help=\"\
+    Path or URL to media file\")\n    ad_parser.add_argument(\"--form_id\", help=\"Form ID for lead ads\")\n\n    hashtag_parser\
+    \ = subparsers.add_parser(\"research_hashtags\", help=\"Research Instagram hashtags\")\n    hashtag_parser.add_argument(\"\
+    keyword\", help=\"Keyword to search hashtags for\")\n    hashtag_parser.add_argument(\"--limit\", type=int, default=20)\n\
+    \n    quick_ad_parser = subparsers.add_parser(\"quick_ad\", help=\"Generate a quick Reels ad template\")\n    quick_ad_parser.add_argument(\"\
+    --product\", required=True, help=\"Product name\")\n    quick_ad_parser.add_argument(\"--benefit\", required=True, help=\"\
+    Main product benefit\")\n    quick_ad_parser.add_argument(\"--cta\", required=True, help=\"Call to action\")\n    quick_ad_parser.add_argument(\"\
+    --keywords\", nargs='+', required=True, help=\"Audience keywords\")\n\n    roi_parser = subparsers.add_parser(\"calculate_roi\"\
+    , help=\"Calculate campaign ROI\")\n    roi_parser.add_argument(\"--spend\", type=float, required=True)\n    roi_parser.add_argument(\"\
+    --revenue\", type=float, required=True)\n\n    comp_parser = subparsers.add_parser(\"analyze_competitor\", help=\"Analyze\
+    \ a competitor account\")\n    comp_parser.add_argument(\"handle\", help=\"Competitor's Instagram handle\")\n\n    community_parser\
+    \ = subparsers.add_parser(\"respond_comment\", help=\"Generate a response to a comment\")\n    community_parser.add_argument(\"\
+    comment\", help=\"The user's comment\")\n    community_parser.add_argument(\"--sentiment\", choices=['positive', 'negative',\
+    \ 'neutral'], default='neutral')\n    community_parser.add_argument(\"--voice\", default='friendly')\n\n    ab_test_parser\
+    \ = subparsers.add_parser(\"analyze_ab_test\", help=\"Analyze A/B test results\")\n    ab_test_parser.add_argument(\"\
+    test_id\")\n    ab_test_parser.add_argument(\"results_json\", help='JSON string of results: [{\"variation_id\": \"A\"\
+    , \"conversion_rate\": 0.1}, ...]')\n\n    args = parser.parse_args()\n\n    if args.command == \"create_ad\":\n     \
+    \   creator = InstagramAdCreator()\n        if args.type == 'image':\n            ad = creator.create_image_ad(args.copy,\
+    \ args.cta, args.media, placement=args.placement)\n            print(json.dumps(ad, indent=2))\n        elif args.type\
+    \ == 'lead':\n            if not args.form_id:\n                print(\"Error: --form_id is required for lead ads.\")\n\
+    \                return\n            ad = creator.create_lead_ad(args.copy, args.cta, args.media, args.form_id, \"Lead\
+    \ Ad Headline\")\n            print(json.dumps(ad, indent=2))\n        else:\n            print(f\"Creation for ad type\
+    \ '{args.type}' not fully implemented in CLI for this example.\")\n    \n    elif args.command == \"research_hashtags\"\
+    :\n        researcher = InstagramTrendResearcher()\n        hashtags = researcher.research_hashtags(args.keyword, args.limit)\n\
+    \        print(json.dumps(hashtags, indent=2))\n\n    elif args.command == \"quick_ad\":\n        template_gen = InstagramAdTemplateGenerator()\n\
+    \        template = template_gen.quick_reels_ad(args.product, args.benefit, args.cta, args.keywords)\n        print(json.dumps(template,\
+    \ indent=2))\n\n    elif args.command == \"calculate_roi\":\n        tracker = InstagramROITracker()\n        roi = tracker.calculate_campaign_roi(\"\
+    cli-campaign\", args.spend, args.revenue)\n        print(json.dumps(roi, indent=2))\n\n    elif args.command == \"analyze_competitor\"\
+    :\n        researcher = InstagramTrendResearcher()\n        analysis = researcher.analyze_competitor(args.handle)\n  \
+    \      print(json.dumps(analysis, indent=2))\n\n    elif args.command == \"respond_comment\":\n        manager = InstagramCommunityManager()\n\
+    \        response = manager.generate_comment_response(args.comment, args.sentiment, args.voice)\n        print(json.dumps({\"\
+    response\": response}, indent=2))\n\n    elif args.command == \"analyze_ab_test\":\n        tester = InstagramABTesting()\n\
+    \        results = json.loads(args.results_json)\n        analysis = tester.analyze_test_results(args.test_id, results)\n\
+    \        print(json.dumps(analysis, indent=2))\n\nif __name__ == \"__main__\":\n    main()\n'''\n'''\nclass InstagramStoryAnalytics:\n\
+    \    \"\"\"Provides analytics for Instagram Stories.\"\"\"\n\n    def get_story_views(self, story_id: str) -> Dict[str,\
+    \ Any]:\n        \"\"\"Retrieves view count and viewers for a story.\"\"\"\n        # Mock data\n        return {\n  \
+    \          \"story_id\": story_id,\n            \"views\": 2500,\n            \"viewers\": [\"user1\", \"user2\", \"user3\"\
+    ] # Sample, not scalable\n        }\n\n    def get_story_exit_rate(self, story_id: str) -> Dict[str, Any]:\n        \"\
+    \"\"Calculates the exit rate for a story.\"\"\"\n        # Mock data\n        return {\n            \"story_id\": story_id,\n\
+    \            \"impressions\": 3000,\n            \"exits\": 150,\n            \"exit_rate\": 150 / 3000\n        }\n'''\n\
+    '''\nclass InstagramShoppingManager:\n    \"\"\"Manages Instagram Shopping features.\"\"\"\n\n    def create_product_catalog(self,\
+    \ name: str) -> str:\n        \"\"\"Creates a new product catalog.\"\"\"\n        catalog_id = f\"CATALOG-{hashlib.md5(name.encode()).hexdigest()[:8]}\"\
+    \n        logging.info(f\"Product catalog '{name}' created with ID: {catalog_id}\")\n        return catalog_id\n\n   \
+    \ def add_product_to_catalog(self, catalog_id: str, product_data: Dict[str, Any]) -> bool:\n        \"\"\"Adds a product\
+    \ to a catalog.\"\"\"\n        logging.info(f\"Adding product {product_data.get('id')} to catalog {catalog_id}.\")\n \
+    \       return True\n\nclass InstagramReelsManager:\n    \"\"\"Manages Instagram Reels strategy and content.\"\"\"\n\n\
+    \    def get_reels_performance(self, reel_id: str) -> Dict[str, Any]:\n        \"\"\"Retrieves performance metrics for\
+    \ a Reel.\"\"\"\n        # Mock data\n        return {\n            \"reel_id\": reel_id,\n            \"plays\": 50000,\n\
+    \            \"likes\": 2500,\n            \"comments\": 150,\n            \"shares\": 300,\n            \"reach\": 45000\n\
+    \        }\n\nclass InstagramStoriesManager:\n    \"\"\"Manages Instagram Stories strategy and content.\"\"\"\n\n    def\
+    \ get_story_sticker_taps(self, story_id: str, sticker_id: str) -> Dict[str, Any]:\n        \"\"\"Retrieves tap counts\
+    \ for a sticker in a story.\"\"\"\n        # Mock data\n        return {\n            \"story_id\": story_id,\n      \
+    \      \"sticker_id\": sticker_id,\n            \"taps\": 500\n        }\n"
+examples:
+- description: Load and use the Instagram Marketing Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''instagram_marketing'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

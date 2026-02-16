@@ -1,0 +1,53 @@
+name: db-backup
+title: Db Backup
+version: 1.1.0
+description: Generate automated backup scripts with rotation for PostgreSQL, MySQL, SQLite, and MongoDB.
+metadata:
+  author: sa9saq
+  category: Development & Coding
+  tags:
+  - development-coding
+  - backup
+  source: clawhub-community
+  clawhub_slug: db-backup
+  clawhub_path: sa9saq/db-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Db Backup
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install db-backup
+
+    # Path: sa9saq/db-backup
+
+
+    ## Description
+
+    Generate automated backup scripts with rotation for PostgreSQL, MySQL, SQLite, and MongoDB.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install db-backup
+
+    ```'
+examples:
+- description: Install Db Backup from ClawHub
+  usage: clawhub install db-backup
+schema_version: '1.0'

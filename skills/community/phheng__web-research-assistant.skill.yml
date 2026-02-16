@@ -1,0 +1,59 @@
+name: web-research-assistant
+title: Web Research Assistant
+version: 0.1.0
+description: AI-powered web research assistant that leverages BrowserAct API to supplement restricted web access by searching
+  the internet for additional information. Designed for OpenClaw and Claude Code.
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - web
+  - research
+  - assistant
+  source: clawhub-community
+  clawhub_slug: web-research-assistant
+  clawhub_path: phheng/web-research-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Web Research Assistant
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install web-research-assistant
+
+    # Path: phheng/web-research-assistant
+
+
+    ## Description
+
+    AI-powered web research assistant that leverages BrowserAct API to supplement restricted web access by searching the internet
+    for additional information. Designed for OpenClaw and Claude Code.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/research.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install web-research-assistant
+
+    ```'
+examples:
+- description: Install Web Research Assistant from ClawHub
+  usage: clawhub install web-research-assistant
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: notebooklm
+title: NotebookLM CLI
+version: 0.1.1
+description: NotebookLM CLI wrapper via `node {baseDir}/scripts/notebooklm.mjs`. Use for auth, notebooks, chat, sources, notes,
+  sharing, research, and artifact generation/download.
+metadata:
+  author: fadeloo
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - notebooklm
+  source: clawhub-community
+  clawhub_slug: tiangong-notebooklm-cli
+  clawhub_path: fadeloo/tiangong-notebooklm-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NotebookLM CLI
+
+    # Source: ClawHub community skill by fadeloo
+
+    # Install: clawhub install tiangong-notebooklm-cli
+
+    # Path: fadeloo/tiangong-notebooklm-cli
+
+
+    ## Description
+
+    NotebookLM CLI wrapper via `node {baseDir}/scripts/notebooklm.mjs`. Use for auth, notebooks, chat, sources, notes, sharing,
+    research, and artifact generation/download.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cli-commands.md
+
+    - scripts/notebooklm.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tiangong-notebooklm-cli
+
+    ```'
+examples:
+- description: Install NotebookLM CLI from ClawHub
+  usage: clawhub install tiangong-notebooklm-cli
+schema_version: '1.0'

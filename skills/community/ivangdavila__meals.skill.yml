@@ -1,0 +1,53 @@
+name: meals
+title: Meals
+version: 1.0.0
+description: Build a personal meal planning system with weekly plans, shopping lists, and dietary tracking.
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - meals
+  source: clawhub-community
+  clawhub_slug: meals
+  clawhub_path: ivangdavila/meals
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meals
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install meals
+
+    # Path: ivangdavila/meals
+
+
+    ## Description
+
+    Build a personal meal planning system with weekly plans, shopping lists, and dietary tracking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meals
+
+    ```'
+examples:
+- description: Install Meals from ClawHub
+  usage: clawhub install meals
+schema_version: '1.0'

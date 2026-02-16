@@ -1,0 +1,61 @@
+name: only-baby-skills
+title: OnlyBaby
+version: 1.0.0
+description: Analyze contraction JSON and baby log JSON to assess mum's labour/contraction situation and baby's feeding and
+  diaper status. Use when the user provides (or references) contractions_*.json and babyLogs_*.json files and wants to know
+  if mum is safe and baby is healthy, or asks for a summary of contra
+metadata:
+  author: jacklandrin
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - only
+  - baby
+  - skills
+  source: clawhub-community
+  clawhub_slug: only-baby-skill
+  clawhub_path: jacklandrin/only-baby-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OnlyBaby
+
+    # Source: ClawHub community skill by jacklandrin
+
+    # Install: clawhub install only-baby-skill
+
+    # Path: jacklandrin/only-baby-skill
+
+
+    ## Description
+
+    Analyze contraction JSON and baby log JSON to assess mum''s labour/contraction situation and baby''s feeding and diaper
+    status. Use when the user provides (or references) contractions_*.json and babyLogs_*.json files and wants to know if
+    mum is safe and baby is healthy, or asks for a summary of contra
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/schemas-and-thresholds.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install only-baby-skill
+
+    ```'
+examples:
+- description: Install OnlyBaby from ClawHub
+  usage: clawhub install only-baby-skill
+schema_version: '1.0'

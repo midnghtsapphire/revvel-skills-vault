@@ -1,0 +1,53 @@
+name: notectl
+title: Notectl
+version: 1.0.0
+description: Manage Apple Notes via AppleScript CLI
+metadata:
+  author: rainbat
+  category: General
+  tags:
+  - general
+  - notectl
+  source: clawhub-community
+  clawhub_slug: notectl
+  clawhub_path: rainbat/notectl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notectl
+
+    # Source: ClawHub community skill by rainbat
+
+    # Install: clawhub install notectl
+
+    # Path: rainbat/notectl
+
+
+    ## Description
+
+    Manage Apple Notes via AppleScript CLI
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notectl
+
+    ```'
+examples:
+- description: Install Notectl from ClawHub
+  usage: clawhub install notectl
+schema_version: '1.0'

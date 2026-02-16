@@ -1,0 +1,74 @@
+name: token-saver
+title: Token Saver
+version: 3.0.0
+description: '"Reduce OpenClaw AI costs with model-aware optimization. Features dynamic compaction presets based on your model''s
+  context window, intelligent file compression, and robust model detection with fallback. Supports Claude, GPT-4, Gemini,
+  DeepSeek, and more."'
+metadata:
+  author: rubenaquispe
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - token
+  - saver
+  source: clawhub-community
+  clawhub_slug: token-saver
+  clawhub_path: rubenaquispe/token-saver
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Token Saver
+
+    # Source: ClawHub community skill by rubenaquispe
+
+    # Install: clawhub install token-saver
+
+    # Path: rubenaquispe/token-saver
+
+
+    ## Description
+
+    "Reduce OpenClaw AI costs with model-aware optimization. Features dynamic compaction presets based on your model''s context
+    window, intelligent file compression, and robust model detection with fallback. Supports Claude, GPT-4, Gemini, DeepSeek,
+    and more."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - audit.json
+
+    - package.json
+
+    - v3-plan.md
+
+    - v3-test-results.md
+
+    - scripts/analyzer.js
+
+    - scripts/compressor.js
+
+    - scripts/models.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install token-saver
+
+    ```'
+examples:
+- description: Install Token Saver from ClawHub
+  usage: clawhub install token-saver
+schema_version: '1.0'

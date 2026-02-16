@@ -1,0 +1,56 @@
+name: seo-autopilot
+title: Seo Autopilot
+version: 1.0.0
+description: Run local SEO autopilot for boll-koll.se or hyresbyte.se and return PR link plus summary.
+metadata:
+  author: adamhjort
+  category: Web & Internet
+  tags:
+  - web-internet
+  - seo
+  - autopilot
+  source: clawhub-community
+  clawhub_slug: seo-autopilot
+  clawhub_path: adamhjort/seo-autopilot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seo Autopilot
+
+    # Source: ClawHub community skill by adamhjort
+
+    # Install: clawhub install seo-autopilot
+
+    # Path: adamhjort/seo-autopilot
+
+
+    ## Description
+
+    Run local SEO autopilot for boll-koll.se or hyresbyte.se and return PR link plus summary.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/run.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seo-autopilot
+
+    ```'
+examples:
+- description: Install Seo Autopilot from ClawHub
+  usage: clawhub install seo-autopilot
+schema_version: '1.0'

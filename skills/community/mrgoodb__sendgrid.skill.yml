@@ -1,0 +1,53 @@
+name: sendgrid
+title: Sendgrid
+version: 1.0.0
+description: Send transactional and marketing emails via SendGrid API. Supports templates, attachments, and email analytics.
+metadata:
+  author: mrgoodb
+  category: Communication
+  tags:
+  - communication
+  - sendgrid
+  source: clawhub-community
+  clawhub_slug: sendgrid
+  clawhub_path: mrgoodb/sendgrid
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sendgrid
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install sendgrid
+
+    # Path: mrgoodb/sendgrid
+
+
+    ## Description
+
+    Send transactional and marketing emails via SendGrid API. Supports templates, attachments, and email analytics.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sendgrid
+
+    ```'
+examples:
+- description: Install Sendgrid from ClawHub
+  usage: clawhub install sendgrid
+schema_version: '1.0'

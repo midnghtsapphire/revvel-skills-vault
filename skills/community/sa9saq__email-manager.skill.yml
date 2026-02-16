@@ -1,0 +1,56 @@
+name: email-manager
+title: email-manager
+version: 1.0.1
+description: Check and reply to emails via Gmail API. Monitor inbox, draft responses, send emails. Use when user says "check
+  email", "reply email", "send email".
+metadata:
+  author: sa9saq
+  category: Communication
+  tags:
+  - communication
+  - email
+  - manager
+  source: clawhub-community
+  clawhub_slug: email-manager
+  clawhub_path: sa9saq/email-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# email-manager
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install email-manager
+
+    # Path: sa9saq/email-manager
+
+
+    ## Description
+
+    Check and reply to emails via Gmail API. Monitor inbox, draft responses, send emails. Use when user says "check email",
+    "reply email", "send email".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-manager
+
+    ```'
+examples:
+- description: Install email-manager from ClawHub
+  usage: clawhub install email-manager
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: pomodoro
+title: make a recipe
+version: 1.0.0
+description: Use this skill when a user wants to run timed focus sessions (Pomodoro technique) from the terminal.
+metadata:
+  author: abeljseba
+  category: Utilities
+  tags:
+  - utilities
+  - pomodoro
+  source: clawhub-community
+  clawhub_slug: makeovern
+  clawhub_path: abeljseba/makeovern
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# make a recipe
+
+    # Source: ClawHub community skill by abeljseba
+
+    # Install: clawhub install makeovern
+
+    # Path: abeljseba/makeovern
+
+
+    ## Description
+
+    Use this skill when a user wants to run timed focus sessions (Pomodoro technique) from the terminal.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install makeovern
+
+    ```'
+examples:
+- description: Install make a recipe from ClawHub
+  usage: clawhub install makeovern
+schema_version: '1.0'

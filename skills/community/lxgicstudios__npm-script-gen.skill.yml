@@ -1,0 +1,54 @@
+name: script-gen
+title: NPM Script Generator
+version: 1.0.2
+description: Generate package.json scripts with AI. Use when setting up npm scripts.
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - script
+  - gen
+  source: clawhub-community
+  clawhub_slug: npm-script-gen
+  clawhub_path: lxgicstudios/npm-script-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NPM Script Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install npm-script-gen
+
+    # Path: lxgicstudios/npm-script-gen
+
+
+    ## Description
+
+    Generate package.json scripts with AI. Use when setting up npm scripts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install npm-script-gen
+
+    ```'
+examples:
+- description: Install NPM Script Generator from ClawHub
+  usage: clawhub install npm-script-gen
+schema_version: '1.0'

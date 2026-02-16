@@ -1,0 +1,55 @@
+name: trakt
+title: Trakt
+version: 0.1.0
+description: Track and view your watched movies and TV shows via trakt.tv. Use when user asks about their watch history, what
+  they've been watching, or wants to search for movies/shows.
+metadata:
+  author: mjrussell
+  category: Search & Research
+  tags:
+  - search-research
+  - trakt
+  source: clawhub-community
+  clawhub_slug: trakt
+  clawhub_path: mjrussell/trakt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trakt
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install trakt
+
+    # Path: mjrussell/trakt
+
+
+    ## Description
+
+    Track and view your watched movies and TV shows via trakt.tv. Use when user asks about their watch history, what they''ve
+    been watching, or wants to search for movies/shows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trakt
+
+    ```'
+examples:
+- description: Install Trakt from ClawHub
+  usage: clawhub install trakt
+schema_version: '1.0'

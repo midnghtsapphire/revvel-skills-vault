@@ -1,0 +1,71 @@
+name: flyworks-avatar-video
+title: Flyworks Avatar Video
+version: 1.0.0
+description: Generate videos using Flyworks (a.k.a HiFly) Digital Humans. Create talking photo videos from images, use public
+  avatars with TTS, or clone voices for custom audio.
+metadata:
+  author: linhui99
+  category: Media & Content
+  tags:
+  - media-content
+  - flyworks
+  - avatar
+  - video
+  source: clawhub-community
+  clawhub_slug: flyworks-avatar-video
+  clawhub_path: linhui99/flyworks-avatar-video
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Flyworks Avatar Video
+
+    # Source: ClawHub community skill by linhui99
+
+    # Install: clawhub install flyworks-avatar-video
+
+    # Path: linhui99/flyworks-avatar-video
+
+
+    ## Description
+
+    Generate videos using Flyworks (a.k.a HiFly) Digital Humans. Create talking photo videos from images, use public avatars
+    with TTS, or clone voices for custom audio.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/authentication.md
+
+    - references/avatars.md
+
+    - references/video-generation.md
+
+    - references/voices.md
+
+    - scripts/hifly_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flyworks-avatar-video
+
+    ```'
+examples:
+- description: Install Flyworks Avatar Video from ClawHub
+  usage: clawhub install flyworks-avatar-video
+schema_version: '1.0'

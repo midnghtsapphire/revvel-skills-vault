@@ -1,0 +1,70 @@
+name: credex-protocol
+title: Credex Protocol
+version: 1.0.1
+description: Access unsecured credit lines for AI agents on the Arc Network using the Credex Protocol. Use for borrowing USDC
+  against reputation, repaying debt to grow credit limits, providing liquidity as an LP, or managing cross-chain USDC via
+  Circle Bridge. Triggers on "borrow from credex", "repay debt", "dep
+metadata:
+  author: capgoblin
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - credex
+  - protocol
+  source: clawhub-community
+  clawhub_slug: credex-protocol
+  clawhub_path: capgoblin/credex-protocol
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Credex Protocol
+
+    # Source: ClawHub community skill by capgoblin
+
+    # Install: clawhub install credex-protocol
+
+    # Path: capgoblin/credex-protocol
+
+
+    ## Description
+
+    Access unsecured credit lines for AI agents on the Arc Network using the Credex Protocol. Use for borrowing USDC against
+    reputation, repaying debt to grow credit limits, providing liquidity as an LP, or managing cross-chain USDC via Circle
+    Bridge. Triggers on "borrow from credex", "repay debt", "dep
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - references/contracts.md
+
+    - scripts/client.ts
+
+    - scripts/lp.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install credex-protocol
+
+    ```'
+examples:
+- description: Install Credex Protocol from ClawHub
+  usage: clawhub install credex-protocol
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: grafana
+title: Grafana
+version: 1.0.0
+description: Avoid common Grafana mistakes — query pitfalls, variable templating, alerting traps, and provisioning gotchas.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - grafana
+  source: clawhub-community
+  clawhub_slug: grafana
+  clawhub_path: ivangdavila/grafana
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Grafana
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install grafana
+
+    # Path: ivangdavila/grafana
+
+
+    ## Description
+
+    Avoid common Grafana mistakes — query pitfalls, variable templating, alerting traps, and provisioning gotchas.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install grafana
+
+    ```'
+examples:
+- description: Install Grafana from ClawHub
+  usage: clawhub install grafana
+schema_version: '1.0'

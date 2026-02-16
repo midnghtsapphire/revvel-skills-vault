@@ -1,0 +1,63 @@
+name: x-twitter
+title: X Twitter
+version: 1.0.1
+description: X (Twitter) API client for searching tweets, retrieving article content, and fetching trending topics. Supports
+  both Bearer Token (app-only) and OAuth 2.0 authentication.
+metadata:
+  author: zaaachary
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - twitter
+  source: clawhub-community
+  clawhub_slug: x-twitter-api
+  clawhub_path: zaaachary/x-twitter-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Twitter
+
+    # Source: ClawHub community skill by zaaachary
+
+    # Install: clawhub install x-twitter-api
+
+    # Path: zaaachary/x-twitter-api
+
+
+    ## Description
+
+    X (Twitter) API client for searching tweets, retrieving article content, and fetching trending topics. Supports both Bearer
+    Token (app-only) and OAuth 2.0 authentication.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/get_article.py
+
+    - scripts/get_trends.py
+
+    - scripts/search_tweets.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-twitter-api
+
+    ```'
+examples:
+- description: Install X Twitter from ClawHub
+  usage: clawhub install x-twitter-api
+schema_version: '1.0'

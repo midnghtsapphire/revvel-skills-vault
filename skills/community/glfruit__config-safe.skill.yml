@@ -1,0 +1,55 @@
+name: config-safe
+title: Config Safe
+version: 1.0.0
+description: 安全地修改 OpenClaw 配置。先读取官方最新文档，理解配置结构和验证规则，预览变更，验证无误后再写入。**绝不直接修改配置**，所有变更都需要用户确认。触发词："修改配置"、"更改配置"、"配置 openclaw"、"设置
+  openclaw"、"config"。
+metadata:
+  author: glfruit
+  category: General
+  tags:
+  - general
+  - config
+  - safe
+  source: clawhub-community
+  clawhub_slug: config-safe
+  clawhub_path: glfruit/config-safe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Config Safe
+
+    # Source: ClawHub community skill by glfruit
+
+    # Install: clawhub install config-safe
+
+    # Path: glfruit/config-safe
+
+
+    ## Description
+
+    安全地修改 OpenClaw 配置。先读取官方最新文档，理解配置结构和验证规则，预览变更，验证无误后再写入。**绝不直接修改配置**，所有变更都需要用户确认。触发词："修改配置"、"更改配置"、"配置 openclaw"、"设置 openclaw"、"config"。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install config-safe
+
+    ```'
+examples:
+- description: Install Config Safe from ClawHub
+  usage: clawhub install config-safe
+schema_version: '1.0'

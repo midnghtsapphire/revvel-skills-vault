@@ -1,0 +1,65 @@
+name: swissweather
+title: Swiss-Weather
+version: 1.0.0
+description: Get current weather and forecasts from MeteoSwiss (official Swiss weather service). Use when querying Swiss weather
+  data, local measurements from Swiss weather stations, or Swiss-specific forecasts. Provides real-time measurements (temperature,
+  humidity, wind, precipitation, pressure) from 100+ Swis
+metadata:
+  author: xenofex7
+  category: Development & Coding
+  tags:
+  - development-coding
+  - swissweather
+  source: clawhub-community
+  clawhub_slug: swissweather
+  clawhub_path: xenofex7/swissweather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Swiss-Weather
+
+    # Source: ClawHub community skill by xenofex7
+
+    # Install: clawhub install swissweather
+
+    # Path: xenofex7/swissweather
+
+
+    ## Description
+
+    Get current weather and forecasts from MeteoSwiss (official Swiss weather service). Use when querying Swiss weather data,
+    local measurements from Swiss weather stations, or Swiss-specific forecasts. Provides real-time measurements (temperature,
+    humidity, wind, precipitation, pressure) from 100+ Swis
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_info.md
+
+    - scripts/current_weather.py
+
+    - scripts/current_weather_curl.sh
+
+    - scripts/forecast.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install swissweather
+
+    ```'
+examples:
+- description: Install Swiss-Weather from ClawHub
+  usage: clawhub install swissweather
+schema_version: '1.0'

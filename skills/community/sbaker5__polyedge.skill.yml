@@ -1,0 +1,70 @@
+name: polymarket-correlation
+title: PolyEdge - Polymarket Correlation Analyzer
+version: 0.1.1
+description: Detect mispriced correlations between Polymarket prediction markets. Cross-market arbitrage finder for AI agents.
+metadata:
+  author: sbaker5
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - polymarket
+  - correlation
+  source: clawhub-community
+  clawhub_slug: polyedge
+  clawhub_path: sbaker5/polyedge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PolyEdge - Polymarket Correlation Analyzer
+
+    # Source: ClawHub community skill by sbaker5
+
+    # Install: clawhub install polyedge
+
+    # Path: sbaker5/polyedge
+
+
+    ## Description
+
+    Detect mispriced correlations between Polymarket prediction markets. Cross-market arbitrage finder for AI agents.
+
+
+    ## Files
+
+    - PLAN.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docker-compose.yml
+
+    - src/__init__.py
+
+    - src/analyzer.py
+
+    - src/api.py
+
+    - src/dashboard.py
+
+    - src/dashboard_html.py
+
+    - src/patterns.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polyedge
+
+    ```'
+examples:
+- description: Install PolyEdge - Polymarket Correlation Analyzer from ClawHub
+  usage: clawhub install polyedge
+schema_version: '1.0'

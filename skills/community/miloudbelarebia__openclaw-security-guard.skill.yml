@@ -1,0 +1,73 @@
+name: openclaw-security-guard
+title: Openclaw Security Guard
+version: 1.0.0
+description: Security audit CLI + live dashboard for OpenClaw. Scans for secrets, config issues, prompt injections, vulnerable
+  dependencies, and unverified MCP servers. Zero telemetry.
+metadata:
+  author: miloudbelarebia
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - security
+  - guard
+  source: clawhub-community
+  clawhub_slug: openclaw-security-guard
+  clawhub_path: miloudbelarebia/openclaw-security-guard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Security Guard
+
+    # Source: ClawHub community skill by miloudbelarebia
+
+    # Install: clawhub install openclaw-security-guard
+
+    # Path: miloudbelarebia/openclaw-security-guard
+
+
+    ## Description
+
+    Security audit CLI + live dashboard for OpenClaw. Scans for secrets, config issues, prompt injections, vulnerable dependencies,
+    and unverified MCP servers. Zero telemetry.
+
+
+    ## Files
+
+    - PUBLICATION_GUIDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - docs/README.md
+
+    - docs/api/cli.md
+
+    - docs/api/programmatic.md
+
+    - docs/ar/README.md
+
+    - docs/en/README.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-security-guard
+
+    ```'
+examples:
+- description: Install Openclaw Security Guard from ClawHub
+  usage: clawhub install openclaw-security-guard
+schema_version: '1.0'

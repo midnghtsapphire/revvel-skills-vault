@@ -1,0 +1,72 @@
+name: peer-reviewer
+title: Peer Reviewer
+version: 1.0.0
+description: AI-powered academic paper reviewer. Uses a multi-agent system (Deconstructor, Devil's Advocate, Judge) to analyze
+  papers for logical flaws, contradictions, and empirical validity.
+metadata:
+  author: sschepis
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - peer
+  - reviewer
+  source: clawhub-community
+  clawhub_slug: peer-reviewer
+  clawhub_path: sschepis/peer-reviewer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Peer Reviewer
+
+    # Source: ClawHub community skill by sschepis
+
+    # Install: clawhub install peer-reviewer
+
+    # Path: sschepis/peer-reviewer
+
+
+    ## Description
+
+    AI-powered academic paper reviewer. Uses a multi-agent system (Deconstructor, Devil''s Advocate, Judge) to analyze papers
+    for logical flaws, contradictions, and empirical validity.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/agents.ts
+
+    - src/engine.ts
+
+    - src/index.ts
+
+    - src/ports.ts
+
+    - src/prompts.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install peer-reviewer
+
+    ```'
+examples:
+- description: Install Peer Reviewer from ClawHub
+  usage: clawhub install peer-reviewer
+schema_version: '1.0'

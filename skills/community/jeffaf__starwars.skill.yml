@@ -1,0 +1,55 @@
+name: starwars
+title: Starwars
+version: 1.0.0
+description: '"CLI for AI agents to lookup Star Wars universe info for their humans. Uses SWAPI. No auth required."'
+metadata:
+  author: jeffaf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - starwars
+  source: clawhub-community
+  clawhub_slug: starwars
+  clawhub_path: jeffaf/starwars
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Starwars
+
+    # Source: ClawHub community skill by jeffaf
+
+    # Install: clawhub install starwars
+
+    # Path: jeffaf/starwars
+
+
+    ## Description
+
+    "CLI for AI agents to lookup Star Wars universe info for their humans. Uses SWAPI. No auth required."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install starwars
+
+    ```'
+examples:
+- description: Install Starwars from ClawHub
+  usage: clawhub install starwars
+schema_version: '1.0'

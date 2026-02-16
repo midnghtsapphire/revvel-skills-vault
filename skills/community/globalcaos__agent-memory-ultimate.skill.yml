@@ -1,0 +1,70 @@
+name: agent-memory-ultimate
+title: Agent Memory Ultimate
+version: 2.0.4
+description: AI agent persistent memory with SQLite, session recall, and long-term memory. Human-like architecture with daily
+  logs, sleep consolidation, FTS5 search, importers for WhatsApp/ChatGPT/VCF. Everything an agent needs to remember across
+  sessions.
+metadata:
+  author: globalcaos
+  category: Search & Research
+  tags:
+  - search-research
+  - agent
+  - memory
+  - ultimate
+  source: clawhub-community
+  clawhub_slug: agent-memory-ultimate
+  clawhub_path: globalcaos/agent-memory-ultimate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Memory Ultimate
+
+    # Source: ClawHub community skill by globalcaos
+
+    # Install: clawhub install agent-memory-ultimate
+
+    # Path: globalcaos/agent-memory-ultimate
+
+
+    ## Description
+
+    AI agent persistent memory with SQLite, session recall, and long-term memory. Human-like architecture with daily logs,
+    sleep consolidation, FTS5 search, importers for WhatsApp/ChatGPT/VCF. Everything an agent needs to remember across sessions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/schema.md
+
+    - scripts/import_vcf.py
+
+    - scripts/init_db.py
+
+    - scripts/query.py
+
+    - scripts/sync_whatsapp.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-memory-ultimate
+
+    ```'
+examples:
+- description: Install Agent Memory Ultimate from ClawHub
+  usage: clawhub install agent-memory-ultimate
+schema_version: '1.0'

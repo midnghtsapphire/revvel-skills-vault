@@ -1,0 +1,76 @@
+name: code-standards-detective
+title: Code Standards Detective
+version: 1.0.0
+description: Deep codebase analysis to discover actual coding standards through statistical evidence. Use when analyzing naming
+  conventions, import patterns, or detecting anti-patterns in existing code. Provides evidence-based detection of how the
+  codebase actually works (not aspirations).
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - code
+  - standards
+  - detective
+  - read
+  - grep
+  - glob
+  - bash
+  - write
+  source: clawhub-community
+  clawhub_slug: sw-code-standards-detective
+  clawhub_path: anton-abyzov/sw-code-standards-detective
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Code Standards Detective
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-code-standards-detective
+
+    # Path: anton-abyzov/sw-code-standards-detective
+
+
+    ## Description
+
+    Deep codebase analysis to discover actual coding standards through statistical evidence. Use when analyzing naming conventions,
+    import patterns, or detecting anti-patterns in existing code. Provides evidence-based detection of how the codebase actually
+    works (not aspirations).
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Grep, Glob, Bash, Write
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-code-standards-detective
+
+    ```'
+examples:
+- description: Install Code Standards Detective from ClawHub
+  usage: clawhub install sw-code-standards-detective
+schema_version: '1.0'

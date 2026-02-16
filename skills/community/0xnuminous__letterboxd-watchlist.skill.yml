@@ -1,0 +1,58 @@
+name: letterboxd-watchlist
+title: Letterboxd Watchlist
+version: 0.1.2
+description: Scrape a public Letterboxd user's watchlist into a CSV/JSONL list of titles and film URLs without logging in.
+  Use when a user asks to export, scrape, or mirror a Letterboxd watchlist, or to build watch-next queues.
+metadata:
+  author: 0xnuminous
+  category: Search & Research
+  tags:
+  - search-research
+  - letterboxd
+  - watchlist
+  source: clawhub-community
+  clawhub_slug: letterboxd-watchlist
+  clawhub_path: 0xnuminous/letterboxd-watchlist
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Letterboxd Watchlist
+
+    # Source: ClawHub community skill by 0xnuminous
+
+    # Install: clawhub install letterboxd-watchlist
+
+    # Path: 0xnuminous/letterboxd-watchlist
+
+
+    ## Description
+
+    Scrape a public Letterboxd user''s watchlist into a CSV/JSONL list of titles and film URLs without logging in. Use when
+    a user asks to export, scrape, or mirror a Letterboxd watchlist, or to build watch-next queues.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/scrape_watchlist.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install letterboxd-watchlist
+
+    ```'
+examples:
+- description: Install Letterboxd Watchlist from ClawHub
+  usage: clawhub install letterboxd-watchlist
+schema_version: '1.0'

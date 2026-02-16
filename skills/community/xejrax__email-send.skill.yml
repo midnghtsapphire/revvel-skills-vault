@@ -1,0 +1,56 @@
+name: email-send
+title: Email Send
+version: 1.0.0
+description: '"Send a quick email via SMTP using `msmtp` without opening a full mail client."'
+metadata:
+  author: xejrax
+  category: Communication
+  tags:
+  - communication
+  - email
+  - send
+  source: clawhub-community
+  clawhub_slug: email-send
+  clawhub_path: xejrax/email-send
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Email Send
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install email-send
+
+    # Path: xejrax/email-send
+
+
+    ## Description
+
+    "Send a quick email via SMTP using `msmtp` without opening a full mail client."
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-send
+
+    ```'
+examples:
+- description: Install Email Send from ClawHub
+  usage: clawhub install email-send
+schema_version: '1.0'

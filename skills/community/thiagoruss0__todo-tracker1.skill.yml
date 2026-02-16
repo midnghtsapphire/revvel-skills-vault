@@ -1,0 +1,60 @@
+name: todo-tracker
+title: TODO Tracker
+version: 1.0.0
+description: Persistent TODO scratch pad for tracking tasks across sessions. Use when user says "add to TODO", "what's on
+  the TODO", "mark X done", "show TODO list", "remove from TODO", or asks about pending tasks. Also triggers on heartbeat
+  to remind about stale items.
+metadata:
+  author: thiagoruss0
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - todo
+  - tracker
+  source: clawhub-community
+  clawhub_slug: todo-tracker1
+  clawhub_path: thiagoruss0/todo-tracker1
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TODO Tracker
+
+    # Source: ClawHub community skill by thiagoruss0
+
+    # Install: clawhub install todo-tracker1
+
+    # Path: thiagoruss0/todo-tracker1
+
+
+    ## Description
+
+    Persistent TODO scratch pad for tracking tasks across sessions. Use when user says "add to TODO", "what''s on the TODO",
+    "mark X done", "show TODO list", "remove from TODO", or asks about pending tasks. Also triggers on heartbeat to remind
+    about stale items.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todo-tracker1
+
+    ```'
+examples:
+- description: Install TODO Tracker from ClawHub
+  usage: clawhub install todo-tracker1
+schema_version: '1.0'

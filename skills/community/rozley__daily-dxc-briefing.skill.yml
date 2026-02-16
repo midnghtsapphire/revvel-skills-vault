@@ -1,0 +1,61 @@
+name: daily-company-briefing
+title: daily-dxc-briefing
+version: 0.1.0
+description: 聚合公司**国内官网（**[ **http://www.jxcpp.com/zh.html**](http://www.jxcpp.com/zh.html) **）**、**海外DXC官网（**[ **https://dxc.com/**](https://dxc.com/)
+  **）**、核心长期合作客户（博世、百盛等）的最新动态，同步覆盖行业政策、招标、竞品与合作机会；生成**极简速读版晨报**，包含核心结论、关键动态、商机点与原文链接，自动过滤无效信息与旧闻，支撑快速业务决策。
+metadata:
+  author: rozley
+  category: Web & Internet
+  tags:
+  - web-internet
+  - daily
+  - company
+  - briefing
+  source: clawhub-community
+  clawhub_slug: daily-dxc-briefing
+  clawhub_path: rozley/daily-dxc-briefing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# daily-dxc-briefing
+
+    # Source: ClawHub community skill by rozley
+
+    # Install: clawhub install daily-dxc-briefing
+
+    # Path: rozley/daily-dxc-briefing
+
+
+    ## Description
+
+    聚合公司**国内官网（**[ **http://www.jxcpp.com/zh.html**](http://www.jxcpp.com/zh.html) **）**、**海外DXC官网（**[ **https://dxc.com/**](https://dxc.com/)
+    **）**、核心长期合作客户（博世、百盛等）的最新动态，同步覆盖行业政策、招标、竞品与合作机会；生成**极简速读版晨报**，包含核心结论、关键动态、商机点与原文链接，自动过滤无效信息与旧闻，支撑快速业务决策。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/example.md
+
+    - references/source.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-dxc-briefing
+
+    ```'
+examples:
+- description: Install daily-dxc-briefing from ClawHub
+  usage: clawhub install daily-dxc-briefing
+schema_version: '1.0'

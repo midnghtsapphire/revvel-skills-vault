@@ -1,0 +1,55 @@
+name: tron
+title: Tron
+version: 1.0.0
+description: Interact with TRON blockchain - check TRX balances, view TRC-20 tokens, transactions, and account resources.
+  Works with TronLink addresses.
+metadata:
+  author: sakaen736jih
+  category: General
+  tags:
+  - general
+  - tron
+  source: clawhub-community
+  clawhub_slug: tron
+  clawhub_path: sakaen736jih/tron
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tron
+
+    # Source: ClawHub community skill by sakaen736jih
+
+    # Install: clawhub install tron
+
+    # Path: sakaen736jih/tron
+
+
+    ## Description
+
+    Interact with TRON blockchain - check TRX balances, view TRC-20 tokens, transactions, and account resources. Works with
+    TronLink addresses.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tron
+
+    ```'
+examples:
+- description: Install Tron from ClawHub
+  usage: clawhub install tron
+schema_version: '1.0'

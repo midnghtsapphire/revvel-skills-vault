@@ -1,0 +1,57 @@
+name: fivem
+title: fivem dev
+version: 1.0.0
+description: Fix, create, or validate FiveM server resources for QBCore/ESX (config.lua, fxmanifest.lua, items, housing/furniture,
+  scripts, MLOs). Use when asked to debug resource errors, convert ESX↔QB, update fxmanifest versions, add items, or source
+  scripts from GitHub. Also use for SSH key generation for SFT
+metadata:
+  author: dktrn9ne
+  category: Development & Coding
+  tags:
+  - development-coding
+  - fivem
+  source: clawhub-community
+  clawhub_slug: fivem
+  clawhub_path: dktrn9ne/fivem
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# fivem dev
+
+    # Source: ClawHub community skill by dktrn9ne
+
+    # Install: clawhub install fivem
+
+    # Path: dktrn9ne/fivem
+
+
+    ## Description
+
+    Fix, create, or validate FiveM server resources for QBCore/ESX (config.lua, fxmanifest.lua, items, housing/furniture,
+    scripts, MLOs). Use when asked to debug resource errors, convert ESX↔QB, update fxmanifest versions, add items, or source
+    scripts from GitHub. Also use for SSH key generation for SFT
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fivem
+
+    ```'
+examples:
+- description: Install fivem dev from ClawHub
+  usage: clawhub install fivem
+schema_version: '1.0'

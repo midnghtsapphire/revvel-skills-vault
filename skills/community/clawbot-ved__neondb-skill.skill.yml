@@ -1,0 +1,57 @@
+name: neondb
+title: NeonDB-skill
+version: 1.0.0
+description: Manage Neon serverless Postgres databases. Create projects, branches, databases, and execute queries. Perfect
+  for agent workflows needing persistent storage with branching (like git for databases), scale-to-zero, and instant provisioning.
+metadata:
+  author: clawbot-ved
+  category: Development & Coding
+  tags:
+  - development-coding
+  - neondb
+  source: clawhub-community
+  clawhub_slug: neondb-skill
+  clawhub_path: clawbot-ved/neondb-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NeonDB-skill
+
+    # Source: ClawHub community skill by clawbot-ved
+
+    # Install: clawhub install neondb-skill
+
+    # Path: clawbot-ved/neondb-skill
+
+
+    ## Description
+
+    Manage Neon serverless Postgres databases. Create projects, branches, databases, and execute queries. Perfect for agent
+    workflows needing persistent storage with branching (like git for databases), scale-to-zero, and instant provisioning.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/setup-org-db.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install neondb-skill
+
+    ```'
+examples:
+- description: Install NeonDB-skill from ClawHub
+  usage: clawhub install neondb-skill
+schema_version: '1.0'

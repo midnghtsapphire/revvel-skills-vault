@@ -1,0 +1,71 @@
+name: clawboard
+title: Clawboard
+version: 1.0.1
+description: '"Install and operate Clawboard with OpenClaw. Use for scripted/manual/agentic install, token setup, Docker startup,
+  logger plugin wiring, and validation."'
+metadata:
+  author: sirouk
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawboard
+  source: clawhub-community
+  clawhub_slug: clawboard
+  clawhub_path: sirouk/clawboard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawboard
+
+    # Source: ClawHub community skill by sirouk
+
+    # Install: clawhub install clawboard
+
+    # Path: sirouk/clawboard
+
+
+    ## Description
+
+    "Install and operate Clawboard with OpenClaw. Use for scripted/manual/agentic install, token setup, Docker startup, logger
+    plugin wiring, and validation."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/clawboard-api.md
+
+    - references/openclaw-hooks.md
+
+    - references/openclaw-memory-local.md
+
+    - references/routing-rules.md
+
+    - scripts/backup_openclaw_curated_memories.sh
+
+    - scripts/export_clawboard_backup.py
+
+    - scripts/setup-openclaw-local-memory.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawboard
+
+    ```'
+examples:
+- description: Install Clawboard from ClawHub
+  usage: clawhub install clawboard
+schema_version: '1.0'

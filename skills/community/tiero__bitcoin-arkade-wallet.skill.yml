@@ -1,0 +1,70 @@
+name: arkade
+title: Bitcoin Wallet for Agents using Arkade
+version: 1.0.5
+description: Send and receive Bitcoin over Arkade (offchain), onchain (via onboard/offboard), and Lightning. Swap USDC/USDT
+  stablecoins.
+metadata:
+  author: tiero
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - arkade
+  source: clawhub-community
+  clawhub_slug: bitcoin-arkade-wallet
+  clawhub_path: tiero/bitcoin-arkade-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bitcoin Wallet for Agents using Arkade
+
+    # Source: ClawHub community skill by tiero
+
+    # Install: clawhub install bitcoin-arkade-wallet
+
+    # Path: tiero/bitcoin-arkade-wallet
+
+
+    ## Description
+
+    Send and receive Bitcoin over Arkade (offchain), onchain (via onboard/offboard), and Lightning. Swap USDC/USDT stablecoins.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - pnpm-lock.yaml
+
+    - pnpm-workspace.yaml
+
+    - tsconfig.cjs.json
+
+    - tsconfig.esm.json
+
+    - tsconfig.json
+
+    - cli/arkade.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bitcoin-arkade-wallet
+
+    ```'
+examples:
+- description: Install Bitcoin Wallet for Agents using Arkade from ClawHub
+  usage: clawhub install bitcoin-arkade-wallet
+schema_version: '1.0'

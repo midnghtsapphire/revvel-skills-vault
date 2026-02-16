@@ -1,0 +1,53 @@
+name: writer
+title: Writer
+version: 1.0.2
+description: Fix AI writing patterns that create repetitive and robotic content
+metadata:
+  author: ivangdavila
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - writer
+  source: clawhub-community
+  clawhub_slug: writer
+  clawhub_path: ivangdavila/writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Writer
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install writer
+
+    # Path: ivangdavila/writer
+
+
+    ## Description
+
+    Fix AI writing patterns that create repetitive and robotic content
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install writer
+
+    ```'
+examples:
+- description: Install Writer from ClawHub
+  usage: clawhub install writer
+schema_version: '1.0'

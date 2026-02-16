@@ -1,0 +1,55 @@
+name: yapi
+title: yapi
+version: 1.0.0
+description: Query and sync YApi interface documentation. Use when user mentions "yapi 接口文档", YAPI docs, asks for request/response
+  details, or needs docs sync. Also triggers when user pastes a YApi URL that matches the configured base_url.
+metadata:
+  author: leeguooooo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - yapi
+  source: clawhub-community
+  clawhub_slug: yapi
+  clawhub_path: leeguooooo/yapi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# yapi
+
+    # Source: ClawHub community skill by leeguooooo
+
+    # Install: clawhub install yapi
+
+    # Path: leeguooooo/yapi
+
+
+    ## Description
+
+    Query and sync YApi interface documentation. Use when user mentions "yapi 接口文档", YAPI docs, asks for request/response
+    details, or needs docs sync. Also triggers when user pastes a YApi URL that matches the configured base_url.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yapi
+
+    ```'
+examples:
+- description: Install yapi from ClawHub
+  usage: clawhub install yapi
+schema_version: '1.0'

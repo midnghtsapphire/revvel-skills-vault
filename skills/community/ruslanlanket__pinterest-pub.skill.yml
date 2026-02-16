@@ -1,0 +1,61 @@
+name: pinterest
+title: Pinterest pin publishing/reading, disk management, profile, analytics and automation. OAuth.
+version: 1.0.2
+description: Pinterest API v5 integration. Allows creating and reading pins, managing boards, retrieving profile data and
+  analytics. Use this skill when the user needs to automate Pinterest tasks or access account data.
+metadata:
+  author: ruslanlanket
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - pinterest
+  source: clawhub-community
+  clawhub_slug: pinterest-pub
+  clawhub_path: ruslanlanket/pinterest-pub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pinterest pin publishing/reading, disk management, profile, analytics and automation. OAuth.
+
+    # Source: ClawHub community skill by ruslanlanket
+
+    # Install: clawhub install pinterest-pub
+
+    # Path: ruslanlanket/pinterest-pub
+
+
+    ## Description
+
+    Pinterest API v5 integration. Allows creating and reading pins, managing boards, retrieving profile data and analytics.
+    Use this skill when the user needs to automate Pinterest tasks or access account data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - references/setup_guide.md
+
+    - scripts/auth.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pinterest-pub
+
+    ```'
+examples:
+- description: Install Pinterest pin publishing/reading, disk management, profile, analytics and automation. OAuth. from ClawHub
+  usage: clawhub install pinterest-pub
+schema_version: '1.0'

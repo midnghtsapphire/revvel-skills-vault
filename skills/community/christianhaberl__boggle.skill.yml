@@ -1,0 +1,63 @@
+name: boggle
+title: Boggle Solver
+version: 1.0.0
+description: Solve Boggle boards — find all valid words (German + English) on a 4x4 letter grid. Use when the user shares
+  a Boggle photo, asks for words on a grid, or plays word games. Includes 1.7M word dictionaries (DE+EN).
+metadata:
+  author: christianhaberl
+  category: Media & Content
+  tags:
+  - media-content
+  - boggle
+  source: clawhub-community
+  clawhub_slug: boggle
+  clawhub_path: christianhaberl/boggle
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Boggle Solver
+
+    # Source: ClawHub community skill by christianhaberl
+
+    # Install: clawhub install boggle
+
+    # Path: christianhaberl/boggle
+
+
+    ## Description
+
+    Solve Boggle boards — find all valid words (German + English) on a 4x4 letter grid. Use when the user shares a Boggle
+    photo, asks for words on a grid, or plays word games. Includes 1.7M word dictionaries (DE+EN).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/README.md
+
+    - data/download.py
+
+    - scripts/solve.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install boggle
+
+    ```'
+examples:
+- description: Install Boggle Solver from ClawHub
+  usage: clawhub install boggle
+schema_version: '1.0'

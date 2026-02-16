@@ -1,0 +1,64 @@
+name: aiusd-skill
+title: Aiusd Skills
+version: 0.1.1
+description: 'AIUSD trading and account management skill. Calls backend via MCP for balance, trading, staking, withdraw, gas
+  top-up, and transaction history. Auth priority: MCP_HUB_TOKEN env, then mcporter OAuth or local token file.'
+metadata:
+  author: chaunceyliu
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - aiusd
+  - skill
+  source: clawhub-community
+  clawhub_slug: aiusd-skills
+  clawhub_path: chaunceyliu/aiusd-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Aiusd Skills
+
+    # Source: ClawHub community skill by chaunceyliu
+
+    # Install: clawhub install aiusd-skills
+
+    # Path: chaunceyliu/aiusd-skills
+
+
+    ## Description
+
+    AIUSD trading and account management skill. Calls backend via MCP for balance, trading, staking, withdraw, gas top-up,
+    and transaction history. Auth priority: MCP_HUB_TOKEN env, then mcporter OAuth or local token file.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - aiusd-skill-installer.js
+
+    - aiusd-skill-installer.sh
+
+    - build-info.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aiusd-skills
+
+    ```'
+examples:
+- description: Install Aiusd Skills from ClawHub
+  usage: clawhub install aiusd-skills
+schema_version: '1.0'

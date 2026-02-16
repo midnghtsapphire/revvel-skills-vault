@@ -1,0 +1,54 @@
+name: sql-check
+title: SQL Query Validator
+version: 1.0.1
+description: Analyze SQL queries for performance and security issues
+metadata:
+  author: lxgicstudios
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - sql
+  - check
+  source: clawhub-community
+  clawhub_slug: ai-sql-check
+  clawhub_path: lxgicstudios/ai-sql-check
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SQL Query Validator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-sql-check
+
+    # Path: lxgicstudios/ai-sql-check
+
+
+    ## Description
+
+    Analyze SQL queries for performance and security issues
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-sql-check
+
+    ```'
+examples:
+- description: Install SQL Query Validator from ClawHub
+  usage: clawhub install ai-sql-check
+schema_version: '1.0'

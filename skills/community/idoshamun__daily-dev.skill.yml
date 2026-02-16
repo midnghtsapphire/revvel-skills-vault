@@ -1,0 +1,55 @@
+name: daily_dev
+title: daily.dev
+version: 0.3.1
+description: Overcome LLM knowledge cutoffs with real-time developer content. daily.dev aggregates articles from thousands
+  of sources, validated by community engagement, with structured taxonomy for precise discovery.
+metadata:
+  author: idoshamun
+  category: Development & Coding
+  tags:
+  - development-coding
+  - daily.dev
+  source: clawhub-community
+  clawhub_slug: daily-dev
+  clawhub_path: idoshamun/daily-dev
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# daily.dev
+
+    # Source: ClawHub community skill by idoshamun
+
+    # Install: clawhub install daily-dev
+
+    # Path: idoshamun/daily-dev
+
+
+    ## Description
+
+    Overcome LLM knowledge cutoffs with real-time developer content. daily.dev aggregates articles from thousands of sources,
+    validated by community engagement, with structured taxonomy for precise discovery.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-dev
+
+    ```'
+examples:
+- description: Install daily.dev from ClawHub
+  usage: clawhub install daily-dev
+schema_version: '1.0'

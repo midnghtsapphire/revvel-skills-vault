@@ -1,0 +1,66 @@
+name: terraform-gen
+title: Terraform Config Generator
+version: 1.0.1
+description: Generate Terraform infrastructure configs. Use when provisioning cloud resources.
+metadata:
+  author: lxgicstudios
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - terraform
+  - gen
+  source: clawhub-community
+  clawhub_slug: terraform-gen
+  clawhub_path: lxgicstudios/terraform-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Terraform Config Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install terraform-gen
+
+    # Path: lxgicstudios/terraform-gen
+
+
+    ## Description
+
+    Generate Terraform infrastructure configs. Use when provisioning cloud resources.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install terraform-gen
+
+    ```'
+examples:
+- description: Install Terraform Config Generator from ClawHub
+  usage: clawhub install terraform-gen
+schema_version: '1.0'

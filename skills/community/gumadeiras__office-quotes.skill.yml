@@ -1,0 +1,64 @@
+name: office-quotes
+title: office-quotes
+version: 1.2.3
+description: Generate random quotes from The Office (US). Provides access to 326 offline quotes plus online mode with SVG
+  cards, character avatars, and full episode metadata via the akashrajpurohit API. Use for fun, icebreakers, or any task requiring
+  The Office quotes.
+metadata:
+  author: gumadeiras
+  category: Development & Coding
+  tags:
+  - development-coding
+  - office
+  - quotes
+  source: clawhub-community
+  clawhub_slug: office-quotes
+  clawhub_path: gumadeiras/office-quotes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# office-quotes
+
+    # Source: ClawHub community skill by gumadeiras
+
+    # Install: clawhub install office-quotes
+
+    # Path: gumadeiras/office-quotes
+
+
+    ## Description
+
+    Generate random quotes from The Office (US). Provides access to 326 offline quotes plus online mode with SVG cards, character
+    avatars, and full episode metadata via the akashrajpurohit API. Use for fun, icebreakers, or any task requiring The Office
+    quotes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/office-quotes.js
+
+    - scripts/svg2png.py
+
+    - scripts/svg2png_file.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install office-quotes
+
+    ```'
+examples:
+- description: Install office-quotes from ClawHub
+  usage: clawhub install office-quotes
+schema_version: '1.0'

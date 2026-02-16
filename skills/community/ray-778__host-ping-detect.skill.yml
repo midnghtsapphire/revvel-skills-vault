@@ -1,0 +1,56 @@
+name: host-ping
+title: Host Ping Detector
+version: 1.0.0
+description: 'Detect if a host (IP: 39.106.7.8) is online by sending ping requests. Returns status like reachable, latency,
+  or error if offline.'
+metadata:
+  author: ray-778
+  category: General
+  tags:
+  - general
+  - host
+  - ping
+  source: clawhub-community
+  clawhub_slug: host-ping-detect
+  clawhub_path: ray-778/host-ping-detect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Host Ping Detector
+
+    # Source: ClawHub community skill by ray-778
+
+    # Install: clawhub install host-ping-detect
+
+    # Path: ray-778/host-ping-detect
+
+
+    ## Description
+
+    Detect if a host (IP: 39.106.7.8) is online by sending ping requests. Returns status like reachable, latency, or error
+    if offline.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install host-ping-detect
+
+    ```'
+examples:
+- description: Install Host Ping Detector from ClawHub
+  usage: clawhub install host-ping-detect
+schema_version: '1.0'

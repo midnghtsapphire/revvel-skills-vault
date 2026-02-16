@@ -1,0 +1,53 @@
+name: plants
+title: Plants
+version: 1.0.0
+description: Build a personal plant care system with watering schedules, care logs, and seasonal reminders.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - plants
+  source: clawhub-community
+  clawhub_slug: plants
+  clawhub_path: ivangdavila/plants
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Plants
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install plants
+
+    # Path: ivangdavila/plants
+
+
+    ## Description
+
+    Build a personal plant care system with watering schedules, care logs, and seasonal reminders.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install plants
+
+    ```'
+examples:
+- description: Install Plants from ClawHub
+  usage: clawhub install plants
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: agent-builder
+title: Agent Builder
+version: 1.0.0
+description: Build high-performing OpenClaw agents end-to-end. Use when you want to design a new agent (persona + operating
+  rules) and generate the required OpenClaw workspace files (SOUL.md, IDENTITY.md, AGENTS.md, USER.md, HEARTBEAT.md, optional
+  MEMORY.md + memory/YYYY-MM-DD.md). Also use to iterate on an exis
+metadata:
+  author: plgonzalezrx8
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - agent
+  - builder
+  source: clawhub-community
+  clawhub_slug: agent-builder
+  clawhub_path: plgonzalezrx8/agent-builder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Builder
+
+    # Source: ClawHub community skill by plgonzalezrx8
+
+    # Install: clawhub install agent-builder
+
+    # Path: plgonzalezrx8/agent-builder
+
+
+    ## Description
+
+    Build high-performing OpenClaw agents end-to-end. Use when you want to design a new agent (persona + operating rules)
+    and generate the required OpenClaw workspace files (SOUL.md, IDENTITY.md, AGENTS.md, USER.md, HEARTBEAT.md, optional MEMORY.md
+    + memory/YYYY-MM-DD.md). Also use to iterate on an exis
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/architecture.md
+
+    - references/openclaw-workspace.md
+
+    - references/templates.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-builder
+
+    ```'
+examples:
+- description: Install Agent Builder from ClawHub
+  usage: clawhub install agent-builder
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: ibkr-trading
+title: IBKR Trading
+version: 1.0.0
+description: Interactive Brokers (IBKR) trading automation via Client Portal API. Use when setting up IBKR account access,
+  authenticating sessions, checking portfolio/positions, or building trading bots. Handles IBeam automated login with IBKR
+  Key 2FA.
+metadata:
+  author: flokiew
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - ibkr
+  - trading
+  source: clawhub-community
+  clawhub_slug: ibkr-trader
+  clawhub_path: flokiew/ibkr-trader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# IBKR Trading
+
+    # Source: ClawHub community skill by flokiew
+
+    # Install: clawhub install ibkr-trader
+
+    # Path: flokiew/ibkr-trader
+
+
+    ## Description
+
+    Interactive Brokers (IBKR) trading automation via Client Portal API. Use when setting up IBKR account access, authenticating
+    sessions, checking portfolio/positions, or building trading bots. Handles IBeam automated login with IBKR Key 2FA.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-endpoints.md
+
+    - scripts/keepalive.py
+
+    - scripts/setup.sh
+
+    - scripts/trading_bot.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ibkr-trader
+
+    ```'
+examples:
+- description: Install IBKR Trading from ClawHub
+  usage: clawhub install ibkr-trader
+schema_version: '1.0'

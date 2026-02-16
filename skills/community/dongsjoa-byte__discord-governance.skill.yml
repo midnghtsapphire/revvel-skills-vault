@@ -1,0 +1,70 @@
+name: discord-governance
+title: Discord Governance
+version: 1.0.1
+description: Discord 服务器分区和管理流程。用于创建/管理分类、频道、子区，维护置顶摘要，执行归档操作。触发词：Discord 整理、频道管理、子区管理、归档频道。
+metadata:
+  author: dongsjoa-byte
+  category: Social Media
+  tags:
+  - social-media
+  - discord
+  - governance
+  source: clawhub-community
+  clawhub_slug: discord-governance
+  clawhub_path: dongsjoa-byte/discord-governance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Discord Governance
+
+    # Source: ClawHub community skill by dongsjoa-byte
+
+    # Install: clawhub install discord-governance
+
+    # Path: dongsjoa-byte/discord-governance
+
+
+    ## Description
+
+    Discord 服务器分区和管理流程。用于创建/管理分类、频道、子区，维护置顶摘要，执行归档操作。触发词：Discord 整理、频道管理、子区管理、归档频道。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/naming.md
+
+    - references/philosophy.md
+
+    - references/structure.md
+
+    - references/templates/channel-intro.md
+
+    - references/templates/pinned-summary.md
+
+    - references/workflows/archive-thread.md
+
+    - references/workflows/create-thread.md
+
+    - references/workflows/restructure.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install discord-governance
+
+    ```'
+examples:
+- description: Install Discord Governance from ClawHub
+  usage: clawhub install discord-governance
+schema_version: '1.0'

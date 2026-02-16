@@ -1,0 +1,53 @@
+name: intomd
+title: Intomd
+version: 1.0.0
+description: Fetch and convert any documentation URL to Markdown using into.md service.
+metadata:
+  author: rezhajulio
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - intomd
+  source: clawhub-community
+  clawhub_slug: intomd
+  clawhub_path: rezhajulio/intomd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Intomd
+
+    # Source: ClawHub community skill by rezhajulio
+
+    # Install: clawhub install intomd
+
+    # Path: rezhajulio/intomd
+
+
+    ## Description
+
+    Fetch and convert any documentation URL to Markdown using into.md service.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install intomd
+
+    ```'
+examples:
+- description: Install Intomd from ClawHub
+  usage: clawhub install intomd
+schema_version: '1.0'

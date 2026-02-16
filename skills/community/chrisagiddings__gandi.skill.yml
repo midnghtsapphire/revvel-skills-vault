@@ -1,0 +1,69 @@
+name: gandi
+title: Gandi Domain Registrar
+version: 0.2.2
+description: '"Manage Gandi domains, DNS, email, and SSL certificates via the Gandi API"'
+metadata:
+  author: chrisagiddings
+  category: Communication
+  tags:
+  - communication
+  - gandi
+  source: clawhub-community
+  clawhub_slug: gandi
+  clawhub_path: chrisagiddings/gandi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gandi Domain Registrar
+
+    # Source: ClawHub community skill by chrisagiddings
+
+    # Install: clawhub install gandi
+
+    # Path: chrisagiddings/gandi
+
+
+    ## Description
+
+    "Manage Gandi domains, DNS, email, and SSL certificates via the Gandi API"
+
+
+    ## Files
+
+    - SCRIPTS.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.schema.json
+
+    - config/domain-checker-defaults.json
+
+    - references/api-overview.md
+
+    - references/authentication.md
+
+    - references/domains.md
+
+    - references/livedns.md
+
+    - references/setup.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gandi
+
+    ```'
+examples:
+- description: Install Gandi Domain Registrar from ClawHub
+  usage: clawhub install gandi
+schema_version: '1.0'

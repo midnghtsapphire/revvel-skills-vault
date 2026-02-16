@@ -1,0 +1,56 @@
+name: qwen-image
+title: qwenz-image-gen
+version: 1.0.1
+description: Generate images using Alibaba Cloud Bailian Qwen-Image and Z-Image models (通义千图文生图 + 人像照片模型)
+metadata:
+  author: irron
+  category: Media & Content
+  tags:
+  - media-content
+  - qwen
+  - image
+  source: clawhub-community
+  clawhub_slug: qwenz-image-gen
+  clawhub_path: irron/qwenz-image-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# qwenz-image-gen
+
+    # Source: ClawHub community skill by irron
+
+    # Install: clawhub install qwenz-image-gen
+
+    # Path: irron/qwenz-image-gen
+
+
+    ## Description
+
+    Generate images using Alibaba Cloud Bailian Qwen-Image and Z-Image models (通义千图文生图 + 人像照片模型)
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qwenz-image-gen
+
+    ```'
+examples:
+- description: Install qwenz-image-gen from ClawHub
+  usage: clawhub install qwenz-image-gen
+schema_version: '1.0'

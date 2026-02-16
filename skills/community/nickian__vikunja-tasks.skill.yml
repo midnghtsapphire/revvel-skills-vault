@@ -1,0 +1,59 @@
+name: vikunja
+title: Vikunja Tasks
+version: 1.0.0
+description: Manage tasks and projects on a self-hosted Vikunja instance. Use when the user wants to create, view, complete,
+  or manage tasks, check what's due or overdue, list projects, or get task notifications. Also use for to-do lists, reminders,
+  and task tracking.
+metadata:
+  author: nickian
+  category: Communication
+  tags:
+  - communication
+  - vikunja
+  source: clawhub-community
+  clawhub_slug: vikunja-tasks
+  clawhub_path: nickian/vikunja-tasks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vikunja Tasks
+
+    # Source: ClawHub community skill by nickian
+
+    # Install: clawhub install vikunja-tasks
+
+    # Path: nickian/vikunja-tasks
+
+
+    ## Description
+
+    Manage tasks and projects on a self-hosted Vikunja instance. Use when the user wants to create, view, complete, or manage
+    tasks, check what''s due or overdue, list projects, or get task notifications. Also use for to-do lists, reminders, and
+    task tracking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/vikunja.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vikunja-tasks
+
+    ```'
+examples:
+- description: Install Vikunja Tasks from ClawHub
+  usage: clawhub install vikunja-tasks
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: todo
+title: To Do Factor
+version: 1.0.1
+description: '|'
+metadata:
+  author: alphafactor
+  category: General
+  tags:
+  - general
+  - todo
+  source: clawhub-community
+  clawhub_slug: factor
+  clawhub_path: alphafactor/factor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# To Do Factor
+
+    # Source: ClawHub community skill by alphafactor
+
+    # Install: clawhub install factor
+
+    # Path: alphafactor/factor
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/todo.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install factor
+
+    ```'
+examples:
+- description: Install To Do Factor from ClawHub
+  usage: clawhub install factor
+schema_version: '1.0'

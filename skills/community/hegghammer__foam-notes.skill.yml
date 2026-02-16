@@ -1,0 +1,74 @@
+name: foam-notes
+title: Foam Notes
+version: 1.0.2
+description: Work with Foam note repositories. Create, edit, link, and tag notes. Get intelligent wikilink and tag suggestions.
+  Skill supports backlinks discovery, daily notes, templates, graph visualization, note deletion, and renaming. Full Foam
+  documentation included for easy querying.
+metadata:
+  author: hegghammer
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - foam
+  - notes
+  source: clawhub-community
+  clawhub_slug: foam-notes
+  clawhub_path: hegghammer/foam-notes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Foam Notes
+
+    # Source: ClawHub community skill by hegghammer
+
+    # Install: clawhub install foam-notes
+
+    # Path: hegghammer/foam-notes
+
+
+    ## Description
+
+    Work with Foam note repositories. Create, edit, link, and tag notes. Get intelligent wikilink and tag suggestions. Skill
+    supports backlinks discovery, daily notes, templates, graph visualization, note deletion, and renaming. Full Foam documentation
+    included for easy querying.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - assets/templates/daily-note.md
+
+    - assets/templates/new-note.md
+
+    - references/backlinks.md
+
+    - references/configuration.md
+
+    - references/daily-notes.md
+
+    - references/foam-overview.md
+
+    - references/tags.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install foam-notes
+
+    ```'
+examples:
+- description: Install Foam Notes from ClawHub
+  usage: clawhub install foam-notes
+schema_version: '1.0'

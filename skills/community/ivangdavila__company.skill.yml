@@ -1,0 +1,59 @@
+name: _company_
+title: Company
+version: 1.0.0
+description: '"Build an agent-powered organization by mapping functions to skills and iterating on structure."'
+metadata:
+  author: ivangdavila
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - '"company"'
+  source: clawhub-community
+  clawhub_slug: company
+  clawhub_path: ivangdavila/company
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Company
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install company
+
+    # Path: ivangdavila/company
+
+
+    ## Description
+
+    "Build an agent-powered organization by mapping functions to skills and iterating on structure."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - functions.md
+
+    - iteration.md
+
+    - patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install company
+
+    ```'
+examples:
+- description: Install Company from ClawHub
+  usage: clawhub install company
+schema_version: '1.0'

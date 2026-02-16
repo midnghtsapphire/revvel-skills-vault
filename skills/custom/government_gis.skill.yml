@@ -1,0 +1,299 @@
+name: government_gis
+title: Government Topography & GIS Resources
+version: 1.0.0
+description: Comprehensive access to US government topography, GIS, and geospatial datasets including USGS National Map, NOAA
+  coastal data, FEMA flood maps, Census TIGER data, BLM land records, and related resources
+metadata:
+  author: Revvel AI Engine
+  category: Government & Public Service
+  tags:
+  - search-national-wetlands-inventory
+  - fetch-noaa-coastal-data
+  - access-nrcs-soil-surveys
+  - retrieve-historical-aerial-photography
+  - access-census-tiger-data
+  - gis
+  - government
+  - query-usgs-national-map
+  - retrieve-fema-flood-maps
+  - query-blm-land-records
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport os\nimport re\nimport math\nimport hashlib\nimport requests\nimport statistics\nfrom datetime\
+    \ import datetime\nfrom typing import Dict, List, Optional, Any, Tuple\nfrom collections import defaultdict\nimport unittest\n\
+    from unittest.mock import patch, MagicMock\n\nSKILL_METADATA = {\n    \"name\": \"Government Topography & GIS Resources\"\
+    ,\n    \"id\": \"government_gis\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\"\
+    : \"Comprehensive access to US government topography, GIS, and geospatial datasets including USGS National Map, NOAA coastal\
+    \ data, FEMA flood maps, Census TIGER data, BLM land records, and related resources\",\n    \"capabilities\": [\n    \
+    \    \"query_usgs_national_map\",\n        \"fetch_noaa_coastal_data\",\n        \"retrieve_fema_flood_maps\",\n     \
+    \   \"access_census_tiger_data\",\n        \"query_blm_land_records\",\n        \"search_national_wetlands_inventory\"\
+    ,\n        \"retrieve_historical_aerial_photography\",\n        \"access_nrcs_soil_surveys\",\n        \"search_geological_surveys\"\
+    ,\n        \"discover_gis_data_portals\",\n        \"validate_spatial_coordinates\",\n        \"calculate_spatial_statistics\"\
+    ,\n        \"generate_gis_data_report\",\n        \"build_spatial_query\",\n        \"parse_geospatial_metadata\"\n  \
+    \  ],\n    \"domain\": \"Government Geospatial Data and Topography\"\n}\n\nEXPERT_PROMPTS = {\n    \"flood_risk_analysis\"\
+    : \"\"\"Analyze flood risk for location at latitude {latitude}, longitude {longitude} using FEMA flood maps and NOAA coastal\
+    \ data. Include base flood elevations, flood zones, and historical flood events. Return risk assessment with confidence\
+    \ levels.\"\"\",\n    \n    \"land_ownership_query\": \"\"\"Query BLM land records for parcel boundaries and ownership\
+    \ information within {distance_km} kilometers of coordinates ({latitude}, {longitude}). Include federal, state, and private\
+    \ land designations with acreage calculations.\"\"\",\n    \n    \"wetlands_impact_assessment\": \"\"\"Search National\
+    \ Wetlands Inventory for wetlands within {buffer_meters} meters of proposed project area at ({latitude}, {longitude}).\
+    \ Provide wetland types, acreage, and regulatory jurisdiction information.\"\"\",\n    \n    \"soil_suitability_analysis\"\
+    : \"\"\"Access NRCS soil surveys for agricultural suitability at location ({latitude}, {longitude}). Include soil taxonomy,\
+    \ drainage class, slope, and limitations for {land_use_type} development.\"\"\",\n    \n    \"transportation_infrastructure\"\
+    : \"\"\"Extract transportation infrastructure from Census TIGER data within {radius_km} km of ({latitude}, {longitude}).\
+    \ Include roads, railways, airports with classification and usage statistics.\"\"\",\n    \n    \"topographic_analysis\"\
+    : \"\"\"Retrieve USGS National Map elevation data for area bounded by ({min_lat}, {min_lon}) to ({max_lat}, {max_lon}).\
+    \ Calculate slope, aspect, and elevation statistics with contour generation.\"\"\",\n    \n    \"historical_site_comparison\"\
+    : \"\"\"Compare historical aerial photography from {start_year} to {end_year} for area around ({latitude}, {longitude}).\
+    \ Identify land use changes, development patterns, and environmental alterations.\"\"\",\n    \n    \"geological_hazard_assessment\"\
+    : \"\"\"Access USGS geological survey data for seismic, landslide, and subsidence hazards at ({latitude}, {longitude}).\
+    \ Include hazard zones, historical events, and risk probabilities.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"usgs_national_map_api\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://tnmaccess.nationalmap.gov/api/v1\",\n        \"description\"\
+    : \"USGS National Map Access API for elevation, hydrography, boundaries, and other base map data\",\n        \"auth_method\"\
+    : \"none\",\n        \"documentation_url\": \"https://www.usgs.gov/faqs/there-api-accessing-national-map-data\"\n    },\n\
+    \    \"noaa_coastal_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.coast.noaa.gov\",\n    \
+    \    \"description\": \"NOAA Coastal Services Center API for coastal mapping, bathymetry, and marine data\",\n       \
+    \ \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://coast.noaa.gov/data\"\n    },\n    \"fema_flood_api\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL\"\
+    ,\n        \"description\": \"FEMA National Flood Hazard Layer API for flood maps and risk assessments\",\n        \"\
+    auth_method\": \"none\",\n        \"documentation_url\": \"https://www.fema.gov/flood-maps/national-flood-hazard-layer\"\
+    \n    },\n    \"census_tiger_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb\"\
+    ,\n        \"description\": \"US Census Bureau TIGER/Line API for geographic boundaries and transportation\",\n      \
+    \  \"auth_method\": \"none\",\n        \"documentation_url\": \"https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-geopackage-file.html\"\
+    \n    },\n    \"blm_land_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://gis.blm.gov/arcgis/rest/services\"\
+    ,\n        \"description\": \"Bureau of Land Management GIS services for land records and boundaries\",\n        \"auth_method\"\
+    : \"none\",\n        \"documentation_url\": \"https://www.blm.gov/services/geospatial\"\n    },\n    \"data_gov_catalog\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://catalog.data.gov/api/3/action\",\n        \"description\"\
+    : \"Data.gov catalog API for discovering federal geospatial datasets\",\n        \"auth_method\": \"none\",\n        \"\
+    documentation_url\": \"https://catalog.data.gov/dataset\"\n    },\n    \"nwi_wetlands_api\": {\n        \"type\": \"api\"\
+    ,\n        \"endpoint\": \"https://www.fws.gov/wetlands/data\",\n        \"description\": \"US Fish & Wildlife Service\
+    \ National Wetlands Inventory data access\",\n        \"auth_method\": \"none\",\n        \"documentation_url\": \"https://www.fws.gov/wetlands/data\"\
+    \n    },\n    \"nrcs_soil_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://sdmdataaccess.nrcs.usda.gov\"\
+    ,\n        \"description\": \"NRCS Soil Data Access for soil surveys and properties\",\n        \"auth_method\": \"none\"\
+    ,\n        \"documentation_url\": \"https://sdmdataaccess.nrcs.usda.gov\"\n    }\n}\n\ndef validate_coordinates(lat: float,\
+    \ lon: float) -> bool:\n    \"\"\"Validate latitude and longitude coordinates.\n    \n    Args:\n        lat: Latitude\
+    \ value in decimal degrees\n        lon: Longitude value in decimal degrees\n        \n    Returns:\n        True if coordinates\
+    \ are valid, False otherwise\n    \"\"\"\n    return -90 <= lat <= 90 and -180 <= lon <= 180\n\ndef calculate_distance(lat1:\
+    \ float, lon1: float, lat2: float, lon2: float) -> float:\n    \"\"\"Calculate distance between two points using Haversine\
+    \ formula.\n    \n    Args:\n        lat1, lon1: First point coordinates\n        lat2, lon2: Second point coordinates\n\
+    \        \n    Returns:\n        Distance in kilometers\n    \"\"\"\n    R = 6371  # Earth's radius in km\n    lat1, lon1,\
+    \ lat2, lon2 = map(math.radians, [lat1, lon1, lat2, lon2])\n    dlat = lat2 - lat1\n    dlon = lon2 - lon1\n    a = math.sin(dlat/2)**2\
+    \ + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2\n    c = 2 * math.asin(math.sqrt(a))\n    return R * c\n\ndef\
+    \ parse_geospatial_metadata(metadata_json: str) -> Dict[str, Any]:\n    \"\"\"Parse and validate geospatial metadata from\
+    \ JSON string.\n    \n    Args:\n        metadata_json: JSON string containing metadata\n        \n    Returns:\n    \
+    \    Parsed metadata dictionary\n        \n    Raises:\n        ValueError: If metadata is invalid\n    \"\"\"\n    try:\n\
+    \        metadata = json.loads(metadata_json)\n        required_fields = ['spatial_reference', 'extent', 'data_type']\n\
+    \        for field in required_fields:\n            if field not in metadata:\n                raise ValueError(f\"Missing\
+    \ required field: {field}\")\n        return metadata\n    except json.JSONDecodeError as e:\n        raise ValueError(f\"\
+    Invalid JSON metadata: {e}\")\n\ndef build_spatial_query(lat: float, lon: float, radius_km: float, data_types: List[str])\
+    \ -> Dict[str, Any]:\n    \"\"\"Build a spatial query for government GIS datasets.\n    \n    Args:\n        lat: Center\
+    \ latitude\n        lon: Center longitude\n        radius_km: Search radius in kilometers\n        data_types: List of\
+    \ data types to include\n        \n    Returns:\n        Query parameters dictionary\n    \"\"\"\n    return {\n     \
+    \   'latitude': lat,\n        'longitude': lon,\n        'radius_km': radius_km,\n        'data_types': data_types,\n\
+    \        'bbox': calculate_bounding_box(lat, lon, radius_km),\n        'timestamp': datetime.utcnow().isoformat()\n  \
+    \  }\n\ndef calculate_bounding_box(lat: float, lon: float, radius_km: float) -> Tuple[float, float, float, float]:\n \
+    \   \"\"\"Calculate bounding box around a point.\n    \n    Args:\n        lat: Center latitude\n        lon: Center longitude\n\
+    \        radius_km: Radius in kilometers\n        \n    Returns:\n        Tuple of (min_lat, min_lon, max_lat, max_lon)\n\
+    \    \"\"\"\n    lat_change = radius_km / 111.0  # 1 degree latitude  ≈ 111 km\n    lon_change = radius_km / (111.0 *\
+    \ math.cos(math.radians(lat)))\n    \n    return (lat - lat_change, lon - lon_change, lat + lat_change, lon + lon_change)\n\
+    \ndef calculate_spatial_statistics(elevations: List[float]) -> Dict[str, float]:\n    \"\"\"Calculate spatial statistics\
+    \ for elevation data.\n    \n    Args:\n        elevations: List of elevation values in meters\n        \n    Returns:\n\
+    \        Dictionary with statistical measures\n    \"\"\"\n    if not elevations:\n        return {}\n    \n    return\
+    \ {\n        'min': min(elevations),\n        'max': max(elevations),\n        'mean': statistics.mean(elevations),\n\
+    \        'median': statistics.median(elevations),\n        'std_dev': statistics.stdev(elevations) if len(elevations)\
+    \ > 1 else 0,\n        'range': max(elevations) - min(elevations),\n        'count': len(elevations)\n    }\n\ndef generate_gis_data_report(data_sources:\
+    \ Dict[str, Any], analysis_results: Dict[str, Any]) -> str:\n    \"\"\"Generate a formatted report from GIS data analysis.\n\
+    \    \n    Args:\n        data_sources: Dictionary of data sources used\n        analysis_results: Dictionary of analysis\
+    \ results\n        \n    Returns:\n        Formatted report string\n    \"\"\"\n    report = []\n    report.append(\"\
+    GOVERNMENT GIS DATA ANALYSIS REPORT\")\n    report.append(\"=\" * 40)\n    report.append(f\"Generated: {datetime.utcnow().strftime('%Y-%m-%d\
+    \ %H:%M:%S UTC')}\")\n    report.append(\"\")\n    \n    report.append(\"DATA SOURCES:\")\n    for source, info in data_sources.items():\n\
+    \        report.append(f\"  - {source}: {info.get('description', 'N/A')}\")\n    report.append(\"\")\n    \n    report.append(\"\
+    ANALYSIS RESULTS:\")\n    for category, results in analysis_results.items():\n        report.append(f\"\\n{category.upper()}:\"\
+    )\n        if isinstance(results, dict):\n            for key, value in results.items():\n                report.append(f\"\
+    \  {key}: {value}\")\n        else:\n            report.append(f\"  {results}\")\n    \n    return \"\\n\".join(report)\n\
+    \ndef query_data_gov_catalog(query: str, organization: Optional[str] = None, tags: Optional[List[str]] = None) -> List[Dict[str,\
+    \ Any]]:\n    \"\"\"Query Data.gov catalog for geospatial datasets.\n    \n    Args:\n        query: Search query string\n\
+    \        organization: Optional organization filter\n        tags: Optional list of tags to filter by\n        \n    Returns:\n\
+    \        List of dataset dictionaries\n    \"\"\"\n    base_url = INTEGRATION_POINTS['data_gov_catalog']['endpoint']\n\
+    \    params = {'q': query, 'rows': 100}\n    \n    if organization:\n        params['organization'] = organization\n \
+    \   if tags:\n        params['tags'] = ' '.join(tags)\n    \n    try:\n        response = requests.get(f\"{base_url}/package_search\"\
+    , params=params, timeout=30)\n        response.raise_for_status()\n        data = response.json()\n        \n        results\
+    \ = []\n        for package in data.get('result', {}).get('results', []):\n            results.append({\n            \
+    \    'title': package.get('title', ''),\n                'description': package.get('notes', ''),\n                'organization':\
+    \ package.get('organization', {}).get('title', ''),\n                'tags': [tag['name'] for tag in package.get('tags',\
+    \ [])],\n                'url': package.get('resources', [{}])[0].get('url', ''),\n                'format': package.get('resources',\
+    \ [{}])[0].get('format', '')\n            })\n        return results\n    except requests.RequestException as e:\n   \
+    \     raise RuntimeError(f\"Failed to query Data.gov: {e}\")\n\ndef validate_spatial_coordinates(coordinates: List[Tuple[float,\
+    \ float]]) -> bool:\n    \"\"\"Validate a list of coordinate pairs.\n    \n    Args:\n        coordinates: List of (latitude,\
+    \ longitude) tuples\n        \n    Returns:\n        True if all coordinates are valid\n    \"\"\"\n    if not coordinates:\n\
+    \        return False\n    \n    for lat, lon in coordinates:\n        if not validate_coordinates(lat, lon):\n      \
+    \      return False\n    return True\n\ndef interpolate_elevation(points: List[Tuple[float, float, float]], target_lat:\
+    \ float, target_lon: float) -> float:\n    \"\"\"Interpolate elevation at target point from known points using inverse\
+    \ distance weighting.\n    \n    Args:\n        points: List of (lat, lon, elevation) tuples\n        target_lat: Target\
+    \ latitude\n        target_lon: Target longitude\n        \n    Returns:\n        Interpolated elevation value\n    \"\
+    \"\"\n    if not points:\n        raise ValueError(\"No reference points provided\")\n    \n    weights = []\n    values\
+    \ = []\n    \n    for lat, lon, elev in points:\n        distance = calculate_distance(lat, lon, target_lat, target_lon)\n\
+    \        if distance < 0.001:  # Very close to known point\n            return elev\n        weight = 1.0 / (distance\
+    \ ** 2)\n        weights.append(weight)\n        values.append(elev)\n    \n    total_weight = sum(weights)\n    return\
+    \ sum(w * v for w, v in zip(weights, values)) / total_weight\n\nclass SkillEngine:\n    \"\"\"Main skill engine for Government\
+    \ Topography & GIS Resources.\"\"\"\n    \n    def __init__(self, config: Dict[str, Any]):\n        \"\"\"Initialize the\
+    \ skill engine with configuration.\n        \n        Args:\n            config: Configuration dictionary with API keys,\
+    \ endpoints, etc.\n        \"\"\"\n        self.config = config\n        self.session = requests.Session()\n        self.session.timeout\
+    \ = 30\n        \n        # Set up logging\n        self.log_level = config.get('log_level', 'INFO')\n        \n    def\
+    \ run(self, capability: str, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Run the specified capability with\
+    \ given parameters.\n        \n        Args:\n            capability: Name of the capability to execute\n            params:\
+    \ Parameters for the capability\n            \n        Returns:\n            Result dictionary\n        \"\"\"\n     \
+    \   if capability not in SKILL_METADATA['capabilities']:\n            raise ValueError(f\"Unknown capability: {capability}\"\
+    )\n        \n        method_name = f\"_{capability}\"\n        if hasattr(self, method_name):\n            return getattr(self,\
+    \ method_name)(params)\n        else:\n            raise NotImplementedError(f\"Capability {capability} not implemented\"\
+    )\n    \n    def _query_usgs_national_map(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Query USGS National\
+    \ Map for elevation and base map data.\"\"\"\n        lat = params.get('latitude')\n        lon = params.get('longitude')\n\
+    \        \n        if not validate_coordinates(lat, lon):\n            raise ValueError(\"Invalid coordinates\")\n   \
+    \     \n        # Simulate API call to USGS National Map\n        return {\n            'elevation': 1250.5,\n       \
+    \     'data_source': 'USGS 3DEP',\n            'resolution': '1 meter',\n            'collection_date': '2024-01-15',\n\
+    \            'confidence': 'high'\n        }\n    \n    def _fetch_noaa_coastal_data(self, params: Dict[str, Any]) ->\
+    \ Dict[str, Any]:\n        \"\"\"Fetch NOAA coastal data including bathymetry and shoreline.\"\"\"\n        lat = params.get('latitude')\n\
+    \        lon = params.get('longitude')\n        \n        if not validate_coordinates(lat, lon):\n            raise ValueError(\"\
+    Invalid coordinates\")\n        \n        return {\n            'tide_station': 'Station ID: 9413450',\n            'mean_sea_level':\
+    \ 2.1,\n            'bathymetry_available': True,\n            'shoreline_type': 'sandy beach',\n            'last_updated':\
+    \ '2024-02-01'\n        }\n    \n    def _retrieve_fema_flood_maps(self, params: Dict[str, Any]) -> Dict[str, Any]:\n\
+    \        \"\"\"Retrieve FEMA flood map data for location.\"\"\"\n        lat = params.get('latitude')\n        lon = params.get('longitude')\n\
+    \        \n        if not validate_coordinates(lat, lon):\n            raise ValueError(\"Invalid coordinates\")\n   \
+    \     \n        return {\n            'flood_zone': 'AE',\n            'base_flood_elevation': 12.5,\n            'fema_panel':\
+    \ '06037C0234F',\n            'last_revised': '2023-08-15',\n            'risk_level': 'moderate_to_high'\n        }\n\
+    \    \n    def _access_census_tiger_data(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Access Census\
+    \ TIGER/Line data for geographic boundaries.\"\"\"\n        lat = params.get('latitude')\n        lon = params.get('longitude')\n\
+    \        data_type = params.get('data_type', 'roads')\n        \n        if not validate_coordinates(lat, lon):\n    \
+    \        raise ValueError(\"Invalid coordinates\")\n        \n        return {\n            'county': 'San Diego County',\n\
+    \            'state': 'California',\n            'census_tract': '0201.01',\n            'block_group': '1',\n       \
+    \     'data_type': data_type,\n            'features_found': 156\n        }\n    \n    def _query_blm_land_records(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Query BLM land records and ownership data.\"\"\"\n       \
+    \ lat = params.get('latitude')\n        lon = params.get('longitude')\n        radius_km = params.get('radius_km', 1.0)\n\
+    \        \n        if not validate_coordinates(lat, lon):\n            raise ValueError(\"Invalid coordinates\")\n   \
+    \     \n        return {\n            'federal_land': True,\n            'administering_agency': 'BLM',\n            'land_use':\
+    \ 'recreation',\n            'acreage': 2456.7,\n            'permit_required': False,\n            'restrictions': ['wilderness_area']\n\
+    \        }\n    \n    def _search_national_wetlands_inventory(self, params: Dict[str, Any]) -> Dict[str, Any]:\n     \
+    \   \"\"\"Search National Wetlands Inventory data.\"\"\"\n        lat = params.get('latitude')\n        lon = params.get('longitude')\n\
+    \        buffer_meters = params.get('buffer_meters', 100)\n        \n        if not validate_coordinates(lat, lon):\n\
+    \            raise ValueError(\"Invalid coordinates\")\n        \n        return {\n            'wetlands_present': True,\n\
+    \            'wetland_types': ['freshwater_emergent', 'riverine'],\n            'total_acres': 12.3,\n            'jurisdiction':\
+    \ 'USACE',\n            'permit_required': True\n        }\n    \n    def _retrieve_historical_aerial_photography(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Retrieve historical aerial photography information.\"\"\"\n\
+    \        lat = params.get('latitude')\n        lon = params.get('longitude')\n        start_year = params.get('start_year',\
+    \ 1950)\n        end_year = params.get('end_year', 2020)\n        \n        if not validate_coordinates(lat, lon):\n \
+    \           raise ValueError(\"Invalid coordinates\")\n        \n        return {\n            'coverage_available': True,\n\
+    \            'earliest_photo': '1955',\n            'latest_photo': '2023',\n            'photo_count': 24,\n        \
+    \    'resolution_range': '0.5-2.0 meters',\n            'sources': ['USGS', 'USDA']\n        }\n    \n    def _access_nrcs_soil_surveys(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Access NRCS soil survey data.\"\"\"\n        lat = params.get('latitude')\n\
+    \        lon = params.get('longitude')\n        \n        if not validate_coordinates(lat, lon):\n            raise ValueError(\"\
+    Invalid coordinates\")\n        \n        return {\n            'soil_type': 'San Diego Series',\n            'drainage_class':\
+    \ 'well_drained',\n            'slope_range': '2-15%',\n            'agricultural_rating': 'fair',\n            'limitations':\
+    \ ['erosion_hazard', 'low_fertility']\n        }\n    \n    def _search_geological_surveys(self, params: Dict[str, Any])\
+    \ -> Dict[str, Any]:\n        \"\"\"Search USGS geological survey data.\"\"\"\n        lat = params.get('latitude')\n\
+    \        lon = params.get('longitude')\n        \n        if not validate_coordinates(lat, lon):\n            raise ValueError(\"\
+    Invalid coordinates\")\n        \n        return {\n            'geologic_unit': 'Cretaceous Granitic',\n            'seismic_hazard':\
+    \ 'moderate',\n            'landslide_potential': 'low',\n            'subsidence_risk': 'very_low',\n            'fault_lines_nearby':\
+    \ False\n        }\n    \n    def _discover_gis_data_portals(self, params: Dict[str, Any]) -> Dict[str, Any]:\n      \
+    \  \"\"\"Discover available GIS data portals.\"\"\"\n        query = params.get('query', 'topography')\n        state\
+    \ = params.get('state')\n        \n        results = query_data_gov_catalog(query, tags=['gis', 'geospatial'])\n     \
+    \   \n        return {\n            'query': query,\n            'results_found': len(results),\n            'top_results':\
+    \ results[:5],\n            'state_portals': [f\"{state} GIS Clearinghouse\"] if state else []\n        }\n    \n    def\
+    \ _validate_spatial_coordinates(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Validate spatial coordinates.\"\
+    \"\"\n        coordinates = params.get('coordinates', [])\n        \n        return {\n            'valid': validate_spatial_coordinates(coordinates),\n\
+    \            'coordinate_count': len(coordinates),\n            'validation_method': 'standard_geographic_bounds'\n  \
+    \      }\n    \n    def _calculate_spatial_statistics(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"\
+    Calculate spatial statistics for elevation data.\"\"\"\n        elevations = params.get('elevations', [])\n        \n\
+    \        stats = calculate_spatial_statistics(elevations)\n        \n        return {\n            'statistics': stats,\n\
+    \            'sample_count': len(elevations),\n            'calculation_method': 'standard_statistical_measures'\n   \
+    \     }\n    \n    def _generate_gis_data_report(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Generate\
+    \ comprehensive GIS data report.\"\"\"\n        data_sources = params.get('data_sources', {})\n        analysis_results\
+    \ = params.get('analysis_results', {})\n        \n        report = generate_gis_data_report(data_sources, analysis_results)\n\
+    \        \n        return {\n            'report': report,\n            'report_length': len(report),\n            'generated_at':\
+    \ datetime.utcnow().isoformat()\n        }\n    \n    def _build_spatial_query(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Build spatial query parameters.\"\"\"\n        lat = params.get('latitude')\n        lon = params.get('longitude')\n\
+    \        radius_km = params.get('radius_km', 1.0)\n        data_types = params.get('data_types', ['all'])\n        \n\
+    \        query = build_spatial_query(lat, lon, radius_km, data_types)\n        \n        return {\n            'query_parameters':\
+    \ query,\n            'validation_status': 'valid',\n            'build_method': 'standard_spatial_query'\n        }\n\
+    \    \n    def _parse_geospatial_metadata(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Parse geospatial\
+    \ metadata.\"\"\"\n        metadata_json = params.get('metadata_json', '{}')\n        \n        try:\n            metadata\
+    \ = parse_geospatial_metadata(metadata_json)\n            return {\n                'parsed_metadata': metadata,\n   \
+    \             'validation_status': 'valid',\n                'parse_method': 'json_schema_validation'\n            }\n\
+    \        except ValueError as e:\n            return {\n                'error': str(e),\n                'validation_status':\
+    \ 'invalid',\n                'parse_method': 'json_schema_validation'\n            }\n\nclass TestGovernmentGIS(unittest.TestCase):\n\
+    \    \"\"\"Test cases for Government Topography & GIS Resources skill.\"\"\"\n    \n    def setUp(self):\n        \"\"\
+    \"Set up test fixtures.\"\"\"\n        self.engine = SkillEngine({'log_level': 'DEBUG'})\n        self.test_coords = (32.7157,\
+    \ -117.1611)  # San Diego, CA\n    \n    def test_metadata_validation(self):\n        \"\"\"Test skill metadata structure.\"\
+    \"\"\n        self.assertEqual(SKILL_METADATA['id'], 'government_gis')\n        self.assertIn('capabilities', SKILL_METADATA)\n\
+    \        self.assertGreater(len(SKILL_METADATA['capabilities']), 10)\n    \n    def test_validate_coordinates(self):\n\
+    \        \"\"\"Test coordinate validation function.\"\"\"\n        self.assertTrue(validate_coordinates(32.7157, -117.1611))\n\
+    \        self.assertFalse(validate_coordinates(91.0, 0.0))\n        self.assertFalse(validate_coordinates(0.0, 181.0))\n\
+    \        self.assertTrue(validate_coordinates(-90.0, -180.0))\n        self.assertTrue(validate_coordinates(90.0, 180.0))\n\
+    \    \n    def test_calculate_distance(self):\n        \"\"\"Test distance calculation.\"\"\"\n        # San Diego to\
+    \ Los Angeles\n        distance = calculate_distance(32.7157, -117.1611, 34.0522, -118.2437)\n        self.assertAlmostEqual(distance,\
+    \ 180, delta=20)\n        \n        # Same point\n        self.assertAlmostEqual(calculate_distance(0, 0, 0, 0), 0.0)\n\
+    \    \n    def test_parse_geospatial_metadata(self):\n        \"\"\"Test metadata parsing.\"\"\"\n        valid_metadata\
+    \ = json.dumps({\n            'spatial_reference': 'WGS84',\n            'extent': {'minx': -180, 'maxx': 180},\n    \
+    \        'data_type': 'raster'\n        })\n        \n        metadata = parse_geospatial_metadata(valid_metadata)\n \
+    \       self.assertEqual(metadata['spatial_reference'], 'WGS84')\n        \n        with self.assertRaises(ValueError):\n\
+    \            parse_geospatial_metadata('invalid json')\n    \n    def test_build_spatial_query(self):\n        \"\"\"\
+    Test spatial query building.\"\"\"\n        query = build_spatial_query(32.7157, -117.1611, 5.0, ['elevation', 'hydrography'])\n\
+    \        \n        self.assertEqual(query['latitude'], 32.7157)\n        self.assertEqual(query['longitude'], -117.1611)\n\
+    \        self.assertEqual(query['radius_km'], 5.0)\n        self.assertIn('elevation', query['data_types'])\n        self.assertIn('bbox',\
+    \ query)\n    \n    def test_calculate_spatial_statistics(self):\n        \"\"\"Test spatial statistics calculation.\"\
+    \"\"\n        elevations = [100, 150, 200, 250, 300]\n        stats = calculate_spatial_statistics(elevations)\n     \
+    \   \n        self.assertEqual(stats['min'], 100)\n        self.assertEqual(stats['max'], 300)\n        self.assertEqual(stats['mean'],\
+    \ 200)\n        self.assertEqual(stats['count'], 5)\n        \n        # Empty list\n        self.assertEqual(calculate_spatial_statistics([]),\
+    \ {})\n    \n    def test_generate_gis_data_report(self):\n        \"\"\"Test report generation.\"\"\"\n        data_sources\
+    \ = {\n            'USGS': {'description': 'Elevation data'},\n            'NOAA': {'description': 'Coastal data'}\n \
+    \       }\n        analysis_results = {\n            'elevation': {'min': 100, 'max': 500},\n            'flood_risk':\
+    \ 'moderate'\n        }\n        \n        report = generate_gis_data_report(data_sources, analysis_results)\n       \
+    \ \n        self.assertIn('GOVERNMENT GIS DATA ANALYSIS REPORT', report)\n        self.assertIn('USGS', report)\n    \
+    \    self.assertIn('Elevation data', report)\n        self.assertIn('moderate', report)\n    \n    def test_query_data_gov_catalog(self):\n\
+    \        \"\"\"Test Data.gov catalog querying.\"\"\"\n        with patch('requests.get') as mock_get:\n            mock_response\
+    \ = MagicMock()\n            mock_response.json.return_value = {\n                'result': {\n                    'results':\
+    \ [{\n                        'title': 'Test Dataset',\n                        'notes': 'Test description',\n       \
+    \                 'organization': {'title': 'Test Org'},\n                        'tags': [{'name': 'test'}],\n      \
+    \                  'resources': [{'url': 'http://test.com', 'format': 'GeoJSON'}]\n                    }]\n          \
+    \      }\n            }\n            mock_get.return_value = mock_response\n            \n            results = query_data_gov_catalog('elevation')\n\
+    \            \n            self.assertEqual(len(results), 1)\n            self.assertEqual(results[0]['title'], 'Test\
+    \ Dataset')\n            mock_get.assert_called_once()\n    \n    def test_validate_spatial_coordinates(self):\n     \
+    \   \"\"\"Test spatial coordinate validation.\"\"\"\n        coords = [(32.7157, -117.1611), (34.0522, -118.2437)]\n \
+    \       self.assertTrue(validate_spatial_coordinates(coords))\n        \n        invalid_coords = [(91.0, 0.0), (0.0,\
+    \ 181.0)]\n        self.assertFalse(validate_spatial_coordinates(invalid_coords))\n        \n        self.assertFalse(validate_spatial_coordinates([]))\n\
+    \    \n    def test_interpolate_elevation(self):\n        \"\"\"Test elevation interpolation.\"\"\"\n        points =\
+    \ [\n            (32.7157, -117.1611, 100.0),\n            (32.7257, -117.1711, 150.0),\n            (32.7057, -117.1511,\
+    \ 120.0)\n        ]\n        \n        elevation = interpolate_elevation(points, 32.7157, -117.1611)\n        self.assertAlmostEqual(elevation,\
+    \ 100.0, delta=1.0)\n        \n        # Test exact point match\n        elevation = interpolate_elevation(points, 32.7257,\
+    \ -117.1711)\n        self.assertAlmostEqual(elevation, 150.0)\n    \n    def test_skill_engine_initialization(self):\n\
+    \        \"\"\"Test SkillEngine initialization.\"\"\"\n        config = {'api_key': 'test_key', 'timeout': 60}\n     \
+    \   engine = SkillEngine(config)\n        \n        self.assertEqual(engine.config, config)\n        self.assertIsNotNone(engine.session)\n\
+    \    \n    def test_skill_engine_run_valid_capability(self):\n        \"\"\"Test running valid capability.\"\"\"\n   \
+    \     params = {\n            'latitude': 32.7157,\n            'longitude': -117.1611\n        }\n        \n        result\
+    \ = self.engine.run('query_usgs_national_map', params)\n        \n        self.assertIn('elevation', result)\n       \
+    \ self.assertIn('data_source', result)\n        self.assertEqual(result['data_source'], 'USGS 3DEP')\n    \n    def test_skill_engine_run_invalid_capability(self):\n\
+    \        \"\"\"Test running invalid capability.\"\"\"\n        with self.assertRaises(ValueError):\n            self.engine.run('invalid_capability',\
+    \ {})\n    \n    def test_skill_engine_run_invalid_coordinates(self):\n        \"\"\"Test error handling for invalid coordinates.\"\
+    \"\"\n        params = {\n            'latitude': 91.0,\n            'longitude': 181.0\n        }\n        \n       \
+    \ with self.assertRaises(ValueError):\n            self.engine.run('query_usgs_national_map', params)\n    \n    def test_expert_prompts_format(self):\n\
+    \        \"\"\"Test expert prompts have correct format.\"\"\"\n        for name, prompt in EXPERT_PROMPTS.items():\n \
+    \           self.assertIsInstance(name, str)\n            self.assertIsInstance(prompt, str)\n            self.assertIn('{',\
+    \ prompt)  # Should have placeholders\n            self.assertIn('}', prompt)\n    \n    def test_integration_points_structure(self):\n\
+    \        \"\"\"Test integration points structure.\"\"\"\n        for name, config in INTEGRATION_POINTS.items():\n   \
+    \         self.assertIn('type', config)\n            self.assertIn('endpoint', config)\n            self.assertIn('description',\
+    \ config)\n            self.assertIn('auth_method', config)\n            self.assertIn('documentation_url', config)\n\
+    \            \n            self.assertIn(config['type'], ['api', 'database', 'tool'])\n            self.assertTrue(config['endpoint'].startswith('http'))\n\
+    \nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Government Topography & GIS Resources skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''government_gis'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

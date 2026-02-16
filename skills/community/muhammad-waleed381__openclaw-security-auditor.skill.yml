@@ -1,0 +1,72 @@
+name: openclaw-security-audit
+title: OpenClaw Security Auditor
+version: 1.0.0
+description: Audit OpenClaw configuration for security risks and generate a remediation report using the user's configured
+  LLM.
+metadata:
+  author: muhammad-waleed381
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - security
+  - audit
+  source: clawhub-community
+  clawhub_slug: openclaw-security-auditor
+  clawhub_path: muhammad-waleed381/openclaw-security-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Security Auditor
+
+    # Source: ClawHub community skill by muhammad-waleed381
+
+    # Install: clawhub install openclaw-security-auditor
+
+    # Path: muhammad-waleed381/openclaw-security-auditor
+
+
+    ## Description
+
+    Audit OpenClaw configuration for security risks and generate a remediation report using the user''s configured LLM.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - CONTRIBUTING.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docs/INSTALLATION.md
+
+    - docs/SECURITY-CHECKS.md
+
+    - docs/USAGE.md
+
+    - examples/average-setup.md
+
+    - examples/critical-findings.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-security-auditor
+
+    ```'
+examples:
+- description: Install OpenClaw Security Auditor from ClawHub
+  usage: clawhub install openclaw-security-auditor
+schema_version: '1.0'

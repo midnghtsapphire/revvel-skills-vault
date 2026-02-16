@@ -1,0 +1,54 @@
+name: openclaw-tescmd
+title: tescmd
+version: 1.0.0
+description: Installation and setup guide for Tesla vehicle control and telemetry via the tescmd node.
+metadata:
+  author: oceanswave
+  category: General
+  tags:
+  - general
+  - openclaw
+  - tescmd
+  source: clawhub-community
+  clawhub_slug: openclaw-tescmd
+  clawhub_path: oceanswave/openclaw-tescmd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# tescmd
+
+    # Source: ClawHub community skill by oceanswave
+
+    # Install: clawhub install openclaw-tescmd
+
+    # Path: oceanswave/openclaw-tescmd
+
+
+    ## Description
+
+    Installation and setup guide for Tesla vehicle control and telemetry via the tescmd node.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-tescmd
+
+    ```'
+examples:
+- description: Install tescmd from ClawHub
+  usage: clawhub install openclaw-tescmd
+schema_version: '1.0'

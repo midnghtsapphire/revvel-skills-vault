@@ -1,0 +1,55 @@
+name: piano
+title: Piano
+version: 1.0.0
+description: Piano practice strategies, technique correction, repertoire guidance, and progress tracking.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - piano
+  source: clawhub-community
+  clawhub_slug: piano
+  clawhub_path: ivangdavila/piano
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Piano
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install piano
+
+    # Path: ivangdavila/piano
+
+
+    ## Description
+
+    Piano practice strategies, technique correction, repertoire guidance, and progress tracking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - progress.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install piano
+
+    ```'
+examples:
+- description: Install Piano from ClawHub
+  usage: clawhub install piano
+schema_version: '1.0'

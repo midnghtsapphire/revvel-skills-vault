@@ -1,0 +1,67 @@
+name: assess-risk
+title: Uniswap Assess Risk
+version: 0.1.0
+description: Get an independent risk assessment for any proposed Uniswap operation — swap, LP position, bridge, or token interaction.
+  Evaluates slippage, impermanent loss, liquidity, smart contract, and bridge risks with a clear APPROVE or VETO decision.
+  Use when the user asks if something is safe or wants a ris
+metadata:
+  author: wpank
+  category: General
+  tags:
+  - general
+  - assess
+  - risk
+  - '[task(subagent_type:risk-assessor)]'
+  source: clawhub-community
+  clawhub_slug: assess-risk
+  clawhub_path: wpank/assess-risk
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:risk-assessor)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Assess Risk
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install assess-risk
+
+    # Path: wpank/assess-risk
+
+
+    ## Description
+
+    Get an independent risk assessment for any proposed Uniswap operation — swap, LP position, bridge, or token interaction.
+    Evaluates slippage, impermanent loss, liquidity, smart contract, and bridge risks with a clear APPROVE or VETO decision.
+    Use when the user asks if something is safe or wants a ris
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:risk-assessor)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install assess-risk
+
+    ```'
+examples:
+- description: Install Uniswap Assess Risk from ClawHub
+  usage: clawhub install assess-risk
+schema_version: '1.0'

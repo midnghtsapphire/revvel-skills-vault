@@ -1,0 +1,58 @@
+name: d4-world-boss
+title: D4 World Boss Tracker
+version: 1.0.3
+description: 暗黑4世界BOSS刷新时间查询。使用 @D4世界boss 或询问暗黑4世界boss时触发。自动获取踩蘑菇地图的世界BOSS刷新时间，并询问是否设置定时提醒。
+metadata:
+  author: crazzies
+  category: General
+  tags:
+  - general
+  - world
+  - boss
+  source: clawhub-community
+  clawhub_slug: d4-world-boss
+  clawhub_path: crazzies/d4-world-boss
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# D4 World Boss Tracker
+
+    # Source: ClawHub community skill by crazzies
+
+    # Install: clawhub install d4-world-boss
+
+    # Path: crazzies/d4-world-boss
+
+
+    ## Description
+
+    暗黑4世界BOSS刷新时间查询。使用 @D4世界boss 或询问暗黑4世界boss时触发。自动获取踩蘑菇地图的世界BOSS刷新时间，并询问是否设置定时提醒。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.md
+
+    - scripts/fetch_boss.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install d4-world-boss
+
+    ```'
+examples:
+- description: Install D4 World Boss Tracker from ClawHub
+  usage: clawhub install d4-world-boss
+schema_version: '1.0'

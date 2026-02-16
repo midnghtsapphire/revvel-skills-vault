@@ -1,0 +1,58 @@
+name: overleaf
+title: Overleaf
+version: 1.0.2
+description: Access Overleaf projects via CLI. Use for reading/writing LaTeX files, syncing local .tex files to Overleaf,
+  downloading projects, and managing Overleaf project structure. Triggers on Overleaf, LaTeX sync, or tex file uploads to
+  Overleaf.
+metadata:
+  author: easonc13
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - overleaf
+  source: clawhub-community
+  clawhub_slug: overleaf
+  clawhub_path: easonc13/overleaf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Overleaf
+
+    # Source: ClawHub community skill by easonc13
+
+    # Install: clawhub install overleaf
+
+    # Path: easonc13/overleaf
+
+
+    ## Description
+
+    Access Overleaf projects via CLI. Use for reading/writing LaTeX files, syncing local .tex files to Overleaf, downloading
+    projects, and managing Overleaf project structure. Triggers on Overleaf, LaTeX sync, or tex file uploads to Overleaf.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sync-to-overleaf.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install overleaf
+
+    ```'
+examples:
+- description: Install Overleaf from ClawHub
+  usage: clawhub install overleaf
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: mootdx-china-stock-data
+title: Free A Share Real Time Data
+version: 1.0.1
+description: Fetch China A-share stock market data (bars, realtime quotes, tick-by-tick transactions) via mootdx/TDX protocol.
+  Use when working with Chinese stock data, mootdx library, TDX quotes, intraday minute bars, transaction history, or real-time
+  A-share market data.
+metadata:
+  author: wangdinglu
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - mootdx
+  - china
+  - stock
+  - data
+  source: clawhub-community
+  clawhub_slug: free-a-share-real-time-data
+  clawhub_path: wangdinglu/free-a-share-real-time-data
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Free A Share Real Time Data
+
+    # Source: ClawHub community skill by wangdinglu
+
+    # Install: clawhub install free-a-share-real-time-data
+
+    # Path: wangdinglu/free-a-share-real-time-data
+
+
+    ## Description
+
+    Fetch China A-share stock market data (bars, realtime quotes, tick-by-tick transactions) via mootdx/TDX protocol. Use
+    when working with Chinese stock data, mootdx library, TDX quotes, intraday minute bars, transaction history, or real-time
+    A-share market data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - api-reference.md
+
+    - scripts/setup_and_verify.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install free-a-share-real-time-data
+
+    ```'
+examples:
+- description: Install Free A Share Real Time Data from ClawHub
+  usage: clawhub install free-a-share-real-time-data
+schema_version: '1.0'

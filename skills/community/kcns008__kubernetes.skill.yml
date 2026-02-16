@@ -1,0 +1,65 @@
+name: kubernetes
+title: Kubernetes
+version: 1.0.0
+description: '|'
+metadata:
+  author: kcns008
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - kubernetes
+  source: clawhub-community
+  clawhub_slug: kubernetes
+  clawhub_path: kcns008/kubernetes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kubernetes
+
+    # Source: ClawHub community skill by kcns008
+
+    # Install: clawhub install kubernetes
+
+    # Path: kcns008/kubernetes
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/argocd-app-sync.sh
+
+    - scripts/cluster-health-check.sh
+
+    - scripts/generate-manifest.sh
+
+    - scripts/node-maintenance.sh
+
+    - scripts/pre-upgrade-check.sh
+
+    - scripts/security-audit.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kubernetes
+
+    ```'
+examples:
+- description: Install Kubernetes from ClawHub
+  usage: clawhub install kubernetes
+schema_version: '1.0'

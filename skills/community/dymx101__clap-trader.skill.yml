@@ -1,0 +1,65 @@
+name: crypto_trader___analyst
+title: Clap Trader
+version: 1.0.0
+description: A skill for OpenClaw to research crypto market trends (technical & sentiment) and trade ETH on Binance.
+metadata:
+  author: dymx101
+  category: Search & Research
+  tags:
+  - search-research
+  - crypto
+  - trader
+  - analyst
+  source: clawhub-community
+  clawhub_slug: clap-trader
+  clawhub_path: dymx101/clap-trader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clap Trader
+
+    # Source: ClawHub community skill by dymx101
+
+    # Install: clawhub install clap-trader
+
+    # Path: dymx101/clap-trader
+
+
+    ## Description
+
+    A skill for OpenClaw to research crypto market trends (technical & sentiment) and trade ETH on Binance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - logs/analysis_journal.md
+
+    - scripts/logger.py
+
+    - scripts/market_data.py
+
+    - scripts/sentiment_data.py
+
+    - scripts/trade.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clap-trader
+
+    ```'
+examples:
+- description: Install Clap Trader from ClawHub
+  usage: clawhub install clap-trader
+schema_version: '1.0'

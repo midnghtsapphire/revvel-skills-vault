@@ -1,0 +1,57 @@
+name: docstrange
+title: Nanonets OCR
+version: 1.0.2
+description: Document extraction API by Nanonets. Convert PDFs and images to markdown, JSON, or CSV with confidence scoring.
+  Use when you need to OCR documents, extract invoice fields, parse receipts, or convert tables to structured data.
+metadata:
+  author: shhdwi
+  category: Media & Content
+  tags:
+  - media-content
+  - docstrange
+  source: clawhub-community
+  clawhub_slug: docstrange
+  clawhub_path: shhdwi/docstrange
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nanonets OCR
+
+    # Source: ClawHub community skill by shhdwi
+
+    # Install: clawhub install docstrange
+
+    # Path: shhdwi/docstrange
+
+
+    ## Description
+
+    Document extraction API by Nanonets. Convert PDFs and images to markdown, JSON, or CSV with confidence scoring. Use when
+    you need to OCR documents, extract invoice fields, parse receipts, or convert tables to structured data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install docstrange
+
+    ```'
+examples:
+- description: Install Nanonets OCR from ClawHub
+  usage: clawhub install docstrange
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: dialpad
+title: Dialpad SMS & Voice
+version: 1.0.0
+description: Send SMS and make voice calls via Dialpad API. Supports single/batch SMS, voice calls with TTS, and caller ID
+  selection.
+metadata:
+  author: kesslerio
+  category: Communication
+  tags:
+  - communication
+  - dialpad
+  source: clawhub-community
+  clawhub_slug: dialpad
+  clawhub_path: kesslerio/dialpad
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dialpad SMS & Voice
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install dialpad
+
+    # Path: kesslerio/dialpad
+
+
+    ## Description
+
+    Send SMS and make voice calls via Dialpad API. Supports single/batch SMS, voice calls with TTS, and caller ID selection.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - create_sms_webhook.py
+
+    - export_sms.py
+
+    - lookup_contact.py
+
+    - make_call.py
+
+    - send_sms.py
+
+    - sms_sqlite.py
+
+    - sms_storage.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dialpad
+
+    ```'
+examples:
+- description: Install Dialpad SMS & Voice from ClawHub
+  usage: clawhub install dialpad
+schema_version: '1.0'

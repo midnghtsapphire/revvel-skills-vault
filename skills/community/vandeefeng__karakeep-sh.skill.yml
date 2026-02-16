@@ -1,0 +1,57 @@
+name: karakeep
+title: karakeep-sh
+version: 1.0.0
+description: Karakeep bookmark manager with full API support including notes, updates, and deletion. Requires KARAKEEP_SERVER_URL
+  and KARAKEEP_API_KEY environment variables.
+metadata:
+  author: vandeefeng
+  category: Development & Coding
+  tags:
+  - development-coding
+  - karakeep
+  source: clawhub-community
+  clawhub_slug: karakeep-sh
+  clawhub_path: vandeefeng/karakeep-sh
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# karakeep-sh
+
+    # Source: ClawHub community skill by vandeefeng
+
+    # Install: clawhub install karakeep-sh
+
+    # Path: vandeefeng/karakeep-sh
+
+
+    ## Description
+
+    Karakeep bookmark manager with full API support including notes, updates, and deletion. Requires KARAKEEP_SERVER_URL and
+    KARAKEEP_API_KEY environment variables.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/karakeep-script.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install karakeep-sh
+
+    ```'
+examples:
+- description: Install karakeep-sh from ClawHub
+  usage: clawhub install karakeep-sh
+schema_version: '1.0'

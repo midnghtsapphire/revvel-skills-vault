@@ -1,0 +1,70 @@
+name: emporia-energy
+title: Emporia Energy
+version: 1.0.0
+description: Direct Emporia Vue energy queries via Emporia cloud (PyEmVue) or local ESPHome API, including guidance on choosing/configuring
+  cloud vs local modes and running list/summary/circuit commands.
+metadata:
+  author: urosorozel
+  category: Development & Coding
+  tags:
+  - development-coding
+  - emporia
+  - energy
+  source: clawhub-community
+  clawhub_slug: emporia-energy
+  clawhub_path: urosorozel/emporia-energy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Emporia Energy
+
+    # Source: ClawHub community skill by urosorozel
+
+    # Install: clawhub install emporia-energy
+
+    # Path: urosorozel/emporia-energy
+
+
+    ## Description
+
+    Direct Emporia Vue energy queries via Emporia cloud (PyEmVue) or local ESPHome API, including guidance on choosing/configuring
+    cloud vs local modes and running list/summary/circuit commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements-cloud.txt
+
+    - requirements-esphome.txt
+
+    - assets/example.env
+
+    - references/README.md
+
+    - scripts/common.py
+
+    - scripts/emporia_cloud.py
+
+    - scripts/emporia_esphome.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install emporia-energy
+
+    ```'
+examples:
+- description: Install Emporia Energy from ClawHub
+  usage: clawhub install emporia-energy
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: gemini-stt
+title: Gemini STT
+version: 1.1.0
+description: Transcribe audio files using Google's Gemini API or Vertex AI
+metadata:
+  author: araa47
+  category: Search & Research
+  tags:
+  - search-research
+  - gemini
+  - stt
+  source: clawhub-community
+  clawhub_slug: gemini-stt
+  clawhub_path: araa47/gemini-stt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gemini STT
+
+    # Source: ClawHub community skill by araa47
+
+    # Install: clawhub install gemini-stt
+
+    # Path: araa47/gemini-stt
+
+
+    ## Description
+
+    Transcribe audio files using Google''s Gemini API or Vertex AI
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - transcribe.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gemini-stt
+
+    ```'
+examples:
+- description: Install Gemini STT from ClawHub
+  usage: clawhub install gemini-stt
+schema_version: '1.0'

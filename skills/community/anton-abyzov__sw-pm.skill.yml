@@ -1,0 +1,79 @@
+name: pm
+title: Pm
+version: 1.0.0
+description: Product Manager for spec-driven development with SpecWeave conventions. Use when writing user stories, defining
+  acceptance criteria, planning MVPs, or prioritizing features. Creates specs with proper AC-IDs, manages requirements, and
+  maintains product roadmaps.
+metadata:
+  author: anton-abyzov
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - read
+  - write
+  - grep
+  - glob
+  source: clawhub-community
+  clawhub_slug: sw-pm
+  clawhub_path: anton-abyzov/sw-pm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Write
+  - Grep
+  - Glob
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pm
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-pm
+
+    # Path: anton-abyzov/sw-pm
+
+
+    ## Description
+
+    Product Manager for spec-driven development with SpecWeave conventions. Use when writing user stories, defining acceptance
+    criteria, planning MVPs, or prioritizing features. Creates specs with proper AC-IDs, manages requirements, and maintains
+    product roadmaps.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - phases/01-research.md
+
+    - phases/02-spec-creation.md
+
+    - phases/03-validation.md
+
+    - templates/spec-template.md
+
+
+    ## Allowed Tools
+
+    Read, Write, Grep, Glob
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-pm
+
+    ```'
+examples:
+- description: Install Pm from ClawHub
+  usage: clawhub install sw-pm
+schema_version: '1.0'

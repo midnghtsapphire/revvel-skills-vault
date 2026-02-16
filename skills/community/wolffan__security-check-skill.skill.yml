@@ -1,0 +1,66 @@
+name: security-check
+title: Security Check
+version: 0.1.0
+description: Security audit and inspection skill for Clawdbot skills. Use this when you need to check skills for security
+  vulnerabilities before installation, perform regular security audits on installed skills, verify skill description matches
+  actual behavior, scan for prompt injection attempts, check for hardc
+metadata:
+  author: wolffan
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - check
+  source: clawhub-community
+  clawhub_slug: security-check-skill
+  clawhub_path: wolffan/security-check-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Check
+
+    # Source: ClawHub community skill by wolffan
+
+    # Install: clawhub install security-check-skill
+
+    # Path: wolffan/security-check-skill
+
+
+    ## Description
+
+    Security audit and inspection skill for Clawdbot skills. Use this when you need to check skills for security vulnerabilities
+    before installation, perform regular security audits on installed skills, verify skill description matches actual behavior,
+    scan for prompt injection attempts, check for hardc
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/prompt-injection-patterns.md
+
+    - references/security-checklist.md
+
+    - scripts/scan_skill.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-check-skill
+
+    ```'
+examples:
+- description: Install Security Check from ClawHub
+  usage: clawhub install security-check-skill
+schema_version: '1.0'

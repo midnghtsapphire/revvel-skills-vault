@@ -1,0 +1,56 @@
+name: chill-institute
+title: chill.institute
+version: 1.0.0
+description: Use chill.institute (web UI) to search for content and click “send to put.io” (best paired with the putio skill)
+  — set sail, pick the best 1080p/x265 loot, and ship it.
+metadata:
+  author: baanish
+  category: Search & Research
+  tags:
+  - search-research
+  - chill
+  - institute
+  source: clawhub-community
+  clawhub_slug: chill-institute
+  clawhub_path: baanish/chill-institute
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# chill.institute
+
+    # Source: ClawHub community skill by baanish
+
+    # Install: clawhub install chill-institute
+
+    # Path: baanish/chill-institute
+
+
+    ## Description
+
+    Use chill.institute (web UI) to search for content and click “send to put.io” (best paired with the putio skill) — set
+    sail, pick the best 1080p/x265 loot, and ship it.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install chill-institute
+
+    ```'
+examples:
+- description: Install chill.institute from ClawHub
+  usage: clawhub install chill-institute
+schema_version: '1.0'

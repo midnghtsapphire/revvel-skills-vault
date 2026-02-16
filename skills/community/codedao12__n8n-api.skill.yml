@@ -1,0 +1,58 @@
+name: n8n-api
+title: n8n API
+version: 1.0.1
+description: Operate n8n via its public REST API from OpenClaw. Use for workflow management, executions, and automation tasks
+  such as listing, creating, publishing, triggering, or troubleshooting. Works with both self-hosted n8n and n8n Cloud.
+metadata:
+  author: codedao12
+  category: Development & Coding
+  tags:
+  - development-coding
+  - n8n
+  - api
+  source: clawhub-community
+  clawhub_slug: n8n-api
+  clawhub_path: codedao12/n8n-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# n8n API
+
+    # Source: ClawHub community skill by codedao12
+
+    # Install: clawhub install n8n-api
+
+    # Path: codedao12/n8n-api
+
+
+    ## Description
+
+    Operate n8n via its public REST API from OpenClaw. Use for workflow management, executions, and automation tasks such
+    as listing, creating, publishing, triggering, or troubleshooting. Works with both self-hosted n8n and n8n Cloud.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/n8n-api-endpoints.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install n8n-api
+
+    ```'
+examples:
+- description: Install n8n API from ClawHub
+  usage: clawhub install n8n-api
+schema_version: '1.0'

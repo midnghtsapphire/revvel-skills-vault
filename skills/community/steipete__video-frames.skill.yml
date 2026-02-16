@@ -1,0 +1,56 @@
+name: video-frames
+title: Video Frames
+version: 1.0.0
+description: Extract frames or short clips from videos using ffmpeg.
+metadata:
+  author: steipete
+  category: Media & Content
+  tags:
+  - media-content
+  - video
+  - frames
+  source: clawhub-community
+  clawhub_slug: video-frames
+  clawhub_path: steipete/video-frames
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Video Frames
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install video-frames
+
+    # Path: steipete/video-frames
+
+
+    ## Description
+
+    Extract frames or short clips from videos using ffmpeg.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/frame.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install video-frames
+
+    ```'
+examples:
+- description: Install Video Frames from ClawHub
+  usage: clawhub install video-frames
+schema_version: '1.0'

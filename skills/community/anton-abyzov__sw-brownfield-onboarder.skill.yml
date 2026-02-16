@@ -1,0 +1,60 @@
+name: brownfield-onboarder
+title: Brownfield Onboarder
+version: 1.0.0
+description: Intelligently onboards brownfield projects by merging existing CLAUDE.md backups into SpecWeave structure. Use
+  when installing SpecWeave into existing projects with CLAUDE.md, merging documentation, or importing project knowledge.
+  Distributes content to appropriate folders without bloating main CLAU
+metadata:
+  author: anton-abyzov
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - brownfield
+  - onboarder
+  source: clawhub-community
+  clawhub_slug: sw-brownfield-onboarder
+  clawhub_path: anton-abyzov/sw-brownfield-onboarder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Brownfield Onboarder
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-brownfield-onboarder
+
+    # Path: anton-abyzov/sw-brownfield-onboarder
+
+
+    ## Description
+
+    Intelligently onboards brownfield projects by merging existing CLAUDE.md backups into SpecWeave structure. Use when installing
+    SpecWeave into existing projects with CLAUDE.md, merging documentation, or importing project knowledge. Distributes content
+    to appropriate folders without bloating main CLAU
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-brownfield-onboarder
+
+    ```'
+examples:
+- description: Install Brownfield Onboarder from ClawHub
+  usage: clawhub install sw-brownfield-onboarder
+schema_version: '1.0'

@@ -1,0 +1,75 @@
+name: restaurant-review-crosscheck
+title: 餐厅推荐交叉验证
+version: 1.0.0
+description: Cross-reference restaurant recommendations from Xiaohongshu (小红书) and Dianping (大众点评) to validate restaurant
+  quality and consistency. Use when querying restaurant recommendations by geographic location (city/district) to get validated
+  insights from both platforms. Automatically fetches ratings, revi
+metadata:
+  author: liyang2016
+  category: General
+  tags:
+  - general
+  - restaurant
+  - review
+  - crosscheck
+  source: clawhub-community
+  clawhub_slug: restaurant-crosscheck
+  clawhub_path: liyang2016/restaurant-crosscheck
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 餐厅推荐交叉验证
+
+    # Source: ClawHub community skill by liyang2016
+
+    # Install: clawhub install restaurant-crosscheck
+
+    # Path: liyang2016/restaurant-crosscheck
+
+
+    ## Description
+
+    Cross-reference restaurant recommendations from Xiaohongshu (小红书) and Dianping (大众点评) to validate restaurant quality and
+    consistency. Use when querying restaurant recommendations by geographic location (city/district) to get validated insights
+    from both platforms. Automatically fetches ratings, revi
+
+
+    ## Files
+
+    - IMPLEMENTATION.md
+
+    - INTEGRATION_COMPLETE.md
+
+    - PUBLISH_GUIDE.md
+
+    - QUICKSTART.md
+
+    - QUICK_PUBLISH.md
+
+    - README.md
+
+    - SERVER_GUIDE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - publish.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install restaurant-crosscheck
+
+    ```'
+examples:
+- description: Install 餐厅推荐交叉验证 from ClawHub
+  usage: clawhub install restaurant-crosscheck
+schema_version: '1.0'

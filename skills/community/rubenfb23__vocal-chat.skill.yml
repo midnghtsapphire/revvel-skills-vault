@@ -1,0 +1,56 @@
+name: walkie-talkie
+title: Vocal Chat
+version: 1.0.0
+description: Handles voice-to-voice conversations on WhatsApp. Automatically transcribes incoming audio and responds with
+  local TTS audio. Use when the user wants to "talk" instead of type.
+metadata:
+  author: rubenfb23
+  category: Media & Content
+  tags:
+  - media-content
+  - walkie
+  - talkie
+  source: clawhub-community
+  clawhub_slug: vocal-chat
+  clawhub_path: rubenfb23/vocal-chat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vocal Chat
+
+    # Source: ClawHub community skill by rubenfb23
+
+    # Install: clawhub install vocal-chat
+
+    # Path: rubenfb23/vocal-chat
+
+
+    ## Description
+
+    Handles voice-to-voice conversations on WhatsApp. Automatically transcribes incoming audio and responds with local TTS
+    audio. Use when the user wants to "talk" instead of type.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vocal-chat
+
+    ```'
+examples:
+- description: Install Vocal Chat from ClawHub
+  usage: clawhub install vocal-chat
+schema_version: '1.0'

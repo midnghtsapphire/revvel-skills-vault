@@ -1,0 +1,56 @@
+name: apple-contacts
+title: Apple Contacts
+version: 1.2.0
+description: Look up contacts from macOS Contacts.app. Use when resolving phone numbers to names, finding contact info, or
+  searching the address book.
+metadata:
+  author: tyler6204
+  category: Search & Research
+  tags:
+  - search-research
+  - apple
+  - contacts
+  source: clawhub-community
+  clawhub_slug: apple-contacts
+  clawhub_path: tyler6204/apple-contacts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Contacts
+
+    # Source: ClawHub community skill by tyler6204
+
+    # Install: clawhub install apple-contacts
+
+    # Path: tyler6204/apple-contacts
+
+
+    ## Description
+
+    Look up contacts from macOS Contacts.app. Use when resolving phone numbers to names, finding contact info, or searching
+    the address book.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-contacts
+
+    ```'
+examples:
+- description: Install Apple Contacts from ClawHub
+  usage: clawhub install apple-contacts
+schema_version: '1.0'

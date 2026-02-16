@@ -1,0 +1,64 @@
+name: clawbrowser
+title: Clawbrowser
+version: 0.1.1
+description: Use when the agent needs to drive a browser through the Microsoft Playwright CLI (`playwright-cli`) for navigation,
+  form interactions, screenshots, recordings, data extraction, session management, or debugging without loading a full MCP
+  browser. It trains the agent on the CLI commands, snapshots, an
+metadata:
+  author: tezatezaz
+  category: Search & Research
+  tags:
+  - search-research
+  - clawbrowser
+  - bash(playwright-cli:*)
+  source: clawhub-community
+  clawhub_slug: clawbrowser
+  clawhub_path: tezatezaz/clawbrowser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(playwright-cli:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawbrowser
+
+    # Source: ClawHub community skill by tezatezaz
+
+    # Install: clawhub install clawbrowser
+
+    # Path: tezatezaz/clawbrowser
+
+
+    ## Description
+
+    Use when the agent needs to drive a browser through the Microsoft Playwright CLI (`playwright-cli`) for navigation, form
+    interactions, screenshots, recordings, data extraction, session management, or debugging without loading a full MCP browser.
+    It trains the agent on the CLI commands, snapshots, an
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(playwright-cli:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawbrowser
+
+    ```'
+examples:
+- description: Install Clawbrowser from ClawHub
+  usage: clawhub install clawbrowser
+schema_version: '1.0'

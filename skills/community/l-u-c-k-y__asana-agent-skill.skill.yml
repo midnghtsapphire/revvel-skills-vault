@@ -1,0 +1,63 @@
+name: asana
+title: Asana
+version: 0.2.0
+description: '"Manage Asana tasks, projects, briefs, status updates, custom fields, dependencies, attachments, events, and
+  timelines via Personal Access Token (PAT)."'
+metadata:
+  author: l-u-c-k-y
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - asana
+  source: clawhub-community
+  clawhub_slug: asana-agent-skill
+  clawhub_path: l-u-c-k-y/asana-agent-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Asana
+
+    # Source: ClawHub community skill by l-u-c-k-y
+
+    # Install: clawhub install asana-agent-skill
+
+    # Path: l-u-c-k-y/asana-agent-skill
+
+
+    ## Description
+
+    "Manage Asana tasks, projects, briefs, status updates, custom fields, dependencies, attachments, events, and timelines
+    via Personal Access Token (PAT)."
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/REFERENCE.md
+
+    - scripts/asana.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install asana-agent-skill
+
+    ```'
+examples:
+- description: Install Asana from ClawHub
+  usage: clawhub install asana-agent-skill
+schema_version: '1.0'

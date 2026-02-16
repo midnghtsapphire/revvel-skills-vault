@@ -1,0 +1,251 @@
+name: cold_case_analysis
+title: Cold Case Analysis
+version: 1.0.0
+description: Advanced forensic analysis toolkit for cold case investigations, integrating evidence re-examination, witness
+  re-interview strategies, DNA genealogy matching, digital forensics, timeline reconstruction, and cross-case pattern analysis
+metadata:
+  author: Revvel AI Engine
+  category: Forensic Investigation
+  tags:
+  - dna-genealogy-matching
+  - case
+  - cross-case-pattern-analysis
+  - lead-generation
+  - digital-forensics-historical
+  - cold
+  - case-priority-scoring
+  - evidence-reexamination
+  - analysis
+  - witness-reinterview-strategy
+  - timeline-reconstruction
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport hashlib\nimport statistics\nimport math\nfrom datetime import datetime,\
+    \ timedelta\nfrom typing import Dict, List, Any, Optional, Tuple\nfrom collections import defaultdict, Counter\nimport\
+    \ unittest\nimport logging\n\nSKILL_METADATA = {\n    \"name\": \"Cold Case Analysis\",\n    \"id\": \"cold_case_analysis\"\
+    ,\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Advanced forensic analysis\
+    \ toolkit for cold case investigations, integrating evidence re-examination, witness re-interview strategies, DNA genealogy\
+    \ matching, digital forensics, timeline reconstruction, and cross-case pattern analysis\",\n    \"capabilities\": [\n\
+    \        \"evidence_reexamination\",\n        \"witness_reinterview_strategy\",\n        \"dna_genealogy_matching\",\n\
+    \        \"digital_forensics_historical\",\n        \"timeline_reconstruction\",\n        \"cross_case_pattern_analysis\"\
+    ,\n        \"case_priority_scoring\",\n        \"lead_generation\",\n        \"forensic_report_generation\",\n       \
+    \ \"investigative_workflow_optimization\"\n    ],\n    \"domain\": \"forensic_investigation\"\n}\n\nEXPERT_PROMPTS = {\n\
+    \    \"evidence_reexamination\": \"\"\"You are a senior forensic analyst reviewing cold case evidence from {case_name}.\n\
+    \    \nKey evidence items to re-examine:\n- Physical evidence: {physical_evidence_list}\n- Digital evidence: {digital_evidence_list}\n\
+    - Forensic reports: {forensic_reports}\n- Chain of custody gaps: {custody_gaps}\n\nApply modern forensic techniques to\
+    \ identify:\n1. New testing opportunities (DNA, trace, chemical)\n2. Previously overlooked evidence\n3. Contamination\
+    \ or degradation issues\n4. Advanced analysis possibilities (isotope, pollen, etc.)\n\nReturn a structured analysis with\
+    \ actionable recommendations.\"\"\",\n\n    \"witness_reinterview_strategy\": \"\"\"Design a re-interview strategy for\
+    \ witnesses in cold case {case_id}.\n    \nWitness details:\n- Original statements: {original_statements}\n- Time elapsed:\
+    \ {years_elapsed} years\n- Memory factors: {memory_factors}\n- Current contact status: {contact_status}\n\nDevelop:\n\
+    1. Cognitive interview techniques appropriate for time elapsed\n2. Memory refresh protocols\n3. Trauma-informed approaches\n\
+    4. Documentation strategies\n5. Follow-up verification methods\n\nConsider memory decay, suggestibility, and potential\
+    \ contamination.\"\"\",\n\n    \"dna_genealogy_matching\": \"\"\"Perform genealogical DNA analysis for cold case {case_name}.\n\
+    \    \nDNA profile details:\n- CODIS markers: {codis_markers}\n- SNP data: {snp_data}\n- Partial profiles: {partial_profiles}\n\
+    - Degradation level: {degradation_level}\n\nGenealogy database access:\n- GEDmatch: {gedmatch_access}\n- FamilyTreeDNA:\
+    \ {ftdna_access}\n- Ancestry: {ancestry_access}\n\nGenerate:\n1. Potential relative matches\n2. Family tree reconstruction\n\
+    3. Common ancestor identification\n4. Investigative leads prioritization\n5. Privacy and legal considerations\"\"\",\n\
+    \n    \"digital_forensics_historical\": \"\"\"Analyze historical digital evidence from {evidence_source}.\n    \nEvidence\
+    \ types:\n- Hard drives: {drive_list}\n- Mobile devices: {device_list}\n- Cloud data: {cloud_sources}\n- Internet activity:\
+    \ {internet_records}\n- Metadata: {metadata_info}\n\nApply:\n1. Data carving for deleted files\n2. Timeline reconstruction\
+    \ from logs\n3. Cross-reference with historical IP/domain data\n4. Social media archive analysis\n5. Email header analysis\n\
+    6. Cryptocurrency transaction tracing\n\nAccount for technology changes and data format evolution.\"\"\",\n\n    \"timeline_reconstruction\"\
+    : \"\"\"Reconstruct the complete timeline for cold case {case_id}.\n    \nAvailable data:\n- Incident date: {incident_date}\n\
+    - Witness statements: {statements}\n- Phone records: {phone_records}\n- Financial transactions: {financial_data}\n- Travel\
+    \ records: {travel_logs}\n- Digital timestamps: {digital_evidence}\n\nCreate:\n1. Minute-by-minute timeline where possible\n\
+    2. Gap identification\n3. Alibi verification points\n4. Opportunity windows\n5. Contradiction highlights\n6. Visual timeline\
+    \ representation\"\"\",\n\n    \"cross_case_pattern_analysis\": \"\"\"Analyze patterns across {case_count} cold cases\
+    \ in {jurisdiction}.\n    \nCase characteristics:\n- Victim demographics: {victim_data}\n- Crime scene similarities: {scene_patterns}\n\
+    - M.O. elements: {modus_operandi}\n- Geographic clusters: {locations}\n- Time patterns: {temporal_patterns}\n- Evidence\
+    \ types: {evidence_types}\n\nIdentify:\n1. Potential serial connections\n2. Geographic profiling opportunities\n3. Victimology\
+    \ patterns\n4. Signature behaviors\n5. Linkage analysis\n6. Task force recommendations\"\"\",\n\n    \"case_priority_scoring\"\
+    : \"\"\"Calculate priority scores for cold case {case_id}.\n    \nScoring factors:\n- Solvability factors: {solvability_factors}\n\
+    - Family advocacy: {family_pressure}\n- Public interest: {media_attention}\n- Resource requirements: {resource_estimate}\n\
+    - DNA evidence potential: {dna_potential}\n- Witness availability: {witness_status}\n\nWeight and calculate:\n1. Overall\
+    \ priority score (0-100)\n2. Resource allocation recommendation\n3. Timeline for next review\n4. Success probability estimate\"\
+    \"\",\n\n    \"lead_generation\": \"\"\"Generate investigative leads for cold case {case_name}.\n    \nCurrent status:\n\
+    - Active leads: {current_leads}\n- Dead ends: {investigated_leads}\n- New evidence: {recent_discoveries}\n- Technology\
+    \ advances: {new_techniques}\n\nCreate:\n1. Fresh lead list with priority ranking\n2. Investigative steps for each lead\n\
+    3. Resource requirements\n4. Timeline estimates\n5. Success metrics\n6. Contingency plans\"\"\"\n}\n\nINTEGRATION_POINTS\
+    \ = {\n    \"ncic_database\": {\n        \"type\": \"database\",\n        \"endpoint\": \"https://api.ncic.gov/v2/query\"\
+    ,\n        \"description\": \"National Crime Information Center database access for criminal history and missing persons\"\
+    ,\n        \"auth_method\": \"certificate\",\n        \"documentation_url\": \"https://ncic.gov/api-docs\"\n    },\n \
+    \   \"codis_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://codis.fbi.gov/api/v1/profiles\",\n \
+    \       \"description\": \"Combined DNA Index System for DNA profile matching\",\n        \"auth_method\": \"oauth2\"\
+    ,\n        \"documentation_url\": \"https://fbi.gov/codis-api\"\n    },\n    \"gedmatch_pro\": {\n        \"type\": \"\
+    api\",\n        \"endpoint\": \"https://api.gedmatch.com/v1\",\n        \"description\": \"GEDmatch Pro API for genealogical\
+    \ DNA matching\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://gedmatch.com/api-docs\"\
+    \n    },\n    \"wayback_machine\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://archive.org/wayback/available\"\
+    ,\n        \"description\": \"Internet Archive Wayback Machine for historical web data\",\n        \"auth_method\": \"\
+    none\",\n        \"documentation_url\": \"https://archive.org/help/wayback_api.php\"\n    },\n    \"revvel_evidence_db\"\
+    : {\n        \"type\": \"database\",\n        \"endpoint\": \"postgresql://revvel-db:5432/evidence\",\n        \"description\"\
+    : \"Internal evidence management database\",\n        \"auth_method\": \"service_account\",\n        \"documentation_url\"\
+    : \"internal://docs.evidence-db\"\n    },\n    \"forensic_lab_api\": {\n        \"type\": \"api\",\n        \"endpoint\"\
+    : \"https://lab-api.forensics.gov/v2\",\n        \"description\": \"National forensic laboratory services API\",\n   \
+    \     \"auth_method\": \"jwt\",\n        \"documentation_url\": \"https://forensics.gov/api\"\n    }\n}\n\ndef validate_case_id(case_id:\
+    \ str) -> bool:\n    \"\"\"Validate cold case ID format.\"\"\"\n    pattern = r'^CC-\\d{4}-\\d{6}$'\n    return bool(re.match(pattern,\
+    \ case_id))\n\ndef parse_date_flexible(date_str: str) -> Optional[datetime]:\n    \"\"\"Parse various date formats commonly\
+    \ found in case files.\"\"\"\n    formats = [\n        '%Y-%m-%d', '%m/%d/%Y', '%d-%b-%Y', '%Y%m%d',\n        '%B %d,\
+    \ %Y', '%d %B %Y', '%Y-%m-%d %H:%M:%S'\n    ]\n    for fmt in formats:\n        try:\n            return datetime.strptime(date_str.strip(),\
+    \ fmt)\n        except ValueError:\n            continue\n    return None\n\ndef calculate_evidence_degradation_score(evidence_date:\
+    \ datetime, evidence_type: str) -> float:\n    \"\"\"Calculate degradation score (0-1) for evidence based on type and\
+    \ age.\"\"\"\n    age_days = (datetime.now() - evidence_date).days\n    \n    degradation_rates = {\n        'dna_blood':\
+    \ 0.0001,\n        'dna_other': 0.0002,\n        'fingerprints': 0.00005,\n        'fibers': 0.0003,\n        'bullets':\
+    \ 0.00001,\n        'digital': 0.000001,\n        'documents': 0.00002\n    }\n    \n    rate = degradation_rates.get(evidence_type.lower(),\
+    \ 0.0001)\n    degradation = 1 - (age_days * rate)\n    return max(0, min(1, degradation))\n\ndef extract_phone_numbers(text:\
+    \ str) -> List[str]:\n    \"\"\"Extract phone numbers from text using multiple patterns.\"\"\"\n    patterns = [\n   \
+    \     r'\\(?\\d{3}\\)?[-.\\s]?\\d{3}[-.\\s]?\\d{4}',\n        r'\\d{3}-\\d{3}-\\d{4}',\n        r'\\(\\d{3}\\)\\s?\\d{3}-\\\
+    d{4}',\n        r'\\d{10}'\n    ]\n    \n    phones = []\n    for pattern in patterns:\n        matches = re.findall(pattern,\
+    \ text)\n        phones.extend(matches)\n    \n    return list(set(phones))\n\ndef generate_timeline_from_events(events:\
+    \ List[Dict[str, Any]]) -> List[Dict[str, Any]]:\n    \"\"\"Generate chronological timeline from event data.\"\"\"\n \
+    \   timeline = []\n    \n    for event in events:\n        event_date = parse_date_flexible(event.get('date', ''))\n \
+    \       if event_date:\n            timeline.append({\n                'timestamp': event_date,\n                'event_type':\
+    \ event.get('type', 'unknown'),\n                'description': event.get('description', ''),\n                'source':\
+    \ event.get('source', ''),\n                'confidence': event.get('confidence', 1.0)\n            })\n    \n    return\
+    \ sorted(timeline, key=lambda x: x['timestamp'])\n\ndef calculate_geographic_distance(lat1: float, lon1: float, lat2:\
+    \ float, lon2: float) -> float:\n    \"\"\"Calculate distance between two geographic coordinates in miles.\"\"\"\n   \
+    \ R = 3959  # Earth's radius in miles\n    \n    lat1_rad, lon1_rad = math.radians(lat1), math.radians(lon1)\n    lat2_rad,\
+    \ lon2_rad = math.radians(lat2), math.radians(lon2)\n    \n    dlat = lat2_rad - lat1_rad\n    dlon = lon2_rad - lon1_rad\n\
+    \    \n    a = math.sin(dlat/2)**2 + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(dlon/2)**2\n    c = 2 * math.atan2(math.sqrt(a),\
+    \ math.sqrt(1-a))\n    \n    return R * c\n\ndef analyze_victimology_patterns(victims: List[Dict[str, Any]]) -> Dict[str,\
+    \ Any]:\n    \"\"\"Analyze patterns in victim demographics and characteristics.\"\"\"\n    if not victims:\n        return\
+    \ {}\n    \n    patterns = {\n        'age_distribution': [],\n        'gender_distribution': Counter(),\n        'occupation_patterns':\
+    \ Counter(),\n        'location_clusters': [],\n        'time_patterns': Counter()\n    }\n    \n    for victim in victims:\n\
+    \        patterns['age_distribution'].append(victim.get('age', 0))\n        patterns['gender_distribution'][victim.get('gender',\
+    \ 'unknown')] += 1\n        patterns['occupation_patterns'][victim.get('occupation', 'unknown')] += 1\n        \n    \
+    \    if 'location' in victim:\n            patterns['location_clusters'].append(victim['location'])\n        \n      \
+    \  incident_date = parse_date_flexible(victim.get('incident_date', ''))\n        if incident_date:\n            patterns['time_patterns'][incident_date.strftime('%Y-%m')]\
+    \ += 1\n    \n    patterns['age_stats'] = {\n        'mean': statistics.mean(patterns['age_distribution']) if patterns['age_distribution']\
+    \ else 0,\n        'median': statistics.median(patterns['age_distribution']) if patterns['age_distribution'] else 0,\n\
+    \        'std': statistics.stdev(patterns['age_distribution']) if len(patterns['age_distribution']) > 1 else 0\n    }\n\
+    \    \n    return patterns\n\ndef build_investigative_query(filters: Dict[str, Any]) -> str:\n    \"\"\"Build SQL query\
+    \ for cold case database search.\"\"\"\n    base_query = \"SELECT * FROM cold_cases WHERE 1=1\"\n    params = []\n   \
+    \ \n    if filters.get('case_id'):\n        base_query += \" AND case_id = %s\"\n        params.append(filters['case_id'])\n\
+    \    \n    if filters.get('date_from'):\n        base_query += \" AND incident_date >= %s\"\n        params.append(filters['date_from'])\n\
+    \    \n    if filters.get('date_to'):\n        base_query += \" AND incident_date <= %s\"\n        params.append(filters['date_to'])\n\
+    \    \n    if filters.get('location'):\n        base_query += \" AND location ILIKE %s\"\n        params.append(f\"%{filters['location']}%\"\
+    )\n    \n    if filters.get('evidence_type'):\n        base_query += \" AND evidence_types @> ARRAY[%s]\"\n        params.append(filters['evidence_type'])\n\
+    \    \n    if filters.get('unsolved_only', True):\n        base_query += \" AND status = 'unsolved'\"\n    \n    return\
+    \ base_query, params\n\ndef generate_forensic_report(case_data: Dict[str, Any]) -> str:\n    \"\"\"Generate comprehensive\
+    \ forensic analysis report.\"\"\"\n    report = []\n    report.append(\"=\" * 60)\n    report.append(f\"COLD CASE FORENSIC\
+    \ ANALYSIS REPORT\")\n    report.append(f\"Case ID: {case_data.get('case_id', 'UNKNOWN')}\")\n    report.append(f\"Analysis\
+    \ Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\")\n    report.append(\"=\" * 60)\n    \n    if 'evidence_summary'\
+    \ in case_data:\n        report.append(\"\\nEVIDENCE SUMMARY:\")\n        for evidence in case_data['evidence_summary']:\n\
+    \            report.append(f\"- {evidence['type']}: {evidence['status']}\")\n    \n    if 'dna_analysis' in case_data:\n\
+    \        report.append(\"\\nDNA ANALYSIS:\")\n        report.append(f\"- Profile completeness: {case_data['dna_analysis'].get('completeness',\
+    \ 'N/A')}\")\n        report.append(f\"- Degradation score: {case_data['dna_analysis'].get('degradation', 'N/A')}\")\n\
+    \    \n    if 'timeline' in case_data:\n        report.append(\"\\nTIMELINE RECONSTRUCTION:\")\n        for event in case_data['timeline'][:5]:\
+    \  # Top 5 events\n            report.append(f\"- {event['timestamp']}: {event['description']}\")\n    \n    if 'leads'\
+    \ in case_data:\n        report.append(\"\\nINVESTIGATIVE LEADS:\")\n        for lead in case_data['leads']:\n       \
+    \     report.append(f\"- Priority {lead.get('priority', 'N/A')}: {lead.get('description', '')}\")\n    \n    return \"\
+    \\n\".join(report)\n\ndef hash_evidence_file(file_path: str) -> str:\n    \"\"\"Generate SHA-256 hash for evidence file\
+    \ integrity.\"\"\"\n    hasher = hashlib.sha256()\n    with open(file_path, 'rb') as f:\n        for chunk in iter(lambda:\
+    \ f.read(4096), b\"\"):\n            hasher.update(chunk)\n    return hasher.hexdigest()\n\nclass SkillEngine:\n    def\
+    \ __init__(self, config: Dict[str, Any]):\n        self.config = config\n        self.logger = logging.getLogger(__name__)\n\
+    \        self.logger.setLevel(config.get('log_level', 'INFO'))\n        \n    def evidence_reexamination(self, case_data:\
+    \ Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Re-examine evidence with modern techniques.\"\"\"\n        results\
+    \ = {\n            'case_id': case_data.get('case_id'),\n            'evidence_items': [],\n            'new_techniques':\
+    \ [],\n            'recommendations': []\n        }\n        \n        for evidence in case_data.get('evidence', []):\n\
+    \            degradation_score = calculate_evidence_degradation_score(\n                parse_date_flexible(evidence.get('date_collected',\
+    \ '')),\n                evidence.get('type', 'unknown')\n            )\n            \n            results['evidence_items'].append({\n\
+    \                'id': evidence.get('id'),\n                'type': evidence.get('type'),\n                'degradation_score':\
+    \ degradation_score,\n                'testable': degradation_score > 0.3\n            })\n            \n            if\
+    \ degradation_score > 0.7:\n                results['new_techniques'].append({\n                    'evidence_id': evidence.get('id'),\n\
+    \                    'techniques': ['touch_dna', 'mps_sequencing', 'isotope_analysis']\n                })\n        \n\
+    \        return results\n    \n    def witness_reinterview_strategy(self, witness_data: Dict[str, Any]) -> Dict[str, Any]:\n\
+    \        \"\"\"Generate re-interview strategy for witnesses.\"\"\"\n        years_elapsed = (datetime.now() - parse_date_flexible(witness_data.get('original_date',\
+    \ ''))).days / 365.25\n        \n        strategy = {\n            'witness_id': witness_data.get('witness_id'),\n   \
+    \         'years_elapsed': round(years_elapsed, 1),\n            'memory_risk_factors': [],\n            'interview_techniques':\
+    \ [],\n            'documentation_requirements': []\n        }\n        \n        if years_elapsed > 10:\n           \
+    \ strategy['memory_risk_factors'].extend(['high_decay', 'suggestibility', 'confabulation'])\n            strategy['interview_techniques'].extend(['cognitive_interview',\
+    \ 'timeline_method', 'context_reinstatement'])\n        \n        if witness_data.get('trauma_indicated', False):\n  \
+    \          strategy['interview_techniques'].append('trauma_informed_approach')\n        \n        strategy['documentation_requirements']\
+    \ = [\n            'video_recording',\n            'transcription',\n            'memory_confidence_ratings',\n      \
+    \      'third_party_verification'\n        ]\n        \n        return strategy\n    \n    def dna_genealogy_matching(self,\
+    \ dna_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Perform DNA genealogy analysis.\"\"\"\n        results =\
+    \ {\n            'profile_id': dna_data.get('profile_id'),\n            'matches': [],\n            'confidence_scores':\
+    \ [],\n            'investigative_leads': []\n        }\n        \n        # Simulate genealogy matching\n        if dna_data.get('snps_count',\
+    \ 0) > 100000:\n            results['matches'] = [\n                {'relative': '3rd_cousin', 'shared_cm': 87, 'confidence':\
+    \ 0.95},\n                {'relative': '4th_cousin', 'shared_cm': 45, 'confidence': 0.78}\n            ]\n        \n \
+    \       for match in results['matches']:\n            if match['confidence'] > 0.8:\n                results['investigative_leads'].append({\n\
+    \                    'type': 'genealogy_match',\n                    'priority': 'high',\n                    'description':\
+    \ f\"High-confidence {match['relative']} match\"\n                })\n        \n        return results\n    \n    def\
+    \ timeline_reconstruction(self, case_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Reconstruct detailed timeline\
+    \ from case data.\"\"\"\n        events = case_data.get('events', [])\n        timeline = generate_timeline_from_events(events)\n\
+    \        \n        gaps = []\n        for i in range(1, len(timeline)):\n            gap_hours = (timeline[i]['timestamp']\
+    \ - timeline[i-1]['timestamp']).total_seconds() / 3600\n            if gap_hours > 24:\n                gaps.append({\n\
+    \                    'start': timeline[i-1]['timestamp'],\n                    'end': timeline[i]['timestamp'],\n    \
+    \                'duration_hours': gap_hours\n                })\n        \n        return {\n            'timeline':\
+    \ timeline,\n            'gaps': gaps,\n            'confidence_score': statistics.mean([e['confidence'] for e in timeline])\
+    \ if timeline else 0\n        }\n    \n    def cross_case_pattern_analysis(self, cases: List[Dict[str, Any]]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Analyze patterns across multiple cold cases.\"\"\"\n        patterns = {\n            'geographic_clusters':\
+    \ [],\n            'temporal_patterns': [],\n            'victimology_patterns': analyze_victimology_patterns(\n     \
+    \           [c.get('victim', {}) for c in cases]\n            ),\n            'potential_links': []\n        }\n     \
+    \   \n        # Geographic clustering\n        locations = [(c.get('lat'), c.get('lon')) for c in cases if c.get('lat')\
+    \ and c.get('lon')]\n        for i, (lat1, lon1) in enumerate(locations):\n            for j, (lat2, lon2) in enumerate(locations[i+1:],\
+    \ i+1):\n                distance = calculate_geographic_distance(lat1, lon1, lat2, lon2)\n                if distance\
+    \ < 5:  # 5 miles\n                    patterns['geographic_clusters'].append({\n                        'case1': cases[i]['case_id'],\n\
+    \                        'case2': cases[j]['case_id'],\n                        'distance_miles': round(distance, 2)\n\
+    \                    })\n        \n        return patterns\n    \n    def case_priority_scoring(self, case_data: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Calculate priority score for cold case.\"\"\"\n        score = 0\n        \n\
+    \        # DNA evidence potential (0-30 points)\n        dna_potential = case_data.get('dna_potential', 0)\n        score\
+    \ += min(dna_potential * 30, 30)\n        \n        # Witness availability (0-25 points)\n        witness_count = len(case_data.get('available_witnesses',\
+    \ []))\n        score += min(witness_count * 5, 25)\n        \n        # Evidence quality (0-20 points)\n        evidence_score\
+    \ = case_data.get('evidence_quality', 0)\n        score += evidence_score * 20\n        \n        # Family advocacy (0-15\
+    \ points)\n        family_pressure = case_data.get('family_advocacy', 0)\n        score += family_pressure * 15\n    \
+    \    \n        # Public interest (0-10 points)\n        media_attention = case_data.get('media_attention', 0)\n      \
+    \  score += media_attention * 10\n        \n        return {\n            'case_id': case_data.get('case_id'),\n     \
+    \       'priority_score': round(score, 1),\n            'tier': 'high' if score > 75 else 'medium' if score > 50 else\
+    \ 'low',\n            'next_review_days': max(30, int(365 - score * 3))\n        }\n    \n    def run(self, capability:\
+    \ str, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Dispatch to appropriate capability handler.\"\"\"\n   \
+    \     handlers = {\n            'evidence_reexamination': self.evidence_reexamination,\n            'witness_reinterview_strategy':\
+    \ self.witness_reinterview_strategy,\n            'dna_genealogy_matching': self.dna_genealogy_matching,\n           \
+    \ 'timeline_reconstruction': self.timeline_reconstruction,\n            'cross_case_pattern_analysis': self.cross_case_pattern_analysis,\n\
+    \            'case_priority_scoring': self.case_priority_scoring\n        }\n        \n        if capability not in handlers:\n\
+    \            raise ValueError(f\"Unknown capability: {capability}\")\n        \n        try:\n            return handlers[capability](data)\n\
+    \        except Exception as e:\n            self.logger.error(f\"Error in {capability}: {str(e)}\")\n            raise\n\
+    \nclass TestColdCaseAnalysis(unittest.TestCase):\n    def setUp(self):\n        self.engine = SkillEngine({'log_level':\
+    \ 'DEBUG'})\n    \n    def test_skill_metadata(self):\n        self.assertEqual(SKILL_METADATA['name'], 'Cold Case Analysis')\n\
+    \        self.assertIn('evidence_reexamination', SKILL_METADATA['capabilities'])\n        self.assertEqual(SKILL_METADATA['version'],\
+    \ '1.0.0')\n    \n    def test_validate_case_id(self):\n        self.assertTrue(validate_case_id('CC-2024-000001'))\n\
+    \        self.assertFalse(validate_case_id('INVALID-ID'))\n        self.assertFalse(validate_case_id('CC-24-1'))\n   \
+    \ \n    def test_parse_date_flexible(self):\n        self.assertEqual(parse_date_flexible('2024-01-15').year, 2024)\n\
+    \        self.assertEqual(parse_date_flexible('01/15/2024').month, 1)\n        self.assertIsNone(parse_date_flexible('invalid-date'))\n\
+    \    \n    def test_calculate_evidence_degradation_score(self):\n        old_date = datetime.now() - timedelta(days=365*10)\n\
+    \        score = calculate_evidence_degradation_score(old_date, 'dna_blood')\n        self.assertTrue(0 < score < 1)\n\
+    \        \n        recent_date = datetime.now() - timedelta(days=30)\n        score = calculate_evidence_degradation_score(recent_date,\
+    \ 'digital')\n        self.assertAlmostEqual(score, 1.0, places=2)\n    \n    def test_extract_phone_numbers(self):\n\
+    \        text = \"Call 555-123-4567 or (555) 987-6543\"\n        phones = extract_phone_numbers(text)\n        self.assertEqual(len(phones),\
+    \ 2)\n        self.assertIn('555-123-4567', phones)\n    \n    def test_geographic_distance(self):\n        distance =\
+    \ calculate_geographic_distance(40.7128, -74.0060, 34.0522, -118.2437)\n        self.assertAlmostEqual(distance, 2445,\
+    \ delta=50)\n    \n    def test_timeline_reconstruction(self):\n        events = [\n            {'date': '2024-01-01',\
+    \ 'type': 'incident', 'description': 'Crime occurred'},\n            {'date': '2024-01-02', 'type': 'discovery', 'description':\
+    \ 'Body found'}\n        ]\n        timeline = generate_timeline_from_events(events)\n        self.assertEqual(len(timeline),\
+    \ 2)\n        self.assertEqual(timeline[0]['event_type'], 'incident')\n    \n    def test_evidence_reexamination(self):\n\
+    \        case_data = {\n            'case_id': 'CC-2024-000001',\n            'evidence': [\n                {'id': 'E001',\
+    \ 'type': 'dna_blood', 'date_collected': '2014-01-01'},\n                {'id': 'E002', 'type': 'digital', 'date_collected':\
+    \ '2024-01-01'}\n            ]\n        }\n        result = self.engine.evidence_reexamination(case_data)\n        self.assertEqual(len(result['evidence_items']),\
+    \ 2)\n        self.assertTrue(result['evidence_items'][0]['degradation_score'] < result['evidence_items'][1]['degradation_score'])\n\
+    \    \n    def test_case_priority_scoring(self):\n        case_data = {\n            'case_id': 'CC-2024-000001',\n  \
+    \          'dna_potential': 0.8,\n            'available_witnesses': ['W1', 'W2', 'W3'],\n            'evidence_quality':\
+    \ 0.9,\n            'family_advocacy': 1,\n            'media_attention': 0.5\n        }\n        result = self.engine.case_priority_scoring(case_data)\n\
+    \        self.assertEqual(result['case_id'], 'CC-2024-000001')\n        self.assertTrue(result['priority_score'] > 50)\n\
+    \        self.assertIn('tier', result)\n    \n    def test_cross_case_pattern_analysis(self):\n        cases = [\n   \
+    \         {'case_id': 'CC-001', 'victim': {'age': 25, 'gender': 'F'}, 'lat': 40.7, 'lon': -74.0},\n            {'case_id':\
+    \ 'CC-002', 'victim': {'age': 30, 'gender': 'F'}, 'lat': 40.8, 'lon': -74.1}\n        ]\n        result = self.engine.cross_case_pattern_analysis(cases)\n\
+    \        self.assertIn('geographic_clusters', result)\n        self.assertIn('victimology_patterns', result)\n       \
+    \ self.assertEqual(len(result['geographic_clusters']), 1)\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Cold Case Analysis skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''cold_case_analysis'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

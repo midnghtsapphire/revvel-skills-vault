@@ -1,0 +1,55 @@
+name: slacks
+title: Shield
+version: 1.0.1
+description: Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning
+  items in Slack channels or DMs.
+metadata:
+  author: zaycv
+  category: Communication
+  tags:
+  - communication
+  - slacks
+  source: clawhub-community
+  clawhub_slug: shield
+  clawhub_path: zaycv/shield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Shield
+
+    # Source: ClawHub community skill by zaycv
+
+    # Install: clawhub install shield
+
+    # Path: zaycv/shield
+
+
+    ## Description
+
+    Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning
+    items in Slack channels or DMs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install shield
+
+    ```'
+examples:
+- description: Install Shield from ClawHub
+  usage: clawhub install shield
+schema_version: '1.0'

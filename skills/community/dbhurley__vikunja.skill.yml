@@ -1,0 +1,57 @@
+name: vikunja
+title: Vikunja Public
+version: 1.0.0
+description: Manage projects and tasks in Vikunja, an open-source project management tool. Create projects, tasks, set due
+  dates, priorities, and track completion.
+metadata:
+  author: dbhurley
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - vikunja
+  source: clawhub-community
+  clawhub_slug: vikunja
+  clawhub_path: dbhurley/vikunja
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vikunja Public
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install vikunja
+
+    # Path: dbhurley/vikunja
+
+
+    ## Description
+
+    Manage projects and tasks in Vikunja, an open-source project management tool. Create projects, tasks, set due dates, priorities,
+    and track completion.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/vikunja.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vikunja
+
+    ```'
+examples:
+- description: Install Vikunja Public from ClawHub
+  usage: clawhub install vikunja
+schema_version: '1.0'

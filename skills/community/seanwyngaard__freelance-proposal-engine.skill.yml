@@ -1,0 +1,76 @@
+name: freelance-proposal-engine
+title: Freelance Proposal Engine
+version: 1.0.0
+description: Generate tailored freelance proposals for Upwork, Fiverr, Freelancer, and PeoplePerHour job listings. Use when
+  writing proposals, bidding on gigs, or responding to client job posts.
+metadata:
+  author: seanwyngaard
+  category: General
+  tags:
+  - general
+  - freelance
+  - proposal
+  - engine
+  - read
+  - write
+  - grep
+  - glob
+  - bash
+  - webfetch
+  - websearch
+  source: clawhub-community
+  clawhub_slug: freelance-proposal-engine
+  clawhub_path: seanwyngaard/freelance-proposal-engine
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Write
+  - Grep
+  - Glob
+  - Bash
+  - WebFetch
+  - WebSearch
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Freelance Proposal Engine
+
+    # Source: ClawHub community skill by seanwyngaard
+
+    # Install: clawhub install freelance-proposal-engine
+
+    # Path: seanwyngaard/freelance-proposal-engine
+
+
+    ## Description
+
+    Generate tailored freelance proposals for Upwork, Fiverr, Freelancer, and PeoplePerHour job listings. Use when writing
+    proposals, bidding on gigs, or responding to client job posts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Write, Grep, Glob, Bash, WebFetch, WebSearch
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install freelance-proposal-engine
+
+    ```'
+examples:
+- description: Install Freelance Proposal Engine from ClawHub
+  usage: clawhub install freelance-proposal-engine
+schema_version: '1.0'

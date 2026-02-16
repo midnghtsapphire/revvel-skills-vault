@@ -1,0 +1,54 @@
+name: ripgrep
+title: Ripgrep
+version: 1.0.0
+description: Blazingly fast text search tool - recursively searches directories for regex patterns with respect to gitignore
+  rules.
+metadata:
+  author: arnarsson
+  category: Search & Research
+  tags:
+  - search-research
+  - ripgrep
+  source: clawhub-community
+  clawhub_slug: ripgrep
+  clawhub_path: arnarsson/ripgrep
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ripgrep
+
+    # Source: ClawHub community skill by arnarsson
+
+    # Install: clawhub install ripgrep
+
+    # Path: arnarsson/ripgrep
+
+
+    ## Description
+
+    Blazingly fast text search tool - recursively searches directories for regex patterns with respect to gitignore rules.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ripgrep
+
+    ```'
+examples:
+- description: Install Ripgrep from ClawHub
+  usage: clawhub install ripgrep
+schema_version: '1.0'

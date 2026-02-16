@@ -1,0 +1,59 @@
+name: taskleef
+title: taskleef
+version: 1.0.1
+description: Use when managing todos, tasks, projects, or kanban boards via Taskleef.com. Supports adding, listing, completing,
+  deleting todos, organizing with projects, and managing kanban boards. Use when the user wants to track tasks, manage their
+  todo list, organize work by projects, or use kanban workflows.
+metadata:
+  author: xatter
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - taskleef
+  source: clawhub-community
+  clawhub_slug: taskleef
+  clawhub_path: xatter/taskleef
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# taskleef
+
+    # Source: ClawHub community skill by xatter
+
+    # Install: clawhub install taskleef
+
+    # Path: xatter/taskleef
+
+
+    ## Description
+
+    Use when managing todos, tasks, projects, or kanban boards via Taskleef.com. Supports adding, listing, completing, deleting
+    todos, organizing with projects, and managing kanban boards. Use when the user wants to track tasks, manage their todo
+    list, organize work by projects, or use kanban workflows.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install taskleef
+
+    ```'
+examples:
+- description: Install taskleef from ClawHub
+  usage: clawhub install taskleef
+schema_version: '1.0'

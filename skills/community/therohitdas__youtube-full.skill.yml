@@ -1,0 +1,60 @@
+name: youtube-full
+title: Youtube Full
+version: 1.4.1
+description: Complete YouTube toolkit — transcripts, search, channels, playlists, and metadata all in one skill. Use when
+  you need comprehensive YouTube access, want to search and then get transcripts, browse channel content, work with playlists,
+  or need the full suite of YouTube data endpoints. The all-in-one Y
+metadata:
+  author: therohitdas
+  category: Search & Research
+  tags:
+  - search-research
+  - youtube
+  - full
+  source: clawhub-community
+  clawhub_slug: youtube-full
+  clawhub_path: therohitdas/youtube-full
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Youtube Full
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install youtube-full
+
+    # Path: therohitdas/youtube-full
+
+
+    ## Description
+
+    Complete YouTube toolkit — transcripts, search, channels, playlists, and metadata all in one skill. Use when you need
+    comprehensive YouTube access, want to search and then get transcripts, browse channel content, work with playlists, or
+    need the full suite of YouTube data endpoints. The all-in-one Y
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tapi-auth.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-full
+
+    ```'
+examples:
+- description: Install Youtube Full from ClawHub
+  usage: clawhub install youtube-full
+schema_version: '1.0'

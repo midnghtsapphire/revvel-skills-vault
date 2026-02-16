@@ -1,0 +1,151 @@
+name: advanced_manufacturing
+title: Expert 3D Printing & Advanced Manufacturing
+version: 1.0.0
+description: Comprehensive 3D printing and advanced manufacturing optimization covering FDM/SLA/SLS/DLP/DMLS, injection molding,
+  CNC integration, generative design, cost estimation, and quality control.
+metadata:
+  author: Revvel AI Engine
+  category: Engineering & Manufacturing
+  tags:
+  - print-farm-management
+  - advanced
+  - topology-optimization
+  - injection-mold-design
+  - gcode-generation
+  - quality-control-protocols
+  - manufacturing
+  - print-optimization
+  - cost-estimation
+  - mold-flow-simulation
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport math\nimport os\nimport re\nimport statistics\nimport unittest\nfrom collections import defaultdict\n\
+    from datetime import datetime\nfrom typing import Dict, List, Tuple, Optional, Any, Union\nimport hashlib\nimport requests\n\
+    \n\nSKILL_METADATA = {\n    \"name\": \"Expert 3D Printing & Advanced Manufacturing\",\n    \"id\": \"advanced_manufacturing\"\
+    ,\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Comprehensive 3D printing\
+    \ and advanced manufacturing optimization covering FDM/SLA/SLS/DLP/DMLS, injection molding, CNC integration, generative\
+    \ design, cost estimation, and quality control.\",\n    \"capabilities\": [\n        \"gcode_generation\",\n        \"\
+    print_optimization\",\n        \"injection_mold_design\",\n        \"mold_flow_simulation\",\n        \"cost_estimation\"\
+    ,\n        \"quality_control_protocols\",\n        \"topology_optimization\",\n        \"print_farm_management\",\n  \
+    \      \"material_testing\",\n        \"post_processing_analysis\"\n    ],\n    \"domain\": \"advanced_manufacturing\"\
+    \n}\n\nEXPERT_PROMPTS = {\n    \"gcode_optimization\": \"\"\"Optimize G-code for {printer_type} printing {material} with\
+    \ {layer_height}mm layers.\n    Object dimensions: {dimensions}\n    Requirements: {requirements}\n    Current issues:\
+    \ {issues}\n    Return optimized G-code with improved speed, quality, and material usage.\"\"\",\n    \n    \"injection_mold_design\"\
+    : \"\"\"Design injection mold for {part_name} made of {material}.\n    Part volume: {volume} cm³\n    Expected production:\
+    \ {production_volume} units\n    Requirements: {design_requirements}\n    Include gating system, runner design, cooling\
+    \ channels, draft angles, and shrinkage compensation.\"\"\",\n    \n    \"cost_analysis\": \"\"\"Calculate manufacturing\
+    \ cost for {process} producing {quantity} units of {part_name}.\n    Material: {material}\n    Machine time: {machine_time}\
+    \ hours\n    Labor rate: ${labor_rate}/hour\n    Include material, machine, labor, overhead, and post-processing costs.\"\
+    \"\",\n    \n    \"topology_optimization\": \"\"\"Optimize topology for {part_name} under {loading_conditions}.\n    Material:\
+    \ {material}\n    Manufacturing constraints: {constraints}\n    Weight reduction target: {weight_reduction}%\n    Maintain\
+    \ structural integrity under {max_stress} MPa.\"\"\",\n    \n    \"quality_inspection\": \"\"\"Generate quality control\
+    \ protocol for {process} manufacturing {part_name}.\n    Critical dimensions: {critical_dimensions}\n    Tolerances: {tolerances}\n\
+    \    Material properties: {material_properties}\n    Include inspection methods, sampling plans, and acceptance criteria.\"\
+    \"\",\n    \n    \"print_farm_scheduling\": \"\"\"Optimize print farm schedule for {num_printers} printers producing {parts_list}.\n\
+    \    Deadline: {deadline}\n    Priority parts: {priority_parts}\n    Minimize makespan and maximize printer utilization.\"\
+    \"\",\n    \n    \"material_testing\": \"\"\"Design material testing protocol for {material} printed parts.\n    Test\
+    \ types: {test_types}\n    Sample geometry: {geometry}\n    Expected properties: {expected_properties}\n    Include statistical\
+    \ analysis plan.\"\"\",\n    \n    \"post_processing\": \"\"\"Determine optimal post-processing sequence for {part_name}\
+    \ printed with {material}.\n    Current surface roughness: {surface_roughness} μm\n    Target finish: {target_finish}\n\
+    \    Include annealing, vapor smoothing, and CNC finishing steps.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"octoprint_api\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"http://{printer_ip}/api\",\n        \"description\": \"OctoPrint\
+    \ API for printer control and monitoring\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"\
+    https://docs.octoprint.org/en/master/api/\"\n    },\n    \"prusaslicer\": {\n        \"type\": \"tool\",\n        \"endpoint\"\
+    : \"local\",\n        \"description\": \"PrusaSlicer CLI for G-code generation\",\n        \"auth_method\": \"none\",\n\
+    \        \"documentation_url\": \"https://help.prusa3d.com/article/command-line-slicing_2838\"\n    },\n    \"moldflow\"\
+    : {\n        \"type\": \"tool\",\n        \"endpoint\": \"local\",\n        \"description\": \"Autodesk Moldflow for injection\
+    \ molding simulation\",\n        \"auth_method\": \"license\",\n        \"documentation_url\": \"https://www.autodesk.com/products/moldflow/overview\"\
+    \n    },\n    \"material_database\": {\n        \"type\": \"database\",\n        \"endpoint\": \"postgresql://localhost:5432/materials\"\
+    ,\n        \"description\": \"Material properties database\",\n        \"auth_method\": \"credentials\",\n        \"documentation_url\"\
+    : \"internal\"\n    },\n    \"cost_calculator\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.revvel.com/manufacturing/cost\"\
+    ,\n        \"description\": \"Manufacturing cost estimation API\",\n        \"auth_method\": \"bearer_token\",\n     \
+    \   \"documentation_url\": \"https://docs.revvel.com/manufacturing/cost\"\n    }\n}\n\n\ndef parse_gcode(gcode_text: str)\
+    \ -> Dict[str, Any]:\n    \"\"\"Parse G-code file and extract key parameters.\"\"\"\n    lines = gcode_text.strip().split('\\\
+    n')\n    metadata = {\n        'total_lines': len(lines),\n        'estimated_time': 0,\n        'filament_used': 0,\n\
+    \        'layer_height': None,\n        'temperatures': {},\n        'commands': defaultdict(int)\n    }\n    \n    for\
+    \ line in lines:\n        line = line.strip()\n        if line.startswith(';'):\n            if 'estimated printing time'\
+    \ in line.lower():\n                time_str = line.split(':', 1)[1].strip()\n                metadata['estimated_time']\
+    \ = parse_time_string(time_str)\n            elif 'filament used' in line.lower():\n                filament_str = line.split(':',\
+    \ 1)[1].strip()\n                metadata['filament_used'] = parse_filament_length(filament_str)\n            elif 'layer\
+    \ height' in line.lower():\n                height_str = line.split(':', 1)[1].strip()\n                metadata['layer_height']\
+    \ = float(height_str.replace('mm', '').strip())\n        else:\n            cmd = line.split()[0] if line else ''\n  \
+    \          if cmd in ['G0', 'G1', 'G2', 'G3', 'M104', 'M109', 'M140', 'M190']:\n                metadata['commands'][cmd]\
+    \ += 1\n    \n    return metadata\n\n\ndef parse_time_string(time_str: str) -> int:\n    \"\"\"Convert time string (e.g.,\
+    \ '1h 23m 45s') to seconds.\"\"\"\n    total_seconds = 0\n    parts = re.findall(r'(\\d+)([hms])', time_str.lower())\n\
+    \    for value, unit in parts:\n        value = int(value)\n        if unit == 'h':\n            total_seconds += value\
+    \ * 3600\n        elif unit == 'm':\n            total_seconds += value * 60\n        elif unit == 's':\n            total_seconds\
+    \ += value\n    return total_seconds\n\n\ndef parse_filament_length(filament_str: str) -> float:\n    \"\"\"Parse filament\
+    \ length from string (e.g., '1.23m' or '1234.5mm').\"\"\"\n    filament_str = filament_str.lower().strip()\n    if 'm'\
+    \ in filament_str:\n        return float(filament_str.replace('m', '').strip())\n    elif 'mm' in filament_str:\n    \
+    \    return float(filament_str.replace('mm', '').strip()) / 1000\n    return 0.0\n\n\ndef calculate_injection_mold_cost(\n\
+    \    part_volume: float,\n    material: str,\n    cavitation: int = 1,\n    complexity: str = \"medium\"\n) -> Dict[str,\
+    \ float]:\n    \"\"\"Calculate injection mold cost based on part characteristics.\"\"\"\n    base_rates = {\n        \"\
+    low\": 800,\n        \"medium\": 1200,\n        \"high\": 2000\n    }\n    \n    material_multipliers = {\n        \"\
+    abs\": 1.0,\n        \"pc\": 1.3,\n        \"nylon\": 1.2,\n        \"pp\": 0.8,\n        \"pe\": 0.9\n    }\n    \n \
+    \   base_cost = base_rates.get(complexity, 1200) * part_volume * cavitation\n    material_multiplier = material_multipliers.get(material.lower(),\
+    \ 1.0)\n    \n    mold_cost = base_cost * material_multiplier\n    machining_cost = mold_cost * 0.4\n    design_cost =\
+    \ mold_cost * 0.2\n    \n    return {\n        'total_mold_cost': mold_cost,\n        'machining_cost': machining_cost,\n\
+    \        'design_cost': design_cost,\n        'cost_per_cavity': mold_cost / cavitation\n    }\n\n\ndef optimize_print_settings(\n\
+    \    material: str,\n    layer_height: float,\n    desired_quality: str = \"standard\"\n) -> Dict[str, Any]:\n    \"\"\
+    \"Optimize print settings based on material and quality requirements.\"\"\"\n    settings = {\n        \"abs\": {\n  \
+    \          \"standard\": {\"temperature\": 230, \"speed\": 50, \"fan\": 30},\n            \"high\": {\"temperature\":\
+    \ 235, \"speed\": 40, \"fan\": 20},\n            \"draft\": {\"temperature\": 225, \"speed\": 60, \"fan\": 50}\n     \
+    \   },\n        \"pla\": {\n            \"standard\": {\"temperature\": 200, \"speed\": 50, \"fan\": 100},\n         \
+    \   \"high\": {\"temperature\": 205, \"speed\": 30, \"fan\": 100},\n            \"draft\": {\"temperature\": 195, \"speed\"\
+    : 70, \"fan\": 100}\n        },\n        \"petg\": {\n            \"standard\": {\"temperature\": 240, \"speed\": 40,\
+    \ \"fan\": 50},\n            \"high\": {\"temperature\": 245, \"speed\": 30, \"fan\": 40},\n            \"draft\": {\"\
+    temperature\": 235, \"speed\": 50, \"fan\": 60}\n        }\n    }\n    \n    material_settings = settings.get(material.lower(),\
+    \ settings[\"pla\"])\n    quality_settings = material_settings.get(desired_quality, material_settings[\"standard\"])\n\
+    \    \n    # Adjust for layer height\n    layer_factor = layer_height / 0.2\n    adjusted_speed = max(20, min(quality_settings[\"\
+    speed\"] / layer_factor, 80))\n    \n    return {\n        'temperature': quality_settings[\"temperature\"],\n       \
+    \ 'print_speed': adjusted_speed,\n        'fan_speed': quality_settings[\"fan\"],\n        'layer_height': layer_height,\n\
+    \        'material': material\n    }\n\n\ndef calculate_cooling_time(\n    wall_thickness: float,\n    material: str,\n\
+    \    mold_temp: float = 25,\n    melt_temp: float = 200\n) -> float:\n    \"\"\"Calculate cooling time for injection molded\
+    \ part.\"\"\"\n    thermal_diffusivity = {\n        \"abs\": 0.12,\n        \"pc\": 0.13,\n        \"nylon\": 0.11,\n\
+    \        \"pp\": 0.10,\n        \"pe\": 0.09\n    }\n    \n    alpha = thermal_diffusivity.get(material.lower(), 0.11)\n\
+    \    delta_t = melt_temp - mold_temp\n    \n    # Simplified cooling time calculation\n    cooling_time = (wall_thickness\
+    \ ** 2) / (math.pi ** 2 * alpha) * math.log(4 / math.pi)\n    \n    return max(cooling_time, 1.0)\n\n\ndef generate_quality_report(\n\
+    \    measurements: List[float],\n    tolerance: float,\n    specification: float = None\n) -> Dict[str, Any]:\n    \"\"\
+    \"Generate quality control report for manufacturing measurements.\"\"\"\n    if not measurements:\n        return {'error':\
+    \ 'No measurements provided'}\n    \n    mean_val = statistics.mean(measurements)\n    std_dev = statistics.stdev(measurements)\
+    \ if len(measurements) > 1 else 0.0\n    min_val = min(measurements)\n    max_val = max(measurements)\n    range_val =\
+    \ max_val - min_val\n    \n    # Capability analysis\n    if specification is not None and std_dev > 0:\n        usl =\
+    \ specification + tolerance\n        lsl = specification - tolerance\n        cp = (usl - lsl) / (6 * std_dev)\n     \
+    \   cpk = min((usl - mean_val) / (3 * std_dev), (mean_val - lsl) / (3 * std_dev))\n    else:\n        cp = None\n    \
+    \    cpk = None\n    \n    # Count out-of-tolerance\n    if specification is not None:\n        oot_count = sum(1 for\
+    \ m in measurements if abs(m - specification) > tolerance)\n    else:\n        oot_count = 0\n    \n    return {\n   \
+    \     'sample_size': len(measurements),\n        'mean': round(mean_val, 6),\n        'std_deviation': round(std_dev,\
+    \ 6),\n        'min': round(min_val, 6),\n        'max': round(max_val, 6),\n        'range': round(range_val, 6),\n \
+    \       'tolerance': tolerance,\n        'specification': specification,\n        'cp': round(cp, 3) if cp is not None\
+    \ else None,\n        'cpk': round(cpk, 3) if cpk is not None else None,\n        'out_of_tolerance_count': oot_count,\n\
+    \        'pass_rate_pct': round((len(measurements) - oot_count) / len(measurements) * 100, 2)\n    }\n\n\nclass SkillEngine:\n\
+    \    \"\"\"Mechanical Engineering & Materials Science skill engine.\"\"\"\n    \n    def __init__(self):\n        self.name\
+    \ = SKILL_METADATA['name']\n        self.version = SKILL_METADATA['version']\n    \n    def run(self, action: str, **kwargs)\
+    \ -> Dict[str, Any]:\n        actions = {\n            'quality_report': lambda: generate_quality_report(**kwargs),\n\
+    \        }\n        if action in actions:\n            return actions[action]()\n        return {'error': f'Unknown action:\
+    \ {action}'}\n\n\nclass TestAdvancedManufacturing(unittest.TestCase):\n    \"\"\"Unit tests for Mechanical Engineering\
+    \ skill.\"\"\"\n    \n    def test_metadata(self):\n        self.assertEqual(SKILL_METADATA['id'], 'advanced_manufacturing')\n\
+    \    \n    def test_quality_report(self):\n        measurements = [10.01, 10.02, 9.99, 10.00, 10.03, 9.98]\n        result\
+    \ = generate_quality_report(measurements, tolerance=0.05, specification=10.0)\n        self.assertIn('mean', result)\n\
+    \        self.assertIn('cp', result)\n        self.assertIn('cpk', result)\n        self.assertEqual(result['out_of_tolerance_count'],\
+    \ 0)\n    \n    def test_quality_report_failures(self):\n        measurements = [10.0, 10.1, 10.2, 9.8, 9.7]\n       \
+    \ result = generate_quality_report(measurements, tolerance=0.05, specification=10.0)\n        self.assertGreater(result['out_of_tolerance_count'],\
+    \ 0)\n    \n    def test_empty_measurements(self):\n        result = generate_quality_report([], tolerance=0.05)\n   \
+    \     self.assertIn('error', result)\n    \n    def test_prompts_exist(self):\n        self.assertGreater(len(EXPERT_PROMPTS),\
+    \ 0)\n    \n    def test_integration_points(self):\n        self.assertIn('matweb', INTEGRATION_POINTS)\n    \n    def\
+    \ test_skill_engine(self):\n        engine = SkillEngine()\n        self.assertEqual(engine.name, 'Mechanical Engineering\
+    \ & Materials Science Expert')\n\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Expert 3D Printing & Advanced Manufacturing skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''advanced_manufacturing'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

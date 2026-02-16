@@ -1,0 +1,80 @@
+name: typhoon-starknet-account
+title: Typhoon Starknet Account
+version: 0.3.1
+description: Create a Starknet account to your agent through Typhoon anonymous deployer and interact with Starknet contracts
+  (read/write + watch events).
+metadata:
+  author: esdras-sena
+  category: Development & Coding
+  tags:
+  - development-coding
+  - typhoon
+  - starknet
+  - account
+  - read exec
+  source: clawhub-community
+  clawhub_slug: typhoon-starknet-account
+  clawhub_path: esdras-sena/typhoon-starknet-account
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - read exec
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Typhoon Starknet Account
+
+    # Source: ClawHub community skill by esdras-sena
+
+    # Install: clawhub install typhoon-starknet-account
+
+    # Path: esdras-sena/typhoon-starknet-account
+
+
+    ## Description
+
+    Create a Starknet account to your agent through Typhoon anonymous deployer and interact with Starknet contracts (read/write
+    + watch events).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - protocols.json
+
+    - skill.json
+
+    - references/argentx-class-hashes.md
+
+    - scripts/avnu-swap.js
+
+    - scripts/create-account.js
+
+    - scripts/invoke-contract.js
+
+    - scripts/parse-smart.js
+
+
+    ## Allowed Tools
+
+    read exec
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install typhoon-starknet-account
+
+    ```'
+examples:
+- description: Install Typhoon Starknet Account from ClawHub
+  usage: clawhub install typhoon-starknet-account
+schema_version: '1.0'

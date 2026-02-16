@@ -1,0 +1,63 @@
+name: cdn
+title: CDN
+version: 1.0.1
+description: Configure, optimize, and troubleshoot CDN deployments with caching strategies, security hardening, and multi-provider
+  management.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - cdn
+  source: clawhub-community
+  clawhub_slug: cdn
+  clawhub_path: ivangdavila/cdn
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CDN
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install cdn
+
+    # Path: ivangdavila/cdn
+
+
+    ## Description
+
+    Configure, optimize, and troubleshoot CDN deployments with caching strategies, security hardening, and multi-provider
+    management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - caching.md
+
+    - providers.md
+
+    - security.md
+
+    - troubleshooting.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cdn
+
+    ```'
+examples:
+- description: Install CDN from ClawHub
+  usage: clawhub install cdn
+schema_version: '1.0'

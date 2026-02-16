@@ -1,0 +1,62 @@
+name: reminder-research
+title: Reminder Research
+version: 1.0.1
+description: '"Process Apple Reminders. Smart research: custom instructions (book + web search constraints), list-based defaults
+  (claw=system solutions, shopping=price comparison, generic=how-to tutorials). Result tracking with 💎 signifier. Triggers:
+  reminders without notes, heartbeat automated processing."'
+metadata:
+  author: nonlinear
+  category: Search & Research
+  tags:
+  - search-research
+  - reminder
+  - research
+  source: clawhub-community
+  clawhub_slug: reminder-research
+  clawhub_path: nonlinear/reminder-research
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reminder Research
+
+    # Source: ClawHub community skill by nonlinear
+
+    # Install: clawhub install reminder-research
+
+    # Path: nonlinear/reminder-research
+
+
+    ## Description
+
+    "Process Apple Reminders. Smart research: custom instructions (book + web search constraints), list-based defaults (claw=system
+    solutions, shopping=price comparison, generic=how-to tutorials). Result tracking with 💎 signifier. Triggers: reminders
+    without notes, heartbeat automated processing."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - process-reminders.sh
+
+    - references/architecture.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reminder-research
+
+    ```'
+examples:
+- description: Install Reminder Research from ClawHub
+  usage: clawhub install reminder-research
+schema_version: '1.0'

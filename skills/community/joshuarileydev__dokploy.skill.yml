@@ -1,0 +1,65 @@
+name: dokploy
+title: Dokploy
+version: 1.0.0
+description: '"Manage Dokploy deployments, projects, applications, and domains via the Dokploy API."'
+metadata:
+  author: joshuarileydev
+  category: Development & Coding
+  tags:
+  - development-coding
+  - dokploy
+  source: clawhub-community
+  clawhub_slug: dokploy
+  clawhub_path: joshuarileydev/dokploy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dokploy
+
+    # Source: ClawHub community skill by joshuarileydev
+
+    # Install: clawhub install dokploy
+
+    # Path: joshuarileydev/dokploy
+
+
+    ## Description
+
+    "Manage Dokploy deployments, projects, applications, and domains via the Dokploy API."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - .clawdhub/package.json
+
+    - scripts/dokploy-app.sh
+
+    - scripts/dokploy-config.sh
+
+    - scripts/dokploy-domain.sh
+
+    - scripts/dokploy-project.sh
+
+    - scripts/dokploy.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dokploy
+
+    ```'
+examples:
+- description: Install Dokploy from ClawHub
+  usage: clawhub install dokploy
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: stranger-danger
+title: Stranger Danger
+version: 1.0.2
+description: Give your AI agent a safe word. Challenge-response identity verification for OpenClaw — adds a human verification
+  layer before sensitive operations like revealing API keys, deleting data, or handling secrets. Answer is bcrypt-hashed and
+  stored in macOS Keychain.
+metadata:
+  author: jamesalmeida
+  category: Development & Coding
+  tags:
+  - development-coding
+  - stranger
+  - danger
+  source: clawhub-community
+  clawhub_slug: stranger-danger
+  clawhub_path: jamesalmeida/stranger-danger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stranger Danger
+
+    # Source: ClawHub community skill by jamesalmeida
+
+    # Install: clawhub install stranger-danger
+
+    # Path: jamesalmeida/stranger-danger
+
+
+    ## Description
+
+    Give your AI agent a safe word. Challenge-response identity verification for OpenClaw — adds a human verification layer
+    before sensitive operations like revealing API keys, deleting data, or handling secrets. Answer is bcrypt-hashed and stored
+    in macOS Keychain.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/cli.js
+
+    - scripts/config.js
+
+    - scripts/keychain.js
+
+    - scripts/setup.js
+
+    - scripts/verify.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stranger-danger
+
+    ```'
+examples:
+- description: Install Stranger Danger from ClawHub
+  usage: clawhub install stranger-danger
+schema_version: '1.0'

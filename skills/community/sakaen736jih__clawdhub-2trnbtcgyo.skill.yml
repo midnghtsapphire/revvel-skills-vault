@@ -1,0 +1,57 @@
+name: clawdhub
+title: ClawdHub CLI
+version: 1.0.0
+description: Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need
+  to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders
+  with the npm-installed clawdhub CLI.
+metadata:
+  author: sakaen736jih
+  category: Search & Research
+  tags:
+  - search-research
+  - clawdhub
+  source: clawhub-community
+  clawhub_slug: clawdhub-2trnbtcgyo
+  clawhub_path: sakaen736jih/clawdhub-2trnbtcgyo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawdHub CLI
+
+    # Source: ClawHub community skill by sakaen736jih
+
+    # Install: clawhub install clawdhub-2trnbtcgyo
+
+    # Path: sakaen736jih/clawdhub-2trnbtcgyo
+
+
+    ## Description
+
+    Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch
+    new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with
+    the npm-installed clawdhub CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdhub-2trnbtcgyo
+
+    ```'
+examples:
+- description: Install ClawdHub CLI from ClawHub
+  usage: clawhub install clawdhub-2trnbtcgyo
+schema_version: '1.0'

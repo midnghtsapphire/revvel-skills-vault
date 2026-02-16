@@ -1,0 +1,56 @@
+name: prompt-log
+title: Prompt Log
+version: 0.1.0
+description: Extract conversation transcripts from AI coding session logs (Clawdbot, Claude Code, Codex). Use when asked to
+  export prompt history, session logs, or transcripts from .jsonl session files.
+metadata:
+  author: thesash
+  category: Development & Coding
+  tags:
+  - development-coding
+  - prompt
+  - log
+  source: clawhub-community
+  clawhub_slug: prompt-log
+  clawhub_path: thesash/prompt-log
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prompt Log
+
+    # Source: ClawHub community skill by thesash
+
+    # Install: clawhub install prompt-log
+
+    # Path: thesash/prompt-log
+
+
+    ## Description
+
+    Extract conversation transcripts from AI coding session logs (Clawdbot, Claude Code, Codex). Use when asked to export
+    prompt history, session logs, or transcripts from .jsonl session files.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prompt-log
+
+    ```'
+examples:
+- description: Install Prompt Log from ClawHub
+  usage: clawhub install prompt-log
+schema_version: '1.0'

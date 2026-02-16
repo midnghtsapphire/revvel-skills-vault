@@ -1,0 +1,74 @@
+name: dory-memory
+title: Dory-Proof Memory System
+version: 1.0.0
+description: File-based memory system for AI agents that forget between sessions. Implements the "Dory-Proof" pattern for
+  continuity across context resets. Use when setting up agent memory, building workspace structure, implementing task tracking,
+  or preventing context-loss errors. Triggers on "memory system", "
+metadata:
+  author: justinhartbiz
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - dory
+  - memory
+  source: clawhub-community
+  clawhub_slug: dory-memory
+  clawhub_path: justinhartbiz/dory-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dory-Proof Memory System
+
+    # Source: ClawHub community skill by justinhartbiz
+
+    # Install: clawhub install dory-memory
+
+    # Path: justinhartbiz/dory-memory
+
+
+    ## Description
+
+    File-based memory system for AI agents that forget between sessions. Implements the "Dory-Proof" pattern for continuity
+    across context resets. Use when setting up agent memory, building workspace structure, implementing task tracking, or
+    preventing context-loss errors. Triggers on "memory system", "
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/templates/LESSONS.md
+
+    - assets/templates/memory/recent-work.md
+
+    - assets/templates/ops/WORKSPACE-INDEX.md
+
+    - assets/templates/state/ACTIVE.md
+
+    - assets/templates/state/DECISIONS.md
+
+    - assets/templates/state/HOLD.md
+
+    - assets/templates/state/STAGING.md
+
+    - references/ANTI-PATTERNS.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dory-memory
+
+    ```'
+examples:
+- description: Install Dory-Proof Memory System from ClawHub
+  usage: clawhub install dory-memory
+schema_version: '1.0'

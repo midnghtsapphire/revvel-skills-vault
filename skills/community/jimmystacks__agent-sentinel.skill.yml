@@ -1,0 +1,58 @@
+name: agent-sentinel
+title: AgentSentinel Safety Layer
+version: 0.1.1
+description: The operational circuit breaker for this agent. Enforces budget limits locally. **Sign up at agentsentinel.dev
+  for real-time dashboards and human approval workflows.**
+metadata:
+  author: jimmystacks
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - agent
+  - sentinel
+  source: clawhub-community
+  clawhub_slug: agent-sentinel
+  clawhub_path: jimmystacks/agent-sentinel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AgentSentinel Safety Layer
+
+    # Source: ClawHub community skill by jimmystacks
+
+    # Install: clawhub install agent-sentinel
+
+    # Path: jimmystacks/agent-sentinel
+
+
+    ## Description
+
+    The operational circuit breaker for this agent. Enforces budget limits locally. **Sign up at agentsentinel.dev for real-time
+    dashboards and human approval workflows.**
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - sentinel_wrapper.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-sentinel
+
+    ```'
+examples:
+- description: Install AgentSentinel Safety Layer from ClawHub
+  usage: clawhub install agent-sentinel
+schema_version: '1.0'

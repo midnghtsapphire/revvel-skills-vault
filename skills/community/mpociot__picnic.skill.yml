@@ -1,0 +1,61 @@
+name: picnic
+title: Picnic Grocery
+version: 1.0.0
+description: Order groceries from Picnic supermarket - search products, manage cart, schedule delivery.
+metadata:
+  author: mpociot
+  category: Search & Research
+  tags:
+  - search-research
+  - picnic
+  source: clawhub-community
+  clawhub_slug: picnic
+  clawhub_path: mpociot/picnic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Picnic Grocery
+
+    # Source: ClawHub community skill by mpociot
+
+    # Install: clawhub install picnic
+
+    # Path: mpociot/picnic
+
+
+    ## Description
+
+    Order groceries from Picnic supermarket - search products, manage cart, schedule delivery.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - debug.mjs
+
+    - package-lock.json
+
+    - package.json
+
+    - picnic-cli.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install picnic
+
+    ```'
+examples:
+- description: Install Picnic Grocery from ClawHub
+  usage: clawhub install picnic
+schema_version: '1.0'

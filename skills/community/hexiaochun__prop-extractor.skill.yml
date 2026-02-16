@@ -1,0 +1,58 @@
+name: prop-extractor
+title: prop-extractor
+version: 1.0.0
+description: 从剧本中提取关键道具（武器、信物、法宝等），生成道具风格卡。当需要提取道具、建立道具库、生成道具描述时使用。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - prop
+  - extractor
+  source: clawhub-community
+  clawhub_slug: prop-extractor
+  clawhub_path: hexiaochun/prop-extractor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# prop-extractor
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install prop-extractor
+
+    # Path: hexiaochun/prop-extractor
+
+
+    ## Description
+
+    从剧本中提取关键道具（武器、信物、法宝等），生成道具风格卡。当需要提取道具、建立道具库、生成道具描述时使用。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/templates/gallery.html
+
+    - references/format-rules.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prop-extractor
+
+    ```'
+examples:
+- description: Install prop-extractor from ClawHub
+  usage: clawhub install prop-extractor
+schema_version: '1.0'

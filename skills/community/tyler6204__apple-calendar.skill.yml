@@ -1,0 +1,68 @@
+name: apple-calendar
+title: Apple Calendar
+version: 1.0.0
+description: Apple Calendar.app integration for macOS. CRUD operations for events, search, and multi-calendar support.
+metadata:
+  author: tyler6204
+  category: Search & Research
+  tags:
+  - search-research
+  - apple
+  - calendar
+  source: clawhub-community
+  clawhub_slug: apple-calendar
+  clawhub_path: tyler6204/apple-calendar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Calendar
+
+    # Source: ClawHub community skill by tyler6204
+
+    # Install: clawhub install apple-calendar
+
+    # Path: tyler6204/apple-calendar
+
+
+    ## Description
+
+    Apple Calendar.app integration for macOS. CRUD operations for events, search, and multi-calendar support.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cal-create.sh
+
+    - scripts/cal-delete.sh
+
+    - scripts/cal-events.sh
+
+    - scripts/cal-list.sh
+
+    - scripts/cal-read.sh
+
+    - scripts/cal-search.sh
+
+    - scripts/cal-update.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-calendar
+
+    ```'
+examples:
+- description: Install Apple Calendar from ClawHub
+  usage: clawhub install apple-calendar
+schema_version: '1.0'

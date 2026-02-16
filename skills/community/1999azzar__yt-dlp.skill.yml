@@ -1,0 +1,61 @@
+name: yt-dlp
+title: Yt Dlp
+version: 1.0.1
+description: A robust CLI wrapper for yt-dlp to download videos, playlists, and audio from YouTube and thousands of other
+  sites. Supports format selection, quality control, metadata embedding, and cookie authentication.
+metadata:
+  author: 1999azzar
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - dlp
+  source: clawhub-community
+  clawhub_slug: yt-dlp
+  clawhub_path: 1999azzar/yt-dlp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Yt Dlp
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install yt-dlp
+
+    # Path: 1999azzar/yt-dlp
+
+
+    ## Description
+
+    A robust CLI wrapper for yt-dlp to download videos, playlists, and audio from YouTube and thousands of other sites. Supports
+    format selection, quality control, metadata embedding, and cookie authentication.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/guide.md
+
+    - references/usage.md
+
+    - scripts/download.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yt-dlp
+
+    ```'
+examples:
+- description: Install Yt Dlp from ClawHub
+  usage: clawhub install yt-dlp
+schema_version: '1.0'

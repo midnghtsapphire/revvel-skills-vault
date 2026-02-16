@@ -1,0 +1,64 @@
+name: sui-coverage
+title: Sui Coverage
+version: 1.1.1
+description: Analyze Sui Move test coverage, identify untested code, write missing tests, and perform security audits. Includes
+  Python tools for parsing coverage output and generating reports.
+metadata:
+  author: easonc13
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - sui
+  - coverage
+  source: clawhub-community
+  clawhub_slug: sui-coverage
+  clawhub_path: easonc13/sui-coverage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sui Coverage
+
+    # Source: ClawHub community skill by easonc13
+
+    # Install: clawhub install sui-coverage
+
+    # Path: easonc13/sui-coverage
+
+
+    ## Description
+
+    Analyze Sui Move test coverage, identify untested code, write missing tests, and perform security audits. Includes Python
+    tools for parsing coverage output and generating reports.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - analyze.py
+
+    - analyze_source.py
+
+    - parse_bytecode.py
+
+    - parse_source.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sui-coverage
+
+    ```'
+examples:
+- description: Install Sui Coverage from ClawHub
+  usage: clawhub install sui-coverage
+schema_version: '1.0'

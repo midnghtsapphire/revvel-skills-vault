@@ -1,0 +1,66 @@
+name: us-stock-analysis
+title: Us Stock Analysis
+version: 0.1.1
+description: Comprehensive US stock analysis including fundamental analysis (financial metrics, business quality, valuation),
+  technical analysis (indicators, chart patterns, support/resistance), stock comparisons, and investment report generation.
+  Use when user requests analysis of US stock tickers (e.g., "analy
+metadata:
+  author: veeramanikandanr48
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - stock
+  - analysis
+  source: clawhub-community
+  clawhub_slug: us-stock-analysis
+  clawhub_path: veeramanikandanr48/us-stock-analysis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Us Stock Analysis
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install us-stock-analysis
+
+    # Path: veeramanikandanr48/us-stock-analysis
+
+
+    ## Description
+
+    Comprehensive US stock analysis including fundamental analysis (financial metrics, business quality, valuation), technical
+    analysis (indicators, chart patterns, support/resistance), stock comparisons, and investment report generation. Use when
+    user requests analysis of US stock tickers (e.g., "analy
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/financial-metrics.md
+
+    - references/fundamental-analysis.md
+
+    - references/report-template.md
+
+    - references/technical-analysis.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install us-stock-analysis
+
+    ```'
+examples:
+- description: Install Us Stock Analysis from ClawHub
+  usage: clawhub install us-stock-analysis
+schema_version: '1.0'

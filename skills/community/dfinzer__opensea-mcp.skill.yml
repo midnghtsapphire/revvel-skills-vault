@@ -1,0 +1,69 @@
+name: opensea-mcp
+title: OpenSea
+version: 1.0.2
+description: ''
+metadata:
+  author: dfinzer
+  category: General
+  tags:
+  - general
+  - opensea
+  - mcp
+  source: clawhub-community
+  clawhub_slug: opensea-mcp
+  clawhub_path: dfinzer/opensea-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenSea
+
+    # Source: ClawHub community skill by dfinzer
+
+    # Install: clawhub install opensea-mcp
+
+    # Path: dfinzer/opensea-mcp
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/marketplace-api.md
+
+    - references/rest-api.md
+
+    - references/seaport.md
+
+    - references/stream-api.md
+
+    - references/token-swaps.md
+
+    - scripts/opensea-account-nfts.sh
+
+    - scripts/opensea-best-listing.sh
+
+    - scripts/opensea-best-offer.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install opensea-mcp
+
+    ```'
+examples:
+- description: Install OpenSea from ClawHub
+  usage: clawhub install opensea-mcp
+schema_version: '1.0'

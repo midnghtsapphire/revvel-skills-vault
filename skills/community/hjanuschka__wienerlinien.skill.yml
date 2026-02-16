@@ -1,0 +1,67 @@
+name: wienerlinien
+title: Wiener Linien
+version: 1.0.0
+description: Vienna public transport (Wiener Linien) real-time data. Use when asking about departures, schedules, disruptions,
+  elevator status, or directions in Vienna's public transport (U-Bahn, tram, bus, night bus). Queries stops, lines, and traffic
+  info.
+metadata:
+  author: hjanuschka
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - wienerlinien
+  source: clawhub-community
+  clawhub_slug: wienerlinien
+  clawhub_path: hjanuschka/wienerlinien
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wiener Linien
+
+    # Source: ClawHub community skill by hjanuschka
+
+    # Install: clawhub install wienerlinien
+
+    # Path: hjanuschka/wienerlinien
+
+
+    ## Description
+
+    Vienna public transport (Wiener Linien) real-time data. Use when asking about departures, schedules, disruptions, elevator
+    status, or directions in Vienna''s public transport (U-Bahn, tram, bus, night bus). Queries stops, lines, and traffic
+    info.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - departures.sh
+
+    - disruptions.sh
+
+    - elevators.sh
+
+    - search-stop.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wienerlinien
+
+    ```'
+examples:
+- description: Install Wiener Linien from ClawHub
+  usage: clawhub install wienerlinien
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: drivers-hours-wtd-infringement-coach-uk
+title: Drivers’ Hours & WTD Infringement Coach (UK)
+version: 1.0.0
+description: Creates a 1-page driver-facing tacho/WTD infringement note plus corrective actions and review date. USE WHEN
+  you need to explain infringements and schedule follow-up.
+metadata:
+  author: kowl64
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - drivers
+  - hours
+  - wtd
+  - infringement
+  - coach
+  source: clawhub-community
+  clawhub_slug: drivers-hours-wtd-infringement-coach-uk
+  clawhub_path: kowl64/drivers-hours-wtd-infringement-coach-uk
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Drivers’ Hours & WTD Infringement Coach (UK)
+
+    # Source: ClawHub community skill by kowl64
+
+    # Install: clawhub install drivers-hours-wtd-infringement-coach-uk
+
+    # Path: kowl64/drivers-hours-wtd-infringement-coach-uk
+
+
+    ## Description
+
+    Creates a 1-page driver-facing tacho/WTD infringement note plus corrective actions and review date. USE WHEN you need
+    to explain infringements and schedule follow-up.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/corrective-action-plan-template.md
+
+    - assets/driver-note-template.md
+
+    - references/rag-escalation-rule.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install drivers-hours-wtd-infringement-coach-uk
+
+    ```'
+examples:
+- description: Install Drivers’ Hours & WTD Infringement Coach (UK) from ClawHub
+  usage: clawhub install drivers-hours-wtd-infringement-coach-uk
+schema_version: '1.0'

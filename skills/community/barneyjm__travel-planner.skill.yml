@@ -1,0 +1,58 @@
+name: travel-planner
+title: Travel Planner
+version: 2.0.0
+description: '"Plan complete day trips, walking tours, and multi-stop itineraries with time budgets using Camino AI''s journey
+  planning and route optimization."'
+metadata:
+  author: barneyjm
+  category: Utilities
+  tags:
+  - utilities
+  - travel
+  - planner
+  source: clawhub-community
+  clawhub_slug: travel-planner
+  clawhub_path: barneyjm/travel-planner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Travel Planner
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install travel-planner
+
+    # Path: barneyjm/travel-planner
+
+
+    ## Description
+
+    "Plan complete day trips, walking tours, and multi-stop itineraries with time budgets using Camino AI''s journey planning
+    and route optimization."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/travel-planner.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install travel-planner
+
+    ```'
+examples:
+- description: Install Travel Planner from ClawHub
+  usage: clawhub install travel-planner
+schema_version: '1.0'

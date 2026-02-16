@@ -1,0 +1,71 @@
+name: nadmail
+title: Nadmail
+version: 1.0.4
+description: '"NadMail - Email for AI Agents on Monad. Register yourname@nadmail.ai, send emails that micro-invest in meme
+  coins, boost with emo-buy. SIWE auth, no CAPTCHA, no passwords."'
+metadata:
+  author: daaab
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - nadmail
+  source: clawhub-community
+  clawhub_slug: nadmail
+  clawhub_path: daaab/nadmail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nadmail
+
+    # Source: ClawHub community skill by daaab
+
+    # Install: clawhub install nadmail
+
+    # Path: daaab/nadmail
+
+
+    ## Description
+
+    "NadMail - Email for AI Agents on Monad. Register yourname@nadmail.ai, send emails that micro-invest in meme coins, boost
+    with emo-buy. SIWE auth, no CAPTCHA, no passwords."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/audit.js
+
+    - scripts/crypto-utils.js
+
+    - scripts/inbox.js
+
+    - scripts/register.js
+
+    - scripts/send.js
+
+    - scripts/setup.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nadmail
+
+    ```'
+examples:
+- description: Install Nadmail from ClawHub
+  usage: clawhub install nadmail
+schema_version: '1.0'

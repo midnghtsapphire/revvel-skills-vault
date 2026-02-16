@@ -1,0 +1,60 @@
+name: bambu-cli
+title: Manage Bambu Labs 3D Printers thru your Agent
+version: 1.0.0
+description: Operate and troubleshoot BambuLab printers with the bambu-cli (status/watch, print start/pause/resume/stop, files,
+  camera, gcode, AMS, calibration, motion, fans, light, config, doctor). Use when a user asks to control or monitor a BambuLab
+  printer, set up profiles or access codes, or translate a tas
+metadata:
+  author: tobiasbischoff
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bambu
+  - cli
+  source: clawhub-community
+  clawhub_slug: bambu-cli
+  clawhub_path: tobiasbischoff/bambu-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Manage Bambu Labs 3D Printers thru your Agent
+
+    # Source: ClawHub community skill by tobiasbischoff
+
+    # Install: clawhub install bambu-cli
+
+    # Path: tobiasbischoff/bambu-cli
+
+
+    ## Description
+
+    Operate and troubleshoot BambuLab printers with the bambu-cli (status/watch, print start/pause/resume/stop, files, camera,
+    gcode, AMS, calibration, motion, fans, light, config, doctor). Use when a user asks to control or monitor a BambuLab printer,
+    set up profiles or access codes, or translate a tas
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/commands.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bambu-cli
+
+    ```'
+examples:
+- description: Install Manage Bambu Labs 3D Printers thru your Agent from ClawHub
+  usage: clawhub install bambu-cli
+schema_version: '1.0'

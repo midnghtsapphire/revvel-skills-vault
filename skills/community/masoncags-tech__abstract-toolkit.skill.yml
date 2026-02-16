@@ -1,0 +1,74 @@
+name: abstract-onboard
+title: Abstract Toolkit
+version: 1.0.0
+description: Deploy smart contracts and bridge assets to Abstract (ZK Stack L2). Use when an agent needs to deploy contracts
+  on Abstract, bridge ETH/tokens to Abstract, trade/swap tokens, check balances, transfer assets, or interact with Abstract
+  mainnet. Covers zksolc compilation, Hardhat deployment, Relay brid
+metadata:
+  author: masoncags-tech
+  category: Development & Coding
+  tags:
+  - development-coding
+  - abstract
+  - onboard
+  source: clawhub-community
+  clawhub_slug: abstract-toolkit
+  clawhub_path: masoncags-tech/abstract-toolkit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Abstract Toolkit
+
+    # Source: ClawHub community skill by masoncags-tech
+
+    # Install: clawhub install abstract-toolkit
+
+    # Path: masoncags-tech/abstract-toolkit
+
+
+    ## Description
+
+    Deploy smart contracts and bridge assets to Abstract (ZK Stack L2). Use when an agent needs to deploy contracts on Abstract,
+    bridge ETH/tokens to Abstract, trade/swap tokens, check balances, transfer assets, or interact with Abstract mainnet.
+    Covers zksolc compilation, Hardhat deployment, Relay brid
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/addresses.md
+
+    - references/agw.md
+
+    - references/hardhat.config.js
+
+    - references/troubleshooting.md
+
+    - scripts/call-contract.js
+
+    - scripts/check-balances.js
+
+    - scripts/create-agw.js
+
+    - scripts/deploy-abstract.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install abstract-toolkit
+
+    ```'
+examples:
+- description: Install Abstract Toolkit from ClawHub
+  usage: clawhub install abstract-toolkit
+schema_version: '1.0'

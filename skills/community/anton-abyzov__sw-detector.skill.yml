@@ -1,0 +1,59 @@
+name: detector
+title: Detector
+version: 1.0.0
+description: Detects SpecWeave context and provides workflow documentation for available commands. Use when learning SpecWeave
+  commands, understanding available slash commands (/sw:increment, /sw:do, /sw:progress, /sw:done), or getting workflow guidance.
+  Explains command syntax and recommended workflow patterns.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - detector
+  source: clawhub-community
+  clawhub_slug: sw-detector
+  clawhub_path: anton-abyzov/sw-detector
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Detector
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-detector
+
+    # Path: anton-abyzov/sw-detector
+
+
+    ## Description
+
+    Detects SpecWeave context and provides workflow documentation for available commands. Use when learning SpecWeave commands,
+    understanding available slash commands (/sw:increment, /sw:do, /sw:progress, /sw:done), or getting workflow guidance.
+    Explains command syntax and recommended workflow patterns.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-detector
+
+    ```'
+examples:
+- description: Install Detector from ClawHub
+  usage: clawhub install sw-detector
+schema_version: '1.0'

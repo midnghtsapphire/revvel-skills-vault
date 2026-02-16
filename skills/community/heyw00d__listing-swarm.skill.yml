@@ -1,0 +1,70 @@
+name: listing-swarm
+title: Listing Swarm
+version: 1.0.3
+description: Submit your AI product to 70+ AI directories. Agent automates form filling, captcha solving (BYOK 2captcha),
+  and email verification (BYOK IMAP). Save 10+ hours of manual submissions. User provides their own API keys - no credentials
+  stored in skill.
+metadata:
+  author: heyw00d
+  category: Communication
+  tags:
+  - communication
+  - listing
+  - swarm
+  source: clawhub-community
+  clawhub_slug: listing-swarm
+  clawhub_path: heyw00d/listing-swarm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Listing Swarm
+
+    # Source: ClawHub community skill by heyw00d
+
+    # Install: clawhub install listing-swarm
+
+    # Path: heyw00d/listing-swarm
+
+
+    ## Description
+
+    Submit your AI product to 70+ AI directories. Agent automates form filling, captcha solving (BYOK 2captcha), and email
+    verification (BYOK IMAP). Save 10+ hours of manual submissions. User provides their own API keys - no credentials stored
+    in skill.
+
+
+    ## Files
+
+    - DOCS.md
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - captcha.js
+
+    - directories.json
+
+    - email.js
+
+    - submissions.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install listing-swarm
+
+    ```'
+examples:
+- description: Install Listing Swarm from ClawHub
+  usage: clawhub install listing-swarm
+schema_version: '1.0'

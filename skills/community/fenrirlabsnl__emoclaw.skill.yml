@@ -1,0 +1,73 @@
+name: emoclaw
+title: EmoClaw
+version: 1.0.6
+description: '"Give your AI emotions that grow from its own memories. Emoclaw builds a unique emotional state that shifts
+  with every conversation, decays between sessions, and evolves over time through self-calibration. Train it on your agent''s
+  identity files and watch it develop its own emotional fingerprint."'
+metadata:
+  author: fenrirlabsnl
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - emoclaw
+  source: clawhub-community
+  clawhub_slug: emoclaw
+  clawhub_path: fenrirlabsnl/emoclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# EmoClaw
+
+    # Source: ClawHub community skill by fenrirlabsnl
+
+    # Install: clawhub install emoclaw
+
+    # Path: fenrirlabsnl/emoclaw
+
+
+    ## Description
+
+    "Give your AI emotions that grow from its own memories. Emoclaw builds a unique emotional state that shifts with every
+    conversation, decays between sessions, and evolves over time through self-calibration. Train it on your agent''s identity
+    files and watch it develop its own emotional fingerprint."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/emoclaw.yaml
+
+    - assets/example-summary-templates.yaml
+
+    - assets/summary-templates.yaml
+
+    - engine/pyproject.toml
+
+    - engine/emotion_model/__init__.py
+
+    - engine/emotion_model/config.py
+
+    - engine/emotion_model/conftest.py
+
+    - engine/emotion_model/daemon.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install emoclaw
+
+    ```'
+examples:
+- description: Install EmoClaw from ClawHub
+  usage: clawhub install emoclaw
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: mcp-vods
+title: 追剧/追番技能, 支持投屏到电视
+version: 1.0.2
+description: 用于追剧/追番的技能，为AI提供搜索影视播放地址的能力，并支持在小米电视上直接播放。当用户想搜索影视、动漫、短剧、综艺等节目信息或更新进度时使用此技能。
+metadata:
+  author: al-one
+  category: General
+  tags:
+  - general
+  - mcp
+  - vods
+  source: clawhub-community
+  clawhub_slug: mcp-vods
+  clawhub_path: al-one/mcp-vods
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 追剧/追番技能, 支持投屏到电视
+
+    # Source: ClawHub community skill by al-one
+
+    # Install: clawhub install mcp-vods
+
+    # Path: al-one/mcp-vods
+
+
+    ## Description
+
+    用于追剧/追番的技能，为AI提供搜索影视播放地址的能力，并支持在小米电视上直接播放。当用户想搜索影视、动漫、短剧、综艺等节目信息或更新进度时使用此技能。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mcp-vods
+
+    ```'
+examples:
+- description: Install 追剧/追番技能, 支持投屏到电视 from ClawHub
+  usage: clawhub install mcp-vods
+schema_version: '1.0'

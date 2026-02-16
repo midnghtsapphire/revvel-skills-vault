@@ -1,0 +1,70 @@
+name: clawcast
+title: Cast
+version: 0.1.1
+description: Skill for managing EVM wallets, transactions, and network helpers via cast; covers onboarding, checks, and operating
+  procedures.
+metadata:
+  author: tezatezaz
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawcast
+  source: clawhub-community
+  clawhub_slug: cast
+  clawhub_path: tezatezaz/cast
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cast
+
+    # Source: ClawHub community skill by tezatezaz
+
+    # Install: clawhub install cast
+
+    # Path: tezatezaz/cast
+
+
+    ## Description
+
+    Skill for managing EVM wallets, transactions, and network helpers via cast; covers onboarding, checks, and operating procedures.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/evm-network-tokens.json
+
+    - assets/evm-networks.json
+
+    - scripts/00_lib.sh
+
+    - scripts/01_install_cast.sh
+
+    - scripts/02_wallet.sh
+
+    - scripts/03_password.sh
+
+    - scripts/04_network.sh
+
+    - scripts/05_tokens.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cast
+
+    ```'
+examples:
+- description: Install Cast from ClawHub
+  usage: clawhub install cast
+schema_version: '1.0'

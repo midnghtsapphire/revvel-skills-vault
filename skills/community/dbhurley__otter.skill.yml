@@ -1,0 +1,59 @@
+name: otter
+title: Otter.ai Transcription
+version: 1.0.0
+description: Otter.ai transcription CLI - list, search, download, and sync meeting transcripts to CRM.
+metadata:
+  author: dbhurley
+  category: Search & Research
+  tags:
+  - search-research
+  - otter
+  source: clawhub-community
+  clawhub_slug: otter
+  clawhub_path: dbhurley/otter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Otter.ai Transcription
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install otter
+
+    # Path: dbhurley/otter
+
+
+    ## Description
+
+    Otter.ai transcription CLI - list, search, download, and sync meeting transcripts to CRM.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - references/twenty-sync.md
+
+    - scripts/otter.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install otter
+
+    ```'
+examples:
+- description: Install Otter.ai Transcription from ClawHub
+  usage: clawhub install otter
+schema_version: '1.0'

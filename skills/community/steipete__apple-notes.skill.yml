@@ -1,0 +1,56 @@
+name: apple-notes
+title: Apple Notes
+version: 1.0.0
+description: Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes).
+  Use when a user asks Clawdbot to add a note, list notes, search notes, or manage note folders.
+metadata:
+  author: steipete
+  category: Search & Research
+  tags:
+  - search-research
+  - apple
+  - notes
+  source: clawhub-community
+  clawhub_slug: apple-notes
+  clawhub_path: steipete/apple-notes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Notes
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install apple-notes
+
+    # Path: steipete/apple-notes
+
+
+    ## Description
+
+    Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when
+    a user asks Clawdbot to add a note, list notes, search notes, or manage note folders.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-notes
+
+    ```'
+examples:
+- description: Install Apple Notes from ClawHub
+  usage: clawhub install apple-notes
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: streaming-buddy
+title: Streaming Buddy
+version: 2.0.0
+description: '"Personal streaming assistant with learning preferences. Tracks what you''re watching, learns your taste, and
+  suggests what to watch next based on your services, mood, and preferences. Use when asked about movies, TV shows, streaming
+  services, what to watch, or tracking viewing progress. Triggers: /s'
+metadata:
+  author: udiedrichsen
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - streaming
+  - buddy
+  source: clawhub-community
+  clawhub_slug: streaming-buddy
+  clawhub_path: udiedrichsen/streaming-buddy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Streaming Buddy
+
+    # Source: ClawHub community skill by udiedrichsen
+
+    # Install: clawhub install streaming-buddy
+
+    # Path: udiedrichsen/streaming-buddy
+
+
+    ## Description
+
+    "Personal streaming assistant with learning preferences. Tracks what you''re watching, learns your taste, and suggests
+    what to watch next based on your services, mood, and preferences. Use when asked about movies, TV shows, streaming services,
+    what to watch, or tracking viewing progress. Triggers: /s
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/justwatch.md
+
+    - references/services.md
+
+    - references/tmdb-api.md
+
+    - scripts/handler.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install streaming-buddy
+
+    ```'
+examples:
+- description: Install Streaming Buddy from ClawHub
+  usage: clawhub install streaming-buddy
+schema_version: '1.0'

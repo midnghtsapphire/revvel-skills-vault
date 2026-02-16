@@ -1,0 +1,58 @@
+name: munger-observer
+title: Munger Observer
+version: 1.0.0
+description: Daily wisdom review applying Charlie Munger's mental models to your work and thinking. Use when asked to review
+  decisions, analyze thinking patterns, detect biases, apply mental models, do a "Munger review", or run the Munger Observer.
+  Triggers on scheduled daily reviews or manual requests like "run
+metadata:
+  author: jdrhyne
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - munger
+  - observer
+  source: clawhub-community
+  clawhub_slug: munger-observer
+  clawhub_path: jdrhyne/munger-observer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Munger Observer
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install munger-observer
+
+    # Path: jdrhyne/munger-observer
+
+
+    ## Description
+
+    Daily wisdom review applying Charlie Munger''s mental models to your work and thinking. Use when asked to review decisions,
+    analyze thinking patterns, detect biases, apply mental models, do a "Munger review", or run the Munger Observer. Triggers
+    on scheduled daily reviews or manual requests like "run
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install munger-observer
+
+    ```'
+examples:
+- description: Install Munger Observer from ClawHub
+  usage: clawhub install munger-observer
+schema_version: '1.0'

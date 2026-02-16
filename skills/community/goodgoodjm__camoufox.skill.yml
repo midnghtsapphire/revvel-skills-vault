@@ -1,0 +1,65 @@
+name: camoufox
+title: Camoufox
+version: 1.0.0
+description: Anti-detect browser automation using Camoufox (Firefox-based). Use instead of Chrome/Playwright for bot-detection-heavy
+  sites like X/Twitter, Naver, and other protected sites. Provides stealth browsing with OS/browser fingerprint spoofing,
+  humanized mouse movements, and persistent sessions.
+metadata:
+  author: goodgoodjm
+  category: Search & Research
+  tags:
+  - search-research
+  - camoufox
+  source: clawhub-community
+  clawhub_slug: camoufox
+  clawhub_path: goodgoodjm/camoufox
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Camoufox
+
+    # Source: ClawHub community skill by goodgoodjm
+
+    # Install: clawhub install camoufox
+
+    # Path: goodgoodjm/camoufox
+
+
+    ## Description
+
+    Anti-detect browser automation using Camoufox (Firefox-based). Use instead of Chrome/Playwright for bot-detection-heavy
+    sites like X/Twitter, Naver, and other protected sites. Provides stealth browsing with OS/browser fingerprint spoofing,
+    humanized mouse movements, and persistent sessions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/options.md
+
+    - scripts/browse.py
+
+    - scripts/login_session.py
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install camoufox
+
+    ```'
+examples:
+- description: Install Camoufox from ClawHub
+  usage: clawhub install camoufox
+schema_version: '1.0'

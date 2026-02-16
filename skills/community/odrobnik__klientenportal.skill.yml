@@ -1,0 +1,61 @@
+name: klientenportal
+title: Klientenportal
+version: 1.5.0
+description: '"Automate RZL Klientenportal.at — a web-based portal by RZL Software for exchanging receipts, invoices, and
+  reports with your tax accountant. Login/logout, upload documents (Belegübergabe), list released files, and download Kanzleidokumente
+  via Playwright."'
+metadata:
+  author: odrobnik
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - klientenportal
+  source: clawhub-community
+  clawhub_slug: klientenportal
+  clawhub_path: odrobnik/klientenportal
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Klientenportal
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install klientenportal
+
+    # Path: odrobnik/klientenportal
+
+
+    ## Description
+
+    "Automate RZL Klientenportal.at — a web-based portal by RZL Software for exchanging receipts, invoices, and reports with
+    your tax accountant. Login/logout, upload documents (Belegübergabe), list released files, and download Kanzleidokumente
+    via Playwright."
+
+
+    ## Files
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/klientenportal.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install klientenportal
+
+    ```'
+examples:
+- description: Install Klientenportal from ClawHub
+  usage: clawhub install klientenportal
+schema_version: '1.0'

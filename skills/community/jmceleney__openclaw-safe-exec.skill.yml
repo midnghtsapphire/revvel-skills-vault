@@ -1,0 +1,60 @@
+name: safe-exec
+title: Safe Exec Wrapper
+version: 1.0.0
+description: Protect against prompt injection from shell command output. Wrap untrusted commands (curl, API calls, reading
+  user-generated files) with UUID-based security boundaries. Use when executing commands that return external/untrusted data
+  that could contain prompt injection attacks.
+metadata:
+  author: jmceleney
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - safe
+  - exec
+  source: clawhub-community
+  clawhub_slug: openclaw-safe-exec
+  clawhub_path: jmceleney/openclaw-safe-exec
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Safe Exec Wrapper
+
+    # Source: ClawHub community skill by jmceleney
+
+    # Install: clawhub install openclaw-safe-exec
+
+    # Path: jmceleney/openclaw-safe-exec
+
+
+    ## Description
+
+    Protect against prompt injection from shell command output. Wrap untrusted commands (curl, API calls, reading user-generated
+    files) with UUID-based security boundaries. Use when executing commands that return external/untrusted data that could
+    contain prompt injection attacks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/safe-exec.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-safe-exec
+
+    ```'
+examples:
+- description: Install Safe Exec Wrapper from ClawHub
+  usage: clawhub install openclaw-safe-exec
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: token-optimizer
+title: Token Optimizer
+version: 1.0.0
+description: Automatically analyze and reduce OpenClaw token waste through context compression, tool-call deduplication insights,
+  model selection guidance, and session hygiene checks. Use when sessions are nearing context limits, costs are climbing,
+  or you want proactive token optimization before expensive tasks
+metadata:
+  author: mkhaytman87
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - token
+  - optimizer
+  source: clawhub-community
+  clawhub_slug: mkhaytman-token-optimizer
+  clawhub_path: mkhaytman87/mkhaytman-token-optimizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Token Optimizer
+
+    # Source: ClawHub community skill by mkhaytman87
+
+    # Install: clawhub install mkhaytman-token-optimizer
+
+    # Path: mkhaytman87/mkhaytman-token-optimizer
+
+
+    ## Description
+
+    Automatically analyze and reduce OpenClaw token waste through context compression, tool-call deduplication insights, model
+    selection guidance, and session hygiene checks. Use when sessions are nearing context limits, costs are climbing, or you
+    want proactive token optimization before expensive tasks
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - agents/openai.yaml
+
+    - config/defaults.json
+
+    - examples/usage.md
+
+    - references/operating-notes.md
+
+    - scripts/install.sh
+
+    - scripts/token_optimize.py
+
+    - src/cleanup.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mkhaytman-token-optimizer
+
+    ```'
+examples:
+- description: Install Token Optimizer from ClawHub
+  usage: clawhub install mkhaytman-token-optimizer
+schema_version: '1.0'

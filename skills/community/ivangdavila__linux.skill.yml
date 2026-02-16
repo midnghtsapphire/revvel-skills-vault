@@ -1,0 +1,53 @@
+name: linux
+title: Linux
+version: 1.0.0
+description: Operate Linux systems avoiding permission traps, silent failures, and common admin mistakes.
+metadata:
+  author: ivangdavila
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - linux
+  source: clawhub-community
+  clawhub_slug: linux
+  clawhub_path: ivangdavila/linux
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Linux
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install linux
+
+    # Path: ivangdavila/linux
+
+
+    ## Description
+
+    Operate Linux systems avoiding permission traps, silent failures, and common admin mistakes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linux
+
+    ```'
+examples:
+- description: Install Linux from ClawHub
+  usage: clawhub install linux
+schema_version: '1.0'

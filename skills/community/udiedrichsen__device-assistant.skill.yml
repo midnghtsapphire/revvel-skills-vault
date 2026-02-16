@@ -1,0 +1,60 @@
+name: device-assistant
+title: Device Assistant
+version: 1.0.0
+description: '"Personal device and appliance manager with error code lookup and troubleshooting. Tracks all your devices (appliances,
+  electronics, software) with model numbers, manuals, and warranty info. When something breaks, tell it the error code and
+  get instant solutions. Use when: device shows error, need m'
+metadata:
+  author: udiedrichsen
+  category: Development & Coding
+  tags:
+  - development-coding
+  - device
+  - assistant
+  source: clawhub-community
+  clawhub_slug: device-assistant
+  clawhub_path: udiedrichsen/device-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Device Assistant
+
+    # Source: ClawHub community skill by udiedrichsen
+
+    # Install: clawhub install device-assistant
+
+    # Path: udiedrichsen/device-assistant
+
+
+    ## Description
+
+    "Personal device and appliance manager with error code lookup and troubleshooting. Tracks all your devices (appliances,
+    electronics, software) with model numbers, manuals, and warranty info. When something breaks, tell it the error code and
+    get instant solutions. Use when: device shows error, need m
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/handler.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install device-assistant
+
+    ```'
+examples:
+- description: Install Device Assistant from ClawHub
+  usage: clawhub install device-assistant
+schema_version: '1.0'

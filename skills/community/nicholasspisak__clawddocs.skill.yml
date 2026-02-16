@@ -1,0 +1,71 @@
+name: clawddocs
+title: Clawdbot Documentation Expert
+version: 1.2.2
+description: Clawdbot documentation expert with decision tree navigation, search scripts, doc fetching, version tracking,
+  and config snippets for all Clawdbot features
+metadata:
+  author: nicholasspisak
+  category: Search & Research
+  tags:
+  - search-research
+  - clawddocs
+  source: clawhub-community
+  clawhub_slug: clawddocs
+  clawhub_path: nicholasspisak/clawddocs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Documentation Expert
+
+    # Source: ClawHub community skill by nicholasspisak
+
+    # Install: clawhub install clawddocs
+
+    # Path: nicholasspisak/clawddocs
+
+
+    ## Description
+
+    Clawdbot documentation expert with decision tree navigation, search scripts, doc fetching, version tracking, and config
+    snippets for all Clawdbot features
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/build-index.sh
+
+    - scripts/cache.sh
+
+    - scripts/fetch-doc.sh
+
+    - scripts/recent.sh
+
+    - scripts/search.sh
+
+    - scripts/sitemap.sh
+
+    - scripts/track-changes.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawddocs
+
+    ```'
+examples:
+- description: Install Clawdbot Documentation Expert from ClawHub
+  usage: clawhub install clawddocs
+schema_version: '1.0'

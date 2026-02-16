@@ -1,0 +1,60 @@
+name: smart-route
+title: SmartRoute - Google Routes Calculator
+version: 1.0.4
+description: Calculate traffic-aware routes, travel times, and distances between locations using Google Routes API. Use when
+  the user asks for "traffic to X", "how long to get to Y", "best route to Z", or "drive time". Returns JSON with duration,
+  distance, and a direct Google Maps navigation link.
+metadata:
+  author: vemec
+  category: Search & Research
+  tags:
+  - search-research
+  - smart
+  - route
+  source: clawhub-community
+  clawhub_slug: smart-route
+  clawhub_path: vemec/smart-route
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SmartRoute - Google Routes Calculator
+
+    # Source: ClawHub community skill by vemec
+
+    # Install: clawhub install smart-route
+
+    # Path: vemec/smart-route
+
+
+    ## Description
+
+    Calculate traffic-aware routes, travel times, and distances between locations using Google Routes API. Use when the user
+    asks for "traffic to X", "how long to get to Y", "best route to Z", or "drive time". Returns JSON with duration, distance,
+    and a direct Google Maps navigation link.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/get_route.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install smart-route
+
+    ```'
+examples:
+- description: Install SmartRoute - Google Routes Calculator from ClawHub
+  usage: clawhub install smart-route
+schema_version: '1.0'

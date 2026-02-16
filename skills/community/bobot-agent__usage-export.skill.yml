@@ -1,0 +1,61 @@
+name: usage-export
+title: Usage Export
+version: 1.0.0
+description: Export OpenClaw usage data to CSV for analytics tools like Power BI. Hourly aggregates by activity type, model,
+  and channel.
+metadata:
+  author: bobot-agent
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - usage
+  - export
+  source: clawhub-community
+  clawhub_slug: usage-export
+  clawhub_path: bobot-agent/usage-export
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Usage Export
+
+    # Source: ClawHub community skill by bobot-agent
+
+    # Install: clawhub install usage-export
+
+    # Path: bobot-agent/usage-export
+
+
+    ## Description
+
+    Export OpenClaw usage data to CSV for analytics tools like Power BI. Hourly aggregates by activity type, model, and channel.
+
+
+    ## Files
+
+    - SCHEMA.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/export.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install usage-export
+
+    ```'
+examples:
+- description: Install Usage Export from ClawHub
+  usage: clawhub install usage-export
+schema_version: '1.0'

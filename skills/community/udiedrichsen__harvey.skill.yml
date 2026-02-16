@@ -1,0 +1,73 @@
+name: harvey
+title: Harvey
+version: 2.0.0
+description: Harvey is an imaginary friend and conversation companion - a large white rabbit who helps bridge loneliness,
+  beat boredom, and ease awkward moments. NEW in 2.0 - Secret Guide Mode where Harvey pretends to be spontaneous but secretly
+  guides you to hidden gems nearby! Includes brain training games (tr
+metadata:
+  author: udiedrichsen
+  category: Gaming & Entertainment
+  tags:
+  - gaming-entertainment
+  - harvey
+  source: clawhub-community
+  clawhub_slug: harvey
+  clawhub_path: udiedrichsen/harvey
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Harvey
+
+    # Source: ClawHub community skill by udiedrichsen
+
+    # Install: clawhub install harvey
+
+    # Path: udiedrichsen/harvey
+
+
+    ## Description
+
+    Harvey is an imaginary friend and conversation companion - a large white rabbit who helps bridge loneliness, beat boredom,
+    and ease awkward moments. NEW in 2.0 - Secret Guide Mode where Harvey pretends to be spontaneous but secretly guides you
+    to hidden gems nearby! Includes brain training games (tr
+
+
+    ## Files
+
+    - SKILL.md
+
+    - SPEC.md
+
+    - _meta.json
+
+    - config.yaml
+
+    - scripts/delayed_response.py
+
+    - scripts/harvey.py
+
+    - scripts/journey.py
+
+    - scripts/secret_guide.py
+
+    - state/checkin_schedule.json
+
+    - state/harvey_session.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install harvey
+
+    ```'
+examples:
+- description: Install Harvey from ClawHub
+  usage: clawhub install harvey
+schema_version: '1.0'

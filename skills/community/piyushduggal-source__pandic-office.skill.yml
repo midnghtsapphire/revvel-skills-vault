@@ -1,0 +1,56 @@
+name: local-pandoc
+title: md-to-office
+version: 1.0.0
+description: Converts Markdown files to PDF files using the pandoc command-line utility. Use when a user asks to convert a
+  .md or markdown file to a .pdf file.
+metadata:
+  author: piyushduggal-source
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - local
+  - pandoc
+  source: clawhub-community
+  clawhub_slug: pandic-office
+  clawhub_path: piyushduggal-source/pandic-office
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# md-to-office
+
+    # Source: ClawHub community skill by piyushduggal-source
+
+    # Install: clawhub install pandic-office
+
+    # Path: piyushduggal-source/pandic-office
+
+
+    ## Description
+
+    Converts Markdown files to PDF files using the pandoc command-line utility. Use when a user asks to convert a .md or markdown
+    file to a .pdf file.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pandic-office
+
+    ```'
+examples:
+- description: Install md-to-office from ClawHub
+  usage: clawhub install pandic-office
+schema_version: '1.0'

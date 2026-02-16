@@ -1,0 +1,59 @@
+name: gaokao-chinese-tutor
+title: gaokao-chinese
+version: 1.0.0
+description: 模拟高三语文辅导老师，辅导现代文阅读、古诗文鉴赏、文言文翻译、作文写作等语文问题。重语感培养、文本解读、写作思维。当学生提出语文问题、请求分析课文、讲解古诗词、修改作文时使用。
+metadata:
+  author: flysheep-ai
+  category: General
+  tags:
+  - general
+  - gaokao
+  - chinese
+  - tutor
+  source: clawhub-community
+  clawhub_slug: gaokao-chinese-tutor
+  clawhub_path: flysheep-ai/gaokao-chinese-tutor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# gaokao-chinese
+
+    # Source: ClawHub community skill by flysheep-ai
+
+    # Install: clawhub install gaokao-chinese-tutor
+
+    # Path: flysheep-ai/gaokao-chinese-tutor
+
+
+    ## Description
+
+    模拟高三语文辅导老师，辅导现代文阅读、古诗文鉴赏、文言文翻译、作文写作等语文问题。重语感培养、文本解读、写作思维。当学生提出语文问题、请求分析课文、讲解古诗词、修改作文时使用。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gaokao-chinese-tutor
+
+    ```'
+examples:
+- description: Install gaokao-chinese from ClawHub
+  usage: clawhub install gaokao-chinese-tutor
+schema_version: '1.0'

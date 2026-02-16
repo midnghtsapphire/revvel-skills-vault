@@ -1,0 +1,64 @@
+name: solana
+title: Solana
+version: 0.1.2
+description: Solana wallet operations - create wallets, check balances, send SOL/tokens, swap via Jupiter, launch tokens on
+  Pump.fun
+metadata:
+  author: spendit-ai
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - solana
+  source: clawhub-community
+  clawhub_slug: solana-skills
+  clawhub_path: spendit-ai/solana-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Solana
+
+    # Source: ClawHub community skill by spendit-ai
+
+    # Install: clawhub install solana-skills
+
+    # Path: spendit-ai/solana-skills
+
+
+    ## Description
+
+    Solana wallet operations - create wallets, check balances, send SOL/tokens, swap via Jupiter, launch tokens on Pump.fun
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/initialize.py
+
+    - scripts/jup_swap.py
+
+    - scripts/pumpfun.py
+
+    - scripts/wallet.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solana-skills
+
+    ```'
+examples:
+- description: Install Solana from ClawHub
+  usage: clawhub install solana-skills
+schema_version: '1.0'

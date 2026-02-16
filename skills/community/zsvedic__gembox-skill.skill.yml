@@ -1,0 +1,58 @@
+name: gembox-skill
+title: gembox-skill
+version: 0.9.0
+description: Coding assistance for [GemBox components](https://www.gemboxsoftware.com/). Use when users ask about any GemBox
+  component or coding task that can be performed with a GemBox component. This includes GemBox.Spreadsheet (.NET read/write
+  Excel files), GemBox.Document (.NET read/write Word files), GemBox
+metadata:
+  author: zsvedic
+  category: Media & Content
+  tags:
+  - media-content
+  - gembox
+  - skill
+  source: clawhub-community
+  clawhub_slug: gembox-skill
+  clawhub_path: zsvedic/gembox-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# gembox-skill
+
+    # Source: ClawHub community skill by zsvedic
+
+    # Install: clawhub install gembox-skill
+
+    # Path: zsvedic/gembox-skill
+
+
+    ## Description
+
+    Coding assistance for [GemBox components](https://www.gemboxsoftware.com/). Use when users ask about any GemBox component
+    or coding task that can be performed with a GemBox component. This includes GemBox.Spreadsheet (.NET read/write Excel
+    files), GemBox.Document (.NET read/write Word files), GemBox
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gembox-skill
+
+    ```'
+examples:
+- description: Install gembox-skill from ClawHub
+  usage: clawhub install gembox-skill
+schema_version: '1.0'

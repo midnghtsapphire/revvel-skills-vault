@@ -1,0 +1,59 @@
+name: docling
+title: Docling
+version: 1.0.2
+description: Extract and parse content from web pages, PDFs, documents (docx, pptx), and images using the docling CLI with
+  GPU acceleration. Use INSTEAD of web_fetch for extracting content from specific URLs when you need clean, structured text.
+  Use Brave (web_search) for searching/discovering pages. Use docling
+metadata:
+  author: er3mit4
+  category: Search & Research
+  tags:
+  - search-research
+  - docling
+  source: clawhub-community
+  clawhub_slug: docling
+  clawhub_path: er3mit4/docling
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docling
+
+    # Source: ClawHub community skill by er3mit4
+
+    # Install: clawhub install docling
+
+    # Path: er3mit4/docling
+
+
+    ## Description
+
+    Extract and parse content from web pages, PDFs, documents (docx, pptx), and images using the docling CLI with GPU acceleration.
+    Use INSTEAD of web_fetch for extracting content from specific URLs when you need clean, structured text. Use Brave (web_search)
+    for searching/discovering pages. Use docling
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cli-reference.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install docling
+
+    ```'
+examples:
+- description: Install Docling from ClawHub
+  usage: clawhub install docling
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: reminders
+title: Apple iCloud Reminders - todo list
+version: 0.1.1
+description: Search, create, complete, edit, and delete macOS Reminders. Use proactively — when the user asks to be reminded
+  of something, mentions a task or to-do, or wants to check upcoming reminders.
+metadata:
+  author: sheldenshi
+  category: Search & Research
+  tags:
+  - search-research
+  - reminders
+  source: clawhub-community
+  clawhub_slug: reminders
+  clawhub_path: sheldenshi/reminders
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple iCloud Reminders - todo list
+
+    # Source: ClawHub community skill by sheldenshi
+
+    # Install: clawhub install reminders
+
+    # Path: sheldenshi/reminders
+
+
+    ## Description
+
+    Search, create, complete, edit, and delete macOS Reminders. Use proactively — when the user asks to be reminded of something,
+    mentions a task or to-do, or wants to check upcoming reminders.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/reminders.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reminders
+
+    ```'
+examples:
+- description: Install Apple iCloud Reminders - todo list from ClawHub
+  usage: clawhub install reminders
+schema_version: '1.0'

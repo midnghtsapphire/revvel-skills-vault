@@ -1,0 +1,72 @@
+name: obekt-security
+title: ObekT Security
+version: 1.1.0
+description: Basic threat detection and security analysis for code, files, and agent skills. Use when you need to scan for
+  vulnerabilities, validate security patterns, detect malicious patterns, or audit codebases for security issues.
+metadata:
+  author: obekt
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - obekt
+  - security
+  source: clawhub-community
+  clawhub_slug: obekt-security
+  clawhub_path: obekt/obekt-security
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ObekT Security
+
+    # Source: ClawHub community skill by obekt
+
+    # Install: clawhub install obekt-security
+
+    # Path: obekt/obekt-security
+
+
+    ## Description
+
+    Basic threat detection and security analysis for code, files, and agent skills. Use when you need to scan for vulnerabilities,
+    validate security patterns, detect malicious patterns, or audit codebases for security issues.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/CHECKLIST.md
+
+    - references/CRYPTO_SECURITY.md
+
+    - references/REMEDIATION_GUIDE.md
+
+    - references/VULNERABILITY_PATTERNS.md
+
+    - scripts/generate_report.py
+
+    - scripts/monitor.py
+
+    - scripts/secret_scan.py
+
+    - scripts/skill_audit.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install obekt-security
+
+    ```'
+examples:
+- description: Install ObekT Security from ClawHub
+  usage: clawhub install obekt-security
+schema_version: '1.0'

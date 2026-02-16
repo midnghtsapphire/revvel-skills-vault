@@ -1,0 +1,58 @@
+name: google-home
+title: Google Home Control
+version: 1.0.3
+description: Control smart home devices (lights, TV, etc.) via the Google Assistant SDK. Use when the user wants to trigger
+  home automation commands.
+metadata:
+  author: tvdofficial
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - home
+  source: clawhub-community
+  clawhub_slug: google-home-control
+  clawhub_path: tvdofficial/google-home-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Home Control
+
+    # Source: ClawHub community skill by tvdofficial
+
+    # Install: clawhub install google-home-control
+
+    # Path: tvdofficial/google-home-control
+
+
+    ## Description
+
+    Control smart home devices (lights, TV, etc.) via the Google Assistant SDK. Use when the user wants to trigger home automation
+    commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/control.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-home-control
+
+    ```'
+examples:
+- description: Install Google Home Control from ClawHub
+  usage: clawhub install google-home-control
+schema_version: '1.0'

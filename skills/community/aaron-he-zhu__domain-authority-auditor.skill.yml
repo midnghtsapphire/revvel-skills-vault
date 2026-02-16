@@ -1,0 +1,58 @@
+name: domain-authority-auditor
+title: Domain Authority Auditor
+version: 0.1.1
+description: Runs a full CITE 40-item domain authority audit, scoring domains across 4 dimensions with weighted scoring by
+  domain type. Produces a detailed report with per-item scores, dimension analysis, veto checks, and a prioritized action
+  plan.
+metadata:
+  author: aaron-he-zhu
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - domain
+  - authority
+  - auditor
+  source: clawhub-community
+  clawhub_slug: domain-authority-auditor
+  clawhub_path: aaron-he-zhu/domain-authority-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Domain Authority Auditor
+
+    # Source: ClawHub community skill by aaron-he-zhu
+
+    # Install: clawhub install domain-authority-auditor
+
+    # Path: aaron-he-zhu/domain-authority-auditor
+
+
+    ## Description
+
+    Runs a full CITE 40-item domain authority audit, scoring domains across 4 dimensions with weighted scoring by domain type.
+    Produces a detailed report with per-item scores, dimension analysis, veto checks, and a prioritized action plan.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install domain-authority-auditor
+
+    ```'
+examples:
+- description: Install Domain Authority Auditor from ClawHub
+  usage: clawhub install domain-authority-auditor
+schema_version: '1.0'

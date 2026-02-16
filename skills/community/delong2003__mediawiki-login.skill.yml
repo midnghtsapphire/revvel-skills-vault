@@ -1,0 +1,71 @@
+name: mediawiki-login-test
+title: Mediawiki Login
+version: 1.0.0
+description: Test skill for ClawHub
+metadata:
+  author: delong2003
+  category: Media & Content
+  tags:
+  - media-content
+  - mediawiki
+  - login
+  - test
+  source: clawhub-community
+  clawhub_slug: mediawiki-login
+  clawhub_path: delong2003/mediawiki-login
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mediawiki Login
+
+    # Source: ClawHub community skill by delong2003
+
+    # Install: clawhub install mediawiki-login
+
+    # Path: delong2003/mediawiki-login
+
+
+    ## Description
+
+    Test skill for ClawHub
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL-minimal.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - config/mediawiki-config-template.sh
+
+    - scripts/get_user_info.sh
+
+    - scripts/health_check.sh
+
+    - scripts/login.sh
+
+    - scripts/test_connection.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mediawiki-login
+
+    ```'
+examples:
+- description: Install Mediawiki Login from ClawHub
+  usage: clawhub install mediawiki-login
+schema_version: '1.0'

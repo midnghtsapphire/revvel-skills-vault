@@ -1,0 +1,70 @@
+name: usdc-escrow
+title: USDC Escrow
+version: 1.0.0
+description: '"Trustless USDC escrow for agent-to-agent payments on Base. Create, release, dispute escrows via simple commands."'
+metadata:
+  author: zeroaddresss
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - usdc
+  - escrow
+  source: clawhub-community
+  clawhub_slug: usdc-escrow
+  clawhub_path: zeroaddresss/usdc-escrow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# USDC Escrow
+
+    # Source: ClawHub community skill by zeroaddresss
+
+    # Install: clawhub install usdc-escrow
+
+    # Path: zeroaddresss/usdc-escrow
+
+
+    ## Description
+
+    "Trustless USDC escrow for agent-to-agent payments on Base. Create, release, dispute escrows via simple commands."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-docs.md
+
+    - scripts/claim-expired.sh
+
+    - scripts/create-escrow.sh
+
+    - scripts/dispute-escrow.sh
+
+    - scripts/get-escrow.sh
+
+    - scripts/list-escrows.sh
+
+    - scripts/release-escrow.sh
+
+    - scripts/resolve-dispute.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install usdc-escrow
+
+    ```'
+examples:
+- description: Install USDC Escrow from ClawHub
+  usage: clawhub install usdc-escrow
+schema_version: '1.0'

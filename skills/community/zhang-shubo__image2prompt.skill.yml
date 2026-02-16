@@ -1,0 +1,55 @@
+name: image2prompt
+title: Image2Prompt
+version: 1.0.0
+description: Analyze images and generate detailed prompts for image generation. Supports portrait, landscape, product, animal,
+  illustration categories with structured or natural output.
+metadata:
+  author: zhang-shubo
+  category: Media & Content
+  tags:
+  - media-content
+  - image2prompt
+  source: clawhub-community
+  clawhub_slug: image2prompt
+  clawhub_path: zhang-shubo/image2prompt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Image2Prompt
+
+    # Source: ClawHub community skill by zhang-shubo
+
+    # Install: clawhub install image2prompt
+
+    # Path: zhang-shubo/image2prompt
+
+
+    ## Description
+
+    Analyze images and generate detailed prompts for image generation. Supports portrait, landscape, product, animal, illustration
+    categories with structured or natural output.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install image2prompt
+
+    ```'
+examples:
+- description: Install Image2Prompt from ClawHub
+  usage: clawhub install image2prompt
+schema_version: '1.0'

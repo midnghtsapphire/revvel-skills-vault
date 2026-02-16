@@ -1,0 +1,68 @@
+name: roku
+title: roku
+version: 2.0.0
+description: Control Roku devices via CLI. Discovery, remote control, app launching, search, and HTTP bridge mode for real-time
+  control.
+metadata:
+  author: gumadeiras
+  category: Search & Research
+  tags:
+  - search-research
+  - roku
+  source: clawhub-community
+  clawhub_slug: roku
+  clawhub_path: gumadeiras/roku
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# roku
+
+    # Source: ClawHub community skill by gumadeiras
+
+    # Install: clawhub install roku
+
+    # Path: gumadeiras/roku
+
+
+    ## Description
+
+    Control Roku devices via CLI. Discovery, remote control, app launching, search, and HTTP bridge mode for real-time control.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - roku-client.py
+
+    - roku-daemon.py
+
+    - roku-fast.py
+
+    - roku-listener.py
+
+    - roku-remote.py
+
+    - roku-telegram.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install roku
+
+    ```'
+examples:
+- description: Install roku from ClawHub
+  usage: clawhub install roku
+schema_version: '1.0'

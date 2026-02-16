@@ -1,0 +1,33 @@
+name: youtube-api
+title: Youtube Api
+version: 1.4.1
+description: 'YouTube API access without the official API quota hassle — transcripts, search, channels, playlists, and metadata
+  with no Google API key needed. Use when the user needs YouTube data programmatically, wants to avoid Google API quotas,
+  or asks for "youtube api", "get video data", "youtube without api '
+metadata:
+  author: therohitdas
+  category: Search & Research
+  tags:
+  - search-research
+  - youtube
+  - api
+  source: clawhub-community
+  clawhub_slug: youtube-api
+  clawhub_path: therohitdas/youtube-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Youtube Api\n# Source: ClawHub community skill by therohitdas\n# Install: clawhub install youtube-api\n# Path:\
+    \ therohitdas/youtube-api\n\n## Description\nYouTube API access without the official API quota hassle — transcripts, search,\
+    \ channels, playlists, and metadata with no Google API key needed. Use when the user needs YouTube data programmatically,\
+    \ wants to avoid Google API quotas, or asks for \"youtube api\", \"get video data\", \"youtube without api \n\n## Files\n\
+    - SKILL.md\n- _meta.json\n- scripts/tapi-auth.js\n\n## Installation\n```bash\nclawhub install youtube-api\n```"
+examples:
+- description: Install Youtube Api from ClawHub
+  usage: clawhub install youtube-api
+schema_version: '1.0'

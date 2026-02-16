@@ -1,0 +1,56 @@
+name: security-review
+title: security-review
+version: 1.0.0
+description: Comprehensive security review for code, configs, and operations. OWASP, prompt injection, crypto security. Auto-triggers
+  on security-related changes.
+metadata:
+  author: sa9saq
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - review
+  source: clawhub-community
+  clawhub_slug: security-review
+  clawhub_path: sa9saq/security-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# security-review
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install security-review
+
+    # Path: sa9saq/security-review
+
+
+    ## Description
+
+    Comprehensive security review for code, configs, and operations. OWASP, prompt injection, crypto security. Auto-triggers
+    on security-related changes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-review
+
+    ```'
+examples:
+- description: Install security-review from ClawHub
+  usage: clawhub install security-review
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: raspberry_pi
+title: Raspberry Pi
+version: 1.0.0
+description: Set up and maintain Raspberry Pi avoiding common hardware and configuration pitfalls.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - raspberry
+  source: clawhub-community
+  clawhub_slug: raspberry
+  clawhub_path: ivangdavila/raspberry
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Raspberry Pi
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install raspberry
+
+    # Path: ivangdavila/raspberry
+
+
+    ## Description
+
+    Set up and maintain Raspberry Pi avoiding common hardware and configuration pitfalls.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install raspberry
+
+    ```'
+examples:
+- description: Install Raspberry Pi from ClawHub
+  usage: clawhub install raspberry
+schema_version: '1.0'

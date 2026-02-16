@@ -1,0 +1,53 @@
+name: calctl
+title: Calctl
+version: 1.0.0
+description: Manage Apple Calendar events via icalBuddy + AppleScript CLI
+metadata:
+  author: rainbat
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - calctl
+  source: clawhub-community
+  clawhub_slug: calctl
+  clawhub_path: rainbat/calctl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Calctl
+
+    # Source: ClawHub community skill by rainbat
+
+    # Install: clawhub install calctl
+
+    # Path: rainbat/calctl
+
+
+    ## Description
+
+    Manage Apple Calendar events via icalBuddy + AppleScript CLI
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install calctl
+
+    ```'
+examples:
+- description: Install Calctl from ClawHub
+  usage: clawhub install calctl
+schema_version: '1.0'

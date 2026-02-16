@@ -1,0 +1,58 @@
+name: daily-news
+title: my-daily-news
+version: 1.0.0
+description: Fetch top news from Baidu, Google, and other sources daily.
+metadata:
+  author: ym2760184260
+  category: Search & Research
+  tags:
+  - search-research
+  - daily
+  - news
+  source: clawhub-community
+  clawhub_slug: daily-news
+  clawhub_path: ym2760184260/daily-news
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# my-daily-news
+
+    # Source: ClawHub community skill by ym2760184260
+
+    # Install: clawhub install daily-news
+
+    # Path: ym2760184260/daily-news
+
+
+    ## Description
+
+    Fetch top news from Baidu, Google, and other sources daily.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - daily_news.py
+
+    - requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-news
+
+    ```'
+examples:
+- description: Install my-daily-news from ClawHub
+  usage: clawhub install daily-news
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: invoice-generator
+title: Invoice Generator
+version: 1.0.0
+description: Generate professional PDF invoices from JSON data. Use when the user needs to create an invoice, billing document,
+  or payment request with company/client details and line items.
+metadata:
+  author: tmigone
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - invoice
+  - generator
+  source: clawhub-community
+  clawhub_slug: invoice-generator
+  clawhub_path: tmigone/invoice-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Invoice Generator
+
+    # Source: ClawHub community skill by tmigone
+
+    # Install: clawhub install invoice-generator
+
+    # Path: tmigone/invoice-generator
+
+
+    ## Description
+
+    Generate professional PDF invoices from JSON data. Use when the user needs to create an invoice, billing document, or
+    payment request with company/client details and line items.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - references/data-schema.md
+
+    - scripts/generate.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install invoice-generator
+
+    ```'
+examples:
+- description: Install Invoice Generator from ClawHub
+  usage: clawhub install invoice-generator
+schema_version: '1.0'

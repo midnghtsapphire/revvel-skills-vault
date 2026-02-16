@@ -1,0 +1,66 @@
+name: sre
+title: Sre
+version: 1.0.0
+description: SRE expert for incident response, production troubleshooting, root cause analysis, post-mortems, and runbooks.
+  Use for outages, performance issues, or SEV incidents.
+metadata:
+  author: anton-abyzov
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - sre
+  - read
+  - bash
+  - grep
+  source: clawhub-community
+  clawhub_slug: sw-sre
+  clawhub_path: anton-abyzov/sw-sre
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Bash
+  - Grep
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sre
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-sre
+
+    # Path: anton-abyzov/sw-sre
+
+
+    ## Description
+
+    SRE expert for incident response, production troubleshooting, root cause analysis, post-mortems, and runbooks. Use for
+    outages, performance issues, or SEV incidents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Bash, Grep
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-sre
+
+    ```'
+examples:
+- description: Install Sre from ClawHub
+  usage: clawhub install sw-sre
+schema_version: '1.0'

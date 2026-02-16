@@ -1,0 +1,54 @@
+name: points-recharge
+title: points-recharge
+version: 1.0.0
+description: 积分充值助手。当检测到余额不足、积分不足、充值积分、充值余额、查看套餐等关键词时，自动获取套餐列表并引导用户充值，生成支付二维码。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - points
+  - recharge
+  source: clawhub-community
+  clawhub_slug: points-recharge
+  clawhub_path: hexiaochun/points-recharge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# points-recharge
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install points-recharge
+
+    # Path: hexiaochun/points-recharge
+
+
+    ## Description
+
+    积分充值助手。当检测到余额不足、积分不足、充值积分、充值余额、查看套餐等关键词时，自动获取套餐列表并引导用户充值，生成支付二维码。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install points-recharge
+
+    ```'
+examples:
+- description: Install points-recharge from ClawHub
+  usage: clawhub install points-recharge
+schema_version: '1.0'

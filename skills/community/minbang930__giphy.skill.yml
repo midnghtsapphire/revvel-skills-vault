@@ -1,0 +1,56 @@
+name: giphy-gif
+title: Giphy
+version: 1.0.7
+description: Search and send contextual Giphy GIFs in Discord. Use when a user asks for a GIF or when a brief visual reaction
+  (celebration, humor, emotion) improves the flow.
+metadata:
+  author: minbang930
+  category: Search & Research
+  tags:
+  - search-research
+  - giphy
+  - gif
+  source: clawhub-community
+  clawhub_slug: giphy
+  clawhub_path: minbang930/giphy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Giphy
+
+    # Source: ClawHub community skill by minbang930
+
+    # Install: clawhub install giphy
+
+    # Path: minbang930/giphy
+
+
+    ## Description
+
+    Search and send contextual Giphy GIFs in Discord. Use when a user asks for a GIF or when a brief visual reaction (celebration,
+    humor, emotion) improves the flow.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install giphy
+
+    ```'
+examples:
+- description: Install Giphy from ClawHub
+  usage: clawhub install giphy
+schema_version: '1.0'

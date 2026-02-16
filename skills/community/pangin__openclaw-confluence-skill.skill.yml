@@ -1,0 +1,71 @@
+name: confluence-v2
+title: OpenClaw confluence
+version: 1.0.0
+description: Full Confluence Cloud REST API v2 skill (pages, spaces, folders, databases, whiteboards, comments, labels, tasks,
+  properties, etc.) with basic/OAuth auth, pagination, and migration from confluence-cli.
+metadata:
+  author: pangin
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - confluence
+  source: clawhub-community
+  clawhub_slug: openclaw-confluence-skill
+  clawhub_path: pangin/openclaw-confluence-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw confluence
+
+    # Source: ClawHub community skill by pangin
+
+    # Install: clawhub install openclaw-confluence-skill
+
+    # Path: pangin/openclaw-confluence-skill
+
+
+    ## Description
+
+    Full Confluence Cloud REST API v2 skill (pages, spaces, folders, databases, whiteboards, comments, labels, tasks, properties,
+    etc.) with basic/OAuth auth, pagination, and migration from confluence-cli.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - refs/endpoints.md
+
+    - refs/openapi-v2.v3.json
+
+    - refs/scopes.md
+
+    - refs/tests.md
+
+    - refs/usage.md
+
+    - scripts/admin-key.js
+
+    - scripts/ancestors.js
+
+    - scripts/app-properties.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-confluence-skill
+
+    ```'
+examples:
+- description: Install OpenClaw confluence from ClawHub
+  usage: clawhub install openclaw-confluence-skill
+schema_version: '1.0'

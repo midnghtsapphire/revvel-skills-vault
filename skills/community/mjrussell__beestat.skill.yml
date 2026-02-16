@@ -1,0 +1,55 @@
+name: beestat
+title: Beestat
+version: 0.1.0
+description: Query ecobee thermostat data via Beestat API including temperature, humidity, air quality (CO2, VOC), sensors,
+  and HVAC runtime. Use when user asks about home temperature, thermostat status, air quality, or heating/cooling usage.
+metadata:
+  author: mjrussell
+  category: Development & Coding
+  tags:
+  - development-coding
+  - beestat
+  source: clawhub-community
+  clawhub_slug: beestat
+  clawhub_path: mjrussell/beestat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Beestat
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install beestat
+
+    # Path: mjrussell/beestat
+
+
+    ## Description
+
+    Query ecobee thermostat data via Beestat API including temperature, humidity, air quality (CO2, VOC), sensors, and HVAC
+    runtime. Use when user asks about home temperature, thermostat status, air quality, or heating/cooling usage.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install beestat
+
+    ```'
+examples:
+- description: Install Beestat from ClawHub
+  usage: clawhub install beestat
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: attio
+title: Attio CRM
+version: 1.0.0
+description: Manage Attio CRM records (companies, people, deals, tasks, notes). Search, create, update records and manage
+  deal pipelines.
+metadata:
+  author: kesslerio
+  category: Search & Research
+  tags:
+  - search-research
+  - attio
+  source: clawhub-community
+  clawhub_slug: attio-crm
+  clawhub_path: kesslerio/attio-crm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Attio CRM
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install attio-crm
+
+    # Path: kesslerio/attio-crm
+
+
+    ## Description
+
+    Manage Attio CRM records (companies, people, deals, tasks, notes). Search, create, update records and manage deal pipelines.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - setup.sh
+
+    - mcporter/config.json
+
+    - references/company_workflows.md
+
+    - references/deal_workflows.md
+
+    - references/field_guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install attio-crm
+
+    ```'
+examples:
+- description: Install Attio CRM from ClawHub
+  usage: clawhub install attio-crm
+schema_version: '1.0'

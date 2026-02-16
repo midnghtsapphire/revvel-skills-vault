@@ -1,0 +1,73 @@
+name: trawl
+title: Trawl
+version: 1.0.2
+description: Autonomous lead generation through agent social networks. Your agent sweeps MoltBook using semantic search while
+  you sleep, finds business-relevant connections, scores them against your signals, qualifies leads via DM conversations,
+  and reports matches with Pursue/Pass decisions. Configure your iden
+metadata:
+  author: audsmith28
+  category: Search & Research
+  tags:
+  - search-research
+  - trawl
+  source: clawhub-community
+  clawhub_slug: trawl
+  clawhub_path: audsmith28/trawl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trawl
+
+    # Source: ClawHub community skill by audsmith28
+
+    # Install: clawhub install trawl
+
+    # Path: audsmith28/trawl
+
+
+    ## Description
+
+    Autonomous lead generation through agent social networks. Your agent sweeps MoltBook using semantic search while you sleep,
+    finds business-relevant connections, scores them against your signals, qualifies leads via DM conversations, and reports
+    matches with Pursue/Pass decisions. Configure your iden
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - references/adapter-interface.md
+
+    - references/moltbook-api.md
+
+    - scripts/leads.sh
+
+    - scripts/qualify.sh
+
+    - scripts/report.sh
+
+    - scripts/setup.sh
+
+    - scripts/sweep.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trawl
+
+    ```'
+examples:
+- description: Install Trawl from ClawHub
+  usage: clawhub install trawl
+schema_version: '1.0'

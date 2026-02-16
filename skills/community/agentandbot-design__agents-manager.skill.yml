@@ -1,0 +1,70 @@
+name: agents-manager
+title: Agent manager
+version: 1.0.2
+description: 'Manage Clawdbot agents: discover, profile, track capabilities, define routing hierarchy, and assign tasks.'
+metadata:
+  author: agentandbot-design
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - agents
+  - manager
+  source: clawhub-community
+  clawhub_slug: agents-manager
+  clawhub_path: agentandbot-design/agents-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent manager
+
+    # Source: ClawHub community skill by agentandbot-design
+
+    # Install: clawhub install agents-manager
+
+    # Path: agentandbot-design/agents-manager
+
+
+    ## Description
+
+    Manage Clawdbot agents: discover, profile, track capabilities, define routing hierarchy, and assign tasks.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/agent-profile-schema.md
+
+    - references/agent-registry.md
+
+    - references/health-check-template.md
+
+    - references/task-routing-rules.md
+
+    - scripts/can_assign.js
+
+    - scripts/generate_card.js
+
+    - scripts/health_check.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agents-manager
+
+    ```'
+examples:
+- description: Install Agent manager from ClawHub
+  usage: clawhub install agents-manager
+schema_version: '1.0'

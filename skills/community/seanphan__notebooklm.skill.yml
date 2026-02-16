@@ -1,0 +1,73 @@
+name: notebooklm
+title: Notebooklm
+version: 0.1.0
+description: Use this skill to analyze your local files with Google NotebookLM's AI. Upload business documents, reports, and
+  strategies to get source-grounded insights, risk analysis, and actionable recommendations. Perfect for business intelligence,
+  document analysis, and decision support.
+metadata:
+  author: seanphan
+  category: Search & Research
+  tags:
+  - search-research
+  - notebooklm
+  source: clawhub-community
+  clawhub_slug: notebooklm
+  clawhub_path: seanphan/notebooklm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notebooklm
+
+    # Source: ClawHub community skill by seanphan
+
+    # Install: clawhub install notebooklm
+
+    # Path: seanphan/notebooklm
+
+
+    ## Description
+
+    Use this skill to analyze your local files with Google NotebookLM''s AI. Upload business documents, reports, and strategies
+    to get source-grounded insights, risk analysis, and actionable recommendations. Perfect for business intelligence, document
+    analysis, and decision support.
+
+
+    ## Files
+
+    - AUTHENTICATION.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/__init__.py
+
+    - scripts/ask_question.py
+
+    - scripts/auth_manager.py
+
+    - scripts/batch_analyzer.py
+
+    - scripts/browser_session.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notebooklm
+
+    ```'
+examples:
+- description: Install Notebooklm from ClawHub
+  usage: clawhub install notebooklm
+schema_version: '1.0'

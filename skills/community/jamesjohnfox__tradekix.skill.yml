@@ -1,0 +1,61 @@
+name: tradekix
+title: Tradekix
+version: 1.0.0
+description: Query financial market data via the Tradekix API — stock prices, crypto, forex, indices, market news, earnings,
+  economic events, Congressional trades, and social sentiment. Use when the user asks about markets, stock prices, trading
+  data, economic calendars, or financial news. Also handles API key s
+metadata:
+  author: jamesjohnfox
+  category: Social Media
+  tags:
+  - social-media
+  - tradekix
+  source: clawhub-community
+  clawhub_slug: tradekix
+  clawhub_path: jamesjohnfox/tradekix
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tradekix
+
+    # Source: ClawHub community skill by jamesjohnfox
+
+    # Install: clawhub install tradekix
+
+    # Path: jamesjohnfox/tradekix
+
+
+    ## Description
+
+    Query financial market data via the Tradekix API — stock prices, crypto, forex, indices, market news, earnings, economic
+    events, Congressional trades, and social sentiment. Use when the user asks about markets, stock prices, trading data,
+    economic calendars, or financial news. Also handles API key s
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-docs.md
+
+    - scripts/tradekix.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tradekix
+
+    ```'
+examples:
+- description: Install Tradekix from ClawHub
+  usage: clawhub install tradekix
+schema_version: '1.0'

@@ -1,0 +1,34 @@
+name: tube-summary
+title: tube-summary
+version: 1.0.0
+description: 'Search YouTube for videos on any topic and get intelligent summaries from video subtitles. Use when you need
+  to: (1) Find and preview YouTube videos on a subject, (2) Get a detailed description of what a video covers based on its
+  actual content, (3) Quickly understand video topics without watching. '
+metadata:
+  author: dillera
+  category: Search & Research
+  tags:
+  - search-research
+  - tube
+  - summary
+  source: clawhub-community
+  clawhub_slug: tube-summary
+  clawhub_path: dillera/tube-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# tube-summary\n# Source: ClawHub community skill by dillera\n# Install: clawhub install tube-summary\n# Path:\
+    \ dillera/tube-summary\n\n## Description\nSearch YouTube for videos on any topic and get intelligent summaries from video\
+    \ subtitles. Use when you need to: (1) Find and preview YouTube videos on a subject, (2) Get a detailed description of\
+    \ what a video covers based on its actual content, (3) Quickly understand video topics without watching. \n\n## Files\n\
+    - SKILL.md\n- _meta.json\n- scripts/process-subtitles.py\n- scripts/youtube-search.py\n\n## Installation\n```bash\nclawhub\
+    \ install tube-summary\n```"
+examples:
+- description: Install tube-summary from ClawHub
+  usage: clawhub install tube-summary
+schema_version: '1.0'

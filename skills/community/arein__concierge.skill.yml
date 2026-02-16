@@ -1,0 +1,61 @@
+name: concierge
+title: Travel Concierge CLI
+version: 1.5.0
+description: Find accommodation contact details and run AI-assisted booking calls
+metadata:
+  author: arein
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - concierge
+  source: clawhub-community
+  clawhub_slug: concierge
+  clawhub_path: arein/concierge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Travel Concierge CLI
+
+    # Source: ClawHub community skill by arein
+
+    # Install: clawhub install concierge
+
+    # Path: arein/concierge
+
+
+    ## Description
+
+    Find accommodation contact details and run AI-assisted booking calls
+
+
+    ## Files
+
+    - CALL-SETUP.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - vitest.config.ts
+
+    - skills/phone-call/SKILL.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install concierge
+
+    ```'
+examples:
+- description: Install Travel Concierge CLI from ClawHub
+  usage: clawhub install concierge
+schema_version: '1.0'

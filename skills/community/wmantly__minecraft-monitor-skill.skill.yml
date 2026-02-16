@@ -1,0 +1,60 @@
+name: minecraft-monitor
+title: Minecraft Monitor
+version: 0.1.0
+description: Monitor Minecraft servers by checking online status, player counts, latency, and version info using the Server
+  List Ping protocol. Use when the user asks to check Minecraft server status, monitor a Minecraft server, verify if a server
+  is online, get player counts, or mentions Minecraft server monito
+metadata:
+  author: wmantly
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - minecraft
+  - monitor
+  source: clawhub-community
+  clawhub_slug: minecraft-monitor-skill
+  clawhub_path: wmantly/minecraft-monitor-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Minecraft Monitor
+
+    # Source: ClawHub community skill by wmantly
+
+    # Install: clawhub install minecraft-monitor-skill
+
+    # Path: wmantly/minecraft-monitor-skill
+
+
+    ## Description
+
+    Monitor Minecraft servers by checking online status, player counts, latency, and version info using the Server List Ping
+    protocol. Use when the user asks to check Minecraft server status, monitor a Minecraft server, verify if a server is online,
+    get player counts, or mentions Minecraft server monito
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/minecraft-status.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install minecraft-monitor-skill
+
+    ```'
+examples:
+- description: Install Minecraft Monitor from ClawHub
+  usage: clawhub install minecraft-monitor-skill
+schema_version: '1.0'

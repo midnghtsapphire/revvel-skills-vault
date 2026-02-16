@@ -1,0 +1,59 @@
+name: activecampaign
+title: Baby Connect Logger
+version: 1.0.0
+description: ActiveCampaign CRM integration for lead management, deal tracking, and email automation. Use for syncing demo
+  leads, managing clinic sales pipeline, and triggering follow-up sequences.
+metadata:
+  author: kesslerio
+  category: Communication
+  tags:
+  - communication
+  - activecampaign
+  source: clawhub-community
+  clawhub_slug: babyconnect
+  clawhub_path: kesslerio/babyconnect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Baby Connect Logger
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install babyconnect
+
+    # Path: kesslerio/babyconnect
+
+
+    ## Description
+
+    ActiveCampaign CRM integration for lead management, deal tracking, and email automation. Use for syncing demo leads, managing
+    clinic sales pipeline, and triggering follow-up sequences.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - activecampaign-fields-sample.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install babyconnect
+
+    ```'
+examples:
+- description: Install Baby Connect Logger from ClawHub
+  usage: clawhub install babyconnect
+schema_version: '1.0'

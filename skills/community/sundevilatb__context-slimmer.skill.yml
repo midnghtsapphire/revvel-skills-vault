@@ -1,0 +1,60 @@
+name: context-slimmer
+title: Context Slimmer
+version: 1.0.0
+description: Audit and slim down always-loaded context files (AGENTS.md, TOOLS.md, USER.md, MEMORY.md, HEARTBEAT.md, SOUL.md,
+  IDENTITY.md). Use when asked to reduce token usage, audit context files, optimize context window, or slim down workspace
+  files. Measures current token cost and identifies what to move, re
+metadata:
+  author: sundevilatb
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - context
+  - slimmer
+  source: clawhub-community
+  clawhub_slug: context-slimmer
+  clawhub_path: sundevilatb/context-slimmer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Slimmer
+
+    # Source: ClawHub community skill by sundevilatb
+
+    # Install: clawhub install context-slimmer
+
+    # Path: sundevilatb/context-slimmer
+
+
+    ## Description
+
+    Audit and slim down always-loaded context files (AGENTS.md, TOOLS.md, USER.md, MEMORY.md, HEARTBEAT.md, SOUL.md, IDENTITY.md).
+    Use when asked to reduce token usage, audit context files, optimize context window, or slim down workspace files. Measures
+    current token cost and identifies what to move, re
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/measure.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-slimmer
+
+    ```'
+examples:
+- description: Install Context Slimmer from ClawHub
+  usage: clawhub install context-slimmer
+schema_version: '1.0'

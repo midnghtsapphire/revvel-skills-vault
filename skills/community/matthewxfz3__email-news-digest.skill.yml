@@ -1,0 +1,66 @@
+name: email-news-digest
+title: Email News Digest
+version: 1.0.0
+description: Summarize recent emails, generate a thematic image, and send a formatted HTML email report with the summary and
+  image. Use for daily news digests, project updates, or any email-based reporting that needs visual enhancement and rich
+  formatting.
+metadata:
+  author: matthewxfz3
+  category: Media & Content
+  tags:
+  - media-content
+  - email
+  - news
+  - digest
+  source: clawhub-community
+  clawhub_slug: email-news-digest
+  clawhub_path: matthewxfz3/email-news-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Email News Digest
+
+    # Source: ClawHub community skill by matthewxfz3
+
+    # Install: clawhub install email-news-digest
+
+    # Path: matthewxfz3/email-news-digest
+
+
+    ## Description
+
+    Summarize recent emails, generate a thematic image, and send a formatted HTML email report with the summary and image.
+    Use for daily news digests, project updates, or any email-based reporting that needs visual enhancement and rich formatting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/email-filters.md
+
+    - references/html-template.html
+
+    - scripts/process_and_send.sh
+
+    - scripts/summarize_content.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-news-digest
+
+    ```'
+examples:
+- description: Install Email News Digest from ClawHub
+  usage: clawhub install email-news-digest
+schema_version: '1.0'

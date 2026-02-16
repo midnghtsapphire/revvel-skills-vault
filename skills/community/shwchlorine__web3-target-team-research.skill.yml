@@ -1,0 +1,66 @@
+name: web3-target-team-research
+title: Web3 Target Team Research
+version: 1.0.1
+description: Find crypto/web3 teams with $10M+ funding and verified Telegram contacts. Use when hunting for crypto leads,
+  building contact lists, researching funded startups, or prospecting web3 companies. Spawns parallel subagent hunters to
+  search VC portfolios and verify TG handles.
+metadata:
+  author: shwchlorine
+  category: Search & Research
+  tags:
+  - search-research
+  - web3
+  - target
+  - team
+  - research
+  source: clawhub-community
+  clawhub_slug: web3-target-team-research
+  clawhub_path: shwchlorine/web3-target-team-research
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Web3 Target Team Research
+
+    # Source: ClawHub community skill by shwchlorine
+
+    # Install: clawhub install web3-target-team-research
+
+    # Path: shwchlorine/web3-target-team-research
+
+
+    ## Description
+
+    Find crypto/web3 teams with $10M+ funding and verified Telegram contacts. Use when hunting for crypto leads, building
+    contact lists, researching funded startups, or prospecting web3 companies. Spawns parallel subagent hunters to search
+    VC portfolios and verify TG handles.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/auto-hunt-setup.md
+
+    - references/hunter-task.md
+
+    - references/workflow.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install web3-target-team-research
+
+    ```'
+examples:
+- description: Install Web3 Target Team Research from ClawHub
+  usage: clawhub install web3-target-team-research
+schema_version: '1.0'

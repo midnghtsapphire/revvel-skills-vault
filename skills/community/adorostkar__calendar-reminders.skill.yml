@@ -1,0 +1,60 @@
+name: calendar-reminders
+title: Calendar Reminders (gcalcli + CalDAV)
+version: 0.1.0
+description: 'Calendar reminders pipeline: config-driven wrapper around gcalcli (Google Calendar) plus optional CalDAV source
+  via vdirsyncer+khal, and a reminder planner that outputs a JSON plan for one-shot OpenClaw reminders.'
+metadata:
+  author: adorostkar
+  category: Search & Research
+  tags:
+  - search-research
+  - calendar
+  - reminders
+  source: clawhub-community
+  clawhub_slug: calendar-reminders
+  clawhub_path: adorostkar/calendar-reminders
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Calendar Reminders (gcalcli + CalDAV)
+
+    # Source: ClawHub community skill by adorostkar
+
+    # Install: clawhub install calendar-reminders
+
+    # Path: adorostkar/calendar-reminders
+
+
+    ## Description
+
+    Calendar reminders pipeline: config-driven wrapper around gcalcli (Google Calendar) plus optional CalDAV source via vdirsyncer+khal,
+    and a reminder planner that outputs a JSON plan for one-shot OpenClaw reminders.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/openclaw-calendar.example.json
+
+    - scripts/calendar_reminder_plan.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install calendar-reminders
+
+    ```'
+examples:
+- description: Install Calendar Reminders (gcalcli + CalDAV) from ClawHub
+  usage: clawhub install calendar-reminders
+schema_version: '1.0'

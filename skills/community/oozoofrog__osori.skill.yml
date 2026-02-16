@@ -1,0 +1,63 @@
+name: osori
+title: Osori
+version: 1.1.0
+description: '"Osori — Local project registry & context loader. Find, switch, list, add/remove projects, check status. Triggers:
+  work on X, find project X, list projects, project status, project switch. | 오소리 — 로컬 프로젝트 레지스트리. 프로젝트 찾아, 프로젝트 목록, 작업하자,
+  프로젝트 추가, 프로젝트 상태."'
+metadata:
+  author: oozoofrog
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - osori
+  source: clawhub-community
+  clawhub_slug: osori
+  clawhub_path: oozoofrog/osori
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Osori
+
+    # Source: ClawHub community skill by oozoofrog
+
+    # Install: clawhub install osori
+
+    # Path: oozoofrog/osori
+
+
+    ## Description
+
+    "Osori — Local project registry & context loader. Find, switch, list, add/remove projects, check status. Triggers: work
+    on X, find project X, list projects, project status, project switch. | 오소리 — 로컬 프로젝트 레지스트리. 프로젝트 찾아, 프로젝트 목록, 작업하자, 프로젝트
+    추가, 프로젝트 상태."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/add-project.sh
+
+    - scripts/scan-projects.sh
+
+    - tests/run_tests.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install osori
+
+    ```'
+examples:
+- description: Install Osori from ClawHub
+  usage: clawhub install osori
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: openrouter-transcribe
+title: Transcribe audio files via OpenRouter using audio-capable models
+version: 1.0.0
+description: Transcribe audio files via OpenRouter using audio-capable models (Gemini, GPT-4o-audio, etc).
+metadata:
+  author: obviyus
+  category: Media & Content
+  tags:
+  - media-content
+  - openrouter
+  - transcribe
+  source: clawhub-community
+  clawhub_slug: openrouter-transcribe
+  clawhub_path: obviyus/openrouter-transcribe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Transcribe audio files via OpenRouter using audio-capable models
+
+    # Source: ClawHub community skill by obviyus
+
+    # Install: clawhub install openrouter-transcribe
+
+    # Path: obviyus/openrouter-transcribe
+
+
+    ## Description
+
+    Transcribe audio files via OpenRouter using audio-capable models (Gemini, GPT-4o-audio, etc).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/transcribe.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openrouter-transcribe
+
+    ```'
+examples:
+- description: Install Transcribe audio files via OpenRouter using audio-capable models from ClawHub
+  usage: clawhub install openrouter-transcribe
+schema_version: '1.0'

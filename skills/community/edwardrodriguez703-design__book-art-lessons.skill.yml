@@ -1,0 +1,57 @@
+name: book-art-lessons
+title: Book Art Lessons
+version: 1.0.1
+description: Book art-lessons services through Lokuli MCP. Use when user needs to find and book art-lessons. Triggers on requests
+  like "book a art-lessons", "find art-lessons near me", or any art-lessons service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - art
+  - lessons
+  source: clawhub-community
+  clawhub_slug: book-art-lessons
+  clawhub_path: edwardrodriguez703-design/book-art-lessons
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Art Lessons
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-art-lessons
+
+    # Path: edwardrodriguez703-design/book-art-lessons
+
+
+    ## Description
+
+    Book art-lessons services through Lokuli MCP. Use when user needs to find and book art-lessons. Triggers on requests like
+    "book a art-lessons", "find art-lessons near me", or any art-lessons service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-art-lessons
+
+    ```'
+examples:
+- description: Install Book Art Lessons from ClawHub
+  usage: clawhub install book-art-lessons
+schema_version: '1.0'

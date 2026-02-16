@@ -1,0 +1,58 @@
+name: futa-tracker
+title: FUTA Express package tracking skill (VN)
+version: 1.0.0
+description: Track FUTA Express (Phương Trang) package delivery status using their public API. Use when the user wants to
+  track/tra cứu đơn hàng, kiện hàng from FUTA Express, FUTA Express, or Phương Trang Express. Requires a tracking code (mã
+  vận đơn) to query.
+metadata:
+  author: tongtanhieu
+  category: Development & Coding
+  tags:
+  - development-coding
+  - futa
+  - tracker
+  source: clawhub-community
+  clawhub_slug: futa-tracker
+  clawhub_path: tongtanhieu/futa-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FUTA Express package tracking skill (VN)
+
+    # Source: ClawHub community skill by tongtanhieu
+
+    # Install: clawhub install futa-tracker
+
+    # Path: tongtanhieu/futa-tracker
+
+
+    ## Description
+
+    Track FUTA Express (Phương Trang) package delivery status using their public API. Use when the user wants to track/tra
+    cứu đơn hàng, kiện hàng from FUTA Express, FUTA Express, or Phương Trang Express. Requires a tracking code (mã vận đơn)
+    to query.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install futa-tracker
+
+    ```'
+examples:
+- description: Install FUTA Express package tracking skill (VN) from ClawHub
+  usage: clawhub install futa-tracker
+schema_version: '1.0'

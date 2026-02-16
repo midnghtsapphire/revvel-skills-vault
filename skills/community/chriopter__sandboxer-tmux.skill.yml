@@ -1,0 +1,55 @@
+name: sandboxer
+title: Skill
+version: 1.0.1
+description: Dispatch coding tasks to tmux sessions via Sandboxer. Use when you need to spawn Claude Code, Gemini, OpenCode,
+  bash, or lazygit sessions in workspace repos, monitor their progress, or send them commands.
+metadata:
+  author: chriopter
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sandboxer
+  source: clawhub-community
+  clawhub_slug: sandboxer-tmux
+  clawhub_path: chriopter/sandboxer-tmux
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill
+
+    # Source: ClawHub community skill by chriopter
+
+    # Install: clawhub install sandboxer-tmux
+
+    # Path: chriopter/sandboxer-tmux
+
+
+    ## Description
+
+    Dispatch coding tasks to tmux sessions via Sandboxer. Use when you need to spawn Claude Code, Gemini, OpenCode, bash,
+    or lazygit sessions in workspace repos, monitor their progress, or send them commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sandboxer-tmux
+
+    ```'
+examples:
+- description: Install Skill from ClawHub
+  usage: clawhub install sandboxer-tmux
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: n8n-pto-pipeline
+title: N8n Pto Pipeline
+version: 1.0.0
+description: '"Create n8n workflow for daily task assignment from PTO engineer to foreman via Telegram bot with status reporting."'
+metadata:
+  author: datadrivenconstruction
+  category: Social Media
+  tags:
+  - social-media
+  - n8n
+  - pto
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: n8n-pto-pipeline
+  clawhub_path: datadrivenconstruction/n8n-pto-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# N8n Pto Pipeline
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install n8n-pto-pipeline
+
+    # Path: datadrivenconstruction/n8n-pto-pipeline
+
+
+    ## Description
+
+    "Create n8n workflow for daily task assignment from PTO engineer to foreman via Telegram bot with status reporting."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install n8n-pto-pipeline
+
+    ```'
+examples:
+- description: Install N8n Pto Pipeline from ClawHub
+  usage: clawhub install n8n-pto-pipeline
+schema_version: '1.0'

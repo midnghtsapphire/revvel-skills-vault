@@ -1,0 +1,57 @@
+name: appletv
+title: Apple TV
+version: 1.0.0
+description: Control Apple TV via pyatv. Use for play/pause, navigation, volume, launching apps, power control, and checking
+  what's playing. Triggers on "Apple TV", "TV", "what's playing", "pause TV", "play TV", "turn off TV".
+metadata:
+  author: lucakaufmann
+  category: Gaming & Entertainment
+  tags:
+  - gaming-entertainment
+  - appletv
+  source: clawhub-community
+  clawhub_slug: appletv
+  clawhub_path: lucakaufmann/appletv
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple TV
+
+    # Source: ClawHub community skill by lucakaufmann
+
+    # Install: clawhub install appletv
+
+    # Path: lucakaufmann/appletv
+
+
+    ## Description
+
+    Control Apple TV via pyatv. Use for play/pause, navigation, volume, launching apps, power control, and checking what''s
+    playing. Triggers on "Apple TV", "TV", "what''s playing", "pause TV", "play TV", "turn off TV".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/appletv.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install appletv
+
+    ```'
+examples:
+- description: Install Apple TV from ClawHub
+  usage: clawhub install appletv
+schema_version: '1.0'

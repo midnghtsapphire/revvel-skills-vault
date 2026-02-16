@@ -1,0 +1,61 @@
+name: schema-markup-generator
+title: Schema Markup Generator
+version: 0.1.2
+description: Generates structured data markup (Schema.org JSON-LD) to enable rich results in search engines including FAQ
+  snippets, How-To cards, Product listings, Reviews, and more.
+metadata:
+  author: aaron-he-zhu
+  category: Search & Research
+  tags:
+  - search-research
+  - schema
+  - markup
+  - generator
+  source: clawhub-community
+  clawhub_slug: schema-markup-generator
+  clawhub_path: aaron-he-zhu/schema-markup-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Schema Markup Generator
+
+    # Source: ClawHub community skill by aaron-he-zhu
+
+    # Install: clawhub install schema-markup-generator
+
+    # Path: aaron-he-zhu/schema-markup-generator
+
+
+    ## Description
+
+    Generates structured data markup (Schema.org JSON-LD) to enable rich results in search engines including FAQ snippets,
+    How-To cards, Product listings, Reviews, and more.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/schema-templates.md
+
+    - references/validation-guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install schema-markup-generator
+
+    ```'
+examples:
+- description: Install Schema Markup Generator from ClawHub
+  usage: clawhub install schema-markup-generator
+schema_version: '1.0'

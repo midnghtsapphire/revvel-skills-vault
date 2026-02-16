@@ -1,0 +1,59 @@
+name: github-issue-creator
+title: Github Issue Creator
+version: 0.1.0
+description: Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored markdown issue reports.
+  Use when the user pastes bug info, error messages, or informal descriptions and wants a structured GitHub issue. Supports
+  images/GIFs for visual evidence.
+metadata:
+  author: thegovind
+  category: Media & Content
+  tags:
+  - media-content
+  - github
+  - issue
+  - creator
+  source: clawhub-community
+  clawhub_slug: github-issue-creator
+  clawhub_path: thegovind/github-issue-creator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Github Issue Creator
+
+    # Source: ClawHub community skill by thegovind
+
+    # Install: clawhub install github-issue-creator
+
+    # Path: thegovind/github-issue-creator
+
+
+    ## Description
+
+    Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored markdown issue reports. Use
+    when the user pastes bug info, error messages, or informal descriptions and wants a structured GitHub issue. Supports
+    images/GIFs for visual evidence.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install github-issue-creator
+
+    ```'
+examples:
+- description: Install Github Issue Creator from ClawHub
+  usage: clawhub install github-issue-creator
+schema_version: '1.0'

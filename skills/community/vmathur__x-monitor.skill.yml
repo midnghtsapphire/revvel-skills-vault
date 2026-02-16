@@ -1,0 +1,63 @@
+name: x-monitor
+title: Monitor X posts
+version: 1.0.0
+description: Monitor specific X/Twitter accounts and surface noteworthy tweets on a configurable schedule. Filters for high-value
+  content about technology and trends, excluding political rage bait. Use when user wants to manage their X account list,
+  run a manual check, or update filtering criteria.
+metadata:
+  author: vmathur
+  category: Social Media
+  tags:
+  - social-media
+  - monitor
+  source: clawhub-community
+  clawhub_slug: x-monitor
+  clawhub_path: vmathur/x-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Monitor X posts
+
+    # Source: ClawHub community skill by vmathur
+
+    # Install: clawhub install x-monitor
+
+    # Path: vmathur/x-monitor
+
+
+    ## Description
+
+    Monitor specific X/Twitter accounts and surface noteworthy tweets on a configurable schedule. Filters for high-value content
+    about technology and trends, excluding political rage bait. Use when user wants to manage their X account list, run a
+    manual check, or update filtering criteria.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config/schedule.json
+
+    - scripts/fetch-tweets.py
+
+    - scripts/setup-crons.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-monitor
+
+    ```'
+examples:
+- description: Install Monitor X posts from ClawHub
+  usage: clawhub install x-monitor
+schema_version: '1.0'

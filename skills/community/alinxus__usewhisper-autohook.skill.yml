@@ -1,0 +1,60 @@
+name: usewhisper-autohook
+title: usewhisper-autohook
+version: 1.0.0
+description: 'Auto-hook tools for OpenClaw: query Whisper Context before every generation, ingest after every turn. Built
+  for Telegram agents (stable user_id/session_id).'
+metadata:
+  author: alinxus
+  category: Social Media
+  tags:
+  - social-media
+  - usewhisper
+  - autohook
+  source: clawhub-community
+  clawhub_slug: usewhisper-autohook
+  clawhub_path: alinxus/usewhisper-autohook
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# usewhisper-autohook
+
+    # Source: ClawHub community skill by alinxus
+
+    # Install: clawhub install usewhisper-autohook
+
+    # Path: alinxus/usewhisper-autohook
+
+
+    ## Description
+
+    Auto-hook tools for OpenClaw: query Whisper Context before every generation, ingest after every turn. Built for Telegram
+    agents (stable user_id/session_id).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - usewhisper-autohook.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install usewhisper-autohook
+
+    ```'
+examples:
+- description: Install usewhisper-autohook from ClawHub
+  usage: clawhub install usewhisper-autohook
+schema_version: '1.0'

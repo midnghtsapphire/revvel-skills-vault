@@ -1,0 +1,62 @@
+name: watch-my-money
+title: Watch My Money
+version: 1.0.0
+description: Analyze bank transactions, categorize spending, track monthly budgets, detect overspending and anomalies. Outputs
+  interactive HTML report.
+metadata:
+  author: andreolf
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - watch
+  - money
+  source: clawhub-community
+  clawhub_slug: watch-my-money
+  clawhub_path: andreolf/watch-my-money
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Watch My Money
+
+    # Source: ClawHub community skill by andreolf
+
+    # Install: clawhub install watch-my-money
+
+    # Path: andreolf/watch-my-money
+
+
+    ## Description
+
+    Analyze bank transactions, categorize spending, track monthly budgets, detect overspending and anomalies. Outputs interactive
+    HTML report.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/template.html
+
+    - references/budget-templates.md
+
+    - references/common-merchants.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install watch-my-money
+
+    ```'
+examples:
+- description: Install Watch My Money from ClawHub
+  usage: clawhub install watch-my-money
+schema_version: '1.0'

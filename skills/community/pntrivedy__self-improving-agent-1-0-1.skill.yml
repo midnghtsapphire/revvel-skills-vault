@@ -1,0 +1,72 @@
+name: self-improvement
+title: Self Improving Agent 1.0.1
+version: 1.0.0
+description: '"Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation
+  fails unexpectedly, (2) User corrects Claude (''No, that''s wrong...'', ''Actually...''), (3) User requests a capability
+  that doesn''t exist, (4) An external API or tool fails, (5) Claude re'
+metadata:
+  author: pntrivedy
+  category: Development & Coding
+  tags:
+  - development-coding
+  - self
+  - improvement
+  source: clawhub-community
+  clawhub_slug: self-improving-agent-1-0-1
+  clawhub_path: pntrivedy/self-improving-agent-1-0-1
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Self Improving Agent 1.0.1
+
+    # Source: ClawHub community skill by pntrivedy
+
+    # Install: clawhub install self-improving-agent-1-0-1
+
+    # Path: pntrivedy/self-improving-agent-1-0-1
+
+
+    ## Description
+
+    "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails
+    unexpectedly, (2) User corrects Claude (''No, that''s wrong...'', ''Actually...''), (3) User requests a capability that
+    doesn''t exist, (4) An external API or tool fails, (5) Claude re
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/LEARNINGS.md
+
+    - assets/SKILL-TEMPLATE.md
+
+    - references/examples.md
+
+    - references/hooks-setup.md
+
+    - scripts/activator.sh
+
+    - scripts/error-detector.sh
+
+    - scripts/extract-skill.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install self-improving-agent-1-0-1
+
+    ```'
+examples:
+- description: Install Self Improving Agent 1.0.1 from ClawHub
+  usage: clawhub install self-improving-agent-1-0-1
+schema_version: '1.0'

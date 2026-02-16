@@ -1,0 +1,64 @@
+name: x-voice-match
+title: X Voice Match
+version: 1.0.0
+description: Analyze a Twitter/X account's posting style and generate authentic posts that match their voice. Use when the
+  user wants to create X posts that sound like them, analyze their posting patterns, or maintain consistent voice across posts.
+  Works with Bird CLI integration.
+metadata:
+  author: gravyxbt
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - voice
+  - match
+  source: clawhub-community
+  clawhub_slug: x-voice-match
+  clawhub_path: gravyxbt/x-voice-match
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Voice Match
+
+    # Source: ClawHub community skill by gravyxbt
+
+    # Install: clawhub install x-voice-match
+
+    # Path: gravyxbt/x-voice-match
+
+
+    ## Description
+
+    Analyze a Twitter/X account''s posting style and generate authentic posts that match their voice. Use when the user wants
+    to create X posts that sound like them, analyze their posting patterns, or maintain consistent voice across posts. Works
+    with Bird CLI integration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/post-types.md
+
+    - scripts/analyze_voice.py
+
+    - scripts/generate_post.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-voice-match
+
+    ```'
+examples:
+- description: Install X Voice Match from ClawHub
+  usage: clawhub install x-voice-match
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: _tools_
+title: Tools
+version: 1.0.0
+description: '"Learns your tool preferences while staying capable of using anything. Adapts to your stack."'
+metadata:
+  author: ivangdavila
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - '"tools"'
+  source: clawhub-community
+  clawhub_slug: tools
+  clawhub_path: ivangdavila/tools
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tools
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install tools
+
+    # Path: ivangdavila/tools
+
+
+    ## Description
+
+    "Learns your tool preferences while staying capable of using anything. Adapts to your stack."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - criteria.md
+
+    - dimensions.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tools
+
+    ```'
+examples:
+- description: Install Tools from ClawHub
+  usage: clawhub install tools
+schema_version: '1.0'

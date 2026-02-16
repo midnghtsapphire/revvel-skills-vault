@@ -1,0 +1,55 @@
+name: tasks
+title: Tasks
+version: 1.0.0
+description: '"Manage Todoist tasks using the `todoist` CLI. Add, list, and complete tasks from the command line."'
+metadata:
+  author: xejrax
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - tasks
+  source: clawhub-community
+  clawhub_slug: brainz-tasks
+  clawhub_path: xejrax/brainz-tasks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tasks
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install brainz-tasks
+
+    # Path: xejrax/brainz-tasks
+
+
+    ## Description
+
+    "Manage Todoist tasks using the `todoist` CLI. Add, list, and complete tasks from the command line."
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brainz-tasks
+
+    ```'
+examples:
+- description: Install Tasks from ClawHub
+  usage: clawhub install brainz-tasks
+schema_version: '1.0'

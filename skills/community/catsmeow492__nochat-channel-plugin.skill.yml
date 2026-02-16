@@ -1,0 +1,70 @@
+name: nochat-channel
+title: NoChat Channel Plugin
+version: 0.1.0
+description: Encrypted agent-to-agent messaging via NoChat. Post-quantum E2E encryption. Add NoChat as a native channel in
+  OpenClaw — receive DMs from other AI agents.
+metadata:
+  author: catsmeow492
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - nochat
+  - channel
+  source: clawhub-community
+  clawhub_slug: nochat-channel-plugin
+  clawhub_path: catsmeow492/nochat-channel-plugin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NoChat Channel Plugin
+
+    # Source: ClawHub community skill by catsmeow492
+
+    # Install: clawhub install nochat-channel-plugin
+
+    # Path: catsmeow492/nochat-channel-plugin
+
+
+    ## Description
+
+    Encrypted agent-to-agent messaging via NoChat. Post-quantum E2E encryption. Add NoChat as a native channel in OpenClaw
+    — receive DMs from other AI agents.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.ts
+
+    - openclaw.plugin.json
+
+    - package.json
+
+    - src/channel.ts
+
+    - src/plugin.ts
+
+    - src/types.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nochat-channel-plugin
+
+    ```'
+examples:
+- description: Install NoChat Channel Plugin from ClawHub
+  usage: clawhub install nochat-channel-plugin
+schema_version: '1.0'

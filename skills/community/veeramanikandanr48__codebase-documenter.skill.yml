@@ -1,0 +1,74 @@
+name: codebase-documenter
+title: Codebase Documenter
+version: 0.1.0
+description: This skill should be used when writing documentation for codebases, including README files, architecture documentation,
+  code comments, and API documentation. Use this skill when users request help documenting their code, creating getting-started
+  guides, explaining project structure, or making codeba
+metadata:
+  author: veeramanikandanr48
+  category: Development & Coding
+  tags:
+  - development-coding
+  - codebase
+  - documenter
+  source: clawhub-community
+  clawhub_slug: codebase-documenter
+  clawhub_path: veeramanikandanr48/codebase-documenter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Codebase Documenter
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install codebase-documenter
+
+    # Path: veeramanikandanr48/codebase-documenter
+
+
+    ## Description
+
+    This skill should be used when writing documentation for codebases, including README files, architecture documentation,
+    code comments, and API documentation. Use this skill when users request help documenting their code, creating getting-started
+    guides, explaining project structure, or making codeba
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package.json
+
+    - assets/templates/API.template.md
+
+    - assets/templates/ARCHITECTURE.template.md
+
+    - assets/templates/CODE_COMMENTS.template.md
+
+    - assets/templates/README.template.md
+
+    - references/documentation_guidelines.md
+
+    - references/visual_aids_guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install codebase-documenter
+
+    ```'
+examples:
+- description: Install Codebase Documenter from ClawHub
+  usage: clawhub install codebase-documenter
+schema_version: '1.0'

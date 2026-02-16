@@ -1,0 +1,58 @@
+name: tesla-commands
+title: Tesla Commands
+version: 1.0.0
+description: Control your Tesla via MyTeslaMate API. Supports multi-vehicle accounts, climate control, and charging schedules.
+metadata:
+  author: ovaris
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tesla
+  - commands
+  source: clawhub-community
+  clawhub_slug: tesla-commands
+  clawhub_path: ovaris/tesla-commands
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tesla Commands
+
+    # Source: ClawHub community skill by ovaris
+
+    # Install: clawhub install tesla-commands
+
+    # Path: ovaris/tesla-commands
+
+
+    ## Description
+
+    Control your Tesla via MyTeslaMate API. Supports multi-vehicle accounts, climate control, and charging schedules.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - bin/tesla-control.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tesla-commands
+
+    ```'
+examples:
+- description: Install Tesla Commands from ClawHub
+  usage: clawhub install tesla-commands
+schema_version: '1.0'

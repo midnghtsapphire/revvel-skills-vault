@@ -1,0 +1,53 @@
+name: imagerouter
+title: ImageRouter
+version: 0.1.0
+description: Generate AI images with any model using ImageRouter API (requires API key).
+metadata:
+  author: dawe35
+  category: Media & Content
+  tags:
+  - media-content
+  - imagerouter
+  source: clawhub-community
+  clawhub_slug: image-router
+  clawhub_path: dawe35/image-router
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ImageRouter
+
+    # Source: ClawHub community skill by dawe35
+
+    # Install: clawhub install image-router
+
+    # Path: dawe35/image-router
+
+
+    ## Description
+
+    Generate AI images with any model using ImageRouter API (requires API key).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install image-router
+
+    ```'
+examples:
+- description: Install ImageRouter from ClawHub
+  usage: clawhub install image-router
+schema_version: '1.0'

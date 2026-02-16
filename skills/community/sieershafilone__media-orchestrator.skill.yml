@@ -1,0 +1,60 @@
+name: media-orchestrator
+title: Media Orchestrator
+version: 0.1.1
+description: Unified skill for resolving, downloading, and delivering media (audio/video) to chat platforms. Integrates yt-dlp
+  for resolution and handles Spotify metadata sync.
+metadata:
+  author: sieershafilone
+  category: Media & Content
+  tags:
+  - media-content
+  - media
+  - orchestrator
+  source: clawhub-community
+  clawhub_slug: media-orchestrator
+  clawhub_path: sieershafilone/media-orchestrator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Media Orchestrator
+
+    # Source: ClawHub community skill by sieershafilone
+
+    # Install: clawhub install media-orchestrator
+
+    # Path: sieershafilone/media-orchestrator
+
+
+    ## Description
+
+    Unified skill for resolving, downloading, and delivering media (audio/video) to chat platforms. Integrates yt-dlp for
+    resolution and handles Spotify metadata sync.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - manifest.yaml
+
+    - scripts/orchestrator.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install media-orchestrator
+
+    ```'
+examples:
+- description: Install Media Orchestrator from ClawHub
+  usage: clawhub install media-orchestrator
+schema_version: '1.0'

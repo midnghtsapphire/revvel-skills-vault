@@ -1,0 +1,60 @@
+name: idfm_journey
+title: IDFM Journey
+version: 0.1.5
+description: Query Île-de-France Mobilités (IDFM) PRIM/Navitia for Paris + suburbs public transport (Île-de-France) — place
+  resolution, journey planning, and disruptions/incident checks.
+metadata:
+  author: anthonymq
+  category: General
+  tags:
+  - general
+  - idfm
+  - journey
+  source: clawhub-community
+  clawhub_slug: idfm-journey-skill
+  clawhub_path: anthonymq/idfm-journey-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# IDFM Journey
+
+    # Source: ClawHub community skill by anthonymq
+
+    # Install: clawhub install idfm-journey-skill
+
+    # Path: anthonymq/idfm-journey-skill
+
+
+    ## Description
+
+    Query Île-de-France Mobilités (IDFM) PRIM/Navitia for Paris + suburbs public transport (Île-de-France) — place resolution,
+    journey planning, and disruptions/incident checks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/idfm-prim.md
+
+    - scripts/idfm.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install idfm-journey-skill
+
+    ```'
+examples:
+- description: Install IDFM Journey from ClawHub
+  usage: clawhub install idfm-journey-skill
+schema_version: '1.0'

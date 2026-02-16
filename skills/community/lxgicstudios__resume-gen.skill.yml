@@ -1,0 +1,54 @@
+name: resume-gen
+title: Developer Resume Builder
+version: 1.0.2
+description: Generate and improve developer resumes. Use when job hunting.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - resume
+  - gen
+  source: clawhub-community
+  clawhub_slug: resume-gen
+  clawhub_path: lxgicstudios/resume-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Developer Resume Builder
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install resume-gen
+
+    # Path: lxgicstudios/resume-gen
+
+
+    ## Description
+
+    Generate and improve developer resumes. Use when job hunting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install resume-gen
+
+    ```'
+examples:
+- description: Install Developer Resume Builder from ClawHub
+  usage: clawhub install resume-gen
+schema_version: '1.0'

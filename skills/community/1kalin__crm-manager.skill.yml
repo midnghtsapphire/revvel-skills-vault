@@ -1,0 +1,58 @@
+name: crm_manager
+title: CRM Manager
+version: 1.0.0
+description: Manages a local CSV-based CRM with pipeline tracking
+metadata:
+  author: 1kalin
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - crm
+  - manager
+  source: clawhub-community
+  clawhub_slug: crm-manager
+  clawhub_path: 1kalin/crm-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CRM Manager
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install crm-manager
+
+    # Path: 1kalin/crm-manager
+
+
+    ## Description
+
+    Manages a local CSV-based CRM with pipeline tracking
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - crm-template.csv
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crm-manager
+
+    ```'
+examples:
+- description: Install CRM Manager from ClawHub
+  usage: clawhub install crm-manager
+schema_version: '1.0'

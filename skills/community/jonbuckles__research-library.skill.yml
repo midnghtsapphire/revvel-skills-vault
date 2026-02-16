@@ -1,0 +1,72 @@
+name: research-library
+title: Research Library
+version: 0.1.0
+description: Local-first multimedia research library for hardware projects. Capture code, CAD, PDFs, images. Search with material-type
+  weighting. Project isolation with cross-references. Async extraction. Backup + restore.
+metadata:
+  author: jonbuckles
+  category: Search & Research
+  tags:
+  - search-research
+  - research
+  - library
+  source: clawhub-community
+  clawhub_slug: research-library
+  clawhub_path: jonbuckles/research-library
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Research Library
+
+    # Source: ClawHub community skill by jonbuckles
+
+    # Install: clawhub install research-library
+
+    # Path: jonbuckles/research-library
+
+
+    ## Description
+
+    Local-first multimedia research library for hardware projects. Capture code, CAD, PDFs, images. Search with material-type
+    weighting. Project isolation with cross-references. Async extraction. Backup + restore.
+
+
+    ## Files
+
+    - BUILD_LOG.md
+
+    - PHASE1-FINAL-METRICS.md
+
+    - RESEARCH-LIBRARY-SKILL.md
+
+    - SKILL.md
+
+    - TECHNICAL-NOTES.md
+
+    - _meta.json
+
+    - docs/CLI-REFERENCE.md
+
+    - docs/EXTRACTION-GUIDE.md
+
+    - docs/SEARCH-GUIDE.md
+
+    - docs/WORKER-GUIDE.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install research-library
+
+    ```'
+examples:
+- description: Install Research Library from ClawHub
+  usage: clawhub install research-library
+schema_version: '1.0'

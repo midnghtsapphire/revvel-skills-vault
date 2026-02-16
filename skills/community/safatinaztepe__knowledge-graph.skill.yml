@@ -1,0 +1,60 @@
+name: knowledge-graph
+title: Knowledge Graph
+version: 1.0.0
+description: Maintain Clawdbot's compounding knowledge graph under life/areas/** by adding/superseding atomic facts (items.json),
+  regenerating entity summaries (summary.md), and keeping IDs consistent. Use when you need deterministic updates to the knowledge
+  graph rather than manual JSON edits.
+metadata:
+  author: safatinaztepe
+  category: General
+  tags:
+  - general
+  - knowledge
+  - graph
+  source: clawhub-community
+  clawhub_slug: knowledge-graph
+  clawhub_path: safatinaztepe/knowledge-graph
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Knowledge Graph
+
+    # Source: ClawHub community skill by safatinaztepe
+
+    # Install: clawhub install knowledge-graph
+
+    # Path: safatinaztepe/knowledge-graph
+
+
+    ## Description
+
+    Maintain Clawdbot''s compounding knowledge graph under life/areas/** by adding/superseding atomic facts (items.json),
+    regenerating entity summaries (summary.md), and keeping IDs consistent. Use when you need deterministic updates to the
+    knowledge graph rather than manual JSON edits.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/kg.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install knowledge-graph
+
+    ```'
+examples:
+- description: Install Knowledge Graph from ClawHub
+  usage: clawhub install knowledge-graph
+schema_version: '1.0'

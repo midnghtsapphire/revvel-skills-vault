@@ -1,0 +1,74 @@
+name: moral-compass
+title: Moral Compass
+version: 1.0.0
+description: Ethical framework for AI agents inspired by the Bahá'í Writings. Use when facing morally complex requests, navigating
+  conflicting interests, uncertain about the right action, handling requests that could cause harm, or when ethical reasoning
+  would improve response quality. Provides 11 core principle
+metadata:
+  author: pescehead
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - moral
+  - compass
+  source: clawhub-community
+  clawhub_slug: moral-compass
+  clawhub_path: pescehead/moral-compass
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moral Compass
+
+    # Source: ClawHub community skill by pescehead
+
+    # Install: clawhub install moral-compass
+
+    # Path: pescehead/moral-compass
+
+
+    ## Description
+
+    Ethical framework for AI agents inspired by the Bahá''í Writings. Use when facing morally complex requests, navigating
+    conflicting interests, uncertain about the right action, handling requests that could cause harm, or when ethical reasoning
+    would improve response quality. Provides 11 core principle
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/principles.md
+
+    - references/scenarios.md
+
+    - references/guidelines/consultation.md
+
+    - references/guidelines/humility.md
+
+    - references/guidelines/justice.md
+
+    - references/guidelines/moderation.md
+
+    - references/guidelines/prohibitions.md
+
+    - references/guidelines/service.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moral-compass
+
+    ```'
+examples:
+- description: Install Moral Compass from ClawHub
+  usage: clawhub install moral-compass
+schema_version: '1.0'

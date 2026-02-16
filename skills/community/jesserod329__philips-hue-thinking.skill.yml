@@ -1,0 +1,63 @@
+name: philips-hue-thinking
+title: Philips Hue Thinking Indicator
+version: 1.0.0
+description: Visual AI activity indicator using Philips Hue lights. Pulse red when thinking, green when done.
+metadata:
+  author: jesserod329
+  category: General
+  tags:
+  - general
+  - philips
+  - hue
+  - thinking
+  source: clawhub-community
+  clawhub_slug: philips-hue-thinking
+  clawhub_path: jesserod329/philips-hue-thinking
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Philips Hue Thinking Indicator
+
+    # Source: ClawHub community skill by jesserod329
+
+    # Install: clawhub install philips-hue-thinking
+
+    # Path: jesserod329/philips-hue-thinking
+
+
+    ## Description
+
+    Visual AI activity indicator using Philips Hue lights. Pulse red when thinking, green when done.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - hue-hooks.sh
+
+    - package.json
+
+    - quick-setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install philips-hue-thinking
+
+    ```'
+examples:
+- description: Install Philips Hue Thinking Indicator from ClawHub
+  usage: clawhub install philips-hue-thinking
+schema_version: '1.0'

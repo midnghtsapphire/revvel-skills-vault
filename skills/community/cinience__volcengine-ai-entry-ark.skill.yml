@@ -1,0 +1,61 @@
+name: volcengine-ai-entry-ark
+title: Volcengine Ai Entry Ark
+version: 1.0.0
+description: Entry skill for Volcengine ARK model invocation and routing. Use when users ask to start with ARK, need request
+  templates, endpoint setup, model routing, or authentication troubleshooting.
+metadata:
+  author: cinience
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - volcengine
+  - entry
+  - ark
+  source: clawhub-community
+  clawhub_slug: volcengine-ai-entry-ark
+  clawhub_path: cinience/volcengine-ai-entry-ark
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Volcengine Ai Entry Ark
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install volcengine-ai-entry-ark
+
+    # Path: cinience/volcengine-ai-entry-ark
+
+
+    ## Description
+
+    Entry skill for Volcengine ARK model invocation and routing. Use when users ask to start with ARK, need request templates,
+    endpoint setup, model routing, or authentication troubleshooting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install volcengine-ai-entry-ark
+
+    ```'
+examples:
+- description: Install Volcengine Ai Entry Ark from ClawHub
+  usage: clawhub install volcengine-ai-entry-ark
+schema_version: '1.0'

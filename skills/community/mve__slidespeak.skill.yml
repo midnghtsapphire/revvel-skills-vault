@@ -1,0 +1,66 @@
+name: slidespeak
+title: SlideSpeak
+version: 1.0.0
+description: Generate, edit, and manage PowerPoint presentations via the SlideSpeak API. Use this skill when users want to
+  create presentations from text or documents, edit existing presentations, or work with presentation templates.
+metadata:
+  author: mve
+  category: Development & Coding
+  tags:
+  - development-coding
+  - slidespeak
+  - bash read write
+  source: clawhub-community
+  clawhub_slug: slidespeak
+  clawhub_path: mve/slidespeak
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash Read Write
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SlideSpeak
+
+    # Source: ClawHub community skill by mve
+
+    # Install: clawhub install slidespeak
+
+    # Path: mve/slidespeak
+
+
+    ## Description
+
+    Generate, edit, and manage PowerPoint presentations via the SlideSpeak API. Use this skill when users want to create presentations
+    from text or documents, edit existing presentations, or work with presentation templates.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API.md
+
+    - scripts/slidespeak.mjs
+
+
+    ## Allowed Tools
+
+    Bash Read Write
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install slidespeak
+
+    ```'
+examples:
+- description: Install SlideSpeak from ClawHub
+  usage: clawhub install slidespeak
+schema_version: '1.0'

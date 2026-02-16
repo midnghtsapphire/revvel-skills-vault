@@ -1,0 +1,53 @@
+name: bitwarden
+title: Bitwarden
+version: 1.0.0
+description: Access and manage Bitwarden/Vaultwarden passwords securely using the rbw CLI.
+metadata:
+  author: asleep123
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - bitwarden
+  source: clawhub-community
+  clawhub_slug: bitwarden
+  clawhub_path: asleep123/bitwarden
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bitwarden
+
+    # Source: ClawHub community skill by asleep123
+
+    # Install: clawhub install bitwarden
+
+    # Path: asleep123/bitwarden
+
+
+    ## Description
+
+    Access and manage Bitwarden/Vaultwarden passwords securely using the rbw CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bitwarden
+
+    ```'
+examples:
+- description: Install Bitwarden from ClawHub
+  usage: clawhub install bitwarden
+schema_version: '1.0'

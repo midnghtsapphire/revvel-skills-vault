@@ -1,0 +1,34 @@
+name: prediction-bridge
+title: Prediction Bridge Skill
+version: 1.0.0
+description: 'Query live prediction market data from the Prediction Bridge API. Use when the user asks about prediction markets,
+  event odds, market prices, whale trades, trader analytics, or news related to prediction markets. Provides semantic search
+  across 9+ platforms (Polymarket, Kalshi, Limitless, Probable, '
+metadata:
+  author: kimcheese888
+  category: Search & Research
+  tags:
+  - search-research
+  - prediction
+  - bridge
+  source: clawhub-community
+  clawhub_slug: prediction-bridge
+  clawhub_path: kimcheese888/prediction-bridge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Prediction Bridge Skill\n# Source: ClawHub community skill by kimcheese888\n# Install: clawhub install prediction-bridge\n\
+    # Path: kimcheese888/prediction-bridge\n\n## Description\nQuery live prediction market data from the Prediction Bridge\
+    \ API. Use when the user asks about prediction markets, event odds, market prices, whale trades, trader analytics, or\
+    \ news related to prediction markets. Provides semantic search across 9+ platforms (Polymarket, Kalshi, Limitless, Probable,\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n- scripts/prediction_bridge.py\n\n## Installation\n```bash\nclawhub install\
+    \ prediction-bridge\n```"
+examples:
+- description: Install Prediction Bridge Skill from ClawHub
+  usage: clawhub install prediction-bridge
+schema_version: '1.0'

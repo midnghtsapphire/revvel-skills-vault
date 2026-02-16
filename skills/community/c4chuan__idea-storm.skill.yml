@@ -1,0 +1,60 @@
+name: idea-lab
+title: Idea Storm
+version: 1.0.0
+description: 工程问题的自动化迭代实验室。给定一个 idea 或工程问题，自动调研方案、设计实现、验证效果、迭代优化，结果存入 Notion。触发词："idea-lab"、"实验一下"、"帮我验证"、"迭代优化"、"idea 验证"。当用户提出一个工程问题并希望自动化地调研→设计→验证→迭代时使用此
+  skill。
+metadata:
+  author: c4chuan
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - idea
+  - lab
+  source: clawhub-community
+  clawhub_slug: idea-storm
+  clawhub_path: c4chuan/idea-storm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Idea Storm
+
+    # Source: ClawHub community skill by c4chuan
+
+    # Install: clawhub install idea-storm
+
+    # Path: c4chuan/idea-storm
+
+
+    ## Description
+
+    工程问题的自动化迭代实验室。给定一个 idea 或工程问题，自动调研方案、设计实现、验证效果、迭代优化，结果存入 Notion。触发词："idea-lab"、"实验一下"、"帮我验证"、"迭代优化"、"idea 验证"。当用户提出一个工程问题并希望自动化地调研→设计→验证→迭代时使用此
+    skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/notion-setup.md
+
+    - scripts/compare_images.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install idea-storm
+
+    ```'
+examples:
+- description: Install Idea Storm from ClawHub
+  usage: clawhub install idea-storm
+schema_version: '1.0'

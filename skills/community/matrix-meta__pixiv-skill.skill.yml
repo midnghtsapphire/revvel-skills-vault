@@ -1,0 +1,71 @@
+name: pixiv
+title: pixiv
+version: 2.0.0
+description: Access Pixiv for searching illustrations, manga, and viewing rankings. Supports searching by keyword and viewing
+  daily/weekly/monthly rankings.
+metadata:
+  author: matrix-meta
+  category: Search & Research
+  tags:
+  - search-research
+  - pixiv
+  source: clawhub-community
+  clawhub_slug: pixiv-skill
+  clawhub_path: matrix-meta/pixiv-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# pixiv
+
+    # Source: ClawHub community skill by matrix-meta
+
+    # Install: clawhub install pixiv-skill
+
+    # Path: matrix-meta/pixiv-skill
+
+
+    ## Description
+
+    Access Pixiv for searching illustrations, manga, and viewing rankings. Supports searching by keyword and viewing daily/weekly/monthly
+    rankings.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/download-ugoira.js
+
+    - scripts/pack.sh
+
+    - scripts/pixiv-app-publish.js
+
+    - scripts/pixiv-cli.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pixiv-skill
+
+    ```'
+examples:
+- description: Install pixiv from ClawHub
+  usage: clawhub install pixiv-skill
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: plugin-validator
+title: Plugin Validator
+version: 1.0.0
+description: Validates SpecWeave plugin installation when EXPLICITLY requested by user. Use for checking if plugins are installed
+  correctly, validating marketplace registration, or troubleshooting missing plugins. Only triggers on explicit requests to
+  avoid false positives during normal workflow.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - plugin
+  - validator
+  - read
+  - bash
+  - grep
+  source: clawhub-community
+  clawhub_slug: sw-plugin-validator
+  clawhub_path: anton-abyzov/sw-plugin-validator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Bash
+  - Grep
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Plugin Validator
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-plugin-validator
+
+    # Path: anton-abyzov/sw-plugin-validator
+
+
+    ## Description
+
+    Validates SpecWeave plugin installation when EXPLICITLY requested by user. Use for checking if plugins are installed correctly,
+    validating marketplace registration, or troubleshooting missing plugins. Only triggers on explicit requests to avoid false
+    positives during normal workflow.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Bash, Grep
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-plugin-validator
+
+    ```'
+examples:
+- description: Install Plugin Validator from ClawHub
+  usage: clawhub install sw-plugin-validator
+schema_version: '1.0'

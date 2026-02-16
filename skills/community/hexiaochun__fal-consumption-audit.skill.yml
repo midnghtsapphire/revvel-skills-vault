@@ -1,0 +1,58 @@
+name: fal-consumption-audit
+title: fal-consumption-audit
+version: 1.0.0
+description: 审计 fal 账号消耗与用户扣费的一致性。查询 fal 官方账单，交叉比对 fal_tasks 中的用户消耗，汇总积分/现金明细，检测异常。当用户提到"消耗审计"、"账单核对"、"fal 对账"、"用量异常"时使用此
+  skill。
+metadata:
+  author: hexiaochun
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - fal
+  - consumption
+  - audit
+  source: clawhub-community
+  clawhub_slug: fal-consumption-audit
+  clawhub_path: hexiaochun/fal-consumption-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# fal-consumption-audit
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install fal-consumption-audit
+
+    # Path: hexiaochun/fal-consumption-audit
+
+
+    ## Description
+
+    审计 fal 账号消耗与用户扣费的一致性。查询 fal 官方账单，交叉比对 fal_tasks 中的用户消耗，汇总积分/现金明细，检测异常。当用户提到"消耗审计"、"账单核对"、"fal 对账"、"用量异常"时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - reference.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fal-consumption-audit
+
+    ```'
+examples:
+- description: Install fal-consumption-audit from ClawHub
+  usage: clawhub install fal-consumption-audit
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: x402
+title: X402
+version: 1.0.0
+description: Use x402 protocol for HTTP-native crypto payments. Use when Clawdbot needs to pay for APIs, access paid resources,
+  or handle 402 Payment Required responses. Supports USDC payments on Base, Ethereum, and other EVM chains via the x402 standard.
+metadata:
+  author: 0xterrybit
+  category: Development & Coding
+  tags:
+  - development-coding
+  - x402
+  source: clawhub-community
+  clawhub_slug: x402
+  clawhub_path: 0xterrybit/x402
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X402
+
+    # Source: ClawHub community skill by 0xterrybit
+
+    # Install: clawhub install x402
+
+    # Path: 0xterrybit/x402
+
+
+    ## Description
+
+    Use x402 protocol for HTTP-native crypto payments. Use when Clawdbot needs to pay for APIs, access paid resources, or
+    handle 402 Payment Required responses. Supports USDC payments on Base, Ethereum, and other EVM chains via the x402 standard.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/protocol-spec.md
+
+    - scripts/check-balance.sh
+
+    - scripts/x402-fetch.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x402
+
+    ```'
+examples:
+- description: Install X402 from ClawHub
+  usage: clawhub install x402
+schema_version: '1.0'

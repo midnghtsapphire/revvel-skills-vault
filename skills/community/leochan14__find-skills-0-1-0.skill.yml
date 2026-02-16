@@ -1,0 +1,58 @@
+name: find-skills
+title: Find Skills 0.1.0
+version: 1.0.0
+description: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for
+  X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user
+  is looking for functionality that might exist as an installable ski
+metadata:
+  author: leochan14
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - find
+  - skills
+  source: clawhub-community
+  clawhub_slug: find-skills-0-1-0
+  clawhub_path: leochan14/find-skills-0-1-0
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Find Skills 0.1.0
+
+    # Source: ClawHub community skill by leochan14
+
+    # Install: clawhub install find-skills-0-1-0
+
+    # Path: leochan14/find-skills-0-1-0
+
+
+    ## Description
+
+    Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is
+    there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is
+    looking for functionality that might exist as an installable ski
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install find-skills-0-1-0
+
+    ```'
+examples:
+- description: Install Find Skills 0.1.0 from ClawHub
+  usage: clawhub install find-skills-0-1-0
+schema_version: '1.0'

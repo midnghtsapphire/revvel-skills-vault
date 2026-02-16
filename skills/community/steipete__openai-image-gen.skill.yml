@@ -1,0 +1,57 @@
+name: openai-image-gen
+title: Openai Image Gen
+version: 1.0.1
+description: Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.
+metadata:
+  author: steipete
+  category: Media & Content
+  tags:
+  - media-content
+  - openai
+  - image
+  - gen
+  source: clawhub-community
+  clawhub_slug: openai-image-gen
+  clawhub_path: steipete/openai-image-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openai Image Gen
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install openai-image-gen
+
+    # Path: steipete/openai-image-gen
+
+
+    ## Description
+
+    Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gen.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openai-image-gen
+
+    ```'
+examples:
+- description: Install Openai Image Gen from ClawHub
+  usage: clawhub install openai-image-gen
+schema_version: '1.0'

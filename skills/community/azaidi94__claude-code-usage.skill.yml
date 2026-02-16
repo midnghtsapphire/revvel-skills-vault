@@ -1,0 +1,73 @@
+name: claude-code-usage
+title: Claude Code Usage
+version: 1.2.0
+description: Check Claude Code OAuth usage limits (session & weekly quotas). Use when user asks about Claude Code usage, remaining
+  limits, rate limits, or how much Claude usage they have left. Includes automated session refresh reminders and reset detection
+  monitoring.
+metadata:
+  author: azaidi94
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - claude
+  - code
+  - usage
+  source: clawhub-community
+  clawhub_slug: claude-code-usage
+  clawhub_path: azaidi94/claude-code-usage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claude Code Usage
+
+    # Source: ClawHub community skill by azaidi94
+
+    # Install: clawhub install claude-code-usage
+
+    # Path: azaidi94/claude-code-usage
+
+
+    ## Description
+
+    Check Claude Code OAuth usage limits (session & weekly quotas). Use when user asks about Claude Code usage, remaining
+    limits, rate limits, or how much Claude usage they have left. Includes automated session refresh reminders and reset detection
+    monitoring.
+
+
+    ## Files
+
+    - CRON_SETUP.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/claude-usage.sh
+
+    - scripts/monitor-and-notify.sh
+
+    - scripts/monitor-usage.sh
+
+    - scripts/session-reminder.sh
+
+    - scripts/setup-monitoring.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claude-code-usage
+
+    ```'
+examples:
+- description: Install Claude Code Usage from ClawHub
+  usage: clawhub install claude-code-usage
+schema_version: '1.0'

@@ -1,0 +1,68 @@
+name: trade
+title: Trade
+version: 0.1.0
+description: Swap or trade tokens on Base network. Use when you or the user want to trade, swap, exchange, buy, sell, or convert
+  between tokens like USDC, ETH, and WETH. Covers phrases like "buy ETH", "sell ETH for USDC", "convert USDC to ETH", "get
+  some ETH".
+metadata:
+  author: 0xrag
+  category: Utilities
+  tags:
+  - utilities
+  - trade
+  - '["bash(npx awal@latest status*)"'
+  - '"bash(npx awal@latest trade *)"'
+  - '"bash(npx awal@latest balance*)"]'
+  source: clawhub-community
+  clawhub_slug: trade
+  clawhub_path: 0xrag/trade
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '["Bash(npx awal@latest status*)"'
+  - '"Bash(npx awal@latest trade *)"'
+  - '"Bash(npx awal@latest balance*)"]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trade
+
+    # Source: ClawHub community skill by 0xrag
+
+    # Install: clawhub install trade
+
+    # Path: 0xrag/trade
+
+
+    ## Description
+
+    Swap or trade tokens on Base network. Use when you or the user want to trade, swap, exchange, buy, sell, or convert between
+    tokens like USDC, ETH, and WETH. Covers phrases like "buy ETH", "sell ETH for USDC", "convert USDC to ETH", "get some
+    ETH".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    ["Bash(npx awal@latest status*)", "Bash(npx awal@latest trade *)", "Bash(npx awal@latest balance*)"]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trade
+
+    ```'
+examples:
+- description: Install Trade from ClawHub
+  usage: clawhub install trade
+schema_version: '1.0'

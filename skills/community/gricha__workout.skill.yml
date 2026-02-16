@@ -1,0 +1,55 @@
+name: workout
+title: Workout
+version: 1.1.0
+description: Track workouts, log sets, manage exercises and templates with workout-cli. Supports multi-user profiles. Use
+  when helping users record gym sessions, view history, or analyze strength progression.
+metadata:
+  author: gricha
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - workout
+  source: clawhub-community
+  clawhub_slug: workout
+  clawhub_path: gricha/workout
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Workout
+
+    # Source: ClawHub community skill by gricha
+
+    # Install: clawhub install workout
+
+    # Path: gricha/workout
+
+
+    ## Description
+
+    Track workouts, log sets, manage exercises and templates with workout-cli. Supports multi-user profiles. Use when helping
+    users record gym sessions, view history, or analyze strength progression.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install workout
+
+    ```'
+examples:
+- description: Install Workout from ClawHub
+  usage: clawhub install workout
+schema_version: '1.0'

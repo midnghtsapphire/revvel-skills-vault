@@ -1,0 +1,58 @@
+name: google-photos
+title: Google Photos Manager for OpenClaw
+version: 1.0.0
+description: Manage Google Photos library. Upload photos, create albums, and list library content. Use when the user wants
+  to backup, organize, or share images via Google Photos.
+metadata:
+  author: jorgermp
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - photos
+  source: clawhub-community
+  clawhub_slug: google-photos
+  clawhub_path: jorgermp/google-photos
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Photos Manager for OpenClaw
+
+    # Source: ClawHub community skill by jorgermp
+
+    # Install: clawhub install google-photos
+
+    # Path: jorgermp/google-photos
+
+
+    ## Description
+
+    Manage Google Photos library. Upload photos, create albums, and list library content. Use when the user wants to backup,
+    organize, or share images via Google Photos.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gphotos.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-photos
+
+    ```'
+examples:
+- description: Install Google Photos Manager for OpenClaw from ClawHub
+  usage: clawhub install google-photos
+schema_version: '1.0'

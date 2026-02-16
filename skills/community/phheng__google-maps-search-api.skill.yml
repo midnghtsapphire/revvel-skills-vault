@@ -1,0 +1,62 @@
+name: google-maps-search-api
+title: Google Maps Search Api
+version: 0.1.0
+description: This skill is designed to help users automatically extract business data from Google Maps search results. When
+  a user asks to "find coffee shops in New York," "search for dental clinics," or "extract business leads from Google Maps,"
+  the agent should proactively apply this skill.
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - maps
+  - search
+  - api
+  source: clawhub-community
+  clawhub_slug: google-maps-search-api
+  clawhub_path: phheng/google-maps-search-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Maps Search Api
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install google-maps-search-api
+
+    # Path: phheng/google-maps-search-api
+
+
+    ## Description
+
+    This skill is designed to help users automatically extract business data from Google Maps search results. When a user
+    asks to "find coffee shops in New York," "search for dental clinics," or "extract business leads from Google Maps," the
+    agent should proactively apply this skill.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/google_maps_search_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-maps-search-api
+
+    ```'
+examples:
+- description: Install Google Maps Search Api from ClawHub
+  usage: clawhub install google-maps-search-api
+schema_version: '1.0'

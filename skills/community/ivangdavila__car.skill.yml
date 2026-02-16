@@ -1,0 +1,59 @@
+name: car
+title: Car
+version: 1.0.0
+description: Buy, maintain, and handle car emergencies with cost estimates, maintenance schedules, and roadside problem-solving.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - car
+  source: clawhub-community
+  clawhub_slug: car
+  clawhub_path: ivangdavila/car
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Car
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install car
+
+    # Path: ivangdavila/car
+
+
+    ## Description
+
+    Buy, maintain, and handle car emergencies with cost estimates, maintenance schedules, and roadside problem-solving.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - buying.md
+
+    - emergencies.md
+
+    - maintenance.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install car
+
+    ```'
+examples:
+- description: Install Car from ClawHub
+  usage: clawhub install car
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: restart-guard
+title: Restart Guard
+version: 1.1.0
+description: Safely restart the OpenClaw Gateway with context preservation, health monitoring, and failure notification. Use
+  when the agent needs to restart the Gateway (config changes, model switches, plugin reloads, or any reason requiring a restart).
+  Handles pre-restart context saving, guardian process spawni
+metadata:
+  author: zjianru
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - restart
+  - guard
+  source: clawhub-community
+  clawhub_slug: restart-guard
+  clawhub_path: zjianru/restart-guard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Restart Guard
+
+    # Source: ClawHub community skill by zjianru
+
+    # Install: clawhub install restart-guard
+
+    # Path: zjianru/restart-guard
+
+
+    ## Description
+
+    Safely restart the OpenClaw Gateway with context preservation, health monitoring, and failure notification. Use when the
+    agent needs to restart the Gateway (config changes, model switches, plugin reloads, or any reason requiring a restart).
+    Handles pre-restart context saving, guardian process spawni
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.yaml
+
+    - references/troubleshooting.md
+
+    - scripts/guardian.py
+
+    - scripts/notify.py
+
+    - scripts/postcheck.py
+
+    - scripts/restart.py
+
+    - scripts/write_context.py
+
+    - templates/restart-context.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install restart-guard
+
+    ```'
+examples:
+- description: Install Restart Guard from ClawHub
+  usage: clawhub install restart-guard
+schema_version: '1.0'

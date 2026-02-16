@@ -1,0 +1,57 @@
+name: triage
+title: Triage
+version: 1.0.0
+description: Auto-learns to prioritize tasks by urgency, impact, and user patterns. Grows smarter with each decision.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - triage
+  source: clawhub-community
+  clawhub_slug: triage
+  clawhub_path: ivangdavila/triage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Triage
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install triage
+
+    # Path: ivangdavila/triage
+
+
+    ## Description
+
+    Auto-learns to prioritize tasks by urgency, impact, and user patterns. Grows smarter with each decision.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - patterns.md
+
+    - signals.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install triage
+
+    ```'
+examples:
+- description: Install Triage from ClawHub
+  usage: clawhub install triage
+schema_version: '1.0'

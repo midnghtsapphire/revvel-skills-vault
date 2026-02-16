@@ -1,0 +1,55 @@
+name: seedream_4_5_____
+title: Seedream 4.5 图像生成
+version: 1.0.0
+description: 使用 Seedream 4.5 模型生成或编辑图像。当用户想要文生图、图生图、图像编辑，或提到 seedream、字节跳动图像生成时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - seedream
+  - '4.5'
+  - 图像生成
+  source: clawhub-community
+  clawhub_slug: seedream-image
+  clawhub_path: hexiaochun/seedream-image
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seedream 4.5 图像生成
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install seedream-image
+
+    # Path: hexiaochun/seedream-image
+
+
+    ## Description
+
+    使用 Seedream 4.5 模型生成或编辑图像。当用户想要文生图、图生图、图像编辑，或提到 seedream、字节跳动图像生成时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seedream-image
+
+    ```'
+examples:
+- description: Install Seedream 4.5 图像生成 from ClawHub
+  usage: clawhub install seedream-image
+schema_version: '1.0'

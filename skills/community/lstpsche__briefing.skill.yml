@@ -1,0 +1,55 @@
+name: briefing
+title: Briefing
+version: 1.0.0
+description: '"Daily briefing: gathers today''s calendar, active todos, and local weather from available workspace tools,
+  then composes a concise summary."'
+metadata:
+  author: lstpsche
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - briefing
+  source: clawhub-community
+  clawhub_slug: briefing
+  clawhub_path: lstpsche/briefing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Briefing
+
+    # Source: ClawHub community skill by lstpsche
+
+    # Install: clawhub install briefing
+
+    # Path: lstpsche/briefing
+
+
+    ## Description
+
+    "Daily briefing: gathers today''s calendar, active todos, and local weather from available workspace tools, then composes
+    a concise summary."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install briefing
+
+    ```'
+examples:
+- description: Install Briefing from ClawHub
+  usage: clawhub install briefing
+schema_version: '1.0'

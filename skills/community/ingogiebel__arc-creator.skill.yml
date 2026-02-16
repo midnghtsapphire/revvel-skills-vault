@@ -1,0 +1,62 @@
+name: arc-creator
+title: ARC Creator
+version: 1.0.0
+description: Create and populate Annotated Research Contexts (ARCs) following the nfdi4plants ARC specification. Use when
+  creating a new ARC, adding studies/assays/workflows/runs, annotating ISA metadata, organizing research data into ARC structure,
+  or pushing ARCs to a DataHUB. Guides the user interactively thr
+metadata:
+  author: ingogiebel
+  category: Search & Research
+  tags:
+  - search-research
+  - arc
+  - creator
+  source: clawhub-community
+  clawhub_slug: arc-creator
+  clawhub_path: ingogiebel/arc-creator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ARC Creator
+
+    # Source: ClawHub community skill by ingogiebel
+
+    # Install: clawhub install arc-creator
+
+    # Path: ingogiebel/arc-creator
+
+
+    ## Description
+
+    Create and populate Annotated Research Contexts (ARCs) following the nfdi4plants ARC specification. Use when creating
+    a new ARC, adding studies/assays/workflows/runs, annotating ISA metadata, organizing research data into ARC structure,
+    or pushing ARCs to a DataHUB. Guides the user interactively thr
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/arc-spec.md
+
+    - scripts/create_arc.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install arc-creator
+
+    ```'
+examples:
+- description: Install ARC Creator from ClawHub
+  usage: clawhub install arc-creator
+schema_version: '1.0'

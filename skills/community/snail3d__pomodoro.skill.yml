@@ -1,0 +1,57 @@
+name: clawdoro
+title: ClawDoro
+version: 0.1.0
+description: A beautiful Pomodoro timer with task tracking. Opens a clean, focused timer interface in your browser.
+metadata:
+  author: snail3d
+  category: Search & Research
+  tags:
+  - search-research
+  - clawdoro
+  source: clawhub-community
+  clawhub_slug: pomodoro
+  clawhub_path: snail3d/pomodoro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawDoro
+
+    # Source: ClawHub community skill by snail3d
+
+    # Install: clawhub install pomodoro
+
+    # Path: snail3d/pomodoro
+
+
+    ## Description
+
+    A beautiful Pomodoro timer with task tracking. Opens a clean, focused timer interface in your browser.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - timer.html
+
+    - trigger.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pomodoro
+
+    ```'
+examples:
+- description: Install ClawDoro from ClawHub
+  usage: clawhub install pomodoro
+schema_version: '1.0'

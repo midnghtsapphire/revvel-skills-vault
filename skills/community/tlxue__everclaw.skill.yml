@@ -1,0 +1,57 @@
+name: everclaw
+title: Everclaw
+version: 0.3.3
+description: Encrypted cloud memory for your agent. Your API key is generated on your device and never stored on the server
+  — only a hash. Everything your agent saves is AES-256-GCM encrypted before it's stored. No one can read it, not even us.
+  One key, full recovery — switch devices, set up a fresh agent, enter
+metadata:
+  author: tlxue
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - everclaw
+  source: clawhub-community
+  clawhub_slug: everclaw
+  clawhub_path: tlxue/everclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Everclaw
+
+    # Source: ClawHub community skill by tlxue
+
+    # Install: clawhub install everclaw
+
+    # Path: tlxue/everclaw
+
+
+    ## Description
+
+    Encrypted cloud memory for your agent. Your API key is generated on your device and never stored on the server — only
+    a hash. Everything your agent saves is AES-256-GCM encrypted before it''s stored. No one can read it, not even us. One
+    key, full recovery — switch devices, set up a fresh agent, enter
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install everclaw
+
+    ```'
+examples:
+- description: Install Everclaw from ClawHub
+  usage: clawhub install everclaw
+schema_version: '1.0'

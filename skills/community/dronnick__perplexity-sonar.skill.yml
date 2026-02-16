@@ -1,0 +1,59 @@
+name: perplexity
+title: Perplexity AI Search (Sonar Only)
+version: 1.0.1
+description: Use Perplexity API for web-grounded AI search and research. Use when user needs up-to-date information, multi-step
+  reasoning with web citations, exhaustive research with source references, factual queries with current events, or competitive
+  analysis. Default when user mentions Perplexity, needs curr
+metadata:
+  author: dronnick
+  category: Search & Research
+  tags:
+  - search-research
+  - perplexity
+  source: clawhub-community
+  clawhub_slug: perplexity-sonar
+  clawhub_path: dronnick/perplexity-sonar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Perplexity AI Search (Sonar Only)
+
+    # Source: ClawHub community skill by dronnick
+
+    # Install: clawhub install perplexity-sonar
+
+    # Path: dronnick/perplexity-sonar
+
+
+    ## Description
+
+    Use Perplexity API for web-grounded AI search and research. Use when user needs up-to-date information, multi-step reasoning
+    with web citations, exhaustive research with source references, factual queries with current events, or competitive analysis.
+    Default when user mentions Perplexity, needs curr
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/perplexity_search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install perplexity-sonar
+
+    ```'
+examples:
+- description: Install Perplexity AI Search (Sonar Only) from ClawHub
+  usage: clawhub install perplexity-sonar
+schema_version: '1.0'

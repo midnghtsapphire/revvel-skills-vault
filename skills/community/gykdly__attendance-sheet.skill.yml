@@ -1,0 +1,58 @@
+name: attendance-sheet
+title: Attendance Sheet
+version: 1.0.0
+description: Generate professional attendance sheets in xlsx format from employee work information. Perfect for HR, team management,
+  and daily attendance tracking.
+metadata:
+  author: gykdly
+  category: General
+  tags:
+  - general
+  - attendance
+  - sheet
+  source: clawhub-community
+  clawhub_slug: attendance-sheet
+  clawhub_path: gykdly/attendance-sheet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Attendance Sheet
+
+    # Source: ClawHub community skill by gykdly
+
+    # Install: clawhub install attendance-sheet
+
+    # Path: gykdly/attendance-sheet
+
+
+    ## Description
+
+    Generate professional attendance sheets in xlsx format from employee work information. Perfect for HR, team management,
+    and daily attendance tracking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_attendance.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install attendance-sheet
+
+    ```'
+examples:
+- description: Install Attendance Sheet from ClawHub
+  usage: clawhub install attendance-sheet
+schema_version: '1.0'

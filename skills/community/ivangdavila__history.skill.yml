@@ -1,0 +1,53 @@
+name: history
+title: History
+version: 1.0.0
+description: Navigate the past from engaging stories to scholarly analysis at any depth.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - history
+  source: clawhub-community
+  clawhub_slug: history
+  clawhub_path: ivangdavila/history
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# History
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install history
+
+    # Path: ivangdavila/history
+
+
+    ## Description
+
+    Navigate the past from engaging stories to scholarly analysis at any depth.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install history
+
+    ```'
+examples:
+- description: Install History from ClawHub
+  usage: clawhub install history
+schema_version: '1.0'

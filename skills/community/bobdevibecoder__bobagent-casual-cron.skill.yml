@@ -1,0 +1,60 @@
+name: casual-cron
+title: casual-cron
+version: 1.0.0
+description: '"Create Clawdbot cron jobs from natural language with strict run-guard rules. Use when: users ask to schedule
+  reminders or messages (recurring or one-shot), especially via Telegram, or when they use /at or /every. Examples: ''Create
+  a daily reminder at 8am'', ''Remind me in 20 minutes'', ''Send me a Tele'
+metadata:
+  author: bobdevibecoder
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - casual
+  - cron
+  source: clawhub-community
+  clawhub_slug: bobagent-casual-cron
+  clawhub_path: bobdevibecoder/bobagent-casual-cron
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# casual-cron
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-casual-cron
+
+    # Path: bobdevibecoder/bobagent-casual-cron
+
+
+    ## Description
+
+    "Create Clawdbot cron jobs from natural language with strict run-guard rules. Use when: users ask to schedule reminders
+    or messages (recurring or one-shot), especially via Telegram, or when they use /at or /every. Examples: ''Create a daily
+    reminder at 8am'', ''Remind me in 20 minutes'', ''Send me a Tele
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cron_creator.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-casual-cron
+
+    ```'
+examples:
+- description: Install casual-cron from ClawHub
+  usage: clawhub install bobagent-casual-cron
+schema_version: '1.0'

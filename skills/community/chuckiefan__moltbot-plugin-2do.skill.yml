@@ -1,0 +1,75 @@
+name: moltbot-plugin-2do
+title: Moltbot Plugin 2do
+version: 1.0.2
+description: '"Create tasks and send them to 2Do app via email. Use when the user wants to: (1) add, create, or record a task/todo/reminder
+  in any form - e.g. ''添加任务'', ''创建待办'', ''新建任务'', ''加个任务'', ''记录任务'', ''add task'', ''create todo''; (2) ask to be reminded
+  of something - e.g. ''提醒我'', ''别忘了'', ''记得'', ''帮我记一下'', ''remind me'', ''re'
+metadata:
+  author: chuckiefan
+  category: Communication
+  tags:
+  - communication
+  - moltbot
+  - plugin
+  - 2do
+  source: clawhub-community
+  clawhub_slug: moltbot-plugin-2do
+  clawhub_path: chuckiefan/moltbot-plugin-2do
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltbot Plugin 2do
+
+    # Source: ClawHub community skill by chuckiefan
+
+    # Install: clawhub install moltbot-plugin-2do
+
+    # Path: chuckiefan/moltbot-plugin-2do
+
+
+    ## Description
+
+    "Create tasks and send them to 2Do app via email. Use when the user wants to: (1) add, create, or record a task/todo/reminder
+    in any form - e.g. ''添加任务'', ''创建待办'', ''新建任务'', ''加个任务'', ''记录任务'', ''add task'', ''create todo''; (2) ask to be reminded
+    of something - e.g. ''提醒我'', ''别忘了'', ''记得'', ''帮我记一下'', ''remind me'', ''re
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - pnpm-lock.yaml
+
+    - tsconfig.json
+
+    - tsup.config.ts
+
+    - vitest.config.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbot-plugin-2do
+
+    ```'
+examples:
+- description: Install Moltbot Plugin 2do from ClawHub
+  usage: clawhub install moltbot-plugin-2do
+schema_version: '1.0'

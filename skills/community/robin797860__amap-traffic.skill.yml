@@ -1,0 +1,56 @@
+name: amap-traffic
+title: Amap Traffic
+version: 1.0.0
+description: 高德地图实时路况查询与最优自驾路线规划技能。基于高德交通态势API和路径规划API，提供实时拥堵信息和最快路线建议。
+metadata:
+  author: robin797860
+  category: Development & Coding
+  tags:
+  - development-coding
+  - amap
+  - traffic
+  source: clawhub-community
+  clawhub_slug: amap-traffic
+  clawhub_path: robin797860/amap-traffic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Amap Traffic
+
+    # Source: ClawHub community skill by robin797860
+
+    # Install: clawhub install amap-traffic
+
+    # Path: robin797860/amap-traffic
+
+
+    ## Description
+
+    高德地图实时路况查询与最优自驾路线规划技能。基于高德交通态势API和路径规划API，提供实时拥堵信息和最快路线建议。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/amap_traffic.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install amap-traffic
+
+    ```'
+examples:
+- description: Install Amap Traffic from ClawHub
+  usage: clawhub install amap-traffic
+schema_version: '1.0'

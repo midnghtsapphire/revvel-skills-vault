@@ -1,0 +1,60 @@
+name: postproxy
+title: Postproxy
+version: 0.1.0
+description: Call PostProxy API to create and manage social media posts
+metadata:
+  author: danbaranov
+  category: Media & Content
+  tags:
+  - media-content
+  - postproxy
+  - bash
+  source: clawhub-community
+  clawhub_slug: postproxy-skill
+  clawhub_path: danbaranov/postproxy-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Postproxy
+
+    # Source: ClawHub community skill by danbaranov
+
+    # Install: clawhub install postproxy-skill
+
+    # Path: danbaranov/postproxy-skill
+
+
+    ## Description
+
+    Call PostProxy API to create and manage social media posts
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install postproxy-skill
+
+    ```'
+examples:
+- description: Install Postproxy from ClawHub
+  usage: clawhub install postproxy-skill
+schema_version: '1.0'

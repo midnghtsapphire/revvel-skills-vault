@@ -1,0 +1,63 @@
+name: todoist
+title: Todoist Natural Language
+version: 1.0.4
+description: Integrate with Todoist task management using natural language. Use when the user wants to manage Todoist tasks
+  or projects through conversational commands like "show my tasks for today", "add 'call dentist' to my todo list", "complete
+  my task about the meeting", or any mention of Todoist, tasks, due
+metadata:
+  author: hail2skins
+  category: Development & Coding
+  tags:
+  - development-coding
+  - todoist
+  source: clawhub-community
+  clawhub_slug: todoist-natural-language
+  clawhub_path: hail2skins/todoist-natural-language
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Todoist Natural Language
+
+    # Source: ClawHub community skill by hail2skins
+
+    # Install: clawhub install todoist-natural-language
+
+    # Path: hail2skins/todoist-natural-language
+
+
+    ## Description
+
+    Integrate with Todoist task management using natural language. Use when the user wants to manage Todoist tasks or projects
+    through conversational commands like "show my tasks for today", "add ''call dentist'' to my todo list", "complete my task
+    about the meeting", or any mention of Todoist, tasks, due
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/todoist.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todoist-natural-language
+
+    ```'
+examples:
+- description: Install Todoist Natural Language from ClawHub
+  usage: clawhub install todoist-natural-language
+schema_version: '1.0'

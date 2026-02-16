@@ -1,0 +1,74 @@
+name: agent-chronicle
+title: Agent Chronicle
+version: 0.6.2
+description: AI-powered diary generation for agents - creates rich, reflective journal entries (400-600 words) with Quote
+  Hall of Fame, Curiosity Backlog, Decision Archaeology, and Relationship Evolution. Generates personal, emotional entries
+  from the agent's perspective. Works best with Claude models (Haiku, So
+metadata:
+  author: robbyczgw-cla
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  - chronicle
+  source: clawhub-community
+  clawhub_slug: agent-chronicle
+  clawhub_path: robbyczgw-cla/agent-chronicle
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Chronicle
+
+    # Source: ClawHub community skill by robbyczgw-cla
+
+    # Install: clawhub install agent-chronicle
+
+    # Path: robbyczgw-cla/agent-chronicle
+
+
+    ## Description
+
+    AI-powered diary generation for agents - creates rich, reflective journal entries (400-600 words) with Quote Hall of Fame,
+    Curiosity Backlog, Decision Archaeology, and Relationship Evolution. Generates personal, emotional entries from the agent''s
+    perspective. Works best with Claude models (Haiku, So
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - CONTRIBUTORS.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - package.json
+
+    - skill.json
+
+    - scripts/export.py
+
+    - scripts/export_pdf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-chronicle
+
+    ```'
+examples:
+- description: Install Agent Chronicle from ClawHub
+  usage: clawhub install agent-chronicle
+schema_version: '1.0'

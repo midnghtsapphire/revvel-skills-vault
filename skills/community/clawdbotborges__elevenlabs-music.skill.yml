@@ -1,0 +1,60 @@
+name: elevenlabs-music
+title: ElevenLabs Music
+version: 1.0.1
+description: Generate music from text prompts using ElevenLabs Eleven Music API. Use when creating songs, soundtracks, jingles,
+  lullabies, or any audio music from descriptions. Supports vocals with AI-generated lyrics, instrumental tracks, and multiple
+  genres/styles. Requires paid ElevenLabs plan.
+metadata:
+  author: clawdbotborges
+  category: Media & Content
+  tags:
+  - media-content
+  - elevenlabs
+  - music
+  source: clawhub-community
+  clawhub_slug: elevenlabs-music
+  clawhub_path: clawdbotborges/elevenlabs-music
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ElevenLabs Music
+
+    # Source: ClawHub community skill by clawdbotborges
+
+    # Install: clawhub install elevenlabs-music
+
+    # Path: clawdbotborges/elevenlabs-music
+
+
+    ## Description
+
+    Generate music from text prompts using ElevenLabs Eleven Music API. Use when creating songs, soundtracks, jingles, lullabies,
+    or any audio music from descriptions. Supports vocals with AI-generated lyrics, instrumental tracks, and multiple genres/styles.
+    Requires paid ElevenLabs plan.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_music.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install elevenlabs-music
+
+    ```'
+examples:
+- description: Install ElevenLabs Music from ClawHub
+  usage: clawhub install elevenlabs-music
+schema_version: '1.0'

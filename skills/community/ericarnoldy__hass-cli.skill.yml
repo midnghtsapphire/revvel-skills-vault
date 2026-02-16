@@ -1,0 +1,57 @@
+name: home-assistant
+title: Home Assistant CLI
+version: 1.1.0
+description: Control Home Assistant devices and automations via hass-cli. Use when controlling smart home devices, lights,
+  switches, sensors, climate, media players, or running automations/scripts. Requires HASS_SERVER and HASS_TOKEN environment
+  variables.
+metadata:
+  author: ericarnoldy
+  category: Media & Content
+  tags:
+  - media-content
+  - home
+  - assistant
+  source: clawhub-community
+  clawhub_slug: hass-cli
+  clawhub_path: ericarnoldy/hass-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Home Assistant CLI
+
+    # Source: ClawHub community skill by ericarnoldy
+
+    # Install: clawhub install hass-cli
+
+    # Path: ericarnoldy/hass-cli
+
+
+    ## Description
+
+    Control Home Assistant devices and automations via hass-cli. Use when controlling smart home devices, lights, switches,
+    sensors, climate, media players, or running automations/scripts. Requires HASS_SERVER and HASS_TOKEN environment variables.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hass-cli
+
+    ```'
+examples:
+- description: Install Home Assistant CLI from ClawHub
+  usage: clawhub install hass-cli
+schema_version: '1.0'

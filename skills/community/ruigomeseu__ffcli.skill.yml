@@ -1,0 +1,57 @@
+name: ffcli
+title: ffcli
+version: 1.0.0
+description: Query Fireflies.ai meeting data. Use when searching meetings, viewing transcripts, reading AI summaries, extracting
+  action items, or looking up what was discussed in a call. Triggers on "meeting notes", "transcript", "action items from
+  meeting", "what was discussed", "fireflies", "meeting summary".
+metadata:
+  author: ruigomeseu
+  category: Search & Research
+  tags:
+  - search-research
+  - ffcli
+  source: clawhub-community
+  clawhub_slug: ffcli
+  clawhub_path: ruigomeseu/ffcli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ffcli
+
+    # Source: ClawHub community skill by ruigomeseu
+
+    # Install: clawhub install ffcli
+
+    # Path: ruigomeseu/ffcli
+
+
+    ## Description
+
+    Query Fireflies.ai meeting data. Use when searching meetings, viewing transcripts, reading AI summaries, extracting action
+    items, or looking up what was discussed in a call. Triggers on "meeting notes", "transcript", "action items from meeting",
+    "what was discussed", "fireflies", "meeting summary".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ffcli
+
+    ```'
+examples:
+- description: Install ffcli from ClawHub
+  usage: clawhub install ffcli
+schema_version: '1.0'

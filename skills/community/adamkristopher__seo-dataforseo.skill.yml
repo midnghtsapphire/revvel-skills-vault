@@ -1,0 +1,74 @@
+name: seo-dataforseo
+title: SEO DataForSEO
+version: 1.0.0
+description: '"SEO keyword research using the DataForSEO API. Perform keyword analysis, YouTube keyword research, competitor
+  analysis, SERP analysis, and trend tracking. Use when the user asks to: research keywords, analyze search volume/CPC/competition,
+  find keyword suggestions, check keyword difficulty, analyze'
+metadata:
+  author: adamkristopher
+  category: Search & Research
+  tags:
+  - search-research
+  - seo
+  - dataforseo
+  source: clawhub-community
+  clawhub_slug: seo-dataforseo
+  clawhub_path: adamkristopher/seo-dataforseo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SEO DataForSEO
+
+    # Source: ClawHub community skill by adamkristopher
+
+    # Install: clawhub install seo-dataforseo
+
+    # Path: adamkristopher/seo-dataforseo
+
+
+    ## Description
+
+    "SEO keyword research using the DataForSEO API. Perform keyword analysis, YouTube keyword research, competitor analysis,
+    SERP analysis, and trend tracking. Use when the user asks to: research keywords, analyze search volume/CPC/competition,
+    find keyword suggestions, check keyword difficulty, analyze
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - scripts/main.py
+
+    - scripts/requirements.txt
+
+    - scripts/setup.sh
+
+    - scripts/api/__init__.py
+
+    - scripts/api/keywords_data.py
+
+    - scripts/api/labs.py
+
+    - scripts/api/serp.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seo-dataforseo
+
+    ```'
+examples:
+- description: Install SEO DataForSEO from ClawHub
+  usage: clawhub install seo-dataforseo
+schema_version: '1.0'

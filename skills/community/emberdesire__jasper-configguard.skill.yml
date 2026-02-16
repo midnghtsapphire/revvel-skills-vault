@@ -1,0 +1,66 @@
+name: jasper-configguard
+title: Jasper ConfigGuard
+version: 1.0.0
+description: 'Safe config changes for OpenClaw with automatic rollback. Backs up before patching, health-checks after restart,
+  auto-rolls back on failure. Commands: patch, restore, list, diff, validate, doctor.'
+metadata:
+  author: emberdesire
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - jasper
+  - configguard
+  source: clawhub-community
+  clawhub_slug: jasper-configguard
+  clawhub_path: emberdesire/jasper-configguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jasper ConfigGuard
+
+    # Source: ClawHub community skill by emberdesire
+
+    # Install: clawhub install jasper-configguard
+
+    # Path: emberdesire/jasper-configguard
+
+
+    ## Description
+
+    Safe config changes for OpenClaw with automatic rollback. Backs up before patching, health-checks after restart, auto-rolls
+    back on failure. Commands: patch, restore, list, diff, validate, doctor.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - cli/configguard.js
+
+    - src/index.js
+
+    - test/configguard.test.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jasper-configguard
+
+    ```'
+examples:
+- description: Install Jasper ConfigGuard from ClawHub
+  usage: clawhub install jasper-configguard
+schema_version: '1.0'

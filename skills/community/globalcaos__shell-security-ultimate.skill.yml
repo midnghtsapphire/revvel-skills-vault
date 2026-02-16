@@ -1,0 +1,64 @@
+name: shell-security-ultimate
+title: Shell Security Ultimate
+version: 1.0.2
+description: Shell command security, execution risk classification, and audit for AI agents. Classifies commands by risk level
+  (SAFE→CRITICAL), enforces transparency, prevents dangerous operations. Includes enforcement scripts and agent integration
+  patterns.
+metadata:
+  author: globalcaos
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - shell
+  - security
+  - ultimate
+  source: clawhub-community
+  clawhub_slug: shell-security-ultimate
+  clawhub_path: globalcaos/shell-security-ultimate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Shell Security Ultimate
+
+    # Source: ClawHub community skill by globalcaos
+
+    # Install: clawhub install shell-security-ultimate
+
+    # Path: globalcaos/shell-security-ultimate
+
+
+    ## Description
+
+    Shell command security, execution risk classification, and audit for AI agents. Classifies commands by risk level (SAFE→CRITICAL),
+    enforces transparency, prevents dangerous operations. Includes enforcement scripts and agent integration patterns.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cmd_display.py
+
+    - scripts/patch-openclaw.sh
+
+    - scripts/unpatch-openclaw.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install shell-security-ultimate
+
+    ```'
+examples:
+- description: Install Shell Security Ultimate from ClawHub
+  usage: clawhub install shell-security-ultimate
+schema_version: '1.0'

@@ -1,0 +1,68 @@
+name: bort-agent
+title: BORT Agent (BAP-578)
+version: 1.0.0
+description: Interact with BORT AI agents on BNB Chain via BAP-578. Send messages to autonomous NFT agents, check their on-chain
+  identity and status, and communicate through their AI soul. Use when the user wants to talk to a BORT agent, verify an agent's
+  on-chain identity, check agent status, or interact with B
+metadata:
+  author: tsu-j
+  category: Communication
+  tags:
+  - communication
+  - bort
+  - agent
+  source: clawhub-community
+  clawhub_slug: bort-agent
+  clawhub_path: tsu-j/bort-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# BORT Agent (BAP-578)
+
+    # Source: ClawHub community skill by tsu-j
+
+    # Install: clawhub install bort-agent
+
+    # Path: tsu-j/bort-agent
+
+
+    ## Description
+
+    Interact with BORT AI agents on BNB Chain via BAP-578. Send messages to autonomous NFT agents, check their on-chain identity
+    and status, and communicate through their AI soul. Use when the user wants to talk to a BORT agent, verify an agent''s
+    on-chain identity, check agent status, or interact with B
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/bap578-overview.md
+
+    - scripts/agent-status.sh
+
+    - scripts/health.sh
+
+    - scripts/query-agent.sh
+
+    - scripts/send-message.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bort-agent
+
+    ```'
+examples:
+- description: Install BORT Agent (BAP-578) from ClawHub
+  usage: clawhub install bort-agent
+schema_version: '1.0'

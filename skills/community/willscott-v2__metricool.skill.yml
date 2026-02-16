@@ -1,0 +1,65 @@
+name: metricool
+title: Metricool
+version: 1.0.0
+description: Schedule and manage social media posts via Metricool API. Use when posting to multiple platforms (LinkedIn, X,
+  Bluesky, Threads, Instagram), checking scheduled posts, or analyzing social metrics.
+metadata:
+  author: willscott-v2
+  category: Media & Content
+  tags:
+  - media-content
+  - metricool
+  source: clawhub-community
+  clawhub_slug: metricool
+  clawhub_path: willscott-v2/metricool
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Metricool
+
+    # Source: ClawHub community skill by willscott-v2
+
+    # Install: clawhub install metricool
+
+    # Path: willscott-v2/metricool
+
+
+    ## Description
+
+    Schedule and manage social media posts via Metricool API. Use when posting to multiple platforms (LinkedIn, X, Bluesky,
+    Threads, Instagram), checking scheduled posts, or analyzing social metrics.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/best-time.js
+
+    - scripts/get-brands.js
+
+    - scripts/list-scheduled.js
+
+    - scripts/schedule-post.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install metricool
+
+    ```'
+examples:
+- description: Install Metricool from ClawHub
+  usage: clawhub install metricool
+schema_version: '1.0'

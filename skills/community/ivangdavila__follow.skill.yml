@@ -1,0 +1,65 @@
+name: follow
+title: Follow
+version: 1.0.0
+description: Monitor content from people, topics, and sources across platforms with smart filtering, tiered alerts, and searchable
+  archives.
+metadata:
+  author: ivangdavila
+  category: Search & Research
+  tags:
+  - search-research
+  - follow
+  source: clawhub-community
+  clawhub_slug: follow
+  clawhub_path: ivangdavila/follow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Follow
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install follow
+
+    # Path: ivangdavila/follow
+
+
+    ## Description
+
+    Monitor content from people, topics, and sources across platforms with smart filtering, tiered alerts, and searchable
+    archives.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - alerts.md
+
+    - filtering.md
+
+    - platforms.md
+
+    - querying.md
+
+    - sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install follow
+
+    ```'
+examples:
+- description: Install Follow from ClawHub
+  usage: clawhub install follow
+schema_version: '1.0'

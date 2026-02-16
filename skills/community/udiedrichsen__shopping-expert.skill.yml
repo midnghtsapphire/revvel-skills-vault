@@ -1,0 +1,60 @@
+name: shopping-expert
+title: Shopping Expert
+version: 1.1.0
+description: Find and compare products online (Google Shopping) and locally (stores near you). Auto-selects best products
+  based on price, ratings, availability, and preferences. Generates shopping list with buy links and store locations. Use
+  when asked to shop for products, find best deals, compare prices, or lo
+metadata:
+  author: udiedrichsen
+  category: Search & Research
+  tags:
+  - search-research
+  - shopping
+  - expert
+  source: clawhub-community
+  clawhub_slug: shopping-expert
+  clawhub_path: udiedrichsen/shopping-expert
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Shopping Expert
+
+    # Source: ClawHub community skill by udiedrichsen
+
+    # Install: clawhub install shopping-expert
+
+    # Path: udiedrichsen/shopping-expert
+
+
+    ## Description
+
+    Find and compare products online (Google Shopping) and locally (stores near you). Auto-selects best products based on
+    price, ratings, availability, and preferences. Generates shopping list with buy links and store locations. Use when asked
+    to shop for products, find best deals, compare prices, or lo
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/shop.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install shopping-expert
+
+    ```'
+examples:
+- description: Install Shopping Expert from ClawHub
+  usage: clawhub install shopping-expert
+schema_version: '1.0'

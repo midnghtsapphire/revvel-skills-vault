@@ -1,0 +1,57 @@
+name: memory-setup
+title: Memory Setup
+version: 1.0.0
+description: Enable and configure Moltbot/Clawdbot memory search for persistent context. Use when setting up memory, fixing
+  "goldfish brain," or helping users configure memorySearch in their config. Covers MEMORY.md, daily logs, and vector search
+  setup.
+metadata:
+  author: jrbobbyhansen-pixel
+  category: Search & Research
+  tags:
+  - search-research
+  - memory
+  - setup
+  source: clawhub-community
+  clawhub_slug: memory-setup
+  clawhub_path: jrbobbyhansen-pixel/memory-setup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Setup
+
+    # Source: ClawHub community skill by jrbobbyhansen-pixel
+
+    # Install: clawhub install memory-setup
+
+    # Path: jrbobbyhansen-pixel/memory-setup
+
+
+    ## Description
+
+    Enable and configure Moltbot/Clawdbot memory search for persistent context. Use when setting up memory, fixing "goldfish
+    brain," or helping users configure memorySearch in their config. Covers MEMORY.md, daily logs, and vector search setup.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-setup
+
+    ```'
+examples:
+- description: Install Memory Setup from ClawHub
+  usage: clawhub install memory-setup
+schema_version: '1.0'

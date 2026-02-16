@@ -1,0 +1,62 @@
+name: ecto-migrator
+title: Ecto Migrator
+version: 1.0.0
+description: '"Generate Ecto migrations from natural language or schema descriptions. Handles tables, columns, indexes, constraints,
+  references, enums, and partitioning. Supports reversible migrations, data migrations, and multi-tenant patterns. Use when
+  creating or modifying database schemas, adding indexes, alt'
+metadata:
+  author: gchapim
+  category: Development & Coding
+  tags:
+  - development-coding
+  - ecto
+  - migrator
+  source: clawhub-community
+  clawhub_slug: ecto-migrator
+  clawhub_path: gchapim/ecto-migrator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ecto Migrator
+
+    # Source: ClawHub community skill by gchapim
+
+    # Install: clawhub install ecto-migrator
+
+    # Path: gchapim/ecto-migrator
+
+
+    ## Description
+
+    "Generate Ecto migrations from natural language or schema descriptions. Handles tables, columns, indexes, constraints,
+    references, enums, and partitioning. Supports reversible migrations, data migrations, and multi-tenant patterns. Use when
+    creating or modifying database schemas, adding indexes, alt
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/column-types.md
+
+    - references/index-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ecto-migrator
+
+    ```'
+examples:
+- description: Install Ecto Migrator from ClawHub
+  usage: clawhub install ecto-migrator
+schema_version: '1.0'

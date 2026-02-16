@@ -1,0 +1,56 @@
+name: sapi-tts
+title: SAPI5 TTS (Windows)
+version: 1.0.0
+description: Windows SAPI5 text-to-speech with Neural voices. Lightweight alternative to GPU-heavy TTS - zero GPU usage, instant
+  generation. Auto-detects best available voice for your language. Works on Windows 10/11.
+metadata:
+  author: getmolty
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sapi
+  - tts
+  source: clawhub-community
+  clawhub_slug: sapi-ttsr
+  clawhub_path: getmolty/sapi-ttsr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SAPI5 TTS (Windows)
+
+    # Source: ClawHub community skill by getmolty
+
+    # Install: clawhub install sapi-ttsr
+
+    # Path: getmolty/sapi-ttsr
+
+
+    ## Description
+
+    Windows SAPI5 text-to-speech with Neural voices. Lightweight alternative to GPU-heavy TTS - zero GPU usage, instant generation.
+    Auto-detects best available voice for your language. Works on Windows 10/11.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sapi-ttsr
+
+    ```'
+examples:
+- description: Install SAPI5 TTS (Windows) from ClawHub
+  usage: clawhub install sapi-ttsr
+schema_version: '1.0'

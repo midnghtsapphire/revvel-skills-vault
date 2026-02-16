@@ -1,0 +1,55 @@
+name: dc-weather
+title: DC Weather
+version: 1.0.0
+description: Check Washington DC weather using Open-Meteo API. Use when user asks about DC weather, current conditions, or
+  needs a weather report for Washington DC.
+metadata:
+  author: vital1188
+  category: Development & Coding
+  tags:
+  - development-coding
+  - weather
+  source: clawhub-community
+  clawhub_slug: dc-weather
+  clawhub_path: vital1188/dc-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DC Weather
+
+    # Source: ClawHub community skill by vital1188
+
+    # Install: clawhub install dc-weather
+
+    # Path: vital1188/dc-weather
+
+
+    ## Description
+
+    Check Washington DC weather using Open-Meteo API. Use when user asks about DC weather, current conditions, or needs a
+    weather report for Washington DC.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dc-weather
+
+    ```'
+examples:
+- description: Install DC Weather from ClawHub
+  usage: clawhub install dc-weather
+schema_version: '1.0'

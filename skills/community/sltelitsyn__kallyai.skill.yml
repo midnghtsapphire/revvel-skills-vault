@@ -1,0 +1,55 @@
+name: kallyai
+title: Clawdbot Skill
+version: 1.0.1
+description: Make phone calls via KallyAI API - an AI phone assistant that calls businesses on your behalf. Use when users
+  want to make restaurant reservations, schedule appointments, or inquire at businesses by phone.
+metadata:
+  author: sltelitsyn
+  category: Development & Coding
+  tags:
+  - development-coding
+  - kallyai
+  source: clawhub-community
+  clawhub_slug: kallyai
+  clawhub_path: sltelitsyn/kallyai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Skill
+
+    # Source: ClawHub community skill by sltelitsyn
+
+    # Install: clawhub install kallyai
+
+    # Path: sltelitsyn/kallyai
+
+
+    ## Description
+
+    Make phone calls via KallyAI API - an AI phone assistant that calls businesses on your behalf. Use when users want to
+    make restaurant reservations, schedule appointments, or inquire at businesses by phone.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kallyai
+
+    ```'
+examples:
+- description: Install Clawdbot Skill from ClawHub
+  usage: clawhub install kallyai
+schema_version: '1.0'

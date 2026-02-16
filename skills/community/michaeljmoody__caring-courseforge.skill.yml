@@ -1,0 +1,61 @@
+name: courseforge
+title: Caring CourseForge
+version: 1.0.3
+description: Create and manage online courses via the CourseForge API (caringcourseforge.com). Use when the user wants to
+  create courses, modules, lessons, generate AI content, export to SCORM/xAPI, manage knowledge libraries, or interact with
+  the CourseForge platform. Handles course building, content generation
+metadata:
+  author: michaeljmoody
+  category: Development & Coding
+  tags:
+  - development-coding
+  - courseforge
+  source: clawhub-community
+  clawhub_slug: caring-courseforge
+  clawhub_path: michaeljmoody/caring-courseforge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Caring CourseForge
+
+    # Source: ClawHub community skill by michaeljmoody
+
+    # Install: clawhub install caring-courseforge
+
+    # Path: michaeljmoody/caring-courseforge
+
+
+    ## Description
+
+    Create and manage online courses via the CourseForge API (caringcourseforge.com). Use when the user wants to create courses,
+    modules, lessons, generate AI content, export to SCORM/xAPI, manage knowledge libraries, or interact with the CourseForge
+    platform. Handles course building, content generation
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/tools.md
+
+    - scripts/courseforge.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install caring-courseforge
+
+    ```'
+examples:
+- description: Install Caring CourseForge from ClawHub
+  usage: clawhub install caring-courseforge
+schema_version: '1.0'

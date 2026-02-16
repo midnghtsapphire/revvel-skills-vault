@@ -1,0 +1,69 @@
+name: sociclaw
+title: Sociclaw
+version: 0.1.0
+description: '"An autonomous social media manager agent that researches, plans, and posts content."'
+metadata:
+  author: sociclaw
+  category: Search & Research
+  tags:
+  - search-research
+  - sociclaw
+  source: clawhub-community
+  clawhub_slug: sociclaw
+  clawhub_path: sociclaw/sociclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sociclaw
+
+    # Source: ClawHub community skill by sociclaw
+
+    # Install: clawhub install sociclaw
+
+    # Path: sociclaw/sociclaw
+
+
+    ## Description
+
+    "An autonomous social media manager agent that researches, plans, and posts content."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - sociclaw/__init__.py
+
+    - sociclaw/fixtures/sample_content.json
+
+    - sociclaw/scripts/__init__.py
+
+    - sociclaw/scripts/brand_profile.py
+
+    - sociclaw/scripts/cli.py
+
+    - sociclaw/scripts/content_generator.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sociclaw
+
+    ```'
+examples:
+- description: Install Sociclaw from ClawHub
+  usage: clawhub install sociclaw
+schema_version: '1.0'

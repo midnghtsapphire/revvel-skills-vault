@@ -1,0 +1,59 @@
+name: firecrawl
+title: Firecrawler
+version: 1.0.0
+description: Web scraping and crawling with Firecrawl API. Fetch webpage content as markdown, take screenshots, extract structured
+  data, search the web, and crawl documentation sites. Use when the user needs to scrape a URL, get current web info, capture
+  a screenshot, extract specific data from pages, or crawl d
+metadata:
+  author: andrewdmwalker
+  category: Search & Research
+  tags:
+  - search-research
+  - firecrawl
+  source: clawhub-community
+  clawhub_slug: firecrawler
+  clawhub_path: andrewdmwalker/firecrawler
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Firecrawler
+
+    # Source: ClawHub community skill by andrewdmwalker
+
+    # Install: clawhub install firecrawler
+
+    # Path: andrewdmwalker/firecrawler
+
+
+    ## Description
+
+    Web scraping and crawling with Firecrawl API. Fetch webpage content as markdown, take screenshots, extract structured
+    data, search the web, and crawl documentation sites. Use when the user needs to scrape a URL, get current web info, capture
+    a screenshot, extract specific data from pages, or crawl d
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - fc.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install firecrawler
+
+    ```'
+examples:
+- description: Install Firecrawler from ClawHub
+  usage: clawhub install firecrawler
+schema_version: '1.0'

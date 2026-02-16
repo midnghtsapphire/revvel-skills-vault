@@ -1,0 +1,35 @@
+name: upstage-document-parse
+title: upstage-document-parse
+version: 1.0.3
+description: 'Parse documents (PDF, images, DOCX, PPTX, XLSX, HWP) using Upstage Document Parse API. Extracts text, tables,
+  figures, and layout elements with bounding boxes. Use when user asks to parse, extract, or analyze document content, convert
+  documents to markdown/HTML, or extract structured data from PDFs '
+metadata:
+  author: upstage-deployment
+  category: Media & Content
+  tags:
+  - media-content
+  - upstage
+  - document
+  - parse
+  source: clawhub-community
+  clawhub_slug: upstage-document-parse
+  clawhub_path: upstage-deployment/upstage-document-parse
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# upstage-document-parse\n# Source: ClawHub community skill by upstage-deployment\n# Install: clawhub install\
+    \ upstage-document-parse\n# Path: upstage-deployment/upstage-document-parse\n\n## Description\nParse documents (PDF, images,\
+    \ DOCX, PPTX, XLSX, HWP) using Upstage Document Parse API. Extracts text, tables, figures, and layout elements with bounding\
+    \ boxes. Use when user asks to parse, extract, or analyze document content, convert documents to markdown/HTML, or extract\
+    \ structured data from PDFs \n\n## Files\n- SKILL.md\n- _meta.json\n\n## Installation\n```bash\nclawhub install upstage-document-parse\n\
+    ```"
+examples:
+- description: Install upstage-document-parse from ClawHub
+  usage: clawhub install upstage-document-parse
+schema_version: '1.0'

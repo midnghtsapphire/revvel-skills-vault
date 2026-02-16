@@ -1,0 +1,53 @@
+name: post-at
+title: Post.at Tracking
+version: 0.1.0
+description: Manage Austrian Post (post.at) deliveries - list packages, check delivery status, set delivery place preferences.
+metadata:
+  author: krausefx
+  category: General
+  tags:
+  - general
+  - post
+  source: clawhub-community
+  clawhub_slug: post-at
+  clawhub_path: krausefx/post-at
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Post.at Tracking
+
+    # Source: ClawHub community skill by krausefx
+
+    # Install: clawhub install post-at
+
+    # Path: krausefx/post-at
+
+
+    ## Description
+
+    Manage Austrian Post (post.at) deliveries - list packages, check delivery status, set delivery place preferences.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install post-at
+
+    ```'
+examples:
+- description: Install Post.at Tracking from ClawHub
+  usage: clawhub install post-at
+schema_version: '1.0'

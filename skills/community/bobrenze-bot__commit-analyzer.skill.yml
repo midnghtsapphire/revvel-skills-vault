@@ -1,0 +1,57 @@
+name: commit-analyzer
+title: Commit Analyzer
+version: 0.1.0
+description: ''
+metadata:
+  author: bobrenze-bot
+  category: General
+  tags:
+  - general
+  - commit
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: commit-analyzer
+  clawhub_path: bobrenze-bot/commit-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Commit Analyzer
+
+    # Source: ClawHub community skill by bobrenze-bot
+
+    # Install: clawhub install commit-analyzer
+
+    # Path: bobrenze-bot/commit-analyzer
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - analyzer.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install commit-analyzer
+
+    ```'
+examples:
+- description: Install Commit Analyzer from ClawHub
+  usage: clawhub install commit-analyzer
+schema_version: '1.0'

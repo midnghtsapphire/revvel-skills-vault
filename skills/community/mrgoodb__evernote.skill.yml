@@ -1,0 +1,53 @@
+name: evernote
+title: Evernote
+version: 1.0.0
+description: Manage notes, notebooks, and tags via Evernote API. Create, search, and organize notes programmatically.
+metadata:
+  author: mrgoodb
+  category: Search & Research
+  tags:
+  - search-research
+  - evernote
+  source: clawhub-community
+  clawhub_slug: evernote
+  clawhub_path: mrgoodb/evernote
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Evernote
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install evernote
+
+    # Path: mrgoodb/evernote
+
+
+    ## Description
+
+    Manage notes, notebooks, and tags via Evernote API. Create, search, and organize notes programmatically.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install evernote
+
+    ```'
+examples:
+- description: Install Evernote from ClawHub
+  usage: clawhub install evernote
+schema_version: '1.0'

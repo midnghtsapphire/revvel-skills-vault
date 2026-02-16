@@ -1,0 +1,34 @@
+name: holocube-emotes
+title: Holocube Emotes
+version: 1.0.0
+description: 'Control a GeekMagic holocube display as an AI emote system. Generate holographic sprite kits with Gemini, upload
+  to device, and swap expressions based on agent state (idle, working, error, etc.). Use when the user has a GeekMagic holocube
+  (HelloCubic-Lite or similar) and wants their AI assistant to '
+metadata:
+  author: thrive-spencerj
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - holocube
+  - emotes
+  source: clawhub-community
+  clawhub_slug: holocube-emotes
+  clawhub_path: thrive-spencerj/holocube-emotes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Holocube Emotes\n# Source: ClawHub community skill by thrive-spencerj\n# Install: clawhub install holocube-emotes\n\
+    # Path: thrive-spencerj/holocube-emotes\n\n## Description\nControl a GeekMagic holocube display as an AI emote system.\
+    \ Generate holographic sprite kits with Gemini, upload to device, and swap expressions based on agent state (idle, working,\
+    \ error, etc.). Use when the user has a GeekMagic holocube (HelloCubic-Lite or similar) and wants their AI assistant to\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n- references/tools-example.md\n- scripts/generate_sprites.py\n- scripts/holocube.py\n\
+    - scripts/onboard.py\n- scripts/setup_device.py\n\n## Installation\n```bash\nclawhub install holocube-emotes\n```"
+examples:
+- description: Install Holocube Emotes from ClawHub
+  usage: clawhub install holocube-emotes
+schema_version: '1.0'

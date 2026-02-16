@@ -1,0 +1,67 @@
+name: aimlapi-media-gen
+title: Generate images and videos via the AI/ML API
+version: 1.0.0
+description: Generate images or videos via AIMLAPI from prompts. Use when Codex needs reliable AI/ML API media generation
+  with retries, explicit User-Agent headers, and async video polling.
+metadata:
+  author: aimlapihello
+  category: Media & Content
+  tags:
+  - media-content
+  - aimlapi
+  - media
+  - gen
+  source: clawhub-community
+  clawhub_slug: aiml-image-video
+  clawhub_path: aimlapihello/aiml-image-video
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Generate images and videos via the AI/ML API
+
+    # Source: ClawHub community skill by aimlapihello
+
+    # Install: clawhub install aiml-image-video
+
+    # Path: aimlapihello/aiml-image-video
+
+
+    ## Description
+
+    Generate images or videos via AIMLAPI from prompts. Use when Codex needs reliable AI/ML API media generation with retries,
+    explicit User-Agent headers, and async video polling.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - references/aimlapi-media.md
+
+    - scripts/gen_image.py
+
+    - scripts/gen_video.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aiml-image-video
+
+    ```'
+examples:
+- description: Install Generate images and videos via the AI/ML API from ClawHub
+  usage: clawhub install aiml-image-video
+schema_version: '1.0'

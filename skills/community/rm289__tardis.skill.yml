@@ -1,0 +1,70 @@
+name: hour-meter
+title: TARDIS
+version: 1.2.0
+description: Track elapsed time from a set epoch with tamper-evident locking. Like an analog Hobbs meter but digital. Use
+  for tracking uptime, service hours, time since events, sobriety counters, project duration, equipment runtime. Supports
+  create, lock (seal), check, verify against external hash, list, and exp
+metadata:
+  author: rm289
+  category: Development & Coding
+  tags:
+  - development-coding
+  - hour
+  - meter
+  source: clawhub-community
+  clawhub_slug: tardis
+  clawhub_path: rm289/tardis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TARDIS
+
+    # Source: ClawHub community skill by rm289
+
+    # Install: clawhub install tardis
+
+    # Path: rm289/tardis
+
+
+    ## Description
+
+    Track elapsed time from a set epoch with tamper-evident locking. Like an analog Hobbs meter but digital. Use for tracking
+    uptime, service hours, time since events, sobriety counters, project duration, equipment runtime. Supports create, lock
+    (seal), check, verify against external hash, list, and exp
+
+
+    ## Files
+
+    - MARKETPLACE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - WHITEPAPER.md
+
+    - _meta.json
+
+    - scripts/check-webhook-services.sh
+
+    - scripts/meter.py
+
+    - scripts/sendgrid_webhook.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tardis
+
+    ```'
+examples:
+- description: Install TARDIS from ClawHub
+  usage: clawhub install tardis
+schema_version: '1.0'

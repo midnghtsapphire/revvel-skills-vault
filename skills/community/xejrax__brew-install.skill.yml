@@ -1,0 +1,54 @@
+name: brew-install
+title: Brew Install
+version: 1.0.0
+description: '"Install missing binaries via dnf (Fedora/Bazzite package manager)"'
+metadata:
+  author: xejrax
+  category: General
+  tags:
+  - general
+  - brew
+  - install
+  source: clawhub-community
+  clawhub_slug: brew-install
+  clawhub_path: xejrax/brew-install
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Brew Install
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install brew-install
+
+    # Path: xejrax/brew-install
+
+
+    ## Description
+
+    "Install missing binaries via dnf (Fedora/Bazzite package manager)"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brew-install
+
+    ```'
+examples:
+- description: Install Brew Install from ClawHub
+  usage: clawhub install brew-install
+schema_version: '1.0'

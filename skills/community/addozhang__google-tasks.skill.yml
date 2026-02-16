@@ -1,0 +1,74 @@
+name: google-tasks
+title: Google Tasks
+version: 1.0.0
+description: Fetch, display, create, and delete Google Tasks using the Google Tasks API. Use when the user asks to check,
+  view, list, get, add, create, remove, or delete their Google Tasks, to-do lists, or task items. Handles OAuth authentication
+  automatically using bash script with curl and jq.
+metadata:
+  author: addozhang
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - google
+  - tasks
+  source: clawhub-community
+  clawhub_slug: google-tasks
+  clawhub_path: addozhang/google-tasks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Tasks
+
+    # Source: ClawHub community skill by addozhang
+
+    # Install: clawhub install google-tasks
+
+    # Path: addozhang/google-tasks
+
+
+    ## Description
+
+    Fetch, display, create, and delete Google Tasks using the Google Tasks API. Use when the user asks to check, view, list,
+    get, add, create, remove, or delete their Google Tasks, to-do lists, or task items. Handles OAuth authentication automatically
+    using bash script with curl and jq.
+
+
+    ## Files
+
+    - CLAWHUB_CHECKLIST.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - google-tasks-config.sh
+
+    - package.json
+
+    - references/setup.md
+
+    - scripts/auth.mjs
+
+    - scripts/auth.py
+
+    - scripts/create_task.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-tasks
+
+    ```'
+examples:
+- description: Install Google Tasks from ClawHub
+  usage: clawhub install google-tasks
+schema_version: '1.0'

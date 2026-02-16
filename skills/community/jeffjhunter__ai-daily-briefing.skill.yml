@@ -1,0 +1,62 @@
+name: ai-daily-briefing
+title: AI Daily Briefing
+version: 1.0.0
+description: '"Start every day focused. Get a morning briefing with overdue tasks, today''s priorities, calendar overview,
+  and context from recent meetings. Works with ai-meeting-notes to-do list. No setup. Just say ''briefing''."'
+metadata:
+  author: jeffjhunter
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - daily
+  - briefing
+  source: clawhub-community
+  clawhub_slug: ai-daily-briefing
+  clawhub_path: jeffjhunter/ai-daily-briefing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI Daily Briefing
+
+    # Source: ClawHub community skill by jeffjhunter
+
+    # Install: clawhub install ai-daily-briefing
+
+    # Path: jeffjhunter/ai-daily-briefing
+
+
+    ## Description
+
+    "Start every day focused. Get a morning briefing with overdue tasks, today''s priorities, calendar overview, and context
+    from recent meetings. Works with ai-meeting-notes to-do list. No setup. Just say ''briefing''."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/PREFERENCES-template.md
+
+    - examples/output-example.md
+
+    - examples/quick-start.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-daily-briefing
+
+    ```'
+examples:
+- description: Install AI Daily Briefing from ClawHub
+  usage: clawhub install ai-daily-briefing
+schema_version: '1.0'

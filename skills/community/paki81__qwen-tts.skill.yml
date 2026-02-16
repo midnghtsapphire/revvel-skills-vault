@@ -1,0 +1,74 @@
+name: qwen-tts
+title: Qwen3-tts
+version: 1.0.0
+description: Local text-to-speech using Qwen3-TTS-12Hz-1.7B-CustomVoice. Use when generating audio from text, creating voice
+  messages, or when TTS is requested. Supports 10 languages including Italian, 9 premium speaker voices, and instruction-based
+  voice control (emotion, tone, style). Alternative to cloud-base
+metadata:
+  author: paki81
+  category: Media & Content
+  tags:
+  - media-content
+  - qwen
+  - tts
+  source: clawhub-community
+  clawhub_slug: qwen-tts
+  clawhub_path: paki81/qwen-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qwen3-tts
+
+    # Source: ClawHub community skill by paki81
+
+    # Install: clawhub install qwen-tts
+
+    # Path: paki81/qwen-tts
+
+
+    ## Description
+
+    Local text-to-speech using Qwen3-TTS-12Hz-1.7B-CustomVoice. Use when generating audio from text, creating voice messages,
+    or when TTS is requested. Supports 10 languages including Italian, 9 premium speaker voices, and instruction-based voice
+    control (emotion, tone, style). Alternative to cloud-base
+
+
+    ## Files
+
+    - MAC_SERVER.md
+
+    - README.md
+
+    - SKILL.md
+
+    - VOICEDESIGN.md
+
+    - _meta.json
+
+    - references/README.md
+
+    - scripts/server.py
+
+    - scripts/setup.sh
+
+    - scripts/tts-voicedesign.py
+
+    - scripts/tts.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qwen-tts
+
+    ```'
+examples:
+- description: Install Qwen3-tts from ClawHub
+  usage: clawhub install qwen-tts
+schema_version: '1.0'

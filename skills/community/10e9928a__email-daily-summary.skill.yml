@@ -1,0 +1,72 @@
+name: email-daily-summary
+title: Automatically logs into email accounts (Gmail, Outlook, QQ Mail, etc.) and generates daily email summaries. Use when
+  the user wants to get a summary of their emails, check important messages, or create daily email digests.
+version: 0.1.0
+description: Automatically logs into email accounts (Gmail, Outlook, QQ Mail, etc.) and generates daily email summaries. Use
+  when the user wants to get a summary of their emails, check important messages, or create daily email digests.
+metadata:
+  author: 10e9928a
+  category: Communication
+  tags:
+  - communication
+  - email
+  - daily
+  - summary
+  - bash(browser-use:*)
+  - bash(echo:*)
+  - bash(date:*)
+  source: clawhub-community
+  clawhub_slug: email-daily-summary
+  clawhub_path: 10e9928a/email-daily-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(browser-use:*)
+  - Bash(echo:*)
+  - Bash(date:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Automatically logs into email accounts (Gmail, Outlook, QQ Mail, etc.) and generates daily email summaries.
+    Use when the user wants to get a summary of their emails, check important messages, or create daily email digests.
+
+    # Source: ClawHub community skill by 10e9928a
+
+    # Install: clawhub install email-daily-summary
+
+    # Path: 10e9928a/email-daily-summary
+
+
+    ## Description
+
+    Automatically logs into email accounts (Gmail, Outlook, QQ Mail, etc.) and generates daily email summaries. Use when the
+    user wants to get a summary of their emails, check important messages, or create daily email digests.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(browser-use:*), Bash(echo:*), Bash(date:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-daily-summary
+
+    ```'
+examples:
+- description: Install Automatically logs into email accounts (Gmail, Outlook, QQ Mail, etc.) and generates daily email summaries.
+    Use when the user wants to get a summary of their emails, check important messages, or create daily email digests. from
+    ClawHub
+  usage: clawhub install email-daily-summary
+schema_version: '1.0'

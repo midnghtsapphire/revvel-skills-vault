@@ -1,0 +1,62 @@
+name: tmux-agents
+title: Tmux Agents
+version: 1.0.0
+description: Manage background coding agents in tmux sessions. Spawn Claude Code or other agents, check progress, get results.
+metadata:
+  author: cuba6112
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tmux
+  - agents
+  source: clawhub-community
+  clawhub_slug: tmux-agents
+  clawhub_path: cuba6112/tmux-agents
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tmux Agents
+
+    # Source: ClawHub community skill by cuba6112
+
+    # Install: clawhub install tmux-agents
+
+    # Path: cuba6112/tmux-agents
+
+
+    ## Description
+
+    Manage background coding agents in tmux sessions. Spawn Claude Code or other agents, check progress, get results.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check.sh
+
+    - scripts/spawn.sh
+
+    - scripts/status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tmux-agents
+
+    ```'
+examples:
+- description: Install Tmux Agents from ClawHub
+  usage: clawhub install tmux-agents
+schema_version: '1.0'

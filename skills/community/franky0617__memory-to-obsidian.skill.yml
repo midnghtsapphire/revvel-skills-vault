@@ -1,0 +1,54 @@
+name: memory-to-obsidian
+title: Memory to Obsidian
+version: 1.2.0
+description: 将重要内容记录到 Obsidian Memory 文件夹，自动按日期整理并添加时间戳
+metadata:
+  author: franky0617
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - memory
+  - obsidian
+  source: clawhub-community
+  clawhub_slug: memory-to-obsidian
+  clawhub_path: franky0617/memory-to-obsidian
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory to Obsidian
+
+    # Source: ClawHub community skill by franky0617
+
+    # Install: clawhub install memory-to-obsidian
+
+    # Path: franky0617/memory-to-obsidian
+
+
+    ## Description
+
+    将重要内容记录到 Obsidian Memory 文件夹，自动按日期整理并添加时间戳
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-to-obsidian
+
+    ```'
+examples:
+- description: Install Memory to Obsidian from ClawHub
+  usage: clawhub install memory-to-obsidian
+schema_version: '1.0'

@@ -1,0 +1,69 @@
+name: lingzhu
+title: openclaw-lingzhu
+version: 0.0.7
+description: 通过灵珠平台，将 CpenClaw 接入 Rokid Glasses,支持控制拍照传图、导航、日程工具,支持与智能体同步眼镜设备信息,灵珠平台地址 https://agent-develop.rokid.com
+metadata:
+  author: endlessjour9527
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - lingzhu
+  source: clawhub-community
+  clawhub_slug: r-wmi
+  clawhub_path: endlessjour9527/r-wmi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# openclaw-lingzhu
+
+    # Source: ClawHub community skill by endlessjour9527
+
+    # Install: clawhub install r-wmi
+
+    # Path: endlessjour9527/r-wmi
+
+
+    ## Description
+
+    通过灵珠平台，将 CpenClaw 接入 Rokid Glasses,支持控制拍照传图、导航、日程工具,支持与智能体同步眼镜设备信息,灵珠平台地址 https://agent-develop.rokid.com
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - extension/README.md
+
+    - extension/index.ts
+
+    - extension/moltbot.plugin.json
+
+    - extension/openclaw.plugin.json
+
+    - extension/package.json
+
+    - extension/src/cli.ts
+
+    - extension/src/config.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install r-wmi
+
+    ```'
+examples:
+- description: Install openclaw-lingzhu from ClawHub
+  usage: clawhub install r-wmi
+schema_version: '1.0'

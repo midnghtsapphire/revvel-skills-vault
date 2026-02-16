@@ -1,0 +1,58 @@
+name: container-debug
+title: Container Debug
+version: 1.0.0
+description: Debug running Docker containers and Compose services. Use when inspecting container logs, exec-ing into running
+  containers, diagnosing networking issues, checking resource usage, debugging multi-stage builds, troubleshooting health
+  checks, or fixing Compose service dependencies.
+metadata:
+  author: gitgoodordietrying
+  category: Development & Coding
+  tags:
+  - development-coding
+  - container
+  - debug
+  source: clawhub-community
+  clawhub_slug: container-debug
+  clawhub_path: gitgoodordietrying/container-debug
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Container Debug
+
+    # Source: ClawHub community skill by gitgoodordietrying
+
+    # Install: clawhub install container-debug
+
+    # Path: gitgoodordietrying/container-debug
+
+
+    ## Description
+
+    Debug running Docker containers and Compose services. Use when inspecting container logs, exec-ing into running containers,
+    diagnosing networking issues, checking resource usage, debugging multi-stage builds, troubleshooting health checks, or
+    fixing Compose service dependencies.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install container-debug
+
+    ```'
+examples:
+- description: Install Container Debug from ClawHub
+  usage: clawhub install container-debug
+schema_version: '1.0'

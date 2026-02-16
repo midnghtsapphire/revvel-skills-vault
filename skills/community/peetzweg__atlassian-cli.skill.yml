@@ -1,0 +1,61 @@
+name: acli
+title: Atlassian aCLI Reference Skill for Jira and Confluence
+version: 1.0.0
+description: '"Reference guide for the Atlassian CLI (acli) - a command-line tool for interacting with Atlassian Cloud products.
+  Use this skill when the user wants to perform Jira operations (create/edit/search/transition work items, manage projects,
+  boards, sprints, filters, dashboards), administer Atlassian org'
+metadata:
+  author: peetzweg
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - acli
+  source: clawhub-community
+  clawhub_slug: atlassian-cli
+  clawhub_path: peetzweg/atlassian-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Atlassian aCLI Reference Skill for Jira and Confluence
+
+    # Source: ClawHub community skill by peetzweg
+
+    # Install: clawhub install atlassian-cli
+
+    # Path: peetzweg/atlassian-cli
+
+
+    ## Description
+
+    "Reference guide for the Atlassian CLI (acli) - a command-line tool for interacting with Atlassian Cloud products. Use
+    this skill when the user wants to perform Jira operations (create/edit/search/transition work items, manage projects,
+    boards, sprints, filters, dashboards), administer Atlassian org
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/jira-workitem-commands.md
+
+    - references/other-commands.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install atlassian-cli
+
+    ```'
+examples:
+- description: Install Atlassian aCLI Reference Skill for Jira and Confluence from ClawHub
+  usage: clawhub install atlassian-cli
+schema_version: '1.0'

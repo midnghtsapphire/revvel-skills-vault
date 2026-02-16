@@ -1,0 +1,53 @@
+name: ansible
+title: Ansible
+version: 1.0.0
+description: Avoid common Ansible mistakes — YAML syntax traps, variable precedence, idempotence failures, and handler gotchas.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - ansible
+  source: clawhub-community
+  clawhub_slug: ansible
+  clawhub_path: ivangdavila/ansible
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ansible
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install ansible
+
+    # Path: ivangdavila/ansible
+
+
+    ## Description
+
+    Avoid common Ansible mistakes — YAML syntax traps, variable precedence, idempotence failures, and handler gotchas.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ansible
+
+    ```'
+examples:
+- description: Install Ansible from ClawHub
+  usage: clawhub install ansible
+schema_version: '1.0'

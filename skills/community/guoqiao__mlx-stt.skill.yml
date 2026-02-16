@@ -1,0 +1,58 @@
+name: mlx-stt
+title: MLX STT
+version: 1.0.7
+description: Speech-To-Text with MLX (Apple Silicon) and opensource models (default GLM-ASR-Nano-2512) locally.
+metadata:
+  author: guoqiao
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - mlx
+  - stt
+  source: clawhub-community
+  clawhub_slug: mlx-stt
+  clawhub_path: guoqiao/mlx-stt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MLX STT
+
+    # Source: ClawHub community skill by guoqiao
+
+    # Install: clawhub install mlx-stt
+
+    # Path: guoqiao/mlx-stt
+
+
+    ## Description
+
+    Speech-To-Text with MLX (Apple Silicon) and opensource models (default GLM-ASR-Nano-2512) locally.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - mlx-stt.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mlx-stt
+
+    ```'
+examples:
+- description: Install MLX STT from ClawHub
+  usage: clawhub install mlx-stt
+schema_version: '1.0'

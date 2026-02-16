@@ -1,0 +1,66 @@
+name: homeassistant-cli
+title: Home Assistant CLI
+version: 1.0.0
+description: Advanced Home Assistant control using the official hass-cli tool. Features auto-completion, event monitoring,
+  history queries, and rich output formatting. Alternative to the curl-based homeassistant skill - choose this if you want
+  a more interactive CLI experience with better discovery and formattin
+metadata:
+  author: joneschi
+  category: System & OS
+  tags:
+  - system-os
+  - homeassistant
+  - cli
+  source: clawhub-community
+  clawhub_slug: homeassistant-cli
+  clawhub_path: joneschi/homeassistant-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Home Assistant CLI
+
+    # Source: ClawHub community skill by joneschi
+
+    # Install: clawhub install homeassistant-cli
+
+    # Path: joneschi/homeassistant-cli
+
+
+    ## Description
+
+    Advanced Home Assistant control using the official hass-cli tool. Features auto-completion, event monitoring, history
+    queries, and rich output formatting. Alternative to the curl-based homeassistant skill - choose this if you want a more
+    interactive CLI experience with better discovery and formattin
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/autocomplete.md
+
+    - references/examples.md
+
+    - references/troubleshooting.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install homeassistant-cli
+
+    ```'
+examples:
+- description: Install Home Assistant CLI from ClawHub
+  usage: clawhub install homeassistant-cli
+schema_version: '1.0'

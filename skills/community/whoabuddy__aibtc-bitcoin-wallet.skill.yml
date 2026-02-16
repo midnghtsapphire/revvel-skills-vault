@@ -1,0 +1,69 @@
+name: aibtc-bitcoin-wallet
+title: AIBTC Bitcoin Wallet
+version: 1.19.2
+description: Bitcoin L1 wallet for agents - check balances, send BTC, manage UTXOs. Extends to Stacks L2 (STX, DeFi) and Pillar
+  smart wallets (sBTC yield).
+metadata:
+  author: whoabuddy
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - aibtc
+  - bitcoin
+  - wallet
+  source: clawhub-community
+  clawhub_slug: aibtc-bitcoin-wallet
+  clawhub_path: whoabuddy/aibtc-bitcoin-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AIBTC Bitcoin Wallet
+
+    # Source: ClawHub community skill by whoabuddy
+
+    # Install: clawhub install aibtc-bitcoin-wallet
+
+    # Path: whoabuddy/aibtc-bitcoin-wallet
+
+
+    ## Description
+
+    Bitcoin L1 wallet for agents - check balances, send BTC, manage UTXOs. Extends to Stacks L2 (STX, DeFi) and Pillar smart
+    wallets (sBTC yield).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/genesis-lifecycle.md
+
+    - references/inscription-workflow.md
+
+    - references/pillar-wallet.md
+
+    - references/stacks-defi.md
+
+    - references/troubleshooting.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aibtc-bitcoin-wallet
+
+    ```'
+examples:
+- description: Install AIBTC Bitcoin Wallet from ClawHub
+  usage: clawhub install aibtc-bitcoin-wallet
+schema_version: '1.0'

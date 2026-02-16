@@ -1,0 +1,73 @@
+name: openclaw-health-brief
+title: OpenClaw Health
+version: 1.0.0
+description: Generate a daily health brief from Oura, Whoop, and Withings. Unified re-auth script, local token persistence,
+  Green/Yellow/Red morning summary.
+metadata:
+  author: nathanielweiner
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - health
+  - brief
+  source: clawhub-community
+  clawhub_slug: openclaw-health
+  clawhub_path: nathanielweiner/openclaw-health
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Health
+
+    # Source: ClawHub community skill by nathanielweiner
+
+    # Install: clawhub install openclaw-health
+
+    # Path: nathanielweiner/openclaw-health
+
+
+    ## Description
+
+    Generate a daily health brief from Oura, Whoop, and Withings. Unified re-auth script, local token persistence, Green/Yellow/Red
+    morning summary.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - connectors/oura/__init__.py
+
+    - connectors/whoop/__init__.py
+
+    - connectors/withings/__init__.py
+
+    - core/normalize/__init__.py
+
+    - core/render/__init__.py
+
+    - core/util/__init__.py
+
+    - core/util/local_secrets.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-health
+
+    ```'
+examples:
+- description: Install OpenClaw Health from ClawHub
+  usage: clawhub install openclaw-health
+schema_version: '1.0'

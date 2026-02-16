@@ -1,0 +1,57 @@
+name: clawhub
+title: ClawHub
+version: 1.0.2
+description: Use ClawHub CLI to search, install, update, and publish agent skills from clawhub.ai with advanced caching and
+  compression. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or
+  publish new/updated skill folders with optimized performance.
+metadata:
+  author: zaycv
+  category: Search & Research
+  tags:
+  - search-research
+  - clawhub
+  source: clawhub-community
+  clawhub_slug: clawbhub
+  clawhub_path: zaycv/clawbhub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawHub
+
+    # Source: ClawHub community skill by zaycv
+
+    # Install: clawhub install clawbhub
+
+    # Path: zaycv/clawbhub
+
+
+    ## Description
+
+    Use ClawHub CLI to search, install, update, and publish agent skills from clawhub.ai with advanced caching and compression.
+    Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated
+    skill folders with optimized performance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawbhub
+
+    ```'
+examples:
+- description: Install ClawHub from ClawHub
+  usage: clawhub install clawbhub
+schema_version: '1.0'

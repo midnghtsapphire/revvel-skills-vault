@@ -1,0 +1,61 @@
+name: deploy-kit
+title: Deploy Kit
+version: 1.0.0
+description: ''
+metadata:
+  author: hugosbl
+  category: Development & Coding
+  tags:
+  - development-coding
+  - deploy
+  - kit
+  source: clawhub-community
+  clawhub_slug: deploy-kit
+  clawhub_path: hugosbl/deploy-kit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Deploy Kit
+
+    # Source: ClawHub community skill by hugosbl
+
+    # Install: clawhub install deploy-kit
+
+    # Path: hugosbl/deploy-kit
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/railway.md
+
+    - references/supabase.md
+
+    - references/vercel.md
+
+    - scripts/deploy.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install deploy-kit
+
+    ```'
+examples:
+- description: Install Deploy Kit from ClawHub
+  usage: clawhub install deploy-kit
+schema_version: '1.0'

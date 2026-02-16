@@ -1,0 +1,78 @@
+name: wp-to-static
+title: WordPress to Static Site
+version: 1.2.0
+description: Convert a WordPress website to a static site and deploy to Cloudflare Pages. Mirrors the rendered HTML via SSH,
+  extracts only referenced assets (shrinks 1.5GB+ to ~25MB), fixes URLs, self-hosts fonts, strips WordPress cruft, and deploys.
+  Use when migrating a WordPress site to static hosting.
+metadata:
+  author: abhibavishi
+  category: Development & Coding
+  tags:
+  - development-coding
+  - static
+  - bash
+  - read
+  - write
+  - edit
+  - grep
+  - glob
+  - task
+  - webfetch
+  source: clawhub-community
+  clawhub_slug: wp-to-static
+  clawhub_path: abhibavishi/wp-to-static
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash
+  - Read
+  - Write
+  - Edit
+  - Grep
+  - Glob
+  - Task
+  - WebFetch
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WordPress to Static Site
+
+    # Source: ClawHub community skill by abhibavishi
+
+    # Install: clawhub install wp-to-static
+
+    # Path: abhibavishi/wp-to-static
+
+
+    ## Description
+
+    Convert a WordPress website to a static site and deploy to Cloudflare Pages. Mirrors the rendered HTML via SSH, extracts
+    only referenced assets (shrinks 1.5GB+ to ~25MB), fixes URLs, self-hosts fonts, strips WordPress cruft, and deploys. Use
+    when migrating a WordPress site to static hosting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash, Read, Write, Edit, Grep, Glob, Task, WebFetch
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wp-to-static
+
+    ```'
+examples:
+- description: Install WordPress to Static Site from ClawHub
+  usage: clawhub install wp-to-static
+schema_version: '1.0'

@@ -1,0 +1,37 @@
+name: triple-memory-baidu-embedding
+title: triple-memory-baidu-embedding
+version: 1.0.0
+description: 'Complete memory system combining Baidu Embedding auto-recall, Git-Notes structured memory, and file-based workspace
+  search. Use when setting up comprehensive agent memory with local privacy, when you need persistent context across sessions,
+  or when managing decisions/preferences/tasks with multiple '
+metadata:
+  author: xqicxx
+  category: Search & Research
+  tags:
+  - search-research
+  - triple
+  - memory
+  - baidu
+  - embedding
+  source: clawhub-community
+  clawhub_slug: triple-memory-baidu-embedding
+  clawhub_path: xqicxx/triple-memory-baidu-embedding
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# triple-memory-baidu-embedding\n# Source: ClawHub community skill by xqicxx\n# Install: clawhub install triple-memory-baidu-embedding\n\
+    # Path: xqicxx/triple-memory-baidu-embedding\n\n## Description\nComplete memory system combining Baidu Embedding auto-recall,\
+    \ Git-Notes structured memory, and file-based workspace search. Use when setting up comprehensive agent memory with local\
+    \ privacy, when you need persistent context across sessions, or when managing decisions/preferences/tasks with multiple\
+    \ \n\n## Files\n- CREDITS.md\n- INTEGRATION_GUIDE.md\n- README.md\n- SKILL.md\n- USAGE_EXAMPLES.md\n- _meta.json\n- clawdbot.skill.json\n\
+    - configure.sh\n- install.sh\n- scripts/baidu-memory-tools.sh\n\n## Installation\n```bash\nclawhub install triple-memory-baidu-embedding\n\
+    ```"
+examples:
+- description: Install triple-memory-baidu-embedding from ClawHub
+  usage: clawhub install triple-memory-baidu-embedding
+schema_version: '1.0'

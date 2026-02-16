@@ -1,0 +1,59 @@
+name: skillfence
+title: SkillFence
+version: 1.0.6
+description: '"Runtime security monitor for OpenClaw skills. Watches what your installed skills actually DO — network calls,
+  file access, credential reads, process activity. Not a scanner. A watchdog."'
+metadata:
+  author: deeqyaqub1-cmd
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skillfence
+  source: clawhub-community
+  clawhub_slug: skillfence
+  clawhub_path: deeqyaqub1-cmd/skillfence
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SkillFence
+
+    # Source: ClawHub community skill by deeqyaqub1-cmd
+
+    # Install: clawhub install skillfence
+
+    # Path: deeqyaqub1-cmd/skillfence
+
+
+    ## Description
+
+    "Runtime security monitor for OpenClaw skills. Watches what your installed skills actually DO — network calls, file access,
+    credential reads, process activity. Not a scanner. A watchdog."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - monitor.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skillfence
+
+    ```'
+examples:
+- description: Install SkillFence from ClawHub
+  usage: clawhub install skillfence
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: github-chat-ops
+title: GitHub Chat Assistant (Whatsapp)
+version: 1.0.0
+description: Manage a single GitHub repository via chat for non-technical requesters—after they share the repo URL and a temporary
+  personal token, pull status, summarize who did what and when, and create/follow up on issues directly through the GitHub
+  API.
+metadata:
+  author: iamkalio
+  category: Communication
+  tags:
+  - communication
+  - github
+  - chat
+  - ops
+  source: clawhub-community
+  clawhub_slug: github-chat-ops
+  clawhub_path: iamkalio/github-chat-ops
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHub Chat Assistant (Whatsapp)
+
+    # Source: ClawHub community skill by iamkalio
+
+    # Install: clawhub install github-chat-ops
+
+    # Path: iamkalio/github-chat-ops
+
+
+    ## Description
+
+    Manage a single GitHub repository via chat for non-technical requesters—after they share the repo URL and a temporary
+    personal token, pull status, summarize who did what and when, and create/follow up on issues directly through the GitHub
+    API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/github-api-cheatsheet.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install github-chat-ops
+
+    ```'
+examples:
+- description: Install GitHub Chat Assistant (Whatsapp) from ClawHub
+  usage: clawhub install github-chat-ops
+schema_version: '1.0'

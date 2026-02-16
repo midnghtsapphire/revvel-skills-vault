@@ -1,0 +1,64 @@
+name: setup-automatik
+title: Setup Automatik
+version: 1.0.0
+description: Facilitate the installation and management of VPS solutions using the Setup Automatik engine (powered by Orion
+  Design). Use when the user wants to install, configure, or manage tools like Traefik, Portainer, Chatwoot, N8N, and other
+  open-source applications on a Linux VPS.
+metadata:
+  author: alltomatos
+  category: Communication
+  tags:
+  - communication
+  - setup
+  - automatik
+  source: clawhub-community
+  clawhub_slug: aetup-automatik
+  clawhub_path: alltomatos/aetup-automatik
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Setup Automatik
+
+    # Source: ClawHub community skill by alltomatos
+
+    # Install: clawhub install aetup-automatik
+
+    # Path: alltomatos/aetup-automatik
+
+
+    ## Description
+
+    Facilitate the installation and management of VPS solutions using the Setup Automatik engine (powered by Orion Design).
+    Use when the user wants to install, configure, or manage tools like Traefik, Portainer, Chatwoot, N8N, and other open-source
+    applications on a Linux VPS.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/SetupOrion.sh
+
+    - references/tools.md
+
+    - scripts/list_tools.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aetup-automatik
+
+    ```'
+examples:
+- description: Install Setup Automatik from ClawHub
+  usage: clawhub install aetup-automatik
+schema_version: '1.0'

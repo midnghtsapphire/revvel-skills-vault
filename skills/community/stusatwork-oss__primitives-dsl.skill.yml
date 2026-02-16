@@ -1,0 +1,68 @@
+name: primitives-dsl
+title: Universal Game Primitives
+version: 1.0.0
+description: '"Universal game architecture DSL with six primitives (LOOP, TILEGRID, CONTROLBLOCK, POOL, EVENT, DISPATCHER).
+  Use when: (1) designing portable game/sim loops, (2) translating between architectures (68K ↔ Cell ↔ CUDA ↔ ECS), (3) explaining
+  engine structure to AI agents, (4) refactoring chaos into exp'
+metadata:
+  author: stusatwork-oss
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - primitives
+  - dsl
+  source: clawhub-community
+  clawhub_slug: primitives-dsl
+  clawhub_path: stusatwork-oss/primitives-dsl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Universal Game Primitives
+
+    # Source: ClawHub community skill by stusatwork-oss
+
+    # Install: clawhub install primitives-dsl
+
+    # Path: stusatwork-oss/primitives-dsl
+
+
+    ## Description
+
+    "Universal game architecture DSL with six primitives (LOOP, TILEGRID, CONTROLBLOCK, POOL, EVENT, DISPATCHER). Use when:
+    (1) designing portable game/sim loops, (2) translating between architectures (68K ↔ Cell ↔ CUDA ↔ ECS), (3) explaining
+    engine structure to AI agents, (4) refactoring chaos into exp
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/quick_card.md
+
+    - references/architecture_mapping.md
+
+    - references/example_mall_tick.md
+
+    - references/example_npc_step.md
+
+    - references/example_shooter.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install primitives-dsl
+
+    ```'
+examples:
+- description: Install Universal Game Primitives from ClawHub
+  usage: clawhub install primitives-dsl
+schema_version: '1.0'

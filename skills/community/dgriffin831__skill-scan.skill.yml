@@ -1,0 +1,72 @@
+name: skill-scan
+title: Skill Scan
+version: 1.0.0
+description: Security scanner for OpenClaw skill packages. Scans skills for malicious code, evasion techniques, prompt injection,
+  and misaligned behavior BEFORE installation. Use to audit any skill from ClawHub or local directories.
+metadata:
+  author: dgriffin831
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - scan
+  source: clawhub-community
+  clawhub_slug: skill-scan
+  clawhub_path: dgriffin831/skill-scan
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Scan
+
+    # Source: ClawHub community skill by dgriffin831
+
+    # Install: clawhub install skill-scan
+
+    # Path: dgriffin831/skill-scan
+
+
+    ## Description
+
+    Security scanner for OpenClaw skill packages. Scans skills for malicious code, evasion techniques, prompt injection, and
+    misaligned behavior BEFORE installation. Use to audit any skill from ClawHub or local directories.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - TESTING.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - evals/eval_runner.py
+
+    - rules/dangerous-patterns.json
+
+    - skill_scan/__init__.py
+
+    - skill_scan/alignment_analyzer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-scan
+
+    ```'
+examples:
+- description: Install Skill Scan from ClawHub
+  usage: clawhub install skill-scan
+schema_version: '1.0'

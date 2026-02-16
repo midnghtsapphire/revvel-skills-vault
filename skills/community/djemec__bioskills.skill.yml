@@ -1,0 +1,59 @@
+name: bioskills
+title: BioSkills
+version: 1.0.0
+description: '"Installs 412 bioinformatics skills covering sequence analysis, RNA-seq, single-cell, variant calling, metagenomics,
+  structural biology, and 54 more categories. Use when setting up bioinformatics capabilities or when a bioinformatics task
+  requires specialized skills not yet installed."'
+metadata:
+  author: djemec
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - bioskills
+  source: clawhub-community
+  clawhub_slug: bioskills
+  clawhub_path: djemec/bioskills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# BioSkills
+
+    # Source: ClawHub community skill by djemec
+
+    # Install: clawhub install bioskills
+
+    # Path: djemec/bioskills
+
+
+    ## Description
+
+    "Installs 412 bioinformatics skills covering sequence analysis, RNA-seq, single-cell, variant calling, metagenomics, structural
+    biology, and 54 more categories. Use when setting up bioinformatics capabilities or when a bioinformatics task requires
+    specialized skills not yet installed."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/install-bioskills.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bioskills
+
+    ```'
+examples:
+- description: Install BioSkills from ClawHub
+  usage: clawhub install bioskills
+schema_version: '1.0'

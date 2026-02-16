@@ -1,0 +1,57 @@
+name: breezclaw
+title: Bitcoin Wallet using Breez Spark SDK
+version: 1.0.0
+description: '"Self-custodial Bitcoin and Lightning wallet for AI agents. Send and receive sats via Lightning Network, Spark,
+  or on-chain Bitcoin. Use when: checking bitcoin balance, sending/receiving payments, generating Lightning invoices, managing
+  wallet operations. Requires the BreezClaw plugin and a Breez AP'
+metadata:
+  author: robertclarkson
+  category: Development & Coding
+  tags:
+  - development-coding
+  - breezclaw
+  source: clawhub-community
+  clawhub_slug: bitcoin-wallet
+  clawhub_path: robertclarkson/bitcoin-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bitcoin Wallet using Breez Spark SDK
+
+    # Source: ClawHub community skill by robertclarkson
+
+    # Install: clawhub install bitcoin-wallet
+
+    # Path: robertclarkson/bitcoin-wallet
+
+
+    ## Description
+
+    "Self-custodial Bitcoin and Lightning wallet for AI agents. Send and receive sats via Lightning Network, Spark, or on-chain
+    Bitcoin. Use when: checking bitcoin balance, sending/receiving payments, generating Lightning invoices, managing wallet
+    operations. Requires the BreezClaw plugin and a Breez AP
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bitcoin-wallet
+
+    ```'
+examples:
+- description: Install Bitcoin Wallet using Breez Spark SDK from ClawHub
+  usage: clawhub install bitcoin-wallet
+schema_version: '1.0'

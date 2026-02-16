@@ -1,0 +1,53 @@
+name: health
+title: Health
+version: 1.0.1
+description: Provide personalized wellness guidance while maintaining strict safety boundaries.
+metadata:
+  author: ivangdavila
+  category: Health & Wellness
+  tags:
+  - health-wellness
+  - health
+  source: clawhub-community
+  clawhub_slug: health
+  clawhub_path: ivangdavila/health
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Health
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install health
+
+    # Path: ivangdavila/health
+
+
+    ## Description
+
+    Provide personalized wellness guidance while maintaining strict safety boundaries.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install health
+
+    ```'
+examples:
+- description: Install Health from ClawHub
+  usage: clawhub install health
+schema_version: '1.0'

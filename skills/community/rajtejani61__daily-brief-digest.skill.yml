@@ -1,0 +1,62 @@
+name: daily-digest
+title: Daily Brief Digest
+version: 1.0.0
+description: Generates a daily brief including urgent emails (himalaya), upcoming calendar events (gog), and relevant news.
+  Use when the user asks for a morning summary, daily briefing, or a status update on their day.
+metadata:
+  author: rajtejani61
+  category: Communication
+  tags:
+  - communication
+  - daily
+  - digest
+  source: clawhub-community
+  clawhub_slug: daily-brief-digest
+  clawhub_path: rajtejani61/daily-brief-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Brief Digest
+
+    # Source: ClawHub community skill by rajtejani61
+
+    # Install: clawhub install daily-brief-digest
+
+    # Path: rajtejani61/daily-brief-digest
+
+
+    ## Description
+
+    Generates a daily brief including urgent emails (himalaya), upcoming calendar events (gog), and relevant news. Use when
+    the user asks for a morning summary, daily briefing, or a status update on their day.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cron-guide.md
+
+    - references/templates.md
+
+    - scripts/digest.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-brief-digest
+
+    ```'
+examples:
+- description: Install Daily Brief Digest from ClawHub
+  usage: clawhub install daily-brief-digest
+schema_version: '1.0'

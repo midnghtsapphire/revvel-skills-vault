@@ -1,0 +1,56 @@
+name: ssl-checker
+title: Ssl Checker
+version: 1.1.0
+description: Check SSL/TLS certificate expiry, validity, chain, and configuration for any domain.
+metadata:
+  author: sa9saq
+  category: General
+  tags:
+  - general
+  - ssl
+  - checker
+  source: clawhub-community
+  clawhub_slug: ssl-checker
+  clawhub_path: sa9saq/ssl-checker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ssl Checker
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install ssl-checker
+
+    # Path: sa9saq/ssl-checker
+
+
+    ## Description
+
+    Check SSL/TLS certificate expiry, validity, chain, and configuration for any domain.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ssl-checker
+
+    ```'
+examples:
+- description: Install Ssl Checker from ClawHub
+  usage: clawhub install ssl-checker
+schema_version: '1.0'

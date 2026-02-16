@@ -1,0 +1,70 @@
+name: roku-control
+title: Roku Control
+version: 1.0.0
+description: '"Control Roku devices via local network (ECP protocol). Use when the user wants to control their Roku TV or
+  streaming device, change channels, launch apps (Netflix, YouTube, Hulu, etc.), navigate menus, adjust volume, play/pause
+  content, search for shows, or power off. Works over LAN with no authent'
+metadata:
+  author: imaloney
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - roku
+  - control
+  source: clawhub-community
+  clawhub_slug: roku-control
+  clawhub_path: imaloney/roku-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Roku Control
+
+    # Source: ClawHub community skill by imaloney
+
+    # Install: clawhub install roku-control
+
+    # Path: imaloney/roku-control
+
+
+    ## Description
+
+    "Control Roku devices via local network (ECP protocol). Use when the user wants to control their Roku TV or streaming
+    device, change channels, launch apps (Netflix, YouTube, Hulu, etc.), navigate menus, adjust volume, play/pause content,
+    search for shows, or power off. Works over LAN with no authent
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - references/common-apps.md
+
+    - references/remote-keys.md
+
+    - references/roku.json
+
+    - scripts/roku_control.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install roku-control
+
+    ```'
+examples:
+- description: Install Roku Control from ClawHub
+  usage: clawhub install roku-control
+schema_version: '1.0'

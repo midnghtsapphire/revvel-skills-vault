@@ -1,0 +1,61 @@
+name: social-media-agent
+title: Social Media Agent
+version: 1.0.0
+description: Autonomous social media management for X/Twitter using only OpenClaw native tools. Use when a user wants to automate
+  X posting, generate content, track engagement, or build an audience. Triggers on requests about tweets, social media strategy,
+  X engagement, content calendars, or growing a following.
+metadata:
+  author: psmamm
+  category: Search & Research
+  tags:
+  - search-research
+  - social
+  - media
+  - agent
+  source: clawhub-community
+  clawhub_slug: social-media-agent
+  clawhub_path: psmamm/social-media-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Social Media Agent
+
+    # Source: ClawHub community skill by psmamm
+
+    # Install: clawhub install social-media-agent
+
+    # Path: psmamm/social-media-agent
+
+
+    ## Description
+
+    Autonomous social media management for X/Twitter using only OpenClaw native tools. Use when a user wants to automate X
+    posting, generate content, track engagement, or build an audience. Triggers on requests about tweets, social media strategy,
+    X engagement, content calendars, or growing a following.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/content-templates.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install social-media-agent
+
+    ```'
+examples:
+- description: Install Social Media Agent from ClawHub
+  usage: clawhub install social-media-agent
+schema_version: '1.0'

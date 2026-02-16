@@ -1,0 +1,66 @@
+name: paytrigo-openclawbot
+title: PayTrigo (OpenClawBot, Base/USDC)
+version: 1.0.0
+description: Use when an OpenClawBot needs to create or verify PayTrigo payments on Base/USDC without webhooks.
+metadata:
+  author: paytrigo
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - paytrigo
+  - openclawbot
+  source: clawhub-community
+  clawhub_slug: paytrigo-openclawbot
+  clawhub_path: paytrigo/paytrigo-openclawbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PayTrigo (OpenClawBot, Base/USDC)
+
+    # Source: ClawHub community skill by paytrigo
+
+    # Install: clawhub install paytrigo-openclawbot
+
+    # Path: paytrigo/paytrigo-openclawbot
+
+
+    ## Description
+
+    Use when an OpenClawBot needs to create or verify PayTrigo payments on Base/USDC without webhooks.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/moltbot-bot-flow.mjs
+
+    - scripts/moltbot-human-flow.mjs
+
+    - scripts/moltbot-wallet-setup.mjs
+
+    - scripts/paytrigo.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paytrigo-openclawbot
+
+    ```'
+examples:
+- description: Install PayTrigo (OpenClawBot, Base/USDC) from ClawHub
+  usage: clawhub install paytrigo-openclawbot
+schema_version: '1.0'

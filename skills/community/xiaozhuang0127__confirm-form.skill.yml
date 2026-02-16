@@ -1,0 +1,70 @@
+name: confirm-form
+title: Confirm Form
+version: 1.0.1
+description: Generate structured confirmation forms to collect user feedback on multiple questions. Use when completing work
+  that needs user review, when multiple issues need batch confirmation, or when the user needs to choose between options with
+  detailed context. Triggers include review, confirm, batch questi
+metadata:
+  author: xiaozhuang0127
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - confirm
+  - form
+  source: clawhub-community
+  clawhub_slug: confirm-form
+  clawhub_path: xiaozhuang0127/confirm-form
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Confirm Form
+
+    # Source: ClawHub community skill by xiaozhuang0127
+
+    # Install: clawhub install confirm-form
+
+    # Path: xiaozhuang0127/confirm-form
+
+
+    ## Description
+
+    Generate structured confirmation forms to collect user feedback on multiple questions. Use when completing work that needs
+    user review, when multiple issues need batch confirmation, or when the user needs to choose between options with detailed
+    context. Triggers include review, confirm, batch questi
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/template-v2.html
+
+    - assets/template.html
+
+    - assets/examples/sample.json
+
+    - assets/examples/scenarios.json
+
+    - scripts/generate.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install confirm-form
+
+    ```'
+examples:
+- description: Install Confirm Form from ClawHub
+  usage: clawhub install confirm-form
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: security-sentinel
+title: Security Sentinel
+version: 1.1.3
+description: Scan the workspace for security vulnerabilities, exposed secrets, and misconfigurations.
+metadata:
+  author: autogame-17
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - sentinel
+  source: clawhub-community
+  clawhub_slug: security-sentinel
+  clawhub_path: autogame-17/security-sentinel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Sentinel
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install security-sentinel
+
+    # Path: autogame-17/security-sentinel
+
+
+    ## Description
+
+    Scan the workspace for security vulnerabilities, exposed secrets, and misconfigurations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-sentinel
+
+    ```'
+examples:
+- description: Install Security Sentinel from ClawHub
+  usage: clawhub install security-sentinel
+schema_version: '1.0'

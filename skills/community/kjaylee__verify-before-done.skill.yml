@@ -1,0 +1,57 @@
+name: verify-before-done
+title: Verify Before Done
+version: 1.0.0
+description: Require fresh verification evidence before claiming work is complete. Use ALWAYS before any completion claim,
+  commit, push, PR, or status report. Prevents false completion claims.
+metadata:
+  author: kjaylee
+  category: General
+  tags:
+  - general
+  - verify
+  - before
+  - done
+  source: clawhub-community
+  clawhub_slug: verify-before-done
+  clawhub_path: kjaylee/verify-before-done
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Verify Before Done
+
+    # Source: ClawHub community skill by kjaylee
+
+    # Install: clawhub install verify-before-done
+
+    # Path: kjaylee/verify-before-done
+
+
+    ## Description
+
+    Require fresh verification evidence before claiming work is complete. Use ALWAYS before any completion claim, commit,
+    push, PR, or status report. Prevents false completion claims.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install verify-before-done
+
+    ```'
+examples:
+- description: Install Verify Before Done from ClawHub
+  usage: clawhub install verify-before-done
+schema_version: '1.0'

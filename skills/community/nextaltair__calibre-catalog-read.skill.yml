@@ -1,0 +1,75 @@
+name: calibre-catalog-read
+title: Calibre Catalog Read
+version: 1.0.5
+description: Read Calibre catalog data via calibredb over a Content server, and run one-book analysis workflow that writes
+  HTML analysis block back to comments while caching analysis state in SQLite. Use for list/search/id lookups and AI reading
+  pipeline for a selected book.
+metadata:
+  author: nextaltair
+  category: Search & Research
+  tags:
+  - search-research
+  - calibre
+  - catalog
+  - read
+  source: clawhub-community
+  clawhub_slug: calibre-catalog-read
+  clawhub_path: nextaltair/calibre-catalog-read
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Calibre Catalog Read
+
+    # Source: ClawHub community skill by nextaltair
+
+    # Install: clawhub install calibre-catalog-read
+
+    # Path: nextaltair/calibre-catalog-read
+
+
+    ## Description
+
+    Read Calibre catalog data via calibredb over a Content server, and run one-book analysis workflow that writes HTML analysis
+    block back to comments while caching analysis state in SQLite. Use for list/search/id lookups and AI reading pipeline
+    for a selected book.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/subagent-analysis.prompt.md
+
+    - references/subagent-analysis.schema.json
+
+    - references/subagent-input.schema.json
+
+    - scripts/analysis_db.py
+
+    - scripts/calibredb_read.mjs
+
+    - scripts/handle_completion.mjs
+
+    - scripts/prepare_subagent_input.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install calibre-catalog-read
+
+    ```'
+examples:
+- description: Install Calibre Catalog Read from ClawHub
+  usage: clawhub install calibre-catalog-read
+schema_version: '1.0'

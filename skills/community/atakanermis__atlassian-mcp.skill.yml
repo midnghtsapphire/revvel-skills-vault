@@ -1,0 +1,60 @@
+name: mcp-atlassian
+title: Atlassian MCP (Jira, Confluence)
+version: 1.0.0
+description: Run the Model Context Protocol (MCP) Atlassian server in Docker, enabling integration with Jira, Confluence,
+  and other Atlassian products. Use when you need to query Jira issues, search Confluence, or interact with Atlassian services
+  programmatically. Requires Docker and valid Jira API credentials.
+metadata:
+  author: atakanermis
+  category: Search & Research
+  tags:
+  - search-research
+  - mcp
+  - atlassian
+  source: clawhub-community
+  clawhub_slug: atlassian-mcp
+  clawhub_path: atakanermis/atlassian-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Atlassian MCP (Jira, Confluence)
+
+    # Source: ClawHub community skill by atakanermis
+
+    # Install: clawhub install atlassian-mcp
+
+    # Path: atakanermis/atlassian-mcp
+
+
+    ## Description
+
+    Run the Model Context Protocol (MCP) Atlassian server in Docker, enabling integration with Jira, Confluence, and other
+    Atlassian products. Use when you need to query Jira issues, search Confluence, or interact with Atlassian services programmatically.
+    Requires Docker and valid Jira API credentials.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/run_mcp_atlassian.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install atlassian-mcp
+
+    ```'
+examples:
+- description: Install Atlassian MCP (Jira, Confluence) from ClawHub
+  usage: clawhub install atlassian-mcp
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: pihole
+title: Pi-hole Control
+version: 2.0.1
+description: ''
+metadata:
+  author: baanish
+  category: General
+  tags:
+  - general
+  - pihole
+  source: clawhub-community
+  clawhub_slug: pihole
+  clawhub_path: baanish/pihole
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pi-hole Control
+
+    # Source: ClawHub community skill by baanish
+
+    # Install: clawhub install pihole
+
+    # Path: baanish/pihole
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SECURITY_AUDIT.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pihole.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pihole
+
+    ```'
+examples:
+- description: Install Pi-hole Control from ClawHub
+  usage: clawhub install pihole
+schema_version: '1.0'

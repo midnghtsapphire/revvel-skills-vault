@@ -1,0 +1,60 @@
+name: remotion-server
+title: OpenClaw Remotion
+version: 1.0.4
+description: Headless video rendering with Remotion. Works on any Linux server - no Mac or GUI needed. Templates for chat
+  demos, promos, and more.
+metadata:
+  author: mvanhorn
+  category: Media & Content
+  tags:
+  - media-content
+  - remotion
+  - server
+  source: clawhub-community
+  clawhub_slug: remotion-server
+  clawhub_path: mvanhorn/remotion-server
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Remotion
+
+    # Source: ClawHub community skill by mvanhorn
+
+    # Install: clawhub install remotion-server
+
+    # Path: mvanhorn/remotion-server
+
+
+    ## Description
+
+    Headless video rendering with Remotion. Works on any Linux server - no Mac or GUI needed. Templates for chat demos, promos,
+    and more.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/create.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remotion-server
+
+    ```'
+examples:
+- description: Install OpenClaw Remotion from ClawHub
+  usage: clawhub install remotion-server
+schema_version: '1.0'

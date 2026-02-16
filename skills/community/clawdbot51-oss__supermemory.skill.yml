@@ -1,0 +1,60 @@
+name: supermemory
+title: Supermemory
+version: 1.0.0
+description: Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge
+  base.
+metadata:
+  author: clawdbot51-oss
+  category: Search & Research
+  tags:
+  - search-research
+  - supermemory
+  source: clawhub-community
+  clawhub_slug: supermemory
+  clawhub_path: clawdbot51-oss/supermemory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Supermemory
+
+    # Source: ClawHub community skill by clawdbot51-oss
+
+    # Install: clawhub install supermemory
+
+    # Path: clawdbot51-oss/supermemory
+
+
+    ## Description
+
+    Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/add-memory.sh
+
+    - scripts/chat.sh
+
+    - scripts/search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install supermemory
+
+    ```'
+examples:
+- description: Install Supermemory from ClawHub
+  usage: clawhub install supermemory
+schema_version: '1.0'

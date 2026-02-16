@@ -1,0 +1,64 @@
+name: aluvia_browser_proxy
+title: Aluvia Movile IP Proxy
+version: 1.0.1
+description: Launch a proxy-protected headless browser session using Aluvia SDK. Avoid 403 blocks, CAPTCHAs, and rate limits
+  by routing browser traffic through residential proxies. Provides a CDP URL for integration with browser automation tools.
+metadata:
+  author: bertxtrella
+  category: Search & Research
+  tags:
+  - search-research
+  - aluvia
+  - browser
+  - proxy
+  - bash(aluvia-sdk:*)
+  source: clawhub-community
+  clawhub_slug: aluvia-mip
+  clawhub_path: bertxtrella/aluvia-mip
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(aluvia-sdk:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Aluvia Movile IP Proxy
+
+    # Source: ClawHub community skill by bertxtrella
+
+    # Install: clawhub install aluvia-mip
+
+    # Path: bertxtrella/aluvia-mip
+
+
+    ## Description
+
+    Launch a proxy-protected headless browser session using Aluvia SDK. Avoid 403 blocks, CAPTCHAs, and rate limits by routing
+    browser traffic through residential proxies. Provides a CDP URL for integration with browser automation tools.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(aluvia-sdk:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aluvia-mip
+
+    ```'
+examples:
+- description: Install Aluvia Movile IP Proxy from ClawHub
+  usage: clawhub install aluvia-mip
+schema_version: '1.0'

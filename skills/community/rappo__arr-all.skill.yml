@@ -1,0 +1,70 @@
+name: arr-all
+title: arr-all
+version: 1.0.0
+description: Unified command-line interface for Radarr, Sonarr, and Lidarr. Search, add, and manage movies (Radarr), TV shows
+  (Sonarr), and music (Lidarr) with calendar view and health monitoring.
+metadata:
+  author: rappo
+  category: Search & Research
+  tags:
+  - search-research
+  - arr
+  - all
+  source: clawhub-community
+  clawhub_slug: arr-all
+  clawhub_path: rappo/arr-all
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# arr-all
+
+    # Source: ClawHub community skill by rappo
+
+    # Install: clawhub install arr-all
+
+    # Path: rappo/arr-all
+
+
+    ## Description
+
+    Unified command-line interface for Radarr, Sonarr, and Lidarr. Search, add, and manage movies (Radarr), TV shows (Sonarr),
+    and music (Lidarr) with calendar view and health monitoring.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - hooks/health-check.sh
+
+    - scripts/arr-all-calendar.sh
+
+    - scripts/arr-all.sh
+
+    - scripts/lib/common.sh
+
+    - scripts/lib/lidarr.sh
+
+    - scripts/lib/radarr.sh
+
+    - scripts/lib/sonarr.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install arr-all
+
+    ```'
+examples:
+- description: Install arr-all from ClawHub
+  usage: clawhub install arr-all
+schema_version: '1.0'

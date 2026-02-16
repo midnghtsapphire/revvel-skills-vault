@@ -1,0 +1,33 @@
+name: obsidian-daily
+title: Obsidian Daily
+version: 1.2.1
+description: 'Manage Obsidian Daily Notes via obsidian-cli. Create and open daily notes, append entries (journals, logs, tasks,
+  links), read past notes by date, and search vault content. Handles relative dates like "yesterday", "last Friday", "3 days
+  ago". Requires obsidian-cli installed via Homebrew (Mac/Linux) '
+metadata:
+  author: bastos
+  category: Search & Research
+  tags:
+  - search-research
+  - obsidian
+  - daily
+  source: clawhub-community
+  clawhub_slug: obsidian-daily
+  clawhub_path: bastos/obsidian-daily
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Obsidian Daily\n# Source: ClawHub community skill by bastos\n# Install: clawhub install obsidian-daily\n# Path:\
+    \ bastos/obsidian-daily\n\n## Description\nManage Obsidian Daily Notes via obsidian-cli. Create and open daily notes,\
+    \ append entries (journals, logs, tasks, links), read past notes by date, and search vault content. Handles relative dates\
+    \ like \"yesterday\", \"last Friday\", \"3 days ago\". Requires obsidian-cli installed via Homebrew (Mac/Linux) \n\n##\
+    \ Files\n- SKILL.md\n- _meta.json\n\n## Installation\n```bash\nclawhub install obsidian-daily\n```"
+examples:
+- description: Install Obsidian Daily from ClawHub
+  usage: clawhub install obsidian-daily
+schema_version: '1.0'

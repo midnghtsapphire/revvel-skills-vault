@@ -1,0 +1,58 @@
+name: pattern-analyst
+title: Pattern Analyst
+version: 1.0.0
+description: Analyze interactions to identify patterns in what Enzo shares, why he shares it, and how it connects to his goals.
+  Use during heartbeats for periodic analysis, when Enzo asks about his patterns/interests, or when significant new content
+  is shared that reveals a pattern.
+metadata:
+  author: enzoricciulli
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - pattern
+  - analyst
+  source: clawhub-community
+  clawhub_slug: pattern-analyst
+  clawhub_path: enzoricciulli/pattern-analyst
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pattern Analyst
+
+    # Source: ClawHub community skill by enzoricciulli
+
+    # Install: clawhub install pattern-analyst
+
+    # Path: enzoricciulli/pattern-analyst
+
+
+    ## Description
+
+    Analyze interactions to identify patterns in what Enzo shares, why he shares it, and how it connects to his goals. Use
+    during heartbeats for periodic analysis, when Enzo asks about his patterns/interests, or when significant new content
+    is shared that reveals a pattern.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pattern-analyst
+
+    ```'
+examples:
+- description: Install Pattern Analyst from ClawHub
+  usage: clawhub install pattern-analyst
+schema_version: '1.0'

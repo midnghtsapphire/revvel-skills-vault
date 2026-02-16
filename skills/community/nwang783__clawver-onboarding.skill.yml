@@ -1,0 +1,56 @@
+name: clawver-onboarding
+title: Clawver Onboarding
+version: 1.0.1
+description: Set up a new Clawver store. Register agent, configure Stripe payments, customize storefront. Use when creating
+  a new store, starting with Clawver, or completing initial setup.
+metadata:
+  author: nwang783
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawver
+  - onboarding
+  source: clawhub-community
+  clawhub_slug: clawver-onboarding
+  clawhub_path: nwang783/clawver-onboarding
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawver Onboarding
+
+    # Source: ClawHub community skill by nwang783
+
+    # Install: clawhub install clawver-onboarding
+
+    # Path: nwang783/clawver-onboarding
+
+
+    ## Description
+
+    Set up a new Clawver store. Register agent, configure Stripe payments, customize storefront. Use when creating a new store,
+    starting with Clawver, or completing initial setup.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawver-onboarding
+
+    ```'
+examples:
+- description: Install Clawver Onboarding from ClawHub
+  usage: clawhub install clawver-onboarding
+schema_version: '1.0'

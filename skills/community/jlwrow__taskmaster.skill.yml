@@ -1,0 +1,73 @@
+name: taskmaster
+title: TaskMaster - AI Cost Optimizer
+version: 1.0.0
+description: Project manager and task delegation system. Use when you need to break down complex work into smaller tasks,
+  assign appropriate AI models based on complexity, spawn sub-agents for parallel execution, track progress, and manage token
+  budgets. Ideal for research projects, multi-step workflows, or when
+metadata:
+  author: jlwrow
+  category: Search & Research
+  tags:
+  - search-research
+  - taskmaster
+  source: clawhub-community
+  clawhub_slug: taskmaster
+  clawhub_path: jlwrow/taskmaster
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TaskMaster - AI Cost Optimizer
+
+    # Source: ClawHub community skill by jlwrow
+
+    # Install: clawhub install taskmaster
+
+    # Path: jlwrow/taskmaster
+
+
+    ## Description
+
+    Project manager and task delegation system. Use when you need to break down complex work into smaller tasks, assign appropriate
+    AI models based on complexity, spawn sub-agents for parallel execution, track progress, and manage token budgets. Ideal
+    for research projects, multi-step workflows, or when
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - TOKEN_TRACKING_README.md
+
+    - _meta.json
+
+    - skill.json
+
+    - references/model-selection-rules.md
+
+    - references/task-templates.md
+
+    - scripts/delegate_task.py
+
+    - scripts/openclaw_integration.py
+
+    - scripts/taskmaster-costs.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install taskmaster
+
+    ```'
+examples:
+- description: Install TaskMaster - AI Cost Optimizer from ClawHub
+  usage: clawhub install taskmaster
+schema_version: '1.0'

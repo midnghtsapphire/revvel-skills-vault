@@ -1,0 +1,63 @@
+name: wordpress
+title: Wordpress REST API
+version: 1.0.0
+description: OpenClaw skill that provides a WordPress REST API CLI for posts, pages, categories, tags, users, and custom requests
+  using plain HTTP.
+metadata:
+  author: codedao12
+  category: Development & Coding
+  tags:
+  - development-coding
+  - wordpress
+  source: clawhub-community
+  clawhub_slug: wordpress
+  clawhub_path: codedao12/wordpress
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wordpress REST API
+
+    # Source: ClawHub community skill by codedao12
+
+    # Install: clawhub install wordpress
+
+    # Path: codedao12/wordpress
+
+
+    ## Description
+
+    OpenClaw skill that provides a WordPress REST API CLI for posts, pages, categories, tags, users, and custom requests using
+    plain HTTP.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - env_example.md
+
+    - package.json
+
+    - assets/wordpress-rest-api-guide.md
+
+    - scripts/wp-cli.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wordpress
+
+    ```'
+examples:
+- description: Install Wordpress REST API from ClawHub
+  usage: clawhub install wordpress
+schema_version: '1.0'

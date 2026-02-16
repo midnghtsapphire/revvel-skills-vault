@@ -1,0 +1,60 @@
+name: openclaw-self-backup
+title: Phoenix - The Backup Guardian
+version: 1.0.1
+description: ''
+metadata:
+  author: webdevtodayjason
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - self
+  - backup
+  source: clawhub-community
+  clawhub_slug: openclaw-self-backup
+  clawhub_path: webdevtodayjason/openclaw-self-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Phoenix - The Backup Guardian
+
+    # Source: ClawHub community skill by webdevtodayjason
+
+    # Install: clawhub install openclaw-self-backup
+
+    # Path: webdevtodayjason/openclaw-self-backup
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config/backup.example.json
+
+    - scripts/backup.sh
+
+    - scripts/restore.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-self-backup
+
+    ```'
+examples:
+- description: Install Phoenix - The Backup Guardian from ClawHub
+  usage: clawhub install openclaw-self-backup
+schema_version: '1.0'

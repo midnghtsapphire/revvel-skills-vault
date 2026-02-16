@@ -1,0 +1,66 @@
+name: jadwal-sholat
+title: Ambil jadwal sholat (imsak, subuh, dzuhur, ashar, maghrib, isya) untuk kota/kabupaten di Indonesia dari API Muslim
+  api.myquran.com (sumber Kemenag Bimas Islam). Gunakan saat user minta jadwal sholat hari ini / tanggal tertentu / 1 bulan
+  untuk lokasi tertentu, atau butuh mencari ID kab/kota.
+version: 1.0.0
+description: Ambil jadwal sholat (imsak, subuh, dzuhur, ashar, maghrib, isya) untuk kota/kabupaten di Indonesia dari API Muslim
+  api.myquran.com (sumber Kemenag Bimas Islam). Gunakan saat user minta jadwal sholat hari ini / tanggal tertentu / 1 bulan
+  untuk lokasi tertentu, atau butuh mencari ID kab/kota.
+metadata:
+  author: banghasan
+  category: Development & Coding
+  tags:
+  - development-coding
+  - jadwal
+  - sholat
+  source: clawhub-community
+  clawhub_slug: sholat
+  clawhub_path: banghasan/sholat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ambil jadwal sholat (imsak, subuh, dzuhur, ashar, maghrib, isya) untuk kota/kabupaten di Indonesia dari API
+    Muslim api.myquran.com (sumber Kemenag Bimas Islam). Gunakan saat user minta jadwal sholat hari ini / tanggal tertentu
+    / 1 bulan untuk lokasi tertentu, atau butuh mencari ID kab/kota.
+
+    # Source: ClawHub community skill by banghasan
+
+    # Install: clawhub install sholat
+
+    # Path: banghasan/sholat
+
+
+    ## Description
+
+    Ambil jadwal sholat (imsak, subuh, dzuhur, ashar, maghrib, isya) untuk kota/kabupaten di Indonesia dari API Muslim api.myquran.com
+    (sumber Kemenag Bimas Islam). Gunakan saat user minta jadwal sholat hari ini / tanggal tertentu / 1 bulan untuk lokasi
+    tertentu, atau butuh mencari ID kab/kota.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/myquran_sholat.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sholat
+
+    ```'
+examples:
+- description: Install Ambil jadwal sholat (imsak, subuh, dzuhur, ashar, maghrib, isya) untuk kota/kabupaten di Indonesia
+    dari API Muslim api.myquran.com (sumber Kemenag Bimas Islam). Gunakan saat user minta jadwal sholat hari ini / tanggal
+    tertentu / 1 bulan untuk lokasi tertentu, atau butuh mencari ID kab/kota. from ClawHub
+  usage: clawhub install sholat
+schema_version: '1.0'

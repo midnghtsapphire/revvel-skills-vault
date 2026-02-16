@@ -1,0 +1,53 @@
+name: meilisearch
+title: Meilisearch
+version: 1.0.0
+description: Deploy and tune Meilisearch with indexing, filtering, and production configuration.
+metadata:
+  author: ivangdavila
+  category: Search & Research
+  tags:
+  - search-research
+  - meilisearch
+  source: clawhub-community
+  clawhub_slug: meilisearch
+  clawhub_path: ivangdavila/meilisearch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meilisearch
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install meilisearch
+
+    # Path: ivangdavila/meilisearch
+
+
+    ## Description
+
+    Deploy and tune Meilisearch with indexing, filtering, and production configuration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meilisearch
+
+    ```'
+examples:
+- description: Install Meilisearch from ClawHub
+  usage: clawhub install meilisearch
+schema_version: '1.0'

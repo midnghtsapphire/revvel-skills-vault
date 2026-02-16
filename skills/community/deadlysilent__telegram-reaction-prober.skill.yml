@@ -1,0 +1,61 @@
+name: telegram-reaction-prober
+title: Telegram Reaction Prober
+version: 1.0.1
+description: Probe which emoji reactions are accepted in a specific Telegram chat/message, record an allow/deny list, and
+  optionally remove test reactions afterwards.
+metadata:
+  author: deadlysilent
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - reaction
+  - prober
+  source: clawhub-community
+  clawhub_slug: telegram-reaction-prober
+  clawhub_path: deadlysilent/telegram-reaction-prober
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Reaction Prober
+
+    # Source: ClawHub community skill by deadlysilent
+
+    # Install: clawhub install telegram-reaction-prober
+
+    # Path: deadlysilent/telegram-reaction-prober
+
+
+    ## Description
+
+    Probe which emoji reactions are accepted in a specific Telegram chat/message, record an allow/deny list, and optionally
+    remove test reactions afterwards.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/emoji200-unicode-frequency-2019.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-reaction-prober
+
+    ```'
+examples:
+- description: Install Telegram Reaction Prober from ClawHub
+  usage: clawhub install telegram-reaction-prober
+schema_version: '1.0'

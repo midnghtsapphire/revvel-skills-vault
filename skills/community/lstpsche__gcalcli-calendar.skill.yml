@@ -1,0 +1,58 @@
+name: gcalcli-calendar
+title: Google Calendar (via gcalcli)
+version: 3.0.0
+description: '"Google Calendar via gcalcli: today-only agenda by default, bounded meaning-first lookup via agenda scans, and
+  fast create/delete with verification--optimized for low tool calls and minimal output."'
+metadata:
+  author: lstpsche
+  category: Search & Research
+  tags:
+  - search-research
+  - gcalcli
+  - calendar
+  source: clawhub-community
+  clawhub_slug: gcalcli-calendar
+  clawhub_path: lstpsche/gcalcli-calendar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Calendar (via gcalcli)
+
+    # Source: ClawHub community skill by lstpsche
+
+    # Install: clawhub install gcalcli-calendar
+
+    # Path: lstpsche/gcalcli-calendar
+
+
+    ## Description
+
+    "Google Calendar via gcalcli: today-only agenda by default, bounded meaning-first lookup via agenda scans, and fast create/delete
+    with verification--optimized for low tool calls and minimal output."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gcalcli-calendar
+
+    ```'
+examples:
+- description: Install Google Calendar (via gcalcli) from ClawHub
+  usage: clawhub install gcalcli-calendar
+schema_version: '1.0'

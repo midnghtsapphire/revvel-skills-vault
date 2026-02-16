@@ -1,0 +1,72 @@
+name: skill-security-auditor
+title: Cisco Security Auditor
+version: 2.0.0
+description: Advanced security auditing tool for OpenClaw skills with YARA rules, LLM semantic analysis, and 100% detection
+  rate
+metadata:
+  author: charpup
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - security
+  - auditor
+  source: clawhub-community
+  clawhub_slug: cisco-security-auditor
+  clawhub_path: charpup/cisco-security-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cisco Security Auditor
+
+    # Source: ClawHub community skill by charpup
+
+    # Install: clawhub install cisco-security-auditor
+
+    # Path: charpup/cisco-security-auditor
+
+
+    ## Description
+
+    Advanced security auditing tool for OpenClaw skills with YARA rules, LLM semantic analysis, and 100% detection rate
+
+
+    ## Files
+
+    - PHASE2_SUMMARY.md
+
+    - README.md
+
+    - SKILL.md
+
+    - SPEC.yaml
+
+    - _meta.json
+
+    - pytest.ini
+
+    - requirements.txt
+
+    - lib/__init__.py
+
+    - lib/auditor.py
+
+    - lib/batch_scanner.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cisco-security-auditor
+
+    ```'
+examples:
+- description: Install Cisco Security Auditor from ClawHub
+  usage: clawhub install cisco-security-auditor
+schema_version: '1.0'

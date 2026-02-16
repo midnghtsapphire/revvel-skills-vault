@@ -1,0 +1,76 @@
+name: macos-spm-app-packaging
+title: Macos Spm App Packaging
+version: 1.0.0
+description: Scaffold, build, and package SwiftPM-based macOS apps without an Xcode project. Use when you need a from-scratch
+  macOS app layout, SwiftPM targets/resources, a custom .app bundle assembly script, or signing/notarization/appcast steps
+  outside Xcode.
+metadata:
+  author: dimillian
+  category: Development & Coding
+  tags:
+  - development-coding
+  - macos
+  - spm
+  - app
+  - packaging
+  source: clawhub-community
+  clawhub_slug: macos-spm-app-packaging
+  clawhub_path: dimillian/macos-spm-app-packaging
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Macos Spm App Packaging
+
+    # Source: ClawHub community skill by dimillian
+
+    # Install: clawhub install macos-spm-app-packaging
+
+    # Path: dimillian/macos-spm-app-packaging
+
+
+    ## Description
+
+    Scaffold, build, and package SwiftPM-based macOS apps without an Xcode project. Use when you need a from-scratch macOS
+    app layout, SwiftPM targets/resources, a custom .app bundle assembly script, or signing/notarization/appcast steps outside
+    Xcode.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/templates/build_icon.sh
+
+    - assets/templates/compile_and_run.sh
+
+    - assets/templates/launch.sh
+
+    - assets/templates/make_appcast.sh
+
+    - assets/templates/package_app.sh
+
+    - assets/templates/setup_dev_signing.sh
+
+    - assets/templates/sign-and-notarize.sh
+
+    - assets/templates/version.env
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install macos-spm-app-packaging
+
+    ```'
+examples:
+- description: Install Macos Spm App Packaging from ClawHub
+  usage: clawhub install macos-spm-app-packaging
+schema_version: '1.0'

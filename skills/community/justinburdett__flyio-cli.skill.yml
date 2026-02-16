@@ -1,0 +1,66 @@
+name: flyio-cli
+title: Fly.io CLI
+version: 1.0.3
+description: '"Use the Fly.io flyctl CLI for deploying and operating apps on Fly.io. Default to read-only diagnostics (status/logs/config/releases).
+  Only perform state-changing operations (deploys, SSH exec, secrets, scaling, machines, volumes, Postgres changes) with explicit
+  user approval. Use when asked to depl'
+metadata:
+  author: justinburdett
+  category: Development & Coding
+  tags:
+  - development-coding
+  - flyio
+  - cli
+  source: clawhub-community
+  clawhub_slug: flyio-cli
+  clawhub_path: justinburdett/flyio-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fly.io CLI
+
+    # Source: ClawHub community skill by justinburdett
+
+    # Install: clawhub install flyio-cli
+
+    # Path: justinburdett/flyio-cli
+
+
+    ## Description
+
+    "Use the Fly.io flyctl CLI for deploying and operating apps on Fly.io. Default to read-only diagnostics (status/logs/config/releases).
+    Only perform state-changing operations (deploys, SSH exec, secrets, scaling, machines, volumes, Postgres changes) with
+    explicit user approval. Use when asked to depl
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/github-actions.md
+
+    - references/rails-docker-builds.md
+
+    - references/safety.md
+
+    - scripts/fly_app_from_toml.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flyio-cli
+
+    ```'
+examples:
+- description: Install Fly.io CLI from ClawHub
+  usage: clawhub install flyio-cli
+schema_version: '1.0'

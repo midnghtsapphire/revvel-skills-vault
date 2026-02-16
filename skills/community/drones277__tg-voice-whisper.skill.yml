@@ -1,0 +1,56 @@
+name: tg-voice-whisper
+title: TG Voice Whisper Transcriber
+version: 1.0.0
+description: Auto-transcribe Telegram voice messages (.ogg Opus) to text using local OpenAI Whisper (tiny model). Reply with
+  transcription + auto-delete file for privacy. No API keys, fully offline after install.
+metadata:
+  author: drones277
+  category: Social Media
+  tags:
+  - social-media
+  - voice
+  - whisper
+  source: clawhub-community
+  clawhub_slug: tg-voice-whisper
+  clawhub_path: drones277/tg-voice-whisper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TG Voice Whisper Transcriber
+
+    # Source: ClawHub community skill by drones277
+
+    # Install: clawhub install tg-voice-whisper
+
+    # Path: drones277/tg-voice-whisper
+
+
+    ## Description
+
+    Auto-transcribe Telegram voice messages (.ogg Opus) to text using local OpenAI Whisper (tiny model). Reply with transcription
+    + auto-delete file for privacy. No API keys, fully offline after install.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tg-voice-whisper
+
+    ```'
+examples:
+- description: Install TG Voice Whisper Transcriber from ClawHub
+  usage: clawhub install tg-voice-whisper
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: proxy-pay
+title: Proxy Pay
+version: 1.0.0
+description: 'Quick command to create a payment via Proxy. Usage: /proxy-pay [amount] [merchant] [description]. Creates payment
+  intent and provisions virtual card.'
+metadata:
+  author: proxyhq
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - proxy
+  - pay
+  source: clawhub-community
+  clawhub_slug: proxy-pay
+  clawhub_path: proxyhq/proxy-pay
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Proxy Pay
+
+    # Source: ClawHub community skill by proxyhq
+
+    # Install: clawhub install proxy-pay
+
+    # Path: proxyhq/proxy-pay
+
+
+    ## Description
+
+    Quick command to create a payment via Proxy. Usage: /proxy-pay [amount] [merchant] [description]. Creates payment intent
+    and provisions virtual card.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install proxy-pay
+
+    ```'
+examples:
+- description: Install Proxy Pay from ClawHub
+  usage: clawhub install proxy-pay
+schema_version: '1.0'

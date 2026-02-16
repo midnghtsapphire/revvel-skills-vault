@@ -1,0 +1,57 @@
+name: frankenstein
+title: Frankenstein
+version: 1.2.0
+description: '"Combine the best parts of multiple skills into one. Searches ClawHub, GitHub, skills.sh, skillsmp.com and other
+  AI skill repos. Analyzes each safely, compares features, and builds a combined ''Frankenstein'' skill with the best of each.
+  Uses skill-auditor for security scanning and sandwrap for safe a'
+metadata:
+  author: rubenaquispe
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - frankenstein
+  source: clawhub-community
+  clawhub_slug: frankenstein
+  clawhub_path: rubenaquispe/frankenstein
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Frankenstein
+
+    # Source: ClawHub community skill by rubenaquispe
+
+    # Install: clawhub install frankenstein
+
+    # Path: rubenaquispe/frankenstein
+
+
+    ## Description
+
+    "Combine the best parts of multiple skills into one. Searches ClawHub, GitHub, skills.sh, skillsmp.com and other AI skill
+    repos. Analyzes each safely, compares features, and builds a combined ''Frankenstein'' skill with the best of each. Uses
+    skill-auditor for security scanning and sandwrap for safe a
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install frankenstein
+
+    ```'
+examples:
+- description: Install Frankenstein from ClawHub
+  usage: clawhub install frankenstein
+schema_version: '1.0'

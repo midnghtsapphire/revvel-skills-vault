@@ -1,0 +1,38 @@
+name: openclaw_video-frames
+title: 🎞️ Video Frames
+version: 1.0.0
+description: Extract frames or short clips from videos using ffmpeg.
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - video-frames
+  - ffmpeg
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - ffmpeg
+install:
+- id: brew
+  platform: all
+  method: brew
+  command: ffmpeg
+  label: Install ffmpeg (brew)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: video-frames\ndescription: Extract frames or short clips from videos using ffmpeg.\nhomepage: https://ffmpeg.org\n\
+    metadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"\U0001F39E️\",\n        \"requires\": { \"bins\": [\"\
+    ffmpeg\"] },\n        \"install\":\n          [\n            {\n              \"id\": \"brew\",\n              \"kind\"\
+    : \"brew\",\n              \"formula\": \"ffmpeg\",\n              \"bins\": [\"ffmpeg\"],\n              \"label\": \"\
+    Install ffmpeg (brew)\",\n            },\n          ],\n      },\n  }\n---\n\n# Video Frames (ffmpeg)\n\nExtract a single\
+    \ frame from a video, or create quick thumbnails for inspection.\n\n## Quick start\n\nFirst frame:\n\n```bash\n{baseDir}/scripts/frame.sh\
+    \ /path/to/video.mp4 --out /tmp/frame.jpg\n```\n\nAt a timestamp:\n\n```bash\n{baseDir}/scripts/frame.sh /path/to/video.mp4\
+    \ --time 00:00:10 --out /tmp/frame-10s.jpg\n```\n\n## Notes\n\n- Prefer `--time` for “what is happening around here?”.\n\
+    - Use a `.jpg` for quick share; use `.png` for crisp UI frames.\n"
+examples: []
+schema_version: '1.0'

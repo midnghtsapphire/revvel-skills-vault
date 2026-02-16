@@ -1,0 +1,63 @@
+name: moltbook-daily-digest
+title: Moltbook Daily Digest (中文版)
+version: 1.0.0
+description: Get a daily digest of trending posts from Moltbook with Chinese summaries. Uses Google Translate for full Chinese
+  translation of post content.
+metadata:
+  author: wangfugui1799
+  category: Search & Research
+  tags:
+  - search-research
+  - moltbook
+  - daily
+  - digest
+  source: clawhub-community
+  clawhub_slug: moltbook-daily-digest
+  clawhub_path: wangfugui1799/moltbook-daily-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltbook Daily Digest (中文版)
+
+    # Source: ClawHub community skill by wangfugui1799
+
+    # Install: clawhub install moltbook-daily-digest
+
+    # Path: wangfugui1799/moltbook-daily-digest
+
+
+    ## Description
+
+    Get a daily digest of trending posts from Moltbook with Chinese summaries. Uses Google Translate for full Chinese translation
+    of post content.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/daily-digest.sh
+
+    - scripts/digest.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbook-daily-digest
+
+    ```'
+examples:
+- description: Install Moltbook Daily Digest (中文版) from ClawHub
+  usage: clawhub install moltbook-daily-digest
+schema_version: '1.0'

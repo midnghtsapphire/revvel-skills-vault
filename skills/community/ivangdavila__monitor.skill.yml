@@ -1,0 +1,53 @@
+name: monitor
+title: Monitor
+version: 1.0.0
+description: Create flexible monitoring scripts with structured logs, alerts, and intelligent insights for any target.
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - monitor
+  source: clawhub-community
+  clawhub_slug: monitor
+  clawhub_path: ivangdavila/monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Monitor
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install monitor
+
+    # Path: ivangdavila/monitor
+
+
+    ## Description
+
+    Create flexible monitoring scripts with structured logs, alerts, and intelligent insights for any target.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install monitor
+
+    ```'
+examples:
+- description: Install Monitor from ClawHub
+  usage: clawhub install monitor
+schema_version: '1.0'

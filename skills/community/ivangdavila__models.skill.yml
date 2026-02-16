@@ -1,0 +1,53 @@
+name: models
+title: Models
+version: 1.0.0
+description: Choose AI models for coding, reasoning, and agents with cost-aware, task-matched recommendations.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - models
+  source: clawhub-community
+  clawhub_slug: models
+  clawhub_path: ivangdavila/models
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Models
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install models
+
+    # Path: ivangdavila/models
+
+
+    ## Description
+
+    Choose AI models for coding, reasoning, and agents with cost-aware, task-matched recommendations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install models
+
+    ```'
+examples:
+- description: Install Models from ClawHub
+  usage: clawhub install models
+schema_version: '1.0'

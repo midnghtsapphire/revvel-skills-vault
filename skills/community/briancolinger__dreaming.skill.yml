@@ -1,0 +1,59 @@
+name: dreaming
+title: Dreaming
+version: 1.0.1
+description: Creative exploration during quiet hours. Turns idle heartbeat time into freeform thinking — hypotheticals, future
+  scenarios, reflections, unexpected connections. Use when you want your agent to do something meaningful during low-activity
+  periods instead of just returning HEARTBEAT_OK. Outputs writte
+metadata:
+  author: briancolinger
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - dreaming
+  source: clawhub-community
+  clawhub_slug: dreaming
+  clawhub_path: briancolinger/dreaming
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dreaming
+
+    # Source: ClawHub community skill by briancolinger
+
+    # Install: clawhub install dreaming
+
+    # Path: briancolinger/dreaming
+
+
+    ## Description
+
+    Creative exploration during quiet hours. Turns idle heartbeat time into freeform thinking — hypotheticals, future scenarios,
+    reflections, unexpected connections. Use when you want your agent to do something meaningful during low-activity periods
+    instead of just returning HEARTBEAT_OK. Outputs writte
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/should-dream.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dreaming
+
+    ```'
+examples:
+- description: Install Dreaming from ClawHub
+  usage: clawhub install dreaming
+schema_version: '1.0'

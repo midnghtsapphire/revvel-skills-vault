@@ -1,0 +1,55 @@
+name: md-to-pdf
+title: md-2-pdf
+version: 1.0.0
+description: Convert markdown files to clean, formatted PDFs using reportlab
+metadata:
+  author: araa47
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - pdf
+  source: clawhub-community
+  clawhub_slug: md-2-pdf
+  clawhub_path: araa47/md-2-pdf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# md-2-pdf
+
+    # Source: ClawHub community skill by araa47
+
+    # Install: clawhub install md-2-pdf
+
+    # Path: araa47/md-2-pdf
+
+
+    ## Description
+
+    Convert markdown files to clean, formatted PDFs using reportlab
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/md-to-pdf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install md-2-pdf
+
+    ```'
+examples:
+- description: Install md-2-pdf from ClawHub
+  usage: clawhub install md-2-pdf
+schema_version: '1.0'

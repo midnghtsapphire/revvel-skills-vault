@@ -1,0 +1,59 @@
+name: glm-coding-agent
+title: Glm Coding Agent
+version: 2.0.0
+description: Run Claude Code CLI with GLM 4.7 (via Z.AI) with automatic git safety net - checkpoint, experiment branch, review
+  workflow. Cheap 200k context.
+metadata:
+  author: cgnl
+  category: Development & Coding
+  tags:
+  - development-coding
+  - glm
+  - coding
+  - agent
+  source: clawhub-community
+  clawhub_slug: glm-coding-agent
+  clawhub_path: cgnl/glm-coding-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Glm Coding Agent
+
+    # Source: ClawHub community skill by cgnl
+
+    # Install: clawhub install glm-coding-agent
+
+    # Path: cgnl/glm-coding-agent
+
+
+    ## Description
+
+    Run Claude Code CLI with GLM 4.7 (via Z.AI) with automatic git safety net - checkpoint, experiment branch, review workflow.
+    Cheap 200k context.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install glm-coding-agent
+
+    ```'
+examples:
+- description: Install Glm Coding Agent from ClawHub
+  usage: clawhub install glm-coding-agent
+schema_version: '1.0'

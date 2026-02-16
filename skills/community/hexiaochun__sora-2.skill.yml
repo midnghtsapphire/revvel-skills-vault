@@ -1,0 +1,54 @@
+name: sora_2_____
+title: Sora 2 视频生成
+version: 1.0.0
+description: 使用 Sora 2 模型生成视频。当用户想要文生视频、图生视频、视频重混，或提到 sora、OpenAI 视频生成时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - sora
+  - 视频生成
+  source: clawhub-community
+  clawhub_slug: sora-2
+  clawhub_path: hexiaochun/sora-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sora 2 视频生成
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install sora-2
+
+    # Path: hexiaochun/sora-2
+
+
+    ## Description
+
+    使用 Sora 2 模型生成视频。当用户想要文生视频、图生视频、视频重混，或提到 sora、OpenAI 视频生成时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sora-2
+
+    ```'
+examples:
+- description: Install Sora 2 视频生成 from ClawHub
+  usage: clawhub install sora-2
+schema_version: '1.0'

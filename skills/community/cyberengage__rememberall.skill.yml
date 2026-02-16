@@ -1,0 +1,59 @@
+name: rememberall
+title: RememberAll Reminder System
+version: 1.1.0
+description: Personal reminder system for tasks using cron jobs and systemEvents. Add tasks with natural language ("remind
+  me to call Mom at 5pm tomorrow"), sets precise cron schedules, sends reminders via session message or notification. Handles
+  lists, repeats, deletes. Use for todos, appointments, habits—silen
+metadata:
+  author: cyberengage
+  category: Communication
+  tags:
+  - communication
+  - rememberall
+  source: clawhub-community
+  clawhub_slug: rememberall
+  clawhub_path: cyberengage/rememberall
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RememberAll Reminder System
+
+    # Source: ClawHub community skill by cyberengage
+
+    # Install: clawhub install rememberall
+
+    # Path: cyberengage/rememberall
+
+
+    ## Description
+
+    Personal reminder system for tasks using cron jobs and systemEvents. Add tasks with natural language ("remind me to call
+    Mom at 5pm tomorrow"), sets precise cron schedules, sends reminders via session message or notification. Handles lists,
+    repeats, deletes. Use for todos, appointments, habits—silen
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/parse-cron.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rememberall
+
+    ```'
+examples:
+- description: Install RememberAll Reminder System from ClawHub
+  usage: clawhub install rememberall
+schema_version: '1.0'

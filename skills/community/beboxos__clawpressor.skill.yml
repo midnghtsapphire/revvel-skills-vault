@@ -1,0 +1,65 @@
+name: clawpressor
+title: Session Context Compressor
+version: 1.0.0
+description: Compress OpenClaw session context to reduce token usage and extend session lifetime. Uses NLP summarization (Sumy)
+  to intelligently compact conversation history while preserving essential context. Triggers on mentions of session compression,
+  token reduction, context cleanup, or when session size exc
+metadata:
+  author: beboxos
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawpressor
+  source: clawhub-community
+  clawhub_slug: clawpressor
+  clawhub_path: beboxos/clawpressor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Session Context Compressor
+
+    # Source: ClawHub community skill by beboxos
+
+    # Install: clawhub install clawpressor
+
+    # Path: beboxos/clawpressor
+
+
+    ## Description
+
+    Compress OpenClaw session context to reduce token usage and extend session lifetime. Uses NLP summarization (Sumy) to
+    intelligently compact conversation history while preserving essential context. Triggers on mentions of session compression,
+    token reduction, context cleanup, or when session size exc
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.yaml
+
+    - scripts/compress.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawpressor
+
+    ```'
+examples:
+- description: Install Session Context Compressor from ClawHub
+  usage: clawhub install clawpressor
+schema_version: '1.0'

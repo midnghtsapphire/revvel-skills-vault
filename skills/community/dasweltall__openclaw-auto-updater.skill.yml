@@ -1,0 +1,61 @@
+name: openclaw-auto-updater
+title: OpenClaw Auto‑Updater (Safe + Scheduled + Summary)
+version: 1.0.0
+description: Schedule automatic OpenClaw and skill updates with reliable cron templates, timezone-safe scheduling, and clear
+  summary outputs. Use for hands-off maintenance, scheduled upgrades, and concise update reports.
+metadata:
+  author: dasweltall
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - openclaw
+  - auto
+  - updater
+  source: clawhub-community
+  clawhub_slug: openclaw-auto-updater
+  clawhub_path: dasweltall/openclaw-auto-updater
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Auto‑Updater (Safe + Scheduled + Summary)
+
+    # Source: ClawHub community skill by dasweltall
+
+    # Install: clawhub install openclaw-auto-updater
+
+    # Path: dasweltall/openclaw-auto-updater
+
+
+    ## Description
+
+    Schedule automatic OpenClaw and skill updates with reliable cron templates, timezone-safe scheduling, and clear summary
+    outputs. Use for hands-off maintenance, scheduled upgrades, and concise update reports.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/agent-guide.md
+
+    - references/summary-examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-auto-updater
+
+    ```'
+examples:
+- description: Install OpenClaw Auto‑Updater (Safe + Scheduled + Summary) from ClawHub
+  usage: clawhub install openclaw-auto-updater
+schema_version: '1.0'

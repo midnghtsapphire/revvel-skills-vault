@@ -1,0 +1,60 @@
+name: github-ai-trends
+title: GitHub AI Trends
+version: 1.1.0
+description: Generate GitHub AI trending project reports as formatted text leaderboards. Fetches top-starred AI/ML/LLM repos
+  by daily, weekly, or monthly period and renders a styled leaderboard. Use when the user asks for AI project trends, GitHub
+  trending, AI leaderboard, or wants to see popular AI repos.
+metadata:
+  author: toller892
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - trends
+  source: clawhub-community
+  clawhub_slug: github-ai-trends
+  clawhub_path: toller892/github-ai-trends
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHub AI Trends
+
+    # Source: ClawHub community skill by toller892
+
+    # Install: clawhub install github-ai-trends
+
+    # Path: toller892/github-ai-trends
+
+
+    ## Description
+
+    Generate GitHub AI trending project reports as formatted text leaderboards. Fetches top-starred AI/ML/LLM repos by daily,
+    weekly, or monthly period and renders a styled leaderboard. Use when the user asks for AI project trends, GitHub trending,
+    AI leaderboard, or wants to see popular AI repos.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch_trends.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install github-ai-trends
+
+    ```'
+examples:
+- description: Install GitHub AI Trends from ClawHub
+  usage: clawhub install github-ai-trends
+schema_version: '1.0'

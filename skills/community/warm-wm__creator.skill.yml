@@ -1,0 +1,68 @@
+name: skill-creator
+title: creator
+version: 1.0.0
+description: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update
+  an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.
+metadata:
+  author: warm-wm
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - skill
+  - creator
+  source: clawhub-community
+  clawhub_slug: creator
+  clawhub_path: warm-wm/creator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# creator
+
+    # Source: ClawHub community skill by warm-wm
+
+    # Install: clawhub install creator
+
+    # Path: warm-wm/creator
+
+
+    ## Description
+
+    Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing
+    skill) that extends Claude''s capabilities with specialized knowledge, workflows, or tool integrations.
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/output-patterns.md
+
+    - references/workflows.md
+
+    - scripts/init_skill.py
+
+    - scripts/package_skill.py
+
+    - scripts/quick_validate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install creator
+
+    ```'
+examples:
+- description: Install creator from ClawHub
+  usage: clawhub install creator
+schema_version: '1.0'

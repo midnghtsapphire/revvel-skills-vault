@@ -1,0 +1,66 @@
+name: expanso-email-triage
+title: Expanso email-triage
+version: 1.0.0
+description: ''
+metadata:
+  author: aronchick
+  category: Communication
+  tags:
+  - communication
+  - expanso
+  - email
+  - triage
+  source: clawhub-community
+  clawhub_slug: expanso-email-triage
+  clawhub_path: aronchick/expanso-email-triage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Expanso email-triage
+
+    # Source: ClawHub community skill by aronchick
+
+    # Install: clawhub install expanso-email-triage
+
+    # Path: aronchick/expanso-email-triage
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pipeline-cli.yaml
+
+    - pipeline-mcp.yaml
+
+    - skill.yaml
+
+    - examples/basic.yaml
+
+    - examples/with-calendar.yaml
+
+    - test/test.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install expanso-email-triage
+
+    ```'
+examples:
+- description: Install Expanso email-triage from ClawHub
+  usage: clawhub install expanso-email-triage
+schema_version: '1.0'

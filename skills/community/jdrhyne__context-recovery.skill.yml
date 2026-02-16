@@ -1,0 +1,56 @@
+name: context-recovery
+title: Context Recovery
+version: 1.0.1
+description: Automatically recover working context after session compaction or when continuation is implied but context is
+  missing. Works across Discord, Slack, Telegram, Signal, and other supported channels.
+metadata:
+  author: jdrhyne
+  category: Social Media
+  tags:
+  - social-media
+  - context
+  - recovery
+  source: clawhub-community
+  clawhub_slug: context-recovery
+  clawhub_path: jdrhyne/context-recovery
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Recovery
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install context-recovery
+
+    # Path: jdrhyne/context-recovery
+
+
+    ## Description
+
+    Automatically recover working context after session compaction or when continuation is implied but context is missing.
+    Works across Discord, Slack, Telegram, Signal, and other supported channels.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-recovery
+
+    ```'
+examples:
+- description: Install Context Recovery from ClawHub
+  usage: clawhub install context-recovery
+schema_version: '1.0'

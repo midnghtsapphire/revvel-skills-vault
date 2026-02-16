@@ -1,0 +1,58 @@
+name: ceo-delegation
+title: Ceo Delegation
+version: 1.0.0
+description: CEO式任务委派工作流程。当收到任何任务时使用此流程：不亲自执行，而是派发子代理执行、监控进度、汇报、验收。适用于需要高效并行处理多任务的场景。
+metadata:
+  author: eisonme
+  category: General
+  tags:
+  - general
+  - ceo
+  - delegation
+  source: clawhub-community
+  clawhub_slug: ceo-delegation
+  clawhub_path: eisonme/ceo-delegation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ceo Delegation
+
+    # Source: ClawHub community skill by eisonme
+
+    # Install: clawhub install ceo-delegation
+
+    # Path: eisonme/ceo-delegation
+
+
+    ## Description
+
+    CEO式任务委派工作流程。当收到任何任务时使用此流程：不亲自执行，而是派发子代理执行、监控进度、汇报、验收。适用于需要高效并行处理多任务的场景。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/monitor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ceo-delegation
+
+    ```'
+examples:
+- description: Install Ceo Delegation from ClawHub
+  usage: clawhub install ceo-delegation
+schema_version: '1.0'

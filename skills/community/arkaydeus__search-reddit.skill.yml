@@ -1,0 +1,62 @@
+name: search-reddit
+title: Search Reddit
+version: 1.0.0
+description: Search Reddit in real time using OpenAI web_search with enrichment (engagement + top comments). Use when you
+  need recent Reddit threads, subreddit-filtered results, or quick link lists.
+metadata:
+  author: arkaydeus
+  category: Search & Research
+  tags:
+  - search-research
+  - search
+  - reddit
+  source: clawhub-community
+  clawhub_slug: search-reddit
+  clawhub_path: arkaydeus/search-reddit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Search Reddit
+
+    # Source: ClawHub community skill by arkaydeus
+
+    # Install: clawhub install search-reddit
+
+    # Path: arkaydeus/search-reddit
+
+
+    ## Description
+
+    Search Reddit in real time using OpenAI web_search with enrichment (engagement + top comments). Use when you need recent
+    Reddit threads, subreddit-filtered results, or quick link lists.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/search.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install search-reddit
+
+    ```'
+examples:
+- description: Install Search Reddit from ClawHub
+  usage: clawhub install search-reddit
+schema_version: '1.0'

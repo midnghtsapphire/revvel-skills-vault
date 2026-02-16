@@ -1,0 +1,56 @@
+name: google-drive
+title: Google Drive
+version: 1.0.5
+description: '|'
+metadata:
+  author: byungkyu
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - drive
+  source: clawhub-community
+  clawhub_slug: google-drive
+  clawhub_path: byungkyu/google-drive
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Drive
+
+    # Source: ClawHub community skill by byungkyu
+
+    # Install: clawhub install google-drive
+
+    # Path: byungkyu/google-drive
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-drive
+
+    ```'
+examples:
+- description: Install Google Drive from ClawHub
+  usage: clawhub install google-drive
+schema_version: '1.0'

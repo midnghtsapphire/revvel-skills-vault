@@ -1,0 +1,35 @@
+name: para-pkm
+title: para-pkm
+version: 1.0.0
+description: 'Manage PARA-based personal knowledge management (PKM) systems using Projects, Areas, Resources, and Archives
+  organization method. Use when users need to (1) Create a new PARA knowledge base, (2) Organize or reorganize existing knowledge
+  bases into PARA structure, (3) Decide where content belongs in '
+metadata:
+  author: killerapp
+  category: Search & Research
+  tags:
+  - search-research
+  - para
+  - pkm
+  source: clawhub-community
+  clawhub_slug: para-pkm
+  clawhub_path: killerapp/para-pkm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# para-pkm\n# Source: ClawHub community skill by killerapp\n# Install: clawhub install para-pkm\n# Path: killerapp/para-pkm\n\
+    \n## Description\nManage PARA-based personal knowledge management (PKM) systems using Projects, Areas, Resources, and\
+    \ Archives organization method. Use when users need to (1) Create a new PARA knowledge base, (2) Organize or reorganize\
+    \ existing knowledge bases into PARA structure, (3) Decide where content belongs in \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    - references/ai-navigation.md\n- references/common-patterns.md\n- references/decision-guide.md\n- references/para-principles.md\n\
+    - scripts/archive_project.py\n- scripts/generate_nav.py\n- scripts/init_para_kb.py\n- scripts/validate_para.py\n\n## Installation\n\
+    ```bash\nclawhub install para-pkm\n```"
+examples:
+- description: Install para-pkm from ClawHub
+  usage: clawhub install para-pkm
+schema_version: '1.0'

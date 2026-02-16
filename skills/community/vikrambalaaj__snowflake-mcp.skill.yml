@@ -1,0 +1,62 @@
+name: snowflake-mcp
+title: Snowflake MCP Connection
+version: 2.0.2
+description: Connect to the Snowflake Managed MCP server with Clawdbot or other MCP clients. Use when wiring Snowflake MCP
+  endpoints, validating connectivity, or configuring Cortex AI services.
+metadata:
+  author: vikrambalaaj
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - snowflake
+  - mcp
+  source: clawhub-community
+  clawhub_slug: snowflake-mcp
+  clawhub_path: vikrambalaaj/snowflake-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Snowflake MCP Connection
+
+    # Source: ClawHub community skill by vikrambalaaj
+
+    # Install: clawhub install snowflake-mcp
+
+    # Path: vikrambalaaj/snowflake-mcp
+
+
+    ## Description
+
+    Connect to the Snowflake Managed MCP server with Clawdbot or other MCP clients. Use when wiring Snowflake MCP endpoints,
+    validating connectivity, or configuring Cortex AI services.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - configuration-template.yaml
+
+    - mcp-client-setup.md
+
+    - mcp-server-examples.sql
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install snowflake-mcp
+
+    ```'
+examples:
+- description: Install Snowflake MCP Connection from ClawHub
+  usage: clawhub install snowflake-mcp
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: memory-pipeline
+title: Memory Pipeline 0.1.0
+version: 1.0.0
+description: Complete agent memory + performance system. Extracts structured facts, builds knowledge graphs, generates briefings,
+  and enforces execution discipline via pre-game routines, tool policies, result compression, and after-action reviews. Use
+  when working on memory management, briefing generation, knowl
+metadata:
+  author: bodii88
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - memory
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: memory-pipeline-0-1-0
+  clawhub_path: bodii88/memory-pipeline-0-1-0
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Pipeline 0.1.0
+
+    # Source: ClawHub community skill by bodii88
+
+    # Install: clawhub install memory-pipeline-0-1-0
+
+    # Path: bodii88/memory-pipeline-0-1-0
+
+
+    ## Description
+
+    Complete agent memory + performance system. Extracts structured facts, builds knowledge graphs, generates briefings, and
+    enforces execution discipline via pre-game routines, tool policies, result compression, and after-action reviews. Use
+    when working on memory management, briefing generation, knowl
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - openclaw.plugin.json
+
+    - references/setup.md
+
+    - scripts/memory-briefing.py
+
+    - scripts/memory-extract.py
+
+    - scripts/memory-link.py
+
+    - src/briefing.ts
+
+    - src/compress.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-pipeline-0-1-0
+
+    ```'
+examples:
+- description: Install Memory Pipeline 0.1.0 from ClawHub
+  usage: clawhub install memory-pipeline-0-1-0
+schema_version: '1.0'

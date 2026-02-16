@@ -1,0 +1,68 @@
+name: chart-image
+title: Chart Image
+version: 2.2.0
+description: Generate publication-quality chart images from data. Supports line, bar, area, point, candlestick, pie/donut,
+  heatmap, multi-series, and stacked charts. Use when visualizing data, creating graphs, plotting time series, or generating
+  chart images for reports/alerts. Designed for Fly.io/VPS deployment
+metadata:
+  author: dannyshmueli
+  category: Search & Research
+  tags:
+  - search-research
+  - chart
+  - image
+  source: clawhub-community
+  clawhub_slug: chart-image
+  clawhub_path: dannyshmueli/chart-image
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Chart Image
+
+    # Source: ClawHub community skill by dannyshmueli
+
+    # Install: clawhub install chart-image
+
+    # Path: dannyshmueli/chart-image
+
+
+    ## Description
+
+    Generate publication-quality chart images from data. Supports line, bar, area, point, candlestick, pie/donut, heatmap,
+    multi-series, and stacked charts. Use when visualizing data, creating graphs, plotting time series, or generating chart
+    images for reports/alerts. Designed for Fly.io/VPS deployment
+
+
+    ## Files
+
+    - CAPABILITY.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/chart.mjs
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install chart-image
+
+    ```'
+examples:
+- description: Install Chart Image from ClawHub
+  usage: clawhub install chart-image
+schema_version: '1.0'

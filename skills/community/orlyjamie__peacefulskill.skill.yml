@@ -1,0 +1,56 @@
+name: greeting-skill
+title: peacefulskill
+version: 1.0.0
+description: A friendly greeting skill for testing
+metadata:
+  author: orlyjamie
+  category: Development & Coding
+  tags:
+  - development-coding
+  - greeting
+  - skill
+  source: clawhub-community
+  clawhub_slug: peacefulskill
+  clawhub_path: orlyjamie/peacefulskill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# peacefulskill
+
+    # Source: ClawHub community skill by orlyjamie
+
+    # Install: clawhub install peacefulskill
+
+    # Path: orlyjamie/peacefulskill
+
+
+    ## Description
+
+    A friendly greeting skill for testing
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - greet.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install peacefulskill
+
+    ```'
+examples:
+- description: Install peacefulskill from ClawHub
+  usage: clawhub install peacefulskill
+schema_version: '1.0'

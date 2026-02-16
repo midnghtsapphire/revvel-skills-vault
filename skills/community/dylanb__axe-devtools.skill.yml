@@ -1,0 +1,33 @@
+name: axe-accessibility
+title: Axe DevTools
+version: 4.0.0
+description: 'Accessibility testing and remediation using the axe MCP Server. Use when creating or modifying UI code (HTML,
+  JSX, TSX, Vue, Svelte, CSS) to ensure accessibility compliance. Triggers on tasks involving web pages, components, forms,
+  navigation, modals, tables, images, or any user-facing markup. Also '
+metadata:
+  author: dylanb
+  category: Media & Content
+  tags:
+  - media-content
+  - axe
+  - accessibility
+  source: clawhub-community
+  clawhub_slug: axe-devtools
+  clawhub_path: dylanb/axe-devtools
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Axe DevTools\n# Source: ClawHub community skill by dylanb\n# Install: clawhub install axe-devtools\n# Path:\
+    \ dylanb/axe-devtools\n\n## Description\nAccessibility testing and remediation using the axe MCP Server. Use when creating\
+    \ or modifying UI code (HTML, JSX, TSX, Vue, Svelte, CSS) to ensure accessibility compliance. Triggers on tasks involving\
+    \ web pages, components, forms, navigation, modals, tables, images, or any user-facing markup. Also \n\n## Files\n- SKILL.md\n\
+    - _meta.json\n- scripts/axe-mcp.js\n\n## Installation\n```bash\nclawhub install axe-devtools\n```"
+examples:
+- description: Install Axe DevTools from ClawHub
+  usage: clawhub install axe-devtools
+schema_version: '1.0'

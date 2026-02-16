@@ -1,0 +1,65 @@
+name: phoenix-api-gen
+title: Phoenix API Generator
+version: 1.0.0
+description: Generate a full Phoenix JSON API from an OpenAPI spec or natural language description. Creates contexts, Ecto
+  schemas, migrations, controllers, JSON views/renderers, router entries, ExUnit tests with factories, auth plugs, and tenant
+  scoping. Use when building a new Phoenix REST API, adding CRUD end
+metadata:
+  author: gchapim
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - phoenix
+  - api
+  - gen
+  source: clawhub-community
+  clawhub_slug: phoenix-api-gen
+  clawhub_path: gchapim/phoenix-api-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Phoenix API Generator
+
+    # Source: ClawHub community skill by gchapim
+
+    # Install: clawhub install phoenix-api-gen
+
+    # Path: gchapim/phoenix-api-gen
+
+
+    ## Description
+
+    Generate a full Phoenix JSON API from an OpenAPI spec or natural language description. Creates contexts, Ecto schemas,
+    migrations, controllers, JSON views/renderers, router entries, ExUnit tests with factories, auth plugs, and tenant scoping.
+    Use when building a new Phoenix REST API, adding CRUD end
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/ecto-patterns.md
+
+    - references/phoenix-conventions.md
+
+    - references/test-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install phoenix-api-gen
+
+    ```'
+examples:
+- description: Install Phoenix API Generator from ClawHub
+  usage: clawhub install phoenix-api-gen
+schema_version: '1.0'

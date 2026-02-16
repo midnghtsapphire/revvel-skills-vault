@@ -1,0 +1,59 @@
+name: clawhub-publish
+title: Clawhub Publish
+version: 1.0.0
+description: Publish and update agent skills to ClawHub registry. Use when publishing new skill versions, updating existing
+  skills, or managing ClawHub publications. Handles version checking, git commits, GitHub pushing, and ClawHub publishing
+  workflow.
+metadata:
+  author: briansmith80
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawhub
+  - publish
+  source: clawhub-community
+  clawhub_slug: clawhub-publish
+  clawhub_path: briansmith80/clawhub-publish
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawhub Publish
+
+    # Source: ClawHub community skill by briansmith80
+
+    # Install: clawhub install clawhub-publish
+
+    # Path: briansmith80/clawhub-publish
+
+
+    ## Description
+
+    Publish and update agent skills to ClawHub registry. Use when publishing new skill versions, updating existing skills,
+    or managing ClawHub publications. Handles version checking, git commits, GitHub pushing, and ClawHub publishing workflow.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/publish-skill.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawhub-publish
+
+    ```'
+examples:
+- description: Install Clawhub Publish from ClawHub
+  usage: clawhub install clawhub-publish
+schema_version: '1.0'

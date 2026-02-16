@@ -1,0 +1,60 @@
+name: turix-mac
+title: TuriX Computer Use
+version: 1.0.8
+description: Computer Use Agent (CUA) for macOS automation using TuriX. Use when you need to perform visual tasks on the desktop,
+  such as opening apps, clicking buttons, or navigating UIs that don't have a CLI or API.
+metadata:
+  author: tongyu-yan
+  category: Development & Coding
+  tags:
+  - development-coding
+  - turix
+  - mac
+  source: clawhub-community
+  clawhub_slug: turix-cua
+  clawhub_path: tongyu-yan/turix-cua
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TuriX Computer Use
+
+    # Source: ClawHub community skill by tongyu-yan
+
+    # Install: clawhub install turix-cua
+
+    # Path: tongyu-yan/turix-cua
+
+
+    ## Description
+
+    Computer Use Agent (CUA) for macOS automation using TuriX. Use when you need to perform visual tasks on the desktop, such
+    as opening apps, clicking buttons, or navigating UIs that don''t have a CLI or API.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/run_turix.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install turix-cua
+
+    ```'
+examples:
+- description: Install TuriX Computer Use from ClawHub
+  usage: clawhub install turix-cua
+schema_version: '1.0'

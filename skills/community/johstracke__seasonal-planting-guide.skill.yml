@@ -1,0 +1,61 @@
+name: seasonal-planting-guide
+title: Seasonal Planting Guide
+version: 1.0.0
+description: 'Seasonal planting calendar for gardeners. Find what to plant each month in your growing zone. Use when planning
+  your garden, checking planting schedules, or finding plants for the current season. Security: file exports restricted to
+  safe directories. Perfect for home gardeners, small farmers, and an'
+metadata:
+  author: johstracke
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - seasonal
+  - planting
+  - guide
+  source: clawhub-community
+  clawhub_slug: seasonal-planting-guide
+  clawhub_path: johstracke/seasonal-planting-guide
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seasonal Planting Guide
+
+    # Source: ClawHub community skill by johstracke
+
+    # Install: clawhub install seasonal-planting-guide
+
+    # Path: johstracke/seasonal-planting-guide
+
+
+    ## Description
+
+    Seasonal planting calendar for gardeners. Find what to plant each month in your growing zone. Use when planning your garden,
+    checking planting schedules, or finding plants for the current season. Security: file exports restricted to safe directories.
+    Perfect for home gardeners, small farmers, and an
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/seasonal_planting.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seasonal-planting-guide
+
+    ```'
+examples:
+- description: Install Seasonal Planting Guide from ClawHub
+  usage: clawhub install seasonal-planting-guide
+schema_version: '1.0'

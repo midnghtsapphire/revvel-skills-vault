@@ -1,0 +1,393 @@
+name: lexisnexis_integration
+title: LexisNexis Integration
+version: 1.0.0
+description: Production-grade integration for LexisNexis legal research platform providing automated case law queries, Shepard's
+  citation validation, statutory research, regulatory compliance monitoring, and legal analytics capabilities
+metadata:
+  author: Revvel AI Engine
+  category: Legal & Compliance
+  tags:
+  - case-law-search
+  - lexisnexis
+  - integration
+  - regulatory-compliance-check
+  - citation-validation
+  - legal-analytics
+  - statutory-research
+  - shepard-citation-analysis
+  - legal-document-retrieval
+  - docket-tracking
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport os\nimport re\nimport hashlib\nimport datetime\nimport collections\nimport statistics\nimport\
+    \ math\nimport requests\nimport unittest\nfrom typing import Dict, List, Optional, Any, Union\nfrom dataclasses import\
+    \ dataclass\nfrom urllib.parse import urlencode, quote_plus\n\nSKILL_METADATA = {\n    \"name\": \"LexisNexis Integration\"\
+    ,\n    \"id\": \"lexisnexis_integration\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"\
+    description\": \"Production-grade integration for LexisNexis legal research platform providing automated case law queries,\
+    \ Shepard's citation validation, statutory research, regulatory compliance monitoring, and legal analytics capabilities\"\
+    ,\n    \"capabilities\": [\n        \"case_law_search\",\n        \"citation_validation\",\n        \"statutory_research\"\
+    ,\n        \"regulatory_compliance_check\",\n        \"legal_analytics\",\n        \"shepard_citation_analysis\",\n  \
+    \      \"docket_tracking\",\n        \"legal_document_retrieval\"\n    ],\n    \"domain\": \"legal_research_automation\"\
+    \n}\n\nEXPERT_PROMPTS = {\n    \"case_law_research\": \"\"\"You are a senior legal researcher tasked with finding relevant\
+    \ case law for {case_topic}. \n    Search parameters:\n    - Jurisdiction: {jurisdiction}\n    - Date range: {start_date}\
+    \ to {end_date}\n    - Key legal issues: {legal_issues}\n    - Desired outcome: {desired_outcome}\n    \n    Provide a\
+    \ comprehensive analysis including precedent cases, distinguishing factors, and strategic recommendations.\"\"\",\n  \
+    \  \n    \"citation_validation\": \"\"\"Perform Shepard's citation validation for the following legal citation: {citation}\n\
+    \    \n    Validation requirements:\n    - Verify citation format and accuracy\n    - Check for negative history or treatment\n\
+    \    - Identify subsequent appellate history\n    - Flag any red flags or warnings\n    - Provide treatment analysis:\
+    \ {positive_negative}\n    \n    Return detailed validation report with risk assessment.\"\"\",\n    \n    \"statutory_research\"\
+    : \"\"\"Research statutory provisions related to {statutory_topic} in {jurisdiction}\n    \n    Research scope:\n    -\
+    \ Current statutory text and amendments\n    - Legislative history and intent\n    - Related regulations and administrative\
+    \ guidance\n    - Case law interpreting the statute\n    - Conflicting authorities or split decisions\n    \n    Provide\
+    \ comprehensive statutory analysis with practical implications.\"\"\",\n    \n    \"regulatory_compliance\": \"\"\"Conduct\
+    \ regulatory compliance analysis for {business_activity} under {regulatory_framework}\n    \n    Compliance parameters:\n\
+    \    - Applicable regulations: {regulations}\n    - Business operations: {operations}\n    - Geographic scope: {geographic_scope}\n\
+    \    - Risk tolerance: {risk_level}\n    \n    Identify compliance gaps, requirements, and recommended actions.\"\"\"\
+    ,\n    \n    \"legal_analytics\": \"\"\"Generate legal analytics report for {analytics_topic} using the following dataset:\
+    \ {dataset_description}\n    \n    Analytics focus:\n    - Trend analysis over {time_period}\n    - Success rates and\
+    \ outcomes\n    - Cost-benefit analysis\n    - Risk assessment metrics\n    - Predictive modeling for {prediction_target}\n\
+    \    \n    Provide data-driven insights and strategic recommendations.\"\"\",\n    \n    \"docket_analysis\": \"\"\"Analyze\
+    \ docket activity for {case_name} in {court_jurisdiction}\n    \n    Analysis parameters:\n    - Case timeline and milestones\n\
+    \    - Party filings and motions\n    - Judicial orders and rulings\n    - Discovery disputes\n    - Settlement negotiations\n\
+    \    \n    Provide strategic litigation intelligence and next steps.\"\"\",\n    \n    \"contract_clause_research\": \"\
+    \"\"Research standard contract clauses for {contract_type} agreements in {industry}\n    \n    Research focus:\n    -\
+    \ Industry-standard terms\n    - Enforceability considerations\n    - Jurisdiction-specific requirements\n    - Risk allocation\
+    \ provisions\n    - Recent legal developments\n    \n    Provide clause recommendations with legal backing.\"\"\",\n \
+    \   \n    \"intellectual_property_prosecution\": \"\"\"Research IP prosecution strategies for {ip_type} in {jurisdiction}\n\
+    \    \n    Research scope:\n    - Filing requirements and procedures\n    - Examination guidelines\n    - Prior art considerations\n\
+    \    - Opposition proceedings\n    - Appeal processes\n    \n    Provide prosecution roadmap with success metrics.\"\"\
+    \"\n}\n\nINTEGRATION_POINTS = {\n    \"lexisnexis_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.lexisnexis.com/v1\"\
+    ,\n        \"description\": \"Primary LexisNexis API for legal research and document retrieval\",\n        \"auth_method\"\
+    : \"OAuth 2.0\",\n        \"documentation_url\": \"https://dev.lexisnexis.com/docs\"\n    },\n    \"shepard_citation_service\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://shepards.lexisnexis.com/api/v2\",\n        \"description\"\
+    : \"Shepard's citation validation and analysis service\",\n        \"auth_method\": \"API Key\",\n        \"documentation_url\"\
+    : \"https://dev.lexisnexis.com/shepards\"\n    },\n    \"lexis_nexis_daas\": {\n        \"type\": \"database\",\n    \
+    \    \"endpoint\": \"https://daas.lexisnexis.com/data\",\n        \"description\": \"LexisNexis Data-as-a-Service for\
+    \ bulk legal data access\",\n        \"auth_method\": \"Token-based\",\n        \"documentation_url\": \"https://dev.lexisnexis.com/daas\"\
+    \n    },\n    \"court_docket_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://dockets.lexisnexis.com/api/v1\"\
+    ,\n        \"description\": \"Federal and state court docket tracking system\",\n        \"auth_method\": \"OAuth 2.0\"\
+    ,\n        \"documentation_url\": \"https://dev.lexisnexis.com/dockets\"\n    },\n    \"regulatory_compliance_db\": {\n\
+    \        \"type\": \"database\",\n        \"endpoint\": \"https://compliance.lexisnexis.com/regdb\",\n        \"description\"\
+    : \"Regulatory compliance database with real-time updates\",\n        \"auth_method\": \"Certificate-based\",\n      \
+    \  \"documentation_url\": \"https://dev.lexisnexis.com/compliance\"\n    }\n}\n\ndef validate_citation_format(citation:\
+    \ str) -> Dict[str, Any]:\n    \"\"\"Validate legal citation format and extract components.\n    \n    Args:\n       \
+    \ citation: Raw legal citation string\n        \n    Returns:\n        Dict containing validation results and extracted\
+    \ components\n    \"\"\"\n    patterns = {\n        'federal_reporter': r'(\\d+)\\s+([A-Z]\\.([A-Z]\\.)?)\\s+(\\d+)\\\
+    s+\\(([\\w\\s]+)\\s+(\\d{4})\\)',\n        'regional_reporter': r'(\\d+)\\s+([A-Z]\\.([A-Z]\\.)?)\\s+(\\d+)\\s+(\\d+)',\n\
+    \        'supreme_court': r'(\\d+)\\s+U\\.S\\.\\s+(\\d+)\\s+\\((\\d{4})\\)',\n        'statute': r'(\\d+)\\s+U\\.S\\.C\\\
+    .\\s+§\\s+(\\d+)',\n        'state_court': r'(\\d+)\\s+([A-Z]\\.([A-Z]\\.)?)\\s+(\\d+)\\s+\\(([\\w\\s]+)\\s+(\\d{4})\\\
+    )'\n    }\n    \n    result = {\n        'valid': False,\n        'format': None,\n        'components': {},\n       \
+    \ 'errors': []\n    }\n    \n    citation = citation.strip()\n    for format_name, pattern in patterns.items():\n    \
+    \    match = re.search(pattern, citation)\n        if match:\n            result['valid'] = True\n            result['format']\
+    \ = format_name\n            result['components'] = {\n                'volume': match.group(1),\n                'reporter':\
+    \ match.group(2),\n                'page': match.group(4) if len(match.groups()) > 4 else match.group(2),\n          \
+    \      'year': match.group(6) if len(match.groups()) > 6 else match.group(3)\n            }\n            break\n    \n\
+    \    if not result['valid']:\n        result['errors'].append('Citation format not recognized')\n    \n    return result\n\
+    \ndef build_lexis_search_query(parameters: Dict[str, Any]) -> str:\n    \"\"\"Build optimized LexisNexis search query\
+    \ from parameters.\n    \n    Args:\n        parameters: Dict containing search parameters\n        \n    Returns:\n \
+    \       Formatted search query string\n    \"\"\"\n    query_parts = []\n    \n    if 'keywords' in parameters:\n    \
+    \    keywords = parameters['keywords']\n        if isinstance(keywords, list):\n            query_parts.append(f\"({'\
+    \ OR '.join(keywords)})\")\n        else:\n            query_parts.append(keywords)\n    \n    if 'jurisdiction' in parameters:\n\
+    \        jurisdiction = parameters['jurisdiction']\n        if isinstance(jurisdiction, list):\n            query_parts.append(f\"\
+    JURISDICTION({' OR '.join(jurisdiction)})\")\n        else:\n            query_parts.append(f\"JURISDICTION({jurisdiction})\"\
+    )\n    \n    if 'date_range' in parameters:\n        date_range = parameters['date_range']\n        if isinstance(date_range,\
+    \ dict) and 'start' in date_range and 'end' in date_range:\n            query_parts.append(f\"DATE({date_range['start']}\
+    \ to {date_range['end']})\")\n    \n    if 'court_level' in parameters:\n        court_level = parameters['court_level']\n\
+    \        query_parts.append(f\"COURT-LEVEL({court_level})\")\n    \n    if 'case_type' in parameters:\n        case_type\
+    \ = parameters['case_type']\n        query_parts.append(f\"CASE-TYPE({case_type})\")\n    \n    if 'attorney' in parameters:\n\
+    \        attorney = parameters['attorney']\n        query_parts.append(f\"ATTORNEY({attorney})\")\n    \n    if 'judge'\
+    \ in parameters:\n        judge = parameters['judge']\n        query_parts.append(f\"JUDGE({judge})\")\n    \n    query\
+    \ = \" AND \".join(query_parts)\n    \n    if 'exclude_terms' in parameters:\n        exclude_terms = parameters['exclude_terms']\n\
+    \        if isinstance(exclude_terms, list):\n            query += f\" NOT ({' OR '.join(exclude_terms)})\"\n        else:\n\
+    \            query += f\" NOT ({exclude_terms})\"\n    \n    return query\n\ndef parse_legal_document(document_text: str)\
+    \ -> Dict[str, Any]:\n    \"\"\"Parse legal document and extract key metadata and content sections.\n    \n    Args:\n\
+    \        document_text: Raw legal document text\n        \n    Returns:\n        Dict containing parsed document structure\n\
+    \    \"\"\"\n    result = {\n        'metadata': {},\n        'sections': {},\n        'citations': [],\n        'parties':\
+    \ [],\n        'issues': []\n    }\n    \n    header_pattern = r'^(.*?)\\n(?:v\\.|vs\\.|versus)\\n(.*?)\\n'\n    header_match\
+    \ = re.search(header_pattern, document_text, re.IGNORECASE | re.DOTALL)\n    if header_match:\n        result['parties']\
+    \ = [header_match.group(1).strip(), header_match.group(2).strip()]\n    \n    citation_pattern = r'(\\d+)\\s+([A-Z]\\\
+    .([A-Z]\\.)?)\\s+(\\d+)\\s+\\((.*?)\\s+(\\d{4})\\)'\n    citations = re.findall(citation_pattern, document_text)\n   \
+    \ result['citations'] = [' '.join(cit) for cit in citations]\n    \n    section_patterns = {\n        'procedural_posture':\
+    \ r'PROCEDURAL POSTURE(.*?)(?=\\n[A-Z]|$)',\n        'overview': r'OVERVIEW(.*?)(?=\\n[A-Z]|$)',\n        'outcome': r'OUTCOME(.*?)(?=\\\
+    n[A-Z]|$)',\n        'core_concepts': r'CORE CONCEPTS(.*?)(?=\\n[A-Z]|$)',\n        'facts': r'FACTS(.*?)(?=\\n[A-Z]|$)',\n\
+    \        'legal_issues': r'LEGAL ISSUES?(.*?)(?=\\n[A-Z]|$)',\n        'holding': r'HOLDING(.*?)(?=\\n[A-Z]|$)',\n   \
+    \     'analysis': r'ANALYSIS(.*?)(?=\\n[A-Z]|$)',\n        'conclusion': r'CONCLUSION(.*?)(?=\\n[A-Z]|$)'\n    }\n   \
+    \ \n    for section_name, pattern in section_patterns.items():\n        match = re.search(pattern, document_text, re.IGNORECASE\
+    \ | re.DOTALL)\n        if match:\n            result['sections'][section_name] = match.group(1).strip()\n    \n    date_pattern\
+    \ = r'(?:Decided|Filed|Argued)\\s+(?:on\\s+)?([A-Z][a-z]+\\s+\\d{1,2},?\\s+\\d{4})'\n    date_match = re.search(date_pattern,\
+    \ document_text)\n    if date_match:\n        result['metadata']['decision_date'] = date_match.group(1)\n    \n    court_pattern\
+    \ = r'(?:Court|Supreme Court|District Court)\\s+(?:of\\s+)?([A-Z][a-z]+(?:\\s+[A-Z][a-z]+)?)'\n    court_match = re.search(court_pattern,\
+    \ document_text)\n    if court_match:\n        result['metadata']['court'] = court_match.group(1)\n    \n    return result\n\
+    \ndef calculate_legal_success_metrics(case_data: List[Dict[str, Any]]) -> Dict[str, float]:\n    \"\"\"Calculate success\
+    \ metrics from case law data.\n    \n    Args:\n        case_data: List of case dictionaries with outcome information\n\
+    \        \n    Returns:\n        Dict containing calculated success metrics\n    \"\"\"\n    if not case_data:\n     \
+    \   return {\n            'overall_success_rate': 0.0,\n            'average_duration_days': 0.0,\n            'settlement_rate':\
+    \ 0.0,\n            'appeal_rate': 0.0,\n            'reversal_rate': 0.0\n        }\n    \n    total_cases = len(case_data)\n\
+    \    successful_outcomes = 0\n    settled_cases = 0\n    appealed_cases = 0\n    reversed_cases = 0\n    durations = []\n\
+    \    \n    for case in case_data:\n        outcome = case.get('outcome', '').lower()\n        if outcome in ['plaintiff\
+    \ wins', 'defendant wins', 'granted', 'affirmed']:\n            successful_outcomes += 1\n        \n        if 'settled'\
+    \ in outcome or 'settlement' in outcome:\n            settled_cases += 1\n        \n        if 'appealed' in outcome or\
+    \ 'appeal' in outcome:\n            appealed_cases += 1\n        \n        if 'reversed' in outcome or 'reversal' in outcome:\n\
+    \            reversed_cases += 1\n        \n        if 'duration_days' in case:\n            durations.append(case['duration_days'])\n\
+    \    \n    metrics = {\n        'overall_success_rate': successful_outcomes / total_cases * 100,\n        'settlement_rate':\
+    \ settled_cases / total_cases * 100,\n        'appeal_rate': appealed_cases / total_cases * 100,\n        'reversal_rate':\
+    \ reversed_cases / total_cases * 100 if appealed_cases > 0 else 0.0\n    }\n    \n    if durations:\n        metrics['average_duration_days']\
+    \ = statistics.mean(durations)\n        metrics['median_duration_days'] = statistics.median(durations)\n        metrics['duration_std_dev']\
+    \ = statistics.stdev(durations) if len(durations) > 1 else 0.0\n    \n    return metrics\n\ndef generate_legal_research_report(search_results:\
+    \ List[Dict[str, Any]], query_params: Dict[str, Any]) -> str:\n    \"\"\"Generate formatted legal research report from\
+    \ search results.\n    \n    Args:\n        search_results: List of search result documents\n        query_params: Original\
+    \ search parameters\n        \n    Returns:\n        Formatted research report string\n    \"\"\"\n    report_lines =\
+    \ []\n    report_lines.append(\"LEGAL RESEARCH REPORT\")\n    report_lines.append(\"=\" * 50)\n    report_lines.append(f\"\
+    Generated on: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}\")\n    report_lines.append(f\"Search Query: {query_params.get('keywords',\
+    \ 'N/A')}\")\n    report_lines.append(f\"Jurisdiction: {query_params.get('jurisdiction', 'All')}\")\n    report_lines.append(f\"\
+    Date Range: {query_params.get('date_range', {}).get('start', 'N/A')} to {query_params.get('date_range', {}).get('end',\
+    \ 'N/A')}\")\n    report_lines.append(\"\")\n    \n    if not search_results:\n        report_lines.append(\"No results\
+    \ found matching the search criteria.\")\n        return \"\\n\".join(report_lines)\n    \n    report_lines.append(f\"\
+    Total Results Found: {len(search_results)}\")\n    report_lines.append(\"\")\n    \n    for i, result in enumerate(search_results[:10],\
+    \ 1):\n        report_lines.append(f\"{i}. {result.get('title', 'Untitled')}\")\n        report_lines.append(f\"   Citation:\
+    \ {result.get('citation', 'N/A')}\")\n        report_lines.append(f\"   Court: {result.get('court', 'N/A')}\")\n     \
+    \   report_lines.append(f\"   Date: {result.get('date', 'N/A')}\")\n        report_lines.append(f\"   Relevance Score:\
+    \ {result.get('relevance_score', 'N/A')}\")\n        \n        summary = result.get('summary', '')\n        if summary:\n\
+    \            summary = summary[:200] + '...' if len(summary) > 200 else summary\n            report_lines.append(f\" \
+    \  Summary: {summary}\")\n        report_lines.append(\"\")\n    \n    if len(search_results) > 10:\n        report_lines.append(f\"\
+    ... and {len(search_results) - 10} additional results\")\n    \n    return \"\\n\".join(report_lines)\n\ndef extract_legal_entities(text:\
+    \ str) -> Dict[str, List[str]]:\n    \"\"\"Extract legal entities (courts, judges, attorneys, parties) from text.\n  \
+    \  \n    Args:\n        text: Legal document text\n        \n    Returns:\n        Dict containing lists of extracted\
+    \ entities\n    \"\"\"\n    entities = {\n        'courts': [],\n        'judges': [],\n        'attorneys': [],\n   \
+    \     'parties': [],\n        'case_numbers': []\n    }\n    \n    court_patterns = [\n        r'(?:Supreme Court|District\
+    \ Court|Circuit Court|Court of Appeals)\\s+(?:of\\s+)?([A-Z][a-z]+(?:\\s+[A-Z][a-z]+)?)',\n        r'([A-Z][a-z]+(?:\\\
+    s+[A-Z][a-z]+)?)\\s+(?:Supreme Court|District Court|Circuit Court)'\n    ]\n    \n    for pattern in court_patterns:\n\
+    \        courts = re.findall(pattern, text)\n        entities['courts'].extend(courts)\n    \n    judge_pattern = r'(?:Judge|Justice)\\\
+    s+([A-Z][a-z]+(?:\\s+[A-Z]\\.?[a-z]+)*)\\s*(?:,|\\.|\\n)'\n    judges = re.findall(judge_pattern, text)\n    entities['judges'].extend(judges)\n\
+    \    \n    attorney_pattern = r'(?:Attorney|Counsel)\\s+([A-Z][a-z]+(?:\\s+[A-Z]\\.?[a-z]+)*)\\s*(?:,|\\.|\\n)'\n    attorneys\
+    \ = re.findall(attorney_pattern, text)\n    entities['attorneys'].extend(attorneys)\n    \n    case_number_pattern = r'(?:No\\\
+    .|Case No\\.|Docket No\\.)\\s*([A-Z]{1,3}\\s*\\d{2,4}[-–]\\d{1,4}(?:\\s*\\([A-Z]\\))?)'\n    case_numbers = re.findall(case_number_pattern,\
+    \ text)\n    entities['case_numbers'].extend(case_numbers)\n    \n    for key in entities:\n        entities[key] = list(set(entities[key]))\n\
+    \    \n    return entities\n\ndef calculate_citation_network(citations: List[str]) -> Dict[str, Any]:\n    \"\"\"Analyze\
+    \ citation network and relationships.\n    \n    Args:\n        citations: List of legal citations\n        \n    Returns:\n\
+    \        Dict containing network analysis results\n    \"\"\"\n    network = {\n        'total_citations': len(citations),\n\
+    \        'unique_citations': len(set(citations)),\n        'citation_frequency': collections.Counter(citations),\n   \
+    \     'most_cited': [],\n        'citation_years': [],\n        'jurisdictions': []\n    }\n    \n    year_pattern = r'(\\\
+    d{4})\\)'\n    jurisdiction_pattern = r'\\(([\\w\\s]+)\\s+\\d{4}\\)'\n    \n    for citation in citations:\n        year_match\
+    \ = re.search(year_pattern, citation)\n        if year_match:\n            network['citation_years'].append(int(year_match.group(1)))\n\
+    \        \n        jurisdiction_match = re.search(jurisdiction_pattern, citation)\n        if jurisdiction_match:\n  \
+    \          network['jurisdictions'].append(jurisdiction_match.group(1).strip())\n    \n    if network['citation_frequency']:\n\
+    \        most_common = network['citation_frequency'].most_common(5)\n        network['most_cited'] = [{'citation': cit,\
+    \ 'count': count} for cit, count in most_common]\n    \n    if network['citation_years']:\n        network['year_range']\
+    \ = {\n            'earliest': min(network['citation_years']),\n            'latest': max(network['citation_years']),\n\
+    \            'median': statistics.median(network['citation_years'])\n        }\n    \n    if network['jurisdictions']:\n\
+    \        jurisdiction_counts = collections.Counter(network['jurisdictions'])\n        network['jurisdiction_breakdown']\
+    \ = dict(jurisdiction_counts.most_common())\n    \n    return network\n\ndef validate_regulatory_compliance(business_activity:\
+    \ str, regulations: List[str], jurisdiction: str) -> Dict[str, Any]:\n    \"\"\"Validate business activity against regulatory\
+    \ requirements.\n    \n    Args:\n        business_activity: Description of business activity\n        regulations: List\
+    \ of applicable regulations\n        jurisdiction: Jurisdiction for compliance check\n        \n    Returns:\n       \
+    \ Dict containing compliance validation results\n    \"\"\"\n    compliance_result = {\n        'business_activity': business_activity,\n\
+    \        'jurisdiction': jurisdiction,\n        'applicable_regulations': regulations,\n        'compliance_status': 'pending',\n\
+    \        'requirements': [],\n        'gaps': [],\n        'recommendations': [],\n        'risk_level': 'unknown'\n \
+    \   }\n    \n    risk_keywords = {\n        'high': ['financial services', 'healthcare', 'food', 'drug', 'aviation', 'nuclear',\
+    \ 'banking'],\n        'medium': ['technology', 'data processing', 'employment', 'environmental', 'construction'],\n \
+    \       'low': ['consulting', 'retail', 'general services', 'manufacturing']\n    }\n    \n    activity_lower = business_activity.lower()\n\
+    \    detected_risk = 'low'\n    \n    for risk_level, keywords in risk_keywords.items():\n        if any(keyword in activity_lower\
+    \ for keyword in keywords):\n            detected_risk = risk_level\n            break\n    \n    compliance_result['risk_level']\
+    \ = detected_risk\n    \n    if regulations:\n        compliance_result['requirements'] = [\n            f\"Comply with\
+    \ {reg}\" for reg in regulations\n        ]\n        \n        if len(regulations) > 3:\n            compliance_result['gaps'].append(\"\
+    Multiple regulatory frameworks may create compliance complexity\")\n        \n        if 'financial' in business_activity.lower()\
+    \ and not any('financial' in reg.lower() for reg in regulations):\n            compliance_result['gaps'].append(\"Financial\
+    \ services regulations may apply but not listed\")\n    \n    if detected_risk == 'high':\n        compliance_result['recommendations'].extend([\n\
+    \            \"Engage specialized regulatory counsel\",\n            \"Implement comprehensive compliance monitoring system\"\
+    ,\n            \"Conduct quarterly compliance audits\"\n        ])\n    elif detected_risk == 'medium':\n        compliance_result['recommendations'].extend([\n\
+    \            \"Develop written compliance policies\",\n            \"Train staff on regulatory requirements\",\n     \
+    \       \"Monitor regulatory changes\"\n        ])\n    else:\n        compliance_result['recommendations'].extend([\n\
+    \            \"Maintain basic compliance documentation\",\n            \"Review regulations annually\"\n        ])\n \
+    \   \n    if not compliance_result['gaps']:\n        compliance_result['compliance_status'] = 'likely_compliant'\n   \
+    \ else:\n        compliance_result['compliance_status'] = 'needs_review'\n    \n    return compliance_result\n\nclass\
+    \ SkillEngine:\n    def __init__(self, config: Dict[str, Any]):\n        \"\"\"Initialize LexisNexis Integration Skill\
+    \ Engine.\n        \n        Args:\n            config: Configuration dictionary with API credentials and settings\n \
+    \       \"\"\"\n        self.config = config\n        self.api_key = config.get('api_key', '')\n        self.base_url\
+    \ = config.get('base_url', 'https://api.lexisnexis.com/v1')\n        self.timeout = config.get('timeout', 30)\n      \
+    \  self.max_retries = config.get('max_retries', 3)\n        self.session = requests.Session()\n        \n        if self.api_key:\n\
+    \            self.session.headers.update({\n                'Authorization': f'Bearer {self.api_key}',\n             \
+    \   'Content-Type': 'application/json'\n            })\n    \n    def case_law_search(self, query_params: Dict[str, Any])\
+    \ -> Dict[str, Any]:\n        \"\"\"Perform case law search using LexisNexis API.\n        \n        Args:\n         \
+    \   query_params: Search parameters including keywords, jurisdiction, date range\n            \n        Returns:\n   \
+    \         Dict containing search results and metadata\n        \"\"\"\n        try:\n            query = build_lexis_search_query(query_params)\n\
+    \            \n            params = {\n                'q': query,\n                'format': 'json',\n              \
+    \  'max_results': query_params.get('max_results', 50)\n            }\n            \n            response = self.session.get(\n\
+    \                f\"{self.base_url}/search/cases\",\n                params=params,\n                timeout=self.timeout\n\
+    \            )\n            response.raise_for_status()\n            \n            results = response.json()\n       \
+    \     \n            processed_results = []\n            for item in results.get('results', []):\n                processed_item\
+    \ = {\n                    'title': item.get('title', ''),\n                    'citation': item.get('citation', ''),\n\
+    \                    'court': item.get('court', ''),\n                    'date': item.get('decision_date', ''),\n   \
+    \                 'summary': item.get('summary', ''),\n                    'relevance_score': item.get('relevance_score',\
+    \ 0.0),\n                    'url': item.get('url', '')\n                }\n                processed_results.append(processed_item)\n\
+    \            \n            return {\n                'success': True,\n                'results': processed_results,\n\
+    \                'total_found': results.get('total_count', 0),\n                'query_used': query,\n               \
+    \ 'search_id': results.get('search_id', '')\n            }\n            \n        except requests.exceptions.RequestException\
+    \ as e:\n            return {\n                'success': False,\n                'error': f\"Request failed: {str(e)}\"\
+    ,\n                'results': [],\n                'total_found': 0\n            }\n        except Exception as e:\n \
+    \           return {\n                'success': False,\n                'error': f\"Unexpected error: {str(e)}\",\n \
+    \               'results': [],\n                'total_found': 0\n            }\n    \n    def citation_validation(self,\
+    \ citation: str) -> Dict[str, Any]:\n        \"\"\"Validate citation using Shepard's service.\n        \n        Args:\n\
+    \            citation: Legal citation to validate\n            \n        Returns:\n            Dict containing validation\
+    \ results\n        \"\"\"\n        try:\n            validation_result = validate_citation_format(citation)\n        \
+    \    \n            if not validation_result['valid']:\n                return {\n                    'success': False,\n\
+    \                    'error': 'Invalid citation format',\n                    'validation': validation_result\n      \
+    \          }\n            \n            params = {\n                'citation': citation,\n                'format': 'json',\n\
+    \                'include_history': True,\n                'include_treatment': True\n            }\n            \n  \
+    \          response = self.session.get(\n                f\"{self.base_url}/shepards/validate\",\n                params=params,\n\
+    \                timeout=self.timeout\n            )\n            response.raise_for_status()\n            \n        \
+    \    shepard_data = response.json()\n            \n            return {\n                'success': True,\n          \
+    \      'citation': citation,\n                'validation': validation_result,\n                'history': shepard_data.get('history',\
+    \ []),\n                'treatment': shepard_data.get('treatment', {}),\n                'warnings': shepard_data.get('warnings',\
+    \ []),\n                'red_flags': shepard_data.get('red_flags', []),\n                'validation_score': shepard_data.get('validation_score',\
+    \ 0.0)\n            }\n            \n        except requests.exceptions.RequestException as e:\n            return {\n\
+    \                'success': False,\n                'error': f\"Request failed: {str(e)}\",\n                'citation':\
+    \ citation,\n                'validation': validation_result if 'validation_result' in locals() else {}\n            }\n\
+    \        except Exception as e:\n            return {\n                'success': False,\n                'error': f\"\
+    Unexpected error: {str(e)}\",\n                'citation': citation\n            }\n    \n    def statutory_research(self,\
+    \ statute_params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Research statutory provisions and related materials.\n\
+    \        \n        Args:\n            statute_params: Parameters including statute topic, jurisdiction\n            \n\
+    \        Returns:\n            Dict containing statutory research results\n        \"\"\"\n        try:\n            query\
+    \ = f\"TOPIC({statute_params.get('topic', '')}) AND JURISDICTION({statute_params.get('jurisdiction', 'federal')})\"\n\
+    \            \n            if 'statute_number' in statute_params:\n                query += f\" AND STATUTE-NUMBER({statute_params['statute_number']})\"\
+    \n            \n            params = {\n                'q': query,\n                'format': 'json',\n             \
+    \   'include_annotations': True,\n                'include_history': True,\n                'include_regulations': statute_params.get('include_regulations',\
+    \ True)\n            }\n            \n            response = self.session.get(\n                f\"{self.base_url}/search/statutes\"\
+    ,\n                params=params,\n                timeout=self.timeout\n            )\n            response.raise_for_status()\n\
+    \            \n            results = response.json()\n            \n            processed_results = []\n            for\
+    \ item in results.get('results', []):\n                processed_item = {\n                    'title': item.get('title',\
+    \ ''),\n                    'citation': item.get('citation', ''),\n                    'text': item.get('text', ''),\n\
+    \                    'amendments': item.get('amendments', []),\n                    'annotations': item.get('annotations',\
+    \ []),\n                    'regulations': item.get('related_regulations',[]),\n                    'case_law': item.get('interpreting_cases',\
+    \ [])\n                }\n                processed_results.append(processed_item)\n            \n            return {\n\
+    \                'success': True,\n                'results': processed_results,\n                'total_found': results.get('total_count',\
+    \ 0),\n                'topic': statute_params.get('topic', ''),\n                'jurisdiction': statute_params.get('jurisdiction',\
+    \ '')\n            }\n            \n        except requests.exceptions.RequestException as e:\n            return {\n\
+    \                'success': False,\n                'error': f\"Request failed: {str(e)}\",\n                'results':\
+    \ [],\n                'total_found': 0\n            }\n        except Exception as e:\n            return {\n       \
+    \         'success': False,\n                'error': f\"Unexpected error: {str(e)}\",\n                'results': [],\n\
+    \                'total_found': 0\n            }\n    \n    def regulatory_compliance_check(self, compliance_params: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Check regulatory compliance for business activities.\n        \n        Args:\n\
+    \            compliance_params: Parameters including business activity, regulations\n            \n        Returns:\n\
+    \            Dict containing compliance analysis results\n        \"\"\"\n        try:\n            business_activity\
+    \ = compliance_params.get('business_activity', '')\n            regulations = compliance_params.get('regulations', [])\n\
+    \            jurisdiction = compliance_params.get('jurisdiction', 'federal')\n            \n            compliance_result\
+    \ = validate_regulatory_compliance(\n                business_activity, regulations, jurisdiction\n            )\n   \
+    \         \n            params = {\n                'activity': business_activity,\n                'jurisdiction': jurisdiction,\n\
+    \                'format': 'json'\n            }\n            \n            response = self.session.get(\n           \
+    \     f\"{self.base_url}/compliance/check\",\n                params=params,\n                timeout=self.timeout\n \
+    \           )\n            response.raise_for_status()\n            \n            api_result = response.json()\n     \
+    \       \n            compliance_result['api_results'] = api_result.get('requirements', [])\n            compliance_result['updated_requirements']\
+    \ = api_result.get('updated_regulations', [])\n            \n            return {\n                'success': True,\n\
+    \                'compliance_analysis': compliance_result,\n                'risk_assessment': api_result.get('risk_assessment',\
+    \ {}),\n                'monitoring_recommendations': api_result.get('monitoring', [])\n            }\n            \n\
+    \        except requests.exceptions.RequestException as e:\n            return {\n                'success': False,\n\
+    \                'error': f\"Request failed: {str(e)}\",\n                'compliance_analysis': compliance_result if\
+    \ 'compliance_result' in locals() else {}\n            }\n        except Exception as e:\n            return {\n     \
+    \           'success': False,\n                'error': f\"Unexpected error: {str(e)}\"\n            }\n    \n    def\
+    \ legal_analytics(self, analytics_params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Generate legal analytics from\
+    \ case data.\n        \n        Args:\n            analytics_params: Parameters including dataset, analysis type\n   \
+    \         \n        Returns:\n            Dict containing analytics results\n        \"\"\"\n        try:\n          \
+    \  dataset = analytics_params.get('dataset', [])\n            analysis_type = analytics_params.get('analysis_type', 'general')\n\
+    \            \n            if not dataset:\n                return {\n                    'success': False,\n        \
+    \            'error': 'No dataset provided for analysis'\n                }\n            \n            metrics = calculate_legal_success_metrics(dataset)\n\
+    \            \n            analytics_result = {\n                'success': True,\n                'analysis_type': analysis_type,\n\
+    \                'metrics': metrics,\n                'dataset_size': len(dataset),\n                'analysis_date':\
+    \ datetime.datetime.now().isoformat()\n            }\n            \n            if analysis_type == 'citation_network':\n\
+    \                citations = []\n                for item in dataset:\n                    if 'citations' in item:\n \
+    \                       citations.extend(item['citations'])\n                \n                if citations:\n       \
+    \             network_analysis = calculate_citation_network(citations)\n                    analytics_result['citation_network']\
+    \ = network_analysis\n            \n            if analysis_type == 'trend_analysis':\n                years = [item.get('year',\
+    \ 0) for item in dataset if 'year' in item]\n                if years:\n                    analytics_result['year_trends']\
+    \ = {\n                        'range': {'min': min(years), 'max': max(years)},\n                        'distribution':\
+    \ collections.Counter(years)\n                    }\n            \n            return analytics_result\n            \n\
+    \        except Exception as e:\n            return {\n                'success': False,\n                'error': f\"\
+    Analytics error: {str(e)}\"\n            }\n    \n    def document_retrieval(self, document_params: Dict[str, Any]) ->\
+    \ Dict[str, Any]:\n        \"\"\"Retrieve and parse legal documents.\n        \n        Args:\n            document_params:\
+    \ Parameters including document ID, type\n            \n        Returns:\n            Dict containing retrieved document\
+    \ and metadata\n        \"\"\"\n        try:\n            doc_id = document_params.get('document_id', '')\n          \
+    \  doc_type = document_params.get('document_type', 'case')\n            \n            params = {\n                'id':\
+    \ doc_id,\n                'type': doc_type,\n                'format': 'json',\n                'include_metadata': True\n\
+    \            }\n            \n            response = self.session.get(\n                f\"{self.base_url}/documents/retrieve\"\
+    ,\n                params=params,\n                timeout=self.timeout\n            )\n            response.raise_for_status()\n\
+    \            \n            doc_data = response.json()\n            \n            parsed_document = parse_legal_document(doc_data.get('text',\
+    \ ''))\n            \n            return {\n                'success': True,\n                'document_id': doc_id,\n\
+    \                'document_type': doc_type,\n                'full_text': doc_data.get('text', ''),\n                'parsed_content':\
+    \ parsed_document,\n                'metadata': doc_data.get('metadata', {}),\n                'entities': extract_legal_entities(doc_data.get('text',\
+    \ ''))\n            }\n            \n        except requests.exceptions.RequestException as e:\n            return {\n\
+    \                'success': False,\n                'error': f\"Request failed: {str(e)}\",\n                'document_id':\
+    \ doc_id if 'doc_id' in locals() else ''\n            }\n        except Exception as e:\n            return {\n      \
+    \          'success': False,\n                'error': f\"Unexpected error: {str(e)}\"\n            }\n    \n    def run(self,\
+    \ action: str, parameters: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Main entry point for skill execution.\n \
+    \       \n        Args:\n            action: Action to perform (e.g., 'case_law_search')\n            parameters: Parameters\
+    \ for the action\n            \n        Returns:\n            Dict containing action results\n        \"\"\"\n       \
+    \ action_map = {\n            'case_law_search': self.case_law_search,\n            'citation_validation': self.citation_validation,\n\
+    \            'statutory_research': self.statutory_research,\n            'regulatory_compliance_check': self.regulatory_compliance_check,\n\
+    \            'legal_analytics': self.legal_analytics,\n            'document_retrieval': self.document_retrieval\n   \
+    \     }\n        \n        if action not in action_map:\n            return {\n                'success': False,\n   \
+    \             'error': f\"Unknown action: {action}\",\n                'available_actions': list(action_map.keys())\n\
+    \            }\n        \n        try:\n            return action_map[action](parameters)\n        except Exception as\
+    \ e:\n            return {\n                'success': False,\n                'error': f\"Action execution failed: {str(e)}\"\
+    ,\n                'action': action\n            }\n\nclass TestLexisNexisIntegration(unittest.TestCase):\n    \n    def\
+    \ setUp(self):\n        self.config = {\n            'api_key': 'test_key',\n            'base_url': 'https://api.lexisnexis.com/v1',\n\
+    \            'timeout': 30\n        }\n        self.engine = SkillEngine(self.config)\n    \n    def test_skill_metadata(self):\n\
+    \        self.assertEqual(SKILL_METADATA['name'], \"LexisNexis Integration\")\n        self.assertEqual(SKILL_METADATA['id'],\
+    \ \"lexisnexis_integration\")\n        self.assertEqual(SKILL_METADATA['version'], \"1.0.0\")\n        self.assertIn('case_law_search',\
+    \ SKILL_METADATA['capabilities'])\n        self.assertIn('legal_analytics', SKILL_METADATA['capabilities'])\n    \n  \
+    \  def test_validate_citation_format(self):\n        valid_citation = \"123 F.3d 456 (9th Cir. 2020)\"\n        result\
+    \ = validate_citation_format(valid_citation)\n        self.assertTrue(result['valid'])\n        self.assertEqual(result['format'],\
+    \ 'federal_reporter')\n        self.assertIn('volume', result['components'])\n        \n        invalid_citation = \"\
+    invalid citation\"\n        result = validate_citation_format(invalid_citation)\n        self.assertFalse(result['valid'])\n\
+    \        self.assertIn('errors', result)\n    \n    def test_build_lexis_search_query(self):\n        params = {\n   \
+    \         'keywords': ['contract', 'breach'],\n            'jurisdiction': 'federal',\n            'date_range': {'start':\
+    \ '2020-01-01', 'end': '2023-12-31'},\n            'court_level': 'appellate'\n        }\n        query = build_lexis_search_query(params)\n\
+    \        self.assertIn('contract', query)\n        self.assertIn('federal', query)\n        self.assertIn('2020-01-01',\
+    \ query)\n        self.assertIn('appellate', query)\n    \n    def test_parse_legal_document(self):\n        doc_text\
+    \ = \"\"\"\n        Smith v. Jones\n        PROCEDURAL POSTURE\n        Appeal from district court decision.\n       \
+    \ \n        OVERVIEW\n        Contract dispute between parties.\n        \n        OUTCOME\n        Judgment for plaintiff.\n\
+    \        \n        123 F.3d 456 (9th Cir. 2020)\n        \"\"\"\n        result = parse_legal_document(doc_text)\n   \
+    \     self.assertIn('procedural_posture', result['sections'])\n        self.assertIn('overview', result['sections'])\n\
+    \        self.assertIn('outcome', result['sections'])\n        self.assertEqual(len(result['citations']), 1)\n       \
+    \ self.assertEqual(len(result['parties']), 2)\n    \n    def test_calculate_legal_success_metrics(self):\n        case_data\
+    \ = [\n            {'outcome': 'plaintiff wins', 'duration_days': 365},\n            {'outcome': 'defendant wins', 'duration_days':\
+    \ 180},\n            {'outcome': 'settled', 'duration_days': 90},\n            {'outcome': 'appealed', 'duration_days':\
+    \ 730}\n        ]\n        metrics = calculate_legal_success_metrics(case_data)\n        self.assertEqual(metrics['total_cases'],\
+    \ 4)\n        self.assertGreater(metrics['overall_success_rate'], 0)\n        self.assertEqual(metrics['settlement_rate'],\
+    \ 25.0)\n        self.assertEqual(metrics['appeal_rate'], 25.0)\n    \n    def test_generate_legal_research_report(self):\n\
+    \        search_results = [\n            {\n                'title': 'Smith v. Jones',\n                'citation': '123\
+    \ F.3d 456',\n                'court': '9th Circuit',\n                'date': '2020-01-15',\n                'relevance_score':\
+    \ 0.95,\n                'summary': 'Contract breach case with significant damages'\n            }\n        ]\n      \
+    \  query_params = {\n            'keywords': 'contract breach',\n            'jurisdiction': 'federal',\n            'date_range':\
+    \ {'start': '2020-01-01', 'end': '2023-12-31'}\n        }\n        report = generate_legal_research_report(search_results,\
+    \ query_params)\n        self.assertIn('LEGAL RESEARCH REPORT', report)\n        self.assertIn('contract breach', report)\n\
+    \        self.assertIn('Smith v. Jones', report)\n    \n    def test_extract_legal_entities(self):\n        text = \"\"\
+    \"\n        Before Judge Smith in the District Court of California.\n        Attorney Johnson represented the plaintiff.\n\
+    \        Case No. CV 2020-1234.\n        \"\"\"\n        entities = extract_legal_entities(text)\n        self.assertIn('Judge\
+    \ Smith', entities['judges'])\n        self.assertIn('Attorney Johnson', entities['attorneys'])\n        self.assertIn('CV\
+    \ 2020-1234', entities['case_numbers'])\n    \n    def test_calculate_citation_network(self):\n        citations = [\n\
+    \            '123 F.3d 456 (9th Cir. 2020)',\n            '123 F.3d 456 (9th Cir. 2020)',\n            '456 F.2d 789 (2d\
+    \ Cir. 2019)',\n            '789 F. Supp. 123 (S.D.N.Y. 2018)'\n        ]\n        network = calculate_citation_network(citations)\n\
+    \        self.assertEqual(network['total_citations'], 4)\n        self.assertEqual(network['unique_citations'], 3)\n \
+    \       self.assertEqual(len(network['most_cited']), 2)\n        self.assertIn('year_range', network)\n    \n    def test_validate_regulatory_compliance(self):\n\
+    \        result = validate_regulatory_compliance(\n            'financial services trading',\n            ['SEC Rule 10b-5',\
+    \ 'Dodd-Frank Act'],\n            'federal'\n        )\n        self.assertEqual(result['business_activity'], 'financial\
+    \ services trading')\n        self.assertEqual(result['risk_level'], 'high')\n        self.assertIn('needs_review', result['compliance_status'])\n\
+    \        self.assertGreater(len(result['recommendations']), 0)\n    \n    def test_skill_engine_initialization(self):\n\
+    \        self.assertIsNotNone(self.engine.config)\n        self.assertEqual(self.engine.api_key, 'test_key')\n       \
+    \ self.assertIsInstance(self.engine.session, requests.Session)\n    \n    def test_skill_engine_run_unknown_action(self):\n\
+    \        result = self.engine.run('unknown_action', {})\n        self.assertFalse(result['success'])\n        self.assertIn('Unknown\
+    \ action', result['error'])\n        self.assertIn('available_actions', result)\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the LexisNexis Integration skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''lexisnexis_integration'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

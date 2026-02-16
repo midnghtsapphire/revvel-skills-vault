@@ -1,0 +1,59 @@
+name: patrick
+title: Patrick bot
+version: 1.0.0
+description: Access Patrick's expertise library for executive decision infrastructure. List, fetch, and manage structured
+  expertise with context variables. Use for executive briefings, decision framing, and strategic analysis.
+metadata:
+  author: mcsh
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - patrick
+  source: clawhub-community
+  clawhub_slug: patrick
+  clawhub_path: mcsh/patrick
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Patrick bot
+
+    # Source: ClawHub community skill by mcsh
+
+    # Install: clawhub install patrick
+
+    # Path: mcsh/patrick
+
+
+    ## Description
+
+    Access Patrick''s expertise library for executive decision infrastructure. List, fetch, and manage structured expertise
+    with context variables. Use for executive briefings, decision framing, and strategic analysis.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.md
+
+    - install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install patrick
+
+    ```'
+examples:
+- description: Install Patrick bot from ClawHub
+  usage: clawhub install patrick
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: feishu-doc-writer
+title: feishu-doc-write
+version: 1.0.0
+description: Feishu (Lark) Document API writing spec. Converts Markdown content to Feishu Block structures and writes to cloud
+  docs. Handles concurrency ordering. Use when syncing articles, creating document blocks, or writing long-form content to
+  Feishu docs.
+metadata:
+  author: sunnyyao2222-eng
+  category: Development & Coding
+  tags:
+  - development-coding
+  - feishu
+  - doc
+  - writer
+  source: clawhub-community
+  clawhub_slug: feishu-doc-write
+  clawhub_path: sunnyyao2222-eng/feishu-doc-write
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# feishu-doc-write
+
+    # Source: ClawHub community skill by sunnyyao2222-eng
+
+    # Install: clawhub install feishu-doc-write
+
+    # Path: sunnyyao2222-eng/feishu-doc-write
+
+
+    ## Description
+
+    Feishu (Lark) Document API writing spec. Converts Markdown content to Feishu Block structures and writes to cloud docs.
+    Handles concurrency ordering. Use when syncing articles, creating document blocks, or writing long-form content to Feishu
+    docs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-doc-write
+
+    ```'
+examples:
+- description: Install feishu-doc-write from ClawHub
+  usage: clawhub install feishu-doc-write
+schema_version: '1.0'

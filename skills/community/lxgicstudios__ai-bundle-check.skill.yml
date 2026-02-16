@@ -1,0 +1,54 @@
+name: bundle-checker
+title: Bundle Size Analyzer
+version: 1.0.2
+description: Analyze bundle size and get AI suggestions to reduce it. Use when your builds are getting bloated.
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - bundle
+  - checker
+  source: clawhub-community
+  clawhub_slug: ai-bundle-check
+  clawhub_path: lxgicstudios/ai-bundle-check
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bundle Size Analyzer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-bundle-check
+
+    # Path: lxgicstudios/ai-bundle-check
+
+
+    ## Description
+
+    Analyze bundle size and get AI suggestions to reduce it. Use when your builds are getting bloated.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-bundle-check
+
+    ```'
+examples:
+- description: Install Bundle Size Analyzer from ClawHub
+  usage: clawhub install ai-bundle-check
+schema_version: '1.0'

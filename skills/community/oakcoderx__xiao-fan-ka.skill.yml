@@ -1,0 +1,70 @@
+name: xiao-fan-ka
+title: 小饭卡
+version: 0.3.4
+description: 小饭卡 — 唯爱与美食不可辜负。AI私人找店助手，建立口味画像，搜索大众点评+小红书双源数据，交叉验证后个性化推荐餐厅。
+metadata:
+  author: oakcoderx
+  category: General
+  tags:
+  - general
+  - xiao
+  - fan
+  source: clawhub-community
+  clawhub_slug: xiao-fan-ka
+  clawhub_path: oakcoderx/xiao-fan-ka
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 小饭卡
+
+    # Source: ClawHub community skill by oakcoderx
+
+    # Install: clawhub install xiao-fan-ka
+
+    # Path: oakcoderx/xiao-fan-ka
+
+
+    ## Description
+
+    小饭卡 — 唯爱与美食不可辜负。AI私人找店助手，建立口味画像，搜索大众点评+小红书双源数据，交叉验证后个性化推荐餐厅。
+
+
+    ## Files
+
+    - AGENT_GUIDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/taste-profile.example.json
+
+    - scripts/onboard.py
+
+    - scripts/profile.py
+
+    - scripts/search.py
+
+    - scripts/search_all.py
+
+    - scripts/search_xhs.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xiao-fan-ka
+
+    ```'
+examples:
+- description: Install 小饭卡 from ClawHub
+  usage: clawhub install xiao-fan-ka
+schema_version: '1.0'

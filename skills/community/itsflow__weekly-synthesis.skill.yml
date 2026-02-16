@@ -1,0 +1,54 @@
+name: weekly-synthesis
+title: Weekly Synthesis
+version: 1.0.0
+description: Create a comprehensive synthesis of the week's work and thinking
+metadata:
+  author: itsflow
+  category: General
+  tags:
+  - general
+  - weekly
+  - synthesis
+  source: clawhub-community
+  clawhub_slug: weekly-synthesis
+  clawhub_path: itsflow/weekly-synthesis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Weekly Synthesis
+
+    # Source: ClawHub community skill by itsflow
+
+    # Install: clawhub install weekly-synthesis
+
+    # Path: itsflow/weekly-synthesis
+
+
+    ## Description
+
+    Create a comprehensive synthesis of the week''s work and thinking
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install weekly-synthesis
+
+    ```'
+examples:
+- description: Install Weekly Synthesis from ClawHub
+  usage: clawhub install weekly-synthesis
+schema_version: '1.0'

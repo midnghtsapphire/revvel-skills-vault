@@ -1,0 +1,62 @@
+name: moltbook-firewall
+title: Moltbook Firewall
+version: 0.1.0
+description: Security layer protecting agents from prompt injection, social engineering, and malicious content on Moltbook
+  and similar platforms. Scan content before processing, detect threats, block attacks.
+metadata:
+  author: machinesbefree
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - moltbook
+  - firewall
+  source: clawhub-community
+  clawhub_slug: moltbook-firewall
+  clawhub_path: machinesbefree/moltbook-firewall
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltbook Firewall
+
+    # Source: ClawHub community skill by machinesbefree
+
+    # Install: clawhub install moltbook-firewall
+
+    # Path: machinesbefree/moltbook-firewall
+
+
+    ## Description
+
+    Security layer protecting agents from prompt injection, social engineering, and malicious content on Moltbook and similar
+    platforms. Scan content before processing, detect threats, block attacks.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - patterns/threats.json
+
+    - scripts/firewall-scan.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbook-firewall
+
+    ```'
+examples:
+- description: Install Moltbook Firewall from ClawHub
+  usage: clawhub install moltbook-firewall
+schema_version: '1.0'

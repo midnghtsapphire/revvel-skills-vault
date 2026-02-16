@@ -1,0 +1,70 @@
+name: gno
+title: Gno
+version: 0.14.3
+description: Search local documents, files, notes, and knowledge bases. Index directories, search with BM25/vector/hybrid,
+  get AI answers with citations. Use when user wants to search files, find documents, query notes, look up information in
+  local folders, index a directory, set up document search, build a know
+metadata:
+  author: gmickel
+  category: Search & Research
+  tags:
+  - search-research
+  - gno
+  - bash(gno:*) read
+  source: clawhub-community
+  clawhub_slug: gno
+  clawhub_path: gmickel/gno
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(gno:*) Read
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gno
+
+    # Source: ClawHub community skill by gmickel
+
+    # Install: clawhub install gno
+
+    # Path: gmickel/gno
+
+
+    ## Description
+
+    Search local documents, files, notes, and knowledge bases. Index directories, search with BM25/vector/hybrid, get AI answers
+    with citations. Use when user wants to search files, find documents, query notes, look up information in local folders,
+    index a directory, set up document search, build a know
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli-reference.md
+
+    - examples.md
+
+    - mcp-reference.md
+
+
+    ## Allowed Tools
+
+    Bash(gno:*) Read
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gno
+
+    ```'
+examples:
+- description: Install Gno from ClawHub
+  usage: clawhub install gno
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: servicenow-docs
+title: Servicenow Docs
+version: 1.1.0
+description: Search and retrieve ServiceNow documentation, release notes, and developer docs (APIs, references, guides). Uses
+  docs.servicenow.com via Zoomin and developer.servicenow.com APIs for developer topics.
+metadata:
+  author: thesethrose
+  category: Search & Research
+  tags:
+  - search-research
+  - servicenow
+  - docs
+  source: clawhub-community
+  clawhub_slug: servicenow-docs
+  clawhub_path: thesethrose/servicenow-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Servicenow Docs
+
+    # Source: ClawHub community skill by thesethrose
+
+    # Install: clawhub install servicenow-docs
+
+    # Path: thesethrose/servicenow-docs
+
+
+    ## Description
+
+    Search and retrieve ServiceNow documentation, release notes, and developer docs (APIs, references, guides). Uses docs.servicenow.com
+    via Zoomin and developer.servicenow.com APIs for developer topics.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - logic.ts
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install servicenow-docs
+
+    ```'
+examples:
+- description: Install Servicenow Docs from ClawHub
+  usage: clawhub install servicenow-docs
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: solana-whale-alert
+title: Solana Whale Alert
+version: 1.0.0
+description: Monitor Solana wallets and tokens for large transactions. Get alerts when whales move. No API keys required.
+metadata:
+  author: satoshi891102
+  category: Development & Coding
+  tags:
+  - development-coding
+  - solana
+  - whale
+  - alert
+  source: clawhub-community
+  clawhub_slug: solana-whale-alert
+  clawhub_path: satoshi891102/solana-whale-alert
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Solana Whale Alert
+
+    # Source: ClawHub community skill by satoshi891102
+
+    # Install: clawhub install solana-whale-alert
+
+    # Path: satoshi891102/solana-whale-alert
+
+
+    ## Description
+
+    Monitor Solana wallets and tokens for large transactions. Get alerts when whales move. No API keys required.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/scan-holders.sh
+
+    - scripts/watch-wallet.sh
+
+    - scripts/whale-check.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solana-whale-alert
+
+    ```'
+examples:
+- description: Install Solana Whale Alert from ClawHub
+  usage: clawhub install solana-whale-alert
+schema_version: '1.0'

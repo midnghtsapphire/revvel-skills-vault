@@ -1,0 +1,60 @@
+name: omi-me
+title: Omi Me
+version: 1.0.0
+description: Complete Omi.me integration for memories, action items (tasks), and conversations. Full CRUD + sync capabilities
+  for OpenClaw.
+metadata:
+  author: caioiscoding
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - omi
+  source: clawhub-community
+  clawhub_slug: omi-me
+  clawhub_path: caioiscoding/omi-me
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Omi Me
+
+    # Source: ClawHub community skill by caioiscoding
+
+    # Install: clawhub install omi-me
+
+    # Path: caioiscoding/omi-me
+
+
+    ## Description
+
+    Complete Omi.me integration for memories, action items (tasks), and conversations. Full CRUD + sync capabilities for OpenClaw.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/omi-cli.sh
+
+    - scripts/omi-token.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install omi-me
+
+    ```'
+examples:
+- description: Install Omi Me from ClawHub
+  usage: clawhub install omi-me
+schema_version: '1.0'

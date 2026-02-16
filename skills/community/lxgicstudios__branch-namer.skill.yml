@@ -1,0 +1,66 @@
+name: branch-namer
+title: Branch Namer
+version: 1.0.1
+description: Generate descriptive git branch names from plain English. Use when you need a branch name that follows conventions.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - branch
+  - namer
+  source: clawhub-community
+  clawhub_slug: branch-namer
+  clawhub_path: lxgicstudios/branch-namer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Branch Namer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install branch-namer
+
+    # Path: lxgicstudios/branch-namer
+
+
+    ## Description
+
+    Generate descriptive git branch names from plain English. Use when you need a branch name that follows conventions.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install branch-namer
+
+    ```'
+examples:
+- description: Install Branch Namer from ClawHub
+  usage: clawhub install branch-namer
+schema_version: '1.0'

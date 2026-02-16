@@ -1,0 +1,63 @@
+name: peft-fine-tuning
+title: Peft Fine Tuning
+version: 0.1.0
+description: Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models
+  (7B-70B) with limited GPU memory, when you need to train <1% of parameters with minimal accuracy loss, or for multi-adapter
+  serving. HuggingFace's official library integrated with transform
+metadata:
+  author: desperado991128
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - peft
+  - fine
+  - tuning
+  source: clawhub-community
+  clawhub_slug: peft
+  clawhub_path: desperado991128/peft
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Peft Fine Tuning
+
+    # Source: ClawHub community skill by desperado991128
+
+    # Install: clawhub install peft
+
+    # Path: desperado991128/peft
+
+
+    ## Description
+
+    Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning large models (7B-70B)
+    with limited GPU memory, when you need to train <1% of parameters with minimal accuracy loss, or for multi-adapter serving.
+    HuggingFace''s official library integrated with transform
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/advanced-usage.md
+
+    - references/troubleshooting.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install peft
+
+    ```'
+examples:
+- description: Install Peft Fine Tuning from ClawHub
+  usage: clawhub install peft
+schema_version: '1.0'

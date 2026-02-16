@@ -1,0 +1,53 @@
+name: contacts
+title: Contacts
+version: 1.0.1
+description: Build a personal contact system with details, interactions, birthdays, and smart reminders.
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - contacts
+  source: clawhub-community
+  clawhub_slug: people
+  clawhub_path: ivangdavila/people
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Contacts
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install people
+
+    # Path: ivangdavila/people
+
+
+    ## Description
+
+    Build a personal contact system with details, interactions, birthdays, and smart reminders.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install people
+
+    ```'
+examples:
+- description: Install Contacts from ClawHub
+  usage: clawhub install people
+schema_version: '1.0'

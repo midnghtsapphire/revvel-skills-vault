@@ -1,0 +1,70 @@
+name: google-messages
+title: Google Messages
+version: 0.1.0
+description: Send and receive SMS/RCS via Google Messages web interface (messages.google.com). Use when asked to "send a text",
+  "check texts", "SMS", "text message", "Google Messages", or forward incoming texts to other channels.
+metadata:
+  author: kesslerio
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - messages
+  source: clawhub-community
+  clawhub_slug: google-messages-openclaw-skill
+  clawhub_path: kesslerio/google-messages-openclaw-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Messages
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install google-messages-openclaw-skill
+
+    # Path: kesslerio/google-messages-openclaw-skill
+
+
+    ## Description
+
+    Send and receive SMS/RCS via Google Messages web interface (messages.google.com). Use when asked to "send a text", "check
+    texts", "SMS", "text message", "Google Messages", or forward incoming texts to other channels.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - sms-observer.js
+
+    - sms-webhook-server.js
+
+    - references/observer-injection.md
+
+    - references/snippets.md
+
+    - scripts/start-webhook.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-messages-openclaw-skill
+
+    ```'
+examples:
+- description: Install Google Messages from ClawHub
+  usage: clawhub install google-messages-openclaw-skill
+schema_version: '1.0'

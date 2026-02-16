@@ -1,0 +1,73 @@
+name: render
+title: render
+version: 3.0.0
+description: Deploy and operate apps on Render (Blueprint + one-click Dashboard deeplink, same flow as Codex render-deploy).
+  Use when the user wants to deploy, host, or publish an app; create or edit render.yaml; add web, static, workers, cron,
+  Postgres, or Key Value; get the Blueprint deeplink to deploy; trigge
+metadata:
+  author: ojusave
+  category: Development & Coding
+  tags:
+  - development-coding
+  - render
+  source: clawhub-community
+  clawhub_slug: deploy-on-render
+  clawhub_path: ojusave/deploy-on-render
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# render
+
+    # Source: ClawHub community skill by ojusave
+
+    # Install: clawhub install deploy-on-render
+
+    # Path: ojusave/deploy-on-render
+
+
+    ## Description
+
+    Deploy and operate apps on Render (Blueprint + one-click Dashboard deeplink, same flow as Codex render-deploy). Use when
+    the user wants to deploy, host, or publish an app; create or edit render.yaml; add web, static, workers, cron, Postgres,
+    or Key Value; get the Blueprint deeplink to deploy; trigge
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/node-express.yaml
+
+    - assets/python-web.yaml
+
+    - assets/static-site.yaml
+
+    - assets/web-with-postgres.yaml
+
+    - references/blueprint-spec.md
+
+    - references/codebase-analysis.md
+
+    - references/mcp-integration.md
+
+    - references/post-deploy-checks.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install deploy-on-render
+
+    ```'
+examples:
+- description: Install render from ClawHub
+  usage: clawhub install deploy-on-render
+schema_version: '1.0'

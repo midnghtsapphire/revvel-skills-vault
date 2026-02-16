@@ -1,0 +1,58 @@
+name: markdown-converter
+title: Markdown Converter
+version: 1.0.0
+description: Convert documents and files to Markdown using markitdown. Use when converting PDF, Word (.docx), PowerPoint (.pptx),
+  Excel (.xlsx, .xls), HTML, CSV, JSON, XML, images (with EXIF/OCR), audio (with transcription), ZIP archives, YouTube URLs,
+  or EPubs to Markdown format for LLM processing or text analy
+metadata:
+  author: steipete
+  category: Media & Content
+  tags:
+  - media-content
+  - markdown
+  - converter
+  source: clawhub-community
+  clawhub_slug: markdown-converter
+  clawhub_path: steipete/markdown-converter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Markdown Converter
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install markdown-converter
+
+    # Path: steipete/markdown-converter
+
+
+    ## Description
+
+    Convert documents and files to Markdown using markitdown. Use when converting PDF, Word (.docx), PowerPoint (.pptx), Excel
+    (.xlsx, .xls), HTML, CSV, JSON, XML, images (with EXIF/OCR), audio (with transcription), ZIP archives, YouTube URLs, or
+    EPubs to Markdown format for LLM processing or text analy
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install markdown-converter
+
+    ```'
+examples:
+- description: Install Markdown Converter from ClawHub
+  usage: clawhub install markdown-converter
+schema_version: '1.0'

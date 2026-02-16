@@ -1,0 +1,74 @@
+name: self-improvement
+title: Self Improvement
+version: 1.0.0
+description: '"Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation
+  fails unexpectedly, (2) User corrects Claude (''No, that''s wrong...'', ''Actually...''), (3) User requests a capability
+  that doesn''t exist, (4) An external API or tool fails, (5) Claude re'
+metadata:
+  author: navendugoyal19
+  category: Development & Coding
+  tags:
+  - development-coding
+  - self
+  - improvement
+  source: clawhub-community
+  clawhub_slug: self-improvement
+  clawhub_path: navendugoyal19/self-improvement
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Self Improvement
+
+    # Source: ClawHub community skill by navendugoyal19
+
+    # Install: clawhub install self-improvement
+
+    # Path: navendugoyal19/self-improvement
+
+
+    ## Description
+
+    "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails
+    unexpectedly, (2) User corrects Claude (''No, that''s wrong...'', ''Actually...''), (3) User requests a capability that
+    doesn''t exist, (4) An external API or tool fails, (5) Claude re
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/LEARNINGS.md
+
+    - assets/SKILL-TEMPLATE.md
+
+    - references/clawdbot-integration.md
+
+    - references/examples.md
+
+    - references/hooks-setup.md
+
+    - scripts/activator.sh
+
+    - scripts/error-detector.sh
+
+    - scripts/extract-skill.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install self-improvement
+
+    ```'
+examples:
+- description: Install Self Improvement from ClawHub
+  usage: clawhub install self-improvement
+schema_version: '1.0'

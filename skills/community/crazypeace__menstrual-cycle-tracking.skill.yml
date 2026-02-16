@@ -1,0 +1,55 @@
+name: menstrual-cycle-tracking
+title: 月经周期记录 (Menstrual Cycle Tracking)
+version: 1.0.3
+description: 记录和分析女性月经周期数据。当用户发送以“记录月经周期”开头的自然语言信息时使用，用于提取时间、周期天数、流量、痛感和情绪等结构化数据并保存到 JSON 文件，同时支持基于历史数据的健康趋势分析。
+metadata:
+  author: crazypeace
+  category: General
+  tags:
+  - general
+  - menstrual
+  - cycle
+  - tracking
+  source: clawhub-community
+  clawhub_slug: menstrual-cycle-tracking
+  clawhub_path: crazypeace/menstrual-cycle-tracking
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 月经周期记录 (Menstrual Cycle Tracking)
+
+    # Source: ClawHub community skill by crazypeace
+
+    # Install: clawhub install menstrual-cycle-tracking
+
+    # Path: crazypeace/menstrual-cycle-tracking
+
+
+    ## Description
+
+    记录和分析女性月经周期数据。当用户发送以“记录月经周期”开头的自然语言信息时使用，用于提取时间、周期天数、流量、痛感和情绪等结构化数据并保存到 JSON 文件，同时支持基于历史数据的健康趋势分析。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install menstrual-cycle-tracking
+
+    ```'
+examples:
+- description: Install 月经周期记录 (Menstrual Cycle Tracking) from ClawHub
+  usage: clawhub install menstrual-cycle-tracking
+schema_version: '1.0'

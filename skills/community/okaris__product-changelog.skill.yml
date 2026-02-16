@@ -1,0 +1,61 @@
+name: product-changelog
+title: Product Changelog
+version: 0.1.0
+description: '|'
+metadata:
+  author: okaris
+  category: General
+  tags:
+  - general
+  - product
+  - changelog
+  - bash(infsh *)
+  source: clawhub-community
+  clawhub_slug: product-changelog
+  clawhub_path: okaris/product-changelog
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(infsh *)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Product Changelog
+
+    # Source: ClawHub community skill by okaris
+
+    # Install: clawhub install product-changelog
+
+    # Path: okaris/product-changelog
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(infsh *)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install product-changelog
+
+    ```'
+examples:
+- description: Install Product Changelog from ClawHub
+  usage: clawhub install product-changelog
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: paperless
+title: Paperless
+version: 1.1.0
+description: Interact with Paperless-NGX document management system via ppls CLI. Search, retrieve, upload, and organize documents.
+metadata:
+  author: nickchristensen
+  category: Search & Research
+  tags:
+  - search-research
+  - paperless
+  source: clawhub-community
+  clawhub_slug: paperless
+  clawhub_path: nickchristensen/paperless
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Paperless
+
+    # Source: ClawHub community skill by nickchristensen
+
+    # Install: clawhub install paperless
+
+    # Path: nickchristensen/paperless
+
+
+    ## Description
+
+    Interact with Paperless-NGX document management system via ppls CLI. Search, retrieve, upload, and organize documents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paperless
+
+    ```'
+examples:
+- description: Install Paperless from ClawHub
+  usage: clawhub install paperless
+schema_version: '1.0'

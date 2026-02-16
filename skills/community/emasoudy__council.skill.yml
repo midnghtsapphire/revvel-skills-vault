@@ -1,0 +1,65 @@
+name: council
+title: Council
+version: 1.0.1
+description: Council Chamber orchestration with Memory Bridge. Single session, multiple personas, structured deliberation.
+metadata:
+  author: emasoudy
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - council
+  source: clawhub-community
+  clawhub_slug: council
+  clawhub_path: emasoudy/council
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Council
+
+    # Source: ClawHub community skill by emasoudy
+
+    # Install: clawhub install council
+
+    # Path: emasoudy/council
+
+
+    ## Description
+
+    Council Chamber orchestration with Memory Bridge. Single session, multiple personas, structured deliberation.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - init-db.sh
+
+    - manifest.json
+
+    - references/chamber-orchestrator.sh
+
+    - references/env-check.sh
+
+    - references/graphiti-bridge.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install council
+
+    ```'
+examples:
+- description: Install Council from ClawHub
+  usage: clawhub install council
+schema_version: '1.0'

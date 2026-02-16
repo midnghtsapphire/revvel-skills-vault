@@ -1,0 +1,58 @@
+name: let-me-know
+title: Let Me Know
+version: 0.1.1
+description: Notify the user before starting any long-running task and keep them updated. Use when a task will take noticeable
+  time (>2-3 minutes). Send a start message, schedule a 5‑minute heartbeat update, and send a completion message immediately
+  when done.
+metadata:
+  author: fogyoy
+  category: Media & Content
+  tags:
+  - media-content
+  - let
+  - know
+  source: clawhub-community
+  clawhub_slug: let-me-know
+  clawhub_path: fogyoy/let-me-know
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Let Me Know
+
+    # Source: ClawHub community skill by fogyoy
+
+    # Install: clawhub install let-me-know
+
+    # Path: fogyoy/let-me-know
+
+
+    ## Description
+
+    Notify the user before starting any long-running task and keep them updated. Use when a task will take noticeable time
+    (>2-3 minutes). Send a start message, schedule a 5‑minute heartbeat update, and send a completion message immediately
+    when done.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install let-me-know
+
+    ```'
+examples:
+- description: Install Let Me Know from ClawHub
+  usage: clawhub install let-me-know
+schema_version: '1.0'

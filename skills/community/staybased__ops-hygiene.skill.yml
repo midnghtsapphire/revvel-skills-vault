@@ -1,0 +1,34 @@
+name: ops-hygiene
+title: Ops Hygiene
+version: 1.0.0
+description: 'Standard operating procedures for agent maintenance, security hygiene, and system health. Use when performing
+  periodic checks, security audits, memory maintenance, secret rotation, dependency updates, or any recurring "housekeeping"
+  tasks. Also use when setting up automated maintenance schedules or '
+metadata:
+  author: staybased
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - ops
+  - hygiene
+  source: clawhub-community
+  clawhub_slug: ops-hygiene
+  clawhub_path: staybased/ops-hygiene
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Ops Hygiene\n# Source: ClawHub community skill by staybased\n# Install: clawhub install ops-hygiene\n# Path:\
+    \ staybased/ops-hygiene\n\n## Description\nStandard operating procedures for agent maintenance, security hygiene, and\
+    \ system health. Use when performing periodic checks, security audits, memory maintenance, secret rotation, dependency\
+    \ updates, or any recurring \"housekeeping\" tasks. Also use when setting up automated maintenance schedules or \n\n##\
+    \ Files\n- SKILL.md\n- _meta.json\n- scripts/health-check.sh\n- scripts/heartbeat-dispatch.sh\n- scripts/secret-scan.sh\n\
+    - scripts/security-audit.sh\n\n## Installation\n```bash\nclawhub install ops-hygiene\n```"
+examples:
+- description: Install Ops Hygiene from ClawHub
+  usage: clawhub install ops-hygiene
+schema_version: '1.0'

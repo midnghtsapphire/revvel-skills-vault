@@ -1,0 +1,74 @@
+name: whoop-integration
+title: WHOOP Integration
+version: 2.0.0
+description: Integrate with WHOOP fitness tracker API to monitor sleep, recovery, and strain data. Use when you need to check
+  sleep quality, recovery scores, analyze fitness patterns, set up morning behavior adjustments based on sleep performance,
+  or create automated health monitoring workflows. Supports OAuth a
+metadata:
+  author: valeraolexienko
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - whoop
+  - integration
+  source: clawhub-community
+  clawhub_slug: whoop-integration
+  clawhub_path: valeraolexienko/whoop-integration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WHOOP Integration
+
+    # Source: ClawHub community skill by valeraolexienko
+
+    # Install: clawhub install whoop-integration
+
+    # Path: valeraolexienko/whoop-integration
+
+
+    ## Description
+
+    Integrate with WHOOP fitness tracker API to monitor sleep, recovery, and strain data. Use when you need to check sleep
+    quality, recovery scores, analyze fitness patterns, set up morning behavior adjustments based on sleep performance, or
+    create automated health monitoring workflows. Supports OAuth a
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API_REFERENCE.md
+
+    - references/OAUTH_FLOW.md
+
+    - scripts/manual_oauth.py
+
+    - scripts/morning_check.py
+
+    - scripts/oauth_setup.py
+
+    - scripts/recovery_stats.py
+
+    - scripts/recovery_stats_correct.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install whoop-integration
+
+    ```'
+examples:
+- description: Install WHOOP Integration from ClawHub
+  usage: clawhub install whoop-integration
+schema_version: '1.0'

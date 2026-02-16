@@ -1,0 +1,73 @@
+name: ad-ready
+title: Product to Ads (Ad-Ready)
+version: 1.4.0
+description: Generate professional advertising images from product URLs using the Ad-Ready pipeline on ComfyDeploy. Use when
+  the user wants to create ads for any product by providing a URL, optionally with a brand profile (70+ brands) and funnel
+  stage targeting. Supports model/talent integration, brand-aware cre
+metadata:
+  author: pauldelavallaz
+  category: Media & Content
+  tags:
+  - media-content
+  - ready
+  source: clawhub-community
+  clawhub_slug: product-to-ads
+  clawhub_path: pauldelavallaz/product-to-ads
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Product to Ads (Ad-Ready)
+
+    # Source: ClawHub community skill by pauldelavallaz
+
+    # Install: clawhub install product-to-ads
+
+    # Path: pauldelavallaz/product-to-ads
+
+
+    ## Description
+
+    Generate professional advertising images from product URLs using the Ad-Ready pipeline on ComfyDeploy. Use when the user
+    wants to create ads for any product by providing a URL, optionally with a brand profile (70+ brands) and funnel stage
+    targeting. Supports model/talent integration, brand-aware cre
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - configs/Brief_Generator/brief_prompt.json
+
+    - configs/Product_to_Ads/Master_prompt_01_Awareness.json
+
+    - configs/Product_to_Ads/Master_prompt_02_Interest.json
+
+    - configs/Product_to_Ads/Master_prompt_03_Consideration.json
+
+    - configs/Product_to_Ads/Master_prompt_04_Evaluation.json
+
+    - configs/Product_to_Ads/Master_prompt_05_Conversion.json
+
+    - configs/Product_to_Ads/Master_prompt_06_Retention.json
+
+    - configs/Product_to_Ads/Master_prompt_07_Loyalty.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install product-to-ads
+
+    ```'
+examples:
+- description: Install Product to Ads (Ad-Ready) from ClawHub
+  usage: clawhub install product-to-ads
+schema_version: '1.0'

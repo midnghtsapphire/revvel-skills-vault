@@ -1,0 +1,71 @@
+name: mingli
+title: AsianSeeker - Openclaw FortuneTeller
+version: 1.0.2
+description: '"Mingli (命理) — Multi-system daily horoscope: Western astrology (natal chart + transits), Ba-Zi / Four Pillars
+  (Bát Tự), numerology, I Ching (Kinh Dịch). Kerykeion + astronomyapi.com. Telegram delivery."'
+metadata:
+  author: hiehoo
+  category: Social Media
+  tags:
+  - social-media
+  - mingli
+  source: clawhub-community
+  clawhub_slug: mingli
+  clawhub_path: hiehoo/mingli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AsianSeeker - Openclaw FortuneTeller
+
+    # Source: ClawHub community skill by hiehoo
+
+    # Install: clawhub install mingli
+
+    # Path: hiehoo/mingli
+
+
+    ## Description
+
+    "Mingli (命理) — Multi-system daily horoscope: Western astrology (natal chart + transits), Ba-Zi / Four Pillars (Bát Tự),
+    numerology, I Ching (Kinh Dịch). Kerykeion + astronomyapi.com. Telegram delivery."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/astronomyapi-reference.md
+
+    - references/horoscope-prompt-template.md
+
+    - references/i-ching-64-hexagrams.json
+
+    - references/zodiac-reference.md
+
+    - scripts/calculate-bazi.py
+
+    - scripts/calculate-numerology.py
+
+    - scripts/calculate-western-natal-chart-using-kerykeion.py
+
+    - scripts/cast-i-ching-hexagram.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mingli
+
+    ```'
+examples:
+- description: Install AsianSeeker - Openclaw FortuneTeller from ClawHub
+  usage: clawhub install mingli
+schema_version: '1.0'

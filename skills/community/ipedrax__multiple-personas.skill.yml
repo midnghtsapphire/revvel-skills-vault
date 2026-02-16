@@ -1,0 +1,73 @@
+name: personas
+title: Multiple Personas
+version: 1.0.0
+description: Create and manage AI subagent personas with distinct personalities. Use when a user requests to talk to a specific
+  persona, when delegating a conversation to a character, or when creating/listing/editing personality profiles. Personas
+  are text-only conversational agents with their own identity, tone
+metadata:
+  author: ipedrax
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - personas
+  source: clawhub-community
+  clawhub_slug: multiple-personas
+  clawhub_path: ipedrax/multiple-personas
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Multiple Personas
+
+    # Source: ClawHub community skill by ipedrax
+
+    # Install: clawhub install multiple-personas
+
+    # Path: ipedrax/multiple-personas
+
+
+    ## Description
+
+    Create and manage AI subagent personas with distinct personalities. Use when a user requests to talk to a specific persona,
+    when delegating a conversation to a character, or when creating/listing/editing personality profiles. Personas are text-only
+    conversational agents with their own identity, tone
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - profiles/luna/MEMORY.md
+
+    - profiles/luna/PERSONALITY.md
+
+    - profiles/luna/SOUL.md
+
+    - profiles/milo/MEMORY.md
+
+    - profiles/milo/PERSONALITY.md
+
+    - profiles/milo/SOUL.md
+
+    - profiles/rex/MEMORY.md
+
+    - profiles/rex/PERSONALITY.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install multiple-personas
+
+    ```'
+examples:
+- description: Install Multiple Personas from ClawHub
+  usage: clawhub install multiple-personas
+schema_version: '1.0'

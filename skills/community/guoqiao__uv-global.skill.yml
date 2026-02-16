@@ -1,0 +1,55 @@
+name: uv-global
+title: UV Global
+version: 0.1.2
+description: Provision and reuse a global uv environment for ad hoc Python scripts.
+metadata:
+  author: guoqiao
+  category: General
+  tags:
+  - general
+  - global
+  source: clawhub-community
+  clawhub_slug: uv-global
+  clawhub_path: guoqiao/uv-global
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UV Global
+
+    # Source: ClawHub community skill by guoqiao
+
+    # Install: clawhub install uv-global
+
+    # Path: guoqiao/uv-global
+
+
+    ## Description
+
+    Provision and reuse a global uv environment for ad hoc Python scripts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install uv-global
+
+    ```'
+examples:
+- description: Install UV Global from ClawHub
+  usage: clawhub install uv-global
+schema_version: '1.0'

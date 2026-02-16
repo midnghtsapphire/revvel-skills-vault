@@ -1,0 +1,70 @@
+name: compose-gen
+title: Docker Compose Generator
+version: 1.0.1
+description: Generate docker-compose.yml by scanning your project. Use when containerizing an existing app.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - compose
+  - gen
+  source: clawhub-community
+  clawhub_slug: docker-compose-gen
+  clawhub_path: lxgicstudios/docker-compose-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docker Compose Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install docker-compose-gen
+
+    # Path: lxgicstudios/docker-compose-gen
+
+
+    ## Description
+
+    Generate docker-compose.yml by scanning your project. Use when containerizing an existing app.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - dist/cli.d.ts
+
+    - dist/cli.js
+
+    - dist/index.d.ts
+
+    - dist/index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install docker-compose-gen
+
+    ```'
+examples:
+- description: Install Docker Compose Generator from ClawHub
+  usage: clawhub install docker-compose-gen
+schema_version: '1.0'

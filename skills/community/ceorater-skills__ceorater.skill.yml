@@ -1,0 +1,61 @@
+name: ceorater
+title: CEORater
+version: 1.0.6
+description: '"Get institutional-grade CEO performance analytics for S&P 500 companies. Proprietary scores: CEORaterScore
+  (composite), AlphaScore (market outperformance), RevenueCAGRScore (revenue growth), CompScore (compensation efficiency).
+  Underlying data includes Total Stock Return (TSR) vs. S&P 500 (SPY), av'
+metadata:
+  author: ceorater-skills
+  category: Search & Research
+  tags:
+  - search-research
+  - ceorater
+  source: clawhub-community
+  clawhub_slug: ceorater
+  clawhub_path: ceorater-skills/ceorater
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CEORater
+
+    # Source: ClawHub community skill by ceorater-skills
+
+    # Install: clawhub install ceorater
+
+    # Path: ceorater-skills/ceorater
+
+
+    ## Description
+
+    "Get institutional-grade CEO performance analytics for S&P 500 companies. Proprietary scores: CEORaterScore (composite),
+    AlphaScore (market outperformance), RevenueCAGRScore (revenue growth), CompScore (compensation efficiency). Underlying
+    data includes Total Stock Return (TSR) vs. S&P 500 (SPY), av
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ceorater.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ceorater
+
+    ```'
+examples:
+- description: Install CEORater from ClawHub
+  usage: clawhub install ceorater
+schema_version: '1.0'

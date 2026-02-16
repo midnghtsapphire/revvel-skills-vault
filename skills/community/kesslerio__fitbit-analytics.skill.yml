@@ -1,0 +1,74 @@
+name: fitbit-analytics
+title: Fitbit Analytics
+version: 1.0.0
+description: Fitbit health and fitness data integration. Fetch steps, heart rate, sleep, activity, calories, and trends from
+  Fitbit Web API. Generate automated health reports and alerts. Requires FITBIT_CLIENT_ID, FITBIT_CLIENT_SECRET, FITBIT_ACCESS_TOKEN,
+  FITBIT_REFRESH_TOKEN.
+metadata:
+  author: kesslerio
+  category: Development & Coding
+  tags:
+  - development-coding
+  - fitbit
+  - analytics
+  source: clawhub-community
+  clawhub_slug: fitbit-analytics
+  clawhub_path: kesslerio/fitbit-analytics
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fitbit Analytics
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install fitbit-analytics
+
+    # Path: kesslerio/fitbit-analytics
+
+
+    ## Description
+
+    Fitbit health and fitness data integration. Fetch steps, heart rate, sleep, activity, calories, and trends from Fitbit
+    Web API. Generate automated health reports and alerts. Requires FITBIT_CLIENT_ID, FITBIT_CLIENT_SECRET, FITBIT_ACCESS_TOKEN,
+    FITBIT_REFRESH_TOKEN.
+
+
+    ## Files
+
+    - README.md
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docs/PRIVACY.md
+
+    - docs/TERMS.md
+
+    - references/api.md
+
+    - references/metrics.md
+
+    - scripts/alerts.py
+
+    - scripts/fitbit_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fitbit-analytics
+
+    ```'
+examples:
+- description: Install Fitbit Analytics from ClawHub
+  usage: clawhub install fitbit-analytics
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: _skill_publish_
+title: Skill Publish
+version: 1.0.0
+description: '"Safely publish skills to ClawHub. Sanitize, format, verify, and publish without modifying your local files."'
+metadata:
+  author: ivangdavila
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - '"skill'
+  - publish"
+  source: clawhub-community
+  clawhub_slug: skill-publish
+  clawhub_path: ivangdavila/skill-publish
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Publish
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install skill-publish
+
+    # Path: ivangdavila/skill-publish
+
+
+    ## Description
+
+    "Safely publish skills to ClawHub. Sanitize, format, verify, and publish without modifying your local files."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - sanitize.md
+
+    - transform.md
+
+    - verify.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-publish
+
+    ```'
+examples:
+- description: Install Skill Publish from ClawHub
+  usage: clawhub install skill-publish
+schema_version: '1.0'

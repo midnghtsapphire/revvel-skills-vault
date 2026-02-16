@@ -1,0 +1,56 @@
+name: proxy-mcp
+title: Proxy MCP
+version: 1.0.0
+description: Proxy MCP server integration for AI agent payments. Use Proxy's Model Context Protocol tools to create payment
+  intents, provision virtual cards, check balances, and track transactions. Requires Proxy account and agent token.
+metadata:
+  author: proxyhq
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - proxy
+  - mcp
+  source: clawhub-community
+  clawhub_slug: proxy-mcp
+  clawhub_path: proxyhq/proxy-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Proxy MCP
+
+    # Source: ClawHub community skill by proxyhq
+
+    # Install: clawhub install proxy-mcp
+
+    # Path: proxyhq/proxy-mcp
+
+
+    ## Description
+
+    Proxy MCP server integration for AI agent payments. Use Proxy''s Model Context Protocol tools to create payment intents,
+    provision virtual cards, check balances, and track transactions. Requires Proxy account and agent token.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install proxy-mcp
+
+    ```'
+examples:
+- description: Install Proxy MCP from ClawHub
+  usage: clawhub install proxy-mcp
+schema_version: '1.0'

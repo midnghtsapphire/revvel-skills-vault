@@ -1,0 +1,55 @@
+name: openalexandria
+title: OpenAlexandria
+version: 0.2.0
+description: Query and submit artifacts to the OpenAlexandria federated knowledge protocol (reference node by default).
+metadata:
+  author: havneco
+  category: General
+  tags:
+  - general
+  - openalexandria
+  source: clawhub-community
+  clawhub_slug: openalexandria
+  clawhub_path: havneco/openalexandria
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenAlexandria
+
+    # Source: ClawHub community skill by havneco
+
+    # Install: clawhub install openalexandria
+
+    # Path: havneco/openalexandria
+
+
+    ## Description
+
+    Query and submit artifacts to the OpenAlexandria federated knowledge protocol (reference node by default).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - openalexandria_cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openalexandria
+
+    ```'
+examples:
+- description: Install OpenAlexandria from ClawHub
+  usage: clawhub install openalexandria
+schema_version: '1.0'

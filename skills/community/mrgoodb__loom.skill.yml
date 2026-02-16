@@ -1,0 +1,53 @@
+name: loom
+title: Loom
+version: 1.0.0
+description: Manage Loom video recordings - list, share, and get analytics via Loom API.
+metadata:
+  author: mrgoodb
+  category: Media & Content
+  tags:
+  - media-content
+  - loom
+  source: clawhub-community
+  clawhub_slug: loom
+  clawhub_path: mrgoodb/loom
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Loom
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install loom
+
+    # Path: mrgoodb/loom
+
+
+    ## Description
+
+    Manage Loom video recordings - list, share, and get analytics via Loom API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install loom
+
+    ```'
+examples:
+- description: Install Loom from ClawHub
+  usage: clawhub install loom
+schema_version: '1.0'

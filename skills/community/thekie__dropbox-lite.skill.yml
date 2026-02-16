@@ -1,0 +1,60 @@
+name: dropbox-lite
+title: Clawdbot Skill Dropbox
+version: 1.0.1
+description: Upload, download, and manage files in Dropbox with automatic OAuth token refresh.
+metadata:
+  author: thekie
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - dropbox
+  - lite
+  source: clawhub-community
+  clawhub_slug: dropbox-lite
+  clawhub_path: thekie/dropbox-lite
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Skill Dropbox
+
+    # Source: ClawHub community skill by thekie
+
+    # Install: clawhub install dropbox-lite
+
+    # Path: thekie/dropbox-lite
+
+
+    ## Description
+
+    Upload, download, and manage files in Dropbox with automatic OAuth token refresh.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/dropbox.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dropbox-lite
+
+    ```'
+examples:
+- description: Install Clawdbot Skill Dropbox from ClawHub
+  usage: clawhub install dropbox-lite
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: cairn
+title: letcairn.work
+version: 1.0.2
+description: Project management for AI agents using markdown files. Install and use the cairn CLI to create projects, manage
+  tasks, track status, and coordinate human-AI collaboration through a shared workspace of markdown files.
+metadata:
+  author: gregoryehill
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - cairn
+  source: clawhub-community
+  clawhub_slug: cairn-cli
+  clawhub_path: gregoryehill/cairn-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# letcairn.work
+
+    # Source: ClawHub community skill by gregoryehill
+
+    # Install: clawhub install cairn-cli
+
+    # Path: gregoryehill/cairn-cli
+
+
+    ## Description
+
+    Project management for AI agents using markdown files. Install and use the cairn CLI to create projects, manage tasks,
+    track status, and coordinate human-AI collaboration through a shared workspace of markdown files.
+
+
+    ## Files
+
+    - COMMANDS.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cairn-cli
+
+    ```'
+examples:
+- description: Install letcairn.work from ClawHub
+  usage: clawhub install cairn-cli
+schema_version: '1.0'

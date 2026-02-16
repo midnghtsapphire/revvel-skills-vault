@@ -1,0 +1,60 @@
+name: sector-analyst
+title: Sector Analyst
+version: 0.1.0
+description: This skill should be used when analyzing sector and industry performance charts to assess market positioning
+  and rotation patterns. Use this skill when the user provides performance chart images (1-week or 1-month timeframes) for
+  sectors or industries and requests market cycle assessment, sector rot
+metadata:
+  author: veeramanikandanr48
+  category: Media & Content
+  tags:
+  - media-content
+  - sector
+  - analyst
+  source: clawhub-community
+  clawhub_slug: sector-analyst
+  clawhub_path: veeramanikandanr48/sector-analyst
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sector Analyst
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install sector-analyst
+
+    # Path: veeramanikandanr48/sector-analyst
+
+
+    ## Description
+
+    This skill should be used when analyzing sector and industry performance charts to assess market positioning and rotation
+    patterns. Use this skill when the user provides performance chart images (1-week or 1-month timeframes) for sectors or
+    industries and requests market cycle assessment, sector rot
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/sector_rotation.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sector-analyst
+
+    ```'
+examples:
+- description: Install Sector Analyst from ClawHub
+  usage: clawhub install sector-analyst
+schema_version: '1.0'

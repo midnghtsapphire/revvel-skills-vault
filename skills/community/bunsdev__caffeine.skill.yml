@@ -1,0 +1,55 @@
+name: caffeine
+title: Caffeine
+version: 1.0.1
+description: Prevent the computer screen and system from falling asleep on macOS or Windows. Use when the user wants to keep
+  their display awake, disable sleep, or run a long task without interruption.
+metadata:
+  author: bunsdev
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - caffeine
+  source: clawhub-community
+  clawhub_slug: caffeine
+  clawhub_path: bunsdev/caffeine
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Caffeine
+
+    # Source: ClawHub community skill by bunsdev
+
+    # Install: clawhub install caffeine
+
+    # Path: bunsdev/caffeine
+
+
+    ## Description
+
+    Prevent the computer screen and system from falling asleep on macOS or Windows. Use when the user wants to keep their
+    display awake, disable sleep, or run a long task without interruption.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install caffeine
+
+    ```'
+examples:
+- description: Install Caffeine from ClawHub
+  usage: clawhub install caffeine
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: ez-unifi
+title: EZ Unifi
+version: 1.0.1
+description: Use when asked to manage UniFi network - list/restart/upgrade devices, block/unblock clients, manage WiFi networks,
+  control PoE ports, manage traffic rules, create guest vouchers, or any UniFi controller task. Works with UDM Pro/SE, Dream
+  Machine, Cloud Key Gen2+, or self-hosted controllers.
+metadata:
+  author: araa47
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - unifi
+  source: clawhub-community
+  clawhub_slug: ez-unifi
+  clawhub_path: araa47/ez-unifi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# EZ Unifi
+
+    # Source: ClawHub community skill by araa47
+
+    # Install: clawhub install ez-unifi
+
+    # Path: araa47/ez-unifi
+
+
+    ## Description
+
+    Use when asked to manage UniFi network - list/restart/upgrade devices, block/unblock clients, manage WiFi networks, control
+    PoE ports, manage traffic rules, create guest vouchers, or any UniFi controller task. Works with UDM Pro/SE, Dream Machine,
+    Cloud Key Gen2+, or self-hosted controllers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/unifi.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ez-unifi
+
+    ```'
+examples:
+- description: Install EZ Unifi from ClawHub
+  usage: clawhub install ez-unifi
+schema_version: '1.0'

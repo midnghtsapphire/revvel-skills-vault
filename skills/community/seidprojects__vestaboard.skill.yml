@@ -1,0 +1,73 @@
+name: vestaboard
+title: Vestaboard
+version: 1.0.0
+description: Read and write messages on a Vestaboard using the Vestaboard Cloud API (cloud.vestaboard.com) and optional legacy
+  RW endpoint. Use when asked to display text on a Vestaboard, update a sign/board, show a short status message, render simple
+  pixel-art using color/filled character codes, or retrieve the
+metadata:
+  author: seidprojects
+  category: Communication
+  tags:
+  - communication
+  - vestaboard
+  source: clawhub-community
+  clawhub_slug: vestaboard
+  clawhub_path: seidprojects/vestaboard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vestaboard
+
+    # Source: ClawHub community skill by seidprojects
+
+    # Install: clawhub install vestaboard
+
+    # Path: seidprojects/vestaboard
+
+
+    ## Description
+
+    Read and write messages on a Vestaboard using the Vestaboard Cloud API (cloud.vestaboard.com) and optional legacy RW endpoint.
+    Use when asked to display text on a Vestaboard, update a sign/board, show a short status message, render simple pixel-art
+    using color/filled character codes, or retrieve the
+
+
+    ## Files
+
+    - ENV.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - content/layouts/chicken-silhouette.json
+
+    - content/layouts/egg-nest.json
+
+    - content/layouts/forest-depth.json
+
+    - content/layouts/maple-fall.json
+
+    - content/layouts/pine-night.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vestaboard
+
+    ```'
+examples:
+- description: Install Vestaboard from ClawHub
+  usage: clawhub install vestaboard
+schema_version: '1.0'

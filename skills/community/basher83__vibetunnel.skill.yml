@@ -1,0 +1,55 @@
+name: vibetunnel
+title: VibeTunnel
+version: 1.0.0
+description: Manage VibeTunnel terminal sessions. Create, list, monitor, and control terminal sessions visible in the VibeTunnel
+  web dashboard.
+metadata:
+  author: basher83
+  category: System & OS
+  tags:
+  - system-os
+  - vibetunnel
+  source: clawhub-community
+  clawhub_slug: vibetunnel
+  clawhub_path: basher83/vibetunnel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# VibeTunnel
+
+    # Source: ClawHub community skill by basher83
+
+    # Install: clawhub install vibetunnel
+
+    # Path: basher83/vibetunnel
+
+
+    ## Description
+
+    Manage VibeTunnel terminal sessions. Create, list, monitor, and control terminal sessions visible in the VibeTunnel web
+    dashboard.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vibetunnel
+
+    ```'
+examples:
+- description: Install VibeTunnel from ClawHub
+  usage: clawhub install vibetunnel
+schema_version: '1.0'

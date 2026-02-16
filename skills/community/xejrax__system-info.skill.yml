@@ -1,0 +1,54 @@
+name: system-info
+title: System Info
+version: 1.0.0
+description: '"Quick system diagnostics: CPU, memory, disk, uptime"'
+metadata:
+  author: xejrax
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - system
+  - info
+  source: clawhub-community
+  clawhub_slug: system-info
+  clawhub_path: xejrax/system-info
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# System Info
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install system-info
+
+    # Path: xejrax/system-info
+
+
+    ## Description
+
+    "Quick system diagnostics: CPU, memory, disk, uptime"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install system-info
+
+    ```'
+examples:
+- description: Install System Info from ClawHub
+  usage: clawhub install system-info
+schema_version: '1.0'

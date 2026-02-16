@@ -1,0 +1,53 @@
+name: elasticsearch
+title: Elasticsearch
+version: 1.0.0
+description: Query and index Elasticsearch with proper mappings, analyzers, and search patterns.
+metadata:
+  author: ivangdavila
+  category: Search & Research
+  tags:
+  - search-research
+  - elasticsearch
+  source: clawhub-community
+  clawhub_slug: elasticsearch
+  clawhub_path: ivangdavila/elasticsearch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Elasticsearch
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install elasticsearch
+
+    # Path: ivangdavila/elasticsearch
+
+
+    ## Description
+
+    Query and index Elasticsearch with proper mappings, analyzers, and search patterns.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install elasticsearch
+
+    ```'
+examples:
+- description: Install Elasticsearch from ClawHub
+  usage: clawhub install elasticsearch
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: anyone-proxy
+title: Anyone Procotol Proxy
+version: 0.1.0
+description: This skill enables IP address masking and accessing hidden services on the Anyone Network. Route requests through
+  the Anyone Protocol VPN network using a local SOCKS5 proxy.
+metadata:
+  author: ra3ka
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - anyone
+  - proxy
+  source: clawhub-community
+  clawhub_slug: anyone-proxy
+  clawhub_path: ra3ka/anyone-proxy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Anyone Procotol Proxy
+
+    # Source: ClawHub community skill by ra3ka
+
+    # Install: clawhub install anyone-proxy
+
+    # Path: ra3ka/anyone-proxy
+
+
+    ## Description
+
+    This skill enables IP address masking and accessing hidden services on the Anyone Network. Route requests through the
+    Anyone Protocol VPN network using a local SOCKS5 proxy.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install anyone-proxy
+
+    ```'
+examples:
+- description: Install Anyone Procotol Proxy from ClawHub
+  usage: clawhub install anyone-proxy
+schema_version: '1.0'

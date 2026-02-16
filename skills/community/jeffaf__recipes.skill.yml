@@ -1,0 +1,55 @@
+name: recipes
+title: Recipes
+version: 1.0.0
+description: '"CLI for AI agents to find recipes for their humans. Uses TheMealDB API. No auth required."'
+metadata:
+  author: jeffaf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - recipes
+  source: clawhub-community
+  clawhub_slug: recipes
+  clawhub_path: jeffaf/recipes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Recipes
+
+    # Source: ClawHub community skill by jeffaf
+
+    # Install: clawhub install recipes
+
+    # Path: jeffaf/recipes
+
+
+    ## Description
+
+    "CLI for AI agents to find recipes for their humans. Uses TheMealDB API. No auth required."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install recipes
+
+    ```'
+examples:
+- description: Install Recipes from ClawHub
+  usage: clawhub install recipes
+schema_version: '1.0'

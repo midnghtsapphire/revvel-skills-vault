@@ -1,0 +1,58 @@
+name: memory-analyzer
+title: Memory Analyzer
+version: 1.0.0
+description: Analyzes conversation history, extracts user preferences and feedback, updates memory files automatically.
+metadata:
+  author: tevfikgulep
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - memory
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: memory-analyzer
+  clawhub_path: tevfikgulep/memory-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Analyzer
+
+    # Source: ClawHub community skill by tevfikgulep
+
+    # Install: clawhub install memory-analyzer
+
+    # Path: tevfikgulep/memory-analyzer
+
+
+    ## Description
+
+    Analyzes conversation history, extracts user preferences and feedback, updates memory files automatically.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - analyzer.py
+
+    - memory_analyzer_output.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-analyzer
+
+    ```'
+examples:
+- description: Install Memory Analyzer from ClawHub
+  usage: clawhub install memory-analyzer
+schema_version: '1.0'

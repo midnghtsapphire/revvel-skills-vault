@@ -1,0 +1,70 @@
+name: parallel-ai-search
+title: Parallel AI search
+version: 1.0.0
+description: Web search + URL extraction via Parallel Search/Extract APIs. Use for up-to-date research, domain-scoped searching,
+  and extracting LLM-ready excerpts/markdown from URLs.
+metadata:
+  author: tristanmanchester
+  category: Search & Research
+  tags:
+  - search-research
+  - parallel
+  - search
+  source: clawhub-community
+  clawhub_slug: parallel-ai-search
+  clawhub_path: tristanmanchester/parallel-ai-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Parallel AI search
+
+    # Source: ClawHub community skill by tristanmanchester
+
+    # Install: clawhub install parallel-ai-search
+
+    # Path: tristanmanchester/parallel-ai-search
+
+
+    ## Description
+
+    Web search + URL extraction via Parallel Search/Extract APIs. Use for up-to-date research, domain-scoped searching, and
+    extracting LLM-ready excerpts/markdown from URLs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/openclaw-config.md
+
+    - references/parallel-api.md
+
+    - references/prompting.md
+
+    - scripts/_lib.mjs
+
+    - scripts/parallel-extract.mjs
+
+    - scripts/parallel-search-extract.mjs
+
+    - scripts/parallel-search.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install parallel-ai-search
+
+    ```'
+examples:
+- description: Install Parallel AI search from ClawHub
+  usage: clawhub install parallel-ai-search
+schema_version: '1.0'

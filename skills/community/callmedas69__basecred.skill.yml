@@ -1,0 +1,61 @@
+name: basecred
+title: BaseCred
+version: 1.0.0
+description: Fetch onchain reputation profiles via BaseCred SDK (Ethos, Talent Protocol, Farcaster/Neynar). Use when the user
+  wants to check wallet reputation, builder score, creator score, Ethos credibility, or Farcaster account quality for any
+  0x address. Supports multi-source unified profiles with level deriv
+metadata:
+  author: callmedas69
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - basecred
+  source: clawhub-community
+  clawhub_slug: basecred
+  clawhub_path: callmedas69/basecred
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# BaseCred
+
+    # Source: ClawHub community skill by callmedas69
+
+    # Install: clawhub install basecred
+
+    # Path: callmedas69/basecred
+
+
+    ## Description
+
+    Fetch onchain reputation profiles via BaseCred SDK (Ethos, Talent Protocol, Farcaster/Neynar). Use when the user wants
+    to check wallet reputation, builder score, creator score, Ethos credibility, or Farcaster account quality for any 0x address.
+    Supports multi-source unified profiles with level deriv
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/output-schema.md
+
+    - scripts/query.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install basecred
+
+    ```'
+examples:
+- description: Install BaseCred from ClawHub
+  usage: clawhub install basecred
+schema_version: '1.0'

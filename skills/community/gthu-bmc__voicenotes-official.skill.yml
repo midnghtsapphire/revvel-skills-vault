@@ -1,0 +1,55 @@
+name: voicenotes
+title: Voicenotes Official
+version: 1.0.1
+description: This official skill from the Voicenotes team gives OpenClaw access to new APIs and the ability to search semantically,
+  retrieve full transcripts, filter by tags or date range and create text notes — all through natural conversation.
+metadata:
+  author: gthu-bmc
+  category: Search & Research
+  tags:
+  - search-research
+  - voicenotes
+  source: clawhub-community
+  clawhub_slug: voicenotes-official
+  clawhub_path: gthu-bmc/voicenotes-official
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Voicenotes Official
+
+    # Source: ClawHub community skill by gthu-bmc
+
+    # Install: clawhub install voicenotes-official
+
+    # Path: gthu-bmc/voicenotes-official
+
+
+    ## Description
+
+    This official skill from the Voicenotes team gives OpenClaw access to new APIs and the ability to search semantically,
+    retrieve full transcripts, filter by tags or date range and create text notes — all through natural conversation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install voicenotes-official
+
+    ```'
+examples:
+- description: Install Voicenotes Official from ClawHub
+  usage: clawhub install voicenotes-official
+schema_version: '1.0'

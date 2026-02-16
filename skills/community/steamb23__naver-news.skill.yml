@@ -1,0 +1,64 @@
+name: naver-news
+title: Naver news Search
+version: 1.0.2
+description: Search Korean news articles using Naver Search API. Use when searching for Korean news, getting latest news updates,
+  finding news about specific topics, or preparing daily news summaries. Supports relevance and date-based sorting.
+metadata:
+  author: steamb23
+  category: Search & Research
+  tags:
+  - search-research
+  - naver
+  - news
+  source: clawhub-community
+  clawhub_slug: naver-news
+  clawhub_path: steamb23/naver-news
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Naver news Search
+
+    # Source: ClawHub community skill by steamb23
+
+    # Install: clawhub install naver-news
+
+    # Path: steamb23/naver-news
+
+
+    ## Description
+
+    Search Korean news articles using Naver Search API. Use when searching for Korean news, getting latest news updates, finding
+    news about specific topics, or preparing daily news summaries. Supports relevance and date-based sorting.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/daily-summary.md
+
+    - references/api.md
+
+    - scripts/search_news.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install naver-news
+
+    ```'
+examples:
+- description: Install Naver news Search from ClawHub
+  usage: clawhub install naver-news
+schema_version: '1.0'

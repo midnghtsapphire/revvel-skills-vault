@@ -1,0 +1,66 @@
+name: apple-remind-me
+title: Apple Reminder
+version: 1.0.1
+description: Natural language reminders that create actual Apple Reminders.app entries (macOS-native)
+metadata:
+  author: plgonzalezrx8
+  category: System & OS
+  tags:
+  - system-os
+  - apple
+  - remind
+  source: clawhub-community
+  clawhub_slug: apple-remind-me
+  clawhub_path: plgonzalezrx8/apple-remind-me
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Reminder
+
+    # Source: ClawHub community skill by plgonzalezrx8
+
+    # Install: clawhub install apple-remind-me
+
+    # Path: plgonzalezrx8/apple-remind-me
+
+
+    ## Description
+
+    Natural language reminders that create actual Apple Reminders.app entries (macOS-native)
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - complete-reminder.sh
+
+    - create-reminder.sh
+
+    - delete-reminder.sh
+
+    - edit-reminder-message.sh
+
+    - edit-reminder-time.sh
+
+    - list-reminders.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-remind-me
+
+    ```'
+examples:
+- description: Install Apple Reminder from ClawHub
+  usage: clawhub install apple-remind-me
+schema_version: '1.0'

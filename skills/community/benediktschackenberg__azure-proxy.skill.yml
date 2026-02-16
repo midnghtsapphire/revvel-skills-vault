@@ -1,0 +1,62 @@
+name: azure-proxy
+title: Azure OpenAI Proxy
+version: 1.0.0
+description: Enable Azure OpenAI integration with OpenClaw via a lightweight local proxy. Use when configuring Azure OpenAI
+  as a model provider, when encountering 404 errors with Azure OpenAI in OpenClaw, or when needing to use Azure credits (e.g.
+  Visual Studio subscription) with OpenClaw subagents. Solves the a
+metadata:
+  author: benediktschackenberg
+  category: Development & Coding
+  tags:
+  - development-coding
+  - azure
+  - proxy
+  source: clawhub-community
+  clawhub_slug: azure-proxy
+  clawhub_path: benediktschackenberg/azure-proxy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Azure OpenAI Proxy
+
+    # Source: ClawHub community skill by benediktschackenberg
+
+    # Install: clawhub install azure-proxy
+
+    # Path: benediktschackenberg/azure-proxy
+
+
+    ## Description
+
+    Enable Azure OpenAI integration with OpenClaw via a lightweight local proxy. Use when configuring Azure OpenAI as a model
+    provider, when encountering 404 errors with Azure OpenAI in OpenClaw, or when needing to use Azure credits (e.g. Visual
+    Studio subscription) with OpenClaw subagents. Solves the a
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/server.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install azure-proxy
+
+    ```'
+examples:
+- description: Install Azure OpenAI Proxy from ClawHub
+  usage: clawhub install azure-proxy
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: smart-reopen-detector
+title: Smart Reopen Detector
+version: 1.0.0
+description: Detects when user reports issues with recently completed work and suggests reopening relevant tasks or increments.
+  Use when reporting bugs, regressions, or problems with recently finished features. Scans completed work from last 7 days
+  and provides relevance-scored suggestions while checking WIP lim
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - smart
+  - reopen
+  - detector
+  source: clawhub-community
+  clawhub_slug: sw-smart-reopen-detector
+  clawhub_path: anton-abyzov/sw-smart-reopen-detector
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Smart Reopen Detector
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-smart-reopen-detector
+
+    # Path: anton-abyzov/sw-smart-reopen-detector
+
+
+    ## Description
+
+    Detects when user reports issues with recently completed work and suggests reopening relevant tasks or increments. Use
+    when reporting bugs, regressions, or problems with recently finished features. Scans completed work from last 7 days and
+    provides relevance-scored suggestions while checking WIP lim
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-smart-reopen-detector
+
+    ```'
+examples:
+- description: Install Smart Reopen Detector from ClawHub
+  usage: clawhub install sw-smart-reopen-detector
+schema_version: '1.0'

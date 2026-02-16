@@ -1,0 +1,65 @@
+name: oura-cli
+title: Oura Cli
+version: 1.0.0
+description: ''
+metadata:
+  author: supadoopa
+  category: General
+  tags:
+  - general
+  - oura
+  - cli
+  source: clawhub-community
+  clawhub_slug: oura-cli
+  clawhub_path: supadoopa/oura-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Oura Cli
+
+    # Source: ClawHub community skill by supadoopa
+
+    # Install: clawhub install oura-cli
+
+    # Path: supadoopa/oura-cli
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cmd/oura/main.go
+
+    - internal/api/client.go
+
+    - internal/api/endpoints.go
+
+    - internal/auth/oauth.go
+
+    - internal/config/config.go
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install oura-cli
+
+    ```'
+examples:
+- description: Install Oura Cli from ClawHub
+  usage: clawhub install oura-cli
+schema_version: '1.0'

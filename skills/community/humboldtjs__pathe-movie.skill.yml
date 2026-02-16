@@ -1,0 +1,64 @@
+name: pathe-movie
+title: Pathé Movie Skill
+version: 1.0.0
+description: Lookup Pathé Netherlands movies, posters, descriptions, cinemas, and showtimes via the Pathé JSON APIs. Trigger
+  when the user mentions a Pathé movie/show, wants a poster, asks about a description/rating, or requests showtimes for a
+  specific cinema.
+metadata:
+  author: humboldtjs
+  category: Development & Coding
+  tags:
+  - development-coding
+  - pathe
+  - movie
+  source: clawhub-community
+  clawhub_slug: pathe-movie
+  clawhub_path: humboldtjs/pathe-movie
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pathé Movie Skill
+
+    # Source: ClawHub community skill by humboldtjs
+
+    # Install: clawhub install pathe-movie
+
+    # Path: humboldtjs/pathe-movie
+
+
+    ## Description
+
+    Lookup Pathé Netherlands movies, posters, descriptions, cinemas, and showtimes via the Pathé JSON APIs. Trigger when the
+    user mentions a Pathé movie/show, wants a poster, asks about a description/rating, or requests showtimes for a specific
+    cinema.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config/pathe_movie_config.json
+
+    - references/api.md
+
+    - scripts/pathe_movie.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pathe-movie
+
+    ```'
+examples:
+- description: Install Pathé Movie Skill from ClawHub
+  usage: clawhub install pathe-movie
+schema_version: '1.0'

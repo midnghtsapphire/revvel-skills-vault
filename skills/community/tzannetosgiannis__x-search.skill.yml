@@ -1,0 +1,59 @@
+name: x-search
+title: X Search (x402)
+version: 1.0.0
+description: AI-powered X/Twitter search for real-time trends, breaking news, sentiment analysis, and social media insights.
+  Use when users want to search Twitter/X for topics, hashtags, viral content, or public opinion. Costs $0.05 USDC per request
+  via x402 protocol on Base network.
+metadata:
+  author: tzannetosgiannis
+  category: Search & Research
+  tags:
+  - search-research
+  - search
+  source: clawhub-community
+  clawhub_slug: x-search
+  clawhub_path: tzannetosgiannis/x-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Search (x402)
+
+    # Source: ClawHub community skill by tzannetosgiannis
+
+    # Install: clawhub install x-search
+
+    # Path: tzannetosgiannis/x-search
+
+
+    ## Description
+
+    AI-powered X/Twitter search for real-time trends, breaking news, sentiment analysis, and social media insights. Use when
+    users want to search Twitter/X for topics, hashtags, viral content, or public opinion. Costs $0.05 USDC per request via
+    x402 protocol on Base network.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-search
+
+    ```'
+examples:
+- description: Install X Search (x402) from ClawHub
+  usage: clawhub install x-search
+schema_version: '1.0'

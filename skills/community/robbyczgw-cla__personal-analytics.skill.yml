@@ -1,0 +1,74 @@
+name: personal-analytics
+title: Personal Analytics
+version: 1.0.0
+description: Analyze conversation patterns, track productivity, and surface self-knowledge insights. Use when user wants to
+  understand their own patterns (when they chat, what topics they discuss, productivity trends, sentiment over time). Provides
+  weekly/monthly reports, topic recommendations, and time-based in
+metadata:
+  author: robbyczgw-cla
+  category: Communication
+  tags:
+  - communication
+  - personal
+  - analytics
+  source: clawhub-community
+  clawhub_slug: personal-analytics
+  clawhub_path: robbyczgw-cla/personal-analytics
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Personal Analytics
+
+    # Source: ClawHub community skill by robbyczgw-cla
+
+    # Install: clawhub install personal-analytics
+
+    # Path: robbyczgw-cla/personal-analytics
+
+
+    ## Description
+
+    Analyze conversation patterns, track productivity, and surface self-knowledge insights. Use when user wants to understand
+    their own patterns (when they chat, what topics they discuss, productivity trends, sentiment over time). Provides weekly/monthly
+    reports, topic recommendations, and time-based in
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - scripts/analyzer.py
+
+    - scripts/config.py
+
+    - scripts/disable.py
+
+    - scripts/enable.py
+
+    - scripts/recommend.py
+
+    - scripts/report.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install personal-analytics
+
+    ```'
+examples:
+- description: Install Personal Analytics from ClawHub
+  usage: clawhub install personal-analytics
+schema_version: '1.0'

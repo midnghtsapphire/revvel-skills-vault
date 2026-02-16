@@ -1,0 +1,60 @@
+name: symbolic-memory
+title: JIT Symbolic Memory Architecture for LLMs
+version: 1.0.5
+description: Stateless symbolic memory effect for LLM agents using SQL facts + canonical semantics, activated via symbols
+  and JIT meaning (PostgreSQL + Ollama).
+metadata:
+  author: th3hypn0tist
+  category: Development & Coding
+  tags:
+  - development-coding
+  - symbolic
+  - memory
+  source: clawhub-community
+  clawhub_slug: symbolic-memory
+  clawhub_path: th3hypn0tist/symbolic-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# JIT Symbolic Memory Architecture for LLMs
+
+    # Source: ClawHub community skill by th3hypn0tist
+
+    # Install: clawhub install symbolic-memory
+
+    # Path: th3hypn0tist/symbolic-memory
+
+
+    ## Description
+
+    Stateless symbolic memory effect for LLM agents using SQL facts + canonical semantics, activated via symbols and JIT meaning
+    (PostgreSQL + Ollama).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - schema.sql
+
+    - symbolic_memory.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install symbolic-memory
+
+    ```'
+examples:
+- description: Install JIT Symbolic Memory Architecture for LLMs from ClawHub
+  usage: clawhub install symbolic-memory
+schema_version: '1.0'

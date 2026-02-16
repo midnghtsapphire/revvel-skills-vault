@@ -1,0 +1,55 @@
+name: workflowy
+title: Workflowy API
+version: 1.0.0
+description: Workflowy outliner CLI for reading, searching, and editing nodes. Use when the user wants to interact with their
+  Workflowy outline — searching, adding items, viewing trees, marking complete, bulk operations, or usage reports.
+metadata:
+  author: waldyrious
+  category: Search & Research
+  tags:
+  - search-research
+  - workflowy
+  source: clawhub-community
+  clawhub_slug: workflowy
+  clawhub_path: waldyrious/workflowy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Workflowy API
+
+    # Source: ClawHub community skill by waldyrious
+
+    # Install: clawhub install workflowy
+
+    # Path: waldyrious/workflowy
+
+
+    ## Description
+
+    Workflowy outliner CLI for reading, searching, and editing nodes. Use when the user wants to interact with their Workflowy
+    outline — searching, adding items, viewing trees, marking complete, bulk operations, or usage reports.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install workflowy
+
+    ```'
+examples:
+- description: Install Workflowy API from ClawHub
+  usage: clawhub install workflowy
+schema_version: '1.0'

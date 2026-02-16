@@ -1,0 +1,68 @@
+name: screen-monitor
+title: Screen Monitor
+version: 1.0.1
+description: Dual-mode screen sharing and analysis. Model-agnostic (Gemini/Claude/Qwen3-VL).
+metadata:
+  author: emasoudy
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - screen
+  - monitor
+  source: clawhub-community
+  clawhub_slug: screen-monitor
+  clawhub_path: emasoudy/screen-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Screen Monitor
+
+    # Source: ClawHub community skill by emasoudy
+
+    # Install: clawhub install screen-monitor
+
+    # Path: emasoudy/screen-monitor
+
+
+    ## Description
+
+    Dual-mode screen sharing and analysis. Model-agnostic (Gemini/Claude/Qwen3-VL).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - manifest.json
+
+    - references/backend-endpoint.js
+
+    - references/env-check.sh
+
+    - references/get-share-url.sh
+
+    - references/screen-analyze.sh
+
+    - web/screen-share.html
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install screen-monitor
+
+    ```'
+examples:
+- description: Install Screen Monitor from ClawHub
+  usage: clawhub install screen-monitor
+schema_version: '1.0'

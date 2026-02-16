@@ -1,0 +1,71 @@
+name: ux-audit
+title: UX Audit
+version: 1.2.0
+description: '"AI skill for automated design audits. Evaluate interfaces against proven UX principles for visual hierarchy,
+  accessibility, cognitive load, navigation, and more. Based on Making UX Decisions by Tommy Geoco."'
+metadata:
+  author: tommygeoco
+  category: General
+  tags:
+  - general
+  - audit
+  source: clawhub-community
+  clawhub_slug: ux-audit
+  clawhub_path: tommygeoco/ux-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UX Audit
+
+    # Source: ClawHub community skill by tommygeoco
+
+    # Install: clawhub install ux-audit
+
+    # Path: tommygeoco/ux-audit
+
+
+    ## Description
+
+    "AI skill for automated design audits. Evaluate interfaces against proven UX principles for visual hierarchy, accessibility,
+    cognitive load, navigation, and more. Based on Making UX Decisions by Tommy Geoco."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/00-core-framework.md
+
+    - references/01-anchors.md
+
+    - references/02-information-scaffold.md
+
+    - references/10-checklist-new-interfaces.md
+
+    - references/11-checklist-fidelity.md
+
+    - references/12-checklist-visual-style.md
+
+    - references/13-checklist-innovation.md
+
+    - references/20-patterns-chunking.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ux-audit
+
+    ```'
+examples:
+- description: Install UX Audit from ClawHub
+  usage: clawhub install ux-audit
+schema_version: '1.0'

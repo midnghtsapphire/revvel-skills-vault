@@ -1,0 +1,65 @@
+name: food402
+title: Food402 - TGO Yemek
+version: 1.0.0
+description: Order food from TGO Yemek (Trendyol GO), Turkey's leading food delivery service. Use when user wants to order
+  food delivery in Turkey, browse restaurants, search for foods, manage delivery addresses, check order history, or checkout
+  with 3D Secure payment.
+metadata:
+  author: rersozlu
+  category: Search & Research
+  tags:
+  - search-research
+  - food402
+  source: clawhub-community
+  clawhub_slug: food402
+  clawhub_path: rersozlu/food402
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Food402 - TGO Yemek
+
+    # Source: ClawHub community skill by rersozlu
+
+    # Install: clawhub install food402
+
+    # Path: rersozlu/food402
+
+
+    ## Description
+
+    Order food from TGO Yemek (Trendyol GO), Turkey''s leading food delivery service. Use when user wants to order food delivery
+    in Turkey, browse restaurants, search for foods, manage delivery addresses, check order history, or checkout with 3D Secure
+    payment.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-quick-ref.md
+
+    - scripts/3dsecure.sh
+
+    - scripts/api.sh
+
+    - scripts/auth.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install food402
+
+    ```'
+examples:
+- description: Install Food402 - TGO Yemek from ClawHub
+  usage: clawhub install food402
+schema_version: '1.0'

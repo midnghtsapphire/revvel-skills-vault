@@ -1,0 +1,32 @@
+name: trilium
+title: Trilium
+version: 1.0.3
+description: 'Work with Trilium Notes (notebook app) and automate via Trilium Notes ETAPI. This skill allows you to read,
+  search, and create notes in your Trilium database. Use to manage notebook content or search for information within Trilium.
+  To get started: (1) In Trilium, go to Options -> ETAPI and create a '
+metadata:
+  author: mtbf999
+  category: Search & Research
+  tags:
+  - search-research
+  - trilium
+  source: clawhub-community
+  clawhub_slug: trilium
+  clawhub_path: mtbf999/trilium
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Trilium\n# Source: ClawHub community skill by mtbf999\n# Install: clawhub install trilium\n# Path: mtbf999/trilium\n\
+    \n## Description\nWork with Trilium Notes (notebook app) and automate via Trilium Notes ETAPI. This skill allows you to\
+    \ read, search, and create notes in your Trilium database. Use to manage notebook content or search for information within\
+    \ Trilium. To get started: (1) In Trilium, go to Options -> ETAPI and create a \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    - references/api.md\n\n## Installation\n```bash\nclawhub install trilium\n```"
+examples:
+- description: Install Trilium from ClawHub
+  usage: clawhub install trilium
+schema_version: '1.0'

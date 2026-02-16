@@ -1,0 +1,53 @@
+name: stellar
+title: Stellar
+version: 1.0.0
+description: Assist with Stellar XLM transactions, anchors, memo requirements, and cross-border payments.
+metadata:
+  author: ivangdavila
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - stellar
+  source: clawhub-community
+  clawhub_slug: stellar
+  clawhub_path: ivangdavila/stellar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stellar
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install stellar
+
+    # Path: ivangdavila/stellar
+
+
+    ## Description
+
+    Assist with Stellar XLM transactions, anchors, memo requirements, and cross-border payments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stellar
+
+    ```'
+examples:
+- description: Install Stellar from ClawHub
+  usage: clawhub install stellar
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: line-bridge-shrimp
+title: Line Bot to Clawd
+version: 1.0.0
+description: 專業的 LINE 橋接器。支援身份識別、多群組回覆，並將機敏資訊外部化儲存。
+metadata:
+  author: stu24801
+  category: General
+  tags:
+  - general
+  - line
+  - bridge
+  - shrimp
+  source: clawhub-community
+  clawhub_slug: line-bridge-shrimp
+  clawhub_path: stu24801/line-bridge-shrimp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Line Bot to Clawd
+
+    # Source: ClawHub community skill by stu24801
+
+    # Install: clawhub install line-bridge-shrimp
+
+    # Path: stu24801/line-bridge-shrimp
+
+
+    ## Description
+
+    專業的 LINE 橋接器。支援身份識別、多群組回覆，並將機敏資訊外部化儲存。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package-lock.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install line-bridge-shrimp
+
+    ```'
+examples:
+- description: Install Line Bot to Clawd from ClawHub
+  usage: clawhub install line-bridge-shrimp
+schema_version: '1.0'

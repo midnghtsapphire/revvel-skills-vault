@@ -1,0 +1,71 @@
+name: polymarket-whale-copier
+title: Polymarket Whale Copier
+version: 1.0.0
+description: Copy trade winning Polymarket wallets automatically. Track whale wallets, mirror their bets at configurable percentages,
+  with built-in risk management. No API keys needed.
+metadata:
+  author: cassh100k
+  category: Development & Coding
+  tags:
+  - development-coding
+  - polymarket
+  - whale
+  - copier
+  source: clawhub-community
+  clawhub_slug: polymarket-whale-copier
+  clawhub_path: cassh100k/polymarket-whale-copier
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polymarket Whale Copier
+
+    # Source: ClawHub community skill by cassh100k
+
+    # Install: clawhub install polymarket-whale-copier
+
+    # Path: cassh100k/polymarket-whale-copier
+
+
+    ## Description
+
+    Copy trade winning Polymarket wallets automatically. Track whale wallets, mirror their bets at configurable percentages,
+    with built-in risk management. No API keys needed.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/auto_redeem.py
+
+    - scripts/config.json
+
+    - scripts/copy_trader.py
+
+    - scripts/logs.sh
+
+    - scripts/start.sh
+
+    - scripts/status.sh
+
+    - scripts/stop.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polymarket-whale-copier
+
+    ```'
+examples:
+- description: Install Polymarket Whale Copier from ClawHub
+  usage: clawhub install polymarket-whale-copier
+schema_version: '1.0'

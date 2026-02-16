@@ -1,0 +1,55 @@
+name: paprika
+title: Paprika
+version: 0.1.0
+description: Access recipes, meal plans, and grocery lists from Paprika Recipe Manager. Use when user asks about recipes,
+  meal planning, or cooking.
+metadata:
+  author: mjrussell
+  category: General
+  tags:
+  - general
+  - paprika
+  source: clawhub-community
+  clawhub_slug: paprika
+  clawhub_path: mjrussell/paprika
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Paprika
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install paprika
+
+    # Path: mjrussell/paprika
+
+
+    ## Description
+
+    Access recipes, meal plans, and grocery lists from Paprika Recipe Manager. Use when user asks about recipes, meal planning,
+    or cooking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paprika
+
+    ```'
+examples:
+- description: Install Paprika from ClawHub
+  usage: clawhub install paprika
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: gaming
+title: Gaming
+version: 1.0.0
+description: Help users with game recommendations, stuck points, settings optimization, and healthy gaming habits.
+metadata:
+  author: ivangdavila
+  category: Health & Wellness
+  tags:
+  - health-wellness
+  - gaming
+  source: clawhub-community
+  clawhub_slug: gaming
+  clawhub_path: ivangdavila/gaming
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gaming
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install gaming
+
+    # Path: ivangdavila/gaming
+
+
+    ## Description
+
+    Help users with game recommendations, stuck points, settings optimization, and healthy gaming habits.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gaming
+
+    ```'
+examples:
+- description: Install Gaming from ClawHub
+  usage: clawhub install gaming
+schema_version: '1.0'

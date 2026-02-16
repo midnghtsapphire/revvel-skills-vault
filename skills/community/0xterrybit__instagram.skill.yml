@@ -1,0 +1,53 @@
+name: instagram
+title: Instagram
+version: 1.1.0
+description: Instagram platform integration. Post content, manage stories, view insights, and engage with followers.
+metadata:
+  author: 0xterrybit
+  category: Social Media
+  tags:
+  - social-media
+  - instagram
+  source: clawhub-community
+  clawhub_slug: instagram
+  clawhub_path: 0xterrybit/instagram
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Instagram
+
+    # Source: ClawHub community skill by 0xterrybit
+
+    # Install: clawhub install instagram
+
+    # Path: 0xterrybit/instagram
+
+
+    ## Description
+
+    Instagram platform integration. Post content, manage stories, view insights, and engage with followers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install instagram
+
+    ```'
+examples:
+- description: Install Instagram from ClawHub
+  usage: clawhub install instagram
+schema_version: '1.0'

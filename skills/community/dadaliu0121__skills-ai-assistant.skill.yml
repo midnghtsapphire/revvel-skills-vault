@@ -1,0 +1,58 @@
+name: conversation-summary
+title: skills-ai-assistant
+version: 1.0.1
+description: '"Previous summary for incremental update (optional)"'
+metadata:
+  author: dadaliu0121
+  category: General
+  tags:
+  - general
+  - conversation
+  - summary
+  source: clawhub-community
+  clawhub_slug: skills-ai-assistant
+  clawhub_path: dadaliu0121/skills-ai-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# skills-ai-assistant
+
+    # Source: ClawHub community skill by dadaliu0121
+
+    # Install: clawhub install skills-ai-assistant
+
+    # Path: dadaliu0121/skills-ai-assistant
+
+
+    ## Description
+
+    "Previous summary for incremental update (optional)"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/conversation_summary.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skills-ai-assistant
+
+    ```'
+examples:
+- description: Install skills-ai-assistant from ClawHub
+  usage: clawhub install skills-ai-assistant
+schema_version: '1.0'

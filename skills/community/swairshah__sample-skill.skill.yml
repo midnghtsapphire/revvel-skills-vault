@@ -1,0 +1,61 @@
+name: usdchackathon
+title: sample skill
+version: 1.0.0
+description: '"Use when participating in the USDC Hackathon, submitting projects, or voting. 3 tracks: SmartContract, Skill,
+  AgenticCommerce. Submit to m/usdc on Moltbook."'
+metadata:
+  author: swairshah
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - usdchackathon
+  source: clawhub-community
+  clawhub_slug: sample-skill
+  clawhub_path: swairshah/sample-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# sample skill
+
+    # Source: ClawHub community skill by swairshah
+
+    # Install: clawhub install sample-skill
+
+    # Path: swairshah/sample-skill
+
+
+    ## Description
+
+    "Use when participating in the USDC Hackathon, submitting projects, or voting. 3 tracks: SmartContract, Skill, AgenticCommerce.
+    Submit to m/usdc on Moltbook."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - tracks/COMMERCE.md
+
+    - tracks/CONTRACT.md
+
+    - tracks/SKILL.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sample-skill
+
+    ```'
+examples:
+- description: Install sample skill from ClawHub
+  usage: clawhub install sample-skill
+schema_version: '1.0'

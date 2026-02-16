@@ -1,0 +1,57 @@
+name: github-kb
+title: GitHub Knowledge Base
+version: 1.0.1
+description: Manage a local GitHub knowledge base and provide GitHub search capabilities via gh CLI. Use when users ask about
+  repos, PRs, issues, request to clone GitHub repositories, explore codebases, or need information about GitHub projects.
+  Supports searching GitHub via gh CLI and managing local KB with GIT
+metadata:
+  author: jameschan21
+  category: Search & Research
+  tags:
+  - search-research
+  - github
+  source: clawhub-community
+  clawhub_slug: github-kb
+  clawhub_path: jameschan21/github-kb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHub Knowledge Base
+
+    # Source: ClawHub community skill by jameschan21
+
+    # Install: clawhub install github-kb
+
+    # Path: jameschan21/github-kb
+
+
+    ## Description
+
+    Manage a local GitHub knowledge base and provide GitHub search capabilities via gh CLI. Use when users ask about repos,
+    PRs, issues, request to clone GitHub repositories, explore codebases, or need information about GitHub projects. Supports
+    searching GitHub via gh CLI and managing local KB with GIT
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install github-kb
+
+    ```'
+examples:
+- description: Install GitHub Knowledge Base from ClawHub
+  usage: clawhub install github-kb
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: visla
+title: Visla AI Video Creation
+version: 1.0.1
+description: Creates AI-generated videos from text scripts, URLs, or PPT/PDF documents using Visla. Use when the user asks
+  to generate a video, turn a webpage into a video, or convert a PPT/PDF into a video, or when the user asks to check Visla
+  account credits/balance.
+metadata:
+  author: visla-admin
+  category: Media & Content
+  tags:
+  - media-content
+  - visla
+  source: clawhub-community
+  clawhub_slug: visla
+  clawhub_path: visla-admin/visla
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Visla AI Video Creation
+
+    # Source: ClawHub community skill by visla-admin
+
+    # Install: clawhub install visla
+
+    # Path: visla-admin/visla
+
+
+    ## Description
+
+    Creates AI-generated videos from text scripts, URLs, or PPT/PDF documents using Visla. Use when the user asks to generate
+    a video, turn a webpage into a video, or convert a PPT/PDF into a video, or when the user asks to check Visla account
+    credits/balance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/visla_cli.py
+
+    - scripts/visla_cli.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install visla
+
+    ```'
+examples:
+- description: Install Visla AI Video Creation from ClawHub
+  usage: clawhub install visla
+schema_version: '1.0'

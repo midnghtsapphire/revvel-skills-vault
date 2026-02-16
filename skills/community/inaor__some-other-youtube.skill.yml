@@ -1,0 +1,58 @@
+name: some-other-youtube
+title: youtube copy of yt
+version: 1.0.0
+description: ''
+metadata:
+  author: inaor
+  category: Media & Content
+  tags:
+  - media-content
+  - some
+  - other
+  - youtube
+  source: clawhub-community
+  clawhub_slug: some-other-youtube
+  clawhub_path: inaor/some-other-youtube
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# youtube copy of yt
+
+    # Source: ClawHub community skill by inaor
+
+    # Install: clawhub install some-other-youtube
+
+    # Path: inaor/some-other-youtube
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch_transcript.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install some-other-youtube
+
+    ```'
+examples:
+- description: Install youtube copy of yt from ClawHub
+  usage: clawhub install some-other-youtube
+schema_version: '1.0'

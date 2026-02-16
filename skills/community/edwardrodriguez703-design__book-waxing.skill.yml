@@ -1,0 +1,56 @@
+name: book-waxing
+title: Book Waxing
+version: 1.0.1
+description: Book waxing services through Lokuli MCP. Use when user needs to find and book waxing. Triggers on requests like
+  "book a waxing", "find waxing near me", or any waxing service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - waxing
+  source: clawhub-community
+  clawhub_slug: book-waxing
+  clawhub_path: edwardrodriguez703-design/book-waxing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Waxing
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-waxing
+
+    # Path: edwardrodriguez703-design/book-waxing
+
+
+    ## Description
+
+    Book waxing services through Lokuli MCP. Use when user needs to find and book waxing. Triggers on requests like "book
+    a waxing", "find waxing near me", or any waxing service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-waxing
+
+    ```'
+examples:
+- description: Install Book Waxing from ClawHub
+  usage: clawhub install book-waxing
+schema_version: '1.0'

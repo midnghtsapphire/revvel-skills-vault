@@ -1,0 +1,63 @@
+name: backup-to-telnyx-storage
+title: Backup To Telnyx Storage
+version: 1.0.0
+description: Backup and restore your OpenClaw workspace to Telnyx Storage. Simple CLI-based scripts with no external dependencies.
+metadata:
+  author: dotcom-squad
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - backup
+  - telnyx
+  - storage
+  source: clawhub-community
+  clawhub_slug: telnyx-storage-backup
+  clawhub_path: dotcom-squad/telnyx-storage-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Backup To Telnyx Storage
+
+    # Source: ClawHub community skill by dotcom-squad
+
+    # Install: clawhub install telnyx-storage-backup
+
+    # Path: dotcom-squad/telnyx-storage-backup
+
+
+    ## Description
+
+    Backup and restore your OpenClaw workspace to Telnyx Storage. Simple CLI-based scripts with no external dependencies.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - backup.py
+
+    - backup.sh
+
+    - list.sh
+
+    - restore.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telnyx-storage-backup
+
+    ```'
+examples:
+- description: Install Backup To Telnyx Storage from ClawHub
+  usage: clawhub install telnyx-storage-backup
+schema_version: '1.0'

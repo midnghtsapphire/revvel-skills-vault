@@ -1,0 +1,66 @@
+name: refund-radar
+title: Refund Radar
+version: 1.0.1
+description: Scan bank statements to detect recurring charges, flag suspicious transactions, and draft refund requests with
+  interactive HTML reports.
+metadata:
+  author: andreolf
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - refund
+  - radar
+  source: clawhub-community
+  clawhub_slug: refund-radar
+  clawhub_path: andreolf/refund-radar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Refund Radar
+
+    # Source: ClawHub community skill by andreolf
+
+    # Install: clawhub install refund-radar
+
+    # Path: andreolf/refund-radar
+
+
+    ## Description
+
+    Scan bank statements to detect recurring charges, flag suspicious transactions, and draft refund requests with interactive
+    HTML reports.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - PUBLISH.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/template.html
+
+    - references/detection-rules.md
+
+    - references/refund-templates.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install refund-radar
+
+    ```'
+examples:
+- description: Install Refund Radar from ClawHub
+  usage: clawhub install refund-radar
+schema_version: '1.0'

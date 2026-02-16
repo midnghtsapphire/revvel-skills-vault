@@ -1,0 +1,68 @@
+name: image_editing
+title: Image Editing
+version: 1.0.0
+description: Edit images with AI inpainting, outpainting, background removal, upscaling, and restoration tools.
+metadata:
+  author: ivangdavila
+  category: Media & Content
+  tags:
+  - media-content
+  - image
+  - editing
+  source: clawhub-community
+  clawhub_slug: image-edit
+  clawhub_path: ivangdavila/image-edit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Image Editing
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install image-edit
+
+    # Path: ivangdavila/image-edit
+
+
+    ## Description
+
+    Edit images with AI inpainting, outpainting, background removal, upscaling, and restoration tools.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - background-removal.md
+
+    - inpainting.md
+
+    - outpainting.md
+
+    - restoration.md
+
+    - style-transfer.md
+
+    - tools.md
+
+    - upscaling.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install image-edit
+
+    ```'
+examples:
+- description: Install Image Editing from ClawHub
+  usage: clawhub install image-edit
+schema_version: '1.0'

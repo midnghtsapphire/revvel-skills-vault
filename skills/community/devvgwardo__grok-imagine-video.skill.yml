@@ -1,0 +1,67 @@
+name: grok-imagine-video
+title: Grok Imagine Video Generation
+version: 1.0.4
+description: xAI Grok Imagine API integration for image generation, text-to-video, image-to-video, and editing via natural
+  language. Use when you need to generate images or videos from text prompts, edit existing images, animate static images
+  into videos, or edit existing videos with natural language instruction
+metadata:
+  author: devvgwardo
+  category: Media & Content
+  tags:
+  - media-content
+  - grok
+  - imagine
+  - video
+  source: clawhub-community
+  clawhub_slug: grok-imagine-video
+  clawhub_path: devvgwardo/grok-imagine-video
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Grok Imagine Video Generation
+
+    # Source: ClawHub community skill by devvgwardo
+
+    # Install: clawhub install grok-imagine-video
+
+    # Path: devvgwardo/grok-imagine-video
+
+
+    ## Description
+
+    xAI Grok Imagine API integration for image generation, text-to-video, image-to-video, and editing via natural language.
+    Use when you need to generate images or videos from text prompts, edit existing images, animate static images into videos,
+    or edit existing videos with natural language instruction
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - scripts/grok_video_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install grok-imagine-video
+
+    ```'
+examples:
+- description: Install Grok Imagine Video Generation from ClawHub
+  usage: clawhub install grok-imagine-video
+schema_version: '1.0'

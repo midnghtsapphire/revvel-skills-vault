@@ -1,0 +1,57 @@
+name: create-hat-collection
+title: Create Hat Collection
+version: 0.1.0
+description: Generates new Ralph hat collection presets through guided conversation. Asks clarifying questions, validates
+  against schema constraints, and outputs production-ready YAML files.
+metadata:
+  author: paulpete
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - create
+  - hat
+  - collection
+  source: clawhub-community
+  clawhub_slug: create-hat-collection
+  clawhub_path: paulpete/create-hat-collection
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Create Hat Collection
+
+    # Source: ClawHub community skill by paulpete
+
+    # Install: clawhub install create-hat-collection
+
+    # Path: paulpete/create-hat-collection
+
+
+    ## Description
+
+    Generates new Ralph hat collection presets through guided conversation. Asks clarifying questions, validates against schema
+    constraints, and outputs production-ready YAML files.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install create-hat-collection
+
+    ```'
+examples:
+- description: Install Create Hat Collection from ClawHub
+  usage: clawhub install create-hat-collection
+schema_version: '1.0'

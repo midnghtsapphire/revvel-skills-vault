@@ -1,0 +1,56 @@
+name: devlog-skill
+title: Crimson DevLog
+version: 1.0.0
+description: A standardized journaling skill for OpenClaw agents to track progress, tasks, and project status using dev-log-cli.
+metadata:
+  author: crimsondevil333333
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - devlog
+  - skill
+  source: clawhub-community
+  clawhub_slug: crimson-devlog-agent
+  clawhub_path: crimsondevil333333/crimson-devlog-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crimson DevLog
+
+    # Source: ClawHub community skill by crimsondevil333333
+
+    # Install: clawhub install crimson-devlog-agent
+
+    # Path: crimsondevil333333/crimson-devlog-agent
+
+
+    ## Description
+
+    A standardized journaling skill for OpenClaw agents to track progress, tasks, and project status using dev-log-cli.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crimson-devlog-agent
+
+    ```'
+examples:
+- description: Install Crimson DevLog from ClawHub
+  usage: clawhub install crimson-devlog-agent
+schema_version: '1.0'

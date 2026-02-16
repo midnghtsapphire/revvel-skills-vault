@@ -1,0 +1,53 @@
+name: projects
+title: Projects
+version: 1.0.0
+description: Build a personal project management system that scales from simple lists to structured planning.
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - projects
+  source: clawhub-community
+  clawhub_slug: projects
+  clawhub_path: ivangdavila/projects
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Projects
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install projects
+
+    # Path: ivangdavila/projects
+
+
+    ## Description
+
+    Build a personal project management system that scales from simple lists to structured planning.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install projects
+
+    ```'
+examples:
+- description: Install Projects from ClawHub
+  usage: clawhub install projects
+schema_version: '1.0'

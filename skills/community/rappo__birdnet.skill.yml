@@ -1,0 +1,55 @@
+name: birdnet
+title: Birdnet
+version: 1.0.0
+description: Query BirdNET-Go bird detections. View recent birds, search by species, get detection details.
+metadata:
+  author: rappo
+  category: Search & Research
+  tags:
+  - search-research
+  - birdnet
+  source: clawhub-community
+  clawhub_slug: birdnet
+  clawhub_path: rappo/birdnet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Birdnet
+
+    # Source: ClawHub community skill by rappo
+
+    # Install: clawhub install birdnet
+
+    # Path: rappo/birdnet
+
+
+    ## Description
+
+    Query BirdNET-Go bird detections. View recent birds, search by species, get detection details.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/birdnet.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install birdnet
+
+    ```'
+examples:
+- description: Install Birdnet from ClawHub
+  usage: clawhub install birdnet
+schema_version: '1.0'

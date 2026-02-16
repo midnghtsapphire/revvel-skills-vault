@@ -1,0 +1,61 @@
+name: k8s-security-policies
+title: K8s Security Policies
+version: 1.0.0
+description: Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBAC for production-grade
+  security. Use when securing Kubernetes clusters, implementing network isolation, or enforcing pod security standards.
+metadata:
+  author: anton-abyzov
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - k8s
+  - security
+  - policies
+  source: clawhub-community
+  clawhub_slug: sw-k8s-security-policies
+  clawhub_path: anton-abyzov/sw-k8s-security-policies
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# K8s Security Policies
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-k8s-security-policies
+
+    # Path: anton-abyzov/sw-k8s-security-policies
+
+
+    ## Description
+
+    Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBAC for production-grade security.
+    Use when securing Kubernetes clusters, implementing network isolation, or enforcing pod security standards.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/network-policy-template.yaml
+
+    - references/rbac-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-k8s-security-policies
+
+    ```'
+examples:
+- description: Install K8s Security Policies from ClawHub
+  usage: clawhub install sw-k8s-security-policies
+schema_version: '1.0'

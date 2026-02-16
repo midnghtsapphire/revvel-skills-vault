@@ -1,0 +1,55 @@
+name: supabase-rls-gen
+title: Supabase Schema Generator
+version: 1.0.2
+description: Generate Supabase RLS policies from Prisma schema. Use when securing database.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - supabase
+  - rls
+  - gen
+  source: clawhub-community
+  clawhub_slug: supabase-schema-gen
+  clawhub_path: lxgicstudios/supabase-schema-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Supabase Schema Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install supabase-schema-gen
+
+    # Path: lxgicstudios/supabase-schema-gen
+
+
+    ## Description
+
+    Generate Supabase RLS policies from Prisma schema. Use when securing database.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install supabase-schema-gen
+
+    ```'
+examples:
+- description: Install Supabase Schema Generator from ClawHub
+  usage: clawhub install supabase-schema-gen
+schema_version: '1.0'

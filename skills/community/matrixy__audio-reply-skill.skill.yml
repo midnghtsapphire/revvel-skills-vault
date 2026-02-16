@@ -1,0 +1,56 @@
+name: audio-reply
+title: Audio Reply
+version: 0.1.0
+description: '''Generate audio replies using TTS. Trigger with "read it to me [URL]" to fetch and read content aloud, or "talk
+  to me [topic]" to generate a spoken response. Also responds to "speak", "say it", "voice reply".'''
+metadata:
+  author: matrixy
+  category: Media & Content
+  tags:
+  - media-content
+  - audio
+  - reply
+  source: clawhub-community
+  clawhub_slug: audio-reply-skill
+  clawhub_path: matrixy/audio-reply-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Audio Reply
+
+    # Source: ClawHub community skill by matrixy
+
+    # Install: clawhub install audio-reply-skill
+
+    # Path: matrixy/audio-reply-skill
+
+
+    ## Description
+
+    ''Generate audio replies using TTS. Trigger with "read it to me [URL]" to fetch and read content aloud, or "talk to me
+    [topic]" to generate a spoken response. Also responds to "speak", "say it", "voice reply".''
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install audio-reply-skill
+
+    ```'
+examples:
+- description: Install Audio Reply from ClawHub
+  usage: clawhub install audio-reply-skill
+schema_version: '1.0'

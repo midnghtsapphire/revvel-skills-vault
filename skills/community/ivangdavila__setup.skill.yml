@@ -1,0 +1,69 @@
+name: setup
+title: Setup
+version: 1.0.0
+description: Configure OpenClaw installations with optimized settings, channel setup, security hardening, and production recommendations.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - setup
+  source: clawhub-community
+  clawhub_slug: setup
+  clawhub_path: ivangdavila/setup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Setup
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install setup
+
+    # Path: ivangdavila/setup
+
+
+    ## Description
+
+    Configure OpenClaw installations with optimized settings, channel setup, security hardening, and production recommendations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents.md
+
+    - automation.md
+
+    - channels.md
+
+    - gateway.md
+
+    - memory.md
+
+    - recommendations.md
+
+    - security.md
+
+    - tools.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install setup
+
+    ```'
+examples:
+- description: Install Setup from ClawHub
+  usage: clawhub install setup
+schema_version: '1.0'

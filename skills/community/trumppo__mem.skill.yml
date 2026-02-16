@@ -1,0 +1,55 @@
+name: mem
+title: mem
+version: 0.1.0
+description: Search local memory index (local-first). Use for /mem queries in Telegram.
+metadata:
+  author: trumppo
+  category: Search & Research
+  tags:
+  - search-research
+  - mem
+  source: clawhub-community
+  clawhub_slug: mem
+  clawhub_path: trumppo/mem
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# mem
+
+    # Source: ClawHub community skill by trumppo
+
+    # Install: clawhub install mem
+
+    # Path: trumppo/mem
+
+
+    ## Description
+
+    Search local memory index (local-first). Use for /mem queries in Telegram.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mem
+
+    ```'
+examples:
+- description: Install mem from ClawHub
+  usage: clawhub install mem
+schema_version: '1.0'

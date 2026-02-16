@@ -1,0 +1,61 @@
+name: smart-image-loader
+title: smart-image-loader
+version: 1.0.0
+description: Smart image loader that handles both URLs and local files, automatically downloads URLs to temporary locations,
+  and displays images using the read tool. Use when a user wants to view or display an image, whether it's a web URL or a
+  file in the workspace.
+metadata:
+  author: tingwei1123
+  category: Media & Content
+  tags:
+  - media-content
+  - smart
+  - image
+  - loader
+  source: clawhub-community
+  clawhub_slug: smart-image-loader
+  clawhub_path: tingwei1123/smart-image-loader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# smart-image-loader
+
+    # Source: ClawHub community skill by tingwei1123
+
+    # Install: clawhub install smart-image-loader
+
+    # Path: tingwei1123/smart-image-loader
+
+
+    ## Description
+
+    Smart image loader that handles both URLs and local files, automatically downloads URLs to temporary locations, and displays
+    images using the read tool. Use when a user wants to view or display an image, whether it''s a web URL or a file in the
+    workspace.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/smart_image_loader.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install smart-image-loader
+
+    ```'
+examples:
+- description: Install smart-image-loader from ClawHub
+  usage: clawhub install smart-image-loader
+schema_version: '1.0'

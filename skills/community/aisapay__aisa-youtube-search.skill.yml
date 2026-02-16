@@ -1,0 +1,59 @@
+name: openclaw-youtube
+title: AIsa Youtube Search
+version: 1.0.0
+description: '"YouTube SERP Scout for agents. Search top-ranking videos, channels, and trends for content research and competitor
+  tracking."'
+metadata:
+  author: aisapay
+  category: Search & Research
+  tags:
+  - search-research
+  - openclaw
+  - youtube
+  source: clawhub-community
+  clawhub_slug: aisa-youtube-search
+  clawhub_path: aisapay/aisa-youtube-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AIsa Youtube Search
+
+    # Source: ClawHub community skill by aisapay
+
+    # Install: clawhub install aisa-youtube-search
+
+    # Path: aisapay/aisa-youtube-search
+
+
+    ## Description
+
+    "YouTube SERP Scout for agents. Search top-ranking videos, channels, and trends for content research and competitor tracking."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/youtube_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aisa-youtube-search
+
+    ```'
+examples:
+- description: Install AIsa Youtube Search from ClawHub
+  usage: clawhub install aisa-youtube-search
+schema_version: '1.0'

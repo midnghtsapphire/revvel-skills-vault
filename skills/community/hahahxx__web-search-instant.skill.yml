@@ -1,0 +1,74 @@
+name: web-search
+title: Web Search Instant
+version: 1.1.0
+description: Web search using DuckDuckGo Instant Answer API (no API key required). Use when you need to search the web for
+  information, definitions, calculations, conversions, or quick facts. Also use when user mentions "search", "look up", "find
+  information", "what is", "how to", or "google something". The skil
+metadata:
+  author: hahahxx
+  category: Search & Research
+  tags:
+  - search-research
+  - web
+  - search
+  source: clawhub-community
+  clawhub_slug: web-search-instant
+  clawhub_path: hahahxx/web-search-instant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Web Search Instant
+
+    # Source: ClawHub community skill by hahahxx
+
+    # Install: clawhub install web-search-instant
+
+    # Path: hahahxx/web-search-instant
+
+
+    ## Description
+
+    Web search using DuckDuckGo Instant Answer API (no API key required). Use when you need to search the web for information,
+    definitions, calculations, conversions, or quick facts. Also use when user mentions "search", "look up", "find information",
+    "what is", "how to", or "google something". The skil
+
+
+    ## Files
+
+    - CHANGELOG-v1.1.0.md
+
+    - README.md
+
+    - SKILL.md
+
+    - TEST-SUMMARY.md
+
+    - _meta.json
+
+    - performance-test.sh
+
+    - test-cases.sh
+
+    - test-new-features.sh
+
+    - test-output.md
+
+    - test-outputs.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install web-search-instant
+
+    ```'
+examples:
+- description: Install Web Search Instant from ClawHub
+  usage: clawhub install web-search-instant
+schema_version: '1.0'

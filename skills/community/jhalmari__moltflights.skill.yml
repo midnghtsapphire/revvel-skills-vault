@@ -1,0 +1,53 @@
+name: moltflights
+title: MoltFlights
+version: 1.0.1
+description: '"City or airport name to search (min 2 characters)"'
+metadata:
+  author: jhalmari
+  category: Search & Research
+  tags:
+  - search-research
+  - moltflights
+  source: clawhub-community
+  clawhub_slug: moltflights
+  clawhub_path: jhalmari/moltflights
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MoltFlights
+
+    # Source: ClawHub community skill by jhalmari
+
+    # Install: clawhub install moltflights
+
+    # Path: jhalmari/moltflights
+
+
+    ## Description
+
+    "City or airport name to search (min 2 characters)"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltflights
+
+    ```'
+examples:
+- description: Install MoltFlights from ClawHub
+  usage: clawhub install moltflights
+schema_version: '1.0'

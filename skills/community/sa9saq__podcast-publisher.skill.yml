@@ -1,0 +1,54 @@
+name: podcast-publisher
+title: Podcast Publisher
+version: 1.1.0
+description: Generate valid podcast RSS 2.0 feeds with iTunes extensions for Apple Podcasts, Spotify, and more.
+metadata:
+  author: sa9saq
+  category: Media & Content
+  tags:
+  - media-content
+  - podcast
+  - publisher
+  source: clawhub-community
+  clawhub_slug: podcast-publisher
+  clawhub_path: sa9saq/podcast-publisher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Podcast Publisher
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install podcast-publisher
+
+    # Path: sa9saq/podcast-publisher
+
+
+    ## Description
+
+    Generate valid podcast RSS 2.0 feeds with iTunes extensions for Apple Podcasts, Spotify, and more.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install podcast-publisher
+
+    ```'
+examples:
+- description: Install Podcast Publisher from ClawHub
+  usage: clawhub install podcast-publisher
+schema_version: '1.0'

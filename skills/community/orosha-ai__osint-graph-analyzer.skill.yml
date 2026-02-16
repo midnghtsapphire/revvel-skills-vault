@@ -1,0 +1,62 @@
+name: osint-graph-analyzer
+title: Osint Graph Analyzer
+version: 0.1.0
+description: ''
+metadata:
+  author: orosha-ai
+  category: General
+  tags:
+  - general
+  - osint
+  - graph
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: osint-graph-analyzer
+  clawhub_path: orosha-ai/osint-graph-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Osint Graph Analyzer
+
+    # Source: ClawHub community skill by orosha-ai
+
+    # Install: clawhub install osint-graph-analyzer
+
+    # Path: orosha-ai/osint-graph-analyzer
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/edges.csv
+
+    - data/nodes.csv
+
+    - scripts/osint-graph.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install osint-graph-analyzer
+
+    ```'
+examples:
+- description: Install Osint Graph Analyzer from ClawHub
+  usage: clawhub install osint-graph-analyzer
+schema_version: '1.0'

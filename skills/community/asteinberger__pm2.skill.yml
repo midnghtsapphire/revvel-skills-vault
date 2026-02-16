@@ -1,0 +1,55 @@
+name: pm2
+title: PM2 Process Manager
+version: 1.0.0
+description: Manage Node.js applications with PM2 process manager. Use for deploying, monitoring, and auto-restarting Node
+  apps in production. Covers starting apps, viewing logs, setting up auto-start on boot, and managing multiple processes.
+metadata:
+  author: asteinberger
+  category: Development & Coding
+  tags:
+  - development-coding
+  - pm2
+  source: clawhub-community
+  clawhub_slug: pm2
+  clawhub_path: asteinberger/pm2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PM2 Process Manager
+
+    # Source: ClawHub community skill by asteinberger
+
+    # Install: clawhub install pm2
+
+    # Path: asteinberger/pm2
+
+
+    ## Description
+
+    Manage Node.js applications with PM2 process manager. Use for deploying, monitoring, and auto-restarting Node apps in
+    production. Covers starting apps, viewing logs, setting up auto-start on boot, and managing multiple processes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pm2
+
+    ```'
+examples:
+- description: Install PM2 Process Manager from ClawHub
+  usage: clawhub install pm2
+schema_version: '1.0'

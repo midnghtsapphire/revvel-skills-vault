@@ -1,0 +1,53 @@
+name: startups
+title: Startups
+version: 1.0.0
+description: Research startups, funding rounds, acquisitions, and hiring trends via startups.in
+metadata:
+  author: networkingit
+  category: Search & Research
+  tags:
+  - search-research
+  - startups
+  source: clawhub-community
+  clawhub_slug: startups
+  clawhub_path: networkingit/startups
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Startups
+
+    # Source: ClawHub community skill by networkingit
+
+    # Install: clawhub install startups
+
+    # Path: networkingit/startups
+
+
+    ## Description
+
+    Research startups, funding rounds, acquisitions, and hiring trends via startups.in
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install startups
+
+    ```'
+examples:
+- description: Install Startups from ClawHub
+  usage: clawhub install startups
+schema_version: '1.0'

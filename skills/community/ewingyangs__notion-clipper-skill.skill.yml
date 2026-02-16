@@ -1,0 +1,75 @@
+name: notion-clipper-skill
+title: notion-clipper-skill
+version: 1.0.0
+description: Clip web pages to Notion. Fetches any URL via Chrome CDP, converts HTML to Markdown, then to Notion blocks, and
+  saves to user-specified Notion database or page. Use when user wants to save/clip a webpage to Notion, or mentions "clip
+  to notion", "save page to notion", "网页剪藏到Notion".
+metadata:
+  author: ewingyangs
+  category: Development & Coding
+  tags:
+  - development-coding
+  - notion
+  - clipper
+  - skill
+  source: clawhub-community
+  clawhub_slug: notion-clipper-skill
+  clawhub_path: ewingyangs/notion-clipper-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# notion-clipper-skill
+
+    # Source: ClawHub community skill by ewingyangs
+
+    # Install: clawhub install notion-clipper-skill
+
+    # Path: ewingyangs/notion-clipper-skill
+
+
+    ## Description
+
+    Clip web pages to Notion. Fetches any URL via Chrome CDP, converts HTML to Markdown, then to Notion blocks, and saves
+    to user-specified Notion database or page. Use when user wants to save/clip a webpage to Notion, or mentions "clip to
+    notion", "save page to notion", "网页剪藏到Notion".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cdp.ts
+
+    - scripts/constants.ts
+
+    - scripts/html-to-markdown.ts
+
+    - scripts/main.ts
+
+    - scripts/markdown-to-notion.ts
+
+    - scripts/notion-api.ts
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notion-clipper-skill
+
+    ```'
+examples:
+- description: Install notion-clipper-skill from ClawHub
+  usage: clawhub install notion-clipper-skill
+schema_version: '1.0'

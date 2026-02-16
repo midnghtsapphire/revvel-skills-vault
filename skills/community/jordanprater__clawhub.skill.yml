@@ -1,0 +1,53 @@
+name: clawhub
+title: clawhub
+version: 1.0.0
+description: clawhub
+metadata:
+  author: jordanprater
+  category: General
+  tags:
+  - general
+  - clawhub
+  source: clawhub-community
+  clawhub_slug: clawhub
+  clawhub_path: jordanprater/clawhub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawhub
+
+    # Source: ClawHub community skill by jordanprater
+
+    # Install: clawhub install clawhub
+
+    # Path: jordanprater/clawhub
+
+
+    ## Description
+
+    clawhub
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawhub
+
+    ```'
+examples:
+- description: Install clawhub from ClawHub
+  usage: clawhub install clawhub
+schema_version: '1.0'

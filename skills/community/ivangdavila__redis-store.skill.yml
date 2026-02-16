@@ -1,0 +1,53 @@
+name: redis
+title: Redis
+version: 1.0.0
+description: Use Redis effectively for caching, queues, and data structures with proper expiration and persistence.
+metadata:
+  author: ivangdavila
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - redis
+  source: clawhub-community
+  clawhub_slug: redis-store
+  clawhub_path: ivangdavila/redis-store
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Redis
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install redis-store
+
+    # Path: ivangdavila/redis-store
+
+
+    ## Description
+
+    Use Redis effectively for caching, queues, and data structures with proper expiration and persistence.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install redis-store
+
+    ```'
+examples:
+- description: Install Redis from ClawHub
+  usage: clawhub install redis-store
+schema_version: '1.0'

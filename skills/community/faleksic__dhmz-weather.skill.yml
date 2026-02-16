@@ -1,0 +1,56 @@
+name: dhmz-weather
+title: DHMZ Weather
+version: 1.0.0
+description: Get Croatian weather data, forecasts, and alerts from DHMZ (meteo.hr) - no API key required.
+metadata:
+  author: faleksic
+  category: Development & Coding
+  tags:
+  - development-coding
+  - dhmz
+  - weather
+  source: clawhub-community
+  clawhub_slug: dhmz-weather
+  clawhub_path: faleksic/dhmz-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DHMZ Weather
+
+    # Source: ClawHub community skill by faleksic
+
+    # Install: clawhub install dhmz-weather
+
+    # Path: faleksic/dhmz-weather
+
+
+    ## Description
+
+    Get Croatian weather data, forecasts, and alerts from DHMZ (meteo.hr) - no API key required.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dhmz-weather
+
+    ```'
+examples:
+- description: Install DHMZ Weather from ClawHub
+  usage: clawhub install dhmz-weather
+schema_version: '1.0'

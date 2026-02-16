@@ -1,0 +1,55 @@
+name: ______
+title: 视频链接解析
+version: 1.0.0
+description: 解析视频分享链接，获取无水印视频下载地址。当用户想要下载视频、解析抖音/快手/小红书/B站链接、获取无水印视频时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - 视频链接解析
+  source: clawhub-community
+  clawhub_slug: parse-video
+  clawhub_path: hexiaochun/parse-video
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 视频链接解析
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install parse-video
+
+    # Path: hexiaochun/parse-video
+
+
+    ## Description
+
+    解析视频分享链接，获取无水印视频下载地址。当用户想要下载视频、解析抖音/快手/小红书/B站链接、获取无水印视频时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/download.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install parse-video
+
+    ```'
+examples:
+- description: Install 视频链接解析 from ClawHub
+  usage: clawhub install parse-video
+schema_version: '1.0'

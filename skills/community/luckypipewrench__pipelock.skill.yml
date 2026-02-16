@@ -1,0 +1,53 @@
+name: pipelock
+title: Pipelock Security Harness
+version: 0.1.4
+description: Secure agent HTTP requests through a scanning proxy that catches credential leaks, SSRF, and prompt injection
+metadata:
+  author: luckypipewrench
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - pipelock
+  source: clawhub-community
+  clawhub_slug: pipelock
+  clawhub_path: luckypipewrench/pipelock
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pipelock Security Harness
+
+    # Source: ClawHub community skill by luckypipewrench
+
+    # Install: clawhub install pipelock
+
+    # Path: luckypipewrench/pipelock
+
+
+    ## Description
+
+    Secure agent HTTP requests through a scanning proxy that catches credential leaks, SSRF, and prompt injection
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pipelock
+
+    ```'
+examples:
+- description: Install Pipelock Security Harness from ClawHub
+  usage: clawhub install pipelock
+schema_version: '1.0'

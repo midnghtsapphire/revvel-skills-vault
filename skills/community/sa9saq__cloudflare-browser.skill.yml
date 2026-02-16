@@ -1,0 +1,62 @@
+name: cloudflare-browser
+title: cloudflare-browser
+version: 1.0.2
+description: Control headless Chrome via Cloudflare Browser Rendering HTTP API. Use for screenshots, page navigation, form
+  filling, and browser automation in Cloudflare Workers environment.
+metadata:
+  author: sa9saq
+  category: Search & Research
+  tags:
+  - search-research
+  - cloudflare
+  - browser
+  source: clawhub-community
+  clawhub_slug: cloudflare-browser
+  clawhub_path: sa9saq/cloudflare-browser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# cloudflare-browser
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install cloudflare-browser
+
+    # Path: sa9saq/cloudflare-browser
+
+
+    ## Description
+
+    Control headless Chrome via Cloudflare Browser Rendering HTTP API. Use for screenshots, page navigation, form filling,
+    and browser automation in Cloudflare Workers environment.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cdp-client.js
+
+    - scripts/screenshot.js
+
+    - scripts/video.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cloudflare-browser
+
+    ```'
+examples:
+- description: Install cloudflare-browser from ClawHub
+  usage: clawhub install cloudflare-browser
+schema_version: '1.0'

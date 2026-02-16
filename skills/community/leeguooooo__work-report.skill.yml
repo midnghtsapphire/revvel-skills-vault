@@ -1,0 +1,60 @@
+name: work-report
+title: Weekly / Daily work report
+version: 1.0.0
+description: Write a daily or weekly work report using git commits. Use when the user asks to write or send a daily report/standup
+  or weekly report, especially "日报", "发日报", "周报", "发周报", "daily report", "weekly report", or "work report".
+metadata:
+  author: leeguooooo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - work
+  - report
+  source: clawhub-community
+  clawhub_slug: work-report
+  clawhub_path: leeguooooo/work-report
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Weekly / Daily work report
+
+    # Source: ClawHub community skill by leeguooooo
+
+    # Install: clawhub install work-report
+
+    # Path: leeguooooo/work-report
+
+
+    ## Description
+
+    Write a daily or weekly work report using git commits. Use when the user asks to write or send a daily report/standup
+    or weekly report, especially "日报", "发日报", "周报", "发周报", "daily report", "weekly report", or "work report".
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/git_today_commits.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install work-report
+
+    ```'
+examples:
+- description: Install Weekly / Daily work report from ClawHub
+  usage: clawhub install work-report
+schema_version: '1.0'

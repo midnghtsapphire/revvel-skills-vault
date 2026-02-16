@@ -1,0 +1,64 @@
+name: anova-oven
+title: Anova Oven
+version: 0.1.0
+description: Control Anova Precision Ovens and Precision Cookers (sous vide) via WiFi WebSocket API. Start cooking modes (sous
+  vide, roasting, steam), set temperatures, monitor status, and stop cooking remotely.
+metadata:
+  author: dodeja
+  category: Development & Coding
+  tags:
+  - development-coding
+  - anova
+  - oven
+  source: clawhub-community
+  clawhub_slug: anova-skill
+  clawhub_path: dodeja/anova-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Anova Oven
+
+    # Source: ClawHub community skill by dodeja
+
+    # Install: clawhub install anova-skill
+
+    # Path: dodeja/anova-skill
+
+
+    ## Description
+
+    Control Anova Precision Ovens and Precision Cookers (sous vide) via WiFi WebSocket API. Start cooking modes (sous vide,
+    roasting, steam), set temperatures, monitor status, and stop cooking remotely.
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/anova.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install anova-skill
+
+    ```'
+examples:
+- description: Install Anova Oven from ClawHub
+  usage: clawhub install anova-skill
+schema_version: '1.0'

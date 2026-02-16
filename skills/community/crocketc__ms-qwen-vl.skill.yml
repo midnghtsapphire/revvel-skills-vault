@@ -1,0 +1,63 @@
+name: ms-qwen-vl
+title: Ms Qwen Vl
+version: 0.1.0
+description: 调用魔搭社区（ModelScope）Qwen3-VL 多模态 API 进行视觉解析。使用 OpenAI SDK 兼容方式调用，支持图片内容描述、OCR 文字提取、视觉问答、对象检测等功能。用户提到"魔搭"、"ModelScope"、"Qwen-VL"、"多模态视觉"、"解析图片"等关键词时应触发。
+metadata:
+  author: crocketc
+  category: Development & Coding
+  tags:
+  - development-coding
+  - qwen
+  source: clawhub-community
+  clawhub_slug: ms-qwen-vl
+  clawhub_path: crocketc/ms-qwen-vl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ms Qwen Vl
+
+    # Source: ClawHub community skill by crocketc
+
+    # Install: clawhub install ms-qwen-vl
+
+    # Path: crocketc/ms-qwen-vl
+
+
+    ## Description
+
+    调用魔搭社区（ModelScope）Qwen3-VL 多模态 API 进行视觉解析。使用 OpenAI SDK 兼容方式调用，支持图片内容描述、OCR 文字提取、视觉问答、对象检测等功能。用户提到"魔搭"、"ModelScope"、"Qwen-VL"、"多模态视觉"、"解析图片"等关键词时应触发。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/api-guide.md
+
+    - references/models.md
+
+    - scripts/ms_qwen_vl.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ms-qwen-vl
+
+    ```'
+examples:
+- description: Install Ms Qwen Vl from ClawHub
+  usage: clawhub install ms-qwen-vl
+schema_version: '1.0'

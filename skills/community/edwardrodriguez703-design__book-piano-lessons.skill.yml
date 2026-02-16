@@ -1,0 +1,57 @@
+name: book-piano-lessons
+title: Book Piano Lessons
+version: 1.0.1
+description: Book piano-lessons services through Lokuli MCP. Use when user needs to find and book piano-lessons. Triggers
+  on requests like "book a piano-lessons", "find piano-lessons near me", or any piano-lessons service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - piano
+  - lessons
+  source: clawhub-community
+  clawhub_slug: book-piano-lessons
+  clawhub_path: edwardrodriguez703-design/book-piano-lessons
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Piano Lessons
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-piano-lessons
+
+    # Path: edwardrodriguez703-design/book-piano-lessons
+
+
+    ## Description
+
+    Book piano-lessons services through Lokuli MCP. Use when user needs to find and book piano-lessons. Triggers on requests
+    like "book a piano-lessons", "find piano-lessons near me", or any piano-lessons service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-piano-lessons
+
+    ```'
+examples:
+- description: Install Book Piano Lessons from ClawHub
+  usage: clawhub install book-piano-lessons
+schema_version: '1.0'

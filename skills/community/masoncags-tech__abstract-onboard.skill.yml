@@ -1,0 +1,74 @@
+name: abstract-onboard
+title: Abstract Onboard
+version: 1.6.0
+description: Deploy smart contracts and bridge assets to Abstract (ZK Stack L2). Use when an agent needs to deploy contracts
+  on Abstract, bridge ETH/tokens to Abstract, trade/swap tokens, place predictions on Myriad Markets, check balances, transfer
+  assets, or interact with Abstract mainnet. Covers zksolc compil
+metadata:
+  author: masoncags-tech
+  category: Development & Coding
+  tags:
+  - development-coding
+  - abstract
+  - onboard
+  source: clawhub-community
+  clawhub_slug: abstract-onboard
+  clawhub_path: masoncags-tech/abstract-onboard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Abstract Onboard
+
+    # Source: ClawHub community skill by masoncags-tech
+
+    # Install: clawhub install abstract-onboard
+
+    # Path: masoncags-tech/abstract-onboard
+
+
+    ## Description
+
+    Deploy smart contracts and bridge assets to Abstract (ZK Stack L2). Use when an agent needs to deploy contracts on Abstract,
+    bridge ETH/tokens to Abstract, trade/swap tokens, place predictions on Myriad Markets, check balances, transfer assets,
+    or interact with Abstract mainnet. Covers zksolc compil
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/addresses.md
+
+    - references/agw.md
+
+    - references/dex.md
+
+    - references/hardhat.config.js
+
+    - references/myriad.md
+
+    - references/troubleshooting.md
+
+    - scripts/aborean-quote.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install abstract-onboard
+
+    ```'
+examples:
+- description: Install Abstract Onboard from ClawHub
+  usage: clawhub install abstract-onboard
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: no-nonsense-tasks
+title: Tasks Skill
+version: 1.1.0
+description: No-nonsense task manager using SQLite. Track tasks with statuses (backlog, todo, in-progress, done), descriptions,
+  and tags. Use when managing personal tasks, to-do items, project tracking, or any workflow that needs status-based task
+  organization. Supports adding, listing, filtering, updating, movi
+metadata:
+  author: dvjn
+  category: Development & Coding
+  tags:
+  - development-coding
+  - nonsense
+  - tasks
+  source: clawhub-community
+  clawhub_slug: no-nonsense-tasks
+  clawhub_path: dvjn/no-nonsense-tasks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tasks Skill
+
+    # Source: ClawHub community skill by dvjn
+
+    # Install: clawhub install no-nonsense-tasks
+
+    # Path: dvjn/no-nonsense-tasks
+
+
+    ## Description
+
+    No-nonsense task manager using SQLite. Track tasks with statuses (backlog, todo, in-progress, done), descriptions, and
+    tags. Use when managing personal tasks, to-do items, project tracking, or any workflow that needs status-based task organization.
+    Supports adding, listing, filtering, updating, movi
+
+
+    ## Files
+
+    - AGENT.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - mise.toml
+
+    - migrations/001_initial_schema.sql
+
+    - scripts/init_db.sh
+
+    - scripts/lib.sh
+
+    - scripts/task_add.sh
+
+    - scripts/task_delete.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install no-nonsense-tasks
+
+    ```'
+examples:
+- description: Install Tasks Skill from ClawHub
+  usage: clawhub install no-nonsense-tasks
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: gemini-yt-video-transcript
+title: Gemini Yt Video Transcript
+version: 1.0.4
+description: '"Create a verbatim transcript for a YouTube URL using Google Gemini (speaker labels, paragraph breaks; no time
+  codes). Use when the user asks to transcribe a YouTube video or wants a clean transcript (no timestamps)."'
+metadata:
+  author: odrobnik
+  category: Search & Research
+  tags:
+  - search-research
+  - gemini
+  - video
+  - transcript
+  source: clawhub-community
+  clawhub_slug: gemini-yt-video-transcript
+  clawhub_path: odrobnik/gemini-yt-video-transcript
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gemini Yt Video Transcript
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install gemini-yt-video-transcript
+
+    # Path: odrobnik/gemini-yt-video-transcript
+
+
+    ## Description
+
+    "Create a verbatim transcript for a YouTube URL using Google Gemini (speaker labels, paragraph breaks; no time codes).
+    Use when the user asks to transcribe a YouTube video or wants a clean transcript (no timestamps)."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/youtube_transcript.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gemini-yt-video-transcript
+
+    ```'
+examples:
+- description: Install Gemini Yt Video Transcript from ClawHub
+  usage: clawhub install gemini-yt-video-transcript
+schema_version: '1.0'

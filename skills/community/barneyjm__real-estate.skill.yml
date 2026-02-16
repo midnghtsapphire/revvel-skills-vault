@@ -1,0 +1,58 @@
+name: real-estate
+title: Real Estate
+version: 2.0.0
+description: '"Evaluate any address for home buyers and renters. Get nearby schools, transit, grocery stores, parks, restaurants,
+  and walkability using Camino AI''s location intelligence."'
+metadata:
+  author: barneyjm
+  category: General
+  tags:
+  - general
+  - real
+  - estate
+  source: clawhub-community
+  clawhub_slug: real-estate
+  clawhub_path: barneyjm/real-estate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Real Estate
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install real-estate
+
+    # Path: barneyjm/real-estate
+
+
+    ## Description
+
+    "Evaluate any address for home buyers and renters. Get nearby schools, transit, grocery stores, parks, restaurants, and
+    walkability using Camino AI''s location intelligence."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/real-estate.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install real-estate
+
+    ```'
+examples:
+- description: Install Real Estate from ClawHub
+  usage: clawhub install real-estate
+schema_version: '1.0'

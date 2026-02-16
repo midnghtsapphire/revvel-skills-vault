@@ -1,0 +1,37 @@
+name: multi-channel-engagement-agent
+title: Multi-Channel Engagement Agent
+version: 1.0.3
+description: 'Autonomous social media engagement across Twitter, Farcaster, and Moltbook. Fetches trending content, generates
+  persona-driven contextual replies, and tracks state to prevent duplicates. Use when you want to engage with trending posts,
+  reply to social media content, build audience through authentic '
+metadata:
+  author: story91
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - multi
+  - channel
+  - engagement
+  - agent
+  source: clawhub-community
+  clawhub_slug: multi-channel-engagement-agent
+  clawhub_path: story91/multi-channel-engagement-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Multi-Channel Engagement Agent\n# Source: ClawHub community skill by story91\n# Install: clawhub install multi-channel-engagement-agent\n\
+    # Path: story91/multi-channel-engagement-agent\n\n## Description\nAutonomous social media engagement across Twitter, Farcaster,\
+    \ and Moltbook. Fetches trending content, generates persona-driven contextual replies, and tracks state to prevent duplicates.\
+    \ Use when you want to engage with trending posts, reply to social media content, build audience through authentic \n\n\
+    ## Files\n- SKILL.md\n- _meta.json\n- assets/sample-config.json\n- references/persona-config.md\n- references/platform-apis.md\n\
+    - references/reply-strategies.md\n- scripts/engage.mjs\n\n## Installation\n```bash\nclawhub install multi-channel-engagement-agent\n\
+    ```"
+examples:
+- description: Install Multi-Channel Engagement Agent from ClawHub
+  usage: clawhub install multi-channel-engagement-agent
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: daily-progress-report
+title: Daily Progress Report
+version: 1.0.0
+description: '"Generate automated daily progress reports from site data. Track work completed, labor hours, equipment usage,
+  and weather conditions."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - daily
+  - progress
+  - report
+  source: clawhub-community
+  clawhub_slug: daily-progress-report
+  clawhub_path: datadrivenconstruction/daily-progress-report
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Progress Report
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install daily-progress-report
+
+    # Path: datadrivenconstruction/daily-progress-report
+
+
+    ## Description
+
+    "Generate automated daily progress reports from site data. Track work completed, labor hours, equipment usage, and weather
+    conditions."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-progress-report
+
+    ```'
+examples:
+- description: Install Daily Progress Report from ClawHub
+  usage: clawhub install daily-progress-report
+schema_version: '1.0'

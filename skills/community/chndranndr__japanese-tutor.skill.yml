@@ -1,0 +1,72 @@
+name: japanese-tutor
+title: Japanese Tutor
+version: 1.0.2
+description: Interactive Japanese learning assistant. Supports vocabulary, grammar, quizzes, roleplay, PDF/DOCX material parsing
+  for study/homework help, and OCR translation.
+metadata:
+  author: chndranndr
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - japanese
+  - tutor
+  source: clawhub-community
+  clawhub_slug: japanese-tutor
+  clawhub_path: chndranndr/japanese-tutor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Japanese Tutor
+
+    # Source: ClawHub community skill by chndranndr
+
+    # Install: clawhub install japanese-tutor
+
+    # Path: chndranndr/japanese-tutor
+
+
+    ## Description
+
+    Interactive Japanese learning assistant. Supports vocabulary, grammar, quizzes, roleplay, PDF/DOCX material parsing for
+    study/homework help, and OCR translation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/grammar.md
+
+    - references/grammar_lesson2.md
+
+    - references/lesson_1.md
+
+    - references/vocab.md
+
+    - references/vocab_lesson2.md
+
+    - scripts/greet.py
+
+    - scripts/parse_docx.py
+
+    - scripts/parse_pdf_gemini.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install japanese-tutor
+
+    ```'
+examples:
+- description: Install Japanese Tutor from ClawHub
+  usage: clawhub install japanese-tutor
+schema_version: '1.0'

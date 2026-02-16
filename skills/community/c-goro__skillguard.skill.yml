@@ -1,0 +1,73 @@
+name: skillguard
+title: SkillGuard
+version: 1.0.1
+description: Security scanner for AgentSkill packages. Scan skills for credential theft, code injection, prompt manipulation,
+  data exfiltration, and evasion techniques before installing them. Use when evaluating skills from ClawHub or any untrusted
+  source.
+metadata:
+  author: c-goro
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skillguard
+  source: clawhub-community
+  clawhub_slug: skillguard
+  clawhub_path: c-goro/skillguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SkillGuard
+
+    # Source: ClawHub community skill by c-goro
+
+    # Install: clawhub install skillguard
+
+    # Path: c-goro/skillguard
+
+
+    ## Description
+
+    Security scanner for AgentSkill packages. Scan skills for credential theft, code injection, prompt manipulation, data
+    exfiltration, and evasion techniques before installing them. Use when evaluating skills from ClawHub or any untrusted
+    source.
+
+
+    ## Files
+
+    - README.md
+
+    - RED-TEAM-NOTES.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - rules/dangerous-patterns.json
+
+    - src/ast-analyzer.js
+
+    - src/clawhub.js
+
+    - src/cli.js
+
+    - src/index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skillguard
+
+    ```'
+examples:
+- description: Install SkillGuard from ClawHub
+  usage: clawhub install skillguard
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: stealth-browser
+title: Stealth Browser
+version: 1.0.0
+description: Anti-detection web browsing that bypasses bot detection, CAPTCHAs, and IP blocks using puppeteer-extra with stealth
+  plugin and optional residential proxy support. Use when (1) websites block headless browsers or datacenter IPs, (2) need
+  to bypass Cloudflare/Vercel protection, (3) accessing sites tha
+metadata:
+  author: b0tresch
+  category: Search & Research
+  tags:
+  - search-research
+  - stealth
+  - browser
+  source: clawhub-community
+  clawhub_slug: b0tresch-stealth-browser
+  clawhub_path: b0tresch/b0tresch-stealth-browser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stealth Browser
+
+    # Source: ClawHub community skill by b0tresch
+
+    # Install: clawhub install b0tresch-stealth-browser
+
+    # Path: b0tresch/b0tresch-stealth-browser
+
+
+    ## Description
+
+    Anti-detection web browsing that bypasses bot detection, CAPTCHAs, and IP blocks using puppeteer-extra with stealth plugin
+    and optional residential proxy support. Use when (1) websites block headless browsers or datacenter IPs, (2) need to bypass
+    Cloudflare/Vercel protection, (3) accessing sites tha
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/browser.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install b0tresch-stealth-browser
+
+    ```'
+examples:
+- description: Install Stealth Browser from ClawHub
+  usage: clawhub install b0tresch-stealth-browser
+schema_version: '1.0'

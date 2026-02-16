@@ -1,0 +1,62 @@
+name: alicloud-ai-chatbot
+title: Alicloud Ai Chatbot
+version: 1.0.2
+description: Manage Alibaba Cloud beebot (Chatbot) via OpenAPI/SDK. Use for listing resources, creating or updating configurations,
+  querying status, and troubleshooting workflows for this product.
+metadata:
+  author: cinience
+  category: Communication
+  tags:
+  - communication
+  - alicloud
+  - chatbot
+  source: clawhub-community
+  clawhub_slug: alicloud-ai-chatbot
+  clawhub_path: cinience/alicloud-ai-chatbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Ai Chatbot
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-ai-chatbot
+
+    # Path: cinience/alicloud-ai-chatbot
+
+
+    ## Description
+
+    Manage Alibaba Cloud beebot (Chatbot) via OpenAPI/SDK. Use for listing resources, creating or updating configurations,
+    querying status, and troubleshooting workflows for this product.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+    - scripts/list_openapi_meta_apis.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-ai-chatbot
+
+    ```'
+examples:
+- description: Install Alicloud Ai Chatbot from ClawHub
+  usage: clawhub install alicloud-ai-chatbot
+schema_version: '1.0'

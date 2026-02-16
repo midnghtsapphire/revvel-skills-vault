@@ -1,0 +1,74 @@
+name: rue-chialisp
+title: Rue Chialisp
+version: 1.0.1
+description: Create Chia blockchain puzzles using Rue, a type-safe language that compiles to CLVM. Use for smart contract
+  development, custom puzzle creation, or when user says "create a coin that...", "build a puzzle", "chialisp", "rue", "timelock",
+  "multisig", "escrow", "atomic swap", or describes coin spendin
+metadata:
+  author: koba42corp
+  category: Utilities
+  tags:
+  - utilities
+  - rue
+  - chialisp
+  source: clawhub-community
+  clawhub_slug: rue-chialisp
+  clawhub_path: koba42corp/rue-chialisp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Rue Chialisp
+
+    # Source: ClawHub community skill by koba42corp
+
+    # Install: clawhub install rue-chialisp
+
+    # Path: koba42corp/rue-chialisp
+
+
+    ## Description
+
+    Create Chia blockchain puzzles using Rue, a type-safe language that compiles to CLVM. Use for smart contract development,
+    custom puzzle creation, or when user says "create a coin that...", "build a puzzle", "chialisp", "rue", "timelock", "multisig",
+    "escrow", "atomic swap", or describes coin spendin
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples_txt/atomic_swap.rue.txt
+
+    - examples_txt/block_locked.rue.txt
+
+    - examples_txt/burn.rue.txt
+
+    - examples_txt/burn_10_percent.rue.txt
+
+    - examples_txt/clawback.rue.txt
+
+    - examples_txt/escrow.rue.txt
+
+    - examples_txt/main.rue.txt
+
+    - examples_txt/multisig.rue.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rue-chialisp
+
+    ```'
+examples:
+- description: Install Rue Chialisp from ClawHub
+  usage: clawhub install rue-chialisp
+schema_version: '1.0'

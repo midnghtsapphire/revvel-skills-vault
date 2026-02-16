@@ -1,0 +1,55 @@
+name: gsc
+title: gsc
+version: 1.0.0
+description: Query Google Search Console for SEO data - search queries, top pages, CTR opportunities, URL inspection, and
+  sitemaps. Use when analyzing search performance, finding optimization opportunities, or checking indexing status.
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - gsc
+  source: clawhub-community
+  clawhub_slug: bobagent-gsc
+  clawhub_path: bobdevibecoder/bobagent-gsc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# gsc
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-gsc
+
+    # Path: bobdevibecoder/bobagent-gsc
+
+
+    ## Description
+
+    Query Google Search Console for SEO data - search queries, top pages, CTR opportunities, URL inspection, and sitemaps.
+    Use when analyzing search performance, finding optimization opportunities, or checking indexing status.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-gsc
+
+    ```'
+examples:
+- description: Install gsc from ClawHub
+  usage: clawhub install bobagent-gsc
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: personal_knowledge_base
+title: Personal Knowledge Base
+version: 1.0.1
+description: Help users build a personal knowledge base by organizing whatever they send into structured notes.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - personal
+  - knowledge
+  - base
+  source: clawhub-community
+  clawhub_slug: pkm
+  clawhub_path: ivangdavila/pkm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Personal Knowledge Base
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install pkm
+
+    # Path: ivangdavila/pkm
+
+
+    ## Description
+
+    Help users build a personal knowledge base by organizing whatever they send into structured notes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pkm
+
+    ```'
+examples:
+- description: Install Personal Knowledge Base from ClawHub
+  usage: clawhub install pkm
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: github-repo-mirror
+title: GitHub Repo Mirror
+version: 0.1.0
+description: 完整迁移 GitHub 仓库，保留所有提交记录、分支和标签。用于将仓库从一个 GitHub 账号完整搬迁到另一个账号。
+metadata:
+  author: truongvknnlthao-gif
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - repo
+  - mirror
+  source: clawhub-community
+  clawhub_slug: github-repo-mirror
+  clawhub_path: truongvknnlthao-gif/github-repo-mirror
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHub Repo Mirror
+
+    # Source: ClawHub community skill by truongvknnlthao-gif
+
+    # Install: clawhub install github-repo-mirror
+
+    # Path: truongvknnlthao-gif/github-repo-mirror
+
+
+    ## Description
+
+    完整迁移 GitHub 仓库，保留所有提交记录、分支和标签。用于将仓库从一个 GitHub 账号完整搬迁到另一个账号。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install github-repo-mirror
+
+    ```'
+examples:
+- description: Install GitHub Repo Mirror from ClawHub
+  usage: clawhub install github-repo-mirror
+schema_version: '1.0'

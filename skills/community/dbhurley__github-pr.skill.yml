@@ -1,0 +1,55 @@
+name: github-pr
+title: GitHub PR Tool
+version: 1.0.0
+description: Fetch, preview, merge, and test GitHub PRs locally. Great for trying upstream PRs before they're merged.
+metadata:
+  author: dbhurley
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  source: clawhub-community
+  clawhub_slug: github-pr
+  clawhub_path: dbhurley/github-pr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHub PR Tool
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install github-pr
+
+    # Path: dbhurley/github-pr
+
+
+    ## Description
+
+    Fetch, preview, merge, and test GitHub PRs locally. Great for trying upstream PRs before they''re merged.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/github-pr.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install github-pr
+
+    ```'
+examples:
+- description: Install GitHub PR Tool from ClawHub
+  usage: clawhub install github-pr
+schema_version: '1.0'

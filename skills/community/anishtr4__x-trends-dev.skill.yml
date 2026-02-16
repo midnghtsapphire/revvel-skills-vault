@@ -1,0 +1,59 @@
+name: x-trends
+title: X Trends Dev
+version: 1.0.0
+description: '"Fetches current top trending topics on X (Twitter) for any country using public aggregators."'
+metadata:
+  author: anishtr4
+  category: Social Media
+  tags:
+  - social-media
+  - trends
+  source: clawhub-community
+  clawhub_slug: x-trends-dev
+  clawhub_path: anishtr4/x-trends-dev
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Trends Dev
+
+    # Source: ClawHub community skill by anishtr4
+
+    # Install: clawhub install x-trends-dev
+
+    # Path: anishtr4/x-trends-dev
+
+
+    ## Description
+
+    "Fetches current top trending topics on X (Twitter) for any country using public aggregators."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package-lock.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-trends-dev
+
+    ```'
+examples:
+- description: Install X Trends Dev from ClawHub
+  usage: clawhub install x-trends-dev
+schema_version: '1.0'

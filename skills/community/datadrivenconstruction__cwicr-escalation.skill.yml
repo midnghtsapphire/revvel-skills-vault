@@ -1,0 +1,56 @@
+name: cwicr-escalation
+title: Cwicr Escalation
+version: 1.0.0
+description: '"Apply price escalation to CWICR estimates over time. Calculate inflation adjustments, material price indices,
+  and labor rate increases."'
+metadata:
+  author: datadrivenconstruction
+  category: Utilities
+  tags:
+  - utilities
+  - cwicr
+  - escalation
+  source: clawhub-community
+  clawhub_slug: cwicr-escalation
+  clawhub_path: datadrivenconstruction/cwicr-escalation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cwicr Escalation
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install cwicr-escalation
+
+    # Path: datadrivenconstruction/cwicr-escalation
+
+
+    ## Description
+
+    "Apply price escalation to CWICR estimates over time. Calculate inflation adjustments, material price indices, and labor
+    rate increases."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cwicr-escalation
+
+    ```'
+examples:
+- description: Install Cwicr Escalation from ClawHub
+  usage: clawhub install cwicr-escalation
+schema_version: '1.0'

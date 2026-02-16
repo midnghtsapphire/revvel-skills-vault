@@ -1,0 +1,68 @@
+name: beacon
+title: Beacon
+version: 0.1.1
+description: ''
+metadata:
+  author: scottcjn
+  category: General
+  tags:
+  - general
+  - beacon
+  source: clawhub-community
+  clawhub_slug: beacon
+  clawhub_path: scottcjn/beacon
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Beacon
+
+    # Source: ClawHub community skill by scottcjn
+
+    # Install: clawhub install beacon
+
+    # Path: scottcjn/beacon
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - PUBLISH_CHECKLIST.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - package.json
+
+    - pyproject.toml
+
+    - beacon_skill/__init__.py
+
+    - beacon_skill/cli.py
+
+    - beacon_skill/codec.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install beacon
+
+    ```'
+examples:
+- description: Install Beacon from ClawHub
+  usage: clawhub install beacon
+schema_version: '1.0'

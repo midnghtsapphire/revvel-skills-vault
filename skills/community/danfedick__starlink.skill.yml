@@ -1,0 +1,55 @@
+name: starlink
+title: Starlink
+version: 1.0.1
+description: Control Starlink dish via local gRPC API. Get status, list WiFi clients, run speed tests, stow/unstow dish, reboot,
+  and get GPS location. Use when the user asks about Starlink, internet status, connected devices, or satellite connectivity.
+metadata:
+  author: danfedick
+  category: Development & Coding
+  tags:
+  - development-coding
+  - starlink
+  source: clawhub-community
+  clawhub_slug: starlink
+  clawhub_path: danfedick/starlink
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Starlink
+
+    # Source: ClawHub community skill by danfedick
+
+    # Install: clawhub install starlink
+
+    # Path: danfedick/starlink
+
+
+    ## Description
+
+    Control Starlink dish via local gRPC API. Get status, list WiFi clients, run speed tests, stow/unstow dish, reboot, and
+    get GPS location. Use when the user asks about Starlink, internet status, connected devices, or satellite connectivity.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install starlink
+
+    ```'
+examples:
+- description: Install Starlink from ClawHub
+  usage: clawhub install starlink
+schema_version: '1.0'

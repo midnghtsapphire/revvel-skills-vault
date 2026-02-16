@@ -1,0 +1,53 @@
+name: homebrew
+title: Homebrew Package Manager
+version: 1.0.1
+description: Homebrew package manager for macOS. Search, install, manage, and troubleshoot packages and casks.
+metadata:
+  author: thesethrose
+  category: Search & Research
+  tags:
+  - search-research
+  - homebrew
+  source: clawhub-community
+  clawhub_slug: homebrew
+  clawhub_path: thesethrose/homebrew
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Homebrew Package Manager
+
+    # Source: ClawHub community skill by thesethrose
+
+    # Install: clawhub install homebrew
+
+    # Path: thesethrose/homebrew
+
+
+    ## Description
+
+    Homebrew package manager for macOS. Search, install, manage, and troubleshoot packages and casks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install homebrew
+
+    ```'
+examples:
+- description: Install Homebrew Package Manager from ClawHub
+  usage: clawhub install homebrew
+schema_version: '1.0'

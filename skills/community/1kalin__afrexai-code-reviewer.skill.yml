@@ -1,0 +1,60 @@
+name: afrexai-code-reviewer
+title: Code Review Engine
+version: 1.0.0
+description: Enterprise-grade code review agent. Reviews PRs, diffs, or code files for security vulnerabilities, performance
+  issues, error handling gaps, architecture smells, and test coverage. Works with any language, any repo, no dependencies
+  required.
+metadata:
+  author: 1kalin
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - afrexai
+  - code
+  - reviewer
+  source: clawhub-community
+  clawhub_slug: afrexai-code-reviewer
+  clawhub_path: 1kalin/afrexai-code-reviewer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Code Review Engine
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install afrexai-code-reviewer
+
+    # Path: 1kalin/afrexai-code-reviewer
+
+
+    ## Description
+
+    Enterprise-grade code review agent. Reviews PRs, diffs, or code files for security vulnerabilities, performance issues,
+    error handling gaps, architecture smells, and test coverage. Works with any language, any repo, no dependencies required.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install afrexai-code-reviewer
+
+    ```'
+examples:
+- description: Install Code Review Engine from ClawHub
+  usage: clawhub install afrexai-code-reviewer
+schema_version: '1.0'

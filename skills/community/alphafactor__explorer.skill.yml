@@ -1,0 +1,61 @@
+name: explorer
+title: GitHub Projects Explorer
+version: 1.0.0
+description: Search and analyze trending GitHub repositories by topics, star count, and creation date. Supports filtering
+  by multiple tags, minimum stars, and time range. Use when the user needs to discover popular open-source projects on GitHub.
+  Optionally uses GITHUB_TOKEN for higher API rate limits.
+metadata:
+  author: alphafactor
+  category: Search & Research
+  tags:
+  - search-research
+  - explorer
+  source: clawhub-community
+  clawhub_slug: explorer
+  clawhub_path: alphafactor/explorer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitHub Projects Explorer
+
+    # Source: ClawHub community skill by alphafactor
+
+    # Install: clawhub install explorer
+
+    # Path: alphafactor/explorer
+
+
+    ## Description
+
+    Search and analyze trending GitHub repositories by topics, star count, and creation date. Supports filtering by multiple
+    tags, minimum stars, and time range. Use when the user needs to discover popular open-source projects on GitHub. Optionally
+    uses GITHUB_TOKEN for higher API rate limits.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/github_api.md
+
+    - scripts/github_projects.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install explorer
+
+    ```'
+examples:
+- description: Install GitHub Projects Explorer from ClawHub
+  usage: clawhub install explorer
+schema_version: '1.0'

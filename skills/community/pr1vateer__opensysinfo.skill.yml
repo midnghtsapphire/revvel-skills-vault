@@ -1,0 +1,56 @@
+name: opensysinfo-skill
+title: opensysinfo
+version: 0.1.0
+description: '|'
+metadata:
+  author: pr1vateer
+  category: General
+  tags:
+  - general
+  - opensysinfo
+  - skill
+  source: clawhub-community
+  clawhub_slug: opensysinfo
+  clawhub_path: pr1vateer/opensysinfo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# opensysinfo
+
+    # Source: ClawHub community skill by pr1vateer
+
+    # Install: clawhub install opensysinfo
+
+    # Path: pr1vateer/opensysinfo
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sysinfo.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install opensysinfo
+
+    ```'
+examples:
+- description: Install opensysinfo from ClawHub
+  usage: clawhub install opensysinfo
+schema_version: '1.0'

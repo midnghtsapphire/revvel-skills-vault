@@ -1,0 +1,66 @@
+name: vehicle-tracker
+title: Vehicle Expense Tracker
+version: 1.0.0
+description: Track vehicle expenses (gas, maintenance, parts) in Google Sheets and save related photos. Handles mileage, cost,
+  category, and photo organization.
+metadata:
+  author: huchengtw
+  category: Search & Research
+  tags:
+  - search-research
+  - vehicle
+  - tracker
+  source: clawhub-community
+  clawhub_slug: vehicle-tracker
+  clawhub_path: huchengtw/vehicle-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vehicle Expense Tracker
+
+    # Source: ClawHub community skill by huchengtw
+
+    # Install: clawhub install vehicle-tracker
+
+    # Path: huchengtw/vehicle-tracker
+
+
+    ## Description
+
+    Track vehicle expenses (gas, maintenance, parts) in Google Sheets and save related photos. Handles mileage, cost, category,
+    and photo organization.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - tracker.py
+
+    - locales/en-US.json
+
+    - locales/ja-JP.json
+
+    - locales/zh-TW.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vehicle-tracker
+
+    ```'
+examples:
+- description: Install Vehicle Expense Tracker from ClawHub
+  usage: clawhub install vehicle-tracker
+schema_version: '1.0'

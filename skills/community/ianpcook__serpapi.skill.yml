@@ -1,0 +1,57 @@
+name: serpapi
+title: SerpAPI
+version: 1.0.0
+description: Unified search API across Google, Amazon, Yelp, OpenTable, Walmart, and more. Use when searching for products,
+  local businesses, restaurants, shopping, images, news, or any web search. One API key, many engines.
+metadata:
+  author: ianpcook
+  category: Search & Research
+  tags:
+  - search-research
+  - serpapi
+  source: clawhub-community
+  clawhub_slug: serpapi
+  clawhub_path: ianpcook/serpapi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SerpAPI
+
+    # Source: ClawHub community skill by ianpcook
+
+    # Install: clawhub install serpapi
+
+    # Path: ianpcook/serpapi
+
+
+    ## Description
+
+    Unified search API across Google, Amazon, Yelp, OpenTable, Walmart, and more. Use when searching for products, local businesses,
+    restaurants, shopping, images, news, or any web search. One API key, many engines.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/serp.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install serpapi
+
+    ```'
+examples:
+- description: Install SerpAPI from ClawHub
+  usage: clawhub install serpapi
+schema_version: '1.0'

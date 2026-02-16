@@ -1,0 +1,340 @@
+name: business_operations
+title: Automated Business Operations Suite
+version: 1.0.0
+description: Comprehensive automation suite for running multiple small businesses including review content generation, rental
+  management, gig economy tracking, and team building operations with real tax calculations and business analytics.
+metadata:
+  author: Revvel AI Engine
+  category: Marketing & Business
+  tags:
+  - social-media-automation
+  - payment-tracking
+  - operations
+  - review-content-generation
+  - business
+  - rental-agreement-generation
+  - affiliate-link-management
+  - seo-optimization
+  - rental-inventory-management
+  - ad-revenue-tracking
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport math\nimport hashlib\nimport statistics\nimport unittest\nfrom datetime\
+    \ import datetime, timedelta\nfrom typing import Dict, List, Optional, Any, Tuple\nfrom collections import defaultdict,\
+    \ Counter\nimport requests\n\nSKILL_METADATA = {\n    \"name\": \"Automated Business Operations Suite\",\n    \"id\":\
+    \ \"business_operations\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"\
+    Comprehensive automation suite for running multiple small businesses including review content generation, rental management,\
+    \ gig economy tracking, and team building operations with real tax calculations and business analytics.\",\n    \"capabilities\"\
+    : [\n        \"review_content_generation\",\n        \"seo_optimization\",\n        \"affiliate_link_management\",\n \
+    \       \"ad_revenue_tracking\",\n        \"social_media_automation\",\n        \"rental_inventory_management\",\n   \
+    \     \"rental_agreement_generation\",\n        \"payment_tracking\",\n        \"gig_income_consolidation\",\n       \
+    \ \"mileage_tracking\",\n        \"tax_calculation\",\n        \"business_analytics\",\n        \"task_management\",\n\
+    \        \"team_performance_tracking\"\n    ],\n    \"domain\": \"business_automation\"\n}\n\nEXPERT_PROMPTS = {\n   \
+    \ \"review_generation\": \"\"\"Generate a comprehensive product review for {product_name} based on the following specifications:\n\
+    Product Category: {category}\nKey Features: {features}\nPrice Point: {price}\nTarget Audience: {audience}\nInclude pros,\
+    \ cons, rating out of 10, and SEO-optimized conclusion with affiliate disclosure.\"\"\",\n    \n    \"seo_optimization\"\
+    : \"\"\"Optimize the following blog post for SEO:\nTitle: {title}\nCurrent Content: {content}\nTarget Keywords: {keywords}\n\
+    Competitor URLs: {competitor_urls}\nProvide improved title, meta description, header structure, and keyword density analysis.\"\
+    \"\",\n    \n    \"rental_agreement\": \"\"\"Create a legally compliant rental agreement for:\nItem: {item_name}\nRental\
+    \ Period: {start_date} to {end_date}\nCustomer: {customer_name}\nRental Rate: ${daily_rate}/day\nSecurity Deposit: ${security_deposit}\n\
+    Include terms for damage, late returns, and insurance requirements.\"\"\",\n    \n    \"gig_tax_calculation\": \"\"\"\
+    Calculate quarterly estimated taxes for:\nTotal Gig Income: ${total_income}\nBusiness Expenses: ${expenses}\nMileage:\
+    \ {mileage} miles\nBusiness Structure: {business_type}\nState: {state}\nInclude federal, state, and self-employment tax\
+    \ calculations.\"\"\",\n    \n    \"inventory_analysis\": \"\"\"Analyze rental inventory performance:\nInventory List:\
+    \ {inventory_data}\nRental History: {rental_history}\nCalculate utilization rates, ROI per item, depreciation schedules,\
+    \ and recommend optimization strategies.\"\"\",\n    \n    \"social_media_schedule\": \"\"\"Create a social media posting\
+    \ schedule for:\nPlatform: {platform}\nContent Type: {content_type}\nFrequency: {posts_per_week} posts/week\nTarget Audience:\
+    \ {audience}\nInclude optimal posting times, hashtag strategies, and engagement tactics.\"\"\",\n    \n    \"team_performance\"\
+    : \"\"\"Generate performance metrics for team:\nTeam Members: {team_members}\nTask Completion Data: {task_data}\nTime\
+    \ Period: {time_period}\nCalculate productivity scores, identify bottlenecks, and recommend improvements.\"\"\",\n   \
+    \ \n    \"revenue_forecasting\": \"\"\"Forecast business revenue based on:\nHistorical Data: {historical_revenue}\nSeasonal\
+    \ Patterns: {seasonal_data}\nMarket Trends: {market_trends}\nGrowth Rate: {growth_rate}\nProvide 12-month projections\
+    \ with confidence intervals.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"amazon_associates_api\": {\n        \"type\": \"\
+    api\",\n        \"endpoint\": \"https://webservices.amazon.com/paapi5/searchitems\",\n        \"description\": \"Amazon\
+    \ Product Advertising API for affiliate link generation\",\n        \"auth_method\": \"AWS Signature\",\n        \"documentation_url\"\
+    : \"https://webservices.amazon.com/paapi5/documentation/\"\n    },\n    \"google_adsense_api\": {\n        \"type\": \"\
+    api\",\n        \"endpoint\": \"https://www.googleapis.com/adsense/v1.4\",\n        \"description\": \"Google AdSense\
+    \ API for revenue tracking\",\n        \"auth_method\": \"OAuth 2.0\",\n        \"documentation_url\": \"https://developers.google.com/adsense/management\"\
+    \n    },\n    \"tiktok_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://open-api.tiktok.com/platform/v1/\"\
+    ,\n        \"description\": \"TikTok API for content posting and analytics\",\n        \"auth_method\": \"OAuth 2.0\"\
+    ,\n        \"documentation_url\": \"https://developers.tiktok.com/doc/tiktok-api-v1/\"\n    },\n    \"instagram_basic_display\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://graph.instagram.com\",\n        \"description\": \"Instagram\
+    \ Basic Display API for media posting\",\n        \"auth_method\": \"OAuth 2.0\",\n        \"documentation_url\": \"https://developers.facebook.com/docs/instagram-basic-display-api\"\
+    \n    },\n    \"quickbooks_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://sandbox-quickbooks.api.intuit.com/v3/company\"\
+    ,\n        \"description\": \"QuickBooks Online API for accounting integration\",\n        \"auth_method\": \"OAuth 2.0\"\
+    ,\n        \"documentation_url\": \"https://developer.intuit.com/app/portal/home\"\n    },\n    \"google_maps_api\": {\n\
+    \        \"type\": \"api\",\n        \"endpoint\": \"https://maps.googleapis.com/maps/api/directions/json\",\n       \
+    \ \"description\": \"Google Maps API for mileage tracking\",\n        \"auth_method\": \"API Key\",\n        \"documentation_url\"\
+    : \"https://developers.google.com/maps/documentation/directions\"\n    }\n}\n\ndef parse_product_data(product_text: str)\
+    \ -> Dict[str, Any]:\n    \"\"\"Parse Vine product data into structured format.\"\"\"\n    data = {}\n    patterns = {\n\
+    \        'name': r'Product Name:\\s*(.+?)\\n',\n        'category': r'Category:\\s*(.+?)\\n',\n        'price': r'Price:\\\
+    s*\\$?(\\d+\\.?\\d*)',\n        'rating': r'Rating:\\s*(\\d+\\.?\\d*)',\n        'features': r'Features:\\s*(.+?)(?:\\\
+    n|$)',\n        'brand': r'Brand:\\s*(.+?)\\n'\n    }\n    \n    for key, pattern in patterns.items():\n        match\
+    \ = re.search(pattern, product_text, re.IGNORECASE)\n        if match:\n            if key == 'price':\n             \
+    \   data[key] = float(match.group(1))\n            elif key == 'rating':\n                data[key] = float(match.group(1))\n\
+    \            elif key == 'features':\n                data[key] = [f.strip() for f in match.group(1).split(',')]\n   \
+    \         else:\n                data[key] = match.group(1).strip()\n    \n    return data\n\ndef calculate_se_component(taxable_income:\
+    \ float, business_type: str = \"sole_proprietorship\") -> float:\n    \"\"\"Calculate self-employment tax component.\"\
+    \"\"\n    if business_type in [\"s_corp\", \"c_corp\"]:\n        return 0.0\n    \n    se_tax_rate = 0.9235\n    social_security_rate\
+    \ = 0.124\n    medicare_rate = 0.029\n    \n    se_income = taxable_income * se_tax_rate\n    \n    social_security_tax\
+    \ = min(se_income * social_security_rate, 160200 * social_security_rate)\n    medicare_tax = se_income * medicare_rate\n\
+    \    \n    if taxable_income > 200000:\n        medicare_tax += (taxable_income - 200000) * 0.009\n    \n    return social_security_tax\
+    \ + medicare_tax\n\ndef calculate_quarterly_tax(gig_income: float, expenses: float, mileage: float, \n               \
+    \          business_type: str = \"sole_proprietorship\", state: str = \"CA\") -> Dict[str, float]:\n    \"\"\"Calculate\
+    \ quarterly estimated taxes.\"\"\"\n    taxable_income = gig_income - expenses - (mileage * 0.655)\n    \n    federal_brackets\
+    \ = [(0, 11000, 0.10), (11000, 44725, 0.12), (44725, 95375, 0.22),\n                       (95375, 182100, 0.24), (182100,\
+    \ 231250, 0.32)]\n    \n    federal_tax = 0\n    for low, high, rate in federal_brackets:\n        if taxable_income >\
+    \ low:\n            federal_tax += (min(taxable_income, high) - low) * rate\n    \n    se_tax = calculate_se_component(taxable_income,\
+    \ business_type)\n    \n    state_rates = {\"CA\": 0.0929, \"NY\": 0.0685, \"TX\": 0.0, \"FL\": 0.0}\n    state_tax =\
+    \ taxable_income * state_rates.get(state, 0.05)\n    \n    total_tax = federal_tax + se_tax + state_tax\n    quarterly_payment\
+    \ = total_tax / 4\n    \n    return {\n        \"federal_tax\": federal_tax,\n        \"self_employment_tax\": se_tax,\n\
+    \        \"state_tax\": state_tax,\n        \"total_tax\": total_tax,\n        \"quarterly_payment\": quarterly_payment,\n\
+    \        \"taxable_income\": taxable_income\n    }\n\ndef generate_rental_agreement(item_name: str, customer_name: str,\
+    \ start_date: str, \n                            end_date: str, daily_rate: float, security_deposit: float) -> str:\n\
+    \    \"\"\"Generate a rental agreement document.\"\"\"\n    start = datetime.strptime(start_date, \"%Y-%m-%d\")\n    end\
+    \ = datetime.strptime(end_date, \"%Y-%m-%d\")\n    rental_days = (end - start).days\n    \n    total_cost = rental_days\
+    \ * daily_rate\n    \n    agreement = f\"\"\"\nRENTAL AGREEMENT\n\nThis Rental Agreement is entered into on {datetime.now().strftime(\"\
+    %B %d, %Y\")}\n\nPARTIES:\nLessor: [Business Name]\nLessee: {customer_name}\n\nITEM DETAILS:\nRental Item: {item_name}\n\
+    Rental Period: {start_date} to {end_date} ({rental_days} days)\nDaily Rate: ${daily_rate:.2f}\nTotal Rental Cost: ${total_cost:.2f}\n\
+    Security Deposit: ${security_deposit:.2f}\n\nTERMS AND CONDITIONS:\n1. Lessee agrees to return the item in the same condition\
+    \ as received\n2. Late returns will incur a fee of ${daily_rate:.2f} per day\n3. Damage beyond normal wear will be deducted\
+    \ from security deposit\n4. Insurance is {('required' if security_deposit > 500 else 'recommended')}\n5. Payment due in\
+    \ full before item release\n\nTotal Amount Due: ${total_cost + security_deposit:.2f}\n\nSignature: _____________________\
+    \ Date: ___________\n\"\"\"\n    return agreement\n\ndef calculate_inventory_metrics(inventory_data: List[Dict], rental_history:\
+    \ List[Dict]) -> Dict[str, Any]:\n    \"\"\"Calculate key inventory performance metrics.\"\"\"\n    total_items = len(inventory_data)\n\
+    \    active_items = len([i for i in inventory_data if i.get('status') == 'active'])\n    \n    total_revenue = sum(r.get('rental_fee',\
+    \ 0) for r in rental_history)\n    total_rentals = len(rental_history)\n    \n    utilization_rates = {}\n    for item\
+    \ in inventory_data:\n        item_id = item.get('id')\n        item_rentals = [r for r in rental_history if r.get('item_id')\
+    \ == item_id]\n        days_rented = sum((datetime.strptime(r['end_date'], \"%Y-%m-%d\") - \n                        \
+    \  datetime.strptime(r['start_date'], \"%Y-%m-%d\")).days \n                         for r in item_rentals)\n        utilization_rates[item_id]\
+    \ = (days_rented / 365) * 100 if days_rented > 0 else 0\n    \n    avg_utilization = statistics.mean(utilization_rates.values())\
+    \ if utilization_rates else 0\n    \n    roi_data = {}\n    for item in inventory_data:\n        item_cost = item.get('purchase_price',\
+    \ 0)\n        item_revenue = sum(r.get('rental_fee', 0) for r in rental_history \n                          if r.get('item_id')\
+    \ == item.get('id'))\n        roi_data[item.get('id')] = ((item_revenue - item_cost) / item_cost * 100) if item_cost >\
+    \ 0 else 0\n    \n    return {\n        \"total_items\": total_items,\n        \"active_items\": active_items,\n     \
+    \   \"total_revenue\": total_revenue,\n        \"total_rentals\": total_rentals,\n        \"average_utilization\": avg_utilization,\n\
+    \        \"utilization_rates\": utilization_rates,\n        \"roi_percentages\": roi_data\n    }\n\ndef optimize_social_schedule(platform:\
+    \ str, audience: str, posts_per_week: int) -> Dict[str, Any]:\n    \"\"\"Generate optimal social media posting schedule.\"\
+    \"\"\n    platform_configs = {\n        \"tiktok\": {\"best_times\": [\"9:00\", \"12:00\", \"19:00\"], \"max_daily\":\
+    \ 3},\n        \"instagram\": {\"best_times\": [\"11:00\", \"14:00\", \"17:00\"], \"max_daily\": 2},\n        \"youtube\"\
+    : {\"best_times\": [\"14:00\", \"18:00\", \"20:00\"], \"max_daily\": 1}\n    }\n    \n    config = platform_configs.get(platform,\
+    \ {\"best_times\": [\"12:00\"], \"max_daily\": 2})\n    \n    posts_per_day = min(posts_per_week / 7, config[\"max_daily\"\
+    ])\n    schedule = []\n    \n    for day in range(7):\n        if len(schedule) < posts_per_week:\n            time =\
+    \ config[\"best_times\"][day % len(config[\"best_times\"])]\n            schedule.append({\n                \"day\": [\"\
+    Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\", \"Sun\"][day],\n                \"time\": time,\n                \"\
+    platform\": platform\n            })\n    \n    return {\n        \"schedule\": schedule,\n        \"posts_per_day\":\
+    \ posts_per_day,\n        \"total_posts\": posts_per_week,\n        \"engagement_tips\": [\n            f\"Use trending\
+    \ hashtags for {platform}\",\n            \"Post consistently at optimal times\",\n            \"Engage with comments\
+    \ within first hour\",\n            \"Cross-promote on other platforms\"\n        ]\n    }\n\ndef consolidate_gig_income(gig_data:\
+    \ List[Dict]) -> Dict[str, Any]:\n    \"\"\"Consolidate income from multiple gig platforms.\"\"\"\n    platform_totals\
+    \ = defaultdict(float)\n    monthly_totals = defaultdict(float)\n    expense_totals = defaultdict(float)\n    \n    for\
+    \ gig in gig_data:\n        platform = gig.get('platform', 'unknown')\n        amount = gig.get('amount', 0)\n       \
+    \ date = gig.get('date', '')\n        expenses = gig.get('expenses', 0)\n        \n        platform_totals[platform] +=\
+    \ amount\n        expense_totals[platform] += expenses\n        \n        if date:\n            month_key = datetime.strptime(date,\
+    \ \"%Y-%m-%d\").strftime(\"%Y-%m\")\n            monthly_totals[month_key] += amount\n    \n    total_income = sum(platform_totals.values())\n\
+    \    total_expenses = sum(expense_totals.values())\n    net_income = total_income - total_expenses\n    \n    return {\n\
+    \        \"platform_breakdown\": dict(platform_totals),\n        \"monthly_breakdown\": dict(monthly_totals),\n      \
+    \  \"total_income\": total_income,\n        \"total_expenses\": total_expenses,\n        \"net_income\": net_income,\n\
+    \        \"average_monthly\": statistics.mean(monthly_totals.values()) if monthly_totals else 0\n    }\n\ndef calculate_mileage_deduction(mileage_data:\
+    \ List[Dict], rate: float = 0.655) -> Dict[str, Any]:\n    \"\"\"Calculate mileage deduction for tax purposes.\"\"\"\n\
+    \    total_miles = sum(trip.get('miles', 0) for trip in mileage_data)\n    business_miles = sum(trip.get('miles', 0) for\
+    \ trip in mileage_data \n                        if trip.get('purpose') == 'business')\n    personal_miles = total_miles\
+    \ - business_miles\n    \n    deduction = business_miles * rate\n    \n    trip_summary = defaultdict(int)\n    for trip\
+    \ in mileage_data:\n        purpose = trip.get('purpose', 'unknown')\n        trip_summary[purpose] += trip.get('miles',\
+    \ 0)\n    \n    return {\n        \"total_miles\": total_miles,\n        \"business_miles\": business_miles,\n       \
+    \ \"personal_miles\": personal_miles,\n        \"deduction_amount\": deduction,\n        \"mileage_breakdown\": dict(trip_summary),\n\
+    \        \"rate_used\": rate\n    }\n\ndef generate_performance_report(team_data: List[Dict], task_data: List[Dict]) ->\
+    \ Dict[str, Any]:\n    \"\"\"Generate team performance analytics.\"\"\"\n    member_stats = defaultdict(lambda: {\"tasks_completed\"\
+    : 0, \"tasks_overdue\": 0, \"avg_completion_time\": []})\n    \n    for task in task_data:\n        assignee = task.get('assignee')\n\
+    \        if assignee:\n            if task.get('status') == 'completed':\n                member_stats[assignee][\"tasks_completed\"\
+    ] += 1\n                if task.get('completion_time'):\n                    member_stats[assignee][\"avg_completion_time\"\
+    ].append(task['completion_time'])\n            elif task.get('status') == 'overdue':\n                member_stats[assignee][\"\
+    tasks_overdue\"] += 1\n    \n    performance_scores = {}\n    for member, stats in member_stats.items():\n        completion_rate\
+    \ = stats[\"tasks_completed\"] / (stats[\"tasks_completed\"] + stats[\"tasks_overdue\"]) * 100\n        avg_time = statistics.mean(stats[\"\
+    avg_completion_time\"]) if stats[\"avg_completion_time\"] else 0\n        performance_scores[member] = {\n           \
+    \ \"completion_rate\": completion_rate,\n            \"avg_completion_time\": avg_time,\n            \"tasks_completed\"\
+    : stats[\"tasks_completed\"],\n            \"tasks_overdue\": stats[\"tasks_overdue\"],\n            \"productivity_score\"\
+    : (completion_rate * 0.7) + ((1 / (avg_time + 1)) * 100 * 0.3)\n        }\n    \n    team_completion_rate = statistics.mean([s[\"\
+    completion_rate\"] for s in performance_scores.values()])\n    \n    return {\n        \"individual_performance\": performance_scores,\n\
+    \        \"team_completion_rate\": team_completion_rate,\n        \"top_performer\": max(performance_scores.items(), key=lambda\
+    \ x: x[1][\"productivity_score\"])[0] if performance_scores else None,\n        \"improvement_areas\": [member for member,\
+    \ stats in performance_scores.items() if stats[\"completion_rate\"] < 80]\n    }\n\nclass SkillEngine:\n    \"\"\"Main\
+    \ engine for Automated Business Operations Suite.\"\"\"\n    \n    def __init__(self, config: Dict[str, Any]):\n     \
+    \   self.config = config\n        self.logger = self._setup_logger()\n        self.capabilities = {\n            \"review_content_generation\"\
+    : self.generate_review_content,\n            \"seo_optimization\": self.optimize_seo,\n            \"affiliate_link_management\"\
+    : self.manage_affiliate_links,\n            \"ad_revenue_tracking\": self.track_ad_revenue,\n            \"social_media_automation\"\
+    : self.automate_social_media,\n            \"rental_inventory_management\": self.manage_rental_inventory,\n          \
+    \  \"rental_agreement_generation\": self.generate_rental_agreement,\n            \"payment_tracking\": self.track_payments,\n\
+    \            \"gig_income_consolidation\": self.consolidate_gig_income,\n            \"mileage_tracking\": self.track_mileage,\n\
+    \            \"tax_calculation\": self.calculate_taxes,\n            \"business_analytics\": self.analyze_business,\n\
+    \            \"task_management\": self.manage_tasks,\n            \"team_performance_tracking\": self.track_team_performance\n\
+    \        }\n    \n    def _setup_logger(self):\n        \"\"\"Setup basic logging.\"\"\"\n        import logging\n   \
+    \     logger = logging.getLogger(__name__)\n        logger.setLevel(logging.INFO)\n        return logger\n    \n    def\
+    \ generate_review_content(self, product_data: Dict[str, Any]) -> str:\n        \"\"\"Generate review content from product\
+    \ data.\"\"\"\n        try:\n            product_info = parse_product_data(str(product_data))\n            rating = product_info.get('rating',\
+    \ 7.5)\n            \n            review = f\"\"\"\nProduct Review: {product_info.get('name', 'Unknown Product')}\n\n\
+    The {product_info.get('category', 'product')} from {product_info.get('brand', 'the manufacturer')} \noffers solid performance\
+    \ with its key features including {', '.join(product_info.get('features', []))}.\n\nPros:\n- Good build quality\n- Competitive\
+    \ pricing at ${product_info.get('price', 0):.2f}\n- Suitable for {product_info.get('category', 'general use')}\n\nCons:\n\
+    - May require learning curve\n- Limited availability\n\nRating: {rating}/10\n\n[Affiliate Disclosure: This review contains\
+    \ affiliate links. We may earn a commission at no extra cost to you.]\n\"\"\"\n            return review.strip()\n   \
+    \     except Exception as e:\n            self.logger.error(f\"Error generating review: {str(e)}\")\n            return\
+    \ \"\"\n    \n    def optimize_seo(self, content_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Optimize content\
+    \ for SEO.\"\"\"\n        try:\n            title = content_data.get('title', '')\n            content = content_data.get('content',\
+    \ '')\n            keywords = content_data.get('keywords', [])\n            \n            word_count = len(content.split())\n\
+    \            keyword_density = {}\n            \n            for keyword in keywords:\n                occurrences = content.lower().count(keyword.lower())\n\
+    \                density = (occurrences / word_count) * 100 if word_count > 0 else 0\n                keyword_density[keyword]\
+    \ = density\n            \n            return {\n                \"optimized_title\": f\"{title} - Complete Guide {datetime.now().year}\"\
+    ,\n                \"meta_description\": f\"Complete review and analysis of {title}. Learn about features, pricing, and\
+    \ alternatives.\",\n                \"word_count\": word_count,\n                \"keyword_density\": keyword_density,\n\
+    \                \"recommendations\": [\n                    \"Add more internal links\",\n                    \"Optimize\
+    \ images with alt text\",\n                    \"Improve page loading speed\",\n                    \"Add schema markup\"\
+    \n                ]\n            }\n        except Exception as e:\n            self.logger.error(f\"SEO optimization\
+    \ error: {str(e)}\")\n            return {}\n    \n    def manage_affiliate_links(self, product_data: Dict[str, Any])\
+    \ -> Dict[str, Any]:\n        \"\"\"Manage affiliate links for products.\"\"\"\n        try:\n            product_name\
+    \ = product_data.get('name', '')\n            asin = product_data.get('asin', '')\n            \n            affiliate_links\
+    \ = {\n                \"amazon\": f\"https://www.amazon.com/dp/{asin}/?tag=your-affiliate-id\",\n                \"walmart\"\
+    : f\"https://www.walmart.com/search?q={product_name.replace(' ', '+')}\",\n                \"target\": f\"https://www.target.com/s/{product_name.replace('\
+    \ ', '+')}\"\n            }\n            \n            return {\n                \"product\": product_name,\n        \
+    \        \"links\": affiliate_links,\n                \"tracking_codes\": {\n                    \"amazon\": \"your-affiliate-id\"\
+    ,\n                    \"campaign\": f\"review_{datetime.now().strftime('%Y%m')}\"\n                }\n            }\n\
+    \        except Exception as e:\n            self.logger.error(f\"Affiliate link error: {str(e)}\")\n            return\
+    \ {}\n    \n    def track_ad_revenue(self, revenue_data: List[Dict]) -> Dict[str, Any]:\n        \"\"\"Track advertising\
+    \ revenue.\"\"\"\n        try:\n            total_revenue = sum(r.get('revenue', 0) for r in revenue_data)\n         \
+    \   platform_breakdown = defaultdict(float)\n            \n            for revenue in revenue_data:\n                platform\
+    \ = revenue.get('platform', 'unknown')\n                platform_breakdown[platform] += revenue.get('revenue', 0)\n  \
+    \          \n            return {\n                \"total_revenue\": total_revenue,\n                \"platform_breakdown\"\
+    : dict(platform_breakdown),\n                \"avg_daily_revenue\": total_revenue / 30,\n                \"top_platform\"\
+    : max(platform_breakdown.items(), key=lambda x: x[1])[0] if platform_breakdown else None\n            }\n        except\
+    \ Exception as e:\n            self.logger.error(f\"Ad revenue tracking error: {str(e)}\")\n            return {}\n  \
+    \  \n    def automate_social_media(self, post_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Automate social\
+    \ media posting.\"\"\"\n        try:\n            platform = post_data.get('platform', 'instagram')\n            content\
+    \ = post_data.get('content', '')\n            schedule = post_data.get('schedule', False)\n            \n            optimized_schedule\
+    \ = optimize_social_schedule(\n                platform, \n                post_data.get('audience', 'general'),\n   \
+    \             post_data.get('frequency', 7)\n            )\n            \n            return {\n                \"platform\"\
+    : platform,\n                \"content_preview\": content[:100] + \"...\",\n                \"schedule\": optimized_schedule[\"\
+    schedule\"],\n                \"hashtags\": [\"#business\", \"#automation\", \"#productivity\"],\n                \"status\"\
+    : \"scheduled\" if schedule else \"ready_to_post\"\n            }\n        except Exception as e:\n            self.logger.error(f\"\
+    Social media automation error: {str(e)}\")\n            return {}\n    \n    def manage_rental_inventory(self, inventory_data:\
+    \ List[Dict]) -> Dict[str, Any]:\n        \"\"\"Manage rental inventory.\"\"\"\n        try:\n            available_items\
+    \ = [i for i in inventory_data if i.get('status') == 'available']\n            rented_items = [i for i in inventory_data\
+    \ if i.get('status') == 'rented']\n            maintenance_items = [i for i in inventory_data if i.get('status') == 'maintenance']\n\
+    \            \n            total_value = sum(i.get('purchase_price', 0) for i in inventory_data)\n            \n     \
+    \       return {\n                \"total_items\": len(inventory_data),\n                \"available\": len(available_items),\n\
+    \                \"rented\": len(rented_items),\n                \"maintenance\": len(maintenance_items),\n          \
+    \      \"total_value\": total_value,\n                \"utilization_rate\": (len(rented_items) / len(inventory_data) *\
+    \ 100) if inventory_data else 0\n            }\n        except Exception as e:\n            self.logger.error(f\"Inventory\
+    \ management error: {str(e)}\")\n            return {}\n    \n    def generate_rental_agreement(self, rental_data: Dict[str,\
+    \ Any]) -> str:\n        \"\"\"Generate rental agreement.\"\"\"\n        try:\n            return generate_rental_agreement(\n\
+    \                rental_data.get('item_name', ''),\n                rental_data.get('customer_name', ''),\n          \
+    \      rental_data.get('start_date', ''),\n                rental_data.get('end_date', ''),\n                rental_data.get('daily_rate',\
+    \ 0),\n                rental_data.get('security_deposit', 0)\n            )\n        except Exception as e:\n       \
+    \     self.logger.error(f\"Rental agreement error: {str(e)}\")\n            return \"\"\n    \n    def track_payments(self,\
+    \ payment_data: List[Dict]) -> Dict[str, Any]:\n        \"\"\"Track payments.\"\"\"\n        try:\n            total_paid\
+    \ = sum(p.get('amount', 0) for p in payment_data if p.get('status') == 'paid')\n            total_pending = sum(p.get('amount',\
+    \ 0) for p in payment_data if p.get('status') == 'pending')\n            overdue_payments = [p for p in payment_data if\
+    \ p.get('status') == 'overdue']\n            \n            return {\n                \"total_paid\": total_paid,\n   \
+    \             \"total_pending\": total_pending,\n                \"overdue_count\": len(overdue_payments),\n         \
+    \       \"overdue_amount\": sum(p.get('amount', 0) for p in overdue_payments),\n                \"collection_rate\": (total_paid\
+    \ / (total_paid + total_pending) * 100) if (total_paid + total_pending) > 0 else 0\n            }\n        except Exception\
+    \ as e:\n            self.logger.error(f\"Payment tracking error: {str(e)}\")\n            return {}\n    \n    def consolidate_gig_income(self,\
+    \ gig_data: List[Dict]) -> Dict[str, Any]:\n        \"\"\"Consolidate gig income.\"\"\"\n        try:\n            return\
+    \ consolidate_gig_income(gig_data)\n        except Exception as e:\n            self.logger.error(f\"Gig income consolidation\
+    \ error: {str(e)}\")\n            return {}\n    \n    def track_mileage(self, mileage_data: List[Dict]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Track mileage.\"\"\"\n        try:\n            return calculate_mileage_deduction(mileage_data)\n\
+    \        except Exception as e:\n            self.logger.error(f\"Mileage tracking error: {str(e)}\")\n            return\
+    \ {}\n    \n    def calculate_taxes(self, tax_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Calculate taxes.\"\
+    \"\"\n        try:\n            return calculate_quarterly_tax(\n                tax_data.get('gig_income', 0),\n    \
+    \            tax_data.get('expenses', 0),\n                tax_data.get('mileage', 0),\n                tax_data.get('business_type',\
+    \ 'sole_proprietorship'),\n                tax_data.get('state', 'CA')\n            )\n        except Exception as e:\n\
+    \            self.logger.error(f\"Tax calculation error: {str(e)}\")\n            return {}\n    \n    def analyze_business(self,\
+    \ business_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Analyze business performance.\"\"\"\n        try:\n\
+    \            revenue = business_data.get('revenue', [])\n            expenses = business_data.get('expenses', [])\n  \
+    \          \n            total_revenue = sum(revenue)\n            total_expenses = sum(expenses)\n            net_profit\
+    \ = total_revenue - total_expenses\n            \n            profit_margin = (net_profit / total_revenue * 100) if total_revenue\
+    \ > 0 else 0\n            \n            return {\n                \"total_revenue\": total_revenue,\n                \"\
+    total_expenses\": total_expenses,\n                \"net_profit\": net_profit,\n                \"profit_margin\": profit_margin,\n\
+    \                \"roi\": (net_profit / total_expenses * 100) if total_expenses > 0 else 0,\n                \"break_even_point\"\
+    : total_expenses / (total_revenue / 30) if total_revenue > 0 else 0\n            }\n        except Exception as e:\n \
+    \           self.logger.error(f\"Business analysis error: {str(e)}\")\n            return {}\n    \n    def manage_tasks(self,\
+    \ task_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Manage tasks.\"\"\"\n        try:\n            tasks =\
+    \ task_data.get('tasks', [])\n            completed = len([t for t in tasks if t.get('status') == 'completed'])\n    \
+    \        pending = len([t for t in tasks if t.get('status') == 'pending'])\n            \n            return {\n     \
+    \           \"total_tasks\": len(tasks),\n                \"completed\": completed,\n                \"pending\": pending,\n\
+    \                \"completion_rate\": (completed / len(tasks) * 100) if tasks else 0,\n                \"priority_breakdown\"\
+    : {\n                    \"high\": len([t for t in tasks if t.get('priority') == 'high']),\n                    \"medium\"\
+    : len([t for t in tasks if t.get('priority') == 'medium']),\n                    \"low\": len([t for t in tasks if t.get('priority')\
+    \ == 'low'])\n                }\n            }\n        except Exception as e:\n            self.logger.error(f\"Task\
+    \ management error: {str(e)}\")\n            return {}\n    \n    def track_team_performance(self, performance_data: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Track team performance.\"\"\"\n        try:\n            return generate_performance_report(\n\
+    \                performance_data.get('team_members', []),\n                performance_data.get('task_data', [])\n  \
+    \          )\n        except Exception as e:\n            self.logger.error(f\"Team performance tracking error: {str(e)}\"\
+    )\n            return {}\n    \n    def run(self, capability: str, data: Dict[str, Any]) -> Any:\n        \"\"\"Run the\
+    \ specified capability.\"\"\"\n        if capability not in self.capabilities:\n            raise ValueError(f\"Unknown\
+    \ capability: {capability}\")\n        \n        return self.capabilities[capability](data)\n\nclass TestBusinessOperationsSuite(unittest.TestCase):\n\
+    \    \"\"\"Test cases for Business Operations Suite.\"\"\"\n    \n    def test_metadata_validation(self):\n        \"\"\
+    \"Test metadata structure.\"\"\"\n        self.assertEqual(SKILL_METADATA[\"name\"], \"Automated Business Operations Suite\"\
+    )\n        self.assertEqual(SKILL_METADATA[\"id\"], \"business_operations\")\n        self.assertIn(\"review_content_generation\"\
+    , SKILL_METADATA[\"capabilities\"])\n        self.assertEqual(len(SKILL_METADATA[\"capabilities\"]), 14)\n    \n    def\
+    \ test_product_data_parsing(self):\n        \"\"\"Test product data parsing.\"\"\"\n        product_text = \"\"\"\n  \
+    \      Product Name: Test Widget\n        Category: Electronics\n        Price: $99.99\n        Rating: 8.5\n        Features:\
+    \ Fast, Reliable, Affordable\n        Brand: TestBrand\n        \"\"\"\n        result = parse_product_data(product_text)\n\
+    \        self.assertEqual(result['name'], 'Test Product')\n        self.assertEqual(result['price'], 99.99)\n        self.assertEqual(result['rating'],\
+    \ 8.5)\n        self.assertEqual(len(result['features']), 3)\n    \n    def test_tax_calculation(self):\n        \"\"\"\
+    Test quarterly tax calculation.\"\"\"\n        result = calculate_quarterly_tax(\n            gig_income=50000,\n    \
+    \        expenses=10000,\n            mileage=5000,\n            business_type=\"sole_proprietorship\",\n            state=\"\
+    CA\"\n        )\n        self.assertIn(\"federal_tax\", result)\n        self.assertIn(\"self_employment_tax\", result)\n\
+    \        self.assertIn(\"state_tax\", result)\n        self.assertGreater(result[\"total_tax\"], 0)\n        self.assertEqual(result[\"\
+    quarterly_payment\"], result[\"total_tax\"] / 4)\n    \n    def test_rental_agreement_generation(self):\n        \"\"\"\
+    Test rental agreement generation.\"\"\"\n        agreement = generate_rental_agreement(\n            \"Camera Lens\",\n\
+    \            \"John Doe\",\n            \"2024-01-01\",\n            \"2024-01-07\",\n            25.0,\n            100.0\n\
+    \        )\n        self.assertIn(\"RENTAL AGREEMENT\", agreement)\n        self.assertIn(\"John Doe\", agreement)\n \
+    \       self.assertIn(\"$175.00\", agreement)  # 7 days * $25 + $100 deposit\n    \n    def test_inventory_metrics(self):\n\
+    \        \"\"\"Test inventory metrics calculation.\"\"\"\n        inventory = [\n            {\"id\": 1, \"purchase_price\"\
+    : 500, \"status\": \"active\"},\n            {\"id\": 2, \"purchase_price\": 300, \"status\": \"active\"}\n        ]\n\
+    \        rental_history = [\n            {\"item_id\": 1, \"start_date\": \"2024-01-01\", \"end_date\": \"2024-01-08\"\
+    , \"rental_fee\": 100},\n            {\"item_id\": 2, \"start_date\": \"2024-01-01\", \"end_date\": \"2024-01-04\", \"\
+    rental_fee\": 60}\n        ]\n        result = calculate_inventory_metrics(inventory, rental_history)\n        self.assertEqual(result[\"\
+    total_items\"], 2)\n        self.assertEqual(result[\"total_revenue\"], 160)\n        self.assertEqual(result[\"total_rentals\"\
+    ], 2)\n    \n    def test_social_schedule_optimization(self):\n        \"\"\"Test social media schedule optimization.\"\
+    \"\"\n        result = optimize_social_schedule(\"tiktok\", \"young adults\", 14)\n        self.assertEqual(len(result[\"\
+    schedule\"]), 14)\n        self.assertEqual(result[\"total_posts\"], 14)\n        self.assertIn(\"engagement_tips\", result)\n\
+    \    \n    def test_gig_income_consolidation(self):\n        \"\"\"Test gig income consolidation.\"\"\"\n        gig_data\
+    \ = [\n            {\"platform\": \"Uber\", \"amount\": 500, \"date\": \"2024-01-15\", \"expenses\": 50},\n          \
+    \  {\"platform\": \"Lyft\", \"amount\": 300, \"date\": \"2024-01-16\", \"expenses\": 30},\n            {\"platform\":\
+    \ \"Uber\", \"amount\": 400, \"date\": \"2024-01-20\", \"expenses\": 40}\n        ]\n        result = consolidate_gig_income(gig_data)\n\
+    \        self.assertEqual(result[\"total_income\"], 1200)\n        self.assertEqual(result[\"total_expenses\"], 120)\n\
+    \        self.assertEqual(result[\"net_income\"], 1080)\n        self.assertEqual(result[\"platform_breakdown\"][\"Uber\"\
+    ], 900)\n    \n    def test_mileage_deduction_calculation(self):\n        \"\"\"Test mileage deduction calculation.\"\"\
+    \"\n        mileage_data = [\n            {\"miles\": 100, \"purpose\": \"business\"},\n            {\"miles\": 50, \"\
+    purpose\": \"personal\"},\n            {\"miles\": 75, \"purpose\": \"business\"}\n        ]\n        result = calculate_mileage_deduction(mileage_data)\n\
+    \        self.assertEqual(result[\"total_miles\"], 225)\n        self.assertEqual(result[\"business_miles\"], 175)\n \
+    \       self.assertEqual(result[\"deduction_amount\"], 175 * 0.655)\n    \n    def test_team_performance_report(self):\n\
+    \        \"\"\"Test team performance reporting.\"\"\"\n        team_members = [\"Alice\", \"Bob\", \"Charlie\"]\n    \
+    \    task_data = [\n            {\"assignee\": \"Alice\", \"status\": \"completed\", \"completion_time\": 4},\n      \
+    \      {\"assignee\": \"Bob\", \"status\": \"overdue\"},\n            {\"assignee\": \"Alice\", \"status\": \"completed\"\
+    , \"completion_time\": 3},\n            {\"assignee\": \"Charlie\", \"status\": \"completed\", \"completion_time\": 5}\n\
+    \        ]\n        result = generate_performance_report(team_members, task_data)\n        self.assertIn(\"Alice\", result[\"\
+    individual_performance\"])\n        self.assertEqual(result[\"team_completion_rate\"], 75)\n        self.assertEqual(result[\"\
+    top_performer\"], \"Alice\")\n    \n    def test_skill_engine_initialization(self):\n        \"\"\"Test SkillEngine initialization.\"\
+    \"\"\n        config = {\"api_key\": \"test_key\", \"debug\": True}\n        engine = SkillEngine(config)\n        self.assertEqual(engine.config,\
+    \ config)\n        self.assertIn(\"review_content_generation\", engine.capabilities)\n    \n    def test_skill_engine_review_generation(self):\n\
+    \        \"\"\"Test SkillEngine review generation.\"\"\"\n        engine = SkillEngine({})\n        product_data = {\"\
+    name\": \"Test Product\", \"category\": \"Tech\", \"price\": 99}\n        result = engine.generate_review_content(product_data)\n\
+    \        self.assertIn(\"Product Review\", result)\n        self.assertIn(\"Test Product\", result)\n    \n    def test_skill_engine_error_handling(self):\n\
+    \        \"\"\"Test SkillEngine error handling.\"\"\"\n        engine = SkillEngine({})\n        with self.assertRaises(ValueError):\n\
+    \            engine.run(\"invalid_capability\", {})\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Automated Business Operations Suite skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''business_operations'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

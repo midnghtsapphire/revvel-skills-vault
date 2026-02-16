@@ -1,0 +1,60 @@
+name: moltbook-validator
+title: Moltbook Validator
+version: 1.0.0-alpha
+description: Validate Moltbook API requests before sending. Checks required fields (content, title, submolt), warns about
+  incorrect field names (text vs content), prevents failed posts and wasted cooldowns. Use before any POST to Moltbook API.
+metadata:
+  author: dev-jslee
+  category: Development & Coding
+  tags:
+  - development-coding
+  - moltbook
+  - validator
+  source: clawhub-community
+  clawhub_slug: moltbook-validator
+  clawhub_path: dev-jslee/moltbook-validator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltbook Validator
+
+    # Source: ClawHub community skill by dev-jslee
+
+    # Install: clawhub install moltbook-validator
+
+    # Path: dev-jslee/moltbook-validator
+
+
+    ## Description
+
+    Validate Moltbook API requests before sending. Checks required fields (content, title, submolt), warns about incorrect
+    field names (text vs content), prevents failed posts and wasted cooldowns. Use before any POST to Moltbook API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/validate.py
+
+    - scripts/validate.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbook-validator
+
+    ```'
+examples:
+- description: Install Moltbook Validator from ClawHub
+  usage: clawhub install moltbook-validator
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: carapace
+title: Eridian
+version: 1.0.0
+description: Runtime security hardening for OpenClaw agents. Protects against prompt injection, data exfiltration, credential
+  leaks, and unauthorized operations. Use when setting up agent security, performing security audits, protecting credentials,
+  preventing data leaks, hardening agent configurations, or defen
+metadata:
+  author: iampaulpatterson-boop
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - carapace
+  source: clawhub-community
+  clawhub_slug: eridian
+  clawhub_path: iampaulpatterson-boop/eridian
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Eridian
+
+    # Source: ClawHub community skill by iampaulpatterson-boop
+
+    # Install: clawhub install eridian
+
+    # Path: iampaulpatterson-boop/eridian
+
+
+    ## Description
+
+    Runtime security hardening for OpenClaw agents. Protects against prompt injection, data exfiltration, credential leaks,
+    and unauthorized operations. Use when setting up agent security, performing security audits, protecting credentials, preventing
+    data leaks, hardening agent configurations, or defen
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/attack-vectors.md
+
+    - references/audit-template.md
+
+    - references/security-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install eridian
+
+    ```'
+examples:
+- description: Install Eridian from ClawHub
+  usage: clawhub install eridian
+schema_version: '1.0'

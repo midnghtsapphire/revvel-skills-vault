@@ -1,0 +1,72 @@
+name: clawd-modifier
+title: Clawd Modifier
+version: 1.0.0
+description: Modify Clawd, the Claude Code mascot. Use this skill when users want to customize Clawd's appearance in their
+  Claude Code CLI, including changing colors (blue Clawd, green Clawd, holiday themes), adding features (arms, hats, accessories),
+  or creating custom ASCII art variants. Triggers include "chan
+metadata:
+  author: masonc15
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawd
+  - modifier
+  source: clawhub-community
+  clawhub_slug: clawd-modifier
+  clawhub_path: masonc15/clawd-modifier
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawd Modifier
+
+    # Source: ClawHub community skill by masonc15
+
+    # Install: clawhub install clawd-modifier
+
+    # Path: masonc15/clawd-modifier
+
+
+    ## Description
+
+    Modify Clawd, the Claude Code mascot. Use this skill when users want to customize Clawd''s appearance in their Claude
+    Code CLI, including changing colors (blue Clawd, green Clawd, holiday themes), adding features (arms, hats, accessories),
+    or creating custom ASCII art variants. Triggers include "chan
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/clawd-variants.txt
+
+    - references/clawd-anatomy.md
+
+    - references/unicode-blocks.md
+
+    - scripts/extract_clawd.py
+
+    - scripts/patch_art.py
+
+    - scripts/patch_binary.py
+
+    - scripts/patch_color.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawd-modifier
+
+    ```'
+examples:
+- description: Install Clawd Modifier from ClawHub
+  usage: clawhub install clawd-modifier
+schema_version: '1.0'

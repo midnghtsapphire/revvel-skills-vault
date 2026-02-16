@@ -1,0 +1,66 @@
+name: scalekit-auth
+title: Scalekit-Agent-Auth
+version: 1.0.0
+description: Secure OAuth token management via Scalekit. Handles token storage, refresh, and retrieval for third-party services
+  (Gmail, Slack, GitHub, etc.). Never stores tokens locally - always fetches fresh tokens from Scalekit.
+metadata:
+  author: avinash-kamath
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - scalekit
+  - auth
+  source: clawhub-community
+  clawhub_slug: scalekit-agent-auth
+  clawhub_path: avinash-kamath/scalekit-agent-auth
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Scalekit-Agent-Auth
+
+    # Source: ClawHub community skill by avinash-kamath
+
+    # Install: clawhub install scalekit-agent-auth
+
+    # Path: avinash-kamath/scalekit-agent-auth
+
+
+    ## Description
+
+    Secure OAuth token management via Scalekit. Handles token storage, refresh, and retrieval for third-party services (Gmail,
+    Slack, GitHub, etc.). Never stores tokens locally - always fetches fresh tokens from Scalekit.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agent_wrapper.py
+
+    - get_token.py
+
+    - requirements.txt
+
+    - scalekit_helper.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install scalekit-agent-auth
+
+    ```'
+examples:
+- description: Install Scalekit-Agent-Auth from ClawHub
+  usage: clawhub install scalekit-agent-auth
+schema_version: '1.0'

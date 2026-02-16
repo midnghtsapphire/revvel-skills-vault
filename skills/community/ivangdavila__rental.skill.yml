@@ -1,0 +1,63 @@
+name: rental
+title: Rental
+version: 1.0.0
+description: Find, negotiate, and manage rentals as tenant, landlord, host, or guest with market analysis, scam detection,
+  and lease review.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - rental
+  source: clawhub-community
+  clawhub_slug: rental
+  clawhub_path: ivangdavila/rental
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Rental
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install rental
+
+    # Path: ivangdavila/rental
+
+
+    ## Description
+
+    Find, negotiate, and manage rentals as tenant, landlord, host, or guest with market analysis, scam detection, and lease
+    review.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - equipment.md
+
+    - landlord.md
+
+    - tenant.md
+
+    - vacation.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rental
+
+    ```'
+examples:
+- description: Install Rental from ClawHub
+  usage: clawhub install rental
+schema_version: '1.0'

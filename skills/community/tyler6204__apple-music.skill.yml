@@ -1,0 +1,64 @@
+name: apple-music
+title: Apple Music
+version: 1.2.0
+description: Search Apple Music, add songs to library, manage playlists, control playback and AirPlay.
+metadata:
+  author: tyler6204
+  category: Search & Research
+  tags:
+  - search-research
+  - apple
+  - music
+  source: clawhub-community
+  clawhub_slug: apple-music
+  clawhub_path: tyler6204/apple-music
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Music
+
+    # Source: ClawHub community skill by tyler6204
+
+    # Install: clawhub install apple-music
+
+    # Path: tyler6204/apple-music
+
+
+    ## Description
+
+    Search Apple Music, add songs to library, manage playlists, control playback and AirPlay.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - apple-music.sh
+
+    - auth.html
+
+    - launch-setup.sh
+
+    - setup.sh
+
+    - lib/generate-token.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-music
+
+    ```'
+examples:
+- description: Install Apple Music from ClawHub
+  usage: clawhub install apple-music
+schema_version: '1.0'

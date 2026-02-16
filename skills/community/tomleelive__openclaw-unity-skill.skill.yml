@@ -1,0 +1,72 @@
+name: unity-plugin
+title: Unity Skill
+version: 1.6.1
+description: Control Unity Editor via OpenClaw Unity Plugin. Use for Unity game development tasks including scene management,
+  GameObject/Component manipulation, debugging, input simulation, and Play mode control. Triggers on Unity-related requests
+  like inspecting scenes, creating objects, taking screenshots, tes
+metadata:
+  author: tomleelive
+  category: Development & Coding
+  tags:
+  - development-coding
+  - unity
+  - plugin
+  source: clawhub-community
+  clawhub_slug: openclaw-unity-skill
+  clawhub_path: tomleelive/openclaw-unity-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Unity Skill
+
+    # Source: ClawHub community skill by tomleelive
+
+    # Install: clawhub install openclaw-unity-skill
+
+    # Path: tomleelive/openclaw-unity-skill
+
+
+    ## Description
+
+    Control Unity Editor via OpenClaw Unity Plugin. Use for Unity game development tasks including scene management, GameObject/Component
+    manipulation, debugging, input simulation, and Play mode control. Triggers on Unity-related requests like inspecting scenes,
+    creating objects, taking screenshots, tes
+
+
+    ## Files
+
+    - LICENSE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - extension/index.ts
+
+    - extension/openclaw.plugin.json
+
+    - extension/package.json
+
+    - references/tools.md
+
+    - scripts/install-extension.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-unity-skill
+
+    ```'
+examples:
+- description: Install Unity Skill from ClawHub
+  usage: clawhub install openclaw-unity-skill
+schema_version: '1.0'

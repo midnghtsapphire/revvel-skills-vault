@@ -1,0 +1,37 @@
+name: google-maps-reviews-api-skill
+title: Google Maps Reviews Api Skill
+version: 0.1.0
+description: 'This skill is designed to help users automatically extract reviews from Google Maps via the Google Maps Reviews
+  API. Agent should proactively apply this skill when users request to: 1. Find reviews for local businesses (e.g., coffee
+  shops, clinics); 2. Monitor customer feedback for a specific brand '
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - maps
+  - reviews
+  - api
+  - skill
+  source: clawhub-community
+  clawhub_slug: google-maps-reviews-api-skill
+  clawhub_path: phheng/google-maps-reviews-api-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Google Maps Reviews Api Skill\n# Source: ClawHub community skill by phheng\n# Install: clawhub install google-maps-reviews-api-skill\n\
+    # Path: phheng/google-maps-reviews-api-skill\n\n## Description\nThis skill is designed to help users automatically extract\
+    \ reviews from Google Maps via the Google Maps Reviews API. Agent should proactively apply this skill when users request\
+    \ to: 1. Find reviews for local businesses (e.g., coffee shops, clinics); 2. Monitor customer feedback for a specific\
+    \ brand \n\n## Files\n- SKILL.md\n- _meta.json\n- scripts/google_maps_reviews_api.py\n\n## Installation\n```bash\nclawhub\
+    \ install google-maps-reviews-api-skill\n```"
+examples:
+- description: Install Google Maps Reviews Api Skill from ClawHub
+  usage: clawhub install google-maps-reviews-api-skill
+schema_version: '1.0'

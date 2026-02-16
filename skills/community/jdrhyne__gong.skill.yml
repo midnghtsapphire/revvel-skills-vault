@@ -1,0 +1,59 @@
+name: gong
+title: Gong
+version: 1.0.0
+description: Gong API for searching calls, transcripts, and conversation intelligence. Use when working with Gong call recordings,
+  sales conversations, transcripts, meeting data, or conversation analytics. Supports listing calls, fetching transcripts,
+  user management, and activity stats.
+metadata:
+  author: jdrhyne
+  category: Search & Research
+  tags:
+  - search-research
+  - gong
+  source: clawhub-community
+  clawhub_slug: gong
+  clawhub_path: jdrhyne/gong
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gong
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install gong
+
+    # Path: jdrhyne/gong
+
+
+    ## Description
+
+    Gong API for searching calls, transcripts, and conversation intelligence. Use when working with Gong call recordings,
+    sales conversations, transcripts, meeting data, or conversation analytics. Supports listing calls, fetching transcripts,
+    user management, and activity stats.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gong.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gong
+
+    ```'
+examples:
+- description: Install Gong from ClawHub
+  usage: clawhub install gong
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: esxi
+title: ESXi Management
+version: 1.1.0
+description: Manage VMware ESXi hosts and virtual machines via SSH and vim-cmd. Use when interacting with ESXi infrastructure
+  for VM operations (list, start, stop, snapshot), host monitoring, resource checking, or troubleshooting ESXi servers.
+metadata:
+  author: dlewis7444
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - esxi
+  source: clawhub-community
+  clawhub_slug: esxi
+  clawhub_path: dlewis7444/esxi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ESXi Management
+
+    # Source: ClawHub community skill by dlewis7444
+
+    # Install: clawhub install esxi
+
+    # Path: dlewis7444/esxi
+
+
+    ## Description
+
+    Manage VMware ESXi hosts and virtual machines via SSH and vim-cmd. Use when interacting with ESXi infrastructure for VM
+    operations (list, start, stop, snapshot), host monitoring, resource checking, or troubleshooting ESXi servers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/host-info.sh
+
+    - scripts/vm-control.sh
+
+    - scripts/vm-create.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install esxi
+
+    ```'
+examples:
+- description: Install ESXi Management from ClawHub
+  usage: clawhub install esxi
+schema_version: '1.0'

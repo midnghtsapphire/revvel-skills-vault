@@ -1,0 +1,56 @@
+name: file_organizer
+title: File Organizer
+version: 1.0.0
+description: Automatically organize files in a specified directory by moving them into subfolders based on their file extensions.
+  Use for cleaning up messy folders like Downloads or Desktop.
+metadata:
+  author: lkz4203
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - file
+  - organizer
+  source: clawhub-community
+  clawhub_slug: file-organizer
+  clawhub_path: lkz4203/file-organizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# File Organizer
+
+    # Source: ClawHub community skill by lkz4203
+
+    # Install: clawhub install file-organizer
+
+    # Path: lkz4203/file-organizer
+
+
+    ## Description
+
+    Automatically organize files in a specified directory by moving them into subfolders based on their file extensions. Use
+    for cleaning up messy folders like Downloads or Desktop.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install file-organizer
+
+    ```'
+examples:
+- description: Install File Organizer from ClawHub
+  usage: clawhub install file-organizer
+schema_version: '1.0'

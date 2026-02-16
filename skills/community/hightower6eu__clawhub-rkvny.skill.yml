@@ -1,0 +1,57 @@
+name: clawhub
+title: Clawhub
+version: 1.0.0
+description: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need
+  to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders
+  with the npm-installed clawhub CLI.
+metadata:
+  author: hightower6eu
+  category: Search & Research
+  tags:
+  - search-research
+  - clawhub
+  source: clawhub-community
+  clawhub_slug: clawhub-rkvny
+  clawhub_path: hightower6eu/clawhub-rkvny
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawhub
+
+    # Source: ClawHub community skill by hightower6eu
+
+    # Install: clawhub install clawhub-rkvny
+
+    # Path: hightower6eu/clawhub-rkvny
+
+
+    ## Description
+
+    Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch
+    new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with
+    the npm-installed clawhub CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawhub-rkvny
+
+    ```'
+examples:
+- description: Install Clawhub from ClawHub
+  usage: clawhub install clawhub-rkvny
+schema_version: '1.0'

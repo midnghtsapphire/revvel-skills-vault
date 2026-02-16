@@ -1,0 +1,59 @@
+name: torch-liquidation-agent
+title: Torch Liquidation Agent
+version: 1.0.3
+description: Read-only lending market scanner for Torch Market on Solana. No wallet required. Scans lending markets, profiles
+  borrower wallets, and scores loans by risk. Default info mode makes no state changes and requires only an RPC endpoint.
+  Optional bot mode (requires wallet) can execute liquidations on pos
+metadata:
+  author: mrsirg97-rgb
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - torch
+  - liquidation
+  - agent
+  source: clawhub-community
+  clawhub_slug: torchliquidationagent
+  clawhub_path: mrsirg97-rgb/torchliquidationagent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Torch Liquidation Agent
+
+    # Source: ClawHub community skill by mrsirg97-rgb
+
+    # Install: clawhub install torchliquidationagent
+
+    # Path: mrsirg97-rgb/torchliquidationagent
+
+
+    ## Description
+
+    Read-only lending market scanner for Torch Market on Solana. No wallet required. Scans lending markets, profiles borrower
+    wallets, and scores loans by risk. Default info mode makes no state changes and requires only an RPC endpoint. Optional
+    bot mode (requires wallet) can execute liquidations on pos
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install torchliquidationagent
+
+    ```'
+examples:
+- description: Install Torch Liquidation Agent from ClawHub
+  usage: clawhub install torchliquidationagent
+schema_version: '1.0'

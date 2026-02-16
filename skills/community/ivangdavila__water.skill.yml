@@ -1,0 +1,58 @@
+name: _water_tracker_
+title: Water Tracker
+version: 1.0.0
+description: '"Auto-learns your hydration habits. Tracks water intake from casual mentions without precise measuring."'
+metadata:
+  author: ivangdavila
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - '"water'
+  - tracker"
+  source: clawhub-community
+  clawhub_slug: water
+  clawhub_path: ivangdavila/water
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Water Tracker
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install water
+
+    # Path: ivangdavila/water
+
+
+    ## Description
+
+    "Auto-learns your hydration habits. Tracks water intake from casual mentions without precise measuring."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - containers.md
+
+    - patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install water
+
+    ```'
+examples:
+- description: Install Water Tracker from ClawHub
+  usage: clawhub install water
+schema_version: '1.0'

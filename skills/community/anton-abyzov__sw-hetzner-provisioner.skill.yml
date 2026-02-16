@@ -1,0 +1,60 @@
+name: hetzner-provisioner
+title: Hetzner Provisioner
+version: 1.0.0
+description: Provisions infrastructure on Hetzner Cloud with Terraform/Pulumi. Generates IaC code for CX11/CX21/CX31 instances,
+  managed Postgres, SSL configuration, Docker deployment. Activates for deploy on Hetzner, Hetzner Cloud, budget deployment,
+  cheap hosting, $10/month hosting.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - hetzner
+  - provisioner
+  source: clawhub-community
+  clawhub_slug: sw-hetzner-provisioner
+  clawhub_path: anton-abyzov/sw-hetzner-provisioner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hetzner Provisioner
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-hetzner-provisioner
+
+    # Path: anton-abyzov/sw-hetzner-provisioner
+
+
+    ## Description
+
+    Provisions infrastructure on Hetzner Cloud with Terraform/Pulumi. Generates IaC code for CX11/CX21/CX31 instances, managed
+    Postgres, SSL configuration, Docker deployment. Activates for deploy on Hetzner, Hetzner Cloud, budget deployment, cheap
+    hosting, $10/month hosting.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-hetzner-provisioner
+
+    ```'
+examples:
+- description: Install Hetzner Provisioner from ClawHub
+  usage: clawhub install sw-hetzner-provisioner
+schema_version: '1.0'

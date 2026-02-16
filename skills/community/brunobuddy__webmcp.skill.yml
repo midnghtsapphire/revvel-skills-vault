@@ -1,0 +1,57 @@
+name: webmcp
+title: WebMCP
+version: 1.0.0
+description: This skill should be used when browsing or automating web pages that expose tools via the WebMCP API (window.navigator.modelContext).
+  It teaches agents how to discover, inspect, and invoke WebMCP tools on websites instead of relying on DOM scraping or UI
+  actuation.
+metadata:
+  author: brunobuddy
+  category: Development & Coding
+  tags:
+  - development-coding
+  - webmcp
+  source: clawhub-community
+  clawhub_slug: webmcp
+  clawhub_path: brunobuddy/webmcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WebMCP
+
+    # Source: ClawHub community skill by brunobuddy
+
+    # Install: clawhub install webmcp
+
+    # Path: brunobuddy/webmcp
+
+
+    ## Description
+
+    This skill should be used when browsing or automating web pages that expose tools via the WebMCP API (window.navigator.modelContext).
+    It teaches agents how to discover, inspect, and invoke WebMCP tools on websites instead of relying on DOM scraping or
+    UI actuation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install webmcp
+
+    ```'
+examples:
+- description: Install WebMCP from ClawHub
+  usage: clawhub install webmcp
+schema_version: '1.0'

@@ -1,0 +1,67 @@
+name: agent-passport-lite
+title: Agent Passport Lite
+version: 2.0.2
+description: '"OAuth for the agentic era — consent-gating for ALL sensitive agent actions including purchases, emails, file
+  operations, system commands, and API calls. Provides spending caps, rate limits, allowlists, TTL expiry, audit trails, and
+  KYA (Know Your Agent) metadata."'
+metadata:
+  author: markneville
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - agent
+  - passport
+  - lite
+  source: clawhub-community
+  clawhub_slug: agent-passport
+  clawhub_path: markneville/agent-passport
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Passport Lite
+
+    # Source: ClawHub community skill by markneville
+
+    # Install: clawhub install agent-passport
+
+    # Path: markneville/agent-passport
+
+
+    ## Description
+
+    "OAuth for the agentic era — consent-gating for ALL sensitive agent actions including purchases, emails, file operations,
+    system commands, and API calls. Provides spending caps, rate limits, allowlists, TTL expiry, audit trails, and KYA (Know
+    Your Agent) metadata."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/mandates.md
+
+    - scripts/mandate-ledger.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-passport
+
+    ```'
+examples:
+- description: Install Agent Passport Lite from ClawHub
+  usage: clawhub install agent-passport
+schema_version: '1.0'

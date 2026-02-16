@@ -1,0 +1,64 @@
+name: dashboard
+title: Clawd Dashboard
+version: 1.0.0
+description: ''
+metadata:
+  author: joetomasone
+  category: General
+  tags:
+  - general
+  - dashboard
+  source: clawhub-community
+  clawhub_slug: dashboard
+  clawhub_path: joetomasone/dashboard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawd Dashboard
+
+    # Source: ClawHub community skill by joetomasone
+
+    # Install: clawhub install dashboard
+
+    # Path: joetomasone/dashboard
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - setup.sh
+
+    - skill.json
+
+    - src/app.py
+
+    - src/static/css/style.css
+
+    - src/static/js/dashboard.js
+
+    - src/templates/index.html
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dashboard
+
+    ```'
+examples:
+- description: Install Clawd Dashboard from ClawHub
+  usage: clawhub install dashboard
+schema_version: '1.0'

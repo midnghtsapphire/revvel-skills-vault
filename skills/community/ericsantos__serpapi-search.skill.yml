@@ -1,0 +1,59 @@
+name: serpapi
+title: SerpAPI Search
+version: 1.0.0
+description: Search Google via SerpAPI (Google Search, Google News, Google Local). Use when you need to search the web, find
+  news articles, or look up local businesses. Supports country/language targeting for region-specific results.
+metadata:
+  author: ericsantos
+  category: Search & Research
+  tags:
+  - search-research
+  - serpapi
+  source: clawhub-community
+  clawhub_slug: serpapi-search
+  clawhub_path: ericsantos/serpapi-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SerpAPI Search
+
+    # Source: ClawHub community skill by ericsantos
+
+    # Install: clawhub install serpapi-search
+
+    # Path: ericsantos/serpapi-search
+
+
+    ## Description
+
+    Search Google via SerpAPI (Google Search, Google News, Google Local). Use when you need to search the web, find news articles,
+    or look up local businesses. Supports country/language targeting for region-specific results.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/format.py
+
+    - scripts/search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install serpapi-search
+
+    ```'
+examples:
+- description: Install SerpAPI Search from ClawHub
+  usage: clawhub install serpapi-search
+schema_version: '1.0'

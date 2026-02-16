@@ -1,0 +1,65 @@
+name: codecast
+title: Codecast
+version: 2.0.2
+description: Stream coding agent sessions (Claude Code, Codex, Gemini CLI, etc.) to a Discord channel in real-time via webhook.
+  Use when invoking coding agents and wanting transparent, observable dev sessions — no black box. Parses Claude Code's stream-json
+  output into clean formatted Discord messages showing to
+metadata:
+  author: allanjeng
+  category: Social Media
+  tags:
+  - social-media
+  - codecast
+  source: clawhub-community
+  clawhub_slug: codecast
+  clawhub_path: allanjeng/codecast
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Codecast
+
+    # Source: ClawHub community skill by allanjeng
+
+    # Install: clawhub install codecast
+
+    # Path: allanjeng/codecast
+
+
+    ## Description
+
+    Stream coding agent sessions (Claude Code, Codex, Gemini CLI, etc.) to a Discord channel in real-time via webhook. Use
+    when invoking coding agents and wanting transparent, observable dev sessions — no black box. Parses Claude Code''s stream-json
+    output into clean formatted Discord messages showing to
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/dev-relay.sh
+
+    - scripts/parse-stream.py
+
+    - scripts/platforms/__init__.py
+
+    - scripts/platforms/discord.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install codecast
+
+    ```'
+examples:
+- description: Install Codecast from ClawHub
+  usage: clawhub install codecast
+schema_version: '1.0'

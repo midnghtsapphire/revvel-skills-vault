@@ -1,0 +1,56 @@
+name: scrappa_mcp
+title: Scrappa MCP
+version: 0.1.0
+description: Access Scrappa's MCP server for Google, YouTube, Amazon, LinkedIn, Trustpilot, flights, hotels, and more via
+  Model Context Protocol
+metadata:
+  author: userlip
+  category: Search & Research
+  tags:
+  - search-research
+  - scrappa
+  - mcp
+  source: clawhub-community
+  clawhub_slug: scrappa-skill
+  clawhub_path: userlip/scrappa-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Scrappa MCP
+
+    # Source: ClawHub community skill by userlip
+
+    # Install: clawhub install scrappa-skill
+
+    # Path: userlip/scrappa-skill
+
+
+    ## Description
+
+    Access Scrappa''s MCP server for Google, YouTube, Amazon, LinkedIn, Trustpilot, flights, hotels, and more via Model Context
+    Protocol
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install scrappa-skill
+
+    ```'
+examples:
+- description: Install Scrappa MCP from ClawHub
+  usage: clawhub install scrappa-skill
+schema_version: '1.0'

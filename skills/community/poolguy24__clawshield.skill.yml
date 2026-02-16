@@ -1,0 +1,60 @@
+name: clawshield
+title: ClawShield
+version: 1.1.0
+description: '"OpenClaw security audit + prompt injection detector. Scans gateway/vulns/cron/PI patterns. Use for frenzy-proofing
+  installs."'
+metadata:
+  author: poolguy24
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawshield
+  source: clawhub-community
+  clawhub_slug: clawshield
+  clawhub_path: poolguy24/clawshield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawShield
+
+    # Source: ClawHub community skill by poolguy24
+
+    # Install: clawhub install clawshield
+
+    # Path: poolguy24/clawshield
+
+
+    ## Description
+
+    "OpenClaw security audit + prompt injection detector. Scans gateway/vulns/cron/PI patterns. Use for frenzy-proofing installs."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/panel.html
+
+    - references/threats.md
+
+    - scripts/audit.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawshield
+
+    ```'
+examples:
+- description: Install ClawShield from ClawHub
+  usage: clawhub install clawshield
+schema_version: '1.0'

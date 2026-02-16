@@ -1,0 +1,56 @@
+name: remote-agent
+title: clawhub-skill-remote-agent
+version: 1.0.1
+description: Bridge to external vertical agents (Google ADK, VeADK, etc.) for specialized tasks.
+metadata:
+  author: sqsge
+  category: Search & Research
+  tags:
+  - search-research
+  - remote
+  - agent
+  source: clawhub-community
+  clawhub_slug: clawhub-skill-remote-agent
+  clawhub_path: sqsge/clawhub-skill-remote-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawhub-skill-remote-agent
+
+    # Source: ClawHub community skill by sqsge
+
+    # Install: clawhub install clawhub-skill-remote-agent
+
+    # Path: sqsge/clawhub-skill-remote-agent
+
+
+    ## Description
+
+    Bridge to external vertical agents (Google ADK, VeADK, etc.) for specialized tasks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawhub-skill-remote-agent
+
+    ```'
+examples:
+- description: Install clawhub-skill-remote-agent from ClawHub
+  usage: clawhub install clawhub-skill-remote-agent
+schema_version: '1.0'

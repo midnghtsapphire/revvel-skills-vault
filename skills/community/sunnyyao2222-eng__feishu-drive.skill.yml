@@ -1,0 +1,54 @@
+name: feishu-drive
+title: feishu-drive
+version: 1.0.0
+description: 飞书云空间文件管理 Skill。上传/下载/移动/搜索文件、创建文件夹、获取元数据等。当需要管理飞书云空间中的文件和文件夹时使用此 Skill。
+metadata:
+  author: sunnyyao2222-eng
+  category: General
+  tags:
+  - general
+  - feishu
+  - drive
+  source: clawhub-community
+  clawhub_slug: feishu-drive
+  clawhub_path: sunnyyao2222-eng/feishu-drive
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# feishu-drive
+
+    # Source: ClawHub community skill by sunnyyao2222-eng
+
+    # Install: clawhub install feishu-drive
+
+    # Path: sunnyyao2222-eng/feishu-drive
+
+
+    ## Description
+
+    飞书云空间文件管理 Skill。上传/下载/移动/搜索文件、创建文件夹、获取元数据等。当需要管理飞书云空间中的文件和文件夹时使用此 Skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-drive
+
+    ```'
+examples:
+- description: Install feishu-drive from ClawHub
+  usage: clawhub install feishu-drive
+schema_version: '1.0'

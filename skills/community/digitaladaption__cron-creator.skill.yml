@@ -1,0 +1,58 @@
+name: cron-creator
+title: Cron Creator
+version: 0.1.0
+description: '"Create Clawdbot cron jobs from natural language. Use when: users want to schedule recurring messages, reminders,
+  or check-ins without using terminal commands. Examples: ''Create a daily reminder at 8am'', ''Set up a weekly check-in on
+  Mondays'', ''Remind me to drink water every 2 hours''."'
+metadata:
+  author: digitaladaption
+  category: Communication
+  tags:
+  - communication
+  - cron
+  - creator
+  source: clawhub-community
+  clawhub_slug: cron-creator
+  clawhub_path: digitaladaption/cron-creator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cron Creator
+
+    # Source: ClawHub community skill by digitaladaption
+
+    # Install: clawhub install cron-creator
+
+    # Path: digitaladaption/cron-creator
+
+
+    ## Description
+
+    "Create Clawdbot cron jobs from natural language. Use when: users want to schedule recurring messages, reminders, or check-ins
+    without using terminal commands. Examples: ''Create a daily reminder at 8am'', ''Set up a weekly check-in on Mondays'',
+    ''Remind me to drink water every 2 hours''."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cron-creator
+
+    ```'
+examples:
+- description: Install Cron Creator from ClawHub
+  usage: clawhub install cron-creator
+schema_version: '1.0'

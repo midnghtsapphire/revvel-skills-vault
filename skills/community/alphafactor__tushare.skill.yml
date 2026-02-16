@@ -1,0 +1,63 @@
+name: tushare
+title: Tushare Financial Data
+version: 1.0.1
+description: Fetch Chinese stock and futures market data via Tushare API. Supports stock quotes, futures data, company fundamentals,
+  and macroeconomic indicators. Use when the user needs financial data from Chinese markets. Requires TUSHARE_TOKEN environment
+  variable.
+metadata:
+  author: alphafactor
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tushare
+  source: clawhub-community
+  clawhub_slug: tushare
+  clawhub_path: alphafactor/tushare
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tushare Financial Data
+
+    # Source: ClawHub community skill by alphafactor
+
+    # Install: clawhub install tushare
+
+    # Path: alphafactor/tushare
+
+
+    ## Description
+
+    Fetch Chinese stock and futures market data via Tushare API. Supports stock quotes, futures data, company fundamentals,
+    and macroeconomic indicators. Use when the user needs financial data from Chinese markets. Requires TUSHARE_TOKEN environment
+    variable.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/futures_api.md
+
+    - references/stock_api.md
+
+    - scripts/market.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tushare
+
+    ```'
+examples:
+- description: Install Tushare Financial Data from ClawHub
+  usage: clawhub install tushare
+schema_version: '1.0'

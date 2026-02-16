@@ -1,0 +1,64 @@
+name: faster-whisper
+title: Faster Whisper
+version: 1.0.4
+description: Local speech-to-text using faster-whisper. 4-6x faster than OpenAI Whisper with identical accuracy; GPU acceleration
+  enables ~20x realtime transcription. Supports standard and distilled models with word-level timestamps.
+metadata:
+  author: theplasmak
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - faster
+  - whisper
+  source: clawhub-community
+  clawhub_slug: faster-whisper
+  clawhub_path: theplasmak/faster-whisper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Faster Whisper
+
+    # Source: ClawHub community skill by theplasmak
+
+    # Install: clawhub install faster-whisper
+
+    # Path: theplasmak/faster-whisper
+
+
+    ## Description
+
+    Local speech-to-text using faster-whisper. 4-6x faster than OpenAI Whisper with identical accuracy; GPU acceleration enables
+    ~20x realtime transcription. Supports standard and distilled models with word-level timestamps.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - setup.sh
+
+    - skill.json
+
+    - scripts/transcribe.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install faster-whisper
+
+    ```'
+examples:
+- description: Install Faster Whisper from ClawHub
+  usage: clawhub install faster-whisper
+schema_version: '1.0'

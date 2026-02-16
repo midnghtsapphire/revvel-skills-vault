@@ -1,0 +1,64 @@
+name: weeek-tasks
+title: weeek-tasks
+version: 1.0.0
+description: '"Управление задачами WEEEK через Public API (Task Manager): получать список задач, создавать/обновлять/завершать
+  задачи, перемещать между досками/колонками, получать список досок и колонок. Использовать при интеграции с WEEEK API и работе
+  с задачами/досками/колонками."'
+metadata:
+  author: alex-indi
+  category: Development & Coding
+  tags:
+  - development-coding
+  - weeek
+  - tasks
+  source: clawhub-community
+  clawhub_slug: weeek-tasks
+  clawhub_path: alex-indi/weeek-tasks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# weeek-tasks
+
+    # Source: ClawHub community skill by alex-indi
+
+    # Install: clawhub install weeek-tasks
+
+    # Path: alex-indi/weeek-tasks
+
+
+    ## Description
+
+    "Управление задачами WEEEK через Public API (Task Manager): получать список задач, создавать/обновлять/завершать задачи,
+    перемещать между досками/колонками, получать список досок и колонок. Использовать при интеграции с WEEEK API и работе
+    с задачами/досками/колонками."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/api.md
+
+    - scripts/weeek_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install weeek-tasks
+
+    ```'
+examples:
+- description: Install weeek-tasks from ClawHub
+  usage: clawhub install weeek-tasks
+schema_version: '1.0'

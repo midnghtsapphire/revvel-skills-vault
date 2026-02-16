@@ -1,0 +1,62 @@
+name: server-monitor
+title: Server Monitor
+version: 1.0.0
+description: 服务器监控技能 - 监控服务器状态、磁盘使用率、内存使用率、CPU负载等
+metadata:
+  author: michaelhotss
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - server
+  - monitor
+  source: clawhub-community
+  clawhub_slug: server-monitor
+  clawhub_path: michaelhotss/server-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Server Monitor
+
+    # Source: ClawHub community skill by michaelhotss
+
+    # Install: clawhub install server-monitor
+
+    # Path: michaelhotss/server-monitor
+
+
+    ## Description
+
+    服务器监控技能 - 监控服务器状态、磁盘使用率、内存使用率、CPU负载等
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package.json
+
+    - test.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install server-monitor
+
+    ```'
+examples:
+- description: Install Server Monitor from ClawHub
+  usage: clawhub install server-monitor
+schema_version: '1.0'

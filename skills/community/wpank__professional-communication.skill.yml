@@ -1,0 +1,67 @@
+name: professional-communication
+title: Professional Communication
+version: 0.1.0
+description: Write effective professional messages for software teams. Use when drafting emails, Slack/Teams messages, meeting
+  agendas, status updates, or translating technical concepts for non-technical audiences. Triggers on email, slack, teams,
+  message, meeting agenda, status update, stakeholder communication
+metadata:
+  author: wpank
+  category: Communication
+  tags:
+  - communication
+  - professional
+  source: clawhub-community
+  clawhub_slug: professional-communication
+  clawhub_path: wpank/professional-communication
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Professional Communication
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install professional-communication
+
+    # Path: wpank/professional-communication
+
+
+    ## Description
+
+    Write effective professional messages for software teams. Use when drafting emails, Slack/Teams messages, meeting agendas,
+    status updates, or translating technical concepts for non-technical audiences. Triggers on email, slack, teams, message,
+    meeting agenda, status update, stakeholder communication
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/email-templates.md
+
+    - references/jargon-simplification.md
+
+    - references/meeting-structures.md
+
+    - references/remote-async-communication.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install professional-communication
+
+    ```'
+examples:
+- description: Install Professional Communication from ClawHub
+  usage: clawhub install professional-communication
+schema_version: '1.0'

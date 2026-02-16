@@ -1,0 +1,59 @@
+name: metamask_agent_wallet
+title: MetaMask Agent Wallet
+version: 0.1.0
+description: Control a sandboxed MetaMask browser extension wallet for autonomous blockchain transactions. Features configurable
+  permission guardrails including spend limits, chain allowlists, protocol restrictions, and approval thresholds. MetaMask-only
+  (other wallets not supported).
+metadata:
+  author: andreolf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - metamask
+  - agent
+  - wallet
+  source: clawhub-community
+  clawhub_slug: metamask-agent-wallet-skill
+  clawhub_path: andreolf/metamask-agent-wallet-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MetaMask Agent Wallet
+
+    # Source: ClawHub community skill by andreolf
+
+    # Install: clawhub install metamask-agent-wallet-skill
+
+    # Path: andreolf/metamask-agent-wallet-skill
+
+
+    ## Description
+
+    Control a sandboxed MetaMask browser extension wallet for autonomous blockchain transactions. Features configurable permission
+    guardrails including spend limits, chain allowlists, protocol restrictions, and approval thresholds. MetaMask-only (other
+    wallets not supported).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install metamask-agent-wallet-skill
+
+    ```'
+examples:
+- description: Install MetaMask Agent Wallet from ClawHub
+  usage: clawhub install metamask-agent-wallet-skill
+schema_version: '1.0'

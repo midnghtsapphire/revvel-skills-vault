@@ -1,0 +1,60 @@
+name: youtube-channels
+title: Youtube Channels
+version: 1.4.1
+description: Work with YouTube channels — resolve handles to IDs, browse uploads, get latest videos, search within channels.
+  Use when the user asks about a specific channel, wants to see recent uploads, or says "what has X posted lately", "latest
+  from TED", "show me their channel", "list channel videos", "browse
+metadata:
+  author: therohitdas
+  category: Search & Research
+  tags:
+  - search-research
+  - youtube
+  - channels
+  source: clawhub-community
+  clawhub_slug: youtube-channels
+  clawhub_path: therohitdas/youtube-channels
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Youtube Channels
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install youtube-channels
+
+    # Path: therohitdas/youtube-channels
+
+
+    ## Description
+
+    Work with YouTube channels — resolve handles to IDs, browse uploads, get latest videos, search within channels. Use when
+    the user asks about a specific channel, wants to see recent uploads, or says "what has X posted lately", "latest from
+    TED", "show me their channel", "list channel videos", "browse
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tapi-auth.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-channels
+
+    ```'
+examples:
+- description: Install Youtube Channels from ClawHub
+  usage: clawhub install youtube-channels
+schema_version: '1.0'

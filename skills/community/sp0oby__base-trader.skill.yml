@@ -1,0 +1,74 @@
+name: base-trader
+title: Base Trader
+version: 1.1.1
+description: Autonomous crypto trading on Base via Bankr. Use for trading tokens, monitoring launches, executing strategies,
+  or managing a trading portfolio. Triggers on "trade", "buy", "sell", "launch", "snipe", "profit", "PnL", "portfolio balance",
+  or any crypto trading task on Base.
+metadata:
+  author: sp0oby
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - base
+  - trader
+  source: clawhub-community
+  clawhub_slug: base-trader
+  clawhub_path: sp0oby/base-trader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Base Trader
+
+    # Source: ClawHub community skill by sp0oby
+
+    # Install: clawhub install base-trader
+
+    # Path: sp0oby/base-trader
+
+
+    ## Description
+
+    Autonomous crypto trading on Base via Bankr. Use for trading tokens, monitoring launches, executing strategies, or managing
+    a trading portfolio. Triggers on "trade", "buy", "sell", "launch", "snipe", "profit", "PnL", "portfolio balance", or any
+    crypto trading task on Base.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/performance.json
+
+    - data/trades.json
+
+    - references/automation-strategies.md
+
+    - references/execution.md
+
+    - references/launch-sniping.md
+
+    - references/leverage-guide.md
+
+    - references/market-analysis.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install base-trader
+
+    ```'
+examples:
+- description: Install Base Trader from ClawHub
+  usage: clawhub install base-trader
+schema_version: '1.0'

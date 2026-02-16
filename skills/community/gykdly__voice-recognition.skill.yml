@@ -1,0 +1,57 @@
+name: voice-recognition
+title: Voice Recognition
+version: 1.0.0
+description: Local speech-to-text with OpenAI Whisper CLI. Supports Chinese, English, 100+ languages with translation and
+  summarization.
+metadata:
+  author: gykdly
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - voice
+  - recognition
+  source: clawhub-community
+  clawhub_slug: voice-recognition
+  clawhub_path: gykdly/voice-recognition
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Voice Recognition
+
+    # Source: ClawHub community skill by gykdly
+
+    # Install: clawhub install voice-recognition
+
+    # Path: gykdly/voice-recognition
+
+
+    ## Description
+
+    Local speech-to-text with OpenAI Whisper CLI. Supports Chinese, English, 100+ languages with translation and summarization.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/voice识别_升级版.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install voice-recognition
+
+    ```'
+examples:
+- description: Install Voice Recognition from ClawHub
+  usage: clawhub install voice-recognition
+schema_version: '1.0'

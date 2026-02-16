@@ -1,0 +1,68 @@
+name: setup-agent-wallet
+title: Uniswap Setup Agent Wallet
+version: 0.1.0
+description: Set up an agent wallet for Uniswap operations. Use when user needs to provision a wallet for an autonomous agent.
+  Supports Privy (development), Turnkey (production), and Safe (maximum security). Configures spending limits, token allowlists,
+  and funds the wallet for gas.
+metadata:
+  author: wpank
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - setup
+  - agent
+  - wallet
+  - '[task(subagent_type:wallet-provisioner)]'
+  source: clawhub-community
+  clawhub_slug: setup-agent-wallet
+  clawhub_path: wpank/setup-agent-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:wallet-provisioner)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Setup Agent Wallet
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install setup-agent-wallet
+
+    # Path: wpank/setup-agent-wallet
+
+
+    ## Description
+
+    Set up an agent wallet for Uniswap operations. Use when user needs to provision a wallet for an autonomous agent. Supports
+    Privy (development), Turnkey (production), and Safe (maximum security). Configures spending limits, token allowlists,
+    and funds the wallet for gas.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:wallet-provisioner)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install setup-agent-wallet
+
+    ```'
+examples:
+- description: Install Uniswap Setup Agent Wallet from ClawHub
+  usage: clawhub install setup-agent-wallet
+schema_version: '1.0'

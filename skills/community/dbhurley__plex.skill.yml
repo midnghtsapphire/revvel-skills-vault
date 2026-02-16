@@ -1,0 +1,53 @@
+name: plex
+title: Plex Media Server
+version: 1.0.0
+description: Control Plex Media Server - browse libraries, search, play media, manage playback.
+metadata:
+  author: dbhurley
+  category: Search & Research
+  tags:
+  - search-research
+  - plex
+  source: clawhub-community
+  clawhub_slug: plex
+  clawhub_path: dbhurley/plex
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Plex Media Server
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install plex
+
+    # Path: dbhurley/plex
+
+
+    ## Description
+
+    Control Plex Media Server - browse libraries, search, play media, manage playback.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install plex
+
+    ```'
+examples:
+- description: Install Plex Media Server from ClawHub
+  usage: clawhub install plex
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: location-awareness
+title: Location Awareness
+version: 1.2.0
+description: Location awareness via privacy-friendly GPS tracking (Home Assistant, OwnTracks, GPS Logger). Set location-based
+  reminders and ask about movement history, travel time, and nearby POIs.
+metadata:
+  author: hegghammer
+  category: Utilities
+  tags:
+  - utilities
+  - location
+  - awareness
+  source: clawhub-community
+  clawhub_slug: location-awareness
+  clawhub_path: hegghammer/location-awareness
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Location Awareness
+
+    # Source: ClawHub community skill by hegghammer
+
+    # Install: clawhub install location-awareness
+
+    # Path: hegghammer/location-awareness
+
+
+    ## Description
+
+    Location awareness via privacy-friendly GPS tracking (Home Assistant, OwnTracks, GPS Logger). Set location-based reminders
+    and ask about movement history, travel time, and nearby POIs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/config.json
+
+    - scripts/geofences.json
+
+    - scripts/location.py
+
+    - scripts/location.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install location-awareness
+
+    ```'
+examples:
+- description: Install Location Awareness from ClawHub
+  usage: clawhub install location-awareness
+schema_version: '1.0'

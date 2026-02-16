@@ -1,0 +1,72 @@
+name: vercel-deploy
+title: Vercel Deploy
+version: 1.0.0
+description: Deploy and manage Vercel projects. Use when deploying applications to Vercel, managing environment variables,
+  checking deployment status, viewing logs, or performing Vercel operations. Supports production and preview deployments.
+  Practical infrastructure operations - no "AI will build your app" magi
+metadata:
+  author: nightfullstar
+  category: Development & Coding
+  tags:
+  - development-coding
+  - vercel
+  - deploy
+  source: clawhub-community
+  clawhub_slug: vercel-deploy
+  clawhub_path: nightfullstar/vercel-deploy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vercel Deploy
+
+    # Source: ClawHub community skill by nightfullstar
+
+    # Install: clawhub install vercel-deploy
+
+    # Path: nightfullstar/vercel-deploy
+
+
+    ## Description
+
+    Deploy and manage Vercel projects. Use when deploying applications to Vercel, managing environment variables, checking
+    deployment status, viewing logs, or performing Vercel operations. Supports production and preview deployments. Practical
+    infrastructure operations - no "AI will build your app" magi
+
+
+    ## Files
+
+    - README.md
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/deployment-patterns.md
+
+    - references/vercel-api.md
+
+    - scripts/vercel_deploy.sh
+
+    - scripts/vercel_env.sh
+
+    - scripts/vercel_status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vercel-deploy
+
+    ```'
+examples:
+- description: Install Vercel Deploy from ClawHub
+  usage: clawhub install vercel-deploy
+schema_version: '1.0'

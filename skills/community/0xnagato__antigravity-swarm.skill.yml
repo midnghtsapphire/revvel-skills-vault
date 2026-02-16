@@ -1,0 +1,72 @@
+name: antigravity-swarm
+title: Antigravity Swarm
+version: 1.0.0
+description: Deploys autonomous sub-agents to perform tasks in the Antigravity IDE. Supports both manual dispatch and dynamic
+  "Auto-Hiring" of agent teams.
+metadata:
+  author: 0xnagato
+  category: Development & Coding
+  tags:
+  - development-coding
+  - antigravity
+  - swarm
+  source: clawhub-community
+  clawhub_slug: antigravity-swarm
+  clawhub_path: 0xnagato/antigravity-swarm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Antigravity Swarm
+
+    # Source: ClawHub community skill by 0xnagato
+
+    # Install: clawhub install antigravity-swarm
+
+    # Path: 0xnagato/antigravity-swarm
+
+
+    ## Description
+
+    Deploys autonomous sub-agents to perform tasks in the Antigravity IDE. Supports both manual dispatch and dynamic "Auto-Hiring"
+    of agent teams.
+
+
+    ## Files
+
+    - GEMINI_example.md
+
+    - README.md
+
+    - README_KO.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - gemini-extension.json
+
+    - package.json
+
+    - requirements.txt
+
+    - scripts/compactor.py
+
+    - scripts/dispatch_agent.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install antigravity-swarm
+
+    ```'
+examples:
+- description: Install Antigravity Swarm from ClawHub
+  usage: clawhub install antigravity-swarm
+schema_version: '1.0'

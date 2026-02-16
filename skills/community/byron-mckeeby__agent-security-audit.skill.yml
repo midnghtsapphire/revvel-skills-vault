@@ -1,0 +1,55 @@
+name: agent-security-audit
+title: Agent Security Audit
+version: 1.0.0
+description: エージェント向けプロンプト・インジェクション防御チェックリスト
+metadata:
+  author: byron-mckeeby
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - agent
+  - security
+  - audit
+  source: clawhub-community
+  clawhub_slug: agent-security-audit
+  clawhub_path: byron-mckeeby/agent-security-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Security Audit
+
+    # Source: ClawHub community skill by byron-mckeeby
+
+    # Install: clawhub install agent-security-audit
+
+    # Path: byron-mckeeby/agent-security-audit
+
+
+    ## Description
+
+    エージェント向けプロンプト・インジェクション防御チェックリスト
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-security-audit
+
+    ```'
+examples:
+- description: Install Agent Security Audit from ClawHub
+  usage: clawhub install agent-security-audit
+schema_version: '1.0'

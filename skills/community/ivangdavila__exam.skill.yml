@@ -1,0 +1,61 @@
+name: exam
+title: Exam
+version: 1.0.0
+description: Generate practice tests, flashcards, study schedules, and timed simulations from any study material.
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - exam
+  source: clawhub-community
+  clawhub_slug: exam
+  clawhub_path: ivangdavila/exam
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Exam
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install exam
+
+    # Path: ivangdavila/exam
+
+
+    ## Description
+
+    Generate practice tests, flashcards, study schedules, and timed simulations from any study material.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - flashcards.md
+
+    - questions.md
+
+    - simulations.md
+
+    - tracking.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install exam
+
+    ```'
+examples:
+- description: Install Exam from ClawHub
+  usage: clawhub install exam
+schema_version: '1.0'

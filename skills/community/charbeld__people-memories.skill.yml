@@ -1,0 +1,64 @@
+name: people-memories
+title: People Memories
+version: 0.1.0
+description: Capture short personal notes about people you mention, store them in a lightweight DB, and recall those details
+  whenever you ask about them later. Use when you want to remember preferences, reminders, or the context around a person
+  without digging through past chats.
+metadata:
+  author: charbeld
+  category: Communication
+  tags:
+  - communication
+  - people
+  - memories
+  source: clawhub-community
+  clawhub_slug: people-memories
+  clawhub_path: charbeld/people-memories
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# People Memories
+
+    # Source: ClawHub community skill by charbeld
+
+    # Install: clawhub install people-memories
+
+    # Path: charbeld/people-memories
+
+
+    ## Description
+
+    Capture short personal notes about people you mention, store them in a lightweight DB, and recall those details whenever
+    you ask about them later. Use when you want to remember preferences, reminders, or the context around a person without
+    digging through past chats.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - extensions/people-memories/clawdbot.plugin.json
+
+    - extensions/people-memories/index.js
+
+    - scripts/people_memory.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install people-memories
+
+    ```'
+examples:
+- description: Install People Memories from ClawHub
+  usage: clawhub install people-memories
+schema_version: '1.0'

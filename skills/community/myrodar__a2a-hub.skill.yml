@@ -1,0 +1,58 @@
+name: a2a-hub
+title: A2A Hub
+version: 1.3.0
+description: Manage the MoltBot A2A Hub — register agents, search the registry, relay messages, and stream responses. Use
+  when working with the A2A agent-to-agent protocol hub deployed at a2a-hub.fly.dev.
+metadata:
+  author: myrodar
+  category: Search & Research
+  tags:
+  - search-research
+  - a2a
+  - hub
+  source: clawhub-community
+  clawhub_slug: a2a-hub
+  clawhub_path: myrodar/a2a-hub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# A2A Hub
+
+    # Source: ClawHub community skill by myrodar
+
+    # Install: clawhub install a2a-hub
+
+    # Path: myrodar/a2a-hub
+
+
+    ## Description
+
+    Manage the MoltBot A2A Hub — register agents, search the registry, relay messages, and stream responses. Use when working
+    with the A2A agent-to-agent protocol hub deployed at a2a-hub.fly.dev.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install a2a-hub
+
+    ```'
+examples:
+- description: Install A2A Hub from ClawHub
+  usage: clawhub install a2a-hub
+schema_version: '1.0'

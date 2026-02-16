@@ -1,0 +1,33 @@
+name: rssaurus-cli
+title: RSSaurus - Agent-Friendly RSS Feed Reader
+version: 1.0.1
+description: '"Use the RSSaurus command-line client (Go binary `rssaurus`) to interact with https://rssaurus.com from the
+  terminal: authenticate (`rssaurus auth login/whoami`), list feeds/items, print item URLs for piping, open URLs, and perform
+  triage actions (mark read/unread, bulk mark-read, save/unsave). Use '
+metadata:
+  author: justinburdett
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - rssaurus
+  - cli
+  source: clawhub-community
+  clawhub_slug: rssaurus
+  clawhub_path: justinburdett/rssaurus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# RSSaurus - Agent-Friendly RSS Feed Reader\n# Source: ClawHub community skill by justinburdett\n# Install: clawhub\
+    \ install rssaurus\n# Path: justinburdett/rssaurus\n\n## Description\n\"Use the RSSaurus command-line client (Go binary\
+    \ `rssaurus`) to interact with https://rssaurus.com from the terminal: authenticate (`rssaurus auth login/whoami`), list\
+    \ feeds/items, print item URLs for piping, open URLs, and perform triage actions (mark read/unread, bulk mark-read, save/unsave).\
+    \ Use \n\n## Files\n- SKILL.md\n- _meta.json\n\n## Installation\n```bash\nclawhub install rssaurus\n```"
+examples:
+- description: Install RSSaurus - Agent-Friendly RSS Feed Reader from ClawHub
+  usage: clawhub install rssaurus
+schema_version: '1.0'

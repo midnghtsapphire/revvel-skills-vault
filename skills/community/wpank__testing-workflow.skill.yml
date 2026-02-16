@@ -1,0 +1,60 @@
+name: testing-workflow
+title: Testing Workflow
+version: 0.1.0
+description: Meta-skill that orchestrates comprehensive testing across a project by coordinating testing-patterns, e2e-testing,
+  and testing agents. Use when setting up testing for a new project, improving coverage for an existing project, establishing
+  a testing strategy, or verifying quality before a release.
+metadata:
+  author: wpank
+  category: Development & Coding
+  tags:
+  - development-coding
+  - testing
+  - workflow
+  source: clawhub-community
+  clawhub_slug: testing-workflow
+  clawhub_path: wpank/testing-workflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Testing Workflow
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install testing-workflow
+
+    # Path: wpank/testing-workflow
+
+
+    ## Description
+
+    Meta-skill that orchestrates comprehensive testing across a project by coordinating testing-patterns, e2e-testing, and
+    testing agents. Use when setting up testing for a new project, improving coverage for an existing project, establishing
+    a testing strategy, or verifying quality before a release.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install testing-workflow
+
+    ```'
+examples:
+- description: Install Testing Workflow from ClawHub
+  usage: clawhub install testing-workflow
+schema_version: '1.0'

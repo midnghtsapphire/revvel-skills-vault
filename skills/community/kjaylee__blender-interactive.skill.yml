@@ -1,0 +1,64 @@
+name: blender-interactive
+title: Blender Interactive
+version: 1.0.0
+description: '|'
+metadata:
+  author: kjaylee
+  category: General
+  tags:
+  - general
+  - blender
+  - interactive
+  source: clawhub-community
+  clawhub_slug: blender-interactive
+  clawhub_path: kjaylee/blender-interactive
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Blender Interactive
+
+    # Source: ClawHub community skill by kjaylee
+
+    # Install: clawhub install blender-interactive
+
+    # Path: kjaylee/blender-interactive
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - blender_socket_addon.py
+
+    - scripts/blender_client.py
+
+    - scripts/polyhaven.py
+
+    - scripts/sketchfab.py
+
+    - scripts/start_server.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install blender-interactive
+
+    ```'
+examples:
+- description: Install Blender Interactive from ClawHub
+  usage: clawhub install blender-interactive
+schema_version: '1.0'

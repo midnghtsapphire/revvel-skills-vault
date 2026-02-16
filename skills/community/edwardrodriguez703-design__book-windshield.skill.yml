@@ -1,0 +1,56 @@
+name: book-windshield
+title: Book Windshield
+version: 1.0.1
+description: Book windshield services through Lokuli MCP. Use when user needs to find and book windshield. Triggers on requests
+  like "book a windshield", "find windshield near me", or any windshield service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - windshield
+  source: clawhub-community
+  clawhub_slug: book-windshield
+  clawhub_path: edwardrodriguez703-design/book-windshield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Windshield
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-windshield
+
+    # Path: edwardrodriguez703-design/book-windshield
+
+
+    ## Description
+
+    Book windshield services through Lokuli MCP. Use when user needs to find and book windshield. Triggers on requests like
+    "book a windshield", "find windshield near me", or any windshield service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-windshield
+
+    ```'
+examples:
+- description: Install Book Windshield from ClawHub
+  usage: clawhub install book-windshield
+schema_version: '1.0'

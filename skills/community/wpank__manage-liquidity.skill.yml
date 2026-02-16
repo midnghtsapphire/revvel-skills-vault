@@ -1,0 +1,76 @@
+name: manage-liquidity
+title: Uniswap Manage Liquidity
+version: 0.1.0
+description: Add liquidity, remove liquidity, or collect fees on Uniswap V2/V3/V4 pools. Handles the full flow including pool
+  selection, range optimization, approvals, safety checks, and transaction execution. Use when the user wants to LP, provide
+  liquidity, remove a position, or collect accumulated fees.
+metadata:
+  author: wpank
+  category: General
+  tags:
+  - general
+  - manage
+  - liquidity
+  - '[task(subagent_type:liquidity-manager)'
+  - task(subagent_type:pool-researcher)
+  - mcp__uniswap__get_positions_by_owner
+  - mcp__uniswap__get_position
+  - mcp__uniswap__check_safety_status]
+  source: clawhub-community
+  clawhub_slug: manage-liquidity
+  clawhub_path: wpank/manage-liquidity
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:liquidity-manager)'
+  - Task(subagent_type:pool-researcher)
+  - mcp__uniswap__get_positions_by_owner
+  - mcp__uniswap__get_position
+  - mcp__uniswap__check_safety_status]
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Manage Liquidity
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install manage-liquidity
+
+    # Path: wpank/manage-liquidity
+
+
+    ## Description
+
+    Add liquidity, remove liquidity, or collect fees on Uniswap V2/V3/V4 pools. Handles the full flow including pool selection,
+    range optimization, approvals, safety checks, and transaction execution. Use when the user wants to LP, provide liquidity,
+    remove a position, or collect accumulated fees.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:liquidity-manager), Task(subagent_type:pool-researcher), mcp__uniswap__get_positions_by_owner, mcp__uniswap__get_position,
+    mcp__uniswap__check_safety_status]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install manage-liquidity
+
+    ```'
+examples:
+- description: Install Uniswap Manage Liquidity from ClawHub
+  usage: clawhub install manage-liquidity
+schema_version: '1.0'

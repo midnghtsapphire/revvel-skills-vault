@@ -1,0 +1,62 @@
+name: abm_outbound
+title: ABM Outbound
+version: 1.0.0
+description: Multi-channel ABM automation that turns LinkedIn URLs into coordinated outbound campaigns. Scrapes profiles,
+  enriches with Apollo (email + phone), gets mailing addresses via Skip Trace, then orchestrates email sequences, LinkedIn
+  touches, and handwritten letters via Scribeless. The secret weapon for
+metadata:
+  author: dru-ca
+  category: Search & Research
+  tags:
+  - search-research
+  - abm
+  - outbound
+  source: clawhub-community
+  clawhub_slug: abm-outbound
+  clawhub_path: dru-ca/abm-outbound
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ABM Outbound
+
+    # Source: ClawHub community skill by dru-ca
+
+    # Install: clawhub install abm-outbound
+
+    # Path: dru-ca/abm-outbound
+
+
+    ## Description
+
+    Multi-channel ABM automation that turns LinkedIn URLs into coordinated outbound campaigns. Scrapes profiles, enriches
+    with Apollo (email + phone), gets mailing addresses via Skip Trace, then orchestrates email sequences, LinkedIn touches,
+    and handwritten letters via Scribeless. The secret weapon for
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/enrichment.md
+
+    - references/scribeless-api.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install abm-outbound
+
+    ```'
+examples:
+- description: Install ABM Outbound from ClawHub
+  usage: clawhub install abm-outbound
+schema_version: '1.0'

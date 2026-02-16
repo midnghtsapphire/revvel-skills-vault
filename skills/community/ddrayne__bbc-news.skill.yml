@@ -1,0 +1,64 @@
+name: bbc-news
+title: BBC News
+version: 1.0.0
+description: Fetch and display BBC News stories from various sections and regions via RSS feeds. Use when the user asks for
+  BBC news, UK news headlines, world news from BBC, or news from specific BBC sections (technology, business, politics, science,
+  health, entertainment, regional UK news, or world regions).
+metadata:
+  author: ddrayne
+  category: Health & Wellness
+  tags:
+  - health-wellness
+  - bbc
+  - news
+  source: clawhub-community
+  clawhub_slug: bbc-news
+  clawhub_path: ddrayne/bbc-news
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# BBC News
+
+    # Source: ClawHub community skill by ddrayne
+
+    # Install: clawhub install bbc-news
+
+    # Path: ddrayne/bbc-news
+
+
+    ## Description
+
+    Fetch and display BBC News stories from various sections and regions via RSS feeds. Use when the user asks for BBC news,
+    UK news headlines, world news from BBC, or news from specific BBC sections (technology, business, politics, science, health,
+    entertainment, regional UK news, or world regions).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/feeds.md
+
+    - scripts/bbc_news.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bbc-news
+
+    ```'
+examples:
+- description: Install BBC News from ClawHub
+  usage: clawhub install bbc-news
+schema_version: '1.0'

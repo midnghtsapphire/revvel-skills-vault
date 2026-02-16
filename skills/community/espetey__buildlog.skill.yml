@@ -1,0 +1,53 @@
+name: buildlog
+title: buildlog
+version: 1.0.1
+description: Record, export, and share your AI coding sessions as replayable buildlogs
+metadata:
+  author: espetey
+  category: Gaming & Entertainment
+  tags:
+  - gaming-entertainment
+  - buildlog
+  source: clawhub-community
+  clawhub_slug: buildlog
+  clawhub_path: espetey/buildlog
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# buildlog
+
+    # Source: ClawHub community skill by espetey
+
+    # Install: clawhub install buildlog
+
+    # Path: espetey/buildlog
+
+
+    ## Description
+
+    Record, export, and share your AI coding sessions as replayable buildlogs
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install buildlog
+
+    ```'
+examples:
+- description: Install buildlog from ClawHub
+  usage: clawhub install buildlog
+schema_version: '1.0'

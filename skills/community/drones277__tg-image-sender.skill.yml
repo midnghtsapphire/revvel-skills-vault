@@ -1,0 +1,58 @@
+name: tg-image-sender
+title: TG Image Sender
+version: 1.0.0
+description: Send test or generated images directly to Telegram chats using the message tool with Picsum.photos URLs or custom
+  media. Use when the user requests to 'send photo', 'generate image here in TG', or show/test images in Telegram (e.g., 'пришли
+  фото', 'покажи картинку').
+metadata:
+  author: drones277
+  category: Media & Content
+  tags:
+  - media-content
+  - image
+  - sender
+  source: clawhub-community
+  clawhub_slug: tg-image-sender
+  clawhub_path: drones277/tg-image-sender
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TG Image Sender
+
+    # Source: ClawHub community skill by drones277
+
+    # Install: clawhub install tg-image-sender
+
+    # Path: drones277/tg-image-sender
+
+
+    ## Description
+
+    Send test or generated images directly to Telegram chats using the message tool with Picsum.photos URLs or custom media.
+    Use when the user requests to ''send photo'', ''generate image here in TG'', or show/test images in Telegram (e.g., ''пришли
+    фото'', ''покажи картинку'').
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tg-image-sender
+
+    ```'
+examples:
+- description: Install TG Image Sender from ClawHub
+  usage: clawhub install tg-image-sender
+schema_version: '1.0'

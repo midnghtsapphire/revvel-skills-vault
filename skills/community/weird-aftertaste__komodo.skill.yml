@@ -1,0 +1,57 @@
+name: komodo
+title: Komodo
+version: 1.0.0
+description: Manage Komodo infrastructure - servers, Docker deployments, stacks, builds, and procedures. Use when user asks
+  about server status, container management, deployments, builds, or any Komodo-related infrastructure tasks.
+metadata:
+  author: weird-aftertaste
+  category: Development & Coding
+  tags:
+  - development-coding
+  - komodo
+  source: clawhub-community
+  clawhub_slug: komodo
+  clawhub_path: weird-aftertaste/komodo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Komodo
+
+    # Source: ClawHub community skill by weird-aftertaste
+
+    # Install: clawhub install komodo
+
+    # Path: weird-aftertaste/komodo
+
+
+    ## Description
+
+    Manage Komodo infrastructure - servers, Docker deployments, stacks, builds, and procedures. Use when user asks about server
+    status, container management, deployments, builds, or any Komodo-related infrastructure tasks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/komodo.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install komodo
+
+    ```'
+examples:
+- description: Install Komodo from ClawHub
+  usage: clawhub install komodo
+schema_version: '1.0'

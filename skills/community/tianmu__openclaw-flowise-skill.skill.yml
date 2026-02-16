@@ -1,0 +1,57 @@
+name: flowise
+title: Flowise
+version: 0.1.0
+description: Interact with Flowise AI workflows via REST API. Use when user mentions Flowise, chatflows, or wants to send
+  messages to Flowise bots/agents. Supports listing flows, sending predictions, and managing conversations.
+metadata:
+  author: tianmu
+  category: Communication
+  tags:
+  - communication
+  - flowise
+  source: clawhub-community
+  clawhub_slug: openclaw-flowise-skill
+  clawhub_path: tianmu/openclaw-flowise-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Flowise
+
+    # Source: ClawHub community skill by tianmu
+
+    # Install: clawhub install openclaw-flowise-skill
+
+    # Path: tianmu/openclaw-flowise-skill
+
+
+    ## Description
+
+    Interact with Flowise AI workflows via REST API. Use when user mentions Flowise, chatflows, or wants to send messages
+    to Flowise bots/agents. Supports listing flows, sending predictions, and managing conversations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/flowise.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-flowise-skill
+
+    ```'
+examples:
+- description: Install Flowise from ClawHub
+  usage: clawhub install openclaw-flowise-skill
+schema_version: '1.0'

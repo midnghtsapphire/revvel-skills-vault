@@ -1,0 +1,61 @@
+name: ghost
+title: Ghost CMS Admin
+version: 1.0.1
+description: 'Manage Ghost CMS blog posts via Admin API. Supports creating, updating, deleting, and listing posts. NEW: Upload
+  images and set feature images for posts. Use when the user needs to programmatically manage Ghost blog content. Requires
+  GHOST_API_URL and GHOST_ADMIN_API_KEY environment variables.'
+metadata:
+  author: alphafactor
+  category: Media & Content
+  tags:
+  - media-content
+  - ghost
+  source: clawhub-community
+  clawhub_slug: ghost
+  clawhub_path: alphafactor/ghost
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ghost CMS Admin
+
+    # Source: ClawHub community skill by alphafactor
+
+    # Install: clawhub install ghost
+
+    # Path: alphafactor/ghost
+
+
+    ## Description
+
+    Manage Ghost CMS blog posts via Admin API. Supports creating, updating, deleting, and listing posts. NEW: Upload images
+    and set feature images for posts. Use when the user needs to programmatically manage Ghost blog content. Requires GHOST_API_URL
+    and GHOST_ADMIN_API_KEY environment variables.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/ghost.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ghost
+
+    ```'
+examples:
+- description: Install Ghost CMS Admin from ClawHub
+  usage: clawhub install ghost
+schema_version: '1.0'

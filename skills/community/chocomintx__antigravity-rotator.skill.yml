@@ -1,0 +1,67 @@
+name: antigravity-rotator
+title: Publish Antigravity Rotator
+version: 1.1.1
+description: Google Antigravity 模型全自动运维方案。提供多账号自动轮换、优先级调度、会话热更新以及赛博朋克风仪表盘。使用场景包括：(1) 自动化管理多个 Antigravity 账号，(2) 监控配额并自动切换，(3)
+  在不重启会话的情况下更新模型。
+metadata:
+  author: chocomintx
+  category: Search & Research
+  tags:
+  - search-research
+  - antigravity
+  - rotator
+  source: clawhub-community
+  clawhub_slug: antigravity-rotator
+  clawhub_path: chocomintx/antigravity-rotator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Publish Antigravity Rotator
+
+    # Source: ClawHub community skill by chocomintx
+
+    # Install: clawhub install antigravity-rotator
+
+    # Path: chocomintx/antigravity-rotator
+
+
+    ## Description
+
+    Google Antigravity 模型全自动运维方案。提供多账号自动轮换、优先级调度、会话热更新以及赛博朋克风仪表盘。使用场景包括：(1) 自动化管理多个 Antigravity 账号，(2) 监控配额并自动切换，(3) 在不重启会话的情况下更新模型。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package.json
+
+    - assets/config.example.json
+
+    - assets/crontab.sample.txt
+
+    - scripts/dashboard.js
+
+    - scripts/rotator.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install antigravity-rotator
+
+    ```'
+examples:
+- description: Install Publish Antigravity Rotator from ClawHub
+  usage: clawhub install antigravity-rotator
+schema_version: '1.0'

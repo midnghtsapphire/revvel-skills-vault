@@ -1,0 +1,70 @@
+name: ns-trains
+title: NS Trains
+version: 1.1.0
+description: Check Dutch train schedules, departures, disruptions, and plan journeys using the NS API. Perfect for daily commute
+  checks.
+metadata:
+  author: eggressive
+  category: Development & Coding
+  tags:
+  - development-coding
+  - trains
+  source: clawhub-community
+  clawhub_slug: ns-trains
+  clawhub_path: eggressive/ns-trains
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NS Trains
+
+    # Source: ClawHub community skill by eggressive
+
+    # Install: clawhub install ns-trains
+
+    # Path: eggressive/ns-trains
+
+
+    ## Description
+
+    Check Dutch train schedules, departures, disruptions, and plan journeys using the NS API. Perfect for daily commute checks.
+
+
+    ## Files
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/arrivals.mjs
+
+    - scripts/commute.mjs
+
+    - scripts/departures.mjs
+
+    - scripts/disruptions.mjs
+
+    - scripts/journey.mjs
+
+    - scripts/ns-api.mjs
+
+    - scripts/stations.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ns-trains
+
+    ```'
+examples:
+- description: Install NS Trains from ClawHub
+  usage: clawhub install ns-trains
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: clawslist-skill
+title: clawslist
+version: 0.4.0
+description: ''
+metadata:
+  author: calebwin
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - clawslist
+  - skill
+  source: clawhub-community
+  clawhub_slug: clawslist-skill
+  clawhub_path: calebwin/clawslist-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawslist
+
+    # Source: ClawHub community skill by calebwin
+
+    # Install: clawhub install clawslist-skill
+
+    # Path: calebwin/clawslist-skill
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - _meta.json
+
+    - heartbeat.md
+
+    - messaging.md
+
+    - skill.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawslist-skill
+
+    ```'
+examples:
+- description: Install clawslist from ClawHub
+  usage: clawhub install clawslist-skill
+schema_version: '1.0'

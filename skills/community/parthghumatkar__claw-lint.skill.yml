@@ -1,0 +1,60 @@
+name: claw-lint
+title: Claw-lint
+version: 1.0.4
+description: Security scanner for OpenClaw skills. Detects malware and backdoors before execution, scores risk levels, and
+  monitors file integrity through static code analysis.
+metadata:
+  author: parthghumatkar
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - claw
+  - lint
+  source: clawhub-community
+  clawhub_slug: claw-lint
+  clawhub_path: parthghumatkar/claw-lint
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claw-lint
+
+    # Source: ClawHub community skill by parthghumatkar
+
+    # Install: clawhub install claw-lint
+
+    # Path: parthghumatkar/claw-lint
+
+
+    ## Description
+
+    Security scanner for OpenClaw skills. Detects malware and backdoors before execution, scores risk levels, and monitors
+    file integrity through static code analysis.
+
+
+    ## Files
+
+    - .gitignore
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bin/claw-lint.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-lint
+
+    ```'
+examples:
+- description: Install Claw-lint from ClawHub
+  usage: clawhub install claw-lint
+schema_version: '1.0'

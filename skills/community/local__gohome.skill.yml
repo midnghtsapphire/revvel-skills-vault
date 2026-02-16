@@ -1,0 +1,53 @@
+name: gohome
+title: GoHome
+version: 0.1.0
+description: Use when Moltbot needs to test or operate GoHome via gRPC discovery, metrics, and Grafana.
+metadata:
+  author: local
+  category: Development & Coding
+  tags:
+  - development-coding
+  - gohome
+  source: clawhub-community
+  clawhub_slug: gohome
+  clawhub_path: local/gohome
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GoHome
+
+    # Source: ClawHub community skill by local
+
+    # Install: clawhub install gohome
+
+    # Path: local/gohome
+
+
+    ## Description
+
+    Use when Moltbot needs to test or operate GoHome via gRPC discovery, metrics, and Grafana.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gohome
+
+    ```'
+examples:
+- description: Install GoHome from ClawHub
+  usage: clawhub install gohome
+schema_version: '1.0'

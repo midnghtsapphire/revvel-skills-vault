@@ -1,0 +1,62 @@
+name: vector-control
+title: Vector Control
+version: 1.0.1
+description: Control a Vector robot via Wirepod’s local HTTP API on the same network. Use when you need to move Vector, tilt
+  head/lift, speak text, capture camera frames, or run patrol/explore routines from the Pi/Wirepod host. Includes a CLI helper
+  script and endpoint reference.
+metadata:
+  author: dbeadle1
+  category: Development & Coding
+  tags:
+  - development-coding
+  - vector
+  - control
+  source: clawhub-community
+  clawhub_slug: vector-control
+  clawhub_path: dbeadle1/vector-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vector Control
+
+    # Source: ClawHub community skill by dbeadle1
+
+    # Install: clawhub install vector-control
+
+    # Path: dbeadle1/vector-control
+
+
+    ## Description
+
+    Control a Vector robot via Wirepod’s local HTTP API on the same network. Use when you need to move Vector, tilt head/lift,
+    speak text, capture camera frames, or run patrol/explore routines from the Pi/Wirepod host. Includes a CLI helper script
+    and endpoint reference.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/wirepod-api.md
+
+    - scripts/vector_control.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vector-control
+
+    ```'
+examples:
+- description: Install Vector Control from ClawHub
+  usage: clawhub install vector-control
+schema_version: '1.0'

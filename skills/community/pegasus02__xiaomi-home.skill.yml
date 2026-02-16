@@ -1,0 +1,64 @@
+name: xiaomi-home
+title: 小米家居 (Xiaomi Home)
+version: 1.2.1
+description: '"[English] Control Xiaomi Home devices via local LAN using miiocli. Supports status checks, toggling power,
+  and MIOT property manipulation for devices like smart plugs, humidifiers, and rice cookers. | [中文] 通过局域网利用 miiocli 控制米家智能设备。支持查看状态、开关控制以及对智能插座、加湿器、电饭煲等
+  MIOT 设备的属性调优。"'
+metadata:
+  author: pegasus02
+  category: General
+  tags:
+  - general
+  - xiaomi
+  - home
+  source: clawhub-community
+  clawhub_slug: xiaomi-home
+  clawhub_path: pegasus02/xiaomi-home
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 小米家居 (Xiaomi Home)
+
+    # Source: ClawHub community skill by pegasus02
+
+    # Install: clawhub install xiaomi-home
+
+    # Path: pegasus02/xiaomi-home
+
+
+    ## Description
+
+    "[English] Control Xiaomi Home devices via local LAN using miiocli. Supports status checks, toggling power, and MIOT property
+    manipulation for devices like smart plugs, humidifiers, and rice cookers. | [中文] 通过局域网利用 miiocli 控制米家智能设备。支持查看状态、开关控制以及对智能插座、加湿器、电饭煲等
+    MIOT 设备的属性调优。"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/devices.md
+
+    - references/my_private_devices.md
+
+    - scripts/token_extractor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xiaomi-home
+
+    ```'
+examples:
+- description: Install 小米家居 (Xiaomi Home) from ClawHub
+  usage: clawhub install xiaomi-home
+schema_version: '1.0'

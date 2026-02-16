@@ -1,0 +1,71 @@
+name: bird-dm
+title: Bird DMs
+version: 1.0.2
+description: An add-on to the Bird skill that lets your agent check its X/Twitter DM inbox. Use when the user asks to check
+  DMs, read Twitter direct messages, list DM conversations, or monitor their X inbox.
+metadata:
+  author: tolibear
+  category: Social Media
+  tags:
+  - social-media
+  - bird
+  source: clawhub-community
+  clawhub_slug: bird-dms
+  clawhub_path: tolibear/bird-dms
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bird DMs
+
+    # Source: ClawHub community skill by tolibear
+
+    # Install: clawhub install bird-dms
+
+    # Path: tolibear/bird-dms
+
+
+    ## Description
+
+    An add-on to the Bird skill that lets your agent check its X/Twitter DM inbox. Use when the user asks to check DMs, read
+    Twitter direct messages, list DM conversations, or monitor their X inbox.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - dist/cli.d.ts
+
+    - dist/cli.js
+
+    - dist/dm-client.d.ts
+
+    - dist/dm-client.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bird-dms
+
+    ```'
+examples:
+- description: Install Bird DMs from ClawHub
+  usage: clawhub install bird-dms
+schema_version: '1.0'

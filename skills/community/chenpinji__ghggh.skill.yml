@@ -1,0 +1,57 @@
+name: github-repo-stats
+title: github API
+version: 1.0.0
+description: Query a GitHub repository's star count and lines of code. Use when the user asks for repo stars, stargazers,
+  LOC, code lines, or repository statistics for a given GitHub repo.
+metadata:
+  author: chenpinji
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - repo
+  - stats
+  source: clawhub-community
+  clawhub_slug: ghggh
+  clawhub_path: chenpinji/ghggh
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# github API
+
+    # Source: ClawHub community skill by chenpinji
+
+    # Install: clawhub install ghggh
+
+    # Path: chenpinji/ghggh
+
+
+    ## Description
+
+    Query a GitHub repository''s star count and lines of code. Use when the user asks for repo stars, stargazers, LOC, code
+    lines, or repository statistics for a given GitHub repo.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ghggh
+
+    ```'
+examples:
+- description: Install github API from ClawHub
+  usage: clawhub install ghggh
+schema_version: '1.0'

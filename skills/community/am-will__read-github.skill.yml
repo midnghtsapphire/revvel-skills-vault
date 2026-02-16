@@ -1,0 +1,56 @@
+name: read-github
+title: Read GitHub
+version: 1.0.1
+description: '>'
+metadata:
+  author: am-will
+  category: Development & Coding
+  tags:
+  - development-coding
+  - read
+  - github
+  source: clawhub-community
+  clawhub_slug: read-github
+  clawhub_path: am-will/read-github
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Read GitHub
+
+    # Source: ClawHub community skill by am-will
+
+    # Install: clawhub install read-github
+
+    # Path: am-will/read-github
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gitmcp.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install read-github
+
+    ```'
+examples:
+- description: Install Read GitHub from ClawHub
+  usage: clawhub install read-github
+schema_version: '1.0'

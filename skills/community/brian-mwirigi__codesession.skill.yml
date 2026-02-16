@@ -1,0 +1,55 @@
+name: codesession
+title: Codesession
+version: 1.9.8
+description: Track agent session costs, file changes, and git commits with codesession-cli. Enforces budget limits and provides
+  detailed session analytics with a web dashboard. v1.9.6 - Agent name tracking, concurrent sessions, web dashboard.
+metadata:
+  author: brian-mwirigi
+  category: Development & Coding
+  tags:
+  - development-coding
+  - codesession
+  source: clawhub-community
+  clawhub_slug: codesession
+  clawhub_path: brian-mwirigi/codesession
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Codesession
+
+    # Source: ClawHub community skill by brian-mwirigi
+
+    # Install: clawhub install codesession
+
+    # Path: brian-mwirigi/codesession
+
+
+    ## Description
+
+    Track agent session costs, file changes, and git commits with codesession-cli. Enforces budget limits and provides detailed
+    session analytics with a web dashboard. v1.9.6 - Agent name tracking, concurrent sessions, web dashboard.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install codesession
+
+    ```'
+examples:
+- description: Install Codesession from ClawHub
+  usage: clawhub install codesession
+schema_version: '1.0'

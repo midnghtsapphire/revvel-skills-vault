@@ -1,0 +1,55 @@
+name: api-docs-gen
+title: API Documentation Generator
+version: 1.0.2
+description: Generate API documentation from route files. Use when you need markdown or OpenAPI specs fast.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - api
+  - docs
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-api-docs
+  clawhub_path: lxgicstudios/ai-api-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# API Documentation Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-api-docs
+
+    # Path: lxgicstudios/ai-api-docs
+
+
+    ## Description
+
+    Generate API documentation from route files. Use when you need markdown or OpenAPI specs fast.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-api-docs
+
+    ```'
+examples:
+- description: Install API Documentation Generator from ClawHub
+  usage: clawhub install ai-api-docs
+schema_version: '1.0'

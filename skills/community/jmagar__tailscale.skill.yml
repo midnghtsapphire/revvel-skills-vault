@@ -1,0 +1,61 @@
+name: tailscale
+title: Tailscale
+version: 1.0.0
+description: Manage Tailscale tailnet via CLI and API. Use when the user asks to "check tailscale status", "list tailscale
+  devices", "ping a device", "send file via tailscale", "tailscale funnel", "create auth key", "check who's online", or mentions
+  Tailscale network management.
+metadata:
+  author: jmagar
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - tailscale
+  source: clawhub-community
+  clawhub_slug: tailscale
+  clawhub_path: jmagar/tailscale
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tailscale
+
+    # Source: ClawHub community skill by jmagar
+
+    # Install: clawhub install tailscale
+
+    # Path: jmagar/tailscale
+
+
+    ## Description
+
+    Manage Tailscale tailnet via CLI and API. Use when the user asks to "check tailscale status", "list tailscale devices",
+    "ping a device", "send file via tailscale", "tailscale funnel", "create auth key", "check who''s online", or mentions
+    Tailscale network management.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ts-api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tailscale
+
+    ```'
+examples:
+- description: Install Tailscale from ClawHub
+  usage: clawhub install tailscale
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: book-plumber
+title: Book Plumber
+version: 1.0.1
+description: Book plumber services through Lokuli MCP. Use when user needs to find and book plumber. Triggers on requests
+  like "book a plumber", "find plumber near me", or any plumber service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - plumber
+  source: clawhub-community
+  clawhub_slug: book-plumber
+  clawhub_path: edwardrodriguez703-design/book-plumber
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Plumber
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-plumber
+
+    # Path: edwardrodriguez703-design/book-plumber
+
+
+    ## Description
+
+    Book plumber services through Lokuli MCP. Use when user needs to find and book plumber. Triggers on requests like "book
+    a plumber", "find plumber near me", or any plumber service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-plumber
+
+    ```'
+examples:
+- description: Install Book Plumber from ClawHub
+  usage: clawhub install book-plumber
+schema_version: '1.0'

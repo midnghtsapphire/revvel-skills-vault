@@ -1,0 +1,63 @@
+name: exo-installer
+title: E.x.O. Installer
+version: 0.4.1
+description: ''
+metadata:
+  author: emberdesire
+  category: General
+  tags:
+  - general
+  - exo
+  - installer
+  source: clawhub-community
+  clawhub_slug: exo-installer
+  clawhub_path: emberdesire/exo-installer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# E.x.O. Installer
+
+    # Source: ClawHub community skill by emberdesire
+
+    # Install: clawhub install exo-installer
+
+    # Path: emberdesire/exo-installer
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.js
+
+    - openclaw.plugin.json
+
+    - package.json
+
+    - packages.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install exo-installer
+
+    ```'
+examples:
+- description: Install E.x.O. Installer from ClawHub
+  usage: clawhub install exo-installer
+schema_version: '1.0'

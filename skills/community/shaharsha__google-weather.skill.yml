@@ -1,0 +1,59 @@
+name: google-weather
+title: Google Weather
+version: 1.1.0
+description: Google Weather API - accurate, real-time weather data. Get current conditions, temperature, humidity, wind, and
+  forecasts. Powered by Google's Weather API for reliable, hyperlocal data updated every 15 minutes. Supports any location
+  worldwide.
+metadata:
+  author: shaharsha
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - weather
+  source: clawhub-community
+  clawhub_slug: google-weather
+  clawhub_path: shaharsha/google-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Weather
+
+    # Source: ClawHub community skill by shaharsha
+
+    # Install: clawhub install google-weather
+
+    # Path: shaharsha/google-weather
+
+
+    ## Description
+
+    Google Weather API - accurate, real-time weather data. Get current conditions, temperature, humidity, wind, and forecasts.
+    Powered by Google''s Weather API for reliable, hyperlocal data updated every 15 minutes. Supports any location worldwide.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/weather_helper.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-weather
+
+    ```'
+examples:
+- description: Install Google Weather from ClawHub
+  usage: clawhub install google-weather
+schema_version: '1.0'

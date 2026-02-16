@@ -1,0 +1,60 @@
+name: skill-exporter
+title: Skill Exporter
+version: 1.0.0
+description: Export Clawdbot skills as standalone, deployable microservices. Use when you want to dockerize a skill, deploy
+  it to Railway or Fly.io, or create an independent API service. Generates Dockerfile, FastAPI wrapper, requirements.txt,
+  deployment configs, and optional LLM client integration.
+metadata:
+  author: macstenk
+  category: Development & Coding
+  tags:
+  - development-coding
+  - skill
+  - exporter
+  source: clawhub-community
+  clawhub_slug: skill-exporter
+  clawhub_path: macstenk/skill-exporter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Exporter
+
+    # Source: ClawHub community skill by macstenk
+
+    # Install: clawhub install skill-exporter
+
+    # Path: macstenk/skill-exporter
+
+
+    ## Description
+
+    Export Clawdbot skills as standalone, deployable microservices. Use when you want to dockerize a skill, deploy it to Railway
+    or Fly.io, or create an independent API service. Generates Dockerfile, FastAPI wrapper, requirements.txt, deployment configs,
+    and optional LLM client integration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/export.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-exporter
+
+    ```'
+examples:
+- description: Install Skill Exporter from ClawHub
+  usage: clawhub install skill-exporter
+schema_version: '1.0'

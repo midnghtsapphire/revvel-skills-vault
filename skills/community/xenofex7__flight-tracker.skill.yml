@@ -1,0 +1,64 @@
+name: flight-tracker
+title: A simple Flight Tracker
+version: 1.1.0
+description: Flight tracking and scheduling. Track live flights in real-time by region, callsign, or airport using OpenSky
+  Network. Search flight schedules between airports. Use for queries like "What flights are over Switzerland?" or "When do
+  flights from Hamburg arrive in Zurich?" or "Track flight SWR123".
+metadata:
+  author: xenofex7
+  category: Search & Research
+  tags:
+  - search-research
+  - flight
+  - tracker
+  source: clawhub-community
+  clawhub_slug: flight-tracker
+  clawhub_path: xenofex7/flight-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# A simple Flight Tracker
+
+    # Source: ClawHub community skill by xenofex7
+
+    # Install: clawhub install flight-tracker
+
+    # Path: xenofex7/flight-tracker
+
+
+    ## Description
+
+    Flight tracking and scheduling. Track live flights in real-time by region, callsign, or airport using OpenSky Network.
+    Search flight schedules between airports. Use for queries like "What flights are over Switzerland?" or "When do flights
+    from Hamburg arrive in Zurich?" or "Track flight SWR123".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - .clawdhub/origin.json
+
+    - scripts/schedule.py
+
+    - scripts/track.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flight-tracker
+
+    ```'
+examples:
+- description: Install A simple Flight Tracker from ClawHub
+  usage: clawhub install flight-tracker
+schema_version: '1.0'

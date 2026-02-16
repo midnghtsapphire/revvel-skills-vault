@@ -1,0 +1,73 @@
+name: zscore
+title: zscore
+version: 1.0.3
+description: Register agents on the Zeru ERC-8004 Identity Registry, manage wallets and metadata, and read on-chain state.
+  Use when an agent needs to register on-chain, check fees, read agent info, set metadata, or manage agent wallets on Base
+  Mainnet or Base Sepolia.
+metadata:
+  author: elitex45
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - zscore
+  source: clawhub-community
+  clawhub_slug: zscore
+  clawhub_path: elitex45/zscore
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# zscore
+
+    # Source: ClawHub community skill by elitex45
+
+    # Install: clawhub install zscore
+
+    # Path: elitex45/zscore
+
+
+    ## Description
+
+    Register agents on the Zeru ERC-8004 Identity Registry, manage wallets and metadata, and read on-chain state. Use when
+    an agent needs to register on-chain, check fees, read agent info, set metadata, or manage agent wallets on Base Mainnet
+    or Base Sepolia.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - lib/abi.js
+
+    - lib/agent-wallet.js
+
+    - lib/config.js
+
+    - lib/create-agent-uri.js
+
+    - lib/errors.js
+
+    - lib/get-agent.js
+
+    - lib/get-reputation.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zscore
+
+    ```'
+examples:
+- description: Install zscore from ClawHub
+  usage: clawhub install zscore
+schema_version: '1.0'

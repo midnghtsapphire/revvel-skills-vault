@@ -1,0 +1,63 @@
+name: image-to-relief-stl
+title: Image To Relief Stl
+version: 0.1.0
+description: Turn a source image (or multi-color mask image) into a 3D-printable bas-relief STL by mapping colors (or grayscale)
+  to heights. Use when you have an image from an image-gen skill (nano-banana-pro, etc.) and want a real, printable model
+  (STL) via a deterministic pipeline.
+metadata:
+  author: ajmwagar
+  category: Media & Content
+  tags:
+  - media-content
+  - image
+  - relief
+  - stl
+  source: clawhub-community
+  clawhub_slug: image-to-relief-stl
+  clawhub_path: ajmwagar/image-to-relief-stl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Image To Relief Stl
+
+    # Source: ClawHub community skill by ajmwagar
+
+    # Install: clawhub install image-to-relief-stl
+
+    # Path: ajmwagar/image-to-relief-stl
+
+
+    ## Description
+
+    Turn a source image (or multi-color mask image) into a 3D-printable bas-relief STL by mapping colors (or grayscale) to
+    heights. Use when you have an image from an image-gen skill (nano-banana-pro, etc.) and want a real, printable model (STL)
+    via a deterministic pipeline.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/image_to_relief.py
+
+    - scripts/image_to_relief.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install image-to-relief-stl
+
+    ```'
+examples:
+- description: Install Image To Relief Stl from ClawHub
+  usage: clawhub install image-to-relief-stl
+schema_version: '1.0'

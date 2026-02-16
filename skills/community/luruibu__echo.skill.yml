@@ -1,0 +1,52 @@
+name: echo
+title: echo
+version: 1.0.0
+description: ''
+metadata:
+  author: luruibu
+  category: General
+  tags:
+  - general
+  - echo
+  source: clawhub-community
+  clawhub_slug: echo
+  clawhub_path: luruibu/echo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# echo
+
+    # Source: ClawHub community skill by luruibu
+
+    # Install: clawhub install echo
+
+    # Path: luruibu/echo
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - _meta.json
+
+    - skill.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install echo
+
+    ```'
+examples:
+- description: Install echo from ClawHub
+  usage: clawhub install echo
+schema_version: '1.0'

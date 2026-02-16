@@ -1,0 +1,62 @@
+name: erc-8004_agent_discovery
+title: Erc8004 Discover
+version: 1.1.1
+description: Search and discover 43k+ AI agents registered via ERC-8004. Find agents by skill, chain, or reputation. View
+  leaderboards, ecosystem stats, and monitor metadata changes.
+metadata:
+  author: aetherstacey
+  category: Search & Research
+  tags:
+  - search-research
+  - erc
+  - '8004'
+  - agent
+  - discovery
+  source: clawhub-community
+  clawhub_slug: erc8004-discover
+  clawhub_path: aetherstacey/erc8004-discover
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Erc8004 Discover
+
+    # Source: ClawHub community skill by aetherstacey
+
+    # Install: clawhub install erc8004-discover
+
+    # Path: aetherstacey/erc8004-discover
+
+
+    ## Description
+
+    Search and discover 43k+ AI agents registered via ERC-8004. Find agents by skill, chain, or reputation. View leaderboards,
+    ecosystem stats, and monitor metadata changes.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/discover.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install erc8004-discover
+
+    ```'
+examples:
+- description: Install Erc8004 Discover from ClawHub
+  usage: clawhub install erc8004-discover
+schema_version: '1.0'

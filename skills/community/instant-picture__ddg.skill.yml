@@ -1,0 +1,59 @@
+name: ddg
+title: Ddg
+version: 1.0.0
+description: Use ddgr (DuckDuckGo from the terminal) to perform privacy-focused web searches from the command line. Use when
+  the user wants to (1) Search the web from the terminal, (2) Perform DuckDuckGo searches without opening a browser, (3) Get
+  quick search results in text format, (4) Search privately without
+metadata:
+  author: instant-picture
+  category: Search & Research
+  tags:
+  - search-research
+  - ddg
+  source: clawhub-community
+  clawhub_slug: ddg
+  clawhub_path: instant-picture/ddg
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ddg
+
+    # Source: ClawHub community skill by instant-picture
+
+    # Install: clawhub install ddg
+
+    # Path: instant-picture/ddg
+
+
+    ## Description
+
+    Use ddgr (DuckDuckGo from the terminal) to perform privacy-focused web searches from the command line. Use when the user
+    wants to (1) Search the web from the terminal, (2) Perform DuckDuckGo searches without opening a browser, (3) Get quick
+    search results in text format, (4) Search privately without
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/usage-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ddg
+
+    ```'
+examples:
+- description: Install Ddg from ClawHub
+  usage: clawhub install ddg
+schema_version: '1.0'

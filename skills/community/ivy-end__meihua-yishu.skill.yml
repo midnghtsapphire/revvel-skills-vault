@@ -1,0 +1,58 @@
+name: meihua-yishu
+title: Mei Hua Yi Shu
+version: 1.0.0
+description: Traditional Chinese "Mei Hua Yi Shu" (Plum Blossom Divination) based on specific time calculation (Hour/Minute).
+  Use when the user specifically asks for Plum Blossom Divination or provides hour/minute for calculation.
+metadata:
+  author: ivy-end
+  category: Utilities
+  tags:
+  - utilities
+  - meihua
+  - yishu
+  source: clawhub-community
+  clawhub_slug: meihua-yishu
+  clawhub_path: ivy-end/meihua-yishu
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mei Hua Yi Shu
+
+    # Source: ClawHub community skill by ivy-end
+
+    # Install: clawhub install meihua-yishu
+
+    # Path: ivy-end/meihua-yishu
+
+
+    ## Description
+
+    Traditional Chinese "Mei Hua Yi Shu" (Plum Blossom Divination) based on specific time calculation (Hour/Minute). Use when
+    the user specifically asks for Plum Blossom Divination or provides hour/minute for calculation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/meihua.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meihua-yishu
+
+    ```'
+examples:
+- description: Install Mei Hua Yi Shu from ClawHub
+  usage: clawhub install meihua-yishu
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: solana-skill
+title: solana-skill
+version: 1.0.0
+description: Interact with Solana blockchain via Helius APIs. Create/manage wallets, check balances (SOL + tokens), send transactions,
+  swap tokens via Jupiter, and monitor addresses. Use for any Solana blockchain operation, crypto wallet management, token
+  transfers, DeFi swaps, or portfolio tracking.
+metadata:
+  author: chattyclaw
+  category: Development & Coding
+  tags:
+  - development-coding
+  - solana
+  - skill
+  source: clawhub-community
+  clawhub_slug: solana-basics
+  clawhub_path: chattyclaw/solana-basics
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# solana-skill
+
+    # Source: ClawHub community skill by chattyclaw
+
+    # Install: clawhub install solana-basics
+
+    # Path: chattyclaw/solana-basics
+
+
+    ## Description
+
+    Interact with Solana blockchain via Helius APIs. Create/manage wallets, check balances (SOL + tokens), send transactions,
+    swap tokens via Jupiter, and monitor addresses. Use for any Solana blockchain operation, crypto wallet management, token
+    transfers, DeFi swaps, or portfolio tracking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - references/helius-api.md
+
+    - references/jupiter.md
+
+    - references/security.md
+
+    - scripts/config.ts
+
+    - scripts/send.ts
+
+    - scripts/swap.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solana-basics
+
+    ```'
+examples:
+- description: Install solana-skill from ClawHub
+  usage: clawhub install solana-basics
+schema_version: '1.0'

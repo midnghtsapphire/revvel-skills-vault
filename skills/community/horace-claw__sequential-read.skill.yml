@@ -1,0 +1,70 @@
+name: sequential-read
+title: Sequential Read
+version: 1.0.0
+description: '"Read prose sequentially with structured reflections to simulate the reading experience"'
+metadata:
+  author: horace-claw
+  category: General
+  tags:
+  - general
+  - sequential
+  - read
+  source: clawhub-community
+  clawhub_slug: sequential-read
+  clawhub_path: horace-claw/sequential-read
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sequential Read
+
+    # Source: ClawHub community skill by horace-claw
+
+    # Install: clawhub install sequential-read
+
+    # Path: horace-claw/sequential-read
+
+
+    ## Description
+
+    "Read prose sequentially with structured reflections to simulate the reading experience"
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - preread/SKILL.md
+
+    - reading/SKILL.md
+
+    - scripts/chunk_manager.py
+
+    - scripts/session_manager.py
+
+    - scripts/state_manager.py
+
+    - synthesis/SKILL.md
+
+    - templates/reflection_prompt.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sequential-read
+
+    ```'
+examples:
+- description: Install Sequential Read from ClawHub
+  usage: clawhub install sequential-read
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: bocha-search
+title: bocha-skill
+version: 1.0.0
+description: Search the web using Bocha AI Search API (博查AI搜索) - a Chinese search engine optimized for Chinese content. Requires
+  BOCHA_API_KEY. Supports web pages, images, and news with high-quality summaries.
+metadata:
+  author: ypw757
+  category: Search & Research
+  tags:
+  - search-research
+  - bocha
+  - search
+  source: clawhub-community
+  clawhub_slug: bocha-skill
+  clawhub_path: ypw757/bocha-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# bocha-skill
+
+    # Source: ClawHub community skill by ypw757
+
+    # Install: clawhub install bocha-skill
+
+    # Path: ypw757/bocha-skill
+
+
+    ## Description
+
+    Search the web using Bocha AI Search API (博查AI搜索) - a Chinese search engine optimized for Chinese content. Requires BOCHA_API_KEY.
+    Supports web pages, images, and news with high-quality summaries.
+
+
+    ## Files
+
+    - PUBLISH.md
+
+    - QUICK_PUBLISH.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - publish.sh
+
+    - scripts/bocha_search.js
+
+    - scripts/package.json
+
+    - scripts/tool.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bocha-skill
+
+    ```'
+examples:
+- description: Install bocha-skill from ClawHub
+  usage: clawhub install bocha-skill
+schema_version: '1.0'

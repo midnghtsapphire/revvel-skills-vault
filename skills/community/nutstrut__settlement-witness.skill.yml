@@ -1,0 +1,58 @@
+name: settlement-witness
+title: SettlementWitness
+version: 0.0.3
+description: '"OpenClaw skill: fetch replay-stable PASS/FAIL receipts from the public SettlementWitness HTTPS endpoint. Stateless.
+  Deterministic. Signed."'
+metadata:
+  author: nutstrut
+  category: Gaming & Entertainment
+  tags:
+  - gaming-entertainment
+  - settlement
+  - witness
+  source: clawhub-community
+  clawhub_slug: settlement-witness
+  clawhub_path: nutstrut/settlement-witness
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SettlementWitness
+
+    # Source: ClawHub community skill by nutstrut
+
+    # Install: clawhub install settlement-witness
+
+    # Path: nutstrut/settlement-witness
+
+
+    ## Description
+
+    "OpenClaw skill: fetch replay-stable PASS/FAIL receipts from the public SettlementWitness HTTPS endpoint. Stateless. Deterministic.
+    Signed."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - settlement-witness/SKILL.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install settlement-witness
+
+    ```'
+examples:
+- description: Install SettlementWitness from ClawHub
+  usage: clawhub install settlement-witness
+schema_version: '1.0'

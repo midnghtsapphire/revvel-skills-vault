@@ -1,0 +1,74 @@
+name: safe-exec
+title: Safe Exec 0.3.2
+version: 1.0.0
+description: Safe command execution for OpenClaw Agents with automatic danger pattern detection, risk assessment, user approval
+  workflow, and audit logging. Use when agents need to execute shell commands that may be dangerous (rm -rf, dd, fork bombs,
+  system directory modifications) or require human oversight. Pr
+metadata:
+  author: lucky-2968
+  category: Communication
+  tags:
+  - communication
+  - safe
+  - exec
+  source: clawhub-community
+  clawhub_slug: safe-exec-0-3-2
+  clawhub_path: lucky-2968/safe-exec-0-3-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Safe Exec 0.3.2
+
+    # Source: ClawHub community skill by lucky-2968
+
+    # Install: clawhub install safe-exec-0-3-2
+
+    # Path: lucky-2968/safe-exec-0-3-2
+
+
+    ## Description
+
+    Safe command execution for OpenClaw Agents with automatic danger pattern detection, risk assessment, user approval workflow,
+    and audit logging. Use when agents need to execute shell commands that may be dangerous (rm -rf, dd, fork bombs, system
+    directory modifications) or require human oversight. Pr
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - IMPACT_ASSESSMENT.md
+
+    - PROJECT_STRUCTURE.md
+
+    - README-detail.md
+
+    - README.md
+
+    - README_EN.md
+
+    - RELEASE_v0.3.2.md
+
+    - SKILL.md
+
+    - UNIFIED_MONITOR.md
+
+    - UPDATE_NOTES.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install safe-exec-0-3-2
+
+    ```'
+examples:
+- description: Install Safe Exec 0.3.2 from ClawHub
+  usage: clawhub install safe-exec-0-3-2
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: agentmail
+title: CLI-Based Email for Agents
+version: 1.0.0
+description: Email inbox for AI agents. Check messages, send emails, and communicate via your own @agentmail.to address.
+metadata:
+  author: rimelucci
+  category: Communication
+  tags:
+  - communication
+  - agentmail
+  source: clawhub-community
+  clawhub_slug: agent-mail-cli
+  clawhub_path: rimelucci/agent-mail-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CLI-Based Email for Agents
+
+    # Source: ClawHub community skill by rimelucci
+
+    # Install: clawhub install agent-mail-cli
+
+    # Path: rimelucci/agent-mail-cli
+
+
+    ## Description
+
+    Email inbox for AI agents. Check messages, send emails, and communicate via your own @agentmail.to address.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check_inbox.py
+
+    - scripts/send_email.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-mail-cli
+
+    ```'
+examples:
+- description: Install CLI-Based Email for Agents from ClawHub
+  usage: clawhub install agent-mail-cli
+schema_version: '1.0'

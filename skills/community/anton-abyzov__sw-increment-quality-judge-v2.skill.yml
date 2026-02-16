@@ -1,0 +1,72 @@
+name: increment-quality-judge-v2
+title: Increment Quality Judge V2
+version: 1.0.0
+description: AI-powered quality assessment using LLM-as-Judge pattern with BMAD risk scoring and formal gate decisions. Use
+  for evaluating increment specs, assessing task completeness, or making quality gate decisions (PASS/CONCERNS/FAIL). Chain-of-thought
+  reasoning ensures transparent evaluation.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - increment
+  - quality
+  - judge
+  - read
+  - grep
+  - glob
+  source: clawhub-community
+  clawhub_slug: sw-increment-quality-judge-v2
+  clawhub_path: anton-abyzov/sw-increment-quality-judge-v2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Grep
+  - Glob
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Increment Quality Judge V2
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-increment-quality-judge-v2
+
+    # Path: anton-abyzov/sw-increment-quality-judge-v2
+
+
+    ## Description
+
+    AI-powered quality assessment using LLM-as-Judge pattern with BMAD risk scoring and formal gate decisions. Use for evaluating
+    increment specs, assessing task completeness, or making quality gate decisions (PASS/CONCERNS/FAIL). Chain-of-thought
+    reasoning ensures transparent evaluation.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Grep, Glob
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-increment-quality-judge-v2
+
+    ```'
+examples:
+- description: Install Increment Quality Judge V2 from ClawHub
+  usage: clawhub install sw-increment-quality-judge-v2
+schema_version: '1.0'

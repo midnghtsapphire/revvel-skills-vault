@@ -1,0 +1,70 @@
+name: variflight-aviation
+title: Variflight Aviation
+version: 1.0.1
+description: 飞常准航班信息查询 - 实时航班动态、航线搜索、舒适度评估、机场天气、飞机追踪
+metadata:
+  author: lancenas
+  category: General
+  tags:
+  - general
+  - variflight
+  - aviation
+  source: clawhub-community
+  clawhub_slug: variflight-aviation
+  clawhub_path: lancenas/variflight-aviation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Variflight Aviation
+
+    # Source: ClawHub community skill by lancenas
+
+    # Install: clawhub install variflight-aviation
+
+    # Path: lancenas/variflight-aviation
+
+
+    ## Description
+
+    飞常准航班信息查询 - 实时航班动态、航线搜索、舒适度评估、机场天气、飞机追踪
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - debug-search.js
+
+    - package.json
+
+    - test-api.js
+
+    - test-mcp.js
+
+    - src/cli.js
+
+    - src/index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install variflight-aviation
+
+    ```'
+examples:
+- description: Install Variflight Aviation from ClawHub
+  usage: clawhub install variflight-aviation
+schema_version: '1.0'

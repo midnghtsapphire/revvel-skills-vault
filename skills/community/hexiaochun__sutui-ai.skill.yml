@@ -1,0 +1,53 @@
+name: sutui-ai
+title: Sutui Ai
+version: 1.0.1
+description: 使用速推AI生成图像和视频。当用户需要画图、生成图片、制作视频、图生图、文生图、文生视频、图生视频时使用此 skill。支持即梦、Flux、Kling 等多种模型。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - sutui
+  source: clawhub-community
+  clawhub_slug: sutui-ai
+  clawhub_path: hexiaochun/sutui-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sutui Ai
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install sutui-ai
+
+    # Path: hexiaochun/sutui-ai
+
+
+    ## Description
+
+    使用速推AI生成图像和视频。当用户需要画图、生成图片、制作视频、图生图、文生图、文生视频、图生视频时使用此 skill。支持即梦、Flux、Kling 等多种模型。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sutui-ai
+
+    ```'
+examples:
+- description: Install Sutui Ai from ClawHub
+  usage: clawhub install sutui-ai
+schema_version: '1.0'

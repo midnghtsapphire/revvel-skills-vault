@@ -1,0 +1,66 @@
+name: enhanced-memory
+title: Enhanced Memory
+version: 1.0.0
+description: Enhanced memory search with hybrid vector+keyword scoring, temporal routing, filepath scoring, adaptive weighting,
+  pseudo-relevance feedback, salience scoring, and knowledge graph cross-references. Replaces the default memory search with
+  a 4-signal fusion retrieval system. Use when searching memorie
+metadata:
+  author: jameseball
+  category: Search & Research
+  tags:
+  - search-research
+  - enhanced
+  - memory
+  source: clawhub-community
+  clawhub_slug: enhanced-memory
+  clawhub_path: jameseball/enhanced-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Enhanced Memory
+
+    # Source: ClawHub community skill by jameseball
+
+    # Install: clawhub install enhanced-memory
+
+    # Path: jameseball/enhanced-memory
+
+
+    ## Description
+
+    Enhanced memory search with hybrid vector+keyword scoring, temporal routing, filepath scoring, adaptive weighting, pseudo-relevance
+    feedback, salience scoring, and knowledge graph cross-references. Replaces the default memory search with a 4-signal fusion
+    retrieval system. Use when searching memorie
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/crossref_memories.py
+
+    - scripts/embed_memories.py
+
+    - scripts/memory_salience.py
+
+    - scripts/search_memory.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install enhanced-memory
+
+    ```'
+examples:
+- description: Install Enhanced Memory from ClawHub
+  usage: clawhub install enhanced-memory
+schema_version: '1.0'

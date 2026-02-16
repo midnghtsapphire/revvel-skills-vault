@@ -1,0 +1,54 @@
+name: adr-gen
+title: Architecture Decision Records
+version: 1.0.2
+description: Generate Architecture Decision Records with AI. Use when documenting technical decisions.
+metadata:
+  author: lxgicstudios
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - adr
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-adr
+  clawhub_path: lxgicstudios/ai-adr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Architecture Decision Records
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-adr
+
+    # Path: lxgicstudios/ai-adr
+
+
+    ## Description
+
+    Generate Architecture Decision Records with AI. Use when documenting technical decisions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-adr
+
+    ```'
+examples:
+- description: Install Architecture Decision Records from ClawHub
+  usage: clawhub install ai-adr
+schema_version: '1.0'

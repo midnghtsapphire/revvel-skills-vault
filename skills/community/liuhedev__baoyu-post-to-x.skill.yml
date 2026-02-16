@@ -1,0 +1,74 @@
+name: baoyu-post-to-x
+title: Baoyu Post To X
+version: 0.1.0
+description: Posts content and articles to X (Twitter). Supports regular posts with images/videos and X Articles (long-form
+  Markdown). Uses real Chrome with CDP to bypass anti-automation. Use when user asks to "post to X", "tweet", "publish to
+  Twitter", or "share on X".
+metadata:
+  author: liuhedev
+  category: Media & Content
+  tags:
+  - media-content
+  - baoyu
+  - post
+  source: clawhub-community
+  clawhub_slug: baoyu-post-to-x
+  clawhub_path: liuhedev/baoyu-post-to-x
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Baoyu Post To X
+
+    # Source: ClawHub community skill by liuhedev
+
+    # Install: clawhub install baoyu-post-to-x
+
+    # Path: liuhedev/baoyu-post-to-x
+
+
+    ## Description
+
+    Posts content and articles to X (Twitter). Supports regular posts with images/videos and X Articles (long-form Markdown).
+    Uses real Chrome with CDP to bypass anti-automation. Use when user asks to "post to X", "tweet", "publish to Twitter",
+    or "share on X".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/articles.md
+
+    - references/regular-posts.md
+
+    - scripts/copy-to-clipboard.ts
+
+    - scripts/md-to-html.ts
+
+    - scripts/paste-from-clipboard.ts
+
+    - scripts/x-article.ts
+
+    - scripts/x-browser.ts
+
+    - scripts/x-quote.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install baoyu-post-to-x
+
+    ```'
+examples:
+- description: Install Baoyu Post To X from ClawHub
+  usage: clawhub install baoyu-post-to-x
+schema_version: '1.0'

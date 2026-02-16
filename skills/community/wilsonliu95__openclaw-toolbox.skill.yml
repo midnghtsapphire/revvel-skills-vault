@@ -1,0 +1,64 @@
+name: _openclaw-toolbox_
+title: OpenClaw Toolbox
+version: 1.0.0
+description: '"Integrated OpenClaw management suite for environment initialization, maintenance, and multi-mode backup (Full/Skills)."'
+metadata:
+  author: wilsonliu95
+  category: General
+  tags:
+  - general
+  - '"openclaw'
+  - toolbox"
+  source: clawhub-community
+  clawhub_slug: openclaw-toolbox
+  clawhub_path: wilsonliu95/openclaw-toolbox
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Toolbox
+
+    # Source: ClawHub community skill by wilsonliu95
+
+    # Install: clawhub install openclaw-toolbox
+
+    # Path: wilsonliu95/openclaw-toolbox
+
+
+    ## Description
+
+    "Integrated OpenClaw management suite for environment initialization, maintenance, and multi-mode backup (Full/Skills)."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - scripts/backup-now.sh
+
+    - scripts/backup.sh
+
+    - scripts/setup.sh
+
+    - tests/test-toolbox.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-toolbox
+
+    ```'
+examples:
+- description: Install OpenClaw Toolbox from ClawHub
+  usage: clawhub install openclaw-toolbox
+schema_version: '1.0'

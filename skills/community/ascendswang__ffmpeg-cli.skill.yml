@@ -1,0 +1,74 @@
+name: ffmpeg-cli
+title: FFmpeg CLI
+version: 1.0.0
+description: 'Comprehensive video/audio processing with FFmpeg. Use for: (1) Video transcoding and format conversion, (2)
+  Cutting and merging clips, (3) Audio extraction and manipulation, (4) Thumbnail and GIF generation, (5) Resolution scaling
+  and quality adjustment, (6) Adding subtitles or watermarks, (7) Speed'
+metadata:
+  author: ascendswang
+  category: Media & Content
+  tags:
+  - media-content
+  - ffmpeg
+  - cli
+  source: clawhub-community
+  clawhub_slug: ffmpeg-cli
+  clawhub_path: ascendswang/ffmpeg-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FFmpeg CLI
+
+    # Source: ClawHub community skill by ascendswang
+
+    # Install: clawhub install ffmpeg-cli
+
+    # Path: ascendswang/ffmpeg-cli
+
+
+    ## Description
+
+    Comprehensive video/audio processing with FFmpeg. Use for: (1) Video transcoding and format conversion, (2) Cutting and
+    merging clips, (3) Audio extraction and manipulation, (4) Thumbnail and GIF generation, (5) Resolution scaling and quality
+    adjustment, (6) Adding subtitles or watermarks, (7) Speed
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/convert.sh
+
+    - scripts/cut.sh
+
+    - scripts/extract-audio.sh
+
+    - scripts/gif.sh
+
+    - scripts/merge.sh
+
+    - scripts/speed.sh
+
+    - scripts/thumb.sh
+
+    - scripts/watermark.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ffmpeg-cli
+
+    ```'
+examples:
+- description: Install FFmpeg CLI from ClawHub
+  usage: clawhub install ffmpeg-cli
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: agent-selfie
+title: Agent Selfie
+version: 1.2.0
+description: AI agent self-portrait generator. Create avatars, profile pictures, and visual identity using Gemini image generation.
+  Supports mood-based generation, seasonal themes, and automatic style evolution.
+metadata:
+  author: iisweetheartii
+  category: Media & Content
+  tags:
+  - media-content
+  - agent
+  - selfie
+  source: clawhub-community
+  clawhub_slug: agent-selfie
+  clawhub_path: iisweetheartii/agent-selfie
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Selfie
+
+    # Source: ClawHub community skill by iisweetheartii
+
+    # Install: clawhub install agent-selfie
+
+    # Path: iisweetheartii/agent-selfie
+
+
+    ## Description
+
+    AI agent self-portrait generator. Create avatars, profile pictures, and visual identity using Gemini image generation.
+    Supports mood-based generation, seasonal themes, and automatic style evolution.
+
+
+    ## Files
+
+    - HEARTBEAT.md
+
+    - INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/selfie.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-selfie
+
+    ```'
+examples:
+- description: Install Agent Selfie from ClawHub
+  usage: clawhub install agent-selfie
+schema_version: '1.0'

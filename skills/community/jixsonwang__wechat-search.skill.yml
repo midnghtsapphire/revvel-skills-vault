@@ -1,0 +1,70 @@
+name: wechat-search
+title: Wechat Search
+version: 1.0.3
+description: Search WeChat Official Account articles using OpenClaw's web search, Tavily API, and web fetch capabilities with
+  compliance-focused design.
+metadata:
+  author: jixsonwang
+  category: Search & Research
+  tags:
+  - search-research
+  - wechat
+  - search
+  source: clawhub-community
+  clawhub_slug: wechat-search
+  clawhub_path: jixsonwang/wechat-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wechat Search
+
+    # Source: ClawHub community skill by jixsonwang
+
+    # Install: clawhub install wechat-search
+
+    # Path: jixsonwang/wechat-search
+
+
+    ## Description
+
+    Search WeChat Official Account articles using OpenClaw''s web search, Tavily API, and web fetch capabilities with compliance-focused
+    design.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - debug_test.py
+
+    - example-config.json
+
+    - requirements.txt
+
+    - wechat_search.py
+
+    - wechat_search_fixed.py
+
+    - wechat_search_simple.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wechat-search
+
+    ```'
+examples:
+- description: Install Wechat Search from ClawHub
+  usage: clawhub install wechat-search
+schema_version: '1.0'

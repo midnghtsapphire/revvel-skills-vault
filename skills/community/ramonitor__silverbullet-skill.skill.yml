@@ -1,0 +1,72 @@
+name: silverbullet
+title: SilverBullet API
+version: 1.0.0
+description: MCP server for SilverBullet note-taking app - read, write, search, and manage markdown pages
+metadata:
+  author: ramonitor
+  category: Search & Research
+  tags:
+  - search-research
+  - silverbullet
+  - '"mcporter(silverbullet:*)"'
+  source: clawhub-community
+  clawhub_slug: silverbullet-skill
+  clawhub_path: ramonitor/silverbullet-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '"mcporter(silverbullet:*)"'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SilverBullet API
+
+    # Source: ClawHub community skill by ramonitor
+
+    # Install: clawhub install silverbullet-skill
+
+    # Path: ramonitor/silverbullet-skill
+
+
+    ## Description
+
+    MCP server for SilverBullet note-taking app - read, write, search, and manage markdown pages
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - server.py
+
+    - examples/demo.py
+
+    - tests/__init__.py
+
+    - tests/test_server.py
+
+
+    ## Allowed Tools
+
+    "mcporter(silverbullet:*)"
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install silverbullet-skill
+
+    ```'
+examples:
+- description: Install SilverBullet API from ClawHub
+  usage: clawhub install silverbullet-skill
+schema_version: '1.0'

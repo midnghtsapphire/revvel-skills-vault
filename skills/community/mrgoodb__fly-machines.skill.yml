@@ -1,0 +1,56 @@
+name: fly-machines
+title: Fly Machines
+version: 1.0.0
+description: Deploy and manage Fly.io Machines - create, start, stop, delete, and monitor containerized apps. Use for deploying
+  containers, managing app instances, and orchestrating multi-tenant workloads.
+metadata:
+  author: mrgoodb
+  category: Development & Coding
+  tags:
+  - development-coding
+  - fly
+  - machines
+  source: clawhub-community
+  clawhub_slug: fly-machines
+  clawhub_path: mrgoodb/fly-machines
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fly Machines
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install fly-machines
+
+    # Path: mrgoodb/fly-machines
+
+
+    ## Description
+
+    Deploy and manage Fly.io Machines - create, start, stop, delete, and monitor containerized apps. Use for deploying containers,
+    managing app instances, and orchestrating multi-tenant workloads.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fly-machines
+
+    ```'
+examples:
+- description: Install Fly Machines from ClawHub
+  usage: clawhub install fly-machines
+schema_version: '1.0'

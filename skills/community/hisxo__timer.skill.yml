@@ -1,0 +1,57 @@
+name: timer
+title: timer
+version: 1.0.0
+description: Set timers and alarms. When a background timer completes, you receive a System notification - respond with the
+  reminder message (NOT HEARTBEAT_OK) to notify the user.
+metadata:
+  author: hisxo
+  category: Communication
+  tags:
+  - communication
+  - timer
+  source: clawhub-community
+  clawhub_slug: timer
+  clawhub_path: hisxo/timer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# timer
+
+    # Source: ClawHub community skill by hisxo
+
+    # Install: clawhub install timer
+
+    # Path: hisxo/timer
+
+
+    ## Description
+
+    Set timers and alarms. When a background timer completes, you receive a System notification - respond with the reminder
+    message (NOT HEARTBEAT_OK) to notify the user.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - timer.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install timer
+
+    ```'
+examples:
+- description: Install timer from ClawHub
+  usage: clawhub install timer
+schema_version: '1.0'

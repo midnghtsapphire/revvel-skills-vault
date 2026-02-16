@@ -1,0 +1,70 @@
+name: snake-game
+title: Snake Game
+version: 2.1.1
+description: Persistent autoplay daemon for the Trifle Snake game with modular strategy system
+metadata:
+  author: gigi-trifle
+  category: System & OS
+  tags:
+  - system-os
+  - snake
+  - game
+  source: clawhub-community
+  clawhub_slug: snake-game
+  clawhub_path: gigi-trifle/snake-game
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Snake Game
+
+    # Source: ClawHub community skill by gigi-trifle
+
+    # Install: clawhub install snake-game
+
+    # Path: gigi-trifle/snake-game
+
+
+    ## Description
+
+    Persistent autoplay daemon for the Trifle Snake game with modular strategy system
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdhub.json
+
+    - package.json
+
+    - snake.mjs
+
+    - daemon/autoplay.mjs
+
+    - lib/api.mjs
+
+    - lib/config.mjs
+
+    - lib/game-state.mjs
+
+    - lib/process.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install snake-game
+
+    ```'
+examples:
+- description: Install Snake Game from ClawHub
+  usage: clawhub install snake-game
+schema_version: '1.0'

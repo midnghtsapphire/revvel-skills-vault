@@ -1,0 +1,63 @@
+name: monitoring
+title: Monitoring
+version: 1.0.0
+description: '"Set up observability for applications and infrastructure with metrics, logs, traces, and alerts."'
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - monitoring
+  source: clawhub-community
+  clawhub_slug: monitoring
+  clawhub_path: ivangdavila/monitoring
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Monitoring
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install monitoring
+
+    # Path: ivangdavila/monitoring
+
+
+    ## Description
+
+    "Set up observability for applications and infrastructure with metrics, logs, traces, and alerts."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - alerting.md
+
+    - apm.md
+
+    - logs.md
+
+    - prometheus.md
+
+    - simple.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install monitoring
+
+    ```'
+examples:
+- description: Install Monitoring from ClawHub
+  usage: clawhub install monitoring
+schema_version: '1.0'

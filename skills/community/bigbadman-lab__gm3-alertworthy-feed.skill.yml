@@ -1,0 +1,55 @@
+name: gm3-alertworthy-feed
+title: GM3 Alertworthy Feed
+version: 1.0.3
+description: Read-only access to the GM3 Alertworthy feed, providing real-time token market data for analysis agents.
+metadata:
+  author: bigbadman-lab
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - gm3
+  - alertworthy
+  - feed
+  source: clawhub-community
+  clawhub_slug: gm3-alertworthy-feed
+  clawhub_path: bigbadman-lab/gm3-alertworthy-feed
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GM3 Alertworthy Feed
+
+    # Source: ClawHub community skill by bigbadman-lab
+
+    # Install: clawhub install gm3-alertworthy-feed
+
+    # Path: bigbadman-lab/gm3-alertworthy-feed
+
+
+    ## Description
+
+    Read-only access to the GM3 Alertworthy feed, providing real-time token market data for analysis agents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gm3-alertworthy-feed
+
+    ```'
+examples:
+- description: Install GM3 Alertworthy Feed from ClawHub
+  usage: clawhub install gm3-alertworthy-feed
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: longevity
+title: Longevity Assistant
+version: 1.0.0
+description: Evaluates longevity interventions using evidence tiers. Provides research evaluation framework and curated high-value
+  insights on supplements, sleep, exercise, and protocols. Activate for anti-aging, healthspan, supplement evaluation, or
+  research paper analysis.
+metadata:
+  author: lofimichael
+  category: Search & Research
+  tags:
+  - search-research
+  - longevity
+  source: clawhub-community
+  clawhub_slug: longevity-assistant
+  clawhub_path: lofimichael/longevity-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Longevity Assistant
+
+    # Source: ClawHub community skill by lofimichael
+
+    # Install: clawhub install longevity-assistant
+
+    # Path: lofimichael/longevity-assistant
+
+
+    ## Description
+
+    Evaluates longevity interventions using evidence tiers. Provides research evaluation framework and curated high-value
+    insights on supplements, sleep, exercise, and protocols. Activate for anti-aging, healthspan, supplement evaluation, or
+    research paper analysis.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install longevity-assistant
+
+    ```'
+examples:
+- description: Install Longevity Assistant from ClawHub
+  usage: clawhub install longevity-assistant
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: strands
+title: Strands Agents SDK
+version: 2.0.3
+description: Build and run Python-based AI agents using the AWS Strands SDK. Use when you need to create autonomous agents,
+  multi-agent workflows, custom tools, or integrate with MCP servers. Supports Ollama (local), Anthropic, OpenAI, Bedrock,
+  and other model providers. Use for agent scaffolding, tool creation,
+metadata:
+  author: trippingkelsea
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - strands
+  source: clawhub-community
+  clawhub_slug: strands
+  clawhub_path: trippingkelsea/strands
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Strands Agents SDK
+
+    # Source: ClawHub community skill by trippingkelsea
+
+    # Install: clawhub install strands
+
+    # Path: trippingkelsea/strands
+
+
+    ## Description
+
+    Build and run Python-based AI agents using the AWS Strands SDK. Use when you need to create autonomous agents, multi-agent
+    workflows, custom tools, or integrate with MCP servers. Supports Ollama (local), Anthropic, OpenAI, Bedrock, and other
+    model providers. Use for agent scaffolding, tool creation,
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cheatsheet.md
+
+    - scripts/create-agent.py
+
+    - scripts/run-agent.py
+
+    - tests/test_imports.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install strands
+
+    ```'
+examples:
+- description: Install Strands Agents SDK from ClawHub
+  usage: clawhub install strands
+schema_version: '1.0'

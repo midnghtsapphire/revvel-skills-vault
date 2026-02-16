@@ -1,0 +1,73 @@
+name: us-market-bubble-detector
+title: Us Market Bubble Detector
+version: 0.1.0
+description: Evaluates market bubble risk through quantitative data-driven analysis using the revised Minsky/Kindleberger
+  framework v2.1. Prioritizes objective metrics (Put/Call, VIX, margin debt, breadth, IPO data) over subjective impressions.
+  Features strict qualitative adjustment criteria with confirmation bi
+metadata:
+  author: veeramanikandanr48
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - market
+  - bubble
+  - detector
+  source: clawhub-community
+  clawhub_slug: us-market-bubble-detector
+  clawhub_path: veeramanikandanr48/us-market-bubble-detector
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Us Market Bubble Detector
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install us-market-bubble-detector
+
+    # Path: veeramanikandanr48/us-market-bubble-detector
+
+
+    ## Description
+
+    Evaluates market bubble risk through quantitative data-driven analysis using the revised Minsky/Kindleberger framework
+    v2.1. Prioritizes objective metrics (Put/Call, VIX, margin debt, breadth, IPO data) over subjective impressions. Features
+    strict qualitative adjustment criteria with confirmation bi
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/bubble_framework.md
+
+    - references/historical_cases.md
+
+    - references/implementation_guide.md
+
+    - references/quick_reference.md
+
+    - references/quick_reference_en.md
+
+    - scripts/bubble_scorer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install us-market-bubble-detector
+
+    ```'
+examples:
+- description: Install Us Market Bubble Detector from ClawHub
+  usage: clawhub install us-market-bubble-detector
+schema_version: '1.0'

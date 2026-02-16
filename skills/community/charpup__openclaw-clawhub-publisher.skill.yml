@@ -1,0 +1,68 @@
+name: clawhub-publisher
+title: OpenClaw ClawHub Publisher
+version: 1.0.0
+description: ClawHub skill publisher with token management and retry logic
+metadata:
+  author: charpup
+  category: General
+  tags:
+  - general
+  - clawhub
+  - publisher
+  source: clawhub-community
+  clawhub_slug: openclaw-clawhub-publisher
+  clawhub_path: charpup/openclaw-clawhub-publisher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw ClawHub Publisher
+
+    # Source: ClawHub community skill by charpup
+
+    # Install: clawhub install openclaw-clawhub-publisher
+
+    # Path: charpup/openclaw-clawhub-publisher
+
+
+    ## Description
+
+    ClawHub skill publisher with token management and retry logic
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - findings.md
+
+    - package-lock.json
+
+    - package.json
+
+    - progress.md
+
+    - task_plan.md
+
+    - lib/clawhub-publisher.js
+
+    - tests/clawhub-publisher.test.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-clawhub-publisher
+
+    ```'
+examples:
+- description: Install OpenClaw ClawHub Publisher from ClawHub
+  usage: clawhub install openclaw-clawhub-publisher
+schema_version: '1.0'

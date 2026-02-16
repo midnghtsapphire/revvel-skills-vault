@@ -1,0 +1,53 @@
+name: statuspage
+title: Statuspage
+version: 1.0.0
+description: Manage Statuspage incidents and components via API. Update status and communicate outages.
+metadata:
+  author: mrgoodb
+  category: Development & Coding
+  tags:
+  - development-coding
+  - statuspage
+  source: clawhub-community
+  clawhub_slug: statuspage
+  clawhub_path: mrgoodb/statuspage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Statuspage
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install statuspage
+
+    # Path: mrgoodb/statuspage
+
+
+    ## Description
+
+    Manage Statuspage incidents and components via API. Update status and communicate outages.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install statuspage
+
+    ```'
+examples:
+- description: Install Statuspage from ClawHub
+  usage: clawhub install statuspage
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: digital-ocean
+title: Digital Ocean
+version: 1.0.0
+description: Manage Digital Ocean droplets, domains, and infrastructure via DO API.
+metadata:
+  author: dbhurley
+  category: Development & Coding
+  tags:
+  - development-coding
+  - digital
+  - ocean
+  source: clawhub-community
+  clawhub_slug: digital-ocean
+  clawhub_path: dbhurley/digital-ocean
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Digital Ocean
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install digital-ocean
+
+    # Path: dbhurley/digital-ocean
+
+
+    ## Description
+
+    Manage Digital Ocean droplets, domains, and infrastructure via DO API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/do.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install digital-ocean
+
+    ```'
+examples:
+- description: Install Digital Ocean from ClawHub
+  usage: clawhub install digital-ocean
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: instagram-reels
+title: Instagram Reels
+version: 1.0.0
+description: Download Instagram Reels, transcribe audio, and extract captions. Share a reel URL and get back a full transcript
+  with the original description.
+metadata:
+  author: antoinedc
+  category: Media & Content
+  tags:
+  - media-content
+  - instagram
+  - reels
+  source: clawhub-community
+  clawhub_slug: instagram-reels
+  clawhub_path: antoinedc/instagram-reels
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Instagram Reels
+
+    # Source: ClawHub community skill by antoinedc
+
+    # Install: clawhub install instagram-reels
+
+    # Path: antoinedc/instagram-reels
+
+
+    ## Description
+
+    Download Instagram Reels, transcribe audio, and extract captions. Share a reel URL and get back a full transcript with
+    the original description.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install instagram-reels
+
+    ```'
+examples:
+- description: Install Instagram Reels from ClawHub
+  usage: clawhub install instagram-reels
+schema_version: '1.0'

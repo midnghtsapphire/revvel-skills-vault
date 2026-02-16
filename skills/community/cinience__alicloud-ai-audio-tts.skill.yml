@@ -1,0 +1,67 @@
+name: alicloud-ai-audio-tts
+title: Alicloud Ai Audio Tts
+version: 1.0.2
+description: Generate human-like speech audio with Model Studio DashScope Qwen TTS models (qwen3-tts-flash, qwen3-tts-instruct-flash).
+  Use when converting text to speech, producing voice lines for short drama/news videos, or documenting TTS request/response
+  fields for DashScope.
+metadata:
+  author: cinience
+  category: Media & Content
+  tags:
+  - media-content
+  - alicloud
+  - audio
+  - tts
+  source: clawhub-community
+  clawhub_slug: alicloud-ai-audio-tts
+  clawhub_path: cinience/alicloud-ai-audio-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Ai Audio Tts
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-ai-audio-tts
+
+    # Path: cinience/alicloud-ai-audio-tts
+
+
+    ## Description
+
+    Generate human-like speech audio with Model Studio DashScope Qwen TTS models (qwen3-tts-flash, qwen3-tts-instruct-flash).
+    Use when converting text to speech, producing voice lines for short drama/news videos, or documenting TTS request/response
+    fields for DashScope.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/api_reference.md
+
+    - references/sources.md
+
+    - scripts/generate_tts.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-ai-audio-tts
+
+    ```'
+examples:
+- description: Install Alicloud Ai Audio Tts from ClawHub
+  usage: clawhub install alicloud-ai-audio-tts
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: seedream-image-gen
+title: Seedream4.5 Image Gen
+version: 1.0.0
+description: Generate images via Seedream API (doubao-seedream models). Synchronous generation.
+metadata:
+  author: owenrao
+  category: Media & Content
+  tags:
+  - media-content
+  - seedream
+  - image
+  - gen
+  source: clawhub-community
+  clawhub_slug: seedream-image-gen
+  clawhub_path: owenrao/seedream-image-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seedream4.5 Image Gen
+
+    # Source: ClawHub community skill by owenrao
+
+    # Install: clawhub install seedream-image-gen
+
+    # Path: owenrao/seedream-image-gen
+
+
+    ## Description
+
+    Generate images via Seedream API (doubao-seedream models). Synchronous generation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_image.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seedream-image-gen
+
+    ```'
+examples:
+- description: Install Seedream4.5 Image Gen from ClawHub
+  usage: clawhub install seedream-image-gen
+schema_version: '1.0'

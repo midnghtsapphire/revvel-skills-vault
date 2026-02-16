@@ -1,0 +1,74 @@
+name: office365-connector
+title: Office 365 Connector
+version: 2.0.0
+description: Office 365 / Outlook connector for email (read/send), calendar (read/write), and contacts (read/write) using
+  resilient OAuth authentication. NOW WITH MULTI-ACCOUNT SUPPORT! Manage multiple Microsoft 365 identities from a single skill.
+  Solves the difficulty connecting to Office 365 email, calendar, a
+metadata:
+  author: tirandagan
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - office365
+  - connector
+  source: clawhub-community
+  clawhub_slug: office365-connector
+  clawhub_path: tirandagan/office365-connector
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Office 365 Connector
+
+    # Source: ClawHub community skill by tirandagan
+
+    # Install: clawhub install office365-connector
+
+    # Path: tirandagan/office365-connector
+
+
+    ## Description
+
+    Office 365 / Outlook connector for email (read/send), calendar (read/write), and contacts (read/write) using resilient
+    OAuth authentication. NOW WITH MULTI-ACCOUNT SUPPORT! Manage multiple Microsoft 365 identities from a single skill. Solves
+    the difficulty connecting to Office 365 email, calendar, a
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - CREDITS.md
+
+    - MULTI-ACCOUNT.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - accounts.js
+
+    - auth.js
+
+    - calendar.js
+
+    - cancel-event.js
+
+    - email.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install office365-connector
+
+    ```'
+examples:
+- description: Install Office 365 Connector from ClawHub
+  usage: clawhub install office365-connector
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: outlook-delegate
+title: Outlook Delegate
+version: 1.1.1
+description: Read, search, and manage Outlook emails and calendar via Microsoft Graph API with delegate support. Supports
+  sending as self, as owner (Send As), and on behalf of owner (Send on Behalf). Modified for delegate access from https://clawhub.ai/jotamed/outlook
+metadata:
+  author: 87marc
+  category: Search & Research
+  tags:
+  - search-research
+  - outlook
+  - delegate
+  source: clawhub-community
+  clawhub_slug: outlook-delegate
+  clawhub_path: 87marc/outlook-delegate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Outlook Delegate
+
+    # Source: ClawHub community skill by 87marc
+
+    # Install: clawhub install outlook-delegate
+
+    # Path: 87marc/outlook-delegate
+
+
+    ## Description
+
+    Read, search, and manage Outlook emails and calendar via Microsoft Graph API with delegate support. Supports sending as
+    self, as owner (Send As), and on behalf of owner (Send on Behalf). Modified for delegate access from https://clawhub.ai/jotamed/outlook
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/setup.md
+
+    - scripts/outlook-calendar.sh
+
+    - scripts/outlook-mail.sh
+
+    - scripts/outlook-token.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install outlook-delegate
+
+    ```'
+examples:
+- description: Install Outlook Delegate from ClawHub
+  usage: clawhub install outlook-delegate
+schema_version: '1.0'

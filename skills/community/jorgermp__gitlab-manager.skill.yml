@@ -1,0 +1,58 @@
+name: gitlab-manager
+title: Gitlab Manager
+version: 1.0.0
+description: Manage GitLab repositories, merge requests, and issues via API. Use for tasks like creating repos, reviewing
+  code in MRs, or tracking issues.
+metadata:
+  author: jorgermp
+  category: Development & Coding
+  tags:
+  - development-coding
+  - gitlab
+  - manager
+  source: clawhub-community
+  clawhub_slug: gitlab-manager
+  clawhub_path: jorgermp/gitlab-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gitlab Manager
+
+    # Source: ClawHub community skill by jorgermp
+
+    # Install: clawhub install gitlab-manager
+
+    # Path: jorgermp/gitlab-manager
+
+
+    ## Description
+
+    Manage GitLab repositories, merge requests, and issues via API. Use for tasks like creating repos, reviewing code in MRs,
+    or tracking issues.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gitlab_api.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gitlab-manager
+
+    ```'
+examples:
+- description: Install Gitlab Manager from ClawHub
+  usage: clawhub install gitlab-manager
+schema_version: '1.0'

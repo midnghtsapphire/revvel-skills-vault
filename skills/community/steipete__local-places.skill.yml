@@ -1,0 +1,66 @@
+name: local-places
+title: Local Places
+version: 1.0.0
+description: Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost.
+metadata:
+  author: steipete
+  category: Search & Research
+  tags:
+  - search-research
+  - local
+  - places
+  source: clawhub-community
+  clawhub_slug: local-places
+  clawhub_path: steipete/local-places
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Local Places
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install local-places
+
+    # Path: steipete/local-places
+
+
+    ## Description
+
+    Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost.
+
+
+    ## Files
+
+    - SERVER_README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - src/local_places/__init__.py
+
+    - src/local_places/google_places.py
+
+    - src/local_places/main.py
+
+    - src/local_places/schemas.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install local-places
+
+    ```'
+examples:
+- description: Install Local Places from ClawHub
+  usage: clawhub install local-places
+schema_version: '1.0'

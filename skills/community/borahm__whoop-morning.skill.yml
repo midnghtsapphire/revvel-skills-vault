@@ -1,0 +1,56 @@
+name: whoop-morning
+title: WHOOP Morning
+version: 0.1.1
+description: Check WHOOP recovery/sleep/strain each morning and send suggestions.
+metadata:
+  author: borahm
+  category: General
+  tags:
+  - general
+  - whoop
+  - morning
+  source: clawhub-community
+  clawhub_slug: whoop-morning
+  clawhub_path: borahm/whoop-morning
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WHOOP Morning
+
+    # Source: ClawHub community skill by borahm
+
+    # Install: clawhub install whoop-morning
+
+    # Path: borahm/whoop-morning
+
+
+    ## Description
+
+    Check WHOOP recovery/sleep/strain each morning and send suggestions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/tokens.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install whoop-morning
+
+    ```'
+examples:
+- description: Install WHOOP Morning from ClawHub
+  usage: clawhub install whoop-morning
+schema_version: '1.0'

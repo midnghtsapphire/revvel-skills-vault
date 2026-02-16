@@ -1,0 +1,59 @@
+name: agentlens
+title: Agentlens
+version: 1.0.0
+description: Navigate and understand codebases using agentlens hierarchical documentation. Use when exploring new projects,
+  finding modules, locating symbols in large files, finding TODOs/warnings, or understanding code structure.
+metadata:
+  author: nguyenphutrong
+  category: Development & Coding
+  tags:
+  - development-coding
+  - agentlens
+  source: clawhub-community
+  clawhub_slug: agentlens
+  clawhub_path: nguyenphutrong/agentlens
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agentlens
+
+    # Source: ClawHub community skill by nguyenphutrong
+
+    # Install: clawhub install agentlens
+
+    # Path: nguyenphutrong/agentlens
+
+
+    ## Description
+
+    Navigate and understand codebases using agentlens hierarchical documentation. Use when exploring new projects, finding
+    modules, locating symbols in large files, finding TODOs/warnings, or understanding code structure.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/navigation.md
+
+    - references/structure.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentlens
+
+    ```'
+examples:
+- description: Install Agentlens from ClawHub
+  usage: clawhub install agentlens
+schema_version: '1.0'

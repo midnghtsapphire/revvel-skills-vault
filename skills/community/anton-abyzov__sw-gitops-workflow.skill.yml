@@ -1,0 +1,61 @@
+name: gitops-workflow
+title: Gitops Workflow
+version: 1.0.0
+description: Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes deployments with continuous
+  reconciliation. Use when implementing GitOps practices, automating Kubernetes deployments, or setting up declarative infrastructure
+  management.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - gitops
+  - workflow
+  source: clawhub-community
+  clawhub_slug: sw-gitops-workflow
+  clawhub_path: anton-abyzov/sw-gitops-workflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gitops Workflow
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-gitops-workflow
+
+    # Path: anton-abyzov/sw-gitops-workflow
+
+
+    ## Description
+
+    Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes deployments with continuous reconciliation.
+    Use when implementing GitOps practices, automating Kubernetes deployments, or setting up declarative infrastructure management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/argocd-setup.md
+
+    - references/sync-policies.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-gitops-workflow
+
+    ```'
+examples:
+- description: Install Gitops Workflow from ClawHub
+  usage: clawhub install sw-gitops-workflow
+schema_version: '1.0'

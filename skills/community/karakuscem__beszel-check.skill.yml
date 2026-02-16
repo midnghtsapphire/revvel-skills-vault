@@ -1,0 +1,55 @@
+name: beszel
+title: Beszel Check
+version: 1.0.0
+description: Monitor home lab servers via Beszel (PocketBase).
+metadata:
+  author: karakuscem
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - beszel
+  source: clawhub-community
+  clawhub_slug: beszel-check
+  clawhub_path: karakuscem/beszel-check
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Beszel Check
+
+    # Source: ClawHub community skill by karakuscem
+
+    # Install: clawhub install beszel-check
+
+    # Path: karakuscem/beszel-check
+
+
+    ## Description
+
+    Monitor home lab servers via Beszel (PocketBase).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install beszel-check
+
+    ```'
+examples:
+- description: Install Beszel Check from ClawHub
+  usage: clawhub install beszel-check
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: code-review
+title: Code Review
+version: 1.0.0
+description: Systematic code review patterns covering security, performance, maintainability, correctness, and testing — with
+  severity levels, structured feedback guidance, review process, and anti-patterns to avoid. Use when reviewing PRs, establishing
+  review standards, or improving review quality.
+metadata:
+  author: wpank
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - code
+  - review
+  source: clawhub-community
+  clawhub_slug: code-review
+  clawhub_path: wpank/code-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Code Review
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install code-review
+
+    # Path: wpank/code-review
+
+
+    ## Description
+
+    Systematic code review patterns covering security, performance, maintainability, correctness, and testing — with severity
+    levels, structured feedback guidance, review process, and anti-patterns to avoid. Use when reviewing PRs, establishing
+    review standards, or improving review quality.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install code-review
+
+    ```'
+examples:
+- description: Install Code Review from ClawHub
+  usage: clawhub install code-review
+schema_version: '1.0'

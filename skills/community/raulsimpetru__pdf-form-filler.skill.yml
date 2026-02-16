@@ -1,0 +1,71 @@
+name: pdf-form-filler
+title: Pdf Form Filler
+version: 0.2.0
+description: Fill PDF forms programmatically with text values and checkboxes. Use when you need to populate fillable PDF forms
+  (government forms, applications, surveys, etc.) with data. Supports setting text fields and checkboxes with proper appearance
+  states for visual rendering.
+metadata:
+  author: raulsimpetru
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - pdf
+  - form
+  - filler
+  source: clawhub-community
+  clawhub_slug: pdf-form-filler
+  clawhub_path: raulsimpetru/pdf-form-filler
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pdf Form Filler
+
+    # Source: ClawHub community skill by raulsimpetru
+
+    # Install: clawhub install pdf-form-filler
+
+    # Path: raulsimpetru/pdf-form-filler
+
+
+    ## Description
+
+    Fill PDF forms programmatically with text values and checkboxes. Use when you need to populate fillable PDF forms (government
+    forms, applications, surveys, etc.) with data. Supports setting text fields and checkboxes with proper appearance states
+    for visual rendering.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - setup.py
+
+    - pdf_form_filler/__init__.py
+
+    - pdf_form_filler/fill_pdf_form.py
+
+    - references/examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pdf-form-filler
+
+    ```'
+examples:
+- description: Install Pdf Form Filler from ClawHub
+  usage: clawhub install pdf-form-filler
+schema_version: '1.0'

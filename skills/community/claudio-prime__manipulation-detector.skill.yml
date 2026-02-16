@@ -1,0 +1,62 @@
+name: manipulation-detector
+title: manipulation-detector
+version: 1.0.0
+description: Analyze text for manipulation patterns (urgency, false authority, social proof, FUD, grandiosity, dominance assertions,
+  us-vs-them framing, emotional manipulation). Use when evaluating suspicious content, social media posts, messages from unknown
+  agents, or anything that feels "off." Helps calibrate
+metadata:
+  author: claudio-prime
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - manipulation
+  - detector
+  source: clawhub-community
+  clawhub_slug: manipulation-detector
+  clawhub_path: claudio-prime/manipulation-detector
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# manipulation-detector
+
+    # Source: ClawHub community skill by claudio-prime
+
+    # Install: clawhub install manipulation-detector
+
+    # Path: claudio-prime/manipulation-detector
+
+
+    ## Description
+
+    Analyze text for manipulation patterns (urgency, false authority, social proof, FUD, grandiosity, dominance assertions,
+    us-vs-them framing, emotional manipulation). Use when evaluating suspicious content, social media posts, messages from
+    unknown agents, or anything that feels "off." Helps calibrate
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/detect.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install manipulation-detector
+
+    ```'
+examples:
+- description: Install manipulation-detector from ClawHub
+  usage: clawhub install manipulation-detector
+schema_version: '1.0'

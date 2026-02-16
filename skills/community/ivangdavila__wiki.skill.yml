@@ -1,0 +1,53 @@
+name: wiki
+title: Wiki
+version: 1.0.0
+description: '"Build wikis people actually read — structure pages, cross-link, and keep content fresh."'
+metadata:
+  author: ivangdavila
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - wiki
+  source: clawhub-community
+  clawhub_slug: wiki
+  clawhub_path: ivangdavila/wiki
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wiki
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install wiki
+
+    # Path: ivangdavila/wiki
+
+
+    ## Description
+
+    "Build wikis people actually read — structure pages, cross-link, and keep content fresh."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wiki
+
+    ```'
+examples:
+- description: Install Wiki from ClawHub
+  usage: clawhub install wiki
+schema_version: '1.0'

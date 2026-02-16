@@ -1,0 +1,73 @@
+name: rag
+title: Rag
+version: 1.0.5
+description: Complete RAG (Retrieval-Augmented Generation) system for OpenClaw. Indexes chat sessions, workspace code, documentation,
+  and skills into local ChromaDB for semantic search. Enables finding past solutions, code patterns, and decisions instantly.
+  Uses local embeddings (all-MiniLM-L6-v2) with no API ke
+metadata:
+  author: wmantly
+  category: Search & Research
+  tags:
+  - search-research
+  - rag
+  source: clawhub-community
+  clawhub_slug: openclaw-rag-skill
+  clawhub_path: wmantly/openclaw-rag-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Rag
+
+    # Source: ClawHub community skill by wmantly
+
+    # Install: clawhub install openclaw-rag-skill
+
+    # Path: wmantly/openclaw-rag-skill
+
+
+    ## Description
+
+    Complete RAG (Retrieval-Augmented Generation) system for OpenClaw. Indexes chat sessions, workspace code, documentation,
+    and skills into local ChromaDB for semantic search. Enables finding past solutions, code patterns, and decisions instantly.
+    Uses local embeddings (all-MiniLM-L6-v2) with no API ke
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - ingest_docs.py
+
+    - ingest_sessions.py
+
+    - launch_rag_agent.sh
+
+    - package.json
+
+    - rag_agent.py
+
+    - rag_context.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-rag-skill
+
+    ```'
+examples:
+- description: Install Rag from ClawHub
+  usage: clawhub install openclaw-rag-skill
+schema_version: '1.0'

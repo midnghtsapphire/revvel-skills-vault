@@ -1,0 +1,53 @@
+name: openhue
+title: Openhue
+version: 1.0.0
+description: Control Philips Hue lights/scenes via the OpenHue CLI.
+metadata:
+  author: steipete
+  category: General
+  tags:
+  - general
+  - openhue
+  source: clawhub-community
+  clawhub_slug: openhue
+  clawhub_path: steipete/openhue
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openhue
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install openhue
+
+    # Path: steipete/openhue
+
+
+    ## Description
+
+    Control Philips Hue lights/scenes via the OpenHue CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openhue
+
+    ```'
+examples:
+- description: Install Openhue from ClawHub
+  usage: clawhub install openhue
+schema_version: '1.0'

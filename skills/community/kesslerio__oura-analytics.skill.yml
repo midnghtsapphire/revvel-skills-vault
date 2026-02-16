@@ -1,0 +1,74 @@
+name: oura-analytics
+title: Oura Ring Analytics
+version: 1.0.0
+description: Oura Ring data integration and analytics. Fetch sleep scores, readiness, activity, HRV, and trends from the Oura
+  Cloud API. Generate automated reports, correlations with productivity, and trigger-based alerts for low recovery days. Requires
+  OURA_API_TOKEN (get at cloud.ouraring.com).
+metadata:
+  author: kesslerio
+  category: Development & Coding
+  tags:
+  - development-coding
+  - oura
+  - analytics
+  source: clawhub-community
+  clawhub_slug: oura-analytics
+  clawhub_path: kesslerio/oura-analytics
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Oura Ring Analytics
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install oura-analytics
+
+    # Path: kesslerio/oura-analytics
+
+
+    ## Description
+
+    Oura Ring data integration and analytics. Fetch sleep scores, readiness, activity, HRV, and trends from the Oura Cloud
+    API. Generate automated reports, correlations with productivity, and trigger-based alerts for low recovery days. Requires
+    OURA_API_TOKEN (get at cloud.ouraring.com).
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - requirements-dev.txt
+
+    - requirements.txt
+
+    - references/SCHEMA.md
+
+    - references/TIMEZONE.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install oura-analytics
+
+    ```'
+examples:
+- description: Install Oura Ring Analytics from ClawHub
+  usage: clawhub install oura-analytics
+schema_version: '1.0'

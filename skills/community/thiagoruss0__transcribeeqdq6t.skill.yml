@@ -1,0 +1,57 @@
+name: transcribee
+title: Transcribee (YouTube / Local video)
+version: 1.0.0
+description: Transcribe YouTube videos and local audio/video files with speaker diarization. Use when user asks to transcribe
+  a YouTube URL, podcast, video, or audio file. Outputs clean speaker-labeled transcripts ready for LLM analysis.
+metadata:
+  author: thiagoruss0
+  category: Media & Content
+  tags:
+  - media-content
+  - transcribee
+  source: clawhub-community
+  clawhub_slug: transcribeeqdq6t
+  clawhub_path: thiagoruss0/transcribeeqdq6t
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Transcribee (YouTube / Local video)
+
+    # Source: ClawHub community skill by thiagoruss0
+
+    # Install: clawhub install transcribeeqdq6t
+
+    # Path: thiagoruss0/transcribeeqdq6t
+
+
+    ## Description
+
+    Transcribe YouTube videos and local audio/video files with speaker diarization. Use when user asks to transcribe a YouTube
+    URL, podcast, video, or audio file. Outputs clean speaker-labeled transcripts ready for LLM analysis.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install transcribeeqdq6t
+
+    ```'
+examples:
+- description: Install Transcribee (YouTube / Local video) from ClawHub
+  usage: clawhub install transcribeeqdq6t
+schema_version: '1.0'

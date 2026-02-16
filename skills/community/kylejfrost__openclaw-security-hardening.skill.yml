@@ -1,0 +1,67 @@
+name: openclaw-security-hardening
+title: OpenClaw Security Hardening
+version: 1.1.0
+description: Protect OpenClaw installations from prompt injection, data exfiltration, malicious skills, and workspace tampering
+metadata:
+  author: kylejfrost
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - security
+  - hardening
+  source: clawhub-community
+  clawhub_slug: openclaw-security-hardening
+  clawhub_path: kylejfrost/openclaw-security-hardening
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Security Hardening
+
+    # Source: ClawHub community skill by kylejfrost
+
+    # Install: clawhub install openclaw-security-hardening
+
+    # Path: kylejfrost/openclaw-security-hardening
+
+
+    ## Description
+
+    Protect OpenClaw installations from prompt injection, data exfiltration, malicious skills, and workspace tampering
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/security-rules-template.md
+
+    - scripts/audit-outbound.sh
+
+    - scripts/harden-workspace.sh
+
+    - scripts/install-guard.sh
+
+    - scripts/integrity-check.sh
+
+    - scripts/scan-skills.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-security-hardening
+
+    ```'
+examples:
+- description: Install OpenClaw Security Hardening from ClawHub
+  usage: clawhub install openclaw-security-hardening
+schema_version: '1.0'

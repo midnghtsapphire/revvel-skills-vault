@@ -1,0 +1,64 @@
+name: relay-to-agent
+title: Relay To Agent
+version: 1.0.0
+description: '"Relay messages to AI agents on any OpenAI-compatible API. Supports multi-turn conversations with session management.
+  List agents, send messages, reset sessions."'
+metadata:
+  author: ericsantos
+  category: Communication
+  tags:
+  - communication
+  - relay
+  - agent
+  source: clawhub-community
+  clawhub_slug: relay-to-agent
+  clawhub_path: ericsantos/relay-to-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Relay To Agent
+
+    # Source: ClawHub community skill by ericsantos
+
+    # Install: clawhub install relay-to-agent
+
+    # Path: ericsantos/relay-to-agent
+
+
+    ## Description
+
+    "Relay messages to AI agents on any OpenAI-compatible API. Supports multi-turn conversations with session management.
+    List agents, send messages, reset sessions."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents.example.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/relay.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install relay-to-agent
+
+    ```'
+examples:
+- description: Install Relay To Agent from ClawHub
+  usage: clawhub install relay-to-agent
+schema_version: '1.0'

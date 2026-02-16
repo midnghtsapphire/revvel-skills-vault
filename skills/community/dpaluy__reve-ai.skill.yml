@@ -1,0 +1,61 @@
+name: reve-ai
+title: Reve AI Image Generation
+version: 1.0.2
+description: Generate, edit, and remix images using the Reve AI API. Use when creating images from text prompts, editing existing
+  images with instructions, or combining/remixing multiple reference images. Requires REVE_API_KEY or REVE_AI_API_KEY environment
+  variable.
+metadata:
+  author: dpaluy
+  category: Media & Content
+  tags:
+  - media-content
+  - reve
+  source: clawhub-community
+  clawhub_slug: reve-ai
+  clawhub_path: dpaluy/reve-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reve AI Image Generation
+
+    # Source: ClawHub community skill by dpaluy
+
+    # Install: clawhub install reve-ai
+
+    # Path: dpaluy/reve-ai
+
+
+    ## Description
+
+    Generate, edit, and remix images using the Reve AI API. Use when creating images from text prompts, editing existing images
+    with instructions, or combining/remixing multiple reference images. Requires REVE_API_KEY or REVE_AI_API_KEY environment
+    variable.
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/reve.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reve-ai
+
+    ```'
+examples:
+- description: Install Reve AI Image Generation from ClawHub
+  usage: clawhub install reve-ai
+schema_version: '1.0'

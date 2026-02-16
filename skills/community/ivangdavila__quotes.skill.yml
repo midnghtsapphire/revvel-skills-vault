@@ -1,0 +1,53 @@
+name: quotes
+title: Quotes
+version: 1.0.0
+description: Build a personal quotes system for saving, discovering, and automatically surfacing meaningful words.
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - quotes
+  source: clawhub-community
+  clawhub_slug: quotes
+  clawhub_path: ivangdavila/quotes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Quotes
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install quotes
+
+    # Path: ivangdavila/quotes
+
+
+    ## Description
+
+    Build a personal quotes system for saving, discovering, and automatically surfacing meaningful words.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install quotes
+
+    ```'
+examples:
+- description: Install Quotes from ClawHub
+  usage: clawhub install quotes
+schema_version: '1.0'

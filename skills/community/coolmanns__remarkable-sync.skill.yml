@@ -1,0 +1,55 @@
+name: remarkable
+title: reMarkable Tablet Sync
+version: 1.0.0
+description: Bidirectional sync with reMarkable tablet via Cloud API (rmapi). Fetch handwritten notes/sketches, process with
+  AI, and push content back. Use for sketch enhancement, journal extraction, or sending documents/images to the tablet.
+metadata:
+  author: coolmanns
+  category: Media & Content
+  tags:
+  - media-content
+  - remarkable
+  source: clawhub-community
+  clawhub_slug: remarkable-sync
+  clawhub_path: coolmanns/remarkable-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# reMarkable Tablet Sync
+
+    # Source: ClawHub community skill by coolmanns
+
+    # Install: clawhub install remarkable-sync
+
+    # Path: coolmanns/remarkable-sync
+
+
+    ## Description
+
+    Bidirectional sync with reMarkable tablet via Cloud API (rmapi). Fetch handwritten notes/sketches, process with AI, and
+    push content back. Use for sketch enhancement, journal extraction, or sending documents/images to the tablet.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remarkable-sync
+
+    ```'
+examples:
+- description: Install reMarkable Tablet Sync from ClawHub
+  usage: clawhub install remarkable-sync
+schema_version: '1.0'

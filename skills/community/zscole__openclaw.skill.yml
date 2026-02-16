@@ -1,0 +1,64 @@
+name: bagman
+title: Openclaw
+version: 1.0.0
+description: Secure key management for AI agents. Use when handling private keys, API secrets, wallet credentials, or when
+  building systems that need agent-controlled funds. Covers secure storage, session keys, leak prevention, and prompt injection
+  defense.
+metadata:
+  author: zscole
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bagman
+  source: clawhub-community
+  clawhub_slug: openclaw
+  clawhub_path: zscole/openclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw
+
+    # Source: ClawHub community skill by zscole
+
+    # Install: clawhub install openclaw
+
+    # Path: zscole/openclaw
+
+
+    ## Description
+
+    Secure key management for AI agents. Use when handling private keys, API secrets, wallet credentials, or when building
+    systems that need agent-controlled funds. Covers secure storage, session keys, leak prevention, and prompt injection defense.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/leak-prevention.md
+
+    - references/prompt-injection-defense.md
+
+    - references/secure-storage.md
+
+    - references/session-keys.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw
+
+    ```'
+examples:
+- description: Install Openclaw from ClawHub
+  usage: clawhub install openclaw
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: pattern-extraction
+title: Skill Extraction
+version: 1.0.0
+description: Extract design systems, architecture patterns, and methodology from codebases into reusable skills and documentation.
+  Use when analyzing a project to capture patterns, creating skills from existing code, extracting design tokens, or documenting
+  how a project was built. Triggers on "extract patterns"
+metadata:
+  author: wpank
+  category: Development & Coding
+  tags:
+  - development-coding
+  - pattern
+  - extraction
+  source: clawhub-community
+  clawhub_slug: extraction
+  clawhub_path: wpank/extraction
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Extraction
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install extraction
+
+    # Path: wpank/extraction
+
+
+    ## Description
+
+    Extract design systems, architecture patterns, and methodology from codebases into reusable skills and documentation.
+    Use when analyzing a project to capture patterns, creating skills from existing code, extracting design tokens, or documenting
+    how a project was built. Triggers on "extract patterns"
+
+
+    ## Files
+
+    - COMMAND.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/extraction-categories.md
+
+    - references/methodology-values.md
+
+    - references/skill-quality-criteria.md
+
+    - references/validation-checklist.md
+
+    - references/output-templates/design-system.md
+
+    - references/output-templates/project-summary.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install extraction
+
+    ```'
+examples:
+- description: Install Skill Extraction from ClawHub
+  usage: clawhub install extraction
+schema_version: '1.0'

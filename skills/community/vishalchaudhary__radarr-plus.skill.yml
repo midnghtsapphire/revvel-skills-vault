@@ -1,0 +1,73 @@
+name: radarr
+title: Radarr+
+version: 0.1.7
+description: Add and manage movies in a Radarr instance via its HTTP API (search/lookup movies, list quality profiles and
+  root folders, add a movie by title/year or TMDB id, and trigger a search). Use when the user asks to add/request/download
+  a movie via Radarr/Plex, or when automating Radarr-based media workfl
+metadata:
+  author: vishalchaudhary
+  category: Search & Research
+  tags:
+  - search-research
+  - radarr
+  source: clawhub-community
+  clawhub_slug: radarr-plus
+  clawhub_path: vishalchaudhary/radarr-plus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Radarr+
+
+    # Source: ClawHub community skill by vishalchaudhary
+
+    # Install: clawhub install radarr-plus
+
+    # Path: vishalchaudhary/radarr-plus
+
+
+    ## Description
+
+    Add and manage movies in a Radarr instance via its HTTP API (search/lookup movies, list quality profiles and root folders,
+    add a movie by title/year or TMDB id, and trigger a search). Use when the user asks to add/request/download a movie via
+    Radarr/Plex, or when automating Radarr-based media workfl
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/onboarding.md
+
+    - references/radarr-api-notes.md
+
+    - references/setup.md
+
+    - scripts/check_env.py
+
+    - scripts/enqueue_track.py
+
+    - scripts/fetch_asset.py
+
+    - scripts/movie_card.py
+
+    - scripts/plex_link.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install radarr-plus
+
+    ```'
+examples:
+- description: Install Radarr+ from ClawHub
+  usage: clawhub install radarr-plus
+schema_version: '1.0'

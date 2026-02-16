@@ -1,0 +1,58 @@
+name: jules-cli
+title: Jules CLI
+version: 1.0.2
+description: Interact with the Jules CLI to manage asynchronous coding sessions. Use this skill sparingly for complex, isolated
+  tasks that benefit from a remote VM.
+metadata:
+  author: ajstafford
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - jules
+  - cli
+  source: clawhub-community
+  clawhub_slug: jules-cli
+  clawhub_path: ajstafford/jules-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jules CLI
+
+    # Source: ClawHub community skill by ajstafford
+
+    # Install: clawhub install jules-cli
+
+    # Path: ajstafford/jules-cli
+
+
+    ## Description
+
+    Interact with the Jules CLI to manage asynchronous coding sessions. Use this skill sparingly for complex, isolated tasks
+    that benefit from a remote VM.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/usage.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jules-cli
+
+    ```'
+examples:
+- description: Install Jules CLI from ClawHub
+  usage: clawhub install jules-cli
+schema_version: '1.0'

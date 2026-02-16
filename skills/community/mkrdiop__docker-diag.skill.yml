@@ -1,0 +1,57 @@
+name: docker_pro_diagnostic
+title: Docker Diag
+version: 1.0.0
+description: Advanced log analysis for Docker containers using signal extraction.
+metadata:
+  author: mkrdiop
+  category: Development & Coding
+  tags:
+  - development-coding
+  - docker
+  - pro
+  - diagnostic
+  source: clawhub-community
+  clawhub_slug: docker-diag
+  clawhub_path: mkrdiop/docker-diag
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docker Diag
+
+    # Source: ClawHub community skill by mkrdiop
+
+    # Install: clawhub install docker-diag
+
+    # Path: mkrdiop/docker-diag
+
+
+    ## Description
+
+    Advanced log analysis for Docker containers using signal extraction.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - log_processor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install docker-diag
+
+    ```'
+examples:
+- description: Install Docker Diag from ClawHub
+  usage: clawhub install docker-diag
+schema_version: '1.0'

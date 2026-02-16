@@ -1,0 +1,72 @@
+name: mcp-integration
+title: mcp-adapter
+version: 0.1.0
+description: Use Model Context Protocol servers to access external tools and data sources. Enable AI agents to discover and
+  execute tools from configured MCP servers (legal databases, APIs, database connectors, weather services, etc.).
+metadata:
+  author: lunarpulse
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mcp
+  - integration
+  source: clawhub-community
+  clawhub_slug: mcp-adapter
+  clawhub_path: lunarpulse/mcp-adapter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# mcp-adapter
+
+    # Source: ClawHub community skill by lunarpulse
+
+    # Install: clawhub install mcp-adapter
+
+    # Path: lunarpulse/mcp-adapter
+
+
+    ## Description
+
+    Use Model Context Protocol servers to access external tools and data sources. Enable AI agents to discover and execute
+    tools from configured MCP servers (legal databases, APIs, database connectors, weather services, etc.).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - config/openclaw.plugin.json
+
+    - docs/API.md
+
+    - docs/CHANGELOG.md
+
+    - docs/CONFIGURATION.md
+
+    - docs/CONTRIBUTING.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mcp-adapter
+
+    ```'
+examples:
+- description: Install mcp-adapter from ClawHub
+  usage: clawhub install mcp-adapter
+schema_version: '1.0'

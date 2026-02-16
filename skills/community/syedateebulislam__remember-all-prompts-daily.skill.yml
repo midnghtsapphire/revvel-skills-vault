@@ -1,0 +1,68 @@
+name: remember-all-prompts-daily
+title: Remember All Prompts Daily
+version: 1.0.1
+description: Preserve conversation continuity across token compaction cycles by extracting and archiving all prompts with
+  date-wise entries. Automatically triggers at 95% token usage (pre-compaction) and 1% (new sprint start) to export session
+  history, then ingests archived summaries on session restart to restor
+metadata:
+  author: syedateebulislam
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - remember
+  - all
+  - prompts
+  - daily
+  source: clawhub-community
+  clawhub_slug: remember-all-prompts-daily
+  clawhub_path: syedateebulislam/remember-all-prompts-daily
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Remember All Prompts Daily
+
+    # Source: ClawHub community skill by syedateebulislam
+
+    # Install: clawhub install remember-all-prompts-daily
+
+    # Path: syedateebulislam/remember-all-prompts-daily
+
+
+    ## Description
+
+    Preserve conversation continuity across token compaction cycles by extracting and archiving all prompts with date-wise
+    entries. Automatically triggers at 95% token usage (pre-compaction) and 1% (new sprint start) to export session history,
+    then ingests archived summaries on session restart to restor
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check_token_usage.py
+
+    - scripts/export_prompts.py
+
+    - scripts/ingest_prompts.py
+
+    - scripts/setup_cron.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remember-all-prompts-daily
+
+    ```'
+examples:
+- description: Install Remember All Prompts Daily from ClawHub
+  usage: clawhub install remember-all-prompts-daily
+schema_version: '1.0'

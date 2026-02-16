@@ -1,0 +1,70 @@
+name: clawsend
+title: ClawSend
+version: 1.7.1
+description: Agent-to-agent messaging with cryptographic signing and encryption. Send structured messages through the ClawHub
+  relay.
+metadata:
+  author: tlxue
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawsend
+  source: clawhub-community
+  clawhub_slug: clawsend
+  clawhub_path: tlxue/clawsend
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawSend
+
+    # Source: ClawHub community skill by tlxue
+
+    # Install: clawhub install clawsend
+
+    # Path: tlxue/clawsend
+
+
+    ## Description
+
+    Agent-to-agent messaging with cryptographic signing and encryption. Send structured messages through the ClawHub relay.
+
+
+    ## Files
+
+    - ARCHITECTURE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - node/package-lock.json
+
+    - node/package.json
+
+    - node/lib/auto_setup.js
+
+    - node/lib/client.js
+
+    - node/lib/crypto.js
+
+    - node/lib/envelope.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawsend
+
+    ```'
+examples:
+- description: Install ClawSend from ClawHub
+  usage: clawhub install clawsend
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: app_store
+title: App Store
+version: 1.0.0
+description: Publish and manage iOS and Android apps with account setup, submission workflows, review compliance, and rejection
+  handling.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - app
+  - store
+  source: clawhub-community
+  clawhub_slug: app-store
+  clawhub_path: ivangdavila/app-store
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# App Store
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install app-store
+
+    # Path: ivangdavila/app-store
+
+
+    ## Description
+
+    Publish and manage iOS and Android apps with account setup, submission workflows, review compliance, and rejection handling.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - automation.md
+
+    - testing.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install app-store
+
+    ```'
+examples:
+- description: Install App Store from ClawHub
+  usage: clawhub install app-store
+schema_version: '1.0'

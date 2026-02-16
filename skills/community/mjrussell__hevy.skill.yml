@@ -1,0 +1,71 @@
+name: hevy
+title: Hevy
+version: 0.2.0
+description: Query workout data from Hevy including workouts, routines, exercises, and history. Use when user asks about their
+  workouts, gym sessions, exercise progress, or fitness routines.
+metadata:
+  author: mjrussell
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - hevy
+  source: clawhub-community
+  clawhub_slug: hevy
+  clawhub_path: mjrussell/hevy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hevy
+
+    # Source: ClawHub community skill by mjrussell
+
+    # Install: clawhub install hevy
+
+    # Path: mjrussell/hevy
+
+
+    ## Description
+
+    Query workout data from Hevy including workouts, routines, exercises, and history. Use when user asks about their workouts,
+    gym sessions, exercise progress, or fitness routines.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - pnpm-lock.yaml
+
+    - tsconfig.json
+
+    - src/api.ts
+
+    - src/cli.ts
+
+    - src/config.ts
+
+    - src/index.ts
+
+    - src/types.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hevy
+
+    ```'
+examples:
+- description: Install Hevy from ClawHub
+  usage: clawhub install hevy
+schema_version: '1.0'

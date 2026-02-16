@@ -1,0 +1,58 @@
+name: voice-extractor
+title: Voice Extractor
+version: 1.0.0
+description: Extract and document someone's authentic writing voice from samples. Use when someone needs a "voice guide,"
+  wants to capture their writing DNA, or needs to train AI to write in their style. Also useful for ghostwriting, brand voice
+  documentation, or onboarding writers.
+metadata:
+  author: bobdevibecoder
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - voice
+  - extractor
+  source: clawhub-community
+  clawhub_slug: voice-extractor
+  clawhub_path: bobdevibecoder/voice-extractor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Voice Extractor
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install voice-extractor
+
+    # Path: bobdevibecoder/voice-extractor
+
+
+    ## Description
+
+    Extract and document someone''s authentic writing voice from samples. Use when someone needs a "voice guide," wants to
+    capture their writing DNA, or needs to train AI to write in their style. Also useful for ghostwriting, brand voice documentation,
+    or onboarding writers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install voice-extractor
+
+    ```'
+examples:
+- description: Install Voice Extractor from ClawHub
+  usage: clawhub install voice-extractor
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: tg-checkin
+title: Tg Checkin
+version: 1.0.2
+description: Generic Telegram Web automation for group check-ins. Supports multiple groups via configuration.
+metadata:
+  author: ls18166407597-design
+  category: Social Media
+  tags:
+  - social-media
+  - checkin
+  source: clawhub-community
+  clawhub_slug: tg-checkin
+  clawhub_path: ls18166407597-design/tg-checkin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tg Checkin
+
+    # Source: ClawHub community skill by ls18166407597-design
+
+    # Install: clawhub install tg-checkin
+
+    # Path: ls18166407597-design/tg-checkin
+
+
+    ## Description
+
+    Generic Telegram Web automation for group check-ins. Supports multiple groups via configuration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - config.json
+
+    - tg-logic.js
+
+    - scripts/checkin_logic.js
+
+    - scripts/tg_robust_logic.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tg-checkin
+
+    ```'
+examples:
+- description: Install Tg Checkin from ClawHub
+  usage: clawhub install tg-checkin
+schema_version: '1.0'

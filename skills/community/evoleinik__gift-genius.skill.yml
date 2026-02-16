@@ -1,0 +1,56 @@
+name: gift-genius
+title: Gift Genius
+version: 4.0.0
+description: Location-aware Valentine's Day gift finder. Routes US users to premium flowers (UrbanStems), Singapore users
+  to wellness supplements (Avea Life). Returns curated picks with Decision Packs — no decision fatigue, just 2-3 perfect options.
+metadata:
+  author: evoleinik
+  category: General
+  tags:
+  - general
+  - gift
+  - genius
+  source: clawhub-community
+  clawhub_slug: gift-genius
+  clawhub_path: evoleinik/gift-genius
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gift Genius
+
+    # Source: ClawHub community skill by evoleinik
+
+    # Install: clawhub install gift-genius
+
+    # Path: evoleinik/gift-genius
+
+
+    ## Description
+
+    Location-aware Valentine''s Day gift finder. Routes US users to premium flowers (UrbanStems), Singapore users to wellness
+    supplements (Avea Life). Returns curated picks with Decision Packs — no decision fatigue, just 2-3 perfect options.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gift-genius
+
+    ```'
+examples:
+- description: Install Gift Genius from ClawHub
+  usage: clawhub install gift-genius
+schema_version: '1.0'

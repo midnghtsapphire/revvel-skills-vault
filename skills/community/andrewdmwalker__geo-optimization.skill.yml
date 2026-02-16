@@ -1,0 +1,66 @@
+name: geo-optimization
+title: GEO Optimization
+version: 1.1.0
+description: '"Generative Engine Optimization (GEO) for AI search visibility. Optimize content to appear in ChatGPT, Perplexity,
+  Claude, and Google AI Overviews. Use when optimizing websites, pages, or content for LLM discoverability and citation."'
+metadata:
+  author: andrewdmwalker
+  category: Search & Research
+  tags:
+  - search-research
+  - geo
+  - optimization
+  source: clawhub-community
+  clawhub_slug: geo-optimization
+  clawhub_path: andrewdmwalker/geo-optimization
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GEO Optimization
+
+    # Source: ClawHub community skill by andrewdmwalker
+
+    # Install: clawhub install geo-optimization
+
+    # Path: andrewdmwalker/geo-optimization
+
+
+    ## Description
+
+    "Generative Engine Optimization (GEO) for AI search visibility. Optimize content to appear in ChatGPT, Perplexity, Claude,
+    and Google AI Overviews. Use when optimizing websites, pages, or content for LLM discoverability and citation."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/audit-template.md
+
+    - scripts/geo-daily-monitor.sh
+
+    - scripts/geo-daily-report.py
+
+    - scripts/geo-monitor.py
+
+    - scripts/geo-test-queries.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install geo-optimization
+
+    ```'
+examples:
+- description: Install GEO Optimization from ClawHub
+  usage: clawhub install geo-optimization
+schema_version: '1.0'

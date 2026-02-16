@@ -1,0 +1,73 @@
+name: habit-flow
+title: Habit Flow
+version: 1.5.4
+description: AI-powered atomic habit tracker with natural language logging, streak tracking, smart reminders, and coaching.
+  Use for creating habits, logging completions naturally ("I meditated today"), viewing progress, and getting personalized
+  coaching.
+metadata:
+  author: tralves
+  category: General
+  tags:
+  - general
+  - habit
+  - flow
+  source: clawhub-community
+  clawhub_slug: habit-flow-skill
+  clawhub_path: tralves/habit-flow-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Habit Flow
+
+    # Source: ClawHub community skill by tralves
+
+    # Install: clawhub install habit-flow-skill
+
+    # Path: tralves/habit-flow-skill
+
+
+    ## Description
+
+    AI-powered atomic habit tracker with natural language logging, streak tracking, smart reminders, and coaching. Use for
+    creating habits, logging completions naturally ("I meditated today"), viewing progress, and getting personalized coaching.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - package.json
+
+    - tsconfig.json
+
+    - assets/canvas-dashboard.ts
+
+    - assets/components/completion-heatmap.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install habit-flow-skill
+
+    ```'
+examples:
+- description: Install Habit Flow from ClawHub
+  usage: clawhub install habit-flow-skill
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: second-brain
+title: 'Second Brain: Turn conversations into lasting knowledge'
+version: 0.1.4
+description: Personal knowledge base powered by Ensue for capturing and retrieving understanding. Use when user wants to save
+  knowledge, recall what they know, manage their toolbox, or build on past learnings. Triggers on "save this", "remember",
+  "what do I know about", "add to toolbox", "my notes on", "store th
+metadata:
+  author: christinetyip
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - second
+  - brain
+  source: clawhub-community
+  clawhub_slug: second-brain
+  clawhub_path: christinetyip/second-brain
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Second Brain: Turn conversations into lasting knowledge
+
+    # Source: ClawHub community skill by christinetyip
+
+    # Install: clawhub install second-brain
+
+    # Path: christinetyip/second-brain
+
+
+    ## Description
+
+    Personal knowledge base powered by Ensue for capturing and retrieving understanding. Use when user wants to save knowledge,
+    recall what they know, manage their toolbox, or build on past learnings. Triggers on "save this", "remember", "what do
+    I know about", "add to toolbox", "my notes on", "store th
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ensue-api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install second-brain
+
+    ```'
+examples:
+- description: 'Install Second Brain: Turn conversations into lasting knowledge from ClawHub'
+  usage: clawhub install second-brain
+schema_version: '1.0'

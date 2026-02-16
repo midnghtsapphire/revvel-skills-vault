@@ -1,0 +1,65 @@
+name: video-transcript-downloader
+title: Video Transcript Downloader
+version: 1.0.0
+description: Download videos, audio, subtitles, and clean paragraph-style transcripts from YouTube and any other yt-dlp supported
+  site. Use when asked to “download this video”, “save this clip”, “rip audio”, “get subtitles”, “get transcript”, or to troubleshoot
+  yt-dlp/ffmpeg and formats/playlists.
+metadata:
+  author: steipete
+  category: Media & Content
+  tags:
+  - media-content
+  - video
+  - transcript
+  - downloader
+  source: clawhub-community
+  clawhub_slug: video-transcript-downloader
+  clawhub_path: steipete/video-transcript-downloader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Video Transcript Downloader
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install video-transcript-downloader
+
+    # Path: steipete/video-transcript-downloader
+
+
+    ## Description
+
+    Download videos, audio, subtitles, and clean paragraph-style transcripts from YouTube and any other yt-dlp supported site.
+    Use when asked to “download this video”, “save this clip”, “rip audio”, “get subtitles”, “get transcript”, or to troubleshoot
+    yt-dlp/ffmpeg and formats/playlists.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/vtd.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install video-transcript-downloader
+
+    ```'
+examples:
+- description: Install Video Transcript Downloader from ClawHub
+  usage: clawhub install video-transcript-downloader
+schema_version: '1.0'

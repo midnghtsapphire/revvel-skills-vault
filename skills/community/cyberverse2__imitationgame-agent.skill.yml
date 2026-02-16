@@ -1,0 +1,56 @@
+name: imitation-agent
+title: Imitation Game Agent Skill
+version: 1.0.1
+description: Mandatory operational logic for playing The Imitation Game. Use this when the user says "play" or "start game".
+  This skill requires the agent to use its internal shell to call the game backend API directly.
+metadata:
+  author: cyberverse2
+  category: Development & Coding
+  tags:
+  - development-coding
+  - imitation
+  - agent
+  source: clawhub-community
+  clawhub_slug: imitationgame-agent
+  clawhub_path: cyberverse2/imitationgame-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Imitation Game Agent Skill
+
+    # Source: ClawHub community skill by cyberverse2
+
+    # Install: clawhub install imitationgame-agent
+
+    # Path: cyberverse2/imitationgame-agent
+
+
+    ## Description
+
+    Mandatory operational logic for playing The Imitation Game. Use this when the user says "play" or "start game". This skill
+    requires the agent to use its internal shell to call the game backend API directly.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install imitationgame-agent
+
+    ```'
+examples:
+- description: Install Imitation Game Agent Skill from ClawHub
+  usage: clawhub install imitationgame-agent
+schema_version: '1.0'

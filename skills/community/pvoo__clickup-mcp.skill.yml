@@ -1,0 +1,55 @@
+name: clickup-mcp
+title: ClickUp MCP
+version: 1.0.0
+description: Manage ClickUp tasks, docs, time tracking, comments, chat, and search via official MCP. OAuth authentication
+  required.
+metadata:
+  author: pvoo
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clickup
+  - mcp
+  source: clawhub-community
+  clawhub_slug: clickup-mcp
+  clawhub_path: pvoo/clickup-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClickUp MCP
+
+    # Source: ClawHub community skill by pvoo
+
+    # Install: clawhub install clickup-mcp
+
+    # Path: pvoo/clickup-mcp
+
+
+    ## Description
+
+    Manage ClickUp tasks, docs, time tracking, comments, chat, and search via official MCP. OAuth authentication required.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clickup-mcp
+
+    ```'
+examples:
+- description: Install ClickUp MCP from ClawHub
+  usage: clawhub install clickup-mcp
+schema_version: '1.0'

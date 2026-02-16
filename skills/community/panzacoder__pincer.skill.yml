@@ -1,0 +1,59 @@
+name: pincer
+title: Pincer
+version: 1.0.1
+description: Security-first wrapper for installing agent skills. Scans for malware, prompt injection, and suspicious patterns
+  before installation. Use instead of `clawhub install` for safer skill management.
+metadata:
+  author: panzacoder
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - pincer
+  source: clawhub-community
+  clawhub_slug: pincer
+  clawhub_path: panzacoder/pincer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pincer
+
+    # Source: ClawHub community skill by panzacoder
+
+    # Install: clawhub install pincer
+
+    # Path: panzacoder/pincer
+
+
+    ## Description
+
+    Security-first wrapper for installing agent skills. Scans for malware, prompt injection, and suspicious patterns before
+    installation. Use instead of `clawhub install` for safer skill management.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/pincer.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pincer
+
+    ```'
+examples:
+- description: Install Pincer from ClawHub
+  usage: clawhub install pincer
+schema_version: '1.0'

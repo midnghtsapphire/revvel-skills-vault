@@ -1,0 +1,58 @@
+name: race-finder
+title: Race Finder
+version: 1.0.0
+description: Find upcoming races — running, trail, triathlon, cycling, swimming, and obstacle courses. Search by location,
+  distance, sport, and date. Returns race details with registration links.
+metadata:
+  author: nftechie
+  category: Search & Research
+  tags:
+  - search-research
+  - race
+  - finder
+  source: clawhub-community
+  clawhub_slug: race-finder
+  clawhub_path: nftechie/race-finder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Race Finder
+
+    # Source: ClawHub community skill by nftechie
+
+    # Install: clawhub install race-finder
+
+    # Path: nftechie/race-finder
+
+
+    ## Description
+
+    Find upcoming races — running, trail, triathlon, cycling, swimming, and obstacle courses. Search by location, distance,
+    sport, and date. Returns race details with registration links.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install race-finder
+
+    ```'
+examples:
+- description: Install Race Finder from ClawHub
+  usage: clawhub install race-finder
+schema_version: '1.0'

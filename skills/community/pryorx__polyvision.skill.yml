@@ -1,0 +1,32 @@
+name: polyvision
+title: Polyvision
+version: 1.0.5
+description: 'Analyze Polymarket prediction market wallets — get copy trading scores (1-10), P&L, win rate, risk metrics (Sharpe
+  ratio, Sortino ratio, max drawdown), red flags, position sizing, market category performance, recent performance (7d/30d/90d),
+  and streak analysis. Connects via MCP server or REST API. '
+metadata:
+  author: pryorx
+  category: Search & Research
+  tags:
+  - search-research
+  - polyvision
+  source: clawhub-community
+  clawhub_slug: polyvision
+  clawhub_path: pryorx/polyvision
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Polyvision\n# Source: ClawHub community skill by pryorx\n# Install: clawhub install polyvision\n# Path: pryorx/polyvision\n\
+    \n## Description\nAnalyze Polymarket prediction market wallets — get copy trading scores (1-10), P&L, win rate, risk metrics\
+    \ (Sharpe ratio, Sortino ratio, max drawdown), red flags, position sizing, market category performance, recent performance\
+    \ (7d/30d/90d), and streak analysis. Connects via MCP server or REST API. \n\n## Files\n- SKILL.md\n- _meta.json\n- references/response-schemas.md\n\
+    \n## Installation\n```bash\nclawhub install polyvision\n```"
+examples:
+- description: Install Polyvision from ClawHub
+  usage: clawhub install polyvision
+schema_version: '1.0'

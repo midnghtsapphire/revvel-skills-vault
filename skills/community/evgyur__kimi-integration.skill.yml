@@ -1,0 +1,62 @@
+name: kimi-integration
+title: Kimi Integration
+version: 1.0.0
+description: Step-by-step guide for integrating Moonshot AI (Kimi) and Kimi Code models into Clawdbot. Use when someone asks
+  how to add Kimi models, configure Moonshot AI, or set up Kimi for Coding in Clawdbot.
+metadata:
+  author: evgyur
+  category: Development & Coding
+  tags:
+  - development-coding
+  - kimi
+  - integration
+  source: clawhub-community
+  clawhub_slug: kimi-integration
+  clawhub_path: evgyur/kimi-integration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kimi Integration
+
+    # Source: ClawHub community skill by evgyur
+
+    # Install: clawhub install kimi-integration
+
+    # Path: evgyur/kimi-integration
+
+
+    ## Description
+
+    Step-by-step guide for integrating Moonshot AI (Kimi) and Kimi Code models into Clawdbot. Use when someone asks how to
+    add Kimi models, configure Moonshot AI, or set up Kimi for Coding in Clawdbot.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/config-examples.md
+
+    - scripts/test_kimi_connection.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kimi-integration
+
+    ```'
+examples:
+- description: Install Kimi Integration from ClawHub
+  usage: clawhub install kimi-integration
+schema_version: '1.0'

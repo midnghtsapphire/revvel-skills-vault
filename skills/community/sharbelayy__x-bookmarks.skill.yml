@@ -1,0 +1,57 @@
+name: x-bookmarks
+title: X Bookmarks
+version: 1.0.0
+description: '>'
+metadata:
+  author: sharbelayy
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - bookmarks
+  source: clawhub-community
+  clawhub_slug: x-bookmarks
+  clawhub_path: sharbelayy/x-bookmarks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Bookmarks
+
+    # Source: ClawHub community skill by sharbelayy
+
+    # Install: clawhub install x-bookmarks
+
+    # Path: sharbelayy/x-bookmarks
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/auth-setup.md
+
+    - scripts/fetch_bookmarks.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-bookmarks
+
+    ```'
+examples:
+- description: Install X Bookmarks from ClawHub
+  usage: clawhub install x-bookmarks
+schema_version: '1.0'

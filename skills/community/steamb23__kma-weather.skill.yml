@@ -1,0 +1,72 @@
+name: kma-weather
+title: KMA Weather (Korea Meteorological Administration)
+version: 1.0.0
+description: Get weather information from Korea Meteorological Administration (기상청). Provides current conditions, short-term
+  forecasts (up to 3 days), mid-term forecasts (3-10 days), and weather warnings. Requires KMA API service key.
+metadata:
+  author: steamb23
+  category: Development & Coding
+  tags:
+  - development-coding
+  - kma
+  - weather
+  source: clawhub-community
+  clawhub_slug: kma-weather
+  clawhub_path: steamb23/kma-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# KMA Weather (Korea Meteorological Administration)
+
+    # Source: ClawHub community skill by steamb23
+
+    # Install: clawhub install kma-weather
+
+    # Path: steamb23/kma-weather
+
+
+    ## Description
+
+    Get weather information from Korea Meteorological Administration (기상청). Provides current conditions, short-term forecasts
+    (up to 3 days), mid-term forecasts (3-10 days), and weather warnings. Requires KMA API service key.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - implement-status.md
+
+    - references/api-forecast.md
+
+    - references/api-midterm.md
+
+    - references/api-warnings.md
+
+    - references/category-codes.md
+
+    - scripts/forecast.py
+
+    - scripts/grid_converter.py
+
+    - scripts/kma_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kma-weather
+
+    ```'
+examples:
+- description: Install KMA Weather (Korea Meteorological Administration) from ClawHub
+  usage: clawhub install kma-weather
+schema_version: '1.0'

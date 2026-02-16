@@ -1,0 +1,67 @@
+name: bluesky
+title: Bluesky
+version: 1.5.3
+description: '"Complete Bluesky CLI: post, reply, like, repost, follow, block, mute, search, threads, images. Everything you
+  need to engage on Bluesky from the terminal."'
+metadata:
+  author: jeffaf
+  category: Search & Research
+  tags:
+  - search-research
+  - bluesky
+  source: clawhub-community
+  clawhub_slug: bluesky
+  clawhub_path: jeffaf/bluesky
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bluesky
+
+    # Source: ClawHub community skill by jeffaf
+
+    # Install: clawhub install bluesky
+
+    # Path: jeffaf/bluesky
+
+
+    ## Description
+
+    "Complete Bluesky CLI: post, reply, like, repost, follow, block, mute, search, threads, images. Everything you need to
+    engage on Bluesky from the terminal."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/bsky.py
+
+    - tests/__init__.py
+
+    - tests/conftest.py
+
+    - tests/test_cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bluesky
+
+    ```'
+examples:
+- description: Install Bluesky from ClawHub
+  usage: clawhub install bluesky
+schema_version: '1.0'

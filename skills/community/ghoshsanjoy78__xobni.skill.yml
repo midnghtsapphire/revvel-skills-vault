@@ -1,0 +1,59 @@
+name: xobni
+title: Xobni Email
+version: 1.0.1
+description: Email infrastructure for AI agents via Xobni.ai. Provides real email addresses (@xobni.ai) with REST API and
+  MCP server access. Use when an AI agent needs to send/receive email, search inbox, manage attachments, or set up webhooks
+  for email notifications.
+metadata:
+  author: ghoshsanjoy78
+  category: Search & Research
+  tags:
+  - search-research
+  - xobni
+  source: clawhub-community
+  clawhub_slug: xobni
+  clawhub_path: ghoshsanjoy78/xobni
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xobni Email
+
+    # Source: ClawHub community skill by ghoshsanjoy78
+
+    # Install: clawhub install xobni
+
+    # Path: ghoshsanjoy78/xobni
+
+
+    ## Description
+
+    Email infrastructure for AI agents via Xobni.ai. Provides real email addresses (@xobni.ai) with REST API and MCP server
+    access. Use when an AI agent needs to send/receive email, search inbox, manage attachments, or set up webhooks for email
+    notifications.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xobni
+
+    ```'
+examples:
+- description: Install Xobni Email from ClawHub
+  usage: clawhub install xobni
+schema_version: '1.0'

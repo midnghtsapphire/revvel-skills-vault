@@ -1,0 +1,80 @@
+name: navifare-flight-validator
+title: Navifare - Flight Price Double-Check, Finds Hidden Deals
+version: 1.0.0
+description: Verify and compare flight prices across multiple booking sites using Navifare. Trigger when users share flight
+  prices from any booking site (Skyscanner, Kayak, etc.) or upload flight screenshots to find better deals. Returns ranked
+  results with booking links from multiple providers.
+metadata:
+  author: simonenavifare
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - navifare
+  - flight
+  - validator
+  - mcp__navifare-mcp__flight_pricecheck mcp__navifare-mcp__format_flight_pricecheck_request read
+  source: clawhub-community
+  clawhub_slug: navifare-hidden-flight-deals
+  clawhub_path: simonenavifare/navifare-hidden-flight-deals
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - mcp__navifare-mcp__flight_pricecheck mcp__navifare-mcp__format_flight_pricecheck_request Read
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Navifare - Flight Price Double-Check, Finds Hidden Deals
+
+    # Source: ClawHub community skill by simonenavifare
+
+    # Install: clawhub install navifare-hidden-flight-deals
+
+    # Path: simonenavifare/navifare-hidden-flight-deals
+
+
+    ## Description
+
+    Verify and compare flight prices across multiple booking sites using Navifare. Trigger when users share flight prices
+    from any booking site (Skyscanner, Kayak, etc.) or upload flight screenshots to find better deals. Returns ranked results
+    with booking links from multiple providers.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - SPEC-UPDATES.md
+
+    - _meta.json
+
+    - mcp-config-example.json
+
+    - milan-sydney-example.json
+
+    - references/AIRLINES.md
+
+    - references/AIRPORTS.md
+
+    - references/EXAMPLES.md
+
+
+    ## Allowed Tools
+
+    mcp__navifare-mcp__flight_pricecheck mcp__navifare-mcp__format_flight_pricecheck_request Read
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install navifare-hidden-flight-deals
+
+    ```'
+examples:
+- description: Install Navifare - Flight Price Double-Check, Finds Hidden Deals from ClawHub
+  usage: clawhub install navifare-hidden-flight-deals
+schema_version: '1.0'

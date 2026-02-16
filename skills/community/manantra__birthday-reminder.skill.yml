@@ -1,0 +1,33 @@
+name: birthday-reminder
+title: Birthday Reminder
+version: 1.0.0
+description: 'Manage birthdays with natural language. Store birthdays in /home/clawd/clawd/data/birthdays.md, get upcoming
+  reminders, calculate ages. Use when the user mentions birthdays, wants to add/remember someone''s birthday, check upcoming
+  birthdays, or asks about someone''s age/birthday. Understands phrases '
+metadata:
+  author: manantra
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - birthday
+  - reminder
+  source: clawhub-community
+  clawhub_slug: birthday-reminder
+  clawhub_path: manantra/birthday-reminder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Birthday Reminder\n# Source: ClawHub community skill by manantra\n# Install: clawhub install birthday-reminder\n\
+    # Path: manantra/birthday-reminder\n\n## Description\nManage birthdays with natural language. Store birthdays in /home/clawd/clawd/data/birthdays.md,\
+    \ get upcoming reminders, calculate ages. Use when the user mentions birthdays, wants to add/remember someone's birthday,\
+    \ check upcoming birthdays, or asks about someone's age/birthday. Understands phrases \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    - scripts/birthday.py\n- scripts/reminder.py\n\n## Installation\n```bash\nclawhub install birthday-reminder\n```"
+examples:
+- description: Install Birthday Reminder from ClawHub
+  usage: clawhub install birthday-reminder
+schema_version: '1.0'

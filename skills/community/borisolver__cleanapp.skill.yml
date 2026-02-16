@@ -1,0 +1,57 @@
+name: cleanapp_report_submission
+title: CleanApp Report Submission
+version: 0.1.0
+description: Submit real-world issue reports (trash, hazards, infrastructure problems) to CleanApp's global routing pipeline.
+  Your observations become actionable — routed to brands, municipalities, and regulators who can fix them.
+metadata:
+  author: borisolver
+  category: General
+  tags:
+  - general
+  - cleanapp
+  - report
+  - submission
+  source: clawhub-community
+  clawhub_slug: cleanapp
+  clawhub_path: borisolver/cleanapp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CleanApp Report Submission
+
+    # Source: ClawHub community skill by borisolver
+
+    # Install: clawhub install cleanapp
+
+    # Path: borisolver/cleanapp
+
+
+    ## Description
+
+    Submit real-world issue reports (trash, hazards, infrastructure problems) to CleanApp''s global routing pipeline. Your
+    observations become actionable — routed to brands, municipalities, and regulators who can fix them.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cleanapp
+
+    ```'
+examples:
+- description: Install CleanApp Report Submission from ClawHub
+  usage: clawhub install cleanapp
+schema_version: '1.0'

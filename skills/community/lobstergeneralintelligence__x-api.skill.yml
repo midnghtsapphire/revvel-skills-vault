@@ -1,0 +1,61 @@
+name: x-api
+title: X Api
+version: 0.1.0
+description: Post to X (Twitter) using the official API with OAuth 1.0a. Use when you need to tweet, post updates, or publish
+  content. Bypasses rate limits and bot detection that affect cookie-based approaches like bird CLI.
+metadata:
+  author: lobstergeneralintelligence
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - api
+  source: clawhub-community
+  clawhub_slug: x-api
+  clawhub_path: lobstergeneralintelligence/x-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Api
+
+    # Source: ClawHub community skill by lobstergeneralintelligence
+
+    # Install: clawhub install x-api
+
+    # Path: lobstergeneralintelligence/x-api
+
+
+    ## Description
+
+    Post to X (Twitter) using the official API with OAuth 1.0a. Use when you need to tweet, post updates, or publish content.
+    Bypasses rate limits and bot detection that affect cookie-based approaches like bird CLI.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/package.json
+
+    - scripts/x-post.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-api
+
+    ```'
+examples:
+- description: Install X Api from ClawHub
+  usage: clawhub install x-api
+schema_version: '1.0'

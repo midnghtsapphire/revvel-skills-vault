@@ -1,0 +1,62 @@
+name: meta-ad-creatives
+title: Meta Ad Creatives
+version: 1.0.0
+description: Track Meta (Facebook/Instagram) ad creative performance and hit rates across multiple accounts. Use when asked
+  about creative win rates, which ads are hitting benchmarks, CPT/CPI/ROAS analysis, or comparing creative performance across
+  accounts and time periods. Supports multiple benchmark metrics (C
+metadata:
+  author: fortytwode
+  category: Social Media
+  tags:
+  - social-media
+  - meta
+  - creatives
+  source: clawhub-community
+  clawhub_slug: meta-ad-creatives
+  clawhub_path: fortytwode/meta-ad-creatives
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meta Ad Creatives
+
+    # Source: ClawHub community skill by fortytwode
+
+    # Install: clawhub install meta-ad-creatives
+
+    # Path: fortytwode/meta-ad-creatives
+
+
+    ## Description
+
+    Track Meta (Facebook/Instagram) ad creative performance and hit rates across multiple accounts. Use when asked about creative
+    win rates, which ads are hitting benchmarks, CPT/CPI/ROAS analysis, or comparing creative performance across accounts
+    and time periods. Supports multiple benchmark metrics (C
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - accounts_config.example.json
+
+    - scripts/meta_ad_creatives.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meta-ad-creatives
+
+    ```'
+examples:
+- description: Install Meta Ad Creatives from ClawHub
+  usage: clawhub install meta-ad-creatives
+schema_version: '1.0'

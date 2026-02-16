@@ -1,0 +1,56 @@
+name: turkey-news
+title: Turkey News
+version: 1.0.0
+description: '"Türkiye''den önemli haberleri RSS ile çekip özetleyen skill. Cron ile otomatik bildirim yapar."'
+metadata:
+  author: yalcindemir
+  category: General
+  tags:
+  - general
+  - turkey
+  - news
+  source: clawhub-community
+  clawhub_slug: turkey-news
+  clawhub_path: yalcindemir/turkey-news
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Turkey News
+
+    # Source: ClawHub community skill by yalcindemir
+
+    # Install: clawhub install turkey-news
+
+    # Path: yalcindemir/turkey-news
+
+
+    ## Description
+
+    "Türkiye''den önemli haberleri RSS ile çekip özetleyen skill. Cron ile otomatik bildirim yapar."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch-news.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install turkey-news
+
+    ```'
+examples:
+- description: Install Turkey News from ClawHub
+  usage: clawhub install turkey-news
+schema_version: '1.0'

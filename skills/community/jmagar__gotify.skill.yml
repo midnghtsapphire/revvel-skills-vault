@@ -1,0 +1,61 @@
+name: gotify
+title: Gotify
+version: 1.0.1
+description: Send push notifications via Gotify when long-running tasks complete or important events occur. Use when the user
+  asks to "send a Gotify notification", "notify me when this finishes", "push notification", "alert me via Gotify", or wants
+  to be notified of task completion.
+metadata:
+  author: jmagar
+  category: Communication
+  tags:
+  - communication
+  - gotify
+  source: clawhub-community
+  clawhub_slug: gotify
+  clawhub_path: jmagar/gotify
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gotify
+
+    # Source: ClawHub community skill by jmagar
+
+    # Install: clawhub install gotify
+
+    # Path: jmagar/gotify
+
+
+    ## Description
+
+    Send push notifications via Gotify when long-running tasks complete or important events occur. Use when the user asks
+    to "send a Gotify notification", "notify me when this finishes", "push notification", "alert me via Gotify", or wants
+    to be notified of task completion.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/send.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gotify
+
+    ```'
+examples:
+- description: Install Gotify from ClawHub
+  usage: clawhub install gotify
+schema_version: '1.0'

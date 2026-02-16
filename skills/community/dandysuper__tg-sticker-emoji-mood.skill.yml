@@ -1,0 +1,61 @@
+name: telegram-sticker-vibes
+title: emoji and tg stickers use proactively based on mood
+version: 2.0.0
+description: Automatically send Telegram stickers and emojis that match the mood and vibe of the conversation. Activates on
+  every Telegram message to add expressive, human-like sticker and emoji reactions without being asked. Use this skill whenever
+  you are chatting on Telegram to make conversations feel alive a
+metadata:
+  author: dandysuper
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - sticker
+  - vibes
+  source: clawhub-community
+  clawhub_slug: tg-sticker-emoji-mood
+  clawhub_path: dandysuper/tg-sticker-emoji-mood
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# emoji and tg stickers use proactively based on mood
+
+    # Source: ClawHub community skill by dandysuper
+
+    # Install: clawhub install tg-sticker-emoji-mood
+
+    # Path: dandysuper/tg-sticker-emoji-mood
+
+
+    ## Description
+
+    Automatically send Telegram stickers and emojis that match the mood and vibe of the conversation. Activates on every Telegram
+    message to add expressive, human-like sticker and emoji reactions without being asked. Use this skill whenever you are
+    chatting on Telegram to make conversations feel alive a
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/send_sticker.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tg-sticker-emoji-mood
+
+    ```'
+examples:
+- description: Install emoji and tg stickers use proactively based on mood from ClawHub
+  usage: clawhub install tg-sticker-emoji-mood
+schema_version: '1.0'

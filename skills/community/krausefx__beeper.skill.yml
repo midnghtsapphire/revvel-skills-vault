@@ -1,0 +1,53 @@
+name: beeper
+title: Beeper
+version: 0.0.1
+description: Search and browse local Beeper chat history (threads, messages, full-text search).
+metadata:
+  author: krausefx
+  category: Search & Research
+  tags:
+  - search-research
+  - beeper
+  source: clawhub-community
+  clawhub_slug: beeper
+  clawhub_path: krausefx/beeper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Beeper
+
+    # Source: ClawHub community skill by krausefx
+
+    # Install: clawhub install beeper
+
+    # Path: krausefx/beeper
+
+
+    ## Description
+
+    Search and browse local Beeper chat history (threads, messages, full-text search).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install beeper
+
+    ```'
+examples:
+- description: Install Beeper from ClawHub
+  usage: clawhub install beeper
+schema_version: '1.0'

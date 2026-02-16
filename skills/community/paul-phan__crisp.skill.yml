@@ -1,0 +1,62 @@
+name: crisp
+title: Crisp Skill
+version: 1.0.0
+description: Customer support via Crisp API. Use when the user asks to check, read, search, or respond to Crisp inbox messages.
+  Requires Crisp website ID and plugin token (authenticated via environment variables CRISP_WEBSITE_ID, CRISP_TOKEN_ID, and
+  CRISP_TOKEN_KEY).
+metadata:
+  author: paul-phan
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - crisp
+  source: clawhub-community
+  clawhub_slug: crisp
+  clawhub_path: paul-phan/crisp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crisp Skill
+
+    # Source: ClawHub community skill by paul-phan
+
+    # Install: clawhub install crisp
+
+    # Path: paul-phan/crisp
+
+
+    ## Description
+
+    Customer support via Crisp API. Use when the user asks to check, read, search, or respond to Crisp inbox messages. Requires
+    Crisp website ID and plugin token (authenticated via environment variables CRISP_WEBSITE_ID, CRISP_TOKEN_ID, and CRISP_TOKEN_KEY).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/crisp.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crisp
+
+    ```'
+examples:
+- description: Install Crisp Skill from ClawHub
+  usage: clawhub install crisp
+schema_version: '1.0'

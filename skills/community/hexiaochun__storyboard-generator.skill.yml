@@ -1,0 +1,58 @@
+name: storyboard-generator
+title: storyboard-generator
+version: 1.0.0
+description: 将剧本转换为分镜表（Shot List）和静帧提示词，支持即梦/banana模型。当需要生成分镜、制作镜头表、批量生成图片提示词时使用。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - storyboard
+  - generator
+  source: clawhub-community
+  clawhub_slug: storyboard-generator
+  clawhub_path: hexiaochun/storyboard-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# storyboard-generator
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install storyboard-generator
+
+    # Path: hexiaochun/storyboard-generator
+
+
+    ## Description
+
+    将剧本转换为分镜表（Shot List）和静帧提示词，支持即梦/banana模型。当需要生成分镜、制作镜头表、批量生成图片提示词时使用。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/templates/gallery.html
+
+    - references/format-rules.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install storyboard-generator
+
+    ```'
+examples:
+- description: Install storyboard-generator from ClawHub
+  usage: clawhub install storyboard-generator
+schema_version: '1.0'

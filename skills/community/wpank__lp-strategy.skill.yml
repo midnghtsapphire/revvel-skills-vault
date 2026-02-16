@@ -1,0 +1,68 @@
+name: lp-strategy
+title: Uniswap Lp Strategy
+version: 0.1.0
+description: Comprehensive LP strategy comparison for a token pair — evaluates all versions, fee tiers, range widths, and
+  rebalance approaches side-by-side with APY, IL, gas costs, and risk ratings. Use when the user wants to compare LP options
+  or see a detailed analysis of all strategies.
+metadata:
+  author: wpank
+  category: General
+  tags:
+  - general
+  - strategy
+  - '[task(subagent_type:lp-strategist)'
+  - task(subagent_type:pool-researcher)]
+  source: clawhub-community
+  clawhub_slug: lp-strategy
+  clawhub_path: wpank/lp-strategy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:lp-strategist)'
+  - Task(subagent_type:pool-researcher)]
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Lp Strategy
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install lp-strategy
+
+    # Path: wpank/lp-strategy
+
+
+    ## Description
+
+    Comprehensive LP strategy comparison for a token pair — evaluates all versions, fee tiers, range widths, and rebalance
+    approaches side-by-side with APY, IL, gas costs, and risk ratings. Use when the user wants to compare LP options or see
+    a detailed analysis of all strategies.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:lp-strategist), Task(subagent_type:pool-researcher)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lp-strategy
+
+    ```'
+examples:
+- description: Install Uniswap Lp Strategy from ClawHub
+  usage: clawhub install lp-strategy
+schema_version: '1.0'

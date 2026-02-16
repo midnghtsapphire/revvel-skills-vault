@@ -1,0 +1,56 @@
+name: book-lawyer
+title: Book Lawyer
+version: 1.0.1
+description: Book lawyer services through Lokuli MCP. Use when user needs to find and book lawyer. Triggers on requests like
+  "book a lawyer", "find lawyer near me", or any lawyer service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - lawyer
+  source: clawhub-community
+  clawhub_slug: book-lawyer
+  clawhub_path: edwardrodriguez703-design/book-lawyer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Lawyer
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-lawyer
+
+    # Path: edwardrodriguez703-design/book-lawyer
+
+
+    ## Description
+
+    Book lawyer services through Lokuli MCP. Use when user needs to find and book lawyer. Triggers on requests like "book
+    a lawyer", "find lawyer near me", or any lawyer service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-lawyer
+
+    ```'
+examples:
+- description: Install Book Lawyer from ClawHub
+  usage: clawhub install book-lawyer
+schema_version: '1.0'

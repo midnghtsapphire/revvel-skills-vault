@@ -1,0 +1,70 @@
+name: kubernetes-devops
+title: Kubernetes
+version: 1.0.0
+description: '|'
+metadata:
+  author: wpank
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - kubernetes
+  - devops
+  source: clawhub-community
+  clawhub_slug: kubernetes-devops
+  clawhub_path: wpank/kubernetes-devops
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kubernetes
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install kubernetes-devops
+
+    # Path: wpank/kubernetes-devops
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/configmap-template.yaml
+
+    - assets/cronjob-template.yaml
+
+    - assets/deployment-template.yaml
+
+    - assets/ingress-template.yaml
+
+    - assets/service-template.yaml
+
+    - assets/statefulset-template.yaml
+
+    - k8s-manifest-generator/README.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kubernetes-devops
+
+    ```'
+examples:
+- description: Install Kubernetes from ClawHub
+  usage: clawhub install kubernetes-devops
+schema_version: '1.0'

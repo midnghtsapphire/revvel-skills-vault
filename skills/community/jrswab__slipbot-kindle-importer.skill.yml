@@ -1,0 +1,56 @@
+name: kindle-import
+title: SlipBot Kindle Importer
+version: 1.0.0
+description: Import reading notes from Kindle HTML exports into the slipbox. Use when user sends a Kindle notebook export
+  file (HTML/XHTML). Parses book title and author, extracts only user's Notes (skips Highlights), then runs slipbot for each.
+metadata:
+  author: jrswab
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - kindle
+  - import
+  source: clawhub-community
+  clawhub_slug: slipbot-kindle-importer
+  clawhub_path: jrswab/slipbot-kindle-importer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SlipBot Kindle Importer
+
+    # Source: ClawHub community skill by jrswab
+
+    # Install: clawhub install slipbot-kindle-importer
+
+    # Path: jrswab/slipbot-kindle-importer
+
+
+    ## Description
+
+    Import reading notes from Kindle HTML exports into the slipbox. Use when user sends a Kindle notebook export file (HTML/XHTML).
+    Parses book title and author, extracts only user''s Notes (skips Highlights), then runs slipbot for each.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install slipbot-kindle-importer
+
+    ```'
+examples:
+- description: Install SlipBot Kindle Importer from ClawHub
+  usage: clawhub install slipbot-kindle-importer
+schema_version: '1.0'

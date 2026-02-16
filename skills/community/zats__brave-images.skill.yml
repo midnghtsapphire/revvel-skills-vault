@@ -1,0 +1,56 @@
+name: brave-images
+title: Brave Images
+version: 1.0.1
+description: Search for images using Brave Search API. Use when you need to find images, pictures, photos, or visual content
+  on any topic. Requires BRAVE_API_KEY environment variable.
+metadata:
+  author: zats
+  category: Search & Research
+  tags:
+  - search-research
+  - brave
+  - images
+  source: clawhub-community
+  clawhub_slug: brave-images
+  clawhub_path: zats/brave-images
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Brave Images
+
+    # Source: ClawHub community skill by zats
+
+    # Install: clawhub install brave-images
+
+    # Path: zats/brave-images
+
+
+    ## Description
+
+    Search for images using Brave Search API. Use when you need to find images, pictures, photos, or visual content on any
+    topic. Requires BRAVE_API_KEY environment variable.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brave-images
+
+    ```'
+examples:
+- description: Install Brave Images from ClawHub
+  usage: clawhub install brave-images
+schema_version: '1.0'

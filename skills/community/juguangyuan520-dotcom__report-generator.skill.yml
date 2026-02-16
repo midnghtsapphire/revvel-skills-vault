@@ -1,0 +1,59 @@
+name: _report-generator_
+title: Generate responsive HTML pages suitable for reporting, supporting resizing and screenshot capture.
+version: 1.0.2
+description: '"Generates a structured report HTML based on a specific template. Invoke when user wants to create a report,
+  slide, or summary card from raw content."'
+metadata:
+  author: juguangyuan520-dotcom
+  category: Web & Internet
+  tags:
+  - web-internet
+  - '"report'
+  - generator"
+  source: clawhub-community
+  clawhub_slug: report-generator
+  clawhub_path: juguangyuan520-dotcom/report-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Generate responsive HTML pages suitable for reporting, supporting resizing and screenshot capture.
+
+    # Source: ClawHub community skill by juguangyuan520-dotcom
+
+    # Install: clawhub install report-generator
+
+    # Path: juguangyuan520-dotcom/report-generator
+
+
+    ## Description
+
+    "Generates a structured report HTML based on a specific template. Invoke when user wants to create a report, slide, or
+    summary card from raw content."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install report-generator
+
+    ```'
+examples:
+- description: Install Generate responsive HTML pages suitable for reporting, supporting resizing and screenshot capture.
+    from ClawHub
+  usage: clawhub install report-generator
+schema_version: '1.0'

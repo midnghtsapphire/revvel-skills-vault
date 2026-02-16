@@ -1,0 +1,55 @@
+name: pi-orchestration
+title: Pi Orchestration
+version: 1.0.0
+description: Orchestrate multiple AI models (GLM, MiniMax, etc.) as workers using Pi Coding Agent with Claude as coordinator.
+metadata:
+  author: dbhurley
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - orchestration
+  source: clawhub-community
+  clawhub_slug: pi-orchestration
+  clawhub_path: dbhurley/pi-orchestration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pi Orchestration
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install pi-orchestration
+
+    # Path: dbhurley/pi-orchestration
+
+
+    ## Description
+
+    Orchestrate multiple AI models (GLM, MiniMax, etc.) as workers using Pi Coding Agent with Claude as coordinator.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/orchestrate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pi-orchestration
+
+    ```'
+examples:
+- description: Install Pi Orchestration from ClawHub
+  usage: clawhub install pi-orchestration
+schema_version: '1.0'

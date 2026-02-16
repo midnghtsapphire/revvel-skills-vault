@@ -1,0 +1,54 @@
+name: newsletter-digest
+title: Newsletter Digest
+version: 1.0.0
+description: Summarize newsletters and articles, extract key insights, create reading lists
+metadata:
+  author: jhillin8
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - newsletter
+  - digest
+  source: clawhub-community
+  clawhub_slug: newsletter-digest
+  clawhub_path: jhillin8/newsletter-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Newsletter Digest
+
+    # Source: ClawHub community skill by jhillin8
+
+    # Install: clawhub install newsletter-digest
+
+    # Path: jhillin8/newsletter-digest
+
+
+    ## Description
+
+    Summarize newsletters and articles, extract key insights, create reading lists
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install newsletter-digest
+
+    ```'
+examples:
+- description: Install Newsletter Digest from ClawHub
+  usage: clawhub install newsletter-digest
+schema_version: '1.0'

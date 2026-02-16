@@ -1,0 +1,58 @@
+name: jira-manager
+title: Jira Manager
+version: 1.0.0
+description: JIRA integration specialist for SpecWeave increments with epic creation, bidirectional sync, and status updates.
+  Use when creating JIRA issues, syncing task completion, or maintaining cross-system consistency. Covers epics, stories,
+  subtasks, boards, and sprints.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - jira
+  - manager
+  source: clawhub-community
+  clawhub_slug: sw-jira-manager
+  clawhub_path: anton-abyzov/sw-jira-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jira Manager
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-jira-manager
+
+    # Path: anton-abyzov/sw-jira-manager
+
+
+    ## Description
+
+    JIRA integration specialist for SpecWeave increments with epic creation, bidirectional sync, and status updates. Use when
+    creating JIRA issues, syncing task completion, or maintaining cross-system consistency. Covers epics, stories, subtasks,
+    boards, and sprints.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-jira-manager
+
+    ```'
+examples:
+- description: Install Jira Manager from ClawHub
+  usage: clawhub install sw-jira-manager
+schema_version: '1.0'

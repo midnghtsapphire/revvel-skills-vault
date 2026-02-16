@@ -1,0 +1,64 @@
+name: agentbus-nostr
+title: Agentbus Relay Chat
+version: 1.0.0
+description: 'AgentBus proof-of-concept: an IRC-like LLM agent communication bus over Nostr relays with channel+session tags,
+  allowlist and schema gating, encryption with leader key distribution, and a CLI for Moltbot/Clawdbot agent chat.'
+metadata:
+  author: dantunes-github
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - agentbus
+  - nostr
+  source: clawhub-community
+  clawhub_slug: agentbus-relay-chat
+  clawhub_path: dantunes-github/agentbus-relay-chat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agentbus Relay Chat
+
+    # Source: ClawHub community skill by dantunes-github
+
+    # Install: clawhub install agentbus-relay-chat
+
+    # Path: dantunes-github/agentbus-relay-chat
+
+
+    ## Description
+
+    AgentBus proof-of-concept: an IRC-like LLM agent communication bus over Nostr relays with channel+session tags, allowlist
+    and schema gating, encryption with leader key distribution, and a CLI for Moltbot/Clawdbot agent chat.
+
+
+    ## Files
+
+    - LICENSE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agentbus_cli.py
+
+    - relays.default.json
+
+    - requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentbus-relay-chat
+
+    ```'
+examples:
+- description: Install Agentbus Relay Chat from ClawHub
+  usage: clawhub install agentbus-relay-chat
+schema_version: '1.0'

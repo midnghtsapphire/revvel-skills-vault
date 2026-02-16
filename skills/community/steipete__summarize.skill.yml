@@ -1,0 +1,53 @@
+name: summarize
+title: Summarize
+version: 1.0.0
+description: Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).
+metadata:
+  author: steipete
+  category: Media & Content
+  tags:
+  - media-content
+  - summarize
+  source: clawhub-community
+  clawhub_slug: summarize
+  clawhub_path: steipete/summarize
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Summarize
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install summarize
+
+    # Path: steipete/summarize
+
+
+    ## Description
+
+    Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install summarize
+
+    ```'
+examples:
+- description: Install Summarize from ClawHub
+  usage: clawhub install summarize
+schema_version: '1.0'

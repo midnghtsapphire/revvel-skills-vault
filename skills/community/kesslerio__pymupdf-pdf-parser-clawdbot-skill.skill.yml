@@ -1,0 +1,64 @@
+name: pymupdf-pdf
+title: PyMuPDF PDF Parser Clawdbot Skill
+version: 1.0.0
+description: Fast local PDF parsing with PyMuPDF (fitz) for Markdown/JSON outputs and optional images/tables. Use when speed
+  matters more than robustness, or as a fallback while heavier parsers are unavailable. Default to single-PDF parsing with
+  per-document output folders.
+metadata:
+  author: kesslerio
+  category: Media & Content
+  tags:
+  - media-content
+  - pymupdf
+  - pdf
+  source: clawhub-community
+  clawhub_slug: pymupdf-pdf-parser-clawdbot-skill
+  clawhub_path: kesslerio/pymupdf-pdf-parser-clawdbot-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PyMuPDF PDF Parser Clawdbot Skill
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install pymupdf-pdf-parser-clawdbot-skill
+
+    # Path: kesslerio/pymupdf-pdf-parser-clawdbot-skill
+
+
+    ## Description
+
+    Fast local PDF parsing with PyMuPDF (fitz) for Markdown/JSON outputs and optional images/tables. Use when speed matters
+    more than robustness, or as a fallback while heavier parsers are unavailable. Default to single-PDF parsing with per-document
+    output folders.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/pymupdf-notes.md
+
+    - scripts/pymupdf_parse.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pymupdf-pdf-parser-clawdbot-skill
+
+    ```'
+examples:
+- description: Install PyMuPDF PDF Parser Clawdbot Skill from ClawHub
+  usage: clawhub install pymupdf-pdf-parser-clawdbot-skill
+schema_version: '1.0'

@@ -1,0 +1,68 @@
+name: ecto-connection
+title: Reverse proxy from internet to open claw
+version: 1.0.1
+description: Connect OpenClaw to the internet via Tailscale Funnel. Use when user says "connect with ecto", "setup ecto connection",
+  "expose openclaw publicly", or "enable external access".
+metadata:
+  author: tsheasha
+  category: General
+  tags:
+  - general
+  - ecto
+  - connection
+  source: clawhub-community
+  clawhub_slug: reverse-proxy-local
+  clawhub_path: tsheasha/reverse-proxy-local
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reverse proxy from internet to open claw
+
+    # Source: ClawHub community skill by tsheasha
+
+    # Install: clawhub install reverse-proxy-local
+
+    # Path: tsheasha/reverse-proxy-local
+
+
+    ## Description
+
+    Connect OpenClaw to the internet via Tailscale Funnel. Use when user says "connect with ecto", "setup ecto connection",
+    "expose openclaw publicly", or "enable external access".
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/connect.sh
+
+    - scripts/disconnect.sh
+
+    - scripts/package-for-friend.sh
+
+    - scripts/status.sh
+
+    - scripts/test-connection.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reverse-proxy-local
+
+    ```'
+examples:
+- description: Install Reverse proxy from internet to open claw from ClawHub
+  usage: clawhub install reverse-proxy-local
+schema_version: '1.0'

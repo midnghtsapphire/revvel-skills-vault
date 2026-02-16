@@ -1,0 +1,55 @@
+name: omnisearch
+title: omnisearch
+version: 1.0.0
+description: '|'
+metadata:
+  author: bguidolim
+  category: Search & Research
+  tags:
+  - search-research
+  - omnisearch
+  source: clawhub-community
+  clawhub_slug: omnisearch
+  clawhub_path: bguidolim/omnisearch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# omnisearch
+
+    # Source: ClawHub community skill by bguidolim
+
+    # Install: clawhub install omnisearch
+
+    # Path: bguidolim/omnisearch
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/omnisearch.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install omnisearch
+
+    ```'
+examples:
+- description: Install omnisearch from ClawHub
+  usage: clawhub install omnisearch
+schema_version: '1.0'

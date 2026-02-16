@@ -1,0 +1,72 @@
+name: rlm-controller
+title: RLM Controller
+version: 1.1.0
+description: RLM-style long-context controller that treats inputs as external context, slices/peeks/searches, and spawns recursive
+  subcalls with strict safety limits. Use for huge docs, dense logs, or repository-scale analysis.
+metadata:
+  author: skywyze
+  category: Search & Research
+  tags:
+  - search-research
+  - rlm
+  - controller
+  source: clawhub-community
+  clawhub_slug: rlm-controller
+  clawhub_path: skywyze/rlm-controller
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RLM Controller
+
+    # Source: ClawHub community skill by skywyze
+
+    # Install: clawhub install rlm-controller
+
+    # Path: skywyze/rlm-controller
+
+
+    ## Description
+
+    RLM-style long-context controller that treats inputs as external context, slices/peeks/searches, and spawns recursive
+    subcalls with strict safety limits. Use for huge docs, dense logs, or repository-scale analysis.
+
+
+    ## Files
+
+    - CONTRIBUTING.md
+
+    - EXAMPLES.md
+
+    - LICENSE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - .github/FUNDING.yml
+
+    - docs/cleanup_ignore.txt
+
+    - docs/flows.md
+
+    - docs/policy.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rlm-controller
+
+    ```'
+examples:
+- description: Install RLM Controller from ClawHub
+  usage: clawhub install rlm-controller
+schema_version: '1.0'

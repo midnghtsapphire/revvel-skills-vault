@@ -1,0 +1,59 @@
+name: rose-container-tools
+title: Build ROSE tools using a container
+version: 1.0.0
+description: Build and run ROSE compiler tools using ROSE installed in a Docker container. Use when developing source-to-source
+  translators, call graph analyzers, AST processors, or any tool that links against librose.so. Triggers on "ROSE tool", "callgraph",
+  "AST traversal", "source-to-source", "build with ROSE
+metadata:
+  author: chunhualiao
+  category: Development & Coding
+  tags:
+  - development-coding
+  - rose
+  - container
+  - tools
+  source: clawhub-community
+  clawhub_slug: rose-container-tools
+  clawhub_path: chunhualiao/rose-container-tools
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Build ROSE tools using a container
+
+    # Source: ClawHub community skill by chunhualiao
+
+    # Install: clawhub install rose-container-tools
+
+    # Path: chunhualiao/rose-container-tools
+
+
+    ## Description
+
+    Build and run ROSE compiler tools using ROSE installed in a Docker container. Use when developing source-to-source translators,
+    call graph analyzers, AST processors, or any tool that links against librose.so. Triggers on "ROSE tool", "callgraph",
+    "AST traversal", "source-to-source", "build with ROSE
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rose-container-tools
+
+    ```'
+examples:
+- description: Install Build ROSE tools using a container from ClawHub
+  usage: clawhub install rose-container-tools
+schema_version: '1.0'

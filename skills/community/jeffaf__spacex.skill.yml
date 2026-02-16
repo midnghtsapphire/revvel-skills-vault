@@ -1,0 +1,55 @@
+name: spacex
+title: Spacex
+version: 1.0.0
+description: '"CLI for AI agents to lookup SpaceX launches and rockets for their humans. No auth required."'
+metadata:
+  author: jeffaf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - spacex
+  source: clawhub-community
+  clawhub_slug: spacex
+  clawhub_path: jeffaf/spacex
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Spacex
+
+    # Source: ClawHub community skill by jeffaf
+
+    # Install: clawhub install spacex
+
+    # Path: jeffaf/spacex
+
+
+    ## Description
+
+    "CLI for AI agents to lookup SpaceX launches and rockets for their humans. No auth required."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install spacex
+
+    ```'
+examples:
+- description: Install Spacex from ClawHub
+  usage: clawhub install spacex
+schema_version: '1.0'

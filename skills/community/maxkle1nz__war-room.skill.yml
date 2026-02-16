@@ -1,0 +1,68 @@
+name: war-room
+title: War Room
+version: 1.1.0
+description: Multi-agent war room for brainstorming, system design, architecture review, product specs, business strategy,
+  or any complex problem. Use when a user wants to run a structured multi-agent session with specialist roles, when they mention
+  "war room", when they need to brainstorm a project from scratch
+metadata:
+  author: maxkle1nz
+  category: Development & Coding
+  tags:
+  - development-coding
+  - war
+  - room
+  source: clawhub-community
+  clawhub_slug: war-room
+  clawhub_path: maxkle1nz/war-room
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# War Room
+
+    # Source: ClawHub community skill by maxkle1nz
+
+    # Install: clawhub install war-room
+
+    # Path: maxkle1nz/war-room
+
+
+    ## Description
+
+    Multi-agent war room for brainstorming, system design, architecture review, product specs, business strategy, or any complex
+    problem. Use when a user wants to run a structured multi-agent session with specialist roles, when they mention "war room",
+    when they need to brainstorm a project from scratch
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/agent-roles.md
+
+    - references/dna-template.md
+
+    - references/wave-protocol.md
+
+    - scripts/init_war_room.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install war-room
+
+    ```'
+examples:
+- description: Install War Room from ClawHub
+  usage: clawhub install war-room
+schema_version: '1.0'

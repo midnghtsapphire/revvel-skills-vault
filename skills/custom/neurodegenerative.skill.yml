@@ -1,0 +1,179 @@
+name: neurodegenerative
+title: Neurodegenerative Disease Formulations
+version: 1.0.0
+description: Comprehensive analysis and formulation support for neurodegenerative diseases including Parkinson's and Alzheimer's
+  research, clinical trial matching, biomarker tracking, and treatment optimization
+metadata:
+  author: Revvel AI Engine
+  category: Intelligence & Research
+  tags:
+  - research-data-parsing
+  - biomarker-analysis
+  - neuroprotective-compound-analysis
+  - drug-interaction-analysis
+  - clinical-trial-matching
+  - neurodegenerative
+  - disease-progression-modeling
+  - lifestyle-intervention-protocols
+  - treatment-formulation
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport os\nimport re\nimport hashlib\nimport statistics\nimport math\nimport requests\nfrom datetime\
+    \ import datetime, timedelta\nfrom typing import Dict, List, Any, Optional, Tuple\nfrom collections import defaultdict,\
+    \ Counter\nimport unittest\nfrom unittest.mock import patch, MagicMock\n\nSKILL_METADATA = {\n    \"name\": \"Neurodegenerative\
+    \ Disease Formulations\",\n    \"id\": \"neurodegenerative\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI\
+    \ Engine\",\n    \"description\": \"Comprehensive analysis and formulation support for neurodegenerative diseases including\
+    \ Parkinson's and Alzheimer's research, clinical trial matching, biomarker tracking, and treatment optimization\",\n \
+    \   \"capabilities\": [\n        \"biomarker_analysis\",\n        \"clinical_trial_matching\",\n        \"drug_interaction_analysis\"\
+    ,\n        \"treatment_formulation\",\n        \"research_data_parsing\",\n        \"lifestyle_intervention_protocols\"\
+    ,\n        \"neuroprotective_compound_analysis\",\n        \"disease_progression_modeling\"\n    ],\n    \"domain\": \"\
+    neurodegenerative_disease_research\"\n}\n\nEXPERT_PROMPTS = {\n    \"biomarker_analysis\": \"\"\"Analyze biomarker data\
+    \ for {disease_type} patient with the following profile:\nAge: {patient_age}\nGender: {patient_gender}\nBiomarkers: {biomarker_data}\n\
+    Previous treatments: {treatment_history}\nCurrent medications: {current_medications}\nProvide detailed interpretation\
+    \ of biomarker levels, disease progression indicators, and recommended monitoring schedule.\"\"\",\n    \n    \"clinical_trial_matching\"\
+    : \"\"\"Find relevant clinical trials for {disease_type} patient with:\nInclusion criteria: {inclusion_criteria}\nExclusion\
+    \ criteria: {exclusion_criteria}\nLocation: {location}\nDisease stage: {disease_stage}\nBiomarker profile: {biomarker_profile}\n\
+    Return top 5 matching trials with eligibility assessment.\"\"\",\n    \n    \"drug_interaction_analysis\": \"\"\"Analyze\
+    \ potential drug interactions for {disease_type} treatment regimen:\nCurrent medications: {current_medications}\nProposed\
+    \ additions: {proposed_drugs}\nPatient factors: {patient_factors}\nProvide interaction severity, mechanisms, and mitigation\
+    \ strategies.\"\"\",\n    \n    \"treatment_formulation\": \"\"\"Design personalized treatment protocol for {disease_type}\
+    \ patient:\nPatient profile: {patient_profile}\nDisease characteristics: {disease_characteristics}\nTreatment goals: {treatment_goals}\n\
+    Constraints: {constraints}\nInclude dosing, timing, monitoring parameters, and expected outcomes.\"\"\",\n    \n    \"\
+    research_data_parsing\": \"\"\"Parse and analyze research data from {source_type}:\nDataset: {dataset_description}\nAnalysis\
+    \ focus: {analysis_focus}\nKey variables: {key_variables}\nProvide structured summary with statistical insights and clinical\
+    \ relevance.\"\"\",\n    \n    \"lifestyle_intervention_protocols\": \"\"\"Develop lifestyle intervention protocol for\
+    \ {disease_type}:\nPatient demographics: {patient_demographics}\nCurrent lifestyle: {current_lifestyle}\nDisease stage:\
+    \ {disease_stage}\nComorbidities: {comorbidities}\nInclude diet, exercise, cognitive training, and social engagement recommendations.\"\
+    \"\",\n    \n    \"neuroprotective_compound_analysis\": \"\"\"Evaluate neuroprotective compounds for {disease_type}:\n\
+    Target mechanisms: {target_mechanisms}\nCompound list: {compound_list}\nBioavailability data: {bioavailability_data}\n\
+    Provide efficacy ranking, optimal combinations, and dosing strategies.\"\"\",\n    \n    \"disease_progression_modeling\"\
+    : \"\"\"Model disease progression for {disease_type} patient:\nBaseline data: {baseline_data}\nHistorical progression:\
+    \ {historical_data}\nRisk factors: {risk_factors}\nGenerate 5-year progression forecast with confidence intervals and\
+    \ intervention impact assessment.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"clinicaltrials_gov\": {\n        \"type\"\
+    : \"api\",\n        \"endpoint\": \"https://clinicaltrials.gov/api/v2\",\n        \"description\": \"Clinical trials database\
+    \ for matching patients to relevant studies\",\n        \"auth_method\": \"none\",\n        \"documentation_url\": \"\
+    https://clinicaltrials.gov/api\"\n    },\n    \"pubmed_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"\
+    https://eutils.ncbi.nlm.nih.gov/entrez/eutils\",\n        \"description\": \"PubMed database for research literature and\
+    \ biomarker studies\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://www.ncbi.nlm.nih.gov/books/NBK25501/\"\
+    \n    },\n    \"drugbank_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://go.drugbank.com/api\",\n\
+    \        \"description\": \"Drug interaction and pharmacology database\",\n        \"auth_method\": \"api_key\",\n   \
+    \     \"documentation_url\": \"https://go.drugbank.com/api\"\n    },\n    \"neurobank_db\": {\n        \"type\": \"database\"\
+    ,\n        \"endpoint\": \"postgresql://neurobank.revvel.ai:5432/neurodegenerative\",\n        \"description\": \"Internal\
+    \ database of neurodegenerative disease research data\",\n        \"auth_method\": \"oauth2\",\n        \"documentation_url\"\
+    : \"https://docs.revvel.ai/neurobank\"\n    },\n    \"biomarker_tracker\": {\n        \"type\": \"tool\",\n        \"\
+    endpoint\": \"https://tools.revvel.ai/biomarker\",\n        \"description\": \"Biomarker analysis and tracking tool\"\
+    ,\n        \"auth_method\": \"jwt\",\n        \"documentation_url\": \"https://docs.revvel.ai/biomarker-tracker\"\n  \
+    \  }\n}\n\ndef parse_biomarker_data(raw_data: str) -> Dict[str, float]:\n    \"\"\"Parse biomarker data from various input\
+    \ formats.\"\"\"\n    biomarkers = {}\n    lines = raw_data.strip().split('\\n')\n    \n    for line in lines:\n     \
+    \   line = line.strip()\n        if not line or ':' not in line:\n            continue\n            \n        parts =\
+    \ line.split(':')\n        if len(parts) >= 2:\n            name = parts[0].strip().lower()\n            try:\n      \
+    \          value = float(parts[1].strip().split()[0])\n                biomarkers[name] = value\n            except (ValueError,\
+    \ IndexError):\n                continue\n                \n    return biomarkers\n\ndef validate_biomarker_ranges(biomarkers:\
+    \ Dict[str, float], disease_type: str) -> Dict[str, str]:\n    \"\"\"Validate biomarker values against normal ranges for\
+    \ specific diseases.\"\"\"\n    ranges = {\n        \"parkinsons\": {\n            \"alpha_synuclein\": (0.1, 2.5),\n\
+    \            \"dopamine\": (0.5, 4.0),\n            \"homovanillic_acid\": (5.0, 25.0),\n            \"3-methoxytyrosine\"\
+    : (10.0, 50.0)\n        },\n        \"alzheimers\": {\n            \"amyloid_beta_42\": (200, 1200),\n            \"tau_protein\"\
+    : (80, 450),\n            \"p_tau_181\": (15, 85),\n            \"apo_e4\": (0, 1)\n        }\n    }\n    \n    results\
+    \ = {}\n    disease_ranges = ranges.get(disease_type.lower(), {})\n    \n    for marker, value in biomarkers.items():\n\
+    \        if marker in disease_ranges:\n            min_val, max_val = disease_ranges[marker]\n            if value < min_val:\n\
+    \                results[marker] = \"low\"\n            elif value > max_val:\n                results[marker] = \"high\"\
+    \n            else:\n                results[marker] = \"normal\"\n        else:\n            results[marker] = \"unknown\"\
+    \n            \n    return results\n\ndef calculate_disease_progression_score(biomarkers: Dict[str, float], disease_type:\
+    \ str) -> float:\n    \"\"\"Calculate composite disease progression score from biomarkers.\"\"\"\n    weights = {\n  \
+    \      \"parkinsons\": {\n            \"alpha_synuclein\": 0.4,\n            \"dopamine\": 0.3,\n            \"homovanillic_acid\"\
+    : 0.2,\n            \"3-methoxytyrosine\": 0.1\n        },\n        \"alzheimers\": {\n            \"amyloid_beta_42\"\
+    : 0.35,\n            \"tau_protein\": 0.35,\n            \"p_tau_181\": 0.2,\n            \"apo_e4\": 0.1\n        }\n\
+    \    }\n    \n    disease_weights = weights.get(disease_type.lower(), {})\n    score = 0.0\n    \n    for marker, weight\
+    \ in disease_weights.items():\n        if marker in biomarkers:\n            normalized_value = biomarkers[marker] / 100.0\
+    \ if biomarkers[marker] > 1 else biomarkers[marker]\n            score += normalized_value * weight\n            \n  \
+    \  return min(score, 1.0)\n\ndef generate_treatment_recommendations(disease_type: str, disease_stage: str, biomarkers:\
+    \ Dict[str, float]) -> List[Dict[str, Any]]:\n    \"\"\"Generate personalized treatment recommendations based on disease\
+    \ and biomarkers.\"\"\"\n    recommendations = []\n    \n    if disease_type.lower() == \"parkinsons\":\n        if disease_stage\
+    \ == \"early\":\n            recommendations.append({\n                \"drug\": \"levodopa/carbidopa\",\n           \
+    \     \"dosage\": \"25/100 mg TID\",\n                \"rationale\": \"First-line therapy for motor symptoms\",\n    \
+    \            \"monitoring\": \"Dyskinesia, motor fluctuations\"\n            })\n            if biomarkers.get(\"alpha_synuclein\"\
+    , 0) > 1.5:\n                recommendations.append({\n                    \"drug\": \"rasagiline\",\n               \
+    \     \"dosage\": \"1 mg daily\",\n                    \"rationale\": \"MAO-B inhibitor for neuroprotection\",\n     \
+    \               \"monitoring\": \"Liver function, blood pressure\"\n                })\n        elif disease_stage ==\
+    \ \"moderate\":\n            recommendations.append({\n                \"drug\": \"levodopa/carbidopa CR\",\n        \
+    \        \"dosage\": \"50/200 mg BID\",\n                \"rationale\": \"Controlled release for sustained benefit\",\n\
+    \                \"monitoring\": \"Motor fluctuations, dyskinesia\"\n            })\n            \n    elif disease_type.lower()\
+    \ == \"alzheimers\":\n        if disease_stage == \"early\":\n            recommendations.append({\n                \"\
+    drug\": \"donepezil\",\n                \"dosage\": \"5 mg daily\",\n                \"rationale\": \"Cholinesterase inhibitor\
+    \ for cognitive symptoms\",\n                \"monitoring\": \"GI side effects, bradycardia\"\n            })\n      \
+    \      if biomarkers.get(\"amyloid_beta_42\", 0) < 400:\n                recommendations.append({\n                  \
+    \  \"drug\": \"aducanumab\",\n                    \"dosage\": \"10 mg/kg monthly\",\n                    \"rationale\"\
+    : \"Amyloid-targeting therapy\",\n                    \"monitoring\": \"ARIA, headache\"\n                })\n       \
+    \         \n    return recommendations\n\ndef analyze_drug_interactions(current_meds: List[str], proposed_drugs: List[str])\
+    \ -> List[Dict[str, Any]]:\n    \"\"\"Analyze potential drug interactions.\"\"\"\n    interactions = []\n    \n    known_interactions\
+    \ = {\n        (\"levodopa\", \"haloperidol\"): \"Antagonizes levodopa effect\",\n        (\"selegiline\", \"meperidine\"\
+    ): \"Risk of serotonin syndrome\",\n        (\"donepezil\", \"anticholinergics\"): \"Reduced efficacy of both drugs\"\
+    ,\n        (\"warfarin\", \"donepezil\"): \"Increased bleeding risk\",\n        (\"amiodarone\", \"levodopa\"): \"Increased\
+    \ levodopa toxicity\"\n    }\n    \n    all_drugs = set(current_meds + proposed_drugs)\n    \n    for (drug1, drug2),\
+    \ interaction in known_interactions.items():\n        if drug1 in all_drugs and drug2 in all_drugs:\n            interactions.append({\n\
+    \                \"drugs\": [drug1, drug2],\n                \"severity\": \"high\",\n                \"mechanism\": interaction,\n\
+    \                \"recommendation\": \"Avoid concurrent use or monitor closely\"\n            })\n            \n    return\
+    \ interactions\n\ndef build_clinical_trial_query(disease_type: str, criteria: Dict[str, Any]) -> str:\n    \"\"\"Build\
+    \ optimized query for clinical trial databases.\"\"\"\n    base_query = f\"{disease_type} neurodegenerative\"\n    \n\
+    \    if criteria.get(\"stage\"):\n        base_query += f\" {criteria['stage']}\"\n    if criteria.get(\"biomarker\"):\n\
+    \        base_query += f\" {criteria['biomarker']}\"\n    if criteria.get(\"intervention\"):\n        base_query += f\"\
+    \ {criteria['intervention']}\"\n        \n    return base_query\n\ndef generate_lifestyle_protocol(disease_type: str,\
+    \ patient_age: int, comorbidities: List[str]) -> Dict[str, Any]:\n    \"\"\"Generate personalized lifestyle intervention\
+    \ protocol.\"\"\"\n    protocol = {\n        \"exercise\": {\n            \"type\": \"aerobic + resistance\",\n      \
+    \      \"frequency\": \"5 days/week\",\n            \"duration\": \"30-45 minutes\",\n            \"intensity\": \"moderate\"\
+    \n        },\n        \"diet\": {\n            \"pattern\": \"Mediterranean\",\n            \"key_components\": [\"omega-3\"\
+    , \"antioxidants\", \"low saturated fat\"],\n            \"restrictions\": []\n        },\n        \"cognitive_training\"\
+    : {\n            \"frequency\": \"3-4 days/week\",\n            \"activities\": [\"memory games\", \"problem solving\"\
+    , \"learning new skills\"],\n            \"duration\": \"20-30 minutes\"\n        }\n    }\n    \n    if disease_type.lower()\
+    \ == \"alzheimers\":\n        protocol[\"diet\"][\"key_components\"].extend([\"curcumin\", \"vitamin E\"])\n        protocol[\"\
+    cognitive_training\"][\"activities\"].append(\"meditation\")\n        \n    if patient_age > 75:\n        protocol[\"\
+    exercise\"][\"intensity\"] = \"light-moderate\"\n        protocol[\"exercise\"][\"duration\"] = \"20-30 minutes\"\n  \
+    \      \n    if \"diabetes\" in comorbidities:\n        protocol[\"diet\"][\"restrictions\"].append(\"low glycemic index\"\
+    )\n        \n    return protocol\n\ndef calculate_neuroprotective_score(compounds: List[str], target_pathways: List[str])\
+    \ -> Dict[str, float]:\n    \"\"\"Calculate neuroprotective efficacy scores for compounds.\"\"\"\n    efficacy_data =\
+    \ {\n        \"coenzyme_q10\": {\"oxidative_stress\": 0.8, \"mitochondrial\": 0.7, \"anti-inflammatory\": 0.6},\n    \
+    \    \"curcumin\": {\"anti-inflammatory\": 0.9, \"oxidative_stress\": 0.8, \"amyloid\": 0.7},\n        \"omega3\": {\"\
+    anti-inflammatory\": 0.8, \"membrane\": 0.7, \"oxidative_stress\": 0.6},\n        \"vitamin_e\": {\"oxidative_stress\"\
+    : 0.9, \"membrane\": 0.6, \"anti-inflammatory\": 0.5},\n        \"resveratrol\": {\"anti-inflammatory\": 0.7, \"oxidative_stress\"\
+    : 0.8, \"longevity\": 0.6}\n    }\n    \n    scores = {}\n    for compound in compounds:\n        compound_lower = compound.lower().replace(\"\
+    -\", \"\").replace(\"_\", \"\")\n        if compound_lower in efficacy_data:\n            compound_scores = efficacy_data[compound_lower]\n\
+    \            total_score = sum(compound_scores.get(pathway, 0.0) for pathway in target_pathways)\n            scores[compound]\
+    \ = round(total_score / max(len(target_pathways), 1), 3)\n        else:\n            scores[compound] = 0.0\n    \n  \
+    \  return scores\n\n\nclass SkillEngine:\n    \"\"\"Neurodegenerative Disease Formulations skill engine.\"\"\"\n    \n\
+    \    def __init__(self):\n        self.name = SKILL_METADATA['name']\n        self.version = SKILL_METADATA['version']\n\
+    \    \n    def run(self, action: str, **kwargs) -> Dict[str, Any]:\n        actions = {\n            'biomarker_tracking':\
+    \ lambda: track_biomarkers(**kwargs),\n            'drug_interaction': lambda: check_drug_interactions(**kwargs),\n  \
+    \          'clinical_trial': lambda: search_clinical_trials(**kwargs),\n            'neuroprotective_score': lambda: calculate_neuroprotective_score(**kwargs),\n\
+    \            'lifestyle_protocol': lambda: generate_lifestyle_protocol(**kwargs),\n        }\n        if action in actions:\n\
+    \            return actions[action]()\n        return {'error': f'Unknown action: {action}'}\n\n\nclass TestNeurodegenerative(unittest.TestCase):\n\
+    \    \"\"\"Unit tests for Neurodegenerative Disease skill.\"\"\"\n    \n    def test_metadata(self):\n        self.assertEqual(SKILL_METADATA['id'],\
+    \ 'neurodegenerative')\n    \n    def test_neuroprotective_score(self):\n        result = calculate_neuroprotective_score(\n\
+    \            compounds=['curcumin', 'omega3'],\n            target_pathways=['anti-inflammatory', 'oxidative_stress']\n\
+    \        )\n        self.assertIn('curcumin', result)\n        self.assertGreater(result['curcumin'], 0)\n    \n    def\
+    \ test_unknown_compound(self):\n        result = calculate_neuroprotective_score(\n            compounds=['unknown_drug'],\n\
+    \            target_pathways=['anti-inflammatory']\n        )\n        self.assertEqual(result['unknown_drug'], 0.0)\n\
+    \    \n    def test_lifestyle_protocol(self):\n        result = generate_lifestyle_protocol(\n            disease_type='parkinsons',\n\
+    \            patient_age=65,\n            comorbidities=[]\n        )\n        self.assertIn('exercise', result)\n   \
+    \     self.assertIn('diet', result)\n    \n    def test_prompts_exist(self):\n        self.assertGreater(len(EXPERT_PROMPTS),\
+    \ 0)\n    \n    def test_integration_points(self):\n        self.assertIn('pubmed', INTEGRATION_POINTS)\n    \n    def\
+    \ test_skill_engine(self):\n        engine = SkillEngine()\n        self.assertEqual(engine.name, 'Neurodegenerative Disease\
+    \ Formulations')\n    \n    def test_engine_unknown_action(self):\n        engine = SkillEngine()\n        result = engine.run('nonexistent')\n\
+    \        self.assertIn('error', result)\n    \n    def test_elderly_protocol(self):\n        result = generate_lifestyle_protocol(\n\
+    \            disease_type='alzheimers',\n            patient_age=80,\n            comorbidities=['diabetes']\n       \
+    \ )\n        self.assertEqual(result['exercise']['intensity'], 'light-moderate')\n    \n    def test_empty_compounds(self):\n\
+    \        result = calculate_neuroprotective_score(compounds=[], target_pathways=['anti-inflammatory'])\n        self.assertEqual(len(result),\
+    \ 0)\n\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Neurodegenerative Disease Formulations skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''neurodegenerative'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

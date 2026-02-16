@@ -1,0 +1,71 @@
+name: salesforce-sdr-admin
+title: Salesforce SDR Admin (Browser)
+version: 1.0.0
+description: UI-driven Salesforce SDR and admin execution across Sales Cloud, Service Cloud, Experience Cloud, and CPQ/Revenue
+  Cloud. Use when a user asks to operate Salesforce in the browser (not API), manage leads/opportunities/cases/quotes, perform
+  setup or configuration tasks, or make Apex/LWC/Aura changes w
+metadata:
+  author: sfdcbrewery
+  category: Search & Research
+  tags:
+  - search-research
+  - salesforce
+  - sdr
+  - admin
+  source: clawhub-community
+  clawhub_slug: salesforce-sdr-admin
+  clawhub_path: sfdcbrewery/salesforce-sdr-admin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Salesforce SDR Admin (Browser)
+
+    # Source: ClawHub community skill by sfdcbrewery
+
+    # Install: clawhub install salesforce-sdr-admin
+
+    # Path: sfdcbrewery/salesforce-sdr-admin
+
+
+    ## Description
+
+    UI-driven Salesforce SDR and admin execution across Sales Cloud, Service Cloud, Experience Cloud, and CPQ/Revenue Cloud.
+    Use when a user asks to operate Salesforce in the browser (not API), manage leads/opportunities/cases/quotes, perform
+    setup or configuration tasks, or make Apex/LWC/Aura changes w
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/credentials.md
+
+    - references/dev-cheatsheet.md
+
+    - references/domain-cheatsheet.md
+
+    - references/prompt-injection-guardrails.md
+
+    - references/ui-flow.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install salesforce-sdr-admin
+
+    ```'
+examples:
+- description: Install Salesforce SDR Admin (Browser) from ClawHub
+  usage: clawhub install salesforce-sdr-admin
+schema_version: '1.0'

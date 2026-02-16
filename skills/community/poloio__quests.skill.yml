@@ -1,0 +1,59 @@
+name: quests
+title: Quests — Guided Process Framework
+version: 1.0.2
+description: Track and guide humans through complex multi-step real-world processes. Use when a user needs help with a bureaucratic,
+  legal, technical, or any multi-step procedure that requires organized tracking, step-by-step guidance, and progress monitoring.
+  Triggers on requests like "help me with this process
+metadata:
+  author: poloio
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - quests
+  source: clawhub-community
+  clawhub_slug: quests
+  clawhub_path: poloio/quests
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Quests — Guided Process Framework
+
+    # Source: ClawHub community skill by poloio
+
+    # Install: clawhub install quests
+
+    # Path: poloio/quests
+
+
+    ## Description
+
+    Track and guide humans through complex multi-step real-world processes. Use when a user needs help with a bureaucratic,
+    legal, technical, or any multi-step procedure that requires organized tracking, step-by-step guidance, and progress monitoring.
+    Triggers on requests like "help me with this process
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/quest.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install quests
+
+    ```'
+examples:
+- description: Install Quests — Guided Process Framework from ClawHub
+  usage: clawhub install quests
+schema_version: '1.0'

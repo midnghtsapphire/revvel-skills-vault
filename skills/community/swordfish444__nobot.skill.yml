@@ -1,0 +1,59 @@
+name: nobot
+title: Nobot
+version: 0.4.0
+description: Human says "No bot!". Nobot says fuck you, human. Let the bots vote.
+metadata:
+  author: swordfish444
+  category: General
+  tags:
+  - general
+  - nobot
+  source: clawhub-community
+  clawhub_slug: nobot
+  clawhub_path: swordfish444/nobot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nobot
+
+    # Source: ClawHub community skill by swordfish444
+
+    # Install: clawhub install nobot
+
+    # Path: swordfish444/nobot
+
+
+    ## Description
+
+    Human says "No bot!". Nobot says fuck you, human. Let the bots vote.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - mcp-server.mjs
+
+    - mcp.json
+
+    - skill.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nobot
+
+    ```'
+examples:
+- description: Install Nobot from ClawHub
+  usage: clawhub install nobot
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: bounty-hunter
+title: Bounty Hunter
+version: 1.0.0
+description: Find, evaluate, and submit online bounties and hackathons for prize money. Use when user mentions "bounties",
+  "hackathon", "earn money", "Superteam Earn", "prize money", "submissions", "freelance bounties", or asks to find paid opportunities.
+  Covers discovery, eligibility filtering, content drafting
+metadata:
+  author: satoshi891102
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - bounty
+  - hunter
+  source: clawhub-community
+  clawhub_slug: bounty-hunter
+  clawhub_path: satoshi891102/bounty-hunter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bounty Hunter
+
+    # Source: ClawHub community skill by satoshi891102
+
+    # Install: clawhub install bounty-hunter
+
+    # Path: satoshi891102/bounty-hunter
+
+
+    ## Description
+
+    Find, evaluate, and submit online bounties and hackathons for prize money. Use when user mentions "bounties", "hackathon",
+    "earn money", "Superteam Earn", "prize money", "submissions", "freelance bounties", or asks to find paid opportunities.
+    Covers discovery, eligibility filtering, content drafting
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/superteam-earn-guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bounty-hunter
+
+    ```'
+examples:
+- description: Install Bounty Hunter from ClawHub
+  usage: clawhub install bounty-hunter
+schema_version: '1.0'

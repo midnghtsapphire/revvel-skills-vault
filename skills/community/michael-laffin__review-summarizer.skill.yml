@@ -1,0 +1,70 @@
+name: review-summarizer
+title: Review Summarizer
+version: 1.0.0
+description: Scrape, analyze, and summarize product reviews from multiple platforms (Amazon, Google, Yelp, TripAdvisor). Extract
+  key insights, sentiment analysis, pros/cons, and recommendations. Use when researching products for arbitrage, creating
+  affiliate content, or making purchasing decisions.
+metadata:
+  author: michael-laffin
+  category: Search & Research
+  tags:
+  - search-research
+  - review
+  - summarizer
+  source: clawhub-community
+  clawhub_slug: review-summarizer
+  clawhub_path: michael-laffin/review-summarizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Review Summarizer
+
+    # Source: ClawHub community skill by michael-laffin
+
+    # Install: clawhub install review-summarizer
+
+    # Path: michael-laffin/review-summarizer
+
+
+    ## Description
+
+    Scrape, analyze, and summarize product reviews from multiple platforms (Amazon, Google, Yelp, TripAdvisor). Extract key
+    insights, sentiment analysis, pros/cons, and recommendations. Use when researching products for arbitrage, creating affiliate
+    content, or making purchasing decisions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/__init__.py
+
+    - scripts/compare_reviews.py
+
+    - scripts/export_data.py
+
+    - scripts/quick_summary.py
+
+    - scripts/scrape_reviews.py
+
+    - scripts/sentiment_analysis.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install review-summarizer
+
+    ```'
+examples:
+- description: Install Review Summarizer from ClawHub
+  usage: clawhub install review-summarizer
+schema_version: '1.0'

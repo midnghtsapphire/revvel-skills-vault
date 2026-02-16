@@ -1,0 +1,54 @@
+name: spotify-player
+title: spongo
+version: 1.0.0
+description: Terminal Spotify playback/search via spogo (preferred) or spotify_player.
+metadata:
+  author: nabssku
+  category: Search & Research
+  tags:
+  - search-research
+  - spotify
+  - player
+  source: clawhub-community
+  clawhub_slug: spongo
+  clawhub_path: nabssku/spongo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# spongo
+
+    # Source: ClawHub community skill by nabssku
+
+    # Install: clawhub install spongo
+
+    # Path: nabssku/spongo
+
+
+    ## Description
+
+    Terminal Spotify playback/search via spogo (preferred) or spotify_player.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install spongo
+
+    ```'
+examples:
+- description: Install spongo from ClawHub
+  usage: clawhub install spongo
+schema_version: '1.0'

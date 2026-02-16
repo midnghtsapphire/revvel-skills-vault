@@ -1,0 +1,72 @@
+name: official_verifier
+title: Official Verifier
+version: 1.0.1
+description: 判断网站或项目仓库是否为官方项目，通过多种验证手段并以概率形式返回可信度评估。Judges whether a website or project repository is official, evaluating
+  authenticity through multiple verification methods and returning a probability-based assessment.
+metadata:
+  author: deepmindomega
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - official
+  - verifier
+  source: clawhub-community
+  clawhub_slug: official-verifier
+  clawhub_path: deepmindomega/official-verifier
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Official Verifier
+
+    # Source: ClawHub community skill by deepmindomega
+
+    # Install: clawhub install official-verifier
+
+    # Path: deepmindomega/official-verifier
+
+
+    ## Description
+
+    判断网站或项目仓库是否为官方项目，通过多种验证手段并以概率形式返回可信度评估。Judges whether a website or project repository is official, evaluating authenticity
+    through multiple verification methods and returning a probability-based assessment.
+
+
+    ## Files
+
+    - CLAWDHUB_README.md
+
+    - PUBLISH_GUIDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - example.js
+
+    - package.json
+
+    - verify-official-project.js
+
+    - verify.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install official-verifier
+
+    ```'
+examples:
+- description: Install Official Verifier from ClawHub
+  usage: clawhub install official-verifier
+schema_version: '1.0'

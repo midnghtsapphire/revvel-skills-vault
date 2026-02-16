@@ -1,0 +1,56 @@
+name: strava-cli
+title: Strava CLI
+version: 0.1.0
+description: Interact with Strava via the strava-client-cli Python tool. Use for viewing activities, athlete profiles, stats,
+  and exporting data. Covers setup (creating a Strava account, API app, and OAuth) and all CLI commands.
+metadata:
+  author: geodeterra
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - strava
+  - cli
+  source: clawhub-community
+  clawhub_slug: strava-cli
+  clawhub_path: geodeterra/strava-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Strava CLI
+
+    # Source: ClawHub community skill by geodeterra
+
+    # Install: clawhub install strava-cli
+
+    # Path: geodeterra/strava-cli
+
+
+    ## Description
+
+    Interact with Strava via the strava-client-cli Python tool. Use for viewing activities, athlete profiles, stats, and exporting
+    data. Covers setup (creating a Strava account, API app, and OAuth) and all CLI commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install strava-cli
+
+    ```'
+examples:
+- description: Install Strava CLI from ClawHub
+  usage: clawhub install strava-cli
+schema_version: '1.0'

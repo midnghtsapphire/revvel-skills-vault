@@ -1,0 +1,57 @@
+name: remarkable
+title: Remarkable
+version: 1.0.0
+description: Fetch handwritten notes, sketches, and drawings from a reMarkable tablet via Cloud API (rmapi). Process content
+  by refining artwork with AI image generation, extracting handwritten text to memory/journal, or using sketches as input
+  for other workflows. Use when working with reMarkable tablet content
+metadata:
+  author: coolmanns
+  category: Media & Content
+  tags:
+  - media-content
+  - remarkable
+  source: clawhub-community
+  clawhub_slug: remarkable-tablet
+  clawhub_path: coolmanns/remarkable-tablet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Remarkable
+
+    # Source: ClawHub community skill by coolmanns
+
+    # Install: clawhub install remarkable-tablet
+
+    # Path: coolmanns/remarkable-tablet
+
+
+    ## Description
+
+    Fetch handwritten notes, sketches, and drawings from a reMarkable tablet via Cloud API (rmapi). Process content by refining
+    artwork with AI image generation, extracting handwritten text to memory/journal, or using sketches as input for other
+    workflows. Use when working with reMarkable tablet content
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remarkable-tablet
+
+    ```'
+examples:
+- description: Install Remarkable from ClawHub
+  usage: clawhub install remarkable-tablet
+schema_version: '1.0'

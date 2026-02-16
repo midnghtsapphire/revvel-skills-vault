@@ -1,0 +1,59 @@
+name: trainingpeaks
+title: TrainingPeaks
+version: 1.0.1
+description: Pull real-time training plans, workouts, fitness metrics (CTL/ATL/TSB), and personal records from TrainingPeaks.
+  Uses cookie-based authentication (no API key needed). Use in conjunction with other endurance, cycling, running or swimming
+  triathlon coach skills for best results.
+metadata:
+  author: rubengarciam
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - trainingpeaks
+  source: clawhub-community
+  clawhub_slug: trainingpeaks
+  clawhub_path: rubengarciam/trainingpeaks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TrainingPeaks
+
+    # Source: ClawHub community skill by rubengarciam
+
+    # Install: clawhub install trainingpeaks
+
+    # Path: rubengarciam/trainingpeaks
+
+
+    ## Description
+
+    Pull real-time training plans, workouts, fitness metrics (CTL/ATL/TSB), and personal records from TrainingPeaks. Uses
+    cookie-based authentication (no API key needed). Use in conjunction with other endurance, cycling, running or swimming
+    triathlon coach skills for best results.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tp.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trainingpeaks
+
+    ```'
+examples:
+- description: Install TrainingPeaks from ClawHub
+  usage: clawhub install trainingpeaks
+schema_version: '1.0'

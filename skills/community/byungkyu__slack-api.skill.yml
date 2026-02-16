@@ -1,0 +1,55 @@
+name: slack
+title: Slack
+version: 1.0.7
+description: '|'
+metadata:
+  author: byungkyu
+  category: Communication
+  tags:
+  - communication
+  - slack
+  source: clawhub-community
+  clawhub_slug: slack-api
+  clawhub_path: byungkyu/slack-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Slack
+
+    # Source: ClawHub community skill by byungkyu
+
+    # Install: clawhub install slack-api
+
+    # Path: byungkyu/slack-api
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install slack-api
+
+    ```'
+examples:
+- description: Install Slack from ClawHub
+  usage: clawhub install slack-api
+schema_version: '1.0'

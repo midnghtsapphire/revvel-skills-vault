@@ -1,0 +1,55 @@
+name: front
+title: front
+version: 1.0.0
+description: Front.app API for managing conversations, messages, comments, and team collaboration.
+metadata:
+  author: rdewolff
+  category: Communication
+  tags:
+  - communication
+  - front
+  source: clawhub-community
+  clawhub_slug: front
+  clawhub_path: rdewolff/front
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# front
+
+    # Source: ClawHub community skill by rdewolff
+
+    # Install: clawhub install front
+
+    # Path: rdewolff/front
+
+
+    ## Description
+
+    Front.app API for managing conversations, messages, comments, and team collaboration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/front.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install front
+
+    ```'
+examples:
+- description: Install front from ClawHub
+  usage: clawhub install front
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: openclaw-warden-pro
+title: OpenClaw Warden Pro
+version: 1.0.1
+description: '"Full workspace security suite: detect unauthorized modifications, scan for prompt injection patterns, and automatically
+  respond with countermeasures — snapshot restore, skill quarantine, git rollback, and automated protection sweeps. The complete
+  post-installation security layer for agent workspace'
+metadata:
+  author: atlaspa
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - warden
+  - pro
+  source: clawhub-community
+  clawhub_slug: openclaw-warden-pro
+  clawhub_path: atlaspa/openclaw-warden-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Warden Pro
+
+    # Source: ClawHub community skill by atlaspa
+
+    # Install: clawhub install openclaw-warden-pro
+
+    # Path: atlaspa/openclaw-warden-pro
+
+
+    ## Description
+
+    "Full workspace security suite: detect unauthorized modifications, scan for prompt injection patterns, and automatically
+    respond with countermeasures — snapshot restore, skill quarantine, git rollback, and automated protection sweeps. The
+    complete post-installation security layer for agent workspace
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/integrity.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-warden-pro
+
+    ```'
+examples:
+- description: Install OpenClaw Warden Pro from ClawHub
+  usage: clawhub install openclaw-warden-pro
+schema_version: '1.0'

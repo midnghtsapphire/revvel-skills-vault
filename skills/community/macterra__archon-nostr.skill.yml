@@ -1,0 +1,58 @@
+name: archon-nostr
+title: Archon Nostr
+version: 0.1.0
+description: Derive Nostr identity (npub/nsec) from Archon DID. Use when unifying DID and Nostr identities so both use the
+  same secp256k1 key. Requires existing Archon wallet with ARCHON_PASSPHRASE set.
+metadata:
+  author: macterra
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - archon
+  - nostr
+  source: clawhub-community
+  clawhub_slug: archon-nostr
+  clawhub_path: macterra/archon-nostr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Archon Nostr
+
+    # Source: ClawHub community skill by macterra
+
+    # Install: clawhub install archon-nostr
+
+    # Path: macterra/archon-nostr
+
+
+    ## Description
+
+    Derive Nostr identity (npub/nsec) from Archon DID. Use when unifying DID and Nostr identities so both use the same secp256k1
+    key. Requires existing Archon wallet with ARCHON_PASSPHRASE set.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/derive-nostr.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install archon-nostr
+
+    ```'
+examples:
+- description: Install Archon Nostr from ClawHub
+  usage: clawhub install archon-nostr
+schema_version: '1.0'

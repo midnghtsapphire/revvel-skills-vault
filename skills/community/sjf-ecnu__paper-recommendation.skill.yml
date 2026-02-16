@@ -1,0 +1,63 @@
+name: paper-recommendation
+title: Paper Recommendation
+version: 1.0.1
+description: ''
+metadata:
+  author: sjf-ecnu
+  category: General
+  tags:
+  - general
+  - paper
+  - recommendation
+  source: clawhub-community
+  clawhub_slug: paper-recommendation
+  clawhub_path: sjf-ecnu/paper-recommendation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Paper Recommendation
+
+    # Source: ClawHub community skill by sjf-ecnu
+
+    # Install: clawhub install paper-recommendation
+
+    # Path: sjf-ecnu/paper-recommendation
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - WORKFLOW.md
+
+    - _meta.json
+
+    - scripts/daily_workflow.py
+
+    - scripts/fetch_papers.py
+
+    - scripts/read_pdf.py
+
+    - scripts/review_papers.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paper-recommendation
+
+    ```'
+examples:
+- description: Install Paper Recommendation from ClawHub
+  usage: clawhub install paper-recommendation
+schema_version: '1.0'

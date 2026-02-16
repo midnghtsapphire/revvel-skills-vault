@@ -1,0 +1,34 @@
+name: promotion-review
+title: Promotion Review
+version: 1.0.0
+description: 'Analyze promotion/review materials (述职/晋升材料) as an evaluator, identify issues and likely interview questions,
+  then provide coaching advice. Supports text files, PDFs, and images (screenshots). Default output is Markdown file; HTML
+  with Cloudflare R2 upload is optional. Use when user sends promotion '
+metadata:
+  author: dongsjoa-byte
+  category: Media & Content
+  tags:
+  - media-content
+  - promotion
+  - review
+  source: clawhub-community
+  clawhub_slug: promotion-review
+  clawhub_path: dongsjoa-byte/promotion-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Promotion Review\n# Source: ClawHub community skill by dongsjoa-byte\n# Install: clawhub install promotion-review\n\
+    # Path: dongsjoa-byte/promotion-review\n\n## Description\nAnalyze promotion/review materials (述职/晋升材料) as an evaluator,\
+    \ identify issues and likely interview questions, then provide coaching advice. Supports text files, PDFs, and images\
+    \ (screenshots). Default output is Markdown file; HTML with Cloudflare R2 upload is optional. Use when user sends promotion\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n- assets/template-iterative.md\n- assets/template.html\n- assets/template.md\n\
+    \n## Installation\n```bash\nclawhub install promotion-review\n```"
+examples:
+- description: Install Promotion Review from ClawHub
+  usage: clawhub install promotion-review
+schema_version: '1.0'

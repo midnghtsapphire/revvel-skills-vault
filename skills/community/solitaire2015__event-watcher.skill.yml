@@ -1,0 +1,72 @@
+name: event-watcher
+title: Event-Watcher
+version: 1.0.1
+description: Event watcher skill for OpenClaw. Use when you need to subscribe to event sources (Redis Streams + webhook JSONL)
+  and wake an agent only when matching events arrive. Covers filtering, dedupe, retry, and session routing via sessions_send/agent_gate.
+metadata:
+  author: solitaire2015
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - event
+  - watcher
+  source: clawhub-community
+  clawhub_slug: event-watcher
+  clawhub_path: solitaire2015/event-watcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Event-Watcher
+
+    # Source: ClawHub community skill by solitaire2015
+
+    # Install: clawhub install event-watcher
+
+    # Path: solitaire2015/event-watcher
+
+
+    ## Description
+
+    Event watcher skill for OpenClaw. Use when you need to subscribe to event sources (Redis Streams + webhook JSONL) and
+    wake an agent only when matching events arrive. Covers filtering, dedupe, retry, and session routing via sessions_send/agent_gate.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/event_watcher.yaml
+
+    - examples/webhook_watcher.yaml
+
+    - references/CONFIG.md
+
+    - scripts/filter_rules.py
+
+    - scripts/requirements.txt
+
+    - scripts/utils.py
+
+    - scripts/watcher.py
+
+    - scripts/webhook_bridge.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install event-watcher
+
+    ```'
+examples:
+- description: Install Event-Watcher from ClawHub
+  usage: clawhub install event-watcher
+schema_version: '1.0'

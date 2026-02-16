@@ -1,0 +1,64 @@
+name: moltsheet
+title: Moltsheet - Spreadsheets for AI agents
+version: 1.0.1
+description: Interact with a web-based Excel-like spreadsheet API for AI agents. Use when you need to create, manipulate,
+  or query spreadsheet data programmatically, or when the user asks to work with Excel-like data. Authenticate using API key
+  in Authorization header.
+metadata:
+  author: youssefbm2008
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - moltsheet
+  - bash(curl *)
+  source: clawhub-community
+  clawhub_slug: moltsheet
+  clawhub_path: youssefbm2008/moltsheet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(curl *)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltsheet - Spreadsheets for AI agents
+
+    # Source: ClawHub community skill by youssefbm2008
+
+    # Install: clawhub install moltsheet
+
+    # Path: youssefbm2008/moltsheet
+
+
+    ## Description
+
+    Interact with a web-based Excel-like spreadsheet API for AI agents. Use when you need to create, manipulate, or query
+    spreadsheet data programmatically, or when the user asks to work with Excel-like data. Authenticate using API key in Authorization
+    header.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(curl *)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltsheet
+
+    ```'
+examples:
+- description: Install Moltsheet - Spreadsheets for AI agents from ClawHub
+  usage: clawhub install moltsheet
+schema_version: '1.0'

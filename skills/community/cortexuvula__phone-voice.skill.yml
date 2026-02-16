@@ -1,0 +1,56 @@
+name: phone-voice
+title: Phone Voice Integration
+version: 2.0.0
+description: Connect ElevenLabs Agents to your OpenClaw via phone with Twilio. Includes caller ID auth, voice PIN security,
+  call screening, memory injection, and cost tracking.
+metadata:
+  author: cortexuvula
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - phone
+  - voice
+  source: clawhub-community
+  clawhub_slug: phone-voice
+  clawhub_path: cortexuvula/phone-voice
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Phone Voice Integration
+
+    # Source: ClawHub community skill by cortexuvula
+
+    # Install: clawhub install phone-voice
+
+    # Path: cortexuvula/phone-voice
+
+
+    ## Description
+
+    Connect ElevenLabs Agents to your OpenClaw via phone with Twilio. Includes caller ID auth, voice PIN security, call screening,
+    memory injection, and cost tracking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install phone-voice
+
+    ```'
+examples:
+- description: Install Phone Voice Integration from ClawHub
+  usage: clawhub install phone-voice
+schema_version: '1.0'

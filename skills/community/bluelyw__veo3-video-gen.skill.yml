@@ -1,0 +1,61 @@
+name: veo3-video-gen
+title: Veo 3 Video Gen (Gemini API)
+version: 0.1.0
+description: Generate and stitch short videos via Google Veo 3.x using the Gemini API (google-genai). Use when you need to
+  create video clips from prompts (ads, UGC-style clips, product demos) and want a reproducible CLI workflow (generate, poll,
+  download MP4, optionally stitch multiple segments).
+metadata:
+  author: bluelyw
+  category: Search & Research
+  tags:
+  - search-research
+  - veo3
+  - video
+  - gen
+  source: clawhub-community
+  clawhub_slug: veo3-video-gen
+  clawhub_path: bluelyw/veo3-video-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Veo 3 Video Gen (Gemini API)
+
+    # Source: ClawHub community skill by bluelyw
+
+    # Install: clawhub install veo3-video-gen
+
+    # Path: bluelyw/veo3-video-gen
+
+
+    ## Description
+
+    Generate and stitch short videos via Google Veo 3.x using the Gemini API (google-genai). Use when you need to create video
+    clips from prompts (ads, UGC-style clips, product demos) and want a reproducible CLI workflow (generate, poll, download
+    MP4, optionally stitch multiple segments).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_video.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install veo3-video-gen
+
+    ```'
+examples:
+- description: Install Veo 3 Video Gen (Gemini API) from ClawHub
+  usage: clawhub install veo3-video-gen
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: book-wedding
+title: Book Wedding
+version: 1.0.1
+description: Book wedding services through Lokuli MCP. Use when user needs to find and book wedding. Triggers on requests
+  like "book a wedding", "find wedding near me", or any wedding service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - wedding
+  source: clawhub-community
+  clawhub_slug: book-wedding
+  clawhub_path: edwardrodriguez703-design/book-wedding
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Wedding
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-wedding
+
+    # Path: edwardrodriguez703-design/book-wedding
+
+
+    ## Description
+
+    Book wedding services through Lokuli MCP. Use when user needs to find and book wedding. Triggers on requests like "book
+    a wedding", "find wedding near me", or any wedding service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-wedding
+
+    ```'
+examples:
+- description: Install Book Wedding from ClawHub
+  usage: clawhub install book-wedding
+schema_version: '1.0'

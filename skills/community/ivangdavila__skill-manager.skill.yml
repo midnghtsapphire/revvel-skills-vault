@@ -1,0 +1,58 @@
+name: _skill_manager_
+title: Skill Manager
+version: 1.0.0
+description: '"Proactively discovers and manages skills. Tracks what''s installed and suggests improvements."'
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - '"skill'
+  - manager"
+  source: clawhub-community
+  clawhub_slug: skill-manager
+  clawhub_path: ivangdavila/skill-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Manager
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install skill-manager
+
+    # Path: ivangdavila/skill-manager
+
+
+    ## Description
+
+    "Proactively discovers and manages skills. Tracks what''s installed and suggests improvements."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - criteria.md
+
+    - dimensions.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-manager
+
+    ```'
+examples:
+- description: Install Skill Manager from ClawHub
+  usage: clawhub install skill-manager
+schema_version: '1.0'

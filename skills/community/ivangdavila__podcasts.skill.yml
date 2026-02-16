@@ -1,0 +1,63 @@
+name: podcasts
+title: Podcasts
+version: 1.0.0
+description: Track and synthesize podcasts with subscriptions, briefings, progress tracking, and smart alerts for new episodes
+  and guests.
+metadata:
+  author: ivangdavila
+  category: Media & Content
+  tags:
+  - media-content
+  - podcasts
+  source: clawhub-community
+  clawhub_slug: podcasts
+  clawhub_path: ivangdavila/podcasts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Podcasts
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install podcasts
+
+    # Path: ivangdavila/podcasts
+
+
+    ## Description
+
+    Track and synthesize podcasts with subscriptions, briefings, progress tracking, and smart alerts for new episodes and
+    guests.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - briefings.md
+
+    - discovery.md
+
+    - learning.md
+
+    - youtube.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install podcasts
+
+    ```'
+examples:
+- description: Install Podcasts from ClawHub
+  usage: clawhub install podcasts
+schema_version: '1.0'

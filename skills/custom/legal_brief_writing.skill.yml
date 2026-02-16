@@ -1,0 +1,317 @@
+name: legal_brief_writing
+title: Legal Brief Writing
+version: 1.0.0
+description: Advanced legal brief writing skill for drafting motions, appellate briefs, memoranda, and legal arguments with
+  Bluebook citation formatting and persuasive writing techniques
+metadata:
+  author: Revvel AI Engine
+  category: Legal & Compliance
+  tags:
+  - motion-drafting
+  - appellate-brief-construction
+  - citation-formatting-bluebook
+  - issue-spotting-and-framing
+  - writing
+  - statement-of-facts-drafting
+  - legal-argument-construction
+  - memorandum-of-law-drafting
+  - persuasive-writing-enhancement
+  - legal
+  - brief
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport hashlib\nimport datetime\nimport statistics\nimport math\nfrom typing\
+    \ import Dict, List, Optional, Any, Tuple\nfrom collections import defaultdict, Counter\nimport unittest\nimport logging\n\
+    \nSKILL_METADATA = {\n    \"name\": \"Legal Brief Writing\",\n    \"id\": \"legal_brief_writing\",\n    \"version\": \"\
+    1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Advanced legal brief writing skill for drafting\
+    \ motions, appellate briefs, memoranda, and legal arguments with Bluebook citation formatting and persuasive writing techniques\"\
+    ,\n    \"capabilities\": [\n        \"motion_drafting\",\n        \"appellate_brief_construction\",\n        \"memorandum_of_law_drafting\"\
+    ,\n        \"legal_argument_construction\",\n        \"citation_formatting_bluebook\",\n        \"persuasive_writing_enhancement\"\
+    ,\n        \"statement_of_facts_drafting\",\n        \"issue_spotting_and_framing\",\n        \"legal_research_integration\"\
+    ,\n        \"brief_structure_optimization\"\n    ],\n    \"domain\": \"legal_writing_and_advocacy\"\n}\n\nEXPERT_PROMPTS\
+    \ = {\n    \"motion_drafting\": \"\"\"\nYou are a senior litigation attorney drafting a {motion_type} motion for {court_name}.\n\
+    Case: {case_name}\nProcedural posture: {procedural_posture}\nKey facts: {key_facts}\nLegal issues: {legal_issues}\nDesired\
+    \ outcome: {desired_outcome}\n\nDraft a compelling motion that includes:\n1. Caption and title\n2. Introduction with clear\
+    \ statement of relief sought\n3. Statement of facts (persuasive but accurate)\n4. Legal argument with supporting authorities\n\
+    5. Conclusion with specific prayer for relief\n\nTone: {tone} (persuasive/professional/forceful)\nTarget length: {target_length}\
+    \ pages\n\"\"\",\n    \n    \"appellate_brief\": \"\"\"\nDraft an appellate brief as {appellant_respondent} in {court_name}.\n\
+    Lower court: {lower_court_name}\nJudgment appealed: {judgment_appealed}\nStandard of review: {standard_of_review}\n\n\
+    Case facts: {case_facts}\nErrors assigned: {assigned_errors}\nPrecedent cases: {precedent_cases}\n\nStructure requirements:\n\
+    - Questions presented (clear, concise, favorable)\n- Statement of the case (procedural history)\n- Statement of facts\
+    \ (with record citations)\n- Summary of argument\n- Argument (with headings and subheadings)\n- Conclusion\n\nWord limit:\
+    \ {word_limit}\n\"\"\",\n    \n    \"legal_memorandum\": \"\"\"\nPrepare a legal memorandum analyzing: {legal_question}\n\
+    Client: {client_name}\nJurisdiction: {jurisdiction}\nApplicable law: {applicable_law}\n\nKnown facts: {known_facts}\n\
+    Research findings: {research_findings}\n\nFormat:\n1. Heading (TO, FROM, DATE, RE)\n2. Question presented\n3. Brief answer\n\
+    4. Statement of facts\n5. Discussion (IRAC format)\n6. Conclusion\n\nObjective analysis required - present both sides.\n\
+    \"\"\",\n    \n    \"citation_formatting\": \"\"\"\nFormat the following citations according to Bluebook 21st edition:\n\
+    Raw citations: {raw_citations}\nDocument type: {document_type}\nCourt: {court_name}\nYear: {year}\n\nEnsure proper:\n\
+    - Case name formatting\n- Reporter abbreviations\n- Pinpoint citations\n- Parenthetical information\n- Signals and order\n\
+    \"\"\",\n    \n    \"statement_of_facts\": \"\"\"\nDraft a statement of facts for {document_type} in {case_name}.\nRaw\
+    \ facts from client: {raw_facts}\nKey legal issues: {legal_issues}\nProcedural posture: {procedural_posture}\n\nGuidelines:\n\
+    - Tell a coherent story\n- Emphasize favorable facts\n- Include unfavorable facts strategically\n- Use active voice\n\
+    - Include dates and specifics\n- Cite to record when possible\nTone: {tone}\n\"\"\",\n    \n    \"issue_spotting\": \"\
+    \"\"\nAnalyze the following fact pattern and identify all legal issues:\nFact pattern: {fact_pattern}\nJurisdiction: {jurisdiction}\n\
+    Area of law: {area_of_law}\n\nFor each issue identified:\n1. State the issue as a question\n2. Identify governing law\n\
+    3. Note key facts bearing on issue\n4. Suggest additional facts needed\n5. Assess strength of potential claims/defenses\n\
+    \"\"\",\n    \n    \"persuasive_argument\": \"\"\"\nConstruct a persuasive legal argument for {position} on:\nLegal issue:\
+    \ {legal_issue}\nApplicable law: {applicable_law}\nKey facts: {key_facts}\nPrecedent: {precedent_cases}\n\nArgument structure:\n\
+    1. Strong opening (theme)\n2. Rule statement and explanation\n3. Application to facts\n4. Policy arguments\n5. Distinguish\
+    \ adverse authority\n6. Compelling conclusion\n\nTarget audience: {audience}\nArgument length: {length}\n\"\"\",\n   \
+    \ \n    \"brief_optimization\": \"\"\"\nReview and optimize this legal brief:\nDraft brief: {draft_brief}\nDocument type:\
+    \ {document_type}\nTarget court: {target_court}\nJudge preferences: {judge_preferences}\n\nImprove:\n1. Clarity and concision\n\
+    2. Logical flow\n3. Persuasive impact\n4. Citation accuracy\n5. Formatting compliance\n6. Strength of arguments\n\nProvide\
+    \ specific revision suggestions and rewritten sections.\n\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"court_listener_api\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://www.courtlistener.com/api/rest/v3/\",\n        \"description\"\
+    : \"Access to federal and state court opinions for citation and research\",\n        \"auth_method\": \"token\",\n   \
+    \     \"documentation_url\": \"https://www.courtlistener.com/api/\"\n    },\n    \"bluebook_citation_db\": {\n       \
+    \ \"type\": \"database\",\n        \"endpoint\": \"internal://citations/bluebook\",\n        \"description\": \"Internal\
+    \ database of Bluebook citation rules and examples\",\n        \"auth_method\": \"internal\",\n        \"documentation_url\"\
+    : \"internal://docs/citations\"\n    },\n    \"legal_templates_db\": {\n        \"type\": \"database\",\n        \"endpoint\"\
+    : \"internal://templates/legal\",\n        \"description\": \"Repository of legal document templates and forms\",\n  \
+    \      \"auth_method\": \"internal\",\n        \"documentation_url\": \"internal://docs/templates\"\n    },\n    \"case_law_retriever\"\
+    : {\n        \"type\": \"tool\",\n        \"endpoint\": \"internal://tools/case_retrieval\",\n        \"description\"\
+    : \"Tool for retrieving relevant case law based on legal issues\",\n        \"auth_method\": \"internal\",\n        \"\
+    documentation_url\": \"internal://docs/case_retrieval\"\n    },\n    \"citation_validator\": {\n        \"type\": \"tool\"\
+    ,\n        \"endpoint\": \"internal://tools/citation_validator\",\n        \"description\": \"Validates and corrects legal\
+    \ citations per Bluebook rules\",\n        \"auth_method\": \"internal\",\n        \"documentation_url\": \"internal://docs/citation_validator\"\
+    \n    }\n}\n\ndef parse_case_citation(citation: str) -> Dict[str, Any]:\n    \"\"\"Parse a case citation into component\
+    \ parts.\n    \n    Args:\n        citation: Raw case citation string\n        \n    Returns:\n        Dict with case_name,\
+    \ volume, reporter, page, year, court\n    \"\"\"\n    patterns = [\n        r'(.+?)\\s*,?\\s*(\\d+)\\s+([A-Z]\\.\\s?[A-Z]?\\\
+    .?[A-Z]?\\.?)\\s+(\\d+)\\s*(?:\\(([^)]+)\\))?',\n        r'(.+?)\\s*,?\\s*(\\d+)\\s+([A-Z]\\.\\s?[A-Z]?\\.?[A-Z]?\\.?)\\\
+    s+(\\d+)\\s*\\((\\d{4})\\)'\n    ]\n    \n    for pattern in patterns:\n        match = re.search(pattern, citation)\n\
+    \        if match:\n            return {\n                'case_name': match.group(1).strip(),\n                'volume':\
+    \ match.group(2),\n                'reporter': match.group(3),\n                'page': match.group(4),\n            \
+    \    'year': match.group(5) if len(match.groups()) > 4 else None,\n                'court': None\n            }\n    \n\
+    \    return {'case_name': citation, 'volume': None, 'reporter': None, 'page': None, 'year': None, 'court': None}\n\ndef\
+    \ format_bluebook_citation(case_info: Dict[str, Any]) -> str:\n    \"\"\"Format case citation according to Bluebook rules.\n\
+    \    \n    Args:\n        case_info: Dict with case_name, volume, reporter, page, year, court\n        \n    Returns:\n\
+    \        Properly formatted Bluebook citation\n    \"\"\"\n    case_name = case_info.get('case_name', '').strip()\n  \
+    \  volume = case_info.get('volume', '')\n    reporter = case_info.get('reporter', '')\n    page = case_info.get('page',\
+    \ '')\n    year = case_info.get('year', '')\n    court = case_info.get('court', '')\n    \n    if not all([case_name,\
+    \ volume, reporter, page]):\n        return case_name\n    \n    citation = f\"{case_name}, {volume} {reporter} {page}\"\
+    \n    \n    if year:\n        if court:\n            citation += f\" ({court} {year})\"\n        else:\n            citation\
+    \ += f\" ({year})\"\n    \n    return citation\n\ndef extract_legal_issues(text: str) -> List[Dict[str, Any]]:\n    \"\
+    \"\"Extract potential legal issues from text.\n    \n    Args:\n        text: Input text to analyze\n        \n    Returns:\n\
+    \        List of dicts with issue descriptions and confidence scores\n    \"\"\"\n    issue_patterns = {\n        'negligence':\
+    \ r'\\b(negligence|negligent|duty of care|breach of duty)\\b',\n        'contract': r'\\b(contract|breach of contract|agreement|consideration)\\\
+    b',\n        'constitutional': r'\\b(constitutional|first amendment|due process|equal protection)\\b',\n        'employment':\
+    \ r'\\b(employment|wrongful termination|discrimination|harassment)\\b',\n        'property': r'\\b(property|real estate|landlord|tenant|easement)\\\
+    b',\n        'criminal': r'\\b(crime|criminal|felony|misdemeanor|arrest|conviction)\\b',\n        'tort': r'\\b(tort|personal\
+    \ injury|damages|liability)\\b',\n        'procedure': r'\\b(motion|discovery|summary judgment|dismissal)\\b'\n    }\n\
+    \    \n    issues = []\n    text_lower = text.lower()\n    \n    for issue_type, pattern in issue_patterns.items():\n\
+    \        matches = re.findall(pattern, text_lower, re.IGNORECASE)\n        if matches:\n            confidence = min(len(matches)\
+    \ / 3, 1.0)\n            issues.append({\n                'issue_type': issue_type,\n                'mentions': len(matches),\n\
+    \                'confidence': confidence,\n                'context': matches[:2]\n            })\n    \n    return sorted(issues,\
+    \ key=lambda x: x['confidence'], reverse=True)\n\ndef calculate_brief_score(brief_text: str) -> Dict[str, float]:\n  \
+    \  \"\"\"Calculate quality metrics for a legal brief.\n    \n    Args:\n        brief_text: The brief text to evaluate\n\
+    \        \n    Returns:\n        Dict with various quality scores\n    \"\"\"\n    scores = {}\n    \n    word_count =\
+    \ len(brief_text.split())\n    scores['word_count'] = word_count\n    \n    sentence_count = len(re.findall(r'[.!?]+',\
+    \ brief_text))\n    scores['avg_sentence_length'] = word_count / max(sentence_count, 1)\n    \n    paragraph_count = len([p\
+    \ for p in brief_text.split('\\n\\n') if p.strip()])\n    scores['avg_paragraph_length'] = word_count / max(paragraph_count,\
+    \ 1)\n    \n    citation_count = len(re.findall(r'\\d+\\s+[A-Z]\\.\\s?[A-Z]?\\.?[A-Z]?\\.?\\s+\\d+', brief_text))\n  \
+    \  scores['citation_density'] = citation_count / max(word_count, 1) * 1000\n    \n    passive_voice = len(re.findall(r'\\\
+    b(was|were|been|being|is|are)\\s+\\w+ed\\b', brief_text, re.IGNORECASE))\n    scores['passive_voice_ratio'] = passive_voice\
+    \ / max(word_count, 1)\n    \n    transition_words = ['however', 'furthermore', 'moreover', 'therefore', 'thus', 'consequently',\
+    \ 'nevertheless']\n    transition_count = sum(1 for word in transition_words if word in brief_text.lower())\n    scores['transition_usage']\
+    \ = transition_count / max(paragraph_count, 1)\n    \n    return scores\n\ndef generate_issue_statement(facts: str, legal_area:\
+    \ str) -> str:\n    \"\"\"Generate a well-framed legal issue statement.\n    \n    Args:\n        facts: Case facts\n\
+    \        legal_area: Area of law (e.g., 'contract', 'tort', 'constitutional')\n        \n    Returns:\n        Properly\
+    \ framed issue statement\n    \"\"\"\n    templates = {\n        'contract': \"Whether {party} breached the contract by\
+    \ {action} when {facts}?\",\n        'tort': \"Whether {party} is liable for {tort_type} based on {facts}?\",\n      \
+    \  'constitutional': \"Whether {law_action} violates the {amendment} Amendment's {clause} clause?\",\n        'criminal':\
+    \ \"Whether the evidence is sufficient to support a conviction for {crime}?\",\n        'procedure': \"Whether the trial\
+    \ court erred by {ruling}?\"\n    }\n    \n    template = templates.get(legal_area, \"Whether {party} {action} based on\
+    \ {facts}?\")\n    \n    party_match = re.search(r'\\b(\\w+)\\s+(?:defendant|plaintiff|appellant|respondent)\\b', facts,\
+    \ re.IGNORECASE)\n    party = party_match.group(1) if party_match else \"the defendant\"\n    \n    action_match = re.search(r'\\\
+    b(\\w+ed|\\w+ing)\\b', facts)\n    action = action_match.group(1) if action_match else \"acting\"\n    \n    facts_summary\
+    \ = ' '.join(facts.split()[:20]) + '...' if len(facts.split()) > 20 else facts\n    \n    return template.format(party=party,\
+    \ action=action, facts=facts_summary, \n                          tort_type=\"negligence\", amendment=\"First\", clause=\"\
+    Due Process\",\n                          crime=\"the charged offense\", ruling=\"granting summary judgment\")\n\ndef\
+    \ validate_citations(text: str) -> List[Dict[str, Any]]:\n    \"\"\"Validate legal citations in text.\n    \n    Args:\n\
+    \        text: Text containing citations\n        \n    Returns:\n        List of validation results for each citation\n\
+    \    \"\"\"\n    citation_pattern = r'\\d+\\s+[A-Z]\\.\\s?[A-Z]?\\.?[A-Z]?\\.?\\s+\\d+(?:\\s*\\([^)]*\\))?'\n    citations\
+    \ = re.findall(citation_pattern, text)\n    \n    results = []\n    for citation in citations:\n        parsed = parse_case_citation(citation)\n\
+    \        is_valid = all([parsed['volume'], parsed['reporter'], parsed['page']])\n        \n        results.append({\n\
+    \            'original': citation,\n            'parsed': parsed,\n            'is_valid': is_valid,\n            'formatted':\
+    \ format_bluebook_citation(parsed) if is_valid else citation\n        })\n    \n    return results\n\ndef create_brief_outline(issues:\
+    \ List[str], court_rules: Dict[str, Any]) -> Dict[str, Any]:\n    \"\"\"Create a structured outline for a legal brief.\n\
+    \    \n    Args:\n        issues: List of legal issues to address\n        court_rules: Court-specific formatting rules\n\
+    \        \n    Returns:\n        Structured brief outline\n    \"\"\"\n    outline = {\n        'caption': {\n       \
+    \     'court': court_rules.get('court_name', 'Court'),\n            'title': 'Brief Outline',\n            'case_number':\
+    \ '[Case Number]'\n        },\n        'sections': []\n    }\n    \n    required_sections = court_rules.get('required_sections',\
+    \ [\n        'Questions Presented',\n        'Statement of the Case',\n        'Statement of Facts',\n        'Summary\
+    \ of Argument',\n        'Argument',\n        'Conclusion'\n    ])\n    \n    for section in required_sections:\n    \
+    \    section_outline = {\n            'name': section,\n            'subsections': []\n        }\n        \n        if\
+    \ section == 'Argument':\n            for i, issue in enumerate(issues, 1):\n                section_outline['subsections'].append({\n\
+    \                    'heading': f\"{i}. {issue}\",\n                    'content': f\"[Argument regarding {issue}]\"\n\
+    \                })\n        \n        outline['sections'].append(section_outline)\n    \n    return outline\n\ndef optimize_persuasive_language(text:\
+    \ str, audience: str = 'court') -> str:\n    \"\"\"Optimize text for persuasive impact.\n    \n    Args:\n        text:\
+    \ Original text\n        audience: Target audience ('court', 'client', 'opposing_counsel')\n        \n    Returns:\n \
+    \       Enhanced persuasive text\n    \"\"\"\n    weak_phrases = {\n        'it seems that': 'it is clear that',\n   \
+    \     'it appears': 'the evidence demonstrates',\n        'might be': 'is',\n        'could possibly': 'does',\n     \
+    \   'perhaps': 'certainly',\n        'somewhat': '',\n        'rather': '',\n        'quite': ''\n    }\n    \n    enhanced\
+    \ = text\n    for weak, strong in weak_phrases.items():\n        enhanced = re.sub(rf'\\b{weak}\\b', strong, enhanced,\
+    \ flags=re.IGNORECASE)\n    \n    if audience == 'court':\n        enhanced = re.sub(r'\\bwe believe\\b', 'the evidence\
+    \ shows', enhanced, flags=re.IGNORECASE)\n        enhanced = re.sub(r'\\bwe think\\b', 'this Court should find', enhanced,\
+    \ flags=re.IGNORECASE)\n    elif audience == 'opposing_counsel':\n        enhanced = re.sub(r'\\bwe believe\\b', 'the\
+    \ law requires', enhanced, flags=re.IGNORECASE)\n    \n    return enhanced\n\ndef calculate_readability_score(text: str)\
+    \ -> Dict[str, float]:\n    \"\"\"Calculate readability metrics for legal writing.\n    \n    Args:\n        text: Text\
+    \ to analyze\n        \n    Returns:\n        Dict with readability scores\n    \"\"\"\n    sentences = re.split(r'[.!?]+',\
+    \ text)\n    sentences = [s.strip() for s in sentences if s.strip()]\n    \n    words = text.split()\n    syllables =\
+    \ 0\n    \n    for word in words:\n        word = word.lower().strip('.,!?\";')\n        syllable_count = max(1, len(re.findall(r'[aeiouy]+',\
+    \ word)))\n        syllables += syllable_count\n    \n    avg_sentence_length = len(words) / max(len(sentences), 1)\n\
+    \    avg_syllables_per_word = syllables / max(len(words), 1)\n    \n    flesch_reading_ease = 206.835 - (1.015 * avg_sentence_length)\
+    \ - (84.6 * avg_syllables_per_word)\n    flesch_kincaid_grade = (0.39 * avg_sentence_length) + (11.8 * avg_syllables_per_word)\
+    \ - 15.59\n    \n    return {\n        'flesch_reading_ease': flesch_reading_ease,\n        'flesch_kincaid_grade': flesch_kincaid_grade,\n\
+    \        'avg_sentence_length': avg_sentence_length,\n        'avg_syllables_per_word': avg_syllables_per_word\n    }\n\
+    \nclass SkillEngine:\n    \"\"\"Main engine for legal brief writing skill.\"\"\"\n    \n    def __init__(self, config:\
+    \ Dict[str, Any]):\n        \"\"\"Initialize the skill engine.\n        \n        Args:\n            config: Configuration\
+    \ dictionary\n        \"\"\"\n        self.config = config\n        self.logger = logging.getLogger(__name__)\n      \
+    \  self.court_rules = config.get('court_rules', {})\n        self.default_tone = config.get('default_tone', 'professional')\n\
+    \        \n    def draft_motion(self, motion_type: str, case_info: Dict[str, Any], **kwargs) -> str:\n        \"\"\"Draft\
+    \ a legal motion.\n        \n        Args:\n            motion_type: Type of motion to draft\n            case_info: Case\
+    \ information dictionary\n            **kwargs: Additional parameters\n            \n        Returns:\n            Drafted\
+    \ motion text\n        \"\"\"\n        prompt = EXPERT_PROMPTS['motion_drafting'].format(\n            motion_type=motion_type,\n\
+    \            court_name=case_info.get('court', 'Court'),\n            case_name=case_info.get('case_name', 'Case'),\n\
+    \            procedural_posture=case_info.get('procedural_posture', ''),\n            key_facts=case_info.get('key_facts',\
+    \ ''),\n            legal_issues=case_info.get('legal_issues', ''),\n            desired_outcome=case_info.get('desired_outcome',\
+    \ ''),\n            tone=kwargs.get('tone', self.default_tone),\n            target_length=kwargs.get('target_length',\
+    \ '5-10')\n        )\n        \n        return f\"DRAFT MOTION:\\n{prompt}\\n\\n[This would be replaced with actual LLM\
+    \ output]\"\n    \n    def draft_appellate_brief(self, brief_info: Dict[str, Any], **kwargs) -> str:\n        \"\"\"Draft\
+    \ an appellate brief.\n        \n        Args:\n            brief_info: Brief information dictionary\n            **kwargs:\
+    \ Additional parameters\n            \n        Returns:\n            Drafted appellate brief text\n        \"\"\"\n  \
+    \      prompt = EXPERT_PROMPTS['appellate_brief'].format(\n            appellant_respondent=brief_info.get('party_role',\
+    \ 'Appellant'),\n            court_name=brief_info.get('court', 'Court of Appeals'),\n            lower_court_name=brief_info.get('lower_court',\
+    \ 'Trial Court'),\n            judgment_appealed=brief_info.get('judgment', 'Judgment'),\n            standard_of_review=brief_info.get('standard_of_review',\
+    \ 'De novo'),\n            case_facts=brief_info.get('facts', ''),\n            assigned_errors=brief_info.get('errors',\
+    \ ''),\n            precedent_cases=brief_info.get('precedent', ''),\n            word_limit=kwargs.get('word_limit',\
+    \ '14000')\n        )\n        \n        return f\"DRAFT APPELLATE BRIEF:\\n{prompt}\\n\\n[This would be replaced with\
+    \ actual LLM output]\"\n    \n    def format_citations(self, text: str, citation_style: str = 'bluebook') -> str:\n  \
+    \      \"\"\"Format citations in text according to specified style.\n        \n        Args:\n            text: Text containing\
+    \ citations\n            citation_style: Citation style to use\n            \n        Returns:\n            Text with\
+    \ properly formatted citations\n        \"\"\"\n        if citation_style != 'bluebook':\n            return text\n  \
+    \          \n        validation_results = validate_citations(text)\n        \n        formatted_text = text\n        for\
+    \ result in validation_results:\n            if result['is_valid'] and result['original'] != result['formatted']:\n  \
+    \              formatted_text = formatted_text.replace(result['original'], result['formatted'])\n        \n        return\
+    \ formatted_text\n    \n    def analyze_legal_issues(self, fact_pattern: str, jurisdiction: str = 'federal') -> List[Dict[str,\
+    \ Any]]:\n        \"\"\"Analyze fact pattern and identify legal issues.\n        \n        Args:\n            fact_pattern:\
+    \ Facts to analyze\n            jurisdiction: Jurisdiction for analysis\n            \n        Returns:\n            List\
+    \ of identified legal issues\n        \"\"\"\n        return extract_legal_issues(fact_pattern)\n    \n    def optimize_brief_quality(self,\
+    \ brief_text: str, **kwargs) -> Dict[str, Any]:\n        \"\"\"Analyze and optimize brief quality.\n        \n       \
+    \ Args:\n            brief_text: Brief text to analyze\n            **kwargs: Additional parameters\n            \n  \
+    \      Returns:\n            Quality analysis and recommendations\n        \"\"\"\n        scores = calculate_brief_score(brief_text)\n\
+    \        readability = calculate_readability_score(brief_text)\n        \n        recommendations = []\n        \n   \
+    \     if scores['avg_sentence_length'] > 25:\n            recommendations.append(\"Consider shorter sentences for clarity\"\
+    )\n        \n        if scores['passive_voice_ratio'] > 0.05:\n            recommendations.append(\"Reduce passive voice\
+    \ usage\")\n        \n        if readability['flesch_reading_ease'] < 30:\n            recommendations.append(\"Simplify\
+    \ language for better readability\")\n        \n        if scores['citation_density'] < 2:\n            recommendations.append(\"\
+    Add more supporting citations\")\n        \n        return {\n            'scores': scores,\n            'readability':\
+    \ readability,\n            'recommendations': recommendations,\n            'quality_grade': self._calculate_quality_grade(scores,\
+    \ readability)\n        }\n    \n    def generate_legal_argument(self, issue: str, position: str, supporting_authorities:\
+    \ List[str]) -> str:\n        \"\"\"Generate a persuasive legal argument.\n        \n        Args:\n            issue:\
+    \ Legal issue to address\n            position: Position to argue\n            supporting_authorities: List of supporting\
+    \ cases/statutes\n            \n        Returns:\n            Generated legal argument\n        \"\"\"\n        prompt\
+    \ = EXPERT_PROMPTS['persuasive_argument'].format(\n            position=position,\n            legal_issue=issue,\n  \
+    \          applicable_law='[Applicable law would be inserted]',\n            key_facts='[Key facts would be inserted]',\n\
+    \            precedent_cases=', '.join(supporting_authorities[:3]),\n            audience='court',\n            length='medium'\n\
+    \        )\n        \n        return f\"LEGAL ARGUMENT:\\n{prompt}\\n\\n[This would be replaced with actual LLM output]\"\
+    \n    \n    def create_brief_template(self, document_type: str, court: str, issues: List[str]) -> Dict[str, Any]:\n  \
+    \      \"\"\"Create a template for a specific type of brief.\n        \n        Args:\n            document_type: Type\
+    \ of brief\n            court: Target court\n            issues: Legal issues to address\n            \n        Returns:\n\
+    \            Brief template structure\n        \"\"\"\n        court_rules = self.court_rules.get(court, {})\n       \
+    \ return create_brief_outline(issues, court_rules)\n    \n    def enhance_persuasive_writing(self, text: str, audience:\
+    \ str = 'court') -> str:\n        \"\"\"Enhance text for persuasive impact.\n        \n        Args:\n            text:\
+    \ Text to enhance\n            audience: Target audience\n            \n        Returns:\n            Enhanced persuasive\
+    \ text\n        \"\"\"\n        return optimize_persuasive_language(text, audience)\n    \n    def run(self, capability:\
+    \ str, **kwargs) -> Any:\n        \"\"\"Run the specified capability.\n        \n        Args:\n            capability:\
+    \ Capability to execute\n            **kwargs: Parameters for the capability\n            \n        Returns:\n       \
+    \     Result of the capability execution\n        \"\"\"\n        try:\n            if capability == 'motion_drafting':\n\
+    \                return self.draft_motion(kwargs['motion_type'], kwargs['case_info'], **kwargs)\n            elif capability\
+    \ == 'appellate_brief_construction':\n                return self.draft_appellate_brief(kwargs['brief_info'], **kwargs)\n\
+    \            elif capability == 'citation_formatting_bluebook':\n                return self.format_citations(kwargs['text'],\
+    \ kwargs.get('style', 'bluebook'))\n            elif capability == 'issue_spotting_and_framing':\n                return\
+    \ self.analyze_legal_issues(kwargs['fact_pattern'], kwargs.get('jurisdiction', 'federal'))\n            elif capability\
+    \ == 'brief_structure_optimization':\n                return self.optimize_brief_quality(kwargs['brief_text'], **kwargs)\n\
+    \            elif capability == 'legal_argument_construction':\n                return self.generate_legal_argument(kwargs['issue'],\
+    \ kwargs['position'], kwargs['authorities'])\n            elif capability == 'brief_template_creation':\n            \
+    \    return self.create_brief_template(kwargs['document_type'], kwargs['court'], kwargs['issues'])\n            elif capability\
+    \ == 'persuasive_writing_enhancement':\n                return self.enhance_persuasive_writing(kwargs['text'], kwargs.get('audience',\
+    \ 'court'))\n            else:\n                raise ValueError(f\"Unknown capability: {capability}\")\n            \
+    \    \n        except Exception as e:\n            self.logger.error(f\"Error running capability {capability}: {str(e)}\"\
+    )\n            raise\n    \n    def _calculate_quality_grade(self, scores: Dict[str, float], readability: Dict[str, float])\
+    \ -> str:\n        \"\"\"Calculate overall quality grade.\n        \n        Args:\n            scores: Brief quality\
+    \ scores\n            readability: Readability metrics\n            \n        Returns:\n            Letter grade\n   \
+    \     \"\"\"\n        grade_score = 100\n        \n        grade_score -= max(0, (scores['avg_sentence_length'] - 20)\
+    \ * 2)\n        grade_score -= max(0, scores['passive_voice_ratio'] * 500)\n        grade_score -= max(0, (30 - readability['flesch_reading_ease'])\
+    \ * 0.5)\n        \n        if grade_score >= 90:\n            return 'A'\n        elif grade_score >= 80:\n         \
+    \   return 'B'\n        elif grade_score >= 70:\n            return 'C'\n        elif grade_score >= 60:\n           \
+    \ return 'D'\n        else:\n            return 'F'\n\nclass TestLegalBriefWritingSkill(unittest.TestCase):\n    \"\"\"\
+    Test cases for Legal Brief Writing skill.\"\"\"\n    \n    def setUp(self):\n        \"\"\"Set up test fixtures.\"\"\"\
+    \n        self.config = {\n            'court_rules': {\n                'Supreme Court': {\n                    'required_sections':\
+    \ ['Questions Presented', 'Argument', 'Conclusion']\n                }\n            },\n            'default_tone': 'professional'\n\
+    \        }\n        self.engine = SkillEngine(self.config)\n    \n    def test_skill_metadata(self):\n        \"\"\"Test\
+    \ skill metadata validation.\"\"\"\n        self.assertEqual(SKILL_METADATA['name'], 'Legal Brief Writing')\n        self.assertEqual(SKILL_METADATA['id'],\
+    \ 'legal_brief_writing')\n        self.assertIn('motion_drafting', SKILL_METADATA['capabilities'])\n        self.assertGreater(len(SKILL_METADATA['capabilities']),\
+    \ 5)\n    \n    def test_parse_case_citation(self):\n        \"\"\"Test case citation parsing.\"\"\"\n        citation\
+    \ = \"Smith v. Jones, 123 F.3d 456 (2019)\"\n        parsed = parse_case_citation(citation)\n        self.assertEqual(parsed['case_name'],\
+    \ \"Smith v. Jones\")\n        self.assertEqual(parsed['volume'], \"123\")\n        self.assertEqual(parsed['reporter'],\
+    \ \"F.3d\")\n        self.assertEqual(parsed['page'], \"456\")\n        self.assertEqual(parsed['year'], \"2019\")\n \
+    \   \n    def test_format_bluebook_citation(self):\n        \"\"\"Test Bluebook citation formatting.\"\"\"\n        case_info\
+    \ = {\n            'case_name': 'Smith v. Jones',\n            'volume': '123',\n            'reporter': 'F.3d',\n   \
+    \         'page': '456',\n            'year': '2019'\n        }\n        formatted = format_bluebook_citation(case_info)\n\
+    \        self.assertEqual(formatted, 'Smith v. Jones, 123 F.3d 456 (2019)')\n    \n    def test_extract_legal_issues(self):\n\
+    \        \"\"\"Test legal issue extraction.\"\"\"\n        text = \"The defendant was negligent in operating the vehicle\
+    \ and breached the contract.\"\n        issues = extract_legal_issues(text)\n        self.assertGreater(len(issues), 0)\n\
+    \        issue_types = [issue['issue_type'] for issue in issues]\n        self.assertIn('negligence', issue_types)\n \
+    \       self.assertIn('contract', issue_types)\n    \n    def test_calculate_brief_score(self):\n        \"\"\"Test brief\
+    \ quality scoring.\"\"\"\n        text = \"This is a test brief. It contains some legal arguments and citations.\"\n \
+    \       scores = calculate_brief_score(text)\n        self.assertIn('word_count', scores)\n        self.assertIn('avg_sentence_length',\
+    \ scores)\n        self.assertIn('citation_density', scores)\n        self.assertGreaterEqual(scores['word_count'], 0)\n\
+    \    \n    def test_generate_issue_statement(self):\n        \"\"\"Test issue statement generation.\"\"\"\n        facts\
+    \ = \"The defendant breached the contract by failing to deliver goods.\"\n        statement = generate_issue_statement(facts,\
+    \ 'contract')\n        self.assertIn('Whether', statement)\n        self.assertIn('breached', statement)\n    \n    def\
+    \ test_validate_citations(self):\n        \"\"\"Test citation validation.\"\"\"\n        text = \"See Smith v. Jones,\
+    \ 123 F.3d 456 (2019).\"\n        results = validate_citations(text)\n        self.assertEqual(len(results), 1)\n    \
+    \    self.assertTrue(results[0]['is_valid'])\n    \n    def test_create_brief_outline(self):\n        \"\"\"Test brief\
+    \ outline creation.\"\"\"\n        issues = ['negligence', 'breach of contract']\n        rules = {'required_sections':\
+    \ ['Facts', 'Argument', 'Conclusion']}\n        outline = create_brief_outline(issues, rules)\n        self.assertIn('sections',\
+    \ outline)\n        self.assertGreater(len(outline['sections']), 0)\n    \n    def test_optimize_persuasive_language(self):\n\
+    \        \"\"\"Test persuasive language optimization.\"\"\"\n        text = \"It seems that the defendant was somewhat\
+    \ negligent.\"\n        optimized = optimize_persuasive_language(text)\n        self.assertNotIn('It seems that', optimized)\n\
+    \        self.assertNotIn('somewhat', optimized)\n    \n    def test_calculate_readability_score(self):\n        \"\"\"\
+    Test readability calculation.\"\"\"\n        text = \"This is a simple sentence. It is easy to read.\"\n        scores\
+    \ = calculate_readability_score(text)\n        self.assertIn('flesch_reading_ease', scores)\n        self.assertIn('flesch_kincaid_grade',\
+    \ scores)\n    \n    def test_skill_engine_initialization(self):\n        \"\"\"Test SkillEngine initialization.\"\"\"\
+    \n        self.assertIsInstance(self.engine, SkillEngine)\n        self.assertEqual(self.engine.default_tone, 'professional')\n\
+    \    \n    def test_skill_engine_motion_drafting(self):\n        \"\"\"Test motion drafting capability.\"\"\"\n      \
+    \  case_info = {\n            'court': 'District Court',\n            'case_name': 'Test v. Case',\n            'key_facts':\
+    \ 'Facts here',\n            'legal_issues': 'Issues here'\n        }\n        result = self.engine.run('motion_drafting',\
+    \ motion_type='summary_judgment', case_info=case_info)\n        self.assertIn('DRAFT MOTION', result)\n    \n    def test_skill_engine_citation_formatting(self):\n\
+    \        \"\"\"Test citation formatting capability.\"\"\"\n        text = \"Smith v. Jones, 123 F.3d 456\"\n        result\
+    \ = self.engine.run('citation_formatting_bluebook', text=text)\n        self.assertIn('Smith v. Jones', result)\n    \n\
+    \    def test_skill_engine_issue_analysis(self):\n        \"\"\"Test issue analysis capability.\"\"\"\n        fact_pattern\
+    \ = \"The defendant was negligent in driving.\"\n        result = self.engine.run('issue_spotting_and_framing', fact_pattern=fact_pattern)\n\
+    \        self.assertIsInstance(result, list)\n        self.assertGreater(len(result), 0)\n    \n    def test_skill_engine_brief_optimization(self):\n\
+    \        \"\"\"Test brief optimization capability.\"\"\"\n        brief_text = \"This is a test brief with some legal\
+    \ content.\"\n        result = self.engine.run('brief_structure_optimization', brief_text=brief_text)\n        self.assertIn('scores',\
+    \ result)\n        self.assertIn('recommendations', result)\n        self.assertIn('quality_grade', result)\n    \n  \
+    \  def test_skill_engine_error_handling(self):\n        \"\"\"Test error handling for unknown capability.\"\"\"\n    \
+    \    with self.assertRaises(ValueError):\n            self.engine.run('unknown_capability')\n    \n    def test_integration_points(self):\n\
+    \        \"\"\"Test integration points structure.\"\"\"\n        self.assertIn('court_listener_api', INTEGRATION_POINTS)\n\
+    \        self.assertIn('bluebook_citation_db', INTEGRATION_POINTS)\n        \n        for integration, config in INTEGRATION_POINTS.items():\n\
+    \            self.assertIn('type', config)\n            self.assertIn('endpoint', config)\n            self.assertIn('description',\
+    \ config)\n            self.assertIn('auth_method', config)\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Legal Brief Writing skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''legal_brief_writing'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

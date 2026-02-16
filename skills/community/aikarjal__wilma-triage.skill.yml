@@ -1,0 +1,58 @@
+name: wilma-triage
+title: Wilma Triage
+version: 1.0.0
+description: Daily triage of Wilma school notifications for Finnish parents. Fetches exams, messages, news, schedules, and
+  homework — filters for actionable items, syncs exams to Google Calendar, and reports via chat. Requires the `wilma` skill
+  and `gog` CLI (or `gog` skill from ClawHub) for calendar access.
+metadata:
+  author: aikarjal
+  category: Search & Research
+  tags:
+  - search-research
+  - wilma
+  - triage
+  source: clawhub-community
+  clawhub_slug: wilma-triage
+  clawhub_path: aikarjal/wilma-triage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wilma Triage
+
+    # Source: ClawHub community skill by aikarjal
+
+    # Install: clawhub install wilma-triage
+
+    # Path: aikarjal/wilma-triage
+
+
+    ## Description
+
+    Daily triage of Wilma school notifications for Finnish parents. Fetches exams, messages, news, schedules, and homework
+    — filters for actionable items, syncs exams to Google Calendar, and reports via chat. Requires the `wilma` skill and `gog`
+    CLI (or `gog` skill from ClawHub) for calendar access.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wilma-triage
+
+    ```'
+examples:
+- description: Install Wilma Triage from ClawHub
+  usage: clawhub install wilma-triage
+schema_version: '1.0'

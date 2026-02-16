@@ -1,0 +1,72 @@
+name: polymarket-btc15m
+title: Polymarket BTC Up-Down
+version: 1.0.3
+description: Trade Polymarket Bitcoin Up/Down 15-minute markets using TA signals. Supports Clawbot mode (dynamic sizing, TP/SL,
+  pre-settlement) or fixed mode. Use when checking signals, placing trades, or automating via private key.
+metadata:
+  author: krajekisbtc
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - polymarket
+  - btc15m
+  source: clawhub-community
+  clawhub_slug: polymarketbtcassistant
+  clawhub_path: krajekisbtc/polymarketbtcassistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polymarket BTC Up-Down
+
+    # Source: ClawHub community skill by krajekisbtc
+
+    # Install: clawhub install polymarketbtcassistant
+
+    # Path: krajekisbtc/polymarketbtcassistant
+
+
+    ## Description
+
+    Trade Polymarket Bitcoin Up/Down 15-minute markets using TA signals. Supports Clawbot mode (dynamic sizing, TP/SL, pre-settlement)
+    or fixed mode. Use when checking signals, placing trades, or automating via private key.
+
+
+    ## Files
+
+    - .env
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - clawbot-skill/scripts/execute-trade.sh
+
+    - clawbot-skill/scripts/get-signal.sh
+
+    - dist-slim/.env
+
+    - dist-slim/.gitignore
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polymarketbtcassistant
+
+    ```'
+examples:
+- description: Install Polymarket BTC Up-Down from ClawHub
+  usage: clawhub install polymarketbtcassistant
+schema_version: '1.0'

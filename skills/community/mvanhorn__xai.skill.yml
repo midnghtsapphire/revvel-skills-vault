@@ -1,0 +1,63 @@
+name: xai
+title: OpenClaw xAI
+version: 1.0.6
+description: Chat with Grok models via xAI API. Supports Grok-3, Grok-3-mini, vision, and more.
+metadata:
+  author: mvanhorn
+  category: Communication
+  tags:
+  - communication
+  - xai
+  source: clawhub-community
+  clawhub_slug: xai
+  clawhub_path: mvanhorn/xai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw xAI
+
+    # Source: ClawHub community skill by mvanhorn
+
+    # Install: clawhub install xai
+
+    # Path: mvanhorn/xai
+
+
+    ## Description
+
+    Chat with Grok models via xAI API. Supports Grok-3, Grok-3-mini, vision, and more.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/chat.js
+
+    - scripts/models.js
+
+    - scripts/search-x.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xai
+
+    ```'
+examples:
+- description: Install OpenClaw xAI from ClawHub
+  usage: clawhub install xai
+schema_version: '1.0'

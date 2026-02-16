@@ -1,0 +1,60 @@
+name: telegram-pairing-message-customization
+title: Telegram 配对消息自定义 |  Customize Telegram Pairing Messages
+version: 1.0.6
+description: Add custom messages to Telegram pairing replies for unapproved users. Insert custom text (e.g., group links,
+  instructions) above the approval command in pairing messages. Use when unpaired Telegram users need additional guidance
+  during the pairing process.
+metadata:
+  author: crazypeace
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - pairing
+  - message
+  - customization
+  source: clawhub-community
+  clawhub_slug: telegram-pairing-message-customization
+  clawhub_path: crazypeace/telegram-pairing-message-customization
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram 配对消息自定义 |  Customize Telegram Pairing Messages
+
+    # Source: ClawHub community skill by crazypeace
+
+    # Install: clawhub install telegram-pairing-message-customization
+
+    # Path: crazypeace/telegram-pairing-message-customization
+
+
+    ## Description
+
+    Add custom messages to Telegram pairing replies for unapproved users. Insert custom text (e.g., group links, instructions)
+    above the approval command in pairing messages. Use when unpaired Telegram users need additional guidance during the pairing
+    process.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-pairing-message-customization
+
+    ```'
+examples:
+- description: Install Telegram 配对消息自定义 |  Customize Telegram Pairing Messages from ClawHub
+  usage: clawhub install telegram-pairing-message-customization
+schema_version: '1.0'

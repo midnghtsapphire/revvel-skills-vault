@@ -1,0 +1,53 @@
+name: chaterimo
+title: Chaterimo
+version: 0.1.0
+description: Your Chaterimo API key. Generate at https://www.chaterimo.com/account/api-keys/
+metadata:
+  author: caebixus
+  category: Communication
+  tags:
+  - communication
+  - chaterimo
+  source: clawhub-community
+  clawhub_slug: chaterimo-openclaw-skill
+  clawhub_path: caebixus/chaterimo-openclaw-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Chaterimo
+
+    # Source: ClawHub community skill by caebixus
+
+    # Install: clawhub install chaterimo-openclaw-skill
+
+    # Path: caebixus/chaterimo-openclaw-skill
+
+
+    ## Description
+
+    Your Chaterimo API key. Generate at https://www.chaterimo.com/account/api-keys/
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install chaterimo-openclaw-skill
+
+    ```'
+examples:
+- description: Install Chaterimo from ClawHub
+  usage: clawhub install chaterimo-openclaw-skill
+schema_version: '1.0'

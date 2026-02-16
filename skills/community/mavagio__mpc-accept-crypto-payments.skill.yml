@@ -1,0 +1,68 @@
+name: mpc-accept-crypto-payments
+title: MoonPay Commerce (Helio) Accept Crypto Payments
+version: 0.3.0
+description: Accept crypto payments on Solana via MoonPay Commerce (formerly Helio). Create Pay Links, generate checkout URLs,
+  check transactions, and list supported currencies. Use when the user wants to accept crypto payments, create payment links,
+  charge for products/services with crypto, or query payment tra
+metadata:
+  author: mavagio
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mpc
+  - accept
+  - crypto
+  - payments
+  source: clawhub-community
+  clawhub_slug: mpc-accept-crypto-payments
+  clawhub_path: mavagio/mpc-accept-crypto-payments
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MoonPay Commerce (Helio) Accept Crypto Payments
+
+    # Source: ClawHub community skill by mavagio
+
+    # Install: clawhub install mpc-accept-crypto-payments
+
+    # Path: mavagio/mpc-accept-crypto-payments
+
+
+    ## Description
+
+    Accept crypto payments on Solana via MoonPay Commerce (formerly Helio). Create Pay Links, generate checkout URLs, check
+    transactions, and list supported currencies. Use when the user wants to accept crypto payments, create payment links,
+    charge for products/services with crypto, or query payment tra
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - scripts/helio.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mpc-accept-crypto-payments
+
+    ```'
+examples:
+- description: Install MoonPay Commerce (Helio) Accept Crypto Payments from ClawHub
+  usage: clawhub install mpc-accept-crypto-payments
+schema_version: '1.0'

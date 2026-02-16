@@ -1,0 +1,70 @@
+name: phone-agent
+title: Phone Voice Agent
+version: 1.0.0
+description: '"Run a real-time AI phone agent using Twilio, Deepgram, and ElevenLabs. Handles incoming calls, transcribes
+  audio, generates responses via LLM, and speaks back via streaming TTS. Use when user wants to: (1) Test voice AI capabilities,
+  (2) Handle phone calls programmatically, (3) Build a conversation'
+metadata:
+  author: kesslerio
+  category: Media & Content
+  tags:
+  - media-content
+  - phone
+  - agent
+  source: clawhub-community
+  clawhub_slug: phone-agent
+  clawhub_path: kesslerio/phone-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Phone Voice Agent
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install phone-agent
+
+    # Path: kesslerio/phone-agent
+
+
+    ## Description
+
+    "Run a real-time AI phone agent using Twilio, Deepgram, and ElevenLabs. Handles incoming calls, transcribes audio, generates
+    responses via LLM, and speaks back via streaming TTS. Use when user wants to: (1) Test voice AI capabilities, (2) Handle
+    phone calls programmatically, (3) Build a conversation
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/requirements.txt
+
+    - scripts/server.py
+
+    - scripts/server_realtime.py
+
+    - tasks/book_restaurant.yaml
+
+    - tasks/get_quote.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install phone-agent
+
+    ```'
+examples:
+- description: Install Phone Voice Agent from ClawHub
+  usage: clawhub install phone-agent
+schema_version: '1.0'

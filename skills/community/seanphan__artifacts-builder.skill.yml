@@ -1,0 +1,62 @@
+name: artifacts-builder
+title: Artifacts Builder
+version: 0.1.0
+description: Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies
+  (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components
+  - not for simple single-file HTML/JSX artifacts.
+metadata:
+  author: seanphan
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - artifacts
+  - builder
+  source: clawhub-community
+  clawhub_slug: artifacts-builder
+  clawhub_path: seanphan/artifacts-builder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Artifacts Builder
+
+    # Source: ClawHub community skill by seanphan
+
+    # Install: clawhub install artifacts-builder
+
+    # Path: seanphan/artifacts-builder
+
+
+    ## Description
+
+    Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies
+    (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components
+    - not for simple single-file HTML/JSX artifacts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bundle-artifact.sh
+
+    - scripts/init-artifact.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install artifacts-builder
+
+    ```'
+examples:
+- description: Install Artifacts Builder from ClawHub
+  usage: clawhub install artifacts-builder
+schema_version: '1.0'

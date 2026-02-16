@@ -1,0 +1,61 @@
+name: solana-scanner
+title: Solana Token Scanner
+version: 1.0.0
+description: Scan any Solana token for safety — liquidity, holder concentration, red flags, and rug pull indicators. No API
+  keys required.
+metadata:
+  author: satoshi891102
+  category: Development & Coding
+  tags:
+  - development-coding
+  - solana
+  - scanner
+  source: clawhub-community
+  clawhub_slug: solana-scanner
+  clawhub_path: satoshi891102/solana-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Solana Token Scanner
+
+    # Source: ClawHub community skill by satoshi891102
+
+    # Install: clawhub install solana-scanner
+
+    # Path: satoshi891102/solana-scanner
+
+
+    ## Description
+
+    Scan any Solana token for safety — liquidity, holder concentration, red flags, and rug pull indicators. No API keys required.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/analyze-token.py
+
+    - scripts/scan-token.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solana-scanner
+
+    ```'
+examples:
+- description: Install Solana Token Scanner from ClawHub
+  usage: clawhub install solana-scanner
+schema_version: '1.0'

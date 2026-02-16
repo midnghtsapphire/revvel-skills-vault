@@ -1,0 +1,67 @@
+name: market-news-analyst
+title: Market News Analyst
+version: 0.1.0
+description: This skill should be used when analyzing recent market-moving news events and their impact on equity markets
+  and commodities. Use this skill when the user requests analysis of major financial news from the past 10 days, wants to
+  understand market reactions to monetary policy decisions (FOMC, ECB, BO
+metadata:
+  author: veeramanikandanr48
+  category: Search & Research
+  tags:
+  - search-research
+  - market
+  - news
+  - analyst
+  source: clawhub-community
+  clawhub_slug: market-news-analyst
+  clawhub_path: veeramanikandanr48/market-news-analyst
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Market News Analyst
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install market-news-analyst
+
+    # Path: veeramanikandanr48/market-news-analyst
+
+
+    ## Description
+
+    This skill should be used when analyzing recent market-moving news events and their impact on equity markets and commodities.
+    Use this skill when the user requests analysis of major financial news from the past 10 days, wants to understand market
+    reactions to monetary policy decisions (FOMC, ECB, BO
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/corporate_news_impact.md
+
+    - references/geopolitical_commodity_correlations.md
+
+    - references/market_event_patterns.md
+
+    - references/trusted_news_sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install market-news-analyst
+
+    ```'
+examples:
+- description: Install Market News Analyst from ClawHub
+  usage: clawhub install market-news-analyst
+schema_version: '1.0'

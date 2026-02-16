@@ -1,0 +1,63 @@
+name: unifuncs-reader
+title: UniFuncs Reader
+version: 0.0.1
+description: 使用 UniFuncs API 读取网页、PDF、Word 等文档内容，支持 AI 内容提取。当用户需要阅读、抓取、提取网页或文档内容时使用。
+metadata:
+  author: vinlic
+  category: Development & Coding
+  tags:
+  - development-coding
+  - unifuncs
+  - reader
+  - bash(python*:*)
+  source: clawhub-community
+  clawhub_slug: unifuncs-reader
+  clawhub_path: vinlic/unifuncs-reader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(python*:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UniFuncs Reader
+
+    # Source: ClawHub community skill by vinlic
+
+    # Install: clawhub install unifuncs-reader
+
+    # Path: vinlic/unifuncs-reader
+
+
+    ## Description
+
+    使用 UniFuncs API 读取网页、PDF、Word 等文档内容，支持 AI 内容提取。当用户需要阅读、抓取、提取网页或文档内容时使用。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/read.py
+
+
+    ## Allowed Tools
+
+    Bash(python*:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unifuncs-reader
+
+    ```'
+examples:
+- description: Install UniFuncs Reader from ClawHub
+  usage: clawhub install unifuncs-reader
+schema_version: '1.0'

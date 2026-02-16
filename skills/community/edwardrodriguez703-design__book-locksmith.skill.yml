@@ -1,0 +1,56 @@
+name: book-locksmith
+title: Book Locksmith
+version: 1.0.1
+description: Book locksmith services through Lokuli MCP. Use when user needs to find and book locksmith. Triggers on requests
+  like "book a locksmith", "find locksmith near me", or any locksmith service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - locksmith
+  source: clawhub-community
+  clawhub_slug: book-locksmith
+  clawhub_path: edwardrodriguez703-design/book-locksmith
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Locksmith
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-locksmith
+
+    # Path: edwardrodriguez703-design/book-locksmith
+
+
+    ## Description
+
+    Book locksmith services through Lokuli MCP. Use when user needs to find and book locksmith. Triggers on requests like
+    "book a locksmith", "find locksmith near me", or any locksmith service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-locksmith
+
+    ```'
+examples:
+- description: Install Book Locksmith from ClawHub
+  usage: clawhub install book-locksmith
+schema_version: '1.0'

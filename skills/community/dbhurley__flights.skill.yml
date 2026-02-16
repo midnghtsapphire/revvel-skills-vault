@@ -1,0 +1,57 @@
+name: flights
+title: Flight Tracker
+version: 1.0.0
+description: Track flight status, delays, and search routes. Uses FlightAware data.
+metadata:
+  author: dbhurley
+  category: Search & Research
+  tags:
+  - search-research
+  - flights
+  source: clawhub-community
+  clawhub_slug: flights
+  clawhub_path: dbhurley/flights
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Flight Tracker
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install flights
+
+    # Path: dbhurley/flights
+
+
+    ## Description
+
+    Track flight status, delays, and search routes. Uses FlightAware data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - scripts/flights.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flights
+
+    ```'
+examples:
+- description: Install Flight Tracker from ClawHub
+  usage: clawhub install flights
+schema_version: '1.0'

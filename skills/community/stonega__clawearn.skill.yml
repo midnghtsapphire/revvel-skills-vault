@@ -1,0 +1,67 @@
+name: clawearn
+title: Claw Earn
+version: 1.2.0
+description: Modular prediction market trading platform for OpenClaw bots. Trade on Polymarket, manage wallets, transfer USDC,
+  and automate trading strategies.
+metadata:
+  author: stonega
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawearn
+  source: clawhub-community
+  clawhub_slug: clawearn
+  clawhub_path: stonega/clawearn
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claw Earn
+
+    # Source: ClawHub community skill by stonega
+
+    # Install: clawhub install clawearn
+
+    # Path: stonega/clawearn
+
+
+    ## Description
+
+    Modular prediction market trading platform for OpenClaw bots. Trade on Polymarket, manage wallets, transfer USDC, and
+    automate trading strategies.
+
+
+    ## Files
+
+    - HEARTBEAT.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - core/security/SKILL.md
+
+    - core/wallet/SKILL.md
+
+    - markets/polymarket/HEARTBEAT.md
+
+    - markets/polymarket/SKILL.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawearn
+
+    ```'
+examples:
+- description: Install Claw Earn from ClawHub
+  usage: clawhub install clawearn
+schema_version: '1.0'

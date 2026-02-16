@@ -1,0 +1,60 @@
+name: wpclaw-connector
+title: WPClaw Lite (WordPress/WooCommerce connector)
+version: 1.0.0
+description: Connects to a WooCommerce store via the WPClaw Connector plugin to fetch orders and products.
+metadata:
+  author: magnum-opus-v1
+  category: General
+  tags:
+  - general
+  - wpclaw
+  - connector
+  source: clawhub-community
+  clawhub_slug: wpclaw-lite
+  clawhub_path: magnum-opus-v1/wpclaw-lite
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WPClaw Lite (WordPress/WooCommerce connector)
+
+    # Source: ClawHub community skill by magnum-opus-v1
+
+    # Install: clawhub install wpclaw-lite
+
+    # Path: magnum-opus-v1/wpclaw-lite
+
+
+    ## Description
+
+    Connects to a WooCommerce store via the WPClaw Connector plugin to fetch orders and products.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wpclaw-lite
+
+    ```'
+examples:
+- description: Install WPClaw Lite (WordPress/WooCommerce connector) from ClawHub
+  usage: clawhub install wpclaw-lite
+schema_version: '1.0'

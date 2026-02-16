@@ -1,0 +1,55 @@
+name: hotdog
+title: Hotdog
+version: 10.1.1
+description: '"Hot dog or not? Classify food photos and battle Nemotron. Use when a user sends a food photo, asks if something
+  is a hot dog, or says ''hotdog'', ''/hotdog'', or ''hot dog battle''."'
+metadata:
+  author: mishafyi
+  category: Media & Content
+  tags:
+  - media-content
+  - hotdog
+  source: clawhub-community
+  clawhub_slug: hotdog
+  clawhub_path: mishafyi/hotdog
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hotdog
+
+    # Source: ClawHub community skill by mishafyi
+
+    # Install: clawhub install hotdog
+
+    # Path: mishafyi/hotdog
+
+
+    ## Description
+
+    "Hot dog or not? Classify food photos and battle Nemotron. Use when a user sends a food photo, asks if something is a
+    hot dog, or says ''hotdog'', ''/hotdog'', or ''hot dog battle''."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hotdog
+
+    ```'
+examples:
+- description: Install Hotdog from ClawHub
+  usage: clawhub install hotdog
+schema_version: '1.0'

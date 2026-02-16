@@ -1,0 +1,72 @@
+name: udp-messenger
+title: LocalUDPMessenger
+version: 1.5.0
+description: Use when agents need to communicate over the local network — "send message to agent", "discover agents", "check
+  for messages", "coordinate with other agents", "approve agent", "agent status", "add peer", "message log"
+metadata:
+  author: turfptax
+  category: Communication
+  tags:
+  - communication
+  - udp
+  - messenger
+  source: clawhub-community
+  clawhub_slug: localudpmessenger
+  clawhub_path: turfptax/localudpmessenger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LocalUDPMessenger
+
+    # Source: ClawHub community skill by turfptax
+
+    # Install: clawhub install localudpmessenger
+
+    # Path: turfptax/localudpmessenger
+
+
+    ## Description
+
+    Use when agents need to communicate over the local network — "send message to agent", "discover agents", "check for messages",
+    "coordinate with other agents", "approve agent", "agent status", "add peer", "message log"
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.ts
+
+    - openclaw.plugin.json
+
+    - package.json
+
+    - hooks/check-inbox/HOOK.md
+
+    - hooks/check-inbox/handler.ts
+
+    - skills/udp-messenger/SKILL.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install localudpmessenger
+
+    ```'
+examples:
+- description: Install LocalUDPMessenger from ClawHub
+  usage: clawhub install localudpmessenger
+schema_version: '1.0'

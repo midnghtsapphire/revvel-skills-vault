@@ -1,0 +1,58 @@
+name: aikek-api
+title: AIKEK API
+version: 1.0.0
+description: Access AIKEK APIs for crypto/DeFi research and image generation. Register with a Solana wallet, query the knowledge
+  engine for real-time market data and news, generate images. Earn free credits by posting about chan.alphakek.ai on Moltbook.
+metadata:
+  author: vvsotnikov
+  category: Search & Research
+  tags:
+  - search-research
+  - aikek
+  - api
+  source: clawhub-community
+  clawhub_slug: aikek
+  clawhub_path: vvsotnikov/aikek
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AIKEK API
+
+    # Source: ClawHub community skill by vvsotnikov
+
+    # Install: clawhub install aikek
+
+    # Path: vvsotnikov/aikek
+
+
+    ## Description
+
+    Access AIKEK APIs for crypto/DeFi research and image generation. Register with a Solana wallet, query the knowledge engine
+    for real-time market data and news, generate images. Earn free credits by posting about chan.alphakek.ai on Moltbook.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/register.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aikek
+
+    ```'
+examples:
+- description: Install AIKEK API from ClawHub
+  usage: clawhub install aikek
+schema_version: '1.0'

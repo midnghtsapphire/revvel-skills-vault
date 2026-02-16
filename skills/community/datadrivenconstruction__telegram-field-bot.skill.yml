@@ -1,0 +1,57 @@
+name: telegram-field-bot
+title: Telegram Field Bot
+version: 1.0.0
+description: '"Build Telegram bots for construction field workers. Real-time reporting, photo uploads, task assignments, progress
+  tracking. Integrate with n8n for automated workflows."'
+metadata:
+  author: datadrivenconstruction
+  category: Media & Content
+  tags:
+  - media-content
+  - telegram
+  - field
+  - bot
+  source: clawhub-community
+  clawhub_slug: telegram-field-bot
+  clawhub_path: datadrivenconstruction/telegram-field-bot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Field Bot
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install telegram-field-bot
+
+    # Path: datadrivenconstruction/telegram-field-bot
+
+
+    ## Description
+
+    "Build Telegram bots for construction field workers. Real-time reporting, photo uploads, task assignments, progress tracking.
+    Integrate with n8n for automated workflows."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-field-bot
+
+    ```'
+examples:
+- description: Install Telegram Field Bot from ClawHub
+  usage: clawhub install telegram-field-bot
+schema_version: '1.0'

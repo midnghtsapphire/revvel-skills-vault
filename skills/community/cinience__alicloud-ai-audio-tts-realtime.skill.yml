@@ -1,0 +1,64 @@
+name: alicloud-ai-audio-tts-realtime
+title: Alicloud Ai Audio Tts Realtime
+version: 1.0.0
+description: Real-time speech synthesis with Alibaba Cloud Model Studio Qwen TTS Realtime models. Use when low-latency interactive
+  speech is required, including instruction-controlled realtime synthesis.
+metadata:
+  author: cinience
+  category: Media & Content
+  tags:
+  - media-content
+  - alicloud
+  - audio
+  - tts
+  - realtime
+  source: clawhub-community
+  clawhub_slug: alicloud-ai-audio-tts-realtime
+  clawhub_path: cinience/alicloud-ai-audio-tts-realtime
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Ai Audio Tts Realtime
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-ai-audio-tts-realtime
+
+    # Path: cinience/alicloud-ai-audio-tts-realtime
+
+
+    ## Description
+
+    Real-time speech synthesis with Alibaba Cloud Model Studio Qwen TTS Realtime models. Use when low-latency interactive
+    speech is required, including instruction-controlled realtime synthesis.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+    - scripts/realtime_tts_demo.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-ai-audio-tts-realtime
+
+    ```'
+examples:
+- description: Install Alicloud Ai Audio Tts Realtime from ClawHub
+  usage: clawhub install alicloud-ai-audio-tts-realtime
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: obsidian
+title: Obsidian
+version: 1.0.0
+description: Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.
+metadata:
+  author: steipete
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - obsidian
+  source: clawhub-community
+  clawhub_slug: obsidian
+  clawhub_path: steipete/obsidian
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Obsidian
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install obsidian
+
+    # Path: steipete/obsidian
+
+
+    ## Description
+
+    Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install obsidian
+
+    ```'
+examples:
+- description: Install Obsidian from ClawHub
+  usage: clawhub install obsidian
+schema_version: '1.0'

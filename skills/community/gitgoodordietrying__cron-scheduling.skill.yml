@@ -1,0 +1,58 @@
+name: cron-scheduling
+title: Cron & Scheduling
+version: 1.0.0
+description: Schedule and manage recurring tasks with cron and systemd timers. Use when setting up cron jobs, writing systemd
+  timer units, handling timezone-aware scheduling, monitoring failed jobs, implementing retry patterns, or debugging why a
+  scheduled task didn't run.
+metadata:
+  author: gitgoodordietrying
+  category: Development & Coding
+  tags:
+  - development-coding
+  - cron
+  - scheduling
+  source: clawhub-community
+  clawhub_slug: cron-scheduling
+  clawhub_path: gitgoodordietrying/cron-scheduling
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cron & Scheduling
+
+    # Source: ClawHub community skill by gitgoodordietrying
+
+    # Install: clawhub install cron-scheduling
+
+    # Path: gitgoodordietrying/cron-scheduling
+
+
+    ## Description
+
+    Schedule and manage recurring tasks with cron and systemd timers. Use when setting up cron jobs, writing systemd timer
+    units, handling timezone-aware scheduling, monitoring failed jobs, implementing retry patterns, or debugging why a scheduled
+    task didn''t run.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cron-scheduling
+
+    ```'
+examples:
+- description: Install Cron & Scheduling from ClawHub
+  usage: clawhub install cron-scheduling
+schema_version: '1.0'

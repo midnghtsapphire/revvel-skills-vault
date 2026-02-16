@@ -1,0 +1,58 @@
+name: home-assistant
+title: Home Assistant Clawbridge
+version: 1.0.0
+description: Control Home Assistant devices via ClawBridge API. Use when James asks to turn lights on/off, check device states,
+  or interact with any exposed Home Assistant entities. Handles entity discovery, state checks, and service calls with human
+  approval flow.
+metadata:
+  author: finalbillybong
+  category: Development & Coding
+  tags:
+  - development-coding
+  - home
+  - assistant
+  source: clawhub-community
+  clawhub_slug: home-assistant-clawbradge
+  clawhub_path: finalbillybong/home-assistant-clawbradge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Home Assistant Clawbridge
+
+    # Source: ClawHub community skill by finalbillybong
+
+    # Install: clawhub install home-assistant-clawbradge
+
+    # Path: finalbillybong/home-assistant-clawbradge
+
+
+    ## Description
+
+    Control Home Assistant devices via ClawBridge API. Use when James asks to turn lights on/off, check device states, or
+    interact with any exposed Home Assistant entities. Handles entity discovery, state checks, and service calls with human
+    approval flow.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install home-assistant-clawbradge
+
+    ```'
+examples:
+- description: Install Home Assistant Clawbridge from ClawHub
+  usage: clawhub install home-assistant-clawbradge
+schema_version: '1.0'

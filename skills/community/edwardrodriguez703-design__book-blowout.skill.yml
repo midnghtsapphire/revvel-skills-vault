@@ -1,0 +1,56 @@
+name: book-blowout
+title: Book Blowout
+version: 1.0.1
+description: Book blowout services through Lokuli MCP. Use when user needs to find and book blowout. Triggers on requests
+  like "book a blowout", "find blowout near me", or any blowout service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - blowout
+  source: clawhub-community
+  clawhub_slug: book-blowout
+  clawhub_path: edwardrodriguez703-design/book-blowout
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Blowout
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-blowout
+
+    # Path: edwardrodriguez703-design/book-blowout
+
+
+    ## Description
+
+    Book blowout services through Lokuli MCP. Use when user needs to find and book blowout. Triggers on requests like "book
+    a blowout", "find blowout near me", or any blowout service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-blowout
+
+    ```'
+examples:
+- description: Install Book Blowout from ClawHub
+  usage: clawhub install book-blowout
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: npm-proxy
+title: Nginx Proxy Manager
+version: 1.0.0
+description: Manage Nginx Proxy Manager (NPM) hosts, certificates, and access lists. Use when the user wants to add a new
+  domain, point a domain to a server/port, enable SSL, or check the status of proxy hosts.
+metadata:
+  author: weird-aftertaste
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - npm
+  - proxy
+  source: clawhub-community
+  clawhub_slug: npm-proxy
+  clawhub_path: weird-aftertaste/npm-proxy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nginx Proxy Manager
+
+    # Source: ClawHub community skill by weird-aftertaste
+
+    # Install: clawhub install npm-proxy
+
+    # Path: weird-aftertaste/npm-proxy
+
+
+    ## Description
+
+    Manage Nginx Proxy Manager (NPM) hosts, certificates, and access lists. Use when the user wants to add a new domain, point
+    a domain to a server/port, enable SSL, or check the status of proxy hosts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/npm_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install npm-proxy
+
+    ```'
+examples:
+- description: Install Nginx Proxy Manager from ClawHub
+  usage: clawhub install npm-proxy
+schema_version: '1.0'

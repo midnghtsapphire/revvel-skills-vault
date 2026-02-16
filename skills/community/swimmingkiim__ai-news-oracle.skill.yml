@@ -1,0 +1,56 @@
+name: ai-news-oracle
+title: ai-news-oracle
+version: 1.0.0
+description: Fetch real-time AI news briefings from the AI News Oracle API (Hacker News, TechCrunch, The Verge). Uses a10m.work
+  registry for discovery and Paymaster for gasless transactions.
+metadata:
+  author: swimmingkiim
+  category: Development & Coding
+  tags:
+  - development-coding
+  - news
+  - oracle
+  source: clawhub-community
+  clawhub_slug: ai-news-oracle
+  clawhub_path: swimmingkiim/ai-news-oracle
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ai-news-oracle
+
+    # Source: ClawHub community skill by swimmingkiim
+
+    # Install: clawhub install ai-news-oracle
+
+    # Path: swimmingkiim/ai-news-oracle
+
+
+    ## Description
+
+    Fetch real-time AI news briefings from the AI News Oracle API (Hacker News, TechCrunch, The Verge). Uses a10m.work registry
+    for discovery and Paymaster for gasless transactions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-news-oracle
+
+    ```'
+examples:
+- description: Install ai-news-oracle from ClawHub
+  usage: clawhub install ai-news-oracle
+schema_version: '1.0'

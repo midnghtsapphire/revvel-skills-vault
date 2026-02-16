@@ -1,0 +1,63 @@
+name: seede
+title: Seede Design
+version: 0.0.1
+description: Use Seede AI to generate professional design graphics based on text or images. Supports generating posters, social
+  media graphics, UI designs, etc.
+metadata:
+  author: hilongjw
+  category: Media & Content
+  tags:
+  - media-content
+  - seede
+  source: clawhub-community
+  clawhub_slug: seede-design
+  clawhub_path: hilongjw/seede-design
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seede Design
+
+    # Source: ClawHub community skill by hilongjw
+
+    # Install: clawhub install seede-design
+
+    # Path: hilongjw/seede-design
+
+
+    ## Description
+
+    Use Seede AI to generate professional design graphics based on text or images. Supports generating posters, social media
+    graphics, UI designs, etc.
+
+
+    ## Files
+
+    - README.md
+
+    - README_CN.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/seede.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seede-design
+
+    ```'
+examples:
+- description: Install Seede Design from ClawHub
+  usage: clawhub install seede-design
+schema_version: '1.0'

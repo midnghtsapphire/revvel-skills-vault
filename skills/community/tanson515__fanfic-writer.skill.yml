@@ -1,0 +1,72 @@
+name: fanfic-writer
+title: Fanfic Writer
+version: 1.0.0
+description: Automated novel writing assistant for creating long-form fiction with systematic workflow - genre research, outline
+  generation, worldbuilding, chapter-by-chapter writing with quality control.
+metadata:
+  author: tanson515
+  category: Search & Research
+  tags:
+  - search-research
+  - fanfic
+  - writer
+  source: clawhub-community
+  clawhub_slug: fanfic-writer
+  clawhub_path: tanson515/fanfic-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fanfic Writer
+
+    # Source: ClawHub community skill by tanson515
+
+    # Install: clawhub install fanfic-writer
+
+    # Path: tanson515/fanfic-writer
+
+
+    ## Description
+
+    Automated novel writing assistant for creating long-form fiction with systematic workflow - genre research, outline generation,
+    worldbuilding, chapter-by-chapter writing with quality control.
+
+
+    ## Files
+
+    - INSTALL_GUIDE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/prompts.md
+
+    - scripts/chapter_manager.py
+
+    - scripts/chapter_writer.py
+
+    - scripts/merge_book.py
+
+    - scripts/outline_generator.py
+
+    - scripts/session_context.py
+
+    - scripts/state_manager.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fanfic-writer
+
+    ```'
+examples:
+- description: Install Fanfic Writer from ClawHub
+  usage: clawhub install fanfic-writer
+schema_version: '1.0'

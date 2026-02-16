@@ -1,0 +1,60 @@
+name: nest-devices
+title: Nest Devices
+version: 2.0.1
+description: Control Nest smart home devices (thermostat, cameras, doorbell) via the Device Access API. Use when asked to
+  check or adjust home temperature, view camera feeds, check who's at the door, monitor rooms, or set up temperature schedules.
+metadata:
+  author: amogower
+  category: Development & Coding
+  tags:
+  - development-coding
+  - nest
+  - devices
+  source: clawhub-community
+  clawhub_slug: nest-devices
+  clawhub_path: amogower/nest-devices
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nest Devices
+
+    # Source: ClawHub community skill by amogower
+
+    # Install: clawhub install nest-devices
+
+    # Path: amogower/nest-devices
+
+
+    ## Description
+
+    Control Nest smart home devices (thermostat, cameras, doorbell) via the Device Access API. Use when asked to check or
+    adjust home temperature, view camera feeds, check who''s at the door, monitor rooms, or set up temperature schedules.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/nest-webhook.py
+
+    - scripts/nest.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nest-devices
+
+    ```'
+examples:
+- description: Install Nest Devices from ClawHub
+  usage: clawhub install nest-devices
+schema_version: '1.0'

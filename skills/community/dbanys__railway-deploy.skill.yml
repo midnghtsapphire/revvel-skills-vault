@@ -1,0 +1,70 @@
+name: deploy
+title: Railway Deploy
+version: 1.0.0
+description: This skill should be used when the user wants to push code to Railway, says "railway up", "deploy", "deploy to
+  railway", "ship", or "push". For initial setup or creating services, use new skill. For Docker images, use environment skill.
+metadata:
+  author: dbanys
+  category: Media & Content
+  tags:
+  - media-content
+  - deploy
+  - bash(railway:*)
+  source: clawhub-community
+  clawhub_slug: railway-deploy
+  clawhub_path: dbanys/railway-deploy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(railway:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Railway Deploy
+
+    # Source: ClawHub community skill by dbanys
+
+    # Install: clawhub install railway-deploy
+
+    # Path: dbanys/railway-deploy
+
+
+    ## Description
+
+    This skill should be used when the user wants to push code to Railway, says "railway up", "deploy", "deploy to railway",
+    "ship", or "push". For initial setup or creating services, use new skill. For Docker images, use environment skill.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/environment-config.md
+
+    - references/monorepo.md
+
+    - references/railpack.md
+
+    - references/variables.md
+
+
+    ## Allowed Tools
+
+    Bash(railway:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install railway-deploy
+
+    ```'
+examples:
+- description: Install Railway Deploy from ClawHub
+  usage: clawhub install railway-deploy
+schema_version: '1.0'

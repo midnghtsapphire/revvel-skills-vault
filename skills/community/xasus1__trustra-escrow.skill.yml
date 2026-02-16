@@ -1,0 +1,70 @@
+name: trustra-escrow
+title: Trustra Escrow
+version: 1.0.0
+description: Escrow as a Service for AI agents. Create trustless USDC escrow transactions on Solana.
+metadata:
+  author: xasus1
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - trustra
+  - escrow
+  source: clawhub-community
+  clawhub_slug: trustra-escrow
+  clawhub_path: xasus1/trustra-escrow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trustra Escrow
+
+    # Source: ClawHub community skill by xasus1
+
+    # Install: clawhub install trustra-escrow
+
+    # Path: xasus1/trustra-escrow
+
+
+    ## Description
+
+    Escrow as a Service for AI agents. Create trustless USDC escrow transactions on Solana.
+
+
+    ## Files
+
+    - .gitignore
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/balance.py
+
+    - scripts/config.py
+
+    - scripts/escrow_cancel.py
+
+    - scripts/escrow_confirm.py
+
+    - scripts/escrow_create.py
+
+    - scripts/escrow_deliver.py
+
+    - scripts/escrow_dispute.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trustra-escrow
+
+    ```'
+examples:
+- description: Install Trustra Escrow from ClawHub
+  usage: clawhub install trustra-escrow
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: portainer
+title: Portainer
+version: 0.1.1
+description: Comprehensive management for Portainer CE environments and stacks. Supports listing environments, managing Docker
+  Compose/Swarm stacks, and executing raw Docker commands via proxy. Use when the user needs to deploy apps, check container
+  status, or manage networks within Portainer. Requires a Portain
+metadata:
+  author: leventsoft
+  category: Development & Coding
+  tags:
+  - development-coding
+  - portainer
+  source: clawhub-community
+  clawhub_slug: portainer-skill-openclaw
+  clawhub_path: leventsoft/portainer-skill-openclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Portainer
+
+    # Source: ClawHub community skill by leventsoft
+
+    # Install: clawhub install portainer-skill-openclaw
+
+    # Path: leventsoft/portainer-skill-openclaw
+
+
+    ## Description
+
+    Comprehensive management for Portainer CE environments and stacks. Supports listing environments, managing Docker Compose/Swarm
+    stacks, and executing raw Docker commands via proxy. Use when the user needs to deploy apps, check container status, or
+    manage networks within Portainer. Requires a Portain
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/portainer_manager.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install portainer-skill-openclaw
+
+    ```'
+examples:
+- description: Install Portainer from ClawHub
+  usage: clawhub install portainer-skill-openclaw
+schema_version: '1.0'

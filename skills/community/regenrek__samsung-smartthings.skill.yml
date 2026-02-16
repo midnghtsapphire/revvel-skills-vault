@@ -1,0 +1,56 @@
+name: samsung-smart-tv
+title: Samsung Smartthings
+version: 0.0.1
+description: Control Samsung TVs via SmartThings (OAuth app + device control).
+metadata:
+  author: regenrek
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - samsung
+  - smart
+  source: clawhub-community
+  clawhub_slug: samsung-smartthings
+  clawhub_path: regenrek/samsung-smartthings
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Samsung Smartthings
+
+    # Source: ClawHub community skill by regenrek
+
+    # Install: clawhub install samsung-smartthings
+
+    # Path: regenrek/samsung-smartthings
+
+
+    ## Description
+
+    Control Samsung TVs via SmartThings (OAuth app + device control).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/setup_smartthings.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install samsung-smartthings
+
+    ```'
+examples:
+- description: Install Samsung Smartthings from ClawHub
+  usage: clawhub install samsung-smartthings
+schema_version: '1.0'

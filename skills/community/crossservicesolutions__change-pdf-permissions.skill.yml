@@ -1,0 +1,65 @@
+name: change-pdf-permissions
+title: Change permissions of PDF
+version: 1.0.0
+description: Change a PDF’s permission flags (edit, print, copy, forms, annotations, etc.) by uploading it to the Solutions
+  API, polling until completion, then returning a download URL for the updated PDF.
+metadata:
+  author: crossservicesolutions
+  category: Development & Coding
+  tags:
+  - development-coding
+  - change
+  - pdf
+  - permissions
+  source: clawhub-community
+  clawhub_slug: change-pdf-permissions
+  clawhub_path: crossservicesolutions/change-pdf-permissions
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Change permissions of PDF
+
+    # Source: ClawHub community skill by crossservicesolutions
+
+    # Install: clawhub install change-pdf-permissions
+
+    # Path: crossservicesolutions/change-pdf-permissions
+
+
+    ## Description
+
+    Change a PDF’s permission flags (edit, print, copy, forms, annotations, etc.) by uploading it to the Solutions API, polling
+    until completion, then returning a download URL for the updated PDF.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - examples/request.json
+
+    - scripts/change-pdf-permissions.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install change-pdf-permissions
+
+    ```'
+examples:
+- description: Install Change permissions of PDF from ClawHub
+  usage: clawhub install change-pdf-permissions
+schema_version: '1.0'

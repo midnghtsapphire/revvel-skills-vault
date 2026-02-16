@@ -1,0 +1,35 @@
+name: apple-serial-lookup
+title: Apple Serial Lookup
+version: 1.0.0
+description: 'Look up Apple device information from a serial number. Supports iPhones, iPads, Macs (MacBook, iMac, Mac mini,
+  Mac Pro, Mac Studio), Apple Watch, Apple TV, and iPods. Use when a user provides an Apple serial number and wants to identify
+  the device, check specs, manufacturing date/location, warranty '
+metadata:
+  author: siatrial
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - apple
+  - serial
+  - lookup
+  source: clawhub-community
+  clawhub_slug: apple-serial-lookup
+  clawhub_path: siatrial/apple-serial-lookup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Apple Serial Lookup\n# Source: ClawHub community skill by siatrial\n# Install: clawhub install apple-serial-lookup\n\
+    # Path: siatrial/apple-serial-lookup\n\n## Description\nLook up Apple device information from a serial number. Supports\
+    \ iPhones, iPads, Macs (MacBook, iMac, Mac mini, Mac Pro, Mac Studio), Apple Watch, Apple TV, and iPods. Use when a user\
+    \ provides an Apple serial number and wants to identify the device, check specs, manufacturing date/location, warranty\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n- references/model-codes.md\n- references/serial-format.md\n- scripts/decode_serial.py\n\
+    \n## Installation\n```bash\nclawhub install apple-serial-lookup\n```"
+examples:
+- description: Install Apple Serial Lookup from ClawHub
+  usage: clawhub install apple-serial-lookup
+schema_version: '1.0'

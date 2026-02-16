@@ -1,0 +1,67 @@
+name: comfyui
+title: ComfyUI
+version: 1.0.1
+description: Run local ComfyUI workflows via the HTTP API. Use when the user asks to run ComfyUI, execute a workflow by file
+  path/name, or supply raw API-format JSON; supports the default workflow bundled in assets.
+metadata:
+  author: kelvincai522
+  category: Development & Coding
+  tags:
+  - development-coding
+  - comfyui
+  source: clawhub-community
+  clawhub_slug: comfyui
+  clawhub_path: kelvincai522/comfyui
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ComfyUI
+
+    # Source: ClawHub community skill by kelvincai522
+
+    # Install: clawhub install comfyui
+
+    # Path: kelvincai522/comfyui
+
+
+    ## Description
+
+    Run local ComfyUI workflows via the HTTP API. Use when the user asks to run ComfyUI, execute a workflow by file path/name,
+    or supply raw API-format JSON; supports the default workflow bundled in assets.
+
+
+    ## Files
+
+    - CONTRIBUTING.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/default-workflow.json
+
+    - assets/tmp-workflow.json
+
+    - scripts/comfyui_run.py
+
+    - scripts/download_weights.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install comfyui
+
+    ```'
+examples:
+- description: Install ComfyUI from ClawHub
+  usage: clawhub install comfyui
+schema_version: '1.0'

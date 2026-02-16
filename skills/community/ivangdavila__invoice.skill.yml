@@ -1,0 +1,63 @@
+name: invoice
+title: Invoice
+version: 1.0.0
+description: Create and send professional invoices with automatic numbering, tax calculation, templates, and payment tracking.
+metadata:
+  author: ivangdavila
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - invoice
+  source: clawhub-community
+  clawhub_slug: invoice
+  clawhub_path: ivangdavila/invoice
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Invoice
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install invoice
+
+    # Path: ivangdavila/invoice
+
+
+    ## Description
+
+    Create and send professional invoices with automatic numbering, tax calculation, templates, and payment tracking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clients.md
+
+    - legal.md
+
+    - phases.md
+
+    - templates.md
+
+    - types.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install invoice
+
+    ```'
+examples:
+- description: Install Invoice from ClawHub
+  usage: clawhub install invoice
+schema_version: '1.0'

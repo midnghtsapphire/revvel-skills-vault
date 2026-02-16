@@ -1,0 +1,68 @@
+name: agent-doppelganger
+title: Agent Doppelgänger
+version: 1.0.0
+description: Constrained autonomous delegate for identity-proxied communication. Handles incoming messages (Email, Discord,
+  Slack, WhatsApp) by analyzing intent and applying declarative authority policies before generating responses. Use when the
+  user wants to delegate communication tasks while maintaining ident
+metadata:
+  author: sieershafilone
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - agent
+  - doppelganger
+  source: clawhub-community
+  clawhub_slug: agent-doppelganger
+  clawhub_path: sieershafilone/agent-doppelganger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Doppelgänger
+
+    # Source: ClawHub community skill by sieershafilone
+
+    # Install: clawhub install agent-doppelganger
+
+    # Path: sieershafilone/agent-doppelganger
+
+
+    ## Description
+
+    Constrained autonomous delegate for identity-proxied communication. Handles incoming messages (Email, Discord, Slack,
+    WhatsApp) by analyzing intent and applying declarative authority policies before generating responses. Use when the user
+    wants to delegate communication tasks while maintaining ident
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - manifest.yaml
+
+    - references/specification.md
+
+    - scripts/adg.py
+
+    - scripts/reanchor_style.py
+
+    - scripts/test_adg.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-doppelganger
+
+    ```'
+examples:
+- description: Install Agent Doppelgänger from ClawHub
+  usage: clawhub install agent-doppelganger
+schema_version: '1.0'

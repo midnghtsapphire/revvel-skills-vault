@@ -1,0 +1,71 @@
+name: garmer
+title: Garmer
+version: 1.0.2
+description: Extract health and fitness data from Garmin Connect including activities, sleep, heart rate, stress, steps, and
+  body composition. Use when the user asks about their Garmin data, fitness metrics, sleep analysis, or health insights.
+metadata:
+  author: garrza
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - garmer
+  source: clawhub-community
+  clawhub_slug: garmer
+  clawhub_path: garrza/garmer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Garmer
+
+    # Source: ClawHub community skill by garrza
+
+    # Install: clawhub install garmer
+
+    # Path: garrza/garmer
+
+
+    ## Description
+
+    Extract health and fitness data from Garmin Connect including activities, sleep, heart rate, stress, steps, and body composition.
+    Use when the user asks about their Garmin data, fitness metrics, sleep analysis, or health insights.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - examples/basic_usage.py
+
+    - examples/moltbot_integration.py
+
+    - references/REFERENCE.md
+
+    - scripts/health_query.py
+
+    - scripts/moltbot_integration.py
+
+    - src/garmer/__init__.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install garmer
+
+    ```'
+examples:
+- description: Install Garmer from ClawHub
+  usage: clawhub install garmer
+schema_version: '1.0'

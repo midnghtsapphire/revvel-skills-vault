@@ -1,0 +1,53 @@
+name: timesheet
+title: Timesheet - Time Tracking
+version: 1.0.1
+description: Track time, manage projects and tasks using timesheet.io CLI
+metadata:
+  author: florianrauscha
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - timesheet
+  source: clawhub-community
+  clawhub_slug: timesheet
+  clawhub_path: florianrauscha/timesheet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Timesheet - Time Tracking
+
+    # Source: ClawHub community skill by florianrauscha
+
+    # Install: clawhub install timesheet
+
+    # Path: florianrauscha/timesheet
+
+
+    ## Description
+
+    Track time, manage projects and tasks using timesheet.io CLI
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install timesheet
+
+    ```'
+examples:
+- description: Install Timesheet - Time Tracking from ClawHub
+  usage: clawhub install timesheet
+schema_version: '1.0'

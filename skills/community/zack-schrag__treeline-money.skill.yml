@@ -1,0 +1,53 @@
+name: treeline
+title: Treeline Money
+version: 26.2.803
+description: Chat with your finances from Treeline Money. Query balances, spending, budgets, and transactions.
+metadata:
+  author: zack-schrag
+  category: Communication
+  tags:
+  - communication
+  - treeline
+  source: clawhub-community
+  clawhub_slug: treeline-money
+  clawhub_path: zack-schrag/treeline-money
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Treeline Money
+
+    # Source: ClawHub community skill by zack-schrag
+
+    # Install: clawhub install treeline-money
+
+    # Path: zack-schrag/treeline-money
+
+
+    ## Description
+
+    Chat with your finances from Treeline Money. Query balances, spending, budgets, and transactions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install treeline-money
+
+    ```'
+examples:
+- description: Install Treeline Money from ClawHub
+  usage: clawhub install treeline-money
+schema_version: '1.0'

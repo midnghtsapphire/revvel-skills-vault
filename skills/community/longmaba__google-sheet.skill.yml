@@ -1,0 +1,66 @@
+name: google-sheets
+title: Skill to manage and update google sheet
+version: 1.0.0
+description: Read, write, append, and manage Google Sheets via the Google Sheets API (Node.js SDK). Use when you need to interact
+  with spreadsheets — reading data, writing/updating cells, appending rows, clearing ranges, formatting cells, managing sheets.
+  Requires a Google Cloud service account with Sheets API e
+metadata:
+  author: longmaba
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - sheets
+  source: clawhub-community
+  clawhub_slug: google-sheet
+  clawhub_path: longmaba/google-sheet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill to manage and update google sheet
+
+    # Source: ClawHub community skill by longmaba
+
+    # Install: clawhub install google-sheet
+
+    # Path: longmaba/google-sheet
+
+
+    ## Description
+
+    Read, write, append, and manage Google Sheets via the Google Sheets API (Node.js SDK). Use when you need to interact with
+    spreadsheets — reading data, writing/updating cells, appending rows, clearing ranges, formatting cells, managing sheets.
+    Requires a Google Cloud service account with Sheets API e
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - env_example.md
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/sheets.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-sheet
+
+    ```'
+examples:
+- description: Install Skill to manage and update google sheet from ClawHub
+  usage: clawhub install google-sheet
+schema_version: '1.0'

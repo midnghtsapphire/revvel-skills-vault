@@ -1,0 +1,62 @@
+name: swiftscholar-skill
+title: swiftscholar-skill
+version: 1.0.0
+description: Integrates the SwiftScholar HTTP API for searching, submitting, and analyzing academic papers. Use when the user
+  wants to search literature, submit PDFs/URLs for parsing, retrieve analyses, manage favorites, or inspect SwiftScholar account
+  usage programmatically.
+metadata:
+  author: tokisakix
+  category: Search & Research
+  tags:
+  - search-research
+  - swiftscholar
+  - skill
+  source: clawhub-community
+  clawhub_slug: swiftscholar-skill
+  clawhub_path: tokisakix/swiftscholar-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# swiftscholar-skill
+
+    # Source: ClawHub community skill by tokisakix
+
+    # Install: clawhub install swiftscholar-skill
+
+    # Path: tokisakix/swiftscholar-skill
+
+
+    ## Description
+
+    Integrates the SwiftScholar HTTP API for searching, submitting, and analyzing academic papers. Use when the user wants
+    to search literature, submit PDFs/URLs for parsing, retrieve analyses, manage favorites, or inspect SwiftScholar account
+    usage programmatically.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - claude.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install swiftscholar-skill
+
+    ```'
+examples:
+- description: Install swiftscholar-skill from ClawHub
+  usage: clawhub install swiftscholar-skill
+schema_version: '1.0'

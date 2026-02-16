@@ -1,0 +1,70 @@
+name: telnyx-rag
+title: Telnyx Rag
+version: 1.0.1
+description: Semantic search and Q&A over workspace files using Telnyx Storage + AI embeddings. Index your memory, knowledge,
+  and skills for natural language retrieval and AI-powered answers.
+metadata:
+  author: dotcom-squad
+  category: Search & Research
+  tags:
+  - search-research
+  - telnyx
+  - rag
+  source: clawhub-community
+  clawhub_slug: telnyx-rag
+  clawhub_path: dotcom-squad/telnyx-rag
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telnyx Rag
+
+    # Source: ClawHub community skill by dotcom-squad
+
+    # Install: clawhub install telnyx-rag
+
+    # Path: dotcom-squad/telnyx-rag
+
+
+    ## Description
+
+    Semantic search and Q&A over workspace files using Telnyx Storage + AI embeddings. Index your memory, knowledge, and skills
+    for natural language retrieval and AI-powered answers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - ask.py
+
+    - config.json
+
+    - diagram.svg
+
+    - embed.sh
+
+    - search.py
+
+    - setup.sh
+
+    - sync.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telnyx-rag
+
+    ```'
+examples:
+- description: Install Telnyx Rag from ClawHub
+  usage: clawhub install telnyx-rag
+schema_version: '1.0'

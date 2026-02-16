@@ -1,0 +1,66 @@
+name: briefing_room
+title: Briefing Room
+version: 1.0.3
+description: '"Daily news briefing generator — produces a conversational radio-host-style audio briefing + DOCX document covering
+  weather, X/Twitter trends, web trends, world news, politics, tech, local news, sports, markets, and crypto. macOS only (uses
+  Apple TTS and afplay). Use when user asks for a news briefi'
+metadata:
+  author: matusvojtek
+  category: Media & Content
+  tags:
+  - media-content
+  - briefing
+  - room
+  source: clawhub-community
+  clawhub_slug: briefing-room
+  clawhub_path: matusvojtek/briefing-room
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Briefing Room
+
+    # Source: ClawHub community skill by matusvojtek
+
+    # Install: clawhub install briefing-room
+
+    # Path: matusvojtek/briefing-room
+
+
+    ## Description
+
+    "Daily news briefing generator — produces a conversational radio-host-style audio briefing + DOCX document covering weather,
+    X/Twitter trends, web trends, world news, politics, tech, local news, sports, markets, and crypto. macOS only (uses Apple
+    TTS and afplay). Use when user asks for a news briefi
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/briefing.sh
+
+    - scripts/config.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install briefing-room
+
+    ```'
+examples:
+- description: Install Briefing Room from ClawHub
+  usage: clawhub install briefing-room
+schema_version: '1.0'

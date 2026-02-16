@@ -1,0 +1,54 @@
+name: auto-reply
+title: auto-reply
+version: 1.0.2
+description: Autonomous reply to X/Threads comments. Smart detection, templated responses, engagement automation.
+metadata:
+  author: sa9saq
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - auto
+  - reply
+  source: clawhub-community
+  clawhub_slug: auto-reply
+  clawhub_path: sa9saq/auto-reply
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# auto-reply
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install auto-reply
+
+    # Path: sa9saq/auto-reply
+
+
+    ## Description
+
+    Autonomous reply to X/Threads comments. Smart detection, templated responses, engagement automation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install auto-reply
+
+    ```'
+examples:
+- description: Install auto-reply from ClawHub
+  usage: clawhub install auto-reply
+schema_version: '1.0'

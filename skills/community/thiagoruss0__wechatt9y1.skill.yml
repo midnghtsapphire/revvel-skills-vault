@@ -1,0 +1,57 @@
+name: wechat
+title: Wechat
+version: 1.0.0
+description: Read WeChat local data from SQLite databases. Supports listing contacts, chat sessions, searching messages, and
+  viewing favorites. Use when the user needs to access their own WeChat data stored locally. Requires access to WeChat data
+  directory. Read-only operations only.
+metadata:
+  author: thiagoruss0
+  category: Search & Research
+  tags:
+  - search-research
+  - wechat
+  source: clawhub-community
+  clawhub_slug: wechatt9y1
+  clawhub_path: thiagoruss0/wechatt9y1
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wechat
+
+    # Source: ClawHub community skill by thiagoruss0
+
+    # Install: clawhub install wechatt9y1
+
+    # Path: thiagoruss0/wechatt9y1
+
+
+    ## Description
+
+    Read WeChat local data from SQLite databases. Supports listing contacts, chat sessions, searching messages, and viewing
+    favorites. Use when the user needs to access their own WeChat data stored locally. Requires access to WeChat data directory.
+    Read-only operations only.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wechatt9y1
+
+    ```'
+examples:
+- description: Install Wechat from ClawHub
+  usage: clawhub install wechatt9y1
+schema_version: '1.0'

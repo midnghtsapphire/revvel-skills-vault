@@ -1,0 +1,54 @@
+name: ytmusic-librarian
+title: YouTube Music
+version: 1.0.1
+description: Manage YouTube Music library, playlists, and discovery via ytmusicapi.
+metadata:
+  author: gentrycopsy
+  category: Media & Content
+  tags:
+  - media-content
+  - ytmusic
+  - librarian
+  source: clawhub-community
+  clawhub_slug: ytmusic
+  clawhub_path: gentrycopsy/ytmusic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube Music
+
+    # Source: ClawHub community skill by gentrycopsy
+
+    # Install: clawhub install ytmusic
+
+    # Path: gentrycopsy/ytmusic
+
+
+    ## Description
+
+    Manage YouTube Music library, playlists, and discovery via ytmusicapi.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ytmusic
+
+    ```'
+examples:
+- description: Install YouTube Music from ClawHub
+  usage: clawhub install ytmusic
+schema_version: '1.0'

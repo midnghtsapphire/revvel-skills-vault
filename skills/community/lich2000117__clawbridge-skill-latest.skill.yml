@@ -1,0 +1,57 @@
+name: clawbridge
+title: Clawbridge - Find your connections
+version: 3.0.0
+description: Run Clawbridge discovery from OpenClaw chat
+metadata:
+  author: lich2000117
+  category: Communication
+  tags:
+  - communication
+  - clawbridge
+  source: clawhub-community
+  clawhub_slug: clawbridge-skill-latest
+  clawhub_path: lich2000117/clawbridge-skill-latest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawbridge - Find your connections
+
+    # Source: ClawHub community skill by lich2000117
+
+    # Install: clawhub install clawbridge-skill-latest
+
+    # Path: lich2000117/clawbridge-skill-latest
+
+
+    ## Description
+
+    Run Clawbridge discovery from OpenClaw chat
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawbridge-skill-latest
+
+    ```'
+examples:
+- description: Install Clawbridge - Find your connections from ClawHub
+  usage: clawhub install clawbridge-skill-latest
+schema_version: '1.0'

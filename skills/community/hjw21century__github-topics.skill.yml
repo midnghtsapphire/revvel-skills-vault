@@ -1,0 +1,62 @@
+name: github-topics
+title: Github Topics
+version: 0.1.0
+description: Fetches GitHub topic trending repositories. Use when asking about GitHub trending repos or open source projects.
+metadata:
+  author: hjw21century
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - topics
+  source: clawhub-community
+  clawhub_slug: github-topics
+  clawhub_path: hjw21century/github-topics
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Github Topics
+
+    # Source: ClawHub community skill by hjw21century
+
+    # Install: clawhub install github-topics
+
+    # Path: hjw21century/github-topics
+
+
+    ## Description
+
+    Fetches GitHub topic trending repositories. Use when asking about GitHub trending repos or open source projects.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - src/__init__.py
+
+    - src/config.py
+
+    - src/github_fetcher.py
+
+    - src/readme_fetcher.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install github-topics
+
+    ```'
+examples:
+- description: Install Github Topics from ClawHub
+  usage: clawhub install github-topics
+schema_version: '1.0'

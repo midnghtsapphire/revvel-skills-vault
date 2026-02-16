@@ -1,0 +1,65 @@
+name: google-search
+title: Google Search
+version: 3.0.0
+description: '>'
+metadata:
+  author: shaharsha
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - search
+  - '[exec]'
+  source: clawhub-community
+  clawhub_slug: google-search-grounding
+  clawhub_path: shaharsha/google-search-grounding
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[exec]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Search
+
+    # Source: ClawHub community skill by shaharsha
+
+    # Install: clawhub install google-search-grounding
+
+    # Path: shaharsha/google-search-grounding
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - lib/google_search.py
+
+
+    ## Allowed Tools
+
+    [exec]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-search-grounding
+
+    ```'
+examples:
+- description: Install Google Search from ClawHub
+  usage: clawhub install google-search-grounding
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: skill-hub
+title: Skill Hub
+version: 1.0.0
+description: '"OpenClaw skill discovery, security vetting & install. Searches 3000+ curated skills from ClawHub registry and
+  awesome-openclaw-skills catalog. Scores credibility, detects prompt injection & malicious patterns, manages installations.
+  Quick-checks GitHub for new skills."'
+metadata:
+  author: phenixstar
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - hub
+  source: clawhub-community
+  clawhub_slug: skill-hub
+  clawhub_path: phenixstar/skill-hub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Hub
+
+    # Source: ClawHub community skill by phenixstar
+
+    # Install: clawhub install skill-hub
+
+    # Path: phenixstar/skill-hub
+
+
+    ## Description
+
+    "OpenClaw skill discovery, security vetting & install. Searches 3000+ curated skills from ClawHub registry and awesome-openclaw-skills
+    catalog. Scores credibility, detects prompt injection & malicious patterns, manages installations. Quick-checks GitHub
+    for new skills."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/skill-hub-quick-check.py
+
+    - scripts/skill-hub-search.py
+
+    - scripts/skill-hub-security-patterns.py
+
+    - scripts/skill-hub-status.py
+
+    - scripts/skill-hub-sync.py
+
+    - scripts/skill-hub-table-export.py
+
+    - scripts/skill-hub-vet.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-hub
+
+    ```'
+examples:
+- description: Install Skill Hub from ClawHub
+  usage: clawhub install skill-hub
+schema_version: '1.0'

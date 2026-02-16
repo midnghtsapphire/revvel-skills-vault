@@ -1,0 +1,59 @@
+name: fullbackup
+title: fullbackup
+version: 0.1.0
+description: Create a full local backup of the OpenClaw workspace and configuration using the existing backup-local.sh script.
+  Use for /fullbackup in Telegram or when the user asks for a complete local backup.
+metadata:
+  author: trumppo
+  category: Social Media
+  tags:
+  - social-media
+  - fullbackup
+  source: clawhub-community
+  clawhub_slug: fullbackup
+  clawhub_path: trumppo/fullbackup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# fullbackup
+
+    # Source: ClawHub community skill by trumppo
+
+    # Install: clawhub install fullbackup
+
+    # Path: trumppo/fullbackup
+
+
+    ## Description
+
+    Create a full local backup of the OpenClaw workspace and configuration using the existing backup-local.sh script. Use
+    for /fullbackup in Telegram or when the user asks for a complete local backup.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - scripts/full-backup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fullbackup
+
+    ```'
+examples:
+- description: Install fullbackup from ClawHub
+  usage: clawhub install fullbackup
+schema_version: '1.0'

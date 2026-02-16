@@ -1,0 +1,69 @@
+name: avatar
+title: Avatar
+version: 1.0.0
+description: Interactive AI avatar with Simli video rendering and ElevenLabs TTS
+metadata:
+  author: johannes-berggren
+  category: Media & Content
+  tags:
+  - media-content
+  - avatar
+  source: clawhub-community
+  clawhub_slug: avatar
+  clawhub_path: johannes-berggren/avatar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Avatar
+
+    # Source: ClawHub community skill by johannes-berggren
+
+    # Install: clawhub install avatar
+
+    # Path: johannes-berggren/avatar
+
+
+    ## Description
+
+    Interactive AI avatar with Simli video rendering and ElevenLabs TTS
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - avatar.config.example.json
+
+    - index.html
+
+    - package-lock.json
+
+    - package.json
+
+    - start-kiosk.sh
+
+    - tsconfig.client.json
+
+    - tsconfig.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install avatar
+
+    ```'
+examples:
+- description: Install Avatar from ClawHub
+  usage: clawhub install avatar
+schema_version: '1.0'

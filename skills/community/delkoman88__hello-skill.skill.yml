@@ -1,0 +1,54 @@
+name: hello-skill
+title: Hello Skill
+version: 0.0.2
+description: Minimal demo skill that prints a hello message.
+metadata:
+  author: delkoman88
+  category: Communication
+  tags:
+  - communication
+  - hello
+  - skill
+  source: clawhub-community
+  clawhub_slug: hello-skill
+  clawhub_path: delkoman88/hello-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hello Skill
+
+    # Source: ClawHub community skill by delkoman88
+
+    # Install: clawhub install hello-skill
+
+    # Path: delkoman88/hello-skill
+
+
+    ## Description
+
+    Minimal demo skill that prints a hello message.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hello-skill
+
+    ```'
+examples:
+- description: Install Hello Skill from ClawHub
+  usage: clawhub install hello-skill
+schema_version: '1.0'

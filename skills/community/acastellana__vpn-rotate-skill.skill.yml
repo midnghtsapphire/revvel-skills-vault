@@ -1,0 +1,75 @@
+name: vpn-rotate-skill
+title: Vpn Rotate Skill
+version: 0.1.0
+description: Bypass API rate limits by rotating VPN servers. Works with any OpenVPN-compatible VPN (ProtonVPN, NordVPN, Mullvad,
+  etc.). Automatically rotates to new server every N requests for fresh IPs. Use for high-volume scraping, government APIs,
+  geo-restricted data.
+metadata:
+  author: acastellana
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - vpn
+  - rotate
+  - skill
+  source: clawhub-community
+  clawhub_slug: vpn-rotate-skill
+  clawhub_path: acastellana/vpn-rotate-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vpn Rotate Skill
+
+    # Source: ClawHub community skill by acastellana
+
+    # Install: clawhub install vpn-rotate-skill
+
+    # Path: acastellana/vpn-rotate-skill
+
+
+    ## Description
+
+    Bypass API rate limits by rotating VPN servers. Works with any OpenVPN-compatible VPN (ProtonVPN, NordVPN, Mullvad, etc.).
+    Automatically rotates to new server every N requests for fresh IPs. Use for high-volume scraping, government APIs, geo-restricted
+    data.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - providers/mullvad.md
+
+    - providers/nordvpn.md
+
+    - providers/protonvpn.md
+
+    - scripts/decorator.py
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vpn-rotate-skill
+
+    ```'
+examples:
+- description: Install Vpn Rotate Skill from ClawHub
+  usage: clawhub install vpn-rotate-skill
+schema_version: '1.0'

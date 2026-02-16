@@ -1,0 +1,68 @@
+name: radio-copilot
+title: Satellite Copilot
+version: 0.1.0
+description: Predict satellite passes (NOAA APT, METEOR LRPT, ISS) for a configured latitude/longitude and send WhatsApp alerts
+  with manual dish alignment info (AOS/LOS azimuth+elevation, track direction, inclination). Use when setting up or operating
+  a zero-AI pass scheduler/orchestrator for SDR satellite recep
+metadata:
+  author: davestarling
+  category: Development & Coding
+  tags:
+  - development-coding
+  - radio
+  - copilot
+  source: clawhub-community
+  clawhub_slug: moltbot-satellite-copilot
+  clawhub_path: davestarling/moltbot-satellite-copilot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Satellite Copilot
+
+    # Source: ClawHub community skill by davestarling
+
+    # Install: clawhub install moltbot-satellite-copilot
+
+    # Path: davestarling/moltbot-satellite-copilot
+
+
+    ## Description
+
+    Predict satellite passes (NOAA APT, METEOR LRPT, ISS) for a configured latitude/longitude and send WhatsApp alerts with
+    manual dish alignment info (AOS/LOS azimuth+elevation, track direction, inclination). Use when setting up or operating
+    a zero-AI pass scheduler/orchestrator for SDR satellite recep
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - scripts/orchestrator.py
+
+    - scripts/pass_predictor.mjs
+
+    - scripts/radio_scheduler.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltbot-satellite-copilot
+
+    ```'
+examples:
+- description: Install Satellite Copilot from ClawHub
+  usage: clawhub install moltbot-satellite-copilot
+schema_version: '1.0'

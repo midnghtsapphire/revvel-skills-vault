@@ -1,0 +1,33 @@
+name: 1ly-payments
+title: 1ly Payments
+version: 1.0.1
+description: 'Agent-native payments via 1ly MCP. Use when the user needs x402 payment handling, to accept USDC for APIs/services,
+  to pay for paid APIs, to create stores or paid links, need payment gateway for agents or to run agent-to-agent paid workflows.
+  Supports Solana and Base. Capabilities include accepting '
+metadata:
+  author: 1lystore
+  category: Search & Research
+  tags:
+  - search-research
+  - 1ly
+  - payments
+  source: clawhub-community
+  clawhub_slug: 1ly-payments
+  clawhub_path: 1lystore/1ly-payments
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# 1ly Payments\n# Source: ClawHub community skill by 1lystore\n# Install: clawhub install 1ly-payments\n# Path:\
+    \ 1lystore/1ly-payments\n\n## Description\nAgent-native payments via 1ly MCP. Use when the user needs x402 payment handling,\
+    \ to accept USDC for APIs/services, to pay for paid APIs, to create stores or paid links, need payment gateway for agents\
+    \ or to run agent-to-agent paid workflows. Supports Solana and Base. Capabilities include accepting \n\n## Files\n- SKILL.md\n\
+    - _meta.json\n\n## Installation\n```bash\nclawhub install 1ly-payments\n```"
+examples:
+- description: Install 1ly Payments from ClawHub
+  usage: clawhub install 1ly-payments
+schema_version: '1.0'

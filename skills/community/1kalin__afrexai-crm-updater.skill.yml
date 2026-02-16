@@ -1,0 +1,58 @@
+name: crm_manager
+title: Crm Manager
+version: 1.1.0
+description: Manages a local CSV-based CRM with pipeline tracking
+metadata:
+  author: 1kalin
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - crm
+  - manager
+  source: clawhub-community
+  clawhub_slug: afrexai-crm-updater
+  clawhub_path: 1kalin/afrexai-crm-updater
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crm Manager
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install afrexai-crm-updater
+
+    # Path: 1kalin/afrexai-crm-updater
+
+
+    ## Description
+
+    Manages a local CSV-based CRM with pipeline tracking
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - crm-template.csv
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install afrexai-crm-updater
+
+    ```'
+examples:
+- description: Install Crm Manager from ClawHub
+  usage: clawhub install afrexai-crm-updater
+schema_version: '1.0'

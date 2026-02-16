@@ -1,0 +1,53 @@
+name: prometheus
+title: Prometheus
+version: 1.0.0
+description: Query metrics via Prometheus API. Run PromQL queries and manage alerts.
+metadata:
+  author: mrgoodb
+  category: Development & Coding
+  tags:
+  - development-coding
+  - prometheus
+  source: clawhub-community
+  clawhub_slug: prometheus
+  clawhub_path: mrgoodb/prometheus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prometheus
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install prometheus
+
+    # Path: mrgoodb/prometheus
+
+
+    ## Description
+
+    Query metrics via Prometheus API. Run PromQL queries and manage alerts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prometheus
+
+    ```'
+examples:
+- description: Install Prometheus from ClawHub
+  usage: clawhub install prometheus
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: microsaas-factory
+title: MicroSaaS Factory
+version: 1.0.0
+description: '"Build and deploy micro-SaaS products from the ConvertFlow template. Clone, customize, build, and deploy to
+  Vercel. Triggered via Telegram with ''build [name]'' or from high-scoring ideas in saas-idea-discovery."'
+metadata:
+  author: bobdevibecoder
+  category: Social Media
+  tags:
+  - social-media
+  - microsaas
+  - factory
+  source: clawhub-community
+  clawhub_slug: microsaas-factory
+  clawhub_path: bobdevibecoder/microsaas-factory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MicroSaaS Factory
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install microsaas-factory
+
+    # Path: bobdevibecoder/microsaas-factory
+
+
+    ## Description
+
+    "Build and deploy micro-SaaS products from the ConvertFlow template. Clone, customize, build, and deploy to Vercel. Triggered
+    via Telegram with ''build [name]'' or from high-scoring ideas in saas-idea-discovery."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/directory_submissions.md
+
+    - data/products.json
+
+    - data/revenue.json
+
+    - data/revenue_tracker.md
+
+    - scripts/build_and_fix.sh
+
+    - scripts/clone_template.sh
+
+    - scripts/customize.js
+
+    - scripts/deploy.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install microsaas-factory
+
+    ```'
+examples:
+- description: Install MicroSaaS Factory from ClawHub
+  usage: clawhub install microsaas-factory
+schema_version: '1.0'

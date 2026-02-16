@@ -1,0 +1,57 @@
+name: toolbox-talk-generator
+title: Toolbox Talk Generator
+version: 1.0.0
+description: '"Generate safety toolbox talks for construction crews. Create contextual safety briefings based on weather,
+  work activities, and recent incidents. Support multiple languages."'
+metadata:
+  author: datadrivenconstruction
+  category: Utilities
+  tags:
+  - utilities
+  - toolbox
+  - talk
+  - generator
+  source: clawhub-community
+  clawhub_slug: toolbox-talk-generator
+  clawhub_path: datadrivenconstruction/toolbox-talk-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Toolbox Talk Generator
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install toolbox-talk-generator
+
+    # Path: datadrivenconstruction/toolbox-talk-generator
+
+
+    ## Description
+
+    "Generate safety toolbox talks for construction crews. Create contextual safety briefings based on weather, work activities,
+    and recent incidents. Support multiple languages."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install toolbox-talk-generator
+
+    ```'
+examples:
+- description: Install Toolbox Talk Generator from ClawHub
+  usage: clawhub install toolbox-talk-generator
+schema_version: '1.0'

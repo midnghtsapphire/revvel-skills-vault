@@ -1,0 +1,68 @@
+name: unipile-linkedin
+title: storyagent_linkedin
+version: 1.0.0
+description: Interact with LinkedIn via Unipile API - send messages, view profiles, manage connections, create posts, react
+  to content. Use when the user asks to message someone on LinkedIn, check LinkedIn messages, view LinkedIn profiles, send
+  connection requests, create LinkedIn posts, or interact with LinkedI
+metadata:
+  author: sudhanshu746
+  category: Social Media
+  tags:
+  - social-media
+  - unipile
+  - linkedin
+  source: clawhub-community
+  clawhub_slug: unipile-linkedin
+  clawhub_path: sudhanshu746/unipile-linkedin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# storyagent_linkedin
+
+    # Source: ClawHub community skill by sudhanshu746
+
+    # Install: clawhub install unipile-linkedin
+
+    # Path: sudhanshu746/unipile-linkedin
+
+
+    ## Description
+
+    Interact with LinkedIn via Unipile API - send messages, view profiles, manage connections, create posts, react to content.
+    Use when the user asks to message someone on LinkedIn, check LinkedIn messages, view LinkedIn profiles, send connection
+    requests, create LinkedIn posts, or interact with LinkedI
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - resources/last_50_posts.json
+
+    - scripts/linkedin.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unipile-linkedin
+
+    ```'
+examples:
+- description: Install storyagent_linkedin from ClawHub
+  usage: clawhub install unipile-linkedin
+schema_version: '1.0'

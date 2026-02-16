@@ -1,0 +1,55 @@
+name: bazi
+title: No1. Bazi Chart
+version: 1.0.0
+description: 八字排盘工具，根据出生年月日时排出八字、大运及详细信息
+metadata:
+  author: kinmeic
+  category: General
+  tags:
+  - general
+  - bazi
+  source: clawhub-community
+  clawhub_slug: yoebao-bazi
+  clawhub_path: kinmeic/yoebao-bazi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# No1. Bazi Chart
+
+    # Source: ClawHub community skill by kinmeic
+
+    # Install: clawhub install yoebao-bazi
+
+    # Path: kinmeic/yoebao-bazi
+
+
+    ## Description
+
+    八字排盘工具，根据出生年月日时排出八字、大运及详细信息
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bazi.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yoebao-bazi
+
+    ```'
+examples:
+- description: Install No1. Bazi Chart from ClawHub
+  usage: clawhub install yoebao-bazi
+schema_version: '1.0'

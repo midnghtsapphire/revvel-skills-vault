@@ -1,0 +1,60 @@
+name: grok-imagine
+title: Grok Imagine
+version: 2.0.0
+description: Generate images via xAI's Grok Imagine API. Use when the user wants to create AI-generated images using xAI/Grok,
+  or when OpenAI image generation is unavailable.
+metadata:
+  author: eddanger
+  category: Media & Content
+  tags:
+  - media-content
+  - grok
+  - imagine
+  source: clawhub-community
+  clawhub_slug: grok-imagine
+  clawhub_path: eddanger/grok-imagine
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Grok Imagine
+
+    # Source: ClawHub community skill by eddanger
+
+    # Install: clawhub install grok-imagine
+
+    # Path: eddanger/grok-imagine
+
+
+    ## Description
+
+    Generate images via xAI''s Grok Imagine API. Use when the user wants to create AI-generated images using xAI/Grok, or
+    when OpenAI image generation is unavailable.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gen.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install grok-imagine
+
+    ```'
+examples:
+- description: Install Grok Imagine from ClawHub
+  usage: clawhub install grok-imagine
+schema_version: '1.0'

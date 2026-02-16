@@ -1,0 +1,59 @@
+name: uniswap-pool-analysis
+title: Uniswap Pool Analysis
+version: 0.1.0
+description: Analyze Uniswap pool data including liquidity distribution, fee tiers, tick ranges, and TVL. Use when the user
+  asks about pool metrics, liquidity analysis, or wants to query on-chain pool state.
+metadata:
+  author: wpank
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - uniswap
+  - pool
+  - analysis
+  source: clawhub-community
+  clawhub_slug: uniswap-pool-analysis
+  clawhub_path: wpank/uniswap-pool-analysis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Pool Analysis
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install uniswap-pool-analysis
+
+    # Path: wpank/uniswap-pool-analysis
+
+
+    ## Description
+
+    Analyze Uniswap pool data including liquidity distribution, fee tiers, tick ranges, and TVL. Use when the user asks about
+    pool metrics, liquidity analysis, or wants to query on-chain pool state.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install uniswap-pool-analysis
+
+    ```'
+examples:
+- description: Install Uniswap Pool Analysis from ClawHub
+  usage: clawhub install uniswap-pool-analysis
+schema_version: '1.0'

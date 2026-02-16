@@ -1,0 +1,75 @@
+name: tesla-fleet-api
+title: Tesla Fleet Api
+version: 1.4.2
+description: Use when integrating with Tesla's official Fleet API to read vehicle/energy device data or issue remote commands
+  (e.g. start HVAC preconditioning, wake vehicle, charge controls). Covers onboarding (developer app registration, regions/base
+  URLs), OAuth token flows (third-party + partner tokens, refre
+metadata:
+  author: odrobnik
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - tesla
+  - fleet
+  - api
+  source: clawhub-community
+  clawhub_slug: tesla-fleet-api
+  clawhub_path: odrobnik/tesla-fleet-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tesla Fleet Api
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install tesla-fleet-api
+
+    # Path: odrobnik/tesla-fleet-api
+
+
+    ## Description
+
+    Use when integrating with Tesla''s official Fleet API to read vehicle/energy device data or issue remote commands (e.g.
+    start HVAC preconditioning, wake vehicle, charge controls). Covers onboarding (developer app registration, regions/base
+    URLs), OAuth token flows (third-party + partner tokens, refre
+
+
+    ## Files
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/auth.py
+
+    - scripts/command.py
+
+    - scripts/start_proxy.sh
+
+    - scripts/stop_proxy.sh
+
+    - scripts/store.py
+
+    - scripts/tesla_fleet.py
+
+    - scripts/tesla_oauth_local.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tesla-fleet-api
+
+    ```'
+examples:
+- description: Install Tesla Fleet Api from ClawHub
+  usage: clawhub install tesla-fleet-api
+schema_version: '1.0'

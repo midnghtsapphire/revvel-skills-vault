@@ -1,0 +1,70 @@
+name: veeam-mcp
+title: Veeam MCP
+version: 1.0.3
+description: '"Query Veeam Backup & Replication and Veeam ONE via MCP server running in Docker. Provides intelligent backup
+  monitoring, job analysis, capacity planning, and infrastructure health checks."'
+metadata:
+  author: jgm2025
+  category: Development & Coding
+  tags:
+  - development-coding
+  - veeam
+  - mcp
+  source: clawhub-community
+  clawhub_slug: veeam-mcp
+  clawhub_path: jgm2025/veeam-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Veeam MCP
+
+    # Source: ClawHub community skill by jgm2025
+
+    # Install: clawhub install veeam-mcp
+
+    # Path: jgm2025/veeam-mcp
+
+
+    ## Description
+
+    "Query Veeam Backup & Replication and Veeam ONE via MCP server running in Docker. Provides intelligent backup monitoring,
+    job analysis, capacity planning, and infrastructure health checks."
+
+
+    ## Files
+
+    - README.md
+
+    - README_QUICK.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - credentials-template.json
+
+    - scripts/list-tools.sh
+
+    - scripts/query-veeam.sh
+
+    - scripts/start-mcp.sh
+
+    - scripts/test-connection.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install veeam-mcp
+
+    ```'
+examples:
+- description: Install Veeam MCP from ClawHub
+  usage: clawhub install veeam-mcp
+schema_version: '1.0'

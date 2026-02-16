@@ -1,0 +1,71 @@
+name: linkedin
+title: Zoho
+version: 1.0.1
+description: Use when you need to interact with LinkedIn from Clawdbot, including viewing profiles, searching for people/companies,
+  managing connections, and posting content.
+metadata:
+  author: senthazalravi
+  category: Search & Research
+  tags:
+  - search-research
+  - linkedin
+  source: clawhub-community
+  clawhub_slug: zohoclaw
+  clawhub_path: senthazalravi/zohoclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zoho
+
+    # Source: ClawHub community skill by senthazalravi
+
+    # Install: clawhub install zohoclaw
+
+    # Path: senthazalravi/zohoclaw
+
+
+    ## Description
+
+    Use when you need to interact with LinkedIn from Clawdbot, including viewing profiles, searching for people/companies,
+    managing connections, and posting content.
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - BOOTSTRAP.md
+
+    - HEARTBEAT.md
+
+    - IDENTITY.md
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - SOUL.md
+
+    - TOOLS.md
+
+    - USER.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zohoclaw
+
+    ```'
+examples:
+- description: Install Zoho from ClawHub
+  usage: clawhub install zohoclaw
+schema_version: '1.0'

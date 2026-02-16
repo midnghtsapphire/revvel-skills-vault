@@ -1,0 +1,37 @@
+name: vibetrading-code-gen
+title: vibetrading-ai-trading-code-generator
+version: 1.0.0
+description: 'Generate executable Hyperliquid trading strategy code from natural language prompts. Use when a user wants to
+  create automated trading strategies for Hyperliquid exchange based on their trading ideas, technical indicators, or VibeTrading
+  signals. The skill generates complete Python code with proper '
+metadata:
+  author: liuhaonan00
+  category: Development & Coding
+  tags:
+  - development-coding
+  - vibetrading
+  - code
+  - gen
+  source: clawhub-community
+  clawhub_slug: vibetrading-code-gen
+  clawhub_path: liuhaonan00/vibetrading-code-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# vibetrading-ai-trading-code-generator\n# Source: ClawHub community skill by liuhaonan00\n# Install: clawhub\
+    \ install vibetrading-code-gen\n# Path: liuhaonan00/vibetrading-code-gen\n\n## Description\nGenerate executable Hyperliquid\
+    \ trading strategy code from natural language prompts. Use when a user wants to create automated trading strategies for\
+    \ Hyperliquid exchange based on their trading ideas, technical indicators, or VibeTrading signals. The skill generates\
+    \ complete Python code with proper \n\n## Files\n- README.md\n- SKILL.md\n- _meta.json\n- api_wrappers/hyperliquid_api.py\n\
+    - backtest_engine/data_downloader.py\n- backtest_engine/historical_backtest.py\n- backtest_engine/strategy_adapter.py\n\
+    - examples/README.md\n- examples/grid_trading_example.py\n- examples/rsi_strategy_example.py\n\n## Installation\n```bash\n\
+    clawhub install vibetrading-code-gen\n```"
+examples:
+- description: Install vibetrading-ai-trading-code-generator from ClawHub
+  usage: clawhub install vibetrading-code-gen
+schema_version: '1.0'

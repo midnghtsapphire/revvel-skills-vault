@@ -1,0 +1,56 @@
+name: book-fitness
+title: Book Fitness
+version: 1.0.1
+description: Book fitness services through Lokuli MCP. Use when user needs to find and book fitness. Triggers on requests
+  like "book a fitness", "find fitness near me", or any fitness service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - fitness
+  source: clawhub-community
+  clawhub_slug: book-fitness
+  clawhub_path: edwardrodriguez703-design/book-fitness
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Fitness
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-fitness
+
+    # Path: edwardrodriguez703-design/book-fitness
+
+
+    ## Description
+
+    Book fitness services through Lokuli MCP. Use when user needs to find and book fitness. Triggers on requests like "book
+    a fitness", "find fitness near me", or any fitness service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-fitness
+
+    ```'
+examples:
+- description: Install Book Fitness from ClawHub
+  usage: clawhub install book-fitness
+schema_version: '1.0'

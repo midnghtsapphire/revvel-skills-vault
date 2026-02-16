@@ -1,0 +1,59 @@
+name: reddit
+title: Reddit Scraper
+version: 1.0.0
+description: '"Read and search Reddit posts via web scraping of old.reddit.com. Use when Clawdbot needs to browse Reddit content
+  - read posts from subreddits, search for topics, monitor specific communities. Read-only access with no posting or comments."'
+metadata:
+  author: javicasper
+  category: Search & Research
+  tags:
+  - search-research
+  - reddit
+  source: clawhub-community
+  clawhub_slug: reddit-scraper
+  clawhub_path: javicasper/reddit-scraper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reddit Scraper
+
+    # Source: ClawHub community skill by javicasper
+
+    # Install: clawhub install reddit-scraper
+
+    # Path: javicasper/reddit-scraper
+
+
+    ## Description
+
+    "Read and search Reddit posts via web scraping of old.reddit.com. Use when Clawdbot needs to browse Reddit content - read
+    posts from subreddits, search for topics, monitor specific communities. Read-only access with no posting or comments."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/TECHNICAL.md
+
+    - scripts/reddit_scraper.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reddit-scraper
+
+    ```'
+examples:
+- description: Install Reddit Scraper from ClawHub
+  usage: clawhub install reddit-scraper
+schema_version: '1.0'

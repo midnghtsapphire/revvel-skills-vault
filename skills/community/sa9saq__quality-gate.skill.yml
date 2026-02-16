@@ -1,0 +1,56 @@
+name: quality-gate
+title: quality-gate
+version: 1.0.0
+description: Quality gates for code and operations. Enforce build, lint, test pass before deployment. Auto-triggers before
+  commits and deploys.
+metadata:
+  author: sa9saq
+  category: Development & Coding
+  tags:
+  - development-coding
+  - quality
+  - gate
+  source: clawhub-community
+  clawhub_slug: quality-gate
+  clawhub_path: sa9saq/quality-gate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# quality-gate
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install quality-gate
+
+    # Path: sa9saq/quality-gate
+
+
+    ## Description
+
+    Quality gates for code and operations. Enforce build, lint, test pass before deployment. Auto-triggers before commits
+    and deploys.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install quality-gate
+
+    ```'
+examples:
+- description: Install quality-gate from ClawHub
+  usage: clawhub install quality-gate
+schema_version: '1.0'

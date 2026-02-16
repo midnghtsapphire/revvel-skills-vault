@@ -1,0 +1,55 @@
+name: test-audit-badge
+title: Test Audit Badge
+version: 0.1.2
+description: Test skill to demonstrate the audit badge; do not use it for real workflows.
+metadata:
+  author: tezatezaz
+  category: Development & Coding
+  tags:
+  - development-coding
+  - test
+  - audit
+  - badge
+  source: clawhub-community
+  clawhub_slug: test-audit-badge
+  clawhub_path: tezatezaz/test-audit-badge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Test Audit Badge
+
+    # Source: ClawHub community skill by tezatezaz
+
+    # Install: clawhub install test-audit-badge
+
+    # Path: tezatezaz/test-audit-badge
+
+
+    ## Description
+
+    Test skill to demonstrate the audit badge; do not use it for real workflows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install test-audit-badge
+
+    ```'
+examples:
+- description: Install Test Audit Badge from ClawHub
+  usage: clawhub install test-audit-badge
+schema_version: '1.0'

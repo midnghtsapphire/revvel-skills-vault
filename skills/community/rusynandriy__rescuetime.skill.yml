@@ -1,0 +1,57 @@
+name: rescuetime
+title: RescueTime
+version: 1.0.0
+description: Fetch productivity data from RescueTime. Use when the user asks about their screen time, productivity score,
+  app usage, time tracking, how they spent their day/week, or wants reports on their computer activity. Requires API key in
+  TOOLS.md or passed directly.
+metadata:
+  author: rusynandriy
+  category: Development & Coding
+  tags:
+  - development-coding
+  - rescuetime
+  source: clawhub-community
+  clawhub_slug: rescuetime
+  clawhub_path: rusynandriy/rescuetime
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RescueTime
+
+    # Source: ClawHub community skill by rusynandriy
+
+    # Install: clawhub install rescuetime
+
+    # Path: rusynandriy/rescuetime
+
+
+    ## Description
+
+    Fetch productivity data from RescueTime. Use when the user asks about their screen time, productivity score, app usage,
+    time tracking, how they spent their day/week, or wants reports on their computer activity. Requires API key in TOOLS.md
+    or passed directly.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rescuetime
+
+    ```'
+examples:
+- description: Install RescueTime from ClawHub
+  usage: clawhub install rescuetime
+schema_version: '1.0'

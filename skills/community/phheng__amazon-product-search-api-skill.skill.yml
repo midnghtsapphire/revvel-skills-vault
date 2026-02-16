@@ -1,0 +1,63 @@
+name: amazon-product-search-api-skill
+title: Amazon Product Search Api Skill
+version: 0.1.0
+description: 'This skill is designed to help users automatically extract product data from Amazon search results. The Agent
+  should proactively apply this skill when users request: 1. Search for products related to [keyword]; 2. Find best-selling
+  items from [brand]; 3. Monitor product prices and availability on Am'
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - amazon
+  - product
+  - search
+  - api
+  - skill
+  source: clawhub-community
+  clawhub_slug: amazon-product-search-api-skill
+  clawhub_path: phheng/amazon-product-search-api-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Amazon Product Search Api Skill
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install amazon-product-search-api-skill
+
+    # Path: phheng/amazon-product-search-api-skill
+
+
+    ## Description
+
+    This skill is designed to help users automatically extract product data from Amazon search results. The Agent should proactively
+    apply this skill when users request: 1. Search for products related to [keyword]; 2. Find best-selling items from [brand];
+    3. Monitor product prices and availability on Am
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/amazon_product_search_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install amazon-product-search-api-skill
+
+    ```'
+examples:
+- description: Install Amazon Product Search Api Skill from ClawHub
+  usage: clawhub install amazon-product-search-api-skill
+schema_version: '1.0'

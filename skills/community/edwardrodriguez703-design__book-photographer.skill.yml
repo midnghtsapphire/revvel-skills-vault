@@ -1,0 +1,56 @@
+name: book-photographer
+title: Book Photographer
+version: 1.0.1
+description: Book photographer services through Lokuli MCP. Use when user needs to find and book photographer. Triggers on
+  requests like "book a photographer", "find photographer near me", or any photographer service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Media & Content
+  tags:
+  - media-content
+  - book
+  - photographer
+  source: clawhub-community
+  clawhub_slug: book-photographer
+  clawhub_path: edwardrodriguez703-design/book-photographer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Photographer
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-photographer
+
+    # Path: edwardrodriguez703-design/book-photographer
+
+
+    ## Description
+
+    Book photographer services through Lokuli MCP. Use when user needs to find and book photographer. Triggers on requests
+    like "book a photographer", "find photographer near me", or any photographer service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-photographer
+
+    ```'
+examples:
+- description: Install Book Photographer from ClawHub
+  usage: clawhub install book-photographer
+schema_version: '1.0'

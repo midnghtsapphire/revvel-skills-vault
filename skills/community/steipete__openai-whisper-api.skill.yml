@@ -1,0 +1,57 @@
+name: openai-whisper-api
+title: Openai Whisper Api
+version: 1.0.0
+description: Transcribe audio via OpenAI Audio Transcriptions API (Whisper).
+metadata:
+  author: steipete
+  category: Media & Content
+  tags:
+  - media-content
+  - openai
+  - whisper
+  - api
+  source: clawhub-community
+  clawhub_slug: openai-whisper-api
+  clawhub_path: steipete/openai-whisper-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openai Whisper Api
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install openai-whisper-api
+
+    # Path: steipete/openai-whisper-api
+
+
+    ## Description
+
+    Transcribe audio via OpenAI Audio Transcriptions API (Whisper).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/transcribe.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openai-whisper-api
+
+    ```'
+examples:
+- description: Install Openai Whisper Api from ClawHub
+  usage: clawhub install openai-whisper-api
+schema_version: '1.0'

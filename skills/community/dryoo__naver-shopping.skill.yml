@@ -1,0 +1,58 @@
+name: naver-shopping
+title: Naver Shopping Search
+version: 1.0.0
+description: Search for products on Naver Shopping. Use when the user wants to find product prices, links, or compare items
+  in the Korean market.
+metadata:
+  author: dryoo
+  category: Search & Research
+  tags:
+  - search-research
+  - naver
+  - shopping
+  source: clawhub-community
+  clawhub_slug: naver-shopping
+  clawhub_path: dryoo/naver-shopping
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Naver Shopping Search
+
+    # Source: ClawHub community skill by dryoo
+
+    # Install: clawhub install naver-shopping
+
+    # Path: dryoo/naver-shopping
+
+
+    ## Description
+
+    Search for products on Naver Shopping. Use when the user wants to find product prices, links, or compare items in the
+    Korean market.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search_shopping.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install naver-shopping
+
+    ```'
+examples:
+- description: Install Naver Shopping Search from ClawHub
+  usage: clawhub install naver-shopping
+schema_version: '1.0'

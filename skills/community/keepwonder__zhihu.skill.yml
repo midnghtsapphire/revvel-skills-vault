@@ -1,0 +1,61 @@
+name: zhihu
+title: Zhihu
+version: 1.0.1
+description: 'Manage Zhihu (知乎) AI Bot integration. Use for: (1) Publishing pins (想法) to Zhihu Rings, (2) Liking/unliking
+  pins and comments, (3) Creating comments on pins, (4) Deleting comments, (5) Getting ring details and content lists, (6)
+  Getting comment lists. Requires Zhihu API credentials (app_key and app_'
+metadata:
+  author: keepwonder
+  category: Development & Coding
+  tags:
+  - development-coding
+  - zhihu
+  source: clawhub-community
+  clawhub_slug: zhihu
+  clawhub_path: keepwonder/zhihu
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zhihu
+
+    # Source: ClawHub community skill by keepwonder
+
+    # Install: clawhub install zhihu
+
+    # Path: keepwonder/zhihu
+
+
+    ## Description
+
+    Manage Zhihu (知乎) AI Bot integration. Use for: (1) Publishing pins (想法) to Zhihu Rings, (2) Liking/unliking pins and comments,
+    (3) Creating comments on pins, (4) Deleting comments, (5) Getting ring details and content lists, (6) Getting comment
+    lists. Requires Zhihu API credentials (app_key and app_
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/zhihu_bot.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zhihu
+
+    ```'
+examples:
+- description: Install Zhihu from ClawHub
+  usage: clawhub install zhihu
+schema_version: '1.0'

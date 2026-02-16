@@ -1,0 +1,66 @@
+name: collaboration-helper
+title: Collaboration Helper
+version: 1.0.1
+description: Track action items and coordination signals for the community, including quick task creation, status checks,
+  and handoff notes. Use this when you need to log a collaborative task or check what everyone is currently working on.
+metadata:
+  author: crimsondevil333333
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - collaboration
+  - helper
+  source: clawhub-community
+  clawhub_slug: collaboration-helper
+  clawhub_path: crimsondevil333333/collaboration-helper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Collaboration Helper
+
+    # Source: ClawHub community skill by crimsondevil333333
+
+    # Install: clawhub install collaboration-helper
+
+    # Path: crimsondevil333333/collaboration-helper
+
+
+    ## Description
+
+    Track action items and coordination signals for the community, including quick task creation, status checks, and handoff
+    notes. Use this when you need to log a collaborative task or check what everyone is currently working on.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/tasks.json
+
+    - references/collaboration-guide.md
+
+    - scripts/collaboration_helper.py
+
+    - tests/test_collaboration_helper.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install collaboration-helper
+
+    ```'
+examples:
+- description: Install Collaboration Helper from ClawHub
+  usage: clawhub install collaboration-helper
+schema_version: '1.0'

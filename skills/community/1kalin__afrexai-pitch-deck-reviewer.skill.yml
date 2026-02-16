@@ -1,0 +1,55 @@
+name: pitch_deck_reviewer
+title: AfrexAI Pitch Deck Reviewer
+version: 1.0.0
+description: Reviews pitch decks and provides investor-ready feedback with scoring
+metadata:
+  author: 1kalin
+  category: General
+  tags:
+  - general
+  - pitch
+  - deck
+  - reviewer
+  source: clawhub-community
+  clawhub_slug: afrexai-pitch-deck-reviewer
+  clawhub_path: 1kalin/afrexai-pitch-deck-reviewer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AfrexAI Pitch Deck Reviewer
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install afrexai-pitch-deck-reviewer
+
+    # Path: 1kalin/afrexai-pitch-deck-reviewer
+
+
+    ## Description
+
+    Reviews pitch decks and provides investor-ready feedback with scoring
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install afrexai-pitch-deck-reviewer
+
+    ```'
+examples:
+- description: Install AfrexAI Pitch Deck Reviewer from ClawHub
+  usage: clawhub install afrexai-pitch-deck-reviewer
+schema_version: '1.0'

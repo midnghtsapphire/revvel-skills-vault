@@ -1,0 +1,56 @@
+name: yahoo-finance
+title: Yahoo Finance CLI
+version: 1.0.0
+description: This skill should be used when the user asks to "get stock prices", "check stock quotes", "look up earnings",
+  "get financial data", "find trending stocks", or needs stock market data from Yahoo Finance.
+metadata:
+  author: stuhorsman
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - yahoo
+  - finance
+  source: clawhub-community
+  clawhub_slug: yahoo-finance-cli
+  clawhub_path: stuhorsman/yahoo-finance-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Yahoo Finance CLI
+
+    # Source: ClawHub community skill by stuhorsman
+
+    # Install: clawhub install yahoo-finance-cli
+
+    # Path: stuhorsman/yahoo-finance-cli
+
+
+    ## Description
+
+    This skill should be used when the user asks to "get stock prices", "check stock quotes", "look up earnings", "get financial
+    data", "find trending stocks", or needs stock market data from Yahoo Finance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yahoo-finance-cli
+
+    ```'
+examples:
+- description: Install Yahoo Finance CLI from ClawHub
+  usage: clawhub install yahoo-finance-cli
+schema_version: '1.0'

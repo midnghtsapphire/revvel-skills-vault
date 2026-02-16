@@ -1,0 +1,33 @@
+name: next-browser
+title: Nextbrowser
+version: 1.0.6
+description: 'Use Nextbrowser cloud API to spin up cloud browsers for Openclaw to run autonomous browser tasks. Primary use
+  is creating browser sessions with profiles (persisted logins/cookies) that Openclaw can control to manage social media and
+  other online accounts. Secondary use is running task subagents for '
+metadata:
+  author: highxshell
+  category: Search & Research
+  tags:
+  - search-research
+  - next
+  - browser
+  source: clawhub-community
+  clawhub_slug: next-browser
+  clawhub_path: highxshell/next-browser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Nextbrowser\n# Source: ClawHub community skill by highxshell\n# Install: clawhub install next-browser\n# Path:\
+    \ highxshell/next-browser\n\n## Description\nUse Nextbrowser cloud API to spin up cloud browsers for Openclaw to run autonomous\
+    \ browser tasks. Primary use is creating browser sessions with profiles (persisted logins/cookies) that Openclaw can control\
+    \ to manage social media and other online accounts. Secondary use is running task subagents for \n\n## Files\n- SKILL.md\n\
+    - _meta.json\n\n## Installation\n```bash\nclawhub install next-browser\n```"
+examples:
+- description: Install Nextbrowser from ClawHub
+  usage: clawhub install next-browser
+schema_version: '1.0'

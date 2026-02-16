@@ -1,0 +1,71 @@
+name: senseguard
+title: Senseguard
+version: 1.0.1
+description: Semantic security scanner for OpenClaw skills. Detects prompt injection, data exfiltration, and hidden instructions
+  that traditional code scanners miss. Use when user asks to scan skills, check skill safety, or run a security audit.
+metadata:
+  author: fermionoid
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - senseguard
+  source: clawhub-community
+  clawhub_slug: senseguard
+  clawhub_path: fermionoid/senseguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Senseguard
+
+    # Source: ClawHub community skill by fermionoid
+
+    # Install: clawhub install senseguard
+
+    # Path: fermionoid/senseguard
+
+
+    ## Description
+
+    Semantic security scanner for OpenClaw skills. Detects prompt injection, data exfiltration, and hidden instructions that
+    traditional code scanners miss. Use when user asks to scan skills, check skill safety, or run a security audit.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cache_manager.py
+
+    - scripts/report_generator.py
+
+    - scripts/reputation_scorer.py
+
+    - scripts/rule_engine.py
+
+    - scripts/scanner.py
+
+    - scripts/semantic_analyzer.py
+
+    - scripts/rules/data_exfiltration.yaml
+
+    - scripts/rules/malicious_code.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install senseguard
+
+    ```'
+examples:
+- description: Install Senseguard from ClawHub
+  usage: clawhub install senseguard
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: breweries
+title: Breweries
+version: 1.0.0
+description: '"CLI for AI agents to find breweries for their humans. Uses Open Brewery DB. No auth required."'
+metadata:
+  author: jeffaf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - breweries
+  source: clawhub-community
+  clawhub_slug: breweries
+  clawhub_path: jeffaf/breweries
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Breweries
+
+    # Source: ClawHub community skill by jeffaf
+
+    # Install: clawhub install breweries
+
+    # Path: jeffaf/breweries
+
+
+    ## Description
+
+    "CLI for AI agents to find breweries for their humans. Uses Open Brewery DB. No auth required."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install breweries
+
+    ```'
+examples:
+- description: Install Breweries from ClawHub
+  usage: clawhub install breweries
+schema_version: '1.0'

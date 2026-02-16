@@ -1,0 +1,59 @@
+name: github-issue-tracker
+title: Github Issue Tracker
+version: 1.0.0
+description: Task-level GitHub issue tracking for fine-grained progress visibility via comments, checklists, and labels. Use
+  when tracking detailed task progress in GitHub, managing team collaboration on specific tasks, or tracking blocking issues.
+  Enables per-task updates and discussions.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - issue
+  - tracker
+  source: clawhub-community
+  clawhub_slug: sw-github-issue-tracker
+  clawhub_path: anton-abyzov/sw-github-issue-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Github Issue Tracker
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-github-issue-tracker
+
+    # Path: anton-abyzov/sw-github-issue-tracker
+
+
+    ## Description
+
+    Task-level GitHub issue tracking for fine-grained progress visibility via comments, checklists, and labels. Use when tracking
+    detailed task progress in GitHub, managing team collaboration on specific tasks, or tracking blocking issues. Enables
+    per-task updates and discussions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-github-issue-tracker
+
+    ```'
+examples:
+- description: Install Github Issue Tracker from ClawHub
+  usage: clawhub install sw-github-issue-tracker
+schema_version: '1.0'

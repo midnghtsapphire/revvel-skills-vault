@@ -1,0 +1,68 @@
+name: internal-comms
+title: Internal Comms
+version: 0.1.0
+description: A set of resources to help me write all kinds of internal communications, using the formats that my company likes
+  to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership
+  updates, 3P updates, company newsletters, FAQs, incident rep
+metadata:
+  author: seanphan
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - internal
+  - comms
+  source: clawhub-community
+  clawhub_slug: internal-comms
+  clawhub_path: seanphan/internal-comms
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Internal Comms
+
+    # Source: ClawHub community skill by seanphan
+
+    # Install: clawhub install internal-comms
+
+    # Path: seanphan/internal-comms
+
+
+    ## Description
+
+    A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use.
+    Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership
+    updates, 3P updates, company newsletters, FAQs, incident rep
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/3p-updates.md
+
+    - examples/company-newsletter.md
+
+    - examples/faq-answers.md
+
+    - examples/general-comms.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install internal-comms
+
+    ```'
+examples:
+- description: Install Internal Comms from ClawHub
+  usage: clawhub install internal-comms
+schema_version: '1.0'

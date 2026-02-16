@@ -1,0 +1,57 @@
+name: book-car-wash
+title: Book Car Wash
+version: 1.0.1
+description: Book car-wash services through Lokuli MCP. Use when user needs to find and book car-wash. Triggers on requests
+  like "book a car-wash", "find car-wash near me", or any car-wash service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - car
+  - wash
+  source: clawhub-community
+  clawhub_slug: book-car-wash
+  clawhub_path: edwardrodriguez703-design/book-car-wash
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Car Wash
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-car-wash
+
+    # Path: edwardrodriguez703-design/book-car-wash
+
+
+    ## Description
+
+    Book car-wash services through Lokuli MCP. Use when user needs to find and book car-wash. Triggers on requests like "book
+    a car-wash", "find car-wash near me", or any car-wash service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-car-wash
+
+    ```'
+examples:
+- description: Install Book Car Wash from ClawHub
+  usage: clawhub install book-car-wash
+schema_version: '1.0'

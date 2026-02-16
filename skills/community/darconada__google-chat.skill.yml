@@ -1,0 +1,66 @@
+name: google-chat
+title: Google Chat
+version: 1.0.0
+description: Send messages to Google Chat spaces and users via webhooks or OAuth. Use when you need to send notifications,
+  alerts, or messages to Google Chat channels (spaces) or direct messages to specific users. Supports both incoming webhooks
+  (for predefined channels) and OAuth 2.0 (for dynamic messaging to a
+metadata:
+  author: darconada
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - google
+  - chat
+  source: clawhub-community
+  clawhub_slug: google-chat
+  clawhub_path: darconada/google-chat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Chat
+
+    # Source: ClawHub community skill by darconada
+
+    # Install: clawhub install google-chat
+
+    # Path: darconada/google-chat
+
+
+    ## Description
+
+    Send messages to Google Chat spaces and users via webhooks or OAuth. Use when you need to send notifications, alerts,
+    or messages to Google Chat channels (spaces) or direct messages to specific users. Supports both incoming webhooks (for
+    predefined channels) and OAuth 2.0 (for dynamic messaging to a
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/config-example.json
+
+    - scripts/send_oauth.py
+
+    - scripts/send_webhook.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-chat
+
+    ```'
+examples:
+- description: Install Google Chat from ClawHub
+  usage: clawhub install google-chat
+schema_version: '1.0'

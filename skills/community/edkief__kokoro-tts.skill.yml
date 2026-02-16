@@ -1,0 +1,60 @@
+name: kokoro-tts
+title: Kokoro TTS
+version: 0.1.0
+description: Generate spoken audio from text using the local Kokoro TTS engine. Use when the user asks to "say" something,
+  requests a voice message, or wants text converted to speech.
+metadata:
+  author: edkief
+  category: Media & Content
+  tags:
+  - media-content
+  - kokoro
+  - tts
+  source: clawhub-community
+  clawhub_slug: kokoro-tts
+  clawhub_path: edkief/kokoro-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kokoro TTS
+
+    # Source: ClawHub community skill by edkief
+
+    # Install: clawhub install kokoro-tts
+
+    # Path: edkief/kokoro-tts
+
+
+    ## Description
+
+    Generate spoken audio from text using the local Kokoro TTS engine. Use when the user asks to "say" something, requests
+    a voice message, or wants text converted to speech.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/voices.md
+
+    - scripts/tts.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kokoro-tts
+
+    ```'
+examples:
+- description: Install Kokoro TTS from ClawHub
+  usage: clawhub install kokoro-tts
+schema_version: '1.0'

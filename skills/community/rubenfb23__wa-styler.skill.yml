@@ -1,0 +1,56 @@
+name: whatsapp-styler
+title: WhatsApp Styler
+version: 1.0.0
+description: Skill to ensure all messages sent to WhatsApp follow the platform's specific formatting syntax. It prevents markdown
+  bloat and ensures a clean, mobile-first reading experience.
+metadata:
+  author: rubenfb23
+  category: Communication
+  tags:
+  - communication
+  - whatsapp
+  - styler
+  source: clawhub-community
+  clawhub_slug: wa-styler
+  clawhub_path: rubenfb23/wa-styler
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WhatsApp Styler
+
+    # Source: ClawHub community skill by rubenfb23
+
+    # Install: clawhub install wa-styler
+
+    # Path: rubenfb23/wa-styler
+
+
+    ## Description
+
+    Skill to ensure all messages sent to WhatsApp follow the platform''s specific formatting syntax. It prevents markdown
+    bloat and ensures a clean, mobile-first reading experience.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wa-styler
+
+    ```'
+examples:
+- description: Install WhatsApp Styler from ClawHub
+  usage: clawhub install wa-styler
+schema_version: '1.0'

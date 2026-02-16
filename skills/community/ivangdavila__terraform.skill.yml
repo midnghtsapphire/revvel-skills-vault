@@ -1,0 +1,53 @@
+name: terraform
+title: Terraform
+version: 1.0.0
+description: Avoid common Terraform mistakes — state corruption, count vs for_each, lifecycle traps, and dependency ordering.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - terraform
+  source: clawhub-community
+  clawhub_slug: terraform
+  clawhub_path: ivangdavila/terraform
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Terraform
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install terraform
+
+    # Path: ivangdavila/terraform
+
+
+    ## Description
+
+    Avoid common Terraform mistakes — state corruption, count vs for_each, lifecycle traps, and dependency ordering.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install terraform
+
+    ```'
+examples:
+- description: Install Terraform from ClawHub
+  usage: clawhub install terraform
+schema_version: '1.0'

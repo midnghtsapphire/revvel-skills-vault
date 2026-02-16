@@ -1,0 +1,53 @@
+name: tron
+title: TRON
+version: 1.0.0
+description: Assist with TRON TRX transactions, bandwidth, energy, and TRC-20 token transfers.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - tron
+  source: clawhub-community
+  clawhub_slug: tron
+  clawhub_path: ivangdavila/tron
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TRON
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install tron
+
+    # Path: ivangdavila/tron
+
+
+    ## Description
+
+    Assist with TRON TRX transactions, bandwidth, energy, and TRC-20 token transfers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tron
+
+    ```'
+examples:
+- description: Install TRON from ClawHub
+  usage: clawhub install tron
+schema_version: '1.0'

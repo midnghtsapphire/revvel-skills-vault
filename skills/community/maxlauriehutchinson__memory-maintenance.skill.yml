@@ -1,0 +1,70 @@
+name: _max_hutchinson_
+title: Memory Maintenance
+version: 1.0.0
+description: '"Intelligent memory management for OpenClaw agents. Reviews daily notes, suggests MEMORY.md updates, maintains
+  directory health, and auto-cleans old files. Recommended for agents with growing memory footprints."'
+metadata:
+  author: maxlauriehutchinson
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - '"max'
+  - hutchinson"
+  source: clawhub-community
+  clawhub_slug: memory-maintenance
+  clawhub_path: maxlauriehutchinson/memory-maintenance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Maintenance
+
+    # Source: ClawHub community skill by maxlauriehutchinson
+
+    # Install: clawhub install memory-maintenance
+
+    # Path: maxlauriehutchinson/memory-maintenance
+
+
+    ## Description
+
+    "Intelligent memory management for OpenClaw agents. Reviews daily notes, suggests MEMORY.md updates, maintains directory
+    health, and auto-cleans old files. Recommended for agents with growing memory footprints."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config/settings.json
+
+    - scripts/apply.sh
+
+    - scripts/cleanup.sh
+
+    - scripts/install.sh
+
+    - scripts/review.sh
+
+    - scripts/status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-maintenance
+
+    ```'
+examples:
+- description: Install Memory Maintenance from ClawHub
+  usage: clawhub install memory-maintenance
+schema_version: '1.0'

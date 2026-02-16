@@ -1,0 +1,53 @@
+name: markdown
+title: Markdown
+version: 1.0.1
+description: Generate clean, portable Markdown that renders correctly across parsers.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - markdown
+  source: clawhub-community
+  clawhub_slug: markdown
+  clawhub_path: ivangdavila/markdown
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Markdown
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install markdown
+
+    # Path: ivangdavila/markdown
+
+
+    ## Description
+
+    Generate clean, portable Markdown that renders correctly across parsers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install markdown
+
+    ```'
+examples:
+- description: Install Markdown from ClawHub
+  usage: clawhub install markdown
+schema_version: '1.0'

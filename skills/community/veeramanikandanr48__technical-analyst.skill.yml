@@ -1,0 +1,62 @@
+name: technical-analyst
+title: Technical Analyst
+version: 0.1.0
+description: This skill should be used when analyzing weekly price charts for stocks, stock indices, cryptocurrencies, or
+  forex pairs. Use this skill when the user provides chart images and requests technical analysis, trend identification, support/resistance
+  levels, scenario planning, or probability assessments
+metadata:
+  author: veeramanikandanr48
+  category: Media & Content
+  tags:
+  - media-content
+  - technical
+  - analyst
+  source: clawhub-community
+  clawhub_slug: technical-analyst
+  clawhub_path: veeramanikandanr48/technical-analyst
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Technical Analyst
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install technical-analyst
+
+    # Path: veeramanikandanr48/technical-analyst
+
+
+    ## Description
+
+    This skill should be used when analyzing weekly price charts for stocks, stock indices, cryptocurrencies, or forex pairs.
+    Use this skill when the user provides chart images and requests technical analysis, trend identification, support/resistance
+    levels, scenario planning, or probability assessments
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/analysis_template.md
+
+    - references/technical_analysis_framework.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install technical-analyst
+
+    ```'
+examples:
+- description: Install Technical Analyst from ClawHub
+  usage: clawhub install technical-analyst
+schema_version: '1.0'

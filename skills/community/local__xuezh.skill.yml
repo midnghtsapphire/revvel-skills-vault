@@ -1,0 +1,53 @@
+name: xuezh
+title: Xuezh
+version: 0.1.0
+description: Teach Mandarin using the xuezh engine for review, speaking, and audits.
+metadata:
+  author: local
+  category: General
+  tags:
+  - general
+  - xuezh
+  source: clawhub-community
+  clawhub_slug: xuezh
+  clawhub_path: local/xuezh
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xuezh
+
+    # Source: ClawHub community skill by local
+
+    # Install: clawhub install xuezh
+
+    # Path: local/xuezh
+
+
+    ## Description
+
+    Teach Mandarin using the xuezh engine for review, speaking, and audits.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xuezh
+
+    ```'
+examples:
+- description: Install Xuezh from ClawHub
+  usage: clawhub install xuezh
+schema_version: '1.0'

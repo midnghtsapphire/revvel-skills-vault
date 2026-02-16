@@ -1,0 +1,55 @@
+name: confidant
+title: Confidant
+version: 1.1.1
+description: Secure secret handoff from human to AI. Use when you need sensitive information from the user (API keys, passwords,
+  tokens, credentials, secrets). Never ask for secrets via chat — use Confidant instead.
+metadata:
+  author: ericsantos
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - confidant
+  source: clawhub-community
+  clawhub_slug: confidant
+  clawhub_path: ericsantos/confidant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Confidant
+
+    # Source: ClawHub community skill by ericsantos
+
+    # Install: clawhub install confidant
+
+    # Path: ericsantos/confidant
+
+
+    ## Description
+
+    Secure secret handoff from human to AI. Use when you need sensitive information from the user (API keys, passwords, tokens,
+    credentials, secrets). Never ask for secrets via chat — use Confidant instead.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install confidant
+
+    ```'
+examples:
+- description: Install Confidant from ClawHub
+  usage: clawhub install confidant
+schema_version: '1.0'

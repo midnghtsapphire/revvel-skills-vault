@@ -1,0 +1,63 @@
+name: vanar-neutron-memory
+title: Vanar Neutron Memory
+version: 1.1.1
+description: Store and retrieve agent memory using Vanar Neutron API. Use for saving information with semantic search, and
+  persisting agent context between sessions.
+metadata:
+  author: naeemmaliki036
+  category: Search & Research
+  tags:
+  - search-research
+  - vanar
+  - neutron
+  - memory
+  source: clawhub-community
+  clawhub_slug: vanar-neutron-memory
+  clawhub_path: naeemmaliki036/vanar-neutron-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vanar Neutron Memory
+
+    # Source: ClawHub community skill by naeemmaliki036
+
+    # Install: clawhub install vanar-neutron-memory
+
+    # Path: naeemmaliki036/vanar-neutron-memory
+
+
+    ## Description
+
+    Store and retrieve agent memory using Vanar Neutron API. Use for saving information with semantic search, and persisting
+    agent context between sessions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - hooks/post-tool-use.sh
+
+    - hooks/pre-tool-use.sh
+
+    - scripts/neutron-memory.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vanar-neutron-memory
+
+    ```'
+examples:
+- description: Install Vanar Neutron Memory from ClawHub
+  usage: clawhub install vanar-neutron-memory
+schema_version: '1.0'

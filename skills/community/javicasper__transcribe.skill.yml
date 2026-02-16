@@ -1,0 +1,57 @@
+name: transcribe
+title: Transcribe
+version: 1.0.2
+description: Transcribe audio files to text using local Whisper (Docker). Use when receiving voice messages, audio files (.mp3,
+  .m4a, .ogg, .wav, .webm), or when asked to transcribe audio content.
+metadata:
+  author: javicasper
+  category: Media & Content
+  tags:
+  - media-content
+  - transcribe
+  source: clawhub-community
+  clawhub_slug: transcribe
+  clawhub_path: javicasper/transcribe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Transcribe
+
+    # Source: ClawHub community skill by javicasper
+
+    # Install: clawhub install transcribe
+
+    # Path: javicasper/transcribe
+
+
+    ## Description
+
+    Transcribe audio files to text using local Whisper (Docker). Use when receiving voice messages, audio files (.mp3, .m4a,
+    .ogg, .wav, .webm), or when asked to transcribe audio content.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install transcribe
+
+    ```'
+examples:
+- description: Install Transcribe from ClawHub
+  usage: clawhub install transcribe
+schema_version: '1.0'

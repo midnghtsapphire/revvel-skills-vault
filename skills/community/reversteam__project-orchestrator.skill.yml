@@ -1,0 +1,72 @@
+name: project-orchestrator
+title: Project Orchestrator
+version: 0.2.0
+description: AI agent orchestrator with Neo4j knowledge graph, Meilisearch search, and Tree-sitter parsing. Use for coordinating
+  multiple coding agents on complex projects with shared context and plans.
+metadata:
+  author: reversteam
+  category: Search & Research
+  tags:
+  - search-research
+  - project
+  - orchestrator
+  source: clawhub-community
+  clawhub_slug: project-orchestrator
+  clawhub_path: reversteam/project-orchestrator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Project Orchestrator
+
+    # Source: ClawHub community skill by reversteam
+
+    # Install: clawhub install project-orchestrator
+
+    # Path: reversteam/project-orchestrator
+
+
+    ## Description
+
+    AI agent orchestrator with Neo4j knowledge graph, Meilisearch search, and Tree-sitter parsing. Use for coordinating multiple
+    coding agents on complex projects with shared context and plans.
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - CLAUDE.md
+
+    - CONTRIBUTING.md
+
+    - Cargo.toml
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docker-compose.yml
+
+    - docs/api/mcp-tools.md
+
+    - docs/api/reference.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install project-orchestrator
+
+    ```'
+examples:
+- description: Install Project Orchestrator from ClawHub
+  usage: clawhub install project-orchestrator
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: vigil
+title: Vigil
+version: 0.1.1
+description: AI agent safety guardrails for tool calls. Use when (1) you want to validate agent tool calls before execution,
+  (2) building agents that run shell commands, file operations, or API calls, (3) adding a safety layer to any MCP server
+  or agent framework, (4) auditing what your agents are doing. Catches
+metadata:
+  author: robinoppenstam
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - vigil
+  source: clawhub-community
+  clawhub_slug: vigil
+  clawhub_path: robinoppenstam/vigil
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vigil
+
+    # Source: ClawHub community skill by robinoppenstam
+
+    # Install: clawhub install vigil
+
+    # Path: robinoppenstam/vigil
+
+
+    ## Description
+
+    AI agent safety guardrails for tool calls. Use when (1) you want to validate agent tool calls before execution, (2) building
+    agents that run shell commands, file operations, or API calls, (3) adding a safety layer to any MCP server or agent framework,
+    (4) auditing what your agents are doing. Catches
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/vigil-check.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vigil
+
+    ```'
+examples:
+- description: Install Vigil from ClawHub
+  usage: clawhub install vigil
+schema_version: '1.0'

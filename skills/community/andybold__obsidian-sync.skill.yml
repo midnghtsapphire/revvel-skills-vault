@@ -1,0 +1,58 @@
+name: obsidian-sync
+title: Obsidian Sync
+version: 1.0.0
+description: Sync files between Clawdbot workspace and Obsidian. Run the sync server to enable two-way file synchronization
+  with the OpenClaw Obsidian plugin.
+metadata:
+  author: andybold
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - obsidian
+  - sync
+  source: clawhub-community
+  clawhub_slug: obsidian-sync
+  clawhub_path: andybold/obsidian-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Obsidian Sync
+
+    # Source: ClawHub community skill by andybold
+
+    # Install: clawhub install obsidian-sync
+
+    # Path: andybold/obsidian-sync
+
+
+    ## Description
+
+    Sync files between Clawdbot workspace and Obsidian. Run the sync server to enable two-way file synchronization with the
+    OpenClaw Obsidian plugin.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sync-server.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install obsidian-sync
+
+    ```'
+examples:
+- description: Install Obsidian Sync from ClawHub
+  usage: clawhub install obsidian-sync
+schema_version: '1.0'

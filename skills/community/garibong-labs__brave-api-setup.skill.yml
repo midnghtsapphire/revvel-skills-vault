@@ -1,0 +1,59 @@
+name: brave-api-setup
+title: Brave Api Setup
+version: 0.1.2
+description: Set up Brave Search API for OpenClaw web_search. Use when user needs to configure Brave API, get Brave API key,
+  enable web search, or fix "missing_brave_api_key" error.
+metadata:
+  author: garibong-labs
+  category: Search & Research
+  tags:
+  - search-research
+  - brave
+  - api
+  - setup
+  source: clawhub-community
+  clawhub_slug: brave-api-setup
+  clawhub_path: garibong-labs/brave-api-setup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Brave Api Setup
+
+    # Source: ClawHub community skill by garibong-labs
+
+    # Install: clawhub install brave-api-setup
+
+    # Path: garibong-labs/brave-api-setup
+
+
+    ## Description
+
+    Set up Brave Search API for OpenClaw web_search. Use when user needs to configure Brave API, get Brave API key, enable
+    web search, or fix "missing_brave_api_key" error.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/apply-api-key.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brave-api-setup
+
+    ```'
+examples:
+- description: Install Brave Api Setup from ClawHub
+  usage: clawhub install brave-api-setup
+schema_version: '1.0'

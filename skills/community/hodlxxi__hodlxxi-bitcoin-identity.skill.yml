@@ -1,0 +1,63 @@
+name: hodlxxi-bitcoin-identity
+title: Bitcoin Identity
+version: 0.1.0
+description: Integrate HODLXXI as a Bitcoin-native identity provider that bridges OAuth2/OIDC and Lightning LNURL-Auth for
+  client registration, authorization flows, JWT verification, and health monitoring.
+metadata:
+  author: hodlxxi
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - hodlxxi
+  - bitcoin
+  - identity
+  source: clawhub-community
+  clawhub_slug: hodlxxi-bitcoin-identity
+  clawhub_path: hodlxxi/hodlxxi-bitcoin-identity
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bitcoin Identity
+
+    # Source: ClawHub community skill by hodlxxi
+
+    # Install: clawhub install hodlxxi-bitcoin-identity
+
+    # Path: hodlxxi/hodlxxi-bitcoin-identity
+
+
+    ## Description
+
+    Integrate HODLXXI as a Bitcoin-native identity provider that bridges OAuth2/OIDC and Lightning LNURL-Auth for client registration,
+    authorization flows, JWT verification, and health monitoring.
+
+
+    ## Files
+
+    - HEARTBEAT.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/verify_signature.py
+
+    - templates/oauth-client.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hodlxxi-bitcoin-identity
+
+    ```'
+examples:
+- description: Install Bitcoin Identity from ClawHub
+  usage: clawhub install hodlxxi-bitcoin-identity
+schema_version: '1.0'

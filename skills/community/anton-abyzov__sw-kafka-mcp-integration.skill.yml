@@ -1,0 +1,57 @@
+name: kafka-mcp-integration
+title: Kafka Mcp Integration
+version: 1.0.0
+description: MCP server integration for Kafka operations with Claude Desktop and SpecWeave. Use when configuring Kafka MCP
+  servers, connecting Claude to Kafka topics, or choosing between MCP implementations.
+metadata:
+  author: anton-abyzov
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - kafka
+  - mcp
+  - integration
+  source: clawhub-community
+  clawhub_slug: sw-kafka-mcp-integration
+  clawhub_path: anton-abyzov/sw-kafka-mcp-integration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kafka Mcp Integration
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-kafka-mcp-integration
+
+    # Path: anton-abyzov/sw-kafka-mcp-integration
+
+
+    ## Description
+
+    MCP server integration for Kafka operations with Claude Desktop and SpecWeave. Use when configuring Kafka MCP servers,
+    connecting Claude to Kafka topics, or choosing between MCP implementations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-kafka-mcp-integration
+
+    ```'
+examples:
+- description: Install Kafka Mcp Integration from ClawHub
+  usage: clawhub install sw-kafka-mcp-integration
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: nightly-build
+title: Nightly Build
+version: 1.1.0
+description: ''
+metadata:
+  author: 0xraini
+  category: General
+  tags:
+  - general
+  - nightly
+  - build
+  source: clawhub-community
+  clawhub_slug: nightly-build
+  clawhub_path: 0xraini/nightly-build
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nightly Build
+
+    # Source: ClawHub community skill by 0xraini
+
+    # Install: clawhub install nightly-build
+
+    # Path: 0xraini/nightly-build
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/nightly.mjs
+
+    - scripts/nightly.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nightly-build
+
+    ```'
+examples:
+- description: Install Nightly Build from ClawHub
+  usage: clawhub install nightly-build
+schema_version: '1.0'

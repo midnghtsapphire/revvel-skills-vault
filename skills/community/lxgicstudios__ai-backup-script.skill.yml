@@ -1,0 +1,55 @@
+name: backup-script-gen
+title: Database Backup Scripts
+version: 1.0.2
+description: Generate database backup scripts with AI. Use when you need automated backups to S3, GCS, or local storage.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - backup
+  - script
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-backup-script
+  clawhub_path: lxgicstudios/ai-backup-script
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Database Backup Scripts
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-backup-script
+
+    # Path: lxgicstudios/ai-backup-script
+
+
+    ## Description
+
+    Generate database backup scripts with AI. Use when you need automated backups to S3, GCS, or local storage.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-backup-script
+
+    ```'
+examples:
+- description: Install Database Backup Scripts from ClawHub
+  usage: clawhub install ai-backup-script
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: trein
+title: Trein
+version: 1.0.0
+description: Query Dutch Railways (NS) for train departures, trip planning, disruptions, and station search via the trein
+  CLI.
+metadata:
+  author: joehoel
+  category: Search & Research
+  tags:
+  - search-research
+  - trein
+  source: clawhub-community
+  clawhub_slug: trein
+  clawhub_path: joehoel/trein
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trein
+
+    # Source: ClawHub community skill by joehoel
+
+    # Install: clawhub install trein
+
+    # Path: joehoel/trein
+
+
+    ## Description
+
+    Query Dutch Railways (NS) for train departures, trip planning, disruptions, and station search via the trein CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trein
+
+    ```'
+examples:
+- description: Install Trein from ClawHub
+  usage: clawhub install trein
+schema_version: '1.0'

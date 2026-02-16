@@ -1,0 +1,59 @@
+name: pi-health
+title: Pi Health
+version: 1.0.0
+description: Raspberry Pi health monitor. Check CPU temperature, throttling status, voltage levels, memory/disk usage, fan
+  RPM, overclock detection, and power issues. Use when monitoring Pi health, diagnosing thermal throttling, checking for under-voltage,
+  or verifying system stability on any Raspberry Pi (Pi 3/
+metadata:
+  author: josunlp
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - health
+  source: clawhub-community
+  clawhub_slug: pi-health
+  clawhub_path: josunlp/pi-health
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pi Health
+
+    # Source: ClawHub community skill by josunlp
+
+    # Install: clawhub install pi-health
+
+    # Path: josunlp/pi-health
+
+
+    ## Description
+
+    Raspberry Pi health monitor. Check CPU temperature, throttling status, voltage levels, memory/disk usage, fan RPM, overclock
+    detection, and power issues. Use when monitoring Pi health, diagnosing thermal throttling, checking for under-voltage,
+    or verifying system stability on any Raspberry Pi (Pi 3/
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/health.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pi-health
+
+    ```'
+examples:
+- description: Install Pi Health from ClawHub
+  usage: clawhub install pi-health
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: my-play-music-from-yt
+title: Play Music from YouTube
+version: 0.0.9
+description: '|'
+metadata:
+  author: whodidthese
+  category: Media & Content
+  tags:
+  - media-content
+  - play
+  - music
+  - from
+  - bash(playwright-cli:*)
+  source: clawhub-community
+  clawhub_slug: my-play-music-from-yt
+  clawhub_path: whodidthese/my-play-music-from-yt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(playwright-cli:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Play Music from YouTube
+
+    # Source: ClawHub community skill by whodidthese
+
+    # Install: clawhub install my-play-music-from-yt
+
+    # Path: whodidthese/my-play-music-from-yt
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/playwright-ref.md
+
+    - references/youtube-guide.md
+
+
+    ## Allowed Tools
+
+    Bash(playwright-cli:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install my-play-music-from-yt
+
+    ```'
+examples:
+- description: Install Play Music from YouTube from ClawHub
+  usage: clawhub install my-play-music-from-yt
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: test-google-chat
+title: Test Google Chat
+version: 1.0.0
+description: Test skill for Google Chat messaging
+metadata:
+  author: darconada
+  category: Search & Research
+  tags:
+  - search-research
+  - test
+  - google
+  - chat
+  source: clawhub-community
+  clawhub_slug: test-google-chat
+  clawhub_path: darconada/test-google-chat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Test Google Chat
+
+    # Source: ClawHub community skill by darconada
+
+    # Install: clawhub install test-google-chat
+
+    # Path: darconada/test-google-chat
+
+
+    ## Description
+
+    Test skill for Google Chat messaging
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install test-google-chat
+
+    ```'
+examples:
+- description: Install Test Google Chat from ClawHub
+  usage: clawhub install test-google-chat
+schema_version: '1.0'

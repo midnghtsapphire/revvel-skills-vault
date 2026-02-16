@@ -1,0 +1,266 @@
+name: mechanical_engineering
+title: Mechanical Engineering & Materials Science Expert
+version: 1.0.0
+description: Comprehensive mechanical engineering and materials science analysis covering material properties, stress/strain
+  analysis, fatigue prediction, composite design, FEA integration, manufacturing processes, and standards compliance
+metadata:
+  author: Revvel AI Engine
+  category: Engineering & Manufacturing
+  tags:
+  - fatigue-life-prediction
+  - material-properties-lookup
+  - fea-integration
+  - material-selection-ashby
+  - metallurgy-analysis
+  - mechanical
+  - engineering
+  - stress-strain-analysis
+  - composite-materials-design
+  - corrosion-analysis
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport math\nimport hashlib\nimport statistics\nimport unittest\nfrom typing\
+    \ import Dict, List, Any, Optional, Tuple, Union\nfrom datetime import datetime\nfrom collections import defaultdict\n\
+    import requests\n\nSKILL_METADATA = {\n    \"name\": \"Mechanical Engineering & Materials Science Expert\",\n    \"id\"\
+    : \"mechanical_engineering\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\"\
+    : \"Comprehensive mechanical engineering and materials science analysis covering material properties, stress/strain analysis,\
+    \ fatigue prediction, composite design, FEA integration, manufacturing processes, and standards compliance\",\n    \"\
+    capabilities\": [\n        \"material_properties_lookup\",\n        \"stress_strain_analysis\",\n        \"fatigue_life_prediction\"\
+    ,\n        \"composite_materials_design\",\n        \"metallurgy_analysis\",\n        \"fea_integration\",\n        \"\
+    material_selection_ashby\",\n        \"corrosion_analysis\",\n        \"thermal_analysis\",\n        \"manufacturing_process_selection\"\
+    ,\n        \"tolerance_stackup_analysis\",\n        \"gdt_interpretation\",\n        \"standards_compliance\",\n     \
+    \   \"failure_mode_analysis\",\n        \"weld_analysis\",\n        \"material_testing_protocols\",\n        \"additive_manufacturing_optimization\"\
+    ,\n        \"aerospace_materials\",\n        \"automotive_materials\",\n        \"biocompatible_materials\"\n    ],\n\
+    \    \"domain\": \"mechanical_engineering_materials_science\"\n}\n\nEXPERT_PROMPTS = {\n    \"material_selection\": \"\
+    \"\"You are a senior materials engineer. Help select the optimal material for {application} considering:\n- Operating\
+    \ temperature range: {temp_range}°C\n- Required strength: {strength_mpa} MPa\n- Weight constraint: {max_density} g/cm³\n\
+    - Environmental exposure: {environment}\n- Manufacturing method: {manufacturing_process}\n- Budget constraint: {budget_per_unit}\
+    \ USD/unit\n\nProvide material recommendations with justification, including alternatives ranked by performance index.\"\
+    \"\",\n    \n    \"fatigue_analysis\": \"\"\"Perform fatigue life analysis for {component_name} made of {material}:\n\
+    - Loading: {loading_type} ({stress_range} MPa range)\n- Mean stress: {mean_stress} MPa\n- Surface finish: {surface_finish}\n\
+    - Stress concentration factor: {kt}\n- Required life: {required_cycles} cycles\n- Operating temperature: {temp}°C\n\n\
+    Calculate safety factor and expected cycles to failure using appropriate fatigue models.\"\"\",\n    \n    \"composite_design\"\
+    : \"\"\"Design a composite laminate for {application}:\n- Required stiffness: {required_modulus} GPa\n- Required strength:\
+    \ {required_strength} MPa\n- Loading direction: {loading_direction}\n- Environmental conditions: {environment}\n- Manufacturing\
+    \ constraints: {constraints}\n\nSpecify fiber/matrix system, layup sequence, and fiber volume fraction.\"\"\",\n    \n\
+    \    \"fea_setup\": \"\"\"Generate FEA setup parameters for {analysis_type} analysis of {component}:\n- Material: {material}\n\
+    - Loading: {loading_conditions}\n- Boundary conditions: {boundary_conditions}\n- Mesh requirements: {mesh_density}\n-\
+    \ Nonlinear effects: {nonlinear_effects}\n- Contact definitions: {contact_pairs}\n\nProvide complete input deck with material\
+    \ properties, mesh guidelines, and solver settings.\"\"\",\n    \n    \"corrosion_assessment\": \"\"\"Evaluate corrosion\
+    \ risk for {material} in {environment}:\n- Temperature: {temp}°C\n- pH: {ph}\n- Chloride concentration: {cl_concentration}\
+    \ ppm\n- Exposure time: {exposure_years} years\n- Stress state: {stress_state}\n\nPredict corrosion rate, recommend protection\
+    \ methods, and estimate remaining life.\"\"\",\n    \n    \"manufacturing_process\": \"\"\"Select optimal manufacturing\
+    \ process for {part_name}:\n- Material: {material}\n- Production volume: {volume} units/year\n- Geometric complexity:\
+    \ {complexity}\n- Dimensional tolerance: {tolerance} mm\n- Surface finish requirement: {surface_finish}\n- Cost target:\
+    \ {cost_target} USD/part\n\nCompare processes (casting, forging, machining, additive, etc.) with cost analysis.\"\"\"\
+    ,\n    \n    \"tolerance_analysis\": \"\"\"Perform tolerance stack-up analysis for {assembly_name}:\n- Components: {component_list}\n\
+    - Critical dimensions: {critical_dims}\n- Manufacturing processes: {processes}\n- Statistical distribution: {distribution_type}\n\
+    - Required assembly yield: {target_yield}%\n\nCalculate predicted yield and recommend tolerance adjustments.\"\"\",\n\
+    \    \n    \"failure_mode_analysis\": \"\"\"Conduct FMEA for {system_name}:\n- Function: {system_function}\n- Operating\
+    \ conditions: {conditions}\n- Potential failure modes: {failure_modes}\n- Severity scale: 1-10\n- Occurrence probability:\
+    \ {occurrence_data}\n- Detection methods: {detection_methods}\n\nCalculate RPN values and recommend mitigation strategies.\"\
+    \"\"\n}\n\nINTEGRATION_POINTS = {\n    \"matweb_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://www.matweb.com/api/search\"\
+    ,\n        \"description\": \"Comprehensive material properties database\",\n        \"auth_method\": \"api_key\",\n \
+    \       \"documentation_url\": \"https://www.matweb.com/api/docs\"\n    },\n    \"ansys_mechanical\": {\n        \"type\"\
+    : \"tool\",\n        \"endpoint\": \"localhost:50052\",\n        \"description\": \"PyMechanical interface for Ansys Mechanical\
+    \ FEA\",\n        \"auth_method\": \"license\",\n        \"documentation_url\": \"https://mechanical.docs.pyansys.com\"\
+    \n    },\n    \"nasa_materials_db\": {\n        \"type\": \"database\",\n        \"endpoint\": \"https://materials.nasa.gov/api/v1\"\
+    ,\n        \"description\": \"NASA aerospace materials database\",\n        \"auth_method\": \"oauth2\",\n        \"documentation_url\"\
+    : \"https://materials.nasa.gov/api/docs\"\n    },\n    \"astm_standards\": {\n        \"type\": \"api\",\n        \"endpoint\"\
+    : \"https://compass.astm.org/api/standards\",\n        \"description\": \"ASTM standards and test methods\",\n       \
+    \ \"auth_method\": \"subscription\",\n        \"documentation_url\": \"https://compass.astm.org/api/docs\"\n    },\n \
+    \   \"granta_mds\": {\n        \"type\": \"database\",\n        \"endpoint\": \"https://grantadesign.com/api/mds\",\n\
+    \        \"description\": \"Granta Materials Data for Simulation\",\n        \"auth_method\": \"license\",\n        \"\
+    documentation_url\": \"https://grantadesign.com/api/docs\"\n    }\n}\n\nclass MaterialProperties:\n    \"\"\"Material\
+    \ properties database interface and utilities.\"\"\"\n    \n    @staticmethod\n    def parse_material_data(raw_data: str)\
+    \ -> Dict[str, Any]:\n        \"\"\"Parse material property data from various formats.\"\"\"\n        try:\n         \
+    \   if raw_data.strip().startswith('{'):\n                return json.loads(raw_data)\n            else:\n           \
+    \     # Parse tabular format\n                lines = [line.strip() for line in raw_data.split('\\n') if line.strip()]\n\
+    \                props = {}\n                for line in lines:\n                    if ':' in line:\n               \
+    \         key, value = line.split(':', 1)\n                        key = key.strip().lower().replace(' ', '_')\n     \
+    \                   value = value.strip()\n                        try:\n                            props[key] = float(value)\
+    \ if '.' in value or value.isdigit() else value\n                        except ValueError:\n                        \
+    \    props[key] = value\n                return props\n        except Exception as e:\n            raise ValueError(f\"\
+    Failed to parse material data: {str(e)}\")\n    \n    @staticmethod\n    def validate_properties(props: Dict[str, Any])\
+    \ -> bool:\n        \"\"\"Validate material properties for completeness.\"\"\"\n        required_props = ['density', 'elastic_modulus',\
+    \ 'yield_strength', 'ultimate_tensile_strength']\n        return all(prop in props for prop in required_props)\n    \n\
+    \    @staticmethod\n    def calculate_performance_index(props: Dict[str, Any], loading: str) -> float:\n        \"\"\"\
+    Calculate material performance index for given loading.\"\"\"\n        E = props.get('elastic_modulus', 0)\n        rho\
+    \ = props.get('density', 1)\n        sigma_y = props.get('yield_strength', 0)\n        \n        if loading == 'tension':\n\
+    \            return sigma_y / rho\n        elif loading == 'bending':\n            return math.sqrt(E) / rho\n       \
+    \ elif loading == 'stiffness_limited':\n            return E / rho\n        else:\n            return 0\n\nclass StressAnalysis:\n\
+    \    \"\"\"Stress and strain analysis utilities.\"\"\"\n    \n    @staticmethod\n    def calculate_stress_concentration(geometry:\
+    \ str, dimensions: Dict[str, float]) -> float:\n        \"\"\"Calculate stress concentration factor Kt for common geometries.\"\
+    \"\"\n        if geometry == 'circular_hole':\n            d = dimensions.get('hole_diameter', 0)\n            w = dimensions.get('plate_width',\
+    \ 1)\n            return 3.0 if d/w < 0.1 else 2.5\n        elif geometry == 'shoulder_fillet':\n            r = dimensions.get('fillet_radius',\
+    \ 0)\n            d = dimensions.get('smaller_diameter', 1)\n            return 1.5 + 0.5 * math.sqrt(r/d)\n        else:\n\
+    \            return 1.0\n    \n    @staticmethod\n    def mohr_circle_stress(sigma_x: float, sigma_y: float, tau_xy: float)\
+    \ -> Dict[str, float]:\n        \"\"\"Calculate principal stresses using Mohr's circle.\"\"\"\n        center = (sigma_x\
+    \ + sigma_y) / 2\n        radius = math.sqrt(((sigma_x - sigma_y) / 2) ** 2 + tau_xy ** 2)\n        \n        return {\n\
+    \            'sigma_1': center + radius,\n            'sigma_2': center - radius,\n            'tau_max': radius,\n  \
+    \          'theta_p': 0.5 * math.degrees(math.atan2(2 * tau_xy, sigma_x - sigma_y))\n        }\n    \n    @staticmethod\n\
+    \    def von_mises_stress(stress_tensor: List[float]) -> float:\n        \"\"\"Calculate von Mises equivalent stress.\"\
+    \"\"\n        if len(stress_tensor) == 3:\n            sx, sy, tau_xy = stress_tensor\n            return math.sqrt(sx**2\
+    \ + sy**2 - sx*sy + 3*tau_xy**2)\n        elif len(stress_tensor) == 6:\n            s1, s2, s3, s4, s5, s6 = stress_tensor\n\
+    \            return math.sqrt(0.5 * ((s1-s2)**2 + (s2-s3)**2 + (s3-s1)**2 + 6*(s4**2 + s5**2 + s6**2)))\n        else:\n\
+    \            raise ValueError(\"Invalid stress tensor dimensions\")\n\nclass FatigueAnalysis:\n    \"\"\"Fatigue life\
+    \ prediction and analysis.\"\"\"\n    \n    @staticmethod\n    def calculate_s_n_curve(material: str, ultimate_strength:\
+    \ float) -> Dict[str, float]:\n        \"\"\"Generate S-N curve parameters for fatigue analysis.\"\"\"\n        if material\
+    \ in ['steel', 'aluminum', 'titanium']:\n            endurance_limit = 0.5 * ultimate_strength\n            return {\n\
+    \                'endurance_limit': endurance_limit,\n                'fatigue_strength_coefficient': 1.1 * ultimate_strength,\n\
+    \                'fatigue_strength_exponent': -0.085\n            }\n        else:\n            return {\n           \
+    \     'endurance_limit': 0.4 * ultimate_strength,\n                'fatigue_strength_coefficient': ultimate_strength,\n\
+    \                'fatigue_strength_exponent': -0.1\n            }\n    \n    @staticmethod\n    def miner_damage_sum(cycles:\
+    \ List[float], stresses: List[float], sn_curve: Dict[str, float]) -> float:\n        \"\"\"Calculate Miner's rule damage\
+    \ sum.\"\"\"\n        damage = 0.0\n        for n, s in zip(cycles, stresses):\n            if s > sn_curve['endurance_limit']:\n\
+    \                Nf = (sn_curve['fatigue_strength_coefficient'] / s) ** (1/abs(sn_curve['fatigue_strength_exponent']))\n\
+    \                damage += n / Nf\n        return damage\n    \n    @staticmethod\n    def goodman_correction(alternating_stress:\
+    \ float, mean_stress: float, ultimate_strength: float) -> float:\n        \"\"\"Apply Goodman mean stress correction.\"\
+    \"\"\n        return alternating_stress / (1 - mean_stress / ultimate_strength)\n\nclass CompositeDesign:\n    \"\"\"\
+    Composite materials design and analysis.\"\"\"\n    \n    @staticmethod\n    def calculate_laminate_properties(layup:\
+    \ List[int], ply_props: Dict[str, float]) -> Dict[str, float]:\n        \"\"\"Calculate laminate stiffness properties.\"\
+    \"\"\n        Ex = ply_props.get('E1', 0)\n        Ey = ply_props.get('E2', 0)\n        Gxy = ply_props.get('G12', 0)\n\
+    \        nu_xy = ply_props.get('nu12', 0)\n        \n        # Simplified rule of mixtures\n        total_thickness =\
+    \ len(layup)\n        Ex_eff = sum(Ex * abs(math.cos(math.radians(angle))) for angle in layup) / total_thickness\n   \
+    \     Ey_eff = sum(Ey * abs(math.sin(math.radians(angle))) for angle in layup) / total_thickness\n        \n        return\
+    \ {\n            'Ex': Ex_eff,\n            'Ey': Ey_eff,\n            'Gxy': Gxy,\n            'nu_xy': nu_xy,\n    \
+    \        'total_thickness': total_thickness\n        }\n    \n    @staticmethod\n    def tsai_wu_failure(stress: List[float],\
+    \ strength: Dict[str, float]) -> float:\n        \"\"\"Tsai-Wu failure criterion for composites.\"\"\"\n        F1t =\
+    \ strength.get('F1t', 0)\n        F1c = strength.get('F1c', 0)\n        F2t = strength.get('F2t', 0)\n        F2c = strength.get('F2c',\
+    \ 0)\n        F12 = strength.get('F12', 0)\n        \n        sigma1, sigma2, tau12 = stress\n        \n        F1 = 1/F1t\
+    \ - 1/F1c\n        F2 = 1/F2t - 1/F2c\n        F11 = 1/(F1t * F1c)\n        F22 = 1/(F2t * F2c)\n        F66 = 1/(F12\
+    \ ** 2)\n        F12_cross = -0.5 * math.sqrt(F11 * F22)\n        \n        failure_index = (F11 * sigma1**2 + F22 * sigma2**2\
+    \ + F66 * tau12**2 + \n                        2 * F12_cross * sigma1 * sigma2 + F1 * sigma1 + F2 * sigma2)\n        \n\
+    \        return failure_index\n\nclass StandardsCompliance:\n    \"\"\"ASME/ISO standards compliance checking.\"\"\"\n\
+    \    \n    @staticmethod\n    def check_asme_viii_stress(stress: float, allowable_stress: float, temperature: float) ->\
+    \ Dict[str, Any]:\n        \"\"\"Check ASME VIII stress compliance.\"\"\"\n        temp_factor = 1.0 if temperature <\
+    \ 350 else 0.8\n        \n        utilization = stress / (allowable_stress * temp_factor)\n        \n        return {\n\
+    \            'compliant': utilization <= 1.0,\n            'utilization_ratio': utilization,\n            'safety_factor':\
+    \ 1 / utilization,\n            'temperature_factor': temp_factor\n        }\n    \n    @staticmethod\n    def check_iso_tolerance(dimension:\
+    \ float, tolerance_class: str) -> Dict[str, float]:\n        \"\"\"Check ISO tolerance for given dimension.\"\"\"\n  \
+    \      tolerance_table = {\n            'h7': lambda d: 0.000 if d <= 3 else (0.000 if d <= 6 else 0.000),\n         \
+    \   'h8': lambda d: 0.014 if d <= 3 else (0.018 if d <= 6 else 0.022),\n            'h9': lambda d: 0.025 if d <= 3 else\
+    \ (0.030 if d <= 6 else 0.036),\n            'H7': lambda d: 0.010 if d <= 3 else (0.012 if d <= 6 else 0.015),\n    \
+    \        'H8': lambda d: 0.014 if d <= 3 else (0.018 if d <= 6 else 0.022)\n        }\n        \n        if tolerance_class\
+    \ in tolerance_table:\n            tolerance = tolerance_table[tolerance_class](dimension)\n            return {\n   \
+    \             'upper_limit': dimension + tolerance/2,\n                'lower_limit': dimension - tolerance/2,\n     \
+    \           'tolerance_band': tolerance\n            }\n        else:\n            raise ValueError(f\"Unsupported tolerance\
+    \ class: {tolerance_class}\")\n\nclass ReportGenerator:\n    \"\"\"Generate engineering analysis reports.\"\"\"\n    \n\
+    \    @staticmethod\n    def create_material_report(material: str, properties: Dict[str, Any]) -> str:\n        \"\"\"\
+    Generate comprehensive material report.\"\"\"\n        report = f\"\"\"\nMATERIAL ANALYSIS REPORT\nMaterial: {material}\n\
+    Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\nPROPERTIES:\n\"\"\"\n        for key, value in properties.items():\n\
+    \            report += f\"{key.replace('_', ' ').title()}: {value}\\n\"\n        \n        report += f\"\\nPERFORMANCE\
+    \ INDICES:\\n\"\n        for loading in ['tension', 'bending', 'stiffness_limited']:\n            pi = MaterialProperties.calculate_performance_index(properties,\
+    \ loading)\n            report += f\"{loading.title()}: {pi:.2f}\\n\"\n        \n        return report\n    \n    @staticmethod\n\
+    \    def create_fatigue_report(component: str, analysis: Dict[str, Any]) -> str:\n        \"\"\"Generate fatigue analysis\
+    \ report.\"\"\"\n        return f\"\"\"\nFATIGUE ANALYSIS REPORT\nComponent: {component}\nAnalysis Date: {datetime.now().strftime('%Y-%m-%d\
+    \ %H:%M:%S')}\n\nRESULTS:\nExpected Life: {analysis.get('life_cycles', 'N/A')} cycles\nSafety Factor: {analysis.get('safety_factor',\
+    \ 'N/A')}\nDamage Ratio: {analysis.get('damage_ratio', 'N/A')}\nCritical Location: {analysis.get('critical_location',\
+    \ 'N/A')}\n\nRECOMMENDATIONS:\n{analysis.get('recommendations', 'No specific recommendations')}\n\"\"\"\n\nclass SkillEngine:\n\
+    \    \"\"\"Main skill engine for mechanical engineering analysis.\"\"\"\n    \n    def __init__(self, config: Dict[str,\
+    \ Any] = None):\n        self.config = config or {}\n        self.material_db = {}\n        self.analysis_cache = {}\n\
+    \        \n    def run(self, capability: str, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute requested\
+    \ capability.\"\"\"\n        try:\n            if capability == \"material_properties_lookup\":\n                return\
+    \ self._lookup_material_properties(params)\n            elif capability == \"stress_strain_analysis\":\n             \
+    \   return self._perform_stress_analysis(params)\n            elif capability == \"fatigue_life_prediction\":\n      \
+    \          return self._predict_fatigue_life(params)\n            elif capability == \"composite_materials_design\":\n\
+    \                return self._design_composite(params)\n            elif capability == \"material_selection_ashby\":\n\
+    \                return self._ashby_selection(params)\n            elif capability == \"standards_compliance\":\n    \
+    \            return self._check_standards(params)\n            elif capability == \"report_generation\":\n           \
+    \     return self._generate_report(params)\n            else:\n                raise ValueError(f\"Unsupported capability:\
+    \ {capability}\")\n        except Exception as e:\n            return {\"error\": str(e), \"success\": False}\n    \n\
+    \    def _lookup_material_properties(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Lookup material properties\
+    \ from database.\"\"\"\n        material = params.get('material', '')\n        if not material:\n            return {\"\
+    error\": \"Material name required\"}\n        \n        # Mock database lookup\n        mock_props = {\n            \"\
+    density\": 7.85,  # g/cm³\n            \"elastic_modulus\": 200,  # GPa\n            \"yield_strength\": 250,  # MPa\n\
+    \            \"ultimate_tensile_strength\": 400,  # MPa\n            \"poisson_ratio\": 0.3,\n            \"thermal_conductivity\"\
+    : 50,  # W/m·K\n            \"thermal_expansion\": 12e-6  # /°C\n        }\n        \n        return {\n            \"\
+    material\": material,\n            \"properties\": mock_props,\n            \"success\": True\n        }\n    \n    def\
+    \ _perform_stress_analysis(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Perform stress analysis.\"\"\
+    \"\n        loading = params.get('loading', {})\n        geometry = params.get('geometry', {})\n        \n        # Calculate\
+    \ stress concentration\n        kt = StressAnalysis.calculate_stress_concentration(\n            geometry.get('type',\
+    \ 'circular_hole'),\n            geometry.get('dimensions', {})\n        )\n        \n        # Calculate von Mises stress\n\
+    \        stress_tensor = loading.get('stress_tensor', [100, 50, 25])\n        von_mises = StressAnalysis.von_mises_stress(stress_tensor)\n\
+    \        \n        return {\n            \"stress_concentration_factor\": kt,\n            \"von_mises_stress\": von_mises,\n\
+    \            \"safety_factor\": params.get('yield_strength', 250) / von_mises,\n            \"success\": True\n      \
+    \  }\n    \n    def _predict_fatigue_life(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Predict fatigue\
+    \ life.\"\"\"\n        material = params.get('material', 'steel')\n        ultimate_strength = params.get('ultimate_strength',\
+    \ 400)\n        loading_cycles = params.get('loading_cycles', [])\n        \n        sn_curve = FatigueAnalysis.calculate_s_n_curve(material,\
+    \ ultimate_strength)\n        \n        damage = 0.0\n        if loading_cycles:\n            cycles = [lc['cycles'] for\
+    \ lc in loading_cycles]\n            stresses = [lc['stress'] for lc in loading_cycles]\n            damage = FatigueAnalysis.miner_damage_sum(cycles,\
+    \ stresses, sn_curve)\n        \n        return {\n            \"sn_curve\": sn_curve,\n            \"damage_ratio\":\
+    \ damage,\n            \"remaining_life\": 1/damage if damage > 0 else float('inf'),\n            \"success\": True\n\
+    \        }\n    \n    def _design_composite(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Design composite\
+    \ laminate.\"\"\"\n        layup = params.get('layup', [0, 45, -45, 90])\n        ply_props = params.get('ply_properties',\
+    \ {\n            'E1': 150, 'E2': 10, 'G12': 5, 'nu12': 0.3\n        })\n        \n        laminate_props = CompositeDesign.calculate_laminate_properties(layup,\
+    \ ply_props)\n        \n        return {\n            \"layup_sequence\": layup,\n            \"laminate_properties\"\
+    : laminate_props,\n            \"success\": True\n        }\n    \n    def _ashby_selection(self, params: Dict[str, Any])\
+    \ -> Dict[str, Any]:\n        \"\"\"Perform Ashby material selection.\"\"\"\n        requirements = params.get('requirements',\
+    \ {})\n        candidates = params.get('candidates', [])\n        \n        # Calculate performance indices\n        results\
+    \ = []\n        for material in candidates:\n            props = material.get('properties', {})\n            pi = MaterialProperties.calculate_performance_index(\n\
+    \                props, requirements.get('loading', 'tension')\n            )\n            results.append({\n        \
+    \        'material': material['name'],\n                'performance_index': pi,\n                'properties': props\n\
+    \            })\n        \n        # Sort by performance index\n        results.sort(key=lambda x: x['performance_index'],\
+    \ reverse=True)\n        \n        return {\n            \"ranked_materials\": results,\n            \"success\": True\n\
+    \        }\n    \n    def _check_standards(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Check standards\
+    \ compliance.\"\"\"\n        standard = params.get('standard', 'ASME_VIII')\n        stress = params.get('stress', 100)\n\
+    \        allowable = params.get('allowable_stress', 150)\n        temperature = params.get('temperature', 25)\n      \
+    \  \n        if standard == 'ASME_VIII':\n            result = StandardsCompliance.check_asme_viii_stress(stress, allowable,\
+    \ temperature)\n        else:\n            result = {\"compliant\": True, \"note\": \"Standard not implemented\"}\n  \
+    \      \n        return {**result, \"success\": True}\n    \n    def _generate_report(self, params: Dict[str, Any]) ->\
+    \ Dict[str, Any]:\n        \"\"\"Generate analysis report.\"\"\"\n        report_type = params.get('type', 'material')\n\
+    \        \n        if report_type == 'material':\n            material = params.get('material', 'Steel')\n           \
+    \ props = params.get('properties', {})\n            report = ReportGenerator.create_material_report(material, props)\n\
+    \        elif report_type == 'fatigue':\n            component = params.get('component', 'Component')\n            analysis\
+    \ = params.get('analysis', {})\n            report = ReportGenerator.create_fatigue_report(component, analysis)\n    \
+    \    else:\n            report = \"Report type not supported\"\n        \n        return {\n            \"report\": report,\n\
+    \            \"report_type\": report_type,\n            \"success\": True\n        }\n\nclass TestMechanicalEngineeringSkill(unittest.TestCase):\n\
+    \    \"\"\"Comprehensive test suite for mechanical engineering skill.\"\"\"\n    \n    def test_metadata(self):\n    \
+    \    \"\"\"Test skill metadata.\"\"\"\n        self.assertEqual(SKILL_METADATA['name'], \"Mechanical Engineering & Materials\
+    \ Science Expert\")\n        self.assertIn('material_properties_lookup', SKILL_METADATA['capabilities'])\n        self.assertEqual(len(SKILL_METADATA['capabilities']),\
+    \ 20)\n    \n    def test_material_properties_parsing(self):\n        \"\"\"Test material properties parsing.\"\"\"\n\
+    \        raw_data = \"density: 7.85\\nelastic_modulus: 200\\nyield_strength: 250\"\n        props = MaterialProperties.parse_material_data(raw_data)\n\
+    \        self.assertEqual(props['density'], 7.85)\n        self.assertEqual(props['elastic_modulus'], 200)\n        self.assertTrue(MaterialProperties.validate_properties(props))\n\
+    \    \n    def test_stress_concentration(self):\n        \"\"\"Test stress concentration calculation.\"\"\"\n        kt\
+    \ = StressAnalysis.calculate_stress_concentration('circular_hole', {'hole_diameter': 10, 'plate_width': 100})\n      \
+    \  self.assertAlmostEqual(kt, 3.0, places=1)\n    \n    def test_mohr_circle(self):\n        \"\"\"Test Mohr's circle\
+    \ calculation.\"\"\"\n        result = StressAnalysis.mohr_circle_stress(100, 50, 25)\n        self.assertIn('sigma_1',\
+    \ result)\n        self.assertIn('sigma_2', result)\n        self.assertGreater(result['sigma_1'], result['sigma_2'])\n\
+    \    \n    def test_von_mises_stress(self):\n        \"\"\"Test von Mises stress calculation.\"\"\"\n        stress =\
+    \ StressAnalysis.von_mises_stress([100, 50, 25])\n        self.assertAlmostEqual(stress, 95.39, places=1)\n    \n    def\
+    \ test_fatigue_analysis(self):\n        \"\"\"Test fatigue life prediction.\"\"\"\n        sn_curve = FatigueAnalysis.calculate_s_n_curve('steel',\
+    \ 400)\n        self.assertIn('endurance_limit', sn_curve)\n        self.assertAlmostEqual(sn_curve['endurance_limit'],\
+    \ 200, places=0)\n    \n    def test_composite_design(self):\n        \"\"\"Test composite laminate design.\"\"\"\n  \
+    \      layup = [0, 45, -45, 90]\n        props = {'E1': 150, 'E2': 10, 'G12': 5, 'nu12': 0.3}\n        result = CompositeDesign.calculate_laminate_properties(layup,\
+    \ props)\n        self.assertEqual(result['total_thickness'], 4)\n        self.assertGreater(result['Ex'], 0)\n    \n\
+    \    def test_standards_compliance(self):\n        \"\"\"Test standards compliance checking.\"\"\"\n        result = StandardsCompliance.check_asme_viii_stress(100,\
+    \ 150, 25)\n        self.assertTrue(result['compliant'])\n        self.assertLess(result['utilization_ratio'], 1.0)\n\
+    \    \n    def test_skill_engine(self):\n        \"\"\"Test skill engine capabilities.\"\"\"\n        engine = SkillEngine()\n\
+    \        \n        # Test material lookup\n        result = engine.run(\"material_properties_lookup\", {\"material\":\
+    \ \"Steel\"})\n        self.assertTrue(result['success'])\n        self.assertIn('properties', result)\n        \n   \
+    \     # Test stress analysis\n        result = engine.run(\"stress_strain_analysis\", {\n            \"loading\": {\"\
+    stress_tensor\": [100, 50, 25]},\n            \"geometry\": {\"type\": \"circular_hole\", \"dimensions\": {\"hole_diameter\"\
+    : 10}}\n        })\n        self.assertTrue(result['success'])\n        self.assertIn('von_mises_stress', result)\n  \
+    \      \n        # Test fatigue prediction\n        result = engine.run(\"fatigue_life_prediction\", {\n            \"\
+    material\": \"steel\",\n            \"ultimate_strength\": 400,\n            \"loading_cycles\": [{\"cycles\": 1000, \"\
+    stress\": 200}]\n        })\n        self.assertTrue(result['success'])\n        self.assertIn('damage_ratio', result)\n\
+    \    \n    def test_report_generation(self):\n        \"\"\"Test report generation.\"\"\"\n        engine = SkillEngine()\n\
+    \        result = engine.run(\"report_generation\", {\n            \"type\": \"material\",\n            \"material\":\
+    \ \"Test Material\",\n            \"properties\": {\"density\": 7.85, \"elastic_modulus\": 200}\n        })\n        self.assertTrue(result['success'])\n\
+    \        self.assertIn('report', result)\n    \n    def test_error_handling(self):\n        \"\"\"Test error handling.\"\
+    \"\"\n        engine = SkillEngine()\n        result = engine.run(\"invalid_capability\", {})\n        self.assertFalse(result['success'])\n\
+    \        self.assertIn('error', result)\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Mechanical Engineering & Materials Science Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''mechanical_engineering'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

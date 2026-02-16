@@ -1,0 +1,57 @@
+name: reflect
+title: Reflect Notes
+version: 1.0.0
+description: Append to daily notes and create notes in Reflect. Use for capturing thoughts, todos, or syncing information
+  to your knowledge graph.
+metadata:
+  author: sergical
+  category: General
+  tags:
+  - general
+  - reflect
+  source: clawhub-community
+  clawhub_slug: reflect
+  clawhub_path: sergical/reflect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reflect Notes
+
+    # Source: ClawHub community skill by sergical
+
+    # Install: clawhub install reflect
+
+    # Path: sergical/reflect
+
+
+    ## Description
+
+    Append to daily notes and create notes in Reflect. Use for capturing thoughts, todos, or syncing information to your knowledge
+    graph.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/reflect.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reflect
+
+    ```'
+examples:
+- description: Install Reflect Notes from ClawHub
+  usage: clawhub install reflect
+schema_version: '1.0'

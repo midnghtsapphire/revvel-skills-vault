@@ -1,0 +1,60 @@
+name: youtube-data
+title: Youtube Data
+version: 1.4.1
+description: Access YouTube video data — transcripts, metadata, channel info, search, and playlists. A lightweight alternative
+  to Google's YouTube Data API with no quota limits. Use when the user needs structured data from YouTube videos, channels,
+  or playlists without dealing with Google API setup, OAuth, or da
+metadata:
+  author: therohitdas
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - youtube
+  - data
+  source: clawhub-community
+  clawhub_slug: youtube-data
+  clawhub_path: therohitdas/youtube-data
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Youtube Data
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install youtube-data
+
+    # Path: therohitdas/youtube-data
+
+
+    ## Description
+
+    Access YouTube video data — transcripts, metadata, channel info, search, and playlists. A lightweight alternative to Google''s
+    YouTube Data API with no quota limits. Use when the user needs structured data from YouTube videos, channels, or playlists
+    without dealing with Google API setup, OAuth, or da
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tapi-auth.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-data
+
+    ```'
+examples:
+- description: Install Youtube Data from ClawHub
+  usage: clawhub install youtube-data
+schema_version: '1.0'

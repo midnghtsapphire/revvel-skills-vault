@@ -1,0 +1,63 @@
+name: ms-onedrive-personal-graph
+title: OneDrive Personal
+version: 0.1.0
+description: Access OneDrive Personal (consumer Microsoft accounts) via Microsoft Graph using OAuth device-code flow. Supports
+  ls/mkdir/upload/download/info; safe-by-default (no delete).
+metadata:
+  author: cesarus85
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - onedrive
+  - personal
+  - graph
+  source: clawhub-community
+  clawhub_slug: ms-onedrive-personal
+  clawhub_path: cesarus85/ms-onedrive-personal
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OneDrive Personal
+
+    # Source: ClawHub community skill by cesarus85
+
+    # Install: clawhub install ms-onedrive-personal
+
+    # Path: cesarus85/ms-onedrive-personal
+
+
+    ## Description
+
+    Access OneDrive Personal (consumer Microsoft accounts) via Microsoft Graph using OAuth device-code flow. Supports ls/mkdir/upload/download/info;
+    safe-by-default (no delete).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/onedrive-cli.sh
+
+    - scripts/onedrive-setup.sh
+
+    - scripts/onedrive-token.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ms-onedrive-personal
+
+    ```'
+examples:
+- description: Install OneDrive Personal from ClawHub
+  usage: clawhub install ms-onedrive-personal
+schema_version: '1.0'

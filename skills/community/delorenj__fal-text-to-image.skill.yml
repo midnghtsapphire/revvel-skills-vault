@@ -1,0 +1,67 @@
+name: fal-text-to-image
+title: Fal Text-to-Image
+version: 0.1.0
+description: Generate, remix, and edit images using fal.ai's AI models. Supports text-to-image generation, image-to-image
+  remixing, and targeted inpainting/editing.
+metadata:
+  author: delorenj
+  category: Media & Content
+  tags:
+  - media-content
+  - fal
+  - text
+  - image
+  source: clawhub-community
+  clawhub_slug: fal-text-to-image
+  clawhub_path: delorenj/fal-text-to-image
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fal Text-to-Image
+
+    # Source: ClawHub community skill by delorenj
+
+    # Install: clawhub install fal-text-to-image
+
+    # Path: delorenj/fal-text-to-image
+
+
+    ## Description
+
+    Generate, remix, and edit images using fal.ai''s AI models. Supports text-to-image generation, image-to-image remixing,
+    and targeted inpainting/editing.
+
+
+    ## Files
+
+    - CHEATSHEET.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - references/model-comparison.md
+
+    - references/usage-examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fal-text-to-image
+
+    ```'
+examples:
+- description: Install Fal Text-to-Image from ClawHub
+  usage: clawhub install fal-text-to-image
+schema_version: '1.0'

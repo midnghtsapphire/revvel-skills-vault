@@ -1,0 +1,55 @@
+name: mbti_personality_test
+title: OpenClaw Personality Test
+version: 1.0.1
+description: Myers-Briggs Type Indicator test - 70 questions to determine your 4-letter personality type
+metadata:
+  author: milbaxter
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mbti
+  - personality
+  - test
+  source: clawhub-community
+  clawhub_slug: personality-test
+  clawhub_path: milbaxter/personality-test
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Personality Test
+
+    # Source: ClawHub community skill by milbaxter
+
+    # Install: clawhub install personality-test
+
+    # Path: milbaxter/personality-test
+
+
+    ## Description
+
+    Myers-Briggs Type Indicator test - 70 questions to determine your 4-letter personality type
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install personality-test
+
+    ```'
+examples:
+- description: Install OpenClaw Personality Test from ClawHub
+  usage: clawhub install personality-test
+schema_version: '1.0'

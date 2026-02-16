@@ -1,0 +1,53 @@
+name: grammar
+title: Grammar
+version: 1.0.0
+description: Correct grammar and spelling without changing meaning or style.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - grammar
+  source: clawhub-community
+  clawhub_slug: grammar
+  clawhub_path: ivangdavila/grammar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Grammar
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install grammar
+
+    # Path: ivangdavila/grammar
+
+
+    ## Description
+
+    Correct grammar and spelling without changing meaning or style.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install grammar
+
+    ```'
+examples:
+- description: Install Grammar from ClawHub
+  usage: clawhub install grammar
+schema_version: '1.0'

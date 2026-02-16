@@ -1,0 +1,54 @@
+name: audit-fixer
+title: NPM Audit Fixer
+version: 1.0.2
+description: Analyze npm audit output with AI and get actionable fix suggestions. Use when dealing with security vulnerabilities.
+metadata:
+  author: lxgicstudios
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - audit
+  - fixer
+  source: clawhub-community
+  clawhub_slug: ai-audit-fix
+  clawhub_path: lxgicstudios/ai-audit-fix
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NPM Audit Fixer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-audit-fix
+
+    # Path: lxgicstudios/ai-audit-fix
+
+
+    ## Description
+
+    Analyze npm audit output with AI and get actionable fix suggestions. Use when dealing with security vulnerabilities.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-audit-fix
+
+    ```'
+examples:
+- description: Install NPM Audit Fixer from ClawHub
+  usage: clawhub install ai-audit-fix
+schema_version: '1.0'

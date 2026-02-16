@@ -1,0 +1,63 @@
+name: hippius
+title: Hippius Storage
+version: 1.0.1
+description: Hippius decentralized storage on Bittensor Subnet 75 — upload files, query storage, manage buckets via S3-compatible
+  API. Use when user asks to upload to Hippius, check storage status, set up Hippius credentials, list buckets/files, or asks
+  about IPFS vs S3 options.
+metadata:
+  author: maxquick
+  category: Development & Coding
+  tags:
+  - development-coding
+  - hippius
+  source: clawhub-community
+  clawhub_slug: hippius
+  clawhub_path: maxquick/hippius
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hippius Storage
+
+    # Source: ClawHub community skill by maxquick
+
+    # Install: clawhub install hippius
+
+    # Path: maxquick/hippius
+
+
+    ## Description
+
+    Hippius decentralized storage on Bittensor Subnet 75 — upload files, query storage, manage buckets via S3-compatible API.
+    Use when user asks to upload to Hippius, check storage status, set up Hippius credentials, list buckets/files, or asks
+    about IPFS vs S3 options.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cli_commands.md
+
+    - references/storage_guide.md
+
+    - scripts/query_storage.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hippius
+
+    ```'
+examples:
+- description: Install Hippius Storage from ClawHub
+  usage: clawhub install hippius
+schema_version: '1.0'

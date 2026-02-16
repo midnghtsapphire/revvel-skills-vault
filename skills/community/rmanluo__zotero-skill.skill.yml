@@ -1,0 +1,73 @@
+name: zotero
+title: Zotero
+version: 0.1.6
+description: Zotero integration for both personal and Group libraries. search items (title/author/tags/year/fulltext/combined
+  queries), create/update/delete items and metadata, add/edit item-level notes, perform bulk operations, and sync attachments
+  (upload PDF or link URL). Trigger when user asks to search thei
+metadata:
+  author: rmanluo
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - zotero
+  source: clawhub-community
+  clawhub_slug: zotero-skill
+  clawhub_path: rmanluo/zotero-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zotero
+
+    # Source: ClawHub community skill by rmanluo
+
+    # Install: clawhub install zotero-skill
+
+    # Path: rmanluo/zotero-skill
+
+
+    ## Description
+
+    Zotero integration for both personal and Group libraries. search items (title/author/tags/year/fulltext/combined queries),
+    create/update/delete items and metadata, add/edit item-level notes, perform bulk operations, and sync attachments (upload
+    PDF or link URL). Trigger when user asks to search thei
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/config.example.json
+
+    - references/security.md
+
+    - references/usage-examples.md
+
+    - references/zotero-api.md
+
+    - scripts/cli.py
+
+    - scripts/install.sh
+
+    - scripts/pyzotero_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zotero-skill
+
+    ```'
+examples:
+- description: Install Zotero from ClawHub
+  usage: clawhub install zotero-skill
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: clawstin
+title: Skill
+version: 1.1.0
+description: Inform users about Clawstin (OpenClaw meetups in Austin), show upcoming events, handle RSVP and mailing list
+  signup via API. "Keep Austin Clawd."
+metadata:
+  author: youens
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawstin
+  source: clawhub-community
+  clawhub_slug: clawstin
+  clawhub_path: youens/clawstin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill
+
+    # Source: ClawHub community skill by youens
+
+    # Install: clawhub install clawstin
+
+    # Path: youens/clawstin
+
+
+    ## Description
+
+    Inform users about Clawstin (OpenClaw meetups in Austin), show upcoming events, handle RSVP and mailing list signup via
+    API. "Keep Austin Clawd."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawstin
+
+    ```'
+examples:
+- description: Install Skill from ClawHub
+  usage: clawhub install clawstin
+schema_version: '1.0'

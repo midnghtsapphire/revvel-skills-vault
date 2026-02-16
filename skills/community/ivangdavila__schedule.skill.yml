@@ -1,0 +1,59 @@
+name: _schedule_
+title: Schedule
+version: 1.0.0
+description: '"Program any recurring or one-time task. Daily reports, reminders, checks. Simple requests stay simple."'
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - '"schedule"'
+  source: clawhub-community
+  clawhub_slug: schedule
+  clawhub_path: ivangdavila/schedule
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Schedule
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install schedule
+
+    # Path: ivangdavila/schedule
+
+
+    ## Description
+
+    "Program any recurring or one-time task. Daily reports, reminders, checks. Simple requests stay simple."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - jobs.md
+
+    - patterns.md
+
+    - traps.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install schedule
+
+    ```'
+examples:
+- description: Install Schedule from ClawHub
+  usage: clawhub install schedule
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: book-tires
+title: Book Tires
+version: 1.0.1
+description: Book tires services through Lokuli MCP. Use when user needs to find and book tires. Triggers on requests like
+  "book a tires", "find tires near me", or any tires service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - tires
+  source: clawhub-community
+  clawhub_slug: book-tires
+  clawhub_path: edwardrodriguez703-design/book-tires
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Tires
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-tires
+
+    # Path: edwardrodriguez703-design/book-tires
+
+
+    ## Description
+
+    Book tires services through Lokuli MCP. Use when user needs to find and book tires. Triggers on requests like "book a
+    tires", "find tires near me", or any tires service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-tires
+
+    ```'
+examples:
+- description: Install Book Tires from ClawHub
+  usage: clawhub install book-tires
+schema_version: '1.0'

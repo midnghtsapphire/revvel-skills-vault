@@ -1,0 +1,60 @@
+name: brand-analyzer
+title: Brand Identity Analyzer
+version: 1.1.0
+description: Analyze brands to generate comprehensive brand identity profiles (JSON). Use when the user wants to analyze a
+  brand, create a brand profile, or needs brand data for ad generation. Stores profiles for reuse across Ad-Ready, Morpheus,
+  and other creative workflows. Can list existing profiles and update
+metadata:
+  author: pauldelavallaz
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - brand
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: brand-identity-analyzer
+  clawhub_path: pauldelavallaz/brand-identity-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Brand Identity Analyzer
+
+    # Source: ClawHub community skill by pauldelavallaz
+
+    # Install: clawhub install brand-identity-analyzer
+
+    # Path: pauldelavallaz/brand-identity-analyzer
+
+
+    ## Description
+
+    Analyze brands to generate comprehensive brand identity profiles (JSON). Use when the user wants to analyze a brand, create
+    a brand profile, or needs brand data for ad generation. Stores profiles for reuse across Ad-Ready, Morpheus, and other
+    creative workflows. Can list existing profiles and update
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/analyze.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brand-identity-analyzer
+
+    ```'
+examples:
+- description: Install Brand Identity Analyzer from ClawHub
+  usage: clawhub install brand-identity-analyzer
+schema_version: '1.0'

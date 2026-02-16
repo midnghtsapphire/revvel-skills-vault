@@ -1,0 +1,60 @@
+name: code-reviewer
+title: Code Reviewer
+version: 1.0.0
+description: Elite code review expert for quality, security, and maintainability analysis with AI-assisted review techniques.
+  Use for PR reviews, security vulnerability detection, or code quality assessment. Covers static analysis, performance patterns,
+  and best practices enforcement.
+metadata:
+  author: anton-abyzov
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - code
+  - reviewer
+  source: clawhub-community
+  clawhub_slug: sw-code-reviewer
+  clawhub_path: anton-abyzov/sw-code-reviewer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Code Reviewer
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-code-reviewer
+
+    # Path: anton-abyzov/sw-code-reviewer
+
+
+    ## Description
+
+    Elite code review expert for quality, security, and maintainability analysis with AI-assisted review techniques. Use for
+    PR reviews, security vulnerability detection, or code quality assessment. Covers static analysis, performance patterns,
+    and best practices enforcement.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-code-reviewer
+
+    ```'
+examples:
+- description: Install Code Reviewer from ClawHub
+  usage: clawhub install sw-code-reviewer
+schema_version: '1.0'

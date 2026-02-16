@@ -1,0 +1,60 @@
+name: ga4
+title: GA4 Analytics
+version: 1.0.0
+description: Query Google Analytics 4 (GA4) data via the Analytics Data API. Use when you need to pull website analytics like
+  top pages, traffic sources, user counts, sessions, conversions, or any GA4 metrics/dimensions. Supports custom date ranges
+  and filtering.
+metadata:
+  author: jdrhyne
+  category: Search & Research
+  tags:
+  - search-research
+  - ga4
+  source: clawhub-community
+  clawhub_slug: ga4
+  clawhub_path: jdrhyne/ga4
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GA4 Analytics
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install ga4
+
+    # Path: jdrhyne/ga4
+
+
+    ## Description
+
+    Query Google Analytics 4 (GA4) data via the Analytics Data API. Use when you need to pull website analytics like top pages,
+    traffic sources, user counts, sessions, conversions, or any GA4 metrics/dimensions. Supports custom date ranges and filtering.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ga4_auth.py
+
+    - scripts/ga4_query.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ga4
+
+    ```'
+examples:
+- description: Install GA4 Analytics from ClawHub
+  usage: clawhub install ga4
+schema_version: '1.0'

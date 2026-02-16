@@ -1,0 +1,57 @@
+name: preview
+title: Preview
+version: 1.0.0
+description: Documentation view expert for Docusaurus integration. Launches interactive server for SpecWeave living documentation
+  with hot reload, auto-generated sidebar, and Mermaid diagrams. Works in ANY SpecWeave project with auto-setup. Supports
+  both internal (port 3015) and public (port 3016) docs. Activate
+metadata:
+  author: anton-abyzov
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - preview
+  source: clawhub-community
+  clawhub_slug: sw-preview
+  clawhub_path: anton-abyzov/sw-preview
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Preview
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-preview
+
+    # Path: anton-abyzov/sw-preview
+
+
+    ## Description
+
+    Documentation view expert for Docusaurus integration. Launches interactive server for SpecWeave living documentation with
+    hot reload, auto-generated sidebar, and Mermaid diagrams. Works in ANY SpecWeave project with auto-setup. Supports both
+    internal (port 3015) and public (port 3016) docs. Activate
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-preview
+
+    ```'
+examples:
+- description: Install Preview from ClawHub
+  usage: clawhub install sw-preview
+schema_version: '1.0'

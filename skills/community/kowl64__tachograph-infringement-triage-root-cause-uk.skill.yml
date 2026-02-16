@@ -1,0 +1,65 @@
+name: tachograph-infringement-triage-root-cause-uk
+title: Tachograph Triage & Root-Cause Prompts (UK)
+version: 1.0.0
+description: Triages tachograph infringements, identifies common patterns, and outputs “what to check next” prompts and weekly
+  review notes. USE WHEN doing weekly tacho/WTD reviews.
+metadata:
+  author: kowl64
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - tachograph
+  - infringement
+  - triage
+  - root
+  - cause
+  source: clawhub-community
+  clawhub_slug: tachograph-infringement-triage-root-cause-uk
+  clawhub_path: kowl64/tachograph-infringement-triage-root-cause-uk
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tachograph Triage & Root-Cause Prompts (UK)
+
+    # Source: ClawHub community skill by kowl64
+
+    # Install: clawhub install tachograph-infringement-triage-root-cause-uk
+
+    # Path: kowl64/tachograph-infringement-triage-root-cause-uk
+
+
+    ## Description
+
+    Triages tachograph infringements, identifies common patterns, and outputs “what to check next” prompts and weekly review
+    notes. USE WHEN doing weekly tacho/WTD reviews.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/weekly-review-pack-template.md
+
+    - assets/what-to-check-next-playbook.md
+
+    - references/common-infringement-patterns.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tachograph-infringement-triage-root-cause-uk
+
+    ```'
+examples:
+- description: Install Tachograph Triage & Root-Cause Prompts (UK) from ClawHub
+  usage: clawhub install tachograph-infringement-triage-root-cause-uk
+schema_version: '1.0'

@@ -1,0 +1,69 @@
+name: devlog
+title: Devlog
+version: 1.0.0
+description: '>-'
+metadata:
+  author: lordshashank
+  category: General
+  tags:
+  - general
+  - devlog
+  source: clawhub-community
+  clawhub_slug: devlog
+  clawhub_path: lordshashank/devlog
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Devlog
+
+    # Source: ClawHub community skill by lordshashank
+
+    # Install: clawhub install devlog
+
+    # Path: lordshashank/devlog
+
+
+    ## Description
+
+    >-
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/devlog-template.md
+
+    - examples/builders-log.md
+
+    - examples/technical.md
+
+    - examples/tutorial.md
+
+    - references/blog-writing-guide.md
+
+    - references/platforms/claude-code/claude-code.md
+
+    - references/platforms/claude-code/list-sessions.sh
+
+    - references/platforms/claude-code/read-session.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install devlog
+
+    ```'
+examples:
+- description: Install Devlog from ClawHub
+  usage: clawhub install devlog
+schema_version: '1.0'

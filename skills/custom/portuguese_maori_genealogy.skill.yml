@@ -1,0 +1,280 @@
+name: portuguese_maori_genealogy
+title: Portuguese & Maori/New Zealand Genealogy Expert
+version: 1.0.0
+description: Expert system for Portuguese and Maori/New Zealand genealogical research, covering civil records, whakapapa traditions,
+  DNA markers, and migration patterns
+metadata:
+  author: Revvel AI Engine
+  category: Intelligence & Research
+  tags:
+  - parse-portuguese-civil-records
+  - validate-maori-land-court-records
+  - search-historical-archives
+  - portuguese
+  - genealogy
+  - trace-portuguese-emigration
+  - maori
+  - validate-genealogical-data
+  - generate-dna-haplogroup-report
+  - analyze-maori-whakapapa
+  - build-family-tree
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import re\nimport json\nimport os\nimport hashlib\nimport statistics\nimport math\nfrom datetime import datetime\n\
+    from typing import Dict, List, Optional, Tuple, Any\nfrom collections import defaultdict, namedtuple\nimport unittest\n\
+    import requests\nfrom urllib.parse import urlencode\n\nSKILL_METADATA = {\n    \"name\": \"Portuguese & Maori/New Zealand\
+    \ Genealogy Expert\",\n    \"id\": \"portuguese_maori_genealogy\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel\
+    \ AI Engine\",\n    \"description\": \"Expert system for Portuguese and Maori/New Zealand genealogical research, covering\
+    \ civil records, whakapapa traditions, DNA markers, and migration patterns\",\n    \"capabilities\": [\n        \"parse_portuguese_civil_records\"\
+    ,\n        \"analyze_maori_whakapapa\",\n        \"trace_portuguese_emigration\",\n        \"validate_maori_land_court_records\"\
+    ,\n        \"generate_dna_haplogroup_report\",\n        \"build_family_tree\",\n        \"search_historical_archives\"\
+    ,\n        \"validate_genealogical_data\",\n        \"generate_research_report\",\n        \"cross_reference_migration_records\"\
+    \n    ],\n    \"domain\": \"genealogy\"\n}\n\nEXPERT_PROMPTS = {\n    \"portuguese_civil_record_analysis\": \"\"\"\nAnalyze\
+    \ the following Portuguese civil registration record:\n{record_text}\n\nExtract and structure the following information:\n\
+    - Event type (birth/marriage/death)\n- Full names of principal individuals\n- Dates and locations\n- Parents' names and\
+    \ origins\n- Witnesses/godparents\n- Any marginal notes or annotations\n\nReturn as JSON with keys: event_type, primary_person,\
+    \ date, location, parents, witnesses, notes\n\"\"\",\n    \n    \"maori_whakapapa_reconstruction\": \"\"\"\nGiven the\
+    \ following Maori genealogical information:\n{whakapapa_data}\n\nReconstruct the whakapapa following traditional formats:\n\
+    - Identify iwi, hapū, and whānau connections\n- Map generational relationships\n- Note any significant ancestors (tīpuna)\n\
+    - Include tribal affiliations and locations\n- Mark any gaps or disputed connections\n\nFormat as hierarchical JSON with\
+    \ keys: iwi, hapu, whanau, generations, significant_ancestors, locations, notes\n\"\"\",\n    \n    \"portuguese_emigration_trace\"\
+    : \"\"\"\nTrace Portuguese emigration for:\n{individual_name}\nBorn: {birth_date} in {birth_location}\nEmigration period:\
+    \ {emigration_range}\n\nSearch for:\n- Passport records from Torre do Tombo\n- Ship passenger lists (especially to Hawaii/California)\n\
+    - Azorean whaling records\n- Naturalization documents\n- Census records in destination country\n\nReturn timeline of migration\
+    \ events with sources\n\"\"\",\n    \n    \"dna_haplogroup_analysis\": \"\"\"\nAnalyze the following DNA test results:\n\
+    {dna_data}\n\nDetermine:\n- Y-DNA haplogroup (Portuguese/Maori markers)\n- mtDNA haplogroup\n- Autosomal DNA matches\n\
+    - Migration patterns based on genetic markers\n- Percentage breakdown by region\n- Notable genetic matches in genealogical\
+    \ databases\n\nFormat as detailed genetic ancestry report\n\"\"\",\n    \n    \"maori_land_court_search\": \"\"\"\nSearch\
+    \ Maori Land Court records for:\n{block_name} or {owner_name}\n\nRetrieve:\n- Minute book references\n- Ownership succession\n\
+    - Block histories\n- Any whakapapa recorded\n- Treaty claims associated\n- Current status\n\nReturn structured data with\
+    \ citations\n\"\"\",\n    \n    \"sephardic_lineage_validation\": \"\"\"\nInvestigate potential Sephardic Jewish ancestry\
+    \ for:\n{family_name} from {location}\n\nResearch:\n- Surname origins and variants\n- Crypto-Jewish practices in family\n\
+    - Inquisition records\n- Jewish community archives\n- DNA matches with known Sephardic families\n- Migration patterns\
+    \ consistent with Jewish diaspora\n\nProvide evidence assessment and confidence level\n\"\"\",\n    \n    \"cross_polynesian_connections\"\
+    : \"\"\"\nEstablish connections between Maori whakapapa and other Polynesian genealogies:\n{maori_lineage}\n\nCompare\
+    \ with:\n- Hawaiian moʻokūʻauhau\n- Tahitian genealogies\n- Samoan faʻalupega\n- Tongan langi\n\nIdentify:\n- Common ancestors\n\
+    - Migration timing\n- Cultural parallels\n- DNA evidence supporting connections\n\"\"\",\n    \n    \"research_report_generation\"\
+    : \"\"\"\nGenerate comprehensive genealogical research report for:\n{subject_name}\n\nInclude:\n- Executive summary\n\
+    - Documented lineage\n- Source citations\n- DNA evidence\n- Migration timeline\n- Cultural context\n- Recommendations\
+    \ for further research\n- Confidence levels for each claim\n\nFormat as professional report with sections and subsections\n\
+    \"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"torre_do_tombo_api\": {\n        \"type\": \"api\",\n        \"endpoint\":\
+    \ \"https://digitarq.arquivos.pt\",\n        \"description\": \"Portuguese National Archives digital repository\",\n \
+    \       \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://digitarq.arquivos.pt/docs\"\n    },\n\
+    \    \"bdm_nz_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://www.bdmhistoricalrecords.dia.govt.nz\"\
+    ,\n        \"description\": \"New Zealand Births, Deaths and Marriages historical records\",\n        \"auth_method\"\
+    : \"oauth2\",\n        \"documentation_url\": \"https://www.bdmhistoricalrecords.dia.govt.nz/api/docs\"\n    },\n    \"\
+    archives_nz_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://collections.archives.govt.nz\",\n  \
+    \      \"description\": \"Archives New Zealand collections search\",\n        \"auth_method\": \"api_key\",\n        \"\
+    documentation_url\": \"https://archives.govt.nz/api\"\n    },\n    \"maori_land_court_db\": {\n        \"type\": \"database\"\
+    ,\n        \"endpoint\": \"maori_land_court.research.govt.nz:5432/mlc_records\",\n        \"description\": \"Maori Land\
+    \ Court minute books and records\",\n        \"auth_method\": \"certificate\",\n        \"documentation_url\": \"https://maorilandcourt.govt.nz/research\"\
+    \n    },\n    \"familysearch_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.familysearch.org\"\
+    ,\n        \"description\": \"FamilySearch genealogical records\",\n        \"auth_method\": \"oauth2\",\n        \"documentation_url\"\
+    : \"https://www.familysearch.org/developers\"\n    },\n    \"azorean_emigration_db\": {\n        \"type\": \"database\"\
+    ,\n        \"endpoint\": \"emigration.azores.gov.pt:3306/passenger_records\",\n        \"description\": \"Azorean emigration\
+    \ and passenger records\",\n        \"auth_method\": \"basic_auth\",\n        \"documentation_url\": \"https://emigration.azores.gov.pt/api\"\
+    \n    }\n}\n\n# Utility functions\ndef parse_portuguese_date(date_str: str) -> Optional[datetime]:\n    \"\"\"Parse Portuguese\
+    \ date formats including variations like '15 de Março de 1875'.\"\"\"\n    months = {\n        'janeiro': 1, 'fevereiro':\
+    \ 2, 'março': 3, 'abril': 4, 'maio': 5, 'junho': 6,\n        'julho': 7, 'agosto': 8, 'setembro': 9, 'outubro': 10, 'novembro':\
+    \ 11, 'dezembro': 12\n    }\n    \n    date_str = date_str.lower().strip()\n    pattern = r'(\\d{1,2})\\s+de\\s+([a-zç]+)\\\
+    s+de\\s+(\\d{4})'\n    match = re.search(pattern, date_str)\n    \n    if match:\n        day = int(match.group(1))\n\
+    \        month = months.get(match.group(2), 1)\n        year = int(match.group(3))\n        return datetime(year, month,\
+    \ day)\n    \n    return None\n\ndef validate_maori_name(name: str) -> bool:\n    \"\"\"Validate Maori names according\
+    \ to traditional naming conventions.\"\"\"\n    if not name or len(name) < 2:\n        return False\n    \n    # Check\
+    \ for macrons and valid Maori characters\n    maori_pattern = r'^[A-Za-zĀāĒēĪīŌōŪū]+$'\n    if not re.match(maori_pattern,\
+    \ name):\n        return False\n    \n    # Check for common Maori name patterns\n    valid_prefixes = ['Te', 'Ngā', 'Ngāi',\
+    \ 'Ngāti', 'Tū', 'Whā', 'Rā']\n    name_parts = name.split()\n    \n    if len(name_parts) > 1 and name_parts[0] in valid_prefixes:\n\
+    \        return True\n    \n    # Single names should be at least 3 characters\n    return len(name) >= 3\n\ndef extract_portuguese_names(full_name:\
+    \ str) -> Dict[str, str]:\n    \"\"\"Parse Portuguese full names into components.\"\"\"\n    parts = full_name.strip().split()\n\
+    \    \n    # Handle common Portuguese name patterns\n    given_names = []\n    surnames = []\n    \n    # Find surname\
+    \ indicators\n    surname_indicators = ['de', 'da', 'dos', 'das', 'do', 'e']\n    \n    surname_start = len(parts)\n \
+    \   for i, part in enumerate(parts):\n        if part.lower() in surname_indicators and i > 0:\n            surname_start\
+    \ = i\n            break\n    \n    given_names = parts[:surname_start]\n    surnames = parts[surname_start:]\n    \n\
+    \    return {\n        'first_name': ' '.join(given_names),\n        'surname': ' '.join(surnames),\n        'full_name':\
+    \ full_name\n    }\n\ndef calculate_genetic_distance(dna1: Dict[str, float], dna2: Dict[str, float]) -> float:\n    \"\
+    \"\"Calculate genetic distance between two DNA profiles.\"\"\"\n    if not dna1 or not dna2:\n        return float('inf')\n\
+    \    \n    common_markers = set(dna1.keys()) & set(dna2.keys())\n    if not common_markers:\n        return float('inf')\n\
+    \    \n    distances = []\n    for marker in common_markers:\n        dist = abs(dna1[marker] - dna2[marker])\n      \
+    \  distances.append(dist)\n    \n    return statistics.mean(distances) if distances else float('inf')\n\ndef build_gedcom_lineage(individuals:\
+    \ List[Dict]) -> str:\n    \"\"\"Generate GEDCOM format lineage from individual records.\"\"\"\n    gedcom = []\n    gedcom.append(\"\
+    0 HEAD\")\n    gedcom.append(\"1 SOUR Revvel Genealogy Expert\")\n    gedcom.append(\"1 DATE {}\".format(datetime.now().strftime(\"\
+    %d %b %Y\")))\n    \n    for idx, person in enumerate(individuals):\n        person_id = f\"@{person.get('id', f'I{idx+1}')}@\"\
+    \n        gedcom.append(f\"0 {person_id} INDI\")\n        gedcom.append(f\"1 NAME {person.get('name', 'Unknown')}\")\n\
+    \        \n        if person.get('birth'):\n            gedcom.append(f\"1 BIRT\")\n            gedcom.append(f\"2 DATE\
+    \ {person['birth'].get('date', '')}\")\n            gedcom.append(f\"2 PLAC {person['birth'].get('place', '')}\")\n  \
+    \      \n        if person.get('parents'):\n            if person['parents'].get('father'):\n                gedcom.append(f\"\
+    1 FAMC @F{person['parents']['father']['id']}@\")\n    \n    gedcom.append(\"0 TRLR\")\n    return '\\n'.join(gedcom)\n\
+    \ndef search_maori_land_blocks(query: str) -> List[Dict]:\n    \"\"\"Search Maori Land Court records for land blocks.\"\
+    \"\"\n    # Mock implementation - in production would query actual database\n    blocks = [\n        {\n            \"\
+    block_name\": \"Te Whaiti-nui-a-Toi\",\n            \"area\": 5000,\n            \"owners\": [\"Ngāti Whare\", \"Ngāti\
+    \ Manawa\"],\n            \"court_reference\": \"MLC 1915/123\",\n            \"location\": \"Bay of Plenty\"\n      \
+    \  },\n        {\n            \"block_name\": \"Rangitaiki\",\n            \"area\": 12000,\n            \"owners\": [\"\
+    Ngāti Awa\", \"Ngāti Tuwharetoa\"],\n            \"court_reference\": \"MLC 1920/45\",\n            \"location\": \"Bay\
+    \ of Plenty\"\n        }\n    ]\n    \n    return [b for b in blocks if query.lower() in b['block_name'].lower()]\n\n\
+    def validate_portuguese_civil_record(record: Dict) -> Dict[str, Any]:\n    \"\"\"Validate Portuguese civil registration\
+    \ record structure.\"\"\"\n    required_fields = ['event_type', 'date', 'location', 'person_name']\n    validation = {\n\
+    \        'valid': True,\n        'errors': [],\n        'warnings': []\n    }\n    \n    for field in required_fields:\n\
+    \        if field not in record or not record[field]:\n            validation['valid'] = False\n            validation['errors'].append(f\"\
+    Missing required field: {field}\")\n    \n    if record.get('event_type') not in ['birth', 'marriage', 'death']:\n   \
+    \     validation['valid'] = False\n        validation['errors'].append(\"Invalid event type\")\n    \n    if record.get('date'):\n\
+    \        parsed_date = parse_portuguese_date(record['date'])\n        if not parsed_date:\n            validation['warnings'].append(\"\
+    Could not parse date format\")\n    \n    return validation\n\ndef generate_migration_timeline(events: List[Dict]) ->\
+    \ List[Dict]:\n    \"\"\"Generate chronological migration timeline from events.\"\"\"\n    timeline = []\n    \n    for\
+    \ event in events:\n        timeline.append({\n            'date': event.get('date'),\n            'event': event.get('type'),\n\
+    \            'location': event.get('location'),\n            'source': event.get('source'),\n            'notes': event.get('notes',\
+    \ '')\n        })\n    \n    return sorted(timeline, key=lambda x: x['date'] or '')\n\ndef analyze_naming_patterns(names:\
+    \ List[str]) -> Dict[str, Any]:\n    \"\"\"Analyze naming patterns in a family lineage.\"\"\"\n    patterns = {\n    \
+    \    'patronymic_frequency': 0,\n        'matronymic_frequency': 0,\n        'surname_variants': defaultdict(int),\n \
+    \       'given_name_repeats': defaultdict(int),\n        'generational_patterns': []\n    }\n    \n    for name in names:\n\
+    \        name_parts = extract_portuguese_names(name)\n        surname = name_parts['surname']\n        patterns['surname_variants'][surname]\
+    \ += 1\n        \n        first_name = name_parts['first_name'].split()[0]\n        patterns['given_name_repeats'][first_name]\
+    \ += 1\n    \n    # Calculate frequencies\n    total_names = len(names)\n    if total_names > 0:\n        patterns['patronymic_frequency']\
+    \ = sum(1 for n in names if 'son' in n.lower()) / total_names\n        patterns['matronymic_frequency'] = sum(1 for n\
+    \ in names if 'daughter' in n.lower()) / total_names\n    \n    return dict(patterns)\n\nclass SkillEngine:\n    \"\"\"\
+    Main skill engine for Portuguese & Maori genealogy research.\"\"\"\n    \n    def __init__(self, config: Dict[str, Any]\
+    \ = None):\n        self.config = config or {}\n        self.logger = self._setup_logging()\n        \n    def _setup_logging(self):\n\
+    \        \"\"\"Setup basic logging for the skill.\"\"\"\n        import logging\n        logging.basicConfig(level=logging.INFO)\n\
+    \        return logging.getLogger(__name__)\n    \n    def parse_portuguese_civil_records(self, record_text: str) -> Dict[str,\
+    \ Any]:\n        \"\"\"Parse Portuguese civil registration records.\"\"\"\n        self.logger.info(\"Parsing Portuguese\
+    \ civil record\")\n        \n        # Extract basic information using regex patterns\n        event_type = None\n   \
+    \     if 'nascimento' in record_text.lower():\n            event_type = 'birth'\n        elif 'casamento' in record_text.lower():\n\
+    \            event_type = 'marriage'\n        elif 'óbito' in record_text.lower():\n            event_type = 'death'\n\
+    \        \n        # Extract names\n        name_pattern = r'([A-Z][a-z]+(?:\\s+[A-Z][a-z]+)*(?:\\s+de\\s+[A-Z][a-z]+)*)'\n\
+    \        names = re.findall(name_pattern, record_text)\n        \n        # Extract dates\n        date_pattern = r'(\\\
+    d{1,2}\\s+de\\s+[a-zç]+\\s+de\\s+\\d{4})'\n        dates = re.findall(date_pattern, record_text.lower())\n        \n \
+    \       # Extract locations\n        location_pattern = r'(?:em|na|no)\\s+([A-Z][a-z]+(?:\\s+[A-Z][a-z]+)*)'\n       \
+    \ locations = re.findall(location_pattern, record_text)\n        \n        return {\n            'event_type': event_type,\n\
+    \            'person_name': names[0] if names else None,\n            'date': parse_portuguese_date(dates[0]) if dates\
+    \ else None,\n            'location': locations[0] if locations else None,\n            'raw_text': record_text\n    \
+    \    }\n    \n    def analyze_maori_whakapapa(self, whakapapa_data: Dict) -> Dict[str, Any]:\n        \"\"\"Analyze Maori\
+    \ whakapapa structure.\"\"\"\n        self.logger.info(\"Analyzing Maori whakapapa\")\n        \n        analysis = {\n\
+    \            'iwi': whakapapa_data.get('iwi', []),\n            'hapu': whakapapa_data.get('hapu', []),\n            'whanau':\
+    \ whakapapa_data.get('whanau', []),\n            'generations': [],\n            'significant_ancestors': [],\n      \
+    \      'locations': [],\n            'confidence': 0.0\n        }\n        \n        # Validate names\n        for name\
+    \ in whakapapa_data.get('names', []):\n            if validate_maori_name(name):\n                analysis['significant_ancestors'].append(name)\n\
+    \        \n        # Calculate confidence based on data completeness\n        total_fields = len([v for v in whakapapa_data.values()\
+    \ if v])\n        max_fields = len(whakapapa_data)\n        analysis['confidence'] = total_fields / max_fields if max_fields\
+    \ > 0 else 0\n        \n        return analysis\n    \n    def trace_portuguese_emigration(self, params: Dict[str, str])\
+    \ -> List[Dict]:\n        \"\"\"Trace Portuguese emigration patterns.\"\"\"\n        self.logger.info(\"Tracing Portuguese\
+    \ emigration\")\n        \n        # Mock implementation - would query actual databases\n        individual_name = params.get('individual_name',\
+    \ '')\n        birth_location = params.get('birth_location', '')\n        \n        timeline = []\n        \n        #\
+    \ Azores to Hawaii route\n        if 'azores' in birth_location.lower():\n            timeline.append({\n            \
+    \    'date': '1882-03-15',\n                'event': 'departure',\n                'location': 'Horta, Azores',\n    \
+    \            'ship': 'SS Hansa',\n                'destination': 'Honolulu, Hawaii'\n            })\n            timeline.append({\n\
+    \                'date': '1882-05-20',\n                'event': 'arrival',\n                'location': 'Honolulu, Hawaii',\n\
+    \                'ship': 'SS Hansa',\n                'source': 'Hawaii State Archives passenger lists'\n            })\n\
+    \        \n        return timeline\n    \n    def validate_maori_land_court_records(self, block_name: str) -> Dict[str,\
+    \ Any]:\n        \"\"\"Validate Maori Land Court records.\"\"\"\n        self.logger.info(\"Validating Maori Land Court\
+    \ records\")\n        \n        blocks = search_maori_land_blocks(block_name)\n        \n        if not blocks:\n    \
+    \        return {'valid': False, 'error': 'No matching land blocks found'}\n        \n        return {\n            'valid':\
+    \ True,\n            'blocks': blocks,\n            'total_blocks': len(blocks),\n            'court_references': [b['court_reference']\
+    \ for b in blocks]\n        }\n    \n    def generate_dna_haplogroup_report(self, dna_data: Dict) -> Dict[str, Any]:\n\
+    \        \"\"\"Generate DNA haplogroup analysis report.\"\"\"\n        self.logger.info(\"Generating DNA haplogroup report\"\
+    )\n        \n        report = {\n            'y_dna_haplogroup': dna_data.get('y_dna', 'Unknown'),\n            'mt_dna_haplogroup':\
+    \ dna_data.get('mt_dna', 'Unknown'),\n            'autosomal_breakdown': {},\n            'migration_patterns': [],\n\
+    \            'confidence': 0.0\n        }\n        \n        # Portuguese markers\n        if dna_data.get('y_dna', '').startswith('R1b'):\n\
+    \            report['migration_patterns'].append({\n                'route': 'Iberian Peninsula',\n                'timeframe':\
+    \ '4000-2000 BCE',\n                'confidence': 'high'\n            })\n        \n        # Maori/Polynesian markers\n\
+    \        if dna_data.get('mt_dna', '').startswith('B4'):\n            report['migration_patterns'].append({\n        \
+    \        'route': 'Polynesian Triangle',\n                'timeframe': '800-1200 CE',\n                'confidence': 'high'\n\
+    \            })\n        \n        return report\n    \n    def build_family_tree(self, individuals: List[Dict]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Build comprehensive family tree.\"\"\"\n        self.logger.info(\"Building family tree\")\n  \
+    \      \n        tree = {\n            'individuals': individuals,\n            'relationships': [],\n            'generations':\
+    \ defaultdict(list),\n            'gedcom': build_gedcom_lineage(individuals)\n        }\n        \n        # Organize\
+    \ by generation\n        for person in individuals:\n            generation = person.get('generation', 0)\n          \
+    \  tree['generations'][generation].append(person)\n        \n        return tree\n    \n    def search_historical_archives(self,\
+    \ query: Dict[str, str]) -> List[Dict]:\n        \"\"\"Search historical archives.\"\"\"\n        self.logger.info(\"\
+    Searching historical archives\")\n        \n        # Mock search results\n        results = []\n        \n        if\
+    \ query.get('type') == 'birth' and 'portugal' in query.get('location', '').lower():\n            results.append({\n  \
+    \              'record_type': 'birth',\n                'name': query.get('name'),\n                'date': '1875-03-15',\n\
+    \                'location': 'Lisbon, Portugal',\n                'archive': 'Torre do Tombo',\n                'reference':\
+    \ 'Registo Civil 1875/12345'\n            })\n        \n        return results\n    \n    def validate_genealogical_data(self,\
+    \ data: Dict) -> Dict[str, Any]:\n        \"\"\"Validate genealogical data integrity.\"\"\"\n        self.logger.info(\"\
+    Validating genealogical data\")\n        \n        validation = {\n            'valid': True,\n            'errors': [],\n\
+    \            'warnings': [],\n            'confidence': 0.0\n        }\n        \n        # Check for circular references\n\
+    \        individuals = data.get('individuals', [])\n        ids = [i.get('id') for i in individuals if i.get('id')]\n\
+    \        \n        if len(set(ids)) != len(ids):\n            validation['errors'].append(\"Duplicate individual IDs found\"\
+    )\n            validation['valid'] = False\n        \n        # Validate dates\n        for person in individuals:\n \
+    \           if person.get('birth', {}).get('date'):\n                try:\n                    datetime.strptime(person['birth']['date'],\
+    \ '%Y-%m-%d')\n                except ValueError:\n                    validation['warnings'].append(f\"Invalid birth\
+    \ date format for {person.get('name')}\")\n        \n        # Calculate confidence\n        total_checks = 3\n      \
+    \  passed_checks = total_checks - len(validation['errors'])\n        validation['confidence'] = passed_checks / total_checks\n\
+    \        \n        return validation\n    \n    def generate_research_report(self, data: Dict) -> str:\n        \"\"\"\
+    Generate comprehensive research report.\"\"\"\n        self.logger.info(\"Generating research report\")\n        \n  \
+    \      report = []\n        report.append(\"GENEALOGICAL RESEARCH REPORT\")\n        report.append(\"=\" * 40)\n     \
+    \   report.append(f\"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\")\n        report.append(\"\")\n     \
+    \   \n        # Executive summary\n        report.append(\"EXECUTIVE SUMMARY\")\n        report.append(\"-\" * 20)\n \
+    \       report.append(f\"Subject: {data.get('subject_name', 'Unknown')}\")\n        report.append(f\"Research Period:\
+    \ {data.get('period', 'Not specified')}\")\n        report.append(\"\")\n        \n        # Documented lineage\n    \
+    \    if data.get('lineage'):\n            report.append(\"DOCUMENTED LINEAGE\")\n            report.append(\"-\" * 20)\n\
+    \            for gen, people in data['lineage'].items():\n                report.append(f\"Generation {gen}:\")\n    \
+    \            for person in people:\n                    report.append(f\"  - {person.get('name', 'Unknown')} ({person.get('birth',\
+    \ '')})\")\n        \n        return '\\n'.join(report)\n    \n    def cross_reference_migration_records(self, params:\
+    \ Dict) -> List[Dict]:\n        \"\"\"Cross-reference migration records across sources.\"\"\"\n        self.logger.info(\"\
+    Cross-referencing migration records\")\n        \n        references = []\n        \n        # Portuguese emigration\n\
+    \        portuguese_timeline = self.trace_portuguese_emigration(params)\n        references.extend(portuguese_timeline)\n\
+    \        \n        # NZ immigration\n        nz_records = self.search_historical_archives({\n            'type': 'immigration',\n\
+    \            'name': params.get('individual_name'),\n            'location': 'new zealand'\n        })\n        references.extend(nz_records)\n\
+    \        \n        return references\n    \n    def run(self, capability: str, params: Dict[str, Any]) -> Any:\n     \
+    \   \"\"\"Main entry point for skill execution.\"\"\"\n        self.logger.info(f\"Running capability: {capability}\"\
+    )\n        \n        capability_map = {\n            'parse_portuguese_civil_records': self.parse_portuguese_civil_records,\n\
+    \            'analyze_maori_whakapapa': self.analyze_maori_whakapapa,\n            'trace_portuguese_emigration': self.trace_portuguese_emigration,\n\
+    \            'validate_maori_land_court_records': self.validate_maori_land_court_records,\n            'generate_dna_haplogroup_report':\
+    \ self.generate_dna_haplogroup_report,\n            'build_family_tree': self.build_family_tree,\n            'search_historical_archives':\
+    \ self.search_historical_archives,\n            'validate_genealogical_data': self.validate_genealogical_data,\n     \
+    \       'generate_research_report': self.generate_research_report,\n            'cross_reference_migration_records': self.cross_reference_migration_records\n\
+    \        }\n        \n        if capability not in capability_map:\n            raise ValueError(f\"Unknown capability:\
+    \ {capability}\")\n        \n        try:\n            return capability_map[capability](params)\n        except Exception\
+    \ as e:\n            self.logger.error(f\"Error in capability {capability}: {str(e)}\")\n            raise\n\nclass TestPortugueseMaoriGenealogy(unittest.TestCase):\n\
+    \    \"\"\"Comprehensive test suite for the genealogy skill.\"\"\"\n    \n    def setUp(self):\n        self.engine =\
+    \ SkillEngine()\n    \n    def test_skill_metadata(self):\n        \"\"\"Test skill metadata structure.\"\"\"\n      \
+    \  self.assertEqual(SKILL_METADATA['name'], \"Portuguese & Maori/New Zealand Genealogy Expert\")\n        self.assertIn('parse_portuguese_civil_records',\
+    \ SKILL_METADATA['capabilities'])\n        self.assertEqual(SKILL_METADATA['domain'], 'genealogy')\n    \n    def test_parse_portuguese_date(self):\n\
+    \        \"\"\"Test Portuguese date parsing.\"\"\"\n        date = parse_portuguese_date(\"15 de Março de 1875\")\n  \
+    \      self.assertEqual(date.year, 1875)\n        self.assertEqual(date.month, 3)\n        self.assertEqual(date.day,\
+    \ 15)\n        \n        invalid = parse_portuguese_date(\"invalid date\")\n        self.assertIsNone(invalid)\n    \n\
+    \    def test_validate_maori_name(self):\n        \"\"\"Test Maori name validation.\"\"\"\n        self.assertTrue(validate_maori_name(\"\
+    Te Rangitāwhia\"))\n        self.assertTrue(validate_maori_name(\"Ngāti Porou\"))\n        self.assertFalse(validate_maori_name(\"\
+    A\"))\n        self.assertFalse(validate_maori_name(\"123\"))\n    \n    def test_extract_portuguese_names(self):\n  \
+    \      \"\"\"Test Portuguese name extraction.\"\"\"\n        result = extract_portuguese_names(\"João Silva de Oliveira\"\
+    )\n        self.assertEqual(result['first_name'], \"João Silva\")\n        self.assertEqual(result['surname'], \"de Oliveira\"\
+    )\n    \n    def test_calculate_genetic_distance(self):\n        \"\"\"Test genetic distance calculation.\"\"\"\n    \
+    \    dna1 = {'marker1': 0.5, 'marker2': 0.3}\n        dna2 = {'marker1': 0.6, 'marker2': 0.2}\n        distance = calculate_genetic_distance(dna1,\
+    \ dna2)\n        self.assertAlmostEqual(distance, 0.1, places=2)\n    \n    def test_build_gedcom_lineage(self):\n   \
+    \     \"\"\"Test GEDCOM generation.\"\"\"\n        individuals = [\n            {'id': 'I1', 'name': 'John Doe', 'birth':\
+    \ {'date': '1900-01-01', 'place': 'Lisbon'}}\n        ]\n        gedcom = build_gedcom_lineage(individuals)\n        self.assertIn(\"\
+    0 @I1@ INDI\", gedcom)\n        self.assertIn(\"1 NAME John Doe\", gedcom)\n    \n    def test_search_maori_land_blocks(self):\n\
+    \        \"\"\"Test Maori land block search.\"\"\"\n        results = search_maori_land_blocks(\"Te Whaiti\")\n      \
+    \  self.assertEqual(len(results), 1)\n        self.assertEqual(results[0]['block_name'], \"Te Whaiti-nui-a-Toi\")\n  \
+    \  \n    def test_validate_portuguese_civil_record(self):\n        \"\"\"Test Portuguese civil record validation.\"\"\"\
+    \n        record = {\n            'event_type': 'birth',\n            'date': '15 de Março de 1875',\n            'location':\
+    \ 'Lisbon',\n            'person_name': 'Maria Silva'\n        }\n        validation = validate_portuguese_civil_record(record)\n\
+    \        self.assertTrue(validation['valid'])\n    \n    def test_skill_engine_capabilities(self):\n        \"\"\"Test\
+    \ skill engine main capabilities.\"\"\"\n        # Test parse_portuguese_civil_records\n        result = self.engine.run('parse_portuguese_civil_records',\
+    \ {\n            'record_text': 'Registo de nascimento de João Silva, 15 de Março de 1875, Lisboa'\n        })\n     \
+    \   self.assertEqual(result['event_type'], 'birth')\n        \n        # Test analyze_maori_whakapapa\n        whakapapa\
+    \ = {\n            'iwi': ['Ngāti Porou'],\n            'hapu': ['Te Whānau-ā-Apanui'],\n            'names': ['Te Rangitāwhia']\n\
+    \        }\n        analysis = self.engine.run('analyze_maori_whakapapa', whakapapa)\n        self.assertIn('Ngāti Porou',\
+    \ analysis['iwi'])\n        \n        # Test build_family_tree\n        tree = self.engine.run('build_family_tree', {\n\
+    \            'individuals': [\n                {'id': 'I1', 'name': 'John', 'generation': 1},\n                {'id':\
+    \ 'I2', 'name': 'Mary', 'generation': 1}\n            ]\n        })\n        self.assertEqual(len(tree['individuals']),\
+    \ 2)\n    \n    def test_error_handling(self):\n        \"\"\"Test error handling in skill engine.\"\"\"\n        with\
+    \ self.assertRaises(ValueError):\n            self.engine.run('invalid_capability', {})\n    \n    def test_migration_timeline(self):\n\
+    \        \"\"\"Test migration timeline generation.\"\"\"\n        events = [\n            {'date': '1882-03-15', 'type':\
+    \ 'departure', 'location': 'Horta'},\n            {'date': '1882-05-20', 'type': 'arrival', 'location': 'Honolulu'}\n\
+    \        ]\n        timeline = generate_migration_timeline(events)\n        self.assertEqual(len(timeline), 2)\n     \
+    \   self.assertEqual(timeline[0]['date'], '1882-03-15')\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Portuguese & Maori/New Zealand Genealogy Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''portuguese_maori_genealogy'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

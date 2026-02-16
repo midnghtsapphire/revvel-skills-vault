@@ -1,0 +1,69 @@
+name: tos-vectors
+title: volcengine-tos-vectors-skills
+version: 1.0.2
+description: Manage vector storage and similarity search using TOS Vectors service. Use when working with embeddings, semantic
+  search, RAG systems, recommendation engines, or when the user mentions vector databases, similarity search, or TOS Vectors
+  operations.
+metadata:
+  author: jneless
+  category: Search & Research
+  tags:
+  - search-research
+  - tos
+  - vectors
+  source: clawhub-community
+  clawhub_slug: volcengine-tos-vectors-skills
+  clawhub_path: jneless/volcengine-tos-vectors-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# volcengine-tos-vectors-skills
+
+    # Source: ClawHub community skill by jneless
+
+    # Install: clawhub install volcengine-tos-vectors-skills
+
+    # Path: jneless/volcengine-tos-vectors-skills
+
+
+    ## Description
+
+    Manage vector storage and similarity search using TOS Vectors service. Use when working with embeddings, semantic search,
+    RAG systems, recommendation engines, or when the user mentions vector databases, similarity search, or TOS Vectors operations.
+
+
+    ## Files
+
+    - README.md
+
+    - REFERENCE.md
+
+    - SKILL.md
+
+    - WORKFLOWS.md
+
+    - _meta.json
+
+    - scripts/init_vectors.py
+
+    - scripts/insert_vectors.py
+
+    - scripts/search_vectors.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install volcengine-tos-vectors-skills
+
+    ```'
+examples:
+- description: Install volcengine-tos-vectors-skills from ClawHub
+  usage: clawhub install volcengine-tos-vectors-skills
+schema_version: '1.0'

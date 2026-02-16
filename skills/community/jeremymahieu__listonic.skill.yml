@@ -1,0 +1,59 @@
+name: listonic
+title: Listonic
+version: 1.0.0
+description: '"Access Listonic shopping lists: list lists/items, add/check/delete items, and manage lists."'
+metadata:
+  author: jeremymahieu
+  category: General
+  tags:
+  - general
+  - listonic
+  source: clawhub-community
+  clawhub_slug: listonic
+  clawhub_path: jeremymahieu/listonic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Listonic
+
+    # Source: ClawHub community skill by jeremymahieu
+
+    # Install: clawhub install listonic
+
+    # Path: jeremymahieu/listonic
+
+
+    ## Description
+
+    "Access Listonic shopping lists: list lists/items, add/check/delete items, and manage lists."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/listonic.py
+
+    - scripts/listonic.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install listonic
+
+    ```'
+examples:
+- description: Install Listonic from ClawHub
+  usage: clawhub install listonic
+schema_version: '1.0'

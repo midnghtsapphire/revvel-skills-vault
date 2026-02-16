@@ -1,0 +1,62 @@
+name: calorie-counter
+title: Calorie Counter
+version: 1.0.0
+description: Track daily calorie and protein intake, set goals, and log weight. Use when user mentions food they ate, wants
+  to know remaining calories, or needs to track weight. Stores data in SQLite with automatic daily totals.
+metadata:
+  author: cnqso
+  category: Development & Coding
+  tags:
+  - development-coding
+  - calorie
+  - counter
+  source: clawhub-community
+  clawhub_slug: calorie-counter
+  clawhub_path: cnqso/calorie-counter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Calorie Counter
+
+    # Source: ClawHub community skill by cnqso
+
+    # Install: clawhub install calorie-counter
+
+    # Path: cnqso/calorie-counter
+
+
+    ## Description
+
+    Track daily calorie and protein intake, set goals, and log weight. Use when user mentions food they ate, wants to know
+    remaining calories, or needs to track weight. Stores data in SQLite with automatic daily totals.
+
+
+    ## Files
+
+    - QUICK_START.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/calorie_tracker.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install calorie-counter
+
+    ```'
+examples:
+- description: Install Calorie Counter from ClawHub
+  usage: clawhub install calorie-counter
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: skills-search
+title: skills-search
+version: 1.0.0
+description: Search skills.sh registry from CLI. Find and discover agent skills from the skills.sh ecosystem.
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - skills
+  - search
+  source: clawhub-community
+  clawhub_slug: bobagent-skills-search
+  clawhub_path: bobdevibecoder/bobagent-skills-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# skills-search
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-skills-search
+
+    # Path: bobdevibecoder/bobagent-skills-search
+
+
+    ## Description
+
+    Search skills.sh registry from CLI. Find and discover agent skills from the skills.sh ecosystem.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-skills-search
+
+    ```'
+examples:
+- description: Install skills-search from ClawHub
+  usage: clawhub install bobagent-skills-search
+schema_version: '1.0'

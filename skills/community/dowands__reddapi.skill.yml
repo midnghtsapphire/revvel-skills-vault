@@ -1,0 +1,57 @@
+name: reddapi
+title: reddapi
+version: 2.0.0
+description: Use this skill to access Reddit's full data archive via reddapi.dev API. Features semantic search, subreddit
+  discovery, and real-time trend analysis. Perfect for market research, competitive analysis, and niche opportunity discovery.
+metadata:
+  author: dowands
+  category: Search & Research
+  tags:
+  - search-research
+  - reddapi
+  source: clawhub-community
+  clawhub_slug: reddapi
+  clawhub_path: dowands/reddapi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# reddapi
+
+    # Source: ClawHub community skill by dowands
+
+    # Install: clawhub install reddapi
+
+    # Path: dowands/reddapi
+
+
+    ## Description
+
+    Use this skill to access Reddit''s full data archive via reddapi.dev API. Features semantic search, subreddit discovery,
+    and real-time trend analysis. Perfect for market research, competitive analysis, and niche opportunity discovery.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - SUPPORTING.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reddapi
+
+    ```'
+examples:
+- description: Install reddapi from ClawHub
+  usage: clawhub install reddapi
+schema_version: '1.0'

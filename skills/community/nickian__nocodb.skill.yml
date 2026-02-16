@@ -1,0 +1,59 @@
+name: nocodb
+title: NocoDB
+version: 1.0.0
+description: Access and manage NocoDB databases, tables, and records via REST API. Use when the user wants to view bases,
+  list tables, inspect column schemas, query or filter row data, or insert new records into a self-hosted NocoDB instance.
+  Also use for spreadsheet-style database lookups and data entry.
+metadata:
+  author: nickian
+  category: Development & Coding
+  tags:
+  - development-coding
+  - nocodb
+  source: clawhub-community
+  clawhub_slug: nocodb
+  clawhub_path: nickian/nocodb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NocoDB
+
+    # Source: ClawHub community skill by nickian
+
+    # Install: clawhub install nocodb
+
+    # Path: nickian/nocodb
+
+
+    ## Description
+
+    Access and manage NocoDB databases, tables, and records via REST API. Use when the user wants to view bases, list tables,
+    inspect column schemas, query or filter row data, or insert new records into a self-hosted NocoDB instance. Also use for
+    spreadsheet-style database lookups and data entry.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/nocodb.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nocodb
+
+    ```'
+examples:
+- description: Install NocoDB from ClawHub
+  usage: clawhub install nocodb
+schema_version: '1.0'

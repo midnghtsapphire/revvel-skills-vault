@@ -1,0 +1,58 @@
+name: plan-executor
+title: plan-executor
+version: 1.0.0
+description: 'Executes frozen, validated plans produced by an autonomous planner with zero interpretation, zero interaction,
+  and strict termination guarantees. Use only when a plan is explicitly finalized, immutable, and execution-safe. Trigger
+  keywords: execute plan, run execution, enact finalized plan.'
+metadata:
+  author: vishnubedi3
+  category: General
+  tags:
+  - general
+  - plan
+  - executor
+  source: clawhub-community
+  clawhub_slug: plan-executor
+  clawhub_path: vishnubedi3/plan-executor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# plan-executor
+
+    # Source: ClawHub community skill by vishnubedi3
+
+    # Install: clawhub install plan-executor
+
+    # Path: vishnubedi3/plan-executor
+
+
+    ## Description
+
+    Executes frozen, validated plans produced by an autonomous planner with zero interpretation, zero interaction, and strict
+    termination guarantees. Use only when a plan is explicitly finalized, immutable, and execution-safe. Trigger keywords:
+    execute plan, run execution, enact finalized plan.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install plan-executor
+
+    ```'
+examples:
+- description: Install plan-executor from ClawHub
+  usage: clawhub install plan-executor
+schema_version: '1.0'

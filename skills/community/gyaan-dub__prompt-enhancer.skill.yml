@@ -1,0 +1,56 @@
+name: prompt-enhancer
+title: Prompt Enhancer
+version: 1.0.0
+description: Automatically rewrites rough user inputs into optimized, structured prompts for dramatically better AI responses.
+  Prefix any message with "p:" to activate.
+metadata:
+  author: gyaan-dub
+  category: Communication
+  tags:
+  - communication
+  - prompt
+  - enhancer
+  source: clawhub-community
+  clawhub_slug: prompt-enhancer
+  clawhub_path: gyaan-dub/prompt-enhancer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prompt Enhancer
+
+    # Source: ClawHub community skill by gyaan-dub
+
+    # Install: clawhub install prompt-enhancer
+
+    # Path: gyaan-dub/prompt-enhancer
+
+
+    ## Description
+
+    Automatically rewrites rough user inputs into optimized, structured prompts for dramatically better AI responses. Prefix
+    any message with "p:" to activate.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prompt-enhancer
+
+    ```'
+examples:
+- description: Install Prompt Enhancer from ClawHub
+  usage: clawhub install prompt-enhancer
+schema_version: '1.0'

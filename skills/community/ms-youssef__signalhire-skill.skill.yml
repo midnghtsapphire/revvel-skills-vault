@@ -1,0 +1,65 @@
+name: signalhire
+title: 'The SignalHire skill integrates the full SignalHire API into OpenClaw, enabling you to search for prospects and enrich
+  their contact details without leaving your workflow. It exposes three core actions: a credits check, a search-by-query for
+  prospecting, and an asynchronous contact enrichment call'
+version: 1.0.0
+description: Prospect and enrich contacts via the SignalHire API (Search, Person and Credits)
+metadata:
+  author: ms-youssef
+  category: Search & Research
+  tags:
+  - search-research
+  - signalhire
+  source: clawhub-community
+  clawhub_slug: signalhire-skill
+  clawhub_path: ms-youssef/signalhire-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# The SignalHire skill integrates the full SignalHire API into OpenClaw, enabling you to search for prospects
+    and enrich their contact details without leaving your workflow. It exposes three core actions: a credits check, a search-by-query
+    for prospecting, and an asynchronous contact enrichment call
+
+    # Source: ClawHub community skill by ms-youssef
+
+    # Install: clawhub install signalhire-skill
+
+    # Path: ms-youssef/signalhire-skill
+
+
+    ## Description
+
+    Prospect and enrich contacts via the SignalHire API (Search, Person and Credits)
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - connector/__init__.py
+
+    - connector/main.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install signalhire-skill
+
+    ```'
+examples:
+- description: 'Install The SignalHire skill integrates the full SignalHire API into OpenClaw, enabling you to search for
+    prospects and enrich their contact details without leaving your workflow. It exposes three core actions: a credits check,
+    a search-by-query for prospecting, and an asynchronous contact enrichment call from ClawHub'
+  usage: clawhub install signalhire-skill
+schema_version: '1.0'

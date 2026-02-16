@@ -1,0 +1,56 @@
+name: greeting-skill
+title: clean-skill-1
+version: 1.0.0
+description: A friendly greeting skill for testing
+metadata:
+  author: orlyjamie
+  category: Development & Coding
+  tags:
+  - development-coding
+  - greeting
+  - skill
+  source: clawhub-community
+  clawhub_slug: clean-skill-1
+  clawhub_path: orlyjamie/clean-skill-1
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clean-skill-1
+
+    # Source: ClawHub community skill by orlyjamie
+
+    # Install: clawhub install clean-skill-1
+
+    # Path: orlyjamie/clean-skill-1
+
+
+    ## Description
+
+    A friendly greeting skill for testing
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - greet.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clean-skill-1
+
+    ```'
+examples:
+- description: Install clean-skill-1 from ClawHub
+  usage: clawhub install clean-skill-1
+schema_version: '1.0'

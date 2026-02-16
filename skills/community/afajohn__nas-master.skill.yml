@@ -1,0 +1,62 @@
+name: asustor-pro-adaptive-suite
+title: nas-master
+version: 1.0.0
+description: '>'
+metadata:
+  author: afajohn
+  category: General
+  tags:
+  - general
+  - asustor
+  - pro
+  - adaptive
+  - suite
+  source: clawhub-community
+  clawhub_slug: nas-master
+  clawhub_path: afajohn/nas-master
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# nas-master
+
+    # Source: ClawHub community skill by afajohn
+
+    # Install: clawhub install nas-master
+
+    # Path: afajohn/nas-master
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - .env
+
+    - SKILL.md
+
+    - _meta.json
+
+    - nas_engine.py
+
+    - setup_pro_db.sql
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nas-master
+
+    ```'
+examples:
+- description: Install nas-master from ClawHub
+  usage: clawhub install nas-master
+schema_version: '1.0'

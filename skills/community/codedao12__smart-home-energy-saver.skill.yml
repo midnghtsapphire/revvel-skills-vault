@@ -1,0 +1,72 @@
+name: smart-home-energy-saver
+title: Smart Home Energy Saver
+version: 1.0.0
+description: Analyze home energy usage and propose safe, read-only automation plans for savings. Use when a user wants Home
+  Assistant energy insights, optimization ideas, or draft automation YAML without directly controlling devices.
+metadata:
+  author: codedao12
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - smart
+  - home
+  - energy
+  - saver
+  source: clawhub-community
+  clawhub_slug: smart-home-energy-saver
+  clawhub_path: codedao12/smart-home-energy-saver
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Smart Home Energy Saver
+
+    # Source: ClawHub community skill by codedao12
+
+    # Install: clawhub install smart-home-energy-saver
+
+    # Path: codedao12/smart-home-energy-saver
+
+
+    ## Description
+
+    Analyze home energy usage and propose safe, read-only automation plans for savings. Use when a user wants Home Assistant
+    energy insights, optimization ideas, or draft automation YAML without directly controlling devices.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/auth.md
+
+    - references/endpoints.md
+
+    - references/overview.md
+
+    - references/safety.md
+
+    - references/troubleshooting.md
+
+    - references/ux.md
+
+    - references/webhooks.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install smart-home-energy-saver
+
+    ```'
+examples:
+- description: Install Smart Home Energy Saver from ClawHub
+  usage: clawhub install smart-home-energy-saver
+schema_version: '1.0'

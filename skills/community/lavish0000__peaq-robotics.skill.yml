@@ -1,0 +1,74 @@
+name: peaq-robotics
+title: peaq Robotics
+version: 0.1.0
+description: Control peaq-robotics-ros2 from OpenClaw by starting ROS 2 nodes and calling services (DID create/read, storage
+  add/read, access control, tether USDT). Use when requests mention peaq ROS2, robot DID, blockchain storage, access roles/permissions,
+  tether USDT, or ROS 2 service calls.
+metadata:
+  author: lavish0000
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - peaq
+  - robotics
+  source: clawhub-community
+  clawhub_slug: peaq-robotics
+  clawhub_path: lavish0000/peaq-robotics
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# peaq Robotics
+
+    # Source: ClawHub community skill by lavish0000
+
+    # Install: clawhub install peaq-robotics
+
+    # Path: lavish0000/peaq-robotics
+
+
+    ## Description
+
+    Control peaq-robotics-ros2 from OpenClaw by starting ROS 2 nodes and calling services (DID create/read, storage add/read,
+    access control, tether USDT). Use when requests mention peaq ROS2, robot DID, blockchain storage, access roles/permissions,
+    tether USDT, or ROS 2 service calls.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/peaq_ros2_services.md
+
+    - scripts/peaq_ros2.sh
+
+    - scripts/lib/config.sh
+
+    - scripts/lib/core.sh
+
+    - scripts/lib/env.sh
+
+    - scripts/lib/install.sh
+
+    - scripts/lib/nodes.sh
+
+    - scripts/lib/utils.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install peaq-robotics
+
+    ```'
+examples:
+- description: Install peaq Robotics from ClawHub
+  usage: clawhub install peaq-robotics
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: byterover
+title: ByteRover
+version: 1.2.2
+description: '"Manages project knowledge using ByteRover context tree. Provides two operations: query (retrieve knowledge)
+  and curate (store knowledge). Invoke when user requests information lookup, pattern discovery, or knowledge persistence.
+  Developed by ByteRover Inc. (https://byterover.dev/)"'
+metadata:
+  author: byteroverinc
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - byterover
+  source: clawhub-community
+  clawhub_slug: byterover
+  clawhub_path: byteroverinc/byterover
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ByteRover
+
+    # Source: ClawHub community skill by byteroverinc
+
+    # Install: clawhub install byterover
+
+    # Path: byteroverinc/byterover
+
+
+    ## Description
+
+    "Manages project knowledge using ByteRover context tree. Provides two operations: query (retrieve knowledge) and curate
+    (store knowledge). Invoke when user requests information lookup, pattern discovery, or knowledge persistence. Developed
+    by ByteRover Inc. (https://byterover.dev/)"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - TROUBLESHOOTING.md
+
+    - WORKFLOWS.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install byterover
+
+    ```'
+examples:
+- description: Install ByteRover from ClawHub
+  usage: clawhub install byterover
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: myvibe-publish
+title: MyVibe Skills
+version: 1.0.0
+description: Publish static HTML, ZIP archive, or directory to MyVibe. Use this skill when user wants to publish web content
+  to MyVibe.
+metadata:
+  author: zhuzhuyule
+  category: Web & Internet
+  tags:
+  - web-internet
+  - myvibe
+  - publish
+  source: clawhub-community
+  clawhub_slug: myvibe-skills
+  clawhub_path: zhuzhuyule/myvibe-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MyVibe Skills
+
+    # Source: ClawHub community skill by zhuzhuyule
+
+    # Install: clawhub install myvibe-skills
+
+    # Path: zhuzhuyule/myvibe-skills
+
+
+    ## Description
+
+    Publish static HTML, ZIP archive, or directory to MyVibe. Use this skill when user wants to publish web content to MyVibe.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+    - scripts/publish.mjs
+
+    - scripts/utils/auth.mjs
+
+    - scripts/utils/constants.mjs
+
+    - scripts/utils/fetch-tags.mjs
+
+    - scripts/utils/generate-screenshot.mjs
+
+    - scripts/utils/history.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install myvibe-skills
+
+    ```'
+examples:
+- description: Install MyVibe Skills from ClawHub
+  usage: clawhub install myvibe-skills
+schema_version: '1.0'

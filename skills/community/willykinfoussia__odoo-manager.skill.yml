@@ -1,0 +1,60 @@
+name: odoo-manager
+title: Odoo Manager
+version: 0.0.1
+description: Manage Odoo (contacts, any business objects, and metadata) via the official External XML-RPC API. Supports generic
+  CRUD operations on any model using execute_kw, with ready-made flows for res.partner and model introspection. Features dynamic
+  instance and database switching with context-aware URL, da
+metadata:
+  author: willykinfoussia
+  category: Development & Coding
+  tags:
+  - development-coding
+  - odoo
+  - manager
+  source: clawhub-community
+  clawhub_slug: odoo-manager
+  clawhub_path: willykinfoussia/odoo-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Odoo Manager
+
+    # Source: ClawHub community skill by willykinfoussia
+
+    # Install: clawhub install odoo-manager
+
+    # Path: willykinfoussia/odoo-manager
+
+
+    ## Description
+
+    Manage Odoo (contacts, any business objects, and metadata) via the official External XML-RPC API. Supports generic CRUD
+    operations on any model using execute_kw, with ready-made flows for res.partner and model introspection. Features dynamic
+    instance and database switching with context-aware URL, da
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install odoo-manager
+
+    ```'
+examples:
+- description: Install Odoo Manager from ClawHub
+  usage: clawhub install odoo-manager
+schema_version: '1.0'

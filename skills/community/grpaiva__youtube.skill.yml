@@ -1,0 +1,57 @@
+name: youtube
+title: Youtube
+version: 1.0.1
+description: Search YouTube videos, get channel info, fetch video details and transcripts using YouTube Data API v3 via MCP
+  server or yt-dlp fallback.
+metadata:
+  author: grpaiva
+  category: Search & Research
+  tags:
+  - search-research
+  - youtube
+  source: clawhub-community
+  clawhub_slug: youtube
+  clawhub_path: grpaiva/youtube
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Youtube
+
+    # Source: ClawHub community skill by grpaiva
+
+    # Install: clawhub install youtube
+
+    # Path: grpaiva/youtube
+
+
+    ## Description
+
+    Search YouTube videos, get channel info, fetch video details and transcripts using YouTube Data API v3 via MCP server
+    or yt-dlp fallback.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube
+
+    ```'
+examples:
+- description: Install Youtube from ClawHub
+  usage: clawhub install youtube
+schema_version: '1.0'

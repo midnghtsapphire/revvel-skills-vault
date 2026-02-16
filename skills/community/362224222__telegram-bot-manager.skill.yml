@@ -1,0 +1,75 @@
+name: telegram-bot-manager
+title: Telegram Bot Manager
+version: 1.0.0
+description: Manage and configure Telegram bots for OpenClaw. Use when setting up Telegram integrations, troubleshooting bot
+  connectivity, configuring bot tokens, or managing Telegram channel/webhook settings. Handles bot registration, token validation,
+  and network connectivity checks for api.telegram.org.
+metadata:
+  author: '362224222'
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - bot
+  - manager
+  source: clawhub-community
+  clawhub_slug: telegram-bot-manager
+  clawhub_path: 362224222/telegram-bot-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Bot Manager
+
+    # Source: ClawHub community skill by 362224222
+
+    # Install: clawhub install telegram-bot-manager
+
+    # Path: 362224222/telegram-bot-manager
+
+
+    ## Description
+
+    Manage and configure Telegram bots for OpenClaw. Use when setting up Telegram integrations, troubleshooting bot connectivity,
+    configuring bot tokens, or managing Telegram channel/webhook settings. Handles bot registration, token validation, and
+    network connectivity checks for api.telegram.org.
+
+
+    ## Files
+
+    - QUICKSTART.md
+
+    - README.md
+
+    - RELEASE_NOTES.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - metadata.json
+
+    - references/OPENCLAW_CONFIG.md
+
+    - references/WEBHOOK_SETUP.md
+
+    - scripts/package_skill.py
+
+    - scripts/setup_bot.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-bot-manager
+
+    ```'
+examples:
+- description: Install Telegram Bot Manager from ClawHub
+  usage: clawhub install telegram-bot-manager
+schema_version: '1.0'

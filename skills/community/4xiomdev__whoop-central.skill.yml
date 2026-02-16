@@ -1,0 +1,71 @@
+name: whoop
+title: WHOOP Central
+version: 1.0.2
+description: WHOOP Central - OAuth + scripts to fetch WHOOP data (sleep, recovery, strain, workouts). Use when user asks about
+  their sleep, recovery score, HRV, strain, or workout data.
+metadata:
+  author: 4xiomdev
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - whoop
+  source: clawhub-community
+  clawhub_slug: whoop-central
+  clawhub_path: 4xiomdev/whoop-central
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WHOOP Central
+
+    # Source: ClawHub community skill by 4xiomdev
+
+    # Install: clawhub install whoop-central
+
+    # Path: 4xiomdev/whoop-central
+
+
+    ## Description
+
+    WHOOP Central - OAuth + scripts to fetch WHOOP data (sleep, recovery, strain, workouts). Use when user asks about their
+    sleep, recovery score, HRV, strain, or workout data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - credentials.example.json
+
+    - package.json
+
+    - token.example.json
+
+    - src/auth.js
+
+    - src/import-historical.js
+
+    - src/recovery.js
+
+    - src/setup.js
+
+    - src/sleep.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install whoop-central
+
+    ```'
+examples:
+- description: Install WHOOP Central from ClawHub
+  usage: clawhub install whoop-central
+schema_version: '1.0'

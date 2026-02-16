@@ -1,0 +1,58 @@
+name: email-triager
+title: Email Triager
+version: 1.0.0
+description: Triage, categorize, and draft responses to emails. Sorts by urgency, flags action items, and generates context-aware
+  reply drafts.
+metadata:
+  author: 1kalin
+  category: Communication
+  tags:
+  - communication
+  - email
+  - triager
+  source: clawhub-community
+  clawhub_slug: afrexai-email-triager
+  clawhub_path: 1kalin/afrexai-email-triager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Email Triager
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install afrexai-email-triager
+
+    # Path: 1kalin/afrexai-email-triager
+
+
+    ## Description
+
+    Triage, categorize, and draft responses to emails. Sorts by urgency, flags action items, and generates context-aware reply
+    drafts.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install afrexai-email-triager
+
+    ```'
+examples:
+- description: Install Email Triager from ClawHub
+  usage: clawhub install afrexai-email-triager
+schema_version: '1.0'

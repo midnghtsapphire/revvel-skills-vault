@@ -1,0 +1,53 @@
+name: firewall
+title: Firewall
+version: 1.0.0
+description: Configure firewalls on servers and cloud providers with security best practices.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - firewall
+  source: clawhub-community
+  clawhub_slug: firewall
+  clawhub_path: ivangdavila/firewall
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Firewall
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install firewall
+
+    # Path: ivangdavila/firewall
+
+
+    ## Description
+
+    Configure firewalls on servers and cloud providers with security best practices.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install firewall
+
+    ```'
+examples:
+- description: Install Firewall from ClawHub
+  usage: clawhub install firewall
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: clawprint-verify
+title: ClawPrint - Captchas for AI verification
+version: 1.0.1
+description: Issue ClawPrint reverse-CAPTCHA challenges to verify that another user or agent is a real AI, not a human. Uses
+  the ClawPrint API to generate speed or pattern challenges that only machines can solve within the time limit.
+metadata:
+  author: fusionlabssource
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clawprint
+  - verify
+  source: clawhub-community
+  clawhub_slug: clawprint-verify
+  clawhub_path: fusionlabssource/clawprint-verify
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawPrint - Captchas for AI verification
+
+    # Source: ClawHub community skill by fusionlabssource
+
+    # Install: clawhub install clawprint-verify
+
+    # Path: fusionlabssource/clawprint-verify
+
+
+    ## Description
+
+    Issue ClawPrint reverse-CAPTCHA challenges to verify that another user or agent is a real AI, not a human. Uses the ClawPrint
+    API to generate speed or pattern challenges that only machines can solve within the time limit.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawprint-challenge.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawprint-verify
+
+    ```'
+examples:
+- description: Install ClawPrint - Captchas for AI verification from ClawHub
+  usage: clawhub install clawprint-verify
+schema_version: '1.0'

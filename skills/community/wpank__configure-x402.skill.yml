@@ -1,0 +1,60 @@
+name: configure-x402
+title: Configure X402
+version: 0.1.0
+description: Configure x402 micropayments for agent-to-agent commerce via Uniswap. Set up your agent to pay per MCP request
+  in USDC on Base (~200ms settlement) or accept x402 payments as a service provider. Use when the user wants to enable pay-per-use
+  API access or monetize their agent's services.
+metadata:
+  author: wpank
+  category: Development & Coding
+  tags:
+  - development-coding
+  - configure
+  - x402
+  source: clawhub-community
+  clawhub_slug: configure-x402
+  clawhub_path: wpank/configure-x402
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Configure X402
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install configure-x402
+
+    # Path: wpank/configure-x402
+
+
+    ## Description
+
+    Configure x402 micropayments for agent-to-agent commerce via Uniswap. Set up your agent to pay per MCP request in USDC
+    on Base (~200ms settlement) or accept x402 payments as a service provider. Use when the user wants to enable pay-per-use
+    API access or monetize their agent''s services.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install configure-x402
+
+    ```'
+examples:
+- description: Install Configure X402 from ClawHub
+  usage: clawhub install configure-x402
+schema_version: '1.0'

@@ -1,0 +1,76 @@
+name: korea-metropolitan-bus-alerts
+title: Korea metropolitan bus alerts
+version: 1.0.2
+description: Create and manage scheduled bus arrival alerts using Korea TAGO (국토교통부) OpenAPI and Clawdbot cron. Use when a
+  user wants to register weekday/weekend schedules like "평일 오전 7시, <정류소명>, <노선들>" and receive automatic arrival summaries
+  via their configured Gateway messaging (DM only).
+metadata:
+  author: hsooooo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - korea
+  - metropolitan
+  - bus
+  - alerts
+  source: clawhub-community
+  clawhub_slug: korea-metropolitan-bus-alerts
+  clawhub_path: hsooooo/korea-metropolitan-bus-alerts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Korea metropolitan bus alerts
+
+    # Source: ClawHub community skill by hsooooo
+
+    # Install: clawhub install korea-metropolitan-bus-alerts
+
+    # Path: hsooooo/korea-metropolitan-bus-alerts
+
+
+    ## Description
+
+    Create and manage scheduled bus arrival alerts using Korea TAGO (국토교통부) OpenAPI and Clawdbot cron. Use when a user wants
+    to register weekday/weekend schedules like "평일 오전 7시, <정류소명>, <노선들>" and receive automatic arrival summaries via their
+    configured Gateway messaging (DM only).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - references/cron_recipe.md
+
+    - scripts/README.md
+
+    - scripts/city_codes.md
+
+    - scripts/cron_builder.py
+
+    - scripts/example.py
+
+    - scripts/rule_wizard.py
+
+    - scripts/set_tago_key.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install korea-metropolitan-bus-alerts
+
+    ```'
+examples:
+- description: Install Korea metropolitan bus alerts from ClawHub
+  usage: clawhub install korea-metropolitan-bus-alerts
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: crypto
+title: Crypto Market
+version: 1.0.1
+description: Cryptocurrency market data and price alert monitoring tool based on CCXT. Supports multiple exchanges, real-time
+  price tracking, and configurable price/volatility alerts. Use when the user needs to monitor crypto prices or set up trading
+  alerts. Default exchange is Binance.
+metadata:
+  author: alphafactor
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - crypto
+  source: clawhub-community
+  clawhub_slug: crypto
+  clawhub_path: alphafactor/crypto
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crypto Market
+
+    # Source: ClawHub community skill by alphafactor
+
+    # Install: clawhub install crypto
+
+    # Path: alphafactor/crypto
+
+
+    ## Description
+
+    Cryptocurrency market data and price alert monitoring tool based on CCXT. Supports multiple exchanges, real-time price
+    tracking, and configurable price/volatility alerts. Use when the user needs to monitor crypto prices or set up trading
+    alerts. Default exchange is Binance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/exchanges.md
+
+    - scripts/crypto.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crypto
+
+    ```'
+examples:
+- description: Install Crypto Market from ClawHub
+  usage: clawhub install crypto
+schema_version: '1.0'

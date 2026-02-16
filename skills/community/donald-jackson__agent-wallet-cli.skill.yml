@@ -1,0 +1,33 @@
+name: agent-wallet
+title: Agent Wallet CLI
+version: 1.2.0
+description: 'Manage crypto wallets (Ethereum, Solana, Polygon, Arbitrum, Base) via agent-wallet-cli. Use for checking balances,
+  sending tokens (ETH/SOL/ERC-20/SPL), signing messages, managing approvals, viewing transaction history, and wallet lifecycle
+  (init, unlock, lock, export). Supports HD wallets (BIP-39), '
+metadata:
+  author: donald-jackson
+  category: Communication
+  tags:
+  - communication
+  - agent
+  - wallet
+  source: clawhub-community
+  clawhub_slug: agent-wallet-cli
+  clawhub_path: donald-jackson/agent-wallet-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Agent Wallet CLI\n# Source: ClawHub community skill by donald-jackson\n# Install: clawhub install agent-wallet-cli\n\
+    # Path: donald-jackson/agent-wallet-cli\n\n## Description\nManage crypto wallets (Ethereum, Solana, Polygon, Arbitrum,\
+    \ Base) via agent-wallet-cli. Use for checking balances, sending tokens (ETH/SOL/ERC-20/SPL), signing messages, managing\
+    \ approvals, viewing transaction history, and wallet lifecycle (init, unlock, lock, export). Supports HD wallets (BIP-39),\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n\n## Installation\n```bash\nclawhub install agent-wallet-cli\n```"
+examples:
+- description: Install Agent Wallet CLI from ClawHub
+  usage: clawhub install agent-wallet-cli
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: minimax_________
+title: MiniMax 多人对话语音合成
+version: 1.0.0
+description: 根据用户需求生成多人对话，为每个角色匹配音色进行语音合成，输出完整长音频和分段音频，并生成 HTML 展示页面。
+metadata:
+  author: hexiaochun
+  category: Web & Internet
+  tags:
+  - web-internet
+  - minimax
+  - 多人对话语音合成
+  source: clawhub-community
+  clawhub_slug: sutui-minimax-tts
+  clawhub_path: hexiaochun/sutui-minimax-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MiniMax 多人对话语音合成
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install sutui-minimax-tts
+
+    # Path: hexiaochun/sutui-minimax-tts
+
+
+    ## Description
+
+    根据用户需求生成多人对话，为每个角色匹配音色进行语音合成，输出完整长音频和分段音频，并生成 HTML 展示页面。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/dialogue-template.html
+
+    - references/emotion-tags.md
+
+    - references/mcp-tools.md
+
+    - references/minimax_voices.json
+
+    - references/voice-mapping.md
+
+    - scripts/merge_audio.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sutui-minimax-tts
+
+    ```'
+examples:
+- description: Install MiniMax 多人对话语音合成 from ClawHub
+  usage: clawhub install sutui-minimax-tts
+schema_version: '1.0'

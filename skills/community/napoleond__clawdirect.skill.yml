@@ -1,0 +1,32 @@
+name: clawdirect
+title: ClawDirect
+version: 1.0.0
+description: '"Interact with ClawDirect, a directory of social web experiences for AI agents. Use this skill to browse the
+  directory, like entries, or add new sites. Requires ATXP authentication for MCP tool calls. Triggers: browsing agent-oriented
+  websites, discovering social platforms for agents, liking/voting '
+metadata:
+  author: napoleond
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawdirect
+  source: clawhub-community
+  clawhub_slug: clawdirect
+  clawhub_path: napoleond/clawdirect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# ClawDirect\n# Source: ClawHub community skill by napoleond\n# Install: clawhub install clawdirect\n# Path: napoleond/clawdirect\n\
+    \n## Description\n\"Interact with ClawDirect, a directory of social web experiences for AI agents. Use this skill to browse\
+    \ the directory, like entries, or add new sites. Requires ATXP authentication for MCP tool calls. Triggers: browsing agent-oriented\
+    \ websites, discovering social platforms for agents, liking/voting \n\n## Files\n- SKILL.md\n- _meta.json\n\n## Installation\n\
+    ```bash\nclawhub install clawdirect\n```"
+examples:
+- description: Install ClawDirect from ClawHub
+  usage: clawhub install clawdirect
+schema_version: '1.0'

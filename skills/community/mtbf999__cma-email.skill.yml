@@ -1,0 +1,54 @@
+name: cma-email
+title: CMA Email
+version: 1.0.0
+description: Sends an email via Gmail when a message starts with "cma" or "cmap".
+metadata:
+  author: mtbf999
+  category: Communication
+  tags:
+  - communication
+  - cma
+  - email
+  source: clawhub-community
+  clawhub_slug: cma-email
+  clawhub_path: mtbf999/cma-email
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CMA Email
+
+    # Source: ClawHub community skill by mtbf999
+
+    # Install: clawhub install cma-email
+
+    # Path: mtbf999/cma-email
+
+
+    ## Description
+
+    Sends an email via Gmail when a message starts with "cma" or "cmap".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cma-email
+
+    ```'
+examples:
+- description: Install CMA Email from ClawHub
+  usage: clawhub install cma-email
+schema_version: '1.0'

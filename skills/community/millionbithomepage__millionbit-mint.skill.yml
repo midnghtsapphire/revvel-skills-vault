@@ -1,0 +1,70 @@
+name: millionbit-mint
+title: Million Bit Homepage NFTs
+version: 1.0.0
+description: '>'
+metadata:
+  author: millionbithomepage
+  category: General
+  tags:
+  - general
+  - millionbit
+  - mint
+  source: clawhub-community
+  clawhub_slug: millionbit-mint
+  clawhub_path: millionbithomepage/millionbit-mint
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Million Bit Homepage NFTs
+
+    # Source: ClawHub community skill by millionbithomepage
+
+    # Install: clawhub install millionbit-mint
+
+    # Path: millionbithomepage/millionbit-mint
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/check_availability.sh
+
+    - scripts/check_price.sh
+
+    - scripts/config.sh
+
+    - scripts/find_available_plots.sh
+
+    - scripts/prepare_mint.sh
+
+    - scripts/resize_image.sh
+
+    - scripts/helpers/abi_encode.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install millionbit-mint
+
+    ```'
+examples:
+- description: Install Million Bit Homepage NFTs from ClawHub
+  usage: clawhub install millionbit-mint
+schema_version: '1.0'

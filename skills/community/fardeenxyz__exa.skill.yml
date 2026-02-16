@@ -1,0 +1,61 @@
+name: exa
+title: Exa
+version: 0.0.2
+description: Neural web search and code context via Exa AI API. Requires EXA_API_KEY. Use for finding documentation, code
+  examples, research papers, or company info.
+metadata:
+  author: fardeenxyz
+  category: Search & Research
+  tags:
+  - search-research
+  - exa
+  source: clawhub-community
+  clawhub_slug: exa
+  clawhub_path: fardeenxyz/exa
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Exa
+
+    # Source: ClawHub community skill by fardeenxyz
+
+    # Install: clawhub install exa
+
+    # Path: fardeenxyz/exa
+
+
+    ## Description
+
+    Neural web search and code context via Exa AI API. Requires EXA_API_KEY. Use for finding documentation, code examples,
+    research papers, or company info.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/code.sh
+
+    - scripts/content.sh
+
+    - scripts/search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install exa
+
+    ```'
+examples:
+- description: Install Exa from ClawHub
+  usage: clawhub install exa
+schema_version: '1.0'

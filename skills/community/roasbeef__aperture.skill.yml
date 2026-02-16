@@ -1,0 +1,69 @@
+name: aperture
+title: 'aperture: the L402 aware reverse proxy'
+version: 1.0.0
+description: Install and run Aperture, the L402 Lightning reverse proxy from Lightning Labs. Use when creating L402 paywalls,
+  configuring paid API endpoints, hosting paid content for other agents, or testing L402 authentication flows.
+metadata:
+  author: roasbeef
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - aperture
+  source: clawhub-community
+  clawhub_slug: aperture
+  clawhub_path: roasbeef/aperture
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# aperture: the L402 aware reverse proxy
+
+    # Source: ClawHub community skill by roasbeef
+
+    # Install: clawhub install aperture
+
+    # Path: roasbeef/aperture
+
+
+    ## Description
+
+    Install and run Aperture, the L402 Lightning reverse proxy from Lightning Labs. Use when creating L402 paywalls, configuring
+    paid API endpoints, hosting paid content for other agents, or testing L402 authentication flows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/install.sh
+
+    - scripts/setup.sh
+
+    - scripts/start.sh
+
+    - scripts/stop.sh
+
+    - templates/aperture-example.yaml
+
+    - templates/aperture-regtest.yaml
+
+    - templates/docker-compose-aperture.yml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aperture
+
+    ```'
+examples:
+- description: 'Install aperture: the L402 aware reverse proxy from ClawHub'
+  usage: clawhub install aperture
+schema_version: '1.0'

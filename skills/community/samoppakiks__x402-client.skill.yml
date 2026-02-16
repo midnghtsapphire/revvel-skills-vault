@@ -1,0 +1,72 @@
+name: x402-client
+title: x402 Client — Agent Payments
+version: 1.0.0
+description: Make and receive USDC payments over HTTP using the x402 protocol (Coinbase). The Stripe for agents — pay for
+  services, sell your own, check balances. Works on Base network (mainnet + testnet).
+metadata:
+  author: samoppakiks
+  category: Development & Coding
+  tags:
+  - development-coding
+  - x402
+  - client
+  source: clawhub-community
+  clawhub_slug: x402-client
+  clawhub_path: samoppakiks/x402-client
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# x402 Client — Agent Payments
+
+    # Source: ClawHub community skill by samoppakiks
+
+    # Install: clawhub install x402-client
+
+    # Path: samoppakiks/x402-client
+
+
+    ## Description
+
+    Make and receive USDC payments over HTTP using the x402 protocol (Coinbase). The Stripe for agents — pay for services,
+    sell your own, check balances. Works on Base network (mainnet + testnet).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - lib/client.js
+
+    - lib/server.js
+
+    - scripts/pay-request.js
+
+    - scripts/serve-paid.js
+
+    - scripts/setup.sh
+
+    - scripts/test-e2e.js
+
+    - scripts/wallet-balance.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x402-client
+
+    ```'
+examples:
+- description: Install x402 Client — Agent Payments from ClawHub
+  usage: clawhub install x402-client
+schema_version: '1.0'

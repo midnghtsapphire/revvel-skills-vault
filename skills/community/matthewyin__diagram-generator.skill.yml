@@ -1,0 +1,66 @@
+name: diagram-generator
+title: diagram-generator
+version: 1.1.1
+description: Generate and edit various types of diagrams (including draw.io, Mermaid, and Excalidraw). This tool supports
+  common diagram types such as flowcharts, sequence diagrams, class diagrams, Entity-Relationship (ER) diagrams, mind maps,
+  architecture diagrams, and network topologies.
+metadata:
+  author: matthewyin
+  category: Utilities
+  tags:
+  - utilities
+  - diagram
+  - generator
+  source: clawhub-community
+  clawhub_slug: diagram-generator
+  clawhub_path: matthewyin/diagram-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# diagram-generator
+
+    # Source: ClawHub community skill by matthewyin
+
+    # Install: clawhub install diagram-generator
+
+    # Path: matthewyin/diagram-generator
+
+
+    ## Description
+
+    Generate and edit various types of diagrams (including draw.io, Mermaid, and Excalidraw). This tool supports common diagram
+    types such as flowcharts, sequence diagrams, class diagrams, Entity-Relationship (ER) diagrams, mind maps, architecture
+    diagrams, and network topologies.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/format-selection-guide.md
+
+    - references/json-schema-guide.md
+
+    - references/network-topology-examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install diagram-generator
+
+    ```'
+examples:
+- description: Install diagram-generator from ClawHub
+  usage: clawhub install diagram-generator
+schema_version: '1.0'

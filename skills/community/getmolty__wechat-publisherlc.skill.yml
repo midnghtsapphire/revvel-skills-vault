@@ -1,0 +1,54 @@
+name: wechat-publisher
+title: wechat-publisher
+version: 1.0.0
+description: '"一键发布 Markdown 到微信公众号草稿箱。基于 wenyan-cli，支持多主题、代码高亮、图片自动上传。"'
+metadata:
+  author: getmolty
+  category: Communication
+  tags:
+  - communication
+  - wechat
+  - publisher
+  source: clawhub-community
+  clawhub_slug: wechat-publisherlc
+  clawhub_path: getmolty/wechat-publisherlc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# wechat-publisher
+
+    # Source: ClawHub community skill by getmolty
+
+    # Install: clawhub install wechat-publisherlc
+
+    # Path: getmolty/wechat-publisherlc
+
+
+    ## Description
+
+    "一键发布 Markdown 到微信公众号草稿箱。基于 wenyan-cli，支持多主题、代码高亮、图片自动上传。"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wechat-publisherlc
+
+    ```'
+examples:
+- description: Install wechat-publisher from ClawHub
+  usage: clawhub install wechat-publisherlc
+schema_version: '1.0'

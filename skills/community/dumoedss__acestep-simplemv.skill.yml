@@ -1,0 +1,74 @@
+name: acestep-simplemv
+title: acestep-simplemv
+version: 1.0.1
+description: Render music videos from audio files and lyrics using Remotion. Accepts audio + LRC/JSON lyrics + title to produce
+  MP4 videos with waveform visualization and synced lyrics display. Use when users mention MV generation, music video rendering,
+  creating video from audio/lyrics, or visualizing songs.
+metadata:
+  author: dumoedss
+  category: Media & Content
+  tags:
+  - media-content
+  - acestep
+  - simplemv
+  source: clawhub-community
+  clawhub_slug: acestep-simplemv
+  clawhub_path: dumoedss/acestep-simplemv
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# acestep-simplemv
+
+    # Source: ClawHub community skill by dumoedss
+
+    # Install: clawhub install acestep-simplemv
+
+    # Path: dumoedss/acestep-simplemv
+
+
+    ## Description
+
+    Render music videos from audio files and lyrics using Remotion. Accepts audio + LRC/JSON lyrics + title to produce MP4
+    videos with waveform visualization and synced lyrics display. Use when users mention MV generation, music video rendering,
+    creating video from audio/lyrics, or visualizing songs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+    - scripts/remotion.config.ts
+
+    - scripts/render-mv.sh
+
+    - scripts/render.mjs
+
+    - scripts/render.sh
+
+    - scripts/tsconfig.json
+
+    - scripts/src/AudioVisualization.tsx
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install acestep-simplemv
+
+    ```'
+examples:
+- description: Install acestep-simplemv from ClawHub
+  usage: clawhub install acestep-simplemv
+schema_version: '1.0'

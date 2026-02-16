@@ -1,0 +1,59 @@
+name: keys
+title: Keys
+version: 1.0.0
+description: Secure API key management with broker. Keys never exposed to agent context.
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - keys
+  source: clawhub-community
+  clawhub_slug: keys
+  clawhub_path: ivangdavila/keys
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Keys
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install keys
+
+    # Path: ivangdavila/keys
+
+
+    ## Description
+
+    Secure API key management with broker. Keys never exposed to agent context.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - keys-broker.sh
+
+    - manage.md
+
+    - setup.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install keys
+
+    ```'
+examples:
+- description: Install Keys from ClawHub
+  usage: clawhub install keys
+schema_version: '1.0'

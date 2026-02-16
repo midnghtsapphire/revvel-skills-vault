@@ -1,0 +1,55 @@
+name: claw-voice
+title: ClawVoice
+version: 0.0.2
+description: ''
+metadata:
+  author: niczy
+  category: General
+  tags:
+  - general
+  - claw
+  - voice
+  source: clawhub-community
+  clawhub_slug: claw-voice
+  clawhub_path: niczy/claw-voice
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawVoice
+
+    # Source: ClawHub community skill by niczy
+
+    # Install: clawhub install claw-voice
+
+    # Path: niczy/claw-voice
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - _meta.json
+
+    - client.py
+
+    - skill.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-voice
+
+    ```'
+examples:
+- description: Install ClawVoice from ClawHub
+  usage: clawhub install claw-voice
+schema_version: '1.0'

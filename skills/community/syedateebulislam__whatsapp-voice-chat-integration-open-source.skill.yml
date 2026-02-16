@@ -1,0 +1,75 @@
+name: whatsapp-voice-talk
+title: whatsappVoiceOpenSkill
+version: 1.0.0
+description: Real-time WhatsApp voice message processing. Transcribe voice notes to text via Whisper, detect intent, execute
+  handlers, and send responses. Use when building conversational voice interfaces for WhatsApp. Supports English and Hindi,
+  customizable intents (weather, status, commands), automatic langua
+metadata:
+  author: syedateebulislam
+  category: Communication
+  tags:
+  - communication
+  - whatsapp
+  - voice
+  - talk
+  source: clawhub-community
+  clawhub_slug: whatsapp-voice-chat-integration-open-source
+  clawhub_path: syedateebulislam/whatsapp-voice-chat-integration-open-source
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# whatsappVoiceOpenSkill
+
+    # Source: ClawHub community skill by syedateebulislam
+
+    # Install: clawhub install whatsapp-voice-chat-integration-open-source
+
+    # Path: syedateebulislam/whatsapp-voice-chat-integration-open-source
+
+
+    ## Description
+
+    Real-time WhatsApp voice message processing. Transcribe voice notes to text via Whisper, detect intent, execute handlers,
+    and send responses. Use when building conversational voice interfaces for WhatsApp. Supports English and Hindi, customizable
+    intents (weather, status, commands), automatic langua
+
+
+    ## Files
+
+    - COMMUNITY-NOTES.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - example-custom-intents.js
+
+    - package.json
+
+    - requirements.txt
+
+    - references/API.md
+
+    - references/SETUP.md
+
+    - scripts/transcribe.py
+
+    - scripts/voice-listener-daemon.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install whatsapp-voice-chat-integration-open-source
+
+    ```'
+examples:
+- description: Install whatsappVoiceOpenSkill from ClawHub
+  usage: clawhub install whatsapp-voice-chat-integration-open-source
+schema_version: '1.0'

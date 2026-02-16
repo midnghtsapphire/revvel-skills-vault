@@ -1,0 +1,55 @@
+name: harrypotter
+title: Harrypotter
+version: 1.0.0
+description: '"CLI for AI agents to lookup Harry Potter universe info for their humans. Uses HP-API. No auth required."'
+metadata:
+  author: jeffaf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - harrypotter
+  source: clawhub-community
+  clawhub_slug: harrypotter
+  clawhub_path: jeffaf/harrypotter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Harrypotter
+
+    # Source: ClawHub community skill by jeffaf
+
+    # Install: clawhub install harrypotter
+
+    # Path: jeffaf/harrypotter
+
+
+    ## Description
+
+    "CLI for AI agents to lookup Harry Potter universe info for their humans. Uses HP-API. No auth required."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install harrypotter
+
+    ```'
+examples:
+- description: Install Harrypotter from ClawHub
+  usage: clawhub install harrypotter
+schema_version: '1.0'

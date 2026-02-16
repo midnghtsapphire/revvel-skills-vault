@@ -1,0 +1,71 @@
+name: revenuecat
+title: RevenueCat
+version: 1.0.2
+description: RevenueCat metrics, customer data, and documentation search. Use when querying subscription analytics, MRR, churn,
+  customers, or RevenueCat docs.
+metadata:
+  author: jeiting
+  category: Search & Research
+  tags:
+  - search-research
+  - revenuecat
+  source: clawhub-community
+  clawhub_slug: revenuecat
+  clawhub_path: jeiting/revenuecat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RevenueCat
+
+    # Source: ClawHub community skill by jeiting
+
+    # Install: clawhub install revenuecat
+
+    # Path: jeiting/revenuecat
+
+
+    ## Description
+
+    RevenueCat metrics, customer data, and documentation search. Use when querying subscription analytics, MRR, churn, customers,
+    or RevenueCat docs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-v2.md
+
+    - references/customers.md
+
+    - references/entitlements.md
+
+    - references/error-handling.md
+
+    - references/integrations.md
+
+    - references/metrics.md
+
+    - references/offerings.md
+
+    - references/paywalls.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install revenuecat
+
+    ```'
+examples:
+- description: Install RevenueCat from ClawHub
+  usage: clawhub install revenuecat
+schema_version: '1.0'

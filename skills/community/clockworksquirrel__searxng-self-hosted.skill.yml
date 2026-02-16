@@ -1,0 +1,55 @@
+name: searxng
+title: SearXNG Self-Hosted Search
+version: 1.0.0
+description: Search the web using a self-hosted SearXNG instance. Privacy-respecting metasearch that aggregates results from
+  multiple engines.
+metadata:
+  author: clockworksquirrel
+  category: Search & Research
+  tags:
+  - search-research
+  - searxng
+  source: clawhub-community
+  clawhub_slug: searxng-self-hosted
+  clawhub_path: clockworksquirrel/searxng-self-hosted
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SearXNG Self-Hosted Search
+
+    # Source: ClawHub community skill by clockworksquirrel
+
+    # Install: clawhub install searxng-self-hosted
+
+    # Path: clockworksquirrel/searxng-self-hosted
+
+
+    ## Description
+
+    Search the web using a self-hosted SearXNG instance. Privacy-respecting metasearch that aggregates results from multiple
+    engines.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install searxng-self-hosted
+
+    ```'
+examples:
+- description: Install SearXNG Self-Hosted Search from ClawHub
+  usage: clawhub install searxng-self-hosted
+schema_version: '1.0'

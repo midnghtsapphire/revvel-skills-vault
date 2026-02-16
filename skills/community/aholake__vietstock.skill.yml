@@ -1,0 +1,60 @@
+name: fireant-stock
+title: Vietnam Stock Price Check
+version: 1.0.0
+description: Automated Vietnamese stock price checking on FireAnt.vn. Use when checking current stock prices, market data,
+  trading volumes, or financial information for Vietnamese stocks (HOSE, HNX, UPCOM). Accepts stock symbols like DPM, VCB,
+  FPT, etc. and returns formatted price data, market statistics, and ke
+metadata:
+  author: aholake
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - fireant
+  - stock
+  source: clawhub-community
+  clawhub_slug: vietstock
+  clawhub_path: aholake/vietstock
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vietnam Stock Price Check
+
+    # Source: ClawHub community skill by aholake
+
+    # Install: clawhub install vietstock
+
+    # Path: aholake/vietstock
+
+
+    ## Description
+
+    Automated Vietnamese stock price checking on FireAnt.vn. Use when checking current stock prices, market data, trading
+    volumes, or financial information for Vietnamese stocks (HOSE, HNX, UPCOM). Accepts stock symbols like DPM, VCB, FPT,
+    etc. and returns formatted price data, market statistics, and ke
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check_stock.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vietstock
+
+    ```'
+examples:
+- description: Install Vietnam Stock Price Check from ClawHub
+  usage: clawhub install vietstock
+schema_version: '1.0'

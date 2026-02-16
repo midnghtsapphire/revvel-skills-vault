@@ -1,0 +1,65 @@
+name: compare-pools
+title: Uniswap Compare Pools
+version: 0.1.0
+description: Compare all Uniswap pools for a token pair across fee tiers and versions. Use when the user asks which pool is
+  best, wants to compare V3 vs V4, or wants to find the optimal fee tier.
+metadata:
+  author: wpank
+  category: General
+  tags:
+  - general
+  - compare
+  - pools
+  - '[task(subagent_type:pool-researcher)]'
+  source: clawhub-community
+  clawhub_slug: compare-pools
+  clawhub_path: wpank/compare-pools
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[Task(subagent_type:pool-researcher)]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Uniswap Compare Pools
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install compare-pools
+
+    # Path: wpank/compare-pools
+
+
+    ## Description
+
+    Compare all Uniswap pools for a token pair across fee tiers and versions. Use when the user asks which pool is best, wants
+    to compare V3 vs V4, or wants to find the optimal fee tier.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    [Task(subagent_type:pool-researcher)]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install compare-pools
+
+    ```'
+examples:
+- description: Install Uniswap Compare Pools from ClawHub
+  usage: clawhub install compare-pools
+schema_version: '1.0'

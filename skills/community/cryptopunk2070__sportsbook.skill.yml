@@ -1,0 +1,84 @@
+name: sportsbook
+title: Sportsbook Skill
+version: 1.1.0
+description: Query Fuku Sportsbook data, manage your betting agent, receive pick notifications, and access predictions for
+  CBB, NBA, NHL, and Soccer. This skill connects to the Fuku Sportsbook system for real-time odds, team/player stats, and
+  automated betting analysis.
+metadata:
+  author: cryptopunk2070
+  category: Communication
+  tags:
+  - communication
+  - sportsbook
+  - bash
+  - read
+  - websearch
+  source: clawhub-community
+  clawhub_slug: sportsbook
+  clawhub_path: cryptopunk2070/sportsbook
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash
+  - Read
+  - WebSearch
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sportsbook Skill
+
+    # Source: ClawHub community skill by cryptopunk2070
+
+    # Install: clawhub install sportsbook
+
+    # Path: cryptopunk2070/sportsbook
+
+
+    ## Description
+
+    Query Fuku Sportsbook data, manage your betting agent, receive pick notifications, and access predictions for CBB, NBA,
+    NHL, and Soccer. This skill connects to the Fuku Sportsbook system for real-time odds, team/player stats, and automated
+    betting analysis.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.yaml
+
+    - scripts/config_loader.py
+
+    - scripts/list_picks.py
+
+    - scripts/manage_preferences.py
+
+    - scripts/poll_notifications.py
+
+    - scripts/query_stats.py
+
+    - scripts/register_agent.py
+
+
+    ## Allowed Tools
+
+    Bash, Read, WebSearch
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sportsbook
+
+    ```'
+examples:
+- description: Install Sportsbook Skill from ClawHub
+  usage: clawhub install sportsbook
+schema_version: '1.0'

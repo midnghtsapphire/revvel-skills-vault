@@ -1,0 +1,73 @@
+name: scout
+title: Scout
+version: 1.0.2
+description: Agent trust intelligence for Moltbook and x402 Bazaar. Use when you need to check if an agent or service is trustworthy
+  before paying, compare agents side-by-side, scan feeds for quality agents, or make trust-gated USDC payments. Answers the
+  question "should I pay this agent?" with research-backed s
+metadata:
+  author: yaooooooooooooooo
+  category: Search & Research
+  tags:
+  - search-research
+  - scout
+  source: clawhub-community
+  clawhub_slug: scout
+  clawhub_path: yaooooooooooooooo/scout
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Scout
+
+    # Source: ClawHub community skill by yaooooooooooooooo
+
+    # Install: clawhub install scout
+
+    # Path: yaooooooooooooooo/scout
+
+
+    ## Description
+
+    Agent trust intelligence for Moltbook and x402 Bazaar. Use when you need to check if an agent or service is trustworthy
+    before paying, compare agents side-by-side, scan feeds for quality agents, or make trust-gated USDC payments. Answers
+    the question "should I pay this agent?" with research-backed s
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - batch-scan.js
+
+    - package-lock.json
+
+    - package.json
+
+    - demo/index.html
+
+    - scripts/api-server.js
+
+    - scripts/batch-report.js
+
+    - scripts/compare.js
+
+    - scripts/deep-report.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install scout
+
+    ```'
+examples:
+- description: Install Scout from ClawHub
+  usage: clawhub install scout
+schema_version: '1.0'

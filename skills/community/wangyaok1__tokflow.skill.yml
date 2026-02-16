@@ -1,0 +1,57 @@
+name: tokflow
+title: TokFlow
+version: 0.5.0
+description: Token 消耗监控与优化分析工具。查询 LLM 模型用量、费用、各渠道余额、提问方式分析与优化建议。当用户询问 token 消耗、模型费用、优化建议、渠道余额、提问方式优化等问题时使用此技能。
+metadata:
+  author: wangyaok1
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - tokflow
+  source: clawhub-community
+  clawhub_slug: tokflow
+  clawhub_path: wangyaok1/tokflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TokFlow
+
+    # Source: ClawHub community skill by wangyaok1
+
+    # Install: clawhub install tokflow
+
+    # Path: wangyaok1/tokflow
+
+
+    ## Description
+
+    Token 消耗监控与优化分析工具。查询 LLM 模型用量、费用、各渠道余额、提问方式分析与优化建议。当用户询问 token 消耗、模型费用、优化建议、渠道余额、提问方式优化等问题时使用此技能。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tokflow_query.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tokflow
+
+    ```'
+examples:
+- description: Install TokFlow from ClawHub
+  usage: clawhub install tokflow
+schema_version: '1.0'

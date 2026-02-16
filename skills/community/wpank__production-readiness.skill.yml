@@ -1,0 +1,60 @@
+name: production-readiness
+title: Production Readiness
+version: 1.0.0
+description: Meta-skill that orchestrates logging, monitoring, error handling, performance, security, deployment, and testing
+  skills to ensure a service is fully production-ready before launch. Use before first deploy, major releases, quarterly reviews,
+  or after incidents.
+metadata:
+  author: wpank
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - production
+  - readiness
+  source: clawhub-community
+  clawhub_slug: production-readiness
+  clawhub_path: wpank/production-readiness
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Production Readiness
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install production-readiness
+
+    # Path: wpank/production-readiness
+
+
+    ## Description
+
+    Meta-skill that orchestrates logging, monitoring, error handling, performance, security, deployment, and testing skills
+    to ensure a service is fully production-ready before launch. Use before first deploy, major releases, quarterly reviews,
+    or after incidents.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install production-readiness
+
+    ```'
+examples:
+- description: Install Production Readiness from ClawHub
+  usage: clawhub install production-readiness
+schema_version: '1.0'

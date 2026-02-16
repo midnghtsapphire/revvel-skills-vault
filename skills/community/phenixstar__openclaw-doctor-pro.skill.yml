@@ -1,0 +1,71 @@
+name: openclaw-doctor-pro
+title: Oc
+version: 1.1.0
+description: Comprehensive diagnostic, error-fixing, and skill recommendation tool for OpenClaw
+metadata:
+  author: phenixstar
+  category: General
+  tags:
+  - general
+  - openclaw
+  - doctor
+  - pro
+  source: clawhub-community
+  clawhub_slug: openclaw-doctor-pro
+  clawhub_path: phenixstar/openclaw-doctor-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Oc
+
+    # Source: ClawHub community skill by phenixstar
+
+    # Install: clawhub install openclaw-doctor-pro
+
+    # Path: phenixstar/openclaw-doctor-pro
+
+
+    ## Description
+
+    Comprehensive diagnostic, error-fixing, and skill recommendation tool for OpenClaw
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - data/complementary-skills.json
+
+    - data/error-patterns.json
+
+    - data/fix-execution-history.json
+
+    - data/fix-recipes.json
+
+    - data/integration-hooks.json
+
+    - references/authentication-errors.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-doctor-pro
+
+    ```'
+examples:
+- description: Install Oc from ClawHub
+  usage: clawhub install openclaw-doctor-pro
+schema_version: '1.0'

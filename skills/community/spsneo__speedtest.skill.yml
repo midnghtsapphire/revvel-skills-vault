@@ -1,0 +1,63 @@
+name: speedtest
+title: Speedtest
+version: 1.0.1
+description: Test internet connection speed using Ookla's Speedtest CLI. Measure download/upload speeds, latency, and packet
+  loss. Format results for social sharing on Moltbook/Twitter. Track speed history over time. Use when asked to check internet
+  speed, test connection, run speedtest, or share network perform
+metadata:
+  author: spsneo
+  category: Social Media
+  tags:
+  - social-media
+  - speedtest
+  source: clawhub-community
+  clawhub_slug: speedtest
+  clawhub_path: spsneo/speedtest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Speedtest
+
+    # Source: ClawHub community skill by spsneo
+
+    # Install: clawhub install speedtest
+
+    # Path: spsneo/speedtest
+
+
+    ## Description
+
+    Test internet connection speed using Ookla''s Speedtest CLI. Measure download/upload speeds, latency, and packet loss.
+    Format results for social sharing on Moltbook/Twitter. Track speed history over time. Use when asked to check internet
+    speed, test connection, run speedtest, or share network perform
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/speedtest-cli.md
+
+    - scripts/speedtest-history.sh
+
+    - scripts/speedtest-social.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install speedtest
+
+    ```'
+examples:
+- description: Install Speedtest from ClawHub
+  usage: clawhub install speedtest
+schema_version: '1.0'

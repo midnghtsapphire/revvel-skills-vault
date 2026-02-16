@@ -1,0 +1,55 @@
+name: huckleberry
+title: Huckleberry
+version: 1.0.1
+description: Track baby sleep, feeding, diapers, and growth via the Huckleberry CLI. Use when the user asks about logging
+  baby activities, starting/stopping sleep, bottle feeding, diaper changes, or growth measurements.
+metadata:
+  author: jayhickey
+  category: General
+  tags:
+  - general
+  - huckleberry
+  source: clawhub-community
+  clawhub_slug: huckleberry
+  clawhub_path: jayhickey/huckleberry
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Huckleberry
+
+    # Source: ClawHub community skill by jayhickey
+
+    # Install: clawhub install huckleberry
+
+    # Path: jayhickey/huckleberry
+
+
+    ## Description
+
+    Track baby sleep, feeding, diapers, and growth via the Huckleberry CLI. Use when the user asks about logging baby activities,
+    starting/stopping sleep, bottle feeding, diaper changes, or growth measurements.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install huckleberry
+
+    ```'
+examples:
+- description: Install Huckleberry from ClawHub
+  usage: clawhub install huckleberry
+schema_version: '1.0'

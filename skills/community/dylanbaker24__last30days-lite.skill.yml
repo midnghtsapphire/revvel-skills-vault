@@ -1,0 +1,55 @@
+name: last30days
+title: Last 30 Days (Lite)
+version: 1.0.0
+description: Research any topic across Reddit, X/Twitter, and the web from the last 30 days. Synthesizes findings into actionable
+  insights or copy-paste prompts.
+metadata:
+  author: dylanbaker24
+  category: Search & Research
+  tags:
+  - search-research
+  - last30days
+  source: clawhub-community
+  clawhub_slug: last30days-lite
+  clawhub_path: dylanbaker24/last30days-lite
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Last 30 Days (Lite)
+
+    # Source: ClawHub community skill by dylanbaker24
+
+    # Install: clawhub install last30days-lite
+
+    # Path: dylanbaker24/last30days-lite
+
+
+    ## Description
+
+    Research any topic across Reddit, X/Twitter, and the web from the last 30 days. Synthesizes findings into actionable insights
+    or copy-paste prompts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install last30days-lite
+
+    ```'
+examples:
+- description: Install Last 30 Days (Lite) from ClawHub
+  usage: clawhub install last30days-lite
+schema_version: '1.0'

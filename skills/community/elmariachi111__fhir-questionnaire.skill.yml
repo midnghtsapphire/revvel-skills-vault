@@ -1,0 +1,76 @@
+name: design-fhir-loinc-questionnaires
+title: FHIR Questionnaire Designer
+version: 0.2.4
+description: Helps creating FHIR conforming questionnaire definitions from plain requirement ideation docs. Contains scripts
+  to look up LOINC and SNOMED CT codes for medical conditions, findings, observations, medications, procedures from a official
+  coding APIs. No API keys required at the moment.
+metadata:
+  author: elmariachi111
+  category: Development & Coding
+  tags:
+  - development-coding
+  - design
+  - fhir
+  - loinc
+  - questionnaires
+  source: clawhub-community
+  clawhub_slug: fhir-questionnaire
+  clawhub_path: elmariachi111/fhir-questionnaire
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FHIR Questionnaire Designer
+
+    # Source: ClawHub community skill by elmariachi111
+
+    # Install: clawhub install fhir-questionnaire
+
+    # Path: elmariachi111/fhir-questionnaire
+
+
+    ## Description
+
+    Helps creating FHIR conforming questionnaire definitions from plain requirement ideation docs. Contains scripts to look
+    up LOINC and SNOMED CT codes for medical conditions, findings, observations, medications, procedures from a official coding
+    APIs. No API keys required at the moment.
+
+
+    ## Files
+
+    - REFERENCE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - setup.sh
+
+    - assets/templates/CodeSystem-example.json
+
+    - assets/templates/ValueSet-example.json
+
+    - assets/templates/advanced.json
+
+    - assets/templates/basic.json
+
+    - assets/templates/minimal.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fhir-questionnaire
+
+    ```'
+examples:
+- description: Install FHIR Questionnaire Designer from ClawHub
+  usage: clawhub install fhir-questionnaire
+schema_version: '1.0'

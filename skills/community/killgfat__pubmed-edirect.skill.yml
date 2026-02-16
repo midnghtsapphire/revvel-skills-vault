@@ -1,0 +1,70 @@
+name: pubmed-edirect
+title: Pubmed Edirect
+version: 0.4.2
+description: Email address to identify yourself to NCBI (recommended)
+metadata:
+  author: killgfat
+  category: Communication
+  tags:
+  - communication
+  - pubmed
+  - edirect
+  source: clawhub-community
+  clawhub_slug: pubmed-edirect
+  clawhub_path: killgfat/pubmed-edirect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pubmed Edirect
+
+    # Source: ClawHub community skill by killgfat
+
+    # Install: clawhub install pubmed-edirect
+
+    # Path: killgfat/pubmed-edirect
+
+
+    ## Description
+
+    Email address to identify yourself to NCBI (recommended)
+
+
+    ## Files
+
+    - ADVANCED.md
+
+    - BASICS.md
+
+    - EXAMPLES.md
+
+    - INSTALL.md
+
+    - OPENCLAW_INTEGRATION.md
+
+    - REFERENCE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/batch_fetch_abstracts.sh
+
+    - scripts/publication_trends.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pubmed-edirect
+
+    ```'
+examples:
+- description: Install Pubmed Edirect from ClawHub
+  usage: clawhub install pubmed-edirect
+schema_version: '1.0'

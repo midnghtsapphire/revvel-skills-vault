@@ -1,0 +1,74 @@
+name: monarch-money
+title: Monarch Money
+version: 1.0.1
+description: TypeScript library and CLI for Monarch Money budget management. Search transactions by date/merchant/amount,
+  update categories, list accounts and budgets, manage authentication. Use when user asks about Monarch Money transactions,
+  wants to categorize spending, needs to find specific transactions, or
+metadata:
+  author: davideasaf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - monarch
+  - money
+  source: clawhub-community
+  clawhub_slug: monarch-money
+  clawhub_path: davideasaf/monarch-money
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Monarch Money
+
+    # Source: ClawHub community skill by davideasaf
+
+    # Install: clawhub install monarch-money
+
+    # Path: davideasaf/monarch-money
+
+
+    ## Description
+
+    TypeScript library and CLI for Monarch Money budget management. Search transactions by date/merchant/amount, update categories,
+    list accounts and budgets, manage authentication. Use when user asks about Monarch Money transactions, wants to categorize
+    spending, needs to find specific transactions, or
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - jest.config.js
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - cli/client.ts
+
+    - cli/index.ts
+
+    - cli/commands/accounts.ts
+
+    - cli/commands/auth.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install monarch-money
+
+    ```'
+examples:
+- description: Install Monarch Money from ClawHub
+  usage: clawhub install monarch-money
+schema_version: '1.0'

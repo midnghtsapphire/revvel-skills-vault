@@ -1,0 +1,60 @@
+name: clawdbot-security
+title: Clawdbot Security Audit
+version: 1.0.2
+description: Security audit and hardening for Clawdbot/Moltbot installations. Detects exposed gateways, fixes permissions,
+  enables authentication, and guides firewall/Tailscale setup.
+metadata:
+  author: lxgicstudios
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawdbot
+  - security
+  source: clawhub-community
+  clawhub_slug: clawdbot-security
+  clawhub_path: lxgicstudios/clawdbot-security
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Security Audit
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install clawdbot-security
+
+    # Path: lxgicstudios/clawdbot-security
+
+
+    ## Description
+
+    Security audit and hardening for Clawdbot/Moltbot installations. Detects exposed gateways, fixes permissions, enables
+    authentication, and guides firewall/Tailscale setup.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.js
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-security
+
+    ```'
+examples:
+- description: Install Clawdbot Security Audit from ClawHub
+  usage: clawhub install clawdbot-security
+schema_version: '1.0'

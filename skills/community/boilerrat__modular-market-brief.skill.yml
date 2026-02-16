@@ -1,0 +1,67 @@
+name: modular-market-brief
+title: Modular Market Brief
+version: 0.1.0
+description: Generate modular, data-backed market reports (AM/PM) across global assets. Use for daily market briefs, premarket/aftermarket
+  summaries, cross-asset dashboards, sector/asset trend tables, top movers (gainers/losers) blocks, and a single best-idea
+  wrap-up. Designed to be region-agnostic and configura
+metadata:
+  author: boilerrat
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - modular
+  - market
+  - brief
+  source: clawhub-community
+  clawhub_slug: modular-market-brief
+  clawhub_path: boilerrat/modular-market-brief
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Modular Market Brief
+
+    # Source: ClawHub community skill by boilerrat
+
+    # Install: clawhub install modular-market-brief
+
+    # Path: boilerrat/modular-market-brief
+
+
+    ## Description
+
+    Generate modular, data-backed market reports (AM/PM) across global assets. Use for daily market briefs, premarket/aftermarket
+    summaries, cross-asset dashboards, sector/asset trend tables, top movers (gainers/losers) blocks, and a single best-idea
+    wrap-up. Designed to be region-agnostic and configura
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/movers_yahoo.py
+
+    - scripts/price_tape.py
+
+    - scripts/render_example.md
+
+    - scripts/tmx_movers.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install modular-market-brief
+
+    ```'
+examples:
+- description: Install Modular Market Brief from ClawHub
+  usage: clawhub install modular-market-brief
+schema_version: '1.0'

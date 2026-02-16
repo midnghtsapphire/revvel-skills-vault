@@ -1,0 +1,57 @@
+name: book-auto-body
+title: Book Auto Body
+version: 1.0.1
+description: Book auto-body services through Lokuli MCP. Use when user needs to find and book auto-body. Triggers on requests
+  like "book a auto-body", "find auto-body near me", or any auto-body service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - auto
+  - body
+  source: clawhub-community
+  clawhub_slug: book-auto-body
+  clawhub_path: edwardrodriguez703-design/book-auto-body
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Auto Body
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-auto-body
+
+    # Path: edwardrodriguez703-design/book-auto-body
+
+
+    ## Description
+
+    Book auto-body services through Lokuli MCP. Use when user needs to find and book auto-body. Triggers on requests like
+    "book a auto-body", "find auto-body near me", or any auto-body service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-auto-body
+
+    ```'
+examples:
+- description: Install Book Auto Body from ClawHub
+  usage: clawhub install book-auto-body
+schema_version: '1.0'

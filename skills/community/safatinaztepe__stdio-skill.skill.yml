@@ -1,0 +1,60 @@
+name: stdio-skill
+title: Stdio Skill
+version: 1.0.0
+description: '"Stdin/stdout file inbox/outbox bridge for passing files to/from Clawdbot using an MCP stdio server. Use when
+  you want a simple filesystem-backed dropbox: accept files into an inbox, move to tmp for processing, and emit deliverables
+  to an outbox (or a specified path)."'
+metadata:
+  author: safatinaztepe
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - stdio
+  - skill
+  source: clawhub-community
+  clawhub_slug: stdio-skill
+  clawhub_path: safatinaztepe/stdio-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Stdio Skill
+
+    # Source: ClawHub community skill by safatinaztepe
+
+    # Install: clawhub install stdio-skill
+
+    # Path: safatinaztepe/stdio-skill
+
+
+    ## Description
+
+    "Stdin/stdout file inbox/outbox bridge for passing files to/from Clawdbot using an MCP stdio server. Use when you want
+    a simple filesystem-backed dropbox: accept files into an inbox, move to tmp for processing, and emit deliverables to an
+    outbox (or a specified path)."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/server.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install stdio-skill
+
+    ```'
+examples:
+- description: Install Stdio Skill from ClawHub
+  usage: clawhub install stdio-skill
+schema_version: '1.0'

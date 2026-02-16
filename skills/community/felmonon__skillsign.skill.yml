@@ -1,0 +1,61 @@
+name: skillsign
+title: Skillsign — ed25519 Skill Signing
+version: 1.1.0
+description: Sign and verify agent skill folders with ed25519 keys. Detect tampering, manage trusted authors, and track provenance
+  chains (isnād).
+metadata:
+  author: felmonon
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skillsign
+  source: clawhub-community
+  clawhub_slug: skillsign
+  clawhub_path: felmonon/skillsign
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skillsign — ed25519 Skill Signing
+
+    # Source: ClawHub community skill by felmonon
+
+    # Install: clawhub install skillsign
+
+    # Path: felmonon/skillsign
+
+
+    ## Description
+
+    Sign and verify agent skill folders with ed25519 keys. Detect tampering, manage trusted authors, and track provenance
+    chains (isnād).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - setup.py
+
+    - skillsign.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skillsign
+
+    ```'
+examples:
+- description: Install Skillsign — ed25519 Skill Signing from ClawHub
+  usage: clawhub install skillsign
+schema_version: '1.0'

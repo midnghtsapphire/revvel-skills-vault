@@ -1,0 +1,62 @@
+name: workspace-review
+title: Workspace Review
+version: 1.0.2
+description: Audit workspace structure and memory files against OpenClaw conventions. Use when asked to "review workspace",
+  "audit files", "check structure", or during periodic self-maintenance. Helps catch drift from standard patterns.
+metadata:
+  author: ortegarod
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - workspace
+  - review
+  source: clawhub-community
+  clawhub_slug: workspace-review
+  clawhub_path: ortegarod/workspace-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Workspace Review
+
+    # Source: ClawHub community skill by ortegarod
+
+    # Install: clawhub install workspace-review
+
+    # Path: ortegarod/workspace-review
+
+
+    ## Description
+
+    Audit workspace structure and memory files against OpenClaw conventions. Use when asked to "review workspace", "audit
+    files", "check structure", or during periodic self-maintenance. Helps catch drift from standard patterns.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/checklist.md
+
+    - references/openclaw-conventions.md
+
+    - scripts/workspace-status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install workspace-review
+
+    ```'
+examples:
+- description: Install Workspace Review from ClawHub
+  usage: clawhub install workspace-review
+schema_version: '1.0'

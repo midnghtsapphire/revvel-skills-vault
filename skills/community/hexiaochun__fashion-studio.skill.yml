@@ -1,0 +1,68 @@
+name: fashion_studio
+title: Fashion Studio
+version: 1.0.0
+description: 电商服装详情页一站式生成工作流。自动生成模特图、服装搭配图和完整详情页。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - fashion
+  - studio
+  source: clawhub-community
+  clawhub_slug: fashion-studio
+  clawhub_path: hexiaochun/fashion-studio
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fashion Studio
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install fashion-studio
+
+    # Path: hexiaochun/fashion-studio
+
+
+    ## Description
+
+    电商服装详情页一站式生成工作流。自动生成模特图、服装搭配图和完整详情页。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/design-analysis.md
+
+    - references/detail-page-brief.md
+
+    - references/detail-page-generator.md
+
+    - references/model-casting-prompt.md
+
+    - references/outfit-generator.md
+
+    - references/prompt-translator.md
+
+    - references/single-page-render.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fashion-studio
+
+    ```'
+examples:
+- description: Install Fashion Studio from ClawHub
+  usage: clawhub install fashion-studio
+schema_version: '1.0'

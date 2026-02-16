@@ -1,0 +1,56 @@
+name: grok-image
+title: Grok Imagine Image Generation
+version: 1.0.0
+description: Generate images using Grok (xAI) image generation API. Use when you need to create images from text prompts.
+metadata:
+  author: raphbaph
+  category: Media & Content
+  tags:
+  - media-content
+  - grok
+  - image
+  source: clawhub-community
+  clawhub_slug: grok-imagine-render
+  clawhub_path: raphbaph/grok-imagine-render
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Grok Imagine Image Generation
+
+    # Source: ClawHub community skill by raphbaph
+
+    # Install: clawhub install grok-imagine-render
+
+    # Path: raphbaph/grok-imagine-render
+
+
+    ## Description
+
+    Generate images using Grok (xAI) image generation API. Use when you need to create images from text prompts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_image.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install grok-imagine-render
+
+    ```'
+examples:
+- description: Install Grok Imagine Image Generation from ClawHub
+  usage: clawhub install grok-imagine-render
+schema_version: '1.0'

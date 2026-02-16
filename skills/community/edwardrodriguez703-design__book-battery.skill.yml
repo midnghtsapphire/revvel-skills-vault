@@ -1,0 +1,56 @@
+name: book-battery
+title: Book Battery
+version: 1.0.1
+description: Book battery services through Lokuli MCP. Use when user needs to find and book battery. Triggers on requests
+  like "book a battery", "find battery near me", or any battery service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - battery
+  source: clawhub-community
+  clawhub_slug: book-battery
+  clawhub_path: edwardrodriguez703-design/book-battery
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Battery
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-battery
+
+    # Path: edwardrodriguez703-design/book-battery
+
+
+    ## Description
+
+    Book battery services through Lokuli MCP. Use when user needs to find and book battery. Triggers on requests like "book
+    a battery", "find battery near me", or any battery service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-battery
+
+    ```'
+examples:
+- description: Install Book Battery from ClawHub
+  usage: clawhub install book-battery
+schema_version: '1.0'

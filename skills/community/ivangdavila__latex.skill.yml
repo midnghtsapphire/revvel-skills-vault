@@ -1,0 +1,53 @@
+name: latex
+title: LaTeX
+version: 1.0.0
+description: Write LaTeX documents with correct syntax, packages, and compilation workflow.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - latex
+  source: clawhub-community
+  clawhub_slug: latex
+  clawhub_path: ivangdavila/latex
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LaTeX
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install latex
+
+    # Path: ivangdavila/latex
+
+
+    ## Description
+
+    Write LaTeX documents with correct syntax, packages, and compilation workflow.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install latex
+
+    ```'
+examples:
+- description: Install LaTeX from ClawHub
+  usage: clawhub install latex
+schema_version: '1.0'

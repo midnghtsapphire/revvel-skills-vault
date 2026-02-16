@@ -1,0 +1,58 @@
+name: lofy-home
+title: Lofy Home
+version: 1.0.0
+description: Smart home control for the Lofy AI assistant — scene modes (study, chill, sleep, morning, grind), device management
+  via Home Assistant REST API, presence-based automation, natural language commands for lights, music, thermostat, and PC
+  wake-on-LAN. Use when controlling smart home devices, activating
+metadata:
+  author: harrey401
+  category: Media & Content
+  tags:
+  - media-content
+  - lofy
+  - home
+  source: clawhub-community
+  clawhub_slug: lofy-home
+  clawhub_path: harrey401/lofy-home
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lofy Home
+
+    # Source: ClawHub community skill by harrey401
+
+    # Install: clawhub install lofy-home
+
+    # Path: harrey401/lofy-home
+
+
+    ## Description
+
+    Smart home control for the Lofy AI assistant — scene modes (study, chill, sleep, morning, grind), device management via
+    Home Assistant REST API, presence-based automation, natural language commands for lights, music, thermostat, and PC wake-on-LAN.
+    Use when controlling smart home devices, activating
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lofy-home
+
+    ```'
+examples:
+- description: Install Lofy Home from ClawHub
+  usage: clawhub install lofy-home
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: obsidian-cleaner
+title: Obsidian Cleaner
+version: 1.0.0
+description: Automatically clean up loose images and attachments in Obsidian vault root, moving them to the Attachments folder.
+  Trigger when user says "clean obsidian", "clean attachments", or "整理附件".
+metadata:
+  author: sparkingskin-tech
+  category: Media & Content
+  tags:
+  - media-content
+  - obsidian
+  - cleaner
+  source: clawhub-community
+  clawhub_slug: obsidian-cleaner
+  clawhub_path: sparkingskin-tech/obsidian-cleaner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Obsidian Cleaner
+
+    # Source: ClawHub community skill by sparkingskin-tech
+
+    # Install: clawhub install obsidian-cleaner
+
+    # Path: sparkingskin-tech/obsidian-cleaner
+
+
+    ## Description
+
+    Automatically clean up loose images and attachments in Obsidian vault root, moving them to the Attachments folder. Trigger
+    when user says "clean obsidian", "clean attachments", or "整理附件".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - obsidian_cleaner.py
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install obsidian-cleaner
+
+    ```'
+examples:
+- description: Install Obsidian Cleaner from ClawHub
+  usage: clawhub install obsidian-cleaner
+schema_version: '1.0'

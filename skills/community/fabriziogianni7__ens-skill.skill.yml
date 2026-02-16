@@ -1,0 +1,57 @@
+name: ens
+title: ENS (Ethereum Name Service)
+version: 1.0.0
+description: Resolve ENS names (.eth) to Ethereum addresses and vice versa. Use when a user provides an .eth name (e.g. "send
+  to vitalik.eth"), when displaying addresses (show ENS names), looking up ENS profiles, or helping users register, renew,
+  or manage .eth names.
+metadata:
+  author: fabriziogianni7
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - ens
+  source: clawhub-community
+  clawhub_slug: ens-skill
+  clawhub_path: fabriziogianni7/ens-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ENS (Ethereum Name Service)
+
+    # Source: ClawHub community skill by fabriziogianni7
+
+    # Install: clawhub install ens-skill
+
+    # Path: fabriziogianni7/ens-skill
+
+
+    ## Description
+
+    Resolve ENS names (.eth) to Ethereum addresses and vice versa. Use when a user provides an .eth name (e.g. "send to vitalik.eth"),
+    when displaying addresses (show ENS names), looking up ENS profiles, or helping users register, renew, or manage .eth
+    names.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ens-skill
+
+    ```'
+examples:
+- description: Install ENS (Ethereum Name Service) from ClawHub
+  usage: clawhub install ens-skill
+schema_version: '1.0'

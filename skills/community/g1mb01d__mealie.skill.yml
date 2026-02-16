@@ -1,0 +1,57 @@
+name: mealie
+title: Mealie API skill
+version: 1.0.0
+description: Interact with a self‑hosted Mealie instance (recipe manager & meal planner) via its REST API. Use for adding,
+  updating, retrieving recipes, meal plans and generating shopping lists. Trigger when the user mentions their Mealie URL,
+  wants to import a recipe, create a meal plan or fetch a shopping list
+metadata:
+  author: g1mb01d
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mealie
+  source: clawhub-community
+  clawhub_slug: mealie
+  clawhub_path: g1mb01d/mealie
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mealie API skill
+
+    # Source: ClawHub community skill by g1mb01d
+
+    # Install: clawhub install mealie
+
+    # Path: g1mb01d/mealie
+
+
+    ## Description
+
+    Interact with a self‑hosted Mealie instance (recipe manager & meal planner) via its REST API. Use for adding, updating,
+    retrieving recipes, meal plans and generating shopping lists. Trigger when the user mentions their Mealie URL, wants to
+    import a recipe, create a meal plan or fetch a shopping list
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mealie
+
+    ```'
+examples:
+- description: Install Mealie API skill from ClawHub
+  usage: clawhub install mealie
+schema_version: '1.0'

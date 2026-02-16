@@ -1,0 +1,72 @@
+name: ado-multi-project
+title: Ado Multi Project
+version: 1.0.0
+description: Organize specs and tasks across multiple Azure DevOps projects with intelligent content-based mapping. Use when
+  working with project-per-team, area-path-based, or team-based ADO architectures. Handles cross-project coordination and
+  folder structure organization.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - ado
+  - multi
+  - project
+  - read
+  - write
+  - edit
+  - glob
+  source: clawhub-community
+  clawhub_slug: sw-ado-multi-project
+  clawhub_path: anton-abyzov/sw-ado-multi-project
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Write
+  - Edit
+  - Glob
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ado Multi Project
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-ado-multi-project
+
+    # Path: anton-abyzov/sw-ado-multi-project
+
+
+    ## Description
+
+    Organize specs and tasks across multiple Azure DevOps projects with intelligent content-based mapping. Use when working
+    with project-per-team, area-path-based, or team-based ADO architectures. Handles cross-project coordination and folder
+    structure organization.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Write, Edit, Glob
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-ado-multi-project
+
+    ```'
+examples:
+- description: Install Ado Multi Project from ClawHub
+  usage: clawhub install sw-ado-multi-project
+schema_version: '1.0'

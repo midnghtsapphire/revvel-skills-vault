@@ -1,0 +1,58 @@
+name: financial_tracker
+title: Financial Tracker
+version: 1.0.0
+description: Track business income and expenses in structured CSV format. Categorize transactions, monitor cash flow, generate
+  P&L summaries, and spot spending trends.
+metadata:
+  author: 1kalin
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - financial
+  - tracker
+  source: clawhub-community
+  clawhub_slug: financial-tracker
+  clawhub_path: 1kalin/financial-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Financial Tracker
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install financial-tracker
+
+    # Path: 1kalin/financial-tracker
+
+
+    ## Description
+
+    Track business income and expenses in structured CSV format. Categorize transactions, monitor cash flow, generate P&L
+    summaries, and spot spending trends.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install financial-tracker
+
+    ```'
+examples:
+- description: Install Financial Tracker from ClawHub
+  usage: clawhub install financial-tracker
+schema_version: '1.0'

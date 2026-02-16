@@ -1,0 +1,71 @@
+name: jellyseerr
+title: Jellyseerr
+version: 1.0.0
+description: Request movies and TV shows through Jellyseerr. Use when the user wants to add media to their Plex/Jellyfin server,
+  search for content availability, or manage media requests.
+metadata:
+  author: ericrosenberg
+  category: Search & Research
+  tags:
+  - search-research
+  - jellyseerr
+  source: clawhub-community
+  clawhub_slug: jellyseerr
+  clawhub_path: ericrosenberg/jellyseerr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jellyseerr
+
+    # Source: ClawHub community skill by ericrosenberg
+
+    # Install: clawhub install jellyseerr
+
+    # Path: ericrosenberg/jellyseerr
+
+
+    ## Description
+
+    Request movies and TV shows through Jellyseerr. Use when the user wants to add media to their Plex/Jellyfin server, search
+    for content availability, or manage media requests.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/WEBHOOK_SETUP.md
+
+    - references/api.md
+
+    - scripts/auto_monitor.sh
+
+    - scripts/install_service.sh
+
+    - scripts/monitor_availability.py
+
+    - scripts/request_movie.py
+
+    - scripts/request_tv.py
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jellyseerr
+
+    ```'
+examples:
+- description: Install Jellyseerr from ClawHub
+  usage: clawhub install jellyseerr
+schema_version: '1.0'

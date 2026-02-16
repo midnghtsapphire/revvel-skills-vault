@@ -1,0 +1,65 @@
+name: evenrealities-tracker
+title: Evenrealities Tracker
+version: 1.2.0
+description: Automate Evenrealities order monitoring (daily checks, status history, change-only alerts). Uses fast-browser-use
+  to fill the tracker form, compare statuses, and notify Telegram only when something changes, while logging everything into
+  `memory/evenrealities-status-history.json`.
+metadata:
+  author: thibautrey
+  category: Search & Research
+  tags:
+  - search-research
+  - evenrealities
+  - tracker
+  source: clawhub-community
+  clawhub_slug: evenrealities-tracker
+  clawhub_path: thibautrey/evenrealities-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Evenrealities Tracker
+
+    # Source: ClawHub community skill by thibautrey
+
+    # Install: clawhub install evenrealities-tracker
+
+    # Path: thibautrey/evenrealities-tracker
+
+
+    ## Description
+
+    Automate Evenrealities order monitoring (daily checks, status history, change-only alerts). Uses fast-browser-use to fill
+    the tracker form, compare statuses, and notify Telegram only when something changes, while logging everything into `memory/evenrealities-status-history.json`.
+
+
+    ## Files
+
+    - README.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/evenrealities-orders-example.json
+
+    - scripts/tracker.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install evenrealities-tracker
+
+    ```'
+examples:
+- description: Install Evenrealities Tracker from ClawHub
+  usage: clawhub install evenrealities-tracker
+schema_version: '1.0'

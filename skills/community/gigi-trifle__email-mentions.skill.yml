@@ -1,0 +1,60 @@
+name: email-mentions
+title: Email Mentions
+version: 1.1.0
+description: Monitor Gmail inbox with security scanning. Tracks emails by trust level, scans for prompt injection, and quarantines
+  suspicious content. Only authorized senders can issue commands.
+metadata:
+  author: gigi-trifle
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - email
+  - mentions
+  source: clawhub-community
+  clawhub_slug: email-mentions
+  clawhub_path: gigi-trifle/email-mentions
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Email Mentions
+
+    # Source: ClawHub community skill by gigi-trifle
+
+    # Install: clawhub install email-mentions
+
+    # Path: gigi-trifle/email-mentions
+
+
+    ## Description
+
+    Monitor Gmail inbox with security scanning. Tracks emails by trust level, scans for prompt injection, and quarantines
+    suspicious content. Only authorized senders can issue commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdhub.json
+
+    - email-mentions.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-mentions
+
+    ```'
+examples:
+- description: Install Email Mentions from ClawHub
+  usage: clawhub install email-mentions
+schema_version: '1.0'

@@ -1,0 +1,68 @@
+name: korail-manager
+title: Korail Manager Final
+version: 0.1.0
+description: '"Cancel a reservation."'
+metadata:
+  author: lonehades
+  category: General
+  tags:
+  - general
+  - korail
+  - manager
+  source: clawhub-community
+  clawhub_slug: korail-manager-final
+  clawhub_path: lonehades/korail-manager-final
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Korail Manager Final
+
+    # Source: ClawHub community skill by lonehades
+
+    # Install: clawhub install korail-manager-final
+
+    # Path: lonehades/korail-manager-final
+
+
+    ## Description
+
+    "Cancel a reservation."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/korail2/__init__.py
+
+    - lib/korail2/constants.py
+
+    - lib/korail2/korail2.py
+
+    - scripts/cancel.py
+
+    - scripts/search.py
+
+    - scripts/watch.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install korail-manager-final
+
+    ```'
+examples:
+- description: Install Korail Manager Final from ClawHub
+  usage: clawhub install korail-manager-final
+schema_version: '1.0'

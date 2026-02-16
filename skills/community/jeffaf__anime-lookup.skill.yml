@@ -1,0 +1,57 @@
+name: anime
+title: Anime
+version: 1.0.1
+description: '"CLI for AI agents to search and lookup anime info for their humans. Uses Jikan (unofficial MyAnimeList API).
+  No auth required."'
+metadata:
+  author: jeffaf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - anime
+  source: clawhub-community
+  clawhub_slug: anime-lookup
+  clawhub_path: jeffaf/anime-lookup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Anime
+
+    # Source: ClawHub community skill by jeffaf
+
+    # Install: clawhub install anime-lookup
+
+    # Path: jeffaf/anime-lookup
+
+
+    ## Description
+
+    "CLI for AI agents to search and lookup anime info for their humans. Uses Jikan (unofficial MyAnimeList API). No auth
+    required."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install anime-lookup
+
+    ```'
+examples:
+- description: Install Anime from ClawHub
+  usage: clawhub install anime-lookup
+schema_version: '1.0'

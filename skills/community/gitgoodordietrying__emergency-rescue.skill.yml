@@ -1,0 +1,58 @@
+name: emergency-rescue
+title: Emergency Rescue Kit
+version: 1.0.0
+description: Recover from developer disasters. Use when someone force-pushed to main, leaked credentials in git, ran out of
+  disk space, killed the wrong process, corrupted a database, broke a deploy, locked themselves out of SSH, lost commits after
+  a bad rebase, or hit any other "oh no" moment that needs immedia
+metadata:
+  author: gitgoodordietrying
+  category: Media & Content
+  tags:
+  - media-content
+  - emergency
+  - rescue
+  source: clawhub-community
+  clawhub_slug: emergency-rescue
+  clawhub_path: gitgoodordietrying/emergency-rescue
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Emergency Rescue Kit
+
+    # Source: ClawHub community skill by gitgoodordietrying
+
+    # Install: clawhub install emergency-rescue
+
+    # Path: gitgoodordietrying/emergency-rescue
+
+
+    ## Description
+
+    Recover from developer disasters. Use when someone force-pushed to main, leaked credentials in git, ran out of disk space,
+    killed the wrong process, corrupted a database, broke a deploy, locked themselves out of SSH, lost commits after a bad
+    rebase, or hit any other "oh no" moment that needs immedia
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install emergency-rescue
+
+    ```'
+examples:
+- description: Install Emergency Rescue Kit from ClawHub
+  usage: clawhub install emergency-rescue
+schema_version: '1.0'

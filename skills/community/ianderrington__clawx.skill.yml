@@ -1,0 +1,55 @@
+name: clawx
+title: ClawX Agent Verification
+version: 0.1.0
+description: Agent verification via ClawX OAuth system. Use when checking agent verification status, embedding verification
+  widgets, or working with agent identity/trust tiers.
+metadata:
+  author: ianderrington
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawx
+  source: clawhub-community
+  clawhub_slug: clawx
+  clawhub_path: ianderrington/clawx
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawX Agent Verification
+
+    # Source: ClawHub community skill by ianderrington
+
+    # Install: clawhub install clawx
+
+    # Path: ianderrington/clawx
+
+
+    ## Description
+
+    Agent verification via ClawX OAuth system. Use when checking agent verification status, embedding verification widgets,
+    or working with agent identity/trust tiers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawx
+
+    ```'
+examples:
+- description: Install ClawX Agent Verification from ClawHub
+  usage: clawhub install clawx
+schema_version: '1.0'

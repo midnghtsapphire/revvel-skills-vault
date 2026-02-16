@@ -1,0 +1,67 @@
+name: solana-sniper-bot
+title: Solana Sniper Bot
+version: 1.0.0
+description: Autonomous Solana token sniper and trading bot. Monitors new token launches on Raydium/Jupiter, evaluates rugpull
+  risk with LLM analysis, auto-buys promising launches, and manages exit strategies. Use when user wants to snipe Solana token
+  launches, trade memecoins, monitor new Solana pairs, or build
+metadata:
+  author: srikanthbellary
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - solana
+  - sniper
+  - bot
+  source: clawhub-community
+  clawhub_slug: solana-sniper-bot
+  clawhub_path: srikanthbellary/solana-sniper-bot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Solana Sniper Bot
+
+    # Source: ClawHub community skill by srikanthbellary
+
+    # Install: clawhub install solana-sniper-bot
+
+    # Path: srikanthbellary/solana-sniper-bot
+
+
+    ## Description
+
+    Autonomous Solana token sniper and trading bot. Monitors new token launches on Raydium/Jupiter, evaluates rugpull risk
+    with LLM analysis, auto-buys promising launches, and manages exit strategies. Use when user wants to snipe Solana token
+    launches, trade memecoins, monitor new Solana pairs, or build
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/jupiter-api.md
+
+    - references/raydium-pools.md
+
+    - scripts/setup.sh
+
+    - scripts/sniper.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solana-sniper-bot
+
+    ```'
+examples:
+- description: Install Solana Sniper Bot from ClawHub
+  usage: clawhub install solana-sniper-bot
+schema_version: '1.0'

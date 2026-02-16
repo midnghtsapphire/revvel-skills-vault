@@ -1,0 +1,56 @@
+name: memory-hygiene
+title: Memory Hygiene
+version: 1.0.0
+description: Audit, clean, and optimize Clawdbot's vector memory (LanceDB). Use when memory is bloated with junk, token usage
+  is high from irrelevant auto-recalls, or setting up memory maintenance automation.
+metadata:
+  author: dylanbaker24
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - memory
+  - hygiene
+  source: clawhub-community
+  clawhub_slug: memory-hygiene
+  clawhub_path: dylanbaker24/memory-hygiene
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Hygiene
+
+    # Source: ClawHub community skill by dylanbaker24
+
+    # Install: clawhub install memory-hygiene
+
+    # Path: dylanbaker24/memory-hygiene
+
+
+    ## Description
+
+    Audit, clean, and optimize Clawdbot''s vector memory (LanceDB). Use when memory is bloated with junk, token usage is high
+    from irrelevant auto-recalls, or setting up memory maintenance automation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-hygiene
+
+    ```'
+examples:
+- description: Install Memory Hygiene from ClawHub
+  usage: clawhub install memory-hygiene
+schema_version: '1.0'

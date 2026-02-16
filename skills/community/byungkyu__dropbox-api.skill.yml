@@ -1,0 +1,55 @@
+name: dropbox
+title: Dropbox
+version: 1.0.2
+description: '|'
+metadata:
+  author: byungkyu
+  category: General
+  tags:
+  - general
+  - dropbox
+  source: clawhub-community
+  clawhub_slug: dropbox-api
+  clawhub_path: byungkyu/dropbox-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dropbox
+
+    # Source: ClawHub community skill by byungkyu
+
+    # Install: clawhub install dropbox-api
+
+    # Path: byungkyu/dropbox-api
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dropbox-api
+
+    ```'
+examples:
+- description: Install Dropbox from ClawHub
+  usage: clawhub install dropbox-api
+schema_version: '1.0'

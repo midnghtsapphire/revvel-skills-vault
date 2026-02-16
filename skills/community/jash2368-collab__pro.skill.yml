@@ -1,0 +1,68 @@
+name: skill-creator
+title: jash
+version: 1.0.0
+description: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update
+  an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.
+metadata:
+  author: jash2368-collab
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - skill
+  - creator
+  source: clawhub-community
+  clawhub_slug: pro
+  clawhub_path: jash2368-collab/pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# jash
+
+    # Source: ClawHub community skill by jash2368-collab
+
+    # Install: clawhub install pro
+
+    # Path: jash2368-collab/pro
+
+
+    ## Description
+
+    Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing
+    skill) that extends Claude''s capabilities with specialized knowledge, workflows, or tool integrations.
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/output-patterns.md
+
+    - references/workflows.md
+
+    - scripts/init_skill.py
+
+    - scripts/package_skill.py
+
+    - scripts/quick_validate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pro
+
+    ```'
+examples:
+- description: Install jash from ClawHub
+  usage: clawhub install pro
+schema_version: '1.0'

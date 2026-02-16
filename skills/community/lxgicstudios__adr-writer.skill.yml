@@ -1,0 +1,66 @@
+name: adr-writer
+title: ADR Writer
+version: 1.0.0
+description: Generate Architecture Decision Records with AI. Use when documenting technical decisions.
+metadata:
+  author: lxgicstudios
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - adr
+  - writer
+  source: clawhub-community
+  clawhub_slug: adr-writer
+  clawhub_path: lxgicstudios/adr-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ADR Writer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install adr-writer
+
+    # Path: lxgicstudios/adr-writer
+
+
+    ## Description
+
+    Generate Architecture Decision Records with AI. Use when documenting technical decisions.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install adr-writer
+
+    ```'
+examples:
+- description: Install ADR Writer from ClawHub
+  usage: clawhub install adr-writer
+schema_version: '1.0'

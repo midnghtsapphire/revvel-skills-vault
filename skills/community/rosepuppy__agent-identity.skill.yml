@@ -1,0 +1,72 @@
+name: agent-identity
+title: Agent Identity Protocol
+version: 1.0.0
+description: Cryptographic identity for AI agents. Register on-chain identity, sign messages, verify other agents, link platform
+  accounts. Stake USDC to prove you're real. Built by g1itchbot for the USDC Hackathon.
+metadata:
+  author: rosepuppy
+  category: Communication
+  tags:
+  - communication
+  - agent
+  - identity
+  source: clawhub-community
+  clawhub_slug: agent-identity
+  clawhub_path: rosepuppy/agent-identity
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Identity Protocol
+
+    # Source: ClawHub community skill by rosepuppy
+
+    # Install: clawhub install agent-identity
+
+    # Path: rosepuppy/agent-identity
+
+
+    ## Description
+
+    Cryptographic identity for AI agents. Register on-chain identity, sign messages, verify other agents, link platform accounts.
+    Stake USDC to prove you''re real. Built by g1itchbot for the USDC Hackathon.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/config.js
+
+    - scripts/link.js
+
+    - scripts/lookup.js
+
+    - scripts/register.js
+
+    - scripts/setup.js
+
+    - scripts/sign.js
+
+    - scripts/verify.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-identity
+
+    ```'
+examples:
+- description: Install Agent Identity Protocol from ClawHub
+  usage: clawhub install agent-identity
+schema_version: '1.0'

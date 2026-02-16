@@ -1,0 +1,57 @@
+name: book-personal-trainer
+title: Book Personal Trainer
+version: 1.0.1
+description: Book personal-trainer services through Lokuli MCP. Use when user needs to find and book personal-trainer. Triggers
+  on requests like "book a personal-trainer", "find personal-trainer near me", or any personal-trainer service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - personal
+  - trainer
+  source: clawhub-community
+  clawhub_slug: book-personal-trainer
+  clawhub_path: edwardrodriguez703-design/book-personal-trainer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Personal Trainer
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-personal-trainer
+
+    # Path: edwardrodriguez703-design/book-personal-trainer
+
+
+    ## Description
+
+    Book personal-trainer services through Lokuli MCP. Use when user needs to find and book personal-trainer. Triggers on
+    requests like "book a personal-trainer", "find personal-trainer near me", or any personal-trainer service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-personal-trainer
+
+    ```'
+examples:
+- description: Install Book Personal Trainer from ClawHub
+  usage: clawhub install book-personal-trainer
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: meetings
+title: Meetings
+version: 1.0.0
+description: Build a personal meeting system for capturing notes, preparing agendas, and never missing follow-ups.
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - meetings
+  source: clawhub-community
+  clawhub_slug: meetings
+  clawhub_path: ivangdavila/meetings
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meetings
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install meetings
+
+    # Path: ivangdavila/meetings
+
+
+    ## Description
+
+    Build a personal meeting system for capturing notes, preparing agendas, and never missing follow-ups.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meetings
+
+    ```'
+examples:
+- description: Install Meetings from ClawHub
+  usage: clawhub install meetings
+schema_version: '1.0'

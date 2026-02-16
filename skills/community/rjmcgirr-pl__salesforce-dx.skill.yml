@@ -1,0 +1,63 @@
+name: salesforce-dx
+title: Salesforce
+version: 1.0.0
+description: Query Salesforce data and manage sales pipelines using the `sf` CLI. Use for SOQL queries (simple to complex),
+  opportunity pipeline analysis, forecast reporting, data exports, schema exploration, and CRM data operations. Also use for
+  executive workflows like looking up deals by name, finding contact
+metadata:
+  author: rjmcgirr-pl
+  category: Communication
+  tags:
+  - communication
+  - salesforce
+  source: clawhub-community
+  clawhub_slug: salesforce-dx
+  clawhub_path: rjmcgirr-pl/salesforce-dx
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Salesforce
+
+    # Source: ClawHub community skill by rjmcgirr-pl
+
+    # Install: clawhub install salesforce-dx
+
+    # Path: rjmcgirr-pl/salesforce-dx
+
+
+    ## Description
+
+    Query Salesforce data and manage sales pipelines using the `sf` CLI. Use for SOQL queries (simple to complex), opportunity
+    pipeline analysis, forecast reporting, data exports, schema exploration, and CRM data operations. Also use for executive
+    workflows like looking up deals by name, finding contact
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/pipeline-queries.md
+
+    - references/soql-patterns.md
+
+    - scripts/schema-export.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install salesforce-dx
+
+    ```'
+examples:
+- description: Install Salesforce from ClawHub
+  usage: clawhub install salesforce-dx
+schema_version: '1.0'

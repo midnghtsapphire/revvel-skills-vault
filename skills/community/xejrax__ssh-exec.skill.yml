@@ -1,0 +1,56 @@
+name: ssh-exec
+title: Ssh Exec
+version: 1.0.0
+description: '"Run a single command on a remote Tailscale node via SSH without opening an interactive session."'
+metadata:
+  author: xejrax
+  category: General
+  tags:
+  - general
+  - ssh
+  - exec
+  source: clawhub-community
+  clawhub_slug: ssh-exec
+  clawhub_path: xejrax/ssh-exec
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ssh Exec
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install ssh-exec
+
+    # Path: xejrax/ssh-exec
+
+
+    ## Description
+
+    "Run a single command on a remote Tailscale node via SSH without opening an interactive session."
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ssh-exec
+
+    ```'
+examples:
+- description: Install Ssh Exec from ClawHub
+  usage: clawhub install ssh-exec
+schema_version: '1.0'

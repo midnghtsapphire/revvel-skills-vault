@@ -1,0 +1,57 @@
+name: readwise
+title: Readwise & Reader
+version: 1.0.0
+description: Access Readwise highlights and Reader saved articles
+metadata:
+  author: refrigerator
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - readwise
+  source: clawhub-community
+  clawhub_slug: readwise
+  clawhub_path: refrigerator/readwise
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Readwise & Reader
+
+    # Source: ClawHub community skill by refrigerator
+
+    # Install: clawhub install readwise
+
+    # Path: refrigerator/readwise
+
+
+    ## Description
+
+    Access Readwise highlights and Reader saved articles
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/reader.mjs
+
+    - scripts/readwise.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install readwise
+
+    ```'
+examples:
+- description: Install Readwise & Reader from ClawHub
+  usage: clawhub install readwise
+schema_version: '1.0'

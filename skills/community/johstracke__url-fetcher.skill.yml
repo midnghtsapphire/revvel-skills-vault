@@ -1,0 +1,60 @@
+name: url-fetcher
+title: URL Fetcher
+version: 1.0.0
+description: 'Simple web content fetching without API keys or external dependencies. Uses Python stdlib (urllib) only. Features:
+  fetch HTML/text from URLs, basic HTML to markdown conversion, path-validated file writes (blocks system paths), URL validation
+  (blocks localhost/internal). Security: File writes use is_'
+metadata:
+  author: johstracke
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - url
+  - fetcher
+  source: clawhub-community
+  clawhub_slug: url-fetcher
+  clawhub_path: johstracke/url-fetcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# URL Fetcher
+
+    # Source: ClawHub community skill by johstracke
+
+    # Install: clawhub install url-fetcher
+
+    # Path: johstracke/url-fetcher
+
+
+    ## Description
+
+    Simple web content fetching without API keys or external dependencies. Uses Python stdlib (urllib) only. Features: fetch
+    HTML/text from URLs, basic HTML to markdown conversion, path-validated file writes (blocks system paths), URL validation
+    (blocks localhost/internal). Security: File writes use is_
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/url_fetcher.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install url-fetcher
+
+    ```'
+examples:
+- description: Install URL Fetcher from ClawHub
+  usage: clawhub install url-fetcher
+schema_version: '1.0'

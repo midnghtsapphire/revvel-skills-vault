@@ -1,0 +1,57 @@
+name: cloudflare
+title: Cloudflare
+version: 1.0.0
+description: Cloudflare CLI - manage DNS records, purge cache, and control Workers routes.
+metadata:
+  author: dbhurley
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - cloudflare
+  source: clawhub-community
+  clawhub_slug: cloudflare
+  clawhub_path: dbhurley/cloudflare
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cloudflare
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install cloudflare
+
+    # Path: dbhurley/cloudflare
+
+
+    ## Description
+
+    Cloudflare CLI - manage DNS records, purge cache, and control Workers routes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - scripts/cloudflare.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cloudflare
+
+    ```'
+examples:
+- description: Install Cloudflare from ClawHub
+  usage: clawhub install cloudflare
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: openocr
+title: openocr-skill
+version: 0.1.6
+description: Extract text from images, documents and scanned PDFs using OpenOCR
+metadata:
+  author: topdu
+  category: Media & Content
+  tags:
+  - media-content
+  - openocr
+  source: clawhub-community
+  clawhub_slug: openocr-skill
+  clawhub_path: topdu/openocr-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# openocr-skill
+
+    # Source: ClawHub community skill by topdu
+
+    # Install: clawhub install openocr-skill
+
+    # Path: topdu/openocr-skill
+
+
+    ## Description
+
+    Extract text from images, documents and scanned PDFs using OpenOCR
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openocr-skill
+
+    ```'
+examples:
+- description: Install openocr-skill from ClawHub
+  usage: clawhub install openocr-skill
+schema_version: '1.0'

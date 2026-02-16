@@ -1,0 +1,39 @@
+name: openclaw_openhue
+title: 💡 Openhue
+version: 1.0.0
+description: Control Philips Hue lights/scenes via the OpenHue CLI.
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - openhue
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - openhue
+install:
+- id: brew
+  platform: all
+  method: brew
+  command: openhue/cli/openhue-cli
+  label: Install OpenHue CLI (brew)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: openhue\ndescription: Control Philips Hue lights/scenes via the OpenHue CLI.\nhomepage: https://www.openhue.io/cli\n\
+    metadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"\U0001F4A1\",\n        \"requires\": { \"bins\": [\"\
+    openhue\"] },\n        \"install\":\n          [\n            {\n              \"id\": \"brew\",\n              \"kind\"\
+    : \"brew\",\n              \"formula\": \"openhue/cli/openhue-cli\",\n              \"bins\": [\"openhue\"],\n       \
+    \       \"label\": \"Install OpenHue CLI (brew)\",\n            },\n          ],\n      },\n  }\n---\n\n# OpenHue CLI\n\
+    \nUse `openhue` to control Hue lights and scenes via a Hue Bridge.\n\nSetup\n\n- Discover bridges: `openhue discover`\n\
+    - Guided setup: `openhue setup`\n\nRead\n\n- `openhue get light --json`\n- `openhue get room --json`\n- `openhue get scene\
+    \ --json`\n\nWrite\n\n- Turn on: `openhue set light <id-or-name> --on`\n- Turn off: `openhue set light <id-or-name> --off`\n\
+    - Brightness: `openhue set light <id> --on --brightness 50`\n- Color: `openhue set light <id> --on --rgb #3399FF`\n- Scene:\
+    \ `openhue set scene <scene-id>`\n\nNotes\n\n- You may need to press the Hue Bridge button during setup.\n- Use `--room\
+    \ \"Room Name\"` when light names are ambiguous.\n"
+examples: []
+schema_version: '1.0'

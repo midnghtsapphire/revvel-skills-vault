@@ -1,0 +1,60 @@
+name: antigravity-image
+title: Antigravity Image
+version: 1.0.0
+description: Generate images using the internal Antigravity Sandbox API (Gemini 3 Pro Image). Supports text-to-image generation
+  via internal Google endpoints.
+metadata:
+  author: houzl3416
+  category: Search & Research
+  tags:
+  - search-research
+  - antigravity
+  - image
+  source: clawhub-community
+  clawhub_slug: antigravity-image
+  clawhub_path: houzl3416/antigravity-image
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Antigravity Image
+
+    # Source: ClawHub community skill by houzl3416
+
+    # Install: clawhub install antigravity-image
+
+    # Path: houzl3416/antigravity-image
+
+
+    ## Description
+
+    Generate images using the internal Antigravity Sandbox API (Gemini 3 Pro Image). Supports text-to-image generation via
+    internal Google endpoints.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/internal-api.md
+
+    - scripts/generate_image_antigravity.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install antigravity-image
+
+    ```'
+examples:
+- description: Install Antigravity Image from ClawHub
+  usage: clawhub install antigravity-image
+schema_version: '1.0'

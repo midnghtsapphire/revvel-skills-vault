@@ -1,0 +1,53 @@
+name: folders
+title: Folders
+version: 1.0.0
+description: Index important directories and perform safe folder operations with proper security checks.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - folders
+  source: clawhub-community
+  clawhub_slug: folders
+  clawhub_path: ivangdavila/folders
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Folders
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install folders
+
+    # Path: ivangdavila/folders
+
+
+    ## Description
+
+    Index important directories and perform safe folder operations with proper security checks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install folders
+
+    ```'
+examples:
+- description: Install Folders from ClawHub
+  usage: clawhub install folders
+schema_version: '1.0'

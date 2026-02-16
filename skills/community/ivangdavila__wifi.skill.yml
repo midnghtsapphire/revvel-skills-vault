@@ -1,0 +1,53 @@
+name: wifi
+title: WiFi
+version: 1.0.0
+description: Troubleshoot and secure wireless networks with channel optimization and diagnostics.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - wifi
+  source: clawhub-community
+  clawhub_slug: wifi
+  clawhub_path: ivangdavila/wifi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WiFi
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install wifi
+
+    # Path: ivangdavila/wifi
+
+
+    ## Description
+
+    Troubleshoot and secure wireless networks with channel optimization and diagnostics.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wifi
+
+    ```'
+examples:
+- description: Install WiFi from ClawHub
+  usage: clawhub install wifi
+schema_version: '1.0'

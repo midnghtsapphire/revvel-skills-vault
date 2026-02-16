@@ -1,0 +1,56 @@
+name: conversation-summary
+title: Conversation Summary
+version: 1.0.0
+description: Generate summaries for conversation content. Helps users quickly get a summary of their chat history with support
+  for incremental updates.
+metadata:
+  author: dadaliu0121
+  category: Communication
+  tags:
+  - communication
+  - conversation
+  - summary
+  source: clawhub-community
+  clawhub_slug: ai-conversation-summary
+  clawhub_path: dadaliu0121/ai-conversation-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Conversation Summary
+
+    # Source: ClawHub community skill by dadaliu0121
+
+    # Install: clawhub install ai-conversation-summary
+
+    # Path: dadaliu0121/ai-conversation-summary
+
+
+    ## Description
+
+    Generate summaries for conversation content. Helps users quickly get a summary of their chat history with support for
+    incremental updates.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-conversation-summary
+
+    ```'
+examples:
+- description: Install Conversation Summary from ClawHub
+  usage: clawhub install ai-conversation-summary
+schema_version: '1.0'

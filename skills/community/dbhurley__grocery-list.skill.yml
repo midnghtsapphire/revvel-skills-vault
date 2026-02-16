@@ -1,0 +1,56 @@
+name: grocery-list
+title: Grocery List & Meal Planner
+version: 1.0.0
+description: Standalone grocery lists, recipes, and meal planning with local storage. No external service required.
+metadata:
+  author: dbhurley
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - grocery
+  - list
+  source: clawhub-community
+  clawhub_slug: grocery-list
+  clawhub_path: dbhurley/grocery-list
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Grocery List & Meal Planner
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install grocery-list
+
+    # Path: dbhurley/grocery-list
+
+
+    ## Description
+
+    Standalone grocery lists, recipes, and meal planning with local storage. No external service required.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/grocery.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install grocery-list
+
+    ```'
+examples:
+- description: Install Grocery List & Meal Planner from ClawHub
+  usage: clawhub install grocery-list
+schema_version: '1.0'

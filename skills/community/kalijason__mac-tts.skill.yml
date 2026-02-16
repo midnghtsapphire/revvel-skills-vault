@@ -1,0 +1,57 @@
+name: mac-tts
+title: Mac TTS
+version: 1.0.0
+description: Text-to-speech using macOS built-in `say` command. Use for voice notifications, audio alerts, reading text aloud,
+  or announcing messages through Mac speakers. Supports multiple languages including Chinese (Mandarin), English, Japanese,
+  etc.
+metadata:
+  author: kalijason
+  category: Media & Content
+  tags:
+  - media-content
+  - mac
+  - tts
+  source: clawhub-community
+  clawhub_slug: mac-tts
+  clawhub_path: kalijason/mac-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mac TTS
+
+    # Source: ClawHub community skill by kalijason
+
+    # Install: clawhub install mac-tts
+
+    # Path: kalijason/mac-tts
+
+
+    ## Description
+
+    Text-to-speech using macOS built-in `say` command. Use for voice notifications, audio alerts, reading text aloud, or announcing
+    messages through Mac speakers. Supports multiple languages including Chinese (Mandarin), English, Japanese, etc.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mac-tts
+
+    ```'
+examples:
+- description: Install Mac TTS from ClawHub
+  usage: clawhub install mac-tts
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: memory-git-sync
+title: Smart Git Backup
+version: 1.0.0
+description: Automates the backup of the OpenClaw workspace to a remote Git repository. Handles large file exclusions, validates
+  git configuration, and performs intelligent sync with conflict resolution.
+metadata:
+  author: vemec
+  category: Development & Coding
+  tags:
+  - development-coding
+  - memory
+  - git
+  - sync
+  source: clawhub-community
+  clawhub_slug: memory-git-sync
+  clawhub_path: vemec/memory-git-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Smart Git Backup
+
+    # Source: ClawHub community skill by vemec
+
+    # Install: clawhub install memory-git-sync
+
+    # Path: vemec/memory-git-sync
+
+
+    ## Description
+
+    Automates the backup of the OpenClaw workspace to a remote Git repository. Handles large file exclusions, validates git
+    configuration, and performs intelligent sync with conflict resolution.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sync.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-git-sync
+
+    ```'
+examples:
+- description: Install Smart Git Backup from ClawHub
+  usage: clawhub install memory-git-sync
+schema_version: '1.0'

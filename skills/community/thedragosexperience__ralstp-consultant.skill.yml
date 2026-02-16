@@ -1,0 +1,58 @@
+name: ralstp-consultant
+title: RALSTP Consultant
+version: 1.0.0
+description: Analyze problems using RALSTP (Recursive Agents and Landmarks Strategic-Tactical Planning). Based on PhD thesis
+  by Dorian Buksz (RALSTP). Identifies agents, calculates difficulty, and suggests decomposition.
+metadata:
+  author: thedragosexperience
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - ralstp
+  - consultant
+  source: clawhub-community
+  clawhub_slug: ralstp-consultant
+  clawhub_path: thedragosexperience/ralstp-consultant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RALSTP Consultant
+
+    # Source: ClawHub community skill by thedragosexperience
+
+    # Install: clawhub install ralstp-consultant
+
+    # Path: thedragosexperience/ralstp-consultant
+
+
+    ## Description
+
+    Analyze problems using RALSTP (Recursive Agents and Landmarks Strategic-Tactical Planning). Based on PhD thesis by Dorian
+    Buksz (RALSTP). Identifies agents, calculates difficulty, and suggests decomposition.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/analyze.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ralstp-consultant
+
+    ```'
+examples:
+- description: Install RALSTP Consultant from ClawHub
+  usage: clawhub install ralstp-consultant
+schema_version: '1.0'

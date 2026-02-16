@@ -1,0 +1,71 @@
+name: agentledger
+title: AgentLedger
+version: 1.1.1
+description: Expense tracking and accounting for AI agents. Log purchases, set budgets, generate spending reports, and manage
+  multi-currency finances — all stored locally. Privacy.com card import, natural language queries, CSV/JSON export. Use when
+  agents make purchases and need a financial audit trail.
+metadata:
+  author: c-goro
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - agentledger
+  source: clawhub-community
+  clawhub_slug: agentledger
+  clawhub_path: c-goro/agentledger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AgentLedger
+
+    # Source: ClawHub community skill by c-goro
+
+    # Install: clawhub install agentledger
+
+    # Path: c-goro/agentledger
+
+
+    ## Description
+
+    Expense tracking and accounting for AI agents. Log purchases, set budgets, generate spending reports, and manage multi-currency
+    finances — all stored locally. Privacy.com card import, natural language queries, CSV/JSON export. Use when agents make
+    purchases and need a financial audit trail.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - budget.js
+
+    - cli.js
+
+    - ledger.js
+
+    - ledger.test.js
+
+    - package.json
+
+    - reports.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentledger
+
+    ```'
+examples:
+- description: Install AgentLedger from ClawHub
+  usage: clawhub install agentledger
+schema_version: '1.0'

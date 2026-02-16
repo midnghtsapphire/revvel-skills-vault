@@ -1,0 +1,61 @@
+name: increment-work-router
+title: Increment Work Router
+version: 1.0.0
+description: Smart work continuation system that detects implementation intent and routes appropriately. Use when saying "implement
+  X", "continue working", "build feature", or "resume increment". Checks active increments, relevance matching, and TDD mode
+  to route to /sw:do or /sw:increment automatically.
+metadata:
+  author: anton-abyzov
+  category: System & OS
+  tags:
+  - system-os
+  - increment
+  - work
+  - router
+  source: clawhub-community
+  clawhub_slug: sw-increment-work-router
+  clawhub_path: anton-abyzov/sw-increment-work-router
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Increment Work Router
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-increment-work-router
+
+    # Path: anton-abyzov/sw-increment-work-router
+
+
+    ## Description
+
+    Smart work continuation system that detects implementation intent and routes appropriately. Use when saying "implement
+    X", "continue working", "build feature", or "resume increment". Checks active increments, relevance matching, and TDD
+    mode to route to /sw:do or /sw:increment automatically.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-increment-work-router
+
+    ```'
+examples:
+- description: Install Increment Work Router from ClawHub
+  usage: clawhub install sw-increment-work-router
+schema_version: '1.0'

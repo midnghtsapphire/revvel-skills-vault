@@ -1,0 +1,33 @@
+name: nutrient-openclaw
+title: Nutrient Document Processing
+version: 1.2.0
+description: 'Document processing for OpenClaw — convert, extract, OCR, redact, sign, and watermark PDFs and Office documents
+  using the Nutrient DWS API. Use when asked to convert documents (DOCX/XLSX/PPTX to PDF, PDF to images or Office formats),
+  extract text or tables from PDFs, apply OCR to scanned documents, '
+metadata:
+  author: jdrhyne
+  category: Media & Content
+  tags:
+  - media-content
+  - nutrient
+  - openclaw
+  source: clawhub-community
+  clawhub_slug: nutrient-openclaw
+  clawhub_path: jdrhyne/nutrient-openclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Nutrient Document Processing\n# Source: ClawHub community skill by jdrhyne\n# Install: clawhub install nutrient-openclaw\n\
+    # Path: jdrhyne/nutrient-openclaw\n\n## Description\nDocument processing for OpenClaw — convert, extract, OCR, redact,\
+    \ sign, and watermark PDFs and Office documents using the Nutrient DWS API. Use when asked to convert documents (DOCX/XLSX/PPTX\
+    \ to PDF, PDF to images or Office formats), extract text or tables from PDFs, apply OCR to scanned documents, \n\n## Files\n\
+    - SKILL.md\n- _meta.json\n\n## Installation\n```bash\nclawhub install nutrient-openclaw\n```"
+examples:
+- description: Install Nutrient Document Processing from ClawHub
+  usage: clawhub install nutrient-openclaw
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: supabase
+title: Supabase
+version: 1.0.0
+description: Connect to Supabase for database operations, vector search, and storage. Use for storing data, running SQL queries,
+  similarity search with pgvector, and managing tables. Triggers on requests involving databases, vector stores, embeddings,
+  or Supabase specifically.
+metadata:
+  author: stopmoclay
+  category: Search & Research
+  tags:
+  - search-research
+  - supabase
+  source: clawhub-community
+  clawhub_slug: supabase
+  clawhub_path: stopmoclay/supabase
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Supabase
+
+    # Source: ClawHub community skill by stopmoclay
+
+    # Install: clawhub install supabase
+
+    # Path: stopmoclay/supabase
+
+
+    ## Description
+
+    Connect to Supabase for database operations, vector search, and storage. Use for storing data, running SQL queries, similarity
+    search with pgvector, and managing tables. Triggers on requests involving databases, vector stores, embeddings, or Supabase
+    specifically.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/supabase.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install supabase
+
+    ```'
+examples:
+- description: Install Supabase from ClawHub
+  usage: clawhub install supabase
+schema_version: '1.0'

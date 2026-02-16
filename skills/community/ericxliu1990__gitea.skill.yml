@@ -1,0 +1,55 @@
+name: gitea
+title: Gitea
+version: 1.0.0
+description: '"Interact with Gitea using the `tea` CLI. Use `tea issues`, `tea pulls`, `tea releases`, and other commands
+  for issues, PRs, releases, and repository management."'
+metadata:
+  author: ericxliu1990
+  category: Development & Coding
+  tags:
+  - development-coding
+  - gitea
+  source: clawhub-community
+  clawhub_slug: gitea
+  clawhub_path: ericxliu1990/gitea
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gitea
+
+    # Source: ClawHub community skill by ericxliu1990
+
+    # Install: clawhub install gitea
+
+    # Path: ericxliu1990/gitea
+
+
+    ## Description
+
+    "Interact with Gitea using the `tea` CLI. Use `tea issues`, `tea pulls`, `tea releases`, and other commands for issues,
+    PRs, releases, and repository management."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gitea
+
+    ```'
+examples:
+- description: Install Gitea from ClawHub
+  usage: clawhub install gitea
+schema_version: '1.0'

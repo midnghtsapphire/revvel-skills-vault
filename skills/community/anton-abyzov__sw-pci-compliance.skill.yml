@@ -1,0 +1,58 @@
+name: pci-compliance
+title: Pci Compliance
+version: 1.0.0
+description: PCI DSS compliance expert for secure payment card handling and audit preparation. Use when implementing card
+  tokenization, encrypting payment data, or preparing for PCI compliance audits. Covers SAQ levels, data minimization, access
+  control, and audit logging requirements.
+metadata:
+  author: anton-abyzov
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - pci
+  - compliance
+  source: clawhub-community
+  clawhub_slug: sw-pci-compliance
+  clawhub_path: anton-abyzov/sw-pci-compliance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pci Compliance
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-pci-compliance
+
+    # Path: anton-abyzov/sw-pci-compliance
+
+
+    ## Description
+
+    PCI DSS compliance expert for secure payment card handling and audit preparation. Use when implementing card tokenization,
+    encrypting payment data, or preparing for PCI compliance audits. Covers SAQ levels, data minimization, access control,
+    and audit logging requirements.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-pci-compliance
+
+    ```'
+examples:
+- description: Install Pci Compliance from ClawHub
+  usage: clawhub install sw-pci-compliance
+schema_version: '1.0'

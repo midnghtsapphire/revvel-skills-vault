@@ -1,0 +1,56 @@
+name: auto-updater
+title: Skills Auto-Updater
+version: 1.0.0
+description: '"Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies
+  them, and messages the user with a summary of what changed."'
+metadata:
+  author: hightower6eu
+  category: Communication
+  tags:
+  - communication
+  - auto
+  - updater
+  source: clawhub-community
+  clawhub_slug: updater
+  clawhub_path: hightower6eu/updater
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skills Auto-Updater
+
+    # Source: ClawHub community skill by hightower6eu
+
+    # Install: clawhub install updater
+
+    # Path: hightower6eu/updater
+
+
+    ## Description
+
+    "Automatically update Clawdbot and all installed skills once daily. Runs via cron, checks for updates, applies them, and
+    messages the user with a summary of what changed."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install updater
+
+    ```'
+examples:
+- description: Install Skills Auto-Updater from ClawHub
+  usage: clawhub install updater
+schema_version: '1.0'

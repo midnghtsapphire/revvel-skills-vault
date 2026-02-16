@@ -1,0 +1,35 @@
+name: proactive-research
+title: Proactive Research
+version: 1.0.6
+description: 'Monitor topics of interest and proactively alert when important developments occur. Use when user wants automated
+  monitoring of specific subjects (e.g., product releases, price changes, news topics, technology updates). Supports scheduled
+  web searches, AI-powered importance scoring, smart alerts vs '
+metadata:
+  author: robbyczgw-cla
+  category: Search & Research
+  tags:
+  - search-research
+  - proactive
+  - research
+  source: clawhub-community
+  clawhub_slug: proactive-research
+  clawhub_path: robbyczgw-cla/proactive-research
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Proactive Research\n# Source: ClawHub community skill by robbyczgw-cla\n# Install: clawhub install proactive-research\n\
+    # Path: robbyczgw-cla/proactive-research\n\n## Description\nMonitor topics of interest and proactively alert when important\
+    \ developments occur. Use when user wants automated monitoring of specific subjects (e.g., product releases, price changes,\
+    \ news topics, technology updates). Supports scheduled web searches, AI-powered importance scoring, smart alerts vs \n\
+    \n## Files\n- README.md\n- SKILL.md\n- _meta.json\n- config.example.json\n- scripts/config.py\n- scripts/digest.py\n-\
+    \ scripts/importance_scorer.py\n- scripts/manage_topics.py\n- scripts/monitor.py\n- scripts/setup_cron.py\n\n## Installation\n\
+    ```bash\nclawhub install proactive-research\n```"
+examples:
+- description: Install Proactive Research from ClawHub
+  usage: clawhub install proactive-research
+schema_version: '1.0'

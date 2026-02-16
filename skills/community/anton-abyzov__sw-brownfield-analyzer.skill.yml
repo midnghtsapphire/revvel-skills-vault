@@ -1,0 +1,34 @@
+name: brownfield-analyzer
+title: Brownfield Analyzer
+version: 1.0.0
+description: 'Analyzes existing brownfield projects to map documentation to SpecWeave''s structure (PRD/HLD/Spec/Runbook).
+  Use when migrating existing projects to SpecWeave, scanning legacy docs, or creating project context maps. Detects external
+  tools (JIRA, ADO, GitHub) and supports incremental or comprehensive '
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - brownfield
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: sw-brownfield-analyzer
+  clawhub_path: anton-abyzov/sw-brownfield-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Brownfield Analyzer\n# Source: ClawHub community skill by anton-abyzov\n# Install: clawhub install sw-brownfield-analyzer\n\
+    # Path: anton-abyzov/sw-brownfield-analyzer\n\n## Description\nAnalyzes existing brownfield projects to map documentation\
+    \ to SpecWeave's structure (PRD/HLD/Spec/Runbook). Use when migrating existing projects to SpecWeave, scanning legacy\
+    \ docs, or creating project context maps. Detects external tools (JIRA, ADO, GitHub) and supports incremental or comprehensive\
+    \ \n\n## Files\n- MEMORY.md\n- SKILL.md\n- _meta.json\n\n## Installation\n```bash\nclawhub install sw-brownfield-analyzer\n\
+    ```"
+examples:
+- description: Install Brownfield Analyzer from ClawHub
+  usage: clawhub install sw-brownfield-analyzer
+schema_version: '1.0'

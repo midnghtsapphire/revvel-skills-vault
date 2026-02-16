@@ -1,0 +1,53 @@
+name: news
+title: News
+version: 1.0.0
+description: Build a personalized news system that learns your interests, formats, and schedule.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - news
+  source: clawhub-community
+  clawhub_slug: news
+  clawhub_path: ivangdavila/news
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# News
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install news
+
+    # Path: ivangdavila/news
+
+
+    ## Description
+
+    Build a personalized news system that learns your interests, formats, and schedule.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install news
+
+    ```'
+examples:
+- description: Install News from ClawHub
+  usage: clawhub install news
+schema_version: '1.0'

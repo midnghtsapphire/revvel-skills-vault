@@ -1,0 +1,59 @@
+name: evm-wallet-skill
+title: EVM Crypto Wallet for Your Agent
+version: 1.0.3
+description: Self-sovereign EVM wallet for AI agents. Use when the user wants to create a crypto wallet, check balances, send
+  ETH or ERC20 tokens, swap tokens, or interact with smart contracts. Supports Base, Ethereum, Polygon, Arbitrum, and Optimism.
+  Private keys stored locally — no cloud custody, no API keys r
+metadata:
+  author: surfer77
+  category: Development & Coding
+  tags:
+  - development-coding
+  - evm
+  - wallet
+  - skill
+  source: clawhub-community
+  clawhub_slug: evm-wallet
+  clawhub_path: surfer77/evm-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# EVM Crypto Wallet for Your Agent
+
+    # Source: ClawHub community skill by surfer77
+
+    # Install: clawhub install evm-wallet
+
+    # Path: surfer77/evm-wallet
+
+
+    ## Description
+
+    Self-sovereign EVM wallet for AI agents. Use when the user wants to create a crypto wallet, check balances, send ETH or
+    ERC20 tokens, swap tokens, or interact with smart contracts. Supports Base, Ethereum, Polygon, Arbitrum, and Optimism.
+    Private keys stored locally — no cloud custody, no API keys r
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install evm-wallet
+
+    ```'
+examples:
+- description: Install EVM Crypto Wallet for Your Agent from ClawHub
+  usage: clawhub install evm-wallet
+schema_version: '1.0'

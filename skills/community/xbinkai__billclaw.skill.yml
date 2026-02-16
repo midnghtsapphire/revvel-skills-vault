@@ -1,0 +1,57 @@
+name: billclaw
+title: BillClaw
+version: 0.5.4
+description: This skill should be used when managing financial data, syncing bank transactions via Plaid/GoCardless, fetching
+  bills from Gmail, or exporting to Beancount/Ledger formats. Provides local-first data sovereignty for OpenClaw users.
+metadata:
+  author: xbinkai
+  category: Communication
+  tags:
+  - communication
+  - billclaw
+  source: clawhub-community
+  clawhub_slug: billclaw
+  clawhub_path: xbinkai/billclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# BillClaw
+
+    # Source: ClawHub community skill by xbinkai
+
+    # Install: clawhub install billclaw
+
+    # Path: xbinkai/billclaw
+
+
+    ## Description
+
+    This skill should be used when managing financial data, syncing bank transactions via Plaid/GoCardless, fetching bills
+    from Gmail, or exporting to Beancount/Ledger formats. Provides local-first data sovereignty for OpenClaw users.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/validate-skill.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install billclaw
+
+    ```'
+examples:
+- description: Install BillClaw from ClawHub
+  usage: clawhub install billclaw
+schema_version: '1.0'

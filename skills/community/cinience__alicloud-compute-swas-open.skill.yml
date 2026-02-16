@@ -1,0 +1,76 @@
+name: alicloud-compute-swas-open
+title: Alicloud Compute Swas Open
+version: 1.0.1
+description: Manage Alibaba Cloud Simple Application Server (SWAS OpenAPI 2020-06-01) resources end-to-end. Use for querying
+  instances, starting/stopping/rebooting, executing commands (cloud assistant), managing disks/snapshots/images, firewall
+  rules/templates, key pairs, tags, monitoring, and lightweight databa
+metadata:
+  author: cinience
+  category: Media & Content
+  tags:
+  - media-content
+  - alicloud
+  - compute
+  - swas
+  - open
+  source: clawhub-community
+  clawhub_slug: alicloud-compute-swas-open
+  clawhub_path: cinience/alicloud-compute-swas-open
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Compute Swas Open
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-compute-swas-open
+
+    # Path: cinience/alicloud-compute-swas-open
+
+
+    ## Description
+
+    Manage Alibaba Cloud Simple Application Server (SWAS OpenAPI 2020-06-01) resources end-to-end. Use for querying instances,
+    starting/stopping/rebooting, executing commands (cloud assistant), managing disks/snapshots/images, firewall rules/templates,
+    key pairs, tags, monitoring, and lightweight databa
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/api_overview.md
+
+    - references/command-assistant.md
+
+    - references/endpoints.md
+
+    - references/sources.md
+
+    - scripts/fix_ssh_access.py
+
+    - scripts/get_ssh_port.py
+
+    - scripts/list_instances_all_regions.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-compute-swas-open
+
+    ```'
+examples:
+- description: Install Alicloud Compute Swas Open from ClawHub
+  usage: clawhub install alicloud-compute-swas-open
+schema_version: '1.0'

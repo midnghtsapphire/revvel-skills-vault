@@ -1,0 +1,58 @@
+name: mac-cleanup
+title: mac-clean-skill
+version: 1.0.0
+description: Cleans up system caches, trash, and old downloads on macOS.
+metadata:
+  author: aadipapp
+  category: System & OS
+  tags:
+  - system-os
+  - mac
+  - cleanup
+  source: clawhub-community
+  clawhub_slug: mac-clean-skill
+  clawhub_path: aadipapp/mac-clean-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# mac-clean-skill
+
+    # Source: ClawHub community skill by aadipapp
+
+    # Install: clawhub install mac-clean-skill
+
+    # Path: aadipapp/mac-clean-skill
+
+
+    ## Description
+
+    Cleans up system caches, trash, and old downloads on macOS.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cleanup.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mac-clean-skill
+
+    ```'
+examples:
+- description: Install mac-clean-skill from ClawHub
+  usage: clawhub install mac-clean-skill
+schema_version: '1.0'

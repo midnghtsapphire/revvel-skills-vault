@@ -1,0 +1,57 @@
+name: book-pool-service
+title: Book Pool Service
+version: 1.0.1
+description: Book pool-service services through Lokuli MCP. Use when user needs to find and book pool-service. Triggers on
+  requests like "book a pool-service", "find pool-service near me", or any pool-service service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - pool
+  - service
+  source: clawhub-community
+  clawhub_slug: book-pool-service
+  clawhub_path: edwardrodriguez703-design/book-pool-service
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Pool Service
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-pool-service
+
+    # Path: edwardrodriguez703-design/book-pool-service
+
+
+    ## Description
+
+    Book pool-service services through Lokuli MCP. Use when user needs to find and book pool-service. Triggers on requests
+    like "book a pool-service", "find pool-service near me", or any pool-service service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-pool-service
+
+    ```'
+examples:
+- description: Install Book Pool Service from ClawHub
+  usage: clawhub install book-pool-service
+schema_version: '1.0'

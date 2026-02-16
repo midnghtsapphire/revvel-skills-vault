@@ -1,0 +1,61 @@
+name: lista-sms
+title: SMS List Skill
+version: 1.0.0
+description: ''
+metadata:
+  author: david-evaristo
+  category: Communication
+  tags:
+  - communication
+  - lista
+  - sms
+  source: clawhub-community
+  clawhub_slug: lista-sms
+  clawhub_path: david-evaristo/lista-sms
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SMS List Skill
+
+    # Source: ClawHub community skill by david-evaristo
+
+    # Install: clawhub install lista-sms
+
+    # Path: david-evaristo/lista-sms
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lista-sms/SKILL.md
+
+    - output/sms_list_20260204-192334.csv
+
+    - output/sms_list_20260204-194606.csv
+
+    - scripts/sms_reader.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lista-sms
+
+    ```'
+examples:
+- description: Install SMS List Skill from ClawHub
+  usage: clawhub install lista-sms
+schema_version: '1.0'

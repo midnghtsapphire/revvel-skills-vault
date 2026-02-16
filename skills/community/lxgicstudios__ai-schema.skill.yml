@@ -1,0 +1,54 @@
+name: schema-gen
+title: Database Schema Generator
+version: 1.0.1
+description: Generate database schemas from descriptions
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - schema
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-schema
+  clawhub_path: lxgicstudios/ai-schema
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Database Schema Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-schema
+
+    # Path: lxgicstudios/ai-schema
+
+
+    ## Description
+
+    Generate database schemas from descriptions
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-schema
+
+    ```'
+examples:
+- description: Install Database Schema Generator from ClawHub
+  usage: clawhub install ai-schema
+schema_version: '1.0'

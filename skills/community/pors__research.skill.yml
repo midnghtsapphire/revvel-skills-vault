@@ -1,0 +1,53 @@
+name: research
+title: Research
+version: 1.0.1
+description: Deep research via Gemini CLI — runs in background sub-agent so you don't burn your Claude tokens.
+metadata:
+  author: pors
+  category: Search & Research
+  tags:
+  - search-research
+  - research
+  source: clawhub-community
+  clawhub_slug: research
+  clawhub_path: pors/research
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Research
+
+    # Source: ClawHub community skill by pors
+
+    # Install: clawhub install research
+
+    # Path: pors/research
+
+
+    ## Description
+
+    Deep research via Gemini CLI — runs in background sub-agent so you don''t burn your Claude tokens.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install research
+
+    ```'
+examples:
+- description: Install Research from ClawHub
+  usage: clawhub install research
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: recipes
+title: Recipes
+version: 1.0.0
+description: Build a personal recipe collection with ingredients, scaling, and meal planning.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - recipes
+  source: clawhub-community
+  clawhub_slug: recipe
+  clawhub_path: ivangdavila/recipe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Recipes
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install recipe
+
+    # Path: ivangdavila/recipe
+
+
+    ## Description
+
+    Build a personal recipe collection with ingredients, scaling, and meal planning.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install recipe
+
+    ```'
+examples:
+- description: Install Recipes from ClawHub
+  usage: clawhub install recipe
+schema_version: '1.0'

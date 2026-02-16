@@ -1,0 +1,34 @@
+name: token-counter
+title: Token Counter
+version: 1.0.0
+description: 'Track and analyze OpenClaw token usage across main, cron, and sub-agent sessions with category, client, model,
+  and tool attribution. Use when the user asks where tokens are being spent, wants daily/weekly token reports, needs per-session
+  drilldowns, or is planning token-cost optimizations and needs '
+metadata:
+  author: mkhaytman87
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - token
+  - counter
+  source: clawhub-community
+  clawhub_slug: token-counter
+  clawhub_path: mkhaytman87/token-counter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Token Counter\n# Source: ClawHub community skill by mkhaytman87\n# Install: clawhub install token-counter\n\
+    # Path: mkhaytman87/token-counter\n\n## Description\nTrack and analyze OpenClaw token usage across main, cron, and sub-agent\
+    \ sessions with category, client, model, and tool attribution. Use when the user asks where tokens are being spent, wants\
+    \ daily/weekly token reports, needs per-session drilldowns, or is planning token-cost optimizations and needs \n\n## Files\n\
+    - SKILL.md\n- _meta.json\n- agents/openai.yaml\n- references/classification-rules.md\n- scripts/token_counter.py\n\n##\
+    \ Installation\n```bash\nclawhub install token-counter\n```"
+examples:
+- description: Install Token Counter from ClawHub
+  usage: clawhub install token-counter
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: book-haircut
+title: Book Haircut
+version: 1.0.1
+description: Book haircut services through Lokuli MCP. Use when user needs to find and book haircut. Triggers on requests
+  like "book a haircut", "find haircut near me", or any haircut service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - haircut
+  source: clawhub-community
+  clawhub_slug: book-haircut
+  clawhub_path: edwardrodriguez703-design/book-haircut
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Haircut
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-haircut
+
+    # Path: edwardrodriguez703-design/book-haircut
+
+
+    ## Description
+
+    Book haircut services through Lokuli MCP. Use when user needs to find and book haircut. Triggers on requests like "book
+    a haircut", "find haircut near me", or any haircut service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-haircut
+
+    ```'
+examples:
+- description: Install Book Haircut from ClawHub
+  usage: clawhub install book-haircut
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: imap-idle
+title: Imap Idle Review
+version: 1.4.0
+description: Event-driven email monitoring using IMAP IDLE protocol. Replaces polling with instant push notifications via
+  OpenClaw webhooks. Use when setting up email monitoring, replacing hourly email checks, or implementing event-driven email
+  processing. Monitors multiple IMAP accounts, triggers webhooks on ne
+metadata:
+  author: topitip
+  category: Communication
+  tags:
+  - communication
+  - imap
+  - idle
+  source: clawhub-community
+  clawhub_slug: imap-idle
+  clawhub_path: topitip/imap-idle
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Imap Idle Review
+
+    # Source: ClawHub community skill by topitip
+
+    # Install: clawhub install imap-idle
+
+    # Path: topitip/imap-idle
+
+
+    ## Description
+
+    Event-driven email monitoring using IMAP IDLE protocol. Replaces polling with instant push notifications via OpenClaw
+    webhooks. Use when setting up email monitoring, replacing hourly email checks, or implementing event-driven email processing.
+    Monitors multiple IMAP accounts, triggers webhooks on ne
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/listener.py
+
+    - scripts/listener_old.py
+
+    - scripts/setup.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install imap-idle
+
+    ```'
+examples:
+- description: Install Imap Idle Review from ClawHub
+  usage: clawhub install imap-idle
+schema_version: '1.0'

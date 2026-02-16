@@ -1,0 +1,61 @@
+name: arxiv
+title: arXiv Research Assistant
+version: 1.0.4
+description: Search, download, and summarize academic papers from arXiv. Built for AI/ML researchers.
+metadata:
+  author: ractorrr
+  category: Search & Research
+  tags:
+  - search-research
+  - arxiv
+  source: clawhub-community
+  clawhub_slug: arxiv
+  clawhub_path: ractorrr/arxiv
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# arXiv Research Assistant
+
+    # Source: ClawHub community skill by ractorrr
+
+    # Install: clawhub install arxiv
+
+    # Path: ractorrr/arxiv
+
+
+    ## Description
+
+    Search, download, and summarize academic papers from arXiv. Built for AI/ML researchers.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - arxiv_tool.py
+
+    - package.json
+
+    - requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install arxiv
+
+    ```'
+examples:
+- description: Install arXiv Research Assistant from ClawHub
+  usage: clawhub install arxiv
+schema_version: '1.0'

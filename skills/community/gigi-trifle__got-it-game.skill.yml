@@ -1,0 +1,59 @@
+name: got-it
+title: Got It Game
+version: 1.0.2
+description: Schelling point coordination game where players converge on a shared word. Use when someone initiates the "got
+  it" game, when managing active game state in Discord/Telegram channels, or when responding to "got it" messages during gameplay.
+metadata:
+  author: gigi-trifle
+  category: Social Media
+  tags:
+  - social-media
+  - got
+  source: clawhub-community
+  clawhub_slug: got-it-game
+  clawhub_path: gigi-trifle/got-it-game
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Got It Game
+
+    # Source: ClawHub community skill by gigi-trifle
+
+    # Install: clawhub install got-it-game
+
+    # Path: gigi-trifle/got-it-game
+
+
+    ## Description
+
+    Schelling point coordination game where players converge on a shared word. Use when someone initiates the "got it" game,
+    when managing active game state in Discord/Telegram channels, or when responding to "got it" messages during gameplay.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdhub.json
+
+    - references/state-schema.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install got-it-game
+
+    ```'
+examples:
+- description: Install Got It Game from ClawHub
+  usage: clawhub install got-it-game
+schema_version: '1.0'

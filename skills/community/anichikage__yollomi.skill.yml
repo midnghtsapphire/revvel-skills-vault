@@ -1,0 +1,66 @@
+name: yollomi-ai-api
+title: Yollomi AI Image Generator (All Models)
+version: 1.0.5
+description: AI image generator skill (image, image generation). Multi-model image generator for Yollomi to generate AI images
+  via one unified API endpoint. Requires YOLLOMI_API_KEY.
+metadata:
+  author: anichikage
+  category: Media & Content
+  tags:
+  - media-content
+  - yollomi
+  - api
+  source: clawhub-community
+  clawhub_slug: yollomi
+  clawhub_path: anichikage/yollomi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Yollomi AI Image Generator (All Models)
+
+    # Source: ClawHub community skill by anichikage
+
+    # Install: clawhub install yollomi
+
+    # Path: anichikage/yollomi
+
+
+    ## Description
+
+    AI image generator skill (image, image generation). Multi-model image generator for Yollomi to generate AI images via
+    one unified API endpoint. Requires YOLLOMI_API_KEY.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.ts
+
+    - models-reference.md
+
+    - package.json
+
+    - scripts/test-api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yollomi
+
+    ```'
+examples:
+- description: Install Yollomi AI Image Generator (All Models) from ClawHub
+  usage: clawhub install yollomi
+schema_version: '1.0'

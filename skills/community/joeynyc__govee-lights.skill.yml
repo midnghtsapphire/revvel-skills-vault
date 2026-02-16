@@ -1,0 +1,62 @@
+name: govee-lights
+title: Govee Lights Control
+version: 1.0.0
+description: 'Control Govee smart lights via the Govee API. Supports turning lights on/off, adjusting brightness, setting
+  colors, and scenes. Use for: (1) Controlling individual lights or groups by name, (2) Setting colors and brightness, (3)
+  Managing device states'
+metadata:
+  author: joeynyc
+  category: Development & Coding
+  tags:
+  - development-coding
+  - govee
+  - lights
+  source: clawhub-community
+  clawhub_slug: govee-lights
+  clawhub_path: joeynyc/govee-lights
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Govee Lights Control
+
+    # Source: ClawHub community skill by joeynyc
+
+    # Install: clawhub install govee-lights
+
+    # Path: joeynyc/govee-lights
+
+
+    ## Description
+
+    Control Govee smart lights via the Govee API. Supports turning lights on/off, adjusting brightness, setting colors, and
+    scenes. Use for: (1) Controlling individual lights or groups by name, (2) Setting colors and brightness, (3) Managing
+    device states
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/TROUBLESHOOTING.md
+
+    - scripts/govee.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install govee-lights
+
+    ```'
+examples:
+- description: Install Govee Lights Control from ClawHub
+  usage: clawhub install govee-lights
+schema_version: '1.0'

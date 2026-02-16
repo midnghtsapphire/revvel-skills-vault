@@ -1,0 +1,56 @@
+name: greeting-skill
+title: good-boi
+version: 1.0.0
+description: A friendly greeting skill for testing
+metadata:
+  author: orlyjamie
+  category: Development & Coding
+  tags:
+  - development-coding
+  - greeting
+  - skill
+  source: clawhub-community
+  clawhub_slug: good-boi
+  clawhub_path: orlyjamie/good-boi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# good-boi
+
+    # Source: ClawHub community skill by orlyjamie
+
+    # Install: clawhub install good-boi
+
+    # Path: orlyjamie/good-boi
+
+
+    ## Description
+
+    A friendly greeting skill for testing
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - greet.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install good-boi
+
+    ```'
+examples:
+- description: Install good-boi from ClawHub
+  usage: clawhub install good-boi
+schema_version: '1.0'

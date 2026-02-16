@@ -1,0 +1,59 @@
+name: qianfan-knowledgebase-search
+title: Qianfan KnowledgeBase Search
+version: 1.0.1
+description: Search knowledge from Qianfan Knowledgebase. Use this when you need to retrieve information from user's private
+  knowledge bases on Baidu Qianfan platform.
+metadata:
+  author: hannatao
+  category: Search & Research
+  tags:
+  - search-research
+  - qianfan
+  - knowledgebase
+  - search
+  source: clawhub-community
+  clawhub_slug: qianfan-knowledgebase-search
+  clawhub_path: hannatao/qianfan-knowledgebase-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qianfan KnowledgeBase Search
+
+    # Source: ClawHub community skill by hannatao
+
+    # Install: clawhub install qianfan-knowledgebase-search
+
+    # Path: hannatao/qianfan-knowledgebase-search
+
+
+    ## Description
+
+    Search knowledge from Qianfan Knowledgebase. Use this when you need to retrieve information from user''s private knowledge
+    bases on Baidu Qianfan platform.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qianfan-knowledgebase-search
+
+    ```'
+examples:
+- description: Install Qianfan KnowledgeBase Search from ClawHub
+  usage: clawhub install qianfan-knowledgebase-search
+schema_version: '1.0'

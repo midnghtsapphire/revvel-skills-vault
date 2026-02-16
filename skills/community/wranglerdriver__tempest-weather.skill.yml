@@ -1,0 +1,70 @@
+name: tempest-weather
+title: Tempest Weather
+version: 1.0.6
+description: Get current weather conditions from a WeatherFlow Tempest station using the Tempest REST API. Use when asked
+  for backyard/home weather, Tempest station readings, wind/gust/rain/lightning from a specific station, or quick local weather
+  summaries sourced from Tempest data.
+metadata:
+  author: wranglerdriver
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tempest
+  - weather
+  source: clawhub-community
+  clawhub_slug: tempest-weather
+  clawhub_path: wranglerdriver/tempest-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tempest Weather
+
+    # Source: ClawHub community skill by wranglerdriver
+
+    # Install: clawhub install tempest-weather
+
+    # Path: wranglerdriver/tempest-weather
+
+
+    ## Description
+
+    Get current weather conditions from a WeatherFlow Tempest station using the Tempest REST API. Use when asked for backyard/home
+    weather, Tempest station readings, wind/gust/rain/lightning from a specific station, or quick local weather summaries
+    sourced from Tempest data.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/tempest-api.md
+
+    - scripts/get_tempest_weather.py
+
+    - scripts/package_clean.sh
+
+    - tests/test_tempest_weather.py
+
+    - tests/fixtures/obs_device.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tempest-weather
+
+    ```'
+examples:
+- description: Install Tempest Weather from ClawHub
+  usage: clawhub install tempest-weather
+schema_version: '1.0'

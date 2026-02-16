@@ -1,0 +1,59 @@
+name: telegram-smart-launcher
+title: Telegram CTA Button
+version: 1.0.1
+description: Enhance Telegram replies with context-aware dynamic CTA buttons (Smart Launcher UI). Use when replying to users
+  on Telegram to provide relevant, time-sensitive, and task-oriented options for better interaction.
+metadata:
+  author: dendyadinirwana
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - smart
+  - launcher
+  source: clawhub-community
+  clawhub_slug: tg-smart-cta
+  clawhub_path: dendyadinirwana/tg-smart-cta
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram CTA Button
+
+    # Source: ClawHub community skill by dendyadinirwana
+
+    # Install: clawhub install tg-smart-cta
+
+    # Path: dendyadinirwana/tg-smart-cta
+
+
+    ## Description
+
+    Enhance Telegram replies with context-aware dynamic CTA buttons (Smart Launcher UI). Use when replying to users on Telegram
+    to provide relevant, time-sensitive, and task-oriented options for better interaction.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/time_logic.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tg-smart-cta
+
+    ```'
+examples:
+- description: Install Telegram CTA Button from ClawHub
+  usage: clawhub install tg-smart-cta
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: security-audit
+title: Security Audit Toolkit
+version: 1.0.0
+description: Audit codebases and infrastructure for security issues. Use when scanning dependencies for vulnerabilities, detecting
+  hardcoded secrets, checking OWASP top 10 issues, verifying SSL/TLS, auditing file permissions, or reviewing code for injection
+  and auth flaws.
+metadata:
+  author: gitgoodordietrying
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - audit
+  source: clawhub-community
+  clawhub_slug: security-audit-toolkit
+  clawhub_path: gitgoodordietrying/security-audit-toolkit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Audit Toolkit
+
+    # Source: ClawHub community skill by gitgoodordietrying
+
+    # Install: clawhub install security-audit-toolkit
+
+    # Path: gitgoodordietrying/security-audit-toolkit
+
+
+    ## Description
+
+    Audit codebases and infrastructure for security issues. Use when scanning dependencies for vulnerabilities, detecting
+    hardcoded secrets, checking OWASP top 10 issues, verifying SSL/TLS, auditing file permissions, or reviewing code for injection
+    and auth flaws.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-audit-toolkit
+
+    ```'
+examples:
+- description: Install Security Audit Toolkit from ClawHub
+  usage: clawhub install security-audit-toolkit
+schema_version: '1.0'

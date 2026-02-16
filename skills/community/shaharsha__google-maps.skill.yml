@@ -1,0 +1,63 @@
+name: google-maps
+title: Google Maps
+version: 3.1.1
+description: '>'
+metadata:
+  author: shaharsha
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - maps
+  - '[exec]'
+  source: clawhub-community
+  clawhub_slug: google-maps
+  clawhub_path: shaharsha/google-maps
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '[exec]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Maps
+
+    # Source: ClawHub community skill by shaharsha
+
+    # Install: clawhub install google-maps
+
+    # Path: shaharsha/google-maps
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/map_helper.py
+
+
+    ## Allowed Tools
+
+    [exec]
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-maps
+
+    ```'
+examples:
+- description: Install Google Maps from ClawHub
+  usage: clawhub install google-maps
+schema_version: '1.0'

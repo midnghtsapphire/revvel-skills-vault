@@ -1,0 +1,62 @@
+name: newsletter-generator
+title: Newsletter Generator
+version: 1.0.0
+description: Generate automated email newsletters with curated content, affiliate links, and personalized recommendations.
+  Use when creating daily/weekly newsletters, building email lists, or monetizing subscriber engagement with affiliate content.
+metadata:
+  author: michael-laffin
+  category: Communication
+  tags:
+  - communication
+  - newsletter
+  - generator
+  source: clawhub-community
+  clawhub_slug: newsletter-generator
+  clawhub_path: michael-laffin/newsletter-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Newsletter Generator
+
+    # Source: ClawHub community skill by michael-laffin
+
+    # Install: clawhub install newsletter-generator
+
+    # Path: michael-laffin/newsletter-generator
+
+
+    ## Description
+
+    Generate automated email newsletters with curated content, affiliate links, and personalized recommendations. Use when
+    creating daily/weekly newsletters, building email lists, or monetizing subscriber engagement with affiliate content.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/__init__.py
+
+    - scripts/curate_content.py
+
+    - scripts/generate_newsletter.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install newsletter-generator
+
+    ```'
+examples:
+- description: Install Newsletter Generator from ClawHub
+  usage: clawhub install newsletter-generator
+schema_version: '1.0'

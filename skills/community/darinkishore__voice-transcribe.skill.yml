@@ -1,0 +1,60 @@
+name: voice-transcribe
+title: Voice Transcribe
+version: 1.0.1
+description: Transcribe audio files using OpenAI's gpt-4o-mini-transcribe model with vocabulary hints and text replacements.
+  Requires uv (https://docs.astral.sh/uv/).
+metadata:
+  author: darinkishore
+  category: Media & Content
+  tags:
+  - media-content
+  - voice
+  - transcribe
+  source: clawhub-community
+  clawhub_slug: voice-transcribe
+  clawhub_path: darinkishore/voice-transcribe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Voice Transcribe
+
+    # Source: ClawHub community skill by darinkishore
+
+    # Install: clawhub install voice-transcribe
+
+    # Path: darinkishore/voice-transcribe
+
+
+    ## Description
+
+    Transcribe audio files using OpenAI''s gpt-4o-mini-transcribe model with vocabulary hints and text replacements. Requires
+    uv (https://docs.astral.sh/uv/).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - replacements.txt
+
+    - vocab.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install voice-transcribe
+
+    ```'
+examples:
+- description: Install Voice Transcribe from ClawHub
+  usage: clawhub install voice-transcribe
+schema_version: '1.0'

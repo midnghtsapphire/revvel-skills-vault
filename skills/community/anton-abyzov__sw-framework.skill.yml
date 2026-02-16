@@ -1,0 +1,78 @@
+name: framework
+title: Framework
+version: 1.0.0
+description: Expert on SpecWeave framework structure, rules, and spec-driven development conventions. Use when learning SpecWeave
+  best practices, understanding increment lifecycle, or configuring hooks. Covers source-of-truth discipline, tasks.md/spec.md
+  formats, living docs sync, and file organization patterns.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - framework
+  - read
+  - grep
+  - glob
+  source: clawhub-community
+  clawhub_slug: sw-framework
+  clawhub_path: anton-abyzov/sw-framework
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Grep
+  - Glob
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Framework
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-framework
+
+    # Path: anton-abyzov/sw-framework
+
+
+    ## Description
+
+    Expert on SpecWeave framework structure, rules, and spec-driven development conventions. Use when learning SpecWeave best
+    practices, understanding increment lifecycle, or configuring hooks. Covers source-of-truth discipline, tasks.md/spec.md
+    formats, living docs sync, and file organization patterns.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - test-cases/test-1-increment-naming.yaml
+
+    - test-cases/test-2-source-of-truth.yaml
+
+    - test-cases/test-3-increment-discipline.yaml
+
+    - test-cases/test-4-file-placement.yaml
+
+
+    ## Allowed Tools
+
+    Read, Grep, Glob
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-framework
+
+    ```'
+examples:
+- description: Install Framework from ClawHub
+  usage: clawhub install sw-framework
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: fail2ban-reporter
+title: fail2ban Reporter
+version: 1.0.0
+description: '"Auto-report fail2ban banned IPs to AbuseIPDB and notify via Telegram. Use when monitoring server security,
+  reporting attackers, or checking banned IPs. Watches fail2ban for new bans, reports them to AbuseIPDB, and sends alerts."'
+metadata:
+  author: jestersimpps
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - fail2ban
+  - reporter
+  source: clawhub-community
+  clawhub_slug: fail2ban-reporter
+  clawhub_path: jestersimpps/fail2ban-reporter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# fail2ban Reporter
+
+    # Source: ClawHub community skill by jestersimpps
+
+    # Install: clawhub install fail2ban-reporter
+
+    # Path: jestersimpps/fail2ban-reporter
+
+
+    ## Description
+
+    "Auto-report fail2ban banned IPs to AbuseIPDB and notify via Telegram. Use when monitoring server security, reporting
+    attackers, or checking banned IPs. Watches fail2ban for new bans, reports them to AbuseIPDB, and sends alerts."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/abuseipdb-api.md
+
+    - scripts/check-ip.sh
+
+    - scripts/install.sh
+
+    - scripts/report-banned.sh
+
+    - scripts/report-single.sh
+
+    - scripts/stats.sh
+
+    - scripts/uninstall.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fail2ban-reporter
+
+    ```'
+examples:
+- description: Install fail2ban Reporter from ClawHub
+  usage: clawhub install fail2ban-reporter
+schema_version: '1.0'

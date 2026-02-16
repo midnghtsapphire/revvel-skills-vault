@@ -1,0 +1,70 @@
+name: researchvault
+title: Vault Research
+version: 2.4.0
+description: '"High-velocity research orchestration engine. Manages persistent state, synthesis, and autonomous verification
+  for agents."'
+metadata:
+  author: lraivisto
+  category: Search & Research
+  tags:
+  - search-research
+  - researchvault
+  source: clawhub-community
+  clawhub_slug: vault-research
+  clawhub_path: lraivisto/vault-research
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vault Research
+
+    # Source: ClawHub community skill by lraivisto
+
+    # Install: clawhub install vault-research
+
+    # Path: lraivisto/vault-research
+
+
+    ## Description
+
+    "High-velocity research orchestration engine. Manages persistent state, synthesis, and autonomous verification for agents."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - main.py
+
+    - pyproject.toml
+
+    - scripts/__init__.py
+
+    - scripts/core.py
+
+    - scripts/db.py
+
+    - scripts/heartbeat_scuttle.py
+
+    - scripts/mcp_server.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vault-research
+
+    ```'
+examples:
+- description: Install Vault Research from ClawHub
+  usage: clawhub install vault-research
+schema_version: '1.0'

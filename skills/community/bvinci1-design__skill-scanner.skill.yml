@@ -1,0 +1,62 @@
+name: skill-scanner
+title: Skill Scanner
+version: 0.1.2
+description: Scan Clawdbot and MCP skills for malware, spyware, crypto-miners, and malicious code patterns before you install
+  them. Security audit tool that detects data exfiltration, system modification attempts, backdoors, and obfuscation techniques.
+metadata:
+  author: bvinci1-design
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - scanner
+  source: clawhub-community
+  clawhub_slug: skill-scanner
+  clawhub_path: bvinci1-design/skill-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Scanner
+
+    # Source: ClawHub community skill by bvinci1-design
+
+    # Install: clawhub install skill-scanner
+
+    # Path: bvinci1-design/skill-scanner
+
+
+    ## Description
+
+    Scan Clawdbot and MCP skills for malware, spyware, crypto-miners, and malicious code patterns before you install them.
+    Security audit tool that detects data exfiltration, system modification attempts, backdoors, and obfuscation techniques.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill_scanner.py
+
+    - streamlit_ui.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-scanner
+
+    ```'
+examples:
+- description: Install Skill Scanner from ClawHub
+  usage: clawhub install skill-scanner
+schema_version: '1.0'

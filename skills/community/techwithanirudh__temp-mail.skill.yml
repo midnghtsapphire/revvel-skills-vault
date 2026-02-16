@@ -1,0 +1,60 @@
+name: temp-mail
+title: temp-mail
+version: 1.0.1
+description: 'Temporary email helper backed by Vortex (vortex.email). Use when needing disposable addresses for signup flows:
+  create a mailbox (random localpart), poll for messages, fetch and clear mailboxes.'
+metadata:
+  author: techwithanirudh
+  category: Communication
+  tags:
+  - communication
+  - temp
+  - mail
+  source: clawhub-community
+  clawhub_slug: temp-mail
+  clawhub_path: techwithanirudh/temp-mail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# temp-mail
+
+    # Source: ClawHub community skill by techwithanirudh
+
+    # Install: clawhub install temp-mail
+
+    # Path: techwithanirudh/temp-mail
+
+
+    ## Description
+
+    Temporary email helper backed by Vortex (vortex.email). Use when needing disposable addresses for signup flows: create
+    a mailbox (random localpart), poll for messages, fetch and clear mailboxes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/requirements.txt
+
+    - scripts/temp_mail.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install temp-mail
+
+    ```'
+examples:
+- description: Install temp-mail from ClawHub
+  usage: clawhub install temp-mail
+schema_version: '1.0'

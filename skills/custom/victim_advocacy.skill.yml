@@ -1,0 +1,234 @@
+name: victim_advocacy
+title: Victim Advocacy
+version: 1.0.0
+description: Comprehensive victim advocacy support for legal professionals handling crime victim cases, including VAWA compliance,
+  trafficking victim resources, compensation claims, protective orders, and victim timeline reconstruction.
+metadata:
+  author: Revvel AI Engine
+  category: Legal & Compliance
+  tags:
+  - restitution-calculation
+  - vawa-compliance-check
+  - victim
+  - advocacy
+  - protective-order-assistance
+  - victim-timeline-reconstruction
+  - crime-victim-compensation-calculation
+  - trafficking-resource-lookup
+  - victim-impact-statement-generation
+  - victim-rights-notification
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport hashlib\nimport datetime\nimport statistics\nimport math\nfrom typing\
+    \ import Dict, List, Any, Optional, Tuple\nfrom collections import defaultdict, namedtuple\nimport unittest\nimport logging\n\
+    \nSKILL_METADATA = {\n    \"name\": \"Victim Advocacy\",\n    \"id\": \"victim_advocacy\",\n    \"version\": \"1.0.0\"\
+    ,\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Comprehensive victim advocacy support for legal professionals\
+    \ handling crime victim cases, including VAWA compliance, trafficking victim resources, compensation claims, protective\
+    \ orders, and victim timeline reconstruction.\",\n    \"capabilities\": [\n        \"victim_impact_statement_generation\"\
+    ,\n        \"vawa_compliance_check\",\n        \"trafficking_resource_lookup\",\n        \"crime_victim_compensation_calculation\"\
+    ,\n        \"protective_order_assistance\",\n        \"victim_timeline_reconstruction\",\n        \"victim_rights_notification\"\
+    ,\n        \"restitution_calculation\"\n    ],\n    \"domain\": \"legal/forensic/victim_advocacy\"\n}\n\nEXPERT_PROMPTS\
+    \ = {\n    \"victim_impact_statement\": \"\"\"Generate a comprehensive victim impact statement for {victim_name} who experienced\
+    \ {crime_type} on {incident_date}. \nKey details:\n- Physical injuries: {physical_injuries}\n- Emotional impact: {emotional_impact}\n\
+    - Financial losses: {financial_losses}\n- Ongoing effects: {ongoing_effects}\n- Restitution requested: {restitution_amount}\n\
+    - Safety concerns: {safety_concerns}\nUse trauma-informed language and include all elements required by {jurisdiction}\
+    \ law.\"\"\",\n\n    \"vawa_compliance_audit\": \"\"\"Conduct a VAWA compliance audit for {agency_name} regarding their\
+    \ handling of {case_type} cases. \nEvaluate:\n- Victim notification procedures: {notification_procedures}\n- Confidentiality\
+    \ protections: {confidentiality_measures}\n- Access to services: {service_access}\n- Language access compliance: {language_access}\n\
+    - Disability accommodations: {disability_accommodations}\nProvide specific recommendations for compliance gaps identified.\"\
+    \"\",\n\n    \"trafficking_victim_screening\": \"\"\"Screen {victim_name} for human trafficking indicators based on:\n\
+    - Recruitment circumstances: {recruitment_details}\n- Working conditions: {work_conditions}\n- Control mechanisms: {control_methods}\n\
+    - Documentation status: {documentation}\n- Living situation: {living_arrangements}\n- Physical signs: {physical_indicators}\n\
+    - Behavioral indicators: {behavioral_indicators}\nGenerate a trafficking assessment report with resource referrals.\"\"\
+    \",\n\n    \"compensation_claim_builder\": \"\"\"Build a VOCA compensation claim for {victim_name} with:\n- Crime details:\
+    \ {crime_details}\n- Medical expenses: {medical_expenses}\n- Mental health counseling: {counseling_costs}\n- Lost wages:\
+    \ {lost_wages}\n- Funeral expenses: {funeral_costs}\n- Property damage: {property_damage}\n- Insurance coverage: {insurance_info}\n\
+    Include all required documentation and state-specific requirements for {state}.\"\"\",\n\n    \"protective_order_analysis\"\
+    : \"\"\"Analyze the protective order needs for {victim_name} considering:\n- Relationship to perpetrator: {relationship}\n\
+    - History of violence: {violence_history}\n- Current threats: {current_threats}\n- Children involved: {children_involved}\n\
+    - Firearms access: {firearms_info}\n- Stalking behaviors: {stalking_details}\nRecommend appropriate order type and provisions\
+    \ for {jurisdiction}.\"\"\",\n\n    \"victim_timeline_reconstruction\": \"\"\"Reconstruct the victim timeline for {case_name}\
+    \ from {start_date} to {end_date} using:\n- Police reports: {police_reports}\n- Medical records: {medical_records}\n-\
+    \ Witness statements: {witness_statements}\n- Digital evidence: {digital_evidence}\n- Financial records: {financial_records}\n\
+    - Communication logs: {communication_logs}\nCreate a comprehensive chronological narrative with evidence mapping.\"\"\"\
+    ,\n\n    \"restitution_calculation\": \"\"\"Calculate restitution owed to {victim_name} in {case_type} case including:\n\
+    - Medical expenses: {medical_costs}\n- Therapy costs: {therapy_costs}\n- Lost wages: {lost_wages}\n- Property damage:\
+    \ {property_damage}\n- Legal fees: {legal_fees}\n- Other losses: {other_losses}\nApply {jurisdiction} guidelines and provide\
+    \ itemized calculation.\"\"\",\n\n    \"victim_rights_notification\": \"\"\"Draft victim rights notification for {victim_name}\
+    \ in {case_type} case under {jurisdiction} law. Include:\n- Right to be present: {presence_rights}\n- Right to be heard:\
+    \ {hearing_rights}\n- Right to restitution: {restitution_rights}\n- Right to protection: {protection_rights}\n- Right\
+    \ to information: {information_rights}\n- Contact information for victim services: {service_contacts}\"\"\"\n}\n\nINTEGRATION_POINTS\
+    \ = {\n    \"voca_compensation_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.ovc.gov/voca/claims\"\
+    ,\n        \"description\": \"Victims of Crime Act compensation claims processing\",\n        \"auth_method\": \"oauth2\"\
+    ,\n        \"documentation_url\": \"https://ovc.gov/library/publications/voca-compensation-manual\"\n    },\n    \"vawa_compliance_db\"\
+    : {\n        \"type\": \"database\",\n        \"endpoint\": \"postgresql://victims-db.doj.gov:5432/vawa_compliance\",\n\
+    \        \"description\": \"VAWA compliance tracking and audit records\",\n        \"auth_method\": \"certificate\",\n\
+    \        \"documentation_url\": \"https://justice.gov/ovw/compliance\"\n    },\n    \"trafficking_resource_directory\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.ovcttac.gov/trafficking/resources\",\n        \"\
+    description\": \"National human trafficking victim service directory\",\n        \"auth_method\": \"api_key\",\n     \
+    \   \"documentation_url\": \"https://ovcttac.gov/taskforceguide\"\n    },\n    \"protective_order_registry\": {\n    \
+    \    \"type\": \"api\",\n        \"endpoint\": \"https://api.ncjrs.gov/protective-orders\",\n        \"description\":\
+    \ \"National protective order registry and validation\",\n        \"auth_method\": \"oauth2\",\n        \"documentation_url\"\
+    : \"https://ncjrs.gov/privacy\"\n    },\n    \"victim_notification_system\": {\n        \"type\": \"tool\",\n        \"\
+    endpoint\": \"https://notify.vinelink.com/api/v2\",\n        \"description\": \"Automated victim notification system\"\
+    ,\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://vinelink.com/developers\"\n    }\n\
+    }\n\nVictimImpactData = namedtuple('VictimImpactData', [\n    'victim_name', 'crime_type', 'incident_date', 'physical_injuries',\n\
+    \    'emotional_impact', 'financial_losses', 'ongoing_effects',\n    'restitution_amount', 'safety_concerns', 'jurisdiction'\n\
+    ])\n\nCompensationClaim = namedtuple('CompensationClaim', [\n    'victim_name', 'crime_details', 'medical_expenses', 'counseling_costs',\n\
+    \    'lost_wages', 'funeral_costs', 'property_damage', 'insurance_info', 'state'\n])\n\nTimelineEvent = namedtuple('TimelineEvent',\
+    \ [\n    'timestamp', 'event_type', 'description', 'evidence_source', 'significance'\n])\n\ndef validate_victim_id(victim_id:\
+    \ str) -> bool:\n    \"\"\"Validate victim ID format according to standard conventions.\"\"\"\n    if not victim_id or\
+    \ not isinstance(victim_id, str):\n        return False\n    pattern = r'^[A-Z]{2}\\d{4}-\\d{2}-\\d{4}$'\n    return bool(re.match(pattern,\
+    \ victim_id))\n\ndef parse_financial_losses(loss_string: str) -> Dict[str, float]:\n    \"\"\"Parse financial loss string\
+    \ into categorized dictionary.\"\"\"\n    losses = {}\n    if not loss_string:\n        return losses\n    \n    pattern\
+    \ = r'(\\w+):\\s*\\$?([\\d,]+(?:\\.\\d{2})?)'\n    matches = re.findall(pattern, loss_string)\n    \n    for category,\
+    \ amount in matches:\n        losses[category.lower().replace(' ', '_')] = float(amount.replace(',', ''))\n    \n    return\
+    \ losses\n\ndef calculate_compensation_eligibility(\n    state: str, \n    crime_date: datetime.date, \n    reporting_delay_days:\
+    \ int,\n    victim_cooperation: bool,\n    criminal_history: bool\n) -> Dict[str, Any]:\n    \"\"\"Calculate VOCA compensation\
+    \ eligibility based on state rules.\"\"\"\n    eligibility = {\n        'eligible': False,\n        'reasons': [],\n \
+    \       'max_benefits': 0,\n        'deadline_days': 0\n    }\n    \n    state_rules = {\n        'CA': {'max_benefit':\
+    \ 70000, 'deadline_days': 365, 'cooperation_required': True},\n        'NY': {'max_benefit': 60000, 'deadline_days': 730,\
+    \ 'cooperation_required': True},\n        'TX': {'max_benefit': 50000, 'deadline_days': 365, 'cooperation_required': False},\n\
+    \        'FL': {'max_benefit': 25000, 'deadline_days': 365, 'cooperation_required': True}\n    }\n    \n    if state not\
+    \ in state_rules:\n        eligibility['reasons'].append(f\"State {state} rules not configured\")\n        return eligibility\n\
+    \    \n    rules = state_rules[state]\n    \n    if reporting_delay_days > rules['deadline_days']:\n        eligibility['reasons'].append(f\"\
+    Reported {reporting_delay_days} days after deadline\")\n    \n    if rules['cooperation_required'] and not victim_cooperation:\n\
+    \        eligibility['reasons'].append(\"Victim cooperation required but not provided\")\n    \n    if criminal_history:\n\
+    \        eligibility['reasons'].append(\"Criminal history may affect eligibility\")\n    \n    if not eligibility['reasons']:\n\
+    \        eligibility['eligible'] = True\n        eligibility['max_benefits'] = rules['max_benefit']\n        eligibility['deadline_days']\
+    \ = rules['deadline_days']\n    \n    return eligibility\n\ndef generate_victim_impact_statement(data: VictimImpactData)\
+    \ -> str:\n    \"\"\"Generate a comprehensive victim impact statement.\"\"\"\n    statement = f\"\"\"\nVICTIM IMPACT STATEMENT\n\
+    \    \nVictim: {data.victim_name}\nCrime Type: {data.crime_type}\nIncident Date: {data.incident_date}\nJurisdiction: {data.jurisdiction}\n\
+    \nPHYSICAL INJURIES:\n{data.physical_injuries}\n\nEMOTIONAL IMPACT:\n{data.emotional_impact}\n\nFINANCIAL LOSSES:\n{data.financial_losses}\n\
+    \nONGOING EFFECTS:\n{data.ongoing_effects}\n\nSAFETY CONCERNS:\n{data.safety_concerns}\n\nREQUESTED RESTITUTION: ${data.restitution_amount:,.2f}\n\
+    \nI affirm that the above statement is true and accurate to the best of my knowledge.\n\nDate: {datetime.date.today().strftime('%B\
+    \ %d, %Y')}\n    \"\"\"\n    return statement.strip()\n\ndef build_victim_timeline(events: List[TimelineEvent]) -> List[Dict[str,\
+    \ Any]]:\n    \"\"\"Build chronological victim timeline from events.\"\"\"\n    sorted_events = sorted(events, key=lambda\
+    \ x: x.timestamp)\n    \n    timeline = []\n    for event in sorted_events:\n        timeline.append({\n            'date':\
+    \ event.timestamp.isoformat(),\n            'type': event.event_type,\n            'description': event.description,\n\
+    \            'evidence': event.evidence_source,\n            'significance': event.significance\n        })\n    \n  \
+    \  return timeline\n\ndef calculate_restitution_amount(losses: Dict[str, float]) -> Dict[str, Any]:\n    \"\"\"Calculate\
+    \ total restitution amount with breakdown.\"\"\"\n    total = sum(losses.values())\n    \n    breakdown = {\n        'total_restitution':\
+    \ total,\n        'itemized_losses': losses,\n        'calculation_date': datetime.date.today().isoformat()\n    }\n \
+    \   \n    return breakdown\n\ndef validate_protective_order_requirements(\n    relationship: str,\n    violence_history:\
+    \ List[str],\n    current_threats: List[str],\n    jurisdiction: str\n) -> Dict[str, Any]:\n    \"\"\"Validate protective\
+    \ order requirements for jurisdiction.\"\"\"\n    requirements = {\n        'eligible': False,\n        'order_type':\
+    \ None,\n        'requirements_met': [],\n        'requirements_missing': []\n    }\n    \n    relationship_eligible =\
+    \ relationship.lower() in [\n        'spouse', 'former spouse', 'dating', 'family', 'household'\n    ]\n    \n    if relationship_eligible:\n\
+    \        requirements['requirements_met'].append('Qualifying relationship')\n    else:\n        requirements['requirements_missing'].append('Qualifying\
+    \ relationship required')\n    \n    if violence_history:\n        requirements['requirements_met'].append('History of\
+    \ violence documented')\n    else:\n        requirements['requirements_missing'].append('Evidence of violence required')\n\
+    \    \n    if current_threats:\n        requirements['requirements_met'].append('Current threat established')\n    else:\n\
+    \        requirements['requirements_missing'].append('Imminent threat required')\n    \n    if len(requirements['requirements_met'])\
+    \ == 3:\n        requirements['eligible'] = True\n        requirements['order_type'] = 'Domestic Violence Protective Order'\n\
+    \    \n    return requirements\n\ndef generate_vawa_compliance_checklist(agency_type: str) -> List[Dict[str, Any]]:\n\
+    \    \"\"\"Generate VAWA compliance checklist for agency type.\"\"\"\n    base_checklist = [\n        {'item': 'Victim\
+    \ notification within 24 hours', 'required': True, 'category': 'notification'},\n        {'item': 'Confidentiality protections\
+    \ in place', 'required': True, 'category': 'privacy'},\n        {'item': 'Language access services available', 'required':\
+    \ True, 'category': 'access'},\n        {'item': 'Disability accommodations provided', 'required': True, 'category': 'access'},\n\
+    \        {'item': 'Trauma-informed training completed', 'required': True, 'category': 'training'},\n        {'item': 'Victim\
+    \ services referrals documented', 'required': True, 'category': 'services'}\n    ]\n    \n    if agency_type == 'law_enforcement':\n\
+    \        base_checklist.extend([\n            {'item': 'Mandatory arrest policies reviewed', 'required': True, 'category':\
+    \ 'policy'},\n            {'item': 'Evidence collection training current', 'required': True, 'category': 'training'}\n\
+    \        ])\n    \n    return base_checklist\n\ndef search_trafficking_resources(state: str, service_type: str) -> List[Dict[str,\
+    \ str]]:\n    \"\"\"Search trafficking victim resources by state and service type.\"\"\"\n    resources = []\n    \n \
+    \   mock_resources = {\n        'CA': {\n            'legal': [{'name': 'California Victim Legal Services', 'phone': '800-834-5000'}],\n\
+    \            'medical': [{'name': 'CA Human Trafficking Health Network', 'phone': '888-373-7888'}],\n            'housing':\
+    \ [{'name': 'CA Trafficking Shelters', 'phone': '877-389-7378'}]\n        },\n        'NY': {\n            'legal': [{'name':\
+    \ 'NY Anti-Trafficking Legal Services', 'phone': '800-621-4673'}],\n            'medical': [{'name': 'NY Trafficking Health\
+    \ Initiative', 'phone': '212-349-6009'}],\n            'housing': [{'name': 'NYC Trafficking Safe Houses', 'phone': '212-349-6009'}]\n\
+    \        }\n    }\n    \n    if state in mock_resources and service_type in mock_resources[state]:\n        resources\
+    \ = mock_resources[state][service_type]\n    \n    return resources\n\nclass SkillEngine:\n    \"\"\"Main skill engine\
+    \ for victim advocacy capabilities.\"\"\"\n    \n    def __init__(self, config: Dict[str, Any]):\n        self.config\
+    \ = config\n        self.logger = logging.getLogger('victim_advocacy')\n        self.logger.setLevel(logging.INFO)\n \
+    \       \n    def generate_victim_impact_statement(self, data: Dict[str, Any]) -> str:\n        \"\"\"Generate victim\
+    \ impact statement from provided data.\"\"\"\n        try:\n            victim_data = VictimImpactData(**data)\n     \
+    \       return generate_victim_impact_statement(victim_data)\n        except Exception as e:\n            self.logger.error(f\"\
+    Error generating impact statement: {str(e)}\")\n            raise\n    \n    def check_vawa_compliance(self, agency_type:\
+    \ str) -> List[Dict[str, Any]]:\n        \"\"\"Check VAWA compliance for agency type.\"\"\"\n        return generate_vawa_compliance_checklist(agency_type)\n\
+    \    \n    def get_trafficking_resources(self, state: str, service_type: str) -> List[Dict[str, str]]:\n        \"\"\"\
+    Get trafficking victim resources for state and service type.\"\"\"\n        return search_trafficking_resources(state,\
+    \ service_type)\n    \n    def calculate_compensation(self, claim_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\
+    \"\"Calculate crime victim compensation eligibility and amount.\"\"\"\n        try:\n            claim = CompensationClaim(**claim_data)\n\
+    \            return calculate_compensation_eligibility(\n                claim.state,\n                datetime.datetime.strptime(claim.crime_details['date'],\
+    \ '%Y-%m-%d').date(),\n                claim.crime_details.get('reporting_delay_days', 0),\n                claim.crime_details.get('victim_cooperation',\
+    \ True),\n                claim.crime_details.get('criminal_history', False)\n            )\n        except Exception\
+    \ as e:\n            self.logger.error(f\"Error calculating compensation: {str(e)}\")\n            raise\n    \n    def\
+    \ analyze_protective_order(self, case_data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Analyze protective order\
+    \ requirements and eligibility.\"\"\"\n        return validate_protective_order_requirements(\n            case_data.get('relationship',\
+    \ ''),\n            case_data.get('violence_history', []),\n            case_data.get('current_threats', []),\n      \
+    \      case_data.get('jurisdiction', '')\n        )\n    \n    def reconstruct_timeline(self, events: List[Dict[str, Any]])\
+    \ -> List[Dict[str, Any]]:\n        \"\"\"Reconstruct victim timeline from event data.\"\"\"\n        timeline_events\
+    \ = []\n        for event in events:\n            timeline_events.append(TimelineEvent(\n                timestamp=datetime.datetime.fromisoformat(event['timestamp']),\n\
+    \                event_type=event['type'],\n                description=event['description'],\n                evidence_source=event['evidence'],\n\
+    \                significance=event['significance']\n            ))\n        \n        return build_victim_timeline(timeline_events)\n\
+    \    \n    def calculate_restitution(self, losses: Dict[str, float]) -> Dict[str, Any]:\n        \"\"\"Calculate restitution\
+    \ amount from losses.\"\"\"\n        return calculate_restitution_amount(losses)\n    \n    def run(self, capability:\
+    \ str, **kwargs) -> Any:\n        \"\"\"Dispatch to appropriate capability method.\"\"\"\n        capabilities = {\n \
+    \           'victim_impact_statement': self.generate_victim_impact_statement,\n            'vawa_compliance_check': self.check_vawa_compliance,\n\
+    \            'trafficking_resource_lookup': self.get_trafficking_resources,\n            'crime_victim_compensation_calculation':\
+    \ self.calculate_compensation,\n            'protective_order_assistance': self.analyze_protective_order,\n          \
+    \  'victim_timeline_reconstruction': self.reconstruct_timeline,\n            'restitution_calculation': self.calculate_restitution\n\
+    \        }\n        \n        if capability not in capabilities:\n            raise ValueError(f\"Unknown capability:\
+    \ {capability}\")\n        \n        return capabilities[capability](**kwargs)\n\nclass TestVictimAdvocacy(unittest.TestCase):\n\
+    \    \"\"\"Test cases for victim advocacy skill.\"\"\"\n    \n    def test_metadata_validation(self):\n        \"\"\"\
+    Test skill metadata structure.\"\"\"\n        self.assertEqual(SKILL_METADATA['name'], 'Victim Advocacy')\n        self.assertEqual(SKILL_METADATA['id'],\
+    \ 'victim_advocacy')\n        self.assertIn('victim_impact_statement_generation', SKILL_METADATA['capabilities'])\n  \
+    \  \n    def test_validate_victim_id(self):\n        \"\"\"Test victim ID validation.\"\"\"\n        self.assertTrue(validate_victim_id('CA2024-01-1234'))\n\
+    \        self.assertFalse(validate_victim_id('invalid-id'))\n        self.assertFalse(validate_victim_id(''))\n    \n\
+    \    def test_parse_financial_losses(self):\n        \"\"\"Test financial loss parsing.\"\"\"\n        losses = \"Medical:\
+    \ $5,000, Lost Wages: $2,500.50\"\n        parsed = parse_financial_losses(losses)\n        self.assertEqual(parsed['medical'],\
+    \ 5000.0)\n        self.assertEqual(parsed['lost_wages'], 2500.50)\n    \n    def test_calculate_compensation_eligibility(self):\n\
+    \        \"\"\"Test compensation eligibility calculation.\"\"\"\n        result = calculate_compensation_eligibility('CA',\
+    \ datetime.date(2024, 1, 1), 30, True, False)\n        self.assertTrue(result['eligible'])\n        self.assertEqual(result['max_benefits'],\
+    \ 70000)\n        \n        result = calculate_compensation_eligibility('CA', datetime.date(2024, 1, 1), 400, True, False)\n\
+    \        self.assertFalse(result['eligible'])\n    \n    def test_generate_victim_impact_statement(self):\n        \"\"\
+    \"Test impact statement generation.\"\"\"\n        data = VictimImpactData(\n            victim_name='Jane Doe',\n   \
+    \         crime_type='Assault',\n            incident_date='2024-01-15',\n            physical_injuries='Broken arm, concussion',\n\
+    \            emotional_impact='PTSD, anxiety',\n            financial_losses='Medical bills $5000',\n            ongoing_effects='Cannot\
+    \ work for 3 months',\n            restitution_amount=7500.00,\n            safety_concerns='Fear of retaliation',\n \
+    \           jurisdiction='California'\n        )\n        statement = generate_victim_impact_statement(data)\n       \
+    \ self.assertIn('Jane Doe', statement)\n        self.assertIn('$7,500.00', statement)\n    \n    def test_build_victim_timeline(self):\n\
+    \        \"\"\"Test timeline reconstruction.\"\"\"\n        events = [\n            TimelineEvent(\n                timestamp=datetime.datetime(2024,\
+    \ 1, 1, 10, 0),\n                event_type='incident',\n                description='Assault occurred',\n           \
+    \     evidence_source='Police report #12345',\n                significance='Primary incident'\n            ),\n     \
+    \       TimelineEvent(\n                timestamp=datetime.datetime(2024, 1, 2, 9, 0),\n                event_type='medical',\n\
+    \                description='Hospital treatment',\n                evidence_source='Medical records',\n             \
+    \   significance='Injury documentation'\n            )\n        ]\n        timeline = build_victim_timeline(events)\n\
+    \        self.assertEqual(len(timeline), 2)\n        self.assertEqual(timeline[0]['type'], 'incident')\n    \n    def\
+    \ test_calculate_restitution_amount(self):\n        \"\"\"Test restitution calculation.\"\"\"\n        losses = {'medical':\
+    \ 5000.0, 'lost_wages': 3000.0, 'property': 1500.0}\n        result = calculate_restitution_amount(losses)\n        self.assertEqual(result['total_restitution'],\
+    \ 9500.0)\n        self.assertEqual(len(result['itemized_losses']), 3)\n    \n    def test_validate_protective_order_requirements(self):\n\
+    \        \"\"\"Test protective order validation.\"\"\"\n        result = validate_protective_order_requirements(\n   \
+    \         'spouse',\n            ['physical abuse', 'threats'],\n            ['continued harassment'],\n            'California'\n\
+    \        )\n        self.assertTrue(result['eligible'])\n        self.assertEqual(result['order_type'], 'Domestic Violence\
+    \ Protective Order')\n    \n    def test_generate_vawa_compliance_checklist(self):\n        \"\"\"Test VAWA compliance\
+    \ checklist generation.\"\"\"\n        checklist = generate_vawa_compliance_checklist('law_enforcement')\n        self.assertEqual(len(checklist),\
+    \ 8)\n        self.assertTrue(any(item['item'] == 'Mandatory arrest policies reviewed' for item in checklist))\n    \n\
+    \    def test_skill_engine_initialization(self):\n        \"\"\"Test skill engine initialization.\"\"\"\n        engine\
+    \ = SkillEngine({'test': 'config'})\n        self.assertIsNotNone(engine)\n    \n    def test_skill_engine_victim_impact_statement(self):\n\
+    \        \"\"\"Test skill engine impact statement generation.\"\"\"\n        engine = SkillEngine({})\n        data =\
+    \ {\n            'victim_name': 'John Smith',\n            'crime_type': 'Robbery',\n            'incident_date': '2024-02-01',\n\
+    \            'physical_injuries': 'Minor injuries',\n            'emotional_impact': 'Anxiety',\n            'financial_losses':\
+    \ '$1000 cash stolen',\n            'ongoing_effects': 'None',\n            'restitution_amount': 1000.00,\n         \
+    \   'safety_concerns': 'None',\n            'jurisdiction': 'Texas'\n        }\n        result = engine.run('victim_impact_statement',\
+    \ **data)\n        self.assertIn('John Smith', result)\n    \n    def test_skill_engine_timeline_reconstruction(self):\n\
+    \        \"\"\"Test skill engine timeline reconstruction.\"\"\"\n        engine = SkillEngine({})\n        events = [{\n\
+    \            'timestamp': '2024-01-01T10:00:00',\n            'type': 'incident',\n            'description': 'Test incident',\n\
+    \            'evidence': 'Test evidence',\n            'significance': 'Test significance'\n        }]\n        result\
+    \ = engine.run('victim_timeline_reconstruction', events=events)\n        self.assertEqual(len(result), 1)\n        self.assertEqual(result[0]['type'],\
+    \ 'incident')\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Victim Advocacy skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''victim_advocacy'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

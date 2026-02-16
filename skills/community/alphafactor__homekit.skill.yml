@@ -1,0 +1,61 @@
+name: homekit
+title: HomeKit Smart Home
+version: 1.0.0
+description: Control Apple HomeKit smart home devices. Supports listing, discovering, pairing devices, and controlling lights,
+  switches, outlets, thermostats. Use when the user needs to manage HomeKit accessories programmatically. Requires homekit
+  library and paired devices.
+metadata:
+  author: alphafactor
+  category: General
+  tags:
+  - general
+  - homekit
+  source: clawhub-community
+  clawhub_slug: homekit
+  clawhub_path: alphafactor/homekit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# HomeKit Smart Home
+
+    # Source: ClawHub community skill by alphafactor
+
+    # Install: clawhub install homekit
+
+    # Path: alphafactor/homekit
+
+
+    ## Description
+
+    Control Apple HomeKit smart home devices. Supports listing, discovering, pairing devices, and controlling lights, switches,
+    outlets, thermostats. Use when the user needs to manage HomeKit accessories programmatically. Requires homekit library
+    and paired devices.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/homekit.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install homekit
+
+    ```'
+examples:
+- description: Install HomeKit Smart Home from ClawHub
+  usage: clawhub install homekit
+schema_version: '1.0'

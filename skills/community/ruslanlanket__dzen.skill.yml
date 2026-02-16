@@ -1,0 +1,57 @@
+name: dzen
+title: Яндекс Дзен. Публикация постов с фото и видео
+version: 1.0.0
+description: Publish articles and posts to Dzen.ru (Yandex Zen). Supports text, images, and videos. Requires session cookies
+  and a CSRF token from a logged-in browser session.
+metadata:
+  author: ruslanlanket
+  category: Search & Research
+  tags:
+  - search-research
+  - dzen
+  source: clawhub-community
+  clawhub_slug: dzen
+  clawhub_path: ruslanlanket/dzen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Яндекс Дзен. Публикация постов с фото и видео
+
+    # Source: ClawHub community skill by ruslanlanket
+
+    # Install: clawhub install dzen
+
+    # Path: ruslanlanket/dzen
+
+
+    ## Description
+
+    Publish articles and posts to Dzen.ru (Yandex Zen). Supports text, images, and videos. Requires session cookies and a
+    CSRF token from a logged-in browser session.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/publish.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dzen
+
+    ```'
+examples:
+- description: Install Яндекс Дзен. Публикация постов с фото и видео from ClawHub
+  usage: clawhub install dzen
+schema_version: '1.0'

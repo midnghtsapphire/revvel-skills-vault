@@ -1,0 +1,54 @@
+name: deps-analyzer
+title: Dependency Analyzer
+version: 1.0.1
+description: Find unused and outdated dependencies. Use when your package.json is a mess.
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - deps
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: ai-deps
+  clawhub_path: lxgicstudios/ai-deps
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dependency Analyzer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-deps
+
+    # Path: lxgicstudios/ai-deps
+
+
+    ## Description
+
+    Find unused and outdated dependencies. Use when your package.json is a mess.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-deps
+
+    ```'
+examples:
+- description: Install Dependency Analyzer from ClawHub
+  usage: clawhub install ai-deps
+schema_version: '1.0'

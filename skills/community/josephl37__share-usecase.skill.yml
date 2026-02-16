@@ -1,0 +1,69 @@
+name: share_usecase
+title: Share use case
+version: 1.0.1
+description: '"Share your OpenClaw use case to clawusecase.com. Analyzes your recent work and creates a submission for the
+  community."'
+metadata:
+  author: josephl37
+  category: General
+  tags:
+  - general
+  - share
+  - usecase
+  source: clawhub-community
+  clawhub_slug: share-usecase
+  clawhub_path: josephl37/share-usecase
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Share use case
+
+    # Source: ClawHub community skill by josephl37
+
+    # Install: clawhub install share-usecase
+
+    # Path: josephl37/share-usecase
+
+
+    ## Description
+
+    "Share your OpenClaw use case to clawusecase.com. Analyzes your recent work and creates a submission for the community."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - get-credential.js
+
+    - normalize-tools.js
+
+    - package.json
+
+    - poll-credential.sh
+
+    - submit.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install share-usecase
+
+    ```'
+examples:
+- description: Install Share use case from ClawHub
+  usage: clawhub install share-usecase
+schema_version: '1.0'

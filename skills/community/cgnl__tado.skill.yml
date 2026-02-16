@@ -1,0 +1,71 @@
+name: tado
+title: Tado
+version: 1.1.0
+description: Control your Tado smart thermostat - check temperature, set heating, manage home/away modes, and monitor presence
+  via geolocation.
+metadata:
+  author: cgnl
+  category: System & OS
+  tags:
+  - system-os
+  - tado
+  source: clawhub-community
+  clawhub_slug: tado
+  clawhub_path: cgnl/tado
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tado
+
+    # Source: ClawHub community skill by cgnl
+
+    # Install: clawhub install tado
+
+    # Path: cgnl/tado
+
+
+    ## Description
+
+    Control your Tado smart thermostat - check temperature, set heating, manage home/away modes, and monitor presence via
+    geolocation.
+
+
+    ## Files
+
+    - MIGRATION.md
+
+    - OAUTH2_ANALYSIS.md
+
+    - QUICKSTART.md
+
+    - README.md
+
+    - SKILL.md
+
+    - UPDATE_SUMMARY.md
+
+    - VERIFICATION_COMPLETE.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - scripts/tado.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tado
+
+    ```'
+examples:
+- description: Install Tado from ClawHub
+  usage: clawhub install tado
+schema_version: '1.0'

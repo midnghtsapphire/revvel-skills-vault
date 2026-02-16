@@ -1,0 +1,61 @@
+name: openclaw-sentry-pro
+title: OpenClaw Sentry Pro
+version: 1.0.0
+description: '"Full secret scanning suite: detect leaked API keys, tokens, and credentials, then automatically redact, quarantine
+  exposed files, and enforce .gitignore policies. Everything in openclaw-sentry (free) plus automated countermeasures."'
+metadata:
+  author: atlaspa
+  category: Development & Coding
+  tags:
+  - development-coding
+  - openclaw
+  - sentry
+  - pro
+  source: clawhub-community
+  clawhub_slug: openclaw-sentry-pro
+  clawhub_path: atlaspa/openclaw-sentry-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Sentry Pro
+
+    # Source: ClawHub community skill by atlaspa
+
+    # Install: clawhub install openclaw-sentry-pro
+
+    # Path: atlaspa/openclaw-sentry-pro
+
+
+    ## Description
+
+    "Full secret scanning suite: detect leaked API keys, tokens, and credentials, then automatically redact, quarantine exposed
+    files, and enforce .gitignore policies. Everything in openclaw-sentry (free) plus automated countermeasures."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sentry.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-sentry-pro
+
+    ```'
+examples:
+- description: Install OpenClaw Sentry Pro from ClawHub
+  usage: clawhub install openclaw-sentry-pro
+schema_version: '1.0'

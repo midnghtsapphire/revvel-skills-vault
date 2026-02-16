@@ -1,0 +1,56 @@
+name: openclaw-docs
+title: openclaw-docs
+version: 1.0.0
+description: Reference documentation for OpenClaw capabilities, configuration options, and best practices. Use when the user
+  needs information about OpenClaw features, config schema, cron jobs, multi-agent routing, or troubleshooting.
+metadata:
+  author: bobdevibecoder
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - openclaw
+  - docs
+  source: clawhub-community
+  clawhub_slug: bobagent-openclaw-docs
+  clawhub_path: bobdevibecoder/bobagent-openclaw-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# openclaw-docs
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-openclaw-docs
+
+    # Path: bobdevibecoder/bobagent-openclaw-docs
+
+
+    ## Description
+
+    Reference documentation for OpenClaw capabilities, configuration options, and best practices. Use when the user needs
+    information about OpenClaw features, config schema, cron jobs, multi-agent routing, or troubleshooting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-openclaw-docs
+
+    ```'
+examples:
+- description: Install openclaw-docs from ClawHub
+  usage: clawhub install bobagent-openclaw-docs
+schema_version: '1.0'

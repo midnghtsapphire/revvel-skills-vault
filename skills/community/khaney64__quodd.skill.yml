@@ -1,0 +1,57 @@
+name: quodd
+title: Quodd Stock Quotes
+version: 1.1.1
+description: Fetch real-time stock quotes via Quodd API. Get current prices, daily high/low, and after-hours data for US equities.
+  Use when the user asks for stock prices, quotes, market data, or ticker information.
+metadata:
+  author: khaney64
+  category: Development & Coding
+  tags:
+  - development-coding
+  - quodd
+  source: clawhub-community
+  clawhub_slug: quodd
+  clawhub_path: khaney64/quodd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Quodd Stock Quotes
+
+    # Source: ClawHub community skill by khaney64
+
+    # Install: clawhub install quodd
+
+    # Path: khaney64/quodd
+
+
+    ## Description
+
+    Fetch real-time stock quotes via Quodd API. Get current prices, daily high/low, and after-hours data for US equities.
+    Use when the user asks for stock prices, quotes, market data, or ticker information.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/quote.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install quodd
+
+    ```'
+examples:
+- description: Install Quodd Stock Quotes from ClawHub
+  usage: clawhub install quodd
+schema_version: '1.0'

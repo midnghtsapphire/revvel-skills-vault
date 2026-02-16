@@ -1,0 +1,57 @@
+name: nordpool-fi
+title: Nordpool Fi
+version: 1.0.5
+description: Hourly electricity prices for Finland with optimal EV charging window calculation (3h, 4h, 5h).
+metadata:
+  author: ovaris
+  category: General
+  tags:
+  - general
+  - nordpool
+  source: clawhub-community
+  clawhub_slug: nordpool-fi
+  clawhub_path: ovaris/nordpool-fi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nordpool Fi
+
+    # Source: ClawHub community skill by ovaris
+
+    # Install: clawhub install nordpool-fi
+
+    # Path: ovaris/nordpool-fi
+
+
+    ## Description
+
+    Hourly electricity prices for Finland with optimal EV charging window calculation (3h, 4h, 5h).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - bin/nordpool-fi.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nordpool-fi
+
+    ```'
+examples:
+- description: Install Nordpool Fi from ClawHub
+  usage: clawhub install nordpool-fi
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: email-to-calendar
+title: Email To Calendar
+version: 1.13.1
+description: 'Extract calendar events from emails and create calendar entries. Supports two modes: (1) Direct inbox monitoring
+  - scans all emails for events, or (2) Forwarded emails - processes emails you forward to a dedicated address. Features smart
+  onboarding, event tracking, pending invite reminders, undo sup'
+metadata:
+  author: tonimelisma
+  category: Communication
+  tags:
+  - communication
+  - email
+  - calendar
+  source: clawhub-community
+  clawhub_slug: email-to-calendar
+  clawhub_path: tonimelisma/email-to-calendar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Email To Calendar
+
+    # Source: ClawHub community skill by tonimelisma
+
+    # Install: clawhub install email-to-calendar
+
+    # Path: tonimelisma/email-to-calendar
+
+
+    ## Description
+
+    Extract calendar events from emails and create calendar entries. Supports two modes: (1) Direct inbox monitoring - scans
+    all emails for events, or (2) Forwarded emails - processes emails you forward to a dedicated address. Features smart onboarding,
+    event tracking, pending invite reminders, undo sup
+
+
+    ## Files
+
+    - BOOT.md
+
+    - CHANGELOG.md
+
+    - CONTRIBUTING.md
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/extraction-patterns.md
+
+    - references/gog-commands.md
+
+    - references/workflow-example.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-to-calendar
+
+    ```'
+examples:
+- description: Install Email To Calendar from ClawHub
+  usage: clawhub install email-to-calendar
+schema_version: '1.0'

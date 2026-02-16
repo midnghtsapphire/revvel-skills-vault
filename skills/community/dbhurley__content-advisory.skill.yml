@@ -1,0 +1,56 @@
+name: content-advisory
+title: Content Advisory (Kids-In-Mind Style)
+version: 1.0.0
+description: Lookup detailed content ratings for movies and TV shows (sex/nudity, violence/gore, language) from Kids-In-Mind.
+metadata:
+  author: dbhurley
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - content
+  - advisory
+  source: clawhub-community
+  clawhub_slug: content-advisory
+  clawhub_path: dbhurley/content-advisory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Content Advisory (Kids-In-Mind Style)
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install content-advisory
+
+    # Path: dbhurley/content-advisory
+
+
+    ## Description
+
+    Lookup detailed content ratings for movies and TV shows (sex/nudity, violence/gore, language) from Kids-In-Mind.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/content_advisory.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install content-advisory
+
+    ```'
+examples:
+- description: Install Content Advisory (Kids-In-Mind Style) from ClawHub
+  usage: clawhub install content-advisory
+schema_version: '1.0'

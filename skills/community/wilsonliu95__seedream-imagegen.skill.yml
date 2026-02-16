@@ -1,0 +1,66 @@
+name: seedream-imagegen
+title: Seedream ImageGen
+version: 1.0.0
+description: Generate high-quality images using Seedream 4.5 API (Volcengine/火山引擎). Supports text-to-image, image editing,
+  multi-image fusion, and sequential image generation. Triggers include requests like "generate an image", "create a picture",
+  "make a poster", "edit this image", "生成图片", "画一张", "做一个海报", image
+metadata:
+  author: wilsonliu95
+  category: Media & Content
+  tags:
+  - media-content
+  - seedream
+  - imagegen
+  source: clawhub-community
+  clawhub_slug: seedream-imagegen
+  clawhub_path: wilsonliu95/seedream-imagegen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seedream ImageGen
+
+    # Source: ClawHub community skill by wilsonliu95
+
+    # Install: clawhub install seedream-imagegen
+
+    # Path: wilsonliu95/seedream-imagegen
+
+
+    ## Description
+
+    Generate high-quality images using Seedream 4.5 API (Volcengine/火山引擎). Supports text-to-image, image editing, multi-image
+    fusion, and sequential image generation. Triggers include requests like "generate an image", "create a picture", "make
+    a poster", "edit this image", "生成图片", "画一张", "做一个海报", image
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - references/prompt_guide.md
+
+    - scripts/generate_image.py
+
+    - tests/test-imagegen.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seedream-imagegen
+
+    ```'
+examples:
+- description: Install Seedream ImageGen from ClawHub
+  usage: clawhub install seedream-imagegen
+schema_version: '1.0'

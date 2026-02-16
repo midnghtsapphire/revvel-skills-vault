@@ -1,0 +1,72 @@
+name: jira-resource-validator
+title: Jira Resource Validator
+version: 1.0.0
+description: Validates JIRA projects and boards exist, auto-creates missing resources. Use when setting up JIRA integration,
+  validating .env configuration, or troubleshooting missing projects/boards. Supports per-project board configuration with
+  JIRA_BOARDS_{ProjectKey} pattern.
+metadata:
+  author: anton-abyzov
+  category: General
+  tags:
+  - general
+  - jira
+  - resource
+  - validator
+  - read
+  - bash
+  - write
+  - edit
+  source: clawhub-community
+  clawhub_slug: sw-jira-resource-validator
+  clawhub_path: anton-abyzov/sw-jira-resource-validator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Bash
+  - Write
+  - Edit
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jira Resource Validator
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-jira-resource-validator
+
+    # Path: anton-abyzov/sw-jira-resource-validator
+
+
+    ## Description
+
+    Validates JIRA projects and boards exist, auto-creates missing resources. Use when setting up JIRA integration, validating
+    .env configuration, or troubleshooting missing projects/boards. Supports per-project board configuration with JIRA_BOARDS_{ProjectKey}
+    pattern.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Bash, Write, Edit
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-jira-resource-validator
+
+    ```'
+examples:
+- description: Install Jira Resource Validator from ClawHub
+  usage: clawhub install sw-jira-resource-validator
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: ansible
+title: Ansible
+version: 0.1.0
+description: '"Infrastructure automation with Ansible. Use for server provisioning, configuration management, application
+  deployment, and multi-host orchestration. Includes playbooks for OpenClaw VPS setup, security hardening, and common server
+  configurations."'
+metadata:
+  author: botond-rackhost
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - ansible
+  source: clawhub-community
+  clawhub_slug: ansible-skill
+  clawhub_path: botond-rackhost/ansible-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ansible
+
+    # Source: ClawHub community skill by botond-rackhost
+
+    # Install: clawhub install ansible-skill
+
+    # Path: botond-rackhost/ansible-skill
+
+
+    ## Description
+
+    "Infrastructure automation with Ansible. Use for server provisioning, configuration management, application deployment,
+    and multi-host orchestration. Includes playbooks for OpenClaw VPS setup, security hardening, and common server configurations."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - ansible.cfg
+
+    - inventory/hosts.yml
+
+    - inventory/group_vars/all.yml
+
+    - playbooks/openclaw-vps.yml
+
+    - playbooks/security.yml
+
+    - playbooks/site.yml
+
+    - references/best-practices.md
+
+    - references/modules-cheatsheet.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ansible-skill
+
+    ```'
+examples:
+- description: Install Ansible from ClawHub
+  usage: clawhub install ansible-skill
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: universal-skills-manager
+title: Universal Skills Manager
+version: 1.5.1
+description: The master coordinator for AI skills. Discovers skills from multiple sources (SkillsMP.com, SkillHub, and ClawHub),
+  manages installation, and synchronization across Claude Code, Gemini CLI, Google Anti-Gravity, OpenCode, and other AI tools.
+  Handles User-level (Global) and Project-level (Local) scope
+metadata:
+  author: jacob-bd
+  category: Search & Research
+  tags:
+  - search-research
+  - universal
+  - skills
+  - manager
+  source: clawhub-community
+  clawhub_slug: universal-skills-manager
+  clawhub_path: jacob-bd/universal-skills-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Universal Skills Manager
+
+    # Source: ClawHub community skill by jacob-bd
+
+    # Install: clawhub install universal-skills-manager
+
+    # Path: jacob-bd/universal-skills-manager
+
+
+    ## Description
+
+    The master coordinator for AI skills. Discovers skills from multiple sources (SkillsMP.com, SkillHub, and ClawHub), manages
+    installation, and synchronization across Claude Code, Gemini CLI, Google Anti-Gravity, OpenCode, and other AI tools. Handles
+    User-level (Global) and Project-level (Local) scope
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - scripts/install_skill.py
+
+    - scripts/scan_skill.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install universal-skills-manager
+
+    ```'
+examples:
+- description: Install Universal Skills Manager from ClawHub
+  usage: clawhub install universal-skills-manager
+schema_version: '1.0'

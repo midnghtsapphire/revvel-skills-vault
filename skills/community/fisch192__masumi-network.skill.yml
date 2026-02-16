@@ -1,0 +1,72 @@
+name: masumi-network
+title: Masumi Network Warranty Vault
+version: 1.0.0
+description: Masumi Network skill for warranty vault verification. Handles OCR receipt scanning, Cardano blockchain proof-of-purchase
+  logging, immutable decision logging, agent collaboration discovery, and smart wallet payments. Use for warranty claims,
+  product verification, agent-to-agent service payments, or i
+metadata:
+  author: fisch192
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - masumi
+  - network
+  source: clawhub-community
+  clawhub_slug: masumi-network
+  clawhub_path: fisch192/masumi-network
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Masumi Network Warranty Vault
+
+    # Source: ClawHub community skill by fisch192
+
+    # Install: clawhub install masumi-network
+
+    # Path: fisch192/masumi-network
+
+
+    ## Description
+
+    Masumi Network skill for warranty vault verification. Handles OCR receipt scanning, Cardano blockchain proof-of-purchase
+    logging, immutable decision logging, agent collaboration discovery, and smart wallet payments. Use for warranty claims,
+    product verification, agent-to-agent service payments, or i
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/example_asset.txt
+
+    - references/api.md
+
+    - references/api_reference.md
+
+    - scripts/collaborate.py
+
+    - scripts/example.py
+
+    - scripts/register-agent.py
+
+    - scripts/verify-warranty.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install masumi-network
+
+    ```'
+examples:
+- description: Install Masumi Network Warranty Vault from ClawHub
+  usage: clawhub install masumi-network
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: larksuite-wiki
+title: Lark Suite Wiki
+version: 1.0.0
+description: Manage and export Lark Suite (Feishu) Wiki/Knowledge Base documents. Read, search, sync with subdocuments, and
+  incremental export to local Markdown files.
+metadata:
+  author: ryanhong666
+  category: Search & Research
+  tags:
+  - search-research
+  - larksuite
+  - wiki
+  source: clawhub-community
+  clawhub_slug: larksuite-wiki
+  clawhub_path: ryanhong666/larksuite-wiki
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lark Suite Wiki
+
+    # Source: ClawHub community skill by ryanhong666
+
+    # Install: clawhub install larksuite-wiki
+
+    # Path: ryanhong666/larksuite-wiki
+
+
+    ## Description
+
+    Manage and export Lark Suite (Feishu) Wiki/Knowledge Base documents. Read, search, sync with subdocuments, and incremental
+    export to local Markdown files.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - larksuite-wiki.py
+
+    - references/api-reference.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install larksuite-wiki
+
+    ```'
+examples:
+- description: Install Lark Suite Wiki from ClawHub
+  usage: clawhub install larksuite-wiki
+schema_version: '1.0'

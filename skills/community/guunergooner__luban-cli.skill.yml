@@ -1,0 +1,60 @@
+name: luban-cli
+title: luban-cli skill
+version: 1.0.0
+description: Development and management of the Luban CLI for MLOps. Use this skill when building or using the Luban CLI to
+  manage experiment environments, training tasks, and online services.
+metadata:
+  author: guunergooner
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - luban
+  - cli
+  source: clawhub-community
+  clawhub_slug: luban-cli
+  clawhub_path: guunergooner/luban-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# luban-cli skill
+
+    # Source: ClawHub community skill by guunergooner
+
+    # Install: clawhub install luban-cli
+
+    # Path: guunergooner/luban-cli
+
+
+    ## Description
+
+    Development and management of the Luban CLI for MLOps. Use this skill when building or using the Luban CLI to manage experiment
+    environments, training tasks, and online services.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/mlops_guide.md
+
+    - templates/cli_boilerplate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install luban-cli
+
+    ```'
+examples:
+- description: Install luban-cli skill from ClawHub
+  usage: clawhub install luban-cli
+schema_version: '1.0'

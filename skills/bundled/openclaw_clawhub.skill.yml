@@ -1,0 +1,45 @@
+name: openclaw_clawhub
+title: Clawhub
+version: 1.0.0
+description: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need
+  to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders
+  with the npm-installed clawhub CLI.
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - clawhub
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - clawhub
+install:
+- id: node
+  platform: all
+  method: node
+  command: clawhub
+  label: Install ClawHub CLI (npm)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: clawhub\ndescription: Use the ClawHub CLI to search, install, update, and publish agent skills from\
+    \ clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version,\
+    \ or publish new/updated skill folders with the npm-installed clawhub CLI.\nmetadata:\n  {\n    \"openclaw\":\n      {\n\
+    \        \"requires\": { \"bins\": [\"clawhub\"] },\n        \"install\":\n          [\n            {\n              \"\
+    id\": \"node\",\n              \"kind\": \"node\",\n              \"package\": \"clawhub\",\n              \"bins\": [\"\
+    clawhub\"],\n              \"label\": \"Install ClawHub CLI (npm)\",\n            },\n          ],\n      },\n  }\n---\n\
+    \n# ClawHub CLI\n\nInstall\n\n```bash\nnpm i -g clawhub\n```\n\nAuth (publish)\n\n```bash\nclawhub login\nclawhub whoami\n\
+    ```\n\nSearch\n\n```bash\nclawhub search \"postgres backups\"\n```\n\nInstall\n\n```bash\nclawhub install my-skill\nclawhub\
+    \ install my-skill --version 1.2.3\n```\n\nUpdate (hash-based match + upgrade)\n\n```bash\nclawhub update my-skill\nclawhub\
+    \ update my-skill --version 1.2.3\nclawhub update --all\nclawhub update my-skill --force\nclawhub update --all --no-input\
+    \ --force\n```\n\nList\n\n```bash\nclawhub list\n```\n\nPublish\n\n```bash\nclawhub publish ./my-skill --slug my-skill\
+    \ --name \"My Skill\" --version 1.2.0 --changelog \"Fixes + docs\"\n```\n\nNotes\n\n- Default registry: https://clawhub.com\
+    \ (override with CLAWHUB_REGISTRY or --registry)\n- Default workdir: cwd (falls back to OpenClaw workspace); install dir:\
+    \ ./skills (override with --workdir / --dir / CLAWHUB_WORKDIR)\n- Update command hashes local files, resolves matching\
+    \ version, and upgrades to latest unless --version is set\n"
+examples: []
+schema_version: '1.0'

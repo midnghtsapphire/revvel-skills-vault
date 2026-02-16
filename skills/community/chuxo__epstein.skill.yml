@@ -1,0 +1,57 @@
+name: epstein
+title: Epstein Files Search
+version: 1.1.0
+description: '>'
+metadata:
+  author: chuxo
+  category: Search & Research
+  tags:
+  - search-research
+  - epstein
+  source: clawhub-community
+  clawhub_slug: epstein
+  clawhub_path: chuxo/epstein
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Epstein Files Search
+
+    # Source: ClawHub community skill by chuxo
+
+    # Install: clawhub install epstein
+
+    # Path: chuxo/epstein
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/epstein.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install epstein
+
+    ```'
+examples:
+- description: Install Epstein Files Search from ClawHub
+  usage: clawhub install epstein
+schema_version: '1.0'

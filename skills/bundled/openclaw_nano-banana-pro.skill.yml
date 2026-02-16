@@ -1,0 +1,44 @@
+name: openclaw_nano-banana-pro
+title: 🍌 Nano Banana Pro
+version: 1.0.0
+description: Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - nano-banana-pro
+  - uv
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - uv
+install:
+- id: uv-brew
+  platform: all
+  method: brew
+  command: uv
+  label: Install uv (brew)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: nano-banana-pro\ndescription: Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).\nhomepage:\
+    \ https://ai.google.dev/\nmetadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"\U0001F34C\",\n        \"requires\"\
+    : { \"bins\": [\"uv\"], \"env\": [\"GEMINI_API_KEY\"] },\n        \"primaryEnv\": \"GEMINI_API_KEY\",\n        \"install\"\
+    :\n          [\n            {\n              \"id\": \"uv-brew\",\n              \"kind\": \"brew\",\n              \"\
+    formula\": \"uv\",\n              \"bins\": [\"uv\"],\n              \"label\": \"Install uv (brew)\",\n            },\n\
+    \          ],\n      },\n  }\n---\n\n# Nano Banana Pro (Gemini 3 Pro Image)\n\nUse the bundled script to generate or edit\
+    \ images.\n\nGenerate\n\n```bash\nuv run {baseDir}/scripts/generate_image.py --prompt \"your image description\" --filename\
+    \ \"output.png\" --resolution 1K\n```\n\nEdit (single image)\n\n```bash\nuv run {baseDir}/scripts/generate_image.py --prompt\
+    \ \"edit instructions\" --filename \"output.png\" -i \"/path/in.png\" --resolution 2K\n```\n\nMulti-image composition\
+    \ (up to 14 images)\n\n```bash\nuv run {baseDir}/scripts/generate_image.py --prompt \"combine these into one scene\" --filename\
+    \ \"output.png\" -i img1.png -i img2.png -i img3.png\n```\n\nAPI key\n\n- `GEMINI_API_KEY` env var\n- Or set `skills.\"\
+    nano-banana-pro\".apiKey` / `skills.\"nano-banana-pro\".env.GEMINI_API_KEY` in `~/.openclaw/openclaw.json`\n\nNotes\n\n\
+    - Resolutions: `1K` (default), `2K`, `4K`.\n- Use timestamps in filenames: `yyyy-mm-dd-hh-mm-ss-name.png`.\n- The script\
+    \ prints a `MEDIA:` line for OpenClaw to auto-attach on supported chat providers.\n- Do not read the image back; report\
+    \ the saved path only.\n"
+examples: []
+schema_version: '1.0'

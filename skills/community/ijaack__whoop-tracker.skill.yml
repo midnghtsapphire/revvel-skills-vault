@@ -1,0 +1,73 @@
+name: whoop
+title: WHOOP Tracker
+version: 1.0.1
+description: Access WHOOP fitness tracker data via API, including recovery scores, sleep metrics, workout stats, daily strain,
+  and body measurements. Use when the user asks about their WHOOP data, fitness metrics, recovery status, sleep quality, workout
+  performance, or wants to track health trends.
+metadata:
+  author: ijaack
+  category: Development & Coding
+  tags:
+  - development-coding
+  - whoop
+  source: clawhub-community
+  clawhub_slug: whoop-tracker
+  clawhub_path: ijaack/whoop-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WHOOP Tracker
+
+    # Source: ClawHub community skill by ijaack
+
+    # Install: clawhub install whoop-tracker
+
+    # Path: ijaack/whoop-tracker
+
+
+    ## Description
+
+    Access WHOOP fitness tracker data via API, including recovery scores, sleep metrics, workout stats, daily strain, and
+    body measurements. Use when the user asks about their WHOOP data, fitness metrics, recovery status, sleep quality, workout
+    performance, or wants to track health trends.
+
+
+    ## Files
+
+    - AUDIT.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - references/oauth.md
+
+    - scripts/get_profile.py
+
+    - scripts/get_recovery.py
+
+    - scripts/get_sleep.py
+
+    - scripts/get_workouts.py
+
+    - scripts/install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install whoop-tracker
+
+    ```'
+examples:
+- description: Install WHOOP Tracker from ClawHub
+  usage: clawhub install whoop-tracker
+schema_version: '1.0'

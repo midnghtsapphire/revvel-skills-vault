@@ -1,0 +1,75 @@
+name: travel-destination-brochure
+title: travel-destination-brochure
+version: 1.0.0
+description: '"Build travel destination scenarios and brochures from a city name. Fetches street-level and landmark imagery
+  from OpenStreetCam and Wikimedia Commons, then uses VLM Run (vlmrun) to generate a travel video and a travel plan. Use when
+  the user wants a travel brochure, destination guide, travel video,'
+metadata:
+  author: mehediahamed
+  category: Media & Content
+  tags:
+  - media-content
+  - travel
+  - destination
+  - brochure
+  source: clawhub-community
+  clawhub_slug: travel-destination-brochure
+  clawhub_path: mehediahamed/travel-destination-brochure
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# travel-destination-brochure
+
+    # Source: ClawHub community skill by mehediahamed
+
+    # Install: clawhub install travel-destination-brochure
+
+    # Path: mehediahamed/travel-destination-brochure
+
+
+    ## Description
+
+    "Build travel destination scenarios and brochures from a city name. Fetches street-level and landmark imagery from OpenStreetCam
+    and Wikimedia Commons, then uses VLM Run (vlmrun) to generate a travel video and a travel plan. Use when the user wants
+    a travel brochure, destination guide, travel video,
+
+
+    ## Files
+
+    - .env_template.txt
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/commons_api.md
+
+    - references/openstreetcam_api.md
+
+    - scripts/fetch_commons.py
+
+    - scripts/fetch_openstreetcam.py
+
+    - scripts/geocode_city.py
+
+    - scripts/run_travel_pipeline.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install travel-destination-brochure
+
+    ```'
+examples:
+- description: Install travel-destination-brochure from ClawHub
+  usage: clawhub install travel-destination-brochure
+schema_version: '1.0'

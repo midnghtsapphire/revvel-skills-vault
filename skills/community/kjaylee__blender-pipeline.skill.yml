@@ -1,0 +1,70 @@
+name: blender-pipeline
+title: Blender Pipeline
+version: 1.0.2
+description: '|'
+metadata:
+  author: kjaylee
+  category: General
+  tags:
+  - general
+  - blender
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: blender-pipeline
+  clawhub_path: kjaylee/blender-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Blender Pipeline
+
+    # Source: ClawHub community skill by kjaylee
+
+    # Install: clawhub install blender-pipeline
+
+    # Path: kjaylee/blender-pipeline
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/bpy-api.md
+
+    - references/procedural.md
+
+    - references/rendering.md
+
+    - references/rigging.md
+
+    - scripts/convert_format.py
+
+    - scripts/procedural_props.py
+
+    - scripts/render_sprite_sheet.py
+
+    - scripts/simple_rig.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install blender-pipeline
+
+    ```'
+examples:
+- description: Install Blender Pipeline from ClawHub
+  usage: clawhub install blender-pipeline
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: esp32-weather
+title: weatheresp32
+version: 1.0.0
+description: Get weather data from your personal ESP32+BMP280 sensor
+metadata:
+  author: manisaigaddam
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - esp32
+  - weather
+  source: clawhub-community
+  clawhub_slug: weather-esp32
+  clawhub_path: manisaigaddam/weather-esp32
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# weatheresp32
+
+    # Source: ClawHub community skill by manisaigaddam
+
+    # Install: clawhub install weather-esp32
+
+    # Path: manisaigaddam/weather-esp32
+
+
+    ## Description
+
+    Get weather data from your personal ESP32+BMP280 sensor
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install weather-esp32
+
+    ```'
+examples:
+- description: Install weatheresp32 from ClawHub
+  usage: clawhub install weather-esp32
+schema_version: '1.0'

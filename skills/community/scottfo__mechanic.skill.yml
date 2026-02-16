@@ -1,0 +1,59 @@
+name: mechanic
+title: Mechanic
+version: 1.1.0
+description: '"Vehicle maintenance tracker and mechanic advisor. Tracks mileage, service intervals, fuel economy, costs, warranties,
+  and recalls. Researches manufacturer schedules, estimates costs, projects service dates, tracks providers, and proactively
+  reminds about upcoming/overdue services. Supports VIN deco'
+metadata:
+  author: scottfo
+  category: Search & Research
+  tags:
+  - search-research
+  - mechanic
+  source: clawhub-community
+  clawhub_slug: mechanic
+  clawhub_path: scottfo/mechanic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mechanic
+
+    # Source: ClawHub community skill by scottfo
+
+    # Install: clawhub install mechanic
+
+    # Path: scottfo/mechanic
+
+
+    ## Description
+
+    "Vehicle maintenance tracker and mechanic advisor. Tracks mileage, service intervals, fuel economy, costs, warranties,
+    and recalls. Researches manufacturer schedules, estimates costs, projects service dates, tracks providers, and proactively
+    reminds about upcoming/overdue services. Supports VIN deco
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mechanic
+
+    ```'
+examples:
+- description: Install Mechanic from ClawHub
+  usage: clawhub install mechanic
+schema_version: '1.0'

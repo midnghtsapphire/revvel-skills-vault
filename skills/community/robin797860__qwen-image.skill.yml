@@ -1,0 +1,58 @@
+name: qwen-image
+title: Qwen Image
+version: 1.0.0
+description: Generate images using Qwen Image API (Alibaba Cloud DashScope). Use when users request image generation with
+  Chinese prompts or need high-quality AI-generated images from text descriptions.
+metadata:
+  author: robin797860
+  category: Media & Content
+  tags:
+  - media-content
+  - qwen
+  - image
+  source: clawhub-community
+  clawhub_slug: qwen-image
+  clawhub_path: robin797860/qwen-image
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qwen Image
+
+    # Source: ClawHub community skill by robin797860
+
+    # Install: clawhub install qwen-image
+
+    # Path: robin797860/qwen-image
+
+
+    ## Description
+
+    Generate images using Qwen Image API (Alibaba Cloud DashScope). Use when users request image generation with Chinese prompts
+    or need high-quality AI-generated images from text descriptions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_image.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qwen-image
+
+    ```'
+examples:
+- description: Install Qwen Image from ClawHub
+  usage: clawhub install qwen-image
+schema_version: '1.0'

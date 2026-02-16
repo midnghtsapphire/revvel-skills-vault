@@ -1,0 +1,74 @@
+name: otp-challenger
+title: Otp Challenger
+version: 1.0.6
+description: Enable agents and skills to challenge users for fresh two-factor authentication proof (TOTP or YubiKey) before
+  executing sensitive actions. Use this for identity verification in approval workflows - deploy commands, financial operations,
+  data access, admin operations, and change control.
+metadata:
+  author: ryancnelson
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - otp
+  - challenger
+  source: clawhub-community
+  clawhub_slug: otp-challenger
+  clawhub_path: ryancnelson/otp-challenger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Otp Challenger
+
+    # Source: ClawHub community skill by ryancnelson
+
+    # Install: clawhub install otp-challenger
+
+    # Path: ryancnelson/otp-challenger
+
+
+    ## Description
+
+    Enable agents and skills to challenge users for fresh two-factor authentication proof (TOTP or YubiKey) before executing
+    sensitive actions. Use this for identity verification in approval workflows - deploy commands, financial operations, data
+    access, admin operations, and change control.
+
+
+    ## Files
+
+    - INSTALLATION.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - check-status.sh
+
+    - config-template.yaml
+
+    - env-template.sh
+
+    - generate-secret.sh
+
+    - get-current-code.sh
+
+    - otp-skill-summary.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install otp-challenger
+
+    ```'
+examples:
+- description: Install Otp Challenger from ClawHub
+  usage: clawhub install otp-challenger
+schema_version: '1.0'

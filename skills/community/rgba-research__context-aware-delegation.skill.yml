@@ -1,0 +1,64 @@
+name: context-aware-delegation
+title: Context-Aware Delegation (SmartBeat)
+version: 1.0.1
+description: Give isolated sessions (cron jobs, sub-agents, event handlers) full conversation context from your main session
+  using sessions_history. Run cheap background tasks (Haiku) with expensive context (Sonnet-level awareness) — best of both
+  worlds.
+metadata:
+  author: rgba-research
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - context
+  - aware
+  - delegation
+  source: clawhub-community
+  clawhub_slug: context-aware-delegation
+  clawhub_path: rgba-research/context-aware-delegation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context-Aware Delegation (SmartBeat)
+
+    # Source: ClawHub community skill by rgba-research
+
+    # Install: clawhub install context-aware-delegation
+
+    # Path: rgba-research/context-aware-delegation
+
+
+    ## Description
+
+    Give isolated sessions (cron jobs, sub-agents, event handlers) full conversation context from your main session using
+    sessions_history. Run cheap background tasks (Haiku) with expensive context (Sonnet-level awareness) — best of both worlds.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/morning-report-cron.json
+
+    - examples/sub-agent-with-context.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-aware-delegation
+
+    ```'
+examples:
+- description: Install Context-Aware Delegation (SmartBeat) from ClawHub
+  usage: clawhub install context-aware-delegation
+schema_version: '1.0'

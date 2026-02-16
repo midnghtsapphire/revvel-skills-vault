@@ -1,0 +1,58 @@
+name: fizzy-cli
+title: fizzy.do - have your agent read, understand and update your fizzy.do boards
+version: 1.0.0
+description: Use the fizzy-cli tool to authenticate and manage Fizzy kanban boards, cards, comments, tags, columns, users,
+  and notifications from the command line. Apply this skill when you need to list, create, update, or delete Fizzy resources
+  or when scripting Fizzy workflows.
+metadata:
+  author: tobiasbischoff
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - fizzy
+  - cli
+  source: clawhub-community
+  clawhub_slug: fizzy-cli
+  clawhub_path: tobiasbischoff/fizzy-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# fizzy.do - have your agent read, understand and update your fizzy.do boards
+
+    # Source: ClawHub community skill by tobiasbischoff
+
+    # Install: clawhub install fizzy-cli
+
+    # Path: tobiasbischoff/fizzy-cli
+
+
+    ## Description
+
+    Use the fizzy-cli tool to authenticate and manage Fizzy kanban boards, cards, comments, tags, columns, users, and notifications
+    from the command line. Apply this skill when you need to list, create, update, or delete Fizzy resources or when scripting
+    Fizzy workflows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fizzy-cli
+
+    ```'
+examples:
+- description: Install fizzy.do - have your agent read, understand and update your fizzy.do boards from ClawHub
+  usage: clawhub install fizzy-cli
+schema_version: '1.0'

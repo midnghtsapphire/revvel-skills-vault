@@ -1,0 +1,60 @@
+name: daily-questions
+title: Daily Questions
+version: 1.0.0
+description: Daily self-improving questionnaire that learns about the user and refines agent behavior. Set up as a cron job
+  to ask questions in two rounds — first about the user (updating USER.md), then about agent behavior (updating SOUL.md).
+  Use when setting up, modifying, or running the daily questions routin
+metadata:
+  author: daijo-bu
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - daily
+  - questions
+  source: clawhub-community
+  clawhub_slug: daily-questions
+  clawhub_path: daijo-bu/daily-questions
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Questions
+
+    # Source: ClawHub community skill by daijo-bu
+
+    # Install: clawhub install daily-questions
+
+    # Path: daijo-bu/daily-questions
+
+
+    ## Description
+
+    Daily self-improving questionnaire that learns about the user and refines agent behavior. Set up as a cron job to ask
+    questions in two rounds — first about the user (updating USER.md), then about agent behavior (updating SOUL.md). Use when
+    setting up, modifying, or running the daily questions routin
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/example-questions.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-questions
+
+    ```'
+examples:
+- description: Install Daily Questions from ClawHub
+  usage: clawhub install daily-questions
+schema_version: '1.0'

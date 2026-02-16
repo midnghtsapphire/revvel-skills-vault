@@ -1,0 +1,58 @@
+name: clawdirect-dev
+title: ClawDirect Dev
+version: 1.0.0
+description: Build agent-facing web experiences with ATXP-based authentication, following the ClawDirect pattern. Use this
+  skill when building websites that AI agents interact with via MCP tools, implementing cookie-based agent auth, or creating
+  agent skills for web apps. Provides templates using @longrun/turtle
+metadata:
+  author: napoleond
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawdirect
+  - dev
+  source: clawhub-community
+  clawhub_slug: clawdirect-dev
+  clawhub_path: napoleond/clawdirect-dev
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawDirect Dev
+
+    # Source: ClawHub community skill by napoleond
+
+    # Install: clawhub install clawdirect-dev
+
+    # Path: napoleond/clawdirect-dev
+
+
+    ## Description
+
+    Build agent-facing web experiences with ATXP-based authentication, following the ClawDirect pattern. Use this skill when
+    building websites that AI agents interact with via MCP tools, implementing cookie-based agent auth, or creating agent
+    skills for web apps. Provides templates using @longrun/turtle
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdirect-dev
+
+    ```'
+examples:
+- description: Install ClawDirect Dev from ClawHub
+  usage: clawhub install clawdirect-dev
+schema_version: '1.0'

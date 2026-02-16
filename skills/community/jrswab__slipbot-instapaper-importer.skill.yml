@@ -1,0 +1,58 @@
+name: instapaper-import
+title: SlipBot Instapaper Importer
+version: 1.0.0
+description: Import reading notes from Instapaper exports into the slipbox. Use when user pastes an Instapaper highlight export
+  with article title and notes. Parses title/URL from header, extracts user's own notes (plain text lines), skips original
+  highlights (> lines), then runs slipbot for each.
+metadata:
+  author: jrswab
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - instapaper
+  - import
+  source: clawhub-community
+  clawhub_slug: slipbot-instapaper-importer
+  clawhub_path: jrswab/slipbot-instapaper-importer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SlipBot Instapaper Importer
+
+    # Source: ClawHub community skill by jrswab
+
+    # Install: clawhub install slipbot-instapaper-importer
+
+    # Path: jrswab/slipbot-instapaper-importer
+
+
+    ## Description
+
+    Import reading notes from Instapaper exports into the slipbox. Use when user pastes an Instapaper highlight export with
+    article title and notes. Parses title/URL from header, extracts user''s own notes (plain text lines), skips original highlights
+    (> lines), then runs slipbot for each.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install slipbot-instapaper-importer
+
+    ```'
+examples:
+- description: Install SlipBot Instapaper Importer from ClawHub
+  usage: clawhub install slipbot-instapaper-importer
+schema_version: '1.0'

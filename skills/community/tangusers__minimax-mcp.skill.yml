@@ -1,0 +1,58 @@
+name: minimax-mcp
+title: Minimax Mcp
+version: 1.0.3
+description: 'MiniMax MCP server for web search and image understanding. Use when needing: (1) Web search via MiniMax API,
+  (2) Analyze/describe images, (3) Extract content from URLs. Requires MINIMAX_API_KEY (China: api.minimaxi.com, Global: api.minimax.io).'
+metadata:
+  author: tangusers
+  category: Search & Research
+  tags:
+  - search-research
+  - minimax
+  - mcp
+  source: clawhub-community
+  clawhub_slug: minimax-mcp
+  clawhub_path: tangusers/minimax-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Minimax Mcp
+
+    # Source: ClawHub community skill by tangusers
+
+    # Install: clawhub install minimax-mcp
+
+    # Path: tangusers/minimax-mcp
+
+
+    ## Description
+
+    MiniMax MCP server for web search and image understanding. Use when needing: (1) Web search via MiniMax API, (2) Analyze/describe
+    images, (3) Extract content from URLs. Requires MINIMAX_API_KEY (China: api.minimaxi.com, Global: api.minimax.io).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install minimax-mcp
+
+    ```'
+examples:
+- description: Install Minimax Mcp from ClawHub
+  usage: clawhub install minimax-mcp
+schema_version: '1.0'

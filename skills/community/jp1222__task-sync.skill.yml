@@ -1,0 +1,34 @@
+name: task-sync
+title: Task Sync
+version: 2.0.4
+description: 'Synchronize TickTick (Dida) and Google Tasks bidirectionally, including list/project mapping, task content sync,
+  completion sync, and smart-list export (Today, Next 7 Days, All). Use when users ask to set up OAuth, run or schedule sync,
+  fix mismatched/deleted/completed tasks, or troubleshoot Google '
+metadata:
+  author: jp1222
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - task
+  - sync
+  source: clawhub-community
+  clawhub_slug: task-sync
+  clawhub_path: jp1222/task-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Task Sync\n# Source: ClawHub community skill by jp1222\n# Install: clawhub install task-sync\n# Path: jp1222/task-sync\n\
+    \n## Description\nSynchronize TickTick (Dida) and Google Tasks bidirectionally, including list/project mapping, task content\
+    \ sync, completion sync, and smart-list export (Today, Next 7 Days, All). Use when users ask to set up OAuth, run or schedule\
+    \ sync, fix mismatched/deleted/completed tasks, or troubleshoot Google \n\n## Files\n- README.md\n- README_CN.md\n- SKILL.md\n\
+    - _meta.json\n- e2e_test.py\n- sync.py\n- scripts/setup_google_tasks.py\n- scripts/setup_ticktick.py\n- utils/__init__.py\n\
+    - utils/google_api.py\n\n## Installation\n```bash\nclawhub install task-sync\n```"
+examples:
+- description: Install Task Sync from ClawHub
+  usage: clawhub install task-sync
+schema_version: '1.0'

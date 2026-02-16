@@ -1,0 +1,61 @@
+name: yutori-web-research
+title: Yutori research
+version: 1.0.1
+description: Use Yutori’s Research API and Browsing API (cloud browser) to research topics, collect sources, and extract structured
+  facts from the web. Use when the user asks to “research X”, “monitor/find papers”, or “navigate to a site and extract info”
+  and you have access to YUTORI dev/prod endpoints via YUTO
+metadata:
+  author: juanpin
+  category: Search & Research
+  tags:
+  - search-research
+  - yutori
+  - web
+  - research
+  source: clawhub-community
+  clawhub_slug: yutori-web-research
+  clawhub_path: juanpin/yutori-web-research
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Yutori research
+
+    # Source: ClawHub community skill by juanpin
+
+    # Install: clawhub install yutori-web-research
+
+    # Path: juanpin/yutori-web-research
+
+
+    ## Description
+
+    Use Yutori’s Research API and Browsing API (cloud browser) to research topics, collect sources, and extract structured
+    facts from the web. Use when the user asks to “research X”, “monitor/find papers”, or “navigate to a site and extract
+    info” and you have access to YUTORI dev/prod endpoints via YUTO
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/yutori-research.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yutori-web-research
+
+    ```'
+examples:
+- description: Install Yutori research from ClawHub
+  usage: clawhub install yutori-web-research
+schema_version: '1.0'

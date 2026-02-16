@@ -1,0 +1,60 @@
+name: web-searcher
+title: Web Searcher
+version: 1.0.0
+description: Autonomous web research agent that performs multi-step searches, follows links, extracts data, and synthesizes
+  findings into structured reports. Use when asked to research a topic, find information across multiple sources, compare
+  options, gather market data, compile lists, or answer questions requi
+metadata:
+  author: kassimisai
+  category: Search & Research
+  tags:
+  - search-research
+  - web
+  - searcher
+  source: clawhub-community
+  clawhub_slug: web-searcher
+  clawhub_path: kassimisai/web-searcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Web Searcher
+
+    # Source: ClawHub community skill by kassimisai
+
+    # Install: clawhub install web-searcher
+
+    # Path: kassimisai/web-searcher
+
+
+    ## Description
+
+    Autonomous web research agent that performs multi-step searches, follows links, extracts data, and synthesizes findings
+    into structured reports. Use when asked to research a topic, find information across multiple sources, compare options,
+    gather market data, compile lists, or answer questions requi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/research_plan.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install web-searcher
+
+    ```'
+examples:
+- description: Install Web Searcher from ClawHub
+  usage: clawhub install web-searcher
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: subtitles
+title: Subtitles
+version: 1.4.1
+description: Get subtitles from YouTube videos for translation, language learning, or reading along. Use when the user asks
+  for subtitles, subs, foreign language text, or wants to read video content. Supports multiple languages and timestamped
+  output for sync'd reading.
+metadata:
+  author: therohitdas
+  category: Media & Content
+  tags:
+  - media-content
+  - subtitles
+  source: clawhub-community
+  clawhub_slug: subtitles
+  clawhub_path: therohitdas/subtitles
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Subtitles
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install subtitles
+
+    # Path: therohitdas/subtitles
+
+
+    ## Description
+
+    Get subtitles from YouTube videos for translation, language learning, or reading along. Use when the user asks for subtitles,
+    subs, foreign language text, or wants to read video content. Supports multiple languages and timestamped output for sync''d
+    reading.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tapi-auth.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install subtitles
+
+    ```'
+examples:
+- description: Install Subtitles from ClawHub
+  usage: clawhub install subtitles
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: book-it-support
+title: Book IT Support
+version: 1.0.1
+description: Book it-support services through Lokuli MCP. Use when user needs to find and book it-support. Triggers on requests
+  like "book a it-support", "find it-support near me", or any it-support service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - support
+  source: clawhub-community
+  clawhub_slug: book-it-support
+  clawhub_path: edwardrodriguez703-design/book-it-support
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book IT Support
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-it-support
+
+    # Path: edwardrodriguez703-design/book-it-support
+
+
+    ## Description
+
+    Book it-support services through Lokuli MCP. Use when user needs to find and book it-support. Triggers on requests like
+    "book a it-support", "find it-support near me", or any it-support service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-it-support
+
+    ```'
+examples:
+- description: Install Book IT Support from ClawHub
+  usage: clawhub install book-it-support
+schema_version: '1.0'

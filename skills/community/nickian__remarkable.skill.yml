@@ -1,0 +1,61 @@
+name: remarkable
+title: reMarkable Cloud
+version: 1.1.0
+description: Send files and web articles to a reMarkable e-ink tablet via the reMarkable Cloud. Upload PDFs, EPUBs, or convert
+  web articles to readable ebooks and send them to the device. Also browse and manage files on the device. Use when the user
+  mentions reMarkable, wants to send an article or document to th
+metadata:
+  author: nickian
+  category: Search & Research
+  tags:
+  - search-research
+  - remarkable
+  source: clawhub-community
+  clawhub_slug: remarkable
+  clawhub_path: nickian/remarkable
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# reMarkable Cloud
+
+    # Source: ClawHub community skill by nickian
+
+    # Install: clawhub install remarkable
+
+    # Path: nickian/remarkable
+
+
+    ## Description
+
+    Send files and web articles to a reMarkable e-ink tablet via the reMarkable Cloud. Upload PDFs, EPUBs, or convert web
+    articles to readable ebooks and send them to the device. Also browse and manage files on the device. Use when the user
+    mentions reMarkable, wants to send an article or document to th
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/article2ebook.py
+
+    - scripts/remarkable.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remarkable
+
+    ```'
+examples:
+- description: Install reMarkable Cloud from ClawHub
+  usage: clawhub install remarkable
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: openspec
+title: OpenSpec
+version: 1.0.0
+description: Spec-driven development with OpenSpec CLI. Use when building features, migrations, refactors, or any structured
+  development work. Manages proposal → specs → design → tasks → implementation workflows. Supports custom schemas (TDD, rapid,
+  etc.). Trigger on requests involving feature planning, spec wri
+metadata:
+  author: jcorrego
+  category: Development & Coding
+  tags:
+  - development-coding
+  - openspec
+  source: clawhub-community
+  clawhub_slug: openspec
+  clawhub_path: jcorrego/openspec
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenSpec
+
+    # Source: ClawHub community skill by jcorrego
+
+    # Install: clawhub install openspec
+
+    # Path: jcorrego/openspec
+
+
+    ## Description
+
+    Spec-driven development with OpenSpec CLI. Use when building features, migrations, refactors, or any structured development
+    work. Manages proposal → specs → design → tasks → implementation workflows. Supports custom schemas (TDD, rapid, etc.).
+    Trigger on requests involving feature planning, spec wri
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/schemas.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openspec
+
+    ```'
+examples:
+- description: Install OpenSpec from ClawHub
+  usage: clawhub install openspec
+schema_version: '1.0'

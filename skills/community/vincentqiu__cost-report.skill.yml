@@ -1,0 +1,71 @@
+name: openclaw-cost-tracker
+title: Cost Tracking for Models
+version: 1.0.2
+description: Track OpenClaw usage costs and provide detailed reports by date and model. Supports daily, weekly, and monthly
+  report formats for Discord and other messaging channels.
+metadata:
+  author: vincentqiu
+  category: Social Media
+  tags:
+  - social-media
+  - openclaw
+  - cost
+  - tracker
+  source: clawhub-community
+  clawhub_slug: cost-report
+  clawhub_path: vincentqiu/cost-report
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cost Tracking for Models
+
+    # Source: ClawHub community skill by vincentqiu
+
+    # Install: clawhub install cost-report
+
+    # Path: vincentqiu/cost-report
+
+
+    ## Description
+
+    Track OpenClaw usage costs and provide detailed reports by date and model. Supports daily, weekly, and monthly report
+    formats for Discord and other messaging channels.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.js
+
+    - package.json
+
+    - config/cron-examples.json
+
+    - references/JSONL_FORMAT.md
+
+    - scripts/cost_report.sh
+
+    - scripts/report_discord.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cost-report
+
+    ```'
+examples:
+- description: Install Cost Tracking for Models from ClawHub
+  usage: clawhub install cost-report
+schema_version: '1.0'

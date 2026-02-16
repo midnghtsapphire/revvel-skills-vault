@@ -1,0 +1,62 @@
+name: agent
+title: Agent
+version: 1.0.0
+description: Define agent identity, personality, voice, and boundaries to create assistants that feel authentic rather than
+  generic.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - agent
+  source: clawhub-community
+  clawhub_slug: agent
+  clawhub_path: ivangdavila/agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install agent
+
+    # Path: ivangdavila/agent
+
+
+    ## Description
+
+    Define agent identity, personality, voice, and boundaries to create assistants that feel authentic rather than generic.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - adaptation.md
+
+    - boundaries.md
+
+    - templates.md
+
+    - voice.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent
+
+    ```'
+examples:
+- description: Install Agent from ClawHub
+  usage: clawhub install agent
+schema_version: '1.0'

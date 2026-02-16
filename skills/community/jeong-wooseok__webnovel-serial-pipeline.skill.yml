@@ -1,0 +1,73 @@
+name: webnovel-serial-pipeline
+title: Webnovel Serial Pipeline
+version: 0.1.4
+description: Build and publish a Quartz-hosted Korean web-novel serial (draft→cover→webp→episode md→lint→publish). Uses Nano
+  Banana Pro + ffmpeg.
+metadata:
+  author: jeong-wooseok
+  category: Web & Internet
+  tags:
+  - web-internet
+  - webnovel
+  - serial
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: webnovel-serial-pipeline
+  clawhub_path: jeong-wooseok/webnovel-serial-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Webnovel Serial Pipeline
+
+    # Source: ClawHub community skill by jeong-wooseok
+
+    # Install: clawhub install webnovel-serial-pipeline
+
+    # Path: jeong-wooseok/webnovel-serial-pipeline
+
+
+    ## Description
+
+    Build and publish a Quartz-hosted Korean web-novel serial (draft→cover→webp→episode md→lint→publish). Uses Nano Banana
+    Pro + ffmpeg.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check_deps.sh
+
+    - scripts/lint_episode.py
+
+    - scripts/new_episode.py
+
+    - scripts/prepublish_check.py
+
+    - scripts/publish_episode.py
+
+    - scripts/publish_review_ok.sh
+
+    - scripts/sync_index.py
+
+    - scripts/to_webp.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install webnovel-serial-pipeline
+
+    ```'
+examples:
+- description: Install Webnovel Serial Pipeline from ClawHub
+  usage: clawhub install webnovel-serial-pipeline
+schema_version: '1.0'

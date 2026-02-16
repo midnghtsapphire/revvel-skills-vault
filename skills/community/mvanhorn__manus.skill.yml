@@ -1,0 +1,57 @@
+name: manus
+title: OpenClaw Manus
+version: 1.0.7
+description: Create and manage AI agent tasks via Manus API. Manus is an autonomous AI agent that can browse the web, use
+  tools, and deliver complete work products.
+metadata:
+  author: mvanhorn
+  category: Search & Research
+  tags:
+  - search-research
+  - manus
+  source: clawhub-community
+  clawhub_slug: manus
+  clawhub_path: mvanhorn/manus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Manus
+
+    # Source: ClawHub community skill by mvanhorn
+
+    # Install: clawhub install manus
+
+    # Path: mvanhorn/manus
+
+
+    ## Description
+
+    Create and manage AI agent tasks via Manus API. Manus is an autonomous AI agent that can browse the web, use tools, and
+    deliver complete work products.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/manus.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install manus
+
+    ```'
+examples:
+- description: Install OpenClaw Manus from ClawHub
+  usage: clawhub install manus
+schema_version: '1.0'

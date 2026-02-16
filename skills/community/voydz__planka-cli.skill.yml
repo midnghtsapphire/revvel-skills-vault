@@ -1,0 +1,53 @@
+name: planka
+title: Planka
+version: 0.1.1
+description: Manage Planka (Kanban) projects, boards, lists, cards, and notifications via a custom Python CLI.
+metadata:
+  author: voydz
+  category: Communication
+  tags:
+  - communication
+  - planka
+  source: clawhub-community
+  clawhub_slug: planka-cli
+  clawhub_path: voydz/planka-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Planka
+
+    # Source: ClawHub community skill by voydz
+
+    # Install: clawhub install planka-cli
+
+    # Path: voydz/planka-cli
+
+
+    ## Description
+
+    Manage Planka (Kanban) projects, boards, lists, cards, and notifications via a custom Python CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install planka-cli
+
+    ```'
+examples:
+- description: Install Planka from ClawHub
+  usage: clawhub install planka-cli
+schema_version: '1.0'

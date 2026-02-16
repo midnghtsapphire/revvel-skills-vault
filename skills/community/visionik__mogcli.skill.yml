@@ -1,0 +1,70 @@
+name: mog
+title: Mog
+version: 0.3.1
+description: Microsoft Ops Gadget — CLI for Microsoft 365 (Mail, Calendar, Drive, Contacts, Tasks, Word, PowerPoint, Excel,
+  OneNote).
+metadata:
+  author: visionik
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - mog
+  source: clawhub-community
+  clawhub_slug: mogcli
+  clawhub_path: visionik/mogcli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mog
+
+    # Source: ClawHub community skill by visionik
+
+    # Install: clawhub install mogcli
+
+    # Path: visionik/mogcli
+
+
+    ## Description
+
+    Microsoft Ops Gadget — CLI for Microsoft 365 (Mail, Calendar, Drive, Contacts, Tasks, Word, PowerPoint, Excel, OneNote).
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - Taskfile.yml
+
+    - _meta.json
+
+    - cmd/mog/main.go
+
+    - internal/cli/ai_help.go
+
+    - internal/cli/auth.go
+
+    - internal/cli/auth_test.go
+
+    - internal/cli/calendar.go
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mogcli
+
+    ```'
+examples:
+- description: Install Mog from ClawHub
+  usage: clawhub install mogcli
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: food-order
+title: Food Order
+version: 1.0.0
+description: 'Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers:
+  order food, reorder, track ETA.'
+metadata:
+  author: steipete
+  category: General
+  tags:
+  - general
+  - food
+  - order
+  source: clawhub-community
+  clawhub_slug: food-order
+  clawhub_path: steipete/food-order
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Food Order
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install food-order
+
+    # Path: steipete/food-order
+
+
+    ## Description
+
+    Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order
+    food, reorder, track ETA.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install food-order
+
+    ```'
+examples:
+- description: Install Food Order from ClawHub
+  usage: clawhub install food-order
+schema_version: '1.0'

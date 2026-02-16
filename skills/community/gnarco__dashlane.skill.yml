@@ -1,0 +1,53 @@
+name: dashlane
+title: Dashlane
+version: 1.0.0
+description: Access passwords, secure notes, secrets and OTP codes from Dashlane vault.
+metadata:
+  author: gnarco
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - dashlane
+  source: clawhub-community
+  clawhub_slug: dashlane
+  clawhub_path: gnarco/dashlane
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dashlane
+
+    # Source: ClawHub community skill by gnarco
+
+    # Install: clawhub install dashlane
+
+    # Path: gnarco/dashlane
+
+
+    ## Description
+
+    Access passwords, secure notes, secrets and OTP codes from Dashlane vault.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dashlane
+
+    ```'
+examples:
+- description: Install Dashlane from ClawHub
+  usage: clawhub install dashlane
+schema_version: '1.0'

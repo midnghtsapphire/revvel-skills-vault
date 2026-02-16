@@ -1,0 +1,58 @@
+name: app-builder
+title: App Builder
+version: 1.0.0
+description: Build, edit, and deploy Instant-backed apps using npx instant-cli, create-instant-app (Next.js + Codex), GitHub
+  (gh), and Vercel (vercel). Use when asked to create a new app, modify an existing app, fix bugs, add features, or deploy/update
+  an app. Projects live under ~/apps; always work inside the r
+metadata:
+  author: stopachka
+  category: Development & Coding
+  tags:
+  - development-coding
+  - app
+  - builder
+  source: clawhub-community
+  clawhub_slug: app-builder
+  clawhub_path: stopachka/app-builder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# App Builder
+
+    # Source: ClawHub community skill by stopachka
+
+    # Install: clawhub install app-builder
+
+    # Path: stopachka/app-builder
+
+
+    ## Description
+
+    Build, edit, and deploy Instant-backed apps using npx instant-cli, create-instant-app (Next.js + Codex), GitHub (gh),
+    and Vercel (vercel). Use when asked to create a new app, modify an existing app, fix bugs, add features, or deploy/update
+    an app. Projects live under ~/apps; always work inside the r
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install app-builder
+
+    ```'
+examples:
+- description: Install App Builder from ClawHub
+  usage: clawhub install app-builder
+schema_version: '1.0'

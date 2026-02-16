@@ -1,0 +1,59 @@
+name: openclaw-security-audit
+title: Openclaw Security Audit
+version: 1.0.0
+description: '"Audit OpenClaw/Clawdbot deployments for misconfigurations and attack vectors. Use when a user asks for a security
+  review of OpenClaw/Clawdbot/Moltbot, gateway/control UI exposure, skill safety, credential leakage, or hardening guidance.
+  Produces a terminal report with OK/VULNERABLE findings and fix'
+metadata:
+  author: misirov
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - security
+  - audit
+  source: clawhub-community
+  clawhub_slug: openclaw-security-audit
+  clawhub_path: misirov/openclaw-security-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Security Audit
+
+    # Source: ClawHub community skill by misirov
+
+    # Install: clawhub install openclaw-security-audit
+
+    # Path: misirov/openclaw-security-audit
+
+
+    ## Description
+
+    "Audit OpenClaw/Clawdbot deployments for misconfigurations and attack vectors. Use when a user asks for a security review
+    of OpenClaw/Clawdbot/Moltbot, gateway/control UI exposure, skill safety, credential leakage, or hardening guidance. Produces
+    a terminal report with OK/VULNERABLE findings and fix
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-security-audit
+
+    ```'
+examples:
+- description: Install Openclaw Security Audit from ClawHub
+  usage: clawhub install openclaw-security-audit
+schema_version: '1.0'

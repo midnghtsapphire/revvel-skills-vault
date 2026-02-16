@@ -1,0 +1,58 @@
+name: yt
+title: Yt
+version: 1.4.1
+description: Quick YouTube utility — fetch transcripts, search videos, get latest from channels. Use when someone shares a
+  YouTube link, asks about a video, or says "yt", "youtube", "check this video", "what's this video about", "find videos about",
+  "latest from".
+metadata:
+  author: therohitdas
+  category: Search & Research
+  tags:
+  - search-research
+  source: clawhub-community
+  clawhub_slug: yt
+  clawhub_path: therohitdas/yt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Yt
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install yt
+
+    # Path: therohitdas/yt
+
+
+    ## Description
+
+    Quick YouTube utility — fetch transcripts, search videos, get latest from channels. Use when someone shares a YouTube
+    link, asks about a video, or says "yt", "youtube", "check this video", "what''s this video about", "find videos about",
+    "latest from".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tapi-auth.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yt
+
+    ```'
+examples:
+- description: Install Yt from ClawHub
+  usage: clawhub install yt
+schema_version: '1.0'

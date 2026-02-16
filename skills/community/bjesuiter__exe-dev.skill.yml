@@ -1,0 +1,58 @@
+name: exe-dev
+title: exe-dev
+version: 1.0.0
+description: Manage persistent VMs on exe.dev. Create VMs, configure HTTP proxies, share access, and set up custom domains.
+  Use when working with exe.dev VMs for hosting, development, or running persistent services.
+metadata:
+  author: bjesuiter
+  category: General
+  tags:
+  - general
+  - exe
+  - dev
+  source: clawhub-community
+  clawhub_slug: exe-dev
+  clawhub_path: bjesuiter/exe-dev
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# exe-dev
+
+    # Source: ClawHub community skill by bjesuiter
+
+    # Install: clawhub install exe-dev
+
+    # Path: bjesuiter/exe-dev
+
+
+    ## Description
+
+    Manage persistent VMs on exe.dev. Create VMs, configure HTTP proxies, share access, and set up custom domains. Use when
+    working with exe.dev VMs for hosting, development, or running persistent services.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/exe-dev-vm-service.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install exe-dev
+
+    ```'
+examples:
+- description: Install exe-dev from ClawHub
+  usage: clawhub install exe-dev
+schema_version: '1.0'

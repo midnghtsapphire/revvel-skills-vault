@@ -1,0 +1,60 @@
+name: md2pdf-converter
+title: Markdown to PDF Converter
+version: 1.0.0
+description: Offline Markdown to PDF converter with full Unicode support using Pandoc + WeasyPrint + local emoji cache. Converts
+  Markdown documents to professional PDFs with Chinese fonts and colorful emojis. Use when user needs to convert Markdown
+  reports or documents to PDF, generate PDFs with emoji support, c
+metadata:
+  author: tianxingleo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - md2pdf
+  - converter
+  source: clawhub-community
+  clawhub_slug: md2pdf-converter
+  clawhub_path: tianxingleo/md2pdf-converter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Markdown to PDF Converter
+
+    # Source: ClawHub community skill by tianxingleo
+
+    # Install: clawhub install md2pdf-converter
+
+    # Path: tianxingleo/md2pdf-converter
+
+
+    ## Description
+
+    Offline Markdown to PDF converter with full Unicode support using Pandoc + WeasyPrint + local emoji cache. Converts Markdown
+    documents to professional PDFs with Chinese fonts and colorful emojis. Use when user needs to convert Markdown reports
+    or documents to PDF, generate PDFs with emoji support, c
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/md2pdf-local.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install md2pdf-converter
+
+    ```'
+examples:
+- description: Install Markdown to PDF Converter from ClawHub
+  usage: clawhub install md2pdf-converter
+schema_version: '1.0'

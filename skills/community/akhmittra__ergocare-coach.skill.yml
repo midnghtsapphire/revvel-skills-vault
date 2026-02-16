@@ -1,0 +1,60 @@
+name: ergocare-coach
+title: ErgoCare Coach
+version: 1.0.0
+description: Your personal desk health coach with automated break reminders. Generates platform-specific scripts (bash/PowerShell)
+  for 20-20-20 eye care, lower back exercises, and RSI prevention. Comprehensive exercise routines, ergonomic guidance, and
+  customizable notification systems for computer professionals
+metadata:
+  author: akhmittra
+  category: Communication
+  tags:
+  - communication
+  - ergocare
+  - coach
+  source: clawhub-community
+  clawhub_slug: ergocare-coach
+  clawhub_path: akhmittra/ergocare-coach
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ErgoCare Coach
+
+    # Source: ClawHub community skill by akhmittra
+
+    # Install: clawhub install ergocare-coach
+
+    # Path: akhmittra/ergocare-coach
+
+
+    ## Description
+
+    Your personal desk health coach with automated break reminders. Generates platform-specific scripts (bash/PowerShell)
+    for 20-20-20 eye care, lower back exercises, and RSI prevention. Comprehensive exercise routines, ergonomic guidance,
+    and customizable notification systems for computer professionals
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ergocare-coach
+
+    ```'
+examples:
+- description: Install ErgoCare Coach from ClawHub
+  usage: clawhub install ergocare-coach
+schema_version: '1.0'

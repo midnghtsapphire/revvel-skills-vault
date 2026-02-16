@@ -1,0 +1,57 @@
+name: minimal-test-skill
+title: Minimal Test
+version: 1.0.0
+description: Minimal test skill for debugging ClawHub publishing
+metadata:
+  author: mig6671
+  category: Development & Coding
+  tags:
+  - development-coding
+  - minimal
+  - test
+  - skill
+  source: clawhub-community
+  clawhub_slug: minimal-test-skill
+  clawhub_path: mig6671/minimal-test-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Minimal Test
+
+    # Source: ClawHub community skill by mig6671
+
+    # Install: clawhub install minimal-test-skill
+
+    # Path: mig6671/minimal-test-skill
+
+
+    ## Description
+
+    Minimal test skill for debugging ClawHub publishing
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/test.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install minimal-test-skill
+
+    ```'
+examples:
+- description: Install Minimal Test from ClawHub
+  usage: clawhub install minimal-test-skill
+schema_version: '1.0'

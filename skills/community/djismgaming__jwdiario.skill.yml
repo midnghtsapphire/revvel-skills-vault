@@ -1,0 +1,57 @@
+name: jwdiario
+title: Jwdiario
+version: 1.0.1
+description: Buscar y obtener el texto diario de la página oficial de los Testigos de Jehová para la Librería Watchtower en
+  español (wol.jw.org/es/). Utiliza web_fetch para acceder al contenido y extraer el texto del día actual. Use cuando se solicite
+  el texto diario de JW o contenido bíblico diario de fuentes J
+metadata:
+  author: djismgaming
+  category: Development & Coding
+  tags:
+  - development-coding
+  - jwdiario
+  source: clawhub-community
+  clawhub_slug: jwdiario
+  clawhub_path: djismgaming/jwdiario
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jwdiario
+
+    # Source: ClawHub community skill by djismgaming
+
+    # Install: clawhub install jwdiario
+
+    # Path: djismgaming/jwdiario
+
+
+    ## Description
+
+    Buscar y obtener el texto diario de la página oficial de los Testigos de Jehová para la Librería Watchtower en español
+    (wol.jw.org/es/). Utiliza web_fetch para acceder al contenido y extraer el texto del día actual. Use cuando se solicite
+    el texto diario de JW o contenido bíblico diario de fuentes J
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jwdiario
+
+    ```'
+examples:
+- description: Install Jwdiario from ClawHub
+  usage: clawhub install jwdiario
+schema_version: '1.0'

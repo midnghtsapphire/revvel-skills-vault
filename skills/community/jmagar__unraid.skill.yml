@@ -1,0 +1,73 @@
+name: unraid
+title: Unraid
+version: 1.0.1
+description: '"Query and monitor Unraid servers via the GraphQL API. Use when the user asks to ''check Unraid'', ''monitor
+  Unraid'', ''Unraid API'', ''get Unraid status'', ''check disk temperatures'', ''read Unraid logs'', ''list Unraid shares'',
+  ''Unraid array status'', ''Unraid containers'', ''Unraid VMs'', or mentions Unraid syst'
+metadata:
+  author: jmagar
+  category: Development & Coding
+  tags:
+  - development-coding
+  - unraid
+  source: clawhub-community
+  clawhub_slug: unraid
+  clawhub_path: jmagar/unraid
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Unraid
+
+    # Source: ClawHub community skill by jmagar
+
+    # Install: clawhub install unraid
+
+    # Path: jmagar/unraid
+
+
+    ## Description
+
+    "Query and monitor Unraid servers via the GraphQL API. Use when the user asks to ''check Unraid'', ''monitor Unraid'',
+    ''Unraid API'', ''get Unraid status'', ''check disk temperatures'', ''read Unraid logs'', ''list Unraid shares'', ''Unraid
+    array status'', ''Unraid containers'', ''Unraid VMs'', or mentions Unraid syst
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/disk-health.sh
+
+    - examples/read-logs.sh
+
+    - references/api-reference.md
+
+    - references/endpoints.md
+
+    - references/quick-reference.md
+
+    - references/troubleshooting.md
+
+    - scripts/dashboard.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unraid
+
+    ```'
+examples:
+- description: Install Unraid from ClawHub
+  usage: clawhub install unraid
+schema_version: '1.0'

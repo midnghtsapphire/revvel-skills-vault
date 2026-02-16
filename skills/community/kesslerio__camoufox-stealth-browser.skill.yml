@@ -1,0 +1,73 @@
+name: camoufox-stealth-browser
+title: Camoufox Stealth Browser
+version: 1.0.0
+description: C++ level anti-bot browser automation using Camoufox (patched Firefox) in isolated containers. Bypasses Cloudflare
+  Turnstile, Datadome, Airbnb, Yelp. Superior to Chrome-based solutions (undetected-chromedriver, puppeteer-stealth) which
+  only patch at JS level. Use when standard Playwright/Selenium ge
+metadata:
+  author: kesslerio
+  category: Search & Research
+  tags:
+  - search-research
+  - camoufox
+  - stealth
+  - browser
+  source: clawhub-community
+  clawhub_slug: camoufox-stealth-browser
+  clawhub_path: kesslerio/camoufox-stealth-browser
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Camoufox Stealth Browser
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install camoufox-stealth-browser
+
+    # Path: kesslerio/camoufox-stealth-browser
+
+
+    ## Description
+
+    C++ level anti-bot browser automation using Camoufox (patched Firefox) in isolated containers. Bypasses Cloudflare Turnstile,
+    Datadome, Airbnb, Yelp. Superior to Chrome-based solutions (undetected-chromedriver, puppeteer-stealth) which only patch
+    at JS level. Use when standard Playwright/Selenium ge
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/fingerprint-checks.md
+
+    - references/proxy-setup.md
+
+    - scripts/camoufox-fetch.py
+
+    - scripts/camoufox-session.py
+
+    - scripts/curl-api.py
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install camoufox-stealth-browser
+
+    ```'
+examples:
+- description: Install Camoufox Stealth Browser from ClawHub
+  usage: clawhub install camoufox-stealth-browser
+schema_version: '1.0'

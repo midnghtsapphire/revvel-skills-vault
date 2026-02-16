@@ -1,0 +1,55 @@
+name: dexcom
+title: Dexcom CGM
+version: 1.0.4
+description: Monitor blood glucose via Dexcom G7/G6 CGM
+metadata:
+  author: chris-clem
+  category: System & OS
+  tags:
+  - system-os
+  - dexcom
+  source: clawhub-community
+  clawhub_slug: dexcom
+  clawhub_path: chris-clem/dexcom
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dexcom CGM
+
+    # Source: ClawHub community skill by chris-clem
+
+    # Install: clawhub install dexcom
+
+    # Path: chris-clem/dexcom
+
+
+    ## Description
+
+    Monitor blood glucose via Dexcom G7/G6 CGM
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/glucose.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dexcom
+
+    ```'
+examples:
+- description: Install Dexcom CGM from ClawHub
+  usage: clawhub install dexcom
+schema_version: '1.0'

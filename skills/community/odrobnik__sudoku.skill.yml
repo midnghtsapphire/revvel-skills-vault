@@ -1,0 +1,69 @@
+name: sudoku
+title: Sudoku
+version: 1.2.7
+description: Fetch Sudoku puzzles and store them as JSON in the workspace; render images on demand; reveal solutions later.
+metadata:
+  author: odrobnik
+  category: Media & Content
+  tags:
+  - media-content
+  - sudoku
+  source: clawhub-community
+  clawhub_slug: sudoku
+  clawhub_path: odrobnik/sudoku
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sudoku
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install sudoku
+
+    # Path: odrobnik/sudoku
+
+
+    ## Description
+
+    Fetch Sudoku puzzles and store them as JSON in the workspace; render images on demand; reveal solutions later.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/DATA_FORMAT.md
+
+    - scripts/encode_lz.js
+
+    - scripts/encode_native.js
+
+    - scripts/lz-string-custom.js
+
+    - scripts/lz-string.js
+
+    - scripts/sudoku.py
+
+    - scripts/sudoku_fetcher.py
+
+    - scripts/sudoku_print_render.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sudoku
+
+    ```'
+examples:
+- description: Install Sudoku from ClawHub
+  usage: clawhub install sudoku
+schema_version: '1.0'

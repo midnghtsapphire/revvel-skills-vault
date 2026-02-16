@@ -1,0 +1,56 @@
+name: drawing-analyzer
+title: Drawing Analyzer
+version: 1.0.0
+description: '"Analyze construction drawings to extract dimensions, annotations, symbols, and metadata. Support quantity takeoff
+  and design review automation."'
+metadata:
+  author: datadrivenconstruction
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - drawing
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: drawing-analyzer
+  clawhub_path: datadrivenconstruction/drawing-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Drawing Analyzer
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install drawing-analyzer
+
+    # Path: datadrivenconstruction/drawing-analyzer
+
+
+    ## Description
+
+    "Analyze construction drawings to extract dimensions, annotations, symbols, and metadata. Support quantity takeoff and
+    design review automation."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install drawing-analyzer
+
+    ```'
+examples:
+- description: Install Drawing Analyzer from ClawHub
+  usage: clawhub install drawing-analyzer
+schema_version: '1.0'

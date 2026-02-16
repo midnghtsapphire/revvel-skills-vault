@@ -1,0 +1,55 @@
+name: meeting-minutes-generator
+title: Meeting Minutes Generator
+version: 1.0.0
+description: '"Generate structured construction meeting minutes. Track action items, decisions, and attendees."'
+metadata:
+  author: datadrivenconstruction
+  category: General
+  tags:
+  - general
+  - meeting
+  - minutes
+  - generator
+  source: clawhub-community
+  clawhub_slug: meeting-minutes-generator
+  clawhub_path: datadrivenconstruction/meeting-minutes-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meeting Minutes Generator
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install meeting-minutes-generator
+
+    # Path: datadrivenconstruction/meeting-minutes-generator
+
+
+    ## Description
+
+    "Generate structured construction meeting minutes. Track action items, decisions, and attendees."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meeting-minutes-generator
+
+    ```'
+examples:
+- description: Install Meeting Minutes Generator from ClawHub
+  usage: clawhub install meeting-minutes-generator
+schema_version: '1.0'

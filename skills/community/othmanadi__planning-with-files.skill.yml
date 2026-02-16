@@ -1,0 +1,75 @@
+name: planning-with-files
+title: Planning with files
+version: 1.2.0
+description: Implements Manus-style file-based planning for complex tasks. Creates task_plan.md, findings.md, and progress.md.
+  Use when starting complex multi-step tasks, research projects, or any task requiring >5 tool calls. Now with automatic session
+  recovery after /clear.
+metadata:
+  author: othmanadi
+  category: Search & Research
+  tags:
+  - search-research
+  - planning
+  - with
+  - files
+  source: clawhub-community
+  clawhub_slug: planning-with-files
+  clawhub_path: othmanadi/planning-with-files
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Planning with files
+
+    # Source: ClawHub community skill by othmanadi
+
+    # Install: clawhub install planning-with-files
+
+    # Path: othmanadi/planning-with-files
+
+
+    ## Description
+
+    Implements Manus-style file-based planning for complex tasks. Creates task_plan.md, findings.md, and progress.md. Use
+    when starting complex multi-step tasks, research projects, or any task requiring >5 tool calls. Now with automatic session
+    recovery after /clear.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/examples.md
+
+    - references/reference.md
+
+    - scripts/check-complete.sh
+
+    - scripts/init-session.sh
+
+    - scripts/session-catchup.py
+
+    - templates/findings.md
+
+    - templates/progress.md
+
+    - templates/task_plan.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install planning-with-files
+
+    ```'
+examples:
+- description: Install Planning with files from ClawHub
+  usage: clawhub install planning-with-files
+schema_version: '1.0'

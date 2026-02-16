@@ -1,0 +1,482 @@
+name: fullstack_app_developer
+title: Expert Full-Stack App Developer — Soup to Nuts
+version: 1.0.0
+description: Complete full-stack application development from zero to production deployment. Covers UI/UX design with glassmorphism
+  and neurodivergent-friendly patterns, React/TypeScript frontend, Express/tRPC backend, PostgreSQL, authentication, payments,
+  mobile apps, testing, deployment, and green engineering practices.
+metadata:
+  author: Revvel AI Engine
+  category: General
+  tags:
+  - postgresql-database
+  - app
+  - express-trpc-backend
+  - stripe-payments
+  - fullstack
+  - neurodivergent-friendly-ui
+  - developer
+  - no-blue-light-mode
+  - wcag-aaa-accessibility
+  - react-typescript-frontend
+  - glassmorphism-design-system
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import os\nimport json\nimport re\nimport shutil\nimport subprocess\nimport hashlib\nimport datetime\nfrom typing\
+    \ import Dict, List, Any, Optional, Tuple\nfrom pathlib import Path\nimport requests\nimport zipfile\nimport tempfile\n\
+    import unittest\nfrom collections import defaultdict\nimport uuid\n\nSKILL_METADATA = {\n    \"name\": \"Expert Full-Stack\
+    \ App Developer — Soup to Nuts\",\n    \"id\": \"fullstack_app_developer\",\n    \"version\": \"1.0.0\",\n    \"author\"\
+    : \"Revvel AI Engine\",\n    \"description\": \"Complete full-stack application development from zero to production deployment.\
+    \ Covers UI/UX design with glassmorphism and neurodivergent-friendly patterns, React/TypeScript frontend, Express/tRPC\
+    \ backend, PostgreSQL, authentication, payments, mobile apps, testing, deployment, and green engineering practices.\"\
+    ,\n    \"capabilities\": [\n        \"glassmorphism_design_system\",\n        \"neurodivergent_friendly_ui\",\n      \
+    \  \"no_blue_light_mode\",\n        \"wcag_aaa_accessibility\",\n        \"react_typescript_frontend\",\n        \"express_trpc_backend\"\
+    ,\n        \"postgresql_database\",\n        \"stripe_payments\",\n        \"oauth_authentication\",\n        \"mobile_react_native\"\
+    ,\n        \"docker_deployment\",\n        \"ci_cd_pipeline\",\n        \"testing_suite\",\n        \"seo_optimization\"\
+    ,\n        \"green_engineering\",\n        \"project_scaffolding\",\n        \"code_generation\",\n        \"deployment_automation\"\
+    \n    ],\n    \"domain\": \"full_stack_application_development\"\n}\n\nEXPERT_PROMPTS = {\n    \"generate_complete_app\"\
+    : \"\"\"\nCreate a complete full-stack application called \"{app_name}\" with the following requirements:\n- Purpose:\
+    \ {purpose}\n- Target audience: {target_audience}\n- Core features: {core_features}\n- Monetization model: {monetization}\n\
+    - Platforms: {platforms}\n- Special requirements: {special_requirements}\n\nInclude glassmorphism UI design, neurodivergent-friendly\
+    \ features, and full production deployment setup.\n\"\"\",\n    \n    \"design_glassmorphism_system\": \"\"\"\nDesign\
+    \ a comprehensive glassmorphism design system for {project_name} with:\n- Primary color palette: {primary_colors}\n- Transparency\
+    \ levels: {transparency_levels}\n- Blur effects: {blur_intensity}\n- Border styles: {border_styles}\n- Include dark/light/warm\
+    \ modes\n- Typography scale for {font_family}\n- Spacing system based on {base_unit}\n\"\"\",\n    \n    \"create_neurodivergent_ui\"\
+    : \"\"\"\nImplement neurodivergent-friendly UI features for {app_name} including:\n- ADHD-optimized layouts with {layout_preferences}\n\
+    - Focus mode implementation\n- Reduced animation toggle\n- High contrast options\n- Progress indicators for {task_types}\n\
+    - Chunked content display\n- Customizable layouts\n\"\"\",\n    \n    \"setup_react_frontend\": \"\"\"\nInitialize React\
+    \ + TypeScript + Vite frontend for {project_name} with:\n- Tailwind CSS configuration\n- shadcn/ui component library\n\
+    - State management with {state_management}\n- Routing with {router_type}\n- PWA setup with offline support\n- SEO optimization\n\
+    - Performance optimizations\n\"\"\",\n    \n    \"create_express_backend\": \"\"\"\nSet up Express + tRPC + Drizzle backend\
+    \ for {project_name} with:\n- PostgreSQL schema for {data_models}\n- Authentication system ({auth_methods})\n- Authorization\
+    \ with RBAC\n- Rate limiting and security\n- File upload handling\n- Email system with {email_provider}\n- Background\
+    \ job processing\n\"\"\",\n    \n    \"implement_stripe_integration\": \"\"\"\nImplement complete Stripe integration for\
+    \ {project_name} with:\n- Pricing tiers: {pricing_tiers}\n- Subscription management\n- Usage-based billing for {usage_metrics}\n\
+    - Trial periods: {trial_days} days\n- Promo codes and discounts\n- Customer portal\n- Revenue analytics\n\"\"\",\n   \
+    \ \n    \"setup_mobile_app\": \"\"\"\nCreate React Native/Expo mobile app for {project_name} with:\n- Feature parity with\
+    \ web\n- Push notifications\n- Biometric authentication\n- Deep linking\n- Offline-first architecture\n- App Store deployment\n\
+    - OTA updates\n\"\"\",\n    \n    \"configure_deployment\": \"\"\"\nSet up complete deployment pipeline for {project_name}\
+    \ including:\n- Docker containerization\n- CI/CD with GitHub Actions\n- {deployment_platform} deployment\n- Database migrations\n\
+    - SSL/TLS configuration\n- Monitoring and alerting\n- Environment management\n\"\"\",\n    \n    \"implement_testing_suite\"\
+    : \"\"\"\nCreate comprehensive testing suite for {project_name} with:\n- Unit tests ({test_coverage}% coverage)\n- Integration\
+    \ tests for {integration_points}\n- E2E tests with Playwright\n- Performance testing\n- Accessibility testing\n- Security\
+    \ testing\n- Visual regression tests\n\"\"\",\n    \n    \"optimize_green_engineering\": \"\"\"\nImplement green engineering\
+    \ practices for {project_name} including:\n- Efficient algorithms for {performance_critical_features}\n- Database query\
+    \ optimization\n- Image optimization strategies\n- CDN configuration\n- Carbon footprint monitoring\n- Bundle size optimization\n\
+    - Server-side rendering decisions\n- Caching strategies\n\"\"\",\n    \n    \"create_marketing_site\": \"\"\"\nBuild marketing\
+    \ landing page for {project_name} with:\n- Hero section highlighting {value_proposition}\n- Features section covering\
+    \ {key_features}\n- Pricing page with {pricing_strategy}\n- Testimonials and social proof\n- SEO optimization\n- A/B testing\
+    \ setup\n- Analytics integration\n\"\"\"\n}\n\nINTEGRATION_POINTS = {\n    \"stripe\": {\n        \"type\": \"api\",\n\
+    \        \"endpoint\": \"https://api.stripe.com/v1\",\n        \"description\": \"Payment processing and subscription\
+    \ management\",\n        \"auth_method\": \"Bearer token\",\n        \"documentation_url\": \"https://stripe.com/docs/api\"\
+    \n    },\n    \"postgresql\": {\n        \"type\": \"database\",\n        \"endpoint\": \"postgresql://localhost:5432\"\
+    ,\n        \"description\": \"Primary database for application data\",\n        \"auth_method\": \"Username/password\"\
+    ,\n        \"documentation_url\": \"https://www.postgresql.org/docs/\"\n    },\n    \"resend\": {\n        \"type\": \"\
+    api\",\n        \"endpoint\": \"https://api.resend.com\",\n        \"description\": \"Transactional email service\",\n\
+    \        \"auth_method\": \"Bearer token\",\n        \"documentation_url\": \"https://resend.com/docs\"\n    },\n    \"\
+    sentry\": {\n        \"type\": \"tool\",\n        \"endpoint\": \"https://sentry.io/api\",\n        \"description\": \"\
+    Error tracking and performance monitoring\",\n        \"auth_method\": \"DSN token\",\n        \"documentation_url\":\
+    \ \"https://docs.sentry.io/\"\n    },\n    \"vercel\": {\n        \"type\": \"tool\",\n        \"endpoint\": \"https://api.vercel.com\"\
+    ,\n        \"description\": \"Frontend deployment platform\",\n        \"auth_method\": \"Bearer token\",\n        \"\
+    documentation_url\": \"https://vercel.com/docs/rest-api\"\n    },\n    \"railway\": {\n        \"type\": \"tool\",\n \
+    \       \"endpoint\": \"https://backboard.railway.app/graphql/v2\",\n        \"description\": \"Backend deployment platform\"\
+    ,\n        \"auth_method\": \"Bearer token\",\n        \"documentation_url\": \"https://docs.railway.app/\"\n    },\n\
+    \    \"github\": {\n        \"type\": \"tool\",\n        \"endpoint\": \"https://api.github.com\",\n        \"description\"\
+    : \"Source control and CI/CD\",\n        \"auth_method\": \"Personal access token\",\n        \"documentation_url\": \"\
+    https://docs.github.com/en/rest\"\n    },\n    \"redis\": {\n        \"type\": \"database\",\n        \"endpoint\": \"\
+    redis://localhost:6379\",\n        \"description\": \"Caching and session storage\",\n        \"auth_method\": \"Password\"\
+    ,\n        \"documentation_url\": \"https://redis.io/documentation\"\n    },\n    \"cloudflare_r2\": {\n        \"type\"\
+    : \"api\",\n        \"endpoint\": \"https://api.cloudflare.com/client/v4\",\n        \"description\": \"File storage and\
+    \ CDN\",\n        \"auth_method\": \"API token\",\n        \"documentation_url\": \"https://developers.cloudflare.com/r2/api/\"\
+    \n    },\n    \"expo\": {\n        \"type\": \"tool\",\n        \"endpoint\": \"https://exp.host/--/api/v2\",\n      \
+    \  \"description\": \"React Native app development and deployment\",\n        \"auth_method\": \"Bearer token\",\n   \
+    \     \"documentation_url\": \"https://docs.expo.dev/workflow/expo-cli/\"\n    }\n}\n\nclass FullStackAppDeveloper:\n\
+    \    \"\"\"Expert full-stack application development skill for Revvel platform.\"\"\"\n    \n    def __init__(self, config:\
+    \ Dict[str, Any] = None):\n        self.config = config or {}\n        self.project_name = self.config.get(\"project_name\"\
+    , \"my-app\")\n        self.project_root = Path(self.config.get(\"project_root\", \".\"))\n        \n    def generate_project_structure(self)\
+    \ -> Dict[str, Any]:\n        \"\"\"Generate complete project structure for full-stack application.\"\"\"\n        structure\
+    \ = {\n            \"frontend\": {\n                \"src\": {\n                    \"components\": {},\n            \
+    \        \"pages\": {},\n                    \"hooks\": {},\n                    \"lib\": {},\n                    \"\
+    store\": {},\n                    \"styles\": {},\n                    \"types\": {},\n                    \"utils\":\
+    \ {}\n                },\n                \"public\": {},\n                \"tests\": {}\n            },\n           \
+    \ \"backend\": {\n                \"src\": {\n                    \"routes\": {},\n                    \"services\": {},\n\
+    \                    \"models\": {},\n                    \"middleware\": {},\n                    \"utils\": {},\n  \
+    \                  \"types\": {}\n                },\n                \"tests\": {}\n            },\n            \"mobile\"\
+    : {\n                \"src\": {\n                    \"screens\": {},\n                    \"components\": {},\n     \
+    \               \"services\": {},\n                    \"utils\": {}\n                }\n            },\n            \"\
+    shared\": {\n                \"types\": {},\n                \"utils\": {}\n            },\n            \"infrastructure\"\
+    : {\n                \"docker\": {},\n                \"k8s\": {},\n                \"terraform\": {}\n            },\n\
+    \            \"docs\": {},\n            \"scripts\": {}\n        }\n        \n        # Create directories\n        for\
+    \ main_dir, subdirs in structure.items():\n            self._create_nested_dirs(self.project_root / main_dir, subdirs)\n\
+    \            \n        return structure\n    \n    def _create_nested_dirs(self, base_path: Path, structure: Dict[str,\
+    \ Any]):\n        \"\"\"Recursively create nested directory structure.\"\"\"\n        for name, content in structure.items():\n\
+    \            dir_path = base_path / name\n            dir_path.mkdir(parents=True, exist_ok=True)\n            if isinstance(content,\
+    \ dict) and content:\n                self._create_nested_dirs(dir_path, content)\n    \n    def generate_package_json(self,\
+    \ project_type: str = \"frontend\") -> Dict[str, Any]:\n        \"\"\"Generate package.json for different project types.\"\
+    \"\"\n        base_package = {\n            \"name\": self.project_name,\n            \"version\": \"1.0.0\",\n      \
+    \      \"private\": True,\n            \"scripts\": {}\n        }\n        \n        if project_type == \"frontend\":\n\
+    \            return {\n                **base_package,\n                \"type\": \"module\",\n                \"scripts\"\
+    : {\n                    \"dev\": \"vite\",\n                    \"build\": \"tsc && vite build\",\n                 \
+    \   \"preview\": \"vite preview\",\n                    \"test\": \"vitest\",\n                    \"test:ui\": \"vitest\
+    \ --ui\",\n                    \"lint\": \"eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0\"\
+    ,\n                    \"typecheck\": \"tsc --noEmit\"\n                },\n                \"dependencies\": {\n    \
+    \                \"react\": \"^18.2.0\",\n                    \"react-dom\": \"^18.2.0\",\n                    \"react-router-dom\"\
+    : \"^6.8.0\",\n                    \"zustand\": \"^4.4.0\",\n                    \"tailwindcss\": \"^3.3.0\",\n      \
+    \              \"clsx\": \"^2.0.0\",\n                    \"lucide-react\": \"^0.263.0\"\n                },\n       \
+    \         \"devDependencies\": {\n                    \"@types/react\": \"^18.2.15\",\n                    \"@types/react-dom\"\
+    : \"^18.2.7\",\n                    \"@vitejs/plugin-react\": \"^4.0.3\",\n                    \"autoprefixer\": \"^10.4.14\"\
+    ,\n                    \"postcss\": \"^8.4.24\",\n                    \"typescript\": \"^5.0.2\",\n                  \
+    \  \"vite\": \"^4.4.5\",\n                    \"vitest\": \"^0.34.0\",\n                    \"@testing-library/react\"\
+    : \"^13.4.0\",\n                    \"@testing-library/jest-dom\": \"^5.16.5\"\n                }\n            }\n   \
+    \     elif project_type == \"backend\":\n            return {\n                **base_package,\n                \"type\"\
+    : \"module\",\n                \"scripts\": {\n                    \"dev\": \"tsx watch src/index.ts\",\n            \
+    \        \"build\": \"tsc\",\n                    \"start\": \"node dist/index.js\",\n                    \"db:generate\"\
+    : \"drizzle-kit generate:pg\",\n                    \"db:migrate\": \"tsx src/db/migrate.ts\",\n                    \"\
+    db:studio\": \"drizzle-kit studio\",\n                    \"test\": \"jest\",\n                    \"test:watch\": \"\
+    jest --watch\"\n                },\n                \"dependencies\": {\n                    \"express\": \"^4.18.2\"\
+    ,\n                    \"@trpc/server\": \"^10.38.0\",\n                    \"drizzle-orm\": \"^0.28.0\",\n          \
+    \          \"postgres\": \"^3.3.5\",\n                    \"zod\": \"^3.22.0\",\n                    \"bcryptjs\": \"\
+    ^2.4.3\",\n                    \"jsonwebtoken\": \"^9.0.2\",\n                    \"cors\": \"^2.8.5\",\n            \
+    \        \"helmet\": \"^7.0.0\",\n                    \"express-rate-limit\": \"^6.8.0\",\n                    \"multer\"\
+    : \"^1.4.5-lts.1\",\n                    \"nodemailer\": \"^6.9.0\",\n                    \"redis\": \"^4.6.0\",\n   \
+    \                 \"bullmq\": \"^4.0.0\"\n                },\n                \"devDependencies\": {\n               \
+    \     \"@types/express\": \"^4.17.17\",\n                    \"@types/bcryptjs\": \"^2.4.2\",\n                    \"\
+    @types/jsonwebtoken\": \"^9.0.2\",\n                    \"@types/cors\": \"^2.8.13\",\n                    \"@types/multer\"\
+    : \"^1.4.7\",\n                    \"@types/nodemailer\": \"^6.4.8\",\n                    \"tsx\": \"^3.12.7\",\n   \
+    \                 \"typescript\": \"^5.0.2\",\n                    \"drizzle-kit\": \"^0.19.0\",\n                   \
+    \ \"jest\": \"^29.6.0\",\n                    \"@types/jest\": \"^29.5.0\",\n                    \"ts-jest\": \"^29.1.0\"\
+    \n                }\n            }\n        elif project_type == \"mobile\":\n            return {\n                **base_package,\n\
+    \                \"main\": \"node_modules/expo/AppEntry.js\",\n                \"scripts\": {\n                    \"\
+    start\": \"expo start\",\n                    \"android\": \"expo start --android\",\n                    \"ios\": \"\
+    expo start --ios\",\n                    \"web\": \"expo start --web\",\n                    \"build:android\": \"eas\
+    \ build -p android\",\n                    \"build:ios\": \"eas build -p ios\",\n                    \"submit:android\"\
+    : \"eas submit -p android\",\n                    \"submit:ios\": \"eas submit -p ios\"\n                },\n        \
+    \        \"dependencies\": {\n                    \"expo\": \"~49.0.0\",\n                    \"react\": \"18.2.0\",\n\
+    \                    \"react-native\": \"0.72.0\",\n                    \"expo-status-bar\": \"~1.6.0\",\n           \
+    \         \"expo-notifications\": \"~0.20.0\",\n                    \"expo-secure-store\": \"~12.3.0\",\n            \
+    \        \"expo-local-authentication\": \"~13.4.0\",\n                    \"@react-navigation/native\": \"^6.1.0\",\n\
+    \                    \"@react-navigation/native-stack\": \"^6.9.0\",\n                    \"react-native-screens\": \"\
+    ~3.22.0\",\n                    \"react-native-safe-area-context\": \"4.6.0\",\n                    \"zustand\": \"^4.4.0\"\
+    \n                },\n                \"devDependencies\": {\n                    \"@babel/core\": \"^7.20.0\",\n    \
+    \                \"@types/react\": \"~18.2.0\",\n                    \"@types/react-native\": \"~0.72.0\",\n         \
+    \           \"typescript\": \"^5.1.0\"\n                }\n            }\n        \n        return base_package\n    \n\
+    \    def generate_tailwind_config(self) -> Dict[str, Any]:\n        \"\"\"Generate Tailwind CSS configuration with glassmorphism\
+    \ support.\"\"\"\n        return {\n            \"content\": [\n                \"./index.html\",\n                \"\
+    ./src/**/*.{js,ts,jsx,tsx}\",\n            ],\n            \"darkMode\": \"class\",\n            \"theme\": {\n      \
+    \          \"extend\": {\n                    \"colors\": {\n                        \"glass\": {\n                  \
+    \          \"white\": \"rgba(255, 255, 255, 0.25)\",\n                            \"black\": \"rgba(0, 0, 0, 0.25)\",\n\
+    \                            \"blur\": \"rgba(255, 255, 255, 0.1)\",\n                        },\n                   \
+    \     \"warm\": {\n                            \"50\": \"#fefdf8\",\n                            \"100\": \"#fefbf3\"\
+    ,\n                            \"200\": \"#fdf6e4\",\n                            \"300\": \"#faf0d4\",\n            \
+    \                \"400\": \"#f6e8c0\",\n                            \"500\": \"#f1dfa8\",\n                          \
+    \  \"600\": \"#ebd58e\",\n                            \"700\": \"#e4c973\",\n                            \"800\": \"#dcbc5a\"\
+    ,\n                            \"900\": \"#d4ae42\",\n                        }\n                    },\n            \
+    \        \"backdropBlur\": {\n                        \"xs\": \"2px\",\n                        \"sm\": \"4px\",\n   \
+    \                     \"md\": \"8px\",\n                        \"lg\": \"12px\",\n                        \"xl\": \"\
+    16px\",\n                        \"2xl\": \"24px\",\n                    },\n                    \"animation\": {\n  \
+    \                      \"fade-in\": \"fadeIn 0.5s ease-in-out\",\n                        \"slide-up\": \"slideUp 0.3s\
+    \ ease-out\",\n                        \"pulse-soft\": \"pulseSoft 2s infinite\",\n                    },\n          \
+    \          \"keyframes\": {\n                        \"fadeIn\": {\n                            \"0%\": { \"opacity\"\
+    : \"0\" },\n                            \"100%\": { \"opacity\": \"1\" }\n                        },\n               \
+    \         \"slideUp\": {\n                            \"0%\": { \"transform\": \"translateY(10px)\", \"opacity\": \"0\"\
+    \ },\n                            \"100%\": { \"transform\": \"translateY(0)\", \"opacity\": \"1\" }\n               \
+    \         },\n                        \"pulseSoft\": {\n                            \"0%, 100%\": { \"opacity\": \"1\"\
+    \ },\n                            \"50%\": { \"opacity\": \"0.8\" }\n                        }\n                    }\n\
+    \                }\n            },\n            \"plugins\": []\n        }\n    \n    def generate_database_schema(self,\
+    \ models: List[Dict[str, Any]]) -> str:\n        \"\"\"Generate PostgreSQL schema using Drizzle ORM.\"\"\"\n        schema_content\
+    \ = \"\"\"import { pgTable, serial, varchar, text, timestamp, boolean, integer, decimal, jsonb } from 'drizzle-orm/pg-core';\n\
+    import { relations } from 'drizzle-orm';\n\n\"\"\"\n        \n        for model in models:\n            table_name = model[\"\
+    name\"]\n            fields = model[\"fields\"]\n            \n            schema_content += f\"export const {table_name}\
+    \ = pgTable('{table_name}', {{\\n\"\n            \n            for field in fields:\n                field_type = field[\"\
+    type\"]\n                field_name = field[\"name\"]\n                constraints = field.get(\"constraints\", [])\n\
+    \                \n                schema_content += f\"  {field_name}: {field_type}\"\n                if constraints:\n\
+    \                    schema_content += f\".{'.'.join(constraints)}\"\n                schema_content += \",\\n\"\n   \
+    \         \n            schema_content += \"});\\n\\n\"\n        \n        # Add relations\n        for model in models:\n\
+    \            if \"relations\" in model:\n                table_name = model[\"name\"]\n                schema_content\
+    \ += f\"export const {table_name}Relations = relations({table_name}, ({{\"\n                for relation in model[\"relations\"\
+    ]:\n                    schema_content += f\" {relation},\"\n                schema_content += \"}));\\n\\n\"\n      \
+    \  \n        return schema_content\n    \n    def generate_react_component(self, component_name: str, props: List[str],\
+    \ \n                               style_type: str = \"glassmorphism\") -> str:\n        \"\"\"Generate React component\
+    \ with specified styling.\"\"\"\n        props_str = \", \".join([f\"{prop}: {self._get_ts_type(prop)}\" for prop in props])\n\
+    \        \n        component_content = f\"\"\"import React from 'react';\nimport {{ cn }} from '@/lib/utils';\nimport\
+    \ {{ cva, type VariantProps }} from 'class-variance-authority';\n\nconst {component_name.lower()}Variants = cva(\n  \"\
+    rounded-lg border transition-all duration-200\",\n  {{\n    variants: {{\n      variant: {{\n        default: \"bg-glass-white/50\
+    \ border-white/20 backdrop-blur-md\",\n        warm: \"bg-warm-50/50 border-warm-200/30 backdrop-blur-md\",\n        dark:\
+    \ \"bg-glass-black/50 border-white/10 backdrop-blur-md\",\n      }},\n      size: {{\n        default: \"p-4\",\n    \
+    \    sm: \"p-2\",\n        lg: \"p-6\",\n      }},\n    }},\n    defaultVariants: {{\n      variant: \"default\",\n  \
+    \    size: \"default\",\n    }},\n  }}\n);\n\nexport interface {component_name}Props\n  extends React.HTMLAttributes<HTMLDivElement>,\n\
+    \    VariantProps<typeof {component_name.lower()}Variants> {{\n  {props_str}\n}}\n\nexport const {component_name} = React.forwardRef<HTMLDivElement,\
+    \ {component_name}Props>(\n  ({{ className, variant, size, {\", \".join(props)}, ...props }}, ref) => {{\n    return (\n\
+    \      <div\n        ref={{ref}}\n        className={{cn({component_name.lower()}Variants({{ variant, size }}), className)}}\n\
+    \        {{...props}}\n      >\n        {{/* Component content */}}\n      </div>\n    );\n  }}\n);\n\n{component_name}.displayName\
+    \ = \"{component_name}\";\n\"\"\"\n        \n        return component_content\n    \n    def _get_ts_type(self, prop:\
+    \ str) -> str:\n        \"\"\"Map prop names to TypeScript types.\"\"\"\n        type_map = {\n            \"children\"\
+    : \"React.ReactNode\",\n            \"onClick\": \"() => void\",\n            \"disabled\": \"boolean\",\n           \
+    \ \"loading\": \"boolean\",\n            \"value\": \"string\",\n            \"onChange\": \"(value: string) => void\"\
+    ,\n            \"className\": \"string\"\n        }\n        return type_map.get(prop, \"any\")\n    \n    def generate_docker_compose(self,\
+    \ services: List[str]) -> str:\n        \"\"\"Generate Docker Compose configuration.\"\"\"\n        compose_content =\
+    \ \"\"\"version: '3.8'\n\nservices:\n\"\"\"\n        \n        if \"postgres\" in services:\n            compose_content\
+    \ += \"\"\"\n  postgres:\n    image: postgres:15-alpine\n    environment:\n      POSTGRES_DB: ${DB_NAME}\n      POSTGRES_USER:\
+    \ ${DB_USER}\n      POSTGRES_PASSWORD: ${DB_PASSWORD}\n    ports:\n      - \"5432:5432\"\n    volumes:\n      - postgres_data:/var/lib/postgresql/data\n\
+    \"\"\"\n        \n        if \"redis\" in services:\n            compose_content += \"\"\"\n  redis:\n    image: redis:7-alpine\n\
+    \    ports:\n      - \"6379:6379\"\n    volumes:\n      - redis_data:/data\n\"\"\"\n        \n        if \"backend\" in\
+    \ services:\n            compose_content += \"\"\"\n  backend:\n    build:\n      context: ./backend\n      dockerfile:\
+    \ Dockerfile\n    ports:\n      - \"3001:3001\"\n    environment:\n      - NODE_ENV=production\n      - DATABASE_URL=${DATABASE_URL}\n\
+    \      - REDIS_URL=${REDIS_URL}\n    depends_on:\n      - postgres\n      - redis\n\"\"\"\n        \n        if \"frontend\"\
+    \ in services:\n            compose_content += \"\"\"\n  frontend:\n    build:\n      context: ./frontend\n      dockerfile:\
+    \ Dockerfile\n    ports:\n      - \"3000:3000\"\n    environment:\n      - VITE_API_URL=${VITE_API_URL}\n\"\"\"\n    \
+    \    \n        compose_content += \"\"\"\nvolumes:\n  postgres_data:\n  redis_data:\n\"\"\"\n        \n        return\
+    \ compose_content\n    \n    def generate_github_actions(self, workflows: List[str]) -> str:\n        \"\"\"Generate GitHub\
+    \ Actions CI/CD pipeline.\"\"\"\n        workflow_content = \"\"\"name: CI/CD Pipeline\n\non:\n  push:\n    branches:\
+    \ [main, develop]\n  pull_request:\n    branches: [main]\n\nenv:\n  NODE_VERSION: '18'\n\njobs:\n\"\"\"\n        \n  \
+    \      if \"test\" in workflows:\n            workflow_content += \"\"\"\n  test:\n    runs-on: ubuntu-latest\n    steps:\n\
+    \      - uses: actions/checkout@v4\n      \n      - name: Setup Node.js\n        uses: actions/setup-node@v4\n       \
+    \ with:\n          node-version: ${{ env.NODE_VERSION }}\n          cache: 'npm'\n          \n      - name: Install dependencies\n\
+    \        run: npm ci\n        \n      - name: Run tests\n        run: npm test\n        \n      - name: Run type check\n\
+    \        run: npm run typecheck\n        \n      - name: Run linting\n        run: npm run lint\n\"\"\"\n        \n  \
+    \      if \"deploy\" in workflows:\n            workflow_content += \"\"\"\n  deploy:\n    needs: test\n    runs-on: ubuntu-latest\n\
+    \    if: github.ref == 'refs/heads/main'\n    \n    steps:\n      - uses: actions/checkout@v4\n      \n      - name: Setup\
+    \ Node.js\n        uses: actions/setup-node@v4\n        with:\n          node-version: ${{ env.NODE_VERSION }}\n     \
+    \     \n      - name: Install dependencies\n        run: npm ci\n        \n      - name: Build application\n        run:\
+    \ npm run build\n        \n      - name: Deploy to production\n        run: |\n          echo \"Deploying to production...\"\
+    \n          # Add deployment commands here\n\"\"\"\n        \n        return workflow_content\n    \n    def generate_nginx_config(self,\
+    \ domains: List[str]) -> str:\n        \"\"\"Generate Nginx configuration for production.\"\"\"\n        domain = domains[0]\
+    \ if domains else \"localhost\"\n        \n        return f\"\"\"server {{\n    listen 80;\n    server_name {domain} www.{domain};\n\
+    \    \n    location /.well-known/acme-challenge/ {{\n        root /var/www/certbot;\n    }}\n    \n    return 301 https://$server_name$request_uri;\n\
+    }}\n\nserver {{\n    listen 443 ssl http2;\n    server_name {domain} www.{domain};\n    \n    ssl_certificate /etc/letsencrypt/live/{domain}/fullchain.pem;\n\
+    \    ssl_certificate_key /etc/letsencrypt/live/{domain}/privkey.pem;\n    \n    location / {{\n        proxy_pass http://frontend:3000;\n\
+    \        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For\
+    \ $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto $scheme;\n    }}\n    \n    location /api {{\n\
+    \        proxy_pass http://backend:3001;\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n\
+    \        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto $scheme;\n\
+    \    }}\n    \n    location /trpc {{\n        proxy_pass http://backend:3001;\n        proxy_set_header Host $host;\n\
+    \        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n\
+    \        proxy_set_header X-Forwarded-Proto $scheme;\n    }}\n}}\n\"\"\"\n    \n    def generate_environment_files(self,\
+    \ environment: str) -> Dict[str, str]:\n        \"\"\"Generate environment configuration files.\"\"\"\n        env_configs\
+    \ = {\n            \"development\": {\n                \"frontend\": \"\"\"VITE_API_URL=http://localhost:3001\nVITE_ENV=development\n\
+    VITE_STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_key\n\"\"\",\n                \"backend\": \"\"\"NODE_ENV=development\n\
+    PORT=3001\nDATABASE_URL=postgresql://user:password@localhost:5432/myapp_dev\nREDIS_URL=redis://localhost:6379\nJWT_SECRET=your-jwt-secret\n\
+    STRIPE_SECRET_KEY=sk_test_your_stripe_secret\nRESEND_API_KEY=re_your_resend_key\n\"\"\",\n                \"mobile\":\
+    \ \"\"\"EXPO_PUBLIC_API_URL=http://localhost:3001\nEXPO_PUBLIC_ENV=development\n\"\"\"\n            },\n            \"\
+    production\": {\n                \"frontend\": \"\"\"VITE_API_URL=https://api.yourapp.com\nVITE_ENV=production\nVITE_STRIPE_PUBLISHABLE_KEY=pk_live_your_stripe_key\n\
+    \"\"\",\n                \"backend\": \"\"\"NODE_ENV=production\nPORT=3001\nDATABASE_URL=postgresql://user:password@localhost:5432/myapp_prod\n\
+    REDIS_URL=redis://localhost:6379\nJWT_SECRET=your-production-jwt-secret\nSTRIPE_SECRET_KEY=sk_live_your_stripe_secret\n\
+    RESEND_API_KEY=re_your_resend_key\n\"\"\",\n                \"mobile\": \"\"\"EXPO_PUBLIC_API_URL=https://api.yourapp.com\n\
+    EXPO_PUBLIC_ENV=production\n\"\"\"\n            }\n        }\n        \n        return env_configs.get(environment, env_configs[\"\
+    development\"])\n    \n    def generate_readme(self, project_info: Dict[str, Any]) -> str:\n        \"\"\"Generate comprehensive\
+    \ README.md.\"\"\"\n        return f\"\"\"# {project_info.get('name', self.project_name)}\n\n{project_info.get('description',\
+    \ 'A full-stack application built with modern web technologies.')}\n\n## \U0001F680 Features\n\n- ✨ **Glassmorphism UI\
+    \ Design** - Beautiful frosted glass effects\n- \U0001F9E0 **Neurodivergent-Friendly** - ADHD-optimized interface\n- \U0001F319\
+    \ **No Blue Light Mode** - Warm color temperature options\n- ♿ **WCAG 2.2 AAA Compliant** - Full accessibility support\n\
+    - \U0001F4F1 **Responsive Design** - Mobile, tablet, desktop, and TV support\n- \U0001F512 **Secure Authentication** -\
+    \ OAuth, 2FA, magic links\n- \U0001F4B3 **Stripe Integration** - Subscriptions and payments\n- \U0001F4CA **Analytics\
+    \ Dashboard** - Track user engagement\n- \U0001F9EA **Comprehensive Testing** - Unit, integration, E2E tests\n- \U0001F433\
+    \ **Docker Support** - Containerized deployment\n- \U0001F331 **Green Engineering** - Optimized for minimal carbon footprint\n\
+    \n## \U0001F6E0️ Tech Stack\n\n### Frontend\n- React 18 + TypeScript\n- Vite for build tooling\n- Tailwind CSS for styling\n\
+    - shadcn/ui components\n- Zustand for state management\n- React Hook Form + Zod validation\n- PWA support\n\n### Backend\n\
+    - Express.js + tRPC\n- Drizzle ORM\n- PostgreSQL database\n- Redis caching\n- BullMQ for background jobs\n- Comprehensive\
+    \ security\n\n### Mobile\n- React Native + Expo\n- Feature parity with web\n- Push notifications\n- Biometric authentication\n\
+    - Offline-first architecture\n\n## \U0001F6A6 Quick Start\n\n### Prerequisites\n- Node.js 18+\n- PostgreSQL 15+\n- Redis\
+    \ 7+\n- Stripe account\n\n### Installation\n\n1. **Clone the repository**\n   ```bash\n   git clone <repository-url>\n\
+    \   cd {self.project_name}\n   ```\n\n2. **Install dependencies**\n   ```bash\n   # Frontend\n   cd frontend && npm install\n\
+    \   \n   # Backend\n   cd backend && npm install\n   \n   # Mobile\n   cd mobile && npm install\n   ```\n\n3. **Set up\
+    \ environment variables**\n   ```bash\n   # Copy example env files\n   cp frontend/.env.example frontend/.env\n   cp backend/.env.example\
+    \ backend/.env\n   cp mobile/.env.example mobile/.env\n   \n   # Fill in your actual values\n   ```\n\n4. **Set up the\
+    \ database**\n   ```bash\n   cd backend\n   npm run db:generate\n   npm run db:migrate\n   ```\n\n5. **Start development\
+    \ servers**\n   ```bash\n   # Terminal 1 - Backend\n   cd backend && npm run dev\n   \n   # Terminal 2 - Frontend\n  \
+    \ cd frontend && npm run dev\n   \n   # Terminal 3 - Mobile (optional)\n   cd mobile && npm start\n   ```\n\n## \U0001F9EA\
+    \ Testing\n\n```bash\n# Run all tests\nnpm test\n\n# Run with coverage\nnpm run test:coverage\n\n# Run E2E tests\nnpm\
+    \ run test:e2e\n```\n\n## \U0001F680 Deployment\n\n### Using Docker\n```bash\n# Build and run with Docker Compose\ndocker-compose\
+    \ up --build\n```\n\n### Manual Deployment\nSee [deployment guide](./docs/deployment.md) for detailed instructions.\n\n\
+    ## \U0001F4DA Documentation\n\n- [Frontend Guide](./docs/frontend.md)\n- [Backend API](./docs/api.md)\n- [Mobile Development](./docs/mobile.md)\n\
+    - [Deployment](./docs/deployment.md)\n- [Contributing](./docs/contributing.md)\n\n## \U0001F91D Contributing\n\n1. Fork\
+    \ the repository\n2. Create your feature branch (`git checkout -b feature/amazing-feature`)\n3. Commit your changes (`git\
+    \ commit -m 'Add some amazing feature'`)\n4. Push to the branch (`git push origin feature/amazing-feature`)\n5. Open a\
+    \ Pull Request\n\n## \U0001F4C4 License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE)\
+    \ file for details.\n\"\"\"\n    \n    def generate_accessibility_config(self) -> Dict[str, Any]:\n        \"\"\"Generate\
+    \ accessibility configuration and guidelines.\"\"\"\n        return {\n            \"wcag_level\": \"AAA\",\n        \
+    \    \"color_contrast\": {\n                \"normal\": 7,\n                \"large\": 4.5\n            },\n         \
+    \   \"font_sizes\": {\n                \"minimum\": 16,\n                \"scalable\": True,\n                \"max_scale\"\
+    : 200\n            },\n            \"keyboard_navigation\": True,\n            \"screen_reader_support\": True,\n    \
+    \        \"focus_indicators\": {\n                \"color\": \"#0066cc\",\n                \"width\": \"2px\",\n     \
+    \           \"offset\": \"2px\"\n            },\n            \"reduced_motion\": {\n                \"respects_preference\"\
+    : True,\n                \"animation_duration\": \"0.15s\"\n            },\n            \"dyslexia_friendly\": {\n   \
+    \             \"font\": \"OpenDyslexic\",\n                \"line_height\": 1.5,\n                \"letter_spacing\":\
+    \ \"0.05em\"\n            }\n        }\n    \n    def generate_stripe_webhook_handler(self) -> str:\n        \"\"\"Generate\
+    \ Stripe webhook handler for backend.\"\"\"\n        return \"\"\"import { Router } from 'express';\nimport Stripe from\
+    \ 'stripe';\nimport { db } from '../db';\nimport { users, subscriptions } from '../db/schema';\nimport { eq } from 'drizzle-orm';\n\
+    \nconst router = Router();\nconst stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {\n  apiVersion: '2023-10-16',\n\
+    });\n\nconst endpointSecret = process.env.STRIPE_WEBHOOK_SECRET!;\n\nrouter.post('/webhooks/stripe', async (req, res)\
+    \ => {\n  const sig = req.headers['stripe-signature'] as string;\n  \n  let event: Stripe.Event;\n  \n  try {\n    event\
+    \ = stripe.webhooks.constructEvent(req.body, sig, endpointSecret);\n  } catch (err) {\n    console.log(`Webhook signature\
+    \ verification failed.`, err);\n    return res.status(400).send(`Webhook Error`);\n  }\n\n  switch (event.type) {\n  \
+    \  case 'customer.subscription.created':\n    case 'customer.subscription.updated':\n      const subscription = event.data.object\
+    \ as Stripe.Subscription;\n      \n      await db.update(users)\n        .set({ \n          subscriptionStatus: subscription.status,\n\
+    \          subscriptionId: subscription.id \n        })\n        .where(eq(users.stripeCustomerId, subscription.customer\
+    \ as string));\n      break;\n      \n    case 'customer.subscription.deleted':\n      const deletedSubscription = event.data.object\
+    \ as Stripe.Subscription;\n      \n      await db.update(users)\n        .set({ subscriptionStatus: 'canceled' })\n  \
+    \      .where(eq(users.stripeCustomerId, deletedSubscription.customer as string));\n      break;\n      \n    case 'invoice.payment_succeeded':\n\
+    \      const invoice = event.data.object as Stripe.Invoice;\n      \n      if (invoice.subscription) {\n        await\
+    \ db.insert(subscriptions).values({\n          userId: invoice.customer as string,\n          stripeSubscriptionId: invoice.subscription\
+    \ as string,\n          amount: invoice.amount_paid,\n          status: 'active',\n          periodStart: new Date(invoice.period_start\
+    \ * 1000),\n          periodEnd: new Date(invoice.period_end * 1000),\n        });\n      }\n      break;\n  }\n\n  res.json({\
+    \ received: true });\n});\n\nexport default router;\n\"\"\"\n    \n    def generate_mobile_app_config(self) -> Dict[str,\
+    \ Any]:\n        \"\"\"Generate Expo/React Native configuration.\"\"\"\n        return {\n            \"expo\": {\n  \
+    \              \"name\": self.project_name,\n                \"slug\": self.project_name.lower(),\n                \"\
+    version\": \"1.0.0\",\n                \"orientation\": \"portrait\",\n                \"icon\": \"./assets/icon.png\"\
+    ,\n                \"userInterfaceStyle\": \"automatic\",\n                \"splash\": {\n                    \"image\"\
+    : \"./assets/splash.png\",\n                    \"resizeMode\": \"contain\",\n                    \"backgroundColor\"\
+    : \"#ffffff\"\n                },\n                \"assetBundlePatterns\": [\"**/*\"],\n                \"ios\": {\n\
+    \                    \"supportsTablet\": True,\n                    \"bundleIdentifier\": f\"com.yourcompany.{self.project_name.lower()}\"\
+    \n                },\n                \"android\": {\n                    \"adaptiveIcon\": {\n                      \
+    \  \"foregroundImage\": \"./assets/adaptive-icon.png\",\n                        \"backgroundColor\": \"#ffffff\"\n  \
+    \                  },\n                    \"package\": f\"com.yourcompany.{self.project_name.lower()}\"\n           \
+    \     },\n                \"web\": {\n                    \"favicon\": \"./assets/favicon.png\"\n                },\n\
+    \                \"plugins\": [\n                    \"expo-notifications\",\n                    \"expo-secure-store\"\
+    ,\n                    \"expo-local-authentication\"\n                ],\n                \"extra\": {\n             \
+    \       \"eas\": {\n                        \"projectId\": \"your-project-id\"\n                    }\n              \
+    \  }\n            }\n        }\n    \n    def generate_green_engineering_config(self) -> Dict[str, Any]:\n        \"\"\
+    \"Generate green engineering optimization configuration.\"\"\"\n        return {\n            \"performance_budget\":\
+    \ {\n                \"javascript\": 250000,\n                \"css\": 50000,\n                \"images\": 500000,\n \
+    \               \"total\": 1000000\n            },\n            \"optimization_strategies\": {\n                \"images\"\
+    : {\n                    \"formats\": [\"webp\", \"avif\"],\n                    \"lazy_loading\": True,\n           \
+    \         \"responsive_sizing\": True,\n                    \"compression\": 85\n                },\n                \"\
+    javascript\": {\n                    \"code_splitting\": True,\n                    \"tree_shaking\": True,\n        \
+    \            \"minification\": True,\n                    \"compression\": \"gzip\"\n                },\n            \
+    \    \"css\": {\n                    \"purge_unused\": True,\n                    \"critical_css\": True,\n          \
+    \          \"minification\": True\n                },\n                \"caching\": {\n                    \"static_assets\"\
+    : \"1y\",\n                    \"api_responses\": \"5m\",\n                    \"html\": \"1h\"\n                }\n \
+    \           },\n            \"carbon_monitoring\": {\n                \"track_co2_per_visit\": True,\n               \
+    \ \"hosting_provider\": \"carbon_neutral\",\n                \"cdn_locations\": [\"global\", \"regional\"],\n        \
+    \        \"efficiency_score\": 90\n            }\n        }\n    \n    def create_complete_app(self, app_config: Dict[str,\
+    \ Any]) -> str:\n        \"\"\"Generate complete application from configuration.\"\"\"\n        project_path = self.project_root\
+    \ / app_config[\"name\"]\n        project_path.mkdir(parents=True, exist_ok=True)\n        \n        # Generate project\
+    \ structure\n        self.generate_project_structure()\n        \n        # Create package.json files\n        for project_type\
+    \ in [\"frontend\", \"backend\", \"mobile\"]:\n            package_json = self.generate_package_json(project_type)\n \
+    \           with open(project_path / project_type / \"package.json\", \"w\") as f:\n                json.dump(package_json,\
+    \ f, indent=2)\n        \n        # Create configuration files\n        tailwind_config = self.generate_tailwind_config()\n\
+    \        with open(project_path / \"frontend\" / \"tailwind.config.js\", \"w\") as f:\n            f.write(f\"module.exports\
+    \ = {json.dumps(tailwind_config, indent=2)}\")\n        \n        # Create environment files\n        for env in [\"development\"\
+    , \"production\"]:\n            env_files = self.generate_environment_files(env)\n            for project_type, content\
+    \ in env_files.items():\n                env_path = project_path / project_type / f\".env.{env}\"\n                with\
+    \ open(env_path, \"w\") as f:\n                    f.write(content)\n        \n        # Create Docker configuration\n\
+    \        docker_compose = self.generate_docker_compose([\"postgres\", \"redis\", \"backend\", \"frontend\"])\n       \
+    \ with open(project_path / \"docker-compose.yml\", \"w\") as f:\n            f.write(docker_compose)\n        \n     \
+    \   # Create GitHub Actions\n        github_workflow = self.generate_github_actions([\"test\", \"deploy\"])\n        actions_dir\
+    \ = project_path / \".github\" / \"workflows\"\n        actions_dir.mkdir(parents=True, exist_ok=True)\n        with open(actions_dir\
+    \ / \"ci.yml\", \"w\") as f:\n            f.write(github_workflow)\n        \n        # Create README\n        readme\
+    \ = self.generate_readme(app_config)\n        with open(project_path / \"README.md\", \"w\") as f:\n            f.write(readme)\n\
+    \        \n        # Create additional configuration files\n        nginx_config = self.generate_nginx_config([f\"{app_config['name']}.com\"\
+    ])\n        with open(project_path / \"infrastructure\" / \"nginx.conf\", \"w\") as f:\n            f.write(nginx_config)\n\
+    \        \n        # Create database schema\n        sample_models = [\n            {\n                \"name\": \"users\"\
+    ,\n                \"fields\": [\n                    {\"name\": \"id\", \"type\": \"serial('id')\", \"constraints\":\
+    \ [\"primaryKey()\"]},\n                    {\"name\": \"email\", \"type\": \"varchar('email', { length: 255 })\", \"\
+    constraints\": [\"unique()\"]},\n                    {\"name\": \"name\", \"type\": \"varchar('name', { length: 255 })\"\
+    },\n                    {\"name\": \"createdAt\", \"type\": \"timestamp('created_at')\", \"constraints\": [\"defaultNow()\"\
+    ]},\n                ]\n            }\n        ]\n        db_schema = self.generate_database_schema(sample_models)\n \
+    \       with open(project_path / \"backend\" / \"src\" / \"db\" / \"schema.ts\", \"w\") as f:\n            f.write(db_schema)\n\
+    \        \n        return str(project_path)\n\nclass SkillEngine:\n    \"\"\"Main skill engine for full-stack app development.\"\
+    \"\"\n    \n    def __init__(self, config: Dict[str, Any] = None):\n        self.config = config or {}\n        self.developer\
+    \ = FullStackAppDeveloper(self.config)\n        \n    def run(self, command: str, params: Dict[str, Any] = None) -> Dict[str,\
+    \ Any]:\n        \"\"\"Execute skill commands.\"\"\"\n        params = params or {}\n        \n        try:\n        \
+    \    if command == \"create_app\":\n                project_path = self.developer.create_complete_app(params)\n      \
+    \          return {\n                    \"success\": True,\n                    \"project_path\": project_path,\n   \
+    \                 \"message\": f\"Successfully created app at {project_path}\"\n                }\n            elif command\
+    \ == \"generate_component\":\n                component = self.developer.generate_react_component(\n                 \
+    \   params.get(\"name\", \"Button\"),\n                    params.get(\"props\", [\"children\", \"onClick\"]),\n     \
+    \               params.get(\"style\", \"glassmorphism\")\n                )\n                return {\n              \
+    \      \"success\": True,\n                    \"component\": component\n                }\n            elif command ==\
+    \ \"generate_schema\":\n                schema = self.developer.generate_database_schema(params.get(\"models\", []))\n\
+    \                return {\n                    \"success\": True,\n                    \"schema\": schema\n          \
+    \      }\n            elif command == \"setup_deployment\":\n                docker_compose = self.developer.generate_docker_compose(\n\
+    \                    params.get(\"services\", [\"postgres\", \"redis\", \"backend\", \"frontend\"])\n                )\n\
+    \                github_workflow = self.developer.generate_github_actions(\n                    params.get(\"workflows\"\
+    , [\"test\", \"deploy\"])\n                )\n                return {\n                    \"success\": True,\n     \
+    \               \"docker_compose\": docker_compose,\n                    \"github_workflow\": github_workflow\n      \
+    \          }\n            else:\n                return {\n                    \"success\": False,\n                 \
+    \   \"error\": f\"Unknown command: {command}\"\n                }\n        except Exception as e:\n            return\
+    \ {\n                \"success\": False,\n                \"error\": str(e)\n            }\n\nclass TestFullStackAppDeveloper(unittest.TestCase):\n\
+    \    \"\"\"Comprehensive test suite for full-stack app developer skill.\"\"\"\n    \n    def setUp(self):\n        self.temp_dir\
+    \ = tempfile.mkdtemp()\n        self.config = {\"project_root\": self.temp_dir, \"project_name\": \"test-app\"}\n    \
+    \    self.developer = FullStackAppDeveloper(self.config)\n        self.engine = SkillEngine(self.config)\n    \n    def\
+    \ tearDown(self):\n        shutil.rmtree(self.temp_dir, ignore_errors=True)\n    \n    def test_skill_metadata(self):\n\
+    \        \"\"\"Test skill metadata structure.\"\"\"\n        self.assertEqual(SKILL_METADATA[\"name\"], \"Expert Full-Stack\
+    \ App Developer — Soup to Nuts\")\n        self.assertIn(\"glassmorphism_design_system\", SKILL_METADATA[\"capabilities\"\
+    ])\n        self.assertIn(\"green_engineering\", SKILL_METADATA[\"capabilities\"])\n    \n    def test_expert_prompts(self):\n\
+    \        \"\"\"Test expert prompts contain required placeholders.\"\"\"\n        self.assertIn(\"{app_name}\", EXPERT_PROMPTS[\"\
+    generate_complete_app\"])\n        self.assertIn(\"{purpose}\", EXPERT_PROMPTS[\"generate_complete_app\"])\n        self.assertIn(\"\
+    {project_name}\", EXPERT_PROMPTS[\"design_glassmorphism_system\"])\n    \n    def test_integration_points(self):\n   \
+    \     \"\"\"Test integration points configuration.\"\"\"\n        self.assertIn(\"stripe\", INTEGRATION_POINTS)\n    \
+    \    self.assertEqual(INTEGRATION_POINTS[\"stripe\"][\"type\"], \"api\")\n        self.assertIn(\"postgresql\", INTEGRATION_POINTS)\n\
+    \        self.assertEqual(INTEGRATION_POINTS[\"postgresql\"][\"type\"], \"database\")\n    \n    def test_project_structure_generation(self):\n\
+    \        \"\"\"Test project structure creation.\"\"\"\n        structure = self.developer.generate_project_structure()\n\
+    \        self.assertIn(\"frontend\", structure)\n        self.assertIn(\"backend\", structure)\n        self.assertIn(\"\
+    mobile\", structure)\n        \n        # Check directories were created\n        self.assertTrue((Path(self.temp_dir)\
+    \ / \"frontend\" / \"src\" / \"components\").exists())\n        self.assertTrue((Path(self.temp_dir) / \"backend\" / \"\
+    src\" / \"routes\").exists())\n    \n    def test_package_json_generation(self):\n        \"\"\"Test package.json generation\
+    \ for different project types.\"\"\"\n        frontend_pkg = self.developer.generate_package_json(\"frontend\")\n    \
+    \    self.assertEqual(frontend_pkg[\"name\"], \"test-app\")\n        self.assertIn(\"react\", frontend_pkg[\"dependencies\"\
+    ])\n        self.assertIn(\"vite\", frontend_pkg[\"devDependencies\"])\n        \n        backend_pkg = self.developer.generate_package_json(\"\
+    backend\")\n        self.assertIn(\"express\", backend_pkg[\"dependencies\"])\n        self.assertIn(\"drizzle-orm\",\
+    \ backend_pkg[\"dependencies\"])\n    \n    def test_tailwind_config_generation(self):\n        \"\"\"Test Tailwind configuration\
+    \ with glassmorphism support.\"\"\"\n        config = self.developer.generate_tailwind_config()\n        self.assertIn(\"\
+    glass\", config[\"theme\"][\"extend\"][\"colors\"])\n        self.assertIn(\"backdropBlur\", config[\"theme\"][\"extend\"\
+    ])\n        self.assertIn(\"warm\", config[\"theme\"][\"extend\"][\"colors\"])\n    \n    def test_database_schema_generation(self):\n\
+    \        \"\"\"Test database schema generation.\"\"\"\n        models = [\n            {\n                \"name\": \"\
+    users\",\n                \"fields\": [\n                    {\"name\": \"id\", \"type\": \"serial('id')\", \"constraints\"\
+    : [\"primaryKey()\"]},\n                    {\"name\": \"email\", \"type\": \"varchar('email', { length: 255 })\", \"\
+    constraints\": [\"unique()\"]}\n                ]\n            }\n        ]\n        schema = self.developer.generate_database_schema(models)\n\
+    \        self.assertIn(\"pgTable('users'\", schema)\n        self.assertIn(\"serial('id')\", schema)\n        self.assertIn(\"\
+    varchar('email'\", schema)\n    \n    def test_react_component_generation(self):\n        \"\"\"Test React component generation.\"\
+    \"\"\n        component = self.developer.generate_react_component(\n            \"GlassCard\", \n            [\"children\"\
+    , \"onClick\", \"disabled\"]\n        )\n        self.assertIn(\"GlassCard\", component)\n        self.assertIn(\"React.forwardRef\"\
+    , component)\n        self.assertIn(\"glassmorphism\", component)\n    \n    def test_docker_compose_generation(self):\n\
+    \        \"\"\"Test Docker Compose configuration.\"\"\"\n        compose = self.developer.generate_docker_compose([\"\
+    postgres\", \"redis\", \"backend\"])\n        self.assertIn(\"postgres:\", compose)\n        self.assertIn(\"redis:\"\
+    , compose)\n        self.assertIn(\"backend:\", compose)\n        self.assertIn(\"image: postgres:15-alpine\", compose)\n\
+    \    \n    def test_github_actions_generation(self):\n        \"\"\"Test GitHub Actions workflow generation.\"\"\"\n \
+    \       workflow = self.developer.generate_github_actions([\"test\", \"deploy\"])\n        self.assertIn(\"CI/CD Pipeline\"\
+    , workflow)\n        self.assertIn(\"runs-on: ubuntu-latest\", workflow)\n        self.assertIn(\"npm test\", workflow)\n\
+    \    \n    def test_nginx_config_generation(self):\n        \"\"\"Test Nginx configuration generation.\"\"\"\n       \
+    \ config = self.developer.generate_nginx_config([\"example.com\"])\n        self.assertIn(\"server_name example.com\"\
+    , config)\n        self.assertIn(\"listen 443 ssl http2\", config)\n        self.assertIn(\"proxy_pass\", config)\n  \
+    \  \n    def test_environment_files_generation(self):\n        \"\"\"Test environment configuration files.\"\"\"\n   \
+    \     dev_env = self.developer.generate_environment_files(\"development\")\n        self.assertIn(\"NODE_ENV=development\"\
+    , dev_env[\"backend\"])\n        self.assertIn(\"VITE_ENV=development\", dev_env[\"frontend\"])\n        \n        prod_env\
+    \ = self.developer.generate_environment_files(\"production\")\n        self.assertIn(\"NODE_ENV=production\", prod_env[\"\
+    backend\"])\n    \n    def test_readme_generation(self):\n        \"\"\"Test README generation.\"\"\"\n        readme\
+    \ = self.developer.generate_readme({\n            \"name\": \"Test App\",\n            \"description\": \"A test application\"\
+    \n        })\n        self.assertIn(\"# Test App\", readme)\n        self.assertIn(\"## \U0001F680 Features\", readme)\n\
+    \        self.assertIn(\"## \U0001F6E0️ Tech Stack\", readme)\n    \n    def test_complete_app_creation(self):\n     \
+    \   \"\"\"Test complete app generation.\"\"\"\n        app_config = {\n            \"name\": \"complete-test-app\",\n\
+    \            \"description\": \"A complete test application\"\n        }\n        project_path = self.developer.create_complete_app(app_config)\n\
+    \        self.assertTrue(Path(project_path).exists())\n        self.assertTrue((Path(project_path) / \"frontend\" / \"\
+    package.json\").exists())\n        self.assertTrue((Path(project_path) / \"backend\" / \"package.json\").exists())\n \
+    \       self.assertTrue((Path(project_path) / \"docker-compose.yml\").exists())\n        self.assertTrue((Path(project_path)\
+    \ / \"README.md\").exists())\n    \n    def test_skill_engine_run(self):\n        \"\"\"Test skill engine command execution.\"\
+    \"\"\n        result = self.engine.run(\"create_app\", {\"name\": \"engine-test\"})\n        self.assertTrue(result[\"\
+    success\"])\n        self.assertIn(\"engine-test\", result[\"project_path\"])\n        \n        result = self.engine.run(\"\
+    generate_component\", {\n            \"name\": \"TestButton\",\n            \"props\": [\"children\"]\n        })\n  \
+    \      self.assertTrue(result[\"success\"])\n        self.assertIn(\"TestButton\", result[\"component\"])\n        \n\
+    \        result = self.engine.run(\"invalid_command\")\n        self.assertFalse(result[\"success\"])\n        self.assertIn(\"\
+    Unknown command\", result[\"error\"])\n    \n    def test_accessibility_config(self):\n        \"\"\"Test accessibility\
+    \ configuration.\"\"\"\n        config = self.developer.generate_accessibility_config()\n        self.assertEqual(config[\"\
+    wcag_level\"], \"AAA\")\n        self.assertEqual(config[\"color_contrast\"][\"normal\"], 7)\n        self.assertTrue(config[\"\
+    keyboard_navigation\"])\n        self.assertTrue(config[\"screen_reader_support\"])\n    \n    def test_green_engineering_config(self):\n\
+    \        \"\"\"Test green engineering configuration.\"\"\"\n        config = self.developer.generate_green_engineering_config()\n\
+    \        self.assertIn(\"performance_budget\", config)\n        self.assertIn(\"optimization_strategies\", config)\n \
+    \       self.assertIn(\"carbon_monitoring\", config)\n        self.assertEqual(config[\"performance_budget\"][\"javascript\"\
+    ], 250000)\n\nif __name__ == \"__main__\":\n    unittest.main()"
+examples:
+- description: Load and use the Expert Full-Stack App Developer — Soup to Nuts skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''fullstack_app_developer'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

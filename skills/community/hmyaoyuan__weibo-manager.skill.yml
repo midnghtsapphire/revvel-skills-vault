@@ -1,0 +1,69 @@
+name: weibo-manager
+title: Weibo Manager
+version: 1.0.2
+description: ''
+metadata:
+  author: hmyaoyuan
+  category: General
+  tags:
+  - general
+  - weibo
+  - manager
+  source: clawhub-community
+  clawhub_slug: weibo-manager
+  clawhub_path: hmyaoyuan/weibo-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Weibo Manager
+
+    # Source: ClawHub community skill by hmyaoyuan
+
+    # Install: clawhub install weibo-manager
+
+    # Path: hmyaoyuan/weibo-manager
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - src/approve_post.js
+
+    - src/delete_latest.js
+
+    - src/delete_post.js
+
+    - src/force_login.js
+
+    - src/generate_beijing_tour.js
+
+    - src/generate_beijing_tour_pixel.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install weibo-manager
+
+    ```'
+examples:
+- description: Install Weibo Manager from ClawHub
+  usage: clawhub install weibo-manager
+schema_version: '1.0'

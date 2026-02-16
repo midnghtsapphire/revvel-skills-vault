@@ -1,0 +1,74 @@
+name: skill-auditor
+title: Skill Auditor
+version: 2.1.3
+description: '"Security scanner that catches malicious skills before they steal your data. Detects credential theft, prompt
+  injection, and hidden backdoors. Works immediately with zero setup. Optional AST dataflow analysis traces how your data
+  moves through code."'
+metadata:
+  author: rubenaquispe
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - auditor
+  source: clawhub-community
+  clawhub_slug: skill-auditor
+  clawhub_path: rubenaquispe/skill-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Auditor
+
+    # Source: ClawHub community skill by rubenaquispe
+
+    # Install: clawhub install skill-auditor
+
+    # Path: rubenaquispe/skill-auditor
+
+
+    ## Description
+
+    "Security scanner that catches malicious skills before they steal your data. Detects credential theft, prompt injection,
+    and hidden backdoors. Works immediately with zero setup. Optional AST dataflow analysis traces how your data moves through
+    code."
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - COMPARISON-AND-IMPROVEMENT-PLAN.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - drafts/clawhub-clean.md
+
+    - drafts/clawhub-listing.md
+
+    - drafts/description-draft.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-auditor
+
+    ```'
+examples:
+- description: Install Skill Auditor from ClawHub
+  usage: clawhub install skill-auditor
+schema_version: '1.0'

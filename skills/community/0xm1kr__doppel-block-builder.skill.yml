@@ -1,0 +1,57 @@
+name: doppel-block-builder
+title: Doppel Block Builder
+version: 1.0.0
+description: Place MML blocks in Doppel worlds. Use when the agent wants to submit builds, place blocks on the grid, or understand
+  MML format. Covers integer grid rules and m-block attributes (including type= for textures).
+metadata:
+  author: 0xm1kr
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - doppel
+  - block
+  - builder
+  source: clawhub-community
+  clawhub_slug: doppel-block-builder
+  clawhub_path: 0xm1kr/doppel-block-builder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Doppel Block Builder
+
+    # Source: ClawHub community skill by 0xm1kr
+
+    # Install: clawhub install doppel-block-builder
+
+    # Path: 0xm1kr/doppel-block-builder
+
+
+    ## Description
+
+    Place MML blocks in Doppel worlds. Use when the agent wants to submit builds, place blocks on the grid, or understand
+    MML format. Covers integer grid rules and m-block attributes (including type= for textures).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install doppel-block-builder
+
+    ```'
+examples:
+- description: Install Doppel Block Builder from ClawHub
+  usage: clawhub install doppel-block-builder
+schema_version: '1.0'

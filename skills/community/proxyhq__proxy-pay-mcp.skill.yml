@@ -1,0 +1,59 @@
+name: proxy-pay-mcp
+title: Proxy Pay Mcp
+version: 1.0.1
+description: Proxy MCP server integration for agent payments. Use MCP tools to create intents, issue cards within policy,
+  and track transactions. Supports agent tokens for autonomous runs and OAuth for interactive clients.
+metadata:
+  author: proxyhq
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - proxy
+  - pay
+  - mcp
+  source: clawhub-community
+  clawhub_slug: proxy-pay-mcp
+  clawhub_path: proxyhq/proxy-pay-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Proxy Pay Mcp
+
+    # Source: ClawHub community skill by proxyhq
+
+    # Install: clawhub install proxy-pay-mcp
+
+    # Path: proxyhq/proxy-pay-mcp
+
+
+    ## Description
+
+    Proxy MCP server integration for agent payments. Use MCP tools to create intents, issue cards within policy, and track
+    transactions. Supports agent tokens for autonomous runs and OAuth for interactive clients.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install proxy-pay-mcp
+
+    ```'
+examples:
+- description: Install Proxy Pay Mcp from ClawHub
+  usage: clawhub install proxy-pay-mcp
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: onboarding-to-agentbeat
+title: Submit to AgentBeat
+version: 1.5.1
+description: Agent wallet private key. Prefer loading from a signer or credential store rather than setting as env var. Required
+  only when signing transactions.
+metadata:
+  author: togodn2
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - onboarding
+  - agentbeat
+  source: clawhub-community
+  clawhub_slug: submit-to-agentbeat
+  clawhub_path: togodn2/submit-to-agentbeat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Submit to AgentBeat
+
+    # Source: ClawHub community skill by togodn2
+
+    # Install: clawhub install submit-to-agentbeat
+
+    # Path: togodn2/submit-to-agentbeat
+
+
+    ## Description
+
+    Agent wallet private key. Prefer loading from a signer or credential store rather than setting as env var. Required only
+    when signing transactions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - reference/agentbeat-submission.md
+
+    - reference/erc8004-registration.md
+
+    - reference/wallet-setup.md
+
+    - reference/x402-integration.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install submit-to-agentbeat
+
+    ```'
+examples:
+- description: Install Submit to AgentBeat from ClawHub
+  usage: clawhub install submit-to-agentbeat
+schema_version: '1.0'

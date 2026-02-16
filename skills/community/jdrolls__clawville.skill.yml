@@ -1,0 +1,60 @@
+name: clawville
+title: ClawVille
+version: 1.0.0
+description: ''
+metadata:
+  author: jdrolls
+  category: General
+  tags:
+  - general
+  - clawville
+  source: clawhub-community
+  clawhub_slug: clawville
+  clawhub_path: jdrolls/clawville
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawVille
+
+    # Source: ClawHub community skill by jdrolls
+
+    # Install: clawhub install clawville
+
+    # Path: jdrolls/clawville
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - scripts/checkin.sh
+
+    - scripts/register.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawville
+
+    ```'
+examples:
+- description: Install ClawVille from ClawHub
+  usage: clawhub install clawville
+schema_version: '1.0'

@@ -1,0 +1,67 @@
+name: wandb
+title: Weights & Biases Monitor
+version: 1.0.0
+description: Monitor and analyze Weights & Biases training runs. Use when checking training status, detecting failures, analyzing
+  loss curves, comparing runs, or monitoring experiments. Triggers on "wandb", "training runs", "how's training", "did my
+  run finish", "any failures", "check experiments", "loss curve",
+metadata:
+  author: chrisvoncsefalvay
+  category: System & OS
+  tags:
+  - system-os
+  - wandb
+  source: clawhub-community
+  clawhub_slug: wandb-monitor
+  clawhub_path: chrisvoncsefalvay/wandb-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Weights & Biases Monitor
+
+    # Source: ClawHub community skill by chrisvoncsefalvay
+
+    # Install: clawhub install wandb-monitor
+
+    # Path: chrisvoncsefalvay/wandb-monitor
+
+
+    ## Description
+
+    Monitor and analyze Weights & Biases training runs. Use when checking training status, detecting failures, analyzing loss
+    curves, comparing runs, or monitoring experiments. Triggers on "wandb", "training runs", "how''s training", "did my run
+    finish", "any failures", "check experiments", "loss curve",
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/characterize_run.py
+
+    - scripts/check_runs.py
+
+    - scripts/compare_runs.py
+
+    - scripts/run_details.py
+
+    - scripts/watch_runs.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wandb-monitor
+
+    ```'
+examples:
+- description: Install Weights & Biases Monitor from ClawHub
+  usage: clawhub install wandb-monitor
+schema_version: '1.0'

@@ -1,0 +1,66 @@
+name: jellyfin-control
+title: Jellyfin Control
+version: 1.0.0
+description: Control Jellyfin media server. Search content, resume playback on remote devices (TVs), and manage sessions.
+  Smart "Resume" logic handles finding the next unplayed episode for TV shows.
+metadata:
+  author: titunito
+  category: Search & Research
+  tags:
+  - search-research
+  - jellyfin
+  - control
+  source: clawhub-community
+  clawhub_slug: jellyfin-control
+  clawhub_path: titunito/jellyfin-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jellyfin Control
+
+    # Source: ClawHub community skill by titunito
+
+    # Install: clawhub install jellyfin-control
+
+    # Path: titunito/jellyfin-control
+
+
+    ## Description
+
+    Control Jellyfin media server. Search content, resume playback on remote devices (TVs), and manage sessions. Smart "Resume"
+    logic handles finding the next unplayed episode for TV shows.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.js
+
+    - package-lock.json
+
+    - package.json
+
+    - lib/jellyfin.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jellyfin-control
+
+    ```'
+examples:
+- description: Install Jellyfin Control from ClawHub
+  usage: clawhub install jellyfin-control
+schema_version: '1.0'

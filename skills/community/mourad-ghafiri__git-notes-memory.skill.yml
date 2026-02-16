@@ -1,0 +1,63 @@
+name: git-notes-memory
+title: Git-Based Knowledge Graph Memory System for Claude Code
+version: 1.0.0
+description: Git-Notes-Based knowledge graph memory system. Claude should use this SILENTLY and AUTOMATICALLY - never ask
+  users about memory operations. Branch-aware persistent memory using git notes. Handles context, decisions, tasks, and learnings
+  across sessions.
+metadata:
+  author: mourad-ghafiri
+  category: Development & Coding
+  tags:
+  - development-coding
+  - git
+  - notes
+  - memory
+  source: clawhub-community
+  clawhub_slug: git-notes-memory
+  clawhub_path: mourad-ghafiri/git-notes-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git-Based Knowledge Graph Memory System for Claude Code
+
+    # Source: ClawHub community skill by mourad-ghafiri
+
+    # Install: clawhub install git-notes-memory
+
+    # Path: mourad-ghafiri/git-notes-memory
+
+
+    ## Description
+
+    Git-Notes-Based knowledge graph memory system. Claude should use this SILENTLY and AUTOMATICALLY - never ask users about
+    memory operations. Branch-aware persistent memory using git notes. Handles context, decisions, tasks, and learnings across
+    sessions.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - memory.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install git-notes-memory
+
+    ```'
+examples:
+- description: Install Git-Based Knowledge Graph Memory System for Claude Code from ClawHub
+  usage: clawhub install git-notes-memory
+schema_version: '1.0'

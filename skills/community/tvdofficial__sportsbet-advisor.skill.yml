@@ -1,0 +1,60 @@
+name: sportsbet-advisor
+title: Sportsbet Advisor
+version: 1.0.1
+description: Provide informed opinions and educated guesses on sports bets from Sportsbet. Use when asked to research a specific
+  bet, analyze relevant data (both current and historical), and predict a potential outcome. Always include a disclaimer that
+  the prediction is an educated guess and may be incorrect. **
+metadata:
+  author: tvdofficial
+  category: Search & Research
+  tags:
+  - search-research
+  - sportsbet
+  - advisor
+  source: clawhub-community
+  clawhub_slug: sportsbet-advisor
+  clawhub_path: tvdofficial/sportsbet-advisor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sportsbet Advisor
+
+    # Source: ClawHub community skill by tvdofficial
+
+    # Install: clawhub install sportsbet-advisor
+
+    # Path: tvdofficial/sportsbet-advisor
+
+
+    ## Description
+
+    Provide informed opinions and educated guesses on sports bets from Sportsbet. Use when asked to research a specific bet,
+    analyze relevant data (both current and historical), and predict a potential outcome. Always include a disclaimer that
+    the prediction is an educated guess and may be incorrect. **
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/scrape_sportsbet_upcoming.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sportsbet-advisor
+
+    ```'
+examples:
+- description: Install Sportsbet Advisor from ClawHub
+  usage: clawhub install sportsbet-advisor
+schema_version: '1.0'

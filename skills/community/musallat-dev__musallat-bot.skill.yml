@@ -1,0 +1,55 @@
+name: musallat-bot
+title: Musallat Bot
+version: 1.0.1
+description: ''
+metadata:
+  author: musallat-dev
+  category: General
+  tags:
+  - general
+  - musallat
+  - bot
+  source: clawhub-community
+  clawhub_slug: musallat-bot
+  clawhub_path: musallat-dev/musallat-bot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Musallat Bot
+
+    # Source: ClawHub community skill by musallat-dev
+
+    # Install: clawhub install musallat-bot
+
+    # Path: musallat-dev/musallat-bot
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - _meta.json
+
+    - skill.md
+
+    - skills/musallat_core.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install musallat-bot
+
+    ```'
+examples:
+- description: Install Musallat Bot from ClawHub
+  usage: clawhub install musallat-bot
+schema_version: '1.0'

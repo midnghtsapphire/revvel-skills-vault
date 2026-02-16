@@ -1,0 +1,65 @@
+name: glm-plan-usage
+title: glm-plan-usage
+version: 1.0.1
+description: 查询 GLM 编码套餐使用统计，包括配额、模型使用和 MCP 工具使用情况 | Query GLM coding plan usage statistics, including quota, model usage,
+  and MCP tool usage
+metadata:
+  author: orientluna
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - glm
+  - plan
+  - usage
+  source: clawhub-community
+  clawhub_slug: openclaw-glm-plan-usage
+  clawhub_path: orientluna/openclaw-glm-plan-usage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# glm-plan-usage
+
+    # Source: ClawHub community skill by orientluna
+
+    # Install: clawhub install openclaw-glm-plan-usage
+
+    # Path: orientluna/openclaw-glm-plan-usage
+
+
+    ## Description
+
+    查询 GLM 编码套餐使用统计，包括配额、模型使用和 MCP 工具使用情况 | Query GLM coding plan usage statistics, including quota, model usage, and MCP
+    tool usage
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docs/INSTALLATION.md
+
+    - references/api-endpoints.md
+
+    - scripts/query-usage.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-glm-plan-usage
+
+    ```'
+examples:
+- description: Install glm-plan-usage from ClawHub
+  usage: clawhub install openclaw-glm-plan-usage
+schema_version: '1.0'

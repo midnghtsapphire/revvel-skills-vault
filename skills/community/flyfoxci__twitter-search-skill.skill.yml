@@ -1,0 +1,34 @@
+name: twitter-search
+title: Twitter Search
+version: 0.1.2
+description: 'Advanced Twitter search and social media data analysis. Fetches tweets by keywords using Twitter API, processes
+  up to 1000 results, and generates professional data analysis reports with insights and actionable recommendations. Use when
+  user requests Twitter/X social media search, social media trend '
+metadata:
+  author: flyfoxci
+  category: Search & Research
+  tags:
+  - search-research
+  - twitter
+  - search
+  source: clawhub-community
+  clawhub_slug: twitter-search-skill
+  clawhub_path: flyfoxci/twitter-search-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Twitter Search\n# Source: ClawHub community skill by flyfoxci\n# Install: clawhub install twitter-search-skill\n\
+    # Path: flyfoxci/twitter-search-skill\n\n## Description\nAdvanced Twitter search and social media data analysis. Fetches\
+    \ tweets by keywords using Twitter API, processes up to 1000 results, and generates professional data analysis reports\
+    \ with insights and actionable recommendations. Use when user requests Twitter/X social media search, social media trend\
+    \ \n\n## Files\n- README.md\n- SKILL.md\n- _meta.json\n- references/twitter_api.md\n- scripts/run_search.sh\n- scripts/twitter_search.py\n\
+    \n## Installation\n```bash\nclawhub install twitter-search-skill\n```"
+examples:
+- description: Install Twitter Search from ClawHub
+  usage: clawhub install twitter-search-skill
+schema_version: '1.0'

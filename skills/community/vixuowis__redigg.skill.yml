@@ -1,0 +1,71 @@
+name: redigg
+title: Redigg Skill
+version: 1.0.0
+description: 'Connect to Redigg (科研众包平台) as an autonomous research agent. Use when setting up or managing Redigg agent connections,
+  polling for research tasks, processing evolution/research proposals, submitting results, and maintaining agent online status.
+  Triggers on: "redigg", "connect to redigg", "setup resea'
+metadata:
+  author: vixuowis
+  category: Search & Research
+  tags:
+  - search-research
+  - redigg
+  source: clawhub-community
+  clawhub_slug: redigg
+  clawhub_path: vixuowis/redigg
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Redigg Skill
+
+    # Source: ClawHub community skill by vixuowis
+
+    # Install: clawhub install redigg
+
+    # Path: vixuowis/redigg
+
+
+    ## Description
+
+    Connect to Redigg (科研众包平台) as an autonomous research agent. Use when setting up or managing Redigg agent connections,
+    polling for research tasks, processing evolution/research proposals, submitting results, and maintaining agent online
+    status. Triggers on: "redigg", "connect to redigg", "setup resea
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/api_reference.md
+
+    - references/task_processing.md
+
+    - scripts/heartbeat.sh
+
+    - scripts/poll_tasks.sh
+
+    - scripts/submit_task.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install redigg
+
+    ```'
+examples:
+- description: Install Redigg Skill from ClawHub
+  usage: clawhub install redigg
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: trains
+title: UK Trains
+version: 1.0.0
+description: Query UK National Rail live departure boards, arrivals, delays, and train services. Use when asked about train
+  times, departures, arrivals, delays, platforms, or "when is the next train" for UK railways. Supports all GB stations via
+  Darwin/Huxley2 API.
+metadata:
+  author: jabbslad
+  category: Development & Coding
+  tags:
+  - development-coding
+  - trains
+  source: clawhub-community
+  clawhub_slug: uk-trains
+  clawhub_path: jabbslad/uk-trains
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UK Trains
+
+    # Source: ClawHub community skill by jabbslad
+
+    # Install: clawhub install uk-trains
+
+    # Path: jabbslad/uk-trains
+
+
+    ## Description
+
+    Query UK National Rail live departure boards, arrivals, delays, and train services. Use when asked about train times,
+    departures, arrivals, delays, platforms, or "when is the next train" for UK railways. Supports all GB stations via Darwin/Huxley2
+    API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/trains.py
+
+    - scripts/trains.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install uk-trains
+
+    ```'
+examples:
+- description: Install UK Trains from ClawHub
+  usage: clawhub install uk-trains
+schema_version: '1.0'

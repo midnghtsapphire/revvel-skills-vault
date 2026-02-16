@@ -1,0 +1,57 @@
+name: bim-validation-pipeline
+title: Bim Validation Pipeline
+version: 1.0.0
+description: '"Build automated BIM validation pipelines for IFC/Revit data. Continuous validation against IDS, LOD requirements,
+  COBie, and project-specific BEP standards."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - bim
+  - validation
+  - pipeline
+  source: clawhub-community
+  clawhub_slug: bim-validation-pipeline
+  clawhub_path: datadrivenconstruction/bim-validation-pipeline
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bim Validation Pipeline
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install bim-validation-pipeline
+
+    # Path: datadrivenconstruction/bim-validation-pipeline
+
+
+    ## Description
+
+    "Build automated BIM validation pipelines for IFC/Revit data. Continuous validation against IDS, LOD requirements, COBie,
+    and project-specific BEP standards."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bim-validation-pipeline
+
+    ```'
+examples:
+- description: Install Bim Validation Pipeline from ClawHub
+  usage: clawhub install bim-validation-pipeline
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: addis-assistant
+title: Addis Assistant
+version: 1.0.0
+description: Provides Speech-to-Text (STT) and text Translation using the Addis Assistant API (api.addisassistant.com). Use
+  when the user needs to convert an audio file to text (specifically Amharic), or translate text between languages (e.g.,
+  Amharic to English). Requires 'x-api-key'.
+metadata:
+  author: dagmawibabi
+  category: Media & Content
+  tags:
+  - media-content
+  - addis
+  - assistant
+  source: clawhub-community
+  clawhub_slug: addis-assistant-stt
+  clawhub_path: dagmawibabi/addis-assistant-stt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Addis Assistant
+
+    # Source: ClawHub community skill by dagmawibabi
+
+    # Install: clawhub install addis-assistant-stt
+
+    # Path: dagmawibabi/addis-assistant-stt
+
+
+    ## Description
+
+    Provides Speech-to-Text (STT) and text Translation using the Addis Assistant API (api.addisassistant.com). Use when the
+    user needs to convert an audio file to text (specifically Amharic), or translate text between languages (e.g., Amharic
+    to English). Requires ''x-api-key''.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_spec.md
+
+    - scripts/stt.py
+
+    - scripts/translate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install addis-assistant-stt
+
+    ```'
+examples:
+- description: Install Addis Assistant from ClawHub
+  usage: clawhub install addis-assistant-stt
+schema_version: '1.0'

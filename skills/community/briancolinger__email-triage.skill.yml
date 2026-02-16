@@ -1,0 +1,60 @@
+name: email-triage
+title: Email Triage
+version: 1.0.0
+description: IMAP email scanning and triage with AI classification via a local Ollama LLM. Scans unread emails, categorizes
+  them as urgent, needs-response, informational, or spam, and surfaces important messages for agent consumption. Works standalone
+  with heuristic fallback — Ollama optional but recommended.
+metadata:
+  author: briancolinger
+  category: Communication
+  tags:
+  - communication
+  - email
+  - triage
+  source: clawhub-community
+  clawhub_slug: email-triage
+  clawhub_path: briancolinger/email-triage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Email Triage
+
+    # Source: ClawHub community skill by briancolinger
+
+    # Install: clawhub install email-triage
+
+    # Path: briancolinger/email-triage
+
+
+    ## Description
+
+    IMAP email scanning and triage with AI classification via a local Ollama LLM. Scans unread emails, categorizes them as
+    urgent, needs-response, informational, or spam, and surfaces important messages for agent consumption. Works standalone
+    with heuristic fallback — Ollama optional but recommended.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/email-triage.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install email-triage
+
+    ```'
+examples:
+- description: Install Email Triage from ClawHub
+  usage: clawhub install email-triage
+schema_version: '1.0'

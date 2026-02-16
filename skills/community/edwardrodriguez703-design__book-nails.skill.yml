@@ -1,0 +1,56 @@
+name: book-nails
+title: Book Nails
+version: 1.0.1
+description: Book nails services through Lokuli MCP. Use when user needs to find and book nails. Triggers on requests like
+  "book a nails", "find nails near me", or any nails service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - nails
+  source: clawhub-community
+  clawhub_slug: book-nails
+  clawhub_path: edwardrodriguez703-design/book-nails
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Nails
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-nails
+
+    # Path: edwardrodriguez703-design/book-nails
+
+
+    ## Description
+
+    Book nails services through Lokuli MCP. Use when user needs to find and book nails. Triggers on requests like "book a
+    nails", "find nails near me", or any nails service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-nails
+
+    ```'
+examples:
+- description: Install Book Nails from ClawHub
+  usage: clawhub install book-nails
+schema_version: '1.0'

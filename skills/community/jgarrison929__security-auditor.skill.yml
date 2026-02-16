@@ -1,0 +1,58 @@
+name: security-auditor
+title: Security Auditor
+version: 1.0.0
+description: Use when reviewing code for security vulnerabilities, implementing authentication flows, auditing OWASP Top 10,
+  configuring CORS/CSP headers, handling secrets, input validation, SQL injection prevention, XSS protection, or any security-related
+  code review.
+metadata:
+  author: jgarrison929
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - auditor
+  source: clawhub-community
+  clawhub_slug: security-auditor
+  clawhub_path: jgarrison929/security-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Auditor
+
+    # Source: ClawHub community skill by jgarrison929
+
+    # Install: clawhub install security-auditor
+
+    # Path: jgarrison929/security-auditor
+
+
+    ## Description
+
+    Use when reviewing code for security vulnerabilities, implementing authentication flows, auditing OWASP Top 10, configuring
+    CORS/CSP headers, handling secrets, input validation, SQL injection prevention, XSS protection, or any security-related
+    code review.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-auditor
+
+    ```'
+examples:
+- description: Install Security Auditor from ClawHub
+  usage: clawhub install security-auditor
+schema_version: '1.0'

@@ -1,0 +1,67 @@
+name: agent-self-governance
+title: Agent Self-Governance
+version: 1.0.0
+description: '"Self-governance protocol for autonomous agents: WAL (Write-Ahead Log), VBR (Verify Before Reporting), ADL (Anti-Divergence
+  Limit), and VFM (Value-For-Money). Use when: (1) receiving a user correction — log it before responding, (2) making an important
+  decision or analysis — log it before continuing'
+metadata:
+  author: bowen31337
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - agent
+  - self
+  - governance
+  source: clawhub-community
+  clawhub_slug: agent-self-governance
+  clawhub_path: bowen31337/agent-self-governance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Self-Governance
+
+    # Source: ClawHub community skill by bowen31337
+
+    # Install: clawhub install agent-self-governance
+
+    # Path: bowen31337/agent-self-governance
+
+
+    ## Description
+
+    "Self-governance protocol for autonomous agents: WAL (Write-Ahead Log), VBR (Verify Before Reporting), ADL (Anti-Divergence
+    Limit), and VFM (Value-For-Money). Use when: (1) receiving a user correction — log it before responding, (2) making an
+    important decision or analysis — log it before continuing
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/adl.py
+
+    - scripts/vbr.py
+
+    - scripts/vfm.py
+
+    - scripts/wal.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-self-governance
+
+    ```'
+examples:
+- description: Install Agent Self-Governance from ClawHub
+  usage: clawhub install agent-self-governance
+schema_version: '1.0'

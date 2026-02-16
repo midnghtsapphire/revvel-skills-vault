@@ -1,0 +1,58 @@
+name: youtube-transcript
+title: YouTube Long Video Transcript
+version: 1.0.0
+description: YouTube long video (>1 hour) full verbatim transcription and translation workflow. Use when user needs to (1)
+  Extract subtitles from YouTube videos, (2) Translate English transcripts to Chinese, (3) Handle long videos that exceed
+  session limits, (4) Process DownSub API responses and generate formatt
+metadata:
+  author: qingliu1617-art
+  category: Media & Content
+  tags:
+  - media-content
+  - youtube
+  - transcript
+  source: clawhub-community
+  clawhub_slug: ytb-transcript-long
+  clawhub_path: qingliu1617-art/ytb-transcript-long
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube Long Video Transcript
+
+    # Source: ClawHub community skill by qingliu1617-art
+
+    # Install: clawhub install ytb-transcript-long
+
+    # Path: qingliu1617-art/ytb-transcript-long
+
+
+    ## Description
+
+    YouTube long video (>1 hour) full verbatim transcription and translation workflow. Use when user needs to (1) Extract
+    subtitles from YouTube videos, (2) Translate English transcripts to Chinese, (3) Handle long videos that exceed session
+    limits, (4) Process DownSub API responses and generate formatt
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ytb-transcript-long
+
+    ```'
+examples:
+- description: Install YouTube Long Video Transcript from ClawHub
+  usage: clawhub install ytb-transcript-long
+schema_version: '1.0'

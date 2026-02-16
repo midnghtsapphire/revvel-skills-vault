@@ -1,0 +1,56 @@
+name: valyu-search
+title: Valyu Search
+version: 1.0.0
+description: '"Use Valyu (valyu.ai) to search the web, extract content from web pages, answer with sources, and do deepresearch."'
+metadata:
+  author: unicodeveloper
+  category: Search & Research
+  tags:
+  - search-research
+  - valyu
+  - search
+  source: clawhub-community
+  clawhub_slug: valyu-search
+  clawhub_path: unicodeveloper/valyu-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Valyu Search
+
+    # Source: ClawHub community skill by unicodeveloper
+
+    # Install: clawhub install valyu-search
+
+    # Path: unicodeveloper/valyu-search
+
+
+    ## Description
+
+    "Use Valyu (valyu.ai) to search the web, extract content from web pages, answer with sources, and do deepresearch."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/valyu.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install valyu-search
+
+    ```'
+examples:
+- description: Install Valyu Search from ClawHub
+  usage: clawhub install valyu-search
+schema_version: '1.0'

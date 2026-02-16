@@ -1,0 +1,57 @@
+name: blueclaw1
+title: Some Skill
+version: 1.0.0
+description: Search and discover AI agents via the OpenClaw (8004scan.io) API. Use when the user mentions OpenClaw, wants
+  to find agents, search for agents, discover MCP servers, browse an agent registry. On first use, prompts for an API key
+  and stores it securely.
+metadata:
+  author: victor775
+  category: Search & Research
+  tags:
+  - search-research
+  - blueclaw1
+  source: clawhub-community
+  clawhub_slug: some-skill
+  clawhub_path: victor775/some-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Some Skill
+
+    # Source: ClawHub community skill by victor775
+
+    # Install: clawhub install some-skill
+
+    # Path: victor775/some-skill
+
+
+    ## Description
+
+    Search and discover AI agents via the OpenClaw (8004scan.io) API. Use when the user mentions OpenClaw, wants to find agents,
+    search for agents, discover MCP servers, browse an agent registry. On first use, prompts for an API key and stores it
+    securely.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install some-skill
+
+    ```'
+examples:
+- description: Install Some Skill from ClawHub
+  usage: clawhub install some-skill
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: supermarkt-prijzen
+title: Supermarkt Prijzen
+version: 1.0.1
+description: Albert Heijn bonuses, product search, multi-store price comparison (12 supermarkets), recipe search by ingredients,
+  and fridge scanner with vision AI.
+metadata:
+  author: cgnl
+  category: Search & Research
+  tags:
+  - search-research
+  - supermarkt
+  - prijzen
+  source: clawhub-community
+  clawhub_slug: supermarkt-prijzen
+  clawhub_path: cgnl/supermarkt-prijzen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Supermarkt Prijzen
+
+    # Source: ClawHub community skill by cgnl
+
+    # Install: clawhub install supermarkt-prijzen
+
+    # Path: cgnl/supermarkt-prijzen
+
+
+    ## Description
+
+    Albert Heijn bonuses, product search, multi-store price comparison (12 supermarkets), recipe search by ingredients, and
+    fridge scanner with vision AI.
+
+
+    ## Files
+
+    - GRAPHQL-INVESTIGATION.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - ah-api.py
+
+    - ah-graphql-schema-full.md
+
+    - ah-mobile-auth.py
+
+    - ah-oauth-api.py
+
+    - ah-recipes.py
+
+    - auto-fetch-cookies.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install supermarkt-prijzen
+
+    ```'
+examples:
+- description: Install Supermarkt Prijzen from ClawHub
+  usage: clawhub install supermarkt-prijzen
+schema_version: '1.0'

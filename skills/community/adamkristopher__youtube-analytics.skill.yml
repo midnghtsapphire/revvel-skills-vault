@@ -1,0 +1,74 @@
+name: youtube-analytics
+title: YouTube Analytics
+version: 1.0.0
+description: '"YouTube Data API v3 analytics toolkit. Analyze YouTube channels, videos, and search results. Use when the user
+  asks to: check YouTube channel stats, analyze video performance, compare channels, search for videos, get subscriber counts,
+  view engagement metrics, find trending videos, get channel uplo'
+metadata:
+  author: adamkristopher
+  category: Search & Research
+  tags:
+  - search-research
+  - youtube
+  - analytics
+  source: clawhub-community
+  clawhub_slug: youtube-analytics
+  clawhub_path: adamkristopher/youtube-analytics
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube Analytics
+
+    # Source: ClawHub community skill by adamkristopher
+
+    # Install: clawhub install youtube-analytics
+
+    # Path: adamkristopher/youtube-analytics
+
+
+    ## Description
+
+    "YouTube Data API v3 analytics toolkit. Analyze YouTube channels, videos, and search results. Use when the user asks to:
+    check YouTube channel stats, analyze video performance, compare channels, search for videos, get subscriber counts, view
+    engagement metrics, find trending videos, get channel uplo
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+    - scripts/setup.sh
+
+    - scripts/tsconfig.json
+
+    - scripts/src/index.ts
+
+    - scripts/src/api/channels.ts
+
+    - scripts/src/api/search.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-analytics
+
+    ```'
+examples:
+- description: Install YouTube Analytics from ClawHub
+  usage: clawhub install youtube-analytics
+schema_version: '1.0'

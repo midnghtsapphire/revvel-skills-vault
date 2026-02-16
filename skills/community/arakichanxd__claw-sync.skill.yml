@@ -1,0 +1,70 @@
+name: claw-sync
+title: Claw Sync
+version: 2.0.2
+description: List all available backup versions
+metadata:
+  author: arakichanxd
+  category: General
+  tags:
+  - general
+  - claw
+  - sync
+  source: clawhub-community
+  clawhub_slug: claw-sync
+  clawhub_path: arakichanxd/claw-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claw Sync
+
+    # Source: ClawHub community skill by arakichanxd
+
+    # Install: clawhub install claw-sync
+
+    # Path: arakichanxd/claw-sync
+
+
+    ## Description
+
+    List all available backup versions
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.env
+
+    - index.js
+
+    - package.json
+
+    - claw-sync/.gitignore
+
+    - claw-sync/README.md
+
+    - claw-sync/SKILL.md
+
+    - claw-sync/config.example.env
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-sync
+
+    ```'
+examples:
+- description: Install Claw Sync from ClawHub
+  usage: clawhub install claw-sync
+schema_version: '1.0'

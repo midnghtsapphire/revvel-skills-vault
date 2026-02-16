@@ -1,0 +1,60 @@
+name: telegram-todolist
+title: Telegram Todo List
+version: 1.0.1
+description: 'Telegram bot Todo List manager. Three commands: /todo query (show tasks), /todo organize (add/delete/edit tasks),
+  /todo execute (complete tasks). Uses TODO.md file. Perfect for task tracking in Telegram. Supports statistics, progress
+  tracking, and organized task management.'
+metadata:
+  author: hengbo12345
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - todolist
+  source: clawhub-community
+  clawhub_slug: telegram-todolist
+  clawhub_path: hengbo12345/telegram-todolist
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Todo List
+
+    # Source: ClawHub community skill by hengbo12345
+
+    # Install: clawhub install telegram-todolist
+
+    # Path: hengbo12345/telegram-todolist
+
+
+    ## Description
+
+    Telegram bot Todo List manager. Three commands: /todo query (show tasks), /todo organize (add/delete/edit tasks), /todo
+    execute (complete tasks). Uses TODO.md file. Perfect for task tracking in Telegram. Supports statistics, progress tracking,
+    and organized task management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/todolist.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-todolist
+
+    ```'
+examples:
+- description: Install Telegram Todo List from ClawHub
+  usage: clawhub install telegram-todolist
+schema_version: '1.0'

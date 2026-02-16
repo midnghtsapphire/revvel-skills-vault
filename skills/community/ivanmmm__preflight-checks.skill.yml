@@ -1,0 +1,74 @@
+name: preflight-checks
+title: Preflight Checks
+version: 1.0.0
+description: Test-driven behavioral verification for AI agents. Catches silent degradation when agent loads memory but doesn't
+  apply learned behaviors. Use when building agent with persistent memory, testing after updates, or ensuring behavioral consistency
+  across sessions.
+metadata:
+  author: ivanmmm
+  category: Development & Coding
+  tags:
+  - development-coding
+  - preflight
+  - checks
+  source: clawhub-community
+  clawhub_slug: preflight-checks
+  clawhub_path: ivanmmm/preflight-checks
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Preflight Checks
+
+    # Source: ClawHub community skill by ivanmmm
+
+    # Install: clawhub install preflight-checks
+
+    # Path: ivanmmm/preflight-checks
+
+
+    ## Description
+
+    Test-driven behavioral verification for AI agents. Catches silent degradation when agent loads memory but doesn''t apply
+    learned behaviors. Use when building agent with persistent memory, testing after updates, or ensuring behavioral consistency
+    across sessions.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - examples/ANSWERS-prometheus.md
+
+    - examples/CHECKS-prometheus.md
+
+    - scripts/add-check.sh
+
+    - scripts/init.sh
+
+    - templates/ANSWERS-template.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install preflight-checks
+
+    ```'
+examples:
+- description: Install Preflight Checks from ClawHub
+  usage: clawhub install preflight-checks
+schema_version: '1.0'

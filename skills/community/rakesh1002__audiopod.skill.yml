@@ -1,0 +1,61 @@
+name: audiopod
+title: AudioPod
+version: 1.2.3
+description: Use AudioPod AI's API for audio processing tasks including AI music generation (text-to-music, text-to-rap, instrumentals,
+  samples, vocals), stem separation, text-to-speech, noise reduction, speech-to-text transcription, speaker separation, and
+  media extraction. Use when the user needs to generate m
+metadata:
+  author: rakesh1002
+  category: Media & Content
+  tags:
+  - media-content
+  - audiopod
+  source: clawhub-community
+  clawhub_slug: audiopod
+  clawhub_path: rakesh1002/audiopod
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AudioPod
+
+    # Source: ClawHub community skill by rakesh1002
+
+    # Install: clawhub install audiopod
+
+    # Path: rakesh1002/audiopod
+
+
+    ## Description
+
+    Use AudioPod AI''s API for audio processing tasks including AI music generation (text-to-music, text-to-rap, instrumentals,
+    samples, vocals), stem separation, text-to-speech, noise reduction, speech-to-text transcription, speaker separation,
+    and media extraction. Use when the user needs to generate m
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/stems.md
+
+    - references/tts.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install audiopod
+
+    ```'
+examples:
+- description: Install AudioPod from ClawHub
+  usage: clawhub install audiopod
+schema_version: '1.0'

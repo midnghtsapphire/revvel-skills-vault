@@ -1,0 +1,58 @@
+name: elevenlabs-stt
+title: ElevenLabs Speech-to-Text
+version: 1.0.0
+description: Transcribe audio files using ElevenLabs Speech-to-Text (Scribe v2).
+metadata:
+  author: clawdbotborges
+  category: Media & Content
+  tags:
+  - media-content
+  - elevenlabs
+  - stt
+  source: clawhub-community
+  clawhub_slug: elevenlabs-stt
+  clawhub_path: clawdbotborges/elevenlabs-stt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ElevenLabs Speech-to-Text
+
+    # Source: ClawHub community skill by clawdbotborges
+
+    # Install: clawhub install elevenlabs-stt
+
+    # Path: clawdbotborges/elevenlabs-stt
+
+
+    ## Description
+
+    Transcribe audio files using ElevenLabs Speech-to-Text (Scribe v2).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/transcribe.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install elevenlabs-stt
+
+    ```'
+examples:
+- description: Install ElevenLabs Speech-to-Text from ClawHub
+  usage: clawhub install elevenlabs-stt
+schema_version: '1.0'

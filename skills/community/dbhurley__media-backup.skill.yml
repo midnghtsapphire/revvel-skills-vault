@@ -1,0 +1,58 @@
+name: media-backup
+title: Media Backup
+version: 1.0.0
+description: Archive Clawdbot conversation media (photos, videos) to a local folder. Works with any sync service (Dropbox,
+  iCloud, Google Drive, OneDrive).
+metadata:
+  author: dbhurley
+  category: Search & Research
+  tags:
+  - search-research
+  - media
+  - backup
+  source: clawhub-community
+  clawhub_slug: media-backup
+  clawhub_path: dbhurley/media-backup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Media Backup
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install media-backup
+
+    # Path: dbhurley/media-backup
+
+
+    ## Description
+
+    Archive Clawdbot conversation media (photos, videos) to a local folder. Works with any sync service (Dropbox, iCloud,
+    Google Drive, OneDrive).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/backup.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install media-backup
+
+    ```'
+examples:
+- description: Install Media Backup from ClawHub
+  usage: clawhub install media-backup
+schema_version: '1.0'

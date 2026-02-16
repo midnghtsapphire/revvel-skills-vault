@@ -1,0 +1,69 @@
+name: security-patterns
+title: Security Patterns
+version: 1.0.0
+description: Real-time security pattern detector based on Anthropic's official security-guidance plugin. Use proactively when
+  writing code to detect command injection, XSS, unsafe deserialization, and dynamic code execution risks. Identifies dangerous
+  patterns BEFORE they're committed.
+metadata:
+  author: anton-abyzov
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - patterns
+  - read
+  - grep
+  - glob
+  source: clawhub-community
+  clawhub_slug: sw-security-patterns
+  clawhub_path: anton-abyzov/sw-security-patterns
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Grep
+  - Glob
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Patterns
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-security-patterns
+
+    # Path: anton-abyzov/sw-security-patterns
+
+
+    ## Description
+
+    Real-time security pattern detector based on Anthropic''s official security-guidance plugin. Use proactively when writing
+    code to detect command injection, XSS, unsafe deserialization, and dynamic code execution risks. Identifies dangerous
+    patterns BEFORE they''re committed.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Grep, Glob
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-security-patterns
+
+    ```'
+examples:
+- description: Install Security Patterns from ClawHub
+  usage: clawhub install sw-security-patterns
+schema_version: '1.0'

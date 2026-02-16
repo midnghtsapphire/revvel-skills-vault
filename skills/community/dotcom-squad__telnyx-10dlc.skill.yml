@@ -1,0 +1,68 @@
+name: 10dlc-registration
+title: 10dlc Registration
+version: 1.0.0
+description: Register for 10DLC as a sole proprietor to enable SMS messaging in the USA. Use when setting up A2P SMS, registering
+  brands/campaigns, or assigning phone numbers for compliant US messaging. Requires Telnyx CLI.
+metadata:
+  author: dotcom-squad
+  category: Communication
+  tags:
+  - communication
+  - 10dlc
+  - registration
+  source: clawhub-community
+  clawhub_slug: telnyx-10dlc
+  clawhub_path: dotcom-squad/telnyx-10dlc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 10dlc Registration
+
+    # Source: ClawHub community skill by dotcom-squad
+
+    # Install: clawhub install telnyx-10dlc
+
+    # Path: dotcom-squad/telnyx-10dlc
+
+
+    ## Description
+
+    Register for 10DLC as a sole proprietor to enable SMS messaging in the USA. Use when setting up A2P SMS, registering brands/campaigns,
+    or assigning phone numbers for compliant US messaging. Requires Telnyx CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - setup.sh
+
+    - test.sh
+
+    - scripts/assign.sh
+
+    - scripts/register.sh
+
+    - scripts/status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telnyx-10dlc
+
+    ```'
+examples:
+- description: Install 10dlc Registration from ClawHub
+  usage: clawhub install telnyx-10dlc
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: signet
+title: Signet
+version: 1.0.0
+description: Interact with Signet onchain advertising on Hunt Town. Use when the user wants to check spotlight ad prices,
+  list current ads/signatures, or post a URL to the Signet spotlight. Supports x402 payment protocol for programmatic ad placement
+  by AI agents.
+metadata:
+  author: sebayaki
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - signet
+  source: clawhub-community
+  clawhub_slug: signet
+  clawhub_path: sebayaki/signet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Signet
+
+    # Source: ClawHub community skill by sebayaki
+
+    # Install: clawhub install signet
+
+    # Path: sebayaki/signet
+
+
+    ## Description
+
+    Interact with Signet onchain advertising on Hunt Town. Use when the user wants to check spotlight ad prices, list current
+    ads/signatures, or post a URL to the Signet spotlight. Supports x402 payment protocol for programmatic ad placement by
+    AI agents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install signet
+
+    ```'
+examples:
+- description: Install Signet from ClawHub
+  usage: clawhub install signet
+schema_version: '1.0'

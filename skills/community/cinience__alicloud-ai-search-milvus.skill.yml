@@ -1,0 +1,63 @@
+name: alicloud-ai-search-milvus
+title: Alicloud Ai Search Milvus
+version: 1.0.2
+description: Use AliCloud Milvus (serverless) with PyMilvus to create collections, insert vectors, and run filtered similarity
+  search. Optimized for Claude Code/Codex vector retrieval flows.
+metadata:
+  author: cinience
+  category: Search & Research
+  tags:
+  - search-research
+  - alicloud
+  - search
+  - milvus
+  source: clawhub-community
+  clawhub_slug: alicloud-ai-search-milvus
+  clawhub_path: cinience/alicloud-ai-search-milvus
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Ai Search Milvus
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-ai-search-milvus
+
+    # Path: cinience/alicloud-ai-search-milvus
+
+
+    ## Description
+
+    Use AliCloud Milvus (serverless) with PyMilvus to create collections, insert vectors, and run filtered similarity search.
+    Optimized for Claude Code/Codex vector retrieval flows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+    - scripts/quickstart.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-ai-search-milvus
+
+    ```'
+examples:
+- description: Install Alicloud Ai Search Milvus from ClawHub
+  usage: clawhub install alicloud-ai-search-milvus
+schema_version: '1.0'

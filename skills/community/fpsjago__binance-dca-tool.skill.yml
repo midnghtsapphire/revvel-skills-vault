@@ -1,0 +1,61 @@
+name: binance-dca-tool
+title: Binance Dca Tool
+version: 1.0.0
+description: Binance Dollar-Cost Averaging (DCA) tool for automated and manual recurring crypto purchases. Use when the user
+  wants to plan DCA strategies, execute recurring buys on Binance, check DCA projections, view trade history, or manage a
+  systematic buying schedule for any trading pair (BTC/USDT, ETH/USDT,
+metadata:
+  author: fpsjago
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - binance
+  - dca
+  - tool
+  source: clawhub-community
+  clawhub_slug: binance-dca-tool
+  clawhub_path: fpsjago/binance-dca-tool
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Binance Dca Tool
+
+    # Source: ClawHub community skill by fpsjago
+
+    # Install: clawhub install binance-dca-tool
+
+    # Path: fpsjago/binance-dca-tool
+
+
+    ## Description
+
+    Binance Dollar-Cost Averaging (DCA) tool for automated and manual recurring crypto purchases. Use when the user wants
+    to plan DCA strategies, execute recurring buys on Binance, check DCA projections, view trade history, or manage a systematic
+    buying schedule for any trading pair (BTC/USDT, ETH/USDT,
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/dca.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install binance-dca-tool
+
+    ```'
+examples:
+- description: Install Binance Dca Tool from ClawHub
+  usage: clawhub install binance-dca-tool
+schema_version: '1.0'

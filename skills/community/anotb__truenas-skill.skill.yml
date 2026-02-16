@@ -1,0 +1,70 @@
+name: truenas-skill
+title: Truenas Skill
+version: 1.2.0
+description: '>'
+metadata:
+  author: anotb
+  category: General
+  tags:
+  - general
+  - truenas
+  - skill
+  source: clawhub-community
+  clawhub_slug: truenas-skill
+  clawhub_path: anotb/truenas-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Truenas Skill
+
+    # Source: ClawHub community skill by anotb
+
+    # Install: clawhub install truenas-skill
+
+    # Path: anotb/truenas-skill
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - references/app-installation.md
+
+    - references/bookmarks.md
+
+    - references/books-and-media.md
+
+    - references/downloads.md
+
+    - references/homelab-services.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install truenas-skill
+
+    ```'
+examples:
+- description: Install Truenas Skill from ClawHub
+  usage: clawhub install truenas-skill
+schema_version: '1.0'

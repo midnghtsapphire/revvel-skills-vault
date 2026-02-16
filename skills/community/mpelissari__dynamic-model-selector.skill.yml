@@ -1,0 +1,61 @@
+name: dynamic-model-selector
+title: Dynamic Model Selector
+version: 1.0.0
+description: Dynamically select the best AI model for a task based on complexity, cost, and availability in GitHub Copilot.
+  Use when deciding between free/paid models, or when you want automatic model routing based on query analysis.
+metadata:
+  author: mpelissari
+  category: Development & Coding
+  tags:
+  - development-coding
+  - dynamic
+  - model
+  - selector
+  source: clawhub-community
+  clawhub_slug: dynamic-model-selector
+  clawhub_path: mpelissari/dynamic-model-selector
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dynamic Model Selector
+
+    # Source: ClawHub community skill by mpelissari
+
+    # Install: clawhub install dynamic-model-selector
+
+    # Path: mpelissari/dynamic-model-selector
+
+
+    ## Description
+
+    Dynamically select the best AI model for a task based on complexity, cost, and availability in GitHub Copilot. Use when
+    deciding between free/paid models, or when you want automatic model routing based on query analysis.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/models.md
+
+    - scripts/classify_task.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dynamic-model-selector
+
+    ```'
+examples:
+- description: Install Dynamic Model Selector from ClawHub
+  usage: clawhub install dynamic-model-selector
+schema_version: '1.0'

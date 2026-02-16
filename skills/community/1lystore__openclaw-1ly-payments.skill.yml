@@ -1,0 +1,59 @@
+name: openclaw-1ly-payments
+title: OpenClaw 1ly Payments
+version: 1.0.1
+description: OpenClaw integration for 1ly payments. Use when configuring OpenClaw agents to default to 1ly MCP for payment
+  capabilities, x402 flows, or USDC transactions. Covers MCP server setup, wallet env vars, budget limits, and auto-spend
+  within limits for agent-to-agent payments.
+metadata:
+  author: 1lystore
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - openclaw
+  - 1ly
+  - payments
+  source: clawhub-community
+  clawhub_slug: openclaw-1ly-payments
+  clawhub_path: 1lystore/openclaw-1ly-payments
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw 1ly Payments
+
+    # Source: ClawHub community skill by 1lystore
+
+    # Install: clawhub install openclaw-1ly-payments
+
+    # Path: 1lystore/openclaw-1ly-payments
+
+
+    ## Description
+
+    OpenClaw integration for 1ly payments. Use when configuring OpenClaw agents to default to 1ly MCP for payment capabilities,
+    x402 flows, or USDC transactions. Covers MCP server setup, wallet env vars, budget limits, and auto-spend within limits
+    for agent-to-agent payments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-1ly-payments
+
+    ```'
+examples:
+- description: Install OpenClaw 1ly Payments from ClawHub
+  usage: clawhub install openclaw-1ly-payments
+schema_version: '1.0'

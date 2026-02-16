@@ -1,0 +1,68 @@
+name: legaldoc-ai
+title: LegalDoc AI
+version: 1.0.0
+description: ''
+metadata:
+  author: manas-io-ai
+  category: General
+  tags:
+  - general
+  - legaldoc
+  source: clawhub-community
+  clawhub_slug: legaldoc-ai
+  clawhub_path: manas-io-ai/legaldoc-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LegalDoc AI
+
+    # Source: ClawHub community skill by manas-io-ai
+
+    # Install: clawhub install legaldoc-ai
+
+    # Path: manas-io-ai/legaldoc-ai
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdhub.json
+
+    - requirements.txt
+
+    - examples/sample_contract.txt
+
+    - examples/sample_output.md
+
+    - execution/clause_extractor.py
+
+    - execution/deadline_tracker.py
+
+    - execution/document_summarizer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install legaldoc-ai
+
+    ```'
+examples:
+- description: Install LegalDoc AI from ClawHub
+  usage: clawhub install legaldoc-ai
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: miniflux
+title: Miniflux
+version: 0.1.0
+description: '"Browse, read, and manage Miniflux feed articles. Use when Claude needs to work with RSS/atom feeds via Miniflux
+  - listing unread/new articles, reading article content, marking articles as read, and managing feeds/categories. Provides
+  CLI access with flexible output formats (headlines, summaries, fu'
+metadata:
+  author: shekohex
+  category: Search & Research
+  tags:
+  - search-research
+  - miniflux
+  source: clawhub-community
+  clawhub_slug: miniflux
+  clawhub_path: shekohex/miniflux
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Miniflux
+
+    # Source: ClawHub community skill by shekohex
+
+    # Install: clawhub install miniflux
+
+    # Path: shekohex/miniflux
+
+
+    ## Description
+
+    "Browse, read, and manage Miniflux feed articles. Use when Claude needs to work with RSS/atom feeds via Miniflux - listing
+    unread/new articles, reading article content, marking articles as read, and managing feeds/categories. Provides CLI access
+    with flexible output formats (headlines, summaries, fu
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/miniflux-cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install miniflux
+
+    ```'
+examples:
+- description: Install Miniflux from ClawHub
+  usage: clawhub install miniflux
+schema_version: '1.0'

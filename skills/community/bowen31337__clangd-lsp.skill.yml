@@ -1,0 +1,58 @@
+name: clangd-lsp
+title: Clangd LSP
+version: 1.0.0
+description: C/C++ language server (clangd) providing code intelligence, diagnostics, and formatting for .c, .h, .cpp, .cc,
+  .cxx, .hpp, .hxx files. Use when working with C or C++ code that needs autocomplete, go-to-definition, find references,
+  error detection, or refactoring support.
+metadata:
+  author: bowen31337
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clangd
+  - lsp
+  source: clawhub-community
+  clawhub_slug: clangd-lsp
+  clawhub_path: bowen31337/clangd-lsp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clangd LSP
+
+    # Source: ClawHub community skill by bowen31337
+
+    # Install: clawhub install clangd-lsp
+
+    # Path: bowen31337/clangd-lsp
+
+
+    ## Description
+
+    C/C++ language server (clangd) providing code intelligence, diagnostics, and formatting for .c, .h, .cpp, .cc, .cxx, .hpp,
+    .hxx files. Use when working with C or C++ code that needs autocomplete, go-to-definition, find references, error detection,
+    or refactoring support.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clangd-lsp
+
+    ```'
+examples:
+- description: Install Clangd LSP from ClawHub
+  usage: clawhub install clangd-lsp
+schema_version: '1.0'

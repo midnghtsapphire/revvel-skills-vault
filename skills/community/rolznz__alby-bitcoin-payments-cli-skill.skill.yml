@@ -1,0 +1,61 @@
+name: alby-bitcoin-payments-cli-skill
+title: Alby Bitcoin Payments CLI Skill
+version: 1.1.0
+description: CLI for bitcoin lightning wallet operations using Nostr Wallet Connect (NIP-47). Use when the user needs to send/receive
+  payments, check wallet balance, create invoices, convert between fiat and sats, or work with lightning addresses.
+metadata:
+  author: rolznz
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - alby
+  - bitcoin
+  - payments
+  - cli
+  - skill
+  source: clawhub-community
+  clawhub_slug: alby-bitcoin-payments-cli-skill
+  clawhub_path: rolznz/alby-bitcoin-payments-cli-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alby Bitcoin Payments CLI Skill
+
+    # Source: ClawHub community skill by rolznz
+
+    # Install: clawhub install alby-bitcoin-payments-cli-skill
+
+    # Path: rolznz/alby-bitcoin-payments-cli-skill
+
+
+    ## Description
+
+    CLI for bitcoin lightning wallet operations using Nostr Wallet Connect (NIP-47). Use when the user needs to send/receive
+    payments, check wallet balance, create invoices, convert between fiat and sats, or work with lightning addresses.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alby-bitcoin-payments-cli-skill
+
+    ```'
+examples:
+- description: Install Alby Bitcoin Payments CLI Skill from ClawHub
+  usage: clawhub install alby-bitcoin-payments-cli-skill
+schema_version: '1.0'

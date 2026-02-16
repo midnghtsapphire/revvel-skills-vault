@@ -1,0 +1,73 @@
+name: last30days
+title: Last 30 Days
+version: 1.0.0
+description: Research any topic from the last 30 days on Reddit + X + Web, synthesize findings, and write copy-paste-ready
+  prompts. Use when the user wants recent social/web research on a topic, asks "what are people saying about X", or wants
+  to learn current best practices. Requires OPENAI_API_KEY and/or XAI_AP
+metadata:
+  author: zats
+  category: Search & Research
+  tags:
+  - search-research
+  - last30days
+  source: clawhub-community
+  clawhub_slug: last30days
+  clawhub_path: zats/last30days
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Last 30 Days
+
+    # Source: ClawHub community skill by zats
+
+    # Install: clawhub install last30days
+
+    # Path: zats/last30days
+
+
+    ## Description
+
+    Research any topic from the last 30 days on Reddit + X + Web, synthesize findings, and write copy-paste-ready prompts.
+    Use when the user wants recent social/web research on a topic, asks "what are people saying about X", or wants to learn
+    current best practices. Requires OPENAI_API_KEY and/or XAI_AP
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/last30days.py
+
+    - scripts/lib/__init__.py
+
+    - scripts/lib/cache.py
+
+    - scripts/lib/dates.py
+
+    - scripts/lib/dedupe.py
+
+    - scripts/lib/env.py
+
+    - scripts/lib/http.py
+
+    - scripts/lib/models.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install last30days
+
+    ```'
+examples:
+- description: Install Last 30 Days from ClawHub
+  usage: clawhub install last30days
+schema_version: '1.0'

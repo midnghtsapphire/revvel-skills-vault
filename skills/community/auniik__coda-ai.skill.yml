@@ -1,0 +1,53 @@
+name: coda-ai
+title: coda.io
+version: 0.2.3
+description: CLI to read Coda.io documents and pages. List docs, list pages, read content in markdown/json/html.
+metadata:
+  author: auniik
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - coda
+  source: clawhub-community
+  clawhub_slug: coda-ai
+  clawhub_path: auniik/coda-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# coda.io
+
+    # Source: ClawHub community skill by auniik
+
+    # Install: clawhub install coda-ai
+
+    # Path: auniik/coda-ai
+
+
+    ## Description
+
+    CLI to read Coda.io documents and pages. List docs, list pages, read content in markdown/json/html.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install coda-ai
+
+    ```'
+examples:
+- description: Install coda.io from ClawHub
+  usage: clawhub install coda-ai
+schema_version: '1.0'

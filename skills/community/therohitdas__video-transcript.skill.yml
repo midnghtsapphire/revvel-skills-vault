@@ -1,0 +1,60 @@
+name: video-transcript
+title: Video Transcript
+version: 1.4.1
+description: Extract full transcripts from video content for analysis, summarization, note-taking, or research. Use when the
+  user wants a written version of video content, asks to "transcribe this", "get the text from this video", "convert video
+  to text", or shares a video URL for content extraction.
+metadata:
+  author: therohitdas
+  category: Search & Research
+  tags:
+  - search-research
+  - video
+  - transcript
+  source: clawhub-community
+  clawhub_slug: video-transcript
+  clawhub_path: therohitdas/video-transcript
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Video Transcript
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install video-transcript
+
+    # Path: therohitdas/video-transcript
+
+
+    ## Description
+
+    Extract full transcripts from video content for analysis, summarization, note-taking, or research. Use when the user wants
+    a written version of video content, asks to "transcribe this", "get the text from this video", "convert video to text",
+    or shares a video URL for content extraction.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tapi-auth.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install video-transcript
+
+    ```'
+examples:
+- description: Install Video Transcript from ClawHub
+  usage: clawhub install video-transcript
+schema_version: '1.0'

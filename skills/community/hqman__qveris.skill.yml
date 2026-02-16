@@ -1,0 +1,61 @@
+name: qveris
+title: Qveris
+version: 0.1.0
+description: '"检测股票指标查询"'
+metadata:
+  author: hqman
+  category: General
+  tags:
+  - general
+  - qveris
+  source: clawhub-community
+  clawhub_slug: qveris
+  clawhub_path: hqman/qveris
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qveris
+
+    # Source: ClawHub community skill by hqman
+
+    # Install: clawhub install qveris
+
+    # Path: hqman/qveris
+
+
+    ## Description
+
+    "检测股票指标查询"
+
+
+    ## Files
+
+    - README.md
+
+    - README.zh-CN.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - scripts/qveris_tool.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qveris
+
+    ```'
+examples:
+- description: Install Qveris from ClawHub
+  usage: clawhub install qveris
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: alicloud-observability-sls-log-query
+title: Alicloud Observability Sls Log Query
+version: 1.0.1
+description: Query and troubleshoot logs in Alibaba Cloud Log Service (SLS) using query|analysis syntax and the Python SDK.
+  Use for time-bounded log search, error investigation, and root-cause analysis workflows.
+metadata:
+  author: cinience
+  category: Search & Research
+  tags:
+  - search-research
+  - alicloud
+  - observability
+  - sls
+  - log
+  - query
+  source: clawhub-community
+  clawhub_slug: alicloud-observability-sls-log-query
+  clawhub_path: cinience/alicloud-observability-sls-log-query
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Observability Sls Log Query
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-observability-sls-log-query
+
+    # Path: cinience/alicloud-observability-sls-log-query
+
+
+    ## Description
+
+    Query and troubleshoot logs in Alibaba Cloud Log Service (SLS) using query|analysis syntax and the Python SDK. Use for
+    time-bounded log search, error investigation, and root-cause analysis workflows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/python-sdk.md
+
+    - references/query-syntax.md
+
+    - references/sources.md
+
+    - references/templates.md
+
+    - scripts/query_logs.py
+
+    - scripts/troubleshoot.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-observability-sls-log-query
+
+    ```'
+examples:
+- description: Install Alicloud Observability Sls Log Query from ClawHub
+  usage: clawhub install alicloud-observability-sls-log-query
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: xiaomi-outbound-bot
+title: 通义晓蜜 - 智能外呼
+version: 1.0.1
+description: 触发阿里云晓蜜外呼机器人任务，自动批量拨打电话。适用于批量外呼、客户回访、满意度调查、简历筛查约面试等场景。可从前置工具或节点获取外呼名单。
+metadata:
+  author: raven-xia
+  category: General
+  tags:
+  - general
+  - xiaomi
+  - outbound
+  - bot
+  source: clawhub-community
+  clawhub_slug: xiaomi-outbound-call
+  clawhub_path: raven-xia/xiaomi-outbound-call
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 通义晓蜜 - 智能外呼
+
+    # Source: ClawHub community skill by raven-xia
+
+    # Install: clawhub install xiaomi-outbound-call
+
+    # Path: raven-xia/xiaomi-outbound-call
+
+
+    ## Description
+
+    触发阿里云晓蜜外呼机器人任务，自动批量拨打电话。适用于批量外呼、客户回访、满意度调查、简历筛查约面试等场景。可从前置工具或节点获取外呼名单。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/config.md
+
+    - scripts/bundle.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xiaomi-outbound-call
+
+    ```'
+examples:
+- description: Install 通义晓蜜 - 智能外呼 from ClawHub
+  usage: clawhub install xiaomi-outbound-call
+schema_version: '1.0'

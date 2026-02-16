@@ -1,0 +1,59 @@
+name: ssh
+title: Ssh
+version: 1.0.0
+description: SSH 连接和管理远程服务器。使用 paramiko (Python) 库，支持在 Windows/Linux 上通过 SSH 执行远程命令、安装软件、查看日志等操作。
+metadata:
+  author: lycohana
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - ssh
+  source: clawhub-community
+  clawhub_slug: ssh
+  clawhub_path: lycohana/ssh
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ssh
+
+    # Source: ClawHub community skill by lycohana
+
+    # Install: clawhub install ssh
+
+    # Path: lycohana/ssh
+
+
+    ## Description
+
+    SSH 连接和管理远程服务器。使用 paramiko (Python) 库，支持在 Windows/Linux 上通过 SSH 执行远程命令、安装软件、查看日志等操作。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/commands.md
+
+    - references/usage.md
+
+    - scripts/ssh.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ssh
+
+    ```'
+examples:
+- description: Install Ssh from ClawHub
+  usage: clawhub install ssh
+schema_version: '1.0'

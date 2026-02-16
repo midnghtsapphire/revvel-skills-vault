@@ -1,0 +1,57 @@
+name: antigravity-quota
+title: Antigravity Quota 1.1.0
+version: 1.0.0
+description: Check Antigravity account quotas for Claude and Gemini models. Shows remaining quota and reset times with ban
+  detection.
+metadata:
+  author: renixaus
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - antigravity
+  - quota
+  source: clawhub-community
+  clawhub_slug: antigravity-quota-1-1-0
+  clawhub_path: renixaus/antigravity-quota-1-1-0
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Antigravity Quota 1.1.0
+
+    # Source: ClawHub community skill by renixaus
+
+    # Install: clawhub install antigravity-quota-1-1-0
+
+    # Path: renixaus/antigravity-quota-1-1-0
+
+
+    ## Description
+
+    Check Antigravity account quotas for Claude and Gemini models. Shows remaining quota and reset times with ban detection.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - check-quota.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install antigravity-quota-1-1-0
+
+    ```'
+examples:
+- description: Install Antigravity Quota 1.1.0 from ClawHub
+  usage: clawhub install antigravity-quota-1-1-0
+schema_version: '1.0'

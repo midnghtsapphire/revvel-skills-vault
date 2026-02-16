@@ -1,0 +1,60 @@
+name: open-webui
+title: Open WebUI
+version: 1.0.0
+description: Complete Open WebUI API integration for managing LLM models, chat completions, Ollama proxy operations, file
+  uploads, knowledge bases (RAG), image generation, audio processing, and pipelines. Use this skill when interacting with
+  Open WebUI instances via REST API - listing models, chatting with LLMs,
+metadata:
+  author: '0x7466'
+  category: Media & Content
+  tags:
+  - media-content
+  - open
+  - webui
+  source: clawhub-community
+  clawhub_slug: open-webui
+  clawhub_path: 0x7466/open-webui
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Open WebUI
+
+    # Source: ClawHub community skill by 0x7466
+
+    # Install: clawhub install open-webui
+
+    # Path: 0x7466/open-webui
+
+
+    ## Description
+
+    Complete Open WebUI API integration for managing LLM models, chat completions, Ollama proxy operations, file uploads,
+    knowledge bases (RAG), image generation, audio processing, and pipelines. Use this skill when interacting with Open WebUI
+    instances via REST API - listing models, chatting with LLMs,
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/openwebui-cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install open-webui
+
+    ```'
+examples:
+- description: Install Open WebUI from ClawHub
+  usage: clawhub install open-webui
+schema_version: '1.0'

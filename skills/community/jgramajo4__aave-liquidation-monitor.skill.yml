@@ -1,0 +1,75 @@
+name: aave-liquidation-monitor
+title: Aave Liquidation Monitor
+version: 1.0.1
+description: '"Proactive monitoring of Aave V3 borrow positions with liquidation alerts. Queries user collateral, debt, and
+  health factor across chains (Ethereum, Polygon, Arbitrum, etc.). Sends urgent alerts to Telegram/Discord/Slack when health
+  factor drops below configurable thresholds (critical at 1.05, warni'
+metadata:
+  author: jgramajo4
+  category: Social Media
+  tags:
+  - social-media
+  - aave
+  - liquidation
+  - monitor
+  source: clawhub-community
+  clawhub_slug: aave-liquidation-monitor
+  clawhub_path: jgramajo4/aave-liquidation-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Aave Liquidation Monitor
+
+    # Source: ClawHub community skill by jgramajo4
+
+    # Install: clawhub install aave-liquidation-monitor
+
+    # Path: jgramajo4/aave-liquidation-monitor
+
+
+    ## Description
+
+    "Proactive monitoring of Aave V3 borrow positions with liquidation alerts. Queries user collateral, debt, and health factor
+    across chains (Ethereum, Polygon, Arbitrum, etc.). Sends urgent alerts to Telegram/Discord/Slack when health factor drops
+    below configurable thresholds (critical at 1.05, warni
+
+
+    ## Files
+
+    - INSTALLATION.md
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/config-template.json
+
+    - references/aave-api.md
+
+    - references/config-guide.md
+
+    - references/cron-integration.md
+
+    - scripts/cron-runner.js
+
+    - scripts/monitor.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aave-liquidation-monitor
+
+    ```'
+examples:
+- description: Install Aave Liquidation Monitor from ClawHub
+  usage: clawhub install aave-liquidation-monitor
+schema_version: '1.0'

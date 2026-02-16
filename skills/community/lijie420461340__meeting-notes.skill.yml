@@ -1,0 +1,54 @@
+name: meeting-notes
+title: Meeting Notes
+version: 1.0.0
+description: Transform raw meeting notes, transcripts, or recordings into structured, actionable summaries
+metadata:
+  author: lijie420461340
+  category: General
+  tags:
+  - general
+  - meeting
+  - notes
+  source: clawhub-community
+  clawhub_slug: meeting-notes
+  clawhub_path: lijie420461340/meeting-notes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Meeting Notes
+
+    # Source: ClawHub community skill by lijie420461340
+
+    # Install: clawhub install meeting-notes
+
+    # Path: lijie420461340/meeting-notes
+
+
+    ## Description
+
+    Transform raw meeting notes, transcripts, or recordings into structured, actionable summaries
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install meeting-notes
+
+    ```'
+examples:
+- description: Install Meeting Notes from ClawHub
+  usage: clawhub install meeting-notes
+schema_version: '1.0'

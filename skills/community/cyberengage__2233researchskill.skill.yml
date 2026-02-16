@@ -1,0 +1,62 @@
+name: magic-8-ball
+title: 2233 Research Skill
+version: 1.0.0
+description: 'Magic 8-Ball fortune teller: selects and returns one of 20 classic responses at random, logs the result (with
+  question and UTC timestamp). Use whenever the user asks a Magic 8-Ball question, seeks a yes/no prediction, or says "8 ball"
+  / "magic ball" etc.'
+metadata:
+  author: cyberengage
+  category: Search & Research
+  tags:
+  - search-research
+  - magic
+  - ball
+  source: clawhub-community
+  clawhub_slug: 2233researchskill
+  clawhub_path: cyberengage/2233researchskill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 2233 Research Skill
+
+    # Source: ClawHub community skill by cyberengage
+
+    # Install: clawhub install 2233researchskill
+
+    # Path: cyberengage/2233researchskill
+
+
+    ## Description
+
+    Magic 8-Ball fortune teller: selects and returns one of 20 classic responses at random, logs the result (with question
+    and UTC timestamp). Use whenever the user asks a Magic 8-Ball question, seeks a yes/no prediction, or says "8 ball" /
+    "magic ball" etc.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/magic8ball.py
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install 2233researchskill
+
+    ```'
+examples:
+- description: Install 2233 Research Skill from ClawHub
+  usage: clawhub install 2233researchskill
+schema_version: '1.0'

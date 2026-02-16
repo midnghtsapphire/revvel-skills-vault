@@ -1,0 +1,59 @@
+name: base
+title: Base
+version: 1.0.0
+description: Interact with Base blockchain — check balances, gas prices, block numbers, and transaction status. Use when the
+  user wants to query onchain data on Base. No API key required.
+metadata:
+  author: spirosrap
+  category: Development & Coding
+  tags:
+  - development-coding
+  - base
+  source: clawhub-community
+  clawhub_slug: base
+  clawhub_path: spirosrap/base
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Base
+
+    # Source: ClawHub community skill by spirosrap
+
+    # Install: clawhub install base
+
+    # Path: spirosrap/base
+
+
+    ## Description
+
+    Interact with Base blockchain — check balances, gas prices, block numbers, and transaction status. Use when the user wants
+    to query onchain data on Base. No API key required.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/base-rpc.md
+
+    - scripts/base.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install base
+
+    ```'
+examples:
+- description: Install Base from ClawHub
+  usage: clawhub install base
+schema_version: '1.0'

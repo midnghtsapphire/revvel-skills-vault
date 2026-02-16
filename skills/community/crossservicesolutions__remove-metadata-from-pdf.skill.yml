@@ -1,0 +1,66 @@
+name: remove-metadata-from-pdf
+title: Remove metadata from PDF
+version: 1.0.0
+description: Remove metadata from one or multiple PDFs by uploading them to the Solutions API, polling until completion, then
+  returning download URL(s) for the cleaned PDF(s) (or a ZIP if multiple).
+metadata:
+  author: crossservicesolutions
+  category: Development & Coding
+  tags:
+  - development-coding
+  - remove
+  - metadata
+  - from
+  - pdf
+  source: clawhub-community
+  clawhub_slug: remove-metadata-from-pdf
+  clawhub_path: crossservicesolutions/remove-metadata-from-pdf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Remove metadata from PDF
+
+    # Source: ClawHub community skill by crossservicesolutions
+
+    # Install: clawhub install remove-metadata-from-pdf
+
+    # Path: crossservicesolutions/remove-metadata-from-pdf
+
+
+    ## Description
+
+    Remove metadata from one or multiple PDFs by uploading them to the Solutions API, polling until completion, then returning
+    download URL(s) for the cleaned PDF(s) (or a ZIP if multiple).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - examples/request.json
+
+    - scripts/remove-metadata-from-pdf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remove-metadata-from-pdf
+
+    ```'
+examples:
+- description: Install Remove metadata from PDF from ClawHub
+  usage: clawhub install remove-metadata-from-pdf
+schema_version: '1.0'

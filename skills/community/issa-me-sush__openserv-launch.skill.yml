@@ -1,0 +1,68 @@
+name: openserv-launch
+title: Openserv Launch
+version: 1.0.1
+description: Launch tokens on Base blockchain via the OpenServ Launch API. Creates ERC-20 tokens with Aerodrome concentrated
+  liquidity pools. Use when launching tokens, deploying memecoins, or building agents that create tokens with locked LP. Read
+  reference.md for the full API reference. Read openserv-agent-sdk
+metadata:
+  author: issa-me-sush
+  category: Development & Coding
+  tags:
+  - development-coding
+  - openserv
+  - launch
+  source: clawhub-community
+  clawhub_slug: openserv-launch
+  clawhub_path: issa-me-sush/openserv-launch
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openserv Launch
+
+    # Source: ClawHub community skill by issa-me-sush
+
+    # Install: clawhub install openserv-launch
+
+    # Path: issa-me-sush/openserv-launch
+
+
+    ## Description
+
+    Launch tokens on Base blockchain via the OpenServ Launch API. Creates ERC-20 tokens with Aerodrome concentrated liquidity
+    pools. Use when launching tokens, deploying memecoins, or building agents that create tokens with locked LP. Read reference.md
+    for the full API reference. Read openserv-agent-sdk
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - reference.md
+
+    - troubleshooting.md
+
+    - examples/agent-launcher.ts
+
+    - examples/launch-token.ts
+
+    - examples/list-tokens.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openserv-launch
+
+    ```'
+examples:
+- description: Install Openserv Launch from ClawHub
+  usage: clawhub install openserv-launch
+schema_version: '1.0'

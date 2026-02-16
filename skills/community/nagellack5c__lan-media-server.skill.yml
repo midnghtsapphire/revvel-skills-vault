@@ -1,0 +1,63 @@
+name: lan-media-server
+title: LAN Media Server
+version: 1.0.0
+description: Share images, screenshots, and files from the AI workspace to users on the local network via HTTP. Use when the
+  agent needs to show images, browser screenshots, or any files to the user and the current channel doesn't support inline
+  media (e.g., webchat, CLI). Starts a lightweight Node.js static fil
+metadata:
+  author: nagellack5c
+  category: Search & Research
+  tags:
+  - search-research
+  - lan
+  - media
+  - server
+  source: clawhub-community
+  clawhub_slug: lan-media-server
+  clawhub_path: nagellack5c/lan-media-server
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LAN Media Server
+
+    # Source: ClawHub community skill by nagellack5c
+
+    # Install: clawhub install lan-media-server
+
+    # Path: nagellack5c/lan-media-server
+
+
+    ## Description
+
+    Share images, screenshots, and files from the AI workspace to users on the local network via HTTP. Use when the agent
+    needs to show images, browser screenshots, or any files to the user and the current channel doesn''t support inline media
+    (e.g., webchat, CLI). Starts a lightweight Node.js static fil
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/server.js
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lan-media-server
+
+    ```'
+examples:
+- description: Install LAN Media Server from ClawHub
+  usage: clawhub install lan-media-server
+schema_version: '1.0'

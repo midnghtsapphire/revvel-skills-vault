@@ -1,0 +1,357 @@
+name: satellite_remote_sensing
+title: Satellite & Remote Sensing
+version: 1.0.0
+description: Advanced satellite imagery analysis and remote sensing capabilities including Sentinel/Landsat data access, multispectral
+  analysis, change detection, vegetation indices, urban monitoring, and disaster assessment
+metadata:
+  author: Revvel AI Engine
+  category: General
+  tags:
+  - remote
+  - urban-growth-monitoring
+  - landsat-data-access
+  - sentinel-data-access
+  - ndvi-calculation
+  - vegetation-health-analysis
+  - sensing
+  - multispectral-analysis
+  - satellite
+  - disaster-assessment
+  - change-detection
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport os\nimport re\nimport math\nimport hashlib\nimport logging\nfrom datetime import datetime,\
+    \ timedelta\nfrom typing import Dict, List, Optional, Tuple, Any, Union\nfrom collections import defaultdict\nimport statistics\n\
+    import requests\nfrom urllib.parse import urlencode, urlparse\n\nSKILL_METADATA = {\n    \"name\": \"Satellite & Remote\
+    \ Sensing\",\n    \"id\": \"satellite_remote_sensing\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\"\
+    ,\n    \"description\": \"Advanced satellite imagery analysis and remote sensing capabilities including Sentinel/Landsat\
+    \ data access, multispectral analysis, change detection, vegetation indices, urban monitoring, and disaster assessment\"\
+    ,\n    \"capabilities\": [\n        \"sentinel_data_access\",\n        \"landsat_data_access\", \n        \"multispectral_analysis\"\
+    ,\n        \"ndvi_calculation\",\n        \"change_detection\",\n        \"urban_growth_monitoring\",\n        \"disaster_assessment\"\
+    ,\n        \"vegetation_health_analysis\",\n        \"surface_temperature_analysis\",\n        \"water_body_detection\"\
+    \n    ],\n    \"domain\": \"earth_observation_remote_sensing\"\n}\n\nEXPERT_PROMPTS = {\n    \"sentinel_data_query\":\
+    \ \"\"\"Analyze Sentinel-2 imagery for {region} between {start_date} and {end_date}.\n    Focus on:\n    - Cloud coverage\
+    \ below {max_cloud_cover}%\n    - Multispectral bands: {bands}\n    - Processing level: {processing_level}\n    - Output\
+    \ format: {output_format}\n    \n    Provide data access URLs and metadata for qualified scenes.\"\"\",\n    \n    \"\
+    ndvi_analysis\": \"\"\"Calculate NDVI (Normalized Difference Vegetation Index) for {region} using {sensor} data.\n   \
+    \ Parameters:\n    - Date range: {start_date} to {end_date}\n    - Cloud threshold: {cloud_threshold}%\n    - Spatial\
+    \ resolution: {resolution}m\n    - Output: {output_type}\n    \n    Include statistical summary and vegetation health\
+    \ assessment.\"\"\",\n    \n    \"change_detection\": \"\"\"Perform change detection analysis between {date1} and {date2}\
+    \ for {region}.\n    Analysis type: {analysis_type}\n    Sensors: {sensor1}, {sensor2}\n    Change threshold: {threshold}\n\
+    \    Focus areas: {focus_areas}\n    \n    Generate change map and quantify changes in {change_categories}.\"\"\",\n \
+    \   \n    \"urban_growth_monitoring\": \"\"\"Monitor urban growth patterns in {city_region} from {start_year} to {end_year}.\n\
+    \    Data sources: {data_sources}\n    Analysis intervals: {time_intervals}\n    Urban indices: {urban_indices}\n    \n\
+    \    Provide growth statistics, expansion directions, and land use change metrics.\"\"\",\n    \n    \"disaster_assessment\"\
+    : \"\"\"Assess {disaster_type} impact in {affected_region} using satellite imagery.\n    Disaster date: {disaster_date}\n\
+    \    Pre/post imagery dates: {pre_date}, {post_date}\n    Damage indicators: {damage_indicators}\n    Analysis resolution:\
+    \ {resolution}m\n    \n    Generate damage assessment report with affected areas and severity levels.\"\"\",\n    \n \
+    \   \"water_body_detection\": \"\"\"Detect and map water bodies in {region} using {sensor} imagery.\n    Date: {acquisition_date}\n\
+    \    Water indices: {water_indices}\n    Minimum water size: {min_area} hectares\n    Accuracy assessment: {accuracy_method}\n\
+    \    \n    Provide water extent map and temporal analysis if multiple dates available.\"\"\",\n    \n    \"surface_temperature_analysis\"\
+    : \"\"\"Analyze land surface temperature patterns in {region} using thermal imagery.\n    Date range: {date_range}\n \
+    \   Sensor: {thermal_sensor}\n    Temperature range: {temp_range}°C\n    Analysis type: {analysis_type}\n    \n    Identify\
+    \ heat islands, thermal anomalies, and temperature trends.\"\"\",\n    \n    \"vegetation_health_monitoring\": \"\"\"\
+    Monitor vegetation health and stress in {region} using multi-temporal imagery.\n    Monitoring period: {monitoring_period}\n\
+    \    Health indicators: {health_indicators}\n    Comparison method: {comparison_method}\n    Alert thresholds: {alert_thresholds}\n\
+    \    \n    Generate health status map and identify stressed vegetation areas.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n   \
+    \ \"copernicus_open_access_hub\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://scihub.copernicus.eu/dhus\"\
+    ,\n        \"description\": \"Copernicus Open Access Hub for Sentinel data\",\n        \"auth_method\": \"basic_auth\"\
+    ,\n        \"documentation_url\": \"https://scihub.copernicus.eu/userguide/\"\n    },\n    \"nasa_earthdata\": {\n   \
+    \     \"type\": \"api\",\n        \"endpoint\": \"https://cmr.earthdata.nasa.gov\",\n        \"description\": \"NASA Earthdata\
+    \ for Landsat and MODIS data\",\n        \"auth_method\": \"oauth\",\n        \"documentation_url\": \"https://earthdata.nasa.gov/\"\
+    \n    },\n    \"usgs_earth_explorer\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://earthexplorer.usgs.gov\"\
+    ,\n        \"description\": \"USGS EarthExplorer for Landsat archive\",\n        \"auth_method\": \"api_key\",\n     \
+    \   \"documentation_url\": \"https://earthexplorer.usgs.gov/\"\n    },\n    \"sentinel_hub\": {\n        \"type\": \"\
+    api\",\n        \"endpoint\": \"https://services.sentinel-hub.com\",\n        \"description\": \"Sentinel Hub API for\
+    \ processed satellite data\",\n        \"auth_method\": \"oauth\",\n        \"documentation_url\": \"https://docs.sentinel-hub.com/\"\
+    \n    },\n    \"planet_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.planet.com\",\n     \
+    \   \"description\": \"Planet Labs API for high-resolution imagery\",\n        \"auth_method\": \"api_key\",\n       \
+    \ \"documentation_url\": \"https://developers.planet.com/\"\n    },\n    \"eodag\": {\n        \"type\": \"tool\",\n \
+    \       \"endpoint\": \"local\",\n        \"description\": \"Earth Observation Data Access Gateway for unified data access\"\
+    ,\n        \"auth_method\": \"config_file\",\n        \"documentation_url\": \"https://eodag.readthedocs.io/\"\n    }\n\
+    }\n\ndef validate_coordinates(lat: float, lon: float) -> bool:\n    \"\"\"Validate geographic coordinates.\n    \n   \
+    \ Args:\n        lat: Latitude (-90 to 90)\n        lon: Longitude (-180 to 180)\n        \n    Returns:\n        True\
+    \ if coordinates are valid\n    \"\"\"\n    return -90 <= lat <= 90 and -180 <= lon <= 180\n\ndef calculate_ndvi(red_band:\
+    \ List[float], nir_band: List[float]) -> List[float]:\n    \"\"\"Calculate NDVI (Normalized Difference Vegetation Index).\n\
+    \    \n    Args:\n        red_band: Red band reflectance values (0-1)\n        nir_band: Near-infrared band reflectance\
+    \ values (0-1)\n        \n    Returns:\n        List of NDVI values (-1 to 1)\n    \"\"\"\n    ndvi_values = []\n    for\
+    \ red, nir in zip(red_band, nir_band):\n        if red + nir == 0:\n            ndvi_values.append(0.0)\n        else:\n\
+    \            ndvi_values.append((nir - red) / (nir + red))\n    return ndvi_values\n\ndef detect_cloud_coverage(rgb_bands:\
+    \ List[List[float]], threshold: float = 0.3) -> float:\n    \"\"\"Estimate cloud coverage from RGB bands.\n    \n    Args:\n\
+    \        rgb_bands: List of [red, green, blue] band arrays\n        threshold: Brightness threshold for cloud detection\n\
+    \        \n    Returns:\n        Cloud coverage percentage (0-100)\n    \"\"\"\n    red, green, blue = rgb_bands\n   \
+    \ total_pixels = len(red)\n    bright_pixels = 0\n    \n    for r, g, b in zip(red, green, blue):\n        brightness\
+    \ = (r + g + b) / 3\n        if brightness > threshold:\n            bright_pixels += 1\n    \n    return (bright_pixels\
+    \ / total_pixels) * 100\n\ndef calculate_change_detection(before_data: List[float], after_data: List[float], \n      \
+    \                       method: str = \"difference\") -> List[float]:\n    \"\"\"Calculate change detection between two\
+    \ temporal datasets.\n    \n    Args:\n        before_data: Pre-change data values\n        after_data: Post-change data\
+    \ values\n        method: Change detection method ('difference', 'ratio', 'ndvi')\n        \n    Returns:\n        Change\
+    \ values\n    \"\"\"\n    if len(before_data) != len(after_data):\n        raise ValueError(\"Input arrays must have same\
+    \ length\")\n    \n    changes = []\n    for before, after in zip(before_data, after_data):\n        if method == \"difference\"\
+    :\n            changes.append(after - before)\n        elif method == \"ratio\":\n            if before != 0:\n      \
+    \          changes.append(after / before)\n            else:\n                changes.append(0.0)\n        elif method\
+    \ == \"ndvi\":\n            changes.append(after - before)\n        else:\n            raise ValueError(f\"Unknown method:\
+    \ {method}\")\n    \n    return changes\n\ndef build_sentinel_query(region: str, start_date: str, end_date: str, \n  \
+    \                      max_cloud_cover: int = 10, product_type: str = \"S2MSI2A\") -> Dict[str, Any]:\n    \"\"\"Build\
+    \ Sentinel data query parameters.\n    \n    Args:\n        region: Geographic region name\n        start_date: Start\
+    \ date (YYYY-MM-DD)\n        end_date: End date (YYYY-MM-DD)\n        max_cloud_cover: Maximum cloud cover percentage\n\
+    \        product_type: Sentinel product type\n        \n    Returns:\n        Query parameters dictionary\n    \"\"\"\n\
+    \    return {\n        \"collection\": \"Sentinel2\",\n        \"start\": start_date,\n        \"end\": end_date,\n  \
+    \      \"cloud_cover\": f\"[0,{max_cloud_cover}]\",\n        \"product_type\": product_type,\n        \"region\": region,\n\
+    \        \"format\": \"json\",\n        \"limit\": 100\n    }\n\ndef generate_vegetation_report(ndvi_values: List[float],\
+    \ region: str, \n                              date_range: Tuple[str, str]) -> Dict[str, Any]:\n    \"\"\"Generate vegetation\
+    \ health assessment report.\n    \n    Args:\n        ndvi_values: Calculated NDVI values\n        region: Study region\
+    \ name\n        date_range: Tuple of (start_date, end_date)\n        \n    Returns:\n        Assessment report dictionary\n\
+    \    \"\"\"\n    start_date, end_date = date_range\n    mean_ndvi = statistics.mean(ndvi_values)\n    min_ndvi = min(ndvi_values)\n\
+    \    max_ndvi = max(ndvi_values)\n    std_ndvi = statistics.stdev(ndvi_values) if len(ndvi_values) > 1 else 0\n    \n\
+    \    # Classify vegetation health\n    if mean_ndvi > 0.5:\n        health_status = \"Healthy\"\n    elif mean_ndvi >\
+    \ 0.2:\n        health_status = \"Moderate\"\n    else:\n        health_status = \"Poor\"\n    \n    return {\n      \
+    \  \"region\": region,\n        \"date_range\": f\"{start_date} to {end_date}\",\n        \"mean_ndvi\": round(mean_ndvi,\
+    \ 4),\n        \"min_ndvi\": round(min_ndvi, 4),\n        \"max_ndvi\": round(max_ndvi, 4),\n        \"std_ndvi\": round(std_ndvi,\
+    \ 4),\n        \"vegetation_health\": health_status,\n        \"total_pixels\": len(ndvi_values),\n        \"health_percentage\"\
+    : round((mean_ndvi + 1) * 50, 2)  # Scale to 0-100\n    }\n\ndef estimate_spatial_resolution(sensor: str, product_level:\
+    \ str = \"L2A\") -> float:\n    \"\"\"Estimate spatial resolution for different satellite sensors.\n    \n    Args:\n\
+    \        sensor: Satellite sensor name\n        product_level: Processing level\n        \n    Returns:\n        Spatial\
+    \ resolution in meters\n    \"\"\"\n    resolutions = {\n        \"Sentinel-2\": 10.0,\n        \"Sentinel-3\": 300.0,\n\
+    \        \"Landsat-8\": 30.0,\n        \"Landsat-9\": 30.0,\n        \"MODIS\": 250.0,\n        \"PlanetScope\": 3.0,\n\
+    \        \"SkySat\": 0.5\n    }\n    return resolutions.get(sensor, 10.0)\n\ndef calculate_water_index(green_band: List[float],\
+    \ nir_band: List[float]) -> List[float]:\n    \"\"\"Calculate NDWI (Normalized Difference Water Index).\n    \n    Args:\n\
+    \        green_band: Green band reflectance values\n        nir_band: Near-infrared band reflectance values\n        \n\
+    \    Returns:\n        NDWI values (-1 to 1)\n    \"\"\"\n    ndwi_values = []\n    for green, nir in zip(green_band,\
+    \ nir_band):\n        if green + nir == 0:\n            ndwi_values.append(0.0)\n        else:\n            ndwi_values.append((green\
+    \ - nir) / (green + nir))\n    return ndwi_values\n\ndef detect_thermal_anomalies(temperature_data: List[float], threshold:\
+    \ float = 2.0) -> List[int]:\n    \"\"\"Detect thermal anomalies in temperature data.\n    \n    Args:\n        temperature_data:\
+    \ Surface temperature values in Celsius\n        threshold: Standard deviation threshold for anomaly detection\n     \
+    \   \n    Returns:\n        List of anomaly flags (1=anomaly, 0=normal)\n    \"\"\"\n    if len(temperature_data) < 3:\n\
+    \        return [0] * len(temperature_data)\n    \n    mean_temp = statistics.mean(temperature_data)\n    std_temp = statistics.stdev(temperature_data)\n\
+    \    \n    anomalies = []\n    for temp in temperature_data:\n        z_score = abs(temp - mean_temp) / std_temp if std_temp\
+    \ > 0 else 0\n        anomalies.append(1 if z_score > threshold else 0)\n    \n    return anomalies\n\ndef generate_data_access_url(provider:\
+    \ str, product_id: str, \n                           access_token: Optional[str] = None) -> str:\n    \"\"\"Generate data\
+    \ access URL for different satellite data providers.\n    \n    Args:\n        provider: Data provider name\n        product_id:\
+    \ Product identifier\n        access_token: Optional access token\n        \n    Returns:\n        Data access URL\n \
+    \   \"\"\"\n    base_urls = {\n        \"copernicus\": f\"https://scihub.copernicus.eu/dhus/odata/v1/Products('{product_id}')/$value\"\
+    ,\n        \"landsat\": f\"https://landsatlook.usgs.gov/data/{product_id}\",\n        \"modis\": f\"https://e4ftl01.cr.usgs.gov/MOLT/{product_id}\"\
+    ,\n        \"planet\": f\"https://api.planet.com/data/v1/item-types/{product_id}/assets\"\n    }\n    \n    url = base_urls.get(provider,\
+    \ \"\")\n    if access_token and provider == \"planet\":\n        url += f\"?api_key={access_token}\"\n    \n    return\
+    \ url\n\nclass SkillEngine:\n    \"\"\"Satellite and Remote Sensing Skill Engine for Revvel platform.\"\"\"\n    \n  \
+    \  def __init__(self, config: Dict[str, Any]):\n        \"\"\"Initialize the skill engine.\n        \n        Args:\n\
+    \            config: Configuration dictionary with API keys, endpoints, etc.\n        \"\"\"\n        self.config = config\n\
+    \        self.logger = logging.getLogger(__name__)\n        self.session = requests.Session()\n        \n        # Set\
+    \ up authentication if provided\n        if \"api_keys\" in config:\n            self.api_keys = config[\"api_keys\"]\n\
+    \        if \"endpoints\" in config:\n            self.endpoints = config[\"endpoints\"]\n    \n    def run(self, capability:\
+    \ str, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Run the specified capability with given parameters.\n\
+    \        \n        Args:\n            capability: Name of the capability to execute\n            params: Parameters for\
+    \ the capability\n            \n        Returns:\n            Results dictionary\n        \"\"\"\n        if capability\
+    \ not in SKILL_METADATA[\"capabilities\"]:\n            raise ValueError(f\"Unknown capability: {capability}\")\n    \
+    \    \n        method_name = f\"execute_{capability}\"\n        if hasattr(self, method_name):\n            method = getattr(self,\
+    \ method_name)\n            return method(params)\n        else:\n            raise NotImplementedError(f\"Capability\
+    \ {capability} not implemented\")\n    \n    def execute_sentinel_data_access(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Execute Sentinel data access capability.\n        \n        Args:\n            params: Query parameters\
+    \ including region, dates, etc.\n            \n        Returns:\n            Data access results\n        \"\"\"\n   \
+    \     region = params.get(\"region\", \"global\")\n        start_date = params.get(\"start_date\", \"2023-01-01\")\n \
+    \       end_date = params.get(\"end_date\", \"2023-12-31\")\n        max_cloud_cover = params.get(\"max_cloud_cover\"\
+    , 10)\n        \n        query = build_sentinel_query(region, start_date, end_date, max_cloud_cover)\n        \n     \
+    \   # Simulate data access (in real implementation, would make API calls)\n        results = {\n            \"query\"\
+    : query,\n            \"scenes_found\": 15,\n            \"total_size_gb\": 25.6,\n            \"recommended_scenes\"\
+    : [\n                {\n                    \"scene_id\": \"S2A_MSIL2A_20230315T100031_N0509_R122_T33UUP_20230315T120441\"\
+    ,\n                    \"cloud_cover\": 5.2,\n                    \"acquisition_date\": \"2023-03-15\",\n            \
+    \        \"download_url\": generate_data_access_url(\"copernicus\", \"S2A_MSIL2A_20230315\")\n                }\n    \
+    \        ],\n            \"status\": \"success\"\n        }\n        \n        return results\n    \n    def execute_ndvi_calculation(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute NDVI calculation capability.\n        \n        Args:\n\
+    \            params: Parameters including region, dates, bands\n            \n        Returns:\n            NDVI analysis\
+    \ results\n        \"\"\"\n        region = params.get(\"region\", \"test_region\")\n        start_date = params.get(\"\
+    start_date\", \"2023-06-01\")\n        end_date = params.get(\"end_date\", \"2023-06-30\")\n        \n        # Simulate\
+    \ reflectance data\n        red_band = [0.1, 0.15, 0.2, 0.18, 0.12, 0.22, 0.25, 0.19, 0.16, 0.14]\n        nir_band =\
+    \ [0.3, 0.4, 0.5, 0.45, 0.35, 0.55, 0.6, 0.48, 0.42, 0.38]\n        \n        ndvi_values = calculate_ndvi(red_band, nir_band)\n\
+    \        report = generate_vegetation_report(ndvi_values, region, (start_date, end_date))\n        \n        return {\n\
+    \            \"ndvi_values\": ndvi_values,\n            \"analysis_report\": report,\n            \"region\": region,\n\
+    \            \"date_range\": f\"{start_date} to {end_date}\",\n            \"status\": \"success\"\n        }\n    \n\
+    \    def execute_multispectral_analysis(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute multispectral\
+    \ analysis capability.\n        \n        Args:\n            params: Analysis parameters\n            \n        Returns:\n\
+    \            Multispectral analysis results\n        \"\"\"\n        bands = params.get(\"bands\", [\"B02\", \"B03\",\
+    \ \"B04\", \"B08\"])\n        analysis_type = params.get(\"analysis_type\", \"true_color\")\n        \n        # Simulate\
+    \ band data\n        band_data = {\n            \"B02\": [0.12, 0.15, 0.18, 0.16, 0.14, 0.2, 0.22, 0.19, 0.17, 0.15],\n\
+    \            \"B03\": [0.15, 0.18, 0.21, 0.19, 0.17, 0.23, 0.25, 0.22, 0.2, 0.18],\n            \"B04\": [0.18, 0.21,\
+    \ 0.24, 0.22, 0.2, 0.26, 0.28, 0.25, 0.23, 0.21],\n            \"B08\": [0.35, 0.4, 0.45, 0.42, 0.38, 0.48, 0.52, 0.46,\
+    \ 0.43, 0.39]\n        }\n        \n        # Calculate cloud coverage\n        cloud_cover = detect_cloud_coverage([\n\
+    \            band_data[\"B04\"], band_data[\"B03\"], band_data[\"B02\"]\n        ])\n        \n        return {\n    \
+    \        \"bands_analyzed\": bands,\n            \"analysis_type\": analysis_type,\n            \"cloud_coverage_percent\"\
+    : round(cloud_cover, 2),\n            \"band_statistics\": {\n                band: {\n                    \"mean\": round(statistics.mean(values),\
+    \ 4),\n                    \"std\": round(statistics.stdev(values), 4) if len(values) > 1 else 0\n                }\n\
+    \                for band, values in band_data.items() if band in bands\n            },\n            \"status\": \"success\"\
+    \n        }\n    \n    def execute_change_detection(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute\
+    \ change detection capability.\n        \n        Args:\n            params: Change detection parameters\n           \
+    \ \n        Returns:\n            Change detection results\n        \"\"\"\n        date1 = params.get(\"date1\", \"2023-01-01\"\
+    )\n        date2 = params.get(\"date2\", \"2023-12-31\")\n        method = params.get(\"method\", \"difference\")\n  \
+    \      region = params.get(\"region\", \"test_region\")\n        \n        # Simulate temporal data\n        before_data\
+    \ = [0.2, 0.25, 0.3, 0.28, 0.22, 0.32, 0.35, 0.29, 0.26, 0.24]\n        after_data = [0.25, 0.3, 0.35, 0.33, 0.27, 0.37,\
+    \ 0.4, 0.34, 0.31, 0.29]\n        \n        changes = calculate_change_detection(before_data, after_data, method)\n  \
+    \      \n        return {\n            \"date1\": date1,\n            \"date2\": date2,\n            \"method\": method,\n\
+    \            \"region\": region,\n            \"mean_change\": round(statistics.mean(changes), 4),\n            \"max_change\"\
+    : round(max(changes), 4),\n            \"min_change\": round(min(changes), 4),\n            \"change_values\": [round(c,\
+    \ 4) for c in changes],\n            \"status\": \"success\"\n        }\n    \n    def execute_urban_growth_monitoring(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute urban growth monitoring capability.\n        \n  \
+    \      Args:\n            params: Urban monitoring parameters\n            \n        Returns:\n            Urban growth\
+    \ analysis results\n        \"\"\"\n        city = params.get(\"city\", \"TestCity\")\n        start_year = params.get(\"\
+    start_year\", 2018)\n        end_year = params.get(\"end_year\", 2023)\n        \n        # Simulate urban growth data\n\
+    \        urban_area_km2 = {\n            2018: 150.5,\n            2019: 158.2,\n            2020: 165.8,\n          \
+    \  2021: 172.4,\n            2022: 178.9,\n            2023: 185.3\n        }\n        \n        growth_rate = ((urban_area_km2[end_year]\
+    \ - urban_area_km2[start_year]) / \n                      urban_area_km2[start_year]) * 100\n        \n        return\
+    \ {\n            \"city\": city,\n            \"monitoring_period\": f\"{start_year}-{end_year}\",\n            \"initial_area_km2\"\
+    : urban_area_km2[start_year],\n            \"final_area_km2\": urban_area_km2[end_year],\n            \"total_growth_km2\"\
+    : round(urban_area_km2[end_year] - urban_area_km2[start_year], 2),\n            \"growth_rate_percent\": round(growth_rate,\
+    \ 2),\n            \"annual_growth_rate\": round(growth_rate / (end_year - start_year), 2),\n            \"status\": \"\
+    success\"\n        }\n    \n    def execute_disaster_assessment(self, params: Dict[str, Any]) -> Dict[str, Any]:\n   \
+    \     \"\"\"Execute disaster assessment capability.\n        \n        Args:\n            params: Disaster assessment\
+    \ parameters\n            \n        Returns:\n            Disaster assessment results\n        \"\"\"\n        disaster_type\
+    \ = params.get(\"disaster_type\", \"flood\")\n        affected_area = params.get(\"affected_area\", \"TestRegion\")\n\
+    \        assessment_date = params.get(\"assessment_date\", \"2023-07-15\")\n        \n        # Simulate damage assessment\n\
+    \        total_area_km2 = 500\n        affected_area_km2 = 125.5\n        damage_severity = \"moderate\"\n        \n \
+    \       if affected_area_km2 / total_area_km2 > 0.3:\n            damage_severity = \"severe\"\n        elif affected_area_km2\
+    \ / total_area_km2 > 0.15:\n            damage_severity = \"moderate\"\n        else:\n            damage_severity = \"\
+    minor\"\n        \n        return {\n            \"disaster_type\": disaster_type,\n            \"affected_area\": affected_area,\n\
+    \            \"assessment_date\": assessment_date,\n            \"total_area_km2\": total_area_km2,\n            \"affected_area_km2\"\
+    : affected_area_km2,\n            \"damage_percentage\": round((affected_area_km2 / total_area_km2) * 100, 2),\n     \
+    \       \"damage_severity\": damage_severity,\n            \"affected_population_estimate\": int(affected_area_km2 * 150),\
+    \  # Rough estimate\n            \"status\": \"success\"\n        }\n    \n    def execute_water_body_detection(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute water body detection capability.\n        \n     \
+    \   Args:\n            params: Water detection parameters\n            \n        Returns:\n            Water body detection\
+    \ results\n        \"\"\"\n        region = params.get(\"region\", \"TestRegion\")\n        min_area = params.get(\"min_area_hectares\"\
+    , 1.0)\n        \n        # Simulate water detection\n        green_band = [0.05, 0.08, 0.12, 0.15, 0.18, 0.22, 0.25,\
+    \ 0.28, 0.32, 0.35]\n        nir_band = [0.3, 0.35, 0.4, 0.38, 0.33, 0.42, 0.45, 0.4, 0.37, 0.32]\n        \n        ndwi_values\
+    \ = calculate_water_index(green_band, nir_band)\n        \n        # Count water pixels (NDWI > 0)\n        water_pixels\
+    \ = sum(1 for ndwi in ndwi_values if ndwi > 0)\n        water_percentage = (water_pixels / len(ndwi_values)) * 100\n \
+    \       \n        return {\n            \"region\": region,\n            \"water_pixels_detected\": water_pixels,\n  \
+    \          \"water_percentage\": round(water_percentage, 2),\n            \"mean_ndwi\": round(statistics.mean(ndwi_values),\
+    \ 4),\n            \"min_area_hectares\": min_area,\n            \"water_bodies_count\": max(1, int(water_pixels * 0.1)),\
+    \  # Simulated\n            \"status\": \"success\"\n        }\n    \n    def execute_surface_temperature_analysis(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute surface temperature analysis capability.\n       \
+    \ \n        Args:\n            params: Temperature analysis parameters\n            \n        Returns:\n            Temperature\
+    \ analysis results\n        \"\"\"\n        region = params.get(\"region\", \"TestRegion\")\n        temp_range = params.get(\"\
+    temperature_range\", \"15-35\")\n        \n        # Simulate temperature data\n        temp_data = [22.5, 24.8, 26.1,\
+    \ 28.3, 30.5, 32.2, 29.8, 27.6, 25.4, 23.7]\n        \n        anomalies = detect_thermal_anomalies(temp_data, threshold=2.0)\n\
+    \        \n        return {\n            \"region\": region,\n            \"temperature_range\": temp_range,\n       \
+    \     \"mean_temperature\": round(statistics.mean(temp_data), 2),\n            \"max_temperature\": max(temp_data),\n\
+    \            \"min_temperature\": min(temp_data),\n            \"thermal_anomalies_detected\": sum(anomalies),\n     \
+    \       \"anomaly_locations\": [i for i, a in enumerate(anomalies) if a == 1],\n            \"status\": \"success\"\n\
+    \        }\n    \n    def execute_vegetation_health_analysis(self, params: Dict[str, Any]) -> Dict[str, Any]:\n      \
+    \  \"\"\"Execute vegetation health analysis capability.\n        \n        Args:\n            params: Health analysis\
+    \ parameters\n            \n        Returns:\n            Vegetation health analysis results\n        \"\"\"\n       \
+    \ region = params.get(\"region\", \"TestRegion\")\n        monitoring_period = params.get(\"monitoring_period\", \"2023-growing-season\"\
+    )\n        \n        # Simulate health indicators\n        red_band = [0.1, 0.12, 0.15, 0.18, 0.16, 0.14, 0.11, 0.13,\
+    \ 0.17, 0.19]\n        nir_band = [0.4, 0.42, 0.45, 0.48, 0.46, 0.44, 0.41, 0.43, 0.47, 0.49]\n        \n        ndvi_values\
+    \ = calculate_ndvi(red_band, nir_band)\n        \n        # Health assessment\n        healthy_pixels = sum(1 for ndvi\
+    \ in ndvi_values if ndvi > 0.4)\n        total_pixels = len(ndvi_values)\n        health_percentage = (healthy_pixels\
+    \ / total_pixels) * 100\n        \n        return {\n            \"region\": region,\n            \"monitoring_period\"\
+    : monitoring_period,\n            \"mean_ndvi\": round(statistics.mean(ndvi_values), 4),\n            \"healthy_vegetation_percent\"\
+    : round(health_percentage, 2),\n            \"stressed_vegetation_percent\": round(100 - health_percentage, 2),\n    \
+    \        \"health_status\": \"Good\" if health_percentage > 70 else \"Moderate\" if health_percentage > 40 else \"Poor\"\
+    ,\n            \"recommendations\": [\"Continue monitoring\", \"Irrigation recommended\"] if health_percentage < 60 else\
+    \ [\"Maintain current practices\"],\n            \"status\": \"success\"\n        }\n\nimport unittest\n\nclass TestSatelliteRemoteSensingSkill(unittest.TestCase):\n\
+    \    \"\"\"Test cases for Satellite & Remote Sensing skill module.\"\"\"\n    \n    def test_skill_metadata(self):\n \
+    \       \"\"\"Test skill metadata structure and content.\"\"\"\n        self.assertEqual(SKILL_METADATA[\"name\"], \"\
+    Satellite & Remote Sensing\")\n        self.assertEqual(SKILL_METADATA[\"id\"], \"satellite_remote_sensing\")\n      \
+    \  self.assertIn(\"sentinel_data_access\", SKILL_METADATA[\"capabilities\"])\n        self.assertIn(\"ndvi_calculation\"\
+    , SKILL_METADATA[\"capabilities\"])\n        self.assertGreater(len(SKILL_METADATA[\"capabilities\"]), 8)\n    \n    def\
+    \ test_expert_prompts(self):\n        \"\"\"Test expert prompts dictionary.\"\"\"\n        self.assertIn(\"sentinel_data_query\"\
+    , EXPERT_PROMPTS)\n        self.assertIn(\"ndvi_analysis\", EXPERT_PROMPTS)\n        self.assertIn(\"change_detection\"\
+    , EXPERT_PROMPTS)\n        self.assertIn(\"{region}\", EXPERT_PROMPTS[\"sentinel_data_query\"])\n        self.assertIn(\"\
+    {start_date}\", EXPERT_PROMPTS[\"ndvi_analysis\"])\n    \n    def test_integration_points(self):\n        \"\"\"Test integration\
+    \ points configuration.\"\"\"\n        self.assertIn(\"copernicus_open_access_hub\", INTEGRATION_POINTS)\n        self.assertIn(\"\
+    nasa_earthdata\", INTEGRATION_POINTS)\n        self.assertEqual(INTEGRATION_POINTS[\"sentinel_hub\"][\"type\"], \"api\"\
+    )\n        self.assertEqual(INTEGRATION_POINTS[\"eodag\"][\"type\"], \"tool\")\n    \n    def test_validate_coordinates(self):\n\
+    \        \"\"\"Test coordinate validation function.\"\"\"\n        self.assertTrue(validate_coordinates(45.5, 122.3))\n\
+    \        self.assertTrue(validate_coordinates(-45.5, -122.3))\n        self.assertFalse(validate_coordinates(91.0, 122.3))\n\
+    \        self.assertFalse(validate_coordinates(45.5, 181.0))\n        self.assertFalse(validate_coordinates(-91.0, 122.3))\n\
+    \    \n    def test_calculate_ndvi(self):\n        \"\"\"Test NDVI calculation.\"\"\"\n        red = [0.1, 0.2, 0.3]\n\
+    \        nir = [0.4, 0.5, 0.6]\n        ndvi = calculate_ndvi(red, nir)\n        self.assertEqual(len(ndvi), 3)\n    \
+    \    self.assertAlmostEqual(ndvi[0], (0.4 - 0.1) / (0.4 + 0.1), places=4)\n        self.assertAlmostEqual(ndvi[1], (0.5\
+    \ - 0.2) / (0.5 + 0.2), places=4)\n    \n    def test_detect_cloud_coverage(self):\n        \"\"\"Test cloud coverage\
+    \ detection.\"\"\"\n        rgb = [\n            [0.8, 0.1, 0.2],  # Red band\n            [0.9, 0.15, 0.25],  # Green\
+    \ band\n            [0.85, 0.12, 0.22]   # Blue band\n        ]\n        coverage = detect_cloud_coverage(rgb, threshold=0.5)\n\
+    \        self.assertGreaterEqual(coverage, 0)\n        self.assertLessEqual(coverage, 100)\n    \n    def test_calculate_change_detection(self):\n\
+    \        \"\"\"Test change detection calculation.\"\"\"\n        before = [0.2, 0.3, 0.4]\n        after = [0.25, 0.35,\
+    \ 0.45]\n        changes = calculate_change_detection(before, after, method=\"difference\")\n        self.assertEqual(len(changes),\
+    \ 3)\n        self.assertAlmostEqual(changes[0], 0.05, places=4)\n        \n        with self.assertRaises(ValueError):\n\
+    \            calculate_change_detection([1, 2], [1, 2, 3], method=\"difference\")\n    \n    def test_build_sentinel_query(self):\n\
+    \        \"\"\"Test Sentinel query building.\"\"\"\n        query = build_sentinel_query(\"TestRegion\", \"2023-01-01\"\
+    , \"2023-12-31\", 5, \"S2MSI2A\")\n        self.assertEqual(query[\"region\"], \"TestRegion\")\n        self.assertEqual(query[\"\
+    start\"], \"2023-01-01\")\n        self.assertEqual(query[\"end\"], \"2023-12-31\")\n        self.assertEqual(query[\"\
+    cloud_cover\"], \"[0,5]\")\n        self.assertEqual(query[\"product_type\"], \"S2MSI2A\")\n    \n    def test_generate_vegetation_report(self):\n\
+    \        \"\"\"Test vegetation report generation.\"\"\"\n        ndvi_values = [0.1, 0.3, 0.5, 0.7, 0.4]\n        report\
+    \ = generate_vegetation_report(ndvi_values, \"TestRegion\", (\"2023-01-01\", \"2023-12-31\"))\n        self.assertEqual(report[\"\
+    region\"], \"TestRegion\")\n        self.assertEqual(report[\"date_range\"], \"2023-01-01 to 2023-12-31\")\n        self.assertAlmostEqual(report[\"\
+    mean_ndvi\"], 0.4, places=4)\n        self.assertIn(\"vegetation_health\", report)\n    \n    def test_estimate_spatial_resolution(self):\n\
+    \        \"\"\"Test spatial resolution estimation.\"\"\"\n        self.assertEqual(estimate_spatial_resolution(\"Sentinel-2\"\
+    ), 10.0)\n        self.assertEqual(estimate_spatial_resolution(\"Landsat-8\"), 30.0)\n        self.assertEqual(estimate_spatial_resolution(\"\
+    MODIS\"), 250.0)\n        self.assertEqual(estimate_spatial_resolution(\"Unknown\"), 10.0)\n    \n    def test_calculate_water_index(self):\n\
+    \        \"\"\"Test water index calculation.\"\"\"\n        green = [0.1, 0.2, 0.3]\n        nir = [0.4, 0.5, 0.6]\n \
+    \       ndwi = calculate_water_index(green, nir)\n        self.assertEqual(len(ndwi), 3)\n        expected = [(0.1-0.4)/(0.1+0.4),\
+    \ (0.2-0.5)/(0.2+0.5), (0.3-0.6)/(0.3+0.6)]\n        for i, (actual, expect) in enumerate(zip(ndwi, expected)):\n    \
+    \        self.assertAlmostEqual(actual, expect, places=4)\n    \n    def test_detect_thermal_anomalies(self):\n      \
+    \  \"\"\"Test thermal anomaly detection.\"\"\"\n        temp_data = [20.0, 22.0, 21.0, 35.0, 20.5]  # 35.0 is anomaly\n\
+    \        anomalies = detect_thermal_anomalies(temp_data, threshold=2.0)\n        self.assertEqual(len(anomalies), 5)\n\
+    \        self.assertEqual(anomalies[3], 1)  # Anomaly detected\n        self.assertEqual(sum(anomalies), 1)\n    \n  \
+    \  def test_generate_data_access_url(self):\n        \"\"\"Test data access URL generation.\"\"\"\n        url = generate_data_access_url(\"\
+    copernicus\", \"test_product_id\")\n        self.assertIn(\"scihub.copernicus.eu\", url)\n        self.assertIn(\"test_product_id\"\
+    , url)\n        \n        url = generate_data_access_url(\"planet\", \"test_id\", \"test_token\")\n        self.assertIn(\"\
+    api.planet.com\", url)\n        self.assertIn(\"test_token\", url)\n    \n    def test_skill_engine_initialization(self):\n\
+    \        \"\"\"Test SkillEngine initialization.\"\"\"\n        config = {\"api_keys\": {\"test\": \"key\"}, \"endpoints\"\
+    : {\"test\": \"endpoint\"}}\n        engine = SkillEngine(config)\n        self.assertEqual(engine.config, config)\n \
+    \       self.assertIsNotNone(engine.logger)\n        self.assertIsNotNone(engine.session)\n    \n    def test_skill_engine_run_invalid_capability(self):\n\
+    \        \"\"\"Test SkillEngine with invalid capability.\"\"\"\n        engine = SkillEngine({})\n        with self.assertRaises(ValueError):\n\
+    \            engine.run(\"invalid_capability\", {})\n    \n    def test_skill_engine_sentinel_data_access(self):\n   \
+    \     \"\"\"Test Sentinel data access execution.\"\"\"\n        engine = SkillEngine({})\n        params = {\n       \
+    \     \"region\": \"TestRegion\",\n            \"start_date\": \"2023-01-01\",\n            \"end_date\": \"2023-12-31\"\
+    ,\n            \"max_cloud_cover\": 10\n        }\n        result = engine.execute_sentinel_data_access(params)\n    \
+    \    self.assertEqual(result[\"status\"], \"success\")\n        self.assertIn(\"scenes_found\", result)\n        self.assertIn(\"\
+    recommended_scenes\", result)\n    \n    def test_skill_engine_ndvi_calculation(self):\n        \"\"\"Test NDVI calculation\
+    \ execution.\"\"\"\n        engine = SkillEngine({})\n        params = {\n            \"region\": \"TestRegion\",\n  \
+    \          \"start_date\": \"2023-06-01\",\n            \"end_date\": \"2023-06-30\"\n        }\n        result = engine.execute_ndvi_calculation(params)\n\
+    \        self.assertEqual(result[\"status\"], \"success\")\n        self.assertIn(\"ndvi_values\", result)\n        self.assertIn(\"\
+    analysis_report\", result)\n        self.assertEqual(len(result[\"ndvi_values\"]), 10)\n    \n    def test_skill_engine_change_detection(self):\n\
+    \        \"\"\"Test change detection execution.\"\"\"\n        engine = SkillEngine({})\n        params = {\n        \
+    \    \"date1\": \"2023-01-01\",\n            \"date2\": \"2023-12-31\",\n            \"method\": \"difference\",\n   \
+    \         \"region\": \"TestRegion\"\n        }\n        result = engine.execute_change_detection(params)\n        self.assertEqual(result[\"\
+    status\"], \"success\")\n        self.assertIn(\"change_values\", result)\n        self.assertIn(\"mean_change\", result)\n\
+    \        self.assertEqual(len(result[\"change_values\"]), 10)\n    \n    def test_skill_engine_urban_growth_monitoring(self):\n\
+    \        \"\"\"Test urban growth monitoring execution.\"\"\"\n        engine = SkillEngine({})\n        params = {\n \
+    \           \"city\": \"TestCity\",\n            \"start_year\": 2018,\n            \"end_year\": 2023\n        }\n  \
+    \      result = engine.execute_urban_growth_monitoring(params)\n        self.assertEqual(result[\"status\"], \"success\"\
+    )\n        self.assertIn(\"total_growth_km2\", result)\n        self.assertIn(\"growth_rate_percent\", result)\n     \
+    \   self.assertGreater(result[\"growth_rate_percent\"], 0)\n    \n    def test_skill_engine_disaster_assessment(self):\n\
+    \        \"\"\"Test disaster assessment execution.\"\"\"\n        engine = SkillEngine({})\n        params = {\n     \
+    \       \"disaster_type\": \"flood\",\n            \"affected_area\": \"TestRegion\",\n            \"assessment_date\"\
+    : \"2023-07-15\"\n        }\n        result = engine.execute_disaster_assessment(params)\n        self.assertEqual(result[\"\
+    status\"], \"success\")\n        self.assertIn(\"damage_percentage\", result)\n        self.assertIn(\"damage_severity\"\
+    , result)\n        self.assertIn(\"affected_population_estimate\", result)\n    \n    def test_skill_engine_water_body_detection(self):\n\
+    \        \"\"\"Test water body detection execution.\"\"\"\n        engine = SkillEngine({})\n        params = {\n    \
+    \        \"region\": \"TestRegion\",\n            \"min_area_hectares\": 1.0\n        }\n        result = engine.execute_water_body_detection(params)\n\
+    \        self.assertEqual(result[\"status\"], \"success\")\n        self.assertIn(\"water_percentage\", result)\n    \
+    \    self.assertIn(\"water_bodies_count\", result)\n        self.assertGreaterEqual(result[\"water_percentage\"], 0)\n\
+    \    \n    def test_skill_engine_surface_temperature_analysis(self):\n        \"\"\"Test surface temperature analysis\
+    \ execution.\"\"\"\n        engine = SkillEngine({})\n        params = {\n            \"region\": \"TestRegion\",\n  \
+    \          \"temperature_range\": \"15-35\"\n        }\n        result = engine.execute_surface_temperature_analysis(params)\n\
+    \        self.assertEqual(result[\"status\"], \"success\")\n        self.assertIn(\"mean_temperature\", result)\n    \
+    \    self.assertIn(\"thermal_anomalies_detected\", result)\n        self.assertGreaterEqual(result[\"thermal_anomalies_detected\"\
+    ], 0)\n    \n    def test_skill_engine_vegetation_health_analysis(self):\n        \"\"\"Test vegetation health analysis\
+    \ execution.\"\"\"\n        engine = SkillEngine({})\n        params = {\n            \"region\": \"TestRegion\",\n  \
+    \          \"monitoring_period\": \"2023-growing-season\"\n        }\n        result = engine.execute_vegetation_health_analysis(params)\n\
+    \        self.assertEqual(result[\"status\"], \"success\")\n        self.assertIn(\"healthy_vegetation_percent\", result)\n\
+    \        self.assertIn(\"health_status\", result)\n        self.assertIn(\"recommendations\", result)\n        self.assertGreaterEqual(result[\"\
+    healthy_vegetation_percent\"], 0)\n        self.assertLessEqual(result[\"healthy_vegetation_percent\"], 100)\n\nif __name__\
+    \ == \"__main__\":\n    unittest.main()"
+examples:
+- description: Load and use the Satellite & Remote Sensing skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''satellite_remote_sensing'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

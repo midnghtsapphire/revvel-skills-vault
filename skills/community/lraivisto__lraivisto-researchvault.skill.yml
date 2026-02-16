@@ -1,0 +1,70 @@
+name: researchvault
+title: ResearchVault (Mind)
+version: 2.1.0
+description: '"High-velocity research orchestration engine. Manages persistent state, synthesis, and autonomous verification
+  for agents."'
+metadata:
+  author: lraivisto
+  category: Search & Research
+  tags:
+  - search-research
+  - researchvault
+  source: clawhub-community
+  clawhub_slug: lraivisto-researchvault
+  clawhub_path: lraivisto/lraivisto-researchvault
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ResearchVault (Mind)
+
+    # Source: ClawHub community skill by lraivisto
+
+    # Install: clawhub install lraivisto-researchvault
+
+    # Path: lraivisto/lraivisto-researchvault
+
+
+    ## Description
+
+    "High-velocity research orchestration engine. Manages persistent state, synthesis, and autonomous verification for agents."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - main.py
+
+    - pyproject.toml
+
+    - scripts/__init__.py
+
+    - scripts/core.py
+
+    - scripts/db.py
+
+    - scripts/heartbeat_scuttle.py
+
+    - scripts/mcp_server.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lraivisto-researchvault
+
+    ```'
+examples:
+- description: Install ResearchVault (Mind) from ClawHub
+  usage: clawhub install lraivisto-researchvault
+schema_version: '1.0'

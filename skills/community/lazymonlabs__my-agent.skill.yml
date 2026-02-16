@@ -1,0 +1,56 @@
+name: my-agent
+title: Conscious OS Agent
+version: 1.2.1
+description: ''
+metadata:
+  author: lazymonlabs
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  source: clawhub-community
+  clawhub_slug: my-agent
+  clawhub_path: lazymonlabs/my-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Conscious OS Agent
+
+    # Source: ClawHub community skill by lazymonlabs
+
+    # Install: clawhub install my-agent
+
+    # Path: lazymonlabs/my-agent
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - heartbeat.js
+
+    - index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install my-agent
+
+    ```'
+examples:
+- description: Install Conscious OS Agent from ClawHub
+  usage: clawhub install my-agent
+schema_version: '1.0'

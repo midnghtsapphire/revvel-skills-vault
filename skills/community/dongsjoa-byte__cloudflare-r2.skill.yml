@@ -1,0 +1,57 @@
+name: cloudflare-r2
+title: Cloudflare R2
+version: 1.0.0
+description: Upload files to Cloudflare R2 storage using wrangler CLI. Use when needing to upload images, videos, or files
+  to R2 for CDN hosting, or manage R2 bucket contents. Triggers on "upload to R2", "upload to Cloudflare", "上传到R2", "存到CDN".
+metadata:
+  author: dongsjoa-byte
+  category: Media & Content
+  tags:
+  - media-content
+  - cloudflare
+  source: clawhub-community
+  clawhub_slug: cloudflare-r2
+  clawhub_path: dongsjoa-byte/cloudflare-r2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cloudflare R2
+
+    # Source: ClawHub community skill by dongsjoa-byte
+
+    # Install: clawhub install cloudflare-r2
+
+    # Path: dongsjoa-byte/cloudflare-r2
+
+
+    ## Description
+
+    Upload files to Cloudflare R2 storage using wrangler CLI. Use when needing to upload images, videos, or files to R2 for
+    CDN hosting, or manage R2 bucket contents. Triggers on "upload to R2", "upload to Cloudflare", "上传到R2", "存到CDN".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/r2-upload.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cloudflare-r2
+
+    ```'
+examples:
+- description: Install Cloudflare R2 from ClawHub
+  usage: clawhub install cloudflare-r2
+schema_version: '1.0'

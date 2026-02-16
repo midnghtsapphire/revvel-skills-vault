@@ -1,0 +1,73 @@
+name: siyuan-task
+title: siyuan-task-skill
+version: 1.0.0
+description: Manage tasks in SiYuan Note via its HTTP API. Create, query, update, and organize tasks stored in the 任务清单 document
+  (with a TASK database) and sub-documents for related materials. Use when the user mentions SiYuan, task management, or needs
+  to track work items.
+metadata:
+  author: zhhkheaven
+  category: Development & Coding
+  tags:
+  - development-coding
+  - siyuan
+  - task
+  - bash(python3:*)
+  source: clawhub-community
+  clawhub_slug: siyuan-task-skill
+  clawhub_path: zhhkheaven/siyuan-task-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(python3:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# siyuan-task-skill
+
+    # Source: ClawHub community skill by zhhkheaven
+
+    # Install: clawhub install siyuan-task-skill
+
+    # Path: zhhkheaven/siyuan-task-skill
+
+
+    ## Description
+
+    Manage tasks in SiYuan Note via its HTTP API. Create, query, update, and organize tasks stored in the 任务清单 document (with
+    a TASK database) and sub-documents for related materials. Use when the user mentions SiYuan, task management, or needs
+    to track work items.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.env
+
+    - references/API.md
+
+    - scripts/siyuan_api.py
+
+    - scripts/task_ops.py
+
+
+    ## Allowed Tools
+
+    Bash(python3:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install siyuan-task-skill
+
+    ```'
+examples:
+- description: Install siyuan-task-skill from ClawHub
+  usage: clawhub install siyuan-task-skill
+schema_version: '1.0'

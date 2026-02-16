@@ -1,0 +1,55 @@
+name: books
+title: Books
+version: 1.0.0
+description: '"CLI for AI agents to search and lookup books for their humans. Uses Open Library API. No auth required."'
+metadata:
+  author: jeffaf
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - books
+  source: clawhub-community
+  clawhub_slug: books
+  clawhub_path: jeffaf/books
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Books
+
+    # Source: ClawHub community skill by jeffaf
+
+    # Install: clawhub install books
+
+    # Path: jeffaf/books
+
+
+    ## Description
+
+    "CLI for AI agents to search and lookup books for their humans. Uses Open Library API. No auth required."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install books
+
+    ```'
+examples:
+- description: Install Books from ClawHub
+  usage: clawhub install books
+schema_version: '1.0'

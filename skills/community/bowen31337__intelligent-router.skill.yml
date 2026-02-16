@@ -1,0 +1,68 @@
+name: intelligent-router
+title: Intelligent Router
+version: 2.0.0
+description: Intelligent model routing for sub-agent task delegation. Choose the optimal model based on task complexity, cost,
+  and capability requirements. Reduces costs by routing simple tasks to cheaper models while preserving quality for complex
+  work.
+metadata:
+  author: bowen31337
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - intelligent
+  - router
+  source: clawhub-community
+  clawhub_slug: intelligent-router
+  clawhub_path: bowen31337/intelligent-router
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Intelligent Router
+
+    # Source: ClawHub community skill by bowen31337
+
+    # Install: clawhub install intelligent-router
+
+    # Path: bowen31337/intelligent-router
+
+
+    ## Description
+
+    Intelligent model routing for sub-agent task delegation. Choose the optimal model based on task complexity, cost, and
+    capability requirements. Reduces costs by routing simple tasks to cheaper models while preserving quality for complex
+    work.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - references/examples.md
+
+    - references/model-catalog.md
+
+    - scripts/router.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install intelligent-router
+
+    ```'
+examples:
+- description: Install Intelligent Router from ClawHub
+  usage: clawhub install intelligent-router
+schema_version: '1.0'

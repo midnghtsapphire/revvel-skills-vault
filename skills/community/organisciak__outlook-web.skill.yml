@@ -1,0 +1,67 @@
+name: outlook-web
+title: Outlook Web
+version: 1.0.0
+description: Access Outlook Web for email and calendar operations - reading, composing (as drafts by default), searching,
+  and managing emails and calendar events. Use when the user needs to check email, draft messages, search inbox, view calendar,
+  or manage their Outlook mailbox.
+metadata:
+  author: organisciak
+  category: Search & Research
+  tags:
+  - search-research
+  - outlook
+  - web
+  - bash(playwright-cli:*)
+  source: clawhub-community
+  clawhub_slug: outlook-web
+  clawhub_path: organisciak/outlook-web
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(playwright-cli:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Outlook Web
+
+    # Source: ClawHub community skill by organisciak
+
+    # Install: clawhub install outlook-web
+
+    # Path: organisciak/outlook-web
+
+
+    ## Description
+
+    Access Outlook Web for email and calendar operations - reading, composing (as drafts by default), searching, and managing
+    emails and calendar events. Use when the user needs to check email, draft messages, search inbox, view calendar, or manage
+    their Outlook mailbox.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/ui-patterns.md
+
+
+    ## Allowed Tools
+
+    Bash(playwright-cli:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install outlook-web
+
+    ```'
+examples:
+- description: Install Outlook Web from ClawHub
+  usage: clawhub install outlook-web
+schema_version: '1.0'

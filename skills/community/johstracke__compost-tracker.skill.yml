@@ -1,0 +1,60 @@
+name: compost-tracker
+title: Compost Tracker
+version: 1.0.0
+description: Track compost piles, monitor temperature, record turns, and manage your organic waste decomposition. Perfect
+  for home gardeners and small farms.
+metadata:
+  author: johstracke
+  category: System & OS
+  tags:
+  - system-os
+  - compost
+  - tracker
+  source: clawhub-community
+  clawhub_slug: compost-tracker
+  clawhub_path: johstracke/compost-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Compost Tracker
+
+    # Source: ClawHub community skill by johstracke
+
+    # Install: clawhub install compost-tracker
+
+    # Path: johstracke/compost-tracker
+
+
+    ## Description
+
+    Track compost piles, monitor temperature, record turns, and manage your organic waste decomposition. Perfect for home
+    gardeners and small farms.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/compost_tracker.py
+
+    - scripts/compost_tracker_db.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install compost-tracker
+
+    ```'
+examples:
+- description: Install Compost Tracker from ClawHub
+  usage: clawhub install compost-tracker
+schema_version: '1.0'

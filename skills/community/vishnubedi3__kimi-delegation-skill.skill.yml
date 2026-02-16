@@ -1,0 +1,74 @@
+name: kimi-delegation-skill
+title: kimi-delegation-skill
+version: 1.0.0
+description: Forces all reasoning and code generation to be delegated to a KIMI (KIMMY) causal language model via HuggingFace
+  Transformers. Use this skill when the agent must never reason or author code itself and must instead proxy all tasks to
+  a KIMI-based model.
+metadata:
+  author: vishnubedi3
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - kimi
+  - delegation
+  - skill
+  - python(read write)
+  source: clawhub-community
+  clawhub_slug: kimi-delegation-skill
+  clawhub_path: vishnubedi3/kimi-delegation-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Python(Read Write)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# kimi-delegation-skill
+
+    # Source: ClawHub community skill by vishnubedi3
+
+    # Install: clawhub install kimi-delegation-skill
+
+    # Path: vishnubedi3/kimi-delegation-skill
+
+
+    ## Description
+
+    Forces all reasoning and code generation to be delegated to a KIMI (KIMMY) causal language model via HuggingFace Transformers.
+    Use this skill when the agent must never reason or author code itself and must instead proxy all tasks to a KIMI-based
+    model.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/README.md
+
+    - references/REFERENCE.md
+
+    - scripts/kimi_skill.py
+
+    - scripts/qwen3_coder.py
+
+
+    ## Allowed Tools
+
+    Python(Read Write)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kimi-delegation-skill
+
+    ```'
+examples:
+- description: Install kimi-delegation-skill from ClawHub
+  usage: clawhub install kimi-delegation-skill
+schema_version: '1.0'

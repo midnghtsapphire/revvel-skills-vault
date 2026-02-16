@@ -1,0 +1,53 @@
+name: pubmed
+title: PubMed
+version: 1.0.0
+description: Search and evaluate biomedical literature with effective queries, filters, and critical appraisal.
+metadata:
+  author: ivangdavila
+  category: Search & Research
+  tags:
+  - search-research
+  - pubmed
+  source: clawhub-community
+  clawhub_slug: pubmed
+  clawhub_path: ivangdavila/pubmed
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PubMed
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install pubmed
+
+    # Path: ivangdavila/pubmed
+
+
+    ## Description
+
+    Search and evaluate biomedical literature with effective queries, filters, and critical appraisal.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pubmed
+
+    ```'
+examples:
+- description: Install PubMed from ClawHub
+  usage: clawhub install pubmed
+schema_version: '1.0'

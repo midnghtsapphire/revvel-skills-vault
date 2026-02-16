@@ -1,0 +1,69 @@
+name: pi-admin
+title: Pi Admin
+version: 1.0.0
+description: Raspberry Pi system administration. Monitor resources, manage services, perform updates and maintenance.
+metadata:
+  author: thesethrose
+  category: System & OS
+  tags:
+  - system-os
+  - admin
+  source: clawhub-community
+  clawhub_slug: pi-admin
+  clawhub_path: thesethrose/pi-admin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pi Admin
+
+    # Source: ClawHub community skill by thesethrose
+
+    # Install: clawhub install pi-admin
+
+    # Path: thesethrose/pi-admin
+
+
+    ## Description
+
+    Raspberry Pi system administration. Monitor resources, manage services, perform updates and maintenance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clean.sh
+
+    - hardware.sh
+
+    - network.sh
+
+    - optimize.sh
+
+    - overview.sh
+
+    - reboot.sh
+
+    - resources.sh
+
+    - restart-gateway.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pi-admin
+
+    ```'
+examples:
+- description: Install Pi Admin from ClawHub
+  usage: clawhub install pi-admin
+schema_version: '1.0'

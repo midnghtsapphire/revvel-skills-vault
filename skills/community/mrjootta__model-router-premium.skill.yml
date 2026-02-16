@@ -1,0 +1,61 @@
+name: model-router-premium
+title: Model Router
+version: 0.1.1
+description: Route model requests based on configured models, costs and task complexity. Use for routing general/low-complexity
+  requests to the cheapest available model and for higher-complexity requests to stronger models.
+metadata:
+  author: mrjootta
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - model
+  - router
+  - premium
+  source: clawhub-community
+  clawhub_slug: model-router-premium
+  clawhub_path: mrjootta/model-router-premium
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Model Router
+
+    # Source: ClawHub community skill by mrjootta
+
+    # Install: clawhub install model-router-premium
+
+    # Path: mrjootta/model-router-premium
+
+
+    ## Description
+
+    Route model requests based on configured models, costs and task complexity. Use for routing general/low-complexity requests
+    to the cheapest available model and for higher-complexity requests to stronger models.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/models.json
+
+    - scripts/router.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install model-router-premium
+
+    ```'
+examples:
+- description: Install Model Router from ClawHub
+  usage: clawhub install model-router-premium
+schema_version: '1.0'

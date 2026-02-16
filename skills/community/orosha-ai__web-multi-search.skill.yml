@@ -1,0 +1,63 @@
+name: web-multi-search
+title: Web Multi Search
+version: 0.1.0
+description: Search the web using multiple search engines simultaneously (Bing, Yahoo, Startpage, Aol, Ask) via async-search-scraper,
+  iterating through result pages.
+metadata:
+  author: orosha-ai
+  category: Search & Research
+  tags:
+  - search-research
+  - web
+  - multi
+  - search
+  source: clawhub-community
+  clawhub_slug: web-multi-search
+  clawhub_path: orosha-ai/web-multi-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Web Multi Search
+
+    # Source: ClawHub community skill by orosha-ai
+
+    # Install: clawhub install web-multi-search
+
+    # Path: orosha-ai/web-multi-search
+
+
+    ## Description
+
+    Search the web using multiple search engines simultaneously (Bing, Yahoo, Startpage, Aol, Ask) via async-search-scraper,
+    iterating through result pages.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - web_multi_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install web-multi-search
+
+    ```'
+examples:
+- description: Install Web Multi Search from ClawHub
+  usage: clawhub install web-multi-search
+schema_version: '1.0'

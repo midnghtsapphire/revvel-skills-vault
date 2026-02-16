@@ -1,0 +1,65 @@
+name: overseerr
+title: Overseerr
+version: 0.1.0
+description: Request movies/TV and monitor request status via the Overseerr API (stable Overseerr, not the beta Seerr rewrite).
+metadata:
+  author: j1philli
+  category: Development & Coding
+  tags:
+  - development-coding
+  - overseerr
+  source: clawhub-community
+  clawhub_slug: overseerr
+  clawhub_path: j1philli/overseerr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Overseerr
+
+    # Source: ClawHub community skill by j1philli
+
+    # Install: clawhub install overseerr
+
+    # Path: j1philli/overseerr
+
+
+    ## Description
+
+    Request movies/TV and monitor request status via the Overseerr API (stable Overseerr, not the beta Seerr rewrite).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/lib.mjs
+
+    - scripts/monitor.mjs
+
+    - scripts/request-by-id.mjs
+
+    - scripts/request.mjs
+
+    - scripts/requests.mjs
+
+    - scripts/search.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install overseerr
+
+    ```'
+examples:
+- description: Install Overseerr from ClawHub
+  usage: clawhub install overseerr
+schema_version: '1.0'

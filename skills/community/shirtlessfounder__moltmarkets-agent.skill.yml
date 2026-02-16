@@ -1,0 +1,68 @@
+name: moltmarkets-agent
+title: MoltMarkets Agent
+version: 1.0.1
+description: Complete MoltMarkets trading agent setup with autonomous trader, market creator, and resolution crons. Use when
+  setting up a new MoltMarkets agent, configuring trading bots, or replicating the bicep agent architecture. Includes Kelly
+  criterion betting, learning loops, and degenerate trader personali
+metadata:
+  author: shirtlessfounder
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - moltmarkets
+  - agent
+  source: clawhub-community
+  clawhub_slug: moltmarkets-agent
+  clawhub_path: shirtlessfounder/moltmarkets-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MoltMarkets Agent
+
+    # Source: ClawHub community skill by shirtlessfounder
+
+    # Install: clawhub install moltmarkets-agent
+
+    # Path: shirtlessfounder/moltmarkets-agent
+
+
+    ## Description
+
+    Complete MoltMarkets trading agent setup with autonomous trader, market creator, and resolution crons. Use when setting
+    up a new MoltMarkets agent, configuring trading bots, or replicating the bicep agent architecture. Includes Kelly criterion
+    betting, learning loops, and degenerate trader personali
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - references/cron-definitions.md
+
+    - references/kelly-formula.md
+
+    - references/memory-templates.md
+
+    - scripts/setup.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltmarkets-agent
+
+    ```'
+examples:
+- description: Install MoltMarkets Agent from ClawHub
+  usage: clawhub install moltmarkets-agent
+schema_version: '1.0'

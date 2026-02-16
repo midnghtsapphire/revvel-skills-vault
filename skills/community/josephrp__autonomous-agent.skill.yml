@@ -1,0 +1,74 @@
+name: autonomous-agent
+title: Autonomous Agent Skills
+version: 2.1.1
+description: CornerStone MCP x402 skill for agents. Tools for stock predictions, backtests, bank linking, and agent/borrower
+  scores. Payment-protected MCP tools (run_prediction, run_backtest, link_bank_account, get_agent_reputation_score, get_borrower_score,
+  by-email variants) with x402 flow (Aptos + Base). Skil
+metadata:
+  author: josephrp
+  category: Communication
+  tags:
+  - communication
+  - autonomous
+  - agent
+  source: clawhub-community
+  clawhub_slug: autonomous-agent
+  clawhub_path: josephrp/autonomous-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Autonomous Agent Skills
+
+    # Source: ClawHub community skill by josephrp
+
+    # Install: clawhub install autonomous-agent
+
+    # Path: josephrp/autonomous-agent
+
+
+    ## Description
+
+    CornerStone MCP x402 skill for agents. Tools for stock predictions, backtests, bank linking, and agent/borrower scores.
+    Payment-protected MCP tools (run_prediction, run_backtest, link_bank_account, get_agent_reputation_score, get_borrower_score,
+    by-email variants) with x402 flow (Aptos + Base). Skil
+
+
+    ## Files
+
+    - LICENSE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - .moltbot/skills/moltbook/HEARTBEAT.md
+
+    - .moltbot/skills/moltbook/MESSAGING.md
+
+    - .moltbot/skills/moltbook/SKILL.md
+
+    - .moltbot/skills/moltbook/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install autonomous-agent
+
+    ```'
+examples:
+- description: Install Autonomous Agent Skills from ClawHub
+  usage: clawhub install autonomous-agent
+schema_version: '1.0'

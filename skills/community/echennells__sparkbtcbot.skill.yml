@@ -1,0 +1,71 @@
+name: sparkbtcbot
+title: Spark Bitcoin & Lightning Wallet for AI Agents
+version: 0.2.0
+description: Set up Spark Bitcoin L2 wallet capabilities for AI agents. Initialize wallets from mnemonic, transfer sats and
+  tokens, create/pay Lightning invoices, manage deposits and withdrawals. Use when user mentions "Spark wallet," "Spark Bitcoin,"
+  "BTKN tokens," "Spark L2," "Spark SDK," "Spark payment," "Spa
+metadata:
+  author: echennells
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - sparkbtcbot
+  source: clawhub-community
+  clawhub_slug: sparkbtcbot
+  clawhub_path: echennells/sparkbtcbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Spark Bitcoin & Lightning Wallet for AI Agents
+
+    # Source: ClawHub community skill by echennells
+
+    # Install: clawhub install sparkbtcbot
+
+    # Path: echennells/sparkbtcbot
+
+
+    ## Description
+
+    Set up Spark Bitcoin L2 wallet capabilities for AI agents. Initialize wallets from mnemonic, transfer sats and tokens,
+    create/pay Lightning invoices, manage deposits and withdrawals. Use when user mentions "Spark wallet," "Spark Bitcoin,"
+    "BTKN tokens," "Spark L2," "Spark SDK," "Spark payment," "Spa
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - examples/balance-and-deposits.js
+
+    - examples/payment-flow.js
+
+    - examples/spark-agent.js
+
+    - examples/token-operations.js
+
+    - examples/wallet-setup.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sparkbtcbot
+
+    ```'
+examples:
+- description: Install Spark Bitcoin & Lightning Wallet for AI Agents from ClawHub
+  usage: clawhub install sparkbtcbot
+schema_version: '1.0'

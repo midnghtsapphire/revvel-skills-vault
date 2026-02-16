@@ -1,0 +1,67 @@
+name: skillvet
+title: Skillvet
+version: 2.0.8
+description: '"Security scanner for ClawHub/community skills — detects malware, credential theft, exfiltration, prompt injection,
+  obfuscation, homograph attacks, ANSI injection, campaign-specific attack patterns, and more before you install. Use when
+  installing skills from ClawHub or any public marketplace, revie'
+metadata:
+  author: oakencore
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skillvet
+  source: clawhub-community
+  clawhub_slug: skillvet
+  clawhub_path: oakencore/skillvet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skillvet
+
+    # Source: ClawHub community skill by oakencore
+
+    # Install: clawhub install skillvet
+
+    # Path: oakencore/skillvet
+
+
+    ## Description
+
+    "Security scanner for ClawHub/community skills — detects malware, credential theft, exfiltration, prompt injection, obfuscation,
+    homograph attacks, ANSI injection, campaign-specific attack patterns, and more before you install. Use when installing
+    skills from ClawHub or any public marketplace, revie
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/diff-scan.sh
+
+    - scripts/safe-install.sh
+
+    - scripts/scan-remote.sh
+
+    - scripts/skill-audit.sh
+
+    - tests/run-tests.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skillvet
+
+    ```'
+examples:
+- description: Install Skillvet from ClawHub
+  usage: clawhub install skillvet
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: baidu-scholar-search-skill
+title: baidu scholar search
+version: 1.1.0
+description: Baidu Scholar Search - Search Chinese and English academic literature (journals, conferences, papers, etc.)
+metadata:
+  author: ide-rea
+  category: Search & Research
+  tags:
+  - search-research
+  - baidu
+  - scholar
+  - search
+  - skill
+  source: clawhub-community
+  clawhub_slug: baidu-scholar-search-skill
+  clawhub_path: ide-rea/baidu-scholar-search-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# baidu scholar search
+
+    # Source: ClawHub community skill by ide-rea
+
+    # Install: clawhub install baidu-scholar-search-skill
+
+    # Path: ide-rea/baidu-scholar-search-skill
+
+
+    ## Description
+
+    Baidu Scholar Search - Search Chinese and English academic literature (journals, conferences, papers, etc.)
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - baidu_scholar_search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install baidu-scholar-search-skill
+
+    ```'
+examples:
+- description: Install baidu scholar search from ClawHub
+  usage: clawhub install baidu-scholar-search-skill
+schema_version: '1.0'

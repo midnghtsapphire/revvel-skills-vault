@@ -1,0 +1,62 @@
+name: scryfall-mtg
+title: mtg-edh-deckbuilder
+version: 1.0.3
+description: '"Search and retrieve Magic: The Gathering card data using the Scryfall API. Use this skill when the user asks
+  about MTG cards, wants to search for cards by name, type, color, mana cost, oracle text, set, or any other card attribute.
+  Also use for getting card images, prices, rulings, legality informa'
+metadata:
+  author: santidev95
+  category: Search & Research
+  tags:
+  - search-research
+  - scryfall
+  - mtg
+  source: clawhub-community
+  clawhub_slug: mtg-edh-deckbuilder
+  clawhub_path: santidev95/mtg-edh-deckbuilder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# mtg-edh-deckbuilder
+
+    # Source: ClawHub community skill by santidev95
+
+    # Install: clawhub install mtg-edh-deckbuilder
+
+    # Path: santidev95/mtg-edh-deckbuilder
+
+
+    ## Description
+
+    "Search and retrieve Magic: The Gathering card data using the Scryfall API. Use this skill when the user asks about MTG
+    cards, wants to search for cards by name, type, color, mana cost, oracle text, set, or any other card attribute. Also
+    use for getting card images, prices, rulings, legality informa
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/search_syntax.md
+
+    - scripts/scryfall_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mtg-edh-deckbuilder
+
+    ```'
+examples:
+- description: Install mtg-edh-deckbuilder from ClawHub
+  usage: clawhub install mtg-edh-deckbuilder
+schema_version: '1.0'

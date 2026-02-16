@@ -1,0 +1,72 @@
+name: amadeus-hotels
+title: Amadeus Hotels
+version: 1.0.2
+description: Search hotel prices and availability via Amadeus API. Find vacation hotels by city, coordinates, or amenities.
+  Compare prices, view ratings, get offer details. Track prices with alerts. Use when user asks to "find hotels", "search
+  hotels in [city]", "hotel prices", "vacation accommodation", "hotel d
+metadata:
+  author: kesslerio
+  category: Search & Research
+  tags:
+  - search-research
+  - amadeus
+  - hotels
+  source: clawhub-community
+  clawhub_slug: amadeus-hotels
+  clawhub_path: kesslerio/amadeus-hotels
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Amadeus Hotels
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install amadeus-hotels
+
+    # Path: kesslerio/amadeus-hotels
+
+
+    ## Description
+
+    Search hotel prices and availability via Amadeus API. Find vacation hotels by city, coordinates, or amenities. Compare
+    prices, view ratings, get offer details. Track prices with alerts. Use when user asks to "find hotels", "search hotels
+    in [city]", "hotel prices", "vacation accommodation", "hotel d
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/amenities.md
+
+    - scripts/auth.py
+
+    - scripts/details.py
+
+    - scripts/offers.py
+
+    - scripts/search.py
+
+    - scripts/track.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install amadeus-hotels
+
+    ```'
+examples:
+- description: Install Amadeus Hotels from ClawHub
+  usage: clawhub install amadeus-hotels
+schema_version: '1.0'

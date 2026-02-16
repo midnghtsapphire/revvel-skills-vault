@@ -1,0 +1,66 @@
+name: lazy-loader
+title: Lazy Load Analyzer
+version: 1.0.1
+description: Identify components that should be lazy loaded using AI. Use when optimizing bundle size and initial load.
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - lazy
+  - loader
+  source: clawhub-community
+  clawhub_slug: lazy-loader
+  clawhub_path: lxgicstudios/lazy-loader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lazy Load Analyzer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install lazy-loader
+
+    # Path: lxgicstudios/lazy-loader
+
+
+    ## Description
+
+    Identify components that should be lazy loaded using AI. Use when optimizing bundle size and initial load.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lazy-loader
+
+    ```'
+examples:
+- description: Install Lazy Load Analyzer from ClawHub
+  usage: clawhub install lazy-loader
+schema_version: '1.0'

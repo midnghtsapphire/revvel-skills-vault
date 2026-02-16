@@ -1,0 +1,60 @@
+name: readwise-mcp
+title: Readwise
+version: 1.0.0
+description: Set up, OAuth-authenticate, and use the Readwise MCP server (mcp2.readwise.io/mcp) via the mcporter CLI. Use
+  when a user asks to connect/auth Readwise MCP, reset or troubleshoot OAuth login (stale redirect ports, invalid state),
+  verify the connection, or run Readwise tools through mcporter.
+metadata:
+  author: tristanh
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - readwise
+  - mcp
+  source: clawhub-community
+  clawhub_slug: readwise-mcp
+  clawhub_path: tristanh/readwise-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Readwise
+
+    # Source: ClawHub community skill by tristanh
+
+    # Install: clawhub install readwise-mcp
+
+    # Path: tristanh/readwise-mcp
+
+
+    ## Description
+
+    Set up, OAuth-authenticate, and use the Readwise MCP server (mcp2.readwise.io/mcp) via the mcporter CLI. Use when a user
+    asks to connect/auth Readwise MCP, reset or troubleshoot OAuth login (stale redirect ports, invalid state), verify the
+    connection, or run Readwise tools through mcporter.
+
+
+    ## Files
+
+    - RECIPES.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install readwise-mcp
+
+    ```'
+examples:
+- description: Install Readwise from ClawHub
+  usage: clawhub install readwise-mcp
+schema_version: '1.0'

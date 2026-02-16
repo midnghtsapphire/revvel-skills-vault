@@ -1,0 +1,58 @@
+name: post-queue
+title: Post Queue
+version: 1.0.0
+description: Queue posts for rate-limited platforms. Add posts to queue, process when cooldowns clear. Supports Moltbook and
+  extensible to others.
+metadata:
+  author: luluf0x
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - post
+  - queue
+  source: clawhub-community
+  clawhub_slug: post-queue
+  clawhub_path: luluf0x/post-queue
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Post Queue
+
+    # Source: ClawHub community skill by luluf0x
+
+    # Install: clawhub install post-queue
+
+    # Path: luluf0x/post-queue
+
+
+    ## Description
+
+    Queue posts for rate-limited platforms. Add posts to queue, process when cooldowns clear. Supports Moltbook and extensible
+    to others.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - queue.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install post-queue
+
+    ```'
+examples:
+- description: Install Post Queue from ClawHub
+  usage: clawhub install post-queue
+schema_version: '1.0'

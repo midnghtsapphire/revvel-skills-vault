@@ -1,0 +1,57 @@
+name: granola
+title: Granola Notes
+version: 1.0.0
+description: Access Granola AI meeting notes - CSV import, shared note fetching, and MCP-ready for upcoming API support.
+metadata:
+  author: mvanhorn
+  category: Development & Coding
+  tags:
+  - development-coding
+  - granola
+  source: clawhub-community
+  clawhub_slug: granola-notes
+  clawhub_path: mvanhorn/granola-notes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Granola Notes
+
+    # Source: ClawHub community skill by mvanhorn
+
+    # Install: clawhub install granola-notes
+
+    # Path: mvanhorn/granola-notes
+
+
+    ## Description
+
+    Access Granola AI meeting notes - CSV import, shared note fetching, and MCP-ready for upcoming API support.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/csv_import.py
+
+    - scripts/fetch_shared.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install granola-notes
+
+    ```'
+examples:
+- description: Install Granola Notes from ClawHub
+  usage: clawhub install granola-notes
+schema_version: '1.0'

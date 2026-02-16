@@ -1,0 +1,68 @@
+name: prompt-shield
+title: Prompt Shield Publish
+version: 3.0.6
+description: '"Prompt Injection Firewall for AI agents. 113 detection patterns, 14 threat categories, zero dependencies. Protects
+  against fake authority, command injection, memory poisoning, skill malware, crypto spam, and more. Hash-chain tamper-proof
+  whitelist with mandatory peer review. Claude Code hook integr'
+metadata:
+  author: stlas
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - prompt
+  - shield
+  source: clawhub-community
+  clawhub_slug: prompt-shield
+  clawhub_path: stlas/prompt-shield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prompt Shield Publish
+
+    # Source: ClawHub community skill by stlas
+
+    # Install: clawhub install prompt-shield
+
+    # Path: stlas/prompt-shield
+
+
+    ## Description
+
+    "Prompt Injection Firewall for AI agents. 113 detection patterns, 14 threat categories, zero dependencies. Protects against
+    fake authority, command injection, memory poisoning, skill malware, crypto spam, and more. Hash-chain tamper-proof whitelist
+    with mandatory peer review. Claude Code hook integr
+
+
+    ## Files
+
+    - SCORING.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - patterns.yaml
+
+    - prompt-shield-hook.sh
+
+    - shield.py
+
+    - whitelist.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install prompt-shield
+
+    ```'
+examples:
+- description: Install Prompt Shield Publish from ClawHub
+  usage: clawhub install prompt-shield
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: _telecom_agent_skill_
+title: Telecom Agent Skill
+version: 0.1.5
+description: '"Turn your AI Agent into a Telecom Operator. Bulk calling, ChatOps, and Field Monitoring."'
+metadata:
+  author: kflohr
+  category: Communication
+  tags:
+  - communication
+  - '"telecom'
+  - agent
+  - skill"
+  source: clawhub-community
+  clawhub_slug: telecom-agent-skill
+  clawhub_path: kflohr/telecom-agent-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telecom Agent Skill
+
+    # Source: ClawHub community skill by kflohr
+
+    # Install: clawhub install telecom-agent-skill
+
+    # Path: kflohr/telecom-agent-skill
+
+
+    ## Description
+
+    "Turn your AI Agent into a Telecom Operator. Bulk calling, ChatOps, and Field Monitoring."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telecom-agent-skill
+
+    ```'
+examples:
+- description: Install Telecom Agent Skill from ClawHub
+  usage: clawhub install telecom-agent-skill
+schema_version: '1.0'

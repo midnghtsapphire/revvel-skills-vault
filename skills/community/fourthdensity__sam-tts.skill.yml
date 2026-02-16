@@ -1,0 +1,66 @@
+name: sam-tts
+title: SAM TTS
+version: 1.0.0
+description: Generate retro robotic speech audio using SAM (Software Automatic Mouth), the classic C64 text-to-speech synthesizer.
+  Use for /sam command to generate voice messages. Supports /sam on/off toggle mode where all responses are spoken in SAM
+  voice. Supports pitch, speed, mouth, and throat parameters for
+metadata:
+  author: fourthdensity
+  category: Media & Content
+  tags:
+  - media-content
+  - sam
+  - tts
+  source: clawhub-community
+  clawhub_slug: sam-tts
+  clawhub_path: fourthdensity/sam-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SAM TTS
+
+    # Source: ClawHub community skill by fourthdensity
+
+    # Install: clawhub install sam-tts
+
+    # Path: fourthdensity/sam-tts
+
+
+    ## Description
+
+    Generate retro robotic speech audio using SAM (Software Automatic Mouth), the classic C64 text-to-speech synthesizer.
+    Use for /sam command to generate voice messages. Supports /sam on/off toggle mode where all responses are spoken in SAM
+    voice. Supports pitch, speed, mouth, and throat parameters for
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/sam-tts-wrapper.js
+
+    - scripts/sam-tts.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sam-tts
+
+    ```'
+examples:
+- description: Install SAM TTS from ClawHub
+  usage: clawhub install sam-tts
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: _ssl_
+title: SSL
+version: 1.0.2
+description: '"Set up HTTPS, manage TLS certificates, and debug secure connection issues."'
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - '"ssl"'
+  source: clawhub-community
+  clawhub_slug: ssl
+  clawhub_path: ivangdavila/ssl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SSL
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install ssl
+
+    # Path: ivangdavila/ssl
+
+
+    ## Description
+
+    "Set up HTTPS, manage TLS certificates, and debug secure connection issues."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - formats.md
+
+    - servers.md
+
+    - troubleshooting.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ssl
+
+    ```'
+examples:
+- description: Install SSL from ClawHub
+  usage: clawhub install ssl
+schema_version: '1.0'

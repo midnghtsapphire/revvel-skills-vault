@@ -1,0 +1,60 @@
+name: project-documentation
+title: Project Documentation
+version: 1.0.0
+description: Complete workflow for project documentation including ADRs, PRDs, personas, and docs organization. Use when setting
+  up documentation for a new project or improving existing docs. Triggers on project documentation, ADR, PRD, personas, docs
+  structure, documentation setup.
+metadata:
+  author: wpank
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - project
+  - documentation
+  source: clawhub-community
+  clawhub_slug: project-documentation
+  clawhub_path: wpank/project-documentation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Project Documentation
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install project-documentation
+
+    # Path: wpank/project-documentation
+
+
+    ## Description
+
+    Complete workflow for project documentation including ADRs, PRDs, personas, and docs organization. Use when setting up
+    documentation for a new project or improving existing docs. Triggers on project documentation, ADR, PRD, personas, docs
+    structure, documentation setup.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install project-documentation
+
+    ```'
+examples:
+- description: Install Project Documentation from ClawHub
+  usage: clawhub install project-documentation
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: wilma
+title: Wilma
+version: 1.1.1
+description: Access Finland's Wilma school system from AI agents. Fetch schedules, homework, exams, grades, messages, and
+  news via the wilma CLI. Start with `wilma summary --json` for a full daily briefing, or drill into specific data with individual
+  commands.
+metadata:
+  author: aikarjal
+  category: Communication
+  tags:
+  - communication
+  - wilma
+  source: clawhub-community
+  clawhub_slug: wilma
+  clawhub_path: aikarjal/wilma
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wilma
+
+    # Source: ClawHub community skill by aikarjal
+
+    # Install: clawhub install wilma
+
+    # Path: aikarjal/wilma
+
+
+    ## Description
+
+    Access Finland''s Wilma school system from AI agents. Fetch schedules, homework, exams, grades, messages, and news via
+    the wilma CLI. Start with `wilma summary --json` for a full daily briefing, or drill into specific data with individual
+    commands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/wilma-cli.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wilma
+
+    ```'
+examples:
+- description: Install Wilma from ClawHub
+  usage: clawhub install wilma
+schema_version: '1.0'

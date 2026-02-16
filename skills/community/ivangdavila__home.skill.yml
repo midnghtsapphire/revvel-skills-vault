@@ -1,0 +1,53 @@
+name: home
+title: Home
+version: 1.0.0
+description: Home improvement, maintenance, and living space optimization with practical guidance.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - home
+  source: clawhub-community
+  clawhub_slug: home
+  clawhub_path: ivangdavila/home
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Home
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install home
+
+    # Path: ivangdavila/home
+
+
+    ## Description
+
+    Home improvement, maintenance, and living space optimization with practical guidance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install home
+
+    ```'
+examples:
+- description: Install Home from ClawHub
+  usage: clawhub install home
+schema_version: '1.0'

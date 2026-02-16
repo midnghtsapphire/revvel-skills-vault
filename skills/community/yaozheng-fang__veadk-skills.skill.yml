@@ -1,0 +1,70 @@
+name: veadk-skills
+title: Volcengine VeADK Skills
+version: 1.0.0
+description: 根据用户的功能需求，完成与 VeADK 相关的功能。
+metadata:
+  author: yaozheng-fang
+  category: General
+  tags:
+  - general
+  - veadk
+  - skills
+  source: clawhub-community
+  clawhub_slug: veadk-skills
+  clawhub_path: yaozheng-fang/veadk-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Volcengine VeADK Skills
+
+    # Source: ClawHub community skill by yaozheng-fang
+
+    # Install: clawhub install veadk-skills
+
+    # Path: yaozheng-fang/veadk-skills
+
+
+    ## Description
+
+    根据用户的功能需求，完成与 VeADK 相关的功能。
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/common/agent.md
+
+    - references/common/knowledgebase.md
+
+    - references/common/tools.md
+
+    - references/converter/dify_rules.md
+
+    - references/converter/langchain_rules.md
+
+    - references/generator/analyze.md
+
+    - references/generator/coding.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install veadk-skills
+
+    ```'
+examples:
+- description: Install Volcengine VeADK Skills from ClawHub
+  usage: clawhub install veadk-skills
+schema_version: '1.0'

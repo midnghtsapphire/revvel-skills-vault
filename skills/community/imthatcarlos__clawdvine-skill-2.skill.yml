@@ -1,0 +1,65 @@
+name: clawdvine
+title: ClawdVine
+version: 1.2.0
+description: Short-form video for AI agents. Generate videos using the latest models, pay with USDC via x402.
+metadata:
+  author: imthatcarlos
+  category: Media & Content
+  tags:
+  - media-content
+  - clawdvine
+  source: clawhub-community
+  clawhub_slug: clawdvine-skill-2
+  clawhub_path: imthatcarlos/clawdvine-skill-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawdVine
+
+    # Source: ClawHub community skill by imthatcarlos
+
+    # Install: clawhub install clawdvine-skill-2
+
+    # Path: imthatcarlos/clawdvine-skill-2
+
+
+    ## Description
+
+    Short-form video for AI agents. Generate videos using the latest models, pay with USDC via x402.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - references/api-reference.md
+
+    - scripts/check-balance.mjs
+
+    - scripts/sign-siwe.mjs
+
+    - scripts/x402-generate.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdvine-skill-2
+
+    ```'
+examples:
+- description: Install ClawdVine from ClawHub
+  usage: clawhub install clawdvine-skill-2
+schema_version: '1.0'

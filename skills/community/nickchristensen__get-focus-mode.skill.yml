@@ -1,0 +1,57 @@
+name: get-focus-mode
+title: Get Focus Mode
+version: 1.0.1
+description: Get the current macOS Focus mode
+metadata:
+  author: nickchristensen
+  category: System & OS
+  tags:
+  - system-os
+  - get
+  - focus
+  - mode
+  source: clawhub-community
+  clawhub_slug: get-focus-mode
+  clawhub_path: nickchristensen/get-focus-mode
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Get Focus Mode
+
+    # Source: ClawHub community skill by nickchristensen
+
+    # Install: clawhub install get-focus-mode
+
+    # Path: nickchristensen/get-focus-mode
+
+
+    ## Description
+
+    Get the current macOS Focus mode
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - get-focus-mode.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install get-focus-mode
+
+    ```'
+examples:
+- description: Install Get Focus Mode from ClawHub
+  usage: clawhub install get-focus-mode
+schema_version: '1.0'

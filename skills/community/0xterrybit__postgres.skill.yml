@@ -1,0 +1,53 @@
+name: postgres
+title: PostgreSQL
+version: 1.1.0
+description: PostgreSQL database management. Run queries, manage schemas, and monitor performance.
+metadata:
+  author: 0xterrybit
+  category: Development & Coding
+  tags:
+  - development-coding
+  - postgres
+  source: clawhub-community
+  clawhub_slug: postgres
+  clawhub_path: 0xterrybit/postgres
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PostgreSQL
+
+    # Source: ClawHub community skill by 0xterrybit
+
+    # Install: clawhub install postgres
+
+    # Path: 0xterrybit/postgres
+
+
+    ## Description
+
+    PostgreSQL database management. Run queries, manage schemas, and monitor performance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install postgres
+
+    ```'
+examples:
+- description: Install PostgreSQL from ClawHub
+  usage: clawhub install postgres
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: agent-hq
+title: Agent HQ
+version: 1.0.1
+description: Deploy the Agent HQ mission-control stack (Express + React + Telegram notifier / Jarvis summary) so other Clawdbot
+  teams can spin up the same board, high-priority watcher, and alert automation. Includes setup, telemetry, and automation
+  hooks.
+metadata:
+  author: thibautrey
+  category: Social Media
+  tags:
+  - social-media
+  - agent
+  source: clawhub-community
+  clawhub_slug: agent-hq
+  clawhub_path: thibautrey/agent-hq
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent HQ
+
+    # Source: ClawHub community skill by thibautrey
+
+    # Install: clawhub install agent-hq
+
+    # Path: thibautrey/agent-hq
+
+
+    ## Description
+
+    Deploy the Agent HQ mission-control stack (Express + React + Telegram notifier / Jarvis summary) so other Clawdbot teams
+    can spin up the same board, high-priority watcher, and alert automation. Includes setup, telemetry, and automation hooks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-hq
+
+    ```'
+examples:
+- description: Install Agent HQ from ClawHub
+  usage: clawhub install agent-hq
+schema_version: '1.0'

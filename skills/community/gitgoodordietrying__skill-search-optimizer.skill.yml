@@ -1,0 +1,59 @@
+name: skill-search-optimizer
+title: Skill Search Optimizer
+version: 1.0.0
+description: Optimize agent skills for discoverability on ClawdHub/MoltHub. Use when improving search ranking, writing descriptions
+  for semantic search, understanding how the registry indexes skills, testing search visibility, or analyzing why a skill
+  isn't being found.
+metadata:
+  author: gitgoodordietrying
+  category: Search & Research
+  tags:
+  - search-research
+  - skill
+  - search
+  - optimizer
+  source: clawhub-community
+  clawhub_slug: skill-search-optimizer
+  clawhub_path: gitgoodordietrying/skill-search-optimizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Search Optimizer
+
+    # Source: ClawHub community skill by gitgoodordietrying
+
+    # Install: clawhub install skill-search-optimizer
+
+    # Path: gitgoodordietrying/skill-search-optimizer
+
+
+    ## Description
+
+    Optimize agent skills for discoverability on ClawdHub/MoltHub. Use when improving search ranking, writing descriptions
+    for semantic search, understanding how the registry indexes skills, testing search visibility, or analyzing why a skill
+    isn''t being found.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-search-optimizer
+
+    ```'
+examples:
+- description: Install Skill Search Optimizer from ClawHub
+  usage: clawhub install skill-search-optimizer
+schema_version: '1.0'

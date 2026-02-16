@@ -1,0 +1,70 @@
+name: diy-pc-ingest
+title: Diy Pc Ingest
+version: 1.0.2
+description: Ingest pasted PC parts purchase/config text (Discord message receipts, bullet lists) into Notion DIY_PC tables
+  (PCConfig, ストレージ, エンクロージャー, PCInput). Use when the user pastes raw purchase logs/spec notes and wants the AI to classify,
+  enrich via web search, ask follow-up questions for unknowns, and th
+metadata:
+  author: nextaltair
+  category: Search & Research
+  tags:
+  - search-research
+  - diy
+  - ingest
+  source: clawhub-community
+  clawhub_slug: diy-pc-ingest
+  clawhub_path: nextaltair/diy-pc-ingest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Diy Pc Ingest
+
+    # Source: ClawHub community skill by nextaltair
+
+    # Install: clawhub install diy-pc-ingest
+
+    # Path: nextaltair/diy-pc-ingest
+
+
+    ## Description
+
+    Ingest pasted PC parts purchase/config text (Discord message receipts, bullet lists) into Notion DIY_PC tables (PCConfig,
+    ストレージ, エンクロージャー, PCInput). Use when the user pastes raw purchase logs/spec notes and wants the AI to classify, enrich
+    via web search, ask follow-up questions for unknowns, and th
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/config.example.json
+
+    - references/notion-ids.md
+
+    - scripts/bootstrap_config.js
+
+    - scripts/notion_apply_records.js
+
+    - scripts/_deprecated/notion_apply_records.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install diy-pc-ingest
+
+    ```'
+examples:
+- description: Install Diy Pc Ingest from ClawHub
+  usage: clawhub install diy-pc-ingest
+schema_version: '1.0'

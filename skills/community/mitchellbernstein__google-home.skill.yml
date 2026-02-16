@@ -1,0 +1,56 @@
+name: google-home
+title: Google Home/Nest
+version: 1.0.0
+description: Control Google Nest devices (thermostats, cameras, doorbells) via the Google Smart Device Management API using
+  curl and jq.
+metadata:
+  author: mitchellbernstein
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - home
+  source: clawhub-community
+  clawhub_slug: google-home
+  clawhub_path: mitchellbernstein/google-home
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Home/Nest
+
+    # Source: ClawHub community skill by mitchellbernstein
+
+    # Install: clawhub install google-home
+
+    # Path: mitchellbernstein/google-home
+
+
+    ## Description
+
+    Control Google Nest devices (thermostats, cameras, doorbells) via the Google Smart Device Management API using curl and
+    jq.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-home
+
+    ```'
+examples:
+- description: Install Google Home/Nest from ClawHub
+  usage: clawhub install google-home
+schema_version: '1.0'

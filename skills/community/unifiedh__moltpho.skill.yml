@@ -1,0 +1,66 @@
+name: moltpho
+title: Moltpho
+version: 0.1.5
+description: Shop autonomously on Amazon via Moltpho - search products, manage credit, and purchase items using mUSD on Base
+  mainnet
+metadata:
+  author: unifiedh
+  category: Search & Research
+  tags:
+  - search-research
+  - moltpho
+  source: clawhub-community
+  clawhub_slug: moltpho
+  clawhub_path: unifiedh/moltpho
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltpho
+
+    # Source: ClawHub community skill by unifiedh
+
+    # Install: clawhub install moltpho
+
+    # Path: unifiedh/moltpho
+
+
+    ## Description
+
+    Shop autonomously on Amazon via Moltpho - search products, manage credit, and purchase items using mUSD on Base mainnet
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - lib/__init__.py
+
+    - lib/moltpho.py
+
+    - lib/proactive.py
+
+    - references/API.md
+
+    - references/POLICIES.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltpho
+
+    ```'
+examples:
+- description: Install Moltpho from ClawHub
+  usage: clawhub install moltpho
+schema_version: '1.0'

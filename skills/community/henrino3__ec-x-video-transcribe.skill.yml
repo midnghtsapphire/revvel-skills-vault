@@ -1,0 +1,58 @@
+name: x-video-transcribe
+title: X Video Transcribe
+version: 1.0.0
+description: Transcribe and summarize X/Twitter videos using bird CLI + Gemini audio transcription.
+metadata:
+  author: henrino3
+  category: Media & Content
+  tags:
+  - media-content
+  - video
+  - transcribe
+  source: clawhub-community
+  clawhub_slug: ec-x-video-transcribe
+  clawhub_path: henrino3/ec-x-video-transcribe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Video Transcribe
+
+    # Source: ClawHub community skill by henrino3
+
+    # Install: clawhub install ec-x-video-transcribe
+
+    # Path: henrino3/ec-x-video-transcribe
+
+
+    ## Description
+
+    Transcribe and summarize X/Twitter videos using bird CLI + Gemini audio transcription.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/transcribe.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ec-x-video-transcribe
+
+    ```'
+examples:
+- description: Install X Video Transcribe from ClawHub
+  usage: clawhub install ec-x-video-transcribe
+schema_version: '1.0'

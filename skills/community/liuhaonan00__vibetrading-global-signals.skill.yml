@@ -1,0 +1,71 @@
+name: vibetrading-global-signals
+title: vibetrading-global-signals
+version: 1.0.1
+description: Query AI-generated trading signals from vibetrading-datahub. Signals are produced by autonomous agents analyzing
+  whale activity, news, funding rates, and technical indicators.
+metadata:
+  author: liuhaonan00
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - vibetrading
+  - global
+  - signals
+  source: clawhub-community
+  clawhub_slug: vibetrading-global-signals
+  clawhub_path: liuhaonan00/vibetrading-global-signals
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# vibetrading-global-signals
+
+    # Source: ClawHub community skill by liuhaonan00
+
+    # Install: clawhub install vibetrading-global-signals
+
+    # Path: liuhaonan00/vibetrading-global-signals
+
+
+    ## Description
+
+    Query AI-generated trading signals from vibetrading-datahub. Signals are produced by autonomous agents analyzing whale
+    activity, news, funding rates, and technical indicators.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/get_latest_signals.js
+
+    - scripts/get_signals_by_symbol.js
+
+    - scripts/get_signals_by_type.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vibetrading-global-signals
+
+    ```'
+examples:
+- description: Install vibetrading-global-signals from ClawHub
+  usage: clawhub install vibetrading-global-signals
+schema_version: '1.0'

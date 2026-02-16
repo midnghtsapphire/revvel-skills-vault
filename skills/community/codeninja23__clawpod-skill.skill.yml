@@ -1,0 +1,62 @@
+name: clawpod
+title: Clawpod
+version: 0.1.0
+description: Browse and fetch web pages through Massive residential proxy IPs with full JS rendering, geo-targeting, sticky
+  sessions, and device-type targeting.
+metadata:
+  author: codeninja23
+  category: Search & Research
+  tags:
+  - search-research
+  - clawpod
+  - bash(agent-browser:*)
+  source: clawhub-community
+  clawhub_slug: clawpod-skill
+  clawhub_path: codeninja23/clawpod-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(agent-browser:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawpod
+
+    # Source: ClawHub community skill by codeninja23
+
+    # Install: clawhub install clawpod-skill
+
+    # Path: codeninja23/clawpod-skill
+
+
+    ## Description
+
+    Browse and fetch web pages through Massive residential proxy IPs with full JS rendering, geo-targeting, sticky sessions,
+    and device-type targeting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(agent-browser:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawpod-skill
+
+    ```'
+examples:
+- description: Install Clawpod from ClawHub
+  usage: clawhub install clawpod-skill
+schema_version: '1.0'

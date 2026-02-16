@@ -1,0 +1,55 @@
+name: add-fal-model
+title: add-fal-model
+version: 1.0.0
+description: 为 V3 API 添加新的 Fal AI 模型。当用户要添加 fal 模型、配置新模型、或提供 fal.ai 模型文档链接时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: Development & Coding
+  tags:
+  - development-coding
+  - add
+  - fal
+  - model
+  source: clawhub-community
+  clawhub_slug: add-fal-model
+  clawhub_path: hexiaochun/add-fal-model
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# add-fal-model
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install add-fal-model
+
+    # Path: hexiaochun/add-fal-model
+
+
+    ## Description
+
+    为 V3 API 添加新的 Fal AI 模型。当用户要添加 fal 模型、配置新模型、或提供 fal.ai 模型文档链接时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install add-fal-model
+
+    ```'
+examples:
+- description: Install add-fal-model from ClawHub
+  usage: clawhub install add-fal-model
+schema_version: '1.0'

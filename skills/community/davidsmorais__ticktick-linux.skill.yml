@@ -1,0 +1,54 @@
+name: ticktick-linux
+title: Ticktick Linux
+version: 1.0.0
+description: Manage TickTick tasks (add, list, complete) via the local `tickrs` CLI.
+metadata:
+  author: davidsmorais
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - ticktick
+  - linux
+  source: clawhub-community
+  clawhub_slug: ticktick-linux
+  clawhub_path: davidsmorais/ticktick-linux
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ticktick Linux
+
+    # Source: ClawHub community skill by davidsmorais
+
+    # Install: clawhub install ticktick-linux
+
+    # Path: davidsmorais/ticktick-linux
+
+
+    ## Description
+
+    Manage TickTick tasks (add, list, complete) via the local `tickrs` CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ticktick-linux
+
+    ```'
+examples:
+- description: Install Ticktick Linux from ClawHub
+  usage: clawhub install ticktick-linux
+schema_version: '1.0'

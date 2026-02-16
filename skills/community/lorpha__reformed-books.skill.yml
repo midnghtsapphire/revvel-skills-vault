@@ -1,0 +1,56 @@
+name: reformed-books
+title: Reformed Books Search & Download
+version: 1.0.0
+description: 在改革宗书籍乐园 (https.ng) 搜索和下载改革宗/基督教神学书籍。优先返回 PDF 格式。使用场景：当用户想要查找或下载改革宗、加尔文主义、基督教神学相关书籍时触发此技能。
+metadata:
+  author: lorpha
+  category: Search & Research
+  tags:
+  - search-research
+  - reformed
+  - books
+  source: clawhub-community
+  clawhub_slug: reformed-books
+  clawhub_path: lorpha/reformed-books
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reformed Books Search & Download
+
+    # Source: ClawHub community skill by lorpha
+
+    # Install: clawhub install reformed-books
+
+    # Path: lorpha/reformed-books
+
+
+    ## Description
+
+    在改革宗书籍乐园 (https.ng) 搜索和下载改革宗/基督教神学书籍。优先返回 PDF 格式。使用场景：当用户想要查找或下载改革宗、加尔文主义、基督教神学相关书籍时触发此技能。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reformed-books
+
+    ```'
+examples:
+- description: Install Reformed Books Search & Download from ClawHub
+  usage: clawhub install reformed-books
+schema_version: '1.0'

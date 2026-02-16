@@ -1,0 +1,63 @@
+name: tesla
+title: Tesla Control via Tessie
+version: 1.0.0
+description: Control and monitor Tesla vehicles via the Tessie API. Use when you need to check Tesla status (battery, location,
+  charging), control climate (heat/cool), lock/unlock doors, start/stop charging, honk/flash lights, open charge port or trunks,
+  or any other Tesla vehicle command. Requires TESSIE_API_KE
+metadata:
+  author: biguntroll
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tesla
+  source: clawhub-community
+  clawhub_slug: tesla-tessie
+  clawhub_path: biguntroll/tesla-tessie
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tesla Control via Tessie
+
+    # Source: ClawHub community skill by biguntroll
+
+    # Install: clawhub install tesla-tessie
+
+    # Path: biguntroll/tesla-tessie
+
+
+    ## Description
+
+    Control and monitor Tesla vehicles via the Tessie API. Use when you need to check Tesla status (battery, location, charging),
+    control climate (heat/cool), lock/unlock doors, start/stop charging, honk/flash lights, open charge port or trunks, or
+    any other Tesla vehicle command. Requires TESSIE_API_KE
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/check-updates.py
+
+    - scripts/tessie.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tesla-tessie
+
+    ```'
+examples:
+- description: Install Tesla Control via Tessie from ClawHub
+  usage: clawhub install tesla-tessie
+schema_version: '1.0'

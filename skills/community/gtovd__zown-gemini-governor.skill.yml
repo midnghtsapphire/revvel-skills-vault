@@ -1,0 +1,59 @@
+name: zown-gemini-governor
+title: Zown Gemini Governor
+version: 0.1.0
+description: A high-fidelity token management and model stabilization skill. Implements the Zown "Atomic Pipeline" to prevent
+  Gemini TPM (Tokens Per Minute) rate limits. Use when performing heavy engineering tasks, multi-step code generation, or
+  when encountering 429 Rate Limit errors. Includes protocols for con
+metadata:
+  author: gtovd
+  category: Development & Coding
+  tags:
+  - development-coding
+  - zown
+  - gemini
+  - governor
+  source: clawhub-community
+  clawhub_slug: zown-gemini-governor
+  clawhub_path: gtovd/zown-gemini-governor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zown Gemini Governor
+
+    # Source: ClawHub community skill by gtovd
+
+    # Install: clawhub install zown-gemini-governor
+
+    # Path: gtovd/zown-gemini-governor
+
+
+    ## Description
+
+    A high-fidelity token management and model stabilization skill. Implements the Zown "Atomic Pipeline" to prevent Gemini
+    TPM (Tokens Per Minute) rate limits. Use when performing heavy engineering tasks, multi-step code generation, or when
+    encountering 429 Rate Limit errors. Includes protocols for con
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zown-gemini-governor
+
+    ```'
+examples:
+- description: Install Zown Gemini Governor from ClawHub
+  usage: clawhub install zown-gemini-governor
+schema_version: '1.0'

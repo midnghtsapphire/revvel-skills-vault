@@ -1,0 +1,64 @@
+name: workshop-miro
+title: Miro board
+version: 1.0.0
+description: Workshop photos/notes -> an editable Miro diagram (real FRAMES as containers + stickies + connectors) with idempotent
+  dedupe, rollback, undo and change commands, using the local script miro-push.mjs and env vars.
+metadata:
+  author: simoneferrario
+  category: Media & Content
+  tags:
+  - media-content
+  - workshop
+  - miro
+  source: clawhub-community
+  clawhub_slug: miro-workshop-assistant
+  clawhub_path: simoneferrario/miro-workshop-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Miro board
+
+    # Source: ClawHub community skill by simoneferrario
+
+    # Install: clawhub install miro-workshop-assistant
+
+    # Path: simoneferrario/miro-workshop-assistant
+
+
+    ## Description
+
+    Workshop photos/notes -> an editable Miro diagram (real FRAMES as containers + stickies + connectors) with idempotent
+    dedupe, rollback, undo and change commands, using the local script miro-push.mjs and env vars.
+
+
+    ## Files
+
+    - README.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - miro-push.mjs
+
+    - miro-ready.json
+
+    - _out/.state.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install miro-workshop-assistant
+
+    ```'
+examples:
+- description: Install Miro board from ClawHub
+  usage: clawhub install miro-workshop-assistant
+schema_version: '1.0'

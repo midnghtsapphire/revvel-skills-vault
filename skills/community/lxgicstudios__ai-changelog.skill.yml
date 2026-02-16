@@ -1,0 +1,54 @@
+name: changelog-gen
+title: Git Changelog Generator
+version: 1.0.2
+description: Generate changelogs from git history. Use when you need release notes fast.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - changelog
+  - gen
+  source: clawhub-community
+  clawhub_slug: ai-changelog
+  clawhub_path: lxgicstudios/ai-changelog
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Git Changelog Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-changelog
+
+    # Path: lxgicstudios/ai-changelog
+
+
+    ## Description
+
+    Generate changelogs from git history. Use when you need release notes fast.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-changelog
+
+    ```'
+examples:
+- description: Install Git Changelog Generator from ClawHub
+  usage: clawhub install ai-changelog
+schema_version: '1.0'

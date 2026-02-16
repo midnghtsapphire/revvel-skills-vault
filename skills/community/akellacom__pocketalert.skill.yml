@@ -1,0 +1,62 @@
+name: pocket_alert___push_notifications_for_ios_and_android
+title: Pocketalert
+version: 1.0.2
+description: The Pocket Alert (pocketalert.app) skill for OpenClaw enables OpenClaw agents and workflows to send push notifications
+  to iOS and Android devices. It is used to deliver alerts and updates from automated tasks, workflows, and background processes.
+metadata:
+  author: akellacom
+  category: Communication
+  tags:
+  - communication
+  - pocket
+  - alert
+  - push
+  - notifications
+  - for
+  - ios
+  - and
+  - android
+  source: clawhub-community
+  clawhub_slug: pocketalert
+  clawhub_path: akellacom/pocketalert
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pocketalert
+
+    # Source: ClawHub community skill by akellacom
+
+    # Install: clawhub install pocketalert
+
+    # Path: akellacom/pocketalert
+
+
+    ## Description
+
+    The Pocket Alert (pocketalert.app) skill for OpenClaw enables OpenClaw agents and workflows to send push notifications
+    to iOS and Android devices. It is used to deliver alerts and updates from automated tasks, workflows, and background processes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pocketalert
+
+    ```'
+examples:
+- description: Install Pocketalert from ClawHub
+  usage: clawhub install pocketalert
+schema_version: '1.0'

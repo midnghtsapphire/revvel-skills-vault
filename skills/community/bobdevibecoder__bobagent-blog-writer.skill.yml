@@ -1,0 +1,58 @@
+name: blog-writer
+title: blog-writer
+version: 1.0.0
+description: This skill should be used when writing blog posts, articles, or long-form content in the writer's distinctive
+  writing style. It produces authentic, opinionated content that matches the writer's voice—direct, conversational, and grounded
+  in personal experience. The skill handles the complete workflow
+metadata:
+  author: bobdevibecoder
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - blog
+  - writer
+  source: clawhub-community
+  clawhub_slug: bobagent-blog-writer
+  clawhub_path: bobdevibecoder/bobagent-blog-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# blog-writer
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-blog-writer
+
+    # Path: bobdevibecoder/bobagent-blog-writer
+
+
+    ## Description
+
+    This skill should be used when writing blog posts, articles, or long-form content in the writer''s distinctive writing
+    style. It produces authentic, opinionated content that matches the writer''s voice—direct, conversational, and grounded
+    in personal experience. The skill handles the complete workflow
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-blog-writer
+
+    ```'
+examples:
+- description: Install blog-writer from ClawHub
+  usage: clawhub install bobagent-blog-writer
+schema_version: '1.0'

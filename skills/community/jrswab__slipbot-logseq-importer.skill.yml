@@ -1,0 +1,58 @@
+name: logseq-import
+title: SlipBot Logseq Importer
+version: 1.0.0
+description: Import notes from Logseq pages into the slipbox. Use when user pastes a Logseq page with properties and bulleted
+  notes. Parses page-level properties, extracts each bullet as an individual note, handles nested bullets by adding parent
+  context, then runs slipbot for each.
+metadata:
+  author: jrswab
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - logseq
+  - import
+  source: clawhub-community
+  clawhub_slug: slipbot-logseq-importer
+  clawhub_path: jrswab/slipbot-logseq-importer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SlipBot Logseq Importer
+
+    # Source: ClawHub community skill by jrswab
+
+    # Install: clawhub install slipbot-logseq-importer
+
+    # Path: jrswab/slipbot-logseq-importer
+
+
+    ## Description
+
+    Import notes from Logseq pages into the slipbox. Use when user pastes a Logseq page with properties and bulleted notes.
+    Parses page-level properties, extracts each bullet as an individual note, handles nested bullets by adding parent context,
+    then runs slipbot for each.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install slipbot-logseq-importer
+
+    ```'
+examples:
+- description: Install SlipBot Logseq Importer from ClawHub
+  usage: clawhub install slipbot-logseq-importer
+schema_version: '1.0'

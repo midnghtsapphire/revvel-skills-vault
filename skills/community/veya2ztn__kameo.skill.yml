@@ -1,0 +1,71 @@
+name: kameo
+title: kameo
+version: 1.0.1
+description: Generate expressive talking-head videos from static images using Kameo AI. Converts static avatars/portraits
+  into dynamic 5-second videos with realistic facial expressions, lip-sync, and motion. Use when you need to bring static
+  images to life, create AI character videos, demonstrate visual communic
+metadata:
+  author: veya2ztn
+  category: Media & Content
+  tags:
+  - media-content
+  - kameo
+  source: clawhub-community
+  clawhub_slug: kameo
+  clawhub_path: veya2ztn/kameo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# kameo
+
+    # Source: ClawHub community skill by veya2ztn
+
+    # Install: clawhub install kameo
+
+    # Path: veya2ztn/kameo
+
+
+    ## Description
+
+    Generate expressive talking-head videos from static images using Kameo AI. Converts static avatars/portraits into dynamic
+    5-second videos with realistic facial expressions, lip-sync, and motion. Use when you need to bring static images to life,
+    create AI character videos, demonstrate visual communic
+
+
+    ## Files
+
+    - SKILL.md
+
+    - USAGE.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/check_credits.sh
+
+    - scripts/enhance_prompt.sh
+
+    - scripts/generate_enhanced.sh
+
+    - scripts/generate_video.sh
+
+    - scripts/register.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kameo
+
+    ```'
+examples:
+- description: Install kameo from ClawHub
+  usage: clawhub install kameo
+schema_version: '1.0'

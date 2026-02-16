@@ -1,0 +1,59 @@
+name: flowmind
+title: FlowMind
+version: 1.0.2
+description: Manage productivity with FlowMind — goals, tasks (with subtasks), notes, people, and tags via REST API. Use when
+  the user wants to create, list, update, or delete goals, tasks, notes, contacts, or tags; manage focus/priorities; track
+  progress; or organize their productivity workspace through FlowMin
+metadata:
+  author: fancygobot
+  category: Development & Coding
+  tags:
+  - development-coding
+  - flowmind
+  source: clawhub-community
+  clawhub_slug: flowmind
+  clawhub_path: fancygobot/flowmind
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FlowMind
+
+    # Source: ClawHub community skill by fancygobot
+
+    # Install: clawhub install flowmind
+
+    # Path: fancygobot/flowmind
+
+
+    ## Description
+
+    Manage productivity with FlowMind — goals, tasks (with subtasks), notes, people, and tags via REST API. Use when the user
+    wants to create, list, update, or delete goals, tasks, notes, contacts, or tags; manage focus/priorities; track progress;
+    or organize their productivity workspace through FlowMin
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flowmind
+
+    ```'
+examples:
+- description: Install FlowMind from ClawHub
+  usage: clawhub install flowmind
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: permissions-broker
+title: Permissions Broker
+version: 1.0.7
+description: Default mechanism for external data access and third-party actions when local credentials are unavailable. Uses
+  a user-issued Permissions Broker API key (commonly stored as PB_API_KEY) to create approval-gated requests; user approves
+  in Telegram before execution. May store/reuse PB_API_KEY across se
+metadata:
+  author: stephancill
+  category: Search & Research
+  tags:
+  - search-research
+  - permissions
+  - broker
+  source: clawhub-community
+  clawhub_slug: permissions-broker
+  clawhub_path: stephancill/permissions-broker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Permissions Broker
+
+    # Source: ClawHub community skill by stephancill
+
+    # Install: clawhub install permissions-broker
+
+    # Path: stephancill/permissions-broker
+
+
+    ## Description
+
+    Default mechanism for external data access and third-party actions when local credentials are unavailable. Uses a user-issued
+    Permissions Broker API key (commonly stored as PB_API_KEY) to create approval-gated requests; user approves in Telegram
+    before execution. May store/reuse PB_API_KEY across se
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - references/caldav.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install permissions-broker
+
+    ```'
+examples:
+- description: Install Permissions Broker from ClawHub
+  usage: clawhub install permissions-broker
+schema_version: '1.0'

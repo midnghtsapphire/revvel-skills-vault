@@ -1,0 +1,60 @@
+name: gmail-agent
+title: Gmail Agent
+version: 1.0.0
+description: Summarize unread Gmail, show folder structure, audit/clean labels, and purge spam/trash
+metadata:
+  author: r39132
+  category: Communication
+  tags:
+  - communication
+  - gmail
+  - agent
+  source: clawhub-community
+  clawhub_slug: gmail-agent
+  clawhub_path: r39132/gmail-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gmail Agent
+
+    # Source: ClawHub community skill by r39132
+
+    # Install: clawhub install gmail-agent
+
+    # Path: r39132/gmail-agent
+
+
+    ## Description
+
+    Summarize unread Gmail, show folder structure, audit/clean labels, and purge spam/trash
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bins/gmail-cleanup.sh
+
+    - bins/gmail-label-audit.sh
+
+    - bins/gmail-labels.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gmail-agent
+
+    ```'
+examples:
+- description: Install Gmail Agent from ClawHub
+  usage: clawhub install gmail-agent
+schema_version: '1.0'

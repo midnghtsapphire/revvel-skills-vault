@@ -1,0 +1,56 @@
+name: regex-writer
+title: Regex Writer
+version: 1.0.0
+description: Generate regex patterns from plain English descriptions. Use when the user needs to create regular expressions
+  without memorizing syntax.
+metadata:
+  author: lxgicstudios
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - regex
+  - writer
+  source: clawhub-community
+  clawhub_slug: regex-writer
+  clawhub_path: lxgicstudios/regex-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Regex Writer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install regex-writer
+
+    # Path: lxgicstudios/regex-writer
+
+
+    ## Description
+
+    Generate regex patterns from plain English descriptions. Use when the user needs to create regular expressions without
+    memorizing syntax.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install regex-writer
+
+    ```'
+examples:
+- description: Install Regex Writer from ClawHub
+  usage: clawhub install regex-writer
+schema_version: '1.0'

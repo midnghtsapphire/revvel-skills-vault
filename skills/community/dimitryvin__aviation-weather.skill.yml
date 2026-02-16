@@ -1,0 +1,60 @@
+name: aviation-weather
+title: Aviation Weather
+version: 1.0.0
+description: Fetch aviation weather data (METAR, TAF, PIREPs) from aviationweather.gov. Use for flight planning, weather briefings,
+  checking airport conditions, or any pilot-related weather queries. Triggers on "METAR", "TAF", "flight weather", "airport
+  weather", "aviation weather", "pilot report", "PIREP", or s
+metadata:
+  author: dimitryvin
+  category: Development & Coding
+  tags:
+  - development-coding
+  - aviation
+  - weather
+  source: clawhub-community
+  clawhub_slug: aviation-weather
+  clawhub_path: dimitryvin/aviation-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Aviation Weather
+
+    # Source: ClawHub community skill by dimitryvin
+
+    # Install: clawhub install aviation-weather
+
+    # Path: dimitryvin/aviation-weather
+
+
+    ## Description
+
+    Fetch aviation weather data (METAR, TAF, PIREPs) from aviationweather.gov. Use for flight planning, weather briefings,
+    checking airport conditions, or any pilot-related weather queries. Triggers on "METAR", "TAF", "flight weather", "airport
+    weather", "aviation weather", "pilot report", "PIREP", or s
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/wx.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aviation-weather
+
+    ```'
+examples:
+- description: Install Aviation Weather from ClawHub
+  usage: clawhub install aviation-weather
+schema_version: '1.0'

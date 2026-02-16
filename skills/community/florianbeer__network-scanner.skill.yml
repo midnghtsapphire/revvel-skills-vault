@@ -1,0 +1,58 @@
+name: network-scanner
+title: Network Scanner
+version: 1.1.0
+description: Scan networks to discover devices, gather MAC addresses, vendors, and hostnames. Includes safety checks to prevent
+  accidental scanning of public networks.
+metadata:
+  author: florianbeer
+  category: General
+  tags:
+  - general
+  - network
+  - scanner
+  source: clawhub-community
+  clawhub_slug: network-scanner
+  clawhub_path: florianbeer/network-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Network Scanner
+
+    # Source: ClawHub community skill by florianbeer
+
+    # Install: clawhub install network-scanner
+
+    # Path: florianbeer/network-scanner
+
+
+    ## Description
+
+    Scan networks to discover devices, gather MAC addresses, vendors, and hostnames. Includes safety checks to prevent accidental
+    scanning of public networks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/scan.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install network-scanner
+
+    ```'
+examples:
+- description: Install Network Scanner from ClawHub
+  usage: clawhub install network-scanner
+schema_version: '1.0'

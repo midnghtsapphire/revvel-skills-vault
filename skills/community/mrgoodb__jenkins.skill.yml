@@ -1,0 +1,53 @@
+name: jenkins
+title: Jenkins
+version: 1.0.0
+description: Manage Jenkins jobs, builds, and pipelines via API. Trigger builds and monitor status.
+metadata:
+  author: mrgoodb
+  category: Development & Coding
+  tags:
+  - development-coding
+  - jenkins
+  source: clawhub-community
+  clawhub_slug: jenkins
+  clawhub_path: mrgoodb/jenkins
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jenkins
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install jenkins
+
+    # Path: mrgoodb/jenkins
+
+
+    ## Description
+
+    Manage Jenkins jobs, builds, and pipelines via API. Trigger builds and monitor status.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jenkins
+
+    ```'
+examples:
+- description: Install Jenkins from ClawHub
+  usage: clawhub install jenkins
+schema_version: '1.0'

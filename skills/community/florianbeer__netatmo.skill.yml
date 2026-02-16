@@ -1,0 +1,55 @@
+name: netatmo
+title: Netatmo
+version: 1.0.1
+description: Control Netatmo thermostat and read weather station data. Use for heating control (set temperature, change mode),
+  checking indoor/outdoor temperatures, CO₂ levels, humidity, noise, and pressure readings.
+metadata:
+  author: florianbeer
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - netatmo
+  source: clawhub-community
+  clawhub_slug: netatmo
+  clawhub_path: florianbeer/netatmo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Netatmo
+
+    # Source: ClawHub community skill by florianbeer
+
+    # Install: clawhub install netatmo
+
+    # Path: florianbeer/netatmo
+
+
+    ## Description
+
+    Control Netatmo thermostat and read weather station data. Use for heating control (set temperature, change mode), checking
+    indoor/outdoor temperatures, CO₂ levels, humidity, noise, and pressure readings.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install netatmo
+
+    ```'
+examples:
+- description: Install Netatmo from ClawHub
+  usage: clawhub install netatmo
+schema_version: '1.0'

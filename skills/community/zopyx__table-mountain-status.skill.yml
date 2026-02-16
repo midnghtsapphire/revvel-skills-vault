@@ -1,0 +1,61 @@
+name: table-mountain-status
+title: Table Mountain Status
+version: 1.0.0
+description: Fetch and report the Table Mountain Aerial Cableway status via the official weather API. Use when Master asks
+  for “Tafelberg” updates, needs alerts about openings/closures, or wants automated Telegram reports about status, weather,
+  and waiting times.
+metadata:
+  author: zopyx
+  category: Social Media
+  tags:
+  - social-media
+  - table
+  - mountain
+  - status
+  source: clawhub-community
+  clawhub_slug: table-mountain-status
+  clawhub_path: zopyx/table-mountain-status
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Table Mountain Status
+
+    # Source: ClawHub community skill by zopyx
+
+    # Install: clawhub install table-mountain-status
+
+    # Path: zopyx/table-mountain-status
+
+
+    ## Description
+
+    Fetch and report the Table Mountain Aerial Cableway status via the official weather API. Use when Master asks for “Tafelberg”
+    updates, needs alerts about openings/closures, or wants automated Telegram reports about status, weather, and waiting
+    times.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch_status.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install table-mountain-status
+
+    ```'
+examples:
+- description: Install Table Mountain Status from ClawHub
+  usage: clawhub install table-mountain-status
+schema_version: '1.0'

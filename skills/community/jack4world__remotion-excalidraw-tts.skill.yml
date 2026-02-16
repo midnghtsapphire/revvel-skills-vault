@@ -1,0 +1,75 @@
+name: remotion-excalidraw-tts
+title: Remotion + Excalidraw + TTS
+version: 1.1.0
+description: Generate a narrated Remotion video from an Excalidraw (.excalidraw) diagram using text-to-speech (macOS say)
+  and render to MP4. Use when creating explainer videos with pan/zoom + focus highlights over Excalidraw diagrams, with automated
+  voiceover generation and Remotion CLI rendering.
+metadata:
+  author: jack4world
+  category: Media & Content
+  tags:
+  - media-content
+  - remotion
+  - excalidraw
+  - tts
+  source: clawhub-community
+  clawhub_slug: remotion-excalidraw-tts
+  clawhub_path: jack4world/remotion-excalidraw-tts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Remotion + Excalidraw + TTS
+
+    # Source: ClawHub community skill by jack4world
+
+    # Install: clawhub install remotion-excalidraw-tts
+
+    # Path: jack4world/remotion-excalidraw-tts
+
+
+    ## Description
+
+    Generate a narrated Remotion video from an Excalidraw (.excalidraw) diagram using text-to-speech (macOS say) and render
+    to MP4. Use when creating explainer videos with pan/zoom + focus highlights over Excalidraw diagrams, with automated voiceover
+    generation and Remotion CLI rendering.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/template/remotion-project/README.md
+
+    - assets/template/remotion-project/eslint.config.mjs
+
+    - assets/template/remotion-project/package-lock.json
+
+    - assets/template/remotion-project/package.json
+
+    - assets/template/remotion-project/postcss.config.mjs
+
+    - assets/template/remotion-project/remotion.config.ts
+
+    - assets/template/remotion-project/tsconfig.json
+
+    - assets/template/remotion-project/public/voiceover.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remotion-excalidraw-tts
+
+    ```'
+examples:
+- description: Install Remotion + Excalidraw + TTS from ClawHub
+  usage: clawhub install remotion-excalidraw-tts
+schema_version: '1.0'

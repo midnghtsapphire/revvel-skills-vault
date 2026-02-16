@@ -1,0 +1,61 @@
+name: tavily
+title: Tavily AI Search
+version: 1.0.0
+description: AI-optimized web search using Tavily Search API. Use when you need comprehensive web research, current events
+  lookup, domain-specific search, or AI-generated answer summaries. Tavily is optimized for LLM consumption with clean structured
+  results, answer generation, and raw content extraction. Best f
+metadata:
+  author: bert-builder
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - tavily
+  source: clawhub-community
+  clawhub_slug: tavily
+  clawhub_path: bert-builder/tavily
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tavily AI Search
+
+    # Source: ClawHub community skill by bert-builder
+
+    # Install: clawhub install tavily
+
+    # Path: bert-builder/tavily
+
+
+    ## Description
+
+    AI-optimized web search using Tavily Search API. Use when you need comprehensive web research, current events lookup,
+    domain-specific search, or AI-generated answer summaries. Tavily is optimized for LLM consumption with clean structured
+    results, answer generation, and raw content extraction. Best f
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - scripts/tavily_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tavily
+
+    ```'
+examples:
+- description: Install Tavily AI Search from ClawHub
+  usage: clawhub install tavily
+schema_version: '1.0'

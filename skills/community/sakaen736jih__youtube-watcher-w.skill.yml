@@ -1,0 +1,56 @@
+name: youtube-watcher
+title: YouTube Watcher
+version: 1.0.0
+description: Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about
+  its content, or extract information from it.
+metadata:
+  author: sakaen736jih
+  category: Media & Content
+  tags:
+  - media-content
+  - youtube
+  - watcher
+  source: clawhub-community
+  clawhub_slug: youtube-watcher-w
+  clawhub_path: sakaen736jih/youtube-watcher-w
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTube Watcher
+
+    # Source: ClawHub community skill by sakaen736jih
+
+    # Install: clawhub install youtube-watcher-w
+
+    # Path: sakaen736jih/youtube-watcher-w
+
+
+    ## Description
+
+    Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content,
+    or extract information from it.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtube-watcher-w
+
+    ```'
+examples:
+- description: Install YouTube Watcher from ClawHub
+  usage: clawhub install youtube-watcher-w
+schema_version: '1.0'

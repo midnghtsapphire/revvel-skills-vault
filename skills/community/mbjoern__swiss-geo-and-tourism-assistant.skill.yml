@@ -1,0 +1,60 @@
+name: swiss-geo
+title: Swiss Geo & Tourism Assistant
+version: 1.0.0
+description: Schweizer Geodaten, POIs und Tourismus. Orte/Adressen suchen, Höhen abfragen, städtische POIs finden (Restaurants,
+  Cafés, Sehenswürdigkeiten via OpenStreetMap), ÖV-Fahrplan, Kartenlinks. Nutze bei Fragen zu Schweizer Orten, Attraktionen,
+  Ausflügen oder Koordinaten.
+metadata:
+  author: mbjoern
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - swiss
+  - geo
+  source: clawhub-community
+  clawhub_slug: swiss-geo-and-tourism-assistant
+  clawhub_path: mbjoern/swiss-geo-and-tourism-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Swiss Geo & Tourism Assistant
+
+    # Source: ClawHub community skill by mbjoern
+
+    # Install: clawhub install swiss-geo-and-tourism-assistant
+
+    # Path: mbjoern/swiss-geo-and-tourism-assistant
+
+
+    ## Description
+
+    Schweizer Geodaten, POIs und Tourismus. Orte/Adressen suchen, Höhen abfragen, städtische POIs finden (Restaurants, Cafés,
+    Sehenswürdigkeiten via OpenStreetMap), ÖV-Fahrplan, Kartenlinks. Nutze bei Fragen zu Schweizer Orten, Attraktionen, Ausflügen
+    oder Koordinaten.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install swiss-geo-and-tourism-assistant
+
+    ```'
+examples:
+- description: Install Swiss Geo & Tourism Assistant from ClawHub
+  usage: clawhub install swiss-geo-and-tourism-assistant
+schema_version: '1.0'

@@ -1,0 +1,75 @@
+name: tech-stack-evaluator
+title: Tech Stack Evaluator
+version: 1.0.0
+description: Technology stack evaluation and comparison with TCO analysis, security assessment, and ecosystem health scoring.
+  Use when comparing frameworks, evaluating technology stacks, calculating total cost of ownership, assessing migration paths,
+  or analyzing ecosystem viability.
+metadata:
+  author: alirezarezvani
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - tech
+  - stack
+  - evaluator
+  source: clawhub-community
+  clawhub_slug: tech-stack-evaluator
+  clawhub_path: alirezarezvani/tech-stack-evaluator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tech Stack Evaluator
+
+    # Source: ClawHub community skill by alirezarezvani
+
+    # Install: clawhub install tech-stack-evaluator
+
+    # Path: alirezarezvani/tech-stack-evaluator
+
+
+    ## Description
+
+    Technology stack evaluation and comparison with TCO analysis, security assessment, and ecosystem health scoring. Use when
+    comparing frameworks, evaluating technology stacks, calculating total cost of ownership, assessing migration paths, or
+    analyzing ecosystem viability.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/expected_output_comparison.json
+
+    - assets/sample_input_structured.json
+
+    - assets/sample_input_tco.json
+
+    - assets/sample_input_text.json
+
+    - references/examples.md
+
+    - references/metrics.md
+
+    - references/workflows.md
+
+    - scripts/ecosystem_analyzer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tech-stack-evaluator
+
+    ```'
+examples:
+- description: Install Tech Stack Evaluator from ClawHub
+  usage: clawhub install tech-stack-evaluator
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: kagi-search
+title: Kagi Search
+version: 1.2.0
+description: Web search using Kagi Search API. Use when you need to search the web for current information, facts, or references.
+  Requires KAGI_API_KEY in the environment.
+metadata:
+  author: silversteez
+  category: Search & Research
+  tags:
+  - search-research
+  - kagi
+  - search
+  source: clawhub-community
+  clawhub_slug: kagi-search
+  clawhub_path: silversteez/kagi-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kagi Search
+
+    # Source: ClawHub community skill by silversteez
+
+    # Install: clawhub install kagi-search
+
+    # Path: silversteez/kagi-search
+
+
+    ## Description
+
+    Web search using Kagi Search API. Use when you need to search the web for current information, facts, or references. Requires
+    KAGI_API_KEY in the environment.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/kagi-search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kagi-search
+
+    ```'
+examples:
+- description: Install Kagi Search from ClawHub
+  usage: clawhub install kagi-search
+schema_version: '1.0'

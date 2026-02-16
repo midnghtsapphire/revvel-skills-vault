@@ -1,0 +1,67 @@
+name: legalfrance
+title: LegalFrance
+version: 1.0.1
+description: '"Assistant juridique français RAG sur codes et lois consolidés (LEGI/DILA). Utiliser pour questions de droit
+  français, recherche d''articles, explication de textes législatifs, synthèse juridique avec citations vérifiables."'
+metadata:
+  author: msgnoki
+  category: Development & Coding
+  tags:
+  - development-coding
+  - legalfrance
+  source: clawhub-community
+  clawhub_slug: legalfrance
+  clawhub_path: msgnoki/legalfrance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LegalFrance
+
+    # Source: ClawHub community skill by msgnoki
+
+    # Install: clawhub install legalfrance
+
+    # Path: msgnoki/legalfrance
+
+
+    ## Description
+
+    "Assistant juridique français RAG sur codes et lois consolidés (LEGI/DILA). Utiliser pour questions de droit français,
+    recherche d''articles, explication de textes législatifs, synthèse juridique avec citations vérifiables."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/answer_template.md
+
+    - scripts/ask.py
+
+    - scripts/benchmark.py
+
+    - scripts/ingest.py
+
+    - scripts/one_shot.py
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install legalfrance
+
+    ```'
+examples:
+- description: Install LegalFrance from ClawHub
+  usage: clawhub install legalfrance
+schema_version: '1.0'

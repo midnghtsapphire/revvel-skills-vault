@@ -1,0 +1,75 @@
+name: garmin-health-analysis
+title: Garmin Health Analysis
+version: 1.2.2
+description: Talk to your Garmin data naturally - "what was my fastest speed snowboarding?", "how did I sleep last night?",
+  "what was my heart rate at 3pm?". Access 20+ metrics (sleep stages, Body Battery, HRV, VO2 max, training readiness, body
+  composition, SPO2), download FIT/GPX files for route analysis, query
+metadata:
+  author: eversonl
+  category: Development & Coding
+  tags:
+  - development-coding
+  - garmin
+  - health
+  - analysis
+  source: clawhub-community
+  clawhub_slug: garmin-health-analysis
+  clawhub_path: eversonl/garmin-health-analysis
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Garmin Health Analysis
+
+    # Source: ClawHub community skill by eversonl
+
+    # Install: clawhub install garmin-health-analysis
+
+    # Path: eversonl/garmin-health-analysis
+
+
+    ## Description
+
+    Talk to your Garmin data naturally - "what was my fastest speed snowboarding?", "how did I sleep last night?", "what was
+    my heart rate at 3pm?". Access 20+ metrics (sleep stages, Body Battery, HRV, VO2 max, training readiness, body composition,
+    SPO2), download FIT/GPX files for route analysis, query
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - install.sh
+
+    - references/api.md
+
+    - references/extended_capabilities.md
+
+    - references/health_analysis.md
+
+    - references/mcp_setup.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install garmin-health-analysis
+
+    ```'
+examples:
+- description: Install Garmin Health Analysis from ClawHub
+  usage: clawhub install garmin-health-analysis
+schema_version: '1.0'

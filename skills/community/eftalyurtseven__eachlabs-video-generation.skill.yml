@@ -1,0 +1,61 @@
+name: eachlabs-video-generation
+title: Eachlabs Video Generation
+version: 0.1.0
+description: Generate new videos from text prompts, images, or reference inputs using EachLabs AI models. Supports text-to-video,
+  image-to-video, transitions, motion control, talking head, and avatar generation. Use when the user wants to create new
+  video content. For editing existing videos, see eachlabs-video-
+metadata:
+  author: eftalyurtseven
+  category: Media & Content
+  tags:
+  - media-content
+  - eachlabs
+  - video
+  - generation
+  source: clawhub-community
+  clawhub_slug: eachlabs-video-generation
+  clawhub_path: eftalyurtseven/eachlabs-video-generation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Eachlabs Video Generation
+
+    # Source: ClawHub community skill by eftalyurtseven
+
+    # Install: clawhub install eachlabs-video-generation
+
+    # Path: eftalyurtseven/eachlabs-video-generation
+
+
+    ## Description
+
+    Generate new videos from text prompts, images, or reference inputs using EachLabs AI models. Supports text-to-video, image-to-video,
+    transitions, motion control, talking head, and avatar generation. Use when the user wants to create new video content.
+    For editing existing videos, see eachlabs-video-
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/MODELS.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install eachlabs-video-generation
+
+    ```'
+examples:
+- description: Install Eachlabs Video Generation from ClawHub
+  usage: clawhub install eachlabs-video-generation
+schema_version: '1.0'

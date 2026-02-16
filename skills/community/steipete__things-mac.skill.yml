@@ -1,0 +1,58 @@
+name: things-mac
+title: Things Mac
+version: 1.0.0
+description: Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from
+  the local Things database). Use when a user asks Clawdbot to add a task to Things, list inbox/today/upcoming, search tasks,
+  or inspect projects/areas/tags.
+metadata:
+  author: steipete
+  category: Search & Research
+  tags:
+  - search-research
+  - things
+  - mac
+  source: clawhub-community
+  clawhub_slug: things-mac
+  clawhub_path: steipete/things-mac
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Things Mac
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install things-mac
+
+    # Path: steipete/things-mac
+
+
+    ## Description
+
+    Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local
+    Things database). Use when a user asks Clawdbot to add a task to Things, list inbox/today/upcoming, search tasks, or inspect
+    projects/areas/tags.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install things-mac
+
+    ```'
+examples:
+- description: Install Things Mac from ClawHub
+  usage: clawhub install things-mac
+schema_version: '1.0'

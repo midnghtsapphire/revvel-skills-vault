@@ -1,0 +1,53 @@
+name: habits
+title: Habits
+version: 1.0.0
+description: Build a personal habit tracking system with streaks, reviews, and progression.
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - habits
+  source: clawhub-community
+  clawhub_slug: habits
+  clawhub_path: ivangdavila/habits
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Habits
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install habits
+
+    # Path: ivangdavila/habits
+
+
+    ## Description
+
+    Build a personal habit tracking system with streaks, reviews, and progression.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install habits
+
+    ```'
+examples:
+- description: Install Habits from ClawHub
+  usage: clawhub install habits
+schema_version: '1.0'

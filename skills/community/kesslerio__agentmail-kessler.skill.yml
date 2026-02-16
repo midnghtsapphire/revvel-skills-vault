@@ -1,0 +1,63 @@
+name: agentmail
+title: AgentMail (Enhanced)
+version: 1.1.0
+description: Programmatic email for AI agents via AgentMail API. Create inboxes, send/receive messages, manage threads, webhooks,
+  pods, and custom domains. Use when you need agent email identity, email-based workflows, or real-time email processing.
+metadata:
+  author: kesslerio
+  category: Communication
+  tags:
+  - communication
+  - agentmail
+  source: clawhub-community
+  clawhub_slug: agentmail-kessler
+  clawhub_path: kesslerio/agentmail-kessler
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AgentMail (Enhanced)
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install agentmail-kessler
+
+    # Path: kesslerio/agentmail-kessler
+
+
+    ## Description
+
+    Programmatic email for AI agents via AgentMail API. Create inboxes, send/receive messages, manage threads, webhooks, pods,
+    and custom domains. Use when you need agent email identity, email-based workflows, or real-time email processing.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API.md
+
+    - references/EXAMPLES.md
+
+    - references/WEBHOOKS.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentmail-kessler
+
+    ```'
+examples:
+- description: Install AgentMail (Enhanced) from ClawHub
+  usage: clawhub install agentmail-kessler
+schema_version: '1.0'

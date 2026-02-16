@@ -1,0 +1,65 @@
+name: openclaw-backup-optimized
+title: Openclaw Backup Optimized
+version: 1.0.1
+description: '"Optimized OpenClaw backup skill for creating full snapshots with workspace archive splitting, change summaries,
+  restore instructions, and Discord notifications. Use when you need to set up or run automated backups, configure backup
+  cron jobs, or document/restore OpenClaw state. Triggers on backup a'
+metadata:
+  author: cccarv82
+  category: Social Media
+  tags:
+  - social-media
+  - openclaw
+  - backup
+  - optimized
+  source: clawhub-community
+  clawhub_slug: openclaw-backup-optimized
+  clawhub_path: cccarv82/openclaw-backup-optimized
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Backup Optimized
+
+    # Source: ClawHub community skill by cccarv82
+
+    # Install: clawhub install openclaw-backup-optimized
+
+    # Path: cccarv82/openclaw-backup-optimized
+
+
+    ## Description
+
+    "Optimized OpenClaw backup skill for creating full snapshots with workspace archive splitting, change summaries, restore
+    instructions, and Discord notifications. Use when you need to set up or run automated backups, configure backup cron jobs,
+    or document/restore OpenClaw state. Triggers on backup a
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/CONFIG.md
+
+    - scripts/backup.js
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-backup-optimized
+
+    ```'
+examples:
+- description: Install Openclaw Backup Optimized from ClawHub
+  usage: clawhub install openclaw-backup-optimized
+schema_version: '1.0'

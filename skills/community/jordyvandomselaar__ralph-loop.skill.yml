@@ -1,0 +1,58 @@
+name: ralph-loop
+title: Ralph Loop
+version: 0.1.1
+description: Generate copy-paste bash scripts for Ralph Wiggum/AI agent loops (Codex, Claude Code, OpenCode, Goose). Use when
+  asked for a “Ralph loop”, “Ralph Wiggum loop”, or an AI loop to plan/build code via PROMPT.md + AGENTS.md, SPECS, and IMPLEMENTATION_PLAN.md,
+  including PLANNING vs BUILDING modes, backpre
+metadata:
+  author: jordyvandomselaar
+  category: Development & Coding
+  tags:
+  - development-coding
+  - ralph
+  - loop
+  source: clawhub-community
+  clawhub_slug: ralph-loop
+  clawhub_path: jordyvandomselaar/ralph-loop
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ralph Loop
+
+    # Source: ClawHub community skill by jordyvandomselaar
+
+    # Install: clawhub install ralph-loop
+
+    # Path: jordyvandomselaar/ralph-loop
+
+
+    ## Description
+
+    Generate copy-paste bash scripts for Ralph Wiggum/AI agent loops (Codex, Claude Code, OpenCode, Goose). Use when asked
+    for a “Ralph loop”, “Ralph Wiggum loop”, or an AI loop to plan/build code via PROMPT.md + AGENTS.md, SPECS, and IMPLEMENTATION_PLAN.md,
+    including PLANNING vs BUILDING modes, backpre
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ralph-loop
+
+    ```'
+examples:
+- description: Install Ralph Loop from ClawHub
+  usage: clawhub install ralph-loop
+schema_version: '1.0'

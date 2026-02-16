@@ -1,0 +1,64 @@
+name: med-info
+title: Med Info
+version: 0.2.1
+description: Retrieve medication information from authoritative open sources (openFDA drug labels/NDC, RxNorm, MedlinePlus
+  Connect). Resolves drug names to RxCUI/NDC, fetches prescribing label sections with citations.
+metadata:
+  author: duncandobbins
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - med
+  - info
+  source: clawhub-community
+  clawhub_slug: med-info
+  clawhub_path: duncandobbins/med-info
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Med Info
+
+    # Source: ClawHub community skill by duncandobbins
+
+    # Install: clawhub install med-info
+
+    # Path: duncandobbins/med-info
+
+
+    ## Description
+
+    Retrieve medication information from authoritative open sources (openFDA drug labels/NDC, RxNorm, MedlinePlus Connect).
+    Resolves drug names to RxCUI/NDC, fetches prescribing label sections with citations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - findings.md
+
+    - progress.md
+
+    - task_plan.md
+
+    - scripts/med_info.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install med-info
+
+    ```'
+examples:
+- description: Install Med Info from ClawHub
+  usage: clawhub install med-info
+schema_version: '1.0'

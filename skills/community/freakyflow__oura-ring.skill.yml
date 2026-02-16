@@ -1,0 +1,60 @@
+name: oura-ring
+title: Ouraskill
+version: 1.0.3
+description: Syncs daily health and fitness data from Oura Ring into markdown files. Provides sleep, readiness, activity,
+  heart rate, stress, SpO2, and workout data.
+metadata:
+  author: freakyflow
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - oura
+  - ring
+  source: clawhub-community
+  clawhub_slug: oura-ring
+  clawhub_path: freakyflow/oura-ring
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ouraskill
+
+    # Source: ClawHub community skill by freakyflow
+
+    # Install: clawhub install oura-ring
+
+    # Path: freakyflow/oura-ring
+
+
+    ## Description
+
+    Syncs daily health and fitness data from Oura Ring into markdown files. Provides sleep, readiness, activity, heart rate,
+    stress, SpO2, and workout data.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sync_oura.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install oura-ring
+
+    ```'
+examples:
+- description: Install Ouraskill from ClawHub
+  usage: clawhub install oura-ring
+schema_version: '1.0'

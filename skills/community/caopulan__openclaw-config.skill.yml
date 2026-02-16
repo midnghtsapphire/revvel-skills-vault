@@ -1,0 +1,66 @@
+name: openclaw-config
+title: Openclaw Config
+version: 0.1.0
+description: Edit and validate OpenClaw Gateway config (openclaw.json / JSON5). Use when adding/changing config keys (gateway.*,
+  agents.*, models.*, channels.*, tools.*, skills.*, plugins.*, $include) or diagnosing openclaw doctor/config validation
+  errors, to avoid schema mismatches that prevent the Gateway from
+metadata:
+  author: caopulan
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - config
+  source: clawhub-community
+  clawhub_slug: openclaw-config
+  clawhub_path: caopulan/openclaw-config
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Config
+
+    # Source: ClawHub community skill by caopulan
+
+    # Install: clawhub install openclaw-config
+
+    # Path: caopulan/openclaw-config
+
+
+    ## Description
+
+    Edit and validate OpenClaw Gateway config (openclaw.json / JSON5). Use when adding/changing config keys (gateway.*, agents.*,
+    models.*, channels.*, tools.*, skills.*, plugins.*, $include) or diagnosing openclaw doctor/config validation errors,
+    to avoid schema mismatches that prevent the Gateway from
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/openclaw-config-fields.md
+
+    - references/schema-sources.md
+
+    - scripts/openclaw-config-check.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-config
+
+    ```'
+examples:
+- description: Install Openclaw Config from ClawHub
+  usage: clawhub install openclaw-config
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: invoice_generator
+title: Invoice Generator
+version: 1.1.0
+description: Creates professional invoices in markdown and HTML
+metadata:
+  author: 1kalin
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - invoice
+  - generator
+  source: clawhub-community
+  clawhub_slug: afrexai-invoice-gen
+  clawhub_path: 1kalin/afrexai-invoice-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Invoice Generator
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install afrexai-invoice-gen
+
+    # Path: 1kalin/afrexai-invoice-gen
+
+
+    ## Description
+
+    Creates professional invoices in markdown and HTML
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install afrexai-invoice-gen
+
+    ```'
+examples:
+- description: Install Invoice Generator from ClawHub
+  usage: clawhub install afrexai-invoice-gen
+schema_version: '1.0'

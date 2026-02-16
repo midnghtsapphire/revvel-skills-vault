@@ -1,0 +1,59 @@
+name: dytto
+title: Dytto
+version: 0.1.0
+description: '"Give your agent persistent memory and real-time personal context via Dytto — the context API for AI agents.
+  Use when you need to know about the user (who they are, what they care about, behavioral patterns, daily stories), search
+  their life history, store new facts learned during conversation, or p'
+metadata:
+  author: ayaan-p
+  category: Search & Research
+  tags:
+  - search-research
+  - dytto
+  source: clawhub-community
+  clawhub_slug: dytto-agent-skill
+  clawhub_path: ayaan-p/dytto-agent-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dytto
+
+    # Source: ClawHub community skill by ayaan-p
+
+    # Install: clawhub install dytto-agent-skill
+
+    # Path: ayaan-p/dytto-agent-skill
+
+
+    ## Description
+
+    "Give your agent persistent memory and real-time personal context via Dytto — the context API for AI agents. Use when
+    you need to know about the user (who they are, what they care about, behavioral patterns, daily stories), search their
+    life history, store new facts learned during conversation, or p
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/dytto.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dytto-agent-skill
+
+    ```'
+examples:
+- description: Install Dytto from ClawHub
+  usage: clawhub install dytto-agent-skill
+schema_version: '1.0'

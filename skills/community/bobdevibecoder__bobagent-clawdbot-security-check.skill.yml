@@ -1,0 +1,60 @@
+name: clawdbot-self-security-audit
+title: clawdbot-security-check
+version: 1.0.0
+description: Perform a comprehensive read-only security audit of Clawdbot's own configuration. This is a knowledge-based skill
+  that teaches Clawdbot to identify hardening opportunities across the system. Use when user asks to "run security check",
+  "audit clawdbot", "check security hardening", or "what vulnerabil
+metadata:
+  author: bobdevibecoder
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawdbot
+  - self
+  - security
+  - audit
+  source: clawhub-community
+  clawhub_slug: bobagent-clawdbot-security-check
+  clawhub_path: bobdevibecoder/bobagent-clawdbot-security-check
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawdbot-security-check
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-clawdbot-security-check
+
+    # Path: bobdevibecoder/bobagent-clawdbot-security-check
+
+
+    ## Description
+
+    Perform a comprehensive read-only security audit of Clawdbot''s own configuration. This is a knowledge-based skill that
+    teaches Clawdbot to identify hardening opportunities across the system. Use when user asks to "run security check", "audit
+    clawdbot", "check security hardening", or "what vulnerabil
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-clawdbot-security-check
+
+    ```'
+examples:
+- description: Install clawdbot-security-check from ClawHub
+  usage: clawhub install bobagent-clawdbot-security-check
+schema_version: '1.0'

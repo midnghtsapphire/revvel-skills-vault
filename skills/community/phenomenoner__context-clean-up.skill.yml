@@ -1,0 +1,60 @@
+name: context-clean-up
+title: Context Clean Up
+version: 1.0.2
+description: Audit OpenClaw context bloat sources and produce an actionable clean-up plan (no automatic changes).
+metadata:
+  author: phenomenoner
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - context
+  - clean
+  source: clawhub-community
+  clawhub_slug: context-clean-up
+  clawhub_path: phenomenoner/context-clean-up
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Clean Up
+
+    # Source: ClawHub community skill by phenomenoner
+
+    # Install: clawhub install context-clean-up
+
+    # Path: phenomenoner/context-clean-up
+
+
+    ## Description
+
+    Audit OpenClaw context bloat sources and produce an actionable clean-up plan (no automatic changes).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cron-noise-checklist.md
+
+    - references/out-of-band-delivery.md
+
+    - scripts/context_cleanup_audit.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-clean-up
+
+    ```'
+examples:
+- description: Install Context Clean Up from ClawHub
+  usage: clawhub install context-clean-up
+schema_version: '1.0'

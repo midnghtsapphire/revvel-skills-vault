@@ -1,0 +1,58 @@
+name: github-sync
+title: Github Sync
+version: 1.0.0
+description: Two-way synchronization between SpecWeave specs and GitHub Projects (push & pull by default). Use when asking
+  about GitHub integration setup, troubleshooting sync issues, or configuring sync settings. For actual syncing, use /sw-github:sync-spec
+  command.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - sync
+  source: clawhub-community
+  clawhub_slug: sw-github-sync
+  clawhub_path: anton-abyzov/sw-github-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Github Sync
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-github-sync
+
+    # Path: anton-abyzov/sw-github-sync
+
+
+    ## Description
+
+    Two-way synchronization between SpecWeave specs and GitHub Projects (push & pull by default). Use when asking about GitHub
+    integration setup, troubleshooting sync issues, or configuring sync settings. For actual syncing, use /sw-github:sync-spec
+    command.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-github-sync
+
+    ```'
+examples:
+- description: Install Github Sync from ClawHub
+  usage: clawhub install sw-github-sync
+schema_version: '1.0'

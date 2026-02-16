@@ -1,0 +1,69 @@
+name: lightweight-kb
+title: Lightweight Knowledge Base
+version: 1.0.0
+description: 轻量级知识库与任务管理体系。结构化 JSON + MD 混合存储，支持用户画像、任务节奏、知识索引、每日自动进化。适用于中小规模记忆管理。
+metadata:
+  author: williamtie
+  category: General
+  tags:
+  - general
+  - lightweight
+  source: clawhub-community
+  clawhub_slug: lightweight-kb
+  clawhub_path: williamtie/lightweight-kb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lightweight Knowledge Base
+
+    # Source: ClawHub community skill by williamtie
+
+    # Install: clawhub install lightweight-kb
+
+    # Path: williamtie/lightweight-kb
+
+
+    ## Description
+
+    轻量级知识库与任务管理体系。结构化 JSON + MD 混合存储，支持用户画像、任务节奏、知识索引、每日自动进化。适用于中小规模记忆管理。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/kb_index.json
+
+    - data/task_rhythm.json
+
+    - data/user_profile.json
+
+    - references/communication.md
+
+    - references/task_guidelines.md
+
+    - scripts/daily_evolve.sh
+
+    - scripts/init.sh
+
+    - scripts/query.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lightweight-kb
+
+    ```'
+examples:
+- description: Install Lightweight Knowledge Base from ClawHub
+  usage: clawhub install lightweight-kb
+schema_version: '1.0'

@@ -1,0 +1,67 @@
+name: flomo-via-app
+title: Flomo Via App
+version: 1.0.8
+description: '"Send notes and memos to flomo (浮墨笔记) via URL Scheme with automatic webhook fallback. Use when user wants to
+  save thoughts, links, ideas, or content to their flomo inbox. Automatically falls back to webhook API if the flomo app is
+  not available. Supports hashtags and quick capture workflows on macOS'
+metadata:
+  author: qiantao1001
+  category: Development & Coding
+  tags:
+  - development-coding
+  - flomo
+  - via
+  - app
+  source: clawhub-community
+  clawhub_slug: flomo-via-app
+  clawhub_path: qiantao1001/flomo-via-app
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Flomo Via App
+
+    # Source: ClawHub community skill by qiantao1001
+
+    # Install: clawhub install flomo-via-app
+
+    # Path: qiantao1001/flomo-via-app
+
+
+    ## Description
+
+    "Send notes and memos to flomo (浮墨笔记) via URL Scheme with automatic webhook fallback. Use when user wants to save thoughts,
+    links, ideas, or content to their flomo inbox. Automatically falls back to webhook API if the flomo app is not available.
+    Supports hashtags and quick capture workflows on macOS
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/configure.sh
+
+    - scripts/flomo_send.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flomo-via-app
+
+    ```'
+examples:
+- description: Install Flomo Via App from ClawHub
+  usage: clawhub install flomo-via-app
+schema_version: '1.0'

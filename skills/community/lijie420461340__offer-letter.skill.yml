@@ -1,0 +1,55 @@
+name: offer_letter_generator
+title: Offer Letter
+version: 1.0.0
+description: Create formal employment offer letters with compensation and terms
+metadata:
+  author: lijie420461340
+  category: General
+  tags:
+  - general
+  - offer
+  - letter
+  - generator
+  source: clawhub-community
+  clawhub_slug: offer-letter
+  clawhub_path: lijie420461340/offer-letter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Offer Letter
+
+    # Source: ClawHub community skill by lijie420461340
+
+    # Install: clawhub install offer-letter
+
+    # Path: lijie420461340/offer-letter
+
+
+    ## Description
+
+    Create formal employment offer letters with compensation and terms
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install offer-letter
+
+    ```'
+examples:
+- description: Install Offer Letter from ClawHub
+  usage: clawhub install offer-letter
+schema_version: '1.0'

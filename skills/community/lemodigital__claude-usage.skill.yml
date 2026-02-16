@@ -1,0 +1,64 @@
+name: claude-usage
+title: Claude Usage
+version: 1.0.0
+description: Calculate Claude Max subscription usage from OpenClaw session data. Shows credits consumed, weekly budget percentage,
+  5-hour rate limit window, and per-session breakdown.
+metadata:
+  author: lemodigital
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - claude
+  - usage
+  source: clawhub-community
+  clawhub_slug: claude-usage
+  clawhub_path: lemodigital/claude-usage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claude Usage
+
+    # Source: ClawHub community skill by lemodigital
+
+    # Install: clawhub install claude-usage
+
+    # Path: lemodigital/claude-usage
+
+
+    ## Description
+
+    Calculate Claude Max subscription usage from OpenClaw session data. Shows credits consumed, weekly budget percentage,
+    5-hour rate limit window, and per-session breakdown.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - bin/claude-usage.js
+
+    - scripts/claude-usage.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claude-usage
+
+    ```'
+examples:
+- description: Install Claude Usage from ClawHub
+  usage: clawhub install claude-usage
+schema_version: '1.0'

@@ -1,0 +1,69 @@
+name: helpscout
+title: Helpscout
+version: 1.0.1
+description: Fetches messages from specific Helpscout inboxes
+metadata:
+  author: fabiensebban
+  category: Communication
+  tags:
+  - communication
+  - helpscout
+  source: clawhub-community
+  clawhub_slug: helpscout
+  clawhub_path: fabiensebban/helpscout
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Helpscout
+
+    # Source: ClawHub community skill by fabiensebban
+
+    # Install: clawhub install helpscout
+
+    # Path: fabiensebban/helpscout
+
+
+    ## Description
+
+    Fetches messages from specific Helpscout inboxes
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.schema.json
+
+    - index.js
+
+    - jest.config.js
+
+    - package-lock.json
+
+    - package.json
+
+    - __mocks__/openclaw-config.js
+
+    - references/helpscout-api.md
+
+    - scripts/fetchConversations.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install helpscout
+
+    ```'
+examples:
+- description: Install Helpscout from ClawHub
+  usage: clawhub install helpscout
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: git-sync
+title: git-sync
+version: 1.0.0
+description: Automatically syncs local workspace changes to the remote GitHub repository. Use after significant changes or
+  periodically.
+metadata:
+  author: bobdevibecoder
+  category: Development & Coding
+  tags:
+  - development-coding
+  - git
+  - sync
+  source: clawhub-community
+  clawhub_slug: bobagent-git-sync
+  clawhub_path: bobdevibecoder/bobagent-git-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# git-sync
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-git-sync
+
+    # Path: bobdevibecoder/bobagent-git-sync
+
+
+    ## Description
+
+    Automatically syncs local workspace changes to the remote GitHub repository. Use after significant changes or periodically.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-git-sync
+
+    ```'
+examples:
+- description: Install git-sync from ClawHub
+  usage: clawhub install bobagent-git-sync
+schema_version: '1.0'

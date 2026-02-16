@@ -1,0 +1,54 @@
+name: ping-monitor
+title: Ping Monitor
+version: 1.0.0
+description: '"ICMP health check for hosts, phones, and daemons"'
+metadata:
+  author: xejrax
+  category: System & OS
+  tags:
+  - system-os
+  - ping
+  - monitor
+  source: clawhub-community
+  clawhub_slug: ping-monitor
+  clawhub_path: xejrax/ping-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ping Monitor
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install ping-monitor
+
+    # Path: xejrax/ping-monitor
+
+
+    ## Description
+
+    "ICMP health check for hosts, phones, and daemons"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ping-monitor
+
+    ```'
+examples:
+- description: Install Ping Monitor from ClawHub
+  usage: clawhub install ping-monitor
+schema_version: '1.0'

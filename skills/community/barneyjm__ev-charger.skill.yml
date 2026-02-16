@@ -1,0 +1,57 @@
+name: ev-charger
+title: Ev Charger
+version: 2.0.0
+description: '"Find EV charging stations along a route or near a destination using Camino AI''s location intelligence with
+  OpenStreetMap data."'
+metadata:
+  author: barneyjm
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - charger
+  source: clawhub-community
+  clawhub_slug: ev-charger
+  clawhub_path: barneyjm/ev-charger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ev Charger
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install ev-charger
+
+    # Path: barneyjm/ev-charger
+
+
+    ## Description
+
+    "Find EV charging stations along a route or near a destination using Camino AI''s location intelligence with OpenStreetMap
+    data."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ev-charger.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ev-charger
+
+    ```'
+examples:
+- description: Install Ev Charger from ClawHub
+  usage: clawhub install ev-charger
+schema_version: '1.0'

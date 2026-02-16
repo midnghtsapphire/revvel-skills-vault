@@ -1,0 +1,72 @@
+name: financial-intel
+title: Banana Farmer
+version: 1.9.0
+description: Stock momentum scanner and portfolio intelligence. Look up any ticker for momentum scores, RSI, coil breakout
+  patterns, and AI analysis. Scan top signals across 6,500+ stocks and crypto. Track portfolio holdings with real-time alerts.
+  Market pulse, sector trends, win/loss proof data, and risk assess
+metadata:
+  author: adamandjarvis
+  category: Development & Coding
+  tags:
+  - development-coding
+  - financial
+  - intel
+  source: clawhub-community
+  clawhub_slug: banana-farmer
+  clawhub_path: adamandjarvis/banana-farmer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Banana Farmer
+
+    # Source: ClawHub community skill by adamandjarvis
+
+    # Install: clawhub install banana-farmer
+
+    # Path: adamandjarvis/banana-farmer
+
+
+    ## Description
+
+    Stock momentum scanner and portfolio intelligence. Look up any ticker for momentum scores, RSI, coil breakout patterns,
+    and AI analysis. Scan top signals across 6,500+ stocks and crypto. Track portfolio holdings with real-time alerts. Market
+    pulse, sector trends, win/loss proof data, and risk assess
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bf-compare.py
+
+    - scripts/bf-lookup.py
+
+    - scripts/bf-market.py
+
+    - scripts/bf-movers.py
+
+    - scripts/bf-portfolio.py
+
+    - scripts/bf-sectors.py
+
+    - scripts/bf-watchlist.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install banana-farmer
+
+    ```'
+examples:
+- description: Install Banana Farmer from ClawHub
+  usage: clawhub install banana-farmer
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: ______
+title: 每日科技播报
+version: 1.0.2
+description: 从可抓取信息源（新浪科技、IT之家等）拉取当日科技新闻标题，生成简报并输出。无需 API Key，适合定时任务与手动触发。当用户要求执行每日科技播报、科技新闻简报、今日科技要闻时使用此技能。
+metadata:
+  author: wangyaok1
+  category: Development & Coding
+  tags:
+  - development-coding
+  - 每日科技播报
+  source: clawhub-community
+  clawhub_slug: daily-tech-broadcast
+  clawhub_path: wangyaok1/daily-tech-broadcast
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 每日科技播报
+
+    # Source: ClawHub community skill by wangyaok1
+
+    # Install: clawhub install daily-tech-broadcast
+
+    # Path: wangyaok1/daily-tech-broadcast
+
+
+    ## Description
+
+    从可抓取信息源（新浪科技、IT之家等）拉取当日科技新闻标题，生成简报并输出。无需 API Key，适合定时任务与手动触发。当用户要求执行每日科技播报、科技新闻简报、今日科技要闻时使用此技能。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/broadcast.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-tech-broadcast
+
+    ```'
+examples:
+- description: Install 每日科技播报 from ClawHub
+  usage: clawhub install daily-tech-broadcast
+schema_version: '1.0'

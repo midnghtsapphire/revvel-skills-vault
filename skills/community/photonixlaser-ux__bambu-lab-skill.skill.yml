@@ -1,0 +1,66 @@
+name: bambu-lab
+title: Bambu Lab
+version: 0.1.0
+description: Steuere Bambu Lab 3D-Drucker (A1, P1P, X1) über MQTT. Nutze diesen Skill für Druck-Überwachung, Status-Abfragen,
+  Steuerung (Pause/Stopp) und Benachrichtigungen bei Druckende oder Fehlern. Erfordert LAN-Mode mit Access Code.
+metadata:
+  author: photonixlaser-ux
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bambu
+  - lab
+  source: clawhub-community
+  clawhub_slug: bambu-lab-skill
+  clawhub_path: photonixlaser-ux/bambu-lab-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bambu Lab
+
+    # Source: ClawHub community skill by photonixlaser-ux
+
+    # Install: clawhub install bambu-lab-skill
+
+    # Path: photonixlaser-ux/bambu-lab-skill
+
+
+    ## Description
+
+    Steuere Bambu Lab 3D-Drucker (A1, P1P, X1) über MQTT. Nutze diesen Skill für Druck-Überwachung, Status-Abfragen, Steuerung
+    (Pause/Stopp) und Benachrichtigungen bei Druckende oder Fehlern. Erfordert LAN-Mode mit Access Code.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/mqtt.md
+
+    - scripts/bambu.py
+
+    - scripts/bambu.sh
+
+    - scripts/bambu_monitor.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bambu-lab-skill
+
+    ```'
+examples:
+- description: Install Bambu Lab from ClawHub
+  usage: clawhub install bambu-lab-skill
+schema_version: '1.0'

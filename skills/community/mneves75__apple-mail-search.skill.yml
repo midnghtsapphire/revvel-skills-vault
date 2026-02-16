@@ -1,0 +1,57 @@
+name: apple-mail-search
+title: Apple Mail Search
+version: 1.0.0
+description: Fast Apple Mail search via SQLite on macOS. Search emails by subject, sender, date, attachments - results in
+  ~50ms vs 8+ minutes with AppleScript. Use when asked to find, search, or list emails.
+metadata:
+  author: mneves75
+  category: Search & Research
+  tags:
+  - search-research
+  - apple
+  - mail
+  - search
+  source: clawhub-community
+  clawhub_slug: apple-mail-search
+  clawhub_path: mneves75/apple-mail-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Mail Search
+
+    # Source: ClawHub community skill by mneves75
+
+    # Install: clawhub install apple-mail-search
+
+    # Path: mneves75/apple-mail-search
+
+
+    ## Description
+
+    Fast Apple Mail search via SQLite on macOS. Search emails by subject, sender, date, attachments - results in ~50ms vs
+    8+ minutes with AppleScript. Use when asked to find, search, or list emails.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-mail-search
+
+    ```'
+examples:
+- description: Install Apple Mail Search from ClawHub
+  usage: clawhub install apple-mail-search
+schema_version: '1.0'

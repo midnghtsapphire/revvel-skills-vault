@@ -1,0 +1,54 @@
+name: domain-checker
+title: Domain Checker
+version: 1.0.0
+description: Check domain name availability across multiple TLDs. Fast bulk checking for domain research and brainstorming.
+metadata:
+  author: mrgoodb
+  category: Search & Research
+  tags:
+  - search-research
+  - domain
+  - checker
+  source: clawhub-community
+  clawhub_slug: domain-checker
+  clawhub_path: mrgoodb/domain-checker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Domain Checker
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install domain-checker
+
+    # Path: mrgoodb/domain-checker
+
+
+    ## Description
+
+    Check domain name availability across multiple TLDs. Fast bulk checking for domain research and brainstorming.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install domain-checker
+
+    ```'
+examples:
+- description: Install Domain Checker from ClawHub
+  usage: clawhub install domain-checker
+schema_version: '1.0'

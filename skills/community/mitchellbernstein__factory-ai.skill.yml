@@ -1,0 +1,54 @@
+name: factory-ai
+title: Factory AI Droid
+version: 1.0.0
+description: Use Factory AI's droid CLI for software engineering tasks. Supports interactive mode, exec mode, MCP servers,
+  and plugins.
+metadata:
+  author: mitchellbernstein
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - factory
+  source: clawhub-community
+  clawhub_slug: factory-ai
+  clawhub_path: mitchellbernstein/factory-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Factory AI Droid
+
+    # Source: ClawHub community skill by mitchellbernstein
+
+    # Install: clawhub install factory-ai
+
+    # Path: mitchellbernstein/factory-ai
+
+
+    ## Description
+
+    Use Factory AI''s droid CLI for software engineering tasks. Supports interactive mode, exec mode, MCP servers, and plugins.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install factory-ai
+
+    ```'
+examples:
+- description: Install Factory AI Droid from ClawHub
+  usage: clawhub install factory-ai
+schema_version: '1.0'

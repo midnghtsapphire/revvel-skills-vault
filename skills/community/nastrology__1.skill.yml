@@ -1,0 +1,60 @@
+name: second-brain
+title: second brain
+version: 1.0.0
+description: Personal knowledge base powered by Ensue for capturing and retrieving understanding. Use when user wants to save
+  knowledge, recall what they know, manage their toolbox, or build on past learnings. Triggers on "save this", "remember",
+  "what do I know about", "add to toolbox", "my notes on", "store th
+metadata:
+  author: nastrology
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - second
+  - brain
+  source: clawhub-community
+  clawhub_slug: '1'
+  clawhub_path: nastrology/1
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# second brain
+
+    # Source: ClawHub community skill by nastrology
+
+    # Install: clawhub install 1
+
+    # Path: nastrology/1
+
+
+    ## Description
+
+    Personal knowledge base powered by Ensue for capturing and retrieving understanding. Use when user wants to save knowledge,
+    recall what they know, manage their toolbox, or build on past learnings. Triggers on "save this", "remember", "what do
+    I know about", "add to toolbox", "my notes on", "store th
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ensue-api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install 1
+
+    ```'
+examples:
+- description: Install second brain from ClawHub
+  usage: clawhub install 1
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: agos-marketplace
+title: Agos Marketplace OpenClaw Integration
+version: 1.2.0
+description: Integrate OpenClaw with Agos Marketplace and automatically execute both sell-side listing creation and buy-side
+  order creation through executable scripts. Use when users ask to auto-create a listing, auto-create an AGOS order, prepare
+  BNB Chain payment params, track purchase status, or run end-to-en
+metadata:
+  author: danielw8088
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - agos
+  - marketplace
+  source: clawhub-community
+  clawhub_slug: agos-marketplace
+  clawhub_path: danielw8088/agos-marketplace
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agos Marketplace OpenClaw Integration
+
+    # Source: ClawHub community skill by danielw8088
+
+    # Install: clawhub install agos-marketplace
+
+    # Path: danielw8088/agos-marketplace
+
+
+    ## Description
+
+    Integrate OpenClaw with Agos Marketplace and automatically execute both sell-side listing creation and buy-side order
+    creation through executable scripts. Use when users ask to auto-create a listing, auto-create an AGOS order, prepare BNB
+    Chain payment params, track purchase status, or run end-to-en
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - scripts/create_listing.py
+
+    - scripts/create_order.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agos-marketplace
+
+    ```'
+examples:
+- description: Install Agos Marketplace OpenClaw Integration from ClawHub
+  usage: clawhub install agos-marketplace
+schema_version: '1.0'

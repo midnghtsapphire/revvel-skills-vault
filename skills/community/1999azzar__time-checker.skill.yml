@@ -1,0 +1,58 @@
+name: time-checker
+title: Time Checker
+version: 1.0.0
+description: Check accurate current time, date, and timezone information for any location worldwide using time.is. Use when
+  the user asks "what time is it in X", "current time in Y", or needs to verify timezone offsets.
+metadata:
+  author: 1999azzar
+  category: Utilities
+  tags:
+  - utilities
+  - time
+  - checker
+  source: clawhub-community
+  clawhub_slug: time-checker
+  clawhub_path: 1999azzar/time-checker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Time Checker
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install time-checker
+
+    # Path: 1999azzar/time-checker
+
+
+    ## Description
+
+    Check accurate current time, date, and timezone information for any location worldwide using time.is. Use when the user
+    asks "what time is it in X", "current time in Y", or needs to verify timezone offsets.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check_time.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install time-checker
+
+    ```'
+examples:
+- description: Install Time Checker from ClawHub
+  usage: clawhub install time-checker
+schema_version: '1.0'

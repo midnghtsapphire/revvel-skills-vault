@@ -1,0 +1,68 @@
+name: apo-cli
+title: Apo Cli
+version: 0.1.1
+description: Search and order pharmacy products from apohealth.de via apo-cli. Use for medication search (by name or PZN),
+  product details, category browsing, and cart management. Trigger when the user mentions Apotheke, pharmacy, Medikament,
+  medication, PZN, apohealth, or health products.
+metadata:
+  author: lars147
+  category: Search & Research
+  tags:
+  - search-research
+  - apo
+  - cli
+  source: clawhub-community
+  clawhub_slug: apo-cli
+  clawhub_path: lars147/apo-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apo Cli
+
+    # Source: ClawHub community skill by lars147
+
+    # Install: clawhub install apo-cli
+
+    # Path: lars147/apo-cli
+
+
+    ## Description
+
+    Search and order pharmacy products from apohealth.de via apo-cli. Use for medication search (by name or PZN), product
+    details, category browsing, and cart management. Trigger when the user mentions Apotheke, pharmacy, Medikament, medication,
+    PZN, apohealth, or health products.
+
+
+    ## Files
+
+    - README.md
+
+    - RESEARCH.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - apo_cli.py
+
+    - pyproject.toml
+
+    - references/commands.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apo-cli
+
+    ```'
+examples:
+- description: Install Apo Cli from ClawHub
+  usage: clawhub install apo-cli
+schema_version: '1.0'

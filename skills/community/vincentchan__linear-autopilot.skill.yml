@@ -1,0 +1,66 @@
+name: linear-autopilot
+title: Linear Autopilot
+version: 1.1.0
+description: Automate Linear task processing with Discord notifications and git sync. Use when setting up a kanban-to-agent
+  workflow where Linear tasks trigger Clawdbot actions via Discord. Handles task intake, status updates, DM notifications,
+  and auto-push to git. Supports any task type - research, content cre
+metadata:
+  author: vincentchan
+  category: Search & Research
+  tags:
+  - search-research
+  - linear
+  - autopilot
+  source: clawhub-community
+  clawhub_slug: linear-autopilot
+  clawhub_path: vincentchan/linear-autopilot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Linear Autopilot
+
+    # Source: ClawHub community skill by vincentchan
+
+    # Install: clawhub install linear-autopilot
+
+    # Path: vincentchan/linear-autopilot
+
+
+    ## Description
+
+    Automate Linear task processing with Discord notifications and git sync. Use when setting up a kanban-to-agent workflow
+    where Linear tasks trigger Clawdbot actions via Discord. Handles task intake, status updates, DM notifications, and auto-push
+    to git. Supports any task type - research, content cre
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/make-setup.md
+
+    - references/pipedream-setup.md
+
+    - references/zapier-setup.md
+
+    - scripts/linear-api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linear-autopilot
+
+    ```'
+examples:
+- description: Install Linear Autopilot from ClawHub
+  usage: clawhub install linear-autopilot
+schema_version: '1.0'

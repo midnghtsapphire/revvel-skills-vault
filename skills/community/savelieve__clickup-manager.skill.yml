@@ -1,0 +1,59 @@
+name: clickup
+title: ClickUp Integration
+version: 1.0.1
+description: 'Interact with ClickUp API for task management. Use for listing tasks, creating tasks, updating task status,
+  and managing workspaces. Base URL: https://api.clickup.com/api/v2'
+metadata:
+  author: savelieve
+  category: Development & Coding
+  tags:
+  - development-coding
+  - clickup
+  source: clawhub-community
+  clawhub_slug: clickup-manager
+  clawhub_path: savelieve/clickup-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClickUp Integration
+
+    # Source: ClawHub community skill by savelieve
+
+    # Install: clawhub install clickup-manager
+
+    # Path: savelieve/clickup-manager
+
+
+    ## Description
+
+    Interact with ClickUp API for task management. Use for listing tasks, creating tasks, updating task status, and managing
+    workspaces. Base URL: https://api.clickup.com/api/v2
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - skill.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clickup-manager
+
+    ```'
+examples:
+- description: Install ClickUp Integration from ClawHub
+  usage: clawhub install clickup-manager
+schema_version: '1.0'

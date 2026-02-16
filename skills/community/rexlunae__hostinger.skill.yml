@@ -1,0 +1,61 @@
+name: hostinger
+title: Hostinger
+version: 1.0.0
+description: Manage Hostinger account via API — VPS administration (start/stop/restart, snapshots, backups, firewall, Docker),
+  DNS zone management, domain portfolio, website hosting, and billing. Use when asked to deploy, publish, manage servers,
+  configure DNS, or control any Hostinger service.
+metadata:
+  author: rexlunae
+  category: Development & Coding
+  tags:
+  - development-coding
+  - hostinger
+  source: clawhub-community
+  clawhub_slug: hostinger
+  clawhub_path: rexlunae/hostinger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hostinger
+
+    # Source: ClawHub community skill by rexlunae
+
+    # Install: clawhub install hostinger
+
+    # Path: rexlunae/hostinger
+
+
+    ## Description
+
+    Manage Hostinger account via API — VPS administration (start/stop/restart, snapshots, backups, firewall, Docker), DNS
+    zone management, domain portfolio, website hosting, and billing. Use when asked to deploy, publish, manage servers, configure
+    DNS, or control any Hostinger service.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-endpoints.md
+
+    - scripts/hostinger.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hostinger
+
+    ```'
+examples:
+- description: Install Hostinger from ClawHub
+  usage: clawhub install hostinger
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: weather-query
+title: 和风天气查询功能
+version: 1.0.0
+description: '"天气查询：使用和风天气（JWT+Host）获取实时天气与未来预报；支持城市名/LocationID/经纬度；缺省地点可用 QWEATHER_DEFAULT_LOCATION。"'
+metadata:
+  author: murphys7017
+  category: Utilities
+  tags:
+  - utilities
+  - weather
+  - query
+  source: clawhub-community
+  clawhub_slug: qweather
+  clawhub_path: murphys7017/qweather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 和风天气查询功能
+
+    # Source: ClawHub community skill by murphys7017
+
+    # Install: clawhub install qweather
+
+    # Path: murphys7017/qweather
+
+
+    ## Description
+
+    "天气查询：使用和风天气（JWT+Host）获取实时天气与未来预报；支持城市名/LocationID/经纬度；缺省地点可用 QWEATHER_DEFAULT_LOCATION。"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/ed25519-private.txt
+
+    - lib/gen_qweather_token.js
+
+    - lib/qweather_config.js
+
+    - lib/qweather_geo_tool.js
+
+    - lib/qweather_hourly_tool.js
+
+    - lib/qweather_indices_tool.js
+
+    - lib/qweather_jwt_session.js
+
+    - lib/qweather_precipitation_tool.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qweather
+
+    ```'
+examples:
+- description: Install 和风天气查询功能 from ClawHub
+  usage: clawhub install qweather
+schema_version: '1.0'

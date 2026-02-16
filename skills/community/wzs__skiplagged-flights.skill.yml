@@ -1,0 +1,55 @@
+name: skiplagged-flights
+title: Skiplagged Flights
+version: 1.0.0
+description: Search cheapest flights via Skiplagged MCP. Use for flight deals, price comparison, flexible dates, and destination
+  discovery.
+metadata:
+  author: wzs
+  category: Search & Research
+  tags:
+  - search-research
+  - skiplagged
+  - flights
+  source: clawhub-community
+  clawhub_slug: skiplagged-flights
+  clawhub_path: wzs/skiplagged-flights
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skiplagged Flights
+
+    # Source: ClawHub community skill by wzs
+
+    # Install: clawhub install skiplagged-flights
+
+    # Path: wzs/skiplagged-flights
+
+
+    ## Description
+
+    Search cheapest flights via Skiplagged MCP. Use for flight deals, price comparison, flexible dates, and destination discovery.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skiplagged-flights
+
+    ```'
+examples:
+- description: Install Skiplagged Flights from ClawHub
+  usage: clawhub install skiplagged-flights
+schema_version: '1.0'

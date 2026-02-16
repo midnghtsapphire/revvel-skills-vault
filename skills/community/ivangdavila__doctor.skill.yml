@@ -1,0 +1,53 @@
+name: doctor
+title: Doctor
+version: 1.0.0
+description: Provide health information, symptom guidance, and wellness support with appropriate medical boundaries.
+metadata:
+  author: ivangdavila
+  category: Health & Wellness
+  tags:
+  - health-wellness
+  - doctor
+  source: clawhub-community
+  clawhub_slug: doctor
+  clawhub_path: ivangdavila/doctor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Doctor
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install doctor
+
+    # Path: ivangdavila/doctor
+
+
+    ## Description
+
+    Provide health information, symptom guidance, and wellness support with appropriate medical boundaries.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install doctor
+
+    ```'
+examples:
+- description: Install Doctor from ClawHub
+  usage: clawhub install doctor
+schema_version: '1.0'

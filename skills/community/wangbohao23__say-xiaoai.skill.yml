@@ -1,0 +1,56 @@
+name: say-xiaoai
+title: Say Xiaoai
+version: 0.1.0
+description: 当用户以“小爱同学”开头进行对话时，调用此工具执行本地语音脚本。
+metadata:
+  author: wangbohao23
+  category: General
+  tags:
+  - general
+  - say
+  - xiaoai
+  source: clawhub-community
+  clawhub_slug: say-xiaoai
+  clawhub_path: wangbohao23/say-xiaoai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Say Xiaoai
+
+    # Source: ClawHub community skill by wangbohao23
+
+    # Install: clawhub install say-xiaoai
+
+    # Path: wangbohao23/say-xiaoai
+
+
+    ## Description
+
+    当用户以“小爱同学”开头进行对话时，调用此工具执行本地语音脚本。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - say_xiaoai.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install say-xiaoai
+
+    ```'
+examples:
+- description: Install Say Xiaoai from ClawHub
+  usage: clawhub install say-xiaoai
+schema_version: '1.0'

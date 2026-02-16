@@ -1,0 +1,63 @@
+name: economic-calendar-fetcher
+title: Economic Calendar Fetcher
+version: 0.1.0
+description: 'Fetch upcoming economic events and data releases using FMP API. Retrieve scheduled central bank decisions, employment
+  reports, inflation data, GDP releases, and other market-moving economic indicators for specified date ranges (default: next
+  7 days). Output chronological markdown reports with impact'
+metadata:
+  author: veeramanikandanr48
+  category: Development & Coding
+  tags:
+  - development-coding
+  - economic
+  - calendar
+  - fetcher
+  source: clawhub-community
+  clawhub_slug: economic-calendar-fetcher
+  clawhub_path: veeramanikandanr48/economic-calendar-fetcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Economic Calendar Fetcher
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install economic-calendar-fetcher
+
+    # Path: veeramanikandanr48/economic-calendar-fetcher
+
+
+    ## Description
+
+    Fetch upcoming economic events and data releases using FMP API. Retrieve scheduled central bank decisions, employment
+    reports, inflation data, GDP releases, and other market-moving economic indicators for specified date ranges (default:
+    next 7 days). Output chronological markdown reports with impact
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/fmp_api_documentation.md
+
+    - scripts/get_economic_calendar.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install economic-calendar-fetcher
+
+    ```'
+examples:
+- description: Install Economic Calendar Fetcher from ClawHub
+  usage: clawhub install economic-calendar-fetcher
+schema_version: '1.0'

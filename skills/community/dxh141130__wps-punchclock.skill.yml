@@ -1,0 +1,64 @@
+name: wpstime-punchclock
+title: dxh141130
+version: 1.0.1
+description: Automate punching time in/out on WPS Time / NetTime (wpstime.com NetTime). Use for phrases like setup punchclock/configure
+  punchclock/set up time clock, clock in/clock out, start break/end break, start lunch/end lunch, check status/status. Runs
+  a Playwright flow, captures a screenshot, and replies w
+metadata:
+  author: dxh141130
+  category: Utilities
+  tags:
+  - utilities
+  - wpstime
+  - punchclock
+  source: clawhub-community
+  clawhub_slug: wps-punchclock
+  clawhub_path: dxh141130/wps-punchclock
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# dxh141130
+
+    # Source: ClawHub community skill by dxh141130
+
+    # Install: clawhub install wps-punchclock
+
+    # Path: dxh141130/wps-punchclock
+
+
+    ## Description
+
+    Automate punching time in/out on WPS Time / NetTime (wpstime.com NetTime). Use for phrases like setup punchclock/configure
+    punchclock/set up time clock, clock in/clock out, start break/end break, start lunch/end lunch, check status/status. Runs
+    a Playwright flow, captures a screenshot, and replies w
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/PUNCHCLOCK_RUNBOOK.md
+
+    - scripts/punchclock.mjs
+
+    - scripts/setup.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wps-punchclock
+
+    ```'
+examples:
+- description: Install dxh141130 from ClawHub
+  usage: clawhub install wps-punchclock
+schema_version: '1.0'

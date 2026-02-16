@@ -1,0 +1,69 @@
+name: clawctl
+title: Clawctl
+version: 0.1.0
+description: Coordination layer for OpenClaw agent fleets (tasks, messaging, activity feed, dashboard).
+metadata:
+  author: lludlow
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - clawctl
+  source: clawhub-community
+  clawhub_slug: clawctl
+  clawhub_path: lludlow/clawctl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawctl
+
+    # Source: ClawHub community skill by lludlow
+
+    # Install: clawhub install clawctl
+
+    # Path: lludlow/clawctl
+
+
+    ## Description
+
+    Coordination layer for OpenClaw agent fleets (tasks, messaging, activity feed, dashboard).
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - clawctl/__init__.py
+
+    - clawctl/cli.py
+
+    - clawctl/db.py
+
+    - clawctl/schema.sql
+
+    - dashboard/__init__.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawctl
+
+    ```'
+examples:
+- description: Install Clawctl from ClawHub
+  usage: clawhub install clawctl
+schema_version: '1.0'

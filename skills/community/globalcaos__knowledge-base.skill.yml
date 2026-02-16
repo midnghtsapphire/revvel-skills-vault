@@ -1,0 +1,68 @@
+name: knowledge-base
+title: Knowledge Base
+version: 1.0.0
+description: Personal knowledge base with SQLite + FTS5. Index contacts, documents, ChatGPT exports, and WhatsApp data. Query
+  everything instantly with full-text search. Use for contact lookups, conversation history search, document retrieval, and
+  building persistent memory systems.
+metadata:
+  author: globalcaos
+  category: Search & Research
+  tags:
+  - search-research
+  - knowledge
+  - base
+  source: clawhub-community
+  clawhub_slug: knowledge-base
+  clawhub_path: globalcaos/knowledge-base
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Knowledge Base
+
+    # Source: ClawHub community skill by globalcaos
+
+    # Install: clawhub install knowledge-base
+
+    # Path: globalcaos/knowledge-base
+
+
+    ## Description
+
+    Personal knowledge base with SQLite + FTS5. Index contacts, documents, ChatGPT exports, and WhatsApp data. Query everything
+    instantly with full-text search. Use for contact lookups, conversation history search, document retrieval, and building
+    persistent memory systems.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/schema.md
+
+    - scripts/import_vcf.py
+
+    - scripts/init_db.py
+
+    - scripts/query.py
+
+    - scripts/sync_whatsapp.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install knowledge-base
+
+    ```'
+examples:
+- description: Install Knowledge Base from ClawHub
+  usage: clawhub install knowledge-base
+schema_version: '1.0'

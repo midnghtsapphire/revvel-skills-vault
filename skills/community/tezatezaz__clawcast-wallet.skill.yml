@@ -1,0 +1,71 @@
+name: clawcast-wallet
+title: Clawcast - Cast Ethereum Wallet for Agents
+version: 1.0.0
+description: Skill for managing EVM wallets, transactions, and network helpers via cast; covers onboarding, checks, and operating
+  procedures.
+metadata:
+  author: tezatezaz
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawcast
+  - wallet
+  source: clawhub-community
+  clawhub_slug: clawcast-wallet
+  clawhub_path: tezatezaz/clawcast-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawcast - Cast Ethereum Wallet for Agents
+
+    # Source: ClawHub community skill by tezatezaz
+
+    # Install: clawhub install clawcast-wallet
+
+    # Path: tezatezaz/clawcast-wallet
+
+
+    ## Description
+
+    Skill for managing EVM wallets, transactions, and network helpers via cast; covers onboarding, checks, and operating procedures.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/evm-network-tokens.json
+
+    - assets/evm-networks.json
+
+    - scripts/00_lib.sh
+
+    - scripts/01_install_cast.sh
+
+    - scripts/02_wallet.sh
+
+    - scripts/03_password.sh
+
+    - scripts/04_network.sh
+
+    - scripts/05_tokens.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawcast-wallet
+
+    ```'
+examples:
+- description: Install Clawcast - Cast Ethereum Wallet for Agents from ClawHub
+  usage: clawhub install clawcast-wallet
+schema_version: '1.0'

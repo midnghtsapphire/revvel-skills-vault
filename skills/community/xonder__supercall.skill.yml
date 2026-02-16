@@ -1,0 +1,73 @@
+name: supercall
+title: SuperCall - Make phone calls with custom personas and goals
+version: 1.2.0
+description: Make AI-powered phone calls with custom personas and goals. Uses OpenAI Realtime API + Twilio for ultra-low latency
+  voice conversations. Use when you need to call someone, confirm appointments, deliver messages, or have the AI handle phone
+  conversations autonomously. Unlike the standard voice_call p
+metadata:
+  author: xonder
+  category: Communication
+  tags:
+  - communication
+  - supercall
+  source: clawhub-community
+  clawhub_slug: supercall
+  clawhub_path: xonder/supercall
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SuperCall - Make phone calls with custom personas and goals
+
+    # Source: ClawHub community skill by xonder
+
+    # Install: clawhub install supercall
+
+    # Path: xonder/supercall
+
+
+    ## Description
+
+    Make AI-powered phone calls with custom personas and goals. Uses OpenAI Realtime API + Twilio for ultra-low latency voice
+    conversations. Use when you need to call someone, confirm appointments, deliver messages, or have the AI handle phone
+    conversations autonomously. Unlike the standard voice_call p
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.ts
+
+    - openclaw.plugin.json
+
+    - package.json
+
+    - src/config.ts
+
+    - src/core-bridge.ts
+
+    - src/manager.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install supercall
+
+    ```'
+examples:
+- description: Install SuperCall - Make phone calls with custom personas and goals from ClawHub
+  usage: clawhub install supercall
+schema_version: '1.0'

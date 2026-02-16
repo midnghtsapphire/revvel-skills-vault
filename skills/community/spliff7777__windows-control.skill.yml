@@ -1,0 +1,70 @@
+name: windows-control
+title: Windows Control
+version: 1.0.0
+description: Full Windows desktop control. Mouse, keyboard, screenshots - interact with any Windows application like a human.
+metadata:
+  author: spliff7777
+  category: System & OS
+  tags:
+  - system-os
+  - windows
+  - control
+  source: clawhub-community
+  clawhub_slug: windows-control
+  clawhub_path: spliff7777/windows-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Windows Control
+
+    # Source: ClawHub community skill by spliff7777
+
+    # Install: clawhub install windows-control
+
+    # Path: spliff7777/windows-control
+
+
+    ## Description
+
+    Full Windows desktop control. Mouse, keyboard, screenshots - interact with any Windows application like a human.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/click.py
+
+    - scripts/click_element.py
+
+    - scripts/click_text.py
+
+    - scripts/close_window.py
+
+    - scripts/drag.py
+
+    - scripts/find_text.py
+
+    - scripts/focus_window.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install windows-control
+
+    ```'
+examples:
+- description: Install Windows Control from ClawHub
+  usage: clawhub install windows-control
+schema_version: '1.0'

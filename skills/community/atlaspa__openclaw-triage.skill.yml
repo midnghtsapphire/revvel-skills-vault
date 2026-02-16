@@ -1,0 +1,57 @@
+name: openclaw-triage
+title: Openclaw Triage
+version: 1.0.2
+description: ''
+metadata:
+  author: atlaspa
+  category: General
+  tags:
+  - general
+  - openclaw
+  - triage
+  source: clawhub-community
+  clawhub_slug: openclaw-triage
+  clawhub_path: atlaspa/openclaw-triage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Triage
+
+    # Source: ClawHub community skill by atlaspa
+
+    # Install: clawhub install openclaw-triage
+
+    # Path: atlaspa/openclaw-triage
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/triage.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-triage
+
+    ```'
+examples:
+- description: Install Openclaw Triage from ClawHub
+  usage: clawhub install openclaw-triage
+schema_version: '1.0'

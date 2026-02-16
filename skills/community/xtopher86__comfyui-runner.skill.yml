@@ -1,0 +1,60 @@
+name: comfyui-runner
+title: comfyui-runner
+version: 1.0.0
+description: Start/stop/status for a ComfyUI instance.
+metadata:
+  author: xtopher86
+  category: General
+  tags:
+  - general
+  - comfyui
+  - runner
+  source: clawhub-community
+  clawhub_slug: comfyui-runner
+  clawhub_path: xtopher86/comfyui-runner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# comfyui-runner
+
+    # Source: ClawHub community skill by xtopher86
+
+    # Install: clawhub install comfyui-runner
+
+    # Path: xtopher86/comfyui-runner
+
+
+    ## Description
+
+    Start/stop/status for a ComfyUI instance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - skill.json
+
+    - bin/cli.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install comfyui-runner
+
+    ```'
+examples:
+- description: Install comfyui-runner from ClawHub
+  usage: clawhub install comfyui-runner
+schema_version: '1.0'

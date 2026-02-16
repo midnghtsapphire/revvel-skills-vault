@@ -1,0 +1,57 @@
+name: book-test-prep
+title: Book Test Prep
+version: 1.0.1
+description: Book test-prep services through Lokuli MCP. Use when user needs to find and book test-prep. Triggers on requests
+  like "book a test-prep", "find test-prep near me", or any test-prep service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Development & Coding
+  tags:
+  - development-coding
+  - book
+  - test
+  - prep
+  source: clawhub-community
+  clawhub_slug: book-test-prep
+  clawhub_path: edwardrodriguez703-design/book-test-prep
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Test Prep
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-test-prep
+
+    # Path: edwardrodriguez703-design/book-test-prep
+
+
+    ## Description
+
+    Book test-prep services through Lokuli MCP. Use when user needs to find and book test-prep. Triggers on requests like
+    "book a test-prep", "find test-prep near me", or any test-prep service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-test-prep
+
+    ```'
+examples:
+- description: Install Book Test Prep from ClawHub
+  usage: clawhub install book-test-prep
+schema_version: '1.0'

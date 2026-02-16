@@ -1,0 +1,54 @@
+name: dreamactor-video
+title: dreamactor-video
+version: 1.0.0
+description: 使用 Dreamactor V2 进行动作迁移，将视频中的动作、表情和口型迁移到图片角色上。当用户想要动作迁移、表情驱动、口型同步、或提到 dreamactor 时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: Media & Content
+  tags:
+  - media-content
+  - dreamactor
+  - video
+  source: clawhub-community
+  clawhub_slug: dreamactor-video
+  clawhub_path: hexiaochun/dreamactor-video
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# dreamactor-video
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install dreamactor-video
+
+    # Path: hexiaochun/dreamactor-video
+
+
+    ## Description
+
+    使用 Dreamactor V2 进行动作迁移，将视频中的动作、表情和口型迁移到图片角色上。当用户想要动作迁移、表情驱动、口型同步、或提到 dreamactor 时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dreamactor-video
+
+    ```'
+examples:
+- description: Install dreamactor-video from ClawHub
+  usage: clawhub install dreamactor-video
+schema_version: '1.0'

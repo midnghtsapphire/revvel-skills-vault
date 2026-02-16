@@ -1,0 +1,74 @@
+name: codex-orchestrator
+title: Codex Conductor
+version: 1.0.0
+description: Methodical end-to-end software delivery orchestrator for Codex CLI with dual project modes (greenfield for new
+  builds, brownfield for existing systems) and dual execution modes (autonomous and gated). Use when users want full lifecycle
+  delivery with strict stage gates, progress tracking, per-step ma
+metadata:
+  author: shalomobongo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - codex
+  - orchestrator
+  source: clawhub-community
+  clawhub_slug: codex-conductor
+  clawhub_path: shalomobongo/codex-conductor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Codex Conductor
+
+    # Source: ClawHub community skill by shalomobongo
+
+    # Install: clawhub install codex-conductor
+
+    # Path: shalomobongo/codex-conductor
+
+
+    ## Description
+
+    Methodical end-to-end software delivery orchestrator for Codex CLI with dual project modes (greenfield for new builds,
+    brownfield for existing systems) and dual execution modes (autonomous and gated). Use when users want full lifecycle delivery
+    with strict stage gates, progress tracking, per-step ma
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/codex-runbook.md
+
+    - references/gate-checklists.md
+
+    - references/gate-prompts.md
+
+    - references/manual-test-templates.md
+
+    - references/modes.md
+
+    - references/planning-questionnaire.md
+
+    - references/research-playbook.md
+
+    - references/spec-driven-development.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install codex-conductor
+
+    ```'
+examples:
+- description: Install Codex Conductor from ClawHub
+  usage: clawhub install codex-conductor
+schema_version: '1.0'

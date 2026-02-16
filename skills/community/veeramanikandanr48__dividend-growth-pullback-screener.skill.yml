@@ -1,0 +1,68 @@
+name: dividend-growth-pullback-screener
+title: Dividend Growth Pullback Screener
+version: 0.1.0
+description: Use this skill to find high-quality dividend growth stocks (12%+ annual dividend growth, 1.5%+ yield) that are
+  experiencing temporary pullbacks, identified by RSI oversold conditions (RSI ≤40). This skill combines fundamental dividend
+  analysis with technical timing indicators to identify buying oppo
+metadata:
+  author: veeramanikandanr48
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - dividend
+  - growth
+  - pullback
+  - screener
+  source: clawhub-community
+  clawhub_slug: dividend-growth-pullback-screener
+  clawhub_path: veeramanikandanr48/dividend-growth-pullback-screener
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dividend Growth Pullback Screener
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install dividend-growth-pullback-screener
+
+    # Path: veeramanikandanr48/dividend-growth-pullback-screener
+
+
+    ## Description
+
+    Use this skill to find high-quality dividend growth stocks (12%+ annual dividend growth, 1.5%+ yield) that are experiencing
+    temporary pullbacks, identified by RSI oversold conditions (RSI ≤40). This skill combines fundamental dividend analysis
+    with technical timing indicators to identify buying oppo
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/dividend_growth_compounding.md
+
+    - references/fmp_api_guide.md
+
+    - references/rsi_oversold_strategy.md
+
+    - scripts/screen_dividend_growth_rsi.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dividend-growth-pullback-screener
+
+    ```'
+examples:
+- description: Install Dividend Growth Pullback Screener from ClawHub
+  usage: clawhub install dividend-growth-pullback-screener
+schema_version: '1.0'

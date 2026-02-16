@@ -1,0 +1,54 @@
+name: self-host
+title: Self-Host
+version: 1.0.0
+description: Deploy and maintain self-hosted services with security, backups, and long-term reliability.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - self
+  - host
+  source: clawhub-community
+  clawhub_slug: self-host
+  clawhub_path: ivangdavila/self-host
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Self-Host
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install self-host
+
+    # Path: ivangdavila/self-host
+
+
+    ## Description
+
+    Deploy and maintain self-hosted services with security, backups, and long-term reliability.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install self-host
+
+    ```'
+examples:
+- description: Install Self-Host from ClawHub
+  usage: clawhub install self-host
+schema_version: '1.0'

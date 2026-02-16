@@ -1,0 +1,62 @@
+name: telegram-usage
+title: Telegram Usage Stats
+version: 1.0.1
+description: Display session usage statistics (quota, session time, tokens, context)
+metadata:
+  author: c-drew
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - usage
+  source: clawhub-community
+  clawhub_slug: telegram-usage
+  clawhub_path: c-drew/telegram-usage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Usage Stats
+
+    # Source: ClawHub community skill by c-drew
+
+    # Install: clawhub install telegram-usage
+
+    # Path: c-drew/telegram-usage
+
+
+    ## Description
+
+    Display session usage statistics (quota, session time, tokens, context)
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config-example.json
+
+    - handler.js
+
+    - session-reader.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-usage
+
+    ```'
+examples:
+- description: Install Telegram Usage Stats from ClawHub
+  usage: clawhub install telegram-usage
+schema_version: '1.0'

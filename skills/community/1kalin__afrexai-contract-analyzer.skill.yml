@@ -1,0 +1,54 @@
+name: contract_analyzer
+title: AfrexAI Contract Analyzer
+version: 1.0.0
+description: Analyzes contracts and agreements for risks, unusual terms, and missing clauses
+metadata:
+  author: 1kalin
+  category: General
+  tags:
+  - general
+  - contract
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: afrexai-contract-analyzer
+  clawhub_path: 1kalin/afrexai-contract-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AfrexAI Contract Analyzer
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install afrexai-contract-analyzer
+
+    # Path: 1kalin/afrexai-contract-analyzer
+
+
+    ## Description
+
+    Analyzes contracts and agreements for risks, unusual terms, and missing clauses
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install afrexai-contract-analyzer
+
+    ```'
+examples:
+- description: Install AfrexAI Contract Analyzer from ClawHub
+  usage: clawhub install afrexai-contract-analyzer
+schema_version: '1.0'

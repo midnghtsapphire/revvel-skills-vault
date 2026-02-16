@@ -1,0 +1,70 @@
+name: investment-data
+title: investment-data
+version: 1.0.0
+description: 获取高质量 A 股投资数据，基于 investment_data 项目。支持日终价格、涨跌停数据、指数数据等。每日更新，多数据源交叉验证。触发词：股票数据、A股数据、金融数据、量化数据、历史行情。
+metadata:
+  author: stanleychanh
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - investment
+  - data
+  source: clawhub-community
+  clawhub_slug: investment-data
+  clawhub_path: stanleychanh/investment-data
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# investment-data
+
+    # Source: ClawHub community skill by stanleychanh
+
+    # Install: clawhub install investment-data
+
+    # Path: stanleychanh/investment-data
+
+
+    ## Description
+
+    获取高质量 A 股投资数据，基于 investment_data 项目。支持日终价格、涨跌停数据、指数数据等。每日更新，多数据源交叉验证。触发词：股票数据、A股数据、金融数据、量化数据、历史行情。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - config/config.yaml
+
+    - examples/usage_examples.md
+
+    - references/fields.md
+
+    - scripts/data_client.py
+
+    - scripts/download_data.py
+
+    - scripts/query.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install investment-data
+
+    ```'
+examples:
+- description: Install investment-data from ClawHub
+  usage: clawhub install investment-data
+schema_version: '1.0'

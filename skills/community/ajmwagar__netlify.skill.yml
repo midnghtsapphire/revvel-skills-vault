@@ -1,0 +1,61 @@
+name: netlify
+title: Netlify
+version: 1.0.0
+description: Use the Netlify CLI (netlify) to create/link Netlify sites and set up CI/CD (continuous deployment) from GitHub,
+  especially for monorepos (multiple sites in one repo like Hugo sites under sites/<domain>). Use when Avery asks to deploy
+  a new site, connect a repo to Netlify, configure build/publish se
+metadata:
+  author: ajmwagar
+  category: Development & Coding
+  tags:
+  - development-coding
+  - netlify
+  source: clawhub-community
+  clawhub_slug: netlify
+  clawhub_path: ajmwagar/netlify
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Netlify
+
+    # Source: ClawHub community skill by ajmwagar
+
+    # Install: clawhub install netlify
+
+    # Path: ajmwagar/netlify
+
+
+    ## Description
+
+    Use the Netlify CLI (netlify) to create/link Netlify sites and set up CI/CD (continuous deployment) from GitHub, especially
+    for monorepos (multiple sites in one repo like Hugo sites under sites/<domain>). Use when Avery asks to deploy a new site,
+    connect a repo to Netlify, configure build/publish se
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/hugo_netlify_toml.sh
+
+    - scripts/netlify_monorepo_site.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install netlify
+
+    ```'
+examples:
+- description: Install Netlify from ClawHub
+  usage: clawhub install netlify
+schema_version: '1.0'

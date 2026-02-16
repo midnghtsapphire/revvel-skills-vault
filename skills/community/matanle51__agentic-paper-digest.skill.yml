@@ -1,0 +1,66 @@
+name: agentic-paper-digest-skill
+title: Agentic Research Paper Digest
+version: 0.1.0
+description: Fetches and summarizes recent arXiv and Hugging Face papers with Agentic Paper Digest. Use when the user wants
+  a paper digest, a JSON feed of recent papers, or to run the arXiv/HF pipeline.
+metadata:
+  author: matanle51
+  category: Search & Research
+  tags:
+  - search-research
+  - agentic
+  - paper
+  - digest
+  - skill
+  source: clawhub-community
+  clawhub_slug: agentic-paper-digest
+  clawhub_path: matanle51/agentic-paper-digest
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agentic Research Paper Digest
+
+    # Source: ClawHub community skill by matanle51
+
+    # Install: clawhub install agentic-paper-digest
+
+    # Path: matanle51/agentic-paper-digest
+
+
+    ## Description
+
+    Fetches and summarizes recent arXiv and Hugging Face papers with Agentic Paper Digest. Use when the user wants a paper
+    digest, a JSON feed of recent papers, or to run the arXiv/HF pipeline.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bootstrap.sh
+
+    - scripts/run_api.sh
+
+    - scripts/run_cli.sh
+
+    - scripts/stop_api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentic-paper-digest
+
+    ```'
+examples:
+- description: Install Agentic Research Paper Digest from ClawHub
+  usage: clawhub install agentic-paper-digest
+schema_version: '1.0'

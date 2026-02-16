@@ -1,0 +1,71 @@
+name: baidu-ecommerce-search
+title: Baidu Ecommerce Search
+version: 1.0.2
+description: 百度电商搜索，包括cps商品查询、全网比价、榜单、商品参数、品牌品类知识等能力
+metadata:
+  author: crossallen
+  category: Search & Research
+  tags:
+  - search-research
+  - baidu
+  - ecommerce
+  - search
+  source: clawhub-community
+  clawhub_slug: baidu-ecommerce-search
+  clawhub_path: crossallen/baidu-ecommerce-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Baidu Ecommerce Search
+
+    # Source: ClawHub community skill by crossallen
+
+    # Install: clawhub install baidu-ecommerce-search
+
+    # Path: crossallen/baidu-ecommerce-search
+
+
+    ## Description
+
+    百度电商搜索，包括cps商品查询、全网比价、榜单、商品参数、品牌品类知识等能力
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bijia.py
+
+    - scripts/common.py
+
+    - scripts/compare.py
+
+    - scripts/cps.py
+
+    - scripts/knowledge.py
+
+    - scripts/lock.py
+
+    - scripts/ranking.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install baidu-ecommerce-search
+
+    ```'
+examples:
+- description: Install Baidu Ecommerce Search from ClawHub
+  usage: clawhub install baidu-ecommerce-search
+schema_version: '1.0'

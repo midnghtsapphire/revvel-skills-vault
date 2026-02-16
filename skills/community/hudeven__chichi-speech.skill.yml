@@ -1,0 +1,64 @@
+name: chichi-speech
+title: chichi-speech (local text-to-speech service with Qwen3-TTS model)
+version: 1.0.2
+description: A RESTful service for high-quality text-to-speech using Qwen3 and specialized voice cloning. Optimized for reusing
+  a specific voice prompt to avoid re-computation.
+metadata:
+  author: hudeven
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - chichi
+  - speech
+  source: clawhub-community
+  clawhub_slug: chichi-speech
+  clawhub_path: hudeven/chichi-speech
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# chichi-speech (local text-to-speech service with Qwen3-TTS model)
+
+    # Source: ClawHub community skill by hudeven
+
+    # Install: clawhub install chichi-speech
+
+    # Path: hudeven/chichi-speech
+
+
+    ## Description
+
+    A RESTful service for high-quality text-to-speech using Qwen3 and specialized voice cloning. Optimized for reusing a specific
+    voice prompt to avoid re-computation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - src/chichi_speech/__init__.py
+
+    - src/chichi_speech/client.py
+
+    - src/chichi_speech/server.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install chichi-speech
+
+    ```'
+examples:
+- description: Install chichi-speech (local text-to-speech service with Qwen3-TTS model) from ClawHub
+  usage: clawhub install chichi-speech
+schema_version: '1.0'

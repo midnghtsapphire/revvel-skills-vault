@@ -1,0 +1,59 @@
+name: auto-updater-gateway
+title: Auto-Updater (Gateway)
+version: 1.0.1
+description: Schedule and run safe daily/weekly updates for Clawdbot + installed skills using the Gateway cron scheduler.
+  Use when setting up "run updates at 04:00" jobs, rotating update reports, running `clawdhub update --all`, and (optionally)
+  applying Clawdbot updates + restart + doctor.
+metadata:
+  author: xabo1986
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - auto
+  - updater
+  - gateway
+  source: clawhub-community
+  clawhub_slug: auto-updater-gateway
+  clawhub_path: xabo1986/auto-updater-gateway
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Auto-Updater (Gateway)
+
+    # Source: ClawHub community skill by xabo1986
+
+    # Install: clawhub install auto-updater-gateway
+
+    # Path: xabo1986/auto-updater-gateway
+
+
+    ## Description
+
+    Schedule and run safe daily/weekly updates for Clawdbot + installed skills using the Gateway cron scheduler. Use when
+    setting up "run updates at 04:00" jobs, rotating update reports, running `clawdhub update --all`, and (optionally) applying
+    Clawdbot updates + restart + doctor.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install auto-updater-gateway
+
+    ```'
+examples:
+- description: Install Auto-Updater (Gateway) from ClawHub
+  usage: clawhub install auto-updater-gateway
+schema_version: '1.0'

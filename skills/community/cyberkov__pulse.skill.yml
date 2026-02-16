@@ -1,0 +1,33 @@
+name: pulse
+title: Pulse
+version: 1.0.0
+description: 'Query and control Pulse monitoring system via REST API. Use for checking infrastructure health, resource status
+  (nodes/VMs/containers/storage), metrics, alerts, and system management. Supports authentication via API token or session.
+  Use when user asks about Pulse status, infrastructure monitoring, '
+metadata:
+  author: cyberkov
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - pulse
+  source: clawhub-community
+  clawhub_slug: pulse
+  clawhub_path: cyberkov/pulse
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Pulse\n# Source: ClawHub community skill by cyberkov\n# Install: clawhub install pulse\n# Path: cyberkov/pulse\n\
+    \n## Description\nQuery and control Pulse monitoring system via REST API. Use for checking infrastructure health, resource\
+    \ status (nodes/VMs/containers/storage), metrics, alerts, and system management. Supports authentication via API token\
+    \ or session. Use when user asks about Pulse status, infrastructure monitoring, \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    - references/API.md\n- scripts/examples.sh\n- scripts/pulse-cli.sh\n\n## Installation\n```bash\nclawhub install pulse\n\
+    ```"
+examples:
+- description: Install Pulse from ClawHub
+  usage: clawhub install pulse
+schema_version: '1.0'

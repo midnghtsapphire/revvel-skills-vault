@@ -1,0 +1,71 @@
+name: clawdio
+title: Clawdio
+version: 2.2.0
+description: 'Secure P2P communication for AI agents via Telegram. Simple onboarding: create "Clawdio Hub" group, add bot,
+  share keys. Noise XX handshake, XChaCha20-Poly1305 encryption, connection consent, human verification.'
+metadata:
+  author: jameseball
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawdio
+  source: clawhub-community
+  clawhub_slug: clawdiocomms
+  clawhub_path: jameseball/clawdiocomms
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdio
+
+    # Source: ClawHub community skill by jameseball
+
+    # Install: clawhub install clawdiocomms
+
+    # Path: jameseball/clawdiocomms
+
+
+    ## Description
+
+    Secure P2P communication for AI agents via Telegram. Simple onboarding: create "Clawdio Hub" group, add bot, share keys.
+    Noise XX handshake, XChaCha20-Poly1305 encryption, connection consent, human verification.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - scripts/start.js
+
+    - src/cli.ts
+
+    - src/crypto.ts
+
+    - src/index.ts
+
+    - src/protocol.ts
+
+    - src/transport.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdiocomms
+
+    ```'
+examples:
+- description: Install Clawdio from ClawHub
+  usage: clawhub install clawdiocomms
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: agentmem
+title: AgentMem
+version: 2.4.0
+description: Cloud memory for AI agents. Writes are free, pay only for reads. First 25 calls free, 7-day persistence.
+metadata:
+  author: natmota
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agentmem
+  source: clawhub-community
+  clawhub_slug: agentmem
+  clawhub_path: natmota/agentmem
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AgentMem
+
+    # Source: ClawHub community skill by natmota
+
+    # Install: clawhub install agentmem
+
+    # Path: natmota/agentmem
+
+
+    ## Description
+
+    Cloud memory for AI agents. Writes are free, pay only for reads. First 25 calls free, 7-day persistence.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - demo.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentmem
+
+    ```'
+examples:
+- description: Install AgentMem from ClawHub
+  usage: clawhub install agentmem
+schema_version: '1.0'

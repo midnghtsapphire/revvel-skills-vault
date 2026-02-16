@@ -1,0 +1,58 @@
+name: dropbox
+title: Dropbox Manager
+version: 1.0.0
+description: ''
+metadata:
+  author: ryanlisse
+  category: General
+  tags:
+  - general
+  - dropbox
+  source: clawhub-community
+  clawhub_slug: dropbox
+  clawhub_path: ryanlisse/dropbox
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dropbox Manager
+
+    # Source: ClawHub community skill by ryanlisse
+
+    # Install: clawhub install dropbox
+
+    # Path: ryanlisse/dropbox
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - SKILL.json
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/mcp-setup.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dropbox
+
+    ```'
+examples:
+- description: Install Dropbox Manager from ClawHub
+  usage: clawhub install dropbox
+schema_version: '1.0'

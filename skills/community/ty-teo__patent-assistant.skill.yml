@@ -1,0 +1,60 @@
+name: patent-assistant
+title: Patent Assistant
+version: 1.1.0
+description: 专利交底书撰写与专利检索助手。帮助研发人员将技术方案转化为结构化交底书，并进行专利检索分析。当用户要求写专利、写交底书、专利检索、查新时使用。
+metadata:
+  author: ty-teo
+  category: General
+  tags:
+  - general
+  - patent
+  - assistant
+  source: clawhub-community
+  clawhub_slug: patent-assistant
+  clawhub_path: ty-teo/patent-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Patent Assistant
+
+    # Source: ClawHub community skill by ty-teo
+
+    # Install: clawhub install patent-assistant
+
+    # Path: ty-teo/patent-assistant
+
+
+    ## Description
+
+    专利交底书撰写与专利检索助手。帮助研发人员将技术方案转化为结构化交底书，并进行专利检索分析。当用户要求写专利、写交底书、专利检索、查新时使用。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_disclosure.py
+
+    - scripts/patent_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install patent-assistant
+
+    ```'
+examples:
+- description: Install Patent Assistant from ClawHub
+  usage: clawhub install patent-assistant
+schema_version: '1.0'

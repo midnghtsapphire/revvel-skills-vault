@@ -1,0 +1,73 @@
+name: _gitai-automation_
+title: Gitai - Git Commit Automation
+version: 1.0.2
+description: '"Boost developer productivity with Gitai: An AI-powered Git automation tool that analyzes code changes and generates
+  semantic Conventional Commits instantly. Supports Node.js, Python, Java, Go, PHP, and more. Compatible with OpenAI, Anthropic,
+  and Groq."'
+metadata:
+  author: leandrosilvaferreira
+  category: Development & Coding
+  tags:
+  - development-coding
+  - '"gitai'
+  - automation"
+  - '"run command'
+  - read file
+  - write file"
+  source: clawhub-community
+  clawhub_slug: gitai-skill
+  clawhub_path: leandrosilvaferreira/gitai-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '"Run Command'
+  - Read File
+  - Write File"
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gitai - Git Commit Automation
+
+    # Source: ClawHub community skill by leandrosilvaferreira
+
+    # Install: clawhub install gitai-skill
+
+    # Path: leandrosilvaferreira/gitai-skill
+
+
+    ## Description
+
+    "Boost developer productivity with Gitai: An AI-powered Git automation tool that analyzes code changes and generates semantic
+    Conventional Commits instantly. Supports Node.js, Python, Java, Go, PHP, and more. Compatible with OpenAI, Anthropic,
+    and Groq."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+
+    ## Allowed Tools
+
+    "Run Command, Read File, Write File"
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gitai-skill
+
+    ```'
+examples:
+- description: Install Gitai - Git Commit Automation from ClawHub
+  usage: clawhub install gitai-skill
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: priceforagent
+title: Price for Agent
+version: 1.1.0
+description: Get real-time prices for crypto, stocks, and commodities. Use when the user asks about asset prices, market data,
+  or needs to check the value of Bitcoin, Ethereum, stocks like NVDA/AAPL, or commodities like gold/silver. Supports natural
+  language queries ("What's the price of Bitcoin?") and direct lo
+metadata:
+  author: edibez
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - priceforagent
+  source: clawhub-community
+  clawhub_slug: priceforagent
+  clawhub_path: edibez/priceforagent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Price for Agent
+
+    # Source: ClawHub community skill by edibez
+
+    # Install: clawhub install priceforagent
+
+    # Path: edibez/priceforagent
+
+
+    ## Description
+
+    Get real-time prices for crypto, stocks, and commodities. Use when the user asks about asset prices, market data, or needs
+    to check the value of Bitcoin, Ethereum, stocks like NVDA/AAPL, or commodities like gold/silver. Supports natural language
+    queries ("What''s the price of Bitcoin?") and direct lo
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install priceforagent
+
+    ```'
+examples:
+- description: Install Price for Agent from ClawHub
+  usage: clawhub install priceforagent
+schema_version: '1.0'

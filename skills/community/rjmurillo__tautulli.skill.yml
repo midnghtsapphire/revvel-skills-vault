@@ -1,0 +1,71 @@
+name: tautulli
+title: Tautullu
+version: 1.0.0
+description: Monitor Plex activity and stats via Tautulli API. Check who's watching, view history, get library stats, and
+  see server info.
+metadata:
+  author: rjmurillo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tautulli
+  source: clawhub-community
+  clawhub_slug: tautulli
+  clawhub_path: rjmurillo/tautulli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tautullu
+
+    # Source: ClawHub community skill by rjmurillo
+
+    # Install: clawhub install tautulli
+
+    # Path: rjmurillo/tautulli
+
+
+    ## Description
+
+    Monitor Plex activity and stats via Tautulli API. Check who''s watching, view history, get library stats, and see server
+    info.
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/activity.sh
+
+    - scripts/history.sh
+
+    - scripts/libraries.sh
+
+    - scripts/recent.sh
+
+    - scripts/server.sh
+
+    - scripts/users.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tautulli
+
+    ```'
+examples:
+- description: Install Tautullu from ClawHub
+  usage: clawhub install tautulli
+schema_version: '1.0'

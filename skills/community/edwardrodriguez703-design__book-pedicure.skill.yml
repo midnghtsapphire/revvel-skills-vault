@@ -1,0 +1,56 @@
+name: book-pedicure
+title: Book Pedicure
+version: 1.0.1
+description: Book pedicure services through Lokuli MCP. Use when user needs to find and book pedicure. Triggers on requests
+  like "book a pedicure", "find pedicure near me", or any pedicure service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - pedicure
+  source: clawhub-community
+  clawhub_slug: book-pedicure
+  clawhub_path: edwardrodriguez703-design/book-pedicure
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Pedicure
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-pedicure
+
+    # Path: edwardrodriguez703-design/book-pedicure
+
+
+    ## Description
+
+    Book pedicure services through Lokuli MCP. Use when user needs to find and book pedicure. Triggers on requests like "book
+    a pedicure", "find pedicure near me", or any pedicure service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-pedicure
+
+    ```'
+examples:
+- description: Install Book Pedicure from ClawHub
+  usage: clawhub install book-pedicure
+schema_version: '1.0'

@@ -1,0 +1,68 @@
+name: pr-commit-workflow
+title: PR + Commit Workflow
+version: 1.0.0
+description: This skill should be used when creating commits or pull requests, enforcing a human-written PR structure, intent
+  capture, and evidence in agentic workflows.
+metadata:
+  author: joshp123
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - commit
+  - workflow
+  source: clawhub-community
+  clawhub_slug: pr-commit-workflow
+  clawhub_path: joshp123/pr-commit-workflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PR + Commit Workflow
+
+    # Source: ClawHub community skill by joshp123
+
+    # Install: clawhub install pr-commit-workflow
+
+    # Path: joshp123/pr-commit-workflow
+
+
+    ## Description
+
+    This skill should be used when creating commits or pull requests, enforcing a human-written PR structure, intent capture,
+    and evidence in agentic workflows.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/commit-format.md
+
+    - references/pr-human-template.md
+
+    - references/workflow-commit.md
+
+    - references/workflow-pr.md
+
+    - scripts/build_pr_body.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pr-commit-workflow
+
+    ```'
+examples:
+- description: Install PR + Commit Workflow from ClawHub
+  usage: clawhub install pr-commit-workflow
+schema_version: '1.0'

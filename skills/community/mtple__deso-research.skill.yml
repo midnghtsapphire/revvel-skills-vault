@@ -1,0 +1,60 @@
+name: deso-research
+title: deso-research
+version: 1.0.0
+description: Research and analyze content across decentralized social networks (Farcaster, Lens, Nostr, Bluesky) using the
+  deso-ag CLI tool. Use this skill when users want to research topics on decentralized social platforms, analyze trending
+  content, extract discussion terms, browse Farcaster channels, or compa
+metadata:
+  author: mtple
+  category: Search & Research
+  tags:
+  - search-research
+  - deso
+  - research
+  source: clawhub-community
+  clawhub_slug: deso-research
+  clawhub_path: mtple/deso-research
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# deso-research
+
+    # Source: ClawHub community skill by mtple
+
+    # Install: clawhub install deso-research
+
+    # Path: mtple/deso-research
+
+
+    ## Description
+
+    Research and analyze content across decentralized social networks (Farcaster, Lens, Nostr, Bluesky) using the deso-ag
+    CLI tool. Use this skill when users want to research topics on decentralized social platforms, analyze trending content,
+    extract discussion terms, browse Farcaster channels, or compa
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/command-reference (1).md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install deso-research
+
+    ```'
+examples:
+- description: Install deso-research from ClawHub
+  usage: clawhub install deso-research
+schema_version: '1.0'

@@ -1,0 +1,74 @@
+name: gcal-pro
+title: gcal-pro - Google Calendar
+version: 1.0.0
+description: Google Calendar integration for viewing, creating, and managing calendar events. Use when the user asks about
+  their schedule, wants to add/edit/delete events, check availability, or needs a morning brief. Supports natural language
+  like "What's on my calendar tomorrow?" or "Schedule lunch with Alex a
+metadata:
+  author: bilalmohamed187-cpu
+  category: Search & Research
+  tags:
+  - search-research
+  - gcal
+  - pro
+  source: clawhub-community
+  clawhub_slug: gcal-pro
+  clawhub_path: bilalmohamed187-cpu/gcal-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# gcal-pro - Google Calendar
+
+    # Source: ClawHub community skill by bilalmohamed187-cpu
+
+    # Install: clawhub install gcal-pro
+
+    # Path: bilalmohamed187-cpu/gcal-pro
+
+
+    ## Description
+
+    Google Calendar integration for viewing, creating, and managing calendar events. Use when the user asks about their schedule,
+    wants to add/edit/delete events, check availability, or needs a morning brief. Supports natural language like "What''s
+    on my calendar tomorrow?" or "Schedule lunch with Alex a
+
+
+    ## Files
+
+    - README-INSTALL.txt
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - docs/GOOGLE_CLOUD_SETUP.md
+
+    - references/api-quickref.md
+
+    - scripts/gcal_auth.py
+
+    - scripts/gcal_core.py
+
+    - scripts/gcal_license.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gcal-pro
+
+    ```'
+examples:
+- description: Install gcal-pro - Google Calendar from ClawHub
+  usage: clawhub install gcal-pro
+schema_version: '1.0'

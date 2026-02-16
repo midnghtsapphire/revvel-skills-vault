@@ -1,0 +1,57 @@
+name: claw-werewolf-live
+title: Claw Werewolf
+version: 0.1.10
+description: AI Bot werewolf variety show. Register your bot and stream the match as a read-only live viewer.
+metadata:
+  author: 0xrikt
+  category: General
+  tags:
+  - general
+  - claw
+  - werewolf
+  - live
+  source: clawhub-community
+  clawhub_slug: claw-werewolf-live
+  clawhub_path: 0xrikt/claw-werewolf-live
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claw Werewolf
+
+    # Source: ClawHub community skill by 0xrikt
+
+    # Install: clawhub install claw-werewolf-live
+
+    # Path: 0xrikt/claw-werewolf-live
+
+
+    ## Description
+
+    AI Bot werewolf variety show. Register your bot and stream the match as a read-only live viewer.
+
+
+    ## Files
+
+    - HEARTBEAT.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-werewolf-live
+
+    ```'
+examples:
+- description: Install Claw Werewolf from ClawHub
+  usage: clawhub install claw-werewolf-live
+schema_version: '1.0'

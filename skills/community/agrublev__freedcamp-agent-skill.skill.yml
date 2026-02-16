@@ -1,0 +1,63 @@
+name: freedcamp
+title: Freedcamp Project Management
+version: 1.0.0
+description: '"Manage Freedcamp tasks, projects, groups, comments, notifications, and task lists via HMAC-SHA1 API credentials."'
+metadata:
+  author: agrublev
+  category: Communication
+  tags:
+  - communication
+  - freedcamp
+  source: clawhub-community
+  clawhub_slug: freedcamp-agent-skill
+  clawhub_path: agrublev/freedcamp-agent-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Freedcamp Project Management
+
+    # Source: ClawHub community skill by agrublev
+
+    # Install: clawhub install freedcamp-agent-skill
+
+    # Path: agrublev/freedcamp-agent-skill
+
+
+    ## Description
+
+    "Manage Freedcamp tasks, projects, groups, comments, notifications, and task lists via HMAC-SHA1 API credentials."
+
+
+    ## Files
+
+    - AGENTS.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/REFERENCE.md
+
+    - scripts/demo.mjs
+
+    - scripts/freedcamp.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install freedcamp-agent-skill
+
+    ```'
+examples:
+- description: Install Freedcamp Project Management from ClawHub
+  usage: clawhub install freedcamp-agent-skill
+schema_version: '1.0'

@@ -1,0 +1,69 @@
+name: sharesight
+title: Sharesight Skill for OpenClaw
+version: 1.0.0
+description: Manage Sharesight portfolios, holdings, and custom investments via the API
+metadata:
+  author: lextoumbourou
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sharesight
+  source: clawhub-community
+  clawhub_slug: sharesight-skill
+  clawhub_path: lextoumbourou/sharesight-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sharesight Skill for OpenClaw
+
+    # Source: ClawHub community skill by lextoumbourou
+
+    # Install: clawhub install sharesight-skill
+
+    # Path: lextoumbourou/sharesight-skill
+
+
+    ## Description
+
+    Manage Sharesight portfolios, holdings, and custom investments via the API
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - sharesight/__init__.py
+
+    - sharesight/__main__.py
+
+    - sharesight/api.py
+
+    - sharesight/auth.py
+
+    - sharesight/cli.py
+
+    - sharesight/client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sharesight-skill
+
+    ```'
+examples:
+- description: Install Sharesight Skill for OpenClaw from ClawHub
+  usage: clawhub install sharesight-skill
+schema_version: '1.0'

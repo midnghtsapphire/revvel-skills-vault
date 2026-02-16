@@ -1,0 +1,62 @@
+name: alicloud-network-dns-cli
+title: Alicloud Network Dns Cli
+version: 1.0.1
+description: Alibaba Cloud DNS (Alidns) CLI skill. Use to query, add, and update DNS records via aliyun-cli, including CNAME
+  setup for Function Compute custom domains.
+metadata:
+  author: cinience
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - alicloud
+  - network
+  - dns
+  - cli
+  source: clawhub-community
+  clawhub_slug: alicloud-network-dns-cli
+  clawhub_path: cinience/alicloud-network-dns-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alicloud Network Dns Cli
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install alicloud-network-dns-cli
+
+    # Path: cinience/alicloud-network-dns-cli
+
+
+    ## Description
+
+    Alibaba Cloud DNS (Alidns) CLI skill. Use to query, add, and update DNS records via aliyun-cli, including CNAME setup
+    for Function Compute custom domains.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alicloud-network-dns-cli
+
+    ```'
+examples:
+- description: Install Alicloud Network Dns Cli from ClawHub
+  usage: clawhub install alicloud-network-dns-cli
+schema_version: '1.0'

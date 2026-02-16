@@ -1,0 +1,55 @@
+name: codex-orchestration
+title: codex-orchestration
+version: 2.0.0
+description: General-purpose orchestration for Codex. Uses update_plan plus background PTY terminals to run parallel codex
+  exec workers.
+metadata:
+  author: shanelindsay
+  category: Development & Coding
+  tags:
+  - development-coding
+  - codex
+  - orchestration
+  source: clawhub-community
+  clawhub_slug: codex-orchestration
+  clawhub_path: shanelindsay/codex-orchestration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# codex-orchestration
+
+    # Source: ClawHub community skill by shanelindsay
+
+    # Install: clawhub install codex-orchestration
+
+    # Path: shanelindsay/codex-orchestration
+
+
+    ## Description
+
+    General-purpose orchestration for Codex. Uses update_plan plus background PTY terminals to run parallel codex exec workers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install codex-orchestration
+
+    ```'
+examples:
+- description: Install codex-orchestration from ClawHub
+  usage: clawhub install codex-orchestration
+schema_version: '1.0'

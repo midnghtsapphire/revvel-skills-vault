@@ -1,0 +1,57 @@
+name: bria-ai
+title: image generation and editing
+version: 0.1.0
+description: Use when generating visual assets with Bria.ai - product photos, hero images, icons, backgrounds. Includes batch
+  generation (multiple images concurrently), pipeline workflows (generate → edit → remove background), and parallel API patterns.
+  Use for websites, presentations, e-commerce catalogs, or an
+metadata:
+  author: galbria
+  category: Media & Content
+  tags:
+  - media-content
+  - bria
+  source: clawhub-community
+  clawhub_slug: bria-ai-client
+  clawhub_path: galbria/bria-ai-client
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# image generation and editing
+
+    # Source: ClawHub community skill by galbria
+
+    # Install: clawhub install bria-ai-client
+
+    # Path: galbria/bria-ai-client
+
+
+    ## Description
+
+    Use when generating visual assets with Bria.ai - product photos, hero images, icons, backgrounds. Includes batch generation
+    (multiple images concurrently), pipeline workflows (generate → edit → remove background), and parallel API patterns. Use
+    for websites, presentations, e-commerce catalogs, or an
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bria-ai-client
+
+    ```'
+examples:
+- description: Install image generation and editing from ClawHub
+  usage: clawhub install bria-ai-client
+schema_version: '1.0'

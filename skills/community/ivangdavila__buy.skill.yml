@@ -1,0 +1,59 @@
+name: _buy_
+title: Buy
+version: 1.0.0
+description: '"Research purchases, compare prices, detect scams, and negotiate better deals."'
+metadata:
+  author: ivangdavila
+  category: Search & Research
+  tags:
+  - search-research
+  - '"buy"'
+  source: clawhub-community
+  clawhub_slug: buy
+  clawhub_path: ivangdavila/buy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Buy
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install buy
+
+    # Path: ivangdavila/buy
+
+
+    ## Description
+
+    "Research purchases, compare prices, detect scams, and negotiate better deals."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - categories.md
+
+    - sources.md
+
+    - tactics.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install buy
+
+    ```'
+examples:
+- description: Install Buy from ClawHub
+  usage: clawhub install buy
+schema_version: '1.0'

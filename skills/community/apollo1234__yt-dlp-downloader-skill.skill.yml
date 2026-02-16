@@ -1,0 +1,58 @@
+name: yt-dlp-downloader
+title: Yt Dlp Downloader
+version: 0.1.0
+description: Download videos from YouTube, Bilibili, Twitter, and thousands of other sites using yt-dlp. Use when the user
+  provides a video URL and wants to download it, extract audio (MP3), download subtitles, or select video quality. Triggers
+  on phrases like "下载视频", "download video", "yt-dlp", "YouTube", "B站",
+metadata:
+  author: apollo1234
+  category: Media & Content
+  tags:
+  - media-content
+  - dlp
+  - downloader
+  source: clawhub-community
+  clawhub_slug: yt-dlp-downloader-skill
+  clawhub_path: apollo1234/yt-dlp-downloader-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Yt Dlp Downloader
+
+    # Source: ClawHub community skill by apollo1234
+
+    # Install: clawhub install yt-dlp-downloader-skill
+
+    # Path: apollo1234/yt-dlp-downloader-skill
+
+
+    ## Description
+
+    Download videos from YouTube, Bilibili, Twitter, and thousands of other sites using yt-dlp. Use when the user provides
+    a video URL and wants to download it, extract audio (MP3), download subtitles, or select video quality. Triggers on phrases
+    like "下载视频", "download video", "yt-dlp", "YouTube", "B站",
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install yt-dlp-downloader-skill
+
+    ```'
+examples:
+- description: Install Yt Dlp Downloader from ClawHub
+  usage: clawhub install yt-dlp-downloader-skill
+schema_version: '1.0'

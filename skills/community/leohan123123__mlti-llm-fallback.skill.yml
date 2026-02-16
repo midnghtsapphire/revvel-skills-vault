@@ -1,0 +1,60 @@
+name: multi-llm
+title: Multi-LLM Fallback
+version: 1.2.1
+description: Multi-LLM intelligent switching. Use command 'multi llm' to activate local model selection based on task type.
+  Default uses Claude Opus 4.5.
+metadata:
+  author: leohan123123
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - multi
+  - llm
+  source: clawhub-community
+  clawhub_slug: mlti-llm-fallback
+  clawhub_path: leohan123123/mlti-llm-fallback
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Multi-LLM Fallback
+
+    # Source: ClawHub community skill by leohan123123
+
+    # Install: clawhub install mlti-llm-fallback
+
+    # Path: leohan123123/mlti-llm-fallback
+
+
+    ## Description
+
+    Multi-LLM intelligent switching. Use command ''multi llm'' to activate local model selection based on task type. Default
+    uses Claude Opus 4.5.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fallback-demo.sh
+
+    - scripts/select-model.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mlti-llm-fallback
+
+    ```'
+examples:
+- description: Install Multi-LLM Fallback from ClawHub
+  usage: clawhub install mlti-llm-fallback
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: agent-mbti
+title: Agent Mbti
+version: 0.1.0
+description: Agent 人格诊断与配置优化系统。用于诊断 Agent 的 MBTI 人格类型，对比用户期望，自动生成配置修改建议。触发场景："测试 Agent 人格"、"诊断 Agent 配置"、"优化 Agent 行为"。
+metadata:
+  author: torchesfrms
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  - mbti
+  source: clawhub-community
+  clawhub_slug: agent-mbti
+  clawhub_path: torchesfrms/agent-mbti
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Mbti
+
+    # Source: ClawHub community skill by torchesfrms
+
+    # Install: clawhub install agent-mbti
+
+    # Path: torchesfrms/agent-mbti
+
+
+    ## Description
+
+    Agent 人格诊断与配置优化系统。用于诊断 Agent 的 MBTI 人格类型，对比用户期望，自动生成配置修改建议。触发场景："测试 Agent 人格"、"诊断 Agent 配置"、"优化 Agent 行为"。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/README.md
+
+    - references/agent-ability-test.json
+
+    - references/agent-self-survey-93-complete.json
+
+    - references/config-generator-v2.json
+
+    - references/config-generator-v3.json
+
+    - references/config-generator.json
+
+    - references/diagnosis-engine-v2.json
+
+    - references/diagnosis-engine.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-mbti
+
+    ```'
+examples:
+- description: Install Agent Mbti from ClawHub
+  usage: clawhub install agent-mbti
+schema_version: '1.0'

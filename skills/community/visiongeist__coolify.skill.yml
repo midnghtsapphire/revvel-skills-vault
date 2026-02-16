@@ -1,0 +1,59 @@
+name: coolify
+title: Coolify
+version: 2.0.3
+description: Manage Coolify deployments, applications, databases, and services via the Coolify API. Use when the user wants
+  to deploy, start, stop, restart, or manage applications hosted on Coolify.
+metadata:
+  author: visiongeist
+  category: Development & Coding
+  tags:
+  - development-coding
+  - coolify
+  source: clawhub-community
+  clawhub_slug: coolify
+  clawhub_path: visiongeist/coolify
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Coolify
+
+    # Source: ClawHub community skill by visiongeist
+
+    # Install: clawhub install coolify
+
+    # Path: visiongeist/coolify
+
+
+    ## Description
+
+    Manage Coolify deployments, applications, databases, and services via the Coolify API. Use when the user wants to deploy,
+    start, stop, restart, or manage applications hosted on Coolify.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API.md
+
+    - scripts/coolify.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install coolify
+
+    ```'
+examples:
+- description: Install Coolify from ClawHub
+  usage: clawhub install coolify
+schema_version: '1.0'

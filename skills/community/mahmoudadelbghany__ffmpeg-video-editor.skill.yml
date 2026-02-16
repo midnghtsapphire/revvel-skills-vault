@@ -1,0 +1,57 @@
+name: ffmpeg_video_editor
+title: ffmpeg-video-editor
+version: 1.0.0
+description: Generate FFmpeg commands from natural language video editing requests - cut, trim, convert, compress, change
+  aspect ratio, extract audio, and more.
+metadata:
+  author: mahmoudadelbghany
+  category: Media & Content
+  tags:
+  - media-content
+  - ffmpeg
+  - video
+  - editor
+  source: clawhub-community
+  clawhub_slug: ffmpeg-video-editor
+  clawhub_path: mahmoudadelbghany/ffmpeg-video-editor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ffmpeg-video-editor
+
+    # Source: ClawHub community skill by mahmoudadelbghany
+
+    # Install: clawhub install ffmpeg-video-editor
+
+    # Path: mahmoudadelbghany/ffmpeg-video-editor
+
+
+    ## Description
+
+    Generate FFmpeg commands from natural language video editing requests - cut, trim, convert, compress, change aspect ratio,
+    extract audio, and more.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ffmpeg-video-editor
+
+    ```'
+examples:
+- description: Install ffmpeg-video-editor from ClawHub
+  usage: clawhub install ffmpeg-video-editor
+schema_version: '1.0'

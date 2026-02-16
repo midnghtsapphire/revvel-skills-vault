@@ -1,0 +1,61 @@
+name: clawcall-ai
+title: ClawCall AI
+version: 1.0.1
+description: Run AI-powered outbound phone calls with Telnyx + Deepgram Voice Agent. Use when the user wants real phone outreach
+  (follow-ups, confirmations, reminders, callbacks) with configurable personality, task context, model, and voice.
+metadata:
+  author: shreyjindal81
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - clawcall
+  source: clawhub-community
+  clawhub_slug: clawcall-ai
+  clawhub_path: shreyjindal81/clawcall-ai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawCall AI
+
+    # Source: ClawHub community skill by shreyjindal81
+
+    # Install: clawhub install clawcall-ai
+
+    # Path: shreyjindal81/clawcall-ai
+
+
+    ## Description
+
+    Run AI-powered outbound phone calls with Telnyx + Deepgram Voice Agent. Use when the user wants real phone outreach (follow-ups,
+    confirmations, reminders, callbacks) with configurable personality, task context, model, and voice.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - telnyx_voice_agent.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawcall-ai
+
+    ```'
+examples:
+- description: Install ClawCall AI from ClawHub
+  usage: clawhub install clawcall-ai
+schema_version: '1.0'

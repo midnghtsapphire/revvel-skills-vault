@@ -1,0 +1,56 @@
+name: book-transmission
+title: Book Transmission
+version: 1.0.1
+description: Book transmission services through Lokuli MCP. Use when user needs to find and book transmission. Triggers on
+  requests like "book a transmission", "find transmission near me", or any transmission service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - transmission
+  source: clawhub-community
+  clawhub_slug: book-transmission
+  clawhub_path: edwardrodriguez703-design/book-transmission
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Transmission
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-transmission
+
+    # Path: edwardrodriguez703-design/book-transmission
+
+
+    ## Description
+
+    Book transmission services through Lokuli MCP. Use when user needs to find and book transmission. Triggers on requests
+    like "book a transmission", "find transmission near me", or any transmission service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-transmission
+
+    ```'
+examples:
+- description: Install Book Transmission from ClawHub
+  usage: clawhub install book-transmission
+schema_version: '1.0'

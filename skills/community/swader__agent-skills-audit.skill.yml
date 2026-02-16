@@ -1,0 +1,66 @@
+name: audit-code
+title: Audit Code
+version: 0.1.0
+description: Run a two-pass, multidisciplinary code audit led by a tie-breaker lead, combining security, performance, UX,
+  DX, and edge-case analysis into one prioritized report with concrete fixes. Use when the user asks to audit code, perform
+  a deep review, stress-test a codebase, or produce a risk-ranked remed
+metadata:
+  author: swader
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - audit
+  - code
+  source: clawhub-community
+  clawhub_slug: agent-skills-audit
+  clawhub_path: swader/agent-skills-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Audit Code
+
+    # Source: ClawHub community skill by swader
+
+    # Install: clawhub install agent-skills-audit
+
+    # Path: swader/agent-skills-audit
+
+
+    ## Description
+
+    Run a two-pass, multidisciplinary code audit led by a tie-breaker lead, combining security, performance, UX, DX, and edge-case
+    analysis into one prioritized report with concrete fixes. Use when the user asks to audit code, perform a deep review,
+    stress-test a codebase, or produce a risk-ranked remed
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/audit-framework.md
+
+    - scripts/sync-to-agents.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-skills-audit
+
+    ```'
+examples:
+- description: Install Audit Code from ClawHub
+  usage: clawhub install agent-skills-audit
+schema_version: '1.0'

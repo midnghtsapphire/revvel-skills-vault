@@ -1,0 +1,74 @@
+name: location-safety
+title: Location Safety Skill
+version: 1.0.0
+description: Location-based safety monitoring with automatic alerts and escalation. Use when setting up safety monitoring
+  for a user, tracking their location, checking for nearby dangers (weather, earthquakes, air quality, local emergencies),
+  or configuring emergency contact escalation. Also includes self-preser
+metadata:
+  author: sidu
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - location
+  - safety
+  source: clawhub-community
+  clawhub_slug: location-safety-skill
+  clawhub_path: sidu/location-safety-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Location Safety Skill
+
+    # Source: ClawHub community skill by sidu
+
+    # Install: clawhub install location-safety-skill
+
+    # Path: sidu/location-safety-skill
+
+
+    ## Description
+
+    Location-based safety monitoring with automatic alerts and escalation. Use when setting up safety monitoring for a user,
+    tracking their location, checking for nearby dangers (weather, earthquakes, air quality, local emergencies), or configuring
+    emergency contact escalation. Also includes self-preser
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/config.json
+
+    - scripts/escalation-check.js
+
+    - scripts/safety-check.js
+
+    - scripts/self-check.js
+
+    - scripts/server.js
+
+    - scripts/setup.js
+
+    - scripts/test-scenarios.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install location-safety-skill
+
+    ```'
+examples:
+- description: Install Location Safety Skill from ClawHub
+  usage: clawhub install location-safety-skill
+schema_version: '1.0'

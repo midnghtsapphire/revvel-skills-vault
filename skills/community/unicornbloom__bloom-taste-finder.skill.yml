@@ -1,0 +1,74 @@
+name: bloom-identity
+title: Bloom Taste Finder
+version: 2.0.2
+description: Generate Bloom Identity Card from conversation history and Twitter/X data. Analyzes supporter personality through
+  conversations (85% weight) and optionally enriched with Twitter activity (15% weight). Creates personality type (Visionary/Explorer/Cultivator/Optimizer/Innovator),
+  recommends matching O
+metadata:
+  author: unicornbloom
+  category: Social Media
+  tags:
+  - social-media
+  - bloom
+  - identity
+  source: clawhub-community
+  clawhub_slug: bloom-taste-finder
+  clawhub_path: unicornbloom/bloom-taste-finder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bloom Taste Finder
+
+    # Source: ClawHub community skill by unicornbloom
+
+    # Install: clawhub install bloom-taste-finder
+
+    # Path: unicornbloom/bloom-taste-finder
+
+
+    ## Description
+
+    Generate Bloom Identity Card from conversation history and Twitter/X data. Analyzes supporter personality through conversations
+    (85% weight) and optionally enriched with Twitter activity (15% weight). Creates personality type (Visionary/Explorer/Cultivator/Optimizer/Innovator),
+    recommends matching O
+
+
+    ## Files
+
+    - AGENT_2X2_DIMENSIONS.md
+
+    - AGENT_FEEDBACK_CORRECTIONS.md
+
+    - AGENT_WALLET_UI_IMPLEMENTATION.md
+
+    - BUILDER_QUEST_UI.md
+
+    - CLEANUP-SUMMARY.md
+
+    - CONVERSATION-CONTEXT-INTEGRATION.md
+
+    - CONVERSATION-INTEGRATION-SUMMARY.md
+
+    - DASHBOARD_LINK_IMPLEMENTATION.md
+
+    - FRONTEND-IMPLEMENTATION-GUIDE.md
+
+    - HACKATHON-READY-CHECKLIST.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bloom-taste-finder
+
+    ```'
+examples:
+- description: Install Bloom Taste Finder from ClawHub
+  usage: clawhub install bloom-taste-finder
+schema_version: '1.0'

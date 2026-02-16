@@ -1,0 +1,72 @@
+name: brand-analyzer
+title: Brand Analyzer
+version: 0.1.0
+description: This skill should be used when the user requests brand analysis, brand guidelines creation, brand audits, or
+  establishing brand identity and consistency standards. It provides comprehensive frameworks for analyzing brand elements
+  and creating actionable brand guidelines based on requirements.
+metadata:
+  author: veeramanikandanr48
+  category: General
+  tags:
+  - general
+  - brand
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: brand-analyzer
+  clawhub_path: veeramanikandanr48/brand-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Brand Analyzer
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install brand-analyzer
+
+    # Path: veeramanikandanr48/brand-analyzer
+
+
+    ## Description
+
+    This skill should be used when the user requests brand analysis, brand guidelines creation, brand audits, or establishing
+    brand identity and consistency standards. It provides comprehensive frameworks for analyzing brand elements and creating
+    actionable brand guidelines based on requirements.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - index.js
+
+    - package.json
+
+    - assets/brand_analysis_report_template.md
+
+    - assets/brand_guidelines_template.md
+
+    - assets/quick_brand_audit_template.md
+
+    - references/brand_analysis_framework.md
+
+    - references/brand_archetypes.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brand-analyzer
+
+    ```'
+examples:
+- description: Install Brand Analyzer from ClawHub
+  usage: clawhub install brand-analyzer
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: gitlab-cli-skills
+title: GitLab CI Skills
+version: 1.0.2
+description: Use when working with GitLab CLI (glab) commands across auth, CI/CD, merge requests, issues, releases, repos,
+  and related operations. Routes to specific glab-* sub-skills.
+metadata:
+  author: vince-winkintel
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - gitlab
+  - cli
+  - skills
+  source: clawhub-community
+  clawhub_slug: gitlab-ci-skills
+  clawhub_path: vince-winkintel/gitlab-ci-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GitLab CI Skills
+
+    # Source: ClawHub community skill by vince-winkintel
+
+    # Install: clawhub install gitlab-ci-skills
+
+    # Path: vince-winkintel/gitlab-ci-skills
+
+
+    ## Description
+
+    Use when working with GitLab CLI (glab) commands across auth, CI/CD, merge requests, issues, releases, repos, and related
+    operations. Routes to specific glab-* sub-skills.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - glab-alias/SKILL.md
+
+    - glab-alias/references/commands.md
+
+    - glab-api/SKILL.md
+
+    - glab-attestation/SKILL.md
+
+    - glab-attestation/references/commands.md
+
+    - glab-auth/SKILL.md
+
+    - glab-auth/references/commands.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gitlab-ci-skills
+
+    ```'
+examples:
+- description: Install GitLab CI Skills from ClawHub
+  usage: clawhub install gitlab-ci-skills
+schema_version: '1.0'

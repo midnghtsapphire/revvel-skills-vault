@@ -1,0 +1,55 @@
+name: dada-conv-summary
+title: Conversation Summary
+version: 1.0.0
+description: '"Previous summary for incremental update (optional, default empty)"'
+metadata:
+  author: dadaliu0121
+  category: General
+  tags:
+  - general
+  - dada
+  - conv
+  - summary
+  source: clawhub-community
+  clawhub_slug: dada-conv-summary
+  clawhub_path: dadaliu0121/dada-conv-summary
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Conversation Summary
+
+    # Source: ClawHub community skill by dadaliu0121
+
+    # Install: clawhub install dada-conv-summary
+
+    # Path: dadaliu0121/dada-conv-summary
+
+
+    ## Description
+
+    "Previous summary for incremental update (optional, default empty)"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dada-conv-summary
+
+    ```'
+examples:
+- description: Install Conversation Summary from ClawHub
+  usage: clawhub install dada-conv-summary
+schema_version: '1.0'

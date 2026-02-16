@@ -1,0 +1,65 @@
+name: lightning
+title: Lightning
+version: 1.1.1
+description: Send and receive Bitcoin Lightning payments using LNI (Lightning Node Interface). Supports LND, CLN, Phoenixd,
+  NWC, and custodial services (Strike, Blink, Speed).
+metadata:
+  author: clawd21
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - lightning
+  source: clawhub-community
+  clawhub_slug: lightning
+  clawhub_path: clawd21/lightning
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lightning
+
+    # Source: ClawHub community skill by clawd21
+
+    # Install: clawhub install lightning
+
+    # Path: clawd21/lightning
+
+
+    ## Description
+
+    Send and receive Bitcoin Lightning payments using LNI (Lightning Node Interface). Supports LND, CLN, Phoenixd, NWC, and
+    custodial services (Strike, Blink, Speed).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - lib/index.js
+
+    - references/setup-guides.md
+
+    - scripts/download-binary.js
+
+    - scripts/lightning.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lightning
+
+    ```'
+examples:
+- description: Install Lightning from ClawHub
+  usage: clawhub install lightning
+schema_version: '1.0'

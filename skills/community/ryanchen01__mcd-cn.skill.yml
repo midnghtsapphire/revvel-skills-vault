@@ -1,0 +1,55 @@
+name: mcd-cn
+title: McDonald's China
+version: 1.0.0
+description: Query McDonald's China MCP server via the mcd-cn CLI for campaign calendars, coupons, and auto-claiming. Use
+  for human-friendly coupon lookup or JSON output for scripts.
+metadata:
+  author: ryanchen01
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - mcd
+  source: clawhub-community
+  clawhub_slug: mcd-cn
+  clawhub_path: ryanchen01/mcd-cn
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# McDonald''s China
+
+    # Source: ClawHub community skill by ryanchen01
+
+    # Install: clawhub install mcd-cn
+
+    # Path: ryanchen01/mcd-cn
+
+
+    ## Description
+
+    Query McDonald''s China MCP server via the mcd-cn CLI for campaign calendars, coupons, and auto-claiming. Use for human-friendly
+    coupon lookup or JSON output for scripts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mcd-cn
+
+    ```'
+examples:
+- description: Install McDonald's China from ClawHub
+  usage: clawhub install mcd-cn
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: nano-banana-pro-image-gen
+title: Nano Banana Pro Image Gen
+version: 0.1.0
+description: 图片生成技能，当用户需要生成图片、创建图像、编辑/修改/调整已有图片时使用此技能。支持10种图片比例（1:1、16:9、9:16等）和3种分辨率（1K、2K、4K），支持文生图和图生图编辑。
+metadata:
+  author: wuchubuzai2018
+  category: Media & Content
+  tags:
+  - media-content
+  - nano
+  - banana
+  - pro
+  - image
+  - gen
+  source: clawhub-community
+  clawhub_slug: nano-banana-pro-image-gen
+  clawhub_path: wuchubuzai2018/nano-banana-pro-image-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nano Banana Pro Image Gen
+
+    # Source: ClawHub community skill by wuchubuzai2018
+
+    # Install: clawhub install nano-banana-pro-image-gen
+
+    # Path: wuchubuzai2018/nano-banana-pro-image-gen
+
+
+    ## Description
+
+    图片生成技能，当用户需要生成图片、创建图像、编辑/修改/调整已有图片时使用此技能。支持10种图片比例（1:1、16:9、9:16等）和3种分辨率（1K、2K、4K），支持文生图和图生图编辑。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/scene.md
+
+    - scripts/generate_image.js
+
+    - scripts/generate_image.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nano-banana-pro-image-gen
+
+    ```'
+examples:
+- description: Install Nano Banana Pro Image Gen from ClawHub
+  usage: clawhub install nano-banana-pro-image-gen
+schema_version: '1.0'

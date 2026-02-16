@@ -1,0 +1,56 @@
+name: memory-tiering
+title: Memory Tiering
+version: 1.0.0
+description: Automated multi-tiered memory management (HOT, WARM, COLD). Use this skill to organize, prune, and archive context
+  during memory operations or compactions.
+metadata:
+  author: sarielwang93
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - memory
+  - tiering
+  source: clawhub-community
+  clawhub_slug: memory-tiering
+  clawhub_path: sarielwang93/memory-tiering
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Tiering
+
+    # Source: ClawHub community skill by sarielwang93
+
+    # Install: clawhub install memory-tiering
+
+    # Path: sarielwang93/memory-tiering
+
+
+    ## Description
+
+    Automated multi-tiered memory management (HOT, WARM, COLD). Use this skill to organize, prune, and archive context during
+    memory operations or compactions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-tiering
+
+    ```'
+examples:
+- description: Install Memory Tiering from ClawHub
+  usage: clawhub install memory-tiering
+schema_version: '1.0'

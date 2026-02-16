@@ -1,0 +1,61 @@
+name: linkedin-lead-gen
+title: Linkedin Lead Generation
+version: 1.0.0
+description: Search for, research, and verify non-tech founders on LinkedIn to identify high-value prospects for technology
+  services (Web Dev, ERP, CRM, App Dev, SEO, AI). Generates professional PDF reports. Use when asked to find potential clients
+  or leads.
+metadata:
+  author: harshhmaniya
+  category: Search & Research
+  tags:
+  - search-research
+  - linkedin
+  - lead
+  - gen
+  source: clawhub-community
+  clawhub_slug: linkedin-lead-gen
+  clawhub_path: harshhmaniya/linkedin-lead-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Linkedin Lead Generation
+
+    # Source: ClawHub community skill by harshhmaniya
+
+    # Install: clawhub install linkedin-lead-gen
+
+    # Path: harshhmaniya/linkedin-lead-gen
+
+
+    ## Description
+
+    Search for, research, and verify non-tech founders on LinkedIn to identify high-value prospects for technology services
+    (Web Dev, ERP, CRM, App Dev, SEO, AI). Generates professional PDF reports. Use when asked to find potential clients or
+    leads.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_report.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linkedin-lead-gen
+
+    ```'
+examples:
+- description: Install Linkedin Lead Generation from ClawHub
+  usage: clawhub install linkedin-lead-gen
+schema_version: '1.0'

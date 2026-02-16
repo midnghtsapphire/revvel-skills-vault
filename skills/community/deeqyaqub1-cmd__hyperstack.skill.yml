@@ -1,0 +1,57 @@
+name: hyperstack
+title: HyperStack (requires HYPERSTACK_API_KEY)
+version: 1.0.7
+description: '"Cloud memory for AI agents. Store knowledge as small cards (~350 tokens) instead of stuffing conversation history
+  (~6,000 tokens) into every prompt. 94% token savings. Hybrid semantic + keyword search. No LLM calls on your bill."'
+metadata:
+  author: deeqyaqub1-cmd
+  category: Search & Research
+  tags:
+  - search-research
+  - hyperstack
+  source: clawhub-community
+  clawhub_slug: hyperstack
+  clawhub_path: deeqyaqub1-cmd/hyperstack
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# HyperStack (requires HYPERSTACK_API_KEY)
+
+    # Source: ClawHub community skill by deeqyaqub1-cmd
+
+    # Install: clawhub install hyperstack
+
+    # Path: deeqyaqub1-cmd/hyperstack
+
+
+    ## Description
+
+    "Cloud memory for AI agents. Store knowledge as small cards (~350 tokens) instead of stuffing conversation history (~6,000
+    tokens) into every prompt. 94% token savings. Hybrid semantic + keyword search. No LLM calls on your bill."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hyperstack
+
+    ```'
+examples:
+- description: Install HyperStack (requires HYPERSTACK_API_KEY) from ClawHub
+  usage: clawhub install hyperstack
+schema_version: '1.0'

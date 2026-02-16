@@ -1,0 +1,65 @@
+name: native-app-performance
+title: Native App Performance
+version: 1.0.0
+description: Native macOS/iOS app performance profiling via xctrace/Time Profiler and CLI-only analysis of Instruments traces.
+  Use when asked to profile, attach, record, or analyze Instruments .trace files, find hotspots, or optimize native app performance
+  without opening Instruments UI.
+metadata:
+  author: steipete
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - native
+  - app
+  - performance
+  source: clawhub-community
+  clawhub_slug: native-app-performance
+  clawhub_path: steipete/native-app-performance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Native App Performance
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install native-app-performance
+
+    # Path: steipete/native-app-performance
+
+
+    ## Description
+
+    Native macOS/iOS app performance profiling via xctrace/Time Profiler and CLI-only analysis of Instruments traces. Use
+    when asked to profile, attach, record, or analyze Instruments .trace files, find hotspots, or optimize native app performance
+    without opening Instruments UI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/extract_time_samples.py
+
+    - scripts/record_time_profiler.sh
+
+    - scripts/top_hotspots.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install native-app-performance
+
+    ```'
+examples:
+- description: Install Native App Performance from ClawHub
+  usage: clawhub install native-app-performance
+schema_version: '1.0'

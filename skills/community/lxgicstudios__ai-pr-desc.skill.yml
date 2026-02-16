@@ -1,0 +1,53 @@
+name: pr-desc
+title: PR Description Writer
+version: 1.0.1
+description: Generate PR descriptions from your changes
+metadata:
+  author: lxgicstudios
+  category: Writing & Content Creation
+  tags:
+  - writing-content-creation
+  - desc
+  source: clawhub-community
+  clawhub_slug: ai-pr-desc
+  clawhub_path: lxgicstudios/ai-pr-desc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PR Description Writer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install ai-pr-desc
+
+    # Path: lxgicstudios/ai-pr-desc
+
+
+    ## Description
+
+    Generate PR descriptions from your changes
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-pr-desc
+
+    ```'
+examples:
+- description: Install PR Description Writer from ClawHub
+  usage: clawhub install ai-pr-desc
+schema_version: '1.0'

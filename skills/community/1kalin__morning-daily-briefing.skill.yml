@@ -1,0 +1,56 @@
+name: daily_briefing
+title: Daily Briefing
+version: 1.0.0
+description: Creates a morning briefing with priorities, calendar, and key updates
+metadata:
+  author: 1kalin
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - daily
+  - briefing
+  source: clawhub-community
+  clawhub_slug: morning-daily-briefing
+  clawhub_path: 1kalin/morning-daily-briefing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Briefing
+
+    # Source: ClawHub community skill by 1kalin
+
+    # Install: clawhub install morning-daily-briefing
+
+    # Path: 1kalin/morning-daily-briefing
+
+
+    ## Description
+
+    Creates a morning briefing with priorities, calendar, and key updates
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install morning-daily-briefing
+
+    ```'
+examples:
+- description: Install Daily Briefing from ClawHub
+  usage: clawhub install morning-daily-briefing
+schema_version: '1.0'

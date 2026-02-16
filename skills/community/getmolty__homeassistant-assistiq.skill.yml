@@ -1,0 +1,58 @@
+name: homeassistant-assist
+title: Home Assistant Assist
+version: 1.0.0
+description: Control Home Assistant smart home devices using the Assist (Conversation) API. Use this skill when the user wants
+  to control smart home entities - lights, switches, thermostats, covers, vacuums, media players, or any other smart device.
+  Passes natural language directly to Home Assistant's built-in N
+metadata:
+  author: getmolty
+  category: Media & Content
+  tags:
+  - media-content
+  - homeassistant
+  - assist
+  source: clawhub-community
+  clawhub_slug: homeassistant-assistiq
+  clawhub_path: getmolty/homeassistant-assistiq
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Home Assistant Assist
+
+    # Source: ClawHub community skill by getmolty
+
+    # Install: clawhub install homeassistant-assistiq
+
+    # Path: getmolty/homeassistant-assistiq
+
+
+    ## Description
+
+    Control Home Assistant smart home devices using the Assist (Conversation) API. Use this skill when the user wants to control
+    smart home entities - lights, switches, thermostats, covers, vacuums, media players, or any other smart device. Passes
+    natural language directly to Home Assistant''s built-in N
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install homeassistant-assistiq
+
+    ```'
+examples:
+- description: Install Home Assistant Assist from ClawHub
+  usage: clawhub install homeassistant-assistiq
+schema_version: '1.0'

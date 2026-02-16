@@ -1,0 +1,53 @@
+name: mcdonald
+title: Mcdonald
+version: 0.1.0
+description: 麦当劳助手 - 查询/领取优惠券、活动日历、餐品营养信息、门店查询
+metadata:
+  author: hi-yu
+  category: General
+  tags:
+  - general
+  - mcdonald
+  source: clawhub-community
+  clawhub_slug: mcdonald
+  clawhub_path: hi-yu/mcdonald
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mcdonald
+
+    # Source: ClawHub community skill by hi-yu
+
+    # Install: clawhub install mcdonald
+
+    # Path: hi-yu/mcdonald
+
+
+    ## Description
+
+    麦当劳助手 - 查询/领取优惠券、活动日历、餐品营养信息、门店查询
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mcdonald
+
+    ```'
+examples:
+- description: Install Mcdonald from ClawHub
+  usage: clawhub install mcdonald
+schema_version: '1.0'

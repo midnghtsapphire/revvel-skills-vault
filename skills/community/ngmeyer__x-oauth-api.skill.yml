@@ -1,0 +1,64 @@
+name: x-oauth-api
+title: X OAuth API
+version: 1.0.0
+description: Post to X (Twitter) using the official OAuth 1.0a API. Free tier compatible.
+metadata:
+  author: ngmeyer
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - oauth
+  - api
+  source: clawhub-community
+  clawhub_slug: x-oauth-api
+  clawhub_path: ngmeyer/x-oauth-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X OAuth API
+
+    # Source: ClawHub community skill by ngmeyer
+
+    # Install: clawhub install x-oauth-api
+
+    # Path: ngmeyer/x-oauth-api
+
+
+    ## Description
+
+    Post to X (Twitter) using the official OAuth 1.0a API. Free tier compatible.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - heartbeat.sh
+
+    - package-lock.json
+
+    - package.json
+
+    - bin/x.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-oauth-api
+
+    ```'
+examples:
+- description: Install X OAuth API from ClawHub
+  usage: clawhub install x-oauth-api
+schema_version: '1.0'

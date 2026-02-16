@@ -1,0 +1,74 @@
+name: finance-news
+title: Finance News Briefings
+version: 1.0.1
+description: '"Market news briefings with AI summaries. Use when asked about stock news, market updates, portfolio performance,
+  morning/evening briefings, financial headlines, or price alerts. Supports US/Europe/Japan markets, WhatsApp delivery, and
+  English/German output."'
+metadata:
+  author: kesslerio
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - finance
+  - news
+  source: clawhub-community
+  clawhub_slug: finance-news
+  clawhub_path: kesslerio/finance-news
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Finance News Briefings
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install finance-news
+
+    # Path: kesslerio/finance-news
+
+
+    ## Description
+
+    "Market news briefings with AI summaries. Use when asked about stock news, market updates, portfolio performance, morning/evening
+    briefings, financial headlines, or price alerts. Supports US/Europe/Japan markets, WhatsApp delivery, and English/German
+    output."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - pytest.ini
+
+    - requirements-test.txt
+
+    - requirements.txt
+
+    - config/config.json
+
+    - config/manual_earnings.json
+
+    - cron/alerts.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install finance-news
+
+    ```'
+examples:
+- description: Install Finance News Briefings from ClawHub
+  usage: clawhub install finance-news
+schema_version: '1.0'

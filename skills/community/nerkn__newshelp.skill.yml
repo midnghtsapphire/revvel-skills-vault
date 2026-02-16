@@ -1,0 +1,52 @@
+name: newshelp
+title: NewsHelp
+version: 1.0.0
+description: ''
+metadata:
+  author: nerkn
+  category: General
+  tags:
+  - general
+  - newshelp
+  source: clawhub-community
+  clawhub_slug: newshelp
+  clawhub_path: nerkn/newshelp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NewsHelp
+
+    # Source: ClawHub community skill by nerkn
+
+    # Install: clawhub install newshelp
+
+    # Path: nerkn/newshelp
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install newshelp
+
+    ```'
+examples:
+- description: Install NewsHelp from ClawHub
+  usage: clawhub install newshelp
+schema_version: '1.0'

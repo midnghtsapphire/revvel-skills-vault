@@ -1,0 +1,59 @@
+name: search-x
+title: OpenClaw Search X
+version: 1.0.5
+description: Search X/Twitter in real-time using Grok or X API. Find tweets, trends, and discussions with citations.
+metadata:
+  author: mvanhorn
+  category: Search & Research
+  tags:
+  - search-research
+  - search
+  source: clawhub-community
+  clawhub_slug: search-x
+  clawhub_path: mvanhorn/search-x
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Search X
+
+    # Source: ClawHub community skill by mvanhorn
+
+    # Install: clawhub install search-x
+
+    # Path: mvanhorn/search-x
+
+
+    ## Description
+
+    Search X/Twitter in real-time using Grok or X API. Find tweets, trends, and discussions with citations.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/search.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install search-x
+
+    ```'
+examples:
+- description: Install OpenClaw Search X from ClawHub
+  usage: clawhub install search-x
+schema_version: '1.0'

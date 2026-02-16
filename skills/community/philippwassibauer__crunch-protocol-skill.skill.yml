@@ -1,0 +1,59 @@
+name: crunch-protocol-skill
+title: Crunch Protocol Skill
+version: 0.1.0
+description: Natural language interface for Crunch Protocol CLI. Maps user requests to CLI commands for managing coordinators,
+  competitions (crunches), rewards, and checkpoints. Supports output formatting for Slack, Telegram, Discord, or plain text.
+metadata:
+  author: philippwassibauer
+  category: Social Media
+  tags:
+  - social-media
+  - crunch
+  - protocol
+  - skill
+  source: clawhub-community
+  clawhub_slug: crunch-protocol-skill
+  clawhub_path: philippwassibauer/crunch-protocol-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crunch Protocol Skill
+
+    # Source: ClawHub community skill by philippwassibauer
+
+    # Install: clawhub install crunch-protocol-skill
+
+    # Path: philippwassibauer/crunch-protocol-skill
+
+
+    ## Description
+
+    Natural language interface for Crunch Protocol CLI. Maps user requests to CLI commands for managing coordinators, competitions
+    (crunches), rewards, and checkpoints. Supports output formatting for Slack, Telegram, Discord, or plain text.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cli-reference.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crunch-protocol-skill
+
+    ```'
+examples:
+- description: Install Crunch Protocol Skill from ClawHub
+  usage: clawhub install crunch-protocol-skill
+schema_version: '1.0'

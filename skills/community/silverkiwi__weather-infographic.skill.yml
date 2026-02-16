@@ -1,0 +1,58 @@
+name: infographic-weather
+title: Weather TV style
+version: 1.0.2
+description: Generate a TV-style weather infographic with a location-specific seasonal background. Use when the user asks
+  for a visual weather forecast or a weather infographic for a specific address.
+metadata:
+  author: silverkiwi
+  category: Utilities
+  tags:
+  - utilities
+  - infographic
+  - weather
+  source: clawhub-community
+  clawhub_slug: weather-infographic
+  clawhub_path: silverkiwi/weather-infographic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Weather TV style
+
+    # Source: ClawHub community skill by silverkiwi
+
+    # Install: clawhub install weather-infographic
+
+    # Path: silverkiwi/weather-infographic
+
+
+    ## Description
+
+    Generate a TV-style weather infographic with a location-specific seasonal background. Use when the user asks for a visual
+    weather forecast or a weather infographic for a specific address.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_infographic.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install weather-infographic
+
+    ```'
+examples:
+- description: Install Weather TV style from ClawHub
+  usage: clawhub install weather-infographic
+schema_version: '1.0'

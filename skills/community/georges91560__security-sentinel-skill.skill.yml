@@ -1,0 +1,56 @@
+name: security-sentinel
+title: Anti-injection-skill
+version: 1.0.0
+description: Detect prompt injection, jailbreak, role-hijack, and system extraction attempts. Applies multi-layer defense
+  with semantic analysis and penalty scoring.
+metadata:
+  author: georges91560
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - security
+  - sentinel
+  source: clawhub-community
+  clawhub_slug: security-sentinel-skill
+  clawhub_path: georges91560/security-sentinel-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Anti-injection-skill
+
+    # Source: ClawHub community skill by georges91560
+
+    # Install: clawhub install security-sentinel-skill
+
+    # Path: georges91560/security-sentinel-skill
+
+
+    ## Description
+
+    Detect prompt injection, jailbreak, role-hijack, and system extraction attempts. Applies multi-layer defense with semantic
+    analysis and penalty scoring.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-sentinel-skill
+
+    ```'
+examples:
+- description: Install Anti-injection-skill from ClawHub
+  usage: clawhub install security-sentinel-skill
+schema_version: '1.0'

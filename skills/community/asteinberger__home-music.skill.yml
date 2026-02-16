@@ -1,0 +1,58 @@
+name: home-music
+title: Home Music
+version: 1.0.0
+description: Control whole-house music scenes combining Spotify playback with Airfoil speaker routing. Quick presets for morning,
+  party, chill modes.
+metadata:
+  author: asteinberger
+  category: Media & Content
+  tags:
+  - media-content
+  - home
+  - music
+  source: clawhub-community
+  clawhub_slug: home-music
+  clawhub_path: asteinberger/home-music
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Home Music
+
+    # Source: ClawHub community skill by asteinberger
+
+    # Install: clawhub install home-music
+
+    # Path: asteinberger/home-music
+
+
+    ## Description
+
+    Control whole-house music scenes combining Spotify playback with Airfoil speaker routing. Quick presets for morning, party,
+    chill modes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - home-music.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install home-music
+
+    ```'
+examples:
+- description: Install Home Music from ClawHub
+  usage: clawhub install home-music
+schema_version: '1.0'

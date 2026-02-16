@@ -1,0 +1,55 @@
+name: auto-estimate-generator
+title: Auto Estimate Generator
+version: 1.0.0
+description: '"Automatically generate estimates from QTO data. Apply pricing rules to BIM quantities for cost estimates."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - auto
+  - estimate
+  - generator
+  source: clawhub-community
+  clawhub_slug: auto-estimate-generator
+  clawhub_path: datadrivenconstruction/auto-estimate-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Auto Estimate Generator
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install auto-estimate-generator
+
+    # Path: datadrivenconstruction/auto-estimate-generator
+
+
+    ## Description
+
+    "Automatically generate estimates from QTO data. Apply pricing rules to BIM quantities for cost estimates."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install auto-estimate-generator
+
+    ```'
+examples:
+- description: Install Auto Estimate Generator from ClawHub
+  usage: clawhub install auto-estimate-generator
+schema_version: '1.0'

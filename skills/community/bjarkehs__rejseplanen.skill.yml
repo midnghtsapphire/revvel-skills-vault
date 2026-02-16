@@ -1,0 +1,55 @@
+name: rejseplanen
+title: Rejseplanen
+version: 0.1.1
+description: Query Danish public transport departures, arrivals, and journey planning via Rejseplanen API
+metadata:
+  author: bjarkehs
+  category: Development & Coding
+  tags:
+  - development-coding
+  - rejseplanen
+  source: clawhub-community
+  clawhub_slug: rejseplanen
+  clawhub_path: bjarkehs/rejseplanen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Rejseplanen
+
+    # Source: ClawHub community skill by bjarkehs
+
+    # Install: clawhub install rejseplanen
+
+    # Path: bjarkehs/rejseplanen
+
+
+    ## Description
+
+    Query Danish public transport departures, arrivals, and journey planning via Rejseplanen API
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - dist/rejseplanen.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rejseplanen
+
+    ```'
+examples:
+- description: Install Rejseplanen from ClawHub
+  usage: clawhub install rejseplanen
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: webhook-robot
+title: Webhook Robot
+version: 1.1.0
+description: Send messages to various webhook-based bots (WeCom, DingTalk, Feishu, etc.).
+metadata:
+  author: takedwind
+  category: Communication
+  tags:
+  - communication
+  - webhook
+  - robot
+  source: clawhub-community
+  clawhub_slug: webhook-robot
+  clawhub_path: takedwind/webhook-robot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Webhook Robot
+
+    # Source: ClawHub community skill by takedwind
+
+    # Install: clawhub install webhook-robot
+
+    # Path: takedwind/webhook-robot
+
+
+    ## Description
+
+    Send messages to various webhook-based bots (WeCom, DingTalk, Feishu, etc.).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/send_bark.py
+
+    - scripts/send_dingtalk.py
+
+    - scripts/send_feishu.py
+
+    - scripts/send_gocqhttp.py
+
+    - scripts/send_gotify.py
+
+    - scripts/send_pushdeer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install webhook-robot
+
+    ```'
+examples:
+- description: Install Webhook Robot from ClawHub
+  usage: clawhub install webhook-robot
+schema_version: '1.0'

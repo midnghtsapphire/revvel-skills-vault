@@ -1,0 +1,57 @@
+name: omarchy
+title: omarchy
+version: 0.1.1
+description: '"Omarchy operating guardrails for day-to-day system work: assume the host is Omarchy by default, choose Omarchy-native
+  workflows first, map user intent to the correct omarchy-* wrapper/script family, and avoid generic Linux commands that conflict
+  with Omarchy behavior. Use whenever handling local sy'
+metadata:
+  author: achals-iglu
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - omarchy
+  source: clawhub-community
+  clawhub_slug: omarchy
+  clawhub_path: achals-iglu/omarchy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# omarchy
+
+    # Source: ClawHub community skill by achals-iglu
+
+    # Install: clawhub install omarchy
+
+    # Path: achals-iglu/omarchy
+
+
+    ## Description
+
+    "Omarchy operating guardrails for day-to-day system work: assume the host is Omarchy by default, choose Omarchy-native
+    workflows first, map user intent to the correct omarchy-* wrapper/script family, and avoid generic Linux commands that
+    conflict with Omarchy behavior. Use whenever handling local sy
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install omarchy
+
+    ```'
+examples:
+- description: Install omarchy from ClawHub
+  usage: clawhub install omarchy
+schema_version: '1.0'

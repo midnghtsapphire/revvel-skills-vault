@@ -1,0 +1,55 @@
+name: upload-to-catbox
+title: upload-to-catbox
+version: 1.0.0
+description: 上传本地图片到 catbox.moe 免费图床，获取公开访问的 URL 链接。当用户需要将本地图片转换为 URL、上传图片到图床、获取图片链接、提到 catbox、或进行图像编辑（如改背景、换脸等）但提供的是本地图片路径时使用此
+  skill。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - upload
+  - catbox
+  source: clawhub-community
+  clawhub_slug: upload-to-catbox
+  clawhub_path: hexiaochun/upload-to-catbox
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# upload-to-catbox
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install upload-to-catbox
+
+    # Path: hexiaochun/upload-to-catbox
+
+
+    ## Description
+
+    上传本地图片到 catbox.moe 免费图床，获取公开访问的 URL 链接。当用户需要将本地图片转换为 URL、上传图片到图床、获取图片链接、提到 catbox、或进行图像编辑（如改背景、换脸等）但提供的是本地图片路径时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install upload-to-catbox
+
+    ```'
+examples:
+- description: Install upload-to-catbox from ClawHub
+  usage: clawhub install upload-to-catbox
+schema_version: '1.0'

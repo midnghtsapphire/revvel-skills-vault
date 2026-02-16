@@ -1,0 +1,65 @@
+name: knuspr
+title: Knuspr
+version: 0.1.0
+description: Manage grocery shopping on Knuspr.de via the knuspr-cli. Use for product search, cart management, delivery slot
+  reservation, shopping lists, order history, deals, favorites, and meal suggestions. Trigger when the user mentions Knuspr,
+  groceries, Einkauf, Lebensmittel, Warenkorb, Lieferslot, or shopp
+metadata:
+  author: lars147
+  category: Search & Research
+  tags:
+  - search-research
+  - knuspr
+  source: clawhub-community
+  clawhub_slug: knuspr-cli
+  clawhub_path: lars147/knuspr-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Knuspr
+
+    # Source: ClawHub community skill by lars147
+
+    # Install: clawhub install knuspr-cli
+
+    # Path: lars147/knuspr-cli
+
+
+    ## Description
+
+    Manage grocery shopping on Knuspr.de via the knuspr-cli. Use for product search, cart management, delivery slot reservation,
+    shopping lists, order history, deals, favorites, and meal suggestions. Trigger when the user mentions Knuspr, groceries,
+    Einkauf, Lebensmittel, Warenkorb, Lieferslot, or shopp
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - knuspr_cli.py
+
+    - pyproject.toml
+
+    - references/commands.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install knuspr-cli
+
+    ```'
+examples:
+- description: Install Knuspr from ClawHub
+  usage: clawhub install knuspr-cli
+schema_version: '1.0'

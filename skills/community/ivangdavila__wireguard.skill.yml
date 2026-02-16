@@ -1,0 +1,53 @@
+name: wireguard
+title: WireGuard
+version: 1.0.0
+description: Configure WireGuard VPN tunnels with secure routing and key management.
+metadata:
+  author: ivangdavila
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - wireguard
+  source: clawhub-community
+  clawhub_slug: wireguard
+  clawhub_path: ivangdavila/wireguard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WireGuard
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install wireguard
+
+    # Path: ivangdavila/wireguard
+
+
+    ## Description
+
+    Configure WireGuard VPN tunnels with secure routing and key management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wireguard
+
+    ```'
+examples:
+- description: Install WireGuard from ClawHub
+  usage: clawhub install wireguard
+schema_version: '1.0'

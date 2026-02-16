@@ -1,0 +1,73 @@
+name: notebooklm
+title: Notebooklm
+version: 0.1.0
+description: Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-backed
+  answers from Gemini. Browser automation, library management, persistent auth. Drastically reduced hallucinations through
+  document-only responses.
+metadata:
+  author: guccidgi
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - notebooklm
+  source: clawhub-community
+  clawhub_slug: notebooklm-skill
+  clawhub_path: guccidgi/notebooklm-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Notebooklm
+
+    # Source: ClawHub community skill by guccidgi
+
+    # Install: clawhub install notebooklm-skill
+
+    # Path: guccidgi/notebooklm-skill
+
+
+    ## Description
+
+    Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-backed
+    answers from Gemini. Browser automation, library management, persistent auth. Drastically reduced hallucinations through
+    document-only responses.
+
+
+    ## Files
+
+    - AUTHENTICATION.md
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - references/api_reference.md
+
+    - references/troubleshooting.md
+
+    - references/usage_patterns.md
+
+    - scripts/__init__.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notebooklm-skill
+
+    ```'
+examples:
+- description: Install Notebooklm from ClawHub
+  usage: clawhub install notebooklm-skill
+schema_version: '1.0'

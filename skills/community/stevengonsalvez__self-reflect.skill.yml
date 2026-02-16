@@ -1,0 +1,71 @@
+name: reflect
+title: Reflect
+version: 1.0.0
+description: Self-improvement through conversation analysis. Extracts learnings from corrections and success patterns, permanently
+  encoding them into agent definitions. Philosophy - Correct once, never again.
+metadata:
+  author: stevengonsalvez
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - reflect
+  source: clawhub-community
+  clawhub_slug: self-reflect
+  clawhub_path: stevengonsalvez/self-reflect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reflect
+
+    # Source: ClawHub community skill by stevengonsalvez
+
+    # Install: clawhub install self-reflect
+
+    # Path: stevengonsalvez/self-reflect
+
+
+    ## Description
+
+    Self-improvement through conversation analysis. Extracts learnings from corrections and success patterns, permanently
+    encoding them into agent definitions. Philosophy - Correct once, never again.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agent_mappings.md
+
+    - signal_patterns.md
+
+    - skill.json
+
+    - logs/chat.json
+
+    - logs/stop.json
+
+    - logs/subagent_stop.json
+
+    - logs/user_prompt_submit.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install self-reflect
+
+    ```'
+examples:
+- description: Install Reflect from ClawHub
+  usage: clawhub install self-reflect
+schema_version: '1.0'

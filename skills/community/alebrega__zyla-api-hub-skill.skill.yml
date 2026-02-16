@@ -1,0 +1,74 @@
+name: zyla-api-hub-skill
+title: Zyla API Hub Skill
+version: 1.0.7
+description: Zyla API Hub Skill — Turn your OpenClaw AI agent into a real-world operator. Power it with 10,000+ production-ready
+  APIs from Zyla API Hub — instant access to weather, finance, translation, email validation, geolocation, and more.
+metadata:
+  author: alebrega
+  category: Communication
+  tags:
+  - communication
+  - zyla
+  - api
+  - hub
+  - skill
+  source: clawhub-community
+  clawhub_slug: zyla-api-hub-skill
+  clawhub_path: alebrega/zyla-api-hub-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zyla API Hub Skill
+
+    # Source: ClawHub community skill by alebrega
+
+    # Install: clawhub install zyla-api-hub-skill
+
+    # Path: alebrega/zyla-api-hub-skill
+
+
+    ## Description
+
+    Zyla API Hub Skill — Turn your OpenClaw AI agent into a real-world operator. Power it with 10,000+ production-ready APIs
+    from Zyla API Hub — instant access to weather, finance, translation, email validation, geolocation, and more.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - openclaw.plugin.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - plugin/index.ts
+
+    - scripts/config.ts
+
+    - scripts/generate-popular.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zyla-api-hub-skill
+
+    ```'
+examples:
+- description: Install Zyla API Hub Skill from ClawHub
+  usage: clawhub install zyla-api-hub-skill
+schema_version: '1.0'

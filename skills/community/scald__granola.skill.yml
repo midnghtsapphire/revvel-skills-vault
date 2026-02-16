@@ -1,0 +1,55 @@
+name: granola
+title: Granola Meeting Transcripts
+version: 1.0.0
+description: Access Granola meeting transcripts and notes.
+metadata:
+  author: scald
+  category: General
+  tags:
+  - general
+  - granola
+  source: clawhub-community
+  clawhub_slug: granola
+  clawhub_path: scald/granola
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Granola Meeting Transcripts
+
+    # Source: ClawHub community skill by scald
+
+    # Install: clawhub install granola
+
+    # Path: scald/granola
+
+
+    ## Description
+
+    Access Granola meeting transcripts and notes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sync.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install granola
+
+    ```'
+examples:
+- description: Install Granola Meeting Transcripts from ClawHub
+  usage: clawhub install granola
+schema_version: '1.0'

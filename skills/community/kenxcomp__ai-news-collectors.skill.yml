@@ -1,0 +1,58 @@
+name: ai-news-collector
+title: ai-news-collectors
+version: 1.0.0
+description: AI 新闻聚合与热度排序工具。当用户询问 AI 领域最新动态时触发，如："今天有什么 AI 新闻？""总结一下这周的 AI 动态""最近有什么火的 AI 产品？""AI 圈最近在讨论什么？"。覆盖：新产品发布、研究论文、行业动态、融资新闻、开源项目更新、社区病毒传播现象、AI
+  工具/Agent 热门项目。输出中文摘要列表，按热度排序，附带原文链接。
+metadata:
+  author: kenxcomp
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - news
+  - collector
+  source: clawhub-community
+  clawhub_slug: ai-news-collectors
+  clawhub_path: kenxcomp/ai-news-collectors
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ai-news-collectors
+
+    # Source: ClawHub community skill by kenxcomp
+
+    # Install: clawhub install ai-news-collectors
+
+    # Path: kenxcomp/ai-news-collectors
+
+
+    ## Description
+
+    AI 新闻聚合与热度排序工具。当用户询问 AI 领域最新动态时触发，如："今天有什么 AI 新闻？""总结一下这周的 AI 动态""最近有什么火的 AI 产品？""AI 圈最近在讨论什么？"。覆盖：新产品发布、研究论文、行业动态、融资新闻、开源项目更新、社区病毒传播现象、AI
+    工具/Agent 热门项目。输出中文摘要列表，按热度排序，附带原文链接。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-news-collectors
+
+    ```'
+examples:
+- description: Install ai-news-collectors from ClawHub
+  usage: clawhub install ai-news-collectors
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: community-mod-pack
+title: Community Mod Pack
+version: 1.0.0
+description: Assist community moderation with summaries, spam detection suggestions, and draft replies for Discord or Telegram.
+  Use when a user wants moderation help, rule reminders, or daily summaries without automatic enforcement actions.
+metadata:
+  author: codedao12
+  category: Social Media
+  tags:
+  - social-media
+  - community
+  - mod
+  - pack
+  source: clawhub-community
+  clawhub_slug: community-mod-pack
+  clawhub_path: codedao12/community-mod-pack
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Community Mod Pack
+
+    # Source: ClawHub community skill by codedao12
+
+    # Install: clawhub install community-mod-pack
+
+    # Path: codedao12/community-mod-pack
+
+
+    ## Description
+
+    Assist community moderation with summaries, spam detection suggestions, and draft replies for Discord or Telegram. Use
+    when a user wants moderation help, rule reminders, or daily summaries without automatic enforcement actions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/auth.md
+
+    - references/endpoints.md
+
+    - references/overview.md
+
+    - references/safety.md
+
+    - references/troubleshooting.md
+
+    - references/ux.md
+
+    - references/webhooks.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install community-mod-pack
+
+    ```'
+examples:
+- description: Install Community Mod Pack from ClawHub
+  usage: clawhub install community-mod-pack
+schema_version: '1.0'

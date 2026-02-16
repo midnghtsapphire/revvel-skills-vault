@@ -1,0 +1,63 @@
+name: skill-creator
+title: SolarPunk Evidence Logger
+version: 1.0.0
+description: Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references,
+  and assets.
+metadata:
+  author: meekotharaccoon
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - skill
+  - creator
+  source: clawhub-community
+  clawhub_slug: solarpunk-evidence-logger
+  clawhub_path: meekotharaccoon/solarpunk-evidence-logger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SolarPunk Evidence Logger
+
+    # Source: ClawHub community skill by meekotharaccoon
+
+    # Install: clawhub install solarpunk-evidence-logger
+
+    # Path: meekotharaccoon/solarpunk-evidence-logger
+
+
+    ## Description
+
+    Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - license.txt
+
+    - scripts/init_skill.py
+
+    - scripts/package_skill.py
+
+    - scripts/quick_validate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solarpunk-evidence-logger
+
+    ```'
+examples:
+- description: Install SolarPunk Evidence Logger from ClawHub
+  usage: clawhub install solarpunk-evidence-logger
+schema_version: '1.0'

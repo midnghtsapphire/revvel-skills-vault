@@ -1,0 +1,74 @@
+name: trading-research
+title: Trading Research
+version: 1.0.0
+description: Binance cryptocurrency trading research, technical analysis, and position management. Triggers on requests for
+  crypto prices, market data, trading analysis, DCA planning, position sizing, whale activity, or any trading research questions
+  about Bitcoin, altcoins, or crypto markets.
+metadata:
+  author: fpsjago
+  category: Search & Research
+  tags:
+  - search-research
+  - trading
+  - research
+  source: clawhub-community
+  clawhub_slug: trading-research
+  clawhub_path: fpsjago/trading-research
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Trading Research
+
+    # Source: ClawHub community skill by fpsjago
+
+    # Install: clawhub install trading-research
+
+    # Path: fpsjago/trading-research
+
+
+    ## Description
+
+    Binance cryptocurrency trading research, technical analysis, and position management. Triggers on requests for crypto
+    prices, market data, trading analysis, DCA planning, position sizing, whale activity, or any trading research questions
+    about Bitcoin, altcoins, or crypto markets.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/binance-api.md
+
+    - references/indicators.md
+
+    - references/strategies.md
+
+    - scripts/binance_market.py
+
+    - scripts/dca_calculator.py
+
+    - scripts/market_scanner.py
+
+    - scripts/position_sizer.py
+
+    - scripts/technical_analysis.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install trading-research
+
+    ```'
+examples:
+- description: Install Trading Research from ClawHub
+  usage: clawhub install trading-research
+schema_version: '1.0'

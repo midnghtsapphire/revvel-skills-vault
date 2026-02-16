@@ -1,0 +1,54 @@
+name: nano-pdf
+title: Nano PDF
+version: 1.0.0
+description: Edit PDFs with natural-language instructions using the nano-pdf CLI.
+metadata:
+  author: zaycv
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - nano
+  - pdf
+  source: clawhub-community
+  clawhub_slug: nanopdf
+  clawhub_path: zaycv/nanopdf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nano PDF
+
+    # Source: ClawHub community skill by zaycv
+
+    # Install: clawhub install nanopdf
+
+    # Path: zaycv/nanopdf
+
+
+    ## Description
+
+    Edit PDFs with natural-language instructions using the nano-pdf CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nanopdf
+
+    ```'
+examples:
+- description: Install Nano PDF from ClawHub
+  usage: clawhub install nanopdf
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: polymarket
+title: Polymarket Odds
+version: 1.0.0
+description: Query Polymarket prediction market odds and events via CLI. Search for markets, get current prices, list events
+  by category. Supports sports betting (NFL, NBA, soccer/EPL, Champions League), politics, crypto, elections, geopolitics.
+  Real money markets = more accurate than polls. No API key required.
+metadata:
+  author: deanpress
+  category: Search & Research
+  tags:
+  - search-research
+  - polymarket
+  source: clawhub-community
+  clawhub_slug: polymarket-odds
+  clawhub_path: deanpress/polymarket-odds
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polymarket Odds
+
+    # Source: ClawHub community skill by deanpress
+
+    # Install: clawhub install polymarket-odds
+
+    # Path: deanpress/polymarket-odds
+
+
+    ## Description
+
+    Query Polymarket prediction market odds and events via CLI. Search for markets, get current prices, list events by category.
+    Supports sports betting (NFL, NBA, soccer/EPL, Champions League), politics, crypto, elections, geopolitics. Real money
+    markets = more accurate than polls. No API key required.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - polymarket.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polymarket-odds
+
+    ```'
+examples:
+- description: Install Polymarket Odds from ClawHub
+  usage: clawhub install polymarket-odds
+schema_version: '1.0'

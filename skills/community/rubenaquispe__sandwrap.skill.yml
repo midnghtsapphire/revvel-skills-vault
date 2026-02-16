@@ -1,0 +1,61 @@
+name: sandwrap
+title: Sandwrap
+version: 1.0.0
+description: '"Run untrusted skills safely with soft-sandbox protection. Wraps skills in multi-layer prompt-based defense
+  (~85% attack prevention). Use when: (1) Running third-party skills from unknown sources, (2) Processing untrusted content
+  that might contain prompt injection, (3) Analyzing suspicious files or'
+metadata:
+  author: rubenaquispe
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sandwrap
+  source: clawhub-community
+  clawhub_slug: sandwrap
+  clawhub_path: rubenaquispe/sandwrap
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sandwrap
+
+    # Source: ClawHub community skill by rubenaquispe
+
+    # Install: clawhub install sandwrap
+
+    # Path: rubenaquispe/sandwrap
+
+
+    ## Description
+
+    "Run untrusted skills safely with soft-sandbox protection. Wraps skills in multi-layer prompt-based defense (~85% attack
+    prevention). Use when: (1) Running third-party skills from unknown sources, (2) Processing untrusted content that might
+    contain prompt injection, (3) Analyzing suspicious files or
+
+
+    ## Files
+
+    - CLAWHUB-README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/architecture.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sandwrap
+
+    ```'
+examples:
+- description: Install Sandwrap from ClawHub
+  usage: clawhub install sandwrap
+schema_version: '1.0'

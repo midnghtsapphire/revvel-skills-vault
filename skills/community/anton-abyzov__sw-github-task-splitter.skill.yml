@@ -1,0 +1,58 @@
+name: github-task-splitter
+title: Github Task Splitter
+version: 1.0.0
+description: Expert agent for splitting SpecWeave tasks across multiple GitHub repositories based on microservice or multi-repo
+  architecture. Use when tasks span multiple services, creating cross-repo tracking issues, or analyzing dependencies across
+  repositories.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - task
+  - splitter
+  source: clawhub-community
+  clawhub_slug: sw-github-task-splitter
+  clawhub_path: anton-abyzov/sw-github-task-splitter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Github Task Splitter
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-github-task-splitter
+
+    # Path: anton-abyzov/sw-github-task-splitter
+
+
+    ## Description
+
+    Expert agent for splitting SpecWeave tasks across multiple GitHub repositories based on microservice or multi-repo architecture.
+    Use when tasks span multiple services, creating cross-repo tracking issues, or analyzing dependencies across repositories.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-github-task-splitter
+
+    ```'
+examples:
+- description: Install Github Task Splitter from ClawHub
+  usage: clawhub install sw-github-task-splitter
+schema_version: '1.0'

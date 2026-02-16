@@ -1,0 +1,55 @@
+name: duke-leto-test
+title: Test Skill
+version: 1.0.0
+description: Test skill to verify ClawHub publishing works correctly.
+metadata:
+  author: jdrhyne
+  category: Development & Coding
+  tags:
+  - development-coding
+  - duke
+  - leto
+  - test
+  source: clawhub-community
+  clawhub_slug: duke-leto-test
+  clawhub_path: jdrhyne/duke-leto-test
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Test Skill
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install duke-leto-test
+
+    # Path: jdrhyne/duke-leto-test
+
+
+    ## Description
+
+    Test skill to verify ClawHub publishing works correctly.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install duke-leto-test
+
+    ```'
+examples:
+- description: Install Test Skill from ClawHub
+  usage: clawhub install duke-leto-test
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: assemblyai-transcriber
+title: AssemblyAI Transcriber
+version: 1.1.0
+description: '"Transcribe audio files with speaker diarization (who speaks when). Supports 100+ languages, automatic language
+  detection, and timestamps. Use for meetings, interviews, podcasts, or voice messages. Requires AssemblyAI API key."'
+metadata:
+  author: xenofex7
+  category: Media & Content
+  tags:
+  - media-content
+  - assemblyai
+  - transcriber
+  source: clawhub-community
+  clawhub_slug: assemblyai-transcriber
+  clawhub_path: xenofex7/assemblyai-transcriber
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AssemblyAI Transcriber
+
+    # Source: ClawHub community skill by xenofex7
+
+    # Install: clawhub install assemblyai-transcriber
+
+    # Path: xenofex7/assemblyai-transcriber
+
+
+    ## Description
+
+    "Transcribe audio files with speaker diarization (who speaks when). Supports 100+ languages, automatic language detection,
+    and timestamps. Use for meetings, interviews, podcasts, or voice messages. Requires AssemblyAI API key."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/transcribe.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install assemblyai-transcriber
+
+    ```'
+examples:
+- description: Install AssemblyAI Transcriber from ClawHub
+  usage: clawhub install assemblyai-transcriber
+schema_version: '1.0'

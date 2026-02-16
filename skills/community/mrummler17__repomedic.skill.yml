@@ -1,0 +1,57 @@
+name: repomedic
+title: RepoMedic
+version: 1.0.6
+description: Safely triage and remediate GitHub dependency hygiene issues with explicit guardrails. Use when Dependabot PRs
+  fail, pnpm lockfiles break, transitive vulnerabilities appear (e.g., glob/lodash/brace-expansion), or CI/Vercel fails due
+  to dependency resolution. Prioritize low-risk fixes, branch+PR work
+metadata:
+  author: mrummler17
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - repomedic
+  source: clawhub-community
+  clawhub_slug: repomedic
+  clawhub_path: mrummler17/repomedic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RepoMedic
+
+    # Source: ClawHub community skill by mrummler17
+
+    # Install: clawhub install repomedic
+
+    # Path: mrummler17/repomedic
+
+
+    ## Description
+
+    Safely triage and remediate GitHub dependency hygiene issues with explicit guardrails. Use when Dependabot PRs fail, pnpm
+    lockfiles break, transitive vulnerabilities appear (e.g., glob/lodash/brace-expansion), or CI/Vercel fails due to dependency
+    resolution. Prioritize low-risk fixes, branch+PR work
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install repomedic
+
+    ```'
+examples:
+- description: Install RepoMedic from ClawHub
+  usage: clawhub install repomedic
+schema_version: '1.0'

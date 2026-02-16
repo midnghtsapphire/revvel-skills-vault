@@ -1,0 +1,57 @@
+name: sensibo
+title: Sensibo
+version: 1.0.0
+description: Control Sensibo smart AC devices via their REST API. Use when the user asks to turn on/off AC, change temperature,
+  set modes, check room temperature/humidity, or manage climate schedules. Triggers on phrases like "turn on AC", "set bedroom
+  to 22", "how hot is it", "AC off", "cooling mode".
+metadata:
+  author: omere2
+  category: Development & Coding
+  tags:
+  - development-coding
+  - sensibo
+  source: clawhub-community
+  clawhub_slug: sensibo
+  clawhub_path: omere2/sensibo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sensibo
+
+    # Source: ClawHub community skill by omere2
+
+    # Install: clawhub install sensibo
+
+    # Path: omere2/sensibo
+
+
+    ## Description
+
+    Control Sensibo smart AC devices via their REST API. Use when the user asks to turn on/off AC, change temperature, set
+    modes, check room temperature/humidity, or manage climate schedules. Triggers on phrases like "turn on AC", "set bedroom
+    to 22", "how hot is it", "AC off", "cooling mode".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sensibo
+
+    ```'
+examples:
+- description: Install Sensibo from ClawHub
+  usage: clawhub install sensibo
+schema_version: '1.0'

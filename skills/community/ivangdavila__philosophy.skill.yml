@@ -1,0 +1,53 @@
+name: philosophy
+title: Philosophy
+version: 1.0.0
+description: Guide philosophical inquiry from first questions to scholarly debate.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - philosophy
+  source: clawhub-community
+  clawhub_slug: philosophy
+  clawhub_path: ivangdavila/philosophy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Philosophy
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install philosophy
+
+    # Path: ivangdavila/philosophy
+
+
+    ## Description
+
+    Guide philosophical inquiry from first questions to scholarly debate.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install philosophy
+
+    ```'
+examples:
+- description: Install Philosophy from ClawHub
+  usage: clawhub install philosophy
+schema_version: '1.0'

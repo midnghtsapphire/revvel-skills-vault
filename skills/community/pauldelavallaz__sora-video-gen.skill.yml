@@ -1,0 +1,57 @@
+name: sora
+title: Sora Video Generation
+version: 1.0.0
+description: Generate videos using OpenAI's Sora API. Use when the user asks to generate, create, or make videos from text
+  prompts or reference images. Supports image-to-video generation with automatic resizing.
+metadata:
+  author: pauldelavallaz
+  category: Media & Content
+  tags:
+  - media-content
+  - sora
+  source: clawhub-community
+  clawhub_slug: sora-video-gen
+  clawhub_path: pauldelavallaz/sora-video-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sora Video Generation
+
+    # Source: ClawHub community skill by pauldelavallaz
+
+    # Install: clawhub install sora-video-gen
+
+    # Path: pauldelavallaz/sora-video-gen
+
+
+    ## Description
+
+    Generate videos using OpenAI''s Sora API. Use when the user asks to generate, create, or make videos from text prompts
+    or reference images. Supports image-to-video generation with automatic resizing.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_video.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sora-video-gen
+
+    ```'
+examples:
+- description: Install Sora Video Generation from ClawHub
+  usage: clawhub install sora-video-gen
+schema_version: '1.0'

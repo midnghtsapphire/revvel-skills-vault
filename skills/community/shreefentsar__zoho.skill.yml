@@ -1,0 +1,67 @@
+name: zoho
+title: Zoho
+version: 2.0.1
+description: Interact with Zoho CRM, Projects, and Meeting APIs. Use when managing deals, contacts, leads, tasks, projects,
+  milestones, meeting recordings, or any Zoho workspace data. Triggers on mentions of Zoho, CRM, deals, pipeline, projects,
+  tasks, milestones, meetings, recordings, standups.
+metadata:
+  author: shreefentsar
+  category: Development & Coding
+  tags:
+  - development-coding
+  - zoho
+  source: clawhub-community
+  clawhub_slug: zoho
+  clawhub_path: shreefentsar/zoho
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Zoho
+
+    # Source: ClawHub community skill by shreefentsar
+
+    # Install: clawhub install zoho
+
+    # Path: shreefentsar/zoho
+
+
+    ## Description
+
+    Interact with Zoho CRM, Projects, and Meeting APIs. Use when managing deals, contacts, leads, tasks, projects, milestones,
+    meeting recordings, or any Zoho workspace data. Triggers on mentions of Zoho, CRM, deals, pipeline, projects, tasks, milestones,
+    meetings, recordings, standups.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/crm-api.md
+
+    - references/meeting-api.md
+
+    - references/projects-api.md
+
+    - scripts/standup-summarizer.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zoho
+
+    ```'
+examples:
+- description: Install Zoho from ClawHub
+  usage: clawhub install zoho
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: solar-weather
+title: Solar Weather Monitor
+version: 1.0.0
+description: Monitor solar weather conditions including geomagnetic storms, solar flares, aurora forecasts, and solar wind
+  data. Uses NOAA Space Weather Prediction Center real-time data.
+metadata:
+  author: andrewdmwalker
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - solar
+  - weather
+  source: clawhub-community
+  clawhub_slug: solar-weather
+  clawhub_path: andrewdmwalker/solar-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Solar Weather Monitor
+
+    # Source: ClawHub community skill by andrewdmwalker
+
+    # Install: clawhub install solar-weather
+
+    # Path: andrewdmwalker/solar-weather
+
+
+    ## Description
+
+    Monitor solar weather conditions including geomagnetic storms, solar flares, aurora forecasts, and solar wind data. Uses
+    NOAA Space Weather Prediction Center real-time data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - solar-weather.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solar-weather
+
+    ```'
+examples:
+- description: Install Solar Weather Monitor from ClawHub
+  usage: clawhub install solar-weather
+schema_version: '1.0'

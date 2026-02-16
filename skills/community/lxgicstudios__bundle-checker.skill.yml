@@ -1,0 +1,66 @@
+name: bundle-checker
+title: Bundle Checker
+version: 1.0.0
+description: Analyze bundle size and get AI suggestions to reduce it. Use when your builds are getting bloated.
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - bundle
+  - checker
+  source: clawhub-community
+  clawhub_slug: bundle-checker
+  clawhub_path: lxgicstudios/bundle-checker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bundle Checker
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install bundle-checker
+
+    # Path: lxgicstudios/bundle-checker
+
+
+    ## Description
+
+    Analyze bundle size and get AI suggestions to reduce it. Use when your builds are getting bloated.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bundle-checker
+
+    ```'
+examples:
+- description: Install Bundle Checker from ClawHub
+  usage: clawhub install bundle-checker
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: quantum-lab
+title: quantumlab
+version: 1.0.0
+description: Run the /home/bram/work/quantum_lab Python scripts and demos inside the existing venv ~/.venvs/qiskit. Use when
+  asked (e.g., via Telegram/OpenClaw) to run quant_math_lab.py, qcqi_pure_math_playground.py, quantum_app.py subcommands,
+  quantumapp.server, or notebooks under the repo.
+metadata:
+  author: bramdo
+  category: Social Media
+  tags:
+  - social-media
+  - quantum
+  - lab
+  source: clawhub-community
+  clawhub_slug: quantumlab
+  clawhub_path: bramdo/quantumlab
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# quantumlab
+
+    # Source: ClawHub community skill by bramdo
+
+    # Install: clawhub install quantumlab
+
+    # Path: bramdo/quantumlab
+
+
+    ## Description
+
+    Run the /home/bram/work/quantum_lab Python scripts and demos inside the existing venv ~/.venvs/qiskit. Use when asked
+    (e.g., via Telegram/OpenClaw) to run quant_math_lab.py, qcqi_pure_math_playground.py, quantum_app.py subcommands, quantumapp.server,
+    or notebooks under the repo.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - scripts/qexec.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install quantumlab
+
+    ```'
+examples:
+- description: Install quantumlab from ClawHub
+  usage: clawhub install quantumlab
+schema_version: '1.0'

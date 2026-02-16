@@ -1,0 +1,60 @@
+name: excalidraw_flowchart
+title: Excalidraw
+version: 1.0.3
+description: Create Excalidraw flowcharts from descriptions. Use when user asks to "create a flowchart", "draw a diagram",
+  "visualize a process", "make a flow diagram", "architecture diagram", or discusses workflow/process visualization. Supports
+  DSL, DOT/Graphviz, and JSON formats.
+metadata:
+  author: swiftlysingh
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - excalidraw
+  - flowchart
+  source: clawhub-community
+  clawhub_slug: excalidraw-flowchart
+  clawhub_path: swiftlysingh/excalidraw-flowchart
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Excalidraw
+
+    # Source: ClawHub community skill by swiftlysingh
+
+    # Install: clawhub install excalidraw-flowchart
+
+    # Path: swiftlysingh/excalidraw-flowchart
+
+
+    ## Description
+
+    Create Excalidraw flowcharts from descriptions. Use when user asks to "create a flowchart", "draw a diagram", "visualize
+    a process", "make a flow diagram", "architecture diagram", or discusses workflow/process visualization. Supports DSL,
+    DOT/Graphviz, and JSON formats.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install excalidraw-flowchart
+
+    ```'
+examples:
+- description: Install Excalidraw from ClawHub
+  usage: clawhub install excalidraw-flowchart
+schema_version: '1.0'

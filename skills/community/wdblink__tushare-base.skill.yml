@@ -1,0 +1,63 @@
+name: tushare
+title: tushare-base
+version: 1.0.0
+description: Fetch Chinese stock and futures market data via Tushare API. Supports stock quotes, futures data, company fundamentals,
+  and macroeconomic indicators. Use when the user needs financial data from Chinese markets. Requires TUSHARE_TOKEN environment
+  variable.
+metadata:
+  author: wdblink
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tushare
+  source: clawhub-community
+  clawhub_slug: tushare-base
+  clawhub_path: wdblink/tushare-base
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# tushare-base
+
+    # Source: ClawHub community skill by wdblink
+
+    # Install: clawhub install tushare-base
+
+    # Path: wdblink/tushare-base
+
+
+    ## Description
+
+    Fetch Chinese stock and futures market data via Tushare API. Supports stock quotes, futures data, company fundamentals,
+    and macroeconomic indicators. Use when the user needs financial data from Chinese markets. Requires TUSHARE_TOKEN environment
+    variable.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/futures_api.md
+
+    - references/stock_api.md
+
+    - scripts/market.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tushare-base
+
+    ```'
+examples:
+- description: Install tushare-base from ClawHub
+  usage: clawhub install tushare-base
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: researchvault
+title: Research Mind
+version: 1.0.0
+description: '"High-velocity research orchestration engine. Manages persistent state, synthesis, and autonomous verification
+  for agents."'
+metadata:
+  author: lraivisto
+  category: Search & Research
+  tags:
+  - search-research
+  - researchvault
+  source: clawhub-community
+  clawhub_slug: research-mind
+  clawhub_path: lraivisto/research-mind
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Research Mind
+
+    # Source: ClawHub community skill by lraivisto
+
+    # Install: clawhub install research-mind
+
+    # Path: lraivisto/research-mind
+
+
+    ## Description
+
+    "High-velocity research orchestration engine. Manages persistent state, synthesis, and autonomous verification for agents."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - main.py
+
+    - pyproject.toml
+
+    - scripts/__init__.py
+
+    - scripts/core.py
+
+    - scripts/db.py
+
+    - scripts/heartbeat_scuttle.py
+
+    - scripts/mcp_server.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install research-mind
+
+    ```'
+examples:
+- description: Install Research Mind from ClawHub
+  usage: clawhub install research-mind
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: calibre-metadata-apply
+title: Calibre Metadata Apply
+version: 1.0.1
+description: Apply metadata updates to existing Calibre books via calibredb over a Content server. Use for controlled metadata
+  edits after target IDs are confirmed by a read-only lookup.
+metadata:
+  author: nextaltair
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - calibre
+  - metadata
+  - apply
+  source: clawhub-community
+  clawhub_slug: calibre-metadata-apply
+  clawhub_path: nextaltair/calibre-metadata-apply
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Calibre Metadata Apply
+
+    # Source: ClawHub community skill by nextaltair
+
+    # Install: clawhub install calibre-metadata-apply
+
+    # Path: nextaltair/calibre-metadata-apply
+
+
+    ## Description
+
+    Apply metadata updates to existing Calibre books via calibredb over a Content server. Use for controlled metadata edits
+    after target IDs are confirmed by a read-only lookup.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/calibredb_apply.mjs
+
+    - scripts/handle_completion.mjs
+
+    - scripts/run_state.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install calibre-metadata-apply
+
+    ```'
+examples:
+- description: Install Calibre Metadata Apply from ClawHub
+  usage: clawhub install calibre-metadata-apply
+schema_version: '1.0'

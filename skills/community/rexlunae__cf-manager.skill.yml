@@ -1,0 +1,57 @@
+name: cloudflare
+title: Cloudflare Manager
+version: 1.0.0
+description: Manage Cloudflare via API — DNS zones and records, page rules, SSL/TLS settings, caching, firewall rules, Workers,
+  and analytics. Free tier includes DNS, CDN, DDoS protection, and SSL.
+metadata:
+  author: rexlunae
+  category: Development & Coding
+  tags:
+  - development-coding
+  - cloudflare
+  source: clawhub-community
+  clawhub_slug: cf-manager
+  clawhub_path: rexlunae/cf-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cloudflare Manager
+
+    # Source: ClawHub community skill by rexlunae
+
+    # Install: clawhub install cf-manager
+
+    # Path: rexlunae/cf-manager
+
+
+    ## Description
+
+    Manage Cloudflare via API — DNS zones and records, page rules, SSL/TLS settings, caching, firewall rules, Workers, and
+    analytics. Free tier includes DNS, CDN, DDoS protection, and SSL.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cloudflare.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cf-manager
+
+    ```'
+examples:
+- description: Install Cloudflare Manager from ClawHub
+  usage: clawhub install cf-manager
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: vincent_-_a_wallet_for_agents
+title: Vincent - Wallet
+version: 1.0.36
+description: Use this skill to safely create a wallet the agent can use for transfers, swaps, and any EVM chain transaction.
+  Also supports raw signing for Ethereum and Solana.
+metadata:
+  author: glitch003
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - vincent
+  - wallet
+  - for
+  - agents
+  source: clawhub-community
+  clawhub_slug: agentwallet
+  clawhub_path: glitch003/agentwallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Vincent - Wallet
+
+    # Source: ClawHub community skill by glitch003
+
+    # Install: clawhub install agentwallet
+
+    # Path: glitch003/agentwallet
+
+
+    ## Description
+
+    Use this skill to safely create a wallet the agent can use for transfers, swaps, and any EVM chain transaction. Also supports
+    raw signing for Ethereum and Solana.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentwallet
+
+    ```'
+examples:
+- description: Install Vincent - Wallet from ClawHub
+  usage: clawhub install agentwallet
+schema_version: '1.0'

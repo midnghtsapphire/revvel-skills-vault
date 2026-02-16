@@ -1,0 +1,74 @@
+name: personality-switcher
+title: Personality Switcher
+version: 0.1.3
+description: Create and switch between AI assistant personalities. Use /personality to list and activate saved personalities.
+  Use /create-personality to design new personas with auto-filled SOUL and IDENTITY. Personalities persist across session
+  boundaries and conversation compacting with automatic heartbeat res
+metadata:
+  author: robb1010
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - personality
+  - switcher
+  source: clawhub-community
+  clawhub_slug: personality-switcher
+  clawhub_path: robb1010/personality-switcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Personality Switcher
+
+    # Source: ClawHub community skill by robb1010
+
+    # Install: clawhub install personality-switcher
+
+    # Path: robb1010/personality-switcher
+
+
+    ## Description
+
+    Create and switch between AI assistant personalities. Use /personality to list and activate saved personalities. Use /create-personality
+    to design new personas with auto-filled SOUL and IDENTITY. Personalities persist across session boundaries and conversation
+    compacting with automatic heartbeat res
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - uninstall.sh
+
+    - references/personality-template.md
+
+    - scripts/cleanup_backups.py
+
+    - scripts/create_personality.py
+
+    - scripts/delete_personality.py
+
+    - scripts/list_personalities.py
+
+    - scripts/register_telegram_commands.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install personality-switcher
+
+    ```'
+examples:
+- description: Install Personality Switcher from ClawHub
+  usage: clawhub install personality-switcher
+schema_version: '1.0'

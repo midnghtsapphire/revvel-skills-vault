@@ -1,0 +1,58 @@
+name: microsoft-docs
+title: Microsoft Learn documentation
+version: 1.0.0
+description: Query official Microsoft documentation to understand concepts, find tutorials, and learn how services work. Use
+  for Azure, .NET, Microsoft 365, Windows, Power Platform, and all Microsoft technologies. Get accurate, current information
+  from learn.microsoft.com and other official Microsoft websites—ar
+metadata:
+  author: pdebruin
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - microsoft
+  - docs
+  source: clawhub-community
+  clawhub_slug: microsoft-docs
+  clawhub_path: pdebruin/microsoft-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Microsoft Learn documentation
+
+    # Source: ClawHub community skill by pdebruin
+
+    # Install: clawhub install microsoft-docs
+
+    # Path: pdebruin/microsoft-docs
+
+
+    ## Description
+
+    Query official Microsoft documentation to understand concepts, find tutorials, and learn how services work. Use for Azure,
+    .NET, Microsoft 365, Windows, Power Platform, and all Microsoft technologies. Get accurate, current information from learn.microsoft.com
+    and other official Microsoft websites—ar
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install microsoft-docs
+
+    ```'
+examples:
+- description: Install Microsoft Learn documentation from ClawHub
+  usage: clawhub install microsoft-docs
+schema_version: '1.0'

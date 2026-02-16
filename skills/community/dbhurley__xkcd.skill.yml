@@ -1,0 +1,59 @@
+name: xkcd
+title: xkcd
+version: 1.0.0
+description: Fetch xkcd comics - latest, random, by number, or search by keyword. Display comics with title, image, and alt
+  text (the hidden joke). Generate custom xkcd-style stick figure comics using image generation. Perfect for daily comic delivery
+  via cron, on-demand requests, or creating original xkcd-inspi
+metadata:
+  author: dbhurley
+  category: Search & Research
+  tags:
+  - search-research
+  - xkcd
+  source: clawhub-community
+  clawhub_slug: xkcd
+  clawhub_path: dbhurley/xkcd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# xkcd
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install xkcd
+
+    # Path: dbhurley/xkcd
+
+
+    ## Description
+
+    Fetch xkcd comics - latest, random, by number, or search by keyword. Display comics with title, image, and alt text (the
+    hidden joke). Generate custom xkcd-style stick figure comics using image generation. Perfect for daily comic delivery
+    via cron, on-demand requests, or creating original xkcd-inspi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/xkcd.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xkcd
+
+    ```'
+examples:
+- description: Install xkcd from ClawHub
+  usage: clawhub install xkcd
+schema_version: '1.0'

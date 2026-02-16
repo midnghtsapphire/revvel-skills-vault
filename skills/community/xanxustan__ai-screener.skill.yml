@@ -1,0 +1,57 @@
+name: intellectia-stock-screener
+title: stock screener
+version: 1.0.0
+description: Intellectia stock/crypto screener for Bullish/Bearish Tomorrow/Week/Month presets. Calls /gateway/v1/stock/screener-list
+  (no auth) and summarizes results.
+metadata:
+  author: xanxustan
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - intellectia
+  - stock
+  - screener
+  source: clawhub-community
+  clawhub_slug: ai-screener
+  clawhub_path: xanxustan/ai-screener
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# stock screener
+
+    # Source: ClawHub community skill by xanxustan
+
+    # Install: clawhub install ai-screener
+
+    # Path: xanxustan/ai-screener
+
+
+    ## Description
+
+    Intellectia stock/crypto screener for Bullish/Bearish Tomorrow/Week/Month presets. Calls /gateway/v1/stock/screener-list
+    (no auth) and summarizes results.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-screener
+
+    ```'
+examples:
+- description: Install stock screener from ClawHub
+  usage: clawhub install ai-screener
+schema_version: '1.0'

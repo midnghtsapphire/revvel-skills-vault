@@ -1,0 +1,55 @@
+name: whoop
+title: WHOOP
+version: 0.1.0
+description: WHOOP morning check-in (recovery/sleep/strain) with suggestions.
+metadata:
+  author: borahm
+  category: General
+  tags:
+  - general
+  - whoop
+  source: clawhub-community
+  clawhub_slug: whoop
+  clawhub_path: borahm/whoop
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WHOOP
+
+    # Source: ClawHub community skill by borahm
+
+    # Install: clawhub install whoop
+
+    # Path: borahm/whoop
+
+
+    ## Description
+
+    WHOOP morning check-in (recovery/sleep/strain) with suggestions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/tokens.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install whoop
+
+    ```'
+examples:
+- description: Install WHOOP from ClawHub
+  usage: clawhub install whoop
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: mamo
+title: Mamo
+version: 1.0.1
+description: Interact with Mamo DeFi yield strategies on Base (Moonwell). Deposit/withdraw USDC, cbBTC, MAMO, or ETH into
+  automated yield strategies. Check APY rates and account status.
+metadata:
+  author: anajuliabit
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - mamo
+  source: clawhub-community
+  clawhub_slug: mamo
+  clawhub_path: anajuliabit/mamo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mamo
+
+    # Source: ClawHub community skill by anajuliabit
+
+    # Install: clawhub install mamo
+
+    # Path: anajuliabit/mamo
+
+
+    ## Description
+
+    Interact with Mamo DeFi yield strategies on Base (Moonwell). Deposit/withdraw USDC, cbBTC, MAMO, or ETH into automated
+    yield strategies. Check APY rates and account status.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - vitest.config.ts
+
+    - references/contracts.md
+
+    - references/mamo-api.md
+
+    - scripts/mamo.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mamo
+
+    ```'
+examples:
+- description: Install Mamo from ClawHub
+  usage: clawhub install mamo
+schema_version: '1.0'

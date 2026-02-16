@@ -1,0 +1,61 @@
+name: related-skill
+title: Related Skill
+version: 0.1.0
+description: '|'
+metadata:
+  author: okaris
+  category: General
+  tags:
+  - general
+  - related
+  - skill
+  - bash(npx skills *)
+  source: clawhub-community
+  clawhub_slug: related-skill
+  clawhub_path: okaris/related-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(npx skills *)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Related Skill
+
+    # Source: ClawHub community skill by okaris
+
+    # Install: clawhub install related-skill
+
+    # Path: okaris/related-skill
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(npx skills *)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install related-skill
+
+    ```'
+examples:
+- description: Install Related Skill from ClawHub
+  usage: clawhub install related-skill
+schema_version: '1.0'

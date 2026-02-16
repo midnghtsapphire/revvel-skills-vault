@@ -1,0 +1,67 @@
+name: agent-team-orchestration
+title: Agent Team Orchestration
+version: 1.0.0
+description: '"Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows.
+  Use when: (1) Setting up a team of 2+ agents with different specializations, (2) Defining task routing and lifecycle (inbox
+  → spec → build → review → done), (3) Creating handoff protocols bet'
+metadata:
+  author: arminnaimi
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - agent
+  - team
+  - orchestration
+  source: clawhub-community
+  clawhub_slug: agent-team-orchestration
+  clawhub_path: arminnaimi/agent-team-orchestration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Team Orchestration
+
+    # Source: ClawHub community skill by arminnaimi
+
+    # Install: clawhub install agent-team-orchestration
+
+    # Path: arminnaimi/agent-team-orchestration
+
+
+    ## Description
+
+    "Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows. Use when:
+    (1) Setting up a team of 2+ agents with different specializations, (2) Defining task routing and lifecycle (inbox → spec
+    → build → review → done), (3) Creating handoff protocols bet
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/communication.md
+
+    - references/patterns.md
+
+    - references/task-lifecycle.md
+
+    - references/team-setup.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-team-orchestration
+
+    ```'
+examples:
+- description: Install Agent Team Orchestration from ClawHub
+  usage: clawhub install agent-team-orchestration
+schema_version: '1.0'

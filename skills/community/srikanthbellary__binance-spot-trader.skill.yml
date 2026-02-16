@@ -1,0 +1,69 @@
+name: binance-spot-trader
+title: Binance Spot Trader
+version: 1.0.0
+description: Autonomous Binance spot trading bot with LLM-powered market analysis. Supports momentum trading, mean reversion,
+  and DCA strategies on any Binance spot pair. Use when user wants to trade on Binance, set up automated crypto trading, build
+  a spot trading bot, or automate DCA buying. Features technical
+metadata:
+  author: srikanthbellary
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - binance
+  - spot
+  - trader
+  source: clawhub-community
+  clawhub_slug: binance-spot-trader
+  clawhub_path: srikanthbellary/binance-spot-trader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Binance Spot Trader
+
+    # Source: ClawHub community skill by srikanthbellary
+
+    # Install: clawhub install binance-spot-trader
+
+    # Path: srikanthbellary/binance-spot-trader
+
+
+    ## Description
+
+    Autonomous Binance spot trading bot with LLM-powered market analysis. Supports momentum trading, mean reversion, and DCA
+    strategies on any Binance spot pair. Use when user wants to trade on Binance, set up automated crypto trading, build a
+    spot trading bot, or automate DCA buying. Features technical
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/binance-api.md
+
+    - references/indicators.md
+
+    - scripts/portfolio.py
+
+    - scripts/setup.sh
+
+    - scripts/trader.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install binance-spot-trader
+
+    ```'
+examples:
+- description: Install Binance Spot Trader from ClawHub
+  usage: clawhub install binance-spot-trader
+schema_version: '1.0'

@@ -1,0 +1,61 @@
+name: windows-ui-automation
+title: Windows UI Automation
+version: 1.0.0
+description: Automate Windows GUI interactions (mouse, keyboard, windows) using PowerShell. Use when the user needs to simulate
+  user input on the desktop, such as moving the cursor, clicking buttons, typing text in non-web apps, or managing window
+  states.
+metadata:
+  author: wwb-daniel
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - windows
+  - automation
+  source: clawhub-community
+  clawhub_slug: windows-ui-automation
+  clawhub_path: wwb-daniel/windows-ui-automation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Windows UI Automation
+
+    # Source: ClawHub community skill by wwb-daniel
+
+    # Install: clawhub install windows-ui-automation
+
+    # Path: wwb-daniel/windows-ui-automation
+
+
+    ## Description
+
+    Automate Windows GUI interactions (mouse, keyboard, windows) using PowerShell. Use when the user needs to simulate user
+    input on the desktop, such as moving the cursor, clicking buttons, typing text in non-web apps, or managing window states.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - keyboard_control.ps1.txt
+
+    - mouse_control.ps1.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install windows-ui-automation
+
+    ```'
+examples:
+- description: Install Windows UI Automation from ClawHub
+  usage: clawhub install windows-ui-automation
+schema_version: '1.0'

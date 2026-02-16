@@ -1,0 +1,62 @@
+name: wyoming-clawdbot
+title: Wyoming Clawdbot
+version: 1.0.2
+description: Wyoming Protocol bridge for Home Assistant voice assistant integration with Clawdbot.
+metadata:
+  author: vglafirov
+  category: General
+  tags:
+  - general
+  - wyoming
+  - clawdbot
+  source: clawhub-community
+  clawhub_slug: wyoming-clawdbot
+  clawhub_path: vglafirov/wyoming-clawdbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wyoming Clawdbot
+
+    # Source: ClawHub community skill by vglafirov
+
+    # Install: clawhub install wyoming-clawdbot
+
+    # Path: vglafirov/wyoming-clawdbot
+
+
+    ## Description
+
+    Wyoming Protocol bridge for Home Assistant voice assistant integration with Clawdbot.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docker-compose.yml
+
+    - requirements.txt
+
+    - wyoming_clawdbot.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wyoming-clawdbot
+
+    ```'
+examples:
+- description: Install Wyoming Clawdbot from ClawHub
+  usage: clawhub install wyoming-clawdbot
+schema_version: '1.0'

@@ -1,0 +1,67 @@
+name: arya-model-router
+title: Arya Model Router
+version: 0.1.0
+description: 'Token-saver router: elige modelo (cheap/default/pro) y usa sub-agentes para tareas pesadas. Incluye compresión/briefing
+  opcional.'
+metadata:
+  author: staratheris
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - arya
+  - model
+  - router
+  source: clawhub-community
+  clawhub_slug: staratheris-arya-model-router
+  clawhub_path: staratheris/staratheris-arya-model-router
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Arya Model Router
+
+    # Source: ClawHub community skill by staratheris
+
+    # Install: clawhub install staratheris-arya-model-router
+
+    # Path: staratheris/staratheris-arya-model-router
+
+
+    ## Description
+
+    Token-saver router: elige modelo (cheap/default/pro) y usa sub-agentes para tareas pesadas. Incluye compresión/briefing
+    opcional.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - brief.py
+
+    - router.py
+
+    - rules.json
+
+    - state.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install staratheris-arya-model-router
+
+    ```'
+examples:
+- description: Install Arya Model Router from ClawHub
+  usage: clawhub install staratheris-arya-model-router
+schema_version: '1.0'

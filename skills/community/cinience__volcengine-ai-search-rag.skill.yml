@@ -1,0 +1,61 @@
+name: volcengine-ai-search-rag
+title: Volcengine Ai Search Rag
+version: 1.0.0
+description: Retrieval and RAG workflow on Volcengine AI stack. Use when users need embedding search, document indexing, top-k
+  retrieval, grounding prompts, or search relevance tuning.
+metadata:
+  author: cinience
+  category: Search & Research
+  tags:
+  - search-research
+  - volcengine
+  - search
+  - rag
+  source: clawhub-community
+  clawhub_slug: volcengine-ai-search-rag
+  clawhub_path: cinience/volcengine-ai-search-rag
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Volcengine Ai Search Rag
+
+    # Source: ClawHub community skill by cinience
+
+    # Install: clawhub install volcengine-ai-search-rag
+
+    # Path: cinience/volcengine-ai-search-rag
+
+
+    ## Description
+
+    Retrieval and RAG workflow on Volcengine AI stack. Use when users need embedding search, document indexing, top-k retrieval,
+    grounding prompts, or search relevance tuning.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/sources.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install volcengine-ai-search-rag
+
+    ```'
+examples:
+- description: Install Volcengine Ai Search Rag from ClawHub
+  usage: clawhub install volcengine-ai-search-rag
+schema_version: '1.0'

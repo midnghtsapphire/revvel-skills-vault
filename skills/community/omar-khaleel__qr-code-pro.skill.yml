@@ -1,0 +1,61 @@
+name: qr-code
+title: Advanced QR Intelligence
+version: 1.0.0
+description: Generate and read QR codes. Use when the user wants to create a QR code from text/URL, or decode/read a QR code
+  from an image file. Supports PNG/JPG output and can read QR codes from screenshots or image files.
+metadata:
+  author: omar-khaleel
+  category: Media & Content
+  tags:
+  - media-content
+  - code
+  source: clawhub-community
+  clawhub_slug: qr-code-pro
+  clawhub_path: omar-khaleel/qr-code-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Advanced QR Intelligence
+
+    # Source: ClawHub community skill by omar-khaleel
+
+    # Install: clawhub install qr-code-pro
+
+    # Path: omar-khaleel/qr-code-pro
+
+
+    ## Description
+
+    Generate and read QR codes. Use when the user wants to create a QR code from text/URL, or decode/read a QR code from an
+    image file. Supports PNG/JPG output and can read QR codes from screenshots or image files.
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/qr_generate.py
+
+    - scripts/qr_read.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qr-code-pro
+
+    ```'
+examples:
+- description: Install Advanced QR Intelligence from ClawHub
+  usage: clawhub install qr-code-pro
+schema_version: '1.0'

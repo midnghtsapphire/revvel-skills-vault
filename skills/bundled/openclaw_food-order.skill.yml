@@ -1,0 +1,40 @@
+name: openclaw_food-order
+title: Food Order
+version: 1.0.0
+description: 'OpenClaw bundled skill: food-order'
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - food-order
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+install: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: food-order\ndescription: Reorder Foodora orders + track ETA/status with ordercli. Never confirm without\
+    \ explicit user approval. Triggers: order food, reorder, track ETA.\nhomepage: https://ordercli.sh\nmetadata: {\"openclaw\"\
+    :{\"emoji\":\"\U0001F961\",\"requires\":{\"bins\":[\"ordercli\"]},\"install\":[{\"id\":\"go\",\"kind\":\"go\",\"module\"\
+    :\"github.com/steipete/ordercli/cmd/ordercli@latest\",\"bins\":[\"ordercli\"],\"label\":\"Install ordercli (go)\"}]}}\n\
+    ---\n\n# Food order (Foodora via ordercli)\n\nGoal: reorder a previous Foodora order safely (preview first; confirm only\
+    \ on explicit user “yes/confirm/place the order”).\n\nHard safety rules\n\n- Never run `ordercli foodora reorder ... --confirm`\
+    \ unless user explicitly confirms placing the order.\n- Prefer preview-only steps first; show what will happen; ask for\
+    \ confirmation.\n- If user is unsure: stop at preview and ask questions.\n\nSetup (once)\n\n- Country: `ordercli foodora\
+    \ countries` → `ordercli foodora config set --country AT`\n- Login (password): `ordercli foodora login --email you@example.com\
+    \ --password-stdin`\n- Login (no password, preferred): `ordercli foodora session chrome --url https://www.foodora.at/\
+    \ --profile \"Default\"`\n\nFind what to reorder\n\n- Recent list: `ordercli foodora history --limit 10`\n- Details: `ordercli\
+    \ foodora history show <orderCode>`\n- If needed (machine-readable): `ordercli foodora history show <orderCode> --json`\n\
+    \nPreview reorder (no cart changes)\n\n- `ordercli foodora reorder <orderCode>`\n\nPlace reorder (cart change; explicit\
+    \ confirmation required)\n\n- Confirm first, then run: `ordercli foodora reorder <orderCode> --confirm`\n- Multiple addresses?\
+    \ Ask user for the right `--address-id` (take from their Foodora account / prior order data) and run:\n  - `ordercli foodora\
+    \ reorder <orderCode> --confirm --address-id <id>`\n\nTrack the order\n\n- ETA/status (active list): `ordercli foodora\
+    \ orders`\n- Live updates: `ordercli foodora orders --watch`\n- Single order detail: `ordercli foodora order <orderCode>`\n\
+    \nDebug / safe testing\n\n- Use a throwaway config: `ordercli --config /tmp/ordercli.json ...`\n"
+examples: []
+schema_version: '1.0'

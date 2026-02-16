@@ -1,0 +1,60 @@
+name: hackathon-manager
+title: Hackathon Manager
+version: 1.1.0
+description: Track hackathon deadlines, manage submission checklists, and monitor progress. Use when managing multiple hackathons,
+  checking what's due soon, marking requirements complete, or extracting hackathon information from URLs to auto-populate
+  deadlines and requirements.
+metadata:
+  author: ntombisol
+  category: System & OS
+  tags:
+  - system-os
+  - hackathon
+  - manager
+  source: clawhub-community
+  clawhub_slug: hackathon-manager
+  clawhub_path: ntombisol/hackathon-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hackathon Manager
+
+    # Source: ClawHub community skill by ntombisol
+
+    # Install: clawhub install hackathon-manager
+
+    # Path: ntombisol/hackathon-manager
+
+
+    ## Description
+
+    Track hackathon deadlines, manage submission checklists, and monitor progress. Use when managing multiple hackathons,
+    checking what''s due soon, marking requirements complete, or extracting hackathon information from URLs to auto-populate
+    deadlines and requirements.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/manager.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hackathon-manager
+
+    ```'
+examples:
+- description: Install Hackathon Manager from ClawHub
+  usage: clawhub install hackathon-manager
+schema_version: '1.0'

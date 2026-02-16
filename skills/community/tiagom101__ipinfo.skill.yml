@@ -1,0 +1,55 @@
+name: ipinfo
+title: IPinfo
+version: 1.0.0
+description: Perform IP geolocation lookups using ipinfo.io API. Convert IP addresses to geographic data including city, region,
+  country, postal code, timezone, and coordinates. Use when geolocating IPs, enriching IP data, or analyzing geographic distribution.
+metadata:
+  author: tiagom101
+  category: Development & Coding
+  tags:
+  - development-coding
+  - ipinfo
+  source: clawhub-community
+  clawhub_slug: ipinfo
+  clawhub_path: tiagom101/ipinfo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# IPinfo
+
+    # Source: ClawHub community skill by tiagom101
+
+    # Install: clawhub install ipinfo
+
+    # Path: tiagom101/ipinfo
+
+
+    ## Description
+
+    Perform IP geolocation lookups using ipinfo.io API. Convert IP addresses to geographic data including city, region, country,
+    postal code, timezone, and coordinates. Use when geolocating IPs, enriching IP data, or analyzing geographic distribution.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ipinfo
+
+    ```'
+examples:
+- description: Install IPinfo from ClawHub
+  usage: clawhub install ipinfo
+schema_version: '1.0'

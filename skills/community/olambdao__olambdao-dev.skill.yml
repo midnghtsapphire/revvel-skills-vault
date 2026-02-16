@@ -1,0 +1,71 @@
+name: clawland
+title: Olambdao Dev
+version: 1.0.0
+description: '"Play on-chain odd/even games on Solana devnet via Clawland. Mint GEM from SOL or USDC, bet odd or even, win
+  2x. Scripts handle wallet setup, minting, and autoplay."'
+metadata:
+  author: olambdao
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawland
+  source: clawhub-community
+  clawhub_slug: olambdao-dev
+  clawhub_path: olambdao/olambdao-dev
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Olambdao Dev
+
+    # Source: ClawHub community skill by olambdao
+
+    # Install: clawhub install olambdao-dev
+
+    # Path: olambdao/olambdao-dev
+
+
+    ## Description
+
+    "Play on-chain odd/even games on Solana devnet via Clawland. Mint GEM from SOL or USDC, bet odd or even, win 2x. Scripts
+    handle wallet setup, minting, and autoplay."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API.md
+
+    - references/SOLANA.md
+
+    - scripts/autoplay.js
+
+    - scripts/balance.js
+
+    - scripts/common.js
+
+    - scripts/link-wallet.js
+
+    - scripts/mint-gems-sol.js
+
+    - scripts/mint-gems.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install olambdao-dev
+
+    ```'
+examples:
+- description: Install Olambdao Dev from ClawHub
+  usage: clawhub install olambdao-dev
+schema_version: '1.0'

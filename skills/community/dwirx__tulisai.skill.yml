@@ -1,0 +1,63 @@
+name: bangunai-blog-manager
+title: tulisai
+version: 0.1.0
+description: Use when managing BangunAI Blog content, automating blog workflows, and writing MDX articles with BangunAI conventions.
+  Supports Obsidian-like features (callouts, mermaid, LaTeX, wikilinks, backlinks, graph view).
+metadata:
+  author: dwirx
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - bangunai
+  - blog
+  - manager
+  source: clawhub-community
+  clawhub_slug: tulisai
+  clawhub_path: dwirx/tulisai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# tulisai
+
+    # Source: ClawHub community skill by dwirx
+
+    # Install: clawhub install tulisai
+
+    # Path: dwirx/tulisai
+
+
+    ## Description
+
+    Use when managing BangunAI Blog content, automating blog workflows, and writing MDX articles with BangunAI conventions.
+    Supports Obsidian-like features (callouts, mermaid, LaTeX, wikilinks, backlinks, graph view).
+
+
+    ## Files
+
+    - EXAMPLES.md
+
+    - INTEGRATION.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tulisai
+
+    ```'
+examples:
+- description: Install tulisai from ClawHub
+  usage: clawhub install tulisai
+schema_version: '1.0'

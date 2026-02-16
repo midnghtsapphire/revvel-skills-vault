@@ -1,0 +1,71 @@
+name: context-optimizer
+title: Context Optimizer
+version: 1.0.0
+description: Second-pass context optimization that surgically removes irrelevant content after initial context load. Use when
+  context is bloated, tokens need reduction, or loaded specs are irrelevant to current task. Achieves 80%+ token reduction
+  through intelligent prompt analysis.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - context
+  - optimizer
+  - read
+  - grep
+  - glob
+  source: clawhub-community
+  clawhub_slug: sw-context-optimizer
+  clawhub_path: anton-abyzov/sw-context-optimizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Grep
+  - Glob
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Optimizer
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-context-optimizer
+
+    # Path: anton-abyzov/sw-context-optimizer
+
+
+    ## Description
+
+    Second-pass context optimization that surgically removes irrelevant content after initial context load. Use when context
+    is bloated, tokens need reduction, or loaded specs are irrelevant to current task. Achieves 80%+ token reduction through
+    intelligent prompt analysis.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Grep, Glob
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-context-optimizer
+
+    ```'
+examples:
+- description: Install Context Optimizer from ClawHub
+  usage: clawhub install sw-context-optimizer
+schema_version: '1.0'

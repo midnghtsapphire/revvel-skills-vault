@@ -1,0 +1,63 @@
+name: fal-image-gen
+title: falimagegen
+version: 1.0.0
+description: '"Call fal.ai model APIs for image generation (text-to-image and image-to-image). Use when a user asks to integrate
+  fal, construct requests, run jobs, handle auth, or return image URLs from fal model APIs."'
+metadata:
+  author: xxmzdxxxm
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - fal
+  - image
+  - gen
+  source: clawhub-community
+  clawhub_slug: falimagegen
+  clawhub_path: xxmzdxxxm/falimagegen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# falimagegen
+
+    # Source: ClawHub community skill by xxmzdxxxm
+
+    # Install: clawhub install falimagegen
+
+    # Path: xxmzdxxxm/falimagegen
+
+
+    ## Description
+
+    "Call fal.ai model APIs for image generation (text-to-image and image-to-image). Use when a user asks to integrate fal,
+    construct requests, run jobs, handle auth, or return image URLs from fal model APIs."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/fal-model-api-checklist.md
+
+    - references/fal-model-examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install falimagegen
+
+    ```'
+examples:
+- description: Install falimagegen from ClawHub
+  usage: clawhub install falimagegen
+schema_version: '1.0'

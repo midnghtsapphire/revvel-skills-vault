@@ -1,0 +1,60 @@
+name: antigravity-balance
+title: Antigravity Balance
+version: 1.0.0
+description: Check Google Antigravity AI model quota/token balance. Use when a user asks about their Antigravity usage, remaining
+  tokens, model limits, quota status, or rate limits. Works by detecting the local Antigravity language server process and
+  querying its API.
+metadata:
+  author: finderstrategy-cyber
+  category: Search & Research
+  tags:
+  - search-research
+  - antigravity
+  - balance
+  source: clawhub-community
+  clawhub_slug: antigravity-balance
+  clawhub_path: finderstrategy-cyber/antigravity-balance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Antigravity Balance
+
+    # Source: ClawHub community skill by finderstrategy-cyber
+
+    # Install: clawhub install antigravity-balance
+
+    # Path: finderstrategy-cyber/antigravity-balance
+
+
+    ## Description
+
+    Check Google Antigravity AI model quota/token balance. Use when a user asks about their Antigravity usage, remaining tokens,
+    model limits, quota status, or rate limits. Works by detecting the local Antigravity language server process and querying
+    its API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/agquota.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install antigravity-balance
+
+    ```'
+examples:
+- description: Install Antigravity Balance from ClawHub
+  usage: clawhub install antigravity-balance
+schema_version: '1.0'

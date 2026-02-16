@@ -1,0 +1,72 @@
+name: openclaw-sec
+title: Openclaw Sec
+version: 0.2.6
+description: AI Agent Security Suite - Real-time protection against prompt injection, command injection, SSRF, path traversal,
+  secrets exposure, and content policy violations
+metadata:
+  author: paolorollo
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - sec
+  source: clawhub-community
+  clawhub_slug: openclaw-sec
+  clawhub_path: paolorollo/openclaw-sec
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Sec
+
+    # Source: ClawHub community skill by paolorollo
+
+    # Install: clawhub install openclaw-sec
+
+    # Path: paolorollo/openclaw-sec
+
+
+    ## Description
+
+    AI Agent Security Suite - Real-time protection against prompt injection, command injection, SSRF, path traversal, secrets
+    exposure, and content policy violations
+
+
+    ## Files
+
+    - .openclaw-sec.example.yaml
+
+    - CONTRIBUTING.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.yaml
+
+    - jest.config.js
+
+    - package-lock.json
+
+    - package.json
+
+    - pnpm-lock.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-sec
+
+    ```'
+examples:
+- description: Install Openclaw Sec from ClawHub
+  usage: clawhub install openclaw-sec
+schema_version: '1.0'

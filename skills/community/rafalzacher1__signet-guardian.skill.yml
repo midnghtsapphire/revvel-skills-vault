@@ -1,0 +1,74 @@
+name: signet-guardian
+title: Signet Guardian
+version: 0.1.0
+description: '"Payment guard middleware for AI agents. Use whenever any skill is about to initiate a payment. Runs a preflight
+  check against the user''s policy (payments enabled, per-transaction limit, monthly cap). Returns ALLOW, DENY, or CONFIRM_REQUIRED.
+  Other payment-capable skills must call signet-preflight b'
+metadata:
+  author: rafalzacher1
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - signet
+  - guardian
+  source: clawhub-community
+  clawhub_slug: signet-guardian
+  clawhub_path: rafalzacher1/signet-guardian
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Signet Guardian
+
+    # Source: ClawHub community skill by rafalzacher1
+
+    # Install: clawhub install signet-guardian
+
+    # Path: rafalzacher1/signet-guardian
+
+
+    ## Description
+
+    "Payment guard middleware for AI agents. Use whenever any skill is about to initiate a payment. Runs a preflight check
+    against the user''s policy (payments enabled, per-transaction limit, monthly cap). Returns ALLOW, DENY, or CONFIRM_REQUIRED.
+    Other payment-capable skills must call signet-preflight b
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - pnpm-lock.yaml
+
+    - test-guardian.sh
+
+    - docs/DASHBOARD_TEST.md
+
+    - openclaw-extension/README.md
+
+    - openclaw-extension/signet-guardian/index.ts
+
+    - references/policy.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install signet-guardian
+
+    ```'
+examples:
+- description: Install Signet Guardian from ClawHub
+  usage: clawhub install signet-guardian
+schema_version: '1.0'

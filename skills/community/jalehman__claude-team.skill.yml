@@ -1,0 +1,58 @@
+name: claude-team
+title: Claude Team
+version: 1.5.0
+description: Orchestrate multiple Claude Code workers via iTerm2 using the claude-team MCP server. Spawn workers with git
+  worktrees, assign beads issues, monitor progress, and coordinate parallel development work.
+metadata:
+  author: jalehman
+  category: Development & Coding
+  tags:
+  - development-coding
+  - claude
+  - team
+  source: clawhub-community
+  clawhub_slug: claude-team
+  clawhub_path: jalehman/claude-team
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claude Team
+
+    # Source: ClawHub community skill by jalehman
+
+    # Install: clawhub install claude-team
+
+    # Path: jalehman/claude-team
+
+
+    ## Description
+
+    Orchestrate multiple Claude Code workers via iTerm2 using the claude-team MCP server. Spawn workers with git worktrees,
+    assign beads issues, monitor progress, and coordinate parallel development work.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claude-team
+
+    ```'
+examples:
+- description: Install Claude Team from ClawHub
+  usage: clawhub install claude-team
+schema_version: '1.0'

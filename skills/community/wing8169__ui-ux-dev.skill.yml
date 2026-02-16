@@ -1,0 +1,63 @@
+name: ui-designer
+title: UI/UX Design and Development
+version: 1.0.0
+description: Generate and serve live HTML/CSS/JS UI designs from natural language prompts. Use when the user asks to design,
+  create, build, or prototype a website, landing page, UI, dashboard, web page, or frontend mockup. Also triggers on requests
+  to update, tweak, or iterate on a previously generated design. R
+metadata:
+  author: wing8169
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - designer
+  source: clawhub-community
+  clawhub_slug: ui-ux-dev
+  clawhub_path: wing8169/ui-ux-dev
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UI/UX Design and Development
+
+    # Source: ClawHub community skill by wing8169
+
+    # Install: clawhub install ui-ux-dev
+
+    # Path: wing8169/ui-ux-dev
+
+
+    ## Description
+
+    Generate and serve live HTML/CSS/JS UI designs from natural language prompts. Use when the user asks to design, create,
+    build, or prototype a website, landing page, UI, dashboard, web page, or frontend mockup. Also triggers on requests to
+    update, tweak, or iterate on a previously generated design. R
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/convert-image.sh
+
+    - scripts/screenshot.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ui-ux-dev
+
+    ```'
+examples:
+- description: Install UI/UX Design and Development from ClawHub
+  usage: clawhub install ui-ux-dev
+schema_version: '1.0'

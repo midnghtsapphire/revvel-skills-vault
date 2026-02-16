@@ -1,0 +1,60 @@
+name: mantis-manager
+title: MantisBT Manager
+version: 0.0.1
+description: Manage Mantis Bug Tracker (issues, projects, users, filters, configs) via the official Mantis REST API. Supports
+  full CRUD operations on issues, projects, users, attachments, notes, tags, relationships, and configuration management.
+  Features dynamic instance switching with context-aware base URL and
+metadata:
+  author: willykinfoussia
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mantis
+  - manager
+  source: clawhub-community
+  clawhub_slug: mantis-manager
+  clawhub_path: willykinfoussia/mantis-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MantisBT Manager
+
+    # Source: ClawHub community skill by willykinfoussia
+
+    # Install: clawhub install mantis-manager
+
+    # Path: willykinfoussia/mantis-manager
+
+
+    ## Description
+
+    Manage Mantis Bug Tracker (issues, projects, users, filters, configs) via the official Mantis REST API. Supports full
+    CRUD operations on issues, projects, users, attachments, notes, tags, relationships, and configuration management. Features
+    dynamic instance switching with context-aware base URL and
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mantis-manager
+
+    ```'
+examples:
+- description: Install MantisBT Manager from ClawHub
+  usage: clawhub install mantis-manager
+schema_version: '1.0'

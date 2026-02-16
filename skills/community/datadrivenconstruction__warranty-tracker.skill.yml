@@ -1,0 +1,54 @@
+name: warranty-tracker
+title: Warranty Tracker
+version: 1.0.0
+description: '"Track and manage construction warranties. Monitor expiration dates, claims, and manufacturer documentation."'
+metadata:
+  author: datadrivenconstruction
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - warranty
+  - tracker
+  source: clawhub-community
+  clawhub_slug: warranty-tracker
+  clawhub_path: datadrivenconstruction/warranty-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Warranty Tracker
+
+    # Source: ClawHub community skill by datadrivenconstruction
+
+    # Install: clawhub install warranty-tracker
+
+    # Path: datadrivenconstruction/warranty-tracker
+
+
+    ## Description
+
+    "Track and manage construction warranties. Monitor expiration dates, claims, and manufacturer documentation."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install warranty-tracker
+
+    ```'
+examples:
+- description: Install Warranty Tracker from ClawHub
+  usage: clawhub install warranty-tracker
+schema_version: '1.0'

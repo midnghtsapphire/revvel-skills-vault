@@ -1,0 +1,55 @@
+name: cfshare
+title: CFShare
+version: 0.1.0
+description: Expose local services, ports, files, or directories as temporary public HTTPS links via Cloudflare Quick Tunnel.
+  Use for sharing local services, sending downloadable files, previewing content, etc.
+metadata:
+  author: ystemsrx
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - cfshare
+  source: clawhub-community
+  clawhub_slug: cfshare
+  clawhub_path: ystemsrx/cfshare
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CFShare
+
+    # Source: ClawHub community skill by ystemsrx
+
+    # Install: clawhub install cfshare
+
+    # Path: ystemsrx/cfshare
+
+
+    ## Description
+
+    Expose local services, ports, files, or directories as temporary public HTTPS links via Cloudflare Quick Tunnel. Use for
+    sharing local services, sending downloadable files, previewing content, etc.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cfshare
+
+    ```'
+examples:
+- description: Install CFShare from ClawHub
+  usage: clawhub install cfshare
+schema_version: '1.0'

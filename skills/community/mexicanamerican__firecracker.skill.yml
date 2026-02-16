@@ -1,0 +1,59 @@
+name: firecracker
+title: Firecracker
+version: 1.0.5
+description: Firecracker microVM skill for OpenClaw.
+metadata:
+  author: mexicanamerican
+  category: General
+  tags:
+  - general
+  - firecracker
+  source: clawhub-community
+  clawhub_slug: firecracker
+  clawhub_path: mexicanamerican/firecracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Firecracker
+
+    # Source: ClawHub community skill by mexicanamerican
+
+    # Install: clawhub install firecracker
+
+    # Path: mexicanamerican/firecracker
+
+
+    ## Description
+
+    Firecracker microVM skill for OpenClaw.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/download.sh
+
+    - scripts/quick-vm.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install firecracker
+
+    ```'
+examples:
+- description: Install Firecracker from ClawHub
+  usage: clawhub install firecracker
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: saa-agent
+title: SAA Agent
+version: 1.0.1
+description: Enables AI agents to generate images using the Character Select Stand Alone App (SAA) image generation backend
+  via command-line interface.
+metadata:
+  author: mirabarukaso
+  category: Media & Content
+  tags:
+  - media-content
+  - saa
+  - agent
+  source: clawhub-community
+  clawhub_slug: saa-agent
+  clawhub_path: mirabarukaso/saa-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SAA Agent
+
+    # Source: ClawHub community skill by mirabarukaso
+
+    # Install: clawhub install saa-agent
+
+    # Path: mirabarukaso/saa-agent
+
+
+    ## Description
+
+    Enables AI agents to generate images using the Character Select Stand Alone App (SAA) image generation backend via command-line
+    interface.
+
+
+    ## Files
+
+    - README_HUMAN.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - saa-agent.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install saa-agent
+
+    ```'
+examples:
+- description: Install SAA Agent from ClawHub
+  usage: clawhub install saa-agent
+schema_version: '1.0'

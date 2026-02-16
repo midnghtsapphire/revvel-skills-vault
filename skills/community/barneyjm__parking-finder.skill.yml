@@ -1,0 +1,58 @@
+name: parking-finder
+title: Parking Finder
+version: 2.0.0
+description: '"Locate parking garages, lots, and street parking near your destination using Camino AI''s location intelligence
+  with AI-powered ranking."'
+metadata:
+  author: barneyjm
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - parking
+  - finder
+  source: clawhub-community
+  clawhub_slug: parking-finder
+  clawhub_path: barneyjm/parking-finder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Parking Finder
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install parking-finder
+
+    # Path: barneyjm/parking-finder
+
+
+    ## Description
+
+    "Locate parking garages, lots, and street parking near your destination using Camino AI''s location intelligence with
+    AI-powered ranking."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/parking-finder.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install parking-finder
+
+    ```'
+examples:
+- description: Install Parking Finder from ClawHub
+  usage: clawhub install parking-finder
+schema_version: '1.0'

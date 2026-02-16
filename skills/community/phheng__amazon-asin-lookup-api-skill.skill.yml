@@ -1,0 +1,63 @@
+name: amazon-asin-lookup-api-skill
+title: Amazon Asin Lookup Api Skill
+version: 0.1.0
+description: 'This skill helps users extract structured product details from Amazon using a specific ASIN (Amazon Standard
+  Identification Number). Use this skill when the user asks to: 1. Get Amazon product details by ASIN; 2. Lookup Amazon product
+  title and price using ASIN; 3. Extract Amazon product ratings and'
+metadata:
+  author: phheng
+  category: Media & Content
+  tags:
+  - media-content
+  - amazon
+  - asin
+  - lookup
+  - api
+  - skill
+  source: clawhub-community
+  clawhub_slug: amazon-asin-lookup-api-skill
+  clawhub_path: phheng/amazon-asin-lookup-api-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Amazon Asin Lookup Api Skill
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install amazon-asin-lookup-api-skill
+
+    # Path: phheng/amazon-asin-lookup-api-skill
+
+
+    ## Description
+
+    This skill helps users extract structured product details from Amazon using a specific ASIN (Amazon Standard Identification
+    Number). Use this skill when the user asks to: 1. Get Amazon product details by ASIN; 2. Lookup Amazon product title and
+    price using ASIN; 3. Extract Amazon product ratings and
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/amazon_asin_lookup_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install amazon-asin-lookup-api-skill
+
+    ```'
+examples:
+- description: Install Amazon Asin Lookup Api Skill from ClawHub
+  usage: clawhub install amazon-asin-lookup-api-skill
+schema_version: '1.0'

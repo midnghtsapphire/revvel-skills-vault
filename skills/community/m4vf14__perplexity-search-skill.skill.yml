@@ -1,0 +1,34 @@
+name: perplexity-search
+title: Perplexity Search Skill
+version: 1.0.0
+description: 'Search the web using Perplexity''s Search API for ranked, real-time web results with advanced filtering. Use
+  when you need to search for current information, market research, trending topics, or when Brave Search is unavailable.
+  Supports recency filtering (day/week/month/year) and returns structured '
+metadata:
+  author: m4vf14
+  category: Search & Research
+  tags:
+  - search-research
+  - perplexity
+  - search
+  source: clawhub-community
+  clawhub_slug: perplexity-search-skill
+  clawhub_path: m4vf14/perplexity-search-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Perplexity Search Skill\n# Source: ClawHub community skill by m4vf14\n# Install: clawhub install perplexity-search-skill\n\
+    # Path: m4vf14/perplexity-search-skill\n\n## Description\nSearch the web using Perplexity's Search API for ranked, real-time\
+    \ web results with advanced filtering. Use when you need to search for current information, market research, trending\
+    \ topics, or when Brave Search is unavailable. Supports recency filtering (day/week/month/year) and returns structured\
+    \ \n\n## Files\n- CHANGELOG.md\n- PUBLISHING.md\n- README.md\n- SECURITY_AUDIT.md\n- SKILL.md\n- _meta.json\n- skill.json\n\
+    - scripts/search.py\n\n## Installation\n```bash\nclawhub install perplexity-search-skill\n```"
+examples:
+- description: Install Perplexity Search Skill from ClawHub
+  usage: clawhub install perplexity-search-skill
+schema_version: '1.0'

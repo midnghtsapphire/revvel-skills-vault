@@ -1,0 +1,59 @@
+name: agent-task-manager
+title: agent-task-manager
+version: 1.0.0
+description: Manages and orchestrates multi-step, stateful agent workflows; handles task dependencies, persistent state, error
+  recovery, and external rate-limiting. Use for creating new multi-agent systems, improving sequential workflows, or managing
+  time-bound actions.
+metadata:
+  author: bobdevibecoder
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - agent
+  - task
+  - manager
+  source: clawhub-community
+  clawhub_slug: bobagent-agent-task-manager
+  clawhub_path: bobdevibecoder/bobagent-agent-task-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# agent-task-manager
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-agent-task-manager
+
+    # Path: bobdevibecoder/bobagent-agent-task-manager
+
+
+    ## Description
+
+    Manages and orchestrates multi-step, stateful agent workflows; handles task dependencies, persistent state, error recovery,
+    and external rate-limiting. Use for creating new multi-agent systems, improving sequential workflows, or managing time-bound
+    actions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-agent-task-manager
+
+    ```'
+examples:
+- description: Install agent-task-manager from ClawHub
+  usage: clawhub install bobagent-agent-task-manager
+schema_version: '1.0'

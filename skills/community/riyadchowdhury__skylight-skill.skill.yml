@@ -1,0 +1,59 @@
+name: skylight
+title: Skylight
+version: 1.0.0
+description: Interact with Skylight Calendar frame - manage calendar events, chores, lists, task box items, and rewards. Use
+  when the user wants to view/create calendar events, manage family chores, work with shopping or to-do lists, check reward
+  points, or interact with their Skylight smart display.
+metadata:
+  author: riyadchowdhury
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - skylight
+  source: clawhub-community
+  clawhub_slug: skylight-skill
+  clawhub_path: riyadchowdhury/skylight-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skylight
+
+    # Source: ClawHub community skill by riyadchowdhury
+
+    # Install: clawhub install skylight-skill
+
+    # Path: riyadchowdhury/skylight-skill
+
+
+    ## Description
+
+    Interact with Skylight Calendar frame - manage calendar events, chores, lists, task box items, and rewards. Use when the
+    user wants to view/create calendar events, manage family chores, work with shopping or to-do lists, check reward points,
+    or interact with their Skylight smart display.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skylight-skill
+
+    ```'
+examples:
+- description: Install Skylight from ClawHub
+  usage: clawhub install skylight-skill
+schema_version: '1.0'

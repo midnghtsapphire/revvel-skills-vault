@@ -1,0 +1,75 @@
+name: jira-multi-project-mapper
+title: Jira Multi Project Mapper
+version: 1.0.0
+description: Expert in mapping SpecWeave specs to multiple JIRA projects with intelligent project detection and cross-project
+  coordination. Use when syncing to multiple JIRA projects (project-per-team, component-based), or managing bidirectional
+  sync across team boundaries.
+metadata:
+  author: anton-abyzov
+  category: Utilities
+  tags:
+  - utilities
+  - jira
+  - multi
+  - project
+  - mapper
+  - read
+  - write
+  - edit
+  - bash
+  - glob
+  source: clawhub-community
+  clawhub_slug: sw-jira-multi-project-mapper
+  clawhub_path: anton-abyzov/sw-jira-multi-project-mapper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jira Multi Project Mapper
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-jira-multi-project-mapper
+
+    # Path: anton-abyzov/sw-jira-multi-project-mapper
+
+
+    ## Description
+
+    Expert in mapping SpecWeave specs to multiple JIRA projects with intelligent project detection and cross-project coordination.
+    Use when syncing to multiple JIRA projects (project-per-team, component-based), or managing bidirectional sync across
+    team boundaries.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Write, Edit, Bash, Glob
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-jira-multi-project-mapper
+
+    ```'
+examples:
+- description: Install Jira Multi Project Mapper from ClawHub
+  usage: clawhub install sw-jira-multi-project-mapper
+schema_version: '1.0'

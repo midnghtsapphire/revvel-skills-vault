@@ -1,0 +1,33 @@
+name: primer
+title: The Primer
+version: 1.1.2
+description: 'Bring Neal Stephenson''s "Young Lady''s Illustrated Primer" from The Diamond Age to life. Transform your AI
+  from a helpful butler into a subversive tutor — one that adapts to your life stage, holds you accountable to who you''re
+  becoming, and has permission to challenge you. Use when setting up growth '
+metadata:
+  author: brucko
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - primer
+  source: clawhub-community
+  clawhub_slug: primer
+  clawhub_path: brucko/primer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# The Primer\n# Source: ClawHub community skill by brucko\n# Install: clawhub install primer\n# Path: brucko/primer\n\
+    \n## Description\nBring Neal Stephenson's \"Young Lady's Illustrated Primer\" from The Diamond Age to life. Transform\
+    \ your AI from a helpful butler into a subversive tutor — one that adapts to your life stage, holds you accountable to\
+    \ who you're becoming, and has permission to challenge you. Use when setting up growth \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    - assets/PRIMER-TEMPLATE.md\n- references/life-stages.md\n- references/miranda-protocol.md\n- references/permissions.md\n\
+    - scripts/setup_primer.py\n\n## Installation\n```bash\nclawhub install primer\n```"
+examples:
+- description: Install The Primer from ClawHub
+  usage: clawhub install primer
+schema_version: '1.0'

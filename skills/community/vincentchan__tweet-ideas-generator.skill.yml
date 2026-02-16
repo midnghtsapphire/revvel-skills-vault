@@ -1,0 +1,59 @@
+name: tweet-ideas-generator
+title: Tweet Ideas Generator
+version: 1.0.0
+description: Generates 60 high-impact tweet ideas from reference content across 5 categories. Use when someone wants to extract
+  engaging short-form statements from content for Twitter/X, organized by harsh advice, quotes, pain points, counterintuitive
+  truths, and key insights.
+metadata:
+  author: vincentchan
+  category: Social Media
+  tags:
+  - social-media
+  - tweet
+  - ideas
+  - generator
+  source: clawhub-community
+  clawhub_slug: tweet-ideas-generator
+  clawhub_path: vincentchan/tweet-ideas-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tweet Ideas Generator
+
+    # Source: ClawHub community skill by vincentchan
+
+    # Install: clawhub install tweet-ideas-generator
+
+    # Path: vincentchan/tweet-ideas-generator
+
+
+    ## Description
+
+    Generates 60 high-impact tweet ideas from reference content across 5 categories. Use when someone wants to extract engaging
+    short-form statements from content for Twitter/X, organized by harsh advice, quotes, pain points, counterintuitive truths,
+    and key insights.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tweet-ideas-generator
+
+    ```'
+examples:
+- description: Install Tweet Ideas Generator from ClawHub
+  usage: clawhub install tweet-ideas-generator
+schema_version: '1.0'

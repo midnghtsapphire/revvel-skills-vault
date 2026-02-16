@@ -1,0 +1,62 @@
+name: openclaw-action
+title: Openclaw Action
+version: 1.0.0
+description: '"GitHub Action for automated security scanning of agent workspaces. Detects exposed secrets, prompt/shell injection,
+  and data exfiltration patterns in PRs and commits."'
+metadata:
+  author: atlaspa
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - action
+  source: clawhub-community
+  clawhub_slug: openclaw-action
+  clawhub_path: atlaspa/openclaw-action
+  user_invocable: false
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Action
+
+    # Source: ClawHub community skill by atlaspa
+
+    # Install: clawhub install openclaw-action
+
+    # Path: atlaspa/openclaw-action
+
+
+    ## Description
+
+    "GitHub Action for automated security scanning of agent workspaces. Detects exposed secrets, prompt/shell injection, and
+    data exfiltration patterns in PRs and commits."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - action.yml
+
+    - scripts/scan.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-action
+
+    ```'
+examples:
+- description: Install Openclaw Action from ClawHub
+  usage: clawhub install openclaw-action
+schema_version: '1.0'

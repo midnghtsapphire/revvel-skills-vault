@@ -1,0 +1,59 @@
+name: remind-me
+title: Remind Me
+version: 2.1.0
+description: Set reminders using natural language. Automatically creates one-time cron jobs and logs to markdown.
+metadata:
+  author: julianengel
+  category: Utilities
+  tags:
+  - utilities
+  - remind
+  source: clawhub-community
+  clawhub_slug: remind-me
+  clawhub_path: julianengel/remind-me
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Remind Me
+
+    # Source: ClawHub community skill by julianengel
+
+    # Install: clawhub install remind-me
+
+    # Path: julianengel/remind-me
+
+
+    ## Description
+
+    Set reminders using natural language. Automatically creates one-time cron jobs and logs to markdown.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - check-reminders.sh
+
+    - create-recurring.sh
+
+    - create-reminder.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install remind-me
+
+    ```'
+examples:
+- description: Install Remind Me from ClawHub
+  usage: clawhub install remind-me
+schema_version: '1.0'

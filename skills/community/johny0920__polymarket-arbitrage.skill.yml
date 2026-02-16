@@ -1,0 +1,74 @@
+name: polymarket-arbitrage
+title: Polymarket Arbitrage
+version: 0.1.0
+description: Monitor and execute arbitrage opportunities on Polymarket prediction markets. Detects math arbitrage (multi-outcome
+  probability mismatches), cross-market arbitrage (same event different prices), and orderbook inefficiencies. Use when user
+  wants to find or trade Polymarket arbitrage, monitor predicti
+metadata:
+  author: johny0920
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - polymarket
+  - arbitrage
+  source: clawhub-community
+  clawhub_slug: polymarket-arbitrage
+  clawhub_path: johny0920/polymarket-arbitrage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Polymarket Arbitrage
+
+    # Source: ClawHub community skill by johny0920
+
+    # Install: clawhub install polymarket-arbitrage
+
+    # Path: johny0920/polymarket-arbitrage
+
+
+    ## Description
+
+    Monitor and execute arbitrage opportunities on Polymarket prediction markets. Detects math arbitrage (multi-outcome probability
+    mismatches), cross-market arbitrage (same event different prices), and orderbook inefficiencies. Use when user wants to
+    find or trade Polymarket arbitrage, monitor predicti
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - arbs.json
+
+    - test_markets.json
+
+    - polymarket_data/arbs.json
+
+    - polymarket_data/markets.json
+
+    - references/arbitrage_types.md
+
+    - references/getting_started.md
+
+    - scripts/detect_arbitrage.py
+
+    - scripts/fetch_markets.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install polymarket-arbitrage
+
+    ```'
+examples:
+- description: Install Polymarket Arbitrage from ClawHub
+  usage: clawhub install polymarket-arbitrage
+schema_version: '1.0'

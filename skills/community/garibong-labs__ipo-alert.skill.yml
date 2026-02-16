@@ -1,0 +1,56 @@
+name: ipo-alert
+title: Ipo Alert
+version: 0.1.2
+description: 한국 공모주 청약/신규상장 일정 알림. 38.co.kr에서 데이터 수집, D-1/당일 알림, 주간 요약 제공.
+metadata:
+  author: garibong-labs
+  category: General
+  tags:
+  - general
+  - ipo
+  - alert
+  source: clawhub-community
+  clawhub_slug: ipo-alert
+  clawhub_path: garibong-labs/ipo-alert
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ipo Alert
+
+    # Source: ClawHub community skill by garibong-labs
+
+    # Install: clawhub install ipo-alert
+
+    # Path: garibong-labs/ipo-alert
+
+
+    ## Description
+
+    한국 공모주 청약/신규상장 일정 알림. 38.co.kr에서 데이터 수집, D-1/당일 알림, 주간 요약 제공.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - check_ipo.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ipo-alert
+
+    ```'
+examples:
+- description: Install Ipo Alert from ClawHub
+  usage: clawhub install ipo-alert
+schema_version: '1.0'

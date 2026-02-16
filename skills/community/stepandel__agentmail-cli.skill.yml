@@ -1,0 +1,56 @@
+name: agentmail-cli
+title: agentmail-cli
+version: 1.0.0
+description: Manage email inboxes and messages via AgentMail API. Create disposable inboxes, send/receive emails, and list
+  messages. Use when the agent needs to send or receive email, create temporary inboxes, or check for incoming messages.
+metadata:
+  author: stepandel
+  category: Communication
+  tags:
+  - communication
+  - agentmail
+  - cli
+  source: clawhub-community
+  clawhub_slug: agentmail-cli
+  clawhub_path: stepandel/agentmail-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# agentmail-cli
+
+    # Source: ClawHub community skill by stepandel
+
+    # Install: clawhub install agentmail-cli
+
+    # Path: stepandel/agentmail-cli
+
+
+    ## Description
+
+    Manage email inboxes and messages via AgentMail API. Create disposable inboxes, send/receive emails, and list messages.
+    Use when the agent needs to send or receive email, create temporary inboxes, or check for incoming messages.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentmail-cli
+
+    ```'
+examples:
+- description: Install agentmail-cli from ClawHub
+  usage: clawhub install agentmail-cli
+schema_version: '1.0'

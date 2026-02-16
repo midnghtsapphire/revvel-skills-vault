@@ -1,0 +1,62 @@
+name: aws-infra
+title: AWS Infra
+version: 1.0.0
+description: Chat-based AWS infrastructure assistance using AWS CLI and console context. Use for querying, auditing, and monitoring
+  AWS resources (EC2, S3, IAM, Lambda, ECS/EKS, RDS, CloudWatch, billing, etc.), and for proposing safe changes with explicit
+  confirmation before any write/destructive action.
+metadata:
+  author: bmdhodl
+  category: Communication
+  tags:
+  - communication
+  - aws
+  - infra
+  source: clawhub-community
+  clawhub_slug: aws-infra
+  clawhub_path: bmdhodl/aws-infra
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AWS Infra
+
+    # Source: ClawHub community skill by bmdhodl
+
+    # Install: clawhub install aws-infra
+
+    # Path: bmdhodl/aws-infra
+
+
+    ## Description
+
+    Chat-based AWS infrastructure assistance using AWS CLI and console context. Use for querying, auditing, and monitoring
+    AWS resources (EC2, S3, IAM, Lambda, ECS/EKS, RDS, CloudWatch, billing, etc.), and for proposing safe changes with explicit
+    confirmation before any write/destructive action.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/icon.svg
+
+    - references/aws-cli-queries.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aws-infra
+
+    ```'
+examples:
+- description: Install AWS Infra from ClawHub
+  usage: clawhub install aws-infra
+schema_version: '1.0'

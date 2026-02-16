@@ -1,0 +1,60 @@
+name: service-connect
+title: Service Connect
+version: 1.0.0
+description: Smart external service connection orchestrator that automatically selects optimal connection method (MCP → REST
+  API → SDK → CLI → Direct). Use when connecting to Supabase, Cloudflare, PostgreSQL, MongoDB, Redis, or AWS services. Follows
+  path of least resistance to avoid connection issues.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - service
+  - connect
+  source: clawhub-community
+  clawhub_slug: sw-service-connect
+  clawhub_path: anton-abyzov/sw-service-connect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Service Connect
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-service-connect
+
+    # Path: anton-abyzov/sw-service-connect
+
+
+    ## Description
+
+    Smart external service connection orchestrator that automatically selects optimal connection method (MCP → REST API →
+    SDK → CLI → Direct). Use when connecting to Supabase, Cloudflare, PostgreSQL, MongoDB, Redis, or AWS services. Follows
+    path of least resistance to avoid connection issues.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-service-connect
+
+    ```'
+examples:
+- description: Install Service Connect from ClawHub
+  usage: clawhub install sw-service-connect
+schema_version: '1.0'

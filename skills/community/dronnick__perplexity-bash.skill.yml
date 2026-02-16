@@ -1,0 +1,61 @@
+name: perplexity
+title: Perplexity Search (Bash)
+version: 1.1.0
+description: Use Perplexity API for web-grounded AI search and research. Use when user needs up-to-date information, multi-step
+  reasoning with web citations, exhaustive research with source references, factual queries with current events, or competitive
+  analysis. Default when user mentions Perplexity, needs curr
+metadata:
+  author: dronnick
+  category: Search & Research
+  tags:
+  - search-research
+  - perplexity
+  source: clawhub-community
+  clawhub_slug: perplexity-bash
+  clawhub_path: dronnick/perplexity-bash
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Perplexity Search (Bash)
+
+    # Source: ClawHub community skill by dronnick
+
+    # Install: clawhub install perplexity-bash
+
+    # Path: dronnick/perplexity-bash
+
+
+    ## Description
+
+    Use Perplexity API for web-grounded AI search and research. Use when user needs up-to-date information, multi-step reasoning
+    with web citations, exhaustive research with source references, factual queries with current events, or competitive analysis.
+    Default when user mentions Perplexity, needs curr
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/perplexity_search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install perplexity-bash
+
+    ```'
+examples:
+- description: Install Perplexity Search (Bash) from ClawHub
+  usage: clawhub install perplexity-bash
+schema_version: '1.0'

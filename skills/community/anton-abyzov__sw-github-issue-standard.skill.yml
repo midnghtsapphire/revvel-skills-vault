@@ -1,0 +1,59 @@
+name: github-issue-standard
+title: Github Issue Standard
+version: 1.0.0
+description: Mandatory format standard for ALL GitHub issues created by SpecWeave with checkable acceptance criteria and proper
+  metadata. Use when creating GitHub issues, formatting issue content, or ensuring consistent issue structure. Covers user
+  stories, epics, features, and increments.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - github
+  - issue
+  - standard
+  source: clawhub-community
+  clawhub_slug: sw-github-issue-standard
+  clawhub_path: anton-abyzov/sw-github-issue-standard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Github Issue Standard
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-github-issue-standard
+
+    # Path: anton-abyzov/sw-github-issue-standard
+
+
+    ## Description
+
+    Mandatory format standard for ALL GitHub issues created by SpecWeave with checkable acceptance criteria and proper metadata.
+    Use when creating GitHub issues, formatting issue content, or ensuring consistent issue structure. Covers user stories,
+    epics, features, and increments.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-github-issue-standard
+
+    ```'
+examples:
+- description: Install Github Issue Standard from ClawHub
+  usage: clawhub install sw-github-issue-standard
+schema_version: '1.0'

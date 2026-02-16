@@ -1,0 +1,61 @@
+name: eachlabs-image-generation
+title: Eachlabs Image Generation
+version: 0.1.2
+description: Generate new images from text prompts using EachLabs AI models. Supports text-to-image with multiple model families
+  including Flux, GPT Image, Gemini, Imagen, Seedream, and more. Use when the user wants to create new images from text. For
+  editing existing images, see eachlabs-image-edit.
+metadata:
+  author: eftalyurtseven
+  category: Media & Content
+  tags:
+  - media-content
+  - eachlabs
+  - image
+  - generation
+  source: clawhub-community
+  clawhub_slug: eachlabs-image-generation
+  clawhub_path: eftalyurtseven/eachlabs-image-generation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Eachlabs Image Generation
+
+    # Source: ClawHub community skill by eftalyurtseven
+
+    # Install: clawhub install eachlabs-image-generation
+
+    # Path: eftalyurtseven/eachlabs-image-generation
+
+
+    ## Description
+
+    Generate new images from text prompts using EachLabs AI models. Supports text-to-image with multiple model families including
+    Flux, GPT Image, Gemini, Imagen, Seedream, and more. Use when the user wants to create new images from text. For editing
+    existing images, see eachlabs-image-edit.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/MODELS.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install eachlabs-image-generation
+
+    ```'
+examples:
+- description: Install Eachlabs Image Generation from ClawHub
+  usage: clawhub install eachlabs-image-generation
+schema_version: '1.0'

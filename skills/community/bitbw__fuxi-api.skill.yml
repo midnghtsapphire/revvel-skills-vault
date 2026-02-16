@@ -1,0 +1,56 @@
+name: fuxi-api
+title: fuxi-api
+version: 1.0.1
+description: 使用 Vanna AI SQL 问答接口（伏羲环境）帮用户用自然语言查询伏羲数据库，例如“查询伏羲上的张博文准驾等级”等驾驶相关业务数据。
+metadata:
+  author: bitbw
+  category: Development & Coding
+  tags:
+  - development-coding
+  - fuxi
+  - api
+  source: clawhub-community
+  clawhub_slug: fuxi-api
+  clawhub_path: bitbw/fuxi-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# fuxi-api
+
+    # Source: ClawHub community skill by bitbw
+
+    # Install: clawhub install fuxi-api
+
+    # Path: bitbw/fuxi-api
+
+
+    ## Description
+
+    使用 Vanna AI SQL 问答接口（伏羲环境）帮用户用自然语言查询伏羲数据库，例如“查询伏羲上的张博文准驾等级”等驾驶相关业务数据。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ask.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fuxi-api
+
+    ```'
+examples:
+- description: Install fuxi-api from ClawHub
+  usage: clawhub install fuxi-api
+schema_version: '1.0'

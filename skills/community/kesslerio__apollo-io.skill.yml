@@ -1,0 +1,69 @@
+name: apollo-io
+title: Apollo.io Sales Intelligence
+version: 1.0.0
+description: 'Apollo.io sales intelligence integration for lead discovery, contact enrichment, and company research. Search
+  210M+ contacts and 35M+ companies. Use when finding prospects, enriching contact data, or researching companies. Keywords:
+  apollo, sales intelligence, lead gen, prospecting, contact enrichme'
+metadata:
+  author: kesslerio
+  category: Search & Research
+  tags:
+  - search-research
+  - apollo
+  source: clawhub-community
+  clawhub_slug: apollo-io
+  clawhub_path: kesslerio/apollo-io
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apollo.io Sales Intelligence
+
+    # Source: ClawHub community skill by kesslerio
+
+    # Install: clawhub install apollo-io
+
+    # Path: kesslerio/apollo-io
+
+
+    ## Description
+
+    Apollo.io sales intelligence integration for lead discovery, contact enrichment, and company research. Search 210M+ contacts
+    and 35M+ companies. Use when finding prospects, enriching contact data, or researching companies. Keywords: apollo, sales
+    intelligence, lead gen, prospecting, contact enrichme
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - apollo.py
+
+    - scripts/enrich_company.py
+
+    - scripts/enrich_person.py
+
+    - scripts/search_companies.py
+
+    - scripts/search_people.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apollo-io
+
+    ```'
+examples:
+- description: Install Apollo.io Sales Intelligence from ClawHub
+  usage: clawhub install apollo-io
+schema_version: '1.0'

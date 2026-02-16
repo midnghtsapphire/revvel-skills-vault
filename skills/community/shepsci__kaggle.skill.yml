@@ -1,0 +1,37 @@
+name: kaggle
+title: Kaggle
+version: 1.0.1
+description: '"Unified Kaggle skill. Use when the user mentions kaggle, kaggle.com, Kaggle competitions, datasets, models,
+  notebooks, GPUs, TPUs, badges, or anything Kaggle-related. Handles account setup, competition reports, dataset/model downloads,
+  notebook execution, competition submissions, badge collection, '
+metadata:
+  author: shepsci
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - kaggle
+  - bash read webfetch
+  source: clawhub-community
+  clawhub_slug: kaggle
+  clawhub_path: shepsci/kaggle
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash Read WebFetch
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Kaggle\n# Source: ClawHub community skill by shepsci\n# Install: clawhub install kaggle\n# Path: shepsci/kaggle\n\
+    \n## Description\n\"Unified Kaggle skill. Use when the user mentions kaggle, kaggle.com, Kaggle competitions, datasets,\
+    \ models, notebooks, GPUs, TPUs, badges, or anything Kaggle-related. Handles account setup, competition reports, dataset/model\
+    \ downloads, notebook execution, competition submissions, badge collection, \n\n## Files\n- SKILL.md\n- _meta.json\n-\
+    \ modules/badge-collector/README.md\n- modules/badge-collector/references/badge-catalog.md\n- modules/badge-collector/scripts/badge_registry.py\n\
+    - modules/badge-collector/scripts/badge_tracker.py\n- modules/badge-collector/scripts/orchestrator.py\n- modules/badge-collector/scripts/phase_1_instant_api.py\n\
+    - modules/badge-collector/scripts/phase_2_competition.py\n- modules/badge-collector/scripts/phase_3_pipeline.py\n\n##\
+    \ Allowed Tools\nBash Read WebFetch\n\n## Installation\n```bash\nclawhub install kaggle\n```"
+examples:
+- description: Install Kaggle from ClawHub
+  usage: clawhub install kaggle
+schema_version: '1.0'

@@ -1,0 +1,67 @@
+name: sheetsmith
+title: Sheetsmith
+version: 1.0.1
+description: Pandas-powered CSV & Excel management for quick previews, summaries, filtering, transforming, and format conversions.
+  Use this skill whenever you need to inspect spreadsheet files, compute column-level summaries, apply queries or expressions,
+  or export cleansed data to a new CSV/TSV/XLSX output with
+metadata:
+  author: crimsondevil333333
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - sheetsmith
+  source: clawhub-community
+  clawhub_slug: sheetsmith
+  clawhub_path: crimsondevil333333/sheetsmith
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sheetsmith
+
+    # Source: ClawHub community skill by crimsondevil333333
+
+    # Install: clawhub install sheetsmith
+
+    # Path: crimsondevil333333/sheetsmith
+
+
+    ## Description
+
+    Pandas-powered CSV & Excel management for quick previews, summaries, filtering, transforming, and format conversions.
+    Use this skill whenever you need to inspect spreadsheet files, compute column-level summaries, apply queries or expressions,
+    or export cleansed data to a new CSV/TSV/XLSX output with
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/usage.md
+
+    - scripts/sheetsmith.py
+
+    - tests/test_sheetsmith.py
+
+    - tests/data/test.csv
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sheetsmith
+
+    ```'
+examples:
+- description: Install Sheetsmith from ClawHub
+  usage: clawhub install sheetsmith
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: swiss-transport
+title: Swiss Public Transport
+version: 1.0.0
+description: Swiss Public Transport real-time information. Use when querying train, bus, tram, or boat schedules in Switzerland.
+  Supports station search, departure boards, journey planning from A to B, and connection details. Use for queries like "When
+  does the next train leave from Zürich?" or "How do I get fro
+metadata:
+  author: xenofex7
+  category: Search & Research
+  tags:
+  - search-research
+  - swiss
+  - transport
+  source: clawhub-community
+  clawhub_slug: swiss-transport
+  clawhub_path: xenofex7/swiss-transport
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Swiss Public Transport
+
+    # Source: ClawHub community skill by xenofex7
+
+    # Install: clawhub install swiss-transport
+
+    # Path: xenofex7/swiss-transport
+
+
+    ## Description
+
+    Swiss Public Transport real-time information. Use when querying train, bus, tram, or boat schedules in Switzerland. Supports
+    station search, departure boards, journey planning from A to B, and connection details. Use for queries like "When does
+    the next train leave from Zürich?" or "How do I get fro
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/journey.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install swiss-transport
+
+    ```'
+examples:
+- description: Install Swiss Public Transport from ClawHub
+  usage: clawhub install swiss-transport
+schema_version: '1.0'

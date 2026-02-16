@@ -1,0 +1,60 @@
+name: openclaw-setup
+title: OpenClaw Setup on AWS (Free Tier) - Memory Upgrade
+version: 1.0.0
+description: Set up a complete OpenClaw personal AI assistant from scratch using Claude Code. Walks through AWS provisioning,
+  OpenClaw installation, Telegram bot creation, API configuration, Google Workspace integration, security hardening, and all
+  power features. Give this to Claude Code and it handles the rest
+metadata:
+  author: j540
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - setup
+  source: clawhub-community
+  clawhub_slug: openclaw-setup
+  clawhub_path: j540/openclaw-setup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Setup on AWS (Free Tier) - Memory Upgrade
+
+    # Source: ClawHub community skill by j540
+
+    # Install: clawhub install openclaw-setup
+
+    # Path: j540/openclaw-setup
+
+
+    ## Description
+
+    Set up a complete OpenClaw personal AI assistant from scratch using Claude Code. Walks through AWS provisioning, OpenClaw
+    installation, Telegram bot creation, API configuration, Google Workspace integration, security hardening, and all power
+    features. Give this to Claude Code and it handles the rest
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/openclaw-installation-human-guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-setup
+
+    ```'
+examples:
+- description: Install OpenClaw Setup on AWS (Free Tier) - Memory Upgrade from ClawHub
+  usage: clawhub install openclaw-setup
+schema_version: '1.0'

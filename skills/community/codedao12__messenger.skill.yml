@@ -1,0 +1,69 @@
+name: messenger
+title: Messenger
+version: 1.0.1
+description: OpenClaw skill for Facebook Messenger Platform workflows, including messaging, webhooks, and Page inbox operations
+  using direct HTTPS requests.
+metadata:
+  author: codedao12
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - messenger
+  source: clawhub-community
+  clawhub_slug: messenger
+  clawhub_path: codedao12/messenger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Messenger
+
+    # Source: ClawHub community skill by codedao12
+
+    # Install: clawhub install messenger
+
+    # Path: codedao12/messenger
+
+
+    ## Description
+
+    OpenClaw skill for Facebook Messenger Platform workflows, including messaging, webhooks, and Page inbox operations using
+    direct HTTPS requests.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/conversation-patterns.md
+
+    - references/messaging.md
+
+    - references/messenger-api-overview.md
+
+    - references/permissions-and-tokens.md
+
+    - references/request-templates.md
+
+    - references/webhook-event-map.md
+
+    - references/webhooks.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install messenger
+
+    ```'
+examples:
+- description: Install Messenger from ClawHub
+  usage: clawhub install messenger
+schema_version: '1.0'

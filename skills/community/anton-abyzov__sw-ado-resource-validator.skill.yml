@@ -1,0 +1,72 @@
+name: ado-resource-validator
+title: Ado Resource Validator
+version: 1.0.0
+description: Validates Azure DevOps projects, area paths, and teams exist with auto-creation of missing resources. Use when
+  setting up ADO integration, configuring .env variables, or troubleshooting missing project errors. Supports project-per-team,
+  area-path-based, and team-based strategies.
+metadata:
+  author: anton-abyzov
+  category: General
+  tags:
+  - general
+  - ado
+  - resource
+  - validator
+  - read
+  - bash
+  - write
+  - edit
+  source: clawhub-community
+  clawhub_slug: sw-ado-resource-validator
+  clawhub_path: anton-abyzov/sw-ado-resource-validator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Bash
+  - Write
+  - Edit
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ado Resource Validator
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-ado-resource-validator
+
+    # Path: anton-abyzov/sw-ado-resource-validator
+
+
+    ## Description
+
+    Validates Azure DevOps projects, area paths, and teams exist with auto-creation of missing resources. Use when setting
+    up ADO integration, configuring .env variables, or troubleshooting missing project errors. Supports project-per-team,
+    area-path-based, and team-based strategies.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Bash, Write, Edit
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-ado-resource-validator
+
+    ```'
+examples:
+- description: Install Ado Resource Validator from ClawHub
+  usage: clawhub install sw-ado-resource-validator
+schema_version: '1.0'

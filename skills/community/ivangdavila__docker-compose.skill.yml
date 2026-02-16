@@ -1,0 +1,54 @@
+name: docker_compose
+title: Docker Compose
+version: 1.0.0
+description: Define multi-container applications with proper dependency handling, networking, and volume management.
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - docker
+  - compose
+  source: clawhub-community
+  clawhub_slug: docker-compose
+  clawhub_path: ivangdavila/docker-compose
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docker Compose
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install docker-compose
+
+    # Path: ivangdavila/docker-compose
+
+
+    ## Description
+
+    Define multi-container applications with proper dependency handling, networking, and volume management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install docker-compose
+
+    ```'
+examples:
+- description: Install Docker Compose from ClawHub
+  usage: clawhub install docker-compose
+schema_version: '1.0'

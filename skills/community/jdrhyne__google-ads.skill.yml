@@ -1,0 +1,62 @@
+name: google-ads
+title: Google Ads
+version: 1.0.3
+description: '"Query, audit, and optimize Google Ads campaigns. Supports two modes: (1) API mode for bulk operations with
+  google-ads Python SDK, (2) Browser automation mode for users without API access - just attach a browser tab to ads.google.com.
+  Use when asked to check ad performance, pause campaigns/keywords,'
+metadata:
+  author: jdrhyne
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - ads
+  source: clawhub-community
+  clawhub_slug: google-ads
+  clawhub_path: jdrhyne/google-ads
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Ads
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install google-ads
+
+    # Path: jdrhyne/google-ads
+
+
+    ## Description
+
+    "Query, audit, and optimize Google Ads campaigns. Supports two modes: (1) API mode for bulk operations with google-ads
+    Python SDK, (2) Browser automation mode for users without API access - just attach a browser tab to ads.google.com. Use
+    when asked to check ad performance, pause campaigns/keywords,
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-setup.md
+
+    - references/browser-workflows.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-ads
+
+    ```'
+examples:
+- description: Install Google Ads from ClawHub
+  usage: clawhub install google-ads
+schema_version: '1.0'

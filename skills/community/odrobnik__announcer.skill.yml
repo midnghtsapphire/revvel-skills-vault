@@ -1,0 +1,59 @@
+name: announcer
+title: Announcer
+version: 1.2.1
+description: '"Announce text throughout the house via AirPlay speakers using Airfoil + ElevenLabs TTS."'
+metadata:
+  author: odrobnik
+  category: Gaming & Entertainment
+  tags:
+  - gaming-entertainment
+  - announcer
+  source: clawhub-community
+  clawhub_slug: announcer
+  clawhub_path: odrobnik/announcer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Announcer
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install announcer
+
+    # Path: odrobnik/announcer
+
+
+    ## Description
+
+    "Announce text throughout the house via AirPlay speakers using Airfoil + ElevenLabs TTS."
+
+
+    ## Files
+
+    - ARTICLE.md
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/announce.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install announcer
+
+    ```'
+examples:
+- description: Install Announcer from ClawHub
+  usage: clawhub install announcer
+schema_version: '1.0'

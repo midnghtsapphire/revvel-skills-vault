@@ -1,0 +1,74 @@
+name: ai-bill-intelligence
+title: Ai Bill Clawhub
+version: 2.1.0
+description: Real-time AI API usage tracking and cost monitoring for OpenClaw. Track spending across OpenAI, Claude, Gemini,
+  Kimi, DeepSeek, and Grok with live dashboard. Use when users need to monitor AI API costs, track token usage, or manage
+  budgets for multiple AI providers.
+metadata:
+  author: fumarole16-afk
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bill
+  - intelligence
+  source: clawhub-community
+  clawhub_slug: ai-bill-clawhub
+  clawhub_path: fumarole16-afk/ai-bill-clawhub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ai Bill Clawhub
+
+    # Source: ClawHub community skill by fumarole16-afk
+
+    # Install: clawhub install ai-bill-clawhub
+
+    # Path: fumarole16-afk/ai-bill-clawhub
+
+
+    ## Description
+
+    Real-time AI API usage tracking and cost monitoring for OpenClaw. Track spending across OpenAI, Claude, Gemini, Kimi,
+    DeepSeek, and Grok with live dashboard. Use when users need to monitor AI API costs, track token usage, or manage budgets
+    for multiple AI providers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - collector.js
+
+    - index.html
+
+    - package.json
+
+    - prices.json
+
+    - server.js
+
+    - vault.json
+
+    - dist/index.html
+
+    - dist/usage.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-bill-clawhub
+
+    ```'
+examples:
+- description: Install Ai Bill Clawhub from ClawHub
+  usage: clawhub install ai-bill-clawhub
+schema_version: '1.0'

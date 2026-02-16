@@ -1,0 +1,61 @@
+name: volcengine-video-generate
+title: volcengine-video-generate
+version: 1.0.0
+description: Using volcengine video_generate.py script to generate video, need to provide filename and prompt, optional provide
+  first frame image (URL or local path).
+metadata:
+  author: warm-wm
+  category: Media & Content
+  tags:
+  - media-content
+  - volcengine
+  - video
+  - generate
+  source: clawhub-community
+  clawhub_slug: volcengine-video-generate
+  clawhub_path: warm-wm/volcengine-video-generate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# volcengine-video-generate
+
+    # Source: ClawHub community skill by warm-wm
+
+    # Install: clawhub install volcengine-video-generate
+
+    # Path: warm-wm/volcengine-video-generate
+
+
+    ## Description
+
+    Using volcengine video_generate.py script to generate video, need to provide filename and prompt, optional provide first
+    frame image (URL or local path).
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/video_generate.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install volcengine-video-generate
+
+    ```'
+examples:
+- description: Install volcengine-video-generate from ClawHub
+  usage: clawhub install volcengine-video-generate
+schema_version: '1.0'

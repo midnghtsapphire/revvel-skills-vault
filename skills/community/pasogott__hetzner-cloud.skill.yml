@@ -1,0 +1,54 @@
+name: hetzner-cloud
+title: Hetzner Cloud CLI
+version: 1.0.0
+description: Hetzner Cloud CLI for managing servers, volumes, firewalls, networks, DNS, and snapshots.
+metadata:
+  author: pasogott
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - hetzner
+  - cloud
+  source: clawhub-community
+  clawhub_slug: hetzner-cloud
+  clawhub_path: pasogott/hetzner-cloud
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hetzner Cloud CLI
+
+    # Source: ClawHub community skill by pasogott
+
+    # Install: clawhub install hetzner-cloud
+
+    # Path: pasogott/hetzner-cloud
+
+
+    ## Description
+
+    Hetzner Cloud CLI for managing servers, volumes, firewalls, networks, DNS, and snapshots.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hetzner-cloud
+
+    ```'
+examples:
+- description: Install Hetzner Cloud CLI from ClawHub
+  usage: clawhub install hetzner-cloud
+schema_version: '1.0'

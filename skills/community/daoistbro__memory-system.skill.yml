@@ -1,0 +1,58 @@
+name: memory-system
+title: 大哥的记忆系统
+version: 1.0.0
+description: 自研三层记忆恢复系统。解决session重启后"忘记一切"的问题，提供永久记忆、今日记忆、临时记忆的完整架构。
+metadata:
+  author: daoistbro
+  category: General
+  tags:
+  - general
+  - memory
+  - system
+  source: clawhub-community
+  clawhub_slug: memory-system
+  clawhub_path: daoistbro/memory-system
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 大哥的记忆系统
+
+    # Source: ClawHub community skill by daoistbro
+
+    # Install: clawhub install memory-system
+
+    # Path: daoistbro/memory-system
+
+
+    ## Description
+
+    自研三层记忆恢复系统。解决session重启后"忘记一切"的问题，提供永久记忆、今日记忆、临时记忆的完整架构。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/memory-recovery.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-system
+
+    ```'
+examples:
+- description: Install 大哥的记忆系统 from ClawHub
+  usage: clawhub install memory-system
+schema_version: '1.0'

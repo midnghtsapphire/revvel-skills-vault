@@ -1,0 +1,73 @@
+name: receipt-subscription-cleaner
+title: Receipt Subscription Cleaner
+version: 1.0.0
+description: Identify recurring charges and subscriptions from receipts or email exports, and produce a clean summary with
+  renewal dates, price changes, and cancellation drafts. Use when a user wants to audit spending without initiating payments
+  or cancellations.
+metadata:
+  author: codedao12
+  category: Communication
+  tags:
+  - communication
+  - receipt
+  - subscription
+  - cleaner
+  source: clawhub-community
+  clawhub_slug: receipt-subscription-cleaner
+  clawhub_path: codedao12/receipt-subscription-cleaner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Receipt Subscription Cleaner
+
+    # Source: ClawHub community skill by codedao12
+
+    # Install: clawhub install receipt-subscription-cleaner
+
+    # Path: codedao12/receipt-subscription-cleaner
+
+
+    ## Description
+
+    Identify recurring charges and subscriptions from receipts or email exports, and produce a clean summary with renewal
+    dates, price changes, and cancellation drafts. Use when a user wants to audit spending without initiating payments or
+    cancellations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/auth.md
+
+    - references/endpoints.md
+
+    - references/overview.md
+
+    - references/safety.md
+
+    - references/troubleshooting.md
+
+    - references/ux.md
+
+    - references/webhooks.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install receipt-subscription-cleaner
+
+    ```'
+examples:
+- description: Install Receipt Subscription Cleaner from ClawHub
+  usage: clawhub install receipt-subscription-cleaner
+schema_version: '1.0'

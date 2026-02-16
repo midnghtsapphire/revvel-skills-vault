@@ -1,0 +1,56 @@
+name: pasteclaw-agent
+title: PasteClaw
+version: 1.0.0
+description: Use Pasteclaw.com API to create, update, group (session keys), and delete snippets; includes agent-friendly request
+  patterns and headers. Like pastebin but for agents
+metadata:
+  author: tairov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - pasteclaw
+  - agent
+  source: clawhub-community
+  clawhub_slug: pasteclaw
+  clawhub_path: tairov/pasteclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PasteClaw
+
+    # Source: ClawHub community skill by tairov
+
+    # Install: clawhub install pasteclaw
+
+    # Path: tairov/pasteclaw
+
+
+    ## Description
+
+    Use Pasteclaw.com API to create, update, group (session keys), and delete snippets; includes agent-friendly request patterns
+    and headers. Like pastebin but for agents
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pasteclaw
+
+    ```'
+examples:
+- description: Install PasteClaw from ClawHub
+  usage: clawhub install pasteclaw
+schema_version: '1.0'

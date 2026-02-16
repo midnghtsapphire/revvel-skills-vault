@@ -1,0 +1,69 @@
+name: skill-from-memory
+title: Skill From Memory
+version: 0.1.1
+description: Convert memory, conversation history, or completed tasks into publishable OpenClaw skills. Use when (1) A task
+  or workflow should be reusable, (2) Extracting lessons from memory to create tools, (3) Packaging solved problems as skills
+  for future use, (4) Publishing skills to GitHub and ClawHub regis
+metadata:
+  author: zfanmy
+  category: Development & Coding
+  tags:
+  - development-coding
+  - skill
+  - from
+  - memory
+  source: clawhub-community
+  clawhub_slug: skill-from-memory
+  clawhub_path: zfanmy/skill-from-memory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill From Memory
+
+    # Source: ClawHub community skill by zfanmy
+
+    # Install: clawhub install skill-from-memory
+
+    # Path: zfanmy/skill-from-memory
+
+
+    ## Description
+
+    Convert memory, conversation history, or completed tasks into publishable OpenClaw skills. Use when (1) A task or workflow
+    should be reusable, (2) Extracting lessons from memory to create tools, (3) Packaging solved problems as skills for future
+    use, (4) Publishing skills to GitHub and ClawHub regis
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/create-and-publish.sh
+
+    - scripts/create-skill.sh
+
+    - scripts/extract-from-history.sh
+
+    - scripts/extract-from-memory.sh
+
+    - scripts/publish.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-from-memory
+
+    ```'
+examples:
+- description: Install Skill From Memory from ClawHub
+  usage: clawhub install skill-from-memory
+schema_version: '1.0'

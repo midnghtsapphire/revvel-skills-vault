@@ -1,0 +1,60 @@
+name: qr-auction-bidder
+title: Qr Auction Bidder
+version: 2.0.1
+description: Bid on $QR auctions at qrcoin.fun. Place bids on Base mainnet using USDC. Uses Bankr for transaction execution
+  — no wallet management needed.
+metadata:
+  author: ss251
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - auction
+  - bidder
+  source: clawhub-community
+  clawhub_slug: qr-auction-bidder
+  clawhub_path: ss251/qr-auction-bidder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qr Auction Bidder
+
+    # Source: ClawHub community skill by ss251
+
+    # Install: clawhub install qr-auction-bidder
+
+    # Path: ss251/qr-auction-bidder
+
+
+    ## Description
+
+    Bid on $QR auctions at qrcoin.fun. Place bids on Base mainnet using USDC. Uses Bankr for transaction execution — no wallet
+    management needed.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/QRAuctionV5.abi.json
+
+    - references/contract-addresses.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qr-auction-bidder
+
+    ```'
+examples:
+- description: Install Qr Auction Bidder from ClawHub
+  usage: clawhub install qr-auction-bidder
+schema_version: '1.0'

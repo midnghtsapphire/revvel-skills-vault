@@ -1,0 +1,67 @@
+name: movie
+title: Movie
+version: 1.0.0
+description: Create films with AI video generation by managing scripts, prompts, consistency, and production workflows from
+  concept to final cut.
+metadata:
+  author: ivangdavila
+  category: Media & Content
+  tags:
+  - media-content
+  - movie
+  source: clawhub-community
+  clawhub_slug: movie
+  clawhub_path: ivangdavila/movie
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Movie
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install movie
+
+    # Path: ivangdavila/movie
+
+
+    ## Description
+
+    Create films with AI video generation by managing scripts, prompts, consistency, and production workflows from concept
+    to final cut.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - commercial.md
+
+    - experimental.md
+
+    - generation.md
+
+    - postproduction.md
+
+    - preproduction.md
+
+    - tools.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install movie
+
+    ```'
+examples:
+- description: Install Movie from ClawHub
+  usage: clawhub install movie
+schema_version: '1.0'

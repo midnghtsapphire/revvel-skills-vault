@@ -1,0 +1,61 @@
+name: paste-rs
+title: Paste Rs
+version: 1.0.0
+description: Paste text, Markdown, or HTML snippets to https://paste.rs and return a shareable URL. Use when the user asks
+  to "paste"/"upload" text to paste.rs, share logs/config snippets safely as a link, or quickly publish command output without
+  sending long messages.
+metadata:
+  author: banghasan
+  category: Communication
+  tags:
+  - communication
+  - paste
+  source: clawhub-community
+  clawhub_slug: paste-rs
+  clawhub_path: banghasan/paste-rs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Paste Rs
+
+    # Source: ClawHub community skill by banghasan
+
+    # Install: clawhub install paste-rs
+
+    # Path: banghasan/paste-rs
+
+
+    ## Description
+
+    Paste text, Markdown, or HTML snippets to https://paste.rs and return a shareable URL. Use when the user asks to "paste"/"upload"
+    text to paste.rs, share logs/config snippets safely as a link, or quickly publish command output without sending long
+    messages.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/paste-rs-api.md
+
+    - scripts/paste_rs.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paste-rs
+
+    ```'
+examples:
+- description: Install Paste Rs from ClawHub
+  usage: clawhub install paste-rs
+schema_version: '1.0'

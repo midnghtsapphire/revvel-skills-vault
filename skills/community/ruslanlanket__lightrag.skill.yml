@@ -1,0 +1,59 @@
+name: lightrag
+title: LightRAG Search Skill
+version: 1.0.1
+description: Search and manage knowledge bases using LightRAG API. Supports multiple servers, context-aware writing, and direct
+  information retrieval. Use when the user wants to query a LightRAG-powered knowledge base or use it as context for tasks.
+metadata:
+  author: ruslanlanket
+  category: Search & Research
+  tags:
+  - search-research
+  - lightrag
+  source: clawhub-community
+  clawhub_slug: lightrag
+  clawhub_path: ruslanlanket/lightrag
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LightRAG Search Skill
+
+    # Source: ClawHub community skill by ruslanlanket
+
+    # Install: clawhub install lightrag
+
+    # Path: ruslanlanket/lightrag
+
+
+    ## Description
+
+    Search and manage knowledge bases using LightRAG API. Supports multiple servers, context-aware writing, and direct information
+    retrieval. Use when the user wants to query a LightRAG-powered knowledge base or use it as context for tasks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API_DOCS.md
+
+    - scripts/query_lightrag.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lightrag
+
+    ```'
+examples:
+- description: Install LightRAG Search Skill from ClawHub
+  usage: clawhub install lightrag
+schema_version: '1.0'

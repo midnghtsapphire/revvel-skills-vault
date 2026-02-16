@@ -1,0 +1,62 @@
+name: warren-nft
+title: Warren NFT Deploy(mainnet)
+version: 1.0.0
+description: Deploy NFT collections permanently on MegaETH mainnet. Images are stored on-chain via SSTORE2, then published
+  through WarrenContainer and WarrenLaunchedNFT.
+metadata:
+  author: planetai87
+  category: Media & Content
+  tags:
+  - media-content
+  - warren
+  - nft
+  source: clawhub-community
+  clawhub_slug: warren-nft-mainnet
+  clawhub_path: planetai87/warren-nft-mainnet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Warren NFT Deploy(mainnet)
+
+    # Source: ClawHub community skill by planetai87
+
+    # Install: clawhub install warren-nft-mainnet
+
+    # Path: planetai87/warren-nft-mainnet
+
+
+    ## Description
+
+    Deploy NFT collections permanently on MegaETH mainnet. Images are stored on-chain via SSTORE2, then published through
+    WarrenContainer and WarrenLaunchedNFT.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - deploy-nft.js
+
+    - package.json
+
+    - setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install warren-nft-mainnet
+
+    ```'
+examples:
+- description: Install Warren NFT Deploy(mainnet) from ClawHub
+  usage: clawhub install warren-nft-mainnet
+schema_version: '1.0'

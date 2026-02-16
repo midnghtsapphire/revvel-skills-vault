@@ -1,0 +1,74 @@
+name: skill-publisher-claw-skill
+title: Skill Publisher Claw Skill
+version: 0.1.0
+description: 'Prepare Claw skills for public release. Use when publishing skills to GitHub or ClawdHub - covers security audit,
+  portability, documentation, git hygiene. Triggers: publish skill, release skill, audit skill, skill checklist, prepare skill
+  for release.'
+metadata:
+  author: acastellana
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - publisher
+  - claw
+  source: clawhub-community
+  clawhub_slug: skill-publisher-claw-skill
+  clawhub_path: acastellana/skill-publisher-claw-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Publisher Claw Skill
+
+    # Source: ClawHub community skill by acastellana
+
+    # Install: clawhub install skill-publisher-claw-skill
+
+    # Path: acastellana/skill-publisher-claw-skill
+
+
+    ## Description
+
+    Prepare Claw skills for public release. Use when publishing skills to GitHub or ClawdHub - covers security audit, portability,
+    documentation, git hygiene. Triggers: publish skill, release skill, audit skill, skill checklist, prepare skill for release.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - analyze.sh
+
+    - audit.sh
+
+    - changelog.sh
+
+    - fix.sh
+
+    - publish.sh
+
+    - scaffold.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-publisher-claw-skill
+
+    ```'
+examples:
+- description: Install Skill Publisher Claw Skill from ClawHub
+  usage: clawhub install skill-publisher-claw-skill
+schema_version: '1.0'

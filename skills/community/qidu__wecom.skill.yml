@@ -1,0 +1,71 @@
+name: wecom
+title: WeCom
+version: 1.0.0
+description: '"Send messages to WeCom (企业微信) via webhooks using MCP protocol. Works with Claude Code, Claude Desktop, and
+  other MCP clients."'
+metadata:
+  author: qidu
+  category: Communication
+  tags:
+  - communication
+  - wecom
+  source: clawhub-community
+  clawhub_slug: wecom
+  clawhub_path: qidu/wecom
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WeCom
+
+    # Source: ClawHub community skill by qidu
+
+    # Install: clawhub install wecom
+
+    # Path: qidu/wecom
+
+
+    ## Description
+
+    "Send messages to WeCom (企业微信) via webhooks using MCP protocol. Works with Claude Code, Claude Desktop, and other MCP
+    clients."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - skill.json
+
+    - tsconfig.json
+
+    - dist/index.d.ts
+
+    - dist/index.js
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wecom
+
+    ```'
+examples:
+- description: Install WeCom from ClawHub
+  usage: clawhub install wecom
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: seoul-subway
+title: Seoul Subway
+version: 0.1.19
+description: Seoul Subway assistant for real-time arrivals, route planning, and service alerts (Korean/English)
+metadata:
+  author: dukbong
+  category: Utilities
+  tags:
+  - utilities
+  - seoul
+  - subway
+  source: clawhub-community
+  clawhub_slug: seoul-subway
+  clawhub_path: dukbong/seoul-subway
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seoul Subway
+
+    # Source: ClawHub community skill by dukbong
+
+    # Install: clawhub install seoul-subway
+
+    # Path: dukbong/seoul-subway
+
+
+    ## Description
+
+    Seoul Subway assistant for real-time arrivals, route planning, and service alerts (Korean/English)
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seoul-subway
+
+    ```'
+examples:
+- description: Install Seoul Subway from ClawHub
+  usage: clawhub install seoul-subway
+schema_version: '1.0'

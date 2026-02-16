@@ -1,0 +1,60 @@
+name: skill-guard
+title: skill-guard
+version: 1.0.2
+description: Scan ClawHub skills for security vulnerabilities BEFORE installing. Use when installing new skills from ClawHub
+  to detect prompt injections, malware payloads, hardcoded secrets, and other threats. Wraps clawhub install with mcp-scan
+  pre-flight checks.
+metadata:
+  author: jamesouttake
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - guard
+  source: clawhub-community
+  clawhub_slug: skill-guard
+  clawhub_path: jamesouttake/skill-guard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# skill-guard
+
+    # Source: ClawHub community skill by jamesouttake
+
+    # Install: clawhub install skill-guard
+
+    # Path: jamesouttake/skill-guard
+
+
+    ## Description
+
+    Scan ClawHub skills for security vulnerabilities BEFORE installing. Use when installing new skills from ClawHub to detect
+    prompt injections, malware payloads, hardcoded secrets, and other threats. Wraps clawhub install with mcp-scan pre-flight
+    checks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/safe-install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-guard
+
+    ```'
+examples:
+- description: Install skill-guard from ClawHub
+  usage: clawhub install skill-guard
+schema_version: '1.0'

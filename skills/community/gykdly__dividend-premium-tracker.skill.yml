@@ -1,0 +1,61 @@
+name: dividend-premium-tracker
+title: Dividend Premium Tracker
+version: 1.0.1
+description: Track the dividend premium (dividend yield minus 10-year bond yield) for CSI Dividend Low Volatility Index. Monitor
+  dividend yield, 10-year bond yield, and calculate the premium for investment decisions.
+metadata:
+  author: gykdly
+  category: System & OS
+  tags:
+  - system-os
+  - dividend
+  - premium
+  - tracker
+  source: clawhub-community
+  clawhub_slug: dividend-premium-tracker
+  clawhub_path: gykdly/dividend-premium-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dividend Premium Tracker
+
+    # Source: ClawHub community skill by gykdly
+
+    # Install: clawhub install dividend-premium-tracker
+
+    # Path: gykdly/dividend-premium-tracker
+
+
+    ## Description
+
+    Track the dividend premium (dividend yield minus 10-year bond yield) for CSI Dividend Low Volatility Index. Monitor dividend
+    yield, 10-year bond yield, and calculate the premium for investment decisions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/monitor_dividend_premium.py
+
+    - scripts/update_dividend_premium.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dividend-premium-tracker
+
+    ```'
+examples:
+- description: Install Dividend Premium Tracker from ClawHub
+  usage: clawhub install dividend-premium-tracker
+schema_version: '1.0'

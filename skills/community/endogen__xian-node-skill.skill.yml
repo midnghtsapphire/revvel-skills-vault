@@ -1,0 +1,62 @@
+name: xian-node
+title: Xian Node
+version: 0.1.0
+description: Set up and manage Xian blockchain nodes. Use when deploying a Xian node to join mainnet/testnet, creating a new
+  Xian network, or managing running nodes. Covers Docker-based setup via xian-stack, CometBFT configuration, and node monitoring.
+metadata:
+  author: endogen
+  category: Development & Coding
+  tags:
+  - development-coding
+  - xian
+  - node
+  source: clawhub-community
+  clawhub_slug: xian-node-skill
+  clawhub_path: endogen/xian-node-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xian Node
+
+    # Source: ClawHub community skill by endogen
+
+    # Install: clawhub install xian-node-skill
+
+    # Path: endogen/xian-node-skill
+
+
+    ## Description
+
+    Set up and manage Xian blockchain nodes. Use when deploying a Xian node to join mainnet/testnet, creating a new Xian network,
+    or managing running nodes. Covers Docker-based setup via xian-stack, CometBFT configuration, and node monitoring.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/genesis-template.md
+
+    - scripts/generate_validator_key.py
+
+    - scripts/node_status.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xian-node-skill
+
+    ```'
+examples:
+- description: Install Xian Node from ClawHub
+  usage: clawhub install xian-node-skill
+schema_version: '1.0'

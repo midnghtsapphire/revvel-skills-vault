@@ -1,0 +1,57 @@
+name: toggl
+title: Toggl
+version: 1.0.0
+description: Track time with Toggl via the toggl CLI. Use when the user wants to start/stop time tracking, check current timer,
+  view today's or weekly reports, list recent entries, or manage time entries. Triggers on "toggl", "time tracking", "timer",
+  "track time", "what am I working on", "log time", "timesheet"
+metadata:
+  author: clvrobj
+  category: Utilities
+  tags:
+  - utilities
+  - toggl
+  source: clawhub-community
+  clawhub_slug: toggl
+  clawhub_path: clvrobj/toggl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Toggl
+
+    # Source: ClawHub community skill by clvrobj
+
+    # Install: clawhub install toggl
+
+    # Path: clvrobj/toggl
+
+
+    ## Description
+
+    Track time with Toggl via the toggl CLI. Use when the user wants to start/stop time tracking, check current timer, view
+    today''s or weekly reports, list recent entries, or manage time entries. Triggers on "toggl", "time tracking", "timer",
+    "track time", "what am I working on", "log time", "timesheet"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install toggl
+
+    ```'
+examples:
+- description: Install Toggl from ClawHub
+  usage: clawhub install toggl
+schema_version: '1.0'

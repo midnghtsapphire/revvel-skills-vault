@@ -1,0 +1,70 @@
+name: xhs-skill
+title: Xhs Skill
+version: 1.0.8
+description: 小红书（创作者中心）登录拿 cookies、发布笔记、导出数据的单一入口技能（浏览器交互委托 agent-browser）
+metadata:
+  author: leeguooooo
+  category: Search & Research
+  tags:
+  - search-research
+  - xhs
+  - skill
+  source: clawhub-community
+  clawhub_slug: xhs-skill
+  clawhub_path: leeguooooo/xhs-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xhs Skill
+
+    # Source: ClawHub community skill by leeguooooo
+
+    # Install: clawhub install xhs-skill
+
+    # Path: leeguooooo/xhs-skill
+
+
+    ## Description
+
+    小红书（创作者中心）登录拿 cookies、发布笔记、导出数据的单一入口技能（浏览器交互委托 agent-browser）
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.mjs
+
+    - package.json
+
+    - agents/openai.yaml
+
+    - bin/xhs-skill.mjs
+
+    - lib/cookies.mjs
+
+    - lib/image.mjs
+
+    - lib/qr.mjs
+
+    - scripts/publish_from_payload.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xhs-skill
+
+    ```'
+examples:
+- description: Install Xhs Skill from ClawHub
+  usage: clawhub install xhs-skill
+schema_version: '1.0'

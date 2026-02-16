@@ -1,0 +1,53 @@
+name: python
+title: Python
+version: 1.0.0
+description: Write reliable Python avoiding mutable defaults, import traps, and common runtime surprises.
+metadata:
+  author: ivangdavila
+  category: Utilities
+  tags:
+  - utilities
+  - python
+  source: clawhub-community
+  clawhub_slug: py
+  clawhub_path: ivangdavila/py
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Python
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install py
+
+    # Path: ivangdavila/py
+
+
+    ## Description
+
+    Write reliable Python avoiding mutable defaults, import traps, and common runtime surprises.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install py
+
+    ```'
+examples:
+- description: Install Python from ClawHub
+  usage: clawhub install py
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: cursor-cloud-agents
+title: Cursor Cloud Agents
+version: 1.2.7
+description: '"Deploy Cursor AI agents to GitHub repos. Automatically write code, generate tests, create documentation, and
+  open PRs using your existing Cursor subscription."'
+metadata:
+  author: parcostabot
+  category: Development & Coding
+  tags:
+  - development-coding
+  - cursor
+  - cloud
+  - agents
+  source: clawhub-community
+  clawhub_slug: cursor-cloud-agents
+  clawhub_path: parcostabot/cursor-cloud-agents
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cursor Cloud Agents
+
+    # Source: ClawHub community skill by parcostabot
+
+    # Install: clawhub install cursor-cloud-agents
+
+    # Path: parcostabot/cursor-cloud-agents
+
+
+    ## Description
+
+    "Deploy Cursor AI agents to GitHub repos. Automatically write code, generate tests, create documentation, and open PRs
+    using your existing Cursor subscription."
+
+
+    ## Files
+
+    - CONTRIBUTING.md
+
+    - README.md
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - validate.sh
+
+    - references/api-reference.md
+
+    - scripts/cursor-api.sh
+
+    - tests/run-tests.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cursor-cloud-agents
+
+    ```'
+examples:
+- description: Install Cursor Cloud Agents from ClawHub
+  usage: clawhub install cursor-cloud-agents
+schema_version: '1.0'

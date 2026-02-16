@@ -1,0 +1,60 @@
+name: instagram-analyzer
+title: Instagram Analyzer
+version: 1.0.0
+description: Analyze Instagram profiles and posts with engagement metrics, view counts, follower ratios, and Reels analytics.
+metadata:
+  author: tevfikgulep
+  category: Social Media
+  tags:
+  - social-media
+  - instagram
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: instagram-analyzer
+  clawhub_path: tevfikgulep/instagram-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Instagram Analyzer
+
+    # Source: ClawHub community skill by tevfikgulep
+
+    # Install: clawhub install instagram-analyzer
+
+    # Path: tevfikgulep/instagram-analyzer
+
+
+    ## Description
+
+    Analyze Instagram profiles and posts with engagement metrics, view counts, follower ratios, and Reels analytics.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - config/analyzer_config.json
+
+    - scripts/instagram_analyzer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install instagram-analyzer
+
+    ```'
+examples:
+- description: Install Instagram Analyzer from ClawHub
+  usage: clawhub install instagram-analyzer
+schema_version: '1.0'

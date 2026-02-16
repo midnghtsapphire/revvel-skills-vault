@@ -1,0 +1,68 @@
+name: markitdown-skill
+title: MarkItDown Skill
+version: 1.0.1
+description: OpenClaw agent skill for converting documents to Markdown. Documentation and utilities for Microsoft's MarkItDown
+  library. Supports PDF, Word, PowerPoint, Excel, images (OCR), audio (transcription), HTML, YouTube.
+metadata:
+  author: karmanverma
+  category: Media & Content
+  tags:
+  - media-content
+  - markitdown
+  - skill
+  source: clawhub-community
+  clawhub_slug: markitdown-skill
+  clawhub_path: karmanverma/markitdown-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MarkItDown Skill
+
+    # Source: ClawHub community skill by karmanverma
+
+    # Install: clawhub install markitdown-skill
+
+    # Path: karmanverma/markitdown-skill
+
+
+    ## Description
+
+    OpenClaw agent skill for converting documents to Markdown. Documentation and utilities for Microsoft''s MarkItDown library.
+    Supports PDF, Word, PowerPoint, Excel, images (OCR), audio (transcription), HTML, YouTube.
+
+
+    ## Files
+
+    - POST_INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - USAGE-GUIDE.md
+
+    - _meta.json
+
+    - package.json
+
+    - reference.md
+
+    - scripts/batch_convert.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install markitdown-skill
+
+    ```'
+examples:
+- description: Install MarkItDown Skill from ClawHub
+  usage: clawhub install markitdown-skill
+schema_version: '1.0'

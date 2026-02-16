@@ -1,0 +1,63 @@
+name: kalshi
+title: Kalshi
+version: 1.1.0
+description: Read-only Kalshi prediction market integration. Use for viewing markets, checking portfolio positions, analyzing
+  prediction opportunities, and finding high-payoff/high-certainty trades. Triggers on Kalshi, prediction markets, event contracts,
+  or trading recommendations.
+metadata:
+  author: henrik-openclaw
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - kalshi
+  source: clawhub-community
+  clawhub_slug: kalshi
+  clawhub_path: henrik-openclaw/kalshi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Kalshi
+
+    # Source: ClawHub community skill by henrik-openclaw
+
+    # Install: clawhub install kalshi
+
+    # Path: henrik-openclaw/kalshi
+
+
+    ## Description
+
+    Read-only Kalshi prediction market integration. Use for viewing markets, checking portfolio positions, analyzing prediction
+    opportunities, and finding high-payoff/high-certainty trades. Triggers on Kalshi, prediction markets, event contracts,
+    or trading recommendations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/kalshi_markets.py
+
+    - scripts/kalshi_portfolio.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kalshi
+
+    ```'
+examples:
+- description: Install Kalshi from ClawHub
+  usage: clawhub install kalshi
+schema_version: '1.0'

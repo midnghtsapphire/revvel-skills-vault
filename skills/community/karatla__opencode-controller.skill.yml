@@ -1,0 +1,72 @@
+name: opencode-controller
+title: Opencode-controller
+version: 1.0.0
+description: Control and operate Opencode via slash commands. Use this skill to manage sessions, select models, switch agents
+  (plan/build), and coordinate coding through Opencode.
+metadata:
+  author: karatla
+  category: Development & Coding
+  tags:
+  - development-coding
+  - opencode
+  - controller
+  source: clawhub-community
+  clawhub_slug: opencode-controller
+  clawhub_path: karatla/opencode-controller
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Opencode-controller
+
+    # Source: ClawHub community skill by karatla
+
+    # Install: clawhub install opencode-controller
+
+    # Path: karatla/opencode-controller
+
+
+    ## Description
+
+    Control and operate Opencode via slash commands. Use this skill to manage sessions, select models, switch agents (plan/build),
+    and coordinate coding through Opencode.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/operator-prompts.md
+
+    - references/command-cheatsheet.md
+
+    - references/failure-handling.md
+
+    - references/model-selection.md
+
+    - references/plan-vs-build.md
+
+    - references/question-handling.md
+
+    - references/session-management.md
+
+    - references/workflow.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install opencode-controller
+
+    ```'
+examples:
+- description: Install Opencode-controller from ClawHub
+  usage: clawhub install opencode-controller
+schema_version: '1.0'

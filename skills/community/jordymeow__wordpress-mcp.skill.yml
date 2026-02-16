@@ -1,0 +1,68 @@
+name: wordpress-mcp
+title: WordPress MCP
+version: 3.3.4
+description: Manage WordPress sites via MCP (Model Context Protocol) through AI Engine. Use for creating/editing posts, SEO
+  analysis, analytics, media management, taxonomy operations, social media scheduling, multilingual content (Polylang), and
+  any WordPress admin task. Requires AI Engine plugin (free) with MCP
+metadata:
+  author: jordymeow
+  category: Media & Content
+  tags:
+  - media-content
+  - wordpress
+  - mcp
+  source: clawhub-community
+  clawhub_slug: wordpress-mcp
+  clawhub_path: jordymeow/wordpress-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WordPress MCP
+
+    # Source: ClawHub community skill by jordymeow
+
+    # Install: clawhub install wordpress-mcp
+
+    # Path: jordymeow/wordpress-mcp
+
+
+    ## Description
+
+    Manage WordPress sites via MCP (Model Context Protocol) through AI Engine. Use for creating/editing posts, SEO analysis,
+    analytics, media management, taxonomy operations, social media scheduling, multilingual content (Polylang), and any WordPress
+    admin task. Requires AI Engine plugin (free) with MCP
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/core-tools.md
+
+    - references/dev-tools.md
+
+    - references/features.md
+
+    - references/seo-tools.md
+
+    - references/woocommerce-tools.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wordpress-mcp
+
+    ```'
+examples:
+- description: Install WordPress MCP from ClawHub
+  usage: clawhub install wordpress-mcp
+schema_version: '1.0'

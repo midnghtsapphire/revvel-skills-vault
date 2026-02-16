@@ -1,0 +1,64 @@
+name: securityclaw-skill
+title: SecurityClaw
+version: 1.0.0
+description: Security-first skill auditing and quarantine for OpenClaw skills. Use when installing new skills, reviewing skills
+  from unknown sources, scanning skills for prompt injection/exfiltration/supply-chain risks, or when a bot suspects a skill
+  is malicious. Guides static + optional sandbox checks, quarant
+metadata:
+  author: mallen-lbx
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - securityclaw
+  - skill
+  source: clawhub-community
+  clawhub_slug: securityclaw
+  clawhub_path: mallen-lbx/securityclaw
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SecurityClaw
+
+    # Source: ClawHub community skill by mallen-lbx
+
+    # Install: clawhub install securityclaw
+
+    # Path: mallen-lbx/securityclaw
+
+
+    ## Description
+
+    Security-first skill auditing and quarantine for OpenClaw skills. Use when installing new skills, reviewing skills from
+    unknown sources, scanning skills for prompt injection/exfiltration/supply-chain risks, or when a bot suspects a skill
+    is malicious. Guides static + optional sandbox checks, quarant
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/rules.md
+
+    - references/sandboxing.md
+
+    - scripts/securityclaw_scan.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install securityclaw
+
+    ```'
+examples:
+- description: Install SecurityClaw from ClawHub
+  usage: clawhub install securityclaw
+schema_version: '1.0'

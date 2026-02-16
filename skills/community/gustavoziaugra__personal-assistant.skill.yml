@@ -1,0 +1,62 @@
+name: personal-assistant
+title: Personal Assistant
+version: 1.0.0
+description: Personal daily briefing and productivity assistant. Generates morning briefings with priorities, habits, and
+  self-care reminders. Use when starting your day, planning tasks, or maintaining daily routines and personal development.
+  A minimalist personal productivity skill focused on you.
+metadata:
+  author: gustavoziaugra
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - personal
+  - assistant
+  source: clawhub-community
+  clawhub_slug: personal-assistant
+  clawhub_path: gustavoziaugra/personal-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Personal Assistant
+
+    # Source: ClawHub community skill by gustavoziaugra
+
+    # Install: clawhub install personal-assistant
+
+    # Path: gustavoziaugra/personal-assistant
+
+
+    ## Description
+
+    Personal daily briefing and productivity assistant. Generates morning briefings with priorities, habits, and self-care
+    reminders. Use when starting your day, planning tasks, or maintaining daily routines and personal development. A minimalist
+    personal productivity skill focused on you.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/daily_briefing.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install personal-assistant
+
+    ```'
+examples:
+- description: Install Personal Assistant from ClawHub
+  usage: clawhub install personal-assistant
+schema_version: '1.0'

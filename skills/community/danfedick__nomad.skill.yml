@@ -1,0 +1,55 @@
+name: nomad
+title: Nomad
+version: 1.0.0
+description: Query HashiCorp Nomad clusters. List jobs, nodes, allocations, evaluations, and services. Read-only operations
+  for monitoring and troubleshooting.
+metadata:
+  author: danfedick
+  category: System & OS
+  tags:
+  - system-os
+  - nomad
+  source: clawhub-community
+  clawhub_slug: nomad
+  clawhub_path: danfedick/nomad
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nomad
+
+    # Source: ClawHub community skill by danfedick
+
+    # Install: clawhub install nomad
+
+    # Path: danfedick/nomad
+
+
+    ## Description
+
+    Query HashiCorp Nomad clusters. List jobs, nodes, allocations, evaluations, and services. Read-only operations for monitoring
+    and troubleshooting.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nomad
+
+    ```'
+examples:
+- description: Install Nomad from ClawHub
+  usage: clawhub install nomad
+schema_version: '1.0'

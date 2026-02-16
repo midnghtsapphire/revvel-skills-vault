@@ -1,0 +1,57 @@
+name: portainer
+title: Portainer
+version: 1.0.0
+description: Control Docker containers and stacks via Portainer API. List containers, start/stop/restart, view logs, and redeploy
+  stacks from git.
+metadata:
+  author: asteinberger
+  category: Development & Coding
+  tags:
+  - development-coding
+  - portainer
+  source: clawhub-community
+  clawhub_slug: portainer
+  clawhub_path: asteinberger/portainer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Portainer
+
+    # Source: ClawHub community skill by asteinberger
+
+    # Install: clawhub install portainer
+
+    # Path: asteinberger/portainer
+
+
+    ## Description
+
+    Control Docker containers and stacks via Portainer API. List containers, start/stop/restart, view logs, and redeploy stacks
+    from git.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - portainer.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install portainer
+
+    ```'
+examples:
+- description: Install Portainer from ClawHub
+  usage: clawhub install portainer
+schema_version: '1.0'

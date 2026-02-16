@@ -1,0 +1,55 @@
+name: purelymail
+title: PurelyMail Setup
+version: 1.0.0
+description: Set up and test PurelyMail email for Clawdbot agents. Generate configs, test IMAP/SMTP, verify inbox connectivity.
+metadata:
+  author: dbhurley
+  category: Communication
+  tags:
+  - communication
+  - purelymail
+  source: clawhub-community
+  clawhub_slug: purelymail
+  clawhub_path: dbhurley/purelymail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PurelyMail Setup
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install purelymail
+
+    # Path: dbhurley/purelymail
+
+
+    ## Description
+
+    Set up and test PurelyMail email for Clawdbot agents. Generate configs, test IMAP/SMTP, verify inbox connectivity.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/purelymail.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install purelymail
+
+    ```'
+examples:
+- description: Install PurelyMail Setup from ClawHub
+  usage: clawhub install purelymail
+schema_version: '1.0'

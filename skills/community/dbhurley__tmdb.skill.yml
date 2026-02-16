@@ -1,0 +1,55 @@
+name: tmdb
+title: TMDb - Movie Database
+version: 1.0.0
+description: Search movies/TV, get cast, ratings, streaming info, and personalized recommendations via TMDb API.
+metadata:
+  author: dbhurley
+  category: Search & Research
+  tags:
+  - search-research
+  - tmdb
+  source: clawhub-community
+  clawhub_slug: tmdb
+  clawhub_path: dbhurley/tmdb
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TMDb - Movie Database
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install tmdb
+
+    # Path: dbhurley/tmdb
+
+
+    ## Description
+
+    Search movies/TV, get cast, ratings, streaming info, and personalized recommendations via TMDb API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tmdb.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tmdb
+
+    ```'
+examples:
+- description: Install TMDb - Movie Database from ClawHub
+  usage: clawhub install tmdb
+schema_version: '1.0'

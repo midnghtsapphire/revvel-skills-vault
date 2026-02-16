@@ -1,0 +1,66 @@
+name: monorepo-gen
+title: Monorepo Generator
+version: 1.0.1
+description: Set up Turborepo monorepo structure. Use when starting a monorepo.
+metadata:
+  author: lxgicstudios
+  category: General
+  tags:
+  - general
+  - monorepo
+  - gen
+  source: clawhub-community
+  clawhub_slug: monorepo-gen
+  clawhub_path: lxgicstudios/monorepo-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Monorepo Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install monorepo-gen
+
+    # Path: lxgicstudios/monorepo-gen
+
+
+    ## Description
+
+    Set up Turborepo monorepo structure. Use when starting a monorepo.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install monorepo-gen
+
+    ```'
+examples:
+- description: Install Monorepo Generator from ClawHub
+  usage: clawhub install monorepo-gen
+schema_version: '1.0'

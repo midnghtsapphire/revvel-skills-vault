@@ -1,0 +1,66 @@
+name: humanize-ai-text
+title: Humanize AI text
+version: 1.0.0
+description: Humanize AI-generated text to bypass detection. This humanizer rewrites ChatGPT, Claude, and GPT content to sound
+  natural and pass AI detectors like GPTZero, Turnitin, and Originality.ai. Based on Wikipedia's comprehensive "Signs of AI
+  Writing" guide. Makes robotic AI writing undetectable and human-
+metadata:
+  author: moltbro
+  category: Communication
+  tags:
+  - communication
+  - humanize
+  - text
+  source: clawhub-community
+  clawhub_slug: humanize-ai-text
+  clawhub_path: moltbro/humanize-ai-text
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Humanize AI text
+
+    # Source: ClawHub community skill by moltbro
+
+    # Install: clawhub install humanize-ai-text
+
+    # Path: moltbro/humanize-ai-text
+
+
+    ## Description
+
+    Humanize AI-generated text to bypass detection. This humanizer rewrites ChatGPT, Claude, and GPT content to sound natural
+    and pass AI detectors like GPTZero, Turnitin, and Originality.ai. Based on Wikipedia''s comprehensive "Signs of AI Writing"
+    guide. Makes robotic AI writing undetectable and human-
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/compare.py
+
+    - scripts/detect.py
+
+    - scripts/patterns.json
+
+    - scripts/transform.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install humanize-ai-text
+
+    ```'
+examples:
+- description: Install Humanize AI text from ClawHub
+  usage: clawhub install humanize-ai-text
+schema_version: '1.0'

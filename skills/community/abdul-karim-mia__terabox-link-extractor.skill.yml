@@ -1,0 +1,65 @@
+name: terabox-link-extractor
+title: Terabox Link Extractor
+version: 0.2.0
+description: '"Direct link extraction from TeraBox URLs using the XAPIverse protocol. Extracts high-speed download and stream
+  links (360p/480p) without browser session requirements. Use when the user provides a TeraBox link and wants to download
+  or stream content directly."'
+metadata:
+  author: abdul-karim-mia
+  category: Search & Research
+  tags:
+  - search-research
+  - terabox
+  - link
+  - extractor
+  source: clawhub-community
+  clawhub_slug: terabox-link-extractor
+  clawhub_path: abdul-karim-mia/terabox-link-extractor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Terabox Link Extractor
+
+    # Source: ClawHub community skill by abdul-karim-mia
+
+    # Install: clawhub install terabox-link-extractor
+
+    # Path: abdul-karim-mia/terabox-link-extractor
+
+
+    ## Description
+
+    "Direct link extraction from TeraBox URLs using the XAPIverse protocol. Extracts high-speed download and stream links
+    (360p/480p) without browser session requirements. Use when the user provides a TeraBox link and wants to download or stream
+    content directly."
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/extract.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install terabox-link-extractor
+
+    ```'
+examples:
+- description: Install Terabox Link Extractor from ClawHub
+  usage: clawhub install terabox-link-extractor
+schema_version: '1.0'

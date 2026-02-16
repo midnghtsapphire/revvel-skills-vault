@@ -1,0 +1,57 @@
+name: code-task-generator
+title: Code Task Generator
+version: 0.1.0
+description: Generates structured .code-task.md files from descriptions or PDD implementation plans. Auto-detects input type,
+  creates properly formatted tasks with Given-When-Then acceptance criteria.
+metadata:
+  author: paulpete
+  category: Development & Coding
+  tags:
+  - development-coding
+  - code
+  - task
+  - generator
+  source: clawhub-community
+  clawhub_slug: code-task-generator
+  clawhub_path: paulpete/code-task-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Code Task Generator
+
+    # Source: ClawHub community skill by paulpete
+
+    # Install: clawhub install code-task-generator
+
+    # Path: paulpete/code-task-generator
+
+
+    ## Description
+
+    Generates structured .code-task.md files from descriptions or PDD implementation plans. Auto-detects input type, creates
+    properly formatted tasks with Given-When-Then acceptance criteria.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install code-task-generator
+
+    ```'
+examples:
+- description: Install Code Task Generator from ClawHub
+  usage: clawhub install code-task-generator
+schema_version: '1.0'

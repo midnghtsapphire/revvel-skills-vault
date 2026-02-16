@@ -1,0 +1,67 @@
+name: airesearchos
+title: AIresearchOS
+version: 1.0.2
+description: '"Deep research powered by AIresearchOS. Submit, track, and retrieve research with clarifying questions. Supports
+  API key auth and x402 USDC payments."'
+metadata:
+  author: bowtiedbluefin
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - airesearchos
+  source: clawhub-community
+  clawhub_slug: openclaw-airesearchos
+  clawhub_path: bowtiedbluefin/openclaw-airesearchos
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AIresearchOS
+
+    # Source: ClawHub community skill by bowtiedbluefin
+
+    # Install: clawhub install openclaw-airesearchos
+
+    # Path: bowtiedbluefin/openclaw-airesearchos
+
+
+    ## Description
+
+    "Deep research powered by AIresearchOS. Submit, track, and retrieve research with clarifying questions. Supports API key
+    auth and x402 USDC payments."
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/check-status.mjs
+
+    - scripts/package.json
+
+    - scripts/x402-request.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-airesearchos
+
+    ```'
+examples:
+- description: Install AIresearchOS from ClawHub
+  usage: clawhub install openclaw-airesearchos
+schema_version: '1.0'

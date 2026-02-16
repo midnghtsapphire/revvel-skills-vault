@@ -1,0 +1,55 @@
+name: slipbot
+title: SlipBot
+version: 1.0.0
+description: Used to capture and organize notes, ideas, quotes, and journal entries with automatic tagging, linking, and knowledge
+  graph maintenance.
+metadata:
+  author: jrswab
+  category: General
+  tags:
+  - general
+  - slipbot
+  source: clawhub-community
+  clawhub_slug: slipbot
+  clawhub_path: jrswab/slipbot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SlipBot
+
+    # Source: ClawHub community skill by jrswab
+
+    # Install: clawhub install slipbot
+
+    # Path: jrswab/slipbot
+
+
+    ## Description
+
+    Used to capture and organize notes, ideas, quotes, and journal entries with automatic tagging, linking, and knowledge
+    graph maintenance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install slipbot
+
+    ```'
+examples:
+- description: Install SlipBot from ClawHub
+  usage: clawhub install slipbot
+schema_version: '1.0'

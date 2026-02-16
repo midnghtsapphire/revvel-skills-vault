@@ -1,0 +1,54 @@
+name: thinking-partner
+title: Thinking Partner
+version: 1.0.0
+description: Collaborative thinking partner for exploring complex problems through questioning
+metadata:
+  author: itsflow
+  category: General
+  tags:
+  - general
+  - thinking
+  - partner
+  source: clawhub-community
+  clawhub_slug: thinking-partner
+  clawhub_path: itsflow/thinking-partner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Thinking Partner
+
+    # Source: ClawHub community skill by itsflow
+
+    # Install: clawhub install thinking-partner
+
+    # Path: itsflow/thinking-partner
+
+
+    ## Description
+
+    Collaborative thinking partner for exploring complex problems through questioning
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install thinking-partner
+
+    ```'
+examples:
+- description: Install Thinking Partner from ClawHub
+  usage: clawhub install thinking-partner
+schema_version: '1.0'

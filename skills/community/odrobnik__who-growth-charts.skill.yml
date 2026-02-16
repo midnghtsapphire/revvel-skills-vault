@@ -1,0 +1,59 @@
+name: who-growth-charts
+title: WHO Growth Charts
+version: 1.2.0
+description: Generate WHO child growth charts (height, weight, BMI) with percentile curves. Downloads official WHO reference
+  data on demand. Use when users ask about child growth tracking, percentiles, or want growth charts for their kids.
+metadata:
+  author: odrobnik
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - who
+  - growth
+  - charts
+  source: clawhub-community
+  clawhub_slug: who-growth-charts
+  clawhub_path: odrobnik/who-growth-charts
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WHO Growth Charts
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install who-growth-charts
+
+    # Path: odrobnik/who-growth-charts
+
+
+    ## Description
+
+    Generate WHO child growth charts (height, weight, BMI) with percentile curves. Downloads official WHO reference data on
+    demand. Use when users ask about child growth tracking, percentiles, or want growth charts for their kids.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/growth_chart.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install who-growth-charts
+
+    ```'
+examples:
+- description: Install WHO Growth Charts from ClawHub
+  usage: clawhub install who-growth-charts
+schema_version: '1.0'

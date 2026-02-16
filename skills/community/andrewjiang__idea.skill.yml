@@ -1,0 +1,61 @@
+name: idea
+title: Idea Recorder
+version: 1.0.4
+description: '"Launch background Claude sessions to explore and analyze business ideas. Say ''Idea: [description]'' to trigger."'
+metadata:
+  author: andrewjiang
+  category: General
+  tags:
+  - general
+  - idea
+  source: clawhub-community
+  clawhub_slug: idea
+  clawhub_path: andrewjiang/idea
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Idea Recorder
+
+    # Source: ClawHub community skill by andrewjiang
+
+    # Install: clawhub install idea
+
+    # Path: andrewjiang/idea
+
+
+    ## Description
+
+    "Launch background Claude sessions to explore and analyze business ideas. Say ''Idea: [description]'' to trigger."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/explore-idea.sh
+
+    - scripts/notify-research-complete.sh
+
+    - templates/idea-exploration-prompt.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install idea
+
+    ```'
+examples:
+- description: Install Idea Recorder from ClawHub
+  usage: clawhub install idea
+schema_version: '1.0'

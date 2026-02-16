@@ -1,0 +1,57 @@
+name: relationship
+title: Relationship
+version: 2.0.0
+description: '"Calculate spatial relationships between two points including distance, direction, travel time, and human-readable
+  descriptions. Use when you need to understand how locations relate to each other."'
+metadata:
+  author: barneyjm
+  category: Utilities
+  tags:
+  - utilities
+  - relationship
+  source: clawhub-community
+  clawhub_slug: relationship
+  clawhub_path: barneyjm/relationship
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Relationship
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install relationship
+
+    # Path: barneyjm/relationship
+
+
+    ## Description
+
+    "Calculate spatial relationships between two points including distance, direction, travel time, and human-readable descriptions.
+    Use when you need to understand how locations relate to each other."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/relationship.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install relationship
+
+    ```'
+examples:
+- description: Install Relationship from ClawHub
+  usage: clawhub install relationship
+schema_version: '1.0'

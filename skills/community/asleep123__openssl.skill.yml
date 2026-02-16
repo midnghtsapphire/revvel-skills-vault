@@ -1,0 +1,55 @@
+name: openssl
+title: Openssl
+version: 1.0.0
+description: Generate secure random strings, passwords, and cryptographic tokens using OpenSSL. Use when creating passwords,
+  API keys, secrets, or any secure random data.
+metadata:
+  author: asleep123
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openssl
+  source: clawhub-community
+  clawhub_slug: openssl
+  clawhub_path: asleep123/openssl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openssl
+
+    # Source: ClawHub community skill by asleep123
+
+    # Install: clawhub install openssl
+
+    # Path: asleep123/openssl
+
+
+    ## Description
+
+    Generate secure random strings, passwords, and cryptographic tokens using OpenSSL. Use when creating passwords, API keys,
+    secrets, or any secure random data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openssl
+
+    ```'
+examples:
+- description: Install Openssl from ClawHub
+  usage: clawhub install openssl
+schema_version: '1.0'

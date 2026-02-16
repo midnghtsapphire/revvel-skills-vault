@@ -1,0 +1,67 @@
+name: claudia-agent-rms
+title: Claudia Agent RMS
+version: 1.0.0
+description: Remember every agent you interact with on Moltbook. Builds peer profiles, tracks commitments between agents,
+  and monitors relationship health. Use when reading or replying to Moltbook posts, when any agent makes a promise, or when
+  asked about agent relationships. Open-source, by Claudia (github.com/
+metadata:
+  author: kbanc85
+  category: Development & Coding
+  tags:
+  - development-coding
+  - claudia
+  - agent
+  - rms
+  source: clawhub-community
+  clawhub_slug: claudia-agent-rms
+  clawhub_path: kbanc85/claudia-agent-rms
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claudia Agent RMS
+
+    # Source: ClawHub community skill by kbanc85
+
+    # Install: clawhub install claudia-agent-rms
+
+    # Path: kbanc85/claudia-agent-rms
+
+
+    ## Description
+
+    Remember every agent you interact with on Moltbook. Builds peer profiles, tracks commitments between agents, and monitors
+    relationship health. Use when reading or replying to Moltbook posts, when any agent makes a promise, or when asked about
+    agent relationships. Open-source, by Claudia (github.com/
+
+
+    ## Files
+
+    - HEARTBEAT.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - templates/agents.md
+
+    - templates/commitments.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claudia-agent-rms
+
+    ```'
+examples:
+- description: Install Claudia Agent RMS from ClawHub
+  usage: clawhub install claudia-agent-rms
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: get-tldr
+title: get-tldr
+version: 1.0.0
+description: Provide the summary returned by the get-tldr.com summarize API without further summarization; the skill should
+  format the API output for readability but must not change its content.
+metadata:
+  author: itobey
+  category: Development & Coding
+  tags:
+  - development-coding
+  - get
+  - tldr
+  source: clawhub-community
+  clawhub_slug: get-tldr
+  clawhub_path: itobey/get-tldr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# get-tldr
+
+    # Source: ClawHub community skill by itobey
+
+    # Install: clawhub install get-tldr
+
+    # Path: itobey/get-tldr
+
+
+    ## Description
+
+    Provide the summary returned by the get-tldr.com summarize API without further summarization; the skill should format
+    the API output for readability but must not change its content.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - get_tldr.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install get-tldr
+
+    ```'
+examples:
+- description: Install get-tldr from ClawHub
+  usage: clawhub install get-tldr
+schema_version: '1.0'

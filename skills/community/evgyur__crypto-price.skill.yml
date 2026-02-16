@@ -1,0 +1,64 @@
+name: crypto-price
+title: Crypto Price
+version: 0.2.2
+description: Get cryptocurrency token price and generate candlestick charts via CoinGecko API or Hyperliquid API. Use when
+  user asks for token price, crypto price, price chart, or cryptocurrency market data.
+metadata:
+  author: evgyur
+  category: Development & Coding
+  tags:
+  - development-coding
+  - crypto
+  - price
+  source: clawhub-community
+  clawhub_slug: crypto-price
+  clawhub_path: evgyur/crypto-price
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crypto Price
+
+    # Source: ClawHub community skill by evgyur
+
+    # Install: clawhub install crypto-price
+
+    # Path: evgyur/crypto-price
+
+
+    ## Description
+
+    Get cryptocurrency token price and generate candlestick charts via CoinGecko API or Hyperliquid API. Use when user asks
+    for token price, crypto price, price chart, or cryptocurrency market data.
+
+
+    ## Files
+
+    - ARCHITECTURE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/get_price_chart.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crypto-price
+
+    ```'
+examples:
+- description: Install Crypto Price from ClawHub
+  usage: clawhub install crypto-price
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: product-description
+title: Product Description Generator
+version: 1.0.0
+description: ''
+metadata:
+  author: user520512
+  category: General
+  tags:
+  - general
+  - product
+  - description
+  source: clawhub-community
+  clawhub_slug: product-description
+  clawhub_path: user520512/product-description
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Product Description Generator
+
+    # Source: ClawHub community skill by user520512
+
+    # Install: clawhub install product-description
+
+    # Path: user520512/product-description
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install product-description
+
+    ```'
+examples:
+- description: Install Product Description Generator from ClawHub
+  usage: clawhub install product-description
+schema_version: '1.0'

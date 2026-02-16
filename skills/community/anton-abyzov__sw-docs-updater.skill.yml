@@ -1,0 +1,60 @@
+name: docs-updater
+title: Docs Updater
+version: 1.0.0
+description: Living documentation updater that syncs implementation progress to product docs. Use when updating docs after
+  task completion, changing DRAFT status to published, or ensuring documentation reflects current implementation state.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - docs
+  - updater
+  source: clawhub-community
+  clawhub_slug: sw-docs-updater
+  clawhub_path: anton-abyzov/sw-docs-updater
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docs Updater
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-docs-updater
+
+    # Path: anton-abyzov/sw-docs-updater
+
+
+    ## Description
+
+    Living documentation updater that syncs implementation progress to product docs. Use when updating docs after task completion,
+    changing DRAFT status to published, or ensuring documentation reflects current implementation state.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-docs-updater
+
+    ```'
+examples:
+- description: Install Docs Updater from ClawHub
+  usage: clawhub install sw-docs-updater
+schema_version: '1.0'

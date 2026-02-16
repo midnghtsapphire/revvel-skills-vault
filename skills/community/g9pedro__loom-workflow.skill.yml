@@ -1,0 +1,64 @@
+name: loom-workflow
+title: Loom Workflow
+version: 1.0.1
+description: '|'
+metadata:
+  author: g9pedro
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - loom
+  - workflow
+  source: clawhub-community
+  clawhub_slug: loom-workflow
+  clawhub_path: g9pedro/loom-workflow
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Loom Workflow
+
+    # Source: ClawHub community skill by g9pedro
+
+    # Install: clawhub install loom-workflow
+
+    # Path: g9pedro/loom-workflow
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - DESIGN.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/analyze-workflow.py
+
+    - scripts/generate-lobster.py
+
+    - scripts/smart-extract.py
+
+    - test-output/video.info.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install loom-workflow
+
+    ```'
+examples:
+- description: Install Loom Workflow from ClawHub
+  usage: clawhub install loom-workflow
+schema_version: '1.0'

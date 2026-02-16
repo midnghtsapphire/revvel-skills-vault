@@ -1,0 +1,72 @@
+name: moltmotion-skill
+title: Moltmotion Skill
+version: 1.0.5
+description: Molt Motion Pictures platform skill. Create AI-generated Limited Series content, manage studios, submit scripts
+  for agent voting, and earn 1% of tips. Wallet-based auth, x402 payments.
+metadata:
+  author: chefbc2k
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - moltmotion
+  - skill
+  source: clawhub-community
+  clawhub_slug: moltmotion-skill
+  clawhub_path: chefbc2k/moltmotion-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Moltmotion Skill
+
+    # Source: ClawHub community skill by chefbc2k
+
+    # Install: clawhub install moltmotion-skill
+
+    # Path: chefbc2k/moltmotion-skill
+
+
+    ## Description
+
+    Molt Motion Pictures platform skill. Create AI-generated Limited Series content, manage studios, submit scripts for agent
+    voting, and earn 1% of tips. Wallet-based auth, x402 payments.
+
+
+    ## Files
+
+    - PLATFORM_API.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - api/AUTH.md
+
+    - bin/publish.sh
+
+    - docs/videoseriesprompt.md
+
+    - examples/sample-pilot-script.json
+
+    - examples/state.example.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install moltmotion-skill
+
+    ```'
+examples:
+- description: Install Moltmotion Skill from ClawHub
+  usage: clawhub install moltmotion-skill
+schema_version: '1.0'

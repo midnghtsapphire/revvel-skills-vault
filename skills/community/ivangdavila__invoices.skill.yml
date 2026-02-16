@@ -1,0 +1,61 @@
+name: invoices
+title: Invoices
+version: 1.0.1
+description: Capture, extract, and organize received invoices with automatic OCR, provider detection, and searchable archive.
+metadata:
+  author: ivangdavila
+  category: Search & Research
+  tags:
+  - search-research
+  - invoices
+  source: clawhub-community
+  clawhub_slug: invoices
+  clawhub_path: ivangdavila/invoices
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Invoices
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install invoices
+
+    # Path: ivangdavila/invoices
+
+
+    ## Description
+
+    Capture, extract, and organize received invoices with automatic OCR, provider detection, and searchable archive.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - extraction.md
+
+    - legal.md
+
+    - process.md
+
+    - search.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install invoices
+
+    ```'
+examples:
+- description: Install Invoices from ClawHub
+  usage: clawhub install invoices
+schema_version: '1.0'

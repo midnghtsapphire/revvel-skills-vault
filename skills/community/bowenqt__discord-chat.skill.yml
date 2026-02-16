@@ -1,0 +1,64 @@
+name: discord-chat
+title: Discord Chat
+version: 1.0.0
+description: Send messages, reply to messages, and search message history in Discord channels using the message tool. Use
+  when the user wants to communicate with Discord (send/reply/search messages), check Discord activity, or interact with Discord
+  channels.
+metadata:
+  author: bowenqt
+  category: Search & Research
+  tags:
+  - search-research
+  - discord
+  - chat
+  source: clawhub-community
+  clawhub_slug: discord-chat
+  clawhub_path: bowenqt/discord-chat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Discord Chat
+
+    # Source: ClawHub community skill by bowenqt
+
+    # Install: clawhub install discord-chat
+
+    # Path: bowenqt/discord-chat
+
+
+    ## Description
+
+    Send messages, reply to messages, and search message history in Discord channels using the message tool. Use when the
+    user wants to communicate with Discord (send/reply/search messages), check Discord activity, or interact with Discord
+    channels.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/CHANNELS.md
+
+    - references/CONFIG.md
+
+    - references/SEARCH.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install discord-chat
+
+    ```'
+examples:
+- description: Install Discord Chat from ClawHub
+  usage: clawhub install discord-chat
+schema_version: '1.0'

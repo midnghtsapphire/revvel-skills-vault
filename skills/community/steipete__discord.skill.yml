@@ -1,0 +1,57 @@
+name: discord
+title: Discord
+version: 1.0.1
+description: 'Use when you need to control Discord from Clawdbot via the discord tool: send messages, react, post or upload
+  stickers, upload emojis, run polls, manage threads/pins/search, fetch permissions or member/role/channel info, or handle
+  moderation actions in Discord DMs or channels.'
+metadata:
+  author: steipete
+  category: Search & Research
+  tags:
+  - search-research
+  - discord
+  source: clawhub-community
+  clawhub_slug: discord
+  clawhub_path: steipete/discord
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Discord
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install discord
+
+    # Path: steipete/discord
+
+
+    ## Description
+
+    Use when you need to control Discord from Clawdbot via the discord tool: send messages, react, post or upload stickers,
+    upload emojis, run polls, manage threads/pins/search, fetch permissions or member/role/channel info, or handle moderation
+    actions in Discord DMs or channels.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install discord
+
+    ```'
+examples:
+- description: Install Discord from ClawHub
+  usage: clawhub install discord
+schema_version: '1.0'

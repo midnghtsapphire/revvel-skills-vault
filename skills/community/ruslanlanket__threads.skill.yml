@@ -1,0 +1,57 @@
+name: threads
+title: Threads. Publish, read posts whith images. Retrieve user profile information.
+version: 1.0.0
+description: Взаимодействие с Threads API для публикации постов (текст, изображения), чтения постов и получения информации
+  о профиле. Используйте, когда пользователю нужно работать с Threads через Graph API.
+metadata:
+  author: ruslanlanket
+  category: Media & Content
+  tags:
+  - media-content
+  - threads
+  source: clawhub-community
+  clawhub_slug: threads
+  clawhub_path: ruslanlanket/threads
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Threads. Publish, read posts whith images. Retrieve user profile information.
+
+    # Source: ClawHub community skill by ruslanlanket
+
+    # Install: clawhub install threads
+
+    # Path: ruslanlanket/threads
+
+
+    ## Description
+
+    Взаимодействие с Threads API для публикации постов (текст, изображения), чтения постов и получения информации о профиле.
+    Используйте, когда пользователю нужно работать с Threads через Graph API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/threads_cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install threads
+
+    ```'
+examples:
+- description: Install Threads. Publish, read posts whith images. Retrieve user profile information. from ClawHub
+  usage: clawhub install threads
+schema_version: '1.0'

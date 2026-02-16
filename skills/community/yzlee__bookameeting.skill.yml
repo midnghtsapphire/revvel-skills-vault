@@ -1,0 +1,52 @@
+name: bookameeting
+title: Book a meeting
+version: 1.0.0
+description: ''
+metadata:
+  author: yzlee
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - bookameeting
+  source: clawhub-community
+  clawhub_slug: bookameeting
+  clawhub_path: yzlee/bookameeting
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book a meeting
+
+    # Source: ClawHub community skill by yzlee
+
+    # Install: clawhub install bookameeting
+
+    # Path: yzlee/bookameeting
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - _meta.json
+
+    - skill.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bookameeting
+
+    ```'
+examples:
+- description: Install Book a meeting from ClawHub
+  usage: clawhub install bookameeting
+schema_version: '1.0'

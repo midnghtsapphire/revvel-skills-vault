@@ -1,0 +1,57 @@
+name: tasktrove
+title: Tasktrove
+version: 1.0.0
+description: Manage todos via Tasktrove API. Use for listing, creating, completing, or updating tasks. Triggers on task/todo
+  requests like "what's on my todo list", "add a task", "mark X done", "what's due today".
+metadata:
+  author: willwebberley
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tasktrove
+  source: clawhub-community
+  clawhub_slug: tasktrove
+  clawhub_path: willwebberley/tasktrove
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tasktrove
+
+    # Source: ClawHub community skill by willwebberley
+
+    # Install: clawhub install tasktrove
+
+    # Path: willwebberley/tasktrove
+
+
+    ## Description
+
+    Manage todos via Tasktrove API. Use for listing, creating, completing, or updating tasks. Triggers on task/todo requests
+    like "what''s on my todo list", "add a task", "mark X done", "what''s due today".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tasks.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tasktrove
+
+    ```'
+examples:
+- description: Install Tasktrove from ClawHub
+  usage: clawhub install tasktrove
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: skill-security-auditor
+title: Skill Security Auditor
+version: 1.0.1
+description: Command-line security analyzer for ClawHub skills. Run analyze-skill.sh to scan SKILL.md files for malicious
+  patterns, credential leaks, and C2 infrastructure before installation. Includes threat intelligence database with 20+ detection
+  patterns.
+metadata:
+  author: akhmittra
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - security
+  - auditor
+  source: clawhub-community
+  clawhub_slug: skill-security-auditor
+  clawhub_path: akhmittra/skill-security-auditor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Security Auditor
+
+    # Source: ClawHub community skill by akhmittra
+
+    # Install: clawhub install skill-security-auditor
+
+    # Path: akhmittra/skill-security-auditor
+
+
+    ## Description
+
+    Command-line security analyzer for ClawHub skills. Run analyze-skill.sh to scan SKILL.md files for malicious patterns,
+    credential leaks, and C2 infrastructure before installation. Includes threat intelligence database with 20+ detection
+    patterns.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - analyze-skill.sh
+
+    - patterns/malicious-patterns.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-security-auditor
+
+    ```'
+examples:
+- description: Install Skill Security Auditor from ClawHub
+  usage: clawhub install skill-security-auditor
+schema_version: '1.0'

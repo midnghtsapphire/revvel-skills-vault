@@ -1,0 +1,59 @@
+name: query
+title: Query
+version: 2.0.0
+description: '"Search for places using natural language with Camino AI''s location intelligence API. Returns relevant results
+  with coordinates, distances, and metadata. Use when you need to find real-world locations like restaurants, shops, landmarks,
+  or any point of interest."'
+metadata:
+  author: barneyjm
+  category: Search & Research
+  tags:
+  - search-research
+  - query
+  source: clawhub-community
+  clawhub_slug: query
+  clawhub_path: barneyjm/query
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Query
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install query
+
+    # Path: barneyjm/query
+
+
+    ## Description
+
+    "Search for places using natural language with Camino AI''s location intelligence API. Returns relevant results with coordinates,
+    distances, and metadata. Use when you need to find real-world locations like restaurants, shops, landmarks, or any point
+    of interest."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/query.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install query
+
+    ```'
+examples:
+- description: Install Query from ClawHub
+  usage: clawhub install query
+schema_version: '1.0'

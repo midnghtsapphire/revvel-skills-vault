@@ -1,0 +1,57 @@
+name: crawl
+title: Crawl
+version: 0.1.0
+description: '"Crawl any website and save pages as local markdown files. Use when you need to download documentation, knowledge
+  bases, or web content for offline access or analysis. No code required - just provide a URL."'
+metadata:
+  author: barneyjm
+  category: Search & Research
+  tags:
+  - search-research
+  - crawl
+  source: clawhub-community
+  clawhub_slug: crawl
+  clawhub_path: barneyjm/crawl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crawl
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install crawl
+
+    # Path: barneyjm/crawl
+
+
+    ## Description
+
+    "Crawl any website and save pages as local markdown files. Use when you need to download documentation, knowledge bases,
+    or web content for offline access or analysis. No code required - just provide a URL."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/crawl.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crawl
+
+    ```'
+examples:
+- description: Install Crawl from ClawHub
+  usage: clawhub install crawl
+schema_version: '1.0'

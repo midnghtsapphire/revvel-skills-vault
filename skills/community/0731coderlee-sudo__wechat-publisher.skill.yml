@@ -1,0 +1,66 @@
+name: wechat-publisher
+title: Wechat Publisher
+version: 0.1.0
+description: '"一键发布 Markdown 到微信公众号草稿箱。基于 wenyan-cli，支持多主题、代码高亮、图片自动上传。"'
+metadata:
+  author: 0731coderlee-sudo
+  category: Communication
+  tags:
+  - communication
+  - wechat
+  - publisher
+  source: clawhub-community
+  clawhub_slug: wechat-publisher
+  clawhub_path: 0731coderlee-sudo/wechat-publisher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Wechat Publisher
+
+    # Source: ClawHub community skill by 0731coderlee-sudo
+
+    # Install: clawhub install wechat-publisher
+
+    # Path: 0731coderlee-sudo/wechat-publisher
+
+
+    ## Description
+
+    "一键发布 Markdown 到微信公众号草稿箱。基于 wenyan-cli，支持多主题、代码高亮、图片自动上传。"
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - example.md
+
+    - references/themes.md
+
+    - references/troubleshooting.md
+
+    - scripts/publish.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wechat-publisher
+
+    ```'
+examples:
+- description: Install Wechat Publisher from ClawHub
+  usage: clawhub install wechat-publisher
+schema_version: '1.0'

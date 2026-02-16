@@ -1,0 +1,58 @@
+name: runstr-fitness
+title: RUNSTR Fitness
+version: 1.0.0
+description: Give your AI agent access to your health and fitness data from RUNSTR. Fetches workouts, habits, journal entries,
+  mood, steps, and more from Nostr. Use when the user asks about their workouts, fitness history, health habits, mood tracking,
+  or wants AI fitness coaching based on real data.
+metadata:
+  author: thewildhustle
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - runstr
+  - fitness
+  source: clawhub-community
+  clawhub_slug: runstr-fitness
+  clawhub_path: thewildhustle/runstr-fitness
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# RUNSTR Fitness
+
+    # Source: ClawHub community skill by thewildhustle
+
+    # Install: clawhub install runstr-fitness
+
+    # Path: thewildhustle/runstr-fitness
+
+
+    ## Description
+
+    Give your AI agent access to your health and fitness data from RUNSTR. Fetches workouts, habits, journal entries, mood,
+    steps, and more from Nostr. Use when the user asks about their workouts, fitness history, health habits, mood tracking,
+    or wants AI fitness coaching based on real data.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install runstr-fitness
+
+    ```'
+examples:
+- description: Install RUNSTR Fitness from ClawHub
+  usage: clawhub install runstr-fitness
+schema_version: '1.0'

@@ -1,0 +1,54 @@
+name: skill-seekers
+title: Skill Seekers
+version: 0.1.0
+description: 自动将文档网站、GitHub 仓库、PDF 转换为 Claude AI Skill。使用 Skill Seekers 工具快速创建新技能，支持文档抓取、代码分析、冲突检测、多源合并、AI 增强。
+metadata:
+  author: truongvknnlthao-gif
+  category: Development & Coding
+  tags:
+  - development-coding
+  - skill
+  - seekers
+  source: clawhub-community
+  clawhub_slug: skill-seekers
+  clawhub_path: truongvknnlthao-gif/skill-seekers
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Seekers
+
+    # Source: ClawHub community skill by truongvknnlthao-gif
+
+    # Install: clawhub install skill-seekers
+
+    # Path: truongvknnlthao-gif/skill-seekers
+
+
+    ## Description
+
+    自动将文档网站、GitHub 仓库、PDF 转换为 Claude AI Skill。使用 Skill Seekers 工具快速创建新技能，支持文档抓取、代码分析、冲突检测、多源合并、AI 增强。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-seekers
+
+    ```'
+examples:
+- description: Install Skill Seekers from ClawHub
+  usage: clawhub install skill-seekers
+schema_version: '1.0'

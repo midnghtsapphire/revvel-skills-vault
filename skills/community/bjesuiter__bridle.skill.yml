@@ -1,0 +1,55 @@
+name: bridle
+title: Bridle
+version: 1.1.0
+description: Unified configuration manager for AI coding assistants. Manage profiles, install skills/agents/commands, and
+  switch configurations across Claude Code, OpenCode, Goose, and Amp.
+metadata:
+  author: bjesuiter
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bridle
+  source: clawhub-community
+  clawhub_slug: bridle
+  clawhub_path: bjesuiter/bridle
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bridle
+
+    # Source: ClawHub community skill by bjesuiter
+
+    # Install: clawhub install bridle
+
+    # Path: bjesuiter/bridle
+
+
+    ## Description
+
+    Unified configuration manager for AI coding assistants. Manage profiles, install skills/agents/commands, and switch configurations
+    across Claude Code, OpenCode, Goose, and Amp.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bridle
+
+    ```'
+examples:
+- description: Install Bridle from ClawHub
+  usage: clawhub install bridle
+schema_version: '1.0'

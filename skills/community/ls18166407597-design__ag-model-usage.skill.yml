@@ -1,0 +1,62 @@
+name: model-usage
+title: Antigravity Model Usage
+version: 1.0.0
+description: Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most
+  recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need
+  a scriptable per-model summary from codexbar cost JSON.
+metadata:
+  author: ls18166407597-design
+  category: Development & Coding
+  tags:
+  - development-coding
+  - model
+  - usage
+  source: clawhub-community
+  clawhub_slug: ag-model-usage
+  clawhub_path: ls18166407597-design/ag-model-usage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Antigravity Model Usage
+
+    # Source: ClawHub community skill by ls18166407597-design
+
+    # Install: clawhub install ag-model-usage
+
+    # Path: ls18166407597-design/ag-model-usage
+
+
+    ## Description
+
+    Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent)
+    model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a
+    scriptable per-model summary from codexbar cost JSON.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/codexbar-cli.md
+
+    - scripts/model_usage.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ag-model-usage
+
+    ```'
+examples:
+- description: Install Antigravity Model Usage from ClawHub
+  usage: clawhub install ag-model-usage
+schema_version: '1.0'

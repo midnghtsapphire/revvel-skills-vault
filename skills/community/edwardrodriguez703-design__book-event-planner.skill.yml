@@ -1,0 +1,57 @@
+name: book-event-planner
+title: Book Event Planner
+version: 1.0.1
+description: Book event-planner services through Lokuli MCP. Use when user needs to find and book event-planner. Triggers
+  on requests like "book a event-planner", "find event-planner near me", or any event-planner service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - event
+  - planner
+  source: clawhub-community
+  clawhub_slug: book-event-planner
+  clawhub_path: edwardrodriguez703-design/book-event-planner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Event Planner
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-event-planner
+
+    # Path: edwardrodriguez703-design/book-event-planner
+
+
+    ## Description
+
+    Book event-planner services through Lokuli MCP. Use when user needs to find and book event-planner. Triggers on requests
+    like "book a event-planner", "find event-planner near me", or any event-planner service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-event-planner
+
+    ```'
+examples:
+- description: Install Book Event Planner from ClawHub
+  usage: clawhub install book-event-planner
+schema_version: '1.0'

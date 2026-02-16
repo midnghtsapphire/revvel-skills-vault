@@ -1,0 +1,56 @@
+name: bring-recipes
+title: Bring Recipes
+version: 0.1.0
+description: Use when user wants to browse recipe inspirations from Bring! shopping app. For discovering recipes, viewing
+  recipe details (name, author, type, images), or filtering by tags. Note - cannot import ingredients (API limitation).
+metadata:
+  author: darkdevelopers
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - bring
+  - recipes
+  source: clawhub-community
+  clawhub_slug: bring-recipes
+  clawhub_path: darkdevelopers/bring-recipes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bring Recipes
+
+    # Source: ClawHub community skill by darkdevelopers
+
+    # Install: clawhub install bring-recipes
+
+    # Path: darkdevelopers/bring-recipes
+
+
+    ## Description
+
+    Use when user wants to browse recipe inspirations from Bring! shopping app. For discovering recipes, viewing recipe details
+    (name, author, type, images), or filtering by tags. Note - cannot import ingredients (API limitation).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bring-recipes
+
+    ```'
+examples:
+- description: Install Bring Recipes from ClawHub
+  usage: clawhub install bring-recipes
+schema_version: '1.0'

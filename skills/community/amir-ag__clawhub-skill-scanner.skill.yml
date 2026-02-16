@@ -1,0 +1,61 @@
+name: clawhub-skill-scanner
+title: Clawhub Skill Scanner
+version: 0.1.0
+description: '>'
+metadata:
+  author: amir-ag
+  category: General
+  tags:
+  - general
+  - clawhub
+  - skill
+  - scanner
+  source: clawhub-community
+  clawhub_slug: clawhub-skill-scanner
+  clawhub_path: amir-ag/clawhub-skill-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawhub Skill Scanner
+
+    # Source: ClawHub community skill by amir-ag
+
+    # Install: clawhub install clawhub-skill-scanner
+
+    # Path: amir-ag/clawhub-skill-scanner
+
+
+    ## Description
+
+    >
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/threat-patterns.md
+
+    - scripts/scan_skill.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawhub-skill-scanner
+
+    ```'
+examples:
+- description: Install Clawhub Skill Scanner from ClawHub
+  usage: clawhub install clawhub-skill-scanner
+schema_version: '1.0'

@@ -1,0 +1,79 @@
+name: agentic-x402
+title: Agentic X402
+version: 0.2.1
+description: Make x402 payments to access gated APIs and content. Fetch paid resources, check wallet balance, and create payment
+  links. Use when encountering 402 Payment Required responses or when the user wants to pay for web resources with crypto.
+metadata:
+  author: ya7ya
+  category: Development & Coding
+  tags:
+  - development-coding
+  - agentic
+  - x402
+  - bash(x402:*) bash(npm:*) read
+  source: clawhub-community
+  clawhub_slug: agentic-x402
+  clawhub_path: ya7ya/agentic-x402
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(x402:*) Bash(npm:*) Read
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agentic X402
+
+    # Source: ClawHub community skill by ya7ya
+
+    # Install: clawhub install agentic-x402
+
+    # Path: ya7ya/agentic-x402
+
+
+    ## Description
+
+    Make x402 payments to access gated APIs and content. Fetch paid resources, check wallet balance, and create payment links.
+    Use when encountering 402 Payment Required responses or when the user wants to pay for web resources with crypto.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - pnpm-lock.yaml
+
+    - tsconfig.json
+
+    - bin/cli.ts
+
+    - bin/x402.js
+
+    - config/example.env
+
+    - scripts/commands/balance.ts
+
+
+    ## Allowed Tools
+
+    Bash(x402:*) Bash(npm:*) Read
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentic-x402
+
+    ```'
+examples:
+- description: Install Agentic X402 from ClawHub
+  usage: clawhub install agentic-x402
+schema_version: '1.0'

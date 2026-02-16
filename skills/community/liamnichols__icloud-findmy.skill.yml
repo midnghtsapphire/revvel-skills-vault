@@ -1,0 +1,56 @@
+name: icloud-findmy
+title: iCloud Find My
+version: 1.0.0
+description: Query Find My locations and battery status for family devices via iCloud.
+metadata:
+  author: liamnichols
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - icloud
+  - findmy
+  source: clawhub-community
+  clawhub_slug: icloud-findmy
+  clawhub_path: liamnichols/icloud-findmy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# iCloud Find My
+
+    # Source: ClawHub community skill by liamnichols
+
+    # Install: clawhub install icloud-findmy
+
+    # Path: liamnichols/icloud-findmy
+
+
+    ## Description
+
+    Query Find My locations and battery status for family devices via iCloud.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install icloud-findmy
+
+    ```'
+examples:
+- description: Install iCloud Find My from ClawHub
+  usage: clawhub install icloud-findmy
+schema_version: '1.0'

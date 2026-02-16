@@ -1,0 +1,53 @@
+name: linkedin
+title: LinkedIn
+version: 1.0.0
+description: LinkedIn automation via browser relay or cookies for messaging, profile viewing, and network actions.
+metadata:
+  author: biostartechnology
+  category: Search & Research
+  tags:
+  - search-research
+  - linkedin
+  source: clawhub-community
+  clawhub_slug: linkedin
+  clawhub_path: biostartechnology/linkedin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LinkedIn
+
+    # Source: ClawHub community skill by biostartechnology
+
+    # Install: clawhub install linkedin
+
+    # Path: biostartechnology/linkedin
+
+
+    ## Description
+
+    LinkedIn automation via browser relay or cookies for messaging, profile viewing, and network actions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linkedin
+
+    ```'
+examples:
+- description: Install LinkedIn from ClawHub
+  usage: clawhub install linkedin
+schema_version: '1.0'

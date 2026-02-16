@@ -1,0 +1,67 @@
+name: release-notes-gen
+title: Release Notes Generator
+version: 1.0.1
+description: Turn git history into readable release notes. Use when publishing releases.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - release
+  - notes
+  - gen
+  source: clawhub-community
+  clawhub_slug: release-notes-gen
+  clawhub_path: lxgicstudios/release-notes-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Release Notes Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install release-notes-gen
+
+    # Path: lxgicstudios/release-notes-gen
+
+
+    ## Description
+
+    Turn git history into readable release notes. Use when publishing releases.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - src/cli.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install release-notes-gen
+
+    ```'
+examples:
+- description: Install Release Notes Generator from ClawHub
+  usage: clawhub install release-notes-gen
+schema_version: '1.0'

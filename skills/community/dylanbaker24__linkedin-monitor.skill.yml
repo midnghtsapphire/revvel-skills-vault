@@ -1,0 +1,72 @@
+name: linkedin-monitor
+title: Linkedin Monitor
+version: 1.1.0
+description: Bulletproof LinkedIn inbox monitoring with progressive autonomy. Monitors messages hourly, drafts replies in
+  your voice, and alerts you to new conversations. Supports 4 autonomy levels from monitor-only to full autonomous.
+metadata:
+  author: dylanbaker24
+  category: Social Media
+  tags:
+  - social-media
+  - linkedin
+  - monitor
+  source: clawhub-community
+  clawhub_slug: linkedin-monitor
+  clawhub_path: dylanbaker24/linkedin-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Linkedin Monitor
+
+    # Source: ClawHub community skill by dylanbaker24
+
+    # Install: clawhub install linkedin-monitor
+
+    # Path: dylanbaker24/linkedin-monitor
+
+
+    ## Description
+
+    Bulletproof LinkedIn inbox monitoring with progressive autonomy. Monitors messages hourly, drafts replies in your voice,
+    and alerts you to new conversations. Supports 4 autonomy levels from monitor-only to full autonomous.
+
+
+    ## Files
+
+    - CRON-PAYLOAD.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - docs/SETUP.md
+
+    - docs/TROUBLESHOOT.md
+
+    - scripts/check-browser.sh
+
+    - scripts/check.sh
+
+    - scripts/cron-wrapper.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linkedin-monitor
+
+    ```'
+examples:
+- description: Install Linkedin Monitor from ClawHub
+  usage: clawhub install linkedin-monitor
+schema_version: '1.0'

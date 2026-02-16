@@ -1,0 +1,59 @@
+name: telegram-ascii-table
+title: Telegram Ascii Table
+version: 1.1.0
+description: Format tabular data as ASCII box tables for Telegram. Stdin-only input eliminates shell injection risks. Handles
+  smart column sizing, text wrapping, and proper padding for monospace display.
+metadata:
+  author: nalg
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - ascii
+  - table
+  source: clawhub-community
+  clawhub_slug: telegram-ascii-table
+  clawhub_path: nalg/telegram-ascii-table
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Telegram Ascii Table
+
+    # Source: ClawHub community skill by nalg
+
+    # Install: clawhub install telegram-ascii-table
+
+    # Path: nalg/telegram-ascii-table
+
+
+    ## Description
+
+    Format tabular data as ASCII box tables for Telegram. Stdin-only input eliminates shell injection risks. Handles smart
+    column sizing, text wrapping, and proper padding for monospace display.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ascii-table.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-ascii-table
+
+    ```'
+examples:
+- description: Install Telegram Ascii Table from ClawHub
+  usage: clawhub install telegram-ascii-table
+schema_version: '1.0'

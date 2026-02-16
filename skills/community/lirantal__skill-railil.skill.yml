@@ -1,0 +1,55 @@
+name: railil
+title: Railil
+version: 1.0.0
+description: Search for Israel Rail train schedules using the railil CLI. Find routes between stations with fuzzy search,
+  filter by date/time, and output in various formats (JSON, Markdown, Table).
+metadata:
+  author: lirantal
+  category: Search & Research
+  tags:
+  - search-research
+  - railil
+  source: clawhub-community
+  clawhub_slug: skill-railil
+  clawhub_path: lirantal/skill-railil
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Railil
+
+    # Source: ClawHub community skill by lirantal
+
+    # Install: clawhub install skill-railil
+
+    # Path: lirantal/skill-railil
+
+
+    ## Description
+
+    Search for Israel Rail train schedules using the railil CLI. Find routes between stations with fuzzy search, filter by
+    date/time, and output in various formats (JSON, Markdown, Table).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-railil
+
+    ```'
+examples:
+- description: Install Railil from ClawHub
+  usage: clawhub install skill-railil
+schema_version: '1.0'

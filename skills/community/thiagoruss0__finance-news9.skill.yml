@@ -1,0 +1,60 @@
+name: finance-news
+title: Finance News
+version: 1.0.0
+description: '"Market news briefings with AI summaries. Use when asked about stock news, market updates, portfolio performance,
+  morning/evening briefings, financial headlines, or price alerts. Supports US/Europe/Japan markets, WhatsApp delivery, and
+  English/German output."'
+metadata:
+  author: thiagoruss0
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - finance
+  - news
+  source: clawhub-community
+  clawhub_slug: finance-news9
+  clawhub_path: thiagoruss0/finance-news9
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Finance News
+
+    # Source: ClawHub community skill by thiagoruss0
+
+    # Install: clawhub install finance-news9
+
+    # Path: thiagoruss0/finance-news9
+
+
+    ## Description
+
+    "Market news briefings with AI summaries. Use when asked about stock news, market updates, portfolio performance, morning/evening
+    briefings, financial headlines, or price alerts. Supports US/Europe/Japan markets, WhatsApp delivery, and English/German
+    output."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install finance-news9
+
+    ```'
+examples:
+- description: Install Finance News from ClawHub
+  usage: clawhub install finance-news9
+schema_version: '1.0'

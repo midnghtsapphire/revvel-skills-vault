@@ -1,0 +1,73 @@
+name: 2slides
+title: Slides/PPT generation and voice narration
+version: 1.0.0
+description: AI-powered presentation generation using 2slides API. Create slides from text content, match reference image
+  styles, or summarize documents into presentations. Use when users request to "create a presentation", "make slides", "generate
+  a deck", "create slides from this content/document/image", or an
+metadata:
+  author: javainthinking
+  category: Media & Content
+  tags:
+  - media-content
+  - 2slides
+  source: clawhub-community
+  clawhub_slug: 2slides-skills
+  clawhub_path: javainthinking/2slides-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Slides/PPT generation and voice narration
+
+    # Source: ClawHub community skill by javainthinking
+
+    # Install: clawhub install 2slides-skills
+
+    # Path: javainthinking/2slides-skills
+
+
+    ## Description
+
+    AI-powered presentation generation using 2slides API. Create slides from text content, match reference image styles, or
+    summarize documents into presentations. Use when users request to "create a presentation", "make slides", "generate a
+    deck", "create slides from this content/document/image", or an
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - UPDATE_SUMMARY.md
+
+    - _meta.json
+
+    - references/api-reference.md
+
+    - references/mcp-integration.md
+
+    - references/pricing.md
+
+    - scripts/create_pdf_slides.py
+
+    - scripts/download_slides_pages_voices.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install 2slides-skills
+
+    ```'
+examples:
+- description: Install Slides/PPT generation and voice narration from ClawHub
+  usage: clawhub install 2slides-skills
+schema_version: '1.0'

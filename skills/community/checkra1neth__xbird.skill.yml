@@ -1,0 +1,57 @@
+name: xbird
+title: xbird
+version: 0.1.1
+description: '"Use when the user asks to tweet, post threads, read tweets, search Twitter/X, check mentions, manage engagement
+  (like/retweet/bookmark), update profile (bio, avatar, banner), upload media, or interact with Twitter accounts. Triggers:
+  twitter, tweet, post, thread, timeline, mentions, followers, foll'
+metadata:
+  author: checkra1neth
+  category: Search & Research
+  tags:
+  - search-research
+  - xbird
+  source: clawhub-community
+  clawhub_slug: xbird
+  clawhub_path: checkra1neth/xbird
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# xbird
+
+    # Source: ClawHub community skill by checkra1neth
+
+    # Install: clawhub install xbird
+
+    # Path: checkra1neth/xbird
+
+
+    ## Description
+
+    "Use when the user asks to tweet, post threads, read tweets, search Twitter/X, check mentions, manage engagement (like/retweet/bookmark),
+    update profile (bio, avatar, banner), upload media, or interact with Twitter accounts. Triggers: twitter, tweet, post,
+    thread, timeline, mentions, followers, foll
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xbird
+
+    ```'
+examples:
+- description: Install xbird from ClawHub
+  usage: clawhub install xbird
+schema_version: '1.0'

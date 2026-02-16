@@ -1,0 +1,59 @@
+name: gkeep
+title: Google Keep
+version: 1.0.3
+description: Google Keep notes via gkeepapi. List, search, create, and manage notes.
+metadata:
+  author: vacinc
+  category: Search & Research
+  tags:
+  - search-research
+  - gkeep
+  source: clawhub-community
+  clawhub_slug: gkeep
+  clawhub_path: vacinc/gkeep
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Keep
+
+    # Source: ClawHub community skill by vacinc
+
+    # Install: clawhub install gkeep
+
+    # Path: vacinc/gkeep
+
+
+    ## Description
+
+    Google Keep notes via gkeepapi. List, search, create, and manage notes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - gkeep.py
+
+    - package.json
+
+    - requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gkeep
+
+    ```'
+examples:
+- description: Install Google Keep from ClawHub
+  usage: clawhub install gkeep
+schema_version: '1.0'

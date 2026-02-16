@@ -1,0 +1,62 @@
+name: aws-ecs-monitor
+title: AWS ECS Monitor
+version: 1.0.0
+description: AWS ECS production health monitoring with CloudWatch log analysis — monitors ECS service health, ALB targets,
+  SSL certificates, and provides deep CloudWatch log analysis for error categorization, restart detection, and production
+  alerts.
+metadata:
+  author: briancolinger
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - aws
+  - ecs
+  - monitor
+  source: clawhub-community
+  clawhub_slug: aws-ecs-monitor
+  clawhub_path: briancolinger/aws-ecs-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AWS ECS Monitor
+
+    # Source: ClawHub community skill by briancolinger
+
+    # Install: clawhub install aws-ecs-monitor
+
+    # Path: briancolinger/aws-ecs-monitor
+
+
+    ## Description
+
+    AWS ECS production health monitoring with CloudWatch log analysis — monitors ECS service health, ALB targets, SSL certificates,
+    and provides deep CloudWatch log analysis for error categorization, restart detection, and production alerts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/cloudwatch-logs.sh
+
+    - scripts/ecs-health.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aws-ecs-monitor
+
+    ```'
+examples:
+- description: Install AWS ECS Monitor from ClawHub
+  usage: clawhub install aws-ecs-monitor
+schema_version: '1.0'

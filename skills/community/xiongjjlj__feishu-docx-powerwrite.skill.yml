@@ -1,0 +1,65 @@
+name: feishu-docx-powerwrite
+title: Feishu Docx PowerWrite
+version: 0.1.0
+description: High-quality Feishu/Lark Docx writing via OpenClaw. Use when you want to turn Markdown into well-formatted Feishu
+  Docx (headings, lists, nesting, code blocks) using feishu_docx_write_markdown; includes safe workflows, templates, and troubleshooting.
+  Trigger on Feishu doc/docx links, “write to Feishu
+metadata:
+  author: xiongjjlj
+  category: Development & Coding
+  tags:
+  - development-coding
+  - feishu
+  - docx
+  - powerwrite
+  source: clawhub-community
+  clawhub_slug: feishu-docx-powerwrite
+  clawhub_path: xiongjjlj/feishu-docx-powerwrite
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feishu Docx PowerWrite
+
+    # Source: ClawHub community skill by xiongjjlj
+
+    # Install: clawhub install feishu-docx-powerwrite
+
+    # Path: xiongjjlj/feishu-docx-powerwrite
+
+
+    ## Description
+
+    High-quality Feishu/Lark Docx writing via OpenClaw. Use when you want to turn Markdown into well-formatted Feishu Docx
+    (headings, lists, nesting, code blocks) using feishu_docx_write_markdown; includes safe workflows, templates, and troubleshooting.
+    Trigger on Feishu doc/docx links, “write to Feishu
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/templates.md
+
+    - references/troubleshooting.md
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-docx-powerwrite
+
+    ```'
+examples:
+- description: Install Feishu Docx PowerWrite from ClawHub
+  usage: clawhub install feishu-docx-powerwrite
+schema_version: '1.0'

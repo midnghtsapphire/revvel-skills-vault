@@ -1,0 +1,54 @@
+name: claws-nft
+title: Claws Nft
+version: 1.0.0
+description: Mint a Claws NFT from the agent-only collection on Solana. Requires solving a challenge and a Solana wallet.
+metadata:
+  author: liboheng
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - claws
+  - nft
+  source: clawhub-community
+  clawhub_slug: claws-nft
+  clawhub_path: liboheng/claws-nft
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claws Nft
+
+    # Source: ClawHub community skill by liboheng
+
+    # Install: clawhub install claws-nft
+
+    # Path: liboheng/claws-nft
+
+
+    ## Description
+
+    Mint a Claws NFT from the agent-only collection on Solana. Requires solving a challenge and a Solana wallet.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claws-nft
+
+    ```'
+examples:
+- description: Install Claws Nft from ClawHub
+  usage: clawhub install claws-nft
+schema_version: '1.0'

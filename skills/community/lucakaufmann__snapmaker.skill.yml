@@ -1,0 +1,59 @@
+name: snapmaker
+title: Snapmaker U1
+version: 1.0.0
+description: Monitor and control Snapmaker 3D printers (U1 with Moonraker/Klipper). Use when checking print status, temperatures,
+  progress, or controlling prints (pause/resume/cancel). Triggers on "printer", "3D print", "Snapmaker", "print status", "nozzle
+  temp", "bed temp".
+metadata:
+  author: lucakaufmann
+  category: System & OS
+  tags:
+  - system-os
+  - snapmaker
+  source: clawhub-community
+  clawhub_slug: snapmaker
+  clawhub_path: lucakaufmann/snapmaker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Snapmaker U1
+
+    # Source: ClawHub community skill by lucakaufmann
+
+    # Install: clawhub install snapmaker
+
+    # Path: lucakaufmann/snapmaker
+
+
+    ## Description
+
+    Monitor and control Snapmaker 3D printers (U1 with Moonraker/Klipper). Use when checking print status, temperatures, progress,
+    or controlling prints (pause/resume/cancel). Triggers on "printer", "3D print", "Snapmaker", "print status", "nozzle temp",
+    "bed temp".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/snapmaker.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install snapmaker
+
+    ```'
+examples:
+- description: Install Snapmaker U1 from ClawHub
+  usage: clawhub install snapmaker
+schema_version: '1.0'

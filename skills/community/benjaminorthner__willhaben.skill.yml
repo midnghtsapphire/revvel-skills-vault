@@ -1,0 +1,62 @@
+name: willhaben
+title: Willhaben
+version: 1.0.1
+description: Create and manage listings on Willhaben.at (Austrian marketplace). Use when the user wants to sell something,
+  create a listing, or mentions Willhaben. Handles photo uploads, generates titles/descriptions/prices, and posts via browser
+  automation.
+metadata:
+  author: benjaminorthner
+  category: Search & Research
+  tags:
+  - search-research
+  - willhaben
+  source: clawhub-community
+  clawhub_slug: willhaben
+  clawhub_path: benjaminorthner/willhaben
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Willhaben
+
+    # Source: ClawHub community skill by benjaminorthner
+
+    # Install: clawhub install willhaben
+
+    # Path: benjaminorthner/willhaben
+
+
+    ## Description
+
+    Create and manage listings on Willhaben.at (Austrian marketplace). Use when the user wants to sell something, create a
+    listing, or mentions Willhaben. Handles photo uploads, generates titles/descriptions/prices, and posts via browser automation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config/user-preferences.example.json
+
+    - references/SETUP.md
+
+    - references/categories.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install willhaben
+
+    ```'
+examples:
+- description: Install Willhaben from ClawHub
+  usage: clawhub install willhaben
+schema_version: '1.0'

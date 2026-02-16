@@ -1,0 +1,55 @@
+name: todoist
+title: Todoist
+version: 1.0.2
+description: '|'
+metadata:
+  author: byungkyu
+  category: General
+  tags:
+  - general
+  - todoist
+  source: clawhub-community
+  clawhub_slug: todoist-api
+  clawhub_path: byungkyu/todoist-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Todoist
+
+    # Source: ClawHub community skill by byungkyu
+
+    # Install: clawhub install todoist-api
+
+    # Path: byungkyu/todoist-api
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - LICENSE.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todoist-api
+
+    ```'
+examples:
+- description: Install Todoist from ClawHub
+  usage: clawhub install todoist-api
+schema_version: '1.0'

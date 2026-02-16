@@ -1,0 +1,61 @@
+name: youdotcom-cli
+title: You.com  CLI
+version: 2.0.5
+description: '|'
+metadata:
+  author: edwardirby
+  category: General
+  tags:
+  - general
+  - youdotcom
+  - cli
+  - bash(bunx:@youdotcom-oss/api) bash(npx:@youdotcom-oss/api) bash(bunx:ydc) bash(npx:ydc) bash(jq:*)
+  source: clawhub-community
+  clawhub_slug: youdotcom
+  clawhub_path: edwardirby/youdotcom
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(bunx:@youdotcom-oss/api) Bash(npx:@youdotcom-oss/api) Bash(bunx:ydc) Bash(npx:ydc) Bash(jq:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# You.com  CLI
+
+    # Source: ClawHub community skill by edwardirby
+
+    # Install: clawhub install youdotcom
+
+    # Path: edwardirby/youdotcom
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(bunx:@youdotcom-oss/api) Bash(npx:@youdotcom-oss/api) Bash(bunx:ydc) Bash(npx:ydc) Bash(jq:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youdotcom
+
+    ```'
+examples:
+- description: Install You.com  CLI from ClawHub
+  usage: clawhub install youdotcom
+schema_version: '1.0'

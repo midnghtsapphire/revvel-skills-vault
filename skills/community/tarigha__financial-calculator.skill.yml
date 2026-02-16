@@ -1,0 +1,34 @@
+name: financial-calculator
+title: Financial Calculator Pro
+version: 1.0.0
+description: 'Advanced financial calculator with future value tables, present value, discount calculations, markup pricing,
+  and compound interest. Use when calculating investment growth, pricing strategies, loan values, discounts, or comparing
+  financial scenarios across different rates and time periods. Includes '
+metadata:
+  author: tarigha
+  category: Utilities
+  tags:
+  - utilities
+  - financial
+  - calculator
+  source: clawhub-community
+  clawhub_slug: financial-calculator
+  clawhub_path: tarigha/financial-calculator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Financial Calculator Pro\n# Source: ClawHub community skill by tarigha\n# Install: clawhub install financial-calculator\n\
+    # Path: tarigha/financial-calculator\n\n## Description\nAdvanced financial calculator with future value tables, present\
+    \ value, discount calculations, markup pricing, and compound interest. Use when calculating investment growth, pricing\
+    \ strategies, loan values, discounts, or comparing financial scenarios across different rates and time periods. Includes\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n- assets/calculator.html\n- references/formulas.md\n- scripts/calculate.py\n\
+    - scripts/launch_ui.sh\n- scripts/web_ui.py\n\n## Installation\n```bash\nclawhub install financial-calculator\n```"
+examples:
+- description: Install Financial Calculator Pro from ClawHub
+  usage: clawhub install financial-calculator
+schema_version: '1.0'

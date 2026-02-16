@@ -1,0 +1,65 @@
+name: ccsinfo
+title: Ccsinfo
+version: 0.1.5
+description: Query and analyze Claude Code session data from a remote server. Use when asked to inspect Claude Code sessions,
+  view conversation history, check tool calls, track tasks, search prompts, or view usage statistics. Requires CCSINFO_SERVER_URL
+  to be set and a ccsinfo server running.
+metadata:
+  author: myakove
+  category: Search & Research
+  tags:
+  - search-research
+  - ccsinfo
+  source: clawhub-community
+  clawhub_slug: ccsinfo
+  clawhub_path: myakove/ccsinfo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ccsinfo
+
+    # Source: ClawHub community skill by myakove
+
+    # Install: clawhub install ccsinfo
+
+    # Path: myakove/ccsinfo
+
+
+    ## Description
+
+    Query and analyze Claude Code session data from a remote server. Use when asked to inspect Claude Code sessions, view
+    conversation history, check tool calls, track tasks, search prompts, or view usage statistics. Requires CCSINFO_SERVER_URL
+    to be set and a ccsinfo server running.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cli-commands.md
+
+    - scripts/ccs.sh
+
+    - scripts/install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ccsinfo
+
+    ```'
+examples:
+- description: Install Ccsinfo from ClawHub
+  usage: clawhub install ccsinfo
+schema_version: '1.0'

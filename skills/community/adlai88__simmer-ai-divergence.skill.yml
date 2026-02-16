@@ -1,0 +1,62 @@
+name: simmer-ai-divergence
+title: Simmer Ai Divergence
+version: 1.0.2
+description: Surface markets where Simmer's AI price diverges from Polymarket. High divergence = potential alpha. Use when
+  user wants to find AI vs market disagreements, scan for trading opportunities, or understand where the AI is bullish/bearish
+  relative to external prices.
+metadata:
+  author: adlai88
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - simmer
+  - divergence
+  source: clawhub-community
+  clawhub_slug: simmer-ai-divergence
+  clawhub_path: adlai88/simmer-ai-divergence
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Simmer Ai Divergence
+
+    # Source: ClawHub community skill by adlai88
+
+    # Install: clawhub install simmer-ai-divergence
+
+    # Path: adlai88/simmer-ai-divergence
+
+
+    ## Description
+
+    Surface markets where Simmer''s AI price diverges from Polymarket. High divergence = potential alpha. Use when user wants
+    to find AI vs market disagreements, scan for trading opportunities, or understand where the AI is bullish/bearish relative
+    to external prices.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - ai_divergence.py
+
+    - scripts/status.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install simmer-ai-divergence
+
+    ```'
+examples:
+- description: Install Simmer Ai Divergence from ClawHub
+  usage: clawhub install simmer-ai-divergence
+schema_version: '1.0'

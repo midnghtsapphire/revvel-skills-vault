@@ -1,0 +1,55 @@
+name: audit-badge-demo
+title: Audit Badge Demo
+version: 0.1.0
+description: Demo skill showcasing the audit badge workflow; still experimental.
+metadata:
+  author: tezatezaz
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - audit
+  - badge
+  - demo
+  source: clawhub-community
+  clawhub_slug: audit-badge-demo
+  clawhub_path: tezatezaz/audit-badge-demo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Audit Badge Demo
+
+    # Source: ClawHub community skill by tezatezaz
+
+    # Install: clawhub install audit-badge-demo
+
+    # Path: tezatezaz/audit-badge-demo
+
+
+    ## Description
+
+    Demo skill showcasing the audit badge workflow; still experimental.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install audit-badge-demo
+
+    ```'
+examples:
+- description: Install Audit Badge Demo from ClawHub
+  usage: clawhub install audit-badge-demo
+schema_version: '1.0'

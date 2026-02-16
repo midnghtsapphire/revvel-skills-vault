@@ -1,0 +1,70 @@
+name: dirigera-control
+title: Dirigera Control (IKEA smart home)
+version: 1.0.3
+description: Control IKEA Dirigera smart home devices (lights, outlets, scenes, controllers). Use when the user asks to control
+  smart home devices, check device status, turn lights on/off, adjust brightness/color, control outlets, trigger scenes, check
+  battery levels, or work with IKEA smart home automation. Als
+metadata:
+  author: falderebet
+  category: Development & Coding
+  tags:
+  - development-coding
+  - dirigera
+  - control
+  source: clawhub-community
+  clawhub_slug: dirigera-control
+  clawhub_path: falderebet/dirigera-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dirigera Control (IKEA smart home)
+
+    # Source: ClawHub community skill by falderebet
+
+    # Install: clawhub install dirigera-control
+
+    # Path: falderebet/dirigera-control
+
+
+    ## Description
+
+    Control IKEA Dirigera smart home devices (lights, outlets, scenes, controllers). Use when the user asks to control smart
+    home devices, check device status, turn lights on/off, adjust brightness/color, control outlets, trigger scenes, check
+    battery levels, or work with IKEA smart home automation. Als
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - references/patterns.md
+
+    - scripts/example_usage.py
+
+    - scripts/find_dirigera_ip.py
+
+    - scripts/generate_token_wrapper.py
+
+    - scripts/helpers.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dirigera-control
+
+    ```'
+examples:
+- description: Install Dirigera Control (IKEA smart home) from ClawHub
+  usage: clawhub install dirigera-control
+schema_version: '1.0'

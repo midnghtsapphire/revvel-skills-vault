@@ -1,0 +1,58 @@
+name: openmeteo-weather
+title: Openmeteo Weather
+version: 1.0.0
+description: '"Get current weather, hourly and daily forecasts for any city or coordinates worldwide. Use when the user asks
+  about weather, temperature, rain, snow, wind, sunrise/sunset, UV, humidity, pressure, or wants to know if they need an umbrella."'
+metadata:
+  author: lstpsche
+  category: Utilities
+  tags:
+  - utilities
+  - openmeteo
+  - weather
+  source: clawhub-community
+  clawhub_slug: openmeteo-weather
+  clawhub_path: lstpsche/openmeteo-weather
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openmeteo Weather
+
+    # Source: ClawHub community skill by lstpsche
+
+    # Install: clawhub install openmeteo-weather
+
+    # Path: lstpsche/openmeteo-weather
+
+
+    ## Description
+
+    "Get current weather, hourly and daily forecasts for any city or coordinates worldwide. Use when the user asks about weather,
+    temperature, rain, snow, wind, sunrise/sunset, UV, humidity, pressure, or wants to know if they need an umbrella."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/weather.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openmeteo-weather
+
+    ```'
+examples:
+- description: Install Openmeteo Weather from ClawHub
+  usage: clawhub install openmeteo-weather
+schema_version: '1.0'

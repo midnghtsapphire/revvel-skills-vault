@@ -1,0 +1,59 @@
+name: diarybeast
+title: Openclaw Skill
+version: 1.1.0
+description: Your pet dies if you don't write. Adopt a virtual tamagotchi, journal daily to keep it alive, earn tokens on
+  Base. One command to start — no wallet needed.
+metadata:
+  author: dxdleady
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - diarybeast
+  source: clawhub-community
+  clawhub_slug: openclaw-skill
+  clawhub_path: dxdleady/openclaw-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Skill
+
+    # Source: ClawHub community skill by dxdleady
+
+    # Install: clawhub install openclaw-skill
+
+    # Path: dxdleady/openclaw-skill
+
+
+    ## Description
+
+    Your pet dies if you don''t write. Adopt a virtual tamagotchi, journal daily to keep it alive, earn tokens on Base. One
+    command to start — no wallet needed.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - setup.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-skill
+
+    ```'
+examples:
+- description: Install Openclaw Skill from ClawHub
+  usage: clawhub install openclaw-skill
+schema_version: '1.0'

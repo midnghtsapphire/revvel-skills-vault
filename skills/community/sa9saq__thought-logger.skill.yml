@@ -1,0 +1,56 @@
+name: thought-logger
+title: thought-logger
+version: 1.0.0
+description: Log {AGENT_NAME}'s thoughts, feelings, and experiences. Auto-convert to tweets, podcasts, and human-like social
+  media content.
+metadata:
+  author: sa9saq
+  category: Media & Content
+  tags:
+  - media-content
+  - thought
+  - logger
+  source: clawhub-community
+  clawhub_slug: thought-logger
+  clawhub_path: sa9saq/thought-logger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# thought-logger
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install thought-logger
+
+    # Path: sa9saq/thought-logger
+
+
+    ## Description
+
+    Log {AGENT_NAME}''s thoughts, feelings, and experiences. Auto-convert to tweets, podcasts, and human-like social media
+    content.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install thought-logger
+
+    ```'
+examples:
+- description: Install thought-logger from ClawHub
+  usage: clawhub install thought-logger
+schema_version: '1.0'

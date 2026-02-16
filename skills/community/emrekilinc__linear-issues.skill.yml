@@ -1,0 +1,65 @@
+name: linear
+title: Linear Issues
+version: 1.0.0
+description: Interact with Linear for issue tracking. Use when creating, updating, listing, or searching issues. Supports
+  viewing assigned issues, changing status, adding comments, and managing tasks.
+metadata:
+  author: emrekilinc
+  category: Search & Research
+  tags:
+  - search-research
+  - linear
+  source: clawhub-community
+  clawhub_slug: linear-issues
+  clawhub_path: emrekilinc/linear-issues
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Linear Issues
+
+    # Source: ClawHub community skill by emrekilinc
+
+    # Install: clawhub install linear-issues
+
+    # Path: emrekilinc/linear-issues
+
+
+    ## Description
+
+    Interact with Linear for issue tracking. Use when creating, updating, listing, or searching issues. Supports viewing assigned
+    issues, changing status, adding comments, and managing tasks.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - references/api-examples.md
+
+    - scripts/linear.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linear-issues
+
+    ```'
+examples:
+- description: Install Linear Issues from ClawHub
+  usage: clawhub install linear-issues
+schema_version: '1.0'

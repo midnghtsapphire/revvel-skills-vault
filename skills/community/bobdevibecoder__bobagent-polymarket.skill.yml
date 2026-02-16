@@ -1,0 +1,55 @@
+name: polymarket
+title: polymarket
+version: 1.0.0
+description: Query Polymarket prediction markets - check odds, trending markets, search events, track prices.
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - polymarket
+  source: clawhub-community
+  clawhub_slug: bobagent-polymarket
+  clawhub_path: bobdevibecoder/bobagent-polymarket
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# polymarket
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-polymarket
+
+    # Path: bobdevibecoder/bobagent-polymarket
+
+
+    ## Description
+
+    Query Polymarket prediction markets - check odds, trending markets, search events, track prices.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/polymarket.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-polymarket
+
+    ```'
+examples:
+- description: Install polymarket from ClawHub
+  usage: clawhub install bobagent-polymarket
+schema_version: '1.0'

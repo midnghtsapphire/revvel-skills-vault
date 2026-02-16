@@ -1,0 +1,62 @@
+name: daily-stoic
+title: Daily Stoic
+version: 1.0.0
+description: Send daily Stoic philosophy quotes from "The Daily Stoic" by Ryan Holiday. Use when setting up daily wisdom reminders
+  via email or Telegram, or when a user wants stoic quotes for a specific date. Supports all 366 days with title, quote, and
+  reflection.
+metadata:
+  author: fcavalcantirj
+  category: Social Media
+  tags:
+  - social-media
+  - daily
+  - stoic
+  source: clawhub-community
+  clawhub_slug: daily-stoic
+  clawhub_path: fcavalcantirj/daily-stoic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Stoic
+
+    # Source: ClawHub community skill by fcavalcantirj
+
+    # Install: clawhub install daily-stoic
+
+    # Path: fcavalcantirj/daily-stoic
+
+
+    ## Description
+
+    Send daily Stoic philosophy quotes from "The Daily Stoic" by Ryan Holiday. Use when setting up daily wisdom reminders
+    via email or Telegram, or when a user wants stoic quotes for a specific date. Supports all 366 days with title, quote,
+    and reflection.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/stoic-daily.json
+
+    - scripts/get-stoic.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-stoic
+
+    ```'
+examples:
+- description: Install Daily Stoic from ClawHub
+  usage: clawhub install daily-stoic
+schema_version: '1.0'

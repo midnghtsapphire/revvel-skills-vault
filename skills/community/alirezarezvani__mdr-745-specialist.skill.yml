@@ -1,0 +1,67 @@
+name: mdr-745-specialist
+title: Mdr 745 Specialist
+version: 1.0.0
+description: EU MDR 2017/745 compliance specialist for medical device classification, technical documentation, clinical evidence,
+  and post-market surveillance. Covers Annex VIII classification rules, Annex II/III technical files, Annex XIV clinical evaluation,
+  and EUDAMED integration.
+metadata:
+  author: alirezarezvani
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - mdr
+  - '745'
+  - specialist
+  source: clawhub-community
+  clawhub_slug: mdr-745-specialist
+  clawhub_path: alirezarezvani/mdr-745-specialist
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mdr 745 Specialist
+
+    # Source: ClawHub community skill by alirezarezvani
+
+    # Install: clawhub install mdr-745-specialist
+
+    # Path: alirezarezvani/mdr-745-specialist
+
+
+    ## Description
+
+    EU MDR 2017/745 compliance specialist for medical device classification, technical documentation, clinical evidence, and
+    post-market surveillance. Covers Annex VIII classification rules, Annex II/III technical files, Annex XIV clinical evaluation,
+    and EUDAMED integration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/clinical-evidence-requirements.md
+
+    - references/mdr-classification-guide.md
+
+    - references/technical-documentation-templates.md
+
+    - scripts/mdr_gap_analyzer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mdr-745-specialist
+
+    ```'
+examples:
+- description: Install Mdr 745 Specialist from ClawHub
+  usage: clawhub install mdr-745-specialist
+schema_version: '1.0'

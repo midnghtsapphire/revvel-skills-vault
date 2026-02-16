@@ -1,0 +1,57 @@
+name: openclaw-egress
+title: Openclaw Egress
+version: 1.0.2
+description: ''
+metadata:
+  author: atlaspa
+  category: General
+  tags:
+  - general
+  - openclaw
+  - egress
+  source: clawhub-community
+  clawhub_slug: openclaw-egress
+  clawhub_path: atlaspa/openclaw-egress
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Egress
+
+    # Source: ClawHub community skill by atlaspa
+
+    # Install: clawhub install openclaw-egress
+
+    # Path: atlaspa/openclaw-egress
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/egress.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-egress
+
+    ```'
+examples:
+- description: Install Openclaw Egress from ClawHub
+  usage: clawhub install openclaw-egress
+schema_version: '1.0'

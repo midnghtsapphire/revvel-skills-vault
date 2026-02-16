@@ -1,0 +1,58 @@
+name: buy-anything
+title: Buy Anything
+version: 2.0.0
+description: Purchase products from Amazon through conversational checkout. Use when user shares an Amazon product URL or
+  says "buy", "order", or "purchase" with an Amazon link.
+metadata:
+  author: tsyvic
+  category: General
+  tags:
+  - general
+  - buy
+  - anything
+  source: clawhub-community
+  clawhub_slug: buy-anything
+  clawhub_path: tsyvic/buy-anything
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Buy Anything
+
+    # Source: ClawHub community skill by tsyvic
+
+    # Install: clawhub install buy-anything
+
+    # Path: tsyvic/buy-anything
+
+
+    ## Description
+
+    Purchase products from Amazon through conversational checkout. Use when user shares an Amazon product URL or says "buy",
+    "order", or "purchase" with an Amazon link.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install buy-anything
+
+    ```'
+examples:
+- description: Install Buy Anything from ClawHub
+  usage: clawhub install buy-anything
+schema_version: '1.0'

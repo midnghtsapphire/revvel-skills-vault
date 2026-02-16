@@ -1,0 +1,58 @@
+name: jina-reader
+title: Jina Reader
+version: 1.0.0
+description: '"Web content extraction via Jina AI Reader API. Three modes: read (URL to markdown), search (web search + full
+  content), ground (fact-checking). Extracts clean content without exposing server IP."'
+metadata:
+  author: ericsantos
+  category: Search & Research
+  tags:
+  - search-research
+  - jina
+  - reader
+  source: clawhub-community
+  clawhub_slug: jina-reader
+  clawhub_path: ericsantos/jina-reader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jina Reader
+
+    # Source: ClawHub community skill by ericsantos
+
+    # Install: clawhub install jina-reader
+
+    # Path: ericsantos/jina-reader
+
+
+    ## Description
+
+    "Web content extraction via Jina AI Reader API. Three modes: read (URL to markdown), search (web search + full content),
+    ground (fact-checking). Extracts clean content without exposing server IP."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/reader.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jina-reader
+
+    ```'
+examples:
+- description: Install Jina Reader from ClawHub
+  usage: clawhub install jina-reader
+schema_version: '1.0'

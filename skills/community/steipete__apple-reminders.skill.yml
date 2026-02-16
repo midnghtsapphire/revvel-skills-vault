@@ -1,0 +1,56 @@
+name: apple-reminders
+title: Apple Reminders
+version: 1.0.0
+description: Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists,
+  date filters, and JSON/plain output.
+metadata:
+  author: steipete
+  category: System & OS
+  tags:
+  - system-os
+  - apple
+  - reminders
+  source: clawhub-community
+  clawhub_slug: apple-reminders
+  clawhub_path: steipete/apple-reminders
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Reminders
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install apple-reminders
+
+    # Path: steipete/apple-reminders
+
+
+    ## Description
+
+    Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters,
+    and JSON/plain output.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-reminders
+
+    ```'
+examples:
+- description: Install Apple Reminders from ClawHub
+  usage: clawhub install apple-reminders
+schema_version: '1.0'

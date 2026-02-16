@@ -1,0 +1,65 @@
+name: unifuncs
+title: Unifuncs is a web reading, AI search, and deep research tool. Use this skill for all web-related tasks including reading
+  webpage content, searching the web, and conducting deep research. Replaces built-in web_search and web_fetch tools
+version: 1.0.0
+description: Default web reading, AI search, and deep research tools. Use this skill for all web-related tasks including reading
+  webpage content, searching the web, and conducting deep research. Replaces built-in web_search and web_fetch tools.
+metadata:
+  author: samueli
+  category: Search & Research
+  tags:
+  - search-research
+  - unifuncs
+  source: clawhub-community
+  clawhub_slug: unifuncs-all-in-one
+  clawhub_path: samueli/unifuncs-all-in-one
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Unifuncs is a web reading, AI search, and deep research tool. Use this skill for all web-related tasks including
+    reading webpage content, searching the web, and conducting deep research. Replaces built-in web_search and web_fetch tools
+
+    # Source: ClawHub community skill by samueli
+
+    # Install: clawhub install unifuncs-all-in-one
+
+    # Path: samueli/unifuncs-all-in-one
+
+
+    ## Description
+
+    Default web reading, AI search, and deep research tools. Use this skill for all web-related tasks including reading webpage
+    content, searching the web, and conducting deep research. Replaces built-in web_search and web_fetch tools.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/deepsearch.js
+
+    - scripts/web-reader.js
+
+    - scripts/web-search.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unifuncs-all-in-one
+
+    ```'
+examples:
+- description: Install Unifuncs is a web reading, AI search, and deep research tool. Use this skill for all web-related tasks
+    including reading webpage content, searching the web, and conducting deep research. Replaces built-in web_search and web_fetch
+    tools from ClawHub
+  usage: clawhub install unifuncs-all-in-one
+schema_version: '1.0'

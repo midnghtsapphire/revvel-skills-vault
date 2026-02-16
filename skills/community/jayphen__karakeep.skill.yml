@@ -1,0 +1,57 @@
+name: karakeep
+title: Karakeep
+version: 0.1.0
+description: Manage bookmarks and links in a Karakeep instance. Use when the user wants to save links, list recent bookmarks,
+  or search their collection. Triggers on phrases like "hoard this link", "save to karakeep", or "search my bookmarks".
+metadata:
+  author: jayphen
+  category: Search & Research
+  tags:
+  - search-research
+  - karakeep
+  source: clawhub-community
+  clawhub_slug: karakeep
+  clawhub_path: jayphen/karakeep
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Karakeep
+
+    # Source: ClawHub community skill by jayphen
+
+    # Install: clawhub install karakeep
+
+    # Path: jayphen/karakeep
+
+
+    ## Description
+
+    Manage bookmarks and links in a Karakeep instance. Use when the user wants to save links, list recent bookmarks, or search
+    their collection. Triggers on phrases like "hoard this link", "save to karakeep", or "search my bookmarks".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/karakeep-cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install karakeep
+
+    ```'
+examples:
+- description: Install Karakeep from ClawHub
+  usage: clawhub install karakeep
+schema_version: '1.0'

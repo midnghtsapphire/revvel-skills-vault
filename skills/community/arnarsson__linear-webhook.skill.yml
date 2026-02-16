@@ -1,0 +1,70 @@
+name: linear-webhook
+title: Linear Webhook
+version: 1.0.0
+description: '"Comment @mason or @eureka in Linear issues to dispatch tasks to agents. Webhook receives Linear comments and
+  routes to correct agent."'
+metadata:
+  author: arnarsson
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - linear
+  - webhook
+  source: clawhub-community
+  clawhub_slug: linear-webhook
+  clawhub_path: arnarsson/linear-webhook
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Linear Webhook
+
+    # Source: ClawHub community skill by arnarsson
+
+    # Install: clawhub install linear-webhook
+
+    # Path: arnarsson/linear-webhook
+
+
+    ## Description
+
+    "Comment @mason or @eureka in Linear issues to dispatch tasks to agents. Webhook receives Linear comments and routes to
+    correct agent."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config-example.json5
+
+    - example-payload.json
+
+    - linear-transform.js
+
+    - post-response.js
+
+    - post-to-linear.sh
+
+    - test.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linear-webhook
+
+    ```'
+examples:
+- description: Install Linear Webhook from ClawHub
+  usage: clawhub install linear-webhook
+schema_version: '1.0'

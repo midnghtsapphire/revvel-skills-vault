@@ -1,0 +1,72 @@
+name: openclaw-audit-watchdog
+title: openclaw-audit-watchdog
+version: 0.0.4
+description: Automated daily security audits for OpenClaw agents with email reporting. Runs deep audits and sends formatted
+  reports.
+metadata:
+  author: davida-ps
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - audit
+  - watchdog
+  source: clawhub-community
+  clawhub_slug: openclaw-audit-watchdog
+  clawhub_path: davida-ps/openclaw-audit-watchdog
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# openclaw-audit-watchdog
+
+    # Source: ClawHub community skill by davida-ps
+
+    # Install: clawhub install openclaw-audit-watchdog
+
+    # Path: davida-ps/openclaw-audit-watchdog
+
+
+    ## Description
+
+    Automated daily security audits for OpenClaw agents with email reporting. Runs deep audits and sends formatted reports.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - scripts/codex_review.sh
+
+    - scripts/render_report.mjs
+
+    - scripts/run_audit_and_format.sh
+
+    - scripts/runner.sh
+
+    - scripts/send_smtp.mjs
+
+    - scripts/sendmail_report.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-audit-watchdog
+
+    ```'
+examples:
+- description: Install openclaw-audit-watchdog from ClawHub
+  usage: clawhub install openclaw-audit-watchdog
+schema_version: '1.0'

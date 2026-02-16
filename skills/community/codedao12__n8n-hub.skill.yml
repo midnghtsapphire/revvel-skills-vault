@@ -1,0 +1,60 @@
+name: n8n-hub
+title: n8n Hub
+version: 1.0.0
+description: Centralized n8n hub for designing reliable flows (idempotency, retries, HITL) and operating them via the public
+  REST API. Use for planning, JSON output, and lifecycle actions like list/publish/debug.
+metadata:
+  author: codedao12
+  category: Development & Coding
+  tags:
+  - development-coding
+  - n8n
+  - hub
+  source: clawhub-community
+  clawhub_slug: n8n-hub
+  clawhub_path: codedao12/n8n-hub
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# n8n Hub
+
+    # Source: ClawHub community skill by codedao12
+
+    # Install: clawhub install n8n-hub
+
+    # Path: codedao12/n8n-hub
+
+
+    ## Description
+
+    Centralized n8n hub for designing reliable flows (idempotency, retries, HITL) and operating them via the public REST API.
+    Use for planning, JSON output, and lifecycle actions like list/publish/debug.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/endpoints-api.md
+
+    - assets/workflow-lab.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install n8n-hub
+
+    ```'
+examples:
+- description: Install n8n Hub from ClawHub
+  usage: clawhub install n8n-hub
+schema_version: '1.0'

@@ -1,0 +1,271 @@
+name: meta_facebook_marketing
+title: Meta/Facebook Marketing Expert
+version: 1.0.0
+description: A comprehensive skill for Meta/Facebook marketing, including ad creation, campaign management, analytics, and
+  platform-specific features.
+metadata:
+  author: Revvel AI Engine
+  category: Marketing & Business
+  tags:
+  - audience-targeting
+  - trend-analysis
+  - meta
+  - campaign-management
+  - content-calendar-generation
+  - competitor-analysis
+  - marketing
+  - hashtag-and-keyword-research
+  - ad-creation
+  - analytics-and-reporting
+  - facebook
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "#/usr/bin/env python3\n\"\"\"\nMeta/Facebook Marketing Skill\n\nThis skill provides a comprehensive suite of tools\
+    \ for Meta/Facebook marketing experts.\n\"\"\"\n\nimport json, re, os, math, hashlib, statistics, requests\nfrom datetime\
+    \ import datetime, timedelta\nfrom collections import defaultdict\nfrom typing import Dict, List, Any, Optional, Tuple\n\
+    import unittest\nimport logging\nimport argparse\nfrom pathlib import Path\n\n# ==================================================================================================\n\
+    #        SKILL METADATA\n# ==================================================================================================\n\
+    \nSKILL_METADATA = {\n    \"name\": \"Meta/Facebook Marketing Expert\",\n    \"id\": \"meta_facebook_marketing\",\n  \
+    \  \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"A comprehensive skill for Meta/Facebook\
+    \ marketing, including ad creation, campaign management, analytics, and platform-specific features.\",\n    \"domain\"\
+    : \"Social Media Marketing\",\n    \"capabilities\": [\n        \"ad_creation\",\n        \"campaign_management\",\n \
+    \       \"content_calendar_generation\",\n        \"audience_targeting\",\n        \"analytics_and_reporting\",\n    \
+    \    \"hashtag_and_keyword_research\",\n        \"trend_analysis\",\n        \"competitor_analysis\",\n        \"influencer_identification\"\
+    ,\n        \"roi_tracking\",\n        \"quick_ad_generation\",\n        \"facebook_ads_manager_integration\",\n      \
+    \  \"pixel_tracking_setup\",\n        \"lookalike_audience_creation\",\n        \"advantage_plus_campaigns\",\n      \
+    \  \"reels_ad_creation\"\n    ]\n}\n\n# ==================================================================================================\n\
+    #        EXPERT PROMPTS\n# ==================================================================================================\n\
+    \nEXPERT_PROMPTS = {\n    \"generate_ad_copy\": {\n        \"description\": \"Generate compelling ad copy for a specific\
+    \ product and target audience.\",\n        \"prompt\": \"Create 3 variations of ad copy for a Facebook ad promoting '{product_name}'.\
+    \ The target audience is {target_audience}. The key benefit to highlight is {key_benefit}. The tone should be {tone}.\
+    \ Include a strong call-to-action.\"\n    },\n    \"create_campaign_strategy\": {\n        \"description\": \"Develop\
+    \ a full Facebook campaign strategy.\",\n        \"prompt\": \"Outline a comprehensive Facebook marketing campaign strategy\
+    \ for launching '{product_name}'. The budget is {budget} for a duration of {duration_weeks} weeks. The primary objective\
+    \ is {objective} (e.g., conversions, brand awareness). Define target audiences, ad formats, and a content plan.\"\n  \
+    \  },\n    \"analyze_performance\": {\n        \"description\": \"Analyze campaign performance data and provide optimization\
+    \ recommendations.\",\n        \"prompt\": \"Analyze the following Facebook Ads performance data: {data}. Identify key\
+    \ trends, top-performing ads, and underperforming areas. Provide at least 5 actionable recommendations to improve campaign\
+    \ ROI.\"\n    },\n    \"suggest_reels_idea\": {\n        \"description\": \"Generate a creative idea for a Facebook Reel\
+    \ ad.\",\n        \"prompt\": \"Brainstorm a concept for a 15-30 second Facebook Reel to promote '{product_name}'. The\
+    \ Reel should be engaging, visually appealing, and align with current trends. The target audience is {target_audience}.\
+    \ Provide a brief storyboard or shot list.\"\n    },\n    \"lookalike_audience_strategy\": {\n        \"description\"\
+    : \"Define a strategy for creating and using Lookalike Audiences.\",\n        \"prompt\": \"Describe a strategy for creating\
+    \ and leveraging Facebook Lookalike Audiences for '{company_name}'. What source audiences should be used (e.g., customer\
+    \ list, website visitors, video viewers)? What percentage match (1%, 2-5%, etc.) should be tested? How would you structure\
+    \ a campaign to test these audiences?\"\n    }\n}\n\n# ==================================================================================================\n\
+    #        CORE EXPERT CLASSES\n# ==================================================================================================\n\
+    \nclass AdCreator:\n    \"\"\"Handles the creation of various Facebook ad formats.\"\"\"\n\n    def generate_text_ad(self,\
+    \ product_name: str, target_audience: str, key_benefit: str, tone: str = \"persuasive\", cta: str = \"Learn More\") ->\
+    \ Dict[str, str]:\n        \"\"\"Generates compelling text-based ad copy.\"\"\"\n        prompt = EXPERT_PROMPTS[\"generate_ad_copy\"\
+    ][\"prompt\"].format(\n            product_name=product_name,\n            target_audience=target_audience,\n        \
+    \    key_benefit=key_benefit,\n            tone=tone\n        )\n        # In a real implementation, this would call a\
+    \ language model.\n        # For this skill, we'll simulate the output.\n        return {\n            \"headline\": f\"\
+    Discover {product_name}!\",\n            \"primary_text\": f\"Tired of {target_audience}'s biggest problem? {product_name}\
+    \ helps you {key_benefit}. Try it now and see the difference!\",\n            \"description\": f\"The perfect solution\
+    \ for {target_audience}.\",\n            \"cta\": cta\n        }\n\n    def generate_image_ad_spec(self, product_name:\
+    \ str, image_style: str) -> Dict[str, str]:\n        \"\"\"Provides specifications for an image ad.\"\"\"\n        return\
+    \ {\n            \"recommendation\": f\"For {product_name}, use a high-resolution image showcasing the product in use.\
+    \ Style: {image_style}. Aspect ratio: 1.91:1 for feed, 9:16 for Stories.\",\n            \"image_url_placeholder\": \"\
+    https://example.com/image.jpg\"\n        }\n\n    def generate_video_ad_spec(self, product_name: str, video_length_seconds:\
+    \ int) -> Dict[str, str]:\n        \"\"\"Provides specifications for a video ad.\"\"\"\n        return {\n           \
+    \ \"recommendation\": f\"Create a {video_length_seconds}-second video for {product_name}. Start with a strong hook. Show,\
+    \ don't just tell. End with a clear call to action.\",\n            \"video_url_placeholder\": \"https://example.com/video.mp4\"\
+    \n        }\n\n    def generate_carousel_ad_spec(self, product_name: str, num_cards: int) -> Dict[str, Any]:\n       \
+    \ \"\"\"Provides specifications for a carousel ad.\"\"\"\n        cards = []\n        for i in range(num_cards):\n   \
+    \         cards.append({\n                \"headline\": f\"{product_name} - Feature {i+1}\",\n                \"description\"\
+    : f\"Benefit of feature {i+1}\",\n                \"image_url_placeholder\": f\"https://example.com/carousel_{i+1}.jpg\"\
+    ,\n                \"link\": f\"https://example.com/product/feature{i+1}\"\n            })\n        return {\"cards\"\
+    : cards}\n\n    def generate_reels_ad_concept(self, product_name: str, target_audience: str) -> Dict[str, str]:\n    \
+    \    \"\"\"Generates a concept for a Facebook Reels ad.\"\"\"\n        prompt = EXPERT_PROMPTS[\"suggest_reels_idea\"\
+    ][\"prompt\"].format(\n            product_name=product_name,\n            target_audience=target_audience\n        )\n\
+    \        return {\n            \"concept\": f\"A fast-paced, music-driven Reel showing diverse people enjoying {product_name}.\
+    \ Use quick cuts and trending audio. Text overlay: ‘Upgrade your day with {product_name}!’. Final shot: Logo and CTA.\"\
+    ,\n            \"storyboard_summary\": \"1. Quick shot of problem. 2. {product_name} is introduced. 3. Montage of happy\
+    \ users. 4. CTA.\"\n        }\n\nclass CampaignManager:\n    \"\"\"Manages the lifecycle of Facebook campaigns.\"\"\"\n\
+    \n    def create_campaign_plan(self, product_name: str, budget: float, duration_weeks: int, objective: str) -> Dict[str,\
+    \ Any]:\n        \"\"\"Creates a high-level campaign plan.\"\"\"\n        return {\n            \"product_name\": product_name,\n\
+    \            \"budget\": budget,\n            \"duration_weeks\": duration_weeks,\n            \"objective\": objective,\n\
+    \            \"recommendation\": \"Start with a brand awareness campaign, then retarget engaged users with a conversion\
+    \ campaign. Use a mix of image, video, and carousel ads.\"\n        }\n\n    def optimize_budget_allocation(self, performance_data:\
+    \ Dict[str, Any]) -> Dict[str, str]:\n        \"\"\"Suggests budget reallocation based on performance.\"\"\"\n       \
+    \ # Dummy implementation\n        return {\"recommendation\": \"Shift 20% of budget from underperforming ad set to the\
+    \ top-performing one.\"}\n\n    def suggest_ab_test(self) -> Dict[str, str]:\n        \"\"\"Suggests an A/B test to run.\"\
+    \"\"\n        return {\"recommendation\": \"Test two different headlines against each other to see which one has a higher\
+    \ CTR.\"}\n\n    def setup_advantage_plus_campaign(self, product_name: str, budget: float, target_audience_broad: str)\
+    \ -> Dict[str, Any]:\n        \"\"\"Provides a setup for an Advantage+ campaign.\"\"\"\n        return {\n           \
+    \ \"campaign_type\": \"Advantage+ Shopping Campaign\",\n            \"product_name\": product_name,\n            \"budget\"\
+    : budget,\n            \"target_audience_broad\": target_audience_broad,\n            \"recommendation\": \"Let Meta's\
+    \ AI find the best audience for you. Provide high-quality creative and a clear conversion event.\"\n        }\n\nclass\
+    \ ContentCalendar:\n    \"\"\"Generates and manages content calendars.\"\"\"\n\n    def generate_calendar(self, topic:\
+    \ str, posts_per_week: int) -> List[Dict[str, str]]:\n        \"\"\"Generates a week of content ideas.\"\"\"\n       \
+    \ calendar = []\n        post_types = [\"Image Post\", \"Video Clip\", \"Link to Blog\", \"Poll\", \"User-Generated Content\
+    \ Feature\"]\n        for i in range(posts_per_week):\n            calendar.append({\n                \"day\": i + 1,\n\
+    \                \"post_idea\": f\"Post about {topic} - angle {i+1}\",\n                \"format\": post_types[i % len(post_types)],\n\
+    \                \"caption_starter\": f\"Let's talk about {topic}...\\n\"\n            })\n        return calendar\n\n\
+    class AudienceTargeter:\n    \"\"\"Defines and segments target audiences.\"\"\"\n\n    def define_core_audience(self,\
+    \ demographics: Dict[str, Any], interests: List[str]) -> Dict[str, Any]:\n        \"\"\"Defines a core audience based\
+    \ on demographics and interests.\"\"\"\n        return {\n            \"demographics\": demographics,\n            \"\
+    interests\": interests,\n            \"name\": \"Core Audience Segment\"\n        }\n\n    def create_lookalike_strategy(self,\
+    \ source_audience: str, country: str) -> Dict[str, str]:\n        \"\"\"Outlines a strategy for creating Lookalike Audiences.\"\
+    \"\"\n        return {\n            \"source_audience\": source_audience,\n            \"country\": country,\n       \
+    \     \"recommendation\": \"Create a 1% Lookalike audience from your customer list for high similarity. Also, test a 1-3%\
+    \ Lookalike from website visitors for broader reach.\"\n        }\n\n    def setup_pixel_tracking(self, website_url: str)\
+    \ -> Dict[str, str]:\n        \"\"\"Generates a dummy Meta Pixel code and setup instructions.\"\"\"\n        pixel_id\
+    \ = f\"PIXEL_{hashlib.sha1(website_url.encode()).hexdigest()[:10]}\"\n        return {\n            \"pixel_id\": pixel_id,\n\
+    \            \"setup_instructions\": \"1. Add the Meta Pixel base code to the header of your website. 2. Set up standard\
+    \ events like 'PageView', 'AddToCart', and 'Purchase'. 3. Verify the pixel is firing correctly using the Meta Pixel Helper\
+    \ browser extension.\",\n            \"pixel_code_snippet\": f\"<!-- Meta Pixel Code -->\\n<script>\\n!function(f,b,e,v,n,t,s)\\\
+    n{{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)}};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}}(window,\
+    \ document,'script','https://connect.facebook.net/en_US/fbevents.js');\\nfbq('init', '{pixel_id}');\\nfbq('track', 'PageView');\\\
+    n</script>\\n<noscript><img height=\\\"1\\\" width=\\\"1\\\" style=\\\"display:none\\\" src=\\\"https://www.facebook.com/tr?id={pixel_id}&ev=PageView&noscript=1\\\
+    \"/></noscript>\\n<!-- End Meta Pixel Code -->\"\n        }\n\nclass AnalyticsReporter:\n    \"\"\"Analyzes data and generates\
+    \ reports.\"\"\"\n\n    def analyze_performance(self, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Analyzes\
+    \ campaign performance and provides insights.\"\"\"\n        # Dummy analysis\n        insights = {\n            \"summary\"\
+    : \"Campaign is performing well, with a high CTR but low conversion rate.\",\n            \"recommendations\": [\n   \
+    \             \"Optimize landing page to improve conversion rate.\",\n                \"Increase budget for the best-performing\
+    \ ad set.\",\n                \"Pause the ad with the lowest CTR.\"\n            ],\n            \"key_metrics\": {\n\
+    \                \"ctr\": data.get(\"ctr\", 0.02),\n                \"cpc\": data.get(\"cpc\", 1.50),\n              \
+    \  \"conversion_rate\": data.get(\"conversion_rate\", 0.01)\n            }\n        }\n        return insights\n\nclass\
+    \ KeywordResearcher:\n    \"\"\"Researches hashtags and keywords.\"\"\"\n\n    def get_related_hashtags(self, topic: str,\
+    \ count: int = 5) -> List[str]:\n        \"\"\"Gets related hashtags for a given topic.\"\"\"\n        # Dummy implementation\n\
+    \        base_hashtags = [f\"#{topic}\", f\"#{topic}love\", f\"#{topic}tips\", f\"#{topic}life\", f\"#{topic}community\"\
+    ]\n        return base_hashtags[:count]\n\n    def get_interest_targeting_suggestions(self, keyword: str) -> List[str]:\n\
+    \        \"\"\"Suggests interest targeting options related to a keyword.\"\"\"\n        return [f\"{keyword} enthusiasts\"\
+    , f\"People who like pages about {keyword}\", f\"Engaged shoppers who have shown interest in {keyword}\"]\n\nclass TrendAnalyzer:\n\
+    \    \"\"\"Analyzes market and platform trends.\"\"\"\n\n    def get_current_trends(self) -> List[Dict[str, str]]:\n \
+    \       \"\"\"Identifies current marketing trends on Facebook.\"\"\"\n        return [\n            {\"trend\": \"Short-form\
+    \ video (Reels)\", \"implication\": \"Prioritize creating engaging Reels to capture attention.\"},\n            {\"trend\"\
+    : \"Interactive content\", \"implication\": \"Use polls, quizzes, and stickers in Stories and posts to boost engagement.\"\
+    },\n            {\"trend\": \"Authenticity and UGC\", \"implication\": \"Feature real customer photos and testimonials\
+    \ in your ads.\"},\n            {\"trend\": \"AI-powered campaigns (Advantage+)\", \"implication\": \"Test Advantage+\
+    \ campaigns to leverage Meta's machine learning for optimization.\"}\n        ]\n\nclass CompetitorAnalyzer:\n    \"\"\
+    \"Analyzes competitor strategies.\"\"\"\n\n    def analyze_competitor_ads(self, competitor_page_url: str) -> Dict[str,\
+    \ Any]:\n        \"\"\"Provides a summary of a competitor's ad strategy.\"\"\"\n        return {\n            \"summary\"\
+    : f\"Competitor at {competitor_page_url} is running mainly video ads focusing on price promotions.\",\n            \"\
+    common_themes\": [\"Discounts\", \"Limited-time offers\", \"New arrivals\"],\n            \"ad_format_mix\": {\"video\"\
+    : 0.6, \"image\": 0.3, \"carousel\": 0.1}\n        }\n\nclass InfluencerIdentifier:\n    \"\"\"Identifies relevant influencers\
+    \ for collaborations.\"\"\"\n\n    def find_influencers(self, niche: str, follower_range: Tuple[int, int] = (10000, 100000))\
+    \ -> List[Dict[str, Any]]:\n        \"\"\"Finds potential influencers in a given niche and follower range.\"\"\"\n   \
+    \     # Dummy data\n        return [\n            {\"name\": \"Influencer One\", \"followers\": 55000, \"engagement_rate\"\
+    : 3.5, \"niche\": niche},\n            {\"name\": \"Influencer Two\", \"followers\": 25000, \"engagement_rate\": 5.2,\
+    \ \"niche\": niche},\n            {\"name\": \"Influencer Three\", \"followers\": 89000, \"engagement_rate\": 2.8, \"\
+    niche\": niche}\n        ]\n\nclass ROITracker:\n    \"\"\"Tracks and calculates return on investment.\"\"\"\n\n    def\
+    \ calculate_roi(self, ad_spend: float, revenue: float) -> float:\n        \"\"\"Calculates ROI from ad spend and revenue.\"\
+    \"\"\n        if ad_spend == 0: return 0\n        return ((revenue - ad_spend) / ad_spend) * 100\n\n    def calculate_roas(self,\
+    \ ad_spend: float, revenue: float) -> float:\n        \"\"\"Calculates Return On Ad Spend (ROAS).\"\"\"\n        if ad_spend\
+    \ == 0: return 0\n        return revenue / ad_spend\n\nclass QuickAdGenerator:\n    \"\"\"Generates ads quickly for immediate\
+    \ posting.\"\"\"\n\n    def generate_quick_text_ad(self, product_name: str, benefit: str) -> Dict[str, str]:\n       \
+    \ \"\"\"Generates a simple text ad that can be used immediately.\"\"\"\n        return {\n            \"headline\": f\"\
+    {product_name}: The Ultimate Solution!\",\n            \"primary_text\": f\"Finally, a way to {benefit}. Get {product_name}\
+    \ today! #ad #{product_name.lower()}\\n\\nShop Now!\",\n            \"cta\": \"Shop Now\"\n        }\n\n    def generate_quick_image_ad(self,\
+    \ product_name: str, benefit: str, image_url: str) -> Dict[str, Any]:\n        \"\"\"Generates a simple image ad package.\"\
+    \"\"\n        text_ad = self.generate_quick_text_ad(product_name, benefit)\n        text_ad['image_url'] = image_url\n\
+    \        return text_ad\n\nclass ComplianceChecker:\n    \"\"\"Checks ads against Facebook's advertising policies.\"\"\
+    \"\n\n    def check_ad_copy(self, ad_copy: Dict[str, str]) -> List[str]:\n        \"\"\"Performs a basic check for common\
+    \ policy violations.\"\"\"\n        warnings = []\n        text_to_check = ad_copy.get(\"primary_text\", \"\") + \" \"\
+    \ + ad_copy.get(\"headline\", \"\")\n        \n        if re.search(r'\\byou\\b', text_to_check, re.IGNORECASE):\n   \
+    \         warnings.append(\"Warning: Using 'you' or 'your' can sometimes imply personal attributes. Review carefully against\
+    \ Facebook's policy.\")\n        \n        if re.search(r'\\b(lose weight|fat loss|get rid of debt)\\b', text_to_check,\
+    \ re.IGNORECASE):\n            warnings.append(\"Warning: Ad copy contains phrases related to sensitive topics (e.g.,\
+    \ weight loss, financial distress) that are highly scrutinized. Ensure claims are realistic and not misleading.\")\n\n\
+    \        if len(ad_copy.get(\"primary_text\", \"\")) > 900:\n            warnings.append(\"Warning: Primary text is very\
+    \ long, which may impact performance and user experience.\")\n            \n        if ad_copy.get(\"cta\", \"\").lower()\
+    \ == \"click here\":\n            warnings.append(\"Warning: 'Click Here' is a low-quality CTA. Use more descriptive calls\
+    \ to action like 'Shop Now' or 'Learn More'.\")\n\n        return warnings\n\n# ==================================================================================================\n\
+    #        MCP TOOL DEFINITIONS\n# ==================================================================================================\n\
+    \nTOOLS = [\n    {\n        \"tool_name\": \"meta_generate_ad_copy\",\n        \"description\": \"Generate compelling\
+    \ ad copy for a Meta/Facebook ad.\",\n        \"input_schema\": {\n            \"type\": \"object\",\n            \"properties\"\
+    : {\n                \"product_name\": {\"type\": \"string\"},\n                \"target_audience\": {\"type\": \"string\"\
+    },\n                \"key_benefit\": {\"type\": \"string\"},\n                \"tone\": {\"type\": \"string\", \"default\"\
+    : \"persuasive\"},\n                \"cta\": {\"type\": \"string\", \"default\": \"Learn More\"}\n            },\n   \
+    \         \"required\": [\"product_name\", \"target_audience\", \"key_benefit\"]\n        }\n    },\n    {\n        \"\
+    tool_name\": \"meta_get_trends\",\n        \"description\": \"Get current marketing trends on Meta/Facebook.\",\n    \
+    \    \"input_schema\": {}\n    }\n]\n\n# ==================================================================================================\n\
+    #        FASTAPI ROUTER\n# ==================================================================================================\n\
+    \ndef create_fastapi_router(skill_manager):\n    \"\"\"Creates a FastAPI router for this skill.\"\"\"\n    from fastapi\
+    \ import APIRouter, Depends\n\n    router = APIRouter()\n    ad_creator = AdCreator()\n\n    @router.post(\"/generate-ad-copy\"\
+    )\n    def generate_ad_copy_endpoint(product_name: str, target_audience: str, key_benefit: str, tone: str = \"persuasive\"\
+    , cta: str = \"Learn More\"):\n        return ad_creator.generate_text_ad(product_name, target_audience, key_benefit,\
+    \ tone, cta)\n\n    @router.get(\"/trends\")\n    def get_trends_endpoint():\n        trend_analyzer = TrendAnalyzer()\n\
+    \        return trend_analyzer.get_current_trends()\n\n    return router\n\n# ==================================================================================================\n\
+    #        UNIT TESTS\n# ==================================================================================================\n\
+    \nclass TestMetaFacebookMarketingSkill(unittest.TestCase):\n\n    def setUp(self):\n        \"\"\"Set up test instances\
+    \ of all expert classes.\"\"\"\n        self.ad_creator = AdCreator()\n        self.campaign_manager = CampaignManager()\n\
+    \        self.content_calendar = ContentCalendar()\n        self.audience_targeter = AudienceTargeter()\n        self.analytics_reporter\
+    \ = AnalyticsReporter()\n        self.keyword_researcher = KeywordResearcher()\n        self.trend_analyzer = TrendAnalyzer()\n\
+    \        self.competitor_analyzer = CompetitorAnalyzer()\n        self.influencer_identifier = InfluencerIdentifier()\n\
+    \        self.roi_tracker = ROITracker()\n        self.quick_ad_generator = QuickAdGenerator()\n        self.compliance_checker\
+    \ = ComplianceChecker()\n\n    def test_ad_copy_generation(self):\n        \"\"\"Test basic ad copy generation.\"\"\"\n\
+    \        ad_copy = self.ad_creator.generate_text_ad(\"NewCo\", \"tech enthusiasts\", \"boost productivity\")\n       \
+    \ self.assertIsInstance(ad_copy, dict)\n        self.assertIn(\"headline\", ad_copy)\n        self.assertIn(\"NewCo\"\
+    , ad_copy[\"headline\"])\n\n    def test_reels_ad_concept(self):\n        \"\"\"Test Reels ad concept generation.\"\"\"\
+    \n        concept = self.ad_creator.generate_reels_ad_concept(\"SuperDrink\", \"athletes\")\n        self.assertIsInstance(concept,\
+    \ dict)\n        self.assertIn(\"concept\", concept)\n        self.assertIn(\"SuperDrink\", concept[\"concept\"])\n\n\
+    \    def test_campaign_planning(self):\n        \"\"\"Test campaign plan creation.\"\"\"\n        plan = self.campaign_manager.create_campaign_plan(\"\
+    GadgetX\", 5000, 4, \"conversions\")\n        self.assertEqual(plan[\"budget\"], 5000)\n        self.assertEqual(plan[\"\
+    objective\"], \"conversions\")\n\n    def test_advantage_plus_setup(self):\n        \"\"\"Test Advantage+ campaign setup\
+    \ recommendation.\"\"\"\n        setup = self.campaign_manager.setup_advantage_plus_campaign(\"WidgetZ\", 1000, \"US adults\
+    \ 25-54\")\n        self.assertEqual(setup[\"campaign_type\"], \"Advantage+ Shopping Campaign\")\n        self.assertIn(\"\
+    Meta\\'s AI\", setup[\"recommendation\"])\n\n    def test_content_calendar(self):\n        \"\"\"Test content calendar\
+    \ generation.\"\"\"\n        calendar = self.content_calendar.generate_calendar(\"fitness\", 3)\n        self.assertEqual(len(calendar),\
+    \ 3)\n        self.assertEqual(calendar[0][\"day\"], 1)\n\n    def test_lookalike_strategy(self):\n        \"\"\"Test\
+    \ Lookalike Audience strategy creation.\"\"\"\n        strategy = self.audience_targeter.create_lookalike_strategy(\"\
+    Website Visitors\", \"CA\")\n        self.assertIn(\"1% Lookalike\", strategy[\"recommendation\"])\n        self.assertEqual(strategy[\"\
+    country\"], \"CA\")\n\n    def test_pixel_setup(self):\n        \"\"\"Test Meta Pixel setup instruction generation.\"\"\
+    \"\n        pixel_info = self.audience_targeter.setup_pixel_tracking(\"https://my-awesome-site.com\")\n        self.assertTrue(pixel_info[\"\
+    pixel_id\"].startswith(\"PIXEL_\"))\n        self.assertIn(\"Meta Pixel Helper\", pixel_info[\"setup_instructions\"])\n\
+    \        self.assertIn(pixel_info[\"pixel_id\"], pixel_info[\"pixel_code_snippet\"])\n\n    def test_performance_analysis(self):\n\
+    \        \"\"\"Test dummy performance analysis.\"\"\"\n        report = self.analytics_reporter.analyze_performance({\"\
+    ctr\": 0.03, \"cpc\": 1.2})\n        self.assertIn(\"recommendations\", report)\n        self.assertEqual(report[\"key_metrics\"\
+    ][\"ctr\"], 0.03)\n\n    def test_hashtag_research(self):\n        \"\"\"Test hashtag suggestion functionality.\"\"\"\n\
+    \        hashtags = self.keyword_researcher.get_related_hashtags(\"baking\", 3)\n        self.assertEqual(len(hashtags),\
+    \ 3)\n        self.assertIn(\"#baking\", hashtags)\n\n    def test_trend_analysis(self):\n        \"\"\"Test trend analysis\
+    \ functionality.\"\"\"\n        trends = self.trend_analyzer.get_current_trends()\n        self.assertIsInstance(trends,\
+    \ list)\n        self.assertGreater(len(trends), 0)\n        self.assertIn(\"trend\", trends[0])\n\n    def test_roi_calculation(self):\n\
+    \        \"\"\"Test ROI and ROAS calculations.\"\"\"\n        roi = self.roi_tracker.calculate_roi(ad_spend=100, revenue=500)\n\
+    \        roas = self.roi_tracker.calculate_roas(ad_spend=100, revenue=500)\n        self.assertAlmostEqual(roi, 400.0)\n\
+    \        self.assertAlmostEqual(roas, 5.0)\n\n    def test_quick_ad_generator(self):\n        \"\"\"Test the quick ad\
+    \ generation for immediate use.\"\"\"\n        ad = self.quick_ad_generator.generate_quick_image_ad(\"QuickBook\", \"\
+    read faster\", \"http://image.url/book.jpg\")\n        self.assertIn(\"QuickBook\", ad[\"headline\"])\n        self.assertIn(\"\
+    Shop Now\", ad[\"cta\"])\n        self.assertEqual(ad[\"image_url\"], \"http://image.url/book.jpg\")\n\n    def test_compliance_checker(self):\n\
+    \        \"\"\"Test the compliance checker for various ad copy issues.\"\"\"\n        good_copy = {\"primary_text\": \"\
+    A great new product.\", \"headline\": \"Check it out!\", \"cta\": \"Learn More\"}\n        bad_copy_you = {\"primary_text\"\
+    : \"Are you tired? You need this.\", \"headline\": \"Feel Better Now\"}\n        bad_copy_claim = {\"primary_text\": \"\
+    Guaranteed to help you lose weight in 3 days.\", \"headline\": \"Fast Weight Loss\"}\n        bad_copy_cta = {\"primary_text\"\
+    : \"Our product is amazing.\", \"headline\": \"Get it now\", \"cta\": \"Click Here\"}\n        \n        self.assertEqual(len(self.compliance_checker.check_ad_copy(good_copy)),\
+    \ 0)\n        self.assertTrue(any(\"personal attributes\" in w for w in self.compliance_checker.check_ad_copy(bad_copy_you)))\n\
+    \        self.assertTrue(any(\"sensitive topics\" in w for w in self.compliance_checker.check_ad_copy(bad_copy_claim)))\n\
+    \        self.assertTrue(any(\"low-quality CTA\" in w for w in self.compliance_checker.check_ad_copy(bad_copy_cta)))\n\
+    \n\n# ==================================================================================================\n#        CLI\
+    \ INTERFACE\n# ==================================================================================================\n\n\
+    def main():\n    parser = argparse.ArgumentParser(description=\"Meta/Facebook Marketing Skill CLI\")\n    subparsers =\
+    \ parser.add_subparsers(dest=\"command\", help=\"Available commands\")\n\n    # Ad generation command\n    ad_parser =\
+    \ subparsers.add_parser(\"generate_ad\", help=\"Generate a new ad creative\")\n    ad_parser.add_argument(\"--product\"\
+    , required=True, help=\"Product name\")\n    ad_parser.add_argument(\"--audience\", required=True, help=\"Target audience\
+    \ description\")\n    ad_parser.add_argument(\"--benefit\", required=True, help=\"Key benefit to highlight\")\n\n    #\
+    \ Trend analysis command\n    trends_parser = subparsers.add_parser(\"get_trends\", help=\"Get current marketing trends\"\
+    )\n\n    # Compliance check command\n    compliance_parser = subparsers.add_parser(\"check_compliance\", help=\"Check\
+    \ ad copy for compliance\")\n    compliance_parser.add_argument(\"--headline\", required=True, help=\"Ad headline\")\n\
+    \    compliance_parser.add_argument(\"--primary_text\", required=True, help=\"Ad primary text\")\n\n    args = parser.parse_args()\n\
+    \n    if args.command == \"generate_ad\":\n        ad_creator = AdCreator()\n        ad_copy = ad_creator.generate_text_ad(args.product,\
+    \ args.audience, args.benefit)\n        print(json.dumps(ad_copy, indent=2))\n    elif args.command == \"get_trends\"\
+    :\n        trend_analyzer = TrendAnalyzer()\n        trends = trend_analyzer.get_current_trends()\n        print(json.dumps(trends,\
+    \ indent=2))\n    elif args.command == \"check_compliance\":\n        checker = ComplianceChecker()\n        warnings\
+    \ = checker.check_ad_copy({\n            \"headline\": args.headline,\n            \"primary_text\": args.primary_text\n\
+    \        })\n        if warnings:\n            print(\"Compliance Warnings:\")\n            for warning in warnings:\n\
+    \                print(f\"- {warning}\")\n        else:\n            print(\"No obvious compliance issues found.\")\n\n\
+    if __name__ == \"__main__\":\n    main()\n"
+examples:
+- description: Load and use the Meta/Facebook Marketing Expert skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''meta_facebook_marketing'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

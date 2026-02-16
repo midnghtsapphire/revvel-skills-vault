@@ -1,0 +1,68 @@
+name: dyson-cli
+title: Dyson Fan Control
+version: 0.1.0
+description: Control Dyson air purifiers, fans, and heaters via local MQTT. Use when asked to control Dyson devices, adjust
+  fan speed, set temperature/heat, enable oscillation, or check room temperature/humidity. Requires being on the same WiFi
+  network as the device.
+metadata:
+  author: tmustier
+  category: General
+  tags:
+  - general
+  - dyson
+  - cli
+  source: clawhub-community
+  clawhub_slug: dyson-cli
+  clawhub_path: tmustier/dyson-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dyson Fan Control
+
+    # Source: ClawHub community skill by tmustier
+
+    # Install: clawhub install dyson-cli
+
+    # Path: tmustier/dyson-cli
+
+
+    ## Description
+
+    Control Dyson air purifiers, fans, and heaters via local MQTT. Use when asked to control Dyson devices, adjust fan speed,
+    set temperature/heat, enable oscillation, or check room temperature/humidity. Requires being on the same WiFi network
+    as the device.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - src/dyson_cli/__init__.py
+
+    - src/dyson_cli/cli.py
+
+    - src/dyson_cli/config.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dyson-cli
+
+    ```'
+examples:
+- description: Install Dyson Fan Control from ClawHub
+  usage: clawhub install dyson-cli
+schema_version: '1.0'

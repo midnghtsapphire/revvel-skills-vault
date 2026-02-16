@@ -1,0 +1,60 @@
+name: bmkg-monitor
+title: BMKG Monitor
+version: 1.0.0
+description: Monitoring earthquake data in Indonesia using BMKG official data. Use when the user asks for the latest earthquake,
+  felt earthquakes, or information about a specific seismic event in Indonesia.
+metadata:
+  author: bluemeda
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bmkg
+  - monitor
+  source: clawhub-community
+  clawhub_slug: bmkg-monitor
+  clawhub_path: bluemeda/bmkg-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# BMKG Monitor
+
+    # Source: ClawHub community skill by bluemeda
+
+    # Install: clawhub install bmkg-monitor
+
+    # Path: bluemeda/bmkg-monitor
+
+
+    ## Description
+
+    Monitoring earthquake data in Indonesia using BMKG official data. Use when the user asks for the latest earthquake, felt
+    earthquakes, or information about a specific seismic event in Indonesia.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/seismology.md
+
+    - scripts/get_gempa.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bmkg-monitor
+
+    ```'
+examples:
+- description: Install BMKG Monitor from ClawHub
+  usage: clawhub install bmkg-monitor
+schema_version: '1.0'

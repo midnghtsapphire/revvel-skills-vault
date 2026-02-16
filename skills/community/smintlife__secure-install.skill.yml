@@ -1,0 +1,58 @@
+name: secure-install
+title: Secure Install
+version: 1.0.1
+description: Scans ClawHub skills via the ClawDex API by https://www.koi.ai/ and requires user approval based on the verdict.
+metadata:
+  author: smintlife
+  category: Development & Coding
+  tags:
+  - development-coding
+  - secure
+  - install
+  source: clawhub-community
+  clawhub_slug: secure-install
+  clawhub_path: smintlife/secure-install
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Secure Install
+
+    # Source: ClawHub community skill by smintlife
+
+    # Install: clawhub install secure-install
+
+    # Path: smintlife/secure-install
+
+
+    ## Description
+
+    Scans ClawHub skills via the ClawDex API by https://www.koi.ai/ and requires user approval based on the verdict.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install secure-install
+
+    ```'
+examples:
+- description: Install Secure Install from ClawHub
+  usage: clawhub install secure-install
+schema_version: '1.0'

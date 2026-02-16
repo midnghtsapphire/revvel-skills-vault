@@ -1,0 +1,74 @@
+name: prayer-times
+title: Prayer Times - Automated Salat Reminders
+version: 0.1.0
+description: Get accurate Islamic prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha) for any location worldwide using official
+  calculation methods. Use when users ask about prayer times, Salat schedules, next prayer, or need to set up automated prayer
+  reminders. Includes automated background reminder system that ale
+metadata:
+  author: diepox
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - prayer
+  - times
+  source: clawhub-community
+  clawhub_slug: muslim-prayer-reminder
+  clawhub_path: diepox/muslim-prayer-reminder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Prayer Times - Automated Salat Reminders
+
+    # Source: ClawHub community skill by diepox
+
+    # Install: clawhub install muslim-prayer-reminder
+
+    # Path: diepox/muslim-prayer-reminder
+
+
+    ## Description
+
+    Get accurate Islamic prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha) for any location worldwide using official calculation
+    methods. Use when users ask about prayer times, Salat schedules, next prayer, or need to set up automated prayer reminders.
+    Includes automated background reminder system that ale
+
+
+    ## Files
+
+    - CRITICAL_SETUP.md
+
+    - GITHUB_SETUP.md
+
+    - README.md
+
+    - SKILL.md
+
+    - VERIFICATION.md
+
+    - _meta.json
+
+    - push-to-github.sh
+
+    - references/example-cron-jobs.json
+
+    - references/methods.md
+
+    - references/setup-reminders.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install muslim-prayer-reminder
+
+    ```'
+examples:
+- description: Install Prayer Times - Automated Salat Reminders from ClawHub
+  usage: clawhub install muslim-prayer-reminder
+schema_version: '1.0'

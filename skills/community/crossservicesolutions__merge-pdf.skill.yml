@@ -1,0 +1,64 @@
+name: merge-pdf
+title: Merge PDF
+version: 1.0.0
+description: Merge multiple user-provided PDF files by uploading them to Cross-Service-Solutions, polling until completion,
+  then returning a download URL for the merged PDF.
+metadata:
+  author: crossservicesolutions
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - merge
+  - pdf
+  source: clawhub-community
+  clawhub_slug: merge-pdf
+  clawhub_path: crossservicesolutions/merge-pdf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Merge PDF
+
+    # Source: ClawHub community skill by crossservicesolutions
+
+    # Install: clawhub install merge-pdf
+
+    # Path: crossservicesolutions/merge-pdf
+
+
+    ## Description
+
+    Merge multiple user-provided PDF files by uploading them to Cross-Service-Solutions, polling until completion, then returning
+    a download URL for the merged PDF.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - examples/request.json
+
+    - scripts/merge-pdf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install merge-pdf
+
+    ```'
+examples:
+- description: Install Merge PDF from ClawHub
+  usage: clawhub install merge-pdf
+schema_version: '1.0'

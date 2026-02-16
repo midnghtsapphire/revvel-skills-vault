@@ -1,0 +1,84 @@
+name: ghostbot-aclm
+title: AI-powered Automated Concentrated Liquidity Manager for Uniswap v4. Manage liquidity positions, auto-rebalance out-of-range
+  positions, optimize LP fees dynamically, execute limit orders (stop-loss, take-profit), and monitor oracle signals — all
+  from chat. Deployed on Ethereum Sepolia with verified contracts. Use this skill when users ask about DeFi liquidity provision,
+  Uniswap v4 hooks, pool management, LP positions, impermanent loss, or automated market making.
+version: 1.0.0
+description: GhostBot ACLM — AI-powered Automated Concentrated Liquidity Manager for Uniswap v4. Manage liquidity positions,
+  auto-rebalance out-of-range positions, optimize LP fees dynamically, execute limit orders (stop-loss, take-profit), and
+  monitor oracle signals — all from chat. Deployed on Ethereum Sepolia
+metadata:
+  author: aqiljaafree
+  category: Communication
+  tags:
+  - communication
+  - ghostbot
+  - aclm
+  source: clawhub-community
+  clawhub_slug: ghostbot-uniswap-v4hooks-testnet
+  clawhub_path: aqiljaafree/ghostbot-uniswap-v4hooks-testnet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AI-powered Automated Concentrated Liquidity Manager for Uniswap v4. Manage liquidity positions, auto-rebalance
+    out-of-range positions, optimize LP fees dynamically, execute limit orders (stop-loss, take-profit), and monitor oracle
+    signals — all from chat. Deployed on Ethereum Sepolia with verified contracts. Use this skill when users ask about DeFi
+    liquidity provision, Uniswap v4 hooks, pool management, LP positions, impermanent loss, or automated market making.
+
+    # Source: ClawHub community skill by aqiljaafree
+
+    # Install: clawhub install ghostbot-uniswap-v4hooks-testnet
+
+    # Path: aqiljaafree/ghostbot-uniswap-v4hooks-testnet
+
+
+    ## Description
+
+    GhostBot ACLM — AI-powered Automated Concentrated Liquidity Manager for Uniswap v4. Manage liquidity positions, auto-rebalance
+    out-of-range positions, optimize LP fees dynamically, execute limit orders (stop-loss, take-profit), and monitor oracle
+    signals — all from chat. Deployed on Ethereum Sepolia
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/architecture.md
+
+    - references/contracts.md
+
+    - scripts/add-liquidity.mjs
+
+    - scripts/config.mjs
+
+    - scripts/oracle-info.mjs
+
+    - scripts/package.json
+
+    - scripts/pool-stats.mjs
+
+    - scripts/positions.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ghostbot-uniswap-v4hooks-testnet
+
+    ```'
+examples:
+- description: Install AI-powered Automated Concentrated Liquidity Manager for Uniswap v4. Manage liquidity positions, auto-rebalance
+    out-of-range positions, optimize LP fees dynamically, execute limit orders (stop-loss, take-profit), and monitor oracle
+    signals — all from chat. Deployed on Ethereum Sepolia with verified contracts. Use this skill when users ask about DeFi
+    liquidity provision, Uniswap v4 hooks, pool management, LP positions, impermanent loss, or automated market making. from
+    ClawHub
+  usage: clawhub install ghostbot-uniswap-v4hooks-testnet
+schema_version: '1.0'

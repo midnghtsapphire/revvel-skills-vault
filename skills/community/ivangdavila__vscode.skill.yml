@@ -1,0 +1,53 @@
+name: vscode
+title: VSCode
+version: 1.0.0
+description: Avoid common VSCode mistakes — settings conflicts, debugger setup, and extension clashes.
+metadata:
+  author: ivangdavila
+  category: Development & Coding
+  tags:
+  - development-coding
+  - vscode
+  source: clawhub-community
+  clawhub_slug: vscode
+  clawhub_path: ivangdavila/vscode
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# VSCode
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install vscode
+
+    # Path: ivangdavila/vscode
+
+
+    ## Description
+
+    Avoid common VSCode mistakes — settings conflicts, debugger setup, and extension clashes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install vscode
+
+    ```'
+examples:
+- description: Install VSCode from ClawHub
+  usage: clawhub install vscode
+schema_version: '1.0'

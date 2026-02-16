@@ -1,0 +1,71 @@
+name: luma
+title: Luma Event Manager
+version: 2.1.1
+description: 'Luma Event Manager for Clawdbot — Discover events by topic or location, RSVP, view guest lists, and sync to
+  Google Calendar. No API key required (web scraping), no Luma Plus subscription needed. Repo: github.com/mariovallereyes/luma-skill'
+metadata:
+  author: mariovallereyes
+  category: Search & Research
+  tags:
+  - search-research
+  - luma
+  source: clawhub-community
+  clawhub_slug: luma-event-manager
+  clawhub_path: mariovallereyes/luma-event-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Luma Event Manager
+
+    # Source: ClawHub community skill by mariovallereyes
+
+    # Install: clawhub install luma-event-manager
+
+    # Path: mariovallereyes/luma-event-manager
+
+
+    ## Description
+
+    Luma Event Manager for Clawdbot — Discover events by topic or location, RSVP, view guest lists, and sync to Google Calendar.
+    No API key required (web scraping), no Luma Plus subscription needed. Repo: github.com/mariovallereyes/luma-skill
+
+
+    ## Files
+
+    - LUMA_SKILL_DESIGN.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - skill.json
+
+    - tsconfig.json
+
+    - src/calendar.ts
+
+    - src/index.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install luma-event-manager
+
+    ```'
+examples:
+- description: Install Luma Event Manager from ClawHub
+  usage: clawhub install luma-event-manager
+schema_version: '1.0'

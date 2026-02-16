@@ -1,0 +1,74 @@
+name: openclaw-menubar
+title: openclaw menubar
+version: 1.0.0
+description: Enable OpenClaw as a native macOS menu bar app with quick access popup. **macOS ONLY** - not compatible with
+  Windows or Linux. Use when user asks to "enable menubar", "add menu bar", "run in menu bar", "make it accessible from menu
+  bar", or wants quick OpenClaw access without opening full dashboard.
+metadata:
+  author: prab002
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - openclaw
+  - menubar
+  source: clawhub-community
+  clawhub_slug: openclaw-menubar
+  clawhub_path: prab002/openclaw-menubar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# openclaw menubar
+
+    # Source: ClawHub community skill by prab002
+
+    # Install: clawhub install openclaw-menubar
+
+    # Path: prab002/openclaw-menubar
+
+
+    ## Description
+
+    Enable OpenClaw as a native macOS menu bar app with quick access popup. **macOS ONLY** - not compatible with Windows or
+    Linux. Use when user asks to "enable menubar", "add menu bar", "run in menu bar", "make it accessible from menu bar",
+    or wants quick OpenClaw access without opening full dashboard.
+
+
+    ## Files
+
+    - MENUBAR-INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/openclaw-menubar/FINAL_SOLUTION.md
+
+    - assets/openclaw-menubar/MARKETPLACE.md
+
+    - assets/openclaw-menubar/README.md
+
+    - assets/openclaw-menubar/START.md
+
+    - assets/openclaw-menubar/UPDATED_APPROACH.md
+
+    - assets/openclaw-menubar/create-icon.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-menubar
+
+    ```'
+examples:
+- description: Install openclaw menubar from ClawHub
+  usage: clawhub install openclaw-menubar
+schema_version: '1.0'

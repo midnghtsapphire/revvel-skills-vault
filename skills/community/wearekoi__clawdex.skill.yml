@@ -1,0 +1,55 @@
+name: clawdex_by_koi
+title: Clawdex by Koi
+version: 1.0.2
+description: Security check for ClawHub skills powered by Koi. Query the Clawdex API before installing any skill to verify
+  it's safe.
+metadata:
+  author: wearekoi
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawdex
+  - koi
+  source: clawhub-community
+  clawhub_slug: clawdex
+  clawhub_path: wearekoi/clawdex
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdex by Koi
+
+    # Source: ClawHub community skill by wearekoi
+
+    # Install: clawhub install clawdex
+
+    # Path: wearekoi/clawdex
+
+
+    ## Description
+
+    Security check for ClawHub skills powered by Koi. Query the Clawdex API before installing any skill to verify it''s safe.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdex
+
+    ```'
+examples:
+- description: Install Clawdex by Koi from ClawHub
+  usage: clawhub install clawdex
+schema_version: '1.0'

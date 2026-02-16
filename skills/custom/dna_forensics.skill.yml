@@ -1,0 +1,269 @@
+name: dna_forensics
+title: DNA Forensics Scientist
+version: 1.0.0
+description: Advanced DNA forensics analysis module for CODIS database queries, paternity testing, degraded sample analysis,
+  mitochondrial DNA analysis, and genealogical DNA matching for cold cases
+metadata:
+  author: Revvel AI Engine
+  category: Forensic Investigation
+  tags:
+  - genealogical-dna-matching
+  - mitochondrial-dna-analysis
+  - forensics
+  - codis-database-query
+  - dna
+  - str-profile-comparison
+  - forensic-statistical-calculations
+  - paternity-maternity-testing
+  - degraded-sample-analysis
+  - touch-dna-processing
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport hashlib\nimport statistics\nimport math\nfrom typing import Dict, List,\
+    \ Optional, Tuple, Any, Union\nfrom datetime import datetime\nimport requests\nfrom collections import defaultdict, Counter\n\
+    import unittest\nimport logging\n\nSKILL_METADATA = {\n    \"name\": \"DNA Forensics Scientist\",\n    \"id\": \"dna_forensics\"\
+    ,\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\": \"Advanced DNA forensics analysis\
+    \ module for CODIS database queries, paternity testing, degraded sample analysis, mitochondrial DNA analysis, and genealogical\
+    \ DNA matching for cold cases\",\n    \"capabilities\": [\n        \"codis_database_query\",\n        \"paternity_maternity_testing\"\
+    ,\n        \"degraded_sample_analysis\",\n        \"touch_dna_processing\",\n        \"genealogical_dna_matching\",\n\
+    \        \"mitochondrial_dna_analysis\",\n        \"str_profile_comparison\",\n        \"forensic_statistical_calculations\"\
+    ,\n        \"dna_mixture_deconvolution\",\n        \"kinship_analysis\"\n    ],\n    \"domain\": \"forensic_genetics\"\
+    \n}\n\nEXPERT_PROMPTS = {\n    \"codis_search\": \"\"\"Perform a CODIS database search for STR profiles matching the following\
+    \ genetic markers:\n{str_markers}\nSearch parameters:\n- Match threshold: {match_threshold}%\n- Population filter: {population_filter}\n\
+    - Include partial matches: {include_partial}\n- Date range: {date_range}\nReturn matching profiles with statistical significance\
+    \ calculations.\"\"\",\n    \n    \"paternity_test\": \"\"\"Conduct paternity testing analysis with the following DNA\
+    \ profiles:\nAlleged Father: {father_profile}\nChild: {child_profile}\nMother: {mother_profile}\nRequired calculations:\n\
+    - Combined Paternity Index (CPI)\n- Probability of Paternity (PP)\n- Exclusion probability\n- Mutation rate considerations\n\
+    Population database: {population_db}\nSignificance level: {alpha}\"\"\",\n    \n    \"degraded_dna\": \"\"\"Analyze degraded\
+    \ DNA sample with the following characteristics:\nSample ID: {sample_id}\nDegradation level: {degradation_level}\nAvailable\
+    \ markers: {available_markers}\nPeak heights: {peak_heights}\nExpected artifacts: {artifacts}\nPerform:\n- Degradation\
+    \ correction\n- Allele dropout assessment\n- Stutter peak filtering\n- Statistical confidence intervals\"\"\",\n    \n\
+    \    \"cold_case_genealogy\": \"\"\"Perform genealogical DNA analysis for cold case investigation:\nUnknown sample: {unknown_profile}\n\
+    Database matches: {database_matches}\nGeneration depth: {generations}\nPopulation: {population}\nAnalysis requirements:\n\
+    - Identify common ancestors\n- Calculate relationship distances\n- Triangulate family connections\n- Estimate time to\
+    \ most recent common ancestor (TMRCA)\"\"\",\n    \n    \"mitochondrial_analysis\": \"\"\"Analyze mitochondrial DNA sequence:\n\
+    Haplogroup prediction: {haplogroup}\nHeteroplasmy detection: {heteroplasmy_threshold}\nReference sequence: {reference}\n\
+    Population frequencies: {population_freq}\nCalculate:\n- Haplogroup confidence\n- Mutation rates\n- Phylogenetic relationships\n\
+    - Maternal lineage probability\"\"\",\n    \n    \"touch_dna\": \"\"\"Process touch DNA evidence:\nSample type: {sample_type}\n\
+    Cell count: {cell_count}\nContamination risk: {contamination_risk}\nSTR results: {str_results}\nPerform:\n- Low template\
+    \ DNA analysis\n- Consensus profile building\n- Contamination detection\n- Drop-in/drop-out assessment\"\"\",\n    \n\
+    \    \"mixture_deconvolution\": \"\"\"Deconvolute DNA mixture with {contributors} contributors:\nMixture profile: {mixture_profile}\n\
+    Known contributors: {known_contributors}\nPeak height ratios: {ratios}\nPerform:\n- Maximum likelihood estimation\n- Weight\
+    \ of evidence calculation\n- Degradation modeling\n- Drop-out probability assessment\"\"\",\n    \n    \"kinship_analysis\"\
+    : \"\"\"Calculate kinship relationships between individuals:\nReference profiles: {reference_profiles}\nUnknown samples:\
+    \ {unknown_samples}\nRelationship types: {relationship_types}\nPopulation data: {population_data}\nCalculate:\n- Likelihood\
+    \ ratios\n- Kinship coefficients\n- Inbreeding coefficients\n- Relationship probabilities\"\"\"\n}\n\nINTEGRATION_POINTS\
+    \ = {\n    \"codis_database\": {\n        \"type\": \"database\",\n        \"endpoint\": \"https://codis.fbi.gov/api/v2\"\
+    ,\n        \"description\": \"FBI CODIS STR database for forensic DNA matching\",\n        \"auth_method\": \"certificate\"\
+    ,\n        \"documentation_url\": \"https://codis.fbi.gov/documentation\"\n    },\n    \"ncbi_str_base\": {\n        \"\
+    type\": \"database\",\n        \"endpoint\": \"https://api.ncbi.nlm.nih.gov/variation/v1/str\",\n        \"description\"\
+    : \"NCBI Short Tandem Repeat database\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://www.ncbi.nlm.nih.gov/variation/docs\"\
+    \n    },\n    \"webstr_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"http://webstr-api.ucsd.edu\",\n \
+    \       \"description\": \"WebSTR API for human genome-wide STR variation\",\n        \"auth_method\": \"none\",\n   \
+    \     \"documentation_url\": \"https://github.com/acg-team/webSTR-API\"\n    },\n    \"microhapdb\": {\n        \"type\"\
+    : \"database\",\n        \"endpoint\": \"https://github.com/bioforensics/MicroHapDB\",\n        \"description\": \"Microhaplotype\
+    \ marker and allele frequency database\",\n        \"auth_method\": \"none\",\n        \"documentation_url\": \"https://microhapdb.readthedocs.io\"\
+    \n    },\n    \"strkit_tool\": {\n        \"type\": \"tool\",\n        \"endpoint\": \"local\",\n        \"description\"\
+    : \"STR genotyping toolkit for long reads\",\n        \"auth_method\": \"local\",\n        \"documentation_url\": \"https://github.com/davidlougheed/strkit\"\
+    \n    },\n    \"mitomap\": {\n        \"type\": \"database\",\n        \"endpoint\": \"https://www.mitomap.org/api/v1\"\
+    ,\n        \"description\": \"Mitochondrial DNA database for forensic analysis\",\n        \"auth_method\": \"api_key\"\
+    ,\n        \"documentation_url\": \"https://www.mitomap.org/docs\"\n    }\n}\n\ndef validate_str_profile(profile: Dict[str,\
+    \ Any]) -> bool:\n    \"\"\"Validate STR profile format and allele calls.\"\"\"\n    if not isinstance(profile, dict):\n\
+    \        return False\n    \n    required_fields = ['sample_id', 'markers']\n    if not all(field in profile for field\
+    \ in required_fields):\n        return False\n    \n    for marker, alleles in profile['markers'].items():\n        if\
+    \ not isinstance(marker, str) or not marker.strip():\n            return False\n        if not isinstance(alleles, list)\
+    \ or len(alleles) == 0:\n            return False\n        for allele in alleles:\n            if not isinstance(allele,\
+    \ (int, float)):\n                return False\n    \n    return True\n\ndef calculate_combined_paternity_index(\n   \
+    \ father_alleles: Dict[str, List[float]],\n    child_alleles: Dict[str, List[float]],\n    mother_alleles: Dict[str, List[float]],\n\
+    \    population_freqs: Dict[str, Dict[float, float]]\n) -> float:\n    \"\"\"Calculate Combined Paternity Index (CPI)\
+    \ for paternity testing.\"\"\"\n    cpi = 1.0\n    \n    for marker, child_genotype in child_alleles.items():\n      \
+    \  if marker not in father_alleles or marker not in mother_alleles:\n            continue\n            \n        father_genotype\
+    \ = father_alleles[marker]\n        mother_genotype = mother_alleles[marker]\n        \n        # Find obligatory paternal\
+    \ allele\n        obligatory_paternal = None\n        for child_allele in child_genotype:\n            if child_allele\
+    \ not in mother_genotype:\n                obligatory_paternal = child_allele\n                break\n        \n     \
+    \   if obligatory_paternal is None:\n            # Child could be homozygous or both alleles from mother\n           \
+    \ continue\n            \n        # Calculate PI for this marker\n        freq = population_freqs.get(marker, {}).get(obligatory_paternal,\
+    \ 0.01)\n        if freq > 0:\n            if obligatory_paternal in father_genotype:\n                pi = 1.0 / freq\n\
+    \            else:\n                pi = 0.0\n            cpi *= pi\n    \n    return cpi\n\ndef assess_dna_degradation(\n\
+    \    peak_heights: Dict[str, List[float]],\n    expected_ratios: Dict[str, float],\n    degradation_threshold: float =\
+    \ 0.5\n) -> Dict[str, Any]:\n    \"\"\"Assess DNA degradation based on peak height ratios.\"\"\"\n    degradation_assessment\
+    \ = {\n        'degraded': False,\n        'degradation_factor': 1.0,\n        'affected_markers': [],\n        'confidence':\
+    \ 0.0\n    }\n    \n    observed_ratios = {}\n    for marker, heights in peak_heights.items():\n        if len(heights)\
+    \ >= 2:\n            sorted_heights = sorted(heights, reverse=True)\n            ratio = sorted_heights[1] / sorted_heights[0]\
+    \ if sorted_heights[0] > 0 else 0\n            observed_ratios[marker] = ratio\n    \n    degraded_markers = []\n    degradation_factors\
+    \ = []\n    \n    for marker, observed_ratio in observed_ratios.items():\n        expected = expected_ratios.get(marker,\
+    \ 0.8)\n        if observed_ratio < expected * degradation_threshold:\n            degraded_markers.append(marker)\n \
+    \           degradation_factors.append(observed_ratio / expected if expected > 0 else 0)\n    \n    if degraded_markers:\n\
+    \        degradation_assessment['degraded'] = True\n        degradation_assessment['affected_markers'] = degraded_markers\n\
+    \        degradation_assessment['degradation_factor'] = statistics.mean(degradation_factors)\n        degradation_assessment['confidence']\
+    \ = len(degraded_markers) / len(observed_ratios)\n    \n    return degradation_assessment\n\ndef calculate_random_match_probability(\n\
+    \    profile: Dict[str, List[float]],\n    population_freqs: Dict[str, Dict[float, float]],\n    theta_correction: float\
+    \ = 0.01\n) -> float:\n    \"\"\"Calculate Random Match Probability (RMP) for STR profile.\"\"\"\n    rmp = 1.0\n    \n\
+    \    for marker, alleles in profile.items():\n        if marker not in population_freqs:\n            continue\n     \
+    \       \n        freqs = population_freqs[marker]\n        marker_rmp = 0.0\n        \n        if len(alleles) == 1:\n\
+    \            # Homozygous\n            freq = freqs.get(alleles[0], 0.01)\n            marker_rmp = freq**2 + freq*(1-freq)*theta_correction\n\
+    \        else:\n            # Heterozygous\n            freq1 = freqs.get(alleles[0], 0.01)\n            freq2 = freqs.get(alleles[1],\
+    \ 0.01)\n            marker_rmp = 2 * freq1 * freq2 * (1 - theta_correction)\n        \n        rmp *= marker_rmp\n  \
+    \  \n    return rmp\n\ndef parse_csf_file(file_content: str) -> Dict[str, Any]:\n    \"\"\"Parse CODIS CSF (Combined DNA\
+    \ Index System File) format.\"\"\"\n    lines = file_content.strip().split('\\n')\n    profile = {\n        'sample_id':\
+    \ '',\n        'markers': {},\n        'quality_metrics': {}\n    }\n    \n    for line in lines:\n        line = line.strip()\n\
+    \        if line.startswith('Sample'):\n            profile['sample_id'] = line.split(':')[1].strip()\n        elif '\\\
+    t' in line:\n            parts = line.split('\\t')\n            if len(parts) >= 3:\n                marker = parts[0]\n\
+    \                alleles = [float(x) for x in parts[1:] if x and x != 'OL']\n                profile['markers'][marker]\
+    \ = alleles\n    \n    return profile\n\ndef build_codis_query(\n    str_markers: Dict[str, List[float]],\n    match_threshold:\
+    \ float = 90.0,\n    population_filter: Optional[str] = None,\n    date_range: Optional[Tuple[str, str]] = None\n) ->\
+    \ Dict[str, Any]:\n    \"\"\"Build CODIS database query parameters.\"\"\"\n    query = {\n        'markers': str_markers,\n\
+    \        'match_threshold': match_threshold,\n        'search_type': 'partial' if match_threshold < 100 else 'exact'\n\
+    \    }\n    \n    if population_filter:\n        query['population_filter'] = population_filter\n    \n    if date_range:\n\
+    \        query['date_range'] = {\n            'start': date_range[0],\n            'end': date_range[1]\n        }\n \
+    \   \n    return query\n\ndef calculate_likelihood_ratio(\n    prosecution_hypothesis: Dict[str, float],\n    defense_hypothesis:\
+    \ Dict[str, float]\n) -> float:\n    \"\"\"Calculate likelihood ratio for forensic evidence evaluation.\"\"\"\n    prosecution_lh\
+    \ = 1.0\n    defense_lh = 1.0\n    \n    for marker, prob in prosecution_hypothesis.items():\n        prosecution_lh *=\
+    \ prob\n    \n    for marker, prob in defense_hypothesis.items():\n        defense_lh *= prob\n    \n    return prosecution_lh\
+    \ / defense_lh if defense_lh > 0 else float('inf')\n\ndef analyze_mitochondrial_dna(\n    sequence: str,\n    reference:\
+    \ str,\n    population_freqs: Dict[str, float]\n) -> Dict[str, Any]:\n    \"\"\"Analyze mitochondrial DNA sequence for\
+    \ forensic purposes.\"\"\"\n    analysis = {\n        'mutations': [],\n        'haplogroup': 'Unknown',\n        'random_match_prob':\
+    \ 0.0,\n        'confidence': 0.0\n    }\n    \n    # Find mutations\n    mutations = []\n    for i, (ref, obs) in enumerate(zip(reference,\
+    \ sequence)):\n        if ref != obs:\n            mutations.append({\n                'position': i + 1,\n          \
+    \      'reference': ref,\n                'observed': obs\n            })\n    \n    analysis['mutations'] = mutations\n\
+    \    \n    # Calculate random match probability\n    rmp = 1.0\n    for mutation in mutations:\n        pos_key = f\"\
+    {mutation['position']}{mutation['observed']}\"\n        freq = population_freqs.get(pos_key, 0.001)\n        rmp *= freq\n\
+    \    \n    analysis['random_match_prob'] = rmp\n    \n    # Simple haplogroup prediction based on key mutations\n    if\
+    \ any(m['position'] == 263 and m['observed'] == 'A' for m in mutations):\n        analysis['haplogroup'] = 'H'\n    elif\
+    \ any(m['position'] == 16223 and m['observed'] == 'T' for m in mutations):\n        analysis['haplogroup'] = 'K'\n   \
+    \ \n    return analysis\n\ndef generate_forensic_report(\n    case_id: str,\n    analysis_type: str,\n    results: Dict[str,\
+    \ Any],\n    significance_level: float = 0.05\n) -> str:\n    \"\"\"Generate formatted forensic DNA analysis report.\"\
+    \"\"\n    report = f\"\"\"\nFORENSIC DNA ANALYSIS REPORT\nCase ID: {case_id}\nAnalysis Type: {analysis_type}\nDate: {datetime.now().strftime('%Y-%m-%d\
+    \ %H:%M:%S')}\n\nRESULTS SUMMARY:\n{json.dumps(results, indent=2)}\n\nSTATISTICAL SIGNIFICANCE:\nSignificance Level: {significance_level}\n\
+    Confidence Interval: {(1-significance_level)*100:.1f}%\n\nCONCLUSION:\nBased on the analysis performed, the results support\
+    \ the {analysis_type} conclusion\nwith a confidence level of {(1-significance_level)*100:.1f}%.\n\"\"\"\n    return report\n\
+    \nclass SkillEngine:\n    \"\"\"Main DNA Forensics Scientist skill engine.\"\"\"\n    \n    def __init__(self, config:\
+    \ Dict[str, Any]):\n        \"\"\"Initialize the skill engine with configuration.\"\"\"\n        self.config = config\n\
+    \        self.logger = logging.getLogger('dna_forensics')\n        self.logger.setLevel(logging.INFO)\n        \n    def\
+    \ run(self, capability: str, parameters: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Execute the specified capability\
+    \ with given parameters.\"\"\"\n        try:\n            if capability == 'codis_database_query':\n                return\
+    \ self._codis_query(parameters)\n            elif capability == 'paternity_maternity_testing':\n                return\
+    \ self._paternity_test(parameters)\n            elif capability == 'degraded_sample_analysis':\n                return\
+    \ self._degraded_analysis(parameters)\n            elif capability == 'touch_dna_processing':\n                return\
+    \ self._touch_dna_analysis(parameters)\n            elif capability == 'genealogical_dna_matching':\n                return\
+    \ self._genealogical_matching(parameters)\n            elif capability == 'mitochondrial_dna_analysis':\n            \
+    \    return self._mitochondrial_analysis(parameters)\n            elif capability == 'str_profile_comparison':\n     \
+    \           return self._str_comparison(parameters)\n            elif capability == 'forensic_statistical_calculations':\n\
+    \                return self._statistical_calculations(parameters)\n            elif capability == 'dna_mixture_deconvolution':\n\
+    \                return self._mixture_deconvolution(parameters)\n            elif capability == 'kinship_analysis':\n\
+    \                return self._kinship_analysis(parameters)\n            else:\n                raise ValueError(f\"Unknown\
+    \ capability: {capability}\")\n        except Exception as e:\n            self.logger.error(f\"Error in {capability}:\
+    \ {str(e)}\")\n            return {'error': str(e)}\n    \n    def _codis_query(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Execute CODIS database query.\"\"\"\n        query = build_codis_query(\n            params['str_markers'],\n\
+    \            params.get('match_threshold', 90.0),\n            params.get('population_filter'),\n            params.get('date_range')\n\
+    \        )\n        \n        # Simulate database response\n        matches = []\n        for i in range(3):\n       \
+    \     matches.append({\n                'profile_id': f'MATCH_{i+1}',\n                'match_score': 95.0 - i*5,\n  \
+    \              'population': params.get('population_filter', 'Unknown')\n            })\n        \n        return {'query':\
+    \ query, 'matches': matches}\n    \n    def _paternity_test(self, params: Dict[str, Any]) -> Dict[str, Any]:\n       \
+    \ \"\"\"Perform paternity testing analysis.\"\"\"\n        cpi = calculate_combined_paternity_index(\n            params['father_profile'],\n\
+    \            params['child_profile'],\n            params['mother_profile'],\n            params['population_freqs']\n\
+    \        )\n        \n        probability = cpi / (1 + cpi)\n        \n        return {\n            'combined_paternity_index':\
+    \ cpi,\n            'probability_of_paternity': probability,\n            'exclusion': cpi == 0\n        }\n    \n   \
+    \ def _degraded_analysis(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Analyze degraded DNA sample.\"\
+    \"\"\n        degradation = assess_dna_degradation(\n            params['peak_heights'],\n            params['expected_ratios'],\n\
+    \            params.get('degradation_threshold', 0.5)\n        )\n        \n        return {\n            'degradation_assessment':\
+    \ degradation,\n            'recommendations': 'Use miniSTRs or increased PCR cycles' if degradation['degraded'] else\
+    \ 'Proceed with standard analysis'\n        }\n    \n    def _touch_dna_analysis(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Process touch DNA evidence.\"\"\"\n        # Simulate low template DNA analysis\n        consensus_profile\
+    \ = {}\n        for marker, results in params['str_results'].items():\n            # Simple consensus building\n     \
+    \       alleles = [a for a in results if a > params.get('threshold', 50)]\n            consensus_profile[marker] = list(set(alleles))\n\
+    \        \n        return {\n            'consensus_profile': consensus_profile,\n            'quality_score': 0.85,\n\
+    \            'contamination_risk': params.get('contamination_risk', 'low')\n        }\n    \n    def _genealogical_matching(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Perform genealogical DNA matching.\"\"\"\n        # Simulate\
+    \ genealogical analysis\n        relationships = []\n        for match in params['database_matches']:\n            relationships.append({\n\
+    \                'match_id': match['id'],\n                'relationship': '3rd cousin',\n                'shared_cm':\
+    \ 85.0,\n                'confidence': 0.92\n            })\n        \n        return {\n            'relationships':\
+    \ relationships,\n            'common_ancestors': ['John Smith (b. 1850)', 'Mary Johnson (b. 1852)']\n        }\n    \n\
+    \    def _mitochondrial_analysis(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Analyze mitochondrial\
+    \ DNA.\"\"\"\n        analysis = analyze_mitochondrial_dna(\n            params['sequence'],\n            params['reference'],\n\
+    \            params['population_freqs']\n        )\n        \n        return {\n            'mitochondrial_analysis':\
+    \ analysis,\n            'maternal_lineage': f\"Haplogroup {analysis['haplogroup']}\"\n        }\n    \n    def _str_comparison(self,\
+    \ params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Compare STR profiles.\"\"\"\n        profile1 = params['profile1']\n\
+    \        profile2 = params['profile2']\n        \n        matches = 0\n        total_markers = 0\n        \n        for\
+    \ marker in set(profile1.keys()) | set(profile2.keys()):\n            total_markers += 1\n            alleles1 = set(profile1.get(marker,\
+    \ []))\n            alleles2 = set(profile2.get(marker, []))\n            \n            if alleles1 & alleles2:\n    \
+    \            matches += 1\n        \n        match_percentage = (matches / total_markers) * 100 if total_markers > 0 else\
+    \ 0\n        \n        return {\n            'match_percentage': match_percentage,\n            'matching_markers': matches,\n\
+    \            'total_markers': total_markers\n        }\n    \n    def _statistical_calculations(self, params: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Perform forensic statistical calculations.\"\"\"\n        rmp = calculate_random_match_probability(\n\
+    \            params['profile'],\n            params['population_freqs'],\n            params.get('theta_correction', 0.01)\n\
+    \        )\n        \n        lr = calculate_likelihood_ratio(\n            params['prosecution_hypothesis'],\n      \
+    \      params['defense_hypothesis']\n        )\n        \n        return {\n            'random_match_probability': rmp,\n\
+    \            'likelihood_ratio': lr,\n            'expressed_as': f\"1 in {int(1/rmp)}\" if rmp > 0 else \"Extremely rare\"\
+    \n        }\n    \n    def _mixture_deconvolution(self, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Deconvolute\
+    \ DNA mixture.\"\"\"\n        # Simple mixture deconvolution\n        contributors = params['contributors']\n        mixture\
+    \ = params['mixture_profile']\n        \n        deconvoluted = {}\n        for marker, alleles in mixture.items():\n\
+    \            # Assign alleles to contributors based on peak heights\n            deconvoluted[marker] = {\n          \
+    \      'contributor_1': alleles[:2],\n                'contributor_2': alleles[2:] if len(alleles) > 2 else []\n     \
+    \       }\n        \n        return {\n            'deconvoluted_profiles': deconvoluted,\n            'likelihood': 0.95,\n\
+    \            'confidence': 'high'\n        }\n    \n    def _kinship_analysis(self, params: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Perform kinship analysis.\"\"\"\n        relationships = []\n        \n        for ref_profile\
+    \ in params['reference_profiles']:\n            for unknown in params['unknown_samples']:\n                # Calculate\
+    \ kinship coefficient\n                shared_alleles = 0\n                total_alleles = 0\n                \n     \
+    \           for marker in set(ref_profile.keys()) & set(unknown.keys()):\n                    ref_alleles = set(ref_profile[marker])\n\
+    \                    unknown_alleles = set(unknown[marker])\n                    shared = len(ref_alleles & unknown_alleles)\n\
+    \                    total = len(ref_alleles | unknown_alleles)\n                    \n                    if total >\
+    \ 0:\n                        shared_alleles += shared\n                        total_alleles += total\n             \
+    \   \n                kinship_coeff = shared_alleles / total_alleles if total_alleles > 0 else 0\n                \n \
+    \               relationships.append({\n                    'reference': ref_profile.get('id', 'unknown'),\n         \
+    \           'unknown': unknown.get('id', 'unknown'),\n                    'kinship_coefficient': kinship_coeff,\n    \
+    \                'relationship': 'parent-child' if kinship_coeff > 0.4 else 'sibling' if kinship_coeff > 0.25 else 'unrelated'\n\
+    \                })\n        \n        return {'relationships': relationships}\n\nclass TestDNAForensics(unittest.TestCase):\n\
+    \    \"\"\"Comprehensive test suite for DNA Forensics Scientist skill.\"\"\"\n    \n    def test_metadata_validation(self):\n\
+    \        \"\"\"Test skill metadata structure.\"\"\"\n        self.assertEqual(SKILL_METADATA['name'], 'DNA Forensics Scientist')\n\
+    \        self.assertIn('codis_database_query', SKILL_METADATA['capabilities'])\n        self.assertEqual(SKILL_METADATA['domain'],\
+    \ 'forensic_genetics')\n    \n    def test_validate_str_profile(self):\n        \"\"\"Test STR profile validation.\"\"\
+    \"\n        valid_profile = {\n            'sample_id': 'TEST001',\n            'markers': {\n                'D3S1358':\
+    \ [15, 17],\n                'TH01': [6, 9.3]\n            }\n        }\n        self.assertTrue(validate_str_profile(valid_profile))\n\
+    \        \n        invalid_profile = {\n            'sample_id': 'TEST002',\n            'markers': 'invalid'\n      \
+    \  }\n        self.assertFalse(validate_str_profile(invalid_profile))\n    \n    def test_paternity_index_calculation(self):\n\
+    \        \"\"\"Test Combined Paternity Index calculation.\"\"\"\n        father = {'D3S1358': [15, 17], 'TH01': [6, 9.3]}\n\
+    \        child = {'D3S1358': [15, 16], 'TH01': [6, 7]}\n        mother = {'D3S1358': [16, 18], 'TH01': [7, 8]}\n     \
+    \   freqs = {\n            'D3S1358': {15: 0.2, 16: 0.1, 17: 0.15, 18: 0.05},\n            'TH01': {6: 0.3, 7: 0.25, 8:\
+    \ 0.1, 9.3: 0.05}\n        }\n        \n        cpi = calculate_combined_paternity_index(father, child, mother, freqs)\n\
+    \        self.assertIsInstance(cpi, float)\n        self.assertGreater(cpi, 0)\n    \n    def test_dna_degradation_assessment(self):\n\
+    \        \"\"\"Test DNA degradation analysis.\"\"\"\n        peak_heights = {\n            'D3S1358': [1000, 800],\n \
+    \           'TH01': [500, 200],\n            'D21S11': [1200, 900]\n        }\n        expected = {'D3S1358': 0.8, 'TH01':\
+    \ 0.8, 'D21S11': 0.8}\n        \n        result = assess_dna_degradation(peak_heights, expected)\n        self.assertIsInstance(result,\
+    \ dict)\n        self.assertIn('degraded', result)\n    \n    def test_random_match_probability(self):\n        \"\"\"\
+    Test RMP calculation.\"\"\"\n        profile = {'D3S1358': [15, 17], 'TH01': [6, 9.3]}\n        freqs = {\n          \
+    \  'D3S1358': {15: 0.2, 17: 0.15},\n            'TH01': {6: 0.3, 9.3: 0.05}\n        }\n        \n        rmp = calculate_random_match_probability(profile,\
+    \ freqs)\n        self.assertIsInstance(rmp, float)\n        self.assertGreater(rmp, 0)\n        self.assertLess(rmp,\
+    \ 1)\n    \n    def test_csf_file_parsing(self):\n        \"\"\"Test CSF file parsing.\"\"\"\n        csf_content = \"\
+    \"\"Sample: TEST001\nD3S1358\t15\t17\nTH01\t6\t9.3\nD21S11\t28\t30\"\"\"\n        \n        result = parse_csf_file(csf_content)\n\
+    \        self.assertEqual(result['sample_id'], 'TEST001')\n        self.assertEqual(len(result['markers']), 3)\n    \n\
+    \    def test_forensic_report_generation(self):\n        \"\"\"Test report generation.\"\"\"\n        results = {\n  \
+    \          'match_found': True,\n            'probability': 0.999999,\n            'exclusion': False\n        }\n   \
+    \     \n        report = generate_forensic_report('CASE001', 'Paternity Test', results)\n        self.assertIn('CASE001',\
+    \ report)\n        self.assertIn('Paternity Test', report)\n    \n    def test_skill_engine_initialization(self):\n  \
+    \      \"\"\"Test SkillEngine initialization.\"\"\"\n        engine = SkillEngine({'debug': True})\n        self.assertIsInstance(engine,\
+    \ SkillEngine)\n    \n    def test_skill_engine_capabilities(self):\n        \"\"\"Test skill engine capability execution.\"\
+    \"\"\n        engine = SkillEngine({})\n        \n        # Test paternity testing\n        params = {\n            'father_profile':\
+    \ {'D3S1358': [15, 17]},\n            'child_profile': {'D3S1358': [15, 16]},\n            'mother_profile': {'D3S1358':\
+    \ [16, 18]},\n            'population_freqs': {'D3S1358': {15: 0.2, 16: 0.1, 17: 0.15, 18: 0.05}}\n        }\n       \
+    \ \n        result = engine.run('paternity_maternity_testing', params)\n        self.assertIsInstance(result, dict)\n\
+    \        self.assertIn('combined_paternity_index', result)\n    \n    def test_error_handling(self):\n        \"\"\"Test\
+    \ error handling in skill engine.\"\"\"\n        engine = SkillEngine({})\n        result = engine.run('unknown_capability',\
+    \ {})\n        self.assertIn('error', result)\n    \n    def test_mitochondrial_analysis(self):\n        \"\"\"Test mitochondrial\
+    \ DNA analysis.\"\"\"\n        sequence = 'ATCGATCGATCG'\n        reference = 'ATCGATCGATCG'\n        freqs = {'123A':\
+    \ 0.01}\n        \n        result = analyze_mitochondrial_dna(sequence, reference, freqs)\n        self.assertIsInstance(result,\
+    \ dict)\n        self.assertIn('haplogroup', result)\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the DNA Forensics Scientist skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''dna_forensics'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

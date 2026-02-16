@@ -1,0 +1,58 @@
+name: reddit-explore
+title: Reddit Explore
+version: 0.0.3
+description: '|'
+metadata:
+  author: netmsglog
+  category: Social Media
+  tags:
+  - social-media
+  - reddit
+  - explore
+  source: clawhub-community
+  clawhub_slug: reddit-explore
+  clawhub_path: netmsglog/reddit-explore
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reddit Explore
+
+    # Source: ClawHub community skill by netmsglog
+
+    # Install: clawhub install reddit-explore
+
+    # Path: netmsglog/reddit-explore
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/apify-setup.md
+
+    - scripts/reddit_search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reddit-explore
+
+    ```'
+examples:
+- description: Install Reddit Explore from ClawHub
+  usage: clawhub install reddit-explore
+schema_version: '1.0'

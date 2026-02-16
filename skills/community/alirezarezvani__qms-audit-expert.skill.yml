@@ -1,0 +1,65 @@
+name: qms-audit-expert
+title: Qms Audit Expert
+version: 1.0.0
+description: ISO 13485 internal audit expertise for medical device QMS. Covers audit planning, execution, nonconformity classification,
+  and CAPA verification. Use for internal audit planning, audit execution, finding classification, external audit preparation,
+  or audit program management.
+metadata:
+  author: alirezarezvani
+  category: Health & Wellness
+  tags:
+  - health-wellness
+  - qms
+  - audit
+  - expert
+  source: clawhub-community
+  clawhub_slug: qms-audit-expert
+  clawhub_path: alirezarezvani/qms-audit-expert
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Qms Audit Expert
+
+    # Source: ClawHub community skill by alirezarezvani
+
+    # Install: clawhub install qms-audit-expert
+
+    # Path: alirezarezvani/qms-audit-expert
+
+
+    ## Description
+
+    ISO 13485 internal audit expertise for medical device QMS. Covers audit planning, execution, nonconformity classification,
+    and CAPA verification. Use for internal audit planning, audit execution, finding classification, external audit preparation,
+    or audit program management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/iso13485-audit-guide.md
+
+    - references/nonconformity-classification.md
+
+    - scripts/audit_schedule_optimizer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install qms-audit-expert
+
+    ```'
+examples:
+- description: Install Qms Audit Expert from ClawHub
+  usage: clawhub install qms-audit-expert
+schema_version: '1.0'

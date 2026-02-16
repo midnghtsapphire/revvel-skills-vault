@@ -1,0 +1,63 @@
+name: airweave
+title: Airweave
+version: 1.0.1
+description: Context retrieval layer for AI agents across users' applications. Search and retrieve context from Airweave collections.
+  Airweave indexes and syncs data from user applications to enable optimal context retrieval by AI agents. Supports semantic,
+  keyword, and agentic search. Use when users ask about t
+metadata:
+  author: lennertjansen
+  category: Search & Research
+  tags:
+  - search-research
+  - airweave
+  source: clawhub-community
+  clawhub_slug: airweave
+  clawhub_path: lennertjansen/airweave
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Airweave
+
+    # Source: ClawHub community skill by lennertjansen
+
+    # Install: clawhub install airweave
+
+    # Path: lennertjansen/airweave
+
+
+    ## Description
+
+    Context retrieval layer for AI agents across users'' applications. Search and retrieve context from Airweave collections.
+    Airweave indexes and syncs data from user applications to enable optimal context retrieval by AI agents. Supports semantic,
+    keyword, and agentic search. Use when users ask about t
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/EXAMPLES.md
+
+    - references/PARAMETERS.md
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install airweave
+
+    ```'
+examples:
+- description: Install Airweave from ClawHub
+  usage: clawhub install airweave
+schema_version: '1.0'

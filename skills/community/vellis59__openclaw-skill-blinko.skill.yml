@@ -1,0 +1,62 @@
+name: blinko
+title: Blinko-notes
+version: 1.0.0
+description: Manage Blinko notes via its REST API (create/list/delete notes, manage tags/taxonomy). Use when the user says
+  “blinko …”, wants to capture a note to Blinko, list/search recent notes, retag notes, or do cleanup/organization. Requires
+  BLINKO_API_KEY.
+metadata:
+  author: vellis59
+  category: Search & Research
+  tags:
+  - search-research
+  - blinko
+  source: clawhub-community
+  clawhub_slug: openclaw-skill-blinko
+  clawhub_path: vellis59/openclaw-skill-blinko
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Blinko-notes
+
+    # Source: ClawHub community skill by vellis59
+
+    # Install: clawhub install openclaw-skill-blinko
+
+    # Path: vellis59/openclaw-skill-blinko
+
+
+    ## Description
+
+    Manage Blinko notes via its REST API (create/list/delete notes, manage tags/taxonomy). Use when the user says “blinko
+    …”, wants to capture a note to Blinko, list/search recent notes, retag notes, or do cleanup/organization. Requires BLINKO_API_KEY.
+
+
+    ## Files
+
+    - LICENSE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/blinko_api.md
+
+    - scripts/blinko.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-skill-blinko
+
+    ```'
+examples:
+- description: Install Blinko-notes from ClawHub
+  usage: clawhub install openclaw-skill-blinko
+schema_version: '1.0'

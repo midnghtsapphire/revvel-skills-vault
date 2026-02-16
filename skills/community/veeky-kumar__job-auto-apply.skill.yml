@@ -1,0 +1,65 @@
+name: job-auto-apply
+title: Job Auto Apply
+version: 1.0.0
+description: Automated job search and application system for Clawdbot. Use when the user wants to search for jobs and automatically
+  apply to positions matching their criteria. Handles job searching across LinkedIn, Indeed, Glassdoor, ZipRecruiter, and
+  Wellfound, generates tailored cover letters, fills applicatio
+metadata:
+  author: veeky-kumar
+  category: Search & Research
+  tags:
+  - search-research
+  - job
+  - auto
+  - apply
+  source: clawhub-community
+  clawhub_slug: job-auto-apply
+  clawhub_path: veeky-kumar/job-auto-apply
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Job Auto Apply
+
+    # Source: ClawHub community skill by veeky-kumar
+
+    # Install: clawhub install job-auto-apply
+
+    # Path: veeky-kumar/job-auto-apply
+
+
+    ## Description
+
+    Automated job search and application system for Clawdbot. Use when the user wants to search for jobs and automatically
+    apply to positions matching their criteria. Handles job searching across LinkedIn, Indeed, Glassdoor, ZipRecruiter, and
+    Wellfound, generates tailored cover letters, fills applicatio
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - job_search_apply.py
+
+    - platform_integration.md
+
+    - profile_template.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install job-auto-apply
+
+    ```'
+examples:
+- description: Install Job Auto Apply from ClawHub
+  usage: clawhub install job-auto-apply
+schema_version: '1.0'

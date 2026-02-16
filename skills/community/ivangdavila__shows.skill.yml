@@ -1,0 +1,60 @@
+name: shows
+title: Shows
+version: 1.0.0
+description: Track movies and series with progress, watchlist, ratings, and proactive alerts for new releases and platform
+  changes.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - shows
+  source: clawhub-community
+  clawhub_slug: shows
+  clawhub_path: ivangdavila/shows
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Shows
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install shows
+
+    # Path: ivangdavila/shows
+
+
+    ## Description
+
+    Track movies and series with progress, watchlist, ratings, and proactive alerts for new releases and platform changes.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - discovery.md
+
+    - family.md
+
+    - platforms.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install shows
+
+    ```'
+examples:
+- description: Install Shows from ClawHub
+  usage: clawhub install shows
+schema_version: '1.0'

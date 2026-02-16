@@ -1,0 +1,55 @@
+name: chromecast
+title: Control Chromecast
+version: 1.0.0
+description: Control Chromecast devices on your local network - discover, cast media, control playback, manage queues, and
+  save/restore states
+metadata:
+  author: morozred
+  category: Media & Content
+  tags:
+  - media-content
+  - chromecast
+  source: clawhub-community
+  clawhub_slug: chromecast-control
+  clawhub_path: morozred/chromecast-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Control Chromecast
+
+    # Source: ClawHub community skill by morozred
+
+    # Install: clawhub install chromecast-control
+
+    # Path: morozred/chromecast-control
+
+
+    ## Description
+
+    Control Chromecast devices on your local network - discover, cast media, control playback, manage queues, and save/restore
+    states
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install chromecast-control
+
+    ```'
+examples:
+- description: Install Control Chromecast from ClawHub
+  usage: clawhub install chromecast-control
+schema_version: '1.0'

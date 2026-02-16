@@ -1,0 +1,75 @@
+name: creator-alpha-feed
+title: Creator Alpha Feed
+version: 1.0.8
+description: Collect and rank daily AI content for creator-focused publishing workflows. Use when users ask for AI topic scouting,
+  KOL tracking (especially X/Twitter), practical tutorial picks, industry updates, or automated Feishu/Obsidian briefing pushes
+  with configurable templates and time windows.
+metadata:
+  author: rotbit
+  category: Social Media
+  tags:
+  - social-media
+  - creator
+  - alpha
+  - feed
+  source: clawhub-community
+  clawhub_slug: creator-alpha-feed
+  clawhub_path: rotbit/creator-alpha-feed
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Creator Alpha Feed
+
+    # Source: ClawHub community skill by rotbit
+
+    # Install: clawhub install creator-alpha-feed
+
+    # Path: rotbit/creator-alpha-feed
+
+
+    ## Description
+
+    Collect and rank daily AI content for creator-focused publishing workflows. Use when users ask for AI topic scouting,
+    KOL tracking (especially X/Twitter), practical tutorial picks, industry updates, or automated Feishu/Obsidian briefing
+    pushes with configurable templates and time windows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cron-prompt-template.md
+
+    - references/data-collection-rules.md
+
+    - references/push-format.md
+
+    - scripts/analyze.sh
+
+    - scripts/auto-daily-task.sh
+
+    - scripts/cleanup.sh
+
+    - scripts/collect-simple.sh
+
+    - scripts/collect-twitter.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install creator-alpha-feed
+
+    ```'
+examples:
+- description: Install Creator Alpha Feed from ClawHub
+  usage: clawhub install creator-alpha-feed
+schema_version: '1.0'

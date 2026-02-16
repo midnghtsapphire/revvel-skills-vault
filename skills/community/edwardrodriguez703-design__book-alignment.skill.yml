@@ -1,0 +1,56 @@
+name: book-alignment
+title: Book Alignment
+version: 1.0.1
+description: Book alignment services through Lokuli MCP. Use when user needs to find and book alignment. Triggers on requests
+  like "book a alignment", "find alignment near me", or any alignment service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - alignment
+  source: clawhub-community
+  clawhub_slug: book-alignment
+  clawhub_path: edwardrodriguez703-design/book-alignment
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Alignment
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-alignment
+
+    # Path: edwardrodriguez703-design/book-alignment
+
+
+    ## Description
+
+    Book alignment services through Lokuli MCP. Use when user needs to find and book alignment. Triggers on requests like
+    "book a alignment", "find alignment near me", or any alignment service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-alignment
+
+    ```'
+examples:
+- description: Install Book Alignment from ClawHub
+  usage: clawhub install book-alignment
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: near-qr-code
+title: Near Qr Skill
+version: 1.0.0
+description: Generate QR codes for NEAR addresses and payment requests, and read NEAR QR codes from images.
+metadata:
+  author: ussyalfaks
+  category: Media & Content
+  tags:
+  - media-content
+  - near
+  - code
+  source: clawhub-community
+  clawhub_slug: near-qr-skill
+  clawhub_path: ussyalfaks/near-qr-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Near Qr Skill
+
+    # Source: ClawHub community skill by ussyalfaks
+
+    # Install: clawhub install near-qr-skill
+
+    # Path: ussyalfaks/near-qr-skill
+
+
+    ## Description
+
+    Generate QR codes for NEAR addresses and payment requests, and read NEAR QR codes from images.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - molthub.json
+
+    - near_qr.py
+
+    - requirements.txt
+
+    - test_near_qr.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install near-qr-skill
+
+    ```'
+examples:
+- description: Install Near Qr Skill from ClawHub
+  usage: clawhub install near-qr-skill
+schema_version: '1.0'

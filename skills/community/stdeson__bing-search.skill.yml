@@ -1,0 +1,58 @@
+name: bing_search
+title: bing-search
+version: 1.0.0
+description: Bing search skill for all users. No API key needed.
+metadata:
+  author: stdeson
+  category: Search & Research
+  tags:
+  - search-research
+  - bing
+  - search
+  source: clawhub-community
+  clawhub_slug: bing-search
+  clawhub_path: stdeson/bing-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# bing-search
+
+    # Source: ClawHub community skill by stdeson
+
+    # Install: clawhub install bing-search
+
+    # Path: stdeson/bing-search
+
+
+    ## Description
+
+    Bing search skill for all users. No API key needed.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bing-search
+
+    ```'
+examples:
+- description: Install bing-search from ClawHub
+  usage: clawhub install bing-search
+schema_version: '1.0'

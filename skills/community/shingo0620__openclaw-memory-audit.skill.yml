@@ -1,0 +1,35 @@
+name: openclaw-memory-audit
+title: Openclaw Memory Audit
+version: 1.1.0
+description: 'Scan the agent workspace and memory logs for leaked API keys, tokens, or sensitive credentials. Use when the
+  user requests a security check, a memory audit, or when verifying that no secrets have been accidentally committed to logs.
+  Additionally, this skill verifies if a recurring audit schedule is '
+metadata:
+  author: shingo0620
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - memory
+  - audit
+  source: clawhub-community
+  clawhub_slug: openclaw-memory-audit
+  clawhub_path: shingo0620/openclaw-memory-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Openclaw Memory Audit\n# Source: ClawHub community skill by shingo0620\n# Install: clawhub install openclaw-memory-audit\n\
+    # Path: shingo0620/openclaw-memory-audit\n\n## Description\nScan the agent workspace and memory logs for leaked API keys,\
+    \ tokens, or sensitive credentials. Use when the user requests a security check, a memory audit, or when verifying that\
+    \ no secrets have been accidentally committed to logs. Additionally, this skill verifies if a recurring audit schedule\
+    \ is \n\n## Files\n- SKILL.md\n- _meta.json\n- scripts/scan_secrets.py\n\n## Installation\n```bash\nclawhub install openclaw-memory-audit\n\
+    ```"
+examples:
+- description: Install Openclaw Memory Audit from ClawHub
+  usage: clawhub install openclaw-memory-audit
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: skillscanner
+title: Skillscanner
+version: 1.0.1
+description: Security scanner for ClawHub skills from Gen Digital. Looks up skill safety via the scan API.
+metadata:
+  author: rexshang
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skillscanner
+  source: clawhub-community
+  clawhub_slug: skillscanner
+  clawhub_path: rexshang/skillscanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skillscanner
+
+    # Source: ClawHub community skill by rexshang
+
+    # Install: clawhub install skillscanner
+
+    # Path: rexshang/skillscanner
+
+
+    ## Description
+
+    Security scanner for ClawHub skills from Gen Digital. Looks up skill safety via the scan API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skillscanner
+
+    ```'
+examples:
+- description: Install Skillscanner from ClawHub
+  usage: clawhub install skillscanner
+schema_version: '1.0'

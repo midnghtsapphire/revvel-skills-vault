@@ -1,0 +1,60 @@
+name: jadwal-sholat
+title: Jadwal Sholat
+version: 1.0.0
+description: Ambil jadwal sholat (imsak, subuh, dzuhur, ashar, maghrib, isya) untuk kota/kabupaten di Indonesia dari API Muslim
+  api.myquran.com (sumber Kemenag Bimas Islam). Gunakan saat user minta jadwal sholat hari ini / tanggal tertentu / 1 bulan
+  untuk lokasi tertentu, atau butuh mencari ID kab/kota.
+metadata:
+  author: banghasan
+  category: Development & Coding
+  tags:
+  - development-coding
+  - jadwal
+  - sholat
+  source: clawhub-community
+  clawhub_slug: jadwal-sholat
+  clawhub_path: banghasan/jadwal-sholat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jadwal Sholat
+
+    # Source: ClawHub community skill by banghasan
+
+    # Install: clawhub install jadwal-sholat
+
+    # Path: banghasan/jadwal-sholat
+
+
+    ## Description
+
+    Ambil jadwal sholat (imsak, subuh, dzuhur, ashar, maghrib, isya) untuk kota/kabupaten di Indonesia dari API Muslim api.myquran.com
+    (sumber Kemenag Bimas Islam). Gunakan saat user minta jadwal sholat hari ini / tanggal tertentu / 1 bulan untuk lokasi
+    tertentu, atau butuh mencari ID kab/kota.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/myquran_sholat.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install jadwal-sholat
+
+    ```'
+examples:
+- description: Install Jadwal Sholat from ClawHub
+  usage: clawhub install jadwal-sholat
+schema_version: '1.0'

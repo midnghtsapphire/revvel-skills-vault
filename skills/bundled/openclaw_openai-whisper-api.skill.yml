@@ -1,0 +1,34 @@
+name: openclaw_openai-whisper-api
+title: ☁️ Openai Whisper Api
+version: 1.0.0
+description: Transcribe audio via OpenAI Audio Transcriptions API (Whisper).
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - openai-whisper-api
+  - curl
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - curl
+install: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: openai-whisper-api\ndescription: Transcribe audio via OpenAI Audio Transcriptions API (Whisper).\n\
+    homepage: https://platform.openai.com/docs/guides/speech-to-text\nmetadata:\n  {\n    \"openclaw\":\n      {\n       \
+    \ \"emoji\": \"☁️\",\n        \"requires\": { \"bins\": [\"curl\"], \"env\": [\"OPENAI_API_KEY\"] },\n        \"primaryEnv\"\
+    : \"OPENAI_API_KEY\",\n      },\n  }\n---\n\n# OpenAI Whisper API (curl)\n\nTranscribe an audio file via OpenAI’s `/v1/audio/transcriptions`\
+    \ endpoint.\n\n## Quick start\n\n```bash\n{baseDir}/scripts/transcribe.sh /path/to/audio.m4a\n```\n\nDefaults:\n\n- Model:\
+    \ `whisper-1`\n- Output: `<input>.txt`\n\n## Useful flags\n\n```bash\n{baseDir}/scripts/transcribe.sh /path/to/audio.ogg\
+    \ --model whisper-1 --out /tmp/transcript.txt\n{baseDir}/scripts/transcribe.sh /path/to/audio.m4a --language en\n{baseDir}/scripts/transcribe.sh\
+    \ /path/to/audio.m4a --prompt \"Speaker names: Peter, Daniel\"\n{baseDir}/scripts/transcribe.sh /path/to/audio.m4a --json\
+    \ --out /tmp/transcript.json\n```\n\n## API key\n\nSet `OPENAI_API_KEY`, or configure it in `~/.openclaw/openclaw.json`:\n\
+    \n```json5\n{\n  skills: {\n    \"openai-whisper-api\": {\n      apiKey: \"OPENAI_KEY_HERE\",\n    },\n  },\n}\n```\n"
+examples: []
+schema_version: '1.0'

@@ -1,0 +1,59 @@
+name: amazon-competitor-analyzer
+title: Amazon Competitor Analyzer
+version: 0.1.1
+description: Scrapes Amazon product data from ASINs using browseract.com automation API and performs surgical competitive
+  analysis. Compares specifications, pricing, review quality, and visual strategies to identify competitor moats and vulnerabilities.
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - amazon
+  - competitor
+  - analyzer
+  source: clawhub-community
+  clawhub_slug: amazon-competitor-analyzer
+  clawhub_path: phheng/amazon-competitor-analyzer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Amazon Competitor Analyzer
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install amazon-competitor-analyzer
+
+    # Path: phheng/amazon-competitor-analyzer
+
+
+    ## Description
+
+    Scrapes Amazon product data from ASINs using browseract.com automation API and performs surgical competitive analysis.
+    Compares specifications, pricing, review quality, and visual strategies to identify competitor moats and vulnerabilities.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - amazon_competitor_analyzer.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install amazon-competitor-analyzer
+
+    ```'
+examples:
+- description: Install Amazon Competitor Analyzer from ClawHub
+  usage: clawhub install amazon-competitor-analyzer
+schema_version: '1.0'

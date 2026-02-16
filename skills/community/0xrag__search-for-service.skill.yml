@@ -1,0 +1,39 @@
+name: search-for-service
+title: Search For Service
+version: 0.1.0
+description: 'Search and browse the x402 bazaar marketplace for paid API services. Use when you or the user want to find available
+  services, see what''s available, discover APIs, or need an external service to accomplish a task. Also use as a fallback
+  when no other skill clearly matches — search the bazaar to see '
+metadata:
+  author: 0xrag
+  category: Search & Research
+  tags:
+  - search-research
+  - search
+  - for
+  - service
+  - '["bash(npx awal@latest x402 bazaar *)"'
+  - '"bash(npx awal@latest x402 details *)"]'
+  source: clawhub-community
+  clawhub_slug: search-for-service
+  clawhub_path: 0xrag/search-for-service
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - '["Bash(npx awal@latest x402 bazaar *)"'
+  - '"Bash(npx awal@latest x402 details *)"]'
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Search For Service\n# Source: ClawHub community skill by 0xrag\n# Install: clawhub install search-for-service\n\
+    # Path: 0xrag/search-for-service\n\n## Description\nSearch and browse the x402 bazaar marketplace for paid API services.\
+    \ Use when you or the user want to find available services, see what's available, discover APIs, or need an external service\
+    \ to accomplish a task. Also use as a fallback when no other skill clearly matches — search the bazaar to see \n\n## Files\n\
+    - SKILL.md\n- _meta.json\n\n## Allowed Tools\n[\"Bash(npx awal@latest x402 bazaar *)\", \"Bash(npx awal@latest x402 details\
+    \ *)\"]\n\n## Installation\n```bash\nclawhub install search-for-service\n```"
+examples:
+- description: Install Search For Service from ClawHub
+  usage: clawhub install search-for-service
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: dex
+title: Dex Task Tracking
+version: 1.1.0
+description: Task tracking for async/multi-step work. Use dex to create, track, and complete tasks that span multiple sessions
+  or require coordination (e.g., coding agent dispatches, PR reviews, background jobs). Tasks stored as JSON files in .dex/tasks/.
+metadata:
+  author: gricha
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - dex
+  source: clawhub-community
+  clawhub_slug: dex
+  clawhub_path: gricha/dex
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dex Task Tracking
+
+    # Source: ClawHub community skill by gricha
+
+    # Install: clawhub install dex
+
+    # Path: gricha/dex
+
+
+    ## Description
+
+    Task tracking for async/multi-step work. Use dex to create, track, and complete tasks that span multiple sessions or require
+    coordination (e.g., coding agent dispatches, PR reviews, background jobs). Tasks stored as JSON files in .dex/tasks/.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dex
+
+    ```'
+examples:
+- description: Install Dex Task Tracking from ClawHub
+  usage: clawhub install dex
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: openclaw-starter-guide
+title: 🦞 OpenClaw Starter Guide
+version: 1.2.0
+description: OpenClaw 小白养成手册。从零开始搭建多 Agent AI 助手系统的完整指南，包含免费起步方案（Qwen 零成本）、进阶方案（MiniMax Coding Plan ¥49/月）、旗舰外援（SiliconFlow/NewCLI
+  按需调用）。涵盖模型策略、Fallback 链设计、额度管理、常见故障排查。适合首次部署 OpenClaw 或想优化模型成本的用户。当用户说"怎么开始"、"新手指南"、"省钱方案"、"模型怎么选"、"fallback 怎么配"时使用此 skill。
+metadata:
+  author: jooey
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - openclaw
+  - starter
+  - guide
+  source: clawhub-community
+  clawhub_slug: openclaw-starter-guide
+  clawhub_path: jooey/openclaw-starter-guide
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 🦞 OpenClaw Starter Guide
+
+    # Source: ClawHub community skill by jooey
+
+    # Install: clawhub install openclaw-starter-guide
+
+    # Path: jooey/openclaw-starter-guide
+
+
+    ## Description
+
+    OpenClaw 小白养成手册。从零开始搭建多 Agent AI 助手系统的完整指南，包含免费起步方案（Qwen 零成本）、进阶方案（MiniMax Coding Plan ¥49/月）、旗舰外援（SiliconFlow/NewCLI
+    按需调用）。涵盖模型策略、Fallback 链设计、额度管理、常见故障排查。适合首次部署 OpenClaw 或想优化模型成本的用户。当用户说"怎么开始"、"新手指南"、"省钱方案"、"模型怎么选"、"fallback 怎么配"时使用此
+    skill。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-starter-guide
+
+    ```'
+examples:
+- description: Install 🦞 OpenClaw Starter Guide from ClawHub
+  usage: clawhub install openclaw-starter-guide
+schema_version: '1.0'

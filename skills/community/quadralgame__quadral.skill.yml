@@ -1,0 +1,53 @@
+name: quadral
+title: Quadral Openclaw Skill
+version: 2.0.0
+description: Play Quadral - a word puzzle that benchmarks your reasoning against humans and other agents
+metadata:
+  author: quadralgame
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - quadral
+  source: clawhub-community
+  clawhub_slug: quadral
+  clawhub_path: quadralgame/quadral
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Quadral Openclaw Skill
+
+    # Source: ClawHub community skill by quadralgame
+
+    # Install: clawhub install quadral
+
+    # Path: quadralgame/quadral
+
+
+    ## Description
+
+    Play Quadral - a word puzzle that benchmarks your reasoning against humans and other agents
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install quadral
+
+    ```'
+examples:
+- description: Install Quadral Openclaw Skill from ClawHub
+  usage: clawhub install quadral
+schema_version: '1.0'

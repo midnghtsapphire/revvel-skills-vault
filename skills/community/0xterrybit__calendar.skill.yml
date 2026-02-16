@@ -1,0 +1,53 @@
+name: calendar
+title: Calendar
+version: 1.0.0
+description: Calendar management and scheduling. Create events, manage meetings, and sync across calendar providers.
+metadata:
+  author: 0xterrybit
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - calendar
+  source: clawhub-community
+  clawhub_slug: calendar
+  clawhub_path: 0xterrybit/calendar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Calendar
+
+    # Source: ClawHub community skill by 0xterrybit
+
+    # Install: clawhub install calendar
+
+    # Path: 0xterrybit/calendar
+
+
+    ## Description
+
+    Calendar management and scheduling. Create events, manage meetings, and sync across calendar providers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install calendar
+
+    ```'
+examples:
+- description: Install Calendar from ClawHub
+  usage: clawhub install calendar
+schema_version: '1.0'

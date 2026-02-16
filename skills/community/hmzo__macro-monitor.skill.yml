@@ -1,0 +1,56 @@
+name: macro-monitor
+title: Macro Monitor
+version: 1.0.2
+description: 每日宏观数据监控和推送。自动浏览免费数据源（Trading Economics、FRED、国家统计局、央行官网、财联社等），整理整合过去24小时发布的宏观数据和政策信息，并推送给用户。通过 cron 每天晚上10点自动触发。
+metadata:
+  author: hmzo
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - macro
+  - monitor
+  source: clawhub-community
+  clawhub_slug: macro-monitor
+  clawhub_path: hmzo/macro-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Macro Monitor
+
+    # Source: ClawHub community skill by hmzo
+
+    # Install: clawhub install macro-monitor
+
+    # Path: hmzo/macro-monitor
+
+
+    ## Description
+
+    每日宏观数据监控和推送。自动浏览免费数据源（Trading Economics、FRED、国家统计局、央行官网、财联社等），整理整合过去24小时发布的宏观数据和政策信息，并推送给用户。通过 cron 每天晚上10点自动触发。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/indicators.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install macro-monitor
+
+    ```'
+examples:
+- description: Install Macro Monitor from ClawHub
+  usage: clawhub install macro-monitor
+schema_version: '1.0'

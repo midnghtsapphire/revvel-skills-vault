@@ -1,0 +1,64 @@
+name: diet-tracker
+title: Diet Tracker
+version: 1.0.0
+description: Tracks daily diet and calculates nutrition information to help achieve weight loss goals. Use when the user provides
+  information about their meals and wants to track calorie and macronutrient intake. Also used to remind the user to log meals.
+  This skill reads user's height, weight, age, gender and a
+metadata:
+  author: yonghaozhao722
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - diet
+  - tracker
+  source: clawhub-community
+  clawhub_slug: diet-tracker
+  clawhub_path: yonghaozhao722/diet-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Diet Tracker
+
+    # Source: ClawHub community skill by yonghaozhao722
+
+    # Install: clawhub install diet-tracker
+
+    # Path: yonghaozhao722/diet-tracker
+
+
+    ## Description
+
+    Tracks daily diet and calculates nutrition information to help achieve weight loss goals. Use when the user provides information
+    about their meals and wants to track calorie and macronutrient intake. Also used to remind the user to log meals. This
+    skill reads user''s height, weight, age, gender and a
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/food_database.json
+
+    - scripts/get_food_nutrition.py
+
+    - scripts/update_memory.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install diet-tracker
+
+    ```'
+examples:
+- description: Install Diet Tracker from ClawHub
+  usage: clawhub install diet-tracker
+schema_version: '1.0'

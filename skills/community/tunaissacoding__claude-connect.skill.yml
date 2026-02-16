@@ -1,0 +1,72 @@
+name: claude-connect
+title: Claude Connect
+version: 1.1.0
+description: '"Connect Claude to Clawdbot instantly and keep it connected 24/7. Run after setup to link your subscription,
+  then auto-refreshes tokens forever."'
+metadata:
+  author: tunaissacoding
+  category: General
+  tags:
+  - general
+  - claude
+  - connect
+  source: clawhub-community
+  clawhub_slug: claude-connect
+  clawhub_path: tunaissacoding/claude-connect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claude Connect
+
+    # Source: ClawHub community skill by tunaissacoding
+
+    # Install: clawhub install claude-connect
+
+    # Path: tunaissacoding/claude-connect
+
+
+    ## Description
+
+    "Connect Claude to Clawdbot instantly and keep it connected 24/7. Run after setup to link your subscription, then auto-refreshes
+    tokens forever."
+
+
+    ## Files
+
+    - AUTO-DETECTION-FLOW.md
+
+    - CHANGELOG.md
+
+    - CHANGES.md
+
+    - COMPLETION-REPORT.md
+
+    - DELIVERABLES.txt
+
+    - DETECTION-EXAMPLES.md
+
+    - QUICKSTART.md
+
+    - README.md
+
+    - SKILL.md
+
+    - SUMMARY.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claude-connect
+
+    ```'
+examples:
+- description: Install Claude Connect from ClawHub
+  usage: clawhub install claude-connect
+schema_version: '1.0'

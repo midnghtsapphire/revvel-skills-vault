@@ -1,0 +1,58 @@
+name: paper-parse
+title: Paper Parse
+version: 1.0.0
+description: 对用户提供的任何学术论文（PDF附件或URL）进行双模式深度研读。当用户请求分析、研读、解读或总结一篇学术论文时，使用此技能。一次性生成两份报告：Part A 面向研究者的深度专业解析，Part B 面向快速理解的核心逻辑与价值提炼。
+metadata:
+  author: sterlingfrank1
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - paper
+  - parse
+  source: clawhub-community
+  clawhub_slug: paper-parse
+  clawhub_path: sterlingfrank1/paper-parse
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Paper Parse
+
+    # Source: ClawHub community skill by sterlingfrank1
+
+    # Install: clawhub install paper-parse
+
+    # Path: sterlingfrank1/paper-parse
+
+
+    ## Description
+
+    对用户提供的任何学术论文（PDF附件或URL）进行双模式深度研读。当用户请求分析、研读、解读或总结一篇学术论文时，使用此技能。一次性生成两份报告：Part A 面向研究者的深度专业解析，Part B 面向快速理解的核心逻辑与价值提炼。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/part-a-template.md
+
+    - references/part-b-template.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paper-parse
+
+    ```'
+examples:
+- description: Install Paper Parse from ClawHub
+  usage: clawhub install paper-parse
+schema_version: '1.0'

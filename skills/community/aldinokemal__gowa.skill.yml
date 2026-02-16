@@ -1,0 +1,59 @@
+name: gowa
+title: GOWA - WhatsApp Automation
+version: 1.4.0
+description: Interact with WhatsApp via GOWA (Go WhatsApp Web Multi-Device) REST API for personal automation. Supports sending
+  messages with ghost mentions (@everyone), images, documents, group management, and more. Always use REST mode (http://localhost:3000)
+  for production.
+metadata:
+  author: aldinokemal
+  category: Media & Content
+  tags:
+  - media-content
+  - gowa
+  source: clawhub-community
+  clawhub_slug: gowa
+  clawhub_path: aldinokemal/gowa
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GOWA - WhatsApp Automation
+
+    # Source: ClawHub community skill by aldinokemal
+
+    # Install: clawhub install gowa
+
+    # Path: aldinokemal/gowa
+
+
+    ## Description
+
+    Interact with WhatsApp via GOWA (Go WhatsApp Web Multi-Device) REST API for personal automation. Supports sending messages
+    with ghost mentions (@everyone), images, documents, group management, and more. Always use REST mode (http://localhost:3000)
+    for production.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-endpoints.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gowa
+
+    ```'
+examples:
+- description: Install GOWA - WhatsApp Automation from ClawHub
+  usage: clawhub install gowa
+schema_version: '1.0'

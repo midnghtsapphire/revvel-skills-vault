@@ -1,0 +1,59 @@
+name: linux-service-triage
+title: Linux & service basics
+version: 1.0.0
+description: Diagnoses common Linux service issues using logs, systemd/PM2, file permissions, Nginx reverse proxy checks,
+  and DNS sanity checks. Use when a server app is failing, unreachable, or misconfigured.
+metadata:
+  author: kowl64
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - linux
+  - service
+  - triage
+  source: clawhub-community
+  clawhub_slug: linux-service-triage
+  clawhub_path: kowl64/linux-service-triage
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Linux & service basics
+
+    # Source: ClawHub community skill by kowl64
+
+    # Install: clawhub install linux-service-triage
+
+    # Path: kowl64/linux-service-triage
+
+
+    ## Description
+
+    Diagnoses common Linux service issues using logs, systemd/PM2, file permissions, Nginx reverse proxy checks, and DNS sanity
+    checks. Use when a server app is failing, unreachable, or misconfigured.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/triage-commands.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linux-service-triage
+
+    ```'
+examples:
+- description: Install Linux & service basics from ClawHub
+  usage: clawhub install linux-service-triage
+schema_version: '1.0'

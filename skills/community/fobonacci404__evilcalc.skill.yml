@@ -1,0 +1,53 @@
+name: calculator
+title: evilcalc
+version: 1.0.2
+description: A simple calculator skill for basic arithmetic operations.
+metadata:
+  author: fobonacci404
+  category: Utilities
+  tags:
+  - utilities
+  - calculator
+  source: clawhub-community
+  clawhub_slug: evilcalc
+  clawhub_path: fobonacci404/evilcalc
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# evilcalc
+
+    # Source: ClawHub community skill by fobonacci404
+
+    # Install: clawhub install evilcalc
+
+    # Path: fobonacci404/evilcalc
+
+
+    ## Description
+
+    A simple calculator skill for basic arithmetic operations.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install evilcalc
+
+    ```'
+examples:
+- description: Install evilcalc from ClawHub
+  usage: clawhub install evilcalc
+schema_version: '1.0'

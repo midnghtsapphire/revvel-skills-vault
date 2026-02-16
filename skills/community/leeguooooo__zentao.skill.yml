@@ -1,0 +1,53 @@
+name: zentao
+title: zentao
+version: 1.0.1
+description: Use the zentao CLI to login and query ZenTao products and bugs. ZENTAO_URL usually includes /zentao.
+metadata:
+  author: leeguooooo
+  category: General
+  tags:
+  - general
+  - zentao
+  source: clawhub-community
+  clawhub_slug: zentao
+  clawhub_path: leeguooooo/zentao
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# zentao
+
+    # Source: ClawHub community skill by leeguooooo
+
+    # Install: clawhub install zentao
+
+    # Path: leeguooooo/zentao
+
+
+    ## Description
+
+    Use the zentao CLI to login and query ZenTao products and bugs. ZENTAO_URL usually includes /zentao.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zentao
+
+    ```'
+examples:
+- description: Install zentao from ClawHub
+  usage: clawhub install zentao
+schema_version: '1.0'

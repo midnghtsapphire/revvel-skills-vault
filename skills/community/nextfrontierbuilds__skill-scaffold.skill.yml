@@ -1,0 +1,62 @@
+name: skill-scaffold
+title: Skill Scaffold
+version: 1.0.4
+description: AI agent skill scaffolding CLI. Create skills for OpenClaw, Moltbot, Claude, Cursor, ChatGPT, Copilot instantly.
+  Vibe-coding ready. MCP compatible.
+metadata:
+  author: nextfrontierbuilds
+  category: Communication
+  tags:
+  - communication
+  - skill
+  - scaffold
+  source: clawhub-community
+  clawhub_slug: skill-scaffold
+  clawhub_path: nextfrontierbuilds/skill-scaffold
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Scaffold
+
+    # Source: ClawHub community skill by nextfrontierbuilds
+
+    # Install: clawhub install skill-scaffold
+
+    # Path: nextfrontierbuilds/skill-scaffold
+
+
+    ## Description
+
+    AI agent skill scaffolding CLI. Create skills for OpenClaw, Moltbot, Claude, Cursor, ChatGPT, Copilot instantly. Vibe-coding
+    ready. MCP compatible.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - bin/skill-scaffold.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-scaffold
+
+    ```'
+examples:
+- description: Install Skill Scaffold from ClawHub
+  usage: clawhub install skill-scaffold
+schema_version: '1.0'

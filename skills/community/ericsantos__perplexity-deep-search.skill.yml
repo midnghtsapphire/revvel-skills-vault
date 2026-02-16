@@ -1,0 +1,57 @@
+name: perplexity
+title: Perplexity Deep Search
+version: 1.0.0
+description: '"Deep search via Perplexity API. Three modes: search (quick facts), reason (complex analysis), research (in-depth
+  reports). Returns AI-grounded answers with citations."'
+metadata:
+  author: ericsantos
+  category: Search & Research
+  tags:
+  - search-research
+  - perplexity
+  source: clawhub-community
+  clawhub_slug: perplexity-deep-search
+  clawhub_path: ericsantos/perplexity-deep-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Perplexity Deep Search
+
+    # Source: ClawHub community skill by ericsantos
+
+    # Install: clawhub install perplexity-deep-search
+
+    # Path: ericsantos/perplexity-deep-search
+
+
+    ## Description
+
+    "Deep search via Perplexity API. Three modes: search (quick facts), reason (complex analysis), research (in-depth reports).
+    Returns AI-grounded answers with citations."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install perplexity-deep-search
+
+    ```'
+examples:
+- description: Install Perplexity Deep Search from ClawHub
+  usage: clawhub install perplexity-deep-search
+schema_version: '1.0'

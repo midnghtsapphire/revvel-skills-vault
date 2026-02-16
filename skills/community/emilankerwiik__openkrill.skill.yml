@@ -1,0 +1,71 @@
+name: openkrill
+title: openkrill
+version: 1.0.0
+description: Enable AI agents to make micropayments via x402 protocol. Use when purchasing browser sessions on Browserbase,
+  scraping with Firecrawl, or any x402-compatible API. Handles wallet creation, funding, and automatic payment flows.
+metadata:
+  author: emilankerwiik
+  category: Search & Research
+  tags:
+  - search-research
+  - openkrill
+  source: clawhub-community
+  clawhub_slug: openkrill
+  clawhub_path: emilankerwiik/openkrill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# openkrill
+
+    # Source: ClawHub community skill by emilankerwiik
+
+    # Install: clawhub install openkrill
+
+    # Path: emilankerwiik/openkrill
+
+
+    ## Description
+
+    Enable AI agents to make micropayments via x402 protocol. Use when purchasing browser sessions on Browserbase, scraping
+    with Firecrawl, or any x402-compatible API. Handles wallet creation, funding, and automatic payment flows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/config-template.json
+
+    - references/API-REFERENCE.md
+
+    - references/SERVICES.md
+
+    - scripts/check-balance.ts
+
+    - scripts/create-email.ts
+
+    - scripts/create-wallet.ts
+
+    - scripts/discover-services.ts
+
+    - scripts/fetch-with-payment.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openkrill
+
+    ```'
+examples:
+- description: Install openkrill from ClawHub
+  usage: clawhub install openkrill
+schema_version: '1.0'

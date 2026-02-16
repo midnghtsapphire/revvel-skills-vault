@@ -1,0 +1,56 @@
+name: vps-setup
+title: SetupOrion ByImpa
+version: 1.0.0
+description: Setup completo de VPS Ubuntu/Debian para produção com Docker Swarm, Traefik v3 (SSL/HTTPS automático), Portainer
+  CE e rede overlay. Baseado no SetupOrion v2.8.0. Executa todos os comandos automaticamente.
+metadata:
+  author: impa365
+  category: Development & Coding
+  tags:
+  - development-coding
+  - vps
+  - setup
+  source: clawhub-community
+  clawhub_slug: setuporion-byimpa
+  clawhub_path: impa365/setuporion-byimpa
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SetupOrion ByImpa
+
+    # Source: ClawHub community skill by impa365
+
+    # Install: clawhub install setuporion-byimpa
+
+    # Path: impa365/setuporion-byimpa
+
+
+    ## Description
+
+    Setup completo de VPS Ubuntu/Debian para produção com Docker Swarm, Traefik v3 (SSL/HTTPS automático), Portainer CE e
+    rede overlay. Baseado no SetupOrion v2.8.0. Executa todos os comandos automaticamente.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install setuporion-byimpa
+
+    ```'
+examples:
+- description: Install SetupOrion ByImpa from ClawHub
+  usage: clawhub install setuporion-byimpa
+schema_version: '1.0'

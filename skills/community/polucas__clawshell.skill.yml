@@ -1,0 +1,53 @@
+name: clawshell
+title: Clawshell
+version: 0.1.0
+description: Human-in-the-loop security layer. Intercepts high-risk commands and requires push notification approval.
+metadata:
+  author: polucas
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawshell
+  source: clawhub-community
+  clawhub_slug: clawshell
+  clawhub_path: polucas/clawshell
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawshell
+
+    # Source: ClawHub community skill by polucas
+
+    # Install: clawhub install clawshell
+
+    # Path: polucas/clawshell
+
+
+    ## Description
+
+    Human-in-the-loop security layer. Intercepts high-risk commands and requires push notification approval.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawshell
+
+    ```'
+examples:
+- description: Install Clawshell from ClawHub
+  usage: clawhub install clawshell
+schema_version: '1.0'

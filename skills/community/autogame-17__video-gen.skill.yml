@@ -1,0 +1,70 @@
+name: video-gen
+title: Video Gen
+version: 1.0.0
+description: Generate videos using Tencent Cloud VOD AIGC models (Kling, Vidu, Hailuo, etc.). Updated with full API support.
+metadata:
+  author: autogame-17
+  category: Media & Content
+  tags:
+  - media-content
+  - video
+  - gen
+  source: clawhub-community
+  clawhub_slug: video-gen
+  clawhub_path: autogame-17/video-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Video Gen
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install video-gen
+
+    # Path: autogame-17/video-gen
+
+
+    ## Description
+
+    Generate videos using Tencent Cloud VOD AIGC models (Kling, Vidu, Hailuo, etc.). Updated with full API support.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - TROUBLESHOOTING.md
+
+    - VOD_API_GUIDE.md
+
+    - _meta.json
+
+    - check_task.js
+
+    - check_task_debug.js
+
+    - index.js
+
+    - models.md
+
+    - package-lock.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install video-gen
+
+    ```'
+examples:
+- description: Install Video Gen from ClawHub
+  usage: clawhub install video-gen
+schema_version: '1.0'

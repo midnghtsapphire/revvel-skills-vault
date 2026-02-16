@@ -1,0 +1,64 @@
+name: plaud-api
+title: Plaud Unofficial Skill
+version: 1.0.1
+description: Use when accessing Plaud voice recorder data (recordings, transcripts, AI summaries) - guides credential setup
+  and provides patterns for plaud_client.py
+metadata:
+  author: leonardsellem
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - plaud
+  - api
+  source: clawhub-community
+  clawhub_slug: plaud-unofficial
+  clawhub_path: leonardsellem/plaud-unofficial
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Plaud Unofficial Skill
+
+    # Source: ClawHub community skill by leonardsellem
+
+    # Install: clawhub install plaud-unofficial
+
+    # Path: leonardsellem/plaud-unofficial
+
+
+    ## Description
+
+    Use when accessing Plaud voice recorder data (recordings, transcripts, AI summaries) - guides credential setup and provides
+    patterns for plaud_client.py
+
+
+    ## Files
+
+    - PLAUD_API.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - plaud_client.py
+
+    - requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install plaud-unofficial
+
+    ```'
+examples:
+- description: Install Plaud Unofficial Skill from ClawHub
+  usage: clawhub install plaud-unofficial
+schema_version: '1.0'

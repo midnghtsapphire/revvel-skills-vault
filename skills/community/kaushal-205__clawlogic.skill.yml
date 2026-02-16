@@ -1,0 +1,74 @@
+name: clawlogic-trader
+title: CLAWLOGIC Trader
+version: 0.1.0
+description: '"Use this skill to operate CLAWLOGIC prediction markets via `clawlogic-agent`: initialize wallet, register agent
+  (ENS optional), create creator-seeded CPMM markets, analyze, trade YES/NO, assert and settle outcomes, claim fees, and post
+  market broadcasts."'
+metadata:
+  author: kaushal-205
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawlogic
+  - trader
+  source: clawhub-community
+  clawhub_slug: clawlogic
+  clawhub_path: kaushal-205/clawlogic
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CLAWLOGIC Trader
+
+    # Source: ClawHub community skill by kaushal-205
+
+    # Install: clawhub install clawlogic
+
+    # Path: kaushal-205/clawlogic
+
+
+    ## Description
+
+    "Use this skill to operate CLAWLOGIC prediction markets via `clawlogic-agent`: initialize wallet, register agent (ENS
+    optional), create creator-seeded CPMM markets, analyze, trade YES/NO, assert and settle outcomes, claim fees, and post
+    market broadcasts."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - agents/openai.yaml
+
+    - scripts/analyze-market.sh
+
+    - scripts/assert-outcome.sh
+
+    - scripts/buy-position.sh
+
+    - scripts/check-positions.sh
+
+    - scripts/create-market.sh
+
+    - scripts/post-broadcast.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawlogic
+
+    ```'
+examples:
+- description: Install CLAWLOGIC Trader from ClawHub
+  usage: clawhub install clawlogic
+schema_version: '1.0'

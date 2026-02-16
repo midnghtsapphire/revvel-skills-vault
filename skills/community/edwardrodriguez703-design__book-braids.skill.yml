@@ -1,0 +1,56 @@
+name: book-braids
+title: Book Braids
+version: 1.0.1
+description: Book braids services through Lokuli MCP. Use when user needs to find and book braids. Triggers on requests like
+  "book a braids", "find braids near me", or any braids service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - braids
+  source: clawhub-community
+  clawhub_slug: book-braids
+  clawhub_path: edwardrodriguez703-design/book-braids
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Braids
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-braids
+
+    # Path: edwardrodriguez703-design/book-braids
+
+
+    ## Description
+
+    Book braids services through Lokuli MCP. Use when user needs to find and book braids. Triggers on requests like "book
+    a braids", "find braids near me", or any braids service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-braids
+
+    ```'
+examples:
+- description: Install Book Braids from ClawHub
+  usage: clawhub install book-braids
+schema_version: '1.0'

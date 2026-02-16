@@ -1,0 +1,55 @@
+name: deepwiki
+title: DeepWiki
+version: 1.0.0
+description: Query the DeepWiki MCP server for GitHub repository documentation, wiki structure, and AI-powered questions.
+metadata:
+  author: arun-8687
+  category: Development & Coding
+  tags:
+  - development-coding
+  - deepwiki
+  source: clawhub-community
+  clawhub_slug: deepwiki
+  clawhub_path: arun-8687/deepwiki
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DeepWiki
+
+    # Source: ClawHub community skill by arun-8687
+
+    # Install: clawhub install deepwiki
+
+    # Path: arun-8687/deepwiki
+
+
+    ## Description
+
+    Query the DeepWiki MCP server for GitHub repository documentation, wiki structure, and AI-powered questions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/deepwiki.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install deepwiki
+
+    ```'
+examples:
+- description: Install DeepWiki from ClawHub
+  usage: clawhub install deepwiki
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: todoist
+title: Todoist
+version: 0.1.1
+description: Use the td (Todoist CLI) to read and manage Todoist todos/to-dos/tasks from the terminal. Trigger when the user
+  asks about their todos/tasks/agenda/checklist (today/upcoming/overdue), wants to list inbox/tasks/projects/labels, add a
+  task/todo with natural language, or update/complete/delete/move tas
+metadata:
+  author: mattjefferson
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - todoist
+  source: clawhub-community
+  clawhub_slug: todoist-td
+  clawhub_path: mattjefferson/todoist-td
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Todoist
+
+    # Source: ClawHub community skill by mattjefferson
+
+    # Install: clawhub install todoist-td
+
+    # Path: mattjefferson/todoist-td
+
+
+    ## Description
+
+    Use the td (Todoist CLI) to read and manage Todoist todos/to-dos/tasks from the terminal. Trigger when the user asks about
+    their todos/tasks/agenda/checklist (today/upcoming/overdue), wants to list inbox/tasks/projects/labels, add a task/todo
+    with natural language, or update/complete/delete/move tas
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todoist-td
+
+    ```'
+examples:
+- description: Install Todoist from ClawHub
+  usage: clawhub install todoist-td
+schema_version: '1.0'

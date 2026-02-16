@@ -1,0 +1,73 @@
+name: basecred-8004-registration
+title: Basecred ERC-8004 Registration
+version: 1.0.0
+description: Interactive ERC-8004 agent registration via chat. Guides users through a prefill form, shows draft, confirms,
+  then registers on-chain using agent0-sdk.
+metadata:
+  author: callmedas69
+  category: Communication
+  tags:
+  - communication
+  - basecred
+  - '8004'
+  - registration
+  source: clawhub-community
+  clawhub_slug: basecred-8004-registration
+  clawhub_path: callmedas69/basecred-8004-registration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Basecred ERC-8004 Registration
+
+    # Source: ClawHub community skill by callmedas69
+
+    # Install: clawhub install basecred-8004-registration
+
+    # Path: callmedas69/basecred-8004-registration
+
+
+    ## Description
+
+    Interactive ERC-8004 agent registration via chat. Guides users through a prefill form, shows draft, confirms, then registers
+    on-chain using agent0-sdk.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - references/chains.md
+
+    - references/sdk-reference.md
+
+    - scripts/feedback.mjs
+
+    - scripts/register.mjs
+
+    - scripts/search.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install basecred-8004-registration
+
+    ```'
+examples:
+- description: Install Basecred ERC-8004 Registration from ClawHub
+  usage: clawhub install basecred-8004-registration
+schema_version: '1.0'

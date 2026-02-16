@@ -1,0 +1,57 @@
+name: extract
+title: Extract
+version: 0.1.0
+description: '"Extract content from specific URLs using Tavily''s extraction API. Returns clean markdown/text from web pages.
+  Use when you have specific URLs and need their content without writing code."'
+metadata:
+  author: barneyjm
+  category: Development & Coding
+  tags:
+  - development-coding
+  - extract
+  source: clawhub-community
+  clawhub_slug: extract
+  clawhub_path: barneyjm/extract
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Extract
+
+    # Source: ClawHub community skill by barneyjm
+
+    # Install: clawhub install extract
+
+    # Path: barneyjm/extract
+
+
+    ## Description
+
+    "Extract content from specific URLs using Tavily''s extraction API. Returns clean markdown/text from web pages. Use when
+    you have specific URLs and need their content without writing code."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/extract.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install extract
+
+    ```'
+examples:
+- description: Install Extract from ClawHub
+  usage: clawhub install extract
+schema_version: '1.0'

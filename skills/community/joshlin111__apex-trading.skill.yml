@@ -1,0 +1,73 @@
+name: apex
+title: Apex Trading & Analysis
+version: 1.0.3
+description: Trade and monitor ApeX perpetual futures. Check balances, view positions with P&L, place/cancel orders, execute
+  market trades, or submit trade reward enrollments. Use when the user asks about ApeX trading, portfolio status, crypto positions,
+  activity enrollments, or wants to execute trades on ApeX.
+metadata:
+  author: joshlin111
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - apex
+  source: clawhub-community
+  clawhub_slug: apex-trading
+  clawhub_path: joshlin111/apex-trading
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apex Trading & Analysis
+
+    # Source: ClawHub community skill by joshlin111
+
+    # Install: clawhub install apex-trading
+
+    # Path: joshlin111/apex-trading
+
+
+    ## Description
+
+    Trade and monitor ApeX perpetual futures. Check balances, view positions with P&L, place/cancel orders, execute market
+    trades, or submit trade reward enrollments. Use when the user asks about ApeX trading, portfolio status, crypto positions,
+    activity enrollments, or wants to execute trades on ApeX.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/analyze-coingecko.mjs
+
+    - scripts/analyze-market.mjs
+
+    - scripts/apex.mjs
+
+    - scripts/check-positions.mjs
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apex-trading
+
+    ```'
+examples:
+- description: Install Apex Trading & Analysis from ClawHub
+  usage: clawhub install apex-trading
+schema_version: '1.0'

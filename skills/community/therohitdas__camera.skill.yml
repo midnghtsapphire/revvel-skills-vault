@@ -1,0 +1,55 @@
+name: camera
+title: Camera
+version: 1.0.0
+description: Capture photos from MacBook webcams. Use when user asks to take a photo, picture, snapshot, or see them. Two
+  cameras available - Brio (front-facing on monitor) and FaceTime (side angle from MacBook).
+metadata:
+  author: therohitdas
+  category: Media & Content
+  tags:
+  - media-content
+  - camera
+  source: clawhub-community
+  clawhub_slug: camera
+  clawhub_path: therohitdas/camera
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Camera
+
+    # Source: ClawHub community skill by therohitdas
+
+    # Install: clawhub install camera
+
+    # Path: therohitdas/camera
+
+
+    ## Description
+
+    Capture photos from MacBook webcams. Use when user asks to take a photo, picture, snapshot, or see them. Two cameras available
+    - Brio (front-facing on monitor) and FaceTime (side angle from MacBook).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install camera
+
+    ```'
+examples:
+- description: Install Camera from ClawHub
+  usage: clawhub install camera
+schema_version: '1.0'

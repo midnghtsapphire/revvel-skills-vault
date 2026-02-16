@@ -1,0 +1,55 @@
+name: calendar
+title: Calendar
+version: 1.0.0
+description: '"Manage Google Calendar events using `gcalcli`. Create, list, and delete calendar events from the CLI."'
+metadata:
+  author: xejrax
+  category: Search & Research
+  tags:
+  - search-research
+  - calendar
+  source: clawhub-community
+  clawhub_slug: brainz-calendar
+  clawhub_path: xejrax/brainz-calendar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Calendar
+
+    # Source: ClawHub community skill by xejrax
+
+    # Install: clawhub install brainz-calendar
+
+    # Path: xejrax/brainz-calendar
+
+
+    ## Description
+
+    "Manage Google Calendar events using `gcalcli`. Create, list, and delete calendar events from the CLI."
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brainz-calendar
+
+    ```'
+examples:
+- description: Install Calendar from ClawHub
+  usage: clawhub install brainz-calendar
+schema_version: '1.0'

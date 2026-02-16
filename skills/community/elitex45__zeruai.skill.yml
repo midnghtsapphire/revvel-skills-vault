@@ -1,0 +1,73 @@
+name: zeruai
+title: zeruai
+version: 1.0.2
+description: Register agents on the Zeru ERC-8004 Identity Registry, manage wallets and metadata, and read on-chain state.
+  Use when an agent needs to register on-chain, check fees, read agent info, set metadata, or manage agent wallets on Base
+  Mainnet or Base Sepolia.
+metadata:
+  author: elitex45
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - zeruai
+  source: clawhub-community
+  clawhub_slug: zeruai
+  clawhub_path: elitex45/zeruai
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# zeruai
+
+    # Source: ClawHub community skill by elitex45
+
+    # Install: clawhub install zeruai
+
+    # Path: elitex45/zeruai
+
+
+    ## Description
+
+    Register agents on the Zeru ERC-8004 Identity Registry, manage wallets and metadata, and read on-chain state. Use when
+    an agent needs to register on-chain, check fees, read agent info, set metadata, or manage agent wallets on Base Mainnet
+    or Base Sepolia.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - lib/abi.js
+
+    - lib/agent-wallet.js
+
+    - lib/config.js
+
+    - lib/create-agent-uri.js
+
+    - lib/errors.js
+
+    - lib/get-agent.js
+
+    - lib/get-reputation.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install zeruai
+
+    ```'
+examples:
+- description: Install zeruai from ClawHub
+  usage: clawhub install zeruai
+schema_version: '1.0'

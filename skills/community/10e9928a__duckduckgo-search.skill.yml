@@ -1,0 +1,73 @@
+name: duckduckgo-search
+title: Performs web searches using DuckDuckGo to retrieve real-time information from the internet. Use when the user needs
+  to search for current events, documentation, tutorials, or any information that requires web search capabilities.
+version: 1.0.0
+description: Performs web searches using DuckDuckGo to retrieve real-time information from the internet. Use when the user
+  needs to search for current events, documentation, tutorials, or any information that requires web search capabilities.
+metadata:
+  author: 10e9928a
+  category: Search & Research
+  tags:
+  - search-research
+  - duckduckgo
+  - search
+  - bash(duckduckgo-search:*)
+  - bash(python:*)
+  - bash(pip:*)
+  - bash(uv:*)
+  source: clawhub-community
+  clawhub_slug: duckduckgo-search
+  clawhub_path: 10e9928a/duckduckgo-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash(duckduckgo-search:*)
+  - Bash(python:*)
+  - Bash(pip:*)
+  - Bash(uv:*)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Performs web searches using DuckDuckGo to retrieve real-time information from the internet. Use when the user
+    needs to search for current events, documentation, tutorials, or any information that requires web search capabilities.
+
+    # Source: ClawHub community skill by 10e9928a
+
+    # Install: clawhub install duckduckgo-search
+
+    # Path: 10e9928a/duckduckgo-search
+
+
+    ## Description
+
+    Performs web searches using DuckDuckGo to retrieve real-time information from the internet. Use when the user needs to
+    search for current events, documentation, tutorials, or any information that requires web search capabilities.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Bash(duckduckgo-search:*), Bash(python:*), Bash(pip:*), Bash(uv:*)
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install duckduckgo-search
+
+    ```'
+examples:
+- description: Install Performs web searches using DuckDuckGo to retrieve real-time information from the internet. Use when
+    the user needs to search for current events, documentation, tutorials, or any information that requires web search capabilities.
+    from ClawHub
+  usage: clawhub install duckduckgo-search
+schema_version: '1.0'

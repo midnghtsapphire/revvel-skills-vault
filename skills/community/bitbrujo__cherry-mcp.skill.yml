@@ -1,0 +1,64 @@
+name: cherry-mcp
+title: Cherry Mcp
+version: 1.0.3
+description: HTTP bridge that keeps MCP servers alive and exposes them via REST. Built for OpenClaw agents that need MCP tools
+  without native MCP support.
+metadata:
+  author: bitbrujo
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - cherry
+  - mcp
+  source: clawhub-community
+  clawhub_slug: cherry-mcp
+  clawhub_path: bitbrujo/cherry-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cherry Mcp
+
+    # Source: ClawHub community skill by bitbrujo
+
+    # Install: clawhub install cherry-mcp
+
+    # Path: bitbrujo/cherry-mcp
+
+
+    ## Description
+
+    HTTP bridge that keeps MCP servers alive and exposes them via REST. Built for OpenClaw agents that need MCP tools without
+    native MCP support.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bridge.js
+
+    - cli.js
+
+    - config.json
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cherry-mcp
+
+    ```'
+examples:
+- description: Install Cherry Mcp from ClawHub
+  usage: clawhub install cherry-mcp
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: set-reminder
+title: Set Reminder for Dumb LLMS
+version: 1.0.6
+description: Use when user wants to be reminded about something at a specific time or recurring schedule. Creates cron-based
+  reminders delivered via iMessage, Discord, or other configured channels.
+metadata:
+  author: onionrings29
+  category: Social Media
+  tags:
+  - social-media
+  - set
+  - reminder
+  source: clawhub-community
+  clawhub_slug: set-reminder
+  clawhub_path: onionrings29/set-reminder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Set Reminder for Dumb LLMS
+
+    # Source: ClawHub community skill by onionrings29
+
+    # Install: clawhub install set-reminder
+
+    # Path: onionrings29/set-reminder
+
+
+    ## Description
+
+    Use when user wants to be reminded about something at a specific time or recurring schedule. Creates cron-based reminders
+    delivered via iMessage, Discord, or other configured channels.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.json
+
+    - scripts/set_reminder.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install set-reminder
+
+    ```'
+examples:
+- description: Install Set Reminder for Dumb LLMS from ClawHub
+  usage: clawhub install set-reminder
+schema_version: '1.0'

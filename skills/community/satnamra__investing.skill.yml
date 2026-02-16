@@ -1,0 +1,59 @@
+name: investing
+title: Investing
+version: 1.0.0
+description: Personal investing assistant for Lithuanian investors. Monitors markets, ETFs, crypto, pension funds (III pakopa),
+  and provides monthly investment suggestions based on research and market conditions.
+metadata:
+  author: satnamra
+  category: Search & Research
+  tags:
+  - search-research
+  - investing
+  source: clawhub-community
+  clawhub_slug: investing
+  clawhub_path: satnamra/investing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Investing
+
+    # Source: ClawHub community skill by satnamra
+
+    # Install: clawhub install investing
+
+    # Path: satnamra/investing
+
+
+    ## Description
+
+    Personal investing assistant for Lithuanian investors. Monitors markets, ETFs, crypto, pension funds (III pakopa), and
+    provides monthly investment suggestions based on research and market conditions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - check-etf-prices.sh
+
+    - monthly-dca.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install investing
+
+    ```'
+examples:
+- description: Install Investing from ClawHub
+  usage: clawhub install investing
+schema_version: '1.0'

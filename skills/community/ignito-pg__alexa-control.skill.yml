@@ -1,0 +1,58 @@
+name: alexa-remote
+title: Alexa Control
+version: 1.0.0
+description: Control Alexa devices via CLI - set alarms, play music, flash briefings, smart home commands. Use when asked
+  to set an alarm, play something on Echo, control smart home devices, or send voice commands to Alexa.
+metadata:
+  author: ignito-pg
+  category: Media & Content
+  tags:
+  - media-content
+  - alexa
+  - remote
+  source: clawhub-community
+  clawhub_slug: alexa-control
+  clawhub_path: ignito-pg/alexa-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Alexa Control
+
+    # Source: ClawHub community skill by ignito-pg
+
+    # Install: clawhub install alexa-control
+
+    # Path: ignito-pg/alexa-control
+
+
+    ## Description
+
+    Control Alexa devices via CLI - set alarms, play music, flash briefings, smart home commands. Use when asked to set an
+    alarm, play something on Echo, control smart home devices, or send voice commands to Alexa.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/alexa-cmd.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install alexa-control
+
+    ```'
+examples:
+- description: Install Alexa Control from ClawHub
+  usage: clawhub install alexa-control
+schema_version: '1.0'

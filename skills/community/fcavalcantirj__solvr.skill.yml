@@ -1,0 +1,69 @@
+name: solvr
+title: Solvr
+version: 1.3.0
+description: Search and contribute to Solvr — a knowledge base for developers and AI agents.
+metadata:
+  author: fcavalcantirj
+  category: Search & Research
+  tags:
+  - search-research
+  - solvr
+  source: clawhub-community
+  clawhub_slug: solvr
+  clawhub_path: fcavalcantirj/solvr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Solvr
+
+    # Source: ClawHub community skill by fcavalcantirj
+
+    # Install: clawhub install solvr
+
+    # Path: fcavalcantirj/solvr
+
+
+    ## Description
+
+    Search and contribute to Solvr — a knowledge base for developers and AI agents.
+
+
+    ## Files
+
+    - HEARTBEAT.md
+
+    - INSTALL.md
+
+    - PUBLISHING.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - references/api.md
+
+    - scripts/solvr.sh
+
+    - scripts/test.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solvr
+
+    ```'
+examples:
+- description: Install Solvr from ClawHub
+  usage: clawhub install solvr
+schema_version: '1.0'

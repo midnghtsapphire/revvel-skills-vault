@@ -1,0 +1,65 @@
+name: openclaw-news
+title: OpenClaw News
+version: 1.0.0
+description: ''
+metadata:
+  author: arc-claw-bot
+  category: General
+  tags:
+  - general
+  - openclaw
+  - news
+  source: clawhub-community
+  clawhub_slug: openclaw-news
+  clawhub_path: arc-claw-bot/openclaw-news
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw News
+
+    # Source: ClawHub community skill by arc-claw-bot
+
+    # Install: clawhub install openclaw-news
+
+    # Path: arc-claw-bot/openclaw-news
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/agent_collect.py
+
+    - scripts/collect_news.sh
+
+    - scripts/format_briefing.sh
+
+    - state/last_run.json
+
+    - state/pending_searches.json
+
+    - state/raw_data.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-news
+
+    ```'
+examples:
+- description: Install OpenClaw News from ClawHub
+  usage: clawhub install openclaw-news
+schema_version: '1.0'

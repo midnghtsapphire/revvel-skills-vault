@@ -1,0 +1,60 @@
+name: personal-finance
+title: Personal Finance Tracker
+version: 1.0.0
+description: Manage personal finances, track spending by category, set budgets, and receive reminders for EMIs and one-time
+  annual expenses. Use for logging expenses, checking budget status, or setting up financial reminders.
+metadata:
+  author: aka-anoop
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - personal
+  - finance
+  source: clawhub-community
+  clawhub_slug: personal-finance
+  clawhub_path: aka-anoop/personal-finance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Personal Finance Tracker
+
+    # Source: ClawHub community skill by aka-anoop
+
+    # Install: clawhub install personal-finance
+
+    # Path: aka-anoop/personal-finance
+
+
+    ## Description
+
+    Manage personal finances, track spending by category, set budgets, and receive reminders for EMIs and one-time annual
+    expenses. Use for logging expenses, checking budget status, or setting up financial reminders.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/finance_data.md
+
+    - scripts/init_db.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install personal-finance
+
+    ```'
+examples:
+- description: Install Personal Finance Tracker from ClawHub
+  usage: clawhub install personal-finance
+schema_version: '1.0'

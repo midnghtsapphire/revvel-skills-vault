@@ -1,0 +1,62 @@
+name: equity-analyst
+title: Equity Analyst Test
+version: 1.0.0
+description: '전문 투자 분석가 AI로, 한국 주식 종목의 재무제표, 뉴스, 차트를 분석하여 Investment Attractiveness Score (0-100)와 BUY/HOLD/AVOID 추천을 제공합니다.
+  네이버 금융 데이터를 사용하며, 프롬프트에 명시된 엄격한 우선순위(Financial > News > Chart)와 가중치를 따릅니다. trigger: 사용자가 "xxx 주식 분석해줘", "xxx 투자 매력도 알려줘",
+  "xxx 리포트 써줘" 등으로 분석 요청을 했을 때.'
+metadata:
+  author: saebyeok-im
+  category: Development & Coding
+  tags:
+  - development-coding
+  - equity
+  - analyst
+  source: clawhub-community
+  clawhub_slug: equity-analyst-test
+  clawhub_path: saebyeok-im/equity-analyst-test
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Equity Analyst Test
+
+    # Source: ClawHub community skill by saebyeok-im
+
+    # Install: clawhub install equity-analyst-test
+
+    # Path: saebyeok-im/equity-analyst-test
+
+
+    ## Description
+
+    전문 투자 분석가 AI로, 한국 주식 종목의 재무제표, 뉴스, 차트를 분석하여 Investment Attractiveness Score (0-100)와 BUY/HOLD/AVOID 추천을 제공합니다. 네이버 금융
+    데이터를 사용하며, 프롬프트에 명시된 엄격한 우선순위(Financial > News > Chart)와 가중치를 따릅니다. trigger: 사용자가 "xxx 주식 분석해줘", "xxx 투자 매력도 알려줘", "xxx
+    리포트 써줘" 등으로 분석 요청을 했을 때.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/framework.md
+
+    - scripts/analyze.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install equity-analyst-test
+
+    ```'
+examples:
+- description: Install Equity Analyst Test from ClawHub
+  usage: clawhub install equity-analyst-test
+schema_version: '1.0'

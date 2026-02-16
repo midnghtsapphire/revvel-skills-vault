@@ -1,0 +1,57 @@
+name: feishu-leave-request
+title: Feishu Leave Request
+version: 1.0.1
+description: Submit a leave request through Feishu (Lark). Use when the user wants to request time off, submit a leave application,
+  or mentions taking leave.
+metadata:
+  author: baofeidyz
+  category: Utilities
+  tags:
+  - utilities
+  - feishu
+  - leave
+  - request
+  source: clawhub-community
+  clawhub_slug: feishu-leave-request
+  clawhub_path: baofeidyz/feishu-leave-request
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feishu Leave Request
+
+    # Source: ClawHub community skill by baofeidyz
+
+    # Install: clawhub install feishu-leave-request
+
+    # Path: baofeidyz/feishu-leave-request
+
+
+    ## Description
+
+    Submit a leave request through Feishu (Lark). Use when the user wants to request time off, submit a leave application,
+    or mentions taking leave.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-leave-request
+
+    ```'
+examples:
+- description: Install Feishu Leave Request from ClawHub
+  usage: clawhub install feishu-leave-request
+schema_version: '1.0'

@@ -1,0 +1,56 @@
+name: raindrop-cli
+title: Raindrop CLI
+version: 0.1.0
+description: Manage Raindrop.io bookmarks from the command line (search, exists, add, update, remove) using the Raindrop REST
+  API. Use when automating bookmark capture and organization with a personal RAINDROP_TOKEN.
+metadata:
+  author: adorostkar
+  category: Search & Research
+  tags:
+  - search-research
+  - raindrop
+  - cli
+  source: clawhub-community
+  clawhub_slug: raindrop-cli
+  clawhub_path: adorostkar/raindrop-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Raindrop CLI
+
+    # Source: ClawHub community skill by adorostkar
+
+    # Install: clawhub install raindrop-cli
+
+    # Path: adorostkar/raindrop-cli
+
+
+    ## Description
+
+    Manage Raindrop.io bookmarks from the command line (search, exists, add, update, remove) using the Raindrop REST API.
+    Use when automating bookmark capture and organization with a personal RAINDROP_TOKEN.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install raindrop-cli
+
+    ```'
+examples:
+- description: Install Raindrop CLI from ClawHub
+  usage: clawhub install raindrop-cli
+schema_version: '1.0'

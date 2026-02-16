@@ -1,0 +1,70 @@
+name: airfrance-afkl
+title: Air France - KLM
+version: 1.0.1
+description: Track Air France flights using the Air France–KLM Open Data APIs (Flight Status). Use when the user gives a flight
+  number/date (e.g., AF007 on 2026-01-29) and wants monitoring, alerts (delay/gate/aircraft changes), or analysis (previous-flight
+  chain, aircraft tail number → cabin recency / Wi‑Fi). Al
+metadata:
+  author: iclems
+  category: Development & Coding
+  tags:
+  - development-coding
+  - airfrance
+  - afkl
+  source: clawhub-community
+  clawhub_slug: airfrance-afkl
+  clawhub_path: iclems/airfrance-afkl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Air France - KLM
+
+    # Source: ClawHub community skill by iclems
+
+    # Install: clawhub install airfrance-afkl
+
+    # Path: iclems/airfrance-afkl
+
+
+    ## Description
+
+    Track Air France flights using the Air France–KLM Open Data APIs (Flight Status). Use when the user gives a flight number/date
+    (e.g., AF007 on 2026-01-29) and wants monitoring, alerts (delay/gate/aircraft changes), or analysis (previous-flight chain,
+    aircraft tail number → cabin recency / Wi‑Fi). Al
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/fields.md
+
+    - scripts/afkl_flightstatus_query.mjs
+
+    - scripts/afkl_http.mjs
+
+    - scripts/afkl_watch_flight.mjs
+
+    - scripts/aircraft_intel.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install airfrance-afkl
+
+    ```'
+examples:
+- description: Install Air France - KLM from ClawHub
+  usage: clawhub install airfrance-afkl
+schema_version: '1.0'

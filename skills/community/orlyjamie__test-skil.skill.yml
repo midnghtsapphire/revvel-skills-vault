@@ -1,0 +1,56 @@
+name: greeting-skill
+title: clean-vt
+version: 1.0.0
+description: A friendly greeting skill for testing
+metadata:
+  author: orlyjamie
+  category: Development & Coding
+  tags:
+  - development-coding
+  - greeting
+  - skill
+  source: clawhub-community
+  clawhub_slug: test-skil
+  clawhub_path: orlyjamie/test-skil
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clean-vt
+
+    # Source: ClawHub community skill by orlyjamie
+
+    # Install: clawhub install test-skil
+
+    # Path: orlyjamie/test-skil
+
+
+    ## Description
+
+    A friendly greeting skill for testing
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - greet.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install test-skil
+
+    ```'
+examples:
+- description: Install clean-vt from ClawHub
+  usage: clawhub install test-skil
+schema_version: '1.0'

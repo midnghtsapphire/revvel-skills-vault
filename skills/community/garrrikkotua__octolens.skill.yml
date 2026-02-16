@@ -1,0 +1,80 @@
+name: octolens
+title: Octolens
+version: 1.0.0
+description: Query and analyze brand mentions from Octolens API. Use when the user wants to fetch mentions, track keywords,
+  filter by source platforms (Twitter, Reddit, GitHub, LinkedIn, etc.), sentiment analysis, or analyze social media engagement.
+  Supports complex filtering with AND/OR logic, date ranges, foll
+metadata:
+  author: garrrikkotua
+  category: Media & Content
+  tags:
+  - media-content
+  - octolens
+  - node read
+  source: clawhub-community
+  clawhub_slug: octolens
+  clawhub_path: garrrikkotua/octolens
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Node Read
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Octolens
+
+    # Source: ClawHub community skill by garrrikkotua
+
+    # Install: clawhub install octolens
+
+    # Path: garrrikkotua/octolens
+
+
+    ## Description
+
+    Query and analyze brand mentions from Octolens API. Use when the user wants to fetch mentions, track keywords, filter
+    by source platforms (Twitter, Reddit, GitHub, LinkedIn, etc.), sentiment analysis, or analyze social media engagement.
+    Supports complex filtering with AND/OR logic, date ranges, foll
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/EXAMPLES.md
+
+    - references/FILTERS.md
+
+    - scripts/README.md
+
+    - scripts/advanced-query.js
+
+    - scripts/fetch-mentions.js
+
+    - scripts/list-keywords.js
+
+    - scripts/list-views.js
+
+    - scripts/query-mentions.js
+
+
+    ## Allowed Tools
+
+    Node Read
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install octolens
+
+    ```'
+examples:
+- description: Install Octolens from ClawHub
+  usage: clawhub install octolens
+schema_version: '1.0'

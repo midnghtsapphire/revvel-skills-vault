@@ -1,0 +1,74 @@
+name: mission-control
+title: Mission Control
+version: 2.2.2
+description: Kanban-style task management dashboard for AI assistants. Manage tasks via CLI or dashboard UI. Use when user
+  mentions tasks, kanban, task board, mission control, or wants to track work items with status columns (backlog, in progress,
+  review, done).
+metadata:
+  author: rdsthomas
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - mission
+  - control
+  source: clawhub-community
+  clawhub_slug: mission-control
+  clawhub_path: rdsthomas/mission-control
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mission Control
+
+    # Source: ClawHub community skill by rdsthomas
+
+    # Install: clawhub install mission-control
+
+    # Path: rdsthomas/mission-control
+
+
+    ## Description
+
+    Kanban-style task management dashboard for AI assistants. Manage tasks via CLI or dashboard UI. Use when user mentions
+    tasks, kanban, task board, mission control, or wants to track work items with status columns (backlog, in progress, review,
+    done).
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/index.html
+
+    - assets/data/crons.json
+
+    - assets/data/tasks.json
+
+    - assets/data/version.json
+
+    - assets/examples/CONFIG-REFERENCE.md
+
+    - assets/examples/HOOKS-CONFIG.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mission-control
+
+    ```'
+examples:
+- description: Install Mission Control from ClawHub
+  usage: clawhub install mission-control
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: jira
+title: Jira
+version: 1.0.2
+description: Manage Jira issues, transitions, and worklogs via the Jira Cloud REST API.
+metadata:
+  author: kyjus25
+  category: Development & Coding
+  tags:
+  - development-coding
+  - jira
+  source: clawhub-community
+  clawhub_slug: clawdbot-jira-skill
+  clawhub_path: kyjus25/clawdbot-jira-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Jira
+
+    # Source: ClawHub community skill by kyjus25
+
+    # Install: clawhub install clawdbot-jira-skill
+
+    # Path: kyjus25/clawdbot-jira-skill
+
+
+    ## Description
+
+    Manage Jira issues, transitions, and worklogs via the Jira Cloud REST API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/jira.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-jira-skill
+
+    ```'
+examples:
+- description: Install Jira from ClawHub
+  usage: clawhub install clawdbot-jira-skill
+schema_version: '1.0'

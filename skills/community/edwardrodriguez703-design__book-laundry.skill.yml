@@ -1,0 +1,56 @@
+name: book-laundry
+title: Book Laundry
+version: 1.0.1
+description: Book laundry services through Lokuli MCP. Use when user needs to find and book laundry. Triggers on requests
+  like "book a laundry", "find laundry near me", or any laundry service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - laundry
+  source: clawhub-community
+  clawhub_slug: book-laundry
+  clawhub_path: edwardrodriguez703-design/book-laundry
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Laundry
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-laundry
+
+    # Path: edwardrodriguez703-design/book-laundry
+
+
+    ## Description
+
+    Book laundry services through Lokuli MCP. Use when user needs to find and book laundry. Triggers on requests like "book
+    a laundry", "find laundry near me", or any laundry service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-laundry
+
+    ```'
+examples:
+- description: Install Book Laundry from ClawHub
+  usage: clawhub install book-laundry
+schema_version: '1.0'

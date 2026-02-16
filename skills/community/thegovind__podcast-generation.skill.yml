@@ -1,0 +1,35 @@
+name: podcast-generation
+title: Podcast Generation with Microsoft Foundry
+version: 0.1.0
+description: 'Generate AI-powered podcast-style audio narratives using Azure OpenAI''s GPT Realtime Mini model via WebSocket.
+  Use when building text-to-speech features, audio narrative generation, podcast creation from content, or integrating with
+  Azure OpenAI Realtime API for real audio output. Covers full-stack '
+metadata:
+  author: thegovind
+  category: Media & Content
+  tags:
+  - media-content
+  - podcast
+  - generation
+  source: clawhub-community
+  clawhub_slug: podcast-generation
+  clawhub_path: thegovind/podcast-generation
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Podcast Generation with Microsoft Foundry\n# Source: ClawHub community skill by thegovind\n# Install: clawhub\
+    \ install podcast-generation\n# Path: thegovind/podcast-generation\n\n## Description\nGenerate AI-powered podcast-style\
+    \ audio narratives using Azure OpenAI's GPT Realtime Mini model via WebSocket. Use when building text-to-speech features,\
+    \ audio narrative generation, podcast creation from content, or integrating with Azure OpenAI Realtime API for real audio\
+    \ output. Covers full-stack \n\n## Files\n- SKILL.md\n- _meta.json\n- references/acceptance-criteria.md\n- references/architecture.md\n\
+    - references/code-examples.md\n- scripts/pcm_to_wav.py\n\n## Installation\n```bash\nclawhub install podcast-generation\n\
+    ```"
+examples:
+- description: Install Podcast Generation with Microsoft Foundry from ClawHub
+  usage: clawhub install podcast-generation
+schema_version: '1.0'

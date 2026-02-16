@@ -1,0 +1,72 @@
+name: equity-analyst
+title: Equity Analyst
+version: 1.0.7
+description: 전문 투자 분석가 AI로, 한국 주식 종목의 재무제표, 뉴스, 차트를 분석하여 Investment Attractiveness Score (0-100)와 BUY/HOLD/AVOID 추천을 제공합니다.
+  네이버 금융 데이터를 사용하며, 프롬프트에 명시된 엄격한 우선순위(Financial > News > Chart)와 가중치를 따릅니다.
+metadata:
+  author: saebyeok-im
+  category: General
+  tags:
+  - general
+  - equity
+  - analyst
+  source: clawhub-community
+  clawhub_slug: equity-analyst
+  clawhub_path: saebyeok-im/equity-analyst
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Equity Analyst
+
+    # Source: ClawHub community skill by saebyeok-im
+
+    # Install: clawhub install equity-analyst
+
+    # Path: saebyeok-im/equity-analyst
+
+
+    ## Description
+
+    전문 투자 분석가 AI로, 한국 주식 종목의 재무제표, 뉴스, 차트를 분석하여 Investment Attractiveness Score (0-100)와 BUY/HOLD/AVOID 추천을 제공합니다. 네이버 금융
+    데이터를 사용하며, 프롬프트에 명시된 엄격한 우선순위(Financial > News > Chart)와 가중치를 따릅니다.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data.json
+
+    - data_utf8.json
+
+    - skill.yaml
+
+    - references/framework.md
+
+    - scripts/analyze.py
+
+    - scripts/daily_popular_report.py
+
+    - scripts/morning_report.py
+
+    - scripts/quick_report.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install equity-analyst
+
+    ```'
+examples:
+- description: Install Equity Analyst from ClawHub
+  usage: clawhub install equity-analyst
+schema_version: '1.0'

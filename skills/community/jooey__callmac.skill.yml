@@ -1,0 +1,71 @@
+name: callmac
+title: Callmac
+version: 0.1.0
+description: Remote voice control for Mac from mobile devices using commands like /callmac or /voice. Broadcast announcements,
+  play alarms, tell stories, wake up kids - all triggered from Telegram/WhatsApp messages. Uses edge-tts with mixed Chinese/English
+  support, local playback, loops, and volume control. | 从移
+metadata:
+  author: jooey
+  category: Social Media
+  tags:
+  - social-media
+  - callmac
+  source: clawhub-community
+  clawhub_slug: callmac
+  clawhub_path: jooey/callmac
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Callmac
+
+    # Source: ClawHub community skill by jooey
+
+    # Install: clawhub install callmac
+
+    # Path: jooey/callmac
+
+
+    ## Description
+
+    Remote voice control for Mac from mobile devices using commands like /callmac or /voice. Broadcast announcements, play
+    alarms, tell stories, wake up kids - all triggered from Telegram/WhatsApp messages. Uses edge-tts with mixed Chinese/English
+    support, local playback, loops, and volume control. | 从移
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/EXAMPLES.md
+
+    - references/INSTALLATION.md
+
+    - references/VOICES.md
+
+    - scripts/generate_tts.py
+
+    - scripts/merge_audio.py
+
+    - scripts/play_audio.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install callmac
+
+    ```'
+examples:
+- description: Install Callmac from ClawHub
+  usage: clawhub install callmac
+schema_version: '1.0'

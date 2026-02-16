@@ -1,0 +1,73 @@
+name: lens
+title: LENS
+version: 0.6.3
+description: Use when you need your agent to see the world through your LENS. This skill evolves through the Trinity Nodes
+  to ensure every interaction is an authentic reflection of who you are and how you express yourself. Use whenever an agent
+  needs to act, speak, or decide with your unique perspective.
+metadata:
+  author: capachow
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - lens
+  source: clawhub-community
+  clawhub_slug: lens
+  clawhub_path: capachow/lens
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LENS
+
+    # Source: ClawHub community skill by capachow
+
+    # Install: clawhub install lens
+
+    # Path: capachow/lens
+
+
+    ## Description
+
+    Use when you need your agent to see the world through your LENS. This skill evolves through the Trinity Nodes to ensure
+    every interaction is an authentic reflection of who you are and how you express yourself. Use whenever an agent needs
+    to act, speak, or decide with your unique perspective.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - prompts/distillation.md
+
+    - prompts/interview.md
+
+    - references/alignment-scales.md
+
+    - references/resolve-protocol.md
+
+    - references/trinity-definitions.md
+
+    - scripts/bootstrap.js
+
+    - scripts/templates/AXIOM.md
+
+    - scripts/templates/ETHOS.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lens
+
+    ```'
+examples:
+- description: Install LENS from ClawHub
+  usage: clawhub install lens
+schema_version: '1.0'

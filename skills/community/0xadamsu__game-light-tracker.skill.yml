@@ -1,0 +1,59 @@
+name: game-light-tracker
+title: Sports Game Light Tracker
+version: 1.0.0
+description: Track live NFL, NBA, NHL, or MLB games and automatically change Hue light colors based on which team is leading.
+  Use when user wants to sync smart lights with live sports scores for visual game tracking. Supports NFL, NBA, NHL, and MLB
+  games with customizable team colors.
+metadata:
+  author: 0xadamsu
+  category: Gaming & Entertainment
+  tags:
+  - gaming-entertainment
+  - game
+  - light
+  - tracker
+  source: clawhub-community
+  clawhub_slug: game-light-tracker
+  clawhub_path: 0xadamsu/game-light-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sports Game Light Tracker
+
+    # Source: ClawHub community skill by 0xadamsu
+
+    # Install: clawhub install game-light-tracker
+
+    # Path: 0xadamsu/game-light-tracker
+
+
+    ## Description
+
+    Track live NFL, NBA, NHL, or MLB games and automatically change Hue light colors based on which team is leading. Use when
+    user wants to sync smart lights with live sports scores for visual game tracking. Supports NFL, NBA, NHL, and MLB games
+    with customizable team colors.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install game-light-tracker
+
+    ```'
+examples:
+- description: Install Sports Game Light Tracker from ClawHub
+  usage: clawhub install game-light-tracker
+schema_version: '1.0'

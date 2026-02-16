@@ -1,0 +1,70 @@
+name: ngrok-unofficial-webhook-skill
+title: Ngrok Unofficial Webhook Skill
+version: 0.1.4
+description: Start an ngrok tunnel to receive incoming webhooks and process them via the LLM. Use when the user asks to listen
+  for webhooks, set up a webhook endpoint, start ngrok, or when another skill (like Zoom RTMS Meeting Assistant) needs a public
+  webhook URL. Receives webhook payloads and lets the LLM deci
+metadata:
+  author: tanchunsiong
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - ngrok
+  - unofficial
+  - webhook
+  - skill
+  source: clawhub-community
+  clawhub_slug: ngrok-unofficial-webhook-skill
+  clawhub_path: tanchunsiong/ngrok-unofficial-webhook-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ngrok Unofficial Webhook Skill
+
+    # Source: ClawHub community skill by tanchunsiong
+
+    # Install: clawhub install ngrok-unofficial-webhook-skill
+
+    # Path: tanchunsiong/ngrok-unofficial-webhook-skill
+
+
+    ## Description
+
+    Start an ngrok tunnel to receive incoming webhooks and process them via the LLM. Use when the user asks to listen for
+    webhooks, set up a webhook endpoint, start ngrok, or when another skill (like Zoom RTMS Meeting Assistant) needs a public
+    webhook URL. Receives webhook payloads and lets the LLM deci
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - skill.json
+
+    - scripts/webhook-server.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ngrok-unofficial-webhook-skill
+
+    ```'
+examples:
+- description: Install Ngrok Unofficial Webhook Skill from ClawHub
+  usage: clawhub install ngrok-unofficial-webhook-skill
+schema_version: '1.0'

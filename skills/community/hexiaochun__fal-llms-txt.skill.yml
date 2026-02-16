@@ -1,0 +1,55 @@
+name: fal-llms-txt
+title: fal-llms-txt
+version: 1.0.0
+description: 获取 fal.ai 模型系列的所有变体及其 llms.txt 链接。当用户提供 fal.ai 模型链接并要求获取 llms.txt、查看模型文档、或查看模型变体时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - fal
+  - llms
+  - txt
+  source: clawhub-community
+  clawhub_slug: fal-llms-txt
+  clawhub_path: hexiaochun/fal-llms-txt
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# fal-llms-txt
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install fal-llms-txt
+
+    # Path: hexiaochun/fal-llms-txt
+
+
+    ## Description
+
+    获取 fal.ai 模型系列的所有变体及其 llms.txt 链接。当用户提供 fal.ai 模型链接并要求获取 llms.txt、查看模型文档、或查看模型变体时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fal-llms-txt
+
+    ```'
+examples:
+- description: Install fal-llms-txt from ClawHub
+  usage: clawhub install fal-llms-txt
+schema_version: '1.0'

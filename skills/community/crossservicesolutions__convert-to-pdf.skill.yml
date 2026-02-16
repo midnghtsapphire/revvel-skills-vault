@@ -1,0 +1,64 @@
+name: convert-to-pdf
+title: Convert to PDF
+version: 1.0.0
+description: Convert one or multiple documents to PDF by uploading them to Cross-Service-Solutions, polling until completion,
+  then returning download URL(s) for the converted PDF(s) (or a ZIP if multiple).
+metadata:
+  author: crossservicesolutions
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - convert
+  - pdf
+  source: clawhub-community
+  clawhub_slug: convert-to-pdf
+  clawhub_path: crossservicesolutions/convert-to-pdf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Convert to PDF
+
+    # Source: ClawHub community skill by crossservicesolutions
+
+    # Install: clawhub install convert-to-pdf
+
+    # Path: crossservicesolutions/convert-to-pdf
+
+
+    ## Description
+
+    Convert one or multiple documents to PDF by uploading them to Cross-Service-Solutions, polling until completion, then
+    returning download URL(s) for the converted PDF(s) (or a ZIP if multiple).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - examples/request.json
+
+    - scripts/convert-to-pdf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install convert-to-pdf
+
+    ```'
+examples:
+- description: Install Convert to PDF from ClawHub
+  usage: clawhub install convert-to-pdf
+schema_version: '1.0'

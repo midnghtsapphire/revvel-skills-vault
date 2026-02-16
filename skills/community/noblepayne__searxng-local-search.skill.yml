@@ -1,0 +1,59 @@
+name: searxng-web-search
+title: Searxng Web Search
+version: 0.1.0
+description: Search the web using SearXNG. Use when you need current information, research topics, find documentation, verify
+  facts, or look up anything beyond your knowledge. Returns ranked results with titles, URLs, and content snippets.
+metadata:
+  author: noblepayne
+  category: Search & Research
+  tags:
+  - search-research
+  - searxng
+  - web
+  - search
+  source: clawhub-community
+  clawhub_slug: searxng-local-search
+  clawhub_path: noblepayne/searxng-local-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Searxng Web Search
+
+    # Source: ClawHub community skill by noblepayne
+
+    # Install: clawhub install searxng-local-search
+
+    # Path: noblepayne/searxng-local-search
+
+
+    ## Description
+
+    Search the web using SearXNG. Use when you need current information, research topics, find documentation, verify facts,
+    or look up anything beyond your knowledge. Returns ranked results with titles, URLs, and content snippets.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install searxng-local-search
+
+    ```'
+examples:
+- description: Install Searxng Web Search from ClawHub
+  usage: clawhub install searxng-local-search
+schema_version: '1.0'

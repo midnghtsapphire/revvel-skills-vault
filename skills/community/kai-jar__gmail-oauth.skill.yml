@@ -1,0 +1,58 @@
+name: gmail-oauth
+title: Gmail OAuth Setup
+version: 1.0.0
+description: Set up Gmail API access via gog CLI with manual OAuth flow. Use when setting up Gmail integration, renewing expired
+  OAuth tokens, or troubleshooting Gmail authentication on headless servers.
+metadata:
+  author: kai-jar
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - gmail
+  - oauth
+  source: clawhub-community
+  clawhub_slug: gmail-oauth
+  clawhub_path: kai-jar/gmail-oauth
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Gmail OAuth Setup
+
+    # Source: ClawHub community skill by kai-jar
+
+    # Install: clawhub install gmail-oauth
+
+    # Path: kai-jar/gmail-oauth
+
+
+    ## Description
+
+    Set up Gmail API access via gog CLI with manual OAuth flow. Use when setting up Gmail integration, renewing expired OAuth
+    tokens, or troubleshooting Gmail authentication on headless servers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/gmail-auth.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gmail-oauth
+
+    ```'
+examples:
+- description: Install Gmail OAuth Setup from ClawHub
+  usage: clawhub install gmail-oauth
+schema_version: '1.0'

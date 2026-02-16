@@ -1,0 +1,57 @@
+name: morning-email-rollup
+title: Morning Email Rollup
+version: 2.1.0
+description: Daily morning rollup of important emails and calendar events at 8am with AI-generated summaries
+metadata:
+  author: am-will
+  category: Communication
+  tags:
+  - communication
+  - morning
+  - email
+  - rollup
+  source: clawhub-community
+  clawhub_slug: morning-email-rollup
+  clawhub_path: am-will/morning-email-rollup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Morning Email Rollup
+
+    # Source: ClawHub community skill by am-will
+
+    # Install: clawhub install morning-email-rollup
+
+    # Path: am-will/morning-email-rollup
+
+
+    ## Description
+
+    Daily morning rollup of important emails and calendar events at 8am with AI-generated summaries
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - rollup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install morning-email-rollup
+
+    ```'
+examples:
+- description: Install Morning Email Rollup from ClawHub
+  usage: clawhub install morning-email-rollup
+schema_version: '1.0'

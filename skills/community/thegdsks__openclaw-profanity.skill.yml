@@ -1,0 +1,56 @@
+name: openclaw-profanity
+title: OpenClaw Profanity Plugin
+version: 1.0.0
+description: Content moderation plugin for OpenClaw/Moltbot AI agents. Use when building chatbots that need profanity filtering,
+  moderating user messages in Discord/Slack/Telegram bots, or adding content moderation to OpenClaw agents.
+metadata:
+  author: thegdsks
+  category: Social Media
+  tags:
+  - social-media
+  - openclaw
+  - profanity
+  source: clawhub-community
+  clawhub_slug: openclaw-profanity
+  clawhub_path: thegdsks/openclaw-profanity
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Profanity Plugin
+
+    # Source: ClawHub community skill by thegdsks
+
+    # Install: clawhub install openclaw-profanity
+
+    # Path: thegdsks/openclaw-profanity
+
+
+    ## Description
+
+    Content moderation plugin for OpenClaw/Moltbot AI agents. Use when building chatbots that need profanity filtering, moderating
+    user messages in Discord/Slack/Telegram bots, or adding content moderation to OpenClaw agents.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-profanity
+
+    ```'
+examples:
+- description: Install OpenClaw Profanity Plugin from ClawHub
+  usage: clawhub install openclaw-profanity
+schema_version: '1.0'

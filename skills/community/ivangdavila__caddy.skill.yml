@@ -1,0 +1,53 @@
+name: caddy
+title: Caddy
+version: 1.0.0
+description: Configure Caddy as a reverse proxy with automatic HTTPS and simple Caddyfile syntax.
+metadata:
+  author: ivangdavila
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - caddy
+  source: clawhub-community
+  clawhub_slug: caddy
+  clawhub_path: ivangdavila/caddy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Caddy
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install caddy
+
+    # Path: ivangdavila/caddy
+
+
+    ## Description
+
+    Configure Caddy as a reverse proxy with automatic HTTPS and simple Caddyfile syntax.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install caddy
+
+    ```'
+examples:
+- description: Install Caddy from ClawHub
+  usage: clawhub install caddy
+schema_version: '1.0'

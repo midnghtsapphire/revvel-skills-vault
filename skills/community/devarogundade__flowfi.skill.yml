@@ -1,0 +1,62 @@
+name: flowfi-openclaw
+title: FlowFi
+version: 1.0.0
+description: Interact with FlowFi API from OpenClaw agents using Bearer token authentication; create/read/update workflows,
+  deploy, and lifecycle actions. Use when the agent must call FlowFi backend for workflows or automation.
+metadata:
+  author: devarogundade
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - flowfi
+  - openclaw
+  source: clawhub-community
+  clawhub_slug: flowfi
+  clawhub_path: devarogundade/flowfi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# FlowFi
+
+    # Source: ClawHub community skill by devarogundade
+
+    # Install: clawhub install flowfi
+
+    # Path: devarogundade/flowfi
+
+
+    ## Description
+
+    Interact with FlowFi API from OpenClaw agents using Bearer token authentication; create/read/update workflows, deploy,
+    and lifecycle actions. Use when the agent must call FlowFi backend for workflows or automation.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - nodes.md
+
+    - reference.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flowfi
+
+    ```'
+examples:
+- description: Install FlowFi from ClawHub
+  usage: clawhub install flowfi
+schema_version: '1.0'

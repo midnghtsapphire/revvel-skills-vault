@@ -1,0 +1,54 @@
+name: hk-stock-trending
+title: Hk Stock Trending
+version: 1.0.0
+description: Get daily trending Hong Kong stocks with market analysis
+metadata:
+  author: snowshadow
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - stock
+  - trending
+  source: clawhub-community
+  clawhub_slug: hk-stock-trending
+  clawhub_path: snowshadow/hk-stock-trending
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hk Stock Trending
+
+    # Source: ClawHub community skill by snowshadow
+
+    # Install: clawhub install hk-stock-trending
+
+    # Path: snowshadow/hk-stock-trending
+
+
+    ## Description
+
+    Get daily trending Hong Kong stocks with market analysis
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hk-stock-trending
+
+    ```'
+examples:
+- description: Install Hk Stock Trending from ClawHub
+  usage: clawhub install hk-stock-trending
+schema_version: '1.0'

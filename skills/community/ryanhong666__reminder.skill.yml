@@ -1,0 +1,59 @@
+name: reminder
+title: Reminder
+version: 0.1.1
+description: 'Natural-language reminder secretary: capture events into git-synced workspace (data/logic separated), schedule
+  Telegram reminders via OpenClaw cron, and answer "what''s coming up" queries. Use when user mentions meetings, birthdays,
+  deadlines, or asks for schedule/plans.'
+metadata:
+  author: ryanhong666
+  category: Social Media
+  tags:
+  - social-media
+  - reminder
+  source: clawhub-community
+  clawhub_slug: reminder
+  clawhub_path: ryanhong666/reminder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reminder
+
+    # Source: ClawHub community skill by ryanhong666
+
+    # Install: clawhub install reminder
+
+    # Path: ryanhong666/reminder
+
+
+    ## Description
+
+    Natural-language reminder secretary: capture events into git-synced workspace (data/logic separated), schedule Telegram
+    reminders via OpenClaw cron, and answer "what''s coming up" queries. Use when user mentions meetings, birthdays, deadlines,
+    or asks for schedule/plans.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/events.template.yml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reminder
+
+    ```'
+examples:
+- description: Install Reminder from ClawHub
+  usage: clawhub install reminder
+schema_version: '1.0'

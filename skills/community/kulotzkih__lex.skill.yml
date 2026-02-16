@@ -1,0 +1,36 @@
+name: warden-agent-builder
+title: lex
+version: 1.0.0
+description: '"Build original LangGraph agents for Warden Protocol and prepare them for publishing in Warden Studio. Use this
+  skill when users want to: (1) Create new Warden agents (not community examples), (2) Build LangGraph-based crypto/Web3 agents,
+  (3) Deploy agents via LangSmith Deployments or custom infra, '
+metadata:
+  author: kulotzkih
+  category: Development & Coding
+  tags:
+  - development-coding
+  - warden
+  - agent
+  - builder
+  source: clawhub-community
+  clawhub_slug: lex
+  clawhub_path: kulotzkih/lex
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# lex\n# Source: ClawHub community skill by kulotzkih\n# Install: clawhub install lex\n# Path: kulotzkih/lex\n\
+    \n## Description\n\"Build original LangGraph agents for Warden Protocol and prepare them for publishing in Warden Studio.\
+    \ Use this skill when users want to: (1) Create new Warden agents (not community examples), (2) Build LangGraph-based\
+    \ crypto/Web3 agents, (3) Deploy agents via LangSmith Deployments or custom infra, \n\n## Files\n- README.md\n- SKILL.md\n\
+    - _meta.json\n- assets/example-configs.md\n- references/deployment-guide.md\n- references/installation-guide.md\n- references/langgraph-patterns.md\n\
+    - references/quick-reference.md\n- scripts/init-agent.py\n- scripts/test-agent.py\n\n## Installation\n```bash\nclawhub\
+    \ install lex\n```"
+examples:
+- description: Install lex from ClawHub
+  usage: clawhub install lex
+schema_version: '1.0'

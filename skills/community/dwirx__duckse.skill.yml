@@ -1,0 +1,56 @@
+name: web-search
+title: Duckse
+version: 0.1.0
+description: This skill should be used when users need to search the web for information, find current content, look up news
+  articles, search for images, or find videos. It uses duckse (DDGS-based CLI) to return clean results in pretty text or JSON.
+metadata:
+  author: dwirx
+  category: Search & Research
+  tags:
+  - search-research
+  - web
+  - search
+  source: clawhub-community
+  clawhub_slug: duckse
+  clawhub_path: dwirx/duckse
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Duckse
+
+    # Source: ClawHub community skill by dwirx
+
+    # Install: clawhub install duckse
+
+    # Path: dwirx/duckse
+
+
+    ## Description
+
+    This skill should be used when users need to search the web for information, find current content, look up news articles,
+    search for images, or find videos. It uses duckse (DDGS-based CLI) to return clean results in pretty text or JSON.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install duckse
+
+    ```'
+examples:
+- description: Install Duckse from ClawHub
+  usage: clawhub install duckse
+schema_version: '1.0'

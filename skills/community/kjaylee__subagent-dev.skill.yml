@@ -1,0 +1,56 @@
+name: subagent-dev
+title: Subagent Dev
+version: 1.0.0
+description: Execute implementation plans using fresh subagents per task with two-stage review (spec compliance + code quality).
+  Use when executing multi-task plans with independent work units. Enhances ralph-loop methodology.
+metadata:
+  author: kjaylee
+  category: Development & Coding
+  tags:
+  - development-coding
+  - subagent
+  - dev
+  source: clawhub-community
+  clawhub_slug: subagent-dev
+  clawhub_path: kjaylee/subagent-dev
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Subagent Dev
+
+    # Source: ClawHub community skill by kjaylee
+
+    # Install: clawhub install subagent-dev
+
+    # Path: kjaylee/subagent-dev
+
+
+    ## Description
+
+    Execute implementation plans using fresh subagents per task with two-stage review (spec compliance + code quality). Use
+    when executing multi-task plans with independent work units. Enhances ralph-loop methodology.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install subagent-dev
+
+    ```'
+examples:
+- description: Install Subagent Dev from ClawHub
+  usage: clawhub install subagent-dev
+schema_version: '1.0'

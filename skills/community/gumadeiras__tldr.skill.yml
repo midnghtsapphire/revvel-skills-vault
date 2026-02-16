@@ -1,0 +1,53 @@
+name: tldr
+title: tldr
+version: 1.0.1
+description: Simplified man pages from tldr-pages. Use this to quickly understand CLI tools.
+metadata:
+  author: gumadeiras
+  category: General
+  tags:
+  - general
+  - tldr
+  source: clawhub-community
+  clawhub_slug: tldr
+  clawhub_path: gumadeiras/tldr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# tldr
+
+    # Source: ClawHub community skill by gumadeiras
+
+    # Install: clawhub install tldr
+
+    # Path: gumadeiras/tldr
+
+
+    ## Description
+
+    Simplified man pages from tldr-pages. Use this to quickly understand CLI tools.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tldr
+
+    ```'
+examples:
+- description: Install tldr from ClawHub
+  usage: clawhub install tldr
+schema_version: '1.0'

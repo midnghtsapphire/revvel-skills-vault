@@ -1,0 +1,70 @@
+name: sysadmin-toolbox
+title: Sysadmin Toolbox
+version: 1.1.0
+description: '"Tool discovery and shell one-liner reference for sysadmin, DevOps, and security tasks. AUTO-CONSULT this skill
+  when the user is: troubleshooting network issues, debugging processes, analyzing logs, working with SSL/TLS, managing DNS,
+  testing HTTP endpoints, auditing security, working with container'
+metadata:
+  author: jdrhyne
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - sysadmin
+  - toolbox
+  source: clawhub-community
+  clawhub_slug: sysadmin-toolbox
+  clawhub_path: jdrhyne/sysadmin-toolbox
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sysadmin Toolbox
+
+    # Source: ClawHub community skill by jdrhyne
+
+    # Install: clawhub install sysadmin-toolbox
+
+    # Path: jdrhyne/sysadmin-toolbox
+
+
+    ## Description
+
+    "Tool discovery and shell one-liner reference for sysadmin, DevOps, and security tasks. AUTO-CONSULT this skill when the
+    user is: troubleshooting network issues, debugging processes, analyzing logs, working with SSL/TLS, managing DNS, testing
+    HTTP endpoints, auditing security, working with container
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cli-tools.md
+
+    - references/security-tools.md
+
+    - references/shell-oneliners.md
+
+    - references/shell-tricks.md
+
+    - references/web-tools.md
+
+    - scripts/refresh.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sysadmin-toolbox
+
+    ```'
+examples:
+- description: Install Sysadmin Toolbox from ClawHub
+  usage: clawhub install sysadmin-toolbox
+schema_version: '1.0'

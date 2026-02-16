@@ -1,0 +1,63 @@
+name: youtrack
+title: YouTrack Project Management
+version: 1.0.1
+description: Interact with YouTrack project management system via REST API. Read projects and issues, create tasks, generate
+  invoices from time tracking data, and manage knowledge base articles. Use for reading projects and work items, creating
+  or updating issues, generating client invoices from time tracking, a
+metadata:
+  author: digisal
+  category: Development & Coding
+  tags:
+  - development-coding
+  - youtrack
+  source: clawhub-community
+  clawhub_slug: youtrack-digisal
+  clawhub_path: digisal/youtrack-digisal
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# YouTrack Project Management
+
+    # Source: ClawHub community skill by digisal
+
+    # Install: clawhub install youtrack-digisal
+
+    # Path: digisal/youtrack-digisal
+
+
+    ## Description
+
+    Interact with YouTrack project management system via REST API. Read projects and issues, create tasks, generate invoices
+    from time tracking data, and manage knowledge base articles. Use for reading projects and work items, creating or updating
+    issues, generating client invoices from time tracking, a
+
+
+    ## Files
+
+    - REFERENCES.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/invoice_generator.py
+
+    - scripts/youtrack_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install youtrack-digisal
+
+    ```'
+examples:
+- description: Install YouTrack Project Management from ClawHub
+  usage: clawhub install youtrack-digisal
+schema_version: '1.0'

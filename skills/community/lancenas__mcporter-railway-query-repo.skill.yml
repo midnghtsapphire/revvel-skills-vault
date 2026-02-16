@@ -1,0 +1,75 @@
+name: mcporter-railway-query
+title: Mcporter Railway Query Repo
+version: 1.0.2
+description: Query and book Chinese railway tickets via 12306 using mcporter CLI. Use when user wants to search for G/D/C
+  train tickets, check train schedules, query seat availability, or plan rail travel between Chinese cities. Supports filtering
+  by date, time range, train type, and sorting results.
+metadata:
+  author: lancenas
+  category: Search & Research
+  tags:
+  - search-research
+  - mcporter
+  - railway
+  - query
+  source: clawhub-community
+  clawhub_slug: mcporter-railway-query-repo
+  clawhub_path: lancenas/mcporter-railway-query-repo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Mcporter Railway Query Repo
+
+    # Source: ClawHub community skill by lancenas
+
+    # Install: clawhub install mcporter-railway-query-repo
+
+    # Path: lancenas/mcporter-railway-query-repo
+
+
+    ## Description
+
+    Query and book Chinese railway tickets via 12306 using mcporter CLI. Use when user wants to search for G/D/C train tickets,
+    check train schedules, query seat availability, or plan rail travel between Chinese cities. Supports filtering by date,
+    time range, train type, and sorting results.
+
+
+    ## Files
+
+    - README.md
+
+    - README_zh.md
+
+    - SECURITY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/query-examples.md
+
+    - references/station-codes.md
+
+    - scripts/get-station-code.sh
+
+    - scripts/query-afternoon.sh
+
+    - scripts/query-tickets.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mcporter-railway-query-repo
+
+    ```'
+examples:
+- description: Install Mcporter Railway Query Repo from ClawHub
+  usage: clawhub install mcporter-railway-query-repo
+schema_version: '1.0'

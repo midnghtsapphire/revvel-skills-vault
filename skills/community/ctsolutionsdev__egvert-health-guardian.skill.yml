@@ -1,0 +1,64 @@
+name: health-guardian
+title: Health Guardian
+version: 1.0.0
+description: Proactive health monitoring for AI agents. Apple Health integration, pattern detection, anomaly alerts. Built
+  for agents caring for humans with chronic conditions.
+metadata:
+  author: ctsolutionsdev
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - health
+  - guardian
+  source: clawhub-community
+  clawhub_slug: egvert-health-guardian
+  clawhub_path: ctsolutionsdev/egvert-health-guardian
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Health Guardian
+
+    # Source: ClawHub community skill by ctsolutionsdev
+
+    # Install: clawhub install egvert-health-guardian
+
+    # Path: ctsolutionsdev/egvert-health-guardian
+
+
+    ## Description
+
+    Proactive health monitoring for AI agents. Apple Health integration, pattern detection, anomaly alerts. Built for agents
+    caring for humans with chronic conditions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - package.json
+
+    - scripts/analyze.py
+
+    - scripts/import_health.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install egvert-health-guardian
+
+    ```'
+examples:
+- description: Install Health Guardian from ClawHub
+  usage: clawhub install egvert-health-guardian
+schema_version: '1.0'

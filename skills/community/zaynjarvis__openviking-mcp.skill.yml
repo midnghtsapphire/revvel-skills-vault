@@ -1,0 +1,58 @@
+name: openviking-mcp
+title: OpenViking MCP Server
+version: 0.1.2
+description: Set up and run the OpenViking MCP server for RAG capabilities. Use when users need semantic search and document
+  Q&A exposed through Model Context Protocol for Claude Desktop/CLI or other MCP clients. Triggers on requests about OpenViking
+  MCP, RAG servers, or semantic search MCP setup.
+metadata:
+  author: zaynjarvis
+  category: Search & Research
+  tags:
+  - search-research
+  - openviking
+  - mcp
+  source: clawhub-community
+  clawhub_slug: openviking-mcp
+  clawhub_path: zaynjarvis/openviking-mcp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenViking MCP Server
+
+    # Source: ClawHub community skill by zaynjarvis
+
+    # Install: clawhub install openviking-mcp
+
+    # Path: zaynjarvis/openviking-mcp
+
+
+    ## Description
+
+    Set up and run the OpenViking MCP server for RAG capabilities. Use when users need semantic search and document Q&A exposed
+    through Model Context Protocol for Claude Desktop/CLI or other MCP clients. Triggers on requests about OpenViking MCP,
+    RAG servers, or semantic search MCP setup.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openviking-mcp
+
+    ```'
+examples:
+- description: Install OpenViking MCP Server from ClawHub
+  usage: clawhub install openviking-mcp
+schema_version: '1.0'

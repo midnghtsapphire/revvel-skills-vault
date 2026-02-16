@@ -1,0 +1,60 @@
+name: sabnzbd
+title: Sabnzbd
+version: 1.0.0
+description: Manage Usenet downloads with SABnzbd. Use when the user asks to "check SABnzbd", "list NZB queue", "add NZB",
+  "pause downloads", "resume downloads", "SABnzbd status", "Usenet queue", "NZB history", or mentions SABnzbd/sab download
+  management.
+metadata:
+  author: jmagar
+  category: Marketing & Business
+  tags:
+  - marketing-business
+  - sabnzbd
+  source: clawhub-community
+  clawhub_slug: sabnzbd
+  clawhub_path: jmagar/sabnzbd
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sabnzbd
+
+    # Source: ClawHub community skill by jmagar
+
+    # Install: clawhub install sabnzbd
+
+    # Path: jmagar/sabnzbd
+
+
+    ## Description
+
+    Manage Usenet downloads with SABnzbd. Use when the user asks to "check SABnzbd", "list NZB queue", "add NZB", "pause downloads",
+    "resume downloads", "SABnzbd status", "Usenet queue", "NZB history", or mentions SABnzbd/sab download management.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sab-api.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sabnzbd
+
+    ```'
+examples:
+- description: Install Sabnzbd from ClawHub
+  usage: clawhub install sabnzbd
+schema_version: '1.0'

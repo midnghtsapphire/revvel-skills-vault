@@ -1,0 +1,53 @@
+name: padel
+title: Padel
+version: 0.1.0
+description: Check padel court availability and manage bookings via the padel CLI.
+metadata:
+  author: local
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - padel
+  source: clawhub-community
+  clawhub_slug: padel
+  clawhub_path: local/padel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Padel
+
+    # Source: ClawHub community skill by local
+
+    # Install: clawhub install padel
+
+    # Path: local/padel
+
+
+    ## Description
+
+    Check padel court availability and manage bookings via the padel CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install padel
+
+    ```'
+examples:
+- description: Install Padel from ClawHub
+  usage: clawhub install padel
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: dataset-finder
+title: Dataset Finder
+version: 0.1.0
+description: '"Use this skill when users need to search for datasets, download data files, or explore data repositories. Triggers
+  include: requests to \"find datasets\", \"search for data\", \"download dataset from Kaggle\", \"get data from Hugging Face\",
+  \"find ML datasets\", or mentions of data repositories li'
+metadata:
+  author: anisafifi
+  category: Search & Research
+  tags:
+  - search-research
+  - dataset
+  - finder
+  source: clawhub-community
+  clawhub_slug: dataset-finder
+  clawhub_path: anisafifi/dataset-finder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dataset Finder
+
+    # Source: ClawHub community skill by anisafifi
+
+    # Install: clawhub install dataset-finder
+
+    # Path: anisafifi/dataset-finder
+
+
+    ## Description
+
+    "Use this skill when users need to search for datasets, download data files, or explore data repositories. Triggers include:
+    requests to \"find datasets\", \"search for data\", \"download dataset from Kaggle\", \"get data from Hugging Face\",
+    \"find ML datasets\", or mentions of data repositories li
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/readme.md
+
+    - scripts/dataset.py
+
+    - scripts/requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dataset-finder
+
+    ```'
+examples:
+- description: Install Dataset Finder from ClawHub
+  usage: clawhub install dataset-finder
+schema_version: '1.0'

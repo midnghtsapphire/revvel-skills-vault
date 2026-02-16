@@ -1,0 +1,42 @@
+name: code-simplifier
+title: Code Simplifier
+version: 1.0.0
+description: 'Code refinement expert that improves clarity, consistency, and maintainability while preserving exact functionality.
+  Use when simplifying complex code, cleaning up recently modified files, or refactoring for readability. Based on Anthropic''s
+  official code-simplifier pattern - never alters WHAT code '
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - code
+  - simplifier
+  - read
+  - edit
+  - glob
+  - grep
+  source: clawhub-community
+  clawhub_slug: sw-code-simplifier
+  clawhub_path: anton-abyzov/sw-code-simplifier
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Edit
+  - Glob
+  - Grep
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Code Simplifier\n# Source: ClawHub community skill by anton-abyzov\n# Install: clawhub install sw-code-simplifier\n\
+    # Path: anton-abyzov/sw-code-simplifier\n\n## Description\nCode refinement expert that improves clarity, consistency,\
+    \ and maintainability while preserving exact functionality. Use when simplifying complex code, cleaning up recently modified\
+    \ files, or refactoring for readability. Based on Anthropic's official code-simplifier pattern - never alters WHAT code\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n\n## Allowed Tools\nRead, Edit, Glob, Grep\n\n## Installation\n```bash\nclawhub\
+    \ install sw-code-simplifier\n```"
+examples:
+- description: Install Code Simplifier from ClawHub
+  usage: clawhub install sw-code-simplifier
+schema_version: '1.0'

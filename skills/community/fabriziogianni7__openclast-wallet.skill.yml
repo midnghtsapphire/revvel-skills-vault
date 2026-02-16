@@ -1,0 +1,56 @@
+name: openclast-wallet
+title: Openclast Wallet
+version: 1.0.0
+description: Guides the agent in Openclast/Openclaw wallet usage, approvals, and safety rules. Use when users ask about wallet
+  setup, balances, transactions, approvals, or key export.
+metadata:
+  author: fabriziogianni7
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - openclast
+  - wallet
+  source: clawhub-community
+  clawhub_slug: openclast-wallet
+  clawhub_path: fabriziogianni7/openclast-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclast Wallet
+
+    # Source: ClawHub community skill by fabriziogianni7
+
+    # Install: clawhub install openclast-wallet
+
+    # Path: fabriziogianni7/openclast-wallet
+
+
+    ## Description
+
+    Guides the agent in Openclast/Openclaw wallet usage, approvals, and safety rules. Use when users ask about wallet setup,
+    balances, transactions, approvals, or key export.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclast-wallet
+
+    ```'
+examples:
+- description: Install Openclast Wallet from ClawHub
+  usage: clawhub install openclast-wallet
+schema_version: '1.0'

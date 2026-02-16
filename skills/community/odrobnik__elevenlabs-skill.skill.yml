@@ -1,0 +1,71 @@
+name: elevenlabs
+title: ElevenLabs Skill
+version: 1.0.0
+description: Text-to-speech, sound effects, music generation, voice management, and quota checks via the ElevenLabs API. Use
+  when generating audio with ElevenLabs or managing voices.
+metadata:
+  author: odrobnik
+  category: Media & Content
+  tags:
+  - media-content
+  - elevenlabs
+  source: clawhub-community
+  clawhub_slug: elevenlabs-skill
+  clawhub_path: odrobnik/elevenlabs-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ElevenLabs Skill
+
+    # Source: ClawHub community skill by odrobnik
+
+    # Install: clawhub install elevenlabs-skill
+
+    # Path: odrobnik/elevenlabs-skill
+
+
+    ## Description
+
+    Text-to-speech, sound effects, music generation, voice management, and quota checks via the ElevenLabs API. Use when generating
+    audio with ElevenLabs or managing voices.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/dialogs.py
+
+    - scripts/music.py
+
+    - scripts/quota.py
+
+    - scripts/sfx.py
+
+    - scripts/speech.py
+
+    - scripts/voiceclone.py
+
+    - scripts/voices.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install elevenlabs-skill
+
+    ```'
+examples:
+- description: Install ElevenLabs Skill from ClawHub
+  usage: clawhub install elevenlabs-skill
+schema_version: '1.0'

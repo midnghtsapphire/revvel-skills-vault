@@ -1,0 +1,53 @@
+name: screenshot
+title: Screenshot
+version: 1.0.0
+description: Capture screens, windows, and regions across platforms with the right tools.
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - screenshot
+  source: clawhub-community
+  clawhub_slug: screenshot
+  clawhub_path: ivangdavila/screenshot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Screenshot
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install screenshot
+
+    # Path: ivangdavila/screenshot
+
+
+    ## Description
+
+    Capture screens, windows, and regions across platforms with the right tools.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install screenshot
+
+    ```'
+examples:
+- description: Install Screenshot from ClawHub
+  usage: clawhub install screenshot
+schema_version: '1.0'

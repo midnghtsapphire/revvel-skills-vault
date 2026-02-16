@@ -1,0 +1,54 @@
+name: golden_master
+title: Golden Master
+version: 1.0.2
+description: Track source-of-truth relationships between files — know when derived content becomes stale.
+metadata:
+  author: leegitw
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - golden
+  - master
+  source: clawhub-community
+  clawhub_slug: golden-master
+  clawhub_path: leegitw/golden-master
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Golden Master
+
+    # Source: ClawHub community skill by leegitw
+
+    # Install: clawhub install golden-master
+
+    # Path: leegitw/golden-master
+
+
+    ## Description
+
+    Track source-of-truth relationships between files — know when derived content becomes stale.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install golden-master
+
+    ```'
+examples:
+- description: Install Golden Master from ClawHub
+  usage: clawhub install golden-master
+schema_version: '1.0'

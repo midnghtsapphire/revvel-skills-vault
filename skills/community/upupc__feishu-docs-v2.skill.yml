@@ -1,0 +1,58 @@
+name: feishu-docs
+title: Feishu Docs
+version: 0.1.0
+description: 飞书文档管理工具，支持读取、创建、更新、删除飞书文档，导入本地文件为飞书文档，以及列出文件夹内容。用于在 Claude Code 中管理飞书云文档。
+metadata:
+  author: upupc
+  category: Development & Coding
+  tags:
+  - development-coding
+  - feishu
+  - docs
+  source: clawhub-community
+  clawhub_slug: feishu-docs-v2
+  clawhub_path: upupc/feishu-docs-v2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feishu Docs
+
+    # Source: ClawHub community skill by upupc
+
+    # Install: clawhub install feishu-docs-v2
+
+    # Path: upupc/feishu-docs-v2
+
+
+    ## Description
+
+    飞书文档管理工具，支持读取、创建、更新、删除飞书文档，导入本地文件为飞书文档，以及列出文件夹内容。用于在 Claude Code 中管理飞书云文档。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-docs-v2
+
+    ```'
+examples:
+- description: Install Feishu Docs from ClawHub
+  usage: clawhub install feishu-docs-v2
+schema_version: '1.0'

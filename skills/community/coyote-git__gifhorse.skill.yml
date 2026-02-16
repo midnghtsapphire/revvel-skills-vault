@@ -1,0 +1,55 @@
+name: gifhorse
+title: GifHorse
+version: 1.2.0
+description: Search video dialogue and create reaction GIFs with timed subtitles. Perfect for creating meme-worthy clips from
+  movies and TV shows.
+metadata:
+  author: coyote-git
+  category: Search & Research
+  tags:
+  - search-research
+  - gifhorse
+  source: clawhub-community
+  clawhub_slug: gifhorse
+  clawhub_path: coyote-git/gifhorse
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# GifHorse
+
+    # Source: ClawHub community skill by coyote-git
+
+    # Install: clawhub install gifhorse
+
+    # Path: coyote-git/gifhorse
+
+
+    ## Description
+
+    Search video dialogue and create reaction GIFs with timed subtitles. Perfect for creating meme-worthy clips from movies
+    and TV shows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install gifhorse
+
+    ```'
+examples:
+- description: Install GifHorse from ClawHub
+  usage: clawhub install gifhorse
+schema_version: '1.0'

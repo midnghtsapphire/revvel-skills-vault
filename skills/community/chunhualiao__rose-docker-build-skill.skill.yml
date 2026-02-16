@@ -1,0 +1,59 @@
+name: rose-docker-build
+title: Rose Docker Build
+version: 0.1.1
+description: Build the ROSE compiler in a Docker container using autotools or CMake. Use when setting up ROSE development
+  environment, building ROSE from source, or troubleshooting ROSE build issues. ROSE requires GCC 7-10 which most modern hosts
+  don't have, so Docker is the recommended approach.
+metadata:
+  author: chunhualiao
+  category: Development & Coding
+  tags:
+  - development-coding
+  - rose
+  - docker
+  - build
+  source: clawhub-community
+  clawhub_slug: rose-docker-build-skill
+  clawhub_path: chunhualiao/rose-docker-build-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Rose Docker Build
+
+    # Source: ClawHub community skill by chunhualiao
+
+    # Install: clawhub install rose-docker-build-skill
+
+    # Path: chunhualiao/rose-docker-build-skill
+
+
+    ## Description
+
+    Build the ROSE compiler in a Docker container using autotools or CMake. Use when setting up ROSE development environment,
+    building ROSE from source, or troubleshooting ROSE build issues. ROSE requires GCC 7-10 which most modern hosts don''t
+    have, so Docker is the recommended approach.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rose-docker-build-skill
+
+    ```'
+examples:
+- description: Install Rose Docker Build from ClawHub
+  usage: clawhub install rose-docker-build-skill
+schema_version: '1.0'

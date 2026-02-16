@@ -1,0 +1,67 @@
+name: bluesky
+title: bluesky
+version: 1.0.0
+description: '"Complete Bluesky CLI: post, reply, like, repost, follow, block, mute, search, threads, images. Everything you
+  need to engage on Bluesky from the terminal."'
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - bluesky
+  source: clawhub-community
+  clawhub_slug: bobagent-bluesky
+  clawhub_path: bobdevibecoder/bobagent-bluesky
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# bluesky
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-bluesky
+
+    # Path: bobdevibecoder/bobagent-bluesky
+
+
+    ## Description
+
+    "Complete Bluesky CLI: post, reply, like, repost, follow, block, mute, search, threads, images. Everything you need to
+    engage on Bluesky from the terminal."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/bsky.py
+
+    - tests/__init__.py
+
+    - tests/conftest.py
+
+    - tests/test_cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-bluesky
+
+    ```'
+examples:
+- description: Install bluesky from ClawHub
+  usage: clawhub install bobagent-bluesky
+schema_version: '1.0'

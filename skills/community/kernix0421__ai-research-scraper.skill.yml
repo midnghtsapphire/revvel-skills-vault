@@ -1,0 +1,70 @@
+name: ai-research-scraper
+title: Ai Research Scraper
+version: 1.8.14
+description: 用于抓取AI领域最新研究信息的技能，重点关注AI产品发展。从知名AI网站获取信息，提供简洁概括和链接，限制数据量以便快速阅读。
+metadata:
+  author: kernix0421
+  category: Search & Research
+  tags:
+  - search-research
+  - research
+  - scraper
+  source: clawhub-community
+  clawhub_slug: ai-research-scraper
+  clawhub_path: kernix0421/ai-research-scraper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ai Research Scraper
+
+    # Source: ClawHub community skill by kernix0421
+
+    # Install: clawhub install ai-research-scraper
+
+    # Path: kernix0421/ai-research-scraper
+
+
+    ## Description
+
+    用于抓取AI领域最新研究信息的技能，重点关注AI产品发展。从知名AI网站获取信息，提供简洁概括和链接，限制数据量以便快速阅读。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api_reference.md
+
+    - references/websites.txt
+
+    - scripts/baidu_translate.py
+
+    - scripts/baidu_translator.py
+
+    - scripts/final_scraper.py
+
+    - scripts/google_translator.py
+
+    - scripts/scraper.py
+
+    - scripts/simple_scraper.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-research-scraper
+
+    ```'
+examples:
+- description: Install Ai Research Scraper from ClawHub
+  usage: clawhub install ai-research-scraper
+schema_version: '1.0'

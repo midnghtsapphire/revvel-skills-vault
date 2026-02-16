@@ -1,0 +1,58 @@
+name: desktop-sandbox
+title: Desktop Sandbox
+version: 1.1.1
+description: A desktop sandbox lets OpenClaw run as natively as on a real OS, ensuring full functionality with safe isolation.Run
+  OpenClaw without breaking your PC.
+metadata:
+  author: atlascore-tech
+  category: General
+  tags:
+  - general
+  - desktop
+  - sandbox
+  source: clawhub-community
+  clawhub_slug: desktop-sandbox
+  clawhub_path: atlascore-tech/desktop-sandbox
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Desktop Sandbox
+
+    # Source: ClawHub community skill by atlascore-tech
+
+    # Install: clawhub install desktop-sandbox
+
+    # Path: atlascore-tech/desktop-sandbox
+
+
+    ## Description
+
+    A desktop sandbox lets OpenClaw run as natively as on a real OS, ensuring full functionality with safe isolation.Run OpenClaw
+    without breaking your PC.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/run_installer.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install desktop-sandbox
+
+    ```'
+examples:
+- description: Install Desktop Sandbox from ClawHub
+  usage: clawhub install desktop-sandbox
+schema_version: '1.0'

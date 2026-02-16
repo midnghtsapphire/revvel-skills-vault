@@ -1,0 +1,60 @@
+name: openclaw-search
+title: Intelligent Search Agent
+version: 1.0.1
+description: '"Intelligent search for agents. Multi-source retrieval with confidence scoring - web, academic, and Tavily in
+  one unified API."'
+metadata:
+  author: bowen-dotcom
+  category: Search & Research
+  tags:
+  - search-research
+  - openclaw
+  - search
+  source: clawhub-community
+  clawhub_slug: aisa-search-skill
+  clawhub_path: bowen-dotcom/aisa-search-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Intelligent Search Agent
+
+    # Source: ClawHub community skill by bowen-dotcom
+
+    # Install: clawhub install aisa-search-skill
+
+    # Path: bowen-dotcom/aisa-search-skill
+
+
+    ## Description
+
+    "Intelligent search for agents. Multi-source retrieval with confidence scoring - web, academic, and Tavily in one unified
+    API."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/search_client.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aisa-search-skill
+
+    ```'
+examples:
+- description: Install Intelligent Search Agent from ClawHub
+  usage: clawhub install aisa-search-skill
+schema_version: '1.0'

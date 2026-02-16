@@ -1,0 +1,37 @@
+name: openclaw_gemini
+title: ♊️ Gemini
+version: 1.0.0
+description: Gemini CLI for one-shot Q&A, summaries, and generation.
+metadata:
+  author: OpenClaw
+  category: Automation & Productivity
+  tags:
+  - openclaw
+  - bundled
+  - gemini
+  source: openclaw-bundled
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - gemini
+install:
+- id: brew
+  platform: all
+  method: brew
+  command: gemini-cli
+  label: Install Gemini CLI (brew)
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "---\nname: gemini\ndescription: Gemini CLI for one-shot Q&A, summaries, and generation.\nhomepage: https://ai.google.dev/\n\
+    metadata:\n  {\n    \"openclaw\":\n      {\n        \"emoji\": \"♊️\",\n        \"requires\": { \"bins\": [\"gemini\"\
+    ] },\n        \"install\":\n          [\n            {\n              \"id\": \"brew\",\n              \"kind\": \"brew\"\
+    ,\n              \"formula\": \"gemini-cli\",\n              \"bins\": [\"gemini\"],\n              \"label\": \"Install\
+    \ Gemini CLI (brew)\",\n            },\n          ],\n      },\n  }\n---\n\n# Gemini CLI\n\nUse Gemini in one-shot mode\
+    \ with a positional prompt (avoid interactive mode).\n\nQuick start\n\n- `gemini \"Answer this question...\"`\n- `gemini\
+    \ --model <name> \"Prompt...\"`\n- `gemini --output-format json \"Return JSON\"`\n\nExtensions\n\n- List: `gemini --list-extensions`\n\
+    - Manage: `gemini extensions <command>`\n\nNotes\n\n- If auth is required, run `gemini` once interactively and follow\
+    \ the login flow.\n- Avoid `--yolo` for safety.\n"
+examples: []
+schema_version: '1.0'

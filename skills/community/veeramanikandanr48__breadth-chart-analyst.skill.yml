@@ -1,0 +1,63 @@
+name: breadth-chart-analyst
+title: Breadth Chart Analyst
+version: 0.1.1
+description: This skill should be used when analyzing market breadth charts, specifically the S&P 500 Breadth Index (200-Day
+  MA based) and the US Stock Market Uptrend Stock Ratio charts. Use this skill when the user provides breadth chart images
+  for analysis, requests market breadth assessment, positioning strat
+metadata:
+  author: veeramanikandanr48
+  category: Media & Content
+  tags:
+  - media-content
+  - breadth
+  - chart
+  - analyst
+  source: clawhub-community
+  clawhub_slug: breadth-chart-analyst
+  clawhub_path: veeramanikandanr48/breadth-chart-analyst
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Breadth Chart Analyst
+
+    # Source: ClawHub community skill by veeramanikandanr48
+
+    # Install: clawhub install breadth-chart-analyst
+
+    # Path: veeramanikandanr48/breadth-chart-analyst
+
+
+    ## Description
+
+    This skill should be used when analyzing market breadth charts, specifically the S&P 500 Breadth Index (200-Day MA based)
+    and the US Stock Market Uptrend Stock Ratio charts. Use this skill when the user provides breadth chart images for analysis,
+    requests market breadth assessment, positioning strat
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/breadth_analysis_template.md
+
+    - references/breadth_chart_methodology.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install breadth-chart-analyst
+
+    ```'
+examples:
+- description: Install Breadth Chart Analyst from ClawHub
+  usage: clawhub install breadth-chart-analyst
+schema_version: '1.0'

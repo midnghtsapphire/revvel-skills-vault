@@ -1,0 +1,62 @@
+name: context-compression
+title: Agent-Skills-for-Context-Engineering
+version: 1.0.0
+description: This skill should be used when the user asks to "compress context", "summarize conversation history", "implement
+  compaction", "reduce token usage", or mentions context compression, structured summarization, tokens-per-task optimization,
+  or long-running agent sessions exceeding context limits.
+metadata:
+  author: leoyessi10-tech
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - context
+  - compression
+  source: clawhub-community
+  clawhub_slug: context-engineering
+  clawhub_path: leoyessi10-tech/context-engineering
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent-Skills-for-Context-Engineering
+
+    # Source: ClawHub community skill by leoyessi10-tech
+
+    # Install: clawhub install context-engineering
+
+    # Path: leoyessi10-tech/context-engineering
+
+
+    ## Description
+
+    This skill should be used when the user asks to "compress context", "summarize conversation history", "implement compaction",
+    "reduce token usage", or mentions context compression, structured summarization, tokens-per-task optimization, or long-running
+    agent sessions exceeding context limits.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/evaluation-framework.md
+
+    - scripts/compression_evaluator.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-engineering
+
+    ```'
+examples:
+- description: Install Agent-Skills-for-Context-Engineering from ClawHub
+  usage: clawhub install context-engineering
+schema_version: '1.0'

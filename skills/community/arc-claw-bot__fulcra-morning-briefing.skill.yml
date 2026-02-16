@@ -1,0 +1,63 @@
+name: fulcra-morning-briefing
+title: Fulcra Morning Briefing
+version: 1.0.0
+description: Compose a personalized morning briefing using sleep, biometrics, calendar, and weather data from the Fulcra Life
+  API. Adapts tone and detail to how your human actually slept.
+metadata:
+  author: arc-claw-bot
+  category: Development & Coding
+  tags:
+  - development-coding
+  - fulcra
+  - morning
+  - briefing
+  source: clawhub-community
+  clawhub_slug: fulcra-morning-briefing
+  clawhub_path: arc-claw-bot/fulcra-morning-briefing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fulcra Morning Briefing
+
+    # Source: ClawHub community skill by arc-claw-bot
+
+    # Install: clawhub install fulcra-morning-briefing
+
+    # Path: arc-claw-bot/fulcra-morning-briefing
+
+
+    ## Description
+
+    Compose a personalized morning briefing using sleep, biometrics, calendar, and weather data from the Fulcra Life API.
+    Adapts tone and detail to how your human actually slept.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - authorize_fulcra.py
+
+    - collect_briefing_data.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fulcra-morning-briefing
+
+    ```'
+examples:
+- description: Install Fulcra Morning Briefing from ClawHub
+  usage: clawhub install fulcra-morning-briefing
+schema_version: '1.0'

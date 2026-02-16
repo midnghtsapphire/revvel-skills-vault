@@ -1,0 +1,54 @@
+name: wacli
+title: WhatsApp
+version: 1.0.0
+description: Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user
+  chats).
+metadata:
+  author: zaycv
+  category: Search & Research
+  tags:
+  - search-research
+  - wacli
+  source: clawhub-community
+  clawhub_slug: whatsapp
+  clawhub_path: zaycv/whatsapp
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WhatsApp
+
+    # Source: ClawHub community skill by zaycv
+
+    # Install: clawhub install whatsapp
+
+    # Path: zaycv/whatsapp
+
+
+    ## Description
+
+    Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install whatsapp
+
+    ```'
+examples:
+- description: Install WhatsApp from ClawHub
+  usage: clawhub install whatsapp
+schema_version: '1.0'

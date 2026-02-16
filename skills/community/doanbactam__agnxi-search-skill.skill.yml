@@ -1,0 +1,58 @@
+name: agnxi-search
+title: Agent Skills Search
+version: 1.0.0
+description: The official search utility for Agnxi.com - The premier directory of AI Agent Tools, MCP Servers, and Skills.
+metadata:
+  author: doanbactam
+  category: Search & Research
+  tags:
+  - search-research
+  - agnxi
+  - search
+  source: clawhub-community
+  clawhub_slug: agnxi-search-skill
+  clawhub_path: doanbactam/agnxi-search-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Skills Search
+
+    # Source: ClawHub community skill by doanbactam
+
+    # Install: clawhub install agnxi-search-skill
+
+    # Path: doanbactam/agnxi-search-skill
+
+
+    ## Description
+
+    The official search utility for Agnxi.com - The premier directory of AI Agent Tools, MCP Servers, and Skills.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agnxi-search-skill
+
+    ```'
+examples:
+- description: Install Agent Skills Search from ClawHub
+  usage: clawhub install agnxi-search-skill
+schema_version: '1.0'

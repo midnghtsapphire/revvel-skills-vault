@@ -1,0 +1,58 @@
+name: todo-skill
+title: Todo Skill
+version: 1.0.0
+description: A skill to break large tasks into smaller actionable steps, optimize execution for each step, and dynamically
+  adapt based on progress.
+metadata:
+  author: scccmsd
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - todo
+  - skill
+  source: clawhub-community
+  clawhub_slug: todo-skill
+  clawhub_path: scccmsd/todo-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Todo Skill
+
+    # Source: ClawHub community skill by scccmsd
+
+    # Install: clawhub install todo-skill
+
+    # Path: scccmsd/todo-skill
+
+
+    ## Description
+
+    A skill to break large tasks into smaller actionable steps, optimize execution for each step, and dynamically adapt based
+    on progress.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - todo_manager.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todo-skill
+
+    ```'
+examples:
+- description: Install Todo Skill from ClawHub
+  usage: clawhub install todo-skill
+schema_version: '1.0'

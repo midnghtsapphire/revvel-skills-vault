@@ -1,0 +1,60 @@
+name: mongodb-atlas
+title: MongoDB Atlas
+version: 1.0.0
+description: browse MongoDB Atlas Admin API specifications and execute operations (if credentials provided).
+metadata:
+  author: finishy1995
+  category: Search & Research
+  tags:
+  - search-research
+  - mongodb
+  - atlas
+  source: clawhub-community
+  clawhub_slug: mongodb-atlas-admin
+  clawhub_path: finishy1995/mongodb-atlas-admin
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MongoDB Atlas
+
+    # Source: ClawHub community skill by finishy1995
+
+    # Install: clawhub install mongodb-atlas-admin
+
+    # Path: finishy1995/mongodb-atlas-admin
+
+
+    ## Description
+
+    browse MongoDB Atlas Admin API specifications and execute operations (if credentials provided).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - resources/atlas-admin-api-v2-openapi-source.json
+
+    - scripts/atlas-api.mjs
+
+    - scripts/atlas-call.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mongodb-atlas-admin
+
+    ```'
+examples:
+- description: Install MongoDB Atlas from ClawHub
+  usage: clawhub install mongodb-atlas-admin
+schema_version: '1.0'

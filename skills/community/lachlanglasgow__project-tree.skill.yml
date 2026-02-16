@@ -1,0 +1,60 @@
+name: project-tree
+title: Project Tree
+version: 1.0.3
+description: Generate a visual directory tree of the ~/projects folder and update MEMORY.md with the result. Use when the
+  user wants to view, update, or generate a project tree structure, or when they mention "project tree", "tree view", "folder
+  structure", or "show me my projects".
+metadata:
+  author: lachlanglasgow
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - project
+  - tree
+  source: clawhub-community
+  clawhub_slug: project-tree
+  clawhub_path: lachlanglasgow/project-tree
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Project Tree
+
+    # Source: ClawHub community skill by lachlanglasgow
+
+    # Install: clawhub install project-tree
+
+    # Path: lachlanglasgow/project-tree
+
+
+    ## Description
+
+    Generate a visual directory tree of the ~/projects folder and update MEMORY.md with the result. Use when the user wants
+    to view, update, or generate a project tree structure, or when they mention "project tree", "tree view", "folder structure",
+    or "show me my projects".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/project-tree.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install project-tree
+
+    ```'
+examples:
+- description: Install Project Tree from ClawHub
+  usage: clawhub install project-tree
+schema_version: '1.0'

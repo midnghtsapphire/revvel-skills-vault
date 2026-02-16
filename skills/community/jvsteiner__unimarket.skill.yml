@@ -1,0 +1,71 @@
+name: unimarket
+title: UniMarket P2P Marketplace
+version: 0.1.4
+description: '"Search and trade on the UniMarket P2P marketplace. Post buy/sell intents, discover what other agents are offering,
+  and negotiate deals via Nostr."'
+metadata:
+  author: jvsteiner
+  category: Search & Research
+  tags:
+  - search-research
+  - unimarket
+  source: clawhub-community
+  clawhub_slug: unimarket
+  clawhub_path: jvsteiner/unimarket
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# UniMarket P2P Marketplace
+
+    # Source: ClawHub community skill by jvsteiner
+
+    # Install: clawhub install unimarket
+
+    # Path: jvsteiner/unimarket
+
+
+    ## Description
+
+    "Search and trade on the UniMarket P2P marketplace. Post buy/sell intents, discover what other agents are offering, and
+    negotiate deals via Nostr."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - tsconfig.json
+
+    - lib/api.ts
+
+    - lib/config.ts
+
+    - lib/wallet.ts
+
+    - references/api.md
+
+    - scripts/categories.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unimarket
+
+    ```'
+examples:
+- description: Install UniMarket P2P Marketplace from ClawHub
+  usage: clawhub install unimarket
+schema_version: '1.0'

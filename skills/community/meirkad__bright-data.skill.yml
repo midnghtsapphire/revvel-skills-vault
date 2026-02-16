@@ -1,0 +1,59 @@
+name: brightdata
+title: Bright Data
+version: 1.0.0
+description: Web scraping and search via Bright Data API. Requires BRIGHTDATA_API_KEY and BRIGHTDATA_UNLOCKER_ZONE. Use for
+  scraping any webpage as markdown (bypassing bot detection/CAPTCHA) or searching Google with structured results.
+metadata:
+  author: meirkad
+  category: Search & Research
+  tags:
+  - search-research
+  - brightdata
+  source: clawhub-community
+  clawhub_slug: bright-data
+  clawhub_path: meirkad/bright-data
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bright Data
+
+    # Source: ClawHub community skill by meirkad
+
+    # Install: clawhub install bright-data
+
+    # Path: meirkad/bright-data
+
+
+    ## Description
+
+    Web scraping and search via Bright Data API. Requires BRIGHTDATA_API_KEY and BRIGHTDATA_UNLOCKER_ZONE. Use for scraping
+    any webpage as markdown (bypassing bot detection/CAPTCHA) or searching Google with structured results.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/scrape.sh
+
+    - scripts/search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bright-data
+
+    ```'
+examples:
+- description: Install Bright Data from ClawHub
+  usage: clawhub install bright-data
+schema_version: '1.0'

@@ -1,0 +1,64 @@
+name: writing-skills
+title: Writing Skills
+version: 0.1.0
+description: Use when creating new skills, editing existing skills, or verifying skills work before deployment
+metadata:
+  author: zlc000190
+  category: Development & Coding
+  tags:
+  - development-coding
+  - writing
+  - skills
+  source: clawhub-community
+  clawhub_slug: writing-skills
+  clawhub_path: zlc000190/writing-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Writing Skills
+
+    # Source: ClawHub community skill by zlc000190
+
+    # Install: clawhub install writing-skills
+
+    # Path: zlc000190/writing-skills
+
+
+    ## Description
+
+    Use when creating new skills, editing existing skills, or verifying skills work before deployment
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - anthropic-best-practices.md
+
+    - persuasion-principles.md
+
+    - render-graphs.js
+
+    - testing-skills-with-subagents.md
+
+    - examples/CLAUDE_MD_TESTING.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install writing-skills
+
+    ```'
+examples:
+- description: Install Writing Skills from ClawHub
+  usage: clawhub install writing-skills
+schema_version: '1.0'

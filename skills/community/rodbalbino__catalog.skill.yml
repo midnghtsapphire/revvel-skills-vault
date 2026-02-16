@@ -1,0 +1,55 @@
+name: catalog
+title: Catalog
+version: 1.0.0
+description: Catálogo simples do estúdio (hello world)
+metadata:
+  author: rodbalbino
+  category: General
+  tags:
+  - general
+  - catalog
+  source: clawhub-community
+  clawhub_slug: catalog
+  clawhub_path: rodbalbino/catalog
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Catalog
+
+    # Source: ClawHub community skill by rodbalbino
+
+    # Install: clawhub install catalog
+
+    # Path: rodbalbino/catalog
+
+
+    ## Description
+
+    Catálogo simples do estúdio (hello world)
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - catalog.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install catalog
+
+    ```'
+examples:
+- description: Install Catalog from ClawHub
+  usage: clawhub install catalog
+schema_version: '1.0'

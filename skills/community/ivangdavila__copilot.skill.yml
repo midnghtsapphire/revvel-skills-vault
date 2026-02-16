@@ -1,0 +1,63 @@
+name: copilot
+title: Copilot
+version: 1.0.0
+description: Transform your agent from chatbot to copilot with context persistence, proactive anticipation, and opinionated
+  help across sessions.
+metadata:
+  author: ivangdavila
+  category: Communication
+  tags:
+  - communication
+  - copilot
+  source: clawhub-community
+  clawhub_slug: copilot
+  clawhub_path: ivangdavila/copilot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Copilot
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install copilot
+
+    # Path: ivangdavila/copilot
+
+
+    ## Description
+
+    Transform your agent from chatbot to copilot with context persistence, proactive anticipation, and opinionated help across
+    sessions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - contexts.md
+
+    - examples.md
+
+    - implementation.md
+
+    - templates.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install copilot
+
+    ```'
+examples:
+- description: Install Copilot from ClawHub
+  usage: clawhub install copilot
+schema_version: '1.0'

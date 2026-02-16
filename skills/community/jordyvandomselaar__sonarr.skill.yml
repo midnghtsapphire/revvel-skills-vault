@@ -1,0 +1,55 @@
+name: sonarr
+title: Sonarr
+version: 1.2.0
+description: Search and add TV shows to Sonarr. Supports monitor options, search-on-add.
+metadata:
+  author: jordyvandomselaar
+  category: Search & Research
+  tags:
+  - search-research
+  - sonarr
+  source: clawhub-community
+  clawhub_slug: sonarr
+  clawhub_path: jordyvandomselaar/sonarr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sonarr
+
+    # Source: ClawHub community skill by jordyvandomselaar
+
+    # Install: clawhub install sonarr
+
+    # Path: jordyvandomselaar/sonarr
+
+
+    ## Description
+
+    Search and add TV shows to Sonarr. Supports monitor options, search-on-add.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sonarr.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sonarr
+
+    ```'
+examples:
+- description: Install Sonarr from ClawHub
+  usage: clawhub install sonarr
+schema_version: '1.0'

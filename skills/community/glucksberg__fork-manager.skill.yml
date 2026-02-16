@@ -1,0 +1,66 @@
+name: fork-manager
+title: Fork Manager
+version: 1.1.1
+description: Manage forks with open PRs - sync upstream, rebase branches, track PR status, and maintain production branches
+  with pending contributions. Use when syncing forks, rebasing PR branches, building production branches that combine all
+  open PRs, reviewing closed/rejected PRs, or managing local patches ke
+metadata:
+  author: glucksberg
+  category: Development & Coding
+  tags:
+  - development-coding
+  - fork
+  - manager
+  source: clawhub-community
+  clawhub_slug: fork-manager
+  clawhub_path: glucksberg/fork-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fork Manager
+
+    # Source: ClawHub community skill by glucksberg
+
+    # Install: clawhub install fork-manager
+
+    # Path: glucksberg/fork-manager
+
+
+    ## Description
+
+    Manage forks with open PRs - sync upstream, rebase branches, track PR status, and maintain production branches with pending
+    contributions. Use when syncing forks, rebasing PR branches, building production branches that combine all open PRs, reviewing
+    closed/rejected PRs, or managing local patches ke
+
+
+    ## Files
+
+    - ARCHITECTURE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - repos/claude-mem/config.example.json
+
+    - repos/openclaw/config.example.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fork-manager
+
+    ```'
+examples:
+- description: Install Fork Manager from ClawHub
+  usage: clawhub install fork-manager
+schema_version: '1.0'

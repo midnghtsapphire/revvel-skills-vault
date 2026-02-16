@@ -1,0 +1,59 @@
+name: subagent-driven-development
+title: Subagent Driven Development
+version: 0.1.0
+description: Execute implementation plans by dispatching a fresh subagent per task with two-stage review (spec compliance
+  then code quality). Use when you have an implementation plan with mostly independent tasks and want high-quality, fast iteration
+  within a single session.
+metadata:
+  author: wpank
+  category: Development & Coding
+  tags:
+  - development-coding
+  - subagent
+  - driven
+  - development
+  source: clawhub-community
+  clawhub_slug: subagent-driven-development-2
+  clawhub_path: wpank/subagent-driven-development-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Subagent Driven Development
+
+    # Source: ClawHub community skill by wpank
+
+    # Install: clawhub install subagent-driven-development-2
+
+    # Path: wpank/subagent-driven-development-2
+
+
+    ## Description
+
+    Execute implementation plans by dispatching a fresh subagent per task with two-stage review (spec compliance then code
+    quality). Use when you have an implementation plan with mostly independent tasks and want high-quality, fast iteration
+    within a single session.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install subagent-driven-development-2
+
+    ```'
+examples:
+- description: Install Subagent Driven Development from ClawHub
+  usage: clawhub install subagent-driven-development-2
+schema_version: '1.0'

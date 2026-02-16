@@ -1,0 +1,58 @@
+name: dnfm-tracker
+title: DNFM周本追踪
+version: 1.0.0
+description: DNFM 周本进度追踪。用于查询/更新新超越本、老超越本、周本、雷龙、团本进度。支持周五自动重置新超越本等刷新逻辑。支持自定义总量和启用/禁用副本。自动从 /root/.openclaw/workspace/dnfm-tracker/progress.json
+  读写数据。
+metadata:
+  author: crazzies
+  category: General
+  tags:
+  - general
+  - dnfm
+  - tracker
+  source: clawhub-community
+  clawhub_slug: dnfm-tracker
+  clawhub_path: crazzies/dnfm-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# DNFM周本追踪
+
+    # Source: ClawHub community skill by crazzies
+
+    # Install: clawhub install dnfm-tracker
+
+    # Path: crazzies/dnfm-tracker
+
+
+    ## Description
+
+    DNFM 周本进度追踪。用于查询/更新新超越本、老超越本、周本、雷龙、团本进度。支持周五自动重置新超越本等刷新逻辑。支持自定义总量和启用/禁用副本。自动从 /root/.openclaw/workspace/dnfm-tracker/progress.json
+    读写数据。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/tracker.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dnfm-tracker
+
+    ```'
+examples:
+- description: Install DNFM周本追踪 from ClawHub
+  usage: clawhub install dnfm-tracker
+schema_version: '1.0'

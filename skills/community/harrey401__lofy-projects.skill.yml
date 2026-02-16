@@ -1,0 +1,58 @@
+name: lofy-projects
+title: Lofy Projects
+version: 1.0.0
+description: Project management for the Lofy AI assistant — tracks multiple projects with milestones, priority scoring engine
+  (urgency × job relevance × momentum × energy match), meeting prep automation, time logging, stale project alerts, and work
+  session recommendations. Use when managing projects, prioritizin
+metadata:
+  author: harrey401
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - lofy
+  - projects
+  source: clawhub-community
+  clawhub_slug: lofy-projects
+  clawhub_path: harrey401/lofy-projects
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lofy Projects
+
+    # Source: ClawHub community skill by harrey401
+
+    # Install: clawhub install lofy-projects
+
+    # Path: harrey401/lofy-projects
+
+
+    ## Description
+
+    Project management for the Lofy AI assistant — tracks multiple projects with milestones, priority scoring engine (urgency
+    × job relevance × momentum × energy match), meeting prep automation, time logging, stale project alerts, and work session
+    recommendations. Use when managing projects, prioritizin
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lofy-projects
+
+    ```'
+examples:
+- description: Install Lofy Projects from ClawHub
+  usage: clawhub install lofy-projects
+schema_version: '1.0'

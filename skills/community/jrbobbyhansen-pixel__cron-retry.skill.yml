@@ -1,0 +1,56 @@
+name: cron-retry
+title: Cron Retry
+version: 1.0.0
+description: Auto-retry failed cron jobs on connection recovery. Use when cron jobs fail due to network errors and should
+  be retried when connectivity is restored. Integrates with heartbeat to detect failed jobs and re-run them automatically.
+metadata:
+  author: jrbobbyhansen-pixel
+  category: General
+  tags:
+  - general
+  - cron
+  - retry
+  source: clawhub-community
+  clawhub_slug: cron-retry
+  clawhub_path: jrbobbyhansen-pixel/cron-retry
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cron Retry
+
+    # Source: ClawHub community skill by jrbobbyhansen-pixel
+
+    # Install: clawhub install cron-retry
+
+    # Path: jrbobbyhansen-pixel/cron-retry
+
+
+    ## Description
+
+    Auto-retry failed cron jobs on connection recovery. Use when cron jobs fail due to network errors and should be retried
+    when connectivity is restored. Integrates with heartbeat to detect failed jobs and re-run them automatically.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cron-retry
+
+    ```'
+examples:
+- description: Install Cron Retry from ClawHub
+  usage: clawhub install cron-retry
+schema_version: '1.0'

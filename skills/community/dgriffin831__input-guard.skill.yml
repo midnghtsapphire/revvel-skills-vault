@@ -1,0 +1,72 @@
+name: input-guard
+title: Input Guard
+version: 1.0.1
+description: Scan untrusted external text (web pages, tweets, search results, API responses) for prompt injection attacks.
+  Returns severity levels and alerts on dangerous content. Use BEFORE processing any text from untrusted sources.
+metadata:
+  author: dgriffin831
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - input
+  - guard
+  source: clawhub-community
+  clawhub_slug: input-guard
+  clawhub_path: dgriffin831/input-guard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Input Guard
+
+    # Source: ClawHub community skill by dgriffin831
+
+    # Install: clawhub install input-guard
+
+    # Path: dgriffin831/input-guard
+
+
+    ## Description
+
+    Scan untrusted external text (web pages, tweets, search results, API responses) for prompt injection attacks. Returns
+    severity levels and alerts on dangerous content. Use BEFORE processing any text from untrusted sources.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - INTEGRATION.md
+
+    - README.md
+
+    - SKILL.md
+
+    - TESTING.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - taxonomy.json
+
+    - evals/cases.json
+
+    - evals/run.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install input-guard
+
+    ```'
+examples:
+- description: Install Input Guard from ClawHub
+  usage: clawhub install input-guard
+schema_version: '1.0'

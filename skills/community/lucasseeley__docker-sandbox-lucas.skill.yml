@@ -1,0 +1,57 @@
+name: docker-sandbox
+title: Docker Sandbox Lucas
+version: 1.0.1
+description: Create and manage Docker sandboxed VM environments for safe agent execution. Use when running untrusted code,
+  exploring packages, or isolating agent workloads. Supports Claude, Codex, Copilot, Gemini, and Kiro agents with network
+  proxy controls.
+metadata:
+  author: lucasseeley
+  category: Development & Coding
+  tags:
+  - development-coding
+  - docker
+  - sandbox
+  source: clawhub-community
+  clawhub_slug: docker-sandbox-lucas
+  clawhub_path: lucasseeley/docker-sandbox-lucas
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docker Sandbox Lucas
+
+    # Source: ClawHub community skill by lucasseeley
+
+    # Install: clawhub install docker-sandbox-lucas
+
+    # Path: lucasseeley/docker-sandbox-lucas
+
+
+    ## Description
+
+    Create and manage Docker sandboxed VM environments for safe agent execution. Use when running untrusted code, exploring
+    packages, or isolating agent workloads. Supports Claude, Codex, Copilot, Gemini, and Kiro agents with network proxy controls.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install docker-sandbox-lucas
+
+    ```'
+examples:
+- description: Install Docker Sandbox Lucas from ClawHub
+  usage: clawhub install docker-sandbox-lucas
+schema_version: '1.0'

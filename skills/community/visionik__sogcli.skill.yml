@@ -1,0 +1,70 @@
+name: sog
+title: Sog
+version: 0.3.0
+description: Standards Ops Gadget — CLI for IMAP/SMTP/CalDAV/CardDAV/WebDAV. Open-standards alternative to gog (Google) and
+  mog (Microsoft).
+metadata:
+  author: visionik
+  category: Search & Research
+  tags:
+  - search-research
+  - sog
+  source: clawhub-community
+  clawhub_slug: sogcli
+  clawhub_path: visionik/sogcli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sog
+
+    # Source: ClawHub community skill by visionik
+
+    # Install: clawhub install sogcli
+
+    # Path: visionik/sogcli
+
+
+    ## Description
+
+    Standards Ops Gadget — CLI for IMAP/SMTP/CalDAV/CardDAV/WebDAV. Open-standards alternative to gog (Google) and mog (Microsoft).
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - Taskfile.yml
+
+    - _meta.json
+
+    - cmd/sog/main.go
+
+    - internal/caldav/client.go
+
+    - internal/caldav/client_test.go
+
+    - internal/carddav/client.go
+
+    - internal/cli/auth.go
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sogcli
+
+    ```'
+examples:
+- description: Install Sog from ClawHub
+  usage: clawhub install sogcli
+schema_version: '1.0'

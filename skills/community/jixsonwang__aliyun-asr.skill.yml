@@ -1,0 +1,68 @@
+name: aliyun-asr
+title: Aliyun Asr
+version: 1.0.10
+description: '"Pure Aliyun ASR skill for voice message transcription, supports multiple channels including Feishu"'
+metadata:
+  author: jixsonwang
+  category: Communication
+  tags:
+  - communication
+  - aliyun
+  - asr
+  source: clawhub-community
+  clawhub_slug: aliyun-asr
+  clawhub_path: jixsonwang/aliyun-asr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Aliyun Asr
+
+    # Source: ClawHub community skill by jixsonwang
+
+    # Install: clawhub install aliyun-asr
+
+    # Path: jixsonwang/aliyun-asr
+
+
+    ## Description
+
+    "Pure Aliyun ASR skill for voice message transcription, supports multiple channels including Feishu"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - __init__.py
+
+    - _meta.json
+
+    - aliyun_pure_asr.py
+
+    - example-config.json
+
+    - handle_media.py
+
+    - index.js
+
+    - main.py
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install aliyun-asr
+
+    ```'
+examples:
+- description: Install Aliyun Asr from ClawHub
+  usage: clawhub install aliyun-asr
+schema_version: '1.0'

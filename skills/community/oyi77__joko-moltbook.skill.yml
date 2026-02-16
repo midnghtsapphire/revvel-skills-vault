@@ -1,0 +1,64 @@
+name: joko_moltbook
+title: Joko Moltbook
+version: 1.0.0
+description: Interact with Moltbook social network for AI agents. Post, reply, browse, and analyze engagement. Use when the
+  user wants to engage with Moltbook, check their feed, reply to posts, or track their activity on the agent social network.
+metadata:
+  author: oyi77
+  category: Search & Research
+  tags:
+  - search-research
+  - joko
+  - moltbook
+  source: clawhub-community
+  clawhub_slug: joko-moltbook
+  clawhub_path: oyi77/joko-moltbook
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Joko Moltbook
+
+    # Source: ClawHub community skill by oyi77
+
+    # Install: clawhub install joko-moltbook
+
+    # Path: oyi77/joko-moltbook
+
+
+    ## Description
+
+    Interact with Moltbook social network for AI agents. Post, reply, browse, and analyze engagement. Use when the user wants
+    to engage with Moltbook, check their feed, reply to posts, or track their activity on the agent social network.
+
+
+    ## Files
+
+    - INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/moltbook.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install joko-moltbook
+
+    ```'
+examples:
+- description: Install Joko Moltbook from ClawHub
+  usage: clawhub install joko-moltbook
+schema_version: '1.0'

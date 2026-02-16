@@ -1,0 +1,57 @@
+name: release-strategy-advisor
+title: Release Strategy Advisor
+version: 1.0.0
+description: Release strategy advisor - detects brownfield patterns (tags, CI/CD, changelogs), recommends versioning strategy
+  based on architecture. Creates release-strategy.md.
+metadata:
+  author: anton-abyzov
+  category: General
+  tags:
+  - general
+  - release
+  - strategy
+  - advisor
+  source: clawhub-community
+  clawhub_slug: sw-release-strategy-advisor
+  clawhub_path: anton-abyzov/sw-release-strategy-advisor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Release Strategy Advisor
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-release-strategy-advisor
+
+    # Path: anton-abyzov/sw-release-strategy-advisor
+
+
+    ## Description
+
+    Release strategy advisor - detects brownfield patterns (tags, CI/CD, changelogs), recommends versioning strategy based
+    on architecture. Creates release-strategy.md.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-release-strategy-advisor
+
+    ```'
+examples:
+- description: Install Release Strategy Advisor from ClawHub
+  usage: clawhub install sw-release-strategy-advisor
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: adaptive-reasoning
+title: Adaptive Reasoning
+version: 1.0.0
+description: Automatically assess task complexity and adjust reasoning level. Triggers on every user message to evaluate whether
+  extended thinking (reasoning mode) would improve response quality. Use this as a pre-processing step before answering complex
+  questions.
+metadata:
+  author: enzoricciulli
+  category: Communication
+  tags:
+  - communication
+  - adaptive
+  - reasoning
+  source: clawhub-community
+  clawhub_slug: adaptive-reasoning
+  clawhub_path: enzoricciulli/adaptive-reasoning
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Adaptive Reasoning
+
+    # Source: ClawHub community skill by enzoricciulli
+
+    # Install: clawhub install adaptive-reasoning
+
+    # Path: enzoricciulli/adaptive-reasoning
+
+
+    ## Description
+
+    Automatically assess task complexity and adjust reasoning level. Triggers on every user message to evaluate whether extended
+    thinking (reasoning mode) would improve response quality. Use this as a pre-processing step before answering complex questions.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install adaptive-reasoning
+
+    ```'
+examples:
+- description: Install Adaptive Reasoning from ClawHub
+  usage: clawhub install adaptive-reasoning
+schema_version: '1.0'

@@ -1,0 +1,63 @@
+name: cctv-news-fetcher
+title: CCTV News Fetcher
+version: 1.0.0
+description: Fetch and parse news highlights from CCTV News Broadcast (Xinwen Lianbo) for a given date.
+metadata:
+  author: yuhangch
+  category: General
+  tags:
+  - general
+  - cctv
+  - news
+  - fetcher
+  source: clawhub-community
+  clawhub_slug: cctv-news-fetcher
+  clawhub_path: yuhangch/cctv-news-fetcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# CCTV News Fetcher
+
+    # Source: ClawHub community skill by yuhangch
+
+    # Install: clawhub install cctv-news-fetcher
+
+    # Path: yuhangch/cctv-news-fetcher
+
+
+    ## Description
+
+    Fetch and parse news highlights from CCTV News Broadcast (Xinwen Lianbo) for a given date.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - examples/example.md
+
+    - scripts/news_crawler.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cctv-news-fetcher
+
+    ```'
+examples:
+- description: Install CCTV News Fetcher from ClawHub
+  usage: clawhub install cctv-news-fetcher
+schema_version: '1.0'

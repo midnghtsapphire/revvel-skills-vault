@@ -1,0 +1,57 @@
+name: ovh
+title: Ovh
+version: 1.0.0
+description: Manage OVHcloud services via API. Use when user asks about OVH domains, DNS records, VPS, cloud instances, dedicated
+  servers, email, SSL certificates, or any OVH service management. Supports listing, creating, updating, and deleting resources.
+metadata:
+  author: pushp1997
+  category: Communication
+  tags:
+  - communication
+  - ovh
+  source: clawhub-community
+  clawhub_slug: ovh
+  clawhub_path: pushp1997/ovh
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ovh
+
+    # Source: ClawHub community skill by pushp1997
+
+    # Install: clawhub install ovh
+
+    # Path: pushp1997/ovh
+
+
+    ## Description
+
+    Manage OVHcloud services via API. Use when user asks about OVH domains, DNS records, VPS, cloud instances, dedicated servers,
+    email, SSL certificates, or any OVH service management. Supports listing, creating, updating, and deleting resources.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/ovh-cli.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ovh
+
+    ```'
+examples:
+- description: Install Ovh from ClawHub
+  usage: clawhub install ovh
+schema_version: '1.0'

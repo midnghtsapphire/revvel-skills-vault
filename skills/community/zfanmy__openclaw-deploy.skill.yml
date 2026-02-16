@@ -1,0 +1,70 @@
+name: openclaw-deploy
+title: Openclaw Deploy
+version: 1.0.3
+description: Build and deploy OpenClaw as Docker images or portable packages
+metadata:
+  author: zfanmy
+  category: Media & Content
+  tags:
+  - media-content
+  - openclaw
+  - deploy
+  source: clawhub-community
+  clawhub_slug: openclaw-deploy
+  clawhub_path: zfanmy/openclaw-deploy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Deploy
+
+    # Source: ClawHub community skill by zfanmy
+
+    # Install: clawhub install openclaw-deploy
+
+    # Path: zfanmy/openclaw-deploy
+
+
+    ## Description
+
+    Build and deploy OpenClaw as Docker images or portable packages
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docker-compose.yml
+
+    - scripts/build-portable.sh
+
+    - scripts/export-portable.sh
+
+    - scripts/import.sh
+
+    - scripts/start.sh
+
+    - scripts/stop.sh
+
+    - templates/README.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-deploy
+
+    ```'
+examples:
+- description: Install Openclaw Deploy from ClawHub
+  usage: clawhub install openclaw-deploy
+schema_version: '1.0'

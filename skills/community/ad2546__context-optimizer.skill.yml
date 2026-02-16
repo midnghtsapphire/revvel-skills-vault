@@ -1,0 +1,74 @@
+name: context-optimizer
+title: Context Optimizer
+version: 1.0.0
+description: Advanced context management with auto-compaction and dynamic context optimization for DeepSeek's 64k context
+  window. Features intelligent compaction (merging, summarizing, extracting), query-aware relevance scoring, and hierarchical
+  memory system with context archive. Logs optimization events to cha
+metadata:
+  author: ad2546
+  category: Communication
+  tags:
+  - communication
+  - context
+  - optimizer
+  source: clawhub-community
+  clawhub_slug: context-optimizer
+  clawhub_path: ad2546/context-optimizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Context Optimizer
+
+    # Source: ClawHub community skill by ad2546
+
+    # Install: clawhub install context-optimizer
+
+    # Path: ad2546/context-optimizer
+
+
+    ## Description
+
+    Advanced context management with auto-compaction and dynamic context optimization for DeepSeek''s 64k context window.
+    Features intelligent compaction (merging, summarizing, extracting), query-aware relevance scoring, and hierarchical memory
+    system with context archive. Logs optimization events to cha
+
+
+    ## Files
+
+    - INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - SUMMARY.md
+
+    - _meta.json
+
+    - chat-logger.js
+
+    - package.json
+
+    - examples/clawdbot-integration.js
+
+    - examples/simple-integration.js
+
+    - lib/index.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install context-optimizer
+
+    ```'
+examples:
+- description: Install Context Optimizer from ClawHub
+  usage: clawhub install context-optimizer
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: reddit-search
+title: Reddit Search
+version: 1.0.2
+description: Search Reddit for subreddits and get information about them.
+metadata:
+  author: thesethrose
+  category: Search & Research
+  tags:
+  - search-research
+  - reddit
+  - search
+  source: clawhub-community
+  clawhub_slug: reddit-search
+  clawhub_path: thesethrose/reddit-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Reddit Search
+
+    # Source: ClawHub community skill by thesethrose
+
+    # Install: clawhub install reddit-search
+
+    # Path: thesethrose/reddit-search
+
+
+    ## Description
+
+    Search Reddit for subreddits and get information about them.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - scripts/reddit-search.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install reddit-search
+
+    ```'
+examples:
+- description: Install Reddit Search from ClawHub
+  usage: clawhub install reddit-search
+schema_version: '1.0'

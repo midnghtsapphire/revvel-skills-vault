@@ -1,0 +1,56 @@
+name: git-changelog
+title: git-changelog
+version: 1.0.2
+description: Generate changelogs and release notes from git commit history with conventional commit parsing.
+metadata:
+  author: sa9saq
+  category: Development & Coding
+  tags:
+  - development-coding
+  - git
+  - changelog
+  source: clawhub-community
+  clawhub_slug: git-changelog
+  clawhub_path: sa9saq/git-changelog
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# git-changelog
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install git-changelog
+
+    # Path: sa9saq/git-changelog
+
+
+    ## Description
+
+    Generate changelogs and release notes from git commit history with conventional commit parsing.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install git-changelog
+
+    ```'
+examples:
+- description: Install git-changelog from ClawHub
+  usage: clawhub install git-changelog
+schema_version: '1.0'

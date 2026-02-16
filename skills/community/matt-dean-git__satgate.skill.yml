@@ -1,0 +1,61 @@
+name: satgate
+title: SatGate
+version: 0.1.2
+description: Manage your API's economic firewall from the terminal. Mint tokens, track spend, revoke agents, enforce budgets.
+  The server-side counterpart to lnget.
+metadata:
+  author: matt-dean-git
+  category: Development & Coding
+  tags:
+  - development-coding
+  - satgate
+  source: clawhub-community
+  clawhub_slug: satgate
+  clawhub_path: matt-dean-git/satgate
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SatGate
+
+    # Source: ClawHub community skill by matt-dean-git
+
+    # Install: clawhub install satgate
+
+    # Path: matt-dean-git/satgate
+
+
+    ## Description
+
+    Manage your API''s economic firewall from the terminal. Mint tokens, track spend, revoke agents, enforce budgets. The
+    server-side counterpart to lnget.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/configure.sh
+
+    - scripts/health-check.sh
+
+    - scripts/install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install satgate
+
+    ```'
+examples:
+- description: Install SatGate from ClawHub
+  usage: clawhub install satgate
+schema_version: '1.0'

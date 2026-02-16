@@ -1,0 +1,36 @@
+name: agent-zero-bridge
+title: Agent Zero Bridge
+version: 1.0.0
+description: 'Delegate complex coding, research, or autonomous tasks to Agent Zero framework. Use when user says "ask Agent
+  Zero", "delegate to A0", "have Agent Zero build", or needs long-running autonomous coding with self-correction loops. Supports
+  bidirectional communication, file attachments, task breakdown, '
+metadata:
+  author: dowingard
+  category: Search & Research
+  tags:
+  - search-research
+  - agent
+  - zero
+  - bridge
+  source: clawhub-community
+  clawhub_slug: agent-zero-bridge
+  clawhub_path: dowingard/agent-zero-bridge
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Agent Zero Bridge\n# Source: ClawHub community skill by dowingard\n# Install: clawhub install agent-zero-bridge\n\
+    # Path: dowingard/agent-zero-bridge\n\n## Description\nDelegate complex coding, research, or autonomous tasks to Agent\
+    \ Zero framework. Use when user says \"ask Agent Zero\", \"delegate to A0\", \"have Agent Zero build\", or needs long-running\
+    \ autonomous coding with self-correction loops. Supports bidirectional communication, file attachments, task breakdown,\
+    \ \n\n## Files\n- README.md\n- SKILL.md\n- _meta.json\n- scripts/a0_client.js\n- scripts/clawdbot_client.js\n- scripts/task_breakdown.js\n\
+    - scripts/lib/a0_api.js\n- scripts/lib/clawdbot_api.js\n- scripts/lib/cli.js\n- scripts/lib/config.js\n\n## Installation\n\
+    ```bash\nclawhub install agent-zero-bridge\n```"
+examples:
+- description: Install Agent Zero Bridge from ClawHub
+  usage: clawhub install agent-zero-bridge
+schema_version: '1.0'

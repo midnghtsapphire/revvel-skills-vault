@@ -1,0 +1,62 @@
+name: notebooklm-cli
+title: NotebookLM CLI Cookies
+version: 0.1.4
+description: Search and answer questions over documents already uploaded to NotebookLM using the nlm CLI. Use when users ask
+  to find information, summarize sources, or query a specific NotebookLM notebook.
+metadata:
+  author: lhquangit
+  category: Search & Research
+  tags:
+  - search-research
+  - notebooklm
+  - cli
+  source: clawhub-community
+  clawhub_slug: notebooklm-cli-cookies
+  clawhub_path: lhquangit/notebooklm-cli-cookies
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NotebookLM CLI Cookies
+
+    # Source: ClawHub community skill by lhquangit
+
+    # Install: clawhub install notebooklm-cli-cookies
+
+    # Path: lhquangit/notebooklm-cli-cookies
+
+
+    ## Description
+
+    Search and answer questions over documents already uploaded to NotebookLM using the nlm CLI. Use when users ask to find
+    information, summarize sources, or query a specific NotebookLM notebook.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - docs/GUIDELINE.md
+
+    - scripts/aws-inject-notebooklm-auth.sh
+
+    - scripts/bootstrap_vps_systemd_one_liner.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install notebooklm-cli-cookies
+
+    ```'
+examples:
+- description: Install NotebookLM CLI Cookies from ClawHub
+  usage: clawhub install notebooklm-cli-cookies
+schema_version: '1.0'

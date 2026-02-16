@@ -1,0 +1,64 @@
+name: feishu-sticker
+title: Feishu Sticker
+version: 1.0.9
+description: Send images as native Feishu stickers. Features auto-upload, caching, and GIF-to-WebP conversion.
+metadata:
+  author: autogame-17
+  category: Media & Content
+  tags:
+  - media-content
+  - feishu
+  - sticker
+  source: clawhub-community
+  clawhub_slug: feishu-sticker
+  clawhub_path: autogame-17/feishu-sticker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Feishu Sticker
+
+    # Source: ClawHub community skill by autogame-17
+
+    # Install: clawhub install feishu-sticker
+
+    # Path: autogame-17/feishu-sticker
+
+
+    ## Description
+
+    Send images as native Feishu stickers. Features auto-upload, caching, and GIF-to-WebP conversion.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - find.js
+
+    - image_key_cache.json
+
+    - package-lock.json
+
+    - package.json
+
+    - send.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-sticker
+
+    ```'
+examples:
+- description: Install Feishu Sticker from ClawHub
+  usage: clawhub install feishu-sticker
+schema_version: '1.0'

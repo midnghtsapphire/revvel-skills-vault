@@ -1,0 +1,72 @@
+name: lark-calendar
+title: Lark Calendar & Tasks
+version: 1.0.0
+description: Create, update, and delete calendar events and tasks in Lark (Feishu). Includes employee directory for automatic
+  name-to-user_id resolution.
+metadata:
+  author: boyangwang
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - lark
+  - calendar
+  source: clawhub-community
+  clawhub_slug: lark-calendar
+  clawhub_path: boyangwang/lark-calendar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lark Calendar & Tasks
+
+    # Source: ClawHub community skill by boyangwang
+
+    # Install: clawhub install lark-calendar
+
+    # Path: boyangwang/lark-calendar
+
+
+    ## Description
+
+    Create, update, and delete calendar events and tasks in Lark (Feishu). Includes employee directory for automatic name-to-user_id
+    resolution.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - lib/calendar.mjs
+
+    - lib/employees.mjs
+
+    - lib/lark-api.mjs
+
+    - lib/task.mjs
+
+    - scripts/create-event.mjs
+
+    - scripts/create-task.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lark-calendar
+
+    ```'
+examples:
+- description: Install Lark Calendar & Tasks from ClawHub
+  usage: clawhub install lark-calendar
+schema_version: '1.0'

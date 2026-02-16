@@ -1,0 +1,68 @@
+name: wechat-mp-publisher
+title: wechat-mp-publisher
+version: 2.0.1
+description: 远程微信公众号发布技能。通过 HTTP MCP 解决家用宽带 IP 变动问题，支持大文件上传、多主题排版与一键发布。
+metadata:
+  author: misakiga
+  category: Communication
+  tags:
+  - communication
+  - wechat
+  - publisher
+  source: clawhub-community
+  clawhub_slug: wechat-mp-publisher
+  clawhub_path: misakiga/wechat-mp-publisher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# wechat-mp-publisher
+
+    # Source: ClawHub community skill by misakiga
+
+    # Install: clawhub install wechat-mp-publisher
+
+    # Path: misakiga/wechat-mp-publisher
+
+
+    ## Description
+
+    远程微信公众号发布技能。通过 HTTP MCP 解决家用宽带 IP 变动问题，支持大文件上传、多主题排版与一键发布。
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - example.md
+
+    - references/themes.md
+
+    - references/troubleshooting.md
+
+    - scripts/publish-remote.sh
+
+    - scripts/publish.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wechat-mp-publisher
+
+    ```'
+examples:
+- description: Install wechat-mp-publisher from ClawHub
+  usage: clawhub install wechat-mp-publisher
+schema_version: '1.0'

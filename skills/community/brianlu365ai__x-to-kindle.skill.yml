@@ -1,0 +1,59 @@
+name: x-to-kindle
+title: X To Kindle
+version: 0.1.1
+description: Send X/Twitter posts to Kindle for distraction-free reading. Use when user shares an X/Twitter link and wants
+  to read it on Kindle, or asks to send a tweet/thread to their Kindle device.
+metadata:
+  author: brianlu365ai
+  category: Social Media
+  tags:
+  - social-media
+  - kindle
+  source: clawhub-community
+  clawhub_slug: x-to-kindle
+  clawhub_path: brianlu365ai/x-to-kindle
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X To Kindle
+
+    # Source: ClawHub community skill by brianlu365ai
+
+    # Install: clawhub install x-to-kindle
+
+    # Path: brianlu365ai/x-to-kindle
+
+
+    ## Description
+
+    Send X/Twitter posts to Kindle for distraction-free reading. Use when user shares an X/Twitter link and wants to read
+    it on Kindle, or asks to send a tweet/thread to their Kindle device.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - send_to_kindle.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-to-kindle
+
+    ```'
+examples:
+- description: Install X To Kindle from ClawHub
+  usage: clawhub install x-to-kindle
+schema_version: '1.0'

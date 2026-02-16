@@ -1,0 +1,58 @@
+name: sendook-openclaw
+title: Sendook
+version: 1.1.0
+description: Read and send emails from an existing Sendook inbox. Use when an AI agent needs to check for new emails, read
+  messages, reply to conversations, or send new emails from a pre-configured inbox. Limited to message operations only — no
+  inbox creation, domain management, or webhook configuration.
+metadata:
+  author: obaid
+  category: Communication
+  tags:
+  - communication
+  - sendook
+  - openclaw
+  source: clawhub-community
+  clawhub_slug: sendook
+  clawhub_path: obaid/sendook
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sendook
+
+    # Source: ClawHub community skill by obaid
+
+    # Install: clawhub install sendook
+
+    # Path: obaid/sendook
+
+
+    ## Description
+
+    Read and send emails from an existing Sendook inbox. Use when an AI agent needs to check for new emails, read messages,
+    reply to conversations, or send new emails from a pre-configured inbox. Limited to message operations only — no inbox
+    creation, domain management, or webhook configuration.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sendook
+
+    ```'
+examples:
+- description: Install Sendook from ClawHub
+  usage: clawhub install sendook
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: skill-auditor
+title: Skill Auditor Pro
+version: 2.1.1
+description: 'Security scanner for ClawHub skills. Detects malicious code, obfuscated payloads, and social engineering before
+  installation. Three-layer analysis: pattern matching, deobfuscation, and LLM intent analysis.'
+metadata:
+  author: sypsyp97
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - skill
+  - auditor
+  source: clawhub-community
+  clawhub_slug: skill-auditor-pro
+  clawhub_path: sypsyp97/skill-auditor-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Auditor Pro
+
+    # Source: ClawHub community skill by sypsyp97
+
+    # Install: clawhub install skill-auditor-pro
+
+    # Path: sypsyp97/skill-auditor-pro
+
+
+    ## Description
+
+    Security scanner for ClawHub skills. Detects malicious code, obfuscated payloads, and social engineering before installation.
+    Three-layer analysis: pattern matching, deobfuscation, and LLM intent analysis.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/audit.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-auditor-pro
+
+    ```'
+examples:
+- description: Install Skill Auditor Pro from ClawHub
+  usage: clawhub install skill-auditor-pro
+schema_version: '1.0'

@@ -1,0 +1,438 @@
+name: epstein_files_intel
+title: Epstein Files Intelligence Analysis & Data Scraper
+version: 1.0.0
+description: Comprehensive investigative tool for Jeffrey Epstein case files with document analysis, relationship mapping,
+  social media intelligence, and fact verification capabilities
+metadata:
+  author: Revvel AI Engine
+  category: Forensic Investigation
+  tags:
+  - epstein
+  - redacted text recovery via metadata analysis
+  - deposition transcript entity extraction
+  - flight log analysis and passenger mapping
+  - files
+  - pacer court record scraping
+  - intel
+  - black book contact database extraction
+  - social network graph building
+  - court document scraping and ocr
+  - financial records analysis
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import requests\nimport json\nimport os\nimport re\nimport datetime\nimport hashlib\nimport collections\nimport\
+    \ statistics\nimport math\nimport sqlite3\nimport csv\nimport io\nimport zipfile\nimport tempfile\nimport logging\nimport\
+    \ unittest\nfrom typing import Dict, List, Optional, Any, Tuple, Set\nfrom urllib.parse import urljoin, urlparse\nfrom\
+    \ dataclasses import dataclass\nfrom collections import defaultdict, Counter\nimport xml.etree.ElementTree as ET\nimport\
+    \ subprocess\nimport shutil\nimport time\nimport random\n\nSKILL_METADATA = {\n    \"name\": \"Epstein Files Intelligence\
+    \ Analysis & Data Scraper\",\n    \"id\": \"epstein_files_intel\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel\
+    \ AI Engine\",\n    \"description\": \"Comprehensive investigative tool for Jeffrey Epstein case files with document analysis,\
+    \ relationship mapping, social media intelligence, and fact verification capabilities\",\n    \"capabilities\": [\n  \
+    \      \"Court document scraping and OCR\",\n        \"Redacted text recovery via metadata analysis\",\n        \"Flight\
+    \ log analysis and passenger mapping\",\n        \"Black book contact database extraction\",\n        \"Deposition transcript\
+    \ entity extraction\",\n        \"Financial records analysis\",\n        \"PACER court record scraping\",\n        \"\
+    Social network graph building\",\n        \"Timeline construction and visualization\",\n        \"Geographic mapping of\
+    \ properties and locations\",\n        \"Corporate structure mapping\",\n        \"Social media intelligence gathering\"\
+    ,\n        \"Fact verification and credibility scoring\",\n        \"Evidence chain building\",\n        \"Automated report\
+    \ generation\"\n    ],\n    \"domain\": \"legal_forensic_investigation\"\n}\n\nEXPERT_PROMPTS = {\n    \"flight_analysis\"\
+    : \"\"\"Analyze Jeffrey Epstein's flight logs to identify:\n- All passengers who flew on the Lolita Express more than\
+    \ 3 times\n- Flight patterns to Little St. James island\n- Co-travelers with high-profile individuals\n- Unusual flight\
+    \ destinations or timing\n- Correlation between flights and known events/dates\n\nFocus on flights between {start_date}\
+    \ and {end_date}. \nCross-reference passenger names with black book contacts.\nFlag any flights containing {target_names}.\"\
+    \"\",\n    \n    \"network_mapping\": \"\"\"Build a comprehensive social network graph showing:\n- All connections between\
+    \ {target_individual} and Epstein associates\n- Connection strength based on frequency of contact\n- Types of relationships\
+    \ (financial, social, legal, familial)\n- Geographic clustering of connections\n- Temporal evolution of the network\n\n\
+    Include data from flight logs, black book, depositions, and property records.\nHighlight any connections to {organizations_of_interest}.\"\
+    \"\",\n    \n    \"financial_forensics\": \"\"\"Analyze financial records to uncover:\n- Shell companies controlled by\
+    \ {target_name}\n- Wire transfers to/from Epstein entities\n- Property transactions and ownership chains\n- Trust structures\
+    \ and beneficiaries\n- Banking relationships with JPMorgan/Deutsche Bank\n\nFocus on transactions between {start_year}\
+    \ and {end_year}.\nCross-reference with corporate filings and court documents.\nFlag any transactions over ${amount_threshold}.\"\
+    \"\",\n    \n    \"victim_pattern_analysis\": \"\"\"Identify patterns in victim testimonies:\n- Recruitment locations\
+    \ and methods\n- Age ranges and demographics\n- Common locations of abuse\n- Time periods of highest activity\n- Methods\
+    \ of coercion and control\n\nCross-reference victim statements with:\n- Flight logs showing presence at locations\n- Property\
+    \ records for access to venues\n- Staff schedules and employment records\n- Security camera footage timestamps\"\"\",\n\
+    \    \n    \"redaction_recovery\": \"\"\"Attempt to recover redacted text from:\n- Court documents released by SDNY and\
+    \ SDFL\n- FBI vault releases\n- FOIA responses\n- Maxwell trial exhibits\n\nUse techniques:\n- Metadata layer extraction\n\
+    - OCR artifact analysis\n- Copy-paste vulnerabilities\n- Font spacing analysis\n- Cross-reference with unredacted versions\n\
+    \nFocus on documents related to {case_name} from {date_range}.\"\"\",\n    \n    \"timeline_reconstruction\": \"\"\"Build\
+    \ a comprehensive timeline of events:\n- All known meetings between Epstein and {target_individual}\n- Property acquisitions\
+    \ and sales\n- Corporate formations and dissolutions\n- Legal proceedings and settlements\n- Victim incidents by date\n\
+    - Media coverage and public statements\n\nInclude supporting evidence for each event.\nFlag any gaps or inconsistencies\
+    \ in the timeline.\"\"\",\n    \n    \"social_media_intelligence\": \"\"\"Gather and analyze social media content:\n-\
+    \ Posts mentioning Epstein and associates\n- Deleted content recovered via Wayback Machine\n- Reddit discussions in relevant\
+    \ subreddits\n- Twitter/X conversations and threads\n- Instagram photos with location tags\n\nFocus on content from {platforms}\
+    \ between {start_date} and {end_date}.\nIdentify key influencers and information spread patterns.\nFlag any posts containing\
+    \ {keywords}.\"\"\",\n    \n    \"fact_verification\": \"\"\"Verify claims about {subject} by:\n- Cross-referencing with\
+    \ court documents\n- Checking against official records\n- Analyzing source credibility\n- Identifying supporting/contradicting\
+    \ evidence\n- Tracking legal adjudication status\n\nCategorize claims as: PROVEN, ALLEGED, CLAIMED, UNVERIFIED\nProvide\
+    \ confidence scores and evidence chains.\nFlag any disputed or contradictory information.\"\"\"\n}\n\nINTEGRATION_POINTS\
+    \ = {\n    \"pacer_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://pacer.uscourts.gov\",\n     \
+    \   \"description\": \"Public Access to Court Electronic Records for federal case documents\",\n        \"auth_method\"\
+    : \"username/password with 2FA\",\n        \"documentation_url\": \"https://pacer.uscourts.gov/pacer-cmecf-automation\"\
+    \n    },\n    \"documentcloud\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.documentcloud.org\"\
+    ,\n        \"description\": \"Document analysis and OCR platform for investigative documents\",\n        \"auth_method\"\
+    : \"API key\",\n        \"documentation_url\": \"https://www.documentcloud.org/help/api\"\n    },\n    \"courtlistener\"\
+    : {\n        \"type\": \"api\",\n        \"endpoint\": \"https://www.courtlistener.com/api/rest/v3/\",\n        \"description\"\
+    : \"Free legal database with opinions, oral arguments, and judges\",\n        \"auth_method\": \"API key\",\n        \"\
+    documentation_url\": \"https://www.courtlistener.com/api/\"\n    },\n    \"wayback_machine\": {\n        \"type\": \"\
+    api\",\n        \"endpoint\": \"http://archive.org/wayback/available\",\n        \"description\": \"Internet Archive for\
+    \ historical webpage snapshots\",\n        \"auth_method\": \"None required\",\n        \"documentation_url\": \"https://archive.org/help/wayback_api.php\"\
+    \n    },\n    \"twitter_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.twitter.com/2\",\n \
+    \       \"description\": \"Twitter/X API for social media intelligence\",\n        \"auth_method\": \"Bearer token\",\n\
+    \        \"documentation_url\": \"https://developer.twitter.com/en/docs/twitter-api\"\n    },\n    \"reddit_api\": {\n\
+    \        \"type\": \"api\",\n        \"endpoint\": \"https://oauth.reddit.com\",\n        \"description\": \"Reddit API\
+    \ for forum discussion analysis\",\n        \"auth_method\": \"OAuth2\",\n        \"documentation_url\": \"https://www.reddit.com/dev/api/\"\
+    \n    },\n    \"epstein_sqlite_db\": {\n        \"type\": \"database\",\n        \"endpoint\": \"local/epstein_files.db\"\
+    ,\n        \"description\": \"Local SQLite database for storing scraped and analyzed data\",\n        \"auth_method\"\
+    : \"File-based\",\n        \"documentation_url\": \"https://www.sqlite.org/docs.html\"\n    },\n    \"tesseract_ocr\"\
+    : {\n        \"type\": \"tool\",\n        \"endpoint\": \"local/tesseract\",\n        \"description\": \"Open-source OCR\
+    \ engine for text extraction from images and PDFs\",\n        \"auth_method\": \"Local installation\",\n        \"documentation_url\"\
+    : \"https://github.com/tesseract-ocr/tesseract\"\n    }\n}\n\n@dataclass\nclass FlightRecord:\n    date: str\n    aircraft:\
+    \ str\n    departure: str\n    arrival: str\n    passengers: List[str]\n    pilot: str\n    notes: str\n\n@dataclass\n\
+    class ContactRecord:\n    name: str\n    phone: str\n    email: str\n    address: str\n    category: str\n    source:\
+    \ str\n\n@dataclass\nclass FinancialTransaction:\n    date: str\n    amount: float\n    sender: str\n    receiver: str\n\
+    \    method: str\n    purpose: str\n    source_doc: str\n\n@dataclass\nclass NetworkNode:\n    entity_id: str\n    name:\
+    \ str\n    entity_type: str\n    connections: List[str]\n    metadata: Dict[str, Any]\n\nclass EpsteinDataParser:\n  \
+    \  @staticmethod\n    def parse_flight_log(text: str) -> List[FlightRecord]:\n        \"\"\"Parse Epstein flight log text\
+    \ into structured records\"\"\"\n        flights = []\n        lines = text.strip().split('\\n')\n        \n        for\
+    \ line in lines:\n            parts = re.split(r'\\s{2,}|\\t|,', line.strip())\n            if len(parts) >= 6:\n    \
+    \            try:\n                    flight = FlightRecord(\n                        date=parts[0].strip(),\n      \
+    \                  aircraft=parts[1].strip(),\n                        departure=parts[2].strip(),\n                 \
+    \       arrival=parts[3].strip(),\n                        passengers=[p.strip() for p in parts[4].split(';') if p.strip()],\n\
+    \                        pilot=parts[5].strip(),\n                        notes=' '.join(parts[6:]) if len(parts) > 6\
+    \ else ''\n                    )\n                    flights.append(flight)\n                except Exception as e:\n\
+    \                    logging.warning(f\"Failed to parse flight line: {line[:100]}... Error: {e}\")\n        \n       \
+    \ return flights\n    \n    @staticmethod\n    def parse_black_book(text: str) -> List[ContactRecord]:\n        \"\"\"\
+    Parse Epstein's black book contact list\"\"\"\n        contacts = []\n        lines = text.strip().split('\\n')\n    \
+    \    \n        for line in lines:\n            parts = re.split(r'\\s{2,}|\\t', line.strip())\n            if len(parts)\
+    \ >= 2:\n                contact = ContactRecord(\n                    name=parts[0].strip(),\n                    phone=parts[1].strip()\
+    \ if len(parts) > 1 else '',\n                    email=parts[2].strip() if len(parts) > 2 else '',\n                \
+    \    address=parts[3].strip() if len(parts) > 3 else '',\n                    category=parts[4].strip() if len(parts)\
+    \ > 4 else 'unknown',\n                    source='black_book'\n                )\n                contacts.append(contact)\n\
+    \        \n        return contacts\n    \n    @staticmethod\n    def extract_entities(text: str) -> Dict[str, List[str]]:\n\
+    \        \"\"\"Extract people, organizations, and locations from text\"\"\"\n        entities = {\n            'people':\
+    \ [],\n            'organizations': [],\n            'locations': [],\n            'dates': []\n        }\n        \n\
+    \        # Simple name extraction (can be enhanced with NER)\n        name_pattern = r'\\b[A-Z][a-z]+ [A-Z][a-z]+\\b'\n\
+    \        names = re.findall(name_pattern, text)\n        entities['people'] = list(set(names))\n        \n        # Organization\
+    \ extraction\n        org_pattern = r'\\b[A-Z][A-Z\\s]+(?:Inc|LLC|Corp|Foundation|Trust|Company)\\b'\n        orgs = re.findall(org_pattern,\
+    \ text)\n        entities['organizations'] = list(set(orgs))\n        \n        # Location extraction\n        location_pattern\
+    \ = r'\\b(?:Palm Beach|Little St James|Great St James|Manhattan|Paris|New Mexico|USVI|New York)\\b'\n        locations\
+    \ = re.findall(location_pattern, text, re.IGNORECASE)\n        entities['locations'] = list(set(locations))\n        \n\
+    \        # Date extraction\n        date_pattern = r'\\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\\\
+    s+\\d{1,2},?\\s+\\d{4}\\b'\n        dates = re.findall(date_pattern, text)\n        entities['dates'] = list(set(dates))\n\
+    \        \n        return entities\n    \n    @staticmethod\n    def recover_redacted_text(pdf_path: str) -> Dict[str,\
+    \ Any]:\n        \"\"\"Attempt to recover redacted text from PDF using multiple techniques\"\"\"\n        recovered =\
+    \ {\n            'method_used': '',\n            'text': '',\n            'confidence': 0.0,\n            'metadata':\
+    \ {}\n        }\n        \n        try:\n            # Try copy-paste vulnerability first\n            result = subprocess.run(['pdftotext',\
+    \ pdf_path, '-'], \n                                  capture_output=True, text=True, timeout=30)\n            if result.stdout:\n\
+    \                recovered['text'] = result.stdout\n                recovered['method_used'] = 'pdftotext'\n         \
+    \       recovered['confidence'] = 0.7\n            \n            # Try OCR if pdftotext fails\n            if not recovered['text']:\n\
+    \                result = subprocess.run(['tesseract', pdf_path, 'stdout', '--psm', '6'],\n                          \
+    \            capture_output=True, text=True, timeout=60)\n                if result.stdout:\n                    recovered['text']\
+    \ = result.stdout\n                    recovered['method_used'] = 'tesseract_ocr'\n                    recovered['confidence']\
+    \ = 0.5\n            \n            # Extract metadata\n            result = subprocess.run(['pdfinfo', pdf_path], \n \
+    \                                 capture_output=True, text=True, timeout=10)\n            if result.stdout:\n       \
+    \         recovered['metadata'] = dict(line.split(':', 1) for line in result.stdout.split('\\n') if ':' in line)\n   \
+    \             \n        except Exception as e:\n            logging.error(f\"Failed to recover redacted text from {pdf_path}:\
+    \ {e}\")\n        \n        return recovered\n\nclass NetworkAnalyzer:\n    @staticmethod\n    def build_connection_graph(entities:\
+    \ List[NetworkNode]) -> Dict[str, Any]:\n        \"\"\"Build a social network graph from entity connections\"\"\"\n  \
+    \      graph = {\n            'nodes': [],\n            'edges': [],\n            'metrics': {}\n        }\n        \n\
+    \        entity_map = {e.entity_id: e for e in entities}\n        \n        # Build nodes\n        for entity in entities:\n\
+    \            graph['nodes'].append({\n                'id': entity.entity_id,\n                'name': entity.name,\n\
+    \                'type': entity.entity_type,\n                'metadata': entity.metadata\n            })\n        \n\
+    \        # Build edges\n        edge_counts = defaultdict(int)\n        for entity in entities:\n            for connection\
+    \ in entity.connections:\n                if connection in entity_map:\n                    edge_counts[(entity.entity_id,\
+    \ connection)] += 1\n        \n        for (source, target), count in edge_counts.items():\n            graph['edges'].append({\n\
+    \                'source': source,\n                'target': target,\n                'weight': count,\n            \
+    \    'type': 'connection'\n            })\n        \n        # Calculate network metrics\n        graph['metrics'] = NetworkAnalyzer.calculate_network_metrics(graph)\n\
+    \        \n        return graph\n    \n    @staticmethod\n    def calculate_network_metrics(graph: Dict[str, Any]) ->\
+    \ Dict[str, float]:\n        \"\"\"Calculate network centrality and connectivity metrics\"\"\"\n        metrics = {}\n\
+    \        \n        # Node count\n        metrics['node_count'] = len(graph['nodes'])\n        metrics['edge_count'] =\
+    \ len(graph['edges'])\n        \n        # Average degree\n        if graph['nodes']:\n            degrees = [0] * len(graph['nodes'])\n\
+    \            node_index = {node['id']: i for i, node in enumerate(graph['nodes'])}\n            \n            for edge\
+    \ in graph['edges']:\n                if edge['source'] in node_index:\n                    degrees[node_index[edge['source']]]\
+    \ += edge['weight']\n                if edge['target'] in node_index:\n                    degrees[node_index[edge['target']]]\
+    \ += edge['weight']\n            \n            metrics['avg_degree'] = statistics.mean(degrees) if degrees else 0\n  \
+    \          metrics['max_degree'] = max(degrees) if degrees else 0\n        \n        # Network density\n        n = metrics['node_count']\n\
+    \        if n > 1:\n            max_edges = n * (n - 1) / 2\n            metrics['density'] = metrics['edge_count'] /\
+    \ max_edges\n        else:\n            metrics['density'] = 0\n        \n        return metrics\n    \n    @staticmethod\n\
+    \    def find_key_players(graph: Dict[str, Any], min_connections: int = 5) -> List[Dict[str, Any]]:\n        \"\"\"Identify\
+    \ key players in the network based on connectivity\"\"\"\n        key_players = []\n        \n        # Build adjacency\
+    \ list\n        adjacency = defaultdict(list)\n        for edge in graph['edges']:\n            adjacency[edge['source']].append((edge['target'],\
+    \ edge['weight']))\n            adjacency[edge['target']].append((edge['source'], edge['weight']))\n        \n       \
+    \ # Calculate centrality for each node\n        for node in graph['nodes']:\n            node_id = node['id']\n      \
+    \      connections = adjacency[node_id]\n            total_weight = sum(weight for _, weight in connections)\n       \
+    \     \n            if len(connections) >= min_connections:\n                key_players.append({\n                  \
+    \  'node': node,\n                    'connection_count': len(connections),\n                    'total_weight': total_weight,\n\
+    \                    'centrality_score': total_weight / len(connections) if connections else 0\n                })\n \
+    \       \n        # Sort by centrality score\n        key_players.sort(key=lambda x: x['centrality_score'], reverse=True)\n\
+    \        \n        return key_players\n\nclass FactVerifier:\n    @staticmethod\n    def categorize_claim(claim: str,\
+    \ evidence: List[Dict[str, Any]]) -> Dict[str, Any]:\n        \"\"\"Categorize a claim based on available evidence\"\"\
+    \"\n        result = {\n            'claim': claim,\n            'category': 'UNVERIFIED',\n            'confidence':\
+    \ 0.0,\n            'evidence': [],\n            'contradictions': []\n        }\n        \n        # Analyze each piece\
+    \ of evidence\n        court_evidence = []\n        media_evidence = []\n        other_evidence = []\n        \n     \
+    \   for ev in evidence:\n            if ev.get('type') == 'court_document':\n                court_evidence.append(ev)\n\
+    \            elif ev.get('type') == 'media_report':\n                media_evidence.append(ev)\n            else:\n  \
+    \              other_evidence.append(ev)\n        \n        # Prioritize court evidence\n        if court_evidence:\n\
+    \            # Check for proven claims\n            proven = any(ev.get('status') == 'proven' for ev in court_evidence)\n\
+    \            if proven:\n                result['category'] = 'PROVEN'\n                result['confidence'] = 0.95\n\
+    \            else:\n                result['category'] = 'ALLEGED'\n                result['confidence'] = 0.7\n     \
+    \       \n            result['evidence'].extend(court_evidence)\n        \n        # Check media evidence\n        elif\
+    \ media_evidence:\n            credible_sources = ['nytimes.com', 'washingtonpost.com', 'wsj.com', 'reuters.com', 'ap.org']\n\
+    \            credible_count = sum(1 for ev in media_evidence \n                               if any(source in ev.get('source',\
+    \ '') for source in credible_sources))\n            \n            if credible_count >= 2:\n                result['category']\
+    \ = 'CLAIMED'\n                result['confidence'] = 0.6\n            else:\n                result['category'] = 'UNVERIFIED'\n\
+    \                result['confidence'] = 0.3\n            \n            result['evidence'].extend(media_evidence)\n   \
+    \     \n        # Add other evidence\n        result['evidence'].extend(other_evidence)\n        \n        return result\n\
+    \    \n    @staticmethod\n    def calculate_source_credibility(source: str, history: List[Dict[str, Any]]) -> float:\n\
+    \        \"\"\"Calculate credibility score for a source based on historical accuracy\"\"\"\n        if not history:\n\
+    \            return 0.5  # Neutral for unknown sources\n        \n        total_claims = len(history)\n        accurate_claims\
+    \ = sum(1 for h in history if h.get('accuracy') == 'accurate')\n        \n        base_score = accurate_claims / total_claims\
+    \ if total_claims > 0 else 0.5\n        \n        # Adjust for source type\n        if 'court' in source.lower() or '.gov'\
+    \ in source:\n            base_score = min(0.95, base_score + 0.2)\n        elif any(domain in source for domain in ['nytimes.com',\
+    \ 'washingtonpost.com', 'wsj.com']):\n            base_score = min(0.9, base_score + 0.1)\n        elif any(domain in\
+    \ source for domain in ['twitter.com', 'facebook.com', 'reddit.com']):\n            base_score = max(0.1, base_score -\
+    \ 0.3)\n        \n        return max(0.0, min(1.0, base_score))\n\nclass ReportGenerator:\n    @staticmethod\n    def\
+    \ generate_network_report(graph: Dict[str, Any], key_players: List[Dict[str, Any]]) -> str:\n        \"\"\"Generate a\
+    \ comprehensive network analysis report\"\"\"\n        report = []\n        report.append(\"EPSTEIN NETWORK ANALYSIS REPORT\"\
+    )\n        report.append(\"=\" * 40)\n        report.append(f\"Generated: {datetime.datetime.now().strftime('%Y-%m-%d\
+    \ %H:%M:%S')}\")\n        report.append(\"\")\n        \n        # Network overview\n        metrics = graph['metrics']\n\
+    \        report.append(\"NETWORK OVERVIEW:\")\n        report.append(f\"- Total Entities: {metrics['node_count']}\")\n\
+    \        report.append(f\"- Total Connections: {metrics['edge_count']}\")\n        report.append(f\"- Network Density:\
+    \ {metrics['density']:.3f}\")\n        report.append(f\"- Average Connections: {metrics['avg_degree']:.1f}\")\n      \
+    \  report.append(\"\")\n        \n        # Key players\n        report.append(\"KEY PLAYERS (Top 10):\")\n        for\
+    \ i, player in enumerate(key_players[:10], 1):\n            node = player['node']\n            report.append(f\"{i}. {node['name']}\
+    \ ({node['type']})\")\n            report.append(f\"   - Connections: {player['connection_count']}\")\n            report.append(f\"\
+    \   - Centrality Score: {player['centrality_score']:.2f}\")\n            report.append(\"\")\n        \n        # Connection\
+    \ types\n        edge_types = defaultdict(int)\n        for edge in graph['edges']:\n            edge_types[edge['type']]\
+    \ += 1\n        \n        report.append(\"CONNECTION TYPES:\")\n        for edge_type, count in sorted(edge_types.items(),\
+    \ key=lambda x: x[1], reverse=True):\n            report.append(f\"- {edge_type}: {count}\")\n        \n        return\
+    \ \"\\n\".join(report)\n    \n    @staticmethod\n    def generate_timeline_report(events: List[Dict[str, Any]]) -> str:\n\
+    \        \"\"\"Generate a chronological timeline report\"\"\"\n        report = []\n        report.append(\"EPSTEIN CASE\
+    \ TIMELINE\")\n        report.append(\"=\" * 25)\n        report.append(\"\")\n        \n        # Sort events by date\n\
+    \        sorted_events = sorted(events, key=lambda x: x.get('date', ''))\n        \n        current_year = None\n    \
+    \    for event in sorted_events:\n            date = event.get('date', '')\n            if not date:\n               \
+    \ continue\n                \n            year = date[:4] if len(date) >= 4 else 'Unknown'\n            \n           \
+    \ if year != current_year:\n                report.append(f\"\\n{year}:\")\n                current_year = year\n    \
+    \        \n            report.append(f\"  {date}: {event.get('description', 'No description')}\")\n            if event.get('sources'):\n\
+    \                report.append(f\"    Sources: {', '.join(event['sources'][:3])}\")\n        \n        return \"\\n\"\
+    .join(report)\n    \n    @staticmethod\n    def export_to_csv(data: List[Dict[str, Any]], filename: str) -> bool:\n  \
+    \      \"\"\"Export data to CSV format\"\"\"\n        if not data:\n            return False\n        \n        try:\n\
+    \            with open(filename, 'w', newline='', encoding='utf-8') as csvfile:\n                fieldnames = data[0].keys()\n\
+    \                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n                writer.writeheader()\n     \
+    \           writer.writerows(data)\n            return True\n        except Exception as e:\n            logging.error(f\"\
+    Export failed: {e}\")\n            return False\n\nclass EpsteinFilesIntel:\n    def __init__(self, config: Dict[str,\
+    \ Any]):\n        self.config = config\n        self.db_path = config.get('db_path', 'epstein_files.db')\n        self.session\
+    \ = requests.Session()\n        self.session.headers.update({\n            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0;\
+    \ Win64; x64) AppleWebKit/537.36'\n        })\n        self.setup_database()\n        self.setup_logging()\n    \n   \
+    \ def setup_database(self):\n        \"\"\"Initialize SQLite database with required tables\"\"\"\n        conn = sqlite3.connect(self.db_path)\n\
+    \        cursor = conn.cursor()\n        \n        # Create tables\n        cursor.execute('''\n            CREATE TABLE\
+    \ IF NOT EXISTS entities (\n                id TEXT PRIMARY KEY,\n                name TEXT NOT NULL,\n              \
+    \  type TEXT NOT NULL,\n                metadata TEXT,\n                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n\
+    \            )\n        ''')\n        \n        cursor.execute('''\n            CREATE TABLE IF NOT EXISTS connections\
+    \ (\n                id INTEGER PRIMARY KEY AUTOINCREMENT,\n                source_id TEXT,\n                target_id\
+    \ TEXT,\n                type TEXT,\n                weight REAL,\n                metadata TEXT,\n                created_at\
+    \ TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n                FOREIGN KEY (source_id) REFERENCES entities (id),\n          \
+    \      FOREIGN KEY (target_id) REFERENCES entities (id)\n            )\n        ''')\n        \n        cursor.execute('''\n\
+    \            CREATE TABLE IF NOT EXISTS documents (\n                id TEXT PRIMARY KEY,\n                title TEXT,\n\
+    \                source TEXT,\n                url TEXT,\n                content TEXT,\n                metadata TEXT,\n\
+    \                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n            )\n        ''')\n        \n        cursor.execute('''\n\
+    \            CREATE TABLE IF NOT EXISTS flights (\n                id INTEGER PRIMARY KEY AUTOINCREMENT,\n           \
+    \     date TEXT,\n                aircraft TEXT,\n                departure TEXT,\n                arrival TEXT,\n   \
+    \             passengers TEXT,\n                pilot TEXT,\n                notes TEXT,\n                source TEXT,\n\
+    \                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n            )\n        ''')\n        \n        cursor.execute('''\n\
+    \            CREATE TABLE IF NOT EXISTS contacts (\n                id INTEGER PRIMARY KEY AUTOINCREMENT,\n          \
+    \      name TEXT,\n                phone TEXT,\n                email TEXT,\n                address TEXT,\n         \
+    \       category TEXT,\n                source TEXT,\n                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n\
+    \            )\n        ''')\n        \n        conn.commit()\n        conn.close()\n    \n    def setup_logging(self):\n\
+    \        \"\"\"Configure logging for the module\"\"\"\n        log_level = self.config.get('log_level', 'INFO')\n    \
+    \    logging.basicConfig(\n            level=getattr(logging, log_level),\n            format='%(asctime)s - %(name)s\
+    \ - %(levelname)s - %(message)s',\n            handlers=[\n                logging.FileHandler('epstein_intel.log'),\n\
+    \                logging.StreamHandler()\n            ]\n        )\n        self.logger = logging.getLogger(__name__)\n\
+    \    \n    def scrape_court_documents(self, court: str, case_number: str) -> List[Dict[str, Any]]:\n        \"\"\"Scrape\
+    \ court documents from PACER or CourtListener\"\"\"\n        documents = []\n        \n        # Try CourtListener first\
+    \ (free)\n        try:\n            url = f\"https://www.courtlistener.com/api/rest/v3/?type=document&q=epstein&court={court}\"\
+    \n            response = self.session.get(url, timeout=30)\n            if response.status_code == 200:\n            \
+    \    data = response.json()\n                for doc in data.get('results', []):\n                    documents.append({\n\
+    \                        'id': doc.get('id'),\n                        'title': doc.get('case_name', ''),\n          \
+    \              'source': 'courtlistener',\n                        'url': doc.get('absolute_url', ''),\n             \
+    \           'content': doc.get('plain_text', ''),\n                        'metadata': json.dumps({\n                \
+    \            'date_filed': doc.get('date_filed'),\n                            'court': doc.get('court', ''),\n      \
+    \                      'docket_number': doc.get('docket_number', '')\n                        })\n                   \
+    \ })\n        except Exception as e:\n            self.logger.error(f\"CourtListener scrape failed: {e}\")\n        \n\
+    \        return documents\n    \n    def analyze_flight_logs(self, log_data: str) -> Dict[str, Any]:\n        \"\"\"Analyze\
+    \ flight logs for patterns and key passengers\"\"\"\n        parser = EpsteinDataParser()\n        flights = parser.parse_flight_log(log_data)\n\
+    \        \n        analysis = {\n            'total_flights': len(flights),\n            'unique_passengers': set(),\n\
+    \            'destination_frequency': Counter(),\n            'passenger_frequency': Counter(),\n            'high_frequency_passengers':\
+    \ []\n        }\n        \n        for flight in flights:\n            # Count destinations\n            analysis['destination_frequency'][flight.arrival]\
+    \ += 1\n            \n            # Count passengers\n            for passenger in flight.passengers:\n              \
+    \  clean_name = passenger.strip().lower()\n                if clean_name and len(clean_name) > 2:\n                  \
+    \  analysis['passenger_frequency'][clean_name] += 1\n                    analysis['unique_passengers'].add(clean_name)\n\
+    \        \n        # Identify high-frequency passengers\n        for passenger, count in analysis['passenger_frequency'].most_common(20):\n\
+    \            if count >= 3:  # Minimum 3 flights\n                analysis['high_frequency_passengers'].append({\n   \
+    \                 'name': passenger,\n                    'flight_count': count\n                })\n        \n      \
+    \  analysis['unique_passengers'] = len(analysis['unique_passengers'])\n        \n        return analysis\n    \n    def\
+    \ extract_black_book_contacts(self, book_data: str) -> List[Dict[str, Any]]:\n        \"\"\"Extract and categorize contacts\
+    \ from Epstein's black book\"\"\"\n        parser = EpsteinDataParser()\n        contacts = parser.parse_black_book(book_data)\n\
+    \        \n        categorized = []\n        for contact in contacts:\n            categorized.append({\n            \
+    \    'name': contact.name,\n                'phone': contact.phone,\n                'email': contact.email,\n       \
+    \         'address': contact.address,\n                'category': contact.category,\n                'source': 'black_book',\n\
+    \                'extracted_at': datetime.datetime.now().isoformat()\n            })\n        \n        return categorized\n\
+    \    \n    def build_social_network(self, data_sources: List[str]) -> Dict[str, Any]:\n        \"\"\"Build comprehensive\
+    \ social network from multiple data sources\"\"\"\n        entities = []\n        connections = []\n        \n       \
+    \ # Process each data source\n        for source in data_sources:\n            try:\n                if source.endswith('.json'):\n\
+    \                    with open(source, 'r') as f:\n                        data = json.load(f)\n                elif source.endswith('.csv'):\n\
+    \                    data = self._load_csv_data(source)\n                else:\n                    continue\n       \
+    \         \n                # Extract entities and connections\n                for item in data:\n                  \
+    \  if 'name' in item:\n                        entity = NetworkNode(\n                            entity_id=hashlib.md5(item['name'].encode()).hexdigest(),\n\
+    \                            name=item['name'],\n                            entity_type=item.get('type', 'person'),\n\
+    \                            connections=[],\n                            metadata=item\n                        )\n \
+    \                       entities.append(entity)\n                        \n                        # Add connections\n\
+    \                        if 'connections' in item:\n                            for conn in item['connections']:\n   \
+    \                             connections.append({\n                                    'source': entity.entity_id,\n\
+    \                                    'target': conn,\n                                    'type': 'known_association'\n\
+    \                                })\n                                \n            except Exception as e:\n          \
+    \      self.logger.error(f\"Failed to process data source {source}: {e}\")\n        \n        # Build network graph\n\
+    \        analyzer = NetworkAnalyzer()\n        graph = analyzer.build_connection_graph(entities)\n        key_players\
+    \ = analyzer.find_key_players(graph)\n        \n        return {\n            'graph': graph,\n            'key_players':\
+    \ key_players,\n            'entity_count': len(entities),\n            'connection_count': len(connections)\n       \
+    \ }\n    \n    def verify_facts(self, claims: List[str], evidence_sources: List[str]) -> List[Dict[str, Any]]:\n     \
+    \   \"\"\"Verify claims against available evidence\"\"\"\n        verifier = FactVerifier()\n        verified_claims =\
+    \ []\n        \n        for claim in claims:\n            # Gather evidence for this claim\n            evidence = []\n\
+    \            for source in evidence_sources:\n                try:\n                    if source.endswith('.json'):\n\
+    \                        with open(source, 'r') as f:\n                            source_data = json.load(f)\n      \
+    \                      evidence.extend(source_data)\n                except Exception as e:\n                    self.logger.warning(f\"\
+    Failed to load evidence source {source}: {e}\")\n            \n            # Verify claim\n            result = verifier.categorize_claim(claim,\
+    \ evidence)\n            verified_claims.append(result)\n        \n        return verified_claims\n    \n    def generate_investigation_report(self,\
+    \ investigation_type: str, parameters: Dict[str, Any]) -> str:\n        \"\"\"Generate comprehensive investigation report\"\
+    \"\"\n        if investigation_type == 'network_analysis':\n            network_data = self.build_social_network(parameters.get('data_sources',\
+    \ []))\n            report = ReportGenerator.generate_network_report(\n                network_data['graph'], \n     \
+    \           network_data['key_players']\n            )\n            \n        elif investigation_type == 'timeline':\n\
+    \            events = parameters.get('events', [])\n            report = ReportGenerator.generate_timeline_report(events)\n\
+    \            \n        elif investigation_type == 'flight_analysis':\n            log_data = parameters.get('flight_logs',\
+    \ '')\n            analysis = self.analyze_flight_logs(log_data)\n            report = self._generate_flight_report(analysis)\n\
+    \            \n        else:\n            report = f\"Unknown investigation type: {investigation_type}\"\n        \n \
+    \       return report\n    \n    def export_data(self, data_type: str, format: str, output_path: str) -> bool:\n     \
+    \   \"\"\"Export analyzed data to specified format\"\"\"\n        try:\n            conn = sqlite3.connect(self.db_path)\n\
+    \            cursor = conn.cursor()\n            \n            if data_type == 'entities':\n                cursor.execute(\"\
+    SELECT * FROM entities\")\n                rows = cursor.fetchall()\n                data = []\n                for row\
+    \ in rows:\n                    data.append({\n                        'id': row[0],\n                        'name':\
+    \ row[1],\n                        'type': row[2],\n                        'metadata': row[3],\n                    \
+    \    'created_at': row[4]\n                    })\n            \n            elif data_type == 'connections':\n      \
+    \          cursor.execute(\"SELECT * FROM connections\")\n                rows = cursor.fetchall()\n                data\
+    \ = []\n                for row in rows:\n                    data.append({\n                        'id': row[0],\n \
+    \                       'source_id': row[1],\n                        'target_id': row[2],\n                        'type':\
+    \ row[3],\n                        'weight': row[4],\n                        'metadata': row[5],\n                  \
+    \      'created_at': row[6]\n                    })\n            \n            else:\n                self.logger.error(f\"\
+    Unknown data type: {data_type}\")\n                return False\n            \n            conn.close()\n            \n\
+    \            if format == 'csv':\n                return ReportGenerator.export_to_csv(data, output_path)\n          \
+    \  elif format == 'json':\n                with open(output_path, 'w') as f:\n                    json.dump(data, f, indent=2)\n\
+    \                return True\n            else:\n                self.logger.error(f\"Unsupported format: {format}\")\n\
+    \                return False\n                \n        except Exception as e:\n            self.logger.error(f\"Export\
+    \ failed: {e}\")\n            return False\n    \n    def _load_csv_data(self, filepath: str) -> List[Dict[str, Any]]:\n\
+    \        \"\"\"Load data from CSV file\"\"\"\n        data = []\n        try:\n            with open(filepath, 'r', encoding='utf-8')\
+    \ as f:\n                reader = csv.DictReader(f)\n                data = list(reader)\n        except Exception as\
+    \ e:\n            self.logger.error(f\"Failed to load CSV {filepath}: {e}\")\n        return data\n    \n    def _generate_flight_report(self,\
+    \ analysis: Dict[str, Any]) -> str:\n        \"\"\"Generate flight analysis report\"\"\"\n        report = []\n      \
+    \  report.append(\"EPSTEIN FLIGHT LOG ANALYSIS\")\n        report.append(\"=\" * 30)\n        report.append(f\"Total Flights\
+    \ Analyzed: {analysis['total_flights']}\")\n        report.append(f\"Unique Passengers: {analysis['unique_passengers']}\"\
+    )\n        report.append(\"\")\n        \n        report.append(\"TOP DESTINATIONS:\")\n        for dest, count in analysis['destination_frequency'].most_common(10):\n\
+    \            report.append(f\"- {dest}: {count} flights\")\n        \n        report.append(\"\\nHIGH-FREQUENCY PASSENGERS:\"\
+    )\n        for passenger in analysis['high_frequency_passengers'][:15]:\n            report.append(f\"- {passenger['name']}:\
+    \ {passenger['flight_count']} flights\")\n        \n        return \"\\n\".join(report)\n\nclass SkillEngine:\n    def\
+    \ __init__(self, config: Dict[str, Any] = None):\n        self.config = config or {}\n        self.intel = EpsteinFilesIntel(self.config)\n\
+    \        self.logger = logging.getLogger(__name__)\n    \n    def run(self, action: str, parameters: Dict[str, Any]) ->\
+    \ Dict[str, Any]:\n        \"\"\"Main entry point for skill execution\"\"\"\n        try:\n            if action == 'scrape_court_documents':\n\
+    \                return {\n                    'success': True,\n                    'data': self.intel.scrape_court_documents(\n\
+    \                        parameters.get('court', ''),\n                        parameters.get('case_number', '')\n   \
+    \                 )\n                }\n            \n            elif action == 'analyze_flight_logs':\n            \
+    \    return {\n                    'success': True,\n                    'data': self.intel.analyze_flight_logs(\n   \
+    \                     parameters.get('log_data', '')\n                    )\n                }\n            \n       \
+    \     elif action == 'extract_black_book':\n                return {\n                    'success': True,\n         \
+    \           'data': self.intel.extract_black_book_contacts(\n                        parameters.get('book_data', '')\n\
+    \                    )\n                }\n            \n            elif action == 'build_network':\n               \
+    \ return {\n                    'success': True,\n                    'data': self.intel.build_social_network(\n     \
+    \                   parameters.get('data_sources', [])\n                    )\n                }\n            \n     \
+    \       elif action == 'verify_facts':\n                return {\n                    'success': True,\n             \
+    \       'data': self.intel.verify_facts(\n                        parameters.get('claims', []),\n                    \
+    \    parameters.get('evidence_sources', [])\n                    )\n                }\n            \n            elif\
+    \ action == 'generate_report':\n                return {\n                    'success': True,\n                    'data':\
+    \ self.intel.generate_investigation_report(\n                        parameters.get('investigation_type', ''),\n     \
+    \                   parameters\n                    )\n                }\n            \n            elif action == 'export_data':\n\
+    \                return {\n                    'success': self.intel.export_data(\n                        parameters.get('data_type',\
+    \ ''),\n                        parameters.get('format', 'csv'),\n                        parameters.get('output_path',\
+    \ 'output.csv')\n                    )\n                }\n            \n            else:\n                return {\n\
+    \                    'success': False,\n                    'error': f'Unknown action: {action}'\n                }\n\
+    \                \n        except Exception as e:\n            self.logger.error(f\"Skill execution failed: {e}\")\n \
+    \           return {\n                'success': False,\n                'error': str(e)\n            }\n\nclass TestEpsteinFilesIntel(unittest.TestCase):\n\
+    \    \n    def setUp(self):\n        self.config = {\n            'db_path': ':memory:',\n            'log_level': 'DEBUG'\n\
+    \        }\n        self.skill = SkillEngine(self.config)\n        self.intel = EpsteinFilesIntel(self.config)\n    \n\
+    \    def test_metadata_validation(self):\n        \"\"\"Test that skill metadata is properly formatted\"\"\"\n       \
+    \ self.assertEqual(SKILL_METADATA['name'], \"Epstein Files Intelligence Analysis & Data Scraper\")\n        self.assertEqual(SKILL_METADATA['id'],\
+    \ \"epstein_files_intel\")\n        self.assertIn('capabilities', SKILL_METADATA)\n        self.assertIsInstance(SKILL_METADATA['capabilities'],\
+    \ list)\n        self.assertGreater(len(SKILL_METADATA['capabilities']), 0)\n    \n    def test_flight_log_parsing(self):\n\
+    \        \"\"\"Test flight log parsing functionality\"\"\"\n        sample_log = \"\"\"2024-01-15    Boeing 727    Teterboro\
+    \    St. Thomas    Epstein; Maxwell; Clinton    Pilot1    Notes\n2024-01-20    Gulfstream    Palm Beach    Paris    Epstein;\
+    \ Prince Andrew    Pilot2    Refuel\"\"\"\n        \n        parser = EpsteinDataParser()\n        flights = parser.parse_flight_log(sample_log)\n\
+    \        \n        self.assertEqual(len(flights), 2)\n        self.assertEqual(flights[0].aircraft, \"Boeing 727\")\n\
+    \        self.assertIn(\"Epstein\", flights[0].passengers)\n        self.assertEqual(flights[1].arrival, \"Paris\")\n\
+    \    \n    def test_black_book_parsing(self):\n        \"\"\"Test black book contact extraction\"\"\"\n        sample_book\
+    \ = \"\"\"John Doe    555-1234    john@email.com    123 Main St    Business\nJane Smith    555-5678    jane@email.com\
+    \    456 Oak Ave    Personal\"\"\"\n        \n        parser = EpsteinDataParser()\n        contacts = parser.parse_black_book(sample_book)\n\
+    \        \n        self.assertEqual(len(contacts), 2)\n        self.assertEqual(contacts[0].name, \"John Doe\")\n    \
+    \    self.assertEqual(contacts[1].phone, \"555-5678\")\n    \n    def test_entity_extraction(self):\n        \"\"\"Test\
+    \ entity extraction from text\"\"\"\n        sample_text = \"Jeffrey Epstein and Ghislaine Maxwell met with Bill Clinton\
+    \ on Little St James in January 2024.\"\n        \n        parser = EpsteinDataParser()\n        entities = parser.extract_entities(sample_text)\n\
+    \        \n        self.assertIn('people', entities)\n        self.assertIn('locations', entities)\n        self.assertIn('dates',\
+    \ entities)\n        self.assertGreater(len(entities['people']), 0)\n    \n    def test_network_analysis(self):\n    \
+    \    \"\"\"Test network graph building and analysis\"\"\"\n        entities = [\n            NetworkNode(\"1\", \"Epstein\"\
+    , \"person\", [\"2\", \"3\"], {}),\n            NetworkNode(\"2\", \"Maxwell\", \"person\", [\"1\", \"3\"], {}),\n   \
+    \         NetworkNode(\"3\", \"Clinton\", \"person\", [\"1\", \"2\"], {})\n        ]\n        \n        analyzer = NetworkAnalyzer()\n\
+    \        graph = analyzer.build_connection_graph(entities)\n        \n        self.assertEqual(graph['metrics']['node_count'],\
+    \ 3)\n        self.assertEqual(graph['metrics']['edge_count'], 6)  # Bidirectional edges\n        self.assertIn('density',\
+    \ graph['metrics'])\n        \n        key_players = analyzer.find_key_players(graph, min_connections=1)\n        self.assertEqual(len(key_players),\
+    \ 3)\n    \n    def test_fact_verification(self):\n        \"\"\"Test fact verification functionality\"\"\"\n        verifier\
+    \ = FactVerifier()\n        \n        claim = \"Epstein flew to his island with Clinton\"\n        evidence = [\n    \
+    \        {'type': 'court_document', 'status': 'proven', 'source': 'court.gov'},\n            {'type': 'media_report',\
+    \ 'source': 'nytimes.com'}\n        ]\n        \n        result = verifier.categorize_claim(claim, evidence)\n       \
+    \ \n        self.assertEqual(result['claim'], claim)\n        self.assertEqual(result['category'], 'PROVEN')\n       \
+    \ self.assertGreater(result['confidence'], 0.9)\n    \n    def test_report_generation(self):\n        \"\"\"Test report\
+    \ generation capabilities\"\"\"\n        graph = {\n            'nodes': [\n                {'id': '1', 'name': 'Epstein',\
+    \ 'type': 'person', 'metadata': {}},\n                {'id': '2', 'name': 'Maxwell', 'type': 'person', 'metadata': {}}\n\
+    \            ],\n            'edges': [\n                {'source': '1', 'target': '2', 'weight': 5, 'type': 'connection'}\n\
+    \            ],\n            'metrics': {\n                'node_count': 2,\n                'edge_count': 1,\n      \
+    \          'density': 0.5,\n                'avg_degree': 1.0,\n                'max_degree': 1\n            }\n     \
+    \   }\n        \n        key_players = [\n            {\n                'node': {'id': '1', 'name': 'Epstein', 'type':\
+    \ 'person'},\n                'connection_count': 1,\n                'centrality_score': 1.0\n            }\n       \
+    \ ]\n        \n        report = ReportGenerator.generate_network_report(graph, key_players)\n        \n        self.assertIn(\"\
+    EPSTEIN NETWORK ANALYSIS REPORT\", report)\n        self.assertIn(\"Epstein\", report)\n        self.assertIn(\"Network\
+    \ Density\", report)\n    \n    def test_skill_engine_execution(self):\n        \"\"\"Test skill engine action execution\"\
+    \"\"\n        # Test flight log analysis\n        log_data = \"\"\"2024-01-15    Boeing    Teterboro    St. Thomas   \
+    \ Epstein; Maxwell    Pilot1\"\"\"\n        result = self.skill.run('analyze_flight_logs', {'log_data': log_data})\n \
+    \       \n        self.assertTrue(result['success'])\n        self.assertIn('data', result)\n        self.assertIn('total_flights',\
+    \ result['data'])\n        self.assertEqual(result['data']['total_flights'], 1)\n    \n    def test_data_export(self):\n\
+    \        \"\"\"Test data export functionality\"\"\"\n        # Add some test data\n        conn = sqlite3.connect(self.intel.db_path)\n\
+    \        cursor = conn.cursor()\n        cursor.execute(\"INSERT INTO entities (id, name, type, metadata) VALUES (?, ?,\
+    \ ?, ?)\",\n                      ('test1', 'Test Entity', 'person', '{}'))\n        conn.commit()\n        conn.close()\n\
+    \        \n        # Test export\n        success = self.intel.export_data('entities', 'csv', 'test_export.csv')\n   \
+    \     self.assertTrue(success)\n        \n        # Verify file was created\n        self.assertTrue(os.path.exists('test_export.csv'))\n\
+    \        \n        # Clean up\n        if os.path.exists('test_export.csv'):\n            os.remove('test_export.csv')\n\
+    \    \n    def test_error_handling(self):\n        \"\"\"Test error handling in skill execution\"\"\"\n        # Test\
+    \ with invalid action\n        result = self.skill.run('invalid_action', {})\n        self.assertFalse(result['success'])\n\
+    \        self.assertIn('error', result)\n        \n        # Test with missing parameters\n        result = self.skill.run('analyze_flight_logs',\
+    \ {})\n        self.assertTrue(result['success'])  # Should handle empty data gracefully\n        self.assertIn('total_flights',\
+    \ result['data'])\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Epstein Files Intelligence Analysis & Data Scraper skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''epstein_files_intel'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

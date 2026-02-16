@@ -1,0 +1,60 @@
+name: pihole-ctl
+title: Pihole Ctl
+version: 1.0.1
+description: Manage and monitor local Pi-hole instance. Query FTL database for statistics (blocked ads, top clients) and control
+  service via CLI. Use when user asks "how many ads blocked", "pihole status", or "update gravity".
+metadata:
+  author: 1999azzar
+  category: Development & Coding
+  tags:
+  - development-coding
+  - pihole
+  - ctl
+  source: clawhub-community
+  clawhub_slug: pihole-ctl
+  clawhub_path: 1999azzar/pihole-ctl
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pihole Ctl
+
+    # Source: ClawHub community skill by 1999azzar
+
+    # Install: clawhub install pihole-ctl
+
+    # Path: 1999azzar/pihole-ctl
+
+
+    ## Description
+
+    Manage and monitor local Pi-hole instance. Query FTL database for statistics (blocked ads, top clients) and control service
+    via CLI. Use when user asks "how many ads blocked", "pihole status", or "update gravity".
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/db-schema.md
+
+    - scripts/query_db.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pihole-ctl
+
+    ```'
+examples:
+- description: Install Pihole Ctl from ClawHub
+  usage: clawhub install pihole-ctl
+schema_version: '1.0'

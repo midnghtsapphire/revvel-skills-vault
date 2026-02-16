@@ -1,0 +1,63 @@
+name: x-articles
+title: X Articles
+version: 1.1.2
+description: Publish viral X (Twitter) Articles with AI. Long-form content that gets engagement. Proven hook patterns, browser
+  automation. Works with Claude, Cursor, OpenClaw.
+metadata:
+  author: nextfrontierbuilds
+  category: Search & Research
+  tags:
+  - search-research
+  - articles
+  source: clawhub-community
+  clawhub_slug: x-articles
+  clawhub_path: nextfrontierbuilds/x-articles
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Articles
+
+    # Source: ClawHub community skill by nextfrontierbuilds
+
+    # Install: clawhub install x-articles
+
+    # Path: nextfrontierbuilds/x-articles
+
+
+    ## Description
+
+    Publish viral X (Twitter) Articles with AI. Long-form content that gets engagement. Proven hook patterns, browser automation.
+    Works with Claude, Cursor, OpenClaw.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - references/viral-patterns.md
+
+    - scripts/format-for-x.sh
+
+    - scripts/publish-article.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-articles
+
+    ```'
+examples:
+- description: Install X Articles from ClawHub
+  usage: clawhub install x-articles
+schema_version: '1.0'

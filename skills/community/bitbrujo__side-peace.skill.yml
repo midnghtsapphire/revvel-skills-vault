@@ -1,0 +1,58 @@
+name: side-peace
+title: Side Peace
+version: 1.1.1
+description: Minimal secure secret handoff. Zero external deps. Human opens browser form, submits secret, agent receives it
+  via temp file. Secret NEVER appears in stdout/logs.
+metadata:
+  author: bitbrujo
+  category: Search & Research
+  tags:
+  - search-research
+  - side
+  - peace
+  source: clawhub-community
+  clawhub_slug: side-peace
+  clawhub_path: bitbrujo/side-peace
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Side Peace
+
+    # Source: ClawHub community skill by bitbrujo
+
+    # Install: clawhub install side-peace
+
+    # Path: bitbrujo/side-peace
+
+
+    ## Description
+
+    Minimal secure secret handoff. Zero external deps. Human opens browser form, submits secret, agent receives it via temp
+    file. Secret NEVER appears in stdout/logs.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - drop.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install side-peace
+
+    ```'
+examples:
+- description: Install Side Peace from ClawHub
+  usage: clawhub install side-peace
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: greet
+title: greetr
+version: 1.0.0
+description: '|'
+metadata:
+  author: nordgaren
+  category: General
+  tags:
+  - general
+  - greet
+  source: clawhub-community
+  clawhub_slug: greetr
+  clawhub_path: nordgaren/greetr
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# greetr
+
+    # Source: ClawHub community skill by nordgaren
+
+    # Install: clawhub install greetr
+
+    # Path: nordgaren/greetr
+
+
+    ## Description
+
+    |
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install greetr
+
+    ```'
+examples:
+- description: Install greetr from ClawHub
+  usage: clawhub install greetr
+schema_version: '1.0'

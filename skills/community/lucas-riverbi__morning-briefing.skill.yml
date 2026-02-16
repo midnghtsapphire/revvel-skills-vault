@@ -1,0 +1,64 @@
+name: morning-briefing
+title: Morning Briefing
+version: 1.0.0
+description: Generate personalized morning report with today's reminders, Notion tasks (undone), and vault storage. Use when
+  user asks for morning briefing, daily summary, or &quot;today's plan&quot;. Pulls from Apple Reminders (as calendar proxy)
+  and Notion tasks DB (set NOTION_TASKS_DB or specify DB ID).
+metadata:
+  author: lucas-riverbi
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - morning
+  - briefing
+  source: clawhub-community
+  clawhub_slug: morning-briefing
+  clawhub_path: lucas-riverbi/morning-briefing
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Morning Briefing
+
+    # Source: ClawHub community skill by lucas-riverbi
+
+    # Install: clawhub install morning-briefing
+
+    # Path: lucas-riverbi/morning-briefing
+
+
+    ## Description
+
+    Generate personalized morning report with today''s reminders, Notion tasks (undone), and vault storage. Use when user
+    asks for morning briefing, daily summary, or &quot;today''s plan&quot;. Pulls from Apple Reminders (as calendar proxy)
+    and Notion tasks DB (set NOTION_TASKS_DB or specify DB ID).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/USAGE.md
+
+    - scripts/generate-briefing.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install morning-briefing
+
+    ```'
+examples:
+- description: Install Morning Briefing from ClawHub
+  usage: clawhub install morning-briefing
+schema_version: '1.0'

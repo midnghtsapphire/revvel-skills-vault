@@ -1,0 +1,56 @@
+name: seats-aero
+title: Seats Aero
+version: 0.1.0
+description: 'Search award flight availability via seats.aero API. Triggers on: award flights, mileage bookings, points redemptions,
+  finding business/first class availability, route availability searches.'
+metadata:
+  author: jarrodjs
+  category: Search & Research
+  tags:
+  - search-research
+  - seats
+  - aero
+  source: clawhub-community
+  clawhub_slug: seats-aero
+  clawhub_path: jarrodjs/seats-aero
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seats Aero
+
+    # Source: ClawHub community skill by jarrodjs
+
+    # Install: clawhub install seats-aero
+
+    # Path: jarrodjs/seats-aero
+
+
+    ## Description
+
+    Search award flight availability via seats.aero API. Triggers on: award flights, mileage bookings, points redemptions,
+    finding business/first class availability, route availability searches.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seats-aero
+
+    ```'
+examples:
+- description: Install Seats Aero from ClawHub
+  usage: clawhub install seats-aero
+schema_version: '1.0'

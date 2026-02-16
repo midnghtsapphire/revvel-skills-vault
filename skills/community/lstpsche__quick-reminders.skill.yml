@@ -1,0 +1,58 @@
+name: quick-reminders
+title: Quick Reminders
+version: 1.1.4
+description: '"Zero-LLM one-shot reminders (<48h) via nohup sleep + openclaw message send, operated via {baseDir}/scripts/nohup-reminder.sh."'
+metadata:
+  author: lstpsche
+  category: Communication
+  tags:
+  - communication
+  - quick
+  - reminders
+  source: clawhub-community
+  clawhub_slug: quick-reminders
+  clawhub_path: lstpsche/quick-reminders
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Quick Reminders
+
+    # Source: ClawHub community skill by lstpsche
+
+    # Install: clawhub install quick-reminders
+
+    # Path: lstpsche/quick-reminders
+
+
+    ## Description
+
+    "Zero-LLM one-shot reminders (<48h) via nohup sleep + openclaw message send, operated via {baseDir}/scripts/nohup-reminder.sh."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/nohup-reminder.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install quick-reminders
+
+    ```'
+examples:
+- description: Install Quick Reminders from ClawHub
+  usage: clawhub install quick-reminders
+schema_version: '1.0'

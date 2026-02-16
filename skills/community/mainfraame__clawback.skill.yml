@@ -1,0 +1,71 @@
+name: clawback
+title: Clawback
+version: 1.1.0
+description: Mirror congressional stock trades with automated broker execution and risk management. Use when you want to track
+  and automatically trade based on congressional disclosures from House Clerk and Senate eFD sources.
+metadata:
+  author: mainfraame
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawback
+  source: clawhub-community
+  clawhub_slug: clawback
+  clawhub_path: mainfraame/clawback
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawback
+
+    # Source: ClawHub community skill by mainfraame
+
+    # Install: clawhub install clawback
+
+    # Path: mainfraame/clawback
+
+
+    ## Description
+
+    Mirror congressional stock trades with automated broker execution and risk management. Use when you want to track and
+    automatically trade based on congressional disclosures from House Clerk and Senate eFD sources.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - pyproject.toml
+
+    - requirements.txt
+
+    - setup.py
+
+    - setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawback
+
+    ```'
+examples:
+- description: Install Clawback from ClawHub
+  usage: clawhub install clawback
+schema_version: '1.0'

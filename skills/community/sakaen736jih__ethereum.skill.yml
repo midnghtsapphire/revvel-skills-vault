@@ -1,0 +1,55 @@
+name: ethereum
+title: Ethereum
+version: 1.0.0
+description: Interact with Ethereum blockchain - check ETH and ERC-20 balances, view transactions, gas prices, and ENS lookups.
+  Works with MetaMask addresses.
+metadata:
+  author: sakaen736jih
+  category: General
+  tags:
+  - general
+  - ethereum
+  source: clawhub-community
+  clawhub_slug: ethereum
+  clawhub_path: sakaen736jih/ethereum
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ethereum
+
+    # Source: ClawHub community skill by sakaen736jih
+
+    # Install: clawhub install ethereum
+
+    # Path: sakaen736jih/ethereum
+
+
+    ## Description
+
+    Interact with Ethereum blockchain - check ETH and ERC-20 balances, view transactions, gas prices, and ENS lookups. Works
+    with MetaMask addresses.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ethereum
+
+    ```'
+examples:
+- description: Install Ethereum from ClawHub
+  usage: clawhub install ethereum
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: solobuddy
+title: SoloBuddy
+version: 1.0.0
+description: Build-in-public companion for indie hackers — content workflow, Twitter engagement, project soul creation. A
+  living assistant, not a tool.
+metadata:
+  author: humanji7
+  category: Social Media
+  tags:
+  - social-media
+  - solobuddy
+  source: clawhub-community
+  clawhub_slug: solobuddy
+  clawhub_path: humanji7/solobuddy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SoloBuddy
+
+    # Source: ClawHub community skill by humanji7
+
+    # Install: clawhub install solobuddy
+
+    # Path: humanji7/solobuddy
+
+
+    ## Description
+
+    Build-in-public companion for indie hackers — content workflow, Twitter engagement, project soul creation. A living assistant,
+    not a tool.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - modules/twitter-expert.md
+
+    - modules/twitter-monitor.md
+
+    - prompts/content.md
+
+    - prompts/profile.md
+
+    - prompts/system.md
+
+    - references/soul-wizard.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install solobuddy
+
+    ```'
+examples:
+- description: Install SoloBuddy from ClawHub
+  usage: clawhub install solobuddy
+schema_version: '1.0'

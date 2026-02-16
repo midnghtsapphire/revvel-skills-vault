@@ -1,0 +1,59 @@
+name: tabussen
+title: Tabussen
+version: 1.0.0
+description: Västerbotten & Umeå public transport trip planner (Tabussen/Ultra). Plans bus journeys using ResRobot API. Supports
+  stops, addresses, coordinates, regional and local routes throughout Västerbotten county.
+metadata:
+  author: simskii
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tabussen
+  source: clawhub-community
+  clawhub_slug: tabussen
+  clawhub_path: simskii/tabussen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tabussen
+
+    # Source: ClawHub community skill by simskii
+
+    # Install: clawhub install tabussen
+
+    # Path: simskii/tabussen
+
+
+    ## Description
+
+    Västerbotten & Umeå public transport trip planner (Tabussen/Ultra). Plans bus journeys using ResRobot API. Supports stops,
+    addresses, coordinates, regional and local routes throughout Västerbotten county.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - journey.sh
+
+    - search-location.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tabussen
+
+    ```'
+examples:
+- description: Install Tabussen from ClawHub
+  usage: clawhub install tabussen
+schema_version: '1.0'

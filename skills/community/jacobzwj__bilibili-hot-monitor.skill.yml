@@ -1,0 +1,70 @@
+name: bilibili-monitor
+title: B站 (bilibili) 热门视频监控
+version: 1.0.21
+description: 生成B站热门视频日报并发送邮件。触发词：B站热门、bilibili日报、视频日报、热门视频
+metadata:
+  author: jacobzwj
+  category: General
+  tags:
+  - general
+  - bilibili
+  - monitor
+  source: clawhub-community
+  clawhub_slug: bilibili-hot-monitor
+  clawhub_path: jacobzwj/bilibili-hot-monitor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# B站 (bilibili) 热门视频监控
+
+    # Source: ClawHub community skill by jacobzwj
+
+    # Install: clawhub install bilibili-hot-monitor
+
+    # Path: jacobzwj/bilibili-hot-monitor
+
+
+    ## Description
+
+    生成B站热门视频日报并发送邮件。触发词：B站热门、bilibili日报、视频日报、热门视频
+
+
+    ## Files
+
+    - .gitignore
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - bilibili-monitor.example.json
+
+    - bilibili_api.py
+
+    - bilibili_subtitle.py
+
+    - example_report.md
+
+    - generate_report.py
+
+    - requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bilibili-hot-monitor
+
+    ```'
+examples:
+- description: Install B站 (bilibili) 热门视频监控 from ClawHub
+  usage: clawhub install bilibili-hot-monitor
+schema_version: '1.0'

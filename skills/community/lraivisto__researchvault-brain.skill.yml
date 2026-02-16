@@ -1,0 +1,70 @@
+name: vault
+title: ResearchVault Brain
+version: 2.0.4
+description: '"Local research orchestration and state management. Use when starting projects, logging progress, or exporting
+  findings."'
+metadata:
+  author: lraivisto
+  category: Search & Research
+  tags:
+  - search-research
+  - vault
+  source: clawhub-community
+  clawhub_slug: researchvault-brain
+  clawhub_path: lraivisto/researchvault-brain
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ResearchVault Brain
+
+    # Source: ClawHub community skill by lraivisto
+
+    # Install: clawhub install researchvault-brain
+
+    # Path: lraivisto/researchvault-brain
+
+
+    ## Description
+
+    "Local research orchestration and state management. Use when starting projects, logging progress, or exporting findings."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - main.py
+
+    - pyproject.toml
+
+    - scripts/__init__.py
+
+    - scripts/core.py
+
+    - scripts/db.py
+
+    - scripts/heartbeat_scuttle.py
+
+    - scripts/mcp_server.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install researchvault-brain
+
+    ```'
+examples:
+- description: Install ResearchVault Brain from ClawHub
+  usage: clawhub install researchvault-brain
+schema_version: '1.0'

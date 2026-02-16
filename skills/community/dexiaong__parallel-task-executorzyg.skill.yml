@@ -1,0 +1,55 @@
+name: parallel-task-executor
+title: 多任务并行执行管理器
+version: 1.0.0
+description: 多任务并行执行管理器。接收多条指令并同步执行，支持优先级调度、任务依赖、结果收集和进度跟踪。适用于需要并发处理多个独立任务的场景。
+metadata:
+  author: dexiaong
+  category: General
+  tags:
+  - general
+  - parallel
+  - task
+  - executor
+  source: clawhub-community
+  clawhub_slug: parallel-task-executorzyg
+  clawhub_path: dexiaong/parallel-task-executorzyg
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 多任务并行执行管理器
+
+    # Source: ClawHub community skill by dexiaong
+
+    # Install: clawhub install parallel-task-executorzyg
+
+    # Path: dexiaong/parallel-task-executorzyg
+
+
+    ## Description
+
+    多任务并行执行管理器。接收多条指令并同步执行，支持优先级调度、任务依赖、结果收集和进度跟踪。适用于需要并发处理多个独立任务的场景。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install parallel-task-executorzyg
+
+    ```'
+examples:
+- description: Install 多任务并行执行管理器 from ClawHub
+  usage: clawhub install parallel-task-executorzyg
+schema_version: '1.0'

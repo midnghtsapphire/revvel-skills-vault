@@ -1,0 +1,71 @@
+name: public_com
+title: public-dot-com
+version: 0.1.5
+description: Interact with your Public.com brokerage account using the Public.com API. Able to view portfolio, get stock quotes,
+  place trades, and get account updates. To create a Public.com account head to public.com/signup.
+metadata:
+  author: tarricsookdeo
+  category: Development & Coding
+  tags:
+  - development-coding
+  - public.com
+  source: clawhub-community
+  clawhub_slug: claw-skill-public-dot-com
+  clawhub_path: tarricsookdeo/claw-skill-public-dot-com
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# public-dot-com
+
+    # Source: ClawHub community skill by tarricsookdeo
+
+    # Install: clawhub install claw-skill-public-dot-com
+
+    # Path: tarricsookdeo/claw-skill-public-dot-com
+
+
+    ## Description
+
+    Interact with your Public.com brokerage account using the Public.com API. Able to view portfolio, get stock quotes, place
+    trades, and get account updates. To create a Public.com account head to public.com/signup.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - options-automation-library.md
+
+    - requirements.txt
+
+    - scripts/cancel_order.py
+
+    - scripts/config.py
+
+    - scripts/get_accounts.py
+
+    - scripts/get_history.py
+
+    - scripts/get_instrument.py
+
+    - scripts/get_instruments.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-skill-public-dot-com
+
+    ```'
+examples:
+- description: Install public-dot-com from ClawHub
+  usage: clawhub install claw-skill-public-dot-com
+schema_version: '1.0'

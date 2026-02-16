@@ -1,0 +1,59 @@
+name: rey-skill-creator
+title: rey-skill-creator
+version: 1.0.0
+description: Creates new OpenClaw skills following best practices. Interactive workflow for use case definition, frontmatter
+  generation, instruction writing, and validation. Use when user says "create skill", "new skill", "make a skill", or needs
+  to build a skill from scratch.
+metadata:
+  author: sa9saq
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - rey
+  - skill
+  - creator
+  source: clawhub-community
+  clawhub_slug: rey-skill-creator
+  clawhub_path: sa9saq/rey-skill-creator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# rey-skill-creator
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install rey-skill-creator
+
+    # Path: sa9saq/rey-skill-creator
+
+
+    ## Description
+
+    Creates new OpenClaw skills following best practices. Interactive workflow for use case definition, frontmatter generation,
+    instruction writing, and validation. Use when user says "create skill", "new skill", "make a skill", or needs to build
+    a skill from scratch.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install rey-skill-creator
+
+    ```'
+examples:
+- description: Install rey-skill-creator from ClawHub
+  usage: clawhub install rey-skill-creator
+schema_version: '1.0'

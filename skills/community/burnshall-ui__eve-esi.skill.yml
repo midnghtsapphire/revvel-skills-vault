@@ -1,0 +1,66 @@
+name: eve-esi
+title: Eve online Esi Skill
+version: 1.0.2
+description: '"Discord webhook URL for sending alerts and reports."'
+metadata:
+  author: burnshall-ui
+  category: Social Media
+  tags:
+  - social-media
+  - eve
+  - esi
+  source: clawhub-community
+  clawhub_slug: eve-esi
+  clawhub_path: burnshall-ui/eve-esi
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Eve online Esi Skill
+
+    # Source: ClawHub community skill by burnshall-ui
+
+    # Install: clawhub install eve-esi
+
+    # Path: burnshall-ui/eve-esi
+
+
+    ## Description
+
+    "Discord webhook URL for sending alerts and reports."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config/example-config.json
+
+    - config/schema.json
+
+    - references/authentication.md
+
+    - references/endpoints.md
+
+    - scripts/esi_query.py
+
+    - scripts/validate_config.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install eve-esi
+
+    ```'
+examples:
+- description: Install Eve online Esi Skill from ClawHub
+  usage: clawhub install eve-esi
+schema_version: '1.0'

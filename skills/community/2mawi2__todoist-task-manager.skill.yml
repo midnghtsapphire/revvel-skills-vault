@@ -1,0 +1,55 @@
+name: todoist
+title: Todoist Task Manager
+version: 1.0.0
+description: Manage Todoist tasks via the `todoist` CLI (list, add, modify, complete, delete). Supports filters, projects,
+  labels, and priorities.
+metadata:
+  author: 2mawi2
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - todoist
+  source: clawhub-community
+  clawhub_slug: todoist-task-manager
+  clawhub_path: 2mawi2/todoist-task-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Todoist Task Manager
+
+    # Source: ClawHub community skill by 2mawi2
+
+    # Install: clawhub install todoist-task-manager
+
+    # Path: 2mawi2/todoist-task-manager
+
+
+    ## Description
+
+    Manage Todoist tasks via the `todoist` CLI (list, add, modify, complete, delete). Supports filters, projects, labels,
+    and priorities.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todoist-task-manager
+
+    ```'
+examples:
+- description: Install Todoist Task Manager from ClawHub
+  usage: clawhub install todoist-task-manager
+schema_version: '1.0'

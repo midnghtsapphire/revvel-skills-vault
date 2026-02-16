@@ -1,0 +1,60 @@
+name: flomo-notes
+title: Flomo Notes
+version: 0.1.0
+description: Save notes to Flomo via the Flomo inbox webhook. Use when the user says "save to flomo", "记录到 flomo", "flomo
+  note", or asks to store a note in flomo.
+metadata:
+  author: xiaoluoboding
+  category: Web & Internet
+  tags:
+  - web-internet
+  - flomo
+  - notes
+  source: clawhub-community
+  clawhub_slug: flomo-notes
+  clawhub_path: xiaoluoboding/flomo-notes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Flomo Notes
+
+    # Source: ClawHub community skill by xiaoluoboding
+
+    # Install: clawhub install flomo-notes
+
+    # Path: xiaoluoboding/flomo-notes
+
+
+    ## Description
+
+    Save notes to Flomo via the Flomo inbox webhook. Use when the user says "save to flomo", "记录到 flomo", "flomo note", or
+    asks to store a note in flomo.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/save_to_flomo.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install flomo-notes
+
+    ```'
+examples:
+- description: Install Flomo Notes from ClawHub
+  usage: clawhub install flomo-notes
+schema_version: '1.0'

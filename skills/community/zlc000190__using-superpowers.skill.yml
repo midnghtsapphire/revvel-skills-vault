@@ -1,0 +1,56 @@
+name: using-superpowers
+title: Using Superpowers
+version: 0.1.0
+description: Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation
+  before ANY response including clarifying questions
+metadata:
+  author: zlc000190
+  category: General
+  tags:
+  - general
+  - using
+  - superpowers
+  source: clawhub-community
+  clawhub_slug: using-superpowers
+  clawhub_path: zlc000190/using-superpowers
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Using Superpowers
+
+    # Source: ClawHub community skill by zlc000190
+
+    # Install: clawhub install using-superpowers
+
+    # Path: zlc000190/using-superpowers
+
+
+    ## Description
+
+    Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY
+    response including clarifying questions
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install using-superpowers
+
+    ```'
+examples:
+- description: Install Using Superpowers from ClawHub
+  usage: clawhub install using-superpowers
+schema_version: '1.0'

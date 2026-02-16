@@ -1,0 +1,74 @@
+name: content-repurposer
+title: Content Repurposer
+version: 1.1.0
+description: Transform long-form content into platform-optimized snippets. Your agent takes one blog post, video transcript,
+  or podcast notes and generates ready-to-publish Twitter threads, LinkedIn posts, email newsletters, and Instagram captions.
+  Maintains voice consistency while adapting to each platform's fo
+metadata:
+  author: audsmith28
+  category: Media & Content
+  tags:
+  - media-content
+  - content
+  - repurposer
+  source: clawhub-community
+  clawhub_slug: content-repurposer
+  clawhub_path: audsmith28/content-repurposer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Content Repurposer
+
+    # Source: ClawHub community skill by audsmith28
+
+    # Install: clawhub install content-repurposer
+
+    # Path: audsmith28/content-repurposer
+
+
+    ## Description
+
+    Transform long-form content into platform-optimized snippets. Your agent takes one blog post, video transcript, or podcast
+    notes and generates ready-to-publish Twitter threads, LinkedIn posts, email newsletters, and Instagram captions. Maintains
+    voice consistency while adapting to each platform''s fo
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - scripts/instagram-caption.sh
+
+    - scripts/linkedin-post.sh
+
+    - scripts/newsletter.sh
+
+    - scripts/repurpose.sh
+
+    - scripts/setup.sh
+
+    - scripts/threads-post.sh
+
+    - scripts/twitter-thread.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install content-repurposer
+
+    ```'
+examples:
+- description: Install Content Repurposer from ClawHub
+  usage: clawhub install content-repurposer
+schema_version: '1.0'

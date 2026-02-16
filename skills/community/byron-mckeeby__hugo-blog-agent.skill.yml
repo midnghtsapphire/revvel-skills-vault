@@ -1,0 +1,55 @@
+name: hugo-blog-agent
+title: Hugo Blog Agent
+version: 1.0.0
+description: エージェント読者に最適化されたHugoブログの構築
+metadata:
+  author: byron-mckeeby
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - hugo
+  - blog
+  - agent
+  source: clawhub-community
+  clawhub_slug: hugo-blog-agent
+  clawhub_path: byron-mckeeby/hugo-blog-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hugo Blog Agent
+
+    # Source: ClawHub community skill by byron-mckeeby
+
+    # Install: clawhub install hugo-blog-agent
+
+    # Path: byron-mckeeby/hugo-blog-agent
+
+
+    ## Description
+
+    エージェント読者に最適化されたHugoブログの構築
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hugo-blog-agent
+
+    ```'
+examples:
+- description: Install Hugo Blog Agent from ClawHub
+  usage: clawhub install hugo-blog-agent
+schema_version: '1.0'

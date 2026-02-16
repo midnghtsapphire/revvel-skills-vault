@@ -1,0 +1,64 @@
+name: brave-search
+title: Brave Search
+version: 1.0.1
+description: Web search and content extraction via Brave Search API. Use for searching documentation, facts, or any web content.
+  Lightweight, no browser required.
+metadata:
+  author: steipete
+  category: Search & Research
+  tags:
+  - search-research
+  - brave
+  - search
+  source: clawhub-community
+  clawhub_slug: brave-search
+  clawhub_path: steipete/brave-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Brave Search
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install brave-search
+
+    # Path: steipete/brave-search
+
+
+    ## Description
+
+    Web search and content extraction via Brave Search API. Use for searching documentation, facts, or any web content. Lightweight,
+    no browser required.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - content.js
+
+    - package-lock.json
+
+    - package.json
+
+    - search.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install brave-search
+
+    ```'
+examples:
+- description: Install Brave Search from ClawHub
+  usage: clawhub install brave-search
+schema_version: '1.0'

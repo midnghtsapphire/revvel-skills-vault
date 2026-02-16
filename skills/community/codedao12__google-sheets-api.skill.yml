@@ -1,0 +1,65 @@
+name: google-sheet-api
+title: Google Sheets API
+version: 1.0.3
+description: OpenClaw skill that installs a Google Sheets CLI with setup steps and commands for read/write, batch, formatting,
+  and sheet management.
+metadata:
+  author: codedao12
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  - sheet
+  - api
+  source: clawhub-community
+  clawhub_slug: google-sheets-api
+  clawhub_path: codedao12/google-sheets-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Sheets API
+
+    # Source: ClawHub community skill by codedao12
+
+    # Install: clawhub install google-sheets-api
+
+    # Path: codedao12/google-sheets-api
+
+
+    ## Description
+
+    OpenClaw skill that installs a Google Sheets CLI with setup steps and commands for read/write, batch, formatting, and
+    sheet management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - env_example.md
+
+    - package.json
+
+    - assets/sheets-api-guide.md
+
+    - scripts/sheets-cli.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-sheets-api
+
+    ```'
+examples:
+- description: Install Google Sheets API from ClawHub
+  usage: clawhub install google-sheets-api
+schema_version: '1.0'

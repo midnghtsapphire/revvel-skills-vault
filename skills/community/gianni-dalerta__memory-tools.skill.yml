@@ -1,0 +1,72 @@
+name: memory-tools
+title: Memory Tools
+version: 1.1.1
+description: Agent-controlled memory plugin for OpenClaw with confidence scoring, decay, and semantic search. The agent decides
+  WHEN to store/retrieve memories — no auto-capture noise.
+metadata:
+  author: gianni-dalerta
+  category: Search & Research
+  tags:
+  - search-research
+  - memory
+  - tools
+  source: clawhub-community
+  clawhub_slug: memory-tools
+  clawhub_path: gianni-dalerta/memory-tools
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Memory Tools
+
+    # Source: ClawHub community skill by gianni-dalerta
+
+    # Install: clawhub install memory-tools
+
+    # Path: gianni-dalerta/memory-tools
+
+
+    ## Description
+
+    Agent-controlled memory plugin for OpenClaw with confidence scoring, decay, and semantic search. The agent decides WHEN
+    to store/retrieve memories — no auto-capture noise.
+
+
+    ## Files
+
+    - CLAUDE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - clawdbot.plugin.json
+
+    - openclaw.plugin.json
+
+    - package-lock.json
+
+    - package.json
+
+    - pnpm-lock.yaml
+
+    - tsconfig.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install memory-tools
+
+    ```'
+examples:
+- description: Install Memory Tools from ClawHub
+  usage: clawhub install memory-tools
+schema_version: '1.0'

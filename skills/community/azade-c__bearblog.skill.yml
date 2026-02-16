@@ -1,0 +1,61 @@
+name: bearblog
+title: Bearblog
+version: 1.0.1
+description: Create and manage blog posts on Bear Blog (bearblog.dev). Supports extended Markdown, custom attributes, and
+  browser-based publishing.
+metadata:
+  author: azade-c
+  category: Search & Research
+  tags:
+  - search-research
+  - bearblog
+  source: clawhub-community
+  clawhub_slug: bearblog
+  clawhub_path: azade-c/bearblog
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bearblog
+
+    # Source: ClawHub community skill by azade-c
+
+    # Install: clawhub install bearblog
+
+    # Path: azade-c/bearblog
+
+
+    ## Description
+
+    Create and manage blog posts on Bear Blog (bearblog.dev). Supports extended Markdown, custom attributes, and browser-based
+    publishing.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/browser-api-reference.md
+
+    - examples/daily-post-template.md
+
+    - examples/post-workflow.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bearblog
+
+    ```'
+examples:
+- description: Install Bearblog from ClawHub
+  usage: clawhub install bearblog
+schema_version: '1.0'

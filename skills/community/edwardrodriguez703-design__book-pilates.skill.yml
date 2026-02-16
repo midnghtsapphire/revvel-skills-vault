@@ -1,0 +1,56 @@
+name: book-pilates
+title: Book Pilates
+version: 1.0.1
+description: Book pilates services through Lokuli MCP. Use when user needs to find and book pilates. Triggers on requests
+  like "book a pilates", "find pilates near me", or any pilates service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - pilates
+  source: clawhub-community
+  clawhub_slug: book-pilates
+  clawhub_path: edwardrodriguez703-design/book-pilates
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Pilates
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-pilates
+
+    # Path: edwardrodriguez703-design/book-pilates
+
+
+    ## Description
+
+    Book pilates services through Lokuli MCP. Use when user needs to find and book pilates. Triggers on requests like "book
+    a pilates", "find pilates near me", or any pilates service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-pilates
+
+    ```'
+examples:
+- description: Install Book Pilates from ClawHub
+  usage: clawhub install book-pilates
+schema_version: '1.0'

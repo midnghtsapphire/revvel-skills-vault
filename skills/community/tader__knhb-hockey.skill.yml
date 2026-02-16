@@ -1,0 +1,56 @@
+name: knhb-hockey
+title: KNHB Hockey Match Center
+version: 1.0.0
+description: Query Dutch field hockey match schedules and results from KNHB Match Center (hockeyweerelt.nl). Use when looking
+  up hockey clubs, teams, upcoming matches, or match results in the Netherlands.
+metadata:
+  author: tader
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - knhb
+  - hockey
+  source: clawhub-community
+  clawhub_slug: knhb-hockey
+  clawhub_path: tader/knhb-hockey
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# KNHB Hockey Match Center
+
+    # Source: ClawHub community skill by tader
+
+    # Install: clawhub install knhb-hockey
+
+    # Path: tader/knhb-hockey
+
+
+    ## Description
+
+    Query Dutch field hockey match schedules and results from KNHB Match Center (hockeyweerelt.nl). Use when looking up hockey
+    clubs, teams, upcoming matches, or match results in the Netherlands.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install knhb-hockey
+
+    ```'
+examples:
+- description: Install KNHB Hockey Match Center from ClawHub
+  usage: clawhub install knhb-hockey
+schema_version: '1.0'

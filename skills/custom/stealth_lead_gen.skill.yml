@@ -1,0 +1,292 @@
+name: stealth_lead_gen
+title: Stealth Lead Generator — Insurance & Life Events
+version: 1.0.0
+description: Advanced stealth scraping and lead generation for insurance life events including death, marriage, birth, property,
+  business, retirement, and health-related triggers with full campaign management and compliance tracking
+metadata:
+  author: Revvel AI Engine
+  category: General
+  tags:
+  - obituary-aggregation
+  - campaign-automation
+  - stealth
+  - marriage-registry-scraping
+  - property-transfer-scraping
+  - lead
+  - birth-registry-scraping
+  - court-record-scraping
+  - gen
+  - death-registry-scraping
+  - business-filing-scraping
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport re\nimport os\nimport math\nimport hashlib\nimport statistics\nimport requests\nfrom datetime\
+    \ import datetime, timedelta\nfrom collections import defaultdict\nfrom typing import Dict, List, Any, Optional, Tuple\n\
+    import unittest\nimport logging\n\nSKILL_METADATA = {\n    \"name\": \"Stealth Lead Generator — Insurance & Life Events\"\
+    ,\n    \"id\": \"stealth_lead_gen\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI Engine\",\n    \"description\"\
+    : \"Advanced stealth scraping and lead generation for insurance life events including death, marriage, birth, property,\
+    \ business, retirement, and health-related triggers with full campaign management and compliance tracking\",\n    \"capabilities\"\
+    : [\n        \"death_registry_scraping\",\n        \"marriage_registry_scraping\", \n        \"birth_registry_scraping\"\
+    ,\n        \"property_transfer_scraping\",\n        \"business_filing_scraping\",\n        \"obituary_aggregation\",\n\
+    \        \"court_record_scraping\",\n        \"campaign_automation\",\n        \"lead_scoring\",\n        \"data_enrichment\"\
+    ,\n        \"compliance_tracking\",\n        \"roi_analysis\"\n    ],\n    \"domain\": \"insurance_lead_generation\"\n\
+    }\n\nEXPERT_PROMPTS = {\n    \"death_lead_generation\": \"\"\"\nGenerate a targeted lead list for final expense insurance\
+    \ based on recent deaths in {county}, {state} \nfor the past {time_period} days. Focus on surviving spouses aged 50-85\
+    \ with estimated household \nincome above {min_income}. Include family relationship mapping and contact information discovery.\n\
+    Target demographics: {target_demographics}\nExclusion criteria: {exclusion_criteria}\n\"\"\",\n    \"marriage_insurance_opportunity\"\
+    : \"\"\"\nIdentify newly married couples in {location} within the last {timeframe} months for life insurance \nand homeowners\
+    \ insurance lead generation. Prioritize couples with age range {age_range}, \nproperty purchases over ${property_value},\
+    \ and combined income estimates above ${income_threshold}.\nInclude wedding registry data analysis and social media profile\
+    \ matching.\n\"\"\",\n    \"new_parent_insurance_leads\": \"\"\"\nScrape birth registry records for {state} covering the\
+    \ last {months} months to identify new parents \nneeding life insurance coverage. Target parents aged {parent_age_range}\
+    \ with home ownership indicators,\nincome estimates ${income_min}+, and existing insurance gap analysis. Include pediatrician\
+    \ office\nproximity mapping for local agent targeting.\n\"\"\",\n    \"property_insurance_triggers\": \"\"\"\nExtract\
+    \ recent property transfers and new mortgages in {county} county from assessor records.\nFilter for purchase prices between\
+    \ ${min_price} and ${max_price}, owner ages {age_demographics},\nand properties with loan-to-value ratios above {ltv_threshold}.\
+    \ Cross-reference with existing\ninsurance policy databases to identify coverage gaps.\n\"\"\",\n    \"business_commercial_leads\"\
+    : \"\"\"\nScrape new business filings with the {state} Secretary of State for the last {days} days.\nFilter by business\
+    \ type: {business_types}, employee count {employee_range}, and registered\ncapital ${capital_min}+. Identify commercial\
+    \ insurance needs including general liability,\nworkers comp, and professional liability coverage requirements.\n\"\"\"\
+    ,\n    \"retirement_final_expense\": \"\"\"\nMine pension and retirement system records for {state} to identify individuals\
+    \ aged {age_range}\napproaching retirement. Focus on those with pension amounts below ${pension_threshold} and\nno existing\
+    \ final expense coverage. Include Medicare enrollment status and health facility\nproximity for burial insurance targeting.\n\
+    \"\"\",\n    \"health_event_insurance_trigger\": \"\"\"\nAnalyze hospital discharge records and health facility data for\
+    \ {region} to identify\ninsurance-triggering health events. Target patients aged {target_age} with diagnoses\nindicating\
+    \ potential life expectancy concerns. Cross-reference with existing life insurance\ndatabases and include family contact\
+    \ discovery for outreach.\n\"\"\",\n    \"divorce_policy_update_leads\": \"\"\"\nScrape divorce filings and decrees from\
+    \ {county} county courts for the past {time_period}.\nIdentify individuals needing beneficiary updates, policy splits,\
+    \ and new insurance coverage.\nTarget age range {age_range} with dependent children and asset division indicating\ninsurance\
+    \ protection needs.\n\"\"\",\n    \"obituary_family_outreach\": \"\"\"\nAggregate all obituaries from {geographic_area}\
+    \ published in the last {days} days.\nIdentify surviving family members, their relationships, ages, and locations. Focus\
+    \ on\nspouses aged 50-85 and adult children with families. Include funeral service information\nand condolence guestbook\
+    \ analysis for respectful final expense insurance outreach.\n\"\"\",\n    \"campaign_performance_optimization\": \"\"\"\
+    \nAnalyze lead conversion data for insurance campaigns targeting {life_event} triggers.\nCalculate cost per acquisition\
+    \ by channel, conversion rates by demographic segment,\nand lifetime value estimates. Optimize campaign parameters including\
+    \ timing, messaging,\nchannel mix, and geographic targeting for maximum ROI on insurance lead generation spend.\n\"\"\"\
+    \n}\n\nINTEGRATION_POINTS = {\n    \"legacy_com_obituaries\": {\n        \"type\": \"api\",\n        \"endpoint\": \"\
+    https://www.legacy.com/api/obituaries/search\",\n        \"description\": \"Legacy.com obituary search and aggregation\
+    \ API\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"https://github.com/littlehoushontheprairie/check-obituaries-alert\"\
+    \n    },\n    \"apify_company_registry\": {\n        \"type\": \"tool\",\n        \"endpoint\": \"https://api.apify.com/v2/acts/tropical_quince~us-company-registry-scraper\"\
+    ,\n        \"description\": \"US company registry scraping via Apify platform\",\n        \"auth_method\": \"token\",\n\
+    \        \"documentation_url\": \"https://apify.com/tropical_quince/us-company-registry-scraper/api/openapi\"\n    },\n\
+    \    \"county_clerk_api\": {\n        \"type\": \"database\",\n        \"endpoint\": \"https://county-clerk-api.gov/vital-records\"\
+    ,\n        \"description\": \"County clerk vital records database\",\n        \"auth_method\": \"oauth2\",\n        \"\
+    documentation_url\": \"https://county-clerk-docs.gov\"\n    },\n    \"state_corporation_commission\": {\n        \"type\"\
+    : \"database\",\n        \"endpoint\": \"https://scc.state.gov/business-filings\",\n        \"description\": \"State business\
+    \ filing records\",\n        \"auth_method\": \"certificate\",\n        \"documentation_url\": \"https://scc.state.gov/api-docs\"\
+    \n    },\n    \"medicare_enrollment_db\": {\n        \"type\": \"database\",\n        \"endpoint\": \"https://medicare.gov/enrollment-data\"\
+    ,\n        \"description\": \"Medicare enrollment and demographic data\",\n        \"auth_method\": \"oauth2\",\n    \
+    \    \"documentation_url\": \"https://medicare.gov/api\"\n    },\n    \"property_assessor_api\": {\n        \"type\":\
+    \ \"api\",\n        \"endpoint\": \"https://assessor.county.gov/property-records\",\n        \"description\": \"County\
+    \ property assessment and transfer records\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\": \"\
+    https://assessor.county.gov/api-docs\"\n    },\n    \"court_records_system\": {\n        \"type\": \"database\",\n   \
+    \     \"endpoint\": \"https://court-system.state.gov/records\",\n        \"description\": \"State court case management\
+    \ system\",\n        \"auth_method\": \"certificate\",\n        \"documentation_url\": \"https://court-system.state.gov/api\"\
+    \n    },\n    \"social_media_contact_scraper\": {\n        \"type\": \"tool\",\n        \"endpoint\": \"https://api.apify.com/v2/acts/easyapi~social-media-contact-scraper\"\
+    ,\n        \"description\": \"Social media profile and contact discovery\",\n        \"auth_method\": \"token\",\n   \
+    \     \"documentation_url\": \"https://apify.com/easyapi/social-media-contact-scraper/api\"\n    }\n}\n\ndef parse_vital_record(record_text:\
+    \ str) -> Dict[str, Any]:\n    \"\"\"Parse vital record text into structured data\"\"\"\n    patterns = {\n        'name':\
+    \ r'Name[:\\s]+([A-Za-z\\s,.-]+?)(?=\\s*(?:Age|Date|Location)|$)',\n        'age': r'Age[:\\s]+(\\d+)',\n        'date':\
+    \ r'Date[:\\s]+([A-Za-z]+\\s+\\d{1,2},?\\s+\\d{4})',\n        'location': r'(?:Location|County)[:\\s]+([A-Za-z\\s,.]+?)(?=\\\
+    s*(?:Age|Date|Name)|$)',\n        'spouse': r'(?:Spouse|Husband|Wife)[:\\s]+([A-Za-z\\s,.]+?)(?=\\s*(?:Age|Date|Location)|$)'\n\
+    \    }\n    \n    result = {}\n    for field, pattern in patterns.items():\n        match = re.search(pattern, record_text,\
+    \ re.IGNORECASE)\n        if match:\n            result[field] = match.group(1).strip()\n    \n    if 'age' in result:\n\
+    \        try:\n            result['age'] = int(result['age'])\n        except ValueError:\n            pass\n        \
+    \    \n    if 'date' in result:\n        try:\n            result['parsed_date'] = datetime.strptime(result['date'], '%B\
+    \ %d, %Y')\n        except:\n            pass\n            \n    return result\n\ndef calculate_lead_score(life_event:\
+    \ str, age: int, income_estimate: float, \n                        family_size: int, location_score: float = 1.0) -> float:\n\
+    \    \"\"\"Calculate lead quality score based on multiple factors\"\"\"\n    base_scores = {\n        'death': 85,\n \
+    \       'marriage': 75,\n        'birth': 70,\n        'divorce': 65,\n        'property_purchase': 80,\n        'business_start':\
+    \ 60,\n        'retirement': 90,\n        'health_event': 95\n    }\n    \n    base_score = base_scores.get(life_event,\
+    \ 50)\n    \n    age_modifier = 1.0\n    if 50 <= age <= 85:\n        age_modifier = 1.2\n    elif age < 30 or age > 90:\n\
+    \        age_modifier = 0.7\n        \n    income_modifier = min(income_estimate / 50000, 2.0)\n    \n    family_modifier\
+    \ = 1 + (family_size - 2) * 0.1\n    \n    final_score = base_score * age_modifier * income_modifier * family_modifier\
+    \ * location_score\n    \n    return min(100, max(0, final_score))\n\ndef generate_campaign_message(life_event: str, demographic_profile:\
+    \ Dict[str, Any]) -> str:\n    \"\"\"Generate personalized insurance outreach message\"\"\"\n    templates = {\n     \
+    \   'death': \"Dear {name}, We understand this may be a difficult time. Our final expense insurance can help protect your\
+    \ loved ones from unexpected costs. Coverage starts at just ${monthly_cost}/month.\",\n        'marriage': \"Congratulations\
+    \ {name}! As you begin this new chapter, consider protecting your future together with life insurance designed for newlyweds.\
+    \ Get a free quote today.\",\n        'birth': \"Welcome baby {baby_name}! As new parents, it's time to think about protecting\
+    \ your growing family. We specialize in affordable life insurance for young families.\",\n        'divorce': \"Hi {name},\
+    \ going through changes? Update your beneficiaries and explore new insurance options tailored to your current situation.\
+    \ Free consultation available.\",\n        'property_purchase': \"Congratulations on your new home {name}! Protect your\
+    \ investment with homeowners and life insurance packages. Local agents ready to help.\",\n        'business_start': \"\
+    Exciting times {name}! Starting a business means new insurance needs. We offer comprehensive commercial coverage including\
+    \ liability and workers comp.\",\n        'retirement': \"Planning retirement {name}? Consider final expense insurance\
+    \ to protect your family from unexpected costs. No medical exam required for qualified applicants.\",\n        'health_event':\
+    \ \"Hi {name}, your health is important. We specialize in life insurance for individuals with health considerations. Guaranteed\
+    \ acceptance policies available.\"\n    }\n    \n    template = templates.get(life_event, \"Hello {name}, we have insurance\
+    \ options that may interest you.\")\n    \n    name = demographic_profile.get('preferred_name', 'there')\n    monthly_cost\
+    \ = demographic_profile.get('estimated_monthly_cost', 25)\n    baby_name = demographic_profile.get('baby_name', 'baby')\n\
+    \    \n    message = template.format(\n        name=name,\n        monthly_cost=monthly_cost,\n        baby_name=baby_name\n\
+    \    )\n    \n    return message\n\ndef build_county_query(county: str, state: str, record_type: str, \n             \
+    \         date_range: Tuple[str, str]) -> Dict[str, Any]:\n    \"\"\"Build optimized query for county records\"\"\"\n\
+    \    query = {\n        \"county\": county.upper(),\n        \"state\": state.upper(),\n        \"record_type\": record_type,\n\
+    \        \"start_date\": date_range[0],\n        \"end_date\": date_range[1],\n        \"fields\": [\"name\", \"age\"\
+    , \"date\", \"location\", \"related_parties\"],\n        \"limit\": 1000,\n        \"offset\": 0\n    }\n    \n    if\
+    \ record_type == 'death':\n        query[\"age_range\"] = {\"min\": 18, \"max\": 100}\n        query[\"include_obituaries\"\
+    ] = True\n    elif record_type == 'marriage':\n        query[\"include_divorces\"] = False\n        query[\"age_range\"\
+    ] = {\"min\": 18, \"max\": 85}\n    elif record_type == 'birth':\n        query[\"parent_info\"] = True\n        query[\"\
+    birth_weight\"] = True\n        \n    return query\n\ndef estimate_household_income(property_value: float, location_zip:\
+    \ str, \n                            census_data: Dict[str, float]) -> float:\n    \"\"\"Estimate household income based\
+    \ on property and location data\"\"\"\n    base_multiplier = {\n        'urban': 0.28,\n        'suburban': 0.25,\n  \
+    \      'rural': 0.20\n    }\n    \n    zip_prefix = location_zip[:3]\n    location_type = 'suburban'\n    \n    if zip_prefix\
+    \ in ['100', '606', '900', '021']:\n        location_type = 'urban'\n    elif zip_prefix in ['590', '677', '822', '835']:\n\
+    \        location_type = 'rural'\n        \n    multiplier = base_multiplier[location_type]\n    estimated_income = (property_value\
+    \ * multiplier) / 0.28\n    \n    census_modifier = census_data.get(zip_prefix, 1.0)\n    estimated_income *= census_modifier\n\
+    \    \n    return max(25000, min(estimated_income, 250000))\n\ndef validate_phone_number(phone: str) -> Optional[str]:\n\
+    \    \"\"\"Validate and format phone number\"\"\"\n    digits_only = re.subsub('[^0-9]', '', phone)\n    \n    if len(digits_only)\
+    \ == 10:\n        return f\"({digits_only[:3]}) {digits_only[3:6]}-{digits_only[6:]}\"\n    elif len(digits_only) == 11\
+    \ and digits_only[0] == '1':\n        return f\"({digits_only[:4]}) {digits_only[4:7]}-{digits_only[7:]}\"\n        \n\
+    \    return None\n\ndef generate_compliance_report(campaign_data: Dict[str, Any], \n                             jurisdiction:\
+    \ str) -> Dict[str, Any]:\n    \"\"\"Generate compliance report for insurance marketing regulations\"\"\"\n    report\
+    \ = {\n        \"jurisdiction\": jurisdiction,\n        \"campaign_id\": campaign_data.get('id'),\n        \"date_generated\"\
+    : datetime.now().isoformat(),\n        \"total_contacts\": len(campaign_data.get('contacts', [])),\n        \"opt_outs\"\
+    : campaign_data.get('opt_outs', 0),\n        \"complaints\": campaign_data.get('complaints', 0),\n        \"compliance_score\"\
+    : 100\n    }\n    \n    if report['opt_outs'] > report['total_contacts'] * 0.02:\n        report['compliance_score'] -=\
+    \ 20\n        \n    if report['complaints'] > report['total_contacts'] * 0.005:\n        report['compliance_score'] -=\
+    \ 30\n        \n    can_spam_violations = []\n    tcpa_violations = []\n    \n    for contact in campaign_data.get('contacts',\
+    \ []):\n        if not contact.get('consent_timestamp'):\n            tcpa_violations.append(contact.get('phone'))\n \
+    \       if not contact.get('unsubscribe_link'):\n            can_spam_violations.append(contact.get('email'))\n      \
+    \      \n    report['can_spam_violations'] = len(can_spam_violations)\n    report['tcpa_violations'] = len(tcpa_violations)\n\
+    \    \n    if report['can_spam_violations'] > 0:\n        report['compliance_score'] -= 15\n    if report['tcpa_violations']\
+    \ > 0:\n        report['compliance_score'] -= 25\n        \n    return report\n\ndef create_lead_database(leads: List[Dict[str,\
+    \ Any]]) -> Dict[str, List[Dict[str, Any]]]:\n    \"\"\"Organize leads by category and score\"\"\"\n    database = defaultdict(list)\n\
+    \    \n    for lead in leads:\n        category = lead.get('life_event', 'unknown')\n        score = lead.get('lead_score',\
+    \ 0)\n        \n        if score >= 80:\n            tier = 'hot'\n        elif score >= 60:\n            tier = 'warm'\n\
+    \        elif score >= 40:\n            tier = 'cold'\n        else:\n            tier = 'archive'\n            \n   \
+    \     lead['tier'] = tier\n        lead['assigned_date'] = datetime.now().isoformat()\n        \n        database[category].append(lead)\n\
+    \        \n    for category in database:\n        database[category].sort(key=lambda x: x['lead_score'], reverse=True)\n\
+    \        \n    return dict(database)\n\ndef analyze_roi(campaign_id: str, spend: float, revenue: float, \n           \
+    \    leads_generated: int, policies_sold: int) -> Dict[str, float]:\n    \"\"\"Calculate return on investment metrics\"\
+    \"\"\n    metrics = {\n        'campaign_id': campaign_id,\n        'total_spend': spend,\n        'total_revenue': revenue,\n\
+    \        'gross_profit': revenue - spend,\n        'roi_percentage': ((revenue - spend) / spend * 100) if spend > 0 else\
+    \ 0,\n        'cost_per_lead': spend / leads_generated if leads_generated > 0 else 0,\n        'cost_per_policy': spend\
+    \ / policies_sold if policies_sold > 0 else 0,\n        'lead_conversion_rate': (policies_sold / leads_generated * 100)\
+    \ if leads_generated > 0 else 0,\n        'revenue_per_lead': revenue / leads_generated if leads_generated > 0 else 0\n\
+    \    }\n    \n    return metrics\n\nclass SkillEngine:\n    def __init__(self, config: Dict[str, Any]):\n        self.config\
+    \ = config\n        self.logger = logging.getLogger(__name__)\n        self.session = requests.Session()\n        self.session.headers.update({\n\
+    \            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'\n        })\n        \n    def\
+    \ scrape_death_records(self, county: str, state: str,\n                           date_range: Tuple[str, str]) -> List[Dict[str,\
+    \ Any]]:\n        \"\"\"Scrape death registry records for insurance leads\"\"\"\n        query = build_county_query(county,\
+    \ state, 'death', date_range)\n        \n        # Simulate API call\n        mock_data = [\n            {\n         \
+    \       \"name\": \"John Smith\",\n                \"age\": 67,\n                \"date\": \"2024-01-15\",\n         \
+    \       \"location\": \"Springfield County\",\n                \"spouse\": \"Mary Smith\",\n                \"address\"\
+    : \"123 Main St\",\n                \"zip_code\": \"62701\"\n            }\n        ]\n        \n        leads = []\n\
+    \        for record in mock_data:\n            income_estimate = estimate_household_income(150000, record['zip_code'],\
+    \ {})\n            lead_score = calculate_lead_score('death', record['age'], income_estimate, 2)\n            \n     \
+    \       lead = {\n                \"life_event\": \"death\",\n                \"deceased_name\": record['name'],\n   \
+    \             \"surviving_spouse\": record.get('spouse'),\n                \"lead_score\": lead_score,\n             \
+    \   \"estimated_income\": income_estimate,\n                \"location\": record['location'],\n                \"date\"\
+    : record['date'],\n                \"data_source\": \"county_death_records\"\n            }\n            leads.append(lead)\n\
+    \            \n        return leads\n    \n    def scrape_marriage_records(self, county: str, state: str,\n          \
+    \                    date_range: Tuple[str, str]) -> List[Dict[str, Any]]:\n        \"\"\"Scrape marriage registry for\
+    \ newlywed insurance leads\"\"\"\n        query = build_county_query(county, state, 'marriage', date_range)\n        \n\
+    \        mock_data = [\n            {\n                \"bride_name\": \"Sarah Johnson\",\n                \"groom_name\"\
+    : \"Michael Davis\",\n                \"bride_age\": 28,\n                \"groom_age\": 30,\n                \"marriage_date\"\
+    : \"2024-01-20\",\n                \"county\": \"Cook County\",\n                \"zip_code\": \"60601\"\n           \
+    \ }\n        ]\n        \n        leads = []\n        for record in mock_data:\n            avg_age = (record['bride_age']\
+    \ + record['groom_age']) / 2\n            income_estimate = estimate_household_income(300000, record['zip_code'], {})\n\
+    \            lead_score = calculate_lead_score('marriage', avg_age, income_estimate, 2)\n            \n            lead\
+    \ = {\n                \"life_event\": \"marriage\",\n                \"couple_names\": f\"{record['bride_name']} & {record['groom_name']}\"\
+    ,\n                \"average_age\": avg_age,\n                \"lead_score\": lead_score,\n                \"estimated_income\"\
+    : income_estimate,\n                \"marriage_date\": record['marriage_date'],\n                \"location\": record['county'],\n\
+    \                \"data_source\": \"county_marriage_records\"\n            }\n            leads.append(lead)\n       \
+    \     \n        return leads\n    \n    def aggregate_obituaries(self, geographic_area: str,\n                       \
+    \    days_back: int) -> List[Dict[str, Any]]:\n        \"\"\"Aggregate obituaries for final expense insurance leads\"\"\
+    \"\n        end_date = datetime.now()\n        start_date = end_date - timedelta(days=days_back)\n        \n        mock_obituaries\
+    \ = [\n            {\n                \"deceased_name\": \"Robert Johnson\",\n                \"age\": 72,\n         \
+    \       \"death_date\": \"2024-01-10\",\n                \"survivors\": [\"wife Linda\", \"son Robert Jr.\", \"daughter\
+    \ Susan\"],\n                \"service_location\": \"Springfield Funeral Home\",\n                \"zip_code\": \"62702\"\
+    \n            }\n        ]\n        \n        leads = []\n        for obit in mock_obituaries:\n            for survivor\
+    \ in obit['survivors']:\n                relationship = survivor.split()[0]\n                if relationship in ['wife',\
+    \ 'husband', 'spouse']:\n                    income_estimate = estimate_household_income(180000, obit['zip_code'], {})\n\
+    \                    lead_score = calculate_lead_score('death', 65, income_estimate, 2)\n                    \n      \
+    \              lead = {\n                        \"life_event\": \"death\",\n                        \"deceased_name\"\
+    : obit['deceased_name'],\n                        \"survivor_name\": survivor,\n                        \"relationship\"\
+    : relationship,\n                        \"lead_score\": lead_score,\n                        \"estimated_income\": income_estimate,\n\
+    \                        \"death_date\": obit['death_date'],\n                        \"service_location\": obit['service_location'],\n\
+    \                        \"data_source\": \"obituary_aggregation\"\n                    }\n                    leads.append(lead)\n\
+    \                    \n        return leads\n    \n    def generate_campaign(self, leads: List[Dict[str, Any]], \n   \
+    \                      campaign_type: str) -> Dict[str, Any]:\n        \"\"\"Generate targeted insurance campaign\"\"\"\
+    \n        campaign = {\n            \"id\": hashlib.md5(f\"{campaign_type}_{datetime.now()}\".encode()).hexdigest(),\n\
+    \            \"type\": campaign_type,\n            \"created_date\": datetime.now().isoformat(),\n            \"total_leads\"\
+    : len(leads),\n            \"contacts\": []\n        }\n        \n        for lead in leads:\n            demographic_profile\
+    \ = {\n                \"preferred_name\": lead.get('surviving_spouse', 'there'),\n                \"estimated_monthly_cost\"\
+    : 35 if lead['lead_score'] > 80 else 50\n            }\n            \n            message = generate_campaign_message(lead['life_event'],\
+    \ demographic_profile)\n            \n            contact = {\n                \"lead_id\": hashlib.md5(str(lead).encode()).hexdigest(),\n\
+    \                \"message\": message,\n                \"life_event\": lead['life_event'],\n                \"lead_score\"\
+    : lead['lead_score'],\n                \"channel\": \"direct_mail\" if lead['lead_score'] > 70 else \"email\",\n     \
+    \           \"estimated_conversion_probability\": min(lead['lead_score'] / 100 * 0.3, 0.25)\n            }\n         \
+    \   \n            campaign['contacts'].append(contact)\n            \n        return campaign\n    \n    def run(self,\
+    \ capability: str, params: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Main execution method\"\"\"\n        self.logger.info(f\"\
+    Executing capability: {capability}\")\n        \n        try:\n            if capability == 'death_registry_scraping':\n\
+    \                return {\n                    \"leads\": self.scrape_death_records(\n                        params['county'],\
+    \ params['state'], \n                        (params['start_date'], params['end_date'])\n                    ),\n    \
+    \                \"capability\": capability\n                }\n                \n            elif capability == 'marriage_registry_scraping':\n\
+    \                return {\n                    \"leads\": self.scrape_marriage_records(\n                        params['county'],\
+    \ params['state'],\n                        (params['start_date'], params['end_date'])\n                    ),\n     \
+    \               \"capability\": capability\n                }\n                \n            elif capability == 'obituary_aggregation':\n\
+    \                return {\n                    \"leads\": self.aggregate_obituaries(\n                        params['geographic_area'],\
+    \ params['days_back']\n                    ),\n                    \"capability\": capability\n                }\n   \
+    \             \n            elif capability == 'campaign_automation':\n                return self.generate_campaign(params['leads'],\
+    \ params['campaign_type'])\n                \n            elif capability == 'lead_scoring':\n                return {\n\
+    \                    \"scores\": [\n                        calculate_lead_score(\n                            params['life_event'],\
+    \ lead['age'], \n                            lead['income_estimate'], lead['family_size']\n                        ) for\
+    \ lead in params['leads']\n                    ]\n                }\n                \n            elif capability ==\
+    \ 'compliance_tracking':\n                return generate_compliance_report(\n                    params['campaign_data'],\
+    \ params['jurisdiction']\n                )\n                \n            elif capability == 'roi_analysis':\n      \
+    \          return analyze_roi(\n                    params['campaign_id'], params['spend'], \n                    params['revenue'],\
+    \ params['leads_generated'],\n                    params['policies_sold']\n                )\n                \n     \
+    \       else:\n                raise ValueError(f\"Unknown capability: {capability}\")\n                \n        except\
+    \ Exception as e:\n            self.logger.error(f\"Error in {capability}: {str(e)}\")\n            return {\"error\"\
+    : str(e), \"capability\": capability}\n\nclass TestStealthLeadGenerator(unittest.TestCase):\n    \n    def test_metadata_validation(self):\n\
+    \        self.assertEqual(SKILL_METADATA['id'], 'stealth_lead_gen')\n        self.assertIn('death_registry_scraping',\
+    \ SKILL_METADATA['capabilities'])\n        self.assertGreater(len(SKILL_METADATA['capabilities']), 10)\n        \n   \
+    \ def test_parse_vital_record(self):\n        record_text = \"Name: John Smith, Age: 67, Date: January 15, 2024, Location:\
+    \ Springfield County\"\n        parsed = parse_vital_record(record_text)\n        self.assertEqual(parsed['name'], 'John\
+    \ Smith')\n        self.assertEqual(parsed['age'], 67)\n        self.assertIn('parsed_date', parsed)\n        \n    def\
+    \ test_calculate_lead_score(self):\n        score = calculate_lead_score('death', 65, 75000, 3)\n        self.assertGreater(score,\
+    \ 80)\n        self.assertLessEqual(score, 100)\n        \n        young_score = calculate_lead_score('marriage', 25,\
+    \ 50000, 2)\n        self.assertLess(young_score, 80)\n        \n    def test_generate_campaign_message(self):\n     \
+    \   profile = {\"preferred_name\": \"Mary\", \"estimated_monthly_cost\": 35}\n        message = generate_campaign_message('death',\
+    \ profile)\n        self.assertIn('Mary', message)\n        self.assertIn('35', message)\n        \n    def test_build_county_query(self):\n\
+    \        query = build_county_query('Cook', 'IL', 'death', ('2024-01-01', '2024-01-31'))\n        self.assertEqual(query['county'],\
+    \ 'COOK')\n        self.assertEqual(query['state'], 'IL')\n        self.assertIn('age_range', query)\n        \n    def\
+    \ test_estimate_household_income(self):\n        income = estimate_household_income(200000, '60601', {})\n        self.assertGreater(income,\
+    \ 50000)\n        self.assertLess(income, 200000)\n        \n    def test_validate_phone_number(self):\n        valid_phone\
+    \ = validate_phone_number('(555) 123-4567')\n        self.assertIsNotNone(valid_phone)\n        \n        invalid_phone\
+    \ = validate_phone_number('123')\n        self.assertIsNone(invalid_phone)\n        \n    def test_generate_compliance_report(self):\n\
+    \        campaign_data = {\n            'id': 'test123',\n            'contacts': [\n                {'email': 'test@test.com',\
+    \ 'consent_timestamp': '2024-01-01'},\n                {'phone': '5551234567', 'consent_timestamp': None}\n          \
+    \  ],\n            'opt_outs': 1,\n            'complaints': 0\n        }\n        report = generate_compliance_report(campaign_data,\
+    \ 'IL')\n        self.assertEqual(report['jurisdiction'], 'IL')\n        self.assertIn('compliance_score', report)\n \
+    \       \n    def test_create_lead_database(self):\n        leads = [\n            {'life_event': 'death', 'lead_score':\
+    \ 85, 'name': 'Lead 1'},\n            {'life_event': 'marriage', 'lead_score': 65, 'name': 'Lead 2'},\n            {'life_event':\
+    \ 'death', 'lead_score': 45, 'name': 'Lead 3'}\n        ]\n        database = create_lead_database(leads)\n        self.assertIn('death',\
+    \ database)\n        self.assertIn('marriage', database)\n        self.assertEqual(database['death'][0]['tier'], 'hot')\n\
+    \        \n    def test_analyze_roi(self):\n        metrics = analyze_roi('campaign123', 10000, 25000, 200, 15)\n    \
+    \    self.assertEqual(metrics['roi_percentage'], 150)\n        self.assertEqual(metrics['cost_per_lead'], 50)\n      \
+    \  self.assertEqual(metrics['lead_conversion_rate'], 7.5)\n        \n    def test_skill_engine_initialization(self):\n\
+    \        engine = SkillEngine({'api_key': 'test123'})\n        self.assertIsNotNone(engine.config)\n        self.assertIsNotNone(engine.session)\n\
+    \        \n    def test_skill_engine_death_scraping(self):\n        engine = SkillEngine({})\n        result = engine.run('death_registry_scraping',\
+    \ {\n            'county': 'Cook',\n            'state': 'IL',\n            'start_date': '2024-01-01',\n            'end_date':\
+    \ '2024-01-31'\n        })\n        self.assertIn('leads', result)\n        self.assertGreater(len(result['leads']), 0)\n\
+    \        \n    def test_skill_engine_campaign_generation(self):\n        engine = SkillEngine({})\n        leads = [{'life_event':\
+    \ 'death', 'lead_score': 85}]\n        campaign = engine.run('campaign_automation', {\n            'leads': leads,\n \
+    \           'campaign_type': 'final_expense'\n        })\n        self.assertIn('contacts', campaign)\n        self.assertGreater(campaign['total_leads'],\
+    \ 0)\n\nif __name__ == '__main__':\n    unittest.main()"
+examples:
+- description: Load and use the Stealth Lead Generator — Insurance & Life Events skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''stealth_lead_gen'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

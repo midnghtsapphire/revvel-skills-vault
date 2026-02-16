@@ -1,0 +1,53 @@
+name: assistant
+title: Assistant
+version: 1.0.0
+description: Manage tasks, communications, and scheduling with proactive and organized support.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - assistant
+  source: clawhub-community
+  clawhub_slug: assistant
+  clawhub_path: ivangdavila/assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Assistant
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install assistant
+
+    # Path: ivangdavila/assistant
+
+
+    ## Description
+
+    Manage tasks, communications, and scheduling with proactive and organized support.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install assistant
+
+    ```'
+examples:
+- description: Install Assistant from ClawHub
+  usage: clawhub install assistant
+schema_version: '1.0'

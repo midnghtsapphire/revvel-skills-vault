@@ -1,0 +1,57 @@
+name: book-dog-trainer
+title: Book Dog Trainer
+version: 1.0.1
+description: Book dog-trainer services through Lokuli MCP. Use when user needs to find and book dog-trainer. Triggers on requests
+  like "book a dog-trainer", "find dog-trainer near me", or any dog-trainer service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - dog
+  - trainer
+  source: clawhub-community
+  clawhub_slug: book-dog-trainer
+  clawhub_path: edwardrodriguez703-design/book-dog-trainer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Dog Trainer
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-dog-trainer
+
+    # Path: edwardrodriguez703-design/book-dog-trainer
+
+
+    ## Description
+
+    Book dog-trainer services through Lokuli MCP. Use when user needs to find and book dog-trainer. Triggers on requests like
+    "book a dog-trainer", "find dog-trainer near me", or any dog-trainer service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-dog-trainer
+
+    ```'
+examples:
+- description: Install Book Dog Trainer from ClawHub
+  usage: clawhub install book-dog-trainer
+schema_version: '1.0'

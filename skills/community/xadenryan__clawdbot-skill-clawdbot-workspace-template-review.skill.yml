@@ -1,0 +1,58 @@
+name: clawdbot-workspace-template-review
+title: Clawdbot Workspace Template Review
+version: 0.1.0
+description: Compare a Clawdbot workspace against the official templates installed with Clawdbot (npm or source) and list
+  missing sections to pull in, especially after upgrades.
+metadata:
+  author: xadenryan
+  category: General
+  tags:
+  - general
+  - clawdbot
+  - workspace
+  - template
+  - review
+  source: clawhub-community
+  clawhub_slug: clawdbot-skill-clawdbot-workspace-template-review
+  clawhub_path: xadenryan/clawdbot-skill-clawdbot-workspace-template-review
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawdbot Workspace Template Review
+
+    # Source: ClawHub community skill by xadenryan
+
+    # Install: clawhub install clawdbot-skill-clawdbot-workspace-template-review
+
+    # Path: xadenryan/clawdbot-skill-clawdbot-workspace-template-review
+
+
+    ## Description
+
+    Compare a Clawdbot workspace against the official templates installed with Clawdbot (npm or source) and list missing sections
+    to pull in, especially after upgrades.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-skill-clawdbot-workspace-template-review
+
+    ```'
+examples:
+- description: Install Clawdbot Workspace Template Review from ClawHub
+  usage: clawhub install clawdbot-skill-clawdbot-workspace-template-review
+schema_version: '1.0'

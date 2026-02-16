@@ -1,0 +1,60 @@
+name: warden-app
+title: Warden App
+version: 0.1.1
+description: Use the Warden App (agentic wallet) via browser automation to execute crypto tasks (swap, bridge, deposit/withdraw,
+  perps, portfolio/research) and to build an OpenClaw skill wrapper other agents can use. Use when you need to (1) navigate
+  the Warden UI, (2) connect a wallet, (3) place trades/swaps, (
+metadata:
+  author: deiu
+  category: Search & Research
+  tags:
+  - search-research
+  - warden
+  - app
+  source: clawhub-community
+  clawhub_slug: warden-app
+  clawhub_path: deiu/warden-app
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Warden App
+
+    # Source: ClawHub community skill by deiu
+
+    # Install: clawhub install warden-app
+
+    # Path: deiu/warden-app
+
+
+    ## Description
+
+    Use the Warden App (agentic wallet) via browser automation to execute crypto tasks (swap, bridge, deposit/withdraw, perps,
+    portfolio/research) and to build an OpenClaw skill wrapper other agents can use. Use when you need to (1) navigate the
+    Warden UI, (2) connect a wallet, (3) place trades/swaps, (
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/warden-ui-notes.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install warden-app
+
+    ```'
+examples:
+- description: Install Warden App from ClawHub
+  usage: clawhub install warden-app
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: ralph-loop
+title: Ralph Loop (KJ)
+version: 1.0.0
+description: AI 자율 구현 방법론. 구현/개발/코딩 요청 시 자동 적용. 메인은 마더 서브에이전트를 spawn하고, 마더가 워커들을 관리. specs/ → IMPLEMENTATION_PLAN.md → 1태스크씩
+  구현 → 2단계 리뷰 → 테스트 → 반복.
+metadata:
+  author: kjaylee
+  category: General
+  tags:
+  - general
+  - ralph
+  - loop
+  source: clawhub-community
+  clawhub_slug: kj-ralph-loop
+  clawhub_path: kjaylee/kj-ralph-loop
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Ralph Loop (KJ)
+
+    # Source: ClawHub community skill by kjaylee
+
+    # Install: clawhub install kj-ralph-loop
+
+    # Path: kjaylee/kj-ralph-loop
+
+
+    ## Description
+
+    AI 자율 구현 방법론. 구현/개발/코딩 요청 시 자동 적용. 메인은 마더 서브에이전트를 spawn하고, 마더가 워커들을 관리. specs/ → IMPLEMENTATION_PLAN.md → 1태스크씩 구현 → 2단계
+    리뷰 → 테스트 → 반복.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/superpowers-analysis.md
+
+    - references/workflow.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install kj-ralph-loop
+
+    ```'
+examples:
+- description: Install Ralph Loop (KJ) from ClawHub
+  usage: clawhub install kj-ralph-loop
+schema_version: '1.0'

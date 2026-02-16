@@ -1,0 +1,58 @@
+name: crypto-tracker
+title: Crypto Tracker
+version: 1.0.0
+description: Track crypto prices, set alerts, and search coins via CoinGecko API.
+metadata:
+  author: dbhurley
+  category: Search & Research
+  tags:
+  - search-research
+  - crypto
+  - tracker
+  source: clawhub-community
+  clawhub_slug: crypto-tracker
+  clawhub_path: dbhurley/crypto-tracker
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crypto Tracker
+
+    # Source: ClawHub community skill by dbhurley
+
+    # Install: clawhub install crypto-tracker
+
+    # Path: dbhurley/crypto-tracker
+
+
+    ## Description
+
+    Track crypto prices, set alerts, and search coins via CoinGecko API.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/alerts.json
+
+    - scripts/crypto.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crypto-tracker
+
+    ```'
+examples:
+- description: Install Crypto Tracker from ClawHub
+  usage: clawhub install crypto-tracker
+schema_version: '1.0'

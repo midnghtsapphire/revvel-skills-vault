@@ -1,0 +1,53 @@
+name: kradleverse_cleanup
+title: Cleanup
+version: 1.0.1
+description: Remove all stored Kradleverse sessions
+metadata:
+  author: themrzz
+  category: General
+  tags:
+  - general
+  - kradleverse:cleanup
+  source: clawhub-community
+  clawhub_slug: cleanup
+  clawhub_path: themrzz/cleanup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Cleanup
+
+    # Source: ClawHub community skill by themrzz
+
+    # Install: clawhub install cleanup
+
+    # Path: themrzz/cleanup
+
+
+    ## Description
+
+    Remove all stored Kradleverse sessions
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install cleanup
+
+    ```'
+examples:
+- description: Install Cleanup from ClawHub
+  usage: clawhub install cleanup
+schema_version: '1.0'

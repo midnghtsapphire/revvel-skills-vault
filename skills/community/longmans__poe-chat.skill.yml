@@ -1,0 +1,62 @@
+name: poe-chat
+title: Poe Chat
+version: 1.0.0
+description: 使用 @gemini/@gpt/@claude 等触发词调用 Poe 模型（含 Gemini/GPT/claude/kimi/Deepseek等主流模型），自动选择 model_id 并说明使用了哪一个，支持文件上传。
+metadata:
+  author: longmans
+  category: Communication
+  tags:
+  - communication
+  - poe
+  - chat
+  source: clawhub-community
+  clawhub_slug: poe-chat
+  clawhub_path: longmans/poe-chat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Poe Chat
+
+    # Source: ClawHub community skill by longmans
+
+    # Install: clawhub install poe-chat
+
+    # Path: longmans/poe-chat
+
+
+    ## Description
+
+    使用 @gemini/@gpt/@claude 等触发词调用 Poe 模型（含 Gemini/GPT/claude/kimi/Deepseek等主流模型），自动选择 model_id 并说明使用了哪一个，支持文件上传。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/__init__.py
+
+    - scripts/list_models.py
+
+    - scripts/poe_client.py
+
+    - scripts/requirements.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install poe-chat
+
+    ```'
+examples:
+- description: Install Poe Chat from ClawHub
+  usage: clawhub install poe-chat
+schema_version: '1.0'

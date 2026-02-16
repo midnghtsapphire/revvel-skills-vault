@@ -1,0 +1,65 @@
+name: food-cal-order
+title: Food Calendar Order - Order food delivery with a calendar event!
+version: 1.0.0
+description: Order food delivery via browser automation, triggered by calendar events. Supports two modes — Direct (specific
+  service + restaurant) and Discovery (criteria-based search across all services). Services include DoorDash, Uber Eats, Grubhub.
+  Use when a calendar event matches food ordering patterns. Sp
+metadata:
+  author: thisisjeron
+  category: Search & Research
+  tags:
+  - search-research
+  - food
+  - cal
+  - order
+  source: clawhub-community
+  clawhub_slug: food-cal-order
+  clawhub_path: thisisjeron/food-cal-order
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Food Calendar Order - Order food delivery with a calendar event!
+
+    # Source: ClawHub community skill by thisisjeron
+
+    # Install: clawhub install food-cal-order
+
+    # Path: thisisjeron/food-cal-order
+
+
+    ## Description
+
+    Order food delivery via browser automation, triggered by calendar events. Supports two modes — Direct (specific service
+    + restaurant) and Discovery (criteria-based search across all services). Services include DoorDash, Uber Eats, Grubhub.
+    Use when a calendar event matches food ordering patterns. Sp
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/doordash.md
+
+    - references/grubhub.md
+
+    - references/ubereats.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install food-cal-order
+
+    ```'
+examples:
+- description: Install Food Calendar Order - Order food delivery with a calendar event! from ClawHub
+  usage: clawhub install food-cal-order
+schema_version: '1.0'

@@ -1,0 +1,70 @@
+name: resend
+title: Resend Skills
+version: 2.2.0
+description: Use when working with Resend email platform - routes to specific sub-skills for sending, receiving, audiences,
+  or broadcasts.
+metadata:
+  author: christina-de-martinez
+  category: Communication
+  tags:
+  - communication
+  - resend
+  source: clawhub-community
+  clawhub_slug: resend-skills
+  clawhub_path: christina-de-martinez/resend-skills
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Resend Skills
+
+    # Source: ClawHub community skill by christina-de-martinez
+
+    # Install: clawhub install resend-skills
+
+    # Path: christina-de-martinez/resend-skills
+
+
+    ## Description
+
+    Use when working with Resend email platform - routes to specific sub-skills for sending, receiving, audiences, or broadcasts.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agent-email-inbox/SKILL.md
+
+    - resend-inbound/SKILL.md
+
+    - send-email/SKILL.md
+
+    - send-email/references/batch-email-examples.md
+
+    - send-email/references/best-practices.md
+
+    - send-email/references/installation.md
+
+    - send-email/references/single-email-examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install resend-skills
+
+    ```'
+examples:
+- description: Install Resend Skills from ClawHub
+  usage: clawhub install resend-skills
+schema_version: '1.0'

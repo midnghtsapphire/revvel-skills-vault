@@ -1,0 +1,61 @@
+name: openclaw-hardener
+title: OpenClaw Hardener
+version: 0.1.2
+description: '"Harden OpenClaw (workspace + ~/.openclaw): run openclaw security audit, catch prompt-injection/exfil risks,
+  scan for secrets, and apply safe fixes (chmod/exec-bit cleanup). Includes optional config.patch planning to reduce attack
+  surface."'
+metadata:
+  author: virtaava
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - openclaw
+  - hardener
+  source: clawhub-community
+  clawhub_slug: openclaw-hardener
+  clawhub_path: virtaava/openclaw-hardener
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Hardener
+
+    # Source: ClawHub community skill by virtaava
+
+    # Install: clawhub install openclaw-hardener
+
+    # Path: virtaava/openclaw-hardener
+
+
+    ## Description
+
+    "Harden OpenClaw (workspace + ~/.openclaw): run openclaw security audit, catch prompt-injection/exfil risks, scan for
+    secrets, and apply safe fixes (chmod/exec-bit cleanup). Includes optional config.patch planning to reduce attack surface."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - openclaw-skill.json
+
+    - scripts/hardener.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-hardener
+
+    ```'
+examples:
+- description: Install OpenClaw Hardener from ClawHub
+  usage: clawhub install openclaw-hardener
+schema_version: '1.0'

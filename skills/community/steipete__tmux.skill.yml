@@ -1,0 +1,57 @@
+name: tmux
+title: Tmux
+version: 1.0.0
+description: Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.
+metadata:
+  author: steipete
+  category: Development & Coding
+  tags:
+  - development-coding
+  - tmux
+  source: clawhub-community
+  clawhub_slug: tmux
+  clawhub_path: steipete/tmux
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tmux
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install tmux
+
+    # Path: steipete/tmux
+
+
+    ## Description
+
+    Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/find-sessions.sh
+
+    - scripts/wait-for-text.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tmux
+
+    ```'
+examples:
+- description: Install Tmux from ClawHub
+  usage: clawhub install tmux
+schema_version: '1.0'

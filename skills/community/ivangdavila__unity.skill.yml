@@ -1,0 +1,53 @@
+name: unity
+title: Unity
+version: 1.0.0
+description: Avoid common Unity mistakes — lifecycle ordering, GetComponent caching, physics timing, and Unity's fake null.
+metadata:
+  author: ivangdavila
+  category: General
+  tags:
+  - general
+  - unity
+  source: clawhub-community
+  clawhub_slug: unity
+  clawhub_path: ivangdavila/unity
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Unity
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install unity
+
+    # Path: ivangdavila/unity
+
+
+    ## Description
+
+    Avoid common Unity mistakes — lifecycle ordering, GetComponent caching, physics timing, and Unity''s fake null.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install unity
+
+    ```'
+examples:
+- description: Install Unity from ClawHub
+  usage: clawhub install unity
+schema_version: '1.0'

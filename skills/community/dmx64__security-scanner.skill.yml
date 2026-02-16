@@ -1,0 +1,58 @@
+name: security-scanner
+title: Security Scanner
+version: 1.0.0
+description: Automated security scanning and vulnerability detection for web applications, APIs, and infrastructure. Use when
+  you need to scan targets for vulnerabilities, check SSL certificates, find open ports, detect misconfigurations, or perform
+  security audits. Integrates with nmap, nuclei, and other securi
+metadata:
+  author: dmx64
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - scanner
+  source: clawhub-community
+  clawhub_slug: security-scanner
+  clawhub_path: dmx64/security-scanner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Scanner
+
+    # Source: ClawHub community skill by dmx64
+
+    # Install: clawhub install security-scanner
+
+    # Path: dmx64/security-scanner
+
+
+    ## Description
+
+    Automated security scanning and vulnerability detection for web applications, APIs, and infrastructure. Use when you need
+    to scan targets for vulnerabilities, check SSL certificates, find open ports, detect misconfigurations, or perform security
+    audits. Integrates with nmap, nuclei, and other securi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install security-scanner
+
+    ```'
+examples:
+- description: Install Security Scanner from ClawHub
+  usage: clawhub install security-scanner
+schema_version: '1.0'

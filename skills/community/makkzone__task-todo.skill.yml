@@ -1,0 +1,61 @@
+name: task-todo
+title: Task ToDo
+version: 1.0.0
+description: ''
+metadata:
+  author: makkzone
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - task
+  - todo
+  source: clawhub-community
+  clawhub_slug: task-todo
+  clawhub_path: makkzone/task-todo
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Task ToDo
+
+    # Source: ClawHub community skill by makkzone
+
+    # Install: clawhub install task-todo
+
+    # Path: makkzone/task-todo
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - database.py
+
+    - requirements.txt
+
+    - task_skill.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install task-todo
+
+    ```'
+examples:
+- description: Install Task ToDo from ClawHub
+  usage: clawhub install task-todo
+schema_version: '1.0'

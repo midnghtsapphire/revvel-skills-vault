@@ -1,0 +1,53 @@
+name: postsyncer
+title: Postsyncer
+version: 0.1.0
+description: Manage your PostSyncer social media workflows.
+metadata:
+  author: abakermi
+  category: Media & Content
+  tags:
+  - media-content
+  - postsyncer
+  source: clawhub-community
+  clawhub_slug: openclaw-postsyncer
+  clawhub_path: abakermi/openclaw-postsyncer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Postsyncer
+
+    # Source: ClawHub community skill by abakermi
+
+    # Install: clawhub install openclaw-postsyncer
+
+    # Path: abakermi/openclaw-postsyncer
+
+
+    ## Description
+
+    Manage your PostSyncer social media workflows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-postsyncer
+
+    ```'
+examples:
+- description: Install Postsyncer from ClawHub
+  usage: clawhub install openclaw-postsyncer
+schema_version: '1.0'

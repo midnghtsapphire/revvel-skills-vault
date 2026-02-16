@@ -1,0 +1,64 @@
+name: secure-sync
+title: secure-sync
+version: 1.3.0
+description: Secure credential sync and backup for OpenClaw .mykey files via ClawHub. Automates discovery, encoding, packaging,
+  and private publishing for multi-instance recovery without external services. Use for setup migrations, DR, or cross-device
+  key management.
+metadata:
+  author: cyberengage
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - secure
+  - sync
+  source: clawhub-community
+  clawhub_slug: secure-sync
+  clawhub_path: cyberengage/secure-sync
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# secure-sync
+
+    # Source: ClawHub community skill by cyberengage
+
+    # Install: clawhub install secure-sync
+
+    # Path: cyberengage/secure-sync
+
+
+    ## Description
+
+    Secure credential sync and backup for OpenClaw .mykey files via ClawHub. Automates discovery, encoding, packaging, and
+    private publishing for multi-instance recovery without external services. Use for setup migrations, DR, or cross-device
+    key management.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/sync.sh
+
+    - tmp/credentials-backup-1770193226/SKILL.md
+
+    - tmp/credentials-backup-1770193226/references/backup.txt
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install secure-sync
+
+    ```'
+examples:
+- description: Install secure-sync from ClawHub
+  usage: clawhub install secure-sync
+schema_version: '1.0'

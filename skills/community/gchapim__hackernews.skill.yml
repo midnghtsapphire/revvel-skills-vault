@@ -1,0 +1,61 @@
+name: hackernews
+title: Hacker News
+version: 1.0.0
+description: Browse and search Hacker News. Fetch top, new, best, Ask HN, Show HN stories and job postings. View item details,
+  comments, and user profiles. Search stories and comments via Algolia. Find "Who is hiring?" threads. Use for any HN-related
+  queries like "what's trending on HN?", "search HN for AI", "sh
+metadata:
+  author: gchapim
+  category: Search & Research
+  tags:
+  - search-research
+  - hackernews
+  source: clawhub-community
+  clawhub_slug: hackernews
+  clawhub_path: gchapim/hackernews
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Hacker News
+
+    # Source: ClawHub community skill by gchapim
+
+    # Install: clawhub install hackernews
+
+    # Path: gchapim/hackernews
+
+
+    ## Description
+
+    Browse and search Hacker News. Fetch top, new, best, Ask HN, Show HN stories and job postings. View item details, comments,
+    and user profiles. Search stories and comments via Algolia. Find "Who is hiring?" threads. Use for any HN-related queries
+    like "what''s trending on HN?", "search HN for AI", "sh
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/hn.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hackernews
+
+    ```'
+examples:
+- description: Install Hacker News from ClawHub
+  usage: clawhub install hackernews
+schema_version: '1.0'

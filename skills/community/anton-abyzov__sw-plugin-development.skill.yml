@@ -1,0 +1,56 @@
+name: plugin-development
+title: Plugin Development
+version: 1.0.0
+description: Claude Code plugin development - plugin structure, slash commands, skills, sub-agents, YAML frontmatter. Use
+  when creating plugins.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - plugin
+  - development
+  source: clawhub-community
+  clawhub_slug: sw-plugin-development
+  clawhub_path: anton-abyzov/sw-plugin-development
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Plugin Development
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-plugin-development
+
+    # Path: anton-abyzov/sw-plugin-development
+
+
+    ## Description
+
+    Claude Code plugin development - plugin structure, slash commands, skills, sub-agents, YAML frontmatter. Use when creating
+    plugins.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-plugin-development
+
+    ```'
+examples:
+- description: Install Plugin Development from ClawHub
+  usage: clawhub install sw-plugin-development
+schema_version: '1.0'

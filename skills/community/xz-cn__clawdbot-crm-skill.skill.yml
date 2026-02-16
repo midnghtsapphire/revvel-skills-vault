@@ -1,0 +1,73 @@
+name: crm
+title: zCloak-CRM
+version: 0.1.0
+description: Personal CRM for managing contacts, relationships, and follow-ups using markdown files. Use when the user wants
+  to add contacts, track relationships, set follow-up reminders, query contacts by tag/company/location, import/export contacts,
+  or manage networking leads. Supports natural language input f
+metadata:
+  author: xz-cn
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - crm
+  source: clawhub-community
+  clawhub_slug: clawdbot-crm-skill
+  clawhub_path: xz-cn/clawdbot-crm-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# zCloak-CRM
+
+    # Source: ClawHub community skill by xz-cn
+
+    # Install: clawhub install clawdbot-crm-skill
+
+    # Path: xz-cn/clawdbot-crm-skill
+
+
+    ## Description
+
+    Personal CRM for managing contacts, relationships, and follow-ups using markdown files. Use when the user wants to add
+    contacts, track relationships, set follow-up reminders, query contacts by tag/company/location, import/export contacts,
+    or manage networking leads. Supports natural language input f
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/templates/company.md
+
+    - assets/templates/event.md
+
+    - assets/templates/person.md
+
+    - references/schema.md
+
+    - scripts/crm-add.py
+
+    - scripts/crm-export.py
+
+    - scripts/crm-followups.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawdbot-crm-skill
+
+    ```'
+examples:
+- description: Install zCloak-CRM from ClawHub
+  usage: clawhub install clawdbot-crm-skill
+schema_version: '1.0'

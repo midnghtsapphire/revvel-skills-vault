@@ -1,0 +1,54 @@
+name: proxy-balance
+title: Proxy Balance
+version: 1.0.0
+description: Check Proxy account balance and available spending power. Shows pending intents and suggests funding if low.
+metadata:
+  author: proxyhq
+  category: General
+  tags:
+  - general
+  - proxy
+  - balance
+  source: clawhub-community
+  clawhub_slug: proxy-balance
+  clawhub_path: proxyhq/proxy-balance
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Proxy Balance
+
+    # Source: ClawHub community skill by proxyhq
+
+    # Install: clawhub install proxy-balance
+
+    # Path: proxyhq/proxy-balance
+
+
+    ## Description
+
+    Check Proxy account balance and available spending power. Shows pending intents and suggests funding if low.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install proxy-balance
+
+    ```'
+examples:
+- description: Install Proxy Balance from ClawHub
+  usage: clawhub install proxy-balance
+schema_version: '1.0'

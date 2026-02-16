@@ -1,0 +1,60 @@
+name: llm-shield
+title: Glitchward Shield
+version: 1.0.0
+description: Risk score threshold (0.0-1.0)
+metadata:
+  author: eyeskiller
+  category: General
+  tags:
+  - general
+  - llm
+  - shield
+  source: clawhub-community
+  clawhub_slug: glitchward-shield
+  clawhub_path: eyeskiller/glitchward-shield
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Glitchward Shield
+
+    # Source: ClawHub community skill by eyeskiller
+
+    # Install: clawhub install glitchward-shield
+
+    # Path: eyeskiller/glitchward-shield
+
+
+    ## Description
+
+    Risk score threshold (0.0-1.0)
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - llm-shield-skill.js
+
+    - package.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install glitchward-shield
+
+    ```'
+examples:
+- description: Install Glitchward Shield from ClawHub
+  usage: clawhub install glitchward-shield
+schema_version: '1.0'

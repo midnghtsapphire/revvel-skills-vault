@@ -1,0 +1,60 @@
+name: whisper-transcribe
+title: Whisper Transcribe
+version: 1.0.0
+description: Transcribe audio files to text using OpenAI Whisper. Supports speech-to-text with auto language detection, multiple
+  output formats (txt, srt, vtt, json), batch processing, and model selection (tiny to large). Use when transcribing audio
+  recordings, podcasts, voice messages, lectures, meetings, or an
+metadata:
+  author: josunlp
+  category: Media & Content
+  tags:
+  - media-content
+  - whisper
+  - transcribe
+  source: clawhub-community
+  clawhub_slug: whisper-transcribe
+  clawhub_path: josunlp/whisper-transcribe
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Whisper Transcribe
+
+    # Source: ClawHub community skill by josunlp
+
+    # Install: clawhub install whisper-transcribe
+
+    # Path: josunlp/whisper-transcribe
+
+
+    ## Description
+
+    Transcribe audio files to text using OpenAI Whisper. Supports speech-to-text with auto language detection, multiple output
+    formats (txt, srt, vtt, json), batch processing, and model selection (tiny to large). Use when transcribing audio recordings,
+    podcasts, voice messages, lectures, meetings, or an
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/transcribe.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install whisper-transcribe
+
+    ```'
+examples:
+- description: Install Whisper Transcribe from ClawHub
+  usage: clawhub install whisper-transcribe
+schema_version: '1.0'

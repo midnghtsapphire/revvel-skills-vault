@@ -1,0 +1,74 @@
+name: claw-conductor
+title: Claw Conductor
+version: 0.1.7
+description: Always-on autonomous development orchestrator with intelligent triage. Auto-detects Discord channels, routes
+  to project workspaces, triages simple vs development requests, decomposes complex tasks, routes to optimal AI models, executes
+  in parallel, and consolidates results.
+metadata:
+  author: johnsonfarmsus
+  category: Social Media
+  tags:
+  - social-media
+  - claw
+  - conductor
+  source: clawhub-community
+  clawhub_slug: claw-conductor
+  clawhub_path: johnsonfarmsus/claw-conductor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Claw Conductor
+
+    # Source: ClawHub community skill by johnsonfarmsus
+
+    # Install: clawhub install claw-conductor
+
+    # Path: johnsonfarmsus/claw-conductor
+
+
+    ## Description
+
+    Always-on autonomous development orchestrator with intelligent triage. Auto-detects Discord channels, routes to project
+    workspaces, triages simple vs development requests, decomposes complex tasks, routes to optimal AI models, executes in
+    parallel, and consolidates results.
+
+
+    ## Files
+
+    - CONTRIBUTING.md
+
+    - DEPLOYMENT.md
+
+    - IMPLEMENTATION-STATUS.md
+
+    - README.md
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config/agent-registry.example.json
+
+    - config/channel-workspace-map.json
+
+    - config/conductor-config.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-conductor
+
+    ```'
+examples:
+- description: Install Claw Conductor from ClawHub
+  usage: clawhub install claw-conductor
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: wiim
+title: WiiM
+version: 0.1.1
+description: Control WiiM audio devices (play, pause, stop, next, prev, volume, mute, play URLs, presets). Use when the user
+  wants to control music playback, adjust volume, discover WiiM/LinkPlay speakers on the network, or play audio from a URL
+  on a WiiM device.
+metadata:
+  author: geodeterra
+  category: Media & Content
+  tags:
+  - media-content
+  - wiim
+  source: clawhub-community
+  clawhub_slug: wiim
+  clawhub_path: geodeterra/wiim
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# WiiM
+
+    # Source: ClawHub community skill by geodeterra
+
+    # Install: clawhub install wiim
+
+    # Path: geodeterra/wiim
+
+
+    ## Description
+
+    Control WiiM audio devices (play, pause, stop, next, prev, volume, mute, play URLs, presets). Use when the user wants
+    to control music playback, adjust volume, discover WiiM/LinkPlay speakers on the network, or play audio from a URL on
+    a WiiM device.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install wiim
+
+    ```'
+examples:
+- description: Install WiiM from ClawHub
+  usage: clawhub install wiim
+schema_version: '1.0'

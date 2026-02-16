@@ -1,0 +1,59 @@
+name: content-ideas-generator
+title: Content Ideas Generator
+version: 1.0.0
+description: Generates structured post outlines from reference materials for wisdom-style social posts. Use when someone wants
+  to extract compelling concepts from newsletters, scripts, notes, or other content and transform them into engaging post
+  outlines with paradoxes, transformations, and powerful insights.
+metadata:
+  author: vincentchan
+  category: Social Media
+  tags:
+  - social-media
+  - content
+  - ideas
+  - generator
+  source: clawhub-community
+  clawhub_slug: content-ideas-generator
+  clawhub_path: vincentchan/content-ideas-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Content Ideas Generator
+
+    # Source: ClawHub community skill by vincentchan
+
+    # Install: clawhub install content-ideas-generator
+
+    # Path: vincentchan/content-ideas-generator
+
+
+    ## Description
+
+    Generates structured post outlines from reference materials for wisdom-style social posts. Use when someone wants to extract
+    compelling concepts from newsletters, scripts, notes, or other content and transform them into engaging post outlines
+    with paradoxes, transformations, and powerful insights.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install content-ideas-generator
+
+    ```'
+examples:
+- description: Install Content Ideas Generator from ClawHub
+  usage: clawhub install content-ideas-generator
+schema_version: '1.0'

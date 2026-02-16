@@ -1,0 +1,56 @@
+name: ga4
+title: ga4
+version: 1.0.0
+description: Query Google Analytics 4 (GA4) data via the Analytics Data API. Use when you need to pull website analytics like
+  top pages, traffic sources, user counts, sessions, conversions, or any GA4 metrics/dimensions. Supports custom date ranges
+  and filtering.
+metadata:
+  author: bobdevibecoder
+  category: Search & Research
+  tags:
+  - search-research
+  - ga4
+  source: clawhub-community
+  clawhub_slug: bobagent-ga4
+  clawhub_path: bobdevibecoder/bobagent-ga4
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ga4
+
+    # Source: ClawHub community skill by bobdevibecoder
+
+    # Install: clawhub install bobagent-ga4
+
+    # Path: bobdevibecoder/bobagent-ga4
+
+
+    ## Description
+
+    Query Google Analytics 4 (GA4) data via the Analytics Data API. Use when you need to pull website analytics like top pages,
+    traffic sources, user counts, sessions, conversions, or any GA4 metrics/dimensions. Supports custom date ranges and filtering.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bobagent-ga4
+
+    ```'
+examples:
+- description: Install ga4 from ClawHub
+  usage: clawhub install bobagent-ga4
+schema_version: '1.0'

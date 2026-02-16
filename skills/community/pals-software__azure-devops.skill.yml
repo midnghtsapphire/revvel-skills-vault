@@ -1,0 +1,57 @@
+name: azure-devops
+title: Azure DevOps
+version: 1.0.0
+description: List Azure DevOps projects, repositories, and branches; create pull requests; manage work items; check build
+  status. Use when working with Azure DevOps resources, checking PR status, querying project structure, or automating DevOps
+  workflows.
+metadata:
+  author: pals-software
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - azure
+  - devops
+  source: clawhub-community
+  clawhub_slug: azure-devops
+  clawhub_path: pals-software/azure-devops
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Azure DevOps
+
+    # Source: ClawHub community skill by pals-software
+
+    # Install: clawhub install azure-devops
+
+    # Path: pals-software/azure-devops
+
+
+    ## Description
+
+    List Azure DevOps projects, repositories, and branches; create pull requests; manage work items; check build status. Use
+    when working with Azure DevOps resources, checking PR status, querying project structure, or automating DevOps workflows.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install azure-devops
+
+    ```'
+examples:
+- description: Install Azure DevOps from ClawHub
+  usage: clawhub install azure-devops
+schema_version: '1.0'

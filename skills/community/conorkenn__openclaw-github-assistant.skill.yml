@@ -1,0 +1,70 @@
+name: github
+title: OpenClaw GitHub Assistant
+version: 2.0.1
+description: Query and manage GitHub repositories - list repos, check CI status, create issues, search repos, and view recent
+  activity.
+metadata:
+  author: conorkenn
+  category: Search & Research
+  tags:
+  - search-research
+  - github
+  source: clawhub-community
+  clawhub_slug: openclaw-github-assistant
+  clawhub_path: conorkenn/openclaw-github-assistant
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw GitHub Assistant
+
+    # Source: ClawHub community skill by conorkenn
+
+    # Install: clawhub install openclaw-github-assistant
+
+    # Path: conorkenn/openclaw-github-assistant
+
+
+    ## Description
+
+    Query and manage GitHub repositories - list repos, check CI status, create issues, search repos, and view recent activity.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - api.d.ts
+
+    - api.js
+
+    - index.d.ts
+
+    - index.js
+
+    - package.json
+
+    - test.js
+
+    - types.d.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-github-assistant
+
+    ```'
+examples:
+- description: Install OpenClaw GitHub Assistant from ClawHub
+  usage: clawhub install openclaw-github-assistant
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: nano-banana-pro-openrouter
+title: Nano Banana Pro OpenRouter
+version: 1.0.1
+description: Generate images with Nano Banana Pro via OpenRouter. Use when the user asks for image generation, mentions Nano
+  Banana Pro, Gemini 3 Pro Image, or OpenRouter image generation.
+metadata:
+  author: duffycoder
+  category: Media & Content
+  tags:
+  - media-content
+  - nano
+  - banana
+  - pro
+  - openrouter
+  source: clawhub-community
+  clawhub_slug: nano-banana-pro-openrouter
+  clawhub_path: duffycoder/nano-banana-pro-openrouter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nano Banana Pro OpenRouter
+
+    # Source: ClawHub community skill by duffycoder
+
+    # Install: clawhub install nano-banana-pro-openrouter
+
+    # Path: duffycoder/nano-banana-pro-openrouter
+
+
+    ## Description
+
+    Generate images with Nano Banana Pro via OpenRouter. Use when the user asks for image generation, mentions Nano Banana
+    Pro, Gemini 3 Pro Image, or OpenRouter image generation.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_image.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nano-banana-pro-openrouter
+
+    ```'
+examples:
+- description: Install Nano Banana Pro OpenRouter from ClawHub
+  usage: clawhub install nano-banana-pro-openrouter
+schema_version: '1.0'

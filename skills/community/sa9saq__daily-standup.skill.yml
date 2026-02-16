@@ -1,0 +1,56 @@
+name: daily-standup
+title: Daily Standup
+version: 1.1.0
+description: Generate daily standup reports from Git activity, TODOs, and project status.
+metadata:
+  author: sa9saq
+  category: Development & Coding
+  tags:
+  - development-coding
+  - daily
+  - standup
+  source: clawhub-community
+  clawhub_slug: daily-standup
+  clawhub_path: sa9saq/daily-standup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Daily Standup
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install daily-standup
+
+    # Path: sa9saq/daily-standup
+
+
+    ## Description
+
+    Generate daily standup reports from Git activity, TODOs, and project status.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install daily-standup
+
+    ```'
+examples:
+- description: Install Daily Standup from ClawHub
+  usage: clawhub install daily-standup
+schema_version: '1.0'

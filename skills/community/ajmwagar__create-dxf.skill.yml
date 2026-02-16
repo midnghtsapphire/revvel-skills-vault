@@ -1,0 +1,64 @@
+name: create-dxf
+title: Create Dxf
+version: 0.1.1
+description: Create RFQ-ready 2D DXF (and optional SVG preview) files from a strict, validated JSON spec derived from a natural-language
+  design prompt. Use for sheet/plate parts (waterjet/laser/router) like mounting plates, gussets, brackets, hole patterns,
+  and slots.
+metadata:
+  author: ajmwagar
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - create
+  - dxf
+  source: clawhub-community
+  clawhub_slug: create-dxf
+  clawhub_path: ajmwagar/create-dxf
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Create Dxf
+
+    # Source: ClawHub community skill by ajmwagar
+
+    # Install: clawhub install create-dxf
+
+    # Path: ajmwagar/create-dxf
+
+
+    ## Description
+
+    Create RFQ-ready 2D DXF (and optional SVG preview) files from a strict, validated JSON spec derived from a natural-language
+    design prompt. Use for sheet/plate parts (waterjet/laser/router) like mounting plates, gussets, brackets, hole patterns,
+    and slots.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/spec_schema.md
+
+    - references/test_prompts.md
+
+    - scripts/create_dxf.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install create-dxf
+
+    ```'
+examples:
+- description: Install Create Dxf from ClawHub
+  usage: clawhub install create-dxf
+schema_version: '1.0'

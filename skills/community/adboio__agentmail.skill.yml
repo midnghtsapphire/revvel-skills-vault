@@ -1,0 +1,33 @@
+name: agentmail
+title: AgentMail
+version: 1.1.1
+description: 'API-first email platform designed for AI agents. Create and manage dedicated email inboxes, send and receive
+  emails programmatically, and handle email-based workflows with webhooks and real-time events. Use when you need to set up
+  agent email identity, send emails from agents, handle incoming email '
+metadata:
+  author: adboio
+  category: Communication
+  tags:
+  - communication
+  - agentmail
+  source: clawhub-community
+  clawhub_slug: agentmail
+  clawhub_path: adboio/agentmail
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# AgentMail\n# Source: ClawHub community skill by adboio\n# Install: clawhub install agentmail\n# Path: adboio/agentmail\n\
+    \n## Description\nAPI-first email platform designed for AI agents. Create and manage dedicated email inboxes, send and\
+    \ receive emails programmatically, and handle email-based workflows with webhooks and real-time events. Use when you need\
+    \ to set up agent email identity, send emails from agents, handle incoming email \n\n## Files\n- SKILL.md\n- _meta.json\n\
+    - references/API.md\n- references/EXAMPLES.md\n- references/WEBHOOKS.md\n- scripts/check_inbox.py\n- scripts/send_email.py\n\
+    - scripts/setup_webhook.py\n\n## Installation\n```bash\nclawhub install agentmail\n```"
+examples:
+- description: Install AgentMail from ClawHub
+  usage: clawhub install agentmail
+schema_version: '1.0'

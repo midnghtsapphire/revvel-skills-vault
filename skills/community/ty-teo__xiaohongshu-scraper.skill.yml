@@ -1,0 +1,70 @@
+name: xiaohongshu-scraper
+title: Xiaohongshu Scraper
+version: 1.0.0
+description: 小红书内容爬取和整理。用于搜索小红书笔记、提取详细内容（正文、评论、图片）、生成整理好的 Markdown 文档。当用户要求搜索小红书、查找小红书攻略、整理小红书内容时使用。
+metadata:
+  author: ty-teo
+  category: Search & Research
+  tags:
+  - search-research
+  - xiaohongshu
+  - scraper
+  source: clawhub-community
+  clawhub_slug: xiaohongshu-scraper
+  clawhub_path: ty-teo/xiaohongshu-scraper
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Xiaohongshu Scraper
+
+    # Source: ClawHub community skill by ty-teo
+
+    # Install: clawhub install xiaohongshu-scraper
+
+    # Path: ty-teo/xiaohongshu-scraper
+
+
+    ## Description
+
+    小红书内容爬取和整理。用于搜索小红书笔记、提取详细内容（正文、评论、图片）、生成整理好的 Markdown 文档。当用户要求搜索小红书、查找小红书攻略、整理小红书内容时使用。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/xhs-api-service.sh
+
+    - scripts/xhs_api_client.py
+
+    - scripts/xhs_scraper.py
+
+    - scripts/legacy/extract_chrome_cookies.py
+
+    - scripts/legacy/fetch_note.py
+
+    - scripts/legacy/fetch_note_api.py
+
+    - scripts/legacy/fetch_note_chrome.py
+
+    - scripts/legacy/fetch_note_v2.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install xiaohongshu-scraper
+
+    ```'
+examples:
+- description: Install Xiaohongshu Scraper from ClawHub
+  usage: clawhub install xiaohongshu-scraper
+schema_version: '1.0'

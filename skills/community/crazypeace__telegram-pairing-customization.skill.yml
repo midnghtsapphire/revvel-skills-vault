@@ -1,0 +1,59 @@
+name: telegram-pairing-customization
+title: 总是响应未配对用户的 /start 消息 | Always respond to /start messages from unpaired users
+version: 1.0.4
+description: Modify OpenClaw's Telegram pairing logic so unapproved users receive pairing codes on every /start message before
+  approval. Use when users need to repeatedly access pairing codes after the initial request, ensuring consistent access to
+  pairing instructions even if the initial code was missed or lost
+metadata:
+  author: crazypeace
+  category: Social Media
+  tags:
+  - social-media
+  - telegram
+  - pairing
+  - customization
+  source: clawhub-community
+  clawhub_slug: telegram-pairing-customization
+  clawhub_path: crazypeace/telegram-pairing-customization
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# 总是响应未配对用户的 /start 消息 | Always respond to /start messages from unpaired users
+
+    # Source: ClawHub community skill by crazypeace
+
+    # Install: clawhub install telegram-pairing-customization
+
+    # Path: crazypeace/telegram-pairing-customization
+
+
+    ## Description
+
+    Modify OpenClaw''s Telegram pairing logic so unapproved users receive pairing codes on every /start message before approval.
+    Use when users need to repeatedly access pairing codes after the initial request, ensuring consistent access to pairing
+    instructions even if the initial code was missed or lost
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install telegram-pairing-customization
+
+    ```'
+examples:
+- description: Install 总是响应未配对用户的 /start 消息 | Always respond to /start messages from unpaired users from ClawHub
+  usage: clawhub install telegram-pairing-customization
+schema_version: '1.0'

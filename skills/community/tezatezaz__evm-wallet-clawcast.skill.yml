@@ -1,0 +1,73 @@
+name: clawcast
+title: 'ClawCast Crypto Wallet: Keys, Balances & Transactions'
+version: 1.0.1
+description: This skill is focused on crypto/EVM wallet operations and transaction workflows using cast. It covers wallet
+  creation, importing or generating keys, checking balances, sending coins or tokens, monitoring tokens, creating and verifying
+  transactions, and keeping agent keystores secure so the agent can
+metadata:
+  author: tezatezaz
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - clawcast
+  source: clawhub-community
+  clawhub_slug: evm-wallet-clawcast
+  clawhub_path: tezatezaz/evm-wallet-clawcast
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawCast Crypto Wallet: Keys, Balances & Transactions
+
+    # Source: ClawHub community skill by tezatezaz
+
+    # Install: clawhub install evm-wallet-clawcast
+
+    # Path: tezatezaz/evm-wallet-clawcast
+
+
+    ## Description
+
+    This skill is focused on crypto/EVM wallet operations and transaction workflows using cast. It covers wallet creation,
+    importing or generating keys, checking balances, sending coins or tokens, monitoring tokens, creating and verifying transactions,
+    and keeping agent keystores secure so the agent can
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/evm-network-tokens.json
+
+    - assets/evm-networks.json
+
+    - scripts/00_lib.sh
+
+    - scripts/01_install_cast.sh
+
+    - scripts/02_wallet.sh
+
+    - scripts/03_password.sh
+
+    - scripts/04_network.sh
+
+    - scripts/05_tokens.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install evm-wallet-clawcast
+
+    ```'
+examples:
+- description: 'Install ClawCast Crypto Wallet: Keys, Balances & Transactions from ClawHub'
+  usage: clawhub install evm-wallet-clawcast
+schema_version: '1.0'

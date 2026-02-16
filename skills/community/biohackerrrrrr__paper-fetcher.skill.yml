@@ -1,0 +1,58 @@
+name: paper-fetcher
+title: Academic Paper Fetcher
+version: 1.0.0
+description: Fetch academic papers from Sci-Hub given a DOI. Automatically downloads PDFs and saves them to research/papers/
+  with clean filenames. Use when the user provides a DOI or requests a paper from PubMed.
+metadata:
+  author: biohackerrrrrr
+  category: Search & Research
+  tags:
+  - search-research
+  - paper
+  - fetcher
+  source: clawhub-community
+  clawhub_slug: paper-fetcher
+  clawhub_path: biohackerrrrrr/paper-fetcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Academic Paper Fetcher
+
+    # Source: ClawHub community skill by biohackerrrrrr
+
+    # Install: clawhub install paper-fetcher
+
+    # Path: biohackerrrrrr/paper-fetcher
+
+
+    ## Description
+
+    Fetch academic papers from Sci-Hub given a DOI. Automatically downloads PDFs and saves them to research/papers/ with clean
+    filenames. Use when the user provides a DOI or requests a paper from PubMed.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/fetch_paper.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install paper-fetcher
+
+    ```'
+examples:
+- description: Install Academic Paper Fetcher from ClawHub
+  usage: clawhub install paper-fetcher
+schema_version: '1.0'

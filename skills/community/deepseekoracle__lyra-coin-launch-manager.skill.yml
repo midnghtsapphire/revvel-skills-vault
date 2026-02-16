@@ -1,0 +1,72 @@
+name: lyra-coin-launch-manager
+title: LYRA Coin Launch Manager
+version: 1.1.0
+description: Coin launch memory + verification workflow for Clawnch (4claw/Moltx/Moltbook). Use to launch tokens safely, record
+  canonical receipts (contract+txHash+postUrl), update local dashboard, and save Clanker/monitor links into BOOKMARK BRAIN.
+metadata:
+  author: deepseekoracle
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - lyra
+  - coin
+  - launch
+  - manager
+  source: clawhub-community
+  clawhub_slug: lyra-coin-launch-manager
+  clawhub_path: deepseekoracle/lyra-coin-launch-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LYRA Coin Launch Manager
+
+    # Source: ClawHub community skill by deepseekoracle
+
+    # Install: clawhub install lyra-coin-launch-manager
+
+    # Path: deepseekoracle/lyra-coin-launch-manager
+
+
+    ## Description
+
+    Coin launch memory + verification workflow for Clawnch (4claw/Moltx/Moltbook). Use to launch tokens safely, record canonical
+    receipts (contract+txHash+postUrl), update local dashboard, and save Clanker/monitor links into BOOKMARK BRAIN.
+
+
+    ## Files
+
+    - README.txt
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/cron_template_starcore_family.md
+
+    - scripts/bookmark_starcore_family.py
+
+    - scripts/normalize_starcore_family.py
+
+    - scripts/pull_clawnch_receipts.py
+
+    - scripts/starcore_monitor.py
+
+    - scripts/verify_starcore_family.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lyra-coin-launch-manager
+
+    ```'
+examples:
+- description: Install LYRA Coin Launch Manager from ClawHub
+  usage: clawhub install lyra-coin-launch-manager
+schema_version: '1.0'

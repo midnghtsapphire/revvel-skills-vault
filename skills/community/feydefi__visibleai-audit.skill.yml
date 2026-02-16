@@ -1,0 +1,58 @@
+name: visibleai-audit
+title: VisibleAI GEO Audit
+version: 1.1.0
+description: GEO audit API for AI agents. Check brand visibility across ChatGPT, Perplexity, Gemini. Pay $0.99 USDC via x402.
+  No API keys needed.
+metadata:
+  author: feydefi
+  category: Communication
+  tags:
+  - communication
+  - visibleai
+  - audit
+  source: clawhub-community
+  clawhub_slug: visibleai-audit
+  clawhub_path: feydefi/visibleai-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# VisibleAI GEO Audit
+
+    # Source: ClawHub community skill by feydefi
+
+    # Install: clawhub install visibleai-audit
+
+    # Path: feydefi/visibleai-audit
+
+
+    ## Description
+
+    GEO audit API for AI agents. Check brand visibility across ChatGPT, Perplexity, Gemini. Pay $0.99 USDC via x402. No API
+    keys needed.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/audit.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install visibleai-audit
+
+    ```'
+examples:
+- description: Install VisibleAI GEO Audit from ClawHub
+  usage: clawhub install visibleai-audit
+schema_version: '1.0'

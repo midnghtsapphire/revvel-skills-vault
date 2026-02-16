@@ -1,0 +1,66 @@
+name: todo-management
+title: Todo Management 1.1.2
+version: 1.0.0
+description: Per-workspace SQLite todo manager (./todo.db) with groups and task statuses (pending/in_progress/done/skipped),
+  operated via {baseDir}/scripts/todo.sh for adding, listing, editing, moving, and removing entries and managing groups.
+metadata:
+  author: lucky-2968
+  category: Development & Coding
+  tags:
+  - development-coding
+  - todo
+  - management
+  source: clawhub-community
+  clawhub_slug: todo-management-1-1-2
+  clawhub_path: lucky-2968/todo-management-1-1-2
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Todo Management 1.1.2
+
+    # Source: ClawHub community skill by lucky-2968
+
+    # Install: clawhub install todo-management-1-1-2
+
+    # Path: lucky-2968/todo-management-1-1-2
+
+
+    ## Description
+
+    Per-workspace SQLite todo manager (./todo.db) with groups and task statuses (pending/in_progress/done/skipped), operated
+    via {baseDir}/scripts/todo.sh for adding, listing, editing, moving, and removing entries and managing groups.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package-lock.json
+
+    - package.json
+
+    - pnpm-lock.yaml
+
+    - scripts/todo.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install todo-management-1-1-2
+
+    ```'
+examples:
+- description: Install Todo Management 1.1.2 from ClawHub
+  usage: clawhub install todo-management-1-1-2
+schema_version: '1.0'

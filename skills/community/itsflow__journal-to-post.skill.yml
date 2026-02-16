@@ -1,0 +1,54 @@
+name: journal-to-post
+title: Journal to Post
+version: 1.0.0
+description: Convert personal journal entries into shareable social media posts
+metadata:
+  author: itsflow
+  category: Media & Content
+  tags:
+  - media-content
+  - journal
+  - post
+  source: clawhub-community
+  clawhub_slug: journal-to-post
+  clawhub_path: itsflow/journal-to-post
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Journal to Post
+
+    # Source: ClawHub community skill by itsflow
+
+    # Install: clawhub install journal-to-post
+
+    # Path: itsflow/journal-to-post
+
+
+    ## Description
+
+    Convert personal journal entries into shareable social media posts
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install journal-to-post
+
+    ```'
+examples:
+- description: Install Journal to Post from ClawHub
+  usage: clawhub install journal-to-post
+schema_version: '1.0'

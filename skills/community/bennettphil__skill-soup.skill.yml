@@ -1,0 +1,63 @@
+name: skill-soup-dev
+title: Skill Soup
+version: 0.5.0
+description: Autonomous skill generation agent that picks up community ideas, uses evolved builder tools to produce Agent
+  Skills, and publishes them back to the Skill Soup ecosystem. Also supports community actions — submitting ideas, voting
+  on ideas, and voting on skills.
+metadata:
+  author: bennettphil
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - skill
+  - soup
+  - dev
+  source: clawhub-community
+  clawhub_slug: skill-soup
+  clawhub_path: bennettphil/skill-soup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Soup
+
+    # Source: ClawHub community skill by bennettphil
+
+    # Install: clawhub install skill-soup
+
+    # Path: bennettphil/skill-soup
+
+
+    ## Description
+
+    Autonomous skill generation agent that picks up community ideas, uses evolved builder tools to produce Agent Skills, and
+    publishes them back to the Skill Soup ecosystem. Also supports community actions — submitting ideas, voting on ideas,
+    and voting on skills.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config-template.yaml
+
+    - references/mutation-guide.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install skill-soup
+
+    ```'
+examples:
+- description: Install Skill Soup from ClawHub
+  usage: clawhub install skill-soup
+schema_version: '1.0'

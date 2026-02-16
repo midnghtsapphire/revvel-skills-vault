@@ -1,0 +1,54 @@
+name: hailuo-video
+title: hailuo-video
+version: 1.0.0
+description: 使用 MiniMax Hailuo 2.3 模型生成视频。当用户想要文生视频、图生视频，或提到 hailuo、海螺视频时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: Media & Content
+  tags:
+  - media-content
+  - hailuo
+  - video
+  source: clawhub-community
+  clawhub_slug: hailuo-video
+  clawhub_path: hexiaochun/hailuo-video
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# hailuo-video
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install hailuo-video
+
+    # Path: hexiaochun/hailuo-video
+
+
+    ## Description
+
+    使用 MiniMax Hailuo 2.3 模型生成视频。当用户想要文生视频、图生视频，或提到 hailuo、海螺视频时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install hailuo-video
+
+    ```'
+examples:
+- description: Install hailuo-video from ClawHub
+  usage: clawhub install hailuo-video
+schema_version: '1.0'

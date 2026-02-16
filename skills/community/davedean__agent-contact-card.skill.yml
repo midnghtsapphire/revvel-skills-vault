@@ -1,0 +1,61 @@
+name: agent-contact-card
+title: Agent Contact Card
+version: 0.1.0
+description: Discover and create Agent Contact Cards - a vCard-like format for AI agents. Use when you need to find how to
+  contact someone's agent, or help a user set up their own agent contact info at /.well-known/agent-card.
+metadata:
+  author: davedean
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - agent
+  - contact
+  - card
+  source: clawhub-community
+  clawhub_slug: agent-contact-card
+  clawhub_path: davedean/agent-contact-card
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Agent Contact Card
+
+    # Source: ClawHub community skill by davedean
+
+    # Install: clawhub install agent-contact-card
+
+    # Path: davedean/agent-contact-card
+
+
+    ## Description
+
+    Discover and create Agent Contact Cards - a vCard-like format for AI agents. Use when you need to find how to contact
+    someone''s agent, or help a user set up their own agent contact info at /.well-known/agent-card.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/EXAMPLES.md
+
+    - references/SPEC.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agent-contact-card
+
+    ```'
+examples:
+- description: Install Agent Contact Card from ClawHub
+  usage: clawhub install agent-contact-card
+schema_version: '1.0'

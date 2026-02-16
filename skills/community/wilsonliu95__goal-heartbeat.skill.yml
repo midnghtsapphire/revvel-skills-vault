@@ -1,0 +1,65 @@
+name: _goal-heartbeat-engine_
+title: Goal Heartbeat
+version: 1.0.0
+description: '"多目标轮转心跳引擎。当 cron 心跳触发、或 Agent 需要自主决定下一步行动时自动调用。提供：骰子随机模式选择、目标健康度追踪、防重复机制、接力棒续跑、产出质量红线。适用于任何需要在多个长期目标间智能轮转、持续产出的
+  AI Agent 系统。"'
+metadata:
+  author: wilsonliu95
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - '"goal'
+  - heartbeat
+  - engine"
+  source: clawhub-community
+  clawhub_slug: goal-heartbeat
+  clawhub_path: wilsonliu95/goal-heartbeat
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Goal Heartbeat
+
+    # Source: ClawHub community skill by wilsonliu95
+
+    # Install: clawhub install goal-heartbeat
+
+    # Path: wilsonliu95/goal-heartbeat
+
+
+    ## Description
+
+    "多目标轮转心跳引擎。当 cron 心跳触发、或 Agent 需要自主决定下一步行动时自动调用。提供：骰子随机模式选择、目标健康度追踪、防重复机制、接力棒续跑、产出质量红线。适用于任何需要在多个长期目标间智能轮转、持续产出的 AI Agent
+    系统。"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - agents/openai.yaml
+
+    - references/action-protocols.md
+
+    - references/seed-keywords.md
+
+    - tests/test-heartbeat.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install goal-heartbeat
+
+    ```'
+examples:
+- description: Install Goal Heartbeat from ClawHub
+  usage: clawhub install goal-heartbeat
+schema_version: '1.0'

@@ -1,0 +1,58 @@
+name: ssh-tunnel
+title: SSH Tunnel
+version: 1.0.0
+description: SSH tunneling, port forwarding, and remote access patterns. Use when setting up local/remote/dynamic port forwards,
+  configuring jump hosts, managing SSH keys, multiplexing connections, transferring files with scp/rsync, or debugging SSH
+  connection issues.
+metadata:
+  author: gitgoodordietrying
+  category: Development & Coding
+  tags:
+  - development-coding
+  - ssh
+  - tunnel
+  source: clawhub-community
+  clawhub_slug: ssh-tunnel
+  clawhub_path: gitgoodordietrying/ssh-tunnel
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SSH Tunnel
+
+    # Source: ClawHub community skill by gitgoodordietrying
+
+    # Install: clawhub install ssh-tunnel
+
+    # Path: gitgoodordietrying/ssh-tunnel
+
+
+    ## Description
+
+    SSH tunneling, port forwarding, and remote access patterns. Use when setting up local/remote/dynamic port forwards, configuring
+    jump hosts, managing SSH keys, multiplexing connections, transferring files with scp/rsync, or debugging SSH connection
+    issues.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ssh-tunnel
+
+    ```'
+examples:
+- description: Install SSH Tunnel from ClawHub
+  usage: clawhub install ssh-tunnel
+schema_version: '1.0'

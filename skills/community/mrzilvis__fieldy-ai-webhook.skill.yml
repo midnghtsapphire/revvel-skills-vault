@@ -1,0 +1,57 @@
+name: fieldy
+title: Fieldy AI Webhook
+version: 0.1.2
+description: Wire a Fieldy webhook transform into Moltbot hooks.
+metadata:
+  author: mrzilvis
+  category: Web & Internet
+  tags:
+  - web-internet
+  - fieldy
+  source: clawhub-community
+  clawhub_slug: fieldy-ai-webhook
+  clawhub_path: mrzilvis/fieldy-ai-webhook
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fieldy AI Webhook
+
+    # Source: ClawHub community skill by mrzilvis
+
+    # Install: clawhub install fieldy-ai-webhook
+
+    # Path: mrzilvis/fieldy-ai-webhook
+
+
+    ## Description
+
+    Wire a Fieldy webhook transform into Moltbot hooks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - src/fieldy-webhook.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fieldy-ai-webhook
+
+    ```'
+examples:
+- description: Install Fieldy AI Webhook from ClawHub
+  usage: clawhub install fieldy-ai-webhook
+schema_version: '1.0'

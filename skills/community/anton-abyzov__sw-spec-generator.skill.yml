@@ -1,0 +1,60 @@
+name: spec-generator
+title: Spec Generator
+version: 1.0.0
+description: Generates comprehensive specifications (spec.md, plan.md, tasks.md with embedded tests) for SpecWeave increments.
+  Use when creating new increments, planning features, or converting ideas into actionable specs. Produces structured documentation
+  with proven templates and context-aware organization.
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - spec
+  - generator
+  source: clawhub-community
+  clawhub_slug: sw-spec-generator
+  clawhub_path: anton-abyzov/sw-spec-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Spec Generator
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-spec-generator
+
+    # Path: anton-abyzov/sw-spec-generator
+
+
+    ## Description
+
+    Generates comprehensive specifications (spec.md, plan.md, tasks.md with embedded tests) for SpecWeave increments. Use
+    when creating new increments, planning features, or converting ideas into actionable specs. Produces structured documentation
+    with proven templates and context-aware organization.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-spec-generator
+
+    ```'
+examples:
+- description: Install Spec Generator from ClawHub
+  usage: clawhub install sw-spec-generator
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: seekdb-docs
+title: seekdb
+version: 0.1.5
+description: seekdb database documentation lookup. Use when users ask about seekdb features, SQL syntax, vector search, hybrid
+  search, integrations, deployment, or any seekdb-related topics. Automatically locates relevant docs via catalog-based semantic
+  search.
+metadata:
+  author: davidzhangbj
+  category: Search & Research
+  tags:
+  - search-research
+  - seekdb
+  - docs
+  source: clawhub-community
+  clawhub_slug: seekdb-docs
+  clawhub_path: davidzhangbj/seekdb-docs
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# seekdb
+
+    # Source: ClawHub community skill by davidzhangbj
+
+    # Install: clawhub install seekdb-docs
+
+    # Path: davidzhangbj/seekdb-docs
+
+
+    ## Description
+
+    seekdb database documentation lookup. Use when users ask about seekdb features, SQL syntax, vector search, hybrid search,
+    integrations, deployment, or any seekdb-related topics. Automatically locates relevant docs via catalog-based semantic
+    search.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/examples.md
+
+    - scripts/update_docs.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seekdb-docs
+
+    ```'
+examples:
+- description: Install seekdb from ClawHub
+  usage: clawhub install seekdb-docs
+schema_version: '1.0'

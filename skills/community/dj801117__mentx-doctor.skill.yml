@@ -1,0 +1,53 @@
+name: mentx_doctor
+title: mentx-doctor
+version: 1.0.1
+description: 基于提出的医疗相关问题，通过 api上传医疗相关图片和文字（表征、内窥镜影像、X光、CT、MRI、超声、心电、各类检测报告等），获取专业医疗辅助决策报告支持。
+metadata:
+  author: dj801117
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mentx@doctor
+  source: clawhub-community
+  clawhub_slug: mentx-doctor
+  clawhub_path: dj801117/mentx-doctor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# mentx-doctor
+
+    # Source: ClawHub community skill by dj801117
+
+    # Install: clawhub install mentx-doctor
+
+    # Path: dj801117/mentx-doctor
+
+
+    ## Description
+
+    基于提出的医疗相关问题，通过 api上传医疗相关图片和文字（表征、内窥镜影像、X光、CT、MRI、超声、心电、各类检测报告等），获取专业医疗辅助决策报告支持。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mentx-doctor
+
+    ```'
+examples:
+- description: Install mentx-doctor from ClawHub
+  usage: clawhub install mentx-doctor
+schema_version: '1.0'

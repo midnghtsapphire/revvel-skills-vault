@@ -1,0 +1,57 @@
+name: strava
+title: Strava
+version: 1.0.0
+description: Load and analyze Strava activities, stats, and workouts using the Strava API
+metadata:
+  author: bohdanpodvirnyi
+  category: Development & Coding
+  tags:
+  - development-coding
+  - strava
+  source: clawhub-community
+  clawhub_slug: strava
+  clawhub_path: bohdanpodvirnyi/strava
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Strava
+
+    # Source: ClawHub community skill by bohdanpodvirnyi
+
+    # Install: clawhub install strava
+
+    # Path: bohdanpodvirnyi/strava
+
+
+    ## Description
+
+    Load and analyze Strava activities, stats, and workouts using the Strava API
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/refresh_token.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install strava
+
+    ```'
+examples:
+- description: Install Strava from ClawHub
+  usage: clawhub install strava
+schema_version: '1.0'

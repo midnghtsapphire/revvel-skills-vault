@@ -1,0 +1,62 @@
+name: token-optimizer
+title: Openclaw Token Memory Optimizer
+version: 1.0.0
+description: Optimization suite for OpenClaw agents to prevent token leaks and context bloat. Use when an agent needs to implement
+  background task isolation (Cron) or a Reset & Summarize workflow (RAG).
+metadata:
+  author: klautimus
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - token
+  - optimizer
+  source: clawhub-community
+  clawhub_slug: openclaw-token-memory-optimizer
+  clawhub_path: klautimus/openclaw-token-memory-optimizer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Token Memory Optimizer
+
+    # Source: ClawHub community skill by klautimus
+
+    # Install: clawhub install openclaw-token-memory-optimizer
+
+    # Path: klautimus/openclaw-token-memory-optimizer
+
+
+    ## Description
+
+    Optimization suite for OpenClaw agents to prevent token leaks and context bloat. Use when an agent needs to implement
+    background task isolation (Cron) or a Reset & Summarize workflow (RAG).
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/check-optimization.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-token-memory-optimizer
+
+    ```'
+examples:
+- description: Install Openclaw Token Memory Optimizer from ClawHub
+  usage: clawhub install openclaw-token-memory-optimizer
+schema_version: '1.0'

@@ -1,0 +1,62 @@
+name: openclaw-checkpoint
+title: OpenClaw Checkpoint - Personal AI Assistant Backup & Recovery (Github)
+version: 1.0.4
+description: Backup and restore OpenClaw workspace state across machines using git. Enables disaster recovery by syncing SOUL.md,
+  MEMORY.md, memory files, cron jobs, and configuration to a remote repository. Use when user wants to checkpoint their OpenClaw
+  state, restore on a new machine, migrate between compute
+metadata:
+  author: anthonyfrancis
+  category: Development & Coding
+  tags:
+  - development-coding
+  - openclaw
+  - checkpoint
+  source: clawhub-community
+  clawhub_slug: openclaw-checkpoint
+  clawhub_path: anthonyfrancis/openclaw-checkpoint
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Checkpoint - Personal AI Assistant Backup & Recovery (Github)
+
+    # Source: ClawHub community skill by anthonyfrancis
+
+    # Install: clawhub install openclaw-checkpoint
+
+    # Path: anthonyfrancis/openclaw-checkpoint
+
+
+    ## Description
+
+    Backup and restore OpenClaw workspace state across machines using git. Enables disaster recovery by syncing SOUL.md, MEMORY.md,
+    memory files, cron jobs, and configuration to a remote repository. Use when user wants to checkpoint their OpenClaw state,
+    restore on a new machine, migrate between compute
+
+
+    ## Files
+
+    - INSTALL.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-checkpoint
+
+    ```'
+examples:
+- description: Install OpenClaw Checkpoint - Personal AI Assistant Backup & Recovery (Github) from ClawHub
+  usage: clawhub install openclaw-checkpoint
+schema_version: '1.0'

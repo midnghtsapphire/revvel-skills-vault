@@ -1,0 +1,65 @@
+name: claw-skill-guard
+title: Skill Security Scanner
+version: 1.0.0
+description: Security scanner for OpenClaw skills. Detects malicious patterns, suspicious URLs, and install traps before you
+  install a skill. Use before installing ANY skill from ClawHub or external sources.
+metadata:
+  author: vincentchan
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - claw
+  - skill
+  - guard
+  source: clawhub-community
+  clawhub_slug: claw-skill-guard
+  clawhub_path: vincentchan/claw-skill-guard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Skill Security Scanner
+
+    # Source: ClawHub community skill by vincentchan
+
+    # Install: clawhub install claw-skill-guard
+
+    # Path: vincentchan/claw-skill-guard
+
+
+    ## Description
+
+    Security scanner for OpenClaw skills. Detects malicious patterns, suspicious URLs, and install traps before you install
+    a skill. Use before installing ANY skill from ClawHub or external sources.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/agents-policy.md
+
+    - examples/pre-commit-hook.sh
+
+    - scripts/scanner.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-skill-guard
+
+    ```'
+examples:
+- description: Install Skill Security Scanner from ClawHub
+  usage: clawhub install claw-skill-guard
+schema_version: '1.0'

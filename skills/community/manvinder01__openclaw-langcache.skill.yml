@@ -1,0 +1,67 @@
+name: langcache
+title: Langcache Semantic Caching for OpenClaw
+version: 1.0.0
+description: This skill should be used when the user asks to "enable semantic caching", "cache LLM responses", "reduce API
+  costs", "speed up AI responses", "configure LangCache", "search the semantic cache", "store responses in cache", or mentions
+  Redis LangCache, semantic similarity caching, or LLM response cac
+metadata:
+  author: manvinder01
+  category: Search & Research
+  tags:
+  - search-research
+  - langcache
+  source: clawhub-community
+  clawhub_slug: openclaw-langcache
+  clawhub_path: manvinder01/openclaw-langcache
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Langcache Semantic Caching for OpenClaw
+
+    # Source: ClawHub community skill by manvinder01
+
+    # Install: clawhub install openclaw-langcache
+
+    # Path: manvinder01/openclaw-langcache
+
+
+    ## Description
+
+    This skill should be used when the user asks to "enable semantic caching", "cache LLM responses", "reduce API costs",
+    "speed up AI responses", "configure LangCache", "search the semantic cache", "store responses in cache", or mentions Redis
+    LangCache, semantic similarity caching, or LLM response cac
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - examples/agent-integration.py
+
+    - examples/basic-caching.sh
+
+    - references/api-reference.md
+
+    - references/best-practices.md
+
+    - scripts/langcache.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-langcache
+
+    ```'
+examples:
+- description: Install Langcache Semantic Caching for OpenClaw from ClawHub
+  usage: clawhub install openclaw-langcache
+schema_version: '1.0'

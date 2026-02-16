@@ -1,0 +1,56 @@
+name: schema-writer
+title: Schema Writer
+version: 1.0.0
+description: Generate database schemas from plain English. Use when you need SQL tables fast.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - schema
+  - writer
+  source: clawhub-community
+  clawhub_slug: schema-writer
+  clawhub_path: lxgicstudios/schema-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Schema Writer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install schema-writer
+
+    # Path: lxgicstudios/schema-writer
+
+
+    ## Description
+
+    Generate database schemas from plain English. Use when you need SQL tables fast.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install schema-writer
+
+    ```'
+examples:
+- description: Install Schema Writer from ClawHub
+  usage: clawhub install schema-writer
+schema_version: '1.0'

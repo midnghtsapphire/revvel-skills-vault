@@ -1,0 +1,65 @@
+name: anachb
+title: A nach B - AT Public Transport Service (VOR)
+version: 1.0.0
+description: Austrian public transport (VOR AnachB) for all of Austria. Query real-time departures, search stations/stops,
+  plan routes between locations, and check service disruptions. Use when asking about Austrian trains, buses, trams, metro
+  (U-Bahn), or directions involving public transport in Austria.
+metadata:
+  author: manmal
+  category: Search & Research
+  tags:
+  - search-research
+  - anachb
+  source: clawhub-community
+  clawhub_slug: a-nach-b
+  clawhub_path: manmal/a-nach-b
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# A nach B - AT Public Transport Service (VOR)
+
+    # Source: ClawHub community skill by manmal
+
+    # Install: clawhub install a-nach-b
+
+    # Path: manmal/a-nach-b
+
+
+    ## Description
+
+    Austrian public transport (VOR AnachB) for all of Austria. Query real-time departures, search stations/stops, plan routes
+    between locations, and check service disruptions. Use when asking about Austrian trains, buses, trams, metro (U-Bahn),
+    or directions involving public transport in Austria.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - departures.sh
+
+    - disruptions.sh
+
+    - route.sh
+
+    - search.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install a-nach-b
+
+    ```'
+examples:
+- description: Install A nach B - AT Public Transport Service (VOR) from ClawHub
+  usage: clawhub install a-nach-b
+schema_version: '1.0'

@@ -1,0 +1,68 @@
+name: json2video-pinterest
+title: ClawVideo Generation
+version: 1.0.0
+description: Generate Pinterest-optimized vertical videos using JSON2Video API. Supports AI-generated or URL-based images,
+  AI-generated or provided voiceovers, optional subtitles, and zoom effects. Use when creating video content for Pinterest
+  affiliate marketing, creating vertical social media videos, automatin
+metadata:
+  author: benhuebner01
+  category: Media & Content
+  tags:
+  - media-content
+  - json2video
+  - pinterest
+  source: clawhub-community
+  clawhub_slug: claw-video-generator
+  clawhub_path: benhuebner01/claw-video-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ClawVideo Generation
+
+    # Source: ClawHub community skill by benhuebner01
+
+    # Install: clawhub install claw-video-generator
+
+    # Path: benhuebner01/claw-video-generator
+
+
+    ## Description
+
+    Generate Pinterest-optimized vertical videos using JSON2Video API. Supports AI-generated or URL-based images, AI-generated
+    or provided voiceovers, optional subtitles, and zoom effects. Use when creating video content for Pinterest affiliate
+    marketing, creating vertical social media videos, automatin
+
+
+    ## Files
+
+    - ADVANCED.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/example-advanced.json
+
+    - scripts/example-config.json
+
+    - scripts/generate_video.py
+
+    - scripts/test-video.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install claw-video-generator
+
+    ```'
+examples:
+- description: Install ClawVideo Generation from ClawHub
+  usage: clawhub install claw-video-generator
+schema_version: '1.0'

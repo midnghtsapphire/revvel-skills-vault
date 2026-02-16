@@ -1,0 +1,74 @@
+name: agentmail-integration
+title: AgentMail Integration
+version: 1.1.0
+description: Integrate AgentMail API for AI agent email automation. Create and manage dedicated email inboxes, send and receive
+  emails programmatically, handle email-based workflows with webhooks and real-time events. Use when Codex needs to set up
+  agent email identity, send emails from agents, handle incoming e
+metadata:
+  author: synesthesia-wav
+  category: Communication
+  tags:
+  - communication
+  - agentmail
+  - integration
+  source: clawhub-community
+  clawhub_slug: agentmail-integration
+  clawhub_path: synesthesia-wav/agentmail-integration
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# AgentMail Integration
+
+    # Source: ClawHub community skill by synesthesia-wav
+
+    # Install: clawhub install agentmail-integration
+
+    # Path: synesthesia-wav/agentmail-integration
+
+
+    ## Description
+
+    Integrate AgentMail API for AI agent email automation. Create and manage dedicated email inboxes, send and receive emails
+    programmatically, handle email-based workflows with webhooks and real-time events. Use when Codex needs to set up agent
+    email identity, send emails from agents, handle incoming e
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/API.md
+
+    - references/EXAMPLES.md
+
+    - references/WEBHOOKS.md
+
+    - references/patterns.md
+
+    - scripts/agentmail-helper.py
+
+    - scripts/check_inbox.py
+
+    - scripts/send_email.py
+
+    - scripts/setup_webhook.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install agentmail-integration
+
+    ```'
+examples:
+- description: Install AgentMail Integration from ClawHub
+  usage: clawhub install agentmail-integration
+schema_version: '1.0'

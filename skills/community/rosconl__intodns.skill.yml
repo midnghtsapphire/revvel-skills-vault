@@ -1,0 +1,53 @@
+name: intodns
+title: IntoDNS
+version: 1.0.0
+description: '"DNS & email security analysis powered by IntoDNS.ai - scan domains for DNS, DNSSEC, SPF, DKIM, DMARC issues"'
+metadata:
+  author: rosconl
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - intodns
+  source: clawhub-community
+  clawhub_slug: intodns
+  clawhub_path: rosconl/intodns
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# IntoDNS
+
+    # Source: ClawHub community skill by rosconl
+
+    # Install: clawhub install intodns
+
+    # Path: rosconl/intodns
+
+
+    ## Description
+
+    "DNS & email security analysis powered by IntoDNS.ai - scan domains for DNS, DNSSEC, SPF, DKIM, DMARC issues"
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install intodns
+
+    ```'
+examples:
+- description: Install IntoDNS from ClawHub
+  usage: clawhub install intodns
+schema_version: '1.0'

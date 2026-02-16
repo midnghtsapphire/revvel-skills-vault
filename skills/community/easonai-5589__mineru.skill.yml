@@ -1,0 +1,53 @@
+name: mineru
+title: MinerU PDF Parser
+version: 1.0.1
+description: 用 MinerU API 解析 PDF/Word/PPT/图片为 Markdown，支持公式、表格、OCR。适用于论文解析、文档提取。
+metadata:
+  author: easonai-5589
+  category: Development & Coding
+  tags:
+  - development-coding
+  - mineru
+  source: clawhub-community
+  clawhub_slug: mineru
+  clawhub_path: easonai-5589/mineru
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MinerU PDF Parser
+
+    # Source: ClawHub community skill by easonai-5589
+
+    # Install: clawhub install mineru
+
+    # Path: easonai-5589/mineru
+
+
+    ## Description
+
+    用 MinerU API 解析 PDF/Word/PPT/图片为 Markdown，支持公式、表格、OCR。适用于论文解析、文档提取。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mineru
+
+    ```'
+examples:
+- description: Install MinerU PDF Parser from ClawHub
+  usage: clawhub install mineru
+schema_version: '1.0'

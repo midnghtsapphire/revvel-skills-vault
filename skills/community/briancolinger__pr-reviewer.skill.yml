@@ -1,0 +1,59 @@
+name: pr-reviewer
+title: PR Reviewer
+version: 1.0.0
+description: Automated GitHub PR code review with diff analysis, lint integration, and structured reports. Use when reviewing
+  pull requests, checking for security issues, error handling gaps, test coverage, or code style problems. Supports Go, Python,
+  and JavaScript/TypeScript. Requires `gh` CLI authenticated wi
+metadata:
+  author: briancolinger
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - reviewer
+  source: clawhub-community
+  clawhub_slug: pr-reviewer
+  clawhub_path: briancolinger/pr-reviewer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PR Reviewer
+
+    # Source: ClawHub community skill by briancolinger
+
+    # Install: clawhub install pr-reviewer
+
+    # Path: briancolinger/pr-reviewer
+
+
+    ## Description
+
+    Automated GitHub PR code review with diff analysis, lint integration, and structured reports. Use when reviewing pull
+    requests, checking for security issues, error handling gaps, test coverage, or code style problems. Supports Go, Python,
+    and JavaScript/TypeScript. Requires `gh` CLI authenticated wi
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/pr-review.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install pr-reviewer
+
+    ```'
+examples:
+- description: Install PR Reviewer from ClawHub
+  usage: clawhub install pr-reviewer
+schema_version: '1.0'

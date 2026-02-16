@@ -1,0 +1,58 @@
+name: dify-kb-search
+title: Dify Knowledge Base Search
+version: 1.1.1
+description: Search Dify Knowledge Base (Dataset) to get accurate context for RAG-enhanced answers.
+metadata:
+  author: xiaowenzhou
+  category: Search & Research
+  tags:
+  - search-research
+  - dify
+  - search
+  source: clawhub-community
+  clawhub_slug: dify-kb-search
+  clawhub_path: xiaowenzhou/dify-kb-search
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Dify Knowledge Base Search
+
+    # Source: ClawHub community skill by xiaowenzhou
+
+    # Install: clawhub install dify-kb-search
+
+    # Path: xiaowenzhou/dify-kb-search
+
+
+    ## Description
+
+    Search Dify Knowledge Base (Dataset) to get accurate context for RAG-enhanced answers.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/list_datasets.py
+
+    - scripts/search.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install dify-kb-search
+
+    ```'
+examples:
+- description: Install Dify Knowledge Base Search from ClawHub
+  usage: clawhub install dify-kb-search
+schema_version: '1.0'

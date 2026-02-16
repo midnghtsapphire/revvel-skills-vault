@@ -1,0 +1,62 @@
+name: siri
+title: Siri
+version: 1.0.0
+description: Control devices, run automations, and help users get more from Siri with HomeKit, Shortcuts, and voice command
+  guidance.
+metadata:
+  author: ivangdavila
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - siri
+  source: clawhub-community
+  clawhub_slug: siri
+  clawhub_path: ivangdavila/siri
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Siri
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install siri
+
+    # Path: ivangdavila/siri
+
+
+    ## Description
+
+    Control devices, run automations, and help users get more from Siri with HomeKit, Shortcuts, and voice command guidance.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - commands.md
+
+    - development.md
+
+    - homekit.md
+
+    - shortcuts.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install siri
+
+    ```'
+examples:
+- description: Install Siri from ClawHub
+  usage: clawhub install siri
+schema_version: '1.0'

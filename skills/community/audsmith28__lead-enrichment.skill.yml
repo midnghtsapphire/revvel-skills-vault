@@ -1,0 +1,68 @@
+name: lead-enrichment
+title: Lead Enrichment
+version: 1.1.0
+description: Turn a name into a full dossier in seconds. Feed in a name + company (or email, or LinkedIn URL) and get back
+  a rich profile with social links, bio, company intel, recent activity, and personalized talking points. Aggregates data
+  from multiple public sources — LinkedIn, Twitter, GitHub, company webs
+metadata:
+  author: audsmith28
+  category: Search & Research
+  tags:
+  - search-research
+  - lead
+  - enrichment
+  source: clawhub-community
+  clawhub_slug: lead-enrichment
+  clawhub_path: audsmith28/lead-enrichment
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Lead Enrichment
+
+    # Source: ClawHub community skill by audsmith28
+
+    # Install: clawhub install lead-enrichment
+
+    # Path: audsmith28/lead-enrichment
+
+
+    ## Description
+
+    Turn a name into a full dossier in seconds. Feed in a name + company (or email, or LinkedIn URL) and get back a rich profile
+    with social links, bio, company intel, recent activity, and personalized talking points. Aggregates data from multiple
+    public sources — LinkedIn, Twitter, GitHub, company webs
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - scripts/batch.sh
+
+    - scripts/enrich.sh
+
+    - scripts/export.sh
+
+    - scripts/setup.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lead-enrichment
+
+    ```'
+examples:
+- description: Install Lead Enrichment from ClawHub
+  usage: clawhub install lead-enrichment
+schema_version: '1.0'

@@ -1,0 +1,65 @@
+name: google-tv
+title: Google Tv
+version: 1.0.2
+description: Play YouTube/Tubi content and fallback to Google TV global search for other streaming apps via ADB
+metadata:
+  author: antgly
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  source: clawhub-community
+  clawhub_slug: google-tv
+  clawhub_path: antgly/google-tv
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Tv
+
+    # Source: ClawHub community skill by antgly
+
+    # Install: clawhub install google-tv
+
+    # Path: antgly/google-tv
+
+
+    ## Description
+
+    Play YouTube/Tubi content and fallback to Google TV global search for other streaming apps via ADB
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - google_tv_skill.py
+
+    - play_show_via_global_search.py
+
+    - skip-intro-monitor.sh
+
+    - test_google_tv_skill.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google-tv
+
+    ```'
+examples:
+- description: Install Google Tv from ClawHub
+  usage: clawhub install google-tv
+schema_version: '1.0'

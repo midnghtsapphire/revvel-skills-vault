@@ -1,0 +1,36 @@
+name: pptx-pdf-font-fix
+title: PPTX PDF Font Fix
+version: 1.0.0
+description: 'Fix PowerPoint font embedding issues in PDF export by patching text transparency in PPTX files. Use when a user
+  has a PPTX file where exported PDFs show wrong/default fonts instead of the intended downloaded/custom fonts, even with
+  font embedding enabled. Works by applying minimal (1%) transparency '
+metadata:
+  author: chernojagne
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - pptx
+  - pdf
+  - font
+  - fix
+  source: clawhub-community
+  clawhub_slug: pptx-pdf-font-fix
+  clawhub_path: chernojagne/pptx-pdf-font-fix
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# PPTX PDF Font Fix\n# Source: ClawHub community skill by chernojagne\n# Install: clawhub install pptx-pdf-font-fix\n\
+    # Path: chernojagne/pptx-pdf-font-fix\n\n## Description\nFix PowerPoint font embedding issues in PDF export by patching\
+    \ text transparency in PPTX files. Use when a user has a PPTX file where exported PDFs show wrong/default fonts instead\
+    \ of the intended downloaded/custom fonts, even with font embedding enabled. Works by applying minimal (1%) transparency\
+    \ \n\n## Files\n- SKILL.md\n- _meta.json\n- scripts/fix_font_transparency.py\n\n## Installation\n```bash\nclawhub install\
+    \ pptx-pdf-font-fix\n```"
+examples:
+- description: Install PPTX PDF Font Fix from ClawHub
+  usage: clawhub install pptx-pdf-font-fix
+schema_version: '1.0'

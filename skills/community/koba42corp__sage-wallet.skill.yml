@@ -1,0 +1,35 @@
+name: sage-wallet
+title: Sage Wallet
+version: 1.0.0
+description: 'Interact with the Sage Chia blockchain wallet via RPC. Use for XCH transactions, CAT tokens, NFTs, DIDs, offers,
+  options, coin management, and wallet configuration. Supports cross-platform setups (Mac/Linux/Windows) with configurable
+  RPC endpoints and SSL certificates. Invoke with /sage commands or '
+metadata:
+  author: koba42corp
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - sage
+  - wallet
+  source: clawhub-community
+  clawhub_slug: sage-wallet
+  clawhub_path: koba42corp/sage-wallet
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# Sage Wallet\n# Source: ClawHub community skill by koba42corp\n# Install: clawhub install sage-wallet\n# Path:\
+    \ koba42corp/sage-wallet\n\n## Description\nInteract with the Sage Chia blockchain wallet via RPC. Use for XCH transactions,\
+    \ CAT tokens, NFTs, DIDs, offers, options, coin management, and wallet configuration. Supports cross-platform setups (Mac/Linux/Windows)\
+    \ with configurable RPC endpoints and SSL certificates. Invoke with /sage commands or \n\n## Files\n- README.md\n- SKILL.md\n\
+    - _meta.json\n- references/endpoints.md\n- scripts/sage-config.sh\n- scripts/sage-rpc.sh\n- scripts/test-config.sh\n-\
+    \ scripts/test-integration.sh\n- scripts/test-rpc.sh\n- sub-skills/sage-auth/SKILL.md\n\n## Installation\n```bash\nclawhub\
+    \ install sage-wallet\n```"
+examples:
+- description: Install Sage Wallet from ClawHub
+  usage: clawhub install sage-wallet
+schema_version: '1.0'

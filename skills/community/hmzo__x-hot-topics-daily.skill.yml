@@ -1,0 +1,57 @@
+name: x-hot-topics-daily
+title: X Hot Topics Daily
+version: 1.0.0
+description: 每日追踪并推送 X（x.com）热点话题新闻简报。用于用户要求“每天定时看 X 热点”“按指定话题抓取热门帖”“用 browser 方式监控 X 趋势”时。默认覆盖 AI、LLM、社会热点（中国/新加坡/美国）五个主题。重点输出“最低成本
+  know-what 版”：2 条必知 + 3 条可忽略 + 10 分钟行动，帮助用户抗 FOMO，而不是只罗列标题。
+metadata:
+  author: hmzo
+  category: Search & Research
+  tags:
+  - search-research
+  - hot
+  - topics
+  - daily
+  source: clawhub-community
+  clawhub_slug: x-hot-topics-daily
+  clawhub_path: hmzo/x-hot-topics-daily
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# X Hot Topics Daily
+
+    # Source: ClawHub community skill by hmzo
+
+    # Install: clawhub install x-hot-topics-daily
+
+    # Path: hmzo/x-hot-topics-daily
+
+
+    ## Description
+
+    每日追踪并推送 X（x.com）热点话题新闻简报。用于用户要求“每天定时看 X 热点”“按指定话题抓取热门帖”“用 browser 方式监控 X 趋势”时。默认覆盖 AI、LLM、社会热点（中国/新加坡/美国）五个主题。重点输出“最低成本
+    know-what 版”：2 条必知 + 3 条可忽略 + 10 分钟行动，帮助用户抗 FOMO，而不是只罗列标题。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install x-hot-topics-daily
+
+    ```'
+examples:
+- description: Install X Hot Topics Daily from ClawHub
+  usage: clawhub install x-hot-topics-daily
+schema_version: '1.0'

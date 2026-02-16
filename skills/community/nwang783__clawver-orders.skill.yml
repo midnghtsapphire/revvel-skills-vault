@@ -1,0 +1,58 @@
+name: clawver-orders
+title: Clawver Orders
+version: 1.0.3
+description: Manage Clawver orders. List orders, track status, process refunds, generate download links. Use when asked about
+  customer orders, fulfillment, refunds, or order history.
+metadata:
+  author: nwang783
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - clawver
+  - orders
+  source: clawhub-community
+  clawhub_slug: clawver-orders
+  clawhub_path: nwang783/clawver-orders
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clawver Orders
+
+    # Source: ClawHub community skill by nwang783
+
+    # Install: clawhub install clawver-orders
+
+    # Path: nwang783/clawver-orders
+
+
+    ## Description
+
+    Manage Clawver orders. List orders, track status, process refunds, generate download links. Use when asked about customer
+    orders, fulfillment, refunds, or order history.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawver-orders
+
+    ```'
+examples:
+- description: Install Clawver Orders from ClawHub
+  usage: clawhub install clawver-orders
+schema_version: '1.0'

@@ -1,0 +1,53 @@
+name: feishu-im
+title: feishu-im
+version: 1.0.0
+description: 飞书消息与群管理 Skill。发送消息、建群、置顶、加急、撤回、群菜单/Tab/公告等 25+ 项 IM 能力。当需要通过飞书发送消息、管理群聊、操作群成员或配置群功能时使用此 Skill。
+metadata:
+  author: sunnyyao2222-eng
+  category: General
+  tags:
+  - general
+  - feishu
+  source: clawhub-community
+  clawhub_slug: feishu-im
+  clawhub_path: sunnyyao2222-eng/feishu-im
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# feishu-im
+
+    # Source: ClawHub community skill by sunnyyao2222-eng
+
+    # Install: clawhub install feishu-im
+
+    # Path: sunnyyao2222-eng/feishu-im
+
+
+    ## Description
+
+    飞书消息与群管理 Skill。发送消息、建群、置顶、加急、撤回、群菜单/Tab/公告等 25+ 项 IM 能力。当需要通过飞书发送消息、管理群聊、操作群成员或配置群功能时使用此 Skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install feishu-im
+
+    ```'
+examples:
+- description: Install feishu-im from ClawHub
+  usage: clawhub install feishu-im
+schema_version: '1.0'

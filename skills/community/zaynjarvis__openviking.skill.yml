@@ -1,0 +1,32 @@
+name: openviking
+title: OpenViking
+version: 1.0.3
+description: 'RAG and semantic search via OpenViking Context Database MCP server. Query documents, search knowledge base,
+  add files/URLs to vector memory. Use for document Q&A, knowledge management, AI agent memory, file search, semantic retrieval.
+  Triggers on "openviking", "search documents", "semantic search", '
+metadata:
+  author: zaynjarvis
+  category: Search & Research
+  tags:
+  - search-research
+  - openviking
+  source: clawhub-community
+  clawhub_slug: openviking
+  clawhub_path: zaynjarvis/openviking
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: "# OpenViking\n# Source: ClawHub community skill by zaynjarvis\n# Install: clawhub install openviking\n# Path:\
+    \ zaynjarvis/openviking\n\n## Description\nRAG and semantic search via OpenViking Context Database MCP server. Query documents,\
+    \ search knowledge base, add files/URLs to vector memory. Use for document Q&A, knowledge management, AI agent memory,\
+    \ file search, semantic retrieval. Triggers on \"openviking\", \"search documents\", \"semantic search\", \n\n## Files\n\
+    - SKILL.md\n- _meta.json\n- skill.yaml\n- scripts/init.sh\n\n## Installation\n```bash\nclawhub install openviking\n```"
+examples:
+- description: Install OpenViking from ClawHub
+  usage: clawhub install openviking
+schema_version: '1.0'

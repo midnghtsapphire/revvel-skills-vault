@@ -1,0 +1,54 @@
+name: last-fm
+title: last.fm
+version: 1.0.0
+description: ''
+metadata:
+  author: keyfrog-21k
+  category: General
+  tags:
+  - general
+  - last
+  source: clawhub-community
+  clawhub_slug: last-fm
+  clawhub_path: keyfrog-21k/last-fm
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# last.fm
+
+    # Source: ClawHub community skill by keyfrog-21k
+
+    # Install: clawhub install last-fm
+
+    # Path: keyfrog-21k/last-fm
+
+
+    ## Description
+
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install last-fm
+
+    ```'
+examples:
+- description: Install last.fm from ClawHub
+  usage: clawhub install last-fm
+schema_version: '1.0'

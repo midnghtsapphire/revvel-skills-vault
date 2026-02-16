@@ -1,0 +1,62 @@
+name: fluora-setup
+title: Fluora Setup
+version: 1.2.1
+description: Interactive setup wizard for Fluora marketplace integration. Clones fluora-mcp from GitHub, builds locally, generates
+  wallet, and configures mcporter.
+metadata:
+  author: chetan-guevara
+  category: Development & Coding
+  tags:
+  - development-coding
+  - fluora
+  - setup
+  source: clawhub-community
+  clawhub_slug: fluora-setup
+  clawhub_path: chetan-guevara/fluora-setup
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Fluora Setup
+
+    # Source: ClawHub community skill by chetan-guevara
+
+    # Install: clawhub install fluora-setup
+
+    # Path: chetan-guevara/fluora-setup
+
+
+    ## Description
+
+    Interactive setup wizard for Fluora marketplace integration. Clones fluora-mcp from GitHub, builds locally, generates
+    wallet, and configures mcporter.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - UPDATE-SUMMARY.md
+
+    - _meta.json
+
+    - package.json
+
+    - setup.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install fluora-setup
+
+    ```'
+examples:
+- description: Install Fluora Setup from ClawHub
+  usage: clawhub install fluora-setup
+schema_version: '1.0'

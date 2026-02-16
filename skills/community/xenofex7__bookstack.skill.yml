@@ -1,0 +1,59 @@
+name: bookstack
+title: BookStack
+version: 1.0.3
+description: '"BookStack Wiki & Documentation API integration. Manage your knowledge base programmatically: create, read,
+  update, and delete books, chapters, pages, and shelves. Full-text search across all content. Use when you need to: (1) Create
+  or edit wiki pages and documentation, (2) Organize content in book'
+metadata:
+  author: xenofex7
+  category: Search & Research
+  tags:
+  - search-research
+  - bookstack
+  source: clawhub-community
+  clawhub_slug: bookstack
+  clawhub_path: xenofex7/bookstack
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# BookStack
+
+    # Source: ClawHub community skill by xenofex7
+
+    # Install: clawhub install bookstack
+
+    # Path: xenofex7/bookstack
+
+
+    ## Description
+
+    "BookStack Wiki & Documentation API integration. Manage your knowledge base programmatically: create, read, update, and
+    delete books, chapters, pages, and shelves. Full-text search across all content. Use when you need to: (1) Create or edit
+    wiki pages and documentation, (2) Organize content in book
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/bookstack.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bookstack
+
+    ```'
+examples:
+- description: Install BookStack from ClawHub
+  usage: clawhub install bookstack
+schema_version: '1.0'

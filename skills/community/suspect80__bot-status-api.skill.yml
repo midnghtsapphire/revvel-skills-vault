@@ -1,0 +1,75 @@
+name: bot-status-api
+title: Bot Status API
+version: 1.0.1
+description: '"Deploy a lightweight status API that exposes your OpenClaw bot''s runtime health, service connectivity, cron
+  jobs, skills, system metrics, and more. Use when setting up a monitoring dashboard, health endpoint, or status page for
+  an OpenClaw agent. Supports any services via config (HTTP checks, CLI c'
+metadata:
+  author: suspect80
+  category: Development & Coding
+  tags:
+  - development-coding
+  - bot
+  - status
+  - api
+  source: clawhub-community
+  clawhub_slug: bot-status-api
+  clawhub_path: suspect80/bot-status-api
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bot Status API
+
+    # Source: ClawHub community skill by suspect80
+
+    # Install: clawhub install bot-status-api
+
+    # Path: suspect80/bot-status-api
+
+
+    ## Description
+
+    "Deploy a lightweight status API that exposes your OpenClaw bot''s runtime health, service connectivity, cron jobs, skills,
+    system metrics, and more. Use when setting up a monitoring dashboard, health endpoint, or status page for an OpenClaw
+    agent. Supports any services via config (HTTP checks, CLI c
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - config.example.json
+
+    - package.json
+
+    - server.js
+
+    - collectors/core.js
+
+    - collectors/devservers.js
+
+    - collectors/docker.js
+
+    - collectors/email.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bot-status-api
+
+    ```'
+examples:
+- description: Install Bot Status API from ClawHub
+  usage: clawhub install bot-status-api
+schema_version: '1.0'

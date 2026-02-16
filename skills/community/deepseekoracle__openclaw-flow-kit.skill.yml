@@ -1,0 +1,67 @@
+name: openclaw-flow-kit
+title: OpenClaw Flow Kit
+version: 1.0.0
+description: '"Fix common OpenClaw workflow bottlenecks: platform engage-gates/429 backoff helpers (starting with MoltX),
+  standardized JSON result envelopes for chaining scripts, workspace path resolution helpers, and a simple skill release conductor
+  (prepare/publish/draft announcements)."'
+metadata:
+  author: deepseekoracle
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - openclaw
+  - flow
+  - kit
+  source: clawhub-community
+  clawhub_slug: openclaw-flow-kit
+  clawhub_path: deepseekoracle/openclaw-flow-kit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Flow Kit
+
+    # Source: ClawHub community skill by deepseekoracle
+
+    # Install: clawhub install openclaw-flow-kit
+
+    # Path: deepseekoracle/openclaw-flow-kit
+
+
+    ## Description
+
+    "Fix common OpenClaw workflow bottlenecks: platform engage-gates/429 backoff helpers (starting with MoltX), standardized
+    JSON result envelopes for chaining scripts, workspace path resolution helpers, and a simple skill release conductor (prepare/publish/draft
+    announcements)."
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/moltx_engage_gate.py
+
+    - scripts/release_conductor.py
+
+    - scripts/run_envelope.py
+
+    - scripts/ws_paths.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-flow-kit
+
+    ```'
+examples:
+- description: Install OpenClaw Flow Kit from ClawHub
+  usage: clawhub install openclaw-flow-kit
+schema_version: '1.0'

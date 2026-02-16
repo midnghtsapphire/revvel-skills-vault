@@ -1,0 +1,59 @@
+name: bililidownloader
+title: Bilili-downloader
+version: 1.0.3
+description: Download Bilibili videos. You MUST ask the user for the Bilibili URL first. Then use the provided python script
+  to download. Supports batch/playlist downloading.
+metadata:
+  author: caiyundc880518
+  category: Media & Content
+  tags:
+  - media-content
+  - bililidownloader
+  source: clawhub-community
+  clawhub_slug: bililidownloader
+  clawhub_path: caiyundc880518/bililidownloader
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Bilili-downloader
+
+    # Source: ClawHub community skill by caiyundc880518
+
+    # Install: clawhub install bililidownloader
+
+    # Path: caiyundc880518/bililidownloader
+
+
+    ## Description
+
+    Download Bilibili videos. You MUST ask the user for the Bilibili URL first. Then use the provided python script to download.
+    Supports batch/playlist downloading.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/download_bilibili.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install bililidownloader
+
+    ```'
+examples:
+- description: Install Bilili-downloader from ClawHub
+  usage: clawhub install bililidownloader
+schema_version: '1.0'

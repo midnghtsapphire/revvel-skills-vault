@@ -1,0 +1,65 @@
+name: pumpclaw
+title: Pumpclaw
+version: 1.3.0
+description: 'Free token launcher for AI agents on Base. Create ERC20 tokens with instant Uniswap V4 liquidity — 80% trading
+  fees to creator, LP locked forever, zero ETH cost to launch. 27+ tokens deployed. Deploy via CLI, Farcaster bot (@clawd),
+  or smart contract. Commands: create, list, buy, sell, claim fees, s'
+metadata:
+  author: clawd800
+  category: Media & Content
+  tags:
+  - media-content
+  - pumpclaw
+  source: clawhub-community
+  clawhub_slug: token-launcher
+  clawhub_path: clawd800/token-launcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Pumpclaw
+
+    # Source: ClawHub community skill by clawd800
+
+    # Install: clawhub install token-launcher
+
+    # Path: clawd800/token-launcher
+
+
+    ## Description
+
+    Free token launcher for AI agents on Base. Create ERC20 tokens with instant Uniswap V4 liquidity — 80% trading fees to
+    creator, LP locked forever, zero ETH cost to launch. 27+ tokens deployed. Deploy via CLI, Farcaster bot (@clawd), or smart
+    contract. Commands: create, list, buy, sell, claim fees, s
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/package-lock.json
+
+    - scripts/package.json
+
+    - scripts/pumpclaw.ts
+
+    - scripts/swap.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install token-launcher
+
+    ```'
+examples:
+- description: Install Pumpclaw from ClawHub
+  usage: clawhub install token-launcher
+schema_version: '1.0'

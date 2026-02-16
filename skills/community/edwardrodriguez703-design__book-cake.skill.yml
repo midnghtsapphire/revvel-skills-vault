@@ -1,0 +1,56 @@
+name: book-cake
+title: Book Cake
+version: 1.0.1
+description: Book cake services through Lokuli MCP. Use when user needs to find and book cake. Triggers on requests like "book
+  a cake", "find cake near me", or any cake service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - cake
+  source: clawhub-community
+  clawhub_slug: book-cake
+  clawhub_path: edwardrodriguez703-design/book-cake
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Cake
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-cake
+
+    # Path: edwardrodriguez703-design/book-cake
+
+
+    ## Description
+
+    Book cake services through Lokuli MCP. Use when user needs to find and book cake. Triggers on requests like "book a cake",
+    "find cake near me", or any cake service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-cake
+
+    ```'
+examples:
+- description: Install Book Cake from ClawHub
+  usage: clawhub install book-cake
+schema_version: '1.0'

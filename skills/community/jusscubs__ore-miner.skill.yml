@@ -1,0 +1,72 @@
+name: ore-miner
+title: ORE Miner
+version: 1.0.0
+description: Autonomous ORE mining on Solana via refinORE. Onboard humans, start/stop sessions, optimize tile strategies,
+  track P&L, manage risk, auto-restart, multi-coin mining (SOL/USDC/stablecoins), DCA/limit orders, staking.
+metadata:
+  author: jusscubs
+  category: General
+  tags:
+  - general
+  - ore
+  - miner
+  source: clawhub-community
+  clawhub_slug: ore-miner
+  clawhub_path: jusscubs/ore-miner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# ORE Miner
+
+    # Source: ClawHub community skill by jusscubs
+
+    # Install: clawhub install ore-miner
+
+    # Path: jusscubs/ore-miner
+
+
+    ## Description
+
+    Autonomous ORE mining on Solana via refinORE. Onboard humans, start/stop sessions, optimize tile strategies, track P&L,
+    manage risk, auto-restart, multi-coin mining (SOL/USDC/stablecoins), DCA/limit orders, staking.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api-endpoints.md
+
+    - references/mining-rules.md
+
+    - references/strategies.md
+
+    - scripts/analytics.sh
+
+    - scripts/auth_check.sh
+
+    - scripts/check_balance.sh
+
+    - scripts/check_round.sh
+
+    - scripts/deploy.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ore-miner
+
+    ```'
+examples:
+- description: Install ORE Miner from ClawHub
+  usage: clawhub install ore-miner
+schema_version: '1.0'

@@ -1,0 +1,60 @@
+name: warden-studio
+title: Deploy Agent on Warden Studio
+version: 1.0.0
+description: Use Warden Studio (studio.wardenprotocol.org) via browser automation to register/publish a Community Agent to
+  the Warden Agent Hub. Use when you need to (1) log in to Studio, (2) create/submit an agent listing, (3) configure API URL/auth,
+  skills, avatar, and billing model, (4) pay registration + gas
+metadata:
+  author: kryptopaid
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - warden
+  - studio
+  source: clawhub-community
+  clawhub_slug: warden-studio-deploy
+  clawhub_path: kryptopaid/warden-studio-deploy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Deploy Agent on Warden Studio
+
+    # Source: ClawHub community skill by kryptopaid
+
+    # Install: clawhub install warden-studio-deploy
+
+    # Path: kryptopaid/warden-studio-deploy
+
+
+    ## Description
+
+    Use Warden Studio (studio.wardenprotocol.org) via browser automation to register/publish a Community Agent to the Warden
+    Agent Hub. Use when you need to (1) log in to Studio, (2) create/submit an agent listing, (3) configure API URL/auth,
+    skills, avatar, and billing model, (4) pay registration + gas
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/warden-studio-ui-notes.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install warden-studio-deploy
+
+    ```'
+examples:
+- description: Install Deploy Agent on Warden Studio from ClawHub
+  usage: clawhub install warden-studio-deploy
+schema_version: '1.0'

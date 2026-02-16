@@ -1,0 +1,62 @@
+name: amazon-product-api-skill
+title: Amazon Product Api Skill
+version: 0.1.0
+description: 'Extract structured product listings from Amazon, including titles, ASINs, prices, ratings, and specifications.
+  Use this skill when users want to: 1) "Search for [product] on Amazon", 2) "Find the best selling [brand] products", 3)
+  "Track price changes for [item]", 4) "Get a list of [category] with h'
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - amazon
+  - product
+  - api
+  - skill
+  source: clawhub-community
+  clawhub_slug: amazon-product-api-skill
+  clawhub_path: phheng/amazon-product-api-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Amazon Product Api Skill
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install amazon-product-api-skill
+
+    # Path: phheng/amazon-product-api-skill
+
+
+    ## Description
+
+    Extract structured product listings from Amazon, including titles, ASINs, prices, ratings, and specifications. Use this
+    skill when users want to: 1) "Search for [product] on Amazon", 2) "Find the best selling [brand] products", 3) "Track
+    price changes for [item]", 4) "Get a list of [category] with h
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/amazon_product_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install amazon-product-api-skill
+
+    ```'
+examples:
+- description: Install Amazon Product Api Skill from ClawHub
+  usage: clawhub install amazon-product-api-skill
+schema_version: '1.0'

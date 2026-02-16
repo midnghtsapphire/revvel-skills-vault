@@ -1,0 +1,74 @@
+name: increment-planner
+title: Increment Planner
+version: 1.0.0
+description: Plan and create SpecWeave increments with PM and Architect agent collaboration. Use when starting new features,
+  hotfixes, bugs, or any development work that needs specification and task breakdown. Creates spec.md, plan.md, tasks.md
+  with proper AC-IDs and living docs integration.
+metadata:
+  author: anton-abyzov
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - increment
+  - planner
+  source: clawhub-community
+  clawhub_slug: sw-increment-planner
+  clawhub_path: anton-abyzov/sw-increment-planner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Increment Planner
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-increment-planner
+
+    # Path: anton-abyzov/sw-increment-planner
+
+
+    ## Description
+
+    Plan and create SpecWeave increments with PM and Architect agent collaboration. Use when starting new features, hotfixes,
+    bugs, or any development work that needs specification and task breakdown. Creates spec.md, plan.md, tasks.md with proper
+    AC-IDs and living docs integration.
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - phases/00-preflight.md
+
+    - phases/01-project-context.md
+
+    - phases/02-create-increment.md
+
+    - phases/03-reference.md
+
+    - scripts/feature-utils.js
+
+    - templates/metadata.json
+
+    - templates/plan.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-increment-planner
+
+    ```'
+examples:
+- description: Install Increment Planner from ClawHub
+  usage: clawhub install sw-increment-planner
+schema_version: '1.0'

@@ -1,0 +1,69 @@
+name: crypto-self-learning
+title: Crypto Self-Learning
+version: 1.0.0
+description: Self-learning system for crypto trading. Logs trades with full context (indicators, market conditions), analyzes
+  patterns of wins/losses, and auto-updates trading rules. Use to log trades, analyze performance, identify what works/fails,
+  and continuously improve trading accuracy.
+metadata:
+  author: totaleasy
+  category: Finance & Trading
+  tags:
+  - finance-trading
+  - crypto
+  - self
+  - learning
+  source: clawhub-community
+  clawhub_slug: crypto-self-learning
+  clawhub_path: totaleasy/crypto-self-learning
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Crypto Self-Learning
+
+    # Source: ClawHub community skill by totaleasy
+
+    # Install: clawhub install crypto-self-learning
+
+    # Path: totaleasy/crypto-self-learning
+
+
+    ## Description
+
+    Self-learning system for crypto trading. Logs trades with full context (indicators, market conditions), analyzes patterns
+    of wins/losses, and auto-updates trading rules. Use to log trades, analyze performance, identify what works/fails, and
+    continuously improve trading accuracy.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - data/trades.json
+
+    - scripts/analyze.py
+
+    - scripts/generate_rules.py
+
+    - scripts/log_trade.py
+
+    - scripts/update_memory.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install crypto-self-learning
+
+    ```'
+examples:
+- description: Install Crypto Self-Learning from ClawHub
+  usage: clawhub install crypto-self-learning
+schema_version: '1.0'

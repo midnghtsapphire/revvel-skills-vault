@@ -1,0 +1,56 @@
+name: disk-cleaner
+title: Disk Cleaner
+version: 1.1.0
+description: Analyze disk usage, find large/old files, and suggest safe cleanup actions.
+metadata:
+  author: sa9saq
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - disk
+  - cleaner
+  source: clawhub-community
+  clawhub_slug: disk-cleaner
+  clawhub_path: sa9saq/disk-cleaner
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Disk Cleaner
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install disk-cleaner
+
+    # Path: sa9saq/disk-cleaner
+
+
+    ## Description
+
+    Analyze disk usage, find large/old files, and suggest safe cleanup actions.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install disk-cleaner
+
+    ```'
+examples:
+- description: Install Disk Cleaner from ClawHub
+  usage: clawhub install disk-cleaner
+schema_version: '1.0'

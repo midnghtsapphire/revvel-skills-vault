@@ -1,0 +1,54 @@
+name: plan-my-day
+title: Plan My Day
+version: 1.0.0
+description: Generate an energy-optimized, time-blocked daily plan
+metadata:
+  author: itsflow
+  category: Utilities
+  tags:
+  - utilities
+  - plan
+  - day
+  source: clawhub-community
+  clawhub_slug: plan-my-day
+  clawhub_path: itsflow/plan-my-day
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Plan My Day
+
+    # Source: ClawHub community skill by itsflow
+
+    # Install: clawhub install plan-my-day
+
+    # Path: itsflow/plan-my-day
+
+
+    ## Description
+
+    Generate an energy-optimized, time-blocked daily plan
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install plan-my-day
+
+    ```'
+examples:
+- description: Install Plan My Day from ClawHub
+  usage: clawhub install plan-my-day
+schema_version: '1.0'

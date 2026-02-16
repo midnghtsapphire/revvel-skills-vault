@@ -1,0 +1,63 @@
+name: mlx-audio-server
+title: MLX Audio Server
+version: 0.2.2
+description: Local 24x7 OpenAI-compatible API server for STT/TTS, powered by MLX on your Mac.
+metadata:
+  author: guoqiao
+  category: Media & Content
+  tags:
+  - media-content
+  - mlx
+  - audio
+  - server
+  source: clawhub-community
+  clawhub_slug: mlx-audio-server
+  clawhub_path: guoqiao/mlx-audio-server
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# MLX Audio Server
+
+    # Source: ClawHub community skill by guoqiao
+
+    # Install: clawhub install mlx-audio-server
+
+    # Path: guoqiao/mlx-audio-server
+
+
+    ## Description
+
+    Local 24x7 OpenAI-compatible API server for STT/TTS, powered by MLX on your Mac.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - install.sh
+
+    - run_stt.sh
+
+    - run_tts.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install mlx-audio-server
+
+    ```'
+examples:
+- description: Install MLX Audio Server from ClawHub
+  usage: clawhub install mlx-audio-server
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: tokenmeter
+title: tokenmeter
+version: 0.1.1
+description: '"Track AI token usage and costs across providers. Import sessions, view dashboard, costs breakdown, and compare
+  Max plan savings."'
+metadata:
+  author: cheenu1092-oss
+  category: General
+  tags:
+  - general
+  - tokenmeter
+  source: clawhub-community
+  clawhub_slug: tokenmeter
+  clawhub_path: cheenu1092-oss/tokenmeter
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# tokenmeter
+
+    # Source: ClawHub community skill by cheenu1092-oss
+
+    # Install: clawhub install tokenmeter
+
+    # Path: cheenu1092-oss/tokenmeter
+
+
+    ## Description
+
+    "Track AI token usage and costs across providers. Import sessions, view dashboard, costs breakdown, and compare Max plan
+    savings."
+
+
+    ## Files
+
+    - QUICKREF.md
+
+    - README.md
+
+    - SKILL.md
+
+    - TASK.md
+
+    - _meta.json
+
+    - pyproject.toml
+
+    - examples/daily-report.sh
+
+    - examples/test-installation.sh
+
+    - tests/__init__.py
+
+    - tests/test_db.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tokenmeter
+
+    ```'
+examples:
+- description: Install tokenmeter from ClawHub
+  usage: clawhub install tokenmeter
+schema_version: '1.0'

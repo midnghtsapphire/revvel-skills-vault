@@ -1,0 +1,66 @@
+name: model-router
+title: Model Router
+version: 1.1.0
+description: A comprehensive AI model routing system that automatically selects the optimal model for any task. Set up multiple
+  AI providers (Anthropic, OpenAI, Gemini, Moonshot, Z.ai, GLM) with secure API key storage, then route tasks to the best
+  model based on task type, complexity, and cost optimization. Incl
+metadata:
+  author: digitaladaption
+  category: Development & Coding
+  tags:
+  - development-coding
+  - model
+  - router
+  source: clawhub-community
+  clawhub_slug: model-router
+  clawhub_path: digitaladaption/model-router
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Model Router
+
+    # Source: ClawHub community skill by digitaladaption
+
+    # Install: clawhub install model-router
+
+    # Path: digitaladaption/model-router
+
+
+    ## Description
+
+    A comprehensive AI model routing system that automatically selects the optimal model for any task. Set up multiple AI
+    providers (Anthropic, OpenAI, Gemini, Moonshot, Z.ai, GLM) with secure API key storage, then route tasks to the best model
+    based on task type, complexity, and cost optimization. Incl
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/USAGE_EXAMPLES.md
+
+    - references/model-specs.md
+
+    - scripts/classify_task.py
+
+    - scripts/setup-wizard.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install model-router
+
+    ```'
+examples:
+- description: Install Model Router from ClawHub
+  usage: clawhub install model-router
+schema_version: '1.0'

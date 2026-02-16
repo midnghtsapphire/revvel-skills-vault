@@ -1,0 +1,65 @@
+name: openclaw-nextcloud
+title: Openclaw Nextcloud
+version: 0.1.3
+description: Manage Notes, Tasks, Calendar, Files, and Contacts in your Nextcloud instance via CalDAV, WebDAV, and Notes API.
+  Use for creating notes, managing todos and calendar events, uploading/downloading files, and managing contacts.
+metadata:
+  author: keithvassallomt
+  category: Development & Coding
+  tags:
+  - development-coding
+  - openclaw
+  - nextcloud
+  - bash read
+  source: clawhub-community
+  clawhub_slug: openclaw-nextcloud
+  clawhub_path: keithvassallomt/openclaw-nextcloud
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Bash Read
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Openclaw Nextcloud
+
+    # Source: ClawHub community skill by keithvassallomt
+
+    # Install: clawhub install openclaw-nextcloud
+
+    # Path: keithvassallomt/openclaw-nextcloud
+
+
+    ## Description
+
+    Manage Notes, Tasks, Calendar, Files, and Contacts in your Nextcloud instance via CalDAV, WebDAV, and Notes API. Use for
+    creating notes, managing todos and calendar events, uploading/downloading files, and managing contacts.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/nextcloud.js
+
+
+    ## Allowed Tools
+
+    Bash Read
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-nextcloud
+
+    ```'
+examples:
+- description: Install Openclaw Nextcloud from ClawHub
+  usage: clawhub install openclaw-nextcloud
+schema_version: '1.0'

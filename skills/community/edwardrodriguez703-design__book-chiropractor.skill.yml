@@ -1,0 +1,56 @@
+name: book-chiropractor
+title: Book Chiropractor
+version: 1.0.1
+description: Book chiropractor services through Lokuli MCP. Use when user needs to find and book chiropractor. Triggers on
+  requests like "book a chiropractor", "find chiropractor near me", or any chiropractor service request.
+metadata:
+  author: edwardrodriguez703-design
+  category: Education & Knowledge
+  tags:
+  - education-knowledge
+  - book
+  - chiropractor
+  source: clawhub-community
+  clawhub_slug: book-chiropractor
+  clawhub_path: edwardrodriguez703-design/book-chiropractor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Book Chiropractor
+
+    # Source: ClawHub community skill by edwardrodriguez703-design
+
+    # Install: clawhub install book-chiropractor
+
+    # Path: edwardrodriguez703-design/book-chiropractor
+
+
+    ## Description
+
+    Book chiropractor services through Lokuli MCP. Use when user needs to find and book chiropractor. Triggers on requests
+    like "book a chiropractor", "find chiropractor near me", or any chiropractor service request.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install book-chiropractor
+
+    ```'
+examples:
+- description: Install Book Chiropractor from ClawHub
+  usage: clawhub install book-chiropractor
+schema_version: '1.0'

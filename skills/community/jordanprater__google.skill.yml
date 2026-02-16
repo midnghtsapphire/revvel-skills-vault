@@ -1,0 +1,53 @@
+name: google
+title: Google Search
+version: 1.0.0
+description: Google search
+metadata:
+  author: jordanprater
+  category: Search & Research
+  tags:
+  - search-research
+  - google
+  source: clawhub-community
+  clawhub_slug: google
+  clawhub_path: jordanprater/google
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Google Search
+
+    # Source: ClawHub community skill by jordanprater
+
+    # Install: clawhub install google
+
+    # Path: jordanprater/google
+
+
+    ## Description
+
+    Google search
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install google
+
+    ```'
+examples:
+- description: Install Google Search from ClawHub
+  usage: clawhub install google
+schema_version: '1.0'

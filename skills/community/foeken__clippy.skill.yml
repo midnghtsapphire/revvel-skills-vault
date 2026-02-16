@@ -1,0 +1,56 @@
+name: clippy
+title: Clippy - Microsoft 365 CLI
+version: 1.2.0
+description: Microsoft 365 / Outlook CLI for calendar and email. Use when managing Outlook calendar (view, create, update,
+  delete events, find meeting times, respond to invitations), sending/reading emails, or searching for people/rooms in the
+  organization.
+metadata:
+  author: foeken
+  category: Search & Research
+  tags:
+  - search-research
+  - clippy
+  source: clawhub-community
+  clawhub_slug: clippy
+  clawhub_path: foeken/clippy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Clippy - Microsoft 365 CLI
+
+    # Source: ClawHub community skill by foeken
+
+    # Install: clawhub install clippy
+
+    # Path: foeken/clippy
+
+
+    ## Description
+
+    Microsoft 365 / Outlook CLI for calendar and email. Use when managing Outlook calendar (view, create, update, delete events,
+    find meeting times, respond to invitations), sending/reading emails, or searching for people/rooms in the organization.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clippy
+
+    ```'
+examples:
+- description: Install Clippy - Microsoft 365 CLI from ClawHub
+  usage: clawhub install clippy
+schema_version: '1.0'

@@ -1,0 +1,73 @@
+name: shortcut
+title: Shortcut
+version: 1.4.1
+description: Manage stories on Shortcut.com kanban boards. Use when creating, updating, or listing tasks/stories on Shortcut
+  project management boards. Supports creating stories with descriptions and types (feature/bug/chore), updating story status,
+  and listing active/completed stories. Includes full checklist t
+metadata:
+  author: catwalksophie
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - shortcut
+  source: clawhub-community
+  clawhub_slug: shortcut
+  clawhub_path: catwalksophie/shortcut
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Shortcut
+
+    # Source: ClawHub community skill by catwalksophie
+
+    # Install: clawhub install shortcut
+
+    # Path: catwalksophie/shortcut
+
+
+    ## Description
+
+    Manage stories on Shortcut.com kanban boards. Use when creating, updating, or listing tasks/stories on Shortcut project
+    management boards. Supports creating stories with descriptions and types (feature/bug/chore), updating story status, and
+    listing active/completed stories. Includes full checklist t
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/shortcut-add-comment.sh
+
+    - scripts/shortcut-create-story.sh
+
+    - scripts/shortcut-create-task.sh
+
+    - scripts/shortcut-delete-comment.sh
+
+    - scripts/shortcut-delete-task.sh
+
+    - scripts/shortcut-edit-task.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install shortcut
+
+    ```'
+examples:
+- description: Install Shortcut from ClawHub
+  usage: clawhub install shortcut
+schema_version: '1.0'

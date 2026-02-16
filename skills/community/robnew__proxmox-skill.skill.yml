@@ -1,0 +1,61 @@
+name: proxmox
+title: Proxmox Management
+version: 1.0.0
+description: '"Manage Proxmox VE nodes, VMs, and containers. Can list hardware stats, resources, and control power states
+  (start, stop, reboot, shutdown)."'
+metadata:
+  author: robnew
+  category: General
+  tags:
+  - general
+  - proxmox
+  source: clawhub-community
+  clawhub_slug: proxmox-skill
+  clawhub_path: robnew/proxmox-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Proxmox Management
+
+    # Source: ClawHub community skill by robnew
+
+    # Install: clawhub install proxmox-skill
+
+    # Path: robnew/proxmox-skill
+
+
+    ## Description
+
+    "Manage Proxmox VE nodes, VMs, and containers. Can list hardware stats, resources, and control power states (start, stop,
+    reboot, shutdown)."
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - requirements.txt
+
+    - scripts/proxmox.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install proxmox-skill
+
+    ```'
+examples:
+- description: Install Proxmox Management from ClawHub
+  usage: clawhub install proxmox-skill
+schema_version: '1.0'

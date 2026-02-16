@@ -1,0 +1,72 @@
+name: clawsec-suite
+title: clawsec-suite
+version: 0.0.10
+description: ClawSec suite manager with embedded advisory-feed monitoring, cryptographic signature verification, approval-gated
+  malicious-skill response, and guided setup for additional security skills.
+metadata:
+  author: davida-ps
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - clawsec
+  - suite
+  source: clawhub-community
+  clawhub_slug: clawsec-suite
+  clawhub_path: davida-ps/clawsec-suite
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# clawsec-suite
+
+    # Source: ClawHub community skill by davida-ps
+
+    # Install: clawhub install clawsec-suite
+
+    # Path: davida-ps/clawsec-suite
+
+
+    ## Description
+
+    ClawSec suite manager with embedded advisory-feed monitoring, cryptographic signature verification, approval-gated malicious-skill
+    response, and guided setup for additional security skills.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - HEARTBEAT.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - advisories/checksums.json
+
+    - advisories/feed.json
+
+    - hooks/clawsec-advisory-guardian/HOOK.md
+
+    - hooks/clawsec-advisory-guardian/handler.ts
+
+    - hooks/clawsec-advisory-guardian/lib/feed.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install clawsec-suite
+
+    ```'
+examples:
+- description: Install clawsec-suite from ClawHub
+  usage: clawhub install clawsec-suite
+schema_version: '1.0'

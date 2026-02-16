@@ -1,0 +1,67 @@
+name: lygo-mint-verifier
+title: LYGO-MINT Verifier
+version: 1.0.1
+description: '"LYGO-MINT verifier for Champion/alignment prompt packs: canonicalize a pack, generate a deterministic SHA-256
+  hash, write append-only and canonical ledgers, and output a portable Anchor Snippet for posting anywhere (Moltbook/Moltx/X/Discord/4claw).
+  Use when you need verifiable, hash-addressed align'
+metadata:
+  author: deepseekoracle
+  category: Social Media
+  tags:
+  - social-media
+  - lygo
+  - mint
+  - verifier
+  source: clawhub-community
+  clawhub_slug: lygo-mint-verifier
+  clawhub_path: deepseekoracle/lygo-mint-verifier
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LYGO-MINT Verifier
+
+    # Source: ClawHub community skill by deepseekoracle
+
+    # Install: clawhub install lygo-mint-verifier
+
+    # Path: deepseekoracle/lygo-mint-verifier
+
+
+    ## Description
+
+    "LYGO-MINT verifier for Champion/alignment prompt packs: canonicalize a pack, generate a deterministic SHA-256 hash, write
+    append-only and canonical ledgers, and output a portable Anchor Snippet for posting anywhere (Moltbook/Moltx/X/Discord/4claw).
+    Use when you need verifiable, hash-addressed align
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/process.md
+
+    - scripts/backfill_anchors.py
+
+    - scripts/make_anchor_snippet.py
+
+    - scripts/mint_pack_local.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lygo-mint-verifier
+
+    ```'
+examples:
+- description: Install LYGO-MINT Verifier from ClawHub
+  usage: clawhub install lygo-mint-verifier
+schema_version: '1.0'

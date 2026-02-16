@@ -1,0 +1,70 @@
+name: task-workflow-v3
+title: Task Workflow V3
+version: 3.0.0
+description: 智能任务调度系统 V3 - 支持文件持久化、进度追踪、自动归档
+metadata:
+  author: charpup
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - task
+  - workflow
+  source: clawhub-community
+  clawhub_slug: task-workflow-v3
+  clawhub_path: charpup/task-workflow-v3
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Task Workflow V3
+
+    # Source: ClawHub community skill by charpup
+
+    # Install: clawhub install task-workflow-v3
+
+    # Path: charpup/task-workflow-v3
+
+
+    ## Description
+
+    智能任务调度系统 V3 - 支持文件持久化、进度追踪、自动归档
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - cli.py
+
+    - pytest.ini
+
+    - config/cron-api-payload.json
+
+    - config/cron.yaml
+
+    - lib/__init__.py
+
+    - lib/task_persistence.py
+
+    - lib/task_scheduler.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install task-workflow-v3
+
+    ```'
+examples:
+- description: Install Task Workflow V3 from ClawHub
+  usage: clawhub install task-workflow-v3
+schema_version: '1.0'

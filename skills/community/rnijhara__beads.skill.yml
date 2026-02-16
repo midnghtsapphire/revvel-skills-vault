@@ -1,0 +1,55 @@
+name: beads
+title: Beads Task Tracker
+version: 1.0.1
+description: Git-backed issue tracker for AI agents. Use when managing tasks, dependencies, or multi-step work. Triggers on
+  task tracking, issue management, dependency graphs, ready work queues, or mentions of "beads" / "bd" CLI.
+metadata:
+  author: rnijhara
+  category: Development & Coding
+  tags:
+  - development-coding
+  - beads
+  source: clawhub-community
+  clawhub_slug: beads
+  clawhub_path: rnijhara/beads
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Beads Task Tracker
+
+    # Source: ClawHub community skill by rnijhara
+
+    # Install: clawhub install beads
+
+    # Path: rnijhara/beads
+
+
+    ## Description
+
+    Git-backed issue tracker for AI agents. Use when managing tasks, dependencies, or multi-step work. Triggers on task tracking,
+    issue management, dependency graphs, ready work queues, or mentions of "beads" / "bd" CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install beads
+
+    ```'
+examples:
+- description: Install Beads Task Tracker from ClawHub
+  usage: clawhub install beads
+schema_version: '1.0'

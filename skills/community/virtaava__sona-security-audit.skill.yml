@@ -1,0 +1,72 @@
+name: security-audit
+title: Security Audit (Sona)
+version: 0.1.3
+description: '"Fail-closed security auditing for OpenClaw/ClawHub skills & repos: trufflehog secrets scanning, semgrep SAST,
+  prompt-injection/persistence signals, and supply-chain hygiene checks before enabling or installing."'
+metadata:
+  author: virtaava
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - security
+  - audit
+  source: clawhub-community
+  clawhub_slug: sona-security-audit
+  clawhub_path: virtaava/sona-security-audit
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Security Audit (Sona)
+
+    # Source: ClawHub community skill by virtaava
+
+    # Install: clawhub install sona-security-audit
+
+    # Path: virtaava/sona-security-audit
+
+
+    ## Description
+
+    "Fail-closed security auditing for OpenClaw/ClawHub skills & repos: trufflehog secrets scanning, semgrep SAST, prompt-injection/persistence
+    signals, and supply-chain hygiene checks before enabling or installing."
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - openclaw-skill.json
+
+    - docs/OPENCLAW_SKILL_MANIFEST_SCHEMA.md
+
+    - docs/README_ZERO_TRUST_INSTALL.md
+
+    - scripts/hostile_audit.py
+
+    - scripts/run_audit_json.sh
+
+    - scripts/security_audit.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sona-security-audit
+
+    ```'
+examples:
+- description: Install Security Audit (Sona) from ClawHub
+  usage: clawhub install sona-security-audit
+schema_version: '1.0'

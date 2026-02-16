@@ -1,0 +1,62 @@
+name: near-email
+title: Near Email Skill
+version: 1.0.0
+description: Send and read blockchain-native emails using NEAR Email service. Use when building notifications for NEAR smart
+  contracts (NFT sales, DeFi liquidation alerts, DAO voting reminders) or when AI agents need email capabilities with a NEAR
+  account identity.
+metadata:
+  author: zavodil
+  category: Communication
+  tags:
+  - communication
+  - near
+  - email
+  source: clawhub-community
+  clawhub_slug: near-email-skill
+  clawhub_path: zavodil/near-email-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Near Email Skill
+
+    # Source: ClawHub community skill by zavodil
+
+    # Install: clawhub install near-email-skill
+
+    # Path: zavodil/near-email-skill
+
+
+    ## Description
+
+    Send and read blockchain-native emails using NEAR Email service. Use when building notifications for NEAR smart contracts
+    (NFT sales, DeFi liquidation alerts, DAO voting reminders) or when AI agents need email capabilities with a NEAR account
+    identity.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - api-reference.md
+
+    - examples.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install near-email-skill
+
+    ```'
+examples:
+- description: Install Near Email Skill from ClawHub
+  usage: clawhub install near-email-skill
+schema_version: '1.0'

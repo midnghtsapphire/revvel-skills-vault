@@ -1,0 +1,54 @@
+name: seedance_____
+title: Seedance 视频生成
+version: 1.0.0
+description: 使用 Bytedance Seedance 模型生成视频。支持文生视频（带音频）、图生视频、参考图生视频。当用户想要生成视频、使用图片生成视频、保持人物一致性、或提到 seedance 时使用此 skill。
+metadata:
+  author: hexiaochun
+  category: General
+  tags:
+  - general
+  - seedance
+  - 视频生成
+  source: clawhub-community
+  clawhub_slug: seedance-video
+  clawhub_path: hexiaochun/seedance-video
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Seedance 视频生成
+
+    # Source: ClawHub community skill by hexiaochun
+
+    # Install: clawhub install seedance-video
+
+    # Path: hexiaochun/seedance-video
+
+
+    ## Description
+
+    使用 Bytedance Seedance 模型生成视频。支持文生视频（带音频）、图生视频、参考图生视频。当用户想要生成视频、使用图片生成视频、保持人物一致性、或提到 seedance 时使用此 skill。
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seedance-video
+
+    ```'
+examples:
+- description: Install Seedance 视频生成 from ClawHub
+  usage: clawhub install seedance-video
+schema_version: '1.0'

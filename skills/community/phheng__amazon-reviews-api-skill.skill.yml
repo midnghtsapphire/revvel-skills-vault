@@ -1,0 +1,62 @@
+name: amazon-reviews-api-skill
+title: Amazon Reviews Api Skill
+version: 0.1.0
+description: 'This skill helps users automatically extract Amazon product reviews via the Amazon Reviews API. Agent should
+  proactively apply this skill when users express needs like: 1. Get reviews for Amazon product with ASIN B07TS6R1SF; 2. Analyze
+  customer feedback for a specific Amazon item; 3. Get ratings and'
+metadata:
+  author: phheng
+  category: Search & Research
+  tags:
+  - search-research
+  - amazon
+  - reviews
+  - api
+  - skill
+  source: clawhub-community
+  clawhub_slug: amazon-reviews-api-skill
+  clawhub_path: phheng/amazon-reviews-api-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Amazon Reviews Api Skill
+
+    # Source: ClawHub community skill by phheng
+
+    # Install: clawhub install amazon-reviews-api-skill
+
+    # Path: phheng/amazon-reviews-api-skill
+
+
+    ## Description
+
+    This skill helps users automatically extract Amazon product reviews via the Amazon Reviews API. Agent should proactively
+    apply this skill when users express needs like: 1. Get reviews for Amazon product with ASIN B07TS6R1SF; 2. Analyze customer
+    feedback for a specific Amazon item; 3. Get ratings and
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/amazon_reviews_api.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install amazon-reviews-api-skill
+
+    ```'
+examples:
+- description: Install Amazon Reviews Api Skill from ClawHub
+  usage: clawhub install amazon-reviews-api-skill
+schema_version: '1.0'

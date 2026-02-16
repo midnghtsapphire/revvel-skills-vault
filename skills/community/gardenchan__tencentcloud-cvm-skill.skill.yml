@@ -1,0 +1,71 @@
+name: tencentcloud-cvm-skill
+title: Tencent Cloud CVM
+version: 1.0.2
+description: 腾讯云 CVM 云服务器运维工具集
+metadata:
+  author: gardenchan
+  category: Cloud & Infrastructure
+  tags:
+  - cloud-infrastructure
+  - tencentcloud
+  - cvm
+  - skill
+  source: clawhub-community
+  clawhub_slug: tencentcloud-cvm-skill
+  clawhub_path: gardenchan/tencentcloud-cvm-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Tencent Cloud CVM
+
+    # Source: ClawHub community skill by gardenchan
+
+    # Install: clawhub install tencentcloud-cvm-skill
+
+    # Path: gardenchan/tencentcloud-cvm-skill
+
+
+    ## Description
+
+    腾讯云 CVM 云服务器运维工具集
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - assets/create-instance-template.json
+
+    - references/tccli-cvm-reference.md
+
+    - scripts/common.sh
+
+    - scripts/lifecycle/create-instance.sh
+
+    - scripts/lifecycle/reboot-instance.sh
+
+    - scripts/lifecycle/recommend-instance.sh
+
+    - scripts/lifecycle/start-instance.sh
+
+    - scripts/lifecycle/stop-instance.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tencentcloud-cvm-skill
+
+    ```'
+examples:
+- description: Install Tencent Cloud CVM from ClawHub
+  usage: clawhub install tencentcloud-cvm-skill
+schema_version: '1.0'

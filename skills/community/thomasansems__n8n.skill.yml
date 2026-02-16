@@ -1,0 +1,67 @@
+name: n8n
+title: n8n
+version: 2.0.0
+description: Manage n8n workflows and automations via API. Use when working with n8n workflows, executions, or automation
+  tasks - listing workflows, activating/deactivating, checking execution status, manually triggering workflows, or debugging
+  automation issues.
+metadata:
+  author: thomasansems
+  category: Development & Coding
+  tags:
+  - development-coding
+  - n8n
+  source: clawhub-community
+  clawhub_slug: n8n
+  clawhub_path: thomasansems/n8n
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# n8n
+
+    # Source: ClawHub community skill by thomasansems
+
+    # Install: clawhub install n8n
+
+    # Path: thomasansems/n8n
+
+
+    ## Description
+
+    Manage n8n workflows and automations via API. Use when working with n8n workflows, executions, or automation tasks - listing
+    workflows, activating/deactivating, checking execution status, manually triggering workflows, or debugging automation
+    issues.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - references/api.md
+
+    - scripts/n8n_api.py
+
+    - scripts/n8n_optimizer.py
+
+    - scripts/n8n_tester.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install n8n
+
+    ```'
+examples:
+- description: Install n8n from ClawHub
+  usage: clawhub install n8n
+schema_version: '1.0'

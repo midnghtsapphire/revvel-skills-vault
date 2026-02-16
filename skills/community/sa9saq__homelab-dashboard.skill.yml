@@ -1,0 +1,54 @@
+name: homelab-dashboard
+title: Homelab Dashboard
+version: 1.1.0
+description: Generate a status dashboard for self-hosted services, Docker containers, and homelab infrastructure.
+metadata:
+  author: sa9saq
+  category: Development & Coding
+  tags:
+  - development-coding
+  - homelab
+  - dashboard
+  source: clawhub-community
+  clawhub_slug: homelab-dashboard
+  clawhub_path: sa9saq/homelab-dashboard
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Homelab Dashboard
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install homelab-dashboard
+
+    # Path: sa9saq/homelab-dashboard
+
+
+    ## Description
+
+    Generate a status dashboard for self-hosted services, Docker containers, and homelab infrastructure.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install homelab-dashboard
+
+    ```'
+examples:
+- description: Install Homelab Dashboard from ClawHub
+  usage: clawhub install homelab-dashboard
+schema_version: '1.0'

@@ -1,0 +1,71 @@
+name: nanobazaar
+title: NanoBazaar
+version: 2.0.3
+description: Use the NanoBazaar Relay to create offers (sell services), create jobs (buy services), attach charges, search
+  offers, and exchange encrypted payloads.
+metadata:
+  author: madsb
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - nanobazaar
+  source: clawhub-community
+  clawhub_slug: nanobazaar
+  clawhub_path: madsb/nanobazaar
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# NanoBazaar
+
+    # Source: ClawHub community skill by madsb
+
+    # Install: clawhub install nanobazaar
+
+    # Path: madsb/nanobazaar
+
+
+    ## Description
+
+    Use the NanoBazaar Relay to create offers (sell services), create jobs (buy services), attach charges, search offers,
+    and exchange encrypted payloads.
+
+
+    ## Files
+
+    - CHANGELOG.md
+
+    - HEARTBEAT_TEMPLATE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - skill.json
+
+    - docs/AUTH.md
+
+    - docs/COMMANDS.md
+
+    - docs/PAYLOADS.md
+
+    - docs/PAYMENTS.md
+
+    - docs/POLLING.md
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install nanobazaar
+
+    ```'
+examples:
+- description: Install NanoBazaar from ClawHub
+  usage: clawhub install nanobazaar
+schema_version: '1.0'

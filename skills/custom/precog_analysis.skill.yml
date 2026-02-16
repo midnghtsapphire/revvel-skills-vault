@@ -1,0 +1,375 @@
+name: precog_analysis
+title: Precognitive Analysis Tool (PRECOG)
+version: 1.0.0
+description: Advanced predictive intelligence platform for crime pattern prediction, behavioral analysis, financial anomaly
+  detection, health outcome forecasting, and legal outcome modeling with cross-domain correlation capabilities.
+metadata:
+  author: Revvel AI Engine
+  category: Intelligence & Research
+  tags:
+  - financial-anomaly-detection
+  - cross-domain-correlation
+  - behavioral-pattern-analysis
+  - legal-outcome-modeling
+  - health-outcome-prediction
+  - crime-pattern-prediction
+  - analysis
+  - temporal-pattern-detection
+  - network-analysis
+  - precog
+  source: revvel-custom
+  created_at: '2026-02-14'
+  updated_at: '2026-02-16'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: "import json\nimport os\nimport re\nimport hashlib\nimport statistics\nimport math\nimport requests\nfrom datetime\
+    \ import datetime, timedelta\nfrom typing import Dict, List, Any, Optional, Tuple, Union\nfrom collections import defaultdict,\
+    \ Counter\nimport unittest\nfrom unittest.mock import patch, MagicMock\n\nSKILL_METADATA = {\n    \"name\": \"Precognitive\
+    \ Analysis Tool (PRECOG)\",\n    \"id\": \"precog_analysis\",\n    \"version\": \"1.0.0\",\n    \"author\": \"Revvel AI\
+    \ Engine\",\n    \"description\": \"Advanced predictive intelligence platform for crime pattern prediction, behavioral\
+    \ analysis, financial anomaly detection, health outcome forecasting, and legal outcome modeling with cross-domain correlation\
+    \ capabilities.\",\n    \"capabilities\": [\n        \"crime_pattern_prediction\",\n        \"behavioral_pattern_analysis\"\
+    ,\n        \"financial_anomaly_detection\",\n        \"health_outcome_prediction\",\n        \"legal_outcome_modeling\"\
+    ,\n        \"cross_domain_correlation\",\n        \"temporal_pattern_detection\",\n        \"network_analysis\",\n   \
+    \     \"geospatial_pattern_analysis\",\n        \"anomaly_detection\",\n        \"threat_assessment\",\n        \"risk_scoring\"\
+    ,\n        \"early_warning_systems\",\n        \"data_fusion\",\n        \"entity_resolution\",\n        \"timeline_reconstruction\"\
+    ,\n        \"intelligence_reporting\",\n        \"pattern_visualization\"\n    ],\n    \"domain\": \"predictive_intelligence\"\
+    \n}\n\nEXPERT_PROMPTS = {\n    \"crime_hotspot_analysis\": \"\"\"Analyze crime incident data for {location} covering {time_period}\
+    \ to identify emerging hotspots and predict future crime patterns. Consider factors: {crime_types}, demographic shifts,\
+    \ seasonal variations, and socioeconomic indicators. Provide risk scores and confidence levels for each identified hotspot.\"\
+    \"\",\n    \n    \"behavioral_anomaly_detection\": \"\"\"Examine digital footprint data for subject {subject_id} including\
+    \ social media activity ({platforms}), communication patterns, location data, and online behaviors over {time_period}.\
+    \ Identify deviations from baseline behavior, assess psychological state changes, and predict potential risk behaviors\
+    \ with confidence scoring.\"\"\",\n    \n    \"financial_fraud_prediction\": \"\"\"Analyze transaction data for account\
+    \ {account_id} spanning {time_period} including amounts, frequencies, locations, merchant categories, and counterparties.\
+    \ Detect anomalies indicating potential fraud, money laundering, or financial crimes. Provide risk scores and evidence\
+    \ chains.\"\"\",\n    \n    \"health_risk_stratification\": \"\"\"Process patient {patient_id} health records including\
+    \ medical history, lab results, vital signs, and lifestyle factors. Predict disease progression risk for {conditions},\
+    \ treatment response likelihood, and potential complications. Include confidence intervals and contributing factors.\"\
+    \"\",\n    \n    \"legal_case_outcome_modeling\": \"\"\"Analyze case {case_id} data including case type, jurisdiction,\
+    \ judge history, legal precedents, evidence strength, and parties involved. Predict probable outcomes: {outcome_types},\
+    \ timeline estimates, and settlement ranges with statistical confidence.\"\"\",\n    \n    \"cross_domain_threat_assessment\"\
+    : \"\"\"Correlate data across crime reports, financial transactions, social media activity, and communication metadata\
+    \ for subject {subject_id}. Identify converging threat indicators, assess escalation probability, and provide integrated\
+    \ risk assessment with timeline predictions.\"\"\",\n    \n    \"network_relationship_analysis\": \"\"\"Map relationships\
+    \ and interactions between entities {entity_list} across communication records, financial transactions, location data,\
+    \ and social connections. Identify influence patterns, hierarchical structures, and anomalous relationship changes with\
+    \ centrality measures.\"\"\",\n    \n    \"temporal_pattern_forecasting\": \"\"\"Analyze time-series data for {data_type}\
+    \ covering {time_period} with {granularity} granularity. Identify cyclical patterns, trend changes, seasonality, and anomalous\
+    \ periods. Forecast future values with prediction intervals and anomaly detection.\"\"\"\n}\n\nINTEGRATION_POINTS = {\n\
+    \    \"crime_data_api\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://api.crime-data.gov/v1/incidents\"\
+    ,\n        \"description\": \"National crime incident reporting system API\",\n        \"auth_method\": \"api_key\",\n\
+    \        \"documentation_url\": \"https://crime-data.gov/api/docs\"\n    },\n    \"financial_transactions_db\": {\n  \
+    \      \"type\": \"database\",\n        \"endpoint\": \"postgresql://financial-db.revvel.ai:5432/transactions\",\n   \
+    \     \"description\": \"Centralized financial transaction database\",\n        \"auth_method\": \"oauth2\",\n       \
+    \ \"documentation_url\": \"https://docs.revvel.ai/databases/financial\"\n    },\n    \"social_media_intelligence\": {\n\
+    \        \"type\": \"api\",\n        \"endpoint\": \"https://api.social-intel.revvel.ai/v2/feed\",\n        \"description\"\
+    : \"Social media monitoring and analysis platform\",\n        \"auth_method\": \"bearer_token\",\n        \"documentation_url\"\
+    : \"https://docs.revvel.ai/apis/social-media\"\n    },\n    \"health_records_system\": {\n        \"type\": \"database\"\
+    ,\n        \"endpoint\": \"https://health-api.revvel.ai/v1/patients\",\n        \"description\": \"Electronic health records\
+    \ integration\",\n        \"auth_method\": \"mTLS\",\n        \"documentation_url\": \"https://docs.revvel.ai/integrations/health\"\
+    \n    },\n    \"legal_case_management\": {\n        \"type\": \"api\",\n        \"endpoint\": \"https://legal-api.revvel.ai/v1/cases\"\
+    ,\n        \"description\": \"Legal case management and court records system\",\n        \"auth_method\": \"api_key\"\
+    ,\n        \"documentation_url\": \"https://docs.revvel.ai/apis/legal\"\n    },\n    \"geospatial_mapping_service\": {\n\
+    \        \"type\": \"tool\",\n        \"endpoint\": \"https://maps.revvel.ai/api/v1/geocode\",\n        \"description\"\
+    : \"Geospatial analysis and mapping service\",\n        \"auth_method\": \"api_key\",\n        \"documentation_url\":\
+    \ \"https://docs.revvel.ai/tools/geospatial\"\n    }\n}\n\ndef validate_data_structure(data: Any, schema: Dict[str, Any])\
+    \ -> Tuple[bool, List[str]]:\n    \"\"\"Validate data against a JSON schema-like structure.\"\"\"\n    errors = []\n \
+    \   \n    def _validate_item(item: Any, spec: Any, path: str = \"\"):\n        if isinstance(spec, dict) and \"type\"\
+    \ in spec:\n            expected_type = spec[\"type\"]\n            if expected_type == \"array\" and not isinstance(item,\
+    \ list):\n                errors.append(f\"{path}: Expected array, got {type(item).__name__}\")\n            elif expected_type\
+    \ == \"object\" and not isinstance(item, dict):\n                errors.append(f\"{path}: Expected object, got {type(item).__name__}\"\
+    )\n            elif expected_type == \"string\" and not isinstance(item, str):\n                errors.append(f\"{path}:\
+    \ Expected string, got {type(item).__name__}\")\n            elif expected_type == \"number\" and not isinstance(item,\
+    \ (int, float)):\n                errors.append(f\"{path}: Expected number, got {type(item).__name__}\")\n           \
+    \ \n            if \"items\" in spec and isinstance(item, list):\n                for i, sub_item in enumerate(item):\n\
+    \                    _validate_item(sub_item, spec[\"items\"], f\"{path}[{i}]\")\n            \n            if \"properties\"\
+    \ in spec and isinstance(item, dict):\n                for prop, prop_spec in spec[\"properties\"].items():\n        \
+    \            if prop_spec.get(\"required\", False) and prop not in item:\n                        errors.append(f\"{path}.{prop}:\
+    \ Required property missing\")\n                    if prop in item:\n                        _validate_item(item[prop],\
+    \ prop_spec, f\"{path}.{prop}\")\n        \n        elif isinstance(spec, dict) and isinstance(item, dict):\n        \
+    \    for key, value_spec in spec.items():\n                if key in item:\n                    _validate_item(item[key],\
+    \ value_spec, f\"{path}.{key}\")\n    \n    _validate_item(data, schema)\n    return len(errors) == 0, errors\n\ndef calculate_risk_score(indicators:\
+    \ Dict[str, float], weights: Dict[str, float]) -> float:\n    \"\"\"Calculate composite risk score from multiple indicators.\"\
+    \"\"\n    total_weight = sum(weights.values())\n    weighted_sum = sum(indicators.get(key, 0) * weights.get(key, 0) for\
+    \ key in weights)\n    return min(max(weighted_sum / total_weight, 0.0), 1.0) if total_weight > 0 else 0.0\n\ndef detect_temporal_anomalies(time_series:\
+    \ List[Tuple[datetime, float]], \n                             window_size: int = 7, \n                             threshold:\
+    \ float = 2.0) -> List[Tuple[datetime, float, float]]:\n    \"\"\"Detect anomalies in time-series data using statistical\
+    \ methods.\"\"\"\n    if len(time_series) < window_size:\n        return []\n    \n    anomalies = []\n    sorted_series\
+    \ = sorted(time_series, key=lambda x: x[0])\n    \n    for i in range(window_size, len(sorted_series)):\n        window_data\
+    \ = [val for _, val in sorted_series[i-window_size:i]]\n        mean = statistics.mean(window_data)\n        std_dev =\
+    \ statistics.stdev(window_data) if len(window_data) > 1 else 0\n        \n        if std_dev > 0:\n            current_time,\
+    \ current_value = sorted_series[i]\n            z_score = abs(current_value - mean) / std_dev\n            if z_score\
+    \ > threshold:\n                anomalies.append((current_time, current_value, z_score))\n    \n    return anomalies\n\
+    \ndef build_network_graph(connections: List[Tuple[str, str, float]]) -> Dict[str, Any]:\n    \"\"\"Build network graph\
+    \ from connection data with centrality measures.\"\"\"\n    graph = defaultdict(lambda: {\"neighbors\": set(), \"weights\"\
+    : {}})\n    \n    for source, target, weight in connections:\n        graph[source][\"neighbors\"].add(target)\n     \
+    \   graph[source][\"weights\"][target] = weight\n        graph[target][\"neighbors\"].add(source)\n        graph[target][\"\
+    weights\"][source] = weight\n    \n    centrality = {}\n    for node in graph:\n        neighbors = graph[node][\"neighbors\"\
+    ]\n        centrality[node] = {\n            \"degree\": len(neighbors),\n            \"betweenness\": 0,\n          \
+    \  \"closeness\": 0,\n            \"eigenvector\": 0\n        }\n    \n    total_nodes = len(graph)\n    for node in graph:\n\
+    \        if total_nodes > 1:\n            centrality[node][\"closeness\"] = centrality[node][\"degree\"] / (total_nodes\
+    \ - 1)\n    \n    return {\n        \"nodes\": list(graph.keys()),\n        \"edges\": [(s, t, w) for s in graph for t,\
+    \ w in graph[s][\"weights\"].items() if s < t],\n        \"centrality\": centrality,\n        \"density\": sum(len(data[\"\
+    neighbors\"]) for data in graph.values()) / (total_nodes * (total_nodes - 1)) if total_nodes > 1 else 0\n    }\n\ndef\
+    \ geospatial_clustering(points: List[Tuple[float, float]], \n                         epsilon: float = 0.01, \n      \
+    \                   min_points: int = 3) -> List[List[Tuple[float, float]]]:\n    \"\"\"Perform DBSCAN-like clustering\
+    \ on geospatial coordinates.\"\"\"\n    clusters = []\n    visited = set()\n    \n    def get_neighbors(point_idx):\n\
+    \        point = points[point_idx]\n        neighbors = []\n        for i, other_point in enumerate(points):\n       \
+    \     if i != point_idx:\n                distance = math.sqrt((point[0] - other_point[0])**2 + (point[1] - other_point[1])**2)\n\
+    \                if distance <= epsilon:\n                    neighbors.append(i)\n        return neighbors\n    \n  \
+    \  for i in range(len(points)):\n        if i in visited:\n            continue\n        \n        visited.add(i)\n  \
+    \      neighbors = get_neighbors(i)\n        \n        if len(neighbors) >= min_points - 1:\n            cluster = [points[i]]\n\
+    \            to_visit = neighbors[:]\n            \n            while to_visit:\n                current = to_visit.pop()\n\
+    \                if current not in visited:\n                    visited.add(current)\n                    current_neighbors\
+    \ = get_neighbors(current)\n                    if len(current_neighbors) >= min_points - 1:\n                       \
+    \ to_visit.extend([n for n in current_neighbors if n not in visited])\n                    cluster.append(points[current])\n\
+    \            \n            if len(cluster) >= min_points:\n                clusters.append(cluster)\n    \n    return\
+    \ clusters\n\ndef generate_intelligence_briefing(analysis_results: Dict[str, Any], \n                                \
+    \ classification: str = \"UNCLASSIFIED\") -> str:\n    \"\"\"Generate formatted intelligence briefing from analysis results.\"\
+    \"\"\n    briefing = []\n    briefing.append(f\"CLASSIFICATION: {classification}\")\n    briefing.append(f\"DATE: {datetime.now().strftime('%Y-%m-%d\
+    \ %H:%M:%S UTC')}\")\n    briefing.append(\"SUBJECT: Precognitive Analysis Report\")\n    briefing.append(\"\")\n    \n\
+    \    if \"threat_level\" in analysis_results:\n        briefing.append(f\"THREAT LEVEL: {analysis_results['threat_level']}\"\
+    )\n    \n    if \"key_findings\" in analysis_results:\n        briefing.append(\"\\nKEY FINDINGS:\")\n        for finding\
+    \ in analysis_results[\"key_findings\"]:\n            briefing.append(f\"- {finding}\")\n    \n    if \"risk_scores\"\
+    \ in analysis_results:\n        briefing.append(\"\\nRISK ASSESSMENT:\")\n        for entity, score in analysis_results[\"\
+    risk_scores\"].items():\n            briefing.append(f\"- {entity}: {score:.2f}\")\n    \n    if \"recommendations\" in\
+    \ analysis_results:\n        briefing.append(\"\\nRECOMMENDATIONS:\")\n        for rec in analysis_results[\"recommendations\"\
+    ]:\n            briefing.append(f\"- {rec}\")\n    \n    if \"confidence\" in analysis_results:\n        briefing.append(f\"\
+    \\nCONFIDENCE: {analysis_results['confidence']:.1%}\")\n    \n    return \"\\n\".join(briefing)\n\ndef calculate_prediction_confidence(predictions:\
+    \ List[float], \n                                  historical_accuracy: float = 0.75) -> float:\n    \"\"\"Calculate confidence\
+    \ score for predictions based on model performance.\"\"\"\n    if not predictions:\n        return 0.0\n    \n    variance\
+    \ = statistics.variance(predictions) if len(predictions) > 1 else 0\n    consistency_score = 1.0 / (1.0 + variance)\n\
+    \    \n    return min(historical_accuracy * consistency_score, 1.0)\n\ndef fuse_multi_source_data(sources: Dict[str, Dict[str,\
+    \ Any]], \n                          entity_mapping: Dict[str, List[str]]) -> Dict[str, Any]:\n    \"\"\"Fuse data from\
+    \ multiple sources using entity resolution.\"\"\"\n    fused_data = {}\n    \n    for entity_id, source_keys in entity_mapping.items():\n\
+    \        entity_data = {\n            \"sources\": [],\n            \"confidence\": 0.0,\n            \"last_updated\"\
+    : None,\n            \"attributes\": {}\n        }\n        \n        total_confidence = 0\n        source_count = 0\n\
+    \        \n        for source_key in source_keys:\n            if source_key in sources:\n                source_data\
+    \ = sources[source_key]\n                entity_data[\"sources\"].append(source_key)\n                \n             \
+    \   for attr, value in source_data.get(\"attributes\", {}).items():\n                    if attr not in entity_data[\"\
+    attributes\"]:\n                        entity_data[\"attributes\"][attr] = []\n                    entity_data[\"attributes\"\
+    ][attr].append(value)\n                \n                confidence = source_data.get(\"confidence\", 0)\n           \
+    \     total_confidence += confidence\n                source_count += 1\n                \n                source_time\
+    \ = source_data.get(\"timestamp\")\n                if source_time and (not entity_data[\"last_updated\"] or source_time\
+    \ > entity_data[\"last_updated\"]):\n                    entity_data[\"last_updated\"] = source_time\n        \n     \
+    \   if source_count > 0:\n            entity_data[\"confidence\"] = total_confidence / source_count\n        \n      \
+    \  fused_data[entity_id] = entity_data\n    \n    return fused_data\n\ndef build_query_filter(criteria: Dict[str, Any])\
+    \ -> str:\n    \"\"\"Build SQL-like query filter from criteria dictionary.\"\"\"\n    conditions = []\n    \n    for field,\
+    \ condition in criteria.items():\n        if isinstance(condition, dict):\n            if \"range\" in condition:\n  \
+    \              min_val, max_val = condition[\"range\"]\n                conditions.append(f\"{field} BETWEEN {min_val}\
+    \ AND {max_val}\")\n            elif \"in\" in condition:\n                values = \", \".join(f\"'{v}'\" for v in condition[\"\
+    in\"])\n                conditions.append(f\"{field} IN ({values})\")\n            elif \"like\" in condition:\n     \
+    \           conditions.append(f\"{field} LIKE '%{condition['like']}%'\")\n        else:\n            conditions.append(f\"\
+    {field} = '{condition}'\")\n    \n    return \" AND \".join(conditions) if conditions else \"1=1\"\n\ndef render_pattern_visualization(patterns:\
+    \ Dict[str, Any], viz_type: str = \"network\") -> Dict[str, Any]:\n    \"\"\"Render pattern visualization configuration.\"\
+    \"\"\n    if viz_type == \"network\":\n        return {\n            \"type\": \"network_graph\",\n            \"data\"\
+    : {\n                \"nodes\": [{\"id\": node, \"label\": node, \"centrality\": patterns.get(\"centrality\", {}).get(node,\
+    \ {}).get(\"degree\", 0)} \n                         for node in patterns.get(\"nodes\", [])],\n                \"edges\"\
+    : [{\"source\": s, \"target\": t, \"weight\": w} for s, t, w in patterns.get(\"edges\", [])]\n            },\n       \
+    \     \"layout\": \"force_directed\",\n            \"options\": {\n                \"node_size_scale\": 10,\n        \
+    \        \"edge_width_scale\": 2,\n                \"color_scheme\": \"threat_level\"\n            }\n        }\n    elif\
+    \ viz_type == \"heatmap\":\n        return {\n            \"type\": \"heatmap\",\n            \"data\": patterns.get(\"\
+    geospatial_data\", []),\n            \"options\": {\n                \"color_scale\": \"viridis\",\n                \"\
+    intensity_scale\": 0.8,\n                \"cluster_markers\": True\n            }\n        }\n    else:\n        return\
+    \ {\"type\": \"unknown\", \"data\": patterns}\n\nclass SkillEngine:\n    \"\"\"Main engine for Precognitive Analysis Tool\
+    \ operations.\"\"\"\n    \n    def __init__(self, config: Dict[str, Any]):\n        \"\"\"Initialize the skill engine\
+    \ with configuration.\"\"\"\n        self.config = config\n        self.logger = self._setup_logger()\n        self.models\
+    \ = {}\n        self.data_cache = {}\n        \n    def _setup_logger(self):\n        \"\"\"Set up logging for the engine.\"\
+    \"\"\n        import logging\n        logger = logging.getLogger(\"precog_engine\")\n        logger.setLevel(logging.INFO)\n\
+    \        return logger\n    \n    def predict_crime_patterns(self, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\
+    \"\"Predict crime patterns from incident data.\"\"\"\n        try:\n            incidents = data.get(\"incidents\", [])\n\
+    \            location = data.get(\"location\", \"unknown\")\n            \n            if not incidents:\n           \
+    \     return {\"error\": \"No incident data provided\"}\n            \n            coordinates = [(inc.get(\"lat\", 0),\
+    \ inc.get(\"lon\", 0)) for inc in incidents if \"lat\" in inc and \"lon\" in inc]\n            clusters = geospatial_clustering(coordinates,\
+    \ epsilon=0.005)\n            \n            hotspots = []\n            for cluster in clusters:\n                center_lat\
+    \ = sum(c[0] for c in cluster) / len(cluster)\n                center_lon = sum(c[1] for c in cluster) / len(cluster)\n\
+    \                intensity = len(cluster)\n                \n                hotspots.append({\n                    \"\
+    center\": {\"lat\": center_lat, \"lon\": center_lon},\n                    \"intensity\": intensity,\n               \
+    \     \"radius_km\": 0.5,\n                    \"risk_level\": \"HIGH\" if intensity > 10 else \"MEDIUM\" if intensity\
+    \ > 5 else \"LOW\"\n                })\n            \n            return {\n                \"hotspots\": hotspots,\n\
+    \                \"total_incidents\": len(incidents),\n                \"cluster_count\": len(clusters),\n           \
+    \     \"confidence\": 0.85,\n                \"generated_at\": datetime.now().isoformat()\n            }\n           \
+    \ \n        except Exception as e:\n            self.logger.error(f\"Error in predict_crime_patterns: {str(e)}\")\n  \
+    \          return {\"error\": str(e)}\n    \n    def analyze_behavioral_patterns(self, data: Dict[str, Any]) -> Dict[str,\
+    \ Any]:\n        \"\"\"Analyze behavioral patterns from digital footprint data.\"\"\"\n        try:\n            subject_id\
+    \ = data.get(\"subject_id\", \"unknown\")\n            activities = data.get(\"activities\", [])\n            \n     \
+    \       if not activities:\n                return {\"error\": \"No activity data provided\"}\n            \n        \
+    \    time_series = []\n            for activity in activities:\n                timestamp = datetime.fromisoformat(activity.get(\"\
+    timestamp\", \"\"))\n                value = activity.get(\"intensity\", 1)\n                time_series.append((timestamp,\
+    \ value))\n            \n            anomalies = detect_temporal_anomalies(time_series, threshold=2.5)\n            \n\
+    \            baseline = statistics.mean([v for _, v in time_series]) if time_series else 0\n            recent_activity\
+    \ = time_series[-7:] if len(time_series) >= 7 else time_series\n            recent_avg = statistics.mean([v for _, v in\
+    \ recent_activity]) if recent_activity else 0\n            \n            deviation_score = abs(recent_avg - baseline)\
+    \ / baseline if baseline > 0 else 0\n            \n            risk_indicators = {\n                \"activity_deviation\"\
+    : min(deviation_score, 1.0),\n                \"anomaly_frequency\": len(anomalies) / len(time_series) if time_series\
+    \ else 0,\n                \"pattern_disruption\": 1.0 if deviation_score > 0.5 else 0.0\n            }\n            \n\
+    \            weights = {\"activity_deviation\": 0.4, \"anomaly_frequency\": 0.3, \"pattern_disruption\": 0.3}\n      \
+    \      risk_score = calculate_risk_score(risk_indicators, weights)\n            \n            return {\n             \
+    \   \"subject_id\": subject_id,\n                \"risk_score\": risk_score,\n                \"baseline_activity\": baseline,\n\
+    \                \"recent_activity\": recent_avg,\n                \"anomalies_detected\": len(anomalies),\n         \
+    \       \"behavioral_change\": \"SIGNIFICANT\" if deviation_score > 0.5 else \"MODERATE\" if deviation_score > 0.2 else\
+    \ \"MINIMAL\",\n                \"confidence\": 0.78\n            }\n            \n        except Exception as e:\n  \
+    \          self.logger.error(f\"Error in analyze_behavioral_patterns: {str(e)}\")\n            return {\"error\": str(e)}\n\
+    \    \n    def detect_financial_anomalies(self, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Detect financial\
+    \ anomalies and fraud patterns.\"\"\"\n        try:\n            account_id = data.get(\"account_id\", \"unknown\")\n\
+    \            transactions = data.get(\"transactions\", [])\n            \n            if not transactions:\n         \
+    \       return {\"error\": \"No transaction data provided\"}\n            \n            amounts = [t.get(\"amount\", 0)\
+    \ for t in transactions]\n            times = [datetime.fromisoformat(t.get(\"timestamp\", \"\")) for t in transactions]\n\
+    \            \n            amount_mean = statistics.mean(amounts)\n            amount_std = statistics.stdev(amounts)\
+    \ if len(amounts) > 1 else 0\n            \n            anomalies = []\n            for i, (transaction, time, amount)\
+    \ in enumerate(zip(transactions, times, amounts)):\n                if amount_std > 0:\n                    z_score =\
+    \ abs(amount - amount_mean) / amount_std\n                    if z_score > 3:\n                        anomalies.append({\n\
+    \                            \"transaction_id\": transaction.get(\"id\", i),\n                            \"amount\":\
+    \ amount,\n                            \"z_score\": z_score,\n                            \"timestamp\": time.isoformat(),\n\
+    \                            \"severity\": \"HIGH\" if z_score > 5 else \"MEDIUM\"\n                        })\n     \
+    \       \n            frequency_analysis = Counter(times)\n            unusual_frequency = [t for t, count in frequency_analysis.items()\
+    \ if count > 10]\n            \n            risk_score = min(len(anomalies) / 10, 1.0) + (len(unusual_frequency) / 5)\n\
+    \            \n            return {\n                \"account_id\": account_id,\n                \"total_transactions\"\
+    : len(transactions),\n                \"anomalies_detected\": len(anomalies),\n                \"anomaly_details\": anomalies[:10],\n\
+    \                \"unusual_frequency_periods\": len(unusual_frequency),\n                \"risk_score\": min(risk_score,\
+    \ 1.0),\n                \"confidence\": 0.82\n            }\n            \n        except Exception as e:\n         \
+    \   self.logger.error(f\"Error in detect_financial_anomalies: {str(e)}\")\n            return {\"error\": str(e)}\n  \
+    \  \n    def predict_health_outcomes(self, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Predict health outcomes\
+    \ and risk factors.\"\"\"\n        try:\n            patient_id = data.get(\"patient_id\", \"unknown\")\n            medical_history\
+    \ = data.get(\"medical_history\", [])\n            current_vitals = data.get(\"current_vitals\", {})\n            \n \
+    \           if not medical_history and not current_vitals:\n                return {\"error\": \"No health data provided\"\
+    }\n            \n            risk_factors = 0\n            if current_vitals.get(\"blood_pressure_systolic\", 120) > 140:\n\
+    \                risk_factors += 1\n            if current_vitals.get(\"bmi\", 22) > 30:\n                risk_factors\
+    \ += 1\n            if current_vitals.get(\"smoking_status\", \"never\") == \"current\":\n                risk_factors\
+    \ += 2\n            \n            condition_scores = {}\n            for condition in medical_history:\n             \
+    \   condition_type = condition.get(\"condition\", \"\")\n                severity = condition.get(\"severity\", 1)\n \
+    \               if condition_type in condition_scores:\n                    condition_scores[condition_type] += severity\n\
+    \                else:\n                    condition_scores[condition_type] = severity\n            \n            total_risk_score\
+    \ = min(risk_factors / 5 + sum(condition_scores.values()) / 20, 1.0)\n            \n            predictions = {\n    \
+    \            \"cardiovascular_risk\": min(total_risk_score * 0.8 + 0.1, 1.0),\n                \"diabetes_risk\": min(total_risk_score\
+    \ * 0.6 + 0.2, 1.0),\n                \"general_health_score\": max(1.0 - total_risk_score, 0.0)\n            }\n    \
+    \        \n            return {\n                \"patient_id\": patient_id,\n                \"risk_factors\": risk_factors,\n\
+    \                \"risk_score\": total_risk_score,\n                \"predictions\": predictions,\n                \"\
+    confidence\": 0.75,\n                \"recommendations\": [\n                    \"Monitor blood pressure regularly\"\
+    \ if risk_factors > 0 else \"Continue healthy lifestyle\",\n                    \"Consider preventive screening\" if total_risk_score\
+    \ > 0.5 else \"Maintain current care routine\"\n                ]\n            }\n            \n        except Exception\
+    \ as e:\n            self.logger.error(f\"Error in predict_health_outcomes: {str(e)}\")\n            return {\"error\"\
+    : str(e)}\n    \n    def predict_legal_outcomes(self, data: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Predict\
+    \ legal case outcomes and probabilities.\"\"\"\n        try:\n            case_id = data.get(\"case_id\", \"unknown\"\
+    )\n            case_type = data.get(\"case_type\", \"civil\")\n            evidence_strength = data.get(\"evidence_strength\"\
+    , 0.5)\n            jurisdiction = data.get(\"jurisdiction\", \"federal\")\n            \n            base_probabilities\
+    \ = {\n                \"plaintiff_success\": 0.5,\n                \"settlement_likelihood\": 0.3,\n                \"\
+    trial_duration_weeks\": 52\n            }\n            \n            if case_type == \"criminal\":\n                base_probabilities[\"\
+    conviction_rate\"] = 0.85 if evidence_strength > 0.7 else 0.65\n            \n            jurisdiction_factor = 1.1 if\
+    \ jurisdiction == \"federal\" else 0.9\n            \n            adjusted_probabilities = {\n                key: min(val\
+    \ * jurisdiction_factor, 1.0) \n                for key, val in base_probabilities.items()\n            }\n          \
+    \  \n            settlement_range = {\n                \"low\": 10000 * evidence_strength,\n                \"high\":\
+    \ 100000 * evidence_strength,\n                \"median\": 50000 * evidence_strength\n            }\n            \n  \
+    \          return {\n                \"case_id\": case_id,\n                \"case_type\": case_type,\n              \
+    \  \"probabilities\": adjusted_probabilities,\n                \"settlement_range\": settlement_range,\n             \
+    \   \"predicted_duration_weeks\": base_probabilities[\"trial_duration_weeks\"] / jurisdiction_factor,\n              \
+    \  \"confidence\": 0.68,\n                \"factors_considered\": [\"case_type\", \"evidence_strength\", \"jurisdiction\"\
+    ]\n            }\n            \n        except Exception as e:\n            self.logger.error(f\"Error in predict_legal_outcomes:\
+    \ {str(e)}\")\n            return {\"error\": str(e)}\n    \n    def correlate_cross_domain_patterns(self, data: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Correlate patterns across multiple domains.\"\"\"\n        try:\n          \
+    \  domains = data.get(\"domains\", {})\n            entity_id = data.get(\"entity_id\", \"unknown\")\n            \n \
+    \           correlations = {}\n            domain_keys = list(domains.keys())\n            \n            for i, domain1\
+    \ in enumerate(domain_keys):\n                for domain2 in domain_keys[i+1:]:\n                    data1 = domains[domain1].get(\"\
+    risk_score\", 0)\n                    data2 = domains[domain2].get(\"risk_score\", 0)\n                    \n        \
+    \            correlation = 1 - abs(data1 - data2)\n                    correlations[f\"{domain1}_{domain2}\"] = correlation\n\
+    \            \n            aggregate_risk = sum(domains[d].get(\"risk_score\", 0) for d in domains) / len(domains) if\
+    \ domains else 0\n            \n            threat_indicators = []\n            for corr_key, corr_val in correlations.items():\n\
+    \                if corr_val > 0.7:\n                    threat_indicators.append(f\"High correlation in {corr_key}\"\
+    )\n            \n            return {\n                \"entity_id\": entity_id,\n                \"cross_domain_correlations\"\
+    : correlations,\n                \"aggregate_risk_score\": aggregate_risk,\n                \"threat_indicators\": threat_indicators,\n\
+    \                \"escalation_probability\": min(aggregate_risk * 0.8, 1.0),\n                \"confidence\": 0.72\n \
+    \           }\n            \n        except Exception as e:\n            self.logger.error(f\"Error in correlate_cross_domain_patterns:\
+    \ {str(e)}\")\n            return {\"error\": str(e)}\n    \n    def generate_intelligence_report(self, data: Dict[str,\
+    \ Any]) -> Dict[str, Any]:\n        \"\"\"Generate comprehensive intelligence report.\"\"\"\n        try:\n          \
+    \  analysis_type = data.get(\"analysis_type\", \"general\")\n            findings = data.get(\"findings\", {})\n     \
+    \       \n            report_content = generate_intelligence_briefing(findings, data.get(\"classification\", \"UNCLASSIFIED\"\
+    ))\n            \n            visualizations = []\n            if \"network_data\" in findings:\n                viz =\
+    \ render_pattern_visualization(findings[\"network_data\"], \"network\")\n                visualizations.append(viz)\n\
+    \            \n            if \"geospatial_data\" in findings:\n                viz = render_pattern_visualization(findings[\"\
+    geospatial_data\"], \"heatmap\")\n                visualizations.append(viz)\n            \n            return {\n   \
+    \             \"report_id\": hashlib.md5(f\"{analysis_type}_{datetime.now()}\".encode()).hexdigest()[:8],\n          \
+    \      \"report_type\": analysis_type,\n                \"content\": report_content,\n                \"visualizations\"\
+    : visualizations,\n                \"generated_at\": datetime.now().isoformat(),\n                \"classification\":\
+    \ data.get(\"classification\", \"UNCLASSIFIED\"),\n                \"confidence\": findings.get(\"confidence\", 0.5)\n\
+    \            }\n            \n        except Exception as e:\n            self.logger.error(f\"Error in generate_intelligence_report:\
+    \ {str(e)}\")\n            return {\"error\": str(e)}\n    \n    def run(self, capability: str, data: Dict[str, Any])\
+    \ -> Dict[str, Any]:\n        \"\"\"Main entry point to run specific capabilities.\"\"\"\n        capability_map = {\n\
+    \            \"crime_pattern_prediction\": self.predict_crime_patterns,\n            \"behavioral_pattern_analysis\":\
+    \ self.analyze_behavioral_patterns,\n            \"financial_anomaly_detection\": self.detect_financial_anomalies,\n \
+    \           \"health_outcome_prediction\": self.predict_health_outcomes,\n            \"legal_outcome_modeling\": self.predict_legal_outcomes,\n\
+    \            \"cross_domain_correlation\": self.correlate_cross_domain_patterns,\n            \"intelligence_reporting\"\
+    : self.generate_intelligence_report\n        }\n        \n        if capability not in capability_map:\n            return\
+    \ {\"error\": f\"Unknown capability: {capability}\"}\n        \n        return capability_map[capability](data)\n\nclass\
+    \ TestPrecognitiveAnalysis(unittest.TestCase):\n    \"\"\"Test suite for Precognitive Analysis Tool.\"\"\"\n    \n   \
+    \ def test_metadata_validation(self):\n        \"\"\"Test that metadata is properly structured.\"\"\"\n        self.assertEqual(SKILL_METADATA[\"\
+    name\"], \"Precognitive Analysis Tool (PRECOG)\")\n        self.assertEqual(SKILL_METADATA[\"id\"], \"precog_analysis\"\
+    )\n        self.assertIn(\"crime_pattern_prediction\", SKILL_METADATA[\"capabilities\"])\n        self.assertGreater(len(SKILL_METADATA[\"\
+    capabilities\"]), 15)\n    \n    def test_expert_prompts(self):\n        \"\"\"Test expert prompts are properly formatted.\"\
+    \"\"\n        self.assertIn(\"crime_hotspot_analysis\", EXPERT_PROMPTS)\n        self.assertIn(\"behavioral_anomaly_detection\"\
+    , EXPERT_PROMPTS)\n        self.assertIn(\"{location}\", EXPERT_PROMPTS[\"crime_hotspot_analysis\"])\n        self.assertIn(\"\
+    {subject_id}\", EXPERT_PROMPTS[\"behavioral_anomaly_detection\"])\n    \n    def test_integration_points(self):\n    \
+    \    \"\"\"Test integration points are properly defined.\"\"\"\n        self.assertIn(\"crime_data_api\", INTEGRATION_POINTS)\n\
+    \        self.assertEqual(INTEGRATION_POINTS[\"crime_data_api\"][\"type\"], \"api\")\n        self.assertIn(\"endpoint\"\
+    , INTEGRATION_POINTS[\"crime_data_api\"])\n    \n    def test_validate_data_structure(self):\n        \"\"\"Test data\
+    \ validation function.\"\"\"\n        schema = {\n            \"type\": \"object\",\n            \"properties\": {\n \
+    \               \"name\": {\"type\": \"string\", \"required\": True},\n                \"age\": {\"type\": \"number\"\
+    }\n            }\n        }\n        \n        valid_data = {\"name\": \"John\", \"age\": 30}\n        invalid_data =\
+    \ {\"age\": \"thirty\"}\n        \n        is_valid, errors = validate_data_structure(valid_data, schema)\n        self.assertTrue(is_valid)\n\
+    \        self.assertEqual(len(errors), 0)\n        \n        is_valid, errors = validate_data_structure(invalid_data,\
+    \ schema)\n        self.assertFalse(is_valid)\n        self.assertGreater(len(errors), 0)\n    \n    def test_calculate_risk_score(self):\n\
+    \        \"\"\"Test risk score calculation.\"\"\"\n        indicators = {\"threat_level\": 0.8, \"frequency\": 0.6, \"\
+    severity\": 0.9}\n        weights = {\"threat_level\": 0.5, \"frequency\": 0.3, \"severity\": 0.2}\n        \n       \
+    \ score = calculate_risk_score(indicators, weights)\n        self.assertGreaterEqual(score, 0.0)\n        self.assertLessEqual(score,\
+    \ 1.0)\n        \n        expected = (0.8*0.5 + 0.6*0.3 + 0.9*0.2) / (0.5 + 0.3 + 0.2)\n        self.assertAlmostEqual(score,\
+    \ expected, places=2)\n    \n    def test_detect_temporal_anomalies(self):\n        \"\"\"Test temporal anomaly detection.\"\
+    \"\"\n        base_time = datetime.now()\n        time_series = [\n            (base_time, 10.0),\n            (base_time\
+    \ + timedelta(days=1), 12.0),\n            (base_time + timedelta(days=2), 11.0),\n            (base_time + timedelta(days=3),\
+    \ 100.0),\n            (base_time + timedelta(days=4), 13.0)\n        ]\n        \n        anomalies = detect_temporal_anomalies(time_series,\
+    \ window_size=3, threshold=2.0)\n        self.assertGreater(len(anomalies), 0)\n        self.assertEqual(anomalies[0][0],\
+    \ base_time + timedelta(days=3))\n    \n    def test_build_network_graph(self):\n        \"\"\"Test network graph construction.\"\
+    \"\"\n        connections = [\n            (\"A\", \"B\", 1.0),\n            (\"B\", \"C\", 0.8),\n            (\"C\"\
+    , \"D\", 0.6),\n            (\"A\", \"D\", 0.4)\n        ]\n        \n        graph = build_network_graph(connections)\n\
+    \        self.assertIn(\"nodes\", graph)\n        self.assertIn(\"edges\", graph)\n        self.assertIn(\"centrality\"\
+    , graph)\n        self.assertEqual(len(graph[\"nodes\"]), 4)\n        self.assertEqual(graph[\"centrality\"][\"A\"][\"\
+    degree\"], 2)\n    \n    def test_geospatial_clustering(self):\n        \"\"\"Test geospatial clustering.\"\"\"\n    \
+    \    points = [\n            (40.7128, -74.0060),\n            (40.7130, -74.0062),\n            (40.7131, -74.0061),\n\
+    \            (34.0522, -118.2437),\n            (34.0523, -118.2438)\n        ]\n        \n        clusters = geospatial_clustering(points,\
+    \ epsilon=0.01, min_points=2)\n        self.assertGreater(len(clusters), 0)\n        \n        total_clustered = sum(len(cluster)\
+    \ for cluster in clusters)\n        self.assertGreater(total_clustered, 0)\n    \n    def test_generate_intelligence_briefing(self):\n\
+    \        \"\"\"Test intelligence briefing generation.\"\"\"\n        analysis_results = {\n            \"threat_level\"\
+    : \"HIGH\",\n            \"key_findings\": [\"Anomaly detected\", \"Risk score elevated\"],\n            \"risk_scores\"\
+    : {\"Entity1\": 0.8, \"Entity2\": 0.6},\n            \"recommendations\": [\"Monitor closely\", \"Investigate further\"\
+    ],\n            \"confidence\": 0.85\n        }\n        \n        briefing = generate_intelligence_briefing(analysis_results)\n\
+    \        self.assertIn(\"CLASSIFICATION: UNCLASSIFIED\", briefing)\n        self.assertIn(\"THREAT LEVEL: HIGH\", briefing)\n\
+    \        self.assertIn(\"Anomaly detected\", briefing)\n    \n    def test_skill_engine_initialization(self):\n      \
+    \  \"\"\"Test SkillEngine initialization.\"\"\"\n        config = {\"api_key\": \"test_key\", \"debug\": True}\n     \
+    \   engine = SkillEngine(config)\n        self.assertEqual(engine.config, config)\n        self.assertIsNotNone(engine.logger)\n\
+    \    \n    def test_skill_engine_crime_prediction(self):\n        \"\"\"Test crime pattern prediction capability.\"\"\"\
+    \n        engine = SkillEngine({})\n        \n        crime_data = {\n            \"location\": \"Downtown\",\n      \
+    \      \"incidents\": [\n                {\"lat\": 40.7128, \"lon\": -74.0060, \"type\": \"theft\"},\n               \
+    \ {\"lat\": 40.7130, \"lon\": -74.0062, \"type\": \"theft\"},\n                {\"lat\": 40.7131, \"lon\": -74.0061, \"\
+    type\": \"assault\"}\n            ]\n        }\n        \n        result = engine.run(\"crime_pattern_prediction\", crime_data)\n\
+    \        self.assertIn(\"hotspots\", result)\n        self.assertIn(\"total_incidents\", result)\n        self.assertEqual(result[\"\
+    total_incidents\"], 3)\n    \n    def test_skill_engine_behavioral_analysis(self):\n        \"\"\"Test behavioral pattern\
+    \ analysis capability.\"\"\"\n        engine = SkillEngine({})\n        \n        base_time = datetime.now()\n       \
+    \ behavioral_data = {\n            \"subject_id\": \"SUBJ001\",\n            \"activities\": [\n                {\"timestamp\"\
+    : base_time.isoformat(), \"intensity\": 5},\n                {\"timestamp\": (base_time + timedelta(days=1)).isoformat(),\
+    \ \"intensity\": 6},\n                {\"timestamp\": (base_time + timedelta(days=2)).isoformat(), \"intensity\": 50}\n\
+    \            ]\n        }\n        \n        result = engine.run(\"behavioral_pattern_analysis\", behavioral_data)\n \
+    \       self.assertIn(\"risk_score\", result)\n        self.assertIn(\"subject_id\", result)\n        self.assertEqual(result[\"\
+    subject_id\"], \"SUBJ001\")\n    \n    def test_skill_engine_error_handling(self):\n        \"\"\"Test error handling\
+    \ in SkillEngine.\"\"\"\n        engine = SkillEngine({})\n        \n        result = engine.run(\"unknown_capability\"\
+    , {})\n        self.assertIn(\"error\", result)\n        \n        result = engine.run(\"crime_pattern_prediction\", {})\n\
+    \        self.assertIn(\"error\", result)\n\nif __name__ == \"__main__\":\n    unittest.main()"
+examples:
+- description: Load and use the Precognitive Analysis Tool (PRECOG) skill
+  usage: 'from revvel_skills import load_skill
+
+    skill = load_skill(''precog_analysis'')
+
+    result = skill.execute(params)'
+schema_version: '1.0'

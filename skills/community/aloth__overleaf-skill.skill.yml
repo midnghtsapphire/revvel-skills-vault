@@ -1,0 +1,67 @@
+name: overleaf
+title: Overleaf
+version: 1.1.0
+description: Sync and manage Overleaf LaTeX projects from the command line. Pull projects locally, push changes back, compile
+  PDFs, and download compile outputs like .bbl files for arXiv submissions. Use when working with LaTeX, Overleaf, academic
+  papers, or arXiv.
+metadata:
+  author: aloth
+  category: File & Data Management
+  tags:
+  - file-data-management
+  - overleaf
+  source: clawhub-community
+  clawhub_slug: overleaf-skill
+  clawhub_path: aloth/overleaf-skill
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Overleaf
+
+    # Source: ClawHub community skill by aloth
+
+    # Install: clawhub install overleaf-skill
+
+    # Path: aloth/overleaf-skill
+
+
+    ## Description
+
+    Sync and manage Overleaf LaTeX projects from the command line. Pull projects locally, push changes back, compile PDFs,
+    and download compile outputs like .bbl files for arXiv submissions. Use when working with LaTeX, Overleaf, academic papers,
+    or arXiv.
+
+
+    ## Files
+
+    - LICENSE.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - references/API.md
+
+    - scripts/install.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install overleaf-skill
+
+    ```'
+examples:
+- description: Install Overleaf from ClawHub
+  usage: clawhub install overleaf-skill
+schema_version: '1.0'

@@ -1,0 +1,57 @@
+name: anki-connect-skill
+title: Anki Connect
+version: 1.0.0
+description: Interact with Anki flashcard decks via the AnkiConnect REST API. Use when the user wants to create, update, search,
+  or manage Anki cards, decks, notes, or models.
+metadata:
+  author: gyroninja
+  category: Search & Research
+  tags:
+  - search-research
+  - anki
+  - connect
+  - skill
+  source: clawhub-community
+  clawhub_slug: anki-connect
+  clawhub_path: gyroninja/anki-connect
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Anki Connect
+
+    # Source: ClawHub community skill by gyroninja
+
+    # Install: clawhub install anki-connect
+
+    # Path: gyroninja/anki-connect
+
+
+    ## Description
+
+    Interact with Anki flashcard decks via the AnkiConnect REST API. Use when the user wants to create, update, search, or
+    manage Anki cards, decks, notes, or models.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install anki-connect
+
+    ```'
+examples:
+- description: Install Anki Connect from ClawHub
+  usage: clawhub install anki-connect
+schema_version: '1.0'

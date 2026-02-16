@@ -1,0 +1,55 @@
+name: charger
+title: check charger availbility
+version: 1.0.1
+description: Check EV charger availability (favorites, nearby search) via Google Places.
+metadata:
+  author: borahm
+  category: Search & Research
+  tags:
+  - search-research
+  - charger
+  source: clawhub-community
+  clawhub_slug: charger
+  clawhub_path: borahm/charger
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# check charger availbility
+
+    # Source: ClawHub community skill by borahm
+
+    # Install: clawhub install charger
+
+    # Path: borahm/charger
+
+
+    ## Description
+
+    Check EV charger availability (favorites, nearby search) via Google Places.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/charger-notify.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install charger
+
+    ```'
+examples:
+- description: Install check charger availbility from ClawHub
+  usage: clawhub install charger
+schema_version: '1.0'

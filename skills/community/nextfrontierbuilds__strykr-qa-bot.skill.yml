@@ -1,0 +1,72 @@
+name: strykr-qa-bot
+title: Strykr Qa Bot
+version: 0.1.2
+description: AI-powered QA for Strykr trading platform. Pre-built tests for crypto, stocks, news, AI chat. CI/CD ready. Works
+  with Cursor, Claude, ChatGPT, Copilot. Vibe-coding enabled.
+metadata:
+  author: nextfrontierbuilds
+  category: Communication
+  tags:
+  - communication
+  - strykr
+  - bot
+  source: clawhub-community
+  clawhub_slug: strykr-qa-bot
+  clawhub_path: nextfrontierbuilds/strykr-qa-bot
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Strykr Qa Bot
+
+    # Source: ClawHub community skill by nextfrontierbuilds
+
+    # Install: clawhub install strykr-qa-bot
+
+    # Path: nextfrontierbuilds/strykr-qa-bot
+
+
+    ## Description
+
+    AI-powered QA for Strykr trading platform. Pre-built tests for crypto, stocks, news, AI chat. CI/CD ready. Works with
+    Cursor, Claude, ChatGPT, Copilot. Vibe-coding enabled.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - strykr-qa.yaml
+
+    - tsconfig.json
+
+    - config/known-issues.yaml
+
+    - src/assertions.ts
+
+    - src/index.ts
+
+    - src/strykr-bot.ts
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install strykr-qa-bot
+
+    ```'
+examples:
+- description: Install Strykr Qa Bot from ClawHub
+  usage: clawhub install strykr-qa-bot
+schema_version: '1.0'

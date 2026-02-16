@@ -1,0 +1,65 @@
+name: blinko
+title: Blinko
+version: 1.1.1
+description: Play Blinko (on-chain Plinko) headlessly on Abstract chain. Use when an agent wants to play Blinko games, check
+  game stats, view leaderboards, or track honey rewards. Handles the full commit-reveal flow including API auth, on-chain
+  game creation, simulation, and settlement.
+metadata:
+  author: tolibear
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - blinko
+  source: clawhub-community
+  clawhub_slug: blinko
+  clawhub_path: tolibear/blinko
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Blinko
+
+    # Source: ClawHub community skill by tolibear
+
+    # Install: clawhub install blinko
+
+    # Path: tolibear/blinko
+
+
+    ## Description
+
+    Play Blinko (on-chain Plinko) headlessly on Abstract chain. Use when an agent wants to play Blinko games, check game stats,
+    view leaderboards, or track honey rewards. Handles the full commit-reveal flow including API auth, on-chain game creation,
+    simulation, and settlement.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - package.json
+
+    - scripts/commit-reveal-abi.json
+
+    - scripts/play-blinko.js
+
+    - scripts/stats.js
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install blinko
+
+    ```'
+examples:
+- description: Install Blinko from ClawHub
+  usage: clawhub install blinko
+schema_version: '1.0'

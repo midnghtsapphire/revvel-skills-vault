@@ -1,0 +1,60 @@
+name: switch-modes
+title: Switch Modes
+version: 1.0.1
+description: Switch between AI models dynamically to optimize costs and performance. Use when the user says mode commands
+  like "eco mode", "balanced mode", "smart mode", or "max mode", or when they want to check their current mode with "/modes
+  status" or configure modes with "/modes setup".
+metadata:
+  author: serudda
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - switch
+  - modes
+  source: clawhub-community
+  clawhub_slug: switch-modes
+  clawhub_path: serudda/switch-modes
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Switch Modes
+
+    # Source: ClawHub community skill by serudda
+
+    # Install: clawhub install switch-modes
+
+    # Path: serudda/switch-modes
+
+
+    ## Description
+
+    Switch between AI models dynamically to optimize costs and performance. Use when the user says mode commands like "eco
+    mode", "balanced mode", "smart mode", or "max mode", or when they want to check their current mode with "/modes status"
+    or configure modes with "/modes setup".
+
+
+    ## Files
+
+    - REFERENCE.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install switch-modes
+
+    ```'
+examples:
+- description: Install Switch Modes from ClawHub
+  usage: clawhub install switch-modes
+schema_version: '1.0'

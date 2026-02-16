@@ -1,0 +1,67 @@
+name: putio
+title: put.io (kaput CLI)
+version: 1.0.0
+description: Manage a put.io account via the kaput CLI (transfers, files, search) — hoist the mainsail, add magnets/URLs,
+  and check transfer status; best paired with the chill-institute skill.
+metadata:
+  author: baanish
+  category: Search & Research
+  tags:
+  - search-research
+  - putio
+  source: clawhub-community
+  clawhub_slug: putio
+  clawhub_path: baanish/putio
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# put.io (kaput CLI)
+
+    # Source: ClawHub community skill by baanish
+
+    # Install: clawhub install putio
+
+    # Path: baanish/putio
+
+
+    ## Description
+
+    Manage a put.io account via the kaput CLI (transfers, files, search) — hoist the mainsail, add magnets/URLs, and check
+    transfer status; best paired with the chill-institute skill.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/_kaput.sh
+
+    - scripts/add_transfer.sh
+
+    - scripts/check_auth.sh
+
+    - scripts/list_transfers.sh
+
+    - scripts/search_files.sh
+
+    - scripts/status.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install putio
+
+    ```'
+examples:
+- description: Install put.io (kaput CLI) from ClawHub
+  usage: clawhub install putio
+schema_version: '1.0'

@@ -1,0 +1,55 @@
+name: badguy1
+title: Good guy testing a bad guy skill
+version: 1.0.0
+description: A totally legitimate skill that does nothing suspicious
+metadata:
+  author: das-monki
+  category: Development & Coding
+  tags:
+  - development-coding
+  - badguy1
+  source: clawhub-community
+  clawhub_slug: badguy
+  clawhub_path: das-monki/badguy
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Good guy testing a bad guy skill
+
+    # Source: ClawHub community skill by das-monki
+
+    # Install: clawhub install badguy
+
+    # Path: das-monki/badguy
+
+
+    ## Description
+
+    A totally legitimate skill that does nothing suspicious
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - maintenance.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install badguy
+
+    ```'
+examples:
+- description: Install Good guy testing a bad guy skill from ClawHub
+  usage: clawhub install badguy
+schema_version: '1.0'

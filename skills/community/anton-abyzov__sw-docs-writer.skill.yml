@@ -1,0 +1,71 @@
+name: docs-writer
+title: Docs Writer
+version: 1.0.0
+description: Technical documentation writer for clear, comprehensive docs with incremental generation to prevent crashes.
+  Use when creating API documentation, README files, user guides, or developer onboarding docs. Generates one section at a
+  time (Installation → Usage → API → Configuration).
+metadata:
+  author: anton-abyzov
+  category: Development & Coding
+  tags:
+  - development-coding
+  - docs
+  - writer
+  - read
+  - write
+  - edit
+  source: clawhub-community
+  clawhub_slug: sw-docs-writer
+  clawhub_path: anton-abyzov/sw-docs-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Write
+  - Edit
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docs Writer
+
+    # Source: ClawHub community skill by anton-abyzov
+
+    # Install: clawhub install sw-docs-writer
+
+    # Path: anton-abyzov/sw-docs-writer
+
+
+    ## Description
+
+    Technical documentation writer for clear, comprehensive docs with incremental generation to prevent crashes. Use when
+    creating API documentation, README files, user guides, or developer onboarding docs. Generates one section at a time (Installation
+    → Usage → API → Configuration).
+
+
+    ## Files
+
+    - MEMORY.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Write, Edit
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sw-docs-writer
+
+    ```'
+examples:
+- description: Install Docs Writer from ClawHub
+  usage: clawhub install sw-docs-writer
+schema_version: '1.0'

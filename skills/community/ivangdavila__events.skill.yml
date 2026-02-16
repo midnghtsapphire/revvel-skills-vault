@@ -1,0 +1,53 @@
+name: events
+title: Events
+version: 1.0.0
+description: Build a personal event system for tracking concerts, conferences, parties, appointments, and everything in between.
+metadata:
+  author: ivangdavila
+  category: System & OS
+  tags:
+  - system-os
+  - events
+  source: clawhub-community
+  clawhub_slug: events
+  clawhub_path: ivangdavila/events
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Events
+
+    # Source: ClawHub community skill by ivangdavila
+
+    # Install: clawhub install events
+
+    # Path: ivangdavila/events
+
+
+    ## Description
+
+    Build a personal event system for tracking concerts, conferences, parties, appointments, and everything in between.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install events
+
+    ```'
+examples:
+- description: Install Events from ClawHub
+  usage: clawhub install events
+schema_version: '1.0'

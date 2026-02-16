@@ -1,0 +1,76 @@
+name: seo-content-factory
+title: SEO Content Factory
+version: 1.0.0
+description: Generate fully SEO-optimized blog posts and articles with keyword research, competitor analysis, and SERP-aware
+  content. Use when creating SEO content, blog posts, articles, or content for clients.
+metadata:
+  author: seanwyngaard
+  category: Search & Research
+  tags:
+  - search-research
+  - seo
+  - content
+  - factory
+  - read
+  - write
+  - grep
+  - glob
+  - bash
+  - webfetch
+  - websearch
+  source: clawhub-community
+  clawhub_slug: seo-content-factory
+  clawhub_path: seanwyngaard/seo-content-factory
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools:
+  - Read
+  - Write
+  - Grep
+  - Glob
+  - Bash
+  - WebFetch
+  - WebSearch
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# SEO Content Factory
+
+    # Source: ClawHub community skill by seanwyngaard
+
+    # Install: clawhub install seo-content-factory
+
+    # Path: seanwyngaard/seo-content-factory
+
+
+    ## Description
+
+    Generate fully SEO-optimized blog posts and articles with keyword research, competitor analysis, and SERP-aware content.
+    Use when creating SEO content, blog posts, articles, or content for clients.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Allowed Tools
+
+    Read, Write, Grep, Glob, Bash, WebFetch, WebSearch
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install seo-content-factory
+
+    ```'
+examples:
+- description: Install SEO Content Factory from ClawHub
+  usage: clawhub install seo-content-factory
+schema_version: '1.0'

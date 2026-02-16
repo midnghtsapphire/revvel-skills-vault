@@ -1,0 +1,57 @@
+name: tinyfish
+title: TinyFish Web Agent
+version: 1.0.2
+description: Use TinyFish web agent to extract/scrape websites, extract data, and automate browser actions using natural language.
+  Use when you need to extract/scrape data from websites, handle bot-protected sites, or automate web tasks.
+metadata:
+  author: simantak-dabhade
+  category: Search & Research
+  tags:
+  - search-research
+  - tinyfish
+  source: clawhub-community
+  clawhub_slug: tinyfish-web-agent
+  clawhub_path: simantak-dabhade/tinyfish-web-agent
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# TinyFish Web Agent
+
+    # Source: ClawHub community skill by simantak-dabhade
+
+    # Install: clawhub install tinyfish-web-agent
+
+    # Path: simantak-dabhade/tinyfish-web-agent
+
+
+    ## Description
+
+    Use TinyFish web agent to extract/scrape websites, extract data, and automate browser actions using natural language.
+    Use when you need to extract/scrape data from websites, handle bot-protected sites, or automate web tasks.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/extract.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install tinyfish-web-agent
+
+    ```'
+examples:
+- description: Install TinyFish Web Agent from ClawHub
+  usage: clawhub install tinyfish-web-agent
+schema_version: '1.0'

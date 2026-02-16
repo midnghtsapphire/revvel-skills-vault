@@ -1,0 +1,74 @@
+name: linux-patcher
+title: Linux Patcher
+version: 3.0.2
+description: Automated Linux server patching and Docker container updates. Use when the user asks to update, patch, or upgrade
+  Linux servers, apply security updates, update Docker containers, check for system updates, or manage server maintenance
+  across multiple hosts. Supports Ubuntu, Debian, RHEL, AlmaLinux, R
+metadata:
+  author: jgm2025
+  category: Security & Privacy
+  tags:
+  - security-privacy
+  - linux
+  - patcher
+  source: clawhub-community
+  clawhub_slug: linux-patcher
+  clawhub_path: jgm2025/linux-patcher
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Linux Patcher
+
+    # Source: ClawHub community skill by jgm2025
+
+    # Install: clawhub install linux-patcher
+
+    # Path: jgm2025/linux-patcher
+
+
+    ## Description
+
+    Automated Linux server patching and Docker container updates. Use when the user asks to update, patch, or upgrade Linux
+    servers, apply security updates, update Docker containers, check for system updates, or manage server maintenance across
+    multiple hosts. Supports Ubuntu, Debian, RHEL, AlmaLinux, R
+
+
+    ## Files
+
+    - CONTRIBUTING.md
+
+    - README.md
+
+    - SETUP.md
+
+    - SKILL.md
+
+    - WORKFLOWS.md
+
+    - _meta.json
+
+    - references/patchmon-setup.md
+
+    - scripts/detect-os.sh
+
+    - scripts/patch-auto.sh
+
+    - scripts/patch-host-full.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install linux-patcher
+
+    ```'
+examples:
+- description: Install Linux Patcher from ClawHub
+  usage: clawhub install linux-patcher
+schema_version: '1.0'

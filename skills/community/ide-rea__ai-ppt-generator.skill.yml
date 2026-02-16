@@ -1,0 +1,60 @@
+name: ai-ppt-generator
+title: PPT generator
+version: 1.1.0
+description: The awesome PPT format generation tool provided by baidu.
+metadata:
+  author: ide-rea
+  category: AI & Machine Learning
+  tags:
+  - ai-machine-learning
+  - ppt
+  - generator
+  source: clawhub-community
+  clawhub_slug: ai-ppt-generator
+  clawhub_path: ide-rea/ai-ppt-generator
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# PPT generator
+
+    # Source: ClawHub community skill by ide-rea
+
+    # Install: clawhub install ai-ppt-generator
+
+    # Path: ide-rea/ai-ppt-generator
+
+
+    ## Description
+
+    The awesome PPT format generation tool provided by baidu.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - debug_test.py
+
+    - fix_script.py
+
+    - scripts/generate_ppt.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install ai-ppt-generator
+
+    ```'
+examples:
+- description: Install PPT generator from ClawHub
+  usage: clawhub install ai-ppt-generator
+schema_version: '1.0'

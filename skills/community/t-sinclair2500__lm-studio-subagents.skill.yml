@@ -1,0 +1,68 @@
+name: lmstudio-subagents
+title: Offload Tasks to LM Studio Models
+version: 1.0.3
+description: '"Reduces token usage from paid providers by offloading work to local LM Studio models. Use when: (1) Cutting
+  costs—use local models for summarization, extraction, classification, rewriting, first-pass review, brainstorming when quality
+  suffices, (2) Avoiding paid API calls for high-volume or repetit'
+metadata:
+  author: t-sinclair2500
+  category: Development & Coding
+  tags:
+  - development-coding
+  - lmstudio
+  - subagents
+  source: clawhub-community
+  clawhub_slug: lm-studio-subagents
+  clawhub_path: t-sinclair2500/lm-studio-subagents
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Offload Tasks to LM Studio Models
+
+    # Source: ClawHub community skill by t-sinclair2500
+
+    # Install: clawhub install lm-studio-subagents
+
+    # Path: t-sinclair2500/lm-studio-subagents
+
+
+    ## Description
+
+    "Reduces token usage from paid providers by offloading work to local LM Studio models. Use when: (1) Cutting costs—use
+    local models for summarization, extraction, classification, rewriting, first-pass review, brainstorming when quality suffices,
+    (2) Avoiding paid API calls for high-volume or repetit
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/lmstudio-api.mjs
+
+    - scripts/load.mjs
+
+    - scripts/test.mjs
+
+    - scripts/unload.mjs
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lm-studio-subagents
+
+    ```'
+examples:
+- description: Install Offload Tasks to LM Studio Models from ClawHub
+  usage: clawhub install lm-studio-subagents
+schema_version: '1.0'

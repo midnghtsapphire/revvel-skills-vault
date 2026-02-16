@@ -1,0 +1,70 @@
+name: korail-manager
+title: Korail Manager
+version: 1.1.4
+description: '"Cancel SRT reservations. If --date is specified, only cancels reservations on that date."'
+metadata:
+  author: lonehades
+  category: General
+  tags:
+  - general
+  - korail
+  - manager
+  source: clawhub-community
+  clawhub_slug: korail-manager
+  clawhub_path: lonehades/korail-manager
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Korail Manager
+
+    # Source: ClawHub community skill by lonehades
+
+    # Install: clawhub install korail-manager
+
+    # Path: lonehades/korail-manager
+
+
+    ## Description
+
+    "Cancel SRT reservations. If --date is specified, only cancels reservations on that date."
+
+
+    ## Files
+
+    - README.md
+
+    - README_en.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - lib/SRT/CHANGELOG.md
+
+    - lib/SRT/README.md
+
+    - lib/SRT/__init__.py
+
+    - lib/SRT/constants.py
+
+    - lib/SRT/errors.py
+
+    - lib/SRT/netfunnel.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install korail-manager
+
+    ```'
+examples:
+- description: Install Korail Manager from ClawHub
+  usage: clawhub install korail-manager
+schema_version: '1.0'

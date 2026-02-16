@@ -1,0 +1,72 @@
+name: apple-notes
+title: Apple Notes Extractor
+version: 1.0.0
+description: Extract and monitor Apple Notes content for workflow integration. Supports bulk extraction, real-time monitoring,
+  and export to various formats.
+metadata:
+  author: ianderrington
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - apple
+  - notes
+  source: clawhub-community
+  clawhub_slug: apple-notes-extractor
+  clawhub_path: ianderrington/apple-notes-extractor
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Apple Notes Extractor
+
+    # Source: ClawHub community skill by ianderrington
+
+    # Install: clawhub install apple-notes-extractor
+
+    # Path: ianderrington/apple-notes-extractor
+
+
+    ## Description
+
+    Extract and monitor Apple Notes content for workflow integration. Supports bulk extraction, real-time monitoring, and
+    export to various formats.
+
+
+    ## Files
+
+    - AUTOMATION_INTEGRATION.md
+
+    - INTEGRATION.md
+
+    - INTEGRATION_CHECKLIST.md
+
+    - README.md
+
+    - SKILL.md
+
+    - USAGE.md
+
+    - _meta.json
+
+    - configs/extractor.json
+
+    - configs/monitor.json
+
+    - configs/workflows.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install apple-notes-extractor
+
+    ```'
+examples:
+- description: Install Apple Notes Extractor from ClawHub
+  usage: clawhub install apple-notes-extractor
+schema_version: '1.0'

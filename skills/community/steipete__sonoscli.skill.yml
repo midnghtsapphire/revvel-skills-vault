@@ -1,0 +1,53 @@
+name: sonoscli
+title: Sonoscli
+version: 1.0.0
+description: Control Sonos speakers (discover/status/play/volume/group).
+metadata:
+  author: steipete
+  category: Gaming & Entertainment
+  tags:
+  - gaming-entertainment
+  - sonoscli
+  source: clawhub-community
+  clawhub_slug: sonoscli
+  clawhub_path: steipete/sonoscli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Sonoscli
+
+    # Source: ClawHub community skill by steipete
+
+    # Install: clawhub install sonoscli
+
+    # Path: steipete/sonoscli
+
+
+    ## Description
+
+    Control Sonos speakers (discover/status/play/volume/group).
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install sonoscli
+
+    ```'
+examples:
+- description: Install Sonoscli from ClawHub
+  usage: clawhub install sonoscli
+schema_version: '1.0'

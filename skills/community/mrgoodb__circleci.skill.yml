@@ -1,0 +1,53 @@
+name: circleci
+title: Circleci
+version: 1.0.0
+description: Manage CircleCI pipelines, jobs, and workflows via API. Trigger and monitor builds.
+metadata:
+  author: mrgoodb
+  category: Development & Coding
+  tags:
+  - development-coding
+  - circleci
+  source: clawhub-community
+  clawhub_slug: circleci
+  clawhub_path: mrgoodb/circleci
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Circleci
+
+    # Source: ClawHub community skill by mrgoodb
+
+    # Install: clawhub install circleci
+
+    # Path: mrgoodb/circleci
+
+
+    ## Description
+
+    Manage CircleCI pipelines, jobs, and workflows via API. Trigger and monitor builds.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install circleci
+
+    ```'
+examples:
+- description: Install Circleci from ClawHub
+  usage: clawhub install circleci
+schema_version: '1.0'

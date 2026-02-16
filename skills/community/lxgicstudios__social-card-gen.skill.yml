@@ -1,0 +1,54 @@
+name: social-gen
+title: Social Card Generator
+version: 1.0.2
+description: Generate social media posts for different platforms. Use when sharing content.
+metadata:
+  author: lxgicstudios
+  category: Media & Content
+  tags:
+  - media-content
+  - social
+  - gen
+  source: clawhub-community
+  clawhub_slug: social-card-gen
+  clawhub_path: lxgicstudios/social-card-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Social Card Generator
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install social-card-gen
+
+    # Path: lxgicstudios/social-card-gen
+
+
+    ## Description
+
+    Generate social media posts for different platforms. Use when sharing content.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install social-card-gen
+
+    ```'
+examples:
+- description: Install Social Card Generator from ClawHub
+  usage: clawhub install social-card-gen
+schema_version: '1.0'

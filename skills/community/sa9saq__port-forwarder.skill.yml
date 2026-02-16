@@ -1,0 +1,56 @@
+name: port-forwarder
+title: Port Forwarder
+version: 1.1.0
+description: Set up and manage SSH tunnels, port forwarding, and SOCKS proxies with simple commands.
+metadata:
+  author: sa9saq
+  category: General
+  tags:
+  - general
+  - port
+  - forwarder
+  source: clawhub-community
+  clawhub_slug: port-forwarder
+  clawhub_path: sa9saq/port-forwarder
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Port Forwarder
+
+    # Source: ClawHub community skill by sa9saq
+
+    # Install: clawhub install port-forwarder
+
+    # Path: sa9saq/port-forwarder
+
+
+    ## Description
+
+    Set up and manage SSH tunnels, port forwarding, and SOCKS proxies with simple commands.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install port-forwarder
+
+    ```'
+examples:
+- description: Install Port Forwarder from ClawHub
+  usage: clawhub install port-forwarder
+schema_version: '1.0'

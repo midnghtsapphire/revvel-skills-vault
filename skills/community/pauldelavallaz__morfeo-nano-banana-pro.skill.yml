@@ -1,0 +1,61 @@
+name: nano-banana-pro
+title: Nano Banana Pro (Morfeo)
+version: 1.0.0
+description: Generate and edit images using Google's Nano Banana Pro (Gemini 3 Pro Image) API. Use when the user asks to generate,
+  create, edit, modify, change, alter, or update images. Also use when user references an existing image file and asks to
+  modify it in any way (e.g., "modify this image", "change the b
+metadata:
+  author: pauldelavallaz
+  category: Search & Research
+  tags:
+  - search-research
+  - nano
+  - banana
+  - pro
+  source: clawhub-community
+  clawhub_slug: morfeo-nano-banana-pro
+  clawhub_path: pauldelavallaz/morfeo-nano-banana-pro
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Nano Banana Pro (Morfeo)
+
+    # Source: ClawHub community skill by pauldelavallaz
+
+    # Install: clawhub install morfeo-nano-banana-pro
+
+    # Path: pauldelavallaz/morfeo-nano-banana-pro
+
+
+    ## Description
+
+    Generate and edit images using Google''s Nano Banana Pro (Gemini 3 Pro Image) API. Use when the user asks to generate,
+    create, edit, modify, change, alter, or update images. Also use when user references an existing image file and asks to
+    modify it in any way (e.g., "modify this image", "change the b
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - scripts/generate_image.py
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install morfeo-nano-banana-pro
+
+    ```'
+examples:
+- description: Install Nano Banana Pro (Morfeo) from ClawHub
+  usage: clawhub install morfeo-nano-banana-pro
+schema_version: '1.0'

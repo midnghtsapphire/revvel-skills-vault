@@ -1,0 +1,56 @@
+name: docker-writer
+title: Docker Writer
+version: 1.0.0
+description: Scan your project and generate an optimized Dockerfile. Use when you need to containerize fast.
+metadata:
+  author: lxgicstudios
+  category: Development & Coding
+  tags:
+  - development-coding
+  - docker
+  - writer
+  source: clawhub-community
+  clawhub_slug: docker-writer
+  clawhub_path: lxgicstudios/docker-writer
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# Docker Writer
+
+    # Source: ClawHub community skill by lxgicstudios
+
+    # Install: clawhub install docker-writer
+
+    # Path: lxgicstudios/docker-writer
+
+
+    ## Description
+
+    Scan your project and generate an optimized Dockerfile. Use when you need to containerize fast.
+
+
+    ## Files
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install docker-writer
+
+    ```'
+examples:
+- description: Install Docker Writer from ClawHub
+  usage: clawhub install docker-writer
+schema_version: '1.0'

@@ -1,0 +1,72 @@
+name: openclaw-gen
+title: OpenClaw Template Generator
+version: 0.1.2
+description: OpenClaw Agent tool that generates OpenClaw project configurations (AGENTS.md, workflows, MEMORY.md) using OpenClaw's
+  unified llm-task interface. 15 built-in templates.
+metadata:
+  author: truongvknnlthao-gif
+  category: Automation & Productivity
+  tags:
+  - automation-productivity
+  - openclaw
+  - gen
+  source: clawhub-community
+  clawhub_slug: openclaw-gen
+  clawhub_path: truongvknnlthao-gif/openclaw-gen
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# OpenClaw Template Generator
+
+    # Source: ClawHub community skill by truongvknnlthao-gif
+
+    # Install: clawhub install openclaw-gen
+
+    # Path: truongvknnlthao-gif/openclaw-gen
+
+
+    ## Description
+
+    OpenClaw Agent tool that generates OpenClaw project configurations (AGENTS.md, workflows, MEMORY.md) using OpenClaw''s
+    unified llm-task interface. 15 built-in templates.
+
+
+    ## Files
+
+    - AGENT.md
+
+    - README.md
+
+    - SKILL.md
+
+    - _meta.json
+
+    - templates/content-creator/AGENTS.md
+
+    - templates/content-creator/MEMORY.md
+
+    - templates/content-creator/README.md
+
+    - templates/content-creator/template.json
+
+    - templates/content-creator/skills/README.md
+
+    - templates/content-creator/workflows/article-writing.yaml
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install openclaw-gen
+
+    ```'
+examples:
+- description: Install OpenClaw Template Generator from ClawHub
+  usage: clawhub install openclaw-gen
+schema_version: '1.0'

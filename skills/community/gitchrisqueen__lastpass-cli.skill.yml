@@ -1,0 +1,56 @@
+name: lastpass-cli
+title: LastPass CLI Skill
+version: 0.1.0
+description: Securely fetch credentials from LastPass vault via lpass CLI.
+metadata:
+  author: gitchrisqueen
+  category: General
+  tags:
+  - general
+  - lastpass
+  - cli
+  source: clawhub-community
+  clawhub_slug: lastpass-cli
+  clawhub_path: gitchrisqueen/lastpass-cli
+  user_invocable: true
+  created_at: '2026-02-16'
+  updated_at: '2026-02-16'
+dependencies:
+  tools: []
+implementation:
+  type: markdown_prompt
+  language: markdown
+  content: '# LastPass CLI Skill
+
+    # Source: ClawHub community skill by gitchrisqueen
+
+    # Install: clawhub install lastpass-cli
+
+    # Path: gitchrisqueen/lastpass-cli
+
+
+    ## Description
+
+    Securely fetch credentials from LastPass vault via lpass CLI.
+
+
+    ## Files
+
+    - SKILL.md
+
+    - _meta.json
+
+    - tools/lastpass.sh
+
+
+    ## Installation
+
+    ```bash
+
+    clawhub install lastpass-cli
+
+    ```'
+examples:
+- description: Install LastPass CLI Skill from ClawHub
+  usage: clawhub install lastpass-cli
+schema_version: '1.0'
