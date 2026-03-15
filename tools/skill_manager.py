@@ -8,7 +8,9 @@ import os
 import yaml
 import json
 import argparse
+import shutil
 import sys
+import zipfile
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 
@@ -92,6 +94,58 @@ class SkillManager:
                     return skill.get("implementation", {}).get("content")
         return None
 
+    def download_skills(
+        self,
+        output: str,
+        name: str = None,
+        query: str = None,
+        category: str = None,
+        tag: str = None,
+        as_zip: bool = False,
+    ) -> int:
+        """Copy matching skill files to *output* (directory) or a ZIP archive.
+
+        Returns the number of files downloaded.
+        """
+        # Collect matching file paths
+        if name:
+            # Partial name match across all categories
+            matched_paths: List[Path] = []
+            for c in self.categories:
+                pattern = f"*{name}*.skill.yml"
+                matched_paths.extend((self.skills_path / c).glob(pattern))
+        else:
+            # Use search_skills to filter, then resolve paths
+            results = self.search_skills(query=query, category=category, tag=tag)
+            matched_paths = [Path(r["path"]) for r in results]
+
+        if not matched_paths:
+            print("No skills matched the given criteria.")
+            return 0
+
+        output_path = Path(output)
+
+        if as_zip:
+            zip_path = output_path if output_path.suffix == ".zip" else output_path.with_suffix(".zip")
+            zip_path.parent.mkdir(parents=True, exist_ok=True)
+            with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+                for src in matched_paths:
+                    # Preserve category subdirectory to avoid name collisions
+                    arcname = f"{src.parent.name}/{src.name}"
+                    zf.write(src, arcname)
+            print(f"Downloaded {len(matched_paths)} skill(s) to {zip_path}")
+        else:
+            output_path.mkdir(parents=True, exist_ok=True)
+            for src in matched_paths:
+                # Preserve category subdirectory to avoid name collisions
+                category_dir = output_path / src.parent.name
+                category_dir.mkdir(exist_ok=True)
+                dest = category_dir / src.name
+                shutil.copy2(src, dest)
+            print(f"Downloaded {len(matched_paths)} skill(s) to {output_path}/")
+
+        return len(matched_paths)
+
 def main():
     parser = argparse.ArgumentParser(description="Revvel Skill Manager CLI")
     subparsers = parser.add_subparsers(dest="command", help="Commands")
@@ -109,6 +163,15 @@ def main():
     # Validate command
     validate_parser = subparsers.add_parser("validate", help="Validate a skill file")
     validate_parser.add_argument("path", help="Path to .skill file")
+
+    # Download command
+    download_parser = subparsers.add_parser("download", help="Download skill files to a local directory or ZIP archive")
+    download_parser.add_argument("output", help="Destination directory or ZIP file path (use --zip for archive)")
+    download_parser.add_argument("--name", help="Download skill(s) whose filename contains this string (partial match)")
+    download_parser.add_argument("--query", help="Filter by search query")
+    download_parser.add_argument("--category", help="Filter by category")
+    download_parser.add_argument("--tag", help="Filter by tag")
+    download_parser.add_argument("--zip", dest="as_zip", action="store_true", help="Package downloaded skills into a ZIP archive; output path will use .zip extension")
 
     args = parser.parse_args()
     
@@ -143,6 +206,16 @@ def main():
                 print("Skill is valid.")
         else:
             print("Could not load file.")
+
+    elif args.command == "download":
+        manager.download_skills(
+            output=args.output,
+            name=args.name,
+            query=args.query,
+            category=args.category,
+            tag=args.tag,
+            as_zip=args.as_zip,
+        )
 
     else:
         parser.print_help()
