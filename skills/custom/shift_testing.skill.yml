@@ -1,0 +1,197 @@
+name: shift_testing
+title: S.H.I.F.T. — AI Agent Behavioral Testing Framework
+version: 1.0.0
+description: >
+  The S.H.I.F.T. (Self-Healing Intent-Focused Tasks) framework for testing autonomous AI agents.
+  Provides the Wizard of Oz prompt engineering method, the Self-Healing Evaluator scoring pattern,
+  and the 5 Dimensions of Agent Quality. Use when building, testing, or debugging any AI agent.
+metadata:
+  author: Revvel AI Engine
+  category: AI Testing & Quality
+  tags:
+    - agent-testing
+    - behavioral-validation
+    - wizard-of-oz
+    - self-healing
+    - evaluator-pattern
+    - prompt-engineering
+    - shift
+    - ai-quality
+    - osint
+    - growlingeyes
+  source: revvel-custom
+  created_at: '2026-04-01'
+  updated_at: '2026-04-01'
+dependencies:
+  pip_packages: []
+implementation:
+  type: python_code
+  language: python
+  content: |
+    """
+    S.H.I.F.T. — Self-Healing Intent-Focused Tasks
+    AI Agent Behavioral Testing Framework
+    Revvel AI Engine — v1.0.0
+    """
+
+    SKILL_METADATA = {
+        "name": "S.H.I.F.T. AI Agent Behavioral Testing Framework",
+        "id": "shift_testing",
+        "version": "1.0.0",
+        "author": "Revvel AI Engine",
+        "description": "Behavioral testing framework for autonomous AI agents using WoZ prompt engineering and self-healing evaluator scoring.",
+        "capabilities": [
+            "behavioral_validation", "wizard_of_oz_prompting", "evaluator_scoring",
+            "self_healing_loop", "agent_quality_dimensions", "dare_logging",
+            "playwright_e2e_testing", "persona_guardrails", "retry_critique"
+        ],
+        "domain": "ai_testing"
+    }
+
+    # ─────────────────────────────────────────────
+    # 5 DIMENSIONS OF AGENT QUALITY
+    # ─────────────────────────────────────────────
+    FIVE_DIMENSIONS = {
+        "memory": "Does the agent retain context from previous turns without hallucinating prior state?",
+        "reflection": "Can the agent recognize when it is failing or when instructions conflict?",
+        "planning": "Are the agent's proposed steps logically sequenced and feasible?",
+        "action": "Do the agent's tool calls and outputs match the exact requested format and intent?",
+        "system_reliability": "Does the agent handle API timeouts or missing data gracefully without hallucinating?"
+    }
+
+    # ─────────────────────────────────────────────
+    # EVALUATOR SCORING RUBRIC
+    # ─────────────────────────────────────────────
+    EVALUATOR_RUBRIC = {
+        5: "Perfect — output exactly matches intent, all constraints followed, no hallucinations.",
+        4: "Passable — output matches intent, minor formatting issues that do not break downstream processes.",
+        3: "Failed (Minor) — output missed a secondary constraint (e.g., tone is wrong, or one optional step was skipped).",
+        2: "Failed (Major) — output missed a primary constraint or hallucinated minor data.",
+        1: "Critical Failure — output is completely wrong, hallucinated critical data, or failed to execute the core intent."
+    }
+
+    PASSING_THRESHOLD = 4  # Scores below this trigger a retry with critique
+
+    # ─────────────────────────────────────────────
+    # WIZARD OF OZ SYSTEM PROMPT TEMPLATE
+    # ─────────────────────────────────────────────
+    WOZ_SYSTEM_PROMPT_TEMPLATE = """
+    You are {agent_persona}.
+
+    <behavior>
+    {behavior_description}
+    </behavior>
+
+    <examples>
+    {few_shot_examples}
+    </examples>
+
+    <guardrails>
+    - Always use a <thought> block before taking any action.
+    - Never assume missing information. Ask for clarification.
+    - If you cannot complete a task, explain why in plain language.
+    - Never hallucinate data, tool responses, or user context.
+    </guardrails>
+    """
+
+    # ─────────────────────────────────────────────
+    # EVALUATOR AGENT PROMPT TEMPLATE
+    # ─────────────────────────────────────────────
+    EVALUATOR_PROMPT_TEMPLATE = """
+    You are a strict quality evaluator for an AI agent. You will be given:
+    1. The original user request
+    2. The agent's response
+
+    Score the response using this rubric:
+    5 = Perfect. Intent matched, all constraints followed, no hallucinations.
+    4 = Passable. Intent matched, minor formatting issues only.
+    3 = Failed (Minor). Missed a secondary constraint.
+    2 = Failed (Major). Missed a primary constraint or minor hallucination.
+    1 = Critical Failure. Wrong output, hallucinated data, or core intent missed.
+
+    Respond ONLY in this JSON format:
+    {{
+      "score": <1-5>,
+      "critique": "<specific, actionable description of what failed and exactly what to fix on retry>"
+    }}
+
+    User Request: {user_request}
+    Agent Response: {agent_response}
+    """
+
+    # ─────────────────────────────────────────────
+    # DARE LOG ENTRY TEMPLATE
+    # ─────────────────────────────────────────────
+    DARE_LOG_TEMPLATE = {
+        "define": "What was the agent asked to do?",
+        "assess": "What did the agent actually do? What score did it receive?",
+        "respond": "What critique was given? What retry was triggered?",
+        "evaluate": "Did the retry succeed? What pattern caused the failure?"
+    }
+
+    # ─────────────────────────────────────────────
+    # HELPER: Build WoZ System Prompt
+    # ─────────────────────────────────────────────
+    def build_woz_system_prompt(agent_persona: str, behavior_description: str, few_shot_examples: list) -> str:
+        """
+        Build a system prompt using the Wizard of Oz method.
+        few_shot_examples: list of dicts with 'user' and 'agent' keys
+        """
+        formatted_examples = ""
+        for i, ex in enumerate(few_shot_examples, 1):
+            formatted_examples += f"""
+    <example_{i}>
+    <user>{ex['user']}</user>
+    <agent>
+    <thought>{ex.get('thought', 'Reasoning not provided.')}</thought>
+    {ex['agent']}
+    </agent>
+    </example_{i}>
+    """
+        return WOZ_SYSTEM_PROMPT_TEMPLATE.format(
+            agent_persona=agent_persona,
+            behavior_description=behavior_description,
+            few_shot_examples=formatted_examples.strip()
+        )
+
+    # ─────────────────────────────────────────────
+    # HELPER: Build Evaluator Prompt
+    # ─────────────────────────────────────────────
+    def build_evaluator_prompt(user_request: str, agent_response: str) -> str:
+        """Build the evaluator prompt for scoring an agent's response."""
+        return EVALUATOR_PROMPT_TEMPLATE.format(
+            user_request=user_request,
+            agent_response=agent_response
+        )
+
+    # ─────────────────────────────────────────────
+    # HELPER: Evaluate Agent Quality Dimensions
+    # ─────────────────────────────────────────────
+    def evaluate_dimensions(agent_output: dict) -> dict:
+        """
+        Evaluate an agent's output against the 5 dimensions.
+        agent_output: dict with keys matching FIVE_DIMENSIONS
+        Returns a pass/fail dict per dimension.
+        """
+        results = {}
+        for dim, description in FIVE_DIMENSIONS.items():
+            results[dim] = {
+                "description": description,
+                "status": agent_output.get(dim, "NOT_EVALUATED"),
+                "passed": agent_output.get(dim) == "PASS"
+            }
+        return results
+
+    # ─────────────────────────────────────────────
+    # HELPER: Log DARE Entry
+    # ─────────────────────────────────────────────
+    def log_dare_entry(define: str, assess: str, respond: str, evaluate: str) -> dict:
+        """Create a structured DARE log entry for an agent failure."""
+        from datetime import datetime
+        return {
+            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "define": define,
+            "assess": assess,
+            "respond": respond,
+            "evaluate": evaluate
+        }
