@@ -1,0 +1,238 @@
+name: marketing_intelligence_report
+title: Marketing Intelligence Report Generator
+version: 1.1.0
+description: >
+  Generates daily structured Marketing Intelligence Reports for Tech and Politics trends by fetching
+  live data from Google Trends RSS, Wikimedia Pageview API, and Hacker News Firebase API. Classifies
+  items by category, scores signal strength via cross-source convergence analysis, and inserts the
+  report into a MySQL database. Supports on-demand generation and fully automated daily scheduling
+  via cron. Use for: OSINT platforms, marketing trend analysis, automated intelligence reporting,
+  competitive intelligence, and daily briefing automation.
+metadata:
+  author: GlowStarLabs / midnghtsapphire
+  category: Marketing & Intelligence
+  tags:
+    - marketing
+    - intelligence
+    - trends
+    - osint
+    - automation
+    - reporting
+    - google-trends
+    - wikipedia
+    - hacker-news
+    - database
+    - cron
+    - growlingeyes
+  source: revvel-custom
+  created_at: "2026-04-03"
+  updated_at: "2026-04-03"
+  platform: GrowlingEyes OSINT Platform
+  production_url: https://growlingeyes.com/marketing
+
+dependencies:
+  pip_packages:
+    - requests
+    - mysql-connector-python
+    - beautifulsoup4
+    - lxml
+
+data_sources:
+  google_trends:
+    url: "https://trends.google.com/trending/rss?geo=US"
+    format: XML
+    notes: "Parse <title> and <ht:approx_traffic> tags. No auth required."
+  wikipedia:
+    url: "https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{YYYY}/{MM}/{DD}"
+    format: JSON
+    notes: "CRITICAL: Always use yesterday's date — API publishes with 1-day lag."
+  hacker_news:
+    url: "https://hacker-news.firebaseio.com/v0/topstories.json"
+    format: JSON
+    notes: "Fetch top 30 IDs, then GET each item at /v0/item/{id}.json. No auth required."
+  reddit:
+    status: BLOCKED
+    notes: "Reddit blocks server IPs. Use Hacker News instead."
+
+categories:
+  tech:
+    - ai
+    - artificial intelligence
+    - machine learning
+    - software
+    - hardware
+    - apple
+    - google
+    - microsoft
+    - openai
+    - anthropic
+    - nasa
+    - space
+    - cyber
+    - hack
+    - robot
+    - chip
+    - cloud
+    - quantum
+    - satellite
+    - rocket
+    - artemis
+    - llm
+    - gpu
+    - data center
+  politics:
+    - trump
+    - biden
+    - congress
+    - senate
+    - election
+    - democrat
+    - republican
+    - president
+    - governor
+    - iran
+    - russia
+    - china
+    - nato
+    - war
+    - doj
+    - fbi
+    - cia
+    - indicted
+    - arrested
+    - tariff
+    - sanction
+  health:
+    - cancer
+    - vaccine
+    - covid
+    - flu
+    - drug
+    - fda
+    - hospital
+    - disease
+    - virus
+  finance:
+    - stock
+    - market
+    - crypto
+    - bitcoin
+    - fed
+    - inflation
+    - gdp
+    - economy
+    - bank
+  entertainment:
+    - movie
+    - film
+    - music
+    - album
+    - award
+    - oscar
+    - grammy
+    - nfl
+    - nba
+    - mlb
+  animals:
+    - dog
+    - cat
+    - whale
+    - shark
+    - bear
+    - wolf
+    - bird
+    - snake
+    - spider
+    - elephant
+    - lion
+    - tiger
+    - endangered
+
+signal_scoring:
+  cross_source_convergence:
+    two_sources: +3
+    three_sources: +5
+  google_trends_traffic:
+    above_500k: +3
+    above_100k: +1
+  wikipedia_rank:
+    top_10: +3
+    top_30: +2
+    top_60: +1
+  hacker_news_engagement:
+    score_above_200: +2
+    comments_above_100: +1
+
+database_schema:
+  table: reports
+  required_columns:
+    - title: VARCHAR
+    - content: TEXT or LONGTEXT
+    - report_type: VARCHAR (use "pattern_analysis")
+    - domains: JSON (use ["marketing", "tech", "politics"])
+    - author_id: INT FK to users (use 1 for automated reports)
+    - created_at: TIMESTAMP
+
+cron_schedule:
+  time: "5 6 * * *"
+  timezone: UTC
+  notes: "Offset to 06:05 to avoid collision with other 06:00 cron jobs"
+  command: "DATABASE_URL='mysql://user:pass@localhost:3306/dbname' python3 /opt/app/daily_report.py >> /var/log/app/daily_report.log 2>&1"
+  warning: "Do NOT use 'source .env' in cron — special characters break. Pass DATABASE_URL as inline env var."
+
+pitfalls:
+  - issue: "AbortSignal.timeout() reused across requests in TypeScript"
+    solution: "Make FETCH_OPTS a factory function, not a module-level const"
+  - issue: "Wikipedia API returns 404 for today's date"
+    solution: "Always use yesterday's date — API has 1-day publishing lag"
+  - issue: "Reddit blocks server IPs"
+    solution: "Use Hacker News Firebase API instead"
+  - issue: "DOJ/FBI return 403"
+    solution: "These block non-browser user agents; use news RSS feeds as fallback"
+  - issue: "source .env breaks cron with special characters"
+    solution: "Pass DATABASE_URL as explicit inline env var in the cron command"
+  - issue: "MySQL ENUM rejects unknown source_type values"
+    solution: "Expand ENUM definition or use VARCHAR for flexible source_type fields"
+  - issue: "Empty results on first run"
+    solution: "Check AbortSignal expiry — if FETCH_OPTS is module-level, the signal expires after first use"
+
+implementation:
+  type: python_script
+  language: python
+  script_path: scripts/daily_report.py
+  usage: |
+    # On-demand generation
+    DATABASE_URL='mysql://user:pass@host:3306/db' python3 daily_report.py
+
+    # Dry run (no DB insert)
+    DATABASE_URL='mysql://user:pass@host:3306/db' python3 daily_report.py --dry-run
+
+    # Scheduled daily via cron (06:05 UTC)
+    5 6 * * * DATABASE_URL='mysql://...' python3 /opt/app/daily_report.py >> /var/log/app/daily_report.log 2>&1
+
+report_structure: |
+  # Marketing Intelligence Report: Tech & Politics Trend Analysis
+
+  **Classification:** UNCLASSIFIED // FOR OFFICIAL USE
+  **Generated:** {DATETIME} UTC
+  **Data Sources:** Google Trends (US), Wikimedia Pageview API, Hacker News Firebase API
+  **Coverage Period:** Last 24 hours
+  **Report Type:** Pattern Analysis — Marketing Intelligence Domain
+
+  ## EXECUTIVE SUMMARY
+  [2-3 paragraph summary of top signals, dominant themes, and notable convergences]
+
+  ## TECH SECTOR SIGNALS
+  [Table: Rank | Topic | Sources | Signal Strength | Traffic Est. | Notes]
+
+  ## POLITICS / GEOPOLITICAL SIGNALS
+  [Table: Rank | Topic | Sources | Signal Strength | Engagement | Notes]
+
+  ## TOP KEYWORDS & PHRASES
+  [Extracted from all classified items, sorted by frequency]
+
+  ## MARKETING IMPLICATIONS
+  [Table: Topic | Urgency | Target Audience | Recommended Action]
+
+  ## REFERENCES
+  [Numbered list of source URLs]
